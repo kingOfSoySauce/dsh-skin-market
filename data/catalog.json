@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-17T09:05:44.862Z",
+  "generatedAt": "2026-08-17T12:13:02.069Z",
   "skins": [
     {
       "id": "king-of-soy-sauce.liang-intensity",
@@ -231,7 +231,7 @@
         "en": "dsh-dream-skin"
       },
       "author": "RevolutionLA",
-      "description": "一键换肤插件：8 套原创主题、背景壁纸（透明度/模糊）、强调色、主题包导入/导出+分享链接、收藏与随机，纯原生 token 系统接入。",
+      "description": "🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。",
       "repo": "https://github.com/RevolutionLA/dsh-dream-skin",
       "package": "dsh-dream-skin",
       "rowId": "dream-skin",
@@ -247,9 +247,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:RevolutionLA/dsh-dream-skin#4b23d230dbeaac1f915ccb3c1a80dd3c19e7e603",
-        "version": "0.2.5",
-        "commit": "4b23d230dbeaac1f915ccb3c1a80dd3c19e7e603"
+        "target": "github:RevolutionLA/dsh-dream-skin#7f02f9523f1bc9aebc26a79c02a95db9f0834346",
+        "version": "0.3.0",
+        "commit": "7f02f9523f1bc9aebc26a79c02a95db9f0834346"
       },
       "compatibility": {
         "dsh": "^0.1.0-rc.6",
@@ -258,8 +258,8 @@
         ]
       },
       "screenshots": [
-        "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/4b23d230dbeaac1f915ccb3c1a80dd3c19e7e603/docs/screenshots/preview.png",
-        "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/4b23d230dbeaac1f915ccb3c1a80dd3c19e7e603/docs/screenshots/settings.png"
+        "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7f02f9523f1bc9aebc26a79c02a95db9f0834346/docs/screenshots/preview.png",
+        "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7f02f9523f1bc9aebc26a79c02a95db9f0834346/docs/screenshots/settings.png"
       ],
       "review": {
         "compatibility": "verified",
@@ -271,7 +271,7 @@
         "commercialUse": true
       },
       "featuredRank": 4,
-      "starsSnapshot": 29,
+      "starsSnapshot": 44,
       "releaseUpdatedAt": "2026-08-16T12:47:55.813Z",
       "metadataUpdatedAt": "2026-08-16T13:46:43.898Z",
       "starsUpdatedAt": "2026-08-16T14:16:03.728Z",
