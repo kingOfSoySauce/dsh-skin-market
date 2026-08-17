@@ -1,7 +1,65 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-17T09:05:44.862Z",
+  "generatedAt": "2026-08-17T10:49:25.064Z",
   "skins": [
+    {
+      "id": "d-dev0101.open-sea-skin",
+      "name": {
+        "zh": "Open Sea 海洋皮肤",
+        "en": "Open Sea Skin"
+      },
+      "author": "d-dev0101",
+      "description": "为 DeepSeek Harness Web UI 提供实时 WebGPU 海洋背景，支持左下角调节波浪、日光、玻璃不透明度和自动昼夜循环。",
+      "repo": "https://github.com/d-dev0101/open-sea-skin",
+      "package": "open-sea-skin",
+      "rowId": "open-sea-skin",
+      "category": "theme",
+      "tags": [
+        "ocean",
+        "webgpu",
+        "glass",
+        "animated",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:d-dev0101/open-sea-skin#5ae54402ec6d4c961d41aee8ed786280799712c7",
+        "version": "1.2.0",
+        "commit": "5ae54402ec6d4c961d41aee8ed786280799712c7"
+      },
+      "compatibility": {
+        "dsh": "^0.1.0-rc.6",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5ae54402ec6d4c961d41aee8ed786280799712c7/docs/marketplace/open-sea-harness-cover.png",
+        "https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5ae54402ec6d4c961d41aee8ed786280799712c7/docs/screenshots/harness-dark-overview-40.gif",
+        "https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5ae54402ec6d4c961d41aee8ed786280799712c7/docs/screenshots/harness-light-overview-40.gif",
+        "https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5ae54402ec6d4c961d41aee8ed786280799712c7/docs/screenshots/harness-wave-control-40.gif",
+        "https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5ae54402ec6d4c961d41aee8ed786280799712c7/docs/screenshots/harness-daylight-sunset-40.gif"
+      ],
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true,
+        "notice": "Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1."
+      },
+      "featuredRank": 0,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-08-17T10:46:59.000Z",
+      "metadataUpdatedAt": "2026-08-17T10:46:59.000Z",
+      "starsUpdatedAt": "2026-08-17T10:46:59.000Z",
+      "updatedAt": "2026-08-17T10:46:59.000Z"
+    },
     {
       "id": "king-of-soy-sauce.liang-intensity",
       "name": {
