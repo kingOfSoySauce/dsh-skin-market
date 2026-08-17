@@ -1,0 +1,57 @@
+id: anotomorin.dsh-bangdream-skin
+name:
+  zh: dsh-bangdream-skin
+  en: dsh-bangdream-skin
+author: AnoTomorin
+description: BanG Dream!-themed DeepSeek Harness Web UI skin with nine band themes, configurable wallpapers and BGM, light/dark support, decorative UI layers, and a draggable control panel.
+repo: https://github.com/AnoTomorin/dsh-bangdream-skin
+subpath: bngd-ui
+package: "@local/bngd-ui"
+rowId: bngd-ui
+category: theme
+tags:
+  - wallpaper
+  - bgm
+  - light-dark
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: "github:AnoTomorin/dsh-bangdream-skin#9abf4ebf69eeaa03335d768182331b2862818a2f&path:bngd-ui"
+  version: 1.7.0
+  commit: 9abf4ebf69eeaa03335d768182331b2862818a2f
+compatibility:
+  dsh: 0.1.0-rc.x and nearby versions
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/AnoTomorin/dsh-bangdream-skin/9abf4ebf69eeaa03335d768182331b2862818a2f/screenshots/shot-1.png
+  - https://raw.githubusercontent.com/AnoTomorin/dsh-bangdream-skin/9abf4ebf69eeaa03335d768182331b2862818a2f/screenshots/shot-2.png
+  - https://raw.githubusercontent.com/AnoTomorin/dsh-bangdream-skin/9abf4ebf69eeaa03335d768182331b2862818a2f/screenshots/shot-3.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - The README states 0.1.0-rc.x and nearby versions, but does not name an exact DSH release or machine-readable compatibility range.
+    - Add the dsh-plugin GitHub topic to improve discovery.
+license:
+  code: MIT
+  commercialUse: false
+  notice: Original code is MIT; BanG Dream assets and BGM are third-party and excluded from MIT. The repository NOTICE limits them to personal, non-commercial learning and hobby use and requires permission or replacement for public redistribution.
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-17T16:19:08.866Z
+metadataUpdatedAt: 2026-08-17T16:19:08.866Z
+starsUpdatedAt: 2026-08-17T16:19:08.866Z
+updatedAt: 2026-08-17T16:19:08.866Z
