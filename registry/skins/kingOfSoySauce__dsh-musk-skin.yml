@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:kingOfSoySauce/dsh-musk-skin#79a994304d42aeebc5dc085346bf53559486f363
+  target: github:kingOfSoySauce/dsh-musk-skin#a9b0c2989f002d52b8a636372c23798eef914c16
   version: 0.1.4
-  commit: 79a994304d42aeebc5dc085346bf53559486f363
+  commit: a9b0c2989f002d52b8a636372c23798eef914c16
 compatibility:
   dsh: 0.1.0-rc.6
   platform:

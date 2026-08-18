@@ -74,6 +74,7 @@ export interface SkinRuntimeState {
     activation: ActivationState;
     installedVersion: string | null;
     installedSpec: string | null;
+    installedAt: string | null;
     updateAvailable: boolean;
     error?: string;
 }

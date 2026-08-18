@@ -40,6 +40,7 @@ export interface RuntimeSkin {
   installation: 'missing' | 'installed' | 'updating' | 'broken'
   activation: 'inactive' | 'active' | 'switching' | 'restart-required'
   installedVersion: string | null
+  installedAt?: string | null
   updateAvailable: boolean
   error?: string
 }
