@@ -17,16 +17,16 @@ modes:
   - light
   - dark
 install:
-  target: github:RevolutionLA/dsh-dream-skin#7f02f9523f1bc9aebc26a79c02a95db9f0834346
+  target: github:RevolutionLA/dsh-dream-skin#4afcde1a47c4251dbc30b73d4d784ab87739f463
   version: 0.3.0
-  commit: 7f02f9523f1bc9aebc26a79c02a95db9f0834346
+  commit: 4afcde1a47c4251dbc30b73d4d784ab87739f463
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7f02f9523f1bc9aebc26a79c02a95db9f0834346/docs/screenshots/preview.png
-  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7f02f9523f1bc9aebc26a79c02a95db9f0834346/docs/screenshots/settings.png
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/4afcde1a47c4251dbc30b73d4d784ab87739f463/docs/screenshots/preview.png
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/4afcde1a47c4251dbc30b73d4d784ab87739f463/docs/screenshots/settings.png
 review:
   compatibility: verified
   preview: verified

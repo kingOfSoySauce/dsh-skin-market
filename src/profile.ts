@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, renameSync, unlinkSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, renameSync, statSync, unlinkSync, writeFileSync } from 'node:fs'
 import { homedir } from 'node:os'
 import { dirname, join, resolve } from 'node:path'
 import { parse, stringify } from 'yaml'
@@ -70,6 +70,10 @@ export function removeProfileBundles(profileDir: string, packageNames: Iterable<
 
 function packageDir(profileDir: string, packageName: string): string {
   return join(profileDir, 'node_modules', ...packageName.split('/'))
+}
+
+function packageInstalledAt(profileDir: string, packageName: string): string | null {
+  try { return statSync(join(packageDir(profileDir, packageName), 'package.json')).mtime.toISOString() } catch { return null }
 }
 
 export function packageManifest(profileDir: string, packageName: string): Record<string, unknown> | null {
@@ -313,11 +317,12 @@ export function runtimeState(profileDir: string, skin: SkinEntry, activeSkinId: 
   const dependencies = readDependencies(profileDir)
   const spec = dependencies[skin.package] ?? null
   if (spec === null) {
-    return { skinId: skin.id, installation: 'missing', activation: 'inactive', installedVersion: null, installedSpec: null, updateAvailable: false }
+    return { skinId: skin.id, installation: 'missing', activation: 'inactive', installedVersion: null, installedSpec: null, installedAt: null, updateAvailable: false }
   }
+  const installedAt = packageInstalledAt(profileDir, skin.package)
   const validation = validateInstalledSkin(profileDir, skin)
   if (!validation.ok) {
-    return { skinId: skin.id, installation: 'broken', activation: 'inactive', installedVersion: null, installedSpec: spec, updateAvailable: false, error: validation.reason }
+    return { skinId: skin.id, installation: 'broken', activation: 'inactive', installedVersion: null, installedSpec: spec, installedAt, updateAvailable: false, error: validation.reason }
   }
   const active = activeSkinId === skin.id
   const activation = active ? (loaderFound ? (loaderLive ? 'active' : 'restart-required') : 'restart-required') : 'inactive'
@@ -328,6 +333,7 @@ export function runtimeState(profileDir: string, skin: SkinEntry, activeSkinId: 
     activation,
     installedVersion: validation.version ?? null,
     installedSpec: spec,
+    installedAt,
     updateAvailable,
   }
 }

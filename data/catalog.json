@@ -1,7 +1,65 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-17T12:13:02.069Z",
+  "generatedAt": "2026-08-18T01:31:01.907Z",
   "skins": [
+    {
+      "id": "d-dev0101.open-sea-skin",
+      "name": {
+        "zh": "Open Sea 海洋皮肤",
+        "en": "Open Sea Skin"
+      },
+      "author": "d-dev0101",
+      "description": "为 DeepSeek Harness Web UI 提供实时 WebGPU 海洋背景，支持左下角调节波浪、日光、玻璃不透明度和自动昼夜循环。",
+      "repo": "https://github.com/d-dev0101/open-sea-skin",
+      "package": "open-sea-skin",
+      "rowId": "open-sea-skin",
+      "category": "theme",
+      "tags": [
+        "ocean",
+        "webgpu",
+        "glass",
+        "animated",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:d-dev0101/open-sea-skin#5ae54402ec6d4c961d41aee8ed786280799712c7",
+        "version": "1.2.0",
+        "commit": "5ae54402ec6d4c961d41aee8ed786280799712c7"
+      },
+      "compatibility": {
+        "dsh": "^0.1.0-rc.6",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5ae54402ec6d4c961d41aee8ed786280799712c7/docs/marketplace/open-sea-harness-cover.png",
+        "https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5ae54402ec6d4c961d41aee8ed786280799712c7/docs/screenshots/harness-dark-overview-40.gif",
+        "https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5ae54402ec6d4c961d41aee8ed786280799712c7/docs/screenshots/harness-light-overview-40.gif",
+        "https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5ae54402ec6d4c961d41aee8ed786280799712c7/docs/screenshots/harness-wave-control-40.gif",
+        "https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5ae54402ec6d4c961d41aee8ed786280799712c7/docs/screenshots/harness-daylight-sunset-40.gif"
+      ],
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true,
+        "notice": "Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1."
+      },
+      "featuredRank": 0,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-08-17T10:46:59.000Z",
+      "metadataUpdatedAt": "2026-08-17T10:46:59.000Z",
+      "starsUpdatedAt": "2026-08-17T10:46:59.000Z",
+      "updatedAt": "2026-08-17T10:46:59.000Z"
+    },
     {
       "id": "king-of-soy-sauce.liang-intensity",
       "name": {
@@ -136,9 +194,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:kingOfSoySauce/dsh-musk-skin#79a994304d42aeebc5dc085346bf53559486f363",
+        "target": "github:kingOfSoySauce/dsh-musk-skin#a9b0c2989f002d52b8a636372c23798eef914c16",
         "version": "0.1.4",
-        "commit": "79a994304d42aeebc5dc085346bf53559486f363"
+        "commit": "a9b0c2989f002d52b8a636372c23798eef914c16"
       },
       "compatibility": {
         "dsh": "0.1.0-rc.6",
@@ -247,9 +305,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:RevolutionLA/dsh-dream-skin#7f02f9523f1bc9aebc26a79c02a95db9f0834346",
+        "target": "github:RevolutionLA/dsh-dream-skin#4afcde1a47c4251dbc30b73d4d784ab87739f463",
         "version": "0.3.0",
-        "commit": "7f02f9523f1bc9aebc26a79c02a95db9f0834346"
+        "commit": "4afcde1a47c4251dbc30b73d4d784ab87739f463"
       },
       "compatibility": {
         "dsh": "^0.1.0-rc.6",
@@ -258,8 +316,8 @@
         ]
       },
       "screenshots": [
-        "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7f02f9523f1bc9aebc26a79c02a95db9f0834346/docs/screenshots/preview.png",
-        "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7f02f9523f1bc9aebc26a79c02a95db9f0834346/docs/screenshots/settings.png"
+        "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/4afcde1a47c4251dbc30b73d4d784ab87739f463/docs/screenshots/preview.png",
+        "https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/4afcde1a47c4251dbc30b73d4d784ab87739f463/docs/screenshots/settings.png"
       ],
       "review": {
         "compatibility": "verified",
@@ -7121,6 +7179,73 @@
       "metadataUpdatedAt": "2026-08-17T02:03:47.000Z",
       "starsUpdatedAt": "2026-08-17T02:03:47.000Z",
       "updatedAt": "2026-08-17T02:03:47.000Z"
+    },
+    {
+      "id": "hachimi-ai.dsh-aemeath",
+      "name": {
+        "zh": "dsh-aemeath",
+        "en": "dsh-aemeath"
+      },
+      "author": "hachimi-ai",
+      "description": "鸣潮爱弥斯主题皮肤与像素桌宠，为 DeepSeek Harness Web GUI 提供冰蓝粉紫壁纸、半透明界面和状态联动桌宠。",
+      "repo": "https://github.com/hachimi-ai/dsh-aemeath",
+      "package": "dsh-aemeath",
+      "rowId": "aemeath",
+      "category": "theme",
+      "tags": [
+        "wallpaper",
+        "glass",
+        "pet",
+        "animated"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:hachimi-ai/dsh-aemeath#f58eef75dcadb5aeaee9e78542e7e1d9ba43f821",
+        "version": "0.1.0",
+        "commit": "f58eef75dcadb5aeaee9e78542e7e1d9ba43f821"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/hachimi-ai/dsh-aemeath/f58eef75dcadb5aeaee9e78542e7e1d9ba43f821/image/image1.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明已验证的 DSH Web 版本或兼容范围。",
+          "建议补充独立 LICENSE 文件，并进一步说明第三方壁纸与角色精灵素材的再分发和使用边界。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": false,
+        "notice": "插件代码声明为 MIT；壁纸与精灵表为第三方《鸣潮》爱弥斯素材，仓库说明仅供个人学习交流使用，版权归原权利人所有。"
+      },
+      "featuredRank": 134,
+      "starsSnapshot": 1,
+      "releaseUpdatedAt": "2026-08-16T16:37:51Z",
+      "metadataUpdatedAt": "2026-08-17T15:21:28Z",
+      "starsUpdatedAt": "2026-08-17T09:44:21Z",
+      "updatedAt": "2026-08-17T15:21:28Z"
     }
   ]
 }
