@@ -1,0 +1,52 @@
+id: gameswu.dsh-plugin-background
+name:
+  zh: dsh-plugin-background
+  en: dsh-plugin-background
+author: gameswu
+description: dsh壁纸插件
+repo: https://github.com/gameswu/dsh-plugin-background
+package: dsh-plugin-background
+rowId: ui-background
+category: theme
+tags:
+  - wallpaper
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:gameswu/dsh-plugin-background#8660d41a4fb5cb320088b36b4109d055f598e077
+  version: 0.2.1
+  commit: 8660d41a4fb5cb320088b36b4109d055f598e077
+  allowBuild: dsh-plugin-background@https://codeload.github.com/gameswu/dsh-plugin-background/tar.gz/8660d41a4fb5cb320088b36b4109d055f598e077
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/8660d41a4fb5cb320088b36b4109d055f598e077/gameswu/dsh-plugin-background
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 144
+starsSnapshot: 11
+releaseUpdatedAt: 2026-08-18T15:39:18.225Z
+metadataUpdatedAt: 2026-08-18T15:39:18.225Z
+starsUpdatedAt: 2026-08-18T15:39:18.225Z
+updatedAt: 2026-08-18T15:39:18.225Z

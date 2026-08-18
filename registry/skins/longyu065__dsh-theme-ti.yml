@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-ti
   en: dsh-theme-ti
 author: longyu065
-description: "Dota 2 The International (TI) skin for the DeepSeek Harness web UI: a deep-navy + teal/gold token theme with vector wings artwork, registered into the client ThemeRuntime."
+description: dsh-theme-ti
 repo: https://github.com/longyu065/dsh-theme-ti
 package: "@dsh-theme/ti"
 rowId: theme-ti
@@ -18,25 +18,36 @@ modes:
   - light
   - dark
 install:
-  target: github:longyu065/dsh-theme-ti#ade662f5bd339d78597f4316bd58a2f141cf3397
+  target: github:longyu065/dsh-theme-ti#b6b54db83aadbf8d67f3482f3b864e67f98bf73b
   version: 1.0.0
-  commit: ade662f5bd339d78597f4316bd58a2f141cf3397
+  commit: b6b54db83aadbf8d67f3482f3b864e67f98bf73b
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://opengraph.githubassets.com/ade662f5bd339d78597f4316bd58a2f141cf3397/longyu065/dsh-theme-ti
+  - https://opengraph.githubassets.com/b6b54db83aadbf8d67f3482f3b864e67f98bf73b/longyu065/dsh-theme-ti
 review:
   compatibility: unverified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 84
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:53:00.319Z
-metadataUpdatedAt: 2026-08-16T14:22:22.865Z
+releaseUpdatedAt: 2026-08-18T15:43:04.400Z
+metadataUpdatedAt: 2026-08-18T15:43:04.400Z
 starsUpdatedAt: 2026-08-16T13:53:00.319Z
-updatedAt: 2026-08-16T14:22:22.865Z
+updatedAt: 2026-08-18T15:43:04.400Z

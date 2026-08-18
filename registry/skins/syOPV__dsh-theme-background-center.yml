@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-background-center
   en: dsh-theme-background-center
 author: syOPV
-description: DeepSeek Harness Web UI 主题背景中心：多款主题、梦幻渐变/自定义图片背景、毛玻璃、环绕流动氛围灯（霓虹灯管 + 邻近色渐变），全部支持持久化自动恢复。
+description: DeepSeek Harness Web UI 主题背景中心插件：主题/渐变图片背景/毛玻璃/流动氛围灯
 repo: https://github.com/syOPV/dsh-theme-background-center
 package: dsh-theme-background-center
 rowId: theme-background-center
@@ -30,12 +30,21 @@ review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 93
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16T13:53:58.612Z
-metadataUpdatedAt: 2026-08-16T14:23:13.964Z
+metadataUpdatedAt: 2026-08-18T15:43:37.512Z
 starsUpdatedAt: 2026-08-16T13:53:58.612Z
-updatedAt: 2026-08-16T14:23:13.964Z
+updatedAt: 2026-08-18T15:43:37.512Z

@@ -1,0 +1,49 @@
+id: yhprime.dsh-theme-picker
+name:
+  zh: dsh-theme-picker
+  en: dsh-theme-picker
+author: yhPrime
+description: DeepSeek Harness 主题选择插件：管理应用主题与已安装主题插件，同一时间仅一个主题生效。
+repo: https://github.com/yhPrime/dsh-theme-picker
+package: dsh-theme-picker
+rowId: dsh-theme-picker
+category: theme
+tags:
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:yhPrime/dsh-theme-picker#3177474137d99d65242a1718a28c175f6b3461b8
+  version: 1.0.0
+  commit: 3177474137d99d65242a1718a28c175f6b3461b8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/3177474137d99d65242a1718a28c175f6b3461b8/yhPrime/dsh-theme-picker
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 165
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-18T15:43:47.882Z
+metadataUpdatedAt: 2026-08-18T15:43:47.882Z
+starsUpdatedAt: 2026-08-18T15:43:47.882Z
+updatedAt: 2026-08-18T15:43:47.882Z

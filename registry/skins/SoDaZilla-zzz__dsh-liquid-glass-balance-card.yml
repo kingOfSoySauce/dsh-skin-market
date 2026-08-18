@@ -1,0 +1,52 @@
+id: sodazilla-zzz.dsh-liquid-glass-balance-card
+name:
+  zh: dsh-liquid-glass-balance-card
+  en: dsh-liquid-glass-balance-card
+author: SoDaZilla-zzz
+description: DSH 网页右上角可拖动 3D 液态玻璃余额卡片：显示 DeepSeek API 余额、累计消费与 Token 统计（今天/昨天/近7天/近30天/全部），玻璃参数/3D 厚度/颜色均可调，内置官方充值入口。
+repo: https://github.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card
+package: dsh-liquid-glass-balance-card
+rowId: liquid-glass-balance-card
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:SoDaZilla-zzz/dsh-liquid-glass-balance-card#b3a0dd6525f86d8fb2db53cfb71793ce2494587e
+  version: 0.1.1
+  commit: b3a0dd6525f86d8fb2db53cfb71793ce2494587e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card/b3a0dd6525f86d8fb2db53cfb71793ce2494587e/docs/cover.jpg
+  - https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card/b3a0dd6525f86d8fb2db53cfb71793ce2494587e/docs/demo.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 147
+starsSnapshot: 5
+releaseUpdatedAt: 2026-08-18T15:40:22.365Z
+metadataUpdatedAt: 2026-08-18T15:40:22.365Z
+starsUpdatedAt: 2026-08-18T15:40:22.365Z
+updatedAt: 2026-08-18T15:40:22.365Z

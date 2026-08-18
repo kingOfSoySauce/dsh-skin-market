@@ -14,30 +14,39 @@ tags:
 modes:
   - dark
 install:
-  target: github:zhxqc/dsh-oh-my-theme#5052f83f4ccc21da11f37b27824f2c95052fb25b
+  target: github:zhxqc/dsh-oh-my-theme#6dbea1ac6131abccea755551eb294a8cc4805786
   version: 0.6.0
-  commit: 5052f83f4ccc21da11f37b27824f2c95052fb25b
+  commit: 6dbea1ac6131abccea755551eb294a8cc4805786
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/5052f83f4ccc21da11f37b27824f2c95052fb25b/docs/assets/setting.png
-  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/5052f83f4ccc21da11f37b27824f2c95052fb25b/docs/assets/at.png
-  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/5052f83f4ccc21da11f37b27824f2c95052fb25b/docs/assets/slider-icon.png
-  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/5052f83f4ccc21da11f37b27824f2c95052fb25b/docs/assets/file-sys.png
-  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/5052f83f4ccc21da11f37b27824f2c95052fb25b/docs/assets/md-preview.png
-  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/5052f83f4ccc21da11f37b27824f2c95052fb25b/docs/assets/git-changes.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/setting.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/at.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/slider-icon.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/file-sys.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/md-preview.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/git-changes.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 10
-starsSnapshot: 3
-releaseUpdatedAt: 2026-08-16T12:32:28.705Z
-metadataUpdatedAt: 2026-08-16T13:49:32.359Z
-starsUpdatedAt: 2026-08-16T12:32:28.705Z
-updatedAt: 2026-08-16T13:49:32.359Z
+starsSnapshot: 4
+releaseUpdatedAt: 2026-08-18T15:40:25.196Z
+metadataUpdatedAt: 2026-08-18T15:40:25.196Z
+starsUpdatedAt: 2026-08-18T15:40:25.196Z
+updatedAt: 2026-08-18T15:40:25.196Z

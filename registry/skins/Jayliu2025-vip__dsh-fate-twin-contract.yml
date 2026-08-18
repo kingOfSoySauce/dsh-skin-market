@@ -3,7 +3,7 @@ name:
   zh: dsh-fate-twin-contract
   en: dsh-fate-twin-contract
 author: Jayliu2025-vip
-description: Unofficial Fate-inspired Archer × Rin skin for the DeepSeek Harness Web GUI
+description: Unofficial Fate-inspired Archer × Rin skin for the DeepSeek Harness Web GUI — original fan art, light/dark modes, offline and reversible.
 repo: https://github.com/Jayliu2025-vip/dsh-fate-twin-contract
 package: dsh-fate-twin-contract
 rowId: ui-skin-fate-twin-contract
@@ -31,12 +31,22 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: SEE LICENSE IN NOTICE.md
   commercialUse: false
 featuredRank: 108
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T13:55:59.921Z
-metadataUpdatedAt: 2026-08-16T14:25:13.940Z
+metadataUpdatedAt: 2026-08-18T15:45:01.008Z
 starsUpdatedAt: 2026-08-16T13:55:59.921Z
-updatedAt: 2026-08-16T14:25:13.940Z
+updatedAt: 2026-08-18T15:45:01.008Z

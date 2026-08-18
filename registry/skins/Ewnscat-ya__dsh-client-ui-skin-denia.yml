@@ -3,7 +3,7 @@ name:
   zh: 达妮娅 · 虚无之泡
   en: Denia · Void Bubble
 author: Ewnscat-ya
-description: 鸣潮达妮娅主题皮肤，提供亮暗双形态、玻璃卡片、泡泡粒子、锁链边框和侧边角色布景。
+description: DeepSeek Harness Web GUI 皮肤 · 鸣潮·达妮娅(Denia)主题「虚无之泡」。双形态亮/暗、侧边立绘、可修改的玻璃卡片、浮动泡泡粒子、锁链边框。
 repo: https://github.com/Ewnscat-ya/dsh-client-ui-skin-denia
 package: "@dsh-external/dsh-client-ui-skin-denia"
 rowId: ui-skin-denia
@@ -18,35 +18,36 @@ modes:
   - light
   - dark
 install:
-  target: github:Ewnscat-ya/dsh-client-ui-skin-denia#41a64c8984bed21483cf06285532d1641a52dc91
-  version: 0.0.1
-  commit: 41a64c8984bed21483cf06285532d1641a52dc91
+  target: github:Ewnscat-ya/dsh-client-ui-skin-denia#1b846939864137123203f1cc8db628e1331df62a
+  version: 0.0.4
+  commit: 1b846939864137123203f1cc8db628e1331df62a
 compatibility:
-  dsh: unverified
+  dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/41a64c8984bed21483cf06285532d1641a52dc91/preview/light.webp
-  - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/41a64c8984bed21483cf06285532d1641a52dc91/preview/dark.webp
+  - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/1b846939864137123203f1cc8db628e1331df62a/preview/light.webp
+  - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/1b846939864137123203f1cc8db628e1331df62a/preview/dark.webp
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
   notice: 角色、美术和商标权利归原权利人所有；仓库声明为非官方同人作品并禁止商业使用。
 featuredRank: 133
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-17T02:03:47.000Z
-metadataUpdatedAt: 2026-08-17T02:03:47.000Z
-starsUpdatedAt: 2026-08-17T02:03:47.000Z
-updatedAt: 2026-08-17T02:03:47.000Z
+starsSnapshot: 18
+releaseUpdatedAt: 2026-08-18T15:39:04.526Z
+metadataUpdatedAt: 2026-08-18T15:39:04.526Z
+starsUpdatedAt: 2026-08-18T15:39:04.526Z
+updatedAt: 2026-08-18T15:39:04.526Z

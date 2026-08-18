@@ -3,7 +3,7 @@ name:
   zh: dsh-outdoor-theme
   en: dsh-outdoor-theme
 author: Estellalee
-description: DSH 皮肤：山野向导（Trail Guide）· 户外徒步风换皮 + 右侧路标工作进度面板
+description: DSH 户外皮肤 · 山野向导（Trail Guide）
 repo: https://github.com/Estellalee/dsh-outdoor-theme
 package: dsh-outdoor-theme
 rowId: ui-outdoor-theme
@@ -34,12 +34,21 @@ review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 49
-starsSnapshot: 3
+starsSnapshot: 4
 releaseUpdatedAt: 2026-08-16T13:48:50.122Z
-metadataUpdatedAt: 2026-08-16T14:18:33.337Z
-starsUpdatedAt: 2026-08-16T13:48:50.122Z
-updatedAt: 2026-08-16T14:18:33.337Z
+metadataUpdatedAt: 2026-08-18T15:40:12.882Z
+starsUpdatedAt: 2026-08-18T15:40:12.882Z
+updatedAt: 2026-08-18T15:40:12.882Z

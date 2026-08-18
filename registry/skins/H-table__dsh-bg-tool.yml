@@ -1,0 +1,54 @@
+id: h-table.dsh-bg-tool
+name:
+  zh: dsh-bg-tool
+  en: dsh-bg-tool
+author: H-table
+description: DSH 插件：本地 rembg GPU 抠图工具（remove_background）— DeepSeek Harness plugin for background removal with local rembg GPU service
+repo: https://github.com/H-table/dsh-bg-tool
+package: "@local/dsh-bg-tool"
+rowId: bg-tool
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:H-table/dsh-bg-tool#403b767f84b5168ed37aa1f75304a7e324428959
+  version: 1.0.0
+  commit: 403b767f84b5168ed37aa1f75304a7e324428959
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/403b767f84b5168ed37aa1f75304a7e324428959/assets/hero.png
+  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/403b767f84b5168ed37aa1f75304a7e324428959/assets/dsh-mermaid-original.png
+  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/403b767f84b5168ed37aa1f75304a7e324428959/assets/dsh-mermaid-general.png
+  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/403b767f84b5168ed37aa1f75304a7e324428959/assets/dsh-mermaid-portrait.png
+  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/403b767f84b5168ed37aa1f75304a7e324428959/assets/gui-bg-card.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 177
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:44:48.848Z
+metadataUpdatedAt: 2026-08-18T15:44:48.848Z
+starsUpdatedAt: 2026-08-18T15:44:48.848Z
+updatedAt: 2026-08-18T15:44:48.848Z

@@ -21,21 +21,32 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tianyhjg-lab__dsh-font/d299f56bde1e10e7fef152848e74cff2eecd7917/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tianyhjg-lab__dsh-font/d299f56bde1e10e7fef152848e74cff2eecd7917/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tianyhjg-lab__dsh-font/d299f56bde1e10e7fef152848e74cff2eecd7917/settings.png
 screenshots: []
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 20
 starsSnapshot: 7
 releaseUpdatedAt: 2026-08-16T12:15:41.349Z
-metadataUpdatedAt: 2026-08-17T02:47:52.499Z
+metadataUpdatedAt: 2026-08-18T15:39:40.656Z
 starsUpdatedAt: 2026-08-16T12:15:41.349Z
-updatedAt: 2026-08-17T02:47:52.499Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tianyhjg-lab__dsh-font/d299f56bde1e10e7fef152848e74cff2eecd7917/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tianyhjg-lab__dsh-font/d299f56bde1e10e7fef152848e74cff2eecd7917/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tianyhjg-lab__dsh-font/d299f56bde1e10e7fef152848e74cff2eecd7917/settings.png
+updatedAt: 2026-08-18T15:39:40.656Z

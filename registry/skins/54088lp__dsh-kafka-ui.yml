@@ -1,0 +1,50 @@
+id: 54088lp.dsh-kafka-ui
+name:
+  zh: dsh-kafka-ui
+  en: dsh-kafka-ui
+author: 54088lp
+description: "Kafka (Honkai: Star Rail) theme skin for DeepSeek Harness web GUI"
+repo: https://github.com/54088lp/dsh-kafka-ui
+package: "@dsh-external/dsh-client-ui-skin-kafka"
+rowId: ui-skin-kafka
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:54088lp/dsh-kafka-ui#3cc47b912634897a878b2d201980c01edc86a804
+  version: 0.0.1
+  commit: 3cc47b912634897a878b2d201980c01edc86a804
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://github.com/user-attachments/assets/037098e7-a30d-4c55-9da5-4763ace011f8
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 168
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:44:02.099Z
+metadataUpdatedAt: 2026-08-18T15:44:02.099Z
+starsUpdatedAt: 2026-08-18T15:44:02.099Z
+updatedAt: 2026-08-18T15:44:02.099Z

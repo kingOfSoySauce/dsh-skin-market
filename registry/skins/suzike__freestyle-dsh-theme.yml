@@ -29,13 +29,24 @@ screenshots:
 review:
   compatibility: verified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 41
-starsSnapshot: 11
+starsSnapshot: 12
 releaseUpdatedAt: 2026-08-16T13:47:08.953Z
-metadataUpdatedAt: 2026-08-16T13:47:08.953Z
-starsUpdatedAt: 2026-08-16T13:47:08.953Z
-updatedAt: 2026-08-16T13:47:08.953Z
+metadataUpdatedAt: 2026-08-18T15:39:16.749Z
+starsUpdatedAt: 2026-08-18T15:39:16.749Z
+updatedAt: 2026-08-18T15:39:16.749Z

@@ -3,7 +3,7 @@ name:
   zh: dsh-skin-study
   en: dsh-skin-study
 author: linzhuoliSOC
-description: DeepSeek Harness 3D 书房。Cozy Study skin for DSH web.
+description: deepseek harness 3D 书房皮肤
 repo: https://github.com/linzhuoliSOC/dsh-skin-study
 package: dsh-skin-study
 rowId: ui-skin-study
@@ -13,25 +13,35 @@ tags:
 modes:
   - light
 install:
-  target: github:linzhuoliSOC/dsh-skin-study#233139cec4165c6f5231424ff7cd4647c4f2bf71
+  target: github:linzhuoliSOC/dsh-skin-study#65c35fe23ee64a9fa8d8c2813b81a3fba8d218bf
   version: 0.1.0
-  commit: 233139cec4165c6f5231424ff7cd4647c4f2bf71
+  commit: 65c35fe23ee64a9fa8d8c2813b81a3fba8d218bf
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://opengraph.githubassets.com/233139cec4165c6f5231424ff7cd4647c4f2bf71/linzhuoliSOC/dsh-skin-study
+  - https://raw.githubusercontent.com/linzhuoliSOC/dsh-skin-study/65c35fe23ee64a9fa8d8c2813b81a3fba8d218bf/docs/preview.png
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 113
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:56:41.045Z
-metadataUpdatedAt: 2026-08-16T14:25:51.550Z
+releaseUpdatedAt: 2026-08-18T15:45:19.937Z
+metadataUpdatedAt: 2026-08-18T15:45:19.937Z
 starsUpdatedAt: 2026-08-16T13:56:41.045Z
-updatedAt: 2026-08-16T14:25:51.550Z
+updatedAt: 2026-08-18T15:45:19.937Z

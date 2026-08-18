@@ -3,7 +3,7 @@ name:
   zh: dsh-pixel-skin
   en: dsh-pixel-skin
 author: ADAning
-description: "8-bit pixel skin for the DeepSeek Harness web GUI: Fusion Pixel type, chunky CRT palette, hard-edged controls and scanlines."
+description: 8-bit / CRT skin plugin for the DeepSeek Harness web GUI
 repo: https://github.com/ADAning/dsh-pixel-skin
 package: dsh-pixel-skin
 rowId: dsh-pixel-skin
@@ -17,28 +17,38 @@ modes:
   - light
   - dark
 install:
-  target: github:ADAning/dsh-pixel-skin#7cfce7ae3b533418163c70e2f57c4dc44aab3d3a
+  target: github:ADAning/dsh-pixel-skin#cd34110195a94ca785f32e9b45d2f6e4bc685b1a
   version: 0.1.0
-  commit: 7cfce7ae3b533418163c70e2f57c4dc44aab3d3a
+  commit: cd34110195a94ca785f32e9b45d2f6e4bc685b1a
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/ADAning/dsh-pixel-skin/7cfce7ae3b533418163c70e2f57c4dc44aab3d3a/assets/screenshots/new-session.png
-  - https://raw.githubusercontent.com/ADAning/dsh-pixel-skin/7cfce7ae3b533418163c70e2f57c4dc44aab3d3a/assets/screenshots/working.png
-  - https://raw.githubusercontent.com/ADAning/dsh-pixel-skin/7cfce7ae3b533418163c70e2f57c4dc44aab3d3a/assets/screenshots/palettes-light.png
-  - https://raw.githubusercontent.com/ADAning/dsh-pixel-skin/7cfce7ae3b533418163c70e2f57c4dc44aab3d3a/assets/screenshots/palettes-dark.png
+  - https://raw.githubusercontent.com/ADAning/dsh-pixel-skin/cd34110195a94ca785f32e9b45d2f6e4bc685b1a/assets/screenshots/new-session.png
+  - https://raw.githubusercontent.com/ADAning/dsh-pixel-skin/cd34110195a94ca785f32e9b45d2f6e4bc685b1a/assets/screenshots/working.png
+  - https://raw.githubusercontent.com/ADAning/dsh-pixel-skin/cd34110195a94ca785f32e9b45d2f6e4bc685b1a/assets/screenshots/palettes-light.png
+  - https://raw.githubusercontent.com/ADAning/dsh-pixel-skin/cd34110195a94ca785f32e9b45d2f6e4bc685b1a/assets/screenshots/palettes-dark.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 98
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:54:49.092Z
-metadataUpdatedAt: 2026-08-16T14:23:56.361Z
+releaseUpdatedAt: 2026-08-18T15:44:03.968Z
+metadataUpdatedAt: 2026-08-18T15:44:03.968Z
 starsUpdatedAt: 2026-08-16T13:54:49.092Z
-updatedAt: 2026-08-16T14:23:56.361Z
+updatedAt: 2026-08-18T15:44:03.968Z

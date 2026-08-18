@@ -17,28 +17,37 @@ modes:
   - light
   - dark
 install:
-  target: github:WYH66666666/DSH-Transparent-UI-Plugin#d723f227e4e6daef09fcedce9a9765254f40a6a9
-  version: 1.2.1
-  commit: d723f227e4e6daef09fcedce9a9765254f40a6a9
+  target: github:WYH66666666/DSH-Transparent-UI-Plugin#fa0cb1fd172a1301297727334b08d8322ee57077
+  version: 1.3.0
+  commit: fa0cb1fd172a1301297727334b08d8322ee57077
 compatibility:
   dsh: ^0.1.0-rc.5
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/d723f227e4e6daef09fcedce9a9765254f40a6a9/assets/1.png
-  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/d723f227e4e6daef09fcedce9a9765254f40a6a9/assets/2.png
-  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/d723f227e4e6daef09fcedce9a9765254f40a6a9/assets/3.png
-  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/d723f227e4e6daef09fcedce9a9765254f40a6a9/assets/4.png
+  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/fa0cb1fd172a1301297727334b08d8322ee57077/assets/1.png
+  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/fa0cb1fd172a1301297727334b08d8322ee57077/assets/2.png
+  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/fa0cb1fd172a1301297727334b08d8322ee57077/assets/3.png
+  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/fa0cb1fd172a1301297727334b08d8322ee57077/assets/4.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 37
-starsSnapshot: 130
-releaseUpdatedAt: 2026-08-16T14:15:34.511Z
-metadataUpdatedAt: 2026-08-16T14:15:34.511Z
-starsUpdatedAt: 2026-08-16T14:15:34.511Z
-updatedAt: 2026-08-16T14:15:34.511Z
+starsSnapshot: 289
+releaseUpdatedAt: 2026-08-18T15:38:18.212Z
+metadataUpdatedAt: 2026-08-18T15:38:18.212Z
+starsUpdatedAt: 2026-08-18T15:38:18.212Z
+updatedAt: 2026-08-18T15:38:18.212Z

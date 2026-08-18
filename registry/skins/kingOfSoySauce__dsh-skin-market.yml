@@ -1,0 +1,48 @@
+id: kingofsoysauce.dsh-skin-market
+name:
+  zh: dsh-skin-market
+  en: dsh-skin-market
+author: kingOfSoySauce
+description: 原生皮肤市场与生命周期管理器，发现社区皮肤、展示预览与兼容状态，并提供已验证的一键安装或手动安装入口。
+repo: https://github.com/kingOfSoySauce/dsh-skin-market
+package: dsh-skin-market
+rowId: dsh-skin-market
+category: theme
+tags:
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:kingOfSoySauce/dsh-skin-market#abebbfb47dd3192727003679b2d02be28be0ea18
+  version: 0.1.24
+  commit: abebbfb47dd3192727003679b2d02be28be0ea18
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/kingOfSoySauce/dsh-skin-market/abebbfb47dd3192727003679b2d02be28be0ea18/docs/assets/skin-market-liang.png
+  - https://raw.githubusercontent.com/kingOfSoySauce/dsh-skin-market/abebbfb47dd3192727003679b2d02be28be0ea18/docs/assets/skin-market-deep-whale.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 143
+starsSnapshot: 31
+releaseUpdatedAt: 2026-08-18T15:38:59.574Z
+metadataUpdatedAt: 2026-08-18T15:38:59.574Z
+starsUpdatedAt: 2026-08-18T15:38:59.574Z
+updatedAt: 2026-08-18T15:38:59.574Z

@@ -16,26 +16,37 @@ modes:
   - light
   - dark
 install:
-  target: github:youzhoujiMrLiu/dsh-ui-wallpaper#ea0b93014579be080580b45e0ad9a5baee0574b9
-  version: 0.3.1
-  commit: ea0b93014579be080580b45e0ad9a5baee0574b9
+  target: github:youzhoujiMrLiu/dsh-ui-wallpaper#dab67b19bd54dce3accbfac33ee7b0d40a1235a6
+  version: 0.4.0
+  commit: dab67b19bd54dce3accbfac33ee7b0d40a1235a6
+  allowBuild: dsh-ui-wallpaper@https://codeload.github.com/youzhoujiMrLiu/dsh-ui-wallpaper/tar.gz/dab67b19bd54dce3accbfac33ee7b0d40a1235a6
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/youzhoujiMrLiu/dsh-ui-wallpaper/ea0b93014579be080580b45e0ad9a5baee0574b9/screenshots/wallpaper.jpg
-  - https://raw.githubusercontent.com/youzhoujiMrLiu/dsh-ui-wallpaper/ea0b93014579be080580b45e0ad9a5baee0574b9/screenshots/settings.jpg
+  - https://raw.githubusercontent.com/youzhoujiMrLiu/dsh-ui-wallpaper/dab67b19bd54dce3accbfac33ee7b0d40a1235a6/screenshots/settings.jpg
+  - https://raw.githubusercontent.com/youzhoujiMrLiu/dsh-ui-wallpaper/dab67b19bd54dce3accbfac33ee7b0d40a1235a6/screenshots/wallpaper.jpg
 review:
   compatibility: verified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 97
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:54:40.449Z
-metadataUpdatedAt: 2026-08-17T09:04:13.000Z
+releaseUpdatedAt: 2026-08-18T15:43:51.375Z
+metadataUpdatedAt: 2026-08-18T15:43:51.375Z
 starsUpdatedAt: 2026-08-16T13:54:40.449Z
-updatedAt: 2026-08-17T09:04:13.000Z
+updatedAt: 2026-08-18T15:43:51.375Z

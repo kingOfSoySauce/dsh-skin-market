@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-cyberpunk
   en: dsh-theme-cyberpunk
 author: dlpufan
-description: "A neon cyberpunk appearance plugin for the DeepSeek Harness web surface: refined RGB ambient lighting, CRT scanlines, and a cohesive cyan/magenta/violet token palette."
+description: DeepSeek Harness 赛博朋克主题插件：RGB 流动霓虹、自定义背景图库、本地音乐播放器与一键启停。
 repo: https://github.com/dlpufan/dsh-theme-cyberpunk
 package: dsh-theme-cyberpunk
 rowId: theme-cyberpunk
@@ -31,12 +31,23 @@ review:
   compatibility: unverified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 63
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-16T13:50:20.382Z
-metadataUpdatedAt: 2026-08-16T14:20:06.280Z
+metadataUpdatedAt: 2026-08-18T15:41:29.736Z
 starsUpdatedAt: 2026-08-16T13:50:20.382Z
-updatedAt: 2026-08-16T14:20:06.280Z
+updatedAt: 2026-08-18T15:41:29.736Z

@@ -16,25 +16,36 @@ modes:
   - light
   - dark
 install:
-  target: github:wsxwj123/dsh-plugins#ae7b7d50efdc0151477735ccadf4d59807abfec3&path:packages/skin-gallery
+  target: github:wsxwj123/dsh-plugins#92e4499477670fd94d1aaa1a4d6d5ee170329a92&path:packages/skin-gallery
   version: 0.1.0
-  commit: ae7b7d50efdc0151477735ccadf4d59807abfec3
+  commit: 92e4499477670fd94d1aaa1a4d6d5ee170329a92
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://opengraph.githubassets.com/ae7b7d50efdc0151477735ccadf4d59807abfec3/wsxwj123/dsh-plugins
+  - https://opengraph.githubassets.com/92e4499477670fd94d1aaa1a4d6d5ee170329a92/wsxwj123/dsh-plugins
 review:
   compatibility: verified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 24
-starsSnapshot: 4
-releaseUpdatedAt: 2026-08-16T12:15:58.715Z
-metadataUpdatedAt: 2026-08-16T13:48:27.554Z
-starsUpdatedAt: 2026-08-16T12:15:58.715Z
-updatedAt: 2026-08-16T13:48:27.554Z
+starsSnapshot: 7
+releaseUpdatedAt: 2026-08-18T15:39:43.740Z
+metadataUpdatedAt: 2026-08-18T15:39:43.740Z
+starsUpdatedAt: 2026-08-18T15:39:43.740Z
+updatedAt: 2026-08-18T15:39:43.740Z

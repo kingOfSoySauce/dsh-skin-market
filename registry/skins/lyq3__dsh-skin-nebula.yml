@@ -1,0 +1,57 @@
+id: lyq3.dsh-skin-nebula
+name:
+  zh: dsh-skin-nebula
+  en: dsh-skin-nebula
+author: lyq3
+description: 动漫皮肤包：忍者、樱花、竹林、落日、苍龙五套 AI 生成高清主题，各配专属点缀色，右上角衣服图标一键切换，透明度可调。
+repo: https://github.com/lyq3/dsh-skin-nebula
+package: dsh-skin-nebula
+rowId: dsh-skin-nebula
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - anime
+  - pastel
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:lyq3/dsh-skin-nebula#57b9f7ff42faf9e71e038fb4f7c1826804eb47c7
+  version: 0.6.0
+  commit: 57b9f7ff42faf9e71e038fb4f7c1826804eb47c7
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lyq3/dsh-skin-nebula/57b9f7ff42faf9e71e038fb4f7c1826804eb47c7/assets/ninja-dark.png
+  - https://raw.githubusercontent.com/lyq3/dsh-skin-nebula/57b9f7ff42faf9e71e038fb4f7c1826804eb47c7/assets/ninja-light.png
+  - https://raw.githubusercontent.com/lyq3/dsh-skin-nebula/57b9f7ff42faf9e71e038fb4f7c1826804eb47c7/assets/sakura-dark.png
+  - https://raw.githubusercontent.com/lyq3/dsh-skin-nebula/57b9f7ff42faf9e71e038fb4f7c1826804eb47c7/assets/sakura-light.png
+  - https://raw.githubusercontent.com/lyq3/dsh-skin-nebula/57b9f7ff42faf9e71e038fb4f7c1826804eb47c7/assets/bamboo-dark.png
+  - https://raw.githubusercontent.com/lyq3/dsh-skin-nebula/57b9f7ff42faf9e71e038fb4f7c1826804eb47c7/assets/bamboo-light.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 183
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:45:26.029Z
+metadataUpdatedAt: 2026-08-18T15:45:26.029Z
+starsUpdatedAt: 2026-08-18T15:45:26.029Z
+updatedAt: 2026-08-18T15:45:26.029Z

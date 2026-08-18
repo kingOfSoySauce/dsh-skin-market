@@ -1,0 +1,54 @@
+id: zrtbdss.dsh-anime-skins
+name:
+  zh: dsh-anime-skins
+  en: dsh-anime-skins
+author: ZRTBdSS
+description: "DSH anime skin manager: 6 skins, floating menus, session list and theme-adaptive UI overrides."
+repo: https://github.com/ZRTBdSS/dsh-anime-skins
+package: dsh-anime-skins
+rowId: dsh-anime-skins
+category: theme
+tags:
+  - anime
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:ZRTBdSS/dsh-anime-skins#a311b1f7e1267f1612c3c60ba7e34498c77edd46
+  version: 1.0.0
+  commit: a311b1f7e1267f1612c3c60ba7e34498c77edd46
+compatibility:
+  dsh: ">=0.1.0-rc.6"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ZRTBdSS/dsh-anime-skins/a311b1f7e1267f1612c3c60ba7e34498c77edd46/docs/images/asuna-session.jpg
+  - https://raw.githubusercontent.com/ZRTBdSS/dsh-anime-skins/a311b1f7e1267f1612c3c60ba7e34498c77edd46/docs/images/asuna-new.jpg
+  - https://raw.githubusercontent.com/ZRTBdSS/dsh-anime-skins/a311b1f7e1267f1612c3c60ba7e34498c77edd46/docs/images/asuka-session.jpg
+  - https://raw.githubusercontent.com/ZRTBdSS/dsh-anime-skins/a311b1f7e1267f1612c3c60ba7e34498c77edd46/docs/images/asuka-new.jpg
+  - https://raw.githubusercontent.com/ZRTBdSS/dsh-anime-skins/a311b1f7e1267f1612c3c60ba7e34498c77edd46/docs/images/megumi-session.jpg
+  - https://raw.githubusercontent.com/ZRTBdSS/dsh-anime-skins/a311b1f7e1267f1612c3c60ba7e34498c77edd46/docs/images/megumi-new.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 201
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:54.544Z
+metadataUpdatedAt: 2026-08-18T15:46:54.544Z
+starsUpdatedAt: 2026-08-18T15:46:54.544Z
+updatedAt: 2026-08-18T15:46:54.544Z

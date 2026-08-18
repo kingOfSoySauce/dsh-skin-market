@@ -3,7 +3,7 @@ name:
   zh: dsh-whale-bg
   en: dsh-whale-bg
 author: gooosie
-description: Unofficial DeepSeek Harness Web UI particle-whale background with cursor lighting, idle swimming, and scroll-aware fade.
+description: Unofficial DeepSeek Harness particle-whale background plugin with cursor lighting and theme support.
 repo: https://github.com/gooosie/dsh-whale-bg
 package: dsh-whale-bg
 rowId: whale-bg
@@ -21,6 +21,7 @@ install:
   target: github:gooosie/dsh-whale-bg#2746a7eacba5c0dde28e29d00b6b15f1f2894164
   version: 0.1.0
   commit: 2746a7eacba5c0dde28e29d00b6b15f1f2894164
+  allowBuild: dsh-whale-bg@https://codeload.github.com/gooosie/dsh-whale-bg/tar.gz/2746a7eacba5c0dde28e29d00b6b15f1f2894164
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -30,13 +31,23 @@ screenshots:
 review:
   compatibility: verified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 104
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:55:34.455Z
-metadataUpdatedAt: 2026-08-16T14:24:40.999Z
+releaseUpdatedAt: 2026-08-18T15:44:45.240Z
+metadataUpdatedAt: 2026-08-18T15:44:45.240Z
 starsUpdatedAt: 2026-08-16T13:55:34.455Z
-updatedAt: 2026-08-16T14:24:40.999Z
+updatedAt: 2026-08-18T15:44:45.240Z

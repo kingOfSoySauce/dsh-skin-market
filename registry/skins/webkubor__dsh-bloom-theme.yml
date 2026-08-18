@@ -1,0 +1,55 @@
+id: webkubor.dsh-bloom-theme
+name:
+  zh: dsh-bloom-theme
+  en: dsh-bloom-theme
+author: webkubor
+description: DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
+repo: https://github.com/webkubor/dsh-bloom-theme
+package: "@kubor/dsh-bloom-theme"
+rowId: bloom-theme
+category: theme
+tags:
+  - pastel
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:webkubor/dsh-bloom-theme#e70e6ad9ac60266323234235324cab8ac3f028ab
+  version: 0.3.3
+  commit: e70e6ad9ac60266323234235324cab8ac3f028ab
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/bloom-banner.png
+  - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-mist-dark.png
+  - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-cinnabar-dark.png
+  - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-petal-dark.png
+  - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-ripple-dark.png
+  - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-mist-light.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 193
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:20.380Z
+metadataUpdatedAt: 2026-08-18T15:46:20.380Z
+starsUpdatedAt: 2026-08-18T15:46:20.380Z
+updatedAt: 2026-08-18T15:46:20.380Z

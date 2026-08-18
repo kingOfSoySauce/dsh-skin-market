@@ -19,6 +19,7 @@ install:
   target: github:drfccv/dsh-theme-neko#6c7c9a58ff93cef7117cbfc3b48a295039cd7c45
   version: 0.1.0
   commit: 6c7c9a58ff93cef7117cbfc3b48a295039cd7c45
+  allowBuild: dsh-theme-neko@https://codeload.github.com/drfccv/dsh-theme-neko/tar.gz/6c7c9a58ff93cef7117cbfc3b48a295039cd7c45
 compatibility:
   dsh: unverified
   platform:
@@ -28,13 +29,24 @@ screenshots:
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 46
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-16T13:48:19.998Z
-metadataUpdatedAt: 2026-08-16T13:48:19.998Z
+releaseUpdatedAt: 2026-08-18T15:40:11.189Z
+metadataUpdatedAt: 2026-08-18T15:40:11.189Z
 starsUpdatedAt: 2026-08-16T13:48:19.998Z
-updatedAt: 2026-08-16T13:48:19.998Z
+updatedAt: 2026-08-18T15:40:11.189Z

@@ -21,7 +21,7 @@ install:
   version: 0.2.9
   commit: 14980c518e7a64c37d1875af4a8be44feaa53f12
 compatibility:
-  dsh: ^0.1.0-rc.6
+  dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
@@ -30,12 +30,22 @@ review:
   compatibility: verified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 52
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T13:49:06.693Z
-metadataUpdatedAt: 2026-08-16T13:49:06.693Z
+metadataUpdatedAt: 2026-08-18T15:40:49.180Z
 starsUpdatedAt: 2026-08-16T13:49:06.693Z
-updatedAt: 2026-08-16T13:49:06.693Z
+updatedAt: 2026-08-18T15:40:49.180Z

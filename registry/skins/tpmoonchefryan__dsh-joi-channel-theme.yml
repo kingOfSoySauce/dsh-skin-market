@@ -3,7 +3,7 @@ name:
   zh: dsh-joi-channel-theme
   en: dsh-joi-channel-theme
 author: tpmoonchefryan
-description: 轴伊 Joi 双衣装主题（Joi-Flowers / Joi-Library）for DeepSeek Harness — unofficial, non-commercial fan theme plugin
+description: 轴伊 Joi 双衣装主题：Flowers 与 Library 是各自成套的明暗令牌体系，新会话页有立绘与趴在标题上的鲸鱼娘，输入框上方两只 Q 版角色随本回合状态换表情，侧栏字标换成二人合影，上下文占用由一颗渐熟的橘子表示；第三张卡可在保持插件安装的前提下切回 DeepSeek 原生外观。
 repo: https://github.com/tpmoonchefryan/dsh-joi-channel-theme
 package: dsh-joi-channel-theme
 rowId: joi-channel-theme
@@ -15,30 +15,40 @@ modes:
   - light
   - dark
 install:
-  target: github:tpmoonchefryan/dsh-joi-channel-theme#5d971cfd2877f699668c0c7062e46a11c690c50e
-  version: 0.1.6
-  commit: 5d971cfd2877f699668c0c7062e46a11c690c50e
+  target: github:tpmoonchefryan/dsh-joi-channel-theme#8eb1379dd04f18592f7ae6b833d1890f57e26f24
+  version: 0.1.9
+  commit: 8eb1379dd04f18592f7ae6b833d1890f57e26f24
 compatibility:
-  dsh: 0.1.0-rc.6
+  dsh: 0.1.0-rc.5
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/5d971cfd2877f699668c0c7062e46a11c690c50e/docs/new-chat-flowers.png
-  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/5d971cfd2877f699668c0c7062e46a11c690c50e/docs/new-chat-library.png
-  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/5d971cfd2877f699668c0c7062e46a11c690c50e/docs/new-chat-flowers-dark.png
-  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/5d971cfd2877f699668c0c7062e46a11c690c50e/docs/new-chat-library-dark.png
-  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/5d971cfd2877f699668c0c7062e46a11c690c50e/docs/app-logo-library.png
-  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/5d971cfd2877f699668c0c7062e46a11c690c50e/docs/app-logo-flowers.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/settings-wardrobe.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/settings-wardrobe-dark.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/new-chat-flowers.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/new-chat-library.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/new-chat-flowers-dark.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/working-flowers.png
 review:
   compatibility: verified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 94
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:54:05.830Z
-metadataUpdatedAt: 2026-08-17T09:04:13.000Z
-starsUpdatedAt: 2026-08-16T13:54:05.830Z
-updatedAt: 2026-08-17T09:04:13.000Z
+starsSnapshot: 7
+releaseUpdatedAt: 2026-08-18T15:39:53.474Z
+metadataUpdatedAt: 2026-08-18T15:39:53.474Z
+starsUpdatedAt: 2026-08-18T15:39:53.474Z
+updatedAt: 2026-08-18T15:39:53.474Z

@@ -3,7 +3,7 @@ name:
   zh: dsh-wx-skin
   en: dsh-wx-skin
 author: wangxilhy23
-description: DSH Web GUI 皮肤插件：侧栏「皮肤」面板，支持自选本地图片 / URL 作为全屏背景，含预设、暗化、模糊、关闭皮肤，跨刷新持久化（外部 client 插件，dsh-web-ui 风格）。
+description: dsh-wx-skin
 repo: https://github.com/wangxilhy23/dsh-wx-skin
 package: dsh-wx-skin
 rowId: ui-dsh-wx-skin
@@ -28,13 +28,24 @@ screenshots:
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 68
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-16T13:51:09.489Z
-metadataUpdatedAt: 2026-08-16T14:20:47.831Z
+metadataUpdatedAt: 2026-08-18T15:41:56.101Z
 starsUpdatedAt: 2026-08-16T13:51:09.489Z
-updatedAt: 2026-08-16T14:20:47.831Z
+updatedAt: 2026-08-18T15:41:56.101Z

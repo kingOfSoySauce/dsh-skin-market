@@ -20,6 +20,7 @@ install:
   target: github:Vim0x3c/dsh-skin-appearance#be7b05776c1dee9e3d387e122c42005edf400837
   version: 0.1.0
   commit: be7b05776c1dee9e3d387e122c42005edf400837
+  allowBuild: dsh-skin-appearance@https://codeload.github.com/Vim0x3c/dsh-skin-appearance/tar.gz/be7b05776c1dee9e3d387e122c42005edf400837
 compatibility:
   dsh: ^0.1.0-rc.5
   platform:
@@ -34,13 +35,23 @@ screenshots:
 review:
   compatibility: verified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 45
 starsSnapshot: 5
-releaseUpdatedAt: 2026-08-16T13:48:16.554Z
-metadataUpdatedAt: 2026-08-16T13:48:16.554Z
+releaseUpdatedAt: 2026-08-18T15:40:04.699Z
+metadataUpdatedAt: 2026-08-18T15:40:04.699Z
 starsUpdatedAt: 2026-08-16T13:48:16.554Z
-updatedAt: 2026-08-16T13:48:16.554Z
+updatedAt: 2026-08-18T15:40:04.699Z

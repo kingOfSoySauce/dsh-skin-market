@@ -1,0 +1,50 @@
+id: willmylife.dsh-dynamic-wallpaper
+name:
+  zh: dsh-dynamic-wallpaper
+  en: dsh-dynamic-wallpaper
+author: Willmylife
+description: 动态壁纸插件：8 种内置 Canvas 壁纸（粒子、流星雨、星际穿梭、波光、雨幕、气泡、字符雨、极光）加自定义视频背景，支持速度/密度/遮罩/模糊调节，配置持久化。
+repo: https://github.com/Willmylife/dsh-dynamic-wallpaper
+package: dsh-dynamic-wallpaper
+rowId: dynbg
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:Willmylife/dsh-dynamic-wallpaper#ac8543036cec4e0d2686ae5c5b1ce243349b2bf3
+  version: 0.1.0
+  commit: ac8543036cec4e0d2686ae5c5b1ce243349b2bf3
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/ac8543036cec4e0d2686ae5c5b1ce243349b2bf3/Willmylife/dsh-dynamic-wallpaper
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 195
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:23.999Z
+metadataUpdatedAt: 2026-08-18T15:46:23.999Z
+starsUpdatedAt: 2026-08-18T15:46:23.999Z
+updatedAt: 2026-08-18T15:46:23.999Z

@@ -3,7 +3,7 @@ name:
   zh: dsh-ivory
   en: dsh-ivory
 author: ZJUZhiyuCai
-description: An unofficial Claude-inspired light/dark theme for DeepSeek Harness with responsive layout, safe Markdown preview, and zero telemetry.
+description: DSH Web 暖中性色明暗主题，支持响应式布局、双语设置、安全 Markdown 预览、内容块复制与无遥测运行。
 repo: https://github.com/ZJUZhiyuCai/dsh-ivory
 package: dsh-ivory
 rowId: dsh-ivory
@@ -16,27 +16,37 @@ modes:
   - light
   - dark
 install:
-  target: github:ZJUZhiyuCai/dsh-ivory#435e5069cbdf9c89dd8e49f5244e26cd69333f06
-  version: 0.1.2
-  commit: 435e5069cbdf9c89dd8e49f5244e26cd69333f06
+  target: github:ZJUZhiyuCai/dsh-ivory#3391be192dfb3a5cc4b0ac7a6f43bfc7be03f317
+  version: 0.2.4
+  commit: 3391be192dfb3a5cc4b0ac7a6f43bfc7be03f317
 compatibility:
-  dsh: unverified
+  dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/435e5069cbdf9c89dd8e49f5244e26cd69333f06/assets/hero-light.png
-  - https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/435e5069cbdf9c89dd8e49f5244e26cd69333f06/assets/conversation-light.png
-  - https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/435e5069cbdf9c89dd8e49f5244e26cd69333f06/assets/mobile-light.png
+  - https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/3391be192dfb3a5cc4b0ac7a6f43bfc7be03f317/assets/hero-light.png
+  - https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/3391be192dfb3a5cc4b0ac7a6f43bfc7be03f317/assets/hero-dark.png
+  - https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/3391be192dfb3a5cc4b0ac7a6f43bfc7be03f317/assets/conversation-light.png
+  - https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/3391be192dfb3a5cc4b0ac7a6f43bfc7be03f317/assets/mobile-light.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 129
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:58:44.799Z
-metadataUpdatedAt: 2026-08-16T14:28:00.038Z
-starsUpdatedAt: 2026-08-16T13:58:44.799Z
-updatedAt: 2026-08-16T14:28:00.038Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-18T15:43:57.184Z
+metadataUpdatedAt: 2026-08-18T15:43:57.184Z
+starsUpdatedAt: 2026-08-18T15:43:57.184Z
+updatedAt: 2026-08-18T15:43:57.184Z

@@ -3,7 +3,7 @@ name:
   zh: dsh-skin-toggle
   en: dsh-skin-toggle
 author: tiantyu
-description: Instant on/off toggle button for the maid-atelier skin (深海女仆工坊) in the DeepSeek Harness (DSH) web GUI. Pure client-side presentation utility.
+description: DSH 网页皮肤管理器：可拖动的鲸鱼按钮，左键恢复默认界面，右键列出并切换所有已安装皮肤。
 repo: https://github.com/tiantyu/dsh-skin-toggle
 package: dsh-skin-toggle
 rowId: ui-skin-toggle
@@ -16,25 +16,36 @@ modes:
   - light
   - dark
 install:
-  target: github:tiantyu/dsh-skin-toggle#49cfa03b3a7959e2d5484446d44c5fbcec7724e2
-  version: 0.1.0
-  commit: 49cfa03b3a7959e2d5484446d44c5fbcec7724e2
+  target: github:tiantyu/dsh-skin-toggle#781fd4605756503f9635d6083686e079b5a8944f
+  version: 0.4.0
+  commit: 781fd4605756503f9635d6083686e079b5a8944f
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://opengraph.githubassets.com/49cfa03b3a7959e2d5484446d44c5fbcec7724e2/tiantyu/dsh-skin-toggle
+  - https://opengraph.githubassets.com/781fd4605756503f9635d6083686e079b5a8944f/tiantyu/dsh-skin-toggle
 review:
   compatibility: unverified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 122
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:57:51.456Z
-metadataUpdatedAt: 2026-08-16T14:27:00.843Z
-starsUpdatedAt: 2026-08-16T13:57:51.456Z
-updatedAt: 2026-08-16T14:27:00.843Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-08-18T15:40:53.638Z
+metadataUpdatedAt: 2026-08-18T15:40:53.638Z
+starsUpdatedAt: 2026-08-18T15:40:53.638Z
+updatedAt: 2026-08-18T15:40:53.638Z

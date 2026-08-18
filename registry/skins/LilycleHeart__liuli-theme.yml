@@ -19,30 +19,42 @@ modes:
   - light
   - dark
 install:
-  target: github:LilycleHeart/liuli-theme#a714d171400258d31923604e22c1a6b99e2add62
+  target: github:LilycleHeart/liuli-theme#307eb04764a24ff8ba3f3bd7a2eb5e103fc772d6
   version: 0.1.0
-  commit: a714d171400258d31923604e22c1a6b99e2add62
+  commit: 307eb04764a24ff8ba3f3bd7a2eb5e103fc772d6
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://count.getloli.com/@liuli-theme?theme=rule34
-  - https://raw.githubusercontent.com/LilycleHeart/liuli-theme/a714d171400258d31923604e22c1a6b99e2add62/docs/preview-start-light.png
-  - https://raw.githubusercontent.com/LilycleHeart/liuli-theme/a714d171400258d31923604e22c1a6b99e2add62/docs/preview-start-dark.png
-  - https://raw.githubusercontent.com/LilycleHeart/liuli-theme/a714d171400258d31923604e22c1a6b99e2add62/docs/preview-color-light.png
-  - https://raw.githubusercontent.com/LilycleHeart/liuli-theme/a714d171400258d31923604e22c1a6b99e2add62/docs/preview-color-dark.png
-  - https://raw.githubusercontent.com/LilycleHeart/liuli-theme/a714d171400258d31923604e22c1a6b99e2add62/docs/preview-session-dark.png
+  - https://raw.githubusercontent.com/LilycleHeart/liuli-theme/307eb04764a24ff8ba3f3bd7a2eb5e103fc772d6/docs/preview-start-light.png
+  - https://raw.githubusercontent.com/LilycleHeart/liuli-theme/307eb04764a24ff8ba3f3bd7a2eb5e103fc772d6/docs/preview-start-dark.png
+  - https://raw.githubusercontent.com/LilycleHeart/liuli-theme/307eb04764a24ff8ba3f3bd7a2eb5e103fc772d6/docs/preview-color-light.png
+  - https://raw.githubusercontent.com/LilycleHeart/liuli-theme/307eb04764a24ff8ba3f3bd7a2eb5e103fc772d6/docs/preview-color-dark.png
+  - https://raw.githubusercontent.com/LilycleHeart/liuli-theme/307eb04764a24ff8ba3f3bd7a2eb5e103fc772d6/docs/preview-session-dark.png
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 64
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16T13:50:39.220Z
-metadataUpdatedAt: 2026-08-16T14:20:19.117Z
+releaseUpdatedAt: 2026-08-18T15:41:39.468Z
+metadataUpdatedAt: 2026-08-18T15:41:39.468Z
 starsUpdatedAt: 2026-08-16T13:50:39.220Z
-updatedAt: 2026-08-16T14:20:19.117Z
+updatedAt: 2026-08-18T15:41:39.468Z

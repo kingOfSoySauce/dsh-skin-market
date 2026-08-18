@@ -3,7 +3,7 @@ name:
   zh: dsh-pet
   en: dsh-pet
 author: zealot00
-description: "Desktop pet for DeepSeek Harness Web UI: idle float animation, click speech, right-click settings panel, skin separation (assets + settings). Roadmap: alarm clock, sticky notes and more practical widgets — pure front-end."
+description: "Desktop pet for DeepSeek Harness Web UI: sprite animation, agent state linkage, drag, alarm & pomodoro widgets, skin separation"
 repo: https://github.com/zealot00/dsh-pet
 package: "@dsh-local/dsh-pet"
 rowId: dsh-pet
@@ -29,12 +29,22 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 73
-starsSnapshot: 2
+starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T13:51:35.527Z
-metadataUpdatedAt: 2026-08-16T14:21:08.829Z
-starsUpdatedAt: 2026-08-16T13:51:35.527Z
-updatedAt: 2026-08-16T14:21:08.829Z
+metadataUpdatedAt: 2026-08-18T15:41:05.271Z
+starsUpdatedAt: 2026-08-18T15:41:05.271Z
+updatedAt: 2026-08-18T15:41:05.271Z

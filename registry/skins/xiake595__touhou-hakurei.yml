@@ -37,12 +37,22 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 39
-starsSnapshot: 12
+starsSnapshot: 16
 releaseUpdatedAt: 2026-08-16T13:47:01.836Z
-metadataUpdatedAt: 2026-08-16T13:47:01.836Z
-starsUpdatedAt: 2026-08-16T13:47:01.836Z
-updatedAt: 2026-08-16T13:47:01.836Z
+metadataUpdatedAt: 2026-08-18T15:39:09.887Z
+starsUpdatedAt: 2026-08-18T15:39:09.887Z
+updatedAt: 2026-08-18T15:39:09.887Z

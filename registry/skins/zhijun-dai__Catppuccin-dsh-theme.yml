@@ -19,29 +19,40 @@ modes:
   - light
   - dark
 install:
-  target: github:zhijun-dai/Catppuccin-dsh-theme#fb76b4ed38cb31c53f919c32f65931e1e4d354af
-  version: 0.1.1
-  commit: fb76b4ed38cb31c53f919c32f65931e1e4d354af
+  target: github:zhijun-dai/Catppuccin-dsh-theme#9885d3e7ee93ad4c972e92be4b6f301105e73eb4
+  version: 0.2.1
+  commit: 9885d3e7ee93ad4c972e92be4b6f301105e73eb4
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/fb76b4ed38cb31c53f919c32f65931e1e4d354af/assets/preview.webp
-  - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/fb76b4ed38cb31c53f919c32f65931e1e4d354af/assets/latte.webp
-  - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/fb76b4ed38cb31c53f919c32f65931e1e4d354af/assets/frappe.webp
-  - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/fb76b4ed38cb31c53f919c32f65931e1e4d354af/assets/macchiato.webp
+  - https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png
+  - https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png
+  - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/9885d3e7ee93ad4c972e92be4b6f301105e73eb4/assets/preview.webp
+  - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/9885d3e7ee93ad4c972e92be4b6f301105e73eb4/assets/latte.webp
+  - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/9885d3e7ee93ad4c972e92be4b6f301105e73eb4/assets/frappe.webp
+  - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/9885d3e7ee93ad4c972e92be4b6f301105e73eb4/assets/macchiato.webp
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
   notice: Catppuccin palette 源自 catppuccin/palette，并按 MIT 许可证使用。
 featuredRank: 3
-starsSnapshot: 7
-releaseUpdatedAt: 2026-08-16T13:24:43.612Z
-metadataUpdatedAt: 2026-08-17T09:04:13.000Z
-starsUpdatedAt: 2026-08-16T12:48:41.596Z
-updatedAt: 2026-08-17T09:04:13.000Z
+starsSnapshot: 9
+releaseUpdatedAt: 2026-08-18T15:39:27.744Z
+metadataUpdatedAt: 2026-08-18T15:39:27.744Z
+starsUpdatedAt: 2026-08-18T15:39:27.744Z
+updatedAt: 2026-08-18T15:39:27.744Z

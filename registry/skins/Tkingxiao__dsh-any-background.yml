@@ -3,7 +3,7 @@ name:
   zh: dsh-any-background
   en: dsh-any-background
 author: Tkingxiao
-description: 自定义外观插件：换背景图（可调大小和位置）、用色轮自定义主题色，主界面和设置界面的透明度都能单独调。
+description: 一个主题外观插件，让你完全自定义 Web 端的主题色、背景壁纸，以及主页分部位精细的透明度与模糊度控制，还可导出导入主题设置进行分享。
 repo: https://github.com/Tkingxiao/dsh-any-background
 package: dsh-any-background
 rowId: dsh-any-background
@@ -18,30 +18,39 @@ modes:
   - light
   - dark
 install:
-  target: github:Tkingxiao/dsh-any-background#13acd6f4866dc3ce60a918b588ba38c4d4edd3ce
-  version: 0.1.6
-  commit: 13acd6f4866dc3ce60a918b588ba38c4d4edd3ce
+  target: github:Tkingxiao/dsh-any-background#be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b
+  version: 0.1.8
+  commit: be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/13acd6f4866dc3ce60a918b588ba38c4d4edd3ce/example_img/image-6.png
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/13acd6f4866dc3ce60a918b588ba38c4d4edd3ce/example_img/image-9.png
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/13acd6f4866dc3ce60a918b588ba38c4d4edd3ce/example_img/image.png
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/13acd6f4866dc3ce60a918b588ba38c4d4edd3ce/example_img/image-2.png
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/13acd6f4866dc3ce60a918b588ba38c4d4edd3ce/example_img/image-3.png
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/13acd6f4866dc3ce60a918b588ba38c4d4edd3ce/example_img/image-4.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image-2.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image-3.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image-4.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image-6.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image-9.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 7
-starsSnapshot: 6
-releaseUpdatedAt: 2026-08-16T12:31:59.883Z
-metadataUpdatedAt: 2026-08-17T09:04:13.000Z
-starsUpdatedAt: 2026-08-16T12:31:59.883Z
-updatedAt: 2026-08-17T09:04:13.000Z
+starsSnapshot: 9
+releaseUpdatedAt: 2026-08-18T15:39:26.167Z
+metadataUpdatedAt: 2026-08-18T15:39:26.167Z
+starsUpdatedAt: 2026-08-18T15:39:26.167Z
+updatedAt: 2026-08-18T15:39:26.167Z

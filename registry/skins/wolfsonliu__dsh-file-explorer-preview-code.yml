@@ -3,7 +3,7 @@ name:
   zh: dsh-file-explorer-preview-code
   en: dsh-file-explorer-preview-code
 author: wolfsonliu
-description: CodeMirror 6 code preview and editor for DSH Web, overriding dsh-file-explorer's plain-text preview with per-language syntax highlighting
+description: "DSH Web file-explorer preview plugin: code preview & editor for DSH Web — per-language syntax highlighting, in-place editing with autosave, and dark/light themes. Overrides dsh-file-explorer's plain-text preview. | DSH Web 文件浏览器插件: 代码预览与编辑插件——按语言语法高亮、就地编辑自动保存、深色/浅色主题，覆盖 dsh-file-explorer 的纯文本预览。"
 repo: https://github.com/wolfsonliu/dsh-file-explorer-preview-code
 package: "@dsh-external/dsh-file-explorer-preview-code"
 rowId: file-explorer-preview-code
@@ -16,26 +16,36 @@ modes:
   - light
   - dark
 install:
-  target: github:wolfsonliu/dsh-file-explorer-preview-code#28ff8f56d1a5c2cebc798d3161955f2568d44603
-  version: 0.1.0
-  commit: 28ff8f56d1a5c2cebc798d3161955f2568d44603
+  target: github:wolfsonliu/dsh-file-explorer-preview-code#7a82582400e3b64f2f03487114446245fc2e3693
+  version: 0.2.0
+  commit: 7a82582400e3b64f2f03487114446245fc2e3693
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/wolfsonliu/dsh-file-explorer-preview-code/28ff8f56d1a5c2cebc798d3161955f2568d44603/assets/dsh-file-explorer-preview-code_dark.png
-  - https://raw.githubusercontent.com/wolfsonliu/dsh-file-explorer-preview-code/28ff8f56d1a5c2cebc798d3161955f2568d44603/assets/dsh-file-explorer-preview-code_light.png
+  - https://raw.githubusercontent.com/wolfsonliu/dsh-file-explorer-preview-code/7a82582400e3b64f2f03487114446245fc2e3693/assets/dsh-file-explorer-preview-code_dark.png
+  - https://raw.githubusercontent.com/wolfsonliu/dsh-file-explorer-preview-code/7a82582400e3b64f2f03487114446245fc2e3693/assets/dsh-file-explorer-preview-code_light.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 124
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:58:05.239Z
-metadataUpdatedAt: 2026-08-16T14:27:16.553Z
+releaseUpdatedAt: 2026-08-18T15:46:26.132Z
+metadataUpdatedAt: 2026-08-18T15:46:26.132Z
 starsUpdatedAt: 2026-08-16T13:58:05.239Z
-updatedAt: 2026-08-16T14:27:16.553Z
+updatedAt: 2026-08-18T15:46:26.132Z

@@ -3,7 +3,7 @@ name:
   zh: wishadel-theme
   en: wishadel-theme
 author: cdxDNRF
-description: Wishadel demolition-terminal skin + task board, git graph, project panel and settings center for DeepSeek Harness Web GUI
+description: dsh主题维什戴尔风格
 repo: https://github.com/cdxDNRF/wishadel-theme
 package: "@cdxdnrf/dsh-client-ui-skin-wishadel"
 rowId: ui-skin-wishadel
@@ -16,26 +16,36 @@ modes:
   - light
   - dark
 install:
-  target: github:cdxDNRF/wishadel-theme#b78f51e6fd702d839a333de603022d68ca0ed248
+  target: github:cdxDNRF/wishadel-theme#ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0
   version: 0.6.0
-  commit: b78f51e6fd702d839a333de603022d68ca0ed248
+  commit: ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0
+  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0"
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/b78f51e6fd702d839a333de603022d68ca0ed248/docs/screenshots/conversation.png
-  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/b78f51e6fd702d839a333de603022d68ca0ed248/docs/screenshots/settings.png
+  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0/docs/screenshots/conversation.png
+  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0/docs/screenshots/settings.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 99
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:54:53.805Z
-metadataUpdatedAt: 2026-08-16T14:24:00.652Z
+releaseUpdatedAt: 2026-08-18T15:44:16.761Z
+metadataUpdatedAt: 2026-08-18T15:44:16.761Z
 starsUpdatedAt: 2026-08-16T13:54:53.805Z
-updatedAt: 2026-08-16T14:24:00.652Z
+updatedAt: 2026-08-18T15:44:16.761Z

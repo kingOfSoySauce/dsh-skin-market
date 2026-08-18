@@ -28,13 +28,24 @@ screenshots:
 review:
   compatibility: verified
   preview: repository-card
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 54
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T13:49:17.801Z
-metadataUpdatedAt: 2026-08-16T13:49:17.801Z
+metadataUpdatedAt: 2026-08-18T15:40:52.176Z
 starsUpdatedAt: 2026-08-16T13:49:17.801Z
-updatedAt: 2026-08-16T13:49:17.801Z
+updatedAt: 2026-08-18T15:40:52.176Z

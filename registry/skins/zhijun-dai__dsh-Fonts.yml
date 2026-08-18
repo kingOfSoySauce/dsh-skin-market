@@ -22,18 +22,27 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/zhijun-dai/dsh-Fonts/46014ec5663435bdd39acee2e77c3979810b1967/assets/fonts-jetbrains-inter.webp
   - https://raw.githubusercontent.com/zhijun-dai/dsh-Fonts/46014ec5663435bdd39acee2e77c3979810b1967/assets/fonts-settings.webp
+  - https://raw.githubusercontent.com/zhijun-dai/dsh-Fonts/46014ec5663435bdd39acee2e77c3979810b1967/assets/fonts-jetbrains-inter.webp
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 16
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T12:34:13.620Z
-metadataUpdatedAt: 2026-08-17T09:04:13.000Z
+metadataUpdatedAt: 2026-08-18T15:46:48.328Z
 starsUpdatedAt: 2026-08-16T12:34:13.620Z
-updatedAt: 2026-08-17T09:04:13.000Z
+updatedAt: 2026-08-18T15:46:48.328Z

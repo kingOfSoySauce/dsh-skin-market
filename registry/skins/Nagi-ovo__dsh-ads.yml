@@ -3,9 +3,9 @@ name:
   zh: dsh-ads
   en: dsh-ads
 author: Nagi-ovo
-description: 把 DSH Web 变成 2005 年门户网站的恶搞广告插件：侧栏广告、对话推荐、推理激励广告、弹窗与假游戏，支持中英文切换。
+description: "DSH ad-infestation plugin: localized Chinese portal ads and English scam-ad parody, with fake pop-ups, a jackpot wheel, rewarded inference ads, and fake-game animation."
 repo: https://github.com/Nagi-ovo/dsh-ads
-package: '@dsh-external/dsh-ads'
+package: "@dsh-external/dsh-ads"
 rowId: dsh-ads
 category: theme
 tags:
@@ -20,33 +20,35 @@ install:
   version: 0.1.0
   commit: 3a2ba704bc383099c686d3288ff6e0d61fc391e5
 compatibility:
-  dsh: unverified
+  dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/3a2ba704bc383099c686d3288ff6e0d61fc391e5/assets/screenshot.webp
   - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/3a2ba704bc383099c686d3288ff6e0d61fc391e5/assets/english-mode.png
   - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/3a2ba704bc383099c686d3288ff6e0d61fc391e5/assets/settings.webp
+  - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/3a2ba704bc383099c686d3288ff6e0d61fc391e5/assets/social-preview.jpg
+  - https://dshfind.com/api/card/Nagi-ovo/dsh-ads?lang=zh
+  - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/3a2ba704bc383099c686d3288ff6e0d61fc391e5/assets/reward-gate.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 142
-starsSnapshot: 486
+starsSnapshot: 497
 releaseUpdatedAt: 2026-08-18T02:28:44+01:00
-metadataUpdatedAt: 2026-08-18T06:24:38Z
-starsUpdatedAt: 2026-08-18T06:24:38Z
-updatedAt: 2026-08-18T06:24:38Z
+metadataUpdatedAt: 2026-08-18T15:38:16.118Z
+starsUpdatedAt: 2026-08-18T15:38:16.118Z
+updatedAt: 2026-08-18T15:38:16.118Z

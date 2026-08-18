@@ -1,0 +1,51 @@
+id: brucewu1126.dsh-web-background
+name:
+  zh: dsh-web-background
+  en: dsh-web-background
+author: BruceWu1126
+description: DeepSeek Harness Web UI background customization plugin
+repo: https://github.com/BruceWu1126/dsh-web-background
+package: dsh-web-background
+rowId: web-background
+category: theme
+tags:
+  - wallpaper
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:BruceWu1126/dsh-web-background#e6e14b6770d00967d5b65ee3b81288323d3e2867
+  version: 0.1.0
+  commit: e6e14b6770d00967d5b65ee3b81288323d3e2867
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/e6e14b6770d00967d5b65ee3b81288323d3e2867/BruceWu1126/dsh-web-background
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 151
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-18T15:41:19.727Z
+metadataUpdatedAt: 2026-08-18T15:41:19.727Z
+starsUpdatedAt: 2026-08-18T15:41:19.727Z
+updatedAt: 2026-08-18T15:41:19.727Z

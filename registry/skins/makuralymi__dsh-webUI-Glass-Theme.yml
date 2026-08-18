@@ -3,7 +3,7 @@ name:
   zh: dsh-webUI-Glass-Theme
   en: dsh-webUI-Glass-Theme
 author: makuralymi
-description: Global frosted-glass (backdrop blur) theme plugin for the dsh web UI with animated light/dark switching and a scheduled theme timer
+description: dsh-webUI-Glass-Theme
 repo: https://github.com/makuralymi/dsh-webUI-Glass-Theme
 package: dsh-client-ui-frosted-glass
 rowId: ui-frosted-glass
@@ -17,26 +17,35 @@ modes:
   - light
   - dark
 install:
-  target: github:makuralymi/dsh-webUI-Glass-Theme#1d8dac59ca9ad6dde6cfbaee14126d06fbe5b5c1
+  target: github:makuralymi/dsh-webUI-Glass-Theme#b76db9b1a96074a44eef0e87c2346a528065f1fe
   version: 0.2.0
-  commit: 1d8dac59ca9ad6dde6cfbaee14126d06fbe5b5c1
+  commit: b76db9b1a96074a44eef0e87c2346a528065f1fe
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/makuralymi/dsh-webUI-Glass-Theme/1d8dac59ca9ad6dde6cfbaee14126d06fbe5b5c1/assets/sc.png
-  - https://raw.githubusercontent.com/makuralymi/dsh-webUI-Glass-Theme/1d8dac59ca9ad6dde6cfbaee14126d06fbe5b5c1/assets/sc2.png
+  - https://raw.githubusercontent.com/makuralymi/dsh-webUI-Glass-Theme/b76db9b1a96074a44eef0e87c2346a528065f1fe/assets/sc.png
+  - https://raw.githubusercontent.com/makuralymi/dsh-webUI-Glass-Theme/b76db9b1a96074a44eef0e87c2346a528065f1fe/assets/sc2.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 53
-starsSnapshot: 3
-releaseUpdatedAt: 2026-08-16T13:49:10.001Z
-metadataUpdatedAt: 2026-08-16T14:18:52.122Z
-starsUpdatedAt: 2026-08-16T13:49:10.001Z
-updatedAt: 2026-08-16T14:18:52.122Z
+starsSnapshot: 4
+releaseUpdatedAt: 2026-08-18T15:40:20.925Z
+metadataUpdatedAt: 2026-08-18T15:40:20.925Z
+starsUpdatedAt: 2026-08-18T15:40:20.925Z
+updatedAt: 2026-08-18T15:40:20.925Z

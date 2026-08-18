@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-colorizer
   en: dsh-theme-colorizer
 author: RealHacker
-description: "DSH plugin: adds customizable color themes to the DeepSeek Web UI, selectable in the Settings page"
+description: A Deepseek Harness plugin that gives its UI color themes
 repo: https://github.com/RealHacker/dsh-theme-colorizer
 package: dsh-theme-colorizer
 rowId: theme-colorizer
@@ -16,25 +16,35 @@ modes:
   - light
   - dark
 install:
-  target: github:RealHacker/dsh-theme-colorizer#987fd9dfced2a5dd0f3031ab8b6d03619816c91b
+  target: github:RealHacker/dsh-theme-colorizer#7c4152c1956ff87d93d74f928f1cf3a9e60101ca
   version: 1.0.0
-  commit: 987fd9dfced2a5dd0f3031ab8b6d03619816c91b
+  commit: 7c4152c1956ff87d93d74f928f1cf3a9e60101ca
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/RealHacker/dsh-theme-colorizer/987fd9dfced2a5dd0f3031ab8b6d03619816c91b/asset/dsh-color-theme.jpeg
+  - https://raw.githubusercontent.com/RealHacker/dsh-theme-colorizer/7c4152c1956ff87d93d74f928f1cf3a9e60101ca/asset/dsh-color-theme.jpeg
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 117
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:57:07.914Z
-metadataUpdatedAt: 2026-08-16T14:26:10.313Z
-starsUpdatedAt: 2026-08-16T13:57:07.914Z
-updatedAt: 2026-08-16T14:26:10.313Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-18T15:41:45.407Z
+metadataUpdatedAt: 2026-08-18T15:41:45.407Z
+starsUpdatedAt: 2026-08-18T15:41:45.407Z
+updatedAt: 2026-08-18T15:41:45.407Z

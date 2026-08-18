@@ -3,7 +3,7 @@ name:
   zh: dsh-skin-claude-code
   en: dsh-skin-claude-code
 author: le-soleil-se-couche
-description: "Hot-pluggable Claude Code terminal skin for the dsh web GUI: charcoal terminal surfaces, amber accent, monospace type, terminal-window title bar."
+description: 完美复刻 Claude Code 皮肤，纪念我的 Vibe Coding 白月光。
 repo: https://github.com/le-soleil-se-couche/dsh-skin-claude-code
 package: "@deepseek-ai/dsh-client-ui-skin-claude-code"
 rowId: ui-skin-claude-code
@@ -17,6 +17,7 @@ install:
   target: github:le-soleil-se-couche/dsh-skin-claude-code#8590170e1c37eca3176469ade61998fd3d5088d4
   version: 0.0.1
   commit: 8590170e1c37eca3176469ade61998fd3d5088d4
+  allowBuild: "@deepseek-ai/dsh-client-ui-skin-claude-code@https://codeload.github.com/le-soleil-se-couche/dsh-skin-claude-code/tar.gz/8590170e1c37eca3176469ade61998fd3d5088d4"
 compatibility:
   dsh: unverified
   platform:
@@ -28,12 +29,22 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 50
 starsSnapshot: 3
-releaseUpdatedAt: 2026-08-16T13:49:00.442Z
-metadataUpdatedAt: 2026-08-16T14:18:38.965Z
+releaseUpdatedAt: 2026-08-18T15:40:42.529Z
+metadataUpdatedAt: 2026-08-18T15:40:42.529Z
 starsUpdatedAt: 2026-08-16T13:49:00.442Z
-updatedAt: 2026-08-16T14:18:38.965Z
+updatedAt: 2026-08-18T15:40:42.529Z

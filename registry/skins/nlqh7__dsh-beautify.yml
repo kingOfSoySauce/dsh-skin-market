@@ -1,0 +1,53 @@
+id: nlqh7.dsh-beautify
+name:
+  zh: dsh-beautify
+  en: dsh-beautify
+author: nlqh7
+description: "DeepSeek Harness Dream Skin，DSH theme plugin: Dream Skin color presets with a settings-page switcher."
+repo: https://github.com/nlqh7/dsh-beautify
+package: "@deepseek-ai/dsh-beautify"
+rowId: dsh-beautify
+category: theme
+tags:
+  - wallpaper
+  - anime
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:nlqh7/dsh-beautify#05eb9813cec758fb756ec8011d62218744455e5b
+  version: 0.1.0-rc.5
+  commit: 05eb9813cec758fb756ec8011d62218744455e5b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/05eb9813cec758fb756ec8011d62218744455e5b/nlqh7/dsh-beautify
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 184
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:45:34.008Z
+metadataUpdatedAt: 2026-08-18T15:45:34.008Z
+starsUpdatedAt: 2026-08-18T15:45:34.008Z
+updatedAt: 2026-08-18T15:45:34.008Z

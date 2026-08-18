@@ -23,7 +23,7 @@ install:
   version: 0.3.0
   commit: e7c61af021dab1d387566a07d3528dc563e4f070
 compatibility:
-  dsh: ^0.1.0-rc.6
+  dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
@@ -36,12 +36,21 @@ review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 14
-starsSnapshot: 1
+starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T12:33:52.774Z
-metadataUpdatedAt: 2026-08-16T13:56:18.385Z
-starsUpdatedAt: 2026-08-16T14:22:18.829Z
-updatedAt: 2026-08-16T14:22:18.829Z
+metadataUpdatedAt: 2026-08-18T15:40:44.117Z
+starsUpdatedAt: 2026-08-18T15:40:44.117Z
+updatedAt: 2026-08-18T15:40:44.117Z

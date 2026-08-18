@@ -3,7 +3,7 @@ name:
   zh: dsh-image-skin
   en: dsh-image-skin
 author: Jack-sun-learner
-description: 图片皮肤插件：导入 PNG/JPG/WebP 自动生成主题配色（背景/强调色/高亮跟随图片主色调），并可选生成 Q 版宠物（程序化或 AI 生图）
+description: DSH 图片皮肤插件：导入 PNG/JPG/WebP 自动生成主题配色，可选 Q 版宠物（程序化/AI 生图）
 repo: https://github.com/Jack-sun-learner/dsh-image-skin
 package: dsh-image-skin
 rowId: dsh-image-skin
@@ -15,26 +15,36 @@ tags:
 modes:
   - dark
 install:
-  target: github:Jack-sun-learner/dsh-image-skin#8f6b3f663e71fb9133af29098e4f3ce48dc4f310
+  target: github:Jack-sun-learner/dsh-image-skin#896de5d72b5c05d4c8a2263af3586a0b0b4b8cb9
   version: 0.1.0
-  commit: 8f6b3f663e71fb9133af29098e4f3ce48dc4f310
+  commit: 896de5d72b5c05d4c8a2263af3586a0b0b4b8cb9
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/Jack-sun-learner/dsh-image-skin/8f6b3f663e71fb9133af29098e4f3ce48dc4f310/assets/shot-1.png
-  - https://raw.githubusercontent.com/Jack-sun-learner/dsh-image-skin/8f6b3f663e71fb9133af29098e4f3ce48dc4f310/assets/shot-2.png
+  - https://raw.githubusercontent.com/Jack-sun-learner/dsh-image-skin/896de5d72b5c05d4c8a2263af3586a0b0b4b8cb9/assets/shot-1.png
+  - https://raw.githubusercontent.com/Jack-sun-learner/dsh-image-skin/896de5d72b5c05d4c8a2263af3586a0b0b4b8cb9/assets/shot-2.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 81
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:52:36.792Z
-metadataUpdatedAt: 2026-08-16T14:22:02.612Z
+releaseUpdatedAt: 2026-08-18T15:42:47.474Z
+metadataUpdatedAt: 2026-08-18T15:42:47.474Z
 starsUpdatedAt: 2026-08-16T13:52:36.792Z
-updatedAt: 2026-08-16T14:22:02.612Z
+updatedAt: 2026-08-18T15:42:47.474Z

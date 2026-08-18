@@ -19,8 +19,9 @@ install:
   target: github:ReLuckyLucy/dsh_Rhine_Lab_themo#54c2f2611f6bc6e36a784cc33908ad29bccef2b7
   version: 0.2.0
   commit: 54c2f2611f6bc6e36a784cc33908ad29bccef2b7
+  allowBuild: dsh-theme-rhine-lab@https://codeload.github.com/ReLuckyLucy/dsh_Rhine_Lab_themo/tar.gz/54c2f2611f6bc6e36a784cc33908ad29bccef2b7
 compatibility:
-  dsh: ">=0.0.1-rc.1 <1"
+  dsh: 0.1.0-rc.5
   platform:
     - web
 screenshots:
@@ -30,12 +31,21 @@ review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 118
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T14:26:15.903Z
-metadataUpdatedAt: 2026-08-16T14:26:15.903Z
+releaseUpdatedAt: 2026-08-18T15:45:48.008Z
+metadataUpdatedAt: 2026-08-18T15:45:48.008Z
 starsUpdatedAt: 2026-08-16T13:57:12.755Z
-updatedAt: 2026-08-16T14:26:15.903Z
+updatedAt: 2026-08-18T15:45:48.008Z

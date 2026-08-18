@@ -1,0 +1,51 @@
+id: zsyayo112.dsh-rick-and-morty
+name:
+  zh: dsh-rick-and-morty
+  en: dsh-rick-and-morty
+author: zsyayo112
+description: Rick and Morty theme + desktop pet for the dsh web GUI — three skins, six companions, agent-driven moods
+repo: https://github.com/zsyayo112/dsh-rick-and-morty
+package: "@zsy1126/dsh-rick-and-morty"
+rowId: rick-and-morty
+category: theme
+tags:
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:zsyayo112/dsh-rick-and-morty#83dfc64c0f53da29b7b7e70c83ea8be11416a6b3
+  version: 0.1.0
+  commit: 83dfc64c0f53da29b7b7e70c83ea8be11416a6b3
+compatibility:
+  dsh: ">=0.1.0-rc.6"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zsyayo112/dsh-rick-and-morty/83dfc64c0f53da29b7b7e70c83ea8be11416a6b3/docs/screenshot-c137-dark.png
+  - https://raw.githubusercontent.com/zsyayo112/dsh-rick-and-morty/83dfc64c0f53da29b7b7e70c83ea8be11416a6b3/docs/screenshot-meeseeks-light.png
+  - https://raw.githubusercontent.com/zsyayo112/dsh-rick-and-morty/83dfc64c0f53da29b7b7e70c83ea8be11416a6b3/docs/screenshot-settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 166
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-18T15:43:58.602Z
+metadataUpdatedAt: 2026-08-18T15:43:58.602Z
+starsUpdatedAt: 2026-08-18T15:43:58.602Z
+updatedAt: 2026-08-18T15:43:58.602Z

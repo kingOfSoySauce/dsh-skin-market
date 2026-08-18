@@ -3,7 +3,7 @@ name:
   zh: dph-endfield-theme
   en: dph-endfield-theme
 author: thjyy
-description: Unofficial industrial Endfield-inspired theme bundle for DeepSeek Harness Web.
+description: Unofficial Endfield-inspired theme and animated mascot for DeepSeek Harness Web
 repo: https://github.com/thjyy/dph-endfield-theme
 package: dph-endfield-theme
 rowId: dph-endfield-theme
@@ -34,12 +34,22 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 121
-starsSnapshot: 0
+starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16T13:57:46.646Z
-metadataUpdatedAt: 2026-08-16T14:26:54.042Z
-starsUpdatedAt: 2026-08-16T13:57:46.646Z
-updatedAt: 2026-08-16T14:26:54.042Z
+metadataUpdatedAt: 2026-08-18T15:43:39.096Z
+starsUpdatedAt: 2026-08-18T15:43:39.096Z
+updatedAt: 2026-08-18T15:43:39.096Z

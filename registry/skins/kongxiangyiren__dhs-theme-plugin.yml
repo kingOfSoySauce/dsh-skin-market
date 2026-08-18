@@ -3,7 +3,7 @@ name:
   zh: dhs-theme-plugin
   en: dhs-theme-plugin
 author: kongxiangyiren
-description: 主题管理插件：设置-主题大分类，内置森林绿/海洋蓝，支持上传 __ModuleLoader__.load 格式的 JS 主题（overrideTokens + CSS + slots UI），点击切换，磁盘持久化。
+description: dsh 主题管理插件,可以自定义主题
 repo: https://github.com/kongxiangyiren/dhs-theme-plugin
 package: "@kongxiangyiren/dhs-theme-plugin"
 rowId: dhs-theme-plugin
@@ -29,12 +29,22 @@ review:
   compatibility: verified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 82
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16T13:52:44.893Z
-metadataUpdatedAt: 2026-08-16T14:22:10.678Z
+metadataUpdatedAt: 2026-08-18T15:42:56.068Z
 starsUpdatedAt: 2026-08-16T13:52:44.893Z
-updatedAt: 2026-08-16T14:22:10.678Z
+updatedAt: 2026-08-18T15:42:56.068Z

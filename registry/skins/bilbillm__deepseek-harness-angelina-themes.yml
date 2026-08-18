@@ -3,7 +3,7 @@ name:
   zh: deepseek-harness-angelina-themes
   en: deepseek-harness-angelina-themes
 author: bilbillm
-description: Angelina light and dark glass themes with restrained parallax for DeepSeek Harness
+description: Angelina light and dark glass themes with parallax for DeepSeek Harness
 repo: https://github.com/bilbillm/deepseek-harness-angelina-themes
 package: dsh-angelina-themes
 rowId: dsh-angelina-themes
@@ -18,36 +18,43 @@ modes:
   - light
   - dark
 install:
-  target: github:bilbillm/deepseek-harness-angelina-themes#0286059df24bbfbce01bcdc9746b3d04c678c28e
+  target: github:bilbillm/deepseek-harness-angelina-themes#ee74b2d6852173c0c1de39f6973685255de7229b
   version: 0.1.0
-  commit: 0286059df24bbfbce01bcdc9746b3d04c678c28e
+  commit: ee74b2d6852173c0c1de39f6973685255de7229b
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/bilbillm__deepseek-harness-angelina-themes/0286059df24bbfbce01bcdc9746b3d04c678c28e/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/bilbillm__deepseek-harness-angelina-themes/0286059df24bbfbce01bcdc9746b3d04c678c28e/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/bilbillm__deepseek-harness-angelina-themes/0286059df24bbfbce01bcdc9746b3d04c678c28e/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/bilbillm/deepseek-harness-angelina-themes/ee74b2d6852173c0c1de39f6973685255de7229b/src/assets/angelina-light-hero.webp
+  - https://raw.githubusercontent.com/bilbillm/deepseek-harness-angelina-themes/ee74b2d6852173c0c1de39f6973685255de7229b/src/assets/angelina-dark-hero.webp
+  - https://raw.githubusercontent.com/bilbillm/deepseek-harness-angelina-themes/ee74b2d6852173c0c1de39f6973685255de7229b/src/assets/angelina-light-parallax-background.webp
+  - https://raw.githubusercontent.com/bilbillm/deepseek-harness-angelina-themes/ee74b2d6852173c0c1de39f6973685255de7229b/src/assets/angelina-light-parallax-foreground.webp
+  - https://raw.githubusercontent.com/bilbillm/deepseek-harness-angelina-themes/ee74b2d6852173c0c1de39f6973685255de7229b/docs/screenshots/glass-actions-menu.png
+  - https://raw.githubusercontent.com/bilbillm/deepseek-harness-angelina-themes/ee74b2d6852173c0c1de39f6973685255de7229b/docs/screenshots/glass-sort-menu.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: pass
     installation: pass
-  suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 58
-starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16T13:49:51.564Z
-metadataUpdatedAt: 2026-08-17T02:56:08.159Z
-starsUpdatedAt: 2026-08-16T13:49:51.564Z
-updatedAt: 2026-08-17T02:56:08.159Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/bilbillm__deepseek-harness-angelina-themes/0286059df24bbfbce01bcdc9746b3d04c678c28e/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/bilbillm__deepseek-harness-angelina-themes/0286059df24bbfbce01bcdc9746b3d04c678c28e/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/bilbillm__deepseek-harness-angelina-themes/0286059df24bbfbce01bcdc9746b3d04c678c28e/settings.png
+starsSnapshot: 3
+releaseUpdatedAt: 2026-08-18T15:40:34.001Z
+metadataUpdatedAt: 2026-08-18T15:40:34.001Z
+starsUpdatedAt: 2026-08-18T15:40:34.001Z
+updatedAt: 2026-08-18T15:40:34.001Z

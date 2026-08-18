@@ -1,0 +1,50 @@
+id: eachsheep.dsh-valley-pixel-skin
+name:
+  zh: dsh-valley-pixel-skin
+  en: dsh-valley-pixel-skin
+author: EachSheep
+description: A cozy farm pixel skin for DeepSeek Harness Desktop and Web UI.
+repo: https://github.com/EachSheep/dsh-valley-pixel-skin
+package: dsh-client-ui-skin-valley-spring
+rowId: ui-skin-valley-spring
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:EachSheep/dsh-valley-pixel-skin#e746c941ffba2dd11ead96b50bc8c2964e9fef8b
+  version: 0.1.0
+  commit: e746c941ffba2dd11ead96b50bc8c2964e9fef8b
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/EachSheep/dsh-valley-pixel-skin/e746c941ffba2dd11ead96b50bc8c2964e9fef8b/preview/valley-spring-main.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 175
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:44:34.423Z
+metadataUpdatedAt: 2026-08-18T15:44:34.423Z
+starsUpdatedAt: 2026-08-18T15:44:34.423Z
+updatedAt: 2026-08-18T15:44:34.423Z

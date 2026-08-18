@@ -1,0 +1,54 @@
+id: zhangyuzhangyu233.dsh-angelsanddemon-fatesumphony-skin
+name:
+  zh: dsh-angelsanddemon-fatesumphony-skin
+  en: dsh-angelsanddemon-fatesumphony-skin
+author: zhangyuzhangyu233
+description: dsh-angelsanddemon-fatesumphony-skin
+repo: https://github.com/zhangyuzhangyu233/dsh-angelsanddemon-fatesumphony-skin
+package: dsh-angelsanddemon-fatesumphony-skin
+rowId: dsh-angelsanddemon-fatesumphony-skin
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:zhangyuzhangyu233/dsh-angelsanddemon-fatesumphony-skin#66ee1028f5247483a2e2579260e9251fe9477ef0
+  version: 1.0.5
+  commit: 66ee1028f5247483a2e2579260e9251fe9477ef0
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/66ee1028f5247483a2e2579260e9251fe9477ef0/zhangyuzhangyu233/dsh-angelsanddemon-fatesumphony-skin
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 199
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:46.296Z
+metadataUpdatedAt: 2026-08-18T15:46:46.296Z
+starsUpdatedAt: 2026-08-18T15:46:46.296Z
+updatedAt: 2026-08-18T15:46:46.296Z

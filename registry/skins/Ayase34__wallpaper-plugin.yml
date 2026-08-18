@@ -1,0 +1,51 @@
+id: ayase34.wallpaper-plugin
+name:
+  zh: wallpaper-plugin
+  en: wallpaper-plugin
+author: Ayase34
+description: DeepSeek Harness的壁纸管理插件
+repo: https://github.com/Ayase34/wallpaper-plugin
+package: wallpaper-plugin
+rowId: wallpaper-plugin
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:Ayase34/wallpaper-plugin#8b5e1d9b654a76b4d26737f1608ab5bee735afa8
+  version: 1.0.0
+  commit: 8b5e1d9b654a76b4d26737f1608ab5bee735afa8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/8b5e1d9b654a76b4d26737f1608ab5bee735afa8/Ayase34/wallpaper-plugin
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 157
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-18T15:42:17.935Z
+metadataUpdatedAt: 2026-08-18T15:42:17.935Z
+starsUpdatedAt: 2026-08-18T15:42:17.935Z
+updatedAt: 2026-08-18T15:42:17.935Z

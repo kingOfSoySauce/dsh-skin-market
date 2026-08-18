@@ -1,0 +1,56 @@
+id: lkdx0220.genshin-odette-skin-dsh
+name:
+  zh: Genshin-odette-skin-dsh
+  en: Genshin-odette-skin-dsh
+author: lkdx0220
+description: Genshin-odette-skin-dsh
+repo: https://github.com/lkdx0220/Genshin-odette-skin-dsh
+package: dsh-odette-skin
+rowId: odette-skin
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - pastel
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:lkdx0220/Genshin-odette-skin-dsh#90ab5b724d956576973f3aca40b1b331aff7d42c
+  version: 0.0.1
+  commit: 90ab5b724d956576973f3aca40b1b331aff7d42c
+  allowBuild: dsh-odette-skin@https://codeload.github.com/lkdx0220/Genshin-odette-skin-dsh/tar.gz/90ab5b724d956576973f3aca40b1b331aff7d42c
+compatibility:
+  dsh: ">=0.0.1-rc <2"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lkdx0220/Genshin-odette-skin-dsh/90ab5b724d956576973f3aca40b1b331aff7d42c/assets/bg-light.jpg
+  - https://raw.githubusercontent.com/lkdx0220/Genshin-odette-skin-dsh/90ab5b724d956576973f3aca40b1b331aff7d42c/assets/bg-dark.jpg
+  - https://raw.githubusercontent.com/lkdx0220/Genshin-odette-skin-dsh/90ab5b724d956576973f3aca40b1b331aff7d42c/assets/deco-sidebar.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 182
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:45:23.237Z
+metadataUpdatedAt: 2026-08-18T15:45:23.237Z
+starsUpdatedAt: 2026-08-18T15:45:23.237Z
+updatedAt: 2026-08-18T15:45:23.237Z

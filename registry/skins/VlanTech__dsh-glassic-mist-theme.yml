@@ -3,7 +3,7 @@ name:
   zh: dsh-glassic-mist-theme
   en: dsh-glassic-mist-theme
 author: VlanTech
-description: Glassic Mist 雾蓝主题：极浅雾蓝界面 + 云端动效背景 + 全弹窗毛玻璃质感；设置持久化开关 + /misttheme 命令
+description: "Glassic Mist 雾蓝主题 for DeepSeek Harness: mist-blue veil + drifting cloud animation + frosted-glass UI (dsh-mistblue plugin)"
 repo: https://github.com/VlanTech/dsh-glassic-mist-theme
 package: dsh-mistblue
 rowId: mistblue
@@ -30,12 +30,24 @@ review:
   compatibility: unverified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 123
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T13:57:56.238Z
-metadataUpdatedAt: 2026-08-16T14:27:09.560Z
+metadataUpdatedAt: 2026-08-18T15:46:17.119Z
 starsUpdatedAt: 2026-08-16T13:57:56.238Z
-updatedAt: 2026-08-16T14:27:09.560Z
+updatedAt: 2026-08-18T15:46:17.119Z

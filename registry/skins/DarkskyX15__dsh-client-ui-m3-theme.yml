@@ -3,7 +3,7 @@ name:
   zh: dsh-client-ui-m3-theme
   en: dsh-client-ui-m3-theme
 author: DarkskyX15
-description: "Material 3 theme plugin for DeepSeek Harness: full M3 token mapping (light/dark palettes with per-mode chroma) + settings panel with primary color picker, presets and preview"
+description: "Material 3 theme plugin for DeepSeek Harness: derives the full --dsw-* color token set from one primary color, with separate light/dark palettes (per-mode chroma, fixed contrast surfaces), plus a settings panel with color picker, presets and live preview."
 repo: https://github.com/DarkskyX15/dsh-client-ui-m3-theme
 package: dsh-client-ui-m3-theme
 rowId: ui-m3-theme
@@ -29,12 +29,23 @@ review:
   compatibility: verified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 78
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16T13:52:11.206Z
-metadataUpdatedAt: 2026-08-16T14:21:41.939Z
+metadataUpdatedAt: 2026-08-18T15:42:30.203Z
 starsUpdatedAt: 2026-08-16T13:52:11.206Z
-updatedAt: 2026-08-16T14:21:41.939Z
+updatedAt: 2026-08-18T15:42:30.203Z

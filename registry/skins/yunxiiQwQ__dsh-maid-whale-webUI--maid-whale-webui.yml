@@ -32,12 +32,22 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 22
-starsSnapshot: 8
+starsSnapshot: 14
 releaseUpdatedAt: 2026-08-16T12:48:35.081Z
-metadataUpdatedAt: 2026-08-16T13:47:36.495Z
-starsUpdatedAt: 2026-08-16T12:48:35.081Z
-updatedAt: 2026-08-16T13:47:36.495Z
+metadataUpdatedAt: 2026-08-18T15:39:15.356Z
+starsUpdatedAt: 2026-08-18T15:39:15.356Z
+updatedAt: 2026-08-18T15:39:15.356Z

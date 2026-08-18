@@ -3,7 +3,7 @@ name:
   zh: gal-view
   en: gal-view
 author: Ayase34
-description: DSH Web 会话页的 Galgame 风格对话视图：16:9 舞台、对话框、打字机台词与可拖拽场景编辑器。
+description: DSH Web GUI 会话页的 GAL 视窗：Galgame 风格对话视图 + 场景元素可视化编辑器
 repo: https://github.com/Ayase34/gal-view
 package: gal-view
 rowId: gal-view
@@ -43,8 +43,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 135
-starsSnapshot: 87
+starsSnapshot: 95
 releaseUpdatedAt: 2026-08-16T09:00:49+09:00
-metadataUpdatedAt: 2026-08-18T06:24:38Z
-starsUpdatedAt: 2026-08-18T06:24:38Z
-updatedAt: 2026-08-18T06:24:38Z
+metadataUpdatedAt: 2026-08-18T15:38:32.160Z
+starsUpdatedAt: 2026-08-18T15:38:32.160Z
+updatedAt: 2026-08-18T15:38:32.160Z

@@ -31,12 +31,21 @@ review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 40
-starsSnapshot: 11
+starsSnapshot: 18
 releaseUpdatedAt: 2026-08-16T13:47:05.463Z
-metadataUpdatedAt: 2026-08-16T13:47:05.463Z
-starsUpdatedAt: 2026-08-16T13:47:05.463Z
-updatedAt: 2026-08-16T13:47:05.463Z
+metadataUpdatedAt: 2026-08-18T15:39:06.078Z
+starsUpdatedAt: 2026-08-18T15:39:06.078Z
+updatedAt: 2026-08-18T15:39:06.078Z

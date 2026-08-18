@@ -1,0 +1,48 @@
+id: aik358.dsh-anchored-monitor
+name:
+  zh: dsh-anchored-monitor
+  en: dsh-anchored-monitor
+author: Aik358
+description: "Real-time chain-of-thought anchoring monitor & intervention plugin for DeepSeek Harness: three-band (spec/mixed/react) fingerprint detection, L1 hint / L2 reset / L3 restart interventions, liquid-glass web overlay + rheostat bar, standalone monitor process with JSONL experiment logs."
+repo: https://github.com/Aik358/dsh-anchored-monitor
+package: "@a9i5k4/dsh-anchored-monitor"
+rowId: anchored-monitor
+category: theme
+tags:
+  - glass
+  - retro
+modes:
+  - light
+  - dark
+install:
+  target: github:Aik358/dsh-anchored-monitor#133e0adc2f11a2eb0844683b9405eb88b97d52c0
+  version: 0.2.9
+  commit: 133e0adc2f11a2eb0844683b9405eb88b97d52c0
+compatibility:
+  dsh: 0.1.0-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Aik358/dsh-anchored-monitor/133e0adc2f11a2eb0844683b9405eb88b97d52c0/docs/dashboard.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 155
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-18T15:42:11.099Z
+metadataUpdatedAt: 2026-08-18T15:42:11.099Z
+starsUpdatedAt: 2026-08-18T15:42:11.099Z
+updatedAt: 2026-08-18T15:42:11.099Z

@@ -1,0 +1,54 @@
+id: weilv-d.wallpaper-engine-dsh
+name:
+  zh: wallpaper-engine-dsh
+  en: wallpaper-engine-dsh
+author: Weilv-D
+description: "DSH plugin bundle: live Wallpaper Engine backgrounds for the DSH web GUI - video/web wallpapers, static scene previews, rotation lists, search, resource monitor, bilingual UI"
+repo: https://github.com/Weilv-D/wallpaper-engine-dsh
+package: wallpaper-engine-dsh
+rowId: we-background
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Weilv-D/wallpaper-engine-dsh#030a59b61b05a06e70861784e8335daec0d203da
+  version: 1.0.2
+  commit: 030a59b61b05a06e70861784e8335daec0d203da
+  allowBuild: wallpaper-engine-dsh@https://codeload.github.com/Weilv-D/wallpaper-engine-dsh/tar.gz/030a59b61b05a06e70861784e8335daec0d203da
+compatibility:
+  dsh: ">=0.1.0-rc.6"
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/030a59b61b05a06e70861784e8335daec0d203da/Weilv-D/wallpaper-engine-dsh
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 194
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:22.227Z
+metadataUpdatedAt: 2026-08-18T15:46:22.227Z
+starsUpdatedAt: 2026-08-18T15:46:22.227Z
+updatedAt: 2026-08-18T15:46:22.227Z

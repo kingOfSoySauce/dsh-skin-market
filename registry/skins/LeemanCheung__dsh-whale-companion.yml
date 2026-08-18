@@ -16,25 +16,34 @@ modes:
   - light
   - dark
 install:
-  target: github:LeemanCheung/dsh-whale-companion#6b755b4ae906b22480d56162a535a7d9b88ce976
+  target: github:LeemanCheung/dsh-whale-companion#9fca0908e5a96412f2314c047c2a0bedcdd642b8
   version: 1.0.0
-  commit: 6b755b4ae906b22480d56162a535a7d9b88ce976
+  commit: 9fca0908e5a96412f2314c047c2a0bedcdd642b8
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/LeemanCheung/dsh-whale-companion/6b755b4ae906b22480d56162a535a7d9b88ce976/assets/screenshots/overview.png
+  - https://raw.githubusercontent.com/LeemanCheung/dsh-whale-companion/9fca0908e5a96412f2314c047c2a0bedcdd642b8/assets/screenshots/overview.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 110
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:56:21.797Z
-metadataUpdatedAt: 2026-08-16T13:56:21.797Z
-starsUpdatedAt: 2026-08-16T13:56:21.797Z
-updatedAt: 2026-08-16T13:56:21.797Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-18T15:42:59.892Z
+metadataUpdatedAt: 2026-08-18T15:42:59.892Z
+starsUpdatedAt: 2026-08-18T15:42:59.892Z
+updatedAt: 2026-08-18T15:42:59.892Z

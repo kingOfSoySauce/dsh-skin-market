@@ -17,25 +17,36 @@ modes:
   - light
   - dark
 install:
-  target: github:alcohol-101/dsh-gif-background#1e4b5f9a27a491769c8b5ec595b461e64b1ee844
-  version: 0.1.0
-  commit: 1e4b5f9a27a491769c8b5ec595b461e64b1ee844
+  target: github:alcohol-101/dsh-gif-background#bc3d531dbe1a4810300d63b1ed1220478e302d49
+  version: 0.1.2
+  commit: bc3d531dbe1a4810300d63b1ed1220478e302d49
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://opengraph.githubassets.com/1e4b5f9a27a491769c8b5ec595b461e64b1ee844/alcohol-101/dsh-gif-background
+  - https://opengraph.githubassets.com/bc3d531dbe1a4810300d63b1ed1220478e302d49/alcohol-101/dsh-gif-background
 review:
   compatibility: unverified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 76
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:52:04.051Z
-metadataUpdatedAt: 2026-08-16T13:52:04.051Z
+releaseUpdatedAt: 2026-08-18T15:42:13.320Z
+metadataUpdatedAt: 2026-08-18T15:42:13.320Z
 starsUpdatedAt: 2026-08-16T13:52:04.051Z
-updatedAt: 2026-08-16T13:52:04.051Z
+updatedAt: 2026-08-18T15:42:13.320Z

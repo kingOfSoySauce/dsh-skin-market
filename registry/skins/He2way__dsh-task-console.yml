@@ -3,7 +3,7 @@ name:
   zh: dsh-task-console
   en: dsh-task-console
 author: He2way
-description: "DSH client plugin — flip to the back of the page for a floating glass task console: live background jobs, subagents, session overview and workspace of the current session, with mouse-draggable cards."
+description: "DSH client plugin: a floating glass task console on the back of the page — live background jobs, subagents, session overview and workspace for the current session, with mouse-draggable cards."
 repo: https://github.com/He2way/dsh-task-console
 package: dsh-task-console
 rowId: task-console
@@ -29,12 +29,23 @@ review:
   compatibility: unverified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 107
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T13:55:53.334Z
-metadataUpdatedAt: 2026-08-16T14:25:05.156Z
+metadataUpdatedAt: 2026-08-18T15:44:54.477Z
 starsUpdatedAt: 2026-08-16T13:55:53.334Z
-updatedAt: 2026-08-16T14:25:05.156Z
+updatedAt: 2026-08-18T15:44:54.477Z

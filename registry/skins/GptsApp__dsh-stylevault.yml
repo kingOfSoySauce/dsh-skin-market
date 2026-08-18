@@ -3,7 +3,7 @@ name:
   zh: dsh-stylevault
   en: dsh-stylevault
 author: GptsApp
-description: StyleVault — classic open-source themes + full Style Settings + shareable config packs for DeepSeek Harness.
+description: StyleVault — classic themes + Style Settings for DeepSeek Harness (30 palettes, shareable configs)
 repo: https://github.com/GptsApp/dsh-stylevault
 package: dsh-stylevault
 rowId: stylevault
@@ -18,29 +18,39 @@ modes:
   - light
   - dark
 install:
-  target: github:GptsApp/dsh-stylevault#68ce16d91f9a12b34317f65ee41e0dc3784976d7
+  target: github:GptsApp/dsh-stylevault#b627f3a40c86cee9016d3749368479c08b5443b9
   version: 0.3.0
-  commit: 68ce16d91f9a12b34317f65ee41e0dc3784976d7
+  commit: b627f3a40c86cee9016d3749368479c08b5443b9
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/68ce16d91f9a12b34317f65ee41e0dc3784976d7/docs/screenshots/preview-dark-nord.png
-  - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/68ce16d91f9a12b34317f65ee41e0dc3784976d7/docs/screenshots/preview-light-nord.png
-  - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/68ce16d91f9a12b34317f65ee41e0dc3784976d7/docs/screenshots/settings-1.png
-  - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/68ce16d91f9a12b34317f65ee41e0dc3784976d7/docs/screenshots/settings-2.png
-  - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/68ce16d91f9a12b34317f65ee41e0dc3784976d7/docs/screenshots/settings-3.png
+  - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/docs/screenshots/preview-dark-nord.png
+  - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/docs/screenshots/preview-light-nord.png
+  - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/docs/screenshots/settings-1.png
+  - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/docs/screenshots/settings-2.png
+  - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/docs/screenshots/settings-3.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 105
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:55:39.547Z
-metadataUpdatedAt: 2026-08-16T14:24:46.251Z
+releaseUpdatedAt: 2026-08-18T15:44:47.231Z
+metadataUpdatedAt: 2026-08-18T15:44:47.231Z
 starsUpdatedAt: 2026-08-16T13:55:39.547Z
-updatedAt: 2026-08-16T14:24:46.251Z
+updatedAt: 2026-08-18T15:44:47.231Z

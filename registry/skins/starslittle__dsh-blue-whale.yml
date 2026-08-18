@@ -16,26 +16,35 @@ modes:
   - light
   - dark
 install:
-  target: github:starslittle/dsh-blue-whale#1abc6eea453011c7449af8e1aef5c7754784738d
+  target: github:starslittle/dsh-blue-whale#e18aa1e27e98df98c478b8d24076a94e64d43ed5
   version: 0.1.0
-  commit: 1abc6eea453011c7449af8e1aef5c7754784738d
+  commit: e18aa1e27e98df98c478b8d24076a94e64d43ed5
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/starslittle/dsh-blue-whale/1abc6eea453011c7449af8e1aef5c7754784738d/docs/compare-home.png
-  - https://raw.githubusercontent.com/starslittle/dsh-blue-whale/1abc6eea453011c7449af8e1aef5c7754784738d/docs/compare-brand.png
+  - https://raw.githubusercontent.com/starslittle/dsh-blue-whale/e18aa1e27e98df98c478b8d24076a94e64d43ed5/docs/compare-home.png
+  - https://raw.githubusercontent.com/starslittle/dsh-blue-whale/e18aa1e27e98df98c478b8d24076a94e64d43ed5/docs/compare-brand.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 6
 starsSnapshot: 6
-releaseUpdatedAt: 2026-08-16T12:31:55.720Z
-metadataUpdatedAt: 2026-08-16T13:47:52.323Z
+releaseUpdatedAt: 2026-08-18T15:39:51.782Z
+metadataUpdatedAt: 2026-08-18T15:39:51.782Z
 starsUpdatedAt: 2026-08-16T12:31:55.720Z
-updatedAt: 2026-08-16T13:47:52.323Z
+updatedAt: 2026-08-18T15:39:51.782Z

@@ -1,0 +1,50 @@
+id: crack-time.dsh-web-ui-skin
+name:
+  zh: dsh-web-ui-skin
+  en: dsh-web-ui-skin
+author: crack-time
+description: "Pastoral Cottage skin for the DeepSeek Harness web GUI: 4K wallpaper + frosted glass panels (pure-UI dsh.client plugin)"
+repo: https://github.com/crack-time/dsh-web-ui-skin
+package: "@crack/dsh-web-ui-skin"
+rowId: dsh-web-ui-skin
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - pastel
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:crack-time/dsh-web-ui-skin#1300b594d16b292519a109385ad360247b6fba26
+  version: 0.1.0
+  commit: 1300b594d16b292519a109385ad360247b6fba26
+compatibility:
+  dsh: 0.1.0-rc.7
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/crack-time/dsh-web-ui-skin/1300b594d16b292519a109385ad360247b6fba26/docs/screenshot.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 174
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:44:25.553Z
+metadataUpdatedAt: 2026-08-18T15:44:25.553Z
+starsUpdatedAt: 2026-08-18T15:44:25.553Z
+updatedAt: 2026-08-18T15:44:25.553Z

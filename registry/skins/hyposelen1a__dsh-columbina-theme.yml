@@ -1,0 +1,51 @@
+id: hyposelen1a.dsh-columbina-theme
+name:
+  zh: dsh-columbina-theme
+  en: dsh-columbina-theme
+author: hyposelen1a
+description: "原神哥伦比娅主题的 DeepSeek Harness Web 插件：背景、蒙版与明暗配色。A Genshin Impact Columbina themed plugin for DeepSeek Harness Web: background, mask, and per light/dark color schemes."
+repo: https://github.com/hyposelen1a/dsh-columbina-theme
+package: dsh-columbina-theme
+rowId: dsh-columbina-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:hyposelen1a/dsh-columbina-theme#00b8e72e5d40bbaf62959e5a5bef5108beded9e0
+  version: 0.1.0
+  commit: 00b8e72e5d40bbaf62959e5a5bef5108beded9e0
+compatibility:
+  dsh: 0.1.0-rc.7
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/hyposelen1a/dsh-columbina-theme/00b8e72e5d40bbaf62959e5a5bef5108beded9e0/docs/screenshot-light.png
+  - https://raw.githubusercontent.com/hyposelen1a/dsh-columbina-theme/00b8e72e5d40bbaf62959e5a5bef5108beded9e0/docs/screenshot-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 160
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-18T15:42:41.150Z
+metadataUpdatedAt: 2026-08-18T15:42:41.150Z
+starsUpdatedAt: 2026-08-18T15:42:41.150Z
+updatedAt: 2026-08-18T15:42:41.150Z

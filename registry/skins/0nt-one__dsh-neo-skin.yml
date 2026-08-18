@@ -3,7 +3,7 @@ name:
   zh: dsh-neo-skin
   en: dsh-neo-skin
 author: 0nt-one
-description: Neo-brutalism skin for DeepSeek Harness Web UI — stacks hard-border / high-contrast --dsw-alias-* token overrides (DS-native blue + black-white + green + orange) on top of the built-in light/dark palettes.
+description: 新粗野主义换肤皮肤：双方案（蓝统治 / 做旧报纸）随时切换，硬阴影 + 直角 + 2px 边框结构层，浅色/深色自适应。
 repo: https://github.com/0nt-one/dsh-neo-skin
 package: dsh-neo-skin
 rowId: dsh-neo-skin
@@ -31,12 +31,22 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 74
-starsSnapshot: 1
+starsSnapshot: 2
 releaseUpdatedAt: 2026-08-16T13:51:42.695Z
-metadataUpdatedAt: 2026-08-16T14:21:20.609Z
-starsUpdatedAt: 2026-08-16T13:51:42.695Z
-updatedAt: 2026-08-16T14:21:20.609Z
+metadataUpdatedAt: 2026-08-18T15:42:05.475Z
+starsUpdatedAt: 2026-08-18T15:42:05.475Z
+updatedAt: 2026-08-18T15:42:05.475Z

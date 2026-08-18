@@ -1,0 +1,54 @@
+id: niiang.dsh-kimino-theme
+name:
+  zh: dsh-kimino-theme
+  en: dsh-kimino-theme
+author: niiang
+description: 《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
+repo: https://github.com/niiang/dsh-kimino-theme
+package: dsh-kimino-theme
+rowId: kimino-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:niiang/dsh-kimino-theme#eda0aef6141cf13e4bb123a4749696fe045c349c
+  version: 66.1.0
+  commit: eda0aef6141cf13e4bb123a4749696fe045c349c
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/home-hero.png
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/sidebar.png
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/chat-main.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 145
+starsSnapshot: 9
+releaseUpdatedAt: 2026-08-18T15:39:49.952Z
+metadataUpdatedAt: 2026-08-18T15:39:49.952Z
+starsUpdatedAt: 2026-08-18T15:39:49.952Z
+updatedAt: 2026-08-18T15:39:49.952Z

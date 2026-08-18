@@ -1,0 +1,47 @@
+id: hto404.dsh-chime
+name:
+  zh: dsh-chime
+  en: dsh-chime
+author: HtO404
+description: "Task-completion notification chime for the DSH web GUI: beeps when an agent turn finishes, even in background tabs. 10 preset sounds + custom import + volume."
+repo: https://github.com/HtO404/dsh-chime
+package: "@hto404/dsh-chime"
+rowId: chime
+category: theme
+tags:
+  - light-dark
+modes:
+  - light
+install:
+  target: github:HtO404/dsh-chime#19ee4c95a86ad642a3e57c78b7685cba9d9ee52b
+  version: 0.1.2
+  commit: 19ee4c95a86ad642a3e57c78b7685cba9d9ee52b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/HtO404/dsh-chime/19ee4c95a86ad642a3e57c78b7685cba9d9ee52b/docs/demo.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 180
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:44:57.772Z
+metadataUpdatedAt: 2026-08-18T15:44:57.772Z
+starsUpdatedAt: 2026-08-18T15:44:57.772Z
+updatedAt: 2026-08-18T15:44:57.772Z

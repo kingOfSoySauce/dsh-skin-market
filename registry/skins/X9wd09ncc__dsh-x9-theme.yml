@@ -3,7 +3,7 @@ name:
   zh: dsh-x9-theme
   en: dsh-x9-theme
 author: X9wd09ncc
-description: DeepSeek Harness WebUI 主题插件：6 种预设风格、背景图片（本地上传/路径/URL）、分区独立样式（毛玻璃/浮雕/霓虹等）、四区透明度、分区自定义 CSS（免 F12 显示当前样式）、字体/阴影/动效等全套外观定制
+description: 一个dsh的主题修改插件
 repo: https://github.com/X9wd09ncc/dsh-x9-theme
 package: dsh-x9-theme
 rowId: ui-x9-theme
@@ -19,26 +19,36 @@ modes:
   - light
   - dark
 install:
-  target: github:X9wd09ncc/dsh-x9-theme#0bff59b4f7a35f22db601946ba7c35815a306901
-  version: 9.2.0
-  commit: 0bff59b4f7a35f22db601946ba7c35815a306901
+  target: github:X9wd09ncc/dsh-x9-theme#9af49294ab82a3ca1e6c5ab9df46179a5bd9489b
+  version: 9.3.0
+  commit: 9af49294ab82a3ca1e6c5ab9df46179a5bd9489b
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/X9wd09ncc/dsh-x9-theme/0bff59b4f7a35f22db601946ba7c35815a306901//assets/screenshots/settings-theme.png
-  - https://raw.githubusercontent.com/X9wd09ncc/dsh-x9-theme/0bff59b4f7a35f22db601946ba7c35815a306901//assets/screenshots/background.png
+  - https://raw.githubusercontent.com/X9wd09ncc/dsh-x9-theme/9af49294ab82a3ca1e6c5ab9df46179a5bd9489b//assets/screenshots/settings-theme.png
+  - https://raw.githubusercontent.com/X9wd09ncc/dsh-x9-theme/9af49294ab82a3ca1e6c5ab9df46179a5bd9489b//assets/screenshots/background.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 96
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:54:32.014Z
-metadataUpdatedAt: 2026-08-16T14:23:40.465Z
+releaseUpdatedAt: 2026-08-18T15:43:45.074Z
+metadataUpdatedAt: 2026-08-18T15:43:45.074Z
 starsUpdatedAt: 2026-08-16T13:54:32.014Z
-updatedAt: 2026-08-16T14:23:40.465Z
+updatedAt: 2026-08-18T15:43:45.074Z

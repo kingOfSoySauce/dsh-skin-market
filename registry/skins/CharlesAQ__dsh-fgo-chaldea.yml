@@ -3,7 +3,7 @@ name:
   zh: dsh-fgo-chaldea
   en: dsh-fgo-chaldea
 author: CharlesAQ
-description: "FGO Chaldea-inspired skin pack for DeepSeek Harness Web UI: 5 token themes (Chaldea night/dawn, Artoria, Morgan, Mash), original generated backdrops, gold trim, and a settings-row skin picker."
+description: "FGO Chaldea-inspired skin pack for DeepSeek Harness Web UI: 5 themes, original generated backdrops, gold trim."
 repo: https://github.com/CharlesAQ/dsh-fgo-chaldea
 package: dsh-fgo-chaldea
 rowId: fgo-chaldea
@@ -31,12 +31,22 @@ review:
   compatibility: verified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 100
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T13:54:57.394Z
-metadataUpdatedAt: 2026-08-16T14:24:05.115Z
+metadataUpdatedAt: 2026-08-18T15:44:20.925Z
 starsUpdatedAt: 2026-08-16T13:54:57.394Z
-updatedAt: 2026-08-16T14:24:05.115Z
+updatedAt: 2026-08-18T15:44:20.925Z

@@ -3,7 +3,7 @@ name:
   zh: DeepSeek-Harness-yizi-themes
   en: DeepSeek-Harness-yizi-themes
 author: laoduu
-description: YiziMarkdown theme pack for DeepSeek Harness — 19 style themes with custom brand and prompt mapping.
+description: 为 DeepSeek Harness（dsh）Web UI 提供的 19 个精品风格主题，完整移植自 YiziMarkdown 的设计语言。
 repo: https://github.com/laoduu/DeepSeek-Harness-yizi-themes
 package: dsh-yizi-themes
 rowId: yizi-themes
@@ -18,25 +18,37 @@ modes:
   - light
   - dark
 install:
-  target: github:laoduu/DeepSeek-Harness-yizi-themes#a557d305f1512510b275d515035c7e74e9a5f992
-  version: 0.2.0
-  commit: a557d305f1512510b275d515035c7e74e9a5f992
+  target: github:laoduu/DeepSeek-Harness-yizi-themes#8964dc67fd77447d450afafc134c8d7421ac6735
+  version: 0.2.4
+  commit: 8964dc67fd77447d450afafc134c8d7421ac6735
+  allowBuild: dsh-yizi-themes@https://codeload.github.com/laoduu/DeepSeek-Harness-yizi-themes/tar.gz/8964dc67fd77447d450afafc134c8d7421ac6735
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/a557d305f1512510b275d515035c7e74e9a5f992/assets/dsh-yizi-themes.png
+  - https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/8964dc67fd77447d450afafc134c8d7421ac6735/assets/dsh-yizi-themes.png
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 83
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:52:49.212Z
-metadataUpdatedAt: 2026-08-16T14:22:14.638Z
+releaseUpdatedAt: 2026-08-18T15:42:57.869Z
+metadataUpdatedAt: 2026-08-18T15:42:57.869Z
 starsUpdatedAt: 2026-08-16T13:52:49.212Z
-updatedAt: 2026-08-16T14:22:14.638Z
+updatedAt: 2026-08-18T15:42:57.869Z

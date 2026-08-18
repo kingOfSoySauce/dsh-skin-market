@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-machine
   en: dsh-theme-machine
 author: yuqisun
-description: "Person-of-Interest skin for DeepSeek Harness: THE MACHINE surveillance-HUD theme (dark, cyan-on-black). Token override layer + HUD chrome + live telemetry panel for the dsh web UI."
+description: A Person-of-Interest surveillance-terminal theme for deepseek-harness — the machine is watching.
 repo: https://github.com/yuqisun/dsh-theme-machine
 package: dsh-theme-machine
 rowId: theme-machine
@@ -15,26 +15,38 @@ modes:
   - light
   - dark
 install:
-  target: github:yuqisun/dsh-theme-machine#58766c63e3ae487b84b3902b2467d85f9c8f9b83
-  version: 0.1.1
-  commit: 58766c63e3ae487b84b3902b2467d85f9c8f9b83
+  target: github:yuqisun/dsh-theme-machine#e7e7762e16ff6469fe9153e5d75bac1b37b0ef13
+  version: 0.1.3
+  commit: e7e7762e16ff6469fe9153e5d75bac1b37b0ef13
+  allowBuild: dsh-theme-machine@https://codeload.github.com/yuqisun/dsh-theme-machine/tar.gz/e7e7762e16ff6469fe9153e5d75bac1b37b0ef13
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/yuqisun/dsh-theme-machine/58766c63e3ae487b84b3902b2467d85f9c8f9b83/screenshots/demo1.png
-  - https://raw.githubusercontent.com/yuqisun/dsh-theme-machine/58766c63e3ae487b84b3902b2467d85f9c8f9b83/screenshots/demo2.png
+  - https://raw.githubusercontent.com/yuqisun/dsh-theme-machine/e7e7762e16ff6469fe9153e5d75bac1b37b0ef13/screenshots/demo1.png
+  - https://raw.githubusercontent.com/yuqisun/dsh-theme-machine/e7e7762e16ff6469fe9153e5d75bac1b37b0ef13/screenshots/demo2.png
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 128
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:58:28.052Z
-metadataUpdatedAt: 2026-08-16T14:27:46.287Z
+releaseUpdatedAt: 2026-08-18T15:46:41.776Z
+metadataUpdatedAt: 2026-08-18T15:46:41.776Z
 starsUpdatedAt: 2026-08-16T13:58:28.052Z
-updatedAt: 2026-08-16T14:27:46.287Z
+updatedAt: 2026-08-18T15:46:41.776Z

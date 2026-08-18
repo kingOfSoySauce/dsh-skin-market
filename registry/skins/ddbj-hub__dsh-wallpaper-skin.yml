@@ -1,0 +1,52 @@
+id: ddbj-hub.dsh-wallpaper-skin
+name:
+  zh: dsh-wallpaper-skin
+  en: dsh-wallpaper-skin
+author: ddbj-hub
+description: dsh Web 界面的持久化壁纸皮肤：静态图片或静音循环视频作为应用背景，面板半透明化，右下角悬浮面板一键换壁纸。
+repo: https://github.com/ddbj-hub/dsh-wallpaper-skin
+package: dsh-wallpaper-skin
+rowId: dsh-wallpaper-skin
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:ddbj-hub/dsh-wallpaper-skin#75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7
+  version: 1.4.1
+  commit: 75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7/ddbj-hub/dsh-wallpaper-skin
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 152
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-18T15:41:28.329Z
+metadataUpdatedAt: 2026-08-18T15:41:28.329Z
+starsUpdatedAt: 2026-08-18T15:41:28.329Z
+updatedAt: 2026-08-18T15:41:28.329Z

@@ -1,0 +1,50 @@
+id: yzke.dsh-icon-theme
+name:
+  zh: dsh-icon-theme
+  en: dsh-icon-theme
+author: yzke
+description: Auto-detected, user-customizable icons for DeepSeek Harness settings and sidebar
+repo: https://github.com/yzke/dsh-icon-theme
+package: dsh-icon-theme
+rowId: dsh-icon-theme
+category: theme
+tags:
+  - retro
+modes:
+  - light
+  - dark
+install:
+  target: github:yzke/dsh-icon-theme#2e341d850745ba29ae688de0eb882ecbabd17888
+  version: 0.1.1
+  commit: 2e341d850745ba29ae688de0eb882ecbabd17888
+  allowBuild: dsh-icon-theme@https://codeload.github.com/yzke/dsh-icon-theme/tar.gz/2e341d850745ba29ae688de0eb882ecbabd17888
+compatibility:
+  dsh: ">=0.1.0-rc.6"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yzke/dsh-icon-theme/2e341d850745ba29ae688de0eb882ecbabd17888/docs/images/settings-overview.png
+  - https://raw.githubusercontent.com/yzke/dsh-icon-theme/2e341d850745ba29ae688de0eb882ecbabd17888/docs/images/icon-picker.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 198
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:43.240Z
+metadataUpdatedAt: 2026-08-18T15:46:43.240Z
+starsUpdatedAt: 2026-08-18T15:46:43.240Z
+updatedAt: 2026-08-18T15:46:43.240Z

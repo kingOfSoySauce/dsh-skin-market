@@ -3,7 +3,7 @@ name:
   zh: dsh-krill-theme
   en: dsh-krill-theme
 author: i1j
-description: Deep Sea (深海世界) + Shallow Sea (浅海世界) 双模式主题插件 —— 一个插件覆盖 DSH 深/亮两套外观：深海深色（亮度编码信息层级）+ 浅海亮色（清澈度编码），含浮游生物动画背景、深潜工作态增强、水母参数入口。
+description: 浮游主题（Krill）——深海世界 + 浅海世界 双模式主题插件（DSH Web）：深色=深海（亮度编码信息层级），亮色=浅海（清澈度编码）；浮游生物动画背景、深潜工作态增强、水母参数入口。dsh-plugin
 repo: https://github.com/i1j/dsh-krill-theme
 package: dsh-krill-theme
 rowId: krill-theme
@@ -33,12 +33,22 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 79
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16T13:52:26.766Z
-metadataUpdatedAt: 2026-08-16T14:21:53.507Z
+metadataUpdatedAt: 2026-08-18T15:42:42.604Z
 starsUpdatedAt: 2026-08-16T13:52:26.766Z
-updatedAt: 2026-08-16T14:21:53.507Z
+updatedAt: 2026-08-18T15:42:42.604Z

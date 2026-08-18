@@ -1,0 +1,52 @@
+id: xxxrickymorty-dev.dsh-rick
+name:
+  zh: dsh-rick
+  en: dsh-rick
+author: xxxrickymorty-dev
+description: "C-137 skin for DeepSeek Harness: 28 posters, custom scenes, and overlay pets (Rick, Morty, portal gun)."
+repo: https://github.com/xxxrickymorty-dev/dsh-rick
+package: dsh-rick
+rowId: dsh-rick
+category: theme
+tags:
+  - glass
+  - light-dark
+modes:
+  - dark
+install:
+  target: github:xxxrickymorty-dev/dsh-rick#0d17edfc9545cb456c9bde912e9b4fdddeabc4b3
+  version: 0.1.0
+  commit: 0d17edfc9545cb456c9bde912e9b4fdddeabc4b3
+compatibility:
+  dsh: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xxxrickymorty-dev/dsh-rick/0d17edfc9545cb456c9bde912e9b4fdddeabc4b3/docs/preview.png
+  - https://raw.githubusercontent.com/xxxrickymorty-dev/dsh-rick/0d17edfc9545cb456c9bde912e9b4fdddeabc4b3/docs/screenshots/settings.png
+  - https://raw.githubusercontent.com/xxxrickymorty-dev/dsh-rick/0d17edfc9545cb456c9bde912e9b4fdddeabc4b3/docs/screenshots/home.png
+  - https://raw.githubusercontent.com/xxxrickymorty-dev/dsh-rick/0d17edfc9545cb456c9bde912e9b4fdddeabc4b3/docs/screenshots/catchphrases.png
+  - https://raw.githubusercontent.com/xxxrickymorty-dev/dsh-rick/0d17edfc9545cb456c9bde912e9b4fdddeabc4b3/docs/screenshots/portal-wave.png
+  - https://raw.githubusercontent.com/xxxrickymorty-dev/dsh-rick/0d17edfc9545cb456c9bde912e9b4fdddeabc4b3/docs/screenshots/pickle.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 196
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:32.876Z
+metadataUpdatedAt: 2026-08-18T15:46:32.876Z
+starsUpdatedAt: 2026-08-18T15:46:32.876Z
+updatedAt: 2026-08-18T15:46:32.876Z

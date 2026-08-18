@@ -3,7 +3,7 @@ name:
   zh: dsh-815-skin
   en: dsh-815-skin
 author: lengduan
-description: 1945 终战皮肤：陈坚《公元一九四五年九月九日九时》作为 DeepSeek Harness Web 背景
+description: 1945-08-15 世界名画 dsh皮肤
 repo: https://github.com/lengduan/dsh-815-skin
 package: "@lengduan/dsh-client-ui-skin-815"
 rowId: ui-skin-815
@@ -15,26 +15,37 @@ tags:
 modes:
   - light
 install:
-  target: github:lengduan/dsh-815-skin#5598f781c15680268a9aefb6722936aded96e2ea
-  version: 0.1.5
-  commit: 5598f781c15680268a9aefb6722936aded96e2ea
+  target: github:lengduan/dsh-815-skin#5b0c843b8fb0e3e4a0a223209fb8768d3cd3275d
+  version: 0.1.6
+  commit: 5b0c843b8fb0e3e4a0a223209fb8768d3cd3275d
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/lengduan/dsh-815-skin/5598f781c15680268a9aefb6722936aded96e2ea/assets/nanjing-surrender-chen-jian.jpg
-  - https://raw.githubusercontent.com/lengduan/dsh-815-skin/5598f781c15680268a9aefb6722936aded96e2ea/docs/preview.png
+  - https://raw.githubusercontent.com/lengduan/dsh-815-skin/5b0c843b8fb0e3e4a0a223209fb8768d3cd3275d/assets/nanjing-surrender-chen-jian.jpg
+  - https://raw.githubusercontent.com/lengduan/dsh-815-skin/5b0c843b8fb0e3e4a0a223209fb8768d3cd3275d/docs/preview.png
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 111
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:56:26.825Z
-metadataUpdatedAt: 2026-08-16T14:25:43.466Z
+releaseUpdatedAt: 2026-08-18T15:45:14.378Z
+metadataUpdatedAt: 2026-08-18T15:45:14.378Z
 starsUpdatedAt: 2026-08-16T13:56:26.825Z
-updatedAt: 2026-08-16T14:25:43.466Z
+updatedAt: 2026-08-18T15:45:14.378Z

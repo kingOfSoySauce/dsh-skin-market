@@ -1,0 +1,49 @@
+id: sweetcandy-gift.dsh-beige-theme
+name:
+  zh: dsh-beige-theme
+  en: dsh-beige-theme
+author: SweetCandy-gift
+description: 一个面向长期 AI 编程的温暖米黄色 DeepSeek Harness 主题皮肤。
+repo: https://github.com/SweetCandy-gift/dsh-beige-theme
+package: dsh-beige-theme
+rowId: beige-theme
+category: theme
+tags:
+  - pastel
+  - token-theme
+modes:
+  - light
+install:
+  target: github:SweetCandy-gift/dsh-beige-theme#7b10152f18a50ee8f49fd558eb1be0ba31a5f5df
+  version: 1.0.0
+  commit: 7b10152f18a50ee8f49fd558eb1be0ba31a5f5df
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/SweetCandy-gift/dsh-beige-theme/7b10152f18a50ee8f49fd558eb1be0ba31a5f5df/docs/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 192
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:14.024Z
+metadataUpdatedAt: 2026-08-18T15:46:14.024Z
+starsUpdatedAt: 2026-08-18T15:46:14.024Z
+updatedAt: 2026-08-18T15:46:14.024Z

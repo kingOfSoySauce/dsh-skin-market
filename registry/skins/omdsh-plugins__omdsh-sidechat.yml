@@ -1,0 +1,50 @@
+id: omdsh-plugins.omdsh-sidechat
+name:
+  zh: omdsh-sidechat
+  en: omdsh-sidechat
+author: omdsh-plugins
+description: "Summon a conversation of its own anywhere in the DeepSeek Harness web GUI: a side panel anchored to whatever you were looking at, asking in its own session so the conversation you are running is untouched"
+repo: https://github.com/omdsh-plugins/omdsh-sidechat
+package: "@omdsh-plugins/omdsh-sidechat"
+rowId: omdsh-sidechat
+category: theme
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:omdsh-plugins/omdsh-sidechat#5906b5c123a278c3523ac9c1453c9c06908d21fc
+  version: 0.2.0
+  commit: 5906b5c123a278c3523ac9c1453c9c06908d21fc
+  allowBuild: "@omdsh-plugins/omdsh-sidechat@https://codeload.github.com/omdsh-plugins/omdsh-sidechat/tar.gz/5906b5c123a278c3523ac9c1453c9c06908d21fc"
+compatibility:
+  dsh: ">=0.1.0-rc.7"
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/5906b5c123a278c3523ac9c1453c9c06908d21fc/omdsh-plugins/omdsh-sidechat
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 185
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:45:37.007Z
+metadataUpdatedAt: 2026-08-18T15:45:37.007Z
+starsUpdatedAt: 2026-08-18T15:45:37.007Z
+updatedAt: 2026-08-18T15:45:37.007Z

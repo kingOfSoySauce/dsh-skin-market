@@ -1,0 +1,51 @@
+id: chouxiaohuai.uiskin-theme
+name:
+  zh: uiskin-theme
+  en: uiskin-theme
+author: chouxiaohuai
+description: "Blue Glass Theme (ocean fantasy) for DeepSeek Harness Web — static profile bundle. 海洋幻想主题:海洋背景、玻璃气泡、海洋侧边栏、鲸鱼设置按钮、炫彩模型文字。安装: dsh plugin --profile web add github:chouxiaohuai/uiskin-theme"
+repo: https://github.com/chouxiaohuai/uiskin-theme
+package: uiskin-theme
+rowId: uiskin-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:chouxiaohuai/uiskin-theme#c049c384087a797689d0d82e79bb047b9e4236f4
+  version: 1.0.0
+  commit: c049c384087a797689d0d82e79bb047b9e4236f4
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/c049c384087a797689d0d82e79bb047b9e4236f4/assets/preview.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: UNLICENSED
+  commercialUse: false
+featuredRank: 159
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-18T15:42:23.724Z
+metadataUpdatedAt: 2026-08-18T15:42:23.724Z
+starsUpdatedAt: 2026-08-18T15:42:23.724Z
+updatedAt: 2026-08-18T15:42:23.724Z

@@ -5,7 +5,7 @@ name:
 author: yoli-mi
 description: "Configurable DSH web-surface plugin: wallpaper & frosted-glass themes, accent colors, custom keyboard shortcuts, app-usage panel, history strip, message Markdown — zero shell edits."
 repo: https://github.com/yoli-mi/dsh-client-ui-custom
-package: "@deepseek-ai/dsh-client-ui-custom"
+package: "@ha-na-bi/dsh-client-ui-custom"
 rowId: ui-custom
 category: theme
 tags:
@@ -18,11 +18,11 @@ modes:
   - light
   - dark
 install:
-  target: github:yoli-mi/dsh-client-ui-custom#f3660eb0198a4cf3acc3631c330caefdf1a49c90
+  target: github:yoli-mi/dsh-client-ui-custom#26c239f5c2d930c30b9b0a83dbc7b2171b87b2d7
   version: 0.1.0-rc.5
-  commit: f3660eb0198a4cf3acc3631c330caefdf1a49c90
+  commit: 26c239f5c2d930c30b9b0a83dbc7b2171b87b2d7
 compatibility:
-  dsh: unverified
+  dsh: ^0.1.0-rc.5
   platform:
     - web
 screenshots:
@@ -32,15 +32,25 @@ screenshots:
   - https://cdn.jsdelivr.net/gh/yoli-mi/dsh-client-ui-custom@main/assets/general-settings.png
   - https://cdn.jsdelivr.net/gh/yoli-mi/dsh-client-ui-custom@main/assets/marketplace.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 70
-starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16T13:51:23.052Z
-metadataUpdatedAt: 2026-08-16T14:20:57.574Z
-starsUpdatedAt: 2026-08-16T13:51:23.052Z
-updatedAt: 2026-08-16T14:20:57.574Z
+starsSnapshot: 6
+releaseUpdatedAt: 2026-08-18T15:39:56.975Z
+metadataUpdatedAt: 2026-08-18T15:39:56.975Z
+starsUpdatedAt: 2026-08-18T15:39:56.975Z
+updatedAt: 2026-08-18T15:39:56.975Z

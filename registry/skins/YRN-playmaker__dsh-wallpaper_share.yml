@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:YRN-playmaker/dsh-wallpaper_share#7b3d2f1d26fe0b7a8d9c145520439ad44e7c8686
+  target: github:YRN-playmaker/dsh-wallpaper_share#44287591544e83f0361730207130e1bbdb3e6cb1
   version: 0.1.0
-  commit: 7b3d2f1d26fe0b7a8d9c145520439ad44e7c8686
+  commit: 44287591544e83f0361730207130e1bbdb3e6cb1
 compatibility:
   dsh: unverified
   platform:
@@ -31,12 +31,22 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 132
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T14:27:39.357Z
-metadataUpdatedAt: 2026-08-16T14:27:39.357Z
-starsUpdatedAt: 2026-08-16T14:27:39.357Z
-updatedAt: 2026-08-16T14:27:39.357Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-08-18T15:41:00.977Z
+metadataUpdatedAt: 2026-08-18T15:41:00.977Z
+starsUpdatedAt: 2026-08-18T15:41:00.977Z
+updatedAt: 2026-08-18T15:41:00.977Z

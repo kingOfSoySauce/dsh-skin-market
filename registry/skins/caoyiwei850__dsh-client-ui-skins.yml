@@ -15,27 +15,37 @@ modes:
   - light
   - dark
 install:
-  target: github:caoyiwei850/dsh-client-ui-skins#1321f06c4be992b678661c1d9758356c05f0e620
-  version: 0.1.9
-  commit: 1321f06c4be992b678661c1d9758356c05f0e620
+  target: github:caoyiwei850/dsh-client-ui-skins#2d6d60b2f7c28312149db9507f2bd3ee8acadfdb
+  version: 0.1.10
+  commit: 2d6d60b2f7c28312149db9507f2bd3ee8acadfdb
 compatibility:
-  dsh: ^0.1.0-rc.6
+  dsh: 0.1.0-rc.7
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/caoyiwei850/dsh-client-ui-skins/1321f06c4be992b678661c1d9758356c05f0e620/assets/screenshots/mint-forest-dsh.jpg
-  - https://raw.githubusercontent.com/caoyiwei850/dsh-client-ui-skins/1321f06c4be992b678661c1d9758356c05f0e620/assets/screenshots/ocean-guardian-dsh.jpg
-  - https://raw.githubusercontent.com/caoyiwei850/dsh-client-ui-skins/1321f06c4be992b678661c1d9758356c05f0e620/assets/screenshots/crimson-moon-dsh.jpg
+  - https://raw.githubusercontent.com/caoyiwei850/dsh-client-ui-skins/2d6d60b2f7c28312149db9507f2bd3ee8acadfdb/assets/screenshots/mint-forest-dsh.jpg
+  - https://raw.githubusercontent.com/caoyiwei850/dsh-client-ui-skins/2d6d60b2f7c28312149db9507f2bd3ee8acadfdb/assets/screenshots/ocean-guardian-dsh.jpg
+  - https://raw.githubusercontent.com/caoyiwei850/dsh-client-ui-skins/2d6d60b2f7c28312149db9507f2bd3ee8acadfdb/assets/screenshots/crimson-moon-dsh.jpg
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 9
-starsSnapshot: 4
-releaseUpdatedAt: 2026-08-16T12:32:24.075Z
-metadataUpdatedAt: 2026-08-16T13:48:46.483Z
-starsUpdatedAt: 2026-08-16T13:25:32.174Z
-updatedAt: 2026-08-16T13:48:46.483Z
+starsSnapshot: 5
+releaseUpdatedAt: 2026-08-18T15:40:09.733Z
+metadataUpdatedAt: 2026-08-18T15:40:09.733Z
+starsUpdatedAt: 2026-08-18T15:40:09.733Z
+updatedAt: 2026-08-18T15:40:09.733Z

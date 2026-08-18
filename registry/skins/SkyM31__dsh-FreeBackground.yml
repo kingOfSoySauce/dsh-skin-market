@@ -1,0 +1,53 @@
+id: skym31.dsh-freebackground
+name:
+  zh: dsh-FreeBackground
+  en: dsh-FreeBackground
+author: SkyM31
+description: dsh-FreeBackground
+repo: https://github.com/SkyM31/dsh-FreeBackground
+package: dsh-free-background
+rowId: free-background
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:SkyM31/dsh-FreeBackground#b3e946d31f87cf25b65355b2c1034bb272100ade
+  version: 0.1.0
+  commit: b3e946d31f87cf25b65355b2c1034bb272100ade
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/b3e946d31f87cf25b65355b2c1034bb272100ade/SkyM31/dsh-FreeBackground
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 188
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:05.292Z
+metadataUpdatedAt: 2026-08-18T15:46:05.292Z
+starsUpdatedAt: 2026-08-18T15:46:05.292Z
+updatedAt: 2026-08-18T15:46:05.292Z

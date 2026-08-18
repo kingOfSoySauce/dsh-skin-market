@@ -17,25 +17,35 @@ modes:
   - light
   - dark
 install:
-  target: github:wsxwj123/dsh-plugins#ae7b7d50efdc0151477735ccadf4d59807abfec3&path:packages/theme-gallery
+  target: github:wsxwj123/dsh-plugins#92e4499477670fd94d1aaa1a4d6d5ee170329a92&path:packages/theme-gallery
   version: 0.6.0
-  commit: ae7b7d50efdc0151477735ccadf4d59807abfec3
+  commit: 92e4499477670fd94d1aaa1a4d6d5ee170329a92
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/wsxwj123/dsh-plugins/ae7b7d50efdc0151477735ccadf4d59807abfec3/packages/theme-gallery/../../assets/screenshots/theme-gallery-real.png
+  - https://raw.githubusercontent.com/wsxwj123/dsh-plugins/92e4499477670fd94d1aaa1a4d6d5ee170329a92/packages/theme-gallery/../../assets/screenshots/theme-gallery-real.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 8
-starsSnapshot: 4
-releaseUpdatedAt: 2026-08-16T12:32:14.655Z
-metadataUpdatedAt: 2026-08-16T13:48:31.063Z
-starsUpdatedAt: 2026-08-16T12:32:14.655Z
-updatedAt: 2026-08-16T13:48:31.063Z
+starsSnapshot: 7
+releaseUpdatedAt: 2026-08-18T15:39:45.469Z
+metadataUpdatedAt: 2026-08-18T15:39:45.469Z
+starsUpdatedAt: 2026-08-18T15:39:45.469Z
+updatedAt: 2026-08-18T15:39:45.469Z

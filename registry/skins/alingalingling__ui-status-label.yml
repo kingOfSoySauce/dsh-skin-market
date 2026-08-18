@@ -3,7 +3,7 @@ name:
   zh: ui-status-label
   en: ui-status-label
 author: alingalingling
-description: 为 DSH Web 提供可配置的运行中状态文案，在 General 设置区编辑并同步到聊天视图状态栏。
+description: "Configurable running-turn status text for dsh Web: General Settings row plus the conversationStatus provider for the chat view"
 repo: https://github.com/alingalingling/ui-status-label
 package: dsh-ui-status-label
 rowId: ui-status-label
@@ -18,8 +18,9 @@ install:
   target: github:alingalingling/ui-status-label#a1621413a4700cb489655ad3ebf7fa8484c3645f
   version: 0.1.0
   commit: a1621413a4700cb489655ad3ebf7fa8484c3645f
+  allowBuild: dsh-ui-status-label@https://codeload.github.com/alingalingling/ui-status-label/tar.gz/a1621413a4700cb489655ad3ebf7fa8484c3645f
 compatibility:
-  dsh: 0.1.0-rc.6
+  dsh: ">=0.0.1-rc.1 <0.2.0"
   platform:
     - web
 screenshots:
@@ -37,13 +38,13 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入能够显示该功能实际效果的 DSH Web 实机截图；原生空白界面不作为插件效果证据。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 136
 starsSnapshot: 38
-releaseUpdatedAt: 2026-08-15T16:56:59+08:00
-metadataUpdatedAt: 2026-08-18T06:24:38Z
+releaseUpdatedAt: 2026-08-18T15:38:58.062Z
+metadataUpdatedAt: 2026-08-18T15:38:58.062Z
 starsUpdatedAt: 2026-08-18T06:24:38Z
-updatedAt: 2026-08-18T06:24:38Z
+updatedAt: 2026-08-18T15:38:58.062Z

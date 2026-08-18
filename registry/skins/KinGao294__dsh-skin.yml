@@ -18,28 +18,38 @@ modes:
   - light
   - dark
 install:
-  target: github:KinGao294/dsh-skin#65c79b09d4c5f23e72076ff6b6b6b26c883f935c
-  version: 0.3.1
-  commit: 65c79b09d4c5f23e72076ff6b6b6b26c883f935c
+  target: github:KinGao294/dsh-skin#0a571a27adcc5f780b7b72386c9c294243eec5b3
+  version: 0.4.0
+  commit: 0a571a27adcc5f780b7b72386c9c294243eec5b3
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KinGao294__dsh-skin/65c79b09d4c5f23e72076ff6b6b6b26c883f935c/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KinGao294__dsh-skin/65c79b09d4c5f23e72076ff6b6b6b26c883f935c/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KinGao294__dsh-skin/65c79b09d4c5f23e72076ff6b6b6b26c883f935c/settings.png
 screenshots: []
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 18
-starsSnapshot: 16
-releaseUpdatedAt: 2026-08-16T12:15:32.137Z
-metadataUpdatedAt: 2026-08-17T02:47:52.294Z
-starsUpdatedAt: 2026-08-16T13:46:58.070Z
-updatedAt: 2026-08-17T02:47:52.294Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KinGao294__dsh-skin/65c79b09d4c5f23e72076ff6b6b6b26c883f935c/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KinGao294__dsh-skin/65c79b09d4c5f23e72076ff6b6b6b26c883f935c/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KinGao294__dsh-skin/65c79b09d4c5f23e72076ff6b6b6b26c883f935c/settings.png
+starsSnapshot: 19
+releaseUpdatedAt: 2026-08-18T15:39:02.751Z
+metadataUpdatedAt: 2026-08-18T15:39:02.751Z
+starsUpdatedAt: 2026-08-18T15:39:02.751Z
+updatedAt: 2026-08-18T15:39:02.751Z

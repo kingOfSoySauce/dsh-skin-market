@@ -1,0 +1,51 @@
+id: jungeer.dsh-theme-stardew
+name:
+  zh: dsh-theme-stardew
+  en: dsh-theme-stardew
+author: jungeer
+description: dsh-theme-stardew
+repo: https://github.com/jungeer/dsh-theme-stardew
+package: dsh-theme-stardew
+rowId: theme-stardew
+category: theme
+tags:
+  - wallpaper
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:jungeer/dsh-theme-stardew#2f2ac99cb821e4ebd8cd94a5e5cd6e9568c7863a
+  version: 0.1.6
+  commit: 2f2ac99cb821e4ebd8cd94a5e5cd6e9568c7863a
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/jungeer/dsh-theme-stardew/2f2ac99cb821e4ebd8cd94a5e5cd6e9568c7863a/docs/preview-day.jpg
+  - https://raw.githubusercontent.com/jungeer/dsh-theme-stardew/2f2ac99cb821e4ebd8cd94a5e5cd6e9568c7863a/docs/preview-night.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 161
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-18T15:42:49.178Z
+metadataUpdatedAt: 2026-08-18T15:42:49.178Z
+starsUpdatedAt: 2026-08-18T15:42:49.178Z
+updatedAt: 2026-08-18T15:42:49.178Z

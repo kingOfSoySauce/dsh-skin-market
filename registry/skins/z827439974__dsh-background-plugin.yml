@@ -3,7 +3,7 @@ name:
   zh: dsh-background-plugin
   en: dsh-background-plugin
 author: z827439974
-description: "DSH WebUI background plugin: pick a local image as the webui background, overlaid with a theme-matched translucent mask so it never disturbs the UI. Persistence is browser-local (localStorage)."
+description: Set the image as background for your dsh-webui
 repo: https://github.com/z827439974/dsh-background-plugin
 package: dsh-plugin-webui-bg
 rowId: webui-bg
@@ -20,7 +20,7 @@ install:
   version: 0.3.0
   commit: 8077481d61ac9f838f5fba870c523e81176c467c
 compatibility:
-  dsh: ^0.1.0-rc.6
+  dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
@@ -29,12 +29,22 @@ review:
   compatibility: verified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 72
-starsSnapshot: 2
+starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T13:51:31.579Z
-metadataUpdatedAt: 2026-08-16T14:21:04.630Z
-starsUpdatedAt: 2026-08-16T13:51:31.579Z
-updatedAt: 2026-08-16T14:21:04.630Z
+metadataUpdatedAt: 2026-08-18T15:41:03.829Z
+starsUpdatedAt: 2026-08-18T15:41:03.829Z
+updatedAt: 2026-08-18T15:41:03.829Z

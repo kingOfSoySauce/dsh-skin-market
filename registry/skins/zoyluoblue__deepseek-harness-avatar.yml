@@ -1,0 +1,55 @@
+id: zoyluoblue.deepseek-harness-avatar
+name:
+  zh: deepseek-harness-avatar
+  en: deepseek-harness-avatar
+author: zoyluoblue
+description: "Wallpaper theming plugin for DeepSeek Harness (dsh): upload images in Settings and use one as the web UI background, with readability veil, blur, and fill controls"
+repo: https://github.com/zoyluoblue/deepseek-harness-avatar
+package: "@zoytown/dsh-avatar"
+rowId: dsh-avatar
+category: theme
+tags:
+  - wallpaper
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:zoyluoblue/deepseek-harness-avatar#9d0c932697c262fa3c4d895ff023498531afc59f
+  version: 0.1.0
+  commit: 9d0c932697c262fa3c4d895ff023498531afc59f
+  allowBuild: "@zoytown/dsh-avatar@https://codeload.github.com/zoyluoblue/deepseek-harness-avatar/tar.gz/9d0c932697c262fa3c4d895ff023498531afc59f"
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zoyluoblue/deepseek-harness-avatar/9d0c932697c262fa3c4d895ff023498531afc59f/assets/cover.webp
+  - https://raw.githubusercontent.com/zoyluoblue/deepseek-harness-avatar/9d0c932697c262fa3c4d895ff023498531afc59f/assets/wallpaper-en.webp
+  - https://raw.githubusercontent.com/zoyluoblue/deepseek-harness-avatar/9d0c932697c262fa3c4d895ff023498531afc59f/assets/settings-background-en.webp
+  - https://raw.githubusercontent.com/zoyluoblue/deepseek-harness-avatar/9d0c932697c262fa3c4d895ff023498531afc59f/assets/wallpaper.webp
+  - https://raw.githubusercontent.com/zoyluoblue/deepseek-harness-avatar/9d0c932697c262fa3c4d895ff023498531afc59f/assets/settings-background.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 200
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:51.947Z
+metadataUpdatedAt: 2026-08-18T15:46:51.947Z
+starsUpdatedAt: 2026-08-18T15:46:51.947Z
+updatedAt: 2026-08-18T15:46:51.947Z

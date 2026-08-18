@@ -1,0 +1,54 @@
+id: ycqaq233.dsh-unknown-theme
+name:
+  zh: dsh-unknown-theme
+  en: dsh-unknown-theme
+author: ycqaq233
+description: DeepSeek 官网视觉风格主题 (dsh-plugin) — 官网流体背景 / 交互网格 / 粒子鱼 LOGO / 标题聚光灯 / 磨砂玻璃，双主题自适应
+repo: https://github.com/ycqaq233/dsh-unknown-theme
+package: dsh-unknown-theme
+rowId: unknown-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:ycqaq233/dsh-unknown-theme#02e296a52b0ee53d1230bda14eed15683e547f1d
+  version: 1.0.0
+  commit: 02e296a52b0ee53d1230bda14eed15683e547f1d
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/浅色主页.png
+  - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/深色主页.png
+  - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/浅色对话.png
+  - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/深色对话.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 197
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:37.156Z
+metadataUpdatedAt: 2026-08-18T15:46:37.156Z
+starsUpdatedAt: 2026-08-18T15:46:37.156Z
+updatedAt: 2026-08-18T15:46:37.156Z

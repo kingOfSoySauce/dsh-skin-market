@@ -3,7 +3,7 @@ name:
   zh: dsh-skin-amis
   en: dsh-skin-amis
 author: wanzhiwei5
-description: 鸣潮爱弥斯主题皮肤 — 粉白配色 + 赛博霓虹装饰的 DeepSeek Harness Web GUI 皮肤
+description: "鸣潮爱弥斯主题皮肤: 粉白配色+赛博霓虹装饰的 DeepSeek Harness Web GUI 皮肤 / Amis-inspired pink-white skin for DSH Web UI"
 repo: https://github.com/wanzhiwei5/dsh-skin-amis
 package: dsh-skin-amis
 rowId: ui-skin-amis
@@ -31,12 +31,22 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 69
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-16T13:51:14.660Z
-metadataUpdatedAt: 2026-08-16T14:20:53.364Z
+metadataUpdatedAt: 2026-08-18T15:41:57.747Z
 starsUpdatedAt: 2026-08-16T13:51:14.660Z
-updatedAt: 2026-08-16T14:20:53.364Z
+updatedAt: 2026-08-18T15:41:57.747Z

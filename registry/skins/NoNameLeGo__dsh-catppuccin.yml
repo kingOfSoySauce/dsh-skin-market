@@ -3,7 +3,7 @@ name:
   zh: dsh-catppuccin
   en: dsh-catppuccin
 author: NoNameLeGo
-description: DSH Web GUI 的 Catppuccin 主题插件：Latte、Frappé、Macchiato、Mocha 四套主题接入原生主题系统，一键切换并记住选择。
+description: Catppuccin themes + a toggleable glassmorphism skin for the DeepSeek Harness web GUI — Latte, Frappé, Macchiato and Mocha registered into the official theme system (Appearance settings), fully remapping the --dsw-* token ladder, with adjustable frosted glass for the top bar, sidebar, composer, stats line and trajectory view.
 repo: https://github.com/NoNameLeGo/dsh-catppuccin
 package: "@nonamelego/dsh-catppuccin"
 rowId: dsh-catppuccin
@@ -18,30 +18,41 @@ modes:
   - light
   - dark
 install:
-  target: github:NoNameLeGo/dsh-catppuccin#8bb3d0df49e0e85589880e59238743aa4d21dc2a
-  version: 0.2.1
-  commit: 8bb3d0df49e0e85589880e59238743aa4d21dc2a
+  target: github:NoNameLeGo/dsh-catppuccin#46134262e1804f00331554a00c080d311a94e539
+  version: 0.2.7
+  commit: 46134262e1804f00331554a00c080d311a94e539
+  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/46134262e1804f00331554a00c080d311a94e539"
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/8bb3d0df49e0e85589880e59238743aa4d21dc2a/assets/previews/latte.png
-  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/8bb3d0df49e0e85589880e59238743aa4d21dc2a/assets/previews/frappe.png
-  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/8bb3d0df49e0e85589880e59238743aa4d21dc2a/assets/previews/macchiato.png
-  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/8bb3d0df49e0e85589880e59238743aa4d21dc2a/assets/previews/mocha.png
+  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/latte.png
+  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/frappe.png
+  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/macchiato.png
+  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/mocha.png
   - https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png
   - https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png
 review:
   compatibility: verified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 5
-starsSnapshot: 7
-releaseUpdatedAt: 2026-08-16T14:16:53.255Z
-metadataUpdatedAt: 2026-08-16T14:16:53.255Z
-starsUpdatedAt: 2026-08-16T12:31:33.507Z
-updatedAt: 2026-08-16T14:16:53.255Z
+starsSnapshot: 13
+releaseUpdatedAt: 2026-08-18T15:39:36.526Z
+metadataUpdatedAt: 2026-08-18T15:39:36.526Z
+starsUpdatedAt: 2026-08-18T15:39:36.526Z
+updatedAt: 2026-08-18T15:39:36.526Z

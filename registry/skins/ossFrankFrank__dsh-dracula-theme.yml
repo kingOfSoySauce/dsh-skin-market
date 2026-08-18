@@ -1,0 +1,49 @@
+id: ossfrankfrank.dsh-dracula-theme
+name:
+  zh: dsh-dracula-theme
+  en: dsh-dracula-theme
+author: ossFrankFrank
+description: DSH Web GUI 的德古拉主题插件：经典暗色配色与 Soft 变体接入原生主题系统，一键切换并记住选择。
+repo: https://github.com/ossFrankFrank/dsh-dracula-theme
+package: dsh-dracula-theme
+rowId: dracula
+category: theme
+tags:
+  - wallpaper
+  - pastel
+  - token-theme
+  - light-dark
+modes:
+  - dark
+install:
+  target: github:ossFrankFrank/dsh-dracula-theme#684d09a59a62e4180ac087918cb4f6d5aeffef9f
+  version: 0.1.4
+  commit: 684d09a59a62e4180ac087918cb4f6d5aeffef9f
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ossFrankFrank/dsh-dracula-theme/684d09a59a62e4180ac087918cb4f6d5aeffef9f/assets/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 186
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:45:38.721Z
+metadataUpdatedAt: 2026-08-18T15:45:38.721Z
+starsUpdatedAt: 2026-08-18T15:45:38.721Z
+updatedAt: 2026-08-18T15:45:38.721Z
