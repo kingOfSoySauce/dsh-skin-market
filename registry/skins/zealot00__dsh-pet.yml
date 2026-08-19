@@ -3,7 +3,7 @@ name:
   zh: dsh-pet
   en: dsh-pet
 author: zealot00
-description: dsh-pet — 桌面宠物插件（宠物 + 实用工具）
+description: "Desktop pet for DeepSeek Harness Web UI: sprite animation, agent state linkage, drag, alarm & pomodoro widgets, skin separation"
 repo: https://github.com/zealot00/dsh-pet
 package: "@dsh-local/dsh-pet"
 rowId: dsh-pet
@@ -45,6 +45,6 @@ license:
 featuredRank: 73
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T13:51:35.527Z
-metadataUpdatedAt: 2026-08-19T04:35:44.364Z
+metadataUpdatedAt: 2026-08-18T15:41:05.271Z
 starsUpdatedAt: 2026-08-18T15:41:05.271Z
-updatedAt: 2026-08-19T04:35:44.364Z
+updatedAt: 2026-08-18T15:41:05.271Z

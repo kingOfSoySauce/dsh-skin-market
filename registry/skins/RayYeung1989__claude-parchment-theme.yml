@@ -23,8 +23,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/824cef053f1cabcfaca93ae6b63261f66279f238/RayYeung1989/claude-parchment-theme
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -50,3 +49,4 @@ releaseUpdatedAt: 2026-08-16T13:53:45.052Z
 metadataUpdatedAt: 2026-08-18T15:43:27.543Z
 starsUpdatedAt: 2026-08-16T13:53:45.052Z
 updatedAt: 2026-08-18T15:43:27.543Z
+marketScreenshots: []

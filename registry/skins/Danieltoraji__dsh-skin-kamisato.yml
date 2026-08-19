@@ -21,8 +21,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/bf9902e49b42d213180de1a4b8b0dd4574a5ca66/Danieltoraji/dsh-skin-kamisato
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -47,3 +46,4 @@ releaseUpdatedAt: 2026-08-16T13:55:09.178Z
 metadataUpdatedAt: 2026-08-18T15:44:30.878Z
 starsUpdatedAt: 2026-08-16T13:55:09.178Z
 updatedAt: 2026-08-18T15:44:30.878Z
+marketScreenshots: []

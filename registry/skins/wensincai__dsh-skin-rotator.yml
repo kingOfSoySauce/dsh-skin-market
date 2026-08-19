@@ -1,11 +1,9 @@
 id: wensincai.dsh-skin-rotator
 name:
-  zh: åŠ¨æ€èƒŒæ™¯è½®æ’­çš®è‚¤
+  zh: 动态背景轮播皮肤
   en: dsh-skin-rotator
 author: wensincai
-description: >-
-  DSH Web åŠ¨æ€èƒŒæ™¯çš®è‚¤ï¼šæŠŠæœ¬åœ°å›¾ç‰‡ç›®å½•çš„å›¾ç‰‡æ¯ 5 åˆ†é’Ÿè½®æ’­ä¸€å¼ ä½œä¸ºå…¨å±èƒŒæ™¯ï¼Œ
-  å åŠ å¯è°ƒé»‘è‰²è’™ç‰ˆï¼Œå¹¶è‡ªåŠ¨åˆ‡æ¢æš—è‰²ä¸»é¢˜ä¿è¯æ–‡å­—å¯è¯»ã€‚
+description: DSH Web 动态背景皮肤：把本地 images/ 目录的图片每 5 分钟轮播一张作为全屏背景，叠加可调黑色蒙版，并自动切换暗色主题保证文字可读。
 repo: https://github.com/wensincai/dsh-skin-rotator
 package: dsh-skin-rotator
 rowId: skin-rotator
@@ -34,7 +32,7 @@ review:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
+featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: '2026-08-19T04:08:02.180Z'
 metadataUpdatedAt: '2026-08-19T04:08:02.180Z'

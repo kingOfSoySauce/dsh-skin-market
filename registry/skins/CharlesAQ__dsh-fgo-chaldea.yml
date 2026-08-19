@@ -3,7 +3,7 @@ name:
   zh: dsh-fgo-chaldea
   en: dsh-fgo-chaldea
 author: CharlesAQ
-description: FGO 迦勒底风格的 DeepSeek Harness Web UI 皮肤插件。配色层走官方 ctx.theme token API，背景是程序生成的原创星图 / 魔术回路 SVG，外加金色刻线边框，不包含任何 FGO 官方美术素材。
+description: "FGO Chaldea-inspired skin pack for DeepSeek Harness Web UI: 5 themes, original generated backdrops, gold trim."
 repo: https://github.com/CharlesAQ/dsh-fgo-chaldea
 package: dsh-fgo-chaldea
 rowId: fgo-chaldea
@@ -25,8 +25,7 @@ compatibility:
   dsh: 0.1.0-rc.5
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/e769eb31089880d156dc0cf9e98f1fa14bb7c5b9/CharlesAQ/dsh-fgo-chaldea
+screenshots: []
 review:
   compatibility: verified
   preview: repository-card
@@ -47,6 +46,7 @@ license:
 featuredRank: 100
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T13:54:57.394Z
-metadataUpdatedAt: 2026-08-19T04:39:07.179Z
+metadataUpdatedAt: 2026-08-18T15:44:20.925Z
 starsUpdatedAt: 2026-08-16T13:54:57.394Z
-updatedAt: 2026-08-19T04:39:07.179Z
+updatedAt: 2026-08-18T15:44:20.925Z
+marketScreenshots: []

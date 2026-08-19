@@ -25,8 +25,7 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7/ddbj-hub/dsh-wallpaper-skin
+screenshots: []
 review:
   compatibility: verified
   preview: repository-card
@@ -50,3 +49,4 @@ releaseUpdatedAt: 2026-08-18T15:41:28.329Z
 metadataUpdatedAt: 2026-08-18T15:41:28.329Z
 starsUpdatedAt: 2026-08-18T15:41:28.329Z
 updatedAt: 2026-08-18T15:41:28.329Z
+marketScreenshots: []

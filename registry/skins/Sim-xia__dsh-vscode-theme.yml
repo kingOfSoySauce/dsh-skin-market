@@ -23,8 +23,7 @@ compatibility:
   dsh: ">=0.0.1-rc.1"
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/1e22fa74783f5f84e7ecb8d7b96fb2997dc9d4f8/Sim-xia/dsh-vscode-theme
+screenshots: []
 review:
   compatibility: verified
   preview: repository-card
@@ -48,3 +47,4 @@ releaseUpdatedAt: 2026-08-16T12:17:02.328Z
 metadataUpdatedAt: 2026-08-18T15:43:34.062Z
 starsUpdatedAt: 2026-08-18T15:43:34.062Z
 updatedAt: 2026-08-18T15:43:34.062Z
+marketScreenshots: []

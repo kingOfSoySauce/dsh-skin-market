@@ -24,8 +24,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/976b65da11bd0e23d77aac9cbadd466fea51eb1b/chajiuqqq/dsh-claude-theme
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -50,3 +49,4 @@ releaseUpdatedAt: 2026-08-16T13:50:06.363Z
 metadataUpdatedAt: 2026-08-18T15:41:24.209Z
 starsUpdatedAt: 2026-08-16T13:50:06.363Z
 updatedAt: 2026-08-18T15:41:24.209Z
+marketScreenshots: []

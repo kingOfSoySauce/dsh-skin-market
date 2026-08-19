@@ -3,7 +3,7 @@ name:
   zh: dsh-bestui
   en: dsh-bestui
 author: BPZ0726
-description: BestUI · 壁纸主题插件
+description: Adaptive wallpaper and appearance studio for the DeepSeek Harness Web UI.
 repo: https://github.com/BPZ0726/dsh-bestui
 package: dsh-bestui
 rowId: dsh-bestui
@@ -26,8 +26,7 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/89902526c31a4e5690df97bcb5da8ffa6a4cac3f/BPZ0726/dsh-bestui
+screenshots: []
 review:
   compatibility: verified
   preview: repository-card
@@ -48,6 +47,7 @@ license:
 featuredRank: 170
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:44:11.605Z
-metadataUpdatedAt: 2026-08-19T04:38:58.712Z
+metadataUpdatedAt: 2026-08-18T15:44:11.605Z
 starsUpdatedAt: 2026-08-18T15:44:11.605Z
-updatedAt: 2026-08-19T04:38:58.712Z
+updatedAt: 2026-08-18T15:44:11.605Z
+marketScreenshots: []

@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-stardew
   en: dsh-theme-stardew
 author: jungeer
-description: 面向 DeepSeek Harness Web 端的 《星露谷物语》主题客户端插件。把整站 UI 换成温暖的像素农场风（聊天气泡、侧栏 Logo、农舍配色、代码绘制场景、昼夜氛围）——非商业同人作品。
+description: dsh-theme-stardew
 repo: https://github.com/jungeer/dsh-theme-stardew
 package: dsh-theme-stardew
 rowId: theme-stardew
@@ -46,6 +46,6 @@ license:
 featuredRank: 161
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-18T15:42:49.178Z
-metadataUpdatedAt: 2026-08-19T04:37:25.870Z
+metadataUpdatedAt: 2026-08-18T15:42:49.178Z
 starsUpdatedAt: 2026-08-18T15:42:49.178Z
-updatedAt: 2026-08-19T04:37:25.870Z
+updatedAt: 2026-08-18T15:42:49.178Z

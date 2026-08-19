@@ -21,8 +21,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/4e8029680754eafa5fa738fea3f03ac2c605c138/hanyi7867069-create/dsh-moonrise
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -47,3 +46,4 @@ releaseUpdatedAt: 2026-08-18T15:44:51.312Z
 metadataUpdatedAt: 2026-08-18T15:44:51.312Z
 starsUpdatedAt: 2026-08-18T15:44:51.312Z
 updatedAt: 2026-08-18T15:44:51.312Z
+marketScreenshots: []

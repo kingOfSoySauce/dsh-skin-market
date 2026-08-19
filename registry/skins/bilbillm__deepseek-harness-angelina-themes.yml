@@ -3,7 +3,7 @@ name:
   zh: deepseek-harness-angelina-themes
   en: deepseek-harness-angelina-themes
 author: bilbillm
-description: 把 Codex 的安洁莉娜亮色、暗色主题移植到 DeepSeek Harness 的独立 dsh-plugin。它保留 Harness 原生的对话布局和控件行为，只把视觉层替换成安洁莉娜主题：背景图、视差、磨砂玻璃、清晰的文字层级，以及在低性能或移动环境下的优雅降级。
+description: Angelina light and dark glass themes with parallax for DeepSeek Harness
 repo: https://github.com/bilbillm/deepseek-harness-angelina-themes
 package: dsh-angelina-themes
 rowId: dsh-angelina-themes
@@ -55,6 +55,6 @@ license:
 featuredRank: 58
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-18T15:40:34.001Z
-metadataUpdatedAt: 2026-08-19T04:35:14.721Z
+metadataUpdatedAt: 2026-08-18T15:40:34.001Z
 starsUpdatedAt: 2026-08-18T15:40:34.001Z
-updatedAt: 2026-08-19T04:35:14.721Z
+updatedAt: 2026-08-18T15:40:34.001Z

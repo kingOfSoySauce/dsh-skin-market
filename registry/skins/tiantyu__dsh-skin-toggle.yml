@@ -23,8 +23,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/781fd4605756503f9635d6083686e079b5a8944f/tiantyu/dsh-skin-toggle
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -49,3 +48,4 @@ releaseUpdatedAt: 2026-08-18T15:40:53.638Z
 metadataUpdatedAt: 2026-08-18T15:40:53.638Z
 starsUpdatedAt: 2026-08-18T15:40:53.638Z
 updatedAt: 2026-08-18T15:40:53.638Z
+marketScreenshots: []

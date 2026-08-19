@@ -26,7 +26,6 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/assets/screenshots/qq2006-window-view.webp
   - https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/assets/screenshots/qq2006-window-chrome.webp
-  - https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/assets/screenshots/qq2006-message-flow.webp
 review:
   compatibility: verified
   preview: verified
@@ -49,3 +48,4 @@ releaseUpdatedAt: 2026-08-16T13:47:05.463Z
 metadataUpdatedAt: 2026-08-18T15:39:06.078Z
 starsUpdatedAt: 2026-08-18T15:39:06.078Z
 updatedAt: 2026-08-18T15:39:06.078Z
+marketScreenshots: []

@@ -28,8 +28,7 @@ marketScreenshots:
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/FeatherHunter__dsh-opencode-palette/5aeadca70606ceb38f94080694e0c9fe47d4b10f/home.png
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/FeatherHunter__dsh-opencode-palette/5aeadca70606ceb38f94080694e0c9fe47d4b10f/conversation.png
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/FeatherHunter__dsh-opencode-palette/5aeadca70606ceb38f94080694e0c9fe47d4b10f/settings.png
-screenshots:
-  - https://raw.githubusercontent.com/FeatherHunter/dsh-opencode-palette/5aeadca70606ceb38f94080694e0c9fe47d4b10f/assets/setup-panel-zh.svg
+screenshots: []
 review:
   compatibility: unverified
   preview: verified

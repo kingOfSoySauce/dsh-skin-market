@@ -25,9 +25,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://raw.githubusercontent.com/stushansusu/dsh-miku-skin/3a5dcacf09786820eafc1e43ee8c2603dce4b9ff/preview/light.png
-  - https://raw.githubusercontent.com/stushansusu/dsh-miku-skin/3a5dcacf09786820eafc1e43ee8c2603dce4b9ff/preview/dark.png
+screenshots: []
 review:
   compatibility: unverified
   preview: verified
@@ -41,3 +39,4 @@ releaseUpdatedAt: 2026-08-16T13:51:00.375Z
 metadataUpdatedAt: 2026-08-16T14:20:35.164Z
 starsUpdatedAt: 2026-08-16T13:51:00.375Z
 updatedAt: 2026-08-16T14:20:35.164Z
+marketScreenshots: []

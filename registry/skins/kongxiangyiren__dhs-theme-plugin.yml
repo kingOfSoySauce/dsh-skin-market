@@ -23,8 +23,7 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/9e451e3a9eda86f62c8624d606a911e68a943b16/kongxiangyiren/dhs-theme-plugin
+screenshots: []
 review:
   compatibility: verified
   preview: repository-card
@@ -48,3 +47,4 @@ releaseUpdatedAt: 2026-08-16T13:52:44.893Z
 metadataUpdatedAt: 2026-08-18T15:42:56.068Z
 starsUpdatedAt: 2026-08-16T13:52:44.893Z
 updatedAt: 2026-08-18T15:42:56.068Z
+marketScreenshots: []

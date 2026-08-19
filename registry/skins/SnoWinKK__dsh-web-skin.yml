@@ -23,8 +23,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/d5bbefba7668c51bd28b0d13a88593ffabfa4af3/SnoWinKK/dsh-web-skin
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -49,3 +48,4 @@ releaseUpdatedAt: 2026-08-18T15:46:07.105Z
 metadataUpdatedAt: 2026-08-18T15:46:07.105Z
 starsUpdatedAt: 2026-08-18T15:46:07.105Z
 updatedAt: 2026-08-18T15:46:07.105Z
+marketScreenshots: []

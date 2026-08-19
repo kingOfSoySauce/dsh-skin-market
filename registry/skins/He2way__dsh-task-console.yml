@@ -3,7 +3,7 @@ name:
   zh: dsh-task-console
   en: dsh-task-console
 author: He2way
-description: 一个 DeepSeek Harness (DSH) 客户端插件：为当前会话提供悬浮毛玻璃「任务控制台」。点击右下角的玻璃按钮，页面翻到背面 —— 一块毛玻璃面板上悬浮着可鼠标拖拽的卡片，实时展示后台任务、子代理、会话概览与工作区。
+description: "DSH client plugin: a floating glass task console on the back of the page — live background jobs, subagents, session overview and workspace for the current session, with mouse-draggable cards."
 repo: https://github.com/He2way/dsh-task-console
 package: dsh-task-console
 rowId: task-console
@@ -23,8 +23,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/a3f130852db0b7d86a819a22586b3f37029ae360/He2way/dsh-task-console
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -46,6 +45,7 @@ license:
 featuredRank: 107
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T13:55:53.334Z
-metadataUpdatedAt: 2026-08-19T04:39:42.687Z
+metadataUpdatedAt: 2026-08-18T15:44:54.477Z
 starsUpdatedAt: 2026-08-16T13:55:53.334Z
-updatedAt: 2026-08-19T04:39:42.687Z
+updatedAt: 2026-08-18T15:44:54.477Z
+marketScreenshots: []

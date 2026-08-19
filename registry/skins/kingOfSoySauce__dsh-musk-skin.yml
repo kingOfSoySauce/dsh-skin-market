@@ -3,7 +3,7 @@ name:
   zh: 马斯克强度
   en: Musk Intensity Skin
 author: kingOfSoySauce
-description: 滑动变祖 · 马圣 · DeepSeek Harness 皮肤
+description: dsh-elon-skin
 repo: https://github.com/kingOfSoySauce/dsh-elon-skin
 package: dsh-client-musk-intensity-skin
 rowId: musk-intensity-skin
@@ -49,6 +49,6 @@ license:
 featuredRank: 2
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-18T15:42:53.218Z
-metadataUpdatedAt: 2026-08-19T04:37:30.325Z
+metadataUpdatedAt: 2026-08-18T15:42:53.218Z
 starsUpdatedAt: 2026-08-18T09:15:01.000Z
-updatedAt: 2026-08-19T04:37:30.325Z
+updatedAt: 2026-08-18T15:42:53.218Z

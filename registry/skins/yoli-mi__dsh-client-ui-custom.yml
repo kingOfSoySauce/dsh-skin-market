@@ -3,7 +3,7 @@ name:
   zh: dsh-client-ui-custom
   en: dsh-client-ui-custom
 author: yoli-mi
-description: 中文 · English
+description: "Configurable DSH web-surface plugin: wallpaper & frosted-glass themes, accent colors, custom keyboard shortcuts, app-usage panel, history strip, message Markdown — zero shell edits."
 repo: https://github.com/yoli-mi/dsh-client-ui-custom
 package: "@ha-na-bi/dsh-client-ui-custom"
 rowId: ui-custom
@@ -51,6 +51,6 @@ license:
 featuredRank: 70
 starsSnapshot: 6
 releaseUpdatedAt: 2026-08-18T15:39:56.975Z
-metadataUpdatedAt: 2026-08-19T04:34:35.144Z
+metadataUpdatedAt: 2026-08-18T15:39:56.975Z
 starsUpdatedAt: 2026-08-18T15:39:56.975Z
-updatedAt: 2026-08-19T04:34:35.144Z
+updatedAt: 2026-08-18T15:39:56.975Z

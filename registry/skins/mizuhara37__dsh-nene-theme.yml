@@ -3,7 +3,7 @@ name:
   zh: dsh-nene-theme
   en: dsh-nene-theme
 author: mizuhara37
-description: 草薙宁宁主题 · Nene Theme（DeepSeek Harness 客户端插件）
+description: dsh-nene-theme
 repo: https://github.com/mizuhara37/dsh-nene-theme
 package: dsh-nene-theme
 rowId: nene-theme
@@ -26,8 +26,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/dcf7642211a84114186a7f12e1a6efbe5d7d36e1/mizuhara37/dsh-nene-theme
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -50,6 +49,7 @@ license:
 featuredRank: 114
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:45:29.292Z
-metadataUpdatedAt: 2026-08-19T04:40:24.246Z
+metadataUpdatedAt: 2026-08-18T15:45:29.292Z
 starsUpdatedAt: 2026-08-16T13:56:45.550Z
-updatedAt: 2026-08-19T04:40:24.246Z
+updatedAt: 2026-08-18T15:45:29.292Z
+marketScreenshots: []

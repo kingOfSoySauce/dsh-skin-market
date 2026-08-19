@@ -3,7 +3,7 @@ name:
   zh: dsh-custom-wallpaper
   en: dsh-custom-wallpaper
 author: baihejiangnan
-description: DeepSeek Harness Web GUI 的自定义壁纸引擎：上传图片（客户端 WebP/JPEG 压缩）、毛玻璃模糊、面板半透明，以及自动字体颜色联动。
+description: Custom wallpaper engine for DeepSeek Harness with image compression, frosted glass, pane opacity, adaptive text colors, and optional balance display.
 repo: https://github.com/baihejiangnan/dsh-custom-wallpaper
 package: "@baihejiangnan/dsh-custom-wallpaper"
 rowId: ui-custom-wallpaper
@@ -46,6 +46,6 @@ license:
 featuredRank: 169
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:44:10.019Z
-metadataUpdatedAt: 2026-08-19T04:38:57.138Z
+metadataUpdatedAt: 2026-08-18T15:44:10.019Z
 starsUpdatedAt: 2026-08-18T15:44:10.019Z
-updatedAt: 2026-08-19T04:38:57.138Z
+updatedAt: 2026-08-18T15:44:10.019Z

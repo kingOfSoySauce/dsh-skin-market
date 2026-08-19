@@ -3,7 +3,7 @@ name:
   zh: dsh-anime-skins
   en: dsh-anime-skins
 author: ZRTBdSS
-description: DSH 动漫皮肤管理器：一套浏览器端插件，提供 6 种皮肤，以及配套的浮动 ☰ 菜单、会话列表分组子菜单、皮肤切换弹窗和主题化 UI 覆盖。
+description: "DSH anime skin manager: 6 skins, floating menus, session list and theme-adaptive UI overrides."
 repo: https://github.com/ZRTBdSS/dsh-anime-skins
 package: dsh-anime-skins
 rowId: dsh-anime-skins
@@ -49,6 +49,6 @@ license:
 featuredRank: 201
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:46:54.544Z
-metadataUpdatedAt: 2026-08-19T04:41:53.059Z
+metadataUpdatedAt: 2026-08-18T15:46:54.544Z
 starsUpdatedAt: 2026-08-18T15:46:54.544Z
-updatedAt: 2026-08-19T04:41:53.059Z
+updatedAt: 2026-08-18T15:46:54.544Z

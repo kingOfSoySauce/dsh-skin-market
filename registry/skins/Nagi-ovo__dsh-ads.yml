@@ -3,7 +3,7 @@ name:
   zh: dsh-ads
   en: dsh-ads
 author: Nagi-ovo
-description: 把 DeepSeek Harness 变成 2005 年门户网站：在侧栏、对话和推理过程中加入虚构广告、假游戏与弹窗，支持中英文切换。
+description: "把 DeepSeek Harness 变成 2005 年门户网站：在侧栏、对话和推理过程中加入虚构广告、假游戏与弹窗，支持中英文切换。"
 repo: https://github.com/Nagi-ovo/dsh-ads
 package: "@dsh-external/dsh-ads"
 rowId: dsh-ads
@@ -47,8 +47,8 @@ license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 142
-starsSnapshot: 501
+starsSnapshot: 497
 releaseUpdatedAt: 2026-08-18T02:28:44+01:00
 metadataUpdatedAt: 2026-08-18T15:38:16.118Z
-starsUpdatedAt: 2026-08-19T04:33:01.039Z
-updatedAt: 2026-08-19T04:33:01.039Z
+starsUpdatedAt: 2026-08-18T15:38:16.118Z
+updatedAt: 2026-08-18T15:38:16.118Z

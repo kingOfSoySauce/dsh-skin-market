@@ -25,8 +25,7 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/b3e7e143532c4b6df71da753d2336bb018949d2a/BeiZi6/dsh-theme-plugin
+screenshots: []
 review:
   compatibility: verified
   preview: repository-card
@@ -45,8 +44,9 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 26
-starsSnapshot: 3
+starsSnapshot: 2
 releaseUpdatedAt: 2026-08-16T12:16:08.600Z
 metadataUpdatedAt: 2026-08-18T15:41:16.860Z
-starsUpdatedAt: 2026-08-19T04:35:13.257Z
-updatedAt: 2026-08-19T04:35:13.257Z
+starsUpdatedAt: 2026-08-16T12:16:08.600Z
+updatedAt: 2026-08-18T15:41:16.860Z
+marketScreenshots: []

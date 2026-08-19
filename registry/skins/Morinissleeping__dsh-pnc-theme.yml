@@ -3,7 +3,7 @@ name:
   zh: dsh-pnc-theme
   en: dsh-pnc-theme
 author: Morinissleeping
-description: "受《少女前线：云图计划》(Girls' Frontline: Neural Cloud, PNC) 风格启发的 DSH Web GUI 主题插件。 <img width=\"1904\" height=\"911\" alt=\"屏幕截图 2026-08-16 111532\" src=\"https://github.com/user-attachments/assets/0d5ca23b-e24e-4ee9-9265-95aedb4b1272\" / 附上Opencode Go用量指示条。"
+description: dsh-pnc-theme
 repo: https://github.com/Morinissleeping/dsh-pnc-theme
 package: "@dsh-external/dsh-pnc-theme"
 rowId: dsh-pnc-theme
@@ -46,6 +46,6 @@ license:
 featuredRank: 115
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T13:56:51.169Z
-metadataUpdatedAt: 2026-08-19T04:40:26.286Z
+metadataUpdatedAt: 2026-08-18T15:45:30.801Z
 starsUpdatedAt: 2026-08-16T13:56:51.169Z
-updatedAt: 2026-08-19T04:40:26.286Z
+updatedAt: 2026-08-18T15:45:30.801Z

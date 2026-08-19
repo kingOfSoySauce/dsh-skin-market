@@ -3,7 +3,7 @@ name:
   zh: dsh-material-you
   en: dsh-material-you
 author: mtaech
-description: Material You 皮肤 · DeepSeek Harness
+description: "Material You (M3) skin for DeepSeek Harness: HCT tonal palette + Maple Mono NF CN, clean blue & white"
 repo: https://github.com/mtaech/dsh-material-you
 package: "@deepseek-ai/dsh-skin-material-you"
 rowId: ui-skin-material-you
@@ -45,6 +45,6 @@ license:
 featuredRank: 87
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16T13:53:28.039Z
-metadataUpdatedAt: 2026-08-19T04:37:58.290Z
+metadataUpdatedAt: 2026-08-18T15:43:16.621Z
 starsUpdatedAt: 2026-08-16T13:53:28.039Z
-updatedAt: 2026-08-19T04:37:58.290Z
+updatedAt: 2026-08-18T15:43:16.621Z

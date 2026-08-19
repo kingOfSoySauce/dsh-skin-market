@@ -25,10 +25,6 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/settings.png
 screenshots:
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/dsh-packaged-final.jpg
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/dsh-settings-final.jpg
@@ -40,20 +36,24 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 endfield-ui-plugin/README.md 中嵌入至少一张固定版本的 DSH Web 实机运行截图，方便用户直接确认主题效果。
+    - 建议为随包分发的 Harmony、Novecento、Space Grotesk 字体和第三方视觉素材补充可核验的许可证文件或再分发说明。
 license:
   code: MIT
-  commercialUse: true
+  commercialUse: false
   notice: 插件代码在 package.json 中声明为 MIT；仓库同时说明第三方字体、游戏视觉素材和品牌/角色素材的授权范围仍需逐项确认，因此市场不将整体素材视为可商业再分发。
 featuredRank: 143
-starsSnapshot: 10
+starsSnapshot: 9
 releaseUpdatedAt: 2026-08-18T15:57:53.000Z
-metadataUpdatedAt: 2026-08-19T04:34:08.976Z
-starsUpdatedAt: 2026-08-19T04:34:08.976Z
-updatedAt: 2026-08-19T04:34:08.976Z
+metadataUpdatedAt: 2026-08-18T16:23:45.180Z
+starsUpdatedAt: 2026-08-18T15:57:53.000Z
+updatedAt: 2026-08-18T16:23:45.180Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/settings.png

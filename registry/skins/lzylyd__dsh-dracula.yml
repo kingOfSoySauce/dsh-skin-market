@@ -22,8 +22,7 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/d03495118b21019a9e45f63044985faf6962e5f6/lzylyd/dsh-dracula
+screenshots: []
 review:
   compatibility: verified
   preview: repository-card
@@ -48,3 +47,4 @@ releaseUpdatedAt: 2026-08-16T13:53:10.751Z
 metadataUpdatedAt: 2026-08-18T15:43:09.134Z
 starsUpdatedAt: 2026-08-16T13:53:10.751Z
 updatedAt: 2026-08-18T15:43:09.134Z
+marketScreenshots: []

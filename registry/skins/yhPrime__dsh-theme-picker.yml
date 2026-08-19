@@ -21,8 +21,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/3177474137d99d65242a1718a28c175f6b3461b8/yhPrime/dsh-theme-picker
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -47,3 +46,4 @@ releaseUpdatedAt: 2026-08-18T15:43:47.882Z
 metadataUpdatedAt: 2026-08-18T15:43:47.882Z
 starsUpdatedAt: 2026-08-18T15:43:47.882Z
 updatedAt: 2026-08-18T15:43:47.882Z
+marketScreenshots: []

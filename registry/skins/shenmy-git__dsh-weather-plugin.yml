@@ -3,7 +3,7 @@ name:
   zh: dsh-weather-plugin
   en: dsh-weather-plugin
 author: shenmy-git
-description: 天气工具 + 沉浸式天气主题的 DSH UI 增强插件：常驻生效，无需问答—— 页面打开即按 IP 自动定位并应用整个主页的天气效果；模型问答天气时再按回答 切换。所有组件按天气换色、全屏飘雨/飘雪/阳光/闪电氛围、一只沿页面底部游弋 的官方 FishLogo 鲸鱼宠物（右下角 HUD，可点开面板），聊天里还有带环境 音效、动植物伙伴和科普的交互卡片。
+description: "DSH plugin: weather tool + immersive weather theming + FishLogo whale pet (theme/ambient/sound/HUD)"
 repo: https://github.com/shenmy-git/dsh-weather-plugin
 package: dsh-weather-plugin
 rowId: weather
@@ -23,8 +23,7 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/3f94f1569a0f9193a7ff5bb7bb8000b8e6b05a36/shenmy-git/dsh-weather-plugin
+screenshots: []
 review:
   compatibility: verified
   preview: repository-card
@@ -46,6 +45,7 @@ license:
 featuredRank: 120
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:45:59.538Z
-metadataUpdatedAt: 2026-08-19T04:40:57.577Z
+metadataUpdatedAt: 2026-08-18T15:45:59.538Z
 starsUpdatedAt: 2026-08-16T13:57:34.783Z
-updatedAt: 2026-08-19T04:40:57.577Z
+updatedAt: 2026-08-18T15:45:59.538Z
+marketScreenshots: []

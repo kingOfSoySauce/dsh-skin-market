@@ -3,7 +3,7 @@ name:
   zh: dsh-icon-theme
   en: dsh-icon-theme
 author: yzke
-description: English | 简体中文
+description: Auto-detected, user-customizable icons for DeepSeek Harness settings and sidebar
 repo: https://github.com/yzke/dsh-icon-theme
 package: dsh-icon-theme
 rowId: dsh-icon-theme
@@ -14,17 +14,17 @@ modes:
   - light
   - dark
 install:
-  target: github:yzke/dsh-icon-theme#f0b13dbf411df0ecedf83553c5b8a51b07c694a5
-  version: 0.2.0
-  commit: f0b13dbf411df0ecedf83553c5b8a51b07c694a5
-  allowBuild: dsh-icon-theme@https://codeload.github.com/yzke/dsh-icon-theme/tar.gz/f0b13dbf411df0ecedf83553c5b8a51b07c694a5
+  target: github:yzke/dsh-icon-theme#2e341d850745ba29ae688de0eb882ecbabd17888
+  version: 0.1.1
+  commit: 2e341d850745ba29ae688de0eb882ecbabd17888
+  allowBuild: dsh-icon-theme@https://codeload.github.com/yzke/dsh-icon-theme/tar.gz/2e341d850745ba29ae688de0eb882ecbabd17888
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/yzke/dsh-icon-theme/f0b13dbf411df0ecedf83553c5b8a51b07c694a5/docs/images/settings-overview.png
-  - https://raw.githubusercontent.com/yzke/dsh-icon-theme/f0b13dbf411df0ecedf83553c5b8a51b07c694a5/docs/images/icon-picker.png
+  - https://raw.githubusercontent.com/yzke/dsh-icon-theme/2e341d850745ba29ae688de0eb882ecbabd17888/docs/images/settings-overview.png
+  - https://raw.githubusercontent.com/yzke/dsh-icon-theme/2e341d850745ba29ae688de0eb882ecbabd17888/docs/images/icon-picker.png
 review:
   compatibility: verified
   preview: verified
@@ -43,8 +43,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 198
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-19T04:41:40.733Z
-metadataUpdatedAt: 2026-08-19T04:41:40.733Z
-starsUpdatedAt: 2026-08-19T04:41:40.733Z
-updatedAt: 2026-08-19T04:41:40.733Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-18T15:46:43.240Z
+metadataUpdatedAt: 2026-08-18T15:46:43.240Z
+starsUpdatedAt: 2026-08-18T15:46:43.240Z
+updatedAt: 2026-08-18T15:46:43.240Z

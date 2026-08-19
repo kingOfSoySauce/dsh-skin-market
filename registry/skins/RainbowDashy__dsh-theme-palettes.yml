@@ -16,15 +16,14 @@ modes:
   - light
   - dark
 install:
-  target: github:RainbowDashy/dsh-theme-palettes#887d5a4ee5c037b5e69a6e867984dfb300c2dda4
+  target: github:RainbowDashy/dsh-theme-palettes#f295de20d97c1d9296ea3f45f64ab4d042b4cb1d
   version: 0.1.0
-  commit: 887d5a4ee5c037b5e69a6e867984dfb300c2dda4
+  commit: f295de20d97c1d9296ea3f45f64ab4d042b4cb1d
 compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/887d5a4ee5c037b5e69a6e867984dfb300c2dda4/RainbowDashy/dsh-theme-palettes
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -45,7 +44,8 @@ license:
   commercialUse: true
 featuredRank: 90
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-19T04:38:08.238Z
-metadataUpdatedAt: 2026-08-19T04:38:08.238Z
+releaseUpdatedAt: 2026-08-16T13:53:39.460Z
+metadataUpdatedAt: 2026-08-18T15:43:26.156Z
 starsUpdatedAt: 2026-08-16T13:53:39.460Z
-updatedAt: 2026-08-19T04:38:08.238Z
+updatedAt: 2026-08-18T15:43:26.156Z
+marketScreenshots: []

@@ -3,7 +3,7 @@ name:
   zh: dsh-angelsanddemon-fatesumphony-skin
   en: dsh-angelsanddemon-fatesumphony-skin
 author: zhangyuzhangyu233
-description: 《弹丸论破：天魔命曲》主题DSH皮肤插件
+description: dsh-angelsanddemon-fatesumphony-skin
 repo: https://github.com/zhangyuzhangyu233/dsh-angelsanddemon-fatesumphony-skin
 package: dsh-angelsanddemon-fatesumphony-skin
 rowId: dsh-angelsanddemon-fatesumphony-skin
@@ -25,8 +25,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/66ee1028f5247483a2e2579260e9251fe9477ef0/zhangyuzhangyu233/dsh-angelsanddemon-fatesumphony-skin
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -49,6 +48,7 @@ license:
 featuredRank: 199
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:46:46.296Z
-metadataUpdatedAt: 2026-08-19T04:41:46.788Z
+metadataUpdatedAt: 2026-08-18T15:46:46.296Z
 starsUpdatedAt: 2026-08-18T15:46:46.296Z
-updatedAt: 2026-08-19T04:41:46.788Z
+updatedAt: 2026-08-18T15:46:46.296Z
+marketScreenshots: []

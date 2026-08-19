@@ -27,7 +27,6 @@ screenshots:
   - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/slider-icon.png
   - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/file-sys.png
   - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/md-preview.png
-  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/git-changes.png
 review:
   compatibility: verified
   preview: verified
@@ -45,8 +44,9 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 10
-starsSnapshot: 6
+starsSnapshot: 4
 releaseUpdatedAt: 2026-08-18T15:40:25.196Z
 metadataUpdatedAt: 2026-08-18T15:40:25.196Z
-starsUpdatedAt: 2026-08-19T04:34:53.898Z
-updatedAt: 2026-08-19T04:34:53.898Z
+starsUpdatedAt: 2026-08-18T15:40:25.196Z
+updatedAt: 2026-08-18T15:40:25.196Z
+marketScreenshots: []

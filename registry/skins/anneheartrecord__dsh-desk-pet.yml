@@ -22,8 +22,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/93c0a90e8147c53cb5d3f3f4babb75e89ebe930b/anneheartrecord/dsh-desk-pet
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -37,3 +36,4 @@ releaseUpdatedAt: 2026-08-16T13:48:42.914Z
 metadataUpdatedAt: 2026-08-16T14:18:29.509Z
 starsUpdatedAt: 2026-08-16T13:48:42.914Z
 updatedAt: 2026-08-16T14:18:29.509Z
+marketScreenshots: []

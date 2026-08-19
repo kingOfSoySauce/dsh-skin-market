@@ -3,7 +3,7 @@ name:
   zh: dsh-kafka-ui
   en: dsh-kafka-ui
 author: 54088lp
-description: dsh-卡芙卡-ui
+description: "Kafka (Honkai: Star Rail) theme skin for DeepSeek Harness web GUI"
 repo: https://github.com/54088lp/dsh-kafka-ui
 package: "@dsh-external/dsh-client-ui-skin-kafka"
 rowId: ui-skin-kafka
@@ -43,8 +43,8 @@ license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 168
-starsSnapshot: 1
+starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:44:02.099Z
-metadataUpdatedAt: 2026-08-19T04:36:45.516Z
-starsUpdatedAt: 2026-08-19T04:36:45.516Z
-updatedAt: 2026-08-19T04:36:45.516Z
+metadataUpdatedAt: 2026-08-18T15:44:02.099Z
+starsUpdatedAt: 2026-08-18T15:44:02.099Z
+updatedAt: 2026-08-18T15:44:02.099Z

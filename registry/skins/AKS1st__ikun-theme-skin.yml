@@ -9,14 +9,14 @@ package: ikun-theme-skin
 rowId: ikun-theme-skin
 category: theme
 tags:
-- wallpaper
-- glass
-- retro
-- motion
-- token-theme
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:AKS1st/ikun-theme-skin#c0e59e61332a5e3317365848f73240308d9d9345
   version: 1.0.0
@@ -24,7 +24,7 @@ install:
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots: []
 review:
   compatibility: unverified
@@ -39,18 +39,18 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 33
-starsSnapshot: 5
-releaseUpdatedAt: 2026-08-16 12:50:27.463000+00:00
-metadataUpdatedAt: 2026-08-18 15:40:30.181000+00:00
-starsUpdatedAt: 2026-08-19 04:34:37.077000+00:00
-updatedAt: 2026-08-19 04:34:37.077000+00:00
+starsSnapshot: 3
+releaseUpdatedAt: 2026-08-16T12:50:27.463Z
+metadataUpdatedAt: 2026-08-19T08:56:52.443Z
+starsUpdatedAt: 2026-08-18T15:40:30.181Z
+updatedAt: 2026-08-19T08:56:52.443Z
 marketScreenshots:
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/home.png
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/conversation.png
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/settings.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/settings.png

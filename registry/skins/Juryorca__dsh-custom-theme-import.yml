@@ -22,8 +22,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/3a501cf063b288009cf62d2f9c04c3dd59a2e74f/Juryorca/dsh-custom-theme-import
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -48,3 +47,4 @@ releaseUpdatedAt: 2026-08-18T15:42:51.227Z
 metadataUpdatedAt: 2026-08-18T15:42:51.227Z
 starsUpdatedAt: 2026-08-18T15:42:51.227Z
 updatedAt: 2026-08-18T15:42:51.227Z
+marketScreenshots: []

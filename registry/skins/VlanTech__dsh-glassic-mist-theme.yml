@@ -24,8 +24,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/af4e9c3967df0fbeeead25b4f1426e30382d1a90/VlanTech/dsh-glassic-mist-theme
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -51,3 +50,4 @@ releaseUpdatedAt: 2026-08-16T13:57:56.238Z
 metadataUpdatedAt: 2026-08-18T15:46:17.119Z
 starsUpdatedAt: 2026-08-16T13:57:56.238Z
 updatedAt: 2026-08-18T15:46:17.119Z
+marketScreenshots: []

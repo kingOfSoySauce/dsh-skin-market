@@ -24,8 +24,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/48ad12921bd6d36286d67fa483472eb32d90b6ee/ymh0000123/dsh-theme-endfield
+screenshots: []
 review:
   compatibility: unverified
   preview: repository-card
@@ -50,3 +49,4 @@ releaseUpdatedAt: 2026-08-18T15:42:02.669Z
 metadataUpdatedAt: 2026-08-18T15:42:02.669Z
 starsUpdatedAt: 2026-08-18T15:42:02.669Z
 updatedAt: 2026-08-18T15:42:02.669Z
+marketScreenshots: []

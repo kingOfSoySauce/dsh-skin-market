@@ -22,8 +22,7 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-screenshots:
-  - https://opengraph.githubassets.com/c594be6d1f505aa0f67ae6ea1d43ddddfc6993a4/breaker505/dsh-aurora-skin
+screenshots: []
 review:
   compatibility: verified
   preview: repository-card
@@ -47,3 +46,4 @@ releaseUpdatedAt: 2026-08-18T15:44:13.078Z
 metadataUpdatedAt: 2026-08-18T15:44:13.078Z
 starsUpdatedAt: 2026-08-18T15:44:13.078Z
 updatedAt: 2026-08-18T15:44:13.078Z
+marketScreenshots: []

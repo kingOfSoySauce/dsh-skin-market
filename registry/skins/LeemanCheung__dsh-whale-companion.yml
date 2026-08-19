@@ -3,7 +3,7 @@ name:
   zh: dsh-whale-companion
   en: dsh-whale-companion
 author: LeemanCheung
-description: English | 中文
+description: A native DSH desktop whale with growth, achievements, skins, and privacy-safe progress tracking
 repo: https://github.com/LeemanCheung/dsh-whale-companion
 package: dsh-whale-companion
 rowId: whale-companion
@@ -44,6 +44,6 @@ license:
 featuredRank: 110
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-18T15:42:59.892Z
-metadataUpdatedAt: 2026-08-19T04:37:37.063Z
+metadataUpdatedAt: 2026-08-18T15:42:59.892Z
 starsUpdatedAt: 2026-08-18T15:42:59.892Z
-updatedAt: 2026-08-19T04:37:37.063Z
+updatedAt: 2026-08-18T15:42:59.892Z

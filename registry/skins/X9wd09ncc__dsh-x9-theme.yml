@@ -26,9 +26,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://raw.githubusercontent.com/X9wd09ncc/dsh-x9-theme/9af49294ab82a3ca1e6c5ab9df46179a5bd9489b//assets/screenshots/settings-theme.png
-  - https://raw.githubusercontent.com/X9wd09ncc/dsh-x9-theme/9af49294ab82a3ca1e6c5ab9df46179a5bd9489b//assets/screenshots/background.png
+screenshots: []
 review:
   compatibility: unverified
   preview: verified
@@ -52,3 +50,4 @@ releaseUpdatedAt: 2026-08-18T15:43:45.074Z
 metadataUpdatedAt: 2026-08-18T15:43:45.074Z
 starsUpdatedAt: 2026-08-16T13:54:32.014Z
 updatedAt: 2026-08-18T15:43:45.074Z
+marketScreenshots: []

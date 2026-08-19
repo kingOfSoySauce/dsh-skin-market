@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-machine
   en: dsh-theme-machine
 author: yuqisun
-description: 《疑犯追踪》（Person of Interest）「机器」风格的 DeepSeek Harness（dsh）皮肤——为 Web UI 打造的 THE MACHINE 监视式 HUD 主题：深空蓝黑底色、机器青点缀、扫描线与网格氛围层，以及一个接入真实会话遥测的悬浮面板，让界面看起来像是有一台超级智能在背后驱动。
+description: A Person-of-Interest surveillance-terminal theme for deepseek-harness — the machine is watching.
 repo: https://github.com/yuqisun/dsh-theme-machine
 package: dsh-theme-machine
 rowId: theme-machine
@@ -47,6 +47,6 @@ license:
 featuredRank: 128
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:46:41.776Z
-metadataUpdatedAt: 2026-08-19T04:41:38.968Z
+metadataUpdatedAt: 2026-08-18T15:46:41.776Z
 starsUpdatedAt: 2026-08-16T13:58:28.052Z
-updatedAt: 2026-08-19T04:41:38.968Z
+updatedAt: 2026-08-18T15:46:41.776Z
