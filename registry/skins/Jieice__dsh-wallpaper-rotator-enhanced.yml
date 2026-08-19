@@ -3,7 +3,7 @@ name:
   zh: dsh-wallpaper-rotator-enhanced
   en: dsh-wallpaper-rotator-enhanced
 author: Jieice
-description: "Enhanced fork of dsh-wallpaper-rotator: video backgrounds, full-page wallpaper neutralization, dsh rc.6 compat"
+description: DeepSeek Harness (dsh) Web UI 壁纸轮换插件 —— 基于 liceses/dsh-wallpaper-rotator 的二开增强版。
 repo: https://github.com/Jieice/dsh-wallpaper-rotator-enhanced
 package: dsh-wallpaper-rotator
 rowId: wallpaper-rotator
@@ -45,6 +45,6 @@ license:
 featuredRank: 130
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T14:25:23.482Z
-metadataUpdatedAt: 2026-08-18T15:45:04.344Z
+metadataUpdatedAt: 2026-08-19T04:39:51.807Z
 starsUpdatedAt: 2026-08-16T14:25:23.482Z
-updatedAt: 2026-08-18T15:45:04.344Z
+updatedAt: 2026-08-19T04:39:51.807Z

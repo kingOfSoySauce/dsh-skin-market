@@ -3,7 +3,7 @@ name:
   zh: dsh-pixel-skin
   en: dsh-pixel-skin
 author: ADAning
-description: 8-bit / CRT skin plugin for the DeepSeek Harness web GUI
+description: <img src="assets/dsh-pixel-icon.svg" width="96" height="96" alt="dsh-pixel-skin 鲸鱼图标" /
 repo: https://github.com/ADAning/dsh-pixel-skin
 package: dsh-pixel-skin
 rowId: dsh-pixel-skin
@@ -49,6 +49,6 @@ license:
 featuredRank: 98
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:44:03.968Z
-metadataUpdatedAt: 2026-08-18T15:44:03.968Z
+metadataUpdatedAt: 2026-08-19T04:38:52.270Z
 starsUpdatedAt: 2026-08-16T13:54:49.092Z
-updatedAt: 2026-08-18T15:44:03.968Z
+updatedAt: 2026-08-19T04:38:52.270Z

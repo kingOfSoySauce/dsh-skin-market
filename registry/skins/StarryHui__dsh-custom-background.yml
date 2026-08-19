@@ -1,0 +1,50 @@
+id: starryhui.dsh-custom-background
+name:
+  zh: dsh-custom-background
+  en: dsh-custom-background
+author: StarryHui
+description: vibe coding初作品，自定义 DeepSeek Harness（DSH）WebUI 背景插件。在设置侧边栏「agent 预设」下方提供「背景」页面，全部调整实时生效，刷新 / 重启后保持。
+repo: https://github.com/StarryHui/dsh-custom-background
+package: "@starryhui/dsh-background"
+rowId: dsh-background
+category: theme
+tags:
+  - wallpaper
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:StarryHui/dsh-custom-background#f20300f49ee95fef949c5d55e6a6bbd62c5d692d
+  version: 0.1.0
+  commit: f20300f49ee95fef949c5d55e6a6bbd62c5d692d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/StarryHui/dsh-custom-background/f20300f49ee95fef949c5d55e6a6bbd62c5d692d/images/zhuyemian.png
+  - https://raw.githubusercontent.com/StarryHui/dsh-custom-background/f20300f49ee95fef949c5d55e6a6bbd62c5d692d/images/shezhiyemian.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 204
+starsSnapshot: 3
+releaseUpdatedAt: 2026-08-19T04:35:31.190Z
+metadataUpdatedAt: 2026-08-19T04:35:31.190Z
+starsUpdatedAt: 2026-08-19T04:35:31.190Z
+updatedAt: 2026-08-19T04:35:31.190Z

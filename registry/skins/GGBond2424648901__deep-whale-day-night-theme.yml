@@ -1,0 +1,55 @@
+id: ggbond2424648901.deep-whale-day-night-theme
+name:
+  zh: deep-whale-day-night-theme
+  en: deep-whale-day-night-theme
+author: GGBond2424648901
+description: Deep Whale Day & Night Theme · 鲸鱼娘昼夜工坊
+repo: https://github.com/GGBond2424648901/deep-whale-day-night-theme
+package: "@dsh-external/dsh-client-ui-skin-deep-whale-day-night"
+rowId: ui-skin-deep-whale-day-night
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - anime
+  - pastel
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:GGBond2424648901/deep-whale-day-night-theme#70b23c60d6a6dd4e0a67a0d1d5b1a123e6e2d12e
+  version: 0.1.11
+  commit: 70b23c60d6a6dd4e0a67a0d1d5b1a123e6e2d12e
+compatibility:
+  dsh: 0.1.0-rc.7
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/GGBond2424648901/deep-whale-day-night-theme/70b23c60d6a6dd4e0a67a0d1d5b1a123e6e2d12e/preview/light.webp
+  - https://raw.githubusercontent.com/GGBond2424648901/deep-whale-day-night-theme/70b23c60d6a6dd4e0a67a0d1d5b1a123e6e2d12e/preview/dark.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 202
+starsSnapshot: 89
+releaseUpdatedAt: 2026-08-19T04:33:13.697Z
+metadataUpdatedAt: 2026-08-19T04:33:13.697Z
+starsUpdatedAt: 2026-08-19T04:33:13.697Z
+updatedAt: 2026-08-19T04:33:13.697Z

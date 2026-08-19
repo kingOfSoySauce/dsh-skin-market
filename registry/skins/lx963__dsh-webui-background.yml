@@ -3,7 +3,7 @@ name:
   zh: dsh-webui-background
   en: dsh-webui-background
 author: lx963
-description: dsh-webui-background
+description: dsh-webui-background 是一个独立的 DeepSeek Harness 插件，为 Web UI 提供可配置的背景图。它通过 Harness 的组合包与客户端插件扩展点安装，不需要修改或替换 website/public、apps/web/public 中的文件。
 repo: https://github.com/lx963/dsh-webui-background
 package: dsh-webui-background
 rowId: webui-background
@@ -44,6 +44,6 @@ license:
 featuredRank: 163
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-18T15:43:05.901Z
-metadataUpdatedAt: 2026-08-18T15:43:05.901Z
+metadataUpdatedAt: 2026-08-19T04:37:45.704Z
 starsUpdatedAt: 2026-08-18T15:43:05.901Z
-updatedAt: 2026-08-18T15:43:05.901Z
+updatedAt: 2026-08-19T04:37:45.704Z

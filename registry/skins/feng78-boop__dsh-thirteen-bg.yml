@@ -1,0 +1,48 @@
+id: feng78-boop.dsh-thirteen-bg
+name:
+  zh: dsh-thirteen-bg
+  en: dsh-thirteen-bg
+author: feng78-boop
+description: DeepSeek Harness Web GUI 动态背景插件（live wallpaper），by 十三 / thirteen。
+repo: https://github.com/feng78-boop/dsh-thirteen-bg
+package: dsh-thirteen-bg
+rowId: thirteen-bg
+category: theme
+tags:
+  - wallpaper
+  - motion
+modes:
+  - dark
+install:
+  target: github:feng78-boop/dsh-thirteen-bg#71f3f91aaa4798a11863b7f973b875792ea5977e
+  version: 0.2.0
+  commit: 71f3f91aaa4798a11863b7f973b875792ea5977e
+compatibility:
+  dsh: ">=0.1.0-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/71f3f91aaa4798a11863b7f973b875792ea5977e/feng78-boop/dsh-thirteen-bg
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 208
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-19T04:39:22.542Z
+metadataUpdatedAt: 2026-08-19T04:39:22.542Z
+starsUpdatedAt: 2026-08-19T04:39:22.542Z
+updatedAt: 2026-08-19T04:39:22.542Z

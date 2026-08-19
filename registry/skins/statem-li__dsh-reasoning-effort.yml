@@ -3,7 +3,7 @@ name:
   zh: dsh-reasoning-effort
   en: dsh-reasoning-effort
 author: statem-li
-description: Codex-style DeepSeek Harness model and reasoning selector with model-advertised effort levels, DSH-native themes, left-c…
+description: 中文首页现在位于 README.md。
 repo: https://github.com/statem-li/dsh-reasoning-effort
 package: dsh-reasoning-effort
 rowId: reasoning-effort
@@ -45,6 +45,6 @@ license:
 featuredRank: 191
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:46:10.855Z
-metadataUpdatedAt: 2026-08-18T15:46:10.855Z
+metadataUpdatedAt: 2026-08-19T04:41:09.317Z
 starsUpdatedAt: 2026-08-18T15:46:10.855Z
-updatedAt: 2026-08-18T15:46:10.855Z
+updatedAt: 2026-08-19T04:41:09.317Z

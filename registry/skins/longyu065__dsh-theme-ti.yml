@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-ti
   en: dsh-theme-ti
 author: longyu065
-description: dsh-theme-ti
+description: English · 中文
 repo: https://github.com/longyu065/dsh-theme-ti
 package: "@dsh-theme/ti"
 rowId: theme-ti
@@ -18,15 +18,15 @@ modes:
   - light
   - dark
 install:
-  target: github:longyu065/dsh-theme-ti#b6b54db83aadbf8d67f3482f3b864e67f98bf73b
+  target: github:longyu065/dsh-theme-ti#62ae2e761f045387617e28828e4b533626b3156e
   version: 1.0.0
-  commit: b6b54db83aadbf8d67f3482f3b864e67f98bf73b
+  commit: 62ae2e761f045387617e28828e4b533626b3156e
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://opengraph.githubassets.com/b6b54db83aadbf8d67f3482f3b864e67f98bf73b/longyu065/dsh-theme-ti
+  - https://opengraph.githubassets.com/62ae2e761f045387617e28828e4b533626b3156e/longyu065/dsh-theme-ti
 review:
   compatibility: unverified
   preview: repository-card
@@ -47,7 +47,7 @@ license:
   commercialUse: true
 featuredRank: 84
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:43:04.400Z
-metadataUpdatedAt: 2026-08-18T15:43:04.400Z
+releaseUpdatedAt: 2026-08-19T04:37:44.088Z
+metadataUpdatedAt: 2026-08-19T04:37:44.088Z
 starsUpdatedAt: 2026-08-16T13:53:00.319Z
-updatedAt: 2026-08-18T15:43:04.400Z
+updatedAt: 2026-08-19T04:37:44.088Z

@@ -1,0 +1,52 @@
+id: springbrand-lab.dsh-web-ui-all
+name:
+  zh: dsh-web-ui-all
+  en: dsh-web-ui-all
+author: springbrand-lab
+description: DSH Web GUI 全家桶：带定时调度的任务看板、Git 分支图、文件与变更侧栏、支持 SFTP 与端口转发的 SSH 终端、扫码配对的手机远程控制、桌面宠物、实时 token 统计，以及五套可安装主题。
+repo: https://github.com/springbrand-lab/dsh-skin-universe
+subpath: packages/dsh-web-ui-all
+package: "@linxin666/dsh-web-ui-all"
+rowId: ui-web-ui-compat
+category: theme
+tags:
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:springbrand-lab/dsh-skin-universe#29fa777bdd8c9f7d93700c56c11a96a32634d967&path:packages/dsh-web-ui-all
+  version: 0.1.7
+  commit: 29fa777bdd8c9f7d93700c56c11a96a32634d967
+  allowBuild: "@linxin666/dsh-web-ui-all@https://codeload.github.com/springbrand-lab/dsh-skin-universe/tar.gz/29fa777bdd8c9f7d93700c56c11a96a32634d967"
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/29fa777bdd8c9f7d93700c56c11a96a32634d967/springbrand-lab/dsh-skin-universe
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 203
+starsSnapshot: 5
+releaseUpdatedAt: 2026-08-19T04:34:49.785Z
+metadataUpdatedAt: 2026-08-19T04:34:49.785Z
+starsUpdatedAt: 2026-08-19T04:34:49.785Z
+updatedAt: 2026-08-19T04:34:49.785Z

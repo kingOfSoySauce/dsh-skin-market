@@ -3,7 +3,7 @@ name:
   zh: dsh-live-wallpaper
   en: dsh-live-wallpaper
 author: hinayoung23
-description: Dependency-free dynamic wallpapers for the DeepSeek Harness Web UI
+description: 中文 | English
 repo: https://github.com/hinayoung23/dsh-live-wallpaper
 package: dsh-live-wallpaper
 rowId: live-wallpaper
@@ -17,15 +17,15 @@ modes:
   - light
   - dark
 install:
-  target: github:hinayoung23/dsh-live-wallpaper#f5274f882dd9541fcc1e3aec767a9901060fceb8
+  target: github:hinayoung23/dsh-live-wallpaper#f7927e91a607dc8a531a49a7a1482473d19eb847
   version: 0.2.0
-  commit: f5274f882dd9541fcc1e3aec767a9901060fceb8
+  commit: f7927e91a607dc8a531a49a7a1482473d19eb847
 compatibility:
   dsh: 0.1.0-rc.7
   platform:
     - web
 screenshots:
-  - https://opengraph.githubassets.com/f5274f882dd9541fcc1e3aec767a9901060fceb8/hinayoung23/dsh-live-wallpaper
+  - https://opengraph.githubassets.com/f7927e91a607dc8a531a49a7a1482473d19eb847/hinayoung23/dsh-live-wallpaper
 review:
   compatibility: verified
   preview: repository-card
@@ -45,7 +45,7 @@ license:
   commercialUse: true
 featuredRank: 179
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:44:56.196Z
-metadataUpdatedAt: 2026-08-18T15:44:56.196Z
+releaseUpdatedAt: 2026-08-19T04:39:44.087Z
+metadataUpdatedAt: 2026-08-19T04:39:44.087Z
 starsUpdatedAt: 2026-08-18T15:44:56.196Z
-updatedAt: 2026-08-18T15:44:56.196Z
+updatedAt: 2026-08-19T04:39:44.087Z

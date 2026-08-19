@@ -3,7 +3,7 @@ name:
   zh: dsh-web-theme-packs
   en: dsh-web-theme-packs
 author: tzy168
-description: This is a dsh-pulgin for change theme by yourself.
+description: English | 中文
 repo: https://github.com/tzy168/dsh-web-theme-packs
 package: dsh-web-theme-packs
 rowId: web-theme-packs
@@ -47,6 +47,6 @@ license:
 featuredRank: 55
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T13:49:24.908Z
-metadataUpdatedAt: 2026-08-18T15:40:58.357Z
+metadataUpdatedAt: 2026-08-19T04:35:36.624Z
 starsUpdatedAt: 2026-08-16T13:49:24.908Z
-updatedAt: 2026-08-18T15:40:58.357Z
+updatedAt: 2026-08-19T04:35:36.624Z

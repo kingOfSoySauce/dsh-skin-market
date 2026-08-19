@@ -3,7 +3,7 @@ name:
   zh: dsh-whale-bg
   en: dsh-whale-bg
 author: gooosie
-description: Unofficial DeepSeek Harness particle-whale background plugin with cursor lighting and theme support.
+description: English | 简体中文
 repo: https://github.com/gooosie/dsh-whale-bg
 package: dsh-whale-bg
 rowId: whale-bg
@@ -48,6 +48,6 @@ license:
 featuredRank: 104
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:44:45.240Z
-metadataUpdatedAt: 2026-08-18T15:44:45.240Z
+metadataUpdatedAt: 2026-08-19T04:39:34.354Z
 starsUpdatedAt: 2026-08-16T13:55:34.455Z
-updatedAt: 2026-08-18T15:44:45.240Z
+updatedAt: 2026-08-19T04:39:34.354Z

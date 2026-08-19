@@ -3,7 +3,7 @@ name:
   zh: dsh-rick-and-morty
   en: dsh-rick-and-morty
 author: zsyayo112
-description: Rick and Morty theme + desktop pet for the dsh web GUI — three skins, six companions, agent-driven moods
+description: English | 中文
 repo: https://github.com/zsyayo112/dsh-rick-and-morty
 package: "@zsy1126/dsh-rick-and-morty"
 rowId: rick-and-morty
@@ -46,6 +46,6 @@ license:
 featuredRank: 166
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-18T15:43:58.602Z
-metadataUpdatedAt: 2026-08-18T15:43:58.602Z
+metadataUpdatedAt: 2026-08-19T04:38:48.521Z
 starsUpdatedAt: 2026-08-18T15:43:58.602Z
-updatedAt: 2026-08-18T15:43:58.602Z
+updatedAt: 2026-08-19T04:38:48.521Z

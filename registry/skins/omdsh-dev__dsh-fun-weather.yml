@@ -3,7 +3,7 @@ name:
   zh: dsh-fun-weather
   en: dsh-fun-weather
 author: omdsh-dev
-description: DSH weather tab and weather-following themes powered by Open-Meteo
+description: 独立的 DeepSeek Harness Profile Bundle，提供当前天气、7 日预报、小时预报、城市设置，以及随天气变化的主题和壁纸效果。天气与地理搜索使用 Open-Meteo。
 repo: https://github.com/omdsh-dev/dsh-fun-weather
 package: "@deepseek-ai/dsh-fun-weather"
 rowId: fun-weather
@@ -46,6 +46,6 @@ license:
 featuredRank: 54
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T13:49:17.801Z
-metadataUpdatedAt: 2026-08-18T15:40:52.176Z
+metadataUpdatedAt: 2026-08-19T04:35:29.843Z
 starsUpdatedAt: 2026-08-16T13:49:17.801Z
-updatedAt: 2026-08-18T15:40:52.176Z
+updatedAt: 2026-08-19T04:35:29.843Z

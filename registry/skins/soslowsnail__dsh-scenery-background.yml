@@ -3,7 +3,7 @@ name:
   zh: dsh-scenery-background
   en: dsh-scenery-background
 author: soslowsnail
-description: DeepSeek Harness Scenery Backgroud Plugin
+description: 山海背景每日轮换插件：给 DeepSeek Harness Web 界面加上唯美的山·海大美景色背景。
 repo: https://github.com/soslowsnail/dsh-scenery-background
 package: dsh-scenery-background
 rowId: dsh-scenery-background
@@ -47,6 +47,6 @@ license:
 featuredRank: 190
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:46:08.595Z
-metadataUpdatedAt: 2026-08-18T15:46:08.595Z
+metadataUpdatedAt: 2026-08-19T04:41:07.562Z
 starsUpdatedAt: 2026-08-18T15:46:08.595Z
-updatedAt: 2026-08-18T15:46:08.595Z
+updatedAt: 2026-08-19T04:41:07.562Z

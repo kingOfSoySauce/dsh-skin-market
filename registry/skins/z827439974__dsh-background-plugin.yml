@@ -3,7 +3,7 @@ name:
   zh: dsh-background-plugin
   en: dsh-background-plugin
 author: z827439974
-description: Set the image as background for your dsh-webui
+description: 'If you get "…禁止运行脚本" (execution policy) when running .\install.ps1 directly, either use the .cmd wrapper above, pass -ExecutionPolicy Bypass, or allow local scripts for your user once: powershell Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser'
 repo: https://github.com/z827439974/dsh-background-plugin
 package: dsh-plugin-webui-bg
 rowId: webui-bg
@@ -45,6 +45,6 @@ license:
 featuredRank: 72
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T13:51:31.579Z
-metadataUpdatedAt: 2026-08-18T15:41:03.829Z
+metadataUpdatedAt: 2026-08-19T04:35:43.117Z
 starsUpdatedAt: 2026-08-18T15:41:03.829Z
-updatedAt: 2026-08-18T15:41:03.829Z
+updatedAt: 2026-08-19T04:35:43.117Z

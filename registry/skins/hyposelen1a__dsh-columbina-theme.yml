@@ -17,16 +17,16 @@ modes:
   - light
   - dark
 install:
-  target: github:hyposelen1a/dsh-columbina-theme#00b8e72e5d40bbaf62959e5a5bef5108beded9e0
-  version: 0.1.0
-  commit: 00b8e72e5d40bbaf62959e5a5bef5108beded9e0
+  target: github:hyposelen1a/dsh-columbina-theme#2ccf33d427347f0dbf5004eb182f99182ee3c94e
+  version: 0.1.1
+  commit: 2ccf33d427347f0dbf5004eb182f99182ee3c94e
 compatibility:
   dsh: 0.1.0-rc.7
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/hyposelen1a/dsh-columbina-theme/00b8e72e5d40bbaf62959e5a5bef5108beded9e0/docs/screenshot-light.png
-  - https://raw.githubusercontent.com/hyposelen1a/dsh-columbina-theme/00b8e72e5d40bbaf62959e5a5bef5108beded9e0/docs/screenshot-dark.png
+  - https://raw.githubusercontent.com/hyposelen1a/dsh-columbina-theme/2ccf33d427347f0dbf5004eb182f99182ee3c94e/docs/screenshot-light.png
+  - https://raw.githubusercontent.com/hyposelen1a/dsh-columbina-theme/2ccf33d427347f0dbf5004eb182f99182ee3c94e/docs/screenshot-dark.png
 review:
   compatibility: verified
   preview: verified
@@ -45,7 +45,7 @@ license:
   commercialUse: true
 featuredRank: 160
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:42:41.150Z
-metadataUpdatedAt: 2026-08-18T15:42:41.150Z
+releaseUpdatedAt: 2026-08-19T04:37:18.272Z
+metadataUpdatedAt: 2026-08-19T04:37:18.272Z
 starsUpdatedAt: 2026-08-18T15:42:41.150Z
-updatedAt: 2026-08-18T15:42:41.150Z
+updatedAt: 2026-08-19T04:37:18.272Z

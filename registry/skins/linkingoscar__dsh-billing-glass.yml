@@ -3,7 +3,7 @@ name:
   zh: dsh-billing-glass
   en: dsh-billing-glass
 author: linkingoscar
-description: "Liquid-glass billing overlay for the DeepSeek Harness Web GUI: provider balances, session cost, daily spend and token buckets. DeepSeek-first and extensible."
+description: dsh-billing-glass — 液态玻璃计费悬浮卡
 repo: https://github.com/linkingoscar/dsh-billing-glass
 package: dsh-billing-glass
 rowId: billing-glass
@@ -47,6 +47,6 @@ license:
 featuredRank: 51
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T13:49:03.548Z
-metadataUpdatedAt: 2026-08-18T15:40:47.521Z
+metadataUpdatedAt: 2026-08-19T04:35:25.687Z
 starsUpdatedAt: 2026-08-16T13:49:03.548Z
-updatedAt: 2026-08-18T15:40:47.521Z
+updatedAt: 2026-08-19T04:35:25.687Z

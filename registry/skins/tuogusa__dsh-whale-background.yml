@@ -17,15 +17,15 @@ modes:
   - light
   - dark
 install:
-  target: github:tuogusa/dsh-whale-background#544491c0723158b63dedf4a462af8a8bd2282098
-  version: 0.2.0
-  commit: 544491c0723158b63dedf4a462af8a8bd2282098
+  target: github:tuogusa/dsh-whale-background#701b3f5e19a15ebf6c777502edd7549c956ff618
+  version: 0.4.0
+  commit: 701b3f5e19a15ebf6c777502edd7549c956ff618
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://opengraph.githubassets.com/544491c0723158b63dedf4a462af8a8bd2282098/tuogusa/dsh-whale-background
+  - https://opengraph.githubassets.com/701b3f5e19a15ebf6c777502edd7549c956ff618/tuogusa/dsh-whale-background
 review:
   compatibility: unverified
   preview: repository-card
@@ -46,7 +46,7 @@ license:
   commercialUse: true
 featuredRank: 32
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T12:16:34.856Z
-metadataUpdatedAt: 2026-08-18T15:43:42.064Z
+releaseUpdatedAt: 2026-08-19T04:38:27.762Z
+metadataUpdatedAt: 2026-08-19T04:38:27.762Z
 starsUpdatedAt: 2026-08-16T12:16:34.856Z
-updatedAt: 2026-08-18T15:43:42.064Z
+updatedAt: 2026-08-19T04:38:27.762Z

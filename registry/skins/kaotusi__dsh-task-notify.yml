@@ -3,7 +3,7 @@ name:
   zh: dsh-task-notify
   en: dsh-task-notify
 author: kaotusi
-description: "DeepSeek Harness (DSH) system-level task notifications: approval required / awaiting reply / task finished (background job, subagent, workflow) → OS notification center with chimes + in-app bell panel, toasts, clear button."
+description: dsh-task-notify · 系统任务通知插件
 repo: https://github.com/kaotusi/dsh-task-notify
 package: "@deepseek-ai/dsh-task-notify"
 rowId: task-notify
@@ -44,6 +44,6 @@ license:
 featuredRank: 150
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-18T15:40:40.637Z
-metadataUpdatedAt: 2026-08-18T15:40:40.637Z
+metadataUpdatedAt: 2026-08-19T04:35:19.969Z
 starsUpdatedAt: 2026-08-18T15:40:40.637Z
-updatedAt: 2026-08-18T15:40:40.637Z
+updatedAt: 2026-08-19T04:35:19.969Z

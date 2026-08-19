@@ -16,17 +16,17 @@ modes:
   - light
   - dark
 install:
-  target: github:cdxDNRF/wishadel-theme#ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0
+  target: github:cdxDNRF/wishadel-theme#44f4bd02d737b0c3125ffdc9a1f5ecdf53ff953c
   version: 0.6.0
-  commit: ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0
-  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0"
+  commit: 44f4bd02d737b0c3125ffdc9a1f5ecdf53ff953c
+  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/44f4bd02d737b0c3125ffdc9a1f5ecdf53ff953c"
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0/docs/screenshots/conversation.png
-  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0/docs/screenshots/settings.png
+  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/44f4bd02d737b0c3125ffdc9a1f5ecdf53ff953c/docs/screenshots/conversation.png
+  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/44f4bd02d737b0c3125ffdc9a1f5ecdf53ff953c/docs/screenshots/settings.png
 review:
   compatibility: verified
   preview: verified
@@ -45,7 +45,7 @@ license:
   commercialUse: false
 featuredRank: 99
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:44:16.761Z
-metadataUpdatedAt: 2026-08-18T15:44:16.761Z
+releaseUpdatedAt: 2026-08-19T04:39:04.278Z
+metadataUpdatedAt: 2026-08-19T04:39:04.278Z
 starsUpdatedAt: 2026-08-16T13:54:53.805Z
-updatedAt: 2026-08-18T15:44:16.761Z
+updatedAt: 2026-08-19T04:39:04.278Z

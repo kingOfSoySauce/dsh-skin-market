@@ -1,0 +1,50 @@
+id: mozhuanzuojing.dsh-agent-pill
+name:
+  zh: dsh-agent-pill
+  en: dsh-agent-pill
+author: mozhuanzuojing
+description: "DSH web plugin: ZCode-style agent activity capsule + right summary drawer (goal / subagents / agent status / background jobs) with control verbs, Ctrl+Alt+P toggle, draggable, auto light/dark theme"
+repo: https://github.com/mozhuanzuojing/dsh-agent-pill
+package: dsh-agent-pill
+rowId: agent-pill
+category: theme
+tags:
+  - retro
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:mozhuanzuojing/dsh-agent-pill#7a59a08db4bef275701ee2224025d3c6a965eec2
+  version: 0.1.0
+  commit: 7a59a08db4bef275701ee2224025d3c6a965eec2
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/7a59a08db4bef275701ee2224025d3c6a965eec2/mozhuanzuojing/dsh-agent-pill
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 211
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-19T04:40:28.197Z
+metadataUpdatedAt: 2026-08-19T04:40:28.197Z
+starsUpdatedAt: 2026-08-19T04:40:28.197Z
+updatedAt: 2026-08-19T04:40:28.197Z

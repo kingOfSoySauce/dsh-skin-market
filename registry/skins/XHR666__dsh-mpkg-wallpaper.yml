@@ -16,17 +16,17 @@ modes:
   - light
   - dark
 install:
-  target: github:XHR666/dsh-mpkg-wallpaper#5cae72ed04753cc9acd1b7a2a58159ea2f9449de
+  target: github:XHR666/dsh-mpkg-wallpaper#9a31d8a28495958d4cfd79549a04709a46663de3
   version: 3.1.0
-  commit: 5cae72ed04753cc9acd1b7a2a58159ea2f9449de
+  commit: 9a31d8a28495958d4cfd79549a04709a46663de3
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/XHR666/dsh-mpkg-wallpaper/5cae72ed04753cc9acd1b7a2a58159ea2f9449de/screenshots/dhsw1.jpg
-  - https://raw.githubusercontent.com/XHR666/dsh-mpkg-wallpaper/5cae72ed04753cc9acd1b7a2a58159ea2f9449de/screenshots/dshw2.jpg
-  - https://raw.githubusercontent.com/XHR666/dsh-mpkg-wallpaper/5cae72ed04753cc9acd1b7a2a58159ea2f9449de/screenshots/dshw3.jpg
+  - https://raw.githubusercontent.com/XHR666/dsh-mpkg-wallpaper/9a31d8a28495958d4cfd79549a04709a46663de3/screenshots/dhsw1.jpg
+  - https://raw.githubusercontent.com/XHR666/dsh-mpkg-wallpaper/9a31d8a28495958d4cfd79549a04709a46663de3/screenshots/dshw2.jpg
+  - https://raw.githubusercontent.com/XHR666/dsh-mpkg-wallpaper/9a31d8a28495958d4cfd79549a04709a46663de3/screenshots/dshw3.jpg
 review:
   compatibility: verified
   preview: verified
@@ -45,7 +45,7 @@ license:
   commercialUse: true
 featuredRank: 141
 starsSnapshot: 3
-releaseUpdatedAt: 2026-08-18T15:42:00.919Z
-metadataUpdatedAt: 2026-08-18T15:42:00.919Z
+releaseUpdatedAt: 2026-08-19T04:35:39.155Z
+metadataUpdatedAt: 2026-08-19T04:35:39.155Z
 starsUpdatedAt: 2026-08-18T15:42:00.919Z
-updatedAt: 2026-08-18T15:42:00.919Z
+updatedAt: 2026-08-19T04:35:39.155Z

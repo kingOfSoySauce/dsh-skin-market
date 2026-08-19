@@ -3,7 +3,7 @@ name:
   zh: dsh-aurora-theme
   en: dsh-aurora-theme
 author: seekerwxy
-description: DSH ????:??????? + ??/???? + ??/??????
+description: DeepSeek Harness（DSH）Web 界面的深黑冷色调主题插件：深邃蓝黑底、电光青强调色，配上星网 + 极光 + 细网格背景，并在设置面板内置「主题设置」页——可一键 开启/关闭 主题，也可切换背景模式（动态 / 静态）。
 repo: https://github.com/seekerwxy/dsh-aurora-theme
 package: dsh-aurora-theme
 rowId: aurora-theme
@@ -47,6 +47,6 @@ license:
 featuredRank: 119
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T13:57:29.957Z
-metadataUpdatedAt: 2026-08-18T15:45:58.101Z
+metadataUpdatedAt: 2026-08-19T04:40:56.223Z
 starsUpdatedAt: 2026-08-16T13:57:29.957Z
-updatedAt: 2026-08-18T15:45:58.101Z
+updatedAt: 2026-08-19T04:40:56.223Z

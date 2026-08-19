@@ -3,7 +3,7 @@ name:
   zh: dsh-cerrda-theme
   en: dsh-cerrda-theme
 author: Cerrda
-description: dsh-cerrda-theme
+description: DSH（DeepSeek Harness）Web GUI 的 cerrda 暗色主题——以部署级静态 web 插件发布， 免审批、进程重启后自动加载。
 repo: https://github.com/Cerrda/dsh-cerrda-theme
 package: dsh-cerrda-theme
 rowId: dsh-cerrda-theme
@@ -49,6 +49,6 @@ license:
 featuredRank: 173
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:44:18.391Z
-metadataUpdatedAt: 2026-08-18T15:44:18.391Z
+metadataUpdatedAt: 2026-08-19T04:39:05.695Z
 starsUpdatedAt: 2026-08-18T15:44:18.391Z
-updatedAt: 2026-08-18T15:44:18.391Z
+updatedAt: 2026-08-19T04:39:05.695Z

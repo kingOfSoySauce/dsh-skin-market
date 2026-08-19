@@ -20,9 +20,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#fd595d9244a26d14f739ca8c6e925bd559a0c768&path:maid-atelier
+  target: github:Small-tailqwq/dsh-deep-whale#6ce114cf67c785e61458d30d2ea53f7d0ea95bbe&path:maid-atelier
   version: 0.0.1
-  commit: fd595d9244a26d14f739ca8c6e925bd559a0c768
+  commit: 6ce114cf67c785e61458d30d2ea53f7d0ea95bbe
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -50,8 +50,8 @@ license:
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
 featuredRank: 2
-starsSnapshot: 1353
-releaseUpdatedAt: 2026-08-18T15:38:13.458Z
+starsSnapshot: 1400
+releaseUpdatedAt: 2026-08-19T04:32:58.111Z
 metadataUpdatedAt: 2026-08-18T15:38:13.458Z
-starsUpdatedAt: 2026-08-18T15:38:13.458Z
-updatedAt: 2026-08-18T15:38:13.458Z
+starsUpdatedAt: 2026-08-19T04:32:58.111Z
+updatedAt: 2026-08-19T04:32:58.111Z

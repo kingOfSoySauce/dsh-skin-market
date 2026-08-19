@@ -18,19 +18,19 @@ modes:
   - light
   - dark
 install:
-  target: github:d-dev0101/open-sea-skin#5bc053cb1ff2168695d4d0be710c68f8dd3ff0e2
+  target: github:d-dev0101/open-sea-skin#2437d80a96de4124c54fbe89872fa7090103f025
   version: 1.2.1
-  commit: 5bc053cb1ff2168695d4d0be710c68f8dd3ff0e2
+  commit: 2437d80a96de4124c54fbe89872fa7090103f025
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5bc053cb1ff2168695d4d0be710c68f8dd3ff0e2/docs/marketplace/open-sea-harness-cover.png
-  - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5bc053cb1ff2168695d4d0be710c68f8dd3ff0e2/docs/screenshots/harness-dark-overview-40.gif
-  - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5bc053cb1ff2168695d4d0be710c68f8dd3ff0e2/docs/screenshots/harness-light-overview-40.gif
-  - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5bc053cb1ff2168695d4d0be710c68f8dd3ff0e2/docs/screenshots/harness-wave-control-40.gif
-  - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5bc053cb1ff2168695d4d0be710c68f8dd3ff0e2/docs/screenshots/harness-daylight-sunset-40.gif
+  - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/marketplace/open-sea-harness-cover.png
+  - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-dark-overview-40.gif
+  - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-light-overview-40.gif
+  - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-wave-control-40.gif
+  - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-daylight-sunset-40.gif
 review:
   compatibility: verified
   preview: verified
@@ -49,8 +49,8 @@ license:
   commercialUse: true
   notice: Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1.
 featuredRank: 0
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:42:28.760Z
-metadataUpdatedAt: 2026-08-18T15:42:28.760Z
-starsUpdatedAt: 2026-08-18T15:42:28.760Z
-updatedAt: 2026-08-18T15:42:28.760Z
+starsSnapshot: 177
+releaseUpdatedAt: 2026-08-19T04:33:06.048Z
+metadataUpdatedAt: 2026-08-19T04:33:06.048Z
+starsUpdatedAt: 2026-08-19T04:33:06.048Z
+updatedAt: 2026-08-19T04:33:06.048Z

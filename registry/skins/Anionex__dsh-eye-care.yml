@@ -3,7 +3,7 @@ name:
   zh: dsh-eye-care
   en: dsh-eye-care
 author: Anionex
-description: Warm light, warm dark, and system-aware eye-care themes for DSH Web
+description: English | 中文
 repo: https://github.com/Anionex/dsh-eye-care
 package: "@anionex/dsh-eye-care"
 rowId: dsh-eye-care
@@ -47,6 +47,6 @@ license:
 featuredRank: 57
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-16T13:49:43.768Z
-metadataUpdatedAt: 2026-08-18T15:41:15.037Z
+metadataUpdatedAt: 2026-08-19T04:35:56.273Z
 starsUpdatedAt: 2026-08-16T13:49:43.768Z
-updatedAt: 2026-08-18T15:41:15.037Z
+updatedAt: 2026-08-19T04:35:56.273Z

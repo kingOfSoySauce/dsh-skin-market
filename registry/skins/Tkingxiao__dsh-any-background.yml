@@ -18,20 +18,20 @@ modes:
   - light
   - dark
 install:
-  target: github:Tkingxiao/dsh-any-background#be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b
+  target: github:Tkingxiao/dsh-any-background#5e4c0e0c3758c834422a6528ac26821ebf764b29
   version: 0.1.8
-  commit: be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b
+  commit: 5e4c0e0c3758c834422a6528ac26821ebf764b29
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image.png
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image-2.png
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image-3.png
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image-4.png
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image-6.png
-  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/be8171a0f3b0dc8a3d73fe4570c5c13c471ae80b/example_img/image-9.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/5e4c0e0c3758c834422a6528ac26821ebf764b29/example_img/image.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/5e4c0e0c3758c834422a6528ac26821ebf764b29/example_img/image-2.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/5e4c0e0c3758c834422a6528ac26821ebf764b29/example_img/image-3.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/5e4c0e0c3758c834422a6528ac26821ebf764b29/example_img/image-4.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/5e4c0e0c3758c834422a6528ac26821ebf764b29/example_img/image-6.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/5e4c0e0c3758c834422a6528ac26821ebf764b29/example_img/image-9.png
 review:
   compatibility: verified
   preview: verified
@@ -49,8 +49,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 7
-starsSnapshot: 9
-releaseUpdatedAt: 2026-08-18T15:39:26.167Z
-metadataUpdatedAt: 2026-08-18T15:39:26.167Z
-starsUpdatedAt: 2026-08-18T15:39:26.167Z
-updatedAt: 2026-08-18T15:39:26.167Z
+starsSnapshot: 11
+releaseUpdatedAt: 2026-08-19T04:34:07.577Z
+metadataUpdatedAt: 2026-08-19T04:34:07.577Z
+starsUpdatedAt: 2026-08-19T04:34:07.577Z
+updatedAt: 2026-08-19T04:34:07.577Z

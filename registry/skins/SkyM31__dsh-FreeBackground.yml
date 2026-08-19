@@ -3,7 +3,7 @@ name:
   zh: dsh-FreeBackground
   en: dsh-FreeBackground
 author: SkyM31
-description: dsh-FreeBackground
+description: DeepSeek Harness WebUI 背景美化插件 —— 自由设置 WebUI 界面的背景图片。
 repo: https://github.com/SkyM31/dsh-FreeBackground
 package: dsh-free-background
 rowId: free-background
@@ -48,6 +48,6 @@ license:
 featuredRank: 188
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:46:05.292Z
-metadataUpdatedAt: 2026-08-18T15:46:05.292Z
+metadataUpdatedAt: 2026-08-19T04:41:04.228Z
 starsUpdatedAt: 2026-08-18T15:46:05.292Z
-updatedAt: 2026-08-18T15:46:05.292Z
+updatedAt: 2026-08-19T04:41:04.228Z

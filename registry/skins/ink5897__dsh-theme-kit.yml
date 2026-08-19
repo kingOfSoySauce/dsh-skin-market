@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-kit
   en: dsh-theme-kit
 author: ink5897
-description: "A DeepSeek Harness Web GUI appearance kit: 32 preset themes, animated/static wallpapers, paper textures, per-zone text depth, and a keyboard desktop pet."
+description: English | 中文
 repo: https://github.com/ink5897/dsh-theme-kit
 package: dsh-theme-kit
 rowId: theme-kit
@@ -51,6 +51,6 @@ license:
 featuredRank: 80
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16T13:52:31.430Z
-metadataUpdatedAt: 2026-08-18T15:42:45.831Z
+metadataUpdatedAt: 2026-08-19T04:37:22.717Z
 starsUpdatedAt: 2026-08-16T13:52:31.430Z
-updatedAt: 2026-08-18T15:42:45.831Z
+updatedAt: 2026-08-19T04:37:22.717Z

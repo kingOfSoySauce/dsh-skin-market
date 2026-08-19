@@ -1,0 +1,53 @@
+id: rainpomelo.deepseek-harness-liquid-glass-theme
+name:
+  zh: deepseek-harness-liquid-glass-theme
+  en: deepseek-harness-liquid-glass-theme
+author: Rainpomelo
+description: DeepSeek Harness - 液态玻璃与动态壁纸主题 (Liquid Glass Theme)
+repo: https://github.com/Rainpomelo/deepseek-harness-liquid-glass-theme
+package: "@deepseek-ai/dsh-client-ui-liquid-glass"
+rowId: ui-liquid-glass
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+modes:
+  - dark
+install:
+  target: github:Rainpomelo/deepseek-harness-liquid-glass-theme#ef83b8e14733fa51c0fb3ab516649761ff97e327
+  version: 1.0.0
+  commit: ef83b8e14733fa51c0fb3ab516649761ff97e327
+compatibility:
+  dsh: ^0.1.0-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/ef83b8e14733fa51c0fb3ab516649761ff97e327/docs/images/live_wallpaper_demo.gif
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/ef83b8e14733fa51c0fb3ab516649761ff97e327/docs/images/desktop_main_preview.png
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/ef83b8e14733fa51c0fb3ab516649761ff97e327/docs/images/desktop_modal_preview.png
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/ef83b8e14733fa51c0fb3ab516649761ff97e327/docs/images/settings_preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 206
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-19T04:38:10.095Z
+metadataUpdatedAt: 2026-08-19T04:38:10.095Z
+starsUpdatedAt: 2026-08-19T04:38:10.095Z
+updatedAt: 2026-08-19T04:38:10.095Z

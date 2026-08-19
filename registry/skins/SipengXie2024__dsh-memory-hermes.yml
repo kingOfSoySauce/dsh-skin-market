@@ -3,7 +3,7 @@ name:
   zh: dsh-memory-hermes
   en: dsh-memory-hermes
 author: SipengXie2024
-description: "Hermes-style bounded memory + self-curating skill library for DeepSeek Harness (dsh): two-file curated memory, background review loop, LLM library curator. Out-of-tree Cordis plugin."
+description: Hermes 式有界策划记忆,做成 DeepSeek Harness(dsh)的用户侧插件。不改 dsh 本体,dsh plugin add 即装即用。
 repo: https://github.com/SipengXie2024/dsh-memory-hermes
 package: dsh-memory-hermes
 rowId: memory-hermes
@@ -44,6 +44,6 @@ license:
 featuredRank: 187
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:46:02.479Z
-metadataUpdatedAt: 2026-08-18T15:46:02.479Z
+metadataUpdatedAt: 2026-08-19T04:41:00.961Z
 starsUpdatedAt: 2026-08-18T15:46:02.479Z
-updatedAt: 2026-08-18T15:46:02.479Z
+updatedAt: 2026-08-19T04:41:00.961Z

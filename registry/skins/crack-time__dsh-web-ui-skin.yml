@@ -3,7 +3,7 @@ name:
   zh: dsh-web-ui-skin
   en: dsh-web-ui-skin
 author: crack-time
-description: "Pastoral Cottage skin for the DeepSeek Harness web GUI: 4K wallpaper + frosted glass panels (pure-UI dsh.client plugin)"
+description: 田园小屋皮肤（Pastoral Cottage Skin）—— 面向 DeepSeek Harness Web GUI（dsh web）的纯 UI 换肤插件。
 repo: https://github.com/crack-time/dsh-web-ui-skin
 package: "@crack/dsh-web-ui-skin"
 rowId: dsh-web-ui-skin
@@ -45,6 +45,6 @@ license:
 featuredRank: 174
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:44:25.553Z
-metadataUpdatedAt: 2026-08-18T15:44:25.553Z
+metadataUpdatedAt: 2026-08-19T04:39:11.410Z
 starsUpdatedAt: 2026-08-18T15:44:25.553Z
-updatedAt: 2026-08-18T15:44:25.553Z
+updatedAt: 2026-08-19T04:39:11.410Z

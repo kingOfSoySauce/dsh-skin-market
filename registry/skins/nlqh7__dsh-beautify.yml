@@ -3,7 +3,7 @@ name:
   zh: dsh-beautify
   en: dsh-beautify
 author: nlqh7
-description: "DeepSeek Harness Dream Skin，DSH theme plugin: Dream Skin color presets with a settings-page switcher."
+description: DeepSeek Harness 完整美化包：本地主题换肤（不联网）+ Wallpaper Engine 动态壁纸 + 自定义主题，一个插件搞定，设置页统一管理。
 repo: https://github.com/nlqh7/dsh-beautify
 package: "@deepseek-ai/dsh-beautify"
 rowId: dsh-beautify
@@ -48,6 +48,6 @@ license:
 featuredRank: 184
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:45:34.008Z
-metadataUpdatedAt: 2026-08-18T15:45:34.008Z
+metadataUpdatedAt: 2026-08-19T04:40:31.950Z
 starsUpdatedAt: 2026-08-18T15:45:34.008Z
-updatedAt: 2026-08-18T15:45:34.008Z
+updatedAt: 2026-08-19T04:40:31.950Z

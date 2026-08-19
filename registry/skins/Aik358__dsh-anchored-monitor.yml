@@ -3,7 +3,7 @@ name:
   zh: dsh-anchored-monitor
   en: dsh-anchored-monitor
 author: Aik358
-description: "Real-time chain-of-thought anchoring monitor & intervention plugin for DeepSeek Harness: three-band (spec/mixed/react) fingerprint detection, L1 hint / L2 reset / L3 restart interventions, liquid-glass web overlay + rheostat bar, standalone monitor process with JSONL experiment logs."
+description: English | 简体中文
 repo: https://github.com/Aik358/dsh-anchored-monitor
 package: "@a9i5k4/dsh-anchored-monitor"
 rowId: anchored-monitor
@@ -41,8 +41,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 155
-starsSnapshot: 1
+starsSnapshot: 3
 releaseUpdatedAt: 2026-08-18T15:42:11.099Z
-metadataUpdatedAt: 2026-08-18T15:42:11.099Z
-starsUpdatedAt: 2026-08-18T15:42:11.099Z
-updatedAt: 2026-08-18T15:42:11.099Z
+metadataUpdatedAt: 2026-08-19T04:35:08.971Z
+starsUpdatedAt: 2026-08-19T04:35:08.971Z
+updatedAt: 2026-08-19T04:35:08.971Z

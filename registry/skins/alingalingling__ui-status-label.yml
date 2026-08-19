@@ -3,7 +3,7 @@ name:
   zh: ui-status-label
   en: ui-status-label
 author: alingalingling
-description: "Configurable running-turn status text for dsh Web: General Settings row plus the conversationStatus provider for the chat view"
+description: 把你的鲸鱼娘思考时的 deep diving 自定义成任意你想要的样子。
 repo: https://github.com/alingalingling/ui-status-label
 package: dsh-ui-status-label
 rowId: ui-status-label
@@ -45,6 +45,6 @@ license:
 featuredRank: 136
 starsSnapshot: 38
 releaseUpdatedAt: 2026-08-18T15:38:58.062Z
-metadataUpdatedAt: 2026-08-18T15:38:58.062Z
+metadataUpdatedAt: 2026-08-19T04:33:19.612Z
 starsUpdatedAt: 2026-08-18T06:24:38Z
-updatedAt: 2026-08-18T15:38:58.062Z
+updatedAt: 2026-08-19T04:33:19.612Z

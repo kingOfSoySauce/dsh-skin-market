@@ -3,9 +3,9 @@ name:
   zh: dsh-wallpaper_share
   en: dsh-wallpaper_share
 author: YRN-playmaker
-description: A "wallpaper engine" synchronization plugin mounted on the deepseek harness can synchronize static wallpapers
+description: dsh-wallpapershare · Wallpaper Engine ↔ DeepSeek Harness 壁纸同步 <img width="1918" height="872" alt="屏幕截图 2026-08-19 015118" src="https://github.com/user-attachments/assets/c54bf3f1-a6d9-42b5-af71-8b00b6c4a081" /
 repo: https://github.com/YRN-playmaker/dsh-wallpaper_share
-package: we-sync-dsh
+package: dsh-wallpaper_share
 rowId: we-sync
 category: theme
 tags:
@@ -18,15 +18,16 @@ modes:
   - light
   - dark
 install:
-  target: github:YRN-playmaker/dsh-wallpaper_share#44287591544e83f0361730207130e1bbdb3e6cb1
-  version: 0.1.0
-  commit: 44287591544e83f0361730207130e1bbdb3e6cb1
+  target: github:YRN-playmaker/dsh-wallpaper_share#f7313c6764e921cd3e448d4dcbd02a44596f12bb
+  version: 0.2.0
+  commit: f7313c6764e921cd3e448d4dcbd02a44596f12bb
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://github.com/user-attachments/assets/59734301-8ebc-4f9b-8d7a-340b96873733
+  - https://github.com/user-attachments/assets/c54bf3f1-a6d9-42b5-af71-8b00b6c4a081
+  - https://github.com/user-attachments/assets/4edaa26e-c5da-4801-b7b3-5ba04cd28184
 review:
   compatibility: unverified
   preview: verified
@@ -46,7 +47,7 @@ license:
   commercialUse: true
 featuredRank: 132
 starsSnapshot: 3
-releaseUpdatedAt: 2026-08-18T15:41:00.977Z
-metadataUpdatedAt: 2026-08-18T15:41:00.977Z
+releaseUpdatedAt: 2026-08-19T04:35:40.504Z
+metadataUpdatedAt: 2026-08-19T04:35:40.504Z
 starsUpdatedAt: 2026-08-18T15:41:00.977Z
-updatedAt: 2026-08-18T15:41:00.977Z
+updatedAt: 2026-08-19T04:35:40.504Z

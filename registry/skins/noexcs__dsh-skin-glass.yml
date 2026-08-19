@@ -3,7 +3,7 @@ name:
   zh: dsh-skin-glass
   en: dsh-skin-glass
 author: noexcs
-description: "Frosted-glass skin for the DeepSeek Harness web UI: pick any image as background, theme colors extracted from it, glassmorphism surfaces."
+description: 给 DeepSeek Harness（DSH）Web GUI 换肤的毛玻璃皮肤插件。
 repo: https://github.com/noexcs/dsh-skin-glass
 package: dsh-skin-glass
 rowId: dsh-skin-glass
@@ -47,6 +47,6 @@ license:
 featuredRank: 116
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16T13:56:56.643Z
-metadataUpdatedAt: 2026-08-18T15:45:35.434Z
+metadataUpdatedAt: 2026-08-19T04:40:34.350Z
 starsUpdatedAt: 2026-08-16T13:56:56.643Z
-updatedAt: 2026-08-18T15:45:35.434Z
+updatedAt: 2026-08-19T04:40:34.350Z

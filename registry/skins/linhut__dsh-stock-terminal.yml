@@ -1,0 +1,47 @@
+id: linhut.dsh-stock-terminal
+name:
+  zh: dsh-stock-terminal
+  en: dsh-stock-terminal
+author: linhut
+description: 📈 dsh-stock-terminal · 股市行情皮肤 + 功能插件
+repo: https://github.com/linhut/dsh-stock-terminal
+package: "@linxin666/dsh-client-ui-skin-stock"
+rowId: ui-skin-stock
+category: theme
+tags:
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:linhut/dsh-stock-terminal#0f63836135895435d8ed8bce792fb248ab0d45e4
+  version: 1.2.0
+  commit: 0f63836135895435d8ed8bce792fb248ab0d45e4
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/linhut/dsh-stock-terminal/0f63836135895435d8ed8bce792fb248ab0d45e4/assets/screenshot.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 205
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-19T04:37:38.927Z
+metadataUpdatedAt: 2026-08-19T04:37:38.927Z
+starsUpdatedAt: 2026-08-19T04:37:38.927Z
+updatedAt: 2026-08-19T04:37:38.927Z

@@ -1,0 +1,50 @@
+id: lesliechowsh.dsh-weniger-theme
+name:
+  zh: dsh-weniger-theme
+  en: dsh-weniger-theme
+author: lesliechowsh
+description: „Weniger, aber besser" —— 少，但更好。
+repo: https://github.com/lesliechowsh/dsh-weniger-theme
+package: dsh-weniger-theme
+rowId: weniger-theme
+category: theme
+tags:
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:lesliechowsh/dsh-weniger-theme#f64905000fd727604fe366cd001640406372ea48
+  version: 0.1.2
+  commit: f64905000fd727604fe366cd001640406372ea48
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lesliechowsh/dsh-weniger-theme/f64905000fd727604fe366cd001640406372ea48/docs/screenshot-hero.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 209
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-19T04:40:04.308Z
+metadataUpdatedAt: 2026-08-19T04:40:04.308Z
+starsUpdatedAt: 2026-08-19T04:40:04.308Z
+updatedAt: 2026-08-19T04:40:04.308Z

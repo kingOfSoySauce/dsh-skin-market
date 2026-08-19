@@ -3,7 +3,7 @@ name:
   zh: dsh-extensions-wallpaperskin
   en: dsh-extensions-wallpaperskin
 author: haibala-aii
-description: Wallpaper Engine skin plugin for the DeepSeek Harness web UI
+description: English | 中文
 repo: https://github.com/haibala-aii/dsh-extensions-wallpaperskin
 package: "@haibala-aii/dsh-extensions-wallpaperskin"
 rowId: wallpaperskin
@@ -43,6 +43,6 @@ license:
 featuredRank: 106
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16T13:55:44.428Z
-metadataUpdatedAt: 2026-08-18T15:42:37.978Z
+metadataUpdatedAt: 2026-08-19T04:37:15.216Z
 starsUpdatedAt: 2026-08-18T15:42:37.978Z
-updatedAt: 2026-08-18T15:42:37.978Z
+updatedAt: 2026-08-19T04:37:15.216Z

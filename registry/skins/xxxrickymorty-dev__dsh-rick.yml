@@ -3,7 +3,7 @@ name:
   zh: dsh-rick
   en: dsh-rick
 author: xxxrickymorty-dev
-description: "C-137 skin for DeepSeek Harness: 28 posters, custom scenes, and overlay pets (Rick, Morty, portal gun)."
+description: English | 中文
 repo: https://github.com/xxxrickymorty-dev/dsh-rick
 package: dsh-rick
 rowId: dsh-rick
@@ -47,6 +47,6 @@ license:
 featuredRank: 196
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:46:32.876Z
-metadataUpdatedAt: 2026-08-18T15:46:32.876Z
+metadataUpdatedAt: 2026-08-19T04:41:28.988Z
 starsUpdatedAt: 2026-08-18T15:46:32.876Z
-updatedAt: 2026-08-18T15:46:32.876Z
+updatedAt: 2026-08-19T04:41:28.988Z

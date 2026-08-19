@@ -3,7 +3,7 @@ name:
   zh: wallpaper-engine-dsh
   en: wallpaper-engine-dsh
 author: Weilv-D
-description: "DSH plugin bundle: live Wallpaper Engine backgrounds for the DSH web GUI - video/web wallpapers, static scene previews, rotation lists, search, resource monitor, bilingual UI"
+description: English | 中文
 repo: https://github.com/Weilv-D/wallpaper-engine-dsh
 package: wallpaper-engine-dsh
 rowId: we-background
@@ -19,16 +19,16 @@ modes:
   - light
   - dark
 install:
-  target: github:Weilv-D/wallpaper-engine-dsh#030a59b61b05a06e70861784e8335daec0d203da
-  version: 1.0.2
-  commit: 030a59b61b05a06e70861784e8335daec0d203da
-  allowBuild: wallpaper-engine-dsh@https://codeload.github.com/Weilv-D/wallpaper-engine-dsh/tar.gz/030a59b61b05a06e70861784e8335daec0d203da
+  target: github:Weilv-D/wallpaper-engine-dsh#3553ef02fe36764260562a7e428b030d7b393ace
+  version: 1.0.7
+  commit: 3553ef02fe36764260562a7e428b030d7b393ace
+  allowBuild: wallpaper-engine-dsh@https://codeload.github.com/Weilv-D/wallpaper-engine-dsh/tar.gz/3553ef02fe36764260562a7e428b030d7b393ace
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
 screenshots:
-  - https://opengraph.githubassets.com/030a59b61b05a06e70861784e8335daec0d203da/Weilv-D/wallpaper-engine-dsh
+  - https://opengraph.githubassets.com/3553ef02fe36764260562a7e428b030d7b393ace/Weilv-D/wallpaper-engine-dsh
 review:
   compatibility: verified
   preview: repository-card
@@ -48,7 +48,7 @@ license:
   commercialUse: true
 featuredRank: 194
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:46:22.227Z
-metadataUpdatedAt: 2026-08-18T15:46:22.227Z
+releaseUpdatedAt: 2026-08-19T04:41:19.881Z
+metadataUpdatedAt: 2026-08-19T04:41:19.881Z
 starsUpdatedAt: 2026-08-18T15:46:22.227Z
-updatedAt: 2026-08-18T15:46:22.227Z
+updatedAt: 2026-08-19T04:41:19.881Z

@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-rheostat
   en: dsh-theme-rheostat
 author: nineandnine-9
-description: "Sliding-rheostat theme plugin for the DeepSeek Harness web GUI: model + reasoning-effort driven accents, composer glow, and a whale slider."
+description: 滑动变阻器 · dsh-theme-rheostat
 repo: https://github.com/nineandnine-9/dsh-theme-rheostat
 package: "@dsh-external/dsh-theme-rheostat"
 rowId: ui-theme-rheostat
@@ -46,6 +46,6 @@ license:
 featuredRank: 88
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16T13:53:31.745Z
-metadataUpdatedAt: 2026-08-18T15:43:22.841Z
+metadataUpdatedAt: 2026-08-19T04:38:04.836Z
 starsUpdatedAt: 2026-08-16T13:53:31.745Z
-updatedAt: 2026-08-18T15:43:22.841Z
+updatedAt: 2026-08-19T04:38:04.836Z

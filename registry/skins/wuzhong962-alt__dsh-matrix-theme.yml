@@ -3,7 +3,7 @@ name:
   zh: dsh-matrix-theme
   en: dsh-matrix-theme
 author: wuzhong962-alt
-description: dsh-matrix-theme
+description: 黑客帝国 / 赛博朋克皮肤 —— DeepSeek Harness (DSH) Web GUI 的客户端插件。
 repo: https://github.com/wuzhong962-alt/dsh-matrix-theme
 package: dsh-matrix-theme
 rowId: matrix-theme
@@ -47,6 +47,6 @@ license:
 featuredRank: 95
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16T13:54:27.004Z
-metadataUpdatedAt: 2026-08-18T15:43:43.537Z
+metadataUpdatedAt: 2026-08-19T04:38:31.099Z
 starsUpdatedAt: 2026-08-16T13:54:27.004Z
-updatedAt: 2026-08-18T15:43:43.537Z
+updatedAt: 2026-08-19T04:38:31.099Z

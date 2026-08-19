@@ -1,0 +1,51 @@
+id: alexyin-tongji.dsh-ui-enhancer
+name:
+  zh: dsh-ui-enhancer
+  en: dsh-ui-enhancer
+author: AlexYin-Tongji
+description: 面向 DeepSeek Harness Web 的桌面体验增强插件。它保留官方 UI 的会话和槽位契约，在其上组合成熟社区能力，并补充统一的个性化和文件引用体验。
+repo: https://github.com/AlexYin-Tongji/dsh-ui-enhancer
+package: dsh-ui-enhancer
+rowId: ui-enhancer-web-ui-settings
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:AlexYin-Tongji/dsh-ui-enhancer#045ec1f007e277c8b87bac8dad3d3afe02b95156
+  version: 0.1.0
+  commit: 045ec1f007e277c8b87bac8dad3d3afe02b95156
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/045ec1f007e277c8b87bac8dad3d3afe02b95156/AlexYin-Tongji/dsh-ui-enhancer
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 207
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-19T04:38:53.745Z
+metadataUpdatedAt: 2026-08-19T04:38:53.745Z
+starsUpdatedAt: 2026-08-19T04:38:53.745Z
+updatedAt: 2026-08-19T04:38:53.745Z

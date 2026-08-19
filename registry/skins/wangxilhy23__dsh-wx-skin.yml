@@ -3,7 +3,7 @@ name:
   zh: dsh-wx-skin
   en: dsh-wx-skin
 author: wangxilhy23
-description: dsh-wx-skin
+description: DeepSeek Harness（DSH）Web GUI 皮肤插件 —— 侧栏「皮肤」面板，自选本地图片或图片 URL 作为全屏磨砂背景，支持预设、暗化、模糊与透出调节，明暗主题自动适配，跨刷新持久化。
 repo: https://github.com/wangxilhy23/dsh-wx-skin
 package: dsh-wx-skin
 rowId: ui-dsh-wx-skin
@@ -16,15 +16,15 @@ tags:
 modes:
   - dark
 install:
-  target: github:wangxilhy23/dsh-wx-skin#1dce62c660fbc2525e1358f864dba797d2f9d5c3
-  version: 0.1.1
-  commit: 1dce62c660fbc2525e1358f864dba797d2f9d5c3
+  target: github:wangxilhy23/dsh-wx-skin#5351f776e73331ed70f5b656c8373c83b7a559a9
+  version: 0.1.2
+  commit: 5351f776e73331ed70f5b656c8373c83b7a559a9
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/wangxilhy23/dsh-wx-skin/1dce62c660fbc2525e1358f864dba797d2f9d5c3/assets/demo1.png
+  - https://raw.githubusercontent.com/wangxilhy23/dsh-wx-skin/5351f776e73331ed70f5b656c8373c83b7a559a9/assets/demo1.png
 review:
   compatibility: unverified
   preview: verified
@@ -45,7 +45,7 @@ license:
   commercialUse: true
 featuredRank: 68
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16T13:51:09.489Z
-metadataUpdatedAt: 2026-08-18T15:41:56.101Z
+releaseUpdatedAt: 2026-08-19T04:36:35.468Z
+metadataUpdatedAt: 2026-08-19T04:36:35.468Z
 starsUpdatedAt: 2026-08-16T13:51:09.489Z
-updatedAt: 2026-08-18T15:41:56.101Z
+updatedAt: 2026-08-19T04:36:35.468Z

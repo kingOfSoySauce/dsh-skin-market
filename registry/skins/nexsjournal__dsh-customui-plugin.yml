@@ -3,7 +3,7 @@ name:
   zh: dsh-customui-plugin
   en: dsh-customui-plugin
 author: nexsjournal
-description: "Personalize the DeepSeek Harness web GUI: sidebar logo, empty-conversation hero, and chat background image — applied live, no restart"
+description: dsh-customui-plugin（个性化）
 repo: https://github.com/nexsjournal/dsh-customui-plugin
 package: dsh-customui-plugin
 rowId: dsh-customui-plugin
@@ -45,6 +45,6 @@ license:
 featuredRank: 164
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-18T15:43:20.066Z
-metadataUpdatedAt: 2026-08-18T15:43:20.066Z
+metadataUpdatedAt: 2026-08-19T04:38:02.365Z
 starsUpdatedAt: 2026-08-18T15:43:20.066Z
-updatedAt: 2026-08-18T15:43:20.066Z
+updatedAt: 2026-08-19T04:38:02.365Z

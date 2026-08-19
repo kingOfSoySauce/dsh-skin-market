@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-dodger-17
   en: dsh-theme-dodger-17
 author: caisiyang123
-description: "Dodger-blue ballpark theme plugin for DeepSeek Harness — day & night palettes with baseball-stitch red accents, a nod to #17"
+description: 为 DeepSeek Harness Web 界面打造的道奇蓝球场主题。
 repo: https://github.com/caisiyang123/dsh-theme-dodger-17
 package: dsh-theme-dodger-17
 rowId: dsh-theme-dodger-17
@@ -45,6 +45,6 @@ license:
 featuredRank: 172
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:44:14.695Z
-metadataUpdatedAt: 2026-08-18T15:44:14.695Z
+metadataUpdatedAt: 2026-08-19T04:39:02.169Z
 starsUpdatedAt: 2026-08-18T15:44:14.695Z
-updatedAt: 2026-08-18T15:44:14.695Z
+updatedAt: 2026-08-19T04:39:02.169Z

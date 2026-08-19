@@ -1,0 +1,52 @@
+id: leyan0365.dsh-retro-mac
+name:
+  zh: dsh-retro-mac
+  en: dsh-retro-mac
+author: Leyan0365
+description: <h3 align="center" <img src="https://raw.githubusercontent.com/Leyan0365/dsh-retro-mac/main/assets/preview.svg" width="720" alt="预览"/<br/ 复古麦金塔 · <a href="https://github.com/deepseek-ai/deepseek-harness"DeepSeek Harness</a 皮肤 </h3
+repo: https://github.com/Leyan0365/dsh-retro-mac
+package: dsh-retro-mac
+rowId: retro-mac
+category: theme
+tags:
+  - wallpaper
+  - retro
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Leyan0365/dsh-retro-mac#5c54a4d90e3202d38dfd0035d3b644c5677dbebc
+  version: 0.1.0
+  commit: 5c54a4d90e3202d38dfd0035d3b644c5677dbebc
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://opengraph.githubassets.com/5c54a4d90e3202d38dfd0035d3b644c5677dbebc/Leyan0365/dsh-retro-mac
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 210
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-19T04:40:06.156Z
+metadataUpdatedAt: 2026-08-19T04:40:06.156Z
+starsUpdatedAt: 2026-08-19T04:40:06.156Z
+updatedAt: 2026-08-19T04:40:06.156Z

@@ -3,7 +3,7 @@ name:
   zh: dsh-skin-blue-whale
   en: dsh-skin-blue-whale
 author: zenghuizhu69-hub
-description: "dsh Web UI skin: DeepSeek blue-whale theme with official gradient and leaping whale art (dsh plugin)"
+description: 为 dsh Web UI 打造的「蓝鲸跃海」皮肤插件 —— 极简、高级，像桌面壁纸一样安静地铺在界面后面。
 repo: https://github.com/zenghuizhu69-hub/dsh-skin-blue-whale
 package: dsh-skin-blue-whale
 rowId: blue-whale-skin
@@ -47,6 +47,6 @@ license:
 featuredRank: 56
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16T13:49:28.860Z
-metadataUpdatedAt: 2026-08-18T15:41:07.001Z
+metadataUpdatedAt: 2026-08-19T04:35:46.115Z
 starsUpdatedAt: 2026-08-16T13:49:28.860Z
-updatedAt: 2026-08-18T15:41:07.001Z
+updatedAt: 2026-08-19T04:35:46.115Z

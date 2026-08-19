@@ -18,17 +18,17 @@ modes:
   - light
   - dark
 install:
-  target: github:niiang/dsh-kimino-theme#eda0aef6141cf13e4bb123a4749696fe045c349c
+  target: github:niiang/dsh-kimino-theme#0a17159ecc9cf61834bac3265f5c8dab333431e9
   version: 66.1.0
-  commit: eda0aef6141cf13e4bb123a4749696fe045c349c
+  commit: 0a17159ecc9cf61834bac3265f5c8dab333431e9
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/home-hero.png
-  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/sidebar.png
-  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/chat-main.png
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0a17159ecc9cf61834bac3265f5c8dab333431e9/docs/screenshots/home-hero.png
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0a17159ecc9cf61834bac3265f5c8dab333431e9/docs/screenshots/sidebar.png
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0a17159ecc9cf61834bac3265f5c8dab333431e9/docs/screenshots/chat-main.png
 review:
   compatibility: unverified
   preview: verified
@@ -47,8 +47,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 145
-starsSnapshot: 9
-releaseUpdatedAt: 2026-08-18T15:39:49.952Z
-metadataUpdatedAt: 2026-08-18T15:39:49.952Z
-starsUpdatedAt: 2026-08-18T15:39:49.952Z
-updatedAt: 2026-08-18T15:39:49.952Z
+starsSnapshot: 10
+releaseUpdatedAt: 2026-08-19T04:34:04.542Z
+metadataUpdatedAt: 2026-08-19T04:34:04.542Z
+starsUpdatedAt: 2026-08-19T04:34:04.542Z
+updatedAt: 2026-08-19T04:34:04.542Z

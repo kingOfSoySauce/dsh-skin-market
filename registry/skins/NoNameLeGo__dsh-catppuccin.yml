@@ -3,7 +3,7 @@ name:
   zh: dsh-catppuccin
   en: dsh-catppuccin
 author: NoNameLeGo
-description: Catppuccin themes + a toggleable glassmorphism skin for the DeepSeek Harness web GUI — Latte, Frappé, Macchiato and Mocha registered into the official theme system (Appearance settings), fully remapping the --dsw-* token ladder, with adjustable frosted glass for the top bar, sidebar, composer, stats line and trajectory view.
+description: <p align="center" <img src="assets/previews/combined.png" width="100%" alt="Catppuccin 四主题下的 DeepSeek Harness"/ </p
 repo: https://github.com/NoNameLeGo/dsh-catppuccin
 package: "@nonamelego/dsh-catppuccin"
 rowId: dsh-catppuccin
@@ -53,6 +53,6 @@ license:
 featuredRank: 5
 starsSnapshot: 13
 releaseUpdatedAt: 2026-08-18T15:39:36.526Z
-metadataUpdatedAt: 2026-08-18T15:39:36.526Z
+metadataUpdatedAt: 2026-08-19T04:33:54.505Z
 starsUpdatedAt: 2026-08-18T15:39:36.526Z
-updatedAt: 2026-08-18T15:39:36.526Z
+updatedAt: 2026-08-19T04:33:54.505Z

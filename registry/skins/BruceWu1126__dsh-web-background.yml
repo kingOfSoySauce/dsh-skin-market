@@ -3,7 +3,7 @@ name:
   zh: dsh-web-background
   en: dsh-web-background
 author: BruceWu1126
-description: DeepSeek Harness Web UI background customization plugin
+description: DeepSeek Harness Web UI 背景自定义插件。安装后，设置面板（左下角齿轮）中会出现「背景 / Background」页面，可自定义 Web 界面背景并持久化到 $DSHHOME/settings.yaml。
 repo: https://github.com/BruceWu1126/dsh-web-background
 package: dsh-web-background
 rowId: web-background
@@ -46,6 +46,6 @@ license:
 featuredRank: 151
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-18T15:41:19.727Z
-metadataUpdatedAt: 2026-08-18T15:41:19.727Z
+metadataUpdatedAt: 2026-08-19T04:35:58.764Z
 starsUpdatedAt: 2026-08-18T15:41:19.727Z
-updatedAt: 2026-08-18T15:41:19.727Z
+updatedAt: 2026-08-19T04:35:58.764Z
