@@ -1,11 +1,11 @@
 id: wensincai.dsh-skin-rotator
 name:
-  zh: 动态背景轮播皮肤
+  zh: åŠ¨æ€èƒŒæ™¯è½®æ’­çš®è‚¤
   en: dsh-skin-rotator
 author: wensincai
 description: >-
-  DSH Web 动态背景皮肤：把本地图片目录的图片每 5 分钟轮播一张作为全屏背景，
-  叠加可调黑色蒙版，并自动切换暗色主题保证文字可读。
+  DSH Web åŠ¨æ€èƒŒæ™¯çš®è‚¤ï¼šæŠŠæœ¬åœ°å›¾ç‰‡ç›®å½•çš„å›¾ç‰‡æ¯ 5 åˆ†é’Ÿè½®æ’­ä¸€å¼ ä½œä¸ºå…¨å±èƒŒæ™¯ï¼Œ
+  å åŠ å¯è°ƒé»‘è‰²è’™ç‰ˆï¼Œå¹¶è‡ªåŠ¨åˆ‡æ¢æš—è‰²ä¸»é¢˜ä¿è¯æ–‡å­—å¯è¯»ã€‚
 repo: https://github.com/wensincai/dsh-skin-rotator
 package: dsh-skin-rotator
 rowId: skin-rotator
@@ -18,15 +18,15 @@ tags:
 modes:
   - dark
 install:
-  target: 'github:wensincai/dsh-skin-rotator#d902b17a6fbfaf2c4cad189c361edc80e5fd721a'
+  target: 'github:wensincai/dsh-skin-rotator#a04cdc926dec980ef946731318d74d4e44167dac'
   version: 0.1.1
-  commit: 'd902b17a6fbfaf2c4cad189c361edc80e5fd721a'
+  commit: 'a04cdc926dec980ef946731318d74d4e44167dac'
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/wensincai/dsh-skin-rotator/d902b17a6fbfaf2c4cad189c361edc80e5fd721a/docs/screenshot.png
+  - https://raw.githubusercontent.com/wensincai/dsh-skin-rotator/a04cdc926dec980ef946731318d74d4e44167dac/docs/screenshot.png
 review:
   compatibility: unverified
   preview: verified
