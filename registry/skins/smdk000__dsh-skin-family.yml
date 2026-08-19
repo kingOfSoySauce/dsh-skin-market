@@ -1,0 +1,40 @@
+id: dsh-skin-family
+name:
+  zh: DSH 皮肤全家桶
+  en: DSH Skin Family
+author: smdk000
+description: 8 个皮肤家族 × 15 套明暗主题 + 设置页皮肤中心;官方 --dsw-* token 机制,一键切换、零源码改动,全部通过 WCAG AA 对比度审计。A family of 8 skins × 15 light/dark themes with a built-in skin-center switcher.
+repo: https://github.com/smdk000/dsh-skin-family
+package: dsh-skin-family
+rowId: skin-family
+category: theme
+tags:
+  - token-theme
+  - light-dark
+  - multi-skin
+modes:
+  - light
+  - dark
+install:
+  target: github:smdk000/dsh-skin-family#4e90a84f140eff12aa38e7ff4a9c8f7b69771cab
+  version: 0.1.0
+  commit: 4e90a84f140eff12aa38e7ff4a9c8f7b69771cab
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/4e90a84f140eff12aa38e7ff4a9c8f7b69771cab/docs/preview-all.png
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/4e90a84f140eff12aa38e7ff4a9c8f7b69771cab/docs/glass-dark.png
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/4e90a84f140eff12aa38e7ff4a9c8f7b69771cab/docs/claude-dark.png
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/4e90a84f140eff12aa38e7ff4a9c8f7b69771cab/docs/matrix-dark.png
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/4e90a84f140eff12aa38e7ff4a9c8f7b69771cab/docs/sakura-light.png
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 999
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-19T14:25:51.000Z
+metadataUpdatedAt: 2026-08-19T14:25:51.000Z
+starsUpdatedAt: 2026-08-19T14:25:51.000Z
+updatedAt: 2026-08-19T14:25:51.000Z
