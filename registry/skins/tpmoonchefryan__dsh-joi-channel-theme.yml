@@ -15,20 +15,22 @@ modes:
   - light
   - dark
 install:
-  target: github:tpmoonchefryan/dsh-joi-channel-theme#8eb1379dd04f18592f7ae6b833d1890f57e26f24
-  version: 0.1.9
-  commit: 8eb1379dd04f18592f7ae6b833d1890f57e26f24
+  target: github:tpmoonchefryan/dsh-joi-channel-theme#3c12a2706759104a94b51013d19bb3e9c3f2bef1
+  version: 0.1.10
+  commit: 3c12a2706759104a94b51013d19bb3e9c3f2bef1
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/3c12a2706759104a94b51013d19bb3e9c3f2bef1/docs/settings-wardrobe.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/3c12a2706759104a94b51013d19bb3e9c3f2bef1/docs/settings-wardrobe-dark.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/3c12a2706759104a94b51013d19bb3e9c3f2bef1/docs/new-chat-flowers.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/3c12a2706759104a94b51013d19bb3e9c3f2bef1/docs/new-chat-library.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/3c12a2706759104a94b51013d19bb3e9c3f2bef1/docs/new-chat-flowers-dark.png
+  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/3c12a2706759104a94b51013d19bb3e9c3f2bef1/docs/working-flowers.png
   - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/settings-wardrobe.png
   - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/settings-wardrobe-dark.png
-  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/new-chat-flowers.png
-  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/new-chat-library.png
-  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/new-chat-flowers-dark.png
-  - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/working-flowers.png
 review:
   compatibility: verified
   preview: verified
@@ -47,12 +49,12 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 94
-starsSnapshot: 8
-releaseUpdatedAt: 2026-08-18T15:39:53.474Z
-metadataUpdatedAt: 2026-08-20T05:13:41.932Z
-starsUpdatedAt: 2026-08-20T05:06:22.624Z
-updatedAt: 2026-08-20T05:13:41.932Z
+starsSnapshot: 9
+releaseUpdatedAt: 2026-08-20T06:25:22.023Z
+metadataUpdatedAt: 2026-08-20T06:32:56.889Z
+starsUpdatedAt: 2026-08-20T06:25:22.023Z
+updatedAt: 2026-08-20T06:32:56.889Z
 marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/tpmoonchefryan__dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/324d165d7825.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/tpmoonchefryan__dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/68354ebf4857.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/tpmoonchefryan__dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/f8e95439cf42.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tpmoonchefryan__dsh-joi-channel-theme/3c12a2706759104a94b51013d19bb3e9c3f2bef1/324d165d7825.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tpmoonchefryan__dsh-joi-channel-theme/3c12a2706759104a94b51013d19bb3e9c3f2bef1/68354ebf4857.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tpmoonchefryan__dsh-joi-channel-theme/3c12a2706759104a94b51013d19bb3e9c3f2bef1/f8e95439cf42.png

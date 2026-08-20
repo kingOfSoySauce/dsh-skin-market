@@ -17,15 +17,18 @@ modes:
   - light
   - dark
 install:
-  target: github:HaoyueQin/deepseek-harness-background#c6be3dfd00ecaa8dff1026107651ba6c240107bd
-  version: 0.1.0
-  commit: c6be3dfd00ecaa8dff1026107651ba6c240107bd
-  allowBuild: deepseek-harness-background@https://codeload.github.com/HaoyueQin/deepseek-harness-background/tar.gz/c6be3dfd00ecaa8dff1026107651ba6c240107bd
+  target: github:HaoyueQin/deepseek-harness-background#eb010b42763fdbf7c913d0fadbe6dd5371b70982
+  version: 0.2.0
+  commit: eb010b42763fdbf7c913d0fadbe6dd5371b70982
+  allowBuild: deepseek-harness-background@https://codeload.github.com/HaoyueQin/deepseek-harness-background/tar.gz/eb010b42763fdbf7c913d0fadbe6dd5371b70982
 compatibility:
   dsh: ^0.1.0-rc.8
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/docs/images/home.jpg
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/docs/images/conversation.jpg
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/docs/images/settings.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/docs/images/home.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/docs/images/conversation.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/docs/images/settings.jpg
@@ -47,12 +50,12 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1013
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-20T05:09:45.386Z
-metadataUpdatedAt: 2026-08-20T05:12:52.625Z
-starsUpdatedAt: 2026-08-20T05:09:45.386Z
-updatedAt: 2026-08-20T05:12:52.625Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-20T06:26:49.245Z
+metadataUpdatedAt: 2026-08-20T06:32:26.289Z
+starsUpdatedAt: 2026-08-20T06:26:49.245Z
+updatedAt: 2026-08-20T06:32:26.289Z
 marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/HaoyueQin__deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/330e6fc147eb.jpg
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/HaoyueQin__deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/f1c00481dec3.jpg
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/HaoyueQin__deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/0e94feedd9b6.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/HaoyueQin__deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/330e6fc147eb.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/HaoyueQin__deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/f1c00481dec3.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/HaoyueQin__deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/0e94feedd9b6.jpg

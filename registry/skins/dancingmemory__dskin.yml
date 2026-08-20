@@ -23,10 +23,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/dancingmemory__dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/803075b9acef.jpg
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/dancingmemory__dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/b150c6915f94.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/dancingmemory__dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/c62c291ee287.png
 screenshots:
   - https://raw.githubusercontent.com/dancingmemory/dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/assets/banner.jpg
   - https://raw.githubusercontent.com/dancingmemory/dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/assets/shot-bigorange.png
@@ -56,6 +52,10 @@ license:
 featuredRank: 38
 starsSnapshot: 7
 releaseUpdatedAt: 2026-08-20T05:06:24.008Z
-metadataUpdatedAt: 2026-08-20T05:13:21.524Z
+metadataUpdatedAt: 2026-08-20T06:32:43.021Z
 starsUpdatedAt: 2026-08-18T15:39:30.818Z
-updatedAt: 2026-08-20T05:13:21.524Z
+updatedAt: 2026-08-20T06:32:43.021Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dancingmemory__dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/803075b9acef.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dancingmemory__dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/b150c6915f94.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dancingmemory__dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/c62c291ee287.png

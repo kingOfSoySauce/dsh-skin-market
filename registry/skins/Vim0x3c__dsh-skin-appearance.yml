@@ -17,21 +17,23 @@ modes:
   - light
   - dark
 install:
-  target: github:Vim0x3c/dsh-skin-appearance#be7b05776c1dee9e3d387e122c42005edf400837
+  target: github:Vim0x3c/dsh-skin-appearance#7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d
   version: 0.1.0
-  commit: be7b05776c1dee9e3d387e122c42005edf400837
-  allowBuild: dsh-skin-appearance@https://codeload.github.com/Vim0x3c/dsh-skin-appearance/tar.gz/be7b05776c1dee9e3d387e122c42005edf400837
+  commit: 7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d
+  allowBuild: dsh-skin-appearance@https://codeload.github.com/Vim0x3c/dsh-skin-appearance/tar.gz/7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d
 compatibility:
-  dsh: ^0.1.0-rc.5
+  dsh: ^0.1.0-rc.8
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d/assets/screenshots/deepseek-chan.jpg
+  - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d/assets/screenshots/qq2008-crystal.jpg
+  - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d/assets/screenshots/cloud-lab.jpg
+  - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d/assets/screenshots/ink-algorithm.jpg
+  - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d/assets/screenshots/abyss-starport.jpg
+  - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d/assets/screenshots/deepsea-whale.jpg
   - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/be7b05776c1dee9e3d387e122c42005edf400837/assets/screenshots/deepseek-chan.jpg
   - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/be7b05776c1dee9e3d387e122c42005edf400837/assets/screenshots/qq2008-crystal.jpg
-  - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/be7b05776c1dee9e3d387e122c42005edf400837/assets/screenshots/cloud-lab.jpg
-  - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/be7b05776c1dee9e3d387e122c42005edf400837/assets/screenshots/ink-algorithm.jpg
-  - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/be7b05776c1dee9e3d387e122c42005edf400837/assets/screenshots/abyss-starport.jpg
-  - https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/be7b05776c1dee9e3d387e122c42005edf400837/assets/screenshots/deepsea-whale.jpg
 review:
   compatibility: verified
   preview: verified
@@ -51,11 +53,11 @@ license:
   commercialUse: true
 featuredRank: 45
 starsSnapshot: 5
-releaseUpdatedAt: 2026-08-18T15:40:04.699Z
-metadataUpdatedAt: 2026-08-20T05:13:09.246Z
+releaseUpdatedAt: 2026-08-20T06:25:54.319Z
+metadataUpdatedAt: 2026-08-20T06:32:36.482Z
 starsUpdatedAt: 2026-08-16T13:48:16.554Z
-updatedAt: 2026-08-20T05:13:09.246Z
+updatedAt: 2026-08-20T06:32:36.482Z
 marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Vim0x3c__dsh-skin-appearance/be7b05776c1dee9e3d387e122c42005edf400837/152e3deb4286.jpg
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Vim0x3c__dsh-skin-appearance/be7b05776c1dee9e3d387e122c42005edf400837/b8b69c23b40c.jpg
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Vim0x3c__dsh-skin-appearance/be7b05776c1dee9e3d387e122c42005edf400837/169d3809882c.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Vim0x3c__dsh-skin-appearance/7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d/15b08e2328e9.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Vim0x3c__dsh-skin-appearance/7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d/b8d74e78f8a7.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Vim0x3c__dsh-skin-appearance/7a58ae76e83cf97c78c22b0b0d48f0f2a48f039d/538476f151b3.jpg

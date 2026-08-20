@@ -25,9 +25,6 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/rison114514__dsh-endfield-ui/ca61738988433a404a942d94f9e4a79500f0609c/2fd1a8fe59fc.jpg
-  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/rison114514__dsh-endfield-ui/ca61738988433a404a942d94f9e4a79500f0609c/914cfb5da9e1.jpg
 screenshots:
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/ca61738988433a404a942d94f9e4a79500f0609c/dsh-packaged-final.jpg
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/ca61738988433a404a942d94f9e4a79500f0609c/dsh-settings-final.jpg
@@ -55,6 +52,9 @@ license:
 featuredRank: 143
 starsSnapshot: 20
 releaseUpdatedAt: 2026-08-20T05:06:20.536Z
-metadataUpdatedAt: 2026-08-20T05:13:37.063Z
+metadataUpdatedAt: 2026-08-20T06:32:53.063Z
 starsUpdatedAt: 2026-08-20T05:06:20.536Z
-updatedAt: 2026-08-20T05:13:37.063Z
+updatedAt: 2026-08-20T06:32:53.063Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui/ca61738988433a404a942d94f9e4a79500f0609c/2fd1a8fe59fc.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui/ca61738988433a404a942d94f9e4a79500f0609c/914cfb5da9e1.jpg
