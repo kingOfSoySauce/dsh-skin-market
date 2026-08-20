@@ -1,0 +1,58 @@
+id: haoyueqin.deepseek-harness-background
+name:
+  zh: deepseek-harness-background
+  en: deepseek-harness-background
+author: HaoyueQin
+description: English | 中文
+repo: https://github.com/HaoyueQin/deepseek-harness-background
+package: deepseek-harness-background
+rowId: deepseek-harness-background
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:HaoyueQin/deepseek-harness-background#c6be3dfd00ecaa8dff1026107651ba6c240107bd
+  version: 0.1.0
+  commit: c6be3dfd00ecaa8dff1026107651ba6c240107bd
+  allowBuild: deepseek-harness-background@https://codeload.github.com/HaoyueQin/deepseek-harness-background/tar.gz/c6be3dfd00ecaa8dff1026107651ba6c240107bd
+compatibility:
+  dsh: ^0.1.0-rc.8
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/docs/images/home.jpg
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/docs/images/conversation.jpg
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/docs/images/settings.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1013
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-20T05:09:45.386Z
+metadataUpdatedAt: 2026-08-20T05:12:52.625Z
+starsUpdatedAt: 2026-08-20T05:09:45.386Z
+updatedAt: 2026-08-20T05:12:52.625Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/HaoyueQin__deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/330e6fc147eb.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/HaoyueQin__deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/f1c00481dec3.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/HaoyueQin__deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/0e94feedd9b6.jpg

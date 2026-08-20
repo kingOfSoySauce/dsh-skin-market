@@ -3,7 +3,7 @@ name:
   zh: dsh_Rhine_Lab_themo
   en: dsh_Rhine_Lab_themo
 author: ReLuckyLucy
-description: Arknights Rhine Lab archive-terminal reconstruction for the DeepSeek Harness Web GUI, with reversible deep styling and restrained institutional HUD
+description: English | 中文
 repo: https://github.com/ReLuckyLucy/dsh_Rhine_Lab_themo
 package: dsh-theme-rhine-lab
 rowId: ui-theme-rhine-lab
@@ -46,6 +46,9 @@ license:
 featuredRank: 118
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:45:48.008Z
-metadataUpdatedAt: 2026-08-18T15:45:48.008Z
+metadataUpdatedAt: 2026-08-20T05:13:03.076Z
 starsUpdatedAt: 2026-08-16T13:57:12.755Z
-updatedAt: 2026-08-18T15:45:48.008Z
+updatedAt: 2026-08-20T05:13:03.076Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/ReLuckyLucy__dsh_Rhine_Lab_themo/54c2f2611f6bc6e36a784cc33908ad29bccef2b7/79d3d96c7fa0.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/ReLuckyLucy__dsh_Rhine_Lab_themo/54c2f2611f6bc6e36a784cc33908ad29bccef2b7/db812f42bff6.png

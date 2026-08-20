@@ -3,7 +3,7 @@ name:
   zh: Genshin-odette-skin-dsh
   en: Genshin-odette-skin-dsh
 author: lkdx0220
-description: Genshin-odette-skin-dsh
+description: Odette 冰雪梦幻主题 —— DSH 客户端的深/浅双模式 UI 美化皮肤。
 repo: https://github.com/lkdx0220/Genshin-odette-skin-dsh
 package: dsh-odette-skin
 rowId: odette-skin
@@ -51,6 +51,10 @@ license:
 featuredRank: 182
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:45:23.237Z
-metadataUpdatedAt: 2026-08-18T15:45:23.237Z
+metadataUpdatedAt: 2026-08-20T05:13:31.045Z
 starsUpdatedAt: 2026-08-18T15:45:23.237Z
-updatedAt: 2026-08-18T15:45:23.237Z
+updatedAt: 2026-08-20T05:13:31.045Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/lkdx0220__Genshin-odette-skin-dsh/90ab5b724d956576973f3aca40b1b331aff7d42c/87528228c92b.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/lkdx0220__Genshin-odette-skin-dsh/90ab5b724d956576973f3aca40b1b331aff7d42c/b1d4166746f7.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/lkdx0220__Genshin-odette-skin-dsh/90ab5b724d956576973f3aca40b1b331aff7d42c/2514d0d2224c.jpg

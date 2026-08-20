@@ -1,0 +1,51 @@
+id: sakuraaa667.dsh-wallpaper-engine
+name:
+  zh: dsh-wallpaper-engine
+  en: dsh-wallpaper-engine
+author: sakuraaa667
+description: 把本机 Wallpaper Engine 里已经下载的壁纸接入 DeepSeek Harness，作为 Web 界面 的背景（动态壁纸视频也支持）。Use wallpapers downloaded by Wallpaper Engine as the DeepSeek Harness web background.
+repo: https://github.com/sakuraaa667/dsh-wallpaper-engine
+package: dsh-wallpaper-engine
+rowId: dsh-wallpaper-engine
+category: theme
+tags:
+  - wallpaper
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:sakuraaa667/dsh-wallpaper-engine#fba60078781763d80bb5b84b8f907ef98e3a632b
+  version: 1.0.0
+  commit: fba60078781763d80bb5b84b8f907ef98e3a632b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/sakuraaa667/dsh-wallpaper-engine/fba60078781763d80bb5b84b8f907ef98e3a632b/assets/screenshot.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1007
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-20T05:08:48.396Z
+metadataUpdatedAt: 2026-08-20T05:13:37.740Z
+starsUpdatedAt: 2026-08-20T05:08:48.396Z
+updatedAt: 2026-08-20T05:13:37.740Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/sakuraaa667__dsh-wallpaper-engine/fba60078781763d80bb5b84b8f907ef98e3a632b/daa963db9870.jpg

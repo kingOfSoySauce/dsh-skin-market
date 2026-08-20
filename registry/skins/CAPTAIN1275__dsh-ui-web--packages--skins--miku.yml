@@ -6,28 +6,28 @@ author: CAPTAIN1275
 description: 初音未来皮肤：蓝紫粉渐变、毛玻璃面板、Miku 主题配色。
 repo: https://github.com/CAPTAIN1275/dsh-ui-web
 subpath: packages/skins/miku
-package: '@captain1275/dsh-client-ui-skin-miku'
+package: "@captain1275/dsh-client-ui-skin-miku"
 rowId: ui-skin-captain-miku
 category: theme
 tags:
-- anime
-- glass
-- token-theme
+  - anime
+  - glass
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:CAPTAIN1275/dsh-ui-web#4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56&path:packages/skins/miku
   version: 0.2.7
   commit: 4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56
-  allowBuild: '@captain1275/dsh-client-ui-skin-miku@https://codeload.github.com/CAPTAIN1275/dsh-ui-web/tar.gz/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56'
+  allowBuild: "@captain1275/dsh-client-ui-skin-miku@https://codeload.github.com/CAPTAIN1275/dsh-ui-web/tar.gz/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56"
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
-  - web
+    - web
 screenshots:
-- https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/miku/preview/dark.png
-- https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/miku/preview/light.png
+  - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/miku/preview/dark.png
+  - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/miku/preview/light.png
 review:
   compatibility: verified
   preview: verified
@@ -37,7 +37,10 @@ license:
   commercialUse: true
 featuredRank: 969
 starsSnapshot: 31
-releaseUpdatedAt: '2026-08-19T11:43:01.210764Z'
-metadataUpdatedAt: '2026-08-19T11:43:01.210764Z'
-starsUpdatedAt: '2026-08-19T11:43:01.210764Z'
-updatedAt: '2026-08-19T11:43:01.210764Z'
+releaseUpdatedAt: 2026-08-19T11:43:01.210764Z
+metadataUpdatedAt: 2026-08-20T05:12:46.676Z
+starsUpdatedAt: 2026-08-19T11:43:01.210764Z
+updatedAt: 2026-08-20T05:12:46.676Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/CAPTAIN1275__dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/e31f91b2de73.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/CAPTAIN1275__dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/e20ee6365580.png

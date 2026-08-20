@@ -3,7 +3,7 @@ name:
   zh: dsh-anchored-monitor
   en: dsh-anchored-monitor
 author: Aik358
-description: "Real-time chain-of-thought anchoring monitor & intervention plugin for DeepSeek Harness: three-band (spec/mixed/react) fingerprint detection, L1 hint / L2 reset / L3 restart interventions, liquid-glass web overlay + rheostat bar, standalone monitor process with JSONL experiment logs."
+description: English | 简体中文
 repo: https://github.com/Aik358/dsh-anchored-monitor
 package: "@a9i5k4/dsh-anchored-monitor"
 rowId: anchored-monitor
@@ -15,14 +15,15 @@ modes:
   - light
   - dark
 install:
-  target: github:Aik358/dsh-anchored-monitor#133e0adc2f11a2eb0844683b9405eb88b97d52c0
-  version: 0.2.9
-  commit: 133e0adc2f11a2eb0844683b9405eb88b97d52c0
+  target: github:Aik358/dsh-anchored-monitor#8cb863fa50c3d17dec2683a247b93f90deeb5a16
+  version: 0.3.0
+  commit: 8cb863fa50c3d17dec2683a247b93f90deeb5a16
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Aik358/dsh-anchored-monitor/8cb863fa50c3d17dec2683a247b93f90deeb5a16/docs/dashboard.png
   - https://raw.githubusercontent.com/Aik358/dsh-anchored-monitor/133e0adc2f11a2eb0844683b9405eb88b97d52c0/docs/dashboard.png
 review:
   compatibility: verified
@@ -41,8 +42,10 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 155
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:42:11.099Z
-metadataUpdatedAt: 2026-08-18T15:42:11.099Z
-starsUpdatedAt: 2026-08-18T15:42:11.099Z
-updatedAt: 2026-08-18T15:42:11.099Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-08-20T05:07:05.976Z
+metadataUpdatedAt: 2026-08-20T05:12:44.781Z
+starsUpdatedAt: 2026-08-20T05:07:05.976Z
+updatedAt: 2026-08-20T05:12:44.781Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Aik358__dsh-anchored-monitor/8cb863fa50c3d17dec2683a247b93f90deeb5a16/dbba1a8220b6.png

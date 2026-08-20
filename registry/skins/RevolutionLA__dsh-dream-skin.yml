@@ -17,14 +17,16 @@ modes:
   - light
   - dark
 install:
-  target: github:RevolutionLA/dsh-dream-skin#cb44e620126126061e8a0237280b4424464ecba7
-  version: 0.3.0
-  commit: cb44e620126126061e8a0237280b4424464ecba7
+  target: github:RevolutionLA/dsh-dream-skin#7334b77169cc3ffbfc7f052c7c883ae33b2f9446
+  version: 0.4.1
+  commit: 7334b77169cc3ffbfc7f052c7c883ae33b2f9446
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7334b77169cc3ffbfc7f052c7c883ae33b2f9446/docs/screenshots/preview.png
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7334b77169cc3ffbfc7f052c7c883ae33b2f9446/docs/screenshots/settings.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/cb44e620126126061e8a0237280b4424464ecba7/docs/screenshots/preview.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/cb44e620126126061e8a0237280b4424464ecba7/docs/screenshots/settings.png
 review:
@@ -44,8 +46,11 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 4
-starsSnapshot: 57
-releaseUpdatedAt: 2026-08-18T15:38:55.099Z
-metadataUpdatedAt: 2026-08-18T15:38:55.099Z
-starsUpdatedAt: 2026-08-18T15:38:55.099Z
-updatedAt: 2026-08-18T15:38:55.099Z
+starsSnapshot: 65
+releaseUpdatedAt: 2026-08-20T05:05:50.110Z
+metadataUpdatedAt: 2026-08-20T05:13:04.833Z
+starsUpdatedAt: 2026-08-20T05:05:50.110Z
+updatedAt: 2026-08-20T05:13:04.833Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/RevolutionLA__dsh-dream-skin/7334b77169cc3ffbfc7f052c7c883ae33b2f9446/b3726f0b5e63.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/RevolutionLA__dsh-dream-skin/7334b77169cc3ffbfc7f052c7c883ae33b2f9446/e44e667f05fd.png

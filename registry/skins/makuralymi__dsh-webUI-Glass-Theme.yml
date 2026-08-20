@@ -3,7 +3,7 @@ name:
   zh: dsh-webUI-Glass-Theme
   en: dsh-webUI-Glass-Theme
 author: makuralymi
-description: dsh-webUI-Glass-Theme
+description: 为 dsh Web UI 提供的全局毛玻璃（frosted glass / backdrop blur）主题插件。它不改变现有浅色/深色偏好，而是在任意主题之上叠加一层半透明表面 token 覆盖与全局 backdrop-filter 模糊，让整个界面呈现 iOS/macOS 风格的磨砂玻璃质感。
 repo: https://github.com/makuralymi/dsh-webUI-Glass-Theme
 package: dsh-client-ui-frosted-glass
 rowId: ui-frosted-glass
@@ -17,14 +17,16 @@ modes:
   - light
   - dark
 install:
-  target: github:makuralymi/dsh-webUI-Glass-Theme#b76db9b1a96074a44eef0e87c2346a528065f1fe
-  version: 0.2.0
-  commit: b76db9b1a96074a44eef0e87c2346a528065f1fe
+  target: github:makuralymi/dsh-webUI-Glass-Theme#c2be1d9d171c533da441d560dc3411344dfc6ea4
+  version: 0.5.0
+  commit: c2be1d9d171c533da441d560dc3411344dfc6ea4
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/makuralymi/dsh-webUI-Glass-Theme/c2be1d9d171c533da441d560dc3411344dfc6ea4/assets/sc.png
+  - https://raw.githubusercontent.com/makuralymi/dsh-webUI-Glass-Theme/c2be1d9d171c533da441d560dc3411344dfc6ea4/assets/sc2.png
   - https://raw.githubusercontent.com/makuralymi/dsh-webUI-Glass-Theme/b76db9b1a96074a44eef0e87c2346a528065f1fe/assets/sc.png
   - https://raw.githubusercontent.com/makuralymi/dsh-webUI-Glass-Theme/b76db9b1a96074a44eef0e87c2346a528065f1fe/assets/sc2.png
 review:
@@ -45,7 +47,10 @@ license:
   commercialUse: true
 featuredRank: 53
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-18T15:40:20.925Z
-metadataUpdatedAt: 2026-08-18T15:40:20.925Z
+releaseUpdatedAt: 2026-08-20T05:07:01.312Z
+metadataUpdatedAt: 2026-08-20T05:13:33.387Z
 starsUpdatedAt: 2026-08-18T15:40:20.925Z
-updatedAt: 2026-08-18T15:40:20.925Z
+updatedAt: 2026-08-20T05:13:33.387Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/makuralymi__dsh-webUI-Glass-Theme/c2be1d9d171c533da441d560dc3411344dfc6ea4/36757d3e0dad.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/makuralymi__dsh-webUI-Glass-Theme/c2be1d9d171c533da441d560dc3411344dfc6ea4/481e5e2eacbb.png

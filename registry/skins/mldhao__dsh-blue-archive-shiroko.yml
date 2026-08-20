@@ -3,20 +3,19 @@ name:
   zh: dsh-blue-archive-shiroko
   en: dsh-blue-archive-shiroko
 author: mldhao
-description: Blue Archive-inspired DSH theme with a Shiroko desktop companion, Codex-style
-  reply bubbles, petting effects, and completion chime.
+description: 简体中文 · English
 repo: https://github.com/mldhao/dsh-blue-archive-shiroko
 package: dsh-blue-archive-shiroko
 rowId: blue-archive-shiroko
 category: theme
 tags:
-- wallpaper
-- glass
-- motion
-- token-theme
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:mldhao/dsh-blue-archive-shiroko#dffeebce96a606c22cf593be3affbf6620e91a9b
   version: 0.5.1
@@ -24,9 +23,9 @@ install:
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/mldhao.dsh-blue-archive-shiroko
+  - https://opengraph.githubassets.com/placeholder/mldhao.dsh-blue-archive-shiroko
 review:
   compatibility: unverified
   preview: repository-card
@@ -40,13 +39,13 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 86
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16 13:53:22.631000+00:00
-metadataUpdatedAt: 2026-08-18 15:43:15.042000+00:00
+metadataUpdatedAt: 2026-08-20T05:08:37.453Z
 starsUpdatedAt: 2026-08-16 13:53:22.631000+00:00
-updatedAt: 2026-08-18 15:43:15.042000+00:00
+updatedAt: 2026-08-20T05:08:37.453Z

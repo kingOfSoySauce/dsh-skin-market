@@ -14,9 +14,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:feng78-boop/dsh-thirteen-bg#71f3f91aaa4798a11863b7f973b875792ea5977e
-  version: 0.2.0
-  commit: 71f3f91aaa4798a11863b7f973b875792ea5977e
+  target: github:feng78-boop/dsh-thirteen-bg#a11e0d90eb0b81f3d880fd6bfd9d792d5101b15e
+  version: 0.5.2
+  commit: a11e0d90eb0b81f3d880fd6bfd9d792d5101b15e
 compatibility:
   dsh: ">=0.1.0-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
   platform:
@@ -42,7 +42,7 @@ license:
   commercialUse: true
 featuredRank: 208
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-19T04:39:22.542Z
+releaseUpdatedAt: 2026-08-20T05:09:35.423Z
 metadataUpdatedAt: 2026-08-19T04:39:22.542Z
 starsUpdatedAt: 2026-08-19T04:39:22.542Z
-updatedAt: 2026-08-19T04:39:22.542Z
+updatedAt: 2026-08-20T05:09:35.423Z

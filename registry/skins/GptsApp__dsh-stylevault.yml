@@ -3,7 +3,7 @@ name:
   zh: dsh-stylevault
   en: dsh-stylevault
 author: GptsApp
-description: StyleVault — classic themes + Style Settings for DeepSeek Harness (30 palettes, shareable configs)
+description: English | 中文
 repo: https://github.com/GptsApp/dsh-stylevault
 package: dsh-stylevault
 rowId: stylevault
@@ -51,6 +51,10 @@ license:
 featuredRank: 105
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:44:47.231Z
-metadataUpdatedAt: 2026-08-18T15:44:47.231Z
+metadataUpdatedAt: 2026-08-20T05:12:50.070Z
 starsUpdatedAt: 2026-08-16T13:55:39.547Z
-updatedAt: 2026-08-18T15:44:47.231Z
+updatedAt: 2026-08-20T05:12:50.070Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/GptsApp__dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/d81c0eb9a2f2.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/GptsApp__dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/4b9015a2c71c.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/GptsApp__dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/d1684ef1637d.png

@@ -3,7 +3,7 @@ name:
   zh: dph-endfield-theme
   en: dph-endfield-theme
 author: thjyy
-description: Unofficial Endfield-inspired theme and animated mascot for DeepSeek Harness Web
+description: 为 DeepSeek Harness（DSH）Web 界面制作的非官方联动主题。它保留 DSH 原有功能与文案，只改变界面配色、面板结构、交互动效，并在输入框左侧加入会随会话状态切换的角色动画。
 repo: https://github.com/thjyy/dph-endfield-theme
 package: dph-endfield-theme
 rowId: dph-endfield-theme
@@ -17,19 +17,22 @@ modes:
   - light
   - dark
 install:
-  target: github:thjyy/dph-endfield-theme#223a27aefedd1ad221083d065754614401eade80
-  version: 1.1.0
-  commit: 223a27aefedd1ad221083d065754614401eade80
+  target: github:thjyy/dph-endfield-theme#a7d7467ed14db2504ab860073800244e4521d177
+  version: 1.2.0
+  commit: a7d7467ed14db2504ab860073800244e4521d177
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/thjyy/dph-endfield-theme/a7d7467ed14db2504ab860073800244e4521d177/docs/images/preview-home.png
+  - https://raw.githubusercontent.com/thjyy/dph-endfield-theme/a7d7467ed14db2504ab860073800244e4521d177/docs/images/preview-conversation.png
+  - https://raw.githubusercontent.com/thjyy/dph-endfield-theme/a7d7467ed14db2504ab860073800244e4521d177/docs/images/state-idle.gif
+  - https://raw.githubusercontent.com/thjyy/dph-endfield-theme/a7d7467ed14db2504ab860073800244e4521d177/docs/images/state-typing.gif
+  - https://raw.githubusercontent.com/thjyy/dph-endfield-theme/a7d7467ed14db2504ab860073800244e4521d177/docs/images/state-thinking.gif
   - https://raw.githubusercontent.com/thjyy/dph-endfield-theme/223a27aefedd1ad221083d065754614401eade80/docs/images/preview-home.png
   - https://raw.githubusercontent.com/thjyy/dph-endfield-theme/223a27aefedd1ad221083d065754614401eade80/docs/images/preview-conversation.png
   - https://raw.githubusercontent.com/thjyy/dph-endfield-theme/223a27aefedd1ad221083d065754614401eade80/docs/images/state-idle.gif
-  - https://raw.githubusercontent.com/thjyy/dph-endfield-theme/223a27aefedd1ad221083d065754614401eade80/docs/images/state-typing.gif
-  - https://raw.githubusercontent.com/thjyy/dph-endfield-theme/223a27aefedd1ad221083d065754614401eade80/docs/images/state-thinking.gif
 review:
   compatibility: unverified
   preview: verified
@@ -48,8 +51,12 @@ license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 121
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:57:46.646Z
-metadataUpdatedAt: 2026-08-18T15:43:39.096Z
-starsUpdatedAt: 2026-08-18T15:43:39.096Z
-updatedAt: 2026-08-18T15:43:39.096Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-20T05:07:51.150Z
+metadataUpdatedAt: 2026-08-20T05:13:40.851Z
+starsUpdatedAt: 2026-08-20T05:07:51.150Z
+updatedAt: 2026-08-20T05:13:40.851Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/thjyy__dph-endfield-theme/a7d7467ed14db2504ab860073800244e4521d177/d6bcb993bdc9.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/thjyy__dph-endfield-theme/a7d7467ed14db2504ab860073800244e4521d177/cc49e1ef3ad3.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/thjyy__dph-endfield-theme/a7d7467ed14db2504ab860073800244e4521d177/911cc3436296.gif

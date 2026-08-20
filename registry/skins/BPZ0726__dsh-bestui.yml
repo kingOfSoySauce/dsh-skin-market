@@ -3,22 +3,21 @@ name:
   zh: dsh-bestui
   en: dsh-bestui
 author: BPZ0726
-description: Adaptive wallpaper and appearance studio for the DeepSeek Harness Web
-  UI.
+description: BestUI · 壁纸主题插件
 repo: https://github.com/BPZ0726/dsh-bestui
 package: dsh-bestui
 rowId: dsh-bestui
 category: theme
 tags:
-- wallpaper
-- glass
-- retro
-- motion
-- token-theme
-- light-dark
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:BPZ0726/dsh-bestui#89902526c31a4e5690df97bcb5da8ffa6a4cac3f
   version: 0.1.1
@@ -26,9 +25,9 @@ install:
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/bpz0726.dsh-bestui
+  - https://opengraph.githubassets.com/placeholder/bpz0726.dsh-bestui
 review:
   compatibility: verified
   preview: repository-card
@@ -42,13 +41,13 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 170
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18 15:44:11.605000+00:00
-metadataUpdatedAt: 2026-08-18 15:44:11.605000+00:00
+metadataUpdatedAt: 2026-08-20T05:09:17.715Z
 starsUpdatedAt: 2026-08-18 15:44:11.605000+00:00
-updatedAt: 2026-08-18 15:44:11.605000+00:00
+updatedAt: 2026-08-20T05:09:17.715Z

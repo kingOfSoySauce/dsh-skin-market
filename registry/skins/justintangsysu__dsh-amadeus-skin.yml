@@ -3,7 +3,7 @@ name:
   zh: dsh-amadeus-skin
   en: dsh-amadeus-skin
 author: justintangsysu
-description: Steins;Gate 0 / Amadeus inspired skin for DeepSeek Harness Web.
+description: DeepSeek Harness Web 的 Steins;Gate 0 / Amadeus 风格主题皮肤。
 repo: https://github.com/justintangsysu/dsh-amadeus-skin
 package: "@dsh-external/dsh-client-ui-skin-amadeus"
 rowId: ui-skin-amadeus
@@ -44,6 +44,8 @@ license:
 featuredRank: 181
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:45:09.310Z
-metadataUpdatedAt: 2026-08-18T15:45:09.310Z
+metadataUpdatedAt: 2026-08-20T05:13:27.296Z
 starsUpdatedAt: 2026-08-18T15:45:09.310Z
-updatedAt: 2026-08-18T15:45:09.310Z
+updatedAt: 2026-08-20T05:13:27.296Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/justintangsysu__dsh-amadeus-skin/7f074e5d54b60fbfb423d11d096c5b054607c026/f53f07b39227.webp

@@ -3,38 +3,34 @@ name:
   zh: dsh-catppuccin
   en: dsh-catppuccin
 author: NoNameLeGo
-description: Catppuccin themes + a toggleable glassmorphism skin for the DeepSeek
-  Harness web GUI — Latte, Frappé, Macchiato and Mocha registered into the official
-  theme system (Appearance settings), fully remapping the --dsw-* token ladder, with
-  adjustable frosted glass for the top bar, sidebar, composer, stats line and trajectory
-  view.
+description: <p align="center" <img src="assets/previews/combined.png" width="100%" alt="Catppuccin 四主题下的 DeepSeek Harness"/ </p
 repo: https://github.com/NoNameLeGo/dsh-catppuccin
-package: '@nonamelego/dsh-catppuccin'
+package: "@nonamelego/dsh-catppuccin"
 rowId: dsh-catppuccin
 category: theme
 tags:
-- wallpaper
-- glass
-- retro
-- pastel
-- token-theme
+  - wallpaper
+  - glass
+  - retro
+  - pastel
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:NoNameLeGo/dsh-catppuccin#46134262e1804f00331554a00c080d311a94e539
   version: 0.2.7
   commit: 46134262e1804f00331554a00c080d311a94e539
-  allowBuild: '@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/46134262e1804f00331554a00c080d311a94e539'
+  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/46134262e1804f00331554a00c080d311a94e539"
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
-  - web
+    - web
 screenshots:
-- https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/latte.png
-- https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/frappe.png
-- https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/macchiato.png
-- https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/mocha.png
+  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/latte.png
+  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/frappe.png
+  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/macchiato.png
+  - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/assets/previews/mocha.png
 review:
   compatibility: verified
   preview: verified
@@ -48,13 +44,17 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 5
-starsSnapshot: 13
+starsSnapshot: 14
 releaseUpdatedAt: 2026-08-18 15:39:36.526000+00:00
-metadataUpdatedAt: 2026-08-18 15:39:36.526000+00:00
-starsUpdatedAt: 2026-08-18 15:39:36.526000+00:00
-updatedAt: 2026-08-18 15:39:36.526000+00:00
+metadataUpdatedAt: 2026-08-20T05:13:00.443Z
+starsUpdatedAt: 2026-08-20T05:06:13.084Z
+updatedAt: 2026-08-20T05:13:00.443Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/NoNameLeGo__dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/134c7ddc5ba9.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/NoNameLeGo__dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/17ee53ec01d5.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/NoNameLeGo__dsh-catppuccin/46134262e1804f00331554a00c080d311a94e539/8d642012c832.png

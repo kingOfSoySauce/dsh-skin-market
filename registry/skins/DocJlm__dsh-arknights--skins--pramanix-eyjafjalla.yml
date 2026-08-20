@@ -18,14 +18,15 @@ modes:
   - light
   - dark
 install:
-  target: github:DocJlm/dsh-arknights#6419ea4d249945daa4bc05112b32ee868f5d2d6c&path:skins/pramanix-eyjafjalla
+  target: github:DocJlm/dsh-arknights#87116ed1536c61dbb287addd9e4830cf3e8e0f36&path:skins/pramanix-eyjafjalla
   version: 0.1.0
-  commit: 6419ea4d249945daa4bc05112b32ee868f5d2d6c
+  commit: 87116ed1536c61dbb287addd9e4830cf3e8e0f36
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/DocJlm/dsh-arknights/87116ed1536c61dbb287addd9e4830cf3e8e0f36/skins/pramanix-eyjafjalla/preview/cover.webp
   - https://raw.githubusercontent.com/DocJlm/dsh-arknights/6419ea4d249945daa4bc05112b32ee868f5d2d6c/skins/pramanix-eyjafjalla/preview/cover.webp
 review:
   compatibility: verified
@@ -42,11 +43,13 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
-  code: MIT
-  commercialUse: true
+  code: (MIT AND CC-BY-NC-SA-4.0)
+  commercialUse: false
 featuredRank: 17
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16T12:32:55.976Z
-metadataUpdatedAt: 2026-08-18T15:41:31.928Z
+releaseUpdatedAt: 2026-08-20T05:07:35.441Z
+metadataUpdatedAt: 2026-08-20T05:12:47.936Z
 starsUpdatedAt: 2026-08-18T15:41:31.928Z
-updatedAt: 2026-08-18T15:41:31.928Z
+updatedAt: 2026-08-20T05:12:47.936Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/DocJlm__dsh-arknights/87116ed1536c61dbb287addd9e4830cf3e8e0f36/28f69a05a44e.webp

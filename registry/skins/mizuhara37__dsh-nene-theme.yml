@@ -3,20 +3,20 @@ name:
   zh: dsh-nene-theme
   en: dsh-nene-theme
 author: mizuhara37
-description: dsh-nene-theme
+description: 草薙宁宁主题 · Nene Theme（DeepSeek Harness 客户端插件）
 repo: https://github.com/mizuhara37/dsh-nene-theme
 package: dsh-nene-theme
 rowId: nene-theme
 category: theme
 tags:
-- wallpaper
-- glass
-- retro
-- motion
-- token-theme
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:mizuhara37/dsh-nene-theme#dcf7642211a84114186a7f12e1a6efbe5d7d36e1
   version: 0.1.0
@@ -25,9 +25,9 @@ install:
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/mizuhara37.dsh-nene-theme
+  - https://opengraph.githubassets.com/placeholder/mizuhara37.dsh-nene-theme
 review:
   compatibility: unverified
   preview: repository-card
@@ -41,15 +41,15 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-  - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 114
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18 15:45:29.292000+00:00
-metadataUpdatedAt: 2026-08-18 15:45:29.292000+00:00
+metadataUpdatedAt: 2026-08-20T05:10:09.128Z
 starsUpdatedAt: 2026-08-16 13:56:45.550000+00:00
-updatedAt: 2026-08-18 15:45:29.292000+00:00
+updatedAt: 2026-08-20T05:10:09.128Z

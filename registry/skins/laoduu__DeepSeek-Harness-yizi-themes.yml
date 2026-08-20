@@ -18,15 +18,16 @@ modes:
   - light
   - dark
 install:
-  target: github:laoduu/DeepSeek-Harness-yizi-themes#8964dc67fd77447d450afafc134c8d7421ac6735
+  target: github:laoduu/DeepSeek-Harness-yizi-themes#377676424e0e45f919ab5e8ee54cb1ab0f96da73
   version: 0.2.4
-  commit: 8964dc67fd77447d450afafc134c8d7421ac6735
-  allowBuild: dsh-yizi-themes@https://codeload.github.com/laoduu/DeepSeek-Harness-yizi-themes/tar.gz/8964dc67fd77447d450afafc134c8d7421ac6735
+  commit: 377676424e0e45f919ab5e8ee54cb1ab0f96da73
+  allowBuild: dsh-yizi-themes@https://codeload.github.com/laoduu/DeepSeek-Harness-yizi-themes/tar.gz/377676424e0e45f919ab5e8ee54cb1ab0f96da73
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/377676424e0e45f919ab5e8ee54cb1ab0f96da73/assets/dsh-yizi-themes.png
   - https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/8964dc67fd77447d450afafc134c8d7421ac6735/assets/dsh-yizi-themes.png
 review:
   compatibility: unverified
@@ -48,7 +49,9 @@ license:
   commercialUse: true
 featuredRank: 83
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:42:57.869Z
-metadataUpdatedAt: 2026-08-18T15:42:57.869Z
+releaseUpdatedAt: 2026-08-20T05:08:27.123Z
+metadataUpdatedAt: 2026-08-20T05:13:28.451Z
 starsUpdatedAt: 2026-08-16T13:52:49.212Z
-updatedAt: 2026-08-18T15:42:57.869Z
+updatedAt: 2026-08-20T05:13:28.451Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/laoduu__DeepSeek-Harness-yizi-themes/377676424e0e45f919ab5e8ee54cb1ab0f96da73/1922bd780c28.png

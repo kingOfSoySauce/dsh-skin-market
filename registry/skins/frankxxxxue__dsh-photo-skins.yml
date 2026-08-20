@@ -1,0 +1,56 @@
+id: frankxxxxue.dsh-photo-skins
+name:
+  zh: dsh-photo-skins
+  en: dsh-photo-skins
+author: frankxxxxue
+description: 中文 | English
+repo: https://github.com/frankxxxxue/dsh-photo-skins
+package: dsh-photo-skins
+rowId: photo-skins
+category: theme
+tags:
+  - wallpaper
+  - retro
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:frankxxxxue/dsh-photo-skins#d90b3ce3dd25ab38131fa85ee77e969d296da622
+  version: 0.1.0
+  commit: d90b3ce3dd25ab38131fa85ee77e969d296da622
+compatibility:
+  dsh: ^0.1.0-rc.7
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/frankxxxxue/dsh-photo-skins/d90b3ce3dd25ab38131fa85ee77e969d296da622/screenshots/Interface_1.png
+  - https://raw.githubusercontent.com/frankxxxxue/dsh-photo-skins/d90b3ce3dd25ab38131fa85ee77e969d296da622/screenshots/Plugin_Path.png
+  - https://raw.githubusercontent.com/frankxxxxue/dsh-photo-skins/d90b3ce3dd25ab38131fa85ee77e969d296da622/screenshots/Interface_chat.png
+  - https://raw.githubusercontent.com/frankxxxxue/dsh-photo-skins/d90b3ce3dd25ab38131fa85ee77e969d296da622/screenshots/Interface_2.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1006
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-20T05:08:12.341Z
+metadataUpdatedAt: 2026-08-20T05:13:23.766Z
+starsUpdatedAt: 2026-08-20T05:08:12.341Z
+updatedAt: 2026-08-20T05:13:23.766Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/frankxxxxue__dsh-photo-skins/d90b3ce3dd25ab38131fa85ee77e969d296da622/1de33e92d33d.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/frankxxxxue__dsh-photo-skins/d90b3ce3dd25ab38131fa85ee77e969d296da622/a19d9fcff1ec.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/frankxxxxue__dsh-photo-skins/d90b3ce3dd25ab38131fa85ee77e969d296da622/36d83a9acb97.png

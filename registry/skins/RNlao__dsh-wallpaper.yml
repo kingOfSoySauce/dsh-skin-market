@@ -1,0 +1,52 @@
+id: rnlao.dsh-wallpaper
+name:
+  zh: dsh-wallpaper
+  en: dsh-wallpaper
+author: RNlao
+description: dsh-wallpaper · DSH 壁纸插件
+repo: https://github.com/RNlao/dsh-wallpaper
+package: dsh-wallpaper
+rowId: dsh-wallpaper
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:RNlao/dsh-wallpaper#cfa4bce21d2d6ee4944656658052e5391a5c81a5
+  version: 0.1.0
+  commit: cfa4bce21d2d6ee4944656658052e5391a5c81a5
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://repository-images.githubusercontent.com/1333486205/208d5ee9-1233-4bdb-a99c-f985e7ccd975
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1004
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-20T05:07:48.948Z
+metadataUpdatedAt: 2026-08-20T05:13:01.196Z
+starsUpdatedAt: 2026-08-20T05:07:48.948Z
+updatedAt: 2026-08-20T05:13:01.196Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/RNlao__dsh-wallpaper/cfa4bce21d2d6ee4944656658052e5391a5c81a5/0cf4e4299b36.png

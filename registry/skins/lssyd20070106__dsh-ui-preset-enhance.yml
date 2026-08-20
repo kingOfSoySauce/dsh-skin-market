@@ -3,7 +3,7 @@ name:
   zh: dsh-ui-preset-enhance
   en: dsh-ui-preset-enhance
 author: lssyd20070106
-description: "Third-party DSH WebUI enhancement plugin: custom backgrounds, theme colors, prompt presets, token/context visibility, and manual compact."
+description: 简体中文 · English · 小白安装手册
 repo: https://github.com/lssyd20070106/dsh-ui-preset-enhance
 package: dsh-ui-preset-enhance
 rowId: dsh-ui-preset-enhance
@@ -45,6 +45,9 @@ license:
 featuredRank: 42
 starsSnapshot: 7
 releaseUpdatedAt: 2026-08-16T13:47:45.102Z
-metadataUpdatedAt: 2026-08-18T15:39:35.097Z
+metadataUpdatedAt: 2026-08-20T05:13:31.406Z
 starsUpdatedAt: 2026-08-18T15:39:35.097Z
-updatedAt: 2026-08-18T15:39:35.097Z
+updatedAt: 2026-08-20T05:13:31.406Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/lssyd20070106__dsh-ui-preset-enhance/36a18e24340677cf3c7a4771c861b9b931360e1e/b7bc18eb093a.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/lssyd20070106__dsh-ui-preset-enhance/36a18e24340677cf3c7a4771c861b9b931360e1e/6f50d463e0f0.png

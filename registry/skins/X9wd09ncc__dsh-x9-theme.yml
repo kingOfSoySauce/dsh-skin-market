@@ -9,15 +9,15 @@ package: dsh-x9-theme
 rowId: ui-x9-theme
 category: theme
 tags:
-- wallpaper
-- glass
-- pastel
-- motion
-- token-theme
-- light-dark
+  - wallpaper
+  - glass
+  - pastel
+  - motion
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:X9wd09ncc/dsh-x9-theme#9af49294ab82a3ca1e6c5ab9df46179a5bd9489b
   version: 9.3.0
@@ -25,9 +25,9 @@ install:
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/x9wd09ncc.dsh-x9-theme
+  - https://opengraph.githubassets.com/placeholder/x9wd09ncc.dsh-x9-theme
 review:
   compatibility: unverified
   preview: repository-card
@@ -41,13 +41,13 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 96
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-18 15:43:45.074000+00:00
-metadataUpdatedAt: 2026-08-18 15:43:45.074000+00:00
+metadataUpdatedAt: 2026-08-20T05:09:00.468Z
 starsUpdatedAt: 2026-08-16 13:54:32.014000+00:00
-updatedAt: 2026-08-18 15:43:45.074000+00:00
+updatedAt: 2026-08-20T05:09:00.468Z

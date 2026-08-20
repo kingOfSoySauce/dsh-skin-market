@@ -16,14 +16,18 @@ tags:
 modes:
   - dark
 install:
-  target: github:Rainpomelo/deepseek-harness-liquid-glass-theme#ef83b8e14733fa51c0fb3ab516649761ff97e327
-  version: 1.0.0
-  commit: ef83b8e14733fa51c0fb3ab516649761ff97e327
+  target: github:Rainpomelo/deepseek-harness-liquid-glass-theme#0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912
+  version: 2.0.0
+  commit: 0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912
 compatibility:
   dsh: ^0.1.0-rc.5
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/docs/images/live_wallpaper_demo.gif
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/docs/images/desktop_main_preview.png
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/docs/images/desktop_modal_preview.png
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/docs/images/settings_preview.png
   - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/ef83b8e14733fa51c0fb3ab516649761ff97e327/docs/images/live_wallpaper_demo.gif
   - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/ef83b8e14733fa51c0fb3ab516649761ff97e327/docs/images/desktop_main_preview.png
   - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/ef83b8e14733fa51c0fb3ab516649761ff97e327/docs/images/desktop_modal_preview.png
@@ -46,8 +50,12 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 206
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-19T04:38:10.095Z
-metadataUpdatedAt: 2026-08-19T04:38:10.095Z
-starsUpdatedAt: 2026-08-19T04:38:10.095Z
-updatedAt: 2026-08-19T04:38:10.095Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-20T05:07:47.140Z
+metadataUpdatedAt: 2026-08-20T05:13:02.822Z
+starsUpdatedAt: 2026-08-20T05:07:47.140Z
+updatedAt: 2026-08-20T05:13:02.822Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Rainpomelo__deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/21276de29683.gif
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Rainpomelo__deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/43ce628c5bb0.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Rainpomelo__deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/228e3f914bf9.png

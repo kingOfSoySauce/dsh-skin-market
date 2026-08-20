@@ -3,7 +3,7 @@ name:
   zh: dsh-valley-pixel-skin
   en: dsh-valley-pixel-skin
 author: EachSheep
-description: A cozy farm pixel skin for DeepSeek Harness Desktop and Web UI.
+description: 给 DSH Desktop 和 Web UI 用的田园像素皮肤。春日农场铺在背景里，侧栏改成木质面板，主要工作区使用羊皮纸色半透明表面；默认增加 7px 背景模糊，让景色能看见，正文仍然清楚。
 repo: https://github.com/EachSheep/dsh-valley-pixel-skin
 package: dsh-client-ui-skin-valley-spring
 rowId: ui-skin-valley-spring
@@ -17,14 +17,15 @@ modes:
   - light
   - dark
 install:
-  target: github:EachSheep/dsh-valley-pixel-skin#e746c941ffba2dd11ead96b50bc8c2964e9fef8b
+  target: github:EachSheep/dsh-valley-pixel-skin#f6f4f7b0adb3b52620ceb0b7ea419d80b969b588
   version: 0.1.0
-  commit: e746c941ffba2dd11ead96b50bc8c2964e9fef8b
+  commit: f6f4f7b0adb3b52620ceb0b7ea419d80b969b588
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/EachSheep/dsh-valley-pixel-skin/f6f4f7b0adb3b52620ceb0b7ea419d80b969b588/preview/valley-spring-main.png
   - https://raw.githubusercontent.com/EachSheep/dsh-valley-pixel-skin/e746c941ffba2dd11ead96b50bc8c2964e9fef8b/preview/valley-spring-main.png
 review:
   compatibility: verified
@@ -44,7 +45,9 @@ license:
   commercialUse: true
 featuredRank: 175
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:44:34.423Z
-metadataUpdatedAt: 2026-08-18T15:44:34.423Z
+releaseUpdatedAt: 2026-08-20T05:09:33.514Z
+metadataUpdatedAt: 2026-08-20T05:12:48.261Z
 starsUpdatedAt: 2026-08-18T15:44:34.423Z
-updatedAt: 2026-08-18T15:44:34.423Z
+updatedAt: 2026-08-20T05:12:48.261Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/EachSheep__dsh-valley-pixel-skin/f6f4f7b0adb3b52620ceb0b7ea419d80b969b588/b7c51dd8c7b2.png

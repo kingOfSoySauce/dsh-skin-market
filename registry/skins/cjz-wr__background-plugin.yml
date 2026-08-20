@@ -1,0 +1,56 @@
+id: cjz-wr.background-plugin
+name:
+  zh: background-plugin
+  en: background-plugin
+author: cjz-wr
+description: English | 中文
+repo: https://github.com/cjz-wr/background-plugin
+package: dsh-background
+rowId: ui-background
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:cjz-wr/background-plugin#1d3a6d063992cc74c60e03d65202d6615ab73ec4
+  version: 0.1.0
+  commit: 1d3a6d063992cc74c60e03d65202d6615ab73ec4
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/cjz-wr/background-plugin/1d3a6d063992cc74c60e03d65202d6615ab73ec4/image1.png
+  - https://raw.githubusercontent.com/cjz-wr/background-plugin/1d3a6d063992cc74c60e03d65202d6615ab73ec4/image.png
+  - https://raw.githubusercontent.com/cjz-wr/background-plugin/1d3a6d063992cc74c60e03d65202d6615ab73ec4/image2.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1005
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-20T05:08:05.437Z
+metadataUpdatedAt: 2026-08-20T05:13:17.125Z
+starsUpdatedAt: 2026-08-20T05:08:05.437Z
+updatedAt: 2026-08-20T05:13:17.125Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/cjz-wr__background-plugin/1d3a6d063992cc74c60e03d65202d6615ab73ec4/1a50651bdde0.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/cjz-wr__background-plugin/1d3a6d063992cc74c60e03d65202d6615ab73ec4/5f8ca6fb9ced.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/cjz-wr__background-plugin/1d3a6d063992cc74c60e03d65202d6615ab73ec4/02c4e07d7586.png

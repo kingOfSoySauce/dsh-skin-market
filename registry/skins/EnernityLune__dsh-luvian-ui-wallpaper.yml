@@ -1,0 +1,54 @@
+id: enernitylune.dsh-luvian-ui-wallpaper
+name:
+  zh: dsh-luvian-ui-wallpaper
+  en: dsh-luvian-ui-wallpaper
+author: EnernityLune
+description: DeepSeek Harness Web UI 的客户端皮肤插件（品牌：弗糯糯 / nuonuo）。给侧栏、中区、输入卡、主页标题、聊天区换肤，中区循环播放静音视频壁纸。
+repo: https://github.com/EnernityLune/dsh-luvian-ui-wallpaper
+package: "@luvian/dsh-ui-wallpaper"
+rowId: luvian-wallpaper
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:EnernityLune/dsh-luvian-ui-wallpaper#fac6911fcfc870dbab861fcd1c9005facf9c1fa0
+  version: 0.0.1
+  commit: fac6911fcfc870dbab861fcd1c9005facf9c1fa0
+compatibility:
+  dsh: 0.1.0-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/EnernityLune/dsh-luvian-ui-wallpaper/fac6911fcfc870dbab861fcd1c9005facf9c1fa0/docs/screenshots/home.jpg
+  - https://raw.githubusercontent.com/EnernityLune/dsh-luvian-ui-wallpaper/fac6911fcfc870dbab861fcd1c9005facf9c1fa0/docs/screenshots/chat.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1011
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-20T05:09:34.405Z
+metadataUpdatedAt: 2026-08-20T05:12:48.462Z
+starsUpdatedAt: 2026-08-20T05:09:34.405Z
+updatedAt: 2026-08-20T05:12:48.462Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/EnernityLune__dsh-luvian-ui-wallpaper/fac6911fcfc870dbab861fcd1c9005facf9c1fa0/5f85eb72010b.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/EnernityLune__dsh-luvian-ui-wallpaper/fac6911fcfc870dbab861fcd1c9005facf9c1fa0/9808e1f0e281.jpg

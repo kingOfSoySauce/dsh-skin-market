@@ -9,10 +9,10 @@ package: dsh-oh-my-theme
 rowId: oh-my-theme
 category: theme
 tags:
-- token-theme
-- light-dark
+  - token-theme
+  - light-dark
 modes:
-- dark
+  - dark
 install:
   target: github:zhxqc/dsh-oh-my-theme#6dbea1ac6131abccea755551eb294a8cc4805786
   version: 0.6.0
@@ -20,13 +20,13 @@ install:
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
-  - web
+    - web
 screenshots:
-- https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/setting.png
-- https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/at.png
-- https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/slider-icon.png
-- https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/file-sys.png
-- https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/md-preview.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/setting.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/at.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/slider-icon.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/file-sys.png
+  - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/md-preview.png
 review:
   compatibility: verified
   preview: verified
@@ -44,8 +44,12 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 10
-starsSnapshot: 4
+starsSnapshot: 6
 releaseUpdatedAt: 2026-08-18 15:40:25.196000+00:00
-metadataUpdatedAt: 2026-08-18 15:40:25.196000+00:00
-starsUpdatedAt: 2026-08-18 15:40:25.196000+00:00
-updatedAt: 2026-08-18 15:40:25.196000+00:00
+metadataUpdatedAt: 2026-08-20T05:13:50.115Z
+starsUpdatedAt: 2026-08-20T05:06:53.867Z
+updatedAt: 2026-08-20T05:13:50.115Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/zhxqc__dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/3c7e8dd21f9b.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/zhxqc__dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/0c248b74c981.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/zhxqc__dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/ce9449df5314.png

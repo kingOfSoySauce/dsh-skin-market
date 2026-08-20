@@ -9,10 +9,10 @@ package: dafy-whale-theme
 rowId: dafy-whale-theme
 category: theme
 tags:
-- token-theme
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:DViridescent/dafy-whale-theme#99e8c571c40eee8d2e0599af8eddfcbf4f47fc89
   version: 1.2.0
@@ -20,9 +20,9 @@ install:
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots:
-- https://raw.githubusercontent.com/DViridescent/dafy-whale-theme/99e8c571c40eee8d2e0599af8eddfcbf4f47fc89/preview.png
+  - https://raw.githubusercontent.com/DViridescent/dafy-whale-theme/99e8c571c40eee8d2e0599af8eddfcbf4f47fc89/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -36,13 +36,15 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 43
 starsSnapshot: 7
 releaseUpdatedAt: 2026-08-16 13:47:59.806000+00:00
-metadataUpdatedAt: 2026-08-19 10:18:12.746000+00:00
+metadataUpdatedAt: 2026-08-20T05:12:47.607Z
 starsUpdatedAt: 2026-08-18 15:39:32.420000+00:00
-updatedAt: 2026-08-19 10:18:12.746000+00:00
+updatedAt: 2026-08-20T05:12:47.607Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/DViridescent__dafy-whale-theme/99e8c571c40eee8d2e0599af8eddfcbf4f47fc89/7794c6478864.png

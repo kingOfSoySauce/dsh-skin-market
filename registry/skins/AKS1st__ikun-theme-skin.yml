@@ -25,6 +25,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -45,12 +49,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 33
-starsSnapshot: 3
+starsSnapshot: 6
 releaseUpdatedAt: 2026-08-16T12:50:27.463Z
-metadataUpdatedAt: 2026-08-19T08:56:52.443Z
-starsUpdatedAt: 2026-08-18T15:40:30.181Z
-updatedAt: 2026-08-19T08:56:52.443Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AKS1st__ikun-theme-skin/c0e59e61332a5e3317365848f73240308d9d9345/settings.png
+metadataUpdatedAt: 2026-08-20T05:06:37.175Z
+starsUpdatedAt: 2026-08-20T05:06:37.175Z
+updatedAt: 2026-08-20T05:06:37.175Z

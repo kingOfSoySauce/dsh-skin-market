@@ -9,12 +9,12 @@ package: dsh-naiwa-theme
 rowId: naiwa-theme
 category: theme
 tags:
-- wallpaper
-- motion
-- token-theme
+  - wallpaper
+  - motion
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:DevourerM/dsh-naiwa-theme#e25421d9247aceecdc97852091991708a5897df0
   version: 0.5.0
@@ -23,7 +23,10 @@ install:
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
-  - web
+    - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/DevourerM__dsh-naiwa-theme/e25421d9247aceecdc97852091991708a5897df0/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/DevourerM__dsh-naiwa-theme/e25421d9247aceecdc97852091991708a5897df0/conversation.png
 screenshots: []
 review:
   compatibility: verified
@@ -38,16 +41,13 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 62
-starsSnapshot: 3
+starsSnapshot: 4
 releaseUpdatedAt: 2026-08-18 15:40:37.435000+00:00
-metadataUpdatedAt: '2026-08-19T08:57:47.162687Z'
-starsUpdatedAt: 2026-08-18 15:40:37.435000+00:00
-updatedAt: '2026-08-19T08:57:47.162687Z'
-marketScreenshots:
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/DevourerM__dsh-naiwa-theme/e25421d9247aceecdc97852091991708a5897df0/home.png
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/DevourerM__dsh-naiwa-theme/e25421d9247aceecdc97852091991708a5897df0/conversation.png
+metadataUpdatedAt: 2026-08-20T05:06:56.599Z
+starsUpdatedAt: 2026-08-20T05:06:56.599Z
+updatedAt: 2026-08-20T05:06:56.599Z

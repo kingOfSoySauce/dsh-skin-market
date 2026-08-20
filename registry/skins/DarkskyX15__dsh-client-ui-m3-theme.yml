@@ -3,21 +3,18 @@ name:
   zh: dsh-client-ui-m3-theme
   en: dsh-client-ui-m3-theme
 author: DarkskyX15
-description: 'Material 3 theme plugin for DeepSeek Harness: derives the full --dsw-*
-  color token set from one primary color, with separate light/dark palettes (per-mode
-  chroma, fixed contrast surfaces), plus a settings panel with color picker, presets
-  and live preview.'
+description: DeepSeek Harness 的 Material 3 主题插件（双面包）：由单一主色推导整套 --dsw- color token，亮/暗模式各自成板，附带设置面板用于启用主题与选色。
 repo: https://github.com/DarkskyX15/dsh-client-ui-m3-theme
 package: dsh-client-ui-m3-theme
 rowId: ui-m3-theme
 category: theme
 tags:
-- retro
-- token-theme
-- light-dark
+  - retro
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:DarkskyX15/dsh-client-ui-m3-theme#5b167b8e1b544aa6224c1bb32bbb4d9a149e5f34
   version: 0.2.0
@@ -25,9 +22,9 @@ install:
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/darkskyx15.dsh-client-ui-m3-theme
+  - https://opengraph.githubassets.com/placeholder/darkskyx15.dsh-client-ui-m3-theme
 review:
   compatibility: verified
   preview: repository-card
@@ -41,14 +38,14 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-  - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 78
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-16 13:52:11.206000+00:00
-metadataUpdatedAt: 2026-08-18 15:42:30.203000+00:00
+metadataUpdatedAt: 2026-08-20T05:08:07.490Z
 starsUpdatedAt: 2026-08-16 13:52:11.206000+00:00
-updatedAt: 2026-08-18 15:42:30.203000+00:00
+updatedAt: 2026-08-20T05:08:07.490Z

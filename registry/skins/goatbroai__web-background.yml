@@ -1,0 +1,51 @@
+id: goatbroai.web-background
+name:
+  zh: web-background
+  en: web-background
+author: goatbroai
+description: "- 在 设置 → 通用 → 网页背景 中切换：无、纯色、图片。 - 纯色模式支持颜色选择器。 - 图片模式使用本地上传图片（自动压缩为 data URL）。 - 支持 0–100% 背景不透明度。 - 支持一键恢复默认背景。 - 设置保存在浏览器 localStorage，刷新后自动恢复。 - 多个标签页之间自动同步背景设置。"
+repo: https://github.com/goatbroai/web-background
+package: web-background
+rowId: web-background
+category: theme
+tags:
+  - wallpaper
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:goatbroai/web-background#7cd751575f590c509c9c7545dbfd48d983aa3640
+  version: 0.1.0
+  commit: 7cd751575f590c509c9c7545dbfd48d983aa3640
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/goatbroai/web-background/7cd751575f590c509c9c7545dbfd48d983aa3640/cover1.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1012
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-20T05:09:40.396Z
+metadataUpdatedAt: 2026-08-20T05:13:24.011Z
+starsUpdatedAt: 2026-08-20T05:09:40.396Z
+updatedAt: 2026-08-20T05:13:24.011Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/goatbroai__web-background/7cd751575f590c509c9c7545dbfd48d983aa3640/cd5bc8509f7e.png

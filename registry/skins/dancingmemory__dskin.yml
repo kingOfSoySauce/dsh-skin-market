@@ -15,24 +15,27 @@ modes:
   - light
   - dark
 install:
-  target: github:dancingmemory/dskin#acee0ab04c5257cce7f2045c8fe2f62926ee54a6
-  version: 1.0.14
-  commit: acee0ab04c5257cce7f2045c8fe2f62926ee54a6
-  allowBuild: dskin@https://codeload.github.com/dancingmemory/dskin/tar.gz/acee0ab04c5257cce7f2045c8fe2f62926ee54a6
+  target: github:dancingmemory/dskin#9ec8661b49bdf1a94250dcee9710cec22162a865
+  version: 1.0.15
+  commit: 9ec8661b49bdf1a94250dcee9710cec22162a865
+  allowBuild: dskin@https://codeload.github.com/dancingmemory/dskin/tar.gz/9ec8661b49bdf1a94250dcee9710cec22162a865
 compatibility:
   dsh: unverified
   platform:
     - web
 marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dancingmemory__dskin/f24cf34bd21d23845a8b9bdaf3dbf46d01a952ed/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dancingmemory__dskin/f24cf34bd21d23845a8b9bdaf3dbf46d01a952ed/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dancingmemory__dskin/f24cf34bd21d23845a8b9bdaf3dbf46d01a952ed/settings.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/dancingmemory__dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/803075b9acef.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/dancingmemory__dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/b150c6915f94.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/dancingmemory__dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/c62c291ee287.png
 screenshots:
+  - https://raw.githubusercontent.com/dancingmemory/dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/assets/banner.jpg
+  - https://raw.githubusercontent.com/dancingmemory/dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/assets/shot-bigorange.png
+  - https://raw.githubusercontent.com/dancingmemory/dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/assets/shot-white.png
+  - https://raw.githubusercontent.com/dancingmemory/dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/assets/shot-black.png
+  - https://raw.githubusercontent.com/dancingmemory/dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/assets/shot-tuxedo.png
   - https://raw.githubusercontent.com/dancingmemory/dskin/acee0ab04c5257cce7f2045c8fe2f62926ee54a6/assets/banner.jpg
   - https://raw.githubusercontent.com/dancingmemory/dskin/acee0ab04c5257cce7f2045c8fe2f62926ee54a6/assets/shot-bigorange.png
   - https://raw.githubusercontent.com/dancingmemory/dskin/acee0ab04c5257cce7f2045c8fe2f62926ee54a6/assets/shot-white.png
-  - https://raw.githubusercontent.com/dancingmemory/dskin/acee0ab04c5257cce7f2045c8fe2f62926ee54a6/assets/shot-black.png
-  - https://raw.githubusercontent.com/dancingmemory/dskin/acee0ab04c5257cce7f2045c8fe2f62926ee54a6/assets/shot-tuxedo.png
 review:
   compatibility: unverified
   preview: verified
@@ -52,7 +55,7 @@ license:
   commercialUse: true
 featuredRank: 38
 starsSnapshot: 7
-releaseUpdatedAt: 2026-08-18T15:39:30.818Z
-metadataUpdatedAt: 2026-08-18T15:39:30.818Z
+releaseUpdatedAt: 2026-08-20T05:06:24.008Z
+metadataUpdatedAt: 2026-08-20T05:13:21.524Z
 starsUpdatedAt: 2026-08-18T15:39:30.818Z
-updatedAt: 2026-08-18T15:39:30.818Z
+updatedAt: 2026-08-20T05:13:21.524Z

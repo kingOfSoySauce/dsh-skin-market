@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: 'github:wensincai/dsh-skin-rotator#a04cdc926dec980ef946731318d74d4e44167dac'
+  target: github:wensincai/dsh-skin-rotator#a04cdc926dec980ef946731318d74d4e44167dac
   version: 0.1.1
-  commit: 'a04cdc926dec980ef946731318d74d4e44167dac'
+  commit: a04cdc926dec980ef946731318d74d4e44167dac
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -34,7 +34,9 @@ license:
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: '2026-08-19T04:08:02.180Z'
-metadataUpdatedAt: '2026-08-19T04:08:02.180Z'
-starsUpdatedAt: '2026-08-19T04:08:02.180Z'
-updatedAt: '2026-08-19T04:08:02.180Z'
+releaseUpdatedAt: 2026-08-19T04:08:02.180Z
+metadataUpdatedAt: 2026-08-20T05:13:43.180Z
+starsUpdatedAt: 2026-08-19T04:08:02.180Z
+updatedAt: 2026-08-20T05:13:43.180Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/wensincai__dsh-skin-rotator/a04cdc926dec980ef946731318d74d4e44167dac/65c31dda24b5.png

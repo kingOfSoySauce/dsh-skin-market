@@ -17,14 +17,15 @@ modes:
   - light
   - dark
 install:
-  target: github:chouxiaohuai/uiskin-theme#c049c384087a797689d0d82e79bb047b9e4236f4
+  target: github:chouxiaohuai/uiskin-theme#50f6ee04073d7609ebaffaa563ebba3487c9a2d7
   version: 1.0.0
-  commit: c049c384087a797689d0d82e79bb047b9e4236f4
+  commit: 50f6ee04073d7609ebaffaa563ebba3487c9a2d7
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/50f6ee04073d7609ebaffaa563ebba3487c9a2d7/assets/preview.jpg
   - https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/c049c384087a797689d0d82e79bb047b9e4236f4/assets/preview.jpg
 review:
   compatibility: unverified
@@ -45,7 +46,10 @@ license:
   commercialUse: false
 featuredRank: 159
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:42:23.724Z
-metadataUpdatedAt: 2026-08-18T15:42:23.724Z
+releaseUpdatedAt: 2026-08-20T05:08:04.519Z
+metadataUpdatedAt: 2026-08-20T05:13:16.536Z
 starsUpdatedAt: 2026-08-18T15:42:23.724Z
-updatedAt: 2026-08-18T15:42:23.724Z
+updatedAt: 2026-08-20T05:13:16.536Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/chouxiaohuai__uiskin-theme/50f6ee04073d7609ebaffaa563ebba3487c9a2d7/667a8d6a1eca.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/chouxiaohuai__uiskin-theme/50f6ee04073d7609ebaffaa563ebba3487c9a2d7/18ecf8a1a2fa.jpg

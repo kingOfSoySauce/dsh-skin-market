@@ -3,30 +3,30 @@ name:
   zh: dsh-theme-ti
   en: dsh-theme-ti
 author: longyu065
-description: dsh-theme-ti
+description: English · 中文
 repo: https://github.com/longyu065/dsh-theme-ti
-package: '@dsh-theme/ti'
+package: "@dsh-theme/ti"
 rowId: theme-ti
 category: theme
 tags:
-- wallpaper
-- glass
-- retro
-- token-theme
-- light-dark
+  - wallpaper
+  - glass
+  - retro
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
-  target: github:longyu065/dsh-theme-ti#b6b54db83aadbf8d67f3482f3b864e67f98bf73b
+  target: github:longyu065/dsh-theme-ti#62ae2e761f045387617e28828e4b533626b3156e
   version: 1.0.0
-  commit: b6b54db83aadbf8d67f3482f3b864e67f98bf73b
+  commit: 62ae2e761f045387617e28828e4b533626b3156e
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/longyu065.dsh-theme-ti
+  - https://opengraph.githubassets.com/placeholder/longyu065.dsh-theme-ti
 review:
   compatibility: unverified
   preview: repository-card
@@ -40,14 +40,14 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 84
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18 15:43:04.400000+00:00
-metadataUpdatedAt: 2026-08-18 15:43:04.400000+00:00
+releaseUpdatedAt: 2026-08-20T05:08:31.927Z
+metadataUpdatedAt: 2026-08-20T05:08:31.927Z
 starsUpdatedAt: 2026-08-16 13:53:00.319000+00:00
-updatedAt: 2026-08-18 15:43:04.400000+00:00
+updatedAt: 2026-08-20T05:08:31.927Z

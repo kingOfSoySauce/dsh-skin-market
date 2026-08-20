@@ -16,14 +16,15 @@ modes:
   - light
   - dark
 install:
-  target: github:lesliechowsh/dsh-weniger-theme#f64905000fd727604fe366cd001640406372ea48
-  version: 0.1.2
-  commit: f64905000fd727604fe366cd001640406372ea48
+  target: github:lesliechowsh/dsh-weniger-theme#6b8470905c32c4af50c71258c99e550f0498096a
+  version: 0.1.3
+  commit: 6b8470905c32c4af50c71258c99e550f0498096a
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/lesliechowsh/dsh-weniger-theme/6b8470905c32c4af50c71258c99e550f0498096a/docs/screenshot-hero.png
   - https://raw.githubusercontent.com/lesliechowsh/dsh-weniger-theme/f64905000fd727604fe366cd001640406372ea48/docs/screenshot-hero.png
 review:
   compatibility: unverified
@@ -44,7 +45,9 @@ license:
   commercialUse: true
 featuredRank: 209
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-19T04:40:04.308Z
-metadataUpdatedAt: 2026-08-19T04:40:04.308Z
+releaseUpdatedAt: 2026-08-20T05:09:58.235Z
+metadataUpdatedAt: 2026-08-20T05:13:29.978Z
 starsUpdatedAt: 2026-08-19T04:40:04.308Z
-updatedAt: 2026-08-19T04:40:04.308Z
+updatedAt: 2026-08-20T05:13:29.978Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/lesliechowsh__dsh-weniger-theme/6b8470905c32c4af50c71258c99e550f0498096a/0bd7398d4d8a.png

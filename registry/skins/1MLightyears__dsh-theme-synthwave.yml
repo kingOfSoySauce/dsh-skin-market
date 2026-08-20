@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-synthwave
   en: dsh-theme-synthwave
 author: 1MLightyears
-description: A synthwave style DeepSeek Harness(dsh) theme
+description: 给 DSH（DeepSeek Harness）Web UI 用的合成波 / Synthwave 主题插件。
 repo: https://github.com/1MLightyears/dsh-theme-synthwave
 package: "@1mlightyears/dsh-theme-synthwave"
 rowId: theme-synthwave
@@ -48,6 +48,9 @@ license:
 featuredRank: 167
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-18T15:44:00.135Z
-metadataUpdatedAt: 2026-08-18T15:44:00.135Z
+metadataUpdatedAt: 2026-08-20T05:12:43.529Z
 starsUpdatedAt: 2026-08-18T15:44:00.135Z
-updatedAt: 2026-08-18T15:44:00.135Z
+updatedAt: 2026-08-20T05:12:43.529Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/1MLightyears__dsh-theme-synthwave/f418fcb15674638defd4a4793e5f530346a8c25e/de3891172afb.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/1MLightyears__dsh-theme-synthwave/f418fcb15674638defd4a4793e5f530346a8c25e/ceac5d4e03e6.png

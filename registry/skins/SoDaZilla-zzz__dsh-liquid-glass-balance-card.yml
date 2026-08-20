@@ -17,36 +17,40 @@ modes:
   - light
   - dark
 install:
-  target: github:SoDaZilla-zzz/dsh-liquid-glass-balance-card#b3a0dd6525f86d8fb2db53cfb71793ce2494587e
-  version: 0.1.1
-  commit: b3a0dd6525f86d8fb2db53cfb71793ce2494587e
+  target: github:SoDaZilla-zzz/dsh-liquid-glass-balance-card#3fbca87bf6d68af66f1669c592bae1e6e6ab4463
+  version: 0.2.0
+  commit: 3fbca87bf6d68af66f1669c592bae1e6e6ab4463
 compatibility:
-  dsh: unverified
+  dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card/3fbca87bf6d68af66f1669c592bae1e6e6ab4463/docs/cover.jpg
+  - https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card/3fbca87bf6d68af66f1669c592bae1e6e6ab4463/docs/demo.gif
   - https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card/b3a0dd6525f86d8fb2db53cfb71793ce2494587e/docs/cover.jpg
   - https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card/b3a0dd6525f86d8fb2db53cfb71793ce2494587e/docs/demo.gif
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 147
 starsSnapshot: 5
-releaseUpdatedAt: 2026-08-18T15:40:22.365Z
-metadataUpdatedAt: 2026-08-18T15:40:22.365Z
+releaseUpdatedAt: 2026-08-20T05:06:48.636Z
+metadataUpdatedAt: 2026-08-20T05:13:06.443Z
 starsUpdatedAt: 2026-08-18T15:40:22.365Z
-updatedAt: 2026-08-18T15:40:22.365Z
+updatedAt: 2026-08-20T05:13:06.443Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/SoDaZilla-zzz__dsh-liquid-glass-balance-card/3fbca87bf6d68af66f1669c592bae1e6e6ab4463/247431a435ee.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/SoDaZilla-zzz__dsh-liquid-glass-balance-card/3fbca87bf6d68af66f1669c592bae1e6e6ab4463/41e2db6c103d.gif

@@ -3,51 +3,57 @@ name:
   zh: dsh-theme-firefly
   en: dsh-theme-firefly
 author: Liu-ZA-81
-description: dsh-theme-firefly
+description: dsh-theme-firefly · 流萤主题
 repo: https://github.com/Liu-ZA-81/dsh-theme-firefly
 package: dsh-theme-firefly
 rowId: ui-theme-firefly
 category: theme
 tags:
-- wallpaper
-- glass
-- motion
-- token-theme
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
-  target: github:Liu-ZA-81/dsh-theme-firefly#edbee7165956153e48162d095ea539627e5cb416
-  version: 0.1.0
-  commit: edbee7165956153e48162d095ea539627e5cb416
+  target: github:Liu-ZA-81/dsh-theme-firefly#7937bc94872955ea0c6eb8842fc7b388e629ed52
+  version: 0.1.1
+  commit: 7937bc94872955ea0c6eb8842fc7b388e629ed52
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/liu-za-81.dsh-theme-firefly
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/01-wallpaper.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/02-boot.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/03-firefly.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/04-music.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/05-emote.jpg
 review:
   compatibility: unverified
-  preview: repository-card
-  installation: manual-only
+  preview: verified
+  installation: verified
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
-    installation: improve
+    installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-  - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 153
-starsSnapshot: 2
-releaseUpdatedAt: 2026-08-18 15:41:41.011000+00:00
-metadataUpdatedAt: 2026-08-18 15:41:41.011000+00:00
-starsUpdatedAt: 2026-08-18 15:41:41.011000+00:00
-updatedAt: 2026-08-18 15:41:41.011000+00:00
+starsSnapshot: 6
+releaseUpdatedAt: 2026-08-20T05:06:46.763Z
+metadataUpdatedAt: 2026-08-20T05:12:57.717Z
+starsUpdatedAt: 2026-08-20T05:06:46.763Z
+updatedAt: 2026-08-20T05:12:57.717Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Liu-ZA-81__dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/b83bcbb2a11b.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Liu-ZA-81__dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/fe0cc32c7745.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Liu-ZA-81__dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/0e87cb8d22cc.jpg

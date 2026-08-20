@@ -1,0 +1,57 @@
+id: superls-x.dsh-minecraft-theme
+name:
+  zh: dsh-minecraft-theme
+  en: dsh-minecraft-theme
+author: SuperLS-X
+description: Minecraft 主题插件 for DeepSeek Harness (DSH)
+repo: https://github.com/SuperLS-X/dsh-minecraft-theme
+package: "@superls-x/dsh-minecraft-theme"
+rowId: mc-theme
+category: theme
+tags:
+  - wallpaper
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:SuperLS-X/dsh-minecraft-theme#4915a6a16b66e004142c5bde42db968c201e1beb
+  version: 0.1.2
+  commit: 4915a6a16b66e004142c5bde42db968c201e1beb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/SuperLS-X/dsh-minecraft-theme/4915a6a16b66e004142c5bde42db968c201e1beb/screenshots/theme.png
+  - https://raw.githubusercontent.com/SuperLS-X/dsh-minecraft-theme/4915a6a16b66e004142c5bde42db968c201e1beb/screenshots/texture.png
+  - https://raw.githubusercontent.com/SuperLS-X/dsh-minecraft-theme/4915a6a16b66e004142c5bde42db968c201e1beb/screenshots/music.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1008
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-20T05:08:52.643Z
+metadataUpdatedAt: 2026-08-20T05:13:07.320Z
+starsUpdatedAt: 2026-08-20T05:08:52.643Z
+updatedAt: 2026-08-20T05:13:07.320Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/SuperLS-X__dsh-minecraft-theme/4915a6a16b66e004142c5bde42db968c201e1beb/313f2e0d563e.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/SuperLS-X__dsh-minecraft-theme/4915a6a16b66e004142c5bde42db968c201e1beb/139a6fe85de3.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/SuperLS-X__dsh-minecraft-theme/4915a6a16b66e004142c5bde42db968c201e1beb/8bb9fed5dab7.png

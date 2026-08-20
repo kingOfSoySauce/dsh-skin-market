@@ -1,0 +1,53 @@
+id: chengwill45-bot.dsh-hacker-terminal-theme
+name:
+  zh: dsh-hacker-terminal-theme
+  en: dsh-hacker-terminal-theme
+author: chengwill45-bot
+description: DSH 黑客终端皮肤
+repo: https://github.com/chengwill45-bot/dsh-hacker-terminal-theme
+package: dsh-client-ui-skin-hacker-terminal
+rowId: hacker-terminal-theme
+category: theme
+tags:
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:chengwill45-bot/dsh-hacker-terminal-theme#b49094d19ee5e48323431feeea2aaadce78ea26f
+  version: 1.0.1
+  commit: b49094d19ee5e48323431feeea2aaadce78ea26f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/chengwill45-bot/dsh-hacker-terminal-theme/b49094d19ee5e48323431feeea2aaadce78ea26f/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1010
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-20T05:09:24.489Z
+metadataUpdatedAt: 2026-08-20T05:13:16.183Z
+starsUpdatedAt: 2026-08-20T05:09:24.489Z
+updatedAt: 2026-08-20T05:13:16.183Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/chengwill45-bot__dsh-hacker-terminal-theme/b49094d19ee5e48323431feeea2aaadce78ea26f/47530d42e035.png

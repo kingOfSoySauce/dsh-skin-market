@@ -1,0 +1,54 @@
+id: zhang9628.qixi-plugin
+name:
+  zh: qixi-plugin
+  en: qixi-plugin
+author: Zhang9628
+description: 七夕情人节彩蛋插件 —— 在 DeepSeek Harness 的 AI 会话界面里，藏一份只属于你的浪漫。
+repo: https://github.com/Zhang9628/qixi-plugin
+package: dsh-qixi
+rowId: qixi
+category: theme
+tags:
+  - wallpaper
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:Zhang9628/qixi-plugin#581794ac36116e7d576d9270f1996b486bf6a8aa
+  version: 0.1.0
+  commit: 581794ac36116e7d576d9270f1996b486bf6a8aa
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Zhang9628/qixi-plugin/581794ac36116e7d576d9270f1996b486bf6a8aa/assets/barrage.jpg
+  - https://raw.githubusercontent.com/Zhang9628/qixi-plugin/581794ac36116e7d576d9270f1996b486bf6a8aa/assets/card.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1002
+starsSnapshot: 4
+releaseUpdatedAt: 2026-08-20T05:07:02.223Z
+metadataUpdatedAt: 2026-08-20T05:13:12.657Z
+starsUpdatedAt: 2026-08-20T05:07:02.223Z
+updatedAt: 2026-08-20T05:13:12.657Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Zhang9628__qixi-plugin/581794ac36116e7d576d9270f1996b486bf6a8aa/e1f1b751add6.jpg
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/Zhang9628__qixi-plugin/581794ac36116e7d576d9270f1996b486bf6a8aa/54a0d22ec96e.png

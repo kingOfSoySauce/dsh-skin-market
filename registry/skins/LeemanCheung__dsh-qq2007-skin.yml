@@ -9,15 +9,15 @@ package: dsh-qq2007-skin
 rowId: qq2007-skin
 category: theme
 tags:
-- wallpaper
-- glass
-- retro
-- motion
-- token-theme
-- light-dark
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:LeemanCheung/dsh-qq2007-skin#e7c61af021dab1d387566a07d3528dc563e4f070
   version: 0.3.0
@@ -25,12 +25,12 @@ install:
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
-  - web
+    - web
 screenshots:
-- https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/docs/screenshot.png
-- https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/assets/runtime/retro-buddy-stage.webp
-- https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/assets/runtime/blue-glass-chrome.webp
-- https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/assets/runtime/retro-toolbar-icons.webp
+  - https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/docs/screenshot.png
+  - https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/assets/runtime/retro-buddy-stage.webp
+  - https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/assets/runtime/blue-glass-chrome.webp
+  - https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/assets/runtime/retro-toolbar-icons.webp
 review:
   compatibility: verified
   preview: verified
@@ -50,6 +50,10 @@ license:
 featuredRank: 14
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16 12:33:52.774000+00:00
-metadataUpdatedAt: 2026-08-18 15:40:44.117000+00:00
+metadataUpdatedAt: 2026-08-20T05:12:53.670Z
 starsUpdatedAt: 2026-08-18 15:40:44.117000+00:00
-updatedAt: 2026-08-18 15:40:44.117000+00:00
+updatedAt: 2026-08-20T05:12:53.670Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/LeemanCheung__dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/294784d41473.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/LeemanCheung__dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/c1e6cee62cac.webp
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/LeemanCheung__dsh-qq2007-skin/e7c61af021dab1d387566a07d3528dc563e4f070/53fb03f1212e.webp

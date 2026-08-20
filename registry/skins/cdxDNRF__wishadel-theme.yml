@@ -16,15 +16,17 @@ modes:
   - light
   - dark
 install:
-  target: github:cdxDNRF/wishadel-theme#ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0
+  target: github:cdxDNRF/wishadel-theme#02cb6818155dc4816e4de5824a6d6d756b0ba87b
   version: 0.6.0
-  commit: ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0
-  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0"
+  commit: 02cb6818155dc4816e4de5824a6d6d756b0ba87b
+  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/02cb6818155dc4816e4de5824a6d6d756b0ba87b"
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/02cb6818155dc4816e4de5824a6d6d756b0ba87b/docs/screenshots/conversation.png
+  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/02cb6818155dc4816e4de5824a6d6d756b0ba87b/docs/screenshots/settings.png
   - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0/docs/screenshots/conversation.png
   - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0/docs/screenshots/settings.png
 review:
@@ -45,7 +47,10 @@ license:
   commercialUse: false
 featuredRank: 99
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:44:16.761Z
-metadataUpdatedAt: 2026-08-18T15:44:16.761Z
+releaseUpdatedAt: 2026-08-20T05:09:20.825Z
+metadataUpdatedAt: 2026-08-20T05:13:15.584Z
 starsUpdatedAt: 2026-08-16T13:54:53.805Z
-updatedAt: 2026-08-18T15:44:16.761Z
+updatedAt: 2026-08-20T05:13:15.584Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/cdxDNRF__wishadel-theme/02cb6818155dc4816e4de5824a6d6d756b0ba87b/c3d7a856dc7d.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/cdxDNRF__wishadel-theme/02cb6818155dc4816e4de5824a6d6d756b0ba87b/e9aed2b9941e.png

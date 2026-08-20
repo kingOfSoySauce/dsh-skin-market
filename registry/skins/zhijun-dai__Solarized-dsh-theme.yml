@@ -5,16 +5,16 @@ name:
 author: zhijun-dai
 description: Solarized 与 Selenized 主题插件：向 DSH Web 主题运行时注册四套忠实色板。
 repo: https://github.com/zhijun-dai/Solarized-dsh-theme
-package: '@yuquexianzhou/solarized-dsh-theme'
+package: "@yuquexianzhou/solarized-dsh-theme"
 rowId: solarized
 category: theme
 tags:
-- pastel
-- token-theme
-- light-dark
+  - pastel
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:zhijun-dai/Solarized-dsh-theme#6b0614e53a4314c1705967b7e3c437b64dee64f2
   version: 0.1.1
@@ -22,9 +22,9 @@ install:
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/zhijun-dai.solarized-dsh-theme
+  - https://opengraph.githubassets.com/placeholder/zhijun-dai.solarized-dsh-theme
 review:
   compatibility: verified
   preview: repository-card
@@ -44,6 +44,6 @@ license:
 featuredRank: 12
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-16 12:32:51.434000+00:00
-metadataUpdatedAt: 2026-08-18 15:41:08.372000+00:00
+metadataUpdatedAt: 2026-08-20T05:07:21.915Z
 starsUpdatedAt: 2026-08-18 15:41:08.372000+00:00
-updatedAt: 2026-08-18 15:41:08.372000+00:00
+updatedAt: 2026-08-20T05:07:21.915Z

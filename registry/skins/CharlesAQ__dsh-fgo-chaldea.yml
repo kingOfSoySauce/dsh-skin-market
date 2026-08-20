@@ -3,21 +3,20 @@ name:
   zh: dsh-fgo-chaldea
   en: dsh-fgo-chaldea
 author: CharlesAQ
-description: 'FGO Chaldea-inspired skin pack for DeepSeek Harness Web UI: 5 themes,
-  original generated backdrops, gold trim.'
+description: FGO 迦勒底风格的 DeepSeek Harness Web UI 皮肤插件。配色层走官方 ctx.theme token API，背景是程序生成的原创星图 / 魔术回路 SVG，外加金色刻线边框，不包含任何 FGO 官方美术素材。
 repo: https://github.com/CharlesAQ/dsh-fgo-chaldea
 package: dsh-fgo-chaldea
 rowId: fgo-chaldea
 category: theme
 tags:
-- wallpaper
-- glass
-- motion
-- token-theme
-- light-dark
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:CharlesAQ/dsh-fgo-chaldea#e769eb31089880d156dc0cf9e98f1fa14bb7c5b9
   version: 0.2.1
@@ -25,9 +24,9 @@ install:
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/charlesaq.dsh-fgo-chaldea
+  - https://opengraph.githubassets.com/placeholder/charlesaq.dsh-fgo-chaldea
 review:
   compatibility: verified
   preview: repository-card
@@ -41,13 +40,13 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 100
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-16 13:54:57.394000+00:00
-metadataUpdatedAt: 2026-08-18 15:44:20.925000+00:00
+metadataUpdatedAt: 2026-08-20T05:09:23.147Z
 starsUpdatedAt: 2026-08-16 13:54:57.394000+00:00
-updatedAt: 2026-08-18 15:44:20.925000+00:00
+updatedAt: 2026-08-20T05:09:23.147Z

@@ -16,19 +16,22 @@ modes:
   - light
   - dark
 install:
-  target: github:H-table/dsh-bg-tool#403b767f84b5168ed37aa1f75304a7e324428959
+  target: github:H-table/dsh-bg-tool#409445faed5f594e646228d5c28d659998cbb1d5
   version: 1.0.0
-  commit: 403b767f84b5168ed37aa1f75304a7e324428959
+  commit: 409445faed5f594e646228d5c28d659998cbb1d5
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/409445faed5f594e646228d5c28d659998cbb1d5/assets/hero.png
+  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/409445faed5f594e646228d5c28d659998cbb1d5/assets/dsh-mermaid-original.png
+  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/409445faed5f594e646228d5c28d659998cbb1d5/assets/dsh-mermaid-general.png
+  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/409445faed5f594e646228d5c28d659998cbb1d5/assets/dsh-mermaid-portrait.png
+  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/409445faed5f594e646228d5c28d659998cbb1d5/assets/gui-bg-card.png
   - https://raw.githubusercontent.com/H-table/dsh-bg-tool/403b767f84b5168ed37aa1f75304a7e324428959/assets/hero.png
   - https://raw.githubusercontent.com/H-table/dsh-bg-tool/403b767f84b5168ed37aa1f75304a7e324428959/assets/dsh-mermaid-original.png
   - https://raw.githubusercontent.com/H-table/dsh-bg-tool/403b767f84b5168ed37aa1f75304a7e324428959/assets/dsh-mermaid-general.png
-  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/403b767f84b5168ed37aa1f75304a7e324428959/assets/dsh-mermaid-portrait.png
-  - https://raw.githubusercontent.com/H-table/dsh-bg-tool/403b767f84b5168ed37aa1f75304a7e324428959/assets/gui-bg-card.png
 review:
   compatibility: verified
   preview: verified
@@ -48,7 +51,11 @@ license:
   commercialUse: true
 featuredRank: 177
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:44:48.848Z
-metadataUpdatedAt: 2026-08-18T15:44:48.848Z
+releaseUpdatedAt: 2026-08-20T05:09:43.612Z
+metadataUpdatedAt: 2026-08-20T05:12:52.293Z
 starsUpdatedAt: 2026-08-18T15:44:48.848Z
-updatedAt: 2026-08-18T15:44:48.848Z
+updatedAt: 2026-08-20T05:12:52.293Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/H-table__dsh-bg-tool/409445faed5f594e646228d5c28d659998cbb1d5/0967c5e7c488.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/H-table__dsh-bg-tool/409445faed5f594e646228d5c28d659998cbb1d5/d9f029fd0d67.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/H-table__dsh-bg-tool/409445faed5f594e646228d5c28d659998cbb1d5/303653506893.png

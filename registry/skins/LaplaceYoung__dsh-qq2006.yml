@@ -5,16 +5,16 @@ name:
 author: LaplaceYoung
 description: DSH (DeepSeek Harness) 的 QQ2006 皮肤插件：注册 qq2006 主题、镜像 body[data-ds-skin]、全局皮肤表与完整素材
 repo: https://github.com/LaplaceYoung/dsh-qq2006
-package: '@dsh-external/dsh-qq2006'
+package: "@dsh-external/dsh-qq2006"
 rowId: ui-skin-qq2006
 category: theme
 tags:
-- retro
-- motion
-- token-theme
+  - retro
+  - motion
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:LaplaceYoung/dsh-qq2006#fa3493ceb748171728113aba1aaf606d733790a0
   version: 0.1.0
@@ -22,10 +22,10 @@ install:
 compatibility:
   dsh: ^0.0.1-rc.1
   platform:
-  - web
+    - web
 screenshots:
-- https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/assets/screenshots/qq2006-window-view.webp
-- https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/assets/screenshots/qq2006-window-chrome.webp
+  - https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/assets/screenshots/qq2006-window-view.webp
+  - https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/assets/screenshots/qq2006-window-chrome.webp
 review:
   compatibility: verified
   preview: verified
@@ -45,6 +45,9 @@ license:
 featuredRank: 40
 starsSnapshot: 18
 releaseUpdatedAt: 2026-08-16 13:47:05.463000+00:00
-metadataUpdatedAt: 2026-08-18 15:39:06.078000+00:00
+metadataUpdatedAt: 2026-08-20T05:12:53.293Z
 starsUpdatedAt: 2026-08-18 15:39:06.078000+00:00
-updatedAt: 2026-08-18 15:39:06.078000+00:00
+updatedAt: 2026-08-20T05:12:53.293Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/LaplaceYoung__dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/f185d2fa7e19.webp
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/LaplaceYoung__dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/8d4ea88b905c.webp

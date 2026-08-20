@@ -13,14 +13,15 @@ tags:
 modes:
   - light
 install:
-  target: github:linzhuoliSOC/dsh-skin-study#65c35fe23ee64a9fa8d8c2813b81a3fba8d218bf
+  target: github:linzhuoliSOC/dsh-skin-study#f37882361478ae9ac63f5d406e8f5e133df5590b
   version: 0.1.0
-  commit: 65c35fe23ee64a9fa8d8c2813b81a3fba8d218bf
+  commit: f37882361478ae9ac63f5d406e8f5e133df5590b
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/linzhuoliSOC/dsh-skin-study/f37882361478ae9ac63f5d406e8f5e133df5590b/docs/preview.png
   - https://raw.githubusercontent.com/linzhuoliSOC/dsh-skin-study/65c35fe23ee64a9fa8d8c2813b81a3fba8d218bf/docs/preview.png
 review:
   compatibility: unverified
@@ -41,7 +42,9 @@ license:
   commercialUse: true
 featuredRank: 113
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:45:19.937Z
-metadataUpdatedAt: 2026-08-18T15:45:19.937Z
+releaseUpdatedAt: 2026-08-20T05:10:02.178Z
+metadataUpdatedAt: 2026-08-20T05:13:30.603Z
 starsUpdatedAt: 2026-08-16T13:56:41.045Z
-updatedAt: 2026-08-18T15:45:19.937Z
+updatedAt: 2026-08-20T05:13:30.603Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/linzhuoliSOC__dsh-skin-study/f37882361478ae9ac63f5d406e8f5e133df5590b/3055dfc69231.png

@@ -6,7 +6,7 @@ author: smdk000
 description: 8 个皮肤家族 × 15 套明暗主题 + 设置页皮肤中心;官方 --dsw-* token 机制,一键切换、零源码改动,全部通过 WCAG AA 对比度审计。A family of 8 skins × 15 light/dark themes with a built-in skin-center switcher.
 repo: https://github.com/smdk000/dsh-skin-family
 package: dsh-skin-family
-rowId: skin-family
+rowId: dsh-skin-family
 category: theme
 tags:
   - token-theme
@@ -16,25 +16,47 @@ modes:
   - light
   - dark
 install:
-  target: github:smdk000/dsh-skin-family#4e90a84f140eff12aa38e7ff4a9c8f7b69771cab
+  target: github:smdk000/dsh-skin-family#db485bbad5e6139a64834c03a37601bcc690236b
   version: 0.1.0
-  commit: 4e90a84f140eff12aa38e7ff4a9c8f7b69771cab
+  commit: db485bbad5e6139a64834c03a37601bcc690236b
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/db485bbad5e6139a64834c03a37601bcc690236b/docs/preview-all.png
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/db485bbad5e6139a64834c03a37601bcc690236b/docs/glass-dark.png
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/db485bbad5e6139a64834c03a37601bcc690236b/docs/claude-dark.png
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/db485bbad5e6139a64834c03a37601bcc690236b/docs/matrix-dark.png
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/db485bbad5e6139a64834c03a37601bcc690236b/docs/sakura-light.png
+  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/db485bbad5e6139a64834c03a37601bcc690236b/docs/glass-light.png
   - https://raw.githubusercontent.com/smdk000/dsh-skin-family/4e90a84f140eff12aa38e7ff4a9c8f7b69771cab/docs/preview-all.png
   - https://raw.githubusercontent.com/smdk000/dsh-skin-family/4e90a84f140eff12aa38e7ff4a9c8f7b69771cab/docs/glass-dark.png
-  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/4e90a84f140eff12aa38e7ff4a9c8f7b69771cab/docs/claude-dark.png
-  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/4e90a84f140eff12aa38e7ff4a9c8f7b69771cab/docs/matrix-dark.png
-  - https://raw.githubusercontent.com/smdk000/dsh-skin-family/4e90a84f140eff12aa38e7ff4a9c8f7b69771cab/docs/sakura-light.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-19T14:25:51.000Z
-metadataUpdatedAt: 2026-08-19T14:25:51.000Z
-starsUpdatedAt: 2026-08-19T14:25:51.000Z
-updatedAt: 2026-08-19T14:25:51.000Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-20T05:10:31.316Z
+metadataUpdatedAt: 2026-08-20T05:13:38.760Z
+starsUpdatedAt: 2026-08-20T05:10:31.316Z
+updatedAt: 2026-08-20T05:13:38.760Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/smdk000__dsh-skin-family/db485bbad5e6139a64834c03a37601bcc690236b/99df02243338.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/smdk000__dsh-skin-family/db485bbad5e6139a64834c03a37601bcc690236b/5cb2a6a01e6d.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/smdk000__dsh-skin-family/db485bbad5e6139a64834c03a37601bcc690236b/90ff7f144eb1.png

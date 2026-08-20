@@ -6,37 +6,50 @@ author: CAPTAIN1275
 description: Minecraft 主题皮肤。
 repo: https://github.com/CAPTAIN1275/dsh-ui-web
 subpath: packages/skins/minecraft
-package: '@captain1275/dsh-client-ui-skin-minecraft'
+package: "@captain1275/dsh-client-ui-skin-minecraft"
 rowId: ui-skin-minecraft
 category: theme
 tags:
-- retro
-- token-theme
+  - retro
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:CAPTAIN1275/dsh-ui-web#4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56&path:packages/skins/minecraft
   version: 0.2.7
   commit: 4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56
-  allowBuild: '@captain1275/dsh-client-ui-skin-minecraft@https://codeload.github.com/CAPTAIN1275/dsh-ui-web/tar.gz/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56'
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
-  - web
+    - web
 screenshots:
-- https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/minecraft/preview/dark.png
-- https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/minecraft/preview/light.png
+  - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/minecraft/preview/dark.png
+  - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/minecraft/preview/light.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 969
-starsSnapshot: 31
-releaseUpdatedAt: '2026-08-19T11:43:01.210764Z'
-metadataUpdatedAt: '2026-08-19T11:43:01.210764Z'
-starsUpdatedAt: '2026-08-19T11:43:01.210764Z'
-updatedAt: '2026-08-19T11:43:01.210764Z'
+starsSnapshot: 32
+releaseUpdatedAt: 2026-08-20T05:05:57.834Z
+metadataUpdatedAt: 2026-08-20T05:12:46.946Z
+starsUpdatedAt: 2026-08-20T05:05:57.834Z
+updatedAt: 2026-08-20T05:12:46.946Z
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/CAPTAIN1275__dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/99827797621c.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/site/public/skin-screenshots/CAPTAIN1275__dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/04001a4694d2.png
