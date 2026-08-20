@@ -16,15 +16,17 @@ modes:
   - light
   - dark
 install:
-  target: github:cdxDNRF/wishadel-theme#02cb6818155dc4816e4de5824a6d6d756b0ba87b
+  target: github:cdxDNRF/wishadel-theme#e0b2f2f49478d97bfe8eb84d8a1f3162c266b50c
   version: 0.6.0
-  commit: 02cb6818155dc4816e4de5824a6d6d756b0ba87b
-  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/02cb6818155dc4816e4de5824a6d6d756b0ba87b"
+  commit: e0b2f2f49478d97bfe8eb84d8a1f3162c266b50c
+  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/e0b2f2f49478d97bfe8eb84d8a1f3162c266b50c"
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/e0b2f2f49478d97bfe8eb84d8a1f3162c266b50c/docs/screenshots/conversation.png
+  - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/e0b2f2f49478d97bfe8eb84d8a1f3162c266b50c/docs/screenshots/settings.png
   - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/02cb6818155dc4816e4de5824a6d6d756b0ba87b/docs/screenshots/conversation.png
   - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/02cb6818155dc4816e4de5824a6d6d756b0ba87b/docs/screenshots/settings.png
   - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0/docs/screenshots/conversation.png
@@ -47,10 +49,7 @@ license:
   commercialUse: false
 featuredRank: 99
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-20T05:09:20.825Z
-metadataUpdatedAt: 2026-08-20T06:32:40.290Z
+releaseUpdatedAt: 2026-08-20T09:59:44.463Z
+metadataUpdatedAt: 2026-08-20T09:59:44.463Z
 starsUpdatedAt: 2026-08-16T13:54:53.805Z
-updatedAt: 2026-08-20T06:32:40.290Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/cdxDNRF__wishadel-theme/02cb6818155dc4816e4de5824a6d6d756b0ba87b/c3d7a856dc7d.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/cdxDNRF__wishadel-theme/02cb6818155dc4816e4de5824a6d6d756b0ba87b/e9aed2b9941e.png
+updatedAt: 2026-08-20T09:59:44.463Z

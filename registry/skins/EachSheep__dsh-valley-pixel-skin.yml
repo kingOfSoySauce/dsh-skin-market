@@ -17,14 +17,15 @@ modes:
   - light
   - dark
 install:
-  target: github:EachSheep/dsh-valley-pixel-skin#f6f4f7b0adb3b52620ceb0b7ea419d80b969b588
+  target: github:EachSheep/dsh-valley-pixel-skin#23e0460d221a09deeb9e7fd3f7bbb438bc441b4c
   version: 0.1.0
-  commit: f6f4f7b0adb3b52620ceb0b7ea419d80b969b588
+  commit: 23e0460d221a09deeb9e7fd3f7bbb438bc441b4c
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/EachSheep/dsh-valley-pixel-skin/23e0460d221a09deeb9e7fd3f7bbb438bc441b4c/preview/valley-spring-main.png
   - https://raw.githubusercontent.com/EachSheep/dsh-valley-pixel-skin/f6f4f7b0adb3b52620ceb0b7ea419d80b969b588/preview/valley-spring-main.png
   - https://raw.githubusercontent.com/EachSheep/dsh-valley-pixel-skin/e746c941ffba2dd11ead96b50bc8c2964e9fef8b/preview/valley-spring-main.png
 review:
@@ -45,9 +46,7 @@ license:
   commercialUse: true
 featuredRank: 175
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-20T05:09:33.514Z
-metadataUpdatedAt: 2026-08-20T06:32:23.418Z
+releaseUpdatedAt: 2026-08-20T09:59:58.277Z
+metadataUpdatedAt: 2026-08-20T09:59:58.277Z
 starsUpdatedAt: 2026-08-18T15:44:34.423Z
-updatedAt: 2026-08-20T06:32:23.418Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/EachSheep__dsh-valley-pixel-skin/f6f4f7b0adb3b52620ceb0b7ea419d80b969b588/b7c51dd8c7b2.png
+updatedAt: 2026-08-20T09:59:58.277Z

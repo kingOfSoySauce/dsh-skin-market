@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:AlexYin-Tongji/dsh-ui-enhancer#045ec1f007e277c8b87bac8dad3d3afe02b95156
-  version: 0.1.0
-  commit: 045ec1f007e277c8b87bac8dad3d3afe02b95156
+  target: github:AlexYin-Tongji/dsh-ui-enhancer#85028ebd65f966a5094ccff8568433244c6fc290
+  version: 0.1.1
+  commit: 85028ebd65f966a5094ccff8568433244c6fc290
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -45,7 +45,7 @@ license:
   commercialUse: true
 featuredRank: 207
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-19T04:38:53.745Z
+releaseUpdatedAt: 2026-08-20T09:59:34.385Z
 metadataUpdatedAt: 2026-08-19T04:38:53.745Z
 starsUpdatedAt: 2026-08-19T04:38:53.745Z
-updatedAt: 2026-08-19T04:38:53.745Z
+updatedAt: 2026-08-20T09:59:34.385Z

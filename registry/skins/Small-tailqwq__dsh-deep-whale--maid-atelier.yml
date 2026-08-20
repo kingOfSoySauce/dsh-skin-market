@@ -20,9 +20,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#d0419da95e51b6300de6b1c8205ee40f7644ca23&path:maid-atelier
+  target: github:Small-tailqwq/dsh-deep-whale#0a3d03251d1e88a08de79e27fb884ed9200913ad&path:maid-atelier
   version: 0.0.1
-  commit: d0419da95e51b6300de6b1c8205ee40f7644ca23
+  commit: 0a3d03251d1e88a08de79e27fb884ed9200913ad
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -50,11 +50,8 @@ license:
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
 featuredRank: 2
-starsSnapshot: 1476
-releaseUpdatedAt: 2026-08-20T05:05:37.073Z
-metadataUpdatedAt: 2026-08-20T06:32:34.160Z
-starsUpdatedAt: 2026-08-20T06:24:30.665Z
-updatedAt: 2026-08-20T06:32:34.160Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Small-tailqwq__dsh-deep-whale/d0419da95e51b6300de6b1c8205ee40f7644ca23/23a6539529d1.webp
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Small-tailqwq__dsh-deep-whale/d0419da95e51b6300de6b1c8205ee40f7644ca23/d65aadf3ef65.webp
+starsSnapshot: 1488
+releaseUpdatedAt: 2026-08-20T09:55:20.364Z
+metadataUpdatedAt: 2026-08-20T09:55:20.364Z
+starsUpdatedAt: 2026-08-20T09:55:20.364Z
+updatedAt: 2026-08-20T09:55:20.364Z

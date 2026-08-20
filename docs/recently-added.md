@@ -292,7 +292,7 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 [EachSheep/dsh-valley-pixel-skin](https://github.com/EachSheep/dsh-valley-pixel-skin)：给 DSH Desktop 和 Web UI 用的田园像素皮肤。春日农场铺在背景里，侧栏改成木质面板，主要工作区使用羊皮纸色半透明表面；默认增加 7px 背景模糊，让景色能看见，正文仍然清楚。
 
 - 版本：`0.1.0`
-- 固定 commit：`f6f4f7b0adb3b52620ceb0b7ea419d80b969b588`
+- 固定 commit：`23e0460d221a09deeb9e7fd3f7bbb438bc441b4c`
 
 <!-- dsh-auto-entry:dac114514.dsh-theme-center -->
 ### 2026-08-20 · dsh-theme-center
@@ -324,7 +324,7 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 [cdxDNRF/wishadel-theme](https://github.com/cdxDNRF/wishadel-theme)：dsh主题维什戴尔风格
 
 - 版本：`0.6.0`
-- 固定 commit：`02cb6818155dc4816e4de5824a6d6d756b0ba87b`
+- 固定 commit：`e0b2f2f49478d97bfe8eb84d8a1f3162c266b50c`
 
 <!-- dsh-auto-entry:baihejiangnan.dsh-custom-wallpaper -->
 ### 2026-08-20 · dsh-custom-wallpaper
@@ -334,6 +334,14 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.1.0`
 - 固定 commit：`73f1f4b46ab54a88829239c0e891db3dc6c003ba`
 
+<!-- dsh-auto-entry:alexyin-tongji.dsh-ui-enhancer -->
+### 2026-08-20 · dsh-ui-enhancer
+
+[AlexYin-Tongji/dsh-ui-enhancer](https://github.com/AlexYin-Tongji/dsh-ui-enhancer)：面向 DeepSeek Harness Web 的桌面体验增强插件。它保留官方 UI 的会话和槽位契约，在其上组合成熟社区能力，并补充统一的个性化和文件引用体验。
+
+- 版本：`0.1.1`
+- 固定 commit：`85028ebd65f966a5094ccff8568433244c6fc290`
+
 <!-- dsh-auto-entry:adaning.dsh-pixel-skin -->
 ### 2026-08-20 · dsh-pixel-skin
 
@@ -341,14 +349,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.1.0`
 - 固定 commit：`cd34110195a94ca785f32e9b45d2f6e4bc685b1a`
-
-<!-- dsh-auto-entry:1mlightyears.dsh-theme-synthwave -->
-### 2026-08-20 · dsh-theme-synthwave
-
-[1MLightyears/dsh-theme-synthwave](https://github.com/1MLightyears/dsh-theme-synthwave)：给 DSH（DeepSeek Harness）Web UI 用的合成波 / Synthwave 主题插件。
-
-- 版本：`0.1.0`
-- 固定 commit：`f418fcb15674638defd4a4793e5f530346a8c25e`
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:END -->
 
 ## 2026-08-18 · dsh-endfield-ui

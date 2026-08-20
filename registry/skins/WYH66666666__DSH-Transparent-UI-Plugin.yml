@@ -17,14 +17,18 @@ modes:
   - light
   - dark
 install:
-  target: github:WYH66666666/DSH-Transparent-UI-Plugin#fa0cb1fd172a1301297727334b08d8322ee57077
+  target: github:WYH66666666/DSH-Transparent-UI-Plugin#27ebacb504f43c31c29c4b700b54f902a26da978
   version: 1.3.0
-  commit: fa0cb1fd172a1301297727334b08d8322ee57077
+  commit: 27ebacb504f43c31c29c4b700b54f902a26da978
 compatibility:
   dsh: ^0.1.0-rc.5
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/27ebacb504f43c31c29c4b700b54f902a26da978/assets/1.png
+  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/27ebacb504f43c31c29c4b700b54f902a26da978/assets/2.png
+  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/27ebacb504f43c31c29c4b700b54f902a26da978/assets/3.png
+  - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/27ebacb504f43c31c29c4b700b54f902a26da978/assets/4.png
   - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/fa0cb1fd172a1301297727334b08d8322ee57077/assets/1.png
   - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/fa0cb1fd172a1301297727334b08d8322ee57077/assets/2.png
   - https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/fa0cb1fd172a1301297727334b08d8322ee57077/assets/3.png
@@ -46,12 +50,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 37
-starsSnapshot: 334
-releaseUpdatedAt: 2026-08-18T15:38:18.212Z
-metadataUpdatedAt: 2026-08-20T06:32:36.800Z
-starsUpdatedAt: 2026-08-20T05:05:40.058Z
-updatedAt: 2026-08-20T06:32:36.800Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/WYH66666666__DSH-Transparent-UI-Plugin/fa0cb1fd172a1301297727334b08d8322ee57077/92e236a557ce.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/WYH66666666__DSH-Transparent-UI-Plugin/fa0cb1fd172a1301297727334b08d8322ee57077/0914e4e4b4ff.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/WYH66666666__DSH-Transparent-UI-Plugin/fa0cb1fd172a1301297727334b08d8322ee57077/8fdc55ae4a15.png
+starsSnapshot: 337
+releaseUpdatedAt: 2026-08-20T09:55:23.785Z
+metadataUpdatedAt: 2026-08-20T09:55:23.785Z
+starsUpdatedAt: 2026-08-20T09:55:23.785Z
+updatedAt: 2026-08-20T09:55:23.785Z

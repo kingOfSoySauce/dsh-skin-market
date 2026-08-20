@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#9fa79ccea3c95703e9d928c768e433e3b01eb448
+  target: github:webkubor/dsh-bloom-theme#96e12f2384bd6708a2c25d2a13a30aae01a9d567
   version: 0.3.6
-  commit: 9fa79ccea3c95703e9d928c768e433e3b01eb448
+  commit: 96e12f2384bd6708a2c25d2a13a30aae01a9d567
 compatibility:
   dsh: unverified
   platform:
@@ -49,11 +49,7 @@ license:
   commercialUse: true
 featuredRank: 193
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-20T05:08:55.406Z
-metadataUpdatedAt: 2026-08-20T06:32:57.764Z
+releaseUpdatedAt: 2026-08-20T09:59:12.443Z
+metadataUpdatedAt: 2026-08-20T09:59:12.443Z
 starsUpdatedAt: 2026-08-20T05:08:55.406Z
-updatedAt: 2026-08-20T06:32:57.764Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/webkubor__dsh-bloom-theme/9fa79ccea3c95703e9d928c768e433e3b01eb448/0137ac5534cf.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/webkubor__dsh-bloom-theme/9fa79ccea3c95703e9d928c768e433e3b01eb448/c24092eb6a72.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/webkubor__dsh-bloom-theme/9fa79ccea3c95703e9d928c768e433e3b01eb448/7e520c2b3667.png
+updatedAt: 2026-08-20T09:59:12.443Z

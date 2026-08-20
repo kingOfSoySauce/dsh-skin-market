@@ -19,20 +19,22 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#3d904c8e04bbe0eafe148e74341d7c81dd94572e&path:orca-link
+  target: github:Small-tailqwq/dsh-deep-whale#0a3d03251d1e88a08de79e27fb884ed9200913ad&path:orca-link
   version: 0.0.1
-  commit: 3d904c8e04bbe0eafe148e74341d7c81dd94572e
+  commit: 0a3d03251d1e88a08de79e27fb884ed9200913ad
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/0a3d03251d1e88a08de79e27fb884ed9200913ad/orca-link/preview/light.png
+  - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/0a3d03251d1e88a08de79e27fb884ed9200913ad/orca-link/preview/dark.png
   - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/3d904c8e04bbe0eafe148e74341d7c81dd94572e/orca-link/preview/light.png
   - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/3d904c8e04bbe0eafe148e74341d7c81dd94572e/orca-link/preview/dark.png
 review:
   compatibility: unverified
   preview: verified
-  installation: manual-only
+  installation: verified
 health:
   status: improvements
   checks:
@@ -42,15 +44,15 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 orca-link/README.md 中嵌入至少一张固定版本的 DSH Web 实机运行截图，方便用户直接确认皮肤效果。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
 featuredRank: 3
-starsSnapshot: 1448
-releaseUpdatedAt: 2026-08-19T13:39:10Z
-metadataUpdatedAt: 2026-08-19T15:02:45Z
-starsUpdatedAt: 2026-08-19T15:02:45Z
-updatedAt: 2026-08-19T15:02:45Z
+starsSnapshot: 1488
+releaseUpdatedAt: 2026-08-20T09:55:18.878Z
+metadataUpdatedAt: 2026-08-20T09:55:18.878Z
+starsUpdatedAt: 2026-08-20T09:55:18.878Z
+updatedAt: 2026-08-20T09:55:18.878Z
