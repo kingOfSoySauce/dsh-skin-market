@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto'
 import { mkdtempSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import type { PluginRunner } from './commands.ts'
+import type { CommandOptions, PluginRunner } from './commands.ts'
 import { commandError } from './commands.ts'
 import { loadCatalog } from './catalog.ts'
 import {
@@ -289,7 +289,7 @@ export class SkinLifecycle {
     }
   }
 
-  private async run(args: readonly string[], operation?: Operation): Promise<void> {
+  private async run(args: readonly string[], operation?: Operation, extra?: Pick<CommandOptions, 'installRecovery'>): Promise<void> {
     const controller = operation === undefined ? undefined : this.abortControllers.get(operation.id)
     if (controller?.signal.aborted === true) throw new Error('操作已取消')
     const tracker = operation === undefined ? undefined : new PnpmProgressTracker()
@@ -298,6 +298,7 @@ export class SkinLifecycle {
       signal: controller?.signal,
       onStdout: chunk => tracker?.push(chunk, operation!),
       onStderr: chunk => tracker?.push(chunk, operation!),
+      ...extra,
     })
     if (result.exitCode !== 0 || result.timedOut) throw new Error(commandError(result))
   }
@@ -345,7 +346,12 @@ export class SkinLifecycle {
       await this.prefetch(skin.install.target, operation)
       this.update(operation, 'installing')
       if (skin.install.allowBuild !== undefined) ensureBuildAllowed(this.options.profileDir, skin.install.allowBuild)
-      await this.run(['add', skin.install.target, '--prefer-offline'], operation)
+      // Desktop hosts require profile-mutating adds to cross the recoverable
+      // install boundary; attach the recovery record so the desktop runner can
+      // route through runPluginInstall.
+      await this.run(['add', skin.install.target, '--prefer-offline'], operation, {
+        installRecovery: { packageName: skin.package, packageVersion: skin.install.version, receiptId: randomUUID() },
+      })
       this.update(operation, 'validating')
       const validation = validateInstalledSkin(this.options.profileDir, skin)
       if (!validation.ok) throw new Error(validation.reason)
@@ -469,7 +475,12 @@ export class SkinLifecycle {
       await this.prefetch(skin.install.target, operation)
       this.update(operation, 'installing')
       if (skin.install.allowBuild !== undefined) ensureBuildAllowed(this.options.profileDir, skin.install.allowBuild)
-      await this.run(['add', skin.install.target, '--prefer-offline'], operation)
+      // Desktop hosts require profile-mutating adds to cross the recoverable
+      // install boundary; attach the recovery record so the desktop runner can
+      // route through runPluginInstall.
+      await this.run(['add', skin.install.target, '--prefer-offline'], operation, {
+        installRecovery: { packageName: skin.package, packageVersion: skin.install.version, receiptId: randomUUID() },
+      })
       this.update(operation, 'validating')
       const validation = validateInstalledSkin(this.options.profileDir, skin)
       if (!validation.ok || validation.version !== skin.install.version) throw new Error(validation.reason ?? 'installed version did not change to the reviewed version')

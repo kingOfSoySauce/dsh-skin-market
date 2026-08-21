@@ -14,6 +14,19 @@ export interface CommandOptions {
   env?: NodeJS.ProcessEnv
   onStdout?: (chunk: string) => void
   onStderr?: (chunk: string) => void
+  /**
+   * Recovery record for a profile-mutating `add`. Desktop hosts reject
+   * `plugin add` through the plain plugin runner ("plugin add must use the
+   * recoverable install boundary"); when present, the desktop runner routes
+   * the add through runPluginInstall with this record.
+   */
+  installRecovery?: InstallRecoveryRecord
+}
+
+export interface InstallRecoveryRecord {
+  packageName: string
+  packageVersion: string
+  receiptId: string
 }
 
 export type PluginRunner = (profile: string, args: readonly string[], options?: CommandOptions) => Promise<CommandResult>
@@ -127,12 +140,18 @@ export const runPluginCli: PluginRunner = (profile, args, options) => new Promis
   })
 })
 
+interface DesktopOperationHandle {
+  stdout: NodeJS.ReadableStream
+  stderr: NodeJS.ReadableStream
+  done: Promise<{ exitCode: number | null }>
+}
+
 export interface DesktopPnpmLike {
-  runPlugin(args: readonly string[], invokingDir: string, signal?: AbortSignal, env?: NodeJS.ProcessEnv): {
-    stdout: NodeJS.ReadableStream
-    stderr: NodeJS.ReadableStream
-    done: Promise<{ exitCode: number | null }>
-  }
+  runPlugin(args: readonly string[], invokingDir: string, signal?: AbortSignal, env?: NodeJS.ProcessEnv): DesktopOperationHandle
+  /** Packaged pnpm in the active profile; present on desktop hosts that gate `plugin add`. */
+  run?(args: readonly string[], signal?: AbortSignal): DesktopOperationHandle
+  /** Recoverable install boundary: WAL-snapshots the profile around one `add`. */
+  runPluginInstall?(args: readonly string[], invokingDir: string, recovery: InstallRecoveryRecord, signal?: AbortSignal): Promise<DesktopOperationHandle>
 }
 
 export function desktopRunner(service: DesktopPnpmLike, profileDir: string): PluginRunner {
@@ -141,7 +160,19 @@ export function desktopRunner(service: DesktopPnpmLike, profileDir: string): Plu
     let timedOut = false
     const timer = setTimeout(() => { timedOut = true; timeout.abort() }, PLUGIN_COMMAND_TIMEOUT_MS)
     const signal = options?.signal === undefined ? timeout.signal : AbortSignal.any([options.signal, timeout.signal])
-    const operation = service.runPlugin(args, profileDir, signal, normalizedEnvironment(options))
+    // Desktop hosts reject `plugin add` through runPlugin: profile-mutating
+    // installs must cross the recoverable install boundary. Adds that carry
+    // an installRecovery record use runPluginInstall; adds redirected into a
+    // temporary directory (prefetch) never touch the profile, so they run
+    // through the packaged pnpm directly.
+    let operation: DesktopOperationHandle
+    if (args[0] === 'add' && options?.installRecovery !== undefined && typeof service.runPluginInstall === 'function') {
+      operation = await service.runPluginInstall(args, profileDir, options.installRecovery, signal)
+    } else if (args[0] === 'add' && args.includes('--dir') && typeof service.run === 'function') {
+      operation = service.run(args, signal)
+    } else {
+      operation = service.runPlugin(args, profileDir, signal, normalizedEnvironment(options))
+    }
     let stdout = ''
     let stderr = ''
     operation.stdout.on('data', chunk => {
