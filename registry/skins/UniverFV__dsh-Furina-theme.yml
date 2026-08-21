@@ -20,17 +20,17 @@ modes:
   - light
   - dark
 install:
-  target: github:UniverFV/dsh-Furina-theme#018aa161452d7356bf3dfbb0f8baa517ae386ce6
+  target: github:UniverFV/dsh-Furina-theme#23a334a6d7b9dd761a6eda3f78601305b195512b
   version: 0.1.0
-  commit: 018aa161452d7356bf3dfbb0f8baa517ae386ce6
+  commit: 23a334a6d7b9dd761a6eda3f78601305b195512b
 compatibility:
   dsh: ">=0.1.0-rc.8"
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/UniverFV/dsh-Furina-theme/018aa161452d7356bf3dfbb0f8baa517ae386ce6/docs/preview/light.png
-  - https://raw.githubusercontent.com/UniverFV/dsh-Furina-theme/018aa161452d7356bf3dfbb0f8baa517ae386ce6/docs/preview/dark.png
-  - https://raw.githubusercontent.com/UniverFV/dsh-Furina-theme/018aa161452d7356bf3dfbb0f8baa517ae386ce6/docs/preview/settings.png
+  - https://raw.githubusercontent.com/UniverFV/dsh-Furina-theme/23a334a6d7b9dd761a6eda3f78601305b195512b/docs/preview/light.png
+  - https://raw.githubusercontent.com/UniverFV/dsh-Furina-theme/23a334a6d7b9dd761a6eda3f78601305b195512b/docs/preview/dark.png
+  - https://raw.githubusercontent.com/UniverFV/dsh-Furina-theme/23a334a6d7b9dd761a6eda3f78601305b195512b/docs/preview/settings.png
 review:
   compatibility: verified
   preview: verified
