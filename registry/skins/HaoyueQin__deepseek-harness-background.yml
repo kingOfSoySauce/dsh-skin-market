@@ -17,21 +17,23 @@ modes:
   - light
   - dark
 install:
-  target: github:HaoyueQin/deepseek-harness-background#eb010b42763fdbf7c913d0fadbe6dd5371b70982
+  target: github:HaoyueQin/deepseek-harness-background#0cb28382655474749b51625364d2fe8dc6c4447a
   version: 0.2.0
-  commit: eb010b42763fdbf7c913d0fadbe6dd5371b70982
-  allowBuild: deepseek-harness-background@https://codeload.github.com/HaoyueQin/deepseek-harness-background/tar.gz/eb010b42763fdbf7c913d0fadbe6dd5371b70982
+  commit: 0cb28382655474749b51625364d2fe8dc6c4447a
+  allowBuild: deepseek-harness-background@https://codeload.github.com/HaoyueQin/deepseek-harness-background/tar.gz/0cb28382655474749b51625364d2fe8dc6c4447a
 compatibility:
   dsh: ^0.1.0-rc.8
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/0cb28382655474749b51625364d2fe8dc6c4447a/docs/images/home.jpg
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/0cb28382655474749b51625364d2fe8dc6c4447a/docs/images/conversation.jpg
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/0cb28382655474749b51625364d2fe8dc6c4447a/docs/images/settings.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/docs/images/home.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/docs/images/conversation.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/docs/images/settings.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/docs/images/home.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/docs/images/conversation.jpg
-  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/c6be3dfd00ecaa8dff1026107651ba6c240107bd/docs/images/settings.jpg
 review:
   compatibility: verified
   preview: verified
@@ -51,7 +53,7 @@ license:
   commercialUse: true
 featuredRank: 1013
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-20T06:26:49.245Z
-metadataUpdatedAt: 2026-08-20T09:57:44.629Z
+releaseUpdatedAt: 2026-08-21T09:09:16.456Z
+metadataUpdatedAt: 2026-08-21T09:09:16.456Z
 starsUpdatedAt: 2026-08-20T06:26:49.245Z
-updatedAt: 2026-08-20T09:57:44.629Z
+updatedAt: 2026-08-21T09:09:16.456Z

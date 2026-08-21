@@ -1,0 +1,52 @@
+id: jerryphoenixcky.dsh-plugin-wallpaper
+name:
+  zh: dsh-plugin-wallpaper
+  en: dsh-plugin-wallpaper
+author: JerryPhoenixCKY
+description: 上传一张本地图片，按工作台宽高比裁切，把它设为 DeepSeek Harness Web 的桌面背景——全部在设置面板的专属一栏里完成。
+repo: https://github.com/JerryPhoenixCKY/dsh-plugin-wallpaper
+package: dsh-plugin-wallpaper
+rowId: wallpaper
+category: theme
+tags:
+  - wallpaper
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:JerryPhoenixCKY/dsh-plugin-wallpaper#168ab70ba342d112fa8184f91bfe35d923bb168c
+  version: 0.1.4
+  commit: 168ab70ba342d112fa8184f91bfe35d923bb168c
+  allowBuild: dsh-plugin-wallpaper@https://codeload.github.com/JerryPhoenixCKY/dsh-plugin-wallpaper/tar.gz/168ab70ba342d112fa8184f91bfe35d923bb168c
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JerryPhoenixCKY/dsh-plugin-wallpaper/168ab70ba342d112fa8184f91bfe35d923bb168c/demo/3.png
+  - https://raw.githubusercontent.com/JerryPhoenixCKY/dsh-plugin-wallpaper/168ab70ba342d112fa8184f91bfe35d923bb168c/demo/2.png
+  - https://raw.githubusercontent.com/JerryPhoenixCKY/dsh-plugin-wallpaper/168ab70ba342d112fa8184f91bfe35d923bb168c/demo/1.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1021
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-21T09:11:32.320Z
+metadataUpdatedAt: 2026-08-21T09:11:32.320Z
+starsUpdatedAt: 2026-08-21T09:11:32.320Z
+updatedAt: 2026-08-21T09:11:32.320Z

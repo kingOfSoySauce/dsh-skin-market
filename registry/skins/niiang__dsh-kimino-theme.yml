@@ -18,20 +18,22 @@ modes:
   - light
   - dark
 install:
-  target: github:niiang/dsh-kimino-theme#0a17159ecc9cf61834bac3265f5c8dab333431e9
-  version: 66.1.0
-  commit: 0a17159ecc9cf61834bac3265f5c8dab333431e9
+  target: github:niiang/dsh-kimino-theme#4c01c9701690c5e4ccfe0253225f4cba9254414f
+  version: 66.2.0
+  commit: 4c01c9701690c5e4ccfe0253225f4cba9254414f
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/4c01c9701690c5e4ccfe0253225f4cba9254414f/docs/screenshots/home-hero.png
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/4c01c9701690c5e4ccfe0253225f4cba9254414f/docs/screenshots/sidebar.png
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/4c01c9701690c5e4ccfe0253225f4cba9254414f/docs/screenshots/chat-main.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0a17159ecc9cf61834bac3265f5c8dab333431e9/docs/screenshots/home-hero.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0a17159ecc9cf61834bac3265f5c8dab333431e9/docs/screenshots/sidebar.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0a17159ecc9cf61834bac3265f5c8dab333431e9/docs/screenshots/chat-main.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/home-hero.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/sidebar.png
-  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/chat-main.png
 review:
   compatibility: unverified
   preview: verified
@@ -51,7 +53,7 @@ license:
   commercialUse: true
 featuredRank: 145
 starsSnapshot: 17
-releaseUpdatedAt: 2026-08-20T05:06:18.924Z
-metadataUpdatedAt: 2026-08-20T09:56:08.852Z
+releaseUpdatedAt: 2026-08-21T09:07:41.988Z
+metadataUpdatedAt: 2026-08-21T09:07:41.988Z
 starsUpdatedAt: 2026-08-20T06:25:18.666Z
-updatedAt: 2026-08-20T09:56:08.852Z
+updatedAt: 2026-08-21T09:07:41.988Z

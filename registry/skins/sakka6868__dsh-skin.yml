@@ -16,14 +16,16 @@ modes:
   - light
   - dark
 install:
-  target: github:sakka6868/dsh-skin#802461800cfd20c640198c82df4d23a2c996c1bc
-  version: 0.2.0
-  commit: 802461800cfd20c640198c82df4d23a2c996c1bc
+  target: github:sakka6868/dsh-skin#4629351a51d35ebfab69c061269dfa6e2678aab9
+  version: 0.3.0
+  commit: 4629351a51d35ebfab69c061269dfa6e2678aab9
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/sakka6868/dsh-skin/4629351a51d35ebfab69c061269dfa6e2678aab9/docs/preview-main.png
+  - https://raw.githubusercontent.com/sakka6868/dsh-skin/4629351a51d35ebfab69c061269dfa6e2678aab9/docs/preview-gallery.png
   - https://raw.githubusercontent.com/sakka6868/dsh-skin/802461800cfd20c640198c82df4d23a2c996c1bc/docs/preview-main.png
   - https://raw.githubusercontent.com/sakka6868/dsh-skin/802461800cfd20c640198c82df4d23a2c996c1bc/docs/preview-gallery.png
 review:
@@ -45,7 +47,7 @@ license:
   commercialUse: true
 featuredRank: 92
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16T13:53:50.782Z
-metadataUpdatedAt: 2026-08-20T09:57:53.404Z
+releaseUpdatedAt: 2026-08-21T09:09:27.656Z
+metadataUpdatedAt: 2026-08-21T09:09:27.656Z
 starsUpdatedAt: 2026-08-18T15:41:48.437Z
-updatedAt: 2026-08-20T09:57:53.404Z
+updatedAt: 2026-08-21T09:09:27.656Z

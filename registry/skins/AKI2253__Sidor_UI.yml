@@ -1,0 +1,51 @@
+id: aki2253.sidor-ui
+name:
+  zh: Sidor_UI
+  en: Sidor_UI
+author: AKI2253
+description: SidorUI · SIDOR 星野控制台皮肤
+repo: https://github.com/AKI2253/Sidor_UI
+package: sidor-ui
+rowId: sidor-ui
+category: theme
+tags:
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:AKI2253/Sidor_UI#1ce441b43be184809cfc2923e5b9c5409703f2ea
+  version: 1.0.0
+  commit: 1ce441b43be184809cfc2923e5b9c5409703f2ea
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/1ce441b43be184809cfc2923e5b9c5409703f2ea/preview/hero.png
+  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/1ce441b43be184809cfc2923e5b9c5409703f2ea/preview/setting.png
+  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/1ce441b43be184809cfc2923e5b9c5409703f2ea/preview/warning.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1016
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-21T09:09:40.431Z
+metadataUpdatedAt: 2026-08-21T09:09:40.431Z
+starsUpdatedAt: 2026-08-21T09:09:40.431Z
+updatedAt: 2026-08-21T09:09:40.431Z

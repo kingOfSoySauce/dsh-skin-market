@@ -1,0 +1,53 @@
+id: tfboy1.dsh-minecraft-ui
+name:
+  zh: dsh-minecraft-ui
+  en: dsh-minecraft-ui
+author: TFboy1
+description: "[](https://github.com/TFboy1/dsh-minecraft-ui/actions/workflows/ci.yml) [](https://www.npmjs.com/package/dsh-minecraft-ui) [](#项目介绍) [](https://threejs.org/) [](https://react.dev/) [](https://nodejs.org/)"
+repo: https://github.com/TFboy1/dsh-minecraft-ui
+package: dsh-minecraft-ui
+rowId: minecraft-ui
+category: theme
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:TFboy1/dsh-minecraft-ui#ec5313b87f8688b82421f124cc2f3887c84b3a8c
+  version: 0.3.0
+  commit: ec5313b87f8688b82421f124cc2f3887c84b3a8c
+  allowBuild: dsh-minecraft-ui@https://codeload.github.com/TFboy1/dsh-minecraft-ui/tar.gz/ec5313b87f8688b82421f124cc2f3887c84b3a8c
+compatibility:
+  dsh: ">=0.1.0-rc.8 <0.2.0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/TFboy1/dsh-minecraft-ui/ec5313b87f8688b82421f124cc2f3887c84b3a8c/docs/banner.png
+  - https://raw.githubusercontent.com/TFboy1/dsh-minecraft-ui/ec5313b87f8688b82421f124cc2f3887c84b3a8c/docs/screenshots/voxel-world.png
+  - https://raw.githubusercontent.com/TFboy1/dsh-minecraft-ui/ec5313b87f8688b82421f124cc2f3887c84b3a8c/docs/screenshots/inventory-crafting.png
+  - https://raw.githubusercontent.com/TFboy1/dsh-minecraft-ui/ec5313b87f8688b82421f124cc2f3887c84b3a8c/docs/screenshots/agent-plugin-chest.png
+  - https://raw.githubusercontent.com/TFboy1/dsh-minecraft-ui/ec5313b87f8688b82421f124cc2f3887c84b3a8c/docs/screenshots/model-chest.png
+  - https://raw.githubusercontent.com/TFboy1/dsh-minecraft-ui/ec5313b87f8688b82421f124cc2f3887c84b3a8c/docs/screenshots/reasoning-enchantment.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1023
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-21T09:12:18.274Z
+metadataUpdatedAt: 2026-08-21T09:12:18.274Z
+starsUpdatedAt: 2026-08-21T09:12:18.274Z
+updatedAt: 2026-08-21T09:12:18.274Z

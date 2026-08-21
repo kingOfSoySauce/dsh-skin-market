@@ -16,14 +16,15 @@ modes:
   - light
   - dark
 install:
-  target: github:RealHacker/dsh-theme-colorizer#7c4152c1956ff87d93d74f928f1cf3a9e60101ca
+  target: github:RealHacker/dsh-theme-colorizer#bef973bff46bb11499a7c212ccaa384a2ff60962
   version: 1.0.0
-  commit: 7c4152c1956ff87d93d74f928f1cf3a9e60101ca
+  commit: bef973bff46bb11499a7c212ccaa384a2ff60962
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/RealHacker/dsh-theme-colorizer/bef973bff46bb11499a7c212ccaa384a2ff60962/asset/dsh-color-theme.jpeg
   - https://raw.githubusercontent.com/RealHacker/dsh-theme-colorizer/7c4152c1956ff87d93d74f928f1cf3a9e60101ca/asset/dsh-color-theme.jpeg
 review:
   compatibility: unverified
@@ -44,7 +45,7 @@ license:
   commercialUse: true
 featuredRank: 117
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-18T15:41:45.407Z
-metadataUpdatedAt: 2026-08-20T09:57:51.239Z
+releaseUpdatedAt: 2026-08-21T09:09:25.811Z
+metadataUpdatedAt: 2026-08-21T09:09:25.811Z
 starsUpdatedAt: 2026-08-18T15:41:45.407Z
-updatedAt: 2026-08-20T09:57:51.239Z
+updatedAt: 2026-08-21T09:09:25.811Z

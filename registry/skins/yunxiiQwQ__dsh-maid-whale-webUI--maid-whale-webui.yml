@@ -18,14 +18,16 @@ modes:
   - light
   - dark
 install:
-  target: github:yunxiiQwQ/dsh-maid-whale-webUI#f574f151bdfde7e8569797962eb8ff6aad4b3bf1&path:maid-whale-webui
+  target: github:yunxiiQwQ/dsh-maid-whale-webUI#6ab5e7499ddf76c4fcf6d83421c08e967db1c2bc&path:maid-whale-webui
   version: 0.1.0
-  commit: f574f151bdfde7e8569797962eb8ff6aad4b3bf1
+  commit: 6ab5e7499ddf76c4fcf6d83421c08e967db1c2bc
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/6ab5e7499ddf76c4fcf6d83421c08e967db1c2bc/maid-whale-webui/preview/light.webp
+  - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/6ab5e7499ddf76c4fcf6d83421c08e967db1c2bc/maid-whale-webui/preview/dark.webp
   - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/f574f151bdfde7e8569797962eb8ff6aad4b3bf1/maid-whale-webui/preview/light.webp
   - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/f574f151bdfde7e8569797962eb8ff6aad4b3bf1/maid-whale-webui/preview/dark.webp
 review:
@@ -46,8 +48,8 @@ license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 22
-starsSnapshot: 18
-releaseUpdatedAt: 2026-08-16T12:48:35.081Z
-metadataUpdatedAt: 2026-08-20T09:56:02.381Z
-starsUpdatedAt: 2026-08-20T09:56:02.381Z
-updatedAt: 2026-08-20T09:56:02.381Z
+starsSnapshot: 19
+releaseUpdatedAt: 2026-08-21T09:07:40.090Z
+metadataUpdatedAt: 2026-08-21T09:07:40.090Z
+starsUpdatedAt: 2026-08-21T09:07:40.090Z
+updatedAt: 2026-08-21T09:07:40.090Z

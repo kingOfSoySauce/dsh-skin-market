@@ -5,7 +5,7 @@ name:
 author: nlqh7
 description: DeepSeek Harness 完整美化包：本地主题换肤（不联网）+ Wallpaper Engine 动态壁纸 + 自定义主题，一个插件搞定，设置页统一管理。
 repo: https://github.com/nlqh7/dsh-beautify
-package: "@deepseek-ai/dsh-beautify"
+package: "@nlqh/dsh-beautify"
 rowId: dsh-beautify
 category: theme
 tags:
@@ -18,36 +18,37 @@ modes:
   - light
   - dark
 install:
-  target: github:nlqh7/dsh-beautify#05eb9813cec758fb756ec8011d62218744455e5b
-  version: 0.1.0-rc.5
-  commit: 05eb9813cec758fb756ec8011d62218744455e5b
+  target: github:nlqh7/dsh-beautify#ae535903aa93121b8318a70072ee276195479d1f
+  version: 0.2.1
+  commit: ae535903aa93121b8318a70072ee276195479d1f
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://opengraph.githubassets.com/placeholder/nlqh7.dsh-beautify
+  - https://raw.githubusercontent.com/nlqh7/dsh-beautify/ae535903aa93121b8318a70072ee276195479d1f/docs/screenshots/01-three-babies.png
+  - https://raw.githubusercontent.com/nlqh7/dsh-beautify/ae535903aa93121b8318a70072ee276195479d1f/docs/screenshots/04-five-babies.png
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 184
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18 15:45:34.008000+00:00
-metadataUpdatedAt: 2026-08-20T05:10:14.303Z
-starsUpdatedAt: 2026-08-18 15:45:34.008000+00:00
-updatedAt: 2026-08-20T05:10:14.303Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-21T09:10:28.384Z
+metadataUpdatedAt: 2026-08-21T09:10:28.384Z
+starsUpdatedAt: 2026-08-21T09:10:28.384Z
+updatedAt: 2026-08-21T09:10:28.384Z

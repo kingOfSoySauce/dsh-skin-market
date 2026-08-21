@@ -1,0 +1,53 @@
+id: zaimokuza-yoshiteru.dsh-theme-library
+name:
+  zh: dsh-theme-library
+  en: dsh-theme-library
+author: zaimokuza-yoshiteru
+description: 素材来源 - Wallpaper - Black Smoke
+repo: https://github.com/zaimokuza-yoshiteru/dsh-theme-library
+package: "@zaimokuza/dsh-theme-library"
+rowId: dsh-theme-library
+category: theme
+tags:
+  - wallpaper
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:zaimokuza-yoshiteru/dsh-theme-library#bbff7b1b34226906cf116a174f8a002a126aee7e
+  version: 0.1.1
+  commit: bbff7b1b34226906cf116a174f8a002a126aee7e
+  allowBuild: "@zaimokuza/dsh-theme-library@https://codeload.github.com/zaimokuza-yoshiteru/dsh-theme-library/tar.gz/bbff7b1b34226906cf116a174f8a002a126aee7e"
+compatibility:
+  dsh: ">=0.1.0-rc.8 <0.2.0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zaimokuza-yoshiteru/dsh-theme-library/bbff7b1b34226906cf116a174f8a002a126aee7e/docs/assets/black-smoke-light.gif
+  - https://raw.githubusercontent.com/zaimokuza-yoshiteru/dsh-theme-library/bbff7b1b34226906cf116a174f8a002a126aee7e/docs/assets/black-smoke-dark.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: SEE LICENSE IN LICENSE
+  commercialUse: false
+featuredRank: 1024
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-21T09:12:38.267Z
+metadataUpdatedAt: 2026-08-21T09:12:38.267Z
+starsUpdatedAt: 2026-08-21T09:12:38.267Z
+updatedAt: 2026-08-21T09:12:38.267Z

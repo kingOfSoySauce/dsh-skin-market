@@ -15,23 +15,23 @@ modes:
   - light
   - dark
 install:
-  target: github:dancingmemory/dskin#792064e6dbb022c5f9ce3529b9cf66efba2863c1
-  version: 1.0.16
-  commit: 792064e6dbb022c5f9ce3529b9cf66efba2863c1
-  allowBuild: dskin@https://codeload.github.com/dancingmemory/dskin/tar.gz/792064e6dbb022c5f9ce3529b9cf66efba2863c1
+  target: github:dancingmemory/dskin#3ed971ae31802861a5dfd8349ba7a2fbf611a3e1
+  version: 1.0.17
+  commit: 3ed971ae31802861a5dfd8349ba7a2fbf611a3e1
+  allowBuild: dskin@https://codeload.github.com/dancingmemory/dskin/tar.gz/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/banner.jpg
+  - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/shot-bigorange.png
+  - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/shot-white.png
+  - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/shot-black.png
+  - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/shot-tuxedo.png
   - https://raw.githubusercontent.com/dancingmemory/dskin/792064e6dbb022c5f9ce3529b9cf66efba2863c1/assets/banner.jpg
   - https://raw.githubusercontent.com/dancingmemory/dskin/792064e6dbb022c5f9ce3529b9cf66efba2863c1/assets/shot-bigorange.png
   - https://raw.githubusercontent.com/dancingmemory/dskin/792064e6dbb022c5f9ce3529b9cf66efba2863c1/assets/shot-white.png
-  - https://raw.githubusercontent.com/dancingmemory/dskin/792064e6dbb022c5f9ce3529b9cf66efba2863c1/assets/shot-black.png
-  - https://raw.githubusercontent.com/dancingmemory/dskin/792064e6dbb022c5f9ce3529b9cf66efba2863c1/assets/shot-tuxedo.png
-  - https://raw.githubusercontent.com/dancingmemory/dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/assets/banner.jpg
-  - https://raw.githubusercontent.com/dancingmemory/dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/assets/shot-bigorange.png
-  - https://raw.githubusercontent.com/dancingmemory/dskin/9ec8661b49bdf1a94250dcee9710cec22162a865/assets/shot-white.png
 review:
   compatibility: unverified
   preview: verified
@@ -51,7 +51,7 @@ license:
   commercialUse: true
 featuredRank: 38
 starsSnapshot: 7
-releaseUpdatedAt: 2026-08-20T09:56:13.699Z
-metadataUpdatedAt: 2026-08-20T09:56:13.699Z
+releaseUpdatedAt: 2026-08-21T09:07:56.464Z
+metadataUpdatedAt: 2026-08-21T09:07:56.464Z
 starsUpdatedAt: 2026-08-18T15:39:30.818Z
-updatedAt: 2026-08-20T09:56:13.699Z
+updatedAt: 2026-08-21T09:07:56.464Z

@@ -1,0 +1,51 @@
+id: lengzhanbao.dsh-taffy-theme
+name:
+  zh: dsh-taffy-theme
+  en: dsh-taffy-theme
+author: lengzhanbao
+description: Taffy Live Atelier / 塔菲直播工房
+repo: https://github.com/lengzhanbao/dsh-taffy-theme
+package: "@dsh-external/dsh-taffy-theme"
+rowId: dsh-taffy-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:lengzhanbao/dsh-taffy-theme#03032aaa21190bfd31616ca0457625b0038ea448
+  version: 0.1.0
+  commit: 03032aaa21190bfd31616ca0457625b0038ea448
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/03032aaa21190bfd31616ca0457625b0038ea448/preview/light.webp
+  - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/03032aaa21190bfd31616ca0457625b0038ea448/preview/dark.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1017
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-21T09:10:13.888Z
+metadataUpdatedAt: 2026-08-21T09:10:13.888Z
+starsUpdatedAt: 2026-08-21T09:10:13.888Z
+updatedAt: 2026-08-21T09:10:13.888Z

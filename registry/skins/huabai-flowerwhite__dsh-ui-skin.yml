@@ -1,0 +1,52 @@
+id: huabai-flowerwhite.dsh-ui-skin
+name:
+  zh: dsh-ui-skin
+  en: dsh-ui-skin
+author: huabai-flowerwhite
+description: 面向 DeepSeek Harness 的 UI 皮肤插件：在 UI 下方注入壁纸 / 视频背景，并把 DSH 整个界面（含侧栏）的表面背景烘焙为半透明（毛玻璃）让皮肤透出。支持拖动裁剪缩放、历史皮肤记录与可拖动悬浮窗；自定义皮肤支持网络地址或本地文件。
+repo: https://github.com/huabai-flowerwhite/dsh-ui-skin
+package: dsh-ui-skin
+rowId: dsh-ui-skin
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:huabai-flowerwhite/dsh-ui-skin#c7c01e5fc9d205d6020078e95739c96d08a6b5ab
+  version: 1.0.0
+  commit: c7c01e5fc9d205d6020078e95739c96d08a6b5ab
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1015
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-21T09:09:17.713Z
+metadataUpdatedAt: 2026-08-21T09:09:17.713Z
+starsUpdatedAt: 2026-08-21T09:09:17.713Z
+updatedAt: 2026-08-21T09:09:17.713Z

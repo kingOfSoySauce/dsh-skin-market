@@ -17,14 +17,15 @@ modes:
   - light
   - dark
 install:
-  target: github:chouxiaohuai/uiskin-theme#50f6ee04073d7609ebaffaa563ebba3487c9a2d7
+  target: github:chouxiaohuai/uiskin-theme#ca545b30b09000fc0980d86ab58f8f360dc80792
   version: 1.0.0
-  commit: 50f6ee04073d7609ebaffaa563ebba3487c9a2d7
+  commit: ca545b30b09000fc0980d86ab58f8f360dc80792
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/ca545b30b09000fc0980d86ab58f8f360dc80792/assets/preview.jpg
   - https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/50f6ee04073d7609ebaffaa563ebba3487c9a2d7/assets/preview.jpg
   - https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/c049c384087a797689d0d82e79bb047b9e4236f4/assets/preview.jpg
 review:
@@ -46,7 +47,7 @@ license:
   commercialUse: false
 featuredRank: 159
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-20T05:08:04.519Z
-metadataUpdatedAt: 2026-08-20T09:58:11.892Z
+releaseUpdatedAt: 2026-08-21T09:09:47.572Z
+metadataUpdatedAt: 2026-08-21T09:09:47.572Z
 starsUpdatedAt: 2026-08-18T15:42:23.724Z
-updatedAt: 2026-08-20T09:58:11.892Z
+updatedAt: 2026-08-21T09:09:47.572Z

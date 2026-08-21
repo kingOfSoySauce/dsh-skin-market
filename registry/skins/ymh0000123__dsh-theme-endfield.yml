@@ -17,9 +17,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:ymh0000123/dsh-theme-endfield#48ad12921bd6d36286d67fa483472eb32d90b6ee
+  target: github:ymh0000123/dsh-theme-endfield#5d4097d52fcd4480e93f9bf520bb48f249507d50
   version: 1.0.0
-  commit: 48ad12921bd6d36286d67fa483472eb32d90b6ee
+  commit: 5d4097d52fcd4480e93f9bf520bb48f249507d50
 compatibility:
   dsh: unverified
   platform:
@@ -45,8 +45,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 154
-starsSnapshot: 7
-releaseUpdatedAt: 2026-08-18 15:42:02.669000+00:00
+starsSnapshot: 10
+releaseUpdatedAt: 2026-08-21T09:07:52.726Z
 metadataUpdatedAt: 2026-08-18 15:42:02.669000+00:00
-starsUpdatedAt: 2026-08-20T09:56:21.746Z
-updatedAt: 2026-08-20T09:56:21.746Z
+starsUpdatedAt: 2026-08-21T09:07:52.726Z
+updatedAt: 2026-08-21T09:07:52.726Z

@@ -18,38 +18,38 @@ modes:
   - light
   - dark
 install:
-  target: github:laoduu/DeepSeek-Harness-yizi-themes#377676424e0e45f919ab5e8ee54cb1ab0f96da73
-  version: 0.2.4
-  commit: 377676424e0e45f919ab5e8ee54cb1ab0f96da73
-  allowBuild: dsh-yizi-themes@https://codeload.github.com/laoduu/DeepSeek-Harness-yizi-themes/tar.gz/377676424e0e45f919ab5e8ee54cb1ab0f96da73
+  target: github:laoduu/DeepSeek-Harness-yizi-themes#60c211626eb931f76bbb3f46edc1fc8116b69e4c
+  version: 0.3.1
+  commit: 60c211626eb931f76bbb3f46edc1fc8116b69e4c
+  allowBuild: dsh-yizi-themes@https://codeload.github.com/laoduu/DeepSeek-Harness-yizi-themes/tar.gz/60c211626eb931f76bbb3f46edc1fc8116b69e4c
 compatibility:
-  dsh: unverified
+  dsh: 0.1.0-rc.8
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/60c211626eb931f76bbb3f46edc1fc8116b69e4c/assets/dsh-yizi-themes.png
   - https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/377676424e0e45f919ab5e8ee54cb1ab0f96da73/assets/dsh-yizi-themes.png
   - https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/8964dc67fd77447d450afafc134c8d7421ac6735/assets/dsh-yizi-themes.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 83
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-20T05:08:27.123Z
-metadataUpdatedAt: 2026-08-20T09:58:39.441Z
-starsUpdatedAt: 2026-08-16T13:52:49.212Z
-updatedAt: 2026-08-20T09:58:39.441Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-21T09:09:19.394Z
+metadataUpdatedAt: 2026-08-21T09:09:19.394Z
+starsUpdatedAt: 2026-08-21T09:09:19.394Z
+updatedAt: 2026-08-21T09:09:19.394Z

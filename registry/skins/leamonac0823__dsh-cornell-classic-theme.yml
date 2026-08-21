@@ -1,0 +1,49 @@
+id: leamonac0823.dsh-cornell-classic-theme
+name:
+  zh: dsh-cornell-classic-theme
+  en: dsh-cornell-classic-theme
+author: leamonac0823
+description: "- Open a conversation and enable Cornell. - Use 收起 / 展开 to temporarily maximize reading space. - Write tasks in MY NOTE. Each task supports multiline text. - Check a task to move it into the collapsed completed-items section; expand it whenever you need to edit or reopen it."
+repo: https://github.com/leamonac0823/dsh-cornell-classic-theme
+package: dsh-cornell-classic-theme
+rowId: cornell-classic-theme
+category: theme
+tags:
+  - retro
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:leamonac0823/dsh-cornell-classic-theme#4063c09c58ec4e527976ee16b99bbc65c497420e
+  version: 0.2.0
+  commit: 4063c09c58ec4e527976ee16b99bbc65c497420e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/leamonac0823/dsh-cornell-classic-theme/4063c09c58ec4e527976ee16b99bbc65c497420e/assets/cover.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1022
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-21T09:11:38.580Z
+metadataUpdatedAt: 2026-08-21T09:11:38.580Z
+starsUpdatedAt: 2026-08-21T09:11:38.580Z
+updatedAt: 2026-08-21T09:11:38.580Z

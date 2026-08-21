@@ -1,0 +1,52 @@
+id: edwardhamu.dsh-glassmorphism-theme
+name:
+  zh: dsh-glassmorphism-theme
+  en: dsh-glassmorphism-theme
+author: EdwardHamu
+description: "Open 设置 → 壁纸 to configure your background:"
+repo: https://github.com/EdwardHamu/dsh-glassmorphism-theme
+package: "@edwardhamu/dsh-glassmorphism-theme"
+rowId: dsh-glassmorphism-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:EdwardHamu/dsh-glassmorphism-theme#04a869660072fe004a466b7f442a48de7c91cf21
+  version: 0.1.2
+  commit: 04a869660072fe004a466b7f442a48de7c91cf21
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://i0.wp.com/tva1.sinaimg.cn/large/9448bbf8gy1igbaivjxl6j21du0rb1kx.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1019
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-21T09:11:16.377Z
+metadataUpdatedAt: 2026-08-21T09:11:16.377Z
+starsUpdatedAt: 2026-08-21T09:11:16.377Z
+updatedAt: 2026-08-21T09:11:16.377Z

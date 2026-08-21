@@ -17,14 +17,16 @@ modes:
   - light
   - dark
 install:
-  target: github:RevolutionLA/dsh-dream-skin#7334b77169cc3ffbfc7f052c7c883ae33b2f9446
-  version: 0.4.1
-  commit: 7334b77169cc3ffbfc7f052c7c883ae33b2f9446
+  target: github:RevolutionLA/dsh-dream-skin#516bd5c0ff62e74e34b5ac071140157973831bad
+  version: 0.4.4
+  commit: 516bd5c0ff62e74e34b5ac071140157973831bad
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/516bd5c0ff62e74e34b5ac071140157973831bad/docs/screenshots/preview.png
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/516bd5c0ff62e74e34b5ac071140157973831bad/docs/screenshots/settings.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7334b77169cc3ffbfc7f052c7c883ae33b2f9446/docs/screenshots/preview.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7334b77169cc3ffbfc7f052c7c883ae33b2f9446/docs/screenshots/settings.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/cb44e620126126061e8a0237280b4424464ecba7/docs/screenshots/preview.png
@@ -46,8 +48,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 4
-starsSnapshot: 67
-releaseUpdatedAt: 2026-08-20T05:05:50.110Z
-metadataUpdatedAt: 2026-08-20T09:55:34.388Z
-starsUpdatedAt: 2026-08-20T09:55:34.388Z
-updatedAt: 2026-08-20T09:55:34.388Z
+starsSnapshot: 72
+releaseUpdatedAt: 2026-08-21T09:07:20.511Z
+metadataUpdatedAt: 2026-08-21T09:07:20.511Z
+starsUpdatedAt: 2026-08-21T09:07:20.511Z
+updatedAt: 2026-08-21T09:07:20.511Z

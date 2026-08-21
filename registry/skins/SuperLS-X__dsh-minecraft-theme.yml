@@ -16,14 +16,17 @@ modes:
   - light
   - dark
 install:
-  target: github:SuperLS-X/dsh-minecraft-theme#4915a6a16b66e004142c5bde42db968c201e1beb
+  target: github:SuperLS-X/dsh-minecraft-theme#496d2377791368b0aebce6a6f06471e49b9f7597
   version: 0.1.2
-  commit: 4915a6a16b66e004142c5bde42db968c201e1beb
+  commit: 496d2377791368b0aebce6a6f06471e49b9f7597
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/SuperLS-X/dsh-minecraft-theme/496d2377791368b0aebce6a6f06471e49b9f7597/screenshots/theme.png
+  - https://raw.githubusercontent.com/SuperLS-X/dsh-minecraft-theme/496d2377791368b0aebce6a6f06471e49b9f7597/screenshots/texture.png
+  - https://raw.githubusercontent.com/SuperLS-X/dsh-minecraft-theme/496d2377791368b0aebce6a6f06471e49b9f7597/screenshots/music.png
   - https://raw.githubusercontent.com/SuperLS-X/dsh-minecraft-theme/4915a6a16b66e004142c5bde42db968c201e1beb/screenshots/theme.png
   - https://raw.githubusercontent.com/SuperLS-X/dsh-minecraft-theme/4915a6a16b66e004142c5bde42db968c201e1beb/screenshots/texture.png
   - https://raw.githubusercontent.com/SuperLS-X/dsh-minecraft-theme/4915a6a16b66e004142c5bde42db968c201e1beb/screenshots/music.png
@@ -47,7 +50,7 @@ license:
   commercialUse: true
 featuredRank: 1008
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-20T05:08:52.643Z
-metadataUpdatedAt: 2026-08-20T09:57:00.543Z
+releaseUpdatedAt: 2026-08-21T09:08:37.327Z
+metadataUpdatedAt: 2026-08-21T09:08:37.327Z
 starsUpdatedAt: 2026-08-20T09:57:00.543Z
-updatedAt: 2026-08-20T09:57:00.543Z
+updatedAt: 2026-08-21T09:08:37.327Z

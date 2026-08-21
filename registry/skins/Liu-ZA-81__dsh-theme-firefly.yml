@@ -17,19 +17,22 @@ modes:
   - light
   - dark
 install:
-  target: github:Liu-ZA-81/dsh-theme-firefly#7937bc94872955ea0c6eb8842fc7b388e629ed52
+  target: github:Liu-ZA-81/dsh-theme-firefly#0b80edeb88a9aab056de42aace617a40e8f52927
   version: 0.1.1
-  commit: 7937bc94872955ea0c6eb8842fc7b388e629ed52
+  commit: 0b80edeb88a9aab056de42aace617a40e8f52927
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/01-wallpaper.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/02-boot.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/03-firefly.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/04-music.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/05-emote.jpg
   - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/01-wallpaper.jpg
   - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/02-boot.jpg
   - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/03-firefly.jpg
-  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/04-music.jpg
-  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/05-emote.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -48,8 +51,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 153
-starsSnapshot: 7
-releaseUpdatedAt: 2026-08-20T05:06:46.763Z
-metadataUpdatedAt: 2026-08-20T09:56:40.089Z
-starsUpdatedAt: 2026-08-20T06:25:47.963Z
-updatedAt: 2026-08-20T09:56:40.089Z
+starsSnapshot: 8
+releaseUpdatedAt: 2026-08-21T09:08:04.396Z
+metadataUpdatedAt: 2026-08-21T09:08:04.396Z
+starsUpdatedAt: 2026-08-21T09:08:04.396Z
+updatedAt: 2026-08-21T09:08:04.396Z

@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#96e12f2384bd6708a2c25d2a13a30aae01a9d567
+  target: github:webkubor/dsh-bloom-theme#528a908bbcc2c75b0085163c42b0b76a6fa34f29
   version: 0.3.6
-  commit: 96e12f2384bd6708a2c25d2a13a30aae01a9d567
+  commit: 528a908bbcc2c75b0085163c42b0b76a6fa34f29
 compatibility:
   dsh: unverified
   platform:
@@ -48,8 +48,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 193
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-20T09:59:12.443Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-21T09:09:32.549Z
 metadataUpdatedAt: 2026-08-20T09:59:12.443Z
-starsUpdatedAt: 2026-08-20T05:08:55.406Z
-updatedAt: 2026-08-20T09:59:12.443Z
+starsUpdatedAt: 2026-08-21T09:09:32.549Z
+updatedAt: 2026-08-21T09:09:32.549Z

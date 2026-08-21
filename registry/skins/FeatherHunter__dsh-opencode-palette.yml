@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:FeatherHunter/dsh-opencode-palette#e7460a9651e19ea02a7e9bc789810ab8b2a1d5e0&path:package
+  target: github:FeatherHunter/dsh-opencode-palette#11a3c01ff4e6cd22239e990fb8964d8421b04b01&path:package
   version: 1.6.4
-  commit: e7460a9651e19ea02a7e9bc789810ab8b2a1d5e0
+  commit: 11a3c01ff4e6cd22239e990fb8964d8421b04b01
 compatibility:
   dsh: unverified
   platform:
@@ -48,8 +48,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 139
-starsSnapshot: 7
-releaseUpdatedAt: 2026-08-20T09:56:16.140Z
+starsSnapshot: 9
+releaseUpdatedAt: 2026-08-21T09:07:58.401Z
 metadataUpdatedAt: 2026-08-18T15:40:14.498Z
-starsUpdatedAt: 2026-08-20T05:06:31.308Z
-updatedAt: 2026-08-20T09:56:16.140Z
+starsUpdatedAt: 2026-08-21T09:07:58.401Z
+updatedAt: 2026-08-21T09:07:58.401Z

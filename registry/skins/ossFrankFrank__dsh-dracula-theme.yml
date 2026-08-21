@@ -16,14 +16,15 @@ tags:
 modes:
   - dark
 install:
-  target: github:ossFrankFrank/dsh-dracula-theme#684d09a59a62e4180ac087918cb4f6d5aeffef9f
-  version: 0.1.4
-  commit: 684d09a59a62e4180ac087918cb4f6d5aeffef9f
+  target: github:ossFrankFrank/dsh-dracula-theme#b8c7e809043296485ebff870a4c705e9139b3d5f
+  version: 1.0.0
+  commit: b8c7e809043296485ebff870a4c705e9139b3d5f
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/ossFrankFrank/dsh-dracula-theme/b8c7e809043296485ebff870a4c705e9139b3d5f/assets/preview.png
   - https://raw.githubusercontent.com/ossFrankFrank/dsh-dracula-theme/684d09a59a62e4180ac087918cb4f6d5aeffef9f/assets/preview.png
 review:
   compatibility: verified
@@ -43,7 +44,7 @@ license:
   commercialUse: true
 featuredRank: 186
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:45:38.721Z
-metadataUpdatedAt: 2026-08-20T10:00:44.262Z
+releaseUpdatedAt: 2026-08-21T09:11:56.631Z
+metadataUpdatedAt: 2026-08-21T09:11:56.631Z
 starsUpdatedAt: 2026-08-18T15:45:38.721Z
-updatedAt: 2026-08-20T10:00:44.262Z
+updatedAt: 2026-08-21T09:11:56.631Z
