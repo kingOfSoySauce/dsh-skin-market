@@ -17,23 +17,23 @@ modes:
   - light
   - dark
 install:
-  target: github:elysia395/dsh-wallpaper-engine#ca8c36cae83e9d356ca9d7619c029056c55be81e
-  version: 0.4.0
-  commit: ca8c36cae83e9d356ca9d7619c029056c55be81e
-  allowBuild: dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/ca8c36cae83e9d356ca9d7619c029056c55be81e
+  target: github:elysia395/dsh-wallpaper-engine#c9d3af706acd2434c73b972467f38607ff9452fb
+  version: 0.4.1
+  commit: c9d3af706acd2434c73b972467f38607ff9452fb
+  allowBuild: dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/c9d3af706acd2434c73b972467f38607ff9452fb
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/c9d3af706acd2434c73b972467f38607ff9452fb/docs/images/showcase.png
+  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/c9d3af706acd2434c73b972467f38607ff9452fb/docs/images/wallpaper-library.png
+  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/c9d3af706acd2434c73b972467f38607ff9452fb/docs/images/liquid-glass-window.png
+  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/c9d3af706acd2434c73b972467f38607ff9452fb/docs/images/features.png
+  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/c9d3af706acd2434c73b972467f38607ff9452fb/docs/images/compact-wallpaper-library.png
+  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/c9d3af706acd2434c73b972467f38607ff9452fb/docs/images/better-sidebar.png
   - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ca8c36cae83e9d356ca9d7619c029056c55be81e/docs/images/showcase.png
   - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ca8c36cae83e9d356ca9d7619c029056c55be81e/docs/images/wallpaper-library.png
-  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ca8c36cae83e9d356ca9d7619c029056c55be81e/docs/images/liquid-glass-window.png
-  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ca8c36cae83e9d356ca9d7619c029056c55be81e/docs/images/features.png
-  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ca8c36cae83e9d356ca9d7619c029056c55be81e/docs/images/compact-wallpaper-library.png
-  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ca8c36cae83e9d356ca9d7619c029056c55be81e/docs/images/better-sidebar.png
-  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/48194e0af4dcf0ceb3650abf5430b372691f3459/docs/images/showcase.png
-  - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/48194e0af4dcf0ceb3650abf5430b372691f3459/docs/images/features.png
 review:
   compatibility: verified
   preview: verified
@@ -51,8 +51,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1001
-starsSnapshot: 123
-releaseUpdatedAt: 2026-08-21T09:07:15.998Z
-metadataUpdatedAt: 2026-08-21T09:07:15.998Z
-starsUpdatedAt: 2026-08-21T09:07:15.998Z
-updatedAt: 2026-08-21T09:07:15.998Z
+starsSnapshot: 135
+releaseUpdatedAt: 2026-08-21T17:49:40.351Z
+metadataUpdatedAt: 2026-08-21T17:49:40.351Z
+starsUpdatedAt: 2026-08-21T17:49:40.351Z
+updatedAt: 2026-08-21T17:49:40.351Z

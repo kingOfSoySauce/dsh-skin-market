@@ -15,14 +15,16 @@ tags:
 modes:
   - light
 install:
-  target: github:lengduan/dsh-815-skin#440fd4c44eed6bb1a7eeb57974c7cbe425a0ba42
-  version: 0.1.7
-  commit: 440fd4c44eed6bb1a7eeb57974c7cbe425a0ba42
+  target: github:lengduan/dsh-815-skin#e069a50803927c00ffd30ec3feb3501bcddb48fd
+  version: 0.1.9
+  commit: e069a50803927c00ffd30ec3feb3501bcddb48fd
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/lengduan/dsh-815-skin/e069a50803927c00ffd30ec3feb3501bcddb48fd/assets/nanjing-surrender-chen-jian.jpg
+  - https://raw.githubusercontent.com/lengduan/dsh-815-skin/e069a50803927c00ffd30ec3feb3501bcddb48fd/docs/preview.png
   - https://raw.githubusercontent.com/lengduan/dsh-815-skin/440fd4c44eed6bb1a7eeb57974c7cbe425a0ba42/assets/nanjing-surrender-chen-jian.jpg
   - https://raw.githubusercontent.com/lengduan/dsh-815-skin/440fd4c44eed6bb1a7eeb57974c7cbe425a0ba42/docs/preview.png
   - https://raw.githubusercontent.com/lengduan/dsh-815-skin/5b0c843b8fb0e3e4a0a223209fb8768d3cd3275d/assets/nanjing-surrender-chen-jian.jpg
@@ -47,7 +49,7 @@ license:
   commercialUse: true
 featuredRank: 111
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-21T09:11:40.196Z
-metadataUpdatedAt: 2026-08-21T09:11:40.196Z
+releaseUpdatedAt: 2026-08-21T17:54:06.481Z
+metadataUpdatedAt: 2026-08-21T17:54:06.481Z
 starsUpdatedAt: 2026-08-16T13:56:26.825Z
-updatedAt: 2026-08-21T09:11:40.196Z
+updatedAt: 2026-08-21T17:54:06.481Z

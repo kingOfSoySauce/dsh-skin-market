@@ -17,14 +17,16 @@ modes:
   - light
   - dark
 install:
-  target: github:Baizhuojielan/dsh-doro#c4fdfce67701572a870479bd80b6201de7533614
+  target: github:Baizhuojielan/dsh-doro#faf70d2edace55dcbb891e9c8d2f02e50689d7e3
   version: 0.1.0
-  commit: c4fdfce67701572a870479bd80b6201de7533614
+  commit: faf70d2edace55dcbb891e9c8d2f02e50689d7e3
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Baizhuojielan/dsh-doro/faf70d2edace55dcbb891e9c8d2f02e50689d7e3/preview/screenshot-light.png
+  - https://raw.githubusercontent.com/Baizhuojielan/dsh-doro/faf70d2edace55dcbb891e9c8d2f02e50689d7e3/preview/screenshot-dark.png
   - https://raw.githubusercontent.com/Baizhuojielan/dsh-doro/c4fdfce67701572a870479bd80b6201de7533614/preview/screenshot-light.png
   - https://raw.githubusercontent.com/Baizhuojielan/dsh-doro/c4fdfce67701572a870479bd80b6201de7533614/preview/screenshot-dark.png
 review:
@@ -46,7 +48,7 @@ license:
   commercialUse: false
 featuredRank: 1018
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-21T09:11:00.072Z
-metadataUpdatedAt: 2026-08-21T09:11:00.072Z
+releaseUpdatedAt: 2026-08-21T17:53:24.229Z
+metadataUpdatedAt: 2026-08-21T17:53:24.229Z
 starsUpdatedAt: 2026-08-21T09:11:00.072Z
-updatedAt: 2026-08-21T09:11:00.072Z
+updatedAt: 2026-08-21T17:53:24.229Z

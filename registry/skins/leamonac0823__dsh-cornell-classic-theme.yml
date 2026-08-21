@@ -15,14 +15,15 @@ modes:
   - light
   - dark
 install:
-  target: github:leamonac0823/dsh-cornell-classic-theme#4063c09c58ec4e527976ee16b99bbc65c497420e
+  target: github:leamonac0823/dsh-cornell-classic-theme#0bcd3b5083ab8a9a0c3e68bd55c9c76dcb982a3b
   version: 0.2.0
-  commit: 4063c09c58ec4e527976ee16b99bbc65c497420e
+  commit: 0bcd3b5083ab8a9a0c3e68bd55c9c76dcb982a3b
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/leamonac0823/dsh-cornell-classic-theme/0bcd3b5083ab8a9a0c3e68bd55c9c76dcb982a3b/assets/cover.png
   - https://raw.githubusercontent.com/leamonac0823/dsh-cornell-classic-theme/4063c09c58ec4e527976ee16b99bbc65c497420e/assets/cover.png
 review:
   compatibility: unverified
@@ -43,7 +44,7 @@ license:
   commercialUse: true
 featuredRank: 1022
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-21T09:11:38.580Z
-metadataUpdatedAt: 2026-08-21T09:11:38.580Z
+releaseUpdatedAt: 2026-08-21T17:54:05.161Z
+metadataUpdatedAt: 2026-08-21T17:54:05.161Z
 starsUpdatedAt: 2026-08-21T09:11:38.580Z
-updatedAt: 2026-08-21T09:11:38.580Z
+updatedAt: 2026-08-21T17:54:05.161Z

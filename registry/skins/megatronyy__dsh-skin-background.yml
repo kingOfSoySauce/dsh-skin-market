@@ -1,0 +1,53 @@
+id: megatronyy.dsh-skin-background
+name:
+  zh: dsh-skin-background
+  en: dsh-skin-background
+author: megatronyy
+description: DeepSeek Harness (dsh) 皮肤插件：给 Web 界面加上可切换的图片背景。English summary below.
+repo: https://github.com/megatronyy/dsh-skin-background
+package: dsh-skin-background
+rowId: skin-background
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:megatronyy/dsh-skin-background#13f6ccb76b7395a0cbf071b0fc9bd779ee9815a7
+  version: 0.1.0
+  commit: 13f6ccb76b7395a0cbf071b0fc9bd779ee9815a7
+compatibility:
+  dsh: ">=0.1.0-rc.1 <0.1.0 || >=0.1.0 <0.1.1 || >=0.1.1-rc.1 <0.2.0-0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/megatronyy/dsh-skin-background/13f6ccb76b7395a0cbf071b0fc9bd779ee9815a7/docs/screenshots/default-skin.png
+  - https://raw.githubusercontent.com/megatronyy/dsh-skin-background/13f6ccb76b7395a0cbf071b0fc9bd779ee9815a7/docs/screenshots/settings-panel.png
+  - https://raw.githubusercontent.com/megatronyy/dsh-skin-background/13f6ccb76b7395a0cbf071b0fc9bd779ee9815a7/docs/screenshots/dusk-drift.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1026
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-21T17:54:15.755Z
+metadataUpdatedAt: 2026-08-21T17:54:15.755Z
+starsUpdatedAt: 2026-08-21T17:54:15.755Z
+updatedAt: 2026-08-21T17:54:15.755Z

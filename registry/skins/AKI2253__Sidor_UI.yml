@@ -15,14 +15,17 @@ modes:
   - light
   - dark
 install:
-  target: github:AKI2253/Sidor_UI#1ce441b43be184809cfc2923e5b9c5409703f2ea
+  target: github:AKI2253/Sidor_UI#7a6a4a0dacd1aacb037dea42b16d1e5a9086daa9
   version: 1.0.0
-  commit: 1ce441b43be184809cfc2923e5b9c5409703f2ea
+  commit: 7a6a4a0dacd1aacb037dea42b16d1e5a9086daa9
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/7a6a4a0dacd1aacb037dea42b16d1e5a9086daa9/preview/hero.png
+  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/7a6a4a0dacd1aacb037dea42b16d1e5a9086daa9/preview/setting.png
+  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/7a6a4a0dacd1aacb037dea42b16d1e5a9086daa9/preview/warning.png
   - https://raw.githubusercontent.com/AKI2253/Sidor_UI/1ce441b43be184809cfc2923e5b9c5409703f2ea/preview/hero.png
   - https://raw.githubusercontent.com/AKI2253/Sidor_UI/1ce441b43be184809cfc2923e5b9c5409703f2ea/preview/setting.png
   - https://raw.githubusercontent.com/AKI2253/Sidor_UI/1ce441b43be184809cfc2923e5b9c5409703f2ea/preview/warning.png
@@ -44,8 +47,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1016
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-21T09:09:40.431Z
-metadataUpdatedAt: 2026-08-21T09:09:40.431Z
-starsUpdatedAt: 2026-08-21T09:09:40.431Z
-updatedAt: 2026-08-21T09:09:40.431Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-21T17:51:22.860Z
+metadataUpdatedAt: 2026-08-21T17:51:22.860Z
+starsUpdatedAt: 2026-08-21T17:51:22.860Z
+updatedAt: 2026-08-21T17:51:22.860Z

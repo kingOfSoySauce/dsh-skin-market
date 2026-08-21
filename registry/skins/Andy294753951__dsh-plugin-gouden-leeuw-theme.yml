@@ -18,11 +18,11 @@ modes:
   - light
   - dark
 install:
-  target: github:Andy294753951/dsh-plugin-gouden-leeuw-theme#3990dd397aec128553c7391b6d083c556483bc12
-  version: 0.2.0
-  commit: 3990dd397aec128553c7391b6d083c556483bc12
+  target: github:Andy294753951/dsh-plugin-gouden-leeuw-theme#6ab4c2bc6fb88d41a02ad92c06aae6e46d05e078
+  version: 0.4.0
+  commit: 6ab4c2bc6fb88d41a02ad92c06aae6e46d05e078
 compatibility:
-  dsh: 0.1.0-rc.5
+  dsh: ">=0.1.0-rc.8 <0.2.0"
   platform:
     - web
 screenshots:
@@ -46,7 +46,7 @@ license:
   commercialUse: false
 featuredRank: 77
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16 13:52:07.647000+00:00
-metadataUpdatedAt: 2026-08-20T05:08:00.043Z
+releaseUpdatedAt: 2026-08-21T17:52:00.832Z
+metadataUpdatedAt: 2026-08-21T17:52:00.832Z
 starsUpdatedAt: 2026-08-16 13:52:07.647000+00:00
-updatedAt: 2026-08-20T05:08:00.043Z
+updatedAt: 2026-08-21T17:52:00.832Z

@@ -16,15 +16,17 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#19f508b90ce86df7a9a1c7d167fd9d8cb639d4c9
-  version: 0.1.3
-  commit: 19f508b90ce86df7a9a1c7d167fd9d8cb639d4c9
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/19f508b90ce86df7a9a1c7d167fd9d8cb639d4c9
+  target: github:TQSY114514/dsh-ui-appearance#291759aaaef8c88d23cd80d877bc86bab90e34da
+  version: 0.1.4
+  commit: 291759aaaef8c88d23cd80d877bc86bab90e34da
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/291759aaaef8c88d23cd80d877bc86bab90e34da
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/291759aaaef8c88d23cd80d877bc86bab90e34da/docs/screenshot-settings.png
+  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/291759aaaef8c88d23cd80d877bc86bab90e34da/docs/screenshot-wallpaper.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/19f508b90ce86df7a9a1c7d167fd9d8cb639d4c9/docs/screenshot-settings.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/19f508b90ce86df7a9a1c7d167fd9d8cb639d4c9/docs/screenshot-wallpaper.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/0b47a643cd531ac4115867da7bee98588683f42e/docs/screenshot-settings.png
@@ -51,7 +53,7 @@ license:
   commercialUse: true
 featuredRank: 36
 starsSnapshot: 10
-releaseUpdatedAt: 2026-08-20T09:56:20.540Z
-metadataUpdatedAt: 2026-08-21T09:07:54.480Z
+releaseUpdatedAt: 2026-08-21T17:50:18.700Z
+metadataUpdatedAt: 2026-08-21T17:50:18.700Z
 starsUpdatedAt: 2026-08-21T09:07:54.480Z
-updatedAt: 2026-08-21T09:07:54.480Z
+updatedAt: 2026-08-21T17:50:18.700Z

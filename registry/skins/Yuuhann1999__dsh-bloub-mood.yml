@@ -17,21 +17,22 @@ tags:
 modes:
   - light
 install:
-  target: github:Yuuhann1999/dsh-bloub-mood#26f5beae93254bfad924d552e2d0e488f081a91b
-  version: 2.4.0
-  commit: 26f5beae93254bfad924d552e2d0e488f081a91b
+  target: github:Yuuhann1999/dsh-bloub-mood#51cd388950582dea45c424ca8a85ac039a27f7b1
+  version: 2.4.2
+  commit: 51cd388950582dea45c424ca8a85ac039a27f7b1
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/settings-expressions.png
+  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/settings-desktop-launch.png
+  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/dock-icon.png
+  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/desktop-app.png
   - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/26f5beae93254bfad924d552e2d0e488f081a91b/docs/settings-expressions.png
   - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/26f5beae93254bfad924d552e2d0e488f081a91b/docs/settings-desktop-launch.png
   - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/26f5beae93254bfad924d552e2d0e488f081a91b/docs/dock-icon.png
   - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/26f5beae93254bfad924d552e2d0e488f081a91b/docs/desktop-app.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/19487c437a5557e9af75ac80e102f0093e485560/docs/settings-v2-expressions.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/19487c437a5557e9af75ac80e102f0093e485560/docs/settings-v2-full.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/19487c437a5557e9af75ac80e102f0093e485560/docs/app-in-action.png
 review:
   compatibility: unverified
   preview: verified
@@ -51,7 +52,7 @@ license:
   commercialUse: true
 featuredRank: 1003
 starsSnapshot: 3
-releaseUpdatedAt: 2026-08-21T09:08:58.691Z
-metadataUpdatedAt: 2026-08-21T09:08:58.691Z
+releaseUpdatedAt: 2026-08-21T17:51:18.029Z
+metadataUpdatedAt: 2026-08-21T17:51:18.029Z
 starsUpdatedAt: 2026-08-20T05:07:19.126Z
-updatedAt: 2026-08-21T09:08:58.691Z
+updatedAt: 2026-08-21T17:51:18.029Z

@@ -18,14 +18,18 @@ modes:
   - light
   - dark
 install:
-  target: github:nlqh7/dsh-beautify#ae535903aa93121b8318a70072ee276195479d1f
+  target: github:nlqh7/dsh-beautify#b8783006fb5856ca365f7e9ba2c843335cdc9326
   version: 0.2.1
-  commit: ae535903aa93121b8318a70072ee276195479d1f
+  commit: b8783006fb5856ca365f7e9ba2c843335cdc9326
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/nlqh7/dsh-beautify/b8783006fb5856ca365f7e9ba2c843335cdc9326/docs/screenshots/01-three-babies.png
+  - https://raw.githubusercontent.com/nlqh7/dsh-beautify/b8783006fb5856ca365f7e9ba2c843335cdc9326/docs/screenshots/04-five-babies.png
+  - https://raw.githubusercontent.com/nlqh7/dsh-beautify/b8783006fb5856ca365f7e9ba2c843335cdc9326/docs/screenshots/05-we-wallpaper.png
+  - https://raw.githubusercontent.com/nlqh7/dsh-beautify/b8783006fb5856ca365f7e9ba2c843335cdc9326/docs/screenshots/06-we-picker.png
   - https://raw.githubusercontent.com/nlqh7/dsh-beautify/ae535903aa93121b8318a70072ee276195479d1f/docs/screenshots/01-three-babies.png
   - https://raw.githubusercontent.com/nlqh7/dsh-beautify/ae535903aa93121b8318a70072ee276195479d1f/docs/screenshots/04-five-babies.png
 review:
@@ -48,7 +52,7 @@ license:
   commercialUse: true
 featuredRank: 184
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-21T09:10:28.384Z
-metadataUpdatedAt: 2026-08-21T09:10:28.384Z
+releaseUpdatedAt: 2026-08-21T17:52:50.203Z
+metadataUpdatedAt: 2026-08-21T17:52:50.203Z
 starsUpdatedAt: 2026-08-21T09:10:28.384Z
-updatedAt: 2026-08-21T09:10:28.384Z
+updatedAt: 2026-08-21T17:52:50.203Z

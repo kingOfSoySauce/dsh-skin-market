@@ -9,14 +9,14 @@ package: dsh-wallpaper-skin
 rowId: dsh-wallpaper-skin
 category: theme
 tags:
-- wallpaper
-- glass
-- retro
-- motion
-- token-theme
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:ddbj-hub/dsh-wallpaper-skin#75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7
   version: 1.4.1
@@ -24,9 +24,9 @@ install:
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/ddbj-hub.dsh-wallpaper-skin
+  - https://opengraph.githubassets.com/placeholder/ddbj-hub.dsh-wallpaper-skin
 review:
   compatibility: verified
   preview: repository-card
@@ -40,13 +40,13 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 152
-starsSnapshot: 2
+starsSnapshot: 1
 releaseUpdatedAt: 2026-08-18 15:41:28.329000+00:00
 metadataUpdatedAt: 2026-08-18 15:41:28.329000+00:00
-starsUpdatedAt: 2026-08-18 15:41:28.329000+00:00
-updatedAt: 2026-08-18 15:41:28.329000+00:00
+starsUpdatedAt: 2026-08-21T17:51:29.738Z
+updatedAt: 2026-08-21T17:51:29.738Z

@@ -6,7 +6,7 @@ author: UniverFV
 description: 芙宁娜主题皮肤：水蓝 × 藏青 × 冰白 × 神之眼金色板，微信/QQ 式聊天气泡，双形态焦点模式（非输入时壁纸清晰、输入时自动雾化），壁纸亮度自适应与液态流动动效。
 repo: https://github.com/UniverFV/dsh-Furina-theme
 package: dsh-furina-theme
-rowId: furina-theme
+rowId: dsh-furina-theme
 category: theme
 tags:
   - furina
@@ -34,23 +34,24 @@ screenshots:
 review:
   compatibility: verified
   preview: verified
-  installation: manual-only
+  installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
-    - 仓库创建后请添加 dsh-plugin GitHub topic，便于市场与社区发现
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 0
-starsSnapshot: 0
+starsSnapshot: 1
 releaseUpdatedAt: 2026-08-21T12:00:00.000Z
-metadataUpdatedAt: 2026-08-21T12:00:00.000Z
-starsUpdatedAt: 2026-08-21T12:00:00.000Z
-updatedAt: 2026-08-21T12:00:00.000Z
+metadataUpdatedAt: 2026-08-21T17:54:46.652Z
+starsUpdatedAt: 2026-08-21T17:54:46.652Z
+updatedAt: 2026-08-21T17:54:46.652Z

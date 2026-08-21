@@ -1,0 +1,52 @@
+id: jiangwangyang.dsh-theme-blackhole
+name:
+  zh: dsh-theme-blackhole
+  en: dsh-theme-blackhole
+author: jiangwangyang
+description: English | 中文
+repo: https://github.com/jiangwangyang/dsh-theme-blackhole
+package: dsh-theme-blackhole
+rowId: theme-blackhole
+category: theme
+tags:
+  - glass
+  - retro
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:jiangwangyang/dsh-theme-blackhole#31a272e7b3a3cbe739c73b087877c81ecae24aa1
+  version: 0.1.0
+  commit: 31a272e7b3a3cbe739c73b087877c81ecae24aa1
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/jiangwangyang/dsh-theme-blackhole/31a272e7b3a3cbe739c73b087877c81ecae24aa1/docs/screenshots/blackhole.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1025
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-21T17:53:58.157Z
+metadataUpdatedAt: 2026-08-21T17:53:58.157Z
+starsUpdatedAt: 2026-08-21T17:53:58.157Z
+updatedAt: 2026-08-21T17:53:58.157Z
