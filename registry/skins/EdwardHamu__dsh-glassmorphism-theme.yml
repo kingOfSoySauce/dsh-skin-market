@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:EdwardHamu/dsh-glassmorphism-theme#04a869660072fe004a466b7f442a48de7c91cf21
-  version: 0.1.2
-  commit: 04a869660072fe004a466b7f442a48de7c91cf21
+  target: github:EdwardHamu/dsh-glassmorphism-theme#513d3e6fda73a3967942e427f23bc535d6ea606d
+  version: 0.1.3
+  commit: 513d3e6fda73a3967942e427f23bc535d6ea606d
 compatibility:
   dsh: unverified
   platform:
@@ -46,7 +46,7 @@ license:
   commercialUse: true
 featuredRank: 1019
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-21T09:11:16.377Z
+releaseUpdatedAt: 2026-08-22T03:15:07.600Z
 metadataUpdatedAt: 2026-08-21T09:11:16.377Z
 starsUpdatedAt: 2026-08-21T09:11:16.377Z
-updatedAt: 2026-08-21T09:11:16.377Z
+updatedAt: 2026-08-22T03:15:07.600Z

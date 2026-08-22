@@ -17,23 +17,23 @@ modes:
   - light
   - dark
 install:
-  target: github:HaoyueQin/deepseek-harness-background#adaa4a67d7af9472eef54d21b25c152cb6d0379d
+  target: github:HaoyueQin/deepseek-harness-background#9f0dd654eb352d9736cbddcd47c55b93c44bd34a
   version: 0.2.1
-  commit: adaa4a67d7af9472eef54d21b25c152cb6d0379d
-  allowBuild: deepseek-harness-background@https://codeload.github.com/HaoyueQin/deepseek-harness-background/tar.gz/adaa4a67d7af9472eef54d21b25c152cb6d0379d
+  commit: 9f0dd654eb352d9736cbddcd47c55b93c44bd34a
+  allowBuild: deepseek-harness-background@https://codeload.github.com/HaoyueQin/deepseek-harness-background/tar.gz/9f0dd654eb352d9736cbddcd47c55b93c44bd34a
 compatibility:
-  dsh: ^0.1.1-rc.1
+  dsh: ^0.1.1-rc.2
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/9f0dd654eb352d9736cbddcd47c55b93c44bd34a/docs/images/home.jpg
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/9f0dd654eb352d9736cbddcd47c55b93c44bd34a/docs/images/conversation.jpg
+  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/9f0dd654eb352d9736cbddcd47c55b93c44bd34a/docs/images/settings.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/adaa4a67d7af9472eef54d21b25c152cb6d0379d/docs/images/home.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/adaa4a67d7af9472eef54d21b25c152cb6d0379d/docs/images/conversation.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/adaa4a67d7af9472eef54d21b25c152cb6d0379d/docs/images/settings.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/0cb28382655474749b51625364d2fe8dc6c4447a/docs/images/home.jpg
   - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/0cb28382655474749b51625364d2fe8dc6c4447a/docs/images/conversation.jpg
-  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/0cb28382655474749b51625364d2fe8dc6c4447a/docs/images/settings.jpg
-  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/docs/images/home.jpg
-  - https://raw.githubusercontent.com/HaoyueQin/deepseek-harness-background/eb010b42763fdbf7c913d0fadbe6dd5371b70982/docs/images/conversation.jpg
 review:
   compatibility: verified
   preview: verified
@@ -53,7 +53,7 @@ license:
   commercialUse: true
 featuredRank: 1013
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-21T17:51:37.000Z
-metadataUpdatedAt: 2026-08-21T17:51:37.000Z
+releaseUpdatedAt: 2026-08-22T03:12:29.336Z
+metadataUpdatedAt: 2026-08-22T03:12:29.336Z
 starsUpdatedAt: 2026-08-20T06:26:49.245Z
-updatedAt: 2026-08-21T17:51:37.000Z
+updatedAt: 2026-08-22T03:12:29.336Z

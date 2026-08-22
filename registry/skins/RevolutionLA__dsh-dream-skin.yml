@@ -17,22 +17,22 @@ modes:
   - light
   - dark
 install:
-  target: github:RevolutionLA/dsh-dream-skin#ae90954f146d395250c166c678c01efde5f98953
-  version: 0.4.8
-  commit: ae90954f146d395250c166c678c01efde5f98953
+  target: github:RevolutionLA/dsh-dream-skin#96fe8c5494d626dc322e97475591fdc73fc72771
+  version: 0.4.10
+  commit: 96fe8c5494d626dc322e97475591fdc73fc72771
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/96fe8c5494d626dc322e97475591fdc73fc72771/docs/screenshots/preview.png
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/96fe8c5494d626dc322e97475591fdc73fc72771/docs/screenshots/settings.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/ae90954f146d395250c166c678c01efde5f98953/docs/screenshots/preview.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/ae90954f146d395250c166c678c01efde5f98953/docs/screenshots/settings.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/516bd5c0ff62e74e34b5ac071140157973831bad/docs/screenshots/preview.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/516bd5c0ff62e74e34b5ac071140157973831bad/docs/screenshots/settings.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7334b77169cc3ffbfc7f052c7c883ae33b2f9446/docs/screenshots/preview.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/7334b77169cc3ffbfc7f052c7c883ae33b2f9446/docs/screenshots/settings.png
-  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/cb44e620126126061e8a0237280b4424464ecba7/docs/screenshots/preview.png
-  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/cb44e620126126061e8a0237280b4424464ecba7/docs/screenshots/settings.png
 review:
   compatibility: verified
   preview: verified
@@ -51,7 +51,7 @@ license:
   commercialUse: true
 featuredRank: 4
 starsSnapshot: 76
-releaseUpdatedAt: 2026-08-21T17:49:44.910Z
-metadataUpdatedAt: 2026-08-21T17:49:44.910Z
+releaseUpdatedAt: 2026-08-22T03:10:02.031Z
+metadataUpdatedAt: 2026-08-22T03:10:02.031Z
 starsUpdatedAt: 2026-08-21T17:49:44.910Z
-updatedAt: 2026-08-21T17:49:44.910Z
+updatedAt: 2026-08-22T03:10:02.031Z

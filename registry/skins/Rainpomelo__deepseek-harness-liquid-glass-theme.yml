@@ -16,22 +16,22 @@ tags:
 modes:
   - dark
 install:
-  target: github:Rainpomelo/deepseek-harness-liquid-glass-theme#d297c0ec7c8a8f1cb687a540bca854aba02ee858
+  target: github:Rainpomelo/deepseek-harness-liquid-glass-theme#3cdc7355557cf563dbe1f8e8897bb1a2c261a262
   version: 2.0.0
-  commit: d297c0ec7c8a8f1cb687a540bca854aba02ee858
+  commit: 3cdc7355557cf563dbe1f8e8897bb1a2c261a262
 compatibility:
   dsh: ^0.1.0-rc.5
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/3cdc7355557cf563dbe1f8e8897bb1a2c261a262/docs/images/live_wallpaper_demo.gif
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/3cdc7355557cf563dbe1f8e8897bb1a2c261a262/docs/images/desktop_main_preview.png
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/3cdc7355557cf563dbe1f8e8897bb1a2c261a262/docs/images/desktop_modal_preview.png
+  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/3cdc7355557cf563dbe1f8e8897bb1a2c261a262/docs/images/settings_preview.png
   - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/d297c0ec7c8a8f1cb687a540bca854aba02ee858/docs/images/live_wallpaper_demo.gif
   - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/d297c0ec7c8a8f1cb687a540bca854aba02ee858/docs/images/desktop_main_preview.png
   - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/d297c0ec7c8a8f1cb687a540bca854aba02ee858/docs/images/desktop_modal_preview.png
   - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/d297c0ec7c8a8f1cb687a540bca854aba02ee858/docs/images/settings_preview.png
-  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/docs/images/live_wallpaper_demo.gif
-  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/docs/images/desktop_main_preview.png
-  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/docs/images/desktop_modal_preview.png
-  - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/0f7f8dfffdcd06e1b8f9d5e5361cd806de9c9912/docs/images/settings_preview.png
 review:
   compatibility: verified
   preview: verified
@@ -51,7 +51,7 @@ license:
   commercialUse: true
 featuredRank: 206
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-21T09:08:54.393Z
-metadataUpdatedAt: 2026-08-21T09:08:54.393Z
+releaseUpdatedAt: 2026-08-22T03:11:38.349Z
+metadataUpdatedAt: 2026-08-22T03:11:38.349Z
 starsUpdatedAt: 2026-08-21T17:51:00.616Z
-updatedAt: 2026-08-21T17:51:00.616Z
+updatedAt: 2026-08-22T03:11:38.349Z

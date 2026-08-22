@@ -1,0 +1,53 @@
+id: lxxz1918.dsh-theme-customizer
+name:
+  zh: dsh-theme-customizer
+  en: dsh-theme-customizer
+author: lxxz1918
+description: 中文 | English
+repo: https://github.com/lxxz1918/dsh-theme-customizer
+package: dsh-theme-customizer
+rowId: theme-customizer
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:lxxz1918/dsh-theme-customizer#389a79a4f75bbecfe0da11a7d124c931cec3d2ce
+  version: 1.0.0
+  commit: 389a79a4f75bbecfe0da11a7d124c931cec3d2ce
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://github.com/lxxz1918/dsh-theme-customizer/raw/main/docs/screenshots/theme-effect.png
+  - https://github.com/lxxz1918/dsh-theme-customizer/raw/main/docs/screenshots/settings-panel.png
+  - https://github.com/lxxz1918/dsh-theme-customizer/raw/main/docs/screenshots/preset-1-main.png
+  - https://github.com/lxxz1918/dsh-theme-customizer/raw/main/docs/screenshots/preset-1-panel.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1028
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-22T03:15:53.534Z
+metadataUpdatedAt: 2026-08-22T03:15:53.534Z
+starsUpdatedAt: 2026-08-22T03:15:53.534Z
+updatedAt: 2026-08-22T03:15:53.534Z
