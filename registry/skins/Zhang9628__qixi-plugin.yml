@@ -19,6 +19,9 @@ install:
   target: github:Zhang9628/qixi-plugin#581794ac36116e7d576d9270f1996b486bf6a8aa
   version: 0.1.0
   commit: 581794ac36116e7d576d9270f1996b486bf6a8aa
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -40,12 +43,24 @@ health:
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 581794ac36116e7d576d9270f1996b486bf6a8aa
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:28:53.433Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1002
 starsSnapshot: 5
-releaseUpdatedAt: 2026-08-20T05:07:02.223Z
-metadataUpdatedAt: 2026-08-20T09:57:01.634Z
+releaseUpdatedAt: 2026-08-23T05:28:53.508Z
+metadataUpdatedAt: 2026-08-23T05:28:53.508Z
 starsUpdatedAt: 2026-08-21T17:50:48.830Z
-updatedAt: 2026-08-21T17:50:48.830Z
+updatedAt: 2026-08-23T05:28:53.508Z

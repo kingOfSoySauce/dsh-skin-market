@@ -17,6 +17,9 @@ install:
   target: github:hero-goblins/dsh-macos-skin#da6eebb494f53eec2dc6e1f335c6a1866ac023a4
   version: 1.0.0
   commit: da6eebb494f53eec2dc6e1f335c6a1866ac023a4
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.8
   platform:
@@ -36,12 +39,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: da6eebb494f53eec2dc6e1f335c6a1866ac023a4
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.8
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:45.144Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1020
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-21T09:11:29.573Z
-metadataUpdatedAt: 2026-08-21T09:11:29.573Z
+releaseUpdatedAt: 2026-08-23T05:33:45.219Z
+metadataUpdatedAt: 2026-08-23T05:33:45.219Z
 starsUpdatedAt: 2026-08-21T09:11:29.573Z
-updatedAt: 2026-08-21T09:11:29.573Z
+updatedAt: 2026-08-23T05:33:45.219Z

@@ -19,6 +19,9 @@ install:
   target: github:H-table/dsh-bg-tool#409445faed5f594e646228d5c28d659998cbb1d5
   version: 1.0.0
   commit: 409445faed5f594e646228d5c28d659998cbb1d5
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -46,12 +49,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 409445faed5f594e646228d5c28d659998cbb1d5
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:38.682Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 177
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-20T05:09:43.612Z
-metadataUpdatedAt: 2026-08-20T10:00:09.824Z
+releaseUpdatedAt: 2026-08-23T05:33:38.729Z
+metadataUpdatedAt: 2026-08-23T05:33:38.729Z
 starsUpdatedAt: 2026-08-18T15:44:48.848Z
-updatedAt: 2026-08-20T10:00:09.824Z
+updatedAt: 2026-08-23T05:33:38.729Z

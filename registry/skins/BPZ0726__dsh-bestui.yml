@@ -22,6 +22,12 @@ install:
   target: github:BPZ0726/dsh-bestui#89902526c31a4e5690df97bcb5da8ffa6a4cac3f
   version: 0.1.1
   commit: 89902526c31a4e5690df97bcb5da8ffa6a4cac3f
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-bestui
+    packageVersion: 0.1.1
+    integrity: sha512-1dug8qWqWJO/LjRw3JaxG7uzOHFcd/vxshIQH9sGhU4ZqYFdWJqYiz8vHoSjVF1bITODggGvf3M4klxG0ab5YQ==
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -42,12 +48,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: 89902526c31a4e5690df97bcb5da8ffa6a4cac3f
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:01.825Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 170
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18 15:44:11.605000+00:00
-metadataUpdatedAt: 2026-08-20T05:09:17.715Z
+releaseUpdatedAt: 2026-08-23T05:33:01.907Z
+metadataUpdatedAt: 2026-08-23T05:33:01.907Z
 starsUpdatedAt: 2026-08-18 15:44:11.605000+00:00
-updatedAt: 2026-08-20T05:09:17.715Z
+updatedAt: 2026-08-23T05:33:01.907Z

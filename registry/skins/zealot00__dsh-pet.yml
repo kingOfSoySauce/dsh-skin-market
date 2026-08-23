@@ -18,6 +18,9 @@ install:
   target: github:zealot00/dsh-pet#cb31dd4474f655e1caa87ed10d4403ba46a3f8b5
   version: 0.2.0
   commit: cb31dd4474f655e1caa87ed10d4403ba46a3f8b5
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -39,12 +42,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: cb31dd4474f655e1caa87ed10d4403ba46a3f8b5
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:42.838Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 73
 starsSnapshot: 3
-releaseUpdatedAt: 2026-08-16T13:51:35.527Z
-metadataUpdatedAt: 2026-08-20T09:57:22.092Z
+releaseUpdatedAt: 2026-08-23T05:29:42.888Z
+metadataUpdatedAt: 2026-08-23T05:29:42.888Z
 starsUpdatedAt: 2026-08-18T15:41:05.271Z
-updatedAt: 2026-08-20T09:57:22.092Z
+updatedAt: 2026-08-23T05:29:42.888Z

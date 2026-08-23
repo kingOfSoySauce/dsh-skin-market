@@ -19,6 +19,9 @@ install:
   target: github:He2way/dsh-task-console#a3f130852db0b7d86a819a22586b3f37029ae360
   version: 0.1.0
   commit: a3f130852db0b7d86a819a22586b3f37029ae360
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -40,12 +43,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: a3f130852db0b7d86a819a22586b3f37029ae360
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:43.790Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 107
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16 13:55:53.334000+00:00
-metadataUpdatedAt: 2026-08-20T05:09:47.365Z
+releaseUpdatedAt: 2026-08-23T05:33:43.867Z
+metadataUpdatedAt: 2026-08-23T05:33:43.867Z
 starsUpdatedAt: 2026-08-16 13:55:53.334000+00:00
-updatedAt: 2026-08-20T05:09:47.365Z
+updatedAt: 2026-08-23T05:33:43.867Z

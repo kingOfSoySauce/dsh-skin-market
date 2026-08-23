@@ -17,6 +17,12 @@ install:
   target: github:TFboy1/dsh-minecraft-ui#ec5313b87f8688b82421f124cc2f3887c84b3a8c
   version: 0.3.0
   commit: ec5313b87f8688b82421f124cc2f3887c84b3a8c
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-minecraft-ui
+    packageVersion: 0.3.0
+    integrity: sha512-lIc2gsdnoCZrNn7C1bWqJ9aarP+yWnFB/+6aTiorqcoC2siqFnxVs5f/KN0WjGK4kR2TbTZ/6bevlYkfULvcww==
   allowBuild: dsh-minecraft-ui@https://codeload.github.com/TFboy1/dsh-minecraft-ui/tar.gz/ec5313b87f8688b82421f124cc2f3887c84b3a8c
 compatibility:
   dsh: ">=0.1.0-rc.8 <0.2.0"
@@ -42,12 +48,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: ec5313b87f8688b82421f124cc2f3887c84b3a8c
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.8 <0.2.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:31.186Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1023
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-21T09:12:18.274Z
-metadataUpdatedAt: 2026-08-21T09:12:18.274Z
-starsUpdatedAt: 2026-08-21T09:12:18.274Z
-updatedAt: 2026-08-21T09:12:18.274Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-08-23T05:29:31.272Z
+metadataUpdatedAt: 2026-08-23T05:29:31.272Z
+starsUpdatedAt: 2026-08-23T05:29:31.272Z
+updatedAt: 2026-08-23T05:29:31.272Z

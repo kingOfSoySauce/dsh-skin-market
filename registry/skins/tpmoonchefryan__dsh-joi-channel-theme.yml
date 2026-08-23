@@ -18,6 +18,9 @@ install:
   target: github:tpmoonchefryan/dsh-joi-channel-theme#3c12a2706759104a94b51013d19bb3e9c3f2bef1
   version: 0.1.10
   commit: 3c12a2706759104a94b51013d19bb3e9c3f2bef1
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
@@ -45,12 +48,24 @@ health:
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 3c12a2706759104a94b51013d19bb3e9c3f2bef1
+    packageVersion: 0.1.10
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.5
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:27:59.234Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 94
 starsSnapshot: 11
-releaseUpdatedAt: 2026-08-20T06:25:22.023Z
-metadataUpdatedAt: 2026-08-20T09:56:12.254Z
+releaseUpdatedAt: 2026-08-23T05:27:59.315Z
+metadataUpdatedAt: 2026-08-23T05:27:59.315Z
 starsUpdatedAt: 2026-08-21T09:07:51.656Z
-updatedAt: 2026-08-21T09:07:51.656Z
+updatedAt: 2026-08-23T05:27:59.315Z

@@ -21,6 +21,9 @@ install:
   target: github:Anionex/dsh-eye-care#4f87acff00135317134e61a580c86198dad907c2
   version: 0.1.0
   commit: 4f87acff00135317134e61a580c86198dad907c2
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepack
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -41,12 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 4f87acff00135317134e61a580c86198dad907c2
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:53.661Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 57
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16T13:49:43.768Z
-metadataUpdatedAt: 2026-08-20T09:57:30.823Z
+releaseUpdatedAt: 2026-08-23T05:29:53.736Z
+metadataUpdatedAt: 2026-08-23T05:29:53.736Z
 starsUpdatedAt: 2026-08-16T13:49:43.768Z
-updatedAt: 2026-08-20T09:57:30.823Z
+updatedAt: 2026-08-23T05:29:53.736Z

@@ -19,6 +19,9 @@ install:
   target: github:JerryPhoenixCKY/dsh-plugin-wallpaper#168ab70ba342d112fa8184f91bfe35d923bb168c
   version: 0.1.4
   commit: 168ab70ba342d112fa8184f91bfe35d923bb168c
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepare
   allowBuild: dsh-plugin-wallpaper@https://codeload.github.com/JerryPhoenixCKY/dsh-plugin-wallpaper/tar.gz/168ab70ba342d112fa8184f91bfe35d923bb168c
 compatibility:
   dsh: 0.1.0-rc.6
@@ -41,12 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 168ab70ba342d112fa8184f91bfe35d923bb168c
+    packageVersion: 0.1.4
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:49.359Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1021
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-21T09:11:32.320Z
-metadataUpdatedAt: 2026-08-21T09:11:32.320Z
+releaseUpdatedAt: 2026-08-23T05:33:49.431Z
+metadataUpdatedAt: 2026-08-23T05:33:49.431Z
 starsUpdatedAt: 2026-08-21T09:11:32.320Z
-updatedAt: 2026-08-21T09:11:32.320Z
+updatedAt: 2026-08-23T05:33:49.431Z

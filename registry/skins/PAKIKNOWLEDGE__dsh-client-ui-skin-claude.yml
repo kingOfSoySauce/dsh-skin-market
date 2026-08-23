@@ -18,6 +18,12 @@ install:
   target: github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude#4d8fe6cfbff245b44bb8e0effc296ad2b513c9c5
   version: 0.2.0
   commit: 4d8fe6cfbff245b44bb8e0effc296ad2b513c9c5
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@pakiknowledge/dsh-client-ui-skin-claude"
+    packageVersion: 0.2.0
+    integrity: sha512-bqjyiIVGOpaEgo/tYSELSNLKNIq1QZ9KoIMdXRw5qfihSKAXzoLqs7iRU/wTc0kjMQuIdElOIbyvohBSG1OAIw==
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -40,12 +46,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 4d8fe6cfbff245b44bb8e0effc296ad2b513c9c5
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:08.294Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 23
 starsSnapshot: 9
-releaseUpdatedAt: 2026-08-20T05:06:27.719Z
-metadataUpdatedAt: 2026-08-20T09:56:19.522Z
+releaseUpdatedAt: 2026-08-23T05:28:08.371Z
+metadataUpdatedAt: 2026-08-23T05:28:08.371Z
 starsUpdatedAt: 2026-08-21T17:50:30.360Z
-updatedAt: 2026-08-21T17:50:30.360Z
+updatedAt: 2026-08-23T05:28:08.371Z

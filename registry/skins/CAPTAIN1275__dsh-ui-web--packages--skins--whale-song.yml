@@ -17,14 +17,22 @@ modes:
   - light
   - dark
 install:
-  target: github:CAPTAIN1275/dsh-ui-web#4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56&path:packages/skins/whale-song
-  version: 0.2.7
-  commit: 4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56
+  target: github:CAPTAIN1275/dsh-ui-web#251119cedac66dbd31ca8ce6cb112369b60b359b&path:packages/skins/whale-song
+  version: 0.3.1
+  commit: 251119cedac66dbd31ca8ce6cb112369b60b359b
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@captain1275/dsh-client-ui-skin-whale-song"
+    packageVersion: 0.3.1
+    integrity: sha512-FSPeQepzduD8HGkb4RkYbjttiJQlLtwlS6vJ/WsePb/TONzGsoVmZJYfHtZAKRg502fUahDyZGMSNCjBSRmWQQ==
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/251119cedac66dbd31ca8ce6cb112369b60b359b/packages/skins/whale-song/preview/dark.png
+  - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/251119cedac66dbd31ca8ce6cb112369b60b359b/packages/skins/whale-song/preview/light.png
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/whale-song/preview/dark.png
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/whale-song/preview/light.png
 review:
@@ -42,12 +50,21 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 251119cedac66dbd31ca8ce6cb112369b60b359b
+    packageVersion: 0.3.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:27:16.192Z
+    findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 969
-starsSnapshot: 35
-releaseUpdatedAt: 2026-08-20T05:05:58.850Z
-metadataUpdatedAt: 2026-08-20T09:55:43.070Z
-starsUpdatedAt: 2026-08-21T09:07:28.829Z
-updatedAt: 2026-08-21T09:07:28.829Z
+starsSnapshot: 36
+releaseUpdatedAt: 2026-08-23T05:27:16.262Z
+metadataUpdatedAt: 2026-08-23T05:27:16.262Z
+starsUpdatedAt: 2026-08-23T05:27:16.262Z
+updatedAt: 2026-08-23T05:27:16.262Z

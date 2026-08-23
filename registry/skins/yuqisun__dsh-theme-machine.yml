@@ -18,6 +18,9 @@ install:
   target: github:yuqisun/dsh-theme-machine#e7e7762e16ff6469fe9153e5d75bac1b37b0ef13
   version: 0.1.3
   commit: e7e7762e16ff6469fe9153e5d75bac1b37b0ef13
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepack,prepare
   allowBuild: dsh-theme-machine@https://codeload.github.com/yuqisun/dsh-theme-machine/tar.gz/e7e7762e16ff6469fe9153e5d75bac1b37b0ef13
 compatibility:
   dsh: unverified
@@ -41,12 +44,23 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: e7e7762e16ff6469fe9153e5d75bac1b37b0ef13
+    packageVersion: 0.1.3
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:35:33.444Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 128
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:46:41.776Z
-metadataUpdatedAt: 2026-08-20T10:01:26.264Z
+releaseUpdatedAt: 2026-08-23T05:35:33.513Z
+metadataUpdatedAt: 2026-08-23T05:35:33.513Z
 starsUpdatedAt: 2026-08-16T13:58:28.052Z
-updatedAt: 2026-08-20T10:01:26.264Z
+updatedAt: 2026-08-23T05:35:33.513Z

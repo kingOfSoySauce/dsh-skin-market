@@ -1,0 +1,64 @@
+id: zhoucourier.dsh-theme-whalegirl
+name:
+  zh: dsh-theme-whalegirl
+  en: dsh-theme-whalegirl
+author: ZHOUcourier
+description: DeepSeek-鲸鱼娘主题，面向 DeepSeek Harness（DSH）Web UI——移植自 DreamSkin 皮肤包 vercb557ececaa5de3f3dbe。
+repo: https://github.com/ZHOUcourier/dsh-theme-whalegirl
+package: dsh-theme-whalegirl
+rowId: dsh-theme-whalegirl
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:ZHOUcourier/dsh-theme-whalegirl#f61a31425a71221e971685fbf3d706a7b5e838ab
+  version: 0.2.0
+  commit: f61a31425a71221e971685fbf3d706a7b5e838ab
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepare
+  allowBuild: dsh-theme-whalegirl@https://codeload.github.com/ZHOUcourier/dsh-theme-whalegirl/tar.gz/f61a31425a71221e971685fbf3d706a7b5e838ab
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ZHOUcourier/dsh-theme-whalegirl/f61a31425a71221e971685fbf3d706a7b5e838ab/assets/previews/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: f61a31425a71221e971685fbf3d706a7b5e838ab
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:35:40.269Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1032
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-23T05:35:40.343Z
+metadataUpdatedAt: 2026-08-23T05:35:40.343Z
+starsUpdatedAt: 2026-08-23T05:35:40.343Z
+updatedAt: 2026-08-23T05:35:40.343Z

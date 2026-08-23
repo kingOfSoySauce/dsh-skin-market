@@ -18,6 +18,12 @@ install:
   target: github:zsyayo112/dsh-rick-and-morty#83dfc64c0f53da29b7b7e70c83ea8be11416a6b3
   version: 0.1.0
   commit: 83dfc64c0f53da29b7b7e70c83ea8be11416a6b3
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@zsy1126/dsh-rick-and-morty"
+    packageVersion: 0.1.0
+    integrity: sha512-6jK2ldhiQX/J62ACP3RUSeXHnGdlZO63EC7blYARdjemHDrBLa7QxL2aIoH8Jv8DpswKk9IHTH7kUKCu88dy0w==
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
@@ -40,12 +46,24 @@ health:
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 83dfc64c0f53da29b7b7e70c83ea8be11416a6b3
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:32:51.954Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 166
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:43:58.602Z
-metadataUpdatedAt: 2026-08-20T09:59:30.849Z
+releaseUpdatedAt: 2026-08-23T05:32:52.027Z
+metadataUpdatedAt: 2026-08-23T05:32:52.027Z
 starsUpdatedAt: 2026-08-18T15:43:58.602Z
-updatedAt: 2026-08-20T09:59:30.849Z
+updatedAt: 2026-08-23T05:32:52.027Z

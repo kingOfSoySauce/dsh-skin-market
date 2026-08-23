@@ -9,22 +9,29 @@ package: dsh-theme-cyberpunk
 rowId: theme-cyberpunk
 category: theme
 tags:
-- wallpaper
-- retro
-- motion
-- token-theme
-- light-dark
+  - wallpaper
+  - retro
+  - motion
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:dlpufan/dsh-theme-cyberpunk#0bddb1507514e758f1f63668df2b0c90d8d20102
   version: 0.1.0
   commit: 0bddb1507514e758f1f63668df2b0c90d8d20102
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -39,18 +46,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 0bddb1507514e758f1f63668df2b0c90d8d20102
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:30:11.737Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 63
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16 13:50:20.382000+00:00
-metadataUpdatedAt: 2026-08-22T08:15:31.354Z
+releaseUpdatedAt: 2026-08-23T05:30:11.816Z
+metadataUpdatedAt: 2026-08-23T05:30:11.816Z
 starsUpdatedAt: 2026-08-16 13:50:20.382000+00:00
-updatedAt: 2026-08-22T08:15:31.354Z
-marketScreenshots:
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/home.png
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/conversation.png
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/settings.png
+updatedAt: 2026-08-23T05:30:11.816Z

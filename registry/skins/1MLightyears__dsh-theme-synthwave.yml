@@ -20,6 +20,9 @@ install:
   target: github:1MLightyears/dsh-theme-synthwave#f418fcb15674638defd4a4793e5f530346a8c25e
   version: 0.1.0
   commit: f418fcb15674638defd4a4793e5f530346a8c25e
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
   allowBuild: "@1mlightyears/dsh-theme-synthwave@https://codeload.github.com/1MLightyears/dsh-theme-synthwave/tar.gz/f418fcb15674638defd4a4793e5f530346a8c25e"
 compatibility:
   dsh: unverified
@@ -31,7 +34,7 @@ screenshots:
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
 health:
   status: improvements
   checks:
@@ -42,12 +45,23 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 固定版本静态扫描发现已知兼容风险，市场已暂停该版本的一键安装。
+  scan:
+    commit: f418fcb15674638defd4a4793e5f530346a8c25e
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: fail
+    checkedAt: 2026-08-23T05:32:53.433Z
+    findings:
+      - code: keyed-slot-missing-key
+        message: settings.plugin.item 注册缺少 key。
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 167
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:44:00.135Z
-metadataUpdatedAt: 2026-08-20T09:59:31.904Z
+releaseUpdatedAt: 2026-08-23T05:32:53.529Z
+metadataUpdatedAt: 2026-08-23T05:32:53.529Z
 starsUpdatedAt: 2026-08-18T15:44:00.135Z
-updatedAt: 2026-08-20T09:59:31.904Z
+updatedAt: 2026-08-23T05:32:53.529Z

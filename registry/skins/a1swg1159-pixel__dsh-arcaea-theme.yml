@@ -18,6 +18,9 @@ install:
   target: github:a1swg1159-pixel/dsh-arcaea-theme#7cbd4a03df2430ac39c32470cf0e4c7e93dc5918
   version: 0.5.0
   commit: 7cbd4a03df2430ac39c32470cf0e4c7e93dc5918
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.1.0-rc.5 <0.2.0"
   platform:
@@ -39,12 +42,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 7cbd4a03df2430ac39c32470cf0e4c7e93dc5918
+    packageVersion: 0.5.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.5 <0.2.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:49.468Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 75
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:51:53.473Z
-metadataUpdatedAt: 2026-08-20T09:58:04.780Z
-starsUpdatedAt: 2026-08-16T13:51:53.473Z
-updatedAt: 2026-08-20T09:58:04.780Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-08-23T05:29:49.557Z
+metadataUpdatedAt: 2026-08-23T05:29:49.557Z
+starsUpdatedAt: 2026-08-23T05:29:49.557Z
+updatedAt: 2026-08-23T05:29:49.557Z

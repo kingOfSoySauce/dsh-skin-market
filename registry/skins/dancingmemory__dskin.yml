@@ -18,6 +18,9 @@ install:
   target: github:dancingmemory/dskin#3ed971ae31802861a5dfd8349ba7a2fbf611a3e1
   version: 1.0.17
   commit: 3ed971ae31802861a5dfd8349ba7a2fbf611a3e1
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
   allowBuild: dskin@https://codeload.github.com/dancingmemory/dskin/tar.gz/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1
 compatibility:
   dsh: unverified
@@ -46,12 +49,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 3ed971ae31802861a5dfd8349ba7a2fbf611a3e1
+    packageVersion: 1.0.17
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:15.322Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 38
 starsSnapshot: 7
-releaseUpdatedAt: 2026-08-21T09:07:56.464Z
-metadataUpdatedAt: 2026-08-21T09:07:56.464Z
+releaseUpdatedAt: 2026-08-23T05:28:15.410Z
+metadataUpdatedAt: 2026-08-23T05:28:15.410Z
 starsUpdatedAt: 2026-08-18T15:39:30.818Z
-updatedAt: 2026-08-21T09:07:56.464Z
+updatedAt: 2026-08-23T05:28:15.410Z

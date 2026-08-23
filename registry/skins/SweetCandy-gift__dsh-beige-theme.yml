@@ -17,6 +17,9 @@ install:
   target: github:SweetCandy-gift/dsh-beige-theme#7b10152f18a50ee8f49fd558eb1be0ba31a5f5df
   version: 1.0.0
   commit: 7b10152f18a50ee8f49fd558eb1be0ba31a5f5df
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -38,12 +41,21 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 7b10152f18a50ee8f49fd558eb1be0ba31a5f5df
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:35:02.504Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 192
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:46:14.024Z
-metadataUpdatedAt: 2026-08-20T10:01:06.079Z
+releaseUpdatedAt: 2026-08-23T05:35:02.579Z
+metadataUpdatedAt: 2026-08-23T05:35:02.579Z
 starsUpdatedAt: 2026-08-18T15:46:14.024Z
-updatedAt: 2026-08-20T10:01:06.079Z
+updatedAt: 2026-08-23T05:35:02.579Z

@@ -21,6 +21,9 @@ install:
   target: github:GptsApp/dsh-stylevault#b627f3a40c86cee9016d3749368479c08b5443b9
   version: 0.3.0
   commit: b627f3a40c86cee9016d3749368479c08b5443b9
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -45,12 +48,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: b627f3a40c86cee9016d3749368479c08b5443b9
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:35.953Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 105
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:44:47.231Z
-metadataUpdatedAt: 2026-08-20T10:00:08.371Z
+releaseUpdatedAt: 2026-08-23T05:33:36.035Z
+metadataUpdatedAt: 2026-08-23T05:33:36.035Z
 starsUpdatedAt: 2026-08-16T13:55:39.547Z
-updatedAt: 2026-08-20T10:00:08.371Z
+updatedAt: 2026-08-23T05:33:36.035Z

@@ -19,6 +19,9 @@ install:
   target: github:jungeer/dsh-theme-stardew#2f2ac99cb821e4ebd8cd94a5e5cd6e9568c7863a
   version: 0.1.6
   commit: 2f2ac99cb821e4ebd8cd94a5e5cd6e9568c7863a
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: unverified
   platform:
@@ -40,12 +43,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 2f2ac99cb821e4ebd8cd94a5e5cd6e9568c7863a
+    packageVersion: 0.1.6
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:31:31.875Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 161
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:42:49.178Z
-metadataUpdatedAt: 2026-08-20T09:58:31.321Z
+releaseUpdatedAt: 2026-08-23T05:31:31.952Z
+metadataUpdatedAt: 2026-08-23T05:31:31.952Z
 starsUpdatedAt: 2026-08-18T15:42:49.178Z
-updatedAt: 2026-08-20T09:58:31.321Z
+updatedAt: 2026-08-23T05:31:31.952Z

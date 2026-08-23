@@ -19,6 +19,12 @@ install:
   target: github:sakka6868/dsh-skin#4629351a51d35ebfab69c061269dfa6e2678aab9
   version: 0.3.0
   commit: 4629351a51d35ebfab69c061269dfa6e2678aab9
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-skin-alphacoders
+    packageVersion: 0.3.0
+    integrity: sha512-MyKXm4lW0PJZRkXe83snVIvHEKB1AdVDxaiR9rF0vClyKXxcz42bhAEJQWrW4ELfkQKDJPwulMnV7rm21BaYMQ==
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -42,12 +48,24 @@ health:
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 4629351a51d35ebfab69c061269dfa6e2678aab9
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:30:38.572Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 92
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-21T09:09:27.656Z
-metadataUpdatedAt: 2026-08-21T09:09:27.656Z
+releaseUpdatedAt: 2026-08-23T05:30:38.645Z
+metadataUpdatedAt: 2026-08-23T05:30:38.645Z
 starsUpdatedAt: 2026-08-18T15:41:48.437Z
-updatedAt: 2026-08-21T09:09:27.656Z
+updatedAt: 2026-08-23T05:30:38.645Z

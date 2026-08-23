@@ -19,6 +19,9 @@ install:
   target: github:youyli03/dsh-palenight-theme#94d2f61a679c6760c58357f5a0f2bee7c9bca906
   version: 1.0.0
   commit: 94d2f61a679c6760c58357f5a0f2bee7c9bca906
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -40,12 +43,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 94d2f61a679c6760c58357f5a0f2bee7c9bca906
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:35:31.925Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 127
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:58:24.026Z
-metadataUpdatedAt: 2026-08-20T10:01:25.222Z
+releaseUpdatedAt: 2026-08-23T05:35:32.005Z
+metadataUpdatedAt: 2026-08-23T05:35:32.005Z
 starsUpdatedAt: 2026-08-16T13:58:24.026Z
-updatedAt: 2026-08-20T10:01:25.222Z
+updatedAt: 2026-08-23T05:35:32.005Z

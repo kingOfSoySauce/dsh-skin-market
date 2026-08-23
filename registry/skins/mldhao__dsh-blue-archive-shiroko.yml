@@ -20,6 +20,9 @@ install:
   target: github:mldhao/dsh-blue-archive-shiroko#dffeebce96a606c22cf593be3affbf6620e91a9b
   version: 0.5.1
   commit: dffeebce96a606c22cf593be3affbf6620e91a9b
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -40,12 +43,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: dffeebce96a606c22cf593be3affbf6620e91a9b
+    packageVersion: 0.5.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:31:57.020Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 86
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16 13:53:22.631000+00:00
-metadataUpdatedAt: 2026-08-22T03:13:50.751Z
+releaseUpdatedAt: 2026-08-23T05:31:57.103Z
+metadataUpdatedAt: 2026-08-23T05:31:57.103Z
 starsUpdatedAt: 2026-08-16 13:53:22.631000+00:00
-updatedAt: 2026-08-22T03:13:50.751Z
+updatedAt: 2026-08-23T05:31:57.103Z

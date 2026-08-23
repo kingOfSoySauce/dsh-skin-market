@@ -21,6 +21,12 @@ install:
   target: github:ink5897/dsh-theme-kit#0b2101b431491c24143f939daea8fd773ca2c641
   version: 0.1.2
   commit: 0b2101b431491c24143f939daea8fd773ca2c641
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-kit
+    packageVersion: 0.1.2
+    integrity: sha512-ERy2rfGTDJXmWtRefhUtP88ycl03Oa1BCio862qMjYsadxIo/2r8e2zgOklmBxxNxg5g4dGFQlHUFGhgMTTvqg==
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -45,12 +51,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 0b2101b431491c24143f939daea8fd773ca2c641
+    packageVersion: 0.1.2
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:31:25.527Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 80
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:52:31.430Z
-metadataUpdatedAt: 2026-08-20T09:58:28.988Z
+releaseUpdatedAt: 2026-08-23T05:31:25.601Z
+metadataUpdatedAt: 2026-08-23T05:31:25.601Z
 starsUpdatedAt: 2026-08-16T13:52:31.430Z
-updatedAt: 2026-08-20T09:58:28.988Z
+updatedAt: 2026-08-23T05:31:25.601Z

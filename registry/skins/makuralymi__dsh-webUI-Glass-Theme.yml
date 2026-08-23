@@ -20,6 +20,9 @@ install:
   target: github:makuralymi/dsh-webUI-Glass-Theme#c2be1d9d171c533da441d560dc3411344dfc6ea4
   version: 0.5.0
   commit: c2be1d9d171c533da441d560dc3411344dfc6ea4
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -42,12 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: c2be1d9d171c533da441d560dc3411344dfc6ea4
+    packageVersion: 0.5.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:08.802Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 53
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-20T05:07:01.312Z
-metadataUpdatedAt: 2026-08-20T09:56:59.474Z
+releaseUpdatedAt: 2026-08-23T05:29:08.874Z
+metadataUpdatedAt: 2026-08-23T05:29:08.874Z
 starsUpdatedAt: 2026-08-18T15:40:20.925Z
-updatedAt: 2026-08-20T09:56:59.474Z
+updatedAt: 2026-08-23T05:29:08.874Z

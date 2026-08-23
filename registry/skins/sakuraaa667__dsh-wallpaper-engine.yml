@@ -18,6 +18,9 @@ install:
   target: github:sakuraaa667/dsh-wallpaper-engine#fba60078781763d80bb5b84b8f907ef98e3a632b
   version: 1.0.0
   commit: fba60078781763d80bb5b84b8f907ef98e3a632b
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -38,12 +41,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: fba60078781763d80bb5b84b8f907ef98e3a632b
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:35.636Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1007
-starsSnapshot: 5
-releaseUpdatedAt: 2026-08-20T05:08:48.396Z
-metadataUpdatedAt: 2026-08-20T09:59:04.073Z
-starsUpdatedAt: 2026-08-21T17:51:01.642Z
-updatedAt: 2026-08-21T17:51:01.642Z
+starsSnapshot: 6
+releaseUpdatedAt: 2026-08-23T05:28:35.729Z
+metadataUpdatedAt: 2026-08-23T05:28:35.729Z
+starsUpdatedAt: 2026-08-23T05:28:35.729Z
+updatedAt: 2026-08-23T05:28:35.729Z

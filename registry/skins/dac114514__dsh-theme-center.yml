@@ -20,6 +20,9 @@ install:
   target: github:dac114514/dsh-theme-center#705b65215d3a5de0e600c48fc1800863c8d1c923
   version: 1.0.1
   commit: 705b65215d3a5de0e600c48fc1800863c8d1c923
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -41,12 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 705b65215d3a5de0e600c48fc1800863c8d1c923
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:16.883Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 102
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:55:05.474Z
-metadataUpdatedAt: 2026-08-20T09:59:53.960Z
+releaseUpdatedAt: 2026-08-23T05:33:17.000Z
+metadataUpdatedAt: 2026-08-23T05:33:17.000Z
 starsUpdatedAt: 2026-08-16T13:55:05.474Z
-updatedAt: 2026-08-20T09:59:53.960Z
+updatedAt: 2026-08-23T05:33:17.000Z

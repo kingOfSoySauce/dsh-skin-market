@@ -17,22 +17,28 @@ tags:
 modes:
   - light
 install:
-  target: github:Yuuhann1999/dsh-bloub-mood#51cd388950582dea45c424ca8a85ac039a27f7b1
-  version: 2.4.2
-  commit: 51cd388950582dea45c424ca8a85ac039a27f7b1
+  target: github:Yuuhann1999/dsh-bloub-mood#c626528b3d6c32669c265d7144e85f60f48570d2
+  version: 2.4.4
+  commit: c626528b3d6c32669c265d7144e85f60f48570d2
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-bloub-mood
+    packageVersion: 2.4.4
+    integrity: sha512-mShun0DJXAM4rBo+eKuPsfEXlK+oVvuJFag1bGA+HlX5xtoToCdYPJeVM4QWvbX96LxuaaOfy3+81jl9paisig==
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/docs/settings-expressions.png
+  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/docs/settings-desktop-launch.png
+  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/docs/dock-icon.png
+  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/docs/desktop-app.png
   - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/settings-expressions.png
   - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/settings-desktop-launch.png
   - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/dock-icon.png
   - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/desktop-app.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/26f5beae93254bfad924d552e2d0e488f081a91b/docs/settings-expressions.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/26f5beae93254bfad924d552e2d0e488f081a91b/docs/settings-desktop-launch.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/26f5beae93254bfad924d552e2d0e488f081a91b/docs/dock-icon.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/26f5beae93254bfad924d552e2d0e488f081a91b/docs/desktop-app.png
 review:
   compatibility: unverified
   preview: verified
@@ -47,12 +53,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: c626528b3d6c32669c265d7144e85f60f48570d2
+    packageVersion: 2.4.4
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:40.853Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1003
 starsSnapshot: 3
-releaseUpdatedAt: 2026-08-21T17:51:18.029Z
-metadataUpdatedAt: 2026-08-21T17:51:18.029Z
+releaseUpdatedAt: 2026-08-23T05:29:40.934Z
+metadataUpdatedAt: 2026-08-23T05:29:40.934Z
 starsUpdatedAt: 2026-08-20T05:07:19.126Z
-updatedAt: 2026-08-21T17:51:18.029Z
+updatedAt: 2026-08-23T05:29:40.934Z

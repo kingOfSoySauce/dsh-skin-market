@@ -19,6 +19,9 @@ install:
   target: github:DarkskyX15/dsh-client-ui-m3-theme#5b167b8e1b544aa6224c1bb32bbb4d9a149e5f34
   version: 0.2.0
   commit: 5b167b8e1b544aa6224c1bb32bbb4d9a149e5f34
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -40,12 +43,21 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 5b167b8e1b544aa6224c1bb32bbb4d9a149e5f34
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:31:04.229Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 78
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16 13:52:11.206000+00:00
-metadataUpdatedAt: 2026-08-20T05:08:07.490Z
+releaseUpdatedAt: 2026-08-23T05:31:04.318Z
+metadataUpdatedAt: 2026-08-23T05:31:04.318Z
 starsUpdatedAt: 2026-08-16 13:52:11.206000+00:00
-updatedAt: 2026-08-20T05:08:07.490Z
+updatedAt: 2026-08-23T05:31:04.318Z

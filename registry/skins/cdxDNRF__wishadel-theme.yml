@@ -19,6 +19,9 @@ install:
   target: github:cdxDNRF/wishadel-theme#e0b2f2f49478d97bfe8eb84d8a1f3162c266b50c
   version: 0.6.0
   commit: e0b2f2f49478d97bfe8eb84d8a1f3162c266b50c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
   allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/e0b2f2f49478d97bfe8eb84d8a1f3162c266b50c"
 compatibility:
   dsh: 0.1.0-rc.6
@@ -44,12 +47,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: e0b2f2f49478d97bfe8eb84d8a1f3162c266b50c
+    packageVersion: 0.6.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:07.932Z
+    findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 99
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-20T09:59:44.463Z
-metadataUpdatedAt: 2026-08-20T09:59:44.463Z
+releaseUpdatedAt: 2026-08-23T05:33:07.986Z
+metadataUpdatedAt: 2026-08-23T05:33:07.986Z
 starsUpdatedAt: 2026-08-16T13:54:53.805Z
-updatedAt: 2026-08-20T09:59:44.463Z
+updatedAt: 2026-08-23T05:33:07.986Z

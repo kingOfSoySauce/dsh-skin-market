@@ -18,6 +18,9 @@ install:
   target: github:leamonac0823/dsh-cornell-classic-theme#0bcd3b5083ab8a9a0c3e68bd55c9c76dcb982a3b
   version: 0.2.0
   commit: 0bcd3b5083ab8a9a0c3e68bd55c9c76dcb982a3b
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -39,12 +42,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 0bcd3b5083ab8a9a0c3e68bd55c9c76dcb982a3b
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:34:02.090Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1022
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-21T17:54:05.161Z
-metadataUpdatedAt: 2026-08-21T17:54:05.161Z
+releaseUpdatedAt: 2026-08-23T05:34:02.168Z
+metadataUpdatedAt: 2026-08-23T05:34:02.168Z
 starsUpdatedAt: 2026-08-21T09:11:38.580Z
-updatedAt: 2026-08-21T17:54:05.161Z
+updatedAt: 2026-08-23T05:34:02.168Z

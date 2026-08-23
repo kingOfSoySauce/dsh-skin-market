@@ -21,6 +21,9 @@ install:
   target: github:laoduu/DeepSeek-Harness-yizi-themes#60c211626eb931f76bbb3f46edc1fc8116b69e4c
   version: 0.3.1
   commit: 60c211626eb931f76bbb3f46edc1fc8116b69e4c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
   allowBuild: dsh-yizi-themes@https://codeload.github.com/laoduu/DeepSeek-Harness-yizi-themes/tar.gz/60c211626eb931f76bbb3f46edc1fc8116b69e4c
 compatibility:
   dsh: 0.1.0-rc.8
@@ -44,12 +47,24 @@ health:
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 60c211626eb931f76bbb3f46edc1fc8116b69e4c
+    packageVersion: 0.3.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.8
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:30:23.784Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 83
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-21T09:09:19.394Z
-metadataUpdatedAt: 2026-08-21T09:09:19.394Z
+releaseUpdatedAt: 2026-08-23T05:30:23.866Z
+metadataUpdatedAt: 2026-08-23T05:30:23.866Z
 starsUpdatedAt: 2026-08-21T09:09:19.394Z
-updatedAt: 2026-08-21T09:09:19.394Z
+updatedAt: 2026-08-23T05:30:23.866Z

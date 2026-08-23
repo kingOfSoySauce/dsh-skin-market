@@ -21,6 +21,9 @@ install:
   target: github:Andy294753951/dsh-plugin-gouden-leeuw-theme#6ab4c2bc6fb88d41a02ad92c06aae6e46d05e078
   version: 0.4.0
   commit: 6ab4c2bc6fb88d41a02ad92c06aae6e46d05e078
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.1.0-rc.8 <0.2.0"
   platform:
@@ -41,12 +44,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: 6ab4c2bc6fb88d41a02ad92c06aae6e46d05e078
+    packageVersion: 0.4.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.8 <0.2.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:30:55.323Z
+    findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 77
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-21T17:52:00.832Z
-metadataUpdatedAt: 2026-08-21T17:52:00.832Z
+releaseUpdatedAt: 2026-08-23T05:30:55.404Z
+metadataUpdatedAt: 2026-08-23T05:30:55.404Z
 starsUpdatedAt: 2026-08-16 13:52:07.647000+00:00
-updatedAt: 2026-08-21T17:52:00.832Z
+updatedAt: 2026-08-23T05:30:55.404Z

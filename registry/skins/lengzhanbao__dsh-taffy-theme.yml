@@ -17,14 +17,19 @@ modes:
   - light
   - dark
 install:
-  target: github:lengzhanbao/dsh-taffy-theme#8a803b0901bf23d8af39f1b363dd232700941d00
+  target: github:lengzhanbao/dsh-taffy-theme#9236efc3bd279df3d732134e96b48192971bbbf6
   version: 0.1.2
-  commit: 8a803b0901bf23d8af39f1b363dd232700941d00
+  commit: 9236efc3bd279df3d732134e96b48192971bbbf6
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/9236efc3bd279df3d732134e96b48192971bbbf6/preview/light.webp
+  - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/9236efc3bd279df3d732134e96b48192971bbbf6/preview/dark.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/8a803b0901bf23d8af39f1b363dd232700941d00/preview/light.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/8a803b0901bf23d8af39f1b363dd232700941d00/preview/dark.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/6e40b87b2f706abad8dcfa1be06aea02e4abdbe3/preview/light.webp
@@ -44,12 +49,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 9236efc3bd279df3d732134e96b48192971bbbf6
+    packageVersion: 0.1.2
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:31:44.088Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1017
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-22T03:13:40.920Z
-metadataUpdatedAt: 2026-08-22T03:13:40.920Z
+releaseUpdatedAt: 2026-08-23T05:31:44.142Z
+metadataUpdatedAt: 2026-08-23T05:31:44.142Z
 starsUpdatedAt: 2026-08-21T09:10:13.888Z
-updatedAt: 2026-08-22T03:13:40.920Z
+updatedAt: 2026-08-23T05:31:44.142Z

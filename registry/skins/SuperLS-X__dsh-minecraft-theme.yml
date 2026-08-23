@@ -19,6 +19,9 @@ install:
   target: github:SuperLS-X/dsh-minecraft-theme#496d2377791368b0aebce6a6f06471e49b9f7597
   version: 0.1.2
   commit: 496d2377791368b0aebce6a6f06471e49b9f7597
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -45,12 +48,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 496d2377791368b0aebce6a6f06471e49b9f7597
+    packageVersion: 0.1.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:50.268Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1008
-starsSnapshot: 4
-releaseUpdatedAt: 2026-08-21T09:08:37.327Z
-metadataUpdatedAt: 2026-08-21T09:08:37.327Z
-starsUpdatedAt: 2026-08-20T09:57:00.543Z
-updatedAt: 2026-08-21T09:08:37.327Z
+starsSnapshot: 5
+releaseUpdatedAt: 2026-08-23T05:28:50.316Z
+metadataUpdatedAt: 2026-08-23T05:28:50.316Z
+starsUpdatedAt: 2026-08-23T05:28:50.316Z
+updatedAt: 2026-08-23T05:28:50.316Z

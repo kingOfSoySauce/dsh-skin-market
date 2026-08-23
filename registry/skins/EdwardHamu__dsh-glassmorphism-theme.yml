@@ -21,6 +21,9 @@ install:
   target: github:EdwardHamu/dsh-glassmorphism-theme#513d3e6fda73a3967942e427f23bc535d6ea606d
   version: 0.1.3
   commit: 513d3e6fda73a3967942e427f23bc535d6ea606d
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: unverified
   platform:
@@ -41,12 +44,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 513d3e6fda73a3967942e427f23bc535d6ea606d
+    packageVersion: 0.1.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:23.713Z
+    findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 1019
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-22T03:15:07.600Z
-metadataUpdatedAt: 2026-08-21T09:11:16.377Z
+releaseUpdatedAt: 2026-08-23T05:33:23.785Z
+metadataUpdatedAt: 2026-08-23T05:33:23.785Z
 starsUpdatedAt: 2026-08-21T09:11:16.377Z
-updatedAt: 2026-08-22T03:15:07.600Z
+updatedAt: 2026-08-23T05:33:23.785Z

@@ -19,14 +19,19 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#51ff7b80ee163596672b98194d8877e196ac460b&path:orca-link
+  target: github:Small-tailqwq/dsh-deep-whale#b693d2c224a0a6fb5b621e7cc1284f20d9849c1c&path:orca-link
   version: 0.0.1
-  commit: 51ff7b80ee163596672b98194d8877e196ac460b
+  commit: b693d2c224a0a6fb5b621e7cc1284f20d9849c1c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/orca-link/preview/light.png
+  - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/orca-link/preview/dark.png
   - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/51ff7b80ee163596672b98194d8877e196ac460b/orca-link/preview/light.png
   - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/51ff7b80ee163596672b98194d8877e196ac460b/orca-link/preview/dark.png
   - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/0a3d03251d1e88a08de79e27fb884ed9200913ad/orca-link/preview/light.png
@@ -48,13 +53,21 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: b693d2c224a0a6fb5b621e7cc1284f20d9849c1c
+    packageVersion: 0.0.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:26:46.884Z
+    findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
 featuredRank: 3
-starsSnapshot: 1564
-releaseUpdatedAt: 2026-08-21T17:49:31.150Z
-metadataUpdatedAt: 2026-08-21T17:49:31.150Z
-starsUpdatedAt: 2026-08-22T03:09:47.010Z
-updatedAt: 2026-08-22T03:09:47.010Z
+starsSnapshot: 1607
+releaseUpdatedAt: 2026-08-23T05:26:46.935Z
+metadataUpdatedAt: 2026-08-23T05:26:46.935Z
+starsUpdatedAt: 2026-08-23T05:26:46.935Z
+updatedAt: 2026-08-23T05:26:46.935Z

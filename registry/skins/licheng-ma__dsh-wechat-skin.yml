@@ -18,6 +18,9 @@ install:
   target: github:licheng-ma/dsh-wechat-skin#9528966105ab074631a9b3f7bdf8e2c0a13e3297
   version: 1.0.0
   commit: 9528966105ab074631a9b3f7bdf8e2c0a13e3297
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -37,12 +40,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 9528966105ab074631a9b3f7bdf8e2c0a13e3297
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:34:08.794Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 112
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:56:36.780Z
-metadataUpdatedAt: 2026-08-20T10:00:28.244Z
+releaseUpdatedAt: 2026-08-23T05:34:08.869Z
+metadataUpdatedAt: 2026-08-23T05:34:08.869Z
 starsUpdatedAt: 2026-08-16T13:56:36.780Z
-updatedAt: 2026-08-20T10:00:28.244Z
+updatedAt: 2026-08-23T05:34:08.869Z

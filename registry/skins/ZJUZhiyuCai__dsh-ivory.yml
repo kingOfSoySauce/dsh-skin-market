@@ -19,6 +19,9 @@ install:
   target: github:ZJUZhiyuCai/dsh-ivory#ac0c8d8f2b9734670ffe7acd891a4cb8f5325741
   version: 0.2.6
   commit: ac0c8d8f2b9734670ffe7acd891a4cb8f5325741
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepack
 compatibility:
   dsh: 0.1.0-rc.7
   platform:
@@ -45,12 +48,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: ac0c8d8f2b9734670ffe7acd891a4cb8f5325741
+    packageVersion: 0.2.6
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.7
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:50.597Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 129
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-22T03:14:37.606Z
-metadataUpdatedAt: 2026-08-22T03:14:37.606Z
+releaseUpdatedAt: 2026-08-23T05:32:50.670Z
+metadataUpdatedAt: 2026-08-23T05:32:50.670Z
 starsUpdatedAt: 2026-08-18T15:43:57.184Z
-updatedAt: 2026-08-22T03:14:37.606Z
+updatedAt: 2026-08-23T05:32:50.670Z

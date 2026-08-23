@@ -16,20 +16,25 @@ modes:
   - light
   - dark
 install:
-  target: github:Nagi-ovo/dsh-ads#3a2ba704bc383099c686d3288ff6e0d61fc391e5
+  target: github:Nagi-ovo/dsh-ads#aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22
   version: 0.1.0
-  commit: 3a2ba704bc383099c686d3288ff6e0d61fc391e5
+  commit: aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22/assets/screenshot.webp
+  - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22/assets/english-mode.png
+  - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22/assets/settings.webp
+  - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22/assets/social-preview.jpg
+  - https://dshfind.com/api/card/Nagi-ovo/dsh-ads?lang=zh
+  - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22/assets/reward-gate.png
   - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/3a2ba704bc383099c686d3288ff6e0d61fc391e5/assets/screenshot.webp
   - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/3a2ba704bc383099c686d3288ff6e0d61fc391e5/assets/english-mode.png
-  - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/3a2ba704bc383099c686d3288ff6e0d61fc391e5/assets/settings.webp
-  - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/3a2ba704bc383099c686d3288ff6e0d61fc391e5/assets/social-preview.jpg
-  - https://dshfind.com/api/card/Nagi-ovo/dsh-ads?lang=zh
-  - https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/3a2ba704bc383099c686d3288ff6e0d61fc391e5/assets/reward-gate.png
 review:
   compatibility: verified
   preview: verified
@@ -43,12 +48,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: aa752ed8d24d0a4b5ce1fde4b99b0d9d7f5a1e22
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:26:49.927Z
+    findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 142
-starsSnapshot: 529
-releaseUpdatedAt: 2026-08-18T02:28:44+01:00
-metadataUpdatedAt: 2026-08-20T09:55:22.655Z
-starsUpdatedAt: 2026-08-22T03:09:51.482Z
-updatedAt: 2026-08-22T03:09:51.482Z
+starsSnapshot: 542
+releaseUpdatedAt: 2026-08-23T05:26:49.989Z
+metadataUpdatedAt: 2026-08-23T05:26:49.989Z
+starsUpdatedAt: 2026-08-23T05:26:49.989Z
+updatedAt: 2026-08-23T05:26:49.989Z

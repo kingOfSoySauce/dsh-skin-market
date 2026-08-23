@@ -21,6 +21,9 @@ install:
   target: github:huabai-flowerwhite/dsh-ui-skin#c7c01e5fc9d205d6020078e95739c96d08a6b5ab
   version: 1.0.0
   commit: c7c01e5fc9d205d6020078e95739c96d08a6b5ab
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -41,12 +44,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: c7c01e5fc9d205d6020078e95739c96d08a6b5ab
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:30:21.098Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1015
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-21T09:09:17.713Z
-metadataUpdatedAt: 2026-08-22T03:12:30.657Z
+releaseUpdatedAt: 2026-08-23T05:30:21.167Z
+metadataUpdatedAt: 2026-08-23T05:30:21.167Z
 starsUpdatedAt: 2026-08-21T09:09:17.713Z
-updatedAt: 2026-08-22T03:12:30.657Z
+updatedAt: 2026-08-23T05:30:21.167Z

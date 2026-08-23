@@ -17,13 +17,20 @@ tags:
 modes:
   - dark
 install:
-  target: github:ymh0000123/dsh-theme-endfield#e426e34667514a6c3f4f9c711899389e5485e725
+  target: github:ymh0000123/dsh-theme-endfield#3315a8740b374e7de9348ceeefbf73ded7b9c365
   version: 1.0.0
-  commit: e426e34667514a6c3f4f9c711899389e5485e725
+  commit: 3315a8740b374e7de9348ceeefbf73ded7b9c365
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/48ad12921bd6d36286d67fa483472eb32d90b6ee/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/48ad12921bd6d36286d67fa483472eb32d90b6ee/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/48ad12921bd6d36286d67fa483472eb32d90b6ee/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -40,16 +47,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 3315a8740b374e7de9348ceeefbf73ded7b9c365
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:27:39.059Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 154
-starsSnapshot: 12
-releaseUpdatedAt: 2026-08-21T17:50:13.748Z
-metadataUpdatedAt: 2026-08-18 15:42:02.669000+00:00
-starsUpdatedAt: 2026-08-22T03:10:37.916Z
-updatedAt: 2026-08-22T03:10:37.916Z
-marketScreenshots:
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/48ad12921bd6d36286d67fa483472eb32d90b6ee/home.png
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/48ad12921bd6d36286d67fa483472eb32d90b6ee/conversation.png
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/48ad12921bd6d36286d67fa483472eb32d90b6ee/settings.png
+starsSnapshot: 18
+releaseUpdatedAt: 2026-08-23T05:27:39.156Z
+metadataUpdatedAt: 2026-08-23T05:27:39.156Z
+starsUpdatedAt: 2026-08-23T05:27:39.156Z
+updatedAt: 2026-08-23T05:27:39.156Z

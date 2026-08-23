@@ -9,20 +9,23 @@ package: dsh-theme-picker
 rowId: dsh-theme-picker
 category: theme
 tags:
-- token-theme
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:yhPrime/dsh-theme-picker#3177474137d99d65242a1718a28c175f6b3461b8
   version: 1.0.0
   commit: 3177474137d99d65242a1718a28c175f6b3461b8
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/yhprime.dsh-theme-picker
+  - https://opengraph.githubassets.com/placeholder/yhprime.dsh-theme-picker
 review:
   compatibility: unverified
   preview: repository-card
@@ -36,14 +39,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 3177474137d99d65242a1718a28c175f6b3461b8
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:38.688Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 165
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18 15:43:47.882000+00:00
-metadataUpdatedAt: 2026-08-18 15:43:47.882000+00:00
+releaseUpdatedAt: 2026-08-23T05:32:38.770Z
+metadataUpdatedAt: 2026-08-23T05:32:38.770Z
 starsUpdatedAt: 2026-08-18 15:43:47.882000+00:00
-updatedAt: 2026-08-18 15:43:47.882000+00:00
+updatedAt: 2026-08-23T05:32:38.770Z

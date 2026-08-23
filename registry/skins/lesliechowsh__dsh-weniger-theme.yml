@@ -19,6 +19,12 @@ install:
   target: github:lesliechowsh/dsh-weniger-theme#b88ab91040ea396e9c8cff7f13317532711eb2e3
   version: 0.1.4
   commit: b88ab91040ea396e9c8cff7f13317532711eb2e3
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-weniger-theme
+    packageVersion: 0.1.4
+    integrity: sha512-B/l6zkB22NGYfLG0vPRLPdlNiK3bdH4BVRBye9NCMowDTGz/5OjETEBYtxGMDdUb7oo+HEbiUKxR7Tc+4T2Ydw==
 compatibility:
   dsh: unverified
   platform:
@@ -41,12 +47,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: b88ab91040ea396e9c8cff7f13317532711eb2e3
+    packageVersion: 0.1.4
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:05.960Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 209
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-20T09:58:41.587Z
-metadataUpdatedAt: 2026-08-20T09:58:41.587Z
+releaseUpdatedAt: 2026-08-23T05:29:06.039Z
+metadataUpdatedAt: 2026-08-23T05:29:06.039Z
 starsUpdatedAt: 2026-08-21T09:08:34.148Z
-updatedAt: 2026-08-21T09:08:34.148Z
+updatedAt: 2026-08-23T05:29:06.039Z

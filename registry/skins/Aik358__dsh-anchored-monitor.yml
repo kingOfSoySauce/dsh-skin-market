@@ -18,6 +18,12 @@ install:
   target: github:Aik358/dsh-anchored-monitor#8cb863fa50c3d17dec2683a247b93f90deeb5a16
   version: 0.3.0
   commit: 8cb863fa50c3d17dec2683a247b93f90deeb5a16
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@a9i5k4/dsh-anchored-monitor"
+    packageVersion: 0.3.0
+    integrity: sha512-YxwjBXGlDLIySpvgb0RtK17Via8H9lWsSjjc/fvilC5uFznQ9Fx4GQz385U55BoQBWWOouuNTPVeaLAXkxTwZw==
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
@@ -38,12 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 8cb863fa50c3d17dec2683a247b93f90deeb5a16
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:27.325Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 155
-starsSnapshot: 5
-releaseUpdatedAt: 2026-08-20T05:07:05.976Z
-metadataUpdatedAt: 2026-08-20T09:56:50.641Z
-starsUpdatedAt: 2026-08-21T17:50:41.493Z
-updatedAt: 2026-08-21T17:50:41.493Z
+starsSnapshot: 6
+releaseUpdatedAt: 2026-08-23T05:28:27.412Z
+metadataUpdatedAt: 2026-08-23T05:28:27.412Z
+starsUpdatedAt: 2026-08-23T05:28:27.412Z
+updatedAt: 2026-08-23T05:28:27.412Z

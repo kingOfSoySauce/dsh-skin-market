@@ -9,22 +9,25 @@ package: dsh-vscode-theme
 rowId: vscode-theme
 category: theme
 tags:
-- wallpaper
-- retro
-- token-theme
-- light-dark
+  - wallpaper
+  - retro
+  - token-theme
+  - light-dark
 modes:
-- dark
+  - dark
 install:
   target: github:Sim-xia/dsh-vscode-theme#1e22fa74783f5f84e7ecb8d7b96fb2997dc9d4f8
   version: 0.1.0
   commit: 1e22fa74783f5f84e7ecb8d7b96fb2997dc9d4f8
+  desktop:
+    mode: manual-only
+    reason: npm-package-deprecated
 compatibility:
-  dsh: '>=0.0.1-rc.1'
+  dsh: ">=0.0.1-rc.1"
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/sim-xia.dsh-vscode-theme
+  - https://opengraph.githubassets.com/placeholder/sim-xia.dsh-vscode-theme
 review:
   compatibility: verified
   preview: repository-card
@@ -38,13 +41,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: 1e22fa74783f5f84e7ecb8d7b96fb2997dc9d4f8
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.0.1-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:20.901Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 35
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16 12:17:02.328000+00:00
-metadataUpdatedAt: 2026-08-18 15:43:34.062000+00:00
+releaseUpdatedAt: 2026-08-23T05:32:20.972Z
+metadataUpdatedAt: 2026-08-23T05:32:20.972Z
 starsUpdatedAt: 2026-08-18 15:43:34.062000+00:00
-updatedAt: 2026-08-18 15:43:34.062000+00:00
+updatedAt: 2026-08-23T05:32:20.972Z

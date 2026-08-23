@@ -20,6 +20,9 @@ install:
   target: github:mtaech/dsh-material-you#ed551a54dbf7f666e96b85f650cf01870117aba1
   version: 0.1.0-rc.2
   commit: ed551a54dbf7f666e96b85f650cf01870117aba1
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -39,12 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: ed551a54dbf7f666e96b85f650cf01870117aba1
+    packageVersion: 0.1.0-rc.2
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:00.338Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 87
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:53:28.039Z
-metadataUpdatedAt: 2026-08-20T09:58:52.911Z
+releaseUpdatedAt: 2026-08-23T05:32:00.339Z
+metadataUpdatedAt: 2026-08-23T05:32:00.339Z
 starsUpdatedAt: 2026-08-16T13:53:28.039Z
-updatedAt: 2026-08-20T09:58:52.911Z
+updatedAt: 2026-08-23T05:32:00.339Z

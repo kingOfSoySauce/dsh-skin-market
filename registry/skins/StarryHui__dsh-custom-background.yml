@@ -18,6 +18,9 @@ install:
   target: github:StarryHui/dsh-custom-background#f20300f49ee95fef949c5d55e6a6bbd62c5d692d
   version: 0.1.0
   commit: f20300f49ee95fef949c5d55e6a6bbd62c5d692d
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: unverified
   platform:
@@ -39,12 +42,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: f20300f49ee95fef949c5d55e6a6bbd62c5d692d
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:22.574Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 204
-starsSnapshot: 5
-releaseUpdatedAt: 2026-08-19T04:35:31.190Z
-metadataUpdatedAt: 2026-08-20T09:56:46.047Z
-starsUpdatedAt: 2026-08-20T05:06:51.892Z
-updatedAt: 2026-08-20T09:56:46.047Z
+starsSnapshot: 7
+releaseUpdatedAt: 2026-08-23T05:28:22.691Z
+metadataUpdatedAt: 2026-08-23T05:28:22.691Z
+starsUpdatedAt: 2026-08-23T05:28:22.691Z
+updatedAt: 2026-08-23T05:28:22.691Z

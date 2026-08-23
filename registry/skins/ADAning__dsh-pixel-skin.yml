@@ -20,6 +20,9 @@ install:
   target: github:ADAning/dsh-pixel-skin#cd34110195a94ca785f32e9b45d2f6e4bc685b1a
   version: 0.1.0
   commit: cd34110195a94ca785f32e9b45d2f6e4bc685b1a
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: unverified
   platform:
@@ -43,12 +46,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: cd34110195a94ca785f32e9b45d2f6e4bc685b1a
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:55.029Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 98
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:44:03.968Z
-metadataUpdatedAt: 2026-08-20T09:59:33.353Z
+releaseUpdatedAt: 2026-08-23T05:32:55.099Z
+metadataUpdatedAt: 2026-08-23T05:32:55.099Z
 starsUpdatedAt: 2026-08-16T13:54:49.092Z
-updatedAt: 2026-08-20T09:59:33.353Z
+updatedAt: 2026-08-23T05:32:55.099Z

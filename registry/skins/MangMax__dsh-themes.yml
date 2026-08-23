@@ -19,6 +19,9 @@ install:
   target: github:MangMax/dsh-themes#85fe103cc2792da5eec2d57b045509256a5206d1
   version: 0.1.8
   commit: 85fe103cc2792da5eec2d57b045509256a5206d1
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: unverified
   platform:
@@ -40,12 +43,23 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 85fe103cc2792da5eec2d57b045509256a5206d1
+    packageVersion: 0.1.8
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:31:52.578Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 30
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:43:10.613Z
-metadataUpdatedAt: 2026-08-20T09:58:48.348Z
+releaseUpdatedAt: 2026-08-23T05:31:52.649Z
+metadataUpdatedAt: 2026-08-23T05:31:52.649Z
 starsUpdatedAt: 2026-08-16T12:16:26.193Z
-updatedAt: 2026-08-20T09:58:48.348Z
+updatedAt: 2026-08-23T05:31:52.649Z

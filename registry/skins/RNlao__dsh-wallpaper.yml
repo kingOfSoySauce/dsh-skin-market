@@ -19,6 +19,9 @@ install:
   target: github:RNlao/dsh-wallpaper#cfa4bce21d2d6ee4944656658052e5391a5c81a5
   version: 0.1.0
   commit: cfa4bce21d2d6ee4944656658052e5391a5c81a5
+  desktop:
+    mode: manual-only
+    reason: npm-package-deprecated
 compatibility:
   dsh: unverified
   platform:
@@ -39,12 +42,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: cfa4bce21d2d6ee4944656658052e5391a5c81a5
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:30:36.942Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1004
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-20T05:07:48.948Z
-metadataUpdatedAt: 2026-08-20T09:57:52.295Z
+releaseUpdatedAt: 2026-08-23T05:30:37.017Z
+metadataUpdatedAt: 2026-08-23T05:30:37.017Z
 starsUpdatedAt: 2026-08-20T05:07:48.948Z
-updatedAt: 2026-08-20T09:57:52.295Z
+updatedAt: 2026-08-23T05:30:37.017Z

@@ -17,6 +17,12 @@ install:
   target: github:zhxqc/dsh-oh-my-theme#6dbea1ac6131abccea755551eb294a8cc4805786
   version: 0.6.0
   commit: 6dbea1ac6131abccea755551eb294a8cc4805786
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-oh-my-theme
+    packageVersion: 0.6.0
+    integrity: sha512-1TDG5zGZ//MhG71l4T2EfYueVSDS/TiRFD2Mb/QWW5AI1n7Y4kfiIoi2u+e/K4wTZutrcx/GH6WEtIo9eSw7xA==
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -40,12 +46,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 6dbea1ac6131abccea755551eb294a8cc4805786
+    packageVersion: 0.6.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:38.457Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 10
 starsSnapshot: 6
-releaseUpdatedAt: 2026-08-18 15:40:25.196000+00:00
-metadataUpdatedAt: 2026-08-22T03:11:09.824Z
+releaseUpdatedAt: 2026-08-23T05:28:38.539Z
+metadataUpdatedAt: 2026-08-23T05:28:38.539Z
 starsUpdatedAt: 2026-08-20T05:06:53.867Z
-updatedAt: 2026-08-22T03:11:09.824Z
+updatedAt: 2026-08-23T05:28:38.539Z

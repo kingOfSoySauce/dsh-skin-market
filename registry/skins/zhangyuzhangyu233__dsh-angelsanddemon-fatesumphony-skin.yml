@@ -21,6 +21,9 @@ install:
   target: github:zhangyuzhangyu233/dsh-angelsanddemon-fatesumphony-skin#32f389260a6bef7af235fda58ad6acd75e054dda
   version: 1.0.7
   commit: 32f389260a6bef7af235fda58ad6acd75e054dda
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: unverified
   platform:
@@ -43,12 +46,20 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 32f389260a6bef7af235fda58ad6acd75e054dda
+    packageVersion: 1.0.7
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:46.757Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 199
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-20T05:10:56.716Z
-metadataUpdatedAt: 2026-08-20T05:10:56.716Z
+releaseUpdatedAt: 2026-08-23T05:32:46.817Z
+metadataUpdatedAt: 2026-08-23T05:32:46.817Z
 starsUpdatedAt: 2026-08-20T06:28:23.497Z
-updatedAt: 2026-08-20T06:28:23.497Z
+updatedAt: 2026-08-23T05:32:46.817Z

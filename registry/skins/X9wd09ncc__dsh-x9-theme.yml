@@ -22,6 +22,9 @@ install:
   target: github:X9wd09ncc/dsh-x9-theme#9af49294ab82a3ca1e6c5ab9df46179a5bd9489b
   version: 9.3.0
   commit: 9af49294ab82a3ca1e6c5ab9df46179a5bd9489b
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -42,12 +45,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 9af49294ab82a3ca1e6c5ab9df46179a5bd9489b
+    packageVersion: 9.3.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:36.001Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 96
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18 15:43:45.074000+00:00
-metadataUpdatedAt: 2026-08-22T03:14:25.949Z
+releaseUpdatedAt: 2026-08-23T05:32:36.076Z
+metadataUpdatedAt: 2026-08-23T05:32:36.076Z
 starsUpdatedAt: 2026-08-16 13:54:32.014000+00:00
-updatedAt: 2026-08-22T03:14:25.949Z
+updatedAt: 2026-08-23T05:32:36.076Z

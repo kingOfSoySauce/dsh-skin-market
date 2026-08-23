@@ -17,6 +17,9 @@ install:
   target: github:xxxrickymorty-dev/dsh-rick#0d17edfc9545cb456c9bde912e9b4fdddeabc4b3
   version: 0.1.0
   commit: 0d17edfc9545cb456c9bde912e9b4fdddeabc4b3
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
   platform:
@@ -36,12 +39,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 0d17edfc9545cb456c9bde912e9b4fdddeabc4b3
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:35:21.351Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 196
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18 15:46:32.876000+00:00
-metadataUpdatedAt: 2026-08-22T03:16:49.023Z
+releaseUpdatedAt: 2026-08-23T05:35:21.430Z
+metadataUpdatedAt: 2026-08-23T05:35:21.430Z
 starsUpdatedAt: 2026-08-18 15:46:32.876000+00:00
-updatedAt: 2026-08-22T03:16:49.023Z
+updatedAt: 2026-08-23T05:35:21.430Z

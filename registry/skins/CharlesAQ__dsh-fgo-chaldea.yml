@@ -21,6 +21,9 @@ install:
   target: github:CharlesAQ/dsh-fgo-chaldea#e769eb31089880d156dc0cf9e98f1fa14bb7c5b9
   version: 0.2.1
   commit: e769eb31089880d156dc0cf9e98f1fa14bb7c5b9
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
@@ -41,12 +44,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: e769eb31089880d156dc0cf9e98f1fa14bb7c5b9
+    packageVersion: 0.2.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:10.791Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 100
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16 13:54:57.394000+00:00
-metadataUpdatedAt: 2026-08-20T05:09:23.147Z
+releaseUpdatedAt: 2026-08-23T05:33:10.870Z
+metadataUpdatedAt: 2026-08-23T05:33:10.870Z
 starsUpdatedAt: 2026-08-16 13:54:57.394000+00:00
-updatedAt: 2026-08-20T05:09:23.147Z
+updatedAt: 2026-08-23T05:33:10.870Z

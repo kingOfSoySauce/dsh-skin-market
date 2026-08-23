@@ -20,6 +20,12 @@ install:
   target: github:Lhy723/dsh-neu-theme#54f4a07c0364f9f9d571a1384471e3825e1c14a4
   version: 0.1.0
   commit: 54f4a07c0364f9f9d571a1384471e3825e1c14a4
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-neu-theme
+    packageVersion: 0.1.0
+    integrity: sha512-ZH3xVtpDvw11zpN0RotrV0u6ODoEGbDwYw6QclCU7MFf/rx32eDOJoGUIYEPZ3ANWcIkAIMROjnRx2z8Z89kOA==
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -42,12 +48,24 @@ health:
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 54f4a07c0364f9f9d571a1384471e3825e1c14a4
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:29:07.286Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 11
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-18T15:40:45.859Z
-metadataUpdatedAt: 2026-08-20T09:57:12.547Z
+releaseUpdatedAt: 2026-08-23T05:29:07.365Z
+metadataUpdatedAt: 2026-08-23T05:29:07.365Z
 starsUpdatedAt: 2026-08-21T09:08:50.148Z
-updatedAt: 2026-08-21T09:08:50.148Z
+updatedAt: 2026-08-23T05:29:07.365Z

@@ -18,14 +18,19 @@ modes:
   - light
   - dark
 install:
-  target: github:rison114514/dsh-endfield-ui#ca61738988433a404a942d94f9e4a79500f0609c&path:endfield-ui-plugin
-  version: 0.6.0
-  commit: ca61738988433a404a942d94f9e4a79500f0609c
+  target: github:rison114514/dsh-endfield-ui#66b05412f3f5df4d497cd9f86ec96656a2be4648&path:endfield-ui-plugin
+  version: 0.7.0
+  commit: 66b05412f3f5df4d497cd9f86ec96656a2be4648
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/66b05412f3f5df4d497cd9f86ec96656a2be4648/dsh-packaged-final.jpg
+  - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/66b05412f3f5df4d497cd9f86ec96656a2be4648/dsh-settings-final.jpg
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/ca61738988433a404a942d94f9e4a79500f0609c/dsh-packaged-final.jpg
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/ca61738988433a404a942d94f9e4a79500f0609c/dsh-settings-final.jpg
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/dsh-packaged-final.jpg
@@ -45,13 +50,22 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 66b05412f3f5df4d497cd9f86ec96656a2be4648
+    packageVersion: 0.7.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:27:21.396Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
   notice: 插件代码在 package.json 中声明为 MIT；仓库同时说明第三方字体、游戏视觉素材和品牌/角色素材的授权范围仍需逐项确认，因此市场不将整体素材视为可商业再分发。
 featuredRank: 143
-starsSnapshot: 28
-releaseUpdatedAt: 2026-08-20T05:06:20.536Z
-metadataUpdatedAt: 2026-08-20T09:55:51.419Z
-starsUpdatedAt: 2026-08-21T17:49:56.231Z
-updatedAt: 2026-08-21T17:49:56.231Z
+starsSnapshot: 30
+releaseUpdatedAt: 2026-08-23T05:27:21.447Z
+metadataUpdatedAt: 2026-08-23T05:27:21.447Z
+starsUpdatedAt: 2026-08-23T05:27:21.447Z
+updatedAt: 2026-08-23T05:27:21.447Z

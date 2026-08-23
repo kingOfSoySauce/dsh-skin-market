@@ -22,6 +22,9 @@ install:
   target: github:Misaki14987/dsh-theme-taffy#58761735d967c3cbf551a9bd7aa292bb13258853
   version: 0.3.0
   commit: 58761735d967c3cbf551a9bd7aa292bb13258853
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -42,12 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 58761735d967c3cbf551a9bd7aa292bb13258853
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:33.854Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 44
 starsSnapshot: 6
-releaseUpdatedAt: 2026-08-16T13:48:03.686Z
-metadataUpdatedAt: 2026-08-20T09:56:26.591Z
+releaseUpdatedAt: 2026-08-23T05:28:33.931Z
+metadataUpdatedAt: 2026-08-23T05:28:33.931Z
 starsUpdatedAt: 2026-08-18T15:39:47.552Z
-updatedAt: 2026-08-20T09:56:26.591Z
+updatedAt: 2026-08-23T05:28:33.931Z

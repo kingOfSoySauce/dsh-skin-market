@@ -20,6 +20,9 @@ install:
   target: github:SenryLee/dsh-frosted-window#ccee61d02837d2e3e3160743c07c8627a40c3438
   version: 0.1.0
   commit: ccee61d02837d2e3e3160743c07c8627a40c3438
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
   allowBuild: dsh-frosted-window@https://codeload.github.com/SenryLee/dsh-frosted-window/tar.gz/ccee61d02837d2e3e3160743c07c8627a40c3438
 compatibility:
   dsh: unverified
@@ -41,12 +44,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: ccee61d02837d2e3e3160743c07c8627a40c3438
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:19.428Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 31
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:43:32.583Z
-metadataUpdatedAt: 2026-08-20T09:59:05.199Z
+releaseUpdatedAt: 2026-08-23T05:32:19.516Z
+metadataUpdatedAt: 2026-08-23T05:32:19.516Z
 starsUpdatedAt: 2026-08-16T12:16:30.062Z
-updatedAt: 2026-08-20T09:59:05.199Z
+updatedAt: 2026-08-23T05:32:19.516Z

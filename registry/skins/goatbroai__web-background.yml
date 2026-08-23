@@ -18,6 +18,9 @@ install:
   target: github:goatbroai/web-background#7cd751575f590c509c9c7545dbfd48d983aa3640
   version: 0.1.0
   commit: 7cd751575f590c509c9c7545dbfd48d983aa3640
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -38,12 +41,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 7cd751575f590c509c9c7545dbfd48d983aa3640
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:33.179Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1012
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-20T05:09:40.396Z
-metadataUpdatedAt: 2026-08-20T10:00:06.214Z
+releaseUpdatedAt: 2026-08-23T05:33:33.310Z
+metadataUpdatedAt: 2026-08-23T05:33:33.310Z
 starsUpdatedAt: 2026-08-20T05:09:40.396Z
-updatedAt: 2026-08-20T10:00:06.214Z
+updatedAt: 2026-08-23T05:33:33.310Z

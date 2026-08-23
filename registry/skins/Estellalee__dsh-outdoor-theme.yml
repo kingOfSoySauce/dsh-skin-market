@@ -20,6 +20,9 @@ install:
   target: github:Estellalee/dsh-outdoor-theme#236e5426f9a833191dd57758caef1fcd076d51ad
   version: 2.0.0
   commit: 236e5426f9a833191dd57758caef1fcd076d51ad
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -43,12 +46,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 236e5426f9a833191dd57758caef1fcd076d51ad
+    packageVersion: 2.0.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:00.881Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 49
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-16T13:48:50.122Z
-metadataUpdatedAt: 2026-08-20T09:56:56.192Z
+releaseUpdatedAt: 2026-08-23T05:29:00.959Z
+metadataUpdatedAt: 2026-08-23T05:29:00.959Z
 starsUpdatedAt: 2026-08-18T15:40:12.882Z
-updatedAt: 2026-08-20T09:56:56.192Z
+updatedAt: 2026-08-23T05:29:00.959Z

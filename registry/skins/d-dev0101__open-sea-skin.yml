@@ -21,6 +21,9 @@ install:
   target: github:d-dev0101/open-sea-skin#2437d80a96de4124c54fbe89872fa7090103f025
   version: 1.2.1
   commit: 2437d80a96de4124c54fbe89872fa7090103f025
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -47,13 +50,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 2437d80a96de4124c54fbe89872fa7090103f025
+    packageVersion: 1.2.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:26:54.421Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
   notice: Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1.
 featuredRank: 0
-starsSnapshot: 185
-releaseUpdatedAt: 2026-08-20T05:05:41.832Z
-metadataUpdatedAt: 2026-08-20T09:55:26.252Z
-starsUpdatedAt: 2026-08-21T09:07:12.988Z
-updatedAt: 2026-08-21T09:07:12.988Z
+starsSnapshot: 186
+releaseUpdatedAt: 2026-08-23T05:26:54.494Z
+metadataUpdatedAt: 2026-08-23T05:26:54.494Z
+starsUpdatedAt: 2026-08-23T05:26:54.494Z
+updatedAt: 2026-08-23T05:26:54.494Z

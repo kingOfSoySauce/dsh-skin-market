@@ -18,6 +18,9 @@ install:
   target: github:springbrand-lab/dsh-skin-universe#29fa777bdd8c9f7d93700c56c11a96a32634d967&path:packages/dsh-web-ui-all
   version: 0.1.7
   commit: 29fa777bdd8c9f7d93700c56c11a96a32634d967
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
   allowBuild: "@linxin666/dsh-web-ui-all@https://codeload.github.com/springbrand-lab/dsh-skin-universe/tar.gz/29fa777bdd8c9f7d93700c56c11a96a32634d967#path:packages/dsh-web-ui-all"
 compatibility:
   dsh: unverified
@@ -41,12 +44,20 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 29fa777bdd8c9f7d93700c56c11a96a32634d967
+    packageVersion: 0.1.7
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:48.809Z
+    findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 203
 starsSnapshot: 5
-releaseUpdatedAt: 2026-08-19T04:34:49.785Z
-metadataUpdatedAt: 2026-08-19T04:34:49.785Z
+releaseUpdatedAt: 2026-08-23T05:28:48.890Z
+metadataUpdatedAt: 2026-08-23T05:28:48.890Z
 starsUpdatedAt: 2026-08-19T04:34:49.785Z
-updatedAt: 2026-08-19T04:34:49.785Z
+updatedAt: 2026-08-23T05:28:48.890Z

@@ -1,0 +1,61 @@
+id: eachsheep.dsh-mario-pixel-skin
+name:
+  zh: dsh-mario-pixel-skin
+  en: dsh-mario-pixel-skin
+author: EachSheep
+description: 给 DSH Desktop 和 Web UI 用的马里奥像素皮肤。它会替换背景、标题栏、侧栏、输入区、设置页和常用控件的外观，DSH 的会话、模型、权限与工具行为保持原样。
+repo: https://github.com/EachSheep/dsh-mario-pixel-skin
+package: dsh-client-ui-skin-pixel-kingdom
+rowId: ui-skin-pixel-kingdom
+category: theme
+tags:
+  - wallpaper
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:EachSheep/dsh-mario-pixel-skin#688952dd378652e64c0377980e5fd242a6e7f86b
+  version: 0.3.1
+  commit: 688952dd378652e64c0377980e5fd242a6e7f86b
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/EachSheep/dsh-mario-pixel-skin/688952dd378652e64c0377980e5fd242a6e7f86b/docs/images/main-view.png
+  - https://raw.githubusercontent.com/EachSheep/dsh-mario-pixel-skin/688952dd378652e64c0377980e5fd242a6e7f86b/docs/images/settings-view.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 688952dd378652e64c0377980e5fd242a6e7f86b
+    packageVersion: 0.3.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:42.433Z
+    findings: []
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1029
+starsSnapshot: 5
+releaseUpdatedAt: 2026-08-23T05:28:42.509Z
+metadataUpdatedAt: 2026-08-23T05:28:42.509Z
+starsUpdatedAt: 2026-08-23T05:28:42.509Z
+updatedAt: 2026-08-23T05:28:42.509Z

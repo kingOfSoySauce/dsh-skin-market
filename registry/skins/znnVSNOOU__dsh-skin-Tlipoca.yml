@@ -19,6 +19,9 @@ install:
   target: github:znnVSNOOU/dsh-skin-Tlipoca#0e2cb5766c324371a62397152f560e05c6b74ece
   version: 1.0.0
   commit: 0e2cb5766c324371a62397152f560e05c6b74ece
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -40,12 +43,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 0e2cb5766c324371a62397152f560e05c6b74ece
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:35:47.415Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1027
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-21T17:55:08.568Z
-metadataUpdatedAt: 2026-08-21T17:55:08.568Z
+releaseUpdatedAt: 2026-08-23T05:35:47.686Z
+metadataUpdatedAt: 2026-08-23T05:35:47.686Z
 starsUpdatedAt: 2026-08-21T17:55:08.568Z
-updatedAt: 2026-08-21T17:55:08.568Z
+updatedAt: 2026-08-23T05:35:47.686Z

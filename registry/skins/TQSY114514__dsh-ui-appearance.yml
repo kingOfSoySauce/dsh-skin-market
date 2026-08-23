@@ -16,23 +16,26 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#291759aaaef8c88d23cd80d877bc86bab90e34da
+  target: github:TQSY114514/dsh-ui-appearance#bde396182cc53bb4f88c0fb69ac2b4daead43072
   version: 0.1.4
-  commit: 291759aaaef8c88d23cd80d877bc86bab90e34da
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/291759aaaef8c88d23cd80d877bc86bab90e34da
+  commit: bde396182cc53bb4f88c0fb69ac2b4daead43072
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepare
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/bde396182cc53bb4f88c0fb69ac2b4daead43072
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/bde396182cc53bb4f88c0fb69ac2b4daead43072/docs/screenshot-settings.png
+  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/bde396182cc53bb4f88c0fb69ac2b4daead43072/docs/screenshot-wallpaper.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/291759aaaef8c88d23cd80d877bc86bab90e34da/docs/screenshot-settings.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/291759aaaef8c88d23cd80d877bc86bab90e34da/docs/screenshot-wallpaper.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/19f508b90ce86df7a9a1c7d167fd9d8cb639d4c9/docs/screenshot-settings.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/19f508b90ce86df7a9a1c7d167fd9d8cb639d4c9/docs/screenshot-wallpaper.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/0b47a643cd531ac4115867da7bee98588683f42e/docs/screenshot-settings.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/0b47a643cd531ac4115867da7bee98588683f42e/docs/screenshot-wallpaper.png
-  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/a10dd26d1b9d8360c962c4f098f242ad4b6d0a2c/docs/screenshot-settings.png
-  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/a10dd26d1b9d8360c962c4f098f242ad4b6d0a2c/docs/screenshot-wallpaper.png
 review:
   compatibility: unverified
   preview: verified
@@ -48,12 +51,23 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: bde396182cc53bb4f88c0fb69ac2b4daead43072
+    packageVersion: 0.1.4
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:28:03.833Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 36
 starsSnapshot: 10
-releaseUpdatedAt: 2026-08-21T17:50:18.700Z
-metadataUpdatedAt: 2026-08-21T17:50:18.700Z
+releaseUpdatedAt: 2026-08-23T05:28:03.910Z
+metadataUpdatedAt: 2026-08-23T05:28:03.910Z
 starsUpdatedAt: 2026-08-21T09:07:54.480Z
-updatedAt: 2026-08-21T17:50:18.700Z
+updatedAt: 2026-08-23T05:28:03.910Z

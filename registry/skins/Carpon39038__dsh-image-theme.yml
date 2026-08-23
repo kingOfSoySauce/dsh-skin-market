@@ -20,6 +20,9 @@ install:
   target: github:Carpon39038/dsh-image-theme#d522281fcdf81fb08984650800294b0058b89301
   version: 0.1.0
   commit: d522281fcdf81fb08984650800294b0058b89301
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
@@ -39,12 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: d522281fcdf81fb08984650800294b0058b89301
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:30:01.074Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 60
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16 13:50:02.941000+00:00
-metadataUpdatedAt: 2026-08-22T03:12:13.650Z
+releaseUpdatedAt: 2026-08-23T05:30:01.129Z
+metadataUpdatedAt: 2026-08-23T05:30:01.129Z
 starsUpdatedAt: 2026-08-16 13:50:02.941000+00:00
-updatedAt: 2026-08-22T03:12:13.650Z
+updatedAt: 2026-08-23T05:30:01.129Z

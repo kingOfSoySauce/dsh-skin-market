@@ -21,6 +21,9 @@ install:
   target: github:ycqaq233/dsh-unknown-theme#02e296a52b0ee53d1230bda14eed15683e547f1d
   version: 1.0.0
   commit: 02e296a52b0ee53d1230bda14eed15683e547f1d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -43,12 +46,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 02e296a52b0ee53d1230bda14eed15683e547f1d
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:30:46.988Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 197
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-18T15:46:37.156Z
-metadataUpdatedAt: 2026-08-20T09:59:19.484Z
+releaseUpdatedAt: 2026-08-23T05:30:47.075Z
+metadataUpdatedAt: 2026-08-23T05:30:47.075Z
 starsUpdatedAt: 2026-08-21T09:09:34.504Z
-updatedAt: 2026-08-21T09:09:34.504Z
+updatedAt: 2026-08-23T05:30:47.075Z

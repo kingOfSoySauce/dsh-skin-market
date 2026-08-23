@@ -17,22 +17,25 @@ modes:
   - light
   - dark
 install:
-  target: github:Liu-ZA-81/dsh-theme-firefly#0b80edeb88a9aab056de42aace617a40e8f52927
-  version: 0.1.1
-  commit: 0b80edeb88a9aab056de42aace617a40e8f52927
+  target: github:Liu-ZA-81/dsh-theme-firefly#17afc8e649ac0a44c097d530d315524fb7f1d705
+  version: 0.1.2
+  commit: 17afc8e649ac0a44c097d530d315524fb7f1d705
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepack
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/17afc8e649ac0a44c097d530d315524fb7f1d705/docs/screenshots/01-wallpaper.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/17afc8e649ac0a44c097d530d315524fb7f1d705/docs/screenshots/02-boot.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/17afc8e649ac0a44c097d530d315524fb7f1d705/docs/screenshots/03-firefly.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/17afc8e649ac0a44c097d530d315524fb7f1d705/docs/screenshots/04-music.jpg
+  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/17afc8e649ac0a44c097d530d315524fb7f1d705/docs/screenshots/05-emote.jpg
   - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/01-wallpaper.jpg
   - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/02-boot.jpg
   - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/03-firefly.jpg
-  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/04-music.jpg
-  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/05-emote.jpg
-  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/01-wallpaper.jpg
-  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/02-boot.jpg
-  - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/7937bc94872955ea0c6eb8842fc7b388e629ed52/docs/screenshots/03-firefly.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -47,12 +50,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 17afc8e649ac0a44c097d530d315524fb7f1d705
+    packageVersion: 0.1.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:27:57.700Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 153
-starsSnapshot: 10
-releaseUpdatedAt: 2026-08-21T09:08:04.396Z
-metadataUpdatedAt: 2026-08-21T09:08:04.396Z
-starsUpdatedAt: 2026-08-22T03:10:56.836Z
-updatedAt: 2026-08-22T03:10:56.836Z
+starsSnapshot: 11
+releaseUpdatedAt: 2026-08-23T05:27:57.786Z
+metadataUpdatedAt: 2026-08-23T05:27:57.786Z
+starsUpdatedAt: 2026-08-23T05:27:57.786Z
+updatedAt: 2026-08-23T05:27:57.786Z

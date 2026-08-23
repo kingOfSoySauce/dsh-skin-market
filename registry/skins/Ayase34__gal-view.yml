@@ -19,6 +19,9 @@ install:
   target: github:Ayase34/gal-view#d002fe0e7051c618a2665af3c653f9838cd6aa8a
   version: 0.3.3
   commit: d002fe0e7051c618a2665af3c653f9838cd6aa8a
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -39,12 +42,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d002fe0e7051c618a2665af3c653f9838cd6aa8a
+    packageVersion: 0.3.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:27:00.883Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 135
-starsSnapshot: 120
-releaseUpdatedAt: 2026-08-16T09:00:49+09:00
-metadataUpdatedAt: 2026-08-20T09:55:28.757Z
-starsUpdatedAt: 2026-08-22T03:09:57.390Z
-updatedAt: 2026-08-22T03:09:57.390Z
+starsSnapshot: 124
+releaseUpdatedAt: 2026-08-23T05:27:00.963Z
+metadataUpdatedAt: 2026-08-23T05:27:00.963Z
+starsUpdatedAt: 2026-08-23T05:27:00.963Z
+updatedAt: 2026-08-23T05:27:00.963Z

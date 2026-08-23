@@ -20,6 +20,9 @@ install:
   target: github:noexcs/dsh-skin-glass#085df7daf0ebc65f721e66896406bb9877489b59
   version: 0.1.0
   commit: 085df7daf0ebc65f721e66896406bb9877489b59
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -41,12 +44,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 085df7daf0ebc65f721e66896406bb9877489b59
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:34:30.433Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 116
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:56:56.643Z
-metadataUpdatedAt: 2026-08-20T10:00:43.107Z
+releaseUpdatedAt: 2026-08-23T05:34:30.514Z
+metadataUpdatedAt: 2026-08-23T05:34:30.514Z
 starsUpdatedAt: 2026-08-16T13:56:56.643Z
-updatedAt: 2026-08-20T10:00:43.107Z
+updatedAt: 2026-08-23T05:34:30.514Z

@@ -21,6 +21,9 @@ install:
   target: github:bilbillm/deepseek-harness-angelina-themes#ee74b2d6852173c0c1de39f6973685255de7229b
   version: 0.1.0
   commit: ee74b2d6852173c0c1de39f6973685255de7229b
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -45,12 +48,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: ee74b2d6852173c0c1de39f6973685255de7229b
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:55.150Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 58
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-18T15:40:34.001Z
-metadataUpdatedAt: 2026-08-20T09:57:07.073Z
+releaseUpdatedAt: 2026-08-23T05:28:55.234Z
+metadataUpdatedAt: 2026-08-23T05:28:55.234Z
 starsUpdatedAt: 2026-08-22T03:11:23.409Z
-updatedAt: 2026-08-22T03:11:23.409Z
+updatedAt: 2026-08-23T05:28:55.234Z

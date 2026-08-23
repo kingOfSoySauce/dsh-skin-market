@@ -20,6 +20,9 @@ install:
   target: github:hachimi-ai/dsh-aemeath#f58eef75dcadb5aeaee9e78542e7e1d9ba43f821
   version: 0.1.0
   commit: f58eef75dcadb5aeaee9e78542e7e1d9ba43f821
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -40,13 +43,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: f58eef75dcadb5aeaee9e78542e7e1d9ba43f821
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:43.883Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
   notice: 插件代码声明为 MIT；壁纸与精灵表为第三方《鸣潮》爱弥斯素材，仓库说明仅供个人学习交流使用，版权归原权利人所有。
 featuredRank: 134
 starsSnapshot: 5
-releaseUpdatedAt: 2026-08-16T16:37:51Z
-metadataUpdatedAt: 2026-08-20T09:56:33.210Z
+releaseUpdatedAt: 2026-08-23T05:28:43.968Z
+metadataUpdatedAt: 2026-08-23T05:28:43.968Z
 starsUpdatedAt: 2026-08-20T05:07:43.055Z
-updatedAt: 2026-08-20T09:56:33.210Z
+updatedAt: 2026-08-23T05:28:43.968Z

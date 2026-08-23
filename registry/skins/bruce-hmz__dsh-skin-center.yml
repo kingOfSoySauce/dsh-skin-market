@@ -1,0 +1,71 @@
+id: bruce-hmz.dsh-skin-center
+name:
+  zh: dsh-skin-center
+  en: dsh-skin-center
+author: bruce-hmz
+description: dsh-skin-center | DeepSeek Harness 皮肤中心(官方插件)
+repo: https://github.com/bruce-hmz/dsh-skin-center
+package: dsh-skin-center
+rowId: skin-center
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - pastel
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:bruce-hmz/dsh-skin-center#42d78ea057b2d10530cceb4e44ea997263f057b9
+  version: 2.1.0-rc.2
+  commit: 42d78ea057b2d10530cceb4e44ea997263f057b9
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/bruce-hmz/dsh-skin-center/42d78ea057b2d10530cceb4e44ea997263f057b9/docs/images/miku.webp
+  - https://raw.githubusercontent.com/bruce-hmz/dsh-skin-center/42d78ea057b2d10530cceb4e44ea997263f057b9/docs/images/genshin-dark.webp
+  - https://raw.githubusercontent.com/bruce-hmz/dsh-skin-center/42d78ea057b2d10530cceb4e44ea997263f057b9/docs/images/waves-1.webp
+  - https://raw.githubusercontent.com/bruce-hmz/dsh-skin-center/42d78ea057b2d10530cceb4e44ea997263f057b9/docs/images/skin-center.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 42d78ea057b2d10530cceb4e44ea997263f057b9
+    packageVersion: 2.1.0-rc.2
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:33:04.547Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1030
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-23T05:33:04.548Z
+metadataUpdatedAt: 2026-08-23T05:33:04.548Z
+starsUpdatedAt: 2026-08-23T05:33:04.548Z
+updatedAt: 2026-08-23T05:33:04.548Z

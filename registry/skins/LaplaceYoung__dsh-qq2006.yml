@@ -19,6 +19,9 @@ install:
   target: github:LaplaceYoung/dsh-qq2006#fa3493ceb748171728113aba1aaf606d733790a0
   version: 0.1.0
   commit: fa3493ceb748171728113aba1aaf606d733790a0
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.0.1-rc.1
   platform:
@@ -39,12 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: fa3493ceb748171728113aba1aaf606d733790a0
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.0.1-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:27:28.798Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 40
-starsSnapshot: 20
-releaseUpdatedAt: 2026-08-16 13:47:05.463000+00:00
-metadataUpdatedAt: 2026-08-22T03:10:22.940Z
-starsUpdatedAt: 2026-08-21T09:07:36.534Z
-updatedAt: 2026-08-22T03:10:22.940Z
+starsSnapshot: 22
+releaseUpdatedAt: 2026-08-23T05:27:28.861Z
+metadataUpdatedAt: 2026-08-23T05:27:28.861Z
+starsUpdatedAt: 2026-08-23T05:27:28.861Z
+updatedAt: 2026-08-23T05:27:28.861Z

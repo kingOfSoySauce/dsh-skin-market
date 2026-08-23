@@ -21,6 +21,9 @@ install:
   target: github:kingOfSoySauce/dsh-elon-skin#bccc746872cf8caa4005c9b144bcd1497717537a
   version: 0.1.4
   commit: bccc746872cf8caa4005c9b144bcd1497717537a
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -42,13 +45,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: bccc746872cf8caa4005c9b144bcd1497717537a
+    packageVersion: 0.1.4
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:31:38.022Z
+    findings: []
 license:
   code: NOASSERTION
   commercialUse: false
   notice: 仓库当前未声明许可证；安装和再分发前请向作者确认授权。
 featuredRank: 2
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-18T15:42:53.218Z
-metadataUpdatedAt: 2026-08-20T09:58:36.213Z
+releaseUpdatedAt: 2026-08-23T05:31:38.093Z
+metadataUpdatedAt: 2026-08-23T05:31:38.093Z
 starsUpdatedAt: 2026-08-18T09:15:01.000Z
-updatedAt: 2026-08-20T09:58:36.213Z
+updatedAt: 2026-08-23T05:31:38.093Z

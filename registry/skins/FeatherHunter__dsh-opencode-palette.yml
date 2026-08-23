@@ -20,6 +20,9 @@ install:
   target: github:FeatherHunter/dsh-opencode-palette#11a3c01ff4e6cd22239e990fb8964d8421b04b01&path:package
   version: 1.6.4
   commit: 11a3c01ff4e6cd22239e990fb8964d8421b04b01
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: unverified
   platform:
@@ -44,12 +47,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 11a3c01ff4e6cd22239e990fb8964d8421b04b01
+    packageVersion: 1.6.4
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:02.434Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 139
-starsSnapshot: 10
-releaseUpdatedAt: 2026-08-21T09:07:58.401Z
-metadataUpdatedAt: 2026-08-18T15:40:14.498Z
-starsUpdatedAt: 2026-08-21T17:50:17.786Z
-updatedAt: 2026-08-21T17:50:17.786Z
+starsSnapshot: 12
+releaseUpdatedAt: 2026-08-23T05:28:02.514Z
+metadataUpdatedAt: 2026-08-23T05:28:02.514Z
+starsUpdatedAt: 2026-08-23T05:28:02.514Z
+updatedAt: 2026-08-23T05:28:02.514Z

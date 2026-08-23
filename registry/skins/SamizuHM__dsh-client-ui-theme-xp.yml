@@ -19,6 +19,12 @@ install:
   target: github:SamizuHM/dsh-client-ui-theme-xp#3cc412f4e877c127dea2e5b6e3413e5ddc95ce97
   version: 0.1.1
   commit: 3cc412f4e877c127dea2e5b6e3413e5ddc95ce97
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-client-ui-theme-xp
+    packageVersion: 0.1.1
+    integrity: sha512-PAD3jNggSUsiRSIKvEZs/QrGEx3L3cdwO/WE4XuTnPfn6Wyglt6ThClfuvBm+/ozw0Cn+mQapM03t9dcn+IODQ==
 compatibility:
   dsh: unverified
   platform:
@@ -39,12 +45,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 3cc412f4e877c127dea2e5b6e3413e5ddc95ce97
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:20.999Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 28
 starsSnapshot: 7
-releaseUpdatedAt: 2026-08-16T12:16:17.062Z
-metadataUpdatedAt: 2026-08-20T09:56:41.425Z
+releaseUpdatedAt: 2026-08-23T05:28:21.070Z
+metadataUpdatedAt: 2026-08-23T05:28:21.070Z
 starsUpdatedAt: 2026-08-21T09:08:07.285Z
-updatedAt: 2026-08-21T09:08:07.285Z
+updatedAt: 2026-08-23T05:28:21.070Z

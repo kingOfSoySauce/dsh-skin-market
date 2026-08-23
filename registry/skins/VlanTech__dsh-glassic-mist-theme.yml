@@ -3,30 +3,32 @@ name:
   zh: dsh-glassic-mist-theme
   en: dsh-glassic-mist-theme
 author: VlanTech
-description: 'Glassic Mist 雾蓝主题 for DeepSeek Harness: mist-blue veil + drifting cloud
-  animation + frosted-glass UI (dsh-mistblue plugin)'
+description: "Glassic Mist 雾蓝主题 for DeepSeek Harness: mist-blue veil + drifting cloud animation + frosted-glass UI (dsh-mistblue plugin)"
 repo: https://github.com/VlanTech/dsh-glassic-mist-theme
 package: dsh-mistblue
 rowId: mistblue
 category: theme
 tags:
-- glass
-- motion
-- token-theme
-- light-dark
+  - glass
+  - motion
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:VlanTech/dsh-glassic-mist-theme#af4e9c3967df0fbeeead25b4f1426e30382d1a90
   version: 1.0.0
   commit: af4e9c3967df0fbeeead25b4f1426e30382d1a90
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/vlantech.dsh-glassic-mist-theme
+  - https://opengraph.githubassets.com/placeholder/vlantech.dsh-glassic-mist-theme
 review:
   compatibility: unverified
   preview: repository-card
@@ -40,15 +42,23 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-  - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: af4e9c3967df0fbeeead25b4f1426e30382d1a90
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:35:10.301Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 123
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16 13:57:56.238000+00:00
-metadataUpdatedAt: 2026-08-18 15:46:17.119000+00:00
+releaseUpdatedAt: 2026-08-23T05:35:10.390Z
+metadataUpdatedAt: 2026-08-23T05:35:10.390Z
 starsUpdatedAt: 2026-08-16 13:57:56.238000+00:00
-updatedAt: 2026-08-18 15:46:17.119000+00:00
+updatedAt: 2026-08-23T05:35:10.390Z

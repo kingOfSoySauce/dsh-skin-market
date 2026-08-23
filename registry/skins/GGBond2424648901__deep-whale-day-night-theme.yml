@@ -23,6 +23,9 @@ install:
   target: github:GGBond2424648901/deep-whale-day-night-theme#3f6c4f14716d1e500f585be0c0d3c139c7a8a90b
   version: 0.1.12
   commit: 3f6c4f14716d1e500f585be0c0d3c139c7a8a90b
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.7
   platform:
@@ -44,12 +47,21 @@ health:
     topic: improve
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 3f6c4f14716d1e500f585be0c0d3c139c7a8a90b
+    packageVersion: 0.1.12
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.7
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:27:03.686Z
+    findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 202
-starsSnapshot: 97
-releaseUpdatedAt: 2026-08-20T05:05:47.516Z
-metadataUpdatedAt: 2026-08-22T03:10:00.864Z
-starsUpdatedAt: 2026-08-21T09:07:19.334Z
-updatedAt: 2026-08-22T03:10:00.864Z
+starsSnapshot: 101
+releaseUpdatedAt: 2026-08-23T05:27:03.735Z
+metadataUpdatedAt: 2026-08-23T05:27:03.735Z
+starsUpdatedAt: 2026-08-23T05:27:03.735Z
+updatedAt: 2026-08-23T05:27:03.735Z

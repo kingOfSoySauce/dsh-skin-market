@@ -19,6 +19,12 @@ install:
   target: github:zhijun-dai/Solarized-dsh-theme#6b0614e53a4314c1705967b7e3c437b64dee64f2
   version: 0.1.1
   commit: 6b0614e53a4314c1705967b7e3c437b64dee64f2
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@yuquexianzhou/solarized-dsh-theme"
+    packageVersion: 0.1.1
+    integrity: sha512-9GdwEyUCUSmUqfOV/comS5pTj6ONJsvfhMwSKMUhm9ProNG//A9kWZb9KxZWfvdX9B5QX5tUhFWZyguULsrxNA==
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -38,12 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 6b0614e53a4314c1705967b7e3c437b64dee64f2
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:13.571Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 12
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-16 12:32:51.434000+00:00
-metadataUpdatedAt: 2026-08-22T03:11:42.326Z
+releaseUpdatedAt: 2026-08-23T05:29:13.656Z
+metadataUpdatedAt: 2026-08-23T05:29:13.656Z
 starsUpdatedAt: 2026-08-21T09:08:39.350Z
-updatedAt: 2026-08-22T03:11:42.326Z
+updatedAt: 2026-08-23T05:29:13.656Z

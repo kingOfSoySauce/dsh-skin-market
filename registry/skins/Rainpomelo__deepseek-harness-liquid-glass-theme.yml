@@ -19,6 +19,9 @@ install:
   target: github:Rainpomelo/deepseek-harness-liquid-glass-theme#3cdc7355557cf563dbe1f8e8897bb1a2c261a262
   version: 2.0.0
   commit: 3cdc7355557cf563dbe1f8e8897bb1a2c261a262
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.5
   platform:
@@ -46,12 +49,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 3cdc7355557cf563dbe1f8e8897bb1a2c261a262
+    packageVersion: 2.0.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:12.346Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 206
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-22T03:11:38.349Z
-metadataUpdatedAt: 2026-08-22T03:11:38.349Z
+releaseUpdatedAt: 2026-08-23T05:29:12.399Z
+metadataUpdatedAt: 2026-08-23T05:29:12.399Z
 starsUpdatedAt: 2026-08-21T17:51:00.616Z
-updatedAt: 2026-08-22T03:11:38.349Z
+updatedAt: 2026-08-23T05:29:12.399Z

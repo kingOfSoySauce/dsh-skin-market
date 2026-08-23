@@ -19,6 +19,12 @@ install:
   target: github:starslittle/dsh-blue-whale#e18aa1e27e98df98c478b8d24076a94e64d43ed5
   version: 0.1.0
   commit: e18aa1e27e98df98c478b8d24076a94e64d43ed5
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-blue-whale
+    packageVersion: 0.1.0
+    integrity: sha512-fQRkkY86lygqGKCjbW1qMQGU+sso854vJM8WiG36G6f+izejnT48y0qWqshMAIleZatRzcEYPJFZrziRtuxJdA==
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -39,12 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: e18aa1e27e98df98c478b8d24076a94e64d43ed5
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:28:24.222Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 6
-starsSnapshot: 6
-releaseUpdatedAt: 2026-08-18T15:39:51.782Z
-metadataUpdatedAt: 2026-08-20T09:56:27.639Z
-starsUpdatedAt: 2026-08-16T12:31:55.720Z
-updatedAt: 2026-08-20T09:56:27.639Z
+starsSnapshot: 7
+releaseUpdatedAt: 2026-08-23T05:28:24.292Z
+metadataUpdatedAt: 2026-08-23T05:28:24.292Z
+starsUpdatedAt: 2026-08-23T05:28:24.292Z
+updatedAt: 2026-08-23T05:28:24.292Z

@@ -19,6 +19,12 @@ install:
   target: github:ossFrankFrank/dsh-dracula-theme#b8c7e809043296485ebff870a4c705e9139b3d5f
   version: 1.0.0
   commit: b8c7e809043296485ebff870a4c705e9139b3d5f
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-dracula-theme
+    packageVersion: 1.0.0
+    integrity: sha512-RI/LoRKTPmjko2UbmtWeq72lCy0+PEooMlWMDWOLmVyXaJXAQmVMB3dV3dnXlIQpsenHwkarnspUV3F/JgQh5w==
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -39,12 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: b8c7e809043296485ebff870a4c705e9139b3d5f
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:08.953Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 186
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-21T09:11:56.631Z
-metadataUpdatedAt: 2026-08-21T09:11:56.631Z
+releaseUpdatedAt: 2026-08-23T05:32:09.104Z
+metadataUpdatedAt: 2026-08-23T05:32:09.104Z
 starsUpdatedAt: 2026-08-21T17:54:21.770Z
-updatedAt: 2026-08-21T17:54:21.770Z
+updatedAt: 2026-08-23T05:32:09.104Z

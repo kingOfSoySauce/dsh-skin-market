@@ -1,0 +1,65 @@
+id: sddft97.dsh-client-ui-skin-verdandi
+name:
+  zh: dsh-client-ui-skin-verdandi
+  en: dsh-client-ui-skin-verdandi
+author: Sddft97
+description: 薇儿丹蒂 · 纯白圣誓
+repo: https://github.com/Sddft97/dsh-client-ui-skin-verdandi
+package: "@hjbztlbr/dsh-client-ui-skin-verdandi"
+rowId: ui-skin-verdandi
+category: theme
+tags:
+  - wallpaper
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Sddft97/dsh-client-ui-skin-verdandi#62c91a57149817eea937f2ccccc9cef51776f172
+  version: 0.1.0
+  commit: 62c91a57149817eea937f2ccccc9cef51776f172
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepare,prepublishOnly
+  allowBuild: "@hjbztlbr/dsh-client-ui-skin-verdandi@https://codeload.github.com/Sddft97/dsh-client-ui-skin-verdandi/tar.gz/62c91a57149817eea937f2ccccc9cef51776f172"
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Sddft97/dsh-client-ui-skin-verdandi/62c91a57149817eea937f2ccccc9cef51776f172/preview/light.png
+  - https://raw.githubusercontent.com/Sddft97/dsh-client-ui-skin-verdandi/62c91a57149817eea937f2ccccc9cef51776f172/preview/dark.png
+  - https://raw.githubusercontent.com/Sddft97/dsh-client-ui-skin-verdandi/62c91a57149817eea937f2ccccc9cef51776f172/preview/settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 62c91a57149817eea937f2ccccc9cef51776f172
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:34:50.685Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1031
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-23T05:34:50.782Z
+metadataUpdatedAt: 2026-08-23T05:34:50.782Z
+starsUpdatedAt: 2026-08-23T05:34:50.782Z
+updatedAt: 2026-08-23T05:34:50.782Z

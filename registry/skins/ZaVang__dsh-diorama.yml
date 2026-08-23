@@ -18,6 +18,12 @@ install:
   target: github:ZaVang/dsh-diorama#9bd7cd7f6fc63da60082eb9fda2703e1e7c820f2
   version: 0.1.0
   commit: 9bd7cd7f6fc63da60082eb9fda2703e1e7c820f2
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-diorama
+    packageVersion: 0.1.0
+    integrity: sha512-GnlSXId9e5PeT283OUeeDBi7/bYYp38MW/Wn/pQlGHojex7vKirmnj7uqzrkqh4xrQAWlrHgFKP3/YvKuROa8A==
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
@@ -38,12 +44,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: 9bd7cd7f6fc63da60082eb9fda2703e1e7c820f2
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:35:37.092Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 212
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-19T04:41:42.490Z
-metadataUpdatedAt: 2026-08-19T04:41:42.490Z
+releaseUpdatedAt: 2026-08-23T05:35:37.188Z
+metadataUpdatedAt: 2026-08-23T05:35:37.188Z
 starsUpdatedAt: 2026-08-19T04:41:42.490Z
-updatedAt: 2026-08-19T04:41:42.490Z
+updatedAt: 2026-08-23T05:35:37.188Z

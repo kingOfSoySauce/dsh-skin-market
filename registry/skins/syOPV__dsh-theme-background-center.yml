@@ -20,6 +20,9 @@ install:
   target: github:syOPV/dsh-theme-background-center#06ff231740697a3f3119be72f5f715677bbbee2c
   version: 0.1.0
   commit: 06ff231740697a3f3119be72f5f715677bbbee2c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -39,12 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 06ff231740697a3f3119be72f5f715677bbbee2c
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:25.168Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 93
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16T13:53:58.612Z
-metadataUpdatedAt: 2026-08-20T09:59:10.372Z
+releaseUpdatedAt: 2026-08-23T05:32:25.251Z
+metadataUpdatedAt: 2026-08-23T05:32:25.251Z
 starsUpdatedAt: 2026-08-16T13:53:58.612Z
-updatedAt: 2026-08-20T09:59:10.372Z
+updatedAt: 2026-08-23T05:32:25.251Z

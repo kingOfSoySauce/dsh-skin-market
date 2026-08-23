@@ -20,6 +20,9 @@ install:
   target: github:chouxiaohuai/uiskin-theme#ab0b2d4977f47a388c7e60f892d26f3142854e9f
   version: 1.0.0
   commit: ab0b2d4977f47a388c7e60f892d26f3142854e9f
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -43,12 +46,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: ab0b2d4977f47a388c7e60f892d26f3142854e9f
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:30:05.907Z
+    findings: []
 license:
   code: UNLICENSED
   commercialUse: false
 featuredRank: 159
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-21T17:52:06.239Z
-metadataUpdatedAt: 2026-08-21T17:52:06.239Z
+releaseUpdatedAt: 2026-08-23T05:30:05.907Z
+metadataUpdatedAt: 2026-08-23T05:30:05.907Z
 starsUpdatedAt: 2026-08-21T17:52:06.239Z
-updatedAt: 2026-08-21T17:52:06.239Z
+updatedAt: 2026-08-23T05:30:05.907Z

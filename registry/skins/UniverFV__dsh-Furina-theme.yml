@@ -23,6 +23,9 @@ install:
   target: github:UniverFV/dsh-Furina-theme#b2d8d2014f3a6c354322a4a9c551bccabead26c6
   version: 0.1.0
   commit: b2d8d2014f3a6c354322a4a9c551bccabead26c6
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.1.0-rc.8"
   platform:
@@ -46,12 +49,21 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: b2d8d2014f3a6c354322a4a9c551bccabead26c6
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.8"
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:29.149Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-21T12:00:00.000Z
-metadataUpdatedAt: 2026-08-21T17:54:46.652Z
+releaseUpdatedAt: 2026-08-23T05:32:29.227Z
+metadataUpdatedAt: 2026-08-23T05:32:29.227Z
 starsUpdatedAt: 2026-08-21T17:54:46.652Z
-updatedAt: 2026-08-21T17:54:46.652Z
+updatedAt: 2026-08-23T05:32:29.227Z

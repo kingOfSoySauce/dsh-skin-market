@@ -21,6 +21,9 @@ install:
   target: github:longyu065/dsh-theme-ti#62ae2e761f045387617e28828e4b533626b3156e
   version: 1.0.0
   commit: 62ae2e761f045387617e28828e4b533626b3156e
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -42,12 +45,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 62ae2e761f045387617e28828e4b533626b3156e
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:31:48.305Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 84
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-20T05:08:31.927Z
-metadataUpdatedAt: 2026-08-20T05:08:31.927Z
+releaseUpdatedAt: 2026-08-23T05:31:48.352Z
+metadataUpdatedAt: 2026-08-23T05:31:48.352Z
 starsUpdatedAt: 2026-08-16 13:53:00.319000+00:00
-updatedAt: 2026-08-20T05:08:31.927Z
+updatedAt: 2026-08-23T05:31:48.352Z

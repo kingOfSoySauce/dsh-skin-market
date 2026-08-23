@@ -19,6 +19,9 @@ install:
   target: github:kingOfSoySauce/dsh-liang-skin#976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
   version: 0.1.7
   commit: 976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -38,13 +41,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3
+    packageVersion: 0.1.7
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:26:58.491Z
+    findings: []
 license:
   code: NOASSERTION
   commercialUse: false
   notice: 仓库当前未声明许可证；安装和再分发前请向作者确认授权。
 featuredRank: 1
-starsSnapshot: 124
-releaseUpdatedAt: 2026-08-18T15:38:29.706Z
-metadataUpdatedAt: 2026-08-20T09:55:29.971Z
-starsUpdatedAt: 2026-08-21T17:49:39.395Z
-updatedAt: 2026-08-21T17:49:39.395Z
+starsSnapshot: 131
+releaseUpdatedAt: 2026-08-23T05:26:58.597Z
+metadataUpdatedAt: 2026-08-23T05:26:58.597Z
+starsUpdatedAt: 2026-08-23T05:26:58.597Z
+updatedAt: 2026-08-23T05:26:58.597Z

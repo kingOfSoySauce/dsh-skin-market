@@ -21,6 +21,9 @@ install:
   target: github:KinGao294/dsh-skin#0a571a27adcc5f780b7b72386c9c294243eec5b3
   version: 0.4.0
   commit: 0a571a27adcc5f780b7b72386c9c294243eec5b3
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -44,12 +47,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: 0a571a27adcc5f780b7b72386c9c294243eec5b3
+    packageVersion: 0.4.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:27:32.722Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 18
 starsSnapshot: 19
-releaseUpdatedAt: 2026-08-18T15:39:02.751Z
-metadataUpdatedAt: 2026-08-18T15:39:02.751Z
+releaseUpdatedAt: 2026-08-23T05:27:32.810Z
+metadataUpdatedAt: 2026-08-23T05:27:32.810Z
 starsUpdatedAt: 2026-08-18T15:39:02.751Z
-updatedAt: 2026-08-18T15:39:02.751Z
+updatedAt: 2026-08-23T05:27:32.810Z

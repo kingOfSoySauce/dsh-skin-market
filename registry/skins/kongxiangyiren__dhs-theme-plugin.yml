@@ -5,26 +5,32 @@ name:
 author: kongxiangyiren
 description: dsh 主题管理插件,可以自定义主题
 repo: https://github.com/kongxiangyiren/dhs-theme-plugin
-package: '@kongxiangyiren/dhs-theme-plugin'
+package: "@kongxiangyiren/dhs-theme-plugin"
 rowId: dhs-theme-plugin
 category: theme
 tags:
-- retro
-- token-theme
-- light-dark
+  - retro
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:kongxiangyiren/dhs-theme-plugin#9e451e3a9eda86f62c8624d606a911e68a943b16
   version: 0.0.3
   commit: 9e451e3a9eda86f62c8624d606a911e68a943b16
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@kongxiangyiren/dhs-theme-plugin"
+    packageVersion: 0.0.3
+    integrity: sha512-g3bUOrsdOyr/yzlZaSQiATcOQ/8MsQeSIURKI2Zqa6wjAzJ4Ne1Co+OJJjoUG2GBLes2VhqWOSSABKD+gSMISw==
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/kongxiangyiren.dhs-theme-plugin
+  - https://opengraph.githubassets.com/placeholder/kongxiangyiren.dhs-theme-plugin
 review:
   compatibility: verified
   preview: repository-card
@@ -38,13 +44,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: 9e451e3a9eda86f62c8624d606a911e68a943b16
+    packageVersion: 0.0.3
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:31:40.951Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 82
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-16 13:52:44.893000+00:00
-metadataUpdatedAt: 2026-08-18 15:42:56.068000+00:00
+releaseUpdatedAt: 2026-08-23T05:31:41.020Z
+metadataUpdatedAt: 2026-08-23T05:31:41.020Z
 starsUpdatedAt: 2026-08-16 13:52:44.893000+00:00
-updatedAt: 2026-08-18 15:42:56.068000+00:00
+updatedAt: 2026-08-23T05:31:41.020Z

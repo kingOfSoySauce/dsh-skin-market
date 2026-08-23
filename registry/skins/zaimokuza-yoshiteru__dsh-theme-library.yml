@@ -19,6 +19,9 @@ install:
   target: github:zaimokuza-yoshiteru/dsh-theme-library#bbff7b1b34226906cf116a174f8a002a126aee7e
   version: 0.1.1
   commit: bbff7b1b34226906cf116a174f8a002a126aee7e
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepack,prepare
   allowBuild: "@zaimokuza/dsh-theme-library@https://codeload.github.com/zaimokuza-yoshiteru/dsh-theme-library/tar.gz/bbff7b1b34226906cf116a174f8a002a126aee7e"
 compatibility:
   dsh: ">=0.1.0-rc.8 <0.2.0"
@@ -42,12 +45,24 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: bbff7b1b34226906cf116a174f8a002a126aee7e
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.8 <0.2.0"
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:35:35.158Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 1024
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-21T09:12:38.267Z
-metadataUpdatedAt: 2026-08-21T09:12:38.267Z
+releaseUpdatedAt: 2026-08-23T05:35:35.234Z
+metadataUpdatedAt: 2026-08-23T05:35:35.234Z
 starsUpdatedAt: 2026-08-21T09:12:38.267Z
-updatedAt: 2026-08-21T09:12:38.267Z
+updatedAt: 2026-08-23T05:35:35.234Z

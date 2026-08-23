@@ -22,6 +22,9 @@ install:
   target: github:xiake595/touhou-hakurei#dae71e3b063f2051c590abbabaa1462cf2cd54ea
   version: 0.1.0
   commit: dae71e3b063f2051c590abbabaa1462cf2cd54ea
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -47,12 +50,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: dae71e3b063f2051c590abbabaa1462cf2cd54ea
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:27:37.689Z
+    findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 39
 starsSnapshot: 18
-releaseUpdatedAt: 2026-08-16T13:47:01.836Z
-metadataUpdatedAt: 2026-08-20T09:55:58.320Z
+releaseUpdatedAt: 2026-08-23T05:27:37.744Z
+metadataUpdatedAt: 2026-08-23T05:27:37.744Z
 starsUpdatedAt: 2026-08-21T17:50:06.390Z
-updatedAt: 2026-08-21T17:50:06.390Z
+updatedAt: 2026-08-23T05:27:37.744Z

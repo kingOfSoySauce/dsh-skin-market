@@ -21,6 +21,12 @@ install:
   target: github:DocJlm/dsh-arknights#87116ed1536c61dbb287addd9e4830cf3e8e0f36&path:skins/pramanix-eyjafjalla
   version: 0.1.0
   commit: 87116ed1536c61dbb287addd9e4830cf3e8e0f36
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-arknights
+    packageVersion: 0.1.0
+    integrity: sha512-8dyau987Qj1VTcVZAVm4KEFohKnYixJANgJjxMtuxZccWlsBUQrR8al2lxXDhS5p2Q6JiOEzJHHI7bKr5ejToQ==
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -42,12 +48,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 87116ed1536c61dbb287addd9e4830cf3e8e0f36
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:30:14.084Z
+    findings: []
 license:
   code: (MIT AND CC-BY-NC-SA-4.0)
   commercialUse: false
 featuredRank: 17
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-20T05:07:35.441Z
-metadataUpdatedAt: 2026-08-20T09:57:39.074Z
+releaseUpdatedAt: 2026-08-23T05:30:14.164Z
+metadataUpdatedAt: 2026-08-23T05:30:14.164Z
 starsUpdatedAt: 2026-08-18T15:41:31.928Z
-updatedAt: 2026-08-20T09:57:39.074Z
+updatedAt: 2026-08-23T05:30:14.164Z

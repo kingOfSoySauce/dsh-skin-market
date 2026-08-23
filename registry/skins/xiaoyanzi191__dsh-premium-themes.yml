@@ -21,6 +21,9 @@ install:
   target: github:xiaoyanzi191/dsh-premium-themes#7e485999e45711396ba08806a40c9bfe3c650103
   version: 0.1.0
   commit: 7e485999e45711396ba08806a40c9bfe3c650103
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
   allowBuild: "@deepseek-ai/dsh-client-ui-premium-themes@https://codeload.github.com/xiaoyanzi191/dsh-premium-themes/tar.gz/7e485999e45711396ba08806a40c9bfe3c650103"
 compatibility:
   dsh: ^0.1.0-rc.6
@@ -46,12 +49,24 @@ health:
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 7e485999e45711396ba08806a40c9bfe3c650103
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T05:35:18.295Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 126
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:46:30.744Z
-metadataUpdatedAt: 2026-08-20T10:01:17.120Z
+releaseUpdatedAt: 2026-08-23T05:35:18.355Z
+metadataUpdatedAt: 2026-08-23T05:35:18.355Z
 starsUpdatedAt: 2026-08-16T13:58:16.091Z
-updatedAt: 2026-08-20T10:01:17.120Z
+updatedAt: 2026-08-23T05:35:18.355Z

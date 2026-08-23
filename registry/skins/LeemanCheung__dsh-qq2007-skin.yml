@@ -22,6 +22,9 @@ install:
   target: github:LeemanCheung/dsh-qq2007-skin#e7c61af021dab1d387566a07d3528dc563e4f070
   version: 0.3.0
   commit: e7c61af021dab1d387566a07d3528dc563e4f070
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -44,12 +47,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: e7c61af021dab1d387566a07d3528dc563e4f070
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:29:26.465Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 14
 starsSnapshot: 3
-releaseUpdatedAt: 2026-08-16 12:33:52.774000+00:00
-metadataUpdatedAt: 2026-08-22T03:11:51.598Z
+releaseUpdatedAt: 2026-08-23T05:29:26.544Z
+metadataUpdatedAt: 2026-08-23T05:29:26.544Z
 starsUpdatedAt: 2026-08-18 15:40:44.117000+00:00
-updatedAt: 2026-08-22T03:11:51.598Z
+updatedAt: 2026-08-23T05:29:26.544Z

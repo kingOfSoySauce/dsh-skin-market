@@ -19,6 +19,9 @@ install:
   target: github:RainbowDashy/dsh-theme-palettes#887d5a4ee5c037b5e69a6e867984dfb300c2dda4
   version: 0.1.0
   commit: 887d5a4ee5c037b5e69a6e867984dfb300c2dda4
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -40,12 +43,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 887d5a4ee5c037b5e69a6e867984dfb300c2dda4
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:32:12.905Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 90
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-20T05:08:44.792Z
-metadataUpdatedAt: 2026-08-18 15:43:26.156000+00:00
+releaseUpdatedAt: 2026-08-23T05:32:12.994Z
+metadataUpdatedAt: 2026-08-23T05:32:12.994Z
 starsUpdatedAt: 2026-08-16 13:53:39.460000+00:00
-updatedAt: 2026-08-20T05:08:44.792Z
+updatedAt: 2026-08-23T05:32:12.994Z

@@ -21,6 +21,9 @@ install:
   target: github:Ewnscat-ya/dsh-client-ui-skin-denia#1b846939864137123203f1cc8db628e1331df62a
   version: 0.0.4
   commit: 1b846939864137123203f1cc8db628e1331df62a
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -41,13 +44,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 1b846939864137123203f1cc8db628e1331df62a
+    packageVersion: 0.0.4
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:27:23.056Z
+    findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
   notice: 角色、美术和商标权利归原权利人所有；仓库声明为非官方同人作品并禁止商业使用。
 featuredRank: 133
-starsSnapshot: 23
-releaseUpdatedAt: 2026-08-18T15:39:04.526Z
-metadataUpdatedAt: 2026-08-20T09:55:48.506Z
-starsUpdatedAt: 2026-08-21T09:07:33.695Z
-updatedAt: 2026-08-21T09:07:33.695Z
+starsSnapshot: 25
+releaseUpdatedAt: 2026-08-23T05:27:23.106Z
+metadataUpdatedAt: 2026-08-23T05:27:23.106Z
+starsUpdatedAt: 2026-08-23T05:27:23.106Z
+updatedAt: 2026-08-23T05:27:23.106Z

@@ -20,6 +20,9 @@ install:
   target: github:Jayliu2025-vip/dsh-fate-twin-contract#2564a25d0bb7a5ba88414075d4c8aa8f4a95cc87
   version: 0.1.0
   commit: 2564a25d0bb7a5ba88414075d4c8aa8f4a95cc87
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -41,12 +44,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 2564a25d0bb7a5ba88414075d4c8aa8f4a95cc87
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:33:46.592Z
+    findings: []
 license:
   code: SEE LICENSE IN NOTICE.md
   commercialUse: false
 featuredRank: 108
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-16T13:55:59.921Z
-metadataUpdatedAt: 2026-08-20T10:00:14.272Z
+releaseUpdatedAt: 2026-08-23T05:33:46.677Z
+metadataUpdatedAt: 2026-08-23T05:33:46.677Z
 starsUpdatedAt: 2026-08-16T13:55:59.921Z
-updatedAt: 2026-08-20T10:00:14.272Z
+updatedAt: 2026-08-23T05:33:46.677Z

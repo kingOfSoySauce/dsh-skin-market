@@ -22,6 +22,9 @@ install:
   target: github:lyq3/dsh-skin-nebula#57b9f7ff42faf9e71e038fb4f7c1826804eb47c7
   version: 0.6.0
   commit: 57b9f7ff42faf9e71e038fb4f7c1826804eb47c7
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -46,12 +49,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 57b9f7ff42faf9e71e038fb4f7c1826804eb47c7
+    packageVersion: 0.6.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T05:34:18.924Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 183
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-18T15:45:26.029Z
-metadataUpdatedAt: 2026-08-20T10:00:34.468Z
+releaseUpdatedAt: 2026-08-23T05:34:19.012Z
+metadataUpdatedAt: 2026-08-23T05:34:19.012Z
 starsUpdatedAt: 2026-08-18T15:45:26.029Z
-updatedAt: 2026-08-20T10:00:34.468Z
+updatedAt: 2026-08-23T05:34:19.012Z
