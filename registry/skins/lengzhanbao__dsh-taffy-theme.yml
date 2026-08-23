@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lengzhanbao/dsh-taffy-theme#9236efc3bd279df3d732134e96b48192971bbbf6
+  target: github:lengzhanbao/dsh-taffy-theme#c72629384adb82b4c5e684e6a66dc11bf180f556
   version: 0.1.2
-  commit: 9236efc3bd279df3d732134e96b48192971bbbf6
+  commit: c72629384adb82b4c5e684e6a66dc11bf180f556
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,14 +28,14 @@ compatibility:
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/c72629384adb82b4c5e684e6a66dc11bf180f556/preview/light.webp
+  - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/c72629384adb82b4c5e684e6a66dc11bf180f556/preview/dark.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/9236efc3bd279df3d732134e96b48192971bbbf6/preview/light.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/9236efc3bd279df3d732134e96b48192971bbbf6/preview/dark.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/8a803b0901bf23d8af39f1b363dd232700941d00/preview/light.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/8a803b0901bf23d8af39f1b363dd232700941d00/preview/dark.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/6e40b87b2f706abad8dcfa1be06aea02e4abdbe3/preview/light.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/6e40b87b2f706abad8dcfa1be06aea02e4abdbe3/preview/dark.webp
-  - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/03032aaa21190bfd31616ca0457625b0038ea448/preview/light.webp
-  - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/03032aaa21190bfd31616ca0457625b0038ea448/preview/dark.webp
 review:
   compatibility: verified
   preview: verified
@@ -50,20 +50,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 9236efc3bd279df3d732134e96b48192971bbbf6
+    commit: c72629384adb82b4c5e684e6a66dc11bf180f556
     packageVersion: 0.1.2
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:31:44.088Z
+    checkedAt: 2026-08-23T15:31:11.494Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1017
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-23T05:31:44.142Z
-metadataUpdatedAt: 2026-08-23T05:31:44.142Z
+releaseUpdatedAt: 2026-08-23T15:31:11.566Z
+metadataUpdatedAt: 2026-08-23T15:31:11.566Z
 starsUpdatedAt: 2026-08-21T09:10:13.888Z
-updatedAt: 2026-08-23T05:31:44.142Z
+updatedAt: 2026-08-23T15:31:11.566Z

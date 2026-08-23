@@ -1,0 +1,60 @@
+id: wwxiaoqi.ui-theme-quota-show
+name:
+  zh: ui-theme-quota-show
+  en: ui-theme-quota-show
+author: wwxiaoqi
+description: 一个面向 DeepSeek Harness Web UI 的插件：在侧边栏 “设置”触发器正上方 新增 DeepSeek API 余额卡片，读取官方 GET /user/balance 接口，展示剩余额度及其充值/赠送构成，每 60 秒自动刷新。
+repo: https://github.com/wwxiaoqi/ui-theme-quota-show
+package: ui-theme-quota-show
+rowId: ui-theme-quota-show
+category: theme
+tags:
+  - retro
+modes:
+  - light
+  - dark
+install:
+  target: github:wwxiaoqi/ui-theme-quota-show#528fd7b344f3bba956617582480c9dc888b6ab39
+  version: 1.0.0
+  commit: 528fd7b344f3bba956617582480c9dc888b6ab39
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/wwxiaoqi/ui-theme-quota-show/528fd7b344f3bba956617582480c9dc888b6ab39/pic.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 528fd7b344f3bba956617582480c9dc888b6ab39
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T10:29:25.430Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 259
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-23T10:29:25.952Z
+metadataUpdatedAt: 2026-08-23T10:29:25.952Z
+starsUpdatedAt: 2026-08-23T10:29:25.952Z
+updatedAt: 2026-08-23T10:29:25.952Z

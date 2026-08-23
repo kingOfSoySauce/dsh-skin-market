@@ -1,0 +1,60 @@
+id: yunfei07.dsh-song-ui
+name:
+  zh: dsh-song-ui
+  en: dsh-song-ui
+author: yunfei07
+description: English | 中文
+repo: https://github.com/yunfei07/dsh-song-ui
+package: ui-song-theme
+rowId: ui-song-theme-external
+category: theme
+tags:
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:yunfei07/dsh-song-ui#fb23f48219b259cf01f07e0a70c7a66b969b5b92
+  version: 0.1.0
+  commit: fb23f48219b259cf01f07e0a70c7a66b969b5b92
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: ">=0.1.0-rc.6"
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: fb23f48219b259cf01f07e0a70c7a66b969b5b92
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T10:16:48.192Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 997
+starsSnapshot: 3
+releaseUpdatedAt: 2026-08-23T10:16:48.742Z
+metadataUpdatedAt: 2026-08-23T15:28:57.882Z
+starsUpdatedAt: 2026-08-23T10:16:48.742Z
+updatedAt: 2026-08-23T15:28:57.882Z

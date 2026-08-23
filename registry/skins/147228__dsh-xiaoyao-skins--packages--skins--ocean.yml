@@ -1,0 +1,61 @@
+id: 147228.packages-skins-ocean
+name:
+  zh: packages/skins/ocean
+  en: packages/skins/ocean
+author: "147228"
+description: 夕小瑶 · 探索之境
+repo: https://github.com/147228/dsh-xiaoyao-skins
+subpath: packages/skins/ocean
+package: "@xiaoyao-ai/dsh-client-ui-skin-xiaoyao"
+rowId: ui-skin-xiaoyao
+category: theme
+tags:
+  - wallpaper
+  - light-dark
+modes:
+  - dark
+install:
+  target: github:147228/dsh-xiaoyao-skins#174f65d9135e932383a8f3a19fa522f16875a139&path:/packages/skins/ocean
+  version: 0.1.1
+  commit: 174f65d9135e932383a8f3a19fa522f16875a139
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 174f65d9135e932383a8f3a19fa522f16875a139
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T10:12:50.041Z
+    findings: []
+license:
+  code: SEE LICENSE IN LICENSE
+  commercialUse: false
+featuredRank: 976
+starsSnapshot: 24
+releaseUpdatedAt: 2026-08-23T10:12:50.306Z
+metadataUpdatedAt: 2026-08-23T15:26:30.649Z
+starsUpdatedAt: 2026-08-23T10:12:50.306Z
+updatedAt: 2026-08-23T15:26:30.649Z

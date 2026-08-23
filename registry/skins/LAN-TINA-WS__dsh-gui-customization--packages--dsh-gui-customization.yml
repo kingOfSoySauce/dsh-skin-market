@@ -1,0 +1,65 @@
+id: lan-tina-ws.dsh-gui-customization
+name:
+  zh: dsh-gui-customization
+  en: dsh-gui-customization
+author: LAN-TINA-WS
+description: dsh-gui-customization — 组合插件（发布轨）
+repo: https://github.com/LAN-TINA-WS/dsh-gui-customization
+subpath: packages/dsh-gui-customization
+package: dsh-gui-customization
+rowId: ui-gui-customization
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:LAN-TINA-WS/dsh-gui-customization#9945cdb96449deafc764016a032b878299264872&path:/packages/dsh-gui-customization
+  version: 0.6.3
+  commit: 9945cdb96449deafc764016a032b878299264872
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 9945cdb96449deafc764016a032b878299264872
+    packageVersion: 0.6.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T10:13:23.275Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 985
+starsSnapshot: 15
+releaseUpdatedAt: 2026-08-23T10:13:23.849Z
+metadataUpdatedAt: 2026-08-23T15:26:53.323Z
+starsUpdatedAt: 2026-08-23T10:13:23.849Z
+updatedAt: 2026-08-23T15:26:53.323Z

@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:yunxiiQwQ/dsh-maid-whale-webUI#4b46791a2eb868b8e081aab896d34dab124d4b62&path:/maid-whale-webui
+  target: github:yunxiiQwQ/dsh-maid-whale-webUI#fabd96163a86c403820ab594ec0bdd1e8fab1fd7&path:/maid-whale-webui
   version: 0.1.0
-  commit: 4b46791a2eb868b8e081aab896d34dab124d4b62
+  commit: fabd96163a86c403820ab594ec0bdd1e8fab1fd7
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -29,13 +29,14 @@ compatibility:
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/fabd96163a86c403820ab594ec0bdd1e8fab1fd7/maid-whale-webui/preview/light.webp
+  - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/fabd96163a86c403820ab594ec0bdd1e8fab1fd7/maid-whale-webui/preview/dark.webp
+  - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/fabd96163a86c403820ab594ec0bdd1e8fab1fd7/maid-whale-webui/preview/pet-working.png
   - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/4b46791a2eb868b8e081aab896d34dab124d4b62/maid-whale-webui/preview/light.webp
   - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/4b46791a2eb868b8e081aab896d34dab124d4b62/maid-whale-webui/preview/dark.webp
   - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/4b46791a2eb868b8e081aab896d34dab124d4b62/maid-whale-webui/preview/pet-working.png
   - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/6ab5e7499ddf76c4fcf6d83421c08e967db1c2bc/maid-whale-webui/preview/light.webp
   - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/6ab5e7499ddf76c4fcf6d83421c08e967db1c2bc/maid-whale-webui/preview/dark.webp
-  - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/f574f151bdfde7e8569797962eb8ff6aad4b3bf1/maid-whale-webui/preview/light.webp
-  - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/f574f151bdfde7e8569797962eb8ff6aad4b3bf1/maid-whale-webui/preview/dark.webp
 review:
   compatibility: unverified
   preview: verified
@@ -51,19 +52,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 4b46791a2eb868b8e081aab896d34dab124d4b62
+    commit: fabd96163a86c403820ab594ec0bdd1e8fab1fd7
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:27:27.433Z
+    checkedAt: 2026-08-23T15:26:35.002Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 22
 starsSnapshot: 23
-releaseUpdatedAt: 2026-08-23T05:27:27.495Z
-metadataUpdatedAt: 2026-08-23T05:27:27.495Z
+releaseUpdatedAt: 2026-08-23T15:26:35.059Z
+metadataUpdatedAt: 2026-08-23T15:26:35.059Z
 starsUpdatedAt: 2026-08-23T05:27:27.495Z
-updatedAt: 2026-08-23T05:27:27.495Z
+updatedAt: 2026-08-23T15:26:35.059Z

@@ -1,0 +1,63 @@
+id: juliye2025.dsh-butler-atelier
+name:
+  zh: dsh-butler-atelier
+  en: dsh-butler-atelier
+author: juliye2025
+description: butler-atelier · 深海男仆工坊
+repo: https://github.com/juliye2025/dsh-butler-atelier
+subpath: butler-atelier
+package: "@dsh-external/dsh-client-ui-skin-butler-atelier"
+rowId: ui-skin-butler-atelier
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:juliye2025/dsh-butler-atelier#ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a&path:/butler-atelier
+  version: 0.0.1
+  commit: ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/juliye2025/dsh-butler-atelier/ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a/butler-atelier/preview/chibi-mascot.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a
+    packageVersion: 0.0.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T10:25:59.179Z
+    findings: []
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 253
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-23T10:25:59.733Z
+metadataUpdatedAt: 2026-08-23T15:34:06.820Z
+starsUpdatedAt: 2026-08-23T10:25:59.733Z
+updatedAt: 2026-08-23T15:34:06.820Z

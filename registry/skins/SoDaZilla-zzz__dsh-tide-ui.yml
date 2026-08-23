@@ -1,0 +1,73 @@
+id: sodazilla-zzz.dsh-tide-ui
+name:
+  zh: dsh-tide-ui
+  en: dsh-tide-ui
+author: SoDaZilla-zzz
+description: DSH 潮汐液态玻璃皮肤 · DSH Tide Liquid-Glass Skin
+repo: https://github.com/SoDaZilla-zzz/dsh-tide-ui
+package: dsh-tide-ui
+rowId: ui-skin-tide
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:SoDaZilla-zzz/dsh-tide-ui#b7f6cea136a052bfe5b3cbebcc4e29788b5eb30a
+  version: 0.1.0
+  commit: b7f6cea136a052bfe5b3cbebcc4e29788b5eb30a
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-tide-ui
+    packageVersion: 0.1.0
+    integrity: sha512-Ksv7nPLe51GHKA6zh+6c3qzWqy8dZ9YM51YOd+CXNFJ/FG7YS3P8z3VRWenxZTX5LgZitPTcVl7ondeFwBwP+w==
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-tide-ui/b7f6cea136a052bfe5b3cbebcc4e29788b5eb30a/preview/light.png
+  - https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-tide-ui/b7f6cea136a052bfe5b3cbebcc4e29788b5eb30a/preview/dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: b7f6cea136a052bfe5b3cbebcc4e29788b5eb30a
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-08-23T10:27:48.951Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 256
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-23T10:27:49.533Z
+metadataUpdatedAt: 2026-08-23T10:27:49.533Z
+starsUpdatedAt: 2026-08-23T10:27:49.533Z
+updatedAt: 2026-08-23T10:27:49.533Z

@@ -1,0 +1,62 @@
+id: twelvecarbon.dsh-conversation-toc
+name:
+  zh: dsh-conversation-toc
+  en: dsh-conversation-toc
+author: twelvecarbon
+description: 中文 | English
+repo: https://github.com/twelvecarbon/dsh-conversation-toc
+package: dsh-conversation-toc
+rowId: conversation-toc
+category: theme
+tags:
+  - retro
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:twelvecarbon/dsh-conversation-toc#2061ba44575d92a7069b7ba2edac848ccf7a328a
+  version: 0.1.1
+  commit: 2061ba44575d92a7069b7ba2edac848ccf7a328a
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/twelvecarbon/dsh-conversation-toc/2061ba44575d92a7069b7ba2edac848ccf7a328a/docs/assets/toc-panel.png
+  - https://raw.githubusercontent.com/twelvecarbon/dsh-conversation-toc/2061ba44575d92a7069b7ba2edac848ccf7a328a/docs/assets/toc-rail.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 2061ba44575d92a7069b7ba2edac848ccf7a328a
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T10:28:28.303Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 257
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-23T10:28:28.872Z
+metadataUpdatedAt: 2026-08-23T15:35:36.404Z
+starsUpdatedAt: 2026-08-23T10:28:28.872Z
+updatedAt: 2026-08-23T15:35:36.404Z

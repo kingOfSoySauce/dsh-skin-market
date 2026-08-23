@@ -3,7 +3,7 @@ name:
   zh: dsh-aurora-skin
   en: dsh-aurora-skin
 author: breaker505
-description: "Three hand-tuned skins for DeepSeek Harness (DSH): Aurora (deep navy + electric cyan + warm coral), Paper (cool white + deep teal), and Hologram (near-black + lime-cyan). Pure --dsw-alias-* tokens, no core patches."
+description: "Three hand-tuned skins for DeepSeek Harness (DSH): Aurora (deep navy + electric cyan + warm coral), Paper (cool white + deep teal, daytime reading), and Hologram (near-black + lime-cyan, terminal"
 repo: https://github.com/breaker505/dsh-aurora-skin
 package: dsh-aurora-skin
 rowId: aurora-skin
@@ -56,6 +56,6 @@ license:
 featuredRank: 171
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:33:03.302Z
-metadataUpdatedAt: 2026-08-23T05:33:03.302Z
+metadataUpdatedAt: 2026-08-23T15:32:52.656Z
 starsUpdatedAt: 2026-08-18 15:44:13.078000+00:00
-updatedAt: 2026-08-23T05:33:03.302Z
+updatedAt: 2026-08-23T15:32:52.656Z

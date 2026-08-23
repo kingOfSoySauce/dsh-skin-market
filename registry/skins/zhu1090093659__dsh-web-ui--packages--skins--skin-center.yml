@@ -1,0 +1,66 @@
+id: zhu1090093659.packages-skins-skin-center
+name:
+  zh: packages/skins/skin-center
+  en: packages/skins/skin-center
+author: zhu1090093659
+description: 皮肤中心（GUI 内置皮肤中心）
+repo: https://github.com/zhu1090093659/dsh-web-ui
+subpath: packages/skins/skin-center
+package: "@linxin666/dsh-client-ui-skin-center"
+rowId: ui-skin-center
+category: theme
+tags:
+  - wallpaper
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:zhu1090093659/dsh-web-ui#c3b5eb8eaab00e9899291a0c702c379549ceddb2&path:/packages/skins/skin-center
+  version: 0.3.0
+  commit: c3b5eb8eaab00e9899291a0c702c379549ceddb2
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@linxin666/dsh-client-ui-skin-center"
+    packageVersion: 0.3.0
+    integrity: sha512-QzLTvJ+BTEBXu2LVKOBlVsgyY5I5DSqSs9u0rqZqSTcdGYu+r0ypADu1KcqLQiElVi8l7rNSDHwc5iTuiI4iwA==
+  allowBuild: "@linxin666/dsh-client-ui-skin-center@https://codeload.github.com/zhu1090093659/dsh-web-ui/tar.gz/c3b5eb8eaab00e9899291a0c702c379549ceddb2#path:packages/skins/skin-center"
+compatibility:
+  dsh: ^0.1.1-rc.2
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: c3b5eb8eaab00e9899291a0c702c379549ceddb2
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T15:25:48.217Z
+    findings: []
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 0
+starsSnapshot: 5717
+releaseUpdatedAt: 2026-08-23T15:25:48.315Z
+metadataUpdatedAt: 2026-08-23T15:25:48.315Z
+starsUpdatedAt: 2026-08-23T15:25:48.315Z
+updatedAt: 2026-08-23T15:25:48.315Z

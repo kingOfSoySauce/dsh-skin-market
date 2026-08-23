@@ -16,12 +16,15 @@ modes:
   - light
   - dark
 install:
-  target: github:AlexYin-Tongji/dsh-ui-enhancer#68f4261287e46195e472f1f2cc4e73ab6c52f983
-  version: 0.1.1
-  commit: 68f4261287e46195e472f1f2cc4e73ab6c52f983
+  target: github:AlexYin-Tongji/dsh-ui-enhancer#87f17fe74076570023e01e5d0fc55c21affd2c23
+  version: 0.2.0
+  commit: 87f17fe74076570023e01e5d0fc55c21affd2c23
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-ui-enhancer
+    packageVersion: 0.2.0
+    integrity: sha512-fKABrDkQtWXYSEyhb2EWNshf8z8BBRVZlS4x2KAaFVoph9M0NRo3u45fvtHtXPy/PZEGKi3nvnAWNEYI1Zfltg==
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -45,13 +48,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 68f4261287e46195e472f1f2cc4e73ab6c52f983
-    packageVersion: 0.1.1
+    commit: 87f17fe74076570023e01e5d0fc55c21affd2c23
+    packageVersion: 0.2.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: unknown
-    checkedAt: 2026-08-23T05:32:56.363Z
+    checkedAt: 2026-08-23T15:32:42.316Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -60,7 +63,7 @@ license:
   commercialUse: true
 featuredRank: 207
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-23T05:32:56.468Z
-metadataUpdatedAt: 2026-08-23T05:32:56.468Z
+releaseUpdatedAt: 2026-08-23T15:32:42.387Z
+metadataUpdatedAt: 2026-08-23T15:32:42.387Z
 starsUpdatedAt: 2026-08-19T04:38:53.745Z
-updatedAt: 2026-08-23T05:32:56.468Z
+updatedAt: 2026-08-23T15:32:42.387Z
