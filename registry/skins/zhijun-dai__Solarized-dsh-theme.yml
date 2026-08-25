@@ -29,15 +29,10 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-screenshots:
-  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/6b0614e53a4314c1705967b7e3c437b64dee64f2/assets/preview.webp
-  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/6b0614e53a4314c1705967b7e3c437b64dee64f2/assets/solarized-dark.webp
-  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/6b0614e53a4314c1705967b7e3c437b64dee64f2/assets/solarized-light.webp
-  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/6b0614e53a4314c1705967b7e3c437b64dee64f2/assets/selenized-dark.webp
-  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/6b0614e53a4314c1705967b7e3c437b64dee64f2/assets/selenized-light.webp
+screenshots: []
 review:
   compatibility: verified
-  preview: verified
+  preview: repository-card
   installation: verified
 health:
   status: healthy
@@ -61,8 +56,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 12
-starsSnapshot: 4
+starsSnapshot: 6
 releaseUpdatedAt: 2026-08-23T05:29:13.656Z
 metadataUpdatedAt: 2026-08-23T15:28:27.990Z
-starsUpdatedAt: 2026-08-21T09:08:39.350Z
-updatedAt: 2026-08-23T15:28:27.990Z
+starsUpdatedAt: 2026-08-25T07:09:28.421Z
+updatedAt: 2026-08-25T07:09:28.421Z

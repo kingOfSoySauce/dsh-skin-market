@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Ewnscat-ya/dsh-client-ui-skin-denia#1b846939864137123203f1cc8db628e1331df62a
-  version: 0.0.4
-  commit: 1b846939864137123203f1cc8db628e1331df62a
+  target: github:Ewnscat-ya/dsh-client-ui-skin-denia#be39c4861376c12c94fa1c1ca25055a53e6f60f7
+  version: 0.0.5
+  commit: be39c4861376c12c94fa1c1ca25055a53e6f60f7
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -29,6 +29,8 @@ compatibility:
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/be39c4861376c12c94fa1c1ca25055a53e6f60f7/preview/light.webp
+  - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/be39c4861376c12c94fa1c1ca25055a53e6f60f7/preview/dark.webp
   - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/1b846939864137123203f1cc8db628e1331df62a/preview/light.webp
   - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/1b846939864137123203f1cc8db628e1331df62a/preview/dark.webp
 review:
@@ -45,21 +47,21 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 1b846939864137123203f1cc8db628e1331df62a
-    packageVersion: 0.0.4
+    commit: be39c4861376c12c94fa1c1ca25055a53e6f60f7
+    packageVersion: 0.0.5
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:27:23.056Z
+    checkedAt: 2026-08-25T07:08:24.052Z
     findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
   notice: 角色、美术和商标权利归原权利人所有；仓库声明为非官方同人作品并禁止商业使用。
 featuredRank: 133
-starsSnapshot: 27
-releaseUpdatedAt: 2026-08-23T05:27:23.106Z
-metadataUpdatedAt: 2026-08-23T05:27:23.106Z
-starsUpdatedAt: 2026-08-23T15:26:24.096Z
-updatedAt: 2026-08-23T15:26:24.096Z
+starsSnapshot: 29
+releaseUpdatedAt: 2026-08-25T07:08:24.145Z
+metadataUpdatedAt: 2026-08-25T07:08:24.145Z
+starsUpdatedAt: 2026-08-25T07:08:24.145Z
+updatedAt: 2026-08-25T07:08:24.145Z

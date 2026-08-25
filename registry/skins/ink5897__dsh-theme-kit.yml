@@ -32,12 +32,13 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/cover.jpg
   - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/theme-morandi.png
   - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/theme-macaron.png
   - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/theme-chinese.png
   - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/settings-preset.png
   - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/settings-background.png
+  - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/settings-texture.png
+  - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/cover.jpg
 review:
   compatibility: verified
   preview: verified
@@ -64,8 +65,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 80
-starsSnapshot: 1
+starsSnapshot: 3
 releaseUpdatedAt: 2026-08-23T05:31:25.601Z
-metadataUpdatedAt: 2026-08-23T05:31:25.601Z
-starsUpdatedAt: 2026-08-16T13:52:31.430Z
-updatedAt: 2026-08-23T05:31:25.601Z
+metadataUpdatedAt: 2026-08-25T07:09:35.749Z
+starsUpdatedAt: 2026-08-25T07:09:35.749Z
+updatedAt: 2026-08-25T07:09:35.749Z

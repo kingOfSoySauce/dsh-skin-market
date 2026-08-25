@@ -26,6 +26,7 @@ compatibility:
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/HomoLand/dshp-balance-hp/e6674cce48f3628d73010774a01e805f2e17a39a/assets/%E6%95%88%E6%9E%9C%E5%9B%BE.png
   - https://raw.githubusercontent.com/HomoLand/dshp-balance-hp/e6674cce48f3628d73010774a01e805f2e17a39a/assets/效果图.png
 review:
   compatibility: verified
@@ -53,8 +54,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 251
-starsSnapshot: 0
+starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T10:25:24.365Z
-metadataUpdatedAt: 2026-08-23T15:33:48.704Z
-starsUpdatedAt: 2026-08-23T10:25:24.365Z
-updatedAt: 2026-08-23T15:33:48.704Z
+metadataUpdatedAt: 2026-08-25T07:12:26.826Z
+starsUpdatedAt: 2026-08-25T07:12:26.826Z
+updatedAt: 2026-08-25T07:12:26.826Z

@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:niiang/dsh-kimino-theme#4c01c9701690c5e4ccfe0253225f4cba9254414f
+  target: github:niiang/dsh-kimino-theme#bd9125b18eee0c8958a6106dfdd86e2060bb4c72
   version: 66.2.0
-  commit: 4c01c9701690c5e4ccfe0253225f4cba9254414f
+  commit: bd9125b18eee0c8958a6106dfdd86e2060bb4c72
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -29,14 +29,14 @@ compatibility:
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/bd9125b18eee0c8958a6106dfdd86e2060bb4c72/docs/screenshots/home-hero.png
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/bd9125b18eee0c8958a6106dfdd86e2060bb4c72/docs/screenshots/sidebar.png
+  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/bd9125b18eee0c8958a6106dfdd86e2060bb4c72/docs/screenshots/chat-main.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/4c01c9701690c5e4ccfe0253225f4cba9254414f/docs/screenshots/home-hero.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/4c01c9701690c5e4ccfe0253225f4cba9254414f/docs/screenshots/sidebar.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/4c01c9701690c5e4ccfe0253225f4cba9254414f/docs/screenshots/chat-main.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0a17159ecc9cf61834bac3265f5c8dab333431e9/docs/screenshots/home-hero.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0a17159ecc9cf61834bac3265f5c8dab333431e9/docs/screenshots/sidebar.png
-  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0a17159ecc9cf61834bac3265f5c8dab333431e9/docs/screenshots/chat-main.png
-  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/home-hero.png
-  - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/eda0aef6141cf13e4bb123a4749696fe045c349c/docs/screenshots/sidebar.png
 review:
   compatibility: unverified
   preview: verified
@@ -52,19 +52,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 4c01c9701690c5e4ccfe0253225f4cba9254414f
+    commit: bd9125b18eee0c8958a6106dfdd86e2060bb4c72
     packageVersion: 66.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:27:35.804Z
+    checkedAt: 2026-08-25T07:08:30.656Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 145
-starsSnapshot: 20
-releaseUpdatedAt: 2026-08-23T05:27:35.902Z
-metadataUpdatedAt: 2026-08-23T05:27:35.902Z
-starsUpdatedAt: 2026-08-23T15:26:45.386Z
-updatedAt: 2026-08-23T15:26:45.386Z
+starsSnapshot: 23
+releaseUpdatedAt: 2026-08-25T07:08:30.778Z
+metadataUpdatedAt: 2026-08-25T07:08:30.778Z
+starsUpdatedAt: 2026-08-25T07:08:30.778Z
+updatedAt: 2026-08-25T07:08:30.778Z

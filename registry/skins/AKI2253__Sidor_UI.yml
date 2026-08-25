@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:AKI2253/Sidor_UI#7aa8e7c4571b376df3c20a162e6dfd05609e6093
+  target: github:AKI2253/Sidor_UI#399e620a82b119ddaf38036e1a914d03fb669921
   version: 1.0.0
-  commit: 7aa8e7c4571b376df3c20a162e6dfd05609e6093
+  commit: 399e620a82b119ddaf38036e1a914d03fb669921
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -26,14 +26,14 @@ compatibility:
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/399e620a82b119ddaf38036e1a914d03fb669921/preview/hero.png
+  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/399e620a82b119ddaf38036e1a914d03fb669921/preview/setting.png
+  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/399e620a82b119ddaf38036e1a914d03fb669921/preview/warning.png
   - https://raw.githubusercontent.com/AKI2253/Sidor_UI/7aa8e7c4571b376df3c20a162e6dfd05609e6093/preview/hero.png
   - https://raw.githubusercontent.com/AKI2253/Sidor_UI/7aa8e7c4571b376df3c20a162e6dfd05609e6093/preview/setting.png
   - https://raw.githubusercontent.com/AKI2253/Sidor_UI/7aa8e7c4571b376df3c20a162e6dfd05609e6093/preview/warning.png
   - https://raw.githubusercontent.com/AKI2253/Sidor_UI/7a6a4a0dacd1aacb037dea42b16d1e5a9086daa9/preview/hero.png
   - https://raw.githubusercontent.com/AKI2253/Sidor_UI/7a6a4a0dacd1aacb037dea42b16d1e5a9086daa9/preview/setting.png
-  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/7a6a4a0dacd1aacb037dea42b16d1e5a9086daa9/preview/warning.png
-  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/1ce441b43be184809cfc2923e5b9c5409703f2ea/preview/hero.png
-  - https://raw.githubusercontent.com/AKI2253/Sidor_UI/1ce441b43be184809cfc2923e5b9c5409703f2ea/preview/setting.png
 review:
   compatibility: unverified
   preview: verified
@@ -49,19 +49,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 7aa8e7c4571b376df3c20a162e6dfd05609e6093
+    commit: 399e620a82b119ddaf38036e1a914d03fb669921
     packageVersion: 1.0.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:29:52.208Z
+    checkedAt: 2026-08-25T07:09:50.638Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1016
-starsSnapshot: 2
-releaseUpdatedAt: 2026-08-23T05:29:52.296Z
-metadataUpdatedAt: 2026-08-23T05:29:52.296Z
-starsUpdatedAt: 2026-08-21T17:51:22.860Z
-updatedAt: 2026-08-23T05:29:52.296Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-08-25T07:09:50.764Z
+metadataUpdatedAt: 2026-08-25T07:09:50.764Z
+starsUpdatedAt: 2026-08-25T07:09:50.764Z
+updatedAt: 2026-08-25T07:09:50.764Z

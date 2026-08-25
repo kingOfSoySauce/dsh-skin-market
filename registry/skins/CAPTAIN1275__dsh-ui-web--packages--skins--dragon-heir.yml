@@ -32,6 +32,10 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/251119cedac66dbd31ca8ce6cb112369b60b359b/packages/skins/dragon-heir/preview/dark.png
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/251119cedac66dbd31ca8ce6cb112369b60b359b/packages/skins/dragon-heir/preview/light.png
+  - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/251119cedac66dbd31ca8ce6cb112369b60b359b/docs/aurora-glass.png
+  - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/251119cedac66dbd31ca8ce6cb112369b60b359b/packages/skins/aurora/preview/dark.png
+  - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/251119cedac66dbd31ca8ce6cb112369b60b359b/packages/skins/aurora/preview/light.png
+  - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/251119cedac66dbd31ca8ce6cb112369b60b359b/docs/effort-slider.png
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/dragon-heir/preview/dark.png
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/dragon-heir/preview/light.png
 review:
@@ -41,13 +45,12 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 251119cedac66dbd31ca8ce6cb112369b60b359b
@@ -62,8 +65,8 @@ license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 969
-starsSnapshot: 36
+starsSnapshot: 37
 releaseUpdatedAt: 2026-08-23T05:27:13.605Z
-metadataUpdatedAt: 2026-08-23T05:27:13.605Z
-starsUpdatedAt: 2026-08-23T05:27:13.605Z
-updatedAt: 2026-08-23T05:27:13.605Z
+metadataUpdatedAt: 2026-08-25T07:08:20.266Z
+starsUpdatedAt: 2026-08-25T07:08:20.266Z
+updatedAt: 2026-08-25T07:08:20.266Z

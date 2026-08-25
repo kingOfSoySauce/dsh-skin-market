@@ -47,10 +47,9 @@ health:
     compatibility: improve
     installation: pass
     installCommand: pass
-    topic: improve
+    topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
     commit: 9945cdb96449deafc764016a032b878299264872
     packageVersion: 0.6.3
@@ -65,6 +64,6 @@ license:
 featuredRank: 985
 starsSnapshot: 15
 releaseUpdatedAt: 2026-08-23T10:13:23.849Z
-metadataUpdatedAt: 2026-08-23T17:17:54.262Z
+metadataUpdatedAt: 2026-08-25T07:08:34.743Z
 starsUpdatedAt: 2026-08-23T10:13:23.849Z
-updatedAt: 2026-08-23T17:17:54.262Z
+updatedAt: 2026-08-25T07:08:34.743Z

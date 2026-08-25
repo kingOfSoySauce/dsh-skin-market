@@ -16,29 +16,29 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#c947e0f24a36802d660f9979d1b0e506590d4216
+  target: github:TQSY114514/dsh-ui-appearance#6776b32b845cad0a996f421385de594aa944fbd6
   version: 0.1.5
-  commit: c947e0f24a36802d660f9979d1b0e506590d4216
+  commit: 6776b32b845cad0a996f421385de594aa944fbd6
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-ui-appearance
     packageVersion: 0.1.5
     integrity: sha512-FxpfjB2Xv8klJvzKGv9nPv8Y+gq2NWCIw1bch6Rz2F1/zWSI+kCbonhapyomz/fqyki1S0EuLrvIyXNcfydsCQ==
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/c947e0f24a36802d660f9979d1b0e506590d4216
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/6776b32b845cad0a996f421385de594aa944fbd6
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/6776b32b845cad0a996f421385de594aa944fbd6/docs/screenshot-settings.png
+  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/6776b32b845cad0a996f421385de594aa944fbd6/docs/screenshot-wallpaper.png
+  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/6776b32b845cad0a996f421385de594aa944fbd6/docs/screenshot-desktop-fancy.webp
+  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/6776b32b845cad0a996f421385de594aa944fbd6/docs/screenshot-desktop-compat.webp
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/c947e0f24a36802d660f9979d1b0e506590d4216/docs/screenshot-settings.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/c947e0f24a36802d660f9979d1b0e506590d4216/docs/screenshot-wallpaper.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/bde396182cc53bb4f88c0fb69ac2b4daead43072/docs/screenshot-settings.png
   - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/bde396182cc53bb4f88c0fb69ac2b4daead43072/docs/screenshot-wallpaper.png
-  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/291759aaaef8c88d23cd80d877bc86bab90e34da/docs/screenshot-settings.png
-  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/291759aaaef8c88d23cd80d877bc86bab90e34da/docs/screenshot-wallpaper.png
-  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/19f508b90ce86df7a9a1c7d167fd9d8cb639d4c9/docs/screenshot-settings.png
-  - https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/19f508b90ce86df7a9a1c7d167fd9d8cb639d4c9/docs/screenshot-wallpaper.png
 review:
   compatibility: unverified
   preview: verified
@@ -56,12 +56,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: c947e0f24a36802d660f9979d1b0e506590d4216
+    commit: 6776b32b845cad0a996f421385de594aa944fbd6
     packageVersion: 0.1.5
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-08-23T15:27:16.899Z
+    checkedAt: 2026-08-25T07:08:48.682Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -70,7 +70,7 @@ license:
   commercialUse: true
 featuredRank: 36
 starsSnapshot: 10
-releaseUpdatedAt: 2026-08-23T15:27:16.964Z
-metadataUpdatedAt: 2026-08-23T15:27:16.964Z
+releaseUpdatedAt: 2026-08-25T07:08:48.808Z
+metadataUpdatedAt: 2026-08-25T07:08:48.808Z
 starsUpdatedAt: 2026-08-21T09:07:54.480Z
-updatedAt: 2026-08-23T15:27:16.964Z
+updatedAt: 2026-08-25T07:08:48.808Z

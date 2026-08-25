@@ -16,26 +16,25 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#4b7a305bdc612bcf06cccd8109d9b68f75904eab
-  version: 0.4.0
-  commit: 4b7a305bdc612bcf06cccd8109d9b68f75904eab
+  target: github:webkubor/dsh-bloom-theme#b356a6819bcf810755bc29fc0c2256b11f711f82
+  version: 0.8.8
+  commit: b356a6819bcf810755bc29fc0c2256b11f711f82
   desktop:
-    mode: managed
-    registry: npm
-    packageName: "@kubor/dsh-bloom-theme"
-    packageVersion: 0.4.0
-    integrity: sha512-O25zBbIOQ8w04zNk4OO1LpFycxO/ZVLceyvJvTX3KzT9sahBdix5SINU75qrWAlXAf+tQWf1qaeexlnyPrugYA==
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/bloom-banner.png
+  - https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/b356a6819bcf810755bc29fc0c2256b11f711f82/assets/screenshots/ui-sage-light.png
+  - https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/b356a6819bcf810755bc29fc0c2256b11f711f82/assets/screenshots/ui-mist-light.png
+  - https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/b356a6819bcf810755bc29fc0c2256b11f711f82/assets/screenshots/ui-cinnabar-light.png
+  - https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/b356a6819bcf810755bc29fc0c2256b11f711f82/assets/screenshots/ui-petal-light.png
+  - https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/b356a6819bcf810755bc29fc0c2256b11f711f82/assets/screenshots/ui-ripple-light.png
   - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-mist-dark.png
   - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-cinnabar-dark.png
-  - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-petal-dark.png
-  - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-ripple-dark.png
-  - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-mist-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -51,19 +50,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 4b7a305bdc612bcf06cccd8109d9b68f75904eab
-    packageVersion: 0.4.0
+    commit: b356a6819bcf810755bc29fc0c2256b11f711f82
+    packageVersion: 0.8.8
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T15:27:18.171Z
+    checkedAt: 2026-08-25T07:08:43.515Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 193
-starsSnapshot: 10
-releaseUpdatedAt: 2026-08-23T15:27:18.263Z
-metadataUpdatedAt: 2026-08-23T15:27:18.263Z
-starsUpdatedAt: 2026-08-23T05:28:05.319Z
-updatedAt: 2026-08-23T15:27:18.263Z
+starsSnapshot: 13
+releaseUpdatedAt: 2026-08-25T07:08:43.633Z
+metadataUpdatedAt: 2026-08-25T07:08:43.633Z
+starsUpdatedAt: 2026-08-25T07:08:43.633Z
+updatedAt: 2026-08-25T07:08:43.633Z

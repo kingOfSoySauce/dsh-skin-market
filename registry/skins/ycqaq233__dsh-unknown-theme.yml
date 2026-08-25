@@ -29,6 +29,10 @@ compatibility:
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B5%85%E8%89%B2%E4%B8%BB%E9%A1%B5.png
+  - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B7%B1%E8%89%B2%E4%B8%BB%E9%A1%B5.png
+  - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B5%85%E8%89%B2%E5%AF%B9%E8%AF%9D.png
+  - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B7%B1%E8%89%B2%E5%AF%B9%E8%AF%9D.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/浅色主页.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/深色主页.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/浅色对话.png
@@ -59,8 +63,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 197
-starsSnapshot: 2
+starsSnapshot: 3
 releaseUpdatedAt: 2026-08-23T05:30:47.075Z
-metadataUpdatedAt: 2026-08-23T05:30:47.075Z
-starsUpdatedAt: 2026-08-21T09:09:34.504Z
-updatedAt: 2026-08-23T05:30:47.075Z
+metadataUpdatedAt: 2026-08-25T07:09:42.939Z
+starsUpdatedAt: 2026-08-25T07:09:42.939Z
+updatedAt: 2026-08-25T07:09:42.939Z

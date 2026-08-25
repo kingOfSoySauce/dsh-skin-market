@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:chouxiaohuai/uiskin-theme#ab0b2d4977f47a388c7e60f892d26f3142854e9f
+  target: github:chouxiaohuai/uiskin-theme#1090305bfa94b9772460b5382ab82751055692bb
   version: 1.0.0
-  commit: ab0b2d4977f47a388c7e60f892d26f3142854e9f
+  commit: 1090305bfa94b9772460b5382ab82751055692bb
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,6 +28,7 @@ compatibility:
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/1090305bfa94b9772460b5382ab82751055692bb/assets/preview.jpg
   - https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/ab0b2d4977f47a388c7e60f892d26f3142854e9f/assets/preview.jpg
   - https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/ca545b30b09000fc0980d86ab58f8f360dc80792/assets/preview.jpg
   - https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/50f6ee04073d7609ebaffaa563ebba3487c9a2d7/assets/preview.jpg
@@ -47,19 +48,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: ab0b2d4977f47a388c7e60f892d26f3142854e9f
+    commit: 1090305bfa94b9772460b5382ab82751055692bb
     packageVersion: 1.0.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:30:05.907Z
+    checkedAt: 2026-08-25T07:09:33.009Z
     findings: []
 license:
   code: UNLICENSED
   commercialUse: false
 featuredRank: 159
-starsSnapshot: 3
-releaseUpdatedAt: 2026-08-23T05:30:05.907Z
-metadataUpdatedAt: 2026-08-23T05:30:05.907Z
-starsUpdatedAt: 2026-08-23T15:29:24.260Z
-updatedAt: 2026-08-23T15:29:24.260Z
+starsSnapshot: 8
+releaseUpdatedAt: 2026-08-25T07:09:33.009Z
+metadataUpdatedAt: 2026-08-25T07:09:33.009Z
+starsUpdatedAt: 2026-08-25T07:09:33.009Z
+updatedAt: 2026-08-25T07:09:33.009Z

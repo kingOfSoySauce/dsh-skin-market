@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:jiangwangyang/dsh-theme-blackhole#31a272e7b3a3cbe739c73b087877c81ecae24aa1
+  target: github:jiangwangyang/dsh-theme-blackhole#b32e855fce0f8bfd3ccfd1fcb897328a9f62bd8e
   version: 0.1.0
-  commit: 31a272e7b3a3cbe739c73b087877c81ecae24aa1
+  commit: b32e855fce0f8bfd3ccfd1fcb897328a9f62bd8e
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -29,6 +29,7 @@ compatibility:
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/jiangwangyang/dsh-theme-blackhole/b32e855fce0f8bfd3ccfd1fcb897328a9f62bd8e/docs/screenshots/blackhole.png
   - https://raw.githubusercontent.com/jiangwangyang/dsh-theme-blackhole/31a272e7b3a3cbe739c73b087877c81ecae24aa1/docs/screenshots/blackhole.png
 review:
   compatibility: unverified
@@ -45,19 +46,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 31a272e7b3a3cbe739c73b087877c81ecae24aa1
+    commit: b32e855fce0f8bfd3ccfd1fcb897328a9f62bd8e
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:33:50.706Z
+    checkedAt: 2026-08-25T07:12:29.929Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1025
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-23T05:33:50.777Z
-metadataUpdatedAt: 2026-08-23T05:33:50.777Z
-starsUpdatedAt: 2026-08-21T17:53:58.157Z
-updatedAt: 2026-08-23T05:33:50.777Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-25T07:12:30.049Z
+metadataUpdatedAt: 2026-08-25T07:12:30.049Z
+starsUpdatedAt: 2026-08-25T07:12:30.049Z
+updatedAt: 2026-08-25T07:12:30.049Z

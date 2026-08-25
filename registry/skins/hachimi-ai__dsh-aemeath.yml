@@ -28,8 +28,8 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/hachimi-ai/dsh-aemeath/f58eef75dcadb5aeaee9e78542e7e1d9ba43f821/image/image1.png
   - https://github.com/user-attachments/assets/da2c1a8e-5ea8-4e1c-81d4-4c3f5cfffc83
+  - https://raw.githubusercontent.com/hachimi-ai/dsh-aemeath/f58eef75dcadb5aeaee9e78542e7e1d9ba43f821/image/image1.png
 review:
   compatibility: verified
   preview: verified
@@ -57,8 +57,8 @@ license:
   commercialUse: true
   notice: 插件代码声明为 MIT；壁纸与精灵表为第三方《鸣潮》爱弥斯素材，仓库说明仅供个人学习交流使用，版权归原权利人所有。
 featuredRank: 134
-starsSnapshot: 5
+starsSnapshot: 6
 releaseUpdatedAt: 2026-08-23T05:28:43.968Z
-metadataUpdatedAt: 2026-08-23T05:28:43.968Z
-starsUpdatedAt: 2026-08-20T05:07:43.055Z
-updatedAt: 2026-08-23T05:28:43.968Z
+metadataUpdatedAt: 2026-08-25T07:09:09.562Z
+starsUpdatedAt: 2026-08-25T07:09:09.562Z
+updatedAt: 2026-08-25T07:09:09.562Z

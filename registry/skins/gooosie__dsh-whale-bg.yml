@@ -30,6 +30,7 @@ compatibility:
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/gooosie/dsh-whale-bg/2746a7eacba5c0dde28e29d00b6b15f1f2894164/docs/assets/dsh-whale-bg-preview.webp
   - https://raw.githubusercontent.com/gooosie/dsh-whale-bg/2746a7eacba5c0dde28e29d00b6b15f1f2894164/docs/assets/dsh-whale-bg-preview.gif
 review:
   compatibility: verified
@@ -61,8 +62,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 104
-starsSnapshot: 0
+starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:33:34.648Z
-metadataUpdatedAt: 2026-08-23T05:33:34.648Z
-starsUpdatedAt: 2026-08-16T13:55:34.455Z
-updatedAt: 2026-08-23T05:33:34.648Z
+metadataUpdatedAt: 2026-08-25T07:10:59.428Z
+starsUpdatedAt: 2026-08-25T07:10:59.428Z
+updatedAt: 2026-08-25T07:10:59.428Z

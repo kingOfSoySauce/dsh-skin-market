@@ -27,11 +27,11 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/banner.jpg
   - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/shot-bigorange.png
   - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/shot-white.png
   - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/shot-black.png
   - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/shot-tuxedo.png
+  - https://raw.githubusercontent.com/dancingmemory/dskin/3ed971ae31802861a5dfd8349ba7a2fbf611a3e1/assets/banner.jpg
   - https://raw.githubusercontent.com/dancingmemory/dskin/792064e6dbb022c5f9ce3529b9cf66efba2863c1/assets/banner.jpg
   - https://raw.githubusercontent.com/dancingmemory/dskin/792064e6dbb022c5f9ce3529b9cf66efba2863c1/assets/shot-bigorange.png
   - https://raw.githubusercontent.com/dancingmemory/dskin/792064e6dbb022c5f9ce3529b9cf66efba2863c1/assets/shot-white.png
@@ -63,6 +63,6 @@ license:
 featuredRank: 38
 starsSnapshot: 7
 releaseUpdatedAt: 2026-08-23T05:28:15.410Z
-metadataUpdatedAt: 2026-08-23T05:28:15.410Z
+metadataUpdatedAt: 2026-08-25T07:08:55.201Z
 starsUpdatedAt: 2026-08-18T15:39:30.818Z
-updatedAt: 2026-08-23T05:28:15.410Z
+updatedAt: 2026-08-25T07:08:55.201Z

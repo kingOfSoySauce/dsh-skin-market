@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lxxz1918/dsh-theme-customizer#8db301f5eb0741cde51f8b2258d9bc3efee5a820
+  target: github:lxxz1918/dsh-theme-customizer#600592a51a52dad8c6a81438540e4236e42c3c79
   version: 1.0.5
-  commit: 8db301f5eb0741cde51f8b2258d9bc3efee5a820
+  commit: 600592a51a52dad8c6a81438540e4236e42c3c79
   desktop:
     mode: managed
     registry: npm
@@ -51,19 +51,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 8db301f5eb0741cde51f8b2258d9bc3efee5a820
+    commit: 600592a51a52dad8c6a81438540e4236e42c3c79
     packageVersion: 1.0.5
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T15:34:27.801Z
+    checkedAt: 2026-08-25T07:12:35.744Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1028
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-23T15:34:27.871Z
-metadataUpdatedAt: 2026-08-23T15:34:27.871Z
-starsUpdatedAt: 2026-08-22T03:15:53.534Z
-updatedAt: 2026-08-23T15:34:27.871Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-08-25T07:12:35.873Z
+metadataUpdatedAt: 2026-08-25T07:12:35.873Z
+starsUpdatedAt: 2026-08-25T07:12:35.873Z
+updatedAt: 2026-08-25T07:12:35.873Z

@@ -17,28 +17,28 @@ modes:
   - light
   - dark
 install:
-  target: github:RevolutionLA/dsh-dream-skin#eacb2a5e885dd2c75940cbb27df1a3bf661fe441
-  version: 0.4.10
-  commit: eacb2a5e885dd2c75940cbb27df1a3bf661fe441
+  target: github:RevolutionLA/dsh-dream-skin#e29194bce0b9463f255220e8ffc8c06ec9dfbf93
+  version: 0.4.12
+  commit: e29194bce0b9463f255220e8ffc8c06ec9dfbf93
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-dream-skin
-    packageVersion: 0.4.10
-    integrity: sha512-F7f4twINP9wNQKQ+TwNlMg2CicsuVqLWwmQ3waHocn4d/PItqbk8iN6kyk0l+Us4n4uq1SltnyFqz2Tujrteag==
+    packageVersion: 0.4.12
+    integrity: sha512-UQ8L5F15nxF+gnbEUupEvwhtAZx83kfg3to+0CucgaSP7+yhPL5UMun5ZaHky3+7kua03QHDlyKYzoJ2e/siEg==
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/e29194bce0b9463f255220e8ffc8c06ec9dfbf93/docs/screenshots/preview.png
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/e29194bce0b9463f255220e8ffc8c06ec9dfbf93/docs/screenshots/settings.png
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/e29194bce0b9463f255220e8ffc8c06ec9dfbf93/docs/previews/abyss.png
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/e29194bce0b9463f255220e8ffc8c06ec9dfbf93/docs/previews/aurora.png
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/e29194bce0b9463f255220e8ffc8c06ec9dfbf93/docs/previews/nebula.png
+  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/e29194bce0b9463f255220e8ffc8c06ec9dfbf93/docs/previews/ember.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/eacb2a5e885dd2c75940cbb27df1a3bf661fe441/docs/screenshots/preview.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/eacb2a5e885dd2c75940cbb27df1a3bf661fe441/docs/screenshots/settings.png
-  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/eacb2a5e885dd2c75940cbb27df1a3bf661fe441/docs/previews/abyss.png
-  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/eacb2a5e885dd2c75940cbb27df1a3bf661fe441/docs/previews/aurora.png
-  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/eacb2a5e885dd2c75940cbb27df1a3bf661fe441/docs/previews/nebula.png
-  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/eacb2a5e885dd2c75940cbb27df1a3bf661fe441/docs/previews/ember.png
-  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/96fe8c5494d626dc322e97475591fdc73fc72771/docs/screenshots/preview.png
-  - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/96fe8c5494d626dc322e97475591fdc73fc72771/docs/screenshots/settings.png
 review:
   compatibility: verified
   preview: verified
@@ -53,20 +53,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: eacb2a5e885dd2c75940cbb27df1a3bf661fe441
-    packageVersion: 0.4.10
+    commit: e29194bce0b9463f255220e8ffc8c06ec9dfbf93
+    packageVersion: 0.4.12
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:27:05.021Z
+    checkedAt: 2026-08-25T07:08:16.594Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 4
-starsSnapshot: 90
-releaseUpdatedAt: 2026-08-23T05:27:05.096Z
-metadataUpdatedAt: 2026-08-23T05:27:05.096Z
-starsUpdatedAt: 2026-08-23T15:26:06.114Z
-updatedAt: 2026-08-23T15:26:06.114Z
+starsSnapshot: 104
+releaseUpdatedAt: 2026-08-25T07:08:16.705Z
+metadataUpdatedAt: 2026-08-25T07:08:16.705Z
+starsUpdatedAt: 2026-08-25T07:08:16.705Z
+updatedAt: 2026-08-25T07:08:16.705Z
