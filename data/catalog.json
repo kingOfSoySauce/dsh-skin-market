@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T01:38:56.433Z",
+  "generatedAt": "2026-08-27T08:08:22.313Z",
   "skins": [
     {
       "id": "univerfv.dsh-furina-theme",
@@ -307,6 +307,81 @@
           },
           null,
           null
+        ]
+      }
+    },
+    {
+      "id": "mumuer1024.dsh-ui-liteglass",
+      "name": {
+        "zh": "LiteGlass",
+        "en": "LiteGlass"
+      },
+      "author": "mumuer1024",
+      "description": "DeepSeek Harness 轻量级外观皮肤：自定义壁纸、玻璃质感面板与重点色；服务端持久化、多设备一致，不接管原生深浅色。",
+      "repo": "https://github.com/mumuer1024/dsh-ui-liteglass",
+      "package": "dsh-ui-liteglass",
+      "rowId": "ui-liteglass",
+      "category": "theme",
+      "tags": [
+        "wallpaper",
+        "glass",
+        "accent",
+        "theme"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:mumuer1024/dsh-ui-liteglass#586943c25e559409d202ab1e572d4f7f848eb7a6",
+        "version": "0.1.0",
+        "commit": "586943c25e559409d202ab1e572d4f7f848eb7a6",
+        "allowBuild": "dsh-ui-liteglass@https://codeload.github.com/mumuer1024/dsh-ui-liteglass/tar.gz/586943c25e559409d202ab1e572d4f7f848eb7a6"
+      },
+      "compatibility": {
+        "dsh": "0.1.0-rc.7",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/preview-light.webp",
+        "https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/preview-dark.webp",
+        "https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/settings-light.webp",
+        "https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/settings-dark.webp"
+      ],
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 0,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-08-27T00:51:21Z",
+      "metadataUpdatedAt": "2026-08-27T01:34:31Z",
+      "starsUpdatedAt": "2026-08-27T01:34:31Z",
+      "updatedAt": "2026-08-27T01:34:31Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/03fc81d35f27984f645882cb5fa1b745.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/03fc81d35f27984f645882cb5fa1b745.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/03fc81d35f27984f645882cb5fa1b745.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/03fc81d35f27984f645882cb5fa1b745.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ee4aee36eea471cc1d7d8e75e5e24180.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ee4aee36eea471cc1d7d8e75e5e24180.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/16c7e8e074755bcfe9f18dde6cd2b7db.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/16c7e8e074755bcfe9f18dde6cd2b7db.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f3843834cc37e59143eb3ab6cdd51fd9.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f3843834cc37e59143eb3ab6cdd51fd9.full.webp"
+          }
         ]
       }
     },
