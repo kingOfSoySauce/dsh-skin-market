@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-26T14:17:13.822Z",
+  "generatedAt": "2026-08-27T01:38:56.433Z",
   "skins": [
     {
       "id": "univerfv.dsh-furina-theme",
@@ -130,9 +130,9 @@
         "light"
       ],
       "install": {
-        "target": "github:Carlown/majia7-dsh-skin#297cdd037e52f5a5c9e4c080a5dc8fd7d42fb730",
-        "version": "0.3.4",
-        "commit": "297cdd037e52f5a5c9e4c080a5dc8fd7d42fb730",
+        "target": "github:Carlown/majia7-dsh-skin#1b326bda8e085cba59aa83b81251fd37cbf32b93",
+        "version": "0.3.6",
+        "commit": "1b326bda8e085cba59aa83b81251fd37cbf32b93",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-package-not-found"
