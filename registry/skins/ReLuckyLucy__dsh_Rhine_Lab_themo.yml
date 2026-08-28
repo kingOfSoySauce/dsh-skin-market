@@ -16,13 +16,12 @@ modes:
   - light
   - dark
 install:
-  target: github:ReLuckyLucy/dsh_Rhine_Lab_themo#54c2f2611f6bc6e36a784cc33908ad29bccef2b7
-  version: 0.2.0
-  commit: 54c2f2611f6bc6e36a784cc33908ad29bccef2b7
+  target: github:ReLuckyLucy/dsh_Rhine_Lab_themo#3c966c864a2cf51276945645a0a07179d433f63e
+  version: 0.2.1
+  commit: 3c966c864a2cf51276945645a0a07179d433f63e
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  allowBuild: dsh-theme-rhine-lab@https://codeload.github.com/ReLuckyLucy/dsh_Rhine_Lab_themo/tar.gz/54c2f2611f6bc6e36a784cc33908ad29bccef2b7
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
@@ -44,20 +43,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 54c2f2611f6bc6e36a784cc33908ad29bccef2b7
-    packageVersion: 0.2.0
+    commit: 3c966c864a2cf51276945645a0a07179d433f63e
+    packageVersion: 0.2.1
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:34:40.558Z
+    checkedAt: 2026-08-28T04:09:08.538Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 118
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-23T05:34:40.558Z
-metadataUpdatedAt: 2026-08-26T03:30:18.885Z
+releaseUpdatedAt: 2026-08-28T04:09:08.601Z
+metadataUpdatedAt: 2026-08-28T04:09:08.601Z
 starsUpdatedAt: 2026-08-25T07:12:41.574Z
-updatedAt: 2026-08-26T03:30:18.885Z
+updatedAt: 2026-08-28T04:09:08.601Z
