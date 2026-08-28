@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T04:10:48.075Z",
+  "generatedAt": "2026-08-28T06:16:34.510Z",
   "skins": [
     {
       "id": "univerfv.dsh-furina-theme",
@@ -209,7 +209,7 @@
         "en": "Open Sea Skin"
       },
       "author": "d-dev0101",
-      "description": "实时 WebGPU 海洋皮肤，可快捷调节波浪、日光、玻璃不透明度与自动昼夜循环。",
+      "description": "为 DeepSeek Harness Web UI 提供实时 WebGPU 海洋背景，支持左下角调节波浪、日光、玻璃不透明度和自动昼夜循环。",
       "repo": "https://github.com/d-dev0101/open-sea-skin",
       "package": "open-sea-skin",
       "rowId": "open-sea-skin",
@@ -347,7 +347,8 @@
       "screenshots": [
         "https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/preview-light.webp",
         "https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/preview-dark.webp",
-        "https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/settings-light.webp"
+        "https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/settings-light.webp",
+        "https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/settings-dark.webp"
       ],
       "license": {
         "code": "MIT",
@@ -376,6 +377,10 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/16c7e8e074755bcfe9f18dde6cd2b7db.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/16c7e8e074755bcfe9f18dde6cd2b7db.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f3843834cc37e59143eb3ab6cdd51fd9.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f3843834cc37e59143eb3ab6cdd51fd9.full.webp"
           }
         ]
       }
@@ -932,7 +937,7 @@
         "en": "dsh-dream-skin"
       },
       "author": "RevolutionLA",
-      "description": "一键换肤插件：8 套原创主题、背景壁纸（透明度/模糊）、强调色、主题包导入/导出+分享链接、收藏与随机，纯原生 token 系统接入。",
+      "description": "🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。",
       "repo": "https://github.com/RevolutionLA/dsh-dream-skin",
       "package": "dsh-dream-skin",
       "rowId": "dream-skin",
