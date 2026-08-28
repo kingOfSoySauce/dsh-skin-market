@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:DocJlm/dsh-arknights#87116ed1536c61dbb287addd9e4830cf3e8e0f36&path:/skins/pramanix-eyjafjalla
+  target: github:DocJlm/dsh-arknights#75b3203864ca6bc4c987734e8a4e6bf600c2d85c&path:/skins/pramanix-eyjafjalla
   version: 0.1.0
-  commit: 87116ed1536c61dbb287addd9e4830cf3e8e0f36
+  commit: 75b3203864ca6bc4c987734e8a4e6bf600c2d85c
   desktop:
     mode: managed
     registry: npm
@@ -49,20 +49,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 87116ed1536c61dbb287addd9e4830cf3e8e0f36
+    commit: 75b3203864ca6bc4c987734e8a4e6bf600c2d85c
     packageVersion: 0.1.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:30:14.084Z
+    checkedAt: 2026-08-28T04:08:46.615Z
     findings: []
 license:
   code: (MIT AND CC-BY-NC-SA-4.0)
   commercialUse: false
 featuredRank: 17
 starsSnapshot: 3
-releaseUpdatedAt: 2026-08-23T05:30:14.164Z
-metadataUpdatedAt: 2026-08-23T05:30:14.164Z
+releaseUpdatedAt: 2026-08-28T04:08:46.700Z
+metadataUpdatedAt: 2026-08-28T04:08:46.700Z
 starsUpdatedAt: 2026-08-25T07:10:04.503Z
-updatedAt: 2026-08-25T07:10:04.503Z
+updatedAt: 2026-08-28T04:08:46.700Z

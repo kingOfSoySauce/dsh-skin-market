@@ -1,0 +1,57 @@
+id: carlown.majia7-skin
+name:
+  zh: 马加七皮肤
+  en: Majia7 Skin
+author: Carlown
+description: 四档"图+配色+人设"三位一体推理滑块皮肤：off 灰 / low 蓝（原版观感）/ high 亮青 / max 粉 #E6DDDE；新对话、发送、设置等按钮随档位变色；服务端通过 systemPrompt 通道隐形注入档位人设（off 油腻恶心 → max 霸道总裁，恒定自称「马加7」并把用户当女生，附合规护栏）；支持背景深度调节。
+repo: https://github.com/Carlown/majia7-dsh-skin
+package: dsh-client-majia7-skin
+rowId: majia7-skin
+category: interactive
+tags:
+  - four-tier
+  - pink
+  - reasoning-slider
+  - composer
+  - persona
+modes:
+  - light
+install:
+  target: github:Carlown/majia7-dsh-skin#1b326bda8e085cba59aa83b81251fd37cbf32b93
+  version: 0.3.6
+  commit: 1b326bda8e085cba59aa83b81251fd37cbf32b93
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Carlown/majia7-dsh-skin/cee84e41791c629cec7c3274c3c7996078cce80a/docs/screenshots/screenshot-off.jpeg
+  - https://raw.githubusercontent.com/Carlown/majia7-dsh-skin/cee84e41791c629cec7c3274c3c7996078cce80a/docs/screenshots/screenshot-low.jpeg
+  - https://raw.githubusercontent.com/Carlown/majia7-dsh-skin/cee84e41791c629cec7c3274c3c7996078cce80a/docs/screenshots/screenshot-high.jpeg
+  - https://raw.githubusercontent.com/Carlown/majia7-dsh-skin/cee84e41791c629cec7c3274c3c7996078cce80a/docs/screenshots/screenshot-max.jpeg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+  notice: MIT。四张档位图与文档截图为作者自有素材，随 MIT 许可证一并发布。
+featuredRank: 0
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-26T11:54:32.000Z
+metadataUpdatedAt: 2026-08-26T11:54:32.000Z
+starsUpdatedAt: 2026-08-26T11:54:32.000Z
+updatedAt: 2026-08-26T11:54:32.000Z

@@ -9,12 +9,12 @@ package: dsh-skin-toggle
 rowId: ui-skin-toggle
 category: theme
 tags:
-- wallpaper
-- anime
-- token-theme
+  - wallpaper
+  - anime
+  - token-theme
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:tiantyu/dsh-skin-toggle#781fd4605756503f9635d6083686e079b5a8944f
   version: 0.4.0
@@ -22,7 +22,7 @@ install:
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots: []
 review:
   compatibility: unverified
@@ -37,18 +37,18 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 122
-starsSnapshot: 3
+starsSnapshot: 4
 releaseUpdatedAt: 2026-08-18 15:40:53.638000+00:00
 metadataUpdatedAt: 2026-08-22T08:15:27.491Z
-starsUpdatedAt: 2026-08-18 15:40:53.638000+00:00
-updatedAt: 2026-08-22T08:15:27.491Z
+starsUpdatedAt: 2026-08-28T04:08:43.946Z
+updatedAt: 2026-08-28T04:08:43.946Z
 marketScreenshots:
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/home.png
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/conversation.png
-- https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/settings.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/settings.png

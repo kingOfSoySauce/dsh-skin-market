@@ -18,9 +18,12 @@ modes:
   - light
   - dark
 install:
-  target: github:yoli-mi/dsh-client-ui-custom#26c239f5c2d930c30b9b0a83dbc7b2171b87b2d7
-  version: 0.1.0-rc.5
-  commit: 26c239f5c2d930c30b9b0a83dbc7b2171b87b2d7
+  target: github:yoli-mi/dsh-client-ui-custom#3f19e4d3e8c907e698ea5f1458f2209f69137bdf
+  version: 0.1.0-rc.6
+  commit: 3f19e4d3e8c907e698ea5f1458f2209f69137bdf
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
 compatibility:
   dsh: ^0.1.0-rc.5
   platform:
@@ -45,16 +48,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 3f19e4d3e8c907e698ea5f1458f2209f69137bdf
+    packageVersion: 0.1.0-rc.6
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-08-28T04:08:39.868Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 70
-starsSnapshot: 6
-releaseUpdatedAt: 2026-08-18T15:39:56.975Z
-metadataUpdatedAt: 2026-08-20T06:32:59.774Z
-starsUpdatedAt: 2026-08-18T15:39:56.975Z
-updatedAt: 2026-08-20T06:32:59.774Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yoli-mi__dsh-client-ui-custom/26c239f5c2d930c30b9b0a83dbc7b2171b87b2d7/fdc0ac30a92e.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yoli-mi__dsh-client-ui-custom/26c239f5c2d930c30b9b0a83dbc7b2171b87b2d7/0d583ba72e1e.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yoli-mi__dsh-client-ui-custom/26c239f5c2d930c30b9b0a83dbc7b2171b87b2d7/b7423356c333.png
+starsSnapshot: 23
+releaseUpdatedAt: 2026-08-28T04:08:39.872Z
+metadataUpdatedAt: 2026-08-28T04:08:39.872Z
+starsUpdatedAt: 2026-08-28T04:08:39.872Z
+updatedAt: 2026-08-28T04:08:39.872Z
