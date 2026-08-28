@@ -18,16 +18,16 @@ modes:
   - light
   - dark
 install:
-  target: github:fengb3/dsh-theme-aurum#5ff8b1a06a30d537bdc7c0066b0a0ace90c276d2
+  target: github:fengb3/dsh-theme-aurum#a716a46cb55cdd8d05abdcea57e12b43b83a87fd
   version: 1.1.0
-  commit: 5ff8b1a06a30d537bdc7c0066b0a0ace90c276d2
+  commit: a716a46cb55cdd8d05abdcea57e12b43b83a87fd
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/fengb3/dsh-theme-aurum/5ff8b1a06a30d537bdc7c0066b0a0ace90c276d2/screenshots/aurum-think-done-open.png
-  - https://raw.githubusercontent.com/fengb3/dsh-theme-aurum/5ff8b1a06a30d537bdc7c0066b0a0ace90c276d2/screenshots/diag-appearance-after.png
+  - https://raw.githubusercontent.com/fengb3/dsh-theme-aurum/a716a46cb55cdd8d05abdcea57e12b43b83a87fd/docs/previews/aurum-light-full.png
+  - https://raw.githubusercontent.com/fengb3/dsh-theme-aurum/a716a46cb55cdd8d05abdcea57e12b43b83a87fd/docs/previews/aurum-dark-settings.png
 license:
   code: MIT
   commercialUse: true
