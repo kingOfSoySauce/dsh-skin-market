@@ -3,7 +3,7 @@ name:
   zh: Open Sea 海洋皮肤
   en: Open Sea Skin
 author: d-dev0101
-description: 实时 WebGPU 海洋皮肤，可快捷调节波浪、日光、玻璃不透明度与自动昼夜循环。
+description: 为 DeepSeek Harness Web UI 提供实时 WebGPU 海洋背景，支持左下角调节波浪、日光、玻璃不透明度和自动昼夜循环。
 repo: https://github.com/d-dev0101/open-sea-skin
 package: open-sea-skin
 rowId: open-sea-skin

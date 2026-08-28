@@ -3,7 +3,7 @@ name:
   zh: dsh-dream-skin
   en: dsh-dream-skin
 author: RevolutionLA
-description: 一键换肤插件：8 套原创主题、背景壁纸（透明度/模糊）、强调色、主题包导入/导出+分享链接、收藏与随机，纯原生 token 系统接入。
+description: 🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
 repo: https://github.com/RevolutionLA/dsh-dream-skin
 package: dsh-dream-skin
 rowId: dream-skin
