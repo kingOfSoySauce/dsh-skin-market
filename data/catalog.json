@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T06:16:34.510Z",
+  "generatedAt": "2026-08-28T06:58:46.798Z",
   "skins": [
     {
       "id": "univerfv.dsh-furina-theme",
@@ -307,6 +307,71 @@
           },
           null,
           null
+        ]
+      }
+    },
+    {
+      "id": "fengb3.dsh-theme-aurum",
+      "name": {
+        "zh": "鎏金 Aurum",
+        "en": "Aurum"
+      },
+      "author": "fengb3",
+      "description": "DSH 鎏金主题：oklch 金粉双色层 + 24px 点阵画布 + 浮动卡片侧栏，会话栏/会话流/输入坞/工具卡全量接管（未知工具官方图标兜底）；theme.overrideTokens 常驻 {light,dark} 双色，priority:-1 遮蔽注册保留官方实现、停用即完整还原；零构建纯 loader 格式。",
+      "repo": "https://github.com/fengb3/dsh-theme-aurum",
+      "package": "dsh-theme-aurum",
+      "rowId": "theme-aurum",
+      "category": "theme",
+      "tags": [
+        "gold",
+        "token-theme",
+        "light-dark",
+        "serif",
+        "full-ui"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:fengb3/dsh-theme-aurum#a716a46cb55cdd8d05abdcea57e12b43b83a87fd",
+        "version": "1.1.0",
+        "commit": "a716a46cb55cdd8d05abdcea57e12b43b83a87fd"
+      },
+      "compatibility": {
+        "dsh": ">=0.1.0-rc.6",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/fengb3/dsh-theme-aurum/a716a46cb55cdd8d05abdcea57e12b43b83a87fd/docs/previews/aurum-light-full.png",
+        "https://raw.githubusercontent.com/fengb3/dsh-theme-aurum/a716a46cb55cdd8d05abdcea57e12b43b83a87fd/docs/previews/aurum-dark-settings.png"
+      ],
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 0,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-08-28T05:00:00Z",
+      "metadataUpdatedAt": "2026-08-28T05:00:00Z",
+      "starsUpdatedAt": "2026-08-28T05:00:00Z",
+      "updatedAt": "2026-08-28T05:00:00Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f26d37b17b3fb5289fab1f03f88158d4.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f26d37b17b3fb5289fab1f03f88158d4.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f26d37b17b3fb5289fab1f03f88158d4.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f26d37b17b3fb5289fab1f03f88158d4.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5f32f563d302800b732040837416f205.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5f32f563d302800b732040837416f205.full.webp"
+          }
         ]
       }
     },
