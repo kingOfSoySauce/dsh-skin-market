@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T09:45:26.665Z",
+  "generatedAt": "2026-08-28T18:02:41.708Z",
   "skins": [
     {
       "id": "univerfv.dsh-furina-theme",
@@ -334,9 +334,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:fengb3/dsh-theme-aurum#a716a46cb55cdd8d05abdcea57e12b43b83a87fd",
-        "version": "1.1.0",
-        "commit": "a716a46cb55cdd8d05abdcea57e12b43b83a87fd"
+        "target": "github:fengb3/dsh-theme-aurum#7921baa8fd5658a077d6ad21ff7de4107ed15965",
+        "version": "1.2.0",
+        "commit": "7921baa8fd5658a077d6ad21ff7de4107ed15965"
       },
       "compatibility": {
         "dsh": ">=0.1.0-rc.6",
