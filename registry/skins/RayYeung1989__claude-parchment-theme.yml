@@ -5,16 +5,16 @@ name:
 author: RayYeung1989
 description: 一款 Claude 风格的 dsh插件：为 DSH WebUI 打造，暖羊皮纸 Parchment 色板、Terracotta 品牌色与衬线字体
 repo: https://github.com/RayYeung1989/claude-parchment-theme
-package: '@dsh-local/claude-parchment-theme'
+package: "@dsh-local/claude-parchment-theme"
 rowId: ui-claude-theme
 category: theme
 tags:
-- motion
-- token-theme
-- light-dark
+  - motion
+  - token-theme
+  - light-dark
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:RayYeung1989/claude-parchment-theme#824cef053f1cabcfaca93ae6b63261f66279f238
   version: 1.0.0
@@ -22,9 +22,9 @@ install:
 compatibility:
   dsh: unverified
   platform:
-  - web
+    - web
 screenshots:
-- https://opengraph.githubassets.com/placeholder/rayyeung1989.claude-parchment-theme
+  - https://opengraph.githubassets.com/placeholder/rayyeung1989.claude-parchment-theme
 review:
   compatibility: unverified
   preview: repository-card
@@ -38,15 +38,15 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-  - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-  - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-  - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 91
-starsSnapshot: 1
+starsSnapshot: 2
 releaseUpdatedAt: 2026-08-16 13:53:45.052000+00:00
 metadataUpdatedAt: 2026-08-18 15:43:27.543000+00:00
-starsUpdatedAt: 2026-08-16 13:53:45.052000+00:00
-updatedAt: 2026-08-18 15:43:27.543000+00:00
+starsUpdatedAt: 2026-08-28T04:08:55.879Z
+updatedAt: 2026-08-28T04:08:55.879Z

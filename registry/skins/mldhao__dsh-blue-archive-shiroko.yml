@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:mldhao/dsh-blue-archive-shiroko#dffeebce96a606c22cf593be3affbf6620e91a9b
-  version: 0.5.1
-  commit: dffeebce96a606c22cf593be3affbf6620e91a9b
+  target: github:mldhao/dsh-blue-archive-shiroko#313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72
+  version: 0.6.0
+  commit: 313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -31,7 +31,7 @@ screenshots:
   - https://opengraph.githubassets.com/placeholder/mldhao.dsh-blue-archive-shiroko
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -44,19 +44,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: dffeebce96a606c22cf593be3affbf6620e91a9b
-    packageVersion: 0.5.1
+    commit: 313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72
+    packageVersion: 0.6.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:31:57.020Z
+    checkedAt: 2026-08-28T04:08:55.024Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 86
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-23T05:31:57.103Z
-metadataUpdatedAt: 2026-08-26T03:27:12.895Z
+releaseUpdatedAt: 2026-08-28T04:08:55.138Z
+metadataUpdatedAt: 2026-08-28T04:08:55.138Z
 starsUpdatedAt: 2026-08-25T07:11:22.650Z
-updatedAt: 2026-08-26T03:27:12.895Z
+updatedAt: 2026-08-28T04:08:55.138Z

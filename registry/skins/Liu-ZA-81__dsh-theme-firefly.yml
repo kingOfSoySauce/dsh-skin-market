@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Liu-ZA-81/dsh-theme-firefly#17afc8e649ac0a44c097d530d315524fb7f1d705
-  version: 0.1.2
-  commit: 17afc8e649ac0a44c097d530d315524fb7f1d705
+  target: github:Liu-ZA-81/dsh-theme-firefly#5fdfdb75421e386ad1df87ceb2d654a5002eac07
+  version: 0.1.3
+  commit: 5fdfdb75421e386ad1df87ceb2d654a5002eac07
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepack
@@ -51,19 +51,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 17afc8e649ac0a44c097d530d315524fb7f1d705
-    packageVersion: 0.1.2
+    commit: 5fdfdb75421e386ad1df87ceb2d654a5002eac07
+    packageVersion: 0.1.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:27:57.700Z
+    checkedAt: 2026-08-28T04:08:44.261Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 153
 starsSnapshot: 17
-releaseUpdatedAt: 2026-08-23T05:27:57.786Z
-metadataUpdatedAt: 2026-08-23T05:27:57.786Z
+releaseUpdatedAt: 2026-08-28T04:08:44.391Z
+metadataUpdatedAt: 2026-08-28T04:08:44.391Z
 starsUpdatedAt: 2026-08-26T03:22:55.625Z
-updatedAt: 2026-08-26T03:22:55.625Z
+updatedAt: 2026-08-28T04:08:44.391Z

@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Zalpha263/dsh-ui-beautify#c3fd6f0ece9d4d262a236c400d0789e3738c3afc
-  version: 1.12.4
-  commit: c3fd6f0ece9d4d262a236c400d0789e3738c3afc
+  target: github:Zalpha263/dsh-ui-beautify#d1ab77614157a55b56a5f2f8932e43bf4e4de2ba
+  version: 1.12.12
+  commit: d1ab77614157a55b56a5f2f8932e43bf4e4de2ba
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,6 +28,10 @@ compatibility:
   dsh: 0.1.0-rc.7
   platform:
     - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Zalpha263__dsh-ui-beautify/c3fd6f0ece9d4d262a236c400d0789e3738c3afc/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Zalpha263__dsh-ui-beautify/c3fd6f0ece9d4d262a236c400d0789e3738c3afc/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Zalpha263__dsh-ui-beautify/c3fd6f0ece9d4d262a236c400d0789e3738c3afc/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -37,32 +41,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
-    topic: improve
+    topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: c3fd6f0ece9d4d262a236c400d0789e3738c3afc
-    packageVersion: 1.12.4
+    commit: d1ab77614157a55b56a5f2f8932e43bf4e4de2ba
+    packageVersion: 1.12.12
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.7
     mode: static
     result: pass
-    checkedAt: 2026-08-23T10:19:27.770Z
+    checkedAt: 2026-08-28T04:08:58.308Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 998
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-23T10:19:28.259Z
-metadataUpdatedAt: 2026-08-26T07:35:59.214Z
+releaseUpdatedAt: 2026-08-28T04:08:58.403Z
+metadataUpdatedAt: 2026-08-28T04:08:58.403Z
 starsUpdatedAt: 2026-08-23T10:19:28.259Z
-updatedAt: 2026-08-26T07:35:59.214Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Zalpha263__dsh-ui-beautify/c3fd6f0ece9d4d262a236c400d0789e3738c3afc/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Zalpha263__dsh-ui-beautify/c3fd6f0ece9d4d262a236c400d0789e3738c3afc/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Zalpha263__dsh-ui-beautify/c3fd6f0ece9d4d262a236c400d0789e3738c3afc/settings.png
+updatedAt: 2026-08-28T04:08:58.403Z

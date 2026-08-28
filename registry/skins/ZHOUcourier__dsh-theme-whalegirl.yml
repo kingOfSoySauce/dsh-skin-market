@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:ZHOUcourier/dsh-theme-whalegirl#f61a31425a71221e971685fbf3d706a7b5e838ab
+  target: github:ZHOUcourier/dsh-theme-whalegirl#77df518360f0a23cf09fad067841c5c090ba54b3
   version: 0.2.0
-  commit: f61a31425a71221e971685fbf3d706a7b5e838ab
+  commit: 77df518360f0a23cf09fad067841c5c090ba54b3
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
-  allowBuild: dsh-theme-whalegirl@https://codeload.github.com/ZHOUcourier/dsh-theme-whalegirl/tar.gz/f61a31425a71221e971685fbf3d706a7b5e838ab
+  allowBuild: dsh-theme-whalegirl@https://codeload.github.com/ZHOUcourier/dsh-theme-whalegirl/tar.gz/77df518360f0a23cf09fad067841c5c090ba54b3
 compatibility:
   dsh: unverified
   platform:
@@ -46,19 +46,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: f61a31425a71221e971685fbf3d706a7b5e838ab
+    commit: 77df518360f0a23cf09fad067841c5c090ba54b3
     packageVersion: 0.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:35:40.269Z
+    checkedAt: 2026-08-28T04:09:15.144Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1032
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-23T05:35:40.343Z
-metadataUpdatedAt: 2026-08-23T05:35:40.343Z
+releaseUpdatedAt: 2026-08-28T04:09:15.229Z
+metadataUpdatedAt: 2026-08-28T04:09:15.229Z
 starsUpdatedAt: 2026-08-25T07:12:02.131Z
-updatedAt: 2026-08-25T07:12:02.131Z
+updatedAt: 2026-08-28T04:09:15.229Z

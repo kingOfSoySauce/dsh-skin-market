@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lesliechowsh/dsh-weniger-theme#b88ab91040ea396e9c8cff7f13317532711eb2e3
-  version: 0.1.4
-  commit: b88ab91040ea396e9c8cff7f13317532711eb2e3
+  target: github:lesliechowsh/dsh-weniger-theme#89a149bc18898be211eac5f45da494928d4bd383
+  version: 0.1.5
+  commit: 89a149bc18898be211eac5f45da494928d4bd383
   desktop:
     mode: managed
     registry: npm
@@ -48,19 +48,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: b88ab91040ea396e9c8cff7f13317532711eb2e3
-    packageVersion: 0.1.4
+    commit: 89a149bc18898be211eac5f45da494928d4bd383
+    packageVersion: 0.1.5
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:29:05.960Z
+    checkedAt: 2026-08-28T04:08:41.287Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 209
 starsSnapshot: 5
-releaseUpdatedAt: 2026-08-23T05:29:06.039Z
-metadataUpdatedAt: 2026-08-23T05:29:06.039Z
+releaseUpdatedAt: 2026-08-28T04:08:41.407Z
+metadataUpdatedAt: 2026-08-28T04:08:41.407Z
 starsUpdatedAt: 2026-08-25T07:09:10.364Z
-updatedAt: 2026-08-25T07:09:10.364Z
+updatedAt: 2026-08-28T04:08:41.407Z
