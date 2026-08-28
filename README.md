@@ -15,7 +15,7 @@
 
 ### 近期收录
 
-- 2026-08-21：[UniverFV/dsh-Furina-theme](https://github.com/UniverFV/dsh-Furina-theme)（`0.1.0`）——芙宁娜主题 Furina Theme
+- 2026-08-28：[fengb3/dsh-theme-aurum](https://github.com/fengb3/dsh-theme-aurum)（`1.1.0`）——鎏金 Aurum 主题
 - 更多请查看[收录日志](./docs/recently-added.md)
 
 
