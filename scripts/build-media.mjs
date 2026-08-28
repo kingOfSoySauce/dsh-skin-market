@@ -7,13 +7,15 @@ import { promisify } from 'node:util'
 import { fileURLToPath } from 'node:url'
 import { parse } from 'yaml'
 import { displayScreenshots } from './registry-screenshots.mjs'
-import { mediaDescriptor, mediaKey, MEDIA_VERSION, isRasterImageUrl, retainMediaManifestEntries } from './media.mjs'
+import { mediaDescriptor, mediaKey, MEDIA_VERSION, isRasterImageUrl, retainMediaManifestEntries, canonicalScreenshotUrl } from './media.mjs'
+import { localScreenshotPath } from './screenshot-refs.mjs'
 
 const execFile = promisify(execFileCallback)
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const outputRoot = resolve(process.env.SKIN_MEDIA_OUTPUT_DIR ?? join(root, 'site/public/skin-media'))
 const outputDir = join(outputRoot, MEDIA_VERSION)
 const sourceDir = join(root, 'registry/skins')
+const screenshotPublicRoot = join(root, 'site/public')
 const maxBytes = 30 * 1024 * 1024
 const concurrency = 4
 const conversionProfile = 'preview-640-q78-full-q82'
@@ -38,8 +40,8 @@ async function sourceUrls() {
   const urls = new Set()
   for (const file of files) {
     const skin = parse(await readFile(join(sourceDir, file), 'utf8'))
-    const marketScreenshots = skin.marketScreenshots ?? []
-    const screenshots = [...new Set(skin.screenshots ?? [])]
+    const marketScreenshots = (skin.marketScreenshots ?? []).map(canonicalScreenshotUrl)
+    const screenshots = [...new Set((skin.screenshots ?? []).map(canonicalScreenshotUrl))]
     const display = displayScreenshots(marketScreenshots, screenshots, skin.subpath)
     const configuredListScreenshot = skin.listScreenshot
     const listScreenshot = configuredListScreenshot !== undefined && display.includes(configuredListScreenshot)
@@ -52,24 +54,40 @@ async function sourceUrls() {
 }
 
 async function convert(source, manifest) {
-  const descriptor = mediaDescriptor(source)
+  const sourceUrl = canonicalScreenshotUrl(source)
+  const descriptor = mediaDescriptor(sourceUrl)
   if (descriptor === undefined) return { status: 'skipped' }
-  const key = mediaKey(source)
+  const key = mediaKey(sourceUrl)
   const previewPath = join(outputDir, `${key}.preview.webp`)
   const fullPath = join(outputDir, `${key}.full.webp`)
+  const cachedManifest = manifest[sourceUrl]
+  if (
+    typeof cachedManifest === 'string'
+    && cachedManifest.endsWith(`:${conversionProfile}`)
+    && await exists(previewPath)
+    && await exists(fullPath)
+  ) {
+    return { status: 'cached' }
+  }
 
-  const response = await fetch(source, { signal: AbortSignal.timeout(30_000), headers: { accept: 'image/*' } })
-  if (!response.ok) throw new Error(`HTTP ${response.status}`)
-  const bytes = Buffer.from(await response.arrayBuffer())
+  const localPath = localScreenshotPath(source, screenshotPublicRoot)
+  let bytes
+  if (localPath && await exists(localPath)) {
+    bytes = await readFile(localPath)
+  } else {
+    const response = await fetch(sourceUrl, { signal: AbortSignal.timeout(30_000), headers: { accept: 'image/*' } })
+    if (!response.ok) throw new Error(`HTTP ${response.status}`)
+    bytes = Buffer.from(await response.arrayBuffer())
+  }
   if (bytes.length === 0) throw new Error('empty response')
   if (bytes.length > maxBytes) throw new Error(`source is larger than ${maxBytes / 1024 / 1024} MB`)
 
   const contentHash = sha256(bytes)
   const manifestValue = `${contentHash}:${conversionProfile}`
-  if (manifest[source] === manifestValue && await exists(previewPath) && await exists(fullPath)) return { status: 'cached' }
+  if (cachedManifest === manifestValue && await exists(previewPath) && await exists(fullPath)) return { status: 'cached' }
 
   const tempDir = await mkdtemp(join(tmpdir(), 'dsh-skin-media-'))
-  const inputPath = join(tempDir, basename(new URL(source).pathname) || `${key}.source`)
+  const inputPath = join(tempDir, basename(new URL(sourceUrl).pathname) || `${key}.source`)
   const tempPreviewPath = join(tempDir, `${key}.preview.webp`)
   const tempFullPath = join(tempDir, `${key}.full.webp`)
   try {
@@ -81,7 +99,7 @@ async function convert(source, manifest) {
     const full = await readFile(tempFullPath)
     await writeFile(previewPath, preview)
     await writeFile(fullPath, full)
-    manifest[source] = manifestValue
+    manifest[sourceUrl] = manifestValue
     return { status: 'converted' }
   } finally {
     await rm(tempDir, { recursive: true, force: true })

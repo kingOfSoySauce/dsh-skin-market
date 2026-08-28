@@ -1,21 +1,28 @@
 import { createHash } from 'node:crypto'
+import { resolveScreenshotRef } from './screenshot-refs.mjs'
 
 export const MEDIA_VERSION = 'v1'
 export const MEDIA_BASE_URL = 'https://kingofsoysauce.github.io/dsh-skin-market/skin-media'
 
 const RASTER_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp'])
 
+export function canonicalScreenshotUrl(value) {
+  return resolveScreenshotRef(value)
+}
+
 export function isRasterImageUrl(value) {
-  if (typeof value !== 'string' || !/^https?:\/\//i.test(value)) return false
+  if (typeof value !== 'string') return false
+  const resolved = canonicalScreenshotUrl(value)
+  if (!/^https?:\/\//i.test(resolved)) return false
   try {
-    return RASTER_EXTENSIONS.has(new URL(value).pathname.toLowerCase().match(/\.[^.]+$/)?.[0] ?? '')
+    return RASTER_EXTENSIONS.has(new URL(resolved).pathname.toLowerCase().match(/\.[^.]+$/)?.[0] ?? '')
   } catch {
     return false
   }
 }
 
 export function mediaKey(sourceUrl) {
-  return createHash('sha256').update(sourceUrl).digest('hex').slice(0, 32)
+  return createHash('sha256').update(canonicalScreenshotUrl(sourceUrl)).digest('hex').slice(0, 32)
 }
 
 export function mediaDescriptor(sourceUrl, baseUrl = MEDIA_BASE_URL) {

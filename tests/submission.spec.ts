@@ -10,11 +10,12 @@ describe('agent-assisted skin submission', () => {
     const prompt = createSubmissionPrompt(repository!)
     expect(prompt).toContain('皮肤仓库：https://github.com/example/dsh-skin')
     expect(prompt).toContain(`目标目录仓库：${REGISTRY_REPOSITORY}`)
-    expect(prompt).toContain('完整 40 位 commit SHA')
+    expect(prompt).toContain('YAML 默认写成薄条目即可')
+    expect(prompt).toContain('url: https://github.com/<owner>/<repo>')
     expect(prompt).toContain('npm run registry:check')
-    expect(prompt).toContain('不要修改或提交生成的 data/catalog.json')
+    expect(prompt).toContain('不要修改 data/catalog.json')
     expect(prompt).toContain('创建 PR')
-    expect(prompt).toContain('不得读取 .env')
+    expect(prompt).toContain('不要读取 .env')
   })
 
   it('rejects non-repository and non-GitHub URLs', () => {

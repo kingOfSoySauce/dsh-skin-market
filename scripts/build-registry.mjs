@@ -2,9 +2,11 @@ import { readFile, readdir, writeFile } from 'node:fs/promises'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import Ajv from 'ajv/dist/2020.js'
-import { parse } from 'yaml'
+import { parse, stringify } from 'yaml'
 import { displayScreenshots } from './registry-screenshots.mjs'
 import { mediaForSources } from './media.mjs'
+import { isThinSubmission, hydrateSkinSubmission } from './hydrate-submission.mjs'
+import { resolveScreenshotList, resolveScreenshotRef } from './screenshot-refs.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const checkOnly = process.argv.includes('--check')
@@ -22,7 +24,11 @@ function isVersionRange(value) {
 }
 
 for (const file of files) {
-  const skin = parse(await readFile(join(sourceDir, file), 'utf8'))
+  let skin = parse(await readFile(join(sourceDir, file), 'utf8'))
+  if (isThinSubmission(skin)) {
+    skin = await hydrateSkinSubmission(skin)
+    if (!checkOnly) await writeFile(join(sourceDir, file), stringify(skin, { lineWidth: 0 }))
+  }
   if (!validate(skin)) {
     const details = (validate.errors ?? []).map(error => `${error.instancePath || '/'} ${error.message}`).join('; ')
     throw new Error(`${file}: ${details}`)
@@ -53,8 +59,10 @@ for (const file of files) {
   if (skin.subpath !== undefined && skin.install.allowBuild !== undefined && !skin.install.allowBuild.endsWith(`#path:${skin.subpath}`)) {
     throw new Error(`${file}: install.allowBuild must end with #path:${skin.subpath}`)
   }
+  if (skin.marketScreenshots) skin.marketScreenshots = resolveScreenshotList(skin.marketScreenshots)
+  if (skin.listScreenshot) skin.listScreenshot = resolveScreenshotRef(skin.listScreenshot)
   const marketScreenshots = skin.marketScreenshots ?? []
-  const screenshots = [...new Set(skin.screenshots)]
+  const screenshots = [...new Set(resolveScreenshotList(skin.screenshots))]
   const display = displayScreenshots(marketScreenshots, screenshots, skin.subpath)
   if (display.length === 0) console.warn(`${file}: no displayable screenshot; keeping the entry without media`)
   const configuredListScreenshot = skin.listScreenshot

@@ -7,6 +7,8 @@ on:
       - 'registry/skin.schema.json'
       - 'data/catalog.json'
       - 'scripts/build-registry.mjs'
+      - 'scripts/hydrate-submission.mjs'
+      - 'scripts/screenshot-refs.mjs'
       - 'scripts/media.mjs'
       - 'scripts/build-media.mjs'
       - 'src/client/submission.ts'
@@ -38,6 +40,8 @@ jobs:
         run: npm ci
 
       - name: Validate registry entries without writing generated files
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: npm run registry:check
 
       - name: Run submission prompt smoke tests
