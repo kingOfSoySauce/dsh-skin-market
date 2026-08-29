@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-29T03:16:36.877Z",
+  "generatedAt": "2026-08-29T04:14:10.870Z",
   "skins": [
     {
       "id": "univerfv.dsh-furina-theme",
@@ -282,11 +282,11 @@
         "notice": "Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1."
       },
       "featuredRank": 0,
-      "starsSnapshot": 192,
+      "starsSnapshot": 193,
       "releaseUpdatedAt": "2026-08-23T05:26:54.494Z",
       "metadataUpdatedAt": "2026-08-23T05:26:54.494Z",
-      "starsUpdatedAt": "2026-08-26T03:21:52.844Z",
-      "updatedAt": "2026-08-26T03:21:52.844Z",
+      "starsUpdatedAt": "2026-08-29T04:12:29.010Z",
+      "updatedAt": "2026-08-29T04:12:29.010Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/891fb2f3d331f8a486f9cde5dc7d3958.preview.webp",
@@ -1076,11 +1076,11 @@
         "commercialUse": true
       },
       "featuredRank": 4,
-      "starsSnapshot": 126,
+      "starsSnapshot": 127,
       "releaseUpdatedAt": "2026-08-29T03:14:42.940Z",
       "metadataUpdatedAt": "2026-08-29T03:14:42.940Z",
-      "starsUpdatedAt": "2026-08-29T03:14:42.940Z",
-      "updatedAt": "2026-08-29T03:14:42.940Z",
+      "starsUpdatedAt": "2026-08-29T04:12:29.250Z",
+      "updatedAt": "2026-08-29T04:12:29.250Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7e92ba9a12eb600242b74195d09ea6c3.preview.webp",
@@ -1146,14 +1146,14 @@
         "dark"
       ],
       "install": {
-        "target": "github:NoNameLeGo/dsh-catppuccin#b9beef1a38046b5fe7ad2a064951234f9d076619",
-        "version": "0.4.2-beta.0",
-        "commit": "b9beef1a38046b5fe7ad2a064951234f9d076619",
+        "target": "github:NoNameLeGo/dsh-catppuccin#655b0e35a1f31fcc662b486f34829beb52f7de9d",
+        "version": "0.4.3",
+        "commit": "655b0e35a1f31fcc662b486f34829beb52f7de9d",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-repository-mismatch"
         },
-        "allowBuild": "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/b9beef1a38046b5fe7ad2a064951234f9d076619"
+        "allowBuild": "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/655b0e35a1f31fcc662b486f34829beb52f7de9d"
       },
       "compatibility": {
         "dsh": "^0.1.0-rc.6",
@@ -1188,13 +1188,13 @@
           "固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。"
         ],
         "scan": {
-          "commit": "b9beef1a38046b5fe7ad2a064951234f9d076619",
-          "packageVersion": "0.4.2-beta.0",
+          "commit": "655b0e35a1f31fcc662b486f34829beb52f7de9d",
+          "packageVersion": "0.4.3",
           "scannerVersion": "static-v2",
-          "dshVersion": "^0.1.0-rc.6",
+          "dshVersion": "^0.1.1-rc.2",
           "mode": "static",
           "result": "unknown",
-          "checkedAt": "2026-08-29T03:14:43.808Z",
+          "checkedAt": "2026-08-29T04:12:30.528Z",
           "findings": [
             {
               "code": "client-source-unavailable",
@@ -1209,10 +1209,10 @@
       },
       "featuredRank": 5,
       "starsSnapshot": 22,
-      "releaseUpdatedAt": "2026-08-29T03:14:43.808Z",
-      "metadataUpdatedAt": "2026-08-29T03:14:43.808Z",
+      "releaseUpdatedAt": "2026-08-29T04:12:30.691Z",
+      "metadataUpdatedAt": "2026-08-29T04:12:30.691Z",
       "starsUpdatedAt": "2026-08-28T04:08:35.954Z",
-      "updatedAt": "2026-08-29T03:14:43.808Z",
+      "updatedAt": "2026-08-29T04:12:30.691Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ae8e7ac99d839cf4177f0dfd1e76d8aa.preview.webp",
@@ -1752,11 +1752,11 @@
         "commercialUse": true
       },
       "featuredRank": 12,
-      "starsSnapshot": 6,
+      "starsSnapshot": 7,
       "releaseUpdatedAt": "2026-08-29T03:14:46.293Z",
       "metadataUpdatedAt": "2026-08-29T03:14:46.293Z",
-      "starsUpdatedAt": "2026-08-25T07:09:28.421Z",
-      "updatedAt": "2026-08-29T03:14:46.293Z",
+      "starsUpdatedAt": "2026-08-29T04:12:32.693Z",
+      "updatedAt": "2026-08-29T04:12:32.693Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/9e205a88dd47339574b85261e029218d.preview.webp",
@@ -2429,11 +2429,11 @@
         "commercialUse": true
       },
       "featuredRank": 21,
-      "starsSnapshot": 13,
+      "starsSnapshot": 14,
       "releaseUpdatedAt": "2026-08-23T05:28:00.981Z",
       "metadataUpdatedAt": "2026-08-23T05:28:00.981Z",
-      "starsUpdatedAt": "2026-08-28T09:43:09.652Z",
-      "updatedAt": "2026-08-28T09:43:09.652Z",
+      "starsUpdatedAt": "2026-08-29T04:12:30.911Z",
+      "updatedAt": "2026-08-29T04:12:30.911Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bb64622d5934d31bad7bcc58b90ed097.preview.webp",
@@ -2764,11 +2764,11 @@
         "commercialUse": true
       },
       "featuredRank": 25,
-      "starsSnapshot": 11,
+      "starsSnapshot": 12,
       "releaseUpdatedAt": "2026-08-23T05:27:47.020Z",
       "metadataUpdatedAt": "2026-08-23T05:27:47.020Z",
-      "starsUpdatedAt": "2026-08-21T09:07:47.860Z",
-      "updatedAt": "2026-08-23T05:27:47.020Z",
+      "starsUpdatedAt": "2026-08-29T04:12:31.049Z",
+      "updatedAt": "2026-08-29T04:12:31.049Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/559ffb464ad4f12deb839d49aa71394c.preview.webp",
@@ -15041,11 +15041,11 @@
         "commercialUse": true
       },
       "featuredRank": 193,
-      "starsSnapshot": 16,
+      "starsSnapshot": 17,
       "releaseUpdatedAt": "2026-08-25T07:08:43.633Z",
       "metadataUpdatedAt": "2026-08-25T07:08:43.633Z",
-      "starsUpdatedAt": "2026-08-29T03:14:44.155Z",
-      "updatedAt": "2026-08-29T03:14:44.155Z",
+      "starsUpdatedAt": "2026-08-29T04:12:30.843Z",
+      "updatedAt": "2026-08-29T04:12:30.843Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ad66aafed08107f7b1b9082cd4e98dd0.preview.webp",
