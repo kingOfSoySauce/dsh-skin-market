@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:zhijun-dai/Solarized-dsh-theme#6b0614e53a4314c1705967b7e3c437b64dee64f2
-  version: 0.1.1
-  commit: 6b0614e53a4314c1705967b7e3c437b64dee64f2
+  target: github:zhijun-dai/Solarized-dsh-theme#b29b689f707e87746912a622789dfd326d0c2de5
+  version: 0.2.1
+  commit: b29b689f707e87746912a622789dfd326d0c2de5
   desktop:
     mode: managed
     registry: npm
@@ -29,10 +29,15 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-screenshots: []
+screenshots:
+  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/preview.webp
+  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/solarized-dark.webp
+  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/solarized-light.webp
+  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/selenized-dark.webp
+  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/selenized-light.webp
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: healthy
@@ -44,20 +49,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 6b0614e53a4314c1705967b7e3c437b64dee64f2
-    packageVersion: 0.1.1
+    commit: b29b689f707e87746912a622789dfd326d0c2de5
+    packageVersion: 0.2.1
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:29:13.571Z
+    checkedAt: 2026-08-29T03:14:46.128Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 12
 starsSnapshot: 6
-releaseUpdatedAt: 2026-08-23T05:29:13.656Z
-metadataUpdatedAt: 2026-08-26T03:24:44.837Z
+releaseUpdatedAt: 2026-08-29T03:14:46.293Z
+metadataUpdatedAt: 2026-08-29T03:14:46.293Z
 starsUpdatedAt: 2026-08-25T07:09:28.421Z
-updatedAt: 2026-08-26T03:24:44.837Z
+updatedAt: 2026-08-29T03:14:46.293Z

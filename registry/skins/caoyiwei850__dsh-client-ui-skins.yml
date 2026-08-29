@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:caoyiwei850/dsh-client-ui-skins#77da6aac97e1deab35efd9e1c0277f809b967614
-  version: 0.1.13
-  commit: 77da6aac97e1deab35efd9e1c0277f809b967614
+  target: github:caoyiwei850/dsh-client-ui-skins#2151d83dc5b20639fae3b78502be2fbabf4c2135
+  version: 0.1.14
+  commit: 2151d83dc5b20639fae3b78502be2fbabf4c2135
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -47,20 +47,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 77da6aac97e1deab35efd9e1c0277f809b967614
-    packageVersion: 0.1.13
+    commit: 2151d83dc5b20639fae3b78502be2fbabf4c2135
+    packageVersion: 0.1.14
     scannerVersion: static-v2
     dshVersion: ">=0.1.0-rc.8"
     mode: static
     result: pass
-    checkedAt: 2026-08-28T04:08:37.228Z
+    checkedAt: 2026-08-29T03:14:44.853Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 9
 starsSnapshot: 10
-releaseUpdatedAt: 2026-08-28T04:08:37.315Z
-metadataUpdatedAt: 2026-08-28T04:08:37.315Z
+releaseUpdatedAt: 2026-08-29T03:14:45.001Z
+metadataUpdatedAt: 2026-08-29T03:14:45.001Z
 starsUpdatedAt: 2026-08-28T04:08:37.315Z
-updatedAt: 2026-08-28T04:08:37.315Z
+updatedAt: 2026-08-29T03:14:45.001Z
