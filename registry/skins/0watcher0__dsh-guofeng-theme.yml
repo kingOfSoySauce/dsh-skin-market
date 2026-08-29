@@ -1,1 +1,48 @@
-url: https://github.com/0watcher0/dsh-guofeng-theme
+id: 0watcher0.dsh.guofeng.theme
+name:
+  zh: dsh-guofeng-theme
+  en: dsh-guofeng-theme
+author: 0watcher0
+description: "国风太极主题：太极道君背景图 + 黛青强调色 + 楷体界面，明/暗双模式（DSH Web 皮肤）。Guofeng Taiji skin for DSH Web: taiji master background, dark-cyan accent, KaiTi interface, light/dark modes."
+repo: https://github.com/0watcher0/dsh-guofeng-theme
+package: dsh-guofeng-theme
+rowId: dsh-guofeng-theme
+category: theme
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:0watcher0/dsh-guofeng-theme#f2bf96af652f5b409700534e87babc055894c22a
+  version: 1.0.0
+  commit: f2bf96af652f5b409700534e87babc055894c22a
+compatibility:
+  dsh: ">=0.1.0-rc.6"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/0watcher0/dsh-guofeng-theme/f2bf96af652f5b409700534e87babc055894c22a/docs/previews/guofeng-preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-29T10:30:29.612Z
+metadataUpdatedAt: 2026-08-29T10:30:29.612Z
+starsUpdatedAt: 2026-08-29T10:30:29.612Z
+updatedAt: 2026-08-29T10:30:29.612Z
