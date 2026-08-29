@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:NoNameLeGo/dsh-catppuccin#a44df0045d81cc9d37ea8a0c5202369c0512e181
-  version: 0.4.1
-  commit: a44df0045d81cc9d37ea8a0c5202369c0512e181
+  target: github:NoNameLeGo/dsh-catppuccin#b9beef1a38046b5fe7ad2a064951234f9d076619
+  version: 0.4.2-beta.0
+  commit: b9beef1a38046b5fe7ad2a064951234f9d076619
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
-  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/a44df0045d81cc9d37ea8a0c5202369c0512e181"
+  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/b9beef1a38046b5fe7ad2a064951234f9d076619"
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -52,13 +52,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: a44df0045d81cc9d37ea8a0c5202369c0512e181
-    packageVersion: 0.4.1
+    commit: b9beef1a38046b5fe7ad2a064951234f9d076619
+    packageVersion: 0.4.2-beta.0
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: unknown
-    checkedAt: 2026-08-28T09:43:09.280Z
+    checkedAt: 2026-08-29T03:14:43.808Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -67,7 +67,7 @@ license:
   commercialUse: true
 featuredRank: 5
 starsSnapshot: 22
-releaseUpdatedAt: 2026-08-28T09:43:09.368Z
-metadataUpdatedAt: 2026-08-28T09:43:09.368Z
+releaseUpdatedAt: 2026-08-29T03:14:43.808Z
+metadataUpdatedAt: 2026-08-29T03:14:43.808Z
 starsUpdatedAt: 2026-08-28T04:08:35.954Z
-updatedAt: 2026-08-28T09:43:09.368Z
+updatedAt: 2026-08-29T03:14:43.808Z
