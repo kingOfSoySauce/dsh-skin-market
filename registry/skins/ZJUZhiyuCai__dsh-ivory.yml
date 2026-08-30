@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:ZJUZhiyuCai/dsh-ivory#88e3cdca0b9eb0f328974dd55359aa63e064948d
-  version: 0.2.6
-  commit: 88e3cdca0b9eb0f328974dd55359aa63e064948d
+  target: github:ZJUZhiyuCai/dsh-ivory#6da0020d145213ce10433f28983e69cc598508c7
+  version: 0.2.7
+  commit: 6da0020d145213ce10433f28983e69cc598508c7
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepack
@@ -49,20 +49,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 88e3cdca0b9eb0f328974dd55359aa63e064948d
-    packageVersion: 0.2.6
+    commit: 6da0020d145213ce10433f28983e69cc598508c7
+    packageVersion: 0.2.7
     scannerVersion: static-v2
     dshVersion: ">=0.1.0-rc.6 <0.2.0"
     mode: static
     result: pass
-    checkedAt: 2026-08-25T07:12:02.595Z
+    checkedAt: 2026-08-30T01:19:47.332Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 129
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-25T07:12:02.714Z
-metadataUpdatedAt: 2026-08-25T07:12:02.714Z
+releaseUpdatedAt: 2026-08-30T01:19:47.498Z
+metadataUpdatedAt: 2026-08-30T01:19:47.498Z
 starsUpdatedAt: 2026-08-25T07:12:02.714Z
-updatedAt: 2026-08-25T07:12:02.714Z
+updatedAt: 2026-08-30T01:19:47.498Z
