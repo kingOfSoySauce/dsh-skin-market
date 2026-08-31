@@ -17,9 +17,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:ymh0000123/dsh-theme-endfield#e79e6536296d16c19b99ddb5afe8b0ae34db0bef
+  target: github:ymh0000123/dsh-theme-endfield#569690ce26173e9a6f8d16672a386cce05cff4dd
   version: 1.0.0
-  commit: e79e6536296d16c19b99ddb5afe8b0ae34db0bef
+  commit: 569690ce26173e9a6f8d16672a386cce05cff4dd
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -48,19 +48,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: e79e6536296d16c19b99ddb5afe8b0ae34db0bef
+    commit: 569690ce26173e9a6f8d16672a386cce05cff4dd
     packageVersion: 1.0.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-28T04:08:33.876Z
+    checkedAt: 2026-08-30T21:54:10.298Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 154
-starsSnapshot: 58
-releaseUpdatedAt: 2026-08-28T04:08:33.964Z
-metadataUpdatedAt: 2026-08-28T04:08:33.964Z
-starsUpdatedAt: 2026-08-30T01:19:26.781Z
-updatedAt: 2026-08-30T01:19:26.781Z
+starsSnapshot: 62
+releaseUpdatedAt: 2026-08-30T21:54:10.402Z
+metadataUpdatedAt: 2026-08-30T21:54:10.402Z
+starsUpdatedAt: 2026-08-30T21:54:10.402Z
+updatedAt: 2026-08-30T21:54:10.402Z
