@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-30T21:56:57.576Z",
+  "generatedAt": "2026-08-31T01:51:01.453Z",
   "skins": [
     {
       "id": "univerfv.dsh-furina-theme",
@@ -14798,6 +14798,81 @@
       "metadataUpdatedAt": "2026-08-23T05:34:57.884Z",
       "starsUpdatedAt": "2026-08-25T07:11:43.832Z",
       "updatedAt": "2026-08-25T07:11:43.832Z"
+    },
+    {
+      "id": "statem-li.dsh-reasoning-effort",
+      "name": {
+        "zh": "dsh-reasoning-effort",
+        "en": "dsh-reasoning-effort"
+      },
+      "author": "statem-li",
+      "description": "中文首页现在位于 README.md。",
+      "repo": "https://github.com/statem-li/dsh-reasoning-effort",
+      "package": "dsh-reasoning-effort",
+      "rowId": "reasoning-effort",
+      "category": "theme",
+      "tags": [
+        "motion",
+        "token-theme"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:statem-li/dsh-reasoning-effort#3c0d3dd964d268fb45aa93ff8de43e7cc06429ec",
+        "version": "0.6.0",
+        "commit": "3c0d3dd964d268fb45aa93ff8de43e7cc06429ec",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "0.1.0-rc.6",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://opengraph.githubassets.com/placeholder/statem-li.dsh-reasoning-effort"
+      ],
+      "review": {
+        "compatibility": "verified",
+        "preview": "repository-card",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "healthy",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "pass",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [],
+        "scan": {
+          "commit": "3c0d3dd964d268fb45aa93ff8de43e7cc06429ec",
+          "packageVersion": "0.6.0",
+          "scannerVersion": "static-v2",
+          "dshVersion": "0.1.0-rc.6",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-08-23T05:34:59.534Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 191,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-08-23T05:34:59.603Z",
+      "metadataUpdatedAt": "2026-08-26T03:33:06.113Z",
+      "starsUpdatedAt": "2026-08-18 15:46:10.855000+00:00",
+      "updatedAt": "2026-08-26T03:33:06.113Z"
     },
     {
       "id": "sweetcandy-gift.dsh-beige-theme",
