@@ -17,13 +17,13 @@ modes:
   - light
   - dark
 install:
-  target: github:elysia395/dsh-wallpaper-engine#ff363e22eef46db08771e43569c0d43a622bdb93
+  target: github:elysia395/dsh-wallpaper-engine#633e56b33982b44fea7e6cb0fdeb9b24f80eb1f6
   version: 0.6.8
-  commit: ff363e22eef46db08771e43569c0d43a622bdb93
+  commit: 633e56b33982b44fea7e6cb0fdeb9b24f80eb1f6
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
-  allowBuild: dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/ff363e22eef46db08771e43569c0d43a622bdb93
+  allowBuild: dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/633e56b33982b44fea7e6cb0fdeb9b24f80eb1f6
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
@@ -51,20 +51,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: ff363e22eef46db08771e43569c0d43a622bdb93
+    commit: 633e56b33982b44fea7e6cb0fdeb9b24f80eb1f6
     packageVersion: 0.6.8
     scannerVersion: static-v2
     dshVersion: ">=0.1.0-rc.6"
     mode: static
     result: pass
-    checkedAt: 2026-08-28T04:08:32.497Z
+    checkedAt: 2026-08-31T23:11:50.642Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1001
-starsSnapshot: 215
-releaseUpdatedAt: 2026-08-28T04:08:32.698Z
-metadataUpdatedAt: 2026-08-28T04:08:32.698Z
-starsUpdatedAt: 2026-08-30T21:54:09.273Z
-updatedAt: 2026-08-30T21:54:09.273Z
+starsSnapshot: 220
+releaseUpdatedAt: 2026-08-31T23:11:50.736Z
+metadataUpdatedAt: 2026-08-31T23:11:50.736Z
+starsUpdatedAt: 2026-08-31T23:11:50.736Z
+updatedAt: 2026-08-31T23:11:50.736Z

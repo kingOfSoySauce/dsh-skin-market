@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:LeemanCheung/dsh-whale-companion#fdfb6e6707901ed6a1980fd56b630af64f49d287
-  version: 2.2.0
-  commit: fdfb6e6707901ed6a1980fd56b630af64f49d287
+  target: github:LeemanCheung/dsh-whale-companion#b3b7aefcbce17de275b2684e8892e2d9da75669c
+  version: 2.4.0
+  commit: b3b7aefcbce17de275b2684e8892e2d9da75669c
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -42,20 +42,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: fdfb6e6707901ed6a1980fd56b630af64f49d287
-    packageVersion: 2.2.0
+    commit: b3b7aefcbce17de275b2684e8892e2d9da75669c
+    packageVersion: 2.4.0
     scannerVersion: static-v2
     dshVersion: ^0.1.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-08-28T04:08:53.732Z
+    checkedAt: 2026-08-31T23:12:11.397Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 110
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-28T04:08:53.820Z
-metadataUpdatedAt: 2026-08-28T04:08:53.820Z
+releaseUpdatedAt: 2026-08-31T23:12:11.473Z
+metadataUpdatedAt: 2026-08-31T23:12:11.473Z
 starsUpdatedAt: 2026-08-25T07:11:10.340Z
-updatedAt: 2026-08-28T04:08:53.820Z
+updatedAt: 2026-08-31T23:12:11.473Z

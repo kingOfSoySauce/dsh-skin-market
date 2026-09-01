@@ -5,7 +5,7 @@ name:
 author: crack-time
 description: 田园小屋皮肤（Pastoral Cottage Skin）—— 面向 DeepSeek Harness Web GUI（dsh web）的纯 UI 换肤插件。
 repo: https://github.com/crack-time/dsh-web-ui-skin
-package: "@crack/dsh-web-ui-skin"
+package: "@crack/dsh-archive"
 rowId: dsh-web-ui-skin
 category: theme
 tags:
@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:crack-time/dsh-web-ui-skin#4db4955f9578244f95959ff9a2654d13f2387bc7
+  target: github:crack-time/dsh-web-ui-skin#3e87017bced4e5010d40ce1e325a0a109ba623a5
   version: 0.1.0
-  commit: 4db4955f9578244f95959ff9a2654d13f2387bc7
+  commit: 3e87017bced4e5010d40ce1e325a0a109ba623a5
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -35,29 +35,30 @@ review:
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
-    commit: 4db4955f9578244f95959ff9a2654d13f2387bc7
+    commit: 3e87017bced4e5010d40ce1e325a0a109ba623a5
     packageVersion: 0.1.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.7
     mode: static
     result: pass
-    checkedAt: 2026-08-29T03:15:00.228Z
+    checkedAt: 2026-08-31T23:12:19.197Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 174
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-29T03:15:00.336Z
-metadataUpdatedAt: 2026-08-29T03:15:00.336Z
+releaseUpdatedAt: 2026-08-31T23:12:19.249Z
+metadataUpdatedAt: 2026-08-31T23:12:19.249Z
 starsUpdatedAt: 2026-08-25T07:10:48.805Z
-updatedAt: 2026-08-29T03:15:00.336Z
+updatedAt: 2026-08-31T23:12:19.249Z

@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:ossFrankFrank/dsh-dracula-theme#b8c7e809043296485ebff870a4c705e9139b3d5f
-  version: 1.0.0
-  commit: b8c7e809043296485ebff870a4c705e9139b3d5f
+  target: github:ossFrankFrank/dsh-dracula-theme#28e4621866680a241467fb7249bc07231afb8459
+  version: 1.1.0
+  commit: 28e4621866680a241467fb7249bc07231afb8459
   desktop:
     mode: managed
     registry: npm
@@ -46,20 +46,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: b8c7e809043296485ebff870a4c705e9139b3d5f
-    packageVersion: 1.0.0
+    commit: 28e4621866680a241467fb7249bc07231afb8459
+    packageVersion: 1.1.0
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.6
+    dshVersion: ^0.1.2-alpha.1
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:32:08.953Z
+    checkedAt: 2026-08-31T23:12:03.533Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 186
 starsSnapshot: 3
-releaseUpdatedAt: 2026-08-23T05:32:09.104Z
-metadataUpdatedAt: 2026-08-23T05:32:09.104Z
+releaseUpdatedAt: 2026-08-31T23:12:03.606Z
+metadataUpdatedAt: 2026-08-31T23:12:03.606Z
 starsUpdatedAt: 2026-08-29T03:14:56.067Z
-updatedAt: 2026-08-29T03:14:56.067Z
+updatedAt: 2026-08-31T23:12:03.606Z

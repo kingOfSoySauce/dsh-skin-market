@@ -17,9 +17,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:ymh0000123/dsh-theme-endfield#569690ce26173e9a6f8d16672a386cce05cff4dd
+  target: github:ymh0000123/dsh-theme-endfield#8659518c38e629505d9769e5cb3c9493d5a3e1fb
   version: 1.0.0
-  commit: 569690ce26173e9a6f8d16672a386cce05cff4dd
+  commit: 8659518c38e629505d9769e5cb3c9493d5a3e1fb
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -31,7 +31,9 @@ marketScreenshots:
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/48ad12921bd6d36286d67fa483472eb32d90b6ee/home.png
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/48ad12921bd6d36286d67fa483472eb32d90b6ee/conversation.png
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/48ad12921bd6d36286d67fa483472eb32d90b6ee/settings.png
-screenshots: []
+screenshots:
+  - https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots1.webp
+  - https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots2.webp
 review:
   compatibility: unverified
   preview: verified
@@ -48,19 +50,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 569690ce26173e9a6f8d16672a386cce05cff4dd
+    commit: 8659518c38e629505d9769e5cb3c9493d5a3e1fb
     packageVersion: 1.0.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-30T21:54:10.298Z
+    checkedAt: 2026-08-31T23:11:51.454Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 154
-starsSnapshot: 62
-releaseUpdatedAt: 2026-08-30T21:54:10.402Z
-metadataUpdatedAt: 2026-08-30T21:54:10.402Z
-starsUpdatedAt: 2026-08-30T21:54:10.402Z
-updatedAt: 2026-08-30T21:54:10.402Z
+starsSnapshot: 64
+releaseUpdatedAt: 2026-08-31T23:11:51.544Z
+metadataUpdatedAt: 2026-08-31T23:11:51.544Z
+starsUpdatedAt: 2026-08-31T23:11:51.544Z
+updatedAt: 2026-08-31T23:11:51.544Z

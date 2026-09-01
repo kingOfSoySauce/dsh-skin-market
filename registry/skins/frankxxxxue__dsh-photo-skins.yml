@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:frankxxxxue/dsh-photo-skins#d90b3ce3dd25ab38131fa85ee77e969d296da622
-  version: 0.1.0
-  commit: d90b3ce3dd25ab38131fa85ee77e969d296da622
+  target: github:frankxxxxue/dsh-photo-skins#106f3dd033f8dc3bfc91b848af473844e70c747f
+  version: 0.2.0
+  commit: 106f3dd033f8dc3bfc91b848af473844e70c747f
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
@@ -45,20 +45,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: d90b3ce3dd25ab38131fa85ee77e969d296da622
-    packageVersion: 0.1.0
+    commit: 106f3dd033f8dc3bfc91b848af473844e70c747f
+    packageVersion: 0.2.0
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.7
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:31:16.708Z
+    checkedAt: 2026-08-31T23:12:08.611Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 1006
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-23T05:31:16.783Z
-metadataUpdatedAt: 2026-08-23T05:31:16.783Z
+releaseUpdatedAt: 2026-08-31T23:12:08.679Z
+metadataUpdatedAt: 2026-08-31T23:12:08.679Z
 starsUpdatedAt: 2026-08-25T07:10:56.434Z
-updatedAt: 2026-08-25T07:10:56.434Z
+updatedAt: 2026-08-31T23:12:08.679Z
