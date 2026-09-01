@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:d-dev0101/open-sea-skin#2437d80a96de4124c54fbe89872fa7090103f025
-  version: 1.2.1
-  commit: 2437d80a96de4124c54fbe89872fa7090103f025
+  target: github:d-dev0101/open-sea-skin#07507a4e7b43e1c9b9006ad8af97406330adb2ea
+  version: 1.2.2
+  commit: 07507a4e7b43e1c9b9006ad8af97406330adb2ea
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -51,13 +51,13 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 2437d80a96de4124c54fbe89872fa7090103f025
-    packageVersion: 1.2.1
+    commit: 07507a4e7b43e1c9b9006ad8af97406330adb2ea
+    packageVersion: 1.2.2
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:26:54.421Z
+    checkedAt: 2026-09-01T21:42:01.131Z
     findings: []
 license:
   code: MIT
@@ -65,7 +65,7 @@ license:
   notice: Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1.
 featuredRank: 0
 starsSnapshot: 194
-releaseUpdatedAt: 2026-08-23T05:26:54.494Z
-metadataUpdatedAt: 2026-08-23T05:26:54.494Z
+releaseUpdatedAt: 2026-09-01T21:42:01.325Z
+metadataUpdatedAt: 2026-09-01T21:42:01.325Z
 starsUpdatedAt: 2026-08-30T01:19:26.330Z
-updatedAt: 2026-08-30T01:19:26.330Z
+updatedAt: 2026-09-01T21:42:01.325Z
