@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude#4d8fe6cfbff245b44bb8e0effc296ad2b513c9c5
-  version: 0.2.0
-  commit: 4d8fe6cfbff245b44bb8e0effc296ad2b513c9c5
+  target: github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude#a240ab43bd15fd4b2cc853d20bee2c749299134a
+  version: 0.2.1
+  commit: a240ab43bd15fd4b2cc853d20bee2c749299134a
   desktop:
     mode: managed
     registry: npm
@@ -38,29 +38,30 @@ review:
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 4d8fe6cfbff245b44bb8e0effc296ad2b513c9c5
-    packageVersion: 0.2.0
+    commit: a240ab43bd15fd4b2cc853d20bee2c749299134a
+    packageVersion: 0.2.1
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:28:08.294Z
+    checkedAt: 2026-09-01T21:42:04.254Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 23
 starsSnapshot: 10
-releaseUpdatedAt: 2026-08-23T05:28:08.371Z
-metadataUpdatedAt: 2026-08-23T05:28:08.371Z
+releaseUpdatedAt: 2026-09-01T21:42:04.438Z
+metadataUpdatedAt: 2026-09-01T21:42:04.438Z
 starsUpdatedAt: 2026-08-30T01:19:29.402Z
-updatedAt: 2026-08-30T01:19:29.402Z
+updatedAt: 2026-09-01T21:42:04.438Z
