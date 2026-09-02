@@ -19,9 +19,9 @@ modes:
   - light
   - dark
 install:
-  target: github:zhijun-dai/Catppuccin-dsh-theme#3101af92f2f16e0e32458a269cb154b6aeaeb005
+  target: github:zhijun-dai/Catppuccin-dsh-theme#d3e85a27bb8aa7e46953f61dca31bdda55aff2cb
   version: 0.2.3
-  commit: 3101af92f2f16e0e32458a269cb154b6aeaeb005
+  commit: d3e85a27bb8aa7e46953f61dca31bdda55aff2cb
   desktop:
     mode: managed
     registry: npm
@@ -51,21 +51,21 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 3101af92f2f16e0e32458a269cb154b6aeaeb005
+    commit: d3e85a27bb8aa7e46953f61dca31bdda55aff2cb
     packageVersion: 0.2.3
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-30T01:19:29.443Z
+    checkedAt: 2026-09-02T21:43:16.751Z
     findings: []
 license:
   code: MIT
   commercialUse: true
   notice: Catppuccin palette 源自 catppuccin/palette，并按 MIT 许可证使用。
 featuredRank: 3
-starsSnapshot: 11
-releaseUpdatedAt: 2026-08-30T01:19:29.609Z
-metadataUpdatedAt: 2026-08-30T01:19:29.609Z
-starsUpdatedAt: 2026-08-25T07:08:47.755Z
-updatedAt: 2026-08-30T01:19:29.609Z
+starsSnapshot: 10
+releaseUpdatedAt: 2026-09-02T21:43:16.856Z
+metadataUpdatedAt: 2026-09-02T21:43:16.856Z
+starsUpdatedAt: 2026-09-02T21:43:16.856Z
+updatedAt: 2026-09-02T21:43:16.856Z

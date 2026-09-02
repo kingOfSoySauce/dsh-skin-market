@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:zhijun-dai/Solarized-dsh-theme#1e6be502a30ad7d11a3c0936be275c332da81743
+  target: github:zhijun-dai/Solarized-dsh-theme#5884baa70c68509c0119cad836d20f505b0f8756
   version: 0.2.1
-  commit: 1e6be502a30ad7d11a3c0936be275c332da81743
+  commit: 5884baa70c68509c0119cad836d20f505b0f8756
   desktop:
     mode: managed
     registry: npm
@@ -49,20 +49,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 1e6be502a30ad7d11a3c0936be275c332da81743
+    commit: 5884baa70c68509c0119cad836d20f505b0f8756
     packageVersion: 0.2.1
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-30T01:19:30.874Z
+    checkedAt: 2026-09-02T21:43:19.053Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 12
 starsSnapshot: 7
-releaseUpdatedAt: 2026-08-30T01:19:31.027Z
-metadataUpdatedAt: 2026-08-30T01:19:31.027Z
+releaseUpdatedAt: 2026-09-02T21:43:19.245Z
+metadataUpdatedAt: 2026-09-02T21:43:19.245Z
 starsUpdatedAt: 2026-08-29T04:12:32.693Z
-updatedAt: 2026-08-30T01:19:31.027Z
+updatedAt: 2026-09-02T21:43:19.245Z

@@ -189,6 +189,78 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:crack-time.dsh-web-ui-skin -->
+### 2026-09-02 · dsh-web-ui-skin
+
+[crack-time/dsh-web-ui-skin](https://github.com/crack-time/dsh-web-ui-skin)：田园小屋皮肤（Pastoral Cottage Skin）—— 面向 DeepSeek Harness Web GUI（dsh web）的纯 UI 换肤插件。
+
+- 版本：`0.1.0`
+- 固定 commit：`3502b69776b840c725ede4f994c62834e2a830fb`
+
+<!-- dsh-auto-entry:zalpha263.dsh-ui-beautify -->
+### 2026-09-02 · dsh-ui-beautify
+
+[Zalpha263/dsh-ui-beautify](https://github.com/Zalpha263/dsh-ui-beautify)：给 DeepSeek Harness（DSH）Web UI 换一套好看的外观：配色预设、整页背景图、VSCode 式卡片布局（面板停靠 / 浮动 / 标签页宿主），全部可撤销、可记忆。
+
+- 版本：`1.12.14`
+- 固定 commit：`da6909d93b8d9d59ee649e08a07532e2ce9349c8`
+
+<!-- dsh-auto-entry:lengzhanbao.dsh-taffy-theme -->
+### 2026-09-02 · dsh-taffy-theme
+
+[lengzhanbao/dsh-taffy-theme](https://github.com/lengzhanbao/dsh-taffy-theme)：Taffy Live Atelier / 塔菲直播工房
+
+- 版本：`0.1.3`
+- 固定 commit：`f9ef69c54814109a04e86f3dd69602b747f51aab`
+
+<!-- dsh-auto-entry:zhijun-dai.solarized-dsh-theme -->
+### 2026-09-02 · Solarized-dsh-theme
+
+[zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme)：Solarized 与 Selenized 主题插件：向 DSH Web 主题运行时注册四套忠实色板。
+
+- 版本：`0.2.1`
+- 固定 commit：`5884baa70c68509c0119cad836d20f505b0f8756`
+
+<!-- dsh-auto-entry:zhijun-dai.catppuccin -->
+### 2026-09-02 · Catppuccin 四味主题
+
+[zhijun-dai/Catppuccin-dsh-theme](https://github.com/zhijun-dai/Catppuccin-dsh-theme)：Catppuccin 主题插件：为 DSH Web 主题运行时提供 Latte、Frappé、Macchiato、Mocha 四套皮肤。
+
+- 版本：`0.2.3`
+- 固定 commit：`d3e85a27bb8aa7e46953f61dca31bdda55aff2cb`
+
+<!-- dsh-auto-entry:yunxiiqwq.maid-whale-webui -->
+### 2026-09-02 · maid-whale-webui
+
+[yunxiiQwQ/dsh-maid-whale-webUI](https://github.com/yunxiiQwQ/dsh-maid-whale-webUI)：DSH Web UI 鲸鱼女仆纸面主题：亮暗配色、海洋插画、手绘边框、装饰素材与常驻桌宠。
+
+- 版本：`0.1.1`
+- 固定 commit：`2deb5f1e1aad4b067d53e0c7244726c844ef1087`
+
+<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
+### 2026-09-02 · dsh-kimino-theme
+
+[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
+
+- 版本：`66.4.0`
+- 固定 commit：`16fdd0f7f2b37f215d2ce4f6a7d1feae372aee81`
+
+<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
+### 2026-09-02 · dsh-dream-skin
+
+[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
+
+- 版本：`8.30.1`
+- 固定 commit：`7366df740bb7534e3c92647c6c296da62d2c9860`
+
+<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
+### 2026-09-02 · dsh-wallpaper-engine
+
+[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：English | 中文
+
+- 版本：`0.7.0`
+- 固定 commit：`12b9574b20eb3f1ecc47d56bd9419e57f48a7d06`
+
 <!-- dsh-auto-entry:zaimokuza-yoshiteru.dsh-theme-library -->
 ### 2026-09-01 · dsh-theme-library
 
@@ -197,13 +269,7 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.2.1`
 - 固定 commit：`3bbaa0ca7044e34f7264fc431a81edf7a1ffb984`
 
-<!-- dsh-auto-entry:crack-time.dsh-web-ui-skin -->
-### 2026-09-01 · dsh-web-ui-skin
 
-[crack-time/dsh-web-ui-skin](https://github.com/crack-time/dsh-web-ui-skin)：田园小屋皮肤（Pastoral Cottage Skin）—— 面向 DeepSeek Harness Web GUI（dsh web）的纯 UI 换肤插件。
-
-- 版本：`0.1.0`
-- 固定 commit：`334415dbac74934da90dd81ade20f9de8d1b7068`
 
 <!-- dsh-auto-entry:pakiknowledge.dsh-client-ui-skin-claude -->
 ### 2026-09-01 · dsh-client-ui-skin-claude
@@ -213,21 +279,7 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.2.1`
 - 固定 commit：`a240ab43bd15fd4b2cc853d20bee2c749299134a`
 
-<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
-### 2026-09-01 · dsh-kimino-theme
 
-[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
-
-- 版本：`66.4.0`
-- 固定 commit：`760e25d8277fc78ba93d0592b0a9041d01dfe62a`
-
-<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
-### 2026-09-01 · dsh-dream-skin
-
-[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
-
-- 版本：`8.30.1`
-- 固定 commit：`0000f4bb704b244ae4ea5edd15b3da98d2ac3d5a`
 
 <!-- dsh-auto-entry:d-dev0101.open-sea-skin -->
 ### 2026-09-01 · Open Sea 海洋皮肤
@@ -237,13 +289,7 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`1.2.2`
 - 固定 commit：`07507a4e7b43e1c9b9006ad8af97406330adb2ea`
 
-<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
-### 2026-09-01 · dsh-wallpaper-engine
 
-[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：English | 中文
-
-- 版本：`0.6.8`
-- 固定 commit：`1b62f6d6e76d49a886ee178d93bdd170f296afb4`
 
 <!-- dsh-auto-entry:leemancheung.dsh-whale-companion -->
 ### 2026-08-31 · dsh-whale-companion
@@ -252,6 +298,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`2.4.0`
 - 固定 commit：`b3b7aefcbce17de275b2684e8892e2d9da75669c`
+
+
 
 
 
@@ -265,6 +313,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 
 
+
+
 <!-- dsh-auto-entry:ossfrankfrank.dsh-dracula-theme -->
 ### 2026-08-31 · dsh-dracula-theme
 
@@ -272,6 +322,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`1.1.0`
 - 固定 commit：`28e4621866680a241467fb7249bc07231afb8459`
+
+
 
 
 
@@ -285,6 +337,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 
 
+
+
 <!-- dsh-auto-entry:ymh0000123.dsh-theme-endfield -->
 ### 2026-08-31 · dsh-theme-endfield
 
@@ -295,6 +349,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 
 
+
+
 <!-- dsh-auto-entry:sakka6868.dsh-skin -->
 ### 2026-08-30 · dsh-skin
 
@@ -302,6 +358,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.4.0`
 - 固定 commit：`daa2c20da789e39493b116512bad0f326cc3c2d7`
+
+
 
 
 
@@ -319,16 +377,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 
 
-<!-- dsh-auto-entry:yunxiiqwq.maid-whale-webui -->
-### 2026-08-30 · maid-whale-webui
-
-[yunxiiQwQ/dsh-maid-whale-webUI](https://github.com/yunxiiQwQ/dsh-maid-whale-webUI)：DSH Web UI 鲸鱼女仆纸面主题：亮暗配色、海洋插画、手绘边框、装饰素材与常驻桌宠。
-
-- 版本：`0.1.0`
-- 固定 commit：`d89892ca5628d3ad657e60e836a1a32d9a752123`
-
-
-
 
 
 <!-- dsh-auto-entry:zjuzhiyucai.dsh-ivory -->
@@ -340,32 +388,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 固定 commit：`6da0020d145213ce10433f28983e69cc598508c7`
 
 
-
-
-
-
-
-<!-- dsh-auto-entry:zhijun-dai.solarized-dsh-theme -->
-### 2026-08-30 · Solarized-dsh-theme
-
-[zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme)：Solarized 与 Selenized 主题插件：向 DSH Web 主题运行时注册四套忠实色板。
-
-- 版本：`0.2.1`
-- 固定 commit：`1e6be502a30ad7d11a3c0936be275c332da81743`
-
-
-
-
-
-
-
-<!-- dsh-auto-entry:zhijun-dai.catppuccin -->
-### 2026-08-30 · Catppuccin 四味主题
-
-[zhijun-dai/Catppuccin-dsh-theme](https://github.com/zhijun-dai/Catppuccin-dsh-theme)：Catppuccin 主题插件：为 DSH Web 主题运行时提供 Latte、Frappé、Macchiato、Mocha 四套皮肤。
-
-- 版本：`0.2.3`
-- 固定 commit：`3101af92f2f16e0e32458a269cb154b6aeaeb005`
 
 
 
@@ -387,6 +409,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 
 
+
+
 <!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
 ### 2026-08-29 · dsh-catppuccin
 
@@ -394,6 +418,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.4.3`
 - 固定 commit：`655b0e35a1f31fcc662b486f34829beb52f7de9d`
+
+
 
 
 
@@ -423,6 +449,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 
 
+
+
 <!-- dsh-auto-entry:cdxdnrf.wishadel-theme -->
 ### 2026-08-28 · wishadel-theme
 
@@ -430,6 +458,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.6.0`
 - 固定 commit：`92e86015987a38e0771fd5c6d5cb026cab14110b`
+
+
 
 
 
@@ -467,6 +497,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 
 
+
+
 <!-- dsh-auto-entry:reluckylucy.dsh-rhine-lab-themo -->
 ### 2026-08-28 · dsh_Rhine_Lab_themo
 
@@ -474,6 +506,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.2.1`
 - 固定 commit：`3c966c864a2cf51276945645a0a07179d433f63e`
+
+
 
 
 
@@ -511,26 +545,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 
 
-<!-- dsh-auto-entry:zalpha263.dsh-ui-beautify -->
-### 2026-08-28 · dsh-ui-beautify
-
-[Zalpha263/dsh-ui-beautify](https://github.com/Zalpha263/dsh-ui-beautify)：给 DeepSeek Harness（DSH）Web UI 换一套好看的外观：配色预设、整页背景图、VSCode 式卡片布局（面板停靠 / 浮动 / 标签页宿主），全部可撤销、可记忆。
-
-- 版本：`1.12.12`
-- 固定 commit：`d1ab77614157a55b56a5f2f8932e43bf4e4de2ba`
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- dsh-auto-entry:mtaech.dsh-material-you -->
@@ -555,6 +569,8 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 
 
+
+
 <!-- dsh-auto-entry:mldhao.dsh-blue-archive-shiroko -->
 ### 2026-08-28 · dsh-blue-archive-shiroko
 
@@ -564,26 +580,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 固定 commit：`313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72`
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- dsh-auto-entry:lengzhanbao.dsh-taffy-theme -->
-### 2026-08-28 · dsh-taffy-theme
-
-[lengzhanbao/dsh-taffy-theme](https://github.com/lengzhanbao/dsh-taffy-theme)：Taffy Live Atelier / 塔菲直播工房
-
-- 版本：`0.1.2`
-- 固定 commit：`25850a121727930e36a40418b80c693055ade276`
 
 
 
