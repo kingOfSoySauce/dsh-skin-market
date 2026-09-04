@@ -1,0 +1,39 @@
+id: fengb3.dsh-theme-macintosh
+name:
+  zh: 经典麦金塔 Macintosh
+  en: Macintosh
+author: fengb3
+description: DSH Classic Macintosh 主题：System 7 像素语汇——ChiKareGo/Fusion Pixel 像素字体、桌面噪点画布、Finder 式会话侧栏、方角黑白按钮与弹窗、开机 HappyMac 空态、4px Bayer 抖动溶解过渡；theme.overrideTokens 常驻深浅双色随官方外观切换，停用即完整还原；零构建纯 loader 格式，附 Kit 组件检视页。
+repo: https://github.com/fengb3/dsh-theme-macintosh
+package: dsh-theme-macintosh
+rowId: theme-macintosh
+category: theme
+tags:
+  - pixel
+  - retro
+  - macintosh
+  - system-7
+  - light-dark
+  - full-ui
+  - font
+modes:
+  - light
+  - dark
+install:
+  target: github:fengb3/dsh-theme-macintosh#f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1
+  version: 0.1.1
+  commit: f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1
+compatibility:
+  dsh: ">=0.1.0-rc.6"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/fengb3/dsh-theme-macintosh/f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1/shots/showcase/overview-dark.png
+  - https://raw.githubusercontent.com/fengb3/dsh-theme-macintosh/f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1/shots/showcase/overview-light.png
+  - https://raw.githubusercontent.com/fengb3/dsh-theme-macintosh/f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1/shots/showcase/boot-dark.png
+  - https://raw.githubusercontent.com/fengb3/dsh-theme-macintosh/f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1/shots/showcase/dlg-dark.png
+  - https://raw.githubusercontent.com/fengb3/dsh-theme-macintosh/f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1/shots/showcase/dock-composer-dark.png
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 0
