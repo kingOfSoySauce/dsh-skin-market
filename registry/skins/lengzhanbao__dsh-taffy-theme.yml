@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lengzhanbao/dsh-taffy-theme#f9ef69c54814109a04e86f3dd69602b747f51aab
-  version: 0.1.3
-  commit: f9ef69c54814109a04e86f3dd69602b747f51aab
+  target: github:lengzhanbao/dsh-taffy-theme#ec93f4302880d1655480d06e12bb9f7f1434a1f6
+  version: 0.1.4
+  commit: ec93f4302880d1655480d06e12bb9f7f1434a1f6
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -50,20 +50,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: f9ef69c54814109a04e86f3dd69602b747f51aab
-    packageVersion: 0.1.3
+    commit: ec93f4302880d1655480d06e12bb9f7f1434a1f6
+    packageVersion: 0.1.4
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-02T21:43:27.591Z
+    checkedAt: 2026-09-05T21:05:58.934Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1017
 starsSnapshot: 3
-releaseUpdatedAt: 2026-09-02T21:43:27.663Z
-metadataUpdatedAt: 2026-09-02T21:43:27.663Z
+releaseUpdatedAt: 2026-09-05T21:05:58.989Z
+metadataUpdatedAt: 2026-09-05T21:05:58.989Z
 starsUpdatedAt: 2026-08-29T03:14:54.482Z
-updatedAt: 2026-09-02T21:43:27.663Z
+updatedAt: 2026-09-05T21:05:58.989Z
