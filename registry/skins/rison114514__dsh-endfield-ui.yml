@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:rison114514/dsh-endfield-ui#55e946419121188efc8c1023b6b92f9db6c80eef&path:/endfield-ui-plugin
-  version: 1.0.0
-  commit: 55e946419121188efc8c1023b6b92f9db6c80eef
+  target: github:rison114514/dsh-endfield-ui#9a9c1ab2649663b6f2ca82dafbcbb6c0c6acda65&path:/endfield-ui-plugin
+  version: 1.0.1
+  commit: 9a9c1ab2649663b6f2ca82dafbcbb6c0c6acda65
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -51,13 +51,13 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 55e946419121188efc8c1023b6b92f9db6c80eef
-    packageVersion: 1.0.0
+    commit: 9a9c1ab2649663b6f2ca82dafbcbb6c0c6acda65
+    packageVersion: 1.0.1
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-25T07:08:21.826Z
+    checkedAt: 2026-09-05T21:05:46.852Z
     findings: []
 license:
   code: MIT
@@ -65,7 +65,7 @@ license:
   notice: 插件代码在 package.json 中声明为 MIT；仓库同时说明第三方字体、游戏视觉素材和品牌/角色素材的授权范围仍需逐项确认，因此市场不将整体素材视为可商业再分发。
 featuredRank: 143
 starsSnapshot: 54
-releaseUpdatedAt: 2026-08-25T07:08:21.950Z
-metadataUpdatedAt: 2026-08-25T07:08:21.950Z
+releaseUpdatedAt: 2026-09-05T21:05:46.926Z
+metadataUpdatedAt: 2026-09-05T21:05:46.926Z
 starsUpdatedAt: 2026-09-01T21:42:01.720Z
-updatedAt: 2026-09-01T21:42:01.720Z
+updatedAt: 2026-09-05T21:05:46.926Z

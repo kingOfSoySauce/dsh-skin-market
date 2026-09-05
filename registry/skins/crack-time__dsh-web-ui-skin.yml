@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:crack-time/dsh-web-ui-skin#3502b69776b840c725ede4f994c62834e2a830fb
+  target: github:crack-time/dsh-web-ui-skin#56025830a3f90ef1d639d30c51cb895748f0949d
   version: 0.1.0
-  commit: 3502b69776b840c725ede4f994c62834e2a830fb
+  commit: 56025830a3f90ef1d639d30c51cb895748f0949d
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -45,20 +45,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
-    commit: 3502b69776b840c725ede4f994c62834e2a830fb
+    commit: 56025830a3f90ef1d639d30c51cb895748f0949d
     packageVersion: 0.1.0
     scannerVersion: static-v2
-    dshVersion: 0.1.2-alpha.4
+    dshVersion: 0.1.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-09-02T21:43:50.233Z
+    checkedAt: 2026-09-05T21:06:16.930Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 174
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-02T21:43:50.305Z
-metadataUpdatedAt: 2026-09-02T21:43:50.305Z
+releaseUpdatedAt: 2026-09-05T21:06:17.000Z
+metadataUpdatedAt: 2026-09-05T21:06:17.000Z
 starsUpdatedAt: 2026-08-25T07:10:48.805Z
-updatedAt: 2026-09-02T21:43:50.305Z
+updatedAt: 2026-09-05T21:06:17.000Z

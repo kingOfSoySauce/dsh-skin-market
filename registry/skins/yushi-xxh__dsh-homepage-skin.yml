@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:yushi-xxh/dsh-homepage-skin#44933213da11f82caefd609ad1bdfe84ac95b3e0
-  version: 0.1.12
-  commit: 44933213da11f82caefd609ad1bdfe84ac95b3e0
+  target: github:yushi-xxh/dsh-homepage-skin#329f9e0b12cab223b00b3e75e2f73453d9a46ed5
+  version: 0.1.13
+  commit: 329f9e0b12cab223b00b3e75e2f73453d9a46ed5
   desktop:
     mode: managed
     registry: npm
@@ -48,20 +48,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 44933213da11f82caefd609ad1bdfe84ac95b3e0
-    packageVersion: 0.1.12
+    commit: 329f9e0b12cab223b00b3e75e2f73453d9a46ed5
+    packageVersion: 0.1.13
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.6
+    dshVersion: ^0.1.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:32:44.269Z
+    checkedAt: 2026-09-05T21:05:57.085Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 15
-starsSnapshot: 3
-releaseUpdatedAt: 2026-08-23T05:32:44.331Z
-metadataUpdatedAt: 2026-08-23T05:32:44.331Z
-starsUpdatedAt: 2026-08-28T09:43:26.241Z
-updatedAt: 2026-08-28T09:43:26.241Z
+starsSnapshot: 4
+releaseUpdatedAt: 2026-09-05T21:05:57.163Z
+metadataUpdatedAt: 2026-09-05T21:05:57.163Z
+starsUpdatedAt: 2026-09-05T21:05:57.163Z
+updatedAt: 2026-09-05T21:05:57.163Z

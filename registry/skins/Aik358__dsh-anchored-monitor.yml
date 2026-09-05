@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Aik358/dsh-anchored-monitor#8cb863fa50c3d17dec2683a247b93f90deeb5a16
-  version: 0.3.0
-  commit: 8cb863fa50c3d17dec2683a247b93f90deeb5a16
+  target: github:Aik358/dsh-anchored-monitor#086bd05e1e3035ddf23133f3a0ee479291a4b237
+  version: 0.3.1
+  commit: 086bd05e1e3035ddf23133f3a0ee479291a4b237
   desktop:
     mode: managed
     registry: npm
@@ -45,20 +45,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 8cb863fa50c3d17dec2683a247b93f90deeb5a16
-    packageVersion: 0.3.0
+    commit: 086bd05e1e3035ddf23133f3a0ee479291a4b237
+    packageVersion: 0.3.1
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:28:27.325Z
+    checkedAt: 2026-09-05T21:05:49.414Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 155
-starsSnapshot: 11
-releaseUpdatedAt: 2026-08-23T05:28:27.412Z
-metadataUpdatedAt: 2026-08-23T05:28:27.412Z
-starsUpdatedAt: 2026-08-26T03:22:59.863Z
-updatedAt: 2026-08-26T03:22:59.863Z
+starsSnapshot: 10
+releaseUpdatedAt: 2026-09-05T21:05:49.488Z
+metadataUpdatedAt: 2026-09-05T21:05:49.488Z
+starsUpdatedAt: 2026-09-05T21:05:49.488Z
+updatedAt: 2026-09-05T21:05:49.488Z

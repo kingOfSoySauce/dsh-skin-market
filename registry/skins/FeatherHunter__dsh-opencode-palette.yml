@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:FeatherHunter/dsh-opencode-palette#11a3c01ff4e6cd22239e990fb8964d8421b04b01&path:/package
+  target: github:FeatherHunter/dsh-opencode-palette#c459636f1d88a5eb3c0cfb37aff2ff09d62c10d3&path:/package
   version: 1.6.4
-  commit: 11a3c01ff4e6cd22239e990fb8964d8421b04b01
+  commit: c459636f1d88a5eb3c0cfb37aff2ff09d62c10d3
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -31,7 +31,10 @@ marketScreenshots:
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/FeatherHunter__dsh-opencode-palette/5aeadca70606ceb38f94080694e0c9fe47d4b10f/home.png
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/FeatherHunter__dsh-opencode-palette/5aeadca70606ceb38f94080694e0c9fe47d4b10f/conversation.png
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/FeatherHunter__dsh-opencode-palette/5aeadca70606ceb38f94080694e0c9fe47d4b10f/settings.png
-screenshots: []
+screenshots:
+  - https://raw.githubusercontent.com/FeatherHunter/dsh-opencode-palette/c459636f1d88a5eb3c0cfb37aff2ff09d62c10d3/showcase/overview-opencode-zh.png
+  - https://raw.githubusercontent.com/FeatherHunter/dsh-opencode-palette/c459636f1d88a5eb3c0cfb37aff2ff09d62c10d3/showcase/opencode%E8%B0%83%E8%89%B2%E6%9D%BF%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2-zh.png
+  - https://raw.githubusercontent.com/FeatherHunter/dsh-opencode-palette/c459636f1d88a5eb3c0cfb37aff2ff09d62c10d3/showcase/overview-github-light-zh.png
 review:
   compatibility: unverified
   preview: verified
@@ -39,28 +42,27 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 11a3c01ff4e6cd22239e990fb8964d8421b04b01
+    commit: c459636f1d88a5eb3c0cfb37aff2ff09d62c10d3
     packageVersion: 1.6.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:28:02.434Z
+    checkedAt: 2026-09-05T21:05:48.416Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 139
-starsSnapshot: 18
-releaseUpdatedAt: 2026-08-23T05:28:02.514Z
-metadataUpdatedAt: 2026-08-23T05:28:02.514Z
-starsUpdatedAt: 2026-08-28T09:43:09.158Z
-updatedAt: 2026-08-28T09:43:09.158Z
+starsSnapshot: 21
+releaseUpdatedAt: 2026-09-05T21:05:48.490Z
+metadataUpdatedAt: 2026-09-05T21:05:48.490Z
+starsUpdatedAt: 2026-09-05T21:05:48.490Z
+updatedAt: 2026-09-05T21:05:48.490Z
