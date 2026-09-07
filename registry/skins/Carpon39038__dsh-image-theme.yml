@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Carpon39038/dsh-image-theme#d522281fcdf81fb08984650800294b0058b89301
-  version: 0.1.0
-  commit: d522281fcdf81fb08984650800294b0058b89301
+  target: github:Carpon39038/dsh-image-theme#25c70fcd31b0cf36f8a0ff57b0413223daaf5d27
+  version: 0.1.1
+  commit: 25c70fcd31b0cf36f8a0ff57b0413223daaf5d27
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -31,7 +31,7 @@ screenshots:
   - https://opengraph.githubassets.com/placeholder/carpon39038.dsh-image-theme
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: healthy
@@ -43,20 +43,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: d522281fcdf81fb08984650800294b0058b89301
-    packageVersion: 0.1.0
+    commit: 25c70fcd31b0cf36f8a0ff57b0413223daaf5d27
+    packageVersion: 0.1.1
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.5
+    dshVersion: ^0.1.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:30:01.074Z
+    checkedAt: 2026-09-07T21:58:29.407Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 60
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-23T05:30:01.129Z
-metadataUpdatedAt: 2026-08-23T15:29:21.462Z
+releaseUpdatedAt: 2026-09-07T21:58:29.457Z
+metadataUpdatedAt: 2026-09-07T21:58:29.457Z
 starsUpdatedAt: 2026-08-16 13:50:02.941000+00:00
-updatedAt: 2026-08-23T15:29:21.462Z
+updatedAt: 2026-09-07T21:58:29.457Z
