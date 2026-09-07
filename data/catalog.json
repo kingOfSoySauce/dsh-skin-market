@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-07T08:29:47.383Z",
+  "generatedAt": "2026-09-07T09:46:47.323Z",
   "skins": [
     {
       "id": "univerfv.dsh-furina-theme",
@@ -371,6 +371,88 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5f32f563d302800b732040837416f205.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5f32f563d302800b732040837416f205.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fengb3.dsh-theme-macintosh",
+      "name": {
+        "zh": "经典麦金塔 Macintosh",
+        "en": "Macintosh"
+      },
+      "author": "fengb3",
+      "description": "DSH Classic Macintosh 主题：System 7 像素语汇——ChiKareGo/Fusion Pixel 像素字体、桌面噪点画布、Finder 式会话侧栏、方角黑白按钮与弹窗、开机 HappyMac 空态、4px Bayer 抖动溶解过渡；theme.overrideTokens 常驻深浅双色随官方外观切换，停用即完整还原；零构建纯 loader 格式，附 Kit 组件检视页。",
+      "repo": "https://github.com/fengb3/dsh-theme-macintosh",
+      "package": "dsh-theme-macintosh",
+      "rowId": "dsh-theme-macintosh",
+      "category": "theme",
+      "tags": [
+        "pixel",
+        "retro",
+        "macintosh",
+        "system-7",
+        "light-dark",
+        "full-ui",
+        "font"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:fengb3/dsh-theme-macintosh#f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1",
+        "version": "0.1.1",
+        "commit": "f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1"
+      },
+      "compatibility": {
+        "dsh": ">=0.1.0-rc.6",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/fengb3/dsh-theme-macintosh/f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1/shots/showcase/overview-dark.png",
+        "https://raw.githubusercontent.com/fengb3/dsh-theme-macintosh/f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1/shots/showcase/overview-light.png",
+        "https://raw.githubusercontent.com/fengb3/dsh-theme-macintosh/f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1/shots/showcase/boot-dark.png",
+        "https://raw.githubusercontent.com/fengb3/dsh-theme-macintosh/f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1/shots/showcase/dlg-dark.png",
+        "https://raw.githubusercontent.com/fengb3/dsh-theme-macintosh/f35c1d84293eb93f8bbd8c4ff01ca7c10a9d2fa1/shots/showcase/dock-composer-dark.png"
+      ],
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 0,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-09-07T08:47:37.000Z",
+      "metadataUpdatedAt": "2026-09-07T08:47:37.000Z",
+      "starsUpdatedAt": "2026-09-07T08:47:37.000Z",
+      "updatedAt": "2026-09-07T08:47:37.000Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d211a58dc8bd9828c82b731bc5c985a2.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d211a58dc8bd9828c82b731bc5c985a2.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d211a58dc8bd9828c82b731bc5c985a2.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d211a58dc8bd9828c82b731bc5c985a2.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d1c37bdf9fcccbd56157cb25d4052743.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d1c37bdf9fcccbd56157cb25d4052743.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ba75e7a701b0ec62a4a8462d59befe89.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ba75e7a701b0ec62a4a8462d59befe89.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/941887c93d549c77c5c9ae8b7373f1b7.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/941887c93d549c77c5c9ae8b7373f1b7.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5b49a6aa43c59a98396af1c5f6eead3d.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5b49a6aa43c59a98396af1c5f6eead3d.full.webp"
           }
         ]
       }
