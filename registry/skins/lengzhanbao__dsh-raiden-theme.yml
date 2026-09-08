@@ -1,0 +1,65 @@
+id: lengzhanbao.dsh-raiden-theme
+name:
+  zh: dsh-raiden-theme
+  en: dsh-raiden-theme
+author: lengzhanbao
+description: Raiden Inazuma Atelier / 稻妻雷电工房
+repo: https://github.com/lengzhanbao/dsh-raiden-theme
+package: "@dsh-external/dsh-raiden-theme"
+rowId: dsh-raiden-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:lengzhanbao/dsh-raiden-theme#f4b9a1218818198ba3723df11bb8fd428e2df8c3
+  version: 0.1.1
+  commit: f4b9a1218818198ba3723df11bb8fd428e2df8c3
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lengzhanbao/dsh-raiden-theme/f4b9a1218818198ba3723df11bb8fd428e2df8c3/preview/light.jpg
+  - https://raw.githubusercontent.com/lengzhanbao/dsh-raiden-theme/f4b9a1218818198ba3723df11bb8fd428e2df8c3/preview/dark.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: f4b9a1218818198ba3723df11bb8fd428e2df8c3
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:47.943Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1074
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:47.986Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:47.986Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/lengzhanbao/dsh-raiden-theme/f4b9a1218818198ba3723df11bb8fd428e2df8c3/preview/light.jpg

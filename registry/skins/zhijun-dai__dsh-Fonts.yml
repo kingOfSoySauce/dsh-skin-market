@@ -1,0 +1,61 @@
+id: zhijun-dai.dsh-fonts
+name:
+  zh: dsh-Fonts
+  en: dsh-Fonts
+author: zhijun-dai
+description: DeepSeek Harness 的字体系统插件 — 内置 OFL 开源字体离线分发、自定义字体导入、以及可供其他插件扩展的 ctx.fonts 注册表
+repo: https://github.com/zhijun-dai/dsh-Fonts
+package: dsh-fonts
+rowId: fonts
+category: theme
+tags:
+  - pastel
+modes:
+  - light
+  - dark
+install:
+  target: github:zhijun-dai/dsh-Fonts#46014ec5663435bdd39acee2e77c3979810b1967
+  version: 0.1.0
+  commit: 46014ec5663435bdd39acee2e77c3979810b1967
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zhijun-dai/dsh-Fonts/46014ec5663435bdd39acee2e77c3979810b1967/assets/fonts-settings.webp
+  - https://raw.githubusercontent.com/zhijun-dai/dsh-Fonts/46014ec5663435bdd39acee2e77c3979810b1967/assets/fonts-jetbrains-inter.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 46014ec5663435bdd39acee2e77c3979810b1967
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:55.010Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1085
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:55.087Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:55.087Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/zhijun-dai/dsh-Fonts/46014ec5663435bdd39acee2e77c3979810b1967/assets/fonts-settings.webp

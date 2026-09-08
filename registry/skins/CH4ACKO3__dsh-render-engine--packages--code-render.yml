@@ -1,0 +1,71 @@
+id: ch4acko3.code-render
+name:
+  zh: code-render
+  en: code-render
+author: CH4ACKO3
+description: 面向 DSH Web 插件的转义与主题响应 HTML 代码块渲染服务，基于结构化语法高亮 token，并保留源码换行符。
+repo: https://github.com/CH4ACKO3/dsh-render-engine
+subpath: packages/code-render
+package: "@ch4acko3/dsh-code-render"
+rowId: ch4acko3-dsh-code-render
+category: theme
+tags:
+  - retro
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:CH4ACKO3/dsh-render-engine#cca409bdfbcdb58e20267f970744d9b2918d218a&path:/packages/code-render
+  version: 0.1.2
+  commit: cca409bdfbcdb58e20267f970744d9b2918d218a
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@ch4acko3/dsh-code-render"
+    packageVersion: 0.1.2
+    integrity: sha512-8L+uvH3bVKPMbFU+Y/f7Z8WGen3sw3BuplT9iDlwokZFjP1U0ryXSwkkkWbmQXUe/BY6iRl5Jh6TgYzOJ4dF6w==
+compatibility:
+  dsh: 0.1.0-rc.8
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/CH4ACKO3/dsh-render-engine/cca409bdfbcdb58e20267f970744d9b2918d218a/docs/assets/chatview-rendering-comparison.png
+  - https://raw.githubusercontent.com/CH4ACKO3/dsh-render-engine/cca409bdfbcdb58e20267f970744d9b2918d218a/docs/assets/chatview-code-comparison.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: cca409bdfbcdb58e20267f970744d9b2918d218a
+    packageVersion: 0.1.2
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.8
+    mode: static
+    result: unknown
+    checkedAt: 2026-09-07T21:58:29.610Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1055
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:29.691Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:29.691Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/CH4ACKO3/dsh-render-engine/cca409bdfbcdb58e20267f970744d9b2918d218a/docs/assets/chatview-rendering-comparison.png

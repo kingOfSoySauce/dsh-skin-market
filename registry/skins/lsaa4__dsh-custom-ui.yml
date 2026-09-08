@@ -1,0 +1,64 @@
+id: lsaa4.dsh-custom-ui-lsaa4
+name:
+  zh: dsh-custom-ui-lsaa4
+  en: dsh-custom-ui-lsaa4
+author: lsaa4
+description: 为 DeepSeek Harness (DSH) Web 打造的毛玻璃 UI 主题插件：整体布局保持原样，风格替换为透明毛玻璃；在 设置 → 自定义UI设计 中可实时调节。
+repo: https://github.com/lsaa4/dsh-custom-ui
+package: dsh-glass-ui
+rowId: dsh-glass-ui
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - pastel
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:lsaa4/dsh-custom-ui#786b70a5d1133c9daad1009849e63d32fc4981f0
+  version: 0.1.1
+  commit: 786b70a5d1133c9daad1009849e63d32fc4981f0
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lsaa4/dsh-custom-ui/786b70a5d1133c9daad1009849e63d32fc4981f0/docs/screenshot.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 786b70a5d1133c9daad1009849e63d32fc4981f0
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:19.930Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1039
+starsSnapshot: 5
+releaseUpdatedAt: 2026-09-07T21:58:20.010Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:20.010Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/lsaa4/dsh-custom-ui/786b70a5d1133c9daad1009849e63d32fc4981f0/docs/screenshot.png

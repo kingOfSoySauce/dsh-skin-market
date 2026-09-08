@@ -1,0 +1,64 @@
+id: kogisune.dsh-skin-koi-pond
+name:
+  zh: dsh-skin-koi-pond
+  en: dsh-skin-koi-pond
+author: Kogisune
+description: dsh-skin-koi-pond · 锦鲤池塘
+repo: https://github.com/Kogisune/dsh-skin-koi-pond
+package: dsh-skin-koi-pond
+rowId: ui-skin-koi-pond
+category: theme
+tags:
+  - wallpaper
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Kogisune/dsh-skin-koi-pond#654aa8c7de44e9e4cd20a86f0b7a6cc048d33f71
+  version: 0.1.0
+  commit: 654aa8c7de44e9e4cd20a86f0b7a6cc048d33f71
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Kogisune/dsh-skin-koi-pond/654aa8c7de44e9e4cd20a86f0b7a6cc048d33f71/preview/dark.png
+  - https://raw.githubusercontent.com/Kogisune/dsh-skin-koi-pond/654aa8c7de44e9e4cd20a86f0b7a6cc048d33f71/preview/light.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 654aa8c7de44e9e4cd20a86f0b7a6cc048d33f71
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:00.031Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1094
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:00.131Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:00.131Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/Kogisune/dsh-skin-koi-pond/654aa8c7de44e9e4cd20a86f0b7a6cc048d33f71/preview/dark.png

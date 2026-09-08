@@ -1,0 +1,63 @@
+id: lisongxuan.ds-hentai
+name:
+  zh: ds-hentai
+  en: ds-hentai
+author: lisongxuan
+description: English | 简体中文
+repo: https://github.com/lisongxuan/ds-hentai
+package: ds-hentai
+rowId: ds-hentai
+category: theme
+tags:
+  - light-dark
+modes:
+  - light
+install:
+  target: github:lisongxuan/ds-hentai#ce8442c8c113a3dcebe80449628724799fba2e1c
+  version: 0.6.0
+  commit: ce8442c8c113a3dcebe80449628724799fba2e1c
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: ds-hentai
+    packageVersion: 0.6.0
+    integrity: sha512-oVtowukG2fMzoYzdZaeJnXlwP2+C4hkyIxNmtLyBvRRlr/CsmQTJPZ2WsEDD47uZWqqpPJaSjtoJVC+J7LOtiA==
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lisongxuan/ds-hentai/ce8442c8c113a3dcebe80449628724799fba2e1c/docs/preview.png
+  - https://raw.githubusercontent.com/lisongxuan/ds-hentai/ce8442c8c113a3dcebe80449628724799fba2e1c/docs/preview-session.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: ce8442c8c113a3dcebe80449628724799fba2e1c
+    packageVersion: 0.6.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:00.328Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1095
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:00.406Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:00.406Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/lisongxuan/ds-hentai/ce8442c8c113a3dcebe80449628724799fba2e1c/docs/preview.png

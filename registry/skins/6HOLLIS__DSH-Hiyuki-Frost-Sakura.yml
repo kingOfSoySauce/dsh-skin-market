@@ -1,0 +1,69 @@
+id: 6hollis.dsh-hiyuki-frost-sakura
+name:
+  zh: DSH-Hiyuki-Frost-Sakura
+  en: DSH-Hiyuki-Frost-Sakura
+author: 6HOLLIS
+description: 一款面向 DeepSeek Harness Web（DSH）的《鸣潮》绯雪主题皮肤。它在不改变 DSH 原有布局、不代理会话操作的前提下，加入常态与战斗态两套本地背景、霜樱玻璃色调、平滑形态切换和预设优先的设置入口。
+repo: https://github.com/6HOLLIS/DSH-Hiyuki-Frost-Sakura
+package: dsh-hiyuki-frost-sakura
+rowId: hiyuki-frost-sakura
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:6HOLLIS/DSH-Hiyuki-Frost-Sakura#9f94094e426b5fa62dea20118ef1792125445505
+  version: 0.1.0
+  commit: 9f94094e426b5fa62dea20118ef1792125445505
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/6HOLLIS/DSH-Hiyuki-Frost-Sakura/9f94094e426b5fa62dea20118ef1792125445505/artifacts/qa/dsh-rc2-calm.png
+  - https://raw.githubusercontent.com/6HOLLIS/DSH-Hiyuki-Frost-Sakura/9f94094e426b5fa62dea20118ef1792125445505/artifacts/qa/dsh-rc2-settings.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 9f94094e426b5fa62dea20118ef1792125445505
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: unknown
+    checkedAt: 2026-09-07T21:58:41.290Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1067
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:41.388Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:41.388Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/6HOLLIS/DSH-Hiyuki-Frost-Sakura/9f94094e426b5fa62dea20118ef1792125445505/artifacts/qa/dsh-rc2-calm.png

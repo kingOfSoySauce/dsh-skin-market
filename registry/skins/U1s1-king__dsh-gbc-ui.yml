@@ -1,0 +1,63 @@
+id: u1s1-king.dsh-gbc-ui
+name:
+  zh: dsh-gbc-ui
+  en: dsh-gbc-ui
+author: U1s1-king
+description: DeepSeek Harness Web GUI 的自研皮肤插件：深海宫殿背景、旋转角色舞台 （14 名成员立绘轮播 + 群像底幕）与黑粉蕾丝装饰界面。
+repo: https://github.com/U1s1-king/dsh-gbc-ui
+package: dsh-gbc-ui
+rowId: ui-skin-gbc-atelier
+category: theme
+tags:
+  - wallpaper
+  - motion
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:U1s1-king/dsh-gbc-ui#4d3caf8521553d744169f14d36ee346092dcab3e
+  version: 0.0.1
+  commit: 4d3caf8521553d744169f14d36ee346092dcab3e
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/U1s1-king/dsh-gbc-ui/4d3caf8521553d744169f14d36ee346092dcab3e/preview/light.webp
+  - https://raw.githubusercontent.com/U1s1-king/dsh-gbc-ui/4d3caf8521553d744169f14d36ee346092dcab3e/preview/dark.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 4d3caf8521553d744169f14d36ee346092dcab3e
+    packageVersion: 0.0.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:27.265Z
+    findings: []
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1049
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:27.429Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:27.429Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/U1s1-king/dsh-gbc-ui/4d3caf8521553d744169f14d36ee346092dcab3e/preview/light.webp

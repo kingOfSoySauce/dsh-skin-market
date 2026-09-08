@@ -1,0 +1,62 @@
+id: krystal-cao.deepseek-harness-swift
+name:
+  zh: deepseek-harness-swift
+  en: deepseek-harness-swift
+author: krystal-cao
+description: <h1 align="center" <img src="app.icon/Assets/icon-1024.png" width="72" alt="DSH 标志" / <br / DSH Swift Native Shell </h1
+repo: https://github.com/krystal-cao/deepseek-harness-swift
+subpath: assets/dsh-desktop-host
+package: dsh-desktop-host
+rowId: desktop-host
+category: theme
+tags:
+  - motion
+modes:
+  - light
+install:
+  target: github:krystal-cao/deepseek-harness-swift#047cc46ae6df75afdd0a0406b7491c4d25dc9279&path:/assets/dsh-desktop-host
+  version: 0.1.0
+  commit: 047cc46ae6df75afdd0a0406b7491c4d25dc9279
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/krystal-cao/deepseek-harness-swift/047cc46ae6df75afdd0a0406b7491c4d25dc9279/assets/%E4%B8%BB%E7%95%8C%E9%9D%A2.png
+  - https://raw.githubusercontent.com/krystal-cao/deepseek-harness-swift/047cc46ae6df75afdd0a0406b7491c4d25dc9279/assets/%E9%80%9A%E7%94%A8%E8%AE%BE%E7%BD%AE.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 047cc46ae6df75afdd0a0406b7491c4d25dc9279
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:47.209Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1073
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:47.284Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:47.284Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/krystal-cao/deepseek-harness-swift/047cc46ae6df75afdd0a0406b7491c4d25dc9279/assets/%E4%B8%BB%E7%95%8C%E9%9D%A2.png

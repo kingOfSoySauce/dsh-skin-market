@@ -1,0 +1,68 @@
+id: trees163.dsh-customizations
+name:
+  zh: dsh-customizations
+  en: dsh-customizations
+author: trees163
+description: Beauty layer for the DSH Web UI — 美化层：
+repo: https://github.com/trees163/dsh-customizations
+subpath: packages/dsh-client-ui-beauty
+package: dsh-client-ui-beauty
+rowId: ui-beauty
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:trees163/dsh-customizations#daf212a6b2d666bb06ec93aedab7d1bf2a822983&path:/packages/dsh-client-ui-beauty
+  version: 0.1.1
+  commit: daf212a6b2d666bb06ec93aedab7d1bf2a822983
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-client-ui-beauty
+    packageVersion: 0.1.1
+    integrity: sha512-wum+35fApQfNIM0fMXXrc8tFKl/tchi2bi0aSWe5gOF8WXEnKQ1Nx6ZRB3c/tbH8qQkVCP/r+0ncYrwpl1nEGQ==
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/trees163/dsh-customizations/daf212a6b2d666bb06ec93aedab7d1bf2a822983/images/settings-dark.png
+  - https://raw.githubusercontent.com/trees163/dsh-customizations/daf212a6b2d666bb06ec93aedab7d1bf2a822983/images/workspace-blue.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: daf212a6b2d666bb06ec93aedab7d1bf2a822983
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:03.629Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1099
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:03.706Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:03.706Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/trees163/dsh-customizations/daf212a6b2d666bb06ec93aedab7d1bf2a822983/images/settings-dark.png

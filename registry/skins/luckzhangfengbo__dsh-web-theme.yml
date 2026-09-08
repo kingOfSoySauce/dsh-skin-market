@@ -1,0 +1,68 @@
+id: luckzhangfengbo.dsh-web-theme
+name:
+  zh: dsh-web-theme
+  en: dsh-web-theme
+author: luckzhangfengbo
+description: 墨韵 · MoYun 🖌️
+repo: https://github.com/luckzhangfengbo/dsh-web-theme
+package: dsh-web-theme
+rowId: dsh-web-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - anime
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - dark
+install:
+  target: github:luckzhangfengbo/dsh-web-theme#a49b7d68f31cc442ec83fdcfc4803eaa4304d0cd
+  version: 0.1.1
+  commit: a49b7d68f31cc442ec83fdcfc4803eaa4304d0cd
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-web-theme
+    packageVersion: 0.1.1
+    integrity: sha512-wVMEt4XV4h3fF9xM8gd+7ziBZB5nh8oFppTeXvUT4T0WdnLho8rgLvawZEMgpCjeczwQjb5s/VJDJY0Q5KmcaQ==
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/luckzhangfengbo/dsh-web-theme/a49b7d68f31cc442ec83fdcfc4803eaa4304d0cd/docs/screenshots/pine-hero.png
+  - https://raw.githubusercontent.com/luckzhangfengbo/dsh-web-theme/a49b7d68f31cc442ec83fdcfc4803eaa4304d0cd/docs/screenshots/jiangnan-hero.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: a49b7d68f31cc442ec83fdcfc4803eaa4304d0cd
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:34.713Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1062
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:34.833Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:34.833Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/luckzhangfengbo/dsh-web-theme/a49b7d68f31cc442ec83fdcfc4803eaa4304d0cd/docs/screenshots/pine-hero.png

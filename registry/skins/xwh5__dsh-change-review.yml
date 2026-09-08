@@ -1,0 +1,63 @@
+id: xwh5.dsh-change-review
+name:
+  zh: dsh-change-review
+  en: dsh-change-review
+author: xwh5
+description: DeepSeek Harness（DSH）会话修改审查插件：自动追踪会话内的文件写入/编辑操作，在「审查」标签页展示 side-by-side diff 对比，主题自动跟随 DSH。纯只读审查 + 一键撤回，不依赖任何外部编辑器。
+repo: https://github.com/xwh5/dsh-change-review
+package: dsh-diff-review
+rowId: diff-review
+category: theme
+tags:
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:xwh5/dsh-change-review#13935b310bf01f6003a84dade5f7e50f8dc69b0e
+  version: 1.0.3
+  commit: 13935b310bf01f6003a84dade5f7e50f8dc69b0e
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xwh5/dsh-change-review/13935b310bf01f6003a84dade5f7e50f8dc69b0e/docs/screenshots/screenshot-1.png
+  - https://raw.githubusercontent.com/xwh5/dsh-change-review/13935b310bf01f6003a84dade5f7e50f8dc69b0e/docs/screenshots/screenshot-2.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 13935b310bf01f6003a84dade5f7e50f8dc69b0e
+    packageVersion: 1.0.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:05.667Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1104
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:05.758Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:05.758Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/xwh5/dsh-change-review/13935b310bf01f6003a84dade5f7e50f8dc69b0e/docs/screenshots/screenshot-1.png

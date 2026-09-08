@@ -1,0 +1,64 @@
+id: weichi-ai.dshd
+name:
+  zh: dshd
+  en: dshd
+author: weichi-ai
+description: DSHD（DeepSeek Harness Desktop）皮肤包插件：7 套内置皮肤 + 1 个"自定义"预留槽位，设置页内点选即预览、确认即一键换肤，另带真实 token 渲染的放大预览弹层（明暗切换）。
+repo: https://github.com/weichi-ai/dshd
+subpath: dsh-skin-pack
+package: dsh-skin-pack
+rowId: skin-pack
+category: theme
+tags:
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:weichi-ai/dshd#d58ba7d34876ae4ab7a2267b3f048561054bac49&path:/dsh-skin-pack
+  version: 0.1.0
+  commit: d58ba7d34876ae4ab7a2267b3f048561054bac49
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/weichi-ai/dshd/d58ba7d34876ae4ab7a2267b3f048561054bac49/docs/assets/img/dshd-pics/opt/1.webp
+  - https://raw.githubusercontent.com/weichi-ai/dshd/d58ba7d34876ae4ab7a2267b3f048561054bac49/docs/assets/img/dshd-pics/opt/2.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d58ba7d34876ae4ab7a2267b3f048561054bac49
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:52.902Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1082
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:53.001Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:53.001Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/weichi-ai/dshd/d58ba7d34876ae4ab7a2267b3f048561054bac49/docs/assets/img/dshd-pics/opt/1.webp

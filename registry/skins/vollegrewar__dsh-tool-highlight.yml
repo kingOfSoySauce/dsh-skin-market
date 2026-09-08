@@ -1,0 +1,60 @@
+id: vollegrewar.dsh-tool-highlight
+name:
+  zh: dsh-tool-highlight
+  en: dsh-tool-highlight
+author: vollegrewar
+description: DeepSeek Harness（DSH）web 插件：给 bash / pwsh 命令与 read 的代码输出做分层语法染色（VS Code Dark+ 风格：关键字/字符串/数字/函数名/注释各一色）。认得出来才染，表格/日志保持原样。
+repo: https://github.com/vollegrewar/dsh-tool-highlight
+package: dsh-tool-highlight
+rowId: dsh-tool-highlight
+category: theme
+tags:
+  - token-theme
+  - light-dark
+modes:
+  - dark
+install:
+  target: github:vollegrewar/dsh-tool-highlight#f5f0e89101de1b24972f94ab0baf8cc0891f1baf
+  version: 0.2.6
+  commit: f5f0e89101de1b24972f94ab0baf8cc0891f1baf
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/vollegrewar/dsh-tool-highlight/f5f0e89101de1b24972f94ab0baf8cc0891f1baf/docs/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: f5f0e89101de1b24972f94ab0baf8cc0891f1baf
+    packageVersion: 0.2.6
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:03.981Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1100
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:04.048Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:04.048Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/vollegrewar/dsh-tool-highlight/f5f0e89101de1b24972f94ab0baf8cc0891f1baf/docs/preview.png

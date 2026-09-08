@@ -1,0 +1,66 @@
+id: cooltea001.dsh-cool-theme
+name:
+  zh: dsh-cool-theme
+  en: dsh-cool-theme
+author: CoolTea001
+description: English · 中文
+repo: https://github.com/CoolTea001/dsh-cool-theme
+package: dsh-cool-theme
+rowId: dsh-cool-theme
+category: theme
+tags:
+  - pastel
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:CoolTea001/dsh-cool-theme#74a04f390a49077efb5e312ed927c08b5f83c359
+  version: 0.4.0
+  commit: 74a04f390a49077efb5e312ed927c08b5f83c359
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-cool-theme
+    packageVersion: 0.4.0
+    integrity: sha512-LP7QneJrdTw+UjnDNwC1/lzPd8vV64R7nN87f72BNiy3dfdwlo3pRbep9oY9Fuki+Eh6RINVxSRZDJys8SArCQ==
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/CoolTea001/dsh-cool-theme/74a04f390a49077efb5e312ed927c08b5f83c359/assets/previews/1.png
+  - https://raw.githubusercontent.com/CoolTea001/dsh-cool-theme/74a04f390a49077efb5e312ed927c08b5f83c359/assets/previews/2.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 74a04f390a49077efb5e312ed927c08b5f83c359
+    packageVersion: 0.4.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:29.975Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1056
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:30.047Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:30.047Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/CoolTea001/dsh-cool-theme/74a04f390a49077efb5e312ed927c08b5f83c359/assets/previews/1.png

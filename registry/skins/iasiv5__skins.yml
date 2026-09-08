@@ -1,0 +1,64 @@
+id: iasiv5.skins
+name:
+  zh: skins
+  en: skins
+author: iasiv5
+description: dsh-skins — DSH Web 多皮肤插件
+repo: https://github.com/iasiv5/skins
+package: dsh-skins
+rowId: skins
+category: theme
+tags:
+  - wallpaper
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:iasiv5/skins#85a5c3c544175ff8c1e3a820de76902c90407e8c
+  version: 1.0.1
+  commit: 85a5c3c544175ff8c1e3a820de76902c90407e8c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: ^0.1.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/iasiv5/skins/85a5c3c544175ff8c1e3a820de76902c90407e8c/docs/assets/preview-meirenzhi-1.webp
+  - https://raw.githubusercontent.com/iasiv5/skins/85a5c3c544175ff8c1e3a820de76902c90407e8c/docs/assets/preview-meirenzhi-2.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 85a5c3c544175ff8c1e3a820de76902c90407e8c
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    dshVersion: ^0.1.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:46.491Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1072
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:46.646Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:46.646Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/iasiv5/skins/85a5c3c544175ff8c1e3a820de76902c90407e8c/docs/assets/preview-meirenzhi-1.webp

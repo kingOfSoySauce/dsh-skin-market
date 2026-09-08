@@ -1,0 +1,69 @@
+id: doozqoo.dsh-pixel-office
+name:
+  zh: dsh-pixel-office
+  en: dsh-pixel-office
+author: Doozqoo
+description: 一款给 DeepSeek Harness Web GUI 的 digital + pixel-art 工作区主题插件。
+repo: https://github.com/Doozqoo/dsh-pixel-office
+package: dsh-client-pixel-office
+rowId: pixel-office
+category: theme
+tags:
+  - wallpaper
+  - retro
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - dark
+install:
+  target: github:Doozqoo/dsh-pixel-office#a9e801c6dc0484cc57bb0dd20baf1c85d8d5566e
+  version: 0.1.0
+  commit: a9e801c6dc0484cc57bb0dd20baf1c85d8d5566e
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+  allowBuild: dsh-client-pixel-office@https://codeload.github.com/Doozqoo/dsh-pixel-office/tar.gz/a9e801c6dc0484cc57bb0dd20baf1c85d8d5566e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Doozqoo/dsh-pixel-office/a9e801c6dc0484cc57bb0dd20baf1c85d8d5566e/assets/top-view.jpeg
+  - https://raw.githubusercontent.com/Doozqoo/dsh-pixel-office/a9e801c6dc0484cc57bb0dd20baf1c85d8d5566e/assets/desk-view.jpeg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: a9e801c6dc0484cc57bb0dd20baf1c85d8d5566e
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-09-07T21:58:57.373Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1091
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:58:57.453Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:57.453Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/Doozqoo/dsh-pixel-office/a9e801c6dc0484cc57bb0dd20baf1c85d8d5566e/assets/top-view.jpeg

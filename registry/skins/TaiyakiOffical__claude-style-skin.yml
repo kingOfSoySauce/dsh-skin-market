@@ -1,0 +1,66 @@
+id: taiyakioffical.claude-style-skin
+name:
+  zh: claude-style-skin
+  en: claude-style-skin
+author: TaiyakiOffical
+description: claude-style-skin · Claude Style 暖象牙
+repo: https://github.com/TaiyakiOffical/claude-style-skin
+package: claude-style-skin
+rowId: ui-skin-claude-style
+category: theme
+tags:
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:TaiyakiOffical/claude-style-skin#09cfe36237b7fa0c4e57141b364b8bf50f084d37
+  version: 0.1.1
+  commit: 09cfe36237b7fa0c4e57141b364b8bf50f084d37
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: claude-style-skin
+    packageVersion: 0.1.1
+    integrity: sha512-NFpLT73ku2kerPTq2KRa43uEp6GnlIyC7evYXBGMgpIN1E0MvQTzyxtqDyyRwF4f9DVAjbCAMgcg0RFrAhRlzw==
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/TaiyakiOffical/claude-style-skin/09cfe36237b7fa0c4e57141b364b8bf50f084d37/docs/light.png
+  - https://raw.githubusercontent.com/TaiyakiOffical/claude-style-skin/09cfe36237b7fa0c4e57141b364b8bf50f084d37/docs/dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 09cfe36237b7fa0c4e57141b364b8bf50f084d37
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:37.988Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1066
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:38.059Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:38.059Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/TaiyakiOffical/claude-style-skin/09cfe36237b7fa0c4e57141b364b8bf50f084d37/docs/light.png

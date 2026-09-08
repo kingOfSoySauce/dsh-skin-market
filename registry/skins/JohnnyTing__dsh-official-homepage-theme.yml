@@ -1,0 +1,67 @@
+id: johnnyting.dsh-official-homepage-theme
+name:
+  zh: dsh-official-homepage-theme
+  en: dsh-official-homepage-theme
+author: JohnnyTing
+description: English | 中文
+repo: https://github.com/JohnnyTing/dsh-official-homepage-theme
+package: dsh-official-homepage-theme
+rowId: dsh-official-homepage-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:JohnnyTing/dsh-official-homepage-theme#3dc1ee72510db857257ff292d7f3aca1d3f46bb8
+  version: 1.0.6
+  commit: 3dc1ee72510db857257ff292d7f3aca1d3f46bb8
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-official-homepage-theme
+    packageVersion: 1.0.6
+    integrity: sha512-1cR3E5fn6HSTitI7gVEfBOrx5cejxvWuRqAfqpKxMRQWVXajUlcIhmcOCjEljIt2ZMvDTdCBzpVj22Kx2N0YTw==
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif
+  - https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 3dc1ee72510db857257ff292d7f3aca1d3f46bb8
+    packageVersion: 1.0.6
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:18.300Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1035
+starsSnapshot: 7
+releaseUpdatedAt: 2026-09-07T21:58:18.366Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:18.366Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif

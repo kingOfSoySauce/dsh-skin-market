@@ -1,0 +1,63 @@
+id: exoticknight.dsh-theme-eink-retro
+name:
+  zh: dsh-theme-eink-retro
+  en: dsh-theme-eink-retro
+author: exoticknight
+description: DeepSeek Harness E-Ink Retro 主题
+repo: https://github.com/exoticknight/dsh-theme-eink-retro
+package: dsh-theme-eink-retro
+rowId: dsh-theme-eink-retro
+category: theme
+tags:
+  - retro
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:exoticknight/dsh-theme-eink-retro#c65f58b7d83f1ebb8840a25a748ab0fc076f0597
+  version: 0.2.1
+  commit: c65f58b7d83f1ebb8840a25a748ab0fc076f0597
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/exoticknight/dsh-theme-eink-retro/c65f58b7d83f1ebb8840a25a748ab0fc076f0597/assets/screenshots/balanced-fresh-profile.png
+  - https://raw.githubusercontent.com/exoticknight/dsh-theme-eink-retro/c65f58b7d83f1ebb8840a25a748ab0fc076f0597/assets/screenshots/theme-settings-fresh-profile.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: c65f58b7d83f1ebb8840a25a748ab0fc076f0597
+    packageVersion: 0.2.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:44.225Z
+    findings: []
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 1070
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:44.326Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:44.326Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/exoticknight/dsh-theme-eink-retro/c65f58b7d83f1ebb8840a25a748ab0fc076f0597/assets/screenshots/balanced-fresh-profile.png

@@ -1,0 +1,66 @@
+id: favktoxic.dsh-theme-liquid-glass
+name:
+  zh: dsh-theme-liquid-glass
+  en: dsh-theme-liquid-glass
+author: FAVKTOXIC
+description: DeepSeek Harness Web UI 的纯正液态玻璃主题。
+repo: https://github.com/FAVKTOXIC/dsh-theme-liquid-glass
+package: dsh-theme-liquid-glass
+rowId: liquid-glass
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:FAVKTOXIC/dsh-theme-liquid-glass#d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1
+  version: 0.4.2
+  commit: d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepack
+compatibility:
+  dsh: ^0.1.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/FAVKTOXIC/dsh-theme-liquid-glass/d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1/assets/screenshots/screenshot-input.png
+  - https://raw.githubusercontent.com/FAVKTOXIC/dsh-theme-liquid-glass/d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1/assets/screenshots/screenshot-chat.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1
+    packageVersion: 0.4.2
+    scannerVersion: static-v2
+    dshVersion: ^0.1.2-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:24.604Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1044
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:24.684Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:24.684Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/FAVKTOXIC/dsh-theme-liquid-glass/d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1/assets/screenshots/screenshot-input.png

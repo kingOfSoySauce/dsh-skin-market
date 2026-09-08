@@ -1,0 +1,64 @@
+id: mantonlove.dsh-prism-plugin
+name:
+  zh: dsh-prism-plugin
+  en: dsh-prism-plugin
+author: mantonlove
+description: Prism · 棱镜 — DSH 毛玻璃主题插件
+repo: https://github.com/mantonlove/dsh-prism-plugin
+package: "@deepseek-ai/dsh-client-ui-prism"
+rowId: ui-prism
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:mantonlove/dsh-prism-plugin#64c4895dc036c98ced38d47e34acb15f6545c4ac
+  version: 1.0.2
+  commit: 64c4895dc036c98ced38d47e34acb15f6545c4ac
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: ^0.1.2-alpha.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/mantonlove/dsh-prism-plugin/64c4895dc036c98ced38d47e34acb15f6545c4ac/assets/shot-1.jpg
+  - https://raw.githubusercontent.com/mantonlove/dsh-prism-plugin/64c4895dc036c98ced38d47e34acb15f6545c4ac/assets/shot-2.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 64c4895dc036c98ced38d47e34acb15f6545c4ac
+    packageVersion: 1.0.2
+    scannerVersion: static-v2
+    dshVersion: ^0.1.2-alpha.1
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:25.799Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1048
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:25.854Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:25.854Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/mantonlove/dsh-prism-plugin/64c4895dc036c98ced38d47e34acb15f6545c4ac/assets/shot-1.jpg

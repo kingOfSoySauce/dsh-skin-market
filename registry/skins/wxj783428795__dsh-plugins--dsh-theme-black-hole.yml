@@ -1,0 +1,66 @@
+id: wxj783428795.dsh-theme-black-hole
+name:
+  zh: dsh-theme-black-hole
+  en: dsh-theme-black-hole
+author: wxj783428795
+description: 为 DeepSeek Harness Web 注册可切换的黑洞主题，并把它接入原生「外观」选择器：
+repo: https://github.com/wxj783428795/dsh-plugins
+subpath: dsh-theme-black-hole
+package: "@wxj783428795/dsh-theme-black-hole"
+rowId: wxj-theme-black-hole
+category: theme
+tags:
+  - wallpaper
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:wxj783428795/dsh-plugins#bee231c7443ee8bc2305e941a3a609dafe8f6035&path:/dsh-theme-black-hole
+  version: 0.1.0
+  commit: bee231c7443ee8bc2305e941a3a609dafe8f6035
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/wxj783428795/dsh-plugins/bee231c7443ee8bc2305e941a3a609dafe8f6035/dsh-theme-black-hole/assets/black-hole-hero.png
+  - https://raw.githubusercontent.com/wxj783428795/dsh-plugins/bee231c7443ee8bc2305e941a3a609dafe8f6035/docs/theme-settings-audit/02-unified-appearance.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: bee231c7443ee8bc2305e941a3a609dafe8f6035
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.2-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:05.057Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1101
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:05.107Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:05.107Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/wxj783428795/dsh-plugins/bee231c7443ee8bc2305e941a3a609dafe8f6035/dsh-theme-black-hole/assets/black-hole-hero.png

@@ -1,0 +1,64 @@
+id: unpain.dsh-skin-mari
+name:
+  zh: dsh-skin-mari
+  en: dsh-skin-mari
+author: unpain
+description: English | 简体中文
+repo: https://github.com/unpain/dsh-skin-mari
+package: dsh-skin-mari
+rowId: ui-skin-mari-interface
+category: theme
+tags:
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:unpain/dsh-skin-mari#c414995fa639d52dbb4e4ed2c582d29e0bab5c45
+  version: 0.1.1
+  commit: c414995fa639d52dbb4e4ed2c582d29e0bab5c45
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/unpain/dsh-skin-mari/c414995fa639d52dbb4e4ed2c582d29e0bab5c45/preview/dark.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: c414995fa639d52dbb4e4ed2c582d29e0bab5c45
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:26.884Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1050
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:26.962Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:26.962Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/unpain/dsh-skin-mari/c414995fa639d52dbb4e4ed2c582d29e0bab5c45/preview/dark.webp

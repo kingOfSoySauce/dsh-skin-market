@@ -1,0 +1,66 @@
+id: swordordead.dsh-veneer
+name:
+  zh: dsh-Veneer
+  en: dsh-Veneer
+author: swordordead
+description: ✨ Veneer：给 DeepSeek Harness 换一套你喜欢的界面
+repo: https://github.com/swordordead/dsh-Veneer
+package: dsh-veneer
+rowId: dsh-veneer
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:swordordead/dsh-Veneer#ad6f6d68b513399103e885863c21546860cd0152
+  version: 0.8.0
+  commit: ad6f6d68b513399103e885863c21546860cd0152
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/swordordead/dsh-Veneer/ad6f6d68b513399103e885863c21546860cd0152/docs/images/veneer-overview.png
+  - https://raw.githubusercontent.com/swordordead/dsh-Veneer/ad6f6d68b513399103e885863c21546860cd0152/docs/images/veneer-editor.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: ad6f6d68b513399103e885863c21546860cd0152
+    packageVersion: 0.8.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:37.745Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1065
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:37.821Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:37.821Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/swordordead/dsh-Veneer/ad6f6d68b513399103e885863c21546860cd0152/docs/images/veneer-overview.png

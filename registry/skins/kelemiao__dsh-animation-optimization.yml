@@ -1,0 +1,66 @@
+id: kelemiao.dsh-animation-optimization
+name:
+  zh: dsh-animation-optimization
+  en: dsh-animation-optimization
+author: kelemiao
+description: 给 DeepSeek Harness 用的客户端插件。它把 Claude Code 风格的外观带进网页界面，同时把思考块和工具输出的展示方式改造成更像实时流的样子。
+repo: https://github.com/kelemiao/dsh-animation-optimization
+package: dsh-animation-optimization
+rowId: dsh-animation-optimization
+category: theme
+tags:
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - dark
+install:
+  target: github:kelemiao/dsh-animation-optimization#7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf
+  version: 0.2.0
+  commit: 7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-animation-optimization
+    packageVersion: 0.2.0
+    integrity: sha512-H07fWhLXmLuygSWBr5v5rYCOKMuLpoCH6LA3P9+Reh5VGsv20rizJCkgecNjyGsjFcN2647RsC9Nza2mxcNgAg==
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/kelemiao/dsh-animation-optimization/7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf/assets/screenshots/1.png
+  - https://raw.githubusercontent.com/kelemiao/dsh-animation-optimization/7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf/assets/screenshots/2.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:16.924Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1036
+starsSnapshot: 7
+releaseUpdatedAt: 2026-09-07T21:58:16.993Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:16.993Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/kelemiao/dsh-animation-optimization/7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf/assets/screenshots/1.png

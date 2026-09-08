@@ -1,0 +1,64 @@
+id: eh-tools.dsh-plugin-ehtools
+name:
+  zh: dsh-plugin-ehtools
+  en: dsh-plugin-ehtools
+author: eh-tools
+description: DeepSeek Harness 主题 —— 复刻 <https://www.deepseek.com/harness/en/ 的粒子鲸鱼背景，跑在自有插件上。
+repo: https://github.com/eh-tools/dsh-plugin
+subpath: plugins/deepseek-harness
+package: dsh-deepseek-harness
+rowId: deepseek-harness
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:eh-tools/dsh-plugin#91057764c150cc3bd4c783099be4e663ac98d74d&path:/plugins/deepseek-harness
+  version: 0.2.0
+  commit: 91057764c150cc3bd4c783099be4e663ac98d74d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/eh-tools/dsh-plugin/91057764c150cc3bd4c783099be4e663ac98d74d/png/%E9%A1%B5%E9%9D%A2%E5%85%A8%E8%A7%88(%E6%96%87%E4%BB%B6%E6%A0%91+git%E6%A0%91+%E4%BD%99%E9%A2%9D+%E7%B2%92%E5%AD%90%E9%B2%B8%E9%B1%BC+%E6%95%B0%E6%8D%AE%E5%BA%93tag+%E6%89%B9%E9%87%8F%E5%BD%92%E6%A1%A3%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE).png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 91057764c150cc3bd4c783099be4e663ac98d74d
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:31.352Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1059
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:31.447Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:31.447Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/eh-tools/dsh-plugin/91057764c150cc3bd4c783099be4e663ac98d74d/png/%E9%A1%B5%E9%9D%A2%E5%85%A8%E8%A7%88(%E6%96%87%E4%BB%B6%E6%A0%91+git%E6%A0%91+%E4%BD%99%E9%A2%9D+%E7%B2%92%E5%AD%90%E9%B2%B8%E9%B1%BC+%E6%95%B0%E6%8D%AE%E5%BA%93tag+%E6%89%B9%E9%87%8F%E5%BD%92%E6%A1%A3%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE).png

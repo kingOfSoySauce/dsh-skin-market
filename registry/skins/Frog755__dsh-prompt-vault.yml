@@ -1,0 +1,60 @@
+id: frog755.dsh-prompt-vault
+name:
+  zh: dsh-prompt-vault
+  en: dsh-prompt-vault
+author: Frog755
+description: English README | 中文说明
+repo: https://github.com/Frog755/dsh-prompt-vault
+package: "@frog755/dsh-prompt-vault"
+rowId: prompt-vault
+category: theme
+tags:
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:Frog755/dsh-prompt-vault#714e9939617270a0f7b3a33b5c4aadcd1a6e8ac3
+  version: 1.0.2
+  commit: 714e9939617270a0f7b3a33b5c4aadcd1a6e8ac3
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Frog755/dsh-prompt-vault/714e9939617270a0f7b3a33b5c4aadcd1a6e8ac3/assets/screenshot-panel.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 714e9939617270a0f7b3a33b5c4aadcd1a6e8ac3
+    packageVersion: 1.0.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:25.175Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1045
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:25.273Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:25.273Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/Frog755/dsh-prompt-vault/714e9939617270a0f7b3a33b5c4aadcd1a6e8ac3/assets/screenshot-panel.png

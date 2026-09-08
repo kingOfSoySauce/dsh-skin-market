@@ -1,0 +1,64 @@
+id: wolfgenerals.ncm-player
+name:
+  zh: ncm-player
+  en: ncm-player
+author: WolfGenerals
+description: ncm-player — 网易云音乐浮窗
+repo: https://github.com/WolfGenerals/ncm-player
+package: "@wolfgenerals/ncm-player"
+rowId: ncm-player
+category: theme
+tags:
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:WolfGenerals/ncm-player#f40f982715128d2f4d7928012b6cebf86af4d40e
+  version: 1.2.0
+  commit: f40f982715128d2f4d7928012b6cebf86af4d40e
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@wolfgenerals/ncm-player"
+    packageVersion: 1.2.0
+    integrity: sha512-x7LPGkYEplmycg56ecO7q1jPnasCZOJ5joqUddE+xX6yUQuVL+3vUPQ38WlZ8rjbwpzz4NWaBMHvX0wdheVunw==
+compatibility:
+  dsh: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/WolfGenerals/ncm-player/f40f982715128d2f4d7928012b6cebf86af4d40e/doc/screenshot-1.png
+  - https://raw.githubusercontent.com/WolfGenerals/ncm-player/f40f982715128d2f4d7928012b6cebf86af4d40e/doc/screenshot-2.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: f40f982715128d2f4d7928012b6cebf86af4d40e
+    packageVersion: 1.2.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:26.782Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1051
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:26.861Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:26.861Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/WolfGenerals/ncm-player/f40f982715128d2f4d7928012b6cebf86af4d40e/doc/screenshot-1.png

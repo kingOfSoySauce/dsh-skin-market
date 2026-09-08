@@ -1,0 +1,65 @@
+id: soarguo.dsh-skin-lab
+name:
+  zh: dsh-skin-lab
+  en: dsh-skin-lab
+author: soarGuo
+description: Skin Lab（皮肤实验室） — 面向 DSH 皮肤作者的浏览器内开发工具，作为官方形态的动态插件（dsh.bundle）安装，不改 DSH 源码。
+repo: https://github.com/soarGuo/dsh-skin-lab
+package: dsh-skin-lab
+rowId: ui-skin-lab
+category: theme
+tags:
+  - wallpaper
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:soarGuo/dsh-skin-lab#c63d42d4f4002036b23f6ef31a83f121f76f0293
+  version: 1.0.3
+  commit: c63d42d4f4002036b23f6ef31a83f121f76f0293
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepare
+  allowBuild: dsh-skin-lab@https://codeload.github.com/soarGuo/dsh-skin-lab/tar.gz/c63d42d4f4002036b23f6ef31a83f121f76f0293
+compatibility:
+  dsh: ^0.1.2-alpha.2
+  platform:
+    - web
+screenshots:
+  - https://cdn.jsdelivr.net/npm/dsh-skin-lab@1.0.2/docs/screenshots/skin1.png
+  - https://cdn.jsdelivr.net/npm/dsh-skin-lab@1.0.2/docs/screenshots/skin2.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: c63d42d4f4002036b23f6ef31a83f121f76f0293
+    packageVersion: 1.0.3
+    scannerVersion: static-v2
+    dshVersion: ^0.1.2-alpha.2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:02.511Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1098
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:02.581Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:02.581Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://cdn.jsdelivr.net/npm/dsh-skin-lab@1.0.2/docs/screenshots/skin1.png

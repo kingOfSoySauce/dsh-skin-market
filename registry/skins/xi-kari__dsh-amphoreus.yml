@@ -1,0 +1,69 @@
+id: xi-kari.dsh-amphoreus
+name:
+  zh: dsh-amphoreus
+  en: dsh-amphoreus
+author: xi-kari
+description: δ-me13 × DSH：为 δ-me13 skill 的 13 张黄金裔技能卡提供专属席位、逐席配色与壁纸、首轮技能注入和对话表情，并用总览画布派发任务、征询各席、接续移交。它是基于 DeepSeek Harness 构建的非官方插件；npm 包名保持 dsh-amphoreus。
+repo: https://github.com/xi-kari/dsh-amphoreus
+package: dsh-amphoreus
+rowId: amphoreus
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:xi-kari/dsh-amphoreus#5d454ddaea0a3a8b36ac51abf23b2f6dca42516b
+  version: 0.3.0
+  commit: 5d454ddaea0a3a8b36ac51abf23b2f6dca42516b
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepare
+  allowBuild: dsh-amphoreus@https://codeload.github.com/xi-kari/dsh-amphoreus/tar.gz/5d454ddaea0a3a8b36ac51abf23b2f6dca42516b
+compatibility:
+  dsh: 0.1.2-alpha.4
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xi-kari/dsh-amphoreus/5d454ddaea0a3a8b36ac51abf23b2f6dca42516b/docs/screenshots/portal.png
+  - https://raw.githubusercontent.com/xi-kari/dsh-amphoreus/5d454ddaea0a3a8b36ac51abf23b2f6dca42516b/docs/screenshots/seat-anaxa.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 5d454ddaea0a3a8b36ac51abf23b2f6dca42516b
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.2-alpha.4
+    mode: static
+    result: unknown
+    checkedAt: 2026-09-07T21:58:53.288Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1083
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:53.362Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:53.362Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/xi-kari/dsh-amphoreus/5d454ddaea0a3a8b36ac51abf23b2f6dca42516b/docs/screenshots/portal.png

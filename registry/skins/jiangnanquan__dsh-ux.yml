@@ -1,0 +1,62 @@
+id: jiangnanquan.dsh-ux
+name:
+  zh: dsh-ux
+  en: dsh-ux
+author: jiangnanquan
+description: 中文 | English
+repo: https://github.com/jiangnanquan/dsh-ux
+package: dsh-enhance
+rowId: dsh-enhance
+category: theme
+tags:
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:jiangnanquan/dsh-ux#9a2a16c57e05b051fc05ceea26cbcef90af60546
+  version: 1.0.0
+  commit: 9a2a16c57e05b051fc05ceea26cbcef90af60546
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/jiangnanquan/dsh-ux/9a2a16c57e05b051fc05ceea26cbcef90af60546/screenshot.png
+  - https://raw.githubusercontent.com/jiangnanquan/dsh-ux/9a2a16c57e05b051fc05ceea26cbcef90af60546/docs/images/tool-chain-multiline-capsules.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 9a2a16c57e05b051fc05ceea26cbcef90af60546
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:16.809Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1034
+starsSnapshot: 8
+releaseUpdatedAt: 2026-09-07T21:58:16.872Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:16.872Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/jiangnanquan/dsh-ux/9a2a16c57e05b051fc05ceea26cbcef90af60546/screenshot.png
