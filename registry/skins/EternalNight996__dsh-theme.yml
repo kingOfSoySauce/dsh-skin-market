@@ -3,7 +3,7 @@ name:
   zh: dsh-theme
   en: dsh-theme
 author: EternalNight996
-description: <p align="center" <img src="https://raw.githubusercontent.com/EternalNight996/dsh-theme/main/assets/screen/dsh-theme.gif" width="720" alt="dsh-theme 主题皮肤演示" / </p
+description: 🎨 给 DeepSeek Harness 的 Web GUI 换背景：内置主题 / 静态图片 / 动态视频（鼠标环绕跟随帧）三种皮肤形态，侧边栏底部一键切换，设置页完整管理。 一条命令安装，不改 dsh 源码。
 repo: https://github.com/EternalNight996/dsh-theme
 package: "@eternalnight/dsh-theme"
 rowId: dsh-theme
@@ -58,7 +58,7 @@ license:
 featuredRank: 1043
 starsSnapshot: 3
 releaseUpdatedAt: 2026-09-07T21:58:24.572Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:44:04.508Z
 starsUpdatedAt: 2026-09-07T21:58:24.572Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:44:04.508Z
 listScreenshot: https://raw.githubusercontent.com/EternalNight996/dsh-theme/d01383f8d82d3020607f16b62a8f6445df9f4978/assets/screen/dsh-theme.gif

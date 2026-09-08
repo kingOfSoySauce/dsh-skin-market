@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-blackhole
   en: dsh-theme-blackhole
 author: jiangwangyang
-description: English | 中文
+description: DeepSeek Harness（dsh）Web UI 的黑洞主题插件：以 WebGL 实时光线追踪的史瓦西黑洞作为应用背景，配合深空玻璃质感的面板调色板，从 设置 > 通用 > 主题-黑洞 一键切换。
 repo: https://github.com/jiangwangyang/dsh-theme-blackhole
 package: dsh-theme-blackhole
 rowId: theme-blackhole
@@ -59,6 +59,6 @@ license:
 featuredRank: 1025
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-25T07:12:30.049Z
-metadataUpdatedAt: 2026-08-25T07:12:30.049Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-29T03:15:01.901Z
-updatedAt: 2026-08-29T03:15:01.901Z
+updatedAt: 2026-09-08T09:45:47.382Z

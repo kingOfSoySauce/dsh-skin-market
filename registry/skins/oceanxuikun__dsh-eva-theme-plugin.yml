@@ -3,7 +3,7 @@ name:
   zh: dsh-eva-theme-plugin
   en: dsh-eva-theme-plugin
 author: oceanxuikun
-description: English | 中文
+description: 一个用户级客户端插件，为 DeepSeek Harness Web GUI 提供三套《新世纪福音战士》(EVA) 机体主题——初号機 (Unit-01)、零号機 (Unit-00)、弐号機 (Unit-02)——每套都会重新着色所有页面元素，并在侧边栏展示当前机体的图片。完全以插件方式实现：不修改任何 harness 源代码。
 repo: https://github.com/oceanxuikun/dsh-eva-theme-plugin
 package: dsh-eva-theme-plugin
 rowId: dsh-eva-theme-plugin
@@ -60,6 +60,6 @@ license:
 featuredRank: 89
 starsSnapshot: 4
 releaseUpdatedAt: 2026-08-23T05:30:31.940Z
-metadataUpdatedAt: 2026-08-23T05:30:31.940Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-26T03:24:31.351Z
-updatedAt: 2026-08-26T03:24:31.351Z
+updatedAt: 2026-09-08T09:45:47.382Z

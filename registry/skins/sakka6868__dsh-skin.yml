@@ -3,7 +3,7 @@ name:
   zh: dsh-skin
   en: dsh-skin
 author: sakka6868
-description: English | 中文
+description: DSH 皮肤插件：把 Alphacoders 热门壁纸 设为 DeepSeek Harness Web GUI 的背景，并支持 MoeWalls / Pexels 动态壁纸（视频背景）。符合 DSH 插件包规范的双半（Host + Client）Cordis 插件。
 repo: https://github.com/sakka6868/dsh-skin
 package: dsh-skin-alphacoders
 rowId: skin-alphacoders
@@ -72,6 +72,6 @@ license:
 featuredRank: 92
 starsSnapshot: 3
 releaseUpdatedAt: 2026-09-06T21:12:35.484Z
-metadataUpdatedAt: 2026-09-06T21:12:35.484Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:09:40.725Z
-updatedAt: 2026-09-06T21:12:35.484Z
+updatedAt: 2026-09-08T09:45:47.382Z

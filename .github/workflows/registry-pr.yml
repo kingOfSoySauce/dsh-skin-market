@@ -48,7 +48,7 @@ jobs:
         run: npm run smoke:submission
 
       - name: Reject generated catalog changes in community PRs
-        if: github.event.pull_request.head.ref != 'automation/dsh-skin-registry'
+        if: github.event.pull_request.head.repo.full_name != github.repository
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
@@ -60,7 +60,7 @@ jobs:
           fi
 
       - name: Enforce one-file community registry submissions
-        if: github.event.pull_request.head.ref != 'automation/dsh-skin-registry'
+        if: github.event.pull_request.head.repo.full_name != github.repository
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}

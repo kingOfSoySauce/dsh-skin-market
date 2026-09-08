@@ -3,7 +3,7 @@ name:
   zh: dsh-whale-companion
   en: dsh-whale-companion
 author: LeemanCheung
-description: English | 中文
+description: 这是一个本地优先的 DSH 鲸鱼世界：把安全的会话活动元数据变成可拖动的鲸鱼伙伴、20 种可解锁鲸灵、潮汐记录、个人海湾、温柔远征和主动加入的本地鲸群卡片。
 repo: https://github.com/LeemanCheung/dsh-whale-companion
 package: dsh-whale-companion
 rowId: whale-companion
@@ -56,6 +56,6 @@ license:
 featuredRank: 110
 starsSnapshot: 2
 releaseUpdatedAt: 2026-09-06T21:12:44.069Z
-metadataUpdatedAt: 2026-09-06T21:12:44.069Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:11:10.340Z
-updatedAt: 2026-09-06T21:12:44.069Z
+updatedAt: 2026-09-08T09:45:47.382Z

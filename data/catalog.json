@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-08T03:51:02.117Z",
+  "generatedAt": "2026-09-08T09:48:39.953Z",
   "skins": [
     {
       "id": "carlown.majia7-skin",
@@ -1246,7 +1246,7 @@
         "en": "dsh-catppuccin"
       },
       "author": "NoNameLeGo",
-      "description": "<p align=\"center\" <img src=\"assets/previews/combined.png\" width=\"100%\" alt=\"Catppuccin 四主题下的 DeepSeek Harness\"/ </p",
+      "description": "DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。",
       "repo": "https://github.com/NoNameLeGo/dsh-catppuccin",
       "package": "@nonamelego/dsh-catppuccin",
       "rowId": "dsh-catppuccin",
@@ -1327,9 +1327,9 @@
       "featuredRank": 5,
       "starsSnapshot": 32,
       "releaseUpdatedAt": "2026-09-07T21:58:13.634Z",
-      "metadataUpdatedAt": "2026-09-07T21:58:13.634Z",
+      "metadataUpdatedAt": "2026-09-08T09:44:04.508Z",
       "starsUpdatedAt": "2026-09-06T21:12:21.986Z",
-      "updatedAt": "2026-09-07T21:58:13.634Z",
+      "updatedAt": "2026-09-08T09:44:04.508Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ae8e7ac99d839cf4177f0dfd1e76d8aa.preview.webp",
@@ -4263,7 +4263,7 @@
         "en": "dsh-ui-preset-enhance"
       },
       "author": "lssyd20070106",
-      "description": "简体中文 · English · 小白安装手册",
+      "description": "一个给 DeepSeek Harness（DSH）WebUI 用的第三方界面增强插件。",
       "repo": "https://github.com/lssyd20070106/dsh-ui-preset-enhance",
       "package": "dsh-ui-preset-enhance",
       "rowId": "dsh-ui-preset-enhance",
@@ -4329,9 +4329,9 @@
       "featuredRank": 42,
       "starsSnapshot": 7,
       "releaseUpdatedAt": "2026-08-23T05:28:18.334Z",
-      "metadataUpdatedAt": "2026-08-23T05:28:18.334Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-23T05:28:18.334Z",
-      "updatedAt": "2026-08-23T05:28:18.334Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0d41232f3c0f27e5dcd46e4e0d6ca2de.preview.webp",
@@ -5364,7 +5364,7 @@
         "en": "dsh-eye-care"
       },
       "author": "Anionex",
-      "description": "English | 中文",
+      "description": "暖色浅色、暖色暗色，自动跟随系统。",
       "repo": "https://github.com/Anionex/dsh-eye-care",
       "package": "@anionex/dsh-eye-care",
       "rowId": "dsh-eye-care",
@@ -5432,9 +5432,9 @@
       "featuredRank": 57,
       "starsSnapshot": 3,
       "releaseUpdatedAt": "2026-09-06T21:12:38.385Z",
-      "metadataUpdatedAt": "2026-09-06T21:12:38.385Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-06T21:12:38.385Z",
-      "updatedAt": "2026-09-06T21:12:38.385Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/32fc53bf405485e4bb43113646dd6311.preview.webp",
@@ -6667,7 +6667,7 @@
         "en": "dsh-arcaea-theme"
       },
       "author": "a1swg1159-pixel",
-      "description": "English | 简体中文",
+      "description": "dsh-arcaea-theme 是面向 DeepSeek Harness Web UI 的原创高曝光棱镜记忆主题。主题以本地视觉研究为参考，用纯 CSS 与内联 SVG 重新设计，不包含游戏图片、角色、商标、谱面或其他官方资源。",
       "repo": "https://github.com/a1swg1159-pixel/dsh-arcaea-theme",
       "package": "dsh-arcaea-theme",
       "rowId": "arcaea-theme",
@@ -6734,9 +6734,9 @@
       "featuredRank": 75,
       "starsSnapshot": 3,
       "releaseUpdatedAt": "2026-08-23T05:29:49.557Z",
-      "metadataUpdatedAt": "2026-08-23T05:29:49.557Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:09:29.921Z",
-      "updatedAt": "2026-08-25T07:09:29.921Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ba0591671c2449e2daf53f458775ba45.preview.webp",
@@ -7018,7 +7018,7 @@
         "en": "dsh-theme-kit"
       },
       "author": "ink5897",
-      "description": "English | 中文",
+      "description": "给 DeepSeek Harness 的 Web 界面换一套好看的外观：32 款配色主题、动态与静态壁纸、东方纸纹、分区透明度与文字深浅，还送一只会跟着按键动的键盘桌宠。",
       "repo": "https://github.com/ink5897/dsh-theme-kit",
       "package": "dsh-theme-kit",
       "rowId": "theme-kit",
@@ -7094,9 +7094,9 @@
       "featuredRank": 80,
       "starsSnapshot": 3,
       "releaseUpdatedAt": "2026-08-23T05:31:25.601Z",
-      "metadataUpdatedAt": "2026-08-25T07:09:35.749Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:09:35.749Z",
-      "updatedAt": "2026-08-25T07:09:35.749Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/513b4f256d27a25dbb416506fe49245a.preview.webp",
@@ -7424,7 +7424,7 @@
         "en": "dsh-theme-ti"
       },
       "author": "longyu065",
-      "description": "English · 中文",
+      "description": "正值 Dota 2 The International 赛季，给 dsh Web 界面做的一款 TI6 皮肤： 深空蓝黑 + TI6 红飘带能量色 + 不朽盾金（gold），主面板带矢量翅膀 + 星空背景图。",
       "repo": "https://github.com/longyu065/dsh-theme-ti",
       "package": "@dsh-theme/ti",
       "rowId": "theme-ti",
@@ -7493,9 +7493,9 @@
       "featuredRank": 84,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-08-23T05:31:48.352Z",
-      "metadataUpdatedAt": "2026-08-23T05:31:48.352Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:10:17.426Z",
-      "updatedAt": "2026-08-25T07:10:17.426Z"
+      "updatedAt": "2026-09-08T09:45:47.382Z"
     },
     {
       "id": "lzylyd.dsh-dracula",
@@ -7588,7 +7588,7 @@
         "en": "dsh-blue-archive-shiroko"
       },
       "author": "mldhao",
-      "description": "简体中文 · English",
+      "description": "一个面向 DeepSeek Harness（dsh）Web 客户端的非官方同人主题插件。它为 DSH 提供蔚蓝档案风格的学院蓝 UI，并加入一个可拖动、可抚摸、可同步当前助手回复和安全查询 DeepSeek API 余额的白子桌宠。",
       "repo": "https://github.com/mldhao/dsh-blue-archive-shiroko",
       "package": "dsh-blue-archive-shiroko",
       "rowId": "blue-archive-shiroko",
@@ -7655,9 +7655,9 @@
       "featuredRank": 86,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-08-28T04:08:55.138Z",
-      "metadataUpdatedAt": "2026-09-08T02:11:50.874Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:11:22.650Z",
-      "updatedAt": "2026-09-08T02:11:50.874Z"
+      "updatedAt": "2026-09-08T09:45:47.382Z"
     },
     {
       "id": "mtaech.dsh-material-you",
@@ -7833,7 +7833,7 @@
         "en": "dsh-eva-theme-plugin"
       },
       "author": "oceanxuikun",
-      "description": "English | 中文",
+      "description": "一个用户级客户端插件，为 DeepSeek Harness Web GUI 提供三套《新世纪福音战士》(EVA) 机体主题——初号機 (Unit-01)、零号機 (Unit-00)、弐号機 (Unit-02)——每套都会重新着色所有页面元素，并在侧边栏展示当前机体的图片。完全以插件方式实现：不修改任何 harness 源代码。",
       "repo": "https://github.com/oceanxuikun/dsh-eva-theme-plugin",
       "package": "dsh-eva-theme-plugin",
       "rowId": "dsh-eva-theme-plugin",
@@ -7903,9 +7903,9 @@
       "featuredRank": 89,
       "starsSnapshot": 4,
       "releaseUpdatedAt": "2026-08-23T05:30:31.940Z",
-      "metadataUpdatedAt": "2026-08-23T05:30:31.940Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-26T03:24:31.351Z",
-      "updatedAt": "2026-08-26T03:24:31.351Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e1f0b635a6b1a7d126e709e9a8500d87.preview.webp",
@@ -8078,7 +8078,7 @@
         "en": "dsh-skin"
       },
       "author": "sakka6868",
-      "description": "English | 中文",
+      "description": "DSH 皮肤插件：把 Alphacoders 热门壁纸 设为 DeepSeek Harness Web GUI 的背景，并支持 MoeWalls / Pexels 动态壁纸（视频背景）。符合 DSH 插件包规范的双半（Host + Client）Cordis 插件。",
       "repo": "https://github.com/sakka6868/dsh-skin",
       "package": "dsh-skin-alphacoders",
       "rowId": "skin-alphacoders",
@@ -8157,9 +8157,9 @@
       "featuredRank": 92,
       "starsSnapshot": 3,
       "releaseUpdatedAt": "2026-09-06T21:12:35.484Z",
-      "metadataUpdatedAt": "2026-09-06T21:12:35.484Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:09:40.725Z",
-      "updatedAt": "2026-09-06T21:12:35.484Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/767e7a10a880ceb764bcd5edb5a382b1.preview.webp",
@@ -8570,7 +8570,7 @@
         "en": "dsh-pixel-skin"
       },
       "author": "ADAning",
-      "description": "<img src=\"assets/dsh-pixel-icon.svg\" width=\"96\" height=\"96\" alt=\"dsh-pixel-skin 鲸鱼图标\" /",
+      "description": "DeepSeek Harness Web GUI 的 8-bit / CRT 皮肤。",
       "repo": "https://github.com/ADAning/dsh-pixel-skin",
       "package": "dsh-pixel-skin",
       "rowId": "dsh-pixel-skin",
@@ -8640,9 +8640,9 @@
       "featuredRank": 98,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-08-23T05:32:55.099Z",
-      "metadataUpdatedAt": "2026-08-23T05:32:55.099Z",
+      "metadataUpdatedAt": "2026-09-08T09:44:04.508Z",
       "starsUpdatedAt": "2026-08-25T07:10:41.226Z",
-      "updatedAt": "2026-08-25T07:10:41.226Z",
+      "updatedAt": "2026-09-08T09:44:04.508Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/95eabaf97ce960143623bec002e16ad0.preview.webp",
@@ -9121,7 +9121,7 @@
         "en": "dsh-whale-bg"
       },
       "author": "gooosie",
-      "description": "English | 简体中文",
+      "description": "一个非官方的 DeepSeek Harness Web UI 背景插件，将 DeepSeek 鱼形轮廓重建为 由不同尺寸粒子组成的动态效果。",
       "repo": "https://github.com/gooosie/dsh-whale-bg",
       "package": "dsh-whale-bg",
       "rowId": "whale-bg",
@@ -9198,9 +9198,9 @@
       "featuredRank": 104,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-08-23T05:33:34.648Z",
-      "metadataUpdatedAt": "2026-08-25T07:10:59.428Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:10:59.428Z",
-      "updatedAt": "2026-08-25T07:10:59.428Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3b9e22bdeef882b6401d1481fec18f6d.preview.webp",
@@ -9222,7 +9222,7 @@
         "en": "dsh-stylevault"
       },
       "author": "GptsApp",
-      "description": "English | 中文",
+      "description": "DeepSeek Harness 的经典主题合集：30 套开源配色、完整的 Style Settings 面板、配置可以导出分享。",
       "repo": "https://github.com/GptsApp/dsh-stylevault",
       "package": "dsh-stylevault",
       "rowId": "stylevault",
@@ -9294,9 +9294,9 @@
       "featuredRank": 105,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-08-23T05:33:36.035Z",
-      "metadataUpdatedAt": "2026-08-23T05:33:36.035Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:12:23.425Z",
-      "updatedAt": "2026-08-25T07:12:23.425Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/43255f14e28c8129b69e0da7c7571420.preview.webp",
@@ -9583,7 +9583,7 @@
         "en": "dsh-whale-companion"
       },
       "author": "LeemanCheung",
-      "description": "English | 中文",
+      "description": "这是一个本地优先的 DSH 鲸鱼世界：把安全的会话活动元数据变成可拖动的鲸鱼伙伴、20 种可解锁鲸灵、潮汐记录、个人海湾、温柔远征和主动加入的本地鲸群卡片。",
       "repo": "https://github.com/LeemanCheung/dsh-whale-companion",
       "package": "dsh-whale-companion",
       "rowId": "whale-companion",
@@ -9648,9 +9648,9 @@
       "featuredRank": 110,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-09-06T21:12:44.069Z",
-      "metadataUpdatedAt": "2026-09-06T21:12:44.069Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:11:10.340Z",
-      "updatedAt": "2026-09-06T21:12:44.069Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/32287325f26b1960a41632b5e9f0faf1.preview.webp",
@@ -10057,7 +10057,7 @@
         "en": "dsh-pnc-theme"
       },
       "author": "Morinissleeping",
-      "description": "受《少女前线：云图计划》(Girls' Frontline: Neural Cloud, PNC) 风格启发的 DSH Web GUI 主题插件。 <img width=\"1904\" height=\"911\" alt=\"屏幕截图 2026-08-16 111532\" src=\"https://github.com/user-attachments/assets/0d5ca23b-e24e-4ee9-9265-95aedb4b1272\" / 附上Opencode Go用量指示条。",
+      "description": "受《少女前线：云图计划》(Girls' Frontline: Neural Cloud, PNC) 风格启发的 DSH Web GUI 主题插件。 附上Opencode Go用量指示条。",
       "repo": "https://github.com/Morinissleeping/dsh-pnc-theme",
       "package": "@dsh-external/dsh-pnc-theme",
       "rowId": "dsh-pnc-theme",
@@ -10124,9 +10124,9 @@
       "featuredRank": 115,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-08-23T05:34:25.047Z",
-      "metadataUpdatedAt": "2026-08-23T05:34:25.047Z",
+      "metadataUpdatedAt": "2026-09-08T09:44:04.508Z",
       "starsUpdatedAt": "2026-08-25T07:11:23.289Z",
-      "updatedAt": "2026-08-25T07:11:23.289Z"
+      "updatedAt": "2026-09-08T09:44:04.508Z"
     },
     {
       "id": "noexcs.dsh-skin-glass",
@@ -10324,7 +10324,7 @@
         "en": "dsh_Rhine_Lab_themo"
       },
       "author": "ReLuckyLucy",
-      "description": "English | 中文",
+      "description": "为 DeepSeek Harness（dsh）网页版重组《明日方舟》莱茵生命界面：以档案终端为核心视觉，并加入克制的机构 HUD 标识。",
       "repo": "https://github.com/ReLuckyLucy/dsh_Rhine_Lab_themo",
       "package": "dsh-theme-rhine-lab",
       "rowId": "rhine-lab-theme",
@@ -10390,9 +10390,9 @@
       "featuredRank": 118,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-08-28T04:09:08.601Z",
-      "metadataUpdatedAt": "2026-08-28T04:09:08.601Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:12:41.574Z",
-      "updatedAt": "2026-08-28T04:09:08.601Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d28539a968d73d94dc99f2da4439f7bd.preview.webp",
@@ -12566,7 +12566,7 @@
         "en": "dsh-anchored-monitor"
       },
       "author": "Aik358",
-      "description": "English | 简体中文",
+      "description": "一句话说清（In one sentence）：这是给 DeepSeek V4 Pro 加的一根鞭子。 当它从「We need / I will」这类高专注、高能力模式，跌落到「let me」这类 发散、低专注、低效率模式时，就抽它一鞭，让它改回去。",
       "repo": "https://github.com/Aik358/dsh-anchored-monitor",
       "package": "@a9i5k4/dsh-anchored-monitor",
       "rowId": "anchored-monitor",
@@ -12634,9 +12634,9 @@
       "featuredRank": 155,
       "starsSnapshot": 11,
       "releaseUpdatedAt": "2026-09-06T21:12:23.917Z",
-      "metadataUpdatedAt": "2026-09-06T21:12:23.917Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:58:15.127Z",
-      "updatedAt": "2026-09-07T21:58:15.127Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bfa5d86810c96cd70ed94522d7f7c143.preview.webp",
@@ -13199,7 +13199,7 @@
         "en": "dsh-rick-and-morty"
       },
       "author": "zsyayo112",
-      "description": "English | 中文",
+      "description": "Wubba lubba dub dub! 给 DeepSeek Harness (dsh) Web 界面的 Rick and Morty 全家桶:三套主题皮肤 + 一只会看你 agent 干活的桌宠。一条命令安装,一个插件全搞定。",
       "repo": "https://github.com/zsyayo112/dsh-rick-and-morty",
       "package": "@zsy1126/dsh-rick-and-morty",
       "rowId": "rick-and-morty",
@@ -13276,9 +13276,9 @@
       "featuredRank": 166,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-08-23T05:32:52.027Z",
-      "metadataUpdatedAt": "2026-08-23T05:32:52.027Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-18T15:43:58.602Z",
-      "updatedAt": "2026-08-23T05:32:52.027Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/71fe3e5c6b429f0080a014900a23138d.preview.webp",
@@ -15144,7 +15144,7 @@
         "en": "dsh-rick"
       },
       "author": "xxxrickymorty-dev",
-      "description": "English | 中文",
+      "description": "DeepSeek Harness 的 C-137 皮肤：28 张目录海报、自定义场景、霓虹外观，以及叠加层宠物（Rick、Morty、传送枪）。",
       "repo": "https://github.com/xxxrickymorty-dev/dsh-rick",
       "package": "dsh-rick",
       "rowId": "dsh-rick",
@@ -15207,9 +15207,9 @@
       "featuredRank": 196,
       "starsSnapshot": 0,
       "releaseUpdatedAt": "2026-08-23T05:35:21.430Z",
-      "metadataUpdatedAt": "2026-08-26T03:33:29.215Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-18 15:46:32.876000+00:00",
-      "updatedAt": "2026-08-26T03:33:29.215Z"
+      "updatedAt": "2026-09-08T09:45:47.382Z"
     },
     {
       "id": "ycqaq233.dsh-unknown-theme",
@@ -16283,7 +16283,7 @@
         "en": "dsh-retro-mac"
       },
       "author": "Leyan0365",
-      "description": "<h3 align=\"center\" <img src=\"https://raw.githubusercontent.com/Leyan0365/dsh-retro-mac/main/assets/preview.svg\" width=\"720\" alt=\"预览\"/<br/ 复古麦金塔 · <a href=\"https://github.com/deepseek-ai/deepseek-harness\"DeepSeek Harness</a 皮肤 </h3",
+      "description": "复古麦金塔 · DeepSeek Harness 皮肤",
       "repo": "https://github.com/Leyan0365/dsh-retro-mac",
       "package": "dsh-retro-mac",
       "rowId": "retro-mac",
@@ -16352,9 +16352,9 @@
       "featuredRank": 210,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-08-23T05:34:05.909Z",
-      "metadataUpdatedAt": "2026-08-23T05:34:05.909Z",
+      "metadataUpdatedAt": "2026-09-08T09:44:04.508Z",
       "starsUpdatedAt": "2026-08-25T07:12:34.801Z",
-      "updatedAt": "2026-08-25T07:12:34.801Z"
+      "updatedAt": "2026-09-08T09:44:04.508Z"
     },
     {
       "id": "mozhuanzuojing.dsh-agent-pill",
@@ -16932,7 +16932,7 @@
         "en": "dsh-conversation-toc"
       },
       "author": "twelvecarbon",
-      "description": "中文 | English",
+      "description": "DeepSeek Harness 对话大纲插件 —— 在会话页右侧显示对话主题目录（类似 DeepSeek 网页版右边栏），随滚动高亮当前主题，点击即可快捷跳转到对应消息位置。",
       "repo": "https://github.com/twelvecarbon/dsh-conversation-toc",
       "package": "dsh-conversation-toc",
       "rowId": "conversation-toc",
@@ -16999,9 +16999,9 @@
       "featuredRank": 257,
       "starsSnapshot": 0,
       "releaseUpdatedAt": "2026-08-23T10:28:28.872Z",
-      "metadataUpdatedAt": "2026-08-23T15:35:36.404Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-23T10:28:28.872Z",
-      "updatedAt": "2026-08-23T15:35:36.404Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d46671be494d16a85b91694be5ff708e.preview.webp",
@@ -18657,7 +18657,7 @@
         "en": "dsh-song-ui"
       },
       "author": "yunfei07",
-      "description": "English | 中文",
+      "description": "一个面向 DeepSeek Harness 的宋式美学主题插件。它通过可撤销的 ThemeRuntime.overrideTokens() 层提供完整的浅色与深色取值，同时保留用户选择的 light、dark 或 system 外观偏好。",
       "repo": "https://github.com/yunfei07/dsh-song-ui",
       "package": "ui-song-theme",
       "rowId": "ui-song-theme-external",
@@ -18726,9 +18726,9 @@
       "featuredRank": 997,
       "starsSnapshot": 4,
       "releaseUpdatedAt": "2026-08-23T10:16:48.742Z",
-      "metadataUpdatedAt": "2026-08-25T07:09:44.131Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:09:44.131Z",
-      "updatedAt": "2026-08-25T07:09:44.131Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/home.png",
       "media": {
         "list": {
@@ -19447,7 +19447,7 @@
         "en": "dsh-wallpaper-engine"
       },
       "author": "elysia395",
-      "description": "English | 中文",
+      "description": "一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。",
       "repo": "https://github.com/elysia395/dsh-wallpaper-engine",
       "package": "dsh-plugin-wallpaper-engine",
       "rowId": "wallpaper-engine",
@@ -19521,9 +19521,9 @@
       "featuredRank": 1001,
       "starsSnapshot": 251,
       "releaseUpdatedAt": "2026-09-07T21:58:11.914Z",
-      "metadataUpdatedAt": "2026-09-07T21:58:11.914Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:58:11.914Z",
-      "updatedAt": "2026-09-07T21:58:11.914Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ffa159b84c8c7fafaba439ed24e9087e.preview.webp",
@@ -19801,7 +19801,7 @@
         "en": "background-plugin"
       },
       "author": "cjz-wr",
-      "description": "English | 中文",
+      "description": "DeepSeek Harness 插件：背景插件,支持本地或者网络图片/视频，并且支持修改透明度",
       "repo": "https://github.com/cjz-wr/background-plugin",
       "package": "dsh-background",
       "rowId": "ui-background",
@@ -19869,9 +19869,9 @@
       "featuredRank": 1005,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-08-23T05:31:02.713Z",
-      "metadataUpdatedAt": "2026-08-23T05:31:02.713Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:09:58.475Z",
-      "updatedAt": "2026-08-25T07:09:58.475Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5bc318d727b92a8eea933ba0e8494fa2.preview.webp",
@@ -19900,7 +19900,7 @@
         "en": "dsh-photo-skins"
       },
       "author": "frankxxxxue",
-      "description": "中文 | English",
+      "description": "一次导入，自动取色，让每一张照片成为 DSH Web GUI 的专属皮肤",
       "repo": "https://github.com/frankxxxxue/dsh-photo-skins",
       "package": "dsh-photo-skins",
       "rowId": "photo-skins",
@@ -19968,9 +19968,9 @@
       "featuredRank": 1006,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-08-31T23:12:08.679Z",
-      "metadataUpdatedAt": "2026-08-31T23:12:08.679Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-25T07:10:56.434Z",
-      "updatedAt": "2026-08-31T23:12:08.679Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f23bcd97c701db7f1636a475e9c8475a.preview.webp",
@@ -21858,7 +21858,7 @@
         "en": "dsh-theme-blackhole"
       },
       "author": "jiangwangyang",
-      "description": "English | 中文",
+      "description": "DeepSeek Harness（dsh）Web UI 的黑洞主题插件：以 WebGL 实时光线追踪的史瓦西黑洞作为应用背景，配合深空玻璃质感的面板调色板，从 设置 > 通用 > 主题-黑洞 一键切换。",
       "repo": "https://github.com/jiangwangyang/dsh-theme-blackhole",
       "package": "dsh-theme-blackhole",
       "rowId": "theme-blackhole",
@@ -21927,9 +21927,9 @@
       "featuredRank": 1025,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-08-25T07:12:30.049Z",
-      "metadataUpdatedAt": "2026-08-25T07:12:30.049Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-08-29T03:15:01.901Z",
-      "updatedAt": "2026-08-29T03:15:01.901Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ebb65ceee446ba31e3b534fa3e833e2e.preview.webp",
@@ -22166,7 +22166,7 @@
         "en": "dsh-theme-customizer"
       },
       "author": "lxxz1918",
-      "description": "中文 | English",
+      "description": "DeepSeek Harness（DSH）Web 界面自定义主题插件：背景、文字、框线、细节全部可视化设置，刷新/重启不丢。 配置存 localStorage，预设可导出 .tczp 文件（含图片）分享到任意电脑。",
       "repo": "https://github.com/lxxz1918/dsh-theme-customizer",
       "package": "dsh-theme-customizer",
       "rowId": "theme-customizer",
@@ -22240,9 +22240,9 @@
       "featuredRank": 1028,
       "starsSnapshot": 4,
       "releaseUpdatedAt": "2026-08-28T04:09:07.133Z",
-      "metadataUpdatedAt": "2026-08-28T04:09:07.133Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-06T21:12:30.023Z",
-      "updatedAt": "2026-09-06T21:12:30.023Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5f74292edbde5039e14def36dd73f1d4.preview.webp",
@@ -22682,7 +22682,7 @@
         "en": "dsh-whale-musume"
       },
       "author": "Sutera-Diffusus",
-      "description": "<p <a href=\"https://github.com/Sutera-Diffusus/dsh-whale-musume/releases/latest\"下载最新版</a · <a href=\"#效果预览\"查看效果预览</a · <a href=\"#安装教程\"安装教程</a </p",
+      "description": "为 DeepSeek Harness 打造的桌面看板娘插件。 一只会陪你写代码的鲸鱼娘：待机安静陪伴，工作开始就抱起笔记本陪你干活； 可以摸头养成、解锁成就，也可以拖着她到处走。所有资源本地运行，无遥测、无外部请求。",
       "repo": "https://github.com/Sutera-Diffusus/dsh-whale-musume",
       "package": "dsh-whale-musume",
       "rowId": "dsh-whale-musume",
@@ -22747,9 +22747,9 @@
       "featuredRank": 1033,
       "starsSnapshot": 56,
       "releaseUpdatedAt": "2026-09-07T21:58:13.326Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:44:04.508Z",
       "starsUpdatedAt": "2026-09-07T21:58:13.326Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:44:04.508Z",
       "listScreenshot": "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png",
       "media": {
         "list": {
@@ -22775,7 +22775,7 @@
         "en": "dsh-ux"
       },
       "author": "jiangnanquan",
-      "description": "中文 | English",
+      "description": "DSH web 界面增强：Solarized 浅色主题 + Maple Mono 字体、紧凑对话布局、思考/工具链折叠胶囊、官方余额 + 本轮成本 + 用量图表",
       "repo": "https://github.com/jiangnanquan/dsh-ux",
       "package": "dsh-enhance",
       "rowId": "dsh-enhance",
@@ -22840,9 +22840,9 @@
       "featuredRank": 1034,
       "starsSnapshot": 8,
       "releaseUpdatedAt": "2026-09-07T21:58:16.872Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:58:16.872Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "listScreenshot": "https://raw.githubusercontent.com/jiangnanquan/dsh-ux/9a2a16c57e05b051fc05ceea26cbcef90af60546/screenshot.png",
       "media": {
         "list": {
@@ -22868,7 +22868,7 @@
         "en": "dsh-official-homepage-theme"
       },
       "author": "JohnnyTing",
-      "description": "English | 中文",
+      "description": "dsh-official-homepage-theme 是一个面向DSH Web的DeepSeek Harness官方首页主题插件，在不改变DSH页面结构与交互的前提下，提供流体背景、鼠标弹性网格和双小鱼动态效果。",
       "repo": "https://github.com/JohnnyTing/dsh-official-homepage-theme",
       "package": "dsh-official-homepage-theme",
       "rowId": "dsh-official-homepage-theme",
@@ -22939,9 +22939,9 @@
       "featuredRank": 1035,
       "starsSnapshot": 7,
       "releaseUpdatedAt": "2026-09-07T21:58:18.366Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:58:18.366Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "listScreenshot": "https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif",
       "media": {
         "screenshots": [
@@ -23330,7 +23330,7 @@
         "en": "dsh-skin-studio"
       },
       "author": "realMisakaMikoto",
-      "description": "<p align=\"center\" DeepSeek Harness Web UI 的本地皮肤工作室：创建、实时预览、管理与分享完整外观。 </p",
+      "description": "DeepSeek Harness Web UI 的本地皮肤工作室：创建、实时预览、管理与分享完整外观。",
       "repo": "https://github.com/realMisakaMikoto/dsh-skin-studio",
       "package": "dsh-skin-studio",
       "rowId": "skin-studio",
@@ -23404,9 +23404,9 @@
       "featuredRank": 1040,
       "starsSnapshot": 4,
       "releaseUpdatedAt": "2026-09-07T21:58:22.382Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:44:04.508Z",
       "starsUpdatedAt": "2026-09-07T21:58:22.382Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:44:04.508Z",
       "listScreenshot": "https://raw.githubusercontent.com/realMisakaMikoto/dsh-skin-studio/4177dd002cb81ef9aecd224acf17f7e503bcdec3/docs/screenshots/skins/ayumu.webp",
       "media": {
         "list": {
@@ -23622,7 +23622,7 @@
         "en": "dsh-theme"
       },
       "author": "EternalNight996",
-      "description": "<p align=\"center\" <img src=\"https://raw.githubusercontent.com/EternalNight996/dsh-theme/main/assets/screen/dsh-theme.gif\" width=\"720\" alt=\"dsh-theme 主题皮肤演示\" / </p",
+      "description": "🎨 给 DeepSeek Harness 的 Web GUI 换背景：内置主题 / 静态图片 / 动态视频（鼠标环绕跟随帧）三种皮肤形态，侧边栏底部一键切换，设置页完整管理。 一条命令安装，不改 dsh 源码。",
       "repo": "https://github.com/EternalNight996/dsh-theme",
       "package": "@eternalnight/dsh-theme",
       "rowId": "dsh-theme",
@@ -23690,9 +23690,9 @@
       "featuredRank": 1043,
       "starsSnapshot": 3,
       "releaseUpdatedAt": "2026-09-07T21:58:24.572Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:44:04.508Z",
       "starsUpdatedAt": "2026-09-07T21:58:24.572Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:44:04.508Z",
       "listScreenshot": "https://raw.githubusercontent.com/EternalNight996/dsh-theme/d01383f8d82d3020607f16b62a8f6445df9f4978/assets/screen/dsh-theme.gif",
       "media": {
         "screenshots": [
@@ -23896,7 +23896,7 @@
         "en": "xiao-theme-dsh-ui-plugin"
       },
       "author": "jinxlux",
-      "description": "语言 / Language： English · 简体中文（当前） · 日本語 · 한국어",
+      "description": "DeepSeek Harness 的可自定义主题插件（默认带一套「魈」青玉风）—— 给 DeepSeek Harness 的 Web 界面做主题：配色、吉祥物徽章、背景、注入语气都能自己调。背景同时支持静态图片与动态 GIF （上传动画 GIF 会自动识别为动态背景）。默认是一套魈的青玉/翠青风格，但主色、徽章文字、语气、 背景等都可配置，改出来就是你的专属主题。",
       "repo": "https://github.com/jinxlux/xiao-theme-dsh-ui-plugin",
       "package": "xiao-ui-theme-ts",
       "rowId": "xiao-theme-ts",
@@ -23969,9 +23969,9 @@
       "featuredRank": 1046,
       "starsSnapshot": 3,
       "releaseUpdatedAt": "2026-09-07T21:58:25.427Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:58:25.427Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "listScreenshot": "https://github.com/user-attachments/assets/3998f58b-53db-4349-80f3-3d993c6ad3c3"
     },
     {
@@ -24263,7 +24263,7 @@
         "en": "dsh-skin-mari"
       },
       "author": "unpain",
-      "description": "English | 简体中文",
+      "description": "面向 DSH Web UI 的真希波·玛丽 / EVA 八号机主题皮肤。设计语言采用烟紫黑、玫红、荧光黄绿、暖象牙白与眼镜双镜片光学准星。",
       "repo": "https://github.com/unpain/dsh-skin-mari",
       "package": "dsh-skin-mari",
       "rowId": "ui-skin-mari-interface",
@@ -24331,9 +24331,9 @@
       "featuredRank": 1050,
       "starsSnapshot": 3,
       "releaseUpdatedAt": "2026-09-07T21:58:26.962Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:58:26.962Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "listScreenshot": "https://raw.githubusercontent.com/unpain/dsh-skin-mari/c414995fa639d52dbb4e4ed2c582d29e0bab5c45/preview/dark.webp",
       "media": {
         "list": {
@@ -24833,7 +24833,7 @@
         "en": "dsh-cool-theme"
       },
       "author": "CoolTea001",
-      "description": "English · 中文",
+      "description": "DeepSeek Harness 主题插件 — 支持 浅色 / 深色 / 跟随系统 外观切换，并提供 34 款预设主题。",
       "repo": "https://github.com/CoolTea001/dsh-cool-theme",
       "package": "dsh-cool-theme",
       "rowId": "dsh-cool-theme",
@@ -24903,9 +24903,9 @@
       "featuredRank": 1056,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-09-07T21:58:30.047Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:58:30.047Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "listScreenshot": "https://raw.githubusercontent.com/CoolTea001/dsh-cool-theme/74a04f390a49077efb5e312ed927c08b5f83c359/assets/previews/1.png",
       "media": {
         "list": {
@@ -25113,7 +25113,7 @@
         "en": "dsh-plugin-ehtools"
       },
       "author": "eh-tools",
-      "description": "DeepSeek Harness 主题 —— 复刻 <https://www.deepseek.com/harness/en/ 的粒子鲸鱼背景，跑在自有插件上。",
+      "description": "DeepSeek Harness 主题 —— 复刻 https://www.deepseek.com/harness/en/ 的粒子鲸鱼背景，跑在自有插件上。",
       "repo": "https://github.com/eh-tools/dsh-plugin",
       "subpath": "plugins/deepseek-harness",
       "package": "dsh-deepseek-harness",
@@ -25181,9 +25181,9 @@
       "featuredRank": 1059,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-09-07T21:58:31.447Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:44:04.508Z",
       "starsUpdatedAt": "2026-09-07T21:58:31.447Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:44:04.508Z",
       "listScreenshot": "https://raw.githubusercontent.com/eh-tools/dsh-plugin/91057764c150cc3bd4c783099be4e663ac98d74d/png/%E9%A1%B5%E9%9D%A2%E5%85%A8%E8%A7%88(%E6%96%87%E4%BB%B6%E6%A0%91+git%E6%A0%91+%E4%BD%99%E9%A2%9D+%E7%B2%92%E5%AD%90%E9%B2%B8%E9%B1%BC+%E6%95%B0%E6%8D%AE%E5%BA%93tag+%E6%89%B9%E9%87%8F%E5%BD%92%E6%A1%A3%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE).png",
       "media": {
         "list": {
@@ -25479,7 +25479,7 @@
         "en": "dsh-codex-theme"
       },
       "author": "Lxd-Ashe",
-      "description": "English | 中文",
+      "description": "Codex 主题外观插件 for DeepSeek Harness（DSH）：把 Codex 主题配置（codex-theme-v1，80 款浅/深色主题）做成可在 DSH 中直接切换、可自定义的外观插件。",
       "repo": "https://github.com/Lxd-Ashe/dsh-codex-theme",
       "package": "dsh-codex-theme",
       "rowId": "dsh-codex-theme",
@@ -25545,9 +25545,9 @@
       "featuredRank": 1063,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-09-07T21:58:34.972Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:58:34.972Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "listScreenshot": "https://raw.githubusercontent.com/Lxd-Ashe/dsh-codex-theme/eb4b0b2bb09db16b597a51a503fe24d1140b434f/docs/dark-theme.png",
       "media": {
         "list": {
@@ -26060,7 +26060,7 @@
         "en": "dsh-plugin-gemini-theme"
       },
       "author": "dingyi580",
-      "description": "English | 中文",
+      "description": "DeepSeek Harness Web 客户端的 Gemini 风格皮肤。",
       "repo": "https://github.com/dingyi580/dsh-plugin-gemini-theme",
       "package": "dsh-plugin-gemini-theme",
       "rowId": "gemini-theme",
@@ -26127,9 +26127,9 @@
       "featuredRank": 1069,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-09-07T21:58:43.325Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:58:43.325Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "listScreenshot": "https://raw.githubusercontent.com/dingyi580/dsh-plugin-gemini-theme/c7c22fe81945cfdd6da91f5175785761e2b086c1/assets/hero-dark.png",
       "media": {
         "list": {
@@ -26439,7 +26439,7 @@
         "en": "deepseek-harness-swift"
       },
       "author": "krystal-cao",
-      "description": "<h1 align=\"center\" <img src=\"app.icon/Assets/icon-1024.png\" width=\"72\" alt=\"DSH 标志\" / <br / DSH Swift Native Shell </h1",
+      "description": "基于 AppKit、SwiftUI 和 WKWebView 的原生 macOS 桌面壳。",
       "repo": "https://github.com/krystal-cao/deepseek-harness-swift",
       "subpath": "assets/dsh-desktop-host",
       "package": "dsh-desktop-host",
@@ -26505,9 +26505,9 @@
       "featuredRank": 1073,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-09-07T21:58:47.284Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:44:04.508Z",
       "starsUpdatedAt": "2026-09-07T21:58:47.284Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:44:04.508Z",
       "listScreenshot": "https://raw.githubusercontent.com/krystal-cao/deepseek-harness-swift/047cc46ae6df75afdd0a0406b7491c4d25dc9279/assets/%E4%B8%BB%E7%95%8C%E9%9D%A2.png",
       "media": {
         "list": {
@@ -27868,7 +27868,7 @@
         "en": "dsh-sakura-theme"
       },
       "author": "a1303845406",
-      "description": "English | 中文",
+      "description": "让 DeepSeek Harness 在保持专业与可读性的同时，多一点樱花盛开的生命力。",
       "repo": "https://github.com/a1303845406/dsh-sakura-theme",
       "package": "dsh-sakura-theme",
       "rowId": "sakura-theme",
@@ -27945,9 +27945,9 @@
       "featuredRank": 1088,
       "starsSnapshot": 0,
       "releaseUpdatedAt": "2026-09-07T21:58:55.591Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:58:55.591Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "listScreenshot": "https://raw.githubusercontent.com/a1303845406/dsh-sakura-theme/7ba9828034244b9dd276227ff523b93861860a73/docs/screenshots/sakura-theme-light.png",
       "media": {
         "list": {
@@ -28543,7 +28543,7 @@
         "en": "ds-hentai"
       },
       "author": "lisongxuan",
-      "description": "English | 简体中文",
+      "description": "ExHentai.org 皮肤 for DeepSeek Harness。深炭底、浅灰文字、灰色边框；会话列表像画廊索引，发送框像搜索栏。",
       "repo": "https://github.com/lisongxuan/ds-hentai",
       "package": "ds-hentai",
       "rowId": "ds-hentai",
@@ -28609,9 +28609,9 @@
       "featuredRank": 1095,
       "starsSnapshot": 0,
       "releaseUpdatedAt": "2026-09-07T21:59:00.406Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:45:47.382Z",
       "starsUpdatedAt": "2026-09-07T21:59:00.406Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:45:47.382Z",
       "listScreenshot": "https://raw.githubusercontent.com/lisongxuan/ds-hentai/ce8442c8c113a3dcebe80449628724799fba2e1c/docs/preview.png",
       "media": {
         "list": {
@@ -29202,7 +29202,7 @@
         "en": "dsh-lego-plugin"
       },
       "author": "XIAOke8698",
-      "description": "<p align=\"center\" <img src=\"docs/banner.jpg\" alt=\"dsh-lego-plugin 横幅\" width=\"100%\" / </p",
+      "description": "DeepSeek Harness（DSH）Web 界面中动态 Cordis 插件的乐高式可视化。",
       "repo": "https://github.com/XIAOke8698/dsh-lego-plugin",
       "package": "dsh-lego-plugin",
       "rowId": "dsh-lego-plugin",
@@ -29276,9 +29276,9 @@
       "featuredRank": 1102,
       "starsSnapshot": 0,
       "releaseUpdatedAt": "2026-09-07T21:59:05.221Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
+      "metadataUpdatedAt": "2026-09-08T09:44:04.508Z",
       "starsUpdatedAt": "2026-09-07T21:59:05.221Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
+      "updatedAt": "2026-09-08T09:44:04.508Z",
       "listScreenshot": "https://raw.githubusercontent.com/XIAOke8698/dsh-lego-plugin/92de57cce80ffb969f23a7d35f7ee9b02a337944/docs/banner.jpg",
       "media": {
         "list": {

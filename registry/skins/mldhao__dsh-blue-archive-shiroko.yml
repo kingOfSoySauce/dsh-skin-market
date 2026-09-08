@@ -3,7 +3,7 @@ name:
   zh: dsh-blue-archive-shiroko
   en: dsh-blue-archive-shiroko
 author: mldhao
-description: 简体中文 · English
+description: 一个面向 DeepSeek Harness（dsh）Web 客户端的非官方同人主题插件。它为 DSH 提供蔚蓝档案风格的学院蓝 UI，并加入一个可拖动、可抚摸、可同步当前助手回复和安全查询 DeepSeek API 余额的白子桌宠。
 repo: https://github.com/mldhao/dsh-blue-archive-shiroko
 package: dsh-blue-archive-shiroko
 rowId: blue-archive-shiroko
@@ -57,6 +57,6 @@ license:
 featuredRank: 86
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-28T04:08:55.138Z
-metadataUpdatedAt: 2026-09-08T02:11:50.874Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:11:22.650Z
-updatedAt: 2026-09-08T02:11:50.874Z
+updatedAt: 2026-09-08T09:45:47.382Z

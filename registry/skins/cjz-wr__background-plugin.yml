@@ -3,7 +3,7 @@ name:
   zh: background-plugin
   en: background-plugin
 author: cjz-wr
-description: English | 中文
+description: DeepSeek Harness 插件：背景插件,支持本地或者网络图片/视频，并且支持修改透明度
 repo: https://github.com/cjz-wr/background-plugin
 package: dsh-background
 rowId: ui-background
@@ -58,6 +58,6 @@ license:
 featuredRank: 1005
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-23T05:31:02.713Z
-metadataUpdatedAt: 2026-08-23T05:31:02.713Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:09:58.475Z
-updatedAt: 2026-08-25T07:09:58.475Z
+updatedAt: 2026-09-08T09:45:47.382Z

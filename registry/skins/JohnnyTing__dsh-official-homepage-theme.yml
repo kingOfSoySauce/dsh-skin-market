@@ -3,7 +3,7 @@ name:
   zh: dsh-official-homepage-theme
   en: dsh-official-homepage-theme
 author: JohnnyTing
-description: English | 中文
+description: dsh-official-homepage-theme 是一个面向DSH Web的DeepSeek Harness官方首页主题插件，在不改变DSH页面结构与交互的前提下，提供流体背景、鼠标弹性网格和双小鱼动态效果。
 repo: https://github.com/JohnnyTing/dsh-official-homepage-theme
 package: dsh-official-homepage-theme
 rowId: dsh-official-homepage-theme
@@ -61,7 +61,7 @@ license:
 featuredRank: 1035
 starsSnapshot: 7
 releaseUpdatedAt: 2026-09-07T21:58:18.366Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-07T21:58:18.366Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:45:47.382Z
 listScreenshot: https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif

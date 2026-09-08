@@ -3,7 +3,7 @@ name:
   zh: dsh-eye-care
   en: dsh-eye-care
 author: Anionex
-description: English | 中文
+description: 暖色浅色、暖色暗色，自动跟随系统。
 repo: https://github.com/Anionex/dsh-eye-care
 package: "@anionex/dsh-eye-care"
 rowId: dsh-eye-care
@@ -59,6 +59,6 @@ license:
 featuredRank: 57
 starsSnapshot: 3
 releaseUpdatedAt: 2026-09-06T21:12:38.385Z
-metadataUpdatedAt: 2026-09-06T21:12:38.385Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-06T21:12:38.385Z
-updatedAt: 2026-09-06T21:12:38.385Z
+updatedAt: 2026-09-08T09:45:47.382Z

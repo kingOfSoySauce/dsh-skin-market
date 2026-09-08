@@ -3,7 +3,7 @@ name:
   zh: dsh-skin-studio
   en: dsh-skin-studio
 author: realMisakaMikoto
-description: <p align="center" DeepSeek Harness Web UI 的本地皮肤工作室：创建、实时预览、管理与分享完整外观。 </p
+description: DeepSeek Harness Web UI 的本地皮肤工作室：创建、实时预览、管理与分享完整外观。
 repo: https://github.com/realMisakaMikoto/dsh-skin-studio
 package: dsh-skin-studio
 rowId: skin-studio
@@ -61,7 +61,7 @@ license:
 featuredRank: 1040
 starsSnapshot: 4
 releaseUpdatedAt: 2026-09-07T21:58:22.382Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:44:04.508Z
 starsUpdatedAt: 2026-09-07T21:58:22.382Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:44:04.508Z
 listScreenshot: https://raw.githubusercontent.com/realMisakaMikoto/dsh-skin-studio/4177dd002cb81ef9aecd224acf17f7e503bcdec3/docs/screenshots/skins/ayumu.webp

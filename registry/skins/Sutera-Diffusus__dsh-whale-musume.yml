@@ -3,7 +3,7 @@ name:
   zh: dsh-whale-musume
   en: dsh-whale-musume
 author: Sutera-Diffusus
-description: <p <a href="https://github.com/Sutera-Diffusus/dsh-whale-musume/releases/latest"下载最新版</a · <a href="#效果预览"查看效果预览</a · <a href="#安装教程"安装教程</a </p
+description: 为 DeepSeek Harness 打造的桌面看板娘插件。 一只会陪你写代码的鲸鱼娘：待机安静陪伴，工作开始就抱起笔记本陪你干活； 可以摸头养成、解锁成就，也可以拖着她到处走。所有资源本地运行，无遥测、无外部请求。
 repo: https://github.com/Sutera-Diffusus/dsh-whale-musume
 package: dsh-whale-musume
 rowId: dsh-whale-musume
@@ -56,7 +56,7 @@ license:
 featuredRank: 1033
 starsSnapshot: 56
 releaseUpdatedAt: 2026-09-07T21:58:13.326Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:44:04.508Z
 starsUpdatedAt: 2026-09-07T21:58:13.326Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:44:04.508Z
 listScreenshot: https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png
