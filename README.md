@@ -15,7 +15,7 @@
 
 ### 近期收录
 
-- 2026-08-28：[fengb3/dsh-theme-aurum](https://github.com/fengb3/dsh-theme-aurum)（`1.1.0`）——鎏金 Aurum 主题
+- [2026-09-08：新增 73 项主题与外观扩展](./docs/recently-added.md#batch-2026-09-08)
 - 更多请查看[收录日志](./docs/recently-added.md)
 
 
