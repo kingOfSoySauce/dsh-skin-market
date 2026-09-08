@@ -5,12 +5,13 @@ import { join } from 'node:path'
 import { buildApprovalKeyForTarget, effectiveBuildApprovalKey } from './build-approval.ts'
 import { assessCompatibility } from './compatibility.ts'
 import { persistCompatibilityPatch, planCompatibilityPatch } from './compatibility-adapter.ts'
-import type { PluginInstallRequest, PluginRunner } from './commands.ts'
+import type { CommandOptions, PluginInstallRequest, PluginRunner } from './commands.ts'
 import { loadCatalog } from './catalog.ts'
 import { companionAsSkin, discoverMonorepoTarget, isNpmInstallTarget, preferredInstallTarget } from './install-resolution.ts'
 import { sharedLoaderIdentifiers } from './loader-ownership.ts'
 import { failureDiagnostic, PnpmCommandError, runPnpmWithRecovery, type PnpmFailure } from './pnpm-recovery.ts'
 import { pluginArgsFor } from './pnpm-compat.ts'
+import { PnpmProgressTracker } from './pnpm-progress.ts'
 import { cleanOrphanedStore } from './store.ts'
 import { logEvent } from './log.ts'
 import {
@@ -60,14 +61,20 @@ export interface LifecycleOptions {
   runner: PluginRunner
   hostKind?: MarketHostKind
   runtime?: DshRuntime
+  /** Shared by all preparation/install attempts; recovery has its own budget. */
+  operationTimeoutMs?: number
+  recoveryTimeoutMs?: number
 }
+
+const OPERATION_TIMEOUT_MS = 15 * 60 * 1000
+const RECOVERY_TIMEOUT_MS = 60_000
 
 function errorMessage(error: unknown): string { return error instanceof Error ? error.message : String(error) }
 
 function recoveryMessage(failure: PnpmFailure): string {
   if (failure.recovery === 'disable-peer-autoinstall') return '检测到宿主提供但 npm 未发布的 peer，正在关闭 peer 自动安装并重试'
   if (failure.kind === 'release-age') return '检测到新包保护，正在临时放宽本次命令并重试'
-  if (failure.kind === 'fetch-timeout') return '下载超时，正在延长 pnpm 下载等待时间并重试'
+  if (failure.kind === 'fetch-timeout') return '当前步骤超时，正在剩余安装时间内重试一次'
   if (failure.kind === 'network') return '检测到临时网络错误，正在自动重试'
   return failure.message
 }
@@ -108,72 +115,11 @@ export function desktopInstallError(capability: DesktopInstallCapability | undef
   return 'Desktop 当前仅支持已验证 npm 精确版本的一键安装，请查看仓库安装说明'
 }
 
-interface FetchProgress { size?: number; downloaded: number }
-
 interface PrefetchedPackage {
   target: string
   loaderRows: LoaderIdentity[]
   packageRows: LoaderIdentity[]
   hasBundle: boolean
-}
-
-class PnpmProgressTracker {
-  private buffer = ''
-  private readonly fetches = new Map<string, FetchProgress>()
-  private readonly unknownSizes = new Set<string>()
-  private samples: Array<{ at: number; bytes: number }> = []
-
-  push(chunk: string, operation: Operation): void {
-    this.buffer += chunk
-    const lines = this.buffer.split(/\r?\n/)
-    this.buffer = lines.pop() ?? ''
-    for (const line of lines) this.consume(line, operation)
-  }
-
-  private consume(line: string, operation: Operation): void {
-    let event: Record<string, unknown>
-    try { event = JSON.parse(line) as Record<string, unknown> } catch { return }
-    const packageId = typeof event.packageId === 'string' ? event.packageId : undefined
-    if (packageId === undefined) return
-    if (event.name === 'pnpm:fetching-progress' && event.status === 'started') {
-      const size = typeof event.size === 'number' && Number.isFinite(event.size) ? event.size : undefined
-      this.fetches.set(packageId, { size, downloaded: 0 })
-      if (size === undefined) this.unknownSizes.add(packageId)
-      this.publish(operation)
-      return
-    }
-    if (event.name === 'pnpm:fetching-progress' && event.status === 'in_progress' && typeof event.downloaded === 'number') {
-      const current = this.fetches.get(packageId) ?? { downloaded: 0 }
-      current.downloaded = Math.max(current.downloaded, event.downloaded)
-      this.fetches.set(packageId, current)
-      this.publish(operation)
-      return
-    }
-    if (event.name === 'pnpm:progress' && event.status === 'fetched') {
-      const current = this.fetches.get(packageId)
-      if (current?.size !== undefined) current.downloaded = current.size
-      this.publish(operation)
-    }
-  }
-
-  private publish(operation: Operation): void {
-    if (this.fetches.size === 0) return
-    const totalKnown = this.unknownSizes.size === 0
-    const total = [...this.fetches.values()].reduce((sum, item) => sum + (item.size ?? 0), 0)
-    const downloaded = [...this.fetches.values()].reduce((sum, item) => sum + Math.min(item.downloaded, item.size ?? item.downloaded), 0)
-    if (downloaded > 0) operation.downloadedBytes = downloaded
-    else delete operation.downloadedBytes
-    if (totalKnown) operation.totalBytes = total
-    else delete operation.totalBytes
-    const now = Date.now()
-    this.samples.push({ at: now, bytes: downloaded })
-    this.samples = this.samples.filter(sample => now - sample.at <= 5000)
-    const first = this.samples[0]
-    const last = this.samples.at(-1)
-    if (first !== undefined && last !== undefined && last.at > first.at && last.bytes > first.bytes) {
-      operation.bytesPerSecond = Math.round((last.bytes - first.bytes) * 1000 / (last.at - first.at))
-    }
-  }
 }
 
 function pinnedSkinIds(state: PersistedMarketState): string[] {
@@ -208,6 +154,13 @@ export class SkinLifecycle {
   private activeOperation: string | null = null
   private readonly abortControllers = new Map<string, AbortController>()
   private readonly pendingBuildKeys = new Map<string, string[]>()
+  private readonly deadlines = new Map<string, number>()
+  private readonly deadlineTimers = new Map<string, ReturnType<typeof setTimeout>>()
+  private readonly expired = new Set<string>()
+  private readonly profileMutations = new Map<string, number>()
+  private readonly recoveryErrors = new Map<string, string>()
+  private readonly desktopManagedAttempts = new Set<string>()
+  private readonly desktopRecoveryBaselines = new Map<string, { snapshot: ProfileInstallSnapshot; mutationsBefore: number }>()
   private catalogEntries: SkinEntry[]
   private skinById: Map<string, SkinEntry>
   private disposeEvent?: () => void
@@ -242,10 +195,12 @@ export class SkinLifecycle {
   }
 
   private applyPendingBuildApprovals(operation: Operation): void {
+    if (this.hostKind === 'desktop') return
     for (const key of this.pendingBuildKeys.get(operation.id) ?? []) ensureBuildAllowed(this.options.profileDir, key)
   }
 
   private prefetchBuildApprovals(skin: SkinEntry, operation: Operation, target: string): string[] {
+    if (isNpmInstallTarget(skin, target)) return []
     const reviewed = buildApprovalKeyForTarget(skin, target) ?? effectiveBuildApprovalKey(skin)
     return [...new Set([
       ...(this.pendingBuildKeys.get(operation.id) ?? []),
@@ -456,6 +411,18 @@ export class SkinLifecycle {
     }
     this.operations.set(operation.id, operation)
     this.abortControllers.set(operation.id, new AbortController())
+    if (kind === 'install' || kind === 'update') {
+      const timeoutMs = this.options.operationTimeoutMs ?? OPERATION_TIMEOUT_MS
+      this.deadlines.set(operation.id, Date.now() + timeoutMs)
+      const timer = setTimeout(() => {
+        this.expired.add(operation.id)
+        operation.cancelable = false
+        operation.message = '已达到安装总时限，正在结束当前步骤'
+        this.abortControllers.get(operation.id)?.abort()
+      }, timeoutMs)
+      timer.unref?.()
+      this.deadlineTimers.set(operation.id, timer)
+    }
     const buildKeys = typeof approvedBuildKeys === 'string' ? [approvedBuildKeys] : approvedBuildKeys
     if (buildKeys !== undefined && buildKeys.length > 0) this.pendingBuildKeys.set(operation.id, [...new Set(buildKeys)])
     this.activeOperation = operation.id
@@ -502,7 +469,12 @@ export class SkinLifecycle {
       else await this.uninstall(operation)
       this.update(operation, 'done', operation.message)
     } catch (error) {
-      if (this.abortControllers.get(operation.id)?.signal.aborted === true) this.update(operation, 'cancelled', '操作已取消')
+      if (this.expired.has(operation.id)) {
+        const message = `安装已达到总时限，已停止继续重试${this.recoveryErrors.has(operation.id) ? `；${this.recoveryErrors.get(operation.id)}` : ''}`
+        operation.failure = { kind: 'command', message, ...(this.recoveryErrors.has(operation.id) ? {} : { action: 'retry' as const }) }
+        logEvent('error', 'operation-timeout', message, operation.id)
+        this.update(operation, 'failed', message)
+      } else if (this.abortControllers.get(operation.id)?.signal.aborted === true && !this.recoveryErrors.has(operation.id)) this.update(operation, 'cancelled', '操作已取消')
       else {
         if (error instanceof PnpmCommandError) {
           const failure = error.failure
@@ -535,10 +507,20 @@ export class SkinLifecycle {
             : errorMessage(error),
           operation.id,
         )
-        this.update(operation, 'failed', errorMessage(error))
+        const recoveryError = this.recoveryErrors.get(operation.id)
+        if (recoveryError !== undefined && operation.failure !== undefined) delete operation.failure.action
+        this.update(operation, 'failed', `${errorMessage(error)}${recoveryError === undefined ? '' : `；${recoveryError}`}`)
       }
     } finally {
       this.activeOperation = null
+      clearTimeout(this.deadlineTimers.get(operation.id))
+      this.deadlineTimers.delete(operation.id)
+      this.deadlines.delete(operation.id)
+      this.expired.delete(operation.id)
+      this.profileMutations.delete(operation.id)
+      this.recoveryErrors.delete(operation.id)
+      this.desktopManagedAttempts.delete(operation.id)
+      this.desktopRecoveryBaselines.delete(operation.id)
       this.abortControllers.delete(operation.id)
       const timer = setTimeout(() => {
         this.operations.delete(operation.id)
@@ -549,36 +531,142 @@ export class SkinLifecycle {
   }
 
   private async run(args: readonly string[], operation?: Operation): Promise<void> {
+    this.checkDeadline(operation)
     const controller = operation === undefined ? undefined : this.abortControllers.get(operation.id)
     if (controller?.signal.aborted === true) throw new Error('操作已取消')
     const ensurePnpm = this.options.runner.ensurePnpm
-    if (ensurePnpm !== undefined) await ensurePnpm({ signal: controller?.signal })
-    const tracker = operation === undefined ? undefined : new PnpmProgressTracker()
+    if (ensurePnpm !== undefined) await ensurePnpm({ signal: controller?.signal, timeoutMs: this.remainingTime(operation) })
     const effectiveArgs = pluginArgsFor(this.options.profileDir, args)
+    let attempt = 0
     try {
       await runPnpmWithRecovery(effectiveArgs, {
         profileDir: this.options.profileDir,
         attempt: async (attemptArgs, attemptOptions) => {
+          this.checkDeadline(operation)
+          const tracker = operation === undefined ? undefined : new PnpmProgressTracker()
           const commandArgs = tracker === undefined || attemptArgs.some(arg => arg.startsWith('--reporter')) ? attemptArgs : [...attemptArgs, '--reporter=ndjson']
-          return this.options.runner(this.options.profile, commandArgs, {
+          this.startCommand(operation, attemptArgs, ++attempt)
+          const result = await this.options.runner(this.options.profile, commandArgs, {
             signal: controller?.signal,
+            timeoutMs: Math.min(10 * 60 * 1000, this.remainingTime(operation) ?? 10 * 60 * 1000),
             env: { pnpm_config_fetch_timeout: String(10 * 60 * 1000), ...attemptOptions?.env },
             onStdout: chunk => tracker?.push(chunk, operation!),
             onStderr: chunk => tracker?.push(chunk, operation!),
           })
+          if (operation !== undefined) logEvent('info', 'command-finished', `attempt=${attempt} ${failureDiagnostic(result)}`, operation.id)
+          return result
         },
         onRetry: failure => {
           if (operation !== undefined) this.update(operation, operation.phase, recoveryMessage(failure))
         },
       })
     } catch (error) {
-      if (controller === undefined || controller.signal.aborted === false) await cleanOrphanedStore(this.options.runner, this.options.profile, operation?.id)
+      if (controller === undefined || controller.signal.aborted === false) {
+        await cleanOrphanedStore(this.options.runner, this.options.profile, operation?.id, { signal: controller?.signal, timeoutMs: Math.min(5000, this.remainingTime(operation) ?? 5000) })
+      }
+      throw error
+    }
+  }
+
+  private remainingTime(operation?: Operation): number | undefined {
+    const deadline = operation === undefined ? undefined : this.deadlines.get(operation.id)
+    return deadline === undefined ? undefined : Math.max(0, deadline - Date.now())
+  }
+
+  private checkDeadline(operation?: Operation): void {
+    if (operation !== undefined && this.remainingTime(operation) === 0) {
+      this.expired.add(operation.id)
+      this.abortControllers.get(operation.id)?.abort()
+      throw new Error('安装已达到总时限')
+    }
+    if (operation !== undefined && this.abortControllers.get(operation.id)?.signal.aborted === true) throw new Error('操作已取消')
+  }
+
+  private startCommand(operation: Operation | undefined, args: readonly string[], attempt: number, tracksMutation = true): void {
+    if (operation === undefined) return
+    const directoryIndex = args.indexOf('--dir')
+    const temporary = directoryIndex >= 0 && args[directoryIndex + 1] !== this.options.profileDir
+    const verb = args.find(arg => arg === 'add' || arg === 'install' || arg === 'remove')
+    if (tracksMutation && !temporary && verb !== undefined) this.profileMutations.set(operation.id, (this.profileMutations.get(operation.id) ?? 0) + 1)
+    operation.step = temporary ? '下载并检查安装包' : verb === 'remove' ? '移除插件依赖' : verb === 'install' ? '同步 profile 依赖' : '安装到 profile'
+    operation.attempt = attempt
+    operation.stepStartedAt = new Date().toISOString()
+    delete operation.lastOutputAt
+    delete operation.pnpmStage
+    delete operation.downloadedBytes
+    delete operation.totalBytes
+    delete operation.bytesPerSecond
+    logEvent('info', 'command-started', `${operation.step} attempt=${attempt}`, operation.id)
+  }
+
+  /** Restore metadata first, then reconcile dependencies once within a separate budget. */
+  private async recoverProfile(skin: SkinEntry, operation: Operation, snapshot: ProfileInstallSnapshot, mutationsBefore: number): Promise<void> {
+    clearTimeout(this.deadlineTimers.get(operation.id))
+    if (this.desktopManagedAttempts.has(operation.id)) {
+      // The host owns failed managed installs, including refusal before start.
+      // Only undo market work performed after a successful host transaction.
+      const baseline = this.desktopRecoveryBaselines.get(operation.id)
+      if (baseline === undefined) return
+      snapshot = baseline.snapshot
+      mutationsBefore = baseline.mutationsBefore
+    }
+    const restore = (): boolean => {
+      try {
+        restoreProfileInstallFiles(this.options.profileDir, skin.package, skin.install.version, snapshot)
+        return true
+      } catch (error) {
+        this.recoveryErrors.set(operation.id, '原有配置恢复未完成；请复制日志并修复 profile 后再操作')
+        logEvent('error', 'recovery-configuration', errorMessage(error), operation.id)
+        return false
+      }
+    }
+    if (!restore()) return
+    if ((this.profileMutations.get(operation.id) ?? 0) <= mutationsBefore) return
+    this.update(operation, 'installing', '安装未完成，正在恢复原有依赖')
+    operation.step = '恢复原有 profile 依赖'
+    operation.attempt = 1
+    operation.stepStartedAt = new Date().toISOString()
+    delete operation.lastOutputAt
+    delete operation.pnpmStage
+    delete operation.bytesPerSecond
+    delete operation.totalBytes
+    delete operation.downloadedBytes
+    const timeoutMs = this.options.recoveryTimeoutMs ?? RECOVERY_TIMEOUT_MS
+    const tracker = new PnpmProgressTracker()
+    logEvent('info', 'recovery-started', 'restoring previous dependencies (one attempt)', operation.id)
+    try {
+      const options: CommandOptions = {
+        timeoutMs,
+        signal: AbortSignal.timeout(timeoutMs),
+        onStdout: chunk => tracker.push(chunk, operation),
+        onStderr: chunk => tracker.push(chunk, operation),
+      }
+      const result = await this.options.runner(this.options.profile, ['install', '--prefer-offline', '--reporter=ndjson'], options)
+      logEvent('info', 'recovery-finished', failureDiagnostic(result), operation.id)
+      if (result.exitCode !== 0 || result.timedOut || result.aborted) throw new Error('recovery did not complete')
+    } catch (error) {
+      this.recoveryErrors.set(operation.id, '原有配置已恢复，但依赖恢复未完成；请复制日志后修复 profile 依赖')
+      logEvent('error', 'recovery-dependencies', errorMessage(error), operation.id)
+    } finally {
+      // pnpm may rewrite the lockfile even during a failed recovery.
+      restore()
+    }
+  }
+
+  private async prepareProfile(skin: SkinEntry, operation: Operation, prepare: () => Promise<void>): Promise<void> {
+    const snapshot = snapshotInstallFiles(this.options.profileDir, skin.package, skin.install.version)
+    const mutationsBefore = this.profileMutations.get(operation.id) ?? 0
+    try {
+      await prepare()
+    } catch (error) {
+      await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
       throw error
     }
   }
 
   private async installPackage(skin: SkinEntry, operation: Operation, state: PersistedMarketState): Promise<void> {
     if (this.hostKind === 'desktop') {
+      this.desktopManagedAttempts.add(operation.id)
       const capability = skin.install.desktop
       if (capability?.mode !== 'managed') throw new Error(desktopInstallError(capability))
       if (capability.packageName !== skin.package || capability.packageVersion !== skin.install.version) {
@@ -596,12 +684,21 @@ export class SkinLifecycle {
         pnpmOptions: ['--prefer-offline', '--reporter=ndjson'],
       }
       await runPnpmWithRecovery(request.pnpmOptions ?? [], {
-        attempt: (pnpmOptions) => installPlugin(this.options.profile, { ...request, pnpmOptions }, {
+        attempt: (pnpmOptions) => {
+          this.checkDeadline(operation)
+          this.startCommand(operation, ['add'], (operation.attempt ?? 0) + 1, false)
+          return installPlugin(this.options.profile, { ...request, pnpmOptions }, {
           signal: controller?.signal,
+          timeoutMs: Math.min(10 * 60 * 1000, this.remainingTime(operation) ?? 10 * 60 * 1000),
           onStdout: chunk => tracker.push(chunk, operation),
           onStderr: chunk => tracker.push(chunk, operation),
-        }),
+          })
+        },
         onRetry: failure => this.update(operation, operation.phase, recoveryMessage(failure)),
+      })
+      this.desktopRecoveryBaselines.set(operation.id, {
+        snapshot: snapshotInstallFiles(this.options.profileDir, skin.package, skin.install.version),
+        mutationsBefore: this.profileMutations.get(operation.id) ?? 0,
       })
       return
     }
@@ -611,7 +708,7 @@ export class SkinLifecycle {
     assertNoLoaderConflicts(this.options.profileDir, skin, prefetched.loaderRows)
     this.assertRuntimeLoaderConflicts(skin, prefetched.loaderRows)
     this.update(operation, 'installing')
-    const buildApprovalKey = buildApprovalKeyForTarget(skin, prefetched.target) ?? effectiveBuildApprovalKey(skin)
+    const buildApprovalKey = isNpmInstallTarget(skin, prefetched.target) ? undefined : buildApprovalKeyForTarget(skin, prefetched.target) ?? effectiveBuildApprovalKey(skin)
     if (buildApprovalKey !== undefined) ensureBuildAllowed(this.options.profileDir, buildApprovalKey)
     await this.installCompanions(skin, operation, state)
     await this.run(['add', prefetched.target, '--prefer-offline', ...(isNpmInstallTarget(skin, prefetched.target) ? ['--save-exact'] : [])], operation)
@@ -741,16 +838,24 @@ export class SkinLifecycle {
     let directory = mkdtempSync(join(tmpdir(), 'dsh-skin-market-download-'))
     try {
       this.preparePrefetchDirectory(directory, this.prefetchBuildApprovals(skin, operation, target))
-      await this.run(['add', target, '--dir', directory, '--ignore-scripts'], operation)
+      await this.run(['add', target, '--dir', directory, '--ignore-scripts', '--config.auto-install-peers=false', ...(isNpmInstallTarget(skin, target) ? ['--save-exact'] : [])], operation)
       const redirected = discoverMonorepoTarget(directory, skin, target)
       if (redirected !== null) {
         target = redirected
         rmSync(directory, { recursive: true, force: true })
         directory = mkdtempSync(join(tmpdir(), 'dsh-skin-market-download-'))
         this.preparePrefetchDirectory(directory, this.prefetchBuildApprovals(skin, operation, target))
-        await this.run(['add', target, '--dir', directory, '--ignore-scripts'], operation)
+        await this.run(['add', target, '--dir', directory, '--ignore-scripts', '--config.auto-install-peers=false'], operation)
       }
       const packageDirectory = join(directory, 'node_modules', ...skin.package.split('/'))
+      if (isNpmInstallTarget(skin, target)) {
+        if (readDependencies(directory)[skin.package] !== skin.install.npm?.version) {
+          throw new Error('下载的 npm 依赖未记录目录固定版本，已停止安装')
+        }
+        const validation = validateInstalledSkin(directory, skin)
+        if (!validation.ok) throw new Error(validation.reason)
+        if (validation.version !== skin.install.version) throw new Error('下载的 npm 包版本与目录固定版本不一致')
+      }
       const packageRows = packageLoaderOwnershipAt(packageDirectory, skin.package)
       if (packageRows.hasBundle) {
         const primaryRows = packageRows.rows.filter(row => row.name === skin.package)
@@ -778,19 +883,26 @@ export class SkinLifecycle {
   private async install(operation: Operation): Promise<void> {
     const skin = this.skin(operation.skinId)
     this.applyPendingBuildApprovals(operation)
-    await this.syncPnpmMetadata(operation, '正在修复 profile 的 pnpm 锁文件')
+    if (this.hostKind !== 'desktop') {
+      await this.prepareProfile(skin, operation, () => this.syncPnpmMetadata(operation, '正在修复 profile 的 pnpm 锁文件'))
+    }
     const existingSpec = readDependencies(this.options.profileDir)[skin.package]
     if (existingSpec !== undefined) {
       let validation = validateInstalledSkin(this.options.profileDir, skin)
       if (!validation.ok && validation.repairable === true) {
-        await this.repairMaterializedPackage(skin, operation)
-        validation = validateInstalledSkin(this.options.profileDir, skin)
+        await this.prepareProfile(skin, operation, async () => {
+          if (this.hostKind === 'desktop') await this.installPackage(skin, operation, readMarketState(this.options.profileDir))
+          else await this.repairMaterializedPackage(skin, operation)
+          validation = validateInstalledSkin(this.options.profileDir, skin)
+          if (!validation.ok) throw new Error(validation.reason)
+        })
       }
       if (!validation.ok) throw new Error(validation.reason)
       if (!installedSpecMatches(skin, existingSpec)) {
         throw new Error(`installed package ${skin.package} does not match the reviewed source/version; use Update to replace it with ${skin.install.target}`)
       }
       const snapshot = snapshotInstallFiles(this.options.profileDir, skin.package, skin.install.version)
+      const mutationsBefore = this.profileMutations.get(operation.id) ?? 0
       const state = readMarketState(this.options.profileDir)
       try {
         await this.installCompanions(skin, operation, state)
@@ -803,19 +915,16 @@ export class SkinLifecycle {
         operation.message = 'skin was already installed; market state reconciled'
         return
       } catch (error) {
-        restoreProfileInstallFiles(this.options.profileDir, skin.package, skin.install.version, snapshot)
-        if (this.abortControllers.get(operation.id)?.signal.aborted !== true) {
-          try { await this.run(['install'], operation) } catch { /* retain original failure */ }
-        }
-        restoreProfileInstallFiles(this.options.profileDir, skin.package, skin.install.version, snapshot)
+        await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
         throw error
       }
     }
     const snapshot = snapshotInstallFiles(this.options.profileDir, skin.package, skin.install.version)
-    const detachedPatchFiles = detachCompatibilityPatches(this.options.profileDir, skin.package)
+    const mutationsBefore = this.profileMutations.get(operation.id) ?? 0
+    const detachedPatchFiles = this.hostKind === 'desktop' ? [] : detachCompatibilityPatches(this.options.profileDir, skin.package)
     this.update(operation, 'resolving')
     try {
-      await this.syncPnpmMetadata(operation, '正在清理旧的兼容适配')
+      if (this.hostKind !== 'desktop') await this.syncPnpmMetadata(operation, '正在清理旧的兼容适配')
       this.update(operation, 'downloading')
       const state = readMarketState(this.options.profileDir)
       await this.installPackage(skin, operation, state)
@@ -836,17 +945,7 @@ export class SkinLifecycle {
       cleanupCompatibilityPatchFiles(detachedPatchFiles.filter(file => file !== compatibilityPatchFile(this.options.profileDir, skin.package, skin.install.version)))
       operation.message = 'installed; choose Use to activate'
     } catch (error) {
-      const addedTarget = existingSpec === undefined && readDependencies(this.options.profileDir)[skin.package] !== undefined
-      if (addedTarget && this.abortControllers.get(operation.id)?.signal.aborted !== true) {
-        try { await this.run(['remove', skin.package], operation) } catch { /* restore below remains authoritative */ }
-      }
-      restoreProfileInstallFiles(this.options.profileDir, skin.package, skin.install.version, snapshot)
-      if (this.abortControllers.get(operation.id)?.signal.aborted !== true) {
-        try { await this.run(['install']) } catch { /* retain the original failure */ }
-      }
-      // The repair install may rewrite pnpm-lock.yaml while it restores node_modules.
-      // Keep the profile metadata byte-for-byte identical to its pre-operation state.
-      restoreProfileInstallFiles(this.options.profileDir, skin.package, skin.install.version, snapshot)
+      await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
       throw error
     }
   }
@@ -976,14 +1075,17 @@ export class SkinLifecycle {
   private async updateSkin(operation: Operation): Promise<void> {
     const skin = this.skin(operation.skinId)
     this.applyPendingBuildApprovals(operation)
-    await this.syncPnpmMetadata(operation, '正在修复 profile 的 pnpm 锁文件')
+    if (this.hostKind !== 'desktop') {
+      await this.prepareProfile(skin, operation, () => this.syncPnpmMetadata(operation, '正在修复 profile 的 pnpm 锁文件'))
+    }
     const previousState = readMarketState(this.options.profileDir)
     const wasActive = enabledSkinIds(previousState).has(skin.id)
     const snapshot = snapshotInstallFiles(this.options.profileDir, skin.package, skin.install.version)
-    const detachedPatchFiles = detachCompatibilityPatches(this.options.profileDir, skin.package)
+    const mutationsBefore = this.profileMutations.get(operation.id) ?? 0
+    const detachedPatchFiles = this.hostKind === 'desktop' ? [] : detachCompatibilityPatches(this.options.profileDir, skin.package)
     this.update(operation, 'resolving')
     try {
-      await this.syncPnpmMetadata(operation, '正在清理旧的兼容适配')
+      if (this.hostKind !== 'desktop') await this.syncPnpmMetadata(operation, '正在清理旧的兼容适配')
       this.update(operation, 'downloading')
       await this.installPackage(skin, operation, previousState)
       await this.applyCompatibility(skin, operation)
@@ -1004,13 +1106,7 @@ export class SkinLifecycle {
       cleanupCompatibilityPatchFiles(detachedPatchFiles.filter(file => file !== compatibilityPatchFile(this.options.profileDir, skin.package, skin.install.version)))
       operation.message = wasActive ? 'updated and kept active' : 'updated and kept inactive'
     } catch (error) {
-      restoreProfileInstallFiles(this.options.profileDir, skin.package, skin.install.version, snapshot)
-      if (this.abortControllers.get(operation.id)?.signal.aborted !== true) {
-        try { await this.run(['install']) } catch { /* retain original failure */ }
-      }
-      // The repair install may rewrite pnpm-lock.yaml while it restores node_modules.
-      // Keep the profile metadata byte-for-byte identical to its pre-operation state.
-      restoreProfileInstallFiles(this.options.profileDir, skin.package, skin.install.version, snapshot)
+      await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
       throw error
     }
   }
@@ -1019,7 +1115,7 @@ export class SkinLifecycle {
     const skin = this.skin(operation.skinId)
     if (readDependencies(this.options.profileDir)[skin.package] === undefined) throw new Error('skin is not installed')
     const snapshot = snapshotInstallFiles(this.options.profileDir, skin.package, skin.install.version)
-    const marketStateSnapshot = snapshotFile(marketStateFile(this.options.profileDir))
+    const mutationsBefore = this.profileMutations.get(operation.id) ?? 0
     const loaderRowsBefore = installedLoaderIdentities(this.options.profileDir)
     let detachedPatchFiles: string[] = []
     try {
@@ -1055,13 +1151,7 @@ export class SkinLifecycle {
       cleanupCompatibilityPatchFiles(detachedPatchFiles)
       operation.message = 'skin uninstalled'
     } catch (error) {
-      restoreProfileInstallFiles(this.options.profileDir, skin.package, skin.install.version, snapshot)
-      restoreFile(marketStateFile(this.options.profileDir), marketStateSnapshot)
-      if (this.abortControllers.get(operation.id)?.signal.aborted !== true) {
-        try { await this.run(['install'], operation) } catch { /* retain original failure */ }
-      }
-      restoreProfileInstallFiles(this.options.profileDir, skin.package, skin.install.version, snapshot)
-      restoreFile(marketStateFile(this.options.profileDir), marketStateSnapshot)
+      await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
       throw error
     }
   }

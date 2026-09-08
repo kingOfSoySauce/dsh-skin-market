@@ -610,17 +610,18 @@ describe('skin lifecycle', () => {
     const skin = {
       ...base,
       id: 'npm-priority.skin',
-      install: { ...base.install, npm: { name: base.package, version: base.install.version, integrity, repository: base.repo } },
+      install: { ...base.install, npm: { name: base.package, version: base.install.version, integrity, repository: base.repo, gitHead: base.install.commit } },
     }
     const calls: string[][] = []
     const runner: PluginRunner = async (_profile, args) => {
       calls.push([...args])
-      if (args[0] === 'add' && !args.includes('--dir')) {
-        atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.version } })
-        const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
+      if (args[0] === 'add') {
+        const targetDir = args.includes('--dir') ? args[args.indexOf('--dir') + 1]! : dir
+        atomicWriteJson(join(targetDir, 'package.json'), { dependencies: { [skin.package]: skin.install.version } })
+        const packageDir = join(targetDir, 'node_modules', ...skin.package.split('/'))
         mkdirSync(packageDir, { recursive: true })
         atomicWriteJson(join(packageDir, 'package.json'), { name: skin.package, version: skin.install.version, repository: { type: 'git', url: `git+${skin.repo}.git` }, dsh: { client: { platform: 'web' } } })
-        atomicWriteText(join(dir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\npackages:\n  '${skin.package}@${skin.install.version}':\n    resolution:\n      integrity: ${integrity}\n`)
+        atomicWriteText(join(targetDir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\npackages:\n  '${skin.package}@${skin.install.version}':\n    resolution:\n      integrity: ${integrity}\n`)
       }
       return success()
     }
@@ -1070,13 +1071,13 @@ describe('skin lifecycle', () => {
     expect(liveAdd).toBe(0)
   })
 
-  it('removes a package and restores the profile after a post-install loader conflict', async () => {
+  it('restores the original dependency graph once after a post-install loader conflict', async () => {
     const dir = fixture()
     const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() })
     const base = firstInstallable(probe)
     const skin = { ...base, id: 'post-install-conflict.skin', rowId: 'incoming-loader' }
     let liveAdd = 0
-    let removeCalls = 0
+    let recoveryCalls = 0
     const runner: PluginRunner = async (_profile, args) => {
       if (args.includes('--dir')) {
         const temporary = args[args.indexOf('--dir') + 1]!
@@ -1091,9 +1092,9 @@ describe('skin lifecycle', () => {
         atomicWriteText(profilePatchFile(dir), `- insert:\n    - id: ${skin.rowId}\n      name: another-installed-plugin\n`)
         return success()
       }
-      if (args[0] === 'remove') {
-        removeCalls += 1
-        atomicWriteJson(join(dir, 'package.json'), { dependencies: {} })
+      if (args[0] === 'install') {
+        recoveryCalls += 1
+        expect(readDependencies(dir)).toEqual({})
       }
       return success()
     }
@@ -1104,7 +1105,7 @@ describe('skin lifecycle', () => {
     expect(operation).toMatchObject({ phase: 'failed', failure: { kind: 'conflict' } })
     expect(operation.message).toContain('another-installed-plugin')
     expect(liveAdd).toBe(1)
-    expect(removeCalls).toBe(1)
+    expect(recoveryCalls).toBe(1)
     expect(readDependencies(dir)).toEqual({})
     expect(existsSync(profilePatchFile(dir))).toBe(false)
   })

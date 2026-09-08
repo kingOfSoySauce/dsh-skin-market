@@ -1,6 +1,8 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import { join, relative, sep } from 'node:path'
 import type { SkinCompanion, SkinEntry } from './types.ts'
+import { npmInstallTarget } from './install-source.ts'
+export { npmInstallTarget, preferredInstallTarget } from './install-source.ts'
 
 interface PackageManifest {
   name?: unknown
@@ -46,15 +48,6 @@ export function parseGithubTarget(target: string): GithubTargetParts | null {
   } catch {
     return null
   }
-}
-
-export function npmInstallTarget(skin: SkinEntry): string | null {
-  const npm = skin.install.npm
-  return npm === undefined ? null : `${npm.name}@${npm.version}`
-}
-
-export function preferredInstallTarget(skin: SkinEntry): string {
-  return npmInstallTarget(skin) ?? skin.install.target
 }
 
 export function companionAsSkin(skin: SkinEntry, companion: SkinCompanion): SkinEntry {

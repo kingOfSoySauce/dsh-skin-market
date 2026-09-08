@@ -13,6 +13,8 @@ export interface CommandResult {
 
 export interface CommandOptions {
   signal?: AbortSignal
+  /** Remaining command budget; provisioning shares it across all setup steps. */
+  timeoutMs?: number
   env?: NodeJS.ProcessEnv
   onStdout?: (chunk: string) => void
   onStderr?: (chunk: string) => void
@@ -124,6 +126,18 @@ function spawnShim(file: string, args: readonly string[], options: SpawnShimOpti
 
 const PROVISION_COMMAND_TIMEOUT_MS = 120_000
 
+function commandTimeout(options: CommandOptions | undefined, fallback: number): number {
+  const value = options?.timeoutMs
+  return value === undefined || !Number.isFinite(value) ? fallback : Math.max(0, value)
+}
+
+function stoppedBeforeStart(options?: CommandOptions): CommandResult | undefined {
+  const aborted = options?.signal?.aborted === true
+  const timedOut = options?.timeoutMs !== undefined && options.timeoutMs <= 0
+  if (!aborted && !timedOut) return undefined
+  return { exitCode: null, stdout: '', stderr: '', timedOut: !aborted && timedOut, aborted }
+}
+
 function commandEnvironment(options?: CommandOptions): NodeJS.ProcessEnv {
   const env: NodeJS.ProcessEnv = { ...process.env, ...normalizedEnvironment(options), CI: 'true' }
   if (process.platform !== 'win32') {
@@ -136,37 +150,76 @@ function commandEnvironment(options?: CommandOptions): NodeJS.ProcessEnv {
   return env
 }
 
-const runCommand: CommandExecutor = (file, args, options) => new Promise(resolvePromise => {
-  const child = spawnShim(file, args, {
-    env: commandEnvironment(options),
-    stdio: ['ignore', 'pipe', 'pipe'],
-    detached: process.platform !== 'win32',
-    viaShell: winCmdShim,
+function runProcess(invocation: PluginProcess, defaultTimeoutMs: number, options?: CommandOptions): Promise<CommandResult> {
+  const stopped = stoppedBeforeStart(options)
+  if (stopped !== undefined) return Promise.resolve(stopped)
+  return new Promise(resolvePromise => {
+    const child = spawnShim(invocation.file, invocation.argv, {
+      cwd: invocation.cwd,
+      env: commandEnvironment(options),
+      stdio: ['ignore', 'pipe', 'pipe'],
+      detached: process.platform !== 'win32',
+      viaShell: invocation.viaShell,
+    })
+    let stdout = ''
+    let stderr = ''
+    let timedOut = false
+    let aborted = false
+    let closed = false
+    let forceTimer: ReturnType<typeof setTimeout> | undefined
+    const kill = (signal: NodeJS.Signals): void => {
+      if (closed) return
+      const killChild = (): void => {
+        if (closed) return
+        try { child.kill(signal) } catch { /* already gone */ }
+      }
+      if (process.platform === 'win32' && child.pid !== undefined) {
+        let fellBack = false
+        const fallback = (): void => {
+          if (fellBack) return
+          fellBack = true
+          killChild()
+        }
+        try {
+          const cleanup = spawn('taskkill', ['/pid', String(child.pid), '/t', '/f'], { stdio: 'ignore', windowsHide: true })
+          cleanup.once('error', fallback)
+          cleanup.once('close', code => { if (code !== 0) fallback() })
+        } catch { fallback() }
+        return
+      }
+      // A wrapper may have exited while its descendants still hold our pipes.
+      // Keep signalling its process group until close confirms the run is over.
+      try {
+        if (child.pid === undefined) killChild()
+        else process.kill(-child.pid, signal)
+      } catch { killChild() }
+    }
+    child.stdout?.on('data', chunk => { const value = String(chunk); stdout += value; options?.onStdout?.(value) })
+    child.stderr?.on('data', chunk => { const value = String(chunk); stderr += value; options?.onStderr?.(value) })
+    const abort = (): void => {
+      if (aborted || closed) return
+      aborted = true
+      kill('SIGTERM')
+      forceTimer = setTimeout(() => kill('SIGKILL'), 3000)
+      forceTimer.unref?.()
+    }
+    options?.signal?.addEventListener('abort', abort, { once: true })
+    if (options?.signal?.aborted === true) abort()
+    const timer = setTimeout(() => { timedOut = true; kill('SIGKILL') }, commandTimeout(options, defaultTimeoutMs))
+    child.on('error', error => { stderr += error.message })
+    child.on('close', exitCode => {
+      closed = true
+      clearTimeout(timer)
+      if (forceTimer !== undefined) clearTimeout(forceTimer)
+      options?.signal?.removeEventListener('abort', abort)
+      resolvePromise({ exitCode, stdout, stderr, timedOut, aborted })
+    })
   })
-  let stdout = ''
-  let stderr = ''
-  let timedOut = false
-  let aborted = options?.signal?.aborted === true
-  const kill = (signal: NodeJS.Signals): void => {
-    if (child.pid === undefined || child.exitCode !== null) return
-    try {
-      if (process.platform === 'win32') child.kill(signal)
-      else process.kill(-child.pid, signal)
-    } catch { /* the process may have exited between the checks */ }
-  }
-  child.stdout?.on('data', chunk => { const value = String(chunk); stdout += value; options?.onStdout?.(value) })
-  child.stderr?.on('data', chunk => { const value = String(chunk); stderr += value; options?.onStderr?.(value) })
-  const abort = (): void => { aborted = true; kill('SIGTERM') }
-  options?.signal?.addEventListener('abort', abort, { once: true })
-  if (aborted) abort()
-  const timer = setTimeout(() => { timedOut = true; kill('SIGKILL') }, PROVISION_COMMAND_TIMEOUT_MS)
-  child.on('error', error => { stderr += error.message })
-  child.on('close', exitCode => {
-    clearTimeout(timer)
-    options?.signal?.removeEventListener('abort', abort)
-    resolvePromise({ exitCode, stdout, stderr, timedOut, aborted })
-  })
-})
+}
+
+const runCommand: CommandExecutor = (file, args, options) => runProcess(
+  { file, argv: [...args], viaShell: winCmdShim }, PROVISION_COMMAND_TIMEOUT_MS, options,
+)
 
 function addPath(env: NodeJS.ProcessEnv, directory: string): NodeJS.ProcessEnv {
   if (directory === '') return env
@@ -183,17 +236,32 @@ function commandOutput(result: CommandResult): string {
 export function createPnpmProvisioner(execute: CommandExecutor = runCommand): (options?: CommandOptions) => Promise<void> {
   let ready: Promise<void> | null = null
   return async (options?: CommandOptions): Promise<void> => {
+    if (options?.signal?.aborted === true) throw new Error('操作已取消')
     if (ready !== null) return ready
     ready = (async () => {
       let env = commandEnvironment(options)
-      const probe = async (): Promise<CommandResult> => execute('pnpm', ['--version'], { signal: options?.signal, env })
+      const deadline = options?.timeoutMs === undefined ? undefined : Date.now() + commandTimeout(options, PROVISION_COMMAND_TIMEOUT_MS)
+      const step = async (file: string, args: readonly string[]): Promise<CommandResult> => {
+        if (options?.signal?.aborted === true) throw new Error('操作已取消')
+        const remaining = deadline === undefined ? undefined : deadline - Date.now()
+        if (remaining !== undefined && remaining <= 0) throw new Error('pnpm 准备超时，已停止；请检查工具环境后重试')
+        const result = await execute(file, args, {
+          ...options,
+          env,
+          ...(remaining === undefined ? {} : { timeoutMs: Math.min(PROVISION_COMMAND_TIMEOUT_MS, remaining) }),
+        })
+        if (result.aborted === true || Boolean(options?.signal?.aborted)) throw new Error('操作已取消')
+        if (result.timedOut) throw new Error('pnpm 准备超时，已停止；请检查工具环境后重试')
+        return result
+      }
+      const probe = (): Promise<CommandResult> => step('pnpm', ['--version'])
       if ((await probe()).exitCode === 0) return
 
-      const corepack = await execute('corepack', ['enable', 'pnpm'], { signal: options?.signal, env })
+      const corepack = await step('corepack', ['enable', 'pnpm'])
       if ((await probe()).exitCode === 0) return
 
-      const npmInstall = await execute('npm', ['install', '--global', 'pnpm'], { signal: options?.signal, env })
-      const prefix = await execute('npm', ['prefix', '--global'], { signal: options?.signal, env })
+      const npmInstall = await step('npm', ['install', '--global', 'pnpm'])
+      const prefix = await step('npm', ['prefix', '--global'])
       if (prefix.exitCode === 0) {
         const globalPrefix = prefix.stdout.trim().split(/\r?\n/).at(-1)?.trim() ?? ''
         env = addPath(env, process.platform === 'win32' ? globalPrefix : join(globalPrefix, 'bin'))
@@ -216,60 +284,9 @@ export function createPnpmProvisioner(execute: CommandExecutor = runCommand): (o
 
 export const ensurePnpmAvailable = createPnpmProvisioner()
 
-export const runPluginCli: PluginRunner = (profile, args, options) => new Promise(resolvePromise => {
-  const invocation = pluginProcess(profile, args)
-  const env: NodeJS.ProcessEnv = { ...process.env, ...normalizedEnvironment(options), CI: 'true' }
-  if (process.platform !== 'win32') {
-    const parts = (env.PATH ?? '').split(':').filter(Boolean)
-    for (const value of ['/opt/homebrew/bin', '/usr/local/bin', join(process.env.HOME ?? '', '.local', 'bin')]) {
-      if (value !== '' && !parts.includes(value)) parts.push(value)
-    }
-    env.PATH = parts.join(':')
-  }
-  const child = spawnShim(invocation.file, invocation.argv, {
-    cwd: invocation.cwd,
-    env,
-    stdio: ['ignore', 'pipe', 'pipe'],
-    detached: process.platform !== 'win32',
-    viaShell: invocation.viaShell,
-  })
-  let stdout = ''
-  let stderr = ''
-  let timedOut = false
-  let aborted = options?.signal?.aborted === true
-  const kill = (signal: NodeJS.Signals): void => {
-    if (child.pid === undefined || child.exitCode !== null) return
-    try {
-      if (process.platform === 'win32') child.kill(signal)
-      else process.kill(-child.pid, signal)
-    } catch { /* the process may have exited between the checks */ }
-  }
-  child.stdout?.on('data', chunk => {
-    const value = String(chunk)
-    stdout += value
-    options?.onStdout?.(value)
-  })
-  child.stderr?.on('data', chunk => {
-    const value = String(chunk)
-    stderr += value
-    options?.onStderr?.(value)
-  })
-  const abort = (): void => {
-    aborted = true
-    kill('SIGTERM')
-    const forceTimer = setTimeout(() => kill('SIGKILL'), 3000)
-    forceTimer.unref?.()
-  }
-  options?.signal?.addEventListener('abort', abort, { once: true })
-  if (aborted) abort()
-  const timer = setTimeout(() => { timedOut = true; kill('SIGKILL') }, PLUGIN_COMMAND_TIMEOUT_MS)
-  child.on('error', error => { stderr += error.message })
-  child.on('close', exitCode => {
-    clearTimeout(timer)
-    options?.signal?.removeEventListener('abort', abort)
-    resolvePromise({ exitCode, stdout, stderr, timedOut, aborted })
-  })
-})
+export const runPluginCli: PluginRunner = (profile, args, options) => runProcess(
+  pluginProcess(profile, args), PLUGIN_COMMAND_TIMEOUT_MS, options,
+)
 runPluginCli.ensurePnpm = ensurePnpmAvailable
 
 export interface DesktopPnpmLike {
@@ -317,7 +334,13 @@ async function collectDesktopOperation(
     stderr += value
     options?.onStderr?.(value)
   })
-  const cancel = (): void => operation.cancel()
+  const cancel = (): void => {
+    try { operation.cancel() } catch {
+      // An AbortSignal listener must not throw into the host's event loop.
+      // Keep waiting for done; a failed cancellation is not a stopped process.
+      stderr += '\nDesktop 取消请求失败；正在等待宿主操作结束'
+    }
+  }
   signal.addEventListener('abort', cancel, { once: true })
   if (signal.aborted) cancel()
   try {
@@ -347,8 +370,10 @@ async function runDesktopOperation(
   start: (signal: AbortSignal) => DesktopOperation | Promise<DesktopOperation>,
   options?: CommandOptions,
 ): Promise<CommandResult> {
+  const stopped = stoppedBeforeStart(options)
+  if (stopped !== undefined) return stopped
   const timeout = new AbortController()
-  const timer = setTimeout(() => timeout.abort(), PLUGIN_COMMAND_TIMEOUT_MS)
+  const timer = setTimeout(() => timeout.abort(), commandTimeout(options, PLUGIN_COMMAND_TIMEOUT_MS))
   const signal = options?.signal === undefined ? timeout.signal : AbortSignal.any([options.signal, timeout.signal])
   try {
     const operation = await start(signal)
@@ -382,7 +407,7 @@ export function desktopRunner(service: DesktopPnpmLike, profileDir: string): Plu
 
 export function commandError(result: CommandResult): string {
   if (result.aborted) return '操作已取消'
-  if (result.timedOut) return '插件安装超过 10 分钟，已停止；请检查网络后重试'
+  if (result.timedOut) return '插件命令执行超时，已停止；请复制日志查看失败步骤'
   const output = `${result.stdout}\n${result.stderr}`.trim()
   if (/\[23\].*aborted due to timeout|TimeoutError: The operation was aborted due to timeout/is.test(output)) {
     return 'GitHub 插件下载超时；安装包较大或当前网络较慢，请检查网络后重试'

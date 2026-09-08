@@ -81,23 +81,109 @@ describe('profile state', () => {
     expect(runtimeState(dir, skin, null, false, true)).toMatchObject({ installation: 'installed', updateAvailable: true })
   })
 
-  it('validates the reviewed npm repository and lockfile integrity', () => {
+  it.each(['version', 'package', 'alias'])('validates the reviewed npm repository and lockfile integrity for a %s spec', form => {
     const dir = fixture()
     const base = loadCatalog().skins[0]
     const integrity = 'sha512-abc'
     const skin = {
       ...base,
-      install: { ...base.install, npm: { name: base.package, version: base.install.version, integrity, repository: base.repo } },
+      install: { ...base.install, npm: { name: base.package, version: base.install.version, integrity, repository: base.repo, gitHead: base.install.commit } },
     }
     const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
     mkdirSync(packageDir, { recursive: true })
-    atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.version } })
+    const spec = form === 'version' ? skin.install.version : `${form === 'alias' ? 'npm:' : ''}${skin.package}@${skin.install.version}`
+    atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: spec } })
     atomicWriteJson(join(packageDir, 'package.json'), { name: skin.package, version: skin.install.version, repository: { type: 'git', url: `git+${skin.repo}.git` }, dsh: { client: { platform: 'web' } } })
     atomicWriteText(join(dir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\npackages:\n  '${skin.package}@${skin.install.version}':\n    resolution:\n      integrity: ${integrity}\n`)
 
     expect(validateInstalledSkin(dir, skin)).toMatchObject({ ok: true, version: skin.install.version })
     atomicWriteText(join(dir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\npackages:\n  '${skin.package}@${skin.install.version}':\n    resolution:\n      integrity: sha512-other\n`)
     expect(validateInstalledSkin(dir, skin)).toMatchObject({ ok: false, reason: expect.stringContaining('integrity mismatch') })
+  })
+
+  it('keeps an existing pinned GitHub installation healthy when the catalog adds npm', () => {
+    const dir = fixture()
+    const base = loadCatalog().skins[0]
+    const skin = {
+      ...base,
+      install: { ...base.install, npm: { name: base.package, version: base.install.version, integrity: 'sha512-reviewed', repository: base.repo, gitHead: base.install.commit } },
+    }
+    atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
+    atomicWriteJson(join(dir, 'node_modules', ...skin.package.split('/'), 'package.json'), {
+      name: skin.package, version: skin.install.version, dsh: { client: { platform: 'web' } },
+    })
+
+    expect(validateInstalledSkin(dir, skin)).toMatchObject({ ok: true, version: skin.install.version })
+    expect(installedSpecMatches(skin, skin.install.target)).toBe(true)
+    expect(runtimeState(dir, skin, skin.id, true, true)).toMatchObject({ installation: 'installed', activation: 'active', updateAvailable: false })
+  })
+
+  it.each(['github', 'npm'])('keeps an older %s installation updateable when a newer npm artifact is reviewed', source => {
+    const dir = fixture()
+    const base = loadCatalog().skins[0]
+    const oldVersion = '0.0.0'
+    const skin = {
+      ...base,
+      install: { ...base.install, npm: { name: base.package, version: base.install.version, integrity: 'sha512-reviewed', repository: base.repo, gitHead: base.install.commit } },
+    }
+    const spec = source === 'github' ? skin.install.target.replace(skin.install.commit, '0'.repeat(40)) : oldVersion
+    atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: spec } })
+    atomicWriteJson(join(dir, 'node_modules', ...skin.package.split('/'), 'package.json'), {
+      name: skin.package, version: oldVersion, dsh: { client: { platform: 'web' } },
+    })
+
+    expect(runtimeState(dir, skin, skin.id, true, true)).toMatchObject({
+      installation: 'installed', activation: 'active', installedVersion: oldVersion, updateAvailable: true,
+    })
+  })
+
+  it.each(['version', 'repository'])('rejects an npm artifact with a mismatched %s despite matching integrity', field => {
+    const dir = fixture()
+    const base = loadCatalog().skins[0]
+    const integrity = 'sha512-reviewed'
+    const skin = {
+      ...base,
+      install: { ...base.install, npm: { name: base.package, version: base.install.version, integrity, repository: base.repo, gitHead: base.install.commit } },
+    }
+    atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.version } })
+    atomicWriteJson(join(dir, 'node_modules', ...skin.package.split('/'), 'package.json'), {
+      name: skin.package,
+      version: field === 'version' ? '0.0.0' : skin.install.version,
+      repository: field === 'repository' ? 'https://github.com/another/skin' : skin.repo,
+      dsh: { client: { platform: 'web' } },
+    })
+    atomicWriteText(join(dir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\npackages:\n  '${skin.package}@${skin.install.version}':\n    resolution:\n      integrity: ${integrity}\n`)
+
+    expect(validateInstalledSkin(dir, skin)).toMatchObject({ ok: false, reason: expect.stringContaining(`${field} mismatch`) })
+  })
+
+  it.each([
+    ['https://github.com/OWNER/THEME/', true],
+    ['git+https://github.com/owner/theme.git', true],
+    ['github:owner/theme', true],
+    ['git://github.com/owner/theme.git', true],
+    ['http://github.com/owner/theme', true],
+    ['git@github.com:owner/theme.git', true],
+    ['ssh://git@github.com/owner/theme.git', true],
+    ['https://github.com.evil.test/Owner/Theme', false],
+    ['https://example.test/github.com/Owner/Theme', false],
+    ['https://github.com/Another/Theme', false],
+  ])('uses the same GitHub identity rules as npm archive review for %s', (repository, accepted) => {
+    const dir = fixture()
+    const base = loadCatalog().skins[0]
+    const integrity = 'sha512-reviewed'
+    const skin = {
+      ...base,
+      repo: 'https://github.com/Owner/Theme',
+      install: { ...base.install, npm: { name: base.package, version: base.install.version, integrity, repository: 'https://github.com/Owner/Theme', gitHead: base.install.commit } },
+    }
+    atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.version } })
+    atomicWriteJson(join(dir, 'node_modules', ...skin.package.split('/'), 'package.json'), {
+      name: skin.package, version: skin.install.version, repository: { type: 'git', url: repository }, dsh: { client: { platform: 'web' } },
+    })
+    atomicWriteText(join(dir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\npackages:\n  '${skin.package}@${skin.install.version}':\n    resolution:\n      integrity: ${integrity}\n`)
+
+    expect(validateInstalledSkin(dir, skin).ok).toBe(accepted)
   })
 
   it('detects a duplicate loader row before market registration', () => {
@@ -309,6 +395,30 @@ describe('profile state', () => {
     expect(installedSpecMatches(skin, skin.install.target)).toBe(true)
     expect(installedSpecMatches(skin, 'github:someone/else#0000000000000000000000000000000000000000')).toBe(false)
     expect(installedSpecMatches(skin, undefined)).toBe(false)
+  })
+
+  it.each(['npm', 'desktop'])('matches exact %s package specs without accepting version substrings or another source', source => {
+    const base = loadCatalog().skins[0]
+    const version = '1.2.3'
+    const skin = {
+      ...base,
+      install: {
+        ...base.install,
+        npm: source === 'npm' ? { name: base.package, version, integrity: 'sha512-reviewed', repository: base.repo, gitHead: base.install.commit } : undefined,
+        desktop: source === 'desktop' ? { mode: 'managed' as const, registry: 'npm' as const, packageName: base.package, packageVersion: version } : undefined,
+      },
+    }
+
+    for (const spec of [version, `${skin.package}@${version}`, `npm:${skin.package}@${version}`, skin.install.target]) {
+      expect(installedSpecMatches(skin, spec), spec).toBe(true)
+    }
+    for (const spec of [
+      '11.2.3', '1.2.30', '1.2.3-beta.1', '^1.2.3', '~1.2.3',
+      `npm:another-package@${version}`, `another-package@${version}`,
+      `file:/tmp/skin-${version}`, `https://example.com/skin-${version}.tgz`, `github:another/skin#v${version}`,
+    ]) {
+      expect(installedSpecMatches(skin, spec), spec).toBe(false)
+    }
   })
 
   it('discovers installed client plugins that are not in the market catalog', () => {

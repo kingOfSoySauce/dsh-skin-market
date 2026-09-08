@@ -111,7 +111,29 @@ describe('catalog', () => {
       version: invalid.skins[0]!.install.version,
       integrity: 'sha512-abc',
       repository: invalid.skins[0]!.repo,
+      gitHead: invalid.skins[0]!.install.commit,
     }
     expect(() => validateCatalog(invalid)).toThrow('invalid npm package name')
+  })
+
+  it.each(['missing', 'short', 'mismatch'])('rejects an npm source whose gitHead is %s', variant => {
+    const catalog = loadCatalog()
+    const skin = catalog.skins[0]!
+    const npm: Record<string, unknown> = {
+      name: skin.package, version: skin.install.version, integrity: 'sha512-abc', repository: skin.repo, gitHead: skin.install.commit,
+    }
+    if (variant === 'missing') delete npm.gitHead
+    else npm.gitHead = variant === 'short' ? skin.install.commit.slice(0, 7) : '0'.repeat(40)
+
+    expect(() => validateCatalog({ ...catalog, skins: [{ ...skin, install: { ...skin.install, npm } }] })).toThrow(/gitHead/)
+  })
+
+  it('accepts an npm source tied to the complete reviewed GitHub commit', () => {
+    const catalog = loadCatalog()
+    const skin = catalog.skins[0]!
+    const npm = { name: skin.package, version: skin.install.version, integrity: 'sha512-abc', repository: skin.repo, gitHead: skin.install.commit }
+    const reviewed = { ...catalog, skins: [{ ...skin, install: { ...skin.install, npm } }] }
+
+    expect(validateCatalog(reviewed)).toEqual(reviewed)
   })
 })

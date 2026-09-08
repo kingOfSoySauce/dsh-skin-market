@@ -33,7 +33,7 @@
         "npm": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["name", "version", "integrity", "repository"],
+          "required": ["name", "version", "integrity", "repository", "gitHead"],
           "properties": {
             "name": { "type": "string", "minLength": 1 },
             "version": { "type": "string", "minLength": 1 },

@@ -24,7 +24,7 @@ export interface NpmInstallSource {
   version: string
   integrity: string
   repository: string
-  gitHead?: string
+  gitHead: string
 }
 
 export interface CatalogSkin {
@@ -117,6 +117,11 @@ export interface Operation {
   downloadedBytes?: number
   totalBytes?: number
   bytesPerSecond?: number
+  step?: string
+  stepStartedAt?: string
+  attempt?: number
+  lastOutputAt?: string
+  pnpmStage?: 'resolving' | 'downloading' | 'linking' | 'building'
   failure?: {
     kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'compatibility' | 'conflict' | 'command'
     message: string

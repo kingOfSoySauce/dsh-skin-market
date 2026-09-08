@@ -116,16 +116,31 @@ interface ProgressMetadata {
   downloadedBytes?: number
   totalBytes?: number
   bytesPerSecond?: number
+  step?: string
+  stepStartedAt?: string
+  attempt?: number
+  lastOutputAt?: string
+  pnpmStage?: Operation['pnpmStage']
 }
 
-function operationMeta(operation: ProgressMetadata): string[] {
+const pnpmStages: Record<NonNullable<Operation['pnpmStage']>, string> = {
+  resolving: '解析依赖', downloading: '下载依赖', linking: '链接依赖', building: '运行构建',
+}
+
+function operationMeta(operation: ProgressMetadata, now: number): string[] {
   const details: string[] = []
+  if (operation.step !== undefined) details.push(operation.step)
+  if (operation.attempt !== undefined) details.push(`第 ${operation.attempt} 次尝试`)
+  if (operation.pnpmStage !== undefined) details.push(pnpmStages[operation.pnpmStage])
   if (operation.downloadedBytes !== undefined && operation.totalBytes !== undefined) {
     details.push(`${byteLabel(operation.downloadedBytes)} / ${byteLabel(operation.totalBytes)}`)
   } else if (operation.downloadedBytes !== undefined) {
     details.push(`已下载 ${byteLabel(operation.downloadedBytes)}`)
   }
-  if (operation.bytesPerSecond !== undefined && operation.bytesPerSecond > 0) details.push(`${byteLabel(operation.bytesPerSecond)}/s`)
+  const outputAge = operation.lastOutputAt === undefined ? undefined : now - Date.parse(operation.lastOutputAt)
+  if (operation.bytesPerSecond !== undefined && operation.bytesPerSecond > 0 && (outputAge === undefined || outputAge < 5000)) {
+    details.push(`${byteLabel(operation.bytesPerSecond)}/s`)
+  }
   return details
 }
 
@@ -146,7 +161,8 @@ const marketOperationTitles: Record<MarketUpdateOperation['phase'], string> = {
 interface OperationBannerProps {
   title: string
   startedAt: string
-  metadata: string[]
+  metadata?: string[]
+  progress?: ProgressMetadata
   message?: string
   cancelable?: boolean
   terminal?: boolean
@@ -161,14 +177,24 @@ interface OperationBannerProps {
   action?: ReactNode
 }
 
-function OperationBanner({ title, startedAt, metadata, message, cancelable = false, terminal = false, failed = false, operationId, copyingLog = false, copiedLog = false, className, onCancel, onCopyLog, onDismiss, action }: OperationBannerProps) {
+function OperationBanner({ title, startedAt, metadata = [], progress, message, cancelable = false, terminal = false, failed = false, operationId, copyingLog = false, copiedLog = false, className, onCancel, onCopyLog, onDismiss, action }: OperationBannerProps) {
   const [now, setNow] = useState(Date.now())
   useEffect(() => {
     if (terminal) return
     const timer = window.setInterval(() => setNow(Date.now()), 1000)
     return () => window.clearInterval(timer)
   }, [startedAt, terminal])
-  const details = [...new Set([...metadata, ...(!terminal || failed ? [`已用时 ${elapsedLabel(startedAt, now)}`] : [])].filter(item => item !== ''))]
+  const outputStartedAt = progress?.stepStartedAt ?? (progress?.step === undefined ? undefined : startedAt)
+  const lastOutputTime = Math.max(...[progress?.lastOutputAt, outputStartedAt]
+    .filter((value): value is string => value !== undefined)
+    .map(value => Date.parse(value)))
+  const silentFor = Number.isFinite(lastOutputTime) ? now - lastOutputTime : 0
+  const details = [...new Set([
+    ...metadata,
+    ...(progress === undefined ? [] : operationMeta(progress, now)),
+    ...(!terminal || failed ? [`已用时 ${elapsedLabel(startedAt, now)}`] : []),
+    ...(!terminal && silentFor >= 30_000 ? [`已 ${elapsedLabel(new Date(lastOutputTime).toISOString(), now)}未有输出，可复制日志查看`] : []),
+  ].filter(item => item !== ''))]
   const normalize = (value: string) => value.replace(/\s+/g, '')
   const normalizedMessage = message === undefined ? '' : normalize(message)
   const messageText = message !== undefined
@@ -187,7 +213,7 @@ function OperationBanner({ title, startedAt, metadata, message, cancelable = fal
     {messageText !== undefined && <span className={css.operationMessage} title={messageText}>· {messageText}</span>}
     <span className={css.operationActions}>
       {cancelable && onCancel !== undefined && <Button className={css.operationCancel} variant="outline" size="sm" onClick={onCancel}>取消</Button>}
-      {failed && onCopyLog !== undefined && operationId !== undefined && <Button className={css.operationCopyLog} variant="outline" size="sm" icon={<IconCopyOutline16 />} disabled={copyingLog} onClick={onCopyLog}>{copiedLog ? '日志已复制' : copyingLog ? '复制中…' : '复制日志'}</Button>}
+      {(!terminal || failed) && onCopyLog !== undefined && operationId !== undefined && <Button className={css.operationCopyLog} variant="outline" size="sm" icon={<IconCopyOutline16 />} disabled={copyingLog} onClick={onCopyLog}>{copiedLog ? '日志已复制' : copyingLog ? '复制中…' : '复制日志'}</Button>}
       {action}
       {onDismiss !== undefined && <Button className={css.operationDismiss} variant="ghost" size="sm" icon={<XIcon size={14} />} aria-label="关闭提示" title="关闭提示" onClick={onDismiss} />}
     </span>
@@ -1103,7 +1129,7 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
     className={className}
     title={`${phases[busy.phase]}“${skins.find(skin => skin.id === busy.skinId)?.name.zh ?? busy.skinId}”`}
     startedAt={busy.startedAt}
-    metadata={operationMeta(busy)}
+    progress={busy}
     message={busy.message}
     terminal={busy.phase === 'done' || busy.phase === 'failed' || busy.phase === 'cancelled'}
     failed={busy.phase === 'failed'}
@@ -1125,7 +1151,7 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
     className={className}
     title={marketOperationTitles[marketOperation.phase]}
     startedAt={marketOperation.startedAt}
-    metadata={operationMeta(marketOperation)}
+    progress={marketOperation}
     message={marketOperation.message}
     terminal={marketOperation.phase === 'done' || marketOperation.phase === 'failed' || marketOperation.phase === 'cancelled'}
     failed={marketOperation.phase === 'failed'}

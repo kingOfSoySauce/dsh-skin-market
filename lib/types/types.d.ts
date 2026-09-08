@@ -14,7 +14,7 @@ export interface NpmInstallSource {
     version: string;
     integrity: string;
     repository: string;
-    gitHead?: string;
+    gitHead: string;
 }
 export interface CompatibilityAdapter {
     id: string;
@@ -180,6 +180,11 @@ export interface Operation {
     downloadedBytes?: number;
     totalBytes?: number;
     bytesPerSecond?: number;
+    step?: string;
+    stepStartedAt?: string;
+    attempt?: number;
+    lastOutputAt?: string;
+    pnpmStage?: 'resolving' | 'downloading' | 'linking' | 'building';
     failure?: OperationFailure;
     startedAt: string;
     finishedAt?: string;

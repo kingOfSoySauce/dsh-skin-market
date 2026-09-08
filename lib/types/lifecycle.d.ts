@@ -19,6 +19,9 @@ export interface LifecycleOptions {
     runner: PluginRunner;
     hostKind?: MarketHostKind;
     runtime?: DshRuntime;
+    /** Shared by all preparation/install attempts; recovery has its own budget. */
+    operationTimeoutMs?: number;
+    recoveryTimeoutMs?: number;
 }
 export declare function desktopInstallError(capability: DesktopInstallCapability | undefined): string;
 export declare class SkinLifecycle {
@@ -28,6 +31,13 @@ export declare class SkinLifecycle {
     private activeOperation;
     private readonly abortControllers;
     private readonly pendingBuildKeys;
+    private readonly deadlines;
+    private readonly deadlineTimers;
+    private readonly expired;
+    private readonly profileMutations;
+    private readonly recoveryErrors;
+    private readonly desktopManagedAttempts;
+    private readonly desktopRecoveryBaselines;
     private catalogEntries;
     private skinById;
     private disposeEvent?;
@@ -62,6 +72,12 @@ export declare class SkinLifecycle {
     cancel(id: string): Operation;
     private execute;
     private run;
+    private remainingTime;
+    private checkDeadline;
+    private startCommand;
+    /** Restore metadata first, then reconcile dependencies once within a separate budget. */
+    private recoverProfile;
+    private prepareProfile;
     private installPackage;
     private installCompanions;
     private claimManagedCompanion;

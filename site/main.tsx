@@ -7,7 +7,8 @@ import { comparePublicCatalogOrder, shouldRenderPublicPreview } from './catalog-
 import { getCatalogListScreenshot, getCatalogScreenshotUrls, usesMarketScreenshots } from '../src/catalog-order.ts'
 import { generatedMediaFor, generatedMediaManifestUrl, generatedMediaUrl, hasGeneratedMediaBase, parseGeneratedMediaManifest, previewSourceCandidates, setGeneratedMediaSources } from '../src/media-preview.ts'
 import { useLazyMedia } from '../src/media-visibility.ts'
-import type { CatalogMedia } from '../src/types.ts'
+import type { CatalogMedia, NpmInstallSource } from '../src/types.ts'
+import { preferredInstallTarget } from '../src/install-source.ts'
 import { CLI_INSTALL_WARNING, MARKET_CLI_COMMAND, MARKET_PROMPT, MARKET_PUBLIC_URL, MARKET_REPOSITORY, skinCommand, skinPrompt } from './prompts.ts'
 import { displayTitle, githubRepoLabel } from '../src/display-title.ts'
 import { matchesCatalogSearch } from '../src/catalog-search.ts'
@@ -23,7 +24,7 @@ interface Skin {
   subpath?: string
   tags: string[]
   modes: string[]
-  install: { target: string; version: string; commit: string }
+  install: { target: string; version: string; commit: string; npm?: NpmInstallSource }
   compatibility: { dsh: string; platform: string[] }
   marketScreenshots?: string[]
   listScreenshot?: string
@@ -316,7 +317,7 @@ function App({ skins }: { skins: Skin[] }) {
       <section className="install-dialog" role="dialog" aria-modal="true" aria-labelledby="install-dialog-title">
         <header><div><h2 id="install-dialog-title">{installDialog === 'market' ? '安装皮肤市场' : `安装 ${selected.name.zh}`}</h2><p>{installDialog === 'skin' && manualOnly ? '需要按仓库说明完成安装。' : '任选一种，不用都执行。'}</p></div><button aria-label="关闭" onClick={() => setInstallDialog(null)}><X size={18} /></button></header>
         <div className="install-method-grid" data-single={installDialog === 'market' ? 'true' : 'false'}>
-          {installDialog === 'skin' && <InstallGroup title="安装这个皮肤" prompt={skinPrompt(selected.repo, verified, selected.install.target)} command={manualOnly ? undefined : skinCommand(selected.install.target)} manualOnly={manualOnly} repo={selected.repo} copyKey="skin" copied={copied} onCopy={copyPrompt} />}
+          {installDialog === 'skin' && <InstallGroup title="安装这个皮肤" prompt={skinPrompt(selected.repo, verified, preferredInstallTarget(selected))} command={manualOnly ? undefined : skinCommand(preferredInstallTarget(selected))} manualOnly={manualOnly} repo={selected.repo} copyKey="skin" copied={copied} onCopy={copyPrompt} />}
           <InstallGroup title={installDialog === 'skin' ? '皮肤市场插件内安装' : undefined} prompt={MARKET_PROMPT} command={MARKET_CLI_COMMAND} copyKey="market" copied={copied} onCopy={copyPrompt} />
         </div>
       </section>

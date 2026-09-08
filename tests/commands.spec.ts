@@ -1,5 +1,5 @@
 import { PassThrough } from 'node:stream'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { cmdCommandLine, commandError, createPnpmProvisioner, desktopRunner, normalizedEnvironment, pluginProcess, quoteCmdArg, type CommandResult, type DesktopPnpmLike } from '../src/commands.ts'
 
 describe('Windows command shim quoting', () => {
@@ -45,7 +45,7 @@ describe('plugin command errors', () => {
 
   it('explains the platform command limit in the timeout error', () => {
     expect(commandError({ exitCode: null, timedOut: true, stdout: '', stderr: '' }))
-      .toBe('插件安装超过 10 分钟，已停止；请检查网络后重试')
+      .toBe('插件命令执行超时，已停止；请复制日志查看失败步骤')
   })
 })
 
@@ -82,6 +82,33 @@ describe('pnpm provisioning', () => {
     const provision = createPnpmProvisioner(async () => missing())
     await expect(provision()).rejects.toThrow('未找到 pnpm，已尝试 Corepack 和 npm 自动安装')
   })
+
+  it('stops provisioning when cancellation arrives during a failed probe', async () => {
+    const controller = new AbortController()
+    const execute = vi.fn(async () => {
+      controller.abort()
+      return missing()
+    })
+    await expect(createPnpmProvisioner(execute)({ signal: controller.signal })).rejects.toThrow('操作已取消')
+    expect(execute).toHaveBeenCalledTimes(1)
+  })
+
+  it('shares one explicit budget across provisioning steps', async () => {
+    let now = 10_000
+    const clock = vi.spyOn(Date, 'now').mockImplementation(() => now)
+    const budgets: Array<number | undefined> = []
+    try {
+      const provision = createPnpmProvisioner(async (_file, _args, options) => {
+        budgets.push(options?.timeoutMs)
+        now += 40
+        return missing()
+      })
+      await expect(provision({ timeoutMs: 100 })).rejects.toThrow('pnpm 准备超时')
+      expect(budgets).toEqual([100, 60, 20])
+    } finally {
+      clock.mockRestore()
+    }
+  })
 })
 
 describe('Desktop pnpm adapter', () => {
@@ -115,5 +142,62 @@ describe('Desktop pnpm adapter', () => {
       recovery: { packageName: '@example/skin', packageVersion: '1.2.3', receiptId: 'receipt-1' },
       signal: expect.any(AbortSignal),
     }])
+  })
+
+  it.each(['run', 'install'])('honors the %s timeout and waits for the host to finish cancelling', async mode => {
+    vi.useFakeTimers()
+    try {
+      let finish!: (value: { exitCode: number | null; signal: NodeJS.Signals | null }) => void
+      const done = new Promise<{ exitCode: number | null; signal: NodeJS.Signals | null }>(resolve => { finish = resolve })
+      const cancel = vi.fn()
+      const handle = { stdout: new PassThrough(), stderr: new PassThrough(), done, cancel }
+      const runner = desktopRunner({ runPlugin: () => handle, installPlugin: async () => handle }, '/profiles/web')
+      const result = mode === 'run'
+        ? runner('web', ['install'], { timeoutMs: 50 })
+        : runner.installPlugin!('web', { packageName: 'example-skin', packageVersion: '1.0.0', receiptId: 'test' }, { timeoutMs: 50 })
+      const completed = vi.fn()
+      void result.then(completed)
+      await vi.advanceTimersByTimeAsync(50)
+      expect(cancel).toHaveBeenCalledTimes(1)
+      expect(completed).not.toHaveBeenCalled()
+      finish({ exitCode: null, signal: 'SIGTERM' })
+      await expect(result).resolves.toMatchObject({ timedOut: true, aborted: false })
+      expect(vi.getTimerCount()).toBe(0)
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
+  it('does not start Desktop operations after cancellation or budget exhaustion', async () => {
+    const start = vi.fn()
+    const runner = desktopRunner({ runPlugin: start, installPlugin: start }, '/profiles/web')
+    await expect(runner('web', ['install'], { signal: AbortSignal.abort() })).resolves.toMatchObject({ aborted: true })
+    await expect(runner.installPlugin!('web', { packageName: 'example-skin', packageVersion: '1.0.0', receiptId: 'test' }, { timeoutMs: 0 })).resolves.toMatchObject({ timedOut: true })
+    expect(start).not.toHaveBeenCalled()
+  })
+
+  it('contains a host cancellation exception and still waits for done', async () => {
+    vi.useFakeTimers()
+    try {
+      let finish!: (value: { exitCode: number | null; signal: NodeJS.Signals | null }) => void
+      const done = new Promise<{ exitCode: number | null; signal: NodeJS.Signals | null }>(resolve => { finish = resolve })
+      const handle = {
+        stdout: new PassThrough(), stderr: new PassThrough(), done,
+        cancel: () => { throw new Error('private host error details') },
+      }
+      const runner = desktopRunner({ runPlugin: () => handle, installPlugin: async () => handle }, '/profiles/web')
+      const result = runner('web', ['install'], { timeoutMs: 50 })
+      const completed = vi.fn()
+      void result.then(completed)
+      await vi.advanceTimersByTimeAsync(50)
+      expect(completed).not.toHaveBeenCalled()
+      finish({ exitCode: null, signal: 'SIGTERM' })
+      const outcome = await result
+      expect(outcome.timedOut).toBe(true)
+      expect(outcome.stderr).toContain('取消请求失败')
+      expect(outcome.stderr).not.toContain('private host error details')
+    } finally {
+      vi.useRealTimers()
+    }
   })
 })

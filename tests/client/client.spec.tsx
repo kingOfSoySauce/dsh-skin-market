@@ -900,6 +900,61 @@ describe('client market', () => {
     await waitFor(() => expect(screen.getAllByRole('status').some(item => item.textContent?.includes('GitHub 插件下载超时'))).toBe(true))
   })
 
+  it('shows the command and pnpm stage, expires stale speed on its tick, and lets a running install copy diagnostics', async () => {
+    const now = Date.now()
+    const clock = vi.spyOn(Date, 'now').mockReturnValue(now)
+    const clipboard = vi.fn(async () => undefined)
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: clipboard } })
+    const operation = {
+      id: 'install-live-log', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date(now - 60_000).toISOString(),
+      step: '下载 npm 皮肤包', stepStartedAt: new Date(now - 1000).toISOString(), attempt: 2, pnpmStage: 'downloading',
+      lastOutputAt: new Date(now).toISOString(), downloadedBytes: 2048, totalBytes: 4096, bytesPerSecond: 1024,
+    }
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation, runtime: dshRuntime }) }
+      if (url.endsWith('/logs?operationId=install-live-log')) return { ok: true, text: async () => '# dsh-skin-market diagnostic log\nredacted' }
+      throw new Error(`Unexpected request: ${url}`)
+    }))
+    try {
+      render(<SkinMarketSection t={key => key} />)
+      await waitFor(() => expect(screen.getByRole('status').textContent).toContain('下载 npm 皮肤包'))
+      const banner = screen.getByRole('status')
+      expect(banner.textContent).toContain('下载 npm 皮肤包')
+      expect(banner.textContent).toContain('第 2 次尝试')
+      expect(banner.textContent).toContain('下载依赖')
+      expect(banner.textContent).toContain('2.0 KB / 4.0 KB')
+      expect(banner.textContent).toContain('1.0 KB/s')
+
+      clock.mockReturnValue(now + 5000)
+      await waitFor(() => expect(banner.textContent).not.toContain('KB/s'), { timeout: 2000 })
+      expect(banner.textContent).not.toContain('未有输出')
+      clock.mockReturnValue(now + 30_000)
+      await waitFor(() => expect(banner.textContent).toContain('30 秒未有输出'), { timeout: 2000 })
+      fireEvent.click(within(banner).getByRole('button', { name: '复制日志' }))
+      await waitFor(() => expect(clipboard).toHaveBeenCalledWith(expect.stringContaining('diagnostic log')))
+      expect(banner.textContent).not.toContain('redacted')
+    } finally { clock.mockRestore() }
+  })
+
+  it('uses the current command start for silence detection when the operation has already been running', async () => {
+    const now = Date.now()
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime, operation: {
+        id: 'new-step', kind: 'install', skinId: skin.id, phase: 'installing', startedAt: new Date(now - 300_000).toISOString(),
+        step: '写入插件', stepStartedAt: new Date(now).toISOString(), attempt: 1, pnpmStage: 'linking', lastOutputAt: new Date(now - 60_000).toISOString(),
+      } }) }
+      throw new Error(`Unexpected request: ${url}`)
+    }))
+    render(<SkinMarketSection t={key => key} />)
+    await waitFor(() => expect(screen.getByRole('status').textContent).toContain('写入插件'))
+    const banner = screen.getByRole('status')
+    expect(banner.textContent).toContain('写入插件')
+    expect(banner.textContent).toContain('链接依赖')
+    expect(banner.textContent).not.toContain('未有输出')
+  })
+
   it('keeps a long failure on one line and copies the operation diagnostic log', async () => {
     let operationRequests = 0
     const longMessage = '依赖 @deepseek-ai/dsh-compact 无法从 npm registry 找到；这是一个很长的 pnpm 诊断信息，需要在横幅中单行省略而不能挤开右侧操作按钮。'

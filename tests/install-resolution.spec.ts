@@ -13,7 +13,7 @@ describe('install resolution', () => {
       ...base,
       install: {
         ...base.install,
-        npm: { name: base.package, version: base.install.version, integrity: 'sha512-abc', repository: base.repo },
+        npm: { name: base.package, version: base.install.version, integrity: 'sha512-abc', repository: base.repo, gitHead: base.install.commit },
       },
     }
 

@@ -58,7 +58,7 @@ export function validateCatalog(value: unknown): CatalogFile {
       if (npm.name !== entry.package) throw new Error(`invalid npm package name for ${entry.id}`)
       if (npm.version !== entry.install.version) throw new Error(`invalid npm package version for ${entry.id}`)
       if (npmRepo !== repo) throw new Error(`invalid npm repository for ${entry.id}`)
-      if (npm.gitHead !== undefined && npm.gitHead.toLowerCase() !== entry.install.commit.toLowerCase()) throw new Error(`invalid npm gitHead for ${entry.id}`)
+      if (typeof npm.gitHead !== 'string' || !/^[0-9a-f]{40}$/i.test(npm.gitHead) || npm.gitHead.toLowerCase() !== entry.install.commit.toLowerCase()) throw new Error(`invalid npm gitHead for ${entry.id}`)
     }
     if (entry.subpath !== undefined && entry.install.allowBuild !== undefined && !entry.install.allowBuild.endsWith(`#path:${entry.subpath}`)) {
       throw new Error(`invalid allowBuild path for ${entry.id}; expected #path:${entry.subpath}`)

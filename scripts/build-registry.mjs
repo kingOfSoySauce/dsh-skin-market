@@ -54,7 +54,7 @@ for (const file of files) {
     if (npm.name !== skin.package) throw new Error(`${file}: install.npm.name must equal ${skin.package}`)
     if (npm.version !== skin.install.version) throw new Error(`${file}: install.npm.version must equal install.version`)
     if (npmRepo !== repo) throw new Error(`${file}: install.npm.repository must equal repo`)
-    if (npm.gitHead !== undefined && npm.gitHead.toLowerCase() !== skin.install.commit.toLowerCase()) throw new Error(`${file}: install.npm.gitHead must equal install.commit`)
+    if (typeof npm.gitHead !== 'string' || !/^[0-9a-f]{40}$/i.test(npm.gitHead) || npm.gitHead.toLowerCase() !== skin.install.commit.toLowerCase()) throw new Error(`${file}: install.npm.gitHead must be a full commit matching install.commit`)
   }
   if (skin.subpath !== undefined && skin.install.allowBuild !== undefined && !skin.install.allowBuild.endsWith(`#path:${skin.subpath}`)) {
     throw new Error(`${file}: install.allowBuild must end with #path:${skin.subpath}`)

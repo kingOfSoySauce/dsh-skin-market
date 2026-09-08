@@ -75,4 +75,18 @@ describe('agent-assisted skin submission', () => {
     expect(prompt).toContain('全部固定安装命令（含伴生包）')
     expect(prompt).toContain('ui-skin-deep-whale-manager')
   })
+
+  it('uses the same reviewed npm target in the command and prompt without GitHub build approval', () => {
+    const skin = {
+      repo: 'https://github.com/example/skin', package: 'example-skin', rowId: 'example-skin',
+      install: { target: `github:example/skin#${'a'.repeat(40)}`, commit: 'a'.repeat(40), version: '1.2.3',
+        allowBuild: 'github-only-build-key',
+        npm: { name: 'example-skin', version: '1.2.3', repository: 'https://github.com/example/skin', integrity: 'sha512-abc', gitHead: 'a'.repeat(40) } },
+    } as CatalogSkin
+    expect(createSkinInstallCommand(skin)).toBe('dsh plugin --profile web add "example-skin@1.2.3" --save-exact')
+    const prompt = createSkinInstallPrompt(skin)
+    expect(prompt).toContain('安装目标：example-skin@1.2.3')
+    expect(prompt).not.toContain('github-only-build-key')
+    expect(prompt).not.toContain(skin.install.target)
+  })
 })

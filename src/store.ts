@@ -1,6 +1,6 @@
 import { readdirSync, rmSync, type Dirent } from 'node:fs'
 import { isAbsolute, join } from 'node:path'
-import type { PluginRunner } from './commands.ts'
+import type { CommandOptions, PluginRunner } from './commands.ts'
 import { logEvent } from './log.ts'
 
 const ORPHAN_TMP_RE = /^_tmp_(\d+)_/
@@ -40,10 +40,10 @@ export function cleanOrphanedStoreTmp(storePath: string): string[] {
 }
 
 /** Resolve the active pnpm store and reclaim safe orphan staging dirs. */
-export async function cleanOrphanedStore(run: PluginRunner, profile: string, operationId?: string): Promise<string[]> {
+export async function cleanOrphanedStore(run: PluginRunner, profile: string, operationId?: string, options?: CommandOptions): Promise<string[]> {
   let result
   try {
-    result = await run(profile, ['store', 'path'])
+    result = await run(profile, ['store', 'path'], options)
   } catch {
     return []
   }

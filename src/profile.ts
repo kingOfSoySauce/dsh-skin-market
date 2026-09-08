@@ -148,14 +148,9 @@ function repositoryIdentity(value: unknown): string | null {
     ? value
     : isRecord(value) && typeof value.url === 'string' ? value.url : null
   if (raw === null) return null
-  return raw
-    .trim()
-    .replace(/^git\+/, '')
-    .replace(/^git@github\.com:/, '')
-    .replace(/^ssh:\/\/git@github\.com\//, '')
-    .replace(/^https:\/\/github\.com\//, '')
-    .replace(/\.git$/, '')
-    .replace(/\/$/, '')
+  const normalized = raw.trim().replace(/^git\+/, '').replace(/^github:/, 'https://github.com/')
+  const match = /^(?:(?:https?|git):\/\/github\.com\/|ssh:\/\/git@github\.com\/|git@github\.com:)([^/\s]+)\/([^/#?\s]+?)(?:\.git)?\/?$/i.exec(normalized)
+  return match === null ? null : `${match[1]}/${match[2]}`.toLowerCase()
 }
 
 function npmLockfileIntegrity(profileDir: string, packageName: string, version: string): string | null {
@@ -174,9 +169,21 @@ function npmLockfileIntegrity(profileDir: string, packageName: string, version: 
   return null
 }
 
+function exactNpmSpecMatches(spec: string | null | undefined, packageName: string, version: string): boolean {
+  return spec === version || spec === `${packageName}@${version}` || spec === `npm:${packageName}@${version}`
+}
+
 function validateInstalledNpmSource(profileDir: string, skin: SkinEntry, manifest: Record<string, unknown>): string | null {
   const npm = skin.install.npm
   if (npm === undefined) return null
+  // A newly reviewed npm alternative does not change the provenance of an
+  // existing GitHub install. Older npm versions also remain updateable; the
+  // current artifact's integrity cannot validate a different release.
+  const spec = readDependencies(profileDir)[skin.package]
+  if (!exactNpmSpecMatches(spec, npm.name, npm.version)) return null
+  if (manifest.version !== npm.version) {
+    return `installed npm package ${skin.package} version mismatch; expected ${npm.version}, found ${String(manifest.version)}`
+  }
   const repository = repositoryIdentity(manifest.repository)
   const expectedRepository = repositoryIdentity(npm.repository)
   if (repository === null || repository !== expectedRepository) {
@@ -225,10 +232,11 @@ export function validateInstalledSkin(profileDir: string, skin: SkinEntry): { ok
 
 export function installedSpecMatches(skin: SkinEntry, spec: string | null | undefined): boolean {
   if (typeof spec !== 'string' || spec.length === 0) return false
-  if (skin.install.npm !== undefined) return spec.includes(skin.install.npm.version)
-  return skin.install.desktop?.mode === 'managed'
-    ? spec.includes(skin.install.commit) || spec.includes(skin.install.desktop.packageVersion)
-    : spec.includes(skin.install.commit)
+  if (spec.includes(skin.install.commit)) return true
+  const npm = skin.install.npm
+  if (npm !== undefined && exactNpmSpecMatches(spec, npm.name, npm.version)) return true
+  const desktop = skin.install.desktop
+  return desktop?.mode === 'managed' && exactNpmSpecMatches(spec, desktop.packageName, desktop.packageVersion)
 }
 
 export function companionNeedsInstall(profileDir: string, companion: { package: string; commit: string }): boolean {

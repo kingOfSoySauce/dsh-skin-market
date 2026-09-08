@@ -8,6 +8,8 @@ export interface CommandResult {
 }
 export interface CommandOptions {
     signal?: AbortSignal;
+    /** Remaining command budget; provisioning shares it across all setup steps. */
+    timeoutMs?: number;
     env?: NodeJS.ProcessEnv;
     onStdout?: (chunk: string) => void;
     onStderr?: (chunk: string) => void;
