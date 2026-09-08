@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-customizer
   en: dsh-theme-customizer
 author: lxxz1918
-description: 中文 | English
+description: DeepSeek Harness（DSH）Web 界面自定义主题插件：背景、文字、框线、细节全部可视化设置，刷新/重启不丢。 配置存 localStorage，预设可导出 .tczp 文件（含图片）分享到任意电脑。
 repo: https://github.com/lxxz1918/dsh-theme-customizer
 package: dsh-theme-customizer
 rowId: theme-customizer
@@ -64,6 +64,6 @@ license:
 featuredRank: 1028
 starsSnapshot: 4
 releaseUpdatedAt: 2026-08-28T04:09:07.133Z
-metadataUpdatedAt: 2026-08-28T04:09:07.133Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-06T21:12:30.023Z
-updatedAt: 2026-09-06T21:12:30.023Z
+updatedAt: 2026-09-08T09:45:47.382Z

@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-ti
   en: dsh-theme-ti
 author: longyu065
-description: English · 中文
+description: 正值 Dota 2 The International 赛季，给 dsh Web 界面做的一款 TI6 皮肤： 深空蓝黑 + TI6 红飘带能量色 + 不朽盾金（gold），主面板带矢量翅膀 + 星空背景图。
 repo: https://github.com/longyu065/dsh-theme-ti
 package: "@dsh-theme/ti"
 rowId: theme-ti
@@ -59,6 +59,6 @@ license:
 featuredRank: 84
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-23T05:31:48.352Z
-metadataUpdatedAt: 2026-08-23T05:31:48.352Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:10:17.426Z
-updatedAt: 2026-08-25T07:10:17.426Z
+updatedAt: 2026-09-08T09:45:47.382Z

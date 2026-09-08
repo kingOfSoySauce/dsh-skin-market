@@ -3,7 +3,7 @@ name:
   zh: dsh-catppuccin
   en: dsh-catppuccin
 author: NoNameLeGo
-description: <p align="center" <img src="assets/previews/combined.png" width="100%" alt="Catppuccin 四主题下的 DeepSeek Harness"/ </p
+description: DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
 repo: https://github.com/NoNameLeGo/dsh-catppuccin
 package: "@nonamelego/dsh-catppuccin"
 rowId: dsh-catppuccin
@@ -68,6 +68,6 @@ license:
 featuredRank: 5
 starsSnapshot: 32
 releaseUpdatedAt: 2026-09-07T21:58:13.634Z
-metadataUpdatedAt: 2026-09-07T21:58:13.634Z
+metadataUpdatedAt: 2026-09-08T09:44:04.508Z
 starsUpdatedAt: 2026-09-06T21:12:21.986Z
-updatedAt: 2026-09-07T21:58:13.634Z
+updatedAt: 2026-09-08T09:44:04.508Z

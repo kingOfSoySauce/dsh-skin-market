@@ -3,7 +3,7 @@ name:
   zh: xiao-theme-dsh-ui-plugin
   en: xiao-theme-dsh-ui-plugin
 author: jinxlux
-description: 语言 / Language： English · 简体中文（当前） · 日本語 · 한국어
+description: DeepSeek Harness 的可自定义主题插件（默认带一套「魈」青玉风）—— 给 DeepSeek Harness 的 Web 界面做主题：配色、吉祥物徽章、背景、注入语气都能自己调。背景同时支持静态图片与动态 GIF （上传动画 GIF 会自动识别为动态背景）。默认是一套魈的青玉/翠青风格，但主色、徽章文字、语气、 背景等都可配置，改出来就是你的专属主题。
 repo: https://github.com/jinxlux/xiao-theme-dsh-ui-plugin
 package: xiao-ui-theme-ts
 rowId: xiao-theme-ts
@@ -60,7 +60,7 @@ license:
 featuredRank: 1046
 starsSnapshot: 3
 releaseUpdatedAt: 2026-09-07T21:58:25.427Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-07T21:58:25.427Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:45:47.382Z
 listScreenshot: https://github.com/user-attachments/assets/3998f58b-53db-4349-80f3-3d993c6ad3c3

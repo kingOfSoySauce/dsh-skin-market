@@ -3,7 +3,7 @@ name:
   zh: ds-hentai
   en: ds-hentai
 author: lisongxuan
-description: English | 简体中文
+description: ExHentai.org 皮肤 for DeepSeek Harness。深炭底、浅灰文字、灰色边框；会话列表像画廊索引，发送框像搜索栏。
 repo: https://github.com/lisongxuan/ds-hentai
 package: ds-hentai
 rowId: ds-hentai
@@ -57,7 +57,7 @@ license:
 featuredRank: 1095
 starsSnapshot: 0
 releaseUpdatedAt: 2026-09-07T21:59:00.406Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-07T21:59:00.406Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:45:47.382Z
 listScreenshot: https://raw.githubusercontent.com/lisongxuan/ds-hentai/ce8442c8c113a3dcebe80449628724799fba2e1c/docs/preview.png

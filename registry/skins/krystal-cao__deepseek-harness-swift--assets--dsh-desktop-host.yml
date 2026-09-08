@@ -3,7 +3,7 @@ name:
   zh: deepseek-harness-swift
   en: deepseek-harness-swift
 author: krystal-cao
-description: <h1 align="center" <img src="app.icon/Assets/icon-1024.png" width="72" alt="DSH 标志" / <br / DSH Swift Native Shell </h1
+description: 基于 AppKit、SwiftUI 和 WKWebView 的原生 macOS 桌面壳。
 repo: https://github.com/krystal-cao/deepseek-harness-swift
 subpath: assets/dsh-desktop-host
 package: dsh-desktop-host
@@ -56,7 +56,7 @@ license:
 featuredRank: 1073
 starsSnapshot: 1
 releaseUpdatedAt: 2026-09-07T21:58:47.284Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:44:04.508Z
 starsUpdatedAt: 2026-09-07T21:58:47.284Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:44:04.508Z
 listScreenshot: https://raw.githubusercontent.com/krystal-cao/deepseek-harness-swift/047cc46ae6df75afdd0a0406b7491c4d25dc9279/assets/%E4%B8%BB%E7%95%8C%E9%9D%A2.png

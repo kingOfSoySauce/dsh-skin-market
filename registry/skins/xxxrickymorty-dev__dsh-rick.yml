@@ -3,7 +3,7 @@ name:
   zh: dsh-rick
   en: dsh-rick
 author: xxxrickymorty-dev
-description: English | 中文
+description: DeepSeek Harness 的 C-137 皮肤：28 张目录海报、自定义场景、霓虹外观，以及叠加层宠物（Rick、Morty、传送枪）。
 repo: https://github.com/xxxrickymorty-dev/dsh-rick
 package: dsh-rick
 rowId: dsh-rick
@@ -54,6 +54,6 @@ license:
 featuredRank: 196
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:35:21.430Z
-metadataUpdatedAt: 2026-08-26T03:33:29.215Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-18 15:46:32.876000+00:00
-updatedAt: 2026-08-26T03:33:29.215Z
+updatedAt: 2026-09-08T09:45:47.382Z

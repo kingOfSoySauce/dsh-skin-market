@@ -3,7 +3,7 @@ name:
   zh: dsh-codex-theme
   en: dsh-codex-theme
 author: Lxd-Ashe
-description: English | 中文
+description: Codex 主题外观插件 for DeepSeek Harness（DSH）：把 Codex 主题配置（codex-theme-v1，80 款浅/深色主题）做成可在 DSH 中直接切换、可自定义的外观插件。
 repo: https://github.com/Lxd-Ashe/dsh-codex-theme
 package: dsh-codex-theme
 rowId: dsh-codex-theme
@@ -57,7 +57,7 @@ license:
 featuredRank: 1063
 starsSnapshot: 2
 releaseUpdatedAt: 2026-09-07T21:58:34.972Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-07T21:58:34.972Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:45:47.382Z
 listScreenshot: https://raw.githubusercontent.com/Lxd-Ashe/dsh-codex-theme/eb4b0b2bb09db16b597a51a503fe24d1140b434f/docs/dark-theme.png

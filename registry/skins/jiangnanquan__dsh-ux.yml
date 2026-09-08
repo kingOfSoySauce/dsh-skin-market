@@ -3,7 +3,7 @@ name:
   zh: dsh-ux
   en: dsh-ux
 author: jiangnanquan
-description: 中文 | English
+description: DSH web 界面增强：Solarized 浅色主题 + Maple Mono 字体、紧凑对话布局、思考/工具链折叠胶囊、官方余额 + 本轮成本 + 用量图表
 repo: https://github.com/jiangnanquan/dsh-ux
 package: dsh-enhance
 rowId: dsh-enhance
@@ -56,7 +56,7 @@ license:
 featuredRank: 1034
 starsSnapshot: 8
 releaseUpdatedAt: 2026-09-07T21:58:16.872Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-07T21:58:16.872Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:45:47.382Z
 listScreenshot: https://raw.githubusercontent.com/jiangnanquan/dsh-ux/9a2a16c57e05b051fc05ceea26cbcef90af60546/screenshot.png

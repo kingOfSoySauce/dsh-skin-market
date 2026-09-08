@@ -3,7 +3,7 @@ name:
   zh: dsh-lego-plugin
   en: dsh-lego-plugin
 author: XIAOke8698
-description: <p align="center" <img src="docs/banner.jpg" alt="dsh-lego-plugin 横幅" width="100%" / </p
+description: DeepSeek Harness（DSH）Web 界面中动态 Cordis 插件的乐高式可视化。
 repo: https://github.com/XIAOke8698/dsh-lego-plugin
 package: dsh-lego-plugin
 rowId: dsh-lego-plugin
@@ -61,7 +61,7 @@ license:
 featuredRank: 1102
 starsSnapshot: 0
 releaseUpdatedAt: 2026-09-07T21:59:05.221Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:44:04.508Z
 starsUpdatedAt: 2026-09-07T21:59:05.221Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:44:04.508Z
 listScreenshot: https://raw.githubusercontent.com/XIAOke8698/dsh-lego-plugin/92de57cce80ffb969f23a7d35f7ee9b02a337944/docs/banner.jpg

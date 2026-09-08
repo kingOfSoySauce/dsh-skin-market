@@ -3,7 +3,7 @@ name:
   zh: dsh-skin-mari
   en: dsh-skin-mari
 author: unpain
-description: English | 简体中文
+description: 面向 DSH Web UI 的真希波·玛丽 / EVA 八号机主题皮肤。设计语言采用烟紫黑、玫红、荧光黄绿、暖象牙白与眼镜双镜片光学准星。
 repo: https://github.com/unpain/dsh-skin-mari
 package: dsh-skin-mari
 rowId: ui-skin-mari-interface
@@ -58,7 +58,7 @@ license:
 featuredRank: 1050
 starsSnapshot: 3
 releaseUpdatedAt: 2026-09-07T21:58:26.962Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-07T21:58:26.962Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:45:47.382Z
 listScreenshot: https://raw.githubusercontent.com/unpain/dsh-skin-mari/c414995fa639d52dbb4e4ed2c582d29e0bab5c45/preview/dark.webp

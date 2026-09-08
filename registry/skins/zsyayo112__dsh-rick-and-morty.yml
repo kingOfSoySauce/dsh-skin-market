@@ -3,7 +3,7 @@ name:
   zh: dsh-rick-and-morty
   en: dsh-rick-and-morty
 author: zsyayo112
-description: English | 中文
+description: Wubba lubba dub dub! 给 DeepSeek Harness (dsh) Web 界面的 Rick and Morty 全家桶:三套主题皮肤 + 一只会看你 agent 干活的桌宠。一条命令安装,一个插件全搞定。
 repo: https://github.com/zsyayo112/dsh-rick-and-morty
 package: "@zsy1126/dsh-rick-and-morty"
 rowId: rick-and-morty
@@ -70,6 +70,6 @@ license:
 featuredRank: 166
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:32:52.027Z
-metadataUpdatedAt: 2026-08-23T05:32:52.027Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-18T15:43:58.602Z
-updatedAt: 2026-08-23T05:32:52.027Z
+updatedAt: 2026-09-08T09:45:47.382Z

@@ -3,7 +3,7 @@ name:
   zh: dsh-whale-bg
   en: dsh-whale-bg
 author: gooosie
-description: English | 简体中文
+description: 一个非官方的 DeepSeek Harness Web UI 背景插件，将 DeepSeek 鱼形轮廓重建为 由不同尺寸粒子组成的动态效果。
 repo: https://github.com/gooosie/dsh-whale-bg
 package: dsh-whale-bg
 rowId: whale-bg
@@ -64,6 +64,6 @@ license:
 featuredRank: 104
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:33:34.648Z
-metadataUpdatedAt: 2026-08-25T07:10:59.428Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:10:59.428Z
-updatedAt: 2026-08-25T07:10:59.428Z
+updatedAt: 2026-09-08T09:45:47.382Z

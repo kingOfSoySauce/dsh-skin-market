@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-kit
   en: dsh-theme-kit
 author: ink5897
-description: English | 中文
+description: 给 DeepSeek Harness 的 Web 界面换一套好看的外观：32 款配色主题、动态与静态壁纸、东方纸纹、分区透明度与文字深浅，还送一只会跟着按键动的键盘桌宠。
 repo: https://github.com/ink5897/dsh-theme-kit
 package: dsh-theme-kit
 rowId: theme-kit
@@ -73,6 +73,6 @@ license:
 featuredRank: 80
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-23T05:31:25.601Z
-metadataUpdatedAt: 2026-08-25T07:09:35.749Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:09:35.749Z
-updatedAt: 2026-08-25T07:09:35.749Z
+updatedAt: 2026-09-08T09:45:47.382Z

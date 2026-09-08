@@ -3,7 +3,7 @@ name:
   zh: dsh-stylevault
   en: dsh-stylevault
 author: GptsApp
-description: English | 中文
+description: DeepSeek Harness 的经典主题合集：30 套开源配色、完整的 Style Settings 面板、配置可以导出分享。
 repo: https://github.com/GptsApp/dsh-stylevault
 package: dsh-stylevault
 rowId: stylevault
@@ -62,6 +62,6 @@ license:
 featuredRank: 105
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:33:36.035Z
-metadataUpdatedAt: 2026-08-23T05:33:36.035Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:12:23.425Z
-updatedAt: 2026-08-25T07:12:23.425Z
+updatedAt: 2026-09-08T09:45:47.382Z

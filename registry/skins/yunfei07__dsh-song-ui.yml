@@ -3,7 +3,7 @@ name:
   zh: dsh-song-ui
   en: dsh-song-ui
 author: yunfei07
-description: English | 中文
+description: 一个面向 DeepSeek Harness 的宋式美学主题插件。它通过可撤销的 ThemeRuntime.overrideTokens() 层提供完整的浅色与深色取值，同时保留用户选择的 light、dark 或 system 外观偏好。
 repo: https://github.com/yunfei07/dsh-song-ui
 package: ui-song-theme
 rowId: ui-song-theme-external
@@ -59,6 +59,6 @@ license:
 featuredRank: 997
 starsSnapshot: 4
 releaseUpdatedAt: 2026-08-23T10:16:48.742Z
-metadataUpdatedAt: 2026-08-25T07:09:44.131Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:09:44.131Z
-updatedAt: 2026-08-25T07:09:44.131Z
+updatedAt: 2026-09-08T09:45:47.382Z

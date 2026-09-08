@@ -3,7 +3,7 @@ name:
   zh: dsh-wallpaper-engine
   en: dsh-wallpaper-engine
 author: elysia395
-description: English | 中文
+description: 一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
 repo: https://github.com/elysia395/dsh-wallpaper-engine
 package: dsh-plugin-wallpaper-engine
 rowId: wallpaper-engine
@@ -65,6 +65,6 @@ license:
 featuredRank: 1001
 starsSnapshot: 251
 releaseUpdatedAt: 2026-09-07T21:58:11.914Z
-metadataUpdatedAt: 2026-09-07T21:58:11.914Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-07T21:58:11.914Z
-updatedAt: 2026-09-07T21:58:11.914Z
+updatedAt: 2026-09-08T09:45:47.382Z

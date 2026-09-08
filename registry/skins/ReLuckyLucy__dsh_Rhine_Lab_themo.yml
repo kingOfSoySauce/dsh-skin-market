@@ -3,7 +3,7 @@ name:
   zh: dsh_Rhine_Lab_themo
   en: dsh_Rhine_Lab_themo
 author: ReLuckyLucy
-description: English | 中文
+description: 为 DeepSeek Harness（dsh）网页版重组《明日方舟》莱茵生命界面：以档案终端为核心视觉，并加入克制的机构 HUD 标识。
 repo: https://github.com/ReLuckyLucy/dsh_Rhine_Lab_themo
 package: dsh-theme-rhine-lab
 rowId: rhine-lab-theme
@@ -57,6 +57,6 @@ license:
 featuredRank: 118
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-28T04:09:08.601Z
-metadataUpdatedAt: 2026-08-28T04:09:08.601Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:12:41.574Z
-updatedAt: 2026-08-28T04:09:08.601Z
+updatedAt: 2026-09-08T09:45:47.382Z

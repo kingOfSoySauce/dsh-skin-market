@@ -3,7 +3,7 @@ name:
   zh: dsh-photo-skins
   en: dsh-photo-skins
 author: frankxxxxue
-description: 中文 | English
+description: 一次导入，自动取色，让每一张照片成为 DSH Web GUI 的专属皮肤
 repo: https://github.com/frankxxxxue/dsh-photo-skins
 package: dsh-photo-skins
 rowId: photo-skins
@@ -65,6 +65,6 @@ license:
 featuredRank: 1006
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-31T23:12:08.679Z
-metadataUpdatedAt: 2026-08-31T23:12:08.679Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-08-25T07:10:56.434Z
-updatedAt: 2026-08-31T23:12:08.679Z
+updatedAt: 2026-09-08T09:45:47.382Z

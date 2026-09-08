@@ -3,7 +3,7 @@ name:
   zh: dsh-plugin-gemini-theme
   en: dsh-plugin-gemini-theme
 author: dingyi580
-description: English | 中文
+description: DeepSeek Harness Web 客户端的 Gemini 风格皮肤。
 repo: https://github.com/dingyi580/dsh-plugin-gemini-theme
 package: dsh-plugin-gemini-theme
 rowId: gemini-theme
@@ -57,7 +57,7 @@ license:
 featuredRank: 1069
 starsSnapshot: 1
 releaseUpdatedAt: 2026-09-07T21:58:43.325Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-07T21:58:43.325Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:45:47.382Z
 listScreenshot: https://raw.githubusercontent.com/dingyi580/dsh-plugin-gemini-theme/c7c22fe81945cfdd6da91f5175785761e2b086c1/assets/hero-dark.png

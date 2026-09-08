@@ -3,7 +3,7 @@ name:
   zh: dsh-sakura-theme
   en: dsh-sakura-theme
 author: a1303845406
-description: English | 中文
+description: 让 DeepSeek Harness 在保持专业与可读性的同时，多一点樱花盛开的生命力。
 repo: https://github.com/a1303845406/dsh-sakura-theme
 package: dsh-sakura-theme
 rowId: sakura-theme
@@ -64,7 +64,7 @@ license:
 featuredRank: 1088
 starsSnapshot: 0
 releaseUpdatedAt: 2026-09-07T21:58:55.591Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-07T21:58:55.591Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T09:45:47.382Z
 listScreenshot: https://raw.githubusercontent.com/a1303845406/dsh-sakura-theme/7ba9828034244b9dd276227ff523b93861860a73/docs/screenshots/sakura-theme-light.png
