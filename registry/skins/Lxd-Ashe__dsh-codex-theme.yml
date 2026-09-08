@@ -1,0 +1,63 @@
+id: lxd-ashe.dsh-codex-theme
+name:
+  zh: dsh-codex-theme
+  en: dsh-codex-theme
+author: Lxd-Ashe
+description: English | 中文
+repo: https://github.com/Lxd-Ashe/dsh-codex-theme
+package: dsh-codex-theme
+rowId: dsh-codex-theme
+category: theme
+tags:
+  - wallpaper
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Lxd-Ashe/dsh-codex-theme#eb4b0b2bb09db16b597a51a503fe24d1140b434f
+  version: 0.3.0
+  commit: eb4b0b2bb09db16b597a51a503fe24d1140b434f
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: ^0.1.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Lxd-Ashe/dsh-codex-theme/eb4b0b2bb09db16b597a51a503fe24d1140b434f/docs/dark-theme.png
+  - https://raw.githubusercontent.com/Lxd-Ashe/dsh-codex-theme/eb4b0b2bb09db16b597a51a503fe24d1140b434f/docs/light-theme.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: eb4b0b2bb09db16b597a51a503fe24d1140b434f
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.2-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:34.770Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1063
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:34.972Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:34.972Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/Lxd-Ashe/dsh-codex-theme/eb4b0b2bb09db16b597a51a503fe24d1140b434f/docs/dark-theme.png

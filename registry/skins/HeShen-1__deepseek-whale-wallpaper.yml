@@ -1,0 +1,67 @@
+id: heshen-1.deepseek-whale-wallpaper
+name:
+  zh: deepseek-whale-wallpaper
+  en: deepseek-whale-wallpaper
+author: HeShen-1
+description: 🐋 Harness Whale Wallpaper 鲸鱼壁纸
+repo: https://github.com/HeShen-1/deepseek-whale-wallpaper
+package: dsh-plugin-harness-whale
+rowId: harness-whale-wallpaper
+category: theme
+tags:
+  - wallpaper
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:HeShen-1/deepseek-whale-wallpaper#2b629f6bb2072d60b4028773880a52ba2b2f2465
+  version: 0.2.0
+  commit: 2b629f6bb2072d60b4028773880a52ba2b2f2465
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-plugin-harness-whale
+    packageVersion: 0.2.0
+    integrity: sha512-7AZkVnwwnnKEgXD/YjntPwlbuu7pFtuOki1C0ABSqSicNOTK0pKbUXVrOG6wyDS9IYG/tjEF2a/l/Hh6sHjiIg==
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/HeShen-1/deepseek-whale-wallpaper/2b629f6bb2072d60b4028773880a52ba2b2f2465/docs/screenshots/harness-ui-light.jpg
+  - https://raw.githubusercontent.com/HeShen-1/deepseek-whale-wallpaper/2b629f6bb2072d60b4028773880a52ba2b2f2465/docs/screenshots/harness-ui-dark.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 2b629f6bb2072d60b4028773880a52ba2b2f2465
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:32.040Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1060
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:32.113Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:32.113Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/HeShen-1/deepseek-whale-wallpaper/2b629f6bb2072d60b4028773880a52ba2b2f2465/docs/screenshots/harness-ui-light.jpg

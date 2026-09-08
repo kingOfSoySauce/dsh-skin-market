@@ -1,0 +1,66 @@
+id: jinxlux.xiao-theme-dsh-ui-plugin
+name:
+  zh: xiao-theme-dsh-ui-plugin
+  en: xiao-theme-dsh-ui-plugin
+author: jinxlux
+description: 语言 / Language： English · 简体中文（当前） · 日本語 · 한국어
+repo: https://github.com/jinxlux/xiao-theme-dsh-ui-plugin
+package: xiao-ui-theme-ts
+rowId: xiao-theme-ts
+category: theme
+tags:
+  - retro
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:jinxlux/xiao-theme-dsh-ui-plugin#8397a209b025f9e6e4a46dd32733e53e6404529c
+  version: 0.7.1
+  commit: 8397a209b025f9e6e4a46dd32733e53e6404529c
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://github.com/user-attachments/assets/3998f58b-53db-4349-80f3-3d993c6ad3c3
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 8397a209b025f9e6e4a46dd32733e53e6404529c
+    packageVersion: 0.7.1
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-09-07T21:58:25.320Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1046
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:25.427Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:25.427Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://github.com/user-attachments/assets/3998f58b-53db-4349-80f3-3d993c6ad3c3

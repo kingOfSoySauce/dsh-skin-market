@@ -1,0 +1,62 @@
+id: leemancheung.dsh-whale-animation
+name:
+  zh: dsh-whale-animation
+  en: dsh-whale-animation
+author: LeemanCheung
+description: 在 DeepSeek Harness Web 的任务状态旁播放黑白鲸鱼动画。v0.8.0 保留原有 Dive、Classic，新增探泡、疾游、回旋、吐息四个生图动作。
+repo: https://github.com/LeemanCheung/dsh-whale-animation
+package: dsh-whale-animation
+rowId: whale-animation
+category: theme
+tags:
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:LeemanCheung/dsh-whale-animation#d6feab656b27e5387daaa1882442ab20af93b1e5
+  version: 0.8.0
+  commit: d6feab656b27e5387daaa1882442ab20af93b1e5
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/d6feab656b27e5387daaa1882442ab20af93b1e5/docs/four-actions/preview.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d6feab656b27e5387daaa1882442ab20af93b1e5
+    packageVersion: 0.8.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:17.618Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1037
+starsSnapshot: 7
+releaseUpdatedAt: 2026-09-07T21:58:17.701Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:17.701Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/d6feab656b27e5387daaa1882442ab20af93b1e5/docs/four-actions/preview.gif

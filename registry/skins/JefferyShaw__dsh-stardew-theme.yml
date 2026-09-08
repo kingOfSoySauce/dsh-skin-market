@@ -1,0 +1,63 @@
+id: jefferyshaw.dsh-stardew-theme
+name:
+  zh: dsh-stardew-theme
+  en: dsh-stardew-theme
+author: JefferyShaw
+description: DeepSeek Harness Web 界面的星露谷物语风格主题——「深夜农场」深色配色：暖棕土壤、麦金、奶油色与草绿。
+repo: https://github.com/JefferyShaw/dsh-stardew-theme
+package: dsh-stardew-theme
+rowId: dsh-stardew-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:JefferyShaw/dsh-stardew-theme#2ef3df5633035c527a7dbecb7aed2b0151ea8ac5
+  version: 0.1.0
+  commit: 2ef3df5633035c527a7dbecb7aed2b0151ea8ac5
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JefferyShaw/dsh-stardew-theme/2ef3df5633035c527a7dbecb7aed2b0151ea8ac5/assets/preview-1.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 2ef3df5633035c527a7dbecb7aed2b0151ea8ac5
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:59.033Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1093
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:58:59.132Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:59.132Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/JefferyShaw/dsh-stardew-theme/2ef3df5633035c527a7dbecb7aed2b0151ea8ac5/assets/preview-1.png

@@ -1,0 +1,61 @@
+id: hit-html.dsh-enhanced
+name:
+  zh: dsh-ENHANCED
+  en: dsh-ENHANCED
+author: HIT-HTML
+description: "One plugin, every upgrade DeepSeek Harness lacks out of the box: multi-engine web search, skills & MCP managers, per-profile plugin toggles, session cleanup with hover-delete, one-click restart/shutdown, themes. Single tool surface, no telemetry."
+repo: https://github.com/HIT-HTML/dsh-ENHANCED
+package: dsh-enhanced
+rowId: dsh-enhanced
+category: theme
+tags:
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:HIT-HTML/dsh-ENHANCED#6c4d8025f70e9b0a5c4690950548ea8038996548
+  version: 1.2.2
+  commit: 6c4d8025f70e9b0a5c4690950548ea8038996548
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://github.com/user-attachments/assets/f20d6a19-2392-46c3-9a1a-358af8f123bc
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 6c4d8025f70e9b0a5c4690950548ea8038996548
+    packageVersion: 1.2.2
+    scannerVersion: static-v2
+    dshVersion: 0.1.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:32.263Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1061
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:32.360Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:32.360Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://github.com/user-attachments/assets/f20d6a19-2392-46c3-9a1a-358af8f123bc

@@ -1,0 +1,62 @@
+id: dingdongji-hub.dsh-atom-commune-skin
+name:
+  zh: dsh-atom-commune-skin
+  en: dsh-atom-commune-skin
+author: dingdongji-hub
+description: dsh-theme-atom-commune · 公社
+repo: https://github.com/dingdongji-hub/dsh-atom-commune-skin
+package: dsh-theme-atom-commune
+rowId: ui-theme-atom-commune
+category: theme
+tags:
+  - wallpaper
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:dingdongji-hub/dsh-atom-commune-skin#077fd51794b9a4121e2b0f8d130cbd28dec28b9c
+  version: 0.1.0
+  commit: 077fd51794b9a4121e2b0f8d130cbd28dec28b9c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/dingdongji-hub/dsh-atom-commune-skin/077fd51794b9a4121e2b0f8d130cbd28dec28b9c/assets/bg.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 077fd51794b9a4121e2b0f8d130cbd28dec28b9c
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:30.161Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1058
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:30.248Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:30.248Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/dingdongji-hub/dsh-atom-commune-skin/077fd51794b9a4121e2b0f8d130cbd28dec28b9c/assets/bg.jpg

@@ -1,0 +1,64 @@
+id: ash-qw.dsh-theme-prts
+name:
+  zh: dsh-theme-prts
+  en: dsh-theme-prts
+author: ash-qw
+description: 面向 DeepSeek Harness Web 的个人、非商业明日方舟 / P.R.T.S. 同人 UI 插件。主题保留 Harness 的原生交互和数据流，将工作区、会话与对话组织成罗德岛设施终端。
+repo: https://github.com/ash-qw/dsh-theme-prts
+package: "@ash-qw/dsh-theme-prts"
+rowId: theme-prts
+category: theme
+tags:
+  - glass
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:ash-qw/dsh-theme-prts#45daae7ff26f1d31111bc08f6d79c3224d74d5aa
+  version: 0.1.96
+  commit: 45daae7ff26f1d31111bc08f6d79c3224d74d5aa
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ash-qw/dsh-theme-prts/45daae7ff26f1d31111bc08f6d79c3224d74d5aa/docs/screenshots/prts-new-conversation-dark.png
+  - https://raw.githubusercontent.com/ash-qw/dsh-theme-prts/45daae7ff26f1d31111bc08f6d79c3224d74d5aa/docs/screenshots/prts-new-conversation-light.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 45daae7ff26f1d31111bc08f6d79c3224d74d5aa
+    packageVersion: 0.1.96
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:56.598Z
+    findings: []
+license:
+  code: SEE LICENSE IN LICENSE
+  commercialUse: false
+featuredRank: 1090
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:58:56.672Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:56.672Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/ash-qw/dsh-theme-prts/45daae7ff26f1d31111bc08f6d79c3224d74d5aa/docs/screenshots/prts-new-conversation-dark.png

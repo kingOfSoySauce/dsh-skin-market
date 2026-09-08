@@ -1,0 +1,64 @@
+id: yyyyyylor.dsh-asuka-school-theme
+name:
+  zh: dsh-asuka-school-theme
+  en: dsh-asuka-school-theme
+author: Yyyyyylor
+description: 明日香学园 // 02
+repo: https://github.com/Yyyyyylor/dsh-asuka-school-theme
+package: dsh-asuka-school-theme
+rowId: asuka-school-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Yyyyyylor/dsh-asuka-school-theme#905423054241cd3c5200b23387f9f7d4b7314d9d
+  version: 2.2.1
+  commit: 905423054241cd3c5200b23387f9f7d4b7314d9d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Yyyyyylor/dsh-asuka-school-theme/905423054241cd3c5200b23387f9f7d4b7314d9d/docs/images/theme-asuka-preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 905423054241cd3c5200b23387f9f7d4b7314d9d
+    packageVersion: 2.2.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:06.127Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1105
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:06.230Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:06.230Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/Yyyyyylor/dsh-asuka-school-theme/905423054241cd3c5200b23387f9f7d4b7314d9d/docs/images/theme-asuka-preview.png

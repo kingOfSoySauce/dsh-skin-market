@@ -1,0 +1,65 @@
+id: shuigege2025-dev.cloud-smoke-widget
+name:
+  zh: cloud-smoke-widget
+  en: cloud-smoke-widget
+author: shuigege2025-dev
+description: 云抽烟 · Cloud Smoke Widget
+repo: https://github.com/shuigege2025-dev/cloud-smoke-widget
+subpath: plugin
+package: dsh-client-cloud-smoke-widget
+rowId: cloud-smoke-widget
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+install:
+  target: github:shuigege2025-dev/cloud-smoke-widget#0576b3cb2db00b1815a17f2eea110434f3584df4&path:/plugin
+  version: 1.2.2
+  commit: 0576b3cb2db00b1815a17f2eea110434f3584df4
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/shuigege2025-dev/cloud-smoke-widget/0576b3cb2db00b1815a17f2eea110434f3584df4/preview/cloud-smoking.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 0576b3cb2db00b1815a17f2eea110434f3584df4
+    packageVersion: 1.2.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:50.899Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1079
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:51.056Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:51.056Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/shuigege2025-dev/cloud-smoke-widget/0576b3cb2db00b1815a17f2eea110434f3584df4/preview/cloud-smoking.gif

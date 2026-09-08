@@ -1,0 +1,64 @@
+id: eternalnight996.dsh-theme
+name:
+  zh: dsh-theme
+  en: dsh-theme
+author: EternalNight996
+description: <p align="center" <img src="https://raw.githubusercontent.com/EternalNight996/dsh-theme/main/assets/screen/dsh-theme.gif" width="720" alt="dsh-theme 主题皮肤演示" / </p
+repo: https://github.com/EternalNight996/dsh-theme
+package: "@eternalnight/dsh-theme"
+rowId: dsh-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:EternalNight996/dsh-theme#d01383f8d82d3020607f16b62a8f6445df9f4978
+  version: 0.5.1
+  commit: d01383f8d82d3020607f16b62a8f6445df9f4978
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/EternalNight996/dsh-theme/d01383f8d82d3020607f16b62a8f6445df9f4978/assets/screen/dsh-theme.gif
+  - https://raw.githubusercontent.com/EternalNight996/dsh-theme/d01383f8d82d3020607f16b62a8f6445df9f4978/assets/screen/dsh-desktop.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d01383f8d82d3020607f16b62a8f6445df9f4978
+    packageVersion: 0.5.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:24.491Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1043
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:24.572Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:24.572Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/EternalNight996/dsh-theme/d01383f8d82d3020607f16b62a8f6445df9f4978/assets/screen/dsh-theme.gif

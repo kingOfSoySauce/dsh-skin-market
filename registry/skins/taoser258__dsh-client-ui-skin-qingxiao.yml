@@ -1,0 +1,69 @@
+id: taoser258.dsh-client-ui-skin-qingxiao
+name:
+  zh: dsh-client-ui-skin-qingxiao
+  en: dsh-client-ui-skin-qingxiao
+author: taoser258
+description: 清宵 · 弦凝清霄 — DSH 美化包
+repo: https://github.com/taoser258/dsh-client-ui-skin-qingxiao
+package: "@taosee258/dsh-client-ui-skin-qingxiao"
+rowId: ui-skin-qingxiao
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - pastel
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:taoser258/dsh-client-ui-skin-qingxiao#38f5bc044ccd562713e28f59f28b54732011f974
+  version: 0.1.4
+  commit: 38f5bc044ccd562713e28f59f28b54732011f974
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@taosee258/dsh-client-ui-skin-qingxiao"
+    packageVersion: 0.1.4
+    integrity: sha512-Ec8d+WDp6/ZsnhnDruul8ZEFFVglJuynd1YmL2Jhnt9FFMsza1X8YXnw0up8rT/7Gr+GWoqJIGnUufBG6EacCw==
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/taoser258/dsh-client-ui-skin-qingxiao/38f5bc044ccd562713e28f59f28b54732011f974/preview/screen-light.png
+  - https://raw.githubusercontent.com/taoser258/dsh-client-ui-skin-qingxiao/38f5bc044ccd562713e28f59f28b54732011f974/preview/screen-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 38f5bc044ccd562713e28f59f28b54732011f974
+    packageVersion: 0.1.4
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:22.934Z
+    findings: []
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1041
+starsSnapshot: 4
+releaseUpdatedAt: 2026-09-07T21:58:23.016Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:23.016Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/taoser258/dsh-client-ui-skin-qingxiao/38f5bc044ccd562713e28f59f28b54732011f974/preview/screen-light.png

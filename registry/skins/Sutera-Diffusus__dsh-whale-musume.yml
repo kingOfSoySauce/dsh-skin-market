@@ -1,0 +1,62 @@
+id: sutera-diffusus.dsh-whale-musume
+name:
+  zh: dsh-whale-musume
+  en: dsh-whale-musume
+author: Sutera-Diffusus
+description: <p <a href="https://github.com/Sutera-Diffusus/dsh-whale-musume/releases/latest"下载最新版</a · <a href="#效果预览"查看效果预览</a · <a href="#安装教程"安装教程</a </p
+repo: https://github.com/Sutera-Diffusus/dsh-whale-musume
+package: dsh-whale-musume
+rowId: dsh-whale-musume
+category: theme
+tags:
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - dark
+install:
+  target: github:Sutera-Diffusus/dsh-whale-musume#ba9c69480ec4e606ff654160348eb3682a483dd7
+  version: 2.0.1
+  commit: ba9c69480ec4e606ff654160348eb3682a483dd7
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png
+  - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/preview-idle-coffee.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: ba9c69480ec4e606ff654160348eb3682a483dd7
+    packageVersion: 2.0.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:13.246Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1033
+starsSnapshot: 56
+releaseUpdatedAt: 2026-09-07T21:58:13.326Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:13.326Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png

@@ -1,0 +1,65 @@
+id: skadi-0510.sakura-snow
+name:
+  zh: sakura-Snow
+  en: sakura-Snow
+author: skadi-0510
+description: sakura-snow · 樱雪
+repo: https://github.com/skadi-0510/sakura-Snow
+subpath: sakura-snow
+package: "@dsh-external/dsh-client-ui-skin-sakura-snow"
+rowId: ui-skin-sakura-snow
+category: theme
+tags:
+  - wallpaper
+  - anime
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:skadi-0510/sakura-Snow#eb68d3af37db571b3067cbbb013c3a27612d8999&path:/sakura-snow
+  version: 0.0.1
+  commit: eb68d3af37db571b3067cbbb013c3a27612d8999
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/skadi-0510/sakura-Snow/eb68d3af37db571b3067cbbb013c3a27612d8999/sakura-snow/preview/light.webp
+  - https://raw.githubusercontent.com/skadi-0510/sakura-Snow/eb68d3af37db571b3067cbbb013c3a27612d8999/sakura-snow/preview/dark.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: eb68d3af37db571b3067cbbb013c3a27612d8999
+    packageVersion: 0.0.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:50.737Z
+    findings: []
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1080
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:50.814Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:50.814Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/skadi-0510/sakura-Snow/eb68d3af37db571b3067cbbb013c3a27612d8999/sakura-snow/preview/light.webp

@@ -1,0 +1,63 @@
+id: shinefree7.dsh-doc-rail
+name:
+  zh: dsh-doc-rail
+  en: dsh-doc-rail
+author: ShineFree7
+description: Restart the web GUI (dsh web) — the page then boots with the rail on the right. Click ✕ to collapse it; the small 📄 文档面板 pill reopens it.
+repo: https://github.com/ShineFree7/dsh-doc-rail
+package: dsh-doc-rail
+rowId: dsh-doc-rail
+category: theme
+tags:
+  - retro
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:ShineFree7/dsh-doc-rail#b667d299a3fe4a574879f2de336c2ae589484f3a
+  version: 0.1.0
+  commit: b667d299a3fe4a574879f2de336c2ae589484f3a
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ShineFree7/dsh-doc-rail/b667d299a3fe4a574879f2de336c2ae589484f3a/assets/preview-light.png
+  - https://raw.githubusercontent.com/ShineFree7/dsh-doc-rail/b667d299a3fe4a574879f2de336c2ae589484f3a/assets/preview-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: b667d299a3fe4a574879f2de336c2ae589484f3a
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:02.387Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1097
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:02.465Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:02.465Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/ShineFree7/dsh-doc-rail/b667d299a3fe4a574879f2de336c2ae589484f3a/assets/preview-light.png

@@ -1,0 +1,65 @@
+id: xjg12345.deepseek-harness-bocchi-ui
+name:
+  zh: DeepSeek-Harness-Bocchi-UI
+  en: DeepSeek-Harness-Bocchi-UI
+author: xjg12345
+description: 《孤独摇滚！》（Bocchi the Rock!）主题皮肤 —— 为 DeepSeek Harness Web UI 打造的极简深色主题 + 专属壁纸，并带一个「原始主题 ↔ 孤独摇滚主题」随时切换开关。
+repo: https://github.com/xjg12345/DeepSeek-Harness-Bocchi-UI
+subpath: packages/dsh-client-ui-bocchi
+package: dsh-client-ui-bocchi
+rowId: ui-bocchi
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:xjg12345/DeepSeek-Harness-Bocchi-UI#8db16c00422d89451a045b6887c9bffa75ba5743&path:/packages/dsh-client-ui-bocchi
+  version: 0.1.0
+  commit: 8db16c00422d89451a045b6887c9bffa75ba5743
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xjg12345/DeepSeek-Harness-Bocchi-UI/8db16c00422d89451a045b6887c9bffa75ba5743/assets/image-20260816193230630.png
+  - https://raw.githubusercontent.com/xjg12345/DeepSeek-Harness-Bocchi-UI/8db16c00422d89451a045b6887c9bffa75ba5743/assets/image-20260816193252214.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 8db16c00422d89451a045b6887c9bffa75ba5743
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:05.287Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1103
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:05.455Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:05.455Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/xjg12345/DeepSeek-Harness-Bocchi-UI/8db16c00422d89451a045b6887c9bffa75ba5743/assets/image-20260816193230630.png

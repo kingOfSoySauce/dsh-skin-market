@@ -1,0 +1,64 @@
+id: lyh9712.dsh-bg-image
+name:
+  zh: dsh-bg-image
+  en: dsh-bg-image
+author: lyh9712
+description: dsh-bg-image — DSH Web 背景图插件
+repo: https://github.com/lyh9712/dsh-bg-image
+package: "@local/dsh-bg-image"
+rowId: bg-image
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:lyh9712/dsh-bg-image#3de5438980eee8a10844edfa0ac7b9fd7ef7a9d3
+  version: 2.0.0
+  commit: 3de5438980eee8a10844edfa0ac7b9fd7ef7a9d3
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lyh9712/dsh-bg-image/3de5438980eee8a10844edfa0ac7b9fd7ef7a9d3/docs/screenshot.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 3de5438980eee8a10844edfa0ac7b9fd7ef7a9d3
+    packageVersion: 2.0.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:25.959Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1047
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:26.052Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:26.052Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/lyh9712/dsh-bg-image/3de5438980eee8a10844edfa0ac7b9fd7ef7a9d3/docs/screenshot.png

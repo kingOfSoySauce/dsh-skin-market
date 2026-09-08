@@ -1,0 +1,67 @@
+id: realmisakamikoto.dsh-skin-studio
+name:
+  zh: dsh-skin-studio
+  en: dsh-skin-studio
+author: realMisakaMikoto
+description: <p align="center" DeepSeek Harness Web UI 的本地皮肤工作室：创建、实时预览、管理与分享完整外观。 </p
+repo: https://github.com/realMisakaMikoto/dsh-skin-studio
+package: dsh-skin-studio
+rowId: skin-studio
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:realMisakaMikoto/dsh-skin-studio#4177dd002cb81ef9aecd224acf17f7e503bcdec3
+  version: 0.6.0-alpha.1
+  commit: 4177dd002cb81ef9aecd224acf17f7e503bcdec3
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
+compatibility:
+  dsh: 0.1.0-rc.8
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/realMisakaMikoto/dsh-skin-studio/4177dd002cb81ef9aecd224acf17f7e503bcdec3/docs/screenshots/skins/ayumu.webp
+  - https://raw.githubusercontent.com/realMisakaMikoto/dsh-skin-studio/4177dd002cb81ef9aecd224acf17f7e503bcdec3/docs/screenshots/skins/yu.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 4177dd002cb81ef9aecd224acf17f7e503bcdec3
+    packageVersion: 0.6.0-alpha.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.8
+    mode: static
+    result: unknown
+    checkedAt: 2026-09-07T21:58:22.381Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: AGPL-3.0-only
+  commercialUse: true
+featuredRank: 1040
+starsSnapshot: 4
+releaseUpdatedAt: 2026-09-07T21:58:22.382Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:22.382Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/realMisakaMikoto/dsh-skin-studio/4177dd002cb81ef9aecd224acf17f7e503bcdec3/docs/screenshots/skins/ayumu.webp

@@ -1,0 +1,67 @@
+id: yudaxia1.one-dark-pro-dsh-plugin
+name:
+  zh: one-dark-pro-dsh-plugin
+  en: one-dark-pro-dsh-plugin
+author: yudaxia1
+description: 适用于 DeepSeek Harness Web UI 的 One Dark Pro 主题插件。
+repo: https://github.com/yudaxia1/one-dark-pro-dsh-plugin
+package: one-dark-pro-dsh-plugin
+rowId: one-dark-pro
+category: theme
+tags:
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:yudaxia1/one-dark-pro-dsh-plugin#7e218a3a15f46b0079d7b92a7169a03329fca4fa
+  version: 0.1.0
+  commit: 7e218a3a15f46b0079d7b92a7169a03329fca4fa
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yudaxia1/one-dark-pro-dsh-plugin/7e218a3a15f46b0079d7b92a7169a03329fca4fa/docs/screenshots/light-theme.png
+  - https://raw.githubusercontent.com/yudaxia1/one-dark-pro-dsh-plugin/7e218a3a15f46b0079d7b92a7169a03329fca4fa/docs/screenshots/dark-theme.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 7e218a3a15f46b0079d7b92a7169a03329fca4fa
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-09-07T21:58:54.221Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1084
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:54.304Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:54.304Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/yudaxia1/one-dark-pro-dsh-plugin/7e218a3a15f46b0079d7b92a7169a03329fca4fa/docs/screenshots/light-theme.png

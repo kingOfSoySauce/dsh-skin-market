@@ -1,0 +1,67 @@
+id: xiaoke8698.dsh-lego-plugin
+name:
+  zh: dsh-lego-plugin
+  en: dsh-lego-plugin
+author: XIAOke8698
+description: <p align="center" <img src="docs/banner.jpg" alt="dsh-lego-plugin 横幅" width="100%" / </p
+repo: https://github.com/XIAOke8698/dsh-lego-plugin
+package: dsh-lego-plugin
+rowId: dsh-lego-plugin
+category: theme
+tags:
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:XIAOke8698/dsh-lego-plugin#92de57cce80ffb969f23a7d35f7ee9b02a337944
+  version: 0.2.0
+  commit: 92de57cce80ffb969f23a7d35f7ee9b02a337944
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
+  allowBuild: dsh-lego-plugin@https://codeload.github.com/XIAOke8698/dsh-lego-plugin/tar.gz/92de57cce80ffb969f23a7d35f7ee9b02a337944
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/XIAOke8698/dsh-lego-plugin/92de57cce80ffb969f23a7d35f7ee9b02a337944/docs/banner.jpg
+  - https://raw.githubusercontent.com/XIAOke8698/dsh-lego-plugin/92de57cce80ffb969f23a7d35f7ee9b02a337944/docs/screenshot-20260906-134640.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 92de57cce80ffb969f23a7d35f7ee9b02a337944
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-09-07T21:59:05.089Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1102
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:05.221Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:05.221Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/XIAOke8698/dsh-lego-plugin/92de57cce80ffb969f23a7d35f7ee9b02a337944/docs/banner.jpg

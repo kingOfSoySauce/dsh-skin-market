@@ -24,24 +24,25 @@ install:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: 0.1.0-rc.5
+  dsh: 0.1.2-rc.1
   platform:
     - web
 screenshots:
   - https://opengraph.githubassets.com/placeholder/carpon39038.dsh-image-theme
 review:
   compatibility: verified
-  preview: verified
+  preview: repository-card
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - README 的 docs/preview.png 与 playground 演示界面一致，尚不能作为 DSH Web 实机截图；请补充该固定版本在 DSH 0.1.2-rc.1 中运行的截图。
   scan:
     commit: 25c70fcd31b0cf36f8a0ff57b0413223daaf5d27
     packageVersion: 0.1.1
@@ -57,6 +58,6 @@ license:
 featuredRank: 60
 starsSnapshot: 2
 releaseUpdatedAt: 2026-09-07T21:58:29.457Z
-metadataUpdatedAt: 2026-09-07T21:58:29.457Z
+metadataUpdatedAt: 2026-09-08T02:11:50.874Z
 starsUpdatedAt: 2026-08-16 13:50:02.941000+00:00
-updatedAt: 2026-09-07T21:58:29.457Z
+updatedAt: 2026-09-08T02:11:50.874Z

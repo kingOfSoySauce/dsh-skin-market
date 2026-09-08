@@ -1,0 +1,64 @@
+id: yummyxl.dsh-eyecare
+name:
+  zh: dsh-eyecare
+  en: dsh-eyecare
+author: Yummyxl
+description: 🌿 dsh-eyecare · DSH 护眼模式插件
+repo: https://github.com/Yummyxl/dsh-eyecare
+package: dsh-eyecare
+rowId: ui-eye-care
+category: theme
+tags:
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Yummyxl/dsh-eyecare#efeb92e1bcfe54369f88b6e8a176ad87f87a17b0
+  version: 1.1.0
+  commit: efeb92e1bcfe54369f88b6e8a176ad87f87a17b0
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-eyecare
+    packageVersion: 1.1.0
+    integrity: sha512-sh4QzGQNFbLWQxLwr5H7g0jxrH7UXrOlzzCujKgkKbQjYQ1yDi4C4mGzlsV5bRHZBrrx0njgOy8PFbGmfqLcjA==
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Yummyxl/dsh-eyecare/efeb92e1bcfe54369f88b6e8a176ad87f87a17b0/screenshot.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: efeb92e1bcfe54369f88b6e8a176ad87f87a17b0
+    packageVersion: 1.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:27.529Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1052
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:27.689Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:27.689Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/Yummyxl/dsh-eyecare/efeb92e1bcfe54369f88b6e8a176ad87f87a17b0/screenshot.png

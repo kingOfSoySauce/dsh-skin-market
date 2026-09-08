@@ -1,0 +1,63 @@
+id: makajo.dsh-gemini-m3e-theme
+name:
+  zh: dsh-gemini-m3e-theme
+  en: dsh-gemini-m3e-theme
+author: makajo
+description: 一个为 DeepSeek Harness Web UI 打造的 Google Gemini 风格 Material 3 Expressive 主题，以持久化 client bundle 插件 的形式交付。
+repo: https://github.com/makajo/dsh-gemini-m3e-theme
+package: dsh-gemini-m3e-theme
+rowId: gemini-m3e-theme-service
+category: theme
+tags:
+  - retro
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:makajo/dsh-gemini-m3e-theme#e20c8e30d7a4a2952a3a04e494eab414f8e8f818
+  version: 0.1.0
+  commit: e20c8e30d7a4a2952a3a04e494eab414f8e8f818
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/makajo/dsh-gemini-m3e-theme/e20c8e30d7a4a2952a3a04e494eab414f8e8f818/docs/screenshots/light.png
+  - https://raw.githubusercontent.com/makajo/dsh-gemini-m3e-theme/e20c8e30d7a4a2952a3a04e494eab414f8e8f818/docs/screenshots/dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: e20c8e30d7a4a2952a3a04e494eab414f8e8f818
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:48.651Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1077
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:48.726Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:48.726Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/makajo/dsh-gemini-m3e-theme/e20c8e30d7a4a2952a3a04e494eab414f8e8f818/docs/screenshots/light.png

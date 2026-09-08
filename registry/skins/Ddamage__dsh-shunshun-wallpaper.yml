@@ -1,0 +1,67 @@
+id: ddamage.dsh-shunshun-wallpaper
+name:
+  zh: dsh-shunshun-wallpaper
+  en: dsh-shunshun-wallpaper
+author: Ddamage
+description: 顺顺壁纸（dsh-wallpaper）
+repo: https://github.com/Ddamage/dsh-shunshun-wallpaper
+package: dsh-shunshun-wallpaper
+rowId: dsh-shunshun-wallpaper
+category: theme
+tags:
+  - wallpaper
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Ddamage/dsh-shunshun-wallpaper#6f42d12d2b652b14ddc84a3221ddeef47e066d4a
+  version: 1.0.4
+  commit: 6f42d12d2b652b14ddc84a3221ddeef47e066d4a
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-shunshun-wallpaper
+    packageVersion: 1.0.4
+    integrity: sha512-F1WgHYKILqv+7m49OlXT855O2/oUXoXBCzkWbExeOysBoapndtAxXfQLHhGjE0vGMk6KQOff+GAuvojQKEKabg==
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://github.com/Ddamage/dsh-shunshun-wallpaper/releases/download/v1.0.1/rotating_horse_smooth.gif
+  - https://github.com/Ddamage/dsh-shunshun-wallpaper/releases/download/v1.0.1/wallpaper.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 6f42d12d2b652b14ddc84a3221ddeef47e066d4a
+    packageVersion: 1.0.4
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:43.209Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1057
+starsSnapshot: 2
+releaseUpdatedAt: 2026-09-07T21:58:43.286Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:43.286Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://github.com/Ddamage/dsh-shunshun-wallpaper/releases/download/v1.0.1/rotating_horse_smooth.gif

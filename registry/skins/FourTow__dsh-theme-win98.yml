@@ -1,0 +1,62 @@
+id: fourtow.dsh-theme-win98
+name:
+  zh: dsh-theme-win98
+  en: dsh-theme-win98
+author: FourTow
+description: 给 DeepSeek Harness Web(DSH Web)用的 Windows 98 经典主题插件。
+repo: https://github.com/FourTow/dsh-theme-win98
+package: dsh-theme-win98
+rowId: theme-win98
+category: theme
+tags:
+  - retro
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:FourTow/dsh-theme-win98#3d10ec0a2c86583fa96f3554fc3a14b87c59a1d7
+  version: 1.0.0
+  commit: 3d10ec0a2c86583fa96f3554fc3a14b87c59a1d7
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/FourTow/dsh-theme-win98/3d10ec0a2c86583fa96f3554fc3a14b87c59a1d7/assets/screenshot.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 3d10ec0a2c86583fa96f3554fc3a14b87c59a1d7
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:58.450Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1092
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:58:58.544Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:58.544Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/FourTow/dsh-theme-win98/3d10ec0a2c86583fa96f3554fc3a14b87c59a1d7/assets/screenshot.png

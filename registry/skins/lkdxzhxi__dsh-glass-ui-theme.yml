@@ -1,0 +1,66 @@
+id: lkdxzhxi.dsh-glass-ui-theme
+name:
+  zh: dsh-glass-ui-theme
+  en: dsh-glass-ui-theme
+author: lkdxzhxi
+description: 为 DeepSeek Harness 打造的液态玻璃主题 — 磨砂质感、可调色调、动态壁纸，视频背景，让 DSH 界面焕然一新。
+repo: https://github.com/lkdxzhxi/dsh-glass-ui-theme
+package: dsh-glass-ui-theme
+rowId: dsh-glass-ui-theme
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:lkdxzhxi/dsh-glass-ui-theme#ef35fd6ed5c8821c1e79ee804e7384a206915c3f
+  version: 0.2.5
+  commit: ef35fd6ed5c8821c1e79ee804e7384a206915c3f
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-glass-ui-theme
+    packageVersion: 0.2.5
+    integrity: sha512-0v+vyMLCxiso9CRNwzjZnOzKFcQ8+XFiWv4VkcBKmssRbJhbNlixa1ex0gmboWbIQsazDbBeTruYgPSqr/xZTQ==
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lkdxzhxi/dsh-glass-ui-theme/ef35fd6ed5c8821c1e79ee804e7384a206915c3f/docs/screenshot.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: ef35fd6ed5c8821c1e79ee804e7384a206915c3f
+    packageVersion: 0.2.5
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:59:00.421Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1096
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-07T21:59:00.499Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:59:00.499Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/lkdxzhxi/dsh-glass-ui-theme/ef35fd6ed5c8821c1e79ee804e7384a206915c3f/docs/screenshot.png

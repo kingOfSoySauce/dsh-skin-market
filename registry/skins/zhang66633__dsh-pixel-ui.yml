@@ -1,0 +1,62 @@
+id: zhang66633.dsh-pixel-ui
+name:
+  zh: dsh-pixel-ui
+  en: dsh-pixel-ui
+author: zhang66633
+description: DeepSeek Harness 像素皮肤（Agent Xi 风格）：四个主题一键切换——像素·木屋 / 像素·羊皮纸 / 像素·暖阳 / 像素·终端绿，随时可切回现代默认 UI。
+repo: https://github.com/zhang66633/dsh-pixel-ui
+package: dsh-pixel-ui
+rowId: dsh-pixel-ui
+category: theme
+tags:
+  - retro
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:zhang66633/dsh-pixel-ui#44454483bbdbbba60822bb7a1d2846ff94ed021c
+  version: 1.3.0
+  commit: 44454483bbdbbba60822bb7a1d2846ff94ed021c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/44454483bbdbbba60822bb7a1d2846ff94ed021c/assets/screenshot-wood.png
+  - https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/44454483bbdbbba60822bb7a1d2846ff94ed021c/assets/screenshot-paper.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 44454483bbdbbba60822bb7a1d2846ff94ed021c
+    packageVersion: 1.3.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:27.594Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1053
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-07T21:58:27.726Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:27.726Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/44454483bbdbbba60822bb7a1d2846ff94ed021c/assets/screenshot-wood.png
