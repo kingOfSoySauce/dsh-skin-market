@@ -22,6 +22,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
+  npm:
+    name: "@kubor/dsh-bloom-theme"
+    version: 0.9.0
+    integrity: sha512-edRAe0iip59WhQqt3EUFIx++0N7DLnLdMmbQfB6XyMkTgm4wTB9xeHavsO/iHX3wEok+sscTXjM7tx6h45louQ==
+    repository: https://github.com/webkubor/dsh-bloom-theme
+    gitHead: 64790d4624a299c2e44ca9bb08f300cca69748b8
 compatibility:
   dsh: unverified
   platform:

@@ -14,6 +14,11 @@ export declare function githubInstallTarget(repository: string, commit: string, 
 export declare function parseGithubTarget(target: string): GithubTargetParts | null;
 export declare function companionAsSkin(skin: SkinEntry, companion: SkinCompanion): SkinEntry;
 export declare function isNpmInstallTarget(skin: SkinEntry, target: string): boolean;
+export declare function repositoryIdentity(value: unknown): string | null;
+/** Validate the provenance fields before trusting a catalog's npm alternative. */
+export declare function reviewedNpmSourceError(skin: SkinEntry): string | null;
+/** Ordinary updates retain the source family recorded in the live profile. */
+export declare function updateInstallTarget(skin: SkinEntry, currentSpec: string | undefined): string;
 /**
  * Inspect a root GitHub package fetched into a temporary profile. A package
  * collection is only retargeted when exactly one child is the reviewed DSH

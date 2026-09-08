@@ -70,6 +70,54 @@ export function isNpmInstallTarget(skin: SkinEntry, target: string): boolean {
   return npmInstallTarget(skin) === target
 }
 
+export function repositoryIdentity(value: unknown): string | null {
+  const raw = typeof value === 'string'
+    ? value
+    : typeof value === 'object' && value !== null && 'url' in value && typeof value.url === 'string' ? value.url : null
+  if (raw === null) return null
+  const normalized = raw.trim().replace(/^git\+/, '').replace(/^github:/, 'https://github.com/')
+  const match = /^(?:(?:https?|git):\/\/github\.com\/|ssh:\/\/git@github\.com\/|git@github\.com:)([^/\s]+)\/([^/#?\s]+?)(?:\.git)?\/?$/i.exec(normalized)
+  return match === null ? null : `${match[1]}/${match[2]}`.toLowerCase()
+}
+
+/** Validate the provenance fields before trusting a catalog's npm alternative. */
+export function reviewedNpmSourceError(skin: SkinEntry): string | null {
+  const npm = skin.install.npm
+  if (npm === undefined) return '尚无已核验的 npm 安装来源'
+  if (npm.name !== skin.package) return 'npm 包名与目录皮肤不一致'
+  if (npm.version !== skin.install.version) return 'npm 版本与目录固定版本不一致'
+  if (!/^[0-9a-f]{40}$/i.test(npm.gitHead) || npm.gitHead.toLowerCase() !== skin.install.commit.toLowerCase()) return 'npm gitHead 与目录固定 commit 不一致'
+  const repository = repositoryIdentity(npm.repository)
+  if (repository === null || repository !== repositoryIdentity(skin.repo)) return 'npm repository 与目录仓库不一致'
+  if (!/^sha(?:1|256|384|512)-[A-Za-z0-9+/]+={0,2}$/.test(npm.integrity)) return 'npm integrity 缺失或格式无效'
+  return null
+}
+
+function isNpmDependencySpec(spec: string, packageName: string): boolean {
+  let version = spec
+  for (const prefix of [`npm:${packageName}@`, `${packageName}@`]) {
+    if (version.startsWith(prefix)) { version = version.slice(prefix.length); break }
+  }
+  // Registry versions, ranges and dist tags; URL, local and other aliases are
+  // intentionally excluded so Update cannot silently replace their source.
+  return /^(?:[~^<>=*v\d][\dA-Za-z.*+~^<>=|\s-]*|[A-Za-z][A-Za-z0-9._-]*)$/.test(version)
+}
+
+/** Ordinary updates retain the source family recorded in the live profile. */
+export function updateInstallTarget(skin: SkinEntry, currentSpec: string | undefined): string {
+  if (currentSpec === undefined) throw new Error('请先安装皮肤，再执行更新')
+  if (/^github:/i.test(currentSpec)
+    || /^(?:git\+)?(?:https?|git):\/\/github\.com\//i.test(currentSpec)
+    || /^https:\/\/codeload\.github\.com\//i.test(currentSpec)
+    || /^(?:ssh:\/\/)?git@github\.com[:/]/i.test(currentSpec)) return skin.install.target
+  if (isNpmDependencySpec(currentSpec, skin.package)) {
+    const error = reviewedNpmSourceError(skin)
+    if (error !== null) throw new Error(`无法继续从 npm 更新：${error}`)
+    return npmInstallTarget(skin)!
+  }
+  throw new Error('当前皮肤使用本地或自定义安装来源，无法自动更新；请按原安装方式更新')
+}
+
 function readManifest(file: string): PackageManifest | null {
   try { return JSON.parse(readFileSync(file, 'utf8')) as PackageManifest } catch { return null }
 }

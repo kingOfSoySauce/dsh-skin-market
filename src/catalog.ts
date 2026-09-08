@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import Ajv from 'ajv/dist/2020.js'
+import { decodeCatalogWire, encodeCatalogWire } from './catalog-wire.ts'
 import { githubInstallTarget, parseGithubTarget } from './install-resolution.ts'
 import { atomicWriteJson } from './profile.ts'
 import { isVersionRange } from './semver.ts'
@@ -15,15 +16,11 @@ const validateSkin = new Ajv({ allErrors: true, strict: false, validateFormats: 
 
 export function loadCatalog(): CatalogFile {
   const file = new URL('../data/catalog.json', import.meta.url)
-  return JSON.parse(readFileSync(file, 'utf8')) as CatalogFile
+  return validateCatalog(JSON.parse(readFileSync(file, 'utf8')))
 }
 
 export function validateCatalog(value: unknown): CatalogFile {
-  if (typeof value !== 'object' || value === null) throw new Error('catalog must be an object')
-  const candidate = value as Partial<CatalogFile>
-  if (candidate.schemaVersion !== 1) throw new Error('unsupported catalog schema version')
-  if (typeof candidate.generatedAt !== 'string' || !Number.isFinite(Date.parse(candidate.generatedAt))) throw new Error('catalog generatedAt is invalid')
-  if (!Array.isArray(candidate.skins) || candidate.skins.length > 5000) throw new Error('catalog skins must be an array of at most 5000 entries')
+  const candidate = decodeCatalogWire(value)
 
   const ids = new Set<string>()
   const packages = new Set<string>()
@@ -51,14 +48,6 @@ export function validateCatalog(value: unknown): CatalogFile {
     }
     if ((entry.install.companions?.length ?? 0) > 0 && entry.install.desktop?.mode === 'managed') {
       throw new Error(`desktop managed install cannot install companions for ${entry.id}`)
-    }
-    const npm = entry.install.npm
-    if (npm !== undefined) {
-      const npmRepo = npm.repository.replace(/^https:\/\/github\.com\//, '').replace(/\/$/, '')
-      if (npm.name !== entry.package) throw new Error(`invalid npm package name for ${entry.id}`)
-      if (npm.version !== entry.install.version) throw new Error(`invalid npm package version for ${entry.id}`)
-      if (npmRepo !== repo) throw new Error(`invalid npm repository for ${entry.id}`)
-      if (typeof npm.gitHead !== 'string' || !/^[0-9a-f]{40}$/i.test(npm.gitHead) || npm.gitHead.toLowerCase() !== entry.install.commit.toLowerCase()) throw new Error(`invalid npm gitHead for ${entry.id}`)
     }
     if (entry.subpath !== undefined && entry.install.allowBuild !== undefined && !entry.install.allowBuild.endsWith(`#path:${entry.subpath}`)) {
       throw new Error(`invalid allowBuild path for ${entry.id}; expected #path:${entry.subpath}`)
@@ -115,7 +104,7 @@ export class CatalogStore {
   private readonly now: () => number
 
   constructor(private readonly profileDir: string, options: CatalogStoreOptions = {}) {
-    const bundled = validateCatalog(loadCatalog())
+    const bundled = loadCatalog()
     this.current = bundled
     this.remoteUrl = options.remoteUrl ?? REMOTE_CATALOG_URL
     this.preferBundled = options.preferBundled ?? process.env[LOCAL_CATALOG_ENV] === '1'
@@ -172,7 +161,7 @@ export class CatalogStore {
       this.current = remote
       this.source = 'remote'
       this.error = undefined
-      atomicWriteJson(cacheFile(this.profileDir), remote)
+      atomicWriteJson(cacheFile(this.profileDir), encodeCatalogWire(remote))
     } catch (error) {
       this.error = errorMessage(error)
     }

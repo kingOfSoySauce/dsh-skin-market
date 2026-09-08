@@ -52,6 +52,7 @@ describe('market routes', () => {
     expect(routes).toContainEqual({ kind: 'exact', path: '/dsh-skin-market/logs' })
     expect(routes).toContainEqual({ kind: 'exact', path: '/dsh-skin-market/pin' })
     expect(routes).toContainEqual({ kind: 'exact', path: '/dsh-skin-market/unpin' })
+    expect(routes).toContainEqual({ kind: 'exact', path: '/dsh-skin-market/migrate' })
     dispose()
   })
 

@@ -4,6 +4,7 @@ import { homedir } from 'node:os'
 import { dirname, join, resolve, sep } from 'node:path'
 import { parse, stringify } from 'yaml'
 import { effectiveBuildApprovalKey } from './build-approval.ts'
+import { npmInstallTarget, parseGithubTarget, repositoryIdentity, reviewedNpmSourceError } from './install-resolution.ts'
 import { parseInsertedLoaderRows, primaryLoaderCandidates, sharedLoaderIdentifiers, type LoaderIdentity } from './loader-ownership.ts'
 import type { InstallConflict, InstalledClientPlugin, ManagedCompanionState, ManagedLoaderState, PersistedMarketState, SkinActivity, SkinEntry, SkinRuntimeState } from './types.ts'
 
@@ -143,16 +144,6 @@ export function packageManifest(profileDir: string, packageName: string): Record
   return readJson<Record<string, unknown> | null>(file, null)
 }
 
-function repositoryIdentity(value: unknown): string | null {
-  const raw = typeof value === 'string'
-    ? value
-    : isRecord(value) && typeof value.url === 'string' ? value.url : null
-  if (raw === null) return null
-  const normalized = raw.trim().replace(/^git\+/, '').replace(/^github:/, 'https://github.com/')
-  const match = /^(?:(?:https?|git):\/\/github\.com\/|ssh:\/\/git@github\.com\/|git@github\.com:)([^/\s]+)\/([^/#?\s]+?)(?:\.git)?\/?$/i.exec(normalized)
-  return match === null ? null : `${match[1]}/${match[2]}`.toLowerCase()
-}
-
 function npmLockfileIntegrity(profileDir: string, packageName: string, version: string): string | null {
   const file = pnpmLockfile(profileDir)
   if (!existsSync(file)) return null
@@ -181,6 +172,8 @@ function validateInstalledNpmSource(profileDir: string, skin: SkinEntry, manifes
   // current artifact's integrity cannot validate a different release.
   const spec = readDependencies(profileDir)[skin.package]
   if (!exactNpmSpecMatches(spec, npm.name, npm.version)) return null
+  const sourceError = reviewedNpmSourceError(skin)
+  if (sourceError !== null) return sourceError
   if (manifest.version !== npm.version) {
     return `installed npm package ${skin.package} version mismatch; expected ${npm.version}, found ${String(manifest.version)}`
   }
@@ -188,6 +181,11 @@ function validateInstalledNpmSource(profileDir: string, skin: SkinEntry, manifes
   const expectedRepository = repositoryIdentity(npm.repository)
   if (repository === null || repository !== expectedRepository) {
     return `installed npm package ${skin.package} repository mismatch; expected ${npm.repository}`
+  }
+  // gitHead is registry metadata and may be absent from the packed manifest.
+  // If the archive does carry it, it must agree with the reviewed commit too.
+  if (manifest.gitHead !== undefined && (typeof manifest.gitHead !== 'string' || manifest.gitHead.toLowerCase() !== npm.gitHead.toLowerCase())) {
+    return `installed npm package ${skin.package} gitHead mismatch; expected ${npm.gitHead}`
   }
   const integrity = npmLockfileIntegrity(profileDir, npm.name, npm.version)
   if (integrity !== npm.integrity) {
@@ -237,6 +235,23 @@ export function installedSpecMatches(skin: SkinEntry, spec: string | null | unde
   if (npm !== undefined && exactNpmSpecMatches(spec, npm.name, npm.version)) return true
   const desktop = skin.install.desktop
   return desktop?.mode === 'managed' && exactNpmSpecMatches(spec, desktop.packageName, desktop.packageVersion)
+}
+
+/** Only offer an explicit migration between the same reviewed GitHub/npm release. */
+export function npmSourceMigration(profileDir: string, skin: SkinEntry): { target: string; currentSource: string } | undefined {
+  if (skin.review?.installation === 'manual-only' || reviewedNpmSourceError(skin) !== null) return undefined
+  const currentSource = readDependencies(profileDir)[skin.package]
+  if (currentSource === undefined) return undefined
+  const current = parseGithubTarget(currentSource)
+  const reviewed = parseGithubTarget(skin.install.target)
+  if (current === null || reviewed === null
+    || current.repository.toLowerCase() !== reviewed.repository.toLowerCase()
+    || current.repository.toLowerCase() !== repositoryIdentity(skin.repo)
+    || current.commit !== reviewed.commit || current.commit !== skin.install.commit.toLowerCase()
+    || current.subpath !== reviewed.subpath || current.subpath !== skin.subpath) return undefined
+  const validation = validateInstalledSkin(profileDir, skin)
+  if (!validation.ok || validation.version !== skin.install.npm?.version) return undefined
+  return { target: npmInstallTarget(skin)!, currentSource }
 }
 
 export function companionNeedsInstall(profileDir: string, companion: { package: string; commit: string }): boolean {

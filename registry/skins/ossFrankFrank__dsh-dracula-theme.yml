@@ -25,6 +25,12 @@ install:
     packageName: dsh-dracula-theme
     packageVersion: 1.0.0
     integrity: sha512-RI/LoRKTPmjko2UbmtWeq72lCy0+PEooMlWMDWOLmVyXaJXAQmVMB3dV3dnXlIQpsenHwkarnspUV3F/JgQh5w==
+  npm:
+    name: dsh-dracula-theme
+    version: 1.1.0
+    integrity: sha512-R2biqmAXf/reh7AvQPtX2ixx0gfqDAw+yoMAofpwdNAjmIRZ8uZrQ3tQq9vpll5suiRRckemBP1ujJcVXA1aUw==
+    repository: https://github.com/ossFrankFrank/dsh-dracula-theme
+    gitHead: 28e4621866680a241467fb7249bc07231afb8459
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:

@@ -24,6 +24,12 @@ install:
     packageName: "@a9i5k4/dsh-anchored-monitor"
     packageVersion: 0.3.0
     integrity: sha512-YxwjBXGlDLIySpvgb0RtK17Via8H9lWsSjjc/fvilC5uFznQ9Fx4GQz385U55BoQBWWOouuNTPVeaLAXkxTwZw==
+  npm:
+    name: "@a9i5k4/dsh-anchored-monitor"
+    version: 0.3.1
+    integrity: sha512-/EuT3gen4m3+lYKfjmGWgIU5ibYcmDR24TdiIJ5nCdSUTEfG6YM1gQMowppe4tsIVu4MuipgriAQqgnglaKvMw==
+    repository: https://github.com/Aik358/dsh-anchored-monitor
+    gitHead: 086bd05e1e3035ddf23133f3a0ee479291a4b237
 compatibility:
   dsh: 0.1.0-rc.5
   platform:

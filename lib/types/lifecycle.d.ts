@@ -78,6 +78,7 @@ export declare class SkinLifecycle {
     /** Restore metadata first, then reconcile dependencies once within a separate budget. */
     private recoverProfile;
     private prepareProfile;
+    private assertNpmMigration;
     private installPackage;
     private installCompanions;
     private claimManagedCompanion;

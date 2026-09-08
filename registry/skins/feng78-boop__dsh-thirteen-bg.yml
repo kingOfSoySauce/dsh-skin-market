@@ -23,6 +23,12 @@ install:
     packageName: dsh-thirteen-bg
     packageVersion: 0.5.2
     integrity: sha512-ByWnQPKVUkaN7DQPSr14FB99o7phAbAV7D0IKStbY1V0YRP9Oqd60k7saCncpbkr21jPhQ5jSC3deIobxDZnsA==
+  npm:
+    name: dsh-thirteen-bg
+    version: 0.5.2
+    integrity: sha512-ByWnQPKVUkaN7DQPSr14FB99o7phAbAV7D0IKStbY1V0YRP9Oqd60k7saCncpbkr21jPhQ5jSC3deIobxDZnsA==
+    repository: https://github.com/feng78-boop/dsh-thirteen-bg
+    gitHead: a11e0d90eb0b81f3d880fd6bfd9d792d5101b15e
 compatibility:
   dsh: ">=0.1.0-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
   platform:

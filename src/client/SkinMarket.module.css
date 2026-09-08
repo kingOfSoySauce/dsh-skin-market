@@ -416,6 +416,7 @@
 .aboutGrid dd { margin: 0; text-align: right; color: var(--dsw-alias-label-secondary); }
 .notice { margin-top: 10px !important; color: var(--dsw-alias-state-warning-primary); font-size: 11px; line-height: 17px; }
 .notice a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.migrationSource { margin: 8px 0; color: var(--dsw-alias-label-secondary); font-size: 12px; line-height: 18px; overflow-wrap: anywhere; }
 .changelog ol { display: grid; gap: 8px; margin: 0 0 12px; padding: 0; list-style: none; }
 .changelog li { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 10px; color: var(--dsw-alias-label-secondary); font-size: 12px; line-height: 18px; }
 .changelog strong { color: var(--dsw-alias-label-caption); font-weight: 500; }

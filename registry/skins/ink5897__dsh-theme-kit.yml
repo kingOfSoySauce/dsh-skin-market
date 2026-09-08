@@ -27,6 +27,12 @@ install:
     packageName: dsh-theme-kit
     packageVersion: 0.1.2
     integrity: sha512-ERy2rfGTDJXmWtRefhUtP88ycl03Oa1BCio862qMjYsadxIo/2r8e2zgOklmBxxNxg5g4dGFQlHUFGhgMTTvqg==
+  npm:
+    name: dsh-theme-kit
+    version: 0.1.2
+    integrity: sha512-ERy2rfGTDJXmWtRefhUtP88ycl03Oa1BCio862qMjYsadxIo/2r8e2zgOklmBxxNxg5g4dGFQlHUFGhgMTTvqg==
+    repository: https://github.com/ink5897/dsh-theme-kit
+    gitHead: 0b2101b431491c24143f939daea8fd773ca2c641
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:

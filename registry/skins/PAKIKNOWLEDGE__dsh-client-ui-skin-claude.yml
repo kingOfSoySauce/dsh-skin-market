@@ -24,6 +24,12 @@ install:
     packageName: "@pakiknowledge/dsh-client-ui-skin-claude"
     packageVersion: 0.2.0
     integrity: sha512-bqjyiIVGOpaEgo/tYSELSNLKNIq1QZ9KoIMdXRw5qfihSKAXzoLqs7iRU/wTc0kjMQuIdElOIbyvohBSG1OAIw==
+  npm:
+    name: "@pakiknowledge/dsh-client-ui-skin-claude"
+    version: 0.2.1
+    integrity: sha512-EAsMW/XQ2TSqevzCdrF7M9e9DwmNMUqrEO/rqld9QLYizh2sJuEoV4nHqtviZTftsALNNL8aXj2cmN3/ppSyYg==
+    repository: https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude
+    gitHead: a240ab43bd15fd4b2cc853d20bee2c749299134a
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:

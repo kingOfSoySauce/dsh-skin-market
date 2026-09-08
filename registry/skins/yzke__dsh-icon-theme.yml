@@ -18,6 +18,12 @@ install:
   version: 0.1.1
   commit: 2e341d850745ba29ae688de0eb882ecbabd17888
   allowBuild: dsh-icon-theme@https://codeload.github.com/yzke/dsh-icon-theme/tar.gz/2e341d850745ba29ae688de0eb882ecbabd17888
+  npm:
+    name: dsh-icon-theme
+    version: 0.1.1
+    integrity: sha512-YBJk0+owPD6AAPBvvNuoE2Xz6YWP5MN5tpXYdvqaJgDRauai+1iW1nY9LGKqMbgfQiLW4dxzAwwiL4Mz6LAp+w==
+    repository: https://github.com/yzke/dsh-icon-theme
+    gitHead: 2e341d850745ba29ae688de0eb882ecbabd17888
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:

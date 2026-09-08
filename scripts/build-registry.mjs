@@ -7,6 +7,7 @@ import { displayScreenshots } from './registry-screenshots.mjs'
 import { mediaForSources } from './media.mjs'
 import { isThinSubmission, hydrateSkinSubmission } from './hydrate-submission.mjs'
 import { resolveScreenshotList, resolveScreenshotRef } from './screenshot-refs.mjs'
+import { buildCatalogWire } from './catalog-wire.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const checkOnly = process.argv.includes('--check')
@@ -84,19 +85,11 @@ for (const skin of skins) {
 }
 
 const catalogPath = join(root, 'data/catalog.json')
-const sortedSkins = skins.sort((a, b) => a.featuredRank - b.featuredRank)
-let generatedAt = new Date().toISOString()
+let previous
 try {
-  const previous = JSON.parse(await readFile(catalogPath, 'utf8'))
-  if (JSON.stringify(previous.skins) === JSON.stringify(sortedSkins) && typeof previous.generatedAt === 'string') {
-    generatedAt = previous.generatedAt
-  }
+  previous = JSON.parse(await readFile(catalogPath, 'utf8'))
 } catch { /* first build */ }
 
-const catalog = {
-  schemaVersion: 1,
-  generatedAt,
-  skins: sortedSkins,
-}
+const catalog = buildCatalogWire(skins, { previous })
 if (!checkOnly) await writeFile(catalogPath, `${JSON.stringify(catalog, null, 2)}\n`)
 console.log(`validated ${skins.length} skins${checkOnly ? ' (catalog not written)' : ''}`)

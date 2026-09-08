@@ -25,6 +25,12 @@ install:
     packageName: "@yuquexianzhou/solarized-dsh-theme"
     packageVersion: 0.1.1
     integrity: sha512-9GdwEyUCUSmUqfOV/comS5pTj6ONJsvfhMwSKMUhm9ProNG//A9kWZb9KxZWfvdX9B5QX5tUhFWZyguULsrxNA==
+  npm:
+    name: "@yuquexianzhou/solarized-dsh-theme"
+    version: 0.2.2
+    integrity: sha512-aRZTgCYrIeSf3xuevqtrikiCmX3j5+DfMSuUr9mdZAZ1XNGHqSehBbevZtDjEfh7xnMYfFZWKkuH9ula1+PEdA==
+    repository: https://github.com/zhijun-dai/Solarized-dsh-theme
+    gitHead: 1480701b224708eaf098dc5aa2d05ababee667ab
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:

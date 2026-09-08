@@ -7,7 +7,7 @@ import { assessCompatibility } from './compatibility.ts'
 import { persistCompatibilityPatch, planCompatibilityPatch } from './compatibility-adapter.ts'
 import type { CommandOptions, PluginInstallRequest, PluginRunner } from './commands.ts'
 import { loadCatalog } from './catalog.ts'
-import { companionAsSkin, discoverMonorepoTarget, isNpmInstallTarget, preferredInstallTarget } from './install-resolution.ts'
+import { companionAsSkin, discoverMonorepoTarget, isNpmInstallTarget, preferredInstallTarget, reviewedNpmSourceError, updateInstallTarget } from './install-resolution.ts'
 import { sharedLoaderIdentifiers } from './loader-ownership.ts'
 import { failureDiagnostic, PnpmCommandError, runPnpmWithRecovery, type PnpmFailure } from './pnpm-recovery.ts'
 import { pluginArgsFor } from './pnpm-compat.ts'
@@ -20,6 +20,7 @@ import {
   ensureSkinRegistration,
   hasLoaderOverride,
   installedSpecMatches,
+  npmSourceMigration,
   cleanupCompatibilityPatchFiles,
   detachCompatibilityPatches,
   pnpmLockfile,
@@ -386,7 +387,9 @@ export class SkinLifecycle {
     const state = readMarketState(this.options.profileDir)
     return this.catalog.map(skin => {
       const entries = this.entriesFor(skin)
-      return runtimeState(this.options.profileDir, skin, state.activeSkinId, entries.some(entry => entry.fiber !== undefined), entries.length > 0, pinnedSkinIds(state), state.activity?.[skin.id])
+      const runtime = runtimeState(this.options.profileDir, skin, state.activeSkinId, entries.some(entry => entry.fiber !== undefined), entries.length > 0, pinnedSkinIds(state), state.activity?.[skin.id])
+      const sourceMigration = this.hostKind === 'desktop' ? undefined : npmSourceMigration(this.options.profileDir, skin)
+      return { ...runtime, ...(sourceMigration === undefined ? {} : { sourceMigration }) }
     })
   }
 
@@ -396,7 +399,7 @@ export class SkinLifecycle {
 
   begin(kind: OperationKind, skinId: string, approvedBuildKeys?: readonly string[] | string): Operation {
     const skin = this.skin(skinId)
-    if (kind === 'install' || kind === 'update') {
+    if (kind === 'install' || kind === 'update' || kind === 'migrate') {
       if (this.hostKind === 'desktop' && skin.install.desktop?.mode !== 'managed') {
         throw new Error(desktopInstallError(skin.install.desktop))
       }
@@ -404,14 +407,15 @@ export class SkinLifecycle {
         throw new Error('该皮肤尚未满足市场自动安装所需信息，请查看仓库安装说明')
       }
     }
+    if (kind === 'migrate') this.assertNpmMigration(skin)
     if (this.activeOperation !== null) throw new Error('another skin operation is already running')
     const operation: Operation = {
       id: randomUUID(), kind, skinId, phase: 'queued', startedAt: new Date().toISOString(),
-      cancelable: kind === 'install' || kind === 'update',
+      cancelable: kind === 'install' || kind === 'update' || kind === 'migrate',
     }
     this.operations.set(operation.id, operation)
     this.abortControllers.set(operation.id, new AbortController())
-    if (kind === 'install' || kind === 'update') {
+    if (kind === 'install' || kind === 'update' || kind === 'migrate') {
       const timeoutMs = this.options.operationTimeoutMs ?? OPERATION_TIMEOUT_MS
       this.deadlines.set(operation.id, Date.now() + timeoutMs)
       const timer = setTimeout(() => {
@@ -443,7 +447,7 @@ export class SkinLifecycle {
   private update(operation: Operation, phase: Operation['phase'], message?: string): void {
     operation.phase = phase
     operation.message = message
-    operation.cancelable = (operation.kind === 'install' || operation.kind === 'update')
+    operation.cancelable = (operation.kind === 'install' || operation.kind === 'update' || operation.kind === 'migrate')
       && (phase === 'queued' || phase === 'resolving' || phase === 'downloading')
     if (phase === 'done' || phase === 'failed' || phase === 'cancelled') operation.finishedAt = new Date().toISOString()
   }
@@ -465,7 +469,7 @@ export class SkinLifecycle {
       else if (operation.kind === 'deactivate') await this.deactivate(operation)
       else if (operation.kind === 'pin') await this.pin(operation)
       else if (operation.kind === 'unpin') await this.unpin(operation)
-      else if (operation.kind === 'update') await this.updateSkin(operation)
+      else if (operation.kind === 'update' || operation.kind === 'migrate') await this.updateSkin(operation)
       else await this.uninstall(operation)
       this.update(operation, 'done', operation.message)
     } catch (error) {
@@ -496,7 +500,7 @@ export class SkinLifecycle {
         if (error instanceof InstallConflictError) {
           operation.failure = { kind: 'conflict', message: error.message, conflicts: error.conflicts }
         }
-        if (operation.failure === undefined && (operation.kind === 'install' || operation.kind === 'update') && assessCompatibility(this.skin(operation.skinId), this.runtime).decision === 'incompatible') {
+        if (operation.failure === undefined && (operation.kind === 'install' || operation.kind === 'update' || operation.kind === 'migrate') && assessCompatibility(this.skin(operation.skinId), this.runtime).decision === 'incompatible') {
           operation.failure = { kind: 'compatibility', message: errorMessage(error) }
         }
         logEvent(
@@ -664,7 +668,14 @@ export class SkinLifecycle {
     }
   }
 
-  private async installPackage(skin: SkinEntry, operation: Operation, state: PersistedMarketState): Promise<void> {
+  private assertNpmMigration(skin: SkinEntry): { target: string; currentSource: string } {
+    if (this.hostKind === 'desktop') throw new Error('Desktop 暂不支持换用 npm')
+    const migration = npmSourceMigration(this.options.profileDir, skin)
+    if (migration === undefined) throw new Error('当前安装与已核验的 npm 来源不对应，无法换用 npm；请刷新目录并先更新 GitHub 版本')
+    return migration
+  }
+
+  private async installPackage(skin: SkinEntry, operation: Operation, state: PersistedMarketState, target?: string): Promise<void> {
     if (this.hostKind === 'desktop') {
       this.desktopManagedAttempts.add(operation.id)
       const capability = skin.install.desktop
@@ -704,13 +715,18 @@ export class SkinLifecycle {
     }
 
     const beforeRows = installedLoaderIdentities(this.options.profileDir)
-    const prefetched = await this.prefetch(skin, operation)
+    const prefetched = await this.prefetch(skin, operation, target)
+    if (operation.kind === 'migrate' && this.assertNpmMigration(skin).target !== prefetched.target) {
+      throw new Error('npm 换源目标在下载期间发生变化，请刷新后重试')
+    }
     assertNoLoaderConflicts(this.options.profileDir, skin, prefetched.loaderRows)
     this.assertRuntimeLoaderConflicts(skin, prefetched.loaderRows)
     this.update(operation, 'installing')
     const buildApprovalKey = isNpmInstallTarget(skin, prefetched.target) ? undefined : buildApprovalKeyForTarget(skin, prefetched.target) ?? effectiveBuildApprovalKey(skin)
     if (buildApprovalKey !== undefined) ensureBuildAllowed(this.options.profileDir, buildApprovalKey)
-    await this.installCompanions(skin, operation, state)
+    // A source migration replaces this exact skin release only. Companion
+    // upgrades remain part of the separate ordinary Update operation.
+    if (operation.kind !== 'migrate') await this.installCompanions(skin, operation, state)
     await this.run(['add', prefetched.target, '--prefer-offline', ...(isNpmInstallTarget(skin, prefetched.target) ? ['--save-exact'] : [])], operation)
     this.claimManagedLoaders(state, skin, prefetched.loaderRows, beforeRows)
   }
@@ -829,12 +845,16 @@ export class SkinLifecycle {
     if (unique.length > 0) throw new InstallConflictError(unique)
   }
 
-  private async prefetch(skin: SkinEntry, operation: Operation): Promise<PrefetchedPackage> {
+  private async prefetch(skin: SkinEntry, operation: Operation, selectedTarget?: string): Promise<PrefetchedPackage> {
     // Resolve and download into an unwatched temporary project first. pnpm's
     // content-addressed store makes the real profile add reuse these files.
     // This prevents a large GitHub download from modifying the live profile
     // early and causing DSH Web to reload before the operation can finish.
-    let target = preferredInstallTarget(skin)
+    let target = selectedTarget ?? preferredInstallTarget(skin)
+    if (isNpmInstallTarget(skin, target)) {
+      const sourceError = reviewedNpmSourceError(skin)
+      if (sourceError !== null) throw new Error(sourceError)
+    }
     let directory = mkdtempSync(join(tmpdir(), 'dsh-skin-market-download-'))
     try {
       this.preparePrefetchDirectory(directory, this.prefetchBuildApprovals(skin, operation, target))
@@ -1074,6 +1094,9 @@ export class SkinLifecycle {
 
   private async updateSkin(operation: Operation): Promise<void> {
     const skin = this.skin(operation.skinId)
+    const target = this.hostKind === 'desktop' ? undefined : operation.kind === 'migrate'
+      ? this.assertNpmMigration(skin).target
+      : updateInstallTarget(skin, readDependencies(this.options.profileDir)[skin.package])
     this.applyPendingBuildApprovals(operation)
     if (this.hostKind !== 'desktop') {
       await this.prepareProfile(skin, operation, () => this.syncPnpmMetadata(operation, '正在修复 profile 的 pnpm 锁文件'))
@@ -1087,13 +1110,16 @@ export class SkinLifecycle {
     try {
       if (this.hostKind !== 'desktop') await this.syncPnpmMetadata(operation, '正在清理旧的兼容适配')
       this.update(operation, 'downloading')
-      await this.installPackage(skin, operation, previousState)
+      await this.installPackage(skin, operation, previousState, target)
       await this.applyCompatibility(skin, operation)
       this.update(operation, 'validating')
       const validation = validateInstalledSkin(this.options.profileDir, skin)
       if (!validation.ok) throw new Error(validation.reason)
       if (validation.version !== skin.install.version || !installedSpecMatches(skin, readDependencies(this.options.profileDir)[skin.package])) {
         throw new Error(`installed package did not change to the reviewed source/version ${skin.install.target}`)
+      }
+      if (operation.kind === 'migrate' && readDependencies(this.options.profileDir)[skin.package] !== skin.install.npm?.version) {
+        throw new Error('npm 换源后未保存精确版本，已停止并恢复原有安装')
       }
       assertNoLoaderConflicts(this.options.profileDir, skin)
       ensureSkinRegistration(this.options.profileDir, skin, !wasActive)
@@ -1104,7 +1130,9 @@ export class SkinLifecycle {
       recordActivity(nextState, skin.id, 'updatedAt', operation.startedAt)
       writeMarketState(this.options.profileDir, nextState)
       cleanupCompatibilityPatchFiles(detachedPatchFiles.filter(file => file !== compatibilityPatchFile(this.options.profileDir, skin.package, skin.install.version)))
-      operation.message = wasActive ? 'updated and kept active' : 'updated and kept inactive'
+      operation.message = operation.kind === 'migrate'
+        ? wasActive ? '已换用 npm 并保留启用状态；重启 DSH 后生效' : '已换用 npm 并保留停用状态'
+        : wasActive ? 'updated and kept active' : 'updated and kept inactive'
     } catch (error) {
       await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
       throw error

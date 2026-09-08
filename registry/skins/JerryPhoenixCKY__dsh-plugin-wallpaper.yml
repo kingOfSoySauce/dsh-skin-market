@@ -23,6 +23,12 @@ install:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
   allowBuild: dsh-plugin-wallpaper@https://codeload.github.com/JerryPhoenixCKY/dsh-plugin-wallpaper/tar.gz/168ab70ba342d112fa8184f91bfe35d923bb168c
+  npm:
+    name: dsh-plugin-wallpaper
+    version: 0.1.4
+    integrity: sha512-s1FgGHlD0SY2lmcVt+ear4ptiyQYqI0Qr902Dqq9x4IfAQ1vE4CIW8jl2cE9z3b8oO43gl0Qr3Nodd88kXcN6A==
+    repository: https://github.com/JerryPhoenixCKY/dsh-plugin-wallpaper
+    gitHead: 168ab70ba342d112fa8184f91bfe35d923bb168c
 compatibility:
   dsh: 0.1.0-rc.6
   platform:

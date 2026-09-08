@@ -26,14 +26,16 @@ async function finished(operation: Operation): Promise<Operation> {
 function success(): CommandResult { return { exitCode: 0, stdout: '', stderr: '', timedOut: false } }
 
 function firstInstallable(lifecycle: SkinLifecycle) {
-  const skin = lifecycle.catalog.find(item => item.review?.installation !== 'manual-only')
-  if (skin === undefined) throw new Error('fixture catalog has no installable skin')
+  // These generic lifecycle runners materialize GitHub targets. Tests of npm
+  // installation attach explicit npm metadata and verify that separate path.
+  const skin = lifecycle.catalog.find(item => item.review?.installation !== 'manual-only' && item.install.npm === undefined)
+  if (skin === undefined) throw new Error('fixture catalog has no GitHub-only installable skin')
   return skin
 }
 
 function anotherInstallable(lifecycle: SkinLifecycle, excludedId: string) {
-  const skin = lifecycle.catalog.find(item => item.id !== excludedId && item.review?.installation !== 'manual-only')
-  if (skin === undefined) throw new Error('fixture catalog has only one installable skin')
+  const skin = lifecycle.catalog.find(item => item.id !== excludedId && item.review?.installation !== 'manual-only' && item.install.npm === undefined)
+  if (skin === undefined) throw new Error('fixture catalog has only one GitHub-only installable skin')
   return skin
 }
 

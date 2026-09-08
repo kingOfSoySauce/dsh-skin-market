@@ -19,6 +19,12 @@ install:
   target: github:dsh-plugins/dsh-thought-buddy#bb8f1aa5972aab844b0c9793f0793b34f4a486b8
   version: 0.2.0
   commit: bb8f1aa5972aab844b0c9793f0793b34f4a486b8
+  npm:
+    name: "@dsh-plugin/dsh-thought-buddy"
+    version: 0.2.0
+    integrity: sha512-revaKFPIowUWgQkdJdA/k61AWj62N18tp8spb1kupiu5g9q5rmklB+JhJQEruU/LREkaIJ8g98ASm31szd9dtg==
+    repository: https://github.com/dsh-plugins/dsh-thought-buddy
+    gitHead: bb8f1aa5972aab844b0c9793f0793b34f4a486b8
 compatibility:
   dsh: unverified
   platform:

@@ -36,6 +36,14 @@
 html, body, #root { width: 100%; min-height: 100%; margin: 0; }
 body { background: #090a0c; }
 button, input { font: inherit; }
+/* The npm primitives omit DSH's host-injected CSS; keep preview dialogs usable. */
+body > [role="presentation"] { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 20px; }
+body > [role="presentation"] > [aria-hidden="true"] { position: absolute; inset: 0; background: var(--dsw-alias-bg-mask-1); }
+body > [role="presentation"] > [role="dialog"] { position: relative; width: min(520px, 100%); max-height: 90vh; overflow: auto; padding: 24px; border: 1px solid var(--dsw-alias-border-l2); border-radius: 16px; background: var(--dsw-alias-bg-layer-2); }
+body > [role="presentation"] [role="dialog"] > div:first-child > div:first-child { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+body > [role="presentation"] h2 { margin: 0; font-size: 18px; }
+body > [role="presentation"] p { font-size: 13px; line-height: 1.6; }
+body > [role="presentation"] [role="dialog"] > div:last-child { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
 .stage { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: #090a0c; }
 .settings-dialog { display: grid; grid-template-columns: 188px minmax(0, 1fr); width: min(1280px, calc(100vw - 48px)); height: min(860px, calc(100vh - 48px)); overflow: hidden; border-radius: 24px; background: var(--dsw-alias-bg-layer-2); box-shadow: 0 28px 80px rgba(0,0,0,.55); }
 .settings-nav { display: flex; flex-direction: column; gap: 4px; padding: 22px 12px; background: #28292c; }

@@ -24,6 +24,12 @@ install:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
   allowBuild: deepseek-harness-background@https://codeload.github.com/HaoyueQin/deepseek-harness-background/tar.gz/af9595410382985629d7245553579df9c59c4a51
+  npm:
+    name: deepseek-harness-background
+    version: 0.3.2
+    integrity: sha512-/dXjrPtN6KAJb06DKOg1bjKmjvYZUDQL8Lr7q0/WlSqy1WHzkQ1O1NJeig9BZpGYo4g8RzAf8shONOLT0NkJbg==
+    repository: https://github.com/HaoyueQin/deepseek-harness-background
+    gitHead: af9595410382985629d7245553579df9c59c4a51
 compatibility:
   dsh: ^0.1.1-rc.2
   platform:

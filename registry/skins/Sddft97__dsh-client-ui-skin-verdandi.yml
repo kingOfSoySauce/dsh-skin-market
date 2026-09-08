@@ -24,6 +24,12 @@ install:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare,prepublishOnly
   allowBuild: "@hjbztlbr/dsh-client-ui-skin-verdandi@https://codeload.github.com/Sddft97/dsh-client-ui-skin-verdandi/tar.gz/62c91a57149817eea937f2ccccc9cef51776f172"
+  npm:
+    name: "@hjbztlbr/dsh-client-ui-skin-verdandi"
+    version: 0.1.0
+    integrity: sha512-mAvsLEMZiMZqRVvD0GKfNHxOLOd03/NyqRBH/uk/ZL5O2X5vsVTzy3DrnKjInTvxxyG5MkJ3V/Aj4nLYjGb9rA==
+    repository: https://github.com/Sddft97/dsh-client-ui-skin-verdandi
+    gitHead: 62c91a57149817eea937f2ccccc9cef51776f172
 compatibility:
   dsh: unverified
   platform:

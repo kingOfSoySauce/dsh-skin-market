@@ -26,6 +26,12 @@ install:
     packageName: dsh-bloub-mood
     packageVersion: 2.4.4
     integrity: sha512-mShun0DJXAM4rBo+eKuPsfEXlK+oVvuJFag1bGA+HlX5xtoToCdYPJeVM4QWvbX96LxuaaOfy3+81jl9paisig==
+  npm:
+    name: dsh-bloub-mood
+    version: 2.4.4
+    integrity: sha512-mShun0DJXAM4rBo+eKuPsfEXlK+oVvuJFag1bGA+HlX5xtoToCdYPJeVM4QWvbX96LxuaaOfy3+81jl9paisig==
+    repository: https://github.com/Yuuhann1999/dsh-bloub-mood
+    gitHead: c626528b3d6c32669c265d7144e85f60f48570d2
 compatibility:
   dsh: unverified
   platform:

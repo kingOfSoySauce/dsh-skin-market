@@ -24,6 +24,12 @@ install:
     packageName: "@zsy1126/dsh-rick-and-morty"
     packageVersion: 0.1.0
     integrity: sha512-6jK2ldhiQX/J62ACP3RUSeXHnGdlZO63EC7blYARdjemHDrBLa7QxL2aIoH8Jv8DpswKk9IHTH7kUKCu88dy0w==
+  npm:
+    name: "@zsy1126/dsh-rick-and-morty"
+    version: 0.1.0
+    integrity: sha512-6jK2ldhiQX/J62ACP3RUSeXHnGdlZO63EC7blYARdjemHDrBLa7QxL2aIoH8Jv8DpswKk9IHTH7kUKCu88dy0w==
+    repository: https://github.com/zsyayo112/dsh-rick-and-morty
+    gitHead: 83dfc64c0f53da29b7b7e70c83ea8be11416a6b3
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:

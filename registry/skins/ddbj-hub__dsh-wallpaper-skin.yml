@@ -27,6 +27,12 @@ install:
     packageName: dsh-wallpaper-skin
     packageVersion: 1.4.1
     integrity: sha512-poQt1pnObgmPHubQSM9PaKj2p+blyQRhrsAB26p9qnkaKpRHUz1Or11m+7Idr+b4x+UhoKXpYQCd5ic6dEGdPg==
+  npm:
+    name: dsh-wallpaper-skin
+    version: 1.4.1
+    integrity: sha512-poQt1pnObgmPHubQSM9PaKj2p+blyQRhrsAB26p9qnkaKpRHUz1Or11m+7Idr+b4x+UhoKXpYQCd5ic6dEGdPg==
+    repository: https://github.com/ddbj-hub/dsh-wallpaper-skin
+    gitHead: 75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7
 compatibility:
   dsh: 0.1.0-rc.6
   platform:

@@ -27,6 +27,12 @@ install:
     packageName: dsh-homepage-skin
     packageVersion: 0.1.12
     integrity: sha512-Qjh7YEYlEM+zR+1QnX0Xim+i1h6i3dN3RQUDnbUXJuN5f6SXLrDkbuZAMhNOhheKq3Qb3+t4uXk7gPYCjM2tOw==
+  npm:
+    name: dsh-homepage-skin
+    version: 0.1.13
+    integrity: sha512-VCXbd8IlI/r1Yfs3B1u5G8q+kqgubZfW1ERgrn9Q61DiMG09eafH0vFTe1yglF99k69Ny0S8yGHRq7goz3IRVg==
+    repository: https://github.com/yushi-xxh/dsh-homepage-skin
+    gitHead: 329f9e0b12cab223b00b3e75e2f73453d9a46ed5
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:

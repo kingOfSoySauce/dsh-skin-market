@@ -96,6 +96,7 @@ export interface RuntimeSkin {
   installedAt?: string | null
   lastOperatedAt?: string | null
   updateAvailable: boolean
+  sourceMigration?: { target: string; currentSource: string }
   error?: string
 }
 
@@ -109,7 +110,7 @@ export interface InstalledClientPlugin {
 
 export interface Operation {
   id: string
-  kind: 'install' | 'activate' | 'deactivate' | 'pin' | 'unpin' | 'update' | 'uninstall'
+  kind: 'install' | 'activate' | 'deactivate' | 'pin' | 'unpin' | 'update' | 'migrate' | 'uninstall'
   skinId: string
   phase: 'queued' | 'resolving' | 'downloading' | 'installing' | 'validating' | 'activating' | 'cancelling' | 'cancelled' | 'done' | 'failed'
   message?: string

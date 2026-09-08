@@ -61,6 +61,50 @@ async function openSkinCard(name: RegExp = /测试皮肤 界面预览/) {
 }
 
 describe('client market', () => {
+  it('asks before migrating the chosen skin and preserves the active-skin restart flow', async () => {
+    let migrated = false
+    const sourceMigration = { target: 'skin@1.0.0', currentSource: skin.install.target }
+    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runningAgentCount: 0, runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', pinned: true, installedVersion: '1.0.0', updateAvailable: false, ...(!migrated && { sourceMigration }) }] }) }
+      if (url.endsWith('/migrate') && init?.method === 'POST') {
+        migrated = true
+        return { ok: true, json: async () => ({ operationId: 'migrate-1' }) }
+      }
+      if (url.endsWith('/operations/migrate-1')) return { ok: true, json: async () => ({ id: 'migrate-1', kind: 'migrate', skinId: skin.id, phase: 'done' }) }
+      return { ok: true, json: async () => ({}) }
+    })
+    vi.stubGlobal('fetch', fetchMock)
+    render(<SkinMarketSection t={key => key} />)
+    fireEvent.click((await screen.findAllByRole('button', { name: '换用 npm' }))[0]!)
+    const firstDialog = screen.getByRole('dialog', { name: '换用 npm 安装源' })
+    expect(firstDialog.textContent).toContain(sourceMigration.currentSource)
+    expect(firstDialog.textContent).toContain(sourceMigration.target)
+    expect(migrated).toBe(false)
+    fireEvent.click(within(firstDialog).getByRole('button', { name: '取消' }))
+    expect(migrated).toBe(false)
+
+    fireEvent.click(screen.getAllByRole('button', { name: '换用 npm' })[0]!)
+    fireEvent.click(screen.getByRole('button', { name: '确认换用 npm' }))
+    expect(await screen.findByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeTruthy()
+    expect(screen.getAllByText('测试皮肤 已换用 npm，待重启生效').length).toBeGreaterThan(0)
+    expect(screen.queryByRole('button', { name: '换用 npm' })).toBeNull()
+    expect(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/migrate') && init?.method === 'POST')?.[1]?.body).toBe(JSON.stringify({ skinId: skin.id }))
+    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/update') && init?.method === 'POST')).toBe(false)
+    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/restart') && init?.method === 'POST')).toBe(false)
+  })
+
+  it.each(['missing', 'no-source', 'manual', 'desktop'])('hides source migration for %s skins', async mode => {
+    const entry = mode === 'manual' ? { ...skin, review: { compatibility: 'verified', preview: 'verified', installation: 'manual-only' } } : skin
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [entry] } : {
+      hostKind: mode === 'desktop' ? 'desktop' : 'dsh',
+      skins: [{ skinId: skin.id, installation: mode === 'missing' ? 'missing' : 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false, ...(mode !== 'no-source' && { sourceMigration: { target: 'skin@1.0.0', currentSource: skin.install.target } }) }],
+    } })))
+    render(<SkinMarketSection t={key => key} />)
+    await openSkinCard()
+    expect(screen.queryByRole('button', { name: '换用 npm' })).toBeNull()
+  })
+
   it('puts skins without a usable preview after previewed skins before comparing stars', () => {
     const noPreview = {
       ...skin,

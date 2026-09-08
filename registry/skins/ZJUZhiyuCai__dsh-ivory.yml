@@ -22,6 +22,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepack
+  npm:
+    name: dsh-ivory
+    version: 0.2.7
+    integrity: sha512-k5yEwkFKHNceqtOJhWIk2MTD4+v5Mw5tSyQFrZSkXPZsWQF4Z0ovL4H8lrPhw9IlDL6nA+BUVBtMS8UGOF4W3w==
+    repository: https://github.com/ZJUZhiyuCai/dsh-ivory
+    gitHead: 6da0020d145213ce10433f28983e69cc598508c7
 compatibility:
   dsh: ">=0.1.0-rc.6 <0.2.0"
   platform:

@@ -1,3 +1,5 @@
+import { decodeCatalogWire } from '../src/catalog-wire.ts'
+
 interface CatalogResponse {
   ok: boolean
   status: number
@@ -19,7 +21,7 @@ export async function fetchLiveCatalog<T>(url: string, fetcher: CatalogFetcher =
   const catalog = value as { schemaVersion?: unknown; skins?: unknown }
   if (catalog.schemaVersion !== 1) throw new Error('目录版本不受支持')
   if (!Array.isArray(catalog.skins)) throw new Error('目录缺少皮肤列表')
-  return catalog.skins as T[]
+  return decodeCatalogWire(value).skins as T[]
 }
 
 export async function fetchLiveCatalogWithFallback<T>(remoteUrl: string, fallbackUrl: string, fetcher: CatalogFetcher = fetch): Promise<T[]> {

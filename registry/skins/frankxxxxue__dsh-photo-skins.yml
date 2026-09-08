@@ -22,6 +22,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
+  npm:
+    name: dsh-photo-skins
+    version: 0.2.0
+    integrity: sha512-ZfNP+wyruSHeaYOED/tMnbNUcAKXNmJZc6O2oDTNSVVajhbpsQfNYlbAJZ98wsG/kYKMGjCsjUprPmoZLyGVpg==
+    repository: https://github.com/frankxxxxue/dsh-photo-skins
+    gitHead: 106f3dd033f8dc3bfc91b848af473844e70c747f
 compatibility:
   dsh: ^0.1.0-rc.7
   platform:

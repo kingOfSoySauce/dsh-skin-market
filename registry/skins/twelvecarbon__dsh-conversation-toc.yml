@@ -22,6 +22,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
+  npm:
+    name: dsh-conversation-toc
+    version: 0.1.1
+    integrity: sha512-Ccobbr/4ou5ttKzpewiWWnhoHj7inMikHmIvLvc3vMlFrG7P/t3iB1Z4ByZKLu2UoBEp7FS7uPU1zNssayxzUg==
+    repository: https://github.com/twelvecarbon/dsh-conversation-toc
+    gitHead: 2061ba44575d92a7069b7ba2edac848ccf7a328a
 compatibility:
   dsh: unverified
   platform:

@@ -26,6 +26,12 @@ install:
     packageName: dsh-neu-theme
     packageVersion: 0.1.0
     integrity: sha512-ZH3xVtpDvw11zpN0RotrV0u6ODoEGbDwYw6QclCU7MFf/rx32eDOJoGUIYEPZ3ANWcIkAIMROjnRx2z8Z89kOA==
+  npm:
+    name: dsh-neu-theme
+    version: 0.1.1
+    integrity: sha512-33Xtoo8CqEmjCVdxyVxTzAz/IOkrM29CyhBdeDUny6/8oBmAWIOlRwPPPNPouL+/w188XPCoqC+nBlFbNmOuyA==
+    repository: https://github.com/Lhy723/dsh-neu-theme
+    gitHead: 834bf7100d8b298e74921ae3605f7b2045bd25aa
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:

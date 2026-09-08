@@ -24,6 +24,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: open-sea-skin
+    version: 1.2.3
+    integrity: sha512-KDeeNL9CXq9y/tKq3PgoQkYdib336FfnvOJcsLt8I/eQjvj66ihgk5AuyU5yhGnnhlZKPPetz8yrOx2AaDZaeA==
+    repository: https://github.com/d-dev0101/open-sea-skin
+    gitHead: 5dd47e7c7b53fa6be410accc39d0d2ec8778194e
 compatibility:
   dsh: 0.1.0-rc.6
   platform:

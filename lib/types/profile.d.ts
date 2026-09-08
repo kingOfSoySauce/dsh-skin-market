@@ -28,6 +28,11 @@ export declare function validateInstalledSkin(profileDir: string, skin: SkinEntr
     repairable?: boolean;
 };
 export declare function installedSpecMatches(skin: SkinEntry, spec: string | null | undefined): boolean;
+/** Only offer an explicit migration between the same reviewed GitHub/npm release. */
+export declare function npmSourceMigration(profileDir: string, skin: SkinEntry): {
+    target: string;
+    currentSource: string;
+} | undefined;
 export declare function companionNeedsInstall(profileDir: string, companion: {
     package: string;
     commit: string;

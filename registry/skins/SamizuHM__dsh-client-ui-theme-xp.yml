@@ -25,6 +25,12 @@ install:
     packageName: dsh-client-ui-theme-xp
     packageVersion: 0.1.1
     integrity: sha512-PAD3jNggSUsiRSIKvEZs/QrGEx3L3cdwO/WE4XuTnPfn6Wyglt6ThClfuvBm+/ozw0Cn+mQapM03t9dcn+IODQ==
+  npm:
+    name: dsh-client-ui-theme-xp
+    version: 0.1.1
+    integrity: sha512-PAD3jNggSUsiRSIKvEZs/QrGEx3L3cdwO/WE4XuTnPfn6Wyglt6ThClfuvBm+/ozw0Cn+mQapM03t9dcn+IODQ==
+    repository: https://github.com/SamizuHM/dsh-client-ui-theme-xp
+    gitHead: 3cc412f4e877c127dea2e5b6e3413e5ddc95ce97
 compatibility:
   dsh: unverified
   platform:

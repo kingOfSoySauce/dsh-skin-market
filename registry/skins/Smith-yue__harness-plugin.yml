@@ -20,6 +20,12 @@ install:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
   allowBuild: dsh-skin-token-dashboard@https://codeload.github.com/Smith-yue/harness-plugin/tar.gz/86c26ca4a4382a08243873f576e50e1b8ef01a2b
+  npm:
+    name: dsh-skin-token-dashboard
+    version: 0.1.0
+    integrity: sha512-lY4r4UikREbZkSSa0c60g8paSEiGgw5UKI6ScRBzTfXbOolK8dPd3bzCzYZeec7qHDvMGU9uQYbPqPDN1eCl5Q==
+    repository: https://github.com/Smith-yue/harness-plugin
+    gitHead: 86c26ca4a4382a08243873f576e50e1b8ef01a2b
 compatibility:
   dsh: ^0.1.0-rc.8
   platform:

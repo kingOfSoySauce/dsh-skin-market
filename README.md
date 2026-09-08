@@ -88,7 +88,7 @@ dsh plugin --profile web add "dsh-skin-market@latest"
 
 ### 安装来源与长时间等待
 
-具有已核验 npm 来源的目录可以优先通过 npm 精确版本安装；没有合格 npm 来源时，继续使用原来的 GitHub 固定 commit。npm 来源须与目录的包名、版本、仓库、完整 commit 一致，并通过安装包完整性与已构建客户端入口检查。本次代码更新兼容已有的 GitHub 安装；公共目录的 npm 来源回填将在兼容版本发布后启用，避免旧版市场将已有 GitHub 安装误判为损坏。
+Web 市场优先使用目录中已经核验的 npm 精确版本；没有合格 npm 来源时，继续使用原来的 GitHub 固定 commit。npm 来源须与目录的包名、版本、仓库、完整 commit 一致，并通过安装包完整性与已构建客户端入口检查。已有的 GitHub 安装仍然有效，不会仅因目录补充 npm 来源而要求重装。
 
 安装横幅显示当前步骤、尝试次数和 pnpm 阶段；连续 30 秒没有输出时会提示，运行中也能复制诊断日志。Web 安装和更新的准备、下载、重试共用 15 分钟预算，达到时限后结束当前任务；已修改 profile 的失败操作只做一次、独立限时 60 秒的依赖恢复。市场会等待执行进程结束后再允许下一次操作，恢复未完成时会明确提示。Desktop 的安装失败恢复由宿主插件服务处理。
 
@@ -283,6 +283,10 @@ npm run release -- 0.1.31 --dry-run
 完整的本地安装和回滚验证步骤见 [TESTING.md](./TESTING.md)。
 
 ## 目录维护
+
+目录继续使用原来的 `data/catalog.json` URL 和 `schemaVersion: 1`。registry YAML 的 `install.npm` 在生成时移到顶层 `npmSources[skinId]`，旧版市场忽略这个字段并继续使用 GitHub；新版验证包名、版本、仓库、commit/gitHead 和完整性信息后读取 npm 来源，Host 缓存也保存同一兼容格式。
+
+新版 Web 市场首次安装优先使用已验证的 npm 包，没有匹配包时仍使用固定 commit 的 GitHub 源。普通“更新”保留已有安装来源；通过 GitHub 安装且与目录版本及 commit 一致的皮肤，会单独显示“换用 npm”，确认后换成同版本 npm 包并保留启用、常驻状态。正在使用的皮肤完成后提示重启；迁移失败走现有恢复流程。旧版本、分支、自定义本地源及手动安装条目不自动迁移。
 
 公共仓库保留 registry Schema、目录生成和社区提交校验。候选发现、全量收录、实机截图补录和运营报告属于维护者内部流程，不随市场运行时发布；正式目录条目仍位于 `registry/skins/`，`data/catalog.json` 是生成文件。
 

@@ -35,7 +35,7 @@ export interface SkinMarketSectionProps {
   catalogCache?: CatalogCache
 }
 
-type MutationKind = 'install' | 'activate' | 'deactivate' | 'pin' | 'unpin' | 'update' | 'uninstall'
+type MutationKind = Operation['kind']
 
 interface CatalogResponse {
   skins: CatalogSkin[]
@@ -151,7 +151,7 @@ function recoveryActionLabel(action: 'retry' | 'approve-build' | undefined): str
 }
 
 const mutationLabels: Record<MutationKind, string> = {
-  install: '安装中', activate: '使用中', deactivate: '停用中', pin: '设置常驻中', unpin: '取消常驻中', update: '更新中', uninstall: '卸载中',
+  install: '安装中', activate: '使用中', deactivate: '停用中', pin: '设置常驻中', unpin: '取消常驻中', update: '更新中', migrate: '正在换用 npm', uninstall: '卸载中',
 }
 
 const marketOperationTitles: Record<MarketUpdateOperation['phase'], string> = {
@@ -422,6 +422,7 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
   const [mutation, setMutation] = useState<{ skinId: string; kind: MutationKind } | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [confirmUninstall, setConfirmUninstall] = useState(false)
+  const [confirmMigration, setConfirmMigration] = useState<{ skin: CatalogSkin; source: NonNullable<RuntimeSkin['sourceMigration']> } | null>(null)
   const [confirmPin, setConfirmPin] = useState(false)
   const [activationWarningAccepted, setActivationWarningAccepted] = useState(() => {
     try { return window.localStorage.getItem(ACTIVATION_WARNING_KEY) === 'true' } catch { return false }
@@ -898,7 +899,7 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
           // disk, but the loaded client module still belongs to the old
           // package. Reuse the existing restart confirmation flow so the
           // reviewed version is loaded by a fresh DSH process.
-          let needsRestart = kind === 'update'
+          let needsRestart = (kind === 'update' || kind === 'migrate')
             && (targetState.activation === 'active' || targetState.activation === 'restart-required')
           if (kind === 'deactivate' || kind === 'uninstall') {
             await clientRuntime?.setActive(target.package, false)
@@ -921,7 +922,7 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
             setStates(value => value.map(item => item.skinId === target.id
               ? { ...item, activation: 'restart-required' }
               : item))
-            setPendingRestart({ target: { kind: 'skin', skinId: target.id }, title: `${target.name.zh} ${kind === 'update' ? '已更新' : '已完成操作'}，待重启生效`, startedAt: new Date().toISOString() })
+            setPendingRestart({ target: { kind: 'skin', skinId: target.id }, title: `${target.name.zh} ${kind === 'update' ? '已更新' : kind === 'migrate' ? '已换用 npm' : '已完成操作'}，待重启生效`, startedAt: new Date().toISOString() })
             await openRestartConfirm(target.id, 'skin', advisory)
           } else if (advisory !== null) {
             setCompatibilityWarning(advisory)
@@ -1084,10 +1085,11 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
     const itemState = runtimeFor(states, skin.id)
     const cardMutation = mutation?.skinId === skin.id ? mutation : null
     const needsInstall = itemState.installation === 'missing' || itemState.installation === 'broken'
+    const canMigrate = hostKind === 'dsh' && itemState.installation === 'installed' && itemState.sourceMigration !== undefined && !isManualOnly(skin)
     const actionCount = cardMutation !== null || needsInstall
       ? 1
       : itemState.installation === 'installed'
-        ? Number(itemState.activation === 'inactive' || itemState.activation === 'active') + Number(itemState.updateAvailable && !isManualOnly(skin))
+        ? Number(itemState.activation === 'inactive' || itemState.activation === 'active') + Number(itemState.updateAvailable && !isManualOnly(skin)) + Number(canMigrate)
         : 0
     const stateText = itemState.installation === 'broken'
       ? '安装异常'
@@ -1116,6 +1118,7 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
             {itemState.installation === 'installed' && itemState.activation === 'inactive' && <Button className={css.cardAction} variant="outline" size="sm" disabled={mutation !== null} onClick={() => activateCard(skin.id)}>使用</Button>}
             {itemState.installation === 'installed' && itemState.activation === 'active' && <Button className={css.cardAction} variant="outline" size="sm" disabled={mutation !== null} onClick={() => { void runForSkin(skin.id, 'deactivate') }}>停用</Button>}
             {itemState.installation === 'installed' && itemState.updateAvailable && !isManualOnly(skin) && <Button className={css.cardAction} variant="outline" size="sm" disabled={mutation !== null} onClick={() => { void runForSkin(skin.id, 'update') }}>更新</Button>}
+            {canMigrate && <Button className={css.cardAction} variant="outline" size="sm" disabled={mutation !== null || busy !== null} onClick={() => setConfirmMigration({ skin, source: itemState.sourceMigration! })}>换用 npm</Button>}
           </>}
         </div>}
       </div>
@@ -1312,6 +1315,7 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
               {state.activation === 'active' && <Button className={css.pinAction} variant="outline" size="sm" aria-pressed={state.pinned === true} title={state.pinned ? '取消后，如果它不是当前主皮肤，将立即停用；以后切换皮肤时也不会再保留' : '切换其他皮肤时仍保持启用，适合宠物、音效等可叠加插件；多个皮肤可能发生冲突'} disabled={busy !== null} onClick={() => state.pinned ? void run('unpin') : setConfirmPin(true)}>{state.pinned ? '取消常驻' : '常驻使用'}</Button>}
               {state.activation === 'restart-required' && state.pinned && <Button className={css.pinAction} variant="outline" size="sm" aria-pressed="true" title="取消常驻并撤销待重启的启用状态" disabled={busy !== null} onClick={() => void run('unpin')}>取消常驻</Button>}
               {state.updateAvailable && !manualOnly && <Button variant={state.activation === 'active' && !state.pinned ? 'primary' : 'outline'} size="sm" icon={<IconRefreshOutline16 />} disabled={busy !== null} onClick={() => void run('update')}>更新</Button>}
+              {hostKind === 'dsh' && state.installation === 'installed' && state.sourceMigration !== undefined && !manualOnly && <Button variant="outline" size="sm" disabled={busy !== null || mutation !== null} onClick={() => setConfirmMigration({ skin: selected, source: state.sourceMigration! })}>换用 npm</Button>}
               {state.installation !== 'missing' && <Button className={css.iconOnlyButton} variant="outline" size="sm" icon={<IconTrashOutline16 />} aria-label="卸载" title="卸载" disabled={busy !== null} onClick={() => setConfirmUninstall(true)} />}
               <span className={css.actionDivider} aria-hidden="true" />
               <span className={css.repoMeta}>
@@ -1373,6 +1377,22 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
       </Modal>
       <Modal open={confirmUninstall} onClose={() => setConfirmUninstall(false)} title="卸载皮肤" closeLabel="关闭" description={state?.activation === 'active' ? '当前皮肤会先停用并恢复 DSH 默认外观，然后删除安装包。' : '将从当前 DSH profile 删除这个皮肤安装包。'} footer={<><Button variant="outline" size="sm" onClick={() => setConfirmUninstall(false)}>取消</Button><Button variant="primary" size="sm" onClick={() => { setConfirmUninstall(false); void run('uninstall') }}>确认卸载</Button></>} />
       <Modal open={confirmPin} onClose={() => setConfirmPin(false)} title="常驻使用此皮肤" closeLabel="关闭" description="开启后，切换其他皮肤时不会自动停用此皮肤。适合宠物、音效等可叠加插件；多个皮肤可能同时修改样式、页面结构或功能，相关冲突风险由用户自行承担。" footer={<><Button variant="outline" size="sm" onClick={() => setConfirmPin(false)}>取消</Button><Button variant="primary" size="sm" onClick={() => { setConfirmPin(false); void run('pin') }}>确认常驻</Button></>}><p className={css.pinWarning}>如果发生冲突或页面无法操作，请停止 DSH，然后查看 <ResetHelpLink /> 中的修复命令。</p></Modal>
+      <Modal
+        open={confirmMigration !== null}
+        onClose={() => setConfirmMigration(null)}
+        title="换用 npm 安装源"
+        closeLabel="关闭"
+        description={`${confirmMigration?.skin.name.zh ?? '此皮肤'}将换用已验证的同版本 npm 包。保留当前启用和常驻状态，后续更新也使用 npm。正在使用的皮肤完成后需要重启。`}
+        footer={<><Button variant="outline" size="sm" onClick={() => setConfirmMigration(null)}>取消</Button><Button variant="primary" size="sm" disabled={busy !== null || mutation !== null} onClick={() => {
+          if (confirmMigration === null) return
+          const { skin } = confirmMigration
+          setConfirmMigration(null)
+          void runForSkin(skin.id, 'migrate')
+        }}>确认换用 npm</Button></>}
+      >
+        <p className={css.migrationSource}>当前来源：<code>{confirmMigration?.source.currentSource}</code></p>
+        <p className={css.migrationSource}>目标来源：<code>{confirmMigration?.source.target}</code></p>
+      </Modal>
       <Modal
         open={compatibilityNotice !== null}
         onClose={() => setCompatibilityNotice(null)}

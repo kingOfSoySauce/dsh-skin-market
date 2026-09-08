@@ -25,6 +25,12 @@ install:
     packageName: dsh-skin-alphacoders
     packageVersion: 0.3.0
     integrity: sha512-MyKXm4lW0PJZRkXe83snVIvHEKB1AdVDxaiR9rF0vClyKXxcz42bhAEJQWrW4ELfkQKDJPwulMnV7rm21BaYMQ==
+  npm:
+    name: dsh-skin-alphacoders
+    version: 0.4.1
+    integrity: sha512-zmsXcr6APCJYieiE/QTGZDzMGtCv74cQtmUN41DHFfzF9tA4J15KC5kAzwQQS1SXpdHaC5zLpfuzJbQ4spDHIQ==
+    repository: https://github.com/sakka6868/dsh-skin
+    gitHead: f65c03f57fece55a8ff18518f1f4b4d32fd28c76
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:

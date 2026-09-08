@@ -26,6 +26,12 @@ install:
     packageName: dsh-columbina-theme
     packageVersion: 0.1.1
     integrity: sha512-1ksigxLfP1MOI/gcK8W0CAr2lxfTIz3EUn8Ggi5fX2gCcV4wEV7/sOR6n3Co8Glg+lEBEMhGGlqv320W0muoIA==
+  npm:
+    name: dsh-columbina-theme
+    version: 0.1.1
+    integrity: sha512-1ksigxLfP1MOI/gcK8W0CAr2lxfTIz3EUn8Ggi5fX2gCcV4wEV7/sOR6n3Co8Glg+lEBEMhGGlqv320W0muoIA==
+    repository: https://github.com/hyposelen1a/dsh-columbina-theme
+    gitHead: 2ccf33d427347f0dbf5004eb182f99182ee3c94e
 compatibility:
   dsh: 0.1.0-rc.7
   platform:

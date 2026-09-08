@@ -144,6 +144,10 @@ export interface SkinRuntimeState {
     installedAt: string | null;
     lastOperatedAt: string | null;
     updateAvailable: boolean;
+    sourceMigration?: {
+        target: string;
+        currentSource: string;
+    };
     error?: string;
 }
 export interface InstalledClientPlugin {
@@ -160,7 +164,7 @@ export interface InstallConflict {
     existing: string;
     identifiers: string[];
 }
-export type OperationKind = 'install' | 'activate' | 'deactivate' | 'pin' | 'unpin' | 'update' | 'uninstall';
+export type OperationKind = 'install' | 'activate' | 'deactivate' | 'pin' | 'unpin' | 'update' | 'migrate' | 'uninstall';
 export type OperationPhase = 'queued' | 'resolving' | 'downloading' | 'installing' | 'validating' | 'activating' | 'cancelling' | 'cancelled' | 'done' | 'failed';
 export type OperationRetryAction = 'retry' | 'approve-build';
 export interface OperationFailure {
