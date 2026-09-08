@@ -127,11 +127,18 @@ const pnpmStages: Record<NonNullable<Operation['pnpmStage']>, string> = {
   resolving: '解析依赖', downloading: '下载依赖', linking: '链接依赖', building: '运行构建',
 }
 
+function isDiagnosticDump(text: string): boolean {
+  return text.startsWith('# dsh-skin-market')
+    || text.includes('[info] operation:')
+    || text.includes('[error] operation:')
+    || text.split('\n').length > 3
+}
+
 function operationMeta(operation: ProgressMetadata, now: number): string[] {
   const details: string[] = []
   if (operation.step !== undefined) details.push(operation.step)
-  if (operation.attempt !== undefined) details.push(`第 ${operation.attempt} 次尝试`)
-  if (operation.pnpmStage !== undefined) details.push(pnpmStages[operation.pnpmStage])
+  else if (operation.pnpmStage !== undefined) details.push(pnpmStages[operation.pnpmStage])
+  if (operation.attempt !== undefined && operation.attempt > 1) details.push(`第 ${operation.attempt} 次尝试`)
   if (operation.downloadedBytes !== undefined && operation.totalBytes !== undefined) {
     details.push(`${byteLabel(operation.downloadedBytes)} / ${byteLabel(operation.totalBytes)}`)
   } else if (operation.downloadedBytes !== undefined) {
@@ -148,6 +155,62 @@ function recoveryActionLabel(action: 'retry' | 'approve-build' | undefined): str
   if (action === 'approve-build') return '批准构建并重试'
   if (action === 'retry') return '重试'
   return undefined
+}
+
+const operationKindLabels: Record<MutationKind, string> = {
+  install: '安装', activate: '启用', deactivate: '停用', pin: '设置常驻', unpin: '取消常驻', update: '更新', migrate: '换用 npm', uninstall: '卸载',
+}
+
+export interface InterceptNotice {
+  title: string
+  what: string
+  why: string
+}
+
+/** Terminal failures that the market stopped on purpose, not retryable network/build prompts. */
+export function isInterceptFailure(operation: Operation | null | undefined): boolean {
+  if (operation == null || operation.phase !== 'failed') return false
+  return operation.failure?.action !== 'retry' && operation.failure?.action !== 'approve-build'
+}
+
+export function interceptNotice(operation: Operation, skinName: string): InterceptNotice {
+  const raw = (operation.failure?.message ?? operation.message ?? '').trim()
+  const message = isDiagnosticDump(raw) ? '' : raw
+  const kind = operationKindLabels[operation.kind]
+  const missingPatch = /bundle patch is missing:\s*(\S+)/.exec(raw)
+  if (missingPatch !== null) {
+    return {
+      title: '已拦截安装',
+      what: `市场已经下载「${skinName}」，但安装包里缺少 DSH 用来注册插件的 ${missingPatch[1]}，所以没有改动你的 profile。`,
+      why: '这个皮肤的 package.json 声明了 dsh.bundle.patch，但打包进安装源时没有带上该文件。常见原因是 files 白名单漏了 cordis.patch.yml。这是皮肤仓库的打包问题，不是本机环境损坏；需要作者补上文件后重新发布，才能一键安装。',
+    }
+  }
+  if (operation.failure?.kind === 'conflict' || message.includes('发现插件安装冲突')) {
+    return {
+      title: '已拦截安装',
+      what: `「${skinName}」没有装上，因为当前 profile 里已有其他皮肤占用了相同的插件入口。`,
+      why: message || '请先在皮肤市场停用或卸载冲突的皮肤，然后再试。',
+    }
+  }
+  if (operation.failure?.kind === 'compatibility') {
+    return {
+      title: '已拦截安装',
+      what: `市场没有继续安装「${skinName}」。`,
+      why: message || '当前 DSH 版本不在该皮肤声明的兼容范围内。',
+    }
+  }
+  if (message.includes('目录元数据与包实际声明不一致')) {
+    return {
+      title: '已拦截安装',
+      what: `市场已经检查「${skinName}」的安装包，发现它和目录记录的插件入口不一致，所以没有写入 profile。`,
+      why: message,
+    }
+  }
+  return {
+    title: `${kind}未完成`,
+    what: `「${skinName}」的${kind}已停止，市场没有继续修改你的 profile。`,
+    why: message || '操作过程中出现错误。可复制日志后发给维护者。',
+  }
 }
 
 const mutationLabels: Record<MutationKind, string> = {
@@ -189,15 +252,17 @@ function OperationBanner({ title, startedAt, metadata = [], progress, message, c
     .filter((value): value is string => value !== undefined)
     .map(value => Date.parse(value)))
   const silentFor = Number.isFinite(lastOutputTime) ? now - lastOutputTime : 0
-  const details = [...new Set([
+  const details = failed ? [] : [...new Set([
     ...metadata,
     ...(progress === undefined ? [] : operationMeta(progress, now)),
-    ...(!terminal || failed ? [`已用时 ${elapsedLabel(startedAt, now)}`] : []),
-    ...(!terminal && silentFor >= 30_000 ? [`已 ${elapsedLabel(new Date(lastOutputTime).toISOString(), now)}未有输出，可复制日志查看`] : []),
+    ...(!terminal ? [`已用时 ${elapsedLabel(startedAt, now)}`] : []),
+    ...(!terminal && silentFor >= 30_000 ? [`已 ${elapsedLabel(new Date(lastOutputTime).toISOString(), now)}未有输出`] : []),
   ].filter(item => item !== ''))]
   const normalize = (value: string) => value.replace(/\s+/g, '')
   const normalizedMessage = message === undefined ? '' : normalize(message)
-  const messageText = message !== undefined
+  const messageText = !failed
+    && message !== undefined
+    && !isDiagnosticDump(message)
     && message !== title
     && normalizedMessage !== ''
     && ![title, ...details].some(item => {
@@ -442,11 +507,11 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
   const [marketOperation, setMarketOperation] = useState<MarketUpdateOperation | null>(null)
   const [copyingLogId, setCopyingLogId] = useState<string | null>(null)
   const [copiedLogId, setCopiedLogId] = useState<string | null>(null)
+  const [copyLogError, setCopyLogError] = useState<string | null>(null)
   const [dismissedBuildApprovalId, setDismissedBuildApprovalId] = useState<string | null>(null)
   const [marketUpdating, setMarketUpdating] = useState(false)
   const [restartTarget, setRestartTarget] = useState<RestartTarget | null>(null)
   const [pendingRestart, setPendingRestart] = useState<PendingRestartNotice | null>(null)
-  const [compatibilityNotice, setCompatibilityNotice] = useState<{ skin: CatalogSkin; assessment: CompatibilityAssessment } | null>(null)
   const [compatibilityWarning, setCompatibilityWarning] = useState<CompatibilityAssessment | null>(null)
   const [homeCompact, setHomeCompact] = useState(false)
   const skinListRef = useRef<HTMLDivElement | null>(null)
@@ -816,6 +881,7 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
 
   const copyOperationLog = useCallback(async (operationId: string) => {
     setCopyingLogId(operationId)
+    setCopyLogError(null)
     setError(null)
     try {
       const response = await fetch(`/dsh-skin-market/logs?operationId=${encodeURIComponent(operationId)}`, { cache: 'no-store' })
@@ -826,11 +892,13 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
       setCopiedLogId(operationId)
       window.setTimeout(() => setCopiedLogId(current => current === operationId ? null : current), 2400)
     } catch (reason) {
-      setError(reason instanceof Error ? reason.message : String(reason))
+      const message = reason instanceof Error ? reason.message : String(reason)
+      if (busy !== null && isInterceptFailure(busy) && busy.id === operationId) setCopyLogError(message)
+      else setError(message)
     } finally {
       setCopyingLogId(current => current === operationId ? null : current)
     }
-  }, [])
+  }, [busy])
 
   const cancelOperation = useCallback(async () => {
     if (busy === null || busy.id === 'pending' || busy.cancelable !== true) return
@@ -935,14 +1003,6 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
           return false
         }
         if (operation.phase === 'failed') {
-          if (operation.failure?.kind === 'compatibility') {
-            setBusy(null)
-            setCompatibilityNotice({ skin: target, assessment: { decision: 'incompatible', reason: operation.failure.message, adapterIds: [] } })
-            await refresh().catch(() => undefined)
-            return false
-          }
-          // Keep terminal operation failures in the shared banner so the
-          // actionable error is visible where the progress was shown.
           await refresh().catch(() => undefined)
           setBusy(operation)
           setError(null)
@@ -1125,45 +1185,65 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
     </article>
   }
 
-  const renderSkinOperationBanner = (className?: string) => busy === null ? null : <OperationBanner
-    operationId={busy.id}
-    copyingLog={copyingLogId === busy.id}
-    copiedLog={copiedLogId === busy.id}
-    className={className}
-    title={`${phases[busy.phase]}“${skins.find(skin => skin.id === busy.skinId)?.name.zh ?? busy.skinId}”`}
-    startedAt={busy.startedAt}
-    progress={busy}
-    message={busy.message}
-    terminal={busy.phase === 'done' || busy.phase === 'failed' || busy.phase === 'cancelled'}
-    failed={busy.phase === 'failed'}
-    cancelable={busy.cancelable === true}
-    onCancel={() => { void cancelOperation() }}
-    onCopyLog={() => { void copyOperationLog(busy.id) }}
-    action={busy.failure?.action === 'approve-build'
-      ? <Button variant="outline" size="sm" onClick={() => setDismissedBuildApprovalId(null)}>查看批准说明</Button>
-      : recoveryActionLabel(busy.failure?.action) === undefined
-        ? undefined
-        : <Button variant="outline" size="sm" onClick={() => { void retrySkinOperation() }}>{recoveryActionLabel(busy.failure?.action)}</Button>}
-    onDismiss={busy.phase === 'failed' || busy.phase === 'cancelled' || busy.phase === 'done' ? () => setBusy(null) : undefined}
-  />
+  const interceptOperation = isInterceptFailure(busy) ? busy : null
+  const intercept = interceptOperation === null ? null : interceptNotice(
+    interceptOperation,
+    skins.find(skin => skin.id === interceptOperation.skinId)?.name.zh ?? interceptOperation.skinId,
+  )
+  const dismissIntercept = () => {
+    setCopyLogError(null)
+    setBusy(current => current !== null && isInterceptFailure(current) ? null : current)
+  }
 
-  const renderMarketOperationBanner = (className?: string) => marketOperation === null || (marketOperation.phase === 'done' && pendingRestart !== null) ? null : <OperationBanner
+  const renderSkinOperationBanner = (className?: string) => {
+    if (busy === null || interceptOperation !== null) return null
+    const failed = busy.phase === 'failed'
+    const terminal = busy.phase === 'done' || failed || busy.phase === 'cancelled'
+    return <OperationBanner
+      operationId={busy.id}
+      copyingLog={copyingLogId === busy.id}
+      copiedLog={copiedLogId === busy.id}
+      className={className}
+      title={`${phases[busy.phase]}“${skins.find(skin => skin.id === busy.skinId)?.name.zh ?? busy.skinId}”`}
+      startedAt={busy.startedAt}
+      progress={failed ? undefined : busy}
+      message={failed ? undefined : busy.message}
+      terminal={terminal}
+      failed={failed}
+      cancelable={busy.cancelable === true}
+      onCancel={() => { void cancelOperation() }}
+      onCopyLog={() => { void copyOperationLog(busy.id) }}
+      action={busy.failure?.action === 'approve-build'
+        ? <Button variant="outline" size="sm" onClick={() => setDismissedBuildApprovalId(null)}>查看批准说明</Button>
+        : recoveryActionLabel(busy.failure?.action) === undefined
+          ? undefined
+          : <Button variant="outline" size="sm" onClick={() => { void retrySkinOperation() }}>{recoveryActionLabel(busy.failure?.action)}</Button>}
+      onDismiss={terminal ? () => setBusy(null) : undefined}
+    />
+  }
+
+  const renderMarketOperationBanner = (className?: string) => {
+    if (marketOperation === null || (marketOperation.phase === 'done' && pendingRestart !== null)) return null
+    const failed = marketOperation.phase === 'failed'
+    const terminal = marketOperation.phase === 'done' || failed || marketOperation.phase === 'cancelled'
+    return <OperationBanner
     operationId={marketOperation.id}
     copyingLog={copyingLogId === marketOperation.id}
     copiedLog={copiedLogId === marketOperation.id}
     className={className}
     title={marketOperationTitles[marketOperation.phase]}
     startedAt={marketOperation.startedAt}
-    progress={marketOperation}
-    message={marketOperation.message}
-    terminal={marketOperation.phase === 'done' || marketOperation.phase === 'failed' || marketOperation.phase === 'cancelled'}
-    failed={marketOperation.phase === 'failed'}
+    progress={failed ? undefined : marketOperation}
+    message={failed ? undefined : marketOperation.message}
+    terminal={terminal}
+    failed={failed}
     cancelable={marketOperation.cancelable === true}
     onCancel={() => { void cancelMarketUpdate() }}
     onCopyLog={() => { void copyOperationLog(marketOperation.id) }}
     action={recoveryActionLabel(marketOperation.failure?.action) === undefined ? undefined : <Button variant="outline" size="sm" onClick={() => { void retryMarketUpdate() }}>{recoveryActionLabel(marketOperation.failure?.action)}</Button>}
-    onDismiss={marketOperation.phase === 'failed' || marketOperation.phase === 'cancelled' || marketOperation.phase === 'done' ? () => { dismissedMarketOperationIds.current.add(marketOperation.id); setMarketOperation(null) } : undefined}
+    onDismiss={terminal ? () => { dismissedMarketOperationIds.current.add(marketOperation.id); setMarketOperation(null) } : undefined}
   />
+  }
 
   const renderPendingRestartBanner = (className?: string) => pendingRestart === null ? null : <OperationBanner
     className={className}
@@ -1394,14 +1474,26 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
         <p className={css.migrationSource}>目标来源：<code>{confirmMigration?.source.target}</code></p>
       </Modal>
       <Modal
-        open={compatibilityNotice !== null}
-        onClose={() => setCompatibilityNotice(null)}
-        title="已拦截安装"
+        open={intercept !== null}
+        onClose={dismissIntercept}
+        title={intercept?.title ?? '已拦截安装'}
         closeLabel="关闭"
-        description={compatibilityNotice === null ? '' : `${compatibilityNotice.skin.name.zh}：${compatibilityNotice.assessment.reason}`}
-        footer={<Button variant="primary" size="sm" onClick={() => setCompatibilityNotice(null)}>知道了</Button>}
+        description={intercept?.what ?? ''}
+        footer={<>
+          <Button
+            variant="outline"
+            size="sm"
+            icon={<IconCopyOutline16 />}
+            disabled={interceptOperation === null || copyingLogId === interceptOperation.id}
+            onClick={() => { if (interceptOperation !== null) void copyOperationLog(interceptOperation.id) }}
+          >{copiedLogId === interceptOperation?.id ? '日志已复制' : copyingLogId === interceptOperation?.id ? '复制中…' : '复制日志'}</Button>
+          <Button variant="primary" size="sm" onClick={dismissIntercept}>确认</Button>
+        </>}
       >
-        <p className={css.notice}>仍可稍后重试安装。若页面异常，请查看 <ResetHelpLink />。</p>
+        {intercept !== null && <div className={css.interceptNotice}>
+          <p><strong>为什么会这样</strong>{intercept.why}</p>
+          {copyLogError !== null && <p className={css.notice} role="alert">{copyLogError}</p>}
+        </div>}
       </Modal>
       <Modal
         open={showInstallOptions}

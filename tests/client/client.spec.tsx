@@ -39,7 +39,7 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', () => {
   }
 })
 
-import { CATALOG_BATCH_SIZE, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
+import { CATALOG_BATCH_SIZE, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, interceptNotice, isInterceptFailure, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
 import { createClientSkinRuntime, missingPrimitives, switchClientSkin } from '../../src/client/index.ts'
 import { createSkinInstallCommand, createSkinInstallPrompt } from '../../src/client/submission.ts'
 import { setGeneratedMediaSources } from '../../src/media-preview.ts'
@@ -61,6 +61,19 @@ async function openSkinCard(name: RegExp = /测试皮肤 界面预览/) {
 }
 
 describe('client market', () => {
+  it('explains a missing bundle patch as a packaging intercept, not a local profile error', () => {
+    const operation = {
+      id: 'op', kind: 'install' as const, skinId: skin.id, phase: 'failed' as const, startedAt: '2026-09-08T00:00:00Z',
+      message: '@deepseek-ai/dsh-client-ui-liquid-glass bundle patch is missing: ./cordis.patch.yml',
+    }
+    expect(isInterceptFailure(operation)).toBe(true)
+    expect(isInterceptFailure({ ...operation, failure: { kind: 'network', message: '网络错误', action: 'retry' } })).toBe(false)
+    const notice = interceptNotice(operation, '液态玻璃')
+    expect(notice.title).toBe('已拦截安装')
+    expect(notice.what).toContain('缺少 DSH 用来注册插件的 ./cordis.patch.yml')
+    expect(notice.why).toContain('files 白名单')
+  })
+
   it('asks before migrating the chosen skin and preserves the active-skin restart flow', async () => {
     let migrated = false
     const sourceMigration = { target: 'skin@1.0.0', currentSource: skin.install.target }
@@ -938,10 +951,12 @@ describe('client market', () => {
 
     expect((await screen.findByRole('status')).textContent).toContain('正在下载“测试皮肤”')
     expect(screen.getByRole('status').textContent).toContain('已用时')
-    await waitFor(() => expect(screen.getAllByRole('status').some(item => item.textContent?.includes('GitHub 插件下载超时'))).toBe(true), { timeout: 2_000 })
+    const dialog = await screen.findByRole('dialog', { name: '安装未完成' }, { timeout: 2_000 })
+    expect(dialog.textContent).toContain('GitHub 插件下载超时')
+    expect(screen.queryByRole('status')).toBeNull()
     expect(screen.queryByRole('alert')).toBeNull()
     window.dispatchEvent(new Event('focus'))
-    await waitFor(() => expect(screen.getAllByRole('status').some(item => item.textContent?.includes('GitHub 插件下载超时'))).toBe(true))
+    expect(screen.getByRole('dialog', { name: '安装未完成' }).textContent).toContain('GitHub 插件下载超时')
   })
 
   it('shows the command and pnpm stage, expires stale speed on its tick, and lets a running install copy diagnostics', async () => {
@@ -966,7 +981,7 @@ describe('client market', () => {
       const banner = screen.getByRole('status')
       expect(banner.textContent).toContain('下载 npm 皮肤包')
       expect(banner.textContent).toContain('第 2 次尝试')
-      expect(banner.textContent).toContain('下载依赖')
+      expect(banner.textContent).not.toContain('下载依赖')
       expect(banner.textContent).toContain('2.0 KB / 4.0 KB')
       expect(banner.textContent).toContain('1.0 KB/s')
 
@@ -975,6 +990,7 @@ describe('client market', () => {
       expect(banner.textContent).not.toContain('未有输出')
       clock.mockReturnValue(now + 30_000)
       await waitFor(() => expect(banner.textContent).toContain('30 秒未有输出'), { timeout: 2000 })
+      expect(banner.textContent).not.toContain('可复制日志查看')
       fireEvent.click(within(banner).getByRole('button', { name: '复制日志' }))
       await waitFor(() => expect(clipboard).toHaveBeenCalledWith(expect.stringContaining('diagnostic log')))
       expect(banner.textContent).not.toContain('redacted')
@@ -995,13 +1011,13 @@ describe('client market', () => {
     await waitFor(() => expect(screen.getByRole('status').textContent).toContain('写入插件'))
     const banner = screen.getByRole('status')
     expect(banner.textContent).toContain('写入插件')
-    expect(banner.textContent).toContain('链接依赖')
+    expect(banner.textContent).not.toContain('链接依赖')
     expect(banner.textContent).not.toContain('未有输出')
   })
 
-  it('keeps a long failure on one line and copies the operation diagnostic log', async () => {
+  it('explains a blocking failure in a dialog and copies the operation diagnostic log', async () => {
     let operationRequests = 0
-    const longMessage = '依赖 @deepseek-ai/dsh-compact 无法从 npm registry 找到；这是一个很长的 pnpm 诊断信息，需要在横幅中单行省略而不能挤开右侧操作按钮。'
+    const longMessage = '依赖 @deepseek-ai/dsh-compact 无法从 npm registry 找到；这是一个很长的 pnpm 诊断信息，需要完整展示而不能挤在横幅里。'
     const clipboard = vi.fn(async () => undefined)
     Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: clipboard } })
     const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
@@ -1022,15 +1038,50 @@ describe('client market', () => {
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
 
-    const banner = await screen.findByRole('status')
-    await waitFor(() => expect(banner.textContent).toContain('@deepseek-ai/dsh-compact'))
-    const message = within(banner).getByTitle(longMessage)
-    expect(message.textContent).toContain('dsh-compact')
-    const copyButton = within(banner).getByRole('button', { name: '复制日志' })
-    expect(copyButton).toBeTruthy()
-    fireEvent.click(copyButton)
+    const dialog = await screen.findByRole('dialog', { name: '安装未完成' })
+    expect(dialog.textContent).toContain('@deepseek-ai/dsh-compact')
+    expect(dialog.textContent).not.toContain('diagnostic log')
+    expect(screen.queryByRole('status')).toBeNull()
+    expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
+    fireEvent.click(within(dialog).getByRole('button', { name: '复制日志' }))
     await waitFor(() => expect(clipboard).toHaveBeenCalledWith(expect.stringContaining('diagnostic log')))
-    expect(within(banner).getByRole('button', { name: '日志已复制' })).toBeTruthy()
+    expect(within(dialog).getByRole('button', { name: '日志已复制' })).toBeTruthy()
+    fireEvent.click(within(dialog).getByRole('button', { name: '确认' }))
+    expect(screen.queryByRole('dialog', { name: '安装未完成' })).toBeNull()
+  })
+
+  it('explains a missing bundle patch as a skin packaging intercept', async () => {
+    let operationRequests = 0
+    const clipboard = vi.fn(async () => undefined)
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: clipboard } })
+    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation: null, runtime: dshRuntime }) }
+      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'install-patch' }) }
+      if (url.endsWith('/logs?operationId=install-patch')) return { ok: true, text: async () => '# dsh-skin-market diagnostic log\nbundle patch is missing' }
+      if (url.endsWith('/operations/install-patch')) {
+        operationRequests += 1
+        return { ok: true, json: async () => operationRequests === 1
+          ? { id: 'install-patch', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date().toISOString() }
+          : { id: 'install-patch', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: `${skin.package} bundle patch is missing: ./cordis.patch.yml` } }
+      }
+      throw new Error(`Unexpected request: ${url}`)
+    }))
+    render(<SkinMarketSection t={key => key} />)
+    await openSkinCard()
+    fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
+
+    const dialog = await screen.findByRole('dialog', { name: '已拦截安装' })
+    expect(dialog.textContent).toContain('缺少 DSH 用来注册插件的 ./cordis.patch.yml')
+    expect(dialog.textContent).toContain('files 白名单')
+    expect(dialog.textContent).toContain('不是本机环境损坏')
+    expect(dialog.textContent).not.toContain('diagnostic log')
+    expect(dialog.textContent).not.toContain('第 1 次尝试')
+    expect(dialog.textContent).not.toContain('链接依赖')
+    expect(within(dialog).getByRole('button', { name: '确认' })).toBeTruthy()
+    expect(within(dialog).getByRole('button', { name: '复制日志' })).toBeTruthy()
+    expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
+    expect(screen.queryByRole('status')).toBeNull()
   })
 
   it('offers a retry action for a classified install failure', async () => {
