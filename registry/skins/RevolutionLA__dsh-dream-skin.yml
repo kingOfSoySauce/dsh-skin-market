@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:RevolutionLA/dsh-dream-skin#26946012b7e0473933d3fee05f8f5d5befaf283d
+  target: github:RevolutionLA/dsh-dream-skin#67ed64dfc31dde685e780d01be2ed0c8387de7a8
   version: 8.30.1
-  commit: 26946012b7e0473933d3fee05f8f5d5befaf283d
+  commit: 67ed64dfc31dde685e780d01be2ed0c8387de7a8
   desktop:
     mode: managed
     registry: npm
@@ -39,6 +39,7 @@ screenshots:
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/a90377e87e93a0b1d7359509399b9dd848f07f1f/docs/previews/ember.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/e29194bce0b9463f255220e8ffc8c06ec9dfbf93/docs/screenshots/preview.png
   - https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/e29194bce0b9463f255220e8ffc8c06ec9dfbf93/docs/screenshots/settings.png
+listScreenshot: https://raw.githubusercontent.com/RevolutionLA/dsh-dream-skin/67ed64dfc31dde685e780d01be2ed0c8387de7a8/docs/screenshots/preview.png
 review:
   compatibility: verified
   preview: verified
@@ -53,20 +54,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 26946012b7e0473933d3fee05f8f5d5befaf283d
+    commit: 67ed64dfc31dde685e780d01be2ed0c8387de7a8
     packageVersion: 8.30.1
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:12.344Z
+    checkedAt: 2026-09-08T21:46:47.905Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 4
 starsSnapshot: 152
-releaseUpdatedAt: 2026-09-07T21:58:12.443Z
-metadataUpdatedAt: 2026-09-07T21:58:12.443Z
+releaseUpdatedAt: 2026-09-08T21:46:53.343Z
+metadataUpdatedAt: 2026-09-08T21:46:53.343Z
 starsUpdatedAt: 2026-09-07T21:58:12.443Z
-updatedAt: 2026-09-07T21:58:12.443Z
+updatedAt: 2026-09-08T21:46:53.343Z

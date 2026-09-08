@@ -37,20 +37,21 @@ screenshots:
   - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/4c2b1448a9869a7deaf6687027244f8258431bc7/assets/previews/latte.png
   - https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/4c2b1448a9869a7deaf6687027244f8258431bc7/assets/previews/frappe.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 ^0.1.2-rc.1 完全覆盖（固定版本 374e5ebe5cb7ae11bf9f29f13cbf9e3b101b285a）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 374e5ebe5cb7ae11bf9f29f13cbf9e3b101b285a
     packageVersion: 0.5.0
@@ -66,8 +67,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 5
-starsSnapshot: 32
+starsSnapshot: 35
 releaseUpdatedAt: 2026-09-07T21:58:13.634Z
-metadataUpdatedAt: 2026-09-08T09:44:04.508Z
-starsUpdatedAt: 2026-09-06T21:12:21.986Z
-updatedAt: 2026-09-08T09:44:04.508Z
+metadataUpdatedAt: 2026-09-08T21:46:54.520Z
+starsUpdatedAt: 2026-09-08T21:46:54.520Z
+updatedAt: 2026-09-08T21:46:54.520Z

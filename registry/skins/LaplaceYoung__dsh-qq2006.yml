@@ -31,18 +31,19 @@ screenshots:
   - https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/assets/screenshots/qq2006-window-view.webp
   - https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/fa3493ceb748171728113aba1aaf606d733790a0/assets/screenshots/qq2006-window-chrome.webp
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 ^0.0.1-rc.1 未被本次检测范围 0.1.0-rc.7 完全覆盖（固定版本 ddde58e2cb8d1ff62543cc195f58a507605b7845）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: ddde58e2cb8d1ff62543cc195f58a507605b7845
     packageVersion: 0.1.2
@@ -56,8 +57,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 40
-starsSnapshot: 26
+starsSnapshot: 27
 releaseUpdatedAt: 2026-08-28T04:08:34.459Z
-metadataUpdatedAt: 2026-08-28T04:08:34.459Z
-starsUpdatedAt: 2026-09-06T21:12:21.455Z
-updatedAt: 2026-09-06T21:12:21.455Z
+metadataUpdatedAt: 2026-09-08T21:46:55.557Z
+starsUpdatedAt: 2026-09-08T21:46:55.557Z
+updatedAt: 2026-09-08T21:46:55.557Z

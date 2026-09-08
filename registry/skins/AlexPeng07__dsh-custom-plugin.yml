@@ -24,6 +24,12 @@ install:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare,prepublishOnly
   allowBuild: "@alexpeng/dsh-custom-plugin@https://codeload.github.com/AlexPeng07/dsh-custom-plugin/tar.gz/1d470dfd6c7d48f1269f80650c473d0e70c769d7"
+  npm:
+    name: "@alexpeng/dsh-custom-plugin"
+    version: 0.4.0
+    integrity: sha512-mWqwZE/r2otmqgsgiKjkeQQ51kGZIp8NMq2PQkC5pfcOjM/P35JlveCcGGBXsYu6T+SLeIKT0oS+OamPXUJzFw==
+    repository: https://github.com/AlexPeng07/dsh-custom-plugin
+    gitHead: 1d470dfd6c7d48f1269f80650c473d0e70c769d7
 compatibility:
   dsh: ^0.1.1-rc.1
   platform:
@@ -62,8 +68,8 @@ license:
   commercialUse: true
 featuredRank: 1038
 starsSnapshot: 5
-releaseUpdatedAt: 2026-09-07T21:58:19.354Z
+releaseUpdatedAt: 2026-09-08T21:47:16.350Z
 metadataUpdatedAt: 2026-09-08T03:10:45.087Z
 starsUpdatedAt: 2026-09-07T21:58:19.354Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T21:47:16.350Z
 listScreenshot: https://raw.githubusercontent.com/AlexPeng07/dsh-custom-plugin/1d470dfd6c7d48f1269f80650c473d0e70c769d7/docs/overview.png

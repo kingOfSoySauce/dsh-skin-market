@@ -41,20 +41,21 @@ screenshots:
   - https://raw.githubusercontent.com/Lhy723/dsh-neu-theme/54f4a07c0364f9f9d571a1384471e3825e1c14a4/.github/asset/light.webp
   - https://raw.githubusercontent.com/Lhy723/dsh-neu-theme/54f4a07c0364f9f9d571a1384471e3825e1c14a4/.github/asset/dark.webp
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 ^0.1.1-rc.2 完全覆盖（固定版本 834bf7100d8b298e74921ae3605f7b2045bd25aa）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 834bf7100d8b298e74921ae3605f7b2045bd25aa
     packageVersion: 0.1.1
@@ -72,6 +73,6 @@ license:
 featuredRank: 11
 starsSnapshot: 6
 releaseUpdatedAt: 2026-08-28T04:08:39.820Z
-metadataUpdatedAt: 2026-08-28T04:08:39.820Z
+metadataUpdatedAt: 2026-09-08T21:47:11.162Z
 starsUpdatedAt: 2026-08-26T03:24:29.975Z
-updatedAt: 2026-08-28T04:08:39.820Z
+updatedAt: 2026-09-08T21:47:11.162Z

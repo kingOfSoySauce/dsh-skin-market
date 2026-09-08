@@ -26,6 +26,12 @@ install:
     packageName: dsh-official-homepage-theme
     packageVersion: 1.0.6
     integrity: sha512-1cR3E5fn6HSTitI7gVEfBOrx5cejxvWuRqAfqpKxMRQWVXajUlcIhmcOCjEljIt2ZMvDTdCBzpVj22Kx2N0YTw==
+  npm:
+    name: dsh-official-homepage-theme
+    version: 1.0.6
+    integrity: sha512-1cR3E5fn6HSTitI7gVEfBOrx5cejxvWuRqAfqpKxMRQWVXajUlcIhmcOCjEljIt2ZMvDTdCBzpVj22Kx2N0YTw==
+    repository: https://github.com/JohnnyTing/dsh-official-homepage-theme
+    gitHead: 3dc1ee72510db857257ff292d7f3aca1d3f46bb8
 compatibility:
   dsh: unverified
   platform:
@@ -60,8 +66,8 @@ license:
   commercialUse: true
 featuredRank: 1035
 starsSnapshot: 7
-releaseUpdatedAt: 2026-09-07T21:58:18.366Z
+releaseUpdatedAt: 2026-09-08T21:47:10.596Z
 metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-07T21:58:18.366Z
-updatedAt: 2026-09-08T09:45:47.382Z
+updatedAt: 2026-09-08T21:47:10.596Z
 listScreenshot: https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif

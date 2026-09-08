@@ -20,7 +20,9 @@ install:
   target: github:mumuer1024/dsh-ui-liteglass#586943c25e559409d202ab1e572d4f7f848eb7a6
   version: 0.1.0
   commit: 586943c25e559409d202ab1e572d4f7f848eb7a6
-  allowBuild: dsh-ui-liteglass@https://codeload.github.com/mumuer1024/dsh-ui-liteglass/tar.gz/586943c25e559409d202ab1e572d4f7f848eb7a6
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
   npm:
     name: dsh-ui-liteglass
     version: 0.1.0
@@ -36,12 +38,35 @@ screenshots:
   - https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/preview-dark.webp
   - https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/settings-light.webp
   - https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/settings-dark.webp
+listScreenshot: https://raw.githubusercontent.com/mumuer1024/dsh-ui-liteglass/586943c25e559409d202ab1e572d4f7f848eb7a6/docs/screenshots/preview-light.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 586943c25e559409d202ab1e572d4f7f848eb7a6
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.7
+    mode: static
+    result: pass
+    checkedAt: 2026-09-08T21:48:33.572Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-27T00:51:21Z
-metadataUpdatedAt: 2026-08-27T01:34:31Z
+releaseUpdatedAt: 2026-09-08T21:48:34.192Z
+metadataUpdatedAt: 2026-09-08T21:48:34.192Z
 starsUpdatedAt: 2026-08-29T03:15:03.801Z
-updatedAt: 2026-08-29T03:15:03.801Z
+updatedAt: 2026-09-08T21:48:34.192Z

@@ -24,6 +24,12 @@ install:
     packageName: claude-style-skin
     packageVersion: 0.1.1
     integrity: sha512-NFpLT73ku2kerPTq2KRa43uEp6GnlIyC7evYXBGMgpIN1E0MvQTzyxtqDyyRwF4f9DVAjbCAMgcg0RFrAhRlzw==
+  npm:
+    name: claude-style-skin
+    version: 0.1.1
+    integrity: sha512-NFpLT73ku2kerPTq2KRa43uEp6GnlIyC7evYXBGMgpIN1E0MvQTzyxtqDyyRwF4f9DVAjbCAMgcg0RFrAhRlzw==
+    repository: https://github.com/TaiyakiOffical/claude-style-skin
+    gitHead: 09cfe36237b7fa0c4e57141b364b8bf50f084d37
 compatibility:
   dsh: unverified
   platform:
@@ -58,9 +64,9 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1066
-starsSnapshot: 2
-releaseUpdatedAt: 2026-09-07T21:58:38.059Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-09-08T21:48:07.824Z
 metadataUpdatedAt: 2026-09-08T03:10:45.087Z
-starsUpdatedAt: 2026-09-07T21:58:38.059Z
-updatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-08T21:48:07.670Z
+updatedAt: 2026-09-08T21:48:07.824Z
 listScreenshot: https://raw.githubusercontent.com/TaiyakiOffical/claude-style-skin/09cfe36237b7fa0c4e57141b364b8bf50f084d37/docs/light.png

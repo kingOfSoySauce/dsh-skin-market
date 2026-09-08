@@ -19,9 +19,9 @@ modes:
   - light
   - dark
 install:
-  target: github:FAVKTOXIC/dsh-theme-liquid-glass#d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1
+  target: github:FAVKTOXIC/dsh-theme-liquid-glass#2d10a5ff53f08429e0d9e6582c89ee9e9fa1099d
   version: 0.4.2
-  commit: d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1
+  commit: 2d10a5ff53f08429e0d9e6582c89ee9e9fa1099d
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepack
@@ -32,6 +32,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/FAVKTOXIC/dsh-theme-liquid-glass/d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1/assets/screenshots/screenshot-input.png
   - https://raw.githubusercontent.com/FAVKTOXIC/dsh-theme-liquid-glass/d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1/assets/screenshots/screenshot-chat.png
+listScreenshot: https://raw.githubusercontent.com/FAVKTOXIC/dsh-theme-liquid-glass/d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1/assets/screenshots/screenshot-input.png
 review:
   compatibility: verified
   preview: verified
@@ -46,21 +47,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1
+    commit: 2d10a5ff53f08429e0d9e6582c89ee9e9fa1099d
     packageVersion: 0.4.2
     scannerVersion: static-v2
     dshVersion: ^0.1.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:24.604Z
+    checkedAt: 2026-09-08T21:47:36.492Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1044
 starsSnapshot: 3
-releaseUpdatedAt: 2026-09-07T21:58:24.684Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-09-08T21:47:38.075Z
+metadataUpdatedAt: 2026-09-08T21:47:38.075Z
 starsUpdatedAt: 2026-09-07T21:58:24.684Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/FAVKTOXIC/dsh-theme-liquid-glass/d24167a4fbbfb08c07b60ef64cbbde6a49cecfc1/assets/screenshots/screenshot-input.png
+updatedAt: 2026-09-08T21:47:38.075Z

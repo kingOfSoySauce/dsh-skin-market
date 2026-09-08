@@ -31,14 +31,14 @@ screenshots:
   - https://raw.githubusercontent.com/zaimokuza-yoshiteru/dsh-theme-library/bbff7b1b34226906cf116a174f8a002a126aee7e/docs/assets/black-smoke-light.gif
   - https://raw.githubusercontent.com/zaimokuza-yoshiteru/dsh-theme-library/bbff7b1b34226906cf116a174f8a002a126aee7e/docs/assets/black-smoke-dark.gif
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: improve
     installCommand: improve
     topic: pass
@@ -46,6 +46,7 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.8 <0.2.0 未被本次检测范围 >=0.1.2-alpha.3 <0.2.0 完全覆盖（固定版本 3bbaa0ca7044e34f7264fc431a81edf7a1ffb984）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 3bbaa0ca7044e34f7264fc431a81edf7a1ffb984
     packageVersion: 0.2.1
@@ -63,6 +64,6 @@ license:
 featuredRank: 1024
 starsSnapshot: 1
 releaseUpdatedAt: 2026-09-01T21:42:39.620Z
-metadataUpdatedAt: 2026-09-01T21:42:39.620Z
+metadataUpdatedAt: 2026-09-08T21:48:46.205Z
 starsUpdatedAt: 2026-08-28T04:09:14.043Z
-updatedAt: 2026-09-01T21:42:39.620Z
+updatedAt: 2026-09-08T21:48:46.205Z

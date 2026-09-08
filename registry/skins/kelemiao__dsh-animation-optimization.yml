@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:kelemiao/dsh-animation-optimization#7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf
-  version: 0.2.0
-  commit: 7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf
+  target: github:kelemiao/dsh-animation-optimization#3c0a72ff54ddaf67c6cbcbc279deb712a856b6e5
+  version: 0.2.1
+  commit: 3c0a72ff54ddaf67c6cbcbc279deb712a856b6e5
   desktop:
     mode: managed
     registry: npm
@@ -32,6 +32,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/kelemiao/dsh-animation-optimization/7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf/assets/screenshots/1.png
   - https://raw.githubusercontent.com/kelemiao/dsh-animation-optimization/7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf/assets/screenshots/2.png
+listScreenshot: https://raw.githubusercontent.com/kelemiao/dsh-animation-optimization/7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf/assets/screenshots/1.png
 review:
   compatibility: verified
   preview: verified
@@ -46,21 +47,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf
-    packageVersion: 0.2.0
+    commit: 3c0a72ff54ddaf67c6cbcbc279deb712a856b6e5
+    packageVersion: 0.2.1
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:16.924Z
+    checkedAt: 2026-09-08T21:47:10.716Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1036
 starsSnapshot: 7
-releaseUpdatedAt: 2026-09-07T21:58:16.993Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-09-08T21:47:11.992Z
+metadataUpdatedAt: 2026-09-08T21:47:11.992Z
 starsUpdatedAt: 2026-09-07T21:58:16.993Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/kelemiao/dsh-animation-optimization/7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf/assets/screenshots/1.png
+updatedAt: 2026-09-08T21:47:11.992Z

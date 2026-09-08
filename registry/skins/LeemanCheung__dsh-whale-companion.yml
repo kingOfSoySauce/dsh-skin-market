@@ -29,18 +29,19 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/LeemanCheung/dsh-whale-companion/9fca0908e5a96412f2314c047c2a0bedcdd642b8/assets/screenshots/overview.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 0.1.2-rc.1 完全覆盖（固定版本 6b5152ec68136e486d4fc86558d386173fff1044）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 6b5152ec68136e486d4fc86558d386173fff1044
     packageVersion: 2.6.0
@@ -56,6 +57,6 @@ license:
 featuredRank: 110
 starsSnapshot: 2
 releaseUpdatedAt: 2026-09-06T21:12:44.069Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+metadataUpdatedAt: 2026-09-08T21:48:00.386Z
 starsUpdatedAt: 2026-08-25T07:11:10.340Z
-updatedAt: 2026-09-08T09:45:47.382Z
+updatedAt: 2026-09-08T21:48:00.386Z
