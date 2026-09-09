@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Zalpha263/dsh-ui-beautify#8b91be5091faf4bb18380343e8f1ee00be3758bf
-  version: 1.13.2
-  commit: 8b91be5091faf4bb18380343e8f1ee00be3758bf
+  target: github:Zalpha263/dsh-ui-beautify#42ee326e40aeb124046e9b2f8156274d264eeb5b
+  version: 1.15.1
+  commit: 42ee326e40aeb124046e9b2f8156274d264eeb5b
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -49,20 +49,20 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 8b91be5091faf4bb18380343e8f1ee00be3758bf
-    packageVersion: 1.13.2
+    commit: 42ee326e40aeb124046e9b2f8156274d264eeb5b
+    packageVersion: 1.15.1
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.7
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:39.377Z
+    checkedAt: 2026-09-08T21:48:11.570Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 998
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-07T21:58:39.456Z
-metadataUpdatedAt: 2026-09-07T21:58:39.456Z
+releaseUpdatedAt: 2026-09-08T21:48:11.690Z
+metadataUpdatedAt: 2026-09-08T21:48:11.690Z
 starsUpdatedAt: 2026-08-23T10:19:28.259Z
-updatedAt: 2026-09-07T21:58:39.456Z
+updatedAt: 2026-09-08T21:48:11.690Z

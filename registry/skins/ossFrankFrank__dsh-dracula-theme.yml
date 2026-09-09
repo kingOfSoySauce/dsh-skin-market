@@ -39,18 +39,19 @@ screenshots:
   - https://raw.githubusercontent.com/ossFrankFrank/dsh-dracula-theme/b8c7e809043296485ebff870a4c705e9139b3d5f/assets/preview.png
   - https://raw.githubusercontent.com/ossFrankFrank/dsh-dracula-theme/684d09a59a62e4180ac087918cb4f6d5aeffef9f/assets/preview.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 ^0.1.2-alpha.1 完全覆盖（固定版本 28e4621866680a241467fb7249bc07231afb8459）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 28e4621866680a241467fb7249bc07231afb8459
     packageVersion: 1.1.0
@@ -66,6 +67,6 @@ license:
 featuredRank: 186
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-31T23:12:03.606Z
-metadataUpdatedAt: 2026-08-31T23:12:03.606Z
+metadataUpdatedAt: 2026-09-08T21:47:42.220Z
 starsUpdatedAt: 2026-08-29T03:14:56.067Z
-updatedAt: 2026-08-31T23:12:03.606Z
+updatedAt: 2026-09-08T21:47:42.220Z

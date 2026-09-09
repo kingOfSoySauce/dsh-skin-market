@@ -22,6 +22,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
+  npm:
+    name: "@ash-qw/dsh-theme-prts"
+    version: 0.1.96
+    integrity: sha512-rvTtt7/exERQoYRgchobsdqapjEPWk6DJPS5ZaTXRv8jSWoLug2ttxjJ7ZPPXWYTWXWENZ7tyHGPwE4k3ZlQmQ==
+    repository: https://github.com/ash-qw/dsh-theme-prts
+    gitHead: 45daae7ff26f1d31111bc08f6d79c3224d74d5aa
 compatibility:
   dsh: unverified
   platform:
@@ -57,8 +63,8 @@ license:
   commercialUse: false
 featuredRank: 1090
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-07T21:58:56.672Z
+releaseUpdatedAt: 2026-09-08T21:48:50.683Z
 metadataUpdatedAt: 2026-09-08T03:10:45.087Z
 starsUpdatedAt: 2026-09-07T21:58:56.672Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T21:48:50.683Z
 listScreenshot: https://raw.githubusercontent.com/ash-qw/dsh-theme-prts/45daae7ff26f1d31111bc08f6d79c3224d74d5aa/docs/screenshots/prts-new-conversation-dark.png

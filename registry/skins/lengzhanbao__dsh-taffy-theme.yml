@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lengzhanbao/dsh-taffy-theme#ec93f4302880d1655480d06e12bb9f7f1434a1f6
+  target: github:lengzhanbao/dsh-taffy-theme#dbeb73fd2788358884512034d5d9b356d07a36c7
   version: 0.1.4
-  commit: ec93f4302880d1655480d06e12bb9f7f1434a1f6
+  commit: dbeb73fd2788358884512034d5d9b356d07a36c7
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -36,6 +36,7 @@ screenshots:
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/c72629384adb82b4c5e684e6a66dc11bf180f556/preview/dark.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/9236efc3bd279df3d732134e96b48192971bbbf6/preview/light.webp
   - https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/9236efc3bd279df3d732134e96b48192971bbbf6/preview/dark.webp
+listScreenshot: https://raw.githubusercontent.com/lengzhanbao/dsh-taffy-theme/dbeb73fd2788358884512034d5d9b356d07a36c7/preview/light-v2.webp
 review:
   compatibility: verified
   preview: verified
@@ -50,20 +51,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: ec93f4302880d1655480d06e12bb9f7f1434a1f6
+    commit: dbeb73fd2788358884512034d5d9b356d07a36c7
     packageVersion: 0.1.4
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-06T21:12:34.217Z
+    checkedAt: 2026-09-08T21:47:38.978Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1017
 starsSnapshot: 3
-releaseUpdatedAt: 2026-09-06T21:12:34.330Z
-metadataUpdatedAt: 2026-09-06T21:12:34.330Z
+releaseUpdatedAt: 2026-09-08T21:47:41.289Z
+metadataUpdatedAt: 2026-09-08T21:47:41.289Z
 starsUpdatedAt: 2026-08-29T03:14:54.482Z
-updatedAt: 2026-09-06T21:12:34.330Z
+updatedAt: 2026-09-08T21:47:41.289Z

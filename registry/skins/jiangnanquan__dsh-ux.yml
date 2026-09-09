@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:jiangnanquan/dsh-ux#9a2a16c57e05b051fc05ceea26cbcef90af60546
+  target: github:jiangnanquan/dsh-ux#429ccaa12f94b9c44c292cb934187ca1a7d5cd49
   version: 1.0.0
-  commit: 9a2a16c57e05b051fc05ceea26cbcef90af60546
+  commit: 429ccaa12f94b9c44c292cb934187ca1a7d5cd49
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,6 +28,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/jiangnanquan/dsh-ux/9a2a16c57e05b051fc05ceea26cbcef90af60546/screenshot.png
   - https://raw.githubusercontent.com/jiangnanquan/dsh-ux/9a2a16c57e05b051fc05ceea26cbcef90af60546/docs/images/tool-chain-multiline-capsules.png
+listScreenshot: https://raw.githubusercontent.com/jiangnanquan/dsh-ux/9a2a16c57e05b051fc05ceea26cbcef90af60546/screenshot.png
 review:
   compatibility: verified
   preview: verified
@@ -42,21 +43,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 9a2a16c57e05b051fc05ceea26cbcef90af60546
+    commit: 429ccaa12f94b9c44c292cb934187ca1a7d5cd49
     packageVersion: 1.0.0
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:16.809Z
+    checkedAt: 2026-09-08T21:47:08.885Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1034
 starsSnapshot: 8
-releaseUpdatedAt: 2026-09-07T21:58:16.872Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+releaseUpdatedAt: 2026-09-08T21:47:09.595Z
+metadataUpdatedAt: 2026-09-08T21:47:09.595Z
 starsUpdatedAt: 2026-09-07T21:58:16.872Z
-updatedAt: 2026-09-08T09:45:47.382Z
-listScreenshot: https://raw.githubusercontent.com/jiangnanquan/dsh-ux/9a2a16c57e05b051fc05ceea26cbcef90af60546/screenshot.png
+updatedAt: 2026-09-08T21:47:09.595Z

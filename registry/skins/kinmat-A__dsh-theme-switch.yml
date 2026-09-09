@@ -16,12 +16,16 @@ install:
   target: github:kinmat-A/dsh-theme-switch#320edb2601e4ff1d62ea8bb7bf14bb3a8d2c4d67
   version: 0.0.1
   commit: 320edb2601e4ff1d62ea8bb7bf14bb3a8d2c4d67
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.0.1-rc <2"
   platform:
     - web
 screenshots:
   - https://cdn.jsdelivr.net/gh/kinmat-A/dsh-theme-switch@main/docs/screenshot-zh.png
+listScreenshot: https://cdn.jsdelivr.net/gh/kinmat-A/dsh-theme-switch@main/docs/screenshot-zh.png
 review:
   compatibility: verified
   preview: verified
@@ -35,14 +39,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 320edb2601e4ff1d62ea8bb7bf14bb3a8d2c4d67
+    packageVersion: 0.0.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.0.1-rc <2"
+    mode: static
+    result: pass
+    checkedAt: 2026-09-08T21:47:59.528Z
+    findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 13
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16T12:33:06.282Z
-metadataUpdatedAt: 2026-08-20T06:32:47.666Z
+releaseUpdatedAt: 2026-09-08T21:47:59.938Z
+metadataUpdatedAt: 2026-09-08T21:47:59.938Z
 starsUpdatedAt: 2026-08-28T04:08:52.600Z
-updatedAt: 2026-08-28T04:08:52.600Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/kinmat-A__dsh-theme-switch/320edb2601e4ff1d62ea8bb7bf14bb3a8d2c4d67/c54a3ed814f2.png
+updatedAt: 2026-09-08T21:47:59.938Z

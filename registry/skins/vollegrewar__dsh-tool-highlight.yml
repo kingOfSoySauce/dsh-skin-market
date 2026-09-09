@@ -20,6 +20,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
+  npm:
+    name: dsh-tool-highlight
+    version: 0.2.6
+    integrity: sha512-benaFEDlgtLVBZu9/GDLLN/whjk6aDGbVHG775WaAgTZjh1FjVoyVeqg0mPzsiGLqT/Xw2JApHRAlffXUFyzAg==
+    repository: https://github.com/vollegrewar/dsh-tool-highlight
+    gitHead: f5f0e89101de1b24972f94ab0baf8cc0891f1baf
 compatibility:
   dsh: unverified
   platform:
@@ -53,8 +59,8 @@ license:
   commercialUse: true
 featuredRank: 1100
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-07T21:59:04.048Z
+releaseUpdatedAt: 2026-09-08T21:49:10.451Z
 metadataUpdatedAt: 2026-09-08T03:10:45.087Z
 starsUpdatedAt: 2026-09-07T21:59:04.048Z
-updatedAt: 2026-09-08T03:10:45.087Z
+updatedAt: 2026-09-08T21:49:10.451Z
 listScreenshot: https://raw.githubusercontent.com/vollegrewar/dsh-tool-highlight/f5f0e89101de1b24972f94ab0baf8cc0891f1baf/docs/preview.png

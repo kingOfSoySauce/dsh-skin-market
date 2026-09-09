@@ -16,18 +16,25 @@ modes:
   - light
   - dark
 install:
-  target: github:jinxlux/xiao-theme-dsh-ui-plugin#8397a209b025f9e6e4a46dd32733e53e6404529c
-  version: 0.7.1
-  commit: 8397a209b025f9e6e4a46dd32733e53e6404529c
+  target: github:jinxlux/xiao-theme-dsh-ui-plugin#01b2d7107c6cd8a6a8798fc94f5a2cf478a3496d
+  version: 0.8.0
+  commit: 01b2d7107c6cd8a6a8798fc94f5a2cf478a3496d
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
+  npm:
+    name: xiao-ui-theme-ts
+    version: 0.8.0
+    integrity: sha512-/tb4iNukhp66/63JATveG7bt3VLY7hk75J1I0QLD37zaeFEWrC+FvFhROSGIw3KifQvGouz4AksML7mSkX+yuw==
+    repository: https://github.com/jinxlux/xiao-theme-dsh-ui-plugin
+    gitHead: 01b2d7107c6cd8a6a8798fc94f5a2cf478a3496d
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://github.com/user-attachments/assets/3998f58b-53db-4349-80f3-3d993c6ad3c3
+listScreenshot: https://github.com/user-attachments/assets/3998f58b-53db-4349-80f3-3d993c6ad3c3
 review:
   compatibility: unverified
   preview: verified
@@ -45,12 +52,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 8397a209b025f9e6e4a46dd32733e53e6404529c
-    packageVersion: 0.7.1
+    commit: 01b2d7107c6cd8a6a8798fc94f5a2cf478a3496d
+    packageVersion: 0.8.0
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-09-07T21:58:25.320Z
+    checkedAt: 2026-09-08T21:47:38.393Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -59,8 +66,7 @@ license:
   commercialUse: true
 featuredRank: 1046
 starsSnapshot: 3
-releaseUpdatedAt: 2026-09-07T21:58:25.427Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+releaseUpdatedAt: 2026-09-08T21:47:39.305Z
+metadataUpdatedAt: 2026-09-08T21:47:39.305Z
 starsUpdatedAt: 2026-09-07T21:58:25.427Z
-updatedAt: 2026-09-08T09:45:47.382Z
-listScreenshot: https://github.com/user-attachments/assets/3998f58b-53db-4349-80f3-3d993c6ad3c3
+updatedAt: 2026-09-08T21:47:39.305Z
