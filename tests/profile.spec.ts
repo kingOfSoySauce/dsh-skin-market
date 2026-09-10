@@ -373,6 +373,30 @@ describe('profile state', () => {
     })
   })
 
+  it('explains &path: truncation when the reviewed subdirectory package is missing', () => {
+    const dir = fixture()
+    const commit = 'c'.repeat(40)
+    const skin = {
+      ...loadCatalog().skins[0],
+      package: '@scope/subdir-skin',
+      install: {
+        target: `github:example/monorepo#${commit}&path:/packages/skin`,
+        version: '1.0.0',
+        commit,
+      },
+    }
+    const wrongDir = join(dir, 'node_modules', 'monorepo-root')
+    mkdirSync(wrongDir, { recursive: true })
+    atomicWriteJson(join(wrongDir, 'package.json'), { name: 'monorepo-root', version: '9.9.9', dsh: { client: { platform: 'web' } } })
+
+    const result = validateInstalledSkin(dir, skin)
+    expect(result.ok).toBe(false)
+    expect(result.reason).toContain('manifest missing')
+    expect(result.reason).toContain('&path:')
+    expect(result.reason).toContain('截断')
+    expect(result.reason).not.toContain('请用市场一键安装')
+  })
+
   it('reports a broken bundle patch before registration mutates the profile', () => {
     const dir = fixture()
     const skin = loadCatalog().skins[0]

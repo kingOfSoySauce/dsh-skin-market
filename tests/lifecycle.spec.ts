@@ -53,6 +53,21 @@ function writeBundleRows(dir: string, skin: { package: string; install: { versio
   atomicWriteText(join(packageDir, 'cordis.patch.yml'), `- insert:\n${rows.map(row => `    - id: ${row.id}\n      name: ${JSON.stringify(row.name)}`).join('\n')}\n`)
 }
 
+
+function materializeReviewedSkin(targetDir: string, skin: { package: string; rowId: string; install: { version: string; target: string } }, bundle = true): void {
+  const manifestPath = join(targetDir, 'package.json')
+  const existing = existsSync(manifestPath)
+    ? JSON.parse(readFileSync(manifestPath, 'utf8')) as { dependencies?: Record<string, string> }
+    : {}
+  atomicWriteJson(manifestPath, { ...existing, dependencies: { ...existing.dependencies, [skin.package]: skin.install.target } })
+  if (bundle) writeBundlePackage(targetDir, skin)
+  else {
+    const packageDir = join(targetDir, 'node_modules', ...skin.package.split('/'))
+    mkdirSync(packageDir, { recursive: true })
+    atomicWriteJson(join(packageDir, 'package.json'), { name: skin.package, version: skin.install.version, dsh: { client: { platform: 'web' } } })
+  }
+}
+
 function syncPatchLockfile(dir: string): void {
   const workspace = parse(readFileSync(pnpmWorkspaceFile(dir), 'utf8')) as { patchedDependencies?: Record<string, unknown> }
   const patchedDependencies = Object.fromEntries(Object.entries(workspace.patchedDependencies ?? {}).flatMap(([key, value]) => {
@@ -400,13 +415,11 @@ describe('skin lifecycle', () => {
       attempts.push(args)
       if (args.includes('--dir')) {
         if (!args.includes('--config.minimumReleaseAge=0')) return { ...success(), exitCode: 1, stderr: 'published within the minimumReleaseAge cutoff' }
+        materializeReviewedSkin(args[args.indexOf('--dir') + 1]!, base, false)
         return success()
       }
       if (args[0] === 'add') {
-        atomicWriteJson(join(dir, 'package.json'), { dependencies: { [base.package]: base.install.target } })
-        const packageDir = join(dir, 'node_modules', ...base.package.split('/'))
-        mkdirSync(packageDir, { recursive: true })
-        atomicWriteJson(join(packageDir, 'package.json'), { name: base.package, version: base.install.version, dsh: { client: { platform: 'web' } } })
+        materializeReviewedSkin(dir, base, false)
       }
       return success()
     }
@@ -440,12 +453,10 @@ describe('skin lifecycle', () => {
       if (args.includes('--dir')) {
         const temporary = args[args.indexOf('--dir') + 1]!
         expect(readFileSync(join(temporary, 'pnpm-workspace.yaml'), 'utf8')).toContain(`${allowBuild}#path:/packages/dsh-web-ui-all`)
+        materializeReviewedSkin(temporary, skin, false)
       }
       if (args[0] === 'add' && !args.includes('--dir')) {
-        atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
-        const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
-        mkdirSync(packageDir, { recursive: true })
-        atomicWriteJson(join(packageDir, 'package.json'), { name: skin.package, version: skin.install.version, dsh: { client: { platform: 'web' } } })
+        materializeReviewedSkin(dir, skin, false)
       }
       return success()
     }
@@ -476,7 +487,10 @@ describe('skin lifecycle', () => {
     let compatibilityInstallCalls = 0
     let compatibilityInstallArgs: readonly string[] = []
     const runner: PluginRunner = async (_profile, args) => {
-      if (args.includes('--dir')) return success()
+      if (args.includes('--dir')) {
+        materializeReviewedSkin(args[args.indexOf('--dir') + 1]!, skin, false)
+        return success()
+      }
       if (args[0] === 'add') {
         atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
         const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
@@ -580,6 +594,10 @@ describe('skin lifecycle', () => {
     const runner: PluginRunner = async (_profile, args) => {
       installArgs.push(args)
       if (args[0] === 'install') syncPatchLockfile(dir)
+      if (args.includes('--dir')) {
+        materializeReviewedSkin(args[args.indexOf('--dir') + 1]!, { ...skin, install: { ...skin.install, target: skin.install.target } }, false)
+        return success()
+      }
       if (args[0] === 'add' && !args.includes('--dir')) {
         atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
         atomicWriteJson(join(packageDir, 'package.json'), { name: skin.package, version: skin.install.version, dsh: { client: { platform: 'web' } } })
@@ -651,6 +669,7 @@ describe('skin lifecycle', () => {
           return { ...success(), exitCode: 1, stderr: `ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED\n${buildKey} needs to execute build scripts but is not in allowBuilds` }
         }
         prefetchApprovals.push(readFileSync(workspaceFile, 'utf8'))
+        materializeReviewedSkin(temporary, skin, false)
         return success()
       }
       if (args[0] === 'add' && !rejected) {
@@ -658,10 +677,7 @@ describe('skin lifecycle', () => {
         return { ...success(), exitCode: 1, stderr: `ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED\n${buildKey} needs to execute build scripts but is not in allowBuilds` }
       }
       if (args[0] === 'add') {
-        atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
-        const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
-        mkdirSync(packageDir, { recursive: true })
-        atomicWriteJson(join(packageDir, 'package.json'), { name: skin.package, version: skin.install.version, dsh: { client: { platform: 'web' } } })
+        materializeReviewedSkin(dir, skin, false)
       }
       return success()
     }
@@ -700,13 +716,11 @@ describe('skin lifecycle', () => {
       if (args.includes('--dir')) {
         const temporary = args[args.indexOf('--dir') + 1]!
         expect(readFileSync(join(temporary, 'pnpm-workspace.yaml'), 'utf8')).toContain(buildKey)
+        materializeReviewedSkin(temporary, skin, false)
         return success()
       }
       if (args[0] === 'add') {
-        atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
-        const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
-        mkdirSync(packageDir, { recursive: true })
-        atomicWriteJson(join(packageDir, 'package.json'), { name: skin.package, version: skin.install.version, dsh: { client: { platform: 'web' } } })
+        materializeReviewedSkin(dir, skin, false)
       }
       return success()
     }
@@ -725,16 +739,16 @@ describe('skin lifecycle', () => {
     const skin = { ...base, id: 'ignored-build.skin', install: { ...base.install, allowBuild: undefined } }
     let rejected = false
     const runner: PluginRunner = async (_profile, args) => {
-      if (args.includes('--dir')) return success()
+      if (args.includes('--dir')) {
+        materializeReviewedSkin(args[args.indexOf('--dir') + 1]!, skin, false)
+        return success()
+      }
       if (args[0] === 'add' && !rejected) {
         rejected = true
         return { ...success(), exitCode: 1, stderr: 'ERR_PNPM_IGNORED_BUILDS\nIgnored build scripts: node-pty@1.1.0' }
       }
       if (args[0] === 'add') {
-        atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
-        const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
-        mkdirSync(packageDir, { recursive: true })
-        atomicWriteJson(join(packageDir, 'package.json'), { name: skin.package, version: skin.install.version, dsh: { client: { platform: 'web' } } })
+        materializeReviewedSkin(dir, skin, false)
       }
       return success()
     }
@@ -803,9 +817,11 @@ describe('skin lifecycle', () => {
     const runner: PluginRunner = async (_profile, args) => {
       const skin = lifecycle.catalog.find(item => args.includes(item.install.target) || args.includes(item.package))
       if (args[0] === 'add' && skin !== undefined) {
-        atomicWriteJson(join(dir, 'package.json'), { dependencies: { ...readDependencies(dir), [skin.package]: skin.install.target } })
-        writeBundlePackage(dir, skin)
-        entries.set(skin.rowId, { options: { id: skin.rowId, name: skin.rowId, disabled: true }, update: async function (value) { updates.push(`${skin.rowId}:${String(value.disabled)}`); this.options.disabled = value.disabled; this.fiber = value.disabled ? undefined : {} } })
+        const targetDir = args.includes('--dir') ? args[args.indexOf('--dir') + 1]! : dir
+        materializeReviewedSkin(targetDir, skin)
+        if (!args.includes('--dir')) {
+          entries.set(skin.rowId, { options: { id: skin.rowId, name: skin.rowId, disabled: true }, update: async function (value) { updates.push(`${skin.rowId}:${String(value.disabled)}`); this.options.disabled = value.disabled; this.fiber = value.disabled ? undefined : {} } })
+        }
       }
       if (args[0] === 'remove' && skin !== undefined) {
         const next = { ...readDependencies(dir) }
@@ -854,16 +870,18 @@ describe('skin lifecycle', () => {
     const runner: PluginRunner = async (_profile, args) => {
       const skin = lifecycle.catalog.find(item => args.includes(item.install.target) || args.includes(item.package))
       if (args[0] === 'add' && skin !== undefined) {
-        atomicWriteJson(join(dir, 'package.json'), { dependencies: { ...readDependencies(dir), [skin.package]: skin.install.target } })
-        writeBundlePackage(dir, skin)
-        entries.set(skin.rowId, {
-          options: { id: skin.rowId, name: skin.rowId, disabled: true },
-          update: async function (value) {
-            updates.push(`${skin.rowId}:${String(value.disabled)}`)
-            this.options.disabled = value.disabled
-            this.fiber = value.disabled ? undefined : {}
-          },
-        })
+        const targetDir = args.includes('--dir') ? args[args.indexOf('--dir') + 1]! : dir
+        materializeReviewedSkin(targetDir, skin)
+        if (!args.includes('--dir')) {
+          entries.set(skin.rowId, {
+            options: { id: skin.rowId, name: skin.rowId, disabled: true },
+            update: async function (value) {
+              updates.push(`${skin.rowId}:${String(value.disabled)}`)
+              this.options.disabled = value.disabled
+              this.fiber = value.disabled ? undefined : {}
+            },
+          })
+        }
       }
       return success()
     }
@@ -988,10 +1006,8 @@ describe('skin lifecycle', () => {
       const skin = lifecycle.catalog.find(item => args.includes(item.install.target) || args.includes(item.package))
       if (skin === undefined) return success()
       if (args[0] === 'add') {
-        atomicWriteJson(join(dir, 'package.json'), { dependencies: { ...readDependencies(dir), [skin.package]: skin.install.target } })
-        const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
-        mkdirSync(packageDir, { recursive: true })
-        atomicWriteJson(join(packageDir, 'package.json'), { name: skin.package, version: skin.install.version, dsh: { client: { platform: 'web' } } })
+        const targetDir = args.includes('--dir') ? args[args.indexOf('--dir') + 1]! : dir
+        materializeReviewedSkin(targetDir, skin, false)
       }
       if (args[0] === 'remove') {
         const next = { ...readDependencies(dir) }
@@ -1035,7 +1051,11 @@ describe('skin lifecycle', () => {
     atomicWriteText(profilePatchFile(dir), `- insert:\n    - id: ${skin.rowId}\n      name: another-plugin\n`)
     let liveAdd = 0
     const runner: PluginRunner = async (_profile, args) => {
-      if (args[0] === 'add' && !args.includes('--dir')) liveAdd += 1
+      if (args.includes('--dir')) {
+        materializeReviewedSkin(args[args.indexOf('--dir') + 1]!, skin)
+        return success()
+      }
+      if (args[0] === 'add') liveAdd += 1
       return success()
     }
     const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner }, [skin])
@@ -1172,7 +1192,13 @@ describe('skin lifecycle', () => {
       install: { ...one.install, target: `github:example/repo#${commit}&path:/two` },
     }
     const runner: PluginRunner = async (_profile, args) => {
-      if (args[0] === 'add' && args.includes('--dir')) return success()
+      if (args[0] === 'add' && args.includes('--dir')) {
+        const temporary = args[args.indexOf('--dir') + 1]!
+        const spec = args[1]!
+        const added = spec === one.install.target ? one : spec === two.install.target ? two : null
+        if (added !== null) materializeReviewedSkin(temporary, { package: added.package, rowId: added.rowId, install: { version: added.install.version, target: added.install.target } })
+        return success()
+      }
       if (args[0] === 'add') {
         const spec = args[1]!
         const dependencies = { ...readDependencies(dir) }
@@ -1278,7 +1304,10 @@ describe('skin lifecycle', () => {
     const calls: string[][] = []
     const runner: PluginRunner = async (_profile, args) => {
       calls.push([...args])
-      if (args[0] === 'add' && args.includes('--dir')) return success()
+      if (args[0] === 'add' && args.includes('--dir')) {
+        materializeReviewedSkin(args[args.indexOf('--dir') + 1]!, skin)
+        return success()
+      }
       if (args[0] === 'add' && args[1] === skin.install.target) {
         atomicWriteJson(join(dir, 'package.json'), {
           dependencies: { ...readDependencies(dir), [skin.package]: skin.install.target },
@@ -1415,7 +1444,13 @@ describe('skin lifecycle', () => {
       install: { target: `github:example/repo#${commit}&path:/two`, version: '1.0.0', commit },
     }
     const runner: PluginRunner = async (_profile, args) => {
-      if (args[0] === 'add' && args.includes('--dir')) return success()
+      if (args[0] === 'add' && args.includes('--dir')) {
+        const temporary = args[args.indexOf('--dir') + 1]!
+        const spec = args[1]!
+        const added = spec === owner.install.target ? owner : spec === other.install.target ? other : null
+        if (added !== null) materializeReviewedSkin(temporary, { package: added.package, rowId: added.rowId, install: { version: added.install.version, target: added.install.target } })
+        return success()
+      }
       if (args[0] === 'add') {
         const spec = args[1]!
         const added = spec === companion.target

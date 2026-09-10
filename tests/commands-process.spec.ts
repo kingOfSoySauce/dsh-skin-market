@@ -120,4 +120,85 @@ describe('plugin process termination', () => {
     expect(processBoundary.spawn).toHaveBeenCalledTimes(2)
     expect(vi.getTimerCount()).toBe(0)
   })
+
+  it('preserves &path: targets by spawning pnpm without the Windows cmd bridge', async () => {
+    usePlatform('win32')
+    const { runPluginCli } = await import('../src/commands.ts')
+    const target = 'github:owner/repo#' + 'a'.repeat(40) + '&path:/maid-atelier'
+    const pending = runPluginCli('web', ['add', target, '--prefer-offline'])
+    expect(processBoundary.spawn).toHaveBeenCalledTimes(1)
+    const [file, argv, options] = processBoundary.spawn.mock.calls[0]!
+    // No pnpm.exe in the fake win32 env → bare name fallback; still shell:false.
+    expect(file).toBe('pnpm')
+    expect(file).not.toBe('cmd.exe')
+    expect(argv).toEqual(expect.arrayContaining([target]))
+    expect((argv as string[]).filter(arg => arg.includes('&'))).toEqual([target])
+    expect(options).toMatchObject({ shell: false })
+    child.emit('close', 0)
+    await expect(pending).resolves.toMatchObject({ exitCode: 0, timedOut: false })
+  })
+
+  it('keeps non-& installs on the Windows cmd.exe bridge', async () => {
+    usePlatform('win32')
+    const { runPluginCli } = await import('../src/commands.ts')
+    const pending = runPluginCli('web', ['add', 'example-skin@1.0.0'])
+    expect(processBoundary.spawn).toHaveBeenCalledTimes(1)
+    const [file, argv, options] = processBoundary.spawn.mock.calls[0]!
+    expect(file).toBe(process.env.ComSpec ?? 'cmd.exe')
+    expect(argv[0]).toBe('/d')
+    expect(argv[1]).toBe('/s')
+    expect(argv[2]).toBe('/c')
+    expect(String(argv[3])).toContain('example-skin@1.0.0')
+    expect(String(argv[3])).not.toContain('&path:')
+    expect(options).toMatchObject({ shell: false, windowsVerbatimArguments: true })
+    child.emit('close', 0)
+    await expect(pending).resolves.toMatchObject({ exitCode: 0 })
+  })
+
+  it('maps &path: spawn ENOENT to the bilingual pnpm-binary hint', async () => {
+    usePlatform('win32')
+    const { runPluginCli, PNPM_DIRECT_SPAWN_ENOENT_HINT } = await import('../src/commands.ts')
+    const target = 'github:owner/repo#' + 'a'.repeat(40) + '&path:/maid-atelier'
+    const pending = runPluginCli('web', ['add', target])
+    const err = Object.assign(new Error('spawn pnpm ENOENT'), { code: 'ENOENT' })
+    child.emit('error', err)
+    child.emit('close', null)
+    await expect(pending).resolves.toMatchObject({
+      exitCode: null,
+      stderr: PNPM_DIRECT_SPAWN_ENOENT_HINT,
+    })
+  })
+
+  it('spawns resolved pnpm.exe with shell:false when present on win32', async () => {
+    usePlatform('win32')
+    const { mkdirSync, rmSync, writeFileSync } = await import('node:fs')
+    const { join } = await import('node:path')
+    const { tmpdir } = await import('node:os')
+    const root = join(tmpdir(), 'dsh-pnpm-exe-spawn')
+    rmSync(root, { recursive: true, force: true })
+    mkdirSync(root, { recursive: true })
+    const exe = join(root, 'pnpm.exe')
+    writeFileSync(exe, '')
+    const previous = process.env.PNPM_HOME
+    process.env.PNPM_HOME = root
+    try {
+      vi.resetModules()
+      const { runPluginCli } = await import('../src/commands.ts')
+      const target = 'github:owner/repo#' + 'b'.repeat(40) + '&path:/sub'
+      child = fakeChild()
+      processBoundary.spawn.mockImplementation((file: string) => file === 'taskkill' ? cleanup : child)
+      const pending = runPluginCli('web', ['add', target])
+      const [file, argv, options] = processBoundary.spawn.mock.calls[0]!
+      expect(file).toBe(exe)
+      expect(file).not.toBe('cmd.exe')
+      expect(argv).toEqual(expect.arrayContaining([target]))
+      expect(options).toMatchObject({ shell: false })
+      child.emit('close', 0)
+      await expect(pending).resolves.toMatchObject({ exitCode: 0 })
+    } finally {
+      if (previous === undefined) delete process.env.PNPM_HOME
+      else process.env.PNPM_HOME = previous
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
 })

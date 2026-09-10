@@ -1,6 +1,8 @@
+import { mkdirSync, rmSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { PassThrough } from 'node:stream'
 import { describe, expect, it, vi } from 'vitest'
-import { cmdCommandLine, commandError, createPnpmProvisioner, desktopRunner, normalizedEnvironment, pluginProcess, quoteCmdArg, type CommandResult, type DesktopPnpmLike } from '../src/commands.ts'
+import { cmdCommandLine, commandError, createPnpmProvisioner, desktopRunner, normalizedEnvironment, pluginProcess, PNPM_DIRECT_SPAWN_ENOENT_HINT, quoteCmdArg, resolvePnpmForDirectSpawn, toolSearchDirs, type CommandResult, type DesktopPnpmLike } from '../src/commands.ts'
 
 describe('Windows command shim quoting', () => {
   it('quotes cmd metacharacters as one argument', () => {
@@ -14,9 +16,65 @@ describe('Windows command shim quoting', () => {
     const target = 'github:owner/repo#' + 'a'.repeat(40) + '&path:/maid-atelier'
     const process = pluginProcess('web', ['add', target, '--prefer-offline'])
     expect(process.file).toBe('pnpm')
+    expect(process.viaShell).toBe(false)
+    expect(process.directPnpm).toBe(true)
     expect(process.argv).toEqual(['add', target, '--prefer-offline', '--dir', process.cwd])
     expect(process.argv.filter(arg => arg.includes('&'))).toEqual([target])
-    expect(pluginProcess('web', ['add', 'dskin@1.0.0']).argv).toContain('plugin')
+    const ordinary = pluginProcess('web', ['add', 'dskin@1.0.0'])
+    expect(ordinary.argv).toContain('plugin')
+    expect(ordinary.directPnpm).toBeUndefined()
+  })
+
+  it('resolves pnpm.exe or node+pnpm.cjs for Windows direct spawns', () => {
+    const root = join('/tmp', 'dsh-pnpm-resolve-fixture')
+    rmSync(root, { recursive: true, force: true })
+    mkdirSync(join(root, 'pnpm-home'), { recursive: true })
+    writeFileSync(join(root, 'pnpm-home', 'pnpm.exe'), '')
+    expect(resolvePnpmForDirectSpawn({
+      platform: 'win32',
+      env: { PNPM_HOME: join(root, 'pnpm-home'), PATH: '', LOCALAPPDATA: '', APPDATA: '' },
+      home: root,
+      execPath: join(root, 'node.exe'),
+    })).toEqual({ file: join(root, 'pnpm-home', 'pnpm.exe'), prefix: [] })
+
+    rmSync(root, { recursive: true, force: true })
+    mkdirSync(join(root, 'node_modules', 'pnpm', 'bin'), { recursive: true })
+    const cjs = join(root, 'node_modules', 'pnpm', 'bin', 'pnpm.cjs')
+    writeFileSync(cjs, '')
+    const execPath = join(root, 'node.exe')
+    expect(resolvePnpmForDirectSpawn({
+      platform: 'win32',
+      env: { PATH: root, PNPM_HOME: '', LOCALAPPDATA: '', APPDATA: '' },
+      home: root,
+      execPath,
+    })).toEqual({ file: execPath, prefix: [cjs] })
+
+    // .cmd alone must not be chosen for shell:false
+    rmSync(root, { recursive: true, force: true })
+    mkdirSync(join(root, 'npm'), { recursive: true })
+    writeFileSync(join(root, 'npm', 'pnpm.cmd'), '')
+    expect(resolvePnpmForDirectSpawn({
+      platform: 'win32',
+      env: { PATH: join(root, 'npm'), PNPM_HOME: '', LOCALAPPDATA: '', APPDATA: '' },
+      home: root,
+      execPath: join(root, 'node.exe'),
+    })).toEqual({ file: 'pnpm', prefix: [] })
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('lists Windows pnpm search dirs including PNPM_HOME', () => {
+    const local = 'C:/Users/x/AppData/Local'
+    const roaming = 'C:/Users/x/AppData/Roaming'
+    expect(toolSearchDirs('win32', {
+      PNPM_HOME: 'D:/pnpm',
+      LOCALAPPDATA: local,
+      APPDATA: roaming,
+    }, 'C:/Users/x', 'C:/nodejs')).toEqual([
+      'D:/pnpm',
+      join(local, 'pnpm'),
+      join(roaming, 'npm'),
+      'C:/nodejs',
+    ])
   })
 
   it('quotes spaces and embedded double quotes without changing plain tokens', () => {
@@ -46,6 +104,21 @@ describe('plugin command errors', () => {
   it('explains the platform command limit in the timeout error', () => {
     expect(commandError({ exitCode: null, timedOut: true, stdout: '', stderr: '' }))
       .toBe('插件命令执行超时，已停止；请复制日志查看失败步骤')
+  })
+
+  it('maps direct pnpm spawn ENOENT to actionable bilingual guidance', () => {
+    expect(commandError({
+      exitCode: null,
+      timedOut: false,
+      stdout: '',
+      stderr: 'spawn pnpm ENOENT',
+    })).toBe(PNPM_DIRECT_SPAWN_ENOENT_HINT)
+    expect(commandError({
+      exitCode: null,
+      timedOut: false,
+      stdout: '',
+      stderr: PNPM_DIRECT_SPAWN_ENOENT_HINT,
+    })).toBe(PNPM_DIRECT_SPAWN_ENOENT_HINT)
   })
 })
 
