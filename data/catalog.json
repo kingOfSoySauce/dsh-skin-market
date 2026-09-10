@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-09T21:43:23.197Z",
+  "generatedAt": "2026-09-10T08:01:36.716Z",
   "skins": [
     {
       "id": "carlown.majia7-skin",
@@ -19199,6 +19199,86 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a001625426f5c8bfc9f07a837ff53afe.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a001625426f5c8bfc9f07a837ff53afe.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "a39485972.sudo.dsh.skin.yumemizuki",
+      "name": {
+        "zh": "dsh-skin-Yumemizuki",
+        "en": "dsh-skin-Yumemizuki"
+      },
+      "author": "a39485972-sudo",
+      "description": "Genshin Yumemizuki Mizuki fan skin for the DSH web GUI: warm rosy day (paper-lamp studio) and night-sakura moon night, token-driven palette with layered backdrop",
+      "repo": "https://github.com/a39485972-sudo/dsh-skin-Yumemizuki",
+      "package": "@dsh-external/dsh-client-ui-skin-mizuki",
+      "rowId": "ui-skin-mizuki",
+      "category": "theme",
+      "tags": [
+        "appearance"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:a39485972-sudo/dsh-skin-Yumemizuki#204623ab9ae3a0835d168f803c2b23ed098c670c",
+        "version": "0.1.0",
+        "commit": "204623ab9ae3a0835d168f803c2b23ed098c670c"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/a39485972-sudo/dsh-skin-Yumemizuki/204623ab9ae3a0835d168f803c2b23ed098c670c/preview/light.png",
+        "https://raw.githubusercontent.com/a39485972-sudo/dsh-skin-Yumemizuki/204623ab9ae3a0835d168f803c2b23ed098c670c/preview/dark.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "CC-BY-NC-SA-4.0",
+        "commercialUse": false
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-09-10T08:01:34.330Z",
+      "metadataUpdatedAt": "2026-09-10T08:01:34.330Z",
+      "starsUpdatedAt": "2026-09-10T08:01:34.330Z",
+      "updatedAt": "2026-09-10T08:01:34.330Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5dcc5fa22ce45b7b23cb7945e9ce962f.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5dcc5fa22ce45b7b23cb7945e9ce962f.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5dcc5fa22ce45b7b23cb7945e9ce962f.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5dcc5fa22ce45b7b23cb7945e9ce962f.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d334b535420bfe4cbb3fad968ad6b2ec.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d334b535420bfe4cbb3fad968ad6b2ec.full.webp"
           }
         ]
       }
