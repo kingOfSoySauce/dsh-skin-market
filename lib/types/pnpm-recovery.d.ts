@@ -1,5 +1,5 @@
 import { type CommandResult } from './commands.ts';
-export type PnpmFailureKind = 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'command';
+export type PnpmFailureKind = 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'command';
 export interface PnpmFailure {
     kind: PnpmFailureKind;
     message: string;
