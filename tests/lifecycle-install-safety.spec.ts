@@ -5,7 +5,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { loadCatalog } from '../src/catalog.ts'
 import type { CommandOptions, CommandResult, PluginRunner } from '../src/commands.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
-import { atomicWriteJson, atomicWriteText, ensurePatchedDependency, profilePatchFile, readDependencies } from '../src/profile.ts'
+import { atomicWriteJson, atomicWriteText, ensurePatchedDependency, profilePatchFile, readDependencies, readMarketState } from '../src/profile.ts'
 import * as profile from '../src/profile.ts'
 import type { Operation, SkinEntry } from '../src/types.ts'
 
@@ -283,6 +283,100 @@ describe('installation boundaries', () => {
     await vi.advanceTimersByTimeAsync(100)
     expect(operation.phase).toBe('failed')
     expect(installs).toBe(2)
+    expect(readFileSync(join(dir, 'package.json'), 'utf8')).toBe(before)
+  })
+
+  it('rejects a truncated &path: prefetch that materializes the wrong root package', async () => {
+    const { dir, skin } = fixture()
+    const commit = 'b'.repeat(40)
+    skin.package = '@dsh-external/dsh-client-ui-skin-maid-atelier'
+    skin.install = {
+      target: `github:example/dsh-deep-whale#${commit}&path:/maid-atelier`,
+      version: '1.0.0',
+      commit,
+    }
+    const before = readFileSync(join(dir, 'package.json'), 'utf8')
+    const runner: PluginRunner = async (_profile, args) => {
+      const targetDir = args.includes('--dir') ? args[args.indexOf('--dir') + 1]! : dir
+      // Simulate shell/cmd truncating left-of-&: pnpm exits 0 with the repo root.
+      const wrong = 'dsh-deep-whale'
+      mkdirSync(join(targetDir, 'node_modules', wrong), { recursive: true })
+      atomicWriteJson(join(targetDir, 'package.json'), { dependencies: { [wrong]: `github:example/dsh-deep-whale#${commit}` } })
+      atomicWriteJson(join(targetDir, 'node_modules', wrong, 'package.json'), {
+        name: wrong,
+        version: '0.0.1',
+        dsh: { client: { platform: 'web' } },
+      })
+      return ok()
+    }
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner }, [skin])
+    const operation = lifecycle.begin('install', skin.id)
+    await until(() => operation.phase === 'failed')
+    expect(operation.message).toContain('manifest missing')
+    expect(operation.message).toContain('&path:')
+    expect(operation.message).not.toContain('请用市场一键安装')
+    expect(readFileSync(join(dir, 'package.json'), 'utf8')).toBe(before)
+    expect(existsSync(join(dir, 'node_modules', skin.package))).toBe(false)
+  })
+
+  it('rejects a truncated companion &path: add before claiming market ownership', async () => {
+    const { dir, skin } = fixture()
+    const commit = 'c'.repeat(40)
+    const companion = {
+      package: '@dsh-external/dsh-client-ui-skin-deep-whale-manager',
+      target: `github:example/dsh-deep-whale#${commit}&path:/skin-manager`,
+      version: '0.1.0',
+      commit,
+      rowId: 'ui-skin-deep-whale-manager',
+    }
+    skin.package = '@dsh-external/dsh-client-ui-skin-maid-atelier'
+    skin.rowId = 'ui-skin-maid-atelier'
+    skin.install = {
+      target: `github:example/dsh-deep-whale#${commit}&path:/maid-atelier`,
+      version: '1.0.0',
+      commit,
+      companions: [companion],
+    }
+    const before = readFileSync(join(dir, 'package.json'), 'utf8')
+    const runner: PluginRunner = async (_profile, args) => {
+      const targetDir = args.includes('--dir') ? args[args.indexOf('--dir') + 1]! : dir
+      const spec = args[1]!
+      if (args.includes('--dir')) {
+        // Prefetch of the main skin succeeds with the expected package.
+        const pkgDir = join(targetDir, 'node_modules', ...skin.package.split('/'))
+        mkdirSync(pkgDir, { recursive: true })
+        atomicWriteJson(join(targetDir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
+        atomicWriteJson(join(pkgDir, 'package.json'), {
+          name: skin.package,
+          version: skin.install.version,
+          dsh: { client: { platform: 'web' } },
+        })
+        return ok()
+      }
+      if (spec === companion.target) {
+        // Live companion add truncated: wrong root, missing companion package.
+        const wrong = 'dsh-deep-whale'
+        mkdirSync(join(dir, 'node_modules', wrong), { recursive: true })
+        atomicWriteJson(join(dir, 'package.json'), { dependencies: { [wrong]: `github:example/dsh-deep-whale#${commit}` } })
+        atomicWriteJson(join(dir, 'node_modules', wrong, 'package.json'), {
+          name: wrong,
+          version: '0.0.1',
+          dsh: { client: { platform: 'web' } },
+        })
+        return ok()
+      }
+      // Should not reach main live add if companion validation fails.
+      return { ...ok(), exitCode: 1, stderr: `unexpected live add ${spec}` }
+    }
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner }, [skin])
+    const operation = lifecycle.begin('install', skin.id)
+    await until(() => operation.phase === 'failed')
+    expect(operation.message).toContain(companion.package)
+    expect(operation.message).toMatch(/manifest missing|name mismatch/)
+    expect(operation.message).toContain('&path:')
+    expect(readMarketState(dir).managedCompanions).toBeUndefined()
+    expect(existsSync(join(dir, 'node_modules', ...companion.package.split('/')))).toBe(false)
+    // Recovery restores the pre-install package.json snapshot.
     expect(readFileSync(join(dir, 'package.json'), 'utf8')).toBe(before)
   })
 })
