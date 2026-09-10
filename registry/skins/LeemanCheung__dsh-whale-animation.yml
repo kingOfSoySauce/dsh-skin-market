@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:LeemanCheung/dsh-whale-animation#d6feab656b27e5387daaa1882442ab20af93b1e5
-  version: 0.8.0
-  commit: d6feab656b27e5387daaa1882442ab20af93b1e5
+  target: github:LeemanCheung/dsh-whale-animation#bc86d6ef7f4c9772fac18432c5bd153bf9ca5579
+  version: 0.7.1
+  commit: bc86d6ef7f4c9772fac18432c5bd153bf9ca5579
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,6 +28,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/d6feab656b27e5387daaa1882442ab20af93b1e5/docs/four-actions/preview.gif
+listScreenshot: https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/d6feab656b27e5387daaa1882442ab20af93b1e5/docs/four-actions/preview.gif
 review:
   compatibility: unverified
   preview: verified
@@ -43,20 +44,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: d6feab656b27e5387daaa1882442ab20af93b1e5
-    packageVersion: 0.8.0
+    commit: bc86d6ef7f4c9772fac18432c5bd153bf9ca5579
+    packageVersion: 0.7.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:17.618Z
+    checkedAt: 2026-09-10T21:34:17.770Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1037
 starsSnapshot: 7
-releaseUpdatedAt: 2026-09-07T21:58:17.701Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-09-10T21:34:19.749Z
+metadataUpdatedAt: 2026-09-10T21:34:19.749Z
 starsUpdatedAt: 2026-09-07T21:58:17.701Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/LeemanCheung/dsh-whale-animation/d6feab656b27e5387daaa1882442ab20af93b1e5/docs/four-actions/preview.gif
+updatedAt: 2026-09-10T21:34:19.749Z

@@ -19,9 +19,9 @@ modes:
   - light
   - dark
 install:
-  target: github:LAN-TINA-WS/dsh-gui-customization#9945cdb96449deafc764016a032b878299264872&path:/packages/dsh-gui-customization
-  version: 0.6.3
-  commit: 9945cdb96449deafc764016a032b878299264872
+  target: github:LAN-TINA-WS/dsh-gui-customization#11918fdb89b796b12d92c9a09e79dbf9d413df9a&path:/packages/dsh-gui-customization
+  version: 0.6.4
+  commit: 11918fdb89b796b12d92c9a09e79dbf9d413df9a
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
@@ -36,6 +36,7 @@ marketScreenshots:
 screenshots:
   - https://raw.githubusercontent.com/LAN-TINA-WS/dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/docs/screenshots/dsgirl-fashion-workshop.jpg
   - https://raw.githubusercontent.com/LAN-TINA-WS/dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/docs/screenshots/gui-customization.png
+listScreenshot: https://raw.githubusercontent.com/LAN-TINA-WS/dsh-gui-customization/11918fdb89b796b12d92c9a09e79dbf9d413df9a/docs/screenshots/dsgirl-fashion-workshop.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -51,19 +52,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 9945cdb96449deafc764016a032b878299264872
-    packageVersion: 0.6.3
+    commit: 11918fdb89b796b12d92c9a09e79dbf9d413df9a
+    packageVersion: 0.6.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T10:13:23.275Z
+    checkedAt: 2026-09-10T21:34:06.390Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 985
 starsSnapshot: 17
-releaseUpdatedAt: 2026-08-23T10:13:23.849Z
-metadataUpdatedAt: 2026-08-25T07:08:34.743Z
+releaseUpdatedAt: 2026-09-10T21:34:07.369Z
+metadataUpdatedAt: 2026-09-10T21:34:07.369Z
 starsUpdatedAt: 2026-08-26T03:22:45.523Z
-updatedAt: 2026-08-26T03:22:45.523Z
+updatedAt: 2026-09-10T21:34:07.369Z

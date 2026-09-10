@@ -17,6 +17,9 @@ install:
   target: github:a39485972-sudo/dsh-skin-Yumemizuki#204623ab9ae3a0835d168f803c2b23ed098c670c
   version: 0.1.0
   commit: 204623ab9ae3a0835d168f803c2b23ed098c670c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -24,6 +27,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/a39485972-sudo/dsh-skin-Yumemizuki/204623ab9ae3a0835d168f803c2b23ed098c670c/preview/light.png
   - https://raw.githubusercontent.com/a39485972-sudo/dsh-skin-Yumemizuki/204623ab9ae3a0835d168f803c2b23ed098c670c/preview/dark.png
+listScreenshot: https://raw.githubusercontent.com/a39485972-sudo/dsh-skin-Yumemizuki/204623ab9ae3a0835d168f803c2b23ed098c670c/preview/light.png
 review:
   compatibility: unverified
   preview: verified
@@ -39,12 +43,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 204623ab9ae3a0835d168f803c2b23ed098c670c
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-09-10T21:36:01.123Z
+    findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-10T08:01:34.330Z
-metadataUpdatedAt: 2026-09-10T08:01:34.330Z
+releaseUpdatedAt: 2026-09-10T21:36:02.325Z
+metadataUpdatedAt: 2026-09-10T21:36:02.325Z
 starsUpdatedAt: 2026-09-10T08:01:34.330Z
-updatedAt: 2026-09-10T08:01:34.330Z
+updatedAt: 2026-09-10T21:36:02.325Z

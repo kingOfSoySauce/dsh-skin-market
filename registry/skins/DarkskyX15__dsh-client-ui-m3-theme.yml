@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:DarkskyX15/dsh-client-ui-m3-theme#5b167b8e1b544aa6224c1bb32bbb4d9a149e5f34
-  version: 0.2.0
-  commit: 5b167b8e1b544aa6224c1bb32bbb4d9a149e5f34
+  target: github:DarkskyX15/dsh-client-ui-m3-theme#609570faa10357251b0e809c42cbf82d0b40e67a
+  version: 0.3.0
+  commit: 609570faa10357251b0e809c42cbf82d0b40e67a
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -29,35 +29,36 @@ compatibility:
 screenshots:
   - https://opengraph.githubassets.com/placeholder/darkskyx15.dsh-client-ui-m3-theme
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: repository-card
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 0.1.0-rc.6 完全覆盖（固定版本 609570faa10357251b0e809c42cbf82d0b40e67a）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 5b167b8e1b544aa6224c1bb32bbb4d9a149e5f34
-    packageVersion: 0.2.0
+    commit: 609570faa10357251b0e809c42cbf82d0b40e67a
+    packageVersion: 0.3.0
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.6
+    dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:31:04.229Z
+    checkedAt: 2026-09-10T21:35:25.922Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 78
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-23T05:31:04.318Z
-metadataUpdatedAt: 2026-08-23T05:31:04.318Z
+releaseUpdatedAt: 2026-09-10T21:35:26.047Z
+metadataUpdatedAt: 2026-09-10T21:35:26.047Z
 starsUpdatedAt: 2026-09-06T21:12:52.461Z
-updatedAt: 2026-09-06T21:12:52.461Z
+updatedAt: 2026-09-10T21:35:26.047Z
