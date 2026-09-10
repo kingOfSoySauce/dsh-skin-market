@@ -16,18 +16,12 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#64790d4624a299c2e44ca9bb08f300cca69748b8
+  target: github:webkubor/dsh-bloom-theme#951cd7e980f0f6a1f36307bb81f315428ba9c29c
   version: 0.9.0
-  commit: 64790d4624a299c2e44ca9bb08f300cca69748b8
+  commit: 951cd7e980f0f6a1f36307bb81f315428ba9c29c
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
-  npm:
-    name: "@kubor/dsh-bloom-theme"
-    version: 0.9.0
-    integrity: sha512-edRAe0iip59WhQqt3EUFIx++0N7DLnLdMmbQfB6XyMkTgm4wTB9xeHavsO/iHX3wEok+sscTXjM7tx6h45louQ==
-    repository: https://github.com/webkubor/dsh-bloom-theme
-    gitHead: 64790d4624a299c2e44ca9bb08f300cca69748b8
 compatibility:
   dsh: unverified
   platform:
@@ -41,6 +35,7 @@ screenshots:
   - https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/b356a6819bcf810755bc29fc0c2256b11f711f82/assets/screenshots/ui-ripple-light.png
   - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-mist-dark.png
   - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-cinnabar-dark.png
+listScreenshot: https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/bloom-banner.png
 review:
   compatibility: unverified
   preview: verified
@@ -56,19 +51,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 64790d4624a299c2e44ca9bb08f300cca69748b8
+    commit: 951cd7e980f0f6a1f36307bb81f315428ba9c29c
     packageVersion: 0.9.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-31T23:11:53.468Z
+    checkedAt: 2026-09-09T21:38:52.494Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 193
 starsSnapshot: 24
-releaseUpdatedAt: 2026-08-31T23:11:53.539Z
-metadataUpdatedAt: 2026-08-31T23:11:53.539Z
+releaseUpdatedAt: 2026-09-09T21:38:58.027Z
+metadataUpdatedAt: 2026-09-09T21:38:58.027Z
 starsUpdatedAt: 2026-09-08T21:46:57.311Z
-updatedAt: 2026-09-08T21:46:57.311Z
+updatedAt: 2026-09-09T21:38:58.027Z

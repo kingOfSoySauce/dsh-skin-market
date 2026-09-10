@@ -15,18 +15,12 @@ modes:
   - light
   - dark
 install:
-  target: github:tpmoonchefryan/dsh-joi-channel-theme#3c12a2706759104a94b51013d19bb3e9c3f2bef1
-  version: 0.1.10
-  commit: 3c12a2706759104a94b51013d19bb3e9c3f2bef1
+  target: github:tpmoonchefryan/dsh-joi-channel-theme#2df174ba43fced995bc0fb7a24535db470e7dbc2
+  version: 0.1.11
+  commit: 2df174ba43fced995bc0fb7a24535db470e7dbc2
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
-  npm:
-    name: dsh-joi-channel-theme
-    version: 0.1.10
-    integrity: sha512-SWZgWmidbzk+DDGfL5if4oTy6jOobRRdNuqlF7OHEzSLb8aiVId68X2WubX0QrBbZeyULeU68QZdwUH5bXPl6Q==
-    repository: https://github.com/tpmoonchefryan/dsh-joi-channel-theme
-    gitHead: 3c12a2706759104a94b51013d19bb3e9c3f2bef1
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
@@ -40,6 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/3c12a2706759104a94b51013d19bb3e9c3f2bef1/docs/working-flowers.png
   - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/settings-wardrobe.png
   - https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/8eb1379dd04f18592f7ae6b833d1890f57e26f24/docs/settings-wardrobe-dark.png
+listScreenshot: https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/2df174ba43fced995bc0fb7a24535db470e7dbc2/docs/new-chat-flowers.png
 review:
   compatibility: verified
   preview: verified
@@ -56,13 +51,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 3c12a2706759104a94b51013d19bb3e9c3f2bef1
-    packageVersion: 0.1.10
+    commit: 2df174ba43fced995bc0fb7a24535db470e7dbc2
+    packageVersion: 0.1.11
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.5
     mode: static
     result: unknown
-    checkedAt: 2026-08-23T05:27:59.234Z
+    checkedAt: 2026-09-09T21:38:55.769Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -71,7 +66,7 @@ license:
   commercialUse: true
 featuredRank: 94
 starsSnapshot: 18
-releaseUpdatedAt: 2026-08-23T05:27:59.315Z
-metadataUpdatedAt: 2026-08-23T05:27:59.315Z
+releaseUpdatedAt: 2026-09-09T21:39:03.132Z
+metadataUpdatedAt: 2026-09-09T21:39:03.132Z
 starsUpdatedAt: 2026-09-08T21:46:59.990Z
-updatedAt: 2026-09-08T21:46:59.990Z
+updatedAt: 2026-09-09T21:39:03.132Z

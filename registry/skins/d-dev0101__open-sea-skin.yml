@@ -18,18 +18,12 @@ modes:
   - light
   - dark
 install:
-  target: github:d-dev0101/open-sea-skin#5dd47e7c7b53fa6be410accc39d0d2ec8778194e
-  version: 1.2.3
-  commit: 5dd47e7c7b53fa6be410accc39d0d2ec8778194e
+  target: github:d-dev0101/open-sea-skin#58a1f490ca9af55febcbb5095908d5ca35db4248
+  version: 1.2.4
+  commit: 58a1f490ca9af55febcbb5095908d5ca35db4248
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  npm:
-    name: open-sea-skin
-    version: 1.2.3
-    integrity: sha512-KDeeNL9CXq9y/tKq3PgoQkYdib336FfnvOJcsLt8I/eQjvj66ihgk5AuyU5yhGnnhlZKPPetz8yrOx2AaDZaeA==
-    repository: https://github.com/d-dev0101/open-sea-skin
-    gitHead: 5dd47e7c7b53fa6be410accc39d0d2ec8778194e
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -43,6 +37,7 @@ screenshots:
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5bc053cb1ff2168695d4d0be710c68f8dd3ff0e2/docs/marketplace/open-sea-harness-cover.png
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5bc053cb1ff2168695d4d0be710c68f8dd3ff0e2/docs/screenshots/harness-dark-overview-40.gif
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/5bc053cb1ff2168695d4d0be710c68f8dd3ff0e2/docs/screenshots/harness-light-overview-40.gif
+listScreenshot: https://raw.githubusercontent.com/d-dev0101/open-sea-skin/58a1f490ca9af55febcbb5095908d5ca35db4248/docs/marketplace/open-sea-harness-cover.png
 review:
   compatibility: verified
   preview: verified
@@ -57,21 +52,21 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 5dd47e7c7b53fa6be410accc39d0d2ec8778194e
-    packageVersion: 1.2.3
+    commit: 58a1f490ca9af55febcbb5095908d5ca35db4248
+    packageVersion: 1.2.4
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:11.698Z
+    checkedAt: 2026-09-09T21:38:41.884Z
     findings: []
 license:
   code: MIT
   commercialUse: true
   notice: Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1.
 featuredRank: 0
-starsSnapshot: 281
-releaseUpdatedAt: 2026-09-07T21:58:11.809Z
-metadataUpdatedAt: 2026-09-07T21:58:11.809Z
-starsUpdatedAt: 2026-09-08T21:46:46.319Z
-updatedAt: 2026-09-08T21:46:46.319Z
+starsSnapshot: 342
+releaseUpdatedAt: 2026-09-09T21:38:49.877Z
+metadataUpdatedAt: 2026-09-09T21:38:49.877Z
+starsUpdatedAt: 2026-09-09T21:38:49.877Z
+updatedAt: 2026-09-09T21:38:49.877Z
