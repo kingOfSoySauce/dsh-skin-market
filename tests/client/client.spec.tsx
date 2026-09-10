@@ -40,6 +40,7 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', () => {
 })
 
 import { CATALOG_BATCH_SIZE, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, interceptNotice, isInterceptFailure, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
+import { MARKET_INSTALL_TROUBLESHOOT_URL, MARKET_MANUAL_UPDATE_URL } from '../../src/client/failure-help.ts'
 import { createClientSkinRuntime, missingPrimitives, switchClientSkin } from '../../src/client/index.ts'
 import { createSkinInstallCommand, createSkinInstallPrompt } from '../../src/client/submission.ts'
 import { setGeneratedMediaSources } from '../../src/media-preview.ts'
@@ -68,10 +69,11 @@ describe('client market', () => {
     }
     expect(isInterceptFailure(operation)).toBe(true)
     expect(isInterceptFailure({ ...operation, failure: { kind: 'network', message: '网络错误', action: 'retry' } })).toBe(false)
-    const notice = interceptNotice(operation, '液态玻璃')
+    const notice = interceptNotice(operation, '液态玻璃', skin)
     expect(notice.title).toBe('已拦截安装')
     expect(notice.what).toContain('缺少 DSH 用来注册插件的 ./cordis.patch.yml')
     expect(notice.why).toContain('files 白名单')
+    expect(notice.links).toEqual([{ href: `https://github.com/a/b/tree/${'a'.repeat(40)}`, label: '打开皮肤仓库' }])
   })
 
   it('asks before migrating the chosen skin and preserves the active-skin restart flow', async () => {
@@ -265,6 +267,51 @@ describe('client market', () => {
     expect(document.querySelector('[class*="homeHeader"] [role="status"] strong')?.textContent).toBe('正在下载皮肤市场')
     expect(document.querySelector('[class*="homeHeader"] [role="status"]')?.textContent).not.toContain('正在下载皮肤市场更新包')
     expect(operationRequests).toBeGreaterThan(0)
+  })
+
+  it('explains a market self-update store mismatch in a dialog with the troubleshooting README', async () => {
+    const clipboard = vi.fn(async () => undefined)
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText: clipboard } })
+    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runningAgentCount: 0, marketUpdateOperation: null }) }
+      if (url.endsWith('/market-update') && init?.method === 'POST') return { ok: true, status: 202, json: async () => ({ operationId: 'market-update-store' }) }
+      if (url.endsWith('/logs?operationId=market-update-store')) return { ok: true, text: async () => '# dsh-skin-market diagnostic log\nkind=unexpected-store' }
+      if (url.endsWith('/market-update/operations/market-update-store')) {
+        return { ok: true, json: async () => ({ id: 'market-update-store', phase: 'failed', startedAt: new Date().toISOString(), message: '当前 profile 的 node_modules 由另一代 pnpm store 链接', failure: { kind: 'unexpected-store', message: '当前 profile 的 node_modules 由另一代 pnpm store 链接' } }) }
+      }
+      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.15', latestVersion: '0.1.16', updateAvailable: true, operation: null }) }
+      throw new Error(`Unexpected request: ${url}`)
+    }))
+    render(<SkinMarketSection t={key => key} />)
+
+    fireEvent.click(await screen.findByRole('button', { name: '更新皮肤市场到 0.1.16' }))
+    const dialog = await screen.findByRole('dialog', { name: '皮肤市场更新失败' })
+    expect(dialog.textContent).toContain('另一代 pnpm store')
+    expect(within(dialog).getByRole('link', { name: '查看安装排查' }).getAttribute('href')).toBe(MARKET_INSTALL_TROUBLESHOOT_URL)
+    expect(within(dialog).queryByRole('link', { name: '查看手动更新' })).toBeNull()
+    expect(within(dialog).getByRole('button', { name: '复制日志' })).toBeTruthy()
+    expect(screen.queryByRole('status')).toBeNull()
+    fireEvent.click(within(dialog).getByRole('button', { name: '复制日志' }))
+    await waitFor(() => expect(clipboard).toHaveBeenCalledWith(expect.stringContaining('kind=unexpected-store')))
+  })
+
+  it('sends a generic market self-update failure to the manual update README', async () => {
+    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runningAgentCount: 0 }) }
+      if (url.endsWith('/market-update') && init?.method === 'POST') return { ok: true, status: 202, json: async () => ({ operationId: 'market-update-generic' }) }
+      if (url.endsWith('/market-update/operations/market-update-generic')) {
+        return { ok: true, json: async () => ({ id: 'market-update-generic', phase: 'failed', startedAt: new Date().toISOString(), message: 'plugin command exited 1', failure: { kind: 'command', message: 'plugin command exited 1' } }) }
+      }
+      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.15', latestVersion: '0.1.16', updateAvailable: true }) }
+      throw new Error(`Unexpected request: ${url}`)
+    }))
+    render(<SkinMarketSection t={key => key} />)
+    fireEvent.click(await screen.findByRole('button', { name: '更新皮肤市场到 0.1.16' }))
+    const dialog = await screen.findByRole('dialog', { name: '皮肤市场更新失败' })
+    expect(within(dialog).getByRole('link', { name: '查看手动更新' }).getAttribute('href')).toBe(MARKET_MANUAL_UPDATE_URL)
+    expect(within(dialog).queryByRole('link', { name: '查看安装排查' })).toBeNull()
   })
 
   it('turns an empty successful response into a useful Host update error', async () => {
@@ -963,7 +1010,7 @@ describe('client market', () => {
     const now = Date.now()
     const clock = vi.spyOn(Date, 'now').mockReturnValue(now)
     const clipboard = vi.fn(async () => undefined)
-    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: clipboard } })
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText: clipboard } })
     const operation = {
       id: 'install-live-log', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date(now - 60_000).toISOString(),
       step: '下载 npm 皮肤包', stepStartedAt: new Date(now - 1000).toISOString(), attempt: 2, pnpmStage: 'downloading',
@@ -1019,7 +1066,7 @@ describe('client market', () => {
     let operationRequests = 0
     const longMessage = '依赖 @deepseek-ai/dsh-compact 无法从 npm registry 找到；这是一个很长的 pnpm 诊断信息，需要完整展示而不能挤在横幅里。'
     const clipboard = vi.fn(async () => undefined)
-    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: clipboard } })
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText: clipboard } })
     const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
       if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation: null, runtime: dshRuntime }) }
@@ -1043,6 +1090,8 @@ describe('client market', () => {
     expect(dialog.textContent).not.toContain('diagnostic log')
     expect(screen.queryByRole('status')).toBeNull()
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
+    expect(within(dialog).getByRole('link', { name: '打开皮肤仓库' }).getAttribute('href')).toBe(`https://github.com/a/b/tree/${'a'.repeat(40)}`)
+    expect(within(dialog).getByRole('link', { name: '查看安装排查' }).getAttribute('href')).toBe(MARKET_INSTALL_TROUBLESHOOT_URL)
     fireEvent.click(within(dialog).getByRole('button', { name: '复制日志' }))
     await waitFor(() => expect(clipboard).toHaveBeenCalledWith(expect.stringContaining('diagnostic log')))
     expect(within(dialog).getByRole('button', { name: '日志已复制' })).toBeTruthy()
@@ -1053,7 +1102,7 @@ describe('client market', () => {
   it('explains a missing bundle patch as a skin packaging intercept', async () => {
     let operationRequests = 0
     const clipboard = vi.fn(async () => undefined)
-    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: clipboard } })
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText: clipboard } })
     vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
       if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation: null, runtime: dshRuntime }) }
@@ -1080,6 +1129,8 @@ describe('client market', () => {
     expect(dialog.textContent).not.toContain('链接依赖')
     expect(within(dialog).getByRole('button', { name: '确认' })).toBeTruthy()
     expect(within(dialog).getByRole('button', { name: '复制日志' })).toBeTruthy()
+    expect(within(dialog).getByRole('link', { name: '打开皮肤仓库' }).getAttribute('href')).toBe(`https://github.com/a/b/tree/${'a'.repeat(40)}`)
+    expect(within(dialog).queryByRole('link', { name: '查看安装排查' })).toBeNull()
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
     expect(screen.queryByRole('status')).toBeNull()
   })
@@ -1442,7 +1493,7 @@ describe('client market', () => {
 
   it('generates and copies an agent PR prompt without submitting to GitHub', async () => {
     const writeText = vi.fn(async () => undefined)
-    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText } })
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText } })
     vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
 
     render(<SkinMarketSection t={key => key} />)

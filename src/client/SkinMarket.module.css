@@ -462,6 +462,7 @@
 .interceptNotice { display: grid; gap: 8px; }
 .interceptNotice p { margin: 0; color: var(--dsw-alias-label-secondary); font-size: 13px; line-height: 21px; }
 .interceptNotice strong { display: block; margin-bottom: 4px; color: var(--dsw-alias-label-primary); font-size: 12px; font-weight: 550; }
+.interceptHelp { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 4px; }
 
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes skeletonShimmer { to { background-position: -200% 0; } }

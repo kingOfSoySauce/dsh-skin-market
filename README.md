@@ -57,6 +57,7 @@ dsh plugin --profile web add "dsh-skin-market@latest"
 
 ---
 
+<a id="install-troubleshooting"></a>
 ### 安装失败时，可以让 DSH 自己排查
 
 > 皮肤市场的安装、更新和卸载会调用 DSH 的 profile 插件管理器；当前 DSH 使用 `pnpm` 管理 profile 依赖。如果出现 `pnpm is not recognized`、`package manifest missing` 或 `allowBuilds` 相关报错，不必手动猜测 profile 状态。
@@ -66,6 +67,8 @@ dsh plugin --profile web add "dsh-skin-market@latest"
 > ```powershell
 > pnpm add "github:owner/repo#<commit>&path:/subdir" --dir $env:USERPROFILE\.dsh\profiles\web
 > ```
+>
+> 如果报错含 `ERR_PNPM_UNEXPECTED_STORE`，是 profile 的 `node_modules` 与当前 pnpm store 代际不一致（常见于本机同时装了 pnpm 10 / store v10 和 pnpm 11 / store v11）。在 **profile 目录内** 查看 `node_modules/.modules.yaml` 的 `packageManager` 和 `storeDir`，再对比同一目录下的 `pnpm --version` 与 `pnpm store path`；不要用 DSH 源码仓库目录里的结果来判断。用 `.modules.yaml` 记录的同一版 pnpm 重试，或用当前 pnpm 重建该 profile 的 `node_modules`。Windows 上 `dsh plugin add` 走 PATH 上的 pnpm，不会因为源码仓库写了 `"packageManager": "pnpm@11"` 就自动切换。
 
 <details>
 <summary><strong>点击展开排查提示词</strong></summary>
@@ -79,8 +82,8 @@ dsh plugin --profile web add "dsh-skin-market@latest"
 
 请严格按以下 3 步处理，并报告每一步的结果：
 
-1. 确认当前使用的 profile 名称和实际目录，并检查 DSH 进程自身是否能找到 pnpm（Windows 同时检查 pnpm.cmd）。如果 pnpm 不在 PATH，先说明如何安装或修复 pnpm，并停止把问题误判为 allowBuilds 配置问题。
-2. 只有确认 pnpm 可用后，才检查 profile 的 pnpm-workspace.yaml。若 pnpm 输出了构建审批 key，只把报错中完整、精确的 key 合并到 allowBuilds，对应值设为 true；不要启用 dangerouslyAllowAllBuilds，也不要放宽其他包。不要读取 .env、凭据或聊天记录。
+1. 确认当前使用的 profile 名称和实际目录，并检查 DSH 进程自身是否能找到 pnpm（Windows 同时检查 pnpm.cmd）。如果 pnpm 不在 PATH，先说明如何安装或修复 pnpm，并停止把问题误判为 allowBuilds 配置问题。如果报错含 ERR_PNPM_UNEXPECTED_STORE，再比较 profile 的 node_modules/.modules.yaml（packageManager、storeDir）与「在 profile 目录内」执行的 pnpm --version / pnpm store path；不要用 DSH 源码仓库目录里的 pnpm 版本来判断。用同一版 pnpm 重试，或用当前 pnpm 重建该 profile 的 node_modules。
+2. 只有确认 pnpm 可用且 store 一致后，才检查 profile 的 pnpm-workspace.yaml。若 pnpm 输出了构建审批 key，只把报错中完整、精确的 key 合并到 allowBuilds，对应值设为 true；不要启用 dangerouslyAllowAllBuilds，也不要放宽其他包。不要读取 .env、凭据或聊天记录。
 3. 重新执行原来的皮肤安装命令。完成后验证 profile package.json 依赖、node_modules 中目标包的 package.json、dsh.client/dsh.bundle 声明和 loader 注册项；如果仍失败，请指出具体失败阶段和完整错误，不要把 package manifest missing 当作根因。
 ```
 
@@ -94,6 +97,7 @@ Web 市场优先使用目录中已经核验的 npm 精确版本；没有合格 n
 
 遇到长时间等待时，请提供皮肤名、DSH/市场版本、操作系统及市场横幅中的“复制日志”。浏览器能够访问 GitHub，不能单独证明实际运行 DSH 的进程和 pnpm 已使用相同代理；也可能卡在依赖解析或构建阶段。
 
+<a id="manual-update"></a>
 ## 更新本插件
 
 #### 方式一，页面更新（推荐）：

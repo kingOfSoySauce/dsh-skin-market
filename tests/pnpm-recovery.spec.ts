@@ -155,4 +155,27 @@ describe('pnpm recovery', () => {
       failure: { kind: 'release-age' },
     } satisfies Partial<PnpmCommandError>)
   })
+
+  it('classifies a pnpm store generation mismatch and does not auto-retry it', async () => {
+    const failure = classifyPnpmFailure(failed([
+      'ERR_PNPM_UNEXPECTED_STORE',
+      'Unexpected store location',
+      'The dependencies at C:\\Users\\user\\.dsh\\profiles\\web\\node_modules are currently linked from the store at C:\\Users\\user\\AppData\\Local\\pnpm\\store\\v11',
+    ].join('\n')))
+    expect(failure.kind).toBe('unexpected-store')
+    expect(failure.message).toContain('另一代 pnpm store')
+    expect(failure.message).toContain('.modules.yaml')
+
+    const attempts: Array<readonly string[]> = []
+    await expect(runPnpmWithRecovery(['add', 'dsh-skin-market@0.1.50'], {
+      attempt: async args => {
+        attempts.push(args)
+        return failed('ERR_PNPM_UNEXPECTED_STORE\nUnexpected store location')
+      },
+    })).rejects.toMatchObject({
+      name: 'PnpmCommandError',
+      failure: { kind: 'unexpected-store' },
+    } satisfies Partial<PnpmCommandError>)
+    expect(attempts).toEqual([['add', 'dsh-skin-market@0.1.50']])
+  })
 })

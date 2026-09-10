@@ -164,7 +164,7 @@ export type OperationPhase = 'queued' | 'resolving' | 'downloading' | 'installin
 export type OperationRetryAction = 'retry' | 'approve-build'
 
 export interface OperationFailure {
-  kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'compatibility' | 'conflict' | 'command'
+  kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'compatibility' | 'conflict' | 'command'
   message: string
   packageName?: string
   action?: OperationRetryAction

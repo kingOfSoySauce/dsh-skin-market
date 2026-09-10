@@ -22,12 +22,16 @@ import { compareCatalogOrder, getCatalogListScreenshot, getCatalogScreenshotUrls
 import { generatedMediaFor, generatedMediaManifestUrl, generatedMediaUrl, parseGeneratedMediaManifest, previewSourceCandidates, setGeneratedMediaSources } from '../media-preview.ts'
 import { useLazyMedia } from '../media-visibility.ts'
 import { browserCatalogCache, type CatalogCache } from './catalog-cache.ts'
+import { interceptNotice, isInterceptFailure, marketUpdateNotice } from './failure-help.ts'
 import { CLI_INSTALL_WARNING, createSkinInstallCommand, createSkinInstallPrompt, createSubmissionPrompt, REGISTRY_REPOSITORY } from './submission.ts'
 import { switchClientSkin, type ClientSkinRuntime } from './index.ts'
 import { displayTitle, githubRepoLabel } from '../display-title.ts'
 import { assessCompatibility, type CompatibilityAssessment } from '../compatibility.ts'
 import { matchesCatalogSearch } from '../catalog-search.ts'
 import type { CatalogSkin, DshRuntime, InstalledClientPlugin, MarketHostKind, Operation, RuntimeSkin } from './types.ts'
+
+export { interceptNotice, isInterceptFailure, marketUpdateNotice }
+export type { InterceptNotice } from './failure-help.ts'
 
 export interface SkinMarketSectionProps {
   t: (key: string) => string
@@ -155,62 +159,6 @@ function recoveryActionLabel(action: 'retry' | 'approve-build' | undefined): str
   if (action === 'approve-build') return '批准构建并重试'
   if (action === 'retry') return '重试'
   return undefined
-}
-
-const operationKindLabels: Record<MutationKind, string> = {
-  install: '安装', activate: '启用', deactivate: '停用', pin: '设置常驻', unpin: '取消常驻', update: '更新', migrate: '换用 npm', uninstall: '卸载',
-}
-
-export interface InterceptNotice {
-  title: string
-  what: string
-  why: string
-}
-
-/** Terminal failures that the market stopped on purpose, not retryable network/build prompts. */
-export function isInterceptFailure(operation: Operation | null | undefined): boolean {
-  if (operation == null || operation.phase !== 'failed') return false
-  return operation.failure?.action !== 'retry' && operation.failure?.action !== 'approve-build'
-}
-
-export function interceptNotice(operation: Operation, skinName: string): InterceptNotice {
-  const raw = (operation.failure?.message ?? operation.message ?? '').trim()
-  const message = isDiagnosticDump(raw) ? '' : raw
-  const kind = operationKindLabels[operation.kind]
-  const missingPatch = /bundle patch is missing:\s*(\S+)/.exec(raw)
-  if (missingPatch !== null) {
-    return {
-      title: '已拦截安装',
-      what: `市场已经下载「${skinName}」，但安装包里缺少 DSH 用来注册插件的 ${missingPatch[1]}，所以没有改动你的 profile。`,
-      why: '这个皮肤的 package.json 声明了 dsh.bundle.patch，但打包进安装源时没有带上该文件。常见原因是 files 白名单漏了 cordis.patch.yml。这是皮肤仓库的打包问题，不是本机环境损坏；需要作者补上文件后重新发布，才能一键安装。',
-    }
-  }
-  if (operation.failure?.kind === 'conflict' || message.includes('发现插件安装冲突')) {
-    return {
-      title: '已拦截安装',
-      what: `「${skinName}」没有装上，因为当前 profile 里已有其他皮肤占用了相同的插件入口。`,
-      why: message || '请先在皮肤市场停用或卸载冲突的皮肤，然后再试。',
-    }
-  }
-  if (operation.failure?.kind === 'compatibility') {
-    return {
-      title: '已拦截安装',
-      what: `市场没有继续安装「${skinName}」。`,
-      why: message || '当前 DSH 版本不在该皮肤声明的兼容范围内。',
-    }
-  }
-  if (message.includes('目录元数据与包实际声明不一致')) {
-    return {
-      title: '已拦截安装',
-      what: `市场已经检查「${skinName}」的安装包，发现它和目录记录的插件入口不一致，所以没有写入 profile。`,
-      why: message,
-    }
-  }
-  return {
-    title: `${kind}未完成`,
-    what: `「${skinName}」的${kind}已停止，市场没有继续修改你的 profile。`,
-    why: message || '操作过程中出现错误。可复制日志后发给维护者。',
-  }
 }
 
 const mutationLabels: Record<MutationKind, string> = {
@@ -893,12 +841,14 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
       window.setTimeout(() => setCopiedLogId(current => current === operationId ? null : current), 2400)
     } catch (reason) {
       const message = reason instanceof Error ? reason.message : String(reason)
-      if (busy !== null && isInterceptFailure(busy) && busy.id === operationId) setCopyLogError(message)
+      const intercepting = (busy !== null && isInterceptFailure(busy) && busy.id === operationId)
+        || (marketOperation !== null && isInterceptFailure(marketOperation) && marketOperation.id === operationId)
+      if (intercepting) setCopyLogError(message)
       else setError(message)
     } finally {
       setCopyingLogId(current => current === operationId ? null : current)
     }
-  }, [busy])
+  }, [busy, marketOperation])
 
   const cancelOperation = useCallback(async () => {
     if (busy === null || busy.id === 'pending' || busy.cancelable !== true) return
@@ -1186,13 +1136,21 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
   }
 
   const interceptOperation = isInterceptFailure(busy) ? busy : null
-  const intercept = interceptOperation === null ? null : interceptNotice(
-    interceptOperation,
-    skins.find(skin => skin.id === interceptOperation.skinId)?.name.zh ?? interceptOperation.skinId,
-  )
+  const interceptSkin = interceptOperation === null ? undefined : skins.find(skin => skin.id === interceptOperation.skinId)
+  const marketInterceptOperation = interceptOperation === null && isInterceptFailure(marketOperation) ? marketOperation : null
+  const intercept = interceptOperation !== null
+    ? interceptNotice(interceptOperation, interceptSkin?.name.zh ?? interceptOperation.skinId, interceptSkin)
+    : marketInterceptOperation !== null
+      ? marketUpdateNotice(marketInterceptOperation)
+      : null
+  const interceptLogId = interceptOperation?.id ?? marketInterceptOperation?.id
   const dismissIntercept = () => {
     setCopyLogError(null)
-    setBusy(current => current !== null && isInterceptFailure(current) ? null : current)
+    if (interceptOperation !== null) setBusy(current => current !== null && isInterceptFailure(current) ? null : current)
+    if (marketInterceptOperation !== null) {
+      dismissedMarketOperationIds.current.add(marketInterceptOperation.id)
+      setMarketOperation(null)
+    }
   }
 
   const renderSkinOperationBanner = (className?: string) => {
@@ -1223,7 +1181,7 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
   }
 
   const renderMarketOperationBanner = (className?: string) => {
-    if (marketOperation === null || (marketOperation.phase === 'done' && pendingRestart !== null)) return null
+    if (marketOperation === null || marketInterceptOperation !== null || (marketOperation.phase === 'done' && pendingRestart !== null)) return null
     const failed = marketOperation.phase === 'failed'
     const terminal = marketOperation.phase === 'done' || failed || marketOperation.phase === 'cancelled'
     return <OperationBanner
@@ -1484,14 +1442,22 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
             variant="outline"
             size="sm"
             icon={<IconCopyOutline16 />}
-            disabled={interceptOperation === null || copyingLogId === interceptOperation.id}
-            onClick={() => { if (interceptOperation !== null) void copyOperationLog(interceptOperation.id) }}
-          >{copiedLogId === interceptOperation?.id ? '日志已复制' : copyingLogId === interceptOperation?.id ? '复制中…' : '复制日志'}</Button>
+            disabled={interceptLogId === undefined || copyingLogId === interceptLogId}
+            onClick={() => { if (interceptLogId !== undefined) void copyOperationLog(interceptLogId) }}
+          >{copiedLogId === interceptLogId ? '日志已复制' : copyingLogId === interceptLogId ? '复制中…' : '复制日志'}</Button>
           <Button variant="primary" size="sm" onClick={dismissIntercept}>确认</Button>
         </>}
       >
         {intercept !== null && <div className={css.interceptNotice}>
           <p><strong>为什么会这样</strong>{intercept.why}</p>
+          {intercept.links.length > 0 && <div className={css.interceptHelp}>
+            {intercept.links.map(link => (
+              <a key={link.href} className={css.repoLink} href={link.href} target="_blank" rel="noreferrer">
+                <MarkGithubIcon size={15} aria-hidden="true" />
+                {link.label}
+              </a>
+            ))}
+          </div>}
           {copyLogError !== null && <p className={css.notice} role="alert">{copyLogError}</p>}
         </div>}
       </Modal>

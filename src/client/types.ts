@@ -124,7 +124,7 @@ export interface Operation {
   lastOutputAt?: string
   pnpmStage?: 'resolving' | 'downloading' | 'linking' | 'building'
   failure?: {
-    kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'compatibility' | 'conflict' | 'command'
+    kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'compatibility' | 'conflict' | 'command'
     message: string
     packageName?: string
     action?: 'retry' | 'approve-build'
