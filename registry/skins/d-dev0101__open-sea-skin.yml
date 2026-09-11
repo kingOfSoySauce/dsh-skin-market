@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:d-dev0101/open-sea-skin#58a1f490ca9af55febcbb5095908d5ca35db4248
+  target: github:d-dev0101/open-sea-skin#6a7d93ecd33a159cdf6c72c4c4282403f6d0c17b
   version: 1.2.4
-  commit: 58a1f490ca9af55febcbb5095908d5ca35db4248
+  commit: 6a7d93ecd33a159cdf6c72c4c4282403f6d0c17b
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -43,30 +43,31 @@ review:
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 58a1f490ca9af55febcbb5095908d5ca35db4248
+    commit: 6a7d93ecd33a159cdf6c72c4c4282403f6d0c17b
     packageVersion: 1.2.4
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-09T21:38:41.884Z
+    checkedAt: 2026-09-11T21:40:55.541Z
     findings: []
 license:
   code: MIT
   commercialUse: true
   notice: Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1.
 featuredRank: 0
-starsSnapshot: 371
-releaseUpdatedAt: 2026-09-09T21:38:49.877Z
-metadataUpdatedAt: 2026-09-09T21:38:49.877Z
-starsUpdatedAt: 2026-09-10T21:33:49.108Z
-updatedAt: 2026-09-10T21:33:49.108Z
+starsSnapshot: 373
+releaseUpdatedAt: 2026-09-11T21:41:03.667Z
+metadataUpdatedAt: 2026-09-11T21:41:03.667Z
+starsUpdatedAt: 2026-09-11T21:41:03.667Z
+updatedAt: 2026-09-11T21:41:03.667Z
