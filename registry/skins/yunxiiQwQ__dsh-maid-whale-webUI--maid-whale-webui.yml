@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:yunxiiQwQ/dsh-maid-whale-webUI#2deb5f1e1aad4b067d53e0c7244726c844ef1087&path:/maid-whale-webui
+  target: github:yunxiiQwQ/dsh-maid-whale-webUI#5162a73c2b1e066a095c4bf218a1c305ee467cfb&path:/maid-whale-webui
   version: 0.1.1
-  commit: 2deb5f1e1aad4b067d53e0c7244726c844ef1087
+  commit: 5162a73c2b1e066a095c4bf218a1c305ee467cfb
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -37,6 +37,7 @@ screenshots:
   - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/4b46791a2eb868b8e081aab896d34dab124d4b62/maid-whale-webui/preview/pet-working.png
   - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/6ab5e7499ddf76c4fcf6d83421c08e967db1c2bc/maid-whale-webui/preview/light.webp
   - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/6ab5e7499ddf76c4fcf6d83421c08e967db1c2bc/maid-whale-webui/preview/dark.webp
+listScreenshot: https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-webUI/5162a73c2b1e066a095c4bf218a1c305ee467cfb/maid-whale-webui/preview/theme-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -52,19 +53,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 2deb5f1e1aad4b067d53e0c7244726c844ef1087
+    commit: 5162a73c2b1e066a095c4bf218a1c305ee467cfb
     packageVersion: 0.1.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-02T21:43:14.963Z
+    checkedAt: 2026-09-10T21:34:00.020Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 22
 starsSnapshot: 28
-releaseUpdatedAt: 2026-09-02T21:43:15.064Z
-metadataUpdatedAt: 2026-09-02T21:43:15.064Z
+releaseUpdatedAt: 2026-09-10T21:34:05.676Z
+metadataUpdatedAt: 2026-09-10T21:34:05.676Z
 starsUpdatedAt: 2026-09-09T21:38:51.197Z
-updatedAt: 2026-09-09T21:38:51.197Z
+updatedAt: 2026-09-10T21:34:05.676Z

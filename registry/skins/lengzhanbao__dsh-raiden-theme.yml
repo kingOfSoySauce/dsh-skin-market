@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lengzhanbao/dsh-raiden-theme#f4b9a1218818198ba3723df11bb8fd428e2df8c3
-  version: 0.1.1
-  commit: f4b9a1218818198ba3723df11bb8fd428e2df8c3
+  target: github:lengzhanbao/dsh-raiden-theme#4cae526d307a9b26f2fc71a3c450eb90dbd29d1a
+  version: 0.1.3
+  commit: 4cae526d307a9b26f2fc71a3c450eb90dbd29d1a
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -31,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/lengzhanbao/dsh-raiden-theme/f4b9a1218818198ba3723df11bb8fd428e2df8c3/preview/light.jpg
   - https://raw.githubusercontent.com/lengzhanbao/dsh-raiden-theme/f4b9a1218818198ba3723df11bb8fd428e2df8c3/preview/dark.jpg
+listScreenshot: https://raw.githubusercontent.com/lengzhanbao/dsh-raiden-theme/f4b9a1218818198ba3723df11bb8fd428e2df8c3/preview/light.jpg
 review:
   compatibility: verified
   preview: verified
@@ -45,21 +46,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: f4b9a1218818198ba3723df11bb8fd428e2df8c3
-    packageVersion: 0.1.1
+    commit: 4cae526d307a9b26f2fc71a3c450eb90dbd29d1a
+    packageVersion: 0.1.3
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:47.943Z
+    checkedAt: 2026-09-10T21:35:35.946Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1074
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-07T21:58:47.986Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-09-10T21:35:36.853Z
+metadataUpdatedAt: 2026-09-10T21:35:36.853Z
 starsUpdatedAt: 2026-09-07T21:58:47.986Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/lengzhanbao/dsh-raiden-theme/f4b9a1218818198ba3723df11bb8fd428e2df8c3/preview/light.jpg
+updatedAt: 2026-09-10T21:35:36.853Z

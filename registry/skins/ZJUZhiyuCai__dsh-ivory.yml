@@ -16,18 +16,18 @@ modes:
   - light
   - dark
 install:
-  target: github:ZJUZhiyuCai/dsh-ivory#6da0020d145213ce10433f28983e69cc598508c7
-  version: 0.2.7
-  commit: 6da0020d145213ce10433f28983e69cc598508c7
+  target: github:ZJUZhiyuCai/dsh-ivory#1613f0dc4bf91bf25d5d138899fd03609c78953e
+  version: 0.2.11
+  commit: 1613f0dc4bf91bf25d5d138899fd03609c78953e
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepack
   npm:
     name: dsh-ivory
-    version: 0.2.7
-    integrity: sha512-k5yEwkFKHNceqtOJhWIk2MTD4+v5Mw5tSyQFrZSkXPZsWQF4Z0ovL4H8lrPhw9IlDL6nA+BUVBtMS8UGOF4W3w==
+    version: 0.2.11
+    integrity: sha512-JJLsmOjMfJv9YhTX4NokFtcSMh6ojuOBtdG0F0TGGVnoFXpOjcpJTHtCekpnCCkO1FiIZGxcNzD1L7DXD0zXsA==
     repository: https://github.com/ZJUZhiyuCai/dsh-ivory
-    gitHead: 6da0020d145213ce10433f28983e69cc598508c7
+    gitHead: 1613f0dc4bf91bf25d5d138899fd03609c78953e
 compatibility:
   dsh: ">=0.1.0-rc.6 <0.2.0"
   platform:
@@ -41,34 +41,36 @@ screenshots:
   - https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/ac0c8d8f2b9734670ffe7acd891a4cb8f5325741/assets/hero-dark.png
   - https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/ac0c8d8f2b9734670ffe7acd891a4cb8f5325741/assets/conversation-light.png
   - https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/ac0c8d8f2b9734670ffe7acd891a4cb8f5325741/assets/mobile-light.png
+listScreenshot: https://raw.githubusercontent.com/ZJUZhiyuCai/dsh-ivory/1613f0dc4bf91bf25d5d138899fd03609c78953e/assets/hero-dark.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 <0.2.0 未被本次检测范围 >=0.1.2-rc.1 <0.2.0 完全覆盖（固定版本 1613f0dc4bf91bf25d5d138899fd03609c78953e）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 6da0020d145213ce10433f28983e69cc598508c7
-    packageVersion: 0.2.7
+    commit: 1613f0dc4bf91bf25d5d138899fd03609c78953e
+    packageVersion: 0.2.11
     scannerVersion: static-v2
-    dshVersion: ">=0.1.0-rc.6 <0.2.0"
+    dshVersion: ">=0.1.2-rc.1 <0.2.0"
     mode: static
     result: pass
-    checkedAt: 2026-08-30T01:19:47.332Z
+    checkedAt: 2026-09-10T21:35:18.997Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 129
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-30T01:19:47.498Z
-metadataUpdatedAt: 2026-08-30T01:19:47.498Z
+releaseUpdatedAt: 2026-09-10T21:35:20.711Z
+metadataUpdatedAt: 2026-09-10T21:35:20.711Z
 starsUpdatedAt: 2026-08-25T07:12:02.714Z
-updatedAt: 2026-08-30T01:19:47.498Z
+updatedAt: 2026-09-10T21:35:20.711Z
