@@ -16,13 +16,13 @@ modes:
   - light
   - dark
 install:
-  target: github:cdxDNRF/wishadel-theme#148fa19094acdbeab6893b28176bd23999bd7031
-  version: 0.7.0
-  commit: 148fa19094acdbeab6893b28176bd23999bd7031
+  target: github:cdxDNRF/wishadel-theme#8fef0e953e77b93421f36f7e4ceb7522d2fae6c2
+  version: 0.8.0
+  commit: 8fef0e953e77b93421f36f7e4ceb7522d2fae6c2
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/148fa19094acdbeab6893b28176bd23999bd7031"
+  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/8fef0e953e77b93421f36f7e4ceb7522d2fae6c2"
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -34,6 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/02cb6818155dc4816e4de5824a6d6d756b0ba87b/docs/screenshots/settings.png
   - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0/docs/screenshots/conversation.png
   - https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/ce8f1f11eb0ab29f9ed7e6ed277905a3d0390cf0/docs/screenshots/settings.png
+listScreenshot: https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/8fef0e953e77b93421f36f7e4ceb7522d2fae6c2/docs/screenshots/conversation.png
 review:
   compatibility: verified
   preview: verified
@@ -48,20 +49,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 148fa19094acdbeab6893b28176bd23999bd7031
-    packageVersion: 0.7.0
+    commit: 8fef0e953e77b93421f36f7e4ceb7522d2fae6c2
+    packageVersion: 0.8.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-06T21:12:39.383Z
+    checkedAt: 2026-09-12T21:25:06.904Z
     findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 99
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-06T21:12:39.384Z
-metadataUpdatedAt: 2026-09-06T21:12:39.384Z
+releaseUpdatedAt: 2026-09-12T21:25:10.923Z
+metadataUpdatedAt: 2026-09-12T21:25:10.923Z
 starsUpdatedAt: 2026-09-09T21:39:45.128Z
-updatedAt: 2026-09-09T21:39:45.128Z
+updatedAt: 2026-09-12T21:25:10.923Z

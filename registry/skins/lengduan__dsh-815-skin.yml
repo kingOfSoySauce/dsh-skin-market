@@ -15,9 +15,9 @@ tags:
 modes:
   - light
 install:
-  target: github:lengduan/dsh-815-skin#82fba2dfca4586e6c29ad39816f228b066619946
-  version: 0.1.10
-  commit: 82fba2dfca4586e6c29ad39816f228b066619946
+  target: github:lengduan/dsh-815-skin#761e3942738a0d1e3cdd4e974aef39b70570ffeb
+  version: 0.1.15
+  commit: 761e3942738a0d1e3cdd4e974aef39b70570ffeb
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -32,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/lengduan/dsh-815-skin/440fd4c44eed6bb1a7eeb57974c7cbe425a0ba42/docs/preview.png
   - https://raw.githubusercontent.com/lengduan/dsh-815-skin/5b0c843b8fb0e3e4a0a223209fb8768d3cd3275d/assets/nanjing-surrender-chen-jian.jpg
   - https://raw.githubusercontent.com/lengduan/dsh-815-skin/5b0c843b8fb0e3e4a0a223209fb8768d3cd3275d/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/lengduan/dsh-815-skin/761e3942738a0d1e3cdd4e974aef39b70570ffeb/assets/nanjing-surrender-chen-jian.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -49,12 +50,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 82fba2dfca4586e6c29ad39816f228b066619946
-    packageVersion: 0.1.10
+    commit: 761e3942738a0d1e3cdd4e974aef39b70570ffeb
+    packageVersion: 0.1.15
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-09-06T21:12:57.736Z
+    checkedAt: 2026-09-12T21:25:23.952Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -63,7 +64,7 @@ license:
   commercialUse: true
 featuredRank: 111
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-06T21:12:57.871Z
-metadataUpdatedAt: 2026-09-06T21:12:57.871Z
+releaseUpdatedAt: 2026-09-12T21:25:30.061Z
+metadataUpdatedAt: 2026-09-12T21:25:30.061Z
 starsUpdatedAt: 2026-08-25T07:11:10.990Z
-updatedAt: 2026-09-06T21:12:57.871Z
+updatedAt: 2026-09-12T21:25:30.061Z

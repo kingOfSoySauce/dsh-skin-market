@@ -17,21 +17,28 @@ modes:
   - light
   - dark
 install:
-  target: github:lkdxzhxi/dsh-glass-ui-theme#ef35fd6ed5c8821c1e79ee804e7384a206915c3f
-  version: 0.2.5
-  commit: ef35fd6ed5c8821c1e79ee804e7384a206915c3f
+  target: github:lkdxzhxi/dsh-glass-ui-theme#940c4495db199365fa788d47112ff858d66ce0ec
+  version: 0.2.6
+  commit: 940c4495db199365fa788d47112ff858d66ce0ec
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-glass-ui-theme
     packageVersion: 0.2.5
     integrity: sha512-0v+vyMLCxiso9CRNwzjZnOzKFcQ8+XFiWv4VkcBKmssRbJhbNlixa1ex0gmboWbIQsazDbBeTruYgPSqr/xZTQ==
+  npm:
+    name: dsh-glass-ui-theme
+    version: 0.2.6
+    integrity: sha512-i2yQELyMJxrvoR4tKqAx+LJxEwUJNXOmNYdy8D8O8GFxwNpNuCvEH0P9zFcJqKWH0lQTRytOSnU4Q5WMfU5KSg==
+    repository: https://github.com/lkdxzhxi/dsh-glass-ui-theme
+    gitHead: 940c4495db199365fa788d47112ff858d66ce0ec
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/lkdxzhxi/dsh-glass-ui-theme/ef35fd6ed5c8821c1e79ee804e7384a206915c3f/docs/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/lkdxzhxi/dsh-glass-ui-theme/ef35fd6ed5c8821c1e79ee804e7384a206915c3f/docs/screenshot.png
 review:
   compatibility: verified
   preview: verified
@@ -46,21 +53,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: ef35fd6ed5c8821c1e79ee804e7384a206915c3f
-    packageVersion: 0.2.5
+    commit: 940c4495db199365fa788d47112ff858d66ce0ec
+    packageVersion: 0.2.6
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:59:00.421Z
+    checkedAt: 2026-09-12T21:26:21.888Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1096
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-07T21:59:00.499Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-09-12T21:26:22.808Z
+metadataUpdatedAt: 2026-09-12T21:26:22.808Z
 starsUpdatedAt: 2026-09-07T21:59:00.499Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/lkdxzhxi/dsh-glass-ui-theme/ef35fd6ed5c8821c1e79ee804e7384a206915c3f/docs/screenshot.png
+updatedAt: 2026-09-12T21:26:22.808Z
