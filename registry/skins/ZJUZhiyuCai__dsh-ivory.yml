@@ -16,18 +16,18 @@ modes:
   - light
   - dark
 install:
-  target: github:ZJUZhiyuCai/dsh-ivory#1613f0dc4bf91bf25d5d138899fd03609c78953e
-  version: 0.2.11
-  commit: 1613f0dc4bf91bf25d5d138899fd03609c78953e
+  target: github:ZJUZhiyuCai/dsh-ivory#ecb4b4c2680b2261137f421ccbb72f946fee4dba
+  version: 0.2.12
+  commit: ecb4b4c2680b2261137f421ccbb72f946fee4dba
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepack
   npm:
     name: dsh-ivory
-    version: 0.2.11
-    integrity: sha512-JJLsmOjMfJv9YhTX4NokFtcSMh6ojuOBtdG0F0TGGVnoFXpOjcpJTHtCekpnCCkO1FiIZGxcNzD1L7DXD0zXsA==
+    version: 0.2.12
+    integrity: sha512-ltT5st5iLWVKu/b1nt0mO7jz9s0hR9gAvAWA4Ck65Ub/AA+iM++ES4kpRa9p1CFAPvfJCqi2jqo98mD3wcjdpQ==
     repository: https://github.com/ZJUZhiyuCai/dsh-ivory
-    gitHead: 1613f0dc4bf91bf25d5d138899fd03609c78953e
+    gitHead: ecb4b4c2680b2261137f421ccbb72f946fee4dba
 compatibility:
   dsh: ">=0.1.0-rc.6 <0.2.0"
   platform:
@@ -55,22 +55,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 <0.2.0 未被本次检测范围 >=0.1.2-rc.1 <0.2.0 完全覆盖（固定版本 1613f0dc4bf91bf25d5d138899fd03609c78953e）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 <0.2.0 未被本次检测范围 >=0.1.2-rc.1 <0.2.0 完全覆盖（固定版本 ecb4b4c2680b2261137f421ccbb72f946fee4dba）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 1613f0dc4bf91bf25d5d138899fd03609c78953e
-    packageVersion: 0.2.11
+    commit: ecb4b4c2680b2261137f421ccbb72f946fee4dba
+    packageVersion: 0.2.12
     scannerVersion: static-v2
     dshVersion: ">=0.1.2-rc.1 <0.2.0"
     mode: static
     result: pass
-    checkedAt: 2026-09-10T21:35:18.997Z
+    checkedAt: 2026-09-11T21:42:30.688Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 129
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-10T21:35:20.711Z
-metadataUpdatedAt: 2026-09-10T21:35:20.711Z
+releaseUpdatedAt: 2026-09-11T21:42:32.456Z
+metadataUpdatedAt: 2026-09-11T21:42:32.456Z
 starsUpdatedAt: 2026-08-25T07:12:02.714Z
-updatedAt: 2026-09-10T21:35:20.711Z
+updatedAt: 2026-09-11T21:42:32.456Z
