@@ -17,19 +17,19 @@ modes:
   - light
   - dark
 install:
-  target: github:AlexPeng07/dsh-custom-plugin#c7b13fccc917244bc7368bb563410679b51505dc
-  version: 0.4.1
-  commit: c7b13fccc917244bc7368bb563410679b51505dc
+  target: github:AlexPeng07/dsh-custom-plugin#30e025b3a768a5a4547c5485d0a20c578756a0ad
+  version: 0.4.2
+  commit: 30e025b3a768a5a4547c5485d0a20c578756a0ad
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare,prepublishOnly
-  allowBuild: "@alexpeng/dsh-custom-plugin@https://codeload.github.com/AlexPeng07/dsh-custom-plugin/tar.gz/c7b13fccc917244bc7368bb563410679b51505dc"
   npm:
     name: "@alexpeng/dsh-custom-plugin"
-    version: 0.4.1
-    integrity: sha512-pn1/0prErnIJZ1dt5w6HDDzTtQN3TQL/b9UYCZHnrmdGDVdEOYJ7TW+4DuNPVPk6gbFqkpqURs/QuViNyXi1PQ==
+    version: 0.4.2
+    integrity: sha512-+30FnjGDKCJBTr4xp5/4Wcq47L7UAQh9r8XX80x+OW0xo2cqOqaSDlBvz2PnYrRhv/MztbDW79qL9sPlAhjrKQ==
     repository: https://github.com/AlexPeng07/dsh-custom-plugin
-    gitHead: c7b13fccc917244bc7368bb563410679b51505dc
+    gitHead: 30e025b3a768a5a4547c5485d0a20c578756a0ad
+  allowBuild: "@alexpeng/dsh-custom-plugin@https://codeload.github.com/AlexPeng07/dsh-custom-plugin/tar.gz/30e025b3a768a5a4547c5485d0a20c578756a0ad"
 compatibility:
   dsh: ^0.1.1-rc.1
   platform:
@@ -54,13 +54,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: c7b13fccc917244bc7368bb563410679b51505dc
-    packageVersion: 0.4.1
+    commit: 30e025b3a768a5a4547c5485d0a20c578756a0ad
+    packageVersion: 0.4.2
     scannerVersion: static-v2
     dshVersion: ^0.1.1-rc.1
     mode: static
     result: unknown
-    checkedAt: 2026-09-09T21:39:14.276Z
+    checkedAt: 2026-09-12T21:23:48.997Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -68,8 +68,8 @@ license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 1038
-starsSnapshot: 6
-releaseUpdatedAt: 2026-09-10T21:34:24.899Z
-metadataUpdatedAt: 2026-09-09T21:39:18.523Z
-starsUpdatedAt: 2026-09-11T21:41:29.095Z
-updatedAt: 2026-09-11T21:41:29.095Z
+starsSnapshot: 5
+releaseUpdatedAt: 2026-09-12T21:23:53.574Z
+metadataUpdatedAt: 2026-09-12T21:23:53.574Z
+starsUpdatedAt: 2026-09-12T21:23:53.574Z
+updatedAt: 2026-09-12T21:23:53.574Z
