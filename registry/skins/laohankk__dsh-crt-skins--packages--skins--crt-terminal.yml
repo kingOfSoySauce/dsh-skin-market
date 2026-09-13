@@ -1,0 +1,24 @@
+# Thin registry entry for the DSH Skin Market.
+# Copy to the market repository as:
+#   registry/skins/laohankk__dsh-crt-skins--packages--skins--crt-terminal.yml
+# The market CI fills in install target, commit SHA, screenshots and health data.
+url: https://github.com/laohankk/dsh-crt-skins
+subpath: packages/skins/crt-terminal
+package: dsh-crt-terminal
+rowId: crt-terminal
+name:
+  zh: CRT 终端（琥珀）
+  en: CRT Terminal
+author: laohankk
+description: 琥珀磷光 CRT 终端主题：琥珀配色、磷光泛光、扫描线、曲面暗角、方角面板与角标，外加合成的终端音效。纯 CSS + Web Audio，无字体无音频文件。
+category: theme
+tags:
+  - token-theme
+  - retro
+  - motion
+modes:
+  - dark
+compatibility:
+  dsh: ^0.1.5-rc.1
+  platform:
+    - web
