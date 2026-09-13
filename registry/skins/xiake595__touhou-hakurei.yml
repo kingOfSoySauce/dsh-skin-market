@@ -19,9 +19,9 @@ modes:
   - light
   - dark
 install:
-  target: github:xiake595/touhou-hakurei#dae71e3b063f2051c590abbabaa1462cf2cd54ea
+  target: github:xiake595/touhou-hakurei#74ff7d05cd86425502176399c60ea7dbcad5333f
   version: 0.1.0
-  commit: dae71e3b063f2051c590abbabaa1462cf2cd54ea
+  commit: 74ff7d05cd86425502176399c60ea7dbcad5333f
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -36,6 +36,7 @@ screenshots:
   - https://raw.githubusercontent.com/xiake595/touhou-hakurei/dae71e3b063f2051c590abbabaa1462cf2cd54ea/screenshots/shot-dark-2.webp
   - https://raw.githubusercontent.com/xiake595/touhou-hakurei/dae71e3b063f2051c590abbabaa1462cf2cd54ea/screenshots/shot-light-1.webp
   - https://raw.githubusercontent.com/xiake595/touhou-hakurei/dae71e3b063f2051c590abbabaa1462cf2cd54ea/screenshots/shot-light-2.webp
+listScreenshot: https://raw.githubusercontent.com/xiake595/touhou-hakurei/74ff7d05cd86425502176399c60ea7dbcad5333f/preview/light.webp
 review:
   compatibility: unverified
   preview: verified
@@ -51,19 +52,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: dae71e3b063f2051c590abbabaa1462cf2cd54ea
+    commit: 74ff7d05cd86425502176399c60ea7dbcad5333f
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:27:37.689Z
+    checkedAt: 2026-09-13T21:23:42.814Z
     findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 39
 starsSnapshot: 20
-releaseUpdatedAt: 2026-08-23T05:27:37.744Z
-metadataUpdatedAt: 2026-08-23T05:27:37.744Z
+releaseUpdatedAt: 2026-09-13T21:23:44.308Z
+metadataUpdatedAt: 2026-09-13T21:23:44.308Z
 starsUpdatedAt: 2026-09-10T21:34:02.996Z
-updatedAt: 2026-09-10T21:34:02.996Z
+updatedAt: 2026-09-13T21:23:44.308Z

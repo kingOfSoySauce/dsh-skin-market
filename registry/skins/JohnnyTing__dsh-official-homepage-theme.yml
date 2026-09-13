@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:JohnnyTing/dsh-official-homepage-theme#3dc1ee72510db857257ff292d7f3aca1d3f46bb8
-  version: 1.0.6
-  commit: 3dc1ee72510db857257ff292d7f3aca1d3f46bb8
+  target: github:JohnnyTing/dsh-official-homepage-theme#7193e01da93777c1355620173c52b820ed43042d
+  version: 1.0.7
+  commit: 7193e01da93777c1355620173c52b820ed43042d
   desktop:
     mode: managed
     registry: npm
@@ -28,10 +28,10 @@ install:
     integrity: sha512-1cR3E5fn6HSTitI7gVEfBOrx5cejxvWuRqAfqpKxMRQWVXajUlcIhmcOCjEljIt2ZMvDTdCBzpVj22Kx2N0YTw==
   npm:
     name: dsh-official-homepage-theme
-    version: 1.0.6
-    integrity: sha512-1cR3E5fn6HSTitI7gVEfBOrx5cejxvWuRqAfqpKxMRQWVXajUlcIhmcOCjEljIt2ZMvDTdCBzpVj22Kx2N0YTw==
+    version: 1.0.7
+    integrity: sha512-NNSnPIeK5HHG1ogholwmUEcqtQz/FdJ3CG1UWsRRNlRQbdghf29v1q7/RPb5jaZw8rUz6SLCngqX0zPR05Iolw==
     repository: https://github.com/JohnnyTing/dsh-official-homepage-theme
-    gitHead: 3dc1ee72510db857257ff292d7f3aca1d3f46bb8
+    gitHead: 7193e01da93777c1355620173c52b820ed43042d
 compatibility:
   dsh: unverified
   platform:
@@ -39,6 +39,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif
   - https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.png
+listScreenshot: https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif
 review:
   compatibility: unverified
   preview: verified
@@ -54,20 +55,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 3dc1ee72510db857257ff292d7f3aca1d3f46bb8
-    packageVersion: 1.0.6
+    commit: 7193e01da93777c1355620173c52b820ed43042d
+    packageVersion: 1.0.7
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:18.300Z
+    checkedAt: 2026-09-13T21:23:47.063Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1035
 starsSnapshot: 8
-releaseUpdatedAt: 2026-09-08T21:47:10.596Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+releaseUpdatedAt: 2026-09-13T21:23:49.502Z
+metadataUpdatedAt: 2026-09-13T21:23:49.502Z
 starsUpdatedAt: 2026-09-10T21:34:16.723Z
-updatedAt: 2026-09-10T21:34:16.723Z
-listScreenshot: https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif
+updatedAt: 2026-09-13T21:23:49.502Z
