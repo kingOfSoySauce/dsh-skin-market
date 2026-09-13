@@ -1,0 +1,23 @@
+# Thin registry entry for the DSH Skin Market.
+# Copy to the market repository as:
+#   registry/skins/laohankk__dsh-crt-skins--packages--skins--pipboy-terminal.yml
+# The market CI fills in install target, commit SHA, screenshots and health data.
+url: https://github.com/laohankk/dsh-crt-skins
+subpath: packages/skins/pipboy-terminal
+package: dsh-pipboy-terminal
+rowId: pipboy-terminal
+name:
+  zh: Pip-Boy 终端
+  en: Pip-Boy Terminal
+author: laohankk
+description: 辐射 Pip-Boy 风格绿磷光主题：经典 Pip-Boy 绿、Vault-Tec 角框、玻璃反光（无扫描线无闪烁，画面稳定），成功/警告/错误三态分色，外加合成的终端音效。纯 CSS + Web Audio。
+category: theme
+tags:
+  - token-theme
+  - retro
+modes:
+  - dark
+compatibility:
+  dsh: ^0.1.5-rc.1
+  platform:
+    - web
