@@ -301,135 +301,135 @@ window.__ModuleLoader__.load({
 			document.head.appendChild(tag);
 		}
 		var SkinMarket_module_css_default = {
-			"browserModal": "VqXecW_browserModal",
-			"filterBar": "VqXecW_filterBar",
-			"cardMetaLine": "VqXecW_cardMetaLine",
-			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
-			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
-			"actionDivider": "VqXecW_actionDivider",
-			"skinCardBody": "VqXecW_skinCardBody",
-			"spin": "VqXecW_spin",
-			"catalogHeader": "VqXecW_catalogHeader",
-			"operationDismiss": "VqXecW_operationDismiss",
-			"interceptHelp": "VqXecW_interceptHelp",
-			"interceptNotice": "VqXecW_interceptNotice",
-			"skinList": "VqXecW_skinList",
-			"skeletonShimmer": "VqXecW_skeletonShimmer",
-			"homeActions": "VqXecW_homeActions",
-			"discoveryGrid": "VqXecW_discoveryGrid",
-			"cardInlineActions": "VqXecW_cardInlineActions",
-			"feedMeta": "VqXecW_feedMeta",
-			"homeContent": "VqXecW_homeContent",
-			"homeCardMedia": "VqXecW_homeCardMedia",
-			"browserHomeBack": "VqXecW_browserHomeBack",
-			"homeSearch": "VqXecW_homeSearch",
-			"lightboxNav": "VqXecW_lightboxNav",
-			"changelog": "VqXecW_changelog",
-			"srOnly": "VqXecW_srOnly",
-			"operationMessage": "VqXecW_operationMessage",
-			"cardAction": "VqXecW_cardAction",
-			"loadMoreHint": "VqXecW_loadMoreHint",
-			"sortButton": "VqXecW_sortButton",
-			"filters": "VqXecW_filters",
-			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
-			"homeOperation": "VqXecW_homeOperation",
-			"thumbnails": "VqXecW_thumbnails",
-			"operation": "VqXecW_operation",
-			"tags": "VqXecW_tags",
-			"hero": "VqXecW_hero",
-			"skinCardPreview": "VqXecW_skinCardPreview",
-			"homeGithubLabel": "VqXecW_homeGithubLabel",
-			"cardStars": "VqXecW_cardStars",
-			"description": "VqXecW_description",
-			"notice": "VqXecW_notice",
-			"error": "VqXecW_error",
-			"heroNav": "VqXecW_heroNav",
-			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
-			"lightboxNext": "VqXecW_lightboxNext",
-			"operationActions": "VqXecW_operationActions",
-			"homeSection": "VqXecW_homeSection",
-			"installOptions": "VqXecW_installOptions",
-			"filterPill": "VqXecW_filterPill",
-			"homeTitleRow": "VqXecW_homeTitleRow",
-			"operationMeta": "VqXecW_operationMeta",
-			"operationCopyLog": "VqXecW_operationCopyLog",
 			"homeError": "VqXecW_homeError",
-			"detailHeader": "VqXecW_detailHeader",
-			"homeUpdateAction": "VqXecW_homeUpdateAction",
-			"recommendations": "VqXecW_recommendations",
-			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
-			"homeCardCopy": "VqXecW_homeCardCopy",
-			"version": "VqXecW_version",
-			"thumbnailProgress": "VqXecW_thumbnailProgress",
-			"statusLabel": "VqXecW_statusLabel",
-			"homeCardFooter": "VqXecW_homeCardFooter",
-			"cardTitle": "VqXecW_cardTitle",
-			"catalogTitle": "VqXecW_catalogTitle",
-			"homeCardOpen": "VqXecW_homeCardOpen",
-			"cardMeta": "VqXecW_cardMeta",
-			"healthList": "VqXecW_healthList",
-			"lightboxStage": "VqXecW_lightboxStage",
-			"lightboxClose": "VqXecW_lightboxClose",
-			"catalogTitleMain": "VqXecW_catalogTitleMain",
-			"cardDescription": "VqXecW_cardDescription",
-			"listLoading": "VqXecW_listLoading",
-			"detailSkeleton": "VqXecW_detailSkeleton",
-			"operationCancel": "VqXecW_operationCancel",
-			"titleBlock": "VqXecW_titleBlock",
-			"submission": "VqXecW_submission",
-			"author": "VqXecW_author",
-			"actionRow": "VqXecW_actionRow",
-			"pinWarning": "VqXecW_pinWarning",
-			"installedRow": "VqXecW_installedRow",
-			"browserPanel": "VqXecW_browserPanel",
-			"homeSectionTitle": "VqXecW_homeSectionTitle",
-			"detail": "VqXecW_detail",
-			"marketUpdateButton": "VqXecW_marketUpdateButton",
-			"copyCapsule": "VqXecW_copyCapsule",
-			"homeOperations": "VqXecW_homeOperations",
-			"homeLoadMore": "VqXecW_homeLoadMore",
-			"installedMoreCard": "VqXecW_installedMoreCard",
-			"empty": "VqXecW_empty",
-			"mobileBack": "VqXecW_mobileBack",
-			"migrationSource": "VqXecW_migrationSource",
-			"skinCard": "VqXecW_skinCard",
-			"galleryGroup": "VqXecW_galleryGroup",
-			"catalog": "VqXecW_catalog",
-			"healthSuggestion": "VqXecW_healthSuggestion",
-			"lightboxPrev": "VqXecW_lightboxPrev",
-			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
-			"heroNext": "VqXecW_heroNext",
-			"aboutGrid": "VqXecW_aboutGrid",
-			"homeCardRepo": "VqXecW_homeCardRepo",
-			"cardActionProgress": "VqXecW_cardActionProgress",
-			"stars": "VqXecW_stars",
-			"previewPlaceholder": "VqXecW_previewPlaceholder",
-			"homeCardDescription": "VqXecW_homeCardDescription",
-			"homeLoading": "VqXecW_homeLoading",
-			"skeletonCard": "VqXecW_skeletonCard",
-			"home": "VqXecW_home",
-			"externalPlugin": "VqXecW_externalPlugin",
-			"heroOpen": "VqXecW_heroOpen",
-			"galleryProgress": "VqXecW_galleryProgress",
-			"repoMeta": "VqXecW_repoMeta",
-			"heroPrev": "VqXecW_heroPrev",
-			"repoLink": "VqXecW_repoLink",
-			"collectionTitle": "VqXecW_collectionTitle",
-			"loading": "VqXecW_loading",
-			"manualInstallGuide": "VqXecW_manualInstallGuide",
 			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
-			"root": "VqXecW_root",
-			"lightbox": "VqXecW_lightbox",
-			"skinAvatar": "VqXecW_skinAvatar",
-			"homeSubmitAction": "VqXecW_homeSubmitAction",
-			"browser": "VqXecW_browser",
+			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
+			"cardMeta": "VqXecW_cardMeta",
 			"homeGithubAction": "VqXecW_homeGithubAction",
+			"homeCardMedia": "VqXecW_homeCardMedia",
+			"catalogTitleMain": "VqXecW_catalogTitleMain",
+			"filterPill": "VqXecW_filterPill",
+			"aboutGrid": "VqXecW_aboutGrid",
+			"loading": "VqXecW_loading",
+			"homeOperation": "VqXecW_homeOperation",
+			"homeOperations": "VqXecW_homeOperations",
+			"empty": "VqXecW_empty",
+			"home": "VqXecW_home",
+			"sortButton": "VqXecW_sortButton",
+			"operationCancel": "VqXecW_operationCancel",
+			"homeGithubLabel": "VqXecW_homeGithubLabel",
+			"lightboxNext": "VqXecW_lightboxNext",
+			"cardActionProgress": "VqXecW_cardActionProgress",
+			"feedMeta": "VqXecW_feedMeta",
+			"skeletonCard": "VqXecW_skeletonCard",
+			"lightboxNav": "VqXecW_lightboxNav",
+			"notice": "VqXecW_notice",
+			"operationMessage": "VqXecW_operationMessage",
+			"homeActions": "VqXecW_homeActions",
+			"galleryProgress": "VqXecW_galleryProgress",
+			"skinList": "VqXecW_skinList",
+			"heroNav": "VqXecW_heroNav",
+			"homeCardFooter": "VqXecW_homeCardFooter",
+			"homeCardRepo": "VqXecW_homeCardRepo",
+			"cardAction": "VqXecW_cardAction",
+			"cardTitle": "VqXecW_cardTitle",
+			"installOptions": "VqXecW_installOptions",
+			"error": "VqXecW_error",
+			"operationMeta": "VqXecW_operationMeta",
+			"submission": "VqXecW_submission",
+			"detail": "VqXecW_detail",
+			"lightboxStage": "VqXecW_lightboxStage",
+			"marketUpdateButton": "VqXecW_marketUpdateButton",
+			"operation": "VqXecW_operation",
 			"homeCard": "VqXecW_homeCard",
-			"browserContent": "VqXecW_browserContent",
-			"thumbnailFrame": "VqXecW_thumbnailFrame",
-			"listSkeleton": "VqXecW_listSkeleton",
+			"browserPanel": "VqXecW_browserPanel",
+			"srOnly": "VqXecW_srOnly",
+			"hero": "VqXecW_hero",
+			"homeCardCopy": "VqXecW_homeCardCopy",
+			"discoveryGrid": "VqXecW_discoveryGrid",
+			"lightboxClose": "VqXecW_lightboxClose",
+			"statusLabel": "VqXecW_statusLabel",
+			"externalPlugin": "VqXecW_externalPlugin",
 			"homeHeader": "VqXecW_homeHeader",
-			"iconOnlyButton": "VqXecW_iconOnlyButton"
+			"skinCardPreview": "VqXecW_skinCardPreview",
+			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
+			"cardStars": "VqXecW_cardStars",
+			"cardMetaLine": "VqXecW_cardMetaLine",
+			"galleryGroup": "VqXecW_galleryGroup",
+			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
+			"titleBlock": "VqXecW_titleBlock",
+			"healthList": "VqXecW_healthList",
+			"detailSkeleton": "VqXecW_detailSkeleton",
+			"skeletonShimmer": "VqXecW_skeletonShimmer",
+			"actionRow": "VqXecW_actionRow",
+			"browserHomeBack": "VqXecW_browserHomeBack",
+			"homeCardOpen": "VqXecW_homeCardOpen",
+			"skinCard": "VqXecW_skinCard",
+			"author": "VqXecW_author",
+			"iconOnlyButton": "VqXecW_iconOnlyButton",
+			"heroOpen": "VqXecW_heroOpen",
+			"homeContent": "VqXecW_homeContent",
+			"catalogHeader": "VqXecW_catalogHeader",
+			"lightboxPrev": "VqXecW_lightboxPrev",
+			"copyCapsule": "VqXecW_copyCapsule",
+			"homeCardDescription": "VqXecW_homeCardDescription",
+			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
+			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
+			"repoMeta": "VqXecW_repoMeta",
+			"repoLink": "VqXecW_repoLink",
+			"homeLoading": "VqXecW_homeLoading",
+			"interceptHelp": "VqXecW_interceptHelp",
+			"homeSearch": "VqXecW_homeSearch",
+			"operationActions": "VqXecW_operationActions",
+			"actionDivider": "VqXecW_actionDivider",
+			"operationCopyLog": "VqXecW_operationCopyLog",
+			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
+			"detailHeader": "VqXecW_detailHeader",
+			"mobileBack": "VqXecW_mobileBack",
+			"thumbnailProgress": "VqXecW_thumbnailProgress",
+			"healthSuggestion": "VqXecW_healthSuggestion",
+			"recommendations": "VqXecW_recommendations",
+			"catalog": "VqXecW_catalog",
+			"homeSection": "VqXecW_homeSection",
+			"thumbnailFrame": "VqXecW_thumbnailFrame",
+			"tags": "VqXecW_tags",
+			"collectionTitle": "VqXecW_collectionTitle",
+			"homeSubmitAction": "VqXecW_homeSubmitAction",
+			"heroPrev": "VqXecW_heroPrev",
+			"browser": "VqXecW_browser",
+			"catalogTitle": "VqXecW_catalogTitle",
+			"manualInstallGuide": "VqXecW_manualInstallGuide",
+			"browserModal": "VqXecW_browserModal",
+			"filters": "VqXecW_filters",
+			"root": "VqXecW_root",
+			"version": "VqXecW_version",
+			"interceptNotice": "VqXecW_interceptNotice",
+			"homeSectionTitle": "VqXecW_homeSectionTitle",
+			"skinCardBody": "VqXecW_skinCardBody",
+			"cardDescription": "VqXecW_cardDescription",
+			"cardInlineActions": "VqXecW_cardInlineActions",
+			"heroNext": "VqXecW_heroNext",
+			"skinAvatar": "VqXecW_skinAvatar",
+			"changelog": "VqXecW_changelog",
+			"previewPlaceholder": "VqXecW_previewPlaceholder",
+			"filterBar": "VqXecW_filterBar",
+			"pinWarning": "VqXecW_pinWarning",
+			"lightbox": "VqXecW_lightbox",
+			"spin": "VqXecW_spin",
+			"homeUpdateAction": "VqXecW_homeUpdateAction",
+			"installedRow": "VqXecW_installedRow",
+			"listSkeleton": "VqXecW_listSkeleton",
+			"homeLoadMore": "VqXecW_homeLoadMore",
+			"description": "VqXecW_description",
+			"stars": "VqXecW_stars",
+			"loadMoreHint": "VqXecW_loadMoreHint",
+			"installedMoreCard": "VqXecW_installedMoreCard",
+			"operationDismiss": "VqXecW_operationDismiss",
+			"migrationSource": "VqXecW_migrationSource",
+			"listLoading": "VqXecW_listLoading",
+			"homeTitleRow": "VqXecW_homeTitleRow",
+			"browserContent": "VqXecW_browserContent",
+			"thumbnails": "VqXecW_thumbnails"
 		};
 		//#endregion
 		//#region \0dsh-skin-market-css:/Users/leon/Code/liang-intensity-calibrator/code/dsh-skin-market/src/client/media-hover.module.css.mjs
@@ -1292,6 +1292,32 @@ url: https://github.com/<owner>/<repo>
 			const url = new URL(href);
 			url.searchParams.set(RELOAD_PARAM, instanceId);
 			return url.toString();
+		}
+		function restartDocumentProbeUrl(href) {
+			const url = new URL(href);
+			url.searchParams.delete(RELOAD_PARAM);
+			return url.toString();
+		}
+		/**
+		* DSH answers named plugin routes as soon as they register, but `/` 404s
+		* until frontend-static claims the fallback seat. Wait for both a new
+		* instanceId and a 200 on the current document before cache-busting.
+		*/
+		async function waitForRestartDocument(input) {
+			const now = input.now ?? Date.now;
+			const sleep = input.sleep ?? ((ms) => new Promise((resolve) => setTimeout(resolve, ms)));
+			const deadline = now() + (input.deadlineMs ?? 9e4);
+			const pollMs = input.pollMs ?? 500;
+			const probe = restartDocumentProbeUrl(input.href);
+			while (now() < deadline) {
+				await sleep(pollMs);
+				try {
+					const next = await input.fetchState();
+					if (next.instanceId === input.acceptedInstanceId) continue;
+					if ((await input.fetchDocument(probe)).ok) return restartReloadUrl(input.href, next.instanceId);
+				} catch {}
+			}
+			throw new Error("DeepSeek Harness 重启超时，请手动刷新页面");
 		}
 		function restoreMarketStyleOrder(root = document, marker = SkinMarket_module_css_default.filterPill) {
 			for (const style of root.querySelectorAll("style")) if (style.dataset.plugin === "dsh-skin-market" || style.textContent?.includes(`.${marker}`) === true) style.parentNode?.appendChild(style);
@@ -2194,18 +2220,14 @@ url: https://github.com/<owner>/<repo>
 						headers: { "content-type": "application/json" },
 						body: JSON.stringify(target.kind === "market-update" ? { reason: "market-update" } : { skinId: target.skinId })
 					});
-					const deadline = Date.now() + 9e4;
-					while (Date.now() < deadline) {
-						await new Promise((resolve) => setTimeout(resolve, 500));
-						try {
-							const next = await json("/dsh-skin-market/state", { cache: "no-store" });
-							if (next.instanceId !== accepted.instanceId) {
-								window.location.replace(restartReloadUrl(window.location.href, next.instanceId));
-								return;
-							}
-						} catch {}
-					}
-					throw new Error("DeepSeek Harness 重启超时，请手动刷新页面");
+					window.location.replace(await waitForRestartDocument({
+						acceptedInstanceId: accepted.instanceId,
+						href: window.location.href,
+						fetchState: () => json("/dsh-skin-market/state", { cache: "no-store" }),
+						fetchDocument: async (url) => {
+							return { ok: (await fetch(url, { cache: "no-store" })).ok };
+						}
+					}));
 				} catch (reason) {
 					setConfirmRestart(false);
 					setCompatibilityWarning(null);

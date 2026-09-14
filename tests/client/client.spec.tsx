@@ -39,7 +39,7 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', () => {
   }
 })
 
-import { CATALOG_BATCH_SIZE, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, interceptNotice, isInterceptFailure, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
+import { CATALOG_BATCH_SIZE, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, interceptNotice, isInterceptFailure, restartDocumentProbeUrl, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection, waitForRestartDocument } from '../../src/client/SkinMarketSection.tsx'
 import { MARKET_INSTALL_TROUBLESHOOT_URL, MARKET_MANUAL_UPDATE_URL } from '../../src/client/failure-help.ts'
 import { createClientSkinRuntime, missingPrimitives, switchClientSkin } from '../../src/client/index.ts'
 import { createSkinInstallCommand, createSkinInstallPrompt } from '../../src/client/submission.ts'
@@ -326,6 +326,49 @@ describe('client market', () => {
     const result = new URL(restartReloadUrl('http://127.0.0.1:8081/?view=market', 'new-instance'))
     expect(result.searchParams.get('view')).toBe('market')
     expect(result.searchParams.get('dsh-skin-reload')).toBe('new-instance')
+    expect(restartDocumentProbeUrl(result.toString())).toBe('http://127.0.0.1:8081/?view=market')
+  })
+
+  it('does not navigate until the replacement Host can serve the document', async () => {
+    let instanceId = 'old'
+    let documentOk = false
+    const calls: string[] = []
+    const href = 'http://127.0.0.1:3080/?view=market'
+    await expect(waitForRestartDocument({
+      acceptedInstanceId: 'old',
+      href,
+      now: () => 0,
+      deadlineMs: 10_000,
+      pollMs: 1,
+      sleep: async () => {
+        if (calls.filter(item => item === 'state').length >= 1) instanceId = 'new'
+        if (calls.filter(item => item === 'document').length >= 1) documentOk = true
+      },
+      fetchState: async () => {
+        calls.push('state')
+        return { instanceId }
+      },
+      fetchDocument: async url => {
+        calls.push('document')
+        expect(url).toBe(href)
+        return { ok: documentOk }
+      },
+    })).resolves.toBe(restartReloadUrl(href, 'new'))
+    expect(calls).toEqual(['state', 'state', 'document', 'state', 'document'])
+  })
+
+  it('keeps waiting when the new instance answers state before the SPA fallback is registered', async () => {
+    let now = 0
+    await expect(waitForRestartDocument({
+      acceptedInstanceId: 'old',
+      href: 'http://127.0.0.1:3080/',
+      now: () => now,
+      deadlineMs: 1_000,
+      pollMs: 500,
+      sleep: async ms => { now += ms },
+      fetchState: async () => ({ instanceId: 'new' }),
+      fetchDocument: async () => ({ ok: false }),
+    })).rejects.toThrow('重启超时')
   })
 
   it('restores market style priority after a skin is hot-loaded', () => {

@@ -288,10 +288,56 @@ const GALLERY_INTERVAL_MS = 5600
 const HOME_COMPACT_ENTER_SCROLL = 72
 const HOME_COMPACT_EXIT_SCROLL = 16
 
+export const RESTART_POLL_MS = 500
+export const RESTART_WAIT_MS = 90_000
+
 export function restartReloadUrl(href: string, instanceId: string): string {
   const url = new URL(href)
   url.searchParams.set(RELOAD_PARAM, instanceId)
   return url.toString()
+}
+
+export function restartDocumentProbeUrl(href: string): string {
+  const url = new URL(href)
+  url.searchParams.delete(RELOAD_PARAM)
+  return url.toString()
+}
+
+export interface RestartDocumentPoll {
+  instanceId: string
+}
+
+/**
+ * DSH answers named plugin routes as soon as they register, but `/` 404s
+ * until frontend-static claims the fallback seat. Wait for both a new
+ * instanceId and a 200 on the current document before cache-busting.
+ */
+export async function waitForRestartDocument(input: {
+  acceptedInstanceId: string
+  href: string
+  deadlineMs?: number
+  pollMs?: number
+  now?: () => number
+  sleep?: (ms: number) => Promise<void>
+  fetchState: () => Promise<RestartDocumentPoll>
+  fetchDocument: (url: string) => Promise<{ ok: boolean }>
+}): Promise<string> {
+  const now = input.now ?? Date.now
+  const sleep = input.sleep ?? (ms => new Promise(resolve => setTimeout(resolve, ms)))
+  const deadline = now() + (input.deadlineMs ?? RESTART_WAIT_MS)
+  const pollMs = input.pollMs ?? RESTART_POLL_MS
+  const probe = restartDocumentProbeUrl(input.href)
+  while (now() < deadline) {
+    await sleep(pollMs)
+    try {
+      const next = await input.fetchState()
+      if (next.instanceId === input.acceptedInstanceId) continue
+      if ((await input.fetchDocument(probe)).ok) return restartReloadUrl(input.href, next.instanceId)
+    } catch {
+      // The old process is releasing its port, or the SPA fallback is not up.
+    }
+  }
+  throw new Error('DeepSeek Harness 重启超时，请手动刷新页面')
 }
 
 export function restoreMarketStyleOrder(root: ParentNode = document, marker = css.filterPill): void {
@@ -1085,18 +1131,15 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
       const accepted = await json<{ instanceId: string }>('/dsh-skin-market/restart', {
         method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(target.kind === 'market-update' ? { reason: 'market-update' } : { skinId: target.skinId }),
       })
-      const deadline = Date.now() + 90_000
-      while (Date.now() < deadline) {
-        await new Promise(resolve => setTimeout(resolve, 500))
-        try {
-          const next = await json<{ instanceId: string }>('/dsh-skin-market/state', { cache: 'no-store' })
-          if (next.instanceId !== accepted.instanceId) {
-            window.location.replace(restartReloadUrl(window.location.href, next.instanceId))
-            return
-          }
-        } catch { /* the old process is releasing its port */ }
-      }
-      throw new Error('DeepSeek Harness 重启超时，请手动刷新页面')
+      window.location.replace(await waitForRestartDocument({
+        acceptedInstanceId: accepted.instanceId,
+        href: window.location.href,
+        fetchState: () => json<{ instanceId: string }>('/dsh-skin-market/state', { cache: 'no-store' }),
+        fetchDocument: async url => {
+          const response = await fetch(url, { cache: 'no-store' })
+          return { ok: response.ok }
+        },
+      }))
     } catch (reason) {
       setConfirmRestart(false)
       setCompatibilityWarning(null)
