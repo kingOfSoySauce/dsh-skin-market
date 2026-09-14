@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T21:27:12.157Z",
+  "generatedAt": "2026-09-14T02:59:26.295Z",
   "skins": [
     {
       "id": "carlown.majia7-skin",
@@ -19215,6 +19215,158 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d334b535420bfe4cbb3fad968ad6b2ec.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d334b535420bfe4cbb3fad968ad6b2ec.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "laohankk.crt.terminal",
+      "name": {
+        "zh": "CRT 终端（琥珀）",
+        "en": "CRT Terminal"
+      },
+      "author": "laohankk",
+      "description": "琥珀磷光 CRT 终端主题：琥珀配色、磷光泛光、扫描线、曲面暗角、方角面板与角标，外加合成的终端音效。纯 CSS + Web Audio，无字体无音频文件。",
+      "repo": "https://github.com/laohankk/dsh-crt-skins",
+      "subpath": "packages/skins/crt-terminal",
+      "package": "dsh-crt-terminal",
+      "rowId": "crt-terminal",
+      "category": "theme",
+      "tags": [
+        "appearance"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:laohankk/dsh-crt-skins#60a8bc681342b2676af620d44119167fec6a1d37&path:/packages/skins/crt-terminal",
+        "version": "1.0.0",
+        "commit": "60a8bc681342b2676af620d44119167fec6a1d37"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/laohankk/dsh-crt-skins/60a8bc681342b2676af620d44119167fec6a1d37/packages/skins/crt-terminal/preview/preview.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-09-14T02:59:22.034Z",
+      "metadataUpdatedAt": "2026-09-14T02:59:22.034Z",
+      "starsUpdatedAt": "2026-09-14T02:59:22.034Z",
+      "updatedAt": "2026-09-14T02:59:22.034Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/efd8726cc5a3dc272f67e6c789d54b1a.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/efd8726cc5a3dc272f67e6c789d54b1a.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/efd8726cc5a3dc272f67e6c789d54b1a.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/efd8726cc5a3dc272f67e6c789d54b1a.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "laohankk.pipboy.terminal",
+      "name": {
+        "zh": "Pip-Boy 终端",
+        "en": "Pip-Boy Terminal"
+      },
+      "author": "laohankk",
+      "description": "辐射 Pip-Boy 风格绿磷光主题：经典 Pip-Boy 绿、Vault-Tec 角框、玻璃反光（无扫描线无闪烁，画面稳定），成功/警告/错误三态分色，外加合成的终端音效。纯 CSS + Web Audio。",
+      "repo": "https://github.com/laohankk/dsh-crt-skins",
+      "subpath": "packages/skins/pipboy-terminal",
+      "package": "dsh-pipboy-terminal",
+      "rowId": "pipboy-terminal",
+      "category": "theme",
+      "tags": [
+        "appearance"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:laohankk/dsh-crt-skins#60a8bc681342b2676af620d44119167fec6a1d37&path:/packages/skins/pipboy-terminal",
+        "version": "1.0.0",
+        "commit": "60a8bc681342b2676af620d44119167fec6a1d37"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/laohankk/dsh-crt-skins/60a8bc681342b2676af620d44119167fec6a1d37/packages/skins/pipboy-terminal/preview/preview.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-09-14T02:59:22.775Z",
+      "metadataUpdatedAt": "2026-09-14T02:59:22.775Z",
+      "starsUpdatedAt": "2026-09-14T02:59:22.775Z",
+      "updatedAt": "2026-09-14T02:59:22.775Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4bd43c30ea84173e3e851d880a1437f2.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4bd43c30ea84173e3e851d880a1437f2.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4bd43c30ea84173e3e851d880a1437f2.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4bd43c30ea84173e3e851d880a1437f2.full.webp"
           }
         ]
       }
