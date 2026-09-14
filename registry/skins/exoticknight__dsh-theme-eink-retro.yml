@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:exoticknight/dsh-theme-eink-retro#c65f58b7d83f1ebb8840a25a748ab0fc076f0597
-  version: 0.2.1
-  commit: c65f58b7d83f1ebb8840a25a748ab0fc076f0597
+  target: github:exoticknight/dsh-theme-eink-retro#bc4ed57d056c9e999c22f6b107dabfb7c44a2a75
+  version: 0.3.1
+  commit: bc4ed57d056c9e999c22f6b107dabfb7c44a2a75
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -29,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/exoticknight/dsh-theme-eink-retro/c65f58b7d83f1ebb8840a25a748ab0fc076f0597/assets/screenshots/balanced-fresh-profile.png
   - https://raw.githubusercontent.com/exoticknight/dsh-theme-eink-retro/c65f58b7d83f1ebb8840a25a748ab0fc076f0597/assets/screenshots/theme-settings-fresh-profile.png
+listScreenshot: https://raw.githubusercontent.com/exoticknight/dsh-theme-eink-retro/c65f58b7d83f1ebb8840a25a748ab0fc076f0597/assets/screenshots/balanced-fresh-profile.png
 review:
   compatibility: unverified
   preview: verified
@@ -44,20 +45,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: c65f58b7d83f1ebb8840a25a748ab0fc076f0597
-    packageVersion: 0.2.1
+    commit: bc4ed57d056c9e999c22f6b107dabfb7c44a2a75
+    packageVersion: 0.3.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:44.225Z
+    checkedAt: 2026-09-13T21:24:35.242Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 1070
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-07T21:58:44.326Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-09-13T21:24:35.670Z
+metadataUpdatedAt: 2026-09-13T21:24:35.670Z
 starsUpdatedAt: 2026-09-07T21:58:44.326Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/exoticknight/dsh-theme-eink-retro/c65f58b7d83f1ebb8840a25a748ab0fc076f0597/assets/screenshots/balanced-fresh-profile.png
+updatedAt: 2026-09-13T21:24:35.670Z
