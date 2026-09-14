@@ -6,17 +6,29 @@ import { primaryLoaderIdFromPatch } from './loader-rows.mjs'
 import { permitsCommercialUse } from './license.mjs'
 import { clientEntryPath, inspectSkinHealth } from './skin-health.mjs'
 
-const THIN_KEYS = new Set(['url', 'subpath', 'description', 'name', 'author', 'screenshots'])
+export const THIN_SUBMISSION_KEYS = ['url', 'subpath', 'description', 'name', 'author', 'screenshots']
+const THIN_KEYS = new Set(THIN_SUBMISSION_KEYS)
 const IMAGE_EXTENSION = /\.(?:png|jpe?g|webp|gif)(?:$|\?)/i
 
 function isRecord(value) {
   return typeof value === 'object' && value !== null && !Array.isArray(value)
 }
 
+export function extraThinSubmissionKeys(value) {
+  if (!isRecord(value)) return []
+  return Object.keys(value).filter(key => !THIN_KEYS.has(key))
+}
+
 export function isThinSubmission(value) {
   if (!isRecord(value)) return false
   if (typeof value.url !== 'string' || value.url.trim() === '') return false
-  return Object.keys(value).every(key => THIN_KEYS.has(key))
+  return extraThinSubmissionKeys(value).length === 0
+}
+
+export function thinSubmissionHint(value) {
+  const extras = extraThinSubmissionKeys(value)
+  if (typeof value?.url !== 'string' || value.install !== undefined || extras.length === 0) return ''
+  return `not a thin submission because of extra keys: ${extras.join(', ')}. Keep only ${THIN_SUBMISSION_KEYS.join(', ')} — CI hydrates package, rowId, install, license, screenshots and health. If registry:check reports missing id/install, delete the extra keys; do not complete the full schema.`
 }
 
 export function parseGitHubTarget(url, explicitSubpath = null) {

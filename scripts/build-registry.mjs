@@ -5,7 +5,7 @@ import Ajv from 'ajv/dist/2020.js'
 import { parse, stringify } from 'yaml'
 import { displayScreenshots } from './registry-screenshots.mjs'
 import { mediaForSources } from './media.mjs'
-import { isThinSubmission, hydrateSkinSubmission } from './hydrate-submission.mjs'
+import { isThinSubmission, hydrateSkinSubmission, thinSubmissionHint } from './hydrate-submission.mjs'
 import { resolveScreenshotList, resolveScreenshotRef } from './screenshot-refs.mjs'
 import { buildCatalogWire } from './catalog-wire.mjs'
 
@@ -32,7 +32,8 @@ for (const file of files) {
   }
   if (!validate(skin)) {
     const details = (validate.errors ?? []).map(error => `${error.instancePath || '/'} ${error.message}`).join('; ')
-    throw new Error(`${file}: ${details}`)
+    const hint = thinSubmissionHint(skin)
+    throw new Error(hint ? `${file}: ${details}; ${hint}` : `${file}: ${details}`)
   }
   if (!isVersionRange(skin.compatibility.dsh)) throw new Error(`${file}: compatibility.dsh is not a supported semver range`)
   for (const adapter of skin.compatibility.adapters ?? []) {

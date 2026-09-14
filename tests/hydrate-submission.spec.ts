@@ -1,11 +1,26 @@
 import { describe, expect, it } from 'vitest'
-import { hydrateSkinSubmission, isThinSubmission, parseGitHubTarget, submissionFilename } from '../scripts/hydrate-submission.mjs'
+import { hydrateSkinSubmission, isThinSubmission, parseGitHubTarget, submissionFilename, thinSubmissionHint } from '../scripts/hydrate-submission.mjs'
 
 describe('thin registry submissions', () => {
   it('accepts url-only drafts and GitHub tree paths', () => {
     expect(isThinSubmission({ url: 'https://github.com/example/dsh-skin' })).toBe(true)
     expect(isThinSubmission({ url: 'https://github.com/example/dsh-skin', description: '玻璃皮肤' })).toBe(true)
     expect(isThinSubmission({ url: 'https://github.com/example/dsh-skin', id: 'example.dsh-skin' })).toBe(false)
+    expect(isThinSubmission({
+      url: 'https://github.com/example/dsh-skin',
+      package: 'dsh-skin',
+      tags: ['retro'],
+    })).toBe(false)
+    expect(thinSubmissionHint({
+      url: 'https://github.com/example/dsh-skin',
+      package: 'dsh-skin',
+      rowId: 'skin',
+      tags: ['retro'],
+    })).toContain('extra keys: package, rowId, tags')
+    expect(thinSubmissionHint({
+      url: 'https://github.com/example/dsh-skin',
+      install: { target: 'github:example/dsh-skin' },
+    })).toBe('')
     expect(parseGitHubTarget('https://github.com/example/dsh-skins/tree/main/packages/ocean')).toMatchObject({
       fullName: 'example/dsh-skins',
       subpath: 'packages/ocean',

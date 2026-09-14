@@ -34,14 +34,18 @@ ${repositoryLine}
 请自主完成以下工作：
 1. 只用只读方式确认皮肤仓库是公开的 GitHub 仓库（或 monorepo 子目录），且确实是可安装的 DSH Web 皮肤。不要读取 .env、凭据或聊天记录。
 2. fork/clone 目标目录仓库并新建分支。在 ${REGISTRY_PATH} 下只新增一个 YAML，文件名用 owner__repo.yml（子包用 owner__repo--path.yml）。不要覆盖已有条目，不要修改 data/catalog.json。
-3. YAML 默认写成薄条目即可，CI 会从仓库读取 package、loader id、许可证、commit 和预览图。最小内容：
+3. YAML 必须写成薄条目。只允许这些字段，一个都不能多：url、subpath、name、author、description、screenshots。多写 package、rowId、category、tags、modes、compatibility、install、commit 或任何其他键，CI 会按完整 schema 校验并失败。CI 会从皮肤仓库读取 package、loader id、许可证、commit 和预览图。内容只能是：
 
 url: https://github.com/<owner>/<repo>
 # subpath: packages/my-skin   # 仅 monorepo 子包需要
+# name:                       # 可选
+#   zh: 中文名
+#   en: English name
+# author: owner               # 可选；缺省用 GitHub owner
 # description: 一句中文或英文描述  # 可选；缺省则用 package.json description
 
 4. 预览图优先放在皮肤仓库自己的 screenshots.json（相对路径），或 README 里的仓库内图片。不要把 SVG、data URI、第三方图床写进市场 YAML。
-5. 若你要自己写完整 schema，也可以；不要编造 commit SHA、rowId 或许可证。缺少关键信息时先列出缺项。
+5. 不要写完整 schema，不要编造 commit SHA、rowId 或许可证。若 npm run registry:check 报缺少 id/install，先删掉薄条目以外的字段再跑，不要靠补全 schema 过 CI。
 6. 在目标目录仓库根目录运行 npm run registry:check。不得安装到我的真实 DSH profile。
 7. git diff --name-only 应只有 ${REGISTRY_PATH}/<条目文件>.yml。提交并向 ${REGISTRY_REPOSITORY} 创建 PR，标题 feat(registry): add <皮肤名>。
 8. 返回 PR 链接；没有 GitHub 权限时只准备好分支和可复制的 PR 内容。

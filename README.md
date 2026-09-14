@@ -134,7 +134,7 @@ dsh plugin --profile web add "dsh-skin-market@latest"
 
 ## 收录你的皮肤
 
-如果你开发了 DSH 皮肤，准备一个公开 GitHub 仓库后，向本仓库提 **一个** `registry/skins/<owner>__<repo>.yml` 即可。默认只写仓库地址，CI 会补全 package、commit、loader id 和预览图：
+如果你开发了 DSH 皮肤，准备一个公开 GitHub 仓库后，向本仓库提 **一个** `registry/skins/<owner>__<repo>.yml` 即可。YAML 只允许 `url`、`subpath`、`name`、`author`、`description`、`screenshots`；不要写 `package`、`rowId`、`install` 等字段。CI 会补全 package、commit、loader id 和预览图：
 
 ```yaml
 url: https://github.com/<owner>/<repo>
@@ -159,14 +159,16 @@ monorepo 子包加上 `subpath:`。也可以继续让 Agent 代为开 PR，复�
 请自主完成以下工作：
 1. 只用只读方式确认皮肤仓库是公开的 GitHub 仓库（或 monorepo 子目录），且确实是可安装的 DSH Web 皮肤。不要读取 .env、凭据或聊天记录。
 2. fork 或 clone 目标目录仓库并新建分支。在 registry/skins 下只新增一个 YAML，不要覆盖已有条目，不要修改 data/catalog.json。
-3. YAML 默认写成薄条目即可，CI 会从皮肤仓库补全其余字段：
+3. YAML 必须写成薄条目。只允许 url、subpath、name、author、description、screenshots。多写 package、rowId、category、tags、modes、compatibility、install 等字段会失败；CI 会从皮肤仓库补全其余字段：
 
 url: https://github.com/<owner>/<repo>
+# subpath: packages/my-skin   # 仅 monorepo 子包需要
 
 4. 预览图放在皮肤仓库的 screenshots.json 或 README 内；不要使用 SVG、data URI 或第三方图床。
-5. 在目标目录仓库根目录运行 npm run registry:check。不得安装到我的真实 DSH profile。
-6. git diff --name-only 应只有 registry/skins/<条目文件>.yml。提交并向目标目录仓库创建 PR，标题 feat(registry): add <皮肤名>。
-7. 返回 PR 链接；没有 GitHub 权限时只准备好分支和可复制的 PR 内容。
+5. 不要写完整 schema。若 registry:check 报缺少 id/install，删掉多余字段再跑，不要补全 schema。
+6. 在目标目录仓库根目录运行 npm run registry:check。不得安装到我的真实 DSH profile。
+7. git diff --name-only 应只有 registry/skins/<条目文件>.yml。提交并向目标目录仓库创建 PR，标题 feat(registry): add <皮肤名>。
+8. 返回 PR 链接；没有 GitHub 权限时只准备好分支和可复制的 PR 内容。
 
 收录不等于安全认证。不要声称该皮肤已被 DSH 官方、安全团队或市场背书。
 ```
