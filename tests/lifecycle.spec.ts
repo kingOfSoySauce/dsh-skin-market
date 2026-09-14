@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os'
 import { basename, join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { parse, stringify } from 'yaml'
-import { SkinLifecycle } from '../src/lifecycle.ts'
+import { maxParallelDownloads, SkinLifecycle } from '../src/lifecycle.ts'
 import { atomicWriteJson, atomicWriteText, compatibilityPatchFile, ensurePatchedDependency, patchedDependenciesNeedSync, pnpmWorkspaceFile, profilePatchFile, readDependencies, readMarketState, writeMarketState } from '../src/profile.ts'
 import type { CommandResult, PluginInstallRequest, PluginRunner } from '../src/commands.ts'
 import type { LoaderEntry, Operation } from '../src/types.ts'
@@ -82,6 +82,21 @@ function syncPatchLockfile(dir: string): void {
   }, { lineWidth: 0 }))
 }
 
+describe('parallel download budget', () => {
+  it('allows two overlapping prefetches on desktop-class hosts', () => {
+    expect(maxParallelDownloads('darwin', {}, 8 * 1024 ** 3)).toBe(2)
+    expect(maxParallelDownloads('win32', {}, 8 * 1024 ** 3)).toBe(2)
+    expect(maxParallelDownloads('linux', {}, 8 * 1024 ** 3)).toBe(2)
+  })
+
+  it('serializes downloads on Android and low-memory hosts', () => {
+    expect(maxParallelDownloads('android', {}, 8 * 1024 ** 3)).toBe(1)
+    expect(maxParallelDownloads('linux', { ANDROID_ROOT: '/system' }, 8 * 1024 ** 3)).toBe(1)
+    expect(maxParallelDownloads('linux', { ANDROID_DATA: '/data' }, 8 * 1024 ** 3)).toBe(1)
+    expect(maxParallelDownloads('linux', {}, 2 * 1024 ** 3)).toBe(1)
+  })
+})
+
 describe('skin lifecycle', () => {
   it('cancels a prefetch without mutating the live profile', async () => {
     const dir = fixture()
@@ -106,6 +121,111 @@ describe('skin lifecycle', () => {
 
     expect(await finished(operation)).toMatchObject({ phase: 'cancelled', cancelable: false, message: '操作已取消' })
     expect(readDependencies(dir)).toEqual({})
+  })
+
+  it('prefetches a second skin while another download is still running, then writes the profile serially', async () => {
+    const dir = fixture()
+    const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() })
+    const skinA = firstInstallable(probe)
+    const skinB = anotherInstallable(probe, skinA.id)
+    const prefetchStarted: string[] = []
+    const releasePrefetch = new Map<string, () => void>()
+    const liveAddOrder: string[] = []
+    let releaseFirstLiveAdd: (() => void) | undefined
+    let firstLiveAddStarted!: () => void
+    const firstLiveAdd = new Promise<void>(resolve => { firstLiveAddStarted = resolve })
+    const materialize = (targetDir: string, skin: typeof skinA) => {
+      const manifestPath = join(targetDir, 'package.json')
+      const existing = existsSync(manifestPath)
+        ? JSON.parse(readFileSync(manifestPath, 'utf8')) as { dependencies?: Record<string, string> }
+        : targetDir === dir ? {} : { private: true }
+      atomicWriteJson(manifestPath, { ...existing, dependencies: { ...existing.dependencies, [skin.package]: skin.install.target } })
+      writeBundlePackage(targetDir, skin)
+    }
+    const runner: PluginRunner = async (_profile, args) => {
+      if (args[0] === 'add' && args.includes('--dir')) {
+        const temporary = args[args.indexOf('--dir') + 1]!
+        const skin = args.includes(skinA.install.target) ? skinA : skinB
+        prefetchStarted.push(skin.id)
+        materialize(temporary, skin)
+        await new Promise<void>(resolve => releasePrefetch.set(skin.id, resolve))
+        return success()
+      }
+      if (args[0] === 'add') {
+        const skin = args.includes(skinA.install.target) ? skinA : skinB
+        liveAddOrder.push(skin.id)
+        materialize(dir, skin)
+        if (liveAddOrder.length === 1) {
+          firstLiveAddStarted()
+          await new Promise<void>(resolve => { releaseFirstLiveAdd = resolve })
+        }
+        return success()
+      }
+      return success()
+    }
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner }, [skinA, skinB])
+    const opA = lifecycle.begin('install', skinA.id)
+    const opB = lifecycle.begin('install', skinB.id)
+    expect(lifecycle.currentOperations().map(operation => operation.skinId).sort()).toEqual([skinA.id, skinB.id].sort())
+    expect(() => lifecycle.begin('install', skinA.id)).toThrow('already running')
+
+    for (let index = 0; index < 100 && prefetchStarted.length < 2; index++) await new Promise(resolve => setTimeout(resolve, 5))
+    expect(prefetchStarted.sort()).toEqual([skinA.id, skinB.id].sort())
+    expect(opA.phase).toBe('downloading')
+    expect(opB.phase).toBe('downloading')
+
+    releasePrefetch.get(skinA.id)!()
+    releasePrefetch.get(skinB.id)!()
+    await firstLiveAdd
+    expect(liveAddOrder).toHaveLength(1)
+    expect(lifecycle.currentOperations()).toHaveLength(2)
+    releaseFirstLiveAdd!()
+
+    expect(await finished(opA)).toMatchObject({ phase: 'done' })
+    expect(await finished(opB)).toMatchObject({ phase: 'done' })
+    expect(liveAddOrder).toHaveLength(2)
+    expect(new Set(liveAddOrder)).toEqual(new Set([skinA.id, skinB.id]))
+  })
+
+  it('lets activation proceed while another skin is still downloading', async () => {
+    const dir = fixture()
+    const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() })
+    const installed = firstInstallable(probe)
+    const downloading = anotherInstallable(probe, installed.id)
+    atomicWriteJson(join(dir, 'package.json'), { dependencies: { [installed.package]: installed.install.target } })
+    writeBundlePackage(dir, installed)
+    writeMarketState(dir, { version: 1, activeSkinId: null, disabledSkinIds: [installed.id], pinnedSkinIds: [] })
+    let releasePrefetch!: () => void
+    const prefetchHeld = new Promise<void>(resolve => { releasePrefetch = resolve })
+    const runner: PluginRunner = async (_profile, args) => {
+      if (args.includes('--dir')) {
+        const temporary = args[args.indexOf('--dir') + 1]!
+        atomicWriteJson(join(temporary, 'package.json'), { private: true, dependencies: { [downloading.package]: downloading.install.target } })
+        writeBundlePackage(temporary, downloading)
+        await prefetchHeld
+        return success()
+      }
+      if (args[0] === 'add') {
+        atomicWriteJson(join(dir, 'package.json'), { dependencies: {
+          [installed.package]: installed.install.target,
+          [downloading.package]: downloading.install.target,
+        } })
+        writeBundlePackage(dir, downloading)
+      }
+      return success()
+    }
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner }, [installed, downloading])
+    const download = lifecycle.begin('install', downloading.id)
+    for (let index = 0; index < 100 && download.phase !== 'downloading'; index++) await new Promise(resolve => setTimeout(resolve, 5))
+    expect(download.phase).toBe('downloading')
+
+    const activate = lifecycle.begin('activate', installed.id)
+    expect(await finished(activate)).toMatchObject({ phase: 'done' })
+    expect(download.phase).toBe('downloading')
+    expect(readMarketState(dir).activeSkinId).toBe(installed.id)
+
+    releasePrefetch()
+    expect(await finished(download)).toMatchObject({ phase: 'done' })
   })
 
   it('can replace its installable catalog without restarting the market plugin', async () => {

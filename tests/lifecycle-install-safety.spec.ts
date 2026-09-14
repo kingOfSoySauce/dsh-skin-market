@@ -267,6 +267,10 @@ describe('installation boundaries', () => {
     const before = readFileSync(join(dir, 'package.json'), 'utf8')
     let installs = 0
     const runner: PluginRunner = async (_profile, args, options) => {
+      if (args.includes('--dir')) {
+        materialize(args[args.indexOf('--dir') + 1]!, skin)
+        return ok()
+      }
       expect(args[0]).toBe('install')
       installs++
       if (installs === 1) {

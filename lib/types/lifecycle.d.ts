@@ -23,12 +23,17 @@ export interface LifecycleOptions {
     operationTimeoutMs?: number;
     recoveryTimeoutMs?: number;
 }
+/** Isolated temp-dir prefetches may overlap; live profile pnpm stays serial. */
+export declare function maxParallelDownloads(platform?: NodeJS.Platform, env?: NodeJS.ProcessEnv, memoryBytes?: number): number;
 export declare function desktopInstallError(capability: DesktopInstallCapability | undefined): string;
 export declare class SkinLifecycle {
     private readonly host;
     private readonly options;
     readonly operations: Map<string, Operation>;
-    private activeOperation;
+    private profileChain;
+    private profileLockOwner;
+    private downloadAvailable;
+    private readonly downloadWaiters;
     private readonly abortControllers;
     private readonly pendingBuildKeys;
     private readonly deadlines;
@@ -65,11 +70,15 @@ export declare class SkinLifecycle {
     private requiresRestartForTransition;
     replay(): Promise<void>;
     states(): SkinRuntimeState[];
+    private liveOperations;
+    currentOperations(): Operation[];
     currentOperation(): Operation | null;
     begin(kind: OperationKind, skinId: string, approvedBuildKeys?: readonly string[] | string): Operation;
     retry(id: string, action: 'retry' | 'approve-build'): Operation;
     private update;
     cancel(id: string): Operation;
+    private withProfileLock;
+    private withDownloadSlot;
     private execute;
     private run;
     private remainingTime;
@@ -89,10 +98,16 @@ export declare class SkinLifecycle {
     private assertRuntimeLoaderConflicts;
     private prefetch;
     private install;
+    private installIntoProfile;
     private activate;
+    private activateLocked;
     private deactivate;
+    private deactivateLocked;
     private pin;
+    private pinLocked;
     private unpin;
+    private unpinLocked;
     private updateSkin;
     private uninstall;
+    private uninstallLocked;
 }

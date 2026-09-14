@@ -525,6 +525,39 @@ describe('client market', () => {
     await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/activate') && init?.method === 'POST')).toBe(true))
   })
 
+  it('lets a second discovery card start while another install is still downloading', async () => {
+    const other = { ...skin, id: 'test.other', name: { zh: '另一款皮肤', en: 'Other Skin' }, package: 'other-skin', rowId: 'other-skin', repo: 'https://github.com/a/c' }
+    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin, other] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime, operations: [] }) }
+      if (url.endsWith('/install') && init?.method === 'POST') {
+        const body = JSON.parse(String(init.body)) as { skinId: string }
+        return { ok: true, json: async () => ({ operationId: `install-${body.skinId}` }) }
+      }
+      if (url.includes('/operations/install-')) {
+        const id = url.split('/').at(-1)!
+        const skinId = id.slice('install-'.length)
+        return { ok: true, json: async () => ({
+          id, kind: 'install', skinId, phase: skinId === other.id ? 'done' : 'downloading', startedAt: new Date().toISOString(),
+        }) }
+      }
+      throw new Error(`Unexpected request: ${url}`)
+    })
+    vi.stubGlobal('fetch', fetchMock)
+    render(<SkinMarketSection t={key => key} />)
+
+    const first = await screen.findByRole('group', { name: '测试皮肤 操作' })
+    const second = await screen.findByRole('group', { name: '另一款皮肤 操作' })
+    fireEvent.click(within(first).getByRole('button', { name: '安装并使用' }))
+    await waitFor(() => expect(first.textContent).toContain('安装中'))
+    const queued = within(second).getByRole('button', { name: '安装' })
+    expect(queued.hasAttribute('disabled')).toBe(false)
+    expect(within(second).queryByRole('button', { name: '安装并使用' })).toBeNull()
+    fireEvent.click(queued)
+    await waitFor(() => expect(fetchMock.mock.calls.filter(([url, init]) => url.endsWith('/install') && (init as RequestInit | undefined)?.method === 'POST')).toHaveLength(2))
+    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/activate') && (init as RequestInit | undefined)?.method === 'POST')).toBe(false)
+  })
+
   it('warns about a known incompatible DSH version after Use, not on the detail page', async () => {
     const incompatible = { ...skin, id: 'test.incompatible', name: { zh: '不兼容皮肤', en: 'Incompatible Skin' }, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
     const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
@@ -868,6 +901,26 @@ describe('client market', () => {
     expect(screen.getByRole('button', { name: '有任务运行中' }).hasAttribute('disabled')).toBe(true)
   })
 
+  it('blocks restart while another skin is still installing', async () => {
+    const other = { ...skin, id: 'test.other', name: { zh: '另一款皮肤', en: 'Other Skin' }, package: 'other-skin', rowId: 'other-skin', repo: 'https://github.com/a/c' }
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+      ok: true,
+      json: async () => url.endsWith('/catalog')
+        ? { skins: [skin, other] }
+        : {
+          runningAgentCount: 0,
+          skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }],
+          operations: [{ id: 'install-other', kind: 'install', skinId: other.id, phase: 'downloading', startedAt: new Date().toISOString() }],
+        },
+    })))
+    render(<SkinMarketSection t={key => key} />)
+    await openSkinCard()
+
+    fireEvent.click(await screen.findByRole('button', { name: '重启以应用' }))
+    expect(await screen.findByText(/还有 1 款皮肤正在安装或更新（另一款皮肤）/)).toBeTruthy()
+    expect(screen.getByRole('button', { name: '有皮肤正在安装' }).hasAttribute('disabled')).toBe(true)
+  })
+
   it('allows an explicit one-time restart when the old Host cannot report Agent state', async () => {
     vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] } })))
     render(<SkinMarketSection t={key => key} />)
@@ -996,7 +1049,7 @@ describe('client market', () => {
 
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
 
-    expect((await screen.findByRole('status')).textContent).toContain('正在下载“测试皮肤”')
+    await waitFor(() => expect(screen.getByRole('status').textContent).toContain('正在下载“测试皮肤”'))
     expect(screen.getByRole('status').textContent).toContain('已用时')
     const dialog = await screen.findByRole('dialog', { name: '安装未完成' }, { timeout: 2_000 })
     expect(dialog.textContent).toContain('GitHub 插件下载超时')
@@ -1263,9 +1316,8 @@ describe('client market', () => {
 
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
 
-    const banner = await screen.findByRole('status')
-    expect(banner.textContent).toContain('1.0 MB / 2.0 MB')
-    expect(banner.textContent).toContain('512.0 KB/s')
+    await waitFor(() => expect(screen.getByRole('status').textContent).toContain('1.0 MB / 2.0 MB'))
+    expect(screen.getByRole('status').textContent).toContain('512.0 KB/s')
     fireEvent.click(screen.getByRole('button', { name: '取消' }))
     await waitFor(() => expect(cancelled).toBe(true))
     await waitFor(() => expect(screen.queryByRole('status')).toBeNull(), { timeout: 2_000 })

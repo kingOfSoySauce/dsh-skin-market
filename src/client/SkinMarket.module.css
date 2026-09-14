@@ -41,7 +41,9 @@
 .homeHeader[data-compact="true"] .homeActions { grid-column: 2; grid-row: 1; z-index: 2; min-width: 0; flex: none; white-space: nowrap; }
 .homeHeader[data-compact="true"] .homeActions > * { flex: none; }
 .homeHeader[data-compact="true"] > .homeSearchPlaceholder { display: none; }
+.homeOperations,
 .homeOperation { grid-column: 1 / -1; min-width: 0; }
+.homeOperations { display: grid; gap: 8px; }
 .homeTitleRow { display: flex; min-width: 0; align-items: center; justify-content: space-between; gap: 16px; }
 .homeTitleRow h2,
 .homeTitleRow p,
@@ -519,6 +521,9 @@
   .titleBlock .description { margin-top: 7px; }
   .titleBlock .version { flex-wrap: wrap; row-gap: 2px; margin-top: 6px; }
   .actionRow { justify-content: flex-start; }
+  .operation { flex-wrap: wrap; row-gap: 6px; }
+  .operationActions { flex: 1 0 auto; margin-left: 0; justify-content: flex-end; }
+  .homeOperations { gap: 6px; }
   .aboutGrid { grid-template-columns: 1fr; }
   .aboutGrid > aside { border-top: 1px solid var(--dsw-alias-border-l2); border-left: 0; }
   .recommendations > div { grid-template-columns: 1fr; }

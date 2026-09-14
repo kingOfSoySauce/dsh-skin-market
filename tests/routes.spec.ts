@@ -1,6 +1,7 @@
 import type { IncomingMessage, ServerResponse } from 'node:http'
 import { describe, expect, it } from 'vitest'
-import { canRestartSkin, mountRoutes, runningAgentCount, waitForRestartSafety, type AgentLike, type WebServerService } from '../src/routes.ts'
+import { assertRestartClearOfSkinOperations, canRestartSkin, mountRoutes, runningAgentCount, waitForRestartSafety, type AgentLike, type WebServerService } from '../src/routes.ts'
+import type { Operation } from '../src/types.ts'
 import type { LoaderEntry } from '../src/types.ts'
 
 describe('market routes', () => {
@@ -16,6 +17,16 @@ describe('market routes', () => {
     const maintaining = { status: 'idle', whenIdle: async () => { maintenanceFinished = true } } satisfies AgentLike
     await expect(waitForRestartSafety({ agents: { list: () => [maintaining] } })).resolves.toBeUndefined()
     expect(maintenanceFinished).toBe(true)
+  })
+
+  it('refuses restart while a skin install or market update is still running', () => {
+    const downloading = {
+      id: 'op', kind: 'install', skinId: 'skin', phase: 'downloading', startedAt: '2026-01-01T00:00:00Z',
+    } satisfies Operation
+    expect(() => assertRestartClearOfSkinOperations([downloading])).toThrow('正在安装或更新')
+    expect(() => assertRestartClearOfSkinOperations([], { phase: 'installing' })).toThrow('皮肤市场正在更新')
+    expect(() => assertRestartClearOfSkinOperations([{ ...downloading, kind: 'activate', phase: 'activating' }])).not.toThrow()
+    expect(() => assertRestartClearOfSkinOperations([{ ...downloading, phase: 'done' }])).not.toThrow()
   })
 
   it('allows restart when the selected skin is Host-active or restart-required', () => {

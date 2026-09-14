@@ -2,7 +2,7 @@ import type { IncomingMessage, ServerResponse } from 'node:http';
 import { CatalogStore } from './catalog.ts';
 import { SkinLifecycle, type LifecycleHost } from './lifecycle.ts';
 import type { PluginRunner } from './commands.ts';
-import type { DshRuntime, MarketHostKind } from './types.ts';
+import type { DshRuntime, MarketHostKind, Operation } from './types.ts';
 import type { RestartScheduler } from './restart.ts';
 import { type MarketUpdater } from './self-update.ts';
 export interface WebServerService {
@@ -35,5 +35,9 @@ export interface RouteOptions {
 }
 export declare function canRestartSkin(state: ReturnType<SkinLifecycle['states']>[number] | undefined): boolean;
 export declare function runningAgentCount(host: Pick<SkinMarketHost, 'agents'>): number;
+export declare function restartBlockingOperations(operations: readonly Operation[]): Operation[];
+export declare function assertRestartClearOfSkinOperations(operations: readonly Operation[], marketUpdate?: {
+    phase: string;
+} | null): void;
 export declare function waitForRestartSafety(host: Pick<SkinMarketHost, 'agents'>): Promise<void>;
 export declare function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => void;

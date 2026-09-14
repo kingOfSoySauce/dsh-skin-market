@@ -6,7 +6,7 @@ import { readOperationRetryAction, readRestartTarget, readSkinId, sameOrigin, se
 import { SkinLifecycle, type LifecycleHost } from './lifecycle.ts'
 import { installedClientPlugins } from './profile.ts'
 import type { PluginRunner } from './commands.ts'
-import type { DshRuntime, MarketHostKind, OperationKind } from './types.ts'
+import type { DshRuntime, MarketHostKind, Operation, OperationKind } from './types.ts'
 import type { RestartScheduler } from './restart.ts'
 import { createMarketUpdater, packageVersion, type MarketUpdater } from './self-update.ts'
 import { exportLogs } from './log.ts'
@@ -40,6 +40,31 @@ export function canRestartSkin(state: ReturnType<SkinLifecycle['states']>[number
 
 export function runningAgentCount(host: Pick<SkinMarketHost, 'agents'>): number {
   return host.agents.list().filter(agent => agent.status === 'running').length
+}
+
+const RESTART_BLOCKING_KINDS = new Set<Operation['kind']>(['install', 'update', 'migrate', 'uninstall'])
+
+export function restartBlockingOperations(operations: readonly Operation[]): Operation[] {
+  return operations.filter(operation =>
+    operation.phase !== 'done'
+    && operation.phase !== 'failed'
+    && operation.phase !== 'cancelled'
+    && RESTART_BLOCKING_KINDS.has(operation.kind),
+  )
+}
+
+export function assertRestartClearOfSkinOperations(
+  operations: readonly Operation[],
+  marketUpdate?: { phase: string } | null,
+): void {
+  const blocking = restartBlockingOperations(operations)
+  if (blocking.length > 0) {
+    throw new Error(`还有 ${blocking.length} 个皮肤正在安装或更新，现在不能重启。请等待完成或先取消，否则会中断下载并可能损坏 profile`)
+  }
+  if (marketUpdate !== undefined && marketUpdate !== null
+    && marketUpdate.phase !== 'done' && marketUpdate.phase !== 'failed' && marketUpdate.phase !== 'cancelled') {
+    throw new Error('皮肤市场正在更新，现在不能重启。请等待完成或先取消')
+  }
 }
 
 export async function waitForRestartSafety(host: Pick<SkinMarketHost, 'agents'>): Promise<void> {
@@ -130,6 +155,7 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
         skins: lifecycle.states(),
         installedClientPlugins: installedClientPlugins(options.profileDir, lifecycle.catalog),
         operation: lifecycle.currentOperation(),
+        operations: lifecycle.currentOperations(),
         marketUpdateOperation: marketUpdater.currentOperation(),
         instanceId,
         restartAvailable: options.restart?.available === true,
@@ -219,6 +245,7 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
           // either active representation for the selected installed skin.
           if (!canRestartSkin(skinState)) return sendJson(response, 409, { error: '请先选择并使用此皮肤，再重新启动 DeepSeek Harness' })
         }
+        assertRestartClearOfSkinOperations(lifecycle.currentOperations(), marketUpdater.currentOperation())
         await waitForRestartSafety(host)
         sendJson(response, 202, { restarting: true, instanceId })
         options.restart.schedule()
