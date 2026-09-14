@@ -83,9 +83,32 @@ export function toolSearchDirs(
   return [...new Set(dirs.filter(dir => dir.trim() !== ''))]
 }
 
+/**
+ * Windows `process.env` is case-insensitive (`Path` === `PATH`); spreading it
+ * into a plain object is not. Prefer the last existing casing so a later write
+ * wins, and default to `Path` on Windows when the key is absent.
+ */
+export function pathKey(env: NodeJS.ProcessEnv, platform: string = process.platform): string {
+  const existing = Object.keys(env).reverse().find(key => key.toUpperCase() === 'PATH')
+  if (existing !== undefined) return existing
+  return platform === 'win32' ? 'Path' : 'PATH'
+}
+
+export function pathValue(env: NodeJS.ProcessEnv, platform: string = process.platform): string {
+  return env[pathKey(env, platform)] ?? ''
+}
+
+function assignPath(env: NodeJS.ProcessEnv, value: string, platform: string = process.platform): void {
+  const key = pathKey(env, platform)
+  for (const existing of Object.keys(env)) {
+    if (existing.toUpperCase() === 'PATH' && existing !== key) delete env[existing]
+  }
+  env[key] = value
+}
+
 function pathEntries(env: NodeJS.ProcessEnv, platform: string): string[] {
   const separator = platform === 'win32' ? ';' : ':'
-  return (env.PATH ?? '').split(separator).filter(Boolean)
+  return pathValue(env, platform).split(separator).filter(Boolean)
 }
 
 export interface PnpmDirectSpawn {
@@ -250,11 +273,11 @@ function stoppedBeforeStart(options?: CommandOptions): CommandResult | undefined
 function commandEnvironment(options?: CommandOptions): NodeJS.ProcessEnv {
   const env: NodeJS.ProcessEnv = { ...process.env, ...normalizedEnvironment(options), CI: 'true' }
   const separator = process.platform === 'win32' ? ';' : ':'
-  const parts = (env.PATH ?? '').split(separator).filter(Boolean)
+  const parts = pathValue(env).split(separator).filter(Boolean)
   for (const value of toolSearchDirs()) {
     if (value !== '' && !parts.includes(value)) parts.push(value)
   }
-  env.PATH = parts.join(separator)
+  assignPath(env, parts.join(separator))
   return env
 }
 
@@ -336,9 +359,11 @@ const runCommand: CommandExecutor = (file, args, options) => runProcess(
 function addPath(env: NodeJS.ProcessEnv, directory: string): NodeJS.ProcessEnv {
   if (directory === '') return env
   const separator = process.platform === 'win32' ? ';' : ':'
-  const parts = (env.PATH ?? '').split(separator).filter(Boolean)
+  const parts = pathValue(env).split(separator).filter(Boolean)
   if (!parts.includes(directory)) parts.unshift(directory)
-  return { ...env, PATH: parts.join(separator) }
+  const next = { ...env }
+  assignPath(next, parts.join(separator))
+  return next
 }
 
 function commandOutput(result: CommandResult): string {

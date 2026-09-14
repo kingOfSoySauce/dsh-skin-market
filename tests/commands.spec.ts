@@ -2,7 +2,7 @@ import { mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { PassThrough } from 'node:stream'
 import { describe, expect, it, vi } from 'vitest'
-import { cmdCommandLine, commandError, createPnpmProvisioner, desktopRunner, normalizedEnvironment, pluginProcess, PNPM_DIRECT_SPAWN_ENOENT_HINT, quoteCmdArg, resolvePnpmForDirectSpawn, toolSearchDirs, type CommandResult, type DesktopPnpmLike } from '../src/commands.ts'
+import { cmdCommandLine, commandError, createPnpmProvisioner, desktopRunner, normalizedEnvironment, pathKey, pathValue, pluginProcess, PNPM_DIRECT_SPAWN_ENOENT_HINT, quoteCmdArg, resolvePnpmForDirectSpawn, toolSearchDirs, type CommandResult, type DesktopPnpmLike } from '../src/commands.ts'
 
 describe('Windows command shim quoting', () => {
   it('quotes cmd metacharacters as one argument', () => {
@@ -59,6 +59,31 @@ describe('Windows command shim quoting', () => {
       home: root,
       execPath: join(root, 'node.exe'),
     })).toEqual({ file: 'pnpm', prefix: [] })
+    rmSync(root, { recursive: true, force: true })
+  })
+
+  it('reads Windows Path after spreading process.env into a plain object', () => {
+    expect(pathKey({ Path: 'D:\\Git\\cmd' }, 'win32')).toBe('Path')
+    expect(pathKey({ PATH: '/usr/bin' }, 'linux')).toBe('PATH')
+    expect(pathKey({}, 'win32')).toBe('Path')
+    expect(pathKey({}, 'darwin')).toBe('PATH')
+    expect(pathValue({ Path: 'D:\\Git\\cmd;C:\\Windows\\system32' }, 'win32'))
+      .toBe('D:\\Git\\cmd;C:\\Windows\\system32')
+    expect(pathValue({ PATH: '/usr/bin:/bin' }, 'linux')).toBe('/usr/bin:/bin')
+    expect(pathValue({}, 'win32')).toBe('')
+  })
+
+  it('resolves pnpm.exe from Windows Path, not only PATH', () => {
+    const root = join('/tmp', 'dsh-pnpm-path-casing-fixture')
+    rmSync(root, { recursive: true, force: true })
+    mkdirSync(join(root, 'git-cmd'), { recursive: true })
+    writeFileSync(join(root, 'git-cmd', 'pnpm.exe'), '')
+    expect(resolvePnpmForDirectSpawn({
+      platform: 'win32',
+      env: { Path: join(root, 'git-cmd'), PNPM_HOME: '', LOCALAPPDATA: '', APPDATA: '' },
+      home: root,
+      execPath: join(root, 'node.exe'),
+    })).toEqual({ file: join(root, 'git-cmd', 'pnpm.exe'), prefix: [] })
     rmSync(root, { recursive: true, force: true })
   })
 

@@ -155,6 +155,33 @@ describe('plugin process termination', () => {
     await expect(pending).resolves.toMatchObject({ exitCode: 0 })
   })
 
+  it('keeps Windows Path directories when spawning plugin commands', async () => {
+    usePlatform('win32')
+    const gitDir = 'D:\\Git\\cmd'
+    const previousPath = process.env.PATH
+    const previousPathMixed = process.env.Path
+    delete process.env.PATH
+    process.env.Path = `${gitDir};C:\\Windows\\system32`
+    try {
+      vi.resetModules()
+      const { runPluginCli } = await import('../src/commands.ts')
+      child = fakeChild()
+      processBoundary.spawn.mockImplementation((file: string) => file === 'taskkill' ? cleanup : child)
+      const pending = runPluginCli('web', ['add', 'example-skin@1.0.0'])
+      const spawnedEnv = processBoundary.spawn.mock.calls[0]![2].env as NodeJS.ProcessEnv
+      const pathKeys = Object.keys(spawnedEnv).filter(key => key.toUpperCase() === 'PATH')
+      expect(pathKeys).toHaveLength(1)
+      expect((spawnedEnv[pathKeys[0]!] ?? '').split(';')).toContain(gitDir)
+      child.emit('close', 0)
+      await expect(pending).resolves.toMatchObject({ exitCode: 0 })
+    } finally {
+      delete process.env.Path
+      if (previousPath === undefined) delete process.env.PATH
+      else process.env.PATH = previousPath
+      if (previousPathMixed !== undefined) process.env.Path = previousPathMixed
+    }
+  })
+
   it('maps &path: spawn ENOENT to the bilingual pnpm-binary hint', async () => {
     usePlatform('win32')
     const { runPluginCli, PNPM_DIRECT_SPAWN_ENOENT_HINT } = await import('../src/commands.ts')

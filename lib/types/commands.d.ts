@@ -39,6 +39,13 @@ export declare const PNPM_DIRECT_SPAWN_ENOENT_HINT = "\u65E0\u6CD5\u4EE5 shell:f
  * (same spirit as dsh-market toolSearchDirs).
  */
 export declare function toolSearchDirs(platform?: string, env?: NodeJS.ProcessEnv, home?: string, nodeDir?: string): string[];
+/**
+ * Windows `process.env` is case-insensitive (`Path` === `PATH`); spreading it
+ * into a plain object is not. Prefer the last existing casing so a later write
+ * wins, and default to `Path` on Windows when the key is absent.
+ */
+export declare function pathKey(env: NodeJS.ProcessEnv, platform?: string): string;
+export declare function pathValue(env: NodeJS.ProcessEnv, platform?: string): string;
 export interface PnpmDirectSpawn {
     file: string;
     prefix: string[];
