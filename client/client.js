@@ -302,134 +302,134 @@ window.__ModuleLoader__.load({
 		}
 		var SkinMarket_module_css_default = {
 			"homeError": "VqXecW_homeError",
-			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
-			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
-			"cardMeta": "VqXecW_cardMeta",
-			"homeGithubAction": "VqXecW_homeGithubAction",
-			"homeCardMedia": "VqXecW_homeCardMedia",
-			"catalogTitleMain": "VqXecW_catalogTitleMain",
-			"filterPill": "VqXecW_filterPill",
-			"aboutGrid": "VqXecW_aboutGrid",
-			"loading": "VqXecW_loading",
+			"homeContent": "VqXecW_homeContent",
+			"operationActions": "VqXecW_operationActions",
+			"homeCardRepo": "VqXecW_homeCardRepo",
+			"homeUpdateAction": "VqXecW_homeUpdateAction",
+			"galleryProgress": "VqXecW_galleryProgress",
+			"sortButton": "VqXecW_sortButton",
+			"operation": "VqXecW_operation",
 			"homeOperation": "VqXecW_homeOperation",
 			"homeOperations": "VqXecW_homeOperations",
-			"empty": "VqXecW_empty",
-			"home": "VqXecW_home",
-			"sortButton": "VqXecW_sortButton",
-			"operationCancel": "VqXecW_operationCancel",
-			"homeGithubLabel": "VqXecW_homeGithubLabel",
-			"lightboxNext": "VqXecW_lightboxNext",
-			"cardActionProgress": "VqXecW_cardActionProgress",
-			"feedMeta": "VqXecW_feedMeta",
-			"skeletonCard": "VqXecW_skeletonCard",
-			"lightboxNav": "VqXecW_lightboxNav",
-			"notice": "VqXecW_notice",
-			"operationMessage": "VqXecW_operationMessage",
-			"homeActions": "VqXecW_homeActions",
-			"galleryProgress": "VqXecW_galleryProgress",
-			"skinList": "VqXecW_skinList",
-			"heroNav": "VqXecW_heroNav",
-			"homeCardFooter": "VqXecW_homeCardFooter",
-			"homeCardRepo": "VqXecW_homeCardRepo",
-			"cardAction": "VqXecW_cardAction",
-			"cardTitle": "VqXecW_cardTitle",
-			"installOptions": "VqXecW_installOptions",
-			"error": "VqXecW_error",
-			"operationMeta": "VqXecW_operationMeta",
-			"submission": "VqXecW_submission",
-			"detail": "VqXecW_detail",
-			"lightboxStage": "VqXecW_lightboxStage",
-			"marketUpdateButton": "VqXecW_marketUpdateButton",
-			"operation": "VqXecW_operation",
-			"homeCard": "VqXecW_homeCard",
-			"browserPanel": "VqXecW_browserPanel",
-			"srOnly": "VqXecW_srOnly",
-			"hero": "VqXecW_hero",
-			"homeCardCopy": "VqXecW_homeCardCopy",
-			"discoveryGrid": "VqXecW_discoveryGrid",
-			"lightboxClose": "VqXecW_lightboxClose",
-			"statusLabel": "VqXecW_statusLabel",
-			"externalPlugin": "VqXecW_externalPlugin",
-			"homeHeader": "VqXecW_homeHeader",
-			"skinCardPreview": "VqXecW_skinCardPreview",
-			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
-			"cardStars": "VqXecW_cardStars",
-			"cardMetaLine": "VqXecW_cardMetaLine",
 			"galleryGroup": "VqXecW_galleryGroup",
-			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
-			"titleBlock": "VqXecW_titleBlock",
-			"healthList": "VqXecW_healthList",
-			"detailSkeleton": "VqXecW_detailSkeleton",
-			"skeletonShimmer": "VqXecW_skeletonShimmer",
-			"actionRow": "VqXecW_actionRow",
 			"browserHomeBack": "VqXecW_browserHomeBack",
-			"homeCardOpen": "VqXecW_homeCardOpen",
-			"skinCard": "VqXecW_skinCard",
-			"author": "VqXecW_author",
-			"iconOnlyButton": "VqXecW_iconOnlyButton",
-			"heroOpen": "VqXecW_heroOpen",
-			"homeContent": "VqXecW_homeContent",
-			"catalogHeader": "VqXecW_catalogHeader",
-			"lightboxPrev": "VqXecW_lightboxPrev",
-			"copyCapsule": "VqXecW_copyCapsule",
-			"homeCardDescription": "VqXecW_homeCardDescription",
-			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
-			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
-			"repoMeta": "VqXecW_repoMeta",
-			"repoLink": "VqXecW_repoLink",
-			"homeLoading": "VqXecW_homeLoading",
-			"interceptHelp": "VqXecW_interceptHelp",
-			"homeSearch": "VqXecW_homeSearch",
-			"operationActions": "VqXecW_operationActions",
-			"actionDivider": "VqXecW_actionDivider",
-			"operationCopyLog": "VqXecW_operationCopyLog",
-			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
-			"detailHeader": "VqXecW_detailHeader",
-			"mobileBack": "VqXecW_mobileBack",
-			"thumbnailProgress": "VqXecW_thumbnailProgress",
-			"healthSuggestion": "VqXecW_healthSuggestion",
-			"recommendations": "VqXecW_recommendations",
 			"catalog": "VqXecW_catalog",
-			"homeSection": "VqXecW_homeSection",
-			"thumbnailFrame": "VqXecW_thumbnailFrame",
-			"tags": "VqXecW_tags",
-			"collectionTitle": "VqXecW_collectionTitle",
-			"homeSubmitAction": "VqXecW_homeSubmitAction",
+			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
+			"skinCardPreview": "VqXecW_skinCardPreview",
+			"hero": "VqXecW_hero",
+			"error": "VqXecW_error",
+			"cardMeta": "VqXecW_cardMeta",
+			"thumbnailProgress": "VqXecW_thumbnailProgress",
 			"heroPrev": "VqXecW_heroPrev",
-			"browser": "VqXecW_browser",
-			"catalogTitle": "VqXecW_catalogTitle",
-			"manualInstallGuide": "VqXecW_manualInstallGuide",
-			"browserModal": "VqXecW_browserModal",
-			"filters": "VqXecW_filters",
-			"root": "VqXecW_root",
-			"version": "VqXecW_version",
-			"interceptNotice": "VqXecW_interceptNotice",
-			"homeSectionTitle": "VqXecW_homeSectionTitle",
-			"skinCardBody": "VqXecW_skinCardBody",
-			"cardDescription": "VqXecW_cardDescription",
-			"cardInlineActions": "VqXecW_cardInlineActions",
-			"heroNext": "VqXecW_heroNext",
 			"skinAvatar": "VqXecW_skinAvatar",
-			"changelog": "VqXecW_changelog",
-			"previewPlaceholder": "VqXecW_previewPlaceholder",
-			"filterBar": "VqXecW_filterBar",
-			"pinWarning": "VqXecW_pinWarning",
-			"lightbox": "VqXecW_lightbox",
+			"titleBlock": "VqXecW_titleBlock",
+			"operationMeta": "VqXecW_operationMeta",
+			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
+			"thumbnailFrame": "VqXecW_thumbnailFrame",
 			"spin": "VqXecW_spin",
-			"homeUpdateAction": "VqXecW_homeUpdateAction",
-			"installedRow": "VqXecW_installedRow",
-			"listSkeleton": "VqXecW_listSkeleton",
+			"interceptNotice": "VqXecW_interceptNotice",
+			"home": "VqXecW_home",
+			"author": "VqXecW_author",
+			"catalogTitle": "VqXecW_catalogTitle",
+			"changelog": "VqXecW_changelog",
+			"lightboxNav": "VqXecW_lightboxNav",
+			"cardInlineActions": "VqXecW_cardInlineActions",
+			"browser": "VqXecW_browser",
+			"skinList": "VqXecW_skinList",
 			"homeLoadMore": "VqXecW_homeLoadMore",
+			"cardActionProgress": "VqXecW_cardActionProgress",
+			"interceptHelp": "VqXecW_interceptHelp",
+			"detail": "VqXecW_detail",
+			"installedRow": "VqXecW_installedRow",
+			"submission": "VqXecW_submission",
+			"actionDivider": "VqXecW_actionDivider",
+			"homeHeader": "VqXecW_homeHeader",
+			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
+			"detailSkeleton": "VqXecW_detailSkeleton",
+			"notice": "VqXecW_notice",
+			"empty": "VqXecW_empty",
+			"listLoading": "VqXecW_listLoading",
+			"homeCard": "VqXecW_homeCard",
+			"homeTitleRow": "VqXecW_homeTitleRow",
+			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
+			"cardDescription": "VqXecW_cardDescription",
+			"mobileBack": "VqXecW_mobileBack",
+			"skinCardBody": "VqXecW_skinCardBody",
+			"listSkeleton": "VqXecW_listSkeleton",
+			"detailHeader": "VqXecW_detailHeader",
+			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
+			"homeCardDescription": "VqXecW_homeCardDescription",
+			"feedMeta": "VqXecW_feedMeta",
+			"cardTitle": "VqXecW_cardTitle",
+			"iconOnlyButton": "VqXecW_iconOnlyButton",
+			"lightboxPrev": "VqXecW_lightboxPrev",
+			"installedMoreCard": "VqXecW_installedMoreCard",
+			"filterPill": "VqXecW_filterPill",
+			"heroOpen": "VqXecW_heroOpen",
+			"operationCancel": "VqXecW_operationCancel",
+			"aboutGrid": "VqXecW_aboutGrid",
+			"recommendations": "VqXecW_recommendations",
+			"skeletonCard": "VqXecW_skeletonCard",
 			"description": "VqXecW_description",
+			"migrationSource": "VqXecW_migrationSource",
+			"lightboxStage": "VqXecW_lightboxStage",
+			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
 			"stars": "VqXecW_stars",
 			"loadMoreHint": "VqXecW_loadMoreHint",
-			"installedMoreCard": "VqXecW_installedMoreCard",
+			"filters": "VqXecW_filters",
+			"browserPanel": "VqXecW_browserPanel",
+			"externalPlugin": "VqXecW_externalPlugin",
+			"heroNext": "VqXecW_heroNext",
+			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
+			"filterBar": "VqXecW_filterBar",
+			"catalogTitleMain": "VqXecW_catalogTitleMain",
+			"thumbnails": "VqXecW_thumbnails",
+			"tags": "VqXecW_tags",
+			"homeActions": "VqXecW_homeActions",
+			"cardAction": "VqXecW_cardAction",
+			"operationMessage": "VqXecW_operationMessage",
+			"collectionTitle": "VqXecW_collectionTitle",
+			"browserModal": "VqXecW_browserModal",
+			"srOnly": "VqXecW_srOnly",
+			"healthList": "VqXecW_healthList",
+			"pinWarning": "VqXecW_pinWarning",
+			"skeletonShimmer": "VqXecW_skeletonShimmer",
+			"homeGithubLabel": "VqXecW_homeGithubLabel",
+			"catalogHeader": "VqXecW_catalogHeader",
+			"cardStars": "VqXecW_cardStars",
+			"repoMeta": "VqXecW_repoMeta",
+			"operationCopyLog": "VqXecW_operationCopyLog",
+			"homeSubmitAction": "VqXecW_homeSubmitAction",
+			"homeCardCopy": "VqXecW_homeCardCopy",
+			"homeSection": "VqXecW_homeSection",
+			"discoveryGrid": "VqXecW_discoveryGrid",
+			"lightbox": "VqXecW_lightbox",
+			"lightboxClose": "VqXecW_lightboxClose",
+			"actionRow": "VqXecW_actionRow",
+			"homeCardMedia": "VqXecW_homeCardMedia",
+			"homeSectionTitle": "VqXecW_homeSectionTitle",
+			"manualInstallGuide": "VqXecW_manualInstallGuide",
+			"repoLink": "VqXecW_repoLink",
+			"heroNav": "VqXecW_heroNav",
+			"homeLoading": "VqXecW_homeLoading",
+			"root": "VqXecW_root",
+			"statusLabel": "VqXecW_statusLabel",
 			"operationDismiss": "VqXecW_operationDismiss",
-			"migrationSource": "VqXecW_migrationSource",
-			"listLoading": "VqXecW_listLoading",
-			"homeTitleRow": "VqXecW_homeTitleRow",
+			"previewPlaceholder": "VqXecW_previewPlaceholder",
+			"homeCardOpen": "VqXecW_homeCardOpen",
+			"marketUpdateButton": "VqXecW_marketUpdateButton",
+			"homeCardFooter": "VqXecW_homeCardFooter",
+			"lightboxNext": "VqXecW_lightboxNext",
+			"healthSuggestion": "VqXecW_healthSuggestion",
+			"loading": "VqXecW_loading",
+			"homeGithubAction": "VqXecW_homeGithubAction",
+			"skinCard": "VqXecW_skinCard",
+			"version": "VqXecW_version",
+			"installOptions": "VqXecW_installOptions",
 			"browserContent": "VqXecW_browserContent",
-			"thumbnails": "VqXecW_thumbnails"
+			"homeSearch": "VqXecW_homeSearch",
+			"copyCapsule": "VqXecW_copyCapsule",
+			"cardMetaLine": "VqXecW_cardMetaLine"
 		};
 		//#endregion
 		//#region \0dsh-skin-market-css:/Users/leon/Code/liang-intensity-calibrator/code/dsh-skin-market/src/client/media-hover.module.css.mjs
@@ -1346,6 +1346,18 @@ url: https://github.com/<owner>/<repo>
 				updateAvailable: false
 			};
 		}
+		function preferredSelectedId(current, skins, runtimeStates, userSelected) {
+			const active = runtimeStates.find((item) => item.primary) ?? runtimeStates.find((item) => item.activation === "active");
+			const activeId = active !== void 0 && skins.some((skin) => skin.id === active.skinId) ? active.skinId : null;
+			if (!userSelected && activeId !== null) return activeId;
+			if (current !== "" && skins.some((skin) => skin.id === current)) return current;
+			return skins[0]?.id ?? "";
+		}
+		function canPaintInstalledSection(skins, runtimeReady, runtimeStates, catalogSettled) {
+			if (!runtimeReady) return false;
+			if (skins.length > 0 || catalogSettled) return true;
+			return !runtimeStates.some((item) => item.installation !== "missing");
+		}
 		function statusLabel(state) {
 			if (state.installation === "broken") return "安装异常";
 			if (state.pinned && state.activation === "active") return "常驻";
@@ -1563,10 +1575,13 @@ url: https://github.com/<owner>/<repo>
 			const pendingInstallActivation = (0, react.useRef)(null);
 			const inflightSkinIds = (0, react.useRef)(/* @__PURE__ */ new Set());
 			const skinsRef = (0, react.useRef)([]);
+			const statesRef = (0, react.useRef)([]);
+			const runtimeReadyRef = (0, react.useRef)(false);
+			const catalogSettledRef = (0, react.useRef)(false);
 			const selectedIdRef = (0, react.useRef)("");
 			const userSelectedRef = (0, react.useRef)(false);
 			const buildApprovalOperation = operations.find((operation) => operation.phase === "failed" && operation.failure?.action === "approve-build" && operation.id !== dismissedBuildApprovalId) ?? null;
-			const acceptCatalog = (0, react.useCallback)((incoming, runtimeStates = []) => {
+			const acceptCatalog = (0, react.useCallback)((incoming, runtimeStates = statesRef.current) => {
 				pendingScrollAnchor.current = captureListScroll(skinListRef.current);
 				const nextSkins = [...incoming];
 				const selectedBeforeRefresh = selectedIdRef.current;
@@ -1577,67 +1592,91 @@ url: https://github.com/<owner>/<repo>
 				skinsRef.current = nextSkins;
 				setSkins(nextSkins);
 				setSelectedId((value) => {
-					const active = runtimeStates.find((item) => item.primary) ?? runtimeStates.find((item) => item.activation === "active");
-					const activeId = active !== void 0 && nextSkins.some((skin) => skin.id === active.skinId) ? active.skinId : null;
-					const next = !userSelectedRef.current && activeId !== null ? activeId : value !== "" && nextSkins.some((skin) => skin.id === value) ? value : nextSkins[0]?.id ?? "";
+					const next = preferredSelectedId(value, nextSkins, runtimeStates, userSelectedRef.current);
 					selectedIdRef.current = next;
 					return next;
 				});
 			}, []);
+			const applyMarketState = (0, react.useCallback)((state) => {
+				statesRef.current = state.skins;
+				runtimeReadyRef.current = true;
+				setStates(state.skins);
+				setHostKind(state.hostKind ?? "dsh");
+				setRuntime(state.runtime ?? null);
+				setOperations((current) => {
+					const incoming = (state.operations ?? (state.operation == null ? [] : [state.operation])).filter(isLiveOperation);
+					const failed = current.filter((operation) => operation.phase === "failed" && !incoming.some((item) => item.skinId === operation.skinId));
+					const pending = current.filter((operation) => operation.id.startsWith("pending:") && inflightSkinIds.current.has(operation.skinId) && !incoming.some((item) => item.skinId === operation.skinId));
+					return [
+						...incoming,
+						...pending,
+						...failed
+					];
+				});
+				if ("marketUpdateOperation" in state) {
+					const operation = state.marketUpdateOperation !== null && state.marketUpdateOperation !== void 0 && !dismissedMarketOperationIds.current.has(state.marketUpdateOperation.id) ? state.marketUpdateOperation : null;
+					setMarketOperation((current) => current?.phase === "failed" && operation === null ? current : operation);
+					setMarketUpdating(operation?.phase !== void 0 && ![
+						"done",
+						"failed",
+						"cancelled"
+					].includes(operation.phase));
+				}
+				setInstalledClientPlugins(state.installedClientPlugins ?? []);
+				setRunningAgents(typeof state.runningAgentCount === "number" && Number.isInteger(state.runningAgentCount) ? state.runningAgentCount : null);
+				if (state.marketUpdateRestartRequired === true) {
+					setRestartTarget({ kind: "market-update" });
+					setRestartCheckFinished(true);
+					setCompatibilityWarning(null);
+					setConfirmRestart(true);
+				}
+				if (skinsRef.current.length > 0) setSelectedId((value) => {
+					const next = preferredSelectedId(value, skinsRef.current, state.skins, userSelectedRef.current);
+					selectedIdRef.current = next;
+					return next;
+				});
+			}, []);
+			const finishInstalledLoading = (0, react.useCallback)((showLoading) => {
+				if (!showLoading) return;
+				if (canPaintInstalledSection(skinsRef.current, runtimeReadyRef.current, statesRef.current, catalogSettledRef.current)) setLoading(false);
+			}, []);
 			const refresh = (0, react.useCallback)(async (showLoading = false) => {
 				if (showLoading) {
 					setLoading(true);
-					if (skinsRef.current.length === 0) setCatalogLoading(true);
+					runtimeReadyRef.current = false;
+					if (skinsRef.current.length === 0) {
+						setCatalogLoading(true);
+						catalogSettledRef.current = false;
+					}
 				}
 				try {
 					const catalogRequest = json("/dsh-skin-market/catalog").then((catalog) => {
+						acceptCatalog(catalog.skins);
+						catalogCache.write(catalog.skins).catch(() => void 0);
+						catalogSettledRef.current = true;
 						if (showLoading) setCatalogLoading(false);
+						finishInstalledLoading(showLoading);
 						return catalog;
 					});
 					const stateRequest = json("/dsh-skin-market/state").then((state) => {
-						if (showLoading) setLoading(false);
+						applyMarketState(state);
+						finishInstalledLoading(showLoading);
 						return state;
 					});
-					const [catalog, state] = await Promise.all([catalogRequest, stateRequest]);
-					acceptCatalog(catalog.skins, state.skins);
-					catalogCache.write(catalog.skins).catch(() => void 0);
-					setStates(state.skins);
-					setHostKind(state.hostKind ?? "dsh");
-					setRuntime(state.runtime ?? null);
-					setOperations((current) => {
-						const incoming = (state.operations ?? (state.operation == null ? [] : [state.operation])).filter(isLiveOperation);
-						const failed = current.filter((operation) => operation.phase === "failed" && !incoming.some((item) => item.skinId === operation.skinId));
-						const pending = current.filter((operation) => operation.id.startsWith("pending:") && inflightSkinIds.current.has(operation.skinId) && !incoming.some((item) => item.skinId === operation.skinId));
-						return [
-							...incoming,
-							...pending,
-							...failed
-						];
-					});
-					if ("marketUpdateOperation" in state) {
-						const operation = state.marketUpdateOperation !== null && state.marketUpdateOperation !== void 0 && !dismissedMarketOperationIds.current.has(state.marketUpdateOperation.id) ? state.marketUpdateOperation : null;
-						setMarketOperation((current) => current?.phase === "failed" && operation === null ? current : operation);
-						setMarketUpdating(operation?.phase !== void 0 && ![
-							"done",
-							"failed",
-							"cancelled"
-						].includes(operation.phase));
-					}
-					setInstalledClientPlugins(state.installedClientPlugins ?? []);
-					setRunningAgents(typeof state.runningAgentCount === "number" && Number.isInteger(state.runningAgentCount) ? state.runningAgentCount : null);
-					if (state.marketUpdateRestartRequired === true) {
-						setRestartTarget({ kind: "market-update" });
-						setRestartCheckFinished(true);
-						setCompatibilityWarning(null);
-						setConfirmRestart(true);
-					}
+					await Promise.all([catalogRequest, stateRequest]);
 				} finally {
 					if (showLoading) {
+						catalogSettledRef.current = true;
 						setLoading(false);
 						setCatalogLoading(false);
 					}
 				}
-			}, [acceptCatalog, catalogCache]);
+			}, [
+				acceptCatalog,
+				applyMarketState,
+				catalogCache,
+				finishInstalledLoading
+			]);
 			const openRestartConfirm = (0, react.useCallback)(async (skinId, kind = "skin", advisory = null) => {
 				setError(null);
 				setRunningAgents(null);

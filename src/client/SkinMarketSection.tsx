@@ -368,6 +368,20 @@ function runtimeFor(states: RuntimeSkin[], id: string): RuntimeSkin {
   }
 }
 
+function preferredSelectedId(current: string, skins: CatalogSkin[], runtimeStates: RuntimeSkin[], userSelected: boolean): string {
+  const active = runtimeStates.find(item => item.primary) ?? runtimeStates.find(item => item.activation === 'active')
+  const activeId = active !== undefined && skins.some(skin => skin.id === active.skinId) ? active.skinId : null
+  if (!userSelected && activeId !== null) return activeId
+  if (current !== '' && skins.some(skin => skin.id === current)) return current
+  return skins[0]?.id ?? ''
+}
+
+function canPaintInstalledSection(skins: CatalogSkin[], runtimeReady: boolean, runtimeStates: RuntimeSkin[], catalogSettled: boolean): boolean {
+  if (!runtimeReady) return false
+  if (skins.length > 0 || catalogSettled) return true
+  return !runtimeStates.some(item => item.installation !== 'missing')
+}
+
 function statusLabel(state: RuntimeSkin): string {
   if (state.installation === 'broken') return '安装异常'
   if (state.pinned && state.activation === 'active') return '常驻'
@@ -557,6 +571,9 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
   const pendingInstallActivation = useRef<string | null>(null)
   const inflightSkinIds = useRef(new Set<string>())
   const skinsRef = useRef<CatalogSkin[]>([])
+  const statesRef = useRef<RuntimeSkin[]>([])
+  const runtimeReadyRef = useRef(false)
+  const catalogSettledRef = useRef(false)
   const selectedIdRef = useRef('')
   const userSelectedRef = useRef(false)
 
@@ -566,7 +583,7 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
     && operation.id !== dismissedBuildApprovalId
   ) ?? null
 
-  const acceptCatalog = useCallback((incoming: CatalogSkin[], runtimeStates: RuntimeSkin[] = []) => {
+  const acceptCatalog = useCallback((incoming: CatalogSkin[], runtimeStates: RuntimeSkin[] = statesRef.current) => {
     pendingScrollAnchor.current = captureListScroll(skinListRef.current)
     const nextSkins = [...incoming]
     const selectedBeforeRefresh = selectedIdRef.current
@@ -577,73 +594,94 @@ export function SkinMarketSection({ t, clientRuntime, catalogCache = browserCata
     skinsRef.current = nextSkins
     setSkins(nextSkins)
     setSelectedId(value => {
-      const active = runtimeStates.find(item => item.primary) ?? runtimeStates.find(item => item.activation === 'active')
-      const activeId = active !== undefined && nextSkins.some(skin => skin.id === active.skinId) ? active.skinId : null
-      const next = !userSelectedRef.current && activeId !== null
-        ? activeId
-        : value !== '' && nextSkins.some(skin => skin.id === value)
-          ? value
-          : nextSkins[0]?.id ?? ''
+      const next = preferredSelectedId(value, nextSkins, runtimeStates, userSelectedRef.current)
       selectedIdRef.current = next
       return next
     })
   }, [])
 
+  const applyMarketState = useCallback((state: MarketStateResponse) => {
+    statesRef.current = state.skins
+    runtimeReadyRef.current = true
+    setStates(state.skins)
+    setHostKind(state.hostKind ?? 'dsh')
+    setRuntime(state.runtime ?? null)
+    setOperations(current => {
+      const incoming = (state.operations ?? (state.operation == null ? [] : [state.operation])).filter(isLiveOperation)
+      const failed = current.filter(operation => operation.phase === 'failed' && !incoming.some(item => item.skinId === operation.skinId))
+      const pending = current.filter(operation =>
+        operation.id.startsWith('pending:')
+        && inflightSkinIds.current.has(operation.skinId)
+        && !incoming.some(item => item.skinId === operation.skinId))
+      return [...incoming, ...pending, ...failed]
+    })
+    if ('marketUpdateOperation' in state) {
+      const operation = state.marketUpdateOperation !== null && state.marketUpdateOperation !== undefined && !dismissedMarketOperationIds.current.has(state.marketUpdateOperation.id)
+        ? state.marketUpdateOperation
+        : null
+      setMarketOperation(current => current?.phase === 'failed' && operation === null ? current : operation)
+      setMarketUpdating(operation?.phase !== undefined
+        && !['done', 'failed', 'cancelled'].includes(operation.phase))
+    }
+    setInstalledClientPlugins(state.installedClientPlugins ?? [])
+    setRunningAgents(typeof state.runningAgentCount === 'number' && Number.isInteger(state.runningAgentCount) ? state.runningAgentCount : null)
+    if (state.marketUpdateRestartRequired === true) {
+      // Updating the market package can cause DSH to remount this client
+      // entry. Keep the restart prompt recoverable from Host state instead
+      // of relying on the previous React tree's local state.
+      setRestartTarget({ kind: 'market-update' })
+      setRestartCheckFinished(true)
+      setCompatibilityWarning(null)
+      setConfirmRestart(true)
+    }
+    if (skinsRef.current.length > 0) {
+      setSelectedId(value => {
+        const next = preferredSelectedId(value, skinsRef.current, state.skins, userSelectedRef.current)
+        selectedIdRef.current = next
+        return next
+      })
+    }
+  }, [])
+
+  const finishInstalledLoading = useCallback((showLoading: boolean) => {
+    if (!showLoading) return
+    if (canPaintInstalledSection(skinsRef.current, runtimeReadyRef.current, statesRef.current, catalogSettledRef.current)) {
+      setLoading(false)
+    }
+  }, [])
+
   const refresh = useCallback(async (showLoading = false) => {
     if (showLoading) {
       setLoading(true)
-      if (skinsRef.current.length === 0) setCatalogLoading(true)
+      runtimeReadyRef.current = false
+      if (skinsRef.current.length === 0) {
+        setCatalogLoading(true)
+        catalogSettledRef.current = false
+      }
     }
     try {
       const catalogRequest = json<CatalogResponse>('/dsh-skin-market/catalog').then(catalog => {
+        acceptCatalog(catalog.skins)
+        void catalogCache.write(catalog.skins).catch(() => undefined)
+        catalogSettledRef.current = true
         if (showLoading) setCatalogLoading(false)
+        finishInstalledLoading(showLoading)
         return catalog
       })
       const stateRequest = json<MarketStateResponse>('/dsh-skin-market/state').then(state => {
-        if (showLoading) setLoading(false)
+        applyMarketState(state)
+        finishInstalledLoading(showLoading)
         return state
       })
-      const [catalog, state] = await Promise.all([catalogRequest, stateRequest])
-      acceptCatalog(catalog.skins, state.skins)
-      void catalogCache.write(catalog.skins).catch(() => undefined)
-      setStates(state.skins)
-      setHostKind(state.hostKind ?? 'dsh')
-      setRuntime(state.runtime ?? null)
-      setOperations(current => {
-        const incoming = (state.operations ?? (state.operation == null ? [] : [state.operation])).filter(isLiveOperation)
-        const failed = current.filter(operation => operation.phase === 'failed' && !incoming.some(item => item.skinId === operation.skinId))
-        const pending = current.filter(operation =>
-          operation.id.startsWith('pending:')
-          && inflightSkinIds.current.has(operation.skinId)
-          && !incoming.some(item => item.skinId === operation.skinId))
-        return [...incoming, ...pending, ...failed]
-      })
-      if ('marketUpdateOperation' in state) {
-        const operation = state.marketUpdateOperation !== null && state.marketUpdateOperation !== undefined && !dismissedMarketOperationIds.current.has(state.marketUpdateOperation.id)
-          ? state.marketUpdateOperation
-          : null
-        setMarketOperation(current => current?.phase === 'failed' && operation === null ? current : operation)
-        setMarketUpdating(operation?.phase !== undefined
-          && !['done', 'failed', 'cancelled'].includes(operation.phase))
-      }
-      setInstalledClientPlugins(state.installedClientPlugins ?? [])
-      setRunningAgents(typeof state.runningAgentCount === 'number' && Number.isInteger(state.runningAgentCount) ? state.runningAgentCount : null)
-      if (state.marketUpdateRestartRequired === true) {
-        // Updating the market package can cause DSH to remount this client
-        // entry. Keep the restart prompt recoverable from Host state instead
-        // of relying on the previous React tree's local state.
-        setRestartTarget({ kind: 'market-update' })
-        setRestartCheckFinished(true)
-        setCompatibilityWarning(null)
-        setConfirmRestart(true)
-      }
+      await Promise.all([catalogRequest, stateRequest])
     } finally {
       if (showLoading) {
+        catalogSettledRef.current = true
         setLoading(false)
         setCatalogLoading(false)
       }
     }
-  }, [acceptCatalog, catalogCache])
+  }, [acceptCatalog, applyMarketState, catalogCache, finishInstalledLoading])
 
   const openRestartConfirm = useCallback(async (skinId?: string, kind: RestartTarget['kind'] = 'skin', advisory: CompatibilityAssessment | null = null) => {
     setError(null)

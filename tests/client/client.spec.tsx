@@ -527,6 +527,53 @@ describe('client market', () => {
     await waitFor(() => expect(screen.queryByRole('heading', { name: '已安装' })).toBeNull())
   })
 
+  it('keeps installed skeletons when runtime state arrives before catalog skins', async () => {
+    let resolveCatalog!: (value: unknown) => void
+    let resolveState!: (value: unknown) => void
+    vi.stubGlobal('fetch', vi.fn((url: string) => new Promise(resolve => {
+      if (url.endsWith('/catalog')) resolveCatalog = resolve
+      else if (url.endsWith('/state')) resolveState = resolve
+      else resolve({ ok: true, json: async () => ({}) })
+    })))
+
+    render(<SkinMarketSection t={key => key} />)
+    expect(await screen.findByRole('status', { name: '正在加载已安装皮肤' })).toBeTruthy()
+
+    await waitFor(() => expect(typeof resolveState).toBe('function'))
+    resolveState({ ok: true, json: async () => ({ skins: [{
+      skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false,
+    }] }) })
+
+    expect(await screen.findByRole('status', { name: '正在加载已安装皮肤' })).toBeTruthy()
+    expect(screen.queryByRole('button', { name: /测试皮肤 已安装卡片/ })).toBeNull()
+
+    resolveCatalog({ ok: true, json: async () => ({ skins: [skin] }) })
+    expect(await screen.findByRole('button', { name: /测试皮肤 已安装卡片/ })).toBeTruthy()
+    expect(screen.queryByRole('status', { name: '正在加载已安装皮肤' })).toBeNull()
+  })
+
+  it('paints installed cards from the cached catalog without waiting for catalog revalidation', async () => {
+    const catalogCache = { read: vi.fn(async () => [skin]), write: vi.fn(async () => undefined) }
+    let resolveState!: (value: unknown) => void
+    vi.stubGlobal('fetch', vi.fn((url: string) => {
+      if (url.endsWith('/catalog')) return new Promise(() => undefined)
+      if (url.endsWith('/state')) return new Promise(resolve => { resolveState = resolve })
+      return Promise.resolve({ ok: true, json: async () => ({}) })
+    }))
+
+    render(<SkinMarketSection t={key => key} catalogCache={catalogCache} />)
+    expect(await screen.findByRole('button', { name: /测试皮肤 界面预览/ })).toBeTruthy()
+    expect(screen.getByRole('status', { name: '正在加载已安装皮肤' })).toBeTruthy()
+
+    await waitFor(() => expect(typeof resolveState).toBe('function'))
+    resolveState({ ok: true, json: async () => ({ skins: [{
+      skinId: skin.id, installation: 'installed', activation: 'active', primary: true, installedVersion: '1.0.0', updateAvailable: false,
+    }] }) })
+
+    expect(await screen.findByRole('button', { name: /测试皮肤 已安装卡片/ })).toBeTruthy()
+    expect(screen.queryByRole('status', { name: '正在加载已安装皮肤' })).toBeNull()
+  })
+
   it('opens an installed card directly in its selected detail', async () => {
     vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
       ok: true,
@@ -772,6 +819,7 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} catalogCache={catalogCache} />)
 
     expect(await screen.findByRole('button', { name: /测试皮肤 界面预览/ })).toBeTruthy()
+    expect(screen.getByRole('status', { name: '正在加载已安装皮肤' })).toBeTruthy()
     await openSkinCard()
     expect(screen.queryByText('正在加载皮肤列表…')).toBeNull()
     expect(screen.getByText('正在加载皮肤详情…')).toBeTruthy()
