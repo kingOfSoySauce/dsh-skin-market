@@ -25,6 +25,12 @@ install:
     packageName: dsh-ui-enhancer
     packageVersion: 0.2.0
     integrity: sha512-fKABrDkQtWXYSEyhb2EWNshf8z8BBRVZlS4x2KAaFVoph9M0NRo3u45fvtHtXPy/PZEGKi3nvnAWNEYI1Zfltg==
+  npm:
+    name: dsh-ui-enhancer
+    version: 0.2.0
+    integrity: sha512-fKABrDkQtWXYSEyhb2EWNshf8z8BBRVZlS4x2KAaFVoph9M0NRo3u45fvtHtXPy/PZEGKi3nvnAWNEYI1Zfltg==
+    repository: https://github.com/AlexYin-Tongji/dsh-ui-enhancer
+    gitHead: 87f17fe74076570023e01e5d0fc55c21affd2c23
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -63,7 +69,7 @@ license:
   commercialUse: true
 featuredRank: 207
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-23T15:32:42.387Z
+releaseUpdatedAt: 2026-09-15T03:04:43.290Z
 metadataUpdatedAt: 2026-08-23T15:32:42.387Z
 starsUpdatedAt: 2026-09-12T21:25:01.019Z
-updatedAt: 2026-09-12T21:25:01.019Z
+updatedAt: 2026-09-15T03:04:43.290Z

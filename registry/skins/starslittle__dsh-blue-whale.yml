@@ -25,6 +25,12 @@ install:
     packageName: dsh-blue-whale
     packageVersion: 0.1.0
     integrity: sha512-fQRkkY86lygqGKCjbW1qMQGU+sso854vJM8WiG36G6f+izejnT48y0qWqshMAIleZatRzcEYPJFZrziRtuxJdA==
+  npm:
+    name: dsh-blue-whale
+    version: 0.1.0
+    integrity: sha512-fQRkkY86lygqGKCjbW1qMQGU+sso854vJM8WiG36G6f+izejnT48y0qWqshMAIleZatRzcEYPJFZrziRtuxJdA==
+    repository: https://github.com/starslittle/dsh-blue-whale
+    gitHead: e18aa1e27e98df98c478b8d24076a94e64d43ed5
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -59,7 +65,7 @@ license:
   commercialUse: true
 featuredRank: 6
 starsSnapshot: 6
-releaseUpdatedAt: 2026-08-23T05:28:24.292Z
+releaseUpdatedAt: 2026-09-15T03:03:54.597Z
 metadataUpdatedAt: 2026-08-23T05:28:24.292Z
 starsUpdatedAt: 2026-09-12T21:23:53.621Z
-updatedAt: 2026-09-12T21:23:53.621Z
+updatedAt: 2026-09-15T03:03:54.597Z

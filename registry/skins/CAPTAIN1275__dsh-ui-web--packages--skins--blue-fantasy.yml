@@ -26,6 +26,12 @@ install:
     packageName: "@captain1275/dsh-client-ui-skin-blue-fantasy"
     packageVersion: 0.3.1
     integrity: sha512-YmfzMz0+ulq6aacZQNv7tYdwGWIF6IFkTeBB48xO2DQ7duWsiZx0NJy3bJ8IqaWFTUXYMfvx/xSfCxwi6MQwvA==
+  npm:
+    name: "@captain1275/dsh-client-ui-skin-blue-fantasy"
+    version: 0.3.1
+    integrity: sha512-YmfzMz0+ulq6aacZQNv7tYdwGWIF6IFkTeBB48xO2DQ7duWsiZx0NJy3bJ8IqaWFTUXYMfvx/xSfCxwi6MQwvA==
+    repository: https://github.com/CAPTAIN1275/dsh-ui-web
+    gitHead: 251119cedac66dbd31ca8ce6cb112369b60b359b
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -66,8 +72,8 @@ license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 969
-starsSnapshot: 40
-releaseUpdatedAt: 2026-08-23T05:27:12.230Z
+starsSnapshot: 41
+releaseUpdatedAt: 2026-09-15T03:03:36.507Z
 metadataUpdatedAt: 2026-08-25T07:08:19.813Z
-starsUpdatedAt: 2026-09-11T21:41:05.806Z
-updatedAt: 2026-09-11T21:41:05.806Z
+starsUpdatedAt: 2026-09-15T03:03:36.098Z
+updatedAt: 2026-09-15T03:03:36.507Z
