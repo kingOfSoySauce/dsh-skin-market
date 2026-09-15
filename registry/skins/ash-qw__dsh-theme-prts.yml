@@ -16,18 +16,18 @@ modes:
   - light
   - dark
 install:
-  target: github:ash-qw/dsh-theme-prts#45daae7ff26f1d31111bc08f6d79c3224d74d5aa
-  version: 0.1.96
-  commit: 45daae7ff26f1d31111bc08f6d79c3224d74d5aa
+  target: github:ash-qw/dsh-theme-prts#c421fa0f3b550f2bc5981d59b8b746335e71ba14
+  version: 0.1.98
+  commit: c421fa0f3b550f2bc5981d59b8b746335e71ba14
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
   npm:
     name: "@ash-qw/dsh-theme-prts"
-    version: 0.1.96
-    integrity: sha512-rvTtt7/exERQoYRgchobsdqapjEPWk6DJPS5ZaTXRv8jSWoLug2ttxjJ7ZPPXWYTWXWENZ7tyHGPwE4k3ZlQmQ==
+    version: 0.1.98
+    integrity: sha512-4frx7lnNhZCvKYZKikAOj/FeLpIo4L3+QsgZPU2vNFxs9qCnm0cfFU3qo4dRJVqTZBwHJ9WQHIqvfIugtzyaMw==
     repository: https://github.com/ash-qw/dsh-theme-prts
-    gitHead: 45daae7ff26f1d31111bc08f6d79c3224d74d5aa
+    gitHead: c421fa0f3b550f2bc5981d59b8b746335e71ba14
 compatibility:
   dsh: unverified
   platform:
@@ -35,6 +35,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/ash-qw/dsh-theme-prts/45daae7ff26f1d31111bc08f6d79c3224d74d5aa/docs/screenshots/prts-new-conversation-dark.png
   - https://raw.githubusercontent.com/ash-qw/dsh-theme-prts/45daae7ff26f1d31111bc08f6d79c3224d74d5aa/docs/screenshots/prts-new-conversation-light.png
+listScreenshot: https://raw.githubusercontent.com/ash-qw/dsh-theme-prts/45daae7ff26f1d31111bc08f6d79c3224d74d5aa/docs/screenshots/prts-new-conversation-dark.png
 review:
   compatibility: unverified
   preview: verified
@@ -51,20 +52,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 45daae7ff26f1d31111bc08f6d79c3224d74d5aa
-    packageVersion: 0.1.96
+    commit: c421fa0f3b550f2bc5981d59b8b746335e71ba14
+    packageVersion: 0.1.98
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:56.598Z
+    checkedAt: 2026-09-15T03:05:26.429Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 1090
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-08T21:48:50.683Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-09-15T03:05:27.757Z
+metadataUpdatedAt: 2026-09-15T03:05:27.757Z
 starsUpdatedAt: 2026-09-07T21:58:56.672Z
-updatedAt: 2026-09-08T21:48:50.683Z
-listScreenshot: https://raw.githubusercontent.com/ash-qw/dsh-theme-prts/45daae7ff26f1d31111bc08f6d79c3224d74d5aa/docs/screenshots/prts-new-conversation-dark.png
+updatedAt: 2026-09-15T03:05:27.757Z

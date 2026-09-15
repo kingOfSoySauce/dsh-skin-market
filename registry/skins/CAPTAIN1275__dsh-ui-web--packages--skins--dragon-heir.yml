@@ -25,6 +25,12 @@ install:
     packageName: "@captain1275/dsh-client-ui-skin-dragon-heir"
     packageVersion: 0.3.1
     integrity: sha512-MfOOgCaJpu1KReHixqx3nJGwvjnRMGB5W+AQDjjPB/BNN+LEyAl71HOd/uECVj0AKubciHo80/QbyxhCUBw/zw==
+  npm:
+    name: "@captain1275/dsh-client-ui-skin-dragon-heir"
+    version: 0.3.1
+    integrity: sha512-MfOOgCaJpu1KReHixqx3nJGwvjnRMGB5W+AQDjjPB/BNN+LEyAl71HOd/uECVj0AKubciHo80/QbyxhCUBw/zw==
+    repository: https://github.com/CAPTAIN1275/dsh-ui-web
+    gitHead: 251119cedac66dbd31ca8ce6cb112369b60b359b
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -65,8 +71,8 @@ license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 969
-starsSnapshot: 40
-releaseUpdatedAt: 2026-08-23T05:27:13.605Z
+starsSnapshot: 41
+releaseUpdatedAt: 2026-09-15T03:03:36.481Z
 metadataUpdatedAt: 2026-08-25T07:08:20.266Z
-starsUpdatedAt: 2026-09-11T21:41:05.806Z
-updatedAt: 2026-09-11T21:41:05.806Z
+starsUpdatedAt: 2026-09-15T03:03:36.098Z
+updatedAt: 2026-09-15T03:03:36.481Z

@@ -14,9 +14,9 @@ tags:
 modes:
   - light
 install:
-  target: github:krystal-cao/deepseek-harness-swift#e12ce11ca389bd593de23fbea7cacdf3bc4cf75c&path:/assets/dsh-desktop-host
+  target: github:krystal-cao/deepseek-harness-swift#44732b6f7220ea9658ab521f7803591b5dc54850&path:/assets/dsh-desktop-host
   version: 0.1.0
-  commit: e12ce11ca389bd593de23fbea7cacdf3bc4cf75c
+  commit: 44732b6f7220ea9658ab521f7803591b5dc54850
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -44,19 +44,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: e12ce11ca389bd593de23fbea7cacdf3bc4cf75c
+    commit: 44732b6f7220ea9658ab521f7803591b5dc54850
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-13T21:24:40.058Z
+    checkedAt: 2026-09-15T03:04:56.503Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1073
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-13T21:24:41.115Z
-metadataUpdatedAt: 2026-09-13T21:24:41.115Z
+releaseUpdatedAt: 2026-09-15T03:04:57.839Z
+metadataUpdatedAt: 2026-09-15T03:04:57.839Z
 starsUpdatedAt: 2026-09-07T21:58:47.284Z
-updatedAt: 2026-09-13T21:24:41.115Z
+updatedAt: 2026-09-15T03:04:57.839Z

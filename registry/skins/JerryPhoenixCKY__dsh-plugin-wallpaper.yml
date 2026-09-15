@@ -16,19 +16,13 @@ modes:
   - light
   - dark
 install:
-  target: github:JerryPhoenixCKY/dsh-plugin-wallpaper#168ab70ba342d112fa8184f91bfe35d923bb168c
-  version: 0.1.4
-  commit: 168ab70ba342d112fa8184f91bfe35d923bb168c
+  target: github:JerryPhoenixCKY/dsh-plugin-wallpaper#b964a23b76e267a4a8cd5c602f7a47f488733ae3
+  version: 0.1.6
+  commit: b964a23b76e267a4a8cd5c602f7a47f488733ae3
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
-  allowBuild: dsh-plugin-wallpaper@https://codeload.github.com/JerryPhoenixCKY/dsh-plugin-wallpaper/tar.gz/168ab70ba342d112fa8184f91bfe35d923bb168c
-  npm:
-    name: dsh-plugin-wallpaper
-    version: 0.1.4
-    integrity: sha512-s1FgGHlD0SY2lmcVt+ear4ptiyQYqI0Qr902Dqq9x4IfAQ1vE4CIW8jl2cE9z3b8oO43gl0Qr3Nodd88kXcN6A==
-    repository: https://github.com/JerryPhoenixCKY/dsh-plugin-wallpaper
-    gitHead: 168ab70ba342d112fa8184f91bfe35d923bb168c
+  allowBuild: dsh-plugin-wallpaper@https://codeload.github.com/JerryPhoenixCKY/dsh-plugin-wallpaper/tar.gz/b964a23b76e267a4a8cd5c602f7a47f488733ae3
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -37,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/JerryPhoenixCKY/dsh-plugin-wallpaper/168ab70ba342d112fa8184f91bfe35d923bb168c/demo/3.png
   - https://raw.githubusercontent.com/JerryPhoenixCKY/dsh-plugin-wallpaper/168ab70ba342d112fa8184f91bfe35d923bb168c/demo/2.png
   - https://raw.githubusercontent.com/JerryPhoenixCKY/dsh-plugin-wallpaper/168ab70ba342d112fa8184f91bfe35d923bb168c/demo/1.png
+listScreenshot: https://raw.githubusercontent.com/JerryPhoenixCKY/dsh-plugin-wallpaper/b964a23b76e267a4a8cd5c602f7a47f488733ae3/demo/3.png
 review:
   compatibility: verified
   preview: verified
@@ -51,20 +46,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 168ab70ba342d112fa8184f91bfe35d923bb168c
-    packageVersion: 0.1.4
+    commit: b964a23b76e267a4a8cd5c602f7a47f488733ae3
+    packageVersion: 0.1.6
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:33:49.359Z
+    checkedAt: 2026-09-15T03:05:40.804Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1021
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-23T05:33:49.431Z
-metadataUpdatedAt: 2026-08-23T05:33:49.431Z
+releaseUpdatedAt: 2026-09-15T03:05:42.038Z
+metadataUpdatedAt: 2026-09-15T03:05:42.038Z
 starsUpdatedAt: 2026-09-09T21:40:23.049Z
-updatedAt: 2026-09-09T21:40:23.049Z
+updatedAt: 2026-09-15T03:05:42.038Z

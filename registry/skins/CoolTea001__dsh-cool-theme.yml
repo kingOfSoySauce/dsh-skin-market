@@ -25,6 +25,12 @@ install:
     packageName: dsh-cool-theme
     packageVersion: 0.4.0
     integrity: sha512-LP7QneJrdTw+UjnDNwC1/lzPd8vV64R7nN87f72BNiy3dfdwlo3pRbep9oY9Fuki+Eh6RINVxSRZDJys8SArCQ==
+  npm:
+    name: dsh-cool-theme
+    version: 0.4.0
+    integrity: sha512-LP7QneJrdTw+UjnDNwC1/lzPd8vV64R7nN87f72BNiy3dfdwlo3pRbep9oY9Fuki+Eh6RINVxSRZDJys8SArCQ==
+    repository: https://github.com/CoolTea001/dsh-cool-theme
+    gitHead: 0fcf0a274b1f2e0550c0615e318bb5dec9d8fb54
 compatibility:
   dsh: unverified
   platform:
@@ -60,7 +66,7 @@ license:
   commercialUse: true
 featuredRank: 1056
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-11T21:42:09.653Z
+releaseUpdatedAt: 2026-09-15T03:04:18.699Z
 metadataUpdatedAt: 2026-09-11T21:42:09.653Z
 starsUpdatedAt: 2026-09-07T21:58:30.047Z
-updatedAt: 2026-09-11T21:42:09.653Z
+updatedAt: 2026-09-15T03:04:18.699Z

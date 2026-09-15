@@ -22,6 +22,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-version-not-stable
+  npm:
+    name: dsh-skin-studio
+    version: 0.6.0-alpha.1
+    integrity: sha512-eei2k8if5LL5RT1vjyy9H/x5Lv/z8CTcvkQg4DdsR6yZnDH7uVZSSOvhkj9QeLT9120Ct92XVknRQqBNbU/aVg==
+    repository: https://github.com/realMisakaMikoto/dsh-skin-studio
+    gitHead: def6d6db1415830e185838d1f1dc7da3b99d4ce1
 compatibility:
   dsh: 0.1.0-rc.8
   platform:
@@ -61,7 +67,7 @@ license:
   commercialUse: true
 featuredRank: 1040
 starsSnapshot: 3
-releaseUpdatedAt: 2026-09-10T21:34:53.382Z
+releaseUpdatedAt: 2026-09-15T03:04:14.858Z
 metadataUpdatedAt: 2026-09-10T21:34:53.382Z
 starsUpdatedAt: 2026-09-09T21:39:39.254Z
-updatedAt: 2026-09-10T21:34:53.382Z
+updatedAt: 2026-09-15T03:04:14.858Z
