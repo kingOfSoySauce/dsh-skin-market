@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:realMisakaMikoto/dsh-skin-studio#def6d6db1415830e185838d1f1dc7da3b99d4ce1
+  target: github:realMisakaMikoto/dsh-skin-studio#ff077768d998a6ea52218717da98878a0d38a634
   version: 0.6.0-alpha.1
-  commit: def6d6db1415830e185838d1f1dc7da3b99d4ce1
+  commit: ff077768d998a6ea52218717da98878a0d38a634
   desktop:
     mode: manual-only
     reason: npm-version-not-stable
@@ -27,7 +27,7 @@ install:
     version: 0.6.0-alpha.1
     integrity: sha512-eei2k8if5LL5RT1vjyy9H/x5Lv/z8CTcvkQg4DdsR6yZnDH7uVZSSOvhkj9QeLT9120Ct92XVknRQqBNbU/aVg==
     repository: https://github.com/realMisakaMikoto/dsh-skin-studio
-    gitHead: def6d6db1415830e185838d1f1dc7da3b99d4ce1
+    gitHead: ff077768d998a6ea52218717da98878a0d38a634
 compatibility:
   dsh: 0.1.0-rc.8
   platform:
@@ -52,13 +52,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: def6d6db1415830e185838d1f1dc7da3b99d4ce1
+    commit: ff077768d998a6ea52218717da98878a0d38a634
     packageVersion: 0.6.0-alpha.1
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.8
     mode: static
     result: unknown
-    checkedAt: 2026-09-10T21:34:50.895Z
+    checkedAt: 2026-09-16T22:04:05.660Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -67,7 +67,7 @@ license:
   commercialUse: true
 featuredRank: 1040
 starsSnapshot: 3
-releaseUpdatedAt: 2026-09-15T03:04:14.858Z
-metadataUpdatedAt: 2026-09-10T21:34:53.382Z
+releaseUpdatedAt: 2026-09-16T22:04:07.785Z
+metadataUpdatedAt: 2026-09-16T22:04:07.785Z
 starsUpdatedAt: 2026-09-09T21:39:39.254Z
-updatedAt: 2026-09-15T03:04:14.858Z
+updatedAt: 2026-09-16T22:04:07.785Z

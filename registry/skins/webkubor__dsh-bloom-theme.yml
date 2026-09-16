@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#119562fad98db95deb962133f56e16be26a771ba
-  version: 0.13.2
-  commit: 119562fad98db95deb962133f56e16be26a771ba
+  target: github:webkubor/dsh-bloom-theme#bd0c5ae419ff2879bd2a8bd4cb429e07defa5df7
+  version: 0.13.3
+  commit: bd0c5ae419ff2879bd2a8bd4cb429e07defa5df7
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
@@ -51,19 +51,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 119562fad98db95deb962133f56e16be26a771ba
-    packageVersion: 0.13.2
+    commit: bd0c5ae419ff2879bd2a8bd4cb429e07defa5df7
+    packageVersion: 0.13.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-15T22:05:22.388Z
+    checkedAt: 2026-09-16T22:03:26.775Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 193
-starsSnapshot: 32
-releaseUpdatedAt: 2026-09-15T22:05:30.590Z
-metadataUpdatedAt: 2026-09-15T22:05:30.590Z
-starsUpdatedAt: 2026-09-12T21:23:28.035Z
-updatedAt: 2026-09-15T22:05:30.590Z
+starsSnapshot: 34
+releaseUpdatedAt: 2026-09-16T22:03:34.726Z
+metadataUpdatedAt: 2026-09-16T22:03:34.726Z
+starsUpdatedAt: 2026-09-16T22:03:34.726Z
+updatedAt: 2026-09-16T22:03:34.726Z
