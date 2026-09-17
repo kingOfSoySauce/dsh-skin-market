@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:wangxilhy23/dsh-wx-skin#3f5bfd304c9f6ed887bcc13ff6d855fd2595a02c
-  version: 0.1.3
-  commit: 3f5bfd304c9f6ed887bcc13ff6d855fd2595a02c
+  target: github:wangxilhy23/dsh-wx-skin#9fc9c31e84552cbe9e6155125e5cea9aba3da303
+  version: 0.1.5
+  commit: 9fc9c31e84552cbe9e6155125e5cea9aba3da303
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -47,12 +47,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 3f5bfd304c9f6ed887bcc13ff6d855fd2595a02c
-    packageVersion: 0.1.3
+    commit: 9fc9c31e84552cbe9e6155125e5cea9aba3da303
+    packageVersion: 0.1.5
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-09-12T21:24:12.257Z
+    checkedAt: 2026-09-17T22:03:52.439Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -61,7 +61,7 @@ license:
   commercialUse: true
 featuredRank: 68
 starsSnapshot: 4
-releaseUpdatedAt: 2026-09-12T21:24:14.458Z
-metadataUpdatedAt: 2026-09-12T21:24:14.458Z
+releaseUpdatedAt: 2026-09-17T22:03:53.170Z
+metadataUpdatedAt: 2026-09-17T22:03:53.170Z
 starsUpdatedAt: 2026-08-25T07:09:27.791Z
-updatedAt: 2026-09-12T21:24:14.458Z
+updatedAt: 2026-09-17T22:03:53.170Z
