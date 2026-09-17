@@ -272,20 +272,116 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 ## 自动同步更新
 
 <!-- dsh-auto-entry:he2way.dsh-task-console -->
-### 2026-09-15 · dsh-task-console
+### 2026-09-16 · dsh-task-console
 
 [He2way/dsh-task-console](https://github.com/He2way/dsh-task-console)：一个 DeepSeek Harness (DSH) 客户端插件：为当前会话提供悬浮毛玻璃「任务控制台」。点击右下角的玻璃按钮，页面翻到背面 —— 一块毛玻璃面板上悬浮着可鼠标拖拽的卡片，实时展示后台任务、子代理、会话概览与工作区。
 
-- 版本：`0.9.3`
-- 固定 commit：`b82ad5c4aacd60c151133e670be1a3dd79589005`
+- 版本：`0.13.0`
+- 固定 commit：`e745a9e85c24099ee16faffd30cf7f5df84271a2`
+
+<!-- dsh-auto-entry:lengduan.dsh-815-skin -->
+### 2026-09-16 · dsh-815-skin
+
+[lengduan/dsh-815-skin](https://github.com/lengduan/dsh-815-skin)：1945-08-15 世界名画 dsh皮肤
+
+- 版本：`0.1.23`
+- 固定 commit：`92d8db8e83556f72d4705322587239b1bc18c38c`
 
 <!-- dsh-auto-entry:krystal-cao.deepseek-harness-swift -->
-### 2026-09-15 · deepseek-harness-swift
+### 2026-09-16 · deepseek-harness-swift
 
 [krystal-cao/deepseek-harness-swift](https://github.com/krystal-cao/deepseek-harness-swift)：基于 AppKit、SwiftUI 和 WKWebView 的原生 macOS 桌面壳。
 
 - 版本：`0.1.0`
-- 固定 commit：`996139878055d787b4d3462000d5e579b97a7906`
+- 固定 commit：`9ff962c1b6f8b6c5601701afaa98ba3d1ea92ee3`
+
+<!-- dsh-auto-entry:lengzhanbao.dsh-raiden-theme -->
+### 2026-09-16 · dsh-raiden-theme
+
+[lengzhanbao/dsh-raiden-theme](https://github.com/lengzhanbao/dsh-raiden-theme)：Raiden Inazuma Atelier / 稻妻雷电工房
+
+- 版本：`0.1.6`
+- 固定 commit：`9441e030180508e29197efb337c7ebce36c18d7c`
+
+<!-- dsh-auto-entry:eh-tools.dsh-plugin-ehtools -->
+### 2026-09-16 · dsh-plugin-ehtools
+
+[eh-tools/dsh-plugin](https://github.com/eh-tools/dsh-plugin)：DeepSeek Harness 主题 —— 复刻 https://www.deepseek.com/harness/en/ 的粒子鲸鱼背景，跑在自有插件上。
+
+- 版本：`0.4.0`
+- 固定 commit：`3d861a4e13ae9501b848ad761b911715b2e18b46`
+
+<!-- dsh-auto-entry:yudaxia1.one-dark-pro-dsh-plugin -->
+### 2026-09-16 · one-dark-pro-dsh-plugin
+
+[yudaxia1/one-dark-pro-dsh-plugin](https://github.com/yudaxia1/one-dark-pro-dsh-plugin)：适用于 DeepSeek Harness Web UI 的 One Dark Pro 主题插件。
+
+- 版本：`0.1.0`
+- 固定 commit：`360dbd50dbbdb14f30e5f7171b888bca8122e5a8`
+
+<!-- dsh-auto-entry:realmisakamikoto.dsh-skin-studio -->
+### 2026-09-16 · dsh-skin-studio
+
+[realMisakaMikoto/dsh-skin-studio](https://github.com/realMisakaMikoto/dsh-skin-studio)：DeepSeek Harness Web UI 的本地皮肤工作室：创建、实时预览、管理与分享完整外观。
+
+- 版本：`0.6.0-alpha.1`
+- 固定 commit：`ff077768d998a6ea52218717da98878a0d38a634`
+
+<!-- dsh-auto-entry:lengzhanbao.dsh-taffy-theme -->
+### 2026-09-16 · dsh-taffy-theme
+
+[lengzhanbao/dsh-taffy-theme](https://github.com/lengzhanbao/dsh-taffy-theme)：Taffy Live Atelier / 塔菲直播工房
+
+- 版本：`0.1.9`
+- 固定 commit：`dd702665344597c3c7287bfdc93c35ec4df71b00`
+
+<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
+### 2026-09-16 · dsh-bloom-theme
+
+[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)：DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
+
+- 版本：`0.13.3`
+- 固定 commit：`bd0c5ae419ff2879bd2a8bd4cb429e07defa5df7`
+
+<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
+### 2026-09-16 · dsh-kimino-theme
+
+[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
+
+- 版本：`66.4.0`
+- 固定 commit：`06ff9d3f1de775033320430990bcc10bcc067f92`
+
+<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
+### 2026-09-16 · dsh-catppuccin
+
+[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)：DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
+
+- 版本：`0.5.3`
+- 固定 commit：`825aa56a55a433733d6eda7513794c7e24437157`
+
+<!-- dsh-auto-entry:featherhunter.dsh-opencode-palette -->
+### 2026-09-16 · dsh-opencode-palette
+
+[FeatherHunter/dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette)：让 DeepSeek Harness 穿上 34 款经典皮肤——东京的霓虹夜色、德古拉的暗红月光、复古工坊的暖黄灯火、黑客帝国的数字雨、玫瑰松林间的风……一键换肤，即点即换，重启不丢。34 legendary skins for DeepSeek Harness — tokyonight's neon dusk, dracula's crimson moon, gruvbox's retro glow, the matrix's digital rain, rose-pine's rosewood calm… one click, instant, persisted.
+
+- 版本：`1.7.2`
+- 固定 commit：`8ea110c0f17c18251df62ec94c9774a2340e9820`
+
+<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
+### 2026-09-16 · dsh-dream-skin
+
+[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
+
+- 版本：`9.16.0`
+- 固定 commit：`58bc228d3f27db24c67bc34193147887688e2c6a`
+
+<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
+### 2026-09-16 · dsh-wallpaper-engine
+
+[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
+
+- 版本：`0.7.3`
+- 固定 commit：`8a0d1d8b0a66de89342b8a7ea0de15d2644600e8`
 
 <!-- dsh-auto-entry:exoticknight.dsh-theme-eink-retro -->
 ### 2026-09-15 · dsh-theme-eink-retro
@@ -303,14 +399,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.5.0`
 - 固定 commit：`92a74940c96060ab237a3effeea3690bf7b20d30`
 
-<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
-### 2026-09-15 · dsh-bloom-theme
-
-[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)：DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
-
-- 版本：`0.13.2`
-- 固定 commit：`119562fad98db95deb962133f56e16be26a771ba`
-
 <!-- dsh-auto-entry:chouxiaohuai.uiskin-theme -->
 ### 2026-09-15 · uiskin-theme
 
@@ -318,30 +406,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`1.1.0`
 - 固定 commit：`a355a9b16ba692b7551ffac0a6a6a9fea1149e49`
-
-<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
-### 2026-09-15 · dsh-kimino-theme
-
-[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
-
-- 版本：`66.4.0`
-- 固定 commit：`190092aa04a38b357194fe0ef7d9173060dac94e`
-
-<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
-### 2026-09-15 · dsh-catppuccin
-
-[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)：DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
-
-- 版本：`0.5.2`
-- 固定 commit：`57cdae33fcc107de2f1e610a4b1df13969ca2b0e`
-
-<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
-### 2026-09-15 · dsh-dream-skin
-
-[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
-
-- 版本：`9.15.2`
-- 固定 commit：`0d8c0c4f6e4a4c7cbbbe6fbd95b28781d966d47a`
 
 <!-- dsh-auto-entry:laohankk.crt.terminal -->
 ### 2026-09-15 · CRT 终端（琥珀）
@@ -383,14 +447,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.1.98`
 - 固定 commit：`c421fa0f3b550f2bc5981d59b8b746335e71ba14`
 
-<!-- dsh-auto-entry:lengduan.dsh-815-skin -->
-### 2026-09-15 · dsh-815-skin
-
-[lengduan/dsh-815-skin](https://github.com/lengduan/dsh-815-skin)：1945-08-15 世界名画 dsh皮肤
-
-- 版本：`0.1.19`
-- 固定 commit：`c7f73af9fe44de8e453aa68ec046fdd06f9fff69`
-
 <!-- dsh-auto-entry:jiangwangyang.dsh-theme-blackhole -->
 ### 2026-09-15 · dsh-theme-blackhole
 
@@ -414,14 +470,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.2.0`
 - 固定 commit：`87f17fe74076570023e01e5d0fc55c21affd2c23`
-
-<!-- dsh-auto-entry:realmisakamikoto.dsh-skin-studio -->
-### 2026-09-15 · dsh-skin-studio
-
-[realMisakaMikoto/dsh-skin-studio](https://github.com/realMisakaMikoto/dsh-skin-studio)：DeepSeek Harness Web UI 的本地皮肤工作室：创建、实时预览、管理与分享完整外观。
-
-- 版本：`0.6.0-alpha.1`
-- 固定 commit：`def6d6db1415830e185838d1f1dc7da3b99d4ce1`
 
 <!-- dsh-auto-entry:lhy723.dsh-neu-theme -->
 ### 2026-09-15 · dsh-neu-theme
@@ -502,14 +550,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.1.1`
 - 固定 commit：`a108025e17c3962c88148bab1dbddd91e7b47f94`
-
-<!-- dsh-auto-entry:eh-tools.dsh-plugin-ehtools -->
-### 2026-09-13 · dsh-plugin-ehtools
-
-[eh-tools/dsh-plugin](https://github.com/eh-tools/dsh-plugin)：DeepSeek Harness 主题 —— 复刻 https://www.deepseek.com/harness/en/ 的粒子鲸鱼背景，跑在自有插件上。
-
-- 版本：`0.3.0`
-- 固定 commit：`fe9e00a0b71fc930914c3f883091c324d456d4d9`
 
 <!-- dsh-auto-entry:alexpeng07.dsh-custom-plugin -->
 ### 2026-09-13 · dsh-custom-plugin
@@ -623,14 +663,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`1.2.4`
 - 固定 commit：`6a7d93ecd33a159cdf6c72c4c4282403f6d0c17b`
 
-<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
-### 2026-09-11 · dsh-wallpaper-engine
-
-[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
-
-- 版本：`0.7.2`
-- 固定 commit：`ae734a2c80ca04099b793f8ce8a182bcb5ad8f79`
-
 <!-- dsh-auto-entry:a39485972.sudo.dsh.skin.yumemizuki -->
 ### 2026-09-10 · dsh-skin-Yumemizuki
 
@@ -638,14 +670,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.1.0`
 - 固定 commit：`204623ab9ae3a0835d168f803c2b23ed098c670c`
-
-<!-- dsh-auto-entry:lengzhanbao.dsh-raiden-theme -->
-### 2026-09-10 · dsh-raiden-theme
-
-[lengzhanbao/dsh-raiden-theme](https://github.com/lengzhanbao/dsh-raiden-theme)：Raiden Inazuma Atelier / 稻妻雷电工房
-
-- 版本：`0.1.3`
-- 固定 commit：`4cae526d307a9b26f2fc71a3c450eb90dbd29d1a`
 
 <!-- dsh-auto-entry:darkskyx15.dsh-client-ui-m3-theme -->
 ### 2026-09-10 · dsh-client-ui-m3-theme
@@ -662,14 +686,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`3.0.0`
 - 固定 commit：`8cadc5ec9ba3ffb1c3e76e9f3911226dc291f29c`
-
-<!-- dsh-auto-entry:lengzhanbao.dsh-taffy-theme -->
-### 2026-09-10 · dsh-taffy-theme
-
-[lengzhanbao/dsh-taffy-theme](https://github.com/lengzhanbao/dsh-taffy-theme)：Taffy Live Atelier / 塔菲直播工房
-
-- 版本：`0.1.6`
-- 固定 commit：`7484b7d3a8ee61c09a434a7db058bbcecea5c9ef`
 
 <!-- dsh-auto-entry:frog755.dsh-prompt-vault -->
 ### 2026-09-10 · dsh-prompt-vault
@@ -878,14 +894,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.1.1`
 - 固定 commit：`25c70fcd31b0cf36f8a0ff57b0413223daaf5d27`
-
-<!-- dsh-auto-entry:featherhunter.dsh-opencode-palette -->
-### 2026-09-07 · dsh-opencode-palette
-
-[FeatherHunter/dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette)：让 DeepSeek Harness 穿上 34 款经典皮肤——东京的霓虹夜色、德古拉的暗红月光、复古工坊的暖黄灯火、黑客帝国的数字雨、玫瑰松林间的风……一键换肤，即点即换，重启不丢。34 legendary skins for DeepSeek Harness — tokyonight's neon dusk, dracula's crimson moon, gruvbox's retro glow, the matrix's digital rain, rose-pine's rosewood calm… one click, instant, persisted.
-
-- 版本：`1.7.1`
-- 固定 commit：`aa3f19f129061b31969f8eb141257bf5b616b17a`
 
 <!-- dsh-auto-entry:anionex.dsh-eye-care -->
 ### 2026-09-06 · dsh-eye-care

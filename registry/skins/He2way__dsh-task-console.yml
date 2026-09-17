@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:He2way/dsh-task-console#b82ad5c4aacd60c151133e670be1a3dd79589005
-  version: 0.9.3
-  commit: b82ad5c4aacd60c151133e670be1a3dd79589005
+  target: github:He2way/dsh-task-console#e745a9e85c24099ee16faffd30cf7f5df84271a2
+  version: 0.13.0
+  commit: e745a9e85c24099ee16faffd30cf7f5df84271a2
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,6 +28,7 @@ compatibility:
     - web
 screenshots:
   - https://opengraph.githubassets.com/placeholder/he2way.dsh-task-console
+listScreenshot: https://raw.githubusercontent.com/He2way/dsh-task-console/e745a9e85c24099ee16faffd30cf7f5df84271a2/docs/architecture.visual-check.1440x900.light.png
 review:
   compatibility: unverified
   preview: repository-card
@@ -35,28 +36,27 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: b82ad5c4aacd60c151133e670be1a3dd79589005
-    packageVersion: 0.9.3
+    commit: e745a9e85c24099ee16faffd30cf7f5df84271a2
+    packageVersion: 0.13.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-15T22:07:24.651Z
+    checkedAt: 2026-09-16T22:05:18.713Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 107
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-15T22:07:24.770Z
-metadataUpdatedAt: 2026-09-15T22:07:24.770Z
+releaseUpdatedAt: 2026-09-16T22:05:18.968Z
+metadataUpdatedAt: 2026-09-16T22:05:18.968Z
 starsUpdatedAt: 2026-08-16 13:55:53.334000+00:00
-updatedAt: 2026-09-15T22:07:24.770Z
+updatedAt: 2026-09-16T22:05:18.968Z

@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:FeatherHunter/dsh-opencode-palette#aa3f19f129061b31969f8eb141257bf5b616b17a&path:/package
-  version: 1.7.1
-  commit: aa3f19f129061b31969f8eb141257bf5b616b17a
+  target: github:FeatherHunter/dsh-opencode-palette#8ea110c0f17c18251df62ec94c9774a2340e9820&path:/package
+  version: 1.7.2
+  commit: 8ea110c0f17c18251df62ec94c9774a2340e9820
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -35,6 +35,7 @@ screenshots:
   - https://raw.githubusercontent.com/FeatherHunter/dsh-opencode-palette/c459636f1d88a5eb3c0cfb37aff2ff09d62c10d3/showcase/overview-opencode-zh.png
   - https://raw.githubusercontent.com/FeatherHunter/dsh-opencode-palette/c459636f1d88a5eb3c0cfb37aff2ff09d62c10d3/showcase/opencode%E8%B0%83%E8%89%B2%E6%9D%BF%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2-zh.png
   - https://raw.githubusercontent.com/FeatherHunter/dsh-opencode-palette/c459636f1d88a5eb3c0cfb37aff2ff09d62c10d3/showcase/overview-github-light-zh.png
+listScreenshot: https://raw.githubusercontent.com/FeatherHunter/dsh-opencode-palette/8ea110c0f17c18251df62ec94c9774a2340e9820/showcase/overview-opencode-zh.png
 review:
   compatibility: unverified
   preview: verified
@@ -50,19 +51,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: aa3f19f129061b31969f8eb141257bf5b616b17a
-    packageVersion: 1.7.1
+    commit: 8ea110c0f17c18251df62ec94c9774a2340e9820
+    packageVersion: 1.7.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:14.511Z
+    checkedAt: 2026-09-16T22:03:28.085Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 139
-starsSnapshot: 27
-releaseUpdatedAt: 2026-09-07T21:58:14.662Z
-metadataUpdatedAt: 2026-09-07T21:58:14.662Z
-starsUpdatedAt: 2026-09-15T22:05:22.863Z
-updatedAt: 2026-09-15T22:05:22.863Z
+starsSnapshot: 29
+releaseUpdatedAt: 2026-09-16T22:03:28.761Z
+metadataUpdatedAt: 2026-09-16T22:03:28.761Z
+starsUpdatedAt: 2026-09-16T22:03:28.761Z
+updatedAt: 2026-09-16T22:03:28.761Z
