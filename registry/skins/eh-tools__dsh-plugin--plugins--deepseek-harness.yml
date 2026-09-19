@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:eh-tools/dsh-plugin#3c727424af3c1015e5f6b7ced08c7d6d06df1126&path:/plugins/deepseek-harness
+  target: github:eh-tools/dsh-plugin#3e9b8a8ed9d6add514904f5eaee6b72f63e17f4f&path:/plugins/deepseek-harness
   version: 0.4.0
-  commit: 3c727424af3c1015e5f6b7ced08c7d6d06df1126
+  commit: 3e9b8a8ed9d6add514904f5eaee6b72f63e17f4f
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -47,19 +47,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 3c727424af3c1015e5f6b7ced08c7d6d06df1126
+    commit: 3e9b8a8ed9d6add514904f5eaee6b72f63e17f4f
     packageVersion: 0.4.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-17T22:04:20.827Z
+    checkedAt: 2026-09-19T21:26:00.718Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1059
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-17T22:04:21.265Z
-metadataUpdatedAt: 2026-09-17T22:04:21.265Z
+releaseUpdatedAt: 2026-09-19T21:26:00.959Z
+metadataUpdatedAt: 2026-09-19T21:26:00.959Z
 starsUpdatedAt: 2026-09-09T21:40:17.913Z
-updatedAt: 2026-09-17T22:04:21.265Z
+updatedAt: 2026-09-19T21:26:00.959Z

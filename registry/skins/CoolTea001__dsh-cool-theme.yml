@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:CoolTea001/dsh-cool-theme#92a74940c96060ab237a3effeea3690bf7b20d30
-  version: 0.5.0
-  commit: 92a74940c96060ab237a3effeea3690bf7b20d30
+  target: github:CoolTea001/dsh-cool-theme#3bb25448a267735124bbe16fe50d5de23d6573cf
+  version: 0.6.1
+  commit: 3bb25448a267735124bbe16fe50d5de23d6573cf
   desktop:
     mode: managed
     registry: npm
@@ -27,10 +27,10 @@ install:
     integrity: sha512-LP7QneJrdTw+UjnDNwC1/lzPd8vV64R7nN87f72BNiy3dfdwlo3pRbep9oY9Fuki+Eh6RINVxSRZDJys8SArCQ==
   npm:
     name: dsh-cool-theme
-    version: 0.5.0
-    integrity: sha512-GD4aZGr2964aSFMbqJ9ViaJHY43oeOzvgAEQFyxtfUdeUa/FBabfRqFwT3KojAaBgIGGMt2mkC0XFdRYrRqg+w==
+    version: 0.6.1
+    integrity: sha512-ec4yWlo2yrnsE3jtiryReF6t8upIobhtvYU6W/mhCiYafNFngVO4iSkrA2z2ts0L839KRuoM82r/MNZCIblwyg==
     repository: https://github.com/CoolTea001/dsh-cool-theme
-    gitHead: 92a74940c96060ab237a3effeea3690bf7b20d30
+    gitHead: 3bb25448a267735124bbe16fe50d5de23d6573cf
 compatibility:
   dsh: unverified
   platform:
@@ -54,19 +54,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 92a74940c96060ab237a3effeea3690bf7b20d30
-    packageVersion: 0.5.0
+    commit: 3bb25448a267735124bbe16fe50d5de23d6573cf
+    packageVersion: 0.6.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-15T22:06:09.412Z
+    checkedAt: 2026-09-19T21:25:42.390Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1056
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-15T22:06:12.330Z
-metadataUpdatedAt: 2026-09-15T22:06:12.330Z
+releaseUpdatedAt: 2026-09-19T21:25:43.657Z
+metadataUpdatedAt: 2026-09-19T21:25:43.657Z
 starsUpdatedAt: 2026-09-07T21:58:30.047Z
-updatedAt: 2026-09-15T22:06:12.330Z
+updatedAt: 2026-09-19T21:25:43.657Z
