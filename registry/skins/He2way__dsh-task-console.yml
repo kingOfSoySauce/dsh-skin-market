@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:He2way/dsh-task-console#8887de37f7eefe03d0d8409d2e5f728516d21841
-  version: 0.23.0
-  commit: 8887de37f7eefe03d0d8409d2e5f728516d21841
+  target: github:He2way/dsh-task-console#0030a778da8d3d39b93e0a556de26b786435042c
+  version: 0.24.2
+  commit: 0030a778da8d3d39b93e0a556de26b786435042c
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -44,19 +44,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 8887de37f7eefe03d0d8409d2e5f728516d21841
-    packageVersion: 0.23.0
+    commit: 0030a778da8d3d39b93e0a556de26b786435042c
+    packageVersion: 0.24.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-17T22:04:49.675Z
+    checkedAt: 2026-09-18T21:39:21.243Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 107
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-17T22:04:50.091Z
-metadataUpdatedAt: 2026-09-17T22:04:50.091Z
+releaseUpdatedAt: 2026-09-18T21:39:22.047Z
+metadataUpdatedAt: 2026-09-18T21:39:22.047Z
 starsUpdatedAt: 2026-08-16 13:55:53.334000+00:00
-updatedAt: 2026-09-17T22:04:50.091Z
+updatedAt: 2026-09-18T21:39:22.047Z
