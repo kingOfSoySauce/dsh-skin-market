@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Liu-ZA-81/dsh-theme-firefly#5fdfdb75421e386ad1df87ceb2d654a5002eac07
+  target: github:Liu-ZA-81/dsh-theme-firefly#8171ad55a1f2c5ce2641ac516afe1260ce0bd077
   version: 0.1.3
-  commit: 5fdfdb75421e386ad1df87ceb2d654a5002eac07
+  commit: 8171ad55a1f2c5ce2641ac516afe1260ce0bd077
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepack
@@ -36,34 +36,39 @@ screenshots:
   - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/01-wallpaper.jpg
   - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/02-boot.jpg
   - https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/0b80edeb88a9aab056de42aace617a40e8f52927/docs/screenshots/03-firefly.jpg
+listScreenshot: https://raw.githubusercontent.com/Liu-ZA-81/dsh-theme-firefly/8171ad55a1f2c5ce2641ac516afe1260ce0bd077/docs/screenshots/01-wallpaper.jpg
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
     compatibility: improve
-    installation: pass
+    installation: improve
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 5fdfdb75421e386ad1df87ceb2d654a5002eac07
+    commit: 8171ad55a1f2c5ce2641ac516afe1260ce0bd077
     packageVersion: 0.1.3
     scannerVersion: static-v2
     mode: static
-    result: pass
-    checkedAt: 2026-08-28T04:08:44.261Z
-    findings: []
+    result: unknown
+    checkedAt: 2026-09-20T21:25:44.754Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 153
-starsSnapshot: 22
-releaseUpdatedAt: 2026-08-28T04:08:44.391Z
-metadataUpdatedAt: 2026-08-28T04:08:44.391Z
-starsUpdatedAt: 2026-09-18T21:36:44.993Z
-updatedAt: 2026-09-18T21:36:44.993Z
+starsSnapshot: 23
+releaseUpdatedAt: 2026-09-20T21:25:47.616Z
+metadataUpdatedAt: 2026-09-20T21:25:47.616Z
+starsUpdatedAt: 2026-09-20T21:25:47.616Z
+updatedAt: 2026-09-20T21:25:47.616Z
