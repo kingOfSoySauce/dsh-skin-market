@@ -19,13 +19,13 @@ modes:
   - light
   - dark
 install:
-  target: github:lkdx0220/Genshin-odette-skin-dsh#dadcffe0431b7dea0b11193a86733cc58e3ecbfc
-  version: 0.1.0
-  commit: dadcffe0431b7dea0b11193a86733cc58e3ecbfc
+  target: github:lkdx0220/Genshin-odette-skin-dsh#8e35b1f850549d49a34f55357f73c83dcb62df78
+  version: 0.1.2
+  commit: 8e35b1f850549d49a34f55357f73c83dcb62df78
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  allowBuild: dsh-odette-skin@https://codeload.github.com/lkdx0220/Genshin-odette-skin-dsh/tar.gz/dadcffe0431b7dea0b11193a86733cc58e3ecbfc
+  allowBuild: dsh-odette-skin@https://codeload.github.com/lkdx0220/Genshin-odette-skin-dsh/tar.gz/8e35b1f850549d49a34f55357f73c83dcb62df78
 compatibility:
   dsh: ">=0.0.1-rc <2"
   platform:
@@ -36,6 +36,7 @@ screenshots:
   - https://raw.githubusercontent.com/lkdx0220/Genshin-odette-skin-dsh/90ab5b724d956576973f3aca40b1b331aff7d42c/assets/bg-light.jpg
   - https://raw.githubusercontent.com/lkdx0220/Genshin-odette-skin-dsh/90ab5b724d956576973f3aca40b1b331aff7d42c/assets/bg-dark.jpg
   - https://raw.githubusercontent.com/lkdx0220/Genshin-odette-skin-dsh/90ab5b724d956576973f3aca40b1b331aff7d42c/assets/deco-sidebar.jpg
+listScreenshot: https://raw.githubusercontent.com/lkdx0220/Genshin-odette-skin-dsh/8e35b1f850549d49a34f55357f73c83dcb62df78/assets/bg-light.jpg
 review:
   compatibility: verified
   preview: verified
@@ -52,13 +53,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: dadcffe0431b7dea0b11193a86733cc58e3ecbfc
-    packageVersion: 0.1.0
+    commit: 8e35b1f850549d49a34f55357f73c83dcb62df78
+    packageVersion: 0.1.2
     scannerVersion: static-v2
     dshVersion: ">=0.0.1-rc <2"
     mode: static
     result: unknown
-    checkedAt: 2026-08-26T03:26:58.326Z
+    checkedAt: 2026-09-19T21:25:47.793Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -67,7 +68,7 @@ license:
   commercialUse: false
 featuredRank: 182
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-26T03:26:58.482Z
-metadataUpdatedAt: 2026-08-26T03:26:58.482Z
+releaseUpdatedAt: 2026-09-19T21:25:49.529Z
+metadataUpdatedAt: 2026-09-19T21:25:49.529Z
 starsUpdatedAt: 2026-09-09T21:39:54.518Z
-updatedAt: 2026-09-09T21:39:54.518Z
+updatedAt: 2026-09-19T21:25:49.529Z
