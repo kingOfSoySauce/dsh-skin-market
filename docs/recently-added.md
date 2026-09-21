@@ -271,6 +271,86 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:zalpha263.dsh-ui-beautify -->
+### 2026-09-21 · dsh-ui-beautify
+
+[Zalpha263/dsh-ui-beautify](https://github.com/Zalpha263/dsh-ui-beautify)：给 DeepSeek Harness（DSH）Web UI 换一套好看的外观：配色预设、整页背景图、VSCode 式卡片布局（面板停靠 / 浮动 / 标签页宿主），全部可撤销、可记忆。
+
+- 版本：`3.0.1`
+- 固定 commit：`e881a362b2f15a05dc9d86b68f149f2879257977`
+
+<!-- dsh-auto-entry:xi-kari.dsh-amphoreus -->
+### 2026-09-21 · dsh-amphoreus
+
+[xi-kari/dsh-amphoreus](https://github.com/xi-kari/dsh-amphoreus)：δ-me13 × DSH：为 δ-me13 skill 的 13 张黄金裔技能卡提供专属席位、逐席配色与壁纸、首轮技能注入和对话表情，并用总览画布派发任务、征询各席、接续移交。它是基于 DeepSeek Harness 构建的非官方插件；npm 包名保持 dsh-amphoreus。
+
+- 版本：`0.4.0`
+- 固定 commit：`70d7b7afe8644239e8fb3927ec06da5a5b34158e`
+
+<!-- dsh-auto-entry:swordordead.dsh-veneer -->
+### 2026-09-21 · dsh-Veneer
+
+[swordordead/dsh-Veneer](https://github.com/swordordead/dsh-Veneer)：✨ Veneer：给 DeepSeek Harness 换一套你喜欢的界面
+
+- 版本：`0.8.1`
+- 固定 commit：`6d34f651d0aa06c514d253f5ec32bc965bb90c88`
+
+<!-- dsh-auto-entry:liu-za-81.dsh-theme-firefly -->
+### 2026-09-21 · dsh-theme-firefly
+
+[Liu-ZA-81/dsh-theme-firefly](https://github.com/Liu-ZA-81/dsh-theme-firefly)：dsh-theme-firefly · 流萤主题
+
+- 版本：`0.1.3`
+- 固定 commit：`22a172cde2b8f4f55c4267c55d969e770d11d911`
+
+<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
+### 2026-09-21 · dsh-bloom-theme
+
+[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)：DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
+
+- 版本：`0.13.4`
+- 固定 commit：`788b010490ca419821f221a5534793f097599fa1`
+
+<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
+### 2026-09-21 · dsh-kimino-theme
+
+[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
+
+- 版本：`66.4.0`
+- 固定 commit：`d8dc9882a0b6693adad2f76b58ad61a6b823a603`
+
+<!-- dsh-auto-entry:featherhunter.dsh-opencode-palette -->
+### 2026-09-21 · dsh-opencode-palette
+
+[FeatherHunter/dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette)：让 DeepSeek Harness 穿上 34 款经典皮肤——东京的霓虹夜色、德古拉的暗红月光、复古工坊的暖黄灯火、黑客帝国的数字雨、玫瑰松林间的风……一键换肤，即点即换，重启不丢。34 legendary skins for DeepSeek Harness — tokyonight's neon dusk, dracula's crimson moon, gruvbox's retro glow, the matrix's digital rain, rose-pine's rosewood calm… one click, instant, persisted.
+
+- 版本：`2.0.2`
+- 固定 commit：`32a81c896a0ee222a7a0082aeea4317741df9e63`
+
+<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
+### 2026-09-21 · dsh-catppuccin
+
+[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)：DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
+
+- 版本：`0.5.5`
+- 固定 commit：`02f0f70a967e537e279569b3fe6f8b727906641e`
+
+<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
+### 2026-09-21 · dsh-dream-skin
+
+[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
+
+- 版本：`9.16.0`
+- 固定 commit：`648ca0fe1df99402027aa8002cc09b7920c6b73a`
+
+<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
+### 2026-09-21 · dsh-wallpaper-engine
+
+[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
+
+- 版本：`0.7.5`
+- 固定 commit：`b3937a3a15537bd890df825ce685244c5fa8a856`
+
 <!-- dsh-auto-entry:yyyyyylor.dsh-asuka-school-theme -->
 ### 2026-09-20 · dsh-asuka-school-theme
 
@@ -294,62 +374,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.1.99`
 - 固定 commit：`30e87c4d61d3d91c6bd7e4e8dbacafd81ee11e41`
-
-<!-- dsh-auto-entry:xi-kari.dsh-amphoreus -->
-### 2026-09-20 · dsh-amphoreus
-
-[xi-kari/dsh-amphoreus](https://github.com/xi-kari/dsh-amphoreus)：δ-me13 × DSH：为 δ-me13 skill 的 13 张黄金裔技能卡提供专属席位、逐席配色与壁纸、首轮技能注入和对话表情，并用总览画布派发任务、征询各席、接续移交。它是基于 DeepSeek Harness 构建的非官方插件；npm 包名保持 dsh-amphoreus。
-
-- 版本：`0.4.0`
-- 固定 commit：`70d7b7afe8644239e8fb3927ec06da5a5b34158e`
-
-<!-- dsh-auto-entry:liu-za-81.dsh-theme-firefly -->
-### 2026-09-20 · dsh-theme-firefly
-
-[Liu-ZA-81/dsh-theme-firefly](https://github.com/Liu-ZA-81/dsh-theme-firefly)：dsh-theme-firefly · 流萤主题
-
-- 版本：`0.1.3`
-- 固定 commit：`8171ad55a1f2c5ce2641ac516afe1260ce0bd077`
-
-<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
-### 2026-09-20 · dsh-kimino-theme
-
-[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
-
-- 版本：`66.4.0`
-- 固定 commit：`b47044e68f998a5352bbfae01facbe7aa85dd5d9`
-
-<!-- dsh-auto-entry:featherhunter.dsh-opencode-palette -->
-### 2026-09-20 · dsh-opencode-palette
-
-[FeatherHunter/dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette)：让 DeepSeek Harness 穿上 34 款经典皮肤——东京的霓虹夜色、德古拉的暗红月光、复古工坊的暖黄灯火、黑客帝国的数字雨、玫瑰松林间的风……一键换肤，即点即换，重启不丢。34 legendary skins for DeepSeek Harness — tokyonight's neon dusk, dracula's crimson moon, gruvbox's retro glow, the matrix's digital rain, rose-pine's rosewood calm… one click, instant, persisted.
-
-- 版本：`2.0.2`
-- 固定 commit：`aac7a8a3dce57c4181b5ec66d137342b3e8c1721`
-
-<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
-### 2026-09-20 · dsh-catppuccin
-
-[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)：DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
-
-- 版本：`0.5.4-beta.0`
-- 固定 commit：`9c89bd5ba3e4b29b9d32744afbf2ba207095457c`
-
-<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
-### 2026-09-20 · dsh-dream-skin
-
-[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
-
-- 版本：`9.16.0`
-- 固定 commit：`8d04dc1234571e13b9408d6f9b92e3f80fb12023`
-
-<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
-### 2026-09-20 · dsh-wallpaper-engine
-
-[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
-
-- 版本：`0.7.4`
-- 固定 commit：`eda001f22859e8b63912606f4a1a226d2578645b`
 
 <!-- dsh-auto-entry:lengduan.dsh-815-skin -->
 ### 2026-09-19 · dsh-815-skin
@@ -446,14 +470,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.11.0`
 - 固定 commit：`a6eedb1268fd3adad88a4f580c15f52c1884aab5`
-
-<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
-### 2026-09-18 · dsh-bloom-theme
-
-[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)：DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
-
-- 版本：`0.13.3`
-- 固定 commit：`bd794248233ba9bd4247773982d3e6a9738fe6eb`
 
 <!-- dsh-auto-entry:wangxilhy23.dsh-wx-skin -->
 ### 2026-09-17 · dsh-wx-skin
@@ -734,14 +750,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.3.0`
 - 固定 commit：`609570faa10357251b0e809c42cbf82d0b40e67a`
-
-<!-- dsh-auto-entry:zalpha263.dsh-ui-beautify -->
-### 2026-09-10 · dsh-ui-beautify
-
-[Zalpha263/dsh-ui-beautify](https://github.com/Zalpha263/dsh-ui-beautify)：给 DeepSeek Harness（DSH）Web UI 换一套好看的外观：配色预设、整页背景图、VSCode 式卡片布局（面板停靠 / 浮动 / 标签页宿主），全部可撤销、可记忆。
-
-- 版本：`3.0.0`
-- 固定 commit：`8cadc5ec9ba3ffb1c3e76e9f3911226dc291f29c`
 
 <!-- dsh-auto-entry:frog755.dsh-prompt-vault -->
 ### 2026-09-10 · dsh-prompt-vault

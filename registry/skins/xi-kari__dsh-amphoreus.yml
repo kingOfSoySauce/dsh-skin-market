@@ -23,13 +23,13 @@ install:
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
+  allowBuild: dsh-amphoreus@https://codeload.github.com/xi-kari/dsh-amphoreus/tar.gz/70d7b7afe8644239e8fb3927ec06da5a5b34158e
   npm:
     name: dsh-amphoreus
     version: 0.4.0
     integrity: sha512-b8AONwceS4cg675CuwDbxmEbDToZxHkkdim033VmBEFsCqgOeakspg3ah9/f9SSaKHN99I9PZ5IGogwkpTLokQ==
     repository: https://github.com/xi-kari/dsh-amphoreus
     gitHead: 70d7b7afe8644239e8fb3927ec06da5a5b34158e
-  allowBuild: dsh-amphoreus@https://codeload.github.com/xi-kari/dsh-amphoreus/tar.gz/70d7b7afe8644239e8fb3927ec06da5a5b34158e
 compatibility:
   dsh: 0.1.2-alpha.4
   platform:
@@ -70,7 +70,7 @@ license:
   commercialUse: true
 featuredRank: 1083
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-20T21:26:46.499Z
+releaseUpdatedAt: 2026-09-21T22:35:53.856Z
 metadataUpdatedAt: 2026-09-20T21:26:46.499Z
 starsUpdatedAt: 2026-09-08T21:48:42.810Z
-updatedAt: 2026-09-20T21:26:46.499Z
+updatedAt: 2026-09-21T22:35:53.856Z
