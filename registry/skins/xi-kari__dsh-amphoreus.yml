@@ -17,13 +17,19 @@ modes:
   - light
   - dark
 install:
-  target: github:xi-kari/dsh-amphoreus#5d454ddaea0a3a8b36ac51abf23b2f6dca42516b
-  version: 0.3.0
-  commit: 5d454ddaea0a3a8b36ac51abf23b2f6dca42516b
+  target: github:xi-kari/dsh-amphoreus#70d7b7afe8644239e8fb3927ec06da5a5b34158e
+  version: 0.4.0
+  commit: 70d7b7afe8644239e8fb3927ec06da5a5b34158e
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
-  allowBuild: dsh-amphoreus@https://codeload.github.com/xi-kari/dsh-amphoreus/tar.gz/5d454ddaea0a3a8b36ac51abf23b2f6dca42516b
+  npm:
+    name: dsh-amphoreus
+    version: 0.4.0
+    integrity: sha512-b8AONwceS4cg675CuwDbxmEbDToZxHkkdim033VmBEFsCqgOeakspg3ah9/f9SSaKHN99I9PZ5IGogwkpTLokQ==
+    repository: https://github.com/xi-kari/dsh-amphoreus
+    gitHead: 70d7b7afe8644239e8fb3927ec06da5a5b34158e
+  allowBuild: dsh-amphoreus@https://codeload.github.com/xi-kari/dsh-amphoreus/tar.gz/70d7b7afe8644239e8fb3927ec06da5a5b34158e
 compatibility:
   dsh: 0.1.2-alpha.4
   platform:
@@ -31,29 +37,31 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/xi-kari/dsh-amphoreus/5d454ddaea0a3a8b36ac51abf23b2f6dca42516b/docs/screenshots/portal.png
   - https://raw.githubusercontent.com/xi-kari/dsh-amphoreus/5d454ddaea0a3a8b36ac51abf23b2f6dca42516b/docs/screenshots/seat-anaxa.png
+listScreenshot: https://raw.githubusercontent.com/xi-kari/dsh-amphoreus/5d454ddaea0a3a8b36ac51abf23b2f6dca42516b/docs/screenshots/portal.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.2-alpha.4 未被本次检测范围 0.1.6-alpha.2 完全覆盖（固定版本 70d7b7afe8644239e8fb3927ec06da5a5b34158e）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 5d454ddaea0a3a8b36ac51abf23b2f6dca42516b
-    packageVersion: 0.3.0
+    commit: 70d7b7afe8644239e8fb3927ec06da5a5b34158e
+    packageVersion: 0.4.0
     scannerVersion: static-v2
-    dshVersion: 0.1.2-alpha.4
+    dshVersion: 0.1.6-alpha.2
     mode: static
     result: unknown
-    checkedAt: 2026-09-07T21:58:53.288Z
+    checkedAt: 2026-09-20T21:26:45.020Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -62,8 +70,7 @@ license:
   commercialUse: true
 featuredRank: 1083
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-07T21:58:53.362Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-09-20T21:26:46.499Z
+metadataUpdatedAt: 2026-09-20T21:26:46.499Z
 starsUpdatedAt: 2026-09-08T21:48:42.810Z
-updatedAt: 2026-09-08T21:48:42.810Z
-listScreenshot: https://raw.githubusercontent.com/xi-kari/dsh-amphoreus/5d454ddaea0a3a8b36ac51abf23b2f6dca42516b/docs/screenshots/portal.png
+updatedAt: 2026-09-20T21:26:46.499Z

@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Yyyyyylor/dsh-asuka-school-theme#22800a8eb0dc764e803ad844374b50d045857f14
-  version: 3.0.0
-  commit: 22800a8eb0dc764e803ad844374b50d045857f14
+  target: github:Yyyyyylor/dsh-asuka-school-theme#355cb8287e7ef7715b12c063d7ab7812be98076b
+  version: 3.0.1
+  commit: 355cb8287e7ef7715b12c063d7ab7812be98076b
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -44,22 +44,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.1.1-rc.2 未被本次检测范围 0.1.5-rc.2 完全覆盖（固定版本 22800a8eb0dc764e803ad844374b50d045857f14）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.1-rc.2 未被本次检测范围 0.1.5-rc.2 完全覆盖（固定版本 355cb8287e7ef7715b12c063d7ab7812be98076b）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 22800a8eb0dc764e803ad844374b50d045857f14
-    packageVersion: 3.0.0
+    commit: 355cb8287e7ef7715b12c063d7ab7812be98076b
+    packageVersion: 3.0.1
     scannerVersion: static-v2
     dshVersion: 0.1.5-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-09-12T21:27:00.348Z
+    checkedAt: 2026-09-20T21:28:20.283Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1105
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-12T21:27:01.207Z
-metadataUpdatedAt: 2026-09-12T21:27:01.207Z
+releaseUpdatedAt: 2026-09-20T21:28:20.819Z
+metadataUpdatedAt: 2026-09-20T21:28:20.819Z
 starsUpdatedAt: 2026-09-07T21:59:06.230Z
-updatedAt: 2026-09-12T21:27:01.207Z
+updatedAt: 2026-09-20T21:28:20.819Z
