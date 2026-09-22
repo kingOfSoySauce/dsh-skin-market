@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Liu-ZA-81/dsh-theme-firefly#8171ad55a1f2c5ce2641ac516afe1260ce0bd077
+  target: github:Liu-ZA-81/dsh-theme-firefly#22a172cde2b8f4f55c4267c55d969e770d11d911
   version: 0.1.3
-  commit: 8171ad55a1f2c5ce2641ac516afe1260ce0bd077
+  commit: 22a172cde2b8f4f55c4267c55d969e770d11d911
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepack
@@ -54,12 +54,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 8171ad55a1f2c5ce2641ac516afe1260ce0bd077
+    commit: 22a172cde2b8f4f55c4267c55d969e770d11d911
     packageVersion: 0.1.3
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-09-20T21:25:44.754Z
+    checkedAt: 2026-09-21T22:34:58.707Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -68,7 +68,7 @@ license:
   commercialUse: true
 featuredRank: 153
 starsSnapshot: 23
-releaseUpdatedAt: 2026-09-20T21:25:47.616Z
-metadataUpdatedAt: 2026-09-20T21:25:47.616Z
+releaseUpdatedAt: 2026-09-21T22:35:01.963Z
+metadataUpdatedAt: 2026-09-21T22:35:01.963Z
 starsUpdatedAt: 2026-09-20T21:25:47.616Z
-updatedAt: 2026-09-20T21:25:47.616Z
+updatedAt: 2026-09-21T22:35:01.963Z
