@@ -1,6 +1,49 @@
-url: https://github.com/quaner1234-cmd/DSH-THEME-KAMI
+id: quaner1234.cmd.dsh.theme.kami
 name:
   zh: dsh-kami-theme
   en: dsh-kami-theme
 author: quaner1234-cmd
 description: Kami 风格（纸媒/editorial）DeepSeek Harness WebUI 主题 —— 暖羊皮纸画布、墨蓝强调色、衬线排版与发丝线边框，浅色/深色双模式。
+repo: https://github.com/quaner1234-cmd/DSH-THEME-KAMI
+package: dsh-kami-theme
+rowId: dsh-kami-theme
+category: theme
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:quaner1234-cmd/DSH-THEME-KAMI#1fb0d23fe019eac6fb03cc3eb2f1b51c35790459
+  version: 0.1.0
+  commit: 1fb0d23fe019eac6fb03cc3eb2f1b51c35790459
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/quaner1234-cmd/DSH-THEME-KAMI/1fb0d23fe019eac6fb03cc3eb2f1b51c35790459/assets/preview-light.png
+  - https://raw.githubusercontent.com/quaner1234-cmd/DSH-THEME-KAMI/1fb0d23fe019eac6fb03cc3eb2f1b51c35790459/assets/preview-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-09-22T07:29:26.270Z
+metadataUpdatedAt: 2026-09-22T07:29:26.270Z
+starsUpdatedAt: 2026-09-22T07:29:26.270Z
+updatedAt: 2026-09-22T07:29:26.270Z
