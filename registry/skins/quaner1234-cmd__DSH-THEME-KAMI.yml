@@ -14,9 +14,12 @@ modes:
   - light
   - dark
 install:
-  target: github:quaner1234-cmd/DSH-THEME-KAMI#1fb0d23fe019eac6fb03cc3eb2f1b51c35790459
+  target: github:quaner1234-cmd/DSH-THEME-KAMI#f45d8b53f0119220f8b1544321d51f5385d5440d
   version: 0.1.0
-  commit: 1fb0d23fe019eac6fb03cc3eb2f1b51c35790459
+  commit: f45d8b53f0119220f8b1544321d51f5385d5440d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -24,26 +27,35 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/quaner1234-cmd/DSH-THEME-KAMI/1fb0d23fe019eac6fb03cc3eb2f1b51c35790459/assets/preview-light.png
   - https://raw.githubusercontent.com/quaner1234-cmd/DSH-THEME-KAMI/1fb0d23fe019eac6fb03cc3eb2f1b51c35790459/assets/preview-dark.png
+listScreenshot: https://raw.githubusercontent.com/quaner1234-cmd/DSH-THEME-KAMI/f45d8b53f0119220f8b1544321d51f5385d5440d/assets/preview-light.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
     compatibility: pass
     installation: pass
     installCommand: pass
-    topic: improve
-  suggestions:
-    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    topic: pass
+  suggestions: []
+  scan:
+    commit: f45d8b53f0119220f8b1544321d51f5385d5440d
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-22T22:00:41.434Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-22T07:29:26.270Z
-metadataUpdatedAt: 2026-09-22T07:29:26.270Z
+releaseUpdatedAt: 2026-09-22T22:00:42.364Z
+metadataUpdatedAt: 2026-09-22T22:00:42.364Z
 starsUpdatedAt: 2026-09-22T07:29:26.270Z
-updatedAt: 2026-09-22T07:29:26.270Z
+updatedAt: 2026-09-22T22:00:42.364Z
