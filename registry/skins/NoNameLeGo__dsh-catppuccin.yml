@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:NoNameLeGo/dsh-catppuccin#85e2eb2aa947625de5aa77d98c62148958b6cf75
-  version: 0.5.6-beta.0
-  commit: 85e2eb2aa947625de5aa77d98c62148958b6cf75
+  target: github:NoNameLeGo/dsh-catppuccin#012031ab98f63d0dbf29f352935058a5700b93c9
+  version: 0.5.6-beta.1
+  commit: 012031ab98f63d0dbf29f352935058a5700b93c9
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
-  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/85e2eb2aa947625de5aa77d98c62148958b6cf75"
+  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/012031ab98f63d0dbf29f352935058a5700b93c9"
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -52,15 +52,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 0.1.2-rc.1 完全覆盖（固定版本 85e2eb2aa947625de5aa77d98c62148958b6cf75）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 0.1.2-rc.1 完全覆盖（固定版本 012031ab98f63d0dbf29f352935058a5700b93c9）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 85e2eb2aa947625de5aa77d98c62148958b6cf75
-    packageVersion: 0.5.6-beta.0
+    commit: 012031ab98f63d0dbf29f352935058a5700b93c9
+    packageVersion: 0.5.6-beta.1
     scannerVersion: static-v2
     dshVersion: 0.1.2-rc.1
     mode: static
     result: unknown
-    checkedAt: 2026-09-22T21:58:35.158Z
+    checkedAt: 2026-09-23T22:12:48.494Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -69,7 +69,7 @@ license:
   commercialUse: true
 featuredRank: 5
 starsSnapshot: 45
-releaseUpdatedAt: 2026-09-22T21:58:37.639Z
-metadataUpdatedAt: 2026-09-22T21:58:37.639Z
+releaseUpdatedAt: 2026-09-23T22:12:51.306Z
+metadataUpdatedAt: 2026-09-23T22:12:51.306Z
 starsUpdatedAt: 2026-09-22T21:58:37.639Z
-updatedAt: 2026-09-22T21:58:37.639Z
+updatedAt: 2026-09-23T22:12:51.306Z
