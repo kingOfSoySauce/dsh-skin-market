@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:quaner1234-cmd/DSH-THEME-KAMI#f45d8b53f0119220f8b1544321d51f5385d5440d
+  target: github:quaner1234-cmd/DSH-THEME-KAMI#12f2976fde989da578d362a1f038281c214cf3b2
   version: 0.1.0
-  commit: f45d8b53f0119220f8b1544321d51f5385d5440d
+  commit: 12f2976fde989da578d362a1f038281c214cf3b2
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -42,20 +42,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: f45d8b53f0119220f8b1544321d51f5385d5440d
+    commit: 12f2976fde989da578d362a1f038281c214cf3b2
     packageVersion: 0.1.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-22T22:00:41.434Z
+    checkedAt: 2026-09-23T22:15:04.286Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-22T22:00:42.364Z
-metadataUpdatedAt: 2026-09-22T22:00:42.364Z
+releaseUpdatedAt: 2026-09-23T22:15:04.997Z
+metadataUpdatedAt: 2026-09-23T22:15:04.997Z
 starsUpdatedAt: 2026-09-22T07:29:26.270Z
-updatedAt: 2026-09-22T22:00:42.364Z
+updatedAt: 2026-09-23T22:15:04.997Z
