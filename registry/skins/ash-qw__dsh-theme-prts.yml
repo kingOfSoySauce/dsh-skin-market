@@ -16,18 +16,18 @@ modes:
   - light
   - dark
 install:
-  target: github:ash-qw/dsh-theme-prts#b5e502657ba67419a7d3d80ed77c81ff92202938
-  version: 0.1.100
-  commit: b5e502657ba67419a7d3d80ed77c81ff92202938
+  target: github:ash-qw/dsh-theme-prts#8766b6cac2e3c09bb4f3e48088cfd7b19924d994
+  version: 0.1.102
+  commit: 8766b6cac2e3c09bb4f3e48088cfd7b19924d994
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
   npm:
     name: "@ash-qw/dsh-theme-prts"
-    version: 0.1.100
-    integrity: sha512-EnQQQ6IAWy9BydymcxnJByZwrCbB+ypZbVkp4bEC63qMLBliohXz44Ov3csWpUN3pYd1ORA3DoHJsWJ/twqNdQ==
+    version: 0.1.102
+    integrity: sha512-bdM4z+60djquUwnIidjFVGwtJpHQmM4sE7nZuHOJM/nJp1Q14EAj/Z2ne0KWl8h7pEeaNP1zQNFHY8NXgwfB/g==
     repository: https://github.com/ash-qw/dsh-theme-prts
-    gitHead: b5e502657ba67419a7d3d80ed77c81ff92202938
+    gitHead: 8766b6cac2e3c09bb4f3e48088cfd7b19924d994
 compatibility:
   dsh: unverified
   platform:
@@ -52,19 +52,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: b5e502657ba67419a7d3d80ed77c81ff92202938
-    packageVersion: 0.1.100
+    commit: 8766b6cac2e3c09bb4f3e48088cfd7b19924d994
+    packageVersion: 0.1.102
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-22T22:00:17.747Z
+    checkedAt: 2026-09-24T22:14:51.467Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 1090
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-22T22:00:19.579Z
-metadataUpdatedAt: 2026-09-22T22:00:19.579Z
+releaseUpdatedAt: 2026-09-24T22:14:52.510Z
+metadataUpdatedAt: 2026-09-24T22:14:52.510Z
 starsUpdatedAt: 2026-09-07T21:58:56.672Z
-updatedAt: 2026-09-22T22:00:19.579Z
+updatedAt: 2026-09-24T22:14:52.510Z

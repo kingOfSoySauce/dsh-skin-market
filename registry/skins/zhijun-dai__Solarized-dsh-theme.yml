@@ -16,21 +16,15 @@ modes:
   - light
   - dark
 install:
-  target: github:zhijun-dai/Solarized-dsh-theme#1480701b224708eaf098dc5aa2d05ababee667ab
-  version: 0.2.2
-  commit: 1480701b224708eaf098dc5aa2d05ababee667ab
+  target: github:zhijun-dai/Solarized-dsh-theme#4eb4458d9c98220383dfc588a61cddb08c36fe6f
+  version: 0.2.3
+  commit: 4eb4458d9c98220383dfc588a61cddb08c36fe6f
   desktop:
     mode: managed
     registry: npm
     packageName: "@yuquexianzhou/solarized-dsh-theme"
     packageVersion: 0.1.1
     integrity: sha512-9GdwEyUCUSmUqfOV/comS5pTj6ONJsvfhMwSKMUhm9ProNG//A9kWZb9KxZWfvdX9B5QX5tUhFWZyguULsrxNA==
-  npm:
-    name: "@yuquexianzhou/solarized-dsh-theme"
-    version: 0.2.2
-    integrity: sha512-aRZTgCYrIeSf3xuevqtrikiCmX3j5+DfMSuUr9mdZAZ1XNGHqSehBbevZtDjEfh7xnMYfFZWKkuH9ula1+PEdA==
-    repository: https://github.com/zhijun-dai/Solarized-dsh-theme
-    gitHead: 1480701b224708eaf098dc5aa2d05ababee667ab
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -41,34 +35,36 @@ screenshots:
   - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/solarized-light.webp
   - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/selenized-dark.webp
   - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/selenized-light.webp
+listScreenshot: https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/4eb4458d9c98220383dfc588a61cddb08c36fe6f/assets/preview.webp
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 1480701b224708eaf098dc5aa2d05ababee667ab
-    packageVersion: 0.2.2
+    commit: 4eb4458d9c98220383dfc588a61cddb08c36fe6f
+    packageVersion: 0.2.3
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-06T21:12:26.238Z
+    checkedAt: 2026-09-24T22:13:41.047Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 12
 starsSnapshot: 7
-releaseUpdatedAt: 2026-09-06T21:12:26.380Z
-metadataUpdatedAt: 2026-09-06T21:12:26.380Z
+releaseUpdatedAt: 2026-09-24T22:13:41.876Z
+metadataUpdatedAt: 2026-09-24T22:13:41.876Z
 starsUpdatedAt: 2026-09-12T21:23:53.975Z
-updatedAt: 2026-09-12T21:23:53.975Z
+updatedAt: 2026-09-24T22:13:41.876Z
