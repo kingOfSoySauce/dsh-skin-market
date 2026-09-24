@@ -301,135 +301,135 @@ window.__ModuleLoader__.load({
 			document.head.appendChild(tag);
 		}
 		var SkinMarket_module_css_default = {
-			"author": "VqXecW_author",
-			"tags": "VqXecW_tags",
-			"heroOpen": "VqXecW_heroOpen",
-			"actionRow": "VqXecW_actionRow",
-			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
-			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
-			"cardMeta": "VqXecW_cardMeta",
-			"titleBlock": "VqXecW_titleBlock",
-			"interceptHelp": "VqXecW_interceptHelp",
-			"operationCancel": "VqXecW_operationCancel",
-			"galleryProgress": "VqXecW_galleryProgress",
-			"spin": "VqXecW_spin",
-			"homeSectionTitle": "VqXecW_homeSectionTitle",
-			"externalPlugin": "VqXecW_externalPlugin",
-			"detail": "VqXecW_detail",
-			"homeContent": "VqXecW_homeContent",
-			"homeCardOpen": "VqXecW_homeCardOpen",
-			"skinCardPreview": "VqXecW_skinCardPreview",
-			"changelog": "VqXecW_changelog",
-			"homeError": "VqXecW_homeError",
-			"homeSubmitAction": "VqXecW_homeSubmitAction",
-			"filterPill": "VqXecW_filterPill",
-			"lightbox": "VqXecW_lightbox",
-			"repoLink": "VqXecW_repoLink",
-			"discoveryGrid": "VqXecW_discoveryGrid",
-			"cardAction": "VqXecW_cardAction",
-			"thumbnails": "VqXecW_thumbnails",
-			"marketUpdateButton": "VqXecW_marketUpdateButton",
-			"skinAvatar": "VqXecW_skinAvatar",
-			"migrationSource": "VqXecW_migrationSource",
-			"homeTitleRow": "VqXecW_homeTitleRow",
-			"collectionTitle": "VqXecW_collectionTitle",
-			"detailHeader": "VqXecW_detailHeader",
-			"installedRow": "VqXecW_installedRow",
-			"browserPanel": "VqXecW_browserPanel",
-			"homeOperation": "VqXecW_homeOperation",
-			"actionDivider": "VqXecW_actionDivider",
-			"cardDescription": "VqXecW_cardDescription",
-			"lightboxNav": "VqXecW_lightboxNav",
-			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
-			"homeSearch": "VqXecW_homeSearch",
-			"homeCardCopy": "VqXecW_homeCardCopy",
-			"browserContent": "VqXecW_browserContent",
-			"previewPlaceholder": "VqXecW_previewPlaceholder",
-			"heroPrev": "VqXecW_heroPrev",
-			"catalogTitle": "VqXecW_catalogTitle",
-			"filterBar": "VqXecW_filterBar",
-			"hero": "VqXecW_hero",
-			"root": "VqXecW_root",
-			"loading": "VqXecW_loading",
-			"installOptions": "VqXecW_installOptions",
-			"catalogHeader": "VqXecW_catalogHeader",
-			"cardStars": "VqXecW_cardStars",
+			"operationMeta": "VqXecW_operationMeta",
+			"cardActionProgress": "VqXecW_cardActionProgress",
+			"iconOnlyButton": "VqXecW_iconOnlyButton",
 			"listLoading": "VqXecW_listLoading",
-			"homeCardRepo": "VqXecW_homeCardRepo",
-			"version": "VqXecW_version",
-			"notice": "VqXecW_notice",
-			"pinWarning": "VqXecW_pinWarning",
-			"stars": "VqXecW_stars",
-			"description": "VqXecW_description",
-			"operationMessage": "VqXecW_operationMessage",
-			"homeLoadMore": "VqXecW_homeLoadMore",
-			"manualInstallGuide": "VqXecW_manualInstallGuide",
+			"browserPanel": "VqXecW_browserPanel",
+			"operationCopyLog": "VqXecW_operationCopyLog",
+			"previewPlaceholder": "VqXecW_previewPlaceholder",
+			"migrationSource": "VqXecW_migrationSource",
+			"homeLoading": "VqXecW_homeLoading",
 			"heroNext": "VqXecW_heroNext",
-			"healthSuggestion": "VqXecW_healthSuggestion",
-			"submission": "VqXecW_submission",
-			"homeUpdateAction": "VqXecW_homeUpdateAction",
+			"description": "VqXecW_description",
+			"srOnly": "VqXecW_srOnly",
+			"catalogTitleMain": "VqXecW_catalogTitleMain",
+			"homeSearch": "VqXecW_homeSearch",
+			"galleryProgress": "VqXecW_galleryProgress",
+			"detailHeader": "VqXecW_detailHeader",
+			"lightboxStage": "VqXecW_lightboxStage",
+			"discoveryGrid": "VqXecW_discoveryGrid",
+			"interceptNotice": "VqXecW_interceptNotice",
+			"stars": "VqXecW_stars",
+			"homeSubmitAction": "VqXecW_homeSubmitAction",
+			"cardMeta": "VqXecW_cardMeta",
+			"version": "VqXecW_version",
+			"heroNav": "VqXecW_heroNav",
+			"lightboxNext": "VqXecW_lightboxNext",
+			"error": "VqXecW_error",
 			"skeletonCard": "VqXecW_skeletonCard",
 			"feedMeta": "VqXecW_feedMeta",
-			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
-			"heroNav": "VqXecW_heroNav",
-			"browserModal": "VqXecW_browserModal",
-			"listSkeleton": "VqXecW_listSkeleton",
-			"statusLabel": "VqXecW_statusLabel",
-			"operationActions": "VqXecW_operationActions",
-			"skinCardBody": "VqXecW_skinCardBody",
-			"home": "VqXecW_home",
-			"installedMoreCard": "VqXecW_installedMoreCard",
-			"aboutGrid": "VqXecW_aboutGrid",
+			"homeCardOpen": "VqXecW_homeCardOpen",
+			"heroPrev": "VqXecW_heroPrev",
+			"homeContent": "VqXecW_homeContent",
+			"collectionTitle": "VqXecW_collectionTitle",
+			"catalogTitle": "VqXecW_catalogTitle",
 			"empty": "VqXecW_empty",
-			"homeLoading": "VqXecW_homeLoading",
-			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
-			"operationMeta": "VqXecW_operationMeta",
-			"operation": "VqXecW_operation",
-			"loadMoreHint": "VqXecW_loadMoreHint",
-			"thumbnailFrame": "VqXecW_thumbnailFrame",
-			"galleryGroup": "VqXecW_galleryGroup",
-			"cardInlineActions": "VqXecW_cardInlineActions",
-			"mobileBack": "VqXecW_mobileBack",
-			"healthList": "VqXecW_healthList",
-			"lightboxPrev": "VqXecW_lightboxPrev",
-			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
-			"copyCapsule": "VqXecW_copyCapsule",
-			"catalog": "VqXecW_catalog",
-			"homeCardDescription": "VqXecW_homeCardDescription",
-			"skinCard": "VqXecW_skinCard",
-			"browserHomeBack": "VqXecW_browserHomeBack",
-			"cardTitle": "VqXecW_cardTitle",
-			"cardMetaLine": "VqXecW_cardMetaLine",
-			"skeletonShimmer": "VqXecW_skeletonShimmer",
-			"homeGithubLabel": "VqXecW_homeGithubLabel",
-			"lightboxClose": "VqXecW_lightboxClose",
-			"iconOnlyButton": "VqXecW_iconOnlyButton",
-			"skinList": "VqXecW_skinList",
-			"operationCopyLog": "VqXecW_operationCopyLog",
-			"homeGithubAction": "VqXecW_homeGithubAction",
-			"interceptNotice": "VqXecW_interceptNotice",
-			"homeCard": "VqXecW_homeCard",
-			"cardActionProgress": "VqXecW_cardActionProgress",
-			"operationDismiss": "VqXecW_operationDismiss",
-			"srOnly": "VqXecW_srOnly",
-			"homeActions": "VqXecW_homeActions",
-			"lightboxNext": "VqXecW_lightboxNext",
-			"lightboxStage": "VqXecW_lightboxStage",
-			"error": "VqXecW_error",
-			"detailSkeleton": "VqXecW_detailSkeleton",
-			"sortButton": "VqXecW_sortButton",
+			"changelog": "VqXecW_changelog",
 			"browser": "VqXecW_browser",
-			"homeSection": "VqXecW_homeSection",
-			"thumbnailProgress": "VqXecW_thumbnailProgress",
-			"homeCardMedia": "VqXecW_homeCardMedia",
 			"recommendations": "VqXecW_recommendations",
-			"homeHeader": "VqXecW_homeHeader",
+			"notice": "VqXecW_notice",
+			"catalog": "VqXecW_catalog",
+			"homeTitleRow": "VqXecW_homeTitleRow",
 			"homeOperations": "VqXecW_homeOperations",
+			"homeCard": "VqXecW_homeCard",
+			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
+			"aboutGrid": "VqXecW_aboutGrid",
+			"mobileBack": "VqXecW_mobileBack",
+			"homeCardMedia": "VqXecW_homeCardMedia",
 			"filters": "VqXecW_filters",
-			"repoMeta": "VqXecW_repoMeta",
+			"loading": "VqXecW_loading",
+			"browserHomeBack": "VqXecW_browserHomeBack",
+			"spin": "VqXecW_spin",
+			"skinCardPreview": "VqXecW_skinCardPreview",
+			"thumbnails": "VqXecW_thumbnails",
+			"operationActions": "VqXecW_operationActions",
+			"operation": "VqXecW_operation",
+			"installedMoreCard": "VqXecW_installedMoreCard",
+			"filterBar": "VqXecW_filterBar",
+			"interceptHelp": "VqXecW_interceptHelp",
+			"hero": "VqXecW_hero",
+			"cardStars": "VqXecW_cardStars",
+			"catalogHeader": "VqXecW_catalogHeader",
+			"skinCardBody": "VqXecW_skinCardBody",
+			"detailSkeleton": "VqXecW_detailSkeleton",
+			"thumbnailFrame": "VqXecW_thumbnailFrame",
+			"homeCardCopy": "VqXecW_homeCardCopy",
+			"homeOperation": "VqXecW_homeOperation",
 			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
-			"catalogTitleMain": "VqXecW_catalogTitleMain",
-			"homeCardFooter": "VqXecW_homeCardFooter"
+			"marketUpdateButton": "VqXecW_marketUpdateButton",
+			"statusLabel": "VqXecW_statusLabel",
+			"homeActions": "VqXecW_homeActions",
+			"listSkeleton": "VqXecW_listSkeleton",
+			"externalPlugin": "VqXecW_externalPlugin",
+			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
+			"lightboxNav": "VqXecW_lightboxNav",
+			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
+			"homeLoadMore": "VqXecW_homeLoadMore",
+			"browserModal": "VqXecW_browserModal",
+			"healthSuggestion": "VqXecW_healthSuggestion",
+			"browserContent": "VqXecW_browserContent",
+			"author": "VqXecW_author",
+			"manualInstallGuide": "VqXecW_manualInstallGuide",
+			"repoLink": "VqXecW_repoLink",
+			"installedRow": "VqXecW_installedRow",
+			"homeError": "VqXecW_homeError",
+			"homeHeader": "VqXecW_homeHeader",
+			"thumbnailProgress": "VqXecW_thumbnailProgress",
+			"pinWarning": "VqXecW_pinWarning",
+			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
+			"cardMetaLine": "VqXecW_cardMetaLine",
+			"operationDismiss": "VqXecW_operationDismiss",
+			"lightboxPrev": "VqXecW_lightboxPrev",
+			"homeGithubAction": "VqXecW_homeGithubAction",
+			"skinCard": "VqXecW_skinCard",
+			"actionRow": "VqXecW_actionRow",
+			"submission": "VqXecW_submission",
+			"homeCardFooter": "VqXecW_homeCardFooter",
+			"cardDescription": "VqXecW_cardDescription",
+			"loadMoreHint": "VqXecW_loadMoreHint",
+			"homeCardDescription": "VqXecW_homeCardDescription",
+			"skinAvatar": "VqXecW_skinAvatar",
+			"homeUpdateAction": "VqXecW_homeUpdateAction",
+			"cardTitle": "VqXecW_cardTitle",
+			"actionDivider": "VqXecW_actionDivider",
+			"operationCancel": "VqXecW_operationCancel",
+			"lightbox": "VqXecW_lightbox",
+			"homeSectionTitle": "VqXecW_homeSectionTitle",
+			"operationMessage": "VqXecW_operationMessage",
+			"healthList": "VqXecW_healthList",
+			"cardAction": "VqXecW_cardAction",
+			"installOptions": "VqXecW_installOptions",
+			"copyCapsule": "VqXecW_copyCapsule",
+			"tags": "VqXecW_tags",
+			"root": "VqXecW_root",
+			"home": "VqXecW_home",
+			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
+			"skeletonShimmer": "VqXecW_skeletonShimmer",
+			"titleBlock": "VqXecW_titleBlock",
+			"heroOpen": "VqXecW_heroOpen",
+			"cardInlineActions": "VqXecW_cardInlineActions",
+			"repoMeta": "VqXecW_repoMeta",
+			"homeSection": "VqXecW_homeSection",
+			"homeCardRepo": "VqXecW_homeCardRepo",
+			"lightboxClose": "VqXecW_lightboxClose",
+			"skinList": "VqXecW_skinList",
+			"galleryGroup": "VqXecW_galleryGroup",
+			"detail": "VqXecW_detail",
+			"filterPill": "VqXecW_filterPill",
+			"sortButton": "VqXecW_sortButton",
+			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
+			"homeGithubLabel": "VqXecW_homeGithubLabel"
 		};
 		//#endregion
 		//#region \0dsh-skin-market-css:/Users/leon/Code/liang-intensity-calibrator/code/dsh-skin-market/src/client/media-hover.module.css.mjs
@@ -1070,6 +1070,27 @@ url: https://github.com/<owner>/<repo>
 		}
 		//#endregion
 		//#region src/client/SkinMarketSection.tsx
+		const missingPrimitiveIcon = () => null;
+		/**
+		* DSH 0.1.7-alpha.2 renamed the size-suffixed icon exports to Regular/Medium.
+		* Resolve the new name first while retaining the rc.6 name for existing hosts.
+		*/
+		function resolvePrimitiveIcon(module, currentName, legacyName) {
+			for (const name of [currentName, legacyName]) {
+				const candidate = module[name];
+				if (typeof candidate === "function") return candidate;
+			}
+			return missingPrimitiveIcon;
+		}
+		const primitiveModule = _deepseek_ai_dsh_client_ui_primitives;
+		const IconChevronLeftOutline = resolvePrimitiveIcon(primitiveModule, "IconChevronLeftOutlineRegular", "IconChevronLeftOutline14");
+		const IconChevronDownOutline = resolvePrimitiveIcon(primitiveModule, "IconChevronDownOutlineRegular", "IconChevronDownOutline14");
+		const IconCopyOutline = resolvePrimitiveIcon(primitiveModule, "IconCopyOutlineRegular", "IconCopyOutline16");
+		const IconDownloadOutline = resolvePrimitiveIcon(primitiveModule, "IconDownloadOutlineRegular", "IconDownloadOutline16");
+		const IconLoadingOutline = resolvePrimitiveIcon(primitiveModule, "IconLoadingOutlineRegular", "IconLoadingOutline16");
+		const IconRefreshOutline = resolvePrimitiveIcon(primitiveModule, "IconRefreshOutlineRegular", "IconRefreshOutline16");
+		const IconSearchOutline = resolvePrimitiveIcon(primitiveModule, "IconSearchOutlineRegular", "IconSearchOutline16");
+		const IconTrashOutline = resolvePrimitiveIcon(primitiveModule, "IconTrashOutlineRegular", "IconTrashOutline16");
 		function captureListScroll(list) {
 			if (list === null) return null;
 			const listTop = list.getBoundingClientRect().top;
@@ -1217,7 +1238,7 @@ url: https://github.com/<owner>/<repo>
 				"data-terminal": terminal ? "true" : void 0,
 				"data-failed": failed ? "true" : void 0,
 				children: [
-					terminal ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconRefreshOutline16, { size: 16 }) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconLoadingOutline16, { size: 16 }),
+					terminal ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconRefreshOutline, { size: 16 }) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconLoadingOutline, { size: 16 }),
 					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: title }),
 					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("span", {
 						className: SkinMarket_module_css_default.operationMeta,
@@ -1242,7 +1263,7 @@ url: https://github.com/<owner>/<repo>
 								className: SkinMarket_module_css_default.operationCopyLog,
 								variant: "outline",
 								size: "sm",
-								icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconCopyOutline16, {}),
+								icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
 								disabled: copyingLog,
 								onClick: onCopyLog,
 								children: copiedLog ? "日志已复制" : copyingLog ? "复制中…" : "复制日志"
@@ -2406,7 +2427,7 @@ url: https://github.com/<owner>/<repo>
 								"aria-label": `${skin.name.zh} 操作`,
 								children: cardMutation !== void 0 ? /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
 									className: SkinMarket_module_css_default.cardActionProgress,
-									children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconLoadingOutline16, {}), mutationLabels[cardMutation.kind]]
+									children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconLoadingOutline, {}), mutationLabels[cardMutation.kind]]
 								}) : /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [
 									needsInstall && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 										className: SkinMarket_module_css_default.cardAction,
@@ -2598,7 +2619,7 @@ url: https://github.com/<owner>/<repo>
 												className: `${SkinMarket_module_css_default.marketUpdateButton} ${SkinMarket_module_css_default.homeUpdateAction}`,
 												variant: "outline",
 												size: "sm",
-												icon: marketUpdating ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconLoadingOutline16, {}) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconDownloadOutline16, {}),
+												icon: marketUpdating ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconLoadingOutline, {}) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconDownloadOutline, {}),
 												"aria-label": `更新皮肤市场到 ${marketUpdate.latestVersion}`,
 												title: `发现新版本 ${marketUpdate.latestVersion}`,
 												disabled: marketUpdating || marketUpdateActive || pnpmBusy,
@@ -2648,7 +2669,7 @@ url: https://github.com/<owner>/<repo>
 									className: SkinMarket_module_css_default.homeSearch,
 									value: homeQuery,
 									onChange: (event) => setHomeQuery(event.currentTarget.value),
-									icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconSearchOutline16, {}),
+									icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconSearchOutline, {}),
 									placeholder: t("search"),
 									"aria-label": t("search")
 								}),
@@ -2720,13 +2741,13 @@ url: https://github.com/<owner>/<repo>
 											children: [
 												sortBy === "stars" ? "Stars" : "最新",
 												" ",
-												/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconChevronDownOutline14, {})
+												/* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconChevronDownOutline, {})
 											]
 										})]
 									}),
 									catalogLoading && skins.length === 0 ? /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
 										className: SkinMarket_module_css_default.homeLoading,
-										children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconLoadingOutline16, {}), " 正在加载皮肤…"]
+										children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconLoadingOutline, {}), " 正在加载皮肤…"]
 									}) : visibleDiscoverySkins.length > 0 ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
 										className: SkinMarket_module_css_default.discoveryGrid,
 										children: visibleDiscoverySkins.map((skin) => renderHomeCard(skin, "discover"))
@@ -2769,7 +2790,7 @@ url: https://github.com/<owner>/<repo>
 										children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Input, {
 											value: query,
 											onChange: (event) => setQuery(event.currentTarget.value),
-											icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconSearchOutline16, {}),
+											icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconSearchOutline, {}),
 											placeholder: t("search"),
 											"aria-label": t("search")
 										}), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
@@ -2800,7 +2821,7 @@ url: https://github.com/<owner>/<repo>
 												children: [
 													sortBy === "stars" ? "Stars" : "最新",
 													" ",
-													/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconChevronDownOutline14, {})
+													/* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconChevronDownOutline, {})
 												]
 											})]
 										})]
@@ -2948,7 +2969,7 @@ url: https://github.com/<owner>/<repo>
 											className: SkinMarket_module_css_default.mobileBack,
 											variant: "outline",
 											size: "sm",
-											icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconChevronLeftOutline14, {}),
+											icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconChevronLeftOutline, {}),
 											onClick: () => browserOrigin === "discover" ? closeBrowser() : setShowDetail(false),
 											children: browserOrigin === "discover" ? "返回发现" : "返回列表"
 										}),
@@ -3009,7 +3030,7 @@ url: https://github.com/<owner>/<repo>
 													autoInstallable && !deferInstallAndUse && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 														variant: "primary",
 														size: "sm",
-														icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconDownloadOutline16, {}),
+														icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconDownloadOutline, {}),
 														disabled: selectedBusy !== void 0,
 														onClick: () => void installAndActivate(),
 														children: "安装并使用"
@@ -3017,7 +3038,7 @@ url: https://github.com/<owner>/<repo>
 													autoInstallable && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 														variant: deferInstallAndUse ? "primary" : "outline",
 														size: "sm",
-														icon: deferInstallAndUse ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconDownloadOutline16, {}) : void 0,
+														icon: deferInstallAndUse ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconDownloadOutline, {}) : void 0,
 														disabled: selectedBusy !== void 0,
 														title: deferInstallAndUse ? "先安装，当前有其他皮肤正在安装，完成后再使用" : void 0,
 														onClick: () => void run("install"),
@@ -3098,7 +3119,7 @@ url: https://github.com/<owner>/<repo>
 												state.updateAvailable && !manualOnly && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 													variant: state.activation === "active" && !state.pinned ? "primary" : "outline",
 													size: "sm",
-													icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconRefreshOutline16, {}),
+													icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconRefreshOutline, {}),
 													disabled: selectedBusy !== void 0,
 													onClick: () => void run("update"),
 													children: "更新"
@@ -3117,7 +3138,7 @@ url: https://github.com/<owner>/<repo>
 													className: SkinMarket_module_css_default.iconOnlyButton,
 													variant: "outline",
 													size: "sm",
-													icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconTrashOutline16, {}),
+													icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconTrashOutline, {}),
 													"aria-label": "卸载",
 													title: "卸载",
 													disabled: selectedBusy !== void 0,
@@ -3196,13 +3217,13 @@ url: https://github.com/<owner>/<repo>
 												}), shotCount > 1 && /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 													className: `${SkinMarket_module_css_default.heroNav} ${SkinMarket_module_css_default.heroPrev}`,
 													variant: "ghost",
-													icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconChevronLeftOutline14, { size: 18 }),
+													icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconChevronLeftOutline, { size: 18 }),
 													"aria-label": "上一张截图",
 													onClick: () => moveShot(-1)
 												}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 													className: `${SkinMarket_module_css_default.heroNav} ${SkinMarket_module_css_default.heroNext}`,
 													variant: "ghost",
-													icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconChevronLeftOutline14, { size: 18 }),
+													icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconChevronLeftOutline, { size: 18 }),
 													"aria-label": "下一张截图",
 													onClick: () => moveShot(1)
 												})] })]
@@ -3334,7 +3355,7 @@ url: https://github.com/<owner>/<repo>
 							shotCount > 1 && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 								className: `${SkinMarket_module_css_default.lightboxNav} ${SkinMarket_module_css_default.lightboxPrev}`,
 								variant: "ghost",
-								icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconChevronLeftOutline14, { size: 26 }),
+								icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconChevronLeftOutline, { size: 26 }),
 								"aria-label": "上一张截图",
 								onClick: () => moveShot(-1)
 							}),
@@ -3352,7 +3373,7 @@ url: https://github.com/<owner>/<repo>
 							shotCount > 1 && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 								className: `${SkinMarket_module_css_default.lightboxNav} ${SkinMarket_module_css_default.lightboxNext}`,
 								variant: "ghost",
-								icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconChevronLeftOutline14, { size: 26 }),
+								icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconChevronLeftOutline, { size: 26 }),
 								"aria-label": "下一张截图",
 								onClick: () => moveShot(1)
 							}),
@@ -3491,7 +3512,7 @@ url: https://github.com/<owner>/<repo>
 						footer: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 							variant: "outline",
 							size: "sm",
-							icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconCopyOutline16, {}),
+							icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
 							disabled: interceptLogId === void 0 || copyingLogId === interceptLogId,
 							onClick: () => {
 								if (interceptLogId !== void 0) copyOperationLog(interceptLogId);
@@ -3562,7 +3583,7 @@ url: https://github.com/<owner>/<repo>
 										className: SkinMarket_module_css_default.copyCapsuleButton,
 										variant: "outline",
 										size: "sm",
-										icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconCopyOutline16, {}),
+										icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
 										"aria-label": installCopied === `${selected?.id}:prompt` ? "提示词已复制" : "复制提示词",
 										title: "复制提示词",
 										onClick: () => void copyInstallOption("prompt")
@@ -3595,7 +3616,7 @@ url: https://github.com/<owner>/<repo>
 											className: SkinMarket_module_css_default.copyCapsuleButton,
 											variant: "outline",
 											size: "sm",
-											icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconCopyOutline16, {}),
+											icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
 											"aria-label": installCopied === `${selected?.id}:command` ? "命令已复制" : "复制命令",
 											title: "复制命令",
 											onClick: () => void copyInstallOption("command")

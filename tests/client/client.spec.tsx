@@ -36,10 +36,12 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', () => {
     ) : null,
     IconChevronLeftOutline14: icon, IconChevronDownOutline14: icon, IconCopyOutline16: icon, IconDownloadOutline16: icon, IconLinkOutline16: icon, IconLoadingOutline16: icon,
     IconRefreshOutline16: icon, IconSearchOutline16: icon, IconTrashOutline16: icon,
+    IconChevronLeftOutlineRegular: icon, IconChevronDownOutlineRegular: icon, IconCopyOutlineRegular: icon, IconDownloadOutlineRegular: icon, IconLoadingOutlineRegular: icon,
+    IconRefreshOutlineRegular: icon, IconSearchOutlineRegular: icon, IconTrashOutlineRegular: icon,
   }
 })
 
-import { CATALOG_BATCH_SIZE, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, interceptNotice, isInterceptFailure, restartDocumentProbeUrl, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection, waitForRestartDocument } from '../../src/client/SkinMarketSection.tsx'
+import { CATALOG_BATCH_SIZE, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, interceptNotice, isInterceptFailure, resolvePrimitiveIcon, restartDocumentProbeUrl, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection, waitForRestartDocument } from '../../src/client/SkinMarketSection.tsx'
 import { MARKET_INSTALL_TROUBLESHOOT_URL, MARKET_MANUAL_UPDATE_URL } from '../../src/client/failure-help.ts'
 import { createClientSkinRuntime, missingPrimitives, switchClientSkin } from '../../src/client/index.ts'
 import { createSkinInstallCommand, createSkinInstallPrompt } from '../../src/client/submission.ts'
@@ -406,6 +408,15 @@ describe('client market', () => {
 
   it('guards missing native primitives', () => {
     expect(missingPrimitives({ Button: true })).toEqual(['Input', 'Modal', 'Pill'])
+  })
+
+  it('resolves alpha.2 icon exports and keeps the rc.6 fallback', () => {
+    const current = () => React.createElement('span', { 'data-icon': 'current' })
+    const legacy = () => React.createElement('span', { 'data-icon': 'legacy' })
+
+    expect(resolvePrimitiveIcon({ modern: current, legacy }, 'modern', 'legacy')).toBe(current)
+    expect(resolvePrimitiveIcon({ legacy }, 'modern', 'legacy')).toBe(legacy)
+    expect(typeof resolvePrimitiveIcon({}, 'modern', 'legacy')).toBe('function')
   })
 
   it('shows the feed loading hint, then puts the active skin first in Installed', async () => {
