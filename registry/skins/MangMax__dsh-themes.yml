@@ -16,41 +16,42 @@ modes:
   - light
   - dark
 install:
-  target: github:MangMax/dsh-themes#85fe103cc2792da5eec2d57b045509256a5206d1
-  version: 0.1.8
-  commit: 85fe103cc2792da5eec2d57b045509256a5206d1
+  target: github:MangMax/dsh-themes#5b319606f479ec85a18b6534779a3c98a0954fad
+  version: 0.1.9
+  commit: 5b319606f479ec85a18b6534779a3c98a0954fad
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
 compatibility:
-  dsh: unverified
+  dsh: ^0.1.5-rc.1
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/MangMax/dsh-themes/85fe103cc2792da5eec2d57b045509256a5206d1/assets/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/MangMax/dsh-themes/5b319606f479ec85a18b6534779a3c98a0954fad/assets/screenshot.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 85fe103cc2792da5eec2d57b045509256a5206d1
-    packageVersion: 0.1.8
+    commit: 5b319606f479ec85a18b6534779a3c98a0954fad
+    packageVersion: 0.1.9
     scannerVersion: static-v2
+    dshVersion: ^0.1.5-rc.1
     mode: static
     result: unknown
-    checkedAt: 2026-08-23T05:31:52.578Z
+    checkedAt: 2026-09-24T22:14:35.430Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -59,7 +60,7 @@ license:
   commercialUse: true
 featuredRank: 30
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-23T05:31:52.649Z
-metadataUpdatedAt: 2026-08-23T05:31:52.649Z
+releaseUpdatedAt: 2026-09-24T22:14:35.815Z
+metadataUpdatedAt: 2026-09-24T22:14:35.815Z
 starsUpdatedAt: 2026-09-09T21:39:55.783Z
-updatedAt: 2026-09-09T21:39:55.783Z
+updatedAt: 2026-09-24T22:14:35.815Z

@@ -17,9 +17,9 @@ tags:
 modes:
   - light
 install:
-  target: github:Carlown/majia7-dsh-skin#1b326bda8e085cba59aa83b81251fd37cbf32b93
+  target: github:Carlown/majia7-dsh-skin#7972213f920728a660532de27c28a65e6396bd20
   version: 0.3.6
-  commit: 1b326bda8e085cba59aa83b81251fd37cbf32b93
+  commit: 7972213f920728a660532de27c28a65e6396bd20
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -48,13 +48,13 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 1b326bda8e085cba59aa83b81251fd37cbf32b93
+    commit: 7972213f920728a660532de27c28a65e6396bd20
     packageVersion: 0.3.6
     scannerVersion: static-v2
     dshVersion: 0.1.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-09-08T21:48:51.964Z
+    checkedAt: 2026-09-24T22:14:53.561Z
     findings: []
 license:
   code: MIT
@@ -62,7 +62,7 @@ license:
   notice: MIT。四张档位图与文档截图为作者自有素材，随 MIT 许可证一并发布。
 featuredRank: 0
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-26T11:54:32.000Z
-metadataUpdatedAt: 2026-09-08T21:48:54.577Z
+releaseUpdatedAt: 2026-09-24T22:14:54.446Z
+metadataUpdatedAt: 2026-09-24T22:14:54.446Z
 starsUpdatedAt: 2026-08-26T11:54:32.000Z
-updatedAt: 2026-09-08T21:48:54.577Z
+updatedAt: 2026-09-24T22:14:54.446Z

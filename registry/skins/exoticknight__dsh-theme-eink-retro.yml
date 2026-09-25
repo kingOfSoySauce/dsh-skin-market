@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:exoticknight/dsh-theme-eink-retro#db05b665b9d28176d1d97af932ee18d75828bec8
-  version: 0.3.1
-  commit: db05b665b9d28176d1d97af932ee18d75828bec8
+  target: github:exoticknight/dsh-theme-eink-retro#beffb5ab5737421ed744d18f584d8e1a1a742942
+  version: 0.3.2
+  commit: beffb5ab5737421ed744d18f584d8e1a1a742942
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -45,19 +45,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: db05b665b9d28176d1d97af932ee18d75828bec8
-    packageVersion: 0.3.1
+    commit: beffb5ab5737421ed744d18f584d8e1a1a742942
+    packageVersion: 0.3.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-23T22:14:05.208Z
+    checkedAt: 2026-09-24T22:14:28.219Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 1070
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-23T22:14:05.875Z
-metadataUpdatedAt: 2026-09-23T22:14:05.875Z
+releaseUpdatedAt: 2026-09-24T22:14:28.799Z
+metadataUpdatedAt: 2026-09-24T22:14:28.799Z
 starsUpdatedAt: 2026-09-07T21:58:44.326Z
-updatedAt: 2026-09-23T22:14:05.875Z
+updatedAt: 2026-09-24T22:14:28.799Z

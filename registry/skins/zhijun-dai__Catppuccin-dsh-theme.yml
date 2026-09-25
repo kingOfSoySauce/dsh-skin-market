@@ -19,9 +19,9 @@ modes:
   - light
   - dark
 install:
-  target: github:zhijun-dai/Catppuccin-dsh-theme#f00241842e94c2a659aa0af47b3f1070c60f7a15
-  version: 0.2.4
-  commit: f00241842e94c2a659aa0af47b3f1070c60f7a15
+  target: github:zhijun-dai/Catppuccin-dsh-theme#140ed3c3133ecb31761845224f4ec91d45ba747e
+  version: 0.2.5
+  commit: 140ed3c3133ecb31761845224f4ec91d45ba747e
   desktop:
     mode: managed
     registry: npm
@@ -37,35 +37,37 @@ screenshots:
   - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/9885d3e7ee93ad4c972e92be4b6f301105e73eb4/assets/latte.webp
   - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/9885d3e7ee93ad4c972e92be4b6f301105e73eb4/assets/frappe.webp
   - https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/9885d3e7ee93ad4c972e92be4b6f301105e73eb4/assets/macchiato.webp
+listScreenshot: https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/140ed3c3133ecb31761845224f4ec91d45ba747e/assets/preview.webp
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: f00241842e94c2a659aa0af47b3f1070c60f7a15
-    packageVersion: 0.2.4
+    commit: 140ed3c3133ecb31761845224f4ec91d45ba747e
+    packageVersion: 0.2.5
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-06T21:12:24.012Z
+    checkedAt: 2026-09-24T22:13:35.583Z
     findings: []
 license:
   code: MIT
   commercialUse: true
   notice: Catppuccin palette 源自 catppuccin/palette，并按 MIT 许可证使用。
 featuredRank: 3
-starsSnapshot: 11
-releaseUpdatedAt: 2026-09-06T21:12:24.185Z
-metadataUpdatedAt: 2026-09-06T21:12:24.185Z
-starsUpdatedAt: 2026-09-18T21:37:01.262Z
-updatedAt: 2026-09-18T21:37:01.262Z
+starsSnapshot: 10
+releaseUpdatedAt: 2026-09-24T22:13:36.378Z
+metadataUpdatedAt: 2026-09-24T22:13:36.378Z
+starsUpdatedAt: 2026-09-24T22:13:36.378Z
+updatedAt: 2026-09-24T22:13:36.378Z

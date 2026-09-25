@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:CH4ACKO3/dsh-render-engine#476dee1f13030f0c063305afdc83544247e6656d&path:/packages/code-render
+  target: github:CH4ACKO3/dsh-render-engine#9582bf138d3a6d7381a84359a4a0b878a1ea8952&path:/packages/code-render
   version: 0.1.3
-  commit: 476dee1f13030f0c063305afdc83544247e6656d
+  commit: 9582bf138d3a6d7381a84359a4a0b878a1ea8952
   desktop:
     mode: managed
     registry: npm
@@ -31,7 +31,7 @@ install:
     version: 0.1.3
     integrity: sha512-aTMlRcu0VTJPekXudoas77XXLmdSMEZpOazVSerW3+h/NQrh8BclqJOkztkkRSJ7TyQREC1Y6MueQgLKAGMNfQ==
     repository: https://github.com/CH4ACKO3/dsh-render-engine
-    gitHead: 476dee1f13030f0c063305afdc83544247e6656d
+    gitHead: 9582bf138d3a6d7381a84359a4a0b878a1ea8952
 compatibility:
   dsh: 0.1.0-rc.8
   platform:
@@ -56,13 +56,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 476dee1f13030f0c063305afdc83544247e6656d
+    commit: 9582bf138d3a6d7381a84359a4a0b878a1ea8952
     packageVersion: 0.1.3
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.8
     mode: static
     result: unknown
-    checkedAt: 2026-09-19T21:25:57.844Z
+    checkedAt: 2026-09-24T22:14:24.373Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -71,7 +71,7 @@ license:
   commercialUse: true
 featuredRank: 1055
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-19T21:25:59.035Z
-metadataUpdatedAt: 2026-09-19T21:25:59.035Z
+releaseUpdatedAt: 2026-09-24T22:14:25.590Z
+metadataUpdatedAt: 2026-09-24T22:14:25.590Z
 starsUpdatedAt: 2026-09-12T21:24:30.399Z
-updatedAt: 2026-09-19T21:25:59.035Z
+updatedAt: 2026-09-24T22:14:25.590Z
