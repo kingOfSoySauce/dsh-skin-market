@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:laohankk/dsh-crt-skins#60a8bc681342b2676af620d44119167fec6a1d37&path:/packages/skins/crt-terminal
-  version: 1.0.0
-  commit: 60a8bc681342b2676af620d44119167fec6a1d37
+  target: github:laohankk/dsh-crt-skins#fef62785ee0a42ecd23ed6c4dd82879cf45ffb3f&path:/packages/skins/crt-terminal
+  version: 1.0.1
+  commit: fef62785ee0a42ecd23ed6c4dd82879cf45ffb3f
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -26,8 +26,8 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/laohankk/dsh-crt-skins/60a8bc681342b2676af620d44119167fec6a1d37/packages/skins/crt-terminal/preview/preview.png
-listScreenshot: https://raw.githubusercontent.com/laohankk/dsh-crt-skins/60a8bc681342b2676af620d44119167fec6a1d37/packages/skins/crt-terminal/preview/preview.png
+  - https://raw.githubusercontent.com/laohankk/dsh-crt-skins/fef62785ee0a42ecd23ed6c4dd82879cf45ffb3f/packages/skins/crt-terminal/preview/preview.png
+listScreenshot: https://raw.githubusercontent.com/laohankk/dsh-crt-skins/fef62785ee0a42ecd23ed6c4dd82879cf45ffb3f/packages/skins/crt-terminal/preview/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -44,7 +44,7 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: 60a8bc681342b2676af620d44119167fec6a1d37
+    commit: fef62785ee0a42ecd23ed6c4dd82879cf45ffb3f
     packageVersion: 1.0.0
     scannerVersion: static-v2
     mode: static
