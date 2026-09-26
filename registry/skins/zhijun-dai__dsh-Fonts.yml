@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:zhijun-dai/dsh-Fonts#46014ec5663435bdd39acee2e77c3979810b1967
-  version: 0.1.0
-  commit: 46014ec5663435bdd39acee2e77c3979810b1967
+  target: github:zhijun-dai/dsh-Fonts#60b3e6a56b213c294d4a3acd6e865712ae7b497e
+  version: 0.1.1
+  commit: 60b3e6a56b213c294d4a3acd6e865712ae7b497e
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -27,35 +27,36 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/zhijun-dai/dsh-Fonts/46014ec5663435bdd39acee2e77c3979810b1967/assets/fonts-settings.webp
   - https://raw.githubusercontent.com/zhijun-dai/dsh-Fonts/46014ec5663435bdd39acee2e77c3979810b1967/assets/fonts-jetbrains-inter.webp
+listScreenshot: https://raw.githubusercontent.com/zhijun-dai/dsh-Fonts/46014ec5663435bdd39acee2e77c3979810b1967/assets/fonts-settings.webp
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 46014ec5663435bdd39acee2e77c3979810b1967
-    packageVersion: 0.1.0
+    commit: 60b3e6a56b213c294d4a3acd6e865712ae7b497e
+    packageVersion: 0.1.1
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:55.010Z
+    checkedAt: 2026-09-26T21:58:29.894Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1085
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-07T21:58:55.087Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-09-26T21:58:30.367Z
+metadataUpdatedAt: 2026-09-26T21:58:30.367Z
 starsUpdatedAt: 2026-09-09T21:40:44.282Z
-updatedAt: 2026-09-09T21:40:44.282Z
-listScreenshot: https://raw.githubusercontent.com/zhijun-dai/dsh-Fonts/46014ec5663435bdd39acee2e77c3979810b1967/assets/fonts-settings.webp
+updatedAt: 2026-09-26T21:58:30.367Z

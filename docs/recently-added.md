@@ -271,6 +271,86 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:zhijun-dai.dsh-fonts -->
+### 2026-09-26 · dsh-Fonts
+
+[zhijun-dai/dsh-Fonts](https://github.com/zhijun-dai/dsh-Fonts)：DeepSeek Harness 的字体系统插件 — 内置 OFL 开源字体离线分发、自定义字体导入、以及可供其他插件扩展的 ctx.fonts 注册表
+
+- 版本：`0.1.1`
+- 固定 commit：`60b3e6a56b213c294d4a3acd6e865712ae7b497e`
+
+<!-- dsh-auto-entry:laohankk.pipboy.terminal -->
+### 2026-09-26 · Pip-Boy 终端
+
+[laohankk/dsh-crt-skins](https://github.com/laohankk/dsh-crt-skins)：辐射 Pip-Boy 风格绿磷光主题：经典 Pip-Boy 绿、Vault-Tec 角框、玻璃反光（无扫描线无闪烁，画面稳定），成功/警告/错误三态分色，外加合成的终端音效。纯 CSS + Web Audio。
+
+- 版本：`1.0.1`
+- 固定 commit：`fef62785ee0a42ecd23ed6c4dd82879cf45ffb3f`
+
+<!-- dsh-auto-entry:laohankk.crt.terminal -->
+### 2026-09-26 · CRT 终端（琥珀）
+
+[laohankk/dsh-crt-skins](https://github.com/laohankk/dsh-crt-skins)：琥珀磷光 CRT 终端主题：琥珀配色、磷光泛光、扫描线、曲面暗角、方角面板与角标，外加合成的终端音效。纯 CSS + Web Audio，无字体无音频文件。
+
+- 版本：`1.0.1`
+- 固定 commit：`fef62785ee0a42ecd23ed6c4dd82879cf45ffb3f`
+
+<!-- dsh-auto-entry:mangmax.dsh-themes -->
+### 2026-09-26 · dsh-themes
+
+[MangMax/dsh-themes](https://github.com/MangMax/dsh-themes)：DSH Web UI 外观与主题插件：内置调色板、明 / 暗 / 跟随系统外观模式、Open VSX 主题搜索导入与 VS Code 主题导入，主题库持久化。
+
+- 版本：`0.2.0`
+- 固定 commit：`0c78671a9d266be60f5762bed422128ec0dd56da`
+
+<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
+### 2026-09-26 · dsh-kimino-theme
+
+[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
+
+- 版本：`66.4.0`
+- 固定 commit：`6c72a7131351725b2c7cc5a3b06a3cbbb952d041`
+
+<!-- dsh-auto-entry:yunxiiqwq.maid-whale-webui -->
+### 2026-09-26 · maid-whale-webui
+
+[yunxiiQwQ/dsh-maid-whale-webUI](https://github.com/yunxiiQwQ/dsh-maid-whale-webUI)：DSH Web UI 鲸鱼女仆纸面主题：亮暗配色、海洋插画、手绘边框、装饰素材与常驻桌宠。
+
+- 版本：`0.1.1`
+- 固定 commit：`ae75483a6a95fcf58e53ef12d8bb1ab01052103c`
+
+<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
+### 2026-09-26 · dsh-bloom-theme
+
+[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)：DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
+
+- 版本：`0.14.0`
+- 固定 commit：`a21adabb457df29dd974c68e973f033f74207a0f`
+
+<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
+### 2026-09-26 · dsh-dream-skin
+
+[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
+
+- 版本：`9.26.1`
+- 固定 commit：`9493fcdace7248eddf13daaca49bb6c479cb5720`
+
+<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
+### 2026-09-26 · dsh-wallpaper-engine
+
+[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
+
+- 版本：`1.0.1`
+- 固定 commit：`1c26d788a00e084150f341a8c85e0a24409dd100`
+
+<!-- dsh-auto-entry:nagi-ovo.dsh-ads -->
+### 2026-09-26 · dsh-ads
+
+[Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads)：把 DeepSeek Harness 变成 2005 年门户网站：在侧栏、对话和推理过程中加入虚构广告、假游戏与弹窗，支持中英文切换。
+
+- 版本：`0.1.1`
+- 固定 commit：`86b1340c9ec3db32cc33a3cebfb8c9aa8a717ee0`
+
 <!-- dsh-auto-entry:lengzhanbao.dsh-raiden-theme -->
 ### 2026-09-25 · dsh-raiden-theme
 
@@ -303,14 +383,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.1.12`
 - 固定 commit：`5c8a1e0a4bce3de76721e5698d5e105d09a74509`
 
-<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
-### 2026-09-25 · dsh-bloom-theme
-
-[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)：DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
-
-- 版本：`0.14.0`
-- 固定 commit：`3c5b89a8d7d803bb01eb76352d0025507593525b`
-
 <!-- dsh-auto-entry:tpmoonchefryan.dsh-joi-channel-theme -->
 ### 2026-09-25 · dsh-joi-channel-theme
 
@@ -318,30 +390,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.1.12`
 - 固定 commit：`9388172a0e4f8d2270435eb73a87cff8087bc9a6`
-
-<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
-### 2026-09-25 · dsh-kimino-theme
-
-[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
-
-- 版本：`66.4.0`
-- 固定 commit：`66bd9bfcebb5e82b7dc4727781748a64ec9f5446`
-
-<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
-### 2026-09-25 · dsh-dream-skin
-
-[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
-
-- 版本：`9.23.0`
-- 固定 commit：`101622e2e239ab85453567bdd91d1440acff47f2`
-
-<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
-### 2026-09-25 · dsh-wallpaper-engine
-
-[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
-
-- 版本：`1.0.1`
-- 固定 commit：`6ba2faea16dae512694a5b63039f76aac7239db0`
 
 <!-- dsh-auto-entry:ymh0000123.dsh-theme-endfield -->
 ### 2026-09-25 · dsh-theme-endfield
@@ -382,14 +430,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`3.0.3`
 - 固定 commit：`675db40835d04def166f3d5555a096d20f2a79d8`
-
-<!-- dsh-auto-entry:mangmax.dsh-themes -->
-### 2026-09-24 · dsh-themes
-
-[MangMax/dsh-themes](https://github.com/MangMax/dsh-themes)：DSH Web UI 外观与主题插件：内置调色板、明 / 暗 / 跟随系统外观模式、Open VSX 主题搜索导入与 VS Code 主题导入，主题库持久化。
-
-- 版本：`0.1.9`
-- 固定 commit：`5b319606f479ec85a18b6534779a3c98a0954fad`
 
 <!-- dsh-auto-entry:lisongxuan.ds-hentai -->
 ### 2026-09-24 · ds-hentai
@@ -543,14 +583,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.6.1`
 - 固定 commit：`3bb25448a267735124bbe16fe50d5de23d6573cf`
 
-<!-- dsh-auto-entry:nagi-ovo.dsh-ads -->
-### 2026-09-19 · dsh-ads
-
-[Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads)：把 DeepSeek Harness 变成 2005 年门户网站：在侧栏、对话和推理过程中加入虚构广告、假游戏与弹窗，支持中英文切换。
-
-- 版本：`0.1.0`
-- 固定 commit：`7cbc5e5c937a8eb22c6e0169b61ff3298ab0fb58`
-
 <!-- dsh-auto-entry:doozqoo.dsh-pixel-office -->
 ### 2026-09-18 · dsh-pixel-office
 
@@ -598,22 +630,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`1.1.0`
 - 固定 commit：`a355a9b16ba692b7551ffac0a6a6a9fea1149e49`
-
-<!-- dsh-auto-entry:laohankk.crt.terminal -->
-### 2026-09-15 · CRT 终端（琥珀）
-
-[laohankk/dsh-crt-skins](https://github.com/laohankk/dsh-crt-skins)：琥珀磷光 CRT 终端主题：琥珀配色、磷光泛光、扫描线、曲面暗角、方角面板与角标，外加合成的终端音效。纯 CSS + Web Audio，无字体无音频文件。
-
-- 版本：`1.0.0`
-- 固定 commit：`60a8bc681342b2676af620d44119167fec6a1d37`
-
-<!-- dsh-auto-entry:laohankk.pipboy.terminal -->
-### 2026-09-15 · Pip-Boy 终端
-
-[laohankk/dsh-crt-skins](https://github.com/laohankk/dsh-crt-skins)：辐射 Pip-Boy 风格绿磷光主题：经典 Pip-Boy 绿、Vault-Tec 角框、玻璃反光（无扫描线无闪烁，画面稳定），成功/警告/错误三态分色，外加合成的终端音效。纯 CSS + Web Audio。
-
-- 版本：`1.0.0`
-- 固定 commit：`60a8bc681342b2676af620d44119167fec6a1d37`
 
 <!-- dsh-auto-entry:jerryphoenixcky.dsh-plugin-wallpaper -->
 ### 2026-09-15 · dsh-plugin-wallpaper
@@ -846,14 +862,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.6.4`
 - 固定 commit：`11918fdb89b796b12d92c9a09e79dbf9d413df9a`
-
-<!-- dsh-auto-entry:yunxiiqwq.maid-whale-webui -->
-### 2026-09-10 · maid-whale-webui
-
-[yunxiiQwQ/dsh-maid-whale-webUI](https://github.com/yunxiiQwQ/dsh-maid-whale-webUI)：DSH Web UI 鲸鱼女仆纸面主题：亮暗配色、海洋插画、手绘边框、装饰素材与常驻桌宠。
-
-- 版本：`0.1.1`
-- 固定 commit：`5162a73c2b1e066a095c4bf218a1c305ee467cfb`
 
 <!-- dsh-auto-entry:xwh5.dsh-change-review -->
 ### 2026-09-09 · dsh-change-review

@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:MangMax/dsh-themes#5b319606f479ec85a18b6534779a3c98a0954fad
-  version: 0.1.9
-  commit: 5b319606f479ec85a18b6534779a3c98a0954fad
+  target: github:MangMax/dsh-themes#0c78671a9d266be60f5762bed422128ec0dd56da
+  version: 0.2.0
+  commit: 0c78671a9d266be60f5762bed422128ec0dd56da
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -45,13 +45,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 5b319606f479ec85a18b6534779a3c98a0954fad
-    packageVersion: 0.1.9
+    commit: 0c78671a9d266be60f5762bed422128ec0dd56da
+    packageVersion: 0.2.0
     scannerVersion: static-v2
     dshVersion: ^0.1.5-rc.1
     mode: static
     result: unknown
-    checkedAt: 2026-09-24T22:14:35.430Z
+    checkedAt: 2026-09-26T21:57:48.708Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -60,7 +60,7 @@ license:
   commercialUse: true
 featuredRank: 30
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-24T22:14:35.815Z
-metadataUpdatedAt: 2026-09-24T22:14:35.815Z
+releaseUpdatedAt: 2026-09-26T21:57:49.062Z
+metadataUpdatedAt: 2026-09-26T21:57:49.062Z
 starsUpdatedAt: 2026-09-09T21:39:55.783Z
-updatedAt: 2026-09-24T22:14:35.815Z
+updatedAt: 2026-09-26T21:57:49.062Z
