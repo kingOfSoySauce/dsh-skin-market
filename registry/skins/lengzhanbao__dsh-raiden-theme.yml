@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lengzhanbao/dsh-raiden-theme#9441e030180508e29197efb337c7ebce36c18d7c
+  target: github:lengzhanbao/dsh-raiden-theme#8cad8cc18f5915c1cafdaea5d414a43bacf78610
   version: 0.1.6
-  commit: 9441e030180508e29197efb337c7ebce36c18d7c
+  commit: 8cad8cc18f5915c1cafdaea5d414a43bacf78610
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -46,20 +46,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 9441e030180508e29197efb337c7ebce36c18d7c
+    commit: 8cad8cc18f5915c1cafdaea5d414a43bacf78610
     packageVersion: 0.1.6
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-16T22:04:45.493Z
+    checkedAt: 2026-09-25T22:13:25.261Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1074
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-16T22:04:46.560Z
-metadataUpdatedAt: 2026-09-16T22:04:46.560Z
+releaseUpdatedAt: 2026-09-25T22:13:25.827Z
+metadataUpdatedAt: 2026-09-25T22:13:25.827Z
 starsUpdatedAt: 2026-09-07T21:58:47.986Z
-updatedAt: 2026-09-16T22:04:46.560Z
+updatedAt: 2026-09-25T22:13:25.827Z

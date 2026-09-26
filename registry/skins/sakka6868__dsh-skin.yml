@@ -16,21 +16,15 @@ modes:
   - light
   - dark
 install:
-  target: github:sakka6868/dsh-skin#f65c03f57fece55a8ff18518f1f4b4d32fd28c76
-  version: 0.4.1
-  commit: f65c03f57fece55a8ff18518f1f4b4d32fd28c76
+  target: github:sakka6868/dsh-skin#c76b9217c2e6a0613870e2ce0727a960bb9defa2
+  version: 0.4.2
+  commit: c76b9217c2e6a0613870e2ce0727a960bb9defa2
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-skin-alphacoders
     packageVersion: 0.3.0
     integrity: sha512-MyKXm4lW0PJZRkXe83snVIvHEKB1AdVDxaiR9rF0vClyKXxcz42bhAEJQWrW4ELfkQKDJPwulMnV7rm21BaYMQ==
-  npm:
-    name: dsh-skin-alphacoders
-    version: 0.4.1
-    integrity: sha512-zmsXcr6APCJYieiE/QTGZDzMGtCv74cQtmUN41DHFfzF9tA4J15KC5kAzwQQS1SXpdHaC5zLpfuzJbQ4spDHIQ==
-    repository: https://github.com/sakka6868/dsh-skin
-    gitHead: f65c03f57fece55a8ff18518f1f4b4d32fd28c76
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -40,6 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/sakka6868/dsh-skin/4629351a51d35ebfab69c061269dfa6e2678aab9/docs/preview-gallery.png
   - https://raw.githubusercontent.com/sakka6868/dsh-skin/802461800cfd20c640198c82df4d23a2c996c1bc/docs/preview-main.png
   - https://raw.githubusercontent.com/sakka6868/dsh-skin/802461800cfd20c640198c82df4d23a2c996c1bc/docs/preview-gallery.png
+listScreenshot: https://raw.githubusercontent.com/sakka6868/dsh-skin/c76b9217c2e6a0613870e2ce0727a960bb9defa2/docs/preview-main.png
 review:
   compatibility: verified
   preview: verified
@@ -56,13 +51,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: f65c03f57fece55a8ff18518f1f4b4d32fd28c76
-    packageVersion: 0.4.1
+    commit: c76b9217c2e6a0613870e2ce0727a960bb9defa2
+    packageVersion: 0.4.2
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: unknown
-    checkedAt: 2026-09-06T21:12:35.360Z
+    checkedAt: 2026-09-25T22:13:09.061Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -71,7 +66,7 @@ license:
   commercialUse: true
 featuredRank: 92
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-06T21:12:35.484Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+releaseUpdatedAt: 2026-09-25T22:13:09.812Z
+metadataUpdatedAt: 2026-09-25T22:13:09.812Z
 starsUpdatedAt: 2026-09-09T21:40:01.594Z
-updatedAt: 2026-09-09T21:40:01.594Z
+updatedAt: 2026-09-25T22:13:09.812Z
