@@ -17,12 +17,18 @@ modes:
   - light
   - dark
 install:
-  target: github:FeatherHunter/dsh-opencode-palette#32a81c896a0ee222a7a0082aeea4317741df9e63&path:/package
-  version: 2.0.2
-  commit: 32a81c896a0ee222a7a0082aeea4317741df9e63
+  target: github:FeatherHunter/dsh-opencode-palette#692fa0969b85fd0d49faeb89ca11b0ef41b399b9&path:/package
+  version: 2.0.5
+  commit: 692fa0969b85fd0d49faeb89ca11b0ef41b399b9
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
+  npm:
+    name: dsh-opencode-palette
+    version: 2.0.5
+    integrity: sha512-2bJCr26lTrVtCd+eq6kQiJlQlfzK7LO0nzMtzHsL+oV1eFH2fjLq+JGXOdqx6651EnAiGE9jegJM0tOTMuMtXw==
+    repository: https://github.com/FeatherHunter/dsh-opencode-palette
+    gitHead: 692fa0969b85fd0d49faeb89ca11b0ef41b399b9
 compatibility:
   dsh: unverified
   platform:
@@ -51,19 +57,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 32a81c896a0ee222a7a0082aeea4317741df9e63
-    packageVersion: 2.0.2
+    commit: 692fa0969b85fd0d49faeb89ca11b0ef41b399b9
+    packageVersion: 2.0.5
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-21T22:34:55.947Z
+    checkedAt: 2026-09-28T23:49:57.785Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 139
-starsSnapshot: 34
-releaseUpdatedAt: 2026-09-21T22:34:56.908Z
-metadataUpdatedAt: 2026-09-21T22:34:56.908Z
-starsUpdatedAt: 2026-09-23T22:12:51.546Z
-updatedAt: 2026-09-23T22:12:51.546Z
+starsSnapshot: 36
+releaseUpdatedAt: 2026-09-28T23:49:58.366Z
+metadataUpdatedAt: 2026-09-28T23:49:58.366Z
+starsUpdatedAt: 2026-09-28T23:49:58.366Z
+updatedAt: 2026-09-28T23:49:58.366Z

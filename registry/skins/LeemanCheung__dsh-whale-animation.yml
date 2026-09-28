@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:LeemanCheung/dsh-whale-animation#bc86d6ef7f4c9772fac18432c5bd153bf9ca5579
+  target: github:LeemanCheung/dsh-whale-animation#ba3a88969420eb540746eedea4511c645ad71af7
   version: 0.7.1
-  commit: bc86d6ef7f4c9772fac18432c5bd153bf9ca5579
+  commit: ba3a88969420eb540746eedea4511c645ad71af7
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -44,19 +44,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: bc86d6ef7f4c9772fac18432c5bd153bf9ca5579
+    commit: ba3a88969420eb540746eedea4511c645ad71af7
     packageVersion: 0.7.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-10T21:34:17.770Z
+    checkedAt: 2026-09-28T23:50:18.552Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1037
 starsSnapshot: 6
-releaseUpdatedAt: 2026-09-10T21:34:19.749Z
-metadataUpdatedAt: 2026-09-10T21:34:19.749Z
+releaseUpdatedAt: 2026-09-28T23:50:19.358Z
+metadataUpdatedAt: 2026-09-28T23:50:19.358Z
 starsUpdatedAt: 2026-09-12T21:23:44.929Z
-updatedAt: 2026-09-12T21:23:44.929Z
+updatedAt: 2026-09-28T23:50:19.358Z

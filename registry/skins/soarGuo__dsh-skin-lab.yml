@@ -17,13 +17,18 @@ modes:
   - light
   - dark
 install:
-  target: github:soarGuo/dsh-skin-lab#c63d42d4f4002036b23f6ef31a83f121f76f0293
-  version: 1.0.3
-  commit: c63d42d4f4002036b23f6ef31a83f121f76f0293
+  target: github:soarGuo/dsh-skin-lab#ad32833d069666a19f534715afd2bcd63bb3a80e
+  version: 1.0.4
+  commit: ad32833d069666a19f534715afd2bcd63bb3a80e
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
-  allowBuild: dsh-skin-lab@https://codeload.github.com/soarGuo/dsh-skin-lab/tar.gz/c63d42d4f4002036b23f6ef31a83f121f76f0293
+  npm:
+    name: dsh-skin-lab
+    version: 1.0.4
+    integrity: sha512-oWshicQlWDcTFAcQsXRu/3kpGnyDwv+12m6iyHIgdApwh4glr7MgIOpaKlOsgPz919A1GcKdUpudkIY7B/AtZg==
+    repository: https://github.com/soarGuo/dsh-skin-lab
+    gitHead: ad32833d069666a19f534715afd2bcd63bb3a80e
 compatibility:
   dsh: ^0.1.2-alpha.2
   platform:
@@ -31,35 +36,36 @@ compatibility:
 screenshots:
   - https://cdn.jsdelivr.net/npm/dsh-skin-lab@1.0.2/docs/screenshots/skin1.png
   - https://cdn.jsdelivr.net/npm/dsh-skin-lab@1.0.2/docs/screenshots/skin2.png
+listScreenshot: https://cdn.jsdelivr.net/npm/dsh-skin-lab@1.0.2/docs/screenshots/skin1.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.2-alpha.2 未被本次检测范围 >=0.1.7-alpha.2 完全覆盖（固定版本 ad32833d069666a19f534715afd2bcd63bb3a80e）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: c63d42d4f4002036b23f6ef31a83f121f76f0293
-    packageVersion: 1.0.3
+    commit: ad32833d069666a19f534715afd2bcd63bb3a80e
+    packageVersion: 1.0.4
     scannerVersion: static-v2
-    dshVersion: ^0.1.2-alpha.2
+    dshVersion: ">=0.1.7-alpha.2"
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:59:02.511Z
+    checkedAt: 2026-09-28T23:52:14.783Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1098
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-07T21:59:02.581Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-09-28T23:52:16.856Z
+metadataUpdatedAt: 2026-09-28T23:52:16.856Z
 starsUpdatedAt: 2026-09-07T21:59:02.581Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://cdn.jsdelivr.net/npm/dsh-skin-lab@1.0.2/docs/screenshots/skin1.png
+updatedAt: 2026-09-28T23:52:16.856Z

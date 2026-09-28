@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:ink5897/dsh-theme-kit#0b2101b431491c24143f939daea8fd773ca2c641
-  version: 0.1.2
-  commit: 0b2101b431491c24143f939daea8fd773ca2c641
+  target: github:ink5897/dsh-theme-kit#94af42b6136e3b82a944bea8b1dc179272931a02
+  version: 0.1.4
+  commit: 94af42b6136e3b82a944bea8b1dc179272931a02
   desktop:
     mode: managed
     registry: npm
@@ -29,10 +29,10 @@ install:
     integrity: sha512-ERy2rfGTDJXmWtRefhUtP88ycl03Oa1BCio862qMjYsadxIo/2r8e2zgOklmBxxNxg5g4dGFQlHUFGhgMTTvqg==
   npm:
     name: dsh-theme-kit
-    version: 0.1.2
-    integrity: sha512-ERy2rfGTDJXmWtRefhUtP88ycl03Oa1BCio862qMjYsadxIo/2r8e2zgOklmBxxNxg5g4dGFQlHUFGhgMTTvqg==
+    version: 0.1.4
+    integrity: sha512-m5S7ZohVuqu8ypqWrZjm3Jy/HpEj28BuAtFlRBWjVoDTIOE2qA5tYfmVorOALyES0lnZygM2sFai2ROK/TSW4Q==
     repository: https://github.com/ink5897/dsh-theme-kit
-    gitHead: 0b2101b431491c24143f939daea8fd773ca2c641
+    gitHead: 94af42b6136e3b82a944bea8b1dc179272931a02
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -45,6 +45,7 @@ screenshots:
   - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/settings-background.png
   - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/settings-texture.png
   - https://raw.githubusercontent.com/ink5897/dsh-theme-kit/0b2101b431491c24143f939daea8fd773ca2c641/docs/cover.jpg
+listScreenshot: https://raw.githubusercontent.com/ink5897/dsh-theme-kit/94af42b6136e3b82a944bea8b1dc179272931a02/docs/theme-morandi.png
 review:
   compatibility: verified
   preview: verified
@@ -59,20 +60,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 0b2101b431491c24143f939daea8fd773ca2c641
-    packageVersion: 0.1.2
+    commit: 94af42b6136e3b82a944bea8b1dc179272931a02
+    packageVersion: 0.1.4
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:31:25.527Z
+    checkedAt: 2026-09-28T23:50:53.220Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 80
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-23T05:31:25.601Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+releaseUpdatedAt: 2026-09-28T23:50:55.504Z
+metadataUpdatedAt: 2026-09-28T23:50:55.504Z
 starsUpdatedAt: 2026-09-09T21:39:50.218Z
-updatedAt: 2026-09-09T21:39:50.218Z
+updatedAt: 2026-09-28T23:50:55.504Z

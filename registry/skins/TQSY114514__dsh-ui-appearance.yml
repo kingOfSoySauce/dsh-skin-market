@@ -16,16 +16,16 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#5c8a1e0a4bce3de76721e5698d5e105d09a74509
+  target: github:TQSY114514/dsh-ui-appearance#dbc8b662b7166aec6144b1a5d0f1371110377032
   version: 0.1.12
-  commit: 5c8a1e0a4bce3de76721e5698d5e105d09a74509
+  commit: dbc8b662b7166aec6144b1a5d0f1371110377032
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-ui-appearance
     packageVersion: 0.1.5
     integrity: sha512-FxpfjB2Xv8klJvzKGv9nPv8Y+gq2NWCIw1bch6Rz2F1/zWSI+kCbonhapyomz/fqyki1S0EuLrvIyXNcfydsCQ==
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/5c8a1e0a4bce3de76721e5698d5e105d09a74509
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/dbc8b662b7166aec6144b1a5d0f1371110377032
 compatibility:
   dsh: unverified
   platform:
@@ -57,12 +57,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 5c8a1e0a4bce3de76721e5698d5e105d09a74509
+    commit: dbc8b662b7166aec6144b1a5d0f1371110377032
     packageVersion: 0.1.12
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-09-25T22:12:33.389Z
+    checkedAt: 2026-09-28T23:50:04.759Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -70,8 +70,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 36
-starsSnapshot: 17
-releaseUpdatedAt: 2026-09-25T22:12:34.435Z
-metadataUpdatedAt: 2026-09-25T22:12:34.435Z
-starsUpdatedAt: 2026-09-26T21:56:53.049Z
-updatedAt: 2026-09-26T21:56:53.049Z
+starsSnapshot: 18
+releaseUpdatedAt: 2026-09-28T23:50:06.553Z
+metadataUpdatedAt: 2026-09-28T23:50:06.553Z
+starsUpdatedAt: 2026-09-28T23:50:06.553Z
+updatedAt: 2026-09-28T23:50:06.553Z
