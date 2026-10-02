@@ -19,15 +19,21 @@ modes:
   - light
   - dark
 install:
-  target: github:taoser258/dsh-client-ui-skin-qingxiao#38f5bc044ccd562713e28f59f28b54732011f974
-  version: 0.1.4
-  commit: 38f5bc044ccd562713e28f59f28b54732011f974
+  target: github:taoser258/dsh-client-ui-skin-qingxiao#0ec0b9b636f6b1e6a81d0ced21d541e1359201a0
+  version: 0.2.3
+  commit: 0ec0b9b636f6b1e6a81d0ced21d541e1359201a0
   desktop:
     mode: managed
     registry: npm
     packageName: "@taosee258/dsh-client-ui-skin-qingxiao"
-    packageVersion: 0.1.4
-    integrity: sha512-Ec8d+WDp6/ZsnhnDruul8ZEFFVglJuynd1YmL2Jhnt9FFMsza1X8YXnw0up8rT/7Gr+GWoqJIGnUufBG6EacCw==
+    packageVersion: 0.2.3
+    integrity: sha512-27wEgI2RgCK4miwnPTaPu4cV+B6kJ0rHJ+Z7NpD0//L1rAwNZOSWFwH6ZqgnZsExQ7kpGjpNUh5H6mTXZwg/Bg==
+  npm:
+    name: "@taosee258/dsh-client-ui-skin-qingxiao"
+    version: 0.2.3
+    integrity: sha512-27wEgI2RgCK4miwnPTaPu4cV+B6kJ0rHJ+Z7NpD0//L1rAwNZOSWFwH6ZqgnZsExQ7kpGjpNUh5H6mTXZwg/Bg==
+    repository: https://github.com/taoser258/dsh-client-ui-skin-qingxiao
+    gitHead: 0ec0b9b636f6b1e6a81d0ced21d541e1359201a0
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -35,6 +41,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/taoser258/dsh-client-ui-skin-qingxiao/38f5bc044ccd562713e28f59f28b54732011f974/preview/screen-light.png
   - https://raw.githubusercontent.com/taoser258/dsh-client-ui-skin-qingxiao/38f5bc044ccd562713e28f59f28b54732011f974/preview/screen-dark.png
+listScreenshot: https://raw.githubusercontent.com/taoser258/dsh-client-ui-skin-qingxiao/38f5bc044ccd562713e28f59f28b54732011f974/preview/screen-light.png
 review:
   compatibility: verified
   preview: verified
@@ -49,21 +56,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 38f5bc044ccd562713e28f59f28b54732011f974
-    packageVersion: 0.1.4
+    commit: 0ec0b9b636f6b1e6a81d0ced21d541e1359201a0
+    packageVersion: 0.2.3
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:22.934Z
+    checkedAt: 2026-10-02T10:29:31.668Z
     findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 1041
 starsSnapshot: 9
-releaseUpdatedAt: 2026-09-07T21:58:23.016Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-10-02T10:29:32.961Z
+metadataUpdatedAt: 2026-10-02T10:29:32.961Z
 starsUpdatedAt: 2026-09-29T22:57:03.604Z
-updatedAt: 2026-09-29T22:57:03.604Z
-listScreenshot: https://raw.githubusercontent.com/taoser258/dsh-client-ui-skin-qingxiao/38f5bc044ccd562713e28f59f28b54732011f974/preview/screen-light.png
+updatedAt: 2026-10-02T10:29:32.961Z

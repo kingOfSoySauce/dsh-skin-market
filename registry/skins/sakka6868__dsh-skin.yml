@@ -16,12 +16,18 @@ modes:
   - light
   - dark
 install:
-  target: github:sakka6868/dsh-skin#c76b9217c2e6a0613870e2ce0727a960bb9defa2
-  version: 0.4.2
-  commit: c76b9217c2e6a0613870e2ce0727a960bb9defa2
+  target: github:sakka6868/dsh-skin#9fd8f74e869c2f3728811562a490e4f3b31d0de2
+  version: 0.4.3
+  commit: 9fd8f74e869c2f3728811562a490e4f3b31d0de2
   desktop:
     mode: manual-only
     reason: npm-source-unverified
+  npm:
+    name: dsh-skin-alphacoders
+    version: 0.4.3
+    integrity: sha512-yNWirKvUzgOLk1PkMQXVEwjCg9PnZxC8IqnwVWUZ9Ec6fIAh5tmw7hB3+TKBvmNi9/MtehHE2v2pD5wAUdFVCg==
+    repository: https://github.com/sakka6868/dsh-skin
+    gitHead: 9fd8f74e869c2f3728811562a490e4f3b31d0de2
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -48,13 +54,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: c76b9217c2e6a0613870e2ce0727a960bb9defa2
-    packageVersion: 0.4.2
+    commit: 9fd8f74e869c2f3728811562a490e4f3b31d0de2
+    packageVersion: 0.4.3
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.6
+    dshVersion: ">=0.1.0-rc.6"
     mode: static
     result: unknown
-    checkedAt: 2026-09-25T22:13:09.061Z
+    checkedAt: 2026-10-02T10:30:23.359Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -63,7 +69,7 @@ license:
   commercialUse: true
 featuredRank: 92
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-25T22:13:09.812Z
-metadataUpdatedAt: 2026-09-25T22:13:09.812Z
+releaseUpdatedAt: 2026-10-02T10:30:24.538Z
+metadataUpdatedAt: 2026-10-02T10:30:24.538Z
 starsUpdatedAt: 2026-09-09T21:40:01.594Z
-updatedAt: 2026-09-25T22:13:09.812Z
+updatedAt: 2026-10-02T10:30:24.538Z

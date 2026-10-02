@@ -17,13 +17,19 @@ modes:
   - light
   - dark
 install:
-  target: github:elysia395/dsh-wallpaper-engine#0ce175831a4960f2b3a2776a6ea89714b51cbc72
-  version: 1.1.0
-  commit: 0ce175831a4960f2b3a2776a6ea89714b51cbc72
+  target: github:elysia395/dsh-wallpaper-engine#d9988b3e1fa0c47d1032c67303e972ef47d5eb1c
+  version: 1.2.0
+  commit: d9988b3e1fa0c47d1032c67303e972ef47d5eb1c
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
-  allowBuild: dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/0ce175831a4960f2b3a2776a6ea89714b51cbc72
+  npm:
+    name: dsh-plugin-wallpaper-engine
+    version: 1.2.0
+    integrity: sha512-WgY1pLh2zbGyLSPJP1aSKq42hntF8PnrAlSeQWqpZwPoLdMByL/9Abth9ELlhw+t0odXNs4Fbiyljju0MF0tfA==
+    repository: https://github.com/elysia395/dsh-wallpaper-engine
+    gitHead: d9988b3e1fa0c47d1032c67303e972ef47d5eb1c
+  allowBuild: dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/d9988b3e1fa0c47d1032c67303e972ef47d5eb1c
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
@@ -39,33 +45,34 @@ screenshots:
   - https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/cbd7d711446953ae2a2b08578997af93b6c48d04/docs/images/wallpaper-library.png
 listScreenshot: https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ae734a2c80ca04099b793f8ce8a182bcb5ad8f79/docs/images/main-interface.gif
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.2.0-rc.1 完全覆盖（固定版本 d9988b3e1fa0c47d1032c67303e972ef47d5eb1c）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 0ce175831a4960f2b3a2776a6ea89714b51cbc72
-    packageVersion: 1.1.0
+    commit: d9988b3e1fa0c47d1032c67303e972ef47d5eb1c
+    packageVersion: 1.2.0
     scannerVersion: static-v2
-    dshVersion: ">=0.1.0-rc.6"
+    dshVersion: ">=0.2.0-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-09-29T22:56:35.334Z
+    checkedAt: 2026-10-02T10:29:06.341Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1001
-starsSnapshot: 396
-releaseUpdatedAt: 2026-09-29T22:56:39.357Z
-metadataUpdatedAt: 2026-09-29T22:56:39.357Z
-starsUpdatedAt: 2026-09-29T22:56:39.357Z
-updatedAt: 2026-09-29T22:56:39.357Z
+starsSnapshot: 478
+releaseUpdatedAt: 2026-10-02T10:29:10.343Z
+metadataUpdatedAt: 2026-10-02T10:29:10.343Z
+starsUpdatedAt: 2026-10-02T10:29:10.343Z
+updatedAt: 2026-10-02T10:29:10.343Z

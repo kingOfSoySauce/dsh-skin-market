@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:zhang66633/dsh-pixel-ui#44454483bbdbbba60822bb7a1d2846ff94ed021c
-  version: 1.3.0
-  commit: 44454483bbdbbba60822bb7a1d2846ff94ed021c
+  target: github:zhang66633/dsh-pixel-ui#bb0ef730764dc2d09327b05a389fb933ea245fe6
+  version: 1.5.0
+  commit: bb0ef730764dc2d09327b05a389fb933ea245fe6
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,6 +28,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/44454483bbdbbba60822bb7a1d2846ff94ed021c/assets/screenshot-wood.png
   - https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/44454483bbdbbba60822bb7a1d2846ff94ed021c/assets/screenshot-paper.png
+listScreenshot: https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/44454483bbdbbba60822bb7a1d2846ff94ed021c/assets/screenshot-wood.png
 review:
   compatibility: verified
   preview: verified
@@ -42,21 +43,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 44454483bbdbbba60822bb7a1d2846ff94ed021c
-    packageVersion: 1.3.0
+    commit: bb0ef730764dc2d09327b05a389fb933ea245fe6
+    packageVersion: 1.5.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:27.594Z
+    checkedAt: 2026-10-02T10:30:29.349Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1053
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-07T21:58:27.726Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-10-02T10:30:30.483Z
+metadataUpdatedAt: 2026-10-02T10:30:30.483Z
 starsUpdatedAt: 2026-09-12T21:24:56.008Z
-updatedAt: 2026-09-12T21:24:56.008Z
-listScreenshot: https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/44454483bbdbbba60822bb7a1d2846ff94ed021c/assets/screenshot-wood.png
+updatedAt: 2026-10-02T10:30:30.483Z

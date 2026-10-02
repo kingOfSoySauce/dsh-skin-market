@@ -16,13 +16,19 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#dbc8b662b7166aec6144b1a5d0f1371110377032
-  version: 0.1.12
-  commit: dbc8b662b7166aec6144b1a5d0f1371110377032
+  target: github:TQSY114514/dsh-ui-appearance#7eee09fe34c4bc46b948c5b8eea962c16a6e73f3
+  version: 0.1.17
+  commit: 7eee09fe34c4bc46b948c5b8eea962c16a6e73f3
   desktop:
     mode: manual-only
     reason: npm-version-mismatch
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/dbc8b662b7166aec6144b1a5d0f1371110377032
+  npm:
+    name: dsh-ui-appearance
+    version: 0.1.17
+    integrity: sha512-FSS3AeNp+xOgp8S4vwDQAejArPdVGpeb5whA3M/w2Xh8GQlK6rduBbidn0vpMnBY0Gl8GL3Hb7r8l7wS3zf1DQ==
+    repository: https://github.com/TQSY114514/dsh-ui-appearance
+    gitHead: 7eee09fe34c4bc46b948c5b8eea962c16a6e73f3
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/7eee09fe34c4bc46b948c5b8eea962c16a6e73f3
 compatibility:
   dsh: unverified
   platform:
@@ -54,12 +60,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: dbc8b662b7166aec6144b1a5d0f1371110377032
-    packageVersion: 0.1.12
+    commit: 7eee09fe34c4bc46b948c5b8eea962c16a6e73f3
+    packageVersion: 0.1.17
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-09-28T23:50:04.759Z
+    checkedAt: 2026-10-02T10:29:23.287Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -67,8 +73,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 36
-starsSnapshot: 18
-releaseUpdatedAt: 2026-09-28T23:50:06.553Z
-metadataUpdatedAt: 2026-09-28T23:50:06.553Z
-starsUpdatedAt: 2026-09-28T23:50:06.553Z
-updatedAt: 2026-09-28T23:50:06.553Z
+starsSnapshot: 20
+releaseUpdatedAt: 2026-10-02T10:29:25.402Z
+metadataUpdatedAt: 2026-10-02T10:29:25.402Z
+starsUpdatedAt: 2026-10-02T10:29:25.402Z
+updatedAt: 2026-10-02T10:29:25.402Z

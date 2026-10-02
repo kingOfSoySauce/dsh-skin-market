@@ -18,14 +18,14 @@ modes:
   - light
   - dark
 install:
-  target: github:jiangwangyang/dsh-theme-blackhole#b892faa6e30a6e977050fc8ded77e59186af8616
-  version: 0.1.7
-  commit: b892faa6e30a6e977050fc8ded77e59186af8616
+  target: github:jiangwangyang/dsh-theme-blackhole#4b04ad8f76f69d42d2a879c1f659d889f0c2f214
+  version: 0.2.0
+  commit: 4b04ad8f76f69d42d2a879c1f659d889f0c2f214
   desktop:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: 0.1.0-rc.7
   platform:
     - web
 screenshots:
@@ -33,33 +33,33 @@ screenshots:
   - https://raw.githubusercontent.com/jiangwangyang/dsh-theme-blackhole/31a272e7b3a3cbe739c73b087877c81ecae24aa1/docs/screenshots/blackhole.png
 listScreenshot: https://raw.githubusercontent.com/jiangwangyang/dsh-theme-blackhole/e7a536df230b0e6e08a8b06b51b75df0fb230b5c/docs/screenshots/blackhole.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
-    commit: b892faa6e30a6e977050fc8ded77e59186af8616
-    packageVersion: 0.1.7
+    commit: 4b04ad8f76f69d42d2a879c1f659d889f0c2f214
+    packageVersion: 0.2.0
     scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.7
     mode: static
     result: pass
-    checkedAt: 2026-09-28T23:51:21.307Z
+    checkedAt: 2026-10-02T10:30:50.328Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1025
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-28T23:51:22.087Z
-metadataUpdatedAt: 2026-09-28T23:51:22.087Z
+releaseUpdatedAt: 2026-10-02T10:30:51.057Z
+metadataUpdatedAt: 2026-10-02T10:30:51.057Z
 starsUpdatedAt: 2026-09-12T21:25:17.917Z
-updatedAt: 2026-09-28T23:51:22.087Z
+updatedAt: 2026-10-02T10:30:51.057Z

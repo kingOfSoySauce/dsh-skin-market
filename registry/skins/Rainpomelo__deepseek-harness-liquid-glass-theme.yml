@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:Rainpomelo/deepseek-harness-liquid-glass-theme#3cdc7355557cf563dbe1f8e8897bb1a2c261a262
-  version: 2.0.0
-  commit: 3cdc7355557cf563dbe1f8e8897bb1a2c261a262
+  target: github:Rainpomelo/deepseek-harness-liquid-glass-theme#635ac827bfea03795339d873856d532cd94d7d2c
+  version: 2.0.3
+  commit: 635ac827bfea03795339d873856d532cd94d7d2c
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -35,35 +35,36 @@ screenshots:
   - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/d297c0ec7c8a8f1cb687a540bca854aba02ee858/docs/images/desktop_main_preview.png
   - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/d297c0ec7c8a8f1cb687a540bca854aba02ee858/docs/images/desktop_modal_preview.png
   - https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/d297c0ec7c8a8f1cb687a540bca854aba02ee858/docs/images/settings_preview.png
+listScreenshot: https://raw.githubusercontent.com/Rainpomelo/deepseek-harness-liquid-glass-theme/635ac827bfea03795339d873856d532cd94d7d2c/docs/images/live_wallpaper_demo.gif
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
-    installCommand: improve
+    installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.5 未被本次检测范围 0.1.0-rc.5 完全覆盖（固定版本 635ac827bfea03795339d873856d532cd94d7d2c）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 3cdc7355557cf563dbe1f8e8897bb1a2c261a262
-    packageVersion: 2.0.0
+    commit: 635ac827bfea03795339d873856d532cd94d7d2c
+    packageVersion: 2.0.3
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.5
+    dshVersion: 0.1.0-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:29:12.346Z
+    checkedAt: 2026-10-02T10:29:40.035Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 206
 starsSnapshot: 6
-releaseUpdatedAt: 2026-08-23T05:29:12.399Z
-metadataUpdatedAt: 2026-08-23T05:29:12.399Z
+releaseUpdatedAt: 2026-10-02T10:29:42.765Z
+metadataUpdatedAt: 2026-10-02T10:29:42.765Z
 starsUpdatedAt: 2026-09-06T21:12:26.612Z
-updatedAt: 2026-09-06T21:12:26.612Z
+updatedAt: 2026-10-02T10:29:42.765Z

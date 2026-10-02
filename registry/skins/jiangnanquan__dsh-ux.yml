@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:jiangnanquan/dsh-ux#fc58bbeae9e2ff19f26afc2bea57ecccc0028c96
-  version: 1.0.0
-  commit: fc58bbeae9e2ff19f26afc2bea57ecccc0028c96
+  target: github:jiangnanquan/dsh-ux#7ba6b433684f318a939facad78fa6cd7c6e241ea
+  version: 1.1.0
+  commit: 7ba6b433684f318a939facad78fa6cd7c6e241ea
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -43,20 +43,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: fc58bbeae9e2ff19f26afc2bea57ecccc0028c96
-    packageVersion: 1.0.0
+    commit: 7ba6b433684f318a939facad78fa6cd7c6e241ea
+    packageVersion: 1.1.0
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.6
+    dshVersion: ^0.1.0-rc.6 || ^0.2.0-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-09-17T22:03:40.885Z
+    checkedAt: 2026-10-02T10:29:33.267Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1034
 starsSnapshot: 8
-releaseUpdatedAt: 2026-09-17T22:03:41.316Z
-metadataUpdatedAt: 2026-09-17T22:03:41.316Z
+releaseUpdatedAt: 2026-10-02T10:29:33.844Z
+metadataUpdatedAt: 2026-10-02T10:29:33.844Z
 starsUpdatedAt: 2026-09-17T22:03:41.316Z
-updatedAt: 2026-09-17T22:03:41.316Z
+updatedAt: 2026-10-02T10:29:33.844Z

@@ -15,12 +15,18 @@ modes:
   - light
   - dark
 install:
-  target: github:tpmoonchefryan/dsh-joi-channel-theme#032a60f0159bf467f62ac9afba67bfe73a052762
+  target: github:tpmoonchefryan/dsh-joi-channel-theme#941eb40552fe7cd68939ef2ff41e0e624bc0cadd
   version: 0.1.13
-  commit: 032a60f0159bf467f62ac9afba67bfe73a052762
+  commit: 941eb40552fe7cd68939ef2ff41e0e624bc0cadd
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
+  npm:
+    name: dsh-joi-channel-theme
+    version: 0.1.13
+    integrity: sha512-TV6G2DlQTxFFUKaRaB6WyUtrLI0ocfBADgVz9MaKzer+OrynNbXS4Hrapzgh4NfIMGgejMvcpbJbo2YOZRccrQ==
+    repository: https://github.com/tpmoonchefryan/dsh-joi-channel-theme
+    gitHead: 941eb40552fe7cd68939ef2ff41e0e624bc0cadd
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
@@ -50,15 +56,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.5 未被本次检测范围 ^0.1.7-rc.1 || ^0.2.0-rc.1 完全覆盖（固定版本 032a60f0159bf467f62ac9afba67bfe73a052762）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.5 未被本次检测范围 ^0.1.7-rc.1 || ^0.2.0-rc.1 完全覆盖（固定版本 941eb40552fe7cd68939ef2ff41e0e624bc0cadd）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 032a60f0159bf467f62ac9afba67bfe73a052762
+    commit: 941eb40552fe7cd68939ef2ff41e0e624bc0cadd
     packageVersion: 0.1.13
     scannerVersion: static-v2
     dshVersion: ^0.1.7-rc.1 || ^0.2.0-rc.1
     mode: static
     result: unknown
-    checkedAt: 2026-09-29T22:56:53.114Z
+    checkedAt: 2026-10-02T10:29:24.093Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -67,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 94
 starsSnapshot: 19
-releaseUpdatedAt: 2026-09-29T22:57:02.657Z
-metadataUpdatedAt: 2026-09-29T22:57:02.657Z
+releaseUpdatedAt: 2026-10-02T10:29:29.796Z
+metadataUpdatedAt: 2026-10-02T10:29:29.796Z
 starsUpdatedAt: 2026-09-23T22:12:56.237Z
-updatedAt: 2026-09-29T22:57:02.657Z
+updatedAt: 2026-10-02T10:29:29.796Z
