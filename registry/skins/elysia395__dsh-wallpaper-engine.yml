@@ -17,19 +17,13 @@ modes:
   - light
   - dark
 install:
-  target: github:elysia395/dsh-wallpaper-engine#d9988b3e1fa0c47d1032c67303e972ef47d5eb1c
+  target: github:elysia395/dsh-wallpaper-engine#1a8797a0e5c3f65eabda7c73a146d8aae4963b54
   version: 1.2.0
-  commit: d9988b3e1fa0c47d1032c67303e972ef47d5eb1c
+  commit: 1a8797a0e5c3f65eabda7c73a146d8aae4963b54
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
-  npm:
-    name: dsh-plugin-wallpaper-engine
-    version: 1.2.0
-    integrity: sha512-WgY1pLh2zbGyLSPJP1aSKq42hntF8PnrAlSeQWqpZwPoLdMByL/9Abth9ELlhw+t0odXNs4Fbiyljju0MF0tfA==
-    repository: https://github.com/elysia395/dsh-wallpaper-engine
-    gitHead: d9988b3e1fa0c47d1032c67303e972ef47d5eb1c
-  allowBuild: dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/d9988b3e1fa0c47d1032c67303e972ef47d5eb1c
+  allowBuild: dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/1a8797a0e5c3f65eabda7c73a146d8aae4963b54
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
@@ -57,22 +51,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.2.0-rc.1 完全覆盖（固定版本 d9988b3e1fa0c47d1032c67303e972ef47d5eb1c）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.2.0-rc.1 完全覆盖（固定版本 1a8797a0e5c3f65eabda7c73a146d8aae4963b54）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: d9988b3e1fa0c47d1032c67303e972ef47d5eb1c
+    commit: 1a8797a0e5c3f65eabda7c73a146d8aae4963b54
     packageVersion: 1.2.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-10-02T10:29:06.341Z
+    checkedAt: 2026-10-02T22:56:12.218Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1001
-starsSnapshot: 478
-releaseUpdatedAt: 2026-10-02T10:29:10.343Z
-metadataUpdatedAt: 2026-10-02T10:29:10.343Z
-starsUpdatedAt: 2026-10-02T10:29:10.343Z
-updatedAt: 2026-10-02T10:29:10.343Z
+starsSnapshot: 502
+releaseUpdatedAt: 2026-10-02T22:56:15.838Z
+metadataUpdatedAt: 2026-10-02T22:56:15.838Z
+starsUpdatedAt: 2026-10-02T22:56:15.838Z
+updatedAt: 2026-10-02T22:56:15.838Z
