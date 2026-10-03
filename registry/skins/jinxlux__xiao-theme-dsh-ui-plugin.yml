@@ -16,18 +16,18 @@ modes:
   - light
   - dark
 install:
-  target: github:jinxlux/xiao-theme-dsh-ui-plugin#d0cb5ace681fbc34cdfc6cd091e4e9800807137a
-  version: 0.13.1
-  commit: d0cb5ace681fbc34cdfc6cd091e4e9800807137a
+  target: github:jinxlux/xiao-theme-dsh-ui-plugin#d14085a6439e824e791909e6a7a10a8854cab4e3
+  version: 0.13.2
+  commit: d14085a6439e824e791909e6a7a10a8854cab4e3
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
   npm:
     name: xiao-ui-theme-ts
-    version: 0.13.1
-    integrity: sha512-/5gtCGDVAydKstaCBzAc8b+uG+GiWdbIkKd79aUlKYJktRYvhCzj7IN+vdNkY/vN8U3LdsUWVhz6BfU5zK+fcA==
+    version: 0.13.2
+    integrity: sha512-BexaeyVTJgYPSMm+uAcHddJmazMjDuezvaUN3BF0ZRMHTu6eVDqvq2CwspeAqtI0n7r4zjsxuR8xZUJUECSEVQ==
     repository: https://github.com/jinxlux/xiao-theme-dsh-ui-plugin
-    gitHead: d0cb5ace681fbc34cdfc6cd091e4e9800807137a
+    gitHead: d14085a6439e824e791909e6a7a10a8854cab4e3
 compatibility:
   dsh: unverified
   platform:
@@ -52,12 +52,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: d0cb5ace681fbc34cdfc6cd091e4e9800807137a
-    packageVersion: 0.13.1
+    commit: d14085a6439e824e791909e6a7a10a8854cab4e3
+    packageVersion: 0.13.2
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-10-02T10:30:16.301Z
+    checkedAt: 2026-10-03T22:08:20.381Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -66,7 +66,7 @@ license:
   commercialUse: true
 featuredRank: 1046
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-02T10:30:19.092Z
-metadataUpdatedAt: 2026-10-02T10:30:19.092Z
+releaseUpdatedAt: 2026-10-03T22:08:23.305Z
+metadataUpdatedAt: 2026-10-03T22:08:23.305Z
 starsUpdatedAt: 2026-09-09T21:39:34.789Z
-updatedAt: 2026-10-02T10:30:19.092Z
+updatedAt: 2026-10-03T22:08:23.305Z
