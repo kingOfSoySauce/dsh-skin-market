@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T10:46:23.457Z",
+  "generatedAt": "2026-10-03T22:12:22.113Z",
   "skins": [
     {
       "id": "carlown.majia7-skin",
@@ -193,11 +193,11 @@
         "notice": "Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1."
       },
       "featuredRank": 0,
-      "starsSnapshot": 384,
+      "starsSnapshot": 386,
       "releaseUpdatedAt": "2026-09-11T21:41:03.667Z",
       "metadataUpdatedAt": "2026-09-11T21:41:03.667Z",
-      "starsUpdatedAt": "2026-10-02T22:56:12.126Z",
-      "updatedAt": "2026-10-02T22:56:12.126Z",
+      "starsUpdatedAt": "2026-10-03T22:07:03.018Z",
+      "updatedAt": "2026-10-03T22:07:03.018Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/891fb2f3d331f8a486f9cde5dc7d3958.preview.webp",
@@ -1187,9 +1187,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:RevolutionLA/dsh-dream-skin#347a7cabe5ef46a57dc577af3acdc75b9d4c9ee3",
+        "target": "github:RevolutionLA/dsh-dream-skin#8b2757ef5c4205ad28bed64fcc471dc7be4d75ea",
         "version": "9.29.0",
-        "commit": "347a7cabe5ef46a57dc577af3acdc75b9d4c9ee3",
+        "commit": "8b2757ef5c4205ad28bed64fcc471dc7be4d75ea",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-version-mismatch"
@@ -1228,13 +1228,13 @@
         },
         "suggestions": [],
         "scan": {
-          "commit": "347a7cabe5ef46a57dc577af3acdc75b9d4c9ee3",
+          "commit": "8b2757ef5c4205ad28bed64fcc471dc7be4d75ea",
           "packageVersion": "9.29.0",
           "scannerVersion": "static-v2",
           "dshVersion": "^0.1.0-rc.6",
           "mode": "static",
           "result": "pass",
-          "checkedAt": "2026-10-02T10:29:08.083Z",
+          "checkedAt": "2026-10-03T22:07:03.899Z",
           "findings": []
         }
       },
@@ -1243,11 +1243,11 @@
         "commercialUse": true
       },
       "featuredRank": 4,
-      "starsSnapshot": 201,
-      "releaseUpdatedAt": "2026-10-02T10:29:11.900Z",
-      "metadataUpdatedAt": "2026-10-02T10:29:11.900Z",
-      "starsUpdatedAt": "2026-10-02T22:56:12.496Z",
-      "updatedAt": "2026-10-02T22:56:12.496Z",
+      "starsSnapshot": 203,
+      "releaseUpdatedAt": "2026-10-03T22:07:09.773Z",
+      "metadataUpdatedAt": "2026-10-03T22:07:09.773Z",
+      "starsUpdatedAt": "2026-10-03T22:07:09.773Z",
+      "updatedAt": "2026-10-03T22:07:09.773Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7e92ba9a12eb600242b74195d09ea6c3.preview.webp",
@@ -1313,14 +1313,14 @@
         "dark"
       ],
       "install": {
-        "target": "github:NoNameLeGo/dsh-catppuccin#ee386faf524cf7e42363ef13a8e7208cb4253900",
+        "target": "github:NoNameLeGo/dsh-catppuccin#24998c1fe5ade94575365d6f54478185a6fa2d7e",
         "version": "0.5.10-beta.0",
-        "commit": "ee386faf524cf7e42363ef13a8e7208cb4253900",
+        "commit": "24998c1fe5ade94575365d6f54478185a6fa2d7e",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-repository-mismatch"
         },
-        "allowBuild": "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/ee386faf524cf7e42363ef13a8e7208cb4253900"
+        "allowBuild": "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/24998c1fe5ade94575365d6f54478185a6fa2d7e"
       },
       "compatibility": {
         "dsh": "^0.1.0-rc.6",
@@ -1354,16 +1354,16 @@
         "suggestions": [
           "建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。",
           "固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。",
-          "DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 0.2.0-rc.2 完全覆盖（固定版本 ee386faf524cf7e42363ef13a8e7208cb4253900）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。"
+          "DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 0.2.0-rc.2 完全覆盖（固定版本 24998c1fe5ade94575365d6f54478185a6fa2d7e）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。"
         ],
         "scan": {
-          "commit": "ee386faf524cf7e42363ef13a8e7208cb4253900",
+          "commit": "24998c1fe5ade94575365d6f54478185a6fa2d7e",
           "packageVersion": "0.5.10-beta.0",
           "scannerVersion": "static-v2",
           "dshVersion": "0.2.0-rc.2",
           "mode": "static",
           "result": "unknown",
-          "checkedAt": "2026-10-02T22:56:17.539Z",
+          "checkedAt": "2026-10-03T22:07:12.449Z",
           "findings": [
             {
               "code": "client-source-unavailable",
@@ -1378,10 +1378,10 @@
       },
       "featuredRank": 5,
       "starsSnapshot": 53,
-      "releaseUpdatedAt": "2026-10-02T22:56:25.616Z",
-      "metadataUpdatedAt": "2026-10-02T22:56:25.616Z",
+      "releaseUpdatedAt": "2026-10-03T22:07:15.511Z",
+      "metadataUpdatedAt": "2026-10-03T22:07:15.511Z",
       "starsUpdatedAt": "2026-10-02T22:56:25.616Z",
-      "updatedAt": "2026-10-02T22:56:25.616Z",
+      "updatedAt": "2026-10-03T22:07:15.511Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ae8e7ac99d839cf4177f0dfd1e76d8aa.preview.webp",
@@ -2856,11 +2856,11 @@
         "commercialUse": true
       },
       "featuredRank": 23,
-      "starsSnapshot": 13,
+      "starsSnapshot": 14,
       "releaseUpdatedAt": "2026-09-01T21:42:04.438Z",
       "metadataUpdatedAt": "2026-09-01T21:42:04.438Z",
-      "starsUpdatedAt": "2026-09-26T21:56:54.725Z",
-      "updatedAt": "2026-09-26T21:56:54.725Z",
+      "starsUpdatedAt": "2026-10-03T22:07:25.893Z",
+      "updatedAt": "2026-10-03T22:07:25.893Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7143a41ed99d3bc6e65840c2ae76681d.preview.webp",
@@ -6517,11 +6517,11 @@
         "commercialUse": true
       },
       "featuredRank": 70,
-      "starsSnapshot": 38,
+      "starsSnapshot": 37,
       "releaseUpdatedAt": "2026-09-28T23:50:01.859Z",
       "metadataUpdatedAt": "2026-09-28T23:50:01.859Z",
-      "starsUpdatedAt": "2026-10-02T10:29:17.965Z",
-      "updatedAt": "2026-10-02T10:29:17.965Z",
+      "starsUpdatedAt": "2026-10-03T22:07:16.364Z",
+      "updatedAt": "2026-10-03T22:07:16.364Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/17a4a723a174d4e712c481a27cea4712.preview.webp",
@@ -11480,11 +11480,11 @@
         "notice": "角色、美术和商标权利归原权利人所有；仓库声明为非官方同人作品并禁止商业使用。"
       },
       "featuredRank": 133,
-      "starsSnapshot": 45,
+      "starsSnapshot": 46,
       "releaseUpdatedAt": "2026-09-08T21:46:56.416Z",
       "metadataUpdatedAt": "2026-09-08T21:46:56.416Z",
-      "starsUpdatedAt": "2026-10-02T22:56:20.597Z",
-      "updatedAt": "2026-10-02T22:56:20.597Z",
+      "starsUpdatedAt": "2026-10-03T22:07:14.718Z",
+      "updatedAt": "2026-10-03T22:07:14.718Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0c88479719ffb14c45a9762e1fe196e3.preview.webp",
@@ -11767,11 +11767,11 @@
         "commercialUse": true
       },
       "featuredRank": 139,
-      "starsSnapshot": 37,
+      "starsSnapshot": 41,
       "releaseUpdatedAt": "2026-10-02T22:56:22.375Z",
       "metadataUpdatedAt": "2026-10-02T22:56:22.375Z",
-      "starsUpdatedAt": "2026-09-29T22:56:45.265Z",
-      "updatedAt": "2026-10-02T22:56:22.375Z",
+      "starsUpdatedAt": "2026-10-03T22:07:15.096Z",
+      "updatedAt": "2026-10-03T22:07:15.096Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/9099bc893183229d55505d2629c22b8b.preview.webp",
@@ -11871,11 +11871,11 @@
         "commercialUse": true
       },
       "featuredRank": 142,
-      "starsSnapshot": 645,
+      "starsSnapshot": 647,
       "releaseUpdatedAt": "2026-09-29T22:56:38.855Z",
       "metadataUpdatedAt": "2026-09-29T22:56:38.855Z",
-      "starsUpdatedAt": "2026-10-02T10:29:05.629Z",
-      "updatedAt": "2026-10-02T10:29:05.629Z",
+      "starsUpdatedAt": "2026-10-03T22:07:02.283Z",
+      "updatedAt": "2026-10-03T22:07:02.283Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c84db3f9249c3f071c5434da156e8df5.preview.webp",
@@ -12060,9 +12060,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:niiang/dsh-kimino-theme#468089ace8ea2867eea31118764e861c33afc969",
+        "target": "github:niiang/dsh-kimino-theme#08bc81a1d8b3d9aebf954074b447102184087b37",
         "version": "67.0.1",
-        "commit": "468089ace8ea2867eea31118764e861c33afc969",
+        "commit": "08bc81a1d8b3d9aebf954074b447102184087b37",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-package-not-found"
@@ -12103,12 +12103,12 @@
           "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
         ],
         "scan": {
-          "commit": "468089ace8ea2867eea31118764e861c33afc969",
+          "commit": "08bc81a1d8b3d9aebf954074b447102184087b37",
           "packageVersion": "67.0.1",
           "scannerVersion": "static-v2",
           "mode": "static",
           "result": "pass",
-          "checkedAt": "2026-10-02T10:29:17.207Z",
+          "checkedAt": "2026-10-03T22:07:15.926Z",
           "findings": []
         }
       },
@@ -12117,11 +12117,11 @@
         "commercialUse": true
       },
       "featuredRank": 145,
-      "starsSnapshot": 40,
-      "releaseUpdatedAt": "2026-10-02T10:29:20.283Z",
-      "metadataUpdatedAt": "2026-10-02T10:29:20.283Z",
-      "starsUpdatedAt": "2026-09-26T21:56:51.872Z",
-      "updatedAt": "2026-10-02T10:29:20.283Z",
+      "starsSnapshot": 39,
+      "releaseUpdatedAt": "2026-10-03T22:07:19.608Z",
+      "metadataUpdatedAt": "2026-10-03T22:07:19.608Z",
+      "starsUpdatedAt": "2026-10-03T22:07:19.608Z",
+      "updatedAt": "2026-10-03T22:07:19.608Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bc61cf47857d3eb26b12068ed6852ec4.preview.webp",
@@ -12523,9 +12523,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:ymh0000123/dsh-theme-endfield#d0a0502e6542bb029488023e53929b643dbca189",
-        "version": "1.1.6",
-        "commit": "d0a0502e6542bb029488023e53929b643dbca189",
+        "target": "github:ymh0000123/dsh-theme-endfield#d551b2611123274691511912f48d12cd63d0173f",
+        "version": "1.1.9",
+        "commit": "d551b2611123274691511912f48d12cd63d0173f",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-package-not-found"
@@ -12566,12 +12566,12 @@
           "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
         ],
         "scan": {
-          "commit": "d0a0502e6542bb029488023e53929b643dbca189",
-          "packageVersion": "1.1.6",
+          "commit": "d551b2611123274691511912f48d12cd63d0173f",
+          "packageVersion": "1.1.9",
           "scannerVersion": "static-v2",
           "mode": "static",
           "result": "pass",
-          "checkedAt": "2026-10-02T22:56:14.380Z",
+          "checkedAt": "2026-10-03T22:07:08.038Z",
           "findings": []
         }
       },
@@ -12580,11 +12580,11 @@
         "commercialUse": true
       },
       "featuredRank": 154,
-      "starsSnapshot": 113,
-      "releaseUpdatedAt": "2026-10-02T22:56:15.212Z",
-      "metadataUpdatedAt": "2026-10-02T22:56:15.212Z",
-      "starsUpdatedAt": "2026-10-02T22:56:15.212Z",
-      "updatedAt": "2026-10-02T22:56:15.212Z",
+      "starsSnapshot": 120,
+      "releaseUpdatedAt": "2026-10-03T22:07:09.267Z",
+      "metadataUpdatedAt": "2026-10-03T22:07:09.267Z",
+      "starsUpdatedAt": "2026-10-03T22:07:09.267Z",
+      "updatedAt": "2026-10-03T22:07:09.267Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f2631999f9a2f990261179dfa04777b2.preview.webp",
@@ -12776,11 +12776,11 @@
         "commercialUse": false
       },
       "featuredRank": 159,
-      "starsSnapshot": 34,
+      "starsSnapshot": 35,
       "releaseUpdatedAt": "2026-09-15T22:05:27.350Z",
       "metadataUpdatedAt": "2026-09-15T22:05:27.350Z",
-      "starsUpdatedAt": "2026-10-02T10:29:18.961Z",
-      "updatedAt": "2026-10-02T10:29:18.961Z",
+      "starsUpdatedAt": "2026-10-03T22:07:17.543Z",
+      "updatedAt": "2026-10-03T22:07:17.543Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5f2f15c256c869a51e9b8f3e702dfc5f.preview.webp",
@@ -14376,14 +14376,14 @@
         "dark"
       ],
       "install": {
-        "target": "github:lkdx0220/Genshin-odette-skin-dsh#8e35b1f850549d49a34f55357f73c83dcb62df78",
-        "version": "0.1.2",
-        "commit": "8e35b1f850549d49a34f55357f73c83dcb62df78",
+        "target": "github:lkdx0220/Genshin-odette-skin-dsh#5e472319ac34271fc893e2fd21e2b9bfd417a225",
+        "version": "0.1.3",
+        "commit": "5e472319ac34271fc893e2fd21e2b9bfd417a225",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-package-not-found"
         },
-        "allowBuild": "dsh-odette-skin@https://codeload.github.com/lkdx0220/Genshin-odette-skin-dsh/tar.gz/8e35b1f850549d49a34f55357f73c83dcb62df78"
+        "allowBuild": "dsh-odette-skin@https://codeload.github.com/lkdx0220/Genshin-odette-skin-dsh/tar.gz/5e472319ac34271fc893e2fd21e2b9bfd417a225"
       },
       "compatibility": {
         "dsh": ">=0.0.1-rc <2",
@@ -14418,13 +14418,13 @@
           "固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。"
         ],
         "scan": {
-          "commit": "8e35b1f850549d49a34f55357f73c83dcb62df78",
-          "packageVersion": "0.1.2",
+          "commit": "5e472319ac34271fc893e2fd21e2b9bfd417a225",
+          "packageVersion": "0.1.3",
           "scannerVersion": "static-v2",
           "dshVersion": ">=0.0.1-rc <2",
           "mode": "static",
           "result": "unknown",
-          "checkedAt": "2026-09-19T21:25:47.793Z",
+          "checkedAt": "2026-10-03T22:08:22.875Z",
           "findings": [
             {
               "code": "client-source-unavailable",
@@ -14439,10 +14439,10 @@
       },
       "featuredRank": 182,
       "starsSnapshot": 2,
-      "releaseUpdatedAt": "2026-09-19T21:25:49.529Z",
-      "metadataUpdatedAt": "2026-09-19T21:25:49.529Z",
+      "releaseUpdatedAt": "2026-10-03T22:08:24.997Z",
+      "metadataUpdatedAt": "2026-10-03T22:08:24.997Z",
       "starsUpdatedAt": "2026-09-09T21:39:54.518Z",
-      "updatedAt": "2026-09-19T21:25:49.529Z",
+      "updatedAt": "2026-10-03T22:08:24.997Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4efff8bff2b0a24310d7812c615d39f8.preview.webp",
@@ -14612,9 +14612,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:nlqh7/dsh-beautify#e44bcc71f06c9fe54e8b4d4f26ecaa1e05c43d5e",
-        "version": "0.3.0",
-        "commit": "e44bcc71f06c9fe54e8b4d4f26ecaa1e05c43d5e",
+        "target": "github:nlqh7/dsh-beautify#c7a215c98977454d92414a789b958d6b8077c667",
+        "version": "0.5.0",
+        "commit": "c7a215c98977454d92414a789b958d6b8077c667",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-package-not-found"
@@ -14636,6 +14636,7 @@
         "https://raw.githubusercontent.com/nlqh7/dsh-beautify/7d82c8338a04a37f543d401386efb63293e19c54/docs/screenshots/04-five-babies.png",
         "https://raw.githubusercontent.com/nlqh7/dsh-beautify/7d82c8338a04a37f543d401386efb63293e19c54/docs/screenshots/05-we-wallpaper.png"
       ],
+      "listScreenshot": "https://raw.githubusercontent.com/nlqh7/dsh-beautify/e44bcc71f06c9fe54e8b4d4f26ecaa1e05c43d5e/docs/screenshots/01-three-babies.png",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
@@ -14655,12 +14656,12 @@
           "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。"
         ],
         "scan": {
-          "commit": "e44bcc71f06c9fe54e8b4d4f26ecaa1e05c43d5e",
-          "packageVersion": "0.3.0",
+          "commit": "c7a215c98977454d92414a789b958d6b8077c667",
+          "packageVersion": "0.5.0",
           "scannerVersion": "static-v2",
           "mode": "static",
           "result": "pass",
-          "checkedAt": "2026-08-26T03:27:24.719Z",
+          "checkedAt": "2026-10-03T22:08:27.230Z",
           "findings": []
         }
       },
@@ -14670,10 +14671,10 @@
       },
       "featuredRank": 184,
       "starsSnapshot": 2,
-      "releaseUpdatedAt": "2026-08-26T03:27:24.825Z",
-      "metadataUpdatedAt": "2026-08-26T03:27:24.825Z",
+      "releaseUpdatedAt": "2026-10-03T22:08:31.936Z",
+      "metadataUpdatedAt": "2026-10-03T22:08:31.936Z",
       "starsUpdatedAt": "2026-09-21T22:35:47.902Z",
-      "updatedAt": "2026-09-21T22:35:47.902Z",
+      "updatedAt": "2026-10-03T22:08:31.936Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a22189ae49fcfb6182b84c06b24a080e.preview.webp",
@@ -15059,11 +15060,11 @@
         "commercialUse": true
       },
       "featuredRank": 193,
-      "starsSnapshot": 49,
+      "starsSnapshot": 51,
       "releaseUpdatedAt": "2026-10-02T10:29:20.477Z",
       "metadataUpdatedAt": "2026-10-02T10:29:20.477Z",
-      "starsUpdatedAt": "2026-10-02T10:29:20.477Z",
-      "updatedAt": "2026-10-02T10:29:20.477Z",
+      "starsUpdatedAt": "2026-10-03T22:07:14.353Z",
+      "updatedAt": "2026-10-03T22:07:14.353Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ad66aafed08107f7b1b9082cd4e98dd0.preview.webp",
@@ -15923,11 +15924,11 @@
         "commercialUse": true
       },
       "featuredRank": 206,
-      "starsSnapshot": 6,
+      "starsSnapshot": 7,
       "releaseUpdatedAt": "2026-10-02T10:29:42.765Z",
       "metadataUpdatedAt": "2026-10-02T10:29:42.765Z",
-      "starsUpdatedAt": "2026-09-06T21:12:26.612Z",
-      "updatedAt": "2026-10-02T10:29:42.765Z",
+      "starsUpdatedAt": "2026-10-03T22:07:39.386Z",
+      "updatedAt": "2026-10-03T22:07:39.386Z",
       "media": {
         "screenshots": [
           null,
@@ -16121,11 +16122,11 @@
         "commercialUse": true
       },
       "featuredRank": 208,
-      "starsSnapshot": 1,
+      "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-08-23T05:33:26.802Z",
       "metadataUpdatedAt": "2026-08-23T05:33:26.802Z",
-      "starsUpdatedAt": "2026-09-18T21:38:20.764Z",
-      "updatedAt": "2026-09-18T21:38:20.764Z",
+      "starsUpdatedAt": "2026-10-03T22:08:51.416Z",
+      "updatedAt": "2026-10-03T22:08:51.416Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/545b090b28efd522c7038c38425e7d4b.preview.webp",
@@ -19718,14 +19719,14 @@
         "dark"
       ],
       "install": {
-        "target": "github:elysia395/dsh-wallpaper-engine#1a8797a0e5c3f65eabda7c73a146d8aae4963b54",
+        "target": "github:elysia395/dsh-wallpaper-engine#f9ff712d47adc1c6125b4367aae0831f114af236",
         "version": "1.2.0",
-        "commit": "1a8797a0e5c3f65eabda7c73a146d8aae4963b54",
+        "commit": "f9ff712d47adc1c6125b4367aae0831f114af236",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-lifecycle-scripts:prepare"
         },
-        "allowBuild": "dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/1a8797a0e5c3f65eabda7c73a146d8aae4963b54"
+        "allowBuild": "dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/f9ff712d47adc1c6125b4367aae0831f114af236"
       },
       "compatibility": {
         "dsh": ">=0.1.0-rc.6",
@@ -19759,16 +19760,16 @@
           "topic": "pass"
         },
         "suggestions": [
-          "DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.2.0-rc.1 完全覆盖（固定版本 1a8797a0e5c3f65eabda7c73a146d8aae4963b54）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。"
+          "DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.2.0-rc.1 完全覆盖（固定版本 f9ff712d47adc1c6125b4367aae0831f114af236）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。"
         ],
         "scan": {
-          "commit": "1a8797a0e5c3f65eabda7c73a146d8aae4963b54",
+          "commit": "f9ff712d47adc1c6125b4367aae0831f114af236",
           "packageVersion": "1.2.0",
           "scannerVersion": "static-v2",
           "dshVersion": ">=0.2.0-rc.1",
           "mode": "static",
           "result": "pass",
-          "checkedAt": "2026-10-02T22:56:12.218Z",
+          "checkedAt": "2026-10-03T22:07:03.158Z",
           "findings": []
         }
       },
@@ -19777,11 +19778,11 @@
         "commercialUse": true
       },
       "featuredRank": 1001,
-      "starsSnapshot": 502,
-      "releaseUpdatedAt": "2026-10-02T22:56:15.838Z",
-      "metadataUpdatedAt": "2026-10-02T22:56:15.838Z",
-      "starsUpdatedAt": "2026-10-02T22:56:15.838Z",
-      "updatedAt": "2026-10-02T22:56:15.838Z",
+      "starsSnapshot": 547,
+      "releaseUpdatedAt": "2026-10-03T22:07:07.225Z",
+      "metadataUpdatedAt": "2026-10-03T22:07:07.225Z",
+      "starsUpdatedAt": "2026-10-03T22:07:07.225Z",
+      "updatedAt": "2026-10-03T22:07:07.225Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ffa159b84c8c7fafaba439ed24e9087e.preview.webp",
@@ -22959,9 +22960,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:Sutera-Diffusus/dsh-whale-musume#92d0903647e3b8106cee281a594a176589ad78d0",
+        "target": "github:Sutera-Diffusus/dsh-whale-musume#a596dda49f72a516c30b57c7134094d75d30c3a0",
         "version": "2.2.1",
-        "commit": "92d0903647e3b8106cee281a594a176589ad78d0",
+        "commit": "a596dda49f72a516c30b57c7134094d75d30c3a0",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-package-not-found"
@@ -22994,13 +22995,13 @@
         },
         "suggestions": [],
         "scan": {
-          "commit": "92d0903647e3b8106cee281a594a176589ad78d0",
+          "commit": "a596dda49f72a516c30b57c7134094d75d30c3a0",
           "packageVersion": "2.2.1",
           "scannerVersion": "static-v2",
           "dshVersion": "0.1.0-rc.6",
           "mode": "static",
           "result": "pass",
-          "checkedAt": "2026-10-02T22:56:14.503Z",
+          "checkedAt": "2026-10-03T22:07:08.178Z",
           "findings": []
         }
       },
@@ -23009,11 +23010,11 @@
         "commercialUse": true
       },
       "featuredRank": 1033,
-      "starsSnapshot": 108,
-      "releaseUpdatedAt": "2026-10-02T22:56:16.039Z",
-      "metadataUpdatedAt": "2026-10-02T22:56:16.039Z",
-      "starsUpdatedAt": "2026-10-02T22:56:16.039Z",
-      "updatedAt": "2026-10-02T22:56:16.039Z",
+      "starsSnapshot": 111,
+      "releaseUpdatedAt": "2026-10-03T22:07:10.650Z",
+      "metadataUpdatedAt": "2026-10-03T22:07:10.650Z",
+      "starsUpdatedAt": "2026-10-03T22:07:10.650Z",
+      "updatedAt": "2026-10-03T22:07:10.650Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5e6003b43d0569fcee238615ff6d687c.preview.webp",
@@ -23411,14 +23412,14 @@
         "dark"
       ],
       "install": {
-        "target": "github:AlexPeng07/dsh-custom-plugin#583ff9126d011a2556573ed32adcd489468c2bee",
-        "version": "0.7.0",
-        "commit": "583ff9126d011a2556573ed32adcd489468c2bee",
+        "target": "github:AlexPeng07/dsh-custom-plugin#6ce03f00b641116bab140f863778771bee577abb",
+        "version": "0.7.1",
+        "commit": "6ce03f00b641116bab140f863778771bee577abb",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-lifecycle-scripts:prepare,prepublishOnly"
         },
-        "allowBuild": "@alexpeng/dsh-custom-plugin@https://codeload.github.com/AlexPeng07/dsh-custom-plugin/tar.gz/583ff9126d011a2556573ed32adcd489468c2bee"
+        "allowBuild": "@alexpeng/dsh-custom-plugin@https://codeload.github.com/AlexPeng07/dsh-custom-plugin/tar.gz/6ce03f00b641116bab140f863778771bee577abb"
       },
       "compatibility": {
         "dsh": "^0.1.1-rc.1",
@@ -23448,16 +23449,16 @@
         "suggestions": [
           "建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。",
           "固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。",
-          "DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.1 未被本次检测范围 >=0.1.7-rc.2 <0.2.0-0 || >=0.2.0-rc.2 <0.2.0-rc.3 完全覆盖（固定版本 583ff9126d011a2556573ed32adcd489468c2bee）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。"
+          "DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.1 未被本次检测范围 >=0.1.7-rc.2 <0.2.0-0 || >=0.2.0-rc.2 <0.2.0-rc.3 完全覆盖（固定版本 6ce03f00b641116bab140f863778771bee577abb）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。"
         ],
         "scan": {
-          "commit": "583ff9126d011a2556573ed32adcd489468c2bee",
-          "packageVersion": "0.7.0",
+          "commit": "6ce03f00b641116bab140f863778771bee577abb",
+          "packageVersion": "0.7.1",
           "scannerVersion": "static-v2",
           "dshVersion": ">=0.1.7-rc.2 <0.2.0-0 || >=0.2.0-rc.2 <0.2.0-rc.3",
           "mode": "static",
           "result": "unknown",
-          "checkedAt": "2026-10-02T10:29:34.169Z",
+          "checkedAt": "2026-10-03T22:07:33.501Z",
           "findings": [
             {
               "code": "client-source-unavailable",
@@ -23472,10 +23473,10 @@
       },
       "featuredRank": 1038,
       "starsSnapshot": 7,
-      "releaseUpdatedAt": "2026-10-02T10:29:37.798Z",
-      "metadataUpdatedAt": "2026-10-02T10:29:37.798Z",
+      "releaseUpdatedAt": "2026-10-03T22:07:36.913Z",
+      "metadataUpdatedAt": "2026-10-03T22:07:36.913Z",
       "starsUpdatedAt": "2026-09-20T21:25:56.790Z",
-      "updatedAt": "2026-10-02T10:29:37.798Z",
+      "updatedAt": "2026-10-03T22:07:36.913Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/921826191d8bd34ef2e39bf605ca24fb.preview.webp",
@@ -24172,9 +24173,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:jinxlux/xiao-theme-dsh-ui-plugin#d0cb5ace681fbc34cdfc6cd091e4e9800807137a",
-        "version": "0.13.1",
-        "commit": "d0cb5ace681fbc34cdfc6cd091e4e9800807137a",
+        "target": "github:jinxlux/xiao-theme-dsh-ui-plugin#d14085a6439e824e791909e6a7a10a8854cab4e3",
+        "version": "0.13.2",
+        "commit": "d14085a6439e824e791909e6a7a10a8854cab4e3",
         "desktop": {
           "mode": "manual-only",
           "reason": "npm-lifecycle-scripts:prepublishOnly"
@@ -24210,12 +24211,12 @@
           "固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。"
         ],
         "scan": {
-          "commit": "d0cb5ace681fbc34cdfc6cd091e4e9800807137a",
-          "packageVersion": "0.13.1",
+          "commit": "d14085a6439e824e791909e6a7a10a8854cab4e3",
+          "packageVersion": "0.13.2",
           "scannerVersion": "static-v2",
           "mode": "static",
           "result": "unknown",
-          "checkedAt": "2026-10-02T10:30:16.301Z",
+          "checkedAt": "2026-10-03T22:08:20.381Z",
           "findings": [
             {
               "code": "client-source-unavailable",
@@ -24230,10 +24231,10 @@
       },
       "featuredRank": 1046,
       "starsSnapshot": 2,
-      "releaseUpdatedAt": "2026-10-02T10:30:19.092Z",
-      "metadataUpdatedAt": "2026-10-02T10:30:19.092Z",
+      "releaseUpdatedAt": "2026-10-03T22:08:23.305Z",
+      "metadataUpdatedAt": "2026-10-03T22:08:23.305Z",
       "starsUpdatedAt": "2026-09-09T21:39:34.789Z",
-      "updatedAt": "2026-10-02T10:30:19.092Z"
+      "updatedAt": "2026-10-03T22:08:23.305Z"
     },
     {
       "id": "lyh9712.dsh-bg-image",
@@ -29987,10 +29988,10 @@
     },
     "jinxlux.xiao-theme-dsh-ui-plugin": {
       "name": "xiao-ui-theme-ts",
-      "version": "0.13.1",
-      "integrity": "sha512-/5gtCGDVAydKstaCBzAc8b+uG+GiWdbIkKd79aUlKYJktRYvhCzj7IN+vdNkY/vN8U3LdsUWVhz6BfU5zK+fcA==",
+      "version": "0.13.2",
+      "integrity": "sha512-BexaeyVTJgYPSMm+uAcHddJmazMjDuezvaUN3BF0ZRMHTu6eVDqvq2CwspeAqtI0n7r4zjsxuR8xZUJUECSEVQ==",
       "repository": "https://github.com/jinxlux/xiao-theme-dsh-ui-plugin",
-      "gitHead": "d0cb5ace681fbc34cdfc6cd091e4e9800807137a"
+      "gitHead": "d14085a6439e824e791909e6a7a10a8854cab4e3"
     },
     "johnnyting.dsh-official-homepage-theme": {
       "name": "dsh-official-homepage-theme",

@@ -271,6 +271,86 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:nlqh7.dsh-beautify -->
+### 2026-10-03 · dsh-beautify
+
+[nlqh7/dsh-beautify](https://github.com/nlqh7/dsh-beautify)：DeepSeek Harness 完整美化包：本地主题换肤（不联网）+ Wallpaper Engine 动态壁纸 + 自定义主题，一个插件搞定，设置页统一管理。
+
+- 版本：`0.5.0`
+- 固定 commit：`c7a215c98977454d92414a789b958d6b8077c667`
+
+<!-- dsh-auto-entry:lkdx0220.genshin-odette-skin-dsh -->
+### 2026-10-03 · Genshin-odette-skin-dsh
+
+[lkdx0220/Genshin-odette-skin-dsh](https://github.com/lkdx0220/Genshin-odette-skin-dsh)：Odette 冰雪梦幻主题 —— DSH 客户端的深/浅双模式 UI 美化皮肤。
+
+- 版本：`0.1.3`
+- 固定 commit：`5e472319ac34271fc893e2fd21e2b9bfd417a225`
+
+<!-- dsh-auto-entry:jinxlux.xiao-theme-dsh-ui-plugin -->
+### 2026-10-03 · xiao-theme-dsh-ui-plugin
+
+[jinxlux/xiao-theme-dsh-ui-plugin](https://github.com/jinxlux/xiao-theme-dsh-ui-plugin)：DeepSeek Harness 的可自定义主题插件（默认带一套「魈」青玉风）—— 给 DeepSeek Harness 的 Web 界面做主题：配色、吉祥物徽章、背景、注入语气都能自己调。背景同时支持静态图片与动态 GIF （上传动画 GIF 会自动识别为动态背景）。默认是一套魈的青玉/翠青风格，但主色、徽章文字、语气、 背景等都可配置，改出来就是你的专属主题。
+
+- 版本：`0.13.2`
+- 固定 commit：`d14085a6439e824e791909e6a7a10a8854cab4e3`
+
+<!-- dsh-auto-entry:alexpeng07.dsh-custom-plugin -->
+### 2026-10-03 · dsh-custom-plugin
+
+[AlexPeng07/dsh-custom-plugin](https://github.com/AlexPeng07/dsh-custom-plugin)：[](https://www.npmjs.com/package/@alexpeng/dsh-custom-plugin) [](LICENSE) [](#安装) [](https://www.typescriptlang.org) [](https://github.com/AlexPeng07/dsh-custom-plugin/actions/workflows/ci.yml) [](https://awesome-dsh-plugin.com)
+
+- 版本：`0.7.1`
+- 固定 commit：`6ce03f00b641116bab140f863778771bee577abb`
+
+<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
+### 2026-10-03 · dsh-kimino-theme
+
+[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
+
+- 版本：`67.0.1`
+- 固定 commit：`08bc81a1d8b3d9aebf954074b447102184087b37`
+
+<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
+### 2026-10-03 · dsh-catppuccin
+
+[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)：DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
+
+- 版本：`0.5.10-beta.0`
+- 固定 commit：`24998c1fe5ade94575365d6f54478185a6fa2d7e`
+
+<!-- dsh-auto-entry:sutera-diffusus.dsh-whale-musume -->
+### 2026-10-03 · dsh-whale-musume
+
+[Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume)：为 DeepSeek Harness 打造的桌面看板娘插件。 一只会陪你写代码的鲸鱼娘：待机安静陪伴，工作开始就抱起笔记本陪你干活； 可以摸头养成、解锁成就，也可以拖着她到处走。所有资源本地运行，无遥测、无外部请求。
+
+- 版本：`2.2.1`
+- 固定 commit：`a596dda49f72a516c30b57c7134094d75d30c3a0`
+
+<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
+### 2026-10-03 · dsh-dream-skin
+
+[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
+
+- 版本：`9.29.0`
+- 固定 commit：`8b2757ef5c4205ad28bed64fcc471dc7be4d75ea`
+
+<!-- dsh-auto-entry:ymh0000123.dsh-theme-endfield -->
+### 2026-10-03 · dsh-theme-endfield
+
+[ymh0000123/dsh-theme-endfield](https://github.com/ymh0000123/dsh-theme-endfield)：终末地官网风格的 DSH Web 主题：奶油纸底、墨黑文字、信号黄强调、全直角工业编辑风。
+
+- 版本：`1.1.9`
+- 固定 commit：`d551b2611123274691511912f48d12cd63d0173f`
+
+<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
+### 2026-10-03 · dsh-wallpaper-engine
+
+[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
+
+- 版本：`1.2.0`
+- 固定 commit：`f9ff712d47adc1c6125b4367aae0831f114af236`
+
 <!-- dsh-auto-entry:king-of-soy-sauce.liang-intensity -->
 ### 2026-10-03 · 滑动变祖
 
@@ -295,14 +375,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.1.17`
 - 固定 commit：`7eee09fe34c4bc46b948c5b8eea962c16a6e73f3`
 
-<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
-### 2026-10-02 · dsh-catppuccin
-
-[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)：DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
-
-- 版本：`0.5.10-beta.0`
-- 固定 commit：`ee386faf524cf7e42363ef13a8e7208cb4253900`
-
 <!-- dsh-auto-entry:featherhunter.dsh-opencode-palette -->
 ### 2026-10-02 · dsh-opencode-palette
 
@@ -310,30 +382,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`2.0.12`
 - 固定 commit：`11ea698321cda15a5896ee3412321460e230c146`
-
-<!-- dsh-auto-entry:sutera-diffusus.dsh-whale-musume -->
-### 2026-10-02 · dsh-whale-musume
-
-[Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume)：为 DeepSeek Harness 打造的桌面看板娘插件。 一只会陪你写代码的鲸鱼娘：待机安静陪伴，工作开始就抱起笔记本陪你干活； 可以摸头养成、解锁成就，也可以拖着她到处走。所有资源本地运行，无遥测、无外部请求。
-
-- 版本：`2.2.1`
-- 固定 commit：`92d0903647e3b8106cee281a594a176589ad78d0`
-
-<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
-### 2026-10-02 · dsh-wallpaper-engine
-
-[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
-
-- 版本：`1.2.0`
-- 固定 commit：`1a8797a0e5c3f65eabda7c73a146d8aae4963b54`
-
-<!-- dsh-auto-entry:ymh0000123.dsh-theme-endfield -->
-### 2026-10-02 · dsh-theme-endfield
-
-[ymh0000123/dsh-theme-endfield](https://github.com/ymh0000123/dsh-theme-endfield)：终末地官网风格的 DSH Web 主题：奶油纸底、墨黑文字、信号黄强调、全直角工业编辑风。
-
-- 版本：`1.1.6`
-- 固定 commit：`d0a0502e6542bb029488023e53929b643dbca189`
 
 <!-- dsh-auto-entry:yyyyyylor.dsh-asuka-school-theme -->
 ### 2026-10-02 · dsh-asuka-school-theme
@@ -383,14 +431,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.4.3`
 - 固定 commit：`9fd8f74e869c2f3728811562a490e4f3b31d0de2`
 
-<!-- dsh-auto-entry:jinxlux.xiao-theme-dsh-ui-plugin -->
-### 2026-10-02 · xiao-theme-dsh-ui-plugin
-
-[jinxlux/xiao-theme-dsh-ui-plugin](https://github.com/jinxlux/xiao-theme-dsh-ui-plugin)：DeepSeek Harness 的可自定义主题插件（默认带一套「魈」青玉风）—— 给 DeepSeek Harness 的 Web 界面做主题：配色、吉祥物徽章、背景、注入语气都能自己调。背景同时支持静态图片与动态 GIF （上传动画 GIF 会自动识别为动态背景）。默认是一套魈的青玉/翠青风格，但主色、徽章文字、语气、 背景等都可配置，改出来就是你的专属主题。
-
-- 版本：`0.13.1`
-- 固定 commit：`d0cb5ace681fbc34cdfc6cd091e4e9800807137a`
-
 <!-- dsh-auto-entry:ash-qw.dsh-theme-prts -->
 ### 2026-10-02 · dsh-theme-prts
 
@@ -422,14 +462,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`2.0.3`
 - 固定 commit：`635ac827bfea03795339d873856d532cd94d7d2c`
-
-<!-- dsh-auto-entry:alexpeng07.dsh-custom-plugin -->
-### 2026-10-02 · dsh-custom-plugin
-
-[AlexPeng07/dsh-custom-plugin](https://github.com/AlexPeng07/dsh-custom-plugin)：[](https://www.npmjs.com/package/@alexpeng/dsh-custom-plugin) [](LICENSE) [](#安装) [](https://www.typescriptlang.org) [](https://github.com/AlexPeng07/dsh-custom-plugin/actions/workflows/ci.yml) [](https://awesome-dsh-plugin.com)
-
-- 版本：`0.7.0`
-- 固定 commit：`583ff9126d011a2556573ed32adcd489468c2bee`
 
 <!-- dsh-auto-entry:jiangnanquan.dsh-ux -->
 ### 2026-10-02 · dsh-ux
@@ -478,22 +510,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.17.2`
 - 固定 commit：`96223bd17f6cfc603ca7348f4ca2b50977998bf4`
-
-<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
-### 2026-10-02 · dsh-kimino-theme
-
-[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
-
-- 版本：`67.0.1`
-- 固定 commit：`468089ace8ea2867eea31118764e861c33afc969`
-
-<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
-### 2026-10-02 · dsh-dream-skin
-
-[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
-
-- 版本：`9.29.0`
-- 固定 commit：`347a7cabe5ef46a57dc577af3acdc75b9d4c9ee3`
 
 <!-- dsh-auto-entry:qweq.cell.del.dsh.whale.girl.wallpaper -->
 ### 2026-10-02 · 鲸鱼娘动态壁纸
@@ -734,14 +750,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.4.0`
 - 固定 commit：`3e9b8a8ed9d6add514904f5eaee6b72f63e17f4f`
-
-<!-- dsh-auto-entry:lkdx0220.genshin-odette-skin-dsh -->
-### 2026-09-19 · Genshin-odette-skin-dsh
-
-[lkdx0220/Genshin-odette-skin-dsh](https://github.com/lkdx0220/Genshin-odette-skin-dsh)：Odette 冰雪梦幻主题 —— DSH 客户端的深/浅双模式 UI 美化皮肤。
-
-- 版本：`0.1.2`
-- 固定 commit：`8e35b1f850549d49a34f55357f73c83dcb62df78`
 
 <!-- dsh-auto-entry:cooltea001.dsh-cool-theme -->
 ### 2026-09-19 · dsh-cool-theme

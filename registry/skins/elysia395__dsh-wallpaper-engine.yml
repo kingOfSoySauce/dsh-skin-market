@@ -17,13 +17,13 @@ modes:
   - light
   - dark
 install:
-  target: github:elysia395/dsh-wallpaper-engine#1a8797a0e5c3f65eabda7c73a146d8aae4963b54
+  target: github:elysia395/dsh-wallpaper-engine#f9ff712d47adc1c6125b4367aae0831f114af236
   version: 1.2.0
-  commit: 1a8797a0e5c3f65eabda7c73a146d8aae4963b54
+  commit: f9ff712d47adc1c6125b4367aae0831f114af236
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
-  allowBuild: dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/1a8797a0e5c3f65eabda7c73a146d8aae4963b54
+  allowBuild: dsh-plugin-wallpaper-engine@https://codeload.github.com/elysia395/dsh-wallpaper-engine/tar.gz/f9ff712d47adc1c6125b4367aae0831f114af236
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
@@ -51,22 +51,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.2.0-rc.1 完全覆盖（固定版本 1a8797a0e5c3f65eabda7c73a146d8aae4963b54）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.2.0-rc.1 完全覆盖（固定版本 f9ff712d47adc1c6125b4367aae0831f114af236）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 1a8797a0e5c3f65eabda7c73a146d8aae4963b54
+    commit: f9ff712d47adc1c6125b4367aae0831f114af236
     packageVersion: 1.2.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-10-02T22:56:12.218Z
+    checkedAt: 2026-10-03T22:07:03.158Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1001
-starsSnapshot: 502
-releaseUpdatedAt: 2026-10-02T22:56:15.838Z
-metadataUpdatedAt: 2026-10-02T22:56:15.838Z
-starsUpdatedAt: 2026-10-02T22:56:15.838Z
-updatedAt: 2026-10-02T22:56:15.838Z
+starsSnapshot: 547
+releaseUpdatedAt: 2026-10-03T22:07:07.225Z
+metadataUpdatedAt: 2026-10-03T22:07:07.225Z
+starsUpdatedAt: 2026-10-03T22:07:07.225Z
+updatedAt: 2026-10-03T22:07:07.225Z
