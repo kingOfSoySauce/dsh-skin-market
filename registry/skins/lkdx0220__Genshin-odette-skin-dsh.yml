@@ -19,13 +19,13 @@ modes:
   - light
   - dark
 install:
-  target: github:lkdx0220/Genshin-odette-skin-dsh#5e472319ac34271fc893e2fd21e2b9bfd417a225
-  version: 0.1.3
-  commit: 5e472319ac34271fc893e2fd21e2b9bfd417a225
+  target: github:lkdx0220/Genshin-odette-skin-dsh#a6aa39c850945986fa305817d1ccaf9711d60690
+  version: 0.1.4
+  commit: a6aa39c850945986fa305817d1ccaf9711d60690
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  allowBuild: dsh-odette-skin@https://codeload.github.com/lkdx0220/Genshin-odette-skin-dsh/tar.gz/5e472319ac34271fc893e2fd21e2b9bfd417a225
+  allowBuild: dsh-odette-skin@https://codeload.github.com/lkdx0220/Genshin-odette-skin-dsh/tar.gz/a6aa39c850945986fa305817d1ccaf9711d60690
 compatibility:
   dsh: ">=0.0.1-rc <2"
   platform:
@@ -53,13 +53,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 5e472319ac34271fc893e2fd21e2b9bfd417a225
-    packageVersion: 0.1.3
+    commit: a6aa39c850945986fa305817d1ccaf9711d60690
+    packageVersion: 0.1.4
     scannerVersion: static-v2
     dshVersion: ">=0.0.1-rc <2"
     mode: static
     result: unknown
-    checkedAt: 2026-10-03T22:08:22.875Z
+    checkedAt: 2026-10-04T22:19:50.163Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -68,7 +68,7 @@ license:
   commercialUse: false
 featuredRank: 182
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-03T22:08:24.997Z
-metadataUpdatedAt: 2026-10-03T22:08:24.997Z
+releaseUpdatedAt: 2026-10-04T22:19:51.427Z
+metadataUpdatedAt: 2026-10-04T22:19:51.427Z
 starsUpdatedAt: 2026-09-09T21:39:54.518Z
-updatedAt: 2026-10-03T22:08:24.997Z
+updatedAt: 2026-10-04T22:19:51.427Z
