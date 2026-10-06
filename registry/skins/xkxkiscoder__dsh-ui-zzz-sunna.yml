@@ -17,6 +17,15 @@ install:
   target: github:xkxkiscoder/dsh-ui-zzz-sunna#5e98100379b9527df5928b797131734d724e614f
   version: 0.1.6
   commit: 5e98100379b9527df5928b797131734d724e614f
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepack
+  npm:
+    name: dsh-ui-zzz-sunna
+    version: 0.1.6
+    integrity: sha512-07xj2/4kiBV0cAcSRaRjiBc3DlBe0CIDTg2LECbKrBHB8kGnzhvxmnxBov6WwUvTvVhKQ5zdzvXvistDT0crMw==
+    repository: https://github.com/xkxkiscoder/dsh-ui-zzz-sunna
+    gitHead: 5e98100379b9527df5928b797131734d724e614f
 compatibility:
   dsh: 0.1.5-alpha.2
   platform:
@@ -27,6 +36,7 @@ screenshots:
   - https://raw.githubusercontent.com/xkxkiscoder/dsh-ui-zzz-sunna/5e98100379b9527df5928b797131734d724e614f/docs/preview-overlay-light.webp
   - https://raw.githubusercontent.com/xkxkiscoder/dsh-ui-zzz-sunna/5e98100379b9527df5928b797131734d724e614f/docs/preview-overlay-dark.webp
   - https://raw.githubusercontent.com/xkxkiscoder/dsh-ui-zzz-sunna/5e98100379b9527df5928b797131734d724e614f/docs/widgets.webp
+listScreenshot: https://raw.githubusercontent.com/xkxkiscoder/dsh-ui-zzz-sunna/5e98100379b9527df5928b797131734d724e614f/docs/preview-portrait-light.webp
 review:
   compatibility: verified
   preview: verified
@@ -41,12 +51,24 @@ health:
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 5e98100379b9527df5928b797131734d724e614f
+    packageVersion: 0.1.6
+    scannerVersion: static-v2
+    dshVersion: 0.1.5-alpha.2
+    mode: static
+    result: unknown
+    checkedAt: 2026-10-06T00:47:25.630Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-05T06:03:46.430Z
-metadataUpdatedAt: 2026-10-05T06:03:46.430Z
+releaseUpdatedAt: 2026-10-06T00:47:26.294Z
+metadataUpdatedAt: 2026-10-06T00:47:26.294Z
 starsUpdatedAt: 2026-10-05T06:03:46.430Z
-updatedAt: 2026-10-05T06:03:46.430Z
+updatedAt: 2026-10-06T00:47:26.294Z
