@@ -14,12 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:SkillyNotFound/dsh-theme-endfield-re#d19476cef663a848c5c23ba65ef759c0fe527ef2
-  version: 2.0.1
-  commit: d19476cef663a848c5c23ba65ef759c0fe527ef2
+  target: github:SkillyNotFound/dsh-theme-endfield-re#1531e22cf7e59d6ca8f88cca3900b477550c887b
+  version: 2.1.0
+  commit: 1531e22cf7e59d6ca8f88cca3900b477550c887b
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: dsh-theme-endfield-re
+    version: 2.1.0
+    integrity: sha512-7R5FRR3WbpBhxvO1/P2DBotojmq1W4Dh3V3ATNDD/UuJbpAxyC1Uw/y4NiiBsiZEovGijnYxhm0g3hGj8IJ4gg==
+    repository: https://github.com/SkillyNotFound/dsh-theme-endfield-re
+    gitHead: 1531e22cf7e59d6ca8f88cca3900b477550c887b
 compatibility:
   dsh: unverified
   platform:
@@ -35,29 +41,28 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: d19476cef663a848c5c23ba65ef759c0fe527ef2
-    packageVersion: 2.0.1
+    commit: 1531e22cf7e59d6ca8f88cca3900b477550c887b
+    packageVersion: 2.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-06T00:46:33.731Z
+    checkedAt: 2026-10-08T23:46:18.550Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 1
-releaseUpdatedAt: 2026-10-06T00:46:34.176Z
-metadataUpdatedAt: 2026-10-06T00:46:34.176Z
-starsUpdatedAt: 2026-10-05T06:04:32.237Z
-updatedAt: 2026-10-06T00:46:34.176Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-10-08T23:46:19.126Z
+metadataUpdatedAt: 2026-10-08T23:46:19.126Z
+starsUpdatedAt: 2026-10-08T23:46:19.126Z
+updatedAt: 2026-10-08T23:46:19.126Z

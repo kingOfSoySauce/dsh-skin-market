@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:CAPTAIN1275/dsh-ui-web#251119cedac66dbd31ca8ce6cb112369b60b359b&path:/packages/skins/miku
-  version: 0.3.1
-  commit: 251119cedac66dbd31ca8ce6cb112369b60b359b
+  target: github:CAPTAIN1275/dsh-ui-web#994656f936c0d946472e5eac9e9389bb13bd7735&path:/packages/skins/miku
+  version: 0.4.0
+  commit: 994656f936c0d946472e5eac9e9389bb13bd7735
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -36,6 +36,7 @@ screenshots:
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/251119cedac66dbd31ca8ce6cb112369b60b359b/docs/effort-slider.png
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/miku/preview/dark.png
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/miku/preview/light.png
+listScreenshot: https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/994656f936c0d946472e5eac9e9389bb13bd7735/packages/skins/miku/preview/light.png
 review:
   compatibility: verified
   preview: verified
@@ -51,20 +52,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 251119cedac66dbd31ca8ce6cb112369b60b359b
-    packageVersion: 0.3.1
+    commit: 994656f936c0d946472e5eac9e9389bb13bd7735
+    packageVersion: 0.4.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-25T07:08:23.278Z
+    checkedAt: 2026-10-08T23:45:00.523Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 969
 starsSnapshot: 39
-releaseUpdatedAt: 2026-08-25T07:08:23.400Z
-metadataUpdatedAt: 2026-08-25T07:08:23.400Z
+releaseUpdatedAt: 2026-10-08T23:45:01.570Z
+metadataUpdatedAt: 2026-10-08T23:45:01.570Z
 starsUpdatedAt: 2026-10-02T10:29:16.039Z
-updatedAt: 2026-10-02T10:29:16.039Z
+updatedAt: 2026-10-08T23:45:01.570Z

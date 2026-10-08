@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Ewnscat-ya/dsh-client-ui-skin-denia#9d445e4823af05d67504bdf4b5bef60f74d8cf07
-  version: 0.0.7
-  commit: 9d445e4823af05d67504bdf4b5bef60f74d8cf07
+  target: github:Ewnscat-ya/dsh-client-ui-skin-denia#217a5cbb6034917c0176f5bc0c6843855e9a7309
+  version: 1.0.0
+  commit: 217a5cbb6034917c0176f5bc0c6843855e9a7309
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -48,13 +48,13 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 9d445e4823af05d67504bdf4b5bef60f74d8cf07
-    packageVersion: 0.0.7
+    commit: 217a5cbb6034917c0176f5bc0c6843855e9a7309
+    packageVersion: 1.0.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-08T21:46:54.708Z
+    checkedAt: 2026-10-08T23:44:59.640Z
     findings: []
 license:
   code: CC-BY-NC-SA-4.0
@@ -62,7 +62,7 @@ license:
   notice: 角色、美术和商标权利归原权利人所有；仓库声明为非官方同人作品并禁止商业使用。
 featuredRank: 133
 starsSnapshot: 46
-releaseUpdatedAt: 2026-09-08T21:46:56.416Z
-metadataUpdatedAt: 2026-09-08T21:46:56.416Z
+releaseUpdatedAt: 2026-10-08T23:45:00.226Z
+metadataUpdatedAt: 2026-10-08T23:45:00.226Z
 starsUpdatedAt: 2026-10-03T22:07:14.718Z
-updatedAt: 2026-10-03T22:07:14.718Z
+updatedAt: 2026-10-08T23:45:00.226Z

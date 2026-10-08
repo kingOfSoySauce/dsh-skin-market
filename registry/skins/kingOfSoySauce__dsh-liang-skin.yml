@@ -16,21 +16,15 @@ tags:
 modes:
   - dark
 install:
-  target: github:kingOfSoySauce/dsh-liang-skin#f44d7e02a92bff3ca9f06a5de915a6d85febc367
+  target: github:kingOfSoySauce/dsh-liang-skin#9a0a430fdc402588d815ffaf7713577fe9946335
   version: 0.1.9
-  commit: f44d7e02a92bff3ca9f06a5de915a6d85febc367
+  commit: 9a0a430fdc402588d815ffaf7713577fe9946335
   desktop:
     mode: managed
     registry: npm
     packageName: "@leon___/dsh-client-liang-intensity-skin"
     packageVersion: 0.1.9
     integrity: sha512-weuQ6/Sg5D7mZOH+jc/XqMzTD6x6pcPYaT/lInrGsz+LX+0i9+KDSeLt8Lp3WbR5+pEzu/wFOCYb+ew35nJC3Q==
-  npm:
-    name: "@leon___/dsh-client-liang-intensity-skin"
-    version: 0.1.9
-    integrity: sha512-weuQ6/Sg5D7mZOH+jc/XqMzTD6x6pcPYaT/lInrGsz+LX+0i9+KDSeLt8Lp3WbR5+pEzu/wFOCYb+ew35nJC3Q==
-    repository: https://github.com/kingOfSoySauce/dsh-liang-skin
-    gitHead: f44d7e02a92bff3ca9f06a5de915a6d85febc367
 compatibility:
   dsh: ^0.1.0-rc.6 || 0.2.0-rc.2
   platform:
@@ -51,23 +45,23 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 || 0.2.0-rc.2 未被本次检测范围 0.1.0-rc.6 完全覆盖（固定版本 f44d7e02a92bff3ca9f06a5de915a6d85febc367）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 || 0.2.0-rc.2 未被本次检测范围 0.1.0-rc.6 完全覆盖（固定版本 9a0a430fdc402588d815ffaf7713577fe9946335）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: f44d7e02a92bff3ca9f06a5de915a6d85febc367
+    commit: 9a0a430fdc402588d815ffaf7713577fe9946335
     packageVersion: 0.1.9
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-03T10:44:06.150Z
+    checkedAt: 2026-10-08T23:44:53.084Z
     findings: []
 license:
   code: NOASSERTION
   commercialUse: false
   notice: 仓库当前未声明许可证；安装和再分发前请向作者确认授权。
 featuredRank: 1
-starsSnapshot: 236
-releaseUpdatedAt: 2026-10-03T10:44:10.854Z
-metadataUpdatedAt: 2026-10-03T10:44:10.854Z
-starsUpdatedAt: 2026-10-06T00:44:59.975Z
-updatedAt: 2026-10-06T00:44:59.975Z
+starsSnapshot: 240
+releaseUpdatedAt: 2026-10-08T23:44:53.386Z
+metadataUpdatedAt: 2026-10-08T23:44:53.386Z
+starsUpdatedAt: 2026-10-08T23:44:53.386Z
+updatedAt: 2026-10-08T23:44:53.386Z

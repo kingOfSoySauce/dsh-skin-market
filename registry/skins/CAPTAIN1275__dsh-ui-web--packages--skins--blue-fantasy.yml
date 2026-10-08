@@ -17,21 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CAPTAIN1275/dsh-ui-web#251119cedac66dbd31ca8ce6cb112369b60b359b&path:/packages/skins/blue-fantasy
-  version: 0.3.1
-  commit: 251119cedac66dbd31ca8ce6cb112369b60b359b
+  target: github:CAPTAIN1275/dsh-ui-web#994656f936c0d946472e5eac9e9389bb13bd7735&path:/packages/skins/blue-fantasy
+  version: 0.4.0
+  commit: 994656f936c0d946472e5eac9e9389bb13bd7735
   desktop:
     mode: managed
     registry: npm
     packageName: "@captain1275/dsh-client-ui-skin-blue-fantasy"
-    packageVersion: 0.3.1
-    integrity: sha512-YmfzMz0+ulq6aacZQNv7tYdwGWIF6IFkTeBB48xO2DQ7duWsiZx0NJy3bJ8IqaWFTUXYMfvx/xSfCxwi6MQwvA==
+    packageVersion: 0.4.0
+    integrity: sha512-l0oixjpS5tOe6pj9WN3DxeHeXeB9/kuHaozKJDVeDkYOFTEhJXLvlsC8QbscPL+COHAUPy5QFPwp0stWcJN36w==
   npm:
     name: "@captain1275/dsh-client-ui-skin-blue-fantasy"
-    version: 0.3.1
-    integrity: sha512-YmfzMz0+ulq6aacZQNv7tYdwGWIF6IFkTeBB48xO2DQ7duWsiZx0NJy3bJ8IqaWFTUXYMfvx/xSfCxwi6MQwvA==
+    version: 0.4.0
+    integrity: sha512-l0oixjpS5tOe6pj9WN3DxeHeXeB9/kuHaozKJDVeDkYOFTEhJXLvlsC8QbscPL+COHAUPy5QFPwp0stWcJN36w==
     repository: https://github.com/CAPTAIN1275/dsh-ui-web
-    gitHead: 251119cedac66dbd31ca8ce6cb112369b60b359b
+    gitHead: 994656f936c0d946472e5eac9e9389bb13bd7735
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -45,6 +45,7 @@ screenshots:
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/251119cedac66dbd31ca8ce6cb112369b60b359b/docs/effort-slider.png
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/blue-fantasy/preview/dark.png
   - https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/4a275b080cb6ff1a1a7a91a77e08aad6ad1eab56/packages/skins/blue-fantasy/preview/light.png
+listScreenshot: https://raw.githubusercontent.com/CAPTAIN1275/dsh-ui-web/994656f936c0d946472e5eac9e9389bb13bd7735/docs/aurora-glass.png
 review:
   compatibility: verified
   preview: verified
@@ -60,20 +61,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 251119cedac66dbd31ca8ce6cb112369b60b359b
-    packageVersion: 0.3.1
+    commit: 994656f936c0d946472e5eac9e9389bb13bd7735
+    packageVersion: 0.4.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:27:12.153Z
+    checkedAt: 2026-10-08T23:45:00.040Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 969
 starsSnapshot: 39
-releaseUpdatedAt: 2026-09-15T03:03:36.507Z
-metadataUpdatedAt: 2026-08-25T07:08:19.813Z
+releaseUpdatedAt: 2026-10-08T23:45:02.348Z
+metadataUpdatedAt: 2026-10-08T23:45:02.348Z
 starsUpdatedAt: 2026-10-02T10:29:15.534Z
-updatedAt: 2026-10-02T10:29:15.534Z
+updatedAt: 2026-10-08T23:45:02.348Z

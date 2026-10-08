@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:zhang66633/dsh-pixel-ui#bb0ef730764dc2d09327b05a389fb933ea245fe6
+  target: github:zhang66633/dsh-pixel-ui#e4040efeda01e640de64ff84545f651c9efdb331
   version: 1.5.0
-  commit: bb0ef730764dc2d09327b05a389fb933ea245fe6
+  commit: e4040efeda01e640de64ff84545f651c9efdb331
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -43,20 +43,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: bb0ef730764dc2d09327b05a389fb933ea245fe6
+    commit: e4040efeda01e640de64ff84545f651c9efdb331
     packageVersion: 1.5.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-02T10:30:29.349Z
+    checkedAt: 2026-10-08T23:45:39.238Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1053
 starsSnapshot: 3
-releaseUpdatedAt: 2026-10-02T10:30:30.483Z
-metadataUpdatedAt: 2026-10-02T10:30:30.483Z
+releaseUpdatedAt: 2026-10-08T23:45:40.191Z
+metadataUpdatedAt: 2026-10-08T23:45:40.191Z
 starsUpdatedAt: 2026-10-06T00:46:07.068Z
-updatedAt: 2026-10-06T00:46:07.068Z
+updatedAt: 2026-10-08T23:45:40.191Z
