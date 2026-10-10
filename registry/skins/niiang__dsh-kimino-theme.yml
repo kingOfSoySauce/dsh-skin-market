@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:niiang/dsh-kimino-theme#594a605d3de33b7854c305b6657e23061617920f
+  target: github:niiang/dsh-kimino-theme#a69a60aca68011f05ebaad1f94d3e72223bab55d
   version: 68.1.0
-  commit: 594a605d3de33b7854c305b6657e23061617920f
+  commit: a69a60aca68011f05ebaad1f94d3e72223bab55d
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -53,19 +53,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 594a605d3de33b7854c305b6657e23061617920f
+    commit: a69a60aca68011f05ebaad1f94d3e72223bab55d
     packageVersion: 68.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-09T23:10:51.768Z
+    checkedAt: 2026-10-10T22:25:35.185Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 145
 starsSnapshot: 39
-releaseUpdatedAt: 2026-10-09T23:10:53.624Z
-metadataUpdatedAt: 2026-10-09T23:10:53.624Z
+releaseUpdatedAt: 2026-10-10T22:25:38.065Z
+metadataUpdatedAt: 2026-10-10T22:25:38.065Z
 starsUpdatedAt: 2026-10-03T22:07:19.608Z
-updatedAt: 2026-10-09T23:10:53.624Z
+updatedAt: 2026-10-10T22:25:38.065Z
