@@ -1,0 +1,9 @@
+url: https://github.com/LorisYounger/dsh-vpet-skin
+name:
+  zh: VPet
+  en: VPet
+author: LorisYounger
+description: 为 DeepSeek Harness 添加五种 VPet 萝莉斯角色形态和对应配色，通过输入框旁的滑块切换形态，可与模型思考等级联动。
+screenshots:
+  - https://raw.githubusercontent.com/LorisYounger/dsh-vpet-skin/1d720c4d4bc19d3784ea5e22a3557f87fb4a08ea/README.assets/image-20261010015329626.png
+  - https://raw.githubusercontent.com/LorisYounger/dsh-vpet-skin/1d720c4d4bc19d3784ea5e22a3557f87fb4a08ea/README.assets/image-20261010015414817.png
