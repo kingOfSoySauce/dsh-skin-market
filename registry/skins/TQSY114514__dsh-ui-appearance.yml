@@ -22,13 +22,13 @@ install:
   desktop:
     mode: manual-only
     reason: npm-version-mismatch
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/b88267f647af2ca68ebc8a46c1c82b7b1bf76f3d
   npm:
     name: dsh-ui-appearance
     version: 0.1.21
     integrity: sha512-f95GGk7WLBbcWZDQ1I2ryJtjzk4KN1rPpkbuv4fx9wljI60ApD5AD1KHd+C4ER4tgb2Enp8Jr2zUEZlagR0hHA==
     repository: https://github.com/TQSY114514/dsh-ui-appearance
     gitHead: b88267f647af2ca68ebc8a46c1c82b7b1bf76f3d
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/b88267f647af2ca68ebc8a46c1c82b7b1bf76f3d
 compatibility:
   dsh: unverified
   platform:
@@ -73,8 +73,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 36
-starsSnapshot: 20
-releaseUpdatedAt: 2026-10-08T23:45:08.520Z
+starsSnapshot: 21
+releaseUpdatedAt: 2026-10-09T23:10:54.367Z
 metadataUpdatedAt: 2026-10-08T23:45:08.520Z
-starsUpdatedAt: 2026-10-02T10:29:25.402Z
-updatedAt: 2026-10-08T23:45:08.520Z
+starsUpdatedAt: 2026-10-09T23:10:54.227Z
+updatedAt: 2026-10-09T23:10:54.367Z
