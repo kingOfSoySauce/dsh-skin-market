@@ -17,6 +17,12 @@ install:
   target: github:LorisYounger/dsh-vpet-skin#fd43c0ba5d790042574a6ddc8fa2364731a33f8a
   version: 0.1.13
   commit: fd43c0ba5d790042574a6ddc8fa2364731a33f8a
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-client-vpet-skin
+    packageVersion: 0.1.13
+    integrity: sha512-QOJGwzMPZXe3b9IlrRMy3ZhzBzrHMSCEnd06o8LgCZ4SvWorqv7fFDj8BD+FcUN3ZW4cWE/S93j4yBCngKqc/w==
 compatibility:
   dsh: unverified
   platform:
@@ -24,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/LorisYounger/dsh-vpet-skin/1d720c4d4bc19d3784ea5e22a3557f87fb4a08ea/README.assets/image-20261010015329626.png
   - https://raw.githubusercontent.com/LorisYounger/dsh-vpet-skin/1d720c4d4bc19d3784ea5e22a3557f87fb4a08ea/README.assets/image-20261010015414817.png
+listScreenshot: https://raw.githubusercontent.com/LorisYounger/dsh-vpet-skin/fd43c0ba5d790042574a6ddc8fa2364731a33f8a/assets/vpet/68.png
 review:
   compatibility: unverified
   preview: verified
@@ -39,12 +46,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: fd43c0ba5d790042574a6ddc8fa2364731a33f8a
+    packageVersion: 0.1.13
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-11T22:51:17.783Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-11T03:17:27.837Z
-metadataUpdatedAt: 2026-10-11T03:17:27.837Z
+releaseUpdatedAt: 2026-10-11T22:51:20.448Z
+metadataUpdatedAt: 2026-10-11T22:51:20.448Z
 starsUpdatedAt: 2026-10-11T03:17:27.837Z
-updatedAt: 2026-10-11T03:17:27.837Z
+updatedAt: 2026-10-11T22:51:20.448Z

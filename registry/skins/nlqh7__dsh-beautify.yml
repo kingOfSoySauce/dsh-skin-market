@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:nlqh7/dsh-beautify#cb317987dfefb034a508b57a8096ce25971766fe
-  version: 0.5.2
-  commit: cb317987dfefb034a508b57a8096ce25971766fe
+  target: github:nlqh7/dsh-beautify#07f003e7b0821f849b0d9bbf97c2c4b9f17a4d26
+  version: 0.5.3
+  commit: 07f003e7b0821f849b0d9bbf97c2c4b9f17a4d26
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -54,19 +54,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: cb317987dfefb034a508b57a8096ce25971766fe
-    packageVersion: 0.5.2
+    commit: 07f003e7b0821f849b0d9bbf97c2c4b9f17a4d26
+    packageVersion: 0.5.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-10T22:26:41.477Z
+    checkedAt: 2026-10-11T22:49:29.479Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 184
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-10T22:26:44.993Z
-metadataUpdatedAt: 2026-10-10T22:26:44.993Z
+releaseUpdatedAt: 2026-10-11T22:49:34.008Z
+metadataUpdatedAt: 2026-10-11T22:49:34.008Z
 starsUpdatedAt: 2026-09-21T22:35:47.902Z
-updatedAt: 2026-10-10T22:26:44.993Z
+updatedAt: 2026-10-11T22:49:34.008Z

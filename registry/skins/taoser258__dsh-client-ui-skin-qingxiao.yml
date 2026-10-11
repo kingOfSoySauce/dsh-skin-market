@@ -19,21 +19,21 @@ modes:
   - light
   - dark
 install:
-  target: github:taoser258/dsh-client-ui-skin-qingxiao#0ec0b9b636f6b1e6a81d0ced21d541e1359201a0
-  version: 0.2.3
-  commit: 0ec0b9b636f6b1e6a81d0ced21d541e1359201a0
+  target: github:taoser258/dsh-client-ui-skin-qingxiao#ccaaaa0708384c457c17c771942d0255a03be9f1
+  version: 0.3.0
+  commit: ccaaaa0708384c457c17c771942d0255a03be9f1
   desktop:
     mode: managed
     registry: npm
     packageName: "@taosee258/dsh-client-ui-skin-qingxiao"
-    packageVersion: 0.2.3
-    integrity: sha512-27wEgI2RgCK4miwnPTaPu4cV+B6kJ0rHJ+Z7NpD0//L1rAwNZOSWFwH6ZqgnZsExQ7kpGjpNUh5H6mTXZwg/Bg==
+    packageVersion: 0.3.0
+    integrity: sha512-3t8jNXHqqKyW3Fam/aIkFEAxp0L07E7uNM6YML8Sp8F8rzsTRVTTU9c8wlA8k66Ah4YDRwcXMz+MRVIWc6r4Ow==
   npm:
     name: "@taosee258/dsh-client-ui-skin-qingxiao"
-    version: 0.2.3
-    integrity: sha512-27wEgI2RgCK4miwnPTaPu4cV+B6kJ0rHJ+Z7NpD0//L1rAwNZOSWFwH6ZqgnZsExQ7kpGjpNUh5H6mTXZwg/Bg==
+    version: 0.3.0
+    integrity: sha512-3t8jNXHqqKyW3Fam/aIkFEAxp0L07E7uNM6YML8Sp8F8rzsTRVTTU9c8wlA8k66Ah4YDRwcXMz+MRVIWc6r4Ow==
     repository: https://github.com/taoser258/dsh-client-ui-skin-qingxiao
-    gitHead: 0ec0b9b636f6b1e6a81d0ced21d541e1359201a0
+    gitHead: ccaaaa0708384c457c17c771942d0255a03be9f1
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -56,20 +56,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 0ec0b9b636f6b1e6a81d0ced21d541e1359201a0
-    packageVersion: 0.2.3
+    commit: ccaaaa0708384c457c17c771942d0255a03be9f1
+    packageVersion: 0.3.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-02T10:29:31.668Z
+    checkedAt: 2026-10-11T22:48:26.939Z
     findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 1041
 starsSnapshot: 9
-releaseUpdatedAt: 2026-10-02T10:29:32.961Z
-metadataUpdatedAt: 2026-10-02T10:29:32.961Z
+releaseUpdatedAt: 2026-10-11T22:48:28.336Z
+metadataUpdatedAt: 2026-10-11T22:48:28.336Z
 starsUpdatedAt: 2026-09-29T22:57:03.604Z
-updatedAt: 2026-10-02T10:29:32.961Z
+updatedAt: 2026-10-11T22:48:28.336Z
