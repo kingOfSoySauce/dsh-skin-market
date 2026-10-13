@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:kelemiao/dsh-animation-optimization#72c6213c5e8a34be473722dcea9ec3f7f539b0ca
-  version: 0.2.2
-  commit: 72c6213c5e8a34be473722dcea9ec3f7f539b0ca
+  target: github:kelemiao/dsh-animation-optimization#6649fa2e1a703884136b488cc17a92e3e336a7bf
+  version: 0.2.3
+  commit: 6649fa2e1a703884136b488cc17a92e3e336a7bf
   desktop:
     mode: manual-only
     reason: npm-source-unverified
@@ -31,33 +31,34 @@ screenshots:
   - https://raw.githubusercontent.com/kelemiao/dsh-animation-optimization/7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf/assets/screenshots/2.png
 listScreenshot: https://raw.githubusercontent.com/kelemiao/dsh-animation-optimization/7d3d7dc3a5272a73f6dc2e403dea02e50c1f89cf/assets/screenshots/1.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 完全覆盖（固定版本 6649fa2e1a703884136b488cc17a92e3e336a7bf）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 72c6213c5e8a34be473722dcea9ec3f7f539b0ca
-    packageVersion: 0.2.2
+    commit: 6649fa2e1a703884136b488cc17a92e3e336a7bf
+    packageVersion: 0.2.3
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.6
+    dshVersion: ">=0.1.2-rc.1 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-09-09T21:39:08.188Z
+    checkedAt: 2026-10-13T01:16:57.548Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1036
 starsSnapshot: 6
-releaseUpdatedAt: 2026-09-09T21:39:09.224Z
-metadataUpdatedAt: 2026-09-09T21:39:09.224Z
+releaseUpdatedAt: 2026-10-13T01:16:58.560Z
+metadataUpdatedAt: 2026-10-13T01:16:58.560Z
 starsUpdatedAt: 2026-09-12T21:23:50.653Z
-updatedAt: 2026-09-12T21:23:50.653Z
+updatedAt: 2026-10-13T01:16:58.560Z

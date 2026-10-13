@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:laoduu/DeepSeek-Harness-yizi-themes#9952bff98664368b898c7612bc0ea1e8fd0d263e
-  version: 0.4.0
-  commit: 9952bff98664368b898c7612bc0ea1e8fd0d263e
+  target: github:laoduu/DeepSeek-Harness-yizi-themes#3dd64aad10a9da4f7a30a35718184b626c5d9bfe
+  version: 0.5.0
+  commit: 3dd64aad10a9da4f7a30a35718184b626c5d9bfe
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  allowBuild: dsh-yizi-themes@https://codeload.github.com/laoduu/DeepSeek-Harness-yizi-themes/tar.gz/9952bff98664368b898c7612bc0ea1e8fd0d263e
+  allowBuild: dsh-yizi-themes@https://codeload.github.com/laoduu/DeepSeek-Harness-yizi-themes/tar.gz/3dd64aad10a9da4f7a30a35718184b626c5d9bfe
 compatibility:
   dsh: 0.1.0-rc.8
   platform:
@@ -33,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/60c211626eb931f76bbb3f46edc1fc8116b69e4c/assets/dsh-yizi-themes.png
   - https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/377676424e0e45f919ab5e8ee54cb1ab0f96da73/assets/dsh-yizi-themes.png
   - https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/8964dc67fd77447d450afafc134c8d7421ac6735/assets/dsh-yizi-themes.png
+listScreenshot: https://raw.githubusercontent.com/laoduu/DeepSeek-Harness-yizi-themes/3dd64aad10a9da4f7a30a35718184b626c5d9bfe/assets/dsh-yizi-themes.png
 review:
   compatibility: verified
   preview: verified
@@ -49,13 +50,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 9952bff98664368b898c7612bc0ea1e8fd0d263e
-    packageVersion: 0.4.0
+    commit: 3dd64aad10a9da4f7a30a35718184b626c5d9bfe
+    packageVersion: 0.5.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.8
     mode: static
     result: unknown
-    checkedAt: 2026-08-28T09:43:14.610Z
+    checkedAt: 2026-10-13T01:17:09.876Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -64,7 +65,7 @@ license:
   commercialUse: true
 featuredRank: 83
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-28T09:43:14.735Z
-metadataUpdatedAt: 2026-08-28T09:43:14.735Z
+releaseUpdatedAt: 2026-10-13T01:17:10.539Z
+metadataUpdatedAt: 2026-10-13T01:17:10.539Z
 starsUpdatedAt: 2026-09-09T21:39:26.544Z
-updatedAt: 2026-09-09T21:39:26.544Z
+updatedAt: 2026-10-13T01:17:10.539Z

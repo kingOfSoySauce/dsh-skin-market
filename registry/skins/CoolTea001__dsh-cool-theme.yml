@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CoolTea001/dsh-cool-theme#3bb25448a267735124bbe16fe50d5de23d6573cf
-  version: 0.6.1
-  commit: 3bb25448a267735124bbe16fe50d5de23d6573cf
+  target: github:CoolTea001/dsh-cool-theme#976ab36cb9f15096fc63e1c3470fe5c2ab7fc73d
+  version: 0.7.0
+  commit: 976ab36cb9f15096fc63e1c3470fe5c2ab7fc73d
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-cool-theme
-    packageVersion: 0.6.1
-    integrity: sha512-ec4yWlo2yrnsE3jtiryReF6t8upIobhtvYU6W/mhCiYafNFngVO4iSkrA2z2ts0L839KRuoM82r/MNZCIblwyg==
+    packageVersion: 0.7.0
+    integrity: sha512-1dNi86XRMZEk1W+jIPekUjGOWJwUSyKVIxAB1p3716GO/HDOECVGz6Vm19foxQmR28UTiY1siBc9tJpAPkekKw==
   npm:
     name: dsh-cool-theme
-    version: 0.6.1
-    integrity: sha512-ec4yWlo2yrnsE3jtiryReF6t8upIobhtvYU6W/mhCiYafNFngVO4iSkrA2z2ts0L839KRuoM82r/MNZCIblwyg==
+    version: 0.7.0
+    integrity: sha512-1dNi86XRMZEk1W+jIPekUjGOWJwUSyKVIxAB1p3716GO/HDOECVGz6Vm19foxQmR28UTiY1siBc9tJpAPkekKw==
     repository: https://github.com/CoolTea001/dsh-cool-theme
-    gitHead: 3bb25448a267735124bbe16fe50d5de23d6573cf
+    gitHead: 976ab36cb9f15096fc63e1c3470fe5c2ab7fc73d
 compatibility:
   dsh: unverified
   platform:
@@ -54,19 +54,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 3bb25448a267735124bbe16fe50d5de23d6573cf
-    packageVersion: 0.6.1
+    commit: 976ab36cb9f15096fc63e1c3470fe5c2ab7fc73d
+    packageVersion: 0.7.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-19T21:25:42.390Z
+    checkedAt: 2026-10-13T01:17:08.118Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1056
-starsSnapshot: 3
-releaseUpdatedAt: 2026-09-19T21:25:43.657Z
-metadataUpdatedAt: 2026-09-19T21:25:43.657Z
-starsUpdatedAt: 2026-09-28T23:50:36.450Z
-updatedAt: 2026-09-28T23:50:36.450Z
+starsSnapshot: 4
+releaseUpdatedAt: 2026-10-13T01:17:10.911Z
+metadataUpdatedAt: 2026-10-13T01:17:10.911Z
+starsUpdatedAt: 2026-10-13T01:17:10.911Z
+updatedAt: 2026-10-13T01:17:10.911Z
