@@ -15,9 +15,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:Sutera-Diffusus/dsh-whale-musume#4e01724e29feaabd62cd9feef687d79e8b348c04
+  target: github:Sutera-Diffusus/dsh-whale-musume#4b493f9f8be47c616cfde1543b2a6f3c3f182ed6
   version: 2.2.1
-  commit: 4e01724e29feaabd62cd9feef687d79e8b348c04
+  commit: 4b493f9f8be47c616cfde1543b2a6f3c3f182ed6
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -43,20 +43,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 4e01724e29feaabd62cd9feef687d79e8b348c04
+    commit: 4b493f9f8be47c616cfde1543b2a6f3c3f182ed6
     packageVersion: 2.2.1
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-13T01:16:11.110Z
+    checkedAt: 2026-10-13T23:16:55.622Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1033
-starsSnapshot: 121
-releaseUpdatedAt: 2026-10-13T01:16:14.695Z
-metadataUpdatedAt: 2026-10-13T01:16:14.695Z
-starsUpdatedAt: 2026-10-13T01:16:14.695Z
-updatedAt: 2026-10-13T01:16:14.695Z
+starsSnapshot: 124
+releaseUpdatedAt: 2026-10-13T23:16:57.258Z
+metadataUpdatedAt: 2026-10-13T23:16:57.258Z
+starsUpdatedAt: 2026-10-13T23:16:57.258Z
+updatedAt: 2026-10-13T23:16:57.258Z

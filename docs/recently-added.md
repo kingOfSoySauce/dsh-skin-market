@@ -350,6 +350,62 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:jiangnanquan.dsh-ux -->
+### 2026-10-13 · dsh-ux
+
+[jiangnanquan/dsh-ux](https://github.com/jiangnanquan/dsh-ux)：DSH web 界面增强：Solarized 浅色主题 + Maple Mono 字体、紧凑对话布局、思考/工具链折叠胶囊、官方余额 + 本轮成本 + 用量图表
+
+- 版本：`1.4.0`
+- 固定 commit：`71d243e1c63c49a8a5ab98858a438206c127f777`
+
+<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
+### 2026-10-13 · dsh-kimino-theme
+
+[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
+
+- 版本：`68.1.0`
+- 固定 commit：`5510c44b0a5c3d7fd75e83d0ae7208077f77065e`
+
+<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
+### 2026-10-13 · dsh-catppuccin
+
+[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)：DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
+
+- 版本：`0.6.2`
+- 固定 commit：`279b9d1a4da7005390507537d38913a0ab513689`
+
+<!-- dsh-auto-entry:sutera-diffusus.dsh-whale-musume -->
+### 2026-10-13 · dsh-whale-musume
+
+[Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume)：为 DeepSeek Harness 打造的桌面看板娘插件。 一只会陪你写代码的鲸鱼娘：待机安静陪伴，工作开始就抱起笔记本陪你干活； 可以摸头养成、解锁成就，也可以拖着她到处走。所有资源本地运行，无遥测、无外部请求。
+
+- 版本：`2.2.1`
+- 固定 commit：`4b493f9f8be47c616cfde1543b2a6f3c3f182ed6`
+
+<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
+### 2026-10-13 · dsh-dream-skin
+
+[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
+
+- 版本：`10.14.2`
+- 固定 commit：`0956dfcdcfbd28e632b4a79c27e3ae54ad97e39e`
+
+<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
+### 2026-10-13 · dsh-wallpaper-engine
+
+[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
+
+- 版本：`1.3.2`
+- 固定 commit：`c65821172eecfe5739b28d5f30261f0ef9e679ed`
+
+<!-- dsh-auto-entry:king-of-soy-sauce.liang-intensity -->
+### 2026-10-13 · 滑动变祖
+
+[kingOfSoySauce/dsh-liang-skin](https://github.com/kingOfSoySauce/dsh-liang-skin)：优化插件大小，大幅提高安装速度，去除多余文件
+
+- 版本：`0.1.10`
+- 固定 commit：`a25d4c83608224dfa1c941f4ab293ede4ee338be`
+
 <!-- dsh-auto-entry:cdxdnrf.wishadel-theme -->
 ### 2026-10-13 · wishadel-theme
 
@@ -398,14 +454,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.1.22`
 - 固定 commit：`8e62aefbb7ef4adca46c0d8cd56d9c353f0d2164`
 
-<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
-### 2026-10-13 · dsh-kimino-theme
-
-[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
-
-- 版本：`68.1.0`
-- 固定 commit：`367c5e6887511b8bf45a264f7fff18321e6e8189`
-
 <!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
 ### 2026-10-13 · dsh-bloom-theme
 
@@ -413,38 +461,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.17.6`
 - 固定 commit：`1e0e74cbc40bbc9e578f6dc8ebf393c8563a9949`
-
-<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
-### 2026-10-13 · dsh-catppuccin
-
-[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)：DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
-
-- 版本：`0.6.2-beta.2`
-- 固定 commit：`b50f73d7c495ca727095782a347adb491e258ca9`
-
-<!-- dsh-auto-entry:sutera-diffusus.dsh-whale-musume -->
-### 2026-10-13 · dsh-whale-musume
-
-[Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume)：为 DeepSeek Harness 打造的桌面看板娘插件。 一只会陪你写代码的鲸鱼娘：待机安静陪伴，工作开始就抱起笔记本陪你干活； 可以摸头养成、解锁成就，也可以拖着她到处走。所有资源本地运行，无遥测、无外部请求。
-
-- 版本：`2.2.1`
-- 固定 commit：`4e01724e29feaabd62cd9feef687d79e8b348c04`
-
-<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
-### 2026-10-13 · dsh-dream-skin
-
-[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
-
-- 版本：`10.12.1`
-- 固定 commit：`86761e4106874f3c0646c74f95a1a2d252c4b9ce`
-
-<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
-### 2026-10-13 · dsh-wallpaper-engine
-
-[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)：一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
-
-- 版本：`1.3.2`
-- 固定 commit：`0e7c806d7d3013597db909017f7d57bedd0e5a4a`
 
 <!-- dsh-auto-entry:lorisyounger.dsh.vpet.skin -->
 ### 2026-10-11 · VPet
@@ -654,14 +670,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`1.0.0`
 - 固定 commit：`217a5cbb6034917c0176f5bc0c6843855e9a7309`
 
-<!-- dsh-auto-entry:king-of-soy-sauce.liang-intensity -->
-### 2026-10-08 · 滑动变祖
-
-[kingOfSoySauce/dsh-liang-skin](https://github.com/kingOfSoySauce/dsh-liang-skin)：优化插件大小，大幅提高安装速度，去除多余文件
-
-- 版本：`0.1.9`
-- 固定 commit：`9a0a430fdc402588d815ffaf7713577fe9946335`
-
 <!-- dsh-auto-entry:xkxkiscoder.dsh.ui.zzz.sunna -->
 ### 2026-10-06 · 千夏 · 绝区零外观主题
 
@@ -741,14 +749,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`2.0.3`
 - 固定 commit：`635ac827bfea03795339d873856d532cd94d7d2c`
-
-<!-- dsh-auto-entry:jiangnanquan.dsh-ux -->
-### 2026-10-02 · dsh-ux
-
-[jiangnanquan/dsh-ux](https://github.com/jiangnanquan/dsh-ux)：DSH web 界面增强：Solarized 浅色主题 + Maple Mono 字体、紧凑对话布局、思考/工具链折叠胶囊、官方余额 + 本轮成本 + 用量图表
-
-- 版本：`1.1.0`
-- 固定 commit：`7ba6b433684f318a939facad78fa6cd7c6e241ea`
 
 <!-- dsh-auto-entry:lan-tina-ws.dsh-gui-customization -->
 ### 2026-10-02 · dsh-gui-customization
