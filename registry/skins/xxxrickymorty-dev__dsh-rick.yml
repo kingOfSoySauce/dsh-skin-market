@@ -14,9 +14,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:xxxrickymorty-dev/dsh-rick#0d17edfc9545cb456c9bde912e9b4fdddeabc4b3
-  version: 0.1.0
-  commit: 0d17edfc9545cb456c9bde912e9b4fdddeabc4b3
+  target: github:xxxrickymorty-dev/dsh-rick#91105ecd4d9f476cca06dfc7db769b2871f5c450
+  version: 0.2.0
+  commit: 91105ecd4d9f476cca06dfc7db769b2871f5c450
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -26,34 +26,36 @@ compatibility:
     - web
 screenshots:
   - https://opengraph.githubassets.com/placeholder/xxxrickymorty-dev.dsh-rick
+listScreenshot: https://raw.githubusercontent.com/xxxrickymorty-dev/dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/docs/preview.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: repository-card
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0 未被本次检测范围 >=0.2.0-rc.1 <0.3.0-0 完全覆盖（固定版本 91105ecd4d9f476cca06dfc7db769b2871f5c450）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 0d17edfc9545cb456c9bde912e9b4fdddeabc4b3
-    packageVersion: 0.1.0
+    commit: 91105ecd4d9f476cca06dfc7db769b2871f5c450
+    packageVersion: 0.2.0
     scannerVersion: static-v2
-    dshVersion: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
+    dshVersion: ">=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:35:21.351Z
+    checkedAt: 2026-10-14T22:17:32.092Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 196
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-23T05:35:21.430Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+releaseUpdatedAt: 2026-10-14T22:17:33.631Z
+metadataUpdatedAt: 2026-10-14T22:17:33.631Z
 starsUpdatedAt: 2026-08-18 15:46:32.876000+00:00
-updatedAt: 2026-09-08T09:45:47.382Z
+updatedAt: 2026-10-14T22:17:33.631Z
