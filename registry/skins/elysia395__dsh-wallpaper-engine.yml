@@ -17,12 +17,18 @@ modes:
   - light
   - dark
 install:
-  target: github:elysia395/dsh-wallpaper-engine#6018986ee31b48b42ce12686473a399324d6b241
-  version: 1.3.2
-  commit: 6018986ee31b48b42ce12686473a399324d6b241
+  target: github:elysia395/dsh-wallpaper-engine#01fbb8b8e66fd7e405e9c878d18dbd456187f111
+  version: 1.3.3
+  commit: 01fbb8b8e66fd7e405e9c878d18dbd456187f111
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepare
+  npm:
+    name: dsh-plugin-wallpaper-engine
+    version: 1.3.3
+    integrity: sha512-HdG+qaNqNV8R9357ehfmBi6jNCjaEgeZsWvIMidItT/Ba+O1LWVonEUVdQHBHdtrew4zlCw6sL4hQaqzEBhFgg==
+    repository: https://github.com/elysia395/dsh-wallpaper-engine
+    gitHead: 01fbb8b8e66fd7e405e9c878d18dbd456187f111
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
@@ -52,15 +58,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.1.5-rc.1 完全覆盖（固定版本 6018986ee31b48b42ce12686473a399324d6b241）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.1.5-rc.1 完全覆盖（固定版本 01fbb8b8e66fd7e405e9c878d18dbd456187f111）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 6018986ee31b48b42ce12686473a399324d6b241
-    packageVersion: 1.3.2
+    commit: 01fbb8b8e66fd7e405e9c878d18dbd456187f111
+    packageVersion: 1.3.3
     scannerVersion: static-v2
     dshVersion: ">=0.1.5-rc.1"
     mode: static
     result: unknown
-    checkedAt: 2026-10-14T22:13:19.886Z
+    checkedAt: 2026-10-15T22:08:01.784Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -68,8 +74,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1001
-starsSnapshot: 1270
-releaseUpdatedAt: 2026-10-14T22:13:24.356Z
-metadataUpdatedAt: 2026-10-14T22:13:24.356Z
-starsUpdatedAt: 2026-10-14T22:13:24.356Z
-updatedAt: 2026-10-14T22:13:24.356Z
+starsSnapshot: 1344
+releaseUpdatedAt: 2026-10-15T22:08:05.765Z
+metadataUpdatedAt: 2026-10-15T22:08:05.765Z
+starsUpdatedAt: 2026-10-15T22:08:05.765Z
+updatedAt: 2026-10-15T22:08:05.765Z

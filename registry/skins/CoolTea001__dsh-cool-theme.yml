@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CoolTea001/dsh-cool-theme#976ab36cb9f15096fc63e1c3470fe5c2ab7fc73d
-  version: 0.7.0
-  commit: 976ab36cb9f15096fc63e1c3470fe5c2ab7fc73d
+  target: github:CoolTea001/dsh-cool-theme#b79e9f80c637de26f1ab9355f69c2cd593899490
+  version: 0.8.0
+  commit: b79e9f80c637de26f1ab9355f69c2cd593899490
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-cool-theme
-    packageVersion: 0.7.0
-    integrity: sha512-1dNi86XRMZEk1W+jIPekUjGOWJwUSyKVIxAB1p3716GO/HDOECVGz6Vm19foxQmR28UTiY1siBc9tJpAPkekKw==
+    packageVersion: 0.8.0
+    integrity: sha512-kDEBHwzaJceHDcc7oYbdyc7AaqZnON8zEb1gIosRGbC0jay1TFe0e+h5kUPYDT0d8MoL9soYwfK1nl0Qpnc24w==
   npm:
     name: dsh-cool-theme
-    version: 0.7.0
-    integrity: sha512-1dNi86XRMZEk1W+jIPekUjGOWJwUSyKVIxAB1p3716GO/HDOECVGz6Vm19foxQmR28UTiY1siBc9tJpAPkekKw==
+    version: 0.8.0
+    integrity: sha512-kDEBHwzaJceHDcc7oYbdyc7AaqZnON8zEb1gIosRGbC0jay1TFe0e+h5kUPYDT0d8MoL9soYwfK1nl0Qpnc24w==
     repository: https://github.com/CoolTea001/dsh-cool-theme
-    gitHead: 976ab36cb9f15096fc63e1c3470fe5c2ab7fc73d
+    gitHead: b79e9f80c637de26f1ab9355f69c2cd593899490
 compatibility:
   dsh: unverified
   platform:
@@ -49,24 +49,25 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 976ab36cb9f15096fc63e1c3470fe5c2ab7fc73d
-    packageVersion: 0.7.0
+    commit: b79e9f80c637de26f1ab9355f69c2cd593899490
+    packageVersion: 0.8.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-13T01:17:08.118Z
+    checkedAt: 2026-10-15T22:08:44.484Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1056
 starsSnapshot: 5
-releaseUpdatedAt: 2026-10-13T01:17:10.911Z
-metadataUpdatedAt: 2026-10-13T01:17:10.911Z
+releaseUpdatedAt: 2026-10-15T22:08:45.928Z
+metadataUpdatedAt: 2026-10-15T22:08:45.928Z
 starsUpdatedAt: 2026-10-13T23:17:36.365Z
-updatedAt: 2026-10-13T23:17:36.365Z
+updatedAt: 2026-10-15T22:08:45.928Z
