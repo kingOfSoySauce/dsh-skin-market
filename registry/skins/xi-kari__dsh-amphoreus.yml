@@ -21,8 +21,11 @@ install:
   version: 0.4.0
   commit: 70d7b7afe8644239e8fb3927ec06da5a5b34158e
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepare
+    mode: managed
+    registry: npm
+    packageName: dsh-amphoreus
+    packageVersion: 0.4.0
+    integrity: sha512-b8AONwceS4cg675CuwDbxmEbDToZxHkkdim033VmBEFsCqgOeakspg3ah9/f9SSaKHN99I9PZ5IGogwkpTLokQ==
   allowBuild: dsh-amphoreus@https://codeload.github.com/xi-kari/dsh-amphoreus/tar.gz/70d7b7afe8644239e8fb3927ec06da5a5b34158e
   npm:
     name: dsh-amphoreus
@@ -70,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 1083
 starsSnapshot: 4
-releaseUpdatedAt: 2026-09-21T22:35:53.856Z
+releaseUpdatedAt: 2026-10-18T09:46:07.412Z
 metadataUpdatedAt: 2026-09-20T21:26:46.499Z
 starsUpdatedAt: 2026-09-26T21:57:19.139Z
-updatedAt: 2026-09-26T21:57:19.139Z
+updatedAt: 2026-10-18T09:46:07.412Z

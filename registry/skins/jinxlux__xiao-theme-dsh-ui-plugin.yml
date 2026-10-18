@@ -20,8 +20,11 @@ install:
   version: 0.13.2
   commit: d14085a6439e824e791909e6a7a10a8854cab4e3
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: xiao-ui-theme-ts
+    packageVersion: 0.13.2
+    integrity: sha512-BexaeyVTJgYPSMm+uAcHddJmazMjDuezvaUN3BF0ZRMHTu6eVDqvq2CwspeAqtI0n7r4zjsxuR8xZUJUECSEVQ==
   npm:
     name: xiao-ui-theme-ts
     version: 0.13.2
@@ -66,7 +69,7 @@ license:
   commercialUse: true
 featuredRank: 1046
 starsSnapshot: 3
-releaseUpdatedAt: 2026-10-03T22:08:23.305Z
+releaseUpdatedAt: 2026-10-18T09:46:12.654Z
 metadataUpdatedAt: 2026-10-03T22:08:23.305Z
 starsUpdatedAt: 2026-10-08T23:45:34.584Z
-updatedAt: 2026-10-08T23:45:34.584Z
+updatedAt: 2026-10-18T09:46:12.654Z

@@ -16,19 +16,19 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#8e62aefbb7ef4adca46c0d8cd56d9c353f0d2164
-  version: 0.1.22
-  commit: 8e62aefbb7ef4adca46c0d8cd56d9c353f0d2164
+  target: github:TQSY114514/dsh-ui-appearance#e64243af0c21caa5afa99264cb2c6198f16a3d68
+  version: 0.1.23
+  commit: e64243af0c21caa5afa99264cb2c6198f16a3d68
   desktop:
     mode: manual-only
     reason: npm-version-mismatch
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/8e62aefbb7ef4adca46c0d8cd56d9c353f0d2164
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/e64243af0c21caa5afa99264cb2c6198f16a3d68
   npm:
     name: dsh-ui-appearance
-    version: 0.1.22
-    integrity: sha512-6rvqJ+4IjIPWS2Up1GIq6cNx14pNSrvyGnDfy4YW6f9hrPvUyM8J/gRO1MAQ1RwMHfhpcDQxdLsY59+47p9agA==
+    version: 0.1.23
+    integrity: sha512-CEniSKkCsE4JU7Cb0ZtGw1gQe9Wf0KoJEV4sri3lEofwtddaH2ZGLJh+EspGyciSaIKWuIx3ulQGrAOADTVHpQ==
     repository: https://github.com/TQSY114514/dsh-ui-appearance
-    gitHead: 8e62aefbb7ef4adca46c0d8cd56d9c353f0d2164
+    gitHead: e64243af0c21caa5afa99264cb2c6198f16a3d68
 compatibility:
   dsh: unverified
   platform:
@@ -60,12 +60,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 8e62aefbb7ef4adca46c0d8cd56d9c353f0d2164
-    packageVersion: 0.1.22
+    commit: e64243af0c21caa5afa99264cb2c6198f16a3d68
+    packageVersion: 0.1.23
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-10-11T22:48:11.814Z
+    checkedAt: 2026-10-18T09:45:23.167Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -73,8 +73,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 36
-starsSnapshot: 22
-releaseUpdatedAt: 2026-10-13T01:16:30.556Z
-metadataUpdatedAt: 2026-10-11T22:48:15.085Z
-starsUpdatedAt: 2026-10-11T22:48:15.085Z
-updatedAt: 2026-10-13T01:16:30.556Z
+starsSnapshot: 23
+releaseUpdatedAt: 2026-10-18T09:45:26.090Z
+metadataUpdatedAt: 2026-10-18T09:45:26.090Z
+starsUpdatedAt: 2026-10-18T09:45:26.090Z
+updatedAt: 2026-10-18T09:45:26.090Z

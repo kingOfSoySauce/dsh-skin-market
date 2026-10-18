@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lsaa4/dsh-custom-ui#786b70a5d1133c9daad1009849e63d32fc4981f0
+  target: github:lsaa4/dsh-custom-ui#0ebc6ed82fe436602c64a894f4a990b35bcab749
   version: 0.1.1
-  commit: 786b70a5d1133c9daad1009849e63d32fc4981f0
+  commit: 0ebc6ed82fe436602c64a894f4a990b35bcab749
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -30,6 +30,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/lsaa4/dsh-custom-ui/786b70a5d1133c9daad1009849e63d32fc4981f0/docs/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/lsaa4/dsh-custom-ui/786b70a5d1133c9daad1009849e63d32fc4981f0/docs/screenshot.png
 review:
   compatibility: verified
   preview: verified
@@ -44,21 +45,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 786b70a5d1133c9daad1009849e63d32fc4981f0
+    commit: 0ebc6ed82fe436602c64a894f4a990b35bcab749
     packageVersion: 0.1.1
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:19.930Z
+    checkedAt: 2026-10-18T09:45:56.170Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1039
 starsSnapshot: 5
-releaseUpdatedAt: 2026-09-07T21:58:20.010Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-10-18T09:45:56.681Z
+metadataUpdatedAt: 2026-10-18T09:45:56.681Z
 starsUpdatedAt: 2026-10-08T23:45:23.619Z
-updatedAt: 2026-10-08T23:45:23.619Z
-listScreenshot: https://raw.githubusercontent.com/lsaa4/dsh-custom-ui/786b70a5d1133c9daad1009849e63d32fc4981f0/docs/screenshot.png
+updatedAt: 2026-10-18T09:45:56.681Z

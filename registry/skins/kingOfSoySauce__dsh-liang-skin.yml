@@ -16,21 +16,21 @@ tags:
 modes:
   - dark
 install:
-  target: github:kingOfSoySauce/dsh-liang-skin#a25d4c83608224dfa1c941f4ab293ede4ee338be
-  version: 0.1.10
-  commit: a25d4c83608224dfa1c941f4ab293ede4ee338be
+  target: github:kingOfSoySauce/dsh-liang-skin#7d1d3742e58ccdedca2bab6e89539ddd98c442cc
+  version: 0.1.11
+  commit: 7d1d3742e58ccdedca2bab6e89539ddd98c442cc
   desktop:
     mode: managed
     registry: npm
     packageName: "@leon___/dsh-client-liang-intensity-skin"
-    packageVersion: 0.1.10
-    integrity: sha512-jCNfWQ+/rIndHqIqcW/UgWDQlCtzjBj8xu4qE5zqc+B5alJo2ZtBrHQNEYBDOarLNMs401OiMlNx9aUlHdRneQ==
+    packageVersion: 0.1.11
+    integrity: sha512-34YEMEn0y4bGpQGlWzQDS3HySlN2vKM8T1iB2dn6c4nEbZ6Jtk6t0Q4M+hF6MmCKxotU7tdU8bGaDHm8Ly0O0w==
   npm:
     name: "@leon___/dsh-client-liang-intensity-skin"
-    version: 0.1.10
-    integrity: sha512-jCNfWQ+/rIndHqIqcW/UgWDQlCtzjBj8xu4qE5zqc+B5alJo2ZtBrHQNEYBDOarLNMs401OiMlNx9aUlHdRneQ==
+    version: 0.1.11
+    integrity: sha512-34YEMEn0y4bGpQGlWzQDS3HySlN2vKM8T1iB2dn6c4nEbZ6Jtk6t0Q4M+hF6MmCKxotU7tdU8bGaDHm8Ly0O0w==
     repository: https://github.com/kingOfSoySauce/dsh-liang-skin
-    gitHead: a25d4c83608224dfa1c941f4ab293ede4ee338be
+    gitHead: 7d1d3742e58ccdedca2bab6e89539ddd98c442cc
 compatibility:
   dsh: ^0.1.0-rc.6 || 0.2.0-rc.2
   platform:
@@ -51,23 +51,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 || 0.2.0-rc.2 未被本次检测范围 0.1.0-rc.6 完全覆盖（固定版本 a25d4c83608224dfa1c941f4ab293ede4ee338be）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: a25d4c83608224dfa1c941f4ab293ede4ee338be
-    packageVersion: 0.1.10
+    commit: 7d1d3742e58ccdedca2bab6e89539ddd98c442cc
+    packageVersion: 0.1.11
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-13T23:16:52.402Z
+    checkedAt: 2026-10-18T09:45:04.158Z
     findings: []
 license:
   code: NOASSERTION
   commercialUse: false
   notice: 仓库当前未声明许可证；安装和再分发前请向作者确认授权。
 featuredRank: 1
-starsSnapshot: 242
-releaseUpdatedAt: 2026-10-13T23:16:53.152Z
-metadataUpdatedAt: 2026-10-13T23:16:53.152Z
-starsUpdatedAt: 2026-10-14T22:13:22.015Z
-updatedAt: 2026-10-14T22:13:22.015Z
+starsSnapshot: 248
+releaseUpdatedAt: 2026-10-18T09:45:04.923Z
+metadataUpdatedAt: 2026-10-18T09:45:04.923Z
+starsUpdatedAt: 2026-10-18T09:45:04.923Z
+updatedAt: 2026-10-18T09:45:04.923Z

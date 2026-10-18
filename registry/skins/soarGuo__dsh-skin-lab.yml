@@ -21,8 +21,11 @@ install:
   version: 1.0.4
   commit: ad32833d069666a19f534715afd2bcd63bb3a80e
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepare
+    mode: managed
+    registry: npm
+    packageName: dsh-skin-lab
+    packageVersion: 1.0.4
+    integrity: sha512-oWshicQlWDcTFAcQsXRu/3kpGnyDwv+12m6iyHIgdApwh4glr7MgIOpaKlOsgPz919A1GcKdUpudkIY7B/AtZg==
   npm:
     name: dsh-skin-lab
     version: 1.0.4
@@ -65,7 +68,7 @@ license:
   commercialUse: true
 featuredRank: 1098
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-28T23:52:16.856Z
+releaseUpdatedAt: 2026-10-18T09:48:54.639Z
 metadataUpdatedAt: 2026-09-28T23:52:16.856Z
 starsUpdatedAt: 2026-09-07T21:59:02.581Z
-updatedAt: 2026-09-28T23:52:16.856Z
+updatedAt: 2026-10-18T09:48:54.639Z

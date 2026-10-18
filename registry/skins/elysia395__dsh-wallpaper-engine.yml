@@ -21,8 +21,11 @@ install:
   version: 1.3.3
   commit: 01fbb8b8e66fd7e405e9c878d18dbd456187f111
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepare
+    mode: managed
+    registry: npm
+    packageName: dsh-plugin-wallpaper-engine
+    packageVersion: 1.3.3
+    integrity: sha512-HdG+qaNqNV8R9357ehfmBi6jNCjaEgeZsWvIMidItT/Ba+O1LWVonEUVdQHBHdtrew4zlCw6sL4hQaqzEBhFgg==
   npm:
     name: dsh-plugin-wallpaper-engine
     version: 1.3.3
@@ -74,8 +77,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1001
-starsSnapshot: 1344
-releaseUpdatedAt: 2026-10-15T22:08:05.765Z
+starsSnapshot: 1520
+releaseUpdatedAt: 2026-10-18T09:45:01.773Z
 metadataUpdatedAt: 2026-10-15T22:08:05.765Z
-starsUpdatedAt: 2026-10-15T22:08:05.765Z
-updatedAt: 2026-10-15T22:08:05.765Z
+starsUpdatedAt: 2026-10-18T09:45:01.571Z
+updatedAt: 2026-10-18T09:45:01.773Z

@@ -18,18 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Anionex/dsh-eye-care#eb3432dc92d59f5f4056a9488f18071806f71ea0
-  version: 0.1.2
-  commit: eb3432dc92d59f5f4056a9488f18071806f71ea0
+  target: github:Anionex/dsh-eye-care#e242e3a836c64b9ed0e9411abd96b6d34478d2bf
+  version: 0.1.3
+  commit: e242e3a836c64b9ed0e9411abd96b6d34478d2bf
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepack
+    mode: managed
+    registry: npm
+    packageName: "@anionex/dsh-eye-care"
+    packageVersion: 0.1.3
+    integrity: sha512-Z4+XzQnt6idDgW/m7vbg7WkScKmF1eVU+pRt4WowVcE8uoVm+6BRJBeDdk8a9qKZ7DU9Fh0ScQ07yaOZhz2grg==
   npm:
     name: "@anionex/dsh-eye-care"
-    version: 0.1.2
-    integrity: sha512-Jq5BnzD0kyakHMDcisls3Nbi7RoEL6QpxUbxYZSEVtEDen7lH6si8xcureI/PjHjcUITRWWTA02vKDxId7ge4Q==
+    version: 0.1.3
+    integrity: sha512-Z4+XzQnt6idDgW/m7vbg7WkScKmF1eVU+pRt4WowVcE8uoVm+6BRJBeDdk8a9qKZ7DU9Fh0ScQ07yaOZhz2grg==
     repository: https://github.com/Anionex/dsh-eye-care
-    gitHead: eb3432dc92d59f5f4056a9488f18071806f71ea0
+    gitHead: e242e3a836c64b9ed0e9411abd96b6d34478d2bf
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -52,20 +55,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: eb3432dc92d59f5f4056a9488f18071806f71ea0
-    packageVersion: 0.1.2
+    commit: e242e3a836c64b9ed0e9411abd96b6d34478d2bf
+    packageVersion: 0.1.3
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.6 || 0.2.0-rc.2
+    dshVersion: ^0.1.0-rc.6 || 0.2.0-rc.2 || 0.2.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-10-02T10:30:08.164Z
+    checkedAt: 2026-10-18T09:46:23.321Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 57
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-02T10:30:09.020Z
-metadataUpdatedAt: 2026-10-02T10:30:09.020Z
+releaseUpdatedAt: 2026-10-18T09:46:24.108Z
+metadataUpdatedAt: 2026-10-18T09:46:24.108Z
 starsUpdatedAt: 2026-09-18T21:37:28.559Z
-updatedAt: 2026-10-02T10:30:09.020Z
+updatedAt: 2026-10-18T09:46:24.108Z

@@ -24,7 +24,7 @@ install:
     registry: npm
     packageName: dsh-dracula-theme
     packageVersion: 1.1.0
-    integrity: sha512-R2biqmAXf/reh7AvQPtX2ixx0gfqDAw+yoMAofpwdNAjmIRJZ8uZrQ3tQq9vpll5suiRRckemBP1ujJcVXA1aUw==
+    integrity: sha512-R2biqmAXf/reh7AvQPtX2ixx0gfqDAw+yoMAofpwdNAjmIRZ8uZrQ3tQq9vpll5suiRRckemBP1ujJcVXA1aUw==
   npm:
     name: dsh-dracula-theme
     version: 1.1.0
@@ -66,7 +66,7 @@ license:
   commercialUse: true
 featuredRank: 186
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-31T23:12:03.606Z
+releaseUpdatedAt: 2026-10-18T09:46:40.073Z
 metadataUpdatedAt: 2026-09-08T21:47:42.220Z
 starsUpdatedAt: 2026-09-09T21:39:38.096Z
-updatedAt: 2026-09-09T21:39:38.096Z
+updatedAt: 2026-10-18T09:46:40.073Z

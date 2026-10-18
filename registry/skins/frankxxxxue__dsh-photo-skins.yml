@@ -20,8 +20,11 @@ install:
   version: 0.2.0
   commit: 106f3dd033f8dc3bfc91b848af473844e70c747f
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: dsh-photo-skins
+    packageVersion: 0.2.0
+    integrity: sha512-ZfNP+wyruSHeaYOED/tMnbNUcAKXNmJZc6O2oDTNSVVajhbpsQfNYlbAJZ98wsG/kYKMGjCsjUprPmoZLyGVpg==
   npm:
     name: dsh-photo-skins
     version: 0.2.0
@@ -64,7 +67,7 @@ license:
   commercialUse: true
 featuredRank: 1006
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-31T23:12:08.679Z
+releaseUpdatedAt: 2026-10-18T09:47:08.809Z
 metadataUpdatedAt: 2026-09-08T09:45:47.382Z
 starsUpdatedAt: 2026-09-18T21:37:46.488Z
-updatedAt: 2026-09-18T21:37:46.488Z
+updatedAt: 2026-10-18T09:47:08.809Z

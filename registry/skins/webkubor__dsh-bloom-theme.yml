@@ -20,8 +20,11 @@ install:
   version: 0.17.6
   commit: 1e0e74cbc40bbc9e578f6dc8ebf393c8563a9949
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: dsh-bloom-theme
+    packageVersion: 0.17.6
+    integrity: sha512-UaGA0YTOTlrAVbdvIPXjpzKaLqG2K7sYsMndUg7hnPf2rdSGxUzZArKZyPoOT4iUOAbD6UskEpXBKqhd+K9mMA==
   npm:
     name: dsh-bloom-theme
     version: 0.17.6
@@ -68,8 +71,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 193
-starsSnapshot: 107
-releaseUpdatedAt: 2026-10-13T01:16:24.898Z
+starsSnapshot: 102
+releaseUpdatedAt: 2026-10-18T09:45:08.330Z
 metadataUpdatedAt: 2026-10-13T01:16:24.898Z
-starsUpdatedAt: 2026-10-15T22:08:08.646Z
-updatedAt: 2026-10-15T22:08:08.646Z
+starsUpdatedAt: 2026-10-18T09:45:08.193Z
+updatedAt: 2026-10-18T09:45:08.330Z

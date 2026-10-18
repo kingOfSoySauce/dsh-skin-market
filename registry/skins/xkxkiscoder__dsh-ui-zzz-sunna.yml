@@ -18,8 +18,11 @@ install:
   version: 0.1.6
   commit: 5e98100379b9527df5928b797131734d724e614f
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepack
+    mode: managed
+    registry: npm
+    packageName: dsh-ui-zzz-sunna
+    packageVersion: 0.1.6
+    integrity: sha512-07xj2/4kiBV0cAcSRaRjiBc3DlBe0CIDTg2LECbKrBHB8kGnzhvxmnxBov6WwUvTvVhKQ5zdzvXvistDT0crMw==
   npm:
     name: dsh-ui-zzz-sunna
     version: 0.1.6
@@ -68,7 +71,7 @@ license:
   commercialUse: false
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-06T00:47:26.294Z
+releaseUpdatedAt: 2026-10-18T09:49:13.413Z
 metadataUpdatedAt: 2026-10-06T00:47:26.294Z
 starsUpdatedAt: 2026-10-05T06:03:46.430Z
-updatedAt: 2026-10-06T00:47:26.294Z
+updatedAt: 2026-10-18T09:49:13.413Z

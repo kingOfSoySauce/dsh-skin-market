@@ -21,8 +21,11 @@ install:
   version: 0.1.0
   commit: 586943c25e559409d202ab1e572d4f7f848eb7a6
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: dsh-ui-liteglass
+    packageVersion: 0.1.0
+    integrity: sha512-t3rkuvpB6qqiltvpuKXWw8hQJJme9NwI4u/suKMyFlCLqAW2gmJzH7Jw/6GP2KFcVlbGvbR8bIG4OAheJepWYg==
   npm:
     name: dsh-ui-liteglass
     version: 0.1.0
@@ -66,7 +69,7 @@ license:
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-08T21:48:34.192Z
+releaseUpdatedAt: 2026-10-18T09:47:31.347Z
 metadataUpdatedAt: 2026-09-08T21:48:34.192Z
 starsUpdatedAt: 2026-08-29T03:15:03.801Z
-updatedAt: 2026-09-08T21:48:34.192Z
+updatedAt: 2026-10-18T09:47:31.347Z

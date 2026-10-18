@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:ZJUZhiyuCai/dsh-ivory#e9b36c8db54bed72852847cf56dcf22f0943ce26
-  version: 0.2.14
-  commit: e9b36c8db54bed72852847cf56dcf22f0943ce26
+  target: github:ZJUZhiyuCai/dsh-ivory#abfc978aac45b6e8339f0489796433ccd4574eea
+  version: 0.2.15
+  commit: abfc978aac45b6e8339f0489796433ccd4574eea
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepack
@@ -49,22 +49,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 <0.2.0 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 || ^0.1.5-rc.1 || ^0.2.0-rc.2 完全覆盖（固定版本 e9b36c8db54bed72852847cf56dcf22f0943ce26）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 <0.2.0 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 || ^0.1.5-rc.1 || ^0.2.0-rc.2 || ^0.2.1-rc.1 完全覆盖（固定版本 abfc978aac45b6e8339f0489796433ccd4574eea）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: e9b36c8db54bed72852847cf56dcf22f0943ce26
-    packageVersion: 0.2.14
+    commit: abfc978aac45b6e8339f0489796433ccd4574eea
+    packageVersion: 0.2.15
     scannerVersion: static-v2
-    dshVersion: ">=0.1.2-rc.1 <0.3.0 || ^0.1.5-rc.1 || ^0.2.0-rc.2"
+    dshVersion: ">=0.1.2-rc.1 <0.3.0 || ^0.1.5-rc.1 || ^0.2.0-rc.2 || ^0.2.1-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-10-02T22:57:22.300Z
+    checkedAt: 2026-10-18T09:47:57.338Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 129
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-02T22:57:23.903Z
-metadataUpdatedAt: 2026-10-02T22:57:23.903Z
+releaseUpdatedAt: 2026-10-18T09:47:59.424Z
+metadataUpdatedAt: 2026-10-18T09:47:59.424Z
 starsUpdatedAt: 2026-10-08T23:46:25.353Z
-updatedAt: 2026-10-08T23:46:25.353Z
+updatedAt: 2026-10-18T09:47:59.424Z

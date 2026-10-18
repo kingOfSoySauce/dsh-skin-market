@@ -21,8 +21,11 @@ install:
   version: 0.5.1
   commit: d01383f8d82d3020607f16b62a8f6445df9f4978
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: "@eternalnight/dsh-theme"
+    packageVersion: 0.5.1
+    integrity: sha512-vhr2qCKOX8wBknuUN1cndldM0YZMFPCR3M4HFQqeFekFVvbbm0Ugkzl13JSp6OPVR0ZQvAU9CMbSCsejZgWGwA==
   npm:
     name: "@eternalnight/dsh-theme"
     version: 0.5.1
@@ -63,8 +66,8 @@ license:
   commercialUse: true
 featuredRank: 1043
 starsSnapshot: 3
-releaseUpdatedAt: 2026-09-08T21:47:36.726Z
+releaseUpdatedAt: 2026-10-18T09:46:11.172Z
 metadataUpdatedAt: 2026-09-08T09:44:04.508Z
 starsUpdatedAt: 2026-09-18T21:37:30.892Z
-updatedAt: 2026-09-18T21:37:30.892Z
+updatedAt: 2026-10-18T09:46:11.172Z
 listScreenshot: https://raw.githubusercontent.com/EternalNight996/dsh-theme/d01383f8d82d3020607f16b62a8f6445df9f4978/assets/screen/dsh-theme.gif

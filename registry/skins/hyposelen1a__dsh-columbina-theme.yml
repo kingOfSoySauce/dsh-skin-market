@@ -17,21 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:hyposelen1a/dsh-columbina-theme#2ccf33d427347f0dbf5004eb182f99182ee3c94e
-  version: 0.1.1
-  commit: 2ccf33d427347f0dbf5004eb182f99182ee3c94e
+  target: github:hyposelen1a/dsh-columbina-theme#91a2b9bc70a902fe8b8d998185bd6c1446975780
+  version: 0.2.1
+  commit: 91a2b9bc70a902fe8b8d998185bd6c1446975780
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-columbina-theme
-    packageVersion: 0.1.1
-    integrity: sha512-1ksigxLfP1MOI/gcK8W0CAr2lxfTIz3EUn8Ggi5fX2gCcV4wEV7/sOR6n3Co8Glg+lEBEMhGGlqv320W0muoIA==
+    packageVersion: 0.2.1
+    integrity: sha512-3OIHk387XKm6wbPFDliklldJ2IAXqdvskJmv+T5nQ5kG1aGJTAanDlRVap9Zwp60L17HbzaVhOXJ6hSrapca+g==
   npm:
     name: dsh-columbina-theme
-    version: 0.1.1
-    integrity: sha512-1ksigxLfP1MOI/gcK8W0CAr2lxfTIz3EUn8Ggi5fX2gCcV4wEV7/sOR6n3Co8Glg+lEBEMhGGlqv320W0muoIA==
+    version: 0.2.1
+    integrity: sha512-3OIHk387XKm6wbPFDliklldJ2IAXqdvskJmv+T5nQ5kG1aGJTAanDlRVap9Zwp60L17HbzaVhOXJ6hSrapca+g==
     repository: https://github.com/hyposelen1a/dsh-columbina-theme
-    gitHead: 2ccf33d427347f0dbf5004eb182f99182ee3c94e
+    gitHead: 91a2b9bc70a902fe8b8d998185bd6c1446975780
 compatibility:
   dsh: 0.1.0-rc.7
   platform:
@@ -41,34 +41,36 @@ screenshots:
   - https://raw.githubusercontent.com/hyposelen1a/dsh-columbina-theme/2ccf33d427347f0dbf5004eb182f99182ee3c94e/docs/screenshot-dark.png
   - https://raw.githubusercontent.com/hyposelen1a/dsh-columbina-theme/00b8e72e5d40bbaf62959e5a5bef5108beded9e0/docs/screenshot-light.png
   - https://raw.githubusercontent.com/hyposelen1a/dsh-columbina-theme/00b8e72e5d40bbaf62959e5a5bef5108beded9e0/docs/screenshot-dark.png
+listScreenshot: https://raw.githubusercontent.com/hyposelen1a/dsh-columbina-theme/91a2b9bc70a902fe8b8d998185bd6c1446975780/docs/screenshot-light.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.7 未被本次检测范围 ^0.2.0-rc.1 完全覆盖（固定版本 91a2b9bc70a902fe8b8d998185bd6c1446975780）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 2ccf33d427347f0dbf5004eb182f99182ee3c94e
-    packageVersion: 0.1.1
+    commit: 91a2b9bc70a902fe8b8d998185bd6c1446975780
+    packageVersion: 0.2.1
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.7
+    dshVersion: ^0.2.0-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:31:22.165Z
+    checkedAt: 2026-10-18T09:45:55.880Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 160
-starsSnapshot: 3
-releaseUpdatedAt: 2026-08-23T05:31:22.246Z
-metadataUpdatedAt: 2026-08-23T05:31:22.246Z
-starsUpdatedAt: 2026-10-15T22:08:59.519Z
-updatedAt: 2026-10-15T22:08:59.519Z
+starsSnapshot: 5
+releaseUpdatedAt: 2026-10-18T09:45:57.463Z
+metadataUpdatedAt: 2026-10-18T09:45:57.463Z
+starsUpdatedAt: 2026-10-18T09:45:57.463Z
+updatedAt: 2026-10-18T09:45:57.463Z

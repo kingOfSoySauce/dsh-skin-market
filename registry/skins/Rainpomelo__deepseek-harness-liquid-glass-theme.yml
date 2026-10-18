@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:Rainpomelo/deepseek-harness-liquid-glass-theme#635ac827bfea03795339d873856d532cd94d7d2c
+  target: github:Rainpomelo/deepseek-harness-liquid-glass-theme#b0bd504fb6074e6d202075f8db92ddba4e119cc8
   version: 2.0.3
-  commit: 635ac827bfea03795339d873856d532cd94d7d2c
+  commit: b0bd504fb6074e6d202075f8db92ddba4e119cc8
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -49,22 +49,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.5 未被本次检测范围 0.1.0-rc.5 完全覆盖（固定版本 635ac827bfea03795339d873856d532cd94d7d2c）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.5 未被本次检测范围 0.1.0-rc.5 完全覆盖（固定版本 b0bd504fb6074e6d202075f8db92ddba4e119cc8）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 635ac827bfea03795339d873856d532cd94d7d2c
+    commit: b0bd504fb6074e6d202075f8db92ddba4e119cc8
     packageVersion: 2.0.3
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-10-02T10:29:40.035Z
+    checkedAt: 2026-10-18T09:45:40.220Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 206
 starsSnapshot: 8
-releaseUpdatedAt: 2026-10-02T10:29:42.765Z
-metadataUpdatedAt: 2026-10-02T10:29:42.765Z
+releaseUpdatedAt: 2026-10-18T09:45:44.069Z
+metadataUpdatedAt: 2026-10-18T09:45:44.069Z
 starsUpdatedAt: 2026-10-13T23:17:22.489Z
-updatedAt: 2026-10-13T23:17:22.489Z
+updatedAt: 2026-10-18T09:45:44.069Z

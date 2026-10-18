@@ -17,6 +17,9 @@ install:
   target: github:Respawn-ID/dsh-rhine-splash#11b858d9f94ae445b9a0e94e5fd6614266eccac1
   version: 0.2.1
   commit: 11b858d9f94ae445b9a0e94e5fd6614266eccac1
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -26,6 +29,7 @@ screenshots:
   - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/11b858d9f94ae445b9a0e94e5fd6614266eccac1/screenshots/splash-dark.png
   - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/11b858d9f94ae445b9a0e94e5fd6614266eccac1/screenshots/home-light.png
   - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/11b858d9f94ae445b9a0e94e5fd6614266eccac1/screenshots/home-dark.png
+listScreenshot: https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/11b858d9f94ae445b9a0e94e5fd6614266eccac1/screenshots/splash-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,12 +44,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 11b858d9f94ae445b9a0e94e5fd6614266eccac1
+    packageVersion: 0.2.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-18T09:46:41.904Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-18T08:13:03.924Z
-metadataUpdatedAt: 2026-10-18T08:13:03.924Z
+releaseUpdatedAt: 2026-10-18T09:46:42.904Z
+metadataUpdatedAt: 2026-10-18T09:46:42.904Z
 starsUpdatedAt: 2026-10-18T08:13:03.924Z
-updatedAt: 2026-10-18T08:13:03.924Z
+updatedAt: 2026-10-18T09:46:42.904Z

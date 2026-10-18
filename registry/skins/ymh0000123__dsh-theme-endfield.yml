@@ -17,12 +17,18 @@ tags:
 modes:
   - dark
 install:
-  target: github:ymh0000123/dsh-theme-endfield#d8c9b37516c7270c109a842b0d42d34140083338
-  version: 1.1.9
-  commit: d8c9b37516c7270c109a842b0d42d34140083338
+  target: github:ymh0000123/dsh-theme-endfield#b760d9aa477e938596d6c0dfa50a0f43464d3ad5
+  version: 1.2.3
+  commit: b760d9aa477e938596d6c0dfa50a0f43464d3ad5
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: dsh-theme-endfield
+    version: 1.2.3
+    integrity: sha512-jtBx+HPu3XRNMQNSG6QF2vyzBIW+EStPOemfMYktkNEbkXgM+YzHBlSa9hgGxHohNF/vsTMevDGg+HaQCJHNfA==
+    repository: https://github.com/ymh0000123/dsh-theme-endfield
+    gitHead: b760d9aa477e938596d6c0dfa50a0f43464d3ad5
 compatibility:
   dsh: unverified
   platform:
@@ -51,19 +57,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: d8c9b37516c7270c109a842b0d42d34140083338
-    packageVersion: 1.1.9
+    commit: b760d9aa477e938596d6c0dfa50a0f43464d3ad5
+    packageVersion: 1.2.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-11T22:47:54.379Z
+    checkedAt: 2026-10-18T09:45:06.651Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 154
-starsSnapshot: 140
-releaseUpdatedAt: 2026-10-11T22:47:55.292Z
-metadataUpdatedAt: 2026-10-11T22:47:55.292Z
-starsUpdatedAt: 2026-10-15T22:08:06.257Z
-updatedAt: 2026-10-15T22:08:06.257Z
+starsSnapshot: 142
+releaseUpdatedAt: 2026-10-18T09:45:07.325Z
+metadataUpdatedAt: 2026-10-18T09:45:07.325Z
+starsUpdatedAt: 2026-10-18T09:45:07.325Z
+updatedAt: 2026-10-18T09:45:07.325Z

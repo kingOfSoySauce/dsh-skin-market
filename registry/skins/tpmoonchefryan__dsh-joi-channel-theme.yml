@@ -19,8 +19,11 @@ install:
   version: 0.1.14
   commit: 5879e04fbc75251d50b0bb6416fb0f691d608a20
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: dsh-joi-channel-theme
+    packageVersion: 0.1.14
+    integrity: sha512-Yho/mcJlaJyp29ZYMvwNtICvOIPmXZQbFQZAqU21tFAHrBIU/dFNq9rZM0nm1bmS7SSocsmS4ZlPwdcxRQgLxg==
   npm:
     name: dsh-joi-channel-theme
     version: 0.1.14
@@ -73,7 +76,7 @@ license:
   commercialUse: true
 featuredRank: 94
 starsSnapshot: 20
-releaseUpdatedAt: 2026-10-11T22:48:22.880Z
+releaseUpdatedAt: 2026-10-18T09:45:24.275Z
 metadataUpdatedAt: 2026-10-11T22:48:22.880Z
 starsUpdatedAt: 2026-10-06T00:45:16.084Z
-updatedAt: 2026-10-11T22:48:22.880Z
+updatedAt: 2026-10-18T09:45:24.275Z
