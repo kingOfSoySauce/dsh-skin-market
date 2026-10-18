@@ -14,9 +14,28 @@ function fixture() { return mkdtempSync(join(tmpdir(), 'skin-profile-')) }
 
 function artifactRiskFixture() {
   const dir = fixture()
-  // Keep the real conflicting catalog metadata: the product must handle this
-  // uncertainty without repairing away the user's reproduction.
-  const skin = structuredClone(loadCatalog().skins.find(skin => skin.id === 'johnnyting.dsh-official-homepage-theme')!)
+  // Use a real catalog skin for identity/shape, but pin a stable Desktop↔npm SRI
+  // conflict. Nightly ingestion may align live review hashes; these cases must not
+  // collapse when the published catalog no longer carries divergent records.
+  const base = loadCatalog().skins.find(skin => skin.id === 'johnnyting.dsh-official-homepage-theme')
+  if (base === undefined) throw new Error('missing johnnyting.dsh-official-homepage-theme fixture skin')
+  const skin = structuredClone(base)
+  const npmIntegrity = `sha512-${Buffer.alloc(64, 1).toString('base64')}`
+  const desktopIntegrity = `sha512-${Buffer.alloc(64, 2).toString('base64')}`
+  skin.install.npm = {
+    name: skin.package,
+    version: skin.install.version,
+    integrity: npmIntegrity,
+    repository: skin.repo.replace(/\/$/, ''),
+    gitHead: skin.install.commit.toLowerCase(),
+  }
+  skin.install.desktop = {
+    mode: 'managed',
+    registry: 'npm',
+    packageName: skin.package,
+    packageVersion: skin.install.version,
+    integrity: desktopIntegrity,
+  }
   const directory = join(dir, 'node_modules', skin.package)
   const manifest = { name: skin.package, version: skin.install.version, repository: skin.repo,
     exports: { './client': './client.js' }, dsh: { client: { platform: 'web' } } }
