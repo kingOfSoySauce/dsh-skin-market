@@ -15,6 +15,7 @@
 
 ### 近期收录
 
+- **2026-10-18**：[Respawn-ID/dsh-rhine-splash](https://github.com/Respawn-ID/dsh-rhine-splash)（`0.2.1`）——莱茵生命开屏动画。详见[收录日志](./docs/recently-added.md#recent-2026-10-18)。
 - **2026-09-10 至 2026-10-05**：新增 **7 条**，包括终末地主题（改版）、千夏 · 绝区零外观主题、鲸鱼娘动态壁纸等。详见[收录日志](./docs/recently-added.md#recent-since-2026-09-10)。
 
 ## 安装

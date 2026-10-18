@@ -5,6 +5,22 @@
 安装版本固定到对应收录 commit；预览图使用 registry 中记录的仓库素材。收录市场不等于 DSH 官方、安全团队或市场对皮肤的安全背书；兼容性和素材授权状态请以皮肤仓库说明为准。
 
 
+<a id="recent-2026-10-18"></a>
+
+## 2026-10-18 · 莱茵生命开屏动画
+
+莱茵生命风格的开屏动画、暖白 / 暖炭黑主界面配色与品牌标志替换；另带可单独关闭的推理强度滑块、对话费用与余额显示、归档对话管理。
+
+- GitHub：[Respawn-ID/dsh-rhine-splash](https://github.com/Respawn-ID/dsh-rhine-splash)
+- 收录版本：`0.2.1`
+- 固定 commit：`11b858d9f94ae445b9a0e94e5fd6614266eccac1`
+- 许可：MIT
+- 社区 PR：[#109](https://github.com/kingOfSoySauce/dsh-skin-market/pull/109)
+
+<img src="https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/11b858d9f94ae445b9a0e94e5fd6614266eccac1/screenshots/splash-light.png" width="60%" alt="莱茵生命开屏动画 · 浅色开屏">
+
+<img src="https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/11b858d9f94ae445b9a0e94e5fd6614266eccac1/screenshots/home-dark.png" width="60%" alt="莱茵生命开屏动画 · 深色主界面">
+
 <a id="recent-since-2026-09-10"></a>
 
 ## 2026-09-10 至 2026-10-05 · 新增 7 项
