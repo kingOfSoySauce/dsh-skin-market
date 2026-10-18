@@ -366,6 +366,22 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
+### 2026-10-18 · dsh-catppuccin
+
+[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)：DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
+
+- 版本：`0.6.3`
+- 固定 commit：`f72f56da71d3a0be75bb3376fe9b3dca7f5b0c60`
+
+<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
+### 2026-10-18 · dsh-bloom-theme
+
+[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)：DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
+
+- 版本：`0.18.1`
+- 固定 commit：`945a1eca44e739851959128ffdebcf535c40c2a5`
+
 <!-- dsh-auto-entry:yyyyyylor.dsh-asuka-school-theme -->
 ### 2026-10-18 · dsh-asuka-school-theme
 
@@ -574,14 +590,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`68.1.0`
 - 固定 commit：`7e604f27aa879c99894d76fe6e485763650212a8`
 
-<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
-### 2026-10-18 · dsh-catppuccin
-
-[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)：DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
-
-- 版本：`0.6.3-beta.3`
-- 固定 commit：`01de37eec97bb4df8683d2a1c02120d4d74c4406`
-
 <!-- dsh-auto-entry:sutera-diffusus.dsh-whale-musume -->
 ### 2026-10-18 · dsh-whale-musume
 
@@ -589,14 +597,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`2.3.0`
 - 固定 commit：`e321b901d26899f2d82c44ee5949dafcf9fe8d4a`
-
-<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
-### 2026-10-18 · dsh-bloom-theme
-
-[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)：DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
-
-- 版本：`0.17.6`
-- 固定 commit：`1e0e74cbc40bbc9e578f6dc8ebf393c8563a9949`
 
 <!-- dsh-auto-entry:ymh0000123.dsh-theme-endfield -->
 ### 2026-10-18 · dsh-theme-endfield

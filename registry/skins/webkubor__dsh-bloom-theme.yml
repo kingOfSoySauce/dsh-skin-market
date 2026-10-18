@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#1e0e74cbc40bbc9e578f6dc8ebf393c8563a9949
-  version: 0.17.6
-  commit: 1e0e74cbc40bbc9e578f6dc8ebf393c8563a9949
+  target: github:webkubor/dsh-bloom-theme#945a1eca44e739851959128ffdebcf535c40c2a5
+  version: 0.18.1
+  commit: 945a1eca44e739851959128ffdebcf535c40c2a5
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-bloom-theme
-    packageVersion: 0.17.6
-    integrity: sha512-UaGA0YTOTlrAVbdvIPXjpzKaLqG2K7sYsMndUg7hnPf2rdSGxUzZArKZyPoOT4iUOAbD6UskEpXBKqhd+K9mMA==
+    packageVersion: 0.18.1
+    integrity: sha512-hGkmbCTuaPHUlrJ3Kwt198AkiLYOfDzB3ijCK+RfRUedx4Chunx0dADJBzmdVfeEIs33fBNVo+n6hsGQJlY+1w==
   npm:
     name: dsh-bloom-theme
-    version: 0.17.6
-    integrity: sha512-UaGA0YTOTlrAVbdvIPXjpzKaLqG2K7sYsMndUg7hnPf2rdSGxUzZArKZyPoOT4iUOAbD6UskEpXBKqhd+K9mMA==
+    version: 0.18.1
+    integrity: sha512-hGkmbCTuaPHUlrJ3Kwt198AkiLYOfDzB3ijCK+RfRUedx4Chunx0dADJBzmdVfeEIs33fBNVo+n6hsGQJlY+1w==
     repository: https://github.com/webkubor/dsh-bloom-theme
-    gitHead: 1e0e74cbc40bbc9e578f6dc8ebf393c8563a9949
+    gitHead: 945a1eca44e739851959128ffdebcf535c40c2a5
 compatibility:
   dsh: unverified
   platform:
@@ -60,19 +60,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 1e0e74cbc40bbc9e578f6dc8ebf393c8563a9949
-    packageVersion: 0.17.6
+    commit: 945a1eca44e739851959128ffdebcf535c40c2a5
+    packageVersion: 0.18.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-13T01:16:15.539Z
+    checkedAt: 2026-10-18T21:24:46.332Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 193
 starsSnapshot: 102
-releaseUpdatedAt: 2026-10-18T09:45:08.330Z
-metadataUpdatedAt: 2026-10-13T01:16:24.898Z
+releaseUpdatedAt: 2026-10-18T21:24:50.799Z
+metadataUpdatedAt: 2026-10-18T21:24:50.799Z
 starsUpdatedAt: 2026-10-18T09:45:08.193Z
-updatedAt: 2026-10-18T09:45:08.330Z
+updatedAt: 2026-10-18T21:24:50.799Z
