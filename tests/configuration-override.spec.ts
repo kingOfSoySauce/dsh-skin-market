@@ -1,5 +1,6 @@
 import * as fs from 'node:fs'
-import { chmodSync, existsSync, lstatSync, mkdtempSync, readFileSync, readdirSync, rmSync, symlinkSync, writeFileSync } from 'node:fs'
+import { chmodSync, existsSync, lstatSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, symlinkSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { parse } from 'yaml'
@@ -24,7 +25,8 @@ vi.mock('node:fs', async importOriginal => {
 const target: ConfigurationOverrideTarget = { skinId: 'example.skin', packageName: '@example/skin', rowId: 'skin-main', enabled: true }
 const homes: string[] = []
 function fixture(source?: string): { home: string; file: string; options: ConfigurationOverrideOptions } {
-  const home = mkdtempSync('/private/tmp/dsh-configuration-override-')
+  // homeIdentity requires realpath(home) === resolve(home); macOS tmpdir is under /var → /private/var.
+  const home = mkdtempSync(join(realpathSync(tmpdir()), 'dsh-configuration-override-'))
   homes.push(home)
   const file = join(home, 'cordis.patch.yml')
   if (source !== undefined) writeFileSync(file, source)

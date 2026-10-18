@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto'
-import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
+import { mkdirSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, writeFileSync } from 'node:fs'
 import type { IncomingMessage } from 'node:http'
+import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { Readable } from 'node:stream'
 import { afterEach, describe, expect, it, vi } from 'vitest'
@@ -57,7 +58,7 @@ async function finished(operation: Operation): Promise<Operation> {
 
 /** The fake official Host writes the profile row; the home row wins over it. */
 function fixture(catalog: SkinEntry[], initial: { active?: string; home?: string; overlays?: string[]; bundled?: boolean } = {}) {
-  const home = mkdtempSync('/private/tmp/dsh-configuration-recovery-')
+  const home = mkdtempSync(join(realpathSync(tmpdir()), 'dsh-configuration-recovery-'))
   directories.push(home)
   const directory = join(home, 'profiles', 'desktop')
   mkdirSync(directory, { recursive: true })

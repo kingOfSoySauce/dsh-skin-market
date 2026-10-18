@@ -1,5 +1,6 @@
-import { mkdtempSync, rmSync } from 'node:fs'
+import { mkdtempSync, realpathSync, rmSync } from 'node:fs'
 import type { IncomingMessage, ServerResponse } from 'node:http'
+import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { Readable } from 'node:stream'
 import { afterEach, describe, expect, it, vi } from 'vitest'
@@ -18,7 +19,7 @@ afterEach(async () => {
 })
 
 function fixture() {
-  const directory = mkdtempSync('/private/tmp/selection-plan-route-')
+  const directory = mkdtempSync(join(realpathSync(tmpdir()), 'selection-plan-route-'))
   const routes: Array<Parameters<WebServerService['register']>[0]> = []
   const plan = { status: 'repairable' as const, context: 'a'.repeat(64), changes: [], reason: 'fixture' }
   vi.spyOn(SkinLifecycle.prototype, 'start').mockImplementation(() => undefined)
