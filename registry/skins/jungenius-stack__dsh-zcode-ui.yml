@@ -17,6 +17,9 @@ install:
   target: github:jungenius-stack/dsh-zcode-ui#85551e89c3d88251264e6cf6f1227b90b58886e0
   version: 1.16.0
   commit: 85551e89c3d88251264e6cf6f1227b90b58886e0
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.0-rc.2 <0.3.0-0"
   platform:
@@ -25,6 +28,7 @@ screenshots:
   - https://raw.githubusercontent.com/jungenius-stack/dsh-zcode-ui/85551e89c3d88251264e6cf6f1227b90b58886e0/assets/screenshots/settings-light.png
   - https://raw.githubusercontent.com/jungenius-stack/dsh-zcode-ui/85551e89c3d88251264e6cf6f1227b90b58886e0/assets/screenshots/search-light.png
   - https://raw.githubusercontent.com/jungenius-stack/dsh-zcode-ui/85551e89c3d88251264e6cf6f1227b90b58886e0/assets/screenshots/collapsed-light.png
+listScreenshot: https://raw.githubusercontent.com/jungenius-stack/dsh-zcode-ui/85551e89c3d88251264e6cf6f1227b90b58886e0/assets/screenshots/settings-light.png
 review:
   compatibility: verified
   preview: verified
@@ -38,12 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 85551e89c3d88251264e6cf6f1227b90b58886e0
+    packageVersion: 1.16.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.2 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-10-19T22:55:52.893Z
+    findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-19T01:34:05.465Z
-metadataUpdatedAt: 2026-10-19T01:34:05.465Z
+releaseUpdatedAt: 2026-10-19T22:55:53.831Z
+metadataUpdatedAt: 2026-10-19T22:55:53.831Z
 starsUpdatedAt: 2026-10-19T01:34:05.465Z
-updatedAt: 2026-10-19T01:34:05.465Z
+updatedAt: 2026-10-19T22:55:53.831Z
