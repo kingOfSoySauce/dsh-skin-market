@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:RevolutionLA/dsh-dream-skin#7ce4b64a44e9795fc35a0658197d45f1e87b756d
-  version: 10.16.0
-  commit: 7ce4b64a44e9795fc35a0658197d45f1e87b756d
+  target: github:RevolutionLA/dsh-dream-skin#9807bf6888b31d4eef40c05413548028e90321db
+  version: 10.21.1
+  commit: 9807bf6888b31d4eef40c05413548028e90321db
   desktop:
     mode: manual-only
     reason: npm-version-mismatch
@@ -51,20 +51,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 7ce4b64a44e9795fc35a0658197d45f1e87b756d
-    packageVersion: 10.16.0
+    commit: 9807bf6888b31d4eef40c05413548028e90321db
+    packageVersion: 10.21.1
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-19T22:54:16.152Z
+    checkedAt: 2026-10-20T22:15:02.197Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 4
-starsSnapshot: 257
-releaseUpdatedAt: 2026-10-19T22:54:19.990Z
-metadataUpdatedAt: 2026-10-19T22:54:19.990Z
-starsUpdatedAt: 2026-10-19T22:54:19.990Z
-updatedAt: 2026-10-19T22:54:19.990Z
+starsSnapshot: 258
+releaseUpdatedAt: 2026-10-20T22:15:04.858Z
+metadataUpdatedAt: 2026-10-20T22:15:04.858Z
+starsUpdatedAt: 2026-10-20T22:15:04.858Z
+updatedAt: 2026-10-20T22:15:04.858Z

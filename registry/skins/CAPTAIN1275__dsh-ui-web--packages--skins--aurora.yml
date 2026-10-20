@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:CAPTAIN1275/dsh-ui-web#994656f936c0d946472e5eac9e9389bb13bd7735&path:/packages/skins/aurora
-  version: 0.4.0
-  commit: 994656f936c0d946472e5eac9e9389bb13bd7735
+  target: github:CAPTAIN1275/dsh-ui-web#0a2dfa5b5e43844cae6011363d48eb2e585c8f72&path:/packages/skins/aurora
+  version: 0.4.1
+  commit: 0a2dfa5b5e43844cae6011363d48eb2e585c8f72
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
-  allowBuild: "@captain1275/dsh-client-ui-skin-aurora@https://codeload.github.com/CAPTAIN1275/dsh-ui-web/tar.gz/994656f936c0d946472e5eac9e9389bb13bd7735#path:packages/skins/aurora"
+  allowBuild: "@captain1275/dsh-client-ui-skin-aurora@https://codeload.github.com/CAPTAIN1275/dsh-ui-web/tar.gz/0a2dfa5b5e43844cae6011363d48eb2e585c8f72#path:packages/skins/aurora"
 compatibility:
   dsh: ^0.1.1-rc.2
   platform:
@@ -52,22 +52,22 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.2 未被本次检测范围 ^0.2.0-rc.2 完全覆盖（固定版本 994656f936c0d946472e5eac9e9389bb13bd7735）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.2 未被本次检测范围 ^0.2.0-rc.2 完全覆盖（固定版本 0a2dfa5b5e43844cae6011363d48eb2e585c8f72）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 994656f936c0d946472e5eac9e9389bb13bd7735
-    packageVersion: 0.4.0
+    commit: 0a2dfa5b5e43844cae6011363d48eb2e585c8f72
+    packageVersion: 0.4.1
     scannerVersion: static-v2
     dshVersion: ^0.2.0-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-10-08T23:44:59.933Z
+    checkedAt: 2026-10-20T22:15:10.643Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 969
-starsSnapshot: 42
-releaseUpdatedAt: 2026-10-08T23:45:01.713Z
-metadataUpdatedAt: 2026-10-08T23:45:01.713Z
-starsUpdatedAt: 2026-10-13T23:17:01.953Z
-updatedAt: 2026-10-13T23:17:01.953Z
+starsSnapshot: 41
+releaseUpdatedAt: 2026-10-20T22:15:12.637Z
+metadataUpdatedAt: 2026-10-20T22:15:12.637Z
+starsUpdatedAt: 2026-10-20T22:15:12.637Z
+updatedAt: 2026-10-20T22:15:12.637Z

@@ -19,12 +19,18 @@ modes:
   - light
   - dark
 install:
-  target: github:zhijun-dai/Catppuccin-dsh-theme#140ed3c3133ecb31761845224f4ec91d45ba747e
-  version: 0.2.5
-  commit: 140ed3c3133ecb31761845224f4ec91d45ba747e
+  target: github:zhijun-dai/Catppuccin-dsh-theme#9d18edc84a13fb6009391677046ddedec267ecdc
+  version: 0.2.6
+  commit: 9d18edc84a13fb6009391677046ddedec267ecdc
   desktop:
     mode: manual-only
     reason: npm-source-unverified
+  npm:
+    name: dsh-catppuccin
+    version: 0.2.6
+    integrity: sha512-QqgfHDyYfbObJ25Xu1OZ7pBGHwXTHMkr8Wbz8ZehzYB4pjStujvdMOfA4uZdr14mW+yh4+A+wvCih+H5kc1H7A==
+    repository: https://github.com/zhijun-dai/Catppuccin-dsh-theme
+    gitHead: 9d18edc84a13fb6009391677046ddedec267ecdc
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -50,13 +56,13 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 140ed3c3133ecb31761845224f4ec91d45ba747e
-    packageVersion: 0.2.5
+    commit: 9d18edc84a13fb6009391677046ddedec267ecdc
+    packageVersion: 0.2.6
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-24T22:13:35.583Z
+    checkedAt: 2026-10-20T22:15:25.630Z
     findings: []
 license:
   code: MIT
@@ -64,7 +70,7 @@ license:
   notice: Catppuccin palette 源自 catppuccin/palette，并按 MIT 许可证使用。
 featuredRank: 3
 starsSnapshot: 10
-releaseUpdatedAt: 2026-09-24T22:13:36.378Z
-metadataUpdatedAt: 2026-09-24T22:13:36.378Z
+releaseUpdatedAt: 2026-10-20T22:15:26.593Z
+metadataUpdatedAt: 2026-10-20T22:15:26.593Z
 starsUpdatedAt: 2026-09-24T22:13:36.378Z
-updatedAt: 2026-09-24T22:13:36.378Z
+updatedAt: 2026-10-20T22:15:26.593Z

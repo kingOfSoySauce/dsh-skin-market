@@ -16,13 +16,13 @@ modes:
   - light
   - dark
 install:
-  target: github:cdxDNRF/wishadel-theme#c5c0b42129be54680e8f9e65a0a802683173c9ab
-  version: 0.9.2
-  commit: c5c0b42129be54680e8f9e65a0a802683173c9ab
+  target: github:cdxDNRF/wishadel-theme#4d674f4de20a3bc2eb1b44923bbf366638c67977
+  version: 0.10.0
+  commit: 4d674f4de20a3bc2eb1b44923bbf366638c67977
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/c5c0b42129be54680e8f9e65a0a802683173c9ab"
+  allowBuild: "@cdxdnrf/dsh-client-ui-skin-wishadel@https://codeload.github.com/cdxDNRF/wishadel-theme/tar.gz/4d674f4de20a3bc2eb1b44923bbf366638c67977"
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -49,20 +49,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: c5c0b42129be54680e8f9e65a0a802683173c9ab
-    packageVersion: 0.9.2
+    commit: 4d674f4de20a3bc2eb1b44923bbf366638c67977
+    packageVersion: 0.10.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-13T01:18:17.244Z
+    checkedAt: 2026-10-20T22:16:26.342Z
     findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 99
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-13T01:18:20.613Z
-metadataUpdatedAt: 2026-10-13T01:18:20.613Z
+releaseUpdatedAt: 2026-10-20T22:16:27.317Z
+metadataUpdatedAt: 2026-10-20T22:16:27.317Z
 starsUpdatedAt: 2026-09-09T21:39:45.128Z
-updatedAt: 2026-10-13T01:18:20.613Z
+updatedAt: 2026-10-20T22:16:27.317Z

@@ -16,12 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ZJUZhiyuCai/dsh-ivory#5da6b17205d385ec9f0befc4f3e62075be80dd06
-  version: 0.2.15
-  commit: 5da6b17205d385ec9f0befc4f3e62075be80dd06
+  target: github:ZJUZhiyuCai/dsh-ivory#f205fea55c7fe9893f44416edb610e378676eddd
+  version: 0.2.16
+  commit: f205fea55c7fe9893f44416edb610e378676eddd
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepack
+    mode: managed
+    registry: npm
+    packageName: dsh-ivory
+    packageVersion: 0.2.16
+    integrity: sha512-M/pmX142HqFNcakdXmQRJH8Ub2H2o7PaZFCFSPQ/sa20dYFgVVfBL0PzyxNJ+SxbWy4p+fTYCt5i527RkTJDzg==
+  npm:
+    name: dsh-ivory
+    version: 0.2.16
+    integrity: sha512-M/pmX142HqFNcakdXmQRJH8Ub2H2o7PaZFCFSPQ/sa20dYFgVVfBL0PzyxNJ+SxbWy4p+fTYCt5i527RkTJDzg==
+    repository: https://github.com/ZJUZhiyuCai/dsh-ivory
+    gitHead: f205fea55c7fe9893f44416edb610e378676eddd
 compatibility:
   dsh: ">=0.1.0-rc.6 <0.2.0"
   platform:
@@ -49,22 +58,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 <0.2.0 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 || ^0.1.5-rc.1 || ^0.2.0-rc.2 || ^0.2.1-rc.1 完全覆盖（固定版本 5da6b17205d385ec9f0befc4f3e62075be80dd06）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 <0.2.0 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 || ^0.1.5-rc.1 || ^0.2.0-rc.2 || ^0.2.1-rc.1 完全覆盖（固定版本 f205fea55c7fe9893f44416edb610e378676eddd）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 5da6b17205d385ec9f0befc4f3e62075be80dd06
-    packageVersion: 0.2.15
+    commit: f205fea55c7fe9893f44416edb610e378676eddd
+    packageVersion: 0.2.16
     scannerVersion: static-v2
     dshVersion: ">=0.1.2-rc.1 <0.3.0 || ^0.1.5-rc.1 || ^0.2.0-rc.2 || ^0.2.1-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-10-19T22:56:58.191Z
+    checkedAt: 2026-10-20T22:17:01.837Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 129
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-19T22:57:00.138Z
-metadataUpdatedAt: 2026-10-19T22:57:00.138Z
+releaseUpdatedAt: 2026-10-20T22:17:03.258Z
+metadataUpdatedAt: 2026-10-20T22:17:03.258Z
 starsUpdatedAt: 2026-10-08T23:46:25.353Z
-updatedAt: 2026-10-19T22:57:00.138Z
+updatedAt: 2026-10-20T22:17:03.258Z

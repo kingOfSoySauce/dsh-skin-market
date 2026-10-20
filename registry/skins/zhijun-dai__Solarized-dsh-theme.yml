@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:zhijun-dai/Solarized-dsh-theme#4eb4458d9c98220383dfc588a61cddb08c36fe6f
+  target: github:zhijun-dai/Solarized-dsh-theme#a5b4bd74062688f3de805050422e6168091952f8
   version: 0.2.3
-  commit: 4eb4458d9c98220383dfc588a61cddb08c36fe6f
+  commit: a5b4bd74062688f3de805050422e6168091952f8
   desktop:
     mode: manual-only
     reason: npm-source-unverified
@@ -48,20 +48,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 4eb4458d9c98220383dfc588a61cddb08c36fe6f
+    commit: a5b4bd74062688f3de805050422e6168091952f8
     packageVersion: 0.2.3
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-24T22:13:41.047Z
+    checkedAt: 2026-10-20T22:15:31.218Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 12
 starsSnapshot: 8
-releaseUpdatedAt: 2026-09-24T22:13:41.876Z
-metadataUpdatedAt: 2026-09-24T22:13:41.876Z
+releaseUpdatedAt: 2026-10-20T22:15:32.241Z
+metadataUpdatedAt: 2026-10-20T22:15:32.241Z
 starsUpdatedAt: 2026-10-14T22:14:07.282Z
-updatedAt: 2026-10-14T22:14:07.282Z
+updatedAt: 2026-10-20T22:15:32.241Z

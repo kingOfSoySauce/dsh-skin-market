@@ -366,6 +366,158 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:zjuzhiyucai.dsh-ivory -->
+### 2026-10-20 · dsh-ivory
+
+[ZJUZhiyuCai/dsh-ivory](https://github.com/ZJUZhiyuCai/dsh-ivory)：DSH Web 暖中性色明暗主题，支持响应式布局、双语设置、安全 Markdown 预览、内容块复制与无遥测运行。
+
+- 版本：`0.2.16`
+- 固定 commit：`f205fea55c7fe9893f44416edb610e378676eddd`
+
+<!-- dsh-auto-entry:cdxdnrf.wishadel-theme -->
+### 2026-10-20 · wishadel-theme
+
+[cdxDNRF/wishadel-theme](https://github.com/cdxDNRF/wishadel-theme)：dsh主题维什戴尔风格
+
+- 版本：`0.10.0`
+- 固定 commit：`4d674f4de20a3bc2eb1b44923bbf366638c67977`
+
+<!-- dsh-auto-entry:lengzhanbao.dsh-taffy-theme -->
+### 2026-10-20 · dsh-taffy-theme
+
+[lengzhanbao/dsh-taffy-theme](https://github.com/lengzhanbao/dsh-taffy-theme)：Taffy Live Atelier / 塔菲直播工房
+
+- 版本：`0.2.2`
+- 固定 commit：`23cf1fe22e06d6e0f3455d007481499c34a08c6c`
+
+<!-- dsh-auto-entry:cooltea001.dsh-cool-theme -->
+### 2026-10-20 · dsh-cool-theme
+
+[CoolTea001/dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-theme)：DeepSeek Harness 主题插件 — 支持 浅色 / 深色 / 跟随系统 外观切换，并提供 34 款预设主题。
+
+- 版本：`0.9.1`
+- 固定 commit：`dca80a694f0eac4c8d7d12a7def55f178d95c1f5`
+
+<!-- dsh-auto-entry:zhijun-dai.solarized-dsh-theme -->
+### 2026-10-20 · Solarized-dsh-theme
+
+[zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme)：Solarized 与 Selenized 主题插件：向 DSH Web 主题运行时注册四套忠实色板。
+
+- 版本：`0.2.3`
+- 固定 commit：`a5b4bd74062688f3de805050422e6168091952f8`
+
+<!-- dsh-auto-entry:zhijun-dai.catppuccin -->
+### 2026-10-20 · Catppuccin 四味主题
+
+[zhijun-dai/Catppuccin-dsh-theme](https://github.com/zhijun-dai/Catppuccin-dsh-theme)：Catppuccin 主题插件：为 DSH Web 主题运行时提供 Latte、Frappé、Macchiato、Mocha 四套皮肤。
+
+- 版本：`0.2.6`
+- 固定 commit：`9d18edc84a13fb6009391677046ddedec267ecdc`
+
+<!-- dsh-auto-entry:suzike.freestyle-dsh-theme -->
+### 2026-10-20 · freestyle-dsh-theme
+
+[suzike/freestyle-dsh-theme](https://github.com/suzike/freestyle-dsh-theme)：DeepSeek Harness 主题体验插件：OKLCH 主题提案 + 主题设计器（跨重启持久化）
+
+- 版本：`0.4.0`
+- 固定 commit：`4bb91e20fee3e6e3487a976571d16c88362b8402`
+
+<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
+### 2026-10-20 · dsh-kimino-theme
+
+[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
+
+- 版本：`68.4.0`
+- 固定 commit：`53c20055d7a4ffbd3d96feb851dc18d4798df8c4`
+
+<!-- dsh-auto-entry:captain1275.xp -->
+### 2026-10-20 · Windows XP
+
+[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务栏。
+
+- 版本：`0.4.0`
+- 固定 commit：`0a2dfa5b5e43844cae6011363d48eb2e585c8f72`
+
+<!-- dsh-auto-entry:captain1275.whale-song -->
+### 2026-10-20 · 鲸吟
+
+[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：鲸吟皮肤：深海鲸鱼女神氛围，无文字极简设计。
+
+- 版本：`0.4.0`
+- 固定 commit：`0a2dfa5b5e43844cae6011363d48eb2e585c8f72`
+
+<!-- dsh-auto-entry:captain1275.dragon-heir -->
+### 2026-10-20 · 龙之继承者
+
+[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：龙之继承者皮肤。
+
+- 版本：`0.4.1`
+- 固定 commit：`0a2dfa5b5e43844cae6011363d48eb2e585c8f72`
+
+<!-- dsh-auto-entry:captain1275.blue-fantasy -->
+### 2026-10-20 · 蓝色幻想
+
+[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：蓝色幻想皮肤：DreamSkin Codex 主题「DeepSeek-鲸鱼娘」风格。
+
+- 版本：`0.4.0`
+- 固定 commit：`0a2dfa5b5e43844cae6011363d48eb2e585c8f72`
+
+<!-- dsh-auto-entry:captain1275.minecraft -->
+### 2026-10-20 · Minecraft
+
+[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：Minecraft 主题皮肤。
+
+- 版本：`0.4.0`
+- 固定 commit：`0a2dfa5b5e43844cae6011363d48eb2e585c8f72`
+
+<!-- dsh-auto-entry:captain1275.aurora -->
+### 2026-10-20 · 极光 Aurora
+
+[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：极光皮肤：支持自定义背景图片（URL / 透明度 / 模糊）与极光渐变背景，半透明毛玻璃面板，浅色/深色两套调色板。
+
+- 版本：`0.4.1`
+- 固定 commit：`0a2dfa5b5e43844cae6011363d48eb2e585c8f72`
+
+<!-- dsh-auto-entry:captain1275.miku -->
+### 2026-10-20 · 初音未来
+
+[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：初音未来皮肤：蓝紫粉渐变、毛玻璃面板、Miku 主题配色。
+
+- 版本：`0.4.0`
+- 固定 commit：`0a2dfa5b5e43844cae6011363d48eb2e585c8f72`
+
+<!-- dsh-auto-entry:sutera-diffusus.dsh-whale-musume -->
+### 2026-10-20 · dsh-whale-musume
+
+[Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume)：为 DeepSeek Harness 打造的桌面看板娘插件。 一只会陪你写代码的鲸鱼娘：待机安静陪伴，工作开始就抱起笔记本陪你干活； 可以摸头养成、解锁成就，也可以拖着她到处走。所有资源本地运行，无遥测、无外部请求。
+
+- 版本：`2.4.0`
+- 固定 commit：`7a3e51998cadb3d8a9f2183ad26d8ca8f650f8ab`
+
+<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
+### 2026-10-20 · dsh-dream-skin
+
+[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
+
+- 版本：`10.21.1`
+- 固定 commit：`9807bf6888b31d4eef40c05413548028e90321db`
+
+<!-- dsh-auto-entry:d-dev0101.open-sea-skin -->
+### 2026-10-20 · Open Sea 海洋皮肤
+
+[d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin)：为 DeepSeek Harness Web UI 提供实时 WebGPU 海洋背景，支持左下角调节波浪、日光、玻璃不透明度和自动昼夜循环。
+
+- 版本：`1.2.6`
+- 固定 commit：`387740c974f3fd47ef22eebd7c20da4645f2f213`
+
+<!-- dsh-auto-entry:nagi-ovo.dsh-ads -->
+### 2026-10-20 · dsh-ads
+
+[Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads)：把 DeepSeek Harness 变成 2005 年门户网站：在侧栏、对话和推理过程中加入虚构广告、假游戏与弹窗，支持中英文切换。
+
+- 版本：`0.1.3`
+- 固定 commit：`a5854a37bbe24078878740ae4567e59cc75c29ec`
+
 <!-- dsh-auto-entry:lengduan.dsh-815-skin -->
 ### 2026-10-19 · dsh-815-skin
 
@@ -374,14 +526,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.1.39`
 - 固定 commit：`065ccdeb9233ac2794ff62e8438b1f6267c7e0d9`
 
-<!-- dsh-auto-entry:zjuzhiyucai.dsh-ivory -->
-### 2026-10-19 · dsh-ivory
-
-[ZJUZhiyuCai/dsh-ivory](https://github.com/ZJUZhiyuCai/dsh-ivory)：DSH Web 暖中性色明暗主题，支持响应式布局、双语设置、安全 Markdown 预览、内容块复制与无遥测运行。
-
-- 版本：`0.2.15`
-- 固定 commit：`5da6b17205d385ec9f0befc4f3e62075be80dd06`
-
 <!-- dsh-auto-entry:lisongxuan.ds-hentai -->
 ### 2026-10-19 · ds-hentai
 
@@ -389,14 +533,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.7.1`
 - 固定 commit：`20ad36877f5862630857584cfb59158c699a94d8`
-
-<!-- dsh-auto-entry:lengzhanbao.dsh-taffy-theme -->
-### 2026-10-19 · dsh-taffy-theme
-
-[lengzhanbao/dsh-taffy-theme](https://github.com/lengzhanbao/dsh-taffy-theme)：Taffy Live Atelier / 塔菲直播工房
-
-- 版本：`0.2.1`
-- 固定 commit：`e8afc80cd446d96d585b811d8db031d320211031`
 
 <!-- dsh-auto-entry:jungenius.stack.dsh.zcode.ui -->
 ### 2026-10-19 · dsh-zcode-ui
@@ -422,14 +558,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.2.2`
 - 固定 commit：`a9e377522e96786d70205af627489de618dd8fb9`
 
-<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
-### 2026-10-19 · dsh-kimino-theme
-
-[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
-
-- 版本：`68.2.1`
-- 固定 commit：`3b23ecd5b251b301ee5227770374102319c4c200`
-
 <!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
 ### 2026-10-19 · dsh-catppuccin
 
@@ -437,22 +565,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.6.4-beta.0`
 - 固定 commit：`2b53263de7a214b786910e65f4d653e94830ed52`
-
-<!-- dsh-auto-entry:sutera-diffusus.dsh-whale-musume -->
-### 2026-10-19 · dsh-whale-musume
-
-[Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume)：为 DeepSeek Harness 打造的桌面看板娘插件。 一只会陪你写代码的鲸鱼娘：待机安静陪伴，工作开始就抱起笔记本陪你干活； 可以摸头养成、解锁成就，也可以拖着她到处走。所有资源本地运行，无遥测、无外部请求。
-
-- 版本：`2.4.0`
-- 固定 commit：`894f9701bf4e9fcdabd47b646d63f44c3eb574cb`
-
-<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
-### 2026-10-19 · dsh-dream-skin
-
-[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
-
-- 版本：`10.16.0`
-- 固定 commit：`7ce4b64a44e9795fc35a0658197d45f1e87b756d`
 
 <!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
 ### 2026-10-18 · dsh-bloom-theme
@@ -654,14 +766,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`1.2.3`
 - 固定 commit：`b760d9aa477e938596d6c0dfa50a0f43464d3ad5`
 
-<!-- dsh-auto-entry:nagi-ovo.dsh-ads -->
-### 2026-10-18 · dsh-ads
-
-[Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads)：把 DeepSeek Harness 变成 2005 年门户网站：在侧栏、对话和推理过程中加入虚构广告、假游戏与弹窗，支持中英文切换。
-
-- 版本：`0.1.2`
-- 固定 commit：`1aabe11d712bfd28aa889998bff783b5050340e2`
-
 <!-- dsh-auto-entry:king-of-soy-sauce.liang-intensity -->
 ### 2026-10-18 · 滑动变祖
 
@@ -678,14 +782,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`1.3.3`
 - 固定 commit：`01fbb8b8e66fd7e405e9c878d18dbd456187f111`
 
-<!-- dsh-auto-entry:cooltea001.dsh-cool-theme -->
-### 2026-10-15 · dsh-cool-theme
-
-[CoolTea001/dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-theme)：DeepSeek Harness 主题插件 — 支持 浅色 / 深色 / 跟随系统 外观切换，并提供 34 款预设主题。
-
-- 版本：`0.8.0`
-- 固定 commit：`b79e9f80c637de26f1ab9355f69c2cd593899490`
-
 <!-- dsh-auto-entry:aki2253.sidor-ui -->
 ### 2026-10-15 · Sidor_UI
 
@@ -701,14 +797,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.2.0`
 - 固定 commit：`91105ecd4d9f476cca06dfc7db769b2871f5c450`
-
-<!-- dsh-auto-entry:cdxdnrf.wishadel-theme -->
-### 2026-10-13 · wishadel-theme
-
-[cdxDNRF/wishadel-theme](https://github.com/cdxDNRF/wishadel-theme)：dsh主题维什戴尔风格
-
-- 版本：`0.9.2`
-- 固定 commit：`c5c0b42129be54680e8f9e65a0a802683173c9ab`
 
 <!-- dsh-auto-entry:shawnlone.dsh-theme-tuner -->
 ### 2026-10-13 · dsh-theme-tuner
@@ -766,14 +854,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`2.0.28`
 - 固定 commit：`c0bc51cb72ebde4883fd8435f11357d4ba885f31`
 
-<!-- dsh-auto-entry:d-dev0101.open-sea-skin -->
-### 2026-10-11 · Open Sea 海洋皮肤
-
-[d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin)：为 DeepSeek Harness Web UI 提供实时 WebGPU 海洋背景，支持左下角调节波浪、日光、玻璃不透明度和自动昼夜循环。
-
-- 版本：`1.2.5`
-- 固定 commit：`634583facf41ab4a8bff705a71ea6605404ab35f`
-
 <!-- dsh-auto-entry:ch4acko3.code-render -->
 ### 2026-10-10 · code-render
 
@@ -829,62 +909,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`1.5.0`
 - 固定 commit：`e4040efeda01e640de64ff84545f651c9efdb331`
-
-<!-- dsh-auto-entry:captain1275.whale-song -->
-### 2026-10-08 · 鲸吟
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：鲸吟皮肤：深海鲸鱼女神氛围，无文字极简设计。
-
-- 版本：`0.4.0`
-- 固定 commit：`994656f936c0d946472e5eac9e9389bb13bd7735`
-
-<!-- dsh-auto-entry:captain1275.xp -->
-### 2026-10-08 · Windows XP
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务栏。
-
-- 版本：`0.4.0`
-- 固定 commit：`994656f936c0d946472e5eac9e9389bb13bd7735`
-
-<!-- dsh-auto-entry:captain1275.blue-fantasy -->
-### 2026-10-08 · 蓝色幻想
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：蓝色幻想皮肤：DreamSkin Codex 主题「DeepSeek-鲸鱼娘」风格。
-
-- 版本：`0.4.0`
-- 固定 commit：`994656f936c0d946472e5eac9e9389bb13bd7735`
-
-<!-- dsh-auto-entry:captain1275.dragon-heir -->
-### 2026-10-08 · 龙之继承者
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：龙之继承者皮肤。
-
-- 版本：`0.4.1`
-- 固定 commit：`994656f936c0d946472e5eac9e9389bb13bd7735`
-
-<!-- dsh-auto-entry:captain1275.minecraft -->
-### 2026-10-08 · Minecraft
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：Minecraft 主题皮肤。
-
-- 版本：`0.4.0`
-- 固定 commit：`994656f936c0d946472e5eac9e9389bb13bd7735`
-
-<!-- dsh-auto-entry:captain1275.aurora -->
-### 2026-10-08 · 极光 Aurora
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：极光皮肤：支持自定义背景图片（URL / 透明度 / 模糊）与极光渐变背景，半透明毛玻璃面板，浅色/深色两套调色板。
-
-- 版本：`0.4.0`
-- 固定 commit：`994656f936c0d946472e5eac9e9389bb13bd7735`
-
-<!-- dsh-auto-entry:captain1275.miku -->
-### 2026-10-08 · 初音未来
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：初音未来皮肤：蓝紫粉渐变、毛玻璃面板、Miku 主题配色。
-
-- 版本：`0.4.0`
-- 固定 commit：`994656f936c0d946472e5eac9e9389bb13bd7735`
 
 <!-- dsh-auto-entry:ewnscat-ya.dsh-client-ui-skin-denia -->
 ### 2026-10-08 · 达妮娅 · 虚无之泡
@@ -1045,22 +1069,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.1.0`
 - 固定 commit：`34b40bc107081f5cf438972aad4834cd78558c56`
-
-<!-- dsh-auto-entry:zhijun-dai.solarized-dsh-theme -->
-### 2026-09-24 · Solarized-dsh-theme
-
-[zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme)：Solarized 与 Selenized 主题插件：向 DSH Web 主题运行时注册四套忠实色板。
-
-- 版本：`0.2.3`
-- 固定 commit：`4eb4458d9c98220383dfc588a61cddb08c36fe6f`
-
-<!-- dsh-auto-entry:zhijun-dai.catppuccin -->
-### 2026-09-24 · Catppuccin 四味主题
-
-[zhijun-dai/Catppuccin-dsh-theme](https://github.com/zhijun-dai/Catppuccin-dsh-theme)：Catppuccin 主题插件：为 DSH Web 主题运行时提供 Latte、Frappé、Macchiato、Mocha 四套皮肤。
-
-- 版本：`0.2.5`
-- 固定 commit：`140ed3c3133ecb31761845224f4ec91d45ba747e`
 
 <!-- dsh-auto-entry:quaner1234.cmd.dsh.theme.kami -->
 ### 2026-09-23 · dsh-kami-theme

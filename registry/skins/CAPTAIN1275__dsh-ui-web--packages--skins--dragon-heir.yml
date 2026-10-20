@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:CAPTAIN1275/dsh-ui-web#994656f936c0d946472e5eac9e9389bb13bd7735&path:/packages/skins/dragon-heir
+  target: github:CAPTAIN1275/dsh-ui-web#0a2dfa5b5e43844cae6011363d48eb2e585c8f72&path:/packages/skins/dragon-heir
   version: 0.4.1
-  commit: 994656f936c0d946472e5eac9e9389bb13bd7735
+  commit: 0a2dfa5b5e43844cae6011363d48eb2e585c8f72
   desktop:
     mode: managed
     registry: npm
@@ -30,7 +30,7 @@ install:
     version: 0.4.1
     integrity: sha512-5Pi3lZMJw57BDWD94Ba6/gG+Ee4J5PhGBYIEDmpx8UTYk8tMNMs4M/WtlyWkUjRENnTq8UEwfDPhzHGRv3NIuA==
     repository: https://github.com/CAPTAIN1275/dsh-ui-web
-    gitHead: 994656f936c0d946472e5eac9e9389bb13bd7735
+    gitHead: 0a2dfa5b5e43844cae6011363d48eb2e585c8f72
 compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
@@ -50,30 +50,30 @@ review:
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 994656f936c0d946472e5eac9e9389bb13bd7735
+    commit: 0a2dfa5b5e43844cae6011363d48eb2e585c8f72
     packageVersion: 0.4.1
     scannerVersion: static-v2
-    # 校正该固定版本已发布包的声明提取结果；保留原静态扫描时间与结果，不代表重新扫描或运行实测。
     dshVersion: ">=0.2.0-rc.2"
     mode: static
     result: pass
-    checkedAt: 2026-10-08T23:45:00.426Z
+    checkedAt: 2026-10-20T22:15:10.705Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 969
-starsSnapshot: 42
-releaseUpdatedAt: 2026-10-08T23:45:02.252Z
-metadataUpdatedAt: 2026-10-15T08:12:18.000Z
-starsUpdatedAt: 2026-10-13T23:17:02.032Z
-updatedAt: 2026-10-15T08:12:18.000Z
+starsSnapshot: 41
+releaseUpdatedAt: 2026-10-20T22:15:13.222Z
+metadataUpdatedAt: 2026-10-20T22:15:13.222Z
+starsUpdatedAt: 2026-10-20T22:15:13.222Z
+updatedAt: 2026-10-20T22:15:13.222Z

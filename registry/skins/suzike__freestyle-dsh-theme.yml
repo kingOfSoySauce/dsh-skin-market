@@ -5,7 +5,7 @@ name:
 author: suzike
 description: DeepSeek Harness 主题体验插件：OKLCH 主题提案 + 主题设计器（跨重启持久化）
 repo: https://github.com/suzike/freestyle-dsh-theme
-package: "@linxin666/freestyle-dsh-theme"
+package: dsh-freestyle-theme
 rowId: theme
 category: theme
 tags:
@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:suzike/freestyle-dsh-theme#cd9e9eb53ccbaded4cf6123919e24392daeda0d4
-  version: 0.1.0
-  commit: cd9e9eb53ccbaded4cf6123919e24392daeda0d4
+  target: github:suzike/freestyle-dsh-theme#4bb91e20fee3e6e3487a976571d16c88362b8402
+  version: 0.4.0
+  commit: 4bb91e20fee3e6e3487a976571d16c88362b8402
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -29,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/suzike/freestyle-dsh-theme/cd9e9eb53ccbaded4cf6123919e24392daeda0d4/docs/images/screenshot-proposer.png
   - https://raw.githubusercontent.com/suzike/freestyle-dsh-theme/cd9e9eb53ccbaded4cf6123919e24392daeda0d4/docs/images/screenshot-designer.png
+listScreenshot: https://raw.githubusercontent.com/suzike/freestyle-dsh-theme/cd9e9eb53ccbaded4cf6123919e24392daeda0d4/docs/images/screenshot-proposer.png
 review:
   compatibility: verified
   preview: verified
@@ -36,23 +37,25 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
-    compatibility: pass
+    readmeScreenshots: improve
+    compatibility: improve
     installation: improve
     installCommand: improve
     topic: pass
   suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: cd9e9eb53ccbaded4cf6123919e24392daeda0d4
-    packageVersion: 0.1.0
+    commit: 4bb91e20fee3e6e3487a976571d16c88362b8402
+    packageVersion: 0.4.0
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: unknown
-    checkedAt: 2026-08-23T05:27:45.593Z
+    checkedAt: 2026-10-20T22:15:23.696Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -61,7 +64,7 @@ license:
   commercialUse: true
 featuredRank: 41
 starsSnapshot: 12
-releaseUpdatedAt: 2026-08-23T05:27:45.650Z
-metadataUpdatedAt: 2026-08-23T05:27:45.650Z
+releaseUpdatedAt: 2026-10-20T22:15:23.981Z
+metadataUpdatedAt: 2026-10-20T22:15:23.981Z
 starsUpdatedAt: 2026-10-08T23:45:11.301Z
-updatedAt: 2026-10-08T23:45:11.301Z
+updatedAt: 2026-10-20T22:15:23.981Z
