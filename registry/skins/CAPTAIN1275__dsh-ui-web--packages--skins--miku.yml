@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:CAPTAIN1275/dsh-ui-web#0a2dfa5b5e43844cae6011363d48eb2e585c8f72&path:/packages/skins/miku
+  target: github:CAPTAIN1275/dsh-ui-web#68c99d7e6d5966e9006e3cb1c13d3de7261a25d6&path:/packages/skins/miku
   version: 0.4.0
-  commit: 0a2dfa5b5e43844cae6011363d48eb2e585c8f72
+  commit: 68c99d7e6d5966e9006e3cb1c13d3de7261a25d6
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -52,20 +52,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 0a2dfa5b5e43844cae6011363d48eb2e585c8f72
+    commit: 68c99d7e6d5966e9006e3cb1c13d3de7261a25d6
     packageVersion: 0.4.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-20T22:15:10.676Z
+    checkedAt: 2026-10-21T22:17:04.102Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 969
 starsSnapshot: 41
-releaseUpdatedAt: 2026-10-20T22:15:12.497Z
-metadataUpdatedAt: 2026-10-20T22:15:12.497Z
+releaseUpdatedAt: 2026-10-21T22:17:05.477Z
+metadataUpdatedAt: 2026-10-21T22:17:05.477Z
 starsUpdatedAt: 2026-10-20T22:15:12.497Z
-updatedAt: 2026-10-20T22:15:12.497Z
+updatedAt: 2026-10-21T22:17:05.477Z

@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ZJUZhiyuCai/dsh-ivory#f205fea55c7fe9893f44416edb610e378676eddd
-  version: 0.2.16
-  commit: f205fea55c7fe9893f44416edb610e378676eddd
+  target: github:ZJUZhiyuCai/dsh-ivory#b44a2bd545da6ce3a5744a77e02e3362f16b6ed1
+  version: 0.2.17
+  commit: b44a2bd545da6ce3a5744a77e02e3362f16b6ed1
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-ivory
-    packageVersion: 0.2.16
-    integrity: sha512-M/pmX142HqFNcakdXmQRJH8Ub2H2o7PaZFCFSPQ/sa20dYFgVVfBL0PzyxNJ+SxbWy4p+fTYCt5i527RkTJDzg==
+    packageVersion: 0.2.17
+    integrity: sha512-j/fJboMMwV6o4VZLRp5PZcwqNDUTJmqdhjadrCfZLgJQRYpSUGI8YeVsXhg9XgQqzOINUJgq87u2lIHHy+sTbg==
   npm:
     name: dsh-ivory
-    version: 0.2.16
-    integrity: sha512-M/pmX142HqFNcakdXmQRJH8Ub2H2o7PaZFCFSPQ/sa20dYFgVVfBL0PzyxNJ+SxbWy4p+fTYCt5i527RkTJDzg==
+    version: 0.2.17
+    integrity: sha512-j/fJboMMwV6o4VZLRp5PZcwqNDUTJmqdhjadrCfZLgJQRYpSUGI8YeVsXhg9XgQqzOINUJgq87u2lIHHy+sTbg==
     repository: https://github.com/ZJUZhiyuCai/dsh-ivory
-    gitHead: f205fea55c7fe9893f44416edb610e378676eddd
+    gitHead: b44a2bd545da6ce3a5744a77e02e3362f16b6ed1
 compatibility:
   dsh: ">=0.1.0-rc.6 <0.2.0"
   platform:
@@ -58,22 +58,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 <0.2.0 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 || ^0.1.5-rc.1 || ^0.2.0-rc.2 || ^0.2.1-rc.1 完全覆盖（固定版本 f205fea55c7fe9893f44416edb610e378676eddd）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 <0.2.0 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 || ^0.1.5-rc.1 || ^0.2.0-rc.2 || ^0.2.1-rc.1 完全覆盖（固定版本 b44a2bd545da6ce3a5744a77e02e3362f16b6ed1）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: f205fea55c7fe9893f44416edb610e378676eddd
-    packageVersion: 0.2.16
+    commit: b44a2bd545da6ce3a5744a77e02e3362f16b6ed1
+    packageVersion: 0.2.17
     scannerVersion: static-v2
     dshVersion: ">=0.1.2-rc.1 <0.3.0 || ^0.1.5-rc.1 || ^0.2.0-rc.2 || ^0.2.1-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-10-20T22:17:01.837Z
+    checkedAt: 2026-10-21T22:18:53.315Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 129
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-20T22:17:03.258Z
-metadataUpdatedAt: 2026-10-20T22:17:03.258Z
+releaseUpdatedAt: 2026-10-21T22:18:54.893Z
+metadataUpdatedAt: 2026-10-21T22:18:54.893Z
 starsUpdatedAt: 2026-10-08T23:46:25.353Z
-updatedAt: 2026-10-20T22:17:03.258Z
+updatedAt: 2026-10-21T22:18:54.893Z

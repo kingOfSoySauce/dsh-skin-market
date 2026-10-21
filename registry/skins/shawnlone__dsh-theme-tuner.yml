@@ -21,6 +21,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: dsh-theme-tuner
+    version: 0.1.4
+    integrity: sha512-20lqRM2RhS3PargdBOQ5aYEHRkRnZvLqXFdaIbXooWzJ1i8marCBHkaGi/0OWh+MXcjkH65zMPqKPd2jJuSS0Q==
+    repository: https://github.com/shawnlone/dsh-theme-tuner
+    gitHead: c0dd8333b6e25eded1c3221529707929228da5c8
 compatibility:
   dsh: ">=0.1.1-rc.2 <=0.1.2-rc.1"
   platform:
@@ -57,7 +63,7 @@ license:
   commercialUse: true
 featuredRank: 1064
 starsSnapshot: 3
-releaseUpdatedAt: 2026-10-13T01:17:57.860Z
+releaseUpdatedAt: 2026-10-21T22:17:47.638Z
 metadataUpdatedAt: 2026-10-13T01:17:57.860Z
 starsUpdatedAt: 2026-10-15T22:09:24.184Z
-updatedAt: 2026-10-15T22:09:24.184Z
+updatedAt: 2026-10-21T22:17:47.638Z

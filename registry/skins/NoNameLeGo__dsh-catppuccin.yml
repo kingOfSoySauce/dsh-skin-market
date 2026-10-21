@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:NoNameLeGo/dsh-catppuccin#2b53263de7a214b786910e65f4d653e94830ed52
-  version: 0.6.4-beta.0
-  commit: 2b53263de7a214b786910e65f4d653e94830ed52
+  target: github:NoNameLeGo/dsh-catppuccin#b5263f55d090b57afa1abfd049422c2acf3c4dd4
+  version: 0.6.4
+  commit: b5263f55d090b57afa1abfd049422c2acf3c4dd4
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
-  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/2b53263de7a214b786910e65f4d653e94830ed52"
+  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/b5263f55d090b57afa1abfd049422c2acf3c4dd4"
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -52,15 +52,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 0.2.1-rc.2 完全覆盖（固定版本 2b53263de7a214b786910e65f4d653e94830ed52）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 0.2.1-rc.2 完全覆盖（固定版本 b5263f55d090b57afa1abfd049422c2acf3c4dd4）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 2b53263de7a214b786910e65f4d653e94830ed52
-    packageVersion: 0.6.4-beta.0
+    commit: b5263f55d090b57afa1abfd049422c2acf3c4dd4
+    packageVersion: 0.6.4
     scannerVersion: static-v2
     dshVersion: 0.2.1-rc.2
     mode: static
     result: unknown
-    checkedAt: 2026-10-19T22:54:22.857Z
+    checkedAt: 2026-10-21T22:17:00.295Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -68,8 +68,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 5
-starsSnapshot: 66
-releaseUpdatedAt: 2026-10-19T22:54:26.493Z
-metadataUpdatedAt: 2026-10-19T22:54:26.493Z
-starsUpdatedAt: 2026-10-20T22:15:06.876Z
-updatedAt: 2026-10-20T22:15:06.876Z
+starsSnapshot: 67
+releaseUpdatedAt: 2026-10-21T22:17:01.462Z
+metadataUpdatedAt: 2026-10-21T22:17:01.462Z
+starsUpdatedAt: 2026-10-21T22:17:01.462Z
+updatedAt: 2026-10-21T22:17:01.462Z

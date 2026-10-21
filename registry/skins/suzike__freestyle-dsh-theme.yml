@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:suzike/freestyle-dsh-theme#4bb91e20fee3e6e3487a976571d16c88362b8402
-  version: 0.4.0
-  commit: 4bb91e20fee3e6e3487a976571d16c88362b8402
+  target: github:suzike/freestyle-dsh-theme#12db4f059aa2ca3e318297167e170abbb7d7bed4
+  version: 0.7.3
+  commit: 12db4f059aa2ca3e318297167e170abbb7d7bed4
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -49,13 +49,13 @@ health:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 4bb91e20fee3e6e3487a976571d16c88362b8402
-    packageVersion: 0.4.0
+    commit: 12db4f059aa2ca3e318297167e170abbb7d7bed4
+    packageVersion: 0.7.3
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: unknown
-    checkedAt: 2026-10-20T22:15:23.696Z
+    checkedAt: 2026-10-21T22:17:15.609Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -64,7 +64,7 @@ license:
   commercialUse: true
 featuredRank: 41
 starsSnapshot: 12
-releaseUpdatedAt: 2026-10-20T22:15:23.981Z
-metadataUpdatedAt: 2026-10-20T22:15:23.981Z
+releaseUpdatedAt: 2026-10-21T22:17:15.852Z
+metadataUpdatedAt: 2026-10-21T22:17:15.852Z
 starsUpdatedAt: 2026-10-08T23:45:11.301Z
-updatedAt: 2026-10-20T22:15:23.981Z
+updatedAt: 2026-10-21T22:17:15.852Z

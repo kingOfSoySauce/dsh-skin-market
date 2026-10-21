@@ -5,7 +5,7 @@ name:
 author: jiangnanquan
 description: DSH web 界面增强：Solarized 浅色主题 + Maple Mono 字体、紧凑对话布局、思考/工具链折叠胶囊、官方余额 + 本轮成本 + 用量图表
 repo: https://github.com/jiangnanquan/dsh-ux
-package: dsh-enhance
+package: dsh-uxexo
 rowId: dsh-enhance
 category: theme
 tags:
@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:jiangnanquan/dsh-ux#36f04afa2c3ebecd6a2cc967ac2ca2ae278b092f
-  version: 1.9.2
-  commit: 36f04afa2c3ebecd6a2cc967ac2ca2ae278b092f
+  target: github:jiangnanquan/dsh-ux#048c34cf5a778f2f095fb6076a6e12b256ddd390
+  version: 2.0.0
+  commit: 048c34cf5a778f2f095fb6076a6e12b256ddd390
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -43,20 +43,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 36f04afa2c3ebecd6a2cc967ac2ca2ae278b092f
-    packageVersion: 1.9.2
+    commit: 048c34cf5a778f2f095fb6076a6e12b256ddd390
+    packageVersion: 2.0.0
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6 || ^0.2.0-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-10-18T09:45:36.000Z
+    checkedAt: 2026-10-21T22:17:18.190Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1034
 starsSnapshot: 9
-releaseUpdatedAt: 2026-10-18T09:45:37.023Z
-metadataUpdatedAt: 2026-10-18T09:45:37.023Z
+releaseUpdatedAt: 2026-10-21T22:17:18.724Z
+metadataUpdatedAt: 2026-10-21T22:17:18.724Z
 starsUpdatedAt: 2026-10-14T22:13:57.255Z
-updatedAt: 2026-10-18T09:45:37.023Z
+updatedAt: 2026-10-21T22:17:18.724Z

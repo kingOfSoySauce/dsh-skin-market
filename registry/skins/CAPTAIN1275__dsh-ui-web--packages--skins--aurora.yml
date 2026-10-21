@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:CAPTAIN1275/dsh-ui-web#0a2dfa5b5e43844cae6011363d48eb2e585c8f72&path:/packages/skins/aurora
+  target: github:CAPTAIN1275/dsh-ui-web#68c99d7e6d5966e9006e3cb1c13d3de7261a25d6&path:/packages/skins/aurora
   version: 0.4.1
-  commit: 0a2dfa5b5e43844cae6011363d48eb2e585c8f72
+  commit: 68c99d7e6d5966e9006e3cb1c13d3de7261a25d6
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
-  allowBuild: "@captain1275/dsh-client-ui-skin-aurora@https://codeload.github.com/CAPTAIN1275/dsh-ui-web/tar.gz/0a2dfa5b5e43844cae6011363d48eb2e585c8f72#path:packages/skins/aurora"
+  allowBuild: "@captain1275/dsh-client-ui-skin-aurora@https://codeload.github.com/CAPTAIN1275/dsh-ui-web/tar.gz/68c99d7e6d5966e9006e3cb1c13d3de7261a25d6#path:packages/skins/aurora"
 compatibility:
   dsh: ^0.1.1-rc.2
   platform:
@@ -52,22 +52,22 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.2 未被本次检测范围 ^0.2.0-rc.2 完全覆盖（固定版本 0a2dfa5b5e43844cae6011363d48eb2e585c8f72）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.2 未被本次检测范围 ^0.2.0-rc.2 完全覆盖（固定版本 68c99d7e6d5966e9006e3cb1c13d3de7261a25d6）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 0a2dfa5b5e43844cae6011363d48eb2e585c8f72
+    commit: 68c99d7e6d5966e9006e3cb1c13d3de7261a25d6
     packageVersion: 0.4.1
     scannerVersion: static-v2
     dshVersion: ^0.2.0-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-10-20T22:15:10.643Z
+    checkedAt: 2026-10-21T22:17:03.855Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 969
 starsSnapshot: 41
-releaseUpdatedAt: 2026-10-20T22:15:12.637Z
-metadataUpdatedAt: 2026-10-20T22:15:12.637Z
+releaseUpdatedAt: 2026-10-21T22:17:05.643Z
+metadataUpdatedAt: 2026-10-21T22:17:05.643Z
 starsUpdatedAt: 2026-10-20T22:15:12.637Z
-updatedAt: 2026-10-20T22:15:12.637Z
+updatedAt: 2026-10-21T22:17:05.643Z
