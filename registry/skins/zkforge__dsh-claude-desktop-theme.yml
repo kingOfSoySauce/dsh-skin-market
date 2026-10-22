@@ -15,12 +15,18 @@ modes:
   - light
   - dark
 install:
-  target: github:zkforge/dsh-claude-desktop-theme#e6131a700142a3d003e1539219a2b6193220b476
-  version: 0.4.6
-  commit: e6131a700142a3d003e1539219a2b6193220b476
+  target: github:zkforge/dsh-claude-desktop-theme#1d831324cb0548e87d71e56af57ead2e9fe06e75
+  version: 0.5.0
+  commit: 1d831324cb0548e87d71e56af57ead2e9fe06e75
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: dsh-claude-desktop-theme
+    version: 0.5.0
+    integrity: sha512-9X8h82R7EMJdXo3CoWd2LQURlNj3TtlLRB8p/L6mwYPetfTeepD+aAja1pM4UvxLP/34wxlBTIP/7f/Vl2czHQ==
+    repository: https://github.com/zkforge/dsh-claude-desktop-theme
+    gitHead: 1d831324cb0548e87d71e56af57ead2e9fe06e75
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
@@ -38,7 +44,7 @@ listScreenshot: https://raw.githubusercontent.com/zkforge/dsh-claude-desktop-the
 review:
   compatibility: verified
   preview: verified
-  installation: verified
+  installation: manual-only
 health:
   status: improvements
   checks:
@@ -51,13 +57,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: e6131a700142a3d003e1539219a2b6193220b476
-    packageVersion: 0.4.6
+    commit: 1d831324cb0548e87d71e56af57ead2e9fe06e75
+    packageVersion: 0.5.0
     scannerVersion: static-v2
     dshVersion: 0.2.0-rc.2
     mode: static
     result: unknown
-    checkedAt: 2026-10-21T22:17:18.807Z
+    checkedAt: 2026-10-22T22:16:55.445Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -65,8 +71,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1113
-starsSnapshot: 11
-releaseUpdatedAt: 2026-10-22T06:40:00.000Z
-metadataUpdatedAt: 2026-10-22T06:40:00.000Z
-starsUpdatedAt: 2026-10-22T06:40:00.000Z
-updatedAt: 2026-10-22T06:40:00.000Z
+starsSnapshot: 13
+releaseUpdatedAt: 2026-10-22T22:16:57.787Z
+metadataUpdatedAt: 2026-10-22T22:16:57.787Z
+starsUpdatedAt: 2026-10-22T22:16:57.787Z
+updatedAt: 2026-10-22T22:16:57.787Z

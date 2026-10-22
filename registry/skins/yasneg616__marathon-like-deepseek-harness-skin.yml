@@ -51,14 +51,14 @@ health:
     dshVersion: ">=0.2.0-rc.2 <0.2.2-0"
     mode: static
     result: pass
-    checkedAt: "2026-10-22T05:40:00.000Z"
+    checkedAt: 2026-10-22T05:40:00.000Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1106
-starsSnapshot: 5
-releaseUpdatedAt: "2026-10-22T06:05:00.000Z"
-metadataUpdatedAt: "2026-10-22T06:05:00.000Z"
-starsUpdatedAt: "2026-10-22T06:05:00.000Z"
-updatedAt: "2026-10-22T06:05:00.000Z"
+starsSnapshot: 6
+releaseUpdatedAt: 2026-10-22T06:05:00.000Z
+metadataUpdatedAt: 2026-10-22T06:05:00.000Z
+starsUpdatedAt: 2026-10-22T22:17:11.018Z
+updatedAt: 2026-10-22T22:17:11.018Z

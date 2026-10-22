@@ -19,9 +19,9 @@ modes:
   - light
   - dark
 install:
-  target: github:berhbro/dsh-cyrene-theme#6f2e3ad4b4a28379b1d1932feb330f79213273cd
-  version: 0.1.1
-  commit: 6f2e3ad4b4a28379b1d1932feb330f79213273cd
+  target: github:berhbro/dsh-cyrene-theme#dda6092e53c5b9f0897813ea419d6b313219317c
+  version: 0.2.0
+  commit: dda6092e53c5b9f0897813ea419d6b313219317c
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -50,19 +50,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 6f2e3ad4b4a28379b1d1932feb330f79213273cd
-    packageVersion: 0.1.1
+    commit: dda6092e53c5b9f0897813ea419d6b313219317c
+    packageVersion: 0.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-21T22:17:10.360Z
+    checkedAt: 2026-10-22T22:16:47.372Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1109
-starsSnapshot: 28
-releaseUpdatedAt: 2026-10-22T06:40:00.000Z
-metadataUpdatedAt: 2026-10-22T06:40:00.000Z
-starsUpdatedAt: 2026-10-22T06:40:00.000Z
-updatedAt: 2026-10-22T06:40:00.000Z
+starsSnapshot: 29
+releaseUpdatedAt: 2026-10-22T22:16:48.349Z
+metadataUpdatedAt: 2026-10-22T22:16:48.349Z
+starsUpdatedAt: 2026-10-22T22:16:48.349Z
+updatedAt: 2026-10-22T22:16:48.349Z

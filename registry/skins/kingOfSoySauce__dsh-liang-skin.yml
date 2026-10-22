@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:kingOfSoySauce/dsh-liang-skin#a598702bdcdd51cd201b96bdd60efc89a255c787
+  target: github:kingOfSoySauce/dsh-liang-skin#f6c90d173c67112217a5adecea71d14d8bc9063d
   version: 0.1.12
-  commit: a598702bdcdd51cd201b96bdd60efc89a255c787
+  commit: f6c90d173c67112217a5adecea71d14d8bc9063d
   desktop:
     mode: managed
     registry: npm
@@ -30,7 +30,7 @@ install:
     version: 0.1.12
     integrity: sha512-9aBZ1b9do5aadriSEGpkxClyZuQ1M/zJW84+176B/l75sH9nVUHL0fiqw7JwlSZWIcPym0eyvydNzCSkb7IgRA==
     repository: https://github.com/kingOfSoySauce/dsh-liang-skin
-    gitHead: a598702bdcdd51cd201b96bdd60efc89a255c787
+    gitHead: f6c90d173c67112217a5adecea71d14d8bc9063d
 compatibility:
   dsh: ^0.1.0-rc.6 || 0.2.0-rc.2
   platform:
@@ -53,20 +53,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: a598702bdcdd51cd201b96bdd60efc89a255c787
+    commit: f6c90d173c67112217a5adecea71d14d8bc9063d
     packageVersion: 0.1.12
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-20T04:45:01.744Z
+    checkedAt: 2026-10-22T22:16:38.395Z
     findings: []
 license:
   code: NOASSERTION
   commercialUse: false
   notice: 仓库当前未声明许可证；安装和再分发前请向作者确认授权。
 featuredRank: 1
-starsSnapshot: 281
-releaseUpdatedAt: 2026-10-20T04:45:01.744Z
-metadataUpdatedAt: 2026-10-20T04:45:01.744Z
-starsUpdatedAt: 2026-10-21T22:16:56.402Z
-updatedAt: 2026-10-21T22:16:56.402Z
+starsSnapshot: 296
+releaseUpdatedAt: 2026-10-22T22:16:38.982Z
+metadataUpdatedAt: 2026-10-22T22:16:38.982Z
+starsUpdatedAt: 2026-10-22T22:16:38.982Z
+updatedAt: 2026-10-22T22:16:38.982Z
