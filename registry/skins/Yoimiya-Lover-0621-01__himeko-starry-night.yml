@@ -14,14 +14,14 @@ modes:
   - light
   - dark
 install:
-  target: github:Yoimiya-Lover-0621-01/himeko-starry-night#f2eeef7d2cb5d499da7974ad203bef183c27e7a3
-  version: 1.0.1
-  commit: f2eeef7d2cb5d499da7974ad203bef183c27e7a3
+  target: github:Yoimiya-Lover-0621-01/himeko-starry-night#00f9fd752756b208371d2497236ffb5d91ea503e
+  version: 1.1.0
+  commit: 00f9fd752756b208371d2497236ffb5d91ea503e
   desktop:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1-rc.2 <0.3.0"
   platform:
     - web
 screenshots:
@@ -30,33 +30,33 @@ screenshots:
   - https://raw.githubusercontent.com/Yoimiya-Lover-0621-01/himeko-starry-night/f5b83dd7fa34f21a9d042d2f47ff1e14135792bd/preview-plugins.png
 listScreenshot: https://raw.githubusercontent.com/Yoimiya-Lover-0621-01/himeko-starry-night/f2eeef7d2cb5d499da7974ad203bef183c27e7a3/preview.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
-    commit: f2eeef7d2cb5d499da7974ad203bef183c27e7a3
-    packageVersion: 1.0.1
+    commit: 00f9fd752756b208371d2497236ffb5d91ea503e
+    packageVersion: 1.1.0
     scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-22T22:19:23.056Z
+    checkedAt: 2026-10-23T22:05:05.513Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-22T22:19:23.948Z
-metadataUpdatedAt: 2026-10-22T22:19:23.948Z
+releaseUpdatedAt: 2026-10-23T22:05:07.007Z
+metadataUpdatedAt: 2026-10-23T22:05:07.007Z
 starsUpdatedAt: 2026-10-22T15:00:01.347Z
-updatedAt: 2026-10-22T22:19:23.948Z
+updatedAt: 2026-10-23T22:05:07.007Z

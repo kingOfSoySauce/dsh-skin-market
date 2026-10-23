@@ -16,19 +16,19 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#e64243af0c21caa5afa99264cb2c6198f16a3d68
-  version: 0.1.23
-  commit: e64243af0c21caa5afa99264cb2c6198f16a3d68
+  target: github:TQSY114514/dsh-ui-appearance#8cde101b665bb7e51a6306b80c8ae3f74ff91e91
+  version: 0.1.24
+  commit: 8cde101b665bb7e51a6306b80c8ae3f74ff91e91
   desktop:
     mode: manual-only
     reason: npm-version-mismatch
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/e64243af0c21caa5afa99264cb2c6198f16a3d68
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/8cde101b665bb7e51a6306b80c8ae3f74ff91e91
   npm:
     name: dsh-ui-appearance
-    version: 0.1.23
-    integrity: sha512-CEniSKkCsE4JU7Cb0ZtGw1gQe9Wf0KoJEV4sri3lEofwtddaH2ZGLJh+EspGyciSaIKWuIx3ulQGrAOADTVHpQ==
+    version: 0.1.24
+    integrity: sha512-TSZukTpSUQfNdBejsr0aWnrx4EUGr6Xl83TBqXDIT7eetdQwNgRAvlrzW6ag5c4n0PWX3uSxc8tJmyMuhQ5rag==
     repository: https://github.com/TQSY114514/dsh-ui-appearance
-    gitHead: e64243af0c21caa5afa99264cb2c6198f16a3d68
+    gitHead: 8cde101b665bb7e51a6306b80c8ae3f74ff91e91
 compatibility:
   dsh: unverified
   platform:
@@ -60,12 +60,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: e64243af0c21caa5afa99264cb2c6198f16a3d68
-    packageVersion: 0.1.23
+    commit: 8cde101b665bb7e51a6306b80c8ae3f74ff91e91
+    packageVersion: 0.1.24
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-10-18T09:45:23.167Z
+    checkedAt: 2026-10-23T22:01:22.251Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -74,7 +74,7 @@ license:
   commercialUse: true
 featuredRank: 36
 starsSnapshot: 23
-releaseUpdatedAt: 2026-10-18T09:45:26.090Z
-metadataUpdatedAt: 2026-10-18T09:45:26.090Z
+releaseUpdatedAt: 2026-10-23T22:01:24.206Z
+metadataUpdatedAt: 2026-10-23T22:01:24.206Z
 starsUpdatedAt: 2026-10-18T09:45:26.090Z
-updatedAt: 2026-10-18T09:45:26.090Z
+updatedAt: 2026-10-23T22:01:24.206Z

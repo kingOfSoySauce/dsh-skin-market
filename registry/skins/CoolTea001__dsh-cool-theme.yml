@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CoolTea001/dsh-cool-theme#4731abe34293078d850b9e2c0f3f25d65c097b93
-  version: 0.9.2
-  commit: 4731abe34293078d850b9e2c0f3f25d65c097b93
+  target: github:CoolTea001/dsh-cool-theme#0758f7fd0d1091408c648a21d419bc3c3a343e07
+  version: 0.9.3
+  commit: 0758f7fd0d1091408c648a21d419bc3c3a343e07
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-cool-theme
-    packageVersion: 0.9.2
-    integrity: sha512-FRwH6h2THCucinSYYNYbHxgAxPvZfHSkPhmw9xvvfjTnU8P+fcV6F8DJ1JC6z5m2rLP0Xycb8cM5uZZm9keTuA==
+    packageVersion: 0.9.3
+    integrity: sha512-ixZtByAWNp5q0Ra+w2KTJgNyJOB0r3FNaXnyrWuuGUhCFtAW012fG9Zau6p88S2SZ595UySd3ubc0rTFCwzUBQ==
   npm:
     name: dsh-cool-theme
-    version: 0.9.2
-    integrity: sha512-FRwH6h2THCucinSYYNYbHxgAxPvZfHSkPhmw9xvvfjTnU8P+fcV6F8DJ1JC6z5m2rLP0Xycb8cM5uZZm9keTuA==
+    version: 0.9.3
+    integrity: sha512-ixZtByAWNp5q0Ra+w2KTJgNyJOB0r3FNaXnyrWuuGUhCFtAW012fG9Zau6p88S2SZ595UySd3ubc0rTFCwzUBQ==
     repository: https://github.com/CoolTea001/dsh-cool-theme
-    gitHead: 4731abe34293078d850b9e2c0f3f25d65c097b93
+    gitHead: 0758f7fd0d1091408c648a21d419bc3c3a343e07
 compatibility:
   dsh: unverified
   platform:
@@ -55,19 +55,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 4731abe34293078d850b9e2c0f3f25d65c097b93
-    packageVersion: 0.9.2
+    commit: 0758f7fd0d1091408c648a21d419bc3c3a343e07
+    packageVersion: 0.9.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-21T22:17:28.731Z
+    checkedAt: 2026-10-23T22:01:47.469Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1056
-starsSnapshot: 5
-releaseUpdatedAt: 2026-10-21T22:17:29.550Z
-metadataUpdatedAt: 2026-10-21T22:17:29.550Z
-starsUpdatedAt: 2026-10-13T23:17:36.365Z
-updatedAt: 2026-10-21T22:17:29.550Z
+starsSnapshot: 6
+releaseUpdatedAt: 2026-10-23T22:01:48.372Z
+metadataUpdatedAt: 2026-10-23T22:01:48.372Z
+starsUpdatedAt: 2026-10-23T22:01:48.372Z
+updatedAt: 2026-10-23T22:01:48.372Z

@@ -17,22 +17,22 @@ modes:
   - light
   - dark
 install:
-  target: github:xi-kari/dsh-amphoreus#6ede1dd895a95b849f918437a6712fc8d974d567
-  version: 0.4.2
-  commit: 6ede1dd895a95b849f918437a6712fc8d974d567
+  target: github:xi-kari/dsh-amphoreus#f04a1e1a3a4dc9baa86b8995ce5c9dce8d27fc48
+  version: 0.5.0
+  commit: f04a1e1a3a4dc9baa86b8995ce5c9dce8d27fc48
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-amphoreus
-    packageVersion: 0.4.2
-    integrity: sha512-IRp/4Sv027/NiQIkW+WEutHQpsEOW/YtQ0YywaZ2Ia1egS5oDYUV0NRureNEFdkq01/Fm5/11+1oZ0E7Gil1bA==
-  allowBuild: dsh-amphoreus@https://codeload.github.com/xi-kari/dsh-amphoreus/tar.gz/6ede1dd895a95b849f918437a6712fc8d974d567
+    packageVersion: 0.5.0
+    integrity: sha512-QxmN72nvukE0iHg53m6KTx0J/spa1rJhFGcQdhp3t5gESVwkEcn8GDc4CCero9bKu/7BwACNQC55hk7c7I2M4w==
+  allowBuild: dsh-amphoreus@https://codeload.github.com/xi-kari/dsh-amphoreus/tar.gz/f04a1e1a3a4dc9baa86b8995ce5c9dce8d27fc48
   npm:
     name: dsh-amphoreus
-    version: 0.4.2
-    integrity: sha512-IRp/4Sv027/NiQIkW+WEutHQpsEOW/YtQ0YywaZ2Ia1egS5oDYUV0NRureNEFdkq01/Fm5/11+1oZ0E7Gil1bA==
+    version: 0.5.0
+    integrity: sha512-QxmN72nvukE0iHg53m6KTx0J/spa1rJhFGcQdhp3t5gESVwkEcn8GDc4CCero9bKu/7BwACNQC55hk7c7I2M4w==
     repository: https://github.com/xi-kari/dsh-amphoreus
-    gitHead: 6ede1dd895a95b849f918437a6712fc8d974d567
+    gitHead: f04a1e1a3a4dc9baa86b8995ce5c9dce8d27fc48
 compatibility:
   dsh: 0.1.2-alpha.4
   platform:
@@ -56,15 +56,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 0.1.2-alpha.4 未被本次检测范围 0.1.6-alpha.2 完全覆盖（固定版本 6ede1dd895a95b849f918437a6712fc8d974d567）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.2-alpha.4 未被本次检测范围 0.2.1-rc.2 完全覆盖（固定版本 f04a1e1a3a4dc9baa86b8995ce5c9dce8d27fc48）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 6ede1dd895a95b849f918437a6712fc8d974d567
-    packageVersion: 0.4.2
+    commit: f04a1e1a3a4dc9baa86b8995ce5c9dce8d27fc48
+    packageVersion: 0.5.0
     scannerVersion: static-v2
-    dshVersion: 0.1.6-alpha.2
+    dshVersion: 0.2.1-rc.2
     mode: static
     result: unknown
-    checkedAt: 2026-10-21T22:17:39.733Z
+    checkedAt: 2026-10-23T22:02:01.504Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -73,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 1083
 starsSnapshot: 4
-releaseUpdatedAt: 2026-10-21T22:17:40.551Z
-metadataUpdatedAt: 2026-10-21T22:17:40.551Z
+releaseUpdatedAt: 2026-10-23T22:02:03.132Z
+metadataUpdatedAt: 2026-10-23T22:02:03.132Z
 starsUpdatedAt: 2026-09-26T21:57:19.139Z
-updatedAt: 2026-10-21T22:17:40.551Z
+updatedAt: 2026-10-23T22:02:03.132Z
