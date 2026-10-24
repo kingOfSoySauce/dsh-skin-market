@@ -16,9 +16,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:kelemiao/dsh-animation-optimization#6649fa2e1a703884136b488cc17a92e3e336a7bf
-  version: 0.2.3
-  commit: 6649fa2e1a703884136b488cc17a92e3e336a7bf
+  target: github:kelemiao/dsh-animation-optimization#1cb19019d79ec87846027c7a895e1fe0b5ef6e55
+  version: 0.3.5
+  commit: 1cb19019d79ec87846027c7a895e1fe0b5ef6e55
   desktop:
     mode: manual-only
     reason: npm-source-unverified
@@ -43,22 +43,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 完全覆盖（固定版本 6649fa2e1a703884136b488cc17a92e3e336a7bf）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 完全覆盖（固定版本 1cb19019d79ec87846027c7a895e1fe0b5ef6e55）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 6649fa2e1a703884136b488cc17a92e3e336a7bf
-    packageVersion: 0.2.3
+    commit: 1cb19019d79ec87846027c7a895e1fe0b5ef6e55
+    packageVersion: 0.3.5
     scannerVersion: static-v2
     dshVersion: ">=0.1.2-rc.1 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-13T01:16:57.548Z
+    checkedAt: 2026-10-24T21:31:19.301Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1036
 starsSnapshot: 10
-releaseUpdatedAt: 2026-10-13T01:16:58.560Z
-metadataUpdatedAt: 2026-10-13T01:16:58.560Z
+releaseUpdatedAt: 2026-10-24T21:31:20.299Z
+metadataUpdatedAt: 2026-10-24T21:31:20.299Z
 starsUpdatedAt: 2026-10-22T22:16:57.111Z
-updatedAt: 2026-10-22T22:16:57.111Z
+updatedAt: 2026-10-24T21:31:20.299Z

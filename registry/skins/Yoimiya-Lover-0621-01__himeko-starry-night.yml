@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Yoimiya-Lover-0621-01/himeko-starry-night#00f9fd752756b208371d2497236ffb5d91ea503e
-  version: 1.1.0
-  commit: 00f9fd752756b208371d2497236ffb5d91ea503e
+  target: github:Yoimiya-Lover-0621-01/himeko-starry-night#0333bd7c8f4ccd4a1106cfc162cb908adb1f81c4
+  version: 1.2.1
+  commit: 0333bd7c8f4ccd4a1106cfc162cb908adb1f81c4
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -30,33 +30,34 @@ screenshots:
   - https://raw.githubusercontent.com/Yoimiya-Lover-0621-01/himeko-starry-night/f5b83dd7fa34f21a9d042d2f47ff1e14135792bd/preview-plugins.png
 listScreenshot: https://raw.githubusercontent.com/Yoimiya-Lover-0621-01/himeko-starry-night/f2eeef7d2cb5d499da7974ad203bef183c27e7a3/preview.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.2.1-rc.2 <0.3.0 未被本次检测范围 >=0.2.1-rc.3 <0.3.0 完全覆盖（固定版本 0333bd7c8f4ccd4a1106cfc162cb908adb1f81c4）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 00f9fd752756b208371d2497236ffb5d91ea503e
-    packageVersion: 1.1.0
+    commit: 0333bd7c8f4ccd4a1106cfc162cb908adb1f81c4
+    packageVersion: 1.2.1
     scannerVersion: static-v2
-    dshVersion: ">=0.2.1-rc.2 <0.3.0"
+    dshVersion: ">=0.2.1-rc.3 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-23T22:05:05.513Z
+    checkedAt: 2026-10-24T21:34:09.833Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-23T22:05:07.007Z
-metadataUpdatedAt: 2026-10-23T22:05:07.007Z
+releaseUpdatedAt: 2026-10-24T21:34:11.392Z
+metadataUpdatedAt: 2026-10-24T21:34:11.392Z
 starsUpdatedAt: 2026-10-22T15:00:01.347Z
-updatedAt: 2026-10-23T22:05:07.007Z
+updatedAt: 2026-10-24T21:34:11.392Z

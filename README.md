@@ -15,7 +15,7 @@
 
 ### 近期收录
 
-- **2026-10-22**：[berhbro/dsh-cyrene-theme](https://github.com/berhbro/dsh-cyrene-theme)（`0.1.1`）——昔涟主题。详见[收录日志](./docs/recently-added.md#recent-2026-10-22)。
+- **2026-10-25**：本批新增 **1 条**；详见[本批收录日志](./docs/recently-added.md#自动同步更新)。
 
 ## 安装
 

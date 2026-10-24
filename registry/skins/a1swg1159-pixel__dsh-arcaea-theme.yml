@@ -15,9 +15,9 @@ tags:
 modes:
   - light
 install:
-  target: github:a1swg1159-pixel/dsh-arcaea-theme#7cbd4a03df2430ac39c32470cf0e4c7e93dc5918
-  version: 0.5.0
-  commit: 7cbd4a03df2430ac39c32470cf0e4c7e93dc5918
+  target: github:a1swg1159-pixel/dsh-arcaea-theme#d7249dbdb19fdb2d1f22b96a3aad6578b029e914
+  version: 0.7.1
+  commit: d7249dbdb19fdb2d1f22b96a3aad6578b029e914
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,35 +28,35 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/a1swg1159-pixel/dsh-arcaea-theme/7cbd4a03df2430ac39c32470cf0e4c7e93dc5918/assets/repository-banner.png
   - https://raw.githubusercontent.com/a1swg1159-pixel/dsh-arcaea-theme/7cbd4a03df2430ac39c32470cf0e4c7e93dc5918/preview.png
+listScreenshot: https://raw.githubusercontent.com/a1swg1159-pixel/dsh-arcaea-theme/d7249dbdb19fdb2d1f22b96a3aad6578b029e914/assets/repository-banner.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
     compatibility: pass
     installation: pass
-    installCommand: improve
+    installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  suggestions: []
   scan:
-    commit: 7cbd4a03df2430ac39c32470cf0e4c7e93dc5918
-    packageVersion: 0.5.0
+    commit: d7249dbdb19fdb2d1f22b96a3aad6578b029e914
+    packageVersion: 0.7.1
     scannerVersion: static-v2
-    dshVersion: ">=0.1.0-rc.5 <0.2.0"
+    dshVersion: ">=0.1.0-rc.5 <0.2.0 || >=0.2.1-rc.3 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:29:49.468Z
+    checkedAt: 2026-10-24T21:31:57.800Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 75
 starsSnapshot: 2
-releaseUpdatedAt: 2026-08-23T05:29:49.557Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+releaseUpdatedAt: 2026-10-24T21:31:58.583Z
+metadataUpdatedAt: 2026-10-24T21:31:58.583Z
 starsUpdatedAt: 2026-09-18T21:37:39.329Z
-updatedAt: 2026-09-18T21:37:39.329Z
+updatedAt: 2026-10-24T21:31:58.583Z

@@ -17,6 +17,9 @@ install:
   target: github:xiaoyuxixi333/whale-fantasy#065113742e98ebb0a6d26be4e6074ee08d10d3c8
   version: 1.0.0
   commit: 065113742e98ebb0a6d26be4e6074ee08d10d3c8
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -24,6 +27,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/xiaoyuxixi333/whale-fantasy/065113742e98ebb0a6d26be4e6074ee08d10d3c8/preview/light.jpg
   - https://raw.githubusercontent.com/xiaoyuxixi333/whale-fantasy/065113742e98ebb0a6d26be4e6074ee08d10d3c8/preview/dark.jpg
+listScreenshot: https://raw.githubusercontent.com/xiaoyuxixi333/whale-fantasy/065113742e98ebb0a6d26be4e6074ee08d10d3c8/preview/light.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -31,21 +35,30 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
     installCommand: improve
     topic: improve
   suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 065113742e98ebb0a6d26be4e6074ee08d10d3c8
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-24T21:32:15.617Z
+    findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 1000
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-24T01:48:40.595Z
-metadataUpdatedAt: 2026-10-24T01:48:40.595Z
+releaseUpdatedAt: 2026-10-24T21:32:16.074Z
+metadataUpdatedAt: 2026-10-24T21:32:16.074Z
 starsUpdatedAt: 2026-10-24T01:48:40.595Z
-updatedAt: 2026-10-24T01:48:40.595Z
+updatedAt: 2026-10-24T21:32:16.074Z

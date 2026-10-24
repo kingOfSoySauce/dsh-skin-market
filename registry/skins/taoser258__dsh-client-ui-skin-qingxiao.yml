@@ -1,0 +1,75 @@
+id: taoser258.dsh-client-ui-skin-qingxiao
+name:
+  zh: dsh-client-ui-skin-qingxiao
+  en: dsh-client-ui-skin-qingxiao
+author: taoser258
+description: 清宵 · 弦凝清霄 — DSH 美化包
+repo: https://github.com/taoser258/dsh-client-ui-skin-qingxiao
+package: "@taosee258/dsh-client-ui-skin-qingxiao"
+rowId: ui-skin-qingxiao
+category: theme
+tags:
+  - wallpaper
+  - glass
+  - pastel
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:taoser258/dsh-client-ui-skin-qingxiao#cf14084e438a56dd619ab334a83d3498be5e32c7
+  version: 0.4.1
+  commit: cf14084e438a56dd619ab334a83d3498be5e32c7
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@taosee258/dsh-client-ui-skin-qingxiao"
+    packageVersion: 0.4.1
+    integrity: sha512-rrD5WvIXdfMrgezHvw2nLFoL9APSs0m7vWBfHe5RYD7gtrEPDw0luim8nJekHyDhnKc1idJf8c4/wSiYRMCxKA==
+  npm:
+    name: "@taosee258/dsh-client-ui-skin-qingxiao"
+    version: 0.4.1
+    integrity: sha512-rrD5WvIXdfMrgezHvw2nLFoL9APSs0m7vWBfHe5RYD7gtrEPDw0luim8nJekHyDhnKc1idJf8c4/wSiYRMCxKA==
+    repository: https://github.com/taoser258/dsh-client-ui-skin-qingxiao
+    gitHead: cf14084e438a56dd619ab334a83d3498be5e32c7
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/taoser258/dsh-client-ui-skin-qingxiao/38f5bc044ccd562713e28f59f28b54732011f974/preview/screen-light.png
+  - https://raw.githubusercontent.com/taoser258/dsh-client-ui-skin-qingxiao/38f5bc044ccd562713e28f59f28b54732011f974/preview/screen-dark.png
+listScreenshot: https://raw.githubusercontent.com/taoser258/dsh-client-ui-skin-qingxiao/38f5bc044ccd562713e28f59f28b54732011f974/preview/screen-light.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: cf14084e438a56dd619ab334a83d3498be5e32c7
+    packageVersion: 0.4.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-10-24T21:31:16.971Z
+    findings: []
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1041
+starsSnapshot: 11
+releaseUpdatedAt: 2026-10-24T21:31:18.197Z
+metadataUpdatedAt: 2026-10-24T21:31:18.197Z
+starsUpdatedAt: 2026-10-24T21:31:18.197Z
+updatedAt: 2026-10-24T21:31:18.197Z

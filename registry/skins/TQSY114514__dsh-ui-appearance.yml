@@ -16,19 +16,13 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#8cde101b665bb7e51a6306b80c8ae3f74ff91e91
-  version: 0.1.24
-  commit: 8cde101b665bb7e51a6306b80c8ae3f74ff91e91
+  target: github:TQSY114514/dsh-ui-appearance#35524f5f00c1e3e39689f66e59410352cf31afae
+  version: 0.1.25
+  commit: 35524f5f00c1e3e39689f66e59410352cf31afae
   desktop:
     mode: manual-only
     reason: npm-version-mismatch
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/8cde101b665bb7e51a6306b80c8ae3f74ff91e91
-  npm:
-    name: dsh-ui-appearance
-    version: 0.1.24
-    integrity: sha512-TSZukTpSUQfNdBejsr0aWnrx4EUGr6Xl83TBqXDIT7eetdQwNgRAvlrzW6ag5c4n0PWX3uSxc8tJmyMuhQ5rag==
-    repository: https://github.com/TQSY114514/dsh-ui-appearance
-    gitHead: 8cde101b665bb7e51a6306b80c8ae3f74ff91e91
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/35524f5f00c1e3e39689f66e59410352cf31afae
 compatibility:
   dsh: unverified
   platform:
@@ -60,12 +54,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 8cde101b665bb7e51a6306b80c8ae3f74ff91e91
-    packageVersion: 0.1.24
+    commit: 35524f5f00c1e3e39689f66e59410352cf31afae
+    packageVersion: 0.1.25
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-10-23T22:01:22.251Z
+    checkedAt: 2026-10-24T21:31:10.118Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -73,8 +67,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 36
-starsSnapshot: 23
-releaseUpdatedAt: 2026-10-23T22:01:24.206Z
-metadataUpdatedAt: 2026-10-23T22:01:24.206Z
-starsUpdatedAt: 2026-10-18T09:45:26.090Z
-updatedAt: 2026-10-23T22:01:24.206Z
+starsSnapshot: 24
+releaseUpdatedAt: 2026-10-24T21:31:11.491Z
+metadataUpdatedAt: 2026-10-24T21:31:11.491Z
+starsUpdatedAt: 2026-10-24T21:31:11.491Z
+updatedAt: 2026-10-24T21:31:11.491Z
