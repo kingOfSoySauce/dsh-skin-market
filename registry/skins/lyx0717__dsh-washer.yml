@@ -13,9 +13,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:lyx0717/dsh-washer#64c42a879c443a56fbb0ff796151b01ecc17ee5f
-  version: 0.5.0
-  commit: 64c42a879c443a56fbb0ff796151b01ecc17ee5f
+  target: github:lyx0717/dsh-washer#16657e3015886e56f72509b76d675e004149c7e9
+  version: 0.5.2
+  commit: 16657e3015886e56f72509b76d675e004149c7e9
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
@@ -23,8 +23,6 @@ compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/lyx0717__dsh-washer/70ad9a1827df37348f6a892b52101163e4c46c36/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-washing.png
   - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-rinsing.png
@@ -46,19 +44,21 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 64c42a879c443a56fbb0ff796151b01ecc17ee5f
-    packageVersion: 0.5.0
+    commit: 16657e3015886e56f72509b76d675e004149c7e9
+    packageVersion: 0.5.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:52:59.346Z
+    checkedAt: 2026-10-26T09:10:08.088Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-26T01:53:00.135Z
-metadataUpdatedAt: 2026-10-26T01:53:00.135Z
+marketScreenshots:
+  - skin-screenshots/lyx0717__dsh-washer/70ad9a1827df37348f6a892b52101163e4c46c36/conversation.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-10-26T23:11:10.623Z
+metadataUpdatedAt: 2026-10-26T23:11:10.623Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:00.135Z
+updatedAt: 2026-10-26T23:11:10.623Z

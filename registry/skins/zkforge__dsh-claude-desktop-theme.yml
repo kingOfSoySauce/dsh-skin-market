@@ -15,18 +15,18 @@ modes:
   - light
   - dark
 install:
-  target: github:zkforge/dsh-claude-desktop-theme#fea6f64cc107c152fb05097a7f0127038c3d14ac
-  version: 0.5.2
-  commit: fea6f64cc107c152fb05097a7f0127038c3d14ac
+  target: github:zkforge/dsh-claude-desktop-theme#f58eccf706b730df05ed8cc5327fe87aa3f68731
+  version: 0.6.2
+  commit: f58eccf706b730df05ed8cc5327fe87aa3f68731
   desktop:
     mode: manual-only
     reason: npm-package-not-found
   npm:
     name: dsh-claude-desktop-theme
-    version: 0.5.2
-    integrity: sha512-xRDtSg2sM3g1+jiGWODzXRDkcEWAw1Z8O58I0BXvHW4cGGwKe0D2lYOux8QqNe4FRXFX9Vn6R01CHLwiQ3lwkQ==
+    version: 0.6.2
+    integrity: sha512-1J0aH/HxbQS+3lKICIiZlkaNCAQPmiq4O8lFroHfvMoewJ9vINxtmWIrhyB1sH1xuHdP7IwzhvqXyNiB83fc0g==
     repository: https://github.com/zkforge/dsh-claude-desktop-theme
-    gitHead: fea6f64cc107c152fb05097a7f0127038c3d14ac
+    gitHead: f58eccf706b730df05ed8cc5327fe87aa3f68731
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
@@ -56,15 +56,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.2 未被本次检测范围 0.2.1-rc.3 完全覆盖（固定版本 fea6f64cc107c152fb05097a7f0127038c3d14ac）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.2 未被本次检测范围 0.2.1-rc.3 完全覆盖（固定版本 f58eccf706b730df05ed8cc5327fe87aa3f68731）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: fea6f64cc107c152fb05097a7f0127038c3d14ac
-    packageVersion: 0.5.2
+    commit: f58eccf706b730df05ed8cc5327fe87aa3f68731
+    packageVersion: 0.6.2
     scannerVersion: static-v2
     dshVersion: 0.2.1-rc.3
     mode: static
     result: unknown
-    checkedAt: 2026-10-26T01:51:02.803Z
+    checkedAt: 2026-10-26T23:11:19.483Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -73,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 1113
 starsSnapshot: 15
-releaseUpdatedAt: 2026-10-26T01:51:04.977Z
-metadataUpdatedAt: 2026-10-26T01:51:04.977Z
+releaseUpdatedAt: 2026-10-26T23:11:23.740Z
+metadataUpdatedAt: 2026-10-26T23:11:23.740Z
 starsUpdatedAt: 2026-10-26T01:51:04.977Z
-updatedAt: 2026-10-26T01:51:04.977Z
+updatedAt: 2026-10-26T23:11:23.740Z

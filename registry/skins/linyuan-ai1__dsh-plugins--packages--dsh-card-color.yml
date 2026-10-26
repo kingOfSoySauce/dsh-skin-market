@@ -1,0 +1,65 @@
+id: linyuan-ai1.dsh-plugins-linyuana
+name:
+  zh: dsh-plugins-linyuana
+  en: dsh-plugins-linyuana
+author: linyuan-ai1
+description: DeepSeek Harness 的回复卡片颜色 插件。
+repo: https://github.com/linyuan-ai1/dsh-plugins
+subpath: packages/dsh-card-color
+package: dsh-card-color
+rowId: dsh-card-color
+category: theme
+tags:
+  - wallpaper
+  - pastel
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:linyuan-ai1/dsh-plugins#2ea9d87972fbc970cf725f8a7643c738f1196c36&path:/packages/dsh-card-color
+  version: 0.1.1
+  commit: 2ea9d87972fbc970cf725f8a7643c738f1196c36
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/linyuan-ai1/dsh-plugins/2ea9d87972fbc970cf725f8a7643c738f1196c36/packages/dsh-card-color/docs/screenshots/screenshot-1.png
+  - https://raw.githubusercontent.com/linyuan-ai1/dsh-plugins/2ea9d87972fbc970cf725f8a7643c738f1196c36/packages/dsh-card-color/docs/screenshots/screenshot-2.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 2ea9d87972fbc970cf725f8a7643c738f1196c36
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-09-07T21:58:48.185Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1075
+starsSnapshot: 1
+releaseUpdatedAt: 2026-09-07T21:58:48.259Z
+metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+starsUpdatedAt: 2026-09-07T21:58:48.259Z
+updatedAt: 2026-09-08T03:10:45.087Z
+listScreenshot: https://raw.githubusercontent.com/linyuan-ai1/dsh-plugins/2ea9d87972fbc970cf725f8a7643c738f1196c36/packages/dsh-card-color/docs/screenshots/screenshot-1.png

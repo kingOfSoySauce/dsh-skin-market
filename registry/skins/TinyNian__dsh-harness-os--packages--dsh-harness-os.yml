@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:TinyNian/dsh-harness-os#89639768a83028119b999931a71bd2b37c88a340&path:/packages/dsh-harness-os
-  version: 0.2.1
-  commit: 89639768a83028119b999931a71bd2b37c88a340
+  target: github:TinyNian/dsh-harness-os#41646817d7c83db8cbd4108ad57bfe7805f8bd4c&path:/packages/dsh-harness-os
+  version: 0.2.2
+  commit: 41646817d7c83db8cbd4108ad57bfe7805f8bd4c
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -40,22 +40,24 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 89639768a83028119b999931a71bd2b37c88a340
-    packageVersion: 0.2.1
+    commit: 41646817d7c83db8cbd4108ad57bfe7805f8bd4c
+    packageVersion: 0.2.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:33:56.221Z
+    checkedAt: 2026-10-26T23:11:55.974Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-26T23:11:57.956Z
+metadataUpdatedAt: 2026-10-26T23:11:57.956Z
 starsUpdatedAt: 2026-10-26T01:53:12.653Z
-updatedAt: 2026-10-26T01:53:12.653Z
+updatedAt: 2026-10-26T23:11:57.956Z

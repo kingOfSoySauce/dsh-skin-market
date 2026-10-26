@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Yoimiya-Lover-0621-01/himeko-starry-night#0333bd7c8f4ccd4a1106cfc162cb908adb1f81c4
+  target: github:Yoimiya-Lover-0621-01/himeko-starry-night#97a3ab9ca2f75f2db18cabf98e0a332d9ee75780
   version: 1.2.1
-  commit: 0333bd7c8f4ccd4a1106cfc162cb908adb1f81c4
+  commit: 97a3ab9ca2f75f2db18cabf98e0a332d9ee75780
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -42,22 +42,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.2.1-rc.2 <0.3.0 未被本次检测范围 >=0.2.1-rc.3 <0.3.0 完全覆盖（固定版本 0333bd7c8f4ccd4a1106cfc162cb908adb1f81c4）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.2.1-rc.2 <0.3.0 未被本次检测范围 >=0.2.1-rc.3 <0.3.0 完全覆盖（固定版本 97a3ab9ca2f75f2db18cabf98e0a332d9ee75780）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 0333bd7c8f4ccd4a1106cfc162cb908adb1f81c4
+    commit: 97a3ab9ca2f75f2db18cabf98e0a332d9ee75780
     packageVersion: 1.2.1
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.3 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:34:09.833Z
+    checkedAt: 2026-10-26T23:12:14.220Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-24T21:34:11.392Z
-metadataUpdatedAt: 2026-10-24T21:34:11.392Z
+releaseUpdatedAt: 2026-10-26T23:12:15.578Z
+metadataUpdatedAt: 2026-10-26T23:12:15.578Z
 starsUpdatedAt: 2026-10-22T15:00:01.347Z
-updatedAt: 2026-10-24T21:34:11.392Z
+updatedAt: 2026-10-26T23:12:15.578Z

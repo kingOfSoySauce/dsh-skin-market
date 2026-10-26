@@ -14,18 +14,22 @@ modes:
   - light
   - dark
 install:
-  target: github:CLICGGER-TYPES/dsh-piggy#dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c
-  version: 0.37.1
-  commit: dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c
+  target: github:CLICGGER-TYPES/dsh-piggy#79c02305268eb5f5707952bd5f951b1018da5f9d
+  version: 0.37.2-rc.3
+  commit: 79c02305268eb5f5707952bd5f951b1018da5f9d
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-piggy
+    version: 0.37.2-rc.3
+    integrity: sha512-Nj5BhUtyCybmaGbJvo1EIKcCPTXo6PD8qMfdp3MjIzvlpVZPjxNY5rMtND6XJcB/A1IxWWolvoTNhuqK37NugA==
+    repository: https://github.com/CLICGGER-TYPES/dsh-piggy
+    gitHead: 79c02305268eb5f5707952bd5f951b1018da5f9d
 compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/CLICGGER-TYPES__dsh-piggy/52acd2684f4292c052f457f21fab9c1ec8eb8ca1/home.png
 screenshots:
   - https://raw.githubusercontent.com/CLICGGER-TYPES/dsh-piggy/dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c/assets/pigs/base/piglet/idle.png
   - https://raw.githubusercontent.com/CLICGGER-TYPES/dsh-piggy/dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c/docs/screenshots/readme-current-farm-big.png
@@ -47,19 +51,21 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c
-    packageVersion: 0.37.1
+    commit: 79c02305268eb5f5707952bd5f951b1018da5f9d
+    packageVersion: 0.37.2-rc.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:50:55.131Z
+    checkedAt: 2026-10-26T09:07:42.508Z
     findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 32
+marketScreenshots:
+  - skin-screenshots/CLICGGER-TYPES__dsh-piggy/52acd2684f4292c052f457f21fab9c1ec8eb8ca1/home.png
 featuredRank: 969
-starsSnapshot: 31
-releaseUpdatedAt: 2026-10-26T01:50:55.778Z
-metadataUpdatedAt: 2026-10-26T01:50:55.778Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:50:55.778Z
+releaseUpdatedAt: 2026-10-26T23:11:10.623Z
+metadataUpdatedAt: 2026-10-26T23:11:10.623Z
+starsUpdatedAt: 2026-10-26T23:11:10.623Z
+updatedAt: 2026-10-26T23:11:10.623Z
