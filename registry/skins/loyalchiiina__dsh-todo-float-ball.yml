@@ -23,7 +23,14 @@ compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/loyalchiiina__dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/home.png
+  - skin-screenshots/loyalchiiina__dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/conversation.png
+screenshots:
+  - https://raw.githubusercontent.com/loyalchiiina/dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/docs/images/preview-pinned-sessions.jpg
+  - https://raw.githubusercontent.com/loyalchiiina/dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/docs/images/preview-pinned-sessions-2.jpg
+  - https://raw.githubusercontent.com/loyalchiiina/dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/docs/images/preview-skins.png
+listScreenshot: https://raw.githubusercontent.com/loyalchiiina/dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/docs/images/preview-pinned-sessions.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -31,18 +38,21 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: 693e16b8d3386a3d7b4a6ab12efe1a0b498823ba
     packageVersion: 0.14.6
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:53:22.089Z
+    checkedAt: 2026-10-26T01:52:15.037Z
     findings: []
 license:
   code: MIT
@@ -50,9 +60,6 @@ license:
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T19:48:50.938Z
-metadataUpdatedAt: 2026-10-25T20:05:52.716Z
+metadataUpdatedAt: 2026-10-26T01:52:15.442Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T20:05:52.716Z
-marketScreenshots:
-  - skin-screenshots/loyalchiiina__dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/home.png
-  - skin-screenshots/loyalchiiina__dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/conversation.png
+updatedAt: 2026-10-26T01:52:15.442Z

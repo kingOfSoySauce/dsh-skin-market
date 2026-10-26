@@ -24,7 +24,17 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/imfuxing__dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/home.png
+  - skin-screenshots/imfuxing__dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/conversation.png
+  - skin-screenshots/imfuxing__dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/imfuxing/dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/assets/tangseng.png
+  - https://raw.githubusercontent.com/imfuxing/dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/assets/wukong.png
+  - https://raw.githubusercontent.com/imfuxing/dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/assets/bajie.png
+  - https://raw.githubusercontent.com/imfuxing/dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/assets/wujing.png
+  - https://raw.githubusercontent.com/imfuxing/dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/assets/bailongma.png
+listScreenshot: https://raw.githubusercontent.com/imfuxing/dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/assets/tangseng.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,19 +42,21 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: improve
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
     commit: 32393bbfad7f72431815c26295e201d487a673f6
     packageVersion: 1.0.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:32:39.160Z
+    checkedAt: 2026-10-26T01:52:51.318Z
     findings: []
 license:
   code: MIT
@@ -52,10 +64,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:36.250Z
+metadataUpdatedAt: 2026-10-26T01:52:51.913Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:36.250Z
-marketScreenshots:
-  - skin-screenshots/imfuxing__dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/home.png
-  - skin-screenshots/imfuxing__dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/conversation.png
-  - skin-screenshots/imfuxing__dsh-widget-journey-west/32393bbfad7f72431815c26295e201d487a673f6/settings.png
+updatedAt: 2026-10-26T01:52:51.913Z

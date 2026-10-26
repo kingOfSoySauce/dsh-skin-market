@@ -23,13 +23,13 @@ install:
     packageName: dsh-theme-gallery
     packageVersion: 0.8.3
     integrity: sha512-xXZgEKyTvocD+FFsDU8Q6nqDAG7oHmV+qZZrmB9jrea2/fTe1p4b0rJYFlJ/eu1b27payymmgVr3QRhAeHPqVA==
+  allowBuild: dsh-theme-gallery@https://codeload.github.com/renjie2026/dsh-theme-gallery/tar.gz/d3019ff56ba0e4a97fd5351fd0f6b2443b28d1e2
   npm:
     name: dsh-theme-gallery
     version: 0.8.3
     integrity: sha512-xXZgEKyTvocD+FFsDU8Q6nqDAG7oHmV+qZZrmB9jrea2/fTe1p4b0rJYFlJ/eu1b27payymmgVr3QRhAeHPqVA==
     repository: https://github.com/renjie2026/dsh-theme-gallery
     gitHead: d3019ff56ba0e4a97fd5351fd0f6b2443b28d1e2
-  allowBuild: dsh-theme-gallery@https://codeload.github.com/renjie2026/dsh-theme-gallery/tar.gz/d3019ff56ba0e4a97fd5351fd0f6b2443b28d1e2
 compatibility:
   dsh: 0.1.7-rc.2
   platform:
@@ -46,9 +46,10 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.1.7-rc.2 未被本次检测范围 0.1.6-alpha.2 完全覆盖（固定版本 d3019ff56ba0e4a97fd5351fd0f6b2443b28d1e2）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: d3019ff56ba0e4a97fd5351fd0f6b2443b28d1e2
     packageVersion: 0.8.3
@@ -63,7 +64,7 @@ license:
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-26T01:52:21.769Z
+metadataUpdatedAt: 2026-10-26T01:52:21.519Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-10-26T01:52:21.769Z

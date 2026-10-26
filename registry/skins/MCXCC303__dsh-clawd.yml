@@ -33,7 +33,13 @@ compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/home.png
+  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/conversation.png
+  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/settings.png
+screenshots:
+  - https://github.com/user-attachments/assets/5416ce24-7ba5-49bd-a010-1717cc981548
+listScreenshot: https://github.com/user-attachments/assets/5416ce24-7ba5-49bd-a010-1717cc981548
 review:
   compatibility: unverified
   preview: verified
@@ -41,18 +47,20 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 15f3ac60cd7c4a81eed91b64c055a5b758acbe17
     packageVersion: 0.1.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:36:00.825Z
+    checkedAt: 2026-10-26T01:53:00.195Z
     findings: []
 license:
   code: MIT
@@ -61,10 +69,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:37.089Z
+metadataUpdatedAt: 2026-10-26T01:53:00.815Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:37.089Z
-marketScreenshots:
-  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/home.png
-  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/conversation.png
-  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/settings.png
+updatedAt: 2026-10-26T01:53:00.815Z

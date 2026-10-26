@@ -30,41 +30,46 @@ install:
     repository: https://github.com/yanzwzz/dsh-whale-girl-pet
     gitHead: b5ce53cfa87b9fc669eef2aabe64946bb77adb72
 compatibility:
-  dsh: unverified
+  dsh: ^0.1.0-rc.6
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/home.png
+  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/conversation.png
+  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/yanzwzz/dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/assets/preview/preview-idle.gif
+  - https://raw.githubusercontent.com/yanzwzz/dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/assets/preview/preview-work.gif
+  - https://raw.githubusercontent.com/yanzwzz/dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/assets/preview/preview-done.gif
+listScreenshot: https://raw.githubusercontent.com/yanzwzz/dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/assets/preview/preview-idle.gif
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
-    readmeScreenshots: improve
-    compatibility: improve
+    readmeScreenshots: pass
+    compatibility: pass
     installation: pass
-  suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    installCommand: pass
+    topic: pass
+  suggestions: []
   scan:
     commit: b5ce53cfa87b9fc669eef2aabe64946bb77adb72
     packageVersion: 0.3.10
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:15:49.083Z
+    checkedAt: 2026-10-26T01:50:54.429Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 968
-starsSnapshot: 32
+starsSnapshot: 33
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:33.817Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:33.817Z
-marketScreenshots:
-  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/home.png
-  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/conversation.png
-  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/settings.png
+metadataUpdatedAt: 2026-10-26T01:50:55.736Z
+starsUpdatedAt: 2026-10-26T01:50:55.736Z
+updatedAt: 2026-10-26T01:50:55.736Z

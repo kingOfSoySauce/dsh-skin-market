@@ -5,7 +5,7 @@ name:
 author: yaanlaan
 description: DeepSeek Colorful - A comprehensive UI theme and customizer plugin for DeepSeek Harness (Custom theme palettes, frosted glass & live video/wallpapers)
 repo: https://github.com/yaanlaan/deepseek-colorful
-package: deepseek-colorful
+package: dsh-colorful
 rowId: deepseek-colorful
 category: theme
 tags:
@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:yaanlaan/deepseek-colorful#e8f0172d212a1d705d8a5090bbbc08b134f34513
+  target: github:yaanlaan/deepseek-colorful#2312ad0b635b44167d93dfb59fc116aaa98131ef
   version: 1.0.0
-  commit: e8f0172d212a1d705d8a5090bbbc08b134f34513
+  commit: 2312ad0b635b44167d93dfb59fc116aaa98131ef
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -36,23 +36,27 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: e8f0172d212a1d705d8a5090bbbc08b134f34513
+    commit: 2312ad0b635b44167d93dfb59fc116aaa98131ef
     packageVersion: 1.0.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:34:08.999Z
+    checkedAt: 2026-10-26T01:53:23.283Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-26T01:53:23.725Z
+metadataUpdatedAt: 2026-10-26T01:53:23.725Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-10-26T01:53:23.725Z

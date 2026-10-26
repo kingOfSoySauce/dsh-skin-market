@@ -25,7 +25,13 @@ compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/Siloet-phy__analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/home.png
+  - skin-screenshots/Siloet-phy__analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/conversation.png
+screenshots:
+  - https://raw.githubusercontent.com/Siloet-phy/analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/docs/light.png
+  - https://raw.githubusercontent.com/Siloet-phy/analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/docs/dark.png
+listScreenshot: https://raw.githubusercontent.com/Siloet-phy/analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/docs/light.png
 review:
   compatibility: unverified
   preview: verified
@@ -33,18 +39,20 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 06dce8110e2400fbf0a67840dbc911b262133ada
     packageVersion: 0.1.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:36:00.825Z
+    checkedAt: 2026-10-26T01:53:08.885Z
     findings: []
 license:
   code: MIT
@@ -52,9 +60,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:37.803Z
+metadataUpdatedAt: 2026-10-26T01:53:09.205Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:37.803Z
-marketScreenshots:
-  - skin-screenshots/Siloet-phy__analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/home.png
-  - skin-screenshots/Siloet-phy__analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/conversation.png
+updatedAt: 2026-10-26T01:53:09.205Z

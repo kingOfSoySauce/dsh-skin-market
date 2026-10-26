@@ -24,7 +24,14 @@ compatibility:
   dsh: ">=0.2.0-rc.2 <0.3.0-0"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/home.png
+  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/conversation.png
+  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/GangLongYu/dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/docs/screenshot-working.png
+  - https://raw.githubusercontent.com/GangLongYu/dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/docs/screenshot-wave.png
+listScreenshot: https://raw.githubusercontent.com/GangLongYu/dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/docs/screenshot-working.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,18 +39,21 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.2.0-rc.2 <0.3.0-0 未被本次检测范围 ^0.1.0-rc.6 完全覆盖（固定版本 d0d9718a440eb4f1f43886be655640f359aef35e）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: d0d9718a440eb4f1f43886be655640f359aef35e
     packageVersion: 2.2.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:29:51.103Z
+    checkedAt: 2026-10-26T01:51:42.806Z
     findings: []
 license:
   code: MIT
@@ -51,10 +61,6 @@ license:
 featuredRank: 998
 starsSnapshot: 2
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:45.558Z
+metadataUpdatedAt: 2026-10-26T01:51:43.102Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:45.558Z
-marketScreenshots:
-  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/home.png
-  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/conversation.png
-  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/settings.png
+updatedAt: 2026-10-26T01:51:43.102Z

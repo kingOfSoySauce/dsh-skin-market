@@ -24,7 +24,13 @@ compatibility:
   dsh: ">=0.1.7-0"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/home.png
+  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/conversation.png
+  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/keleus/deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/docs/deepseek-pet-preview.png
+listScreenshot: https://raw.githubusercontent.com/keleus/deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/docs/deepseek-pet-preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,18 +38,20 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: b9b61a35c3b2443ecdeab0ed442d6b33c603d343
     packageVersion: 0.2.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:29:51.103Z
+    checkedAt: 2026-10-26T01:50:49.901Z
     findings: []
 license:
   code: MIT
@@ -51,10 +59,6 @@ license:
 featuredRank: 939
 starsSnapshot: 61
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:44.776Z
+metadataUpdatedAt: 2026-10-26T01:50:50.967Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:44.776Z
-marketScreenshots:
-  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/home.png
-  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/conversation.png
-  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/settings.png
+updatedAt: 2026-10-26T01:50:50.967Z

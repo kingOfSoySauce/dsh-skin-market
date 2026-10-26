@@ -13,26 +13,24 @@ tags:
 modes:
   - dark
 install:
-  target: github:lyx0717/dsh-washer#70ad9a1827df37348f6a892b52101163e4c46c36
-  version: 0.3.4
-  commit: 70ad9a1827df37348f6a892b52101163e4c46c36
+  target: github:lyx0717/dsh-washer#64c42a879c443a56fbb0ff796151b01ecc17ee5f
+  version: 0.5.0
+  commit: 64c42a879c443a56fbb0ff796151b01ecc17ee5f
   desktop:
-    mode: managed
-    registry: npm
-    packageName: "@lyx0717/dsh-washer"
-    packageVersion: 0.3.4
-    integrity: sha512-xSj8+X2qDnVGGWxwIiT6O2tRc5DxS0wusiSbtdSDs4mINrWx8OEvPYYMBst69JwmbhCNabFzFNg1E6UGXejHgw==
-  npm:
-    name: "@lyx0717/dsh-washer"
-    version: 0.3.4
-    integrity: sha512-xSj8+X2qDnVGGWxwIiT6O2tRc5DxS0wusiSbtdSDs4mINrWx8OEvPYYMBst69JwmbhCNabFzFNg1E6UGXejHgw==
-    repository: https://github.com/lyx0717/dsh-washer
-    gitHead: 70ad9a1827df37348f6a892b52101163e4c46c36
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
 compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/lyx0717__dsh-washer/70ad9a1827df37348f6a892b52101163e4c46c36/conversation.png
+screenshots:
+  - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-washing.png
+  - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-rinsing.png
+  - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-waiting.png
+  - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-done.png
+listScreenshot: https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-washing.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,27 +38,27 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 70ad9a1827df37348f6a892b52101163e4c46c36
-    packageVersion: 0.3.4
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    commit: 64c42a879c443a56fbb0ff796151b01ecc17ee5f
+    packageVersion: 0.5.0
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:38:31.057Z
+    checkedAt: 2026-10-26T01:52:59.346Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:38.796Z
+releaseUpdatedAt: 2026-10-26T01:53:00.135Z
+metadataUpdatedAt: 2026-10-26T01:53:00.135Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:38.796Z
-marketScreenshots:
-  - skin-screenshots/lyx0717__dsh-washer/70ad9a1827df37348f6a892b52101163e4c46c36/conversation.png
+updatedAt: 2026-10-26T01:53:00.135Z

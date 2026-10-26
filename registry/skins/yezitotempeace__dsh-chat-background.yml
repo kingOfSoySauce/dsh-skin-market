@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:yezitotempeace/dsh-chat-background#68a68b96e1514e8e8fa9c1454cd2780005ed6a35
-  version: 1.1.0
-  commit: 68a68b96e1514e8e8fa9c1454cd2780005ed6a35
+  target: github:yezitotempeace/dsh-chat-background#945bee9163d4a5af494100b9e338b2ec074ee9e4
+  version: 1.2.1
+  commit: 945bee9163d4a5af494100b9e338b2ec074ee9e4
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -25,6 +25,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/yezitotempeace__dsh-chat-background/68a68b96e1514e8e8fa9c1454cd2780005ed6a35/home.png
+  - skin-screenshots/yezitotempeace__dsh-chat-background/68a68b96e1514e8e8fa9c1454cd2780005ed6a35/conversation.png
+  - skin-screenshots/yezitotempeace__dsh-chat-background/68a68b96e1514e8e8fa9c1454cd2780005ed6a35/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -36,27 +40,26 @@ health:
     readmeScreenshots: improve
     compatibility: improve
     installation: pass
+    installCommand: improve
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 68a68b96e1514e8e8fa9c1454cd2780005ed6a35
-    packageVersion: 1.1.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    commit: 945bee9163d4a5af494100b9e338b2ec074ee9e4
+    packageVersion: 1.2.1
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:44:57.678Z
+    checkedAt: 2026-10-26T01:53:23.642Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:29:01.129Z
+releaseUpdatedAt: 2026-10-26T01:53:23.806Z
+metadataUpdatedAt: 2026-10-26T01:53:23.806Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:29:01.129Z
-marketScreenshots:
-  - skin-screenshots/yezitotempeace__dsh-chat-background/68a68b96e1514e8e8fa9c1454cd2780005ed6a35/home.png
-  - skin-screenshots/yezitotempeace__dsh-chat-background/68a68b96e1514e8e8fa9c1454cd2780005ed6a35/conversation.png
-  - skin-screenshots/yezitotempeace__dsh-chat-background/68a68b96e1514e8e8fa9c1454cd2780005ed6a35/settings.png
+updatedAt: 2026-10-26T01:53:23.806Z

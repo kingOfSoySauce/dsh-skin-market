@@ -20,12 +20,19 @@ install:
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  allowBuild: dsh-nekojishi-vn@https://codeload.github.com/kiive357q/dsh-nekojishi-vn/tar.gz/91e05b63a80a05370a4870750f00113b9fbb47cc
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/home.png
+  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/conversation.png
+  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/kiive357q/dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/docs/screenshots/demo-stage.png
+  - https://raw.githubusercontent.com/kiive357q/dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/docs/screenshots/appearance.png
+  - https://raw.githubusercontent.com/kiive357q/dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/docs/screenshots/sidebar-music.png
+listScreenshot: https://raw.githubusercontent.com/kiive357q/dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/docs/screenshots/demo-stage.png
 review:
   compatibility: unverified
   preview: verified
@@ -33,18 +40,21 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
     commit: 91e05b63a80a05370a4870750f00113b9fbb47cc
     packageVersion: 0.4.0-alpha.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:08:58.628Z
+    checkedAt: 2026-10-26T01:52:11.402Z
     findings: []
 license:
   code: MIT
@@ -52,11 +62,7 @@ license:
   notice: 原创代码及默认程序生成的演示资源采用 MIT。原版《家有大猫》图片、音乐、字体与剧本不随公开包分发；用户自行导入的游戏资源不在 MIT 许可内。
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:44:29.949Z
-metadataUpdatedAt: 2026-10-25T19:28:48.004Z
+releaseUpdatedAt: 2026-10-26T01:52:11.778Z
+metadataUpdatedAt: 2026-10-26T01:52:11.778Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:48.004Z
-marketScreenshots:
-  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/home.png
-  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/conversation.png
-  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/settings.png
+updatedAt: 2026-10-26T01:52:11.778Z

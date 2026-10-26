@@ -24,7 +24,13 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/Dongfang81__dsh-music/b29a3fd3a226c51b8aa89bdecc3ddf31fcaed57f/home.png
+  - skin-screenshots/Dongfang81__dsh-music/b29a3fd3a226c51b8aa89bdecc3ddf31fcaed57f/conversation.png
+  - skin-screenshots/Dongfang81__dsh-music/b29a3fd3a226c51b8aa89bdecc3ddf31fcaed57f/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/Dongfang81/dsh-music/b29a3fd3a226c51b8aa89bdecc3ddf31fcaed57f/docs/moony-series.png
+listScreenshot: https://raw.githubusercontent.com/Dongfang81/dsh-music/b29a3fd3a226c51b8aa89bdecc3ddf31fcaed57f/docs/moony-series.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,19 +38,21 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: improve
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
     commit: b29a3fd3a226c51b8aa89bdecc3ddf31fcaed57f
     packageVersion: 1.5.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:01:45.946Z
+    checkedAt: 2026-10-26T01:52:03.315Z
     findings: []
 license:
   code: GPL-3.0
@@ -53,10 +61,6 @@ license:
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:44:29.949Z
-metadataUpdatedAt: 2026-10-25T19:28:47.401Z
+metadataUpdatedAt: 2026-10-26T01:52:03.526Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:47.401Z
-marketScreenshots:
-  - skin-screenshots/Dongfang81__dsh-music/b29a3fd3a226c51b8aa89bdecc3ddf31fcaed57f/home.png
-  - skin-screenshots/Dongfang81__dsh-music/b29a3fd3a226c51b8aa89bdecc3ddf31fcaed57f/conversation.png
-  - skin-screenshots/Dongfang81__dsh-music/b29a3fd3a226c51b8aa89bdecc3ddf31fcaed57f/settings.png
+updatedAt: 2026-10-26T01:52:03.526Z

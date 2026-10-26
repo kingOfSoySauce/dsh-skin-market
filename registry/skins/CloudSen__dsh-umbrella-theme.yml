@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:CloudSen/dsh-umbrella-theme#a745f1138c161a2f967d3aa9a21d49eaba17b5ac
+  target: github:CloudSen/dsh-umbrella-theme#0d08972db406fafab5ad2cafc7c84c74d1af1566
   version: 1.0.1
-  commit: a745f1138c161a2f967d3aa9a21d49eaba17b5ac
+  commit: 0d08972db406fafab5ad2cafc7c84c74d1af1566
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -24,9 +24,13 @@ compatibility:
   dsh: ">=0.2.1-rc.1 <0.3.0-0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/home.png
+  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/conversation.png
+  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/settings.png
 screenshots: []
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -35,26 +39,25 @@ health:
     readmeScreenshots: improve
     compatibility: pass
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
-    commit: a745f1138c161a2f967d3aa9a21d49eaba17b5ac
+    commit: 0d08972db406fafab5ad2cafc7c84c74d1af1566
     packageVersion: 1.0.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.1 <0.3.0-0"
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:49:36.018Z
+    checkedAt: 2026-10-26T01:52:42.747Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:53.519Z
+releaseUpdatedAt: 2026-10-26T01:52:42.981Z
+metadataUpdatedAt: 2026-10-26T01:52:42.981Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:53.519Z
-marketScreenshots:
-  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/home.png
-  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/conversation.png
-  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/settings.png
+updatedAt: 2026-10-26T01:52:42.981Z

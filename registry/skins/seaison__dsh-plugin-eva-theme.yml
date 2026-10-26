@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:seaison/dsh-plugin-eva-theme#1d073ce1fa327625fbd7f1ed08ae78cf4b0e27d2
-  version: 0.51.0
-  commit: 1d073ce1fa327625fbd7f1ed08ae78cf4b0e27d2
+  target: github:seaison/dsh-plugin-eva-theme#f8b96381ceda724c58e79ec375e0dfe08d244349
+  version: 0.51.2
+  commit: f8b96381ceda724c58e79ec375e0dfe08d244349
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -24,7 +24,15 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/seaison__dsh-plugin-eva-theme/1d073ce1fa327625fbd7f1ed08ae78cf4b0e27d2/home.png
+  - skin-screenshots/seaison__dsh-plugin-eva-theme/1d073ce1fa327625fbd7f1ed08ae78cf4b0e27d2/conversation.png
+  - skin-screenshots/seaison__dsh-plugin-eva-theme/1d073ce1fa327625fbd7f1ed08ae78cf4b0e27d2/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/seaison/dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/docs/screenshots/pilot-selection.png
+  - https://raw.githubusercontent.com/seaison/dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/docs/screenshots/character-asuka.png
+  - https://raw.githubusercontent.com/seaison/dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/docs/screenshots/character-rei.png
+listScreenshot: https://raw.githubusercontent.com/seaison/dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/docs/screenshots/pilot-selection.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,31 +40,29 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: improve
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 1d073ce1fa327625fbd7f1ed08ae78cf4b0e27d2
-    packageVersion: 0.51.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    commit: f8b96381ceda724c58e79ec375e0dfe08d244349
+    packageVersion: 0.51.2
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:52:13.438Z
+    checkedAt: 2026-10-26T01:51:12.846Z
     findings: []
 license:
   code: MIT
-  commercialUse: false
+  commercialUse: true
   notice: 代码采用 MIT；第三方角色、品牌、语音和音乐按 NOTICE 单独说明，不随代码 MIT 授权。维护者在 NOTICE 声明《EM20#070720》已获公开版本再分发授权，并要求随包保留来源说明。
 featuredRank: 999
-starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:44:29.949Z
-metadataUpdatedAt: 2026-10-25T19:28:49.755Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:49.755Z
-marketScreenshots:
-  - skin-screenshots/seaison__dsh-plugin-eva-theme/1d073ce1fa327625fbd7f1ed08ae78cf4b0e27d2/home.png
-  - skin-screenshots/seaison__dsh-plugin-eva-theme/1d073ce1fa327625fbd7f1ed08ae78cf4b0e27d2/conversation.png
-  - skin-screenshots/seaison__dsh-plugin-eva-theme/1d073ce1fa327625fbd7f1ed08ae78cf4b0e27d2/settings.png
+starsSnapshot: 7
+releaseUpdatedAt: 2026-10-26T01:51:13.165Z
+metadataUpdatedAt: 2026-10-26T01:51:13.165Z
+starsUpdatedAt: 2026-10-26T01:51:13.165Z
+updatedAt: 2026-10-26T01:51:13.165Z

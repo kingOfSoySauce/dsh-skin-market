@@ -24,6 +24,10 @@ compatibility:
   dsh: ">=0.2.1-rc.2"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/home.png
+  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/conversation.png
+  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -33,17 +37,20 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: ce77a8c19d29102321b4af8a6f3f4bc942d14b51
     packageVersion: 1.0.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:44:57.678Z
+    checkedAt: 2026-10-26T01:53:02.098Z
     findings: []
 license:
   code: MIT
@@ -51,10 +58,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:57.346Z
+metadataUpdatedAt: 2026-10-26T01:53:02.312Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:57.346Z
-marketScreenshots:
-  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/home.png
-  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/conversation.png
-  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/settings.png
+updatedAt: 2026-10-26T01:53:02.312Z

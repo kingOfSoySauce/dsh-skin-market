@@ -24,7 +24,17 @@ compatibility:
   dsh: ">=0.1.5-rc.1"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/wei125775-lab__whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/home.png
+  - skin-screenshots/wei125775-lab__whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/conversation.png
+  - skin-screenshots/wei125775-lab__whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/wei125775-lab/whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/docs/preview/hero.png
+  - https://raw.githubusercontent.com/wei125775-lab/whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/docs/preview/scene.png
+  - https://raw.githubusercontent.com/wei125775-lab/whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/docs/preview/actions.png
+  - https://raw.githubusercontent.com/wei125775-lab/whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/docs/preview/showcase.gif
+  - https://raw.githubusercontent.com/wei125775-lab/whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/docs/preview/idle.gif
+listScreenshot: https://raw.githubusercontent.com/wei125775-lab/whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/docs/preview/hero.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,18 +42,20 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2
     packageVersion: 1.9.2
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:53:50.828Z
+    checkedAt: 2026-10-26T01:51:17.094Z
     findings: []
 license:
   code: MIT
@@ -51,10 +63,6 @@ license:
 featuredRank: 994
 starsSnapshot: 6
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:45.167Z
+metadataUpdatedAt: 2026-10-26T01:51:17.789Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:45.167Z
-marketScreenshots:
-  - skin-screenshots/wei125775-lab__whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/home.png
-  - skin-screenshots/wei125775-lab__whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/conversation.png
-  - skin-screenshots/wei125775-lab__whalegirl-deskpet/0f2d7dd2ade7bae2ec273d8e8bc788e4393cdcb2/settings.png
+updatedAt: 2026-10-26T01:51:17.789Z

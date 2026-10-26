@@ -23,13 +23,13 @@ install:
     packageName: dsh-trae-skin
     packageVersion: 0.2.0
     integrity: sha512-g2h+bzzpzFjVsq1OV+ZoVjEf6dQzTAevU2YIIL4VRz0JhiXPpEEWmEmpSP37qjACl9vQGYM4zaDHzFiKPnuAtA==
+  allowBuild: dsh-trae-skin@https://codeload.github.com/RonnyJung2021/dsh-trae-skin/tar.gz/f888b046350f71b245181763fff647c323ec1f96
   npm:
     name: dsh-trae-skin
     version: 0.2.0
     integrity: sha512-g2h+bzzpzFjVsq1OV+ZoVjEf6dQzTAevU2YIIL4VRz0JhiXPpEEWmEmpSP37qjACl9vQGYM4zaDHzFiKPnuAtA==
     repository: https://github.com/RonnyJung2021/dsh-trae-skin
     gitHead: f888b046350f71b245181763fff647c323ec1f96
-  allowBuild: dsh-trae-skin@https://codeload.github.com/RonnyJung2021/dsh-trae-skin/tar.gz/f888b046350f71b245181763fff647c323ec1f96
 compatibility:
   dsh: unverified
   platform:
@@ -62,7 +62,7 @@ license:
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-26T01:52:22.524Z
 metadataUpdatedAt: 2026-10-25T18:20:01.273Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-10-26T01:52:22.524Z

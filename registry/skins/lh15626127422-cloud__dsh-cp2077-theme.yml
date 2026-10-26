@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lh15626127422-cloud/dsh-cp2077-theme#be416f72b5355b1ebfc1dd5eebe790203332a809
-  version: 2.0.0
-  commit: be416f72b5355b1ebfc1dd5eebe790203332a809
+  target: github:lh15626127422-cloud/dsh-cp2077-theme#1204bef49daf664d5cdd2f0c99c18fb51345de6e
+  version: 2.0.2
+  commit: 1204bef49daf664d5cdd2f0c99c18fb51345de6e
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -36,23 +36,27 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: be416f72b5355b1ebfc1dd5eebe790203332a809
-    packageVersion: 2.0.0
+    commit: 1204bef49daf664d5cdd2f0c99c18fb51345de6e
+    packageVersion: 2.0.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:33:33.171Z
+    checkedAt: 2026-10-26T01:52:56.219Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-26T01:52:56.793Z
+metadataUpdatedAt: 2026-10-26T01:52:56.793Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-10-26T01:52:56.793Z

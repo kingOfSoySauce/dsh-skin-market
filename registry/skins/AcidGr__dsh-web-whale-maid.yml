@@ -24,6 +24,10 @@ compatibility:
   dsh: 0.1.2-alpha.2||0.1.2-alpha.3||0.1.2-alpha.4||0.1.2-alpha.5||0.1.2-rc.1||0.1.3-alpha.1||0.1.3-alpha.2||0.1.5-alpha.1||0.1.5-alpha.2||0.1.5-rc.1||0.1.5-rc.2||0.1.5-rc.3||0.1.6-alpha.1||0.1.6-alpha.2||0.1.7-alpha.1||0.1.7-alpha.2||0.1.7-rc.1
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/AcidGr__dsh-web-whale-maid/7389222e2176603b197076ab3823e44d85547b3b/home.png
+  - skin-screenshots/AcidGr__dsh-web-whale-maid/7389222e2176603b197076ab3823e44d85547b3b/conversation.png
+  - skin-screenshots/AcidGr__dsh-web-whale-maid/7389222e2176603b197076ab3823e44d85547b3b/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -33,17 +37,20 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 7389222e2176603b197076ab3823e44d85547b3b
     packageVersion: 1.0.8
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:53:15.255Z
+    checkedAt: 2026-10-26T01:51:05.393Z
     findings: []
 license:
   code: MIT
@@ -51,10 +58,6 @@ license:
 featuredRank: 990
 starsSnapshot: 10
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:55.052Z
+metadataUpdatedAt: 2026-10-26T01:51:06.370Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:55.052Z
-marketScreenshots:
-  - skin-screenshots/AcidGr__dsh-web-whale-maid/7389222e2176603b197076ab3823e44d85547b3b/home.png
-  - skin-screenshots/AcidGr__dsh-web-whale-maid/7389222e2176603b197076ab3823e44d85547b3b/conversation.png
-  - skin-screenshots/AcidGr__dsh-web-whale-maid/7389222e2176603b197076ab3823e44d85547b3b/settings.png
+updatedAt: 2026-10-26T01:51:06.370Z

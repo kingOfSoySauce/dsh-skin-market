@@ -24,7 +24,16 @@ compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/RZ-0410__dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/home.png
+  - skin-screenshots/RZ-0410__dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/conversation.png
+  - skin-screenshots/RZ-0410__dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/RZ-0410/dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/docs/jk.jpg
+  - https://raw.githubusercontent.com/RZ-0410/dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/docs/tech.jpg
+  - https://raw.githubusercontent.com/RZ-0410/dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/docs/wave.jpg
+  - https://raw.githubusercontent.com/RZ-0410/dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/docs/moon.jpg
+listScreenshot: https://raw.githubusercontent.com/RZ-0410/dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/docs/jk.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -32,18 +41,20 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: ac9246200c8843663aa637f602888179eb2f291b
     packageVersion: 0.1.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:46:17.350Z
+    checkedAt: 2026-10-26T01:53:06.447Z
     findings: []
 license:
   code: MIT
@@ -51,10 +62,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:48.884Z
+metadataUpdatedAt: 2026-10-26T01:53:06.964Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:48.884Z
-marketScreenshots:
-  - skin-screenshots/RZ-0410__dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/home.png
-  - skin-screenshots/RZ-0410__dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/conversation.png
-  - skin-screenshots/RZ-0410__dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/settings.png
+updatedAt: 2026-10-26T01:53:06.964Z

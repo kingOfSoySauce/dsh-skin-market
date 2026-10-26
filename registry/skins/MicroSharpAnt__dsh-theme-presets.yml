@@ -24,6 +24,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/home.png
+  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/conversation.png
+  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -35,16 +39,19 @@ health:
     readmeScreenshots: improve
     compatibility: improve
     installation: pass
+    installCommand: improve
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: 529d654bd30a8868e4429609fe10175fa95a7aaa
     packageVersion: 0.1.2
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:47:09.060Z
+    checkedAt: 2026-10-26T01:53:00.753Z
     findings: []
 license:
   code: MIT
@@ -52,10 +59,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:56.522Z
+metadataUpdatedAt: 2026-10-26T01:53:00.925Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:56.522Z
-marketScreenshots:
-  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/home.png
-  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/conversation.png
-  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/settings.png
+updatedAt: 2026-10-26T01:53:00.925Z

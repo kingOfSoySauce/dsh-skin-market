@@ -24,6 +24,10 @@ compatibility:
   dsh: ">=0.1.2-rc.1"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/home.png
+  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/conversation.png
+  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -33,17 +37,20 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 160f84354af237fa1f305b2337b61261a81b75c5
     packageVersion: 0.7.2
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:49:36.018Z
+    checkedAt: 2026-10-26T01:51:52.742Z
     findings: []
 license:
   code: MIT
@@ -51,10 +58,6 @@ license:
 featuredRank: 998
 starsSnapshot: 2
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:56.296Z
+metadataUpdatedAt: 2026-10-26T01:51:52.884Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:56.296Z
-marketScreenshots:
-  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/home.png
-  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/conversation.png
-  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/settings.png
+updatedAt: 2026-10-26T01:51:52.884Z

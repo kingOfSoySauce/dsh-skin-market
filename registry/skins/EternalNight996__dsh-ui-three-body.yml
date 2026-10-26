@@ -24,7 +24,15 @@ compatibility:
   dsh: ">=0.1.5-alpha.2 <0.3.0"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/home.png
+  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/conversation.png
+  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/EternalNight996/dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/assets/screen/sophon-demo.webp
+  - https://raw.githubusercontent.com/EternalNight996/dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/assets/screen/sophon-core.webp
+  - https://raw.githubusercontent.com/EternalNight996/dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/assets/screen/sophon-target-talk.webp
+listScreenshot: https://raw.githubusercontent.com/EternalNight996/dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/assets/screen/sophon-demo.webp
 review:
   compatibility: unverified
   preview: verified
@@ -32,18 +40,21 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.5-alpha.2 <0.3.0 未被本次检测范围 >=0.1.0-rc.7 完全覆盖（固定版本 d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4
     packageVersion: 0.3.0-rc.2
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.7"
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:42:28.888Z
+    checkedAt: 2026-10-26T01:52:05.003Z
     findings: []
 license:
   code: MIT
@@ -51,10 +62,6 @@ license:
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T19:39:23.689Z
-metadataUpdatedAt: 2026-10-25T20:05:52.217Z
+metadataUpdatedAt: 2026-10-26T01:52:05.406Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T20:05:52.217Z
-marketScreenshots:
-  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/home.png
-  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/conversation.png
-  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/settings.png
+updatedAt: 2026-10-26T01:52:05.406Z

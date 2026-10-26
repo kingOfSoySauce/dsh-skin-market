@@ -21,44 +21,47 @@ install:
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  allowBuild: "@tobewin/dsh-pet-companion@https://codeload.github.com/ToBeWin/DSH-Pet-Companion/tar.gz/61269dc79e594a721fad3eaca71c94b9ba6b56d2"
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/ToBeWin__DSH-Pet-Companion/61269dc79e594a721fad3eaca71c94b9ba6b56d2/home.png
 screenshots:
   - https://raw.githubusercontent.com/ToBeWin/DSH-Pet-Companion/61269dc79e594a721fad3eaca71c94b9ba6b56d2/docs/images/pet-companion-applied.png
 listScreenshot: https://raw.githubusercontent.com/ToBeWin/DSH-Pet-Companion/61269dc79e594a721fad3eaca71c94b9ba6b56d2/docs/images/pet-companion-applied.png
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
     compatibility: improve
-    installation: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
-    - 此固定版本的构建与客户端兼容检查尚待完成。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
     commit: 61269dc79e594a721fad3eaca71c94b9ba6b56d2
     packageVersion: 0.1.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
-    result: pass
-    checkedAt: 2026-10-25T18:48:40.436Z
-    findings: []
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-10-26T01:52:26.409Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:49.093Z
+releaseUpdatedAt: 2026-10-26T01:52:26.903Z
+metadataUpdatedAt: 2026-10-26T01:52:26.903Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:49.093Z
-marketScreenshots:
-  - skin-screenshots/ToBeWin__DSH-Pet-Companion/61269dc79e594a721fad3eaca71c94b9ba6b56d2/home.png
+updatedAt: 2026-10-26T01:52:26.903Z

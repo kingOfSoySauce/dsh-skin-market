@@ -23,6 +23,10 @@ compatibility:
   dsh: ">=0.1.0-rc.7"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/xmnathan__dsh-skin-galactic-opera/ead02f8bc9a40efdba7c687dd2e25ac6ecb31e1c/home.png
+  - skin-screenshots/xmnathan__dsh-skin-galactic-opera/ead02f8bc9a40efdba7c687dd2e25ac6ecb31e1c/conversation.png
+  - skin-screenshots/xmnathan__dsh-skin-galactic-opera/ead02f8bc9a40efdba7c687dd2e25ac6ecb31e1c/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -32,17 +36,21 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.7 未被本次检测范围 0.1.0-rc.7 完全覆盖（固定版本 ead02f8bc9a40efdba7c687dd2e25ac6ecb31e1c）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: ead02f8bc9a40efdba7c687dd2e25ac6ecb31e1c
     packageVersion: 0.2.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.7
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:43:43.683Z
+    checkedAt: 2026-10-26T01:52:29.977Z
     findings: []
 license:
   code: MIT
@@ -50,10 +58,6 @@ license:
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:51.682Z
+metadataUpdatedAt: 2026-10-26T01:52:30.184Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:51.682Z
-marketScreenshots:
-  - skin-screenshots/xmnathan__dsh-skin-galactic-opera/ead02f8bc9a40efdba7c687dd2e25ac6ecb31e1c/home.png
-  - skin-screenshots/xmnathan__dsh-skin-galactic-opera/ead02f8bc9a40efdba7c687dd2e25ac6ecb31e1c/conversation.png
-  - skin-screenshots/xmnathan__dsh-skin-galactic-opera/ead02f8bc9a40efdba7c687dd2e25ac6ecb31e1c/settings.png
+updatedAt: 2026-10-26T01:52:30.184Z

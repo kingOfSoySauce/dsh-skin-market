@@ -24,7 +24,13 @@ compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/home.png
+  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/conversation.png
+  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/4444Hao/dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/docs/images/boot-waterfall-v2.gif
+listScreenshot: https://raw.githubusercontent.com/4444Hao/dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/docs/images/boot-waterfall-v2.gif
 review:
   compatibility: unverified
   preview: verified
@@ -32,18 +38,20 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 68159fcced1d65c7ea356821859ea80d365c523a
     packageVersion: 0.2.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:23:39.023Z
+    checkedAt: 2026-10-26T01:51:57.104Z
     findings: []
 license:
   code: MIT
@@ -51,10 +59,6 @@ license:
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:48.460Z
+metadataUpdatedAt: 2026-10-26T01:51:57.313Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:48.460Z
-marketScreenshots:
-  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/home.png
-  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/conversation.png
-  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/settings.png
+updatedAt: 2026-10-26T01:51:57.313Z

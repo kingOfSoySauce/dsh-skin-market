@@ -25,7 +25,13 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/home.png
+  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/conversation.png
+  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/Mrzhailiming/deepseek-pet/539096149f644a923a295e0dd6f127c26e0b8847/docs/whale.png
+listScreenshot: https://raw.githubusercontent.com/Mrzhailiming/deepseek-pet/539096149f644a923a295e0dd6f127c26e0b8847/docs/whale.png
 review:
   compatibility: unverified
   preview: verified
@@ -33,19 +39,21 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: improve
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
     commit: 539096149f644a923a295e0dd6f127c26e0b8847
     packageVersion: 0.4.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:15:49.083Z
+    checkedAt: 2026-10-26T01:51:33.994Z
     findings: []
 license:
   code: MIT
@@ -53,10 +61,6 @@ license:
 featuredRank: 997
 starsSnapshot: 3
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:34.500Z
+metadataUpdatedAt: 2026-10-26T01:51:34.316Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:34.500Z
-marketScreenshots:
-  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/home.png
-  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/conversation.png
-  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/settings.png
+updatedAt: 2026-10-26T01:51:34.316Z

@@ -23,6 +23,10 @@ compatibility:
   dsh: 0.1.2-rc.1
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/home.png
+  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/conversation.png
+  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -32,17 +36,20 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 033aee2e90274006b0d00e1640caf96df51b9901
     packageVersion: 0.7.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T20:00:15.248Z
+    checkedAt: 2026-10-26T01:51:48.588Z
     findings: []
 license:
   code: MIT
@@ -50,10 +57,6 @@ license:
 featuredRank: 998
 starsSnapshot: 2
 releaseUpdatedAt: 2026-10-25T19:54:21.217Z
-metadataUpdatedAt: 2026-10-25T20:05:53.216Z
+metadataUpdatedAt: 2026-10-26T01:51:48.731Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T20:05:53.216Z
-marketScreenshots:
-  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/home.png
-  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/conversation.png
-  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/settings.png
+updatedAt: 2026-10-26T01:51:48.731Z

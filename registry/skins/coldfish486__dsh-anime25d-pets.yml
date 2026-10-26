@@ -36,9 +36,10 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.2 未被本次检测范围 0.1.0-rc.6 完全覆盖（固定版本 425d95757004e120ae0d9ea3272d90ac77797ff9）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 425d95757004e120ae0d9ea3272d90ac77797ff9
     packageVersion: 0.4.0
@@ -54,6 +55,6 @@ license:
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-10-26T01:52:01.167Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-10-26T01:52:01.167Z

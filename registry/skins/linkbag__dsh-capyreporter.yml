@@ -14,17 +14,26 @@ modes:
   - light
   - dark
 install:
-  target: github:linkbag/dsh-capyreporter#6091699592eaf3e60dd91745a2c1817d923611c2
-  version: 0.1.6
-  commit: 6091699592eaf3e60dd91745a2c1817d923611c2
+  target: github:linkbag/dsh-capyreporter#7de5ed43d6c7b856562016850fc08edf590aba5e
+  version: 0.1.8
+  commit: 7de5ed43d6c7b856562016850fc08edf590aba5e
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  allowBuild: dsh-capyreporter@https://codeload.github.com/linkbag/dsh-capyreporter/tar.gz/6091699592eaf3e60dd91745a2c1817d923611c2
+  npm:
+    name: dsh-capyreporter
+    version: 0.1.8
+    integrity: sha512-YkSNBPVx27kA43LC8pTHNDHWpBs9TvQ5jfSA4BGveIPeZ6SLpiwG2olU0T+97YLfVHgnf3iZ3hBPPF3lCEtjmg==
+    repository: https://github.com/linkbag/dsh-capyreporter
+    gitHead: 7de5ed43d6c7b856562016850fc08edf590aba5e
 compatibility:
   dsh: ">=0.1.1-rc.2 <0.2.0-0||>=0.1.2-0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/home.png
+  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/conversation.png
+  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -34,28 +43,27 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 6091699592eaf3e60dd91745a2c1817d923611c2
-    packageVersion: 0.1.6
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    commit: 7de5ed43d6c7b856562016850fc08edf590aba5e
+    packageVersion: 0.1.8
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:38:52.273Z
+    checkedAt: 2026-10-26T01:52:56.785Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:43.759Z
+releaseUpdatedAt: 2026-10-26T01:52:57.122Z
+metadataUpdatedAt: 2026-10-26T01:52:57.122Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:43.759Z
-marketScreenshots:
-  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/home.png
-  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/conversation.png
-  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/settings.png
+updatedAt: 2026-10-26T01:52:57.122Z

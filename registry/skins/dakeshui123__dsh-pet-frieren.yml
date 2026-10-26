@@ -24,7 +24,13 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/dakeshui123__dsh-pet-frieren/6ae4ed4b194f4335bbf573d65bb864a7e3416344/home.png
+  - skin-screenshots/dakeshui123__dsh-pet-frieren/6ae4ed4b194f4335bbf573d65bb864a7e3416344/conversation.png
+  - skin-screenshots/dakeshui123__dsh-pet-frieren/6ae4ed4b194f4335bbf573d65bb864a7e3416344/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/dakeshui123/dsh-pet-frieren/6ae4ed4b194f4335bbf573d65bb864a7e3416344/assets/preview.png
+listScreenshot: https://raw.githubusercontent.com/dakeshui123/dsh-pet-frieren/6ae4ed4b194f4335bbf573d65bb864a7e3416344/assets/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,31 +38,28 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 6ae4ed4b194f4335bbf573d65bb864a7e3416344
     packageVersion: 0.2.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:29:51.103Z
+    checkedAt: 2026-10-26T01:52:01.967Z
     findings: []
 license:
   code: MIT
-  commercialUse: false
+  commercialUse: true
   notice: 代码与素材编排MIT；角色内容按作者说明限个人非商业同人用途。
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:45.755Z
+metadataUpdatedAt: 2026-10-26T01:52:02.114Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:45.755Z
-marketScreenshots:
-  - skin-screenshots/dakeshui123__dsh-pet-frieren/6ae4ed4b194f4335bbf573d65bb864a7e3416344/home.png
-  - skin-screenshots/dakeshui123__dsh-pet-frieren/6ae4ed4b194f4335bbf573d65bb864a7e3416344/conversation.png
-  - skin-screenshots/dakeshui123__dsh-pet-frieren/6ae4ed4b194f4335bbf573d65bb864a7e3416344/settings.png
+updatedAt: 2026-10-26T01:52:02.114Z

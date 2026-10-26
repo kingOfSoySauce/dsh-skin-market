@@ -26,7 +26,18 @@ compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/home.png
+  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/conversation.png
+  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/demo.gif
+  - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/console.png
+  - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/menu.png
+  - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/installer.png
+  - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/social-preview-1280x640.png
+  - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/hero.png
+listScreenshot: https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/demo.gif
 review:
   compatibility: unverified
   preview: verified
@@ -34,29 +45,28 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.2.0-rc.1 未被本次检测范围 ^0.2.0-rc.1 完全覆盖（固定版本 e53f63e67227671aca092e3334c8611e29b880b6）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: e53f63e67227671aca092e3334c8611e29b880b6
     packageVersion: 1.2.3
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: ^0.2.0-rc.1
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:15:49.083Z
+    checkedAt: 2026-10-26T01:51:02.313Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 981
-starsSnapshot: 19
+starsSnapshot: 20
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:34.088Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:34.088Z
-marketScreenshots:
-  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/home.png
-  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/conversation.png
-  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/settings.png
+metadataUpdatedAt: 2026-10-26T01:51:02.704Z
+starsUpdatedAt: 2026-10-26T01:51:02.704Z
+updatedAt: 2026-10-26T01:51:02.704Z

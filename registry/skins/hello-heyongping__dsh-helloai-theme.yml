@@ -25,7 +25,15 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/hello-heyongping__dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/home.png
+  - skin-screenshots/hello-heyongping__dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/conversation.png
+  - skin-screenshots/hello-heyongping__dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/hello-heyongping/dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/docs/screenshot-theme-editor.png
+  - https://raw.githubusercontent.com/hello-heyongping/dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/docs/screenshot-effect-dragon.png
+  - https://raw.githubusercontent.com/hello-heyongping/dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/docs/screenshot-effect-whale.png
+listScreenshot: https://raw.githubusercontent.com/hello-heyongping/dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/docs/screenshot-theme-editor.png
 review:
   compatibility: unverified
   preview: verified
@@ -33,19 +41,20 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 0ef94cf5c6d1766bf2bb65eeb12846858b277024
     packageVersion: 0.3.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:04:08.788Z
+    checkedAt: 2026-10-26T01:52:08.010Z
     findings: []
 license:
   code: MIT
@@ -53,10 +62,6 @@ license:
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:47.601Z
+metadataUpdatedAt: 2026-10-26T01:52:08.477Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:47.601Z
-marketScreenshots:
-  - skin-screenshots/hello-heyongping__dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/home.png
-  - skin-screenshots/hello-heyongping__dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/conversation.png
-  - skin-screenshots/hello-heyongping__dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/settings.png
+updatedAt: 2026-10-26T01:52:08.477Z

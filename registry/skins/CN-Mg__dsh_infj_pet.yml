@@ -24,7 +24,14 @@ compatibility:
   dsh: ">=0.2.0 <0.3.0-0"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/home.png
+  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/conversation.png
+  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/CN-Mg/dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/assets/icon.png
+  - https://raw.githubusercontent.com/CN-Mg/dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/assets/preview.png
+listScreenshot: https://raw.githubusercontent.com/CN-Mg/dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/assets/icon.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,30 +39,29 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: 8895eebca0f8df5c1e8837b545c85fa0b627786f
     packageVersion: 1.0.9
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:09:32.047Z
+    checkedAt: 2026-10-26T01:52:01.255Z
     findings: []
 license:
   code: MIT
-  commercialUse: false
+  commercialUse: true
   notice: 代码MIT；角色美术CC BY-NC-SA 4.0，须署名、非商业使用并以相同方式共享。
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:47.198Z
+metadataUpdatedAt: 2026-10-26T01:52:01.573Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:47.198Z
-marketScreenshots:
-  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/home.png
-  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/conversation.png
-  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/settings.png
+updatedAt: 2026-10-26T01:52:01.573Z

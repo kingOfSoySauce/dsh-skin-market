@@ -16,12 +16,18 @@ tags:
 modes:
   - dark
 install:
-  target: github:kelemiao/dsh-animation-optimization#1cb19019d79ec87846027c7a895e1fe0b5ef6e55
+  target: github:kelemiao/dsh-animation-optimization#dc5808e7a0df45cda0dfebe3a324d1f4e0152b51
   version: 0.3.5
-  commit: 1cb19019d79ec87846027c7a895e1fe0b5ef6e55
+  commit: dc5808e7a0df45cda0dfebe3a324d1f4e0152b51
   desktop:
     mode: manual-only
     reason: npm-source-unverified
+  npm:
+    name: dsh-animation-optimization
+    version: 0.3.5
+    integrity: sha512-cpqQ+lEACtJHSUKHvGxkt0Q2cMQo7TIYhBhjHDlqOuQLQP2FDv8FSqIHgyLZQRt/BBNlVL3iCCqXTO6l7FNPbw==
+    repository: https://github.com/kelemiao/dsh-animation-optimization
+    gitHead: dc5808e7a0df45cda0dfebe3a324d1f4e0152b51
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -43,22 +49,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 完全覆盖（固定版本 1cb19019d79ec87846027c7a895e1fe0b5ef6e55）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 完全覆盖（固定版本 dc5808e7a0df45cda0dfebe3a324d1f4e0152b51）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 1cb19019d79ec87846027c7a895e1fe0b5ef6e55
+    commit: dc5808e7a0df45cda0dfebe3a324d1f4e0152b51
     packageVersion: 0.3.5
     scannerVersion: static-v2
     dshVersion: ">=0.1.2-rc.1 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:31:19.301Z
+    checkedAt: 2026-10-26T01:51:05.648Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1036
 starsSnapshot: 10
-releaseUpdatedAt: 2026-10-24T21:31:20.299Z
-metadataUpdatedAt: 2026-10-24T21:31:20.299Z
+releaseUpdatedAt: 2026-10-26T01:51:06.262Z
+metadataUpdatedAt: 2026-10-26T01:51:06.262Z
 starsUpdatedAt: 2026-10-22T22:16:57.111Z
-updatedAt: 2026-10-24T21:31:20.299Z
+updatedAt: 2026-10-26T01:51:06.262Z

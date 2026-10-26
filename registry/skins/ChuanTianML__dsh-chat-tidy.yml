@@ -33,26 +33,36 @@ compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/ChuanTianML__dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/conversation.png
+screenshots:
+  - https://raw.githubusercontent.com/ChuanTianML/dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/docs/images/tidy-work-working.png
+  - https://raw.githubusercontent.com/ChuanTianML/dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/docs/images/tidy-work-completed.png
+  - https://raw.githubusercontent.com/ChuanTianML/dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/docs/images/tidy-work-expanded.png
+  - https://raw.githubusercontent.com/ChuanTianML/dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/docs/images/hero.png
+  - https://raw.githubusercontent.com/ChuanTianML/dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/docs/images/tidy-tables.png
+listScreenshot: https://raw.githubusercontent.com/ChuanTianML/dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/docs/images/tidy-work-working.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: pass
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions: []
   scan:
     commit: a22a7c973ecc8fbf33265c1e919d8445a2aff0da
     packageVersion: 0.4.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:49:32.696Z
+    checkedAt: 2026-10-26T01:51:18.050Z
     findings: []
 license:
   code: MIT
@@ -60,8 +70,6 @@ license:
 featuredRank: 995
 starsSnapshot: 5
 releaseUpdatedAt: 2026-10-25T19:44:52.681Z
-metadataUpdatedAt: 2026-10-25T20:05:52.471Z
+metadataUpdatedAt: 2026-10-26T01:51:18.673Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T20:05:52.471Z
-marketScreenshots:
-  - skin-screenshots/ChuanTianML__dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/conversation.png
+updatedAt: 2026-10-26T01:51:18.673Z

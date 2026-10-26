@@ -24,7 +24,13 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/home.png
+  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/conversation.png
+  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/sundusk/dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/docs/poses.png
+listScreenshot: https://raw.githubusercontent.com/sundusk/dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/docs/poses.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,19 +38,21 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: improve
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
     commit: 4bf5b8177d509e49161915f8a87267f594581fd7
     packageVersion: 0.1.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:32:39.160Z
+    checkedAt: 2026-10-26T01:53:10.091Z
     findings: []
 license:
   code: BSD-3-Clause
@@ -52,10 +60,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:35.608Z
+metadataUpdatedAt: 2026-10-26T01:53:10.309Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:35.608Z
-marketScreenshots:
-  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/home.png
-  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/conversation.png
-  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/settings.png
+updatedAt: 2026-10-26T01:53:10.309Z

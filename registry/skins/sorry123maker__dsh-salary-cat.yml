@@ -21,10 +21,20 @@ install:
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-salary-cat
+    version: 1.0.1
+    integrity: sha512-mW8g5XI00IeHNt8osb98focAaequi2CcgJI85vk+uh7rL7zSMYCDQc/CRufBaDVZTkx4qoFQ3YReAmJya9NFmg==
+    repository: https://github.com/sorry123maker/dsh-salary-cat
+    gitHead: 072e1f9574868dc15c9abc077f6f3f6e1b2a7da2
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/home.png
+  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/conversation.png
+  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -36,27 +46,25 @@ health:
     readmeScreenshots: improve
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 072e1f9574868dc15c9abc077f6f3f6e1b2a7da2
     packageVersion: 1.0.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:39:49.562Z
+    checkedAt: 2026-10-26T01:52:24.096Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:42.139Z
+releaseUpdatedAt: 2026-10-26T01:52:24.335Z
+metadataUpdatedAt: 2026-10-26T01:52:24.335Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:42.139Z
-marketScreenshots:
-  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/home.png
-  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/conversation.png
-  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/settings.png
+updatedAt: 2026-10-26T01:52:24.335Z

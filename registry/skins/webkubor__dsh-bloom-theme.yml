@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#26d6b0de5956ef4d2658f8d7ec7d84e03d7d2762
-  version: 0.18.2
-  commit: 26d6b0de5956ef4d2658f8d7ec7d84e03d7d2762
+  target: github:webkubor/dsh-bloom-theme#89ea1a2d7733f6395e3992801c392c5bb77e18a7
+  version: 0.18.3
+  commit: 89ea1a2d7733f6395e3992801c392c5bb77e18a7
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-bloom-theme
-    packageVersion: 0.18.2
-    integrity: sha512-sRpThrXLwmBfdOASFlK2fvzw5dSF6rPAKrD3VmTR/cA186ENgIChvE31I5upXXOg2gPrFTDQ9AqJ6tM3pCvAFA==
+    packageVersion: 0.18.3
+    integrity: sha512-0Rw0wo1GGJwtaDbjNMKqKYlPbuoeQ7P1OX5sau1+u6X7HX0CDxifed5aZaH1bQU64a7X2iabu9aPOHq5EQaYng==
   npm:
     name: dsh-bloom-theme
-    version: 0.18.2
-    integrity: sha512-sRpThrXLwmBfdOASFlK2fvzw5dSF6rPAKrD3VmTR/cA186ENgIChvE31I5upXXOg2gPrFTDQ9AqJ6tM3pCvAFA==
+    version: 0.18.3
+    integrity: sha512-0Rw0wo1GGJwtaDbjNMKqKYlPbuoeQ7P1OX5sau1+u6X7HX0CDxifed5aZaH1bQU64a7X2iabu9aPOHq5EQaYng==
     repository: https://github.com/webkubor/dsh-bloom-theme
-    gitHead: 26d6b0de5956ef4d2658f8d7ec7d84e03d7d2762
+    gitHead: 89ea1a2d7733f6395e3992801c392c5bb77e18a7
 compatibility:
   dsh: unverified
   platform:
@@ -60,19 +60,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 26d6b0de5956ef4d2658f8d7ec7d84e03d7d2762
-    packageVersion: 0.18.2
+    commit: 89ea1a2d7733f6395e3992801c392c5bb77e18a7
+    packageVersion: 0.18.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:31:04.174Z
+    checkedAt: 2026-10-26T01:50:53.486Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 193
-starsSnapshot: 42
-releaseUpdatedAt: 2026-10-24T21:31:07.058Z
-metadataUpdatedAt: 2026-10-24T21:31:07.058Z
-starsUpdatedAt: 2026-10-24T21:31:07.058Z
-updatedAt: 2026-10-24T21:31:07.058Z
+starsSnapshot: 43
+releaseUpdatedAt: 2026-10-26T01:51:01.840Z
+metadataUpdatedAt: 2026-10-26T01:51:01.840Z
+starsUpdatedAt: 2026-10-26T01:51:01.840Z
+updatedAt: 2026-10-26T01:51:01.840Z

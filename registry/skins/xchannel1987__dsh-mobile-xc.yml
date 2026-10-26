@@ -20,11 +20,19 @@ install:
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  allowBuild: dsh-mobile-xc@https://codeload.github.com/xchannel1987/dsh-mobile-xc/tar.gz/48afb6b005c130a231cedf71f18865273eda4599
+  npm:
+    name: dsh-mobile-xc
+    version: 0.6.8
+    integrity: sha512-QBDFxIeujAC5o8hVruTQrOyLyFPc2goOdbxRVv8xAmE7kWpeLdBxmSjg5LQ3cg2hitu/yIFabmCwQl2+isUPzA==
+    repository: https://github.com/xchannel1987/dsh-mobile-xc
+    gitHead: 48afb6b005c130a231cedf71f18865273eda4599
 compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/home.png
+  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/conversation.png
 screenshots: []
 review:
   compatibility: unverified
@@ -34,27 +42,27 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 48afb6b005c130a231cedf71f18865273eda4599
     packageVersion: 0.6.8
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:09:16.756Z
+    checkedAt: 2026-10-26T01:52:29.474Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:51.464Z
+releaseUpdatedAt: 2026-10-26T01:52:29.632Z
+metadataUpdatedAt: 2026-10-26T01:52:29.632Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:51.464Z
-marketScreenshots:
-  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/home.png
-  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/conversation.png
+updatedAt: 2026-10-26T01:52:29.632Z

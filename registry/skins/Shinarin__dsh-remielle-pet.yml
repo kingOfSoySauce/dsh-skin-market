@@ -24,7 +24,13 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/Shinarin__dsh-remielle-pet/daa0c8d1df4fb3decc75c6a6c1eae6e5299f92cb/home.png
+  - skin-screenshots/Shinarin__dsh-remielle-pet/daa0c8d1df4fb3decc75c6a6c1eae6e5299f92cb/conversation.png
+  - skin-screenshots/Shinarin__dsh-remielle-pet/daa0c8d1df4fb3decc75c6a6c1eae6e5299f92cb/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/Shinarin/dsh-remielle-pet/daa0c8d1df4fb3decc75c6a6c1eae6e5299f92cb/docs/settings.png
+listScreenshot: https://raw.githubusercontent.com/Shinarin/dsh-remielle-pet/daa0c8d1df4fb3decc75c6a6c1eae6e5299f92cb/docs/settings.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,19 +38,20 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: daa0c8d1df4fb3decc75c6a6c1eae6e5299f92cb
     packageVersion: 1.1.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:32:39.160Z
+    checkedAt: 2026-10-26T01:52:23.441Z
     findings: []
 license:
   code: MIT
@@ -52,10 +59,6 @@ license:
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:36.576Z
+metadataUpdatedAt: 2026-10-26T01:52:23.662Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:36.576Z
-marketScreenshots:
-  - skin-screenshots/Shinarin__dsh-remielle-pet/daa0c8d1df4fb3decc75c6a6c1eae6e5299f92cb/home.png
-  - skin-screenshots/Shinarin__dsh-remielle-pet/daa0c8d1df4fb3decc75c6a6c1eae6e5299f92cb/conversation.png
-  - skin-screenshots/Shinarin__dsh-remielle-pet/daa0c8d1df4fb3decc75c6a6c1eae6e5299f92cb/settings.png
+updatedAt: 2026-10-26T01:52:23.662Z

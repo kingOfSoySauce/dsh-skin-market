@@ -24,13 +24,13 @@ install:
     packageName: dsh-bloomglass
     packageVersion: 1.0.3
     integrity: sha512-Q9pu7mx/tFz8P3aD3SZ4ge0sthvnn1ekI3O2YMxp7z/dB0IZ5Ztm3MYSNRVNRd6OcdsT4Mo0FwE78gtNNVrwGQ==
+  allowBuild: dsh-bloomglass@https://codeload.github.com/CosmoSail/dsh-bloomglass/tar.gz/bf7fd55f4f261d9ff1ef6754ad6764bd9849891f
   npm:
     name: dsh-bloomglass
     version: 1.0.3
     integrity: sha512-Q9pu7mx/tFz8P3aD3SZ4ge0sthvnn1ekI3O2YMxp7z/dB0IZ5Ztm3MYSNRVNRd6OcdsT4Mo0FwE78gtNNVrwGQ==
     repository: https://github.com/CosmoSail/dsh-bloomglass
     gitHead: bf7fd55f4f261d9ff1ef6754ad6764bd9849891f
-  allowBuild: dsh-bloomglass@https://codeload.github.com/CosmoSail/dsh-bloomglass/tar.gz/bf7fd55f4f261d9ff1ef6754ad6764bd9849891f
 compatibility:
   dsh: unverified
   platform:
@@ -64,7 +64,7 @@ license:
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-26T01:52:02.246Z
 metadataUpdatedAt: 2026-10-25T18:20:01.273Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-10-26T01:52:02.246Z

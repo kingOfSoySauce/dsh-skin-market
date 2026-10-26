@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:jryang1997/dsh-ascii-whales#0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4
-  version: 0.14.0
-  commit: 0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4
+  target: github:jryang1997/dsh-ascii-whales#38aaae3ff90fcc28cec99397456be6ccb28662de
+  version: 0.15.0
+  commit: 38aaae3ff90fcc28cec99397456be6ccb28662de
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -25,7 +25,19 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/jryang1997__dsh-ascii-whales/0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4/home.png
+  - skin-screenshots/jryang1997__dsh-ascii-whales/0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4/conversation.png
+screenshots:
+  - https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/cruise.gif
+  - https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/modes.png
+  - https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/dive.gif
+  - https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/tail.gif
+  - https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/rain.gif
+  - https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/dictation-echo.gif
+  - https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/reading-glass.png
+  - https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/dark.png
+listScreenshot: https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/cruise.gif
 review:
   compatibility: unverified
   preview: verified
@@ -33,29 +45,27 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4
-    packageVersion: 0.14.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    commit: 38aaae3ff90fcc28cec99397456be6ccb28662de
+    packageVersion: 0.15.0
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:04:08.788Z
+    checkedAt: 2026-10-26T01:51:44.838Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 998
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:47.803Z
+releaseUpdatedAt: 2026-10-26T01:51:46.470Z
+metadataUpdatedAt: 2026-10-26T01:51:46.470Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:47.803Z
-marketScreenshots:
-  - skin-screenshots/jryang1997__dsh-ascii-whales/0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4/home.png
-  - skin-screenshots/jryang1997__dsh-ascii-whales/0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4/conversation.png
+updatedAt: 2026-10-26T01:51:46.470Z

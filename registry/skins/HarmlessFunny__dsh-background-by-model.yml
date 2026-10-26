@@ -18,15 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:HarmlessFunny/dsh-background-by-model#64b196e760c97632f31d03b49ab557668a247bca
-  version: 0.9.1
-  commit: 64b196e760c97632f31d03b49ab557668a247bca
+  target: github:HarmlessFunny/dsh-background-by-model#9a5c3c092ca8f07e65cbeee9f08b264f7151cec5
+  version: 0.10.0
+  commit: 9a5c3c092ca8f07e65cbeee9f08b264f7151cec5
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-background-by-model
+    packageVersion: 0.10.0
+    integrity: sha512-Q5Gu/AoSJmmF8J3OUXjB8G4Yg4iF4e4ZnUWqtJNkxZcMPvoHurdCGzCpuxsvyJuT7dA3PdsqalczUifxDSXKvQ==
   npm:
     name: dsh-background-by-model
-    version: 0.9.1
-    integrity: sha512-EFG598J/5eO9PXqjovECfpw3dyigMcR4wQz56RJuvTq6bHJ8qg/tcIoOHGFsxUw4s+CP1sKxAubYJKxmPHaOYg==
+    version: 0.10.0
+    integrity: sha512-Q5Gu/AoSJmmF8J3OUXjB8G4Yg4iF4e4ZnUWqtJNkxZcMPvoHurdCGzCpuxsvyJuT7dA3PdsqalczUifxDSXKvQ==
     repository: https://github.com/HarmlessFunny/dsh-background-by-model
-    gitHead: 64b196e760c97632f31d03b49ab557668a247bca
+    gitHead: 9a5c3c092ca8f07e65cbeee9f08b264f7151cec5
 compatibility:
   dsh: ">=0.2.1-alpha.2"
   platform:
@@ -39,7 +45,7 @@ listScreenshot: https://cdn.jsdelivr.net/gh/HarmlessFunny/assets@v0.1.0/dsh-back
 review:
   compatibility: verified
   preview: verified
-  installation: verified
+  installation: manual-only
 health:
   status: improvements
   checks:
@@ -52,13 +58,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 64b196e760c97632f31d03b49ab557668a247bca
-    packageVersion: 0.9.1
+    commit: 9a5c3c092ca8f07e65cbeee9f08b264f7151cec5
+    packageVersion: 0.10.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-alpha.2"
     mode: static
     result: unknown
-    checkedAt: 2026-10-21T22:17:10.263Z
+    checkedAt: 2026-10-26T01:50:57.889Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -67,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 1110
 starsSnapshot: 23
-releaseUpdatedAt: 2026-10-22T06:40:00.000Z
-metadataUpdatedAt: 2026-10-22T06:40:00.000Z
+releaseUpdatedAt: 2026-10-26T01:50:59.021Z
+metadataUpdatedAt: 2026-10-26T01:50:59.021Z
 starsUpdatedAt: 2026-10-24T21:31:09.844Z
-updatedAt: 2026-10-24T21:31:09.844Z
+updatedAt: 2026-10-26T01:50:59.021Z

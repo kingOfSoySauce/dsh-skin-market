@@ -14,9 +14,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:la-sandrone/dsh-taller-y-relojeria-de-sandrone#5cd447a084902e62e639d62497a1a075f4dec2fd&path:/packages/dsh-sandrone-ui-patches
+  target: github:la-sandrone/dsh-taller-y-relojeria-de-sandrone#653d9e87609a992f54b311f3ab549fa7db9d1c35&path:/packages/dsh-sandrone-ui-patches
   version: 0.1.0
-  commit: 5cd447a084902e62e639d62497a1a075f4dec2fd
+  commit: 653d9e87609a992f54b311f3ab549fa7db9d1c35
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -24,6 +24,10 @@ compatibility:
   dsh: ">=0.1.1-rc.1"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/home.png
+  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/conversation.png
+  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -33,17 +37,21 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 5cd447a084902e62e639d62497a1a075f4dec2fd
+    commit: 653d9e87609a992f54b311f3ab549fa7db9d1c35
     packageVersion: 0.1.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:37:24.972Z
+    checkedAt: 2026-10-26T01:52:55.045Z
     findings: []
 license:
   code: MIT
@@ -51,11 +59,7 @@ license:
   notice: 代码MIT；文档CC BY-SA 4.0；Source Serif 4字体OFL，须保留各自许可与署名。
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:43.478Z
+releaseUpdatedAt: 2026-10-26T01:52:55.198Z
+metadataUpdatedAt: 2026-10-26T01:52:55.198Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:43.478Z
-marketScreenshots:
-  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/home.png
-  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/conversation.png
-  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/settings.png
+updatedAt: 2026-10-26T01:52:55.198Z

@@ -24,7 +24,14 @@ compatibility:
   dsh: 0.1.5-rc.1
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.png
+  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/conversation.png
+  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/menu.zh.png
+  - https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/balance.zh.png
+listScreenshot: https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/menu.zh.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,18 +39,21 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
     commit: 9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4
     packageVersion: 0.2.8
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T19:08:58.628Z
+    checkedAt: 2026-10-26T01:51:10.398Z
     findings: []
 license:
   code: MIT
@@ -51,10 +61,6 @@ license:
 featuredRank: 992
 starsSnapshot: 8
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:46.362Z
+metadataUpdatedAt: 2026-10-26T01:51:10.962Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:46.362Z
-marketScreenshots:
-  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.png
-  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/conversation.png
-  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/settings.png
+updatedAt: 2026-10-26T01:51:10.962Z

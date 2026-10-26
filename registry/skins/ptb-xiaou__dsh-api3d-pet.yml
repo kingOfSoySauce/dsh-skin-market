@@ -23,7 +23,12 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/ptb-xiaou__dsh-api3d-pet/619bdb8cb97941d2a6a9fa1104af83847efdcc8b/home.png
+  - skin-screenshots/ptb-xiaou__dsh-api3d-pet/619bdb8cb97941d2a6a9fa1104af83847efdcc8b/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/ptb-xiaou/dsh-api3d-pet/619bdb8cb97941d2a6a9fa1104af83847efdcc8b/assets/DSH2.png
+listScreenshot: https://raw.githubusercontent.com/ptb-xiaou/dsh-api3d-pet/619bdb8cb97941d2a6a9fa1104af83847efdcc8b/assets/DSH2.png
 review:
   compatibility: unverified
   preview: verified
@@ -31,19 +36,20 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 619bdb8cb97941d2a6a9fa1104af83847efdcc8b
     packageVersion: 0.6.10
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:55:54.389Z
+    checkedAt: 2026-10-26T01:53:03.803Z
     findings: []
 license:
   code: MIT
@@ -51,9 +57,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:49.960Z
+metadataUpdatedAt: 2026-10-26T01:53:04.142Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:49.960Z
-marketScreenshots:
-  - skin-screenshots/ptb-xiaou__dsh-api3d-pet/619bdb8cb97941d2a6a9fa1104af83847efdcc8b/home.png
-  - skin-screenshots/ptb-xiaou__dsh-api3d-pet/619bdb8cb97941d2a6a9fa1104af83847efdcc8b/settings.png
+updatedAt: 2026-10-26T01:53:04.142Z

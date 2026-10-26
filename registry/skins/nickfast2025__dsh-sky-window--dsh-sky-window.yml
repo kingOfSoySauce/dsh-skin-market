@@ -24,13 +24,13 @@ install:
     packageName: dsh-sky-window
     packageVersion: 0.1.2
     integrity: sha512-t+5hSTevsfmvUa0CEtg/7JAGDNPGtizhFIrKndC7VFdpP+Im8J7MBoI6nOyEGchM1qOYKXYp6N6h070klz8rmQ==
+  allowBuild: dsh-sky-window@https://codeload.github.com/nickfast2025/dsh-sky-window/tar.gz/4ffebe5479a393a32ad969df4424ebb984a4eebe#path:dsh-sky-window
   npm:
     name: dsh-sky-window
     version: 0.1.2
     integrity: sha512-t+5hSTevsfmvUa0CEtg/7JAGDNPGtizhFIrKndC7VFdpP+Im8J7MBoI6nOyEGchM1qOYKXYp6N6h070klz8rmQ==
     repository: https://github.com/nickfast2025/dsh-sky-window
     gitHead: 4ffebe5479a393a32ad969df4424ebb984a4eebe
-  allowBuild: dsh-sky-window@https://codeload.github.com/nickfast2025/dsh-sky-window/tar.gz/4ffebe5479a393a32ad969df4424ebb984a4eebe#path:dsh-sky-window
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -63,7 +63,7 @@ license:
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-26T01:52:19.324Z
 metadataUpdatedAt: 2026-10-25T18:20:01.273Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-10-26T01:52:19.324Z

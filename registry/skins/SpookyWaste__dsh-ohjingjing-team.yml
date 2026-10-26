@@ -20,41 +20,45 @@ install:
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  allowBuild: dsh-ohjingjing-team@https://codeload.github.com/SpookyWaste/dsh-ohjingjing-team/tar.gz/fbb7b9e49efd371c754436b830479d01a1e6b6cd
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.7-rc.2 <0.3.0-0"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/SpookyWaste__dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/conversation.png
+screenshots:
+  - https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/panel-live.webp
+  - https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/header-runway_1.png
+  - https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/catalog_1.png
+listScreenshot: https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/panel-live.webp
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
-    readmeScreenshots: improve
-    compatibility: improve
+    readmeScreenshots: pass
+    compatibility: pass
     installation: pass
-  suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    installCommand: pass
+    topic: pass
+  suggestions: []
   scan:
     commit: fbb7b9e49efd371c754436b830479d01a1e6b6cd
     packageVersion: 0.4.1
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.7-rc.2 <0.3.0-0"
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:38:31.057Z
+    checkedAt: 2026-10-26T01:52:24.491Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:38.433Z
+releaseUpdatedAt: 2026-10-26T01:52:25.264Z
+metadataUpdatedAt: 2026-10-26T01:52:25.264Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:38.433Z
-marketScreenshots:
-  - skin-screenshots/SpookyWaste__dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/conversation.png
+updatedAt: 2026-10-26T01:52:25.264Z

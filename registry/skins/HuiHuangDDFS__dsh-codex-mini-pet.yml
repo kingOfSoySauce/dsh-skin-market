@@ -20,12 +20,23 @@ install:
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  allowBuild: dsh-codex-mini-pet@https://codeload.github.com/HuiHuangDDFS/dsh-codex-mini-pet/tar.gz/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/HuiHuangDDFS__dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/home.png
+  - skin-screenshots/HuiHuangDDFS__dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/conversation.png
+  - skin-screenshots/HuiHuangDDFS__dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/assets/pets/deepseek/preview.png
+  - https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/assets/pets/whale-girl/preview.png
+  - https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/assets/pets/zhiyu/preview.png
+  - https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/docs/images/chat-mode.png
+  - https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/docs/images/work-mode.png
+  - https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/docs/images/desktop-pet.png
+  - https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/docs/images/settings-pets.png
+listScreenshot: https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/assets/pets/deepseek/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -33,29 +44,27 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 9a5a02d10f661f0ff9efc34bb7e679bdd135ff19
     packageVersion: 2.0.7
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:29:51.103Z
+    checkedAt: 2026-10-26T01:52:08.869Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:45.972Z
+releaseUpdatedAt: 2026-10-26T01:52:09.556Z
+metadataUpdatedAt: 2026-10-26T01:52:09.556Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:45.972Z
-marketScreenshots:
-  - skin-screenshots/HuiHuangDDFS__dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/home.png
-  - skin-screenshots/HuiHuangDDFS__dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/conversation.png
-  - skin-screenshots/HuiHuangDDFS__dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/settings.png
+updatedAt: 2026-10-26T01:52:09.556Z
