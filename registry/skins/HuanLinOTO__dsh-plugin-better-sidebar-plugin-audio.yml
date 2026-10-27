@@ -20,6 +20,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: "@huanlin/dsh-plugin-better-sidebar-plugin-audio"
+    version: 0.1.0
+    integrity: sha512-c7i3QlWljT+tb0I5VcU0DlmsL5WC6mo+6MSnnLudZF3h4MWe7jclcWXbSh09ZmqVXacaTqF396gfUtu9RLhIkg==
+    repository: https://github.com/HuanLinOTO/dsh-plugin-better-sidebar-plugin-audio
+    gitHead: 9e59a980a6da85b92697412b8c239bdf5d6bbf66
 compatibility:
   dsh: unverified
   platform:
@@ -29,17 +35,35 @@ screenshots:
   - https://raw.githubusercontent.com/HuanLinOTO/dsh-plugin-better-sidebar-plugin-audio/9e59a980a6da85b92697412b8c239bdf5d6bbf66/dev/shot-spectrogram.png
   - https://raw.githubusercontent.com/HuanLinOTO/dsh-plugin-better-sidebar-plugin-audio/9e59a980a6da85b92697412b8c239bdf5d6bbf66/dev/shot-zoom-waveform.png
   - https://raw.githubusercontent.com/HuanLinOTO/dsh-plugin-better-sidebar-plugin-audio/9e59a980a6da85b92697412b8c239bdf5d6bbf66/dev/shot-zoom-spectrogram.png
+listScreenshot: https://raw.githubusercontent.com/HuanLinOTO/dsh-plugin-better-sidebar-plugin-audio/9e59a980a6da85b92697412b8c239bdf5d6bbf66/dev/shot-waveform.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 9e59a980a6da85b92697412b8c239bdf5d6bbf66
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:09:01.229Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
+featuredRank: 0
+releaseUpdatedAt: 2026-10-27T23:00:28.784Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/HuanLinOTO/dsh-plugin-better-sidebar-plugin-audio/9e59a980a6da85b92697412b8c239bdf5d6bbf66/dev/shot-waveform.png
+updatedAt: 2026-10-27T23:00:28.784Z

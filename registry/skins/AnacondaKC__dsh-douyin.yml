@@ -26,17 +26,35 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/AnacondaKC/dsh-douyin/2f28338b29503f20d159b1f0123a985530134b6a/docs/images/dsh-douyin-preview.png
+listScreenshot: https://raw.githubusercontent.com/AnacondaKC/dsh-douyin/2f28338b29503f20d159b1f0123a985530134b6a/docs/images/dsh-douyin-preview.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 2f28338b29503f20d159b1f0123a985530134b6a
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    dshVersion: ^0.0.1-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:08:04.518Z
+    findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 5
+featuredRank: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/AnacondaKC/dsh-douyin/2f28338b29503f20d159b1f0123a985530134b6a/docs/images/dsh-douyin-preview.png
+updatedAt: 2026-10-27T23:00:28.784Z

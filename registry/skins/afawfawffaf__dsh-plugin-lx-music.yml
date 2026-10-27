@@ -29,17 +29,36 @@ screenshots:
   - https://raw.githubusercontent.com/afawfawffaf/dsh-plugin-lx-music/9ce582f6c516f745a8ac009e6d4ad64dfa1cb8c8/assets/screenshots/02-lyrics-and-composer-button.jpg
   - https://raw.githubusercontent.com/afawfawffaf/dsh-plugin-lx-music/9ce582f6c516f745a8ac009e6d4ad64dfa1cb8c8/assets/screenshots/03-lyrics-closeup.png
   - https://raw.githubusercontent.com/afawfawffaf/dsh-plugin-lx-music/9ce582f6c516f745a8ac009e6d4ad64dfa1cb8c8/assets/screenshots/04-lyrics-closeup-night.png
+listScreenshot: https://raw.githubusercontent.com/afawfawffaf/dsh-plugin-lx-music/9ce582f6c516f745a8ac009e6d4ad64dfa1cb8c8/assets/screenshots/01-lyrics-and-controls.jpg
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: 9ce582f6c516f745a8ac009e6d4ad64dfa1cb8c8
+    packageVersion: 0.4.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:08:49.102Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 1
+featuredRank: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/afawfawffaf/dsh-plugin-lx-music/9ce582f6c516f745a8ac009e6d4ad64dfa1cb8c8/assets/screenshots/01-lyrics-and-controls.jpg
+updatedAt: 2026-10-27T23:00:28.784Z

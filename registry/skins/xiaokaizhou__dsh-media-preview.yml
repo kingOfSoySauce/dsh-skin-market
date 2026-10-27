@@ -20,23 +20,47 @@ install:
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: media-preview
+    version: 0.1.3
+    integrity: sha512-YPS4BDZzPWmVxgqMX6jfR64YaXr7VsKUWabrd9Sfo7A3fr2OPAc+RBoty7T8viQBfXJMJAHzKlYqqbsrdXLRkw==
+    repository: https://github.com/xiaokaizhou/dsh-media-preview
+    gitHead: 673b38897bf83d6d4a8b30014cda14bc67a826c1
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/xiaokaizhou/dsh-media-preview/673b38897bf83d6d4a8b30014cda14bc67a826c1/.github/demo-preview.png
+listScreenshot: https://raw.githubusercontent.com/xiaokaizhou/dsh-media-preview/673b38897bf83d6d4a8b30014cda14bc67a826c1/.github/demo-preview.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 673b38897bf83d6d4a8b30014cda14bc67a826c1
+    packageVersion: 0.1.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:10:34.064Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
+featuredRank: 0
+releaseUpdatedAt: 2026-10-27T23:00:28.784Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/xiaokaizhou/dsh-media-preview/673b38897bf83d6d4a8b30014cda14bc67a826c1/.github/demo-preview.png
+updatedAt: 2026-10-27T23:00:28.784Z

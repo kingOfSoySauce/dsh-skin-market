@@ -27,17 +27,36 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/ywleeo/dsh-image-preview/273a786fb04eadea96338681d261572ccf9e4be4/assets/screenshots/preview.png
   - https://raw.githubusercontent.com/ywleeo/dsh-image-preview/273a786fb04eadea96338681d261572ccf9e4be4/assets/screenshots/preview-video.png
+listScreenshot: https://raw.githubusercontent.com/ywleeo/dsh-image-preview/273a786fb04eadea96338681d261572ccf9e4be4/assets/screenshots/preview.png
 review:
   compatibility: unverified
   preview: verified
-  installation: manual-only
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 273a786fb04eadea96338681d261572ccf9e4be4
+    packageVersion: 0.2.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:09:31.824Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 1
+featuredRank: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/ywleeo/dsh-image-preview/273a786fb04eadea96338681d261572ccf9e4be4/assets/screenshots/preview.png
+updatedAt: 2026-10-27T23:00:28.784Z

@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:CAPTAIN1275/dsh-ui-web#68c99d7e6d5966e9006e3cb1c13d3de7261a25d6&path:/packages/skins/whale-song
+  target: github:CAPTAIN1275/dsh-ui-web#b419ac5ba6ccb63f49fadccb96dc9267e39a3109&path:/packages/skins/whale-song
   version: 0.4.0
-  commit: 68c99d7e6d5966e9006e3cb1c13d3de7261a25d6
+  commit: b419ac5ba6ccb63f49fadccb96dc9267e39a3109
   desktop:
     mode: managed
     registry: npm
@@ -31,7 +31,7 @@ install:
     version: 0.4.0
     integrity: sha512-kBJDewLcFWSTQwwzlpn82DhX37Q5vYW6mAnrqvwRlY+fK39Wd904yHjGLfW7iS51XuGw+01zS2sP1shVa/mjKw==
     repository: https://github.com/CAPTAIN1275/dsh-ui-web
-    gitHead: 68c99d7e6d5966e9006e3cb1c13d3de7261a25d6
+    gitHead: b419ac5ba6ccb63f49fadccb96dc9267e39a3109
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -61,20 +61,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 68c99d7e6d5966e9006e3cb1c13d3de7261a25d6
+    commit: b419ac5ba6ccb63f49fadccb96dc9267e39a3109
     packageVersion: 0.4.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-21T22:17:05.647Z
+    checkedAt: 2026-10-27T23:00:41.311Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 969
 starsSnapshot: 42
-releaseUpdatedAt: 2026-10-21T22:17:07.097Z
-metadataUpdatedAt: 2026-10-21T22:17:07.097Z
+releaseUpdatedAt: 2026-10-27T23:00:44.325Z
+metadataUpdatedAt: 2026-10-27T23:00:44.325Z
 starsUpdatedAt: 2026-10-24T21:31:04.654Z
-updatedAt: 2026-10-24T21:31:04.654Z
+updatedAt: 2026-10-27T23:00:44.325Z

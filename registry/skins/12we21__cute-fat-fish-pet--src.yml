@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:12we21/cute-fat-fish-pet#e53f63e67227671aca092e3334c8611e29b880b6&path:/src
-  version: 1.2.3
-  commit: e53f63e67227671aca092e3334c8611e29b880b6
+  target: github:12we21/cute-fat-fish-pet#652c4abb3075e574b6fa5d68b79c8aadbaf7b6e7&path:/src
+  version: 1.2.4
+  commit: 652c4abb3075e574b6fa5d68b79c8aadbaf7b6e7
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -51,22 +51,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.2.0-rc.1 未被本次检测范围 ^0.2.0-rc.1 完全覆盖（固定版本 e53f63e67227671aca092e3334c8611e29b880b6）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.2.0-rc.1 未被本次检测范围 ^0.2.0-rc.1 完全覆盖（固定版本 652c4abb3075e574b6fa5d68b79c8aadbaf7b6e7）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: e53f63e67227671aca092e3334c8611e29b880b6
-    packageVersion: 1.2.3
+    commit: 652c4abb3075e574b6fa5d68b79c8aadbaf7b6e7
+    packageVersion: 1.2.4
     scannerVersion: static-v2
     dshVersion: ^0.2.0-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:51:02.313Z
+    checkedAt: 2026-10-27T23:00:46.690Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 981
-starsSnapshot: 22
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:02.704Z
-starsUpdatedAt: 2026-10-26T23:11:19.267Z
-updatedAt: 2026-10-26T23:11:19.267Z
+starsSnapshot: 23
+releaseUpdatedAt: 2026-10-27T23:00:48.166Z
+metadataUpdatedAt: 2026-10-27T23:00:48.166Z
+starsUpdatedAt: 2026-10-27T23:00:48.166Z
+updatedAt: 2026-10-27T23:00:48.166Z

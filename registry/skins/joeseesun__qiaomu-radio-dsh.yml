@@ -26,17 +26,39 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/joeseesun/qiaomu-radio-dsh/490db5f81643407ab578a8f88639e7c1f31e62b9/docs/screenshots/braun-menu.png
+listScreenshot: https://raw.githubusercontent.com/joeseesun/qiaomu-radio-dsh/490db5f81643407ab578a8f88639e7c1f31e62b9/docs/screenshots/braun-menu.png
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 490db5f81643407ab578a8f88639e7c1f31e62b9
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-10-27T23:01:14.053Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: GPL-3.0-or-later
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-27T23:01:14.316Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/joeseesun/qiaomu-radio-dsh/490db5f81643407ab578a8f88639e7c1f31e62b9/docs/screenshots/braun-menu.png
+updatedAt: 2026-10-27T23:01:14.316Z

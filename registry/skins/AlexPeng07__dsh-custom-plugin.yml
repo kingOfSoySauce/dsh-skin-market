@@ -17,13 +17,22 @@ modes:
   - light
   - dark
 install:
-  target: github:AlexPeng07/dsh-custom-plugin#e8aadeb80177d5682beb565ff842e1b4b8a7038e
-  version: 0.9.2
-  commit: e8aadeb80177d5682beb565ff842e1b4b8a7038e
+  target: github:AlexPeng07/dsh-custom-plugin#9fc50a5de87da550acb70d6957bebec2ff75e1d6
+  version: 0.9.3
+  commit: 9fc50a5de87da550acb70d6957bebec2ff75e1d6
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepare,prepublishOnly
-  allowBuild: "@alexpeng/dsh-custom-plugin@https://codeload.github.com/AlexPeng07/dsh-custom-plugin/tar.gz/e8aadeb80177d5682beb565ff842e1b4b8a7038e"
+    mode: managed
+    registry: npm
+    packageName: "@alexpeng/dsh-custom-plugin"
+    packageVersion: 0.9.3
+    integrity: sha512-tJL5/Do3LQ1wzfTLcPmjwfn8JdYDL+5ZtUqdsgU3FerLxYlNpZ6HVRuQ/vP1wptFh2p5M2NtTQ8t5hy1K+wjZQ==
+  allowBuild: "@alexpeng/dsh-custom-plugin@https://codeload.github.com/AlexPeng07/dsh-custom-plugin/tar.gz/9fc50a5de87da550acb70d6957bebec2ff75e1d6"
+  npm:
+    name: "@alexpeng/dsh-custom-plugin"
+    version: 0.9.3
+    integrity: sha512-tJL5/Do3LQ1wzfTLcPmjwfn8JdYDL+5ZtUqdsgU3FerLxYlNpZ6HVRuQ/vP1wptFh2p5M2NtTQ8t5hy1K+wjZQ==
+    repository: https://github.com/AlexPeng07/dsh-custom-plugin
+    gitHead: 9fc50a5de87da550acb70d6957bebec2ff75e1d6
 compatibility:
   dsh: ^0.1.1-rc.1
   platform:
@@ -47,15 +56,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.1 未被本次检测范围 >=0.1.7-rc.2 完全覆盖（固定版本 e8aadeb80177d5682beb565ff842e1b4b8a7038e）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.1 未被本次检测范围 >=0.1.7-rc.2 完全覆盖（固定版本 9fc50a5de87da550acb70d6957bebec2ff75e1d6）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: e8aadeb80177d5682beb565ff842e1b4b8a7038e
-    packageVersion: 0.9.2
+    commit: 9fc50a5de87da550acb70d6957bebec2ff75e1d6
+    packageVersion: 0.9.3
     scannerVersion: static-v2
     dshVersion: ">=0.1.7-rc.2"
     mode: static
     result: unknown
-    checkedAt: 2026-10-26T23:11:21.396Z
+    checkedAt: 2026-10-27T23:00:49.071Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -64,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 1038
 starsSnapshot: 8
-releaseUpdatedAt: 2026-10-26T23:11:25.966Z
-metadataUpdatedAt: 2026-10-26T23:11:25.966Z
+releaseUpdatedAt: 2026-10-27T23:00:52.287Z
+metadataUpdatedAt: 2026-10-27T23:00:52.287Z
 starsUpdatedAt: 2026-10-08T23:45:17.299Z
-updatedAt: 2026-10-26T23:11:25.966Z
+updatedAt: 2026-10-27T23:00:52.287Z

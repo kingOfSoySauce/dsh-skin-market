@@ -27,17 +27,35 @@ compatibility:
 screenshots:
   - https://github.com/user-attachments/assets/061d92cb-4418-47d1-86bd-be52a9950dbc
   - https://github.com/user-attachments/assets/74df4ef9-aa98-4be7-bdf1-852eed2ed51d
+listScreenshot: https://github.com/user-attachments/assets/061d92cb-4418-47d1-86bd-be52a9950dbc
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: ef9685c9b4f0f4e3c810ebf520d3f67d099b1e39
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:08:25.120Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 3
+featuredRank: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://github.com/user-attachments/assets/061d92cb-4418-47d1-86bd-be52a9950dbc
+updatedAt: 2026-10-27T23:00:28.784Z

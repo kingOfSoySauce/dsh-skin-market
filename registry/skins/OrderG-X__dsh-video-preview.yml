@@ -14,12 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:OrderG-X/dsh-video-preview#7351b414ce84e296c6d8b1a0b0cfd18906f7b3e1
-  version: 0.4.0
-  commit: 7351b414ce84e296c6d8b1a0b0cfd18906f7b3e1
+  target: github:OrderG-X/dsh-video-preview#c33073201dd3f7367628190ce1b41939b38f9e8e
+  version: 0.5.1
+  commit: c33073201dd3f7367628190ce1b41939b38f9e8e
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: "@orderg-x/dsh-video-preview"
+    version: 0.5.1
+    integrity: sha512-pavrufg8cf0/NdOjrnzbWdwEEQkWj4YLano10mr4Fo0X9mYJEGbipgC4Gdddf8AFBlAGPOJgKAebGmLCyE640Q==
+    repository: https://github.com/OrderG-X/dsh-video-preview
+    gitHead: c33073201dd3f7367628190ce1b41939b38f9e8e
 compatibility:
   dsh: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
   platform:
@@ -27,17 +33,35 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/OrderG-X/dsh-video-preview/7351b414ce84e296c6d8b1a0b0cfd18906f7b3e1/assets/hero.png
   - https://raw.githubusercontent.com/OrderG-X/dsh-video-preview/7351b414ce84e296c6d8b1a0b0cfd18906f7b3e1/assets/demo.gif
+listScreenshot: https://raw.githubusercontent.com/OrderG-X/dsh-video-preview/7351b414ce84e296c6d8b1a0b0cfd18906f7b3e1/assets/hero.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: c33073201dd3f7367628190ce1b41939b38f9e8e
+    packageVersion: 0.5.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-10-27T23:01:04.712Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
+releaseUpdatedAt: 2026-10-27T23:01:06.256Z
+metadataUpdatedAt: 2026-10-27T23:01:06.256Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/OrderG-X/dsh-video-preview/7351b414ce84e296c6d8b1a0b0cfd18906f7b3e1/assets/hero.png
+updatedAt: 2026-10-27T23:01:06.256Z

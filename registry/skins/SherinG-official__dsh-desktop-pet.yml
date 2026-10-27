@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:SherinG-official/dsh-desktop-pet#1022a6d4915efbb97047d4da49469c96ed290074
+  target: github:SherinG-official/dsh-desktop-pet#7907056ebfd73de026e3ef24faa1dbd00fe2efca
   version: 0.2.0
-  commit: 1022a6d4915efbb97047d4da49469c96ed290074
+  commit: 7907056ebfd73de026e3ef24faa1dbd00fe2efca
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -47,12 +47,12 @@ health:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: 1022a6d4915efbb97047d4da49469c96ed290074
+    commit: 7907056ebfd73de026e3ef24faa1dbd00fe2efca
     packageVersion: 0.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T23:12:09.424Z
+    checkedAt: 2026-10-27T23:01:34.516Z
     findings: []
 license:
   code: MIT
@@ -60,7 +60,7 @@ license:
   notice: 根项目MIT；pet子树另适用Apache-2.0，须保留pet/LICENSE。
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-26T23:12:09.508Z
-metadataUpdatedAt: 2026-10-26T23:12:09.508Z
+releaseUpdatedAt: 2026-10-27T23:01:34.664Z
+metadataUpdatedAt: 2026-10-27T23:01:34.664Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T23:12:09.508Z
+updatedAt: 2026-10-27T23:01:34.664Z

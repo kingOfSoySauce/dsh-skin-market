@@ -15,13 +15,13 @@ modes:
   - light
   - dark
 install:
-  target: github:Miasakiii/dsh-miasaki#bb09c8ca116d515329070e9b7b73576eca28305f&path:/dsh-miasaki-appearance
+  target: github:Miasakiii/dsh-miasaki#ed2de709ec0e193bbc6939196fb5a3724c0f4187&path:/dsh-miasaki-appearance
   version: 0.1.0
-  commit: bb09c8ca116d515329070e9b7b73576eca28305f
+  commit: ed2de709ec0e193bbc6939196fb5a3724c0f4187
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  allowBuild: "@miasaki/dsh-appearance@https://codeload.github.com/Miasakiii/dsh-miasaki/tar.gz/bb09c8ca116d515329070e9b7b73576eca28305f#path:dsh-miasaki-appearance"
+  allowBuild: "@miasaki/dsh-appearance@https://codeload.github.com/Miasakiii/dsh-miasaki/tar.gz/ed2de709ec0e193bbc6939196fb5a3724c0f4187#path:dsh-miasaki-appearance"
 compatibility:
   dsh: ">=0.1.7"
   platform:
@@ -48,22 +48,22 @@ health:
     topic: improve
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.7 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 完全覆盖（固定版本 bb09c8ca116d515329070e9b7b73576eca28305f）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.7 未被本次检测范围 >=0.1.2-rc.1 <0.3.0 完全覆盖（固定版本 ed2de709ec0e193bbc6939196fb5a3724c0f4187）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: bb09c8ca116d515329070e9b7b73576eca28305f
+    commit: ed2de709ec0e193bbc6939196fb5a3724c0f4187
     packageVersion: 0.1.0
     scannerVersion: static-v2
     dshVersion: ">=0.1.2-rc.1 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:52:17.480Z
+    checkedAt: 2026-10-27T23:01:15.972Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-26T01:52:17.793Z
-metadataUpdatedAt: 2026-10-26T01:52:17.793Z
+releaseUpdatedAt: 2026-10-27T23:01:16.861Z
+metadataUpdatedAt: 2026-10-27T23:01:16.861Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:17.793Z
+updatedAt: 2026-10-27T23:01:16.861Z

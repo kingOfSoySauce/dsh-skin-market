@@ -27,17 +27,35 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/fuhuonvshen/dsh-video-player/de42a54c2892956ead10a35043d3f4a78a86dc62/preview/default.jpg
   - https://raw.githubusercontent.com/fuhuonvshen/dsh-video-player/de42a54c2892956ead10a35043d3f4a78a86dc62/preview/with-skin.jpg
+listScreenshot: https://raw.githubusercontent.com/fuhuonvshen/dsh-video-player/de42a54c2892956ead10a35043d3f4a78a86dc62/preview/default.jpg
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: de42a54c2892956ead10a35043d3f4a78a86dc62
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:09:53.149Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 0
+featuredRank: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/fuhuonvshen/dsh-video-player/de42a54c2892956ead10a35043d3f4a78a86dc62/preview/default.jpg
+updatedAt: 2026-10-27T23:00:28.784Z

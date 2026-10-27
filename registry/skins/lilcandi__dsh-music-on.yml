@@ -29,17 +29,35 @@ screenshots:
   - https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-dock.png
   - https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-spectrum.png
   - https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-settings.png
+listScreenshot: https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-capsule.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: e87455f12adb2499a3664073efc1ba4f22e555ef
+    packageVersion: 0.2.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T23:11:51.574Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 1
 featuredRank: 0
-starsSnapshot: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
-starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-capsule.png
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+starsUpdatedAt: 2026-10-27T23:00:28.784Z
+updatedAt: 2026-10-27T23:00:28.784Z

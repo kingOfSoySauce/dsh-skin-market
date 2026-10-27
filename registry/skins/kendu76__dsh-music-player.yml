@@ -20,6 +20,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: dsh-music-player
+    version: 1.0.3
+    integrity: sha512-3pYMYug66vXILUNjLUtXy6DjSU6illd0kfM0t9YebUmQGfiHU6AOf67pj38A604zm5SKKXYjuo+jU1RIHEiwfg==
+    repository: https://github.com/kendu76/dsh-music-player
+    gitHead: 172355b147f91ae994631aa4cbd61adfe8a5fb66
 compatibility:
   dsh: unverified
   platform:
@@ -31,17 +37,35 @@ screenshots:
   - https://raw.githubusercontent.com/kendu76/dsh-music-player/172355b147f91ae994631aa4cbd61adfe8a5fb66/assets/screenshot-novel.png
   - https://raw.githubusercontent.com/kendu76/dsh-music-player/172355b147f91ae994631aa4cbd61adfe8a5fb66/assets/screenshot-panel-qq.png
   - https://raw.githubusercontent.com/kendu76/dsh-music-player/172355b147f91ae994631aa4cbd61adfe8a5fb66/assets/screenshot-panel-kg.png
+listScreenshot: https://raw.githubusercontent.com/kendu76/dsh-music-player/172355b147f91ae994631aa4cbd61adfe8a5fb66/assets/screenshot-bar.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 172355b147f91ae994631aa4cbd61adfe8a5fb66
+    packageVersion: 1.0.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:07:48.200Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 21
 featuredRank: 0
-starsSnapshot: 20
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
-starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/kendu76/dsh-music-player/172355b147f91ae994631aa4cbd61adfe8a5fb66/assets/screenshot-bar.png
+releaseUpdatedAt: 2026-10-27T23:00:28.784Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+starsUpdatedAt: 2026-10-27T23:00:28.784Z
+updatedAt: 2026-10-27T23:00:28.784Z

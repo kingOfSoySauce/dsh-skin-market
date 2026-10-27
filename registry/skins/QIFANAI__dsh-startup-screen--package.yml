@@ -29,18 +29,37 @@ screenshots:
   - skin-screenshots/QIFANAI__dsh-startup-screen--package/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/home.gif
   - https://raw.githubusercontent.com/QIFANAI/dsh-startup-screen/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/docs/screenshots/dark.webp
   - https://raw.githubusercontent.com/QIFANAI/dsh-startup-screen/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/docs/screenshots/light.webp
+listScreenshot: skin-screenshots/QIFANAI__dsh-startup-screen--package/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/home.gif
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 8499f9df21c6cb27bef8ed7bb1ba29da654fc795
+    packageVersion: 1.6.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-27T23:00:46.524Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
   notice: 代码 MIT。第三方影音不随包；作者自录的 line6 同样是 MIT。
 featuredRank: 0
-starsSnapshot: 23
+starsSnapshot: 34
 releaseUpdatedAt: 2026-10-22T00:00:00.000Z
-metadataUpdatedAt: 2026-10-27T06:55:51.000Z
-starsUpdatedAt: 2026-10-22T00:00:00.000Z
-updatedAt: 2026-10-27T06:55:51.000Z
-listScreenshot: skin-screenshots/QIFANAI__dsh-startup-screen--package/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/home.gif
+metadataUpdatedAt: 2026-10-27T23:00:46.933Z
+starsUpdatedAt: 2026-10-27T23:00:46.933Z
+updatedAt: 2026-10-27T23:00:46.933Z

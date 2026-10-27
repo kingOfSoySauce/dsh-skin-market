@@ -17,6 +17,9 @@ install:
   target: github:MouQianDi0/dsh-ascii-sharks-wallpaper#d0ac0d9f283dc11b1f4632b23d557567a93a39a1
   version: 0.14.2
   commit: d0ac0d9f283dc11b1f4632b23d557567a93a39a1
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -39,12 +42,20 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: d0ac0d9f283dc11b1f4632b23d557567a93a39a1
+    packageVersion: 0.14.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-27T23:01:16.148Z
+    findings: []
 license:
   code: UNLICENSED
   commercialUse: false
 featuredRank: 1000
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-27T07:45:48.931Z
-metadataUpdatedAt: 2026-10-27T07:45:48.931Z
+releaseUpdatedAt: 2026-10-27T23:01:16.356Z
+metadataUpdatedAt: 2026-10-27T23:01:16.356Z
 starsUpdatedAt: 2026-10-27T07:45:48.931Z
-updatedAt: 2026-10-27T07:45:48.931Z
+updatedAt: 2026-10-27T23:01:16.356Z

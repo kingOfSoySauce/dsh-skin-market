@@ -20,6 +20,12 @@ install:
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: dsh-video-player
+    version: 0.1.1
+    integrity: sha512-8cYcGjzm3Vnx02K6OzE21bk82jWf2xH3bSTI2VaGCw0lxwaNd3jgSeN9j3FoKilIzfmbJ7TF5gYDN661DEBmDQ==
+    repository: https://github.com/IP050/dsh-video-player
+    gitHead: 11967b02d2658ecee9b93b723ea6e9c51e4f408c
 compatibility:
   dsh: unverified
   platform:
@@ -27,17 +33,35 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/IP050/dsh-video-player/11967b02d2658ecee9b93b723ea6e9c51e4f408c/assets/when_u_mid_stash.png
   - https://raw.githubusercontent.com/IP050/dsh-video-player/11967b02d2658ecee9b93b723ea6e9c51e4f408c/assets/when_u_stash.png
+listScreenshot: https://raw.githubusercontent.com/IP050/dsh-video-player/11967b02d2658ecee9b93b723ea6e9c51e4f408c/assets/when_u_mid_stash.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 11967b02d2658ecee9b93b723ea6e9c51e4f408c
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:09:02.372Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T05:10:00.000Z
+featuredRank: 0
+releaseUpdatedAt: 2026-10-27T23:00:28.784Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T05:10:00.000Z
-listScreenshot: https://raw.githubusercontent.com/IP050/dsh-video-player/11967b02d2658ecee9b93b723ea6e9c51e4f408c/assets/when_u_mid_stash.png
+updatedAt: 2026-10-27T23:00:28.784Z

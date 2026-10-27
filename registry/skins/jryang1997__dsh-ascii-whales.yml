@@ -25,9 +25,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/jryang1997__dsh-ascii-whales/0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4/home.png
-  - skin-screenshots/jryang1997__dsh-ascii-whales/0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/cruise.gif
   - https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/modes.png
@@ -63,9 +60,12 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 998
 starsSnapshot: 2
+marketScreenshots:
+  - skin-screenshots/jryang1997__dsh-ascii-whales/0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4/home.png
+  - skin-screenshots/jryang1997__dsh-ascii-whales/0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4/conversation.png
+featuredRank: 998
 releaseUpdatedAt: 2026-10-26T23:11:42.516Z
-metadataUpdatedAt: 2026-10-26T23:11:42.516Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T23:11:42.516Z
+updatedAt: 2026-10-27T23:00:28.784Z

@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CoolTea001/dsh-cool-theme#0758f7fd0d1091408c648a21d419bc3c3a343e07
-  version: 0.9.3
-  commit: 0758f7fd0d1091408c648a21d419bc3c3a343e07
+  target: github:CoolTea001/dsh-cool-theme#73403d5053fc1aabe0342f8ef8d2963084ad71f6
+  version: 0.10.0
+  commit: 73403d5053fc1aabe0342f8ef8d2963084ad71f6
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-cool-theme
-    packageVersion: 0.9.3
-    integrity: sha512-ixZtByAWNp5q0Ra+w2KTJgNyJOB0r3FNaXnyrWuuGUhCFtAW012fG9Zau6p88S2SZ595UySd3ubc0rTFCwzUBQ==
+    packageVersion: 0.10.0
+    integrity: sha512-5ahR3FJ3kaGGW4BX3mL/sFsa3nBH0Wsj8Wn6HPpdIAj4xJSnY8ADki+FHhxUcNcKOEeAGWf6YR8YIU12VM5Eew==
   npm:
     name: dsh-cool-theme
-    version: 0.9.3
-    integrity: sha512-ixZtByAWNp5q0Ra+w2KTJgNyJOB0r3FNaXnyrWuuGUhCFtAW012fG9Zau6p88S2SZ595UySd3ubc0rTFCwzUBQ==
+    version: 0.10.0
+    integrity: sha512-5ahR3FJ3kaGGW4BX3mL/sFsa3nBH0Wsj8Wn6HPpdIAj4xJSnY8ADki+FHhxUcNcKOEeAGWf6YR8YIU12VM5Eew==
     repository: https://github.com/CoolTea001/dsh-cool-theme
-    gitHead: 0758f7fd0d1091408c648a21d419bc3c3a343e07
+    gitHead: 73403d5053fc1aabe0342f8ef8d2963084ad71f6
 compatibility:
   dsh: unverified
   platform:
@@ -55,19 +55,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 0758f7fd0d1091408c648a21d419bc3c3a343e07
-    packageVersion: 0.9.3
+    commit: 73403d5053fc1aabe0342f8ef8d2963084ad71f6
+    packageVersion: 0.10.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-23T22:01:47.469Z
+    checkedAt: 2026-10-27T23:00:52.104Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1056
 starsSnapshot: 6
-releaseUpdatedAt: 2026-10-23T22:01:48.372Z
-metadataUpdatedAt: 2026-10-23T22:01:48.372Z
+releaseUpdatedAt: 2026-10-27T23:00:53.589Z
+metadataUpdatedAt: 2026-10-27T23:00:53.589Z
 starsUpdatedAt: 2026-10-23T22:01:48.372Z
-updatedAt: 2026-10-23T22:01:48.372Z
+updatedAt: 2026-10-27T23:00:53.589Z

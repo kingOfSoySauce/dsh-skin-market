@@ -15,22 +15,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CosmoSail/dsh-bloomglass#bf7fd55f4f261d9ff1ef6754ad6764bd9849891f
-  version: 1.0.3
-  commit: bf7fd55f4f261d9ff1ef6754ad6764bd9849891f
+  target: github:CosmoSail/dsh-bloomglass#e2309db70c0558efe424c8b3744ce1c270c34698
+  version: 1.0.4
+  commit: e2309db70c0558efe424c8b3744ce1c270c34698
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-bloomglass
-    packageVersion: 1.0.3
-    integrity: sha512-Q9pu7mx/tFz8P3aD3SZ4ge0sthvnn1ekI3O2YMxp7z/dB0IZ5Ztm3MYSNRVNRd6OcdsT4Mo0FwE78gtNNVrwGQ==
-  allowBuild: dsh-bloomglass@https://codeload.github.com/CosmoSail/dsh-bloomglass/tar.gz/bf7fd55f4f261d9ff1ef6754ad6764bd9849891f
+    packageVersion: 1.0.4
+    integrity: sha512-6Ik0LBqBrNBIBQkXWVv8kn6ub4kIJ6B6pV87MnlOCqE0SW+VKJkNBel6WY34GZaqbeMVnQyScu3xOLDyyjrhuA==
   npm:
     name: dsh-bloomglass
-    version: 1.0.3
-    integrity: sha512-Q9pu7mx/tFz8P3aD3SZ4ge0sthvnn1ekI3O2YMxp7z/dB0IZ5Ztm3MYSNRVNRd6OcdsT4Mo0FwE78gtNNVrwGQ==
+    version: 1.0.4
+    integrity: sha512-6Ik0LBqBrNBIBQkXWVv8kn6ub4kIJ6B6pV87MnlOCqE0SW+VKJkNBel6WY34GZaqbeMVnQyScu3xOLDyyjrhuA==
     repository: https://github.com/CosmoSail/dsh-bloomglass
-    gitHead: bf7fd55f4f261d9ff1ef6754ad6764bd9849891f
+    gitHead: e2309db70c0558efe424c8b3744ce1c270c34698
 compatibility:
   dsh: unverified
   platform:
@@ -49,22 +48,24 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: bf7fd55f4f261d9ff1ef6754ad6764bd9849891f
-    packageVersion: 1.0.3
+    commit: e2309db70c0558efe424c8b3744ce1c270c34698
+    packageVersion: 1.0.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:32:25.282Z
+    checkedAt: 2026-10-27T23:01:09.028Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-26T01:52:02.246Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-27T23:01:11.187Z
+metadataUpdatedAt: 2026-10-27T23:01:11.187Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:02.246Z
+updatedAt: 2026-10-27T23:01:11.187Z

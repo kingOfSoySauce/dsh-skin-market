@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:dingchenhui0618-arch/dsh-signal-pet#6f8b1e45e2f7b910be5f8cff72b2ca53cdaa0cff
+  target: github:dingchenhui0618-arch/dsh-signal-pet#72e6eef8c8340dda82c4ef5ab727905b38f24816
   version: 0.1.0
-  commit: 6f8b1e45e2f7b910be5f8cff72b2ca53cdaa0cff
+  commit: 72e6eef8c8340dda82c4ef5ab727905b38f24816
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -45,19 +45,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 6f8b1e45e2f7b910be5f8cff72b2ca53cdaa0cff
+    commit: 72e6eef8c8340dda82c4ef5ab727905b38f24816
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:52:44.681Z
+    checkedAt: 2026-10-27T23:01:25.390Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-26T01:52:44.814Z
-metadataUpdatedAt: 2026-10-26T01:52:44.814Z
+releaseUpdatedAt: 2026-10-27T23:01:25.538Z
+metadataUpdatedAt: 2026-10-27T23:01:25.538Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:44.814Z
+updatedAt: 2026-10-27T23:01:25.538Z

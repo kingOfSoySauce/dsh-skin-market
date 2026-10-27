@@ -14,21 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:yanzwzz/dsh-whale-girl-pet#b5ce53cfa87b9fc669eef2aabe64946bb77adb72
-  version: 0.3.10
-  commit: b5ce53cfa87b9fc669eef2aabe64946bb77adb72
+  target: github:yanzwzz/dsh-whale-girl-pet#53e9ab8e2c779f4c0feb902cfa940c098c83d228
+  version: 0.3.11
+  commit: 53e9ab8e2c779f4c0feb902cfa940c098c83d228
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-whale-girl-pet
-    packageVersion: 0.3.10
-    integrity: sha512-NwRU/+gKXXd/AIMsRKTTtAsDfPGhAYpUFrJkFXYPVcG0VBIzMj+4BV5lOCnvjhnrznZCmUS+HOMprHP5SP3eVg==
+    packageVersion: 0.3.11
+    integrity: sha512-yZnfDg6BNdCC0+V4mRjAjEiUYX0FZWz8ZiJag8Xep+LGkWoamxCoY/Pv+SjgCuySViRHQFOth4Q85OA4f31BXQ==
   npm:
     name: dsh-whale-girl-pet
-    version: 0.3.10
-    integrity: sha512-NwRU/+gKXXd/AIMsRKTTtAsDfPGhAYpUFrJkFXYPVcG0VBIzMj+4BV5lOCnvjhnrznZCmUS+HOMprHP5SP3eVg==
+    version: 0.3.11
+    integrity: sha512-yZnfDg6BNdCC0+V4mRjAjEiUYX0FZWz8ZiJag8Xep+LGkWoamxCoY/Pv+SjgCuySViRHQFOth4Q85OA4f31BXQ==
     repository: https://github.com/yanzwzz/dsh-whale-girl-pet
-    gitHead: b5ce53cfa87b9fc669eef2aabe64946bb77adb72
+    gitHead: 53e9ab8e2c779f4c0feb902cfa940c098c83d228
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -56,20 +56,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: b5ce53cfa87b9fc669eef2aabe64946bb77adb72
-    packageVersion: 0.3.10
+    commit: 53e9ab8e2c779f4c0feb902cfa940c098c83d228
+    packageVersion: 0.3.11
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:50:54.429Z
+    checkedAt: 2026-10-27T23:00:42.417Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 968
-starsSnapshot: 33
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:50:55.736Z
-starsUpdatedAt: 2026-10-26T01:50:55.736Z
-updatedAt: 2026-10-26T01:50:55.736Z
+starsSnapshot: 35
+releaseUpdatedAt: 2026-10-27T23:00:44.262Z
+metadataUpdatedAt: 2026-10-27T23:00:44.262Z
+starsUpdatedAt: 2026-10-27T23:00:44.262Z
+updatedAt: 2026-10-27T23:00:44.262Z

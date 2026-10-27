@@ -29,14 +29,34 @@ screenshots:
 listScreenshot: skin-screenshots/NativeDog1__dsh-boot-animation/24c711296cb4af2618fef4f65e81346a660fc67b/home.gif
 review:
   compatibility: unverified
-  preview: verified
+  preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 24c711296cb4af2618fef4f65e81346a660fc67b
+    packageVersion: 0.4.4
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-27T23:00:31.930Z
+    findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 0
-starsSnapshot: 316
+starsSnapshot: 360
 releaseUpdatedAt: 2026-10-21T02:46:24.000Z
-metadataUpdatedAt: 2026-10-27T06:39:55.000Z
-starsUpdatedAt: 2026-10-22T00:00:00.000Z
-updatedAt: 2026-10-27T06:39:55.000Z
+metadataUpdatedAt: 2026-10-27T23:00:32.145Z
+starsUpdatedAt: 2026-10-27T23:00:32.145Z
+updatedAt: 2026-10-27T23:00:32.145Z

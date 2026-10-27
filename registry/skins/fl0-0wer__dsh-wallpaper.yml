@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:fl0-0wer/dsh-wallpaper#def61381834f7b53a6fed29ebdd95ee964922362
+  target: github:fl0-0wer/dsh-wallpaper#f95d3f42dbaea1f952261e7600a886d570571a94
   version: 1.1.1
-  commit: def61381834f7b53a6fed29ebdd95ee964922362
+  commit: f95d3f42dbaea1f952261e7600a886d570571a94
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -37,25 +37,24 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
-    installCommand: improve
+    installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: def61381834f7b53a6fed29ebdd95ee964922362
+    commit: f95d3f42dbaea1f952261e7600a886d570571a94
     packageVersion: 1.1.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:52:46.999Z
+    checkedAt: 2026-10-27T23:01:26.125Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-26T01:52:47.453Z
-metadataUpdatedAt: 2026-10-26T01:52:47.453Z
+releaseUpdatedAt: 2026-10-27T23:01:26.870Z
+metadataUpdatedAt: 2026-10-27T23:01:26.870Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:47.453Z
+updatedAt: 2026-10-27T23:01:26.870Z

@@ -30,10 +30,6 @@ compatibility:
   dsh: ">=0.1.1-rc.2 <0.2.0-0||>=0.1.2-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/home.png
-  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/conversation.png
-  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -61,9 +57,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/home.png
+  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/conversation.png
+  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-26T23:12:06.720Z
-metadataUpdatedAt: 2026-10-26T23:12:06.720Z
+metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T23:12:06.720Z
+updatedAt: 2026-10-27T23:00:28.784Z

@@ -26,6 +26,10 @@ compatibility:
   dsh: 0.1.7-rc.1 || 0.1.7-rc.2 || 0.2.1-rc.2
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/home.png
+  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/conversation.png
+  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/settings.png
 screenshots:
   - https://raw.githubusercontent.com/rinDBeans/codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/assets/screenshots/live-gui-rightbar.png
   - https://raw.githubusercontent.com/rinDBeans/codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/assets/screenshots/model-picker-live-dark.png
@@ -35,34 +39,30 @@ review:
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - "可选“半透明侧栏”开启后，设置页可能出现底层文字透出；上游PR #4尚未合并。默认关闭该项。"
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: b722c3db1e8307ef09f5a6c85fa594039b496b61
     packageVersion: 0.7.2
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.1 || 0.1.7-rc.2 || 0.2.1-rc.2
+    mode: static
     result: pass
-    checkedAt: 2026-10-26T03:47:07.694Z
+    checkedAt: 2026-10-27T23:00:57.527Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 4
-marketScreenshots:
-  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/home.png
-  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/conversation.png
-  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/settings.png
 featuredRank: 996
+starsSnapshot: 4
 releaseUpdatedAt: 2026-10-26T03:49:39.432Z
-metadataUpdatedAt: 2026-10-26T23:11:10.623Z
+metadataUpdatedAt: 2026-10-27T23:00:58.875Z
 starsUpdatedAt: 2026-10-24T21:31:43.332Z
-updatedAt: 2026-10-26T23:11:10.623Z
+updatedAt: 2026-10-27T23:00:58.875Z
