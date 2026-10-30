@@ -13,16 +13,27 @@ tags:
 modes:
   - dark
 install:
-  target: github:lyx0717/dsh-washer#c56959ab623a0a6b15c9abdec12f0cdd9d2fe486
-  version: 0.7.3
-  commit: c56959ab623a0a6b15c9abdec12f0cdd9d2fe486
+  target: github:lyx0717/dsh-washer#3a6eef71e6b7c7969216c0255336b0d8d103786f
+  version: 0.7.4
+  commit: 3a6eef71e6b7c7969216c0255336b0d8d103786f
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: "@lyx0717/dsh-washer"
+    packageVersion: 0.7.4
+    integrity: sha512-39N9dWKACtDbFWu/y3kGDluUoggdFU6kELb6wVEBcZYEJE+6uso6pJt9Bvy4dJiwkPU7gVFN54VAXRVrHsRm7A==
+  npm:
+    name: "@lyx0717/dsh-washer"
+    version: 0.7.4
+    integrity: sha512-39N9dWKACtDbFWu/y3kGDluUoggdFU6kELb6wVEBcZYEJE+6uso6pJt9Bvy4dJiwkPU7gVFN54VAXRVrHsRm7A==
+    repository: https://github.com/lyx0717/dsh-washer
+    gitHead: 3a6eef71e6b7c7969216c0255336b0d8d103786f
 compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/lyx0717__dsh-washer/70ad9a1827df37348f6a892b52101163e4c46c36/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-washing.png
   - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-rinsing.png
@@ -44,21 +55,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: c56959ab623a0a6b15c9abdec12f0cdd9d2fe486
-    packageVersion: 0.7.3
+    commit: 3a6eef71e6b7c7969216c0255336b0d8d103786f
+    packageVersion: 0.7.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:54:17.178Z
+    checkedAt: 2026-10-30T23:01:27.521Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/lyx0717__dsh-washer/70ad9a1827df37348f6a892b52101163e4c46c36/conversation.png
 featuredRank: 1000
-releaseUpdatedAt: 2026-10-30T03:54:18.312Z
-metadataUpdatedAt: 2026-10-30T04:54:31.652Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-10-30T23:01:28.818Z
+metadataUpdatedAt: 2026-10-30T23:01:28.818Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T04:54:31.652Z
+updatedAt: 2026-10-30T23:01:28.818Z

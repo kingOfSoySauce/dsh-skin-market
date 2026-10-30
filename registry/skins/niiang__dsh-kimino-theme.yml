@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:niiang/dsh-kimino-theme#9625232c0eaeb56cee12cdfa3774bb053b4f0faa
+  target: github:niiang/dsh-kimino-theme#a7f14daafb39794f8485a121e239c5bbecb5edcb
   version: 68.4.2
-  commit: 9625232c0eaeb56cee12cdfa3774bb053b4f0faa
+  commit: a7f14daafb39794f8485a121e239c5bbecb5edcb
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,6 +28,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/home.png
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/conversation.png
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/settings.png
 screenshots:
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0d066fe583be48341fcf8064fd6dfc4ea760bc8a/docs/screenshots/home-hero.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0d066fe583be48341fcf8064fd6dfc4ea760bc8a/docs/screenshots/sidebar.png
@@ -53,23 +57,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 9625232c0eaeb56cee12cdfa3774bb053b4f0faa
+    commit: a7f14daafb39794f8485a121e239c5bbecb5edcb
     packageVersion: 68.4.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:53:24.973Z
+    checkedAt: 2026-10-30T23:01:07.665Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 43
-marketScreenshots:
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/home.png
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/conversation.png
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/settings.png
 featuredRank: 145
-releaseUpdatedAt: 2026-10-30T03:53:27.502Z
-metadataUpdatedAt: 2026-10-30T04:54:31.652Z
+starsSnapshot: 43
+releaseUpdatedAt: 2026-10-30T23:01:10.232Z
+metadataUpdatedAt: 2026-10-30T23:01:10.232Z
 starsUpdatedAt: 2026-10-30T03:53:27.502Z
-updatedAt: 2026-10-30T04:54:31.652Z
+updatedAt: 2026-10-30T23:01:10.232Z

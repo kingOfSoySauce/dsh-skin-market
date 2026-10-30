@@ -1,0 +1,63 @@
+id: twelvecarbon.dsh-conversation-toc
+name:
+  zh: dsh-conversation-toc
+  en: dsh-conversation-toc
+author: twelvecarbon
+description: DeepSeek Harness 对话大纲插件 —— 在会话页右侧显示对话主题目录（类似 DeepSeek 网页版右边栏），随滚动高亮当前主题，点击即可快捷跳转到对应消息位置。
+repo: https://github.com/twelvecarbon/dsh-conversation-toc
+package: dsh-conversation-toc
+rowId: conversation-toc
+category: skin
+tags:
+  - retro
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:twelvecarbon/dsh-conversation-toc#2061ba44575d92a7069b7ba2edac848ccf7a328a
+  version: 0.1.1
+  commit: 2061ba44575d92a7069b7ba2edac848ccf7a328a
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepublishOnly
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/twelvecarbon/dsh-conversation-toc/2061ba44575d92a7069b7ba2edac848ccf7a328a/docs/assets/toc-panel.png
+  - https://raw.githubusercontent.com/twelvecarbon/dsh-conversation-toc/2061ba44575d92a7069b7ba2edac848ccf7a328a/docs/assets/toc-rail.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 2061ba44575d92a7069b7ba2edac848ccf7a328a
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-08-23T10:28:28.303Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 257
+starsSnapshot: 0
+releaseUpdatedAt: 2026-08-23T10:28:28.872Z
+metadataUpdatedAt: 2026-09-08T09:58:43.271Z
+starsUpdatedAt: 2026-08-23T10:28:28.872Z
+updatedAt: 2026-09-08T09:58:43.271Z

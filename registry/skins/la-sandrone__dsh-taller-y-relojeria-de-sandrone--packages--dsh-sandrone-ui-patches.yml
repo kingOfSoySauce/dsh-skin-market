@@ -14,9 +14,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:la-sandrone/dsh-taller-y-relojeria-de-sandrone#653d9e87609a992f54b311f3ab549fa7db9d1c35&path:/packages/dsh-sandrone-ui-patches
+  target: github:la-sandrone/dsh-taller-y-relojeria-de-sandrone#e204e90c3ec81e15c47932405199a5584ea9f08e&path:/packages/dsh-sandrone-ui-patches
   version: 0.1.0
-  commit: 653d9e87609a992f54b311f3ab549fa7db9d1c35
+  commit: e204e90c3ec81e15c47932405199a5584ea9f08e
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -46,12 +46,12 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 653d9e87609a992f54b311f3ab549fa7db9d1c35
+    commit: e204e90c3ec81e15c47932405199a5584ea9f08e
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:52:55.045Z
+    checkedAt: 2026-10-30T23:01:27.151Z
     findings: []
 license:
   code: MIT
@@ -59,7 +59,7 @@ license:
   notice: 代码MIT；文档CC BY-SA 4.0；Source Serif 4字体OFL，须保留各自许可与署名。
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-26T01:52:55.198Z
-metadataUpdatedAt: 2026-10-26T01:52:55.198Z
+releaseUpdatedAt: 2026-10-30T23:01:27.221Z
+metadataUpdatedAt: 2026-10-30T23:01:27.221Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:55.198Z
+updatedAt: 2026-10-30T23:01:27.221Z

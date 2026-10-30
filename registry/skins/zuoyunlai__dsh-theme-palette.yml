@@ -14,26 +14,35 @@ modes:
   - light
   - dark
 install:
-  target: github:zuoyunlai/dsh-theme-palette#ebfb2e709cc1b33944af95ea7cf1e760ef721f2b
-  version: 1.9.7
-  commit: ebfb2e709cc1b33944af95ea7cf1e760ef721f2b
+  target: github:zuoyunlai/dsh-theme-palette#c8fe56da4e426c6d57371cab8b5188c20e11db77
+  version: 1.13.5
+  commit: c8fe56da4e426c6d57371cab8b5188c20e11db77
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-theme-palette
-    packageVersion: 1.9.7
-    integrity: sha512-8OgzTdaIywdJBP3vLmXRjMzaFGteH8F+ruYsevr3lvkaCR0N9xaLgDJZyy2OrjDz6P0eMjvSuUELWihwUQrvUw==
+    packageVersion: 1.13.5
+    integrity: sha512-IfV0BKG2V5qLN+TwVp9DEVakz7t8LDdDK0MTtf6aHRPWaD/+50pyMIvHEXQt0dN0q0FxzM0ISnVPnxXTVQ+8sQ==
   npm:
     name: dsh-theme-palette
-    version: 1.9.7
-    integrity: sha512-8OgzTdaIywdJBP3vLmXRjMzaFGteH8F+ruYsevr3lvkaCR0N9xaLgDJZyy2OrjDz6P0eMjvSuUELWihwUQrvUw==
+    version: 1.13.5
+    integrity: sha512-IfV0BKG2V5qLN+TwVp9DEVakz7t8LDdDK0MTtf6aHRPWaD/+50pyMIvHEXQt0dN0q0FxzM0ISnVPnxXTVQ+8sQ==
     repository: https://github.com/zuoyunlai/dsh-theme-palette
-    gitHead: ebfb2e709cc1b33944af95ea7cf1e760ef721f2b
+    gitHead: c8fe56da4e426c6d57371cab8b5188c20e11db77
 compatibility:
   dsh: ">=0.2.1-rc.1"
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/home.png
+  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/conversation.png
+  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/zuoyunlai/dsh-theme-palette/c8fe56da4e426c6d57371cab8b5188c20e11db77/assets/screenshot-settings-light.png
+  - https://raw.githubusercontent.com/zuoyunlai/dsh-theme-palette/c8fe56da4e426c6d57371cab8b5188c20e11db77/assets/screenshot-settings-dark.png
+  - https://raw.githubusercontent.com/zuoyunlai/dsh-theme-palette/c8fe56da4e426c6d57371cab8b5188c20e11db77/assets/screenshot-settings-custom.png
+  - https://raw.githubusercontent.com/zuoyunlai/dsh-theme-palette/c8fe56da4e426c6d57371cab8b5188c20e11db77/assets/screenshot-settings-hc.png
+listScreenshot: https://raw.githubusercontent.com/zuoyunlai/dsh-theme-palette/c8fe56da4e426c6d57371cab8b5188c20e11db77/assets/screenshot-settings-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -41,29 +50,29 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.2.1-rc.1 未被本次检测范围 ^0.2.1-rc.1 完全覆盖（固定版本 c8fe56da4e426c6d57371cab8b5188c20e11db77）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: ebfb2e709cc1b33944af95ea7cf1e760ef721f2b
-    packageVersion: 1.9.7
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    commit: c8fe56da4e426c6d57371cab8b5188c20e11db77
+    packageVersion: 1.13.5
+    scannerVersion: static-v2
+    dshVersion: ^0.2.1-rc.1
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:41:52.800Z
+    checkedAt: 2026-10-30T23:01:23.400Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:39.623Z
+releaseUpdatedAt: 2026-10-30T23:01:23.955Z
+metadataUpdatedAt: 2026-10-30T23:01:23.955Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:39.623Z
-marketScreenshots:
-  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/home.png
-  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/conversation.png
-  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/settings.png
+updatedAt: 2026-10-30T23:01:23.955Z

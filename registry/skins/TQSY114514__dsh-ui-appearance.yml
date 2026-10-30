@@ -16,13 +16,19 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#4f6c0c17e2314ca16113c6de876c1891f5a93a20
-  version: 0.1.25
-  commit: 4f6c0c17e2314ca16113c6de876c1891f5a93a20
+  target: github:TQSY114514/dsh-ui-appearance#4bc525ebe6f5ad630f7767814060cee9a4eda760
+  version: 0.1.26
+  commit: 4bc525ebe6f5ad630f7767814060cee9a4eda760
   desktop:
     mode: manual-only
     reason: npm-version-mismatch
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/4f6c0c17e2314ca16113c6de876c1891f5a93a20
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/4bc525ebe6f5ad630f7767814060cee9a4eda760
+  npm:
+    name: dsh-ui-appearance
+    version: 0.1.26
+    integrity: sha512-Z1E5ar/ieQkqZuiKtu9hZVQrOPxZQpz7VOo/WcxPmdM1Sf+nu4a/m/AuMEKryN9PlE9CtBFHB/KzxOuCLL/Jvg==
+    repository: https://github.com/TQSY114514/dsh-ui-appearance
+    gitHead: 4bc525ebe6f5ad630f7767814060cee9a4eda760
 compatibility:
   dsh: unverified
   platform:
@@ -54,12 +60,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 4f6c0c17e2314ca16113c6de876c1891f5a93a20
-    packageVersion: 0.1.25
+    commit: 4bc525ebe6f5ad630f7767814060cee9a4eda760
+    packageVersion: 0.1.26
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-10-26T01:50:56.136Z
+    checkedAt: 2026-10-30T23:01:08.953Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -68,7 +74,7 @@ license:
   commercialUse: true
 featuredRank: 36
 starsSnapshot: 26
-releaseUpdatedAt: 2026-10-26T01:50:57.323Z
-metadataUpdatedAt: 2026-10-26T01:50:57.323Z
+releaseUpdatedAt: 2026-10-30T23:01:11.698Z
+metadataUpdatedAt: 2026-10-30T23:01:11.698Z
 starsUpdatedAt: 2026-10-26T23:11:18.540Z
-updatedAt: 2026-10-26T23:11:18.540Z
+updatedAt: 2026-10-30T23:01:11.698Z

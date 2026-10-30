@@ -15,9 +15,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:Sutera-Diffusus/dsh-whale-musume#9dfa4c8f2fc562e73150ca14447c598b17eea76c
+  target: github:Sutera-Diffusus/dsh-whale-musume#236245f30f7938dd6b509b5ece227e4136bab3e3
   version: 2.5.0
-  commit: 9dfa4c8f2fc562e73150ca14447c598b17eea76c
+  commit: 236245f30f7938dd6b509b5ece227e4136bab3e3
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -25,6 +25,10 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/home.png
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/conversation.png
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/settings.png
 screenshots:
   - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png
   - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/preview-idle-coffee.png
@@ -44,24 +48,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 9dfa4c8f2fc562e73150ca14447c598b17eea76c
+    commit: 236245f30f7938dd6b509b5ece227e4136bab3e3
     packageVersion: 2.5.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:53:21.239Z
+    checkedAt: 2026-10-30T23:01:04.346Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 185
-marketScreenshots:
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/home.png
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/conversation.png
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/settings.png
 featuredRank: 1033
-releaseUpdatedAt: 2026-10-30T03:53:22.426Z
-metadataUpdatedAt: 2026-10-30T04:54:31.652Z
-starsUpdatedAt: 2026-10-30T03:53:22.426Z
-updatedAt: 2026-10-30T04:54:31.652Z
+starsSnapshot: 188
+releaseUpdatedAt: 2026-10-30T23:01:05.658Z
+metadataUpdatedAt: 2026-10-30T23:01:05.658Z
+starsUpdatedAt: 2026-10-30T23:01:05.658Z
+updatedAt: 2026-10-30T23:01:05.658Z

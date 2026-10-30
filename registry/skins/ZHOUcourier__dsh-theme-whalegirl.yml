@@ -18,22 +18,22 @@ modes:
   - light
   - dark
 install:
-  target: github:ZHOUcourier/dsh-theme-whalegirl#1340b13eaa0194e259ed1edc2c1a7f9ab003c39a
-  version: 0.2.2
-  commit: 1340b13eaa0194e259ed1edc2c1a7f9ab003c39a
+  target: github:ZHOUcourier/dsh-theme-whalegirl#2b500b3d496c0a2eef34e7f5a4b03c07cd1ff754
+  version: 0.3.0
+  commit: 2b500b3d496c0a2eef34e7f5a4b03c07cd1ff754
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-theme-whalegirl
-    packageVersion: 0.2.2
-    integrity: sha512-rf69dbfJ8UYY+IRv0A9WXP8YM+VGYMcM41Q9MTu+iVcuOcXkZRx68UFsNy7gxXIs0KFYN96apsafIY/9YGVqXQ==
-  allowBuild: dsh-theme-whalegirl@https://codeload.github.com/ZHOUcourier/dsh-theme-whalegirl/tar.gz/1340b13eaa0194e259ed1edc2c1a7f9ab003c39a
+    packageVersion: 0.3.0
+    integrity: sha512-WceqlRBkD2ZQKQPGCJeK7AnJ+j706j+oxtUuYyr7+DRU4YLXuXf0iW8MuczVQZZkauWbtTNkZfeyNGufUkPugw==
+  allowBuild: dsh-theme-whalegirl@https://codeload.github.com/ZHOUcourier/dsh-theme-whalegirl/tar.gz/2b500b3d496c0a2eef34e7f5a4b03c07cd1ff754
   npm:
     name: dsh-theme-whalegirl
-    version: 0.2.2
-    integrity: sha512-rf69dbfJ8UYY+IRv0A9WXP8YM+VGYMcM41Q9MTu+iVcuOcXkZRx68UFsNy7gxXIs0KFYN96apsafIY/9YGVqXQ==
+    version: 0.3.0
+    integrity: sha512-WceqlRBkD2ZQKQPGCJeK7AnJ+j706j+oxtUuYyr7+DRU4YLXuXf0iW8MuczVQZZkauWbtTNkZfeyNGufUkPugw==
     repository: https://github.com/ZHOUcourier/dsh-theme-whalegirl
-    gitHead: 1340b13eaa0194e259ed1edc2c1a7f9ab003c39a
+    gitHead: 2b500b3d496c0a2eef34e7f5a4b03c07cd1ff754
 compatibility:
   dsh: unverified
   platform:
@@ -56,19 +56,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 1340b13eaa0194e259ed1edc2c1a7f9ab003c39a
-    packageVersion: 0.2.2
+    commit: 2b500b3d496c0a2eef34e7f5a4b03c07cd1ff754
+    packageVersion: 0.3.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:54:05.069Z
+    checkedAt: 2026-10-30T23:01:23.325Z
     findings: []
 license:
-  code: MIT
-  commercialUse: true
-starsSnapshot: 1
+  code: MIT AND CC-BY-NC-SA-4.0
+  commercialUse: false
 featuredRank: 1032
-releaseUpdatedAt: 2026-10-30T03:54:05.662Z
-metadataUpdatedAt: 2026-10-30T03:54:05.662Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-10-30T23:01:24.050Z
+metadataUpdatedAt: 2026-10-30T23:01:24.050Z
 starsUpdatedAt: 2026-09-18T21:39:02.179Z
-updatedAt: 2026-10-30T03:54:05.662Z
+updatedAt: 2026-10-30T23:01:24.050Z

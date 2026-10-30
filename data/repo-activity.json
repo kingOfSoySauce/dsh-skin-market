@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-30T04:55:23.294Z",
+  "generatedAt": "2026-10-30T23:02:26.879Z",
   "historyDays": 71,
   "earliestObservedDay": 20681,
   "repos": {
@@ -3213,11 +3213,16 @@
           "commits": 0,
           "pulls": 0,
           "issues": 6
+        },
+        "2026-10-30": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 1447,
-        "pulls": 102,
+        "pulls": 103,
         "issues": 135
       },
       "forks": 78,
@@ -4568,19 +4573,6 @@
     "i1j/dsh-krill-theme": {
       "owner": "i1j",
       "createdAt": "2026-08-14T20:19:52Z",
-      "daily": {},
-      "totals": {
-        "commits": 0,
-        "pulls": 0,
-        "issues": 0
-      },
-      "forks": 0,
-      "watchers": 0,
-      "truncated": false
-    },
-    "iasiv5/skins": {
-      "owner": "iasiv5",
-      "createdAt": "2026-08-28T08:30:53Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9279,12 +9271,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-10-30": {
+          "commits": 0,
+          "pulls": 2,
+          "issues": 2
         }
       },
       "totals": {
         "commits": 252,
-        "pulls": 27,
-        "issues": 37
+        "pulls": 29,
+        "issues": 39
       },
       "forks": 27,
       "watchers": 1,
@@ -11042,11 +11039,16 @@
           "commits": 4,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-30": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 49,
-        "pulls": 5,
+        "pulls": 6,
         "issues": 2
       },
       "forks": 3,
@@ -11753,12 +11755,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-10-30": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 2
         }
       },
       "totals": {
         "commits": 216,
         "pulls": 3,
-        "issues": 16
+        "issues": 18
       },
       "forks": 3,
       "watchers": 0,
@@ -12425,11 +12432,16 @@
           "commits": 3,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-30": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 3,
-        "pulls": 0,
+        "pulls": 1,
         "issues": 0
       },
       "forks": 0,
@@ -12562,12 +12574,17 @@
           "commits": 0,
           "pulls": 2,
           "issues": 4
+        },
+        "2026-10-30": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 8,
-        "pulls": 2,
-        "issues": 5
+        "pulls": 3,
+        "issues": 6
       },
       "forks": 0,
       "watchers": 0,
@@ -14040,12 +14057,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-10-30": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 2,
         "pulls": 0,
-        "issues": 1
+        "issues": 2
       },
       "forks": 0,
       "watchers": 1,

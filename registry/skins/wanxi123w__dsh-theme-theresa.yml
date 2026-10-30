@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:wanxi123w/dsh-theme-theresa#4c87cff277af144b3c53d52d6d2720c539c37e48
-  version: 0.2.0
-  commit: 4c87cff277af144b3c53d52d6d2720c539c37e48
+  target: github:wanxi123w/dsh-theme-theresa#3497be9698f3d5703b4ce18c77564c337628d5b7
+  version: 0.3.9
+  commit: 3497be9698f3d5703b4ce18c77564c337628d5b7
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -25,6 +25,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/wanxi123w__dsh-theme-theresa/4c87cff277af144b3c53d52d6d2720c539c37e48/home.png
+  - skin-screenshots/wanxi123w__dsh-theme-theresa/4c87cff277af144b3c53d52d6d2720c539c37e48/conversation.png
+  - skin-screenshots/wanxi123w__dsh-theme-theresa/4c87cff277af144b3c53d52d6d2720c539c37e48/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -36,27 +40,26 @@ health:
     readmeScreenshots: improve
     compatibility: improve
     installation: pass
+    installCommand: improve
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 4c87cff277af144b3c53d52d6d2720c539c37e48
-    packageVersion: 0.2.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    commit: 3497be9698f3d5703b4ce18c77564c337628d5b7
+    packageVersion: 0.3.9
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:43:43.683Z
+    checkedAt: 2026-10-30T23:01:22.941Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:51.156Z
+releaseUpdatedAt: 2026-10-30T23:01:22.969Z
+metadataUpdatedAt: 2026-10-30T23:01:22.969Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:51.156Z
-marketScreenshots:
-  - skin-screenshots/wanxi123w__dsh-theme-theresa/4c87cff277af144b3c53d52d6d2720c539c37e48/home.png
-  - skin-screenshots/wanxi123w__dsh-theme-theresa/4c87cff277af144b3c53d52d6d2720c539c37e48/conversation.png
-  - skin-screenshots/wanxi123w__dsh-theme-theresa/4c87cff277af144b3c53d52d6d2720c539c37e48/settings.png
+updatedAt: 2026-10-30T23:01:22.969Z

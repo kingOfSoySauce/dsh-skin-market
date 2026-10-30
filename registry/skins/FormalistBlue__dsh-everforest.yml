@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:FormalistBlue/dsh-everforest#f019fca6c6518e61dcc99ca9b4ccb378d89ff960
-  version: 1.2.0
-  commit: f019fca6c6518e61dcc99ca9b4ccb378d89ff960
+  target: github:FormalistBlue/dsh-everforest#f079bd8870c8d05c8f4bcf15f3a2475aef480fac
+  version: 1.3.0
+  commit: f079bd8870c8d05c8f4bcf15f3a2475aef480fac
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -44,19 +44,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: f019fca6c6518e61dcc99ca9b4ccb378d89ff960
-    packageVersion: 1.2.0
+    commit: f079bd8870c8d05c8f4bcf15f3a2475aef480fac
+    packageVersion: 1.3.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:53:44.054Z
+    checkedAt: 2026-10-30T23:01:17.992Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 998
-releaseUpdatedAt: 2026-10-30T03:53:44.871Z
-metadataUpdatedAt: 2026-10-30T03:53:44.871Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-10-30T23:01:18.860Z
+metadataUpdatedAt: 2026-10-30T23:01:18.860Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T03:53:44.871Z
+updatedAt: 2026-10-30T23:01:18.860Z
