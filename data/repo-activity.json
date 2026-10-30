@@ -1,13 +1,25 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-25T14:23:07.995Z",
+  "generatedAt": "2026-10-30T04:55:23.294Z",
   "historyDays": 71,
   "earliestObservedDay": 20681,
   "repos": {
+    "01virex/dsh-deepshub": {
+      "owner": "01Virex",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "0nt-one/dsh-neo-skin": {
       "owner": "0nt-one",
       "createdAt": "2026-08-16T02:07:05Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -21,7 +33,6 @@
     "0watcher0/dsh-guofeng-theme": {
       "owner": "0watcher0",
       "createdAt": "2026-08-29T08:23:01Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-29": {
           "commits": 12,
@@ -38,10 +49,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "123we-glitch/dsh-theme-skins": {
+      "owner": "123WE-glitch",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "12we21/cute-fat-fish-pet": {
+      "owner": "12we21",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "147228/dsh-xiaoyao-skins": {
       "owner": "147228",
       "createdAt": "2026-08-13T17:57:20Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-13": {
           "commits": 1,
@@ -58,10 +94,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "1608kiy/dsh-music": {
+      "owner": "1608kiy",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "1739321142/devtools-custom-beautification-plugin-for-deepseekharness-class": {
+      "owner": "1739321142",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "1mlightyears/dsh-theme-synthwave": {
       "owner": "1MLightyears",
       "createdAt": "2026-08-16T11:49:23Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-24": {
           "commits": 1,
@@ -93,10 +154,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "2754lm/dsh-theme-newsprint": {
+      "owner": "2754LM",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "4444hao/dsh-codefall": {
+      "owner": "4444Hao",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "54088lp/dsh-kafka-ui": {
       "owner": "54088lp",
       "createdAt": "2026-08-17T18:17:43Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -110,7 +196,6 @@
     "6hollis/dsh-hiyuki-frost-sakura": {
       "owner": "6HOLLIS",
       "createdAt": "2026-08-24T16:24:49Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -124,7 +209,6 @@
     "a-bigdog/gandalf": {
       "owner": "A-BigDog",
       "createdAt": "2026-08-15T09:47:04Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -138,7 +222,6 @@
     "a1303845406/dsh-sakura-theme": {
       "owner": "a1303845406",
       "createdAt": "2026-08-27T08:24:24Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -152,7 +235,6 @@
     "a1swg1159-pixel/dsh-arcaea-theme": {
       "owner": "a1swg1159-pixel",
       "createdAt": "2026-08-15T12:12:19Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-24": {
           "commits": 1,
@@ -172,7 +254,6 @@
     "a39485972-sudo/dsh-skin-yumemizuki": {
       "owner": "a39485972-sudo",
       "createdAt": "2026-09-09T13:09:26Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-10": {
           "commits": 1,
@@ -189,10 +270,61 @@
       "watchers": 0,
       "truncated": false
     },
+    "aaronkate/dsh-codex-appearance": {
+      "owner": "AaronKate",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "abbccdd/dsh-panel-tint": {
       "owner": "abbccdd",
       "createdAt": "2026-08-26T11:28:05Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "abyss2021/dsh-glass-skin": {
+      "owner": "abyss2021",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "aceice01/dsh-whale-pet": {
+      "owner": "aceice01",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "acidgr/dsh-web-whale-maid": {
+      "owner": "AcidGr",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -206,7 +338,32 @@
     "adaning/dsh-pixel-skin": {
       "owner": "ADAning",
       "createdAt": "2026-08-15T07:18:00Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "afawfawffaf/dsh-plugin-lx-music": {
+      "owner": "afawfawffaf",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "ahian-lee/dsh-bliss-glass": {
+      "owner": "ahian-lee",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -220,7 +377,6 @@
     "ai7603/dsh-cyberpunk-theme": {
       "owner": "ai7603",
       "createdAt": "2026-08-14T15:53:10Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -234,7 +390,6 @@
     "aik358/dsh-anchored-monitor": {
       "owner": "Aik358",
       "createdAt": "2026-08-17T17:45:21Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 6,
@@ -271,10 +426,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "aimer779/dsh-xiaoyaoyou": {
+      "owner": "Aimer779",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "air-pixel/air-pixel-liquid-glass": {
+      "owner": "AIR-pixel",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "aki2253/sidor_ui": {
       "owner": "AKI2253",
       "createdAt": "2026-08-20T13:55:31Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 3,
@@ -321,10 +501,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "aks1st/dock-media": {
+      "owner": "AKS1st",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "aks1st/dsh-cyber-particle": {
       "owner": "AKS1st",
       "createdAt": "2026-08-14T14:37:26Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 3,
@@ -354,7 +546,32 @@
     "aks1st/ikun-theme-skin": {
       "owner": "AKS1st",
       "createdAt": "2026-08-15T14:16:23Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "alannerfranklin/dsh-cutout-pet": {
+      "owner": "AlannerFranklin",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "alexfengrui/dsh-client-ui-skin-real-madrid": {
+      "owner": "alexfengrui",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -368,7 +585,6 @@
     "alexpeng07/dsh-custom-plugin": {
       "owner": "AlexPeng07",
       "createdAt": "2026-08-22T15:47:07Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-09": {
           "commits": 2,
@@ -428,7 +644,6 @@
     "alexyin-tongji/dsh-ui-enhancer": {
       "owner": "AlexYin-Tongji",
       "createdAt": "2026-08-19T02:58:46Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 2,
@@ -455,10 +670,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "anacondakc/dsh-douyin": {
+      "owner": "AnacondaKC",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "anarcadia/chuanban-dsh-theme": {
+      "owner": "Anarcadia",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "andy294753951/dsh-plugin-gouden-leeuw-theme": {
       "owner": "Andy294753951",
       "createdAt": "2026-08-14T07:16:46Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 1,
@@ -478,7 +718,6 @@
     "anionex/dsh-eye-care": {
       "owner": "Anionex",
       "createdAt": "2026-08-13T06:10:20Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-03": {
           "commits": 1,
@@ -510,10 +749,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "anitman/dsh-plugin-video-player": {
+      "owner": "anitman",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "anneheartrecord/dsh-desk-pet": {
       "owner": "anneheartrecord",
       "createdAt": "2026-08-14T12:02:14Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 15,
@@ -553,7 +804,6 @@
     "ash-qw/dsh-theme-prts": {
       "owner": "ash-qw",
       "createdAt": "2026-08-31T06:28:26Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-14": {
           "commits": 4,
@@ -698,7 +948,6 @@
     "ashmodeling/dsh-light-theater": {
       "owner": "AshModeling",
       "createdAt": "2026-08-15T09:54:25Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -709,10 +958,41 @@
       "watchers": 0,
       "truncated": false
     },
+    "asilann/ds-whale-send-button": {
+      "owner": "AsILAnn",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "assassinvix/fairy-zzz-plugin": {
+      "owner": "AssassinVIX",
+      "createdAt": null,
+      "daily": {
+        "2026-10-26": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 1
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "avalonskyafar/mahoutsukainoyoru-dsh-skin": {
       "owner": "AvalonskyAfar",
       "createdAt": "2026-09-23T13:32:33Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -726,7 +1006,6 @@
     "ayase34/gal-view": {
       "owner": "Ayase34",
       "createdAt": "2026-08-14T02:18:46Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-31": {
           "commits": 0,
@@ -763,10 +1042,22 @@
       "watchers": 1,
       "truncated": false
     },
+    "badai147/dsh-leafy-skin": {
+      "owner": "badai147",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "baihejiangnan/dsh-custom-wallpaper": {
       "owner": "baihejiangnan",
       "createdAt": "2026-08-16T05:19:44Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -780,7 +1071,6 @@
     "baizhuojielan/dsh-doro": {
       "owner": "Baizhuojielan",
       "createdAt": "2026-08-19T17:26:06Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 1,
@@ -797,10 +1087,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "bauerelizabeth07139/dsh-pet-dafeiyu": {
+      "owner": "bauerelizabeth07139",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "bauerelizabeth07139/dsh-pet-liangzi": {
+      "owner": "bauerelizabeth07139",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "bblike/dsh-plugin-odette": {
       "owner": "bblike",
       "createdAt": "2026-08-19T10:31:06Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -814,7 +1129,6 @@
     "beizi6/dsh-theme-plugin": {
       "owner": "BeiZi6",
       "createdAt": "2026-08-14T16:04:51Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -828,7 +1142,6 @@
     "berhbro/dsh-cyrene-theme": {
       "owner": "berhbro",
       "createdAt": "2026-10-09T02:41:32Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-22": {
           "commits": 1,
@@ -839,12 +1152,22 @@
           "commits": 1,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-27": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        },
+        "2026-10-29": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 2,
-        "pulls": 0,
-        "issues": 0
+        "pulls": 1,
+        "issues": 1
       },
       "forks": 2,
       "watchers": 0,
@@ -853,7 +1176,6 @@
     "bilbillm/deepseek-harness-angelina-themes": {
       "owner": "bilbillm",
       "createdAt": "2026-08-14T09:50:45Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 2,
@@ -885,10 +1207,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "bitdg/dsh-plugins": {
+      "owner": "BitDG",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "bpz0726/dsh-bestui": {
       "owner": "BPZ0726",
       "createdAt": "2026-08-17T07:21:24Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -902,7 +1236,6 @@
     "breaker505/dsh-aurora-skin": {
       "owner": "breaker505",
       "createdAt": "2026-08-16T16:54:15Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -916,7 +1249,6 @@
     "bruce-hmz/dsh-skin-center": {
       "owner": "bruce-hmz",
       "createdAt": "2026-08-15T00:04:09Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-15": {
           "commits": 1,
@@ -933,10 +1265,48 @@
       "watchers": 0,
       "truncated": false
     },
+    "c-ling/dsh-plugin-pet": {
+      "owner": "c-ling",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "caiccc-a11y/dsh-wyymusic-player": {
+      "owner": "Caiccc-a11y",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "caimc21069065-prog/dsh-my-music": {
+      "owner": "caimc21069065-prog",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "caisiyang123/dsh-theme-dodger-17": {
       "owner": "caisiyang123",
       "createdAt": "2026-08-18T12:54:18Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 3,
@@ -961,7 +1331,6 @@
     "caoyiwei850/dsh-client-ui-skins": {
       "owner": "caoyiwei850",
       "createdAt": "2026-08-15T02:12:33Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 11,
@@ -997,12 +1366,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-10-29": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 29,
         "pulls": 1,
-        "issues": 2
+        "issues": 3
       },
       "forks": 1,
       "watchers": 0,
@@ -1011,7 +1385,6 @@
     "captain1275/dsh-ui-web": {
       "owner": "CAPTAIN1275",
       "createdAt": "2026-08-14T15:15:19Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-22": {
           "commits": 10,
@@ -1056,7 +1429,6 @@
     "carlown/majia7-dsh-skin": {
       "owner": "Carlown",
       "createdAt": "2026-08-26T11:39:21Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-26": {
           "commits": 10,
@@ -1086,7 +1458,6 @@
     "carpon39038/dsh-image-theme": {
       "owner": "Carpon39038",
       "createdAt": "2026-08-14T08:43:35Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-07": {
           "commits": 1,
@@ -1103,10 +1474,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "catisamaomao/dsh-atelier-clickfx": {
+      "owner": "catisamaomao",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "cdxdnrf/wishadel-theme": {
       "owner": "cdxDNRF",
       "createdAt": "2026-08-14T20:09:45Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 10,
@@ -1191,7 +1574,6 @@
     "cerrda/dsh-cerrda-theme": {
       "owner": "Cerrda",
       "createdAt": "2026-08-17T13:23:02Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 2,
@@ -1209,9 +1591,8 @@
       "truncated": false
     },
     "ch4acko3/dsh-render-engine": {
-      "owner": "memorax-ai",
+      "owner": "CH4ACKO3",
       "createdAt": "2026-08-20T21:57:33Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-19": {
           "commits": 3,
@@ -1238,10 +1619,22 @@
       "watchers": 1,
       "truncated": false
     },
+    "chael-chael/dsh-ascii-whales": {
+      "owner": "Chael-Chael",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "chajiuqqq/dsh-claude-theme": {
       "owner": "chajiuqqq",
       "createdAt": "2026-08-14T02:57:39Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1253,9 +1646,8 @@
       "truncated": false
     },
     "charlesaq/dsh-fgo-chaldea": {
-      "owner": "Nuomi9",
+      "owner": "CharlesAQ",
       "createdAt": "2026-08-15T16:12:46Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1269,7 +1661,6 @@
     "charrywhite/dsh-sticky-notes": {
       "owner": "charrywhite",
       "createdAt": "2026-08-16T14:11:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 11,
@@ -1294,7 +1685,6 @@
     "chengwill45-bot/dsh-hacker-terminal-theme": {
       "owner": "chengwill45-bot",
       "createdAt": "2026-08-19T06:38:45Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-29": {
           "commits": 0,
@@ -1311,10 +1701,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "chenweiqi12345/dsh-deepy-pet": {
+      "owner": "ChenWeiqi12345",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "chouxiaohuai/uiskin-theme": {
       "owner": "chouxiaohuai",
       "createdAt": "2026-08-17T16:38:25Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 17,
@@ -1371,10 +1773,98 @@
       "watchers": 0,
       "truncated": false
     },
+    "chuantianml/dsh-chat-tidy": {
+      "owner": "ChuanTianML",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "cicero010/dsh-whale-atelier": {
+      "owner": "Cicero010",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "cinnamobot/dsh-nothing-skin": {
+      "owner": "Cinnamobot",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "cjz-wr/background-plugin": {
       "owner": "cjz-wr",
       "createdAt": "2026-08-16T12:58:15Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "clicgger-types/dsh-piggy": {
+      "owner": "CLICGGER-TYPES",
+      "createdAt": null,
+      "daily": {
+        "2026-10-29": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
+        },
+        "2026-10-30": {
+          "commits": 0,
+          "pulls": 2,
+          "issues": 0
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 3,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": true
+    },
+    "cloudsen/dsh-umbrella-theme": {
+      "owner": "CloudSen",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "cn-mg/dsh_infj_pet": {
+      "owner": "CN-Mg",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1388,7 +1878,6 @@
     "cnskycn/shuimo-skin": {
       "owner": "cnskycn",
       "createdAt": "2026-08-16T06:27:12Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 1,
@@ -1405,10 +1894,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "coldfish486/dsh-anime25d-pets": {
+      "owner": "coldfish486",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "conafun/dsh-music-plus": {
+      "owner": "conafun",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "cooltea001/dsh-cool-theme": {
       "owner": "CoolTea001",
       "createdAt": "2026-08-30T09:30:11Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-11": {
           "commits": 1,
@@ -1475,10 +1989,48 @@
       "watchers": 0,
       "truncated": false
     },
+    "copyninja123/dsh-bubble-skins": {
+      "owner": "copyninja123",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "cosmosail/dsh-bloomglass": {
+      "owner": "CosmoSail",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "cpt-kenvie/emotionpet": {
+      "owner": "cpt-kenvie",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "crack-time/dsh-web-ui-skin": {
       "owner": "crack-time",
       "createdAt": "2026-08-15T11:28:12Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 4,
@@ -1545,10 +2097,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "culture-flask/dsh-aemeath-pet": {
+      "owner": "culture-flask",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "cyberryre/lx_music-for-dsh": {
+      "owner": "CyberryRe",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "cyberwei922/dsh-cyberwhale": {
       "owner": "CyberWei922",
       "createdAt": "2026-09-29T15:14:34Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1562,7 +2139,6 @@
     "d-dev0101/open-sea-skin": {
       "owner": "d-dev0101",
       "createdAt": "2026-08-14T22:19:03Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 5,
@@ -1679,10 +2255,35 @@
       "watchers": 4,
       "truncated": false
     },
+    "d-ouyang/dsh-plugin-ascension": {
+      "owner": "d-ouyang",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "d0ublecl1ck/dsh-csdn-theme": {
+      "owner": "d0ublecl1ck",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "dac114514/dsh-theme-center": {
       "owner": "dac114514",
       "createdAt": "2026-08-15T02:18:02Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 0,
@@ -1704,10 +2305,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "dakeshui123/dsh-pet-frieren": {
+      "owner": "dakeshui123",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "dancingmemory/dskin": {
       "owner": "dancingmemory",
       "createdAt": "2026-08-14T03:17:01Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 1,
@@ -1752,7 +2365,6 @@
     "danieltoraji/dsh-skin-kamisato": {
       "owner": "Danieltoraji",
       "createdAt": "2026-08-15T11:03:08Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1766,7 +2378,6 @@
     "dataizu/dsh-whale-aqua-theme": {
       "owner": "dataizu",
       "createdAt": "2026-08-14T14:29:09Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-17": {
           "commits": 0,
@@ -1793,10 +2404,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "daydreamring/dsh-cho-kaguya-plugin-public": {
+      "owner": "DaydreAmRing",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "dd598/dsh-handdrawn-skin": {
+      "owner": "dd598",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "ddamage/dsh-shunshun-wallpaper": {
       "owner": "Ddamage",
       "createdAt": "2026-08-25T20:51:55Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1810,7 +2446,6 @@
     "ddbj-hub/dsh-wallpaper-skin": {
       "owner": "ddbj-hub",
       "createdAt": "2026-08-14T08:14:42Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1824,7 +2459,19 @@
     "devourerm/dsh-naiwa-theme": {
       "owner": "DevourerM",
       "createdAt": "2026-08-14T13:53:15Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "dingchenhui0618-arch/dsh-signal-pet": {
+      "owner": "dingchenhui0618-arch",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1838,7 +2485,6 @@
     "dingdongji-hub/dsh-atom-commune-skin": {
       "owner": "dingdongji-hub",
       "createdAt": "2026-08-21T11:28:06Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1852,7 +2498,32 @@
     "dingyi580/dsh-plugin-gemini-theme": {
       "owner": "dingyi580",
       "createdAt": "2026-08-29T20:56:13Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "dirtywork22/dsh-client-ui-skin-bayern": {
+      "owner": "dirtywork22",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "djh2203/dsh-refined": {
+      "owner": "djh2203",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1866,7 +2537,6 @@
     "dlpufan/dsh-theme-cyberpunk": {
       "owner": "dlpufan",
       "createdAt": "2026-08-14T17:46:58Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1880,7 +2550,6 @@
     "docjlm/dsh-arknights": {
       "owner": "DocJlm",
       "createdAt": "2026-08-16T04:11:25Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 2,
@@ -1912,10 +2581,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "doitian/dsh-music": {
+      "owner": "doitian",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "dongfang81/dsh-music": {
+      "owner": "Dongfang81",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "doozqoo/dsh-pixel-office": {
       "owner": "Doozqoo",
       "createdAt": "2026-08-27T18:25:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-17": {
           "commits": 1,
@@ -1932,10 +2626,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "dreamtao2199/dsh-colors": {
+      "owner": "dreamtao2199",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "drfccv/dsh-theme-neko": {
       "owner": "drfccv",
       "createdAt": "2026-08-14T00:12:09Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -1949,7 +2655,6 @@
     "dsh-plugins/dsh-thought-buddy": {
       "owner": "dsh-plugins",
       "createdAt": "2026-08-15T05:34:53Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 1,
@@ -2011,10 +2716,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "duclong06/dsh-vietnam": {
+      "owner": "DucLong06",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "dviridescent/dafy-whale-theme": {
       "owner": "DViridescent",
       "createdAt": "2026-08-14T06:55:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-21": {
           "commits": 0,
@@ -2036,10 +2753,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "dzy1571315598/dsh-fritia-pet": {
+      "owner": "dzy1571315598",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "eachsheep/dsh-mario-pixel-skin": {
       "owner": "EachSheep",
       "createdAt": "2026-08-16T19:44:47Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-23": {
           "commits": 3,
@@ -2059,7 +2788,6 @@
     "eachsheep/dsh-valley-pixel-skin": {
       "owner": "EachSheep",
       "createdAt": "2026-08-18T09:39:43Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 1,
@@ -2099,7 +2827,6 @@
     "edwardhamu/dsh-glassmorphism-theme": {
       "owner": "EdwardHamu",
       "createdAt": "2026-08-21T02:57:39Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 3,
@@ -2124,7 +2851,6 @@
     "eh-tools/dsh-plugin": {
       "owner": "eh-tools",
       "createdAt": "2026-08-17T06:21:56Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-08": {
           "commits": 12,
@@ -2171,10 +2897,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "elong16/dsh-skin-xuyuanwu": {
+      "owner": "elong16",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "elysia395/dsh-wallpaper-engine": {
       "owner": "elysia395",
       "createdAt": "2026-08-16T16:04:08Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-20": {
           "commits": 10,
@@ -2484,12 +3222,24 @@
       },
       "forks": 78,
       "watchers": 0,
-      "truncated": false
+      "truncated": true
     },
     "enernitylune/dsh-luvian-ui-wallpaper": {
       "owner": "EnernityLune",
       "createdAt": "2026-08-19T15:27:37Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "erbsen16/dsh-client-ui-dracula": {
+      "owner": "Erbsen16",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -2503,7 +3253,6 @@
     "estellalee/dsh-outdoor-theme": {
       "owner": "Estellalee",
       "createdAt": "2026-08-14T15:12:19Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-29": {
           "commits": 0,
@@ -2523,7 +3272,32 @@
     "eternalnight996/dsh-theme": {
       "owner": "EternalNight996",
       "createdAt": "2026-08-22T13:28:38Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "eternalnight996/dsh-ui-three-body": {
+      "owner": "EternalNight996",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "ethanchen669/dsh-plugin-fly-skins": {
+      "owner": "ethanchen669",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -2537,7 +3311,6 @@
     "ewnscat-ya/dsh-client-ui-skin-denia": {
       "owner": "Ewnscat-ya",
       "createdAt": "2026-08-16T14:13:18Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 13,
@@ -2597,7 +3370,6 @@
     "exoticknight/dsh-theme-eink-retro": {
       "owner": "exoticknight",
       "createdAt": "2026-08-26T09:13:28Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-13": {
           "commits": 3,
@@ -2639,10 +3411,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "famuer/dsh-real-fish-pet": {
+      "owner": "FaMuer",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "favktoxic/dsh-theme-liquid-glass": {
       "owner": "FAVKTOXIC",
       "createdAt": "2026-08-23T16:03:04Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-08": {
           "commits": 1,
@@ -2677,7 +3461,6 @@
     "featherhunter/dsh-opencode-palette": {
       "owner": "FeatherHunter",
       "createdAt": "2026-08-15T13:27:52Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 9,
@@ -2833,11 +3616,16 @@
           "commits": 24,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 285,
-        "pulls": 1,
+        "pulls": 2,
         "issues": 8
       },
       "forks": 3,
@@ -2847,7 +3635,6 @@
     "feng78-boop/dsh-thirteen-bg": {
       "owner": "feng78-boop",
       "createdAt": "2026-08-19T04:14:42Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 22,
@@ -2872,7 +3659,6 @@
     "fengb3/dsh-theme-aurum": {
       "owner": "fengb3",
       "createdAt": "2026-08-24T09:22:35Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-28": {
           "commits": 9,
@@ -2892,7 +3678,6 @@
     "fengb3/dsh-theme-macintosh": {
       "owner": "fengb3",
       "createdAt": "2026-08-28T18:24:07Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-07": {
           "commits": 1,
@@ -2909,10 +3694,48 @@
       "watchers": 0,
       "truncated": false
     },
+    "fl0-0wer/dsh-wallpaper": {
+      "owner": "fl0-0wer",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "formalistblue/dsh-everforest": {
+      "owner": "FormalistBlue",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "fourtow/dsh-theme-win98": {
       "owner": "FourTow",
       "createdAt": "2026-09-02T19:26:35Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "fox4096/dsh-custom-css": {
+      "owner": "FOX4096",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -2926,7 +3749,6 @@
     "frankxxxxue/dsh-photo-skins": {
       "owner": "frankxxxxue",
       "createdAt": "2026-08-19T09:18:33Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-31": {
           "commits": 3,
@@ -2946,7 +3768,6 @@
     "frog755/dsh-prompt-vault": {
       "owner": "Frog755",
       "createdAt": "2026-08-22T13:20:43Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-09": {
           "commits": 0,
@@ -2968,10 +3789,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "fuhuonvshen/dsh-video-player": {
+      "owner": "fuhuonvshen",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "ganglongyu/dsh-kun-like-pet": {
+      "owner": "GangLongYu",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "ggbond2424648901/deep-whale-day-night-theme": {
       "owner": "GGBond2424648901",
       "createdAt": "2026-08-14T16:00:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 6,
@@ -3021,7 +3867,19 @@
     "goatbroai/web-background": {
       "owner": "goatbroai",
       "createdAt": "2026-08-17T13:18:09Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "gongstudent/dsh-moyu": {
+      "owner": "gongstudent",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3035,7 +3893,6 @@
     "gooosie/dsh-whale-bg": {
       "owner": "gooosie",
       "createdAt": "2026-08-15T08:59:25Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3049,7 +3906,6 @@
     "gptsapp/dsh-stylevault": {
       "owner": "GptsApp",
       "createdAt": "2026-08-16T04:19:08Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 10,
@@ -3069,7 +3925,6 @@
     "gqqqq-q/ascii-ocean-dshplugin": {
       "owner": "GqqQq-Q",
       "createdAt": "2026-10-21T15:27:20Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-22": {
           "commits": 3,
@@ -3080,11 +3935,16 @@
           "commits": 8,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-29": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 11,
-        "pulls": 0,
+        "pulls": 1,
         "issues": 1
       },
       "forks": 1,
@@ -3094,7 +3954,6 @@
     "h-table/dsh-bg-tool": {
       "owner": "H-table",
       "createdAt": "2026-08-16T15:18:53Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 1,
@@ -3114,7 +3973,6 @@
     "hachimi-ai/dsh-aemeath": {
       "owner": "hachimi-ai",
       "createdAt": "2026-08-16T14:24:05Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-11": {
           "commits": 0,
@@ -3134,7 +3992,6 @@
     "hanyi7867069-create/dsh-moonrise": {
       "owner": "hanyi7867069-create",
       "createdAt": "2026-08-17T09:27:51Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3148,7 +4005,6 @@
     "haoyueqin/deepseek-harness-background": {
       "owner": "HaoyueQin",
       "createdAt": "2026-08-19T13:45:05Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-20": {
           "commits": 4,
@@ -3293,7 +4149,6 @@
     "harmlessfunny/dsh-background-by-model": {
       "owner": "HarmlessFunny",
       "createdAt": "2026-09-13T07:09:44Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-25": {
           "commits": 2,
@@ -3310,10 +4165,61 @@
       "watchers": 0,
       "truncated": false
     },
+    "harmlessfunny/dsh-pet-in-frame": {
+      "owner": "HarmlessFunny",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "hatanokokosa/dsh-colorschemes": {
+      "owner": "hatanokokosa",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "haxi8/dsh-jujutsukaisen-rainlove": {
+      "owner": "haxi8",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "hbgdjb/dsh-entry-transition": {
+      "owner": "hbgdjb",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "he2way/dsh-task-console": {
       "owner": "He2way",
       "createdAt": "2026-08-14T01:41:17Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-11": {
           "commits": 1,
@@ -3370,10 +4276,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "hello-heyongping/dsh-helloai-theme": {
+      "owner": "hello-heyongping",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "henrychenhao/dsh-skin-argentina": {
       "owner": "henrychenhao",
       "createdAt": "2026-08-27T04:43:35Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3387,7 +4305,6 @@
     "hero-goblins/dsh-macos-skin": {
       "owner": "hero-goblins",
       "createdAt": "2026-08-21T07:48:03Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 1,
@@ -3407,7 +4324,6 @@
     "heshen-1/deepseek-whale-wallpaper": {
       "owner": "HeShen-1",
       "createdAt": "2026-09-04T02:49:36Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-18": {
           "commits": 4,
@@ -3424,10 +4340,61 @@
       "watchers": 0,
       "truncated": false
     },
+    "heshuren371/dsh-music-player": {
+      "owner": "heshuren371",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "heshuren371/dsh-music-player-tui": {
+      "owner": "heshuren371",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "hey-ruomei/dsh-music-player": {
+      "owner": "hey-ruomei",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "hgp005/dsh-winterskin": {
+      "owner": "hgp005",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "hit-html/dsh-enhanced": {
       "owner": "HIT-HTML",
       "createdAt": "2026-08-24T19:09:08Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3441,7 +4408,19 @@
     "homoland/dshp-balance-hp": {
       "owner": "HomoLand",
       "createdAt": "2026-08-15T20:05:30Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "hotsteel2901/dsh-frutiger-aero": {
+      "owner": "Hotsteel2901",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3455,7 +4434,6 @@
     "huabai-flowerwhite/dsh-ui-skin": {
       "owner": "huabai-flowerwhite",
       "createdAt": "2026-08-21T00:02:18Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 3,
@@ -3472,10 +4450,67 @@
       "watchers": 0,
       "truncated": false
     },
+    "huanlinoto/dsh-plugin-better-sidebar-plugin-audio": {
+      "owner": "HuanLinOTO",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "huihuangddfs/dsh-codex-mini-pet": {
+      "owner": "HuiHuangDDFS",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "hwfee/hwfee-dsh": {
+      "owner": "HwFee",
+      "createdAt": null,
+      "daily": {
+        "2026-10-26": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 1,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "hyna-hla/dsh-ambience": {
+      "owner": "Hyna-hla",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "hyposelen1a/dsh-columbina-theme": {
       "owner": "hyposelen1a",
       "createdAt": "2026-08-18T13:16:28Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 7,
@@ -3501,21 +4536,38 @@
           "commits": 3,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 12,
-        "pulls": 1,
+        "pulls": 2,
         "issues": 1
       },
       "forks": 1,
       "watchers": 0,
       "truncated": false
     },
+    "hzhgino/dsh-caonima": {
+      "owner": "hzhgino",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "i1j/dsh-krill-theme": {
       "owner": "i1j",
       "createdAt": "2026-08-14T20:19:52Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3529,7 +4581,19 @@
     "iasiv5/skins": {
       "owner": "iasiv5",
       "createdAt": "2026-08-28T08:30:53Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "imfuxing/dsh-widget-journey-west": {
+      "owner": "imfuxing",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3543,7 +4607,6 @@
     "ink5897/dsh-theme-kit": {
       "owner": "ink5897",
       "createdAt": "2026-08-15T12:02:59Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 18,
@@ -3570,10 +4633,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "ip050/dsh-video-player": {
+      "owner": "IP050",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "irdotai/dsh-studio": {
+      "owner": "IRdotAI",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "jack-sun-learner/dsh-image-skin": {
       "owner": "Jack-sun-learner",
       "createdAt": "2026-08-16T08:55:05Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 3,
@@ -3595,10 +4683,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "jarvislee90s-dot/dsh-foxbell-pet": {
+      "owner": "jarvislee90s-dot",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "jasonchtt/dsh-netease-music": {
+      "owner": "JasonCHTT",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "jayliu2025-vip/dsh-fate-twin-contract": {
       "owner": "Jayliu2025-vip",
       "createdAt": "2026-08-16T13:17:38Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 22,
@@ -3618,7 +4731,6 @@
     "jayliu2025-vip/dsh-theme-huluwa": {
       "owner": "Jayliu2025-vip",
       "createdAt": "2026-08-16T06:05:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 3,
@@ -3638,7 +4750,6 @@
     "jefferyshaw/dsh-stardew-theme": {
       "owner": "JefferyShaw",
       "createdAt": "2026-09-03T01:25:51Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3652,7 +4763,6 @@
     "jerryphoenixcky/dsh-plugin-wallpaper": {
       "owner": "JerryPhoenixCKY",
       "createdAt": "2026-08-20T08:43:31Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-14": {
           "commits": 6,
@@ -3674,10 +4784,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "jh-evil/dsh-music": {
+      "owner": "jh-Evil",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "jhyugou/dsh-sidebar-pet": {
+      "owner": "JHyugou",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "jiangnanquan/dsh-ux": {
       "owner": "jiangnanquan",
       "createdAt": "2026-08-14T06:15:59Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-08": {
           "commits": 1,
@@ -3727,7 +4862,6 @@
     "jiangwangyang/dsh-theme-blackhole": {
       "owner": "jiangwangyang",
       "createdAt": "2026-08-20T12:24:19Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 7,
@@ -3784,10 +4918,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "jiaqinzhang123/peon-voice": {
+      "owner": "jiaqinzhang123",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "jimmy0123-ux/dsh-token-pet": {
+      "owner": "Jimmy0123-ux",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "jinxlux/xiao-theme-dsh-ui-plugin": {
       "owner": "jinxlux",
       "createdAt": "2026-08-23T06:52:28Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-08": {
           "commits": 2,
@@ -3864,10 +5023,48 @@
       "watchers": 0,
       "truncated": false
     },
+    "jizenghui81/dsh-huashu-pixel": {
+      "owner": "jizenghui81",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "joeseesun/qiaomu-radio-dsh": {
+      "owner": "joeseesun",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "john-walks-slow/dsh-os": {
+      "owner": "john-walks-slow",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "johnnyting/dsh-official-homepage-theme": {
       "owner": "JohnnyTing",
       "createdAt": "2026-08-24T08:13:07Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-10": {
           "commits": 0,
@@ -3888,12 +5085,30 @@
           "commits": 1,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 12,
+        "pulls": 1,
+        "issues": 2
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "jryang1997/dsh-ascii-whales": {
+      "owner": "jryang1997",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
         "pulls": 0,
-        "issues": 1
+        "issues": 0
       },
       "forks": 0,
       "watchers": 0,
@@ -3902,7 +5117,6 @@
     "juliye2025/dsh-butler-atelier": {
       "owner": "juliye2025",
       "createdAt": "2026-08-17T14:07:57Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3916,7 +5130,6 @@
     "jungeer/dsh-theme-stardew": {
       "owner": "jungeer",
       "createdAt": "2026-08-15T08:30:37Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3930,7 +5143,6 @@
     "jungenius-stack/dsh-zcode-ui": {
       "owner": "jungenius-stack",
       "createdAt": "2026-10-12T09:38:52Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-19": {
           "commits": 3,
@@ -3955,7 +5167,6 @@
     "juryorca/dsh-custom-theme-import": {
       "owner": "Juryorca",
       "createdAt": "2026-08-16T15:10:08Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 34,
@@ -3985,7 +5196,32 @@
     "justintangsysu/dsh-amadeus-skin": {
       "owner": "justintangsysu",
       "createdAt": "2026-08-15T15:36:32Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "jxboop/dsh-plugin-xiaowu": {
+      "owner": "jxboop",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "kang200862/dsh-firefly-spring-skin": {
+      "owner": "kang200862",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3999,7 +5235,6 @@
     "kelemiao/dsh-animation-optimization": {
       "owner": "kelemiao",
       "createdAt": "2026-08-16T06:55:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-08": {
           "commits": 1,
@@ -4036,10 +5271,67 @@
       "watchers": 1,
       "truncated": false
     },
+    "keleus/deepseek-pet": {
+      "owner": "keleus",
+      "createdAt": null,
+      "daily": {
+        "2026-10-25": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 1
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "kendu76/dsh-music-player": {
+      "owner": "kendu76",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "kiive357q/dsh-nekojishi-vn": {
+      "owner": "kiive357q",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "kimfischer99/deepseek-harness-desktop": {
+      "owner": "KimFischer99",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "kingao294/dsh-skin": {
       "owner": "KinGao294",
       "createdAt": "2026-08-13T23:34:59Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 0,
@@ -4074,7 +5366,6 @@
     "kingofsoysauce/dsh-elon-skin": {
       "owner": "kingOfSoySauce",
       "createdAt": "2026-08-18T03:35:26Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 6,
@@ -4099,7 +5390,6 @@
     "kingofsoysauce/dsh-liang-skin": {
       "owner": "kingOfSoySauce",
       "createdAt": "2026-08-14T14:07:36Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 5,
@@ -4209,7 +5499,19 @@
     "kinmat-a/dsh-theme-switch": {
       "owner": "kinmat-A",
       "createdAt": "2026-08-15T19:31:09Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "kjx-talesofai/dsh-plugin-theme-workbench": {
+      "owner": "kjx-talesofai",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -4223,7 +5525,6 @@
     "kogisune/dsh-skin-koi-pond": {
       "owner": "Kogisune",
       "createdAt": "2026-08-20T08:51:25Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -4237,7 +5538,6 @@
     "kongxiangyiren/dhs-theme-plugin": {
       "owner": "kongxiangyiren",
       "createdAt": "2026-08-14T08:24:48Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -4249,9 +5549,8 @@
       "truncated": false
     },
     "krystal-cao/deepseek-harness-swift": {
-      "owner": "summer-521",
+      "owner": "krystal-cao",
       "createdAt": "2026-08-25T08:34:03Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-08": {
           "commits": 7,
@@ -4331,7 +5630,6 @@
     "kurosawageeker/dsh-moe-lite": {
       "owner": "KurosawaGeeker",
       "createdAt": "2026-10-20T07:51:25Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-22": {
           "commits": 0,
@@ -4348,10 +5646,54 @@
       "watchers": 0,
       "truncated": false
     },
+    "kviiinh/dsh-whale-particles-bg": {
+      "owner": "kviiinh",
+      "createdAt": null,
+      "daily": {
+        "2026-10-26": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 1
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "l-vm2k/dsh-ayaka-theme": {
+      "owner": "l-vM2k",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "la-sandrone/dsh-taller-y-relojeria-de-sandrone": {
+      "owner": "la-sandrone",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "lan-tina-ws/dsh-gui-customization": {
       "owner": "LAN-TINA-WS",
       "createdAt": "2026-08-14T08:29:53Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-10": {
           "commits": 2,
@@ -4381,7 +5723,6 @@
     "laoduu/deepseek-harness-yizi-themes": {
       "owner": "laoduu",
       "createdAt": "2026-08-15T01:11:08Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 7,
@@ -4426,7 +5767,6 @@
     "laohankk/dsh-crt-skins": {
       "owner": "laohankk",
       "createdAt": "2026-09-13T10:22:49Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-26": {
           "commits": 2,
@@ -4446,7 +5786,6 @@
     "laplaceyoung/dsh-qq2006": {
       "owner": "LaplaceYoung",
       "createdAt": "2026-08-13T13:04:18Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 0,
@@ -4473,10 +5812,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "lbunc/dsh-composer-glass": {
+      "owner": "Lbunc",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "le-soleil-se-couche/dsh-skin-claude-code": {
       "owner": "le-soleil-se-couche",
       "createdAt": "2026-08-14T13:41:57Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -4490,7 +5841,6 @@
     "leamonac0823/dsh-cornell-classic-theme": {
       "owner": "leamonac0823",
       "createdAt": "2026-08-21T07:42:09Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 3,
@@ -4510,7 +5860,6 @@
     "leemancheung/dsh-qq2007-skin": {
       "owner": "LeemanCheung",
       "createdAt": "2026-08-15T07:43:40Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 0,
@@ -4540,7 +5889,6 @@
     "leemancheung/dsh-whale-animation": {
       "owner": "LeemanCheung",
       "createdAt": "2026-08-14T12:06:38Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-10": {
           "commits": 1,
@@ -4565,7 +5913,6 @@
     "leemancheung/dsh-whale-companion": {
       "owner": "LeemanCheung",
       "createdAt": "2026-08-16T11:31:54Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 12,
@@ -4610,7 +5957,6 @@
     "lengduan/dsh-815-skin": {
       "owner": "lengduan",
       "createdAt": "2026-08-15T02:11:31Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 1,
@@ -4715,7 +6061,6 @@
     "lengzhanbao/dsh-raiden-theme": {
       "owner": "lengzhanbao",
       "createdAt": "2026-08-26T04:01:03Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-10": {
           "commits": 4,
@@ -4745,7 +6090,6 @@
     "lengzhanbao/dsh-taffy-theme": {
       "owner": "lengzhanbao",
       "createdAt": "2026-08-21T07:25:09Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 19,
@@ -4832,10 +6176,22 @@
       "watchers": 1,
       "truncated": false
     },
+    "leolee0097/dsh-desktop-acrylic": {
+      "owner": "LeoLee0097",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "lesliechowsh/dsh-weniger-theme": {
       "owner": "lesliechowsh",
       "createdAt": "2026-08-18T19:46:23Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 3,
@@ -4870,7 +6226,6 @@
     "leyan0365/dsh-retro-mac": {
       "owner": "Leyan0365",
       "createdAt": "2026-08-19T02:02:33Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 6,
@@ -4887,10 +6242,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "lh15626127422-cloud/dsh-cp2077-theme": {
+      "owner": "lh15626127422-cloud",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "lhy723/dsh-neu-theme": {
       "owner": "Lhy723",
       "createdAt": "2026-08-16T03:36:51Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 18,
@@ -4927,10 +6294,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "liceses/dsh-wallpaper-rotator": {
+      "owner": "liceses",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "licheng-ma/dsh-wechat-skin": {
       "owner": "licheng-ma",
       "createdAt": "2026-08-16T10:12:59Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 23,
@@ -4947,10 +6326,48 @@
       "watchers": 0,
       "truncated": false
     },
+    "lilcandi/dsh-music-on": {
+      "owner": "lilcandi",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "lildanger/dsh-skin-win2000": {
+      "owner": "lildanger",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "lilycleheart/dsh-liuli-ui-enhance": {
+      "owner": "LilycleHeart",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "lilycleheart/liuli-theme": {
       "owner": "LilycleHeart",
       "createdAt": "2026-08-14T18:18:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 34,
@@ -4990,7 +6407,6 @@
     "linhut/dsh-stock-terminal": {
       "owner": "linhut",
       "createdAt": "2026-08-17T14:08:30Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 0,
@@ -5022,10 +6438,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "linkbag/dsh-capyreporter": {
+      "owner": "linkbag",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "linzhuolisoc/dsh-skin-study": {
       "owner": "linzhuoliSOC",
       "createdAt": "2026-08-16T11:22:42Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 9,
@@ -5052,10 +6480,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "linzr-lly/dsh-whale-lap": {
+      "owner": "Linzr-lly",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "lisongxuan/ds-hentai": {
       "owner": "lisongxuan",
       "createdAt": "2026-08-25T17:01:48Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-24": {
           "commits": 2,
@@ -5080,7 +6520,6 @@
     "liu-za-81/dsh-theme-firefly": {
       "owner": "Liu-ZA-81",
       "createdAt": "2026-08-16T19:04:44Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 11,
@@ -5145,7 +6584,32 @@
     "liuherong808-dev/dsh-whale-purse": {
       "owner": "liuherong808-dev",
       "createdAt": "2026-08-16T06:57:34Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "liushuchang-2012/dsh-skin-liquid-glass": {
+      "owner": "liushuchang-2012",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "ljy7812/dsh-winui-skin": {
+      "owner": "LJY7812",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5159,7 +6623,6 @@
     "lkdx0220/genshin-odette-skin-dsh": {
       "owner": "lkdx0220",
       "createdAt": "2026-08-17T14:11:26Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 2,
@@ -5199,7 +6662,6 @@
     "lkdxzhxi/dsh-glass-ui-theme": {
       "owner": "lkdxzhxi",
       "createdAt": "2026-08-29T11:20:23Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-12": {
           "commits": 2,
@@ -5216,10 +6678,48 @@
       "watchers": 0,
       "truncated": false
     },
+    "llylab/dbs": {
+      "owner": "LLYlab",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "lmf-ynu/dsh-aurora-glass": {
+      "owner": "Lmf-ynu",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "longgege-cd/dsh-skin-pixel-anime": {
+      "owner": "longgege-cd",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "longyu065/dsh-theme-ti": {
       "owner": "longyu065",
       "createdAt": "2026-08-13T18:30:19Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 10,
@@ -5239,7 +6739,38 @@
     "lorisyounger/dsh-vpet-skin": {
       "owner": "LorisYounger",
       "createdAt": "2026-10-09T15:32:26Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "louke6572/dsh-whale-widget-plus": {
+      "owner": "louke6572",
+      "createdAt": null,
+      "daily": {
+        "2026-10-27": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 1
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "loyalchiiina/dsh-todo-float-ball": {
+      "owner": "loyalchiiina",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5253,7 +6784,6 @@
     "lsaa4/dsh-custom-ui": {
       "owner": "lsaa4",
       "createdAt": "2026-08-18T18:18:40Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-18": {
           "commits": 2,
@@ -5270,10 +6800,61 @@
       "watchers": 0,
       "truncated": false
     },
+    "lsjspl/dsh-reel": {
+      "owner": "lsjspl",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "lssyd20070106/dsh-ui-preset-enhance": {
       "owner": "lssyd20070106",
       "createdAt": "2026-08-14T20:47:07Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "lucasleecn/dsh-client-ui-pet": {
+      "owner": "LucasleeCN",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "lucasli2018/totoro-pet": {
+      "owner": "Lucasli2018",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "lucasx001/dsh-skin-claude-code": {
+      "owner": "lucasx001",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5287,7 +6868,71 @@
     "luckzhangfengbo/dsh-web-theme": {
       "owner": "luckzhangfengbo",
       "createdAt": "2026-08-29T13:29:45Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "luo0712yan0219-blip/dsh-whale-decor": {
+      "owner": "luo0712yan0219-blip",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "luongthimydieu/dsh-client-ui-skin-kitty": {
+      "owner": "luongthimydieu",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "luweiyabo/dsh-whale-pet": {
+      "owner": "luweiyabo",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "lx-hmkk/dsh-appearance": {
+      "owner": "LX-HMKK",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "lx000166/dsh-aqua-glass": {
+      "owner": "lx000166",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5301,7 +6946,6 @@
     "lxd-ashe/dsh-codex-theme": {
       "owner": "Lxd-Ashe",
       "createdAt": "2026-08-24T02:07:31Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5315,7 +6959,6 @@
     "lxxz1918/dsh-theme-customizer": {
       "owner": "lxxz1918",
       "createdAt": "2026-08-22T00:29:59Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-22": {
           "commits": 23,
@@ -5355,7 +6998,6 @@
     "lyh9712/dsh-bg-image": {
       "owner": "lyh9712",
       "createdAt": "2026-08-14T03:40:32Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-11": {
           "commits": 0,
@@ -5375,7 +7017,19 @@
     "lyq3/dsh-skin-nebula": {
       "owner": "lyq3",
       "createdAt": "2026-08-16T16:34:17Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "lyx0717/dsh-washer": {
+      "owner": "lyx0717",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5389,7 +7043,6 @@
     "lzylyd/dsh-dracula": {
       "owner": "lzylyd",
       "createdAt": "2026-08-13T19:01:55Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5403,7 +7056,6 @@
     "magic-mercury/dsh-chat-customizer": {
       "owner": "Magic-Mercury",
       "createdAt": "2026-08-15T02:38:25Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5417,7 +7069,6 @@
     "makajo/dsh-gemini-m3e-theme": {
       "owner": "makajo",
       "createdAt": "2026-08-29T21:13:35Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5431,7 +7082,6 @@
     "makuralymi/dsh-webui-glass-theme": {
       "owner": "makuralymi",
       "createdAt": "2026-08-13T16:54:07Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 5,
@@ -5461,7 +7111,6 @@
     "mangmax/dsh-themes": {
       "owner": "MangMax",
       "createdAt": "2026-08-14T01:30:26Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 2,
@@ -5496,7 +7145,19 @@
     "mantonlove/dsh-prism-plugin": {
       "owner": "mantonlove",
       "createdAt": "2026-08-18T08:53:15Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "mcxcc303/dsh-clawd": {
+      "owner": "MCXCC303",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5510,7 +7171,6 @@
     "megatronyy/dsh-skin-background": {
       "owner": "megatronyy",
       "createdAt": "2026-08-21T11:30:20Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 20,
@@ -5535,7 +7195,6 @@
     "meto-ventus/dsh-ventus-whale": {
       "owner": "meto-ventus",
       "createdAt": "2026-08-15T17:33:22Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5546,10 +7205,48 @@
       "watchers": 1,
       "truncated": false
     },
+    "miasakiii/dsh-miasaki": {
+      "owner": "Miasakiii",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "microsharpant/dsh-theme-presets": {
+      "owner": "MicroSharpAnt",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "mirrmeur/dsh-workspace-colors": {
+      "owner": "MirrMeur",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "misaki14987/dsh-theme-taffy": {
       "owner": "Misaki14987",
       "createdAt": "2026-08-14T04:47:39Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 2,
@@ -5569,7 +7266,6 @@
     "mittermeiergithub/dsh-darksoft-theme": {
       "owner": "MitterMeierGithub",
       "createdAt": "2026-08-23T03:25:39Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5583,7 +7279,6 @@
     "mizuhara37/dsh-nene-theme": {
       "owner": "mizuhara37",
       "createdAt": "2026-08-15T13:52:11Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5597,7 +7292,6 @@
     "mldhao/dsh-blue-archive-shiroko": {
       "owner": "mldhao",
       "createdAt": "2026-08-15T14:05:21Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-26": {
           "commits": 1,
@@ -5617,7 +7311,6 @@
     "moonshadow1976/chiral-pulse": {
       "owner": "MoonShadow1976",
       "createdAt": "2026-08-14T02:57:34Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-14": {
           "commits": 1,
@@ -5644,10 +7337,74 @@
       "watchers": 0,
       "truncated": false
     },
+    "more-nico/dsh-nico-theme": {
+      "owner": "more-nico",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "moshangzhe/dsh-shanqi-theme": {
+      "owner": "moshangzhe",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "mozhuanzuojing/dsh-liangwengu": {
+      "owner": "mozhuanzuojing",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "mrmolabs/dsh-yorha-ui": {
+      "owner": "MrmoLabs",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "mrzhailiming/deepseek-pet": {
+      "owner": "Mrzhailiming",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "mtaech/dsh-material-you": {
       "owner": "mtaech",
       "createdAt": "2026-08-14T09:09:48Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-26": {
           "commits": 1,
@@ -5664,10 +7421,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "mu915275-cmd/dsh-boot-animation": {
+      "owner": "mu915275-cmd",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "mumuer1024/dsh-ui-liteglass": {
       "owner": "mumuer1024",
       "createdAt": "2026-08-21T18:35:42Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-27": {
           "commits": 12,
@@ -5687,7 +7456,6 @@
     "nagi-ovo/dsh-ads": {
       "owner": "Nagi-ovo",
       "createdAt": "2026-08-09T19:06:36Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 2,
@@ -5759,10 +7527,48 @@
       "watchers": 0,
       "truncated": false
     },
+    "nativedog1/dsh-boot-animation": {
+      "owner": "NativeDog1",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "nektropy/dsh-starry-sky-theme": {
+      "owner": "Nektropy",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "nickfast2025/dsh-sky-window": {
+      "owner": "nickfast2025",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "niiang/dsh-kimino-theme": {
       "owner": "niiang",
       "createdAt": "2026-08-16T11:33:28Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 4,
@@ -6082,7 +7888,6 @@
     "nineandnine-9/dsh-theme-rheostat": {
       "owner": "nineandnine-9",
       "createdAt": "2026-08-16T11:45:24Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 2,
@@ -6102,7 +7907,6 @@
     "nishuoyang/dsh-wallpaper-bg": {
       "owner": "nishuoyang",
       "createdAt": "2026-08-15T16:19:12Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -6113,10 +7917,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "njuptlzf/dsh-dynamic-background": {
+      "owner": "njuptlzf",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "nlqh7/dsh-beautify": {
       "owner": "nlqh7",
       "createdAt": "2026-08-16T15:52:01Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-20": {
           "commits": 2,
@@ -6193,10 +8009,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "noah-wang/dsh-agent-pet": {
+      "owner": "Noah-wang",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "noexcs/dsh-skin-glass": {
       "owner": "noexcs",
       "createdAt": "2026-08-15T01:16:56Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 5,
@@ -6216,7 +8044,6 @@
     "nonamelego/dsh-catppuccin": {
       "owner": "NoNameLeGo",
       "createdAt": "2026-08-14T15:11:09Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 5,
@@ -6462,21 +8289,103 @@
           "commits": 10,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-27": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 247,
         "pulls": 1,
-        "issues": 27
+        "issues": 28
       },
       "forks": 1,
+      "watchers": 0,
+      "truncated": false
+    },
+    "nxz1026/singleplayer": {
+      "owner": "nxz1026",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "obwiler/dsh-tsnet-skin-pilot": {
+      "owner": "Obwiler",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
       "watchers": 0,
       "truncated": false
     },
     "oceanxuikun/dsh-eva-theme-plugin": {
       "owner": "oceanxuikun",
       "createdAt": "2026-08-14T06:22:43Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "oliveryfaso/dsh-pet-company": {
+      "owner": "Oliveryfaso",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "opensetk/dsh-xiaohei": {
+      "owner": "opensetk",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "orderg-x/dsh-video-preview": {
+      "owner": "OrderG-X",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "orxz/deepseek-harness-pets": {
+      "owner": "orxz",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -6490,7 +8399,6 @@
     "ossfrankfrank/dsh-dracula-theme": {
       "owner": "ossFrankFrank",
       "createdAt": "2026-08-17T08:18:27Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 1,
@@ -6520,7 +8428,6 @@
     "pakiknowledge/dsh-client-ui-skin-claude": {
       "owner": "PAKIKNOWLEDGE",
       "createdAt": "2026-08-14T14:28:09Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 8,
@@ -6562,10 +8469,119 @@
       "watchers": 0,
       "truncated": false
     },
+    "pineapple880066/dsh-webui-pets": {
+      "owner": "pineapple880066",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "potoior/dsh-bull-bear": {
+      "owner": "potoior",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "ptb-xiaou/dsh-api3d-pet": {
+      "owner": "ptb-xiaou",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "purezhi/dsh-plugin-whale3": {
+      "owner": "purezhi",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "pyf2818/dsh-bili-widget": {
+      "owner": "pyf2818",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "qiaoshi-dot/dsh-wechat-classic-theme": {
+      "owner": "qiaoshi-dot",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "qifanai/dsh-startup-screen": {
+      "owner": "QIFANAI",
+      "createdAt": null,
+      "daily": {
+        "2026-10-27": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 1
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "qin839/dsh-visual-system": {
+      "owner": "qin839",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "quaner1234-cmd/dsh-theme-kami": {
       "owner": "quaner1234-cmd",
       "createdAt": "2026-09-10T06:17:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-22": {
           "commits": 2,
@@ -6585,7 +8601,19 @@
     "qweq-cell-del/dsh-whale-girl-wallpaper": {
       "owner": "QWEQ-CELL-DEL",
       "createdAt": "2026-09-30T10:22:58Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "rain-shuoyu/dsh-client-deep-sneak": {
+      "owner": "Rain-Shuoyu",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -6599,7 +8627,6 @@
     "rainbowdashy/dsh-theme-palettes": {
       "owner": "RainbowDashy",
       "createdAt": "2026-08-14T03:23:50Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 1,
@@ -6619,7 +8646,6 @@
     "rainpomelo/deepseek-harness-liquid-glass-theme": {
       "owner": "Rainpomelo",
       "createdAt": "2026-08-18T15:19:22Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 11,
@@ -6661,10 +8687,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "raven3005672/dsh-plugin-shell-skin": {
+      "owner": "raven3005672",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "rayyeung1989/claude-parchment-theme": {
       "owner": "RayYeung1989",
       "createdAt": "2026-08-14T07:45:36Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "readfish/dsh-client-theme-cyber": {
+      "owner": "readfish",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -6678,7 +8729,6 @@
     "realhacker/dsh-theme-colorizer": {
       "owner": "RealHacker",
       "createdAt": "2026-08-15T09:02:45Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 2,
@@ -6703,7 +8753,6 @@
     "realmisakamikoto/dsh-skin-studio": {
       "owner": "realMisakaMikoto",
       "createdAt": "2026-08-17T02:34:43Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-10": {
           "commits": 1,
@@ -6740,10 +8789,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "regex520/dsh-m3-monet": {
+      "owner": "Regex520",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "reisen-ww/dsh-bonk-pet": {
+      "owner": "reisen-ww",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "reluckylucy/dsh_rhine_lab_themo": {
       "owner": "ReLuckyLucy",
       "createdAt": "2026-08-14T09:31:05Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 18,
@@ -6780,10 +8854,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "renjie2026/dsh-theme-gallery": {
+      "owner": "renjie2026",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "respawn-id/dsh-rhine-splash": {
       "owner": "Respawn-ID",
       "createdAt": "2026-10-08T04:52:02Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-19": {
           "commits": 9,
@@ -6828,7 +8914,6 @@
     "revolutionla/dsh-dream-skin": {
       "owner": "RevolutionLA",
       "createdAt": "2026-08-15T02:38:54Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 8,
@@ -7177,23 +9262,50 @@
         },
         "2026-10-25": {
           "commits": 1,
+          "pulls": 1,
+          "issues": 0
+        },
+        "2026-10-27": {
+          "commits": 0,
           "pulls": 0,
+          "issues": 1
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
+        },
+        "2026-10-29": {
+          "commits": 0,
+          "pulls": 1,
           "issues": 0
         }
       },
       "totals": {
         "commits": 252,
-        "pulls": 24,
-        "issues": 36
+        "pulls": 27,
+        "issues": 37
       },
       "forks": 27,
       "watchers": 1,
       "truncated": false
     },
+    "rindbeans/codex-ui": {
+      "owner": "rinDBeans",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "rison114514/dsh-endfield-ui": {
       "owner": "rison114514",
       "createdAt": "2026-08-17T13:31:40Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 1,
@@ -7255,10 +9367,61 @@
       "watchers": 0,
       "truncated": false
     },
+    "ronnyjung2021/dsh-mimo-skin": {
+      "owner": "RonnyJung2021",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "ronnyjung2021/dsh-trae-skin": {
+      "owner": "RonnyJung2021",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "ruegg114514/dsh-colorlab": {
+      "owner": "ruegg114514",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "rz-0410/dsh-theme-quartet": {
+      "owner": "RZ-0410",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "sakka6868/dsh-skin": {
       "owner": "sakka6868",
       "createdAt": "2026-08-14T15:13:17Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 1,
@@ -7300,10 +9463,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "saknutella/dsh-thinking-quips": {
+      "owner": "Saknutella",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "sakuraaa667/dsh-wallpaper-engine": {
       "owner": "sakuraaa667",
       "createdAt": "2026-08-16T11:02:14Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7317,18 +9492,35 @@
     "samizuhm/dsh-client-ui-theme-xp": {
       "owner": "SamizuHM",
       "createdAt": "2026-08-14T11:40:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 0,
           "pulls": 0,
           "issues": 2
+        },
+        "2026-10-26": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 2
+        "issues": 3
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "sayzwx/dsh-xingkong-theme": {
+      "owner": "sayzwx",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
       },
       "forks": 0,
       "watchers": 0,
@@ -7337,7 +9529,6 @@
     "sddft97/dsh-client-ui-skin-verdandi": {
       "owner": "Sddft97",
       "createdAt": "2026-08-22T13:28:04Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-26": {
           "commits": 1,
@@ -7379,10 +9570,33 @@
       "watchers": 0,
       "truncated": false
     },
+    "seaison/dsh-plugin-eva-theme": {
+      "owner": "seaison",
+      "createdAt": null,
+      "daily": {
+        "2026-10-26": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 1,
+        "issues": 1
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "seekerwxy/dsh-aurora-theme": {
       "owner": "seekerwxy",
       "createdAt": "2026-08-15T08:39:25Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7396,7 +9610,32 @@
     "senrylee/dsh-frosted-window": {
       "owner": "SenryLee",
       "createdAt": "2026-08-15T17:09:15Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "sh-9999/what-was-that": {
+      "owner": "SH-9999",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "shanhaifish/dsh-usage-pet": {
+      "owner": "ShanHaiFish",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7410,7 +9649,6 @@
     "shawnlone/dsh-theme-tuner": {
       "owner": "shawnlone",
       "createdAt": "2026-08-25T09:34:55Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-29": {
           "commits": 1,
@@ -7432,10 +9670,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "shen9qi/dsh-asuka-pet": {
+      "owner": "sHen9Qi",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "shenmy-git/dsh-weather-plugin": {
       "owner": "shenmy-git",
       "createdAt": "2026-08-16T10:23:44Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 3,
@@ -7452,10 +9702,74 @@
       "watchers": 0,
       "truncated": false
     },
+    "shenpingdd/wooden-fish-dsh": {
+      "owner": "ShenpingDD",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "shering-official/dsh-desktop-pet": {
+      "owner": "SherinG-official",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "shimarin233/dsh-session-hud": {
+      "owner": "ShiMarin233",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "shinarin/dsh-remielle-pet": {
+      "owner": "Shinarin",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "shinefree7/dsh-doc-rail": {
       "owner": "ShineFree7",
       "createdAt": "2026-09-02T13:26:37Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "shokoup/dsh-theme-liuguang": {
+      "owner": "ShokouP",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7469,7 +9783,6 @@
     "shuaihaov/dsh-thewanderingearthii": {
       "owner": "shuaihaoV",
       "createdAt": "2026-08-25T01:56:44Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7483,7 +9796,32 @@
     "shuigege2025-dev/cloud-smoke-widget": {
       "owner": "shuigege2025-dev",
       "createdAt": "2026-08-18T11:28:45Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "signalight/codex-to-dsh-pet": {
+      "owner": "Signalight",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "siloet-phy/analog-liquid-glass-for-dsh": {
+      "owner": "Siloet-phy",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7497,7 +9835,6 @@
     "sim-xia/dsh-vscode-theme": {
       "owner": "Sim-xia",
       "createdAt": "2026-08-15T08:00:06Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-29": {
           "commits": 0,
@@ -7517,7 +9854,6 @@
     "skadi-0510/sakura-snow": {
       "owner": "skadi-0510",
       "createdAt": "2026-08-15T10:30:33Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7531,7 +9867,6 @@
     "skillynotfound/dsh-theme-endfield-re": {
       "owner": "SkillyNotFound",
       "createdAt": "2026-10-04T06:57:00Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-05": {
           "commits": 13,
@@ -7561,7 +9896,6 @@
     "skymecode/dsh-deep-diving": {
       "owner": "skymecode",
       "createdAt": "2026-08-20T14:11:19Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7575,7 +9909,6 @@
     "slymaster/dsh-theme-lab": {
       "owner": "Slymaster",
       "createdAt": "2026-08-24T04:28:34Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7589,7 +9922,6 @@
     "small-tailqwq/dsh-deep-whale": {
       "owner": "Small-tailqwq",
       "createdAt": "2026-08-13T13:02:14Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 7,
@@ -7895,21 +10227,25 @@
           "commits": 0,
           "pulls": 1,
           "issues": 1
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 439,
         "pulls": 26,
-        "issues": 102
+        "issues": 103
       },
       "forks": 88,
       "watchers": 3,
-      "truncated": false
+      "truncated": true
     },
     "small-tailqwq/dsh-deepcel": {
       "owner": "Small-tailqwq",
       "createdAt": "2026-08-13T13:02:02Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-07": {
           "commits": 4,
@@ -7939,7 +10275,6 @@
     "smdk000/dsh-skin-family": {
       "owner": "smdk000",
       "createdAt": "2026-08-19T14:25:03Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 6,
@@ -7959,7 +10294,6 @@
     "smith-yue/harness-plugin": {
       "owner": "Smith-yue",
       "createdAt": "2026-08-23T13:22:47Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7973,7 +10307,6 @@
     "snowinkk/dsh-web-skin": {
       "owner": "SnoWinKK",
       "createdAt": "2026-08-16T20:03:14Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7987,7 +10320,6 @@
     "soarguo/dsh-skin-lab": {
       "owner": "soarGuo",
       "createdAt": "2026-08-25T08:57:45Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-27": {
           "commits": 1,
@@ -8007,7 +10339,45 @@
     "sodazilla-zzz/dsh-tide-ui": {
       "owner": "SoDaZilla-zzz",
       "createdAt": "2026-08-17T00:56:53Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "sorry123maker/dsh-salary-cat": {
+      "owner": "sorry123maker",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "sovero/dsh_plugins": {
+      "owner": "Sovero",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "spookywaste/dsh-ohjingjing-team": {
+      "owner": "SpookyWaste",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -8021,7 +10391,6 @@
     "starryhui/dsh-custom-background": {
       "owner": "StarryHui",
       "createdAt": "2026-08-19T02:22:23Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 5,
@@ -8046,7 +10415,6 @@
     "starslittle/dsh-blue-whale": {
       "owner": "starslittle",
       "createdAt": "2026-08-14T17:22:52Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 1,
@@ -8078,10 +10446,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "stellum-waq/dsh-pet-ronaldo": {
+      "owner": "Stellum-Waq",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "sundusk/dsh-yu-pet": {
+      "owner": "sundusk",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "superls-x/dsh-minecraft-theme": {
       "owner": "SuperLS-X",
       "createdAt": "2026-08-19T07:46:29Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-20": {
           "commits": 3,
@@ -8106,7 +10499,6 @@
     "sutera-diffusus/dsh-whale-musume": {
       "owner": "Sutera-Diffusus",
       "createdAt": "2026-08-15T16:24:33Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-09": {
           "commits": 0,
@@ -8247,11 +10639,16 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 61,
-        "pulls": 3,
+        "pulls": 4,
         "issues": 10
       },
       "forks": 12,
@@ -8261,7 +10658,6 @@
     "suzike/freestyle-dsh-theme": {
       "owner": "suzike",
       "createdAt": "2026-08-14T04:44:15Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-20": {
           "commits": 10,
@@ -8286,7 +10682,6 @@
     "sweetcandy-gift/dsh-beige-theme": {
       "owner": "SweetCandy-gift",
       "createdAt": "2026-08-16T17:11:38Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -8300,7 +10695,6 @@
     "swordordead/dsh-veneer": {
       "owner": "swordordead",
       "createdAt": "2026-08-18T10:45:30Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-21": {
           "commits": 1,
@@ -8320,7 +10714,6 @@
     "syopv/dsh-theme-background-center": {
       "owner": "syOPV",
       "createdAt": "2026-08-14T16:38:07Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -8334,7 +10727,6 @@
     "sz1698/dsh-bg-new": {
       "owner": "sz1698",
       "createdAt": "2026-09-11T03:44:42Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -8348,7 +10740,6 @@
     "taiyakioffical/claude-style-skin": {
       "owner": "TaiyakiOffical",
       "createdAt": "2026-08-21T18:42:11Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -8362,7 +10753,6 @@
     "taoser258/dsh-client-ui-skin-qingxiao": {
       "owner": "taoser258",
       "createdAt": "2026-08-29T07:13:34Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-01": {
           "commits": 5,
@@ -8394,10 +10784,48 @@
       "watchers": 0,
       "truncated": false
     },
+    "tenebris173/dsh-skin-abyssal": {
+      "owner": "tenebris173",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "tenebris173/dsh-skin-prts": {
+      "owner": "tenebris173",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "tenebris173/dsh-skin-strata": {
+      "owner": "tenebris173",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "tfboy1/dsh-minecraft-ui": {
       "owner": "TFboy1",
       "createdAt": "2026-08-18T11:49:51Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 6,
@@ -8417,7 +10845,6 @@
     "thjyy/dph-endfield-theme": {
       "owner": "thjyy",
       "createdAt": "2026-08-15T16:29:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 0,
@@ -8447,7 +10874,6 @@
     "tiantyu/dsh-skin-toggle": {
       "owner": "tiantyu",
       "createdAt": "2026-08-15T13:15:48Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-17": {
           "commits": 10,
@@ -8464,10 +10890,41 @@
       "watchers": 0,
       "truncated": false
     },
+    "tinynian/dsh-harness-os": {
+      "owner": "TinyNian",
+      "createdAt": null,
+      "daily": {
+        "2026-10-27": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 1
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "tobewin/dsh-pet-companion": {
+      "owner": "ToBeWin",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "tommy00748/dsh-theme-cyberpunk2077": {
       "owner": "Tommy00748",
       "createdAt": "2026-08-14T23:59:13Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 1,
@@ -8514,10 +10971,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "tonyous/dsh-amp-radio": {
+      "owner": "tonyous",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "tpmoonchefryan/dsh-joi-channel-theme": {
       "owner": "tpmoonchefryan",
       "createdAt": "2026-08-16T06:18:19Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 8,
@@ -8587,7 +11056,6 @@
     "tqsy114514/dsh-ui-appearance": {
       "owner": "TQSY114514",
       "createdAt": "2026-08-14T04:36:14Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 5,
@@ -8752,13 +11220,13 @@
         "2026-10-25": {
           "commits": 1,
           "pulls": 0,
-          "issues": 0
+          "issues": 1
         }
       },
       "totals": {
         "commits": 133,
         "pulls": 1,
-        "issues": 13
+        "issues": 14
       },
       "forks": 3,
       "watchers": 1,
@@ -8767,7 +11235,19 @@
     "trees163/dsh-customizations": {
       "owner": "trees163",
       "createdAt": "2026-08-18T17:35:36Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "tsonglew/dsh-media-preview": {
+      "owner": "tsonglew",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -8781,7 +11261,6 @@
     "tszmzz1026/dsh-epindel-boot-animation": {
       "owner": "tszmzz1026",
       "createdAt": "2026-10-19T11:08:53Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-23": {
           "commits": 4,
@@ -8801,7 +11280,6 @@
     "u1s1-king/dsh-gbc-ui": {
       "owner": "U1s1-king",
       "createdAt": "2026-08-15T11:49:57Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -8815,7 +11293,6 @@
     "univerfv/dsh-furina-theme": {
       "owner": "UniverFV",
       "createdAt": "2026-08-21T10:35:11Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 8,
@@ -8835,7 +11312,97 @@
     "unpain/dsh-skin-mari": {
       "owner": "unpain",
       "createdAt": "2026-08-17T04:44:34Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "upstream196/dsh-label-tune": {
+      "owner": "Upstream196",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "v587d/dsh-custom-skin": {
+      "owner": "v587d",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "vb2250158/dsh-theme-blue": {
+      "owner": "vb2250158",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "vegetable-kun/dsh_plugin_taffy": {
+      "owner": "vegetable-kun",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "verdana/dsh-nord": {
+      "owner": "verdana",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "vergil-long/dsh-custom-font": {
+      "owner": "Vergil-long",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "victor10035445/dsh-v-theme": {
+      "owner": "victor10035445",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -8849,7 +11416,6 @@
     "vlantech/dsh-glassic-mist-theme": {
       "owner": "VlanTech",
       "createdAt": "2026-08-15T08:43:11Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 4,
@@ -8866,10 +11432,41 @@
       "watchers": 0,
       "truncated": false
     },
+    "vlln/whale-girl": {
+      "owner": "vlln",
+      "createdAt": null,
+      "daily": {
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 3
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 3
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "vollegrewar/dsh-tool-highlight": {
       "owner": "vollegrewar",
       "createdAt": "2026-08-31T12:29:53Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "waldsatte/dsh-theme-taojian": {
+      "owner": "Waldsatte",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -8883,7 +11480,6 @@
     "wangxilhy23/dsh-wx-skin": {
       "owner": "wangxilhy23",
       "createdAt": "2026-08-14T12:44:57Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 1,
@@ -8920,10 +11516,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "wanxi123w/dsh-theme-theresa": {
+      "owner": "wanxi123w",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "wanzhiwei5/dsh-skin-amis": {
       "owner": "wanzhiwei5",
       "createdAt": "2026-08-14T09:54:26Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "wawo77/dsh-opencode-go-usage": {
+      "owner": "wawo77",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -8937,7 +11558,6 @@
     "webkubor/dsh-bloom-theme": {
       "owner": "webkubor",
       "createdAt": "2026-08-18T05:25:21Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 25,
@@ -9118,21 +11738,87 @@
           "commits": 2,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-27": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        },
+        "2026-10-29": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 216,
         "pulls": 3,
-        "issues": 13
+        "issues": 16
       },
       "forks": 3,
+      "watchers": 0,
+      "truncated": false
+    },
+    "wei125775-lab/whalegirl-deskpet": {
+      "owner": "wei125775-lab",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "weibaohui/dsh-ambient": {
+      "owner": "weibaohui",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "weibaohui/dsh-matrix": {
+      "owner": "weibaohui",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
       "watchers": 0,
       "truncated": false
     },
     "weichi-ai/dshd": {
       "owner": "weichi-ai",
       "createdAt": "2026-08-16T16:21:39Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "weijunliang23/dsh-stzb": {
+      "owner": "weijunliang23",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9146,7 +11832,6 @@
     "wensincai/dsh-skin-rotator": {
       "owner": "wensincai",
       "createdAt": "2026-08-19T03:49:18Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 6,
@@ -9168,10 +11853,74 @@
       "watchers": 0,
       "truncated": false
     },
+    "wilsonchengassistant/dsh-media-web-preview": {
+      "owner": "wilsonchengassistant",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "win-hao/seek-on-dsh": {
+      "owner": "Win-Hao",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "winditer/dsh-temp-chat": {
+      "owner": "winditer",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "witherwithwinter/dsh-ccx": {
+      "owner": "Witherwithwinter",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "wolfgenerals/ncm-player": {
       "owner": "WolfGenerals",
       "createdAt": "2026-08-14T18:17:34Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "wupup/dsh-custom-style": {
+      "owner": "wupup",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9185,7 +11934,6 @@
     "wuwl-98/dsh-theme-paper": {
       "owner": "WuWL-98",
       "createdAt": "2026-08-15T08:55:29Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-19": {
           "commits": 0,
@@ -9205,7 +11953,6 @@
     "wuzhong962-alt/dsh-matrix-theme": {
       "owner": "wuzhong962-alt",
       "createdAt": "2026-08-15T05:23:37Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9219,7 +11966,6 @@
     "wwxiaoqi/ui-theme-quota-show": {
       "owner": "wwxiaoqi",
       "createdAt": "2026-08-15T06:06:08Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9233,7 +11979,6 @@
     "wxj783428795/dsh-plugins": {
       "owner": "wxj783428795",
       "createdAt": "2026-09-04T05:18:28Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9247,7 +11992,6 @@
     "wyh66666666/dsh-transparent-ui-plugin": {
       "owner": "WYH66666666",
       "createdAt": "2026-08-14T14:10:42Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 9,
@@ -9348,12 +12092,22 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-10-26": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        },
+        "2026-10-29": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 25,
         "pulls": 8,
-        "issues": 23
+        "issues": 25
       },
       "forks": 26,
       "watchers": 1,
@@ -9362,7 +12116,6 @@
     "x9wd09ncc/dsh-x9-theme": {
       "owner": "X9wd09ncc",
       "createdAt": "2026-08-15T07:26:15Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 1,
@@ -9379,10 +12132,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "xchannel1987/dsh-mobile-xc": {
+      "owner": "xchannel1987",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "xi-kari/dsh-amphoreus": {
       "owner": "xi-kari",
       "createdAt": "2026-09-05T03:21:36Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-20": {
           "commits": 1,
@@ -9422,7 +12187,6 @@
     "xiake595/touhou-hakurei": {
       "owner": "xiake595",
       "createdAt": "2026-08-14T09:14:50Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-13": {
           "commits": 2,
@@ -9439,10 +12203,74 @@
       "watchers": 0,
       "truncated": false
     },
+    "xiao000xue/dsh-music-local": {
+      "owner": "xiao000xue",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "xiaokaizhou/dsh-media-preview": {
+      "owner": "xiaokaizhou",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "xiaoke8698/dsh-lego-plugin": {
       "owner": "XIAOke8698",
       "createdAt": "2026-08-23T13:16:34Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "xiaoluofoxington/dsh-theme-hacker-terminal": {
+      "owner": "XiaoluoFoxington",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "xiaoqiezi-china/dsh-music-player": {
+      "owner": "xiaoqiezi-china",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "xiaotuchu/dsh-theme-eye-care": {
+      "owner": "xiaotuchu",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9456,7 +12284,6 @@
     "xiaoyanzi191/dsh-premium-themes": {
       "owner": "xiaoyanzi191",
       "createdAt": "2026-08-15T08:58:48Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 1,
@@ -9476,7 +12303,6 @@
     "xiaoyuxixi333/whale-fantasy": {
       "owner": "xiaoyuxixi333",
       "createdAt": "2026-10-23T08:14:30Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9487,10 +12313,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "xiekai886/dsh-musicplayer": {
+      "owner": "xiekai886",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "xingyingyuzhui/dsh-liquid-glass": {
       "owner": "xingyingyuzhui",
       "createdAt": "2026-08-15T06:13:24Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 0,
@@ -9530,7 +12368,6 @@
     "xjg12345/deepseek-harness-bocchi-ui": {
       "owner": "xjg12345",
       "createdAt": "2026-08-16T11:34:32Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9544,7 +12381,32 @@
     "xkxkiscoder/dsh-ui-zzz-sunna": {
       "owner": "xkxkiscoder",
       "createdAt": "2026-09-10T01:41:56Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "xmnathan/dsh-skin-galactic-opera": {
+      "owner": "xmnathan",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "xuelin632/dsh-aris-glass": {
+      "owner": "xuelin632",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9558,7 +12420,6 @@
     "xwh5/dsh-change-review": {
       "owner": "xwh5",
       "createdAt": "2026-08-19T03:29:47Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-09": {
           "commits": 3,
@@ -9578,7 +12439,6 @@
     "xxxrickymorty-dev/dsh-rick": {
       "owner": "xxxrickymorty-dev",
       "createdAt": "2026-08-17T03:04:46Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-14": {
           "commits": 1,
@@ -9595,10 +12455,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "yaanlaan/deepseek-colorful": {
+      "owner": "yaanlaan",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yannicksong0106/dsh-550c-boot": {
+      "owner": "yannicksong0106",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "yannicksong0106/dsh-550c-skin": {
       "owner": "yannicksong0106",
       "createdAt": "2026-10-16T07:12:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-22": {
           "commits": 2,
@@ -9614,21 +12499,44 @@
           "commits": 2,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 6,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 1,
       "truncated": false
     },
+    "yanzwzz/dsh-whale-girl-pet": {
+      "owner": "yanzwzz",
+      "createdAt": null,
+      "daily": {
+        "2026-10-26": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 1,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "yasneg616/marathon-like-deepseek-harness-skin": {
       "owner": "yasneg616",
       "createdAt": "2026-10-06T12:40:32Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-23": {
           "commits": 2,
@@ -9644,12 +12552,22 @@
           "commits": 1,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        },
+        "2026-10-29": {
+          "commits": 0,
+          "pulls": 2,
+          "issues": 4
         }
       },
       "totals": {
         "commits": 8,
-        "pulls": 0,
-        "issues": 0
+        "pulls": 2,
+        "issues": 5
       },
       "forks": 0,
       "watchers": 0,
@@ -9658,7 +12576,45 @@
     "ycqaq233/dsh-unknown-theme": {
       "owner": "ycqaq233",
       "createdAt": "2026-08-16T17:21:57Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yefengliu1/dsh-theme-songgrid": {
+      "owner": "yefengliu1",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yesang0924-beep/dsh-glass-skin": {
+      "owner": "yesang0924-beep",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yezitotempeace/dsh-chat-background": {
+      "owner": "yezitotempeace",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -9672,7 +12628,6 @@
     "yhprime/dsh-theme-picker": {
       "owner": "yhPrime",
       "createdAt": "2026-08-16T17:14:58Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-25": {
           "commits": 5,
@@ -9699,10 +12654,48 @@
       "watchers": 0,
       "truncated": false
     },
+    "yicun0316/dsh-claude-slider": {
+      "owner": "yicun0316",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yinhefuluoye/dsh-glass-effect": {
+      "owner": "Yinhefuluoye",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yinxe/dsh-custom-ui": {
+      "owner": "Yinxe",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "ylifeonlyonce/dsh-calendar": {
       "owner": "YLifeOnlyOnce",
       "createdAt": "2026-08-20T07:16:48Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-20": {
           "commits": 47,
@@ -9727,7 +12720,6 @@
     "ymh0000123/dsh-theme-endfield": {
       "owner": "ymh0000123",
       "createdAt": "2026-08-15T11:41:43Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 2,
@@ -9908,11 +12900,16 @@
           "commits": 2,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-27": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 122,
-        "pulls": 15,
+        "pulls": 16,
         "issues": 17
       },
       "forks": 9,
@@ -9922,7 +12919,6 @@
     "yoimiya-lover-0621-01/himeko-starry-night": {
       "owner": "Yoimiya-Lover-0621-01",
       "createdAt": "2026-10-21T23:46:14Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-22": {
           "commits": 15,
@@ -9952,7 +12948,6 @@
     "yoli-mi/dsh-client-ui-custom": {
       "owner": "yoli-mi",
       "createdAt": "2026-08-15T09:38:02Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 15,
@@ -10012,7 +13007,71 @@
     "youyli03/dsh-palenight-theme": {
       "owner": "youyli03",
       "createdAt": "2026-08-15T11:11:48Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yrracowl/dsh-theme-acid-noir": {
+      "owner": "YrracOwl",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yrracowl/dsh-theme-cutout-clash": {
+      "owner": "YrracOwl",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yrsxy/dsh-warm-theme": {
+      "owner": "yrsxy",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yuanlang3/dsh-netease-music-plugin": {
+      "owner": "Yuanlang3",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yuanyihy/deepseek-media-gallery": {
+      "owner": "yuanyiHY",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -10026,7 +13085,6 @@
     "yudaxia1/one-dark-pro-dsh-plugin": {
       "owner": "yudaxia1",
       "createdAt": "2026-08-30T10:27:03Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-16": {
           "commits": 1,
@@ -10043,10 +13101,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "yuluoy/dsh-kujira": {
+      "owner": "YuluoY",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "yummyxl/dsh-eyecare": {
       "owner": "Yummyxl",
       "createdAt": "2026-08-14T05:23:28Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -10060,7 +13130,19 @@
     "yunfei07/dsh-song-ui": {
       "owner": "yunfei07",
       "createdAt": "2026-08-14T13:43:44Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "yunshu-iii/dsh-wallpaper-theme": {
+      "owner": "yunshu-iii",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -10074,7 +13156,6 @@
     "yunxiiqwq/dsh-maid-whale-webui": {
       "owner": "yunxiiQwQ",
       "createdAt": "2026-08-15T04:52:10Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 1,
@@ -10164,7 +13245,6 @@
     "yuqisun/dsh-theme-machine": {
       "owner": "yuqisun",
       "createdAt": "2026-08-16T06:12:41Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 7,
@@ -10189,7 +13269,6 @@
     "yushi-xxh/dsh-homepage-skin": {
       "owner": "yushi-xxh",
       "createdAt": "2026-08-15T14:45:24Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-04": {
           "commits": 3,
@@ -10209,7 +13288,6 @@
     "yuuhann1999/dsh-bloub-mood": {
       "owner": "Yuuhann1999",
       "createdAt": "2026-08-18T05:41:31Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-20": {
           "commits": 7,
@@ -10236,10 +13314,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "yuyu276/dsh-blue-whale-balance": {
+      "owner": "YUYU276",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "ywleeo/dsh-image-preview": {
+      "owner": "ywleeo",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "yyyyyylor/dsh-asuka-school-theme": {
       "owner": "Yyyyyylor",
       "createdAt": "2026-08-25T10:28:20Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-12": {
           "commits": 3,
@@ -10309,7 +13412,6 @@
     "yzke/dsh-icon-theme": {
       "owner": "yzke",
       "createdAt": "2026-08-16T20:19:12Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 16,
@@ -10339,7 +13441,6 @@
     "zaimokuza-yoshiteru/dsh-theme-library": {
       "owner": "zaimokuza-yoshiteru",
       "createdAt": "2026-08-20T18:23:11Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-01": {
           "commits": 2,
@@ -10369,7 +13470,6 @@
     "zalpha263/dsh-ui-beautify": {
       "owner": "Zalpha263",
       "createdAt": "2026-08-14T09:51:06Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-02": {
           "commits": 1,
@@ -10426,10 +13526,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "zampie/sakura-afternoon-skin": {
+      "owner": "zampie",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "zanechen6/dsh-assistant-skin": {
+      "owner": "zanechen6",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "zavang/dsh-diorama": {
       "owner": "ZaVang",
       "createdAt": "2026-08-17T07:47:35Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -10443,7 +13568,6 @@
     "zealot00/dsh-pet": {
       "owner": "zealot00",
       "createdAt": "2026-08-14T07:43:22Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 0,
@@ -10460,10 +13584,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "zeheng723/dsh-medic-pet": {
+      "owner": "zeheng723",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "zemul/dsh-video-preview": {
+      "owner": "zemul",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "zenghuizhu69-hub/dsh-skin-blue-whale": {
       "owner": "zenghuizhu69-hub",
       "createdAt": "2026-08-14T18:04:24Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -10477,7 +13626,6 @@
     "zhang66633/dsh-pixel-ui": {
       "owner": "zhang66633",
       "createdAt": "2026-08-14T13:30:20Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-01": {
           "commits": 9,
@@ -10507,7 +13655,6 @@
     "zhang9628/qixi-plugin": {
       "owner": "Zhang9628",
       "createdAt": "2026-08-19T08:48:16Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -10521,7 +13668,6 @@
     "zhangyuzhangyu233/dsh-angelsanddemon-fatesumphony-skin": {
       "owner": "zhangyuzhangyu233",
       "createdAt": "2026-08-16T11:52:53Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 2,
@@ -10548,10 +13694,35 @@
       "watchers": 0,
       "truncated": false
     },
+    "zhangyuzhangyu233/dsh-rgb-input-glow": {
+      "owner": "zhangyuzhangyu233",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "zhaoziyangshaanxi/dsh-netease-music": {
+      "owner": "ZhaoZiyangShaanxi",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "zhijun-dai/catppuccin-dsh-theme": {
       "owner": "zhijun-dai",
       "createdAt": "2026-08-14T14:16:46Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 13,
@@ -10626,7 +13797,6 @@
     "zhijun-dai/dsh-fonts": {
       "owner": "zhijun-dai",
       "createdAt": "2026-08-15T04:42:57Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-09-26": {
           "commits": 1,
@@ -10646,7 +13816,6 @@
     "zhijun-dai/solarized-dsh-theme": {
       "owner": "zhijun-dai",
       "createdAt": "2026-08-14T13:12:45Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-28": {
           "commits": 4,
@@ -10693,10 +13862,22 @@
       "watchers": 0,
       "truncated": false
     },
+    "zhongjiadeng-cmd/dsh-codex-appearance": {
+      "owner": "zhongjiadeng-cmd",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "zhoucourier/dsh-theme-whalegirl": {
       "owner": "ZHOUcourier",
       "createdAt": "2026-08-22T15:16:39Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-23": {
           "commits": 1,
@@ -10731,7 +13912,6 @@
     "zhxqc/dsh-oh-my-theme": {
       "owner": "zhxqc",
       "createdAt": "2026-08-15T07:22:05Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 12,
@@ -10766,7 +13946,6 @@
     "zjuzhiyucai/dsh-ivory": {
       "owner": "ZJUZhiyuCai",
       "createdAt": "2026-08-16T10:05:32Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-16": {
           "commits": 16,
@@ -10851,27 +14030,43 @@
     "zkforge/dsh-claude-desktop-theme": {
       "owner": "zkforge",
       "createdAt": "2026-10-01T10:25:17Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-10-22": {
           "commits": 2,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-10-28": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 2,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 1,
       "truncated": false
     },
+    "zmm863-commits/dsh-client-ui-paopaocat": {
+      "owner": "zmm863-commits",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "znnvsnoou/dsh-skin-tlipoca": {
       "owner": "znnVSNOOU",
       "createdAt": "2026-08-21T12:55:18Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-21": {
           "commits": 2,
@@ -10891,7 +14086,6 @@
     "zrtbdss/dsh-anime-skins": {
       "owner": "ZRTBdSS",
       "createdAt": "2026-08-16T18:50:33Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {
         "2026-08-18": {
           "commits": 3,
@@ -10916,7 +14110,6 @@
     "zsyayo112/dsh-rick-and-morty": {
       "owner": "zsyayo112",
       "createdAt": "2026-08-16T16:44:46Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
       "daily": {},
       "totals": {
         "commits": 0,
@@ -10930,7 +14123,19 @@
     "ztutz/dsh-plugins": {
       "owner": "ZTuTZ",
       "createdAt": "2026-08-13T16:38:21Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "zuoyunlai/dsh-theme-palette": {
+      "owner": "zuoyunlai",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -10944,7 +14149,19 @@
     "zutomayoo/totothecat": {
       "owner": "ZutoMayoo",
       "createdAt": "2026-08-20T07:13:20Z",
-      "fetchedAt": "2026-10-25T14:23:07.995Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "zys2026/dsh-theme-tide": {
+      "owner": "zys2026",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,

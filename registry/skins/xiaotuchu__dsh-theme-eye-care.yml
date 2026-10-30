@@ -24,10 +24,6 @@ compatibility:
   dsh: 0.2.0-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/home.png
-  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/conversation.png
-  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/settings.png
 screenshots:
   - https://raw.githubusercontent.com/xiaotuchu/dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/preview.png
 listScreenshot: https://raw.githubusercontent.com/xiaotuchu/dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/preview.png
@@ -56,9 +52,13 @@ health:
 license:
   code: MIT AND CC-BY-NC-4.0
   commercialUse: false
-featuredRank: 996
 starsSnapshot: 4
+marketScreenshots:
+  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/home.png
+  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/conversation.png
+  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/settings.png
+featuredRank: 996
 releaseUpdatedAt: 2026-10-30T03:53:39.669Z
-metadataUpdatedAt: 2026-10-30T03:53:39.669Z
+metadataUpdatedAt: 2026-10-30T04:54:31.652Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T03:53:39.669Z
+updatedAt: 2026-10-30T04:54:31.652Z

@@ -23,10 +23,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/home.png
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/conversation.png
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/settings.png
 screenshots:
   - https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png
 listScreenshot: https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 944
 starsSnapshot: 78
+marketScreenshots:
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/home.png
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/conversation.png
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/settings.png
+featuredRank: 944
 releaseUpdatedAt: 2026-10-30T03:53:23.043Z
-metadataUpdatedAt: 2026-10-30T03:53:23.043Z
+metadataUpdatedAt: 2026-10-30T04:54:31.652Z
 starsUpdatedAt: 2026-10-30T03:53:23.043Z
-updatedAt: 2026-10-30T03:53:23.043Z
+updatedAt: 2026-10-30T04:54:31.652Z

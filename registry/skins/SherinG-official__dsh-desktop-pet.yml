@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/SherinG-official__dsh-desktop-pet/41b7cc8a3991608d6f8f4199d22469b8c6417ce0/home.png
-  - skin-screenshots/SherinG-official__dsh-desktop-pet/41b7cc8a3991608d6f8f4199d22469b8c6417ce0/conversation.png
-  - skin-screenshots/SherinG-official__dsh-desktop-pet/41b7cc8a3991608d6f8f4199d22469b8c6417ce0/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -58,9 +54,13 @@ license:
   code: MIT
   commercialUse: true
   notice: 根项目MIT；pet子树另适用Apache-2.0，须保留pet/LICENSE。
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/SherinG-official__dsh-desktop-pet/41b7cc8a3991608d6f8f4199d22469b8c6417ce0/home.png
+  - skin-screenshots/SherinG-official__dsh-desktop-pet/41b7cc8a3991608d6f8f4199d22469b8c6417ce0/conversation.png
+  - skin-screenshots/SherinG-official__dsh-desktop-pet/41b7cc8a3991608d6f8f4199d22469b8c6417ce0/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-30T03:54:22.254Z
-metadataUpdatedAt: 2026-10-30T03:54:22.254Z
+metadataUpdatedAt: 2026-10-30T04:54:31.652Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T03:54:22.254Z
+updatedAt: 2026-10-30T04:54:31.652Z

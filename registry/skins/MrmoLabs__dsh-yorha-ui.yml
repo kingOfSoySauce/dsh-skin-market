@@ -33,10 +33,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/MrmoLabs__dsh-yorha-ui/6497a671620d101951c2e68dbb6c2084b55db40e/home.png
-  - skin-screenshots/MrmoLabs__dsh-yorha-ui/6497a671620d101951c2e68dbb6c2084b55db40e/conversation.png
-  - skin-screenshots/MrmoLabs__dsh-yorha-ui/6497a671620d101951c2e68dbb6c2084b55db40e/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -64,9 +60,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 997
 starsSnapshot: 3
+marketScreenshots:
+  - skin-screenshots/MrmoLabs__dsh-yorha-ui/6497a671620d101951c2e68dbb6c2084b55db40e/home.png
+  - skin-screenshots/MrmoLabs__dsh-yorha-ui/6497a671620d101951c2e68dbb6c2084b55db40e/conversation.png
+  - skin-screenshots/MrmoLabs__dsh-yorha-ui/6497a671620d101951c2e68dbb6c2084b55db40e/settings.png
+featuredRank: 997
 releaseUpdatedAt: 2026-10-30T03:53:41.449Z
-metadataUpdatedAt: 2026-10-30T03:53:41.449Z
+metadataUpdatedAt: 2026-10-30T04:54:31.652Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T03:53:41.449Z
+updatedAt: 2026-10-30T04:54:31.652Z

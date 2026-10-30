@@ -25,10 +25,6 @@ compatibility:
   dsh: 0.2.0-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/home.png
-  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/conversation.png
-  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/settings.png
 screenshots:
   - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/assets/five-themes.png
   - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/assets/warm-tone-compare.png
@@ -60,9 +56,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/home.png
+  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/conversation.png
+  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-30T03:54:07.219Z
-metadataUpdatedAt: 2026-10-30T03:54:07.219Z
+metadataUpdatedAt: 2026-10-30T04:54:31.652Z
 starsUpdatedAt: 2026-10-30T03:54:07.219Z
-updatedAt: 2026-10-30T03:54:07.219Z
+updatedAt: 2026-10-30T04:54:31.652Z

@@ -36,10 +36,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/home.png
-  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/conversation.png
-  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/settings.png
 screenshots:
   - https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif
   - https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.png
@@ -70,9 +66,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1035
 starsSnapshot: 21
+marketScreenshots:
+  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/home.png
+  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/conversation.png
+  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/settings.png
+featuredRank: 1035
 releaseUpdatedAt: 2026-10-30T03:53:28.527Z
-metadataUpdatedAt: 2026-10-30T03:53:28.527Z
+metadataUpdatedAt: 2026-10-30T04:54:31.652Z
 starsUpdatedAt: 2026-10-30T03:53:28.527Z
-updatedAt: 2026-10-30T03:53:28.527Z
+updatedAt: 2026-10-30T04:54:31.652Z

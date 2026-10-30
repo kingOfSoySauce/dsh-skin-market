@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:yunxiiQwQ/dsh-maid-whale-webUI#34c09d7bfbed9b36b3b23f1f72a733ed310265cd&path:/maid-whale-webui
+  target: github:yunxiiQwQ/dsh-maid-whale-webUI#1678a1640a21705ca5f3520e2a81892e4616bd33&path:/maid-whale-webui
   version: 0.1.1
-  commit: 34c09d7bfbed9b36b3b23f1f72a733ed310265cd
+  commit: 1678a1640a21705ca5f3520e2a81892e4616bd33
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -53,19 +53,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 34c09d7bfbed9b36b3b23f1f72a733ed310265cd
+    commit: 1678a1640a21705ca5f3520e2a81892e4616bd33
     packageVersion: 0.1.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-02T10:29:19.175Z
+    checkedAt: 2026-10-30T04:54:32.970Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 22
 starsSnapshot: 47
-releaseUpdatedAt: 2026-10-02T10:29:22.220Z
-metadataUpdatedAt: 2026-10-02T10:29:22.220Z
+releaseUpdatedAt: 2026-10-30T04:54:34.766Z
+metadataUpdatedAt: 2026-10-30T04:54:34.766Z
 starsUpdatedAt: 2026-10-30T03:53:24.691Z
-updatedAt: 2026-10-30T03:53:24.691Z
+updatedAt: 2026-10-30T04:54:34.766Z
