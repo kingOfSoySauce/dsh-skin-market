@@ -26,10 +26,6 @@ compatibility:
   dsh: ">=0.1.7"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Miasakiii__dsh-miasaki--dsh-miasaki-appearance/10373dceaed6481ae446f358b31b70575cb8304d/home.png
-  - skin-screenshots/Miasakiii__dsh-miasaki--dsh-miasaki-appearance/10373dceaed6481ae446f358b31b70575cb8304d/conversation.png
-  - skin-screenshots/Miasakiii__dsh-miasaki--dsh-miasaki-appearance/10373dceaed6481ae446f358b31b70575cb8304d/settings.png
 screenshots:
   - https://raw.githubusercontent.com/Miasakiii/dsh-miasaki/bb09c8ca116d515329070e9b7b73576eca28305f/docs/assets/banner.png
   - https://raw.githubusercontent.com/Miasakiii/dsh-miasaki/bb09c8ca116d515329070e9b7b73576eca28305f/docs/assets/canvas-board.png
@@ -61,9 +57,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 999
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/Miasakiii__dsh-miasaki--dsh-miasaki-appearance/10373dceaed6481ae446f358b31b70575cb8304d/home.png
+  - skin-screenshots/Miasakiii__dsh-miasaki--dsh-miasaki-appearance/10373dceaed6481ae446f358b31b70575cb8304d/conversation.png
+  - skin-screenshots/Miasakiii__dsh-miasaki--dsh-miasaki-appearance/10373dceaed6481ae446f358b31b70575cb8304d/settings.png
+featuredRank: 999
 releaseUpdatedAt: 2026-10-27T23:01:16.861Z
-metadataUpdatedAt: 2026-10-27T23:01:16.861Z
+metadataUpdatedAt: 2026-10-30T03:53:15.825Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-27T23:01:16.861Z
+updatedAt: 2026-10-30T03:53:15.825Z

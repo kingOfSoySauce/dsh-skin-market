@@ -14,21 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:weibaohui/dsh-matrix#708112dad6d997b7259e3a2df2a20ed7ae3aa965
-  version: 0.7.0
-  commit: 708112dad6d997b7259e3a2df2a20ed7ae3aa965
+  target: github:weibaohui/dsh-matrix#a8bba88fb0a0e2a62e71ec34957200983c6de610
+  version: 0.7.1
+  commit: a8bba88fb0a0e2a62e71ec34957200983c6de610
   desktop:
     mode: managed
     registry: npm
     packageName: "@weibaohui/dsh-matrix"
-    packageVersion: 0.7.0
-    integrity: sha512-+tpgbArPmre2OBATc/4pi9AHWxdpCfAfxRJwm3OSX/LmFtnu2c0FH5/G5tYOqKtWvJiDXU6Mjn6UAozNYR5Z6w==
+    packageVersion: 0.7.1
+    integrity: sha512-G6EF6LoEZ9ESkn1I/kvx3tGH1+qXu7j6qES5ckDpG7x5wv6xtleXcU25LbIx6aJS0VoDYsShcslA4ZC4/vaBbQ==
   npm:
     name: "@weibaohui/dsh-matrix"
-    version: 0.7.0
-    integrity: sha512-+tpgbArPmre2OBATc/4pi9AHWxdpCfAfxRJwm3OSX/LmFtnu2c0FH5/G5tYOqKtWvJiDXU6Mjn6UAozNYR5Z6w==
+    version: 0.7.1
+    integrity: sha512-G6EF6LoEZ9ESkn1I/kvx3tGH1+qXu7j6qES5ckDpG7x5wv6xtleXcU25LbIx6aJS0VoDYsShcslA4ZC4/vaBbQ==
     repository: https://github.com/weibaohui/dsh-matrix
-    gitHead: 708112dad6d997b7259e3a2df2a20ed7ae3aa965
+    gitHead: a8bba88fb0a0e2a62e71ec34957200983c6de610
 compatibility:
   dsh: ">=0.1.7-rc.2"
   platform:
@@ -44,23 +44,26 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 708112dad6d997b7259e3a2df2a20ed7ae3aa965
-    packageVersion: 0.7.0
+    commit: a8bba88fb0a0e2a62e71ec34957200983c6de610
+    packageVersion: 0.7.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:34:03.484Z
+    checkedAt: 2026-10-30T03:54:25.064Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-30T03:54:26.721Z
+metadataUpdatedAt: 2026-10-30T03:54:26.721Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-10-30T03:54:26.721Z

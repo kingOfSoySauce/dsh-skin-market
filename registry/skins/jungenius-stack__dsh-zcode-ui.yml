@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:jungenius-stack/dsh-zcode-ui#3bcb60a6343012a0969772f5cbde58e7528d139f
-  version: 1.17.0
-  commit: 3bcb60a6343012a0969772f5cbde58e7528d139f
+  target: github:jungenius-stack/dsh-zcode-ui#6fde1746b2dbfa5eec83a1a0c4132d3f82d50011
+  version: 2.0.2
+  commit: 6fde1746b2dbfa5eec83a1a0c4132d3f82d50011
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -43,20 +43,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 3bcb60a6343012a0969772f5cbde58e7528d139f
-    packageVersion: 1.17.0
+    commit: 6fde1746b2dbfa5eec83a1a0c4132d3f82d50011
+    packageVersion: 2.0.2
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.2 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:08:34.405Z
+    checkedAt: 2026-10-30T03:53:45.457Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 1000
-releaseUpdatedAt: 2026-10-26T23:11:10.623Z
-metadataUpdatedAt: 2026-10-26T23:11:10.623Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-10-30T03:53:46.930Z
+metadataUpdatedAt: 2026-10-30T03:53:46.930Z
 starsUpdatedAt: 2026-10-19T01:34:05.465Z
-updatedAt: 2026-10-26T23:11:10.623Z
+updatedAt: 2026-10-30T03:53:46.930Z

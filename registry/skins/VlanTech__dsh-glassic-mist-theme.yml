@@ -31,7 +31,7 @@ screenshots:
   - skin-screenshots/VlanTech__dsh-glassic-mist-theme/af4e9c3967df0fbeeead25b4f1426e30382d1a90/home.gif
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -59,10 +59,9 @@ license:
 featuredRank: 123
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:35:10.390Z
-metadataUpdatedAt: 2026-08-23T05:35:10.390Z
+metadataUpdatedAt: 2026-10-30T03:54:23.888Z
 starsUpdatedAt: 2026-09-09T21:41:17.611Z
-updatedAt: 2026-09-09T21:41:17.611Z
-
+updatedAt: 2026-10-30T03:54:23.888Z
 marketScreenshots:
   - skin-screenshots/VlanTech__dsh-glassic-mist-theme/af4e9c3967df0fbeeead25b4f1426e30382d1a90/home.png
   - skin-screenshots/VlanTech__dsh-glassic-mist-theme/af4e9c3967df0fbeeead25b4f1426e30382d1a90/conversation.png

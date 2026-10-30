@@ -14,18 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:weibaohui/dsh-ambient#b36a96749c549ba1ac437aab923b69e989916f04
-  version: 0.1.2
-  commit: b36a96749c549ba1ac437aab923b69e989916f04
+  target: github:weibaohui/dsh-ambient#f56ef27e26c67826966a94cee4e65e547b563ccc
+  version: 0.1.3
+  commit: f56ef27e26c67826966a94cee4e65e547b563ccc
   desktop:
     mode: manual-only
     reason: npm-package-not-found
   npm:
     name: "@weibaohui/dsh-ambient"
-    version: 0.1.2
-    integrity: sha512-Enz7mmvjzTJGMrub6TVBCRd7m9IZHCGl16V/YDllIEWbQ/MFkK56jWwMwV1jV0KHJDJAlhBGDolsXZuT/Vnn/A==
+    version: 0.1.3
+    integrity: sha512-hNOwwx8G87AV8z8+De6oh4HdFc0bckYzjH6dS788D1ui+ozq5fSl2d6nClVihb+f8H97KJSPLuwomQtChiPi8A==
     repository: https://github.com/weibaohui/dsh-ambient
-    gitHead: b36a96749c549ba1ac437aab923b69e989916f04
+    gitHead: f56ef27e26c67826966a94cee4e65e547b563ccc
 compatibility:
   dsh: unverified
   platform:
@@ -50,12 +50,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: b36a96749c549ba1ac437aab923b69e989916f04
-    packageVersion: 0.1.2
+    commit: f56ef27e26c67826966a94cee4e65e547b563ccc
+    packageVersion: 0.1.3
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-10-27T23:01:36.658Z
+    checkedAt: 2026-10-30T03:54:24.889Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -64,7 +64,7 @@ license:
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-27T23:01:42.150Z
-metadataUpdatedAt: 2026-10-27T23:01:42.150Z
+releaseUpdatedAt: 2026-10-30T03:54:25.198Z
+metadataUpdatedAt: 2026-10-30T03:54:25.198Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:01:42.150Z
+updatedAt: 2026-10-30T03:54:25.198Z

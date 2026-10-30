@@ -14,13 +14,13 @@ modes:
   - light
   - dark
 install:
-  target: github:verdana/dsh-nord#93d86e3c3b85a96bb48f72dd42809af3db11d251
-  version: 0.4.1
-  commit: 93d86e3c3b85a96bb48f72dd42809af3db11d251
+  target: github:verdana/dsh-nord#ef5156731dd2b523cbc52d316ab3dc5e3b2a055f
+  version: 0.4.2
+  commit: ef5156731dd2b523cbc52d316ab3dc5e3b2a055f
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  allowBuild: dsh-nord@https://codeload.github.com/verdana/dsh-nord/tar.gz/93d86e3c3b85a96bb48f72dd42809af3db11d251
+  allowBuild: dsh-nord@https://codeload.github.com/verdana/dsh-nord/tar.gz/ef5156731dd2b523cbc52d316ab3dc5e3b2a055f
 compatibility:
   dsh: ">=0.1.7-0"
   platform:
@@ -47,15 +47,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.7-0 未被本次检测范围 0.2.1-rc.2 完全覆盖（固定版本 93d86e3c3b85a96bb48f72dd42809af3db11d251）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.7-0 未被本次检测范围 0.2.1-rc.4 完全覆盖（固定版本 ef5156731dd2b523cbc52d316ab3dc5e3b2a055f）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 93d86e3c3b85a96bb48f72dd42809af3db11d251
-    packageVersion: 0.4.1
+    commit: ef5156731dd2b523cbc52d316ab3dc5e3b2a055f
+    packageVersion: 0.4.2
     scannerVersion: static-v2
-    dshVersion: 0.2.1-rc.2
+    dshVersion: 0.2.1-rc.4
     mode: static
     result: unknown
-    checkedAt: 2026-10-26T01:53:16.829Z
+    checkedAt: 2026-10-30T03:54:23.996Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -64,7 +64,7 @@ license:
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:17.272Z
+releaseUpdatedAt: 2026-10-30T03:54:24.705Z
+metadataUpdatedAt: 2026-10-30T03:54:24.705Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:17.272Z
+updatedAt: 2026-10-30T03:54:24.705Z

@@ -28,7 +28,7 @@ screenshots:
   - skin-screenshots/ZhaoZiyangShaanxi__dsh-netease-music/42a34e8281c76baadc173e4f2b8f1f66fda6c870/home.gif
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -53,13 +53,12 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 0
-featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
-starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:00:28.784Z
-
 marketScreenshots:
   - skin-screenshots/ZhaoZiyangShaanxi__dsh-netease-music/42a34e8281c76baadc173e4f2b8f1f66fda6c870/home.png
   - skin-screenshots/ZhaoZiyangShaanxi__dsh-netease-music/42a34e8281c76baadc173e4f2b8f1f66fda6c870/conversation.png
   - skin-screenshots/ZhaoZiyangShaanxi__dsh-netease-music/42a34e8281c76baadc173e4f2b8f1f66fda6c870/settings.png
+featuredRank: 0
+releaseUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+starsUpdatedAt: 2026-10-27T05:10:00.000Z
+updatedAt: 2026-10-30T03:53:15.825Z

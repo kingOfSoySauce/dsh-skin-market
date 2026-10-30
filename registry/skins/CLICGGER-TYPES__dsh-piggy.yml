@@ -30,8 +30,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/CLICGGER-TYPES__dsh-piggy/52acd2684f4292c052f457f21fab9c1ec8eb8ca1/home.png
 screenshots:
   - https://raw.githubusercontent.com/CLICGGER-TYPES/dsh-piggy/dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c/assets/pigs/base/piglet/idle.png
   - https://raw.githubusercontent.com/CLICGGER-TYPES/dsh-piggy/dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c/docs/screenshots/readme-current-farm-big.png
@@ -63,9 +61,11 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 33
+marketScreenshots:
+  - skin-screenshots/CLICGGER-TYPES__dsh-piggy/52acd2684f4292c052f457f21fab9c1ec8eb8ca1/home.png
 featuredRank: 969
-starsSnapshot: 32
 releaseUpdatedAt: 2026-10-27T23:00:45.492Z
-metadataUpdatedAt: 2026-10-27T23:00:45.492Z
-starsUpdatedAt: 2026-10-26T23:11:10.623Z
-updatedAt: 2026-10-27T23:00:45.492Z
+metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+starsUpdatedAt: 2026-10-30T03:53:15.825Z
+updatedAt: 2026-10-30T03:53:15.825Z

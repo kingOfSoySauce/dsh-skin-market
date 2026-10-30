@@ -28,7 +28,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -55,10 +55,9 @@ license:
 featuredRank: 109
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:33:48.101Z
-metadataUpdatedAt: 2026-08-23T05:33:48.101Z
+metadataUpdatedAt: 2026-10-30T03:54:14.670Z
 starsUpdatedAt: 2026-09-09T21:40:58.167Z
-updatedAt: 2026-09-09T21:40:58.167Z
-
+updatedAt: 2026-10-30T03:54:14.670Z
 marketScreenshots:
   - skin-screenshots/Jayliu2025-vip__dsh-theme-huluwa/0ab3d4227105ebb20f9e8a5ffd951c38969089df/home.png
   - skin-screenshots/Jayliu2025-vip__dsh-theme-huluwa/0ab3d4227105ebb20f9e8a5ffd951c38969089df/conversation.png

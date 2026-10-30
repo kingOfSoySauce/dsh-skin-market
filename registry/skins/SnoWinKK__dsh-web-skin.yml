@@ -29,7 +29,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -56,10 +56,9 @@ license:
 featuredRank: 189
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:34:57.884Z
-metadataUpdatedAt: 2026-08-23T05:34:57.884Z
+metadataUpdatedAt: 2026-10-30T03:54:21.557Z
 starsUpdatedAt: 2026-09-09T21:41:10.933Z
-updatedAt: 2026-09-09T21:41:10.933Z
-
+updatedAt: 2026-10-30T03:54:21.557Z
 marketScreenshots:
   - skin-screenshots/SnoWinKK__dsh-web-skin/d5bbefba7668c51bd28b0d13a88593ffabfa4af3/home.png
   - skin-screenshots/SnoWinKK__dsh-web-skin/d5bbefba7668c51bd28b0d13a88593ffabfa4af3/conversation.png

@@ -27,7 +27,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -53,13 +53,12 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 0
-featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
-starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:00:28.784Z
-
 marketScreenshots:
   - skin-screenshots/LLYlab__DBS/8e3bdf82af7d180eecabe4065f675222b3f54b98/home.png
   - skin-screenshots/LLYlab__DBS/8e3bdf82af7d180eecabe4065f675222b3f54b98/conversation.png
   - skin-screenshots/LLYlab__DBS/8e3bdf82af7d180eecabe4065f675222b3f54b98/settings.png
+featuredRank: 0
+releaseUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+starsUpdatedAt: 2026-10-27T05:10:00.000Z
+updatedAt: 2026-10-30T03:53:15.825Z

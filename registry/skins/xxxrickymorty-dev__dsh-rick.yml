@@ -29,7 +29,7 @@ screenshots:
 listScreenshot: https://raw.githubusercontent.com/xxxrickymorty-dev/dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/docs/preview.png
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -56,10 +56,9 @@ license:
 featuredRank: 196
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-14T22:17:33.631Z
-metadataUpdatedAt: 2026-10-14T22:17:33.631Z
+metadataUpdatedAt: 2026-10-30T03:54:26.646Z
 starsUpdatedAt: 2026-08-18 15:46:32.876000+00:00
-updatedAt: 2026-10-14T22:17:33.631Z
-
+updatedAt: 2026-10-30T03:54:26.646Z
 marketScreenshots:
   - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/home.png
   - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/conversation.png

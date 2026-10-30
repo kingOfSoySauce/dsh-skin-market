@@ -32,7 +32,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -59,10 +59,9 @@ license:
 featuredRank: 82
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:31:41.020Z
-metadataUpdatedAt: 2026-08-23T05:31:41.020Z
+metadataUpdatedAt: 2026-10-30T03:53:55.461Z
 starsUpdatedAt: 2026-09-09T21:40:24.465Z
-updatedAt: 2026-09-09T21:40:24.465Z
-
+updatedAt: 2026-10-30T03:53:55.461Z
 marketScreenshots:
   - skin-screenshots/kongxiangyiren__dhs-theme-plugin/9e451e3a9eda86f62c8624d606a911e68a943b16/home.png
   - skin-screenshots/kongxiangyiren__dhs-theme-plugin/9e451e3a9eda86f62c8624d606a911e68a943b16/conversation.png

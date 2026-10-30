@@ -35,7 +35,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -62,10 +62,9 @@ license:
 featuredRank: 170
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:33:01.907Z
-metadataUpdatedAt: 2026-08-23T05:33:01.907Z
+metadataUpdatedAt: 2026-10-30T03:54:07.859Z
 starsUpdatedAt: 2026-09-18T21:39:09.704Z
-updatedAt: 2026-09-18T21:39:09.704Z
-
+updatedAt: 2026-10-30T03:54:07.859Z
 marketScreenshots:
   - skin-screenshots/BPZ0726__dsh-bestui/89902526c31a4e5690df97bcb5da8ffa6a4cac3f/home.png
   - skin-screenshots/BPZ0726__dsh-bestui/89902526c31a4e5690df97bcb5da8ffa6a4cac3f/conversation.png

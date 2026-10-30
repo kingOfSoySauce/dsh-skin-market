@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:nishuoyang/dsh-wallpaper-bg#65c6452b9dde055f68dfad504f243db45b9d84b0
-  version: 0.5.16
-  commit: 65c6452b9dde055f68dfad504f243db45b9d84b0
+  target: github:nishuoyang/dsh-wallpaper-bg#50eb6b49227a2d77a0c8e9b47df3c6d103792fb3
+  version: 0.5.17
+  commit: 50eb6b49227a2d77a0c8e9b47df3c6d103792fb3
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -51,19 +51,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 65c6452b9dde055f68dfad504f243db45b9d84b0
-    packageVersion: 0.5.16
+    commit: 50eb6b49227a2d77a0c8e9b47df3c6d103792fb3
+    packageVersion: 0.5.17
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T23:11:24.576Z
+    checkedAt: 2026-10-30T03:53:30.784Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 8
 featuredRank: 1117
-releaseUpdatedAt: 2026-10-26T23:11:28.591Z
-metadataUpdatedAt: 2026-10-26T23:11:28.591Z
-starsUpdatedAt: 2026-10-26T23:11:28.591Z
-updatedAt: 2026-10-26T23:11:28.591Z
+starsSnapshot: 10
+releaseUpdatedAt: 2026-10-30T03:53:33.359Z
+metadataUpdatedAt: 2026-10-30T03:53:33.359Z
+starsUpdatedAt: 2026-10-30T03:53:33.359Z
+updatedAt: 2026-10-30T03:53:33.359Z

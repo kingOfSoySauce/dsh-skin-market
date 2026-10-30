@@ -32,7 +32,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: manual-only
 health:
   status: improvements
@@ -63,10 +63,9 @@ license:
 featuredRank: 114
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:34:23.472Z
-metadataUpdatedAt: 2026-08-23T05:34:23.472Z
+metadataUpdatedAt: 2026-10-30T03:53:58.075Z
 starsUpdatedAt: 2026-09-18T21:38:36.802Z
-updatedAt: 2026-09-18T21:38:36.802Z
-
+updatedAt: 2026-10-30T03:53:58.075Z
 marketScreenshots:
   - skin-screenshots/mizuhara37__dsh-nene-theme/dcf7642211a84114186a7f12e1a6efbe5d7d36e1/home.png
   - skin-screenshots/mizuhara37__dsh-nene-theme/dcf7642211a84114186a7f12e1a6efbe5d7d36e1/conversation.png

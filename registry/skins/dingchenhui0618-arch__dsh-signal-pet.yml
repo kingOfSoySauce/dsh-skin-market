@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/dingchenhui0618-arch__dsh-signal-pet/6f8b1e45e2f7b910be5f8cff72b2ca53cdaa0cff/home.png
-  - skin-screenshots/dingchenhui0618-arch__dsh-signal-pet/6f8b1e45e2f7b910be5f8cff72b2ca53cdaa0cff/conversation.png
-  - skin-screenshots/dingchenhui0618-arch__dsh-signal-pet/6f8b1e45e2f7b910be5f8cff72b2ca53cdaa0cff/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/dingchenhui0618-arch__dsh-signal-pet/6f8b1e45e2f7b910be5f8cff72b2ca53cdaa0cff/home.png
+  - skin-screenshots/dingchenhui0618-arch__dsh-signal-pet/6f8b1e45e2f7b910be5f8cff72b2ca53cdaa0cff/conversation.png
+  - skin-screenshots/dingchenhui0618-arch__dsh-signal-pet/6f8b1e45e2f7b910be5f8cff72b2ca53cdaa0cff/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-27T23:01:25.538Z
-metadataUpdatedAt: 2026-10-27T23:01:25.538Z
+metadataUpdatedAt: 2026-10-30T03:53:15.825Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-27T23:01:25.538Z
+updatedAt: 2026-10-30T03:53:15.825Z

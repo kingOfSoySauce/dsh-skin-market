@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:MrmoLabs/dsh-yorha-ui#6497a671620d101951c2e68dbb6c2084b55db40e
+  target: github:MrmoLabs/dsh-yorha-ui#4b85ac3fce3688ec42298798343f2f615190372d
   version: 0.1.1
-  commit: 6497a671620d101951c2e68dbb6c2084b55db40e
+  commit: 4b85ac3fce3688ec42298798343f2f615190372d
   desktop:
     mode: managed
     registry: npm
@@ -28,7 +28,7 @@ install:
     version: 0.1.1
     integrity: sha512-20fNyY2U3inP37I9QIU+AtwfJ443VrkhxPGKKKJiqza81J3PLnofmrngKorYw1xan2nhWQ+RlAcxPlz241P4ZA==
     repository: https://github.com/MrmoLabs/dsh-yorha-ui
-    gitHead: 6497a671620d101951c2e68dbb6c2084b55db40e
+    gitHead: 4b85ac3fce3688ec42298798343f2f615190372d
 compatibility:
   dsh: unverified
   platform:
@@ -54,19 +54,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 6497a671620d101951c2e68dbb6c2084b55db40e
+    commit: 4b85ac3fce3688ec42298798343f2f615190372d
     packageVersion: 0.1.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:51:33.759Z
+    checkedAt: 2026-10-30T03:53:41.349Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 997
 starsSnapshot: 3
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:33.906Z
+releaseUpdatedAt: 2026-10-30T03:53:41.449Z
+metadataUpdatedAt: 2026-10-30T03:53:41.449Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:51:33.906Z
+updatedAt: 2026-10-30T03:53:41.449Z

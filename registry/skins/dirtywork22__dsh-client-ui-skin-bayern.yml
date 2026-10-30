@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:dirtywork22/dsh-client-ui-skin-bayern#ef40f937cc516cd9ab99a7bd627493ba45d58987
-  version: 0.3.0
-  commit: ef40f937cc516cd9ab99a7bd627493ba45d58987
+  target: github:dirtywork22/dsh-client-ui-skin-bayern#9930d52458ccd9829c60ed599c451cb71e6e1776
+  version: 0.4.0
+  commit: 9930d52458ccd9829c60ed599c451cb71e6e1776
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -38,15 +38,17 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: ef40f937cc516cd9ab99a7bd627493ba45d58987
-    packageVersion: 0.3.0
+    commit: 9930d52458ccd9829c60ed599c451cb71e6e1776
+    packageVersion: 0.4.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:33:18.976Z
+    checkedAt: 2026-10-30T03:54:10.497Z
     findings: []
 license:
   code: MIT
@@ -54,7 +56,7 @@ license:
   notice: 代码与程序生成的球衣等背景MIT；不随包提供照片。球队名称与视觉参考不代表官方授权。
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-30T03:54:11.563Z
+metadataUpdatedAt: 2026-10-30T03:54:11.563Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-10-30T03:54:11.563Z

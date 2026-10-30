@@ -30,7 +30,7 @@ screenshots:
   - skin-screenshots/shenmy-git__dsh-weather-plugin/3f94f1569a0f9193a7ff5bb7bb8000b8e6b05a36/home.gif
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: manual-only
 health:
   status: improvements
@@ -61,10 +61,9 @@ license:
 featuredRank: 120
 starsSnapshot: 0
 releaseUpdatedAt: 2026-09-08T21:49:04.035Z
-metadataUpdatedAt: 2026-09-08T21:49:04.035Z
+metadataUpdatedAt: 2026-10-30T03:54:21.161Z
 starsUpdatedAt: 2026-08-16 13:57:34.783000+00:00
-updatedAt: 2026-09-08T21:49:04.035Z
-
+updatedAt: 2026-10-30T03:54:21.161Z
 marketScreenshots:
   - skin-screenshots/shenmy-git__dsh-weather-plugin/3f94f1569a0f9193a7ff5bb7bb8000b8e6b05a36/home.png
   - skin-screenshots/shenmy-git__dsh-weather-plugin/3f94f1569a0f9193a7ff5bb7bb8000b8e6b05a36/conversation.png

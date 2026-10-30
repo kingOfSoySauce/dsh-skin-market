@@ -33,10 +33,6 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/home.png
-  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/conversation.png
-  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/settings.png
 screenshots:
   - https://raw.githubusercontent.com/yanzwzz/dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/assets/preview/preview-idle.gif
   - https://raw.githubusercontent.com/yanzwzz/dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/assets/preview/preview-work.gif
@@ -67,9 +63,13 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 39
+marketScreenshots:
+  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/home.png
+  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/conversation.png
+  - skin-screenshots/yanzwzz__dsh-whale-girl-pet/b5ce53cfa87b9fc669eef2aabe64946bb77adb72/settings.png
 featuredRank: 968
-starsSnapshot: 35
 releaseUpdatedAt: 2026-10-27T23:00:44.262Z
-metadataUpdatedAt: 2026-10-27T23:00:44.262Z
-starsUpdatedAt: 2026-10-27T23:00:44.262Z
-updatedAt: 2026-10-27T23:00:44.262Z
+metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+starsUpdatedAt: 2026-10-30T03:53:15.825Z
+updatedAt: 2026-10-30T03:53:15.825Z

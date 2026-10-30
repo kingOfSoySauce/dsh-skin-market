@@ -32,7 +32,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -58,10 +58,9 @@ license:
 featuredRank: 96
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:32:36.076Z
-metadataUpdatedAt: 2026-08-26T03:27:46.441Z
+metadataUpdatedAt: 2026-10-30T03:54:03.223Z
 starsUpdatedAt: 2026-09-18T21:38:55.528Z
-updatedAt: 2026-09-18T21:38:55.528Z
-
+updatedAt: 2026-10-30T03:54:03.223Z
 marketScreenshots:
   - skin-screenshots/X9wd09ncc__dsh-x9-theme/9af49294ab82a3ca1e6c5ab9df46179a5bd9489b/home.png
   - skin-screenshots/X9wd09ncc__dsh-x9-theme/9af49294ab82a3ca1e6c5ab9df46179a5bd9489b/conversation.png

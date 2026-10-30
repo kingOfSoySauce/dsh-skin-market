@@ -28,7 +28,7 @@ screenshots:
   - skin-screenshots/anitman__dsh-plugin-video-player/d7436a80cdfcdc8eb28f864a63e14348e99ce816/home.gif
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -54,13 +54,12 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 2
-featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
-starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:00:28.784Z
-
 marketScreenshots:
   - skin-screenshots/anitman__dsh-plugin-video-player/d7436a80cdfcdc8eb28f864a63e14348e99ce816/home.png
   - skin-screenshots/anitman__dsh-plugin-video-player/d7436a80cdfcdc8eb28f864a63e14348e99ce816/conversation.png
   - skin-screenshots/anitman__dsh-plugin-video-player/d7436a80cdfcdc8eb28f864a63e14348e99ce816/settings.png
+featuredRank: 0
+releaseUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+starsUpdatedAt: 2026-10-27T05:10:00.000Z
+updatedAt: 2026-10-30T03:53:15.825Z

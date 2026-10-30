@@ -27,7 +27,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -52,13 +52,12 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 0
-featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
-starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:00:28.784Z
-
 marketScreenshots:
   - skin-screenshots/1608kiy__dsh-music/0c0bfe03e1b63a58ab99d605740e1833168802dd/home.png
   - skin-screenshots/1608kiy__dsh-music/0c0bfe03e1b63a58ab99d605740e1833168802dd/conversation.png
   - skin-screenshots/1608kiy__dsh-music/0c0bfe03e1b63a58ab99d605740e1833168802dd/settings.png
+featuredRank: 0
+releaseUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+starsUpdatedAt: 2026-10-27T05:10:00.000Z
+updatedAt: 2026-10-30T03:53:15.825Z

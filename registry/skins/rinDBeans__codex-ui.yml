@@ -26,10 +26,6 @@ compatibility:
   dsh: 0.1.7-rc.1 || 0.1.7-rc.2 || 0.2.1-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/home.png
-  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/conversation.png
-  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/settings.png
 screenshots:
   - https://raw.githubusercontent.com/rinDBeans/codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/assets/screenshots/live-gui-rightbar.png
   - https://raw.githubusercontent.com/rinDBeans/codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/assets/screenshots/model-picker-live-dark.png
@@ -60,9 +56,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 996
 starsSnapshot: 4
+marketScreenshots:
+  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/home.png
+  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/conversation.png
+  - skin-screenshots/rinDBeans__codex-ui/b722c3db1e8307ef09f5a6c85fa594039b496b61/settings.png
+featuredRank: 996
 releaseUpdatedAt: 2026-10-26T03:49:39.432Z
-metadataUpdatedAt: 2026-10-27T23:00:58.875Z
+metadataUpdatedAt: 2026-10-30T03:53:15.825Z
 starsUpdatedAt: 2026-10-24T21:31:43.332Z
-updatedAt: 2026-10-27T23:00:58.875Z
+updatedAt: 2026-10-30T03:53:15.825Z

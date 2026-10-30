@@ -31,7 +31,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -58,10 +58,9 @@ license:
 featuredRank: 84
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:31:48.352Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+metadataUpdatedAt: 2026-10-30T03:53:56.683Z
 starsUpdatedAt: 2026-09-09T21:40:26.497Z
-updatedAt: 2026-09-09T21:40:26.497Z
-
+updatedAt: 2026-10-30T03:53:56.683Z
 marketScreenshots:
   - skin-screenshots/longyu065__dsh-theme-ti/62ae2e761f045387617e28828e4b533626b3156e/home.png
   - skin-screenshots/longyu065__dsh-theme-ti/62ae2e761f045387617e28828e4b533626b3156e/conversation.png

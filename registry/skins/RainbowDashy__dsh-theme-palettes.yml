@@ -29,7 +29,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -56,10 +56,9 @@ license:
 featuredRank: 90
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:32:12.994Z
-metadataUpdatedAt: 2026-08-23T05:32:12.994Z
+metadataUpdatedAt: 2026-10-30T03:54:00.442Z
 starsUpdatedAt: 2026-09-09T21:40:31.424Z
-updatedAt: 2026-09-09T21:40:31.424Z
-
+updatedAt: 2026-10-30T03:54:00.442Z
 marketScreenshots:
   - skin-screenshots/RainbowDashy__dsh-theme-palettes/887d5a4ee5c037b5e69a6e867984dfb300c2dda4/home.png
   - skin-screenshots/RainbowDashy__dsh-theme-palettes/887d5a4ee5c037b5e69a6e867984dfb300c2dda4/conversation.png

@@ -27,7 +27,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -52,13 +52,12 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 0
-featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
-starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:00:28.784Z
-
 marketScreenshots:
   - skin-screenshots/xiaoqiezi-china__dsh-music-player/6213deadd7323647dd32134d8fe67c520d1c171b/home.png
   - skin-screenshots/xiaoqiezi-china__dsh-music-player/6213deadd7323647dd32134d8fe67c520d1c171b/conversation.png
   - skin-screenshots/xiaoqiezi-china__dsh-music-player/6213deadd7323647dd32134d8fe67c520d1c171b/settings.png
+featuredRank: 0
+releaseUpdatedAt: 2026-10-27T05:10:00.000Z
+metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+starsUpdatedAt: 2026-10-27T05:10:00.000Z
+updatedAt: 2026-10-30T03:53:15.825Z

@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:xiaotuchu/dsh-theme-eye-care#9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55
-  version: 2.1.0
-  commit: 9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55
+  target: github:xiaotuchu/dsh-theme-eye-care#f9949fc5f8d0cc0deaa6f3fb86778ceadc1e5580
+  version: 2.2.0
+  commit: f9949fc5f8d0cc0deaa6f3fb86778ceadc1e5580
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -46,19 +46,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55
-    packageVersion: 2.1.0
+    commit: f9949fc5f8d0cc0deaa6f3fb86778ceadc1e5580
+    packageVersion: 2.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:51:27.875Z
+    checkedAt: 2026-10-30T03:53:39.371Z
     findings: []
 license:
-  code: MIT
-  commercialUse: true
+  code: MIT AND CC-BY-NC-4.0
+  commercialUse: false
 featuredRank: 996
 starsSnapshot: 4
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:28.625Z
+releaseUpdatedAt: 2026-10-30T03:53:39.669Z
+metadataUpdatedAt: 2026-10-30T03:53:39.669Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:51:28.625Z
+updatedAt: 2026-10-30T03:53:39.669Z

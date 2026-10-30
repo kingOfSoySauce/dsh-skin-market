@@ -15,12 +15,18 @@ modes:
   - light
   - dark
 install:
-  target: github:Lbunc/dsh-composer-glass#6da00fe16671e5f148ca87eb38e051c6406f6720
-  version: 1.1.0
-  commit: 6da00fe16671e5f148ca87eb38e051c6406f6720
+  target: github:Lbunc/dsh-composer-glass#28e347a2e68aa59890f7cea59ea7e29ff94ce6bd
+  version: 1.1.1
+  commit: 28e347a2e68aa59890f7cea59ea7e29ff94ce6bd
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-composer-glass
+    version: 1.1.1
+    integrity: sha512-05h3aVIhf41AkIq2uMiIq93xtdwxIo4b/M9VIKS2gaGm+G48sEwQM1vCjRtiSCluZSzDUGBJ/z+3944GpRRkcQ==
+    repository: https://github.com/Lbunc/dsh-composer-glass
+    gitHead: 28e347a2e68aa59890f7cea59ea7e29ff94ce6bd
 compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
@@ -30,31 +36,33 @@ screenshots:
   - https://raw.githubusercontent.com/Lbunc/dsh-composer-glass/6da00fe16671e5f148ca87eb38e051c6406f6720/images/02-in-conversation.webp
 listScreenshot: https://raw.githubusercontent.com/Lbunc/dsh-composer-glass/6da00fe16671e5f148ca87eb38e051c6406f6720/images/01-start.webp
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
     compatibility: pass
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions: []
   scan:
-    commit: 6da00fe16671e5f148ca87eb38e051c6406f6720
-    packageVersion: 1.1.0
+    commit: 28e347a2e68aa59890f7cea59ea7e29ff94ce6bd
+    packageVersion: 1.1.1
     scannerVersion: static-v2
     dshVersion: ">=0.1.7-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:32:39.197Z
+    checkedAt: 2026-10-30T03:53:56.074Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-10-30T03:53:57.180Z
+metadataUpdatedAt: 2026-10-30T03:53:57.180Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-10-30T03:53:57.180Z

@@ -15,18 +15,18 @@ tags:
 modes:
   - light
 install:
-  target: github:lengduan/dsh-815-skin#53c2172e3df6a5d828fb903db816e7083f310842
-  version: 0.1.40
-  commit: 53c2172e3df6a5d828fb903db816e7083f310842
+  target: github:lengduan/dsh-815-skin#5162fe9bbdcf2bf17fc40fb61aae10e36d91cf89
+  version: 0.1.41
+  commit: 5162fe9bbdcf2bf17fc40fb61aae10e36d91cf89
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
   npm:
     name: "@lengduan/dsh-client-ui-skin-815"
-    version: 0.1.40
-    integrity: sha512-iFeWK8T8gbZ0cdVUdkQRAQRUB6H0mMAtC/Y8/5OlASIG8+jDHVi/juttMrynSv6J1pVRN4PNyKrlwHQu+l/giw==
+    version: 0.1.41
+    integrity: sha512-RevMPk3kRnmYVXR35LapzhE2ZNUNuc97j/0PySY4Ot2SZ2dVmeKWu3mHM2e60mmX9dBIBbZeFaxWoocsZkMsaw==
     repository: https://github.com/lengduan/dsh-815-skin
-    gitHead: 53c2172e3df6a5d828fb903db816e7083f310842
+    gitHead: 5162fe9bbdcf2bf17fc40fb61aae10e36d91cf89
 compatibility:
   dsh: unverified
   platform:
@@ -56,12 +56,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 53c2172e3df6a5d828fb903db816e7083f310842
-    packageVersion: 0.1.40
+    commit: 5162fe9bbdcf2bf17fc40fb61aae10e36d91cf89
+    packageVersion: 0.1.41
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-10-27T23:01:30.683Z
+    checkedAt: 2026-10-30T03:54:16.602Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -70,7 +70,7 @@ license:
   commercialUse: true
 featuredRank: 111
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-27T23:01:32.816Z
-metadataUpdatedAt: 2026-10-27T23:01:32.816Z
+releaseUpdatedAt: 2026-10-30T03:54:19.008Z
+metadataUpdatedAt: 2026-10-30T03:54:19.008Z
 starsUpdatedAt: 2026-09-18T21:39:28.012Z
-updatedAt: 2026-10-27T23:01:32.816Z
+updatedAt: 2026-10-30T03:54:19.008Z

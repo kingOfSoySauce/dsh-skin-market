@@ -16,21 +16,18 @@ tags:
 modes:
   - dark
 install:
-  target: github:kingOfSoySauce/dsh-liang-skin#f6c90d173c67112217a5adecea71d14d8bc9063d
-  version: 0.1.12
-  commit: f6c90d173c67112217a5adecea71d14d8bc9063d
+  target: github:kingOfSoySauce/dsh-liang-skin#dcd348e0bec148af45bc0b1a8f33ef82c44aeeef
+  version: 0.1.15-settings.4
+  commit: dcd348e0bec148af45bc0b1a8f33ef82c44aeeef
   desktop:
-    mode: managed
-    registry: npm
-    packageName: "@leon___/dsh-client-liang-intensity-skin"
-    packageVersion: 0.1.12
-    integrity: sha512-9aBZ1b9do5aadriSEGpkxClyZuQ1M/zJW84+176B/l75sH9nVUHL0fiqw7JwlSZWIcPym0eyvydNzCSkb7IgRA==
+    mode: manual-only
+    reason: npm-version-not-stable
   npm:
     name: "@leon___/dsh-client-liang-intensity-skin"
-    version: 0.1.12
-    integrity: sha512-9aBZ1b9do5aadriSEGpkxClyZuQ1M/zJW84+176B/l75sH9nVUHL0fiqw7JwlSZWIcPym0eyvydNzCSkb7IgRA==
+    version: 0.1.15-settings.4
+    integrity: sha512-I1SzJoZXARWDSkdqLtcHenQsLFP3INscGaKiojddy/mRDUup9iPLWdFZSTBeKitxm+AD7HApOlaBL5ugMMc4ew==
     repository: https://github.com/kingOfSoySauce/dsh-liang-skin
-    gitHead: f6c90d173c67112217a5adecea71d14d8bc9063d
+    gitHead: dcd348e0bec148af45bc0b1a8f33ef82c44aeeef
 compatibility:
   dsh: ^0.1.0-rc.6 || 0.2.0-rc.2
   platform:
@@ -53,20 +50,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: f6c90d173c67112217a5adecea71d14d8bc9063d
-    packageVersion: 0.1.12
+    commit: dcd348e0bec148af45bc0b1a8f33ef82c44aeeef
+    packageVersion: 0.1.15-settings.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-22T22:16:38.395Z
+    checkedAt: 2026-10-30T03:53:20.150Z
     findings: []
 license:
   code: NOASSERTION
   commercialUse: false
   notice: 仓库当前未声明许可证；安装和再分发前请向作者确认授权。
 featuredRank: 1
-starsSnapshot: 326
-releaseUpdatedAt: 2026-10-22T22:16:38.982Z
-metadataUpdatedAt: 2026-10-22T22:16:38.982Z
-starsUpdatedAt: 2026-10-27T23:00:31.564Z
-updatedAt: 2026-10-27T23:00:31.564Z
+starsSnapshot: 341
+releaseUpdatedAt: 2026-10-30T03:53:20.737Z
+metadataUpdatedAt: 2026-10-30T03:53:20.737Z
+starsUpdatedAt: 2026-10-30T03:53:20.737Z
+updatedAt: 2026-10-30T03:53:20.737Z

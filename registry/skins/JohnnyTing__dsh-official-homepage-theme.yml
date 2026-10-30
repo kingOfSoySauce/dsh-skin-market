@@ -17,21 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:JohnnyTing/dsh-official-homepage-theme#29384e9f968abdfc10ab60d681930c00250bd438
-  version: 1.0.11
-  commit: 29384e9f968abdfc10ab60d681930c00250bd438
+  target: github:JohnnyTing/dsh-official-homepage-theme#a80b70e809a091c815f8678d69cf1c88ffa11e91
+  version: 1.0.12
+  commit: a80b70e809a091c815f8678d69cf1c88ffa11e91
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-official-homepage-theme
-    packageVersion: 1.0.11
-    integrity: sha512-fGVB2DXpiFoaY1uYH9+td6sFngarlRmWhyGVCaSTcdJcZ4cBHm2C+rKDtdKSu7iM0uT6toh+tO9H0guA3zUWwg==
+    packageVersion: 1.0.12
+    integrity: sha512-w8FTBljB9Ml/MG/xTQQmlq6GmDOlF5iMH4MnliczLdDDL0EFc+9Wqk/c92baez3iOLCu987+/tYUUMhcTqGfRA==
   npm:
     name: dsh-official-homepage-theme
-    version: 1.0.11
-    integrity: sha512-fGVB2DXpiFoaY1uYH9+td6sFngarlRmWhyGVCaSTcdJcZ4cBHm2C+rKDtdKSu7iM0uT6toh+tO9H0guA3zUWwg==
+    version: 1.0.12
+    integrity: sha512-w8FTBljB9Ml/MG/xTQQmlq6GmDOlF5iMH4MnliczLdDDL0EFc+9Wqk/c92baez3iOLCu987+/tYUUMhcTqGfRA==
     repository: https://github.com/JohnnyTing/dsh-official-homepage-theme
-    gitHead: 29384e9f968abdfc10ab60d681930c00250bd438
+    gitHead: a80b70e809a091c815f8678d69cf1c88ffa11e91
 compatibility:
   dsh: unverified
   platform:
@@ -60,19 +60,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 29384e9f968abdfc10ab60d681930c00250bd438
-    packageVersion: 1.0.11
+    commit: a80b70e809a091c815f8678d69cf1c88ffa11e91
+    packageVersion: 1.0.12
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-18T09:45:27.933Z
+    checkedAt: 2026-10-30T03:53:27.254Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1035
-starsSnapshot: 20
-releaseUpdatedAt: 2026-10-18T09:45:29.705Z
-metadataUpdatedAt: 2026-10-18T09:45:29.705Z
-starsUpdatedAt: 2026-10-27T23:00:46.306Z
-updatedAt: 2026-10-27T23:00:46.306Z
+starsSnapshot: 21
+releaseUpdatedAt: 2026-10-30T03:53:28.527Z
+metadataUpdatedAt: 2026-10-30T03:53:28.527Z
+starsUpdatedAt: 2026-10-30T03:53:28.527Z
+updatedAt: 2026-10-30T03:53:28.527Z

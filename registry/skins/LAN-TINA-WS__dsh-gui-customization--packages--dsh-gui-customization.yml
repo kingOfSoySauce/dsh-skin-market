@@ -30,9 +30,9 @@ compatibility:
   platform:
     - web
 marketScreenshots:
-  - skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/ddfa614695b4b5d5eb49dbb832134048162318c1/home.png
-  - skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/ddfa614695b4b5d5eb49dbb832134048162318c1/conversation.png
-  - skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/ddfa614695b4b5d5eb49dbb832134048162318c1/settings.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/settings.png
 screenshots:
   - https://raw.githubusercontent.com/LAN-TINA-WS/dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/docs/screenshots/dsgirl-fashion-workshop.jpg
   - https://raw.githubusercontent.com/LAN-TINA-WS/dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/docs/screenshots/gui-customization.png

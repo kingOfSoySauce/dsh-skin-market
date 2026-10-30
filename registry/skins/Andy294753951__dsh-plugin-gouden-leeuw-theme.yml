@@ -31,7 +31,7 @@ compatibility:
 screenshots: []
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -58,10 +58,9 @@ license:
 featuredRank: 77
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:30:55.404Z
-metadataUpdatedAt: 2026-08-23T05:30:55.404Z
+metadataUpdatedAt: 2026-10-30T03:53:50.008Z
 starsUpdatedAt: 2026-09-09T21:40:12.554Z
-updatedAt: 2026-09-09T21:40:12.554Z
-
+updatedAt: 2026-10-30T03:53:50.008Z
 marketScreenshots:
   - skin-screenshots/Andy294753951__dsh-plugin-gouden-leeuw-theme/6ab4c2bc6fb88d41a02ad92c06aae6e46d05e078/home.png
   - skin-screenshots/Andy294753951__dsh-plugin-gouden-leeuw-theme/6ab4c2bc6fb88d41a02ad92c06aae6e46d05e078/conversation.png

@@ -13,13 +13,13 @@ tags:
 modes:
   - light
 install:
-  target: github:LilycleHeart/dsh-liuli-ui-enhance#dfb90448c5fe9bb82d567871538560e57669afd0
-  version: 0.1.2-rc.37
-  commit: dfb90448c5fe9bb82d567871538560e57669afd0
+  target: github:LilycleHeart/dsh-liuli-ui-enhance#6078c13c7e1bd6d806f871158ea1229948fb09de
+  version: 0.1.2-rc.38
+  commit: 6078c13c7e1bd6d806f871158ea1229948fb09de
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  allowBuild: dsh-liuli-ui-enhance@https://codeload.github.com/LilycleHeart/dsh-liuli-ui-enhance/tar.gz/dfb90448c5fe9bb82d567871538560e57669afd0
+  allowBuild: dsh-liuli-ui-enhance@https://codeload.github.com/LilycleHeart/dsh-liuli-ui-enhance/tar.gz/6078c13c7e1bd6d806f871158ea1229948fb09de
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -32,28 +32,29 @@ screenshots:
   - https://raw.githubusercontent.com/LilycleHeart/dsh-liuli-ui-enhance/dfb90448c5fe9bb82d567871538560e57669afd0/docs/preview-start-light.png
 listScreenshot: https://raw.githubusercontent.com/LilycleHeart/dsh-liuli-ui-enhance/dfb90448c5fe9bb82d567871538560e57669afd0/docs/preview-start-light.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.1-rc.2 未被本次检测范围 0.2.1-rc.3 完全覆盖（固定版本 6078c13c7e1bd6d806f871158ea1229948fb09de）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: dfb90448c5fe9bb82d567871538560e57669afd0
-    packageVersion: 0.1.2-rc.37
+    commit: 6078c13c7e1bd6d806f871158ea1229948fb09de
+    packageVersion: 0.1.2-rc.38
     scannerVersion: static-v2
-    dshVersion: 0.2.1-rc.2
+    dshVersion: 0.2.1-rc.3
     mode: static
     result: unknown
-    checkedAt: 2026-10-26T01:52:13.372Z
+    checkedAt: 2026-10-30T03:53:56.530Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -62,7 +63,7 @@ license:
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:52:13.770Z
+releaseUpdatedAt: 2026-10-30T03:53:57.134Z
+metadataUpdatedAt: 2026-10-30T03:53:57.134Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:13.770Z
+updatedAt: 2026-10-30T03:53:57.134Z
