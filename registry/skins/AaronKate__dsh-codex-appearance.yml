@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:AaronKate/dsh-codex-appearance#c9d9be1ad30818919c8aa5c5fc9ca2c3c1a62406
-  version: 0.3.18
-  commit: c9d9be1ad30818919c8aa5c5fc9ca2c3c1a62406
+  target: github:AaronKate/dsh-codex-appearance#0330b453f17fee8c5bb6427ac16b09e1c52aab70
+  version: 0.3.20
+  commit: 0330b453f17fee8c5bb6427ac16b09e1c52aab70
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -25,6 +25,10 @@ compatibility:
   dsh: 0.2.0-rc.2
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/home.png
+  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/conversation.png
+  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/settings.png
 screenshots:
   - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/assets/five-themes.png
   - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/assets/warm-tone-compare.png
@@ -46,23 +50,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: c9d9be1ad30818919c8aa5c5fc9ca2c3c1a62406
-    packageVersion: 0.3.18
+    commit: 0330b453f17fee8c5bb6427ac16b09e1c52aab70
+    packageVersion: 0.3.20
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:54:06.152Z
+    checkedAt: 2026-10-31T04:39:15.633Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/home.png
-  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/conversation.png
-  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/settings.png
 featuredRank: 1000
-releaseUpdatedAt: 2026-10-30T03:54:07.219Z
-metadataUpdatedAt: 2026-10-30T04:54:31.652Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-10-31T04:39:16.874Z
+metadataUpdatedAt: 2026-10-31T04:39:16.874Z
 starsUpdatedAt: 2026-10-30T03:54:07.219Z
-updatedAt: 2026-10-30T04:54:31.652Z
+updatedAt: 2026-10-31T04:39:16.874Z

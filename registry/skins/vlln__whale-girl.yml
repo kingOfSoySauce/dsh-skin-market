@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/home.png
-  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/conversation.png
-  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/settings.png
 screenshots:
   - https://raw.githubusercontent.com/vlln/whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/docs/preview/idle.gif
   - https://raw.githubusercontent.com/vlln/whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/docs/preview/working.gif
@@ -63,9 +59,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 620
 starsSnapshot: 400
+marketScreenshots:
+  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/home.png
+  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/conversation.png
+  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/settings.png
+featuredRank: 620
 releaseUpdatedAt: 2026-10-30T23:01:04.704Z
-metadataUpdatedAt: 2026-10-30T23:01:04.704Z
+metadataUpdatedAt: 2026-10-31T04:39:10.957Z
 starsUpdatedAt: 2026-10-30T23:01:04.704Z
-updatedAt: 2026-10-30T23:01:04.704Z
+updatedAt: 2026-10-31T04:39:10.957Z

@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.1.1-rc.1"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/home.png
-  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/conversation.png
-  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -57,9 +53,13 @@ license:
   code: MIT
   commercialUse: true
   notice: 代码MIT；文档CC BY-SA 4.0；Source Serif 4字体OFL，须保留各自许可与署名。
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/home.png
+  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/conversation.png
+  - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-30T23:01:27.221Z
-metadataUpdatedAt: 2026-10-30T23:01:27.221Z
+metadataUpdatedAt: 2026-10-31T04:39:10.957Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T23:01:27.221Z
+updatedAt: 2026-10-31T04:39:10.957Z

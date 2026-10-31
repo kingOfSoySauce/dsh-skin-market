@@ -32,8 +32,6 @@ compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/lyx0717__dsh-washer/70ad9a1827df37348f6a892b52101163e4c46c36/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-washing.png
   - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-rinsing.png
@@ -65,9 +63,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/lyx0717__dsh-washer/70ad9a1827df37348f6a892b52101163e4c46c36/conversation.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-30T23:01:28.818Z
-metadataUpdatedAt: 2026-10-30T23:01:28.818Z
+metadataUpdatedAt: 2026-10-31T04:39:10.957Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T23:01:28.818Z
+updatedAt: 2026-10-31T04:39:10.957Z

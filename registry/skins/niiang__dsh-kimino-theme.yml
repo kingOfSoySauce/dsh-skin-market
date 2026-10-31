@@ -28,10 +28,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/home.png
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/conversation.png
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/settings.png
 screenshots:
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0d066fe583be48341fcf8064fd6dfc4ea760bc8a/docs/screenshots/home-hero.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0d066fe583be48341fcf8064fd6dfc4ea760bc8a/docs/screenshots/sidebar.png
@@ -67,9 +63,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 145
 starsSnapshot: 43
+marketScreenshots:
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/home.png
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/conversation.png
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/settings.png
+featuredRank: 145
 releaseUpdatedAt: 2026-10-30T23:01:10.232Z
-metadataUpdatedAt: 2026-10-30T23:01:10.232Z
+metadataUpdatedAt: 2026-10-31T04:39:10.957Z
 starsUpdatedAt: 2026-10-30T03:53:27.502Z
-updatedAt: 2026-10-30T23:01:10.232Z
+updatedAt: 2026-10-31T04:39:10.957Z

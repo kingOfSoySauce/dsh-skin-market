@@ -33,10 +33,6 @@ compatibility:
   dsh: ">=0.2.1-rc.1"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/home.png
-  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/conversation.png
-  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/settings.png
 screenshots:
   - https://raw.githubusercontent.com/zuoyunlai/dsh-theme-palette/c8fe56da4e426c6d57371cab8b5188c20e11db77/assets/screenshot-settings-light.png
   - https://raw.githubusercontent.com/zuoyunlai/dsh-theme-palette/c8fe56da4e426c6d57371cab8b5188c20e11db77/assets/screenshot-settings-dark.png
@@ -70,9 +66,13 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 2
+marketScreenshots:
+  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/home.png
+  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/conversation.png
+  - skin-screenshots/zuoyunlai__dsh-theme-palette/ebfb2e709cc1b33944af95ea7cf1e760ef721f2b/settings.png
 featuredRank: 999
-starsSnapshot: 1
 releaseUpdatedAt: 2026-10-30T23:01:23.955Z
-metadataUpdatedAt: 2026-10-30T23:01:23.955Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T23:01:23.955Z
+metadataUpdatedAt: 2026-10-31T04:39:10.957Z
+starsUpdatedAt: 2026-10-31T04:39:10.957Z
+updatedAt: 2026-10-31T04:39:10.957Z

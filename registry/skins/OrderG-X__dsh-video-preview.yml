@@ -14,18 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:OrderG-X/dsh-video-preview#c33073201dd3f7367628190ce1b41939b38f9e8e
-  version: 0.5.1
-  commit: c33073201dd3f7367628190ce1b41939b38f9e8e
+  target: github:OrderG-X/dsh-video-preview#320f0b46e947f15d23d747896d6be1f42eddaf1a
+  version: 0.5.2
+  commit: 320f0b46e947f15d23d747896d6be1f42eddaf1a
   desktop:
     mode: manual-only
     reason: npm-package-not-found
   npm:
     name: "@orderg-x/dsh-video-preview"
-    version: 0.5.1
-    integrity: sha512-pavrufg8cf0/NdOjrnzbWdwEEQkWj4YLano10mr4Fo0X9mYJEGbipgC4Gdddf8AFBlAGPOJgKAebGmLCyE640Q==
+    version: 0.5.2
+    integrity: sha512-73BVT0s0gFSdBGrsSn+DcYEdSpRnSmcv1bWOwftBUjwoX5phzZvBBdEesBJbWk5VBYn1YlTARMzqxkU0vBNs4Q==
     repository: https://github.com/OrderG-X/dsh-video-preview
-    gitHead: c33073201dd3f7367628190ce1b41939b38f9e8e
+    gitHead: 320f0b46e947f15d23d747896d6be1f42eddaf1a
 compatibility:
   dsh: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
   platform:
@@ -39,29 +39,30 @@ review:
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
     compatibility: pass
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: c33073201dd3f7367628190ce1b41939b38f9e8e
-    packageVersion: 0.5.1
+    commit: 320f0b46e947f15d23d747896d6be1f42eddaf1a
+    packageVersion: 0.5.2
     scannerVersion: static-v2
     dshVersion: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-10-27T23:01:04.712Z
+    checkedAt: 2026-10-31T04:39:15.042Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T23:01:06.256Z
-metadataUpdatedAt: 2026-10-27T23:01:06.256Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-10-31T04:39:16.789Z
+metadataUpdatedAt: 2026-10-31T04:39:16.789Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:01:06.256Z
+updatedAt: 2026-10-31T04:39:16.789Z
