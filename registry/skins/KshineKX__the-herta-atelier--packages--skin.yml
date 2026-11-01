@@ -1,62 +1,8 @@
-id: kshinekx.skin
+url: https://github.com/KshineKX/the-herta-atelier
+subpath: packages/skin
 name:
   zh: 大黑塔 · 天才书房
   en: The Herta Atelier
 author: Kshine
 description: 紫黑与晨光双主题、金边与玻璃材质的《崩坏：星穹铁道》大黑塔同人 DSH Web 皮肤；含藏镜图库与独立动态待机。
-repo: https://github.com/KshineKX/the-herta-atelier
-subpath: packages/skin
-package: dsh-herta-atelier
-rowId: ui-skin-herta-atelier
-category: skin
-tags:
-  - appearance
-modes:
-  - light
-  - dark
-install:
-  target: github:KshineKX/the-herta-atelier#197291ae6ea0dee96da9e0b5bf36997faa8ec977&path:/packages/skin
-  version: 0.4.0-beta.14
-  commit: 197291ae6ea0dee96da9e0b5bf36997faa8ec977
-  desktop:
-    mode: manual-only
-    reason: npm-version-not-stable
-compatibility:
-  dsh: unverified
-  platform:
-    - web
-screenshots:
-  - https://raw.githubusercontent.com/KshineKX/the-herta-atelier/5f3dc90329bb7b5cb9ee5c40e313695856abf5ce/packages/skin/preview/overview-beta11-light.jpg
-  - https://raw.githubusercontent.com/KshineKX/the-herta-atelier/5f3dc90329bb7b5cb9ee5c40e313695856abf5ce/packages/skin/preview/overview-beta11-dark.jpg
-listScreenshot: https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/showcase-beta14-dark.jpg
-review:
-  compatibility: unverified
-  preview: verified
-  installation: verified
-health:
-  status: improvements
-  checks:
-    readmeScreenshots: pass
-    compatibility: improve
-    installation: pass
-    installCommand: pass
-    topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-  scan:
-    commit: 197291ae6ea0dee96da9e0b5bf36997faa8ec977
-    packageVersion: 0.4.0-beta.14
-    scannerVersion: static-v2
-    mode: static
-    result: pass
-    checkedAt: 2026-11-01T22:47:52.266Z
-    findings: []
-license:
-  code: MIT
-  commercialUse: true
-starsSnapshot: 0
-featuredRank: 1000
-releaseUpdatedAt: 2026-11-01T22:47:54.543Z
-metadataUpdatedAt: 2026-11-01T22:47:54.543Z
-starsUpdatedAt: 2026-11-01T06:47:57.058Z
-updatedAt: 2026-11-01T22:47:54.543Z
+
