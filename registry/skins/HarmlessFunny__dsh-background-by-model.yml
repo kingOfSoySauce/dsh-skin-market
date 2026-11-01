@@ -18,21 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:HarmlessFunny/dsh-background-by-model#9a5c3c092ca8f07e65cbeee9f08b264f7151cec5
-  version: 0.10.0
-  commit: 9a5c3c092ca8f07e65cbeee9f08b264f7151cec5
+  target: github:HarmlessFunny/dsh-background-by-model#8349e4ca82451f9de37e96a987af43644affcd63
+  version: 0.11.0
+  commit: 8349e4ca82451f9de37e96a987af43644affcd63
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-background-by-model
-    packageVersion: 0.10.0
-    integrity: sha512-Q5Gu/AoSJmmF8J3OUXjB8G4Yg4iF4e4ZnUWqtJNkxZcMPvoHurdCGzCpuxsvyJuT7dA3PdsqalczUifxDSXKvQ==
+    packageVersion: 0.11.0
+    integrity: sha512-dU2dkTtiTglgndUSXX/qtXuA8Uw7b8uTPGtE1lpm5mhmbHbhNkI2K3BovYrR51zjsr/ZqLjiE2EHqsw8qJAx8Q==
   npm:
     name: dsh-background-by-model
-    version: 0.10.0
-    integrity: sha512-Q5Gu/AoSJmmF8J3OUXjB8G4Yg4iF4e4ZnUWqtJNkxZcMPvoHurdCGzCpuxsvyJuT7dA3PdsqalczUifxDSXKvQ==
+    version: 0.11.0
+    integrity: sha512-dU2dkTtiTglgndUSXX/qtXuA8Uw7b8uTPGtE1lpm5mhmbHbhNkI2K3BovYrR51zjsr/ZqLjiE2EHqsw8qJAx8Q==
     repository: https://github.com/HarmlessFunny/dsh-background-by-model
-    gitHead: 9a5c3c092ca8f07e65cbeee9f08b264f7151cec5
+    gitHead: 8349e4ca82451f9de37e96a987af43644affcd63
 compatibility:
   dsh: ">=0.2.1-alpha.2"
   platform:
@@ -58,13 +58,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 9a5c3c092ca8f07e65cbeee9f08b264f7151cec5
-    packageVersion: 0.10.0
+    commit: 8349e4ca82451f9de37e96a987af43644affcd63
+    packageVersion: 0.11.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-alpha.2"
     mode: static
     result: unknown
-    checkedAt: 2026-10-26T01:50:57.889Z
+    checkedAt: 2026-11-01T01:43:27.754Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -73,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 1110
 starsSnapshot: 24
-releaseUpdatedAt: 2026-10-26T01:50:59.021Z
-metadataUpdatedAt: 2026-10-26T01:50:59.021Z
+releaseUpdatedAt: 2026-11-01T01:43:27.877Z
+metadataUpdatedAt: 2026-11-01T01:43:27.877Z
 starsUpdatedAt: 2026-10-26T23:11:18.716Z
-updatedAt: 2026-10-26T23:11:18.716Z
+updatedAt: 2026-11-01T01:43:27.877Z

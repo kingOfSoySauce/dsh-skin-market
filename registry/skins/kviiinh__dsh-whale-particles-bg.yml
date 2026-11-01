@@ -15,21 +15,21 @@ modes:
   - light
   - dark
 install:
-  target: github:kviiinh/dsh-whale-particles-bg#3322ee6323c6cd262c34c3b8b514c7c15c2badd2
-  version: 1.0.0
-  commit: 3322ee6323c6cd262c34c3b8b514c7c15c2badd2
+  target: github:kviiinh/dsh-whale-particles-bg#eac9ccd7d22ec25520365dc91f6fdce53b95d655
+  version: 1.3.4
+  commit: eac9ccd7d22ec25520365dc91f6fdce53b95d655
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-whale-particles-bg
-    packageVersion: 1.0.0
-    integrity: sha512-6JcTmDzvPFMtxbrwD90Y2toR6L2Wb5fFaPheF0Xt+P+wK6q1RC6odzDwPaCvCeamsBzX3zw9y8OvXx7JSXdxJQ==
+    packageVersion: 1.3.4
+    integrity: sha512-a0qO/29Q1rBoe8m0VXbsuB395xnJ5iXyBUJ72YAlJEOExy1vpfBODWcn1mJwlg/h6MQeSXYtKXqF300YQEyhtg==
   npm:
     name: dsh-whale-particles-bg
-    version: 1.0.0
-    integrity: sha512-6JcTmDzvPFMtxbrwD90Y2toR6L2Wb5fFaPheF0Xt+P+wK6q1RC6odzDwPaCvCeamsBzX3zw9y8OvXx7JSXdxJQ==
+    version: 1.3.4
+    integrity: sha512-a0qO/29Q1rBoe8m0VXbsuB395xnJ5iXyBUJ72YAlJEOExy1vpfBODWcn1mJwlg/h6MQeSXYtKXqF300YQEyhtg==
     repository: https://github.com/kviiinh/dsh-whale-particles-bg
-    gitHead: 3322ee6323c6cd262c34c3b8b514c7c15c2badd2
+    gitHead: eac9ccd7d22ec25520365dc91f6fdce53b95d655
 compatibility:
   dsh: unverified
   platform:
@@ -47,22 +47,24 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 3322ee6323c6cd262c34c3b8b514c7c15c2badd2
-    packageVersion: 1.0.0
+    commit: eac9ccd7d22ec25520365dc91f6fdce53b95d655
+    packageVersion: 1.3.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:33:30.960Z
+    checkedAt: 2026-11-01T01:43:44.055Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-11-01T01:43:45.070Z
+metadataUpdatedAt: 2026-11-01T01:43:45.070Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-01T01:43:45.070Z

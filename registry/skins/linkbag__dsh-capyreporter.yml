@@ -14,22 +14,26 @@ modes:
   - light
   - dark
 install:
-  target: github:linkbag/dsh-capyreporter#7e319f5c0684514c78f4166b5dc82d57421cfd63
-  version: 0.6.19
-  commit: 7e319f5c0684514c78f4166b5dc82d57421cfd63
+  target: github:linkbag/dsh-capyreporter#71a2fa19c0c7fd0c48b29498c2080be34c4caca5
+  version: 0.6.20
+  commit: 71a2fa19c0c7fd0c48b29498c2080be34c4caca5
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
   npm:
     name: dsh-capyreporter
-    version: 0.6.19
-    integrity: sha512-nca3L5xYrkFlQVYYd87p6+qanfsTLya3p6//pWwx2QPUJ22gbKKolG7lIN93xXLQ7alaN8PEf4iYuVUL4GrVrw==
+    version: 0.6.20
+    integrity: sha512-hdviE0o6nhFmPHgVxi0+f411Y5rklYI1pCN/6ukI/OUxRIz76G1XRAFzd1GilfWj/HWBVR4lcmxD0++BhMgrGg==
     repository: https://github.com/linkbag/dsh-capyreporter
-    gitHead: 7e319f5c0684514c78f4166b5dc82d57421cfd63
+    gitHead: 71a2fa19c0c7fd0c48b29498c2080be34c4caca5
 compatibility:
   dsh: ">=0.1.1-rc.2 <0.2.0-0||>=0.1.2-0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/home.png
+  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/conversation.png
+  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -47,23 +51,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 7e319f5c0684514c78f4166b5dc82d57421cfd63
-    packageVersion: 0.6.19
+    commit: 71a2fa19c0c7fd0c48b29498c2080be34c4caca5
+    packageVersion: 0.6.20
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T23:12:06.514Z
+    checkedAt: 2026-11-01T01:43:45.007Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/home.png
-  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/conversation.png
-  - skin-screenshots/linkbag__dsh-capyreporter/6091699592eaf3e60dd91745a2c1817d923611c2/settings.png
 featuredRank: 1000
-releaseUpdatedAt: 2026-10-26T23:12:06.720Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-01T01:43:45.108Z
+metadataUpdatedAt: 2026-11-01T01:43:45.108Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-27T23:00:28.784Z
+updatedAt: 2026-11-01T01:43:45.108Z

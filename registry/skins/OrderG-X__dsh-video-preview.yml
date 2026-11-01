@@ -14,18 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:OrderG-X/dsh-video-preview#320f0b46e947f15d23d747896d6be1f42eddaf1a
-  version: 0.5.2
-  commit: 320f0b46e947f15d23d747896d6be1f42eddaf1a
+  target: github:OrderG-X/dsh-video-preview#293a9e08ba8df3602eae3598c3b3df46154da8d4
+  version: 0.5.3
+  commit: 293a9e08ba8df3602eae3598c3b3df46154da8d4
   desktop:
     mode: manual-only
     reason: npm-package-not-found
   npm:
     name: "@orderg-x/dsh-video-preview"
-    version: 0.5.2
-    integrity: sha512-73BVT0s0gFSdBGrsSn+DcYEdSpRnSmcv1bWOwftBUjwoX5phzZvBBdEesBJbWk5VBYn1YlTARMzqxkU0vBNs4Q==
+    version: 0.5.3
+    integrity: sha512-7obmT8HN3AQF75LKXMbGcLzYbCq2iE+3pknxgNGsEiiRYvJgF3/Mmbvs3g+O+LJt+yW0+6ipWP933tjqOMRbeg==
     repository: https://github.com/OrderG-X/dsh-video-preview
-    gitHead: 320f0b46e947f15d23d747896d6be1f42eddaf1a
+    gitHead: 293a9e08ba8df3602eae3598c3b3df46154da8d4
 compatibility:
   dsh: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
   platform:
@@ -49,20 +49,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 320f0b46e947f15d23d747896d6be1f42eddaf1a
-    packageVersion: 0.5.2
+    commit: 293a9e08ba8df3602eae3598c3b3df46154da8d4
+    packageVersion: 0.5.3
     scannerVersion: static-v2
     dshVersion: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-10-31T04:39:15.042Z
+    checkedAt: 2026-11-01T01:43:33.603Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 0
-starsSnapshot: 2
-releaseUpdatedAt: 2026-10-31T04:39:16.789Z
-metadataUpdatedAt: 2026-10-31T04:39:16.789Z
-starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-31T04:39:16.789Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-01T01:43:34.817Z
+metadataUpdatedAt: 2026-11-01T01:43:34.817Z
+starsUpdatedAt: 2026-11-01T01:43:34.817Z
+updatedAt: 2026-11-01T01:43:34.817Z

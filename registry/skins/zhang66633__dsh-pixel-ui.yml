@@ -15,18 +15,18 @@ modes:
   - light
   - dark
 install:
-  target: github:zhang66633/dsh-pixel-ui#812b26af07f44e036fec2f50a47221f4db9e8ba3
-  version: 1.12.0
-  commit: 812b26af07f44e036fec2f50a47221f4db9e8ba3
+  target: github:zhang66633/dsh-pixel-ui#17d654acf61fcf8ad48153d202cd993bb7b1bb9b
+  version: 1.12.1
+  commit: 17d654acf61fcf8ad48153d202cd993bb7b1bb9b
   desktop:
     mode: manual-only
     reason: npm-package-not-found
   npm:
     name: dsh-pixel-ui
-    version: 1.12.0
-    integrity: sha512-//k1IZjcSW9BXrmA52nHN+OvBGoCnkGPMIhQ+RFNNFNAszkc1Yyk1JBJHMJlO4Gltq2/50qg1EEUmecWlDSp0A==
+    version: 1.12.1
+    integrity: sha512-kHU2++vo+x9Iezy8OWlhOPLr9O2ojFm8joy4IqpOdJF8JeVcMXRNDH7dXRp8g0lOkuA87UdgDK5UtLIat5Zh6A==
     repository: https://github.com/zhang66633/dsh-pixel-ui
-    gitHead: 812b26af07f44e036fec2f50a47221f4db9e8ba3
+    gitHead: 17d654acf61fcf8ad48153d202cd993bb7b1bb9b
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -49,20 +49,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 812b26af07f44e036fec2f50a47221f4db9e8ba3
-    packageVersion: 1.12.0
+    commit: 17d654acf61fcf8ad48153d202cd993bb7b1bb9b
+    packageVersion: 1.12.1
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-31T04:39:13.675Z
+    checkedAt: 2026-11-01T01:43:32.348Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1053
 starsSnapshot: 3
-releaseUpdatedAt: 2026-10-31T04:39:16.054Z
-metadataUpdatedAt: 2026-10-31T04:39:16.054Z
+releaseUpdatedAt: 2026-11-01T01:43:34.312Z
+metadataUpdatedAt: 2026-11-01T01:43:34.312Z
 starsUpdatedAt: 2026-10-23T22:02:40.368Z
-updatedAt: 2026-10-31T04:39:16.054Z
+updatedAt: 2026-11-01T01:43:34.312Z
