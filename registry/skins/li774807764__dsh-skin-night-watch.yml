@@ -1,0 +1,9 @@
+url: https://github.com/li774807764/ai-workarea
+subpath: skins/night-watch
+name: dsh-skin-night-watch
+author: li774807764
+description: Night Watch (潮汐值班) — 低照度深海皮肤：平静叙事的晚班日志、潮汐雷达与徽章式仪表，纯 CSS 覆盖 DSH 的 --dsw-* token 体系。
+screenshots:
+  - screenshots/01-main.png
+  - screenshots/02-radar.png
+  - screenshots/03-log.png
