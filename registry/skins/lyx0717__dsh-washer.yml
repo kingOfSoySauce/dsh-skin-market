@@ -13,21 +13,21 @@ tags:
 modes:
   - dark
 install:
-  target: github:lyx0717/dsh-washer#7bf71d2dcaa8273860499b7ed9cd7f13d501e4e3
-  version: 0.8.0
-  commit: 7bf71d2dcaa8273860499b7ed9cd7f13d501e4e3
+  target: github:lyx0717/dsh-washer#0f0b5901bfd88158343c73676c157e65dd333752
+  version: 0.10.1
+  commit: 0f0b5901bfd88158343c73676c157e65dd333752
   desktop:
     mode: managed
     registry: npm
     packageName: "@lyx0717/dsh-washer"
-    packageVersion: 0.8.0
-    integrity: sha512-1jpcqowkW/sGW5vKIHVPc9Hko7mbHEgms2Nsfzsz5xDh/jJ05hutDXurek1HYrTF8yjmDQVNQz2G7RsLB4RXCA==
+    packageVersion: 0.10.1
+    integrity: sha512-CcaaYz0V4GtK5e+deAd7XM5EHgepYvSY0uOwdvG/6G67H+uCAfsNS6LVME0R7hmZrE8Np8ME5eymUrGyBYRE2g==
   npm:
     name: "@lyx0717/dsh-washer"
-    version: 0.8.0
-    integrity: sha512-1jpcqowkW/sGW5vKIHVPc9Hko7mbHEgms2Nsfzsz5xDh/jJ05hutDXurek1HYrTF8yjmDQVNQz2G7RsLB4RXCA==
+    version: 0.10.1
+    integrity: sha512-CcaaYz0V4GtK5e+deAd7XM5EHgepYvSY0uOwdvG/6G67H+uCAfsNS6LVME0R7hmZrE8Np8ME5eymUrGyBYRE2g==
     repository: https://github.com/lyx0717/dsh-washer
-    gitHead: 7bf71d2dcaa8273860499b7ed9cd7f13d501e4e3
+    gitHead: 0f0b5901bfd88158343c73676c157e65dd333752
 compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
@@ -55,19 +55,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 7bf71d2dcaa8273860499b7ed9cd7f13d501e4e3
-    packageVersion: 0.8.0
+    commit: 0f0b5901bfd88158343c73676c157e65dd333752
+    packageVersion: 0.10.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-01T01:43:45.093Z
+    checkedAt: 2026-11-01T22:47:53.378Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-01T01:43:46.581Z
-metadataUpdatedAt: 2026-11-01T01:43:46.581Z
+releaseUpdatedAt: 2026-11-01T22:47:55.483Z
+metadataUpdatedAt: 2026-11-01T22:47:55.483Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-01T01:43:46.581Z
+updatedAt: 2026-11-01T22:47:55.483Z

@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:CAPTAIN1275/dsh-ui-web#b419ac5ba6ccb63f49fadccb96dc9267e39a3109&path:/packages/skins/dragon-heir
+  target: github:CAPTAIN1275/dsh-ui-web#d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f&path:/packages/skins/dragon-heir
   version: 0.4.1
-  commit: b419ac5ba6ccb63f49fadccb96dc9267e39a3109
+  commit: d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f
   desktop:
     mode: managed
     registry: npm
@@ -30,7 +30,7 @@ install:
     version: 0.4.1
     integrity: sha512-5Pi3lZMJw57BDWD94Ba6/gG+Ee4J5PhGBYIEDmpx8UTYk8tMNMs4M/WtlyWkUjRENnTq8UEwfDPhzHGRv3NIuA==
     repository: https://github.com/CAPTAIN1275/dsh-ui-web
-    gitHead: b419ac5ba6ccb63f49fadccb96dc9267e39a3109
+    gitHead: d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f
 compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
@@ -60,20 +60,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: b419ac5ba6ccb63f49fadccb96dc9267e39a3109
+    commit: d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f
     packageVersion: 0.4.1
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.2"
     mode: static
     result: pass
-    checkedAt: 2026-10-27T23:00:38.771Z
+    checkedAt: 2026-11-01T22:47:24.308Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
-starsSnapshot: 42
 featuredRank: 969
-releaseUpdatedAt: 2026-10-27T23:00:41.698Z
-metadataUpdatedAt: 2026-10-27T23:00:41.698Z
+starsSnapshot: 42
+releaseUpdatedAt: 2026-11-01T22:47:29.789Z
+metadataUpdatedAt: 2026-11-01T22:47:29.789Z
 starsUpdatedAt: 2026-10-30T23:01:00.010Z
-updatedAt: 2026-10-30T23:01:00.010Z
+updatedAt: 2026-11-01T22:47:29.789Z

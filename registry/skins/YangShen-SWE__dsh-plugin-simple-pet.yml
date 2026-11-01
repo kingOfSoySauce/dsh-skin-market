@@ -14,32 +14,49 @@ modes:
   - light
   - dark
 install:
-  target: github:YangShen-SWE/dsh-plugin-simple-pet#c013c3555a94d522c9019bb51d4842b275f20da0
-  version: 1.1.3
-  commit: c013c3555a94d522c9019bb51d4842b275f20da0
+  target: github:YangShen-SWE/dsh-plugin-simple-pet#68186af407e7cfb46272c04b15fde30bbff60389
+  version: 1.1.6
+  commit: 68186af407e7cfb46272c04b15fde30bbff60389
   desktop:
     mode: manual-only
     reason: 原生宠物窗口和会话联动尚未完成官方 Desktop 实机验收。
 compatibility:
-  dsh: unverified
+  dsh: 0.2.0-rc.2
   platform:
     - web
-    - windows
 screenshots:
   - https://raw.githubusercontent.com/YangShen-SWE/dsh-plugin-simple-pet/c013c3555a94d522c9019bb51d4842b275f20da0/docs/screenshots/deepseek.png
   - https://raw.githubusercontent.com/YangShen-SWE/dsh-plugin-simple-pet/c013c3555a94d522c9019bb51d4842b275f20da0/docs/screenshots/codex.png
 listScreenshot: https://raw.githubusercontent.com/YangShen-SWE/dsh-plugin-simple-pet/c013c3555a94d522c9019bb51d4842b275f20da0/docs/screenshots/deepseek.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: repository-card
   installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 68186af407e7cfb46272c04b15fde30bbff60389
+    packageVersion: 1.1.6
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-01T22:47:45.795Z
+    findings: []
 license:
-  code: MIT
+  code: SEE LICENSE
   commercialUse: false
   notice: 代码MIT；默认图集允许随原样插件分发并保留声明，单独复用或用于其他产品须另获授权。
 featuredRank: 1000
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-31T11:28:16Z
-metadataUpdatedAt: 2026-10-31T11:28:16Z
+releaseUpdatedAt: 2026-11-01T22:47:47.070Z
+metadataUpdatedAt: 2026-11-01T22:47:47.070Z
 starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-10-31T11:28:16Z
+updatedAt: 2026-11-01T22:47:47.070Z

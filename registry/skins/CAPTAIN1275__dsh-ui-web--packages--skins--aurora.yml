@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:CAPTAIN1275/dsh-ui-web#b419ac5ba6ccb63f49fadccb96dc9267e39a3109&path:/packages/skins/aurora
+  target: github:CAPTAIN1275/dsh-ui-web#d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f&path:/packages/skins/aurora
   version: 0.4.2
-  commit: b419ac5ba6ccb63f49fadccb96dc9267e39a3109
+  commit: d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
-  allowBuild: "@captain1275/dsh-client-ui-skin-aurora@https://codeload.github.com/CAPTAIN1275/dsh-ui-web/tar.gz/b419ac5ba6ccb63f49fadccb96dc9267e39a3109#path:packages/skins/aurora"
+  allowBuild: "@captain1275/dsh-client-ui-skin-aurora@https://codeload.github.com/CAPTAIN1275/dsh-ui-web/tar.gz/d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f#path:packages/skins/aurora"
 compatibility:
   dsh: ^0.1.1-rc.2
   platform:
@@ -48,26 +48,25 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
-    installCommand: improve
+    installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.2 未被本次检测范围 ^0.2.0-rc.2 完全覆盖（固定版本 b419ac5ba6ccb63f49fadccb96dc9267e39a3109）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.2 未被本次检测范围 ^0.2.0-rc.2 完全覆盖（固定版本 d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: b419ac5ba6ccb63f49fadccb96dc9267e39a3109
+    commit: d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f
     packageVersion: 0.4.2
     scannerVersion: static-v2
     dshVersion: ^0.2.0-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-10-27T23:00:37.525Z
+    checkedAt: 2026-11-01T22:47:23.035Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
-starsSnapshot: 42
 featuredRank: 969
-releaseUpdatedAt: 2026-10-27T23:00:40.702Z
-metadataUpdatedAt: 2026-10-27T23:00:40.702Z
+starsSnapshot: 42
+releaseUpdatedAt: 2026-11-01T22:47:26.186Z
+metadataUpdatedAt: 2026-11-01T22:47:26.186Z
 starsUpdatedAt: 2026-10-30T23:01:00.010Z
-updatedAt: 2026-10-30T23:01:00.010Z
+updatedAt: 2026-11-01T22:47:26.186Z

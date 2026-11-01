@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:AIR-pixel/air-pixel-liquid-glass#c0e2fbff0cbfeb5416e6d3542e5863ccb7360cbc
-  version: 0.2.1
-  commit: c0e2fbff0cbfeb5416e6d3542e5863ccb7360cbc
+  target: github:AIR-pixel/air-pixel-liquid-glass#9ae9fa7cf63592a81b9469a023551a3b0d28e551
+  version: 0.2.2
+  commit: 9ae9fa7cf63592a81b9469a023551a3b0d28e551
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -38,23 +38,25 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: improve
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: c0e2fbff0cbfeb5416e6d3542e5863ccb7360cbc
-    packageVersion: 0.2.1
+    commit: 9ae9fa7cf63592a81b9469a023551a3b0d28e551
+    packageVersion: 0.2.2
     scannerVersion: static-v2
-    dshVersion: 0.2.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:32:21.490Z
+    checkedAt: 2026-11-01T22:47:38.487Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 998
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-11-01T22:47:40.010Z
+metadataUpdatedAt: 2026-11-01T22:47:40.010Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-01T22:47:40.010Z

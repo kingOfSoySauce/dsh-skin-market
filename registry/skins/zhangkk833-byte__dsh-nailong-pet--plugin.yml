@@ -25,7 +25,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-    - windows
 screenshots:
   - https://raw.githubusercontent.com/zhangkk833-byte/dsh-nailong-pet/4010d9868892179d80c5ecf8a72221d7a1efdbb1/docs/img/on-desktop.png
   - https://raw.githubusercontent.com/zhangkk833-byte/dsh-nailong-pet/4010d9868892179d80c5ecf8a72221d7a1efdbb1/docs/img/panel.png
@@ -33,15 +32,34 @@ screenshots:
 listScreenshot: https://raw.githubusercontent.com/zhangkk833-byte/dsh-nailong-pet/4010d9868892179d80c5ecf8a72221d7a1efdbb1/docs/img/on-desktop.png
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 4010d9868892179d80c5ecf8a72221d7a1efdbb1
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:10:40.589Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
   notice: 角色与第三方美术素材按仓库声明处理。
+starsSnapshot: 0
 featuredRank: 1000
-starsSnapshot: 1
 releaseUpdatedAt: 2026-10-31T11:28:16Z
-metadataUpdatedAt: 2026-10-31T11:28:16Z
-starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-10-31T11:28:16Z
+metadataUpdatedAt: 2026-11-01T22:47:11.915Z
+starsUpdatedAt: 2026-11-01T22:47:11.915Z
+updatedAt: 2026-11-01T22:47:11.915Z

@@ -20,6 +20,12 @@ install:
   desktop:
     mode: manual-only
     reason: 尚未完成固定版本的 DSH Desktop 排版验收。
+  npm:
+    name: dsh-echocat-prettier
+    version: 0.23.6
+    integrity: sha512-d7JTusw8hIVPgU5Y1srHxE6BRrCInmw/hZ1+Pazh/Zwchh/mhfp1crYkJdCFYhQ19nk8lr2d8AKFZhL84JpVcg==
+    repository: https://github.com/VDERR/dsh-echocat-prettier
+    gitHead: 8af04d93f2378acd7d421d9d9eb86af4bf9f9310
 compatibility:
   dsh: unverified
   platform:
@@ -31,14 +37,32 @@ screenshots:
 listScreenshot: https://raw.githubusercontent.com/VDERR/dsh-echocat-prettier/8af04d93f2378acd7d421d9d9eb86af4bf9f9310/docs/images/echocat-prettier-before-after-v2.3.4.png
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 8af04d93f2378acd7d421d9d9eb86af4bf9f9310
+    packageVersion: 0.23.6
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:10:27.799Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-31T11:28:16Z
-metadataUpdatedAt: 2026-10-31T11:28:16Z
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-01T22:47:11.915Z
+metadataUpdatedAt: 2026-11-01T22:47:11.915Z
 starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-10-31T11:28:16Z
+updatedAt: 2026-11-01T22:47:11.915Z

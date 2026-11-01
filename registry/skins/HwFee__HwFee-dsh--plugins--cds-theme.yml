@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:HwFee/HwFee-dsh#7fe59cdbde24873e06c3a0d87c24c3eafb19146e&path:/plugins/cds-theme
-  version: 0.1.8
-  commit: 7fe59cdbde24873e06c3a0d87c24c3eafb19146e
+  target: github:HwFee/HwFee-dsh#43588c4674f0b617b407f8b9c638a314483927fc&path:/plugins/cds-theme
+  version: 0.1.11
+  commit: 43588c4674f0b617b407f8b9c638a314483927fc
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -45,19 +45,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 7fe59cdbde24873e06c3a0d87c24c3eafb19146e
-    packageVersion: 0.1.8
+    commit: 43588c4674f0b617b407f8b9c638a314483927fc
+    packageVersion: 0.1.11
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:53:45.410Z
+    checkedAt: 2026-11-01T22:47:40.531Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 999
-releaseUpdatedAt: 2026-10-30T03:53:46.068Z
-metadataUpdatedAt: 2026-10-30T03:53:46.068Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-01T22:47:40.936Z
+metadataUpdatedAt: 2026-11-01T22:47:40.936Z
 starsUpdatedAt: 2026-10-26T23:11:49.424Z
-updatedAt: 2026-10-30T03:53:46.068Z
+updatedAt: 2026-11-01T22:47:40.936Z
