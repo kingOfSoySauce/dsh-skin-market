@@ -30,14 +30,32 @@ screenshots:
 listScreenshot: https://raw.githubusercontent.com/LoveIrishCoffee/dsh-effort-ultra-skin/203cd9078bd7be5af6fa1fad497ef512e7eb7b52/docs/screenshots/01-light.png
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 203cd9078bd7be5af6fa1fad497ef512e7eb7b52
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:10:06.862Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-31T11:28:16Z
-metadataUpdatedAt: 2026-10-31T11:28:16Z
+metadataUpdatedAt: 2026-11-01T22:47:11.915Z
 starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-10-31T11:28:16Z
+updatedAt: 2026-11-01T22:47:11.915Z

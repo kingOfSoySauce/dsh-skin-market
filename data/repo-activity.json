@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-01T01:44:35.458Z",
+  "generatedAt": "2026-11-01T22:48:47.348Z",
   "historyDays": 71,
   "earliestObservedDay": 20681,
   "repos": {
@@ -65,11 +65,17 @@
     "12we21/cute-fat-fish-pet": {
       "owner": "12we21",
       "createdAt": null,
-      "daily": {},
+      "daily": {
+        "2026-11-01": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 0,
@@ -196,6 +202,19 @@
     "6hollis/dsh-hiyuki-frost-sakura": {
       "owner": "6HOLLIS",
       "createdAt": "2026-08-24T16:24:49Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "6shenhonghong9/dsh-startup-screen": {
+      "owner": "6shenhonghong9",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -985,6 +1004,19 @@
         "commits": 0,
         "pulls": 0,
         "issues": 1
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "aumisatori/dsh-ui-beautify": {
+      "owner": "AumiSatori",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
       },
       "forks": 0,
       "watchers": 0,
@@ -1838,11 +1870,16 @@
           "commits": 0,
           "pulls": 2,
           "issues": 0
+        },
+        "2026-11-01": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 0,
-        "pulls": 3,
+        "pulls": 4,
         "issues": 0
       },
       "forks": 0,
@@ -2244,12 +2281,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 3
+        },
+        "2026-11-01": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 23,
         "pulls": 4,
-        "issues": 13
+        "issues": 14
       },
       "forks": 10,
       "watchers": 4,
@@ -2910,6 +2952,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "elsmm-player/dsh-phone-theme-tool": {
+      "owner": "Elsmm-player",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "elysia395/dsh-wallpaper-engine": {
       "owner": "elysia395",
       "createdAt": "2026-08-16T16:04:08Z",
@@ -3249,6 +3304,19 @@
     },
     "erbsen16/dsh-client-ui-dracula": {
       "owner": "Erbsen16",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "eric-song-dev/dsh-ikun-pet": {
+      "owner": "eric-song-dev",
       "createdAt": null,
       "daily": {},
       "totals": {
@@ -3812,6 +3880,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "fwkkk666/dsh-za-warudo": {
+      "owner": "Fwkkk666",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "ganglongyu/dsh-kun-like-pet": {
       "owner": "GangLongYu",
       "createdAt": null,
@@ -4177,6 +4258,19 @@
     },
     "harmlessfunny/dsh-pet-in-frame": {
       "owner": "HarmlessFunny",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "hasan-aghayev/dsh-pet-companion": {
+      "owner": "hasan-aghayev",
       "createdAt": null,
       "daily": {},
       "totals": {
@@ -5624,6 +5718,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "kshinekx/the-herta-atelier": {
+      "owner": "KshineKX",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "kurosawageeker/dsh-moe-lite": {
       "owner": "KurosawaGeeker",
       "createdAt": "2026-10-20T07:51:25Z",
@@ -6775,6 +6882,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "loveirishcoffee/dsh-effort-ultra-skin": {
+      "owner": "LoveIrishCoffee",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "loyalchiiina/dsh-todo-float-ball": {
       "owner": "loyalchiiina",
       "createdAt": null,
@@ -7199,6 +7319,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "menghuan1918/dsh-deep-diving-skin": {
+      "owner": "Menghuan1918",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "meto-ventus/dsh-ventus-whale": {
       "owner": "meto-ventus",
       "createdAt": "2026-08-15T17:33:22Z",
@@ -7523,11 +7656,16 @@
           "commits": 1,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-11-01": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 16,
-        "pulls": 0,
+        "pulls": 1,
         "issues": 4
       },
       "forks": 7,
@@ -8301,12 +8439,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-01": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 3
         }
       },
       "totals": {
         "commits": 247,
         "pulls": 1,
-        "issues": 28
+        "issues": 31
       },
       "forks": 1,
       "watchers": 0,
@@ -8380,11 +8523,17 @@
     "orderg-x/dsh-video-preview": {
       "owner": "OrderG-X",
       "createdAt": null,
-      "daily": {},
+      "daily": {
+        "2026-11-01": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 0,
@@ -8575,6 +8724,32 @@
     },
     "qin839/dsh-visual-system": {
       "owner": "qin839",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "qiqibabyy/dsh-pet-desktop": {
+      "owner": "qiqibabyy",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "qiuzhiyei/dsh-companion": {
+      "owner": "qiuzhiyei",
       "createdAt": null,
       "daily": {},
       "totals": {
@@ -8907,12 +9082,17 @@
           "commits": 12,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-11-01": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 99,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 0,
@@ -9291,11 +9471,16 @@
           "commits": 0,
           "pulls": 2,
           "issues": 2
+        },
+        "2026-11-01": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 252,
-        "pulls": 29,
+        "pulls": 30,
         "issues": 39
       },
       "forks": 27,
@@ -11383,6 +11568,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "vderr/dsh-echocat-prettier": {
+      "owner": "VDERR",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "vegetable-kun/dsh_plugin_taffy": {
       "owner": "vegetable-kun",
       "createdAt": null,
@@ -11780,12 +11978,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 2
+        },
+        "2026-11-01": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 216,
         "pulls": 3,
-        "issues": 18
+        "issues": 19
       },
       "forks": 3,
       "watchers": 0,
@@ -12500,6 +12703,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "yangshen-swe/dsh-plugin-simple-pet": {
+      "owner": "YangShen-SWE",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "yannicksong0106/dsh-550c-boot": {
       "owner": "yannicksong0106",
       "createdAt": null,
@@ -12536,12 +12752,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-01": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 6,
         "pulls": 0,
-        "issues": 1
+        "issues": 2
       },
       "forks": 0,
       "watchers": 1,
@@ -13195,6 +13416,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "yunxiiqwq/drool-whale-pet-for-dsh": {
+      "owner": "yunxiiQwQ",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "yunxiiqwq/dsh-maid-whale-webui": {
       "owner": "yunxiiQwQ",
       "createdAt": "2026-08-15T04:52:10Z",
@@ -13697,6 +13931,19 @@
     "zhang9628/qixi-plugin": {
       "owner": "Zhang9628",
       "createdAt": "2026-08-19T08:48:16Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "zhangkk833-byte/dsh-nailong-pet": {
+      "owner": "zhangkk833-byte",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,

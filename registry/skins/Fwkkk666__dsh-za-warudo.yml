@@ -30,14 +30,33 @@ screenshots:
 listScreenshot: https://raw.githubusercontent.com/Fwkkk666/dsh-za-warudo/3ac4ac1c46e5cf0a35381472f664e3198f8eac9b/media/dark.png
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.7 未被本次检测范围 0.1.0-rc.7 完全覆盖（固定版本 3ac4ac1c46e5cf0a35381472f664e3198f8eac9b）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 3ac4ac1c46e5cf0a35381472f664e3198f8eac9b
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.7
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:09:53.853Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-31T11:28:16Z
-metadataUpdatedAt: 2026-10-31T11:28:16Z
+metadataUpdatedAt: 2026-11-01T22:47:11.915Z
 starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-10-31T11:28:16Z
+updatedAt: 2026-11-01T22:47:11.915Z

@@ -5,7 +5,7 @@ name:
 author: qiqibabyy
 description: "A self-contained desktop pet plugin for DeepSeek Harness: Codex-style frame-animated pet living on your desktop, with its own affinity state machine, pet registry (Codex pet.json compatible), activity bubbles wired to harness sessions, decorations, and a settings-page card. No web pet required."
 repo: https://github.com/qiqibabyy/dsh-pet-desktop
-package: '@qiqibabyy/dsh-pet-desktop'
+package: "@qiqibabyy/dsh-pet-desktop"
 rowId: pet-desktop
 category: pet
 tags:
@@ -31,14 +31,33 @@ screenshots:
 listScreenshot: https://raw.githubusercontent.com/qiqibabyy/dsh-pet-desktop/4d19c08fdeef54cfd38d8bfd7e6b4ad17fdea22b/screenshots/tap-card.jpg
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 4d19c08fdeef54cfd38d8bfd7e6b4ad17fdea22b
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:09:16.061Z
+    findings: []
 license:
   code: Apache-2.0
   commercialUse: true
+starsSnapshot: 2
 featuredRank: 1000
-starsSnapshot: 1
 releaseUpdatedAt: 2026-10-31T11:28:16Z
-metadataUpdatedAt: 2026-10-31T11:28:16Z
-starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-10-31T11:28:16Z
+metadataUpdatedAt: 2026-11-01T22:47:11.915Z
+starsUpdatedAt: 2026-11-01T22:47:11.915Z
+updatedAt: 2026-11-01T22:47:11.915Z

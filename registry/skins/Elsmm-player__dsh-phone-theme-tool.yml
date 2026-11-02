@@ -37,18 +37,19 @@ screenshots:
   - skin-screenshots/Elsmm-player__dsh-phone-theme-tool/cd9d99094830a20ec34e91e32a2f1e526963e63a/settings.png
 listScreenshot: skin-screenshots/Elsmm-player__dsh-phone-theme-tool/cd9d99094830a20ec34e91e32a2f1e526963e63a/home.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.2.0-rc.2 未被本次检测范围 0.2.1-rc.2 完全覆盖（固定版本 cd9d99094830a20ec34e91e32a2f1e526963e63a）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: cd9d99094830a20ec34e91e32a2f1e526963e63a
     packageVersion: 1.0.0
@@ -64,6 +65,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-22T06:09:00Z
-metadataUpdatedAt: 2026-10-31T06:50:39Z
+metadataUpdatedAt: 2026-11-01T22:47:49.461Z
 starsUpdatedAt: 2026-10-31T06:50:39Z
-updatedAt: 2026-10-31T06:50:39Z
+updatedAt: 2026-11-01T22:47:49.461Z

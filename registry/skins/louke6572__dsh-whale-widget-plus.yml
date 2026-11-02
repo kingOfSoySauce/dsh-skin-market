@@ -13,9 +13,9 @@ tags:
 modes:
   - light
 install:
-  target: github:louke6572/dsh-whale-widget-plus#41880d40feedcd13fc62136b57c3b42a9253e36e
-  version: 0.7.0
-  commit: 41880d40feedcd13fc62136b57c3b42a9253e36e
+  target: github:louke6572/dsh-whale-widget-plus#8f5022e798d2b0d6641460b05a8695b5ddd6165b
+  version: 0.7.1
+  commit: 8f5022e798d2b0d6641460b05a8695b5ddd6165b
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -45,19 +45,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 41880d40feedcd13fc62136b57c3b42a9253e36e
-    packageVersion: 0.7.0
+    commit: 8f5022e798d2b0d6641460b05a8695b5ddd6165b
+    packageVersion: 0.7.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-01T01:43:24.372Z
+    checkedAt: 2026-11-01T22:47:18.775Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 944
-starsSnapshot: 81
-releaseUpdatedAt: 2026-11-01T01:43:24.821Z
-metadataUpdatedAt: 2026-11-01T01:43:24.821Z
-starsUpdatedAt: 2026-11-01T01:43:24.821Z
-updatedAt: 2026-11-01T01:43:24.821Z
+starsSnapshot: 82
+releaseUpdatedAt: 2026-11-01T22:47:19.136Z
+metadataUpdatedAt: 2026-11-01T22:47:19.136Z
+starsUpdatedAt: 2026-11-01T22:47:19.136Z
+updatedAt: 2026-11-01T22:47:19.136Z

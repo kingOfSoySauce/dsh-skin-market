@@ -26,17 +26,36 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Menghuan1918/dsh-deep-diving-skin/8cc4c62a0275261886542f7a33c0126748c8dbaa/icon.svg
-listScreenshot: https://raw.githubusercontent.com/Menghuan1918/dsh-deep-diving-skin/8cc4c62a0275261886542f7a33c0126748c8dbaa/icon.svg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: repository-card
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - README 图片未通过文件、尺寸或图片 hash 检查，请补充可核验的运行截图。
+  scan:
+    commit: 8cc4c62a0275261886542f7a33c0126748c8dbaa
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1 <0.3.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T23:11:32.699Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 4
+listScreenshot: https://raw.githubusercontent.com/Menghuan1918/dsh-deep-diving-skin/8cc4c62a0275261886542f7a33c0126748c8dbaa/icon.svg
 featuredRank: 1000
-starsSnapshot: 0
 releaseUpdatedAt: 2026-10-31T11:28:16Z
-metadataUpdatedAt: 2026-10-31T11:28:16Z
-starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-10-31T11:28:16Z
+metadataUpdatedAt: 2026-11-01T22:47:11.915Z
+starsUpdatedAt: 2026-11-01T22:47:11.915Z
+updatedAt: 2026-11-01T22:47:11.915Z

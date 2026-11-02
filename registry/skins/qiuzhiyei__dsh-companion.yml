@@ -5,7 +5,7 @@ name:
 author: qiuzhiyei
 description: DSH 伴侣 — DeepSeek Harness 伴飞插件：用量统计、桌宠陪伴、预算告警，以及对宿主界面的持续增强。
 repo: https://github.com/qiuzhiyei/dsh-companion
-package: '@qiuzhiyei/dsh-companion'
+package: "@qiuzhiyei/dsh-companion"
 rowId: dsh-companion
 category: pet
 tags:
@@ -14,30 +14,54 @@ modes:
   - light
   - dark
 install:
-  target: github:qiuzhiyei/dsh-companion#8d97a73422c245a3522cc6169b3bddd5ca1c1371
-  version: 1.0.4
-  commit: 8d97a73422c245a3522cc6169b3bddd5ca1c1371
+  target: github:qiuzhiyei/dsh-companion#40eb3132b07b1749ea39fc852955c1ce9702f898
+  version: 2.0.0
+  commit: 40eb3132b07b1749ea39fc852955c1ce9702f898
   desktop:
     mode: manual-only
     reason: 首次使用需要 Electron 辅助进程和原生桌宠验收。
+  npm:
+    name: "@qiuzhiyei/dsh-companion"
+    version: 2.0.0
+    integrity: sha512-WLjGuvtWMrIlk0eWSMpW1/89StboHpDEZRYJ8yVHiwogvns2Qui+9fS99aUO89IdG1tPQ/sFctPVKYL+HCz40Q==
+    repository: https://github.com/qiuzhiyei/dsh-companion
+    gitHead: 40eb3132b07b1749ea39fc852955c1ce9702f898
 compatibility:
-  dsh: unverified
+  dsh: 0.2.0-rc.2
   platform:
     - web
-    - windows
 screenshots:
   - https://raw.githubusercontent.com/qiuzhiyei/dsh-companion/8d97a73422c245a3522cc6169b3bddd5ca1c1371/docs/images/pet.png
-listScreenshot: https://raw.githubusercontent.com/qiuzhiyei/dsh-companion/8d97a73422c245a3522cc6169b3bddd5ca1c1371/docs/images/pet.png
 review:
-  compatibility: unverified
-  preview: repository-card
+  compatibility: verified
+  preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: 40eb3132b07b1749ea39fc852955c1ce9702f898
+    packageVersion: 2.0.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-30T23:01:21.290Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-31T11:28:16Z
-metadataUpdatedAt: 2026-10-31T11:28:16Z
+listScreenshot: https://raw.githubusercontent.com/qiuzhiyei/dsh-companion/8d97a73422c245a3522cc6169b3bddd5ca1c1371/docs/images/pet.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-01T22:47:11.915Z
+metadataUpdatedAt: 2026-11-01T22:47:11.915Z
 starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-10-31T11:28:16Z
+updatedAt: 2026-11-01T22:47:11.915Z
