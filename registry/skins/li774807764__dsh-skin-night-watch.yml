@@ -1,9 +1,52 @@
-url: https://github.com/li774807764/ai-workarea
-subpath: skins/night-watch
-name: dsh-skin-night-watch
+id: li774807764.night.watch
+name:
+  zh: night-watch
+  en: night-watch
 author: li774807764
 description: Night Watch (潮汐值班) — 低照度深海皮肤：平静叙事的晚班日志、潮汐雷达与徽章式仪表，纯 CSS 覆盖 DSH 的 --dsw-* token 体系。
+repo: https://github.com/li774807764/ai-workarea
+subpath: skins/night-watch
+package: dsh-skin-night-watch
+rowId: night-watch
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:li774807764/ai-workarea#bb28478b3102feac1e61468ac6708ee6cc3c6544&path:/skins/night-watch
+  version: 1.0.0
+  commit: bb28478b3102feac1e61468ac6708ee6cc3c6544
+compatibility:
+  dsh: unverified
+  platform:
+    - web
 screenshots:
-  - screenshots/01-main.png
-  - screenshots/02-radar.png
-  - screenshots/03-log.png
+  - https://raw.githubusercontent.com/li774807764/ai-workarea/bb28478b3102feac1e61468ac6708ee6cc3c6544/skins/night-watch/screenshots/01-main.png
+  - https://raw.githubusercontent.com/li774807764/ai-workarea/bb28478b3102feac1e61468ac6708ee6cc3c6544/skins/night-watch/screenshots/02-radar.png
+  - https://raw.githubusercontent.com/li774807764/ai-workarea/bb28478b3102feac1e61468ac6708ee6cc3c6544/skins/night-watch/screenshots/03-log.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-02T01:48:00.307Z
+metadataUpdatedAt: 2026-11-02T01:48:00.307Z
+starsUpdatedAt: 2026-11-02T01:48:00.307Z
+updatedAt: 2026-11-02T01:48:00.307Z
