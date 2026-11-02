@@ -1,0 +1,42 @@
+id: alycestocking.dsh-yukimi-theme
+name:
+  zh: 佐城雪美主题
+  en: Yukimi Theme
+author: AlyceStocking
+description: 佐城雪美主题：深蓝配色、卡面背景、桌面宠物纸片小人、轮播图和签名铭牌。
+repo: https://github.com/AlyceStocking/dsh-yukimi-theme
+package: dsh-yukimi-theme
+rowId: yukimi-theme
+category: skin
+tags:
+  - appearance
+  - pet
+modes:
+  - light
+  - dark
+install:
+  target: github:AlyceStocking/dsh-yukimi-theme#4b162a3572e894e71001f3cefd0105519d5c4461
+  version: 1.2.0-desktop.3
+  commit: 4b162a3572e894e71001f3cefd0105519d5c4461
+  desktop:
+    mode: manual-only
+    reason: 尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+license:
+  code: MIT
+  commercialUse: true
+  notice: 代码 MIT；角色与在线素材按仓库说明使用，不自动纳入 MIT 范围。
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-01T00:00:00.000Z
+metadataUpdatedAt: 2026-11-02T00:00:00.000Z
+starsUpdatedAt: 2026-11-01T00:00:00.000Z
+updatedAt: 2026-11-02T00:00:00.000Z

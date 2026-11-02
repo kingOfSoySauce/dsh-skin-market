@@ -1,0 +1,41 @@
+id: aafff623.dsh-callout
+name:
+  zh: dsh-callout
+  en: dsh-callout
+author: Aafff623
+description: GitHub 风格的提示卡片：把助手 Markdown 里的 `> [!NOTE]`、`> [!TIP]`、`> [!WARNING]` 等引用块渲染成带图标和语义色的紧凑卡片，不修改 DSH 核心渲染器。
+repo: https://github.com/Aafff623/dsh-callout
+package: dsh-callout
+rowId: dsh-callout
+category: skin
+tags:
+  - appearance
+  - markdown
+modes:
+  - light
+  - dark
+install:
+  target: github:Aafff623/dsh-callout#0e92c135644be8d84601ea846098f2799ef4dcf7
+  version: 0.2.0
+  commit: 0e92c135644be8d84601ea846098f2799ef4dcf7
+  desktop:
+    mode: manual-only
+    reason: 尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。
+compatibility:
+  dsh: ">=0.1.2-rc.1"
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-01T00:00:00.000Z
+metadataUpdatedAt: 2026-11-02T00:00:00.000Z
+starsUpdatedAt: 2026-11-01T00:00:00.000Z
+updatedAt: 2026-11-02T00:00:00.000Z

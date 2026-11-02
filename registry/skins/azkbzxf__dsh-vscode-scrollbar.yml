@@ -1,0 +1,41 @@
+id: azkbzxf.dsh-vscode-scrollbar
+name:
+  zh: VS Code 滚动条与缩略图
+  en: VS Code Scrollbar + Minimap
+author: azkbzxf
+description: 把会话区滚动条改成 VS Code 风格：14px 常显滚动条、扁平半透明滑块，并在右侧加一列等比例的会话缩略图 minimap。
+repo: https://github.com/azkbzxf/dsh-vscode-scrollbar
+package: dsh-vscode-scrollbar
+rowId: vscode-scrollbar
+category: skin
+tags:
+  - appearance
+  - scrollbar
+modes:
+  - light
+  - dark
+install:
+  target: github:azkbzxf/dsh-vscode-scrollbar#b5416576cf9fc05a62f782002d95cd6b0dcdc46f
+  version: 1.2.1
+  commit: b5416576cf9fc05a62f782002d95cd6b0dcdc46f
+  desktop:
+    mode: manual-only
+    reason: 尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-01T00:00:00.000Z
+metadataUpdatedAt: 2026-11-02T00:00:00.000Z
+starsUpdatedAt: 2026-11-01T00:00:00.000Z
+updatedAt: 2026-11-02T00:00:00.000Z

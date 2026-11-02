@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T01:48:03.735Z",
+  "generatedAt": "2026-11-02T07:37:20.195Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -33633,6 +33633,61 @@
       }
     },
     {
+      "id": "under-the-ocean.packages-dsh-cyrene",
+      "name": {
+        "zh": "昔涟主题",
+        "en": "Cyrene Theme"
+      },
+      "author": "under-the-ocean",
+      "description": "昔涟（Cyrene）主题与桌宠：珍珠白粉配色、Live2D 桌宠、粒子背景、渐变底和可折叠配置卡。",
+      "repo": "https://github.com/under-the-ocean/dsh-plugin-cyrene",
+      "subpath": "packages/dsh-cyrene",
+      "package": "dsh-cyrene",
+      "rowId": "cyrene",
+      "category": "skin",
+      "tags": [
+        "appearance",
+        "pet",
+        "live2d"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:under-the-ocean/dsh-plugin-cyrene#4824aab1ffaf5d3f195ab8b68b32c31e206f99b7&path:/packages/dsh-cyrene",
+        "version": "0.4.2",
+        "commit": "4824aab1ffaf5d3f195ab8b68b32c31e206f99b7",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "repository-card",
+        "installation": "verified"
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": false,
+        "notice": "代码 MIT；Live2D 模型按仓库 MODEL_LICENSE 使用，须保留作者署名与底层角色的非商业说明。"
+      },
+      "featuredRank": 999,
+      "starsSnapshot": 1,
+      "releaseUpdatedAt": "2026-11-01T00:00:00.000Z",
+      "metadataUpdatedAt": "2026-11-02T00:00:00.000Z",
+      "starsUpdatedAt": "2026-11-01T00:00:00.000Z",
+      "updatedAt": "2026-11-02T00:00:00.000Z"
+    },
+    {
       "id": "v587d.dsh-custom-skin",
       "name": {
         "zh": "dsh-custom-skin",
@@ -35542,6 +35597,58 @@
       }
     },
     {
+      "id": "aafff623.dsh-callout",
+      "name": {
+        "zh": "dsh-callout",
+        "en": "dsh-callout"
+      },
+      "author": "Aafff623",
+      "description": "GitHub 风格的提示卡片：把助手 Markdown 里的 `> [!NOTE]`、`> [!TIP]`、`> [!WARNING]` 等引用块渲染成带图标和语义色的紧凑卡片，不修改 DSH 核心渲染器。",
+      "repo": "https://github.com/Aafff623/dsh-callout",
+      "package": "dsh-callout",
+      "rowId": "dsh-callout",
+      "category": "skin",
+      "tags": [
+        "appearance",
+        "markdown"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Aafff623/dsh-callout#0e92c135644be8d84601ea846098f2799ef4dcf7",
+        "version": "0.2.0",
+        "commit": "0e92c135644be8d84601ea846098f2799ef4dcf7",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。"
+        }
+      },
+      "compatibility": {
+        "dsh": ">=0.1.2-rc.1",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "repository-card",
+        "installation": "verified"
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-01T00:00:00.000Z",
+      "metadataUpdatedAt": "2026-11-02T00:00:00.000Z",
+      "starsUpdatedAt": "2026-11-01T00:00:00.000Z",
+      "updatedAt": "2026-11-02T00:00:00.000Z"
+    },
+    {
       "id": "aaronkate.dsh-codex-appearance",
       "name": {
         "zh": "dsh-codex-appearance",
@@ -35720,6 +35827,59 @@
       "metadataUpdatedAt": "2026-10-25T18:20:01.273Z",
       "starsUpdatedAt": "2026-10-24T21:34:17.947Z",
       "updatedAt": "2026-10-25T18:20:01.273Z"
+    },
+    {
+      "id": "alycestocking.dsh-yukimi-theme",
+      "name": {
+        "zh": "佐城雪美主题",
+        "en": "Yukimi Theme"
+      },
+      "author": "AlyceStocking",
+      "description": "佐城雪美主题：深蓝配色、卡面背景、桌面宠物纸片小人、轮播图和签名铭牌。",
+      "repo": "https://github.com/AlyceStocking/dsh-yukimi-theme",
+      "package": "dsh-yukimi-theme",
+      "rowId": "yukimi-theme",
+      "category": "skin",
+      "tags": [
+        "appearance",
+        "pet"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:AlyceStocking/dsh-yukimi-theme#4b162a3572e894e71001f3cefd0105519d5c4461",
+        "version": "1.2.0-desktop.3",
+        "commit": "4b162a3572e894e71001f3cefd0105519d5c4461",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "repository-card",
+        "installation": "verified"
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true,
+        "notice": "代码 MIT；角色与在线素材按仓库说明使用，不自动纳入 MIT 范围。"
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-01T00:00:00.000Z",
+      "metadataUpdatedAt": "2026-11-02T00:00:00.000Z",
+      "starsUpdatedAt": "2026-11-01T00:00:00.000Z",
+      "updatedAt": "2026-11-02T00:00:00.000Z"
     },
     {
       "id": "anarcadia.chuanban-dsh-theme",
@@ -36012,6 +36172,58 @@
           }
         ]
       }
+    },
+    {
+      "id": "azkbzxf.dsh-vscode-scrollbar",
+      "name": {
+        "zh": "VS Code 滚动条与缩略图",
+        "en": "VS Code Scrollbar + Minimap"
+      },
+      "author": "azkbzxf",
+      "description": "把会话区滚动条改成 VS Code 风格：14px 常显滚动条、扁平半透明滑块，并在右侧加一列等比例的会话缩略图 minimap。",
+      "repo": "https://github.com/azkbzxf/dsh-vscode-scrollbar",
+      "package": "dsh-vscode-scrollbar",
+      "rowId": "vscode-scrollbar",
+      "category": "skin",
+      "tags": [
+        "appearance",
+        "scrollbar"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:azkbzxf/dsh-vscode-scrollbar#b5416576cf9fc05a62f782002d95cd6b0dcdc46f",
+        "version": "1.2.1",
+        "commit": "b5416576cf9fc05a62f782002d95cd6b0dcdc46f",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "repository-card",
+        "installation": "verified"
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-01T00:00:00.000Z",
+      "metadataUpdatedAt": "2026-11-02T00:00:00.000Z",
+      "starsUpdatedAt": "2026-11-01T00:00:00.000Z",
+      "updatedAt": "2026-11-02T00:00:00.000Z"
     },
     {
       "id": "bauerelizabeth07139.dsh-pet-dafeiyu",
@@ -36586,6 +36798,86 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8a696431877f345a6d5cfc3e5842aeb6.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8a696431877f345a6d5cfc3e5842aeb6.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "columbina-sn.dsh-columbina-theme",
+      "name": {
+        "zh": "哥伦比娅 · 月隐银蓝",
+        "en": "Columbina Theme"
+      },
+      "author": "Columbina-sn",
+      "description": "哥伦比娅外观插件：月隐银蓝渐变毛玻璃主题、可编辑人格设定、12 张表情与星眸欢迎页。背景图需自备。",
+      "repo": "https://github.com/Columbina-sn/dsh-columbina-theme",
+      "package": "dsh-columbina-theme",
+      "rowId": "ui-columbina-theme",
+      "category": "skin",
+      "tags": [
+        "appearance",
+        "persona",
+        "stickers"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Columbina-sn/dsh-columbina-theme#464dd05c5b9f3942b7ba383a3ed5534ec844f6fe",
+        "version": "0.1.0",
+        "commit": "464dd05c5b9f3942b7ba383a3ed5534ec844f6fe",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "仓库是 private 包且未发布 npm，请按 README 从 GitHub 固定 commit 安装。"
+        }
+      },
+      "compatibility": {
+        "dsh": ">=0.2.1-rc.2",
+        "platform": [
+          "web"
+        ]
+      },
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Columbina-sn__dsh-columbina-theme/464dd05c5b9f3942b7ba383a3ed5534ec844f6fe/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Columbina-sn__dsh-columbina-theme/464dd05c5b9f3942b7ba383a3ed5534ec844f6fe/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Columbina-sn__dsh-columbina-theme/464dd05c5b9f3942b7ba383a3ed5534ec844f6fe/settings.png"
+      ],
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": false,
+        "notice": "代码 MIT；《原神》角色与名称属 miHoYo/HoYoverse，12 张表情与欢迎头像不在 MIT 范围内，仅用于非商业同人演示；仓库不含任何背景图。"
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 1,
+      "releaseUpdatedAt": "2026-11-01T00:00:00.000Z",
+      "metadataUpdatedAt": "2026-11-02T00:00:00.000Z",
+      "starsUpdatedAt": "2026-11-01T00:00:00.000Z",
+      "updatedAt": "2026-11-02T00:00:00.000Z",
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Columbina-sn__dsh-columbina-theme/464dd05c5b9f3942b7ba383a3ed5534ec844f6fe/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e847bb6c751ca3878d4bd1b523d56dcc.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e847bb6c751ca3878d4bd1b523d56dcc.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e847bb6c751ca3878d4bd1b523d56dcc.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e847bb6c751ca3878d4bd1b523d56dcc.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f82306a2916533c9a88be7c08b799923.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f82306a2916533c9a88be7c08b799923.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ddaf79ea23c3c09326b86000e7e805e6.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ddaf79ea23c3c09326b86000e7e805e6.full.webp"
           }
         ]
       }

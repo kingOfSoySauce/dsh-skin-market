@@ -1,0 +1,47 @@
+id: columbina-sn.dsh-columbina-theme
+name:
+  zh: 哥伦比娅 · 月隐银蓝
+  en: Columbina Theme
+author: Columbina-sn
+description: 哥伦比娅外观插件：月隐银蓝渐变毛玻璃主题、可编辑人格设定、12 张表情与星眸欢迎页。背景图需自备。
+repo: https://github.com/Columbina-sn/dsh-columbina-theme
+package: dsh-columbina-theme
+rowId: ui-columbina-theme
+category: skin
+tags:
+  - appearance
+  - persona
+  - stickers
+modes:
+  - light
+  - dark
+install:
+  target: github:Columbina-sn/dsh-columbina-theme#464dd05c5b9f3942b7ba383a3ed5534ec844f6fe
+  version: 0.1.0
+  commit: 464dd05c5b9f3942b7ba383a3ed5534ec844f6fe
+  desktop:
+    mode: manual-only
+    reason: 仓库是 private 包且未发布 npm，请按 README 从 GitHub 固定 commit 安装。
+compatibility:
+  dsh: ">=0.2.1-rc.2"
+  platform:
+    - web
+marketScreenshots:
+  - skin-screenshots/Columbina-sn__dsh-columbina-theme/464dd05c5b9f3942b7ba383a3ed5534ec844f6fe/home.png
+  - skin-screenshots/Columbina-sn__dsh-columbina-theme/464dd05c5b9f3942b7ba383a3ed5534ec844f6fe/conversation.png
+  - skin-screenshots/Columbina-sn__dsh-columbina-theme/464dd05c5b9f3942b7ba383a3ed5534ec844f6fe/settings.png
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+license:
+  code: MIT
+  commercialUse: false
+  notice: 代码 MIT；《原神》角色与名称属 miHoYo/HoYoverse，12 张表情与欢迎头像不在 MIT 范围内，仅用于非商业同人演示；仓库不含任何背景图。
+featuredRank: 1000
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-01T00:00:00.000Z
+metadataUpdatedAt: 2026-11-02T00:00:00.000Z
+starsUpdatedAt: 2026-11-01T00:00:00.000Z
+updatedAt: 2026-11-02T00:00:00.000Z

@@ -4,6 +4,20 @@
 
 安装版本固定到对应收录 commit；预览图使用 registry 中记录的仓库素材。收录市场不等于 DSH 官方、安全团队或市场对皮肤的安全背书；兼容性和素材授权状态请以皮肤仓库说明为准。
 
+<a id="recent-2026-11-02"></a>
+
+## 2026-11-02 · 补图后收录（5 项）
+
+这 5 项都在固定 commit 的隔离 DSH 里实机跑过，`home` / `conversation` / `settings` 三视图来自本轮真实捕获，theme marker 通过且无浏览器错误。
+
+| 条目 | 类型 | 固定版本 | 许可与边界 |
+| --- | --- | --- | --- |
+| [dsh-callout](https://github.com/Aafff623/dsh-callout) | `skin` | `0.2.0` · [`0e92c13`](https://github.com/Aafff623/dsh-callout/tree/0e92c135644be8d84601ea846098f2799ef4dcf7) | MIT；把 `> [!NOTE]` 等引用块渲染成提示卡片 |
+| [dsh-plugin-cyrene](https://github.com/under-the-ocean/dsh-plugin-cyrene/tree/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/packages/dsh-cyrene) | `skin` | `0.4.2` · [`4824aab`](https://github.com/under-the-ocean/dsh-plugin-cyrene/tree/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/packages/dsh-cyrene) | 代码 MIT；Live2D 模型按仓库 `MODEL_LICENSE` 使用，须保留署名与非商业说明 |
+| [dsh-yukimi-theme](https://github.com/AlyceStocking/dsh-yukimi-theme) | `skin` | `1.2.0-desktop.3` · [`4b162a3`](https://github.com/AlyceStocking/dsh-yukimi-theme/tree/4b162a3572e894e71001f3cefd0105519d5c4461) | 代码 MIT；角色与在线素材按仓库说明使用 |
+| [dsh-vscode-scrollbar](https://github.com/azkbzxf/dsh-vscode-scrollbar) | `skin` | `1.2.1` · [`b541657`](https://github.com/azkbzxf/dsh-vscode-scrollbar/tree/b5416576cf9fc05a62f782002d95cd6b0dcdc46f) | MIT；VS Code 风格滚动条与 minimap |
+| [dsh-columbina-theme](https://github.com/Columbina-sn/dsh-columbina-theme) | `skin` | `0.1.0` · [`464dd05`](https://github.com/Columbina-sn/dsh-columbina-theme/tree/464dd05c5b9f3942b7ba383a3ed5534ec844f6fe) | 代码 MIT；角色、12 张表情与欢迎头像属 miHoYo/HoYoverse，仅非商业同人演示，仓库不含背景图 |
+
 <a id="recent-2026-10-31"></a>
 
 ## 2026-10-31 · 旧审批队列补录（11 项）
