@@ -6,37 +6,172 @@
 
 <a id="recent-2026-11-02"></a>
 
-## 2026-11-02 · 补图后收录（5 项）
+## 2026-11-02 · 哥伦比娅 · 月隐银蓝
 
-这 5 项都在固定 commit 的隔离 DSH 里实机跑过，`home` / `conversation` / `settings` 三视图来自本轮真实捕获，theme marker 通过且无浏览器错误。
+月隐银蓝渐变毛玻璃主题，可编辑人格设定、12 张表情与星眸欢迎页；背景图需自备。公开市场预览来自固定 commit 的实机捕获。
 
-| 条目 | 类型 | 固定版本 | 许可与边界 |
-| --- | --- | --- | --- |
-| [dsh-callout](https://github.com/Aafff623/dsh-callout) | `skin` | `0.2.0` · [`0e92c13`](https://github.com/Aafff623/dsh-callout/tree/0e92c135644be8d84601ea846098f2799ef4dcf7) | MIT；把 `> [!NOTE]` 等引用块渲染成提示卡片 |
-| [dsh-plugin-cyrene](https://github.com/under-the-ocean/dsh-plugin-cyrene/tree/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/packages/dsh-cyrene) | `skin` | `0.4.2` · [`4824aab`](https://github.com/under-the-ocean/dsh-plugin-cyrene/tree/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/packages/dsh-cyrene) | 代码 MIT；Live2D 模型按仓库 `MODEL_LICENSE` 使用，须保留署名与非商业说明 |
-| [dsh-yukimi-theme](https://github.com/AlyceStocking/dsh-yukimi-theme) | `skin` | `1.2.0-desktop.3` · [`4b162a3`](https://github.com/AlyceStocking/dsh-yukimi-theme/tree/4b162a3572e894e71001f3cefd0105519d5c4461) | 代码 MIT；角色与在线素材按仓库说明使用 |
-| [dsh-vscode-scrollbar](https://github.com/azkbzxf/dsh-vscode-scrollbar) | `skin` | `1.2.1` · [`b541657`](https://github.com/azkbzxf/dsh-vscode-scrollbar/tree/b5416576cf9fc05a62f782002d95cd6b0dcdc46f) | MIT；VS Code 风格滚动条与 minimap |
-| [dsh-columbina-theme](https://github.com/Columbina-sn/dsh-columbina-theme) | `skin` | `0.1.0` · [`464dd05`](https://github.com/Columbina-sn/dsh-columbina-theme/tree/464dd05c5b9f3942b7ba383a3ed5534ec844f6fe) | 代码 MIT；角色、12 张表情与欢迎头像属 miHoYo/HoYoverse，仅非商业同人演示，仓库不含背景图 |
+- GitHub：[Columbina-sn/dsh-columbina-theme](https://github.com/Columbina-sn/dsh-columbina-theme)
+- 收录版本：`0.1.0`
+- 固定 commit：`464dd05c5b9f3942b7ba383a3ed5534ec844f6fe`
+- 许可：代码 MIT；《原神》角色与名称属 miHoYo/HoYoverse，12 张表情与欢迎头像不在 MIT 范围内，仅用于非商业同人演示；仓库不含背景图
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Columbina-sn__dsh-columbina-theme/464dd05c5b9f3942b7ba383a3ed5534ec844f6fe/home.png" width="60%" alt="哥伦比娅 · 月隐银蓝">
+
+## 2026-11-02 · dsh-callout
+
+GitHub 风格提示卡片：把助手 Markdown 里的 `> [!NOTE]`、`> [!TIP]`、`> [!WARNING]` 等引用块渲染成带图标和语义色的紧凑卡片，不修改 DSH 核心渲染器。当前目录预览为仓库卡片，不写成实机截图。
+
+- GitHub：[Aafff623/dsh-callout](https://github.com/Aafff623/dsh-callout)
+- 收录版本：`0.2.0`
+- 固定 commit：`0e92c135644be8d84601ea846098f2799ef4dcf7`
+- 许可：MIT
+
+## 2026-11-02 · 昔涟主题
+
+珍珠白粉配色、Live2D 桌宠、粒子背景、渐变底和可折叠配置卡。当前目录预览为仓库卡片；Live2D 模型按仓库 `MODEL_LICENSE` 使用。
+
+- GitHub：[under-the-ocean/dsh-plugin-cyrene](https://github.com/under-the-ocean/dsh-plugin-cyrene/tree/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/packages/dsh-cyrene)
+- 收录版本：`0.4.2`
+- 固定 commit：`4824aab1ffaf5d3f195ab8b68b32c31e206f99b7`
+- 子目录：`packages/dsh-cyrene`
+- 许可：代码 MIT；Live2D 模型须保留作者署名，并遵守底层角色的非商业说明
+
+## 2026-11-02 · 佐城雪美主题
+
+深蓝配色、卡面背景、桌面宠物纸片小人、轮播图和签名铭牌。当前目录预览为仓库卡片；角色与在线素材按仓库说明使用。
+
+- GitHub：[AlyceStocking/dsh-yukimi-theme](https://github.com/AlyceStocking/dsh-yukimi-theme)
+- 收录版本：`1.2.0-desktop.3`
+- 固定 commit：`4b162a3572e894e71001f3cefd0105519d5c4461`
+- 许可：代码 MIT；角色与在线素材不自动纳入 MIT 范围
+
+## 2026-11-02 · VS Code 滚动条与缩略图
+
+把会话区滚动条改成 VS Code 风格，并在右侧增加等比例的会话缩略图 minimap。当前目录预览为仓库卡片。
+
+- GitHub：[azkbzxf/dsh-vscode-scrollbar](https://github.com/azkbzxf/dsh-vscode-scrollbar)
+- 收录版本：`1.2.1`
+- 固定 commit：`b5416576cf9fc05a62f782002d95cd6b0dcdc46f`
+- 许可：MIT
+
+## 2026-11-02 · night-watch
+
+低照度深海皮肤：平静叙事的晚班日志、潮汐雷达与徽章式仪表，使用纯 CSS 覆盖 DSH 的 `--dsw-*` token 体系。固定版本尚未声明可验证的 DSH Web 兼容范围。
+
+- GitHub：[li774807764/ai-workarea](https://github.com/li774807764/ai-workarea/tree/bb28478b3102feac1e61468ac6708ee6cc3c6544/skins/night-watch)
+- 收录版本：`1.0.0`
+- 固定 commit：`bb28478b3102feac1e61468ac6708ee6cc3c6544`
+- 子目录：`skins/night-watch`
+- 许可：MIT
+
+<img src="https://raw.githubusercontent.com/li774807764/ai-workarea/bb28478b3102feac1e61468ac6708ee6cc3c6544/skins/night-watch/screenshots/01-main.png" width="60%" alt="night-watch">
+
+<a id="recent-2026-11-01-herta"></a>
+
+## 2026-11-01 · 大黑塔 · 天才书房
+
+紫黑与晨光双主题、金边与玻璃材质的《崩坏：星穹铁道》大黑塔同人 DSH Web 皮肤；含藏镜图库与独立动态待机。
+
+- GitHub：[KshineKX/the-herta-atelier](https://github.com/KshineKX/the-herta-atelier/tree/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin)
+- 收录版本：`0.4.0-beta.14`
+- 固定 commit：`197291ae6ea0dee96da9e0b5bf36997faa8ec977`
+- 子目录：`packages/skin`
+- 许可：MIT
+
+<img src="https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/showcase-beta14-dark.jpg" width="60%" alt="大黑塔 · 天才书房">
 
 <a id="recent-2026-10-31"></a>
 
-## 2026-10-31 · 旧审批队列补录（11 项）
+这组条目按本轮审批口径收录：桌宠使用固定版本仓库中的角色图、控制面板或效果预览；它们支持市场展示和人工范围判断，但不冒充本轮隔离 DSH 实机截图。涉及独立原生窗口、配套插件或素材授权的限制仍以条目说明和上游仓库为准。
 
-这批条目按本轮审批口径收录：桌宠使用固定版本仓库中的角色图、控制面板或效果预览；它们支持市场展示和人工范围判断，但不冒充本轮隔离 DSH 实机截图。涉及独立原生窗口、配套插件或素材授权的限制仍以条目说明和上游仓库为准。
+## 2026-10-31 · dsh-ikun-pet
 
-| 条目 | 类型 | 固定版本 | 许可与边界 |
-| --- | --- | --- | --- |
-| [dsh-ikun-pet](https://github.com/eric-song-dev/dsh-ikun-pet) | `pet` | `2.2.0` · [`ada74e3`](https://github.com/eric-song-dev/dsh-ikun-pet/tree/ada74e3755730bbff1e619ca0f8ff7926d03ba98) | MIT |
-| [dsh-pet-desktop](https://github.com/qiqibabyy/dsh-pet-desktop) | `pet` | `0.1.0` · [`4d19c08`](https://github.com/qiqibabyy/dsh-pet-desktop/tree/4d19c08fdeef54cfd38d8bfd7e6b4ad17fdea22b) | Apache-2.0；桌宠为独立 Desktop 窗口 |
-| [dsh-companion](https://github.com/qiuzhiyei/dsh-companion) | `pet` | `1.0.4` · [`8d97a73`](https://github.com/qiuzhiyei/dsh-companion/tree/8d97a73422c245a3522cc6169b3bddd5ca1c1371) | MIT；含原生伴侣窗口 |
-| [dsh-plugin-simple-pet](https://github.com/YangShen-SWE/dsh-plugin-simple-pet) | `pet` | `1.1.3` · [`c013c35`](https://github.com/YangShen-SWE/dsh-plugin-simple-pet/tree/c013c3555a94d522c9019bb51d4842b275f20da0) | 代码 MIT；图集按作者声明使用 |
-| [drool-whale-pet-for-dsh](https://github.com/yunxiiQwQ/drool-whale-pet-for-dsh) | `pet` | `0.1.0` · [`8805f63`](https://github.com/yunxiiQwQ/drool-whale-pet-for-dsh/tree/8805f63bcd6a45eef5c430f37a900725cdac83ea) | BSD-3-Clause；Windows helper |
-| [dsh-pet-companion](https://github.com/hasan-aghayev/dsh-pet-companion) | `pet` | `0.1.1` · [`c10ffa3`](https://github.com/hasan-aghayev/dsh-pet-companion/tree/c10ffa313b38ec2802c0c0cc781470615a993c2b) | MIT；独立透明窗口 |
-| [dsh-za-warudo](https://github.com/Fwkkk666/dsh-za-warudo) | `skin` | `1.0.1` · [`3ac4ac1`](https://github.com/Fwkkk666/dsh-za-warudo/tree/3ac4ac1c46e5cf0a35381472f664e3198f8eac9b) | MIT；明暗切换时停动效 |
-| [dsh-effort-ultra-skin](https://github.com/LoveIrishCoffee/dsh-effort-ultra-skin) | `skin` | `0.1.0` · [`203cd90`](https://github.com/LoveIrishCoffee/dsh-effort-ultra-skin/tree/203cd9078bd7be5af6fa1fad497ef512e7eb7b52) | MIT；依赖 `@hytime/dsh-thinking-effort` |
-| [dsh-echocat-prettier](https://github.com/VDERR/dsh-echocat-prettier) | `skin` | `0.23.6` · [`8af04d9`](https://github.com/VDERR/dsh-echocat-prettier/tree/8af04d93f2378acd7d421d9d9eb86af4bf9f9310) | MIT |
-| [dsh-nailong-pet](https://github.com/zhangkk833-byte/dsh-nailong-pet/tree/4010d9868892179d80c5ecf8a72221d7a1efdbb1/plugin) | `pet` | `0.1.0` · [`4010d98`](https://github.com/zhangkk833-byte/dsh-nailong-pet/tree/4010d9868892179d80c5ecf8a72221d7a1efdbb1/plugin) | MIT；角色素材按仓库声明处理 |
-| [dsh-deep-diving-skin](https://github.com/Menghuan1918/dsh-deep-diving-skin) | `skin` | `0.1.0` · [`8cc4c62`](https://github.com/Menghuan1918/dsh-deep-diving-skin/tree/8cc4c62a0275261886542f7a33c0126748c8dbaa) | MIT |
+- GitHub：[eric-song-dev/dsh-ikun-pet](https://github.com/eric-song-dev/dsh-ikun-pet)
+- 类型：`pet`
+- 收录版本：`2.2.0`
+- 固定 commit：`ada74e3755730bbff1e619ca0f8ff7926d03ba98`
+- 许可：MIT
+
+## 2026-10-31 · dsh-pet-desktop
+
+- GitHub：[qiqibabyy/dsh-pet-desktop](https://github.com/qiqibabyy/dsh-pet-desktop)
+- 类型：`pet`
+- 收录版本：`0.1.0`
+- 固定 commit：`4d19c08fdeef54cfd38d8bfd7e6b4ad17fdea22b`
+- 许可：Apache-2.0；桌宠为独立 Desktop 窗口
+
+## 2026-10-31 · dsh-companion
+
+- GitHub：[qiuzhiyei/dsh-companion](https://github.com/qiuzhiyei/dsh-companion)
+- 类型：`pet`
+- 收录版本：`1.0.4`
+- 固定 commit：`8d97a73422c245a3522cc6169b3bddd5ca1c1371`
+- 许可：MIT；含原生伴侣窗口
+
+## 2026-10-31 · dsh-plugin-simple-pet
+
+- GitHub：[YangShen-SWE/dsh-plugin-simple-pet](https://github.com/YangShen-SWE/dsh-plugin-simple-pet)
+- 类型：`pet`
+- 收录版本：`1.1.3`
+- 固定 commit：`c013c3555a94d522c9019bb51d4842b275f20da0`
+- 许可：代码 MIT；图集按作者声明使用
+
+## 2026-10-31 · drool-whale-pet-for-dsh
+
+- GitHub：[yunxiiQwQ/drool-whale-pet-for-dsh](https://github.com/yunxiiQwQ/drool-whale-pet-for-dsh)
+- 类型：`pet`
+- 收录版本：`0.1.0`
+- 固定 commit：`8805f63bcd6a45eef5c430f37a900725cdac83ea`
+- 许可：BSD-3-Clause；Windows helper
+
+## 2026-10-31 · dsh-pet-companion
+
+- GitHub：[hasan-aghayev/dsh-pet-companion](https://github.com/hasan-aghayev/dsh-pet-companion)
+- 类型：`pet`
+- 收录版本：`0.1.1`
+- 固定 commit：`c10ffa313b38ec2802c0c0cc781470615a993c2b`
+- 许可：MIT；独立透明窗口
+
+## 2026-10-31 · dsh-za-warudo
+
+- GitHub：[Fwkkk666/dsh-za-warudo](https://github.com/Fwkkk666/dsh-za-warudo)
+- 类型：`skin`
+- 收录版本：`1.0.1`
+- 固定 commit：`3ac4ac1c46e5cf0a35381472f664e3198f8eac9b`
+- 许可：MIT；明暗切换时停动效
+
+## 2026-10-31 · dsh-effort-ultra-skin
+
+- GitHub：[LoveIrishCoffee/dsh-effort-ultra-skin](https://github.com/LoveIrishCoffee/dsh-effort-ultra-skin)
+- 类型：`skin`
+- 收录版本：`0.1.0`
+- 固定 commit：`203cd9078bd7be5af6fa1fad497ef512e7eb7b52`
+- 许可：MIT；依赖 `@hytime/dsh-thinking-effort`
+
+## 2026-10-31 · dsh-echocat-prettier
+
+- GitHub：[VDERR/dsh-echocat-prettier](https://github.com/VDERR/dsh-echocat-prettier)
+- 类型：`skin`
+- 收录版本：`0.23.6`
+- 固定 commit：`8af04d93f2378acd7d421d9d9eb86af4bf9f9310`
+- 许可：MIT
+
+## 2026-10-31 · dsh-nailong-pet
+
+- GitHub：[zhangkk833-byte/dsh-nailong-pet](https://github.com/zhangkk833-byte/dsh-nailong-pet/tree/4010d9868892179d80c5ecf8a72221d7a1efdbb1/plugin)
+- 类型：`pet`
+- 收录版本：`0.1.0`
+- 固定 commit：`4010d9868892179d80c5ecf8a72221d7a1efdbb1`
+- 子目录：`plugin`
+- 许可：MIT；角色素材按仓库声明处理
+
+## 2026-10-31 · dsh-deep-diving-skin
+
+- GitHub：[Menghuan1918/dsh-deep-diving-skin](https://github.com/Menghuan1918/dsh-deep-diving-skin)
+- 类型：`skin`
+- 收录版本：`0.1.0`
+- 固定 commit：`8cc4c62a0275261886542f7a33c0126748c8dbaa`
+- 许可：MIT
 
 <a id="recent-2026-10-31-runtime"></a>
 

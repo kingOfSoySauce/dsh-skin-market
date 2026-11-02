@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- 最新收录见[近期收录日志](./docs/recently-added.md#自动同步更新)，最近一批更新于 **2026-11-02**。
+- **2026-11-02**：[Columbina-sn/dsh-columbina-theme](https://github.com/Columbina-sn/dsh-columbina-theme)（`0.1.0`）——哥伦比娅 · 月隐银蓝。详见[收录日志](./docs/recently-added.md#recent-2026-11-02)。
 
 <a id="manual-update"></a>
 ## 安装、更新
