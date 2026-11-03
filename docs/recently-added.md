@@ -4,6 +4,20 @@
 
 安装版本固定到对应收录 commit；预览图使用 registry 中记录的仓库素材。收录市场不等于 DSH 官方、安全团队或市场对皮肤的安全背书；兼容性和素材授权状态请以皮肤仓库说明为准。
 
+<a id="recent-2026-11-03-sao"></a>
+
+## 2026-11-03 · dsh-SAO
+
+仿《刀剑神域》的开屏动画，提供 4K 早启动与独立渲染，不修改主题。
+
+- GitHub：[GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO/tree/45509a69f97f52c18461f3c16d6475bba15feafb/market)
+- 收录版本：`3.0.0`
+- 固定 commit：`45509a69f97f52c18461f3c16d6475bba15feafb`
+- 子目录：`market`
+- 许可：见固定版本仓库中的 `LICENSE`
+
+<img src="https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/45509a69f97f52c18461f3c16d6475bba15feafb/market/assets/startup.png" width="60%" alt="dsh-SAO 开屏动画预览">
+
 <a id="recent-2026-11-02"></a>
 
 ## 2026-11-02 · 哥伦比娅 · 月隐银蓝
