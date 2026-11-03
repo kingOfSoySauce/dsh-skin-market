@@ -30,7 +30,7 @@ screenshots:
 listScreenshot: https://raw.githubusercontent.com/YangShen-SWE/dsh-plugin-simple-pet/c013c3555a94d522c9019bb51d4842b275f20da0/docs/screenshots/deepseek.png
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: healthy
@@ -54,9 +54,9 @@ license:
   code: SEE LICENSE
   commercialUse: false
   notice: 代码MIT；默认图集允许随原样插件分发并保留声明，单独复用或用于其他产品须另获授权。
-featuredRank: 1000
 starsSnapshot: 1
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-01T22:47:47.070Z
-metadataUpdatedAt: 2026-11-01T22:47:47.070Z
+metadataUpdatedAt: 2026-11-03T01:36:56.745Z
 starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-11-01T22:47:47.070Z
+updatedAt: 2026-11-03T01:36:56.745Z

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-01T22:48:47.348Z",
+  "generatedAt": "2026-11-03T01:39:12.785Z",
   "historyDays": 71,
   "earliestObservedDay": 20681,
   "repos": {
@@ -282,6 +282,19 @@
       },
       "totals": {
         "commits": 1,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "aafff623/dsh-callout": {
+      "owner": "Aafff623",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
         "pulls": 0,
         "issues": 0
       },
@@ -689,6 +702,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "alycestocking/dsh-yukimi-theme": {
+      "owner": "AlyceStocking",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "anacondakc/dsh-douyin": {
       "owner": "AnacondaKC",
       "createdAt": null,
@@ -1074,6 +1100,19 @@
       "watchers": 1,
       "truncated": false
     },
+    "azkbzxf/dsh-vscode-scrollbar": {
+      "owner": "azkbzxf",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "badai147/dsh-leafy-skin": {
       "owner": "badai147",
       "createdAt": null,
@@ -1228,11 +1267,16 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 3,
-        "pulls": 0,
+        "pulls": 1,
         "issues": 2
       },
       "forks": 1,
@@ -1944,6 +1988,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "columbina-sn/dsh-columbina-theme": {
+      "owner": "Columbina-sn",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "conafun/dsh-music-plus": {
       "owner": "conafun",
       "createdAt": null,
@@ -2286,12 +2343,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 2
         }
       },
       "totals": {
         "commits": 23,
         "pulls": 4,
-        "issues": 14
+        "issues": 16
       },
       "forks": 10,
       "watchers": 4,
@@ -3278,11 +3340,16 @@
           "commits": 0,
           "pulls": 1,
           "issues": 2
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 1447,
-        "pulls": 104,
+        "pulls": 105,
         "issues": 137
       },
       "forks": 78,
@@ -3525,11 +3592,16 @@
           "commits": 1,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 7,
-        "pulls": 0,
+        "pulls": 1,
         "issues": 1
       },
       "forks": 0,
@@ -5195,11 +5267,17 @@
     "jryang1997/dsh-ascii-whales": {
       "owner": "jryang1997",
       "createdAt": null,
-      "daily": {},
+      "daily": {
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 0,
@@ -5739,12 +5817,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 1
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 0,
         "pulls": 1,
-        "issues": 1
+        "issues": 2
       },
       "forks": 1,
       "watchers": 0,
@@ -6398,6 +6481,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "li774807764/ai-workarea": {
+      "owner": "li774807764",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "liceses/dsh-wallpaper-rotator": {
       "owner": "liceses",
       "createdAt": null,
@@ -6871,12 +6967,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 2
+        "issues": 3
       },
       "forks": 0,
       "watchers": 0,
@@ -8444,12 +8545,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 3
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 247,
-        "pulls": 1,
-        "issues": 31
+        "pulls": 2,
+        "issues": 32
       },
       "forks": 1,
       "watchers": 0,
@@ -9476,12 +9582,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 252,
         "pulls": 30,
-        "issues": 39
+        "issues": 40
       },
       "forks": 27,
       "watchers": 1,
@@ -10434,11 +10545,16 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-03": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 439,
-        "pulls": 27,
+        "pulls": 28,
         "issues": 103
       },
       "forks": 88,
@@ -11497,6 +11613,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "under-the-ocean/dsh-plugin-cyrene": {
+      "owner": "under-the-ocean",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "univerfv/dsh-furina-theme": {
       "owner": "UniverFV",
       "createdAt": "2026-08-21T10:35:11Z",
@@ -11983,12 +12112,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 216,
         "pulls": 3,
-        "issues": 19
+        "issues": 20
       },
       "forks": 3,
       "watchers": 0,
@@ -12776,12 +12910,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 0,
         "pulls": 1,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 0,
@@ -12825,12 +12964,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-02": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 2
         }
       },
       "totals": {
         "commits": 8,
-        "pulls": 4,
-        "issues": 6
+        "pulls": 5,
+        "issues": 8
       },
       "forks": 0,
       "watchers": 0,
