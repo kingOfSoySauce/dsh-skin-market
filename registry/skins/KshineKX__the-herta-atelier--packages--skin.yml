@@ -1,12 +1,52 @@
-url: https://github.com/KshineKX/the-herta-atelier
-subpath: packages/skin
+id: kshinekx.skin
 name:
   zh: 大黑塔 · 天才书房
   en: The Herta Atelier
 author: Kshine
 description: 紫黑与晨光双主题、金边与玻璃材质的《崩坏：星穹铁道》大黑塔同人 DSH Web 皮肤；含藏镜图库与独立动态待机。
+repo: https://github.com/KshineKX/the-herta-atelier
+subpath: packages/skin
+package: dsh-herta-atelier
+rowId: ui-skin-herta-atelier
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:KshineKX/the-herta-atelier#197291ae6ea0dee96da9e0b5bf36997faa8ec977&path:/packages/skin
+  version: 0.4.0-beta.14
+  commit: 197291ae6ea0dee96da9e0b5bf36997faa8ec977
+compatibility:
+  dsh: unverified
+  platform:
+    - web
 screenshots:
   - https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/showcase-beta14-dark.jpg
   - https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/showcase-beta14-light.jpg
   - https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/overview-beta11-light.jpg
   - https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/overview-beta11-dark.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-03T04:13:51.216Z
+metadataUpdatedAt: 2026-11-03T04:13:51.216Z
+starsUpdatedAt: 2026-11-03T04:13:51.216Z
+updatedAt: 2026-11-03T04:13:51.216Z

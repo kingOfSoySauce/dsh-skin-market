@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T01:41:04.455Z",
+  "generatedAt": "2026-11-03T04:13:52.644Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -39643,11 +39643,7 @@
       "install": {
         "target": "github:KshineKX/the-herta-atelier#197291ae6ea0dee96da9e0b5bf36997faa8ec977&path:/packages/skin",
         "version": "0.4.0-beta.14",
-        "commit": "197291ae6ea0dee96da9e0b5bf36997faa8ec977",
-        "desktop": {
-          "mode": "manual-only",
-          "reason": "npm-version-not-stable"
-        }
+        "commit": "197291ae6ea0dee96da9e0b5bf36997faa8ec977"
       },
       "compatibility": {
         "dsh": "unverified",
@@ -39656,10 +39652,11 @@
         ]
       },
       "screenshots": [
-        "https://raw.githubusercontent.com/KshineKX/the-herta-atelier/5f3dc90329bb7b5cb9ee5c40e313695856abf5ce/packages/skin/preview/overview-beta11-light.jpg",
-        "https://raw.githubusercontent.com/KshineKX/the-herta-atelier/5f3dc90329bb7b5cb9ee5c40e313695856abf5ce/packages/skin/preview/overview-beta11-dark.jpg"
+        "https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/showcase-beta14-dark.jpg",
+        "https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/showcase-beta14-light.jpg",
+        "https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/overview-beta11-light.jpg",
+        "https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/overview-beta11-dark.jpg"
       ],
-      "listScreenshot": "https://raw.githubusercontent.com/KshineKX/the-herta-atelier/5f3dc90329bb7b5cb9ee5c40e313695856abf5ce/packages/skin/preview/overview-beta11-light.jpg",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
@@ -39676,40 +39673,39 @@
         },
         "suggestions": [
           "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
-        ],
-        "scan": {
-          "commit": "197291ae6ea0dee96da9e0b5bf36997faa8ec977",
-          "packageVersion": "0.4.0-beta.14",
-          "scannerVersion": "static-v2",
-          "mode": "static",
-          "result": "pass",
-          "checkedAt": "2026-11-01T22:47:52.266Z",
-          "findings": []
-        }
+        ]
       },
       "license": {
         "code": "MIT",
         "commercialUse": true
       },
-      "starsSnapshot": 0,
       "featuredRank": 1000,
-      "releaseUpdatedAt": "2026-11-01T22:47:54.543Z",
-      "metadataUpdatedAt": "2026-11-01T22:47:54.543Z",
-      "starsUpdatedAt": "2026-11-01T06:47:57.058Z",
-      "updatedAt": "2026-11-01T22:47:54.543Z",
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-03T04:13:51.216Z",
+      "metadataUpdatedAt": "2026-11-03T04:13:51.216Z",
+      "starsUpdatedAt": "2026-11-03T04:13:51.216Z",
+      "updatedAt": "2026-11-03T04:13:51.216Z",
       "media": {
         "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/df4ac4b2d9209a34056b6a069d0c7cef.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/df4ac4b2d9209a34056b6a069d0c7cef.full.webp"
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6f4e8f23925e0caa4cd67209275d19c9.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6f4e8f23925e0caa4cd67209275d19c9.full.webp"
         },
         "screenshots": [
           {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/df4ac4b2d9209a34056b6a069d0c7cef.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/df4ac4b2d9209a34056b6a069d0c7cef.full.webp"
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6f4e8f23925e0caa4cd67209275d19c9.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6f4e8f23925e0caa4cd67209275d19c9.full.webp"
           },
           {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/96b45723d473ccea40614c266b20eda2.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/96b45723d473ccea40614c266b20eda2.full.webp"
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ab67667242a2dc7af071dc03bbf485d8.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ab67667242a2dc7af071dc03bbf485d8.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/93b6ed1bc4838349e9bc51ef7148aaa2.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/93b6ed1bc4838349e9bc51ef7148aaa2.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e34a7bda4334744d7c9733ea4d7ff8b2.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e34a7bda4334744d7c9733ea4d7ff8b2.full.webp"
           }
         ]
       }
