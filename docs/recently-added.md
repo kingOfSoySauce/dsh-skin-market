@@ -4,6 +4,63 @@
 
 安装版本固定到对应收录 commit；预览图使用 registry 中记录的仓库素材。收录市场不等于 DSH 官方、安全团队或市场对皮肤的安全背书；兼容性和素材授权状态请以皮肤仓库说明为准。
 
+<a id="recent-2026-11-03-followup"></a>
+
+## 2026-11-03 · dsh-video-skin
+
+视频聊天背景与有声开机动画复合皮肤；固定 commit 在 DSH 0.1.7-rc.2 隔离环境完成 home、conversation、settings 三视图和 84 帧 GIF 验收。
+
+- GitHub：[Something11235/dsh-video-skin](https://github.com/Something11235/dsh-video-skin)
+- 收录版本：`0.1.6`
+- 固定 commit：`75aa541813ee32083e1b22e06f987809545e9ff8`
+- 许可：MIT
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/home.png" width="60%" alt="dsh-video-skin">
+
+## 2026-11-03 · dsh-whale-girl-live2d
+
+跟随 DSH 状态变化的 Live2D 鲸鱼娘桌宠；代码与模型素材许可边界按仓库说明区分，固定 commit 已完成隔离三视图验收。
+
+- GitHub：[Andersen216/dsh-whale-girl-live2d](https://github.com/Andersen216/dsh-whale-girl-live2d)
+- 收录版本：`0.4.6`
+- 固定 commit：`f977bef508690e75ba6535cd8f4ce18e7f6ba9b0`
+- 许可：代码 MIT；模型素材按仓库 `CC BY-NC-SA 4.0` 说明使用
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Andersen216__dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/home.png" width="60%" alt="dsh-whale-girl-live2d">
+
+## 2026-11-03 · dsh-startup-animation
+
+开机动画与壁纸复合 skin；固定 commit 已在 DSH 0.1.7-rc.2 隔离环境录得 23 帧开机 GIF，静态仓库素材不替代 GIF 证据。
+
+- GitHub：[KylinQ01/dsh-startup-animation](https://github.com/KylinQ01/dsh-startup-animation)
+- 收录版本：`2.1.0`
+- 固定 commit：`8edc4c7957549d8a210e27575413750238d715ab`
+- 许可：MIT
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.png" width="60%" alt="dsh-startup-animation">
+
+## 2026-11-03 · dsh-theme-mineradio
+
+包含流体背景与动态壁纸层的主题皮肤；固定 commit 已在 DSH 0.1.7-rc.2 隔离环境完成三视图和 24 帧 GIF 验收。
+
+- GitHub：[dhicoc/dsh-theme-mineradio](https://github.com/dhicoc/dsh-theme-mineradio)
+- 收录版本：`3.0.5`
+- 固定 commit：`60ac976b9fb761ba6ded8f0ddf3a51459b82ffea`
+- 许可：MIT
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.png" width="60%" alt="dsh-theme-mineradio">
+
+## 2026-11-03 · dsh-theme-pack
+
+18 套明暗主题与 Settings 选择器；固定 commit 选择 Nord 主题后在 DSH 0.1.7-rc.2 隔离环境完成三视图验收。
+
+- GitHub：[mrtoxiorg-sys/dsh-theme-pack](https://github.com/mrtoxiorg-sys/dsh-theme-pack)
+- 收录版本：`1.2.6`
+- 固定 commit：`baec234992d207b80241dfe4105598d8c8536fb3`
+- 许可：MIT
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/home.png" width="60%" alt="dsh-theme-pack">
+
 <a id="recent-2026-11-03-sao"></a>
 
 ## 2026-11-03 · dsh-SAO

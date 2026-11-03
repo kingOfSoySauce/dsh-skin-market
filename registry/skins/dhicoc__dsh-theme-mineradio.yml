@@ -1,0 +1,59 @@
+id: dhicoc.dsh-theme-mineradio
+name:
+  zh: dsh-theme-mineradio
+  en: dsh-theme-mineradio
+author: dhicoc
+description: A cinematic visual-radio glass theme for DeepSeek Harness (DSH) Desktop
+  — port of the Mineradio music player's champagne-glass aesthetic. Fluid or wallpaper
+  backdrop, light-glass panels, custom knobs, and the drifting-glow cursor treatment.
+repo: https://github.com/dhicoc/dsh-theme-mineradio
+package: dsh-theme-mineradio
+rowId: dsh-theme-mineradio
+category: skin
+tags:
+- appearance
+- animation
+- wallpaper
+modes:
+- light
+- dark
+install:
+  target: github:dhicoc/dsh-theme-mineradio#60ac976b9fb761ba6ded8f0ddf3a51459b82ffea
+  version: 3.0.5
+  commit: 60ac976b9fb761ba6ded8f0ddf3a51459b82ffea
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成 DSH Web 隔离运行验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+  - web
+marketScreenshots:
+- skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.png
+- skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/conversation.png
+- skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/settings.png
+screenshots:
+- skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+  - 隔离运行证据固定在 DSH 0.1.7-rc.2；发布前仍需按目标宿主版本复核。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 20
+releaseUpdatedAt: '2026-11-03T19:20:00+08:00'
+metadataUpdatedAt: '2026-11-03T19:20:00+08:00'
+starsUpdatedAt: '2026-11-03T19:20:00+08:00'
+updatedAt: '2026-11-03T19:20:00+08:00'

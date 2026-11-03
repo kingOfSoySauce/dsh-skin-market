@@ -1,0 +1,57 @@
+id: kylinq01.dsh-startup-animation
+name:
+  zh: dsh-startup-animation
+  en: dsh-startup-animation
+author: KylinQ01
+description: 🌸 给 DeepSeek Harness 的开机动画 + 主界面壁纸：多层动效 + 鼠标视差，两张图可在设置里自由更换并实时预览
+repo: https://github.com/KylinQ01/dsh-startup-animation
+package: dsh-startup-animation
+rowId: dsh-startup-animation
+category: skin
+tags:
+- appearance
+- animation
+- wallpaper
+modes:
+- light
+- dark
+install:
+  target: github:KylinQ01/dsh-startup-animation#8edc4c7957549d8a210e27575413750238d715ab
+  version: 2.1.0
+  commit: 8edc4c7957549d8a210e27575413750238d715ab
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成 DSH Web 隔离运行验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+  - web
+marketScreenshots:
+- skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.png
+- skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/conversation.png
+- skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/settings.png
+screenshots:
+- skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+  - 隔离运行证据固定在 DSH 0.1.7-rc.2；发布前仍需按目标宿主版本复核。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 6
+releaseUpdatedAt: '2026-11-03T19:20:00+08:00'
+metadataUpdatedAt: '2026-11-03T19:20:00+08:00'
+starsUpdatedAt: '2026-11-03T19:20:00+08:00'
+updatedAt: '2026-11-03T19:20:00+08:00'

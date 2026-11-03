@@ -16,6 +16,7 @@
 
 ### 近期收录
 
+- **2026-11-03**：[Something11235/dsh-video-skin](https://github.com/Something11235/dsh-video-skin)（`0.1.6`）——视频背景与有声开机动画复合皮肤；已通过固定 commit 的 DSH 0.1.7-rc.2 隔离三视图与 GIF 验收。详见[收录日志](./docs/recently-added.md#recent-2026-11-03-followup)。
 - **2026-11-03**：[GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO)（`3.0.0`）——dsh-SAO。详见[收录日志](./docs/recently-added.md#recent-2026-11-03-sao)。
 
 <a id="manual-update"></a>

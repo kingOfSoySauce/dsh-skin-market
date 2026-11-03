@@ -1,0 +1,57 @@
+id: andersen216.dsh-whale-girl-live2d
+name:
+  zh: dsh-whale-girl-live2d
+  en: dsh-whale-girl-live2d
+author: Andersen216
+description: '🐋 鲸鱼娘桌宠 · Whale Girl Live2D —— DSH（DeepSeek Harness）Web 界面里的 Live2D
+  桌宠：跟着 agent 的真实状态换表情与动作，点一下就能直接跟 agent 说话，右键是钱包。A Live2D desktop pet for the DSH
+  Web UI. 安装 Install: dsh plugin --profile web add github:Andersen216/dsh-whale-girl-live2d'
+repo: https://github.com/Andersen216/dsh-whale-girl-live2d
+package: dsh-whale-girl-live2d
+rowId: dsh-whale-girl-live2d
+category: pet
+tags:
+- appearance
+- pet
+modes:
+- light
+- dark
+install:
+  target: github:Andersen216/dsh-whale-girl-live2d#f977bef508690e75ba6535cd8f4ce18e7f6ba9b0
+  version: 0.4.6
+  commit: f977bef508690e75ba6535cd8f4ce18e7f6ba9b0
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成 DSH Web 隔离运行验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+  - web
+marketScreenshots:
+- skin-screenshots/Andersen216__dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/home.png
+- skin-screenshots/Andersen216__dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/conversation.png
+- skin-screenshots/Andersen216__dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/settings.png
+screenshots: []
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+  - 隔离运行证据固定在 DSH 0.1.7-rc.2；发布前仍需按目标宿主版本复核。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 81
+releaseUpdatedAt: '2026-11-03T19:20:00+08:00'
+metadataUpdatedAt: '2026-11-03T19:20:00+08:00'
+starsUpdatedAt: '2026-11-03T19:20:00+08:00'
+updatedAt: '2026-11-03T19:20:00+08:00'
