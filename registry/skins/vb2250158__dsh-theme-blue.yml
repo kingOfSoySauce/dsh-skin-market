@@ -13,9 +13,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:vb2250158/dsh-theme-blue#2c66f7bc10e802fa575694d6b93d17b49df387d1
-  version: 0.1.0-rc.8.17
-  commit: 2c66f7bc10e802fa575694d6b93d17b49df387d1
+  target: github:vb2250158/dsh-theme-blue#4fbaf4b1cf262124b23f18cd19cf77d4b641d089
+  version: 0.1.0-rc.8.18
+  commit: 4fbaf4b1cf262124b23f18cd19cf77d4b641d089
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -23,6 +23,10 @@ compatibility:
   dsh: 0.2.1-alpha.1
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/home.png
+  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/conversation.png
+  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -39,24 +43,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
-    commit: 2c66f7bc10e802fa575694d6b93d17b49df387d1
-    packageVersion: 0.1.0-rc.8.17
+    commit: 4fbaf4b1cf262124b23f18cd19cf77d4b641d089
+    packageVersion: 0.1.0-rc.8.18
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-alpha.1 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-11-01T01:43:47.440Z
+    checkedAt: 2026-11-03T01:38:14.190Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/home.png
-  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/conversation.png
-  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/settings.png
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-01T01:43:47.518Z
-metadataUpdatedAt: 2026-11-01T22:47:11.915Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-03T01:38:14.330Z
+metadataUpdatedAt: 2026-11-03T01:38:14.330Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-01T22:47:11.915Z
+updatedAt: 2026-11-03T01:38:14.330Z

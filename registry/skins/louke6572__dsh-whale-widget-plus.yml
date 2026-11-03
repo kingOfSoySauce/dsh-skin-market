@@ -13,9 +13,9 @@ tags:
 modes:
   - light
 install:
-  target: github:louke6572/dsh-whale-widget-plus#8f5022e798d2b0d6641460b05a8695b5ddd6165b
-  version: 0.7.1
-  commit: 8f5022e798d2b0d6641460b05a8695b5ddd6165b
+  target: github:louke6572/dsh-whale-widget-plus#1e6c23c3862d223b778b595bcaf69998b517e798
+  version: 0.7.2
+  commit: 1e6c23c3862d223b778b595bcaf69998b517e798
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -23,10 +23,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/home.png
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/conversation.png
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/settings.png
 screenshots:
   - https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png
 listScreenshot: https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png
@@ -45,19 +41,23 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 8f5022e798d2b0d6641460b05a8695b5ddd6165b
-    packageVersion: 0.7.1
+    commit: 1e6c23c3862d223b778b595bcaf69998b517e798
+    packageVersion: 0.7.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-01T22:47:18.775Z
+    checkedAt: 2026-11-02T05:58:00.829Z
     findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 84
+marketScreenshots:
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/home.png
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/conversation.png
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/settings.png
 featuredRank: 944
-starsSnapshot: 82
-releaseUpdatedAt: 2026-11-01T22:47:19.136Z
-metadataUpdatedAt: 2026-11-01T22:47:19.136Z
-starsUpdatedAt: 2026-11-01T22:47:19.136Z
-updatedAt: 2026-11-01T22:47:19.136Z
+releaseUpdatedAt: 2026-11-03T01:36:56.745Z
+metadataUpdatedAt: 2026-11-03T01:36:56.745Z
+starsUpdatedAt: 2026-11-03T01:36:56.745Z
+updatedAt: 2026-11-03T01:36:56.745Z

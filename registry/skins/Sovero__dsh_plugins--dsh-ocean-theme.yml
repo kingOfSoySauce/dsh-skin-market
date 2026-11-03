@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Sovero/dsh_plugins#cb5c79b26c94374bb229a2a6c1a49fa4033977ad&path:/dsh-ocean-theme
+  target: github:Sovero/dsh_plugins#f3a485b7c8c9e5138b75043f7d2bcc9825600b7c&path:/dsh-ocean-theme
   version: 1.0.1
-  commit: cb5c79b26c94374bb229a2a6c1a49fa4033977ad
+  commit: f3a485b7c8c9e5138b75043f7d2bcc9825600b7c
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -26,6 +26,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/home.png
+  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/conversation.png
+  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -43,23 +47,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: cb5c79b26c94374bb229a2a6c1a49fa4033977ad
+    commit: f3a485b7c8c9e5138b75043f7d2bcc9825600b7c
     packageVersion: 1.0.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T23:01:22.427Z
+    checkedAt: 2026-11-03T01:37:44.220Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/home.png
-  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/conversation.png
-  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/settings.png
 featuredRank: 999
-releaseUpdatedAt: 2026-10-30T23:01:22.506Z
-metadataUpdatedAt: 2026-10-31T04:39:10.957Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-03T01:37:44.336Z
+metadataUpdatedAt: 2026-11-03T01:37:44.336Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-31T04:39:10.957Z
+updatedAt: 2026-11-03T01:37:44.336Z

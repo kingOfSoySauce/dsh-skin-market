@@ -35,13 +35,33 @@ review:
   compatibility: unverified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 464dd05c5b9f3942b7ba383a3ed5534ec844f6fe
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-03T01:37:31.986Z
+    findings: []
 license:
   code: MIT
-  commercialUse: false
+  commercialUse: true
   notice: 代码 MIT；《原神》角色与名称属 miHoYo/HoYoverse，12 张表情与欢迎头像不在 MIT 范围内，仅用于非商业同人演示；仓库不含任何背景图。
 featuredRank: 1000
 starsSnapshot: 1
 releaseUpdatedAt: 2026-11-01T00:00:00.000Z
-metadataUpdatedAt: 2026-11-02T00:00:00.000Z
+metadataUpdatedAt: 2026-11-03T01:37:32.136Z
 starsUpdatedAt: 2026-11-01T00:00:00.000Z
-updatedAt: 2026-11-02T00:00:00.000Z
+updatedAt: 2026-11-03T01:37:32.136Z

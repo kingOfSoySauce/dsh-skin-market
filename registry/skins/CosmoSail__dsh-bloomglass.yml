@@ -15,21 +15,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CosmoSail/dsh-bloomglass#e2309db70c0558efe424c8b3744ce1c270c34698
-  version: 1.0.4
-  commit: e2309db70c0558efe424c8b3744ce1c270c34698
+  target: github:CosmoSail/dsh-bloomglass#3581fddfee142289c58ee2a2f4cd3e659f7b05ae
+  version: 1.0.5
+  commit: 3581fddfee142289c58ee2a2f4cd3e659f7b05ae
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-bloomglass
-    packageVersion: 1.0.4
-    integrity: sha512-6Ik0LBqBrNBIBQkXWVv8kn6ub4kIJ6B6pV87MnlOCqE0SW+VKJkNBel6WY34GZaqbeMVnQyScu3xOLDyyjrhuA==
+    packageVersion: 1.0.5
+    integrity: sha512-qyuK4s9HdLKzPcG65NkU4RL0Y1K5zV2lkLGxNcRwkM0D7oI2/dPx7y5L/B/dDCJtU63ouA64L4STzVlIahAaMA==
   npm:
     name: dsh-bloomglass
-    version: 1.0.4
-    integrity: sha512-6Ik0LBqBrNBIBQkXWVv8kn6ub4kIJ6B6pV87MnlOCqE0SW+VKJkNBel6WY34GZaqbeMVnQyScu3xOLDyyjrhuA==
+    version: 1.0.5
+    integrity: sha512-qyuK4s9HdLKzPcG65NkU4RL0Y1K5zV2lkLGxNcRwkM0D7oI2/dPx7y5L/B/dDCJtU63ouA64L4STzVlIahAaMA==
     repository: https://github.com/CosmoSail/dsh-bloomglass
-    gitHead: e2309db70c0558efe424c8b3744ce1c270c34698
+    gitHead: 3581fddfee142289c58ee2a2f4cd3e659f7b05ae
 compatibility:
   dsh: unverified
   platform:
@@ -53,19 +53,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: e2309db70c0558efe424c8b3744ce1c270c34698
-    packageVersion: 1.0.4
+    commit: 3581fddfee142289c58ee2a2f4cd3e659f7b05ae
+    packageVersion: 1.0.5
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-27T23:01:09.028Z
+    checkedAt: 2026-11-02T05:58:08.479Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 starsSnapshot: 1
 featuredRank: 999
-releaseUpdatedAt: 2026-10-27T23:01:11.187Z
-metadataUpdatedAt: 2026-10-27T23:01:11.187Z
+releaseUpdatedAt: 2026-11-03T01:36:56.745Z
+metadataUpdatedAt: 2026-11-03T01:36:56.745Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-27T23:01:11.187Z
+updatedAt: 2026-11-03T01:36:56.745Z
