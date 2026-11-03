@@ -88,6 +88,7 @@ export declare class SkinLifecycle {
     get catalog(): SkinEntry[];
     private get hostKind();
     private get management();
+    private installedSkins;
     private enabledSkinIds;
     private registryPlanFor;
     private assertSkinLoaderConflicts;

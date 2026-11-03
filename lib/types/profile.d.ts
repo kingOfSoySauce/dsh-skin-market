@@ -103,6 +103,12 @@ export declare function validateDesktopArtifact(profileDir: string, skin: SkinEn
 };
 /** Explicitly replace a verified local source, or migrate the same reviewed GitHub/npm release. */
 export declare function npmSourceMigration(profileDir: string, skin: SkinEntry): SkinSourceMigration | undefined;
+/**
+ * Package names are not enough to prove that a dependency belongs to a market
+ * entry. GitHub installs must stay in the reviewed repository/subpath family;
+ * npm and confirmed local replacements use their existing package provenance.
+ */
+export declare function installedSkinSourceMatches(profileDir: string, skin: SkinEntry): boolean;
 export declare function companionNeedsInstall(profileDir: string, companion: {
     package: string;
     commit: string;

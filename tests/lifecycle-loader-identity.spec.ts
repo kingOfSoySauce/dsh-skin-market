@@ -83,6 +83,61 @@ describe('live loader identity isolation', () => {
     expect(host.sidebar.options.disabled).toBeNull()
   })
 
+  it('does not adopt or modify a same-name package from a different GitHub source', async () => {
+    const host = fixture()
+    const skin = host.skins[0]
+    const foreignSpec = `github:other/source#${'0'.repeat(40)}`
+    host.install(skin)
+    atomicWriteText(join(host.directory, 'node_modules', ...skin.package.split('/'), 'cordis.patch.yml'), `- insert:\n    - id: foreign-row\n      name: ${JSON.stringify(skin.package)}\n`)
+    atomicWriteJson(join(host.directory, 'package.json'), {
+      dependencies: { [skin.package]: foreignSpec, [host.skins[1].package]: host.skins[1].install.target },
+    })
+    writeMarketState(host.directory, { version: 1, activeSkinId: skin.id, pinnedSkinIds: [], disabledSkinIds: [host.skins[1].id] })
+    const foreignUpdate = vi.fn(async (_value: { disabled: boolean | null }) => undefined)
+    const foreignEntry: LoaderEntry = { options: { id: 'foreign-row', name: skin.package, disabled: null }, fiber: { state: 2 }, update: foreignUpdate }
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [foreignEntry, host.target, host.sidebar] } }, { profile: 'test', profileDir: host.directory, runner: async () => success() }, host.skins)
+
+    const operation = await finished(lifecycle.begin('deactivate', skin.id))
+
+    expect(operation).toMatchObject({ phase: 'done', message: expect.stringContaining('未修改该插件') })
+    expect(foreignUpdate).not.toHaveBeenCalled()
+    expect(readMarketState(host.directory).activeSkinId).toBeNull()
+    expect(lifecycle.states().find(state => state.skinId === skin.id)).toMatchObject({
+      installation: 'broken', activation: 'inactive', primary: false, pinned: false,
+    })
+
+    await lifecycle.replay()
+    expect(foreignUpdate).not.toHaveBeenCalled()
+  })
+
+  it('does not adopt or modify a same-name npm package without reviewed provenance', async () => {
+    const host = fixture()
+    const skin = host.skins[0]
+    host.install(skin)
+    atomicWriteJson(join(host.directory, 'node_modules', ...skin.package.split('/'), 'package.json'), {
+      name: skin.package,
+      version: '0.4.0',
+      repository: 'https://github.com/other/source',
+      exports: { './client': './client.js' },
+      dsh: { client: { platform: 'web' } },
+    })
+    atomicWriteJson(join(host.directory, 'package.json'), {
+      dependencies: { [skin.package]: '0.4.0', [host.skins[1].package]: host.skins[1].install.target },
+    })
+    writeMarketState(host.directory, { version: 1, activeSkinId: skin.id, pinnedSkinIds: [], disabledSkinIds: [host.skins[1].id] })
+    const foreignUpdate = vi.fn(async (_value: { disabled: boolean | null }) => undefined)
+    const foreignEntry: LoaderEntry = { options: { id: 'foreign-row', name: skin.package, disabled: null }, fiber: { state: 2 }, update: foreignUpdate }
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [foreignEntry, host.target, host.sidebar] } }, { profile: 'test', profileDir: host.directory, runner: async () => success() }, host.skins)
+
+    const operation = await finished(lifecycle.begin('deactivate', skin.id))
+
+    expect(operation).toMatchObject({ phase: 'done', message: expect.stringContaining('未修改该插件') })
+    expect(foreignUpdate).not.toHaveBeenCalled()
+    expect(lifecycle.states().find(state => state.skinId === skin.id)).toMatchObject({
+      installation: 'broken', activation: 'inactive', primary: false, pinned: false,
+    })
+  })
+
   it('rejects a truly installed conflicting target before modifying profile or native state', async () => {
     const host = fixture()
     host.install(host.collision)
