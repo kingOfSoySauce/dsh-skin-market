@@ -60,6 +60,7 @@ import {
   inspectSkinArtifactRisk,
   isSkinArtifactRiskAcknowledged,
   acknowledgeSkinArtifactRisk,
+  installedSkinSourceMatches,
   validateInstalledSkin,
   validateNpmArtifact,
   validateDesktopArtifact,
@@ -311,9 +312,13 @@ export class SkinLifecycle {
   private get hostKind(): MarketHostKind { return this.options.hostKind ?? this.options.runner.hostKind ?? 'dsh' }
   private get management() { return this.options.runner.management }
 
+  private installedSkins(dependencies = readDependencies(this.options.profileDir)): SkinEntry[] {
+    return this.catalogEntries.filter(skin => dependencies[skin.package] !== undefined
+      && installedSkinSourceMatches(this.options.profileDir, skin))
+  }
+
   private enabledSkinIds(state: PersistedMarketState): Set<string> {
-    const dependencies = readDependencies(this.options.profileDir)
-    const installed = this.catalog.filter(skin => dependencies[skin.package] !== undefined).map(skin => skin.id)
+    const installed = this.installedSkins().map(skin => skin.id)
     return baseEnabledSkinIds(state, installed)
   }
 
@@ -480,13 +485,13 @@ export class SkinLifecycle {
   private selectionTargets(kind: SelectionOperationKind, skinId: string, preservedOverride?: readonly string[]): ConfigurationOverrideTarget[] {
     const skin = this.skin(skinId)
     const dependencies = readDependencies(this.options.profileDir)
-    if (dependencies[skin.package] === undefined) return []
+    if (dependencies[skin.package] === undefined || !installedSkinSourceMatches(this.options.profileDir, skin)) return []
     const previous = readMarketState(this.options.profileDir)
     const pinned = preservedOverride === undefined ? pinnedSkinIds(previous) : [...new Set(preservedOverride)]
     let requests: Array<{ skin: SkinEntry; enabled: boolean }>
     if (kind === 'activate') {
       const enabled = new Set([skinId, ...pinned])
-      const installed = this.catalog.filter(item => dependencies[item.package] !== undefined)
+      const installed = this.installedSkins(dependencies)
       requests = [...installed.filter(item => !enabled.has(item.id)), ...installed.filter(item => enabled.has(item.id))]
         .map(item => ({ skin: item, enabled: enabled.has(item.id) }))
     } else if (kind === 'unpin' && (previous.activeSkinId === skinId || !pinned.includes(skinId))) {
@@ -802,7 +807,7 @@ export class SkinLifecycle {
     for (const id of new Set([...before, ...after])) {
       if (!browserChanged || before.has(id) === after.has(id)) continue
       const item = this.skinById.get(id)
-      if (item === undefined || dependencies[item.package] === undefined) continue
+      if (item === undefined || dependencies[item.package] === undefined || !installedSkinSourceMatches(this.options.profileDir, item)) continue
       if (ids.has(id) && !selectionChanges.has(id)) continue
       ids.add(id)
       const artifact = this.selectionArtifactHash(next, id)
@@ -927,6 +932,9 @@ export class SkinLifecycle {
   private assertArtifactUseApproved(operation: Operation, skin: SkinEntry, artifactContextOverride?: string): void {
     const artifact = snapshotInstalledArtifact(this.options.profileDir, skin.package)
     if (!artifact.ok) throw new Error(artifact.reason)
+    if (!installedSkinSourceMatches(this.options.profileDir, skin)) {
+      throw new Error(`installed package ${skin.package} does not match the market source; the market will not manage this package`)
+    }
     this.assertSkinLoaderConflicts(skin)
     if (this.management === undefined) this.assertRuntimeLoaderConflicts(skin, [{ id: skin.rowId, name: skin.package, packageName: skin.package }])
     const context = artifactContextOverride ?? this.artifactContexts.get(operation.id)
@@ -1047,6 +1055,7 @@ export class SkinLifecycle {
       const id = fiber.entry?.options?.id
       const dependencies = readDependencies(this.options.profileDir)
       const skin = this.catalog.find(item => dependencies[item.package] !== undefined
+        && installedSkinSourceMatches(this.options.profileDir, item)
         && matchesLoaderIdentity({ id, name }, { id: item.rowId, name: item.package }))
       if (skin === undefined) return
       const state = readMarketState(this.options.profileDir)
@@ -1218,8 +1227,8 @@ export class SkinLifecycle {
       const incoming = inspect(entries, expected)
       if (priority[incoming] > priority[status]) status = incoming
     }
-    for (const skin of this.catalog) {
-      if (dependencies[skin.package] !== undefined) include(this.entriesFor(skin), enabled.has(skin.id))
+    for (const skin of this.installedSkins(dependencies)) {
+      include(this.entriesFor(skin), enabled.has(skin.id))
     }
     const companions = new Set<string>()
     for (const skin of this.catalog) for (const companion of skin.install.companions ?? []) {
@@ -1252,8 +1261,8 @@ export class SkinLifecycle {
       targets.set(manifest.name, active || targets.get(manifest.name) === true)
       return true
     }
-    for (const skin of this.catalog) {
-      if (dependencies[skin.package] !== undefined && !add(skin.package, enabled.has(skin.id))) return undefined
+    for (const skin of this.installedSkins(dependencies)) {
+      if (!add(skin.package, enabled.has(skin.id))) return undefined
     }
     const companions = new Set<string>()
     for (const skin of this.catalog) for (const companion of skin.install.companions ?? []) {
@@ -1322,13 +1331,16 @@ export class SkinLifecycle {
     // replay in the same process must not consume a live operation's receipt.
     const previousRestart = startup || state.pendingRestart?.pid !== process.pid ? state.pendingRestart : undefined
     const dependencies = readDependencies(this.options.profileDir)
-    const installed = this.catalog.filter(skin => dependencies[skin.package] !== undefined)
+    const installed = this.installedSkins(dependencies)
     const rootBundles = new Set(readProfileBundles(this.options.profileDir))
     // An explicitly bundled skin that has not yet been recorded as managed
     // is treated as active. Managed inactive bundles are removed below.
     const installedIds = new Set(installed.map(skin => skin.id))
+    const normalizedActive = state.activeSkinId !== null && installedIds.has(state.activeSkinId) ? state.activeSkinId : null
     const normalizedPinned = pinnedSkinIds(state).filter(id => installedIds.has(id))
-    const stateChanged = JSON.stringify(state.pinnedSkinIds ?? []) !== JSON.stringify(normalizedPinned)
+    const stateChanged = state.activeSkinId !== normalizedActive
+      || JSON.stringify(state.pinnedSkinIds ?? []) !== JSON.stringify(normalizedPinned)
+    state.activeSkinId = normalizedActive
     state.pinnedSkinIds = normalizedPinned
     const manuallyActive = !preserveNativeSelection && state.activeSkinId === null
       ? installed.filter(skin => rootBundles.has(skin.package) && !state.disabledSkinIds.includes(skin.id) && !normalizedPinned.includes(skin.id)).at(-1)
@@ -2306,6 +2318,7 @@ export class SkinLifecycle {
     const seen = new Set<string>()
     const dependencies = readDependencies(this.options.profileDir)
     for (const item of this.catalog) {
+      if (dependencies[item.package] === undefined || !installedSkinSourceMatches(this.options.profileDir, item)) continue
       for (const companion of item.install.companions ?? []) {
         if (seen.has(companion.package) || dependencies[companion.package] === undefined || state.managedCompanions?.[companion.package] === undefined) continue
         seen.add(companion.package)
@@ -2453,6 +2466,15 @@ export class SkinLifecycle {
     }
     const existingSpec = readDependencies(this.options.profileDir)[skin.package]
     if (existingSpec !== undefined) {
+      const sourceMatches = installedSkinSourceMatches(this.options.profileDir, skin)
+      if (!sourceMatches && this.hostKind === 'desktop') {
+        // Preserve the established source-family diagnostic, but do this before
+        // any repair path can ask the official manager to replace the package.
+        this.desktopUpdateTarget(skin)
+      }
+      if (!sourceMatches) {
+        throw new Error(`installed package ${skin.package} does not match the reviewed source/version; use Update to replace it with ${skin.install.target}`)
+      }
       let validation = validateInstalledSkin(this.options.profileDir, skin, { allowArtifactRisk: true, hostKind: this.hostKind })
       if (!validation.ok && validation.repairable === true) {
         await this.prepareProfile(skin, operation, async () => {
@@ -2673,7 +2695,7 @@ export class SkinLifecycle {
     this.reconcileDisabledSkinIds(next, new Set([skin.id, ...preserved]))
     const enabled = this.enabledSkinIds(next)
     const dependencies = readDependencies(this.options.profileDir)
-    const installed = this.catalog.filter(item => dependencies[item.package] !== undefined)
+    const installed = this.installedSkins(dependencies)
     try {
       // Disable the previous ordinary skin before enabling the target. Pinned
       // skins remain part of the enabled union throughout this transition.
@@ -2719,6 +2741,18 @@ export class SkinLifecycle {
 
   private async deactivateLocked(operation: Operation): Promise<void> {
     const skin = this.skin(operation.skinId)
+    if (!installedSkinSourceMatches(this.options.profileDir, skin)) {
+      this.update(operation, 'activating')
+      const state = readMarketState(this.options.profileDir)
+      state.activeSkinId = state.activeSkinId === skin.id ? null : state.activeSkinId
+      state.pinnedSkinIds = pinnedSkinIds(state).filter(id => id !== skin.id)
+      this.recordRestart(state, skin.id, false, true)
+      this.releaseManagedLoaders(state, skin.id)
+      this.reconcileDisabledSkinIds(state)
+      writeMarketState(this.options.profileDir, state)
+      operation.message = '市场记录已清理；检测到同名但不同来源的外部插件，未修改该插件'
+      return
+    }
     this.update(operation, 'activating')
     const previous = readMarketState(this.options.profileDir)
     const selection = this.selectionSnapshot()
@@ -2928,6 +2962,9 @@ export class SkinLifecycle {
   private async uninstallLocked(operation: Operation): Promise<void> {
     const skin = this.skin(operation.skinId)
     if (readDependencies(this.options.profileDir)[skin.package] === undefined) throw new Error('skin is not installed')
+    if (!installedSkinSourceMatches(this.options.profileDir, skin)) {
+      throw new Error(`installed package ${skin.package} does not match the market source; uninstall is blocked to protect the external package`)
+    }
     const snapshot = snapshotInstallFiles(this.options.profileDir, skin.package, skin.install.version)
     const mutationsBefore = this.profileMutations.get(operation.id) ?? 0
     const loaderRowsBefore = installedLoaderIdentities(this.options.profileDir)

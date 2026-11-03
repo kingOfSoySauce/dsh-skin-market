@@ -9,6 +9,7 @@ import {
   readMarketState,
   restoreFile,
   snapshotFile,
+  installedSkinSourceMatches,
   writeMarketState,
 } from './profile.ts'
 import type { SkinEntry } from './types.ts'
@@ -23,7 +24,8 @@ export function resetManagedSkins(profileDir: string, catalog: SkinEntry[] = loa
   const patchSnapshot = snapshotFile(profilePatchFile(profileDir))
   const stateSnapshot = snapshotFile(marketStateFile(profileDir))
   const dependencies = readDependencies(profileDir)
-  const installed = catalog.filter(skin => dependencies[skin.package] !== undefined)
+  const installed = catalog.filter(skin => dependencies[skin.package] !== undefined
+    && installedSkinSourceMatches(profileDir, skin))
 
   try {
     const state = readMarketState(profileDir)
@@ -31,7 +33,8 @@ export function resetManagedSkins(profileDir: string, catalog: SkinEntry[] = loa
     const seenCompanions = new Set<string>()
     for (const skin of catalog) {
       for (const companion of skin.install.companions ?? []) {
-        if (dependencies[skin.package] !== undefined && dependencies[companion.package] !== undefined) {
+        if (dependencies[skin.package] !== undefined && installedSkinSourceMatches(profileDir, skin)
+          && dependencies[companion.package] !== undefined) {
           const linked = state.managedCompanions?.[companion.package]
           if (linked === undefined) {
             state.managedCompanions = {
