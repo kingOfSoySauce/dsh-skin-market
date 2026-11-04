@@ -27,10 +27,14 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/under-the-ocean__dsh-plugin-cyrene--packages--dsh-cyrene/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/home.png
+  - skin-screenshots/under-the-ocean__dsh-plugin-cyrene--packages--dsh-cyrene/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/conversation.png
+  - skin-screenshots/under-the-ocean__dsh-plugin-cyrene--packages--dsh-cyrene/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/settings.png
 screenshots: []
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -58,6 +62,6 @@ license:
 starsSnapshot: 1
 featuredRank: 999
 releaseUpdatedAt: 2026-11-01T00:00:00.000Z
-metadataUpdatedAt: 2026-11-03T01:36:56.745Z
+metadataUpdatedAt: 2026-11-04T17:40:01Z
 starsUpdatedAt: 2026-11-01T00:00:00.000Z
-updatedAt: 2026-11-03T01:36:56.745Z
+updatedAt: 2026-11-04T17:40:01Z

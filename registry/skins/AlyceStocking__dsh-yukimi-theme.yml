@@ -25,10 +25,14 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/home.png
+  - skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/conversation.png
+  - skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/settings.png
 screenshots: []
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -56,6 +60,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-04T00:04:38.184Z
-metadataUpdatedAt: 2026-11-04T00:04:38.184Z
+metadataUpdatedAt: 2026-11-04T17:40:01Z
 starsUpdatedAt: 2026-11-01T00:00:00.000Z
-updatedAt: 2026-11-04T00:04:38.184Z
+updatedAt: 2026-11-04T17:40:01Z

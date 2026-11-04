@@ -176,6 +176,8 @@ GitHub：[Aafff623/dsh-callout](https://github.com/Aafff623/dsh-callout)
 
 GitHub：[under-the-ocean/dsh-plugin-cyrene](https://github.com/under-the-ocean/dsh-plugin-cyrene)
 
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/under-the-ocean__dsh-plugin-cyrene--packages--dsh-cyrene/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/home.png" width="60%" alt="昔涟主题">
+
 ## 2026-11-02 · 佐城雪美主题
 
 作者：AlyceStocking
@@ -184,6 +186,8 @@ GitHub：[under-the-ocean/dsh-plugin-cyrene](https://github.com/under-the-ocean/
 
 GitHub：[AlyceStocking/dsh-yukimi-theme](https://github.com/AlyceStocking/dsh-yukimi-theme)
 
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/home.png" width="60%" alt="佐城雪美主题">
+
 ## 2026-11-02 · VS Code 滚动条与缩略图
 
 作者：azkbzxf
@@ -191,6 +195,8 @@ GitHub：[AlyceStocking/dsh-yukimi-theme](https://github.com/AlyceStocking/dsh-y
 把会话区滚动条改成 VS Code 风格，并在右侧增加等比例的会话缩略图 minimap。
 
 GitHub：[azkbzxf/dsh-vscode-scrollbar](https://github.com/azkbzxf/dsh-vscode-scrollbar)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/azkbzxf__dsh-vscode-scrollbar/b5416576cf9fc05a62f782002d95cd6b0dcdc46f/home.png" width="60%" alt="VS Code 滚动条与缩略图">
 
 ## 2026-11-02 · night-watch
 
