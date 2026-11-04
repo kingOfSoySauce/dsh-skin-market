@@ -2095,7 +2095,7 @@ url: https://github.com/<owner>/<repo>
 			skin: "皮肤",
 			pet: "桌宠",
 			player: "播放器",
-			splash: "开屏动画"
+			splash: "启动动画"
 		};
 		/** A plugin that spans several kinds stays a skin. Unknown legacy values do too. */
 		function marketCategory(skin) {

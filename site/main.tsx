@@ -28,7 +28,7 @@ const CATALOG_SORTS: readonly CatalogSort[] = ['heat', 'stars', 'latest']
 const CATALOG_SORT_LABELS: Record<CatalogSort, string> = { heat: '热度', stars: 'Stars', latest: '最新' }
 const MARKET_CATEGORIES = ['skin', 'pet', 'player', 'splash'] as const
 type MarketCategory = typeof MARKET_CATEGORIES[number]
-const MARKET_CATEGORY_LABELS: Record<MarketCategory, string> = { skin: '皮肤', pet: '桌宠', player: '播放器', splash: '开屏动画' }
+const MARKET_CATEGORY_LABELS: Record<MarketCategory, string> = { skin: '皮肤', pet: '桌宠', player: '播放器', splash: '启动动画' }
 
 function marketCategory(skin: { category?: string }): MarketCategory {
   return skin.category === 'pet' || skin.category === 'player' || skin.category === 'splash' ? skin.category : 'skin'

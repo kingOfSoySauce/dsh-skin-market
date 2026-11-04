@@ -34,7 +34,7 @@ describe('public catalog filters', () => {
     render(<App skins={[skin, pet, player]} />)
     const filters = screen.getByRole('group', { name: '分类' })
     expect(within(filters).getByRole('button', { name: '皮肤' }).getAttribute('aria-pressed')).toBe('true')
-    expect(within(filters).getByRole('button', { name: '开屏动画' }).getAttribute('aria-pressed')).toBe('true')
+    expect(within(filters).getByRole('button', { name: '启动动画' }).getAttribute('aria-pressed')).toBe('true')
     expect(within(filters).getByRole('button', { name: '桌宠' }).getAttribute('aria-pressed')).toBe('false')
     expect(screen.queryByRole('button', { name: /桌面宠物 界面预览/ })).toBeNull()
     fireEvent.click(within(filters).getByRole('button', { name: '桌宠' }))
