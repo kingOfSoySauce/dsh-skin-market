@@ -1,0 +1,10 @@
+url: https://github.com/GXinnnnnn/dsh-SAO
+name:
+  zh: dsh-SAO（主包）
+  en: dsh-SAO (root package)
+author: GXinnnnnn
+description: 仓库根目录安装包，与已收录的 market 子包功能相同，两者请选择一种，切换前停用或移除已有副本。提供双启动动画与角色语音、主题配色、液态与磨砂玻璃、自定义壁纸和模型强度调节；右栏支持连续背景、卡片透明度补偿和常用标签页统一样式，保留 Browser 原生界面，右上角采用直角，内侧采用平整衔接。
+screenshots:
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/context-liquid.png
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/settings-context.png
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/workspace.png
