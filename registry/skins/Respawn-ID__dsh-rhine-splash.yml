@@ -3,7 +3,7 @@ name:
   zh: 莱茵生命主题
   en: Rhine Lab Theme
 author: Respawn-ID
-description: 莱茵生命风格的开屏动画、界面配色和品牌标志，另带即答与立即回答、推理强度滑块、莱茵通知、待办中心、费用页面与账户余额、归档对话管理。
+description: 莱茵生命风格的开屏动画、界面配色和品牌标志，另带即答与立即回答、推理强度滑块、莱茵通知、待办中心、费用页面与账户余额、莱茵实验周报、归档对话管理。
 repo: https://github.com/Respawn-ID/dsh-rhine-splash
 package: dsh-rhine-splash
 rowId: rhine-splash
@@ -14,31 +14,31 @@ modes:
   - light
   - dark
 install:
-  target: github:Respawn-ID/dsh-rhine-splash#100f67eae68f6ba997fe91a325b10ed64351ecde
-  version: 0.2.6
-  commit: 100f67eae68f6ba997fe91a325b10ed64351ecde
+  target: github:Respawn-ID/dsh-rhine-splash#9808714bf87bae1066e74167039b820aa4f7cbd2
+  version: 0.2.9
+  commit: 9808714bf87bae1066e74167039b820aa4f7cbd2
   npm:
     name: dsh-rhine-splash
-    version: 0.2.6
-    integrity: sha512-hMyza3MgMZdDFezu9qoJulmAnzXpLSq8J/k+TCv8IxysLQsQkyCIObg/N2Pwll905MfTk6rYVWN897bXrJB6vw==
+    version: 0.2.9
+    integrity: sha512-2andVyVL/Nb9mupxEjhYSFAHUc1CXihHSq9BvtMCWDAEoSF1CmstbAE2EgMzOu/lWuSNvq2N6WyX9xrv0h0giw==
     repository: https://github.com/Respawn-ID/dsh-rhine-splash
-    gitHead: 100f67eae68f6ba997fe91a325b10ed64351ecde
+    gitHead: 9808714bf87bae1066e74167039b820aa4f7cbd2
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-rhine-splash
-    packageVersion: 0.2.6
-    integrity: sha512-hMyza3MgMZdDFezu9qoJulmAnzXpLSq8J/k+TCv8IxysLQsQkyCIObg/N2Pwll905MfTk6rYVWN897bXrJB6vw==
+    packageVersion: 0.2.9
+    integrity: sha512-2andVyVL/Nb9mupxEjhYSFAHUc1CXihHSq9BvtMCWDAEoSF1CmstbAE2EgMzOu/lWuSNvq2N6WyX9xrv0h0giw==
 compatibility:
-  dsh: 0.2.1-rc.2
+  dsh: 0.2.1-rc.5
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/100f67eae68f6ba997fe91a325b10ed64351ecde/screenshots/splash-light.png
-  - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/100f67eae68f6ba997fe91a325b10ed64351ecde/screenshots/splash-dark.png
-  - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/100f67eae68f6ba997fe91a325b10ed64351ecde/screenshots/home-light.png
-  - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/100f67eae68f6ba997fe91a325b10ed64351ecde/screenshots/home-dark.png
-listScreenshot: https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/100f67eae68f6ba997fe91a325b10ed64351ecde/screenshots/splash-light.png
+  - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/9808714bf87bae1066e74167039b820aa4f7cbd2/screenshots/splash-light.png
+  - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/9808714bf87bae1066e74167039b820aa4f7cbd2/screenshots/splash-dark.png
+  - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/9808714bf87bae1066e74167039b820aa4f7cbd2/screenshots/home-light.png
+  - https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/9808714bf87bae1066e74167039b820aa4f7cbd2/screenshots/home-dark.png
+listScreenshot: https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/9808714bf87bae1066e74167039b820aa4f7cbd2/screenshots/splash-light.png
 review:
   compatibility: verified
   preview: verified
@@ -57,7 +57,7 @@ license:
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 3
-releaseUpdatedAt: 2026-10-23T18:07:31.000Z
-metadataUpdatedAt: 2026-10-23T18:07:31.000Z
+releaseUpdatedAt: 2026-11-04T02:25:39.259Z
+metadataUpdatedAt: 2026-11-04T02:25:39.259Z
 starsUpdatedAt: 2026-10-18T21:26:30.671Z
-updatedAt: 2026-10-23T18:07:31.000Z
+updatedAt: 2026-11-04T02:25:39.259Z
