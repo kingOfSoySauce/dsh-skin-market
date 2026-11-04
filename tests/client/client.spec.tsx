@@ -2610,12 +2610,12 @@ describe('client market', () => {
   })
 
   it('clears a Web selection restart receipt when the client module is already active', async () => {
-    const fetchMock = vi.fn(async (url: string) => ({
+    const fetchMock = vi.fn(async (url: string, _init?: RequestInit) => ({
       ok: true,
       json: async () => url.endsWith('/catalog')
         ? { skins: [skin] }
         : {
-          hostKind: 'dsh', runtime: dshRuntime, skins: [{
+          hostKind: 'dsh', runtime: dshRuntime, restartNoticeId: 'active-web-receipt', skins: [{
             skinId: skin.id, installation: 'installed', activation: 'restart-required', restartSource: 'selection', primary: true,
             clientModule: true, selectionHostApplied: true, selectionHostStatus: 'applied', selectionClientTargets: [{ package: skin.package, active: true }], installedVersion: '1.0.0', updateAvailable: false,
           }],
@@ -2632,6 +2632,7 @@ describe('client market', () => {
     expect(await screen.findAllByText('使用中')).not.toHaveLength(0)
     expect(screen.queryByRole('button', { name: '重启以应用' })).toBeNull()
     expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/restart/clear') && init?.method === 'POST')).toBe(true)
   })
 
   it('shows the official Desktop restart instruction without posting to the market restart route', async () => {

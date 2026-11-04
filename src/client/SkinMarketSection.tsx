@@ -928,6 +928,8 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
   const webSelectionSkinIds = useRef(new Set<string>())
   const webClientGrace = useRef<{ key: string; startedAt: number } | null>(null)
   const webRestartGrace = useRef(new Map<string, { key: string; startedAt: number }>())
+  const webReceiptClearInFlight = useRef(new Set<string>())
+  const webReceiptCleared = useRef(new Set<string>())
   const webHostReview = useRef<{ key: string; attempts: number; nextAt: number } | null>(null)
   const webClientResult = useRef('')
   const hostStateRead = useRef<Promise<void> | null>(null)
@@ -1134,8 +1136,33 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
     return { ...state, skins }
   }, [clientRuntime])
 
+  const clearActiveWebReceipts = useCallback((state: MarketStateResponse) => {
+    if (state.hostKind === 'desktop' || clientRuntime?.probeActive === undefined) return
+    const currentKeys = new Set<string>()
+    for (const item of state.skins) {
+      if (item.activation !== 'restart-required') continue
+      const skin = skinsRef.current.find(candidate => candidate.id === item.skinId)
+      if (skin === undefined || clientRuntime.probeActive(skin.package) !== 'active') continue
+      const key = JSON.stringify([state.restartNoticeId ?? 'legacy', item.skinId])
+      currentKeys.add(key)
+      if (webReceiptCleared.current.has(key) || webReceiptClearInFlight.current.has(key)) continue
+      webReceiptClearInFlight.current.add(key)
+      void json('/dsh-skin-market/restart/clear', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ skinId: item.skinId }),
+      }).then(() => {
+        webReceiptCleared.current.add(key)
+      }).catch(() => undefined).finally(() => {
+        webReceiptClearInFlight.current.delete(key)
+      })
+    }
+    for (const key of webReceiptCleared.current) if (!currentKeys.has(key)) webReceiptCleared.current.delete(key)
+  }, [clientRuntime])
+
   const applyMarketState = useCallback((state: MarketStateResponse, preferredNotice?: PendingRestartNotice, autoRestartPrompt = true) => {
     latestHostMarketState.current = state
+    clearActiveWebReceipts(state)
     state = reconcileWebClients(state)
     if (state.hostKind === 'desktop' && state.management?.official === true && clientRuntime?.probeActive !== undefined) {
       state = { ...state, skins: state.skins.map(item => {
@@ -1260,7 +1287,7 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
       })
     }
     return state
-  }, [clientRuntime, presentRestartNotice, reconcileWebClients])
+  }, [clearActiveWebReceipts, clientRuntime, presentRestartNotice, reconcileWebClients])
 
   const reviewHostState = useCallback(async () => {
     if (hostStateRead.current !== null) return hostStateRead.current
