@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-03T01:39:12.785Z",
+  "generatedAt": "2026-11-04T00:05:49.528Z",
   "historyDays": 71,
   "earliestObservedDay": 20681,
   "repos": {
@@ -1038,11 +1038,17 @@
     "aumisatori/dsh-ui-beautify": {
       "owner": "AumiSatori",
       "createdAt": null,
-      "daily": {},
+      "daily": {
+        "2026-11-03": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 0,
@@ -1453,50 +1459,6 @@
         "commits": 29,
         "pulls": 1,
         "issues": 3
-      },
-      "forks": 1,
-      "watchers": 0,
-      "truncated": false
-    },
-    "captain1275/dsh-ui-web": {
-      "owner": "CAPTAIN1275",
-      "createdAt": "2026-08-14T15:15:19Z",
-      "daily": {
-        "2026-08-22": {
-          "commits": 10,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-01": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-07": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-08": {
-          "commits": 10,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-20": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-21": {
-          "commits": 3,
-          "pulls": 0,
-          "issues": 0
-        }
-      },
-      "totals": {
-        "commits": 26,
-        "pulls": 0,
-        "issues": 0
       },
       "forks": 1,
       "watchers": 0,
@@ -3345,12 +3307,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-03": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 1447,
         "pulls": 105,
-        "issues": 137
+        "issues": 138
       },
       "forks": 78,
       "watchers": 0,
@@ -4103,15 +4070,33 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-03": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 11,
-        "pulls": 1,
+        "pulls": 2,
         "issues": 1
       },
       "forks": 1,
       "watchers": 1,
+      "truncated": false
+    },
+    "gxinnnnnn/dsh-sao": {
+      "owner": "GXinnnnnn",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
       "truncated": false
     },
     "h-table/dsh-bg-tool": {
@@ -5654,12 +5639,17 @@
           "commits": 1,
           "pulls": 1,
           "issues": 1
+        },
+        "2026-11-03": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 35,
         "pulls": 6,
-        "issues": 12
+        "issues": 13
       },
       "forks": 19,
       "watchers": 1,
@@ -6627,12 +6617,17 @@
           "commits": 1,
           "pulls": 0,
           "issues": 0
+        },
+        "2026-11-03": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 3,
         "pulls": 0,
-        "issues": 1
+        "issues": 2
       },
       "forks": 0,
       "watchers": 0,
@@ -9093,11 +9088,17 @@
     "reisen-ww/dsh-bonk-pet": {
       "owner": "reisen-ww",
       "createdAt": null,
-      "daily": {},
+      "daily": {
+        "2026-11-03": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 0,
@@ -9587,12 +9588,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-03": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 2
         }
       },
       "totals": {
         "commits": 252,
-        "pulls": 30,
-        "issues": 40
+        "pulls": 31,
+        "issues": 42
       },
       "forks": 27,
       "watchers": 1,
@@ -12915,11 +12921,16 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-03": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 0,
-        "pulls": 1,
+        "pulls": 2,
         "issues": 1
       },
       "forks": 0,
@@ -14478,12 +14489,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-03": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 2
         }
       },
       "totals": {
         "commits": 2,
         "pulls": 0,
-        "issues": 2
+        "issues": 4
       },
       "forks": 0,
       "watchers": 1,

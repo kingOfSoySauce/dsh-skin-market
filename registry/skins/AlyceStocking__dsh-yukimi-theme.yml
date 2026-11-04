@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:AlyceStocking/dsh-yukimi-theme#0cbab4ca77700ccd54a8532fd94d67dd1b1c4d51
-  version: 1.3.0
-  commit: 0cbab4ca77700ccd54a8532fd94d67dd1b1c4d51
+  target: github:AlyceStocking/dsh-yukimi-theme#5813a4c84e53fd028dfa56d5c462515ec5a6d974
+  version: 1.3.4
+  commit: 5813a4c84e53fd028dfa56d5c462515ec5a6d974
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。
@@ -42,12 +42,12 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 0cbab4ca77700ccd54a8532fd94d67dd1b1c4d51
-    packageVersion: 1.3.0
+    commit: 5813a4c84e53fd028dfa56d5c462515ec5a6d974
+    packageVersion: 1.3.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-03T01:37:51.167Z
+    checkedAt: 2026-11-04T00:04:37.479Z
     findings: []
 license:
   code: MIT
@@ -55,7 +55,7 @@ license:
   notice: 代码 MIT；角色与在线素材按仓库说明使用，不自动纳入 MIT 范围。
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-03T01:37:51.280Z
-metadataUpdatedAt: 2026-11-03T01:37:51.280Z
+releaseUpdatedAt: 2026-11-04T00:04:38.184Z
+metadataUpdatedAt: 2026-11-04T00:04:38.184Z
 starsUpdatedAt: 2026-11-01T00:00:00.000Z
-updatedAt: 2026-11-03T01:37:51.280Z
+updatedAt: 2026-11-04T00:04:38.184Z
