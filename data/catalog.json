@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T10:05:49.428Z",
+  "generatedAt": "2026-11-04T17:52:13.515Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -37808,16 +37808,15 @@
       }
     },
     {
-      "id": "gxinnnnnn.market",
+      "id": "gxinnnnnn.dsh.sao",
       "name": {
-        "zh": "dsh-SAO",
-        "en": "dsh-SAO"
+        "zh": "dsh-SAO（主包）",
+        "en": "dsh-SAO (root package)"
       },
       "author": "GXinnnnnn",
-      "description": "仿刀剑神域开屏动画，4K 早启动与独立渲染，不修改主题；DSH 添加插件输入 github:GXinnnnnn/dsh-SAO",
+      "description": "仓库根目录安装包，与已收录的 market 子包功能相同，两者请选择一种，切换前停用或移除已有副本。提供双启动动画与角色语音、主题配色、液态与磨砂玻璃、自定义壁纸和模型强度调节；右栏支持连续背景、卡片透明度补偿和常用标签页统一样式，保留 Browser 原生界面，右上角采用直角，内侧采用平整衔接。",
       "repo": "https://github.com/GXinnnnnn/dsh-SAO",
-      "subpath": "market",
-      "package": "@local/dsh-sao-market",
+      "package": "@local/dsh-sao-link-start",
       "rowId": "sao-link-start",
       "category": "skin",
       "tags": [
@@ -37828,13 +37827,9 @@
         "dark"
       ],
       "install": {
-        "target": "github:GXinnnnnn/dsh-SAO#5d036d0e1197c3054fb3264a373a35196ec4861b&path:/market",
+        "target": "github:GXinnnnnn/dsh-SAO#6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd",
         "version": "3.0.0",
-        "commit": "5d036d0e1197c3054fb3264a373a35196ec4861b",
-        "desktop": {
-          "mode": "manual-only",
-          "reason": "npm-package-not-found"
-        }
+        "commit": "6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd"
       },
       "compatibility": {
         "dsh": "unverified",
@@ -37843,11 +37838,14 @@
         ]
       },
       "screenshots": [
-        "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/45509a69f97f52c18461f3c16d6475bba15feafb/market/assets/startup.png",
-        "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/45509a69f97f52c18461f3c16d6475bba15feafb/market/assets/animation-4k.png",
-        "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/45509a69f97f52c18461f3c16d6475bba15feafb/market/assets/original-vs-plugin.png"
+        "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/context-liquid.png",
+        "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/settings-context.png",
+        "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/workspace.png",
+        "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/settings-appearance.png",
+        "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/settings-context.png",
+        "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/context-frosted.png",
+        "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/settings-wallpaper.png"
       ],
-      "listScreenshot": "https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/45509a69f97f52c18461f3c16d6475bba15feafb/market/assets/startup.png",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
@@ -37865,44 +37863,51 @@
         "suggestions": [
           "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
           "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。"
-        ],
-        "scan": {
-          "commit": "5d036d0e1197c3054fb3264a373a35196ec4861b",
-          "packageVersion": "3.0.0",
-          "scannerVersion": "static-v2",
-          "mode": "static",
-          "result": "pass",
-          "checkedAt": "2026-11-04T00:04:17.226Z",
-          "findings": []
-        }
+        ]
       },
       "license": {
         "code": "SEE LICENSE IN LICENSE",
         "commercialUse": false
       },
       "featuredRank": 1000,
-      "starsSnapshot": 2,
-      "releaseUpdatedAt": "2026-11-04T00:04:19.110Z",
-      "metadataUpdatedAt": "2026-11-04T00:04:19.110Z",
-      "starsUpdatedAt": "2026-11-03T08:24:27.367Z",
-      "updatedAt": "2026-11-04T00:04:19.110Z",
+      "starsSnapshot": 3,
+      "releaseUpdatedAt": "2026-11-04T17:52:09.353Z",
+      "metadataUpdatedAt": "2026-11-04T17:52:09.353Z",
+      "starsUpdatedAt": "2026-11-04T17:52:09.353Z",
+      "updatedAt": "2026-11-04T17:52:09.353Z",
       "media": {
         "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/61068536e055cbb47fd456822a8749b7.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/61068536e055cbb47fd456822a8749b7.full.webp"
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1924761ad5a4f4379c0cc8c2aad7b335.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1924761ad5a4f4379c0cc8c2aad7b335.full.webp"
         },
         "screenshots": [
           {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/61068536e055cbb47fd456822a8749b7.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/61068536e055cbb47fd456822a8749b7.full.webp"
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1924761ad5a4f4379c0cc8c2aad7b335.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1924761ad5a4f4379c0cc8c2aad7b335.full.webp"
           },
           {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7dee331e45db6274373f92a7fabde372.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7dee331e45db6274373f92a7fabde372.full.webp"
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0f826c6efcf9a58e8a100afbeff3d874.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0f826c6efcf9a58e8a100afbeff3d874.full.webp"
           },
           {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8e1e70fe4936f06ad25e7f4507600a42.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8e1e70fe4936f06ad25e7f4507600a42.full.webp"
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b33338959c5baa2230ab70ffe02acabb.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b33338959c5baa2230ab70ffe02acabb.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a97b3d39cb2e6ddb5c4a7c40b4eecde4.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a97b3d39cb2e6ddb5c4a7c40b4eecde4.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/99afc6787b0d009799ab06be0967d3c0.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/99afc6787b0d009799ab06be0967d3c0.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7399af3388c36510a1d104f84be10055.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7399af3388c36510a1d104f84be10055.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/aa0bed4505db4c534468f09bf0c994d7.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/aa0bed4505db4c534468f09bf0c994d7.full.webp"
           }
         ]
       }
@@ -62060,14 +62065,14 @@
       "score": 0.797,
       "asOf": "2026-11-04"
     },
-    "gxinnnnnn.market": {
-      "ageDays": 2,
-      "starsPerDay": 1,
+    "gxinnnnnn.dsh.sao": {
+      "ageDays": 1,
+      "starsPerDay": 3,
       "starGrowthPerDay": 0,
       "commitsPerDay": 0,
       "pullsPerDay": 0,
       "issuesPerDay": 0,
-      "score": 1.664,
+      "score": 3.327,
       "asOf": "2026-11-04"
     },
     "h-table.dsh-bg-tool": {

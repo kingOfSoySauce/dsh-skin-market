@@ -1,10 +1,55 @@
-url: https://github.com/GXinnnnnn/dsh-SAO
+id: gxinnnnnn.dsh.sao
 name:
   zh: dsh-SAO（主包）
   en: dsh-SAO (root package)
 author: GXinnnnnn
 description: 仓库根目录安装包，与已收录的 market 子包功能相同，两者请选择一种，切换前停用或移除已有副本。提供双启动动画与角色语音、主题配色、液态与磨砂玻璃、自定义壁纸和模型强度调节；右栏支持连续背景、卡片透明度补偿和常用标签页统一样式，保留 Browser 原生界面，右上角采用直角，内侧采用平整衔接。
+repo: https://github.com/GXinnnnnn/dsh-SAO
+package: "@local/dsh-sao-link-start"
+rowId: sao-link-start
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:GXinnnnnn/dsh-SAO#6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd
+  version: 3.0.0
+  commit: 6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd
+compatibility:
+  dsh: unverified
+  platform:
+    - web
 screenshots:
   - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/context-liquid.png
   - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/settings-context.png
   - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/workspace.png
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/settings-appearance.png
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/settings-context.png
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/context-frosted.png
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/settings-wallpaper.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: SEE LICENSE IN LICENSE
+  commercialUse: false
+featuredRank: 1000
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-04T17:52:09.353Z
+metadataUpdatedAt: 2026-11-04T17:52:09.353Z
+starsUpdatedAt: 2026-11-04T17:52:09.353Z
+updatedAt: 2026-11-04T17:52:09.353Z
