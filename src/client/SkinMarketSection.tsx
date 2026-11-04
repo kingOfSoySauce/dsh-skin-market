@@ -1401,7 +1401,6 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
         const operation = await json<MarketUpdateOperation>(`/dsh-skin-market/market-update/operations/${operationId}`)
         if (!mounted.current) return
         setMarketOperation(operation)
-        if (operation.phase === 'waiting') setProfileBusy(operation.message ?? '市场更新结果尚未确认，暂时不能修改插件')
         if (operation.phase === 'done') {
           await json<MarketStateResponse>('/dsh-skin-market/state').then(applyMarketState).catch(() => undefined)
           if (!mounted.current) return
@@ -2000,7 +1999,6 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
           if (!mounted.current) return false
           const operation = await json<Operation>(`/dsh-skin-market/operations/${operationId}`)
           if (!mounted.current) return false
-          if (operation.phase === 'waiting') setProfileBusy(operation.message ?? '插件启停结果尚未确认，暂时不能修改此 profile')
           setOperations(list => {
             const next = upsertOperation(list, operation)
             if (operation.phase === 'done' || operation.phase === 'cancelled') {
@@ -2620,8 +2618,10 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
   }
 
   const renderSkinOperationBanner = (className?: string) => {
+    if (warningDialog !== null) return null
     const visible = operations.filter(operation => isLiveOperation(operation)
-      && !(operation.phase === 'waiting' && dismissedNoticeIds.includes(`waiting:${operation.id}`)))
+      && !(operation.phase === 'waiting' && dismissedNoticeIds.includes(`waiting:${operation.id}`))
+      && waitingOperation?.id !== operation.id)
     if (visible.length === 0) return null
     const banners = visible.map(operation => {
       const failed = operation.phase === 'failed'
@@ -2652,8 +2652,9 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
   }
 
   const renderMarketOperationBanner = (className?: string) => {
-    if (marketOperation === null || marketOperation.phase === 'failed'
+    if (warningDialog !== null || marketOperation === null || marketOperation.phase === 'failed'
       || marketOperation.phase === 'waiting' && dismissedNoticeIds.includes(`waiting:${marketOperation.id}`)
+      || waitingOperation?.id === marketOperation.id
       || marketOperation.phase === 'done' && latestMarketState.current?.marketUpdateRestartRequired === true) return null
     const terminal = marketOperation.phase === 'done' || marketOperation.phase === 'cancelled'
     return <OperationBanner
@@ -2675,7 +2676,7 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
   />
   }
 
-  const renderCompletedUninstallBanner = (className?: string, skinId?: string) => completedUninstall === null
+  const renderCompletedUninstallBanner = (className?: string, skinId?: string) => warningDialog !== null || completedUninstall === null
     || skinId !== undefined && completedUninstall.skinId !== skinId ? null : <OperationBanner
     className={className}
     title={completedUninstall.title}
@@ -2700,7 +2701,7 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
     setConfirmRestart(false)
   }
 
-  const renderPendingRestartBanner = (className?: string, skinId?: string) => pendingRestart === null
+  const renderPendingRestartBanner = (className?: string, skinId?: string) => warningDialog !== null || pendingRestart === null
     || latestMarketState.current !== null && dismissedRestartBanners.current.has(restartPromptKey(latestMarketState.current, pendingRestart.target))
     || skinId !== undefined && pendingRestart.target.kind === 'skin' && pendingRestart.target.skinId !== skinId ? null : <OperationBanner
     className={className}
@@ -2755,13 +2756,12 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
                 className={`${css.marketUpdateButton} ${css.homeUpdateAction}`}
                 variant="outline"
                 size="sm"
-                icon={marketUpdating ? <IconLoadingOutline /> : <IconDownloadOutline />}
-                aria-label={`更新皮肤市场到 ${marketUpdate.latestVersion}`}
-                title={marketWriteReason ?? `发现新版本 ${marketUpdate.latestVersion}`}
+                icon={marketUpdating || marketUpdateActive ? <IconLoadingOutline /> : <IconDownloadOutline />}
+                aria-label={marketUpdating || marketUpdateActive ? '皮肤市场更新进行中' : `更新皮肤市场到 ${marketUpdate.latestVersion}`}
+                title={marketWriteReason ?? (marketUpdating || marketUpdateActive ? '皮肤市场更新进行中' : `发现新版本 ${marketUpdate.latestVersion}`)}
                 disabled={marketUpdating || marketUpdateActive || operations.some(isLiveOperation) || marketWriteReason !== undefined}
-                data-updating={marketUpdating || marketUpdateActive ? 'true' : undefined}
                 onClick={() => { void updateMarket() }}
-              ><span className={css.marketUpdateLabel}>{marketUpdating ? '更新中' : '更新'}</span></Button>}
+              ><span className={css.marketUpdateLabel}>{marketUpdating || marketUpdateActive ? '更新中' : '更新'}</span></Button>}
               <Button className={css.homeGithubAction} variant="outline" size="sm" icon={<MarkGithubIcon size={15} aria-hidden="true" />} aria-label="打开 GitHub 仓库" title="打开 GitHub 仓库" onClick={() => window.open(REGISTRY_REPOSITORY, '_blank', 'noopener,noreferrer')}><span className={css.homeGithubLabel}>GitHub</span></Button>
               <Button className={css.homeSubmitAction} variant="outline" size="sm" icon={<UploadSimpleIcon size={15} aria-hidden="true" />} onClick={() => { setShowSubmission(true); setSubmissionCopied(false) }}>提交皮肤</Button>
             </div>
@@ -2779,7 +2779,6 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
           {renderMarketOperationBanner(css.homeOperation)}
           {renderCompletedUninstallBanner(css.homeOperation)}
           {renderPendingRestartBanner(css.homeOperation)}
-          {profileBusy !== undefined && <p className={css.notice} role="status">{profileBusy}</p>}
         </header>
 
         <div className={css.homeContent} ref={homeRef} onScroll={event => {
@@ -2910,7 +2909,6 @@ export function SkinMarketSection({ t, layout = 'fill', clientRuntime, catalogCa
 
           {(selected.install.companions?.length ?? 0) > 0 && <p className={css.notice} role="note">使用该皮肤时会加载细节定制面板；停用或换到其他皮肤后会从设置页撤掉，不会当成一张独立皮肤。</p>}
 
-          {profileBusy !== undefined && <p className={css.notice} role="status">{profileBusy}</p>}
           {renderSkinOperationBanner()}
           {renderMarketOperationBanner()}
           {renderCompletedUninstallBanner(undefined, selected.id)}

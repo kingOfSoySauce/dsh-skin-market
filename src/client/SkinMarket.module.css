@@ -299,10 +299,8 @@
 .marketUpdateLabel { display: none; white-space: nowrap; }
 .root .marketUpdateButton:hover,
 .root .marketUpdateButton:focus-visible { width: 68px; padding-inline: 10px; }
-.root .marketUpdateButton[data-updating="true"] { width: 78px; padding-inline: 10px; }
 .root .marketUpdateButton:hover .marketUpdateLabel,
-.root .marketUpdateButton:focus-visible .marketUpdateLabel,
-.root .marketUpdateButton[data-updating="true"] .marketUpdateLabel { display: inline; }
+.root .marketUpdateButton:focus-visible .marketUpdateLabel { display: inline; }
 .catalogHeader > span { display: flex; align-items: center; gap: 8px; height: 48px; padding: 0 14px; color: var(--dsw-alias-label-secondary); border: 0.5px solid var(--dsw-alias-border-l2); border-radius: var(--dsw-radius-md); background: transparent; }
 .catalogHeader > span:focus-within { border-color: var(--dsw-alias-border-l1); }
 .catalogHeader > span input { min-width: 0; flex: 1; color: var(--dsw-alias-label-primary); border: 0; outline: 0; background: transparent; }
