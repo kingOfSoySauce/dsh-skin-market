@@ -28,6 +28,15 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.unstubAllGlobals() })
 
 describe('public catalog filters', () => {
+  it('omits the redundant public page headings while keeping search and filters', () => {
+    render(<App skins={[skin]} />)
+
+    expect(screen.queryByText('发现皮肤')).toBeNull()
+    expect(screen.queryByText('发现更多')).toBeNull()
+    expect(screen.getByRole('textbox', { name: '搜索皮肤、作者或标签' })).toBeTruthy()
+    expect(screen.getByRole('group', { name: '分类' })).toBeTruthy()
+  })
+
   it('shows skins and splash by default and toggles the other categories', () => {
     const pet = { ...skin, id: 'test.pet', name: { zh: '桌面宠物', en: 'Desk Pet' }, category: 'pet' as const }
     const player = { ...skin, id: 'test.player', name: { zh: '音乐播放器', en: 'Music Player' }, category: 'player' as const }

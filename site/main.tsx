@@ -40,9 +40,7 @@ function CatalogSortOptions({ value, onChange }: { value: CatalogSort; onChange:
   </div>
 }
 
-function DiscoverToolbar({ label, headingId, docked = false, placeholderRef, enabledCategories, onToggleCategory, sort, onSort }: {
-  label: string
-  headingId?: string
+function DiscoverToolbar({ docked = false, placeholderRef, enabledCategories, onToggleCategory, sort, onSort }: {
   docked?: boolean
   placeholderRef?: Ref<HTMLDivElement>
   enabledCategories: ReadonlySet<MarketCategory>
@@ -52,7 +50,6 @@ function DiscoverToolbar({ label, headingId, docked = false, placeholderRef, ena
 }) {
   return <div className="feed-section-title" ref={placeholderRef} data-header-discover={placeholderRef === undefined ? '' : undefined} data-docked={docked ? 'true' : undefined} aria-hidden={docked ? true : undefined}>
     <div className="discover-heading">
-      <h2 id={headingId}>{label}</h2>
       <div className="filter-options" role="group" aria-label="分类">
         {MARKET_CATEGORIES.map(category => <button key={category} type="button" className="sort-option" aria-pressed={enabledCategories.has(category)} onClick={() => onToggleCategory(category)}>{MARKET_CATEGORY_LABELS[category]}</button>)}
       </div>
@@ -80,9 +77,8 @@ function CatalogCard({ skin, onOpen, onInstall }: { skin: Skin; onOpen: () => vo
   </article>
 }
 
-function FeedHeader({ skinCount, headerRef, searchSlotRef }: { skinCount: number; headerRef?: Ref<HTMLElement>; searchSlotRef?: Ref<HTMLDivElement> }) {
+function FeedHeader({ headerRef, searchSlotRef }: { headerRef?: Ref<HTMLElement>; searchSlotRef?: Ref<HTMLDivElement> }) {
   return <header className="feed-header" ref={headerRef}>
-    <div><h1>发现皮肤</h1><p>{skinCount} 款社区皮肤，找到适合你的 DSH 外观</p></div>
     <div className="feed-search-slot" ref={searchSlotRef} aria-hidden="true" />
   </header>
 }
@@ -265,7 +261,6 @@ export function App({ skins }: { skins: Skin[] }) {
     window.setTimeout(() => setCopied(current => current === key ? null : current), 1800)
   }
 
-  const discoverLabel = query.trim() === '' ? '发现更多' : '搜索结果'
   const toggleCategory = (category: MarketCategory) => setEnabledCategories(current => {
     const next = new Set(current)
     if (next.has(category)) next.delete(category)
@@ -306,13 +301,13 @@ export function App({ skins }: { skins: Skin[] }) {
           </a>
         </nav>
       </div>
-      {discoverDocked && <DiscoverToolbar label={discoverLabel} headingId="discover-title" enabledCategories={enabledCategories} onToggleCategory={toggleCategory} sort={sort} onSort={setSort} />}
+      {discoverDocked && <DiscoverToolbar enabledCategories={enabledCategories} onToggleCategory={toggleCategory} sort={sort} onSort={setSort} />}
     </header>
 
     <main className="feed-page">
-      <FeedHeader headerRef={feedHeaderRef} searchSlotRef={feedSearchSlotRef} skinCount={skins.length} />
-      <section className="feed-content" aria-labelledby="discover-title">
-        <DiscoverToolbar label={discoverLabel} headingId={discoverDocked ? undefined : 'discover-title'} docked={discoverDocked} placeholderRef={discoverTitleRef} enabledCategories={enabledCategories} onToggleCategory={toggleCategory} sort={sort} onSort={setSort} />
+      <FeedHeader headerRef={feedHeaderRef} searchSlotRef={feedSearchSlotRef} />
+      <section className="feed-content" aria-label="皮肤目录">
+        <DiscoverToolbar docked={discoverDocked} placeholderRef={discoverTitleRef} enabledCategories={enabledCategories} onToggleCategory={toggleCategory} sort={sort} onSort={setSort} />
         {visibleSkins.length > 0 ? <div className="skin-grid">
           {visibleSkins.map(skin => <CatalogCard key={skin.id} skin={skin} onOpen={() => select(skin.id)} onInstall={() => { setSelectedId(skin.id); setShot(0); setCopied(null); setInstallDialog('skin') }} />)}
         </div> : <p className="no-results feed-empty">没有匹配的皮肤</p>}

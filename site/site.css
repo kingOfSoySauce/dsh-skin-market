@@ -57,17 +57,11 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
 
 .feed-page { width: min(1240px, 100%); min-height: calc(100vh - 68px); margin: 0 auto; }
 .feed-header { position: relative; display: grid; gap: 14px; padding: 22px 24px 16px; border-bottom: 1px solid var(--border); background: rgba(21, 22, 25, .92); backdrop-filter: blur(16px); }
-.feed-header > div { display: flex; min-width: 0; align-items: baseline; justify-content: space-between; gap: 16px; }
-.feed-header h1, .feed-header p, .feed-section-title h2 { margin: 0; }
-.feed-header h1 { font-size: 20px; line-height: 28px; }
-.feed-header p { color: var(--caption); font-size: 11px; line-height: 18px; }
 .feed-search-slot { width: 100%; height: 42px; }
 .site-search { position: absolute; visibility: hidden; background: var(--surface-2); }
 .feed-content { padding: 24px 24px 48px; }
 .feed-section-title { display: flex; min-height: 28px; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
 .discover-heading { display: flex; min-width: 0; flex: 1; flex-wrap: wrap; align-items: center; gap: 10px; }
-.feed-section-title h2 { font-size: 15px; line-height: 22px; }
-.feed-section-title span { color: var(--caption); font-size: 11px; line-height: 17px; }
 .feed-section-title[data-docked="true"] { visibility: hidden; }
 .filter-options, .sort-options { display: flex; flex: none; flex-wrap: wrap; align-items: center; gap: 2px; }
 .sort-option { box-sizing: border-box; min-height: 28px; cursor: pointer; padding: 5px 9px; color: var(--caption); border: 0; border-radius: var(--dsw-radius-sm); background: transparent; font-size: 11px; line-height: 16px; }
@@ -248,8 +242,6 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
   .top-actions .button { padding: 0 11px; }
   .feed-page { min-height: calc(100vh - 62px); }
   .feed-header { gap: 12px; padding: 18px 16px 14px; }
-  .feed-header > div { display: block; }
-  .feed-header p { margin-top: 2px; }
   .feed-content { padding: 20px 16px 36px; }
   .skin-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
   .feed-card-copy { padding: 9px 12px 10px; }
