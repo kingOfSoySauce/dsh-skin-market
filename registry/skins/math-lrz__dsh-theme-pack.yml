@@ -1,0 +1,54 @@
+id: math-lrz.dsh-theme-pack
+name:
+  zh: dsh-theme-pack
+  en: dsh-theme-pack
+author: math-lrz
+description: 16 套 DeepSeek Harness Web GUI 主题皮肤，覆盖 Catppuccin、Gruvbox、Everforest、Nord、Dracula 等配色。
+repo: https://github.com/math-lrz/dsh-theme-pack
+package: dsh-theme-pack
+rowId: math-lrz-dsh-theme-pack
+category: skin
+tags:
+- appearance
+- theme
+- theme-pack
+modes:
+- light
+- dark
+install:
+  target: 'github:math-lrz/dsh-theme-pack#5a4cdbe9e6acc68f467be4af5458d2ea2e2b1616'
+  version: 1.0.0
+  commit: 5a4cdbe9e6acc68f467be4af5458d2ea2e2b1616
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: 'unverified'
+  platform:
+  - web
+screenshots:
+- https://raw.githubusercontent.com/math-lrz/dsh-theme-pack/5a4cdbe9e6acc68f467be4af5458d2ea2e2b1616/previews/_gallery.png
+- https://raw.githubusercontent.com/math-lrz/dsh-theme-pack/5a4cdbe9e6acc68f467be4af5458d2ea2e2b1616/previews/dracula.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+  - 固定版本主题选择器未在本轮宿主中形成实机证据；保留固定 commit 上游展示图。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 2
+releaseUpdatedAt: '2026-11-04T14:29:50+08:00'
+metadataUpdatedAt: '2026-11-04T14:29:50+08:00'
+starsUpdatedAt: '2026-11-04T14:29:50+08:00'
+updatedAt: '2026-11-04T14:29:50+08:00'

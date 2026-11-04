@@ -1,0 +1,53 @@
+id: lxj5820.dsh-boot-animation
+name:
+  zh: dsh-boot-animation
+  en: dsh-boot-animation
+author: lxj5820
+description: 用全屏视频替换 DSH 内核开屏页并淡入主界面的纯开屏动画插件。
+repo: https://github.com/lxj5820/dsh-boot-animation
+package: dsh-boot-animation
+rowId: lxj5820-dsh-boot-animation
+category: splash
+tags:
+- animation
+- startup
+- splash
+modes:
+- light
+- dark
+install:
+  target: 'github:lxj5820/dsh-boot-animation#b7786cd749ef18608340a8f5e2071a3656ebf009'
+  version: 0.3.0
+  commit: b7786cd749ef18608340a8f5e2071a3656ebf009
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+  - web
+screenshots:
+- skin-screenshots/lxj5820__dsh-boot-animation/b7786cd749ef18608340a8f5e2071a3656ebf009/home.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+  - 纯开屏候选只展示 GIF；运行 GIF 实测 92 帧 / 11.51 秒，三视图不作为收录门槛。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 315
+releaseUpdatedAt: '2026-11-04T14:29:50+08:00'
+metadataUpdatedAt: '2026-11-04T14:29:50+08:00'
+starsUpdatedAt: '2026-11-04T14:29:50+08:00'
+updatedAt: '2026-11-04T14:29:50+08:00'

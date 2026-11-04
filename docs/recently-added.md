@@ -4,6 +4,96 @@
 
 安装版本固定到对应收录 commit；预览图使用 registry 中记录的仓库素材。收录市场不等于 DSH 官方、安全团队或市场对皮肤的安全背书；兼容性和素材授权状态请以皮肤仓库说明为准。
 
+<a id="recent-2026-11-04-followup"></a>
+
+## 2026-11-04 · dsh-claude-style
+
+Claude Code Desktop 风格的 DeepSeek Harness 主题；固定版本保留上游界面展示图，当前宿主隔离导入仍需单独复核。
+
+- GitHub：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)
+- 收录版本：`0.19.6`
+- 固定 commit：`2fe529209ace010a2473f6def0221f342f301c88`
+- 许可：MIT
+
+<img src="https://raw.githubusercontent.com/Nwflower/dsh-claude-style/2fe529209ace010a2473f6def0221f342f301c88/docs/screenshots/claude-home-light.png" width="60%" alt="dsh-claude-style">
+
+## 2026-11-04 · dsh-pet
+
+registry 驱动的多桌宠伴侣插件；固定版本优先展示作者提供的 GIF 预览，不把上游动图写成隔离 DSH 运行认证。
+
+- GitHub：[zhu1090093659/dsh-pet](https://github.com/zhu1090093659/dsh-pet)
+- 收录版本：`0.4.14`
+- 固定 commit：`9ed843bccee3d2604ce0ac31f55cbde9bda97c7f`
+- 许可：Apache-2.0
+
+<img src="https://raw.githubusercontent.com/zhu1090093659/dsh-pet/9ed843bccee3d2604ce0ac31f55cbde9bda97c7f/assets/whale-refined/previews/idle.gif" width="60%" alt="dsh-pet">
+
+## 2026-11-04 · dsh-theme-pack · math-lrz
+
+16 套配色主题；固定版本保留作者的主题画廊展示图，实机选择器证据仍单独记录在审批材料。
+
+- GitHub：[math-lrz/dsh-theme-pack](https://github.com/math-lrz/dsh-theme-pack)
+- 收录版本：`1.0.0`
+- 固定 commit：`5a4cdbe9e6acc68f467be4af5458d2ea2e2b1616`
+- 许可：MIT
+
+<img src="https://raw.githubusercontent.com/math-lrz/dsh-theme-pack/5a4cdbe9e6acc68f467be4af5458d2ea2e2b1616/previews/_gallery.png" width="60%" alt="math-lrz dsh-theme-pack">
+
+## 2026-11-04 · dsh-theme · EthanHannn
+
+多主题与 light/dark/system 模式主题包；固定版本使用仓库界面展示图。
+
+- GitHub：[EthanHannn/dsh-theme](https://github.com/EthanHannn/dsh-theme)
+- 收录版本：`0.2.0`
+- 固定 commit：`dbe038c1d18d1767ecbe57f3b108403315a019a9`
+- 许可：MIT
+
+<img src="https://raw.githubusercontent.com/EthanHannn/dsh-theme/dbe038c1d18d1767ecbe57f3b108403315a019a9/docs/screenshots/141-oshi-backstage-starlight-light.webp" width="60%" alt="EthanHannn dsh-theme">
+
+## 2026-11-04 · dsh-plugin-startup-animation
+
+纯启动动画；市场展示优先使用固定 commit 在隔离 DSH 中录得的真实 GIF，不补三视图。
+
+- GitHub：[WWFZS/dsh-plugin-startup-animation](https://github.com/WWFZS/dsh-plugin-startup-animation)
+- 收录版本：`1.22.1`
+- 固定 commit：`3173ace4a769b20e5c0fa48486ee9df790db7e46`
+- 许可：MIT
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/WWFZS__dsh-plugin-startup-animation/3173ace4a769b20e5c0fa48486ee9df790db7e46/home.gif" width="60%" alt="dsh-plugin-startup-animation">
+
+## 2026-11-04 · dsh-abyss-skin
+
+启动画面、动态背景与主题切换器复合皮肤；运行 GIF 放在三视图之前展示。
+
+- GitHub：[657793814/dsh-abyss-skin](https://github.com/657793814/dsh-abyss-skin)
+- 收录版本：`1.6.0`
+- 固定 commit：`ed50e81c34948798cb9cd15340c7290850125781`
+- 许可：MIT
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/home.gif" width="60%" alt="dsh-abyss-skin">
+
+## 2026-11-04 · deepseek-harness-skin
+
+壁纸与半透明面板主题系统；固定 commit 的运行 GIF 优先于三视图展示，package 未声明 license 的限制保留在 registry。
+
+- GitHub：[xxue-z/deepseek-harness-skin](https://github.com/xxue-z/deepseek-harness-skin)
+- 收录版本：`1.0.20`
+- 固定 commit：`f93ebced727dced2769da65a17a9430d44c2a096`
+- 许可：固定版本 package 未声明 license
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/home.gif" width="60%" alt="deepseek-harness-skin">
+
+## 2026-11-04 · dsh-boot-animation
+
+纯启动动画；只展示固定 commit 在隔离 DSH 中录得的 GIF。
+
+- GitHub：[lxj5820/dsh-boot-animation](https://github.com/lxj5820/dsh-boot-animation)
+- 收录版本：`0.3.0`
+- 固定 commit：`b7786cd749ef18608340a8f5e2071a3656ebf009`
+- 许可：MIT
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/lxj5820__dsh-boot-animation/b7786cd749ef18608340a8f5e2071a3656ebf009/home.gif" width="60%" alt="dsh-boot-animation">
+
 <a id="recent-2026-11-03-followup"></a>
 
 ## 2026-11-03 · dsh-video-skin
@@ -65,7 +155,7 @@
 
 ## 2026-11-03 · dsh-SAO
 
-仿《刀剑神域》的开屏动画，提供 4K 早启动与独立渲染，不修改主题。
+仿《刀剑神域》的启动动画，提供 4K 早启动与独立渲染，不修改主题。
 
 - GitHub：[GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO/tree/45509a69f97f52c18461f3c16d6475bba15feafb/market)
 - 收录版本：`3.0.0`
@@ -73,7 +163,7 @@
 - 子目录：`market`
 - 许可：见固定版本仓库中的 `LICENSE`
 
-<img src="https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/45509a69f97f52c18461f3c16d6475bba15feafb/market/assets/startup.png" width="60%" alt="dsh-SAO 开屏动画预览">
+<img src="https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/45509a69f97f52c18461f3c16d6475bba15feafb/market/assets/startup.png" width="60%" alt="dsh-SAO 启动动画预览">
 
 <a id="recent-2026-11-02"></a>
 
@@ -426,9 +516,9 @@ DeepSeek Harness 启动画面与启动动画：黑幕标识、档案底板、交
 
 <a id="recent-2026-10-18"></a>
 
-## 2026-10-18 · 莱茵生命开屏动画
+## 2026-10-18 · 莱茵生命启动动画
 
-莱茵生命风格的开屏动画、暖白 / 暖炭黑主界面配色与品牌标志替换；另带可单独关闭的推理强度滑块、对话费用与余额显示、归档对话管理。
+莱茵生命风格的启动动画、暖白 / 暖炭黑主界面配色与品牌标志替换；另带可单独关闭的推理强度滑块、对话费用与余额显示、归档对话管理。
 
 - GitHub：[Respawn-ID/dsh-rhine-splash](https://github.com/Respawn-ID/dsh-rhine-splash)
 - 收录版本：`0.2.1`
@@ -436,9 +526,9 @@ DeepSeek Harness 启动画面与启动动画：黑幕标识、档案底板、交
 - 许可：MIT
 - 社区 PR：[#109](https://github.com/kingOfSoySauce/dsh-skin-market/pull/109)
 
-<img src="https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/11b858d9f94ae445b9a0e94e5fd6614266eccac1/screenshots/splash-light.png" width="60%" alt="莱茵生命开屏动画 · 浅色开屏">
+<img src="https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/11b858d9f94ae445b9a0e94e5fd6614266eccac1/screenshots/splash-light.png" width="60%" alt="莱茵生命启动动画 · 浅色启动动画">
 
-<img src="https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/11b858d9f94ae445b9a0e94e5fd6614266eccac1/screenshots/home-dark.png" width="60%" alt="莱茵生命开屏动画 · 深色主界面">
+<img src="https://raw.githubusercontent.com/Respawn-ID/dsh-rhine-splash/11b858d9f94ae445b9a0e94e5fd6614266eccac1/screenshots/home-dark.png" width="60%" alt="莱茵生命启动动画 · 深色主界面">
 
 <a id="recent-since-2026-09-10"></a>
 
@@ -3678,7 +3768,7 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 固定 commit：`20ad36877f5862630857584cfb59158c699a94d8`
 
 <!-- dsh-auto-entry:respawn.id.dsh.rhine.splash -->
-### 2026-10-19 · 莱茵生命开屏动画
+### 2026-10-19 · 莱茵生命启动动画
 
 [Respawn-ID/dsh-rhine-splash](https://github.com/Respawn-ID/dsh-rhine-splash)：莱茵生命风格的开屏动画、界面配色和品牌标志，另带推理强度滑块、对话费用与余额显示、归档对话管理。
 
@@ -4292,7 +4382,7 @@ GAL 视窗主题：提供 Galgame 风格对话视图、16:9 舞台、打字机�
 
 ## 2026-08-18 · dsh-endfield-ui
 
-[dsh-endfield-ui](https://github.com/rison114514/dsh-endfield-ui) 是终末地工业风 DSH Web 工作台主题，包含 Host 静态素材、主题 Token、开屏动画和 shell overlay。
+[dsh-endfield-ui](https://github.com/rison114514/dsh-endfield-ui) 是终末地工业风 DSH Web 工作台主题，包含 Host 静态素材、主题 Token、启动动画和 shell overlay。
 
 - GitHub：[rison114514/dsh-endfield-ui](https://github.com/rison114514/dsh-endfield-ui)
 - 收录版本：`1.0.0`

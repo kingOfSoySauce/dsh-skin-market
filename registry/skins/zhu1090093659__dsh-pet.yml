@@ -1,0 +1,54 @@
+id: zhu1090093659.dsh-pet
+name:
+  zh: dsh-pet
+  en: dsh-pet
+author: zhu1090093659
+description: Multi-pet companion plugin for the DSH Web GUI：registry 驱动的浮层桌宠，支持状态反应、命名、投喂、互动和亲密度。
+repo: https://github.com/zhu1090093659/dsh-pet
+package: '@linxin666/dsh-pet'
+rowId: zhu1090093659-dsh-pet
+category: pet
+tags:
+- pet
+- companion
+- animation
+modes:
+- light
+- dark
+install:
+  target: 'github:zhu1090093659/dsh-pet#9ed843bccee3d2604ce0ac31f55cbde9bda97c7f'
+  version: 0.4.14
+  commit: 9ed843bccee3d2604ce0ac31f55cbde9bda97c7f
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: '>=0.2.1-rc.3'
+  platform:
+  - web
+screenshots:
+- https://raw.githubusercontent.com/zhu1090093659/dsh-pet/9ed843bccee3d2604ce0ac31f55cbde9bda97c7f/assets/whale-refined/previews/idle.gif
+- https://raw.githubusercontent.com/zhu1090093659/dsh-pet/9ed843bccee3d2604ce0ac31f55cbde9bda97c7f/assets/jyn/previews/work.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+  - 当前展示优先使用作者固定版本的 GIF；本轮未把上游宠物 GIF 冒充隔离 DSH 运行认证。
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 62
+releaseUpdatedAt: '2026-11-04T14:29:50+08:00'
+metadataUpdatedAt: '2026-11-04T14:29:50+08:00'
+starsUpdatedAt: '2026-11-04T14:29:50+08:00'
+updatedAt: '2026-11-04T14:29:50+08:00'

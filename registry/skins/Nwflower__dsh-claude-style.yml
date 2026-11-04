@@ -1,0 +1,54 @@
+id: nwflower.dsh-claude-style
+name:
+  zh: dsh-claude-style
+  en: dsh-claude-style
+author: Nwflower
+description: Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
+repo: https://github.com/Nwflower/dsh-claude-style
+package: dsh-claude-style
+rowId: nwflower-dsh-claude-style
+category: skin
+tags:
+- appearance
+- theme
+- claude-style
+modes:
+- light
+- dark
+install:
+  target: 'github:Nwflower/dsh-claude-style#2fe529209ace010a2473f6def0221f342f301c88'
+  version: 0.19.6
+  commit: 2fe529209ace010a2473f6def0221f342f301c88
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: '>=0.1.7'
+  platform:
+  - web
+screenshots:
+- https://raw.githubusercontent.com/Nwflower/dsh-claude-style/2fe529209ace010a2473f6def0221f342f301c88/docs/screenshots/claude-home-light.png
+- https://raw.githubusercontent.com/Nwflower/dsh-claude-style/2fe529209ace010a2473f6def0221f342f301c88/docs/screenshots/claude-conversation-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+  - 固定 commit 的隔离导入曾在本轮宿主上失败；收录展示保留上游界面图，不把它写成当前宿主运行通过。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 445
+releaseUpdatedAt: '2026-11-04T14:29:50+08:00'
+metadataUpdatedAt: '2026-11-04T14:29:50+08:00'
+starsUpdatedAt: '2026-11-04T14:29:50+08:00'
+updatedAt: '2026-11-04T14:29:50+08:00'

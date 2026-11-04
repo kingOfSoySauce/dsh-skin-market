@@ -1,0 +1,61 @@
+id: xxue-z.deepseek-harness-skin
+name:
+  zh: deepseek-harness-skin
+  en: deepseek-harness-skin
+author: xxue-z
+description: DeepSeek Harness 壁纸与半透明面板主题系统，带主题管理、导入与生成能力。
+repo: https://github.com/xxue-z/deepseek-harness-skin
+package: '@xxue-z/dsh-skin'
+rowId: xxue-z-dsh-skin
+category: skin
+tags:
+- appearance
+- animation
+- wallpaper
+modes:
+- light
+- dark
+install:
+  target: 'github:xxue-z/deepseek-harness-skin#f93ebced727dced2769da65a17a9430d44c2a096'
+  version: 1.0.20
+  commit: f93ebced727dced2769da65a17a9430d44c2a096
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+  - web
+marketScreenshots:
+- skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/home.png
+- skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/conversation.png
+- skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/settings.png
+screenshots:
+- skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/home.gif
+- skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/home.png
+- skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/conversation.png
+- skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+  - package 未声明 license；使用和再分发前需按作者仓库说明自行核对许可。运行 GIF 实测 24 帧 / 3.01 秒，22 个唯一帧。
+license:
+  code: NOASSERTION
+  commercialUse: false
+  notice: 固定版本 package 未声明 license，市场不替作者扩大授权范围。
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: '2026-11-04T14:29:50+08:00'
+metadataUpdatedAt: '2026-11-04T14:29:50+08:00'
+starsUpdatedAt: '2026-11-04T14:29:50+08:00'
+updatedAt: '2026-11-04T14:29:50+08:00'

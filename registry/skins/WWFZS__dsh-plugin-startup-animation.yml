@@ -1,0 +1,53 @@
+id: wwfzs.dsh-plugin-startup-animation
+name:
+  zh: dsh-plugin-startup-animation
+  en: dsh-plugin-startup-animation
+author: WWFZS
+description: DeepSeek Harness 全屏开机动画与视频/壁纸/音频库；纯开屏候选，仅展示真实开屏 GIF。
+repo: https://github.com/WWFZS/dsh-plugin-startup-animation
+package: dsh-plugin-startup-animation
+rowId: wwfzs-dsh-plugin-startup-animation
+category: splash
+tags:
+- animation
+- startup
+- splash
+modes:
+- light
+- dark
+install:
+  target: 'github:WWFZS/dsh-plugin-startup-animation#3173ace4a769b20e5c0fa48486ee9df790db7e46'
+  version: 1.22.1
+  commit: 3173ace4a769b20e5c0fa48486ee9df790db7e46
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: '>=0.2.0'
+  platform:
+  - web
+screenshots:
+- skin-screenshots/WWFZS__dsh-plugin-startup-animation/3173ace4a769b20e5c0fa48486ee9df790db7e46/home.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+  - '固定版本声明 DSH >=0.2.0；本轮在 0.1.7-rc.2 完成 GIF 运行取证，使用时仍按作者兼容范围核对宿主。'
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 4
+releaseUpdatedAt: '2026-11-04T14:29:50+08:00'
+metadataUpdatedAt: '2026-11-04T14:29:50+08:00'
+starsUpdatedAt: '2026-11-04T14:29:50+08:00'
+updatedAt: '2026-11-04T14:29:50+08:00'
