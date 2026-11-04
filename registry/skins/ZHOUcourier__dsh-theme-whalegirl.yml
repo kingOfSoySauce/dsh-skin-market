@@ -18,13 +18,22 @@ modes:
   - light
   - dark
 install:
-  target: github:ZHOUcourier/dsh-theme-whalegirl#2fb4aeedecbb0f84df84d114faf94ba163ffca6c
-  version: 0.3.0
-  commit: 2fb4aeedecbb0f84df84d114faf94ba163ffca6c
+  target: github:ZHOUcourier/dsh-theme-whalegirl#aecc434d7b26e432516b6203e7a4e46917342b82
+  version: 0.4.0
+  commit: aecc434d7b26e432516b6203e7a4e46917342b82
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepare
-  allowBuild: dsh-theme-whalegirl@https://codeload.github.com/ZHOUcourier/dsh-theme-whalegirl/tar.gz/2fb4aeedecbb0f84df84d114faf94ba163ffca6c
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-whalegirl
+    packageVersion: 0.4.0
+    integrity: sha512-CDj++gZU+bzRBSTvr1Ixcn9ylGEjpe9Cg4ChS1rTiNU8aNSwXcxQ5jsnrx7b/HzafGWJX4QcwDf0lp8GI46mmQ==
+  allowBuild: dsh-theme-whalegirl@https://codeload.github.com/ZHOUcourier/dsh-theme-whalegirl/tar.gz/aecc434d7b26e432516b6203e7a4e46917342b82
+  npm:
+    name: dsh-theme-whalegirl
+    version: 0.4.0
+    integrity: sha512-CDj++gZU+bzRBSTvr1Ixcn9ylGEjpe9Cg4ChS1rTiNU8aNSwXcxQ5jsnrx7b/HzafGWJX4QcwDf0lp8GI46mmQ==
+    repository: https://github.com/ZHOUcourier/dsh-theme-whalegirl
+    gitHead: aecc434d7b26e432516b6203e7a4e46917342b82
 compatibility:
   dsh: unverified
   platform:
@@ -47,19 +56,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 2fb4aeedecbb0f84df84d114faf94ba163ffca6c
-    packageVersion: 0.3.0
+    commit: aecc434d7b26e432516b6203e7a4e46917342b82
+    packageVersion: 0.4.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-01T22:47:45.811Z
+    checkedAt: 2026-11-04T00:04:34.517Z
     findings: []
 license:
   code: MIT AND CC-BY-NC-SA-4.0
   commercialUse: false
-starsSnapshot: 1
 featuredRank: 1032
-releaseUpdatedAt: 2026-11-01T22:47:47.152Z
-metadataUpdatedAt: 2026-11-01T22:47:47.152Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-04T00:04:35.876Z
+metadataUpdatedAt: 2026-11-04T00:04:35.876Z
 starsUpdatedAt: 2026-09-18T21:39:02.179Z
-updatedAt: 2026-11-01T22:47:47.152Z
+updatedAt: 2026-11-04T00:04:35.876Z

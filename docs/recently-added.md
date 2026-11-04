@@ -1228,61 +1228,237 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
-<!-- dsh-auto-entry:vb2250158.dsh-theme-blue -->
-### 2026-11-03 · dsh-theme-blue
+<!-- dsh-auto-entry:lyx0717.dsh-washer -->
+### 2026-11-04 · dsh-washer
 
-[vb2250158/dsh-theme-blue](https://github.com/vb2250158/dsh-theme-blue)：Private blue theme foundation for the DeepSeek Harness web client
+[lyx0717/dsh-washer](https://github.com/lyx0717/dsh-washer)：滚筒洗衣机 · 用一台洗衣机的运转状态显示 Agent 的工作状态
 
-- 版本：`0.1.0-rc.8.18`
-- 固定 commit：`4fbaf4b1cf262124b23f18cd19cf77d4b641d089`
+- 版本：`0.10.3`
+- 固定 commit：`18b39bd009690f0d5ec34025316367a0d955420f`
+
+<!-- dsh-auto-entry:kshinekx.skin -->
+### 2026-11-04 · 大黑塔 · 天才书房
+
+[KshineKX/the-herta-atelier](https://github.com/KshineKX/the-herta-atelier)：紫黑与晨光双主题、金边与玻璃材质的《崩坏：星穹铁道》大黑塔同人 DSH Web 皮肤；含藏镜图库与独立动态待机。
+
+- 版本：`0.4.0-beta.14`
+- 固定 commit：`197291ae6ea0dee96da9e0b5bf36997faa8ec977`
 
 <!-- dsh-auto-entry:alycestocking.dsh-yukimi-theme -->
-### 2026-11-03 · 佐城雪美主题
+### 2026-11-04 · 佐城雪美主题
 
 [AlyceStocking/dsh-yukimi-theme](https://github.com/AlyceStocking/dsh-yukimi-theme)：佐城雪美主题：深蓝配色、卡面背景、桌面宠物纸片小人、轮播图和签名铭牌。
 
-- 版本：`1.3.0`
-- 固定 commit：`0cbab4ca77700ccd54a8532fd94d67dd1b1c4d51`
+- 版本：`1.3.4`
+- 固定 commit：`5813a4c84e53fd028dfa56d5c462515ec5a6d974`
 
-<!-- dsh-auto-entry:sovero.dsh-ocean-theme -->
-### 2026-11-03 · dsh-ocean-theme
+<!-- dsh-auto-entry:zhoucourier.dsh-theme-whalegirl -->
+### 2026-11-04 · dsh-theme-whalegirl
 
-[Sovero/dsh_plugins](https://github.com/Sovero/dsh_plugins)：Тема «Океан» для DSH / Ocean theme for DSH: animated ocean under the interface, fish schools, whales, sharks, jellyfish, kelp and a wrecked ship; pointer movement disturbs the water surface.
+[ZHOUcourier/dsh-theme-whalegirl](https://github.com/ZHOUcourier/dsh-theme-whalegirl)：DeepSeek-鲸鱼娘主题，面向 DeepSeek Harness（DSH）Web UI——移植自 DreamSkin 皮肤包 vercb557ececaa5de3f3dbe。
 
-- 版本：`1.0.1`
-- 固定 commit：`f3a485b7c8c9e5138b75043f7d2bcc9825600b7c`
+- 版本：`0.4.0`
+- 固定 commit：`aecc434d7b26e432516b6203e7a4e46917342b82`
+
+<!-- dsh-auto-entry:yangshen-swe.dsh-plugin-simple-pet -->
+### 2026-11-04 · dsh-plugin-simple-pet
+
+[YangShen-SWE/dsh-plugin-simple-pet](https://github.com/YangShen-SWE/dsh-plugin-simple-pet)：A Windows companion with DeepSeek balances, unified embedded Codex subscription, account panels and opt-in current-account warmup.
+
+- 版本：`1.1.7`
+- 固定 commit：`44c1d58372af45eca9473950b9ec0e01abea2d6a`
 
 <!-- dsh-auto-entry:mumuer1024.dsh-ui-liteglass -->
-### 2026-11-03 · LiteGlass
+### 2026-11-04 · LiteGlass
 
 [mumuer1024/dsh-ui-liteglass](https://github.com/mumuer1024/dsh-ui-liteglass)：DeepSeek Harness 轻量级外观皮肤：自定义壁纸、玻璃质感面板与重点色；服务端持久化、多设备一致，不接管原生深浅色。
 
-- 版本：`0.2.3`
-- 固定 commit：`309a9b223fbcd75375bb4ca7b6a8a09ad62db6a5`
+- 版本：`0.2.4`
+- 固定 commit：`4e5d2f0d378a139bb2a8b47f5636592c885ecf37`
 
-<!-- dsh-auto-entry:miasakiii.dsh-miasaki -->
-### 2026-11-03 · dsh-miasaki
+<!-- dsh-auto-entry:lbunc.dsh-composer-glass -->
+### 2026-11-04 · dsh-composer-glass
 
-[Miasakiii/dsh-miasaki](https://github.com/Miasakiii/dsh-miasaki)：设置里新增一栏「外观」：主题皮肤 / 壁纸 / 动效 / 会话效果，零 shell 改动、关掉即原生。
+[Lbunc/dsh-composer-glass](https://github.com/Lbunc/dsh-composer-glass)：DSH plugin: one uniform frosted-glass material for the UI surfaces, plus an optional image/video dynamic wallpaper behind them.
 
-- 版本：`0.1.0`
-- 固定 commit：`90a089b3d32beaacc386498a38ba1f041e05055b`
+- 版本：`1.1.1`
+- 固定 commit：`75a873e4b6ab0c48fbf7d1da919cca960549dc8c`
+
+<!-- dsh-auto-entry:aaronkate.dsh-codex-appearance -->
+### 2026-11-04 · dsh-codex-appearance
+
+[AaronKate/dsh-codex-appearance](https://github.com/AaronKate/dsh-codex-appearance)：Eye-comfort appearance controls for DeepSeek Harness: five light themes, paper-grain texture, accent and background colours, fonts, type sizes, content width, contrast and motion.
+
+- 版本：`0.3.22`
+- 固定 commit：`085992962dc6f01383186c0e66015a2ab9d9fda9`
+
+<!-- dsh-auto-entry:huihuangddfs.dsh-codex-mini-pet -->
+### 2026-11-04 · dsh-codex-mini-pet
+
+[HuiHuangDDFS/dsh-codex-mini-pet](https://github.com/HuiHuangDDFS/dsh-codex-mini-pet)：DeepSeek Harness 聊天 / 工作双模式与桌面宠物伙伴，内嵌 DeepSeek 官网，支持 Codex v1/v2 图集。
+
+- 版本：`2.0.9`
+- 固定 commit：`21e2c0e5f30662ac3e12d48d65ad4a6dbb0a936f`
+
+<!-- dsh-auto-entry:jungenius.stack.dsh.zcode.ui -->
+### 2026-11-04 · dsh-zcode-ui
+
+[jungenius-stack/dsh-zcode-ui](https://github.com/jungenius-stack/dsh-zcode-ui)：DSH ZCode UI — 把 DeepSeek Harness Web 的界面换成 ZCode 风格：侧栏、工作区会话树、全局搜索与轮次导航 · A ZCode-styled sidebar, workspace session tree, global search, and turn navigation skin for DSH Web
+
+- 版本：`2.2.1`
+- 固定 commit：`028ebd484813a4985d2128c8b96f3280e5aa7863`
+
+<!-- dsh-auto-entry:gxinnnnnn.market -->
+### 2026-11-04 · dsh-SAO
+
+[GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO)：仿刀剑神域开屏动画，4K 早启动与独立渲染，不修改主题；DSH 添加插件输入 github:GXinnnnnn/dsh-SAO
+
+- 版本：`3.0.0`
+- 固定 commit：`5d036d0e1197c3054fb3264a373a35196ec4861b`
+
+<!-- dsh-auto-entry:jryang1997.dsh-ascii-whales -->
+### 2026-11-04 · dsh-ascii-whales
+
+[jryang1997/dsh-ascii-whales](https://github.com/jryang1997/dsh-ascii-whales)：Five whale species with shaded cells or ASCII fill; every content card and the input box is frosted glass with whales blurred behind it, plus independent random dives, tail-stroke ripples, optional input-box avoidance, occasional random spouts, drifting ASCII wind and cloud shadows, continuous toroidal swimming, a whale-size slider, and in-place config updates that never restart the school.
+
+- 版本：`1.0.0`
+- 固定 commit：`51bf4e4477c3af95884b8b962dd95fce50c0542d`
+
+<!-- dsh-auto-entry:fox4096.dsh-custom-css -->
+### 2026-11-04 · dsh-custom-css
+
+[FOX4096/dsh-custom-css](https://github.com/FOX4096/dsh-custom-css)：提供Acrylic渐变与半透明材质预设；需在插件设置导入仓库的examples/acrylic.css后启用。
+
+- 版本：`0.13.0`
+- 固定 commit：`fb7cbfd36afaf81f46f1961a329f6bd3ff13f304`
+
+<!-- dsh-auto-entry:xiaotuchu.dsh-theme-eye-care -->
+### 2026-11-04 · dsh-theme-eye-care
+
+[xiaotuchu/dsh-theme-eye-care](https://github.com/xiaotuchu/dsh-theme-eye-care)：护眼配色 Eye-care palettes — three switchable low-glare themes (warm paper, eye green, warm grey) for the DeepSeek Harness web GUI, each a full alias-token layer with a light and a dark face.
+
+- 版本：`2.2.1`
+- 固定 commit：`3c8ec027986fa8a5aecde6b52e5afb446695e046`
+
+<!-- dsh-auto-entry:tpmoonchefryan.dsh-joi-channel-theme -->
+### 2026-11-04 · dsh-joi-channel-theme
+
+[tpmoonchefryan/dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme)：轴伊 Joi 双衣装主题：Flowers 与 Library 是各自成套的明暗令牌体系，新会话页有立绘与趴在标题上的鲸鱼娘，输入框上方两只 Q 版角色随本回合状态换表情，侧栏字标换成二人合影，上下文占用由一颗渐熟的橘子表示；第三张卡可在保持插件安装的前提下切回 DeepSeek 原生外观。
+
+- 版本：`0.1.14`
+- 固定 commit：`f0e25376eab69847958285f365da724cb07d7eac`
+
+<!-- dsh-auto-entry:aumisatori.dsh-ui-beautify -->
+### 2026-11-04 · dsh-UI美化
+
+[AumiSatori/dsh-ui-beautify](https://github.com/AumiSatori/dsh-ui-beautify)：DeepSeek Harness UI 外观主题：玻璃材质、任务与产物卡片、消息气泡、背景、粒子和开屏欢迎等设置，固定版本已在 DSH Web 0.2.1-rc.2 隔离环境中验证。
+
+- 版本：`0.5.3`
+- 固定 commit：`49fca8f522e2c2b236f3e9a085aa447e3317379f`
+
+<!-- dsh-auto-entry:yasneg616.marathon-like-deepseek-harness-skin -->
+### 2026-11-04 · Marathon 工业酸
+
+[yasneg616/marathon-like-deepseek-harness-skin](https://github.com/yasneg616/marathon-like-deepseek-harness-skin)：Marathon 风格的工业风 DSH 皮肤：调色板驱动的动效、随机 Max 效果，以及紧凑的工作区切换。
+
+- 版本：`2.4.13`
+- 固定 commit：`b20bd3ea29a4e86b0155dcb78729e58eaa10d023`
+
+<!-- dsh-auto-entry:lilycleheart.dsh-liuli-ui-enhance -->
+### 2026-11-04 · dsh-liuli-ui-enhance
+
+[LilycleHeart/dsh-liuli-ui-enhance](https://github.com/LilycleHeart/dsh-liuli-ui-enhance)：琉璃主题 —— DSH 界面增强插件：M3 动态取色、壁纸磨砂材质、声纹可视化、日/夜切换
+
+- 版本：`0.1.2-rc.39`
+- 固定 commit：`36068f437b60dc3a008f323708063f03f031135d`
+
+<!-- dsh-auto-entry:zkforge.dsh-claude-desktop-theme -->
+### 2026-11-04 · dsh-claude-desktop-theme
+
+[zkforge/dsh-claude-desktop-theme](https://github.com/zkforge/dsh-claude-desktop-theme)：为 DeepSeek Harness（DSH）Desktop 换上 Claude Code Desktop 外观
+
+- 版本：`0.9.1`
+- 固定 commit：`45fb6e3c7d40fa4cf223a4f4f2103256e88e598f`
+
+<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
+### 2026-11-04 · dsh-bloom-theme
+
+[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)：DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
+
+- 版本：`0.22.0`
+- 固定 commit：`edf435bc9cbe8d982f92f12db131c7abade35544`
+
+<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
+### 2026-11-04 · dsh-kimino-theme
+
+[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
+
+- 版本：`68.4.2`
+- 固定 commit：`75d1b5a116abdfa56fb779706fae5ceeea37e983`
+
+<!-- dsh-auto-entry:clicgger-types.dsh-piggy -->
+### 2026-11-04 · dsh-piggy
+
+[CLICGGER-TYPES/dsh-piggy](https://github.com/CLICGGER-TYPES/dsh-piggy)：🐖 一只住在 DeepSeek Harness 里的猪：吃你的真实工作长大，会学习、打工、旅行、生病、需要照顾
+
+- 版本：`0.37.2-rc.7`
+- 固定 commit：`5e5591a7b19e4ab44235d2fc0d5e25bb1baeef9e`
+
+<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
+### 2026-11-04 · dsh-dream-skin
+
+[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
+
+- 版本：`11.4.0`
+- 固定 commit：`ca6981e2a0c6a4ca359f5c0478fdf95e72c415dd`
+
+<!-- dsh-auto-entry:sutera-diffusus.dsh-whale-musume -->
+### 2026-11-04 · dsh-whale-musume
+
+[Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume)：为 DeepSeek Harness 打造的桌面看板娘插件。 一只会陪你写代码的鲸鱼娘：待机安静陪伴，工作开始就抱起笔记本陪你干活； 可以摸头养成、解锁成就，也可以拖着她到处走。所有资源本地运行，无遥测、无外部请求。
+
+- 版本：`2.5.0`
+- 固定 commit：`3f60a4065f4b9a5732055c3b8de21932d12ef03c`
+
+<!-- dsh-auto-entry:vegetable-kun.dsh-plugin-taffy -->
+### 2026-11-04 · DSH_Plugin_Taffy
+
+[vegetable-kun/DSH_Plugin_Taffy](https://github.com/vegetable-kun/DSH_Plugin_Taffy)：Taffy 表情包状态机：右下角悬浮表情随 agent 状态切换（待审批/思考/工具/插话/出错/被拒…）。A Taffy mood state machine overlay for DeepSeek Harness.
+
+- 版本：`2.1.0`
+- 固定 commit：`68331a0ca4458794864dda2ebbd22778c4302b6f`
 
 <!-- dsh-auto-entry:columbina-sn.dsh-columbina-theme -->
-### 2026-11-03 · 哥伦比娅 · 月隐银蓝
+### 2026-11-04 · 哥伦比娅 · 月隐银蓝
 
 [Columbina-sn/dsh-columbina-theme](https://github.com/Columbina-sn/dsh-columbina-theme)：哥伦比娅外观插件：月隐银蓝渐变毛玻璃主题、可编辑人格设定、12 张表情与星眸欢迎页。背景图需自备。
 
 - 版本：`0.1.0`
 - 固定 commit：`464dd05c5b9f3942b7ba383a3ed5534ec844f6fe`
 
-<!-- dsh-auto-entry:aaronkate.dsh-codex-appearance -->
-### 2026-11-03 · dsh-codex-appearance
+<!-- dsh-auto-entry:miasakiii.dsh-miasaki -->
+### 2026-11-04 · dsh-miasaki
 
-[AaronKate/dsh-codex-appearance](https://github.com/AaronKate/dsh-codex-appearance)：Eye-comfort appearance controls for DeepSeek Harness: five light themes, paper-grain texture, accent and background colours, fonts, type sizes, content width, contrast and motion.
+[Miasakiii/dsh-miasaki](https://github.com/Miasakiii/dsh-miasaki)：设置里新增一栏「外观」：主题皮肤 / 壁纸 / 动效 / 会话效果，零 shell 改动、关掉即原生。
 
-- 版本：`0.3.21`
-- 固定 commit：`49b7f048983507666038beb3437b3657c5b96bdc`
+- 版本：`0.1.0`
+- 固定 commit：`90a089b3d32beaacc386498a38ba1f041e05055b`
+
+<!-- dsh-auto-entry:sovero.dsh-ocean-theme -->
+### 2026-11-04 · dsh-ocean-theme
+
+[Sovero/dsh_plugins](https://github.com/Sovero/dsh_plugins)：Тема «Океан» для DSH / Ocean theme for DSH: animated ocean under the interface, fish schools, whales, sharks, jellyfish, kelp and a wrecked ship; pointer movement disturbs the water surface.
+
+- 版本：`1.0.1`
+- 固定 commit：`f3a485b7c8c9e5138b75043f7d2bcc9825600b7c`
+
+<!-- dsh-auto-entry:vb2250158.dsh-theme-blue -->
+### 2026-11-04 · dsh-theme-blue
+
+[vb2250158/dsh-theme-blue](https://github.com/vb2250158/dsh-theme-blue)：Private blue theme foundation for the DeepSeek Harness web client
+
+- 版本：`0.1.0-rc.8.18`
+- 固定 commit：`4fbaf4b1cf262124b23f18cd19cf77d4b641d089`
 
 <!-- dsh-auto-entry:lengzhanbao.dsh-taffy-theme -->
 ### 2026-11-03 · dsh-taffy-theme
@@ -1292,70 +1468,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.2.2`
 - 固定 commit：`0222848a1f335ea147f4731e38df953d38629b9c`
 
-<!-- dsh-auto-entry:jungenius.stack.dsh.zcode.ui -->
-### 2026-11-03 · dsh-zcode-ui
-
-[jungenius-stack/dsh-zcode-ui](https://github.com/jungenius-stack/dsh-zcode-ui)：DSH ZCode UI — 把 DeepSeek Harness Web 的界面换成 ZCode 风格：侧栏、工作区会话树、全局搜索与轮次导航 · A ZCode-styled sidebar, workspace session tree, global search, and turn navigation skin for DSH Web
-
-- 版本：`2.2.0`
-- 固定 commit：`7f9d2eac64b32d3f6f8d760db3855bf1c5ef9bcd`
-
-<!-- dsh-auto-entry:fox4096.dsh-custom-css -->
-### 2026-11-03 · dsh-custom-css
-
-[FOX4096/dsh-custom-css](https://github.com/FOX4096/dsh-custom-css)：提供Acrylic渐变与半透明材质预设；需在插件设置导入仓库的examples/acrylic.css后启用。
-
-- 版本：`0.13.0`
-- 固定 commit：`d58ac5eff42aeda9d7e652e00f1ec82aa3eb6d00`
-
-<!-- dsh-auto-entry:vegetable-kun.dsh-plugin-taffy -->
-### 2026-11-03 · DSH_Plugin_Taffy
-
-[vegetable-kun/DSH_Plugin_Taffy](https://github.com/vegetable-kun/DSH_Plugin_Taffy)：Taffy 表情包状态机：右下角悬浮表情随 agent 状态切换（待审批/思考/工具/插话/出错/被拒…）。A Taffy mood state machine overlay for DeepSeek Harness.
-
-- 版本：`2.1.0`
-- 固定 commit：`68331a0ca4458794864dda2ebbd22778c4302b6f`
-
-<!-- dsh-auto-entry:aumisatori.dsh-ui-beautify -->
-### 2026-11-03 · dsh-UI美化
-
-[AumiSatori/dsh-ui-beautify](https://github.com/AumiSatori/dsh-ui-beautify)：DeepSeek Harness UI 外观主题：玻璃材质、任务与产物卡片、消息气泡、背景、粒子和开屏欢迎等设置，固定版本已在 DSH Web 0.2.1-rc.2 隔离环境中验证。
-
-- 版本：`0.5.2`
-- 固定 commit：`a88e65d269784401c1c809dad4a6eb86754d5c38`
-
-<!-- dsh-auto-entry:zkforge.dsh-claude-desktop-theme -->
-### 2026-11-03 · dsh-claude-desktop-theme
-
-[zkforge/dsh-claude-desktop-theme](https://github.com/zkforge/dsh-claude-desktop-theme)：为 DeepSeek Harness（DSH）Desktop 换上 Claude Code Desktop 外观
-
-- 版本：`0.8.0`
-- 固定 commit：`7eeee86cf52208b625e6885078b959f219c9ae2b`
-
-<!-- dsh-auto-entry:yasneg616.marathon-like-deepseek-harness-skin -->
-### 2026-11-03 · Marathon 工业酸
-
-[yasneg616/marathon-like-deepseek-harness-skin](https://github.com/yasneg616/marathon-like-deepseek-harness-skin)：Marathon 风格的工业风 DSH 皮肤：调色板驱动的动效、随机 Max 效果，以及紧凑的工作区切换。
-
-- 版本：`2.4.11`
-- 固定 commit：`6e26f831118688016d242aae247f8056ea05866a`
-
-<!-- dsh-auto-entry:niiang.dsh-kimino-theme -->
-### 2026-11-03 · dsh-kimino-theme
-
-[niiang/dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme)：《你的名字。》主题：电影壁纸、彗星蓝玻璃拟态、电影 Logo 替换与统一滚动条。
-
-- 版本：`68.4.2`
-- 固定 commit：`f42ad374a3f06d53ab7fd711a395e7ace645b301`
-
-<!-- dsh-auto-entry:clicgger-types.dsh-piggy -->
-### 2026-11-03 · dsh-piggy
-
-[CLICGGER-TYPES/dsh-piggy](https://github.com/CLICGGER-TYPES/dsh-piggy)：🐖 一只住在 DeepSeek Harness 里的猪：吃你的真实工作长大，会学习、打工、旅行、生病、需要照顾
-
-- 版本：`0.37.2-rc.6`
-- 固定 commit：`49f53b2b2927fcdb2e328fc60a59368be65c7a9f`
-
 <!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
 ### 2026-11-03 · dsh-catppuccin
 
@@ -1363,22 +1475,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.6.7`
 - 固定 commit：`2d23f12364ec77736c1d1bef5218e72bebd0cbad`
-
-<!-- dsh-auto-entry:sutera-diffusus.dsh-whale-musume -->
-### 2026-11-03 · dsh-whale-musume
-
-[Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume)：为 DeepSeek Harness 打造的桌面看板娘插件。 一只会陪你写代码的鲸鱼娘：待机安静陪伴，工作开始就抱起笔记本陪你干活； 可以摸头养成、解锁成就，也可以拖着她到处走。所有资源本地运行，无遥测、无外部请求。
-
-- 版本：`2.5.0`
-- 固定 commit：`53551978177ce8ecb005ebef8b55395ffd0f172a`
-
-<!-- dsh-auto-entry:revolutionla.dsh-dream-skin -->
-### 2026-11-03 · dsh-dream-skin
-
-[RevolutionLA/dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin)：🐳 一键换肤：8 套原创主题 + 壁纸 + 强调色 + 主题包分享，一条命令装完（dsh plugin --profile web add dsh-dream-skin）。
-
-- 版本：`11.4.0`
-- 固定 commit：`1c54188c4e035ef35de468bad4668b0561a6f99c`
 
 <!-- dsh-auto-entry:louke6572.dsh-whale-widget-plus -->
 ### 2026-11-03 · dsh-whale-widget-plus
@@ -1420,14 +1516,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`0.4.2`
 - 固定 commit：`4824aab1ffaf5d3f195ab8b68b32c31e206f99b7`
 
-<!-- dsh-auto-entry:yangshen-swe.dsh-plugin-simple-pet -->
-### 2026-11-03 · dsh-plugin-simple-pet
-
-[YangShen-SWE/dsh-plugin-simple-pet](https://github.com/YangShen-SWE/dsh-plugin-simple-pet)：A Windows companion with DeepSeek balances, unified embedded Codex subscription, account panels and opt-in current-account warmup.
-
-- 版本：`1.1.6`
-- 固定 commit：`68186af407e7cfb46272c04b15fde30bbff60389`
-
 <!-- dsh-auto-entry:aafff623.dsh-callout -->
 ### 2026-11-03 · dsh-callout
 
@@ -1452,22 +1540,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`1.0.0`
 - 固定 commit：`bb28478b3102feac1e61468ac6708ee6cc3c6544`
 
-<!-- dsh-auto-entry:lyx0717.dsh-washer -->
-### 2026-11-01 · dsh-washer
-
-[lyx0717/dsh-washer](https://github.com/lyx0717/dsh-washer)：滚筒洗衣机 · 用一台洗衣机的运转状态显示 Agent 的工作状态
-
-- 版本：`0.10.1`
-- 固定 commit：`0f0b5901bfd88158343c73676c157e65dd333752`
-
-<!-- dsh-auto-entry:kshinekx.skin -->
-### 2026-11-01 · 大黑塔 · 天才书房
-
-[KshineKX/the-herta-atelier](https://github.com/KshineKX/the-herta-atelier)：紫黑与晨光双主题、金边与玻璃材质的《崩坏：星穹铁道》大黑塔同人 DSH Web 皮肤；含藏镜图库与独立动态待机。
-
-- 版本：`0.4.0-beta.14`
-- 固定 commit：`197291ae6ea0dee96da9e0b5bf36997faa8ec977`
-
 <!-- dsh-auto-entry:elsmm-player.dsh-phone-theme-tool -->
 ### 2026-11-01 · 气泡与背景
 
@@ -1475,14 +1547,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`1.0.0`
 - 固定 commit：`cd9d99094830a20ec34e91e32a2f1e526963e63a`
-
-<!-- dsh-auto-entry:zhoucourier.dsh-theme-whalegirl -->
-### 2026-11-01 · dsh-theme-whalegirl
-
-[ZHOUcourier/dsh-theme-whalegirl](https://github.com/ZHOUcourier/dsh-theme-whalegirl)：DeepSeek-鲸鱼娘主题，面向 DeepSeek Harness（DSH）Web UI——移植自 DreamSkin 皮肤包 vercb557ececaa5de3f3dbe。
-
-- 版本：`0.3.0`
-- 固定 commit：`2fb4aeedecbb0f84df84d114faf94ba163ffca6c`
 
 <!-- dsh-auto-entry:hwfee.cds-theme -->
 ### 2026-11-01 · cds-theme
@@ -1515,70 +1579,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.5.4`
 - 固定 commit：`92d8a01d2df691d6b55afc9741b053540655e0df`
-
-<!-- dsh-auto-entry:captain1275.whale-song -->
-### 2026-11-01 · 鲸吟
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：鲸吟皮肤：深海鲸鱼女神氛围，无文字极简设计。
-
-- 版本：`0.4.0`
-- 固定 commit：`d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f`
-
-<!-- dsh-auto-entry:captain1275.dragon-heir -->
-### 2026-11-01 · 龙之继承者
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：龙之继承者皮肤。
-
-- 版本：`0.4.1`
-- 固定 commit：`d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f`
-
-<!-- dsh-auto-entry:captain1275.xp -->
-### 2026-11-01 · Windows XP
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务栏。
-
-- 版本：`0.4.0`
-- 固定 commit：`d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f`
-
-<!-- dsh-auto-entry:captain1275.minecraft -->
-### 2026-11-01 · Minecraft
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：Minecraft 主题皮肤。
-
-- 版本：`0.4.0`
-- 固定 commit：`d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f`
-
-<!-- dsh-auto-entry:captain1275.blue-fantasy -->
-### 2026-11-01 · 蓝色幻想
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：蓝色幻想皮肤：DreamSkin Codex 主题「DeepSeek-鲸鱼娘」风格。
-
-- 版本：`0.4.0`
-- 固定 commit：`d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f`
-
-<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
-### 2026-11-01 · dsh-bloom-theme
-
-[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)：DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
-
-- 版本：`0.20.1`
-- 固定 commit：`6696f3d58efba3a7f76bfc1b4e27b0ea822321e8`
-
-<!-- dsh-auto-entry:captain1275.miku -->
-### 2026-11-01 · 初音未来
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：初音未来皮肤：蓝紫粉渐变、毛玻璃面板、Miku 主题配色。
-
-- 版本：`0.4.0`
-- 固定 commit：`d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f`
-
-<!-- dsh-auto-entry:captain1275.aurora -->
-### 2026-11-01 · 极光 Aurora
-
-[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)：极光皮肤：支持自定义背景图片（URL / 透明度 / 模糊）与极光渐变背景，半透明毛玻璃面板，浅色/深色两套调色板。
-
-- 版本：`0.4.2`
-- 固定 commit：`d6efc23ec4bfc3fe8616f7c5d14103d69a4f5a5f`
 
 <!-- dsh-auto-entry:d-dev0101.open-sea-skin -->
 ### 2026-11-01 · Open Sea 海洋皮肤
@@ -1828,14 +1828,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`1.0.12`
 - 固定 commit：`a80b70e809a091c815f8678d69cf1c88ffa11e91`
 
-<!-- dsh-auto-entry:xiaotuchu.dsh-theme-eye-care -->
-### 2026-10-30 · dsh-theme-eye-care
-
-[xiaotuchu/dsh-theme-eye-care](https://github.com/xiaotuchu/dsh-theme-eye-care)：护眼配色 Eye-care palettes — three switchable low-glare themes (warm paper, eye green, warm grey) for the DeepSeek Harness web GUI, each a full alias-token layer with a light and a dark face.
-
-- 版本：`2.2.0`
-- 固定 commit：`f9949fc5f8d0cc0deaa6f3fb86778ceadc1e5580`
-
 <!-- dsh-auto-entry:mrmolabs.dsh-yorha-ui -->
 ### 2026-10-30 · dsh-yorha-ui
 
@@ -2043,22 +2035,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.1.0`
 - 固定 commit：`d03495118b21019a9e45f63044985faf6962e5f6`
-
-<!-- dsh-auto-entry:lbunc.dsh-composer-glass -->
-### 2026-10-30 · dsh-composer-glass
-
-[Lbunc/dsh-composer-glass](https://github.com/Lbunc/dsh-composer-glass)：DSH plugin: one uniform frosted-glass material for the UI surfaces, plus an optional image/video dynamic wallpaper behind them.
-
-- 版本：`1.1.1`
-- 固定 commit：`28e347a2e68aa59890f7cea59ea7e29ff94ce6bd`
-
-<!-- dsh-auto-entry:lilycleheart.dsh-liuli-ui-enhance -->
-### 2026-10-30 · dsh-liuli-ui-enhance
-
-[LilycleHeart/dsh-liuli-ui-enhance](https://github.com/LilycleHeart/dsh-liuli-ui-enhance)：琉璃主题 —— DSH 界面增强插件：M3 动态取色、壁纸磨砂材质、声纹可视化、日/夜切换
-
-- 版本：`0.1.2-rc.38`
-- 固定 commit：`6078c13c7e1bd6d806f871158ea1229948fb09de`
 
 <!-- dsh-auto-entry:longyu065.dsh-theme-ti -->
 ### 2026-10-30 · dsh-theme-ti
@@ -2395,14 +2371,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`0.1.0`
 - 固定 commit：`ef9685c9b4f0f4e3c810ebf520d3f67d099b1e39`
-
-<!-- dsh-auto-entry:jryang1997.dsh-ascii-whales -->
-### 2026-10-27 · dsh-ascii-whales
-
-[jryang1997/dsh-ascii-whales](https://github.com/jryang1997/dsh-ascii-whales)：Five whale species with shaded cells or ASCII fill; every content card and the input box is frosted glass with whales blurred behind it, plus independent random dives, tail-stroke ripples, optional input-box avoidance, occasional random spouts, drifting ASCII wind and cloud shadows, continuous toroidal swimming, a whale-size slider, and in-place config updates that never restart the school.
-
-- 版本：`1.0.0`
-- 固定 commit：`949c19afacedd31cd0101fb4e2501eadb91aa485`
 
 <!-- dsh-auto-entry:lsjspl.dsh-reel -->
 ### 2026-10-27 · dsh-reel
@@ -3244,14 +3212,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 - 版本：`1.2.1`
 - 固定 commit：`85608f11bfb3c95e3d975245a91b81ef741bc18a`
 
-<!-- dsh-auto-entry:huihuangddfs.dsh-codex-mini-pet -->
-### 2026-10-26 · dsh-codex-mini-pet
-
-[HuiHuangDDFS/dsh-codex-mini-pet](https://github.com/HuiHuangDDFS/dsh-codex-mini-pet)：DeepSeek Harness 聊天 / 工作双模式与桌面宠物伙伴，内嵌 DeepSeek 官网，支持 Codex v1/v2 图集。
-
-- 版本：`2.0.7`
-- 固定 commit：`9a5a02d10f661f0ff9efc34bb7e679bdd135ff19`
-
 <!-- dsh-auto-entry:hello-heyongping.dsh-helloai-theme -->
 ### 2026-10-26 · dsh-helloai-theme
 
@@ -3779,14 +3739,6 @@ Windows XP Luna 皮肤：蓝色渐变窗口、绿色开始按钮、银色任务�
 
 - 版本：`2.0.3`
 - 固定 commit：`b0bd504fb6074e6d202075f8db92ddba4e119cc8`
-
-<!-- dsh-auto-entry:tpmoonchefryan.dsh-joi-channel-theme -->
-### 2026-10-18 · dsh-joi-channel-theme
-
-[tpmoonchefryan/dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme)：轴伊 Joi 双衣装主题：Flowers 与 Library 是各自成套的明暗令牌体系，新会话页有立绘与趴在标题上的鲸鱼娘，输入框上方两只 Q 版角色随本回合状态换表情，侧栏字标换成二人合影，上下文占用由一颗渐熟的橘子表示；第三张卡可在保持插件安装的前提下切回 DeepSeek 原生外观。
-
-- 版本：`0.1.14`
-- 固定 commit：`5879e04fbc75251d50b0bb6416fb0f691d608a20`
 
 <!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
 ### 2026-10-18 · dsh-wallpaper-engine

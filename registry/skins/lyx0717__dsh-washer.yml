@@ -13,21 +13,12 @@ tags:
 modes:
   - dark
 install:
-  target: github:lyx0717/dsh-washer#0f0b5901bfd88158343c73676c157e65dd333752
-  version: 0.10.1
-  commit: 0f0b5901bfd88158343c73676c157e65dd333752
+  target: github:lyx0717/dsh-washer#18b39bd009690f0d5ec34025316367a0d955420f
+  version: 0.10.3
+  commit: 18b39bd009690f0d5ec34025316367a0d955420f
   desktop:
-    mode: managed
-    registry: npm
-    packageName: "@lyx0717/dsh-washer"
-    packageVersion: 0.10.1
-    integrity: sha512-CcaaYz0V4GtK5e+deAd7XM5EHgepYvSY0uOwdvG/6G67H+uCAfsNS6LVME0R7hmZrE8Np8ME5eymUrGyBYRE2g==
-  npm:
-    name: "@lyx0717/dsh-washer"
-    version: 0.10.1
-    integrity: sha512-CcaaYz0V4GtK5e+deAd7XM5EHgepYvSY0uOwdvG/6G67H+uCAfsNS6LVME0R7hmZrE8Np8ME5eymUrGyBYRE2g==
-    repository: https://github.com/lyx0717/dsh-washer
-    gitHead: 0f0b5901bfd88158343c73676c157e65dd333752
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
@@ -55,19 +46,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 0f0b5901bfd88158343c73676c157e65dd333752
-    packageVersion: 0.10.1
+    commit: 18b39bd009690f0d5ec34025316367a0d955420f
+    packageVersion: 0.10.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-01T22:47:53.378Z
+    checkedAt: 2026-11-04T00:04:46.531Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-01T22:47:55.483Z
-metadataUpdatedAt: 2026-11-01T22:47:55.483Z
+releaseUpdatedAt: 2026-11-04T00:04:49.362Z
+metadataUpdatedAt: 2026-11-04T00:04:49.362Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-01T22:47:55.483Z
+updatedAt: 2026-11-04T00:04:49.362Z
