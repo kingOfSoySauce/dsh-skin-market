@@ -10,6 +10,7 @@ import type { RestartScheduler } from './restart.ts'
 import { createMarketUpdater, packageVersion, type MarketUpdater } from './self-update.ts'
 import { exportLogs } from './log.ts'
 import { getInstallEnvironment } from './install-environment.ts'
+import { messageFields, type OperationMessageFields } from './operation-message.ts'
 
 export interface WebServerService {
   register(route: {
@@ -76,6 +77,49 @@ export async function waitForRestartSafety(host: Pick<SkinMarketHost, 'agents'>)
   if (startedDuringCheck > 0) throw new Error(`检测到 ${startedDuringCheck} 个 Agent 刚刚开始运行，请稍后再重启`)
 }
 
+function routeMessageFields(message: string): OperationMessageFields {
+  if (message === '请求未通过宿主验证') return { messageKey: 'server.requestNotAdmitted' }
+  if (message === 'same-origin request required') return { messageKey: 'server.sameOriginRequired' }
+  if (message === 'invalid source context' || message === 'invalid configuration context') return { messageKey: 'server.invalidRequest' }
+  if (message === '皮肤市场正在更新，完成前暂时不能修改插件') return { messageKey: 'server.marketUpdateBusy' }
+  if (message === '宿主尚未确认市场更新结果，请重新打开宿主后核对，暂时不能修改插件') return { messageKey: 'server.marketUpdateWaiting' }
+  if (message === '宿主未返回可确认的操作结果，请重新打开宿主后核对插件状态') return { messageKey: 'common.operationResultUnknown' }
+  if (message === '插件仍在完成启停，结果尚未确认；暂时不能继续修改此 profile') return { messageKey: 'common.operationResultPending' }
+  if (message === '还有皮肤操作未完成，请结束后再更新皮肤市场') return { messageKey: 'server.skinOperationsBusy' }
+  if (message === '更新任务不存在') return { messageKey: 'server.marketUpdateOperationNotFound' }
+  if (message === 'operation not found') return { messageKey: 'server.operationNotFound' }
+  if (message === 'Desktop 皮肤不能由浏览器确认重启回执') return { messageKey: 'server.desktopRestartReceiptUnsupported' }
+  if (message === 'skin restart target required') return { messageKey: 'server.restartTargetRequired' }
+  if (message === 'restart is unavailable in this DSH host') return { messageKey: 'server.restartUnavailable' }
+  if (message === '只能从本机直接请求重启，不能通过代理或转发请求') return { messageKey: 'server.directLoopbackRequired' }
+  if (message === '皮肤市场没有待应用的更新') return { messageKey: 'server.marketUpdateRestartMissing' }
+  if (message === '请先选择并使用此皮肤，再重新启动 DeepSeek Harness') return { messageKey: 'server.skinRestartSelectionRequired' }
+  if (message.startsWith('还有 ') && message.endsWith(' 个皮肤操作未完成，现在不能重启。请等待完成或先取消，避免中断安装或启停')) {
+    const count = Number(/^还有 (\d+) 个/.exec(message)?.[1])
+    return Number.isFinite(count) ? { messageKey: 'server.restartBlockedByOperations', messageParams: { count } } : { messageKey: 'server.restartBlockedByOperations' }
+  }
+  if (message === '皮肤市场正在更新，现在不能重启。请等待完成或先取消') return { messageKey: 'server.restartBlockedByMarketUpdate' }
+  if (message.startsWith('检测到 ') && message.endsWith(' 个 Agent 正在运行，请等待任务完全结束后再重启')) {
+    const count = Number(/^检测到 (\d+) 个/.exec(message)?.[1])
+    return Number.isFinite(count) ? { messageKey: 'server.agentRunning', messageParams: { count } } : { messageKey: 'server.agentRunning' }
+  }
+  if (message.startsWith('检测到 ') && message.endsWith(' 个 Agent 刚刚开始运行，请稍后再重启')) {
+    const count = Number(/^检测到 (\d+) 个/.exec(message)?.[1])
+    return Number.isFinite(count) ? { messageKey: 'server.agentStarted', messageParams: { count } } : { messageKey: 'server.agentStarted' }
+  }
+  return {}
+}
+
+function sendError(response: ServerResponse, status: number, error: unknown): void {
+  const message = error instanceof Error ? error.message : String(error)
+  const fields = { ...routeMessageFields(message), ...messageFields(error) }
+  sendJson(response, status, {
+    error: message,
+    ...(fields.messageKey === undefined ? {} : { errorKey: fields.messageKey }),
+    ...(fields.messageParams === undefined ? {} : { errorParams: fields.messageParams }),
+  })
+}
+
 function method(request: IncomingMessage, response: ServerResponse, expected: string): boolean {
   if (request.method === expected) return true
   response.writeHead(405, { allow: expected })
@@ -132,7 +176,7 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
     ...route,
     handler: (request, response) => {
       try { if (refuseUnadmitted(request, response, connection())) return } catch {
-        return sendJson(response, 403, { error: '请求未通过宿主验证' })
+        return sendError(response, 403, '请求未通过宿主验证')
       }
       return route.handler(request, response)
     },
@@ -156,11 +200,11 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
 
   const mutation = (kind: OperationKind) => async (request: IncomingMessage, response: ServerResponse) => {
     if (!method(request, response, 'POST')) return
-    if (!matchesOrigin(request)) return sendJson(response, 403, { error: 'same-origin request required' })
+    if (!matchesOrigin(request)) return sendError(response, 403, 'same-origin request required')
     try {
       const { skinId, acknowledgeCompatibility, compatibilityContext, artifactContext, configurationContext, sourceContext, preservedSkinIds, preservedSkinApprovals, selectionContext } = await readSkinMutation(request)
       if (sourceContext !== undefined && kind !== 'migrate') throw new Error('invalid source context')
-      if (updaterBusy() !== undefined) return sendJson(response, 409, { error: updaterBusy() })
+      if (updaterBusy() !== undefined) return sendError(response, 409, updaterBusy())
       if (configurationContext !== undefined && !['activate', 'deactivate', 'pin', 'unpin'].includes(kind)) throw new Error('invalid configuration context')
       const operation = preservedSkinIds !== undefined || preservedSkinApprovals !== undefined || selectionContext !== undefined
         ? lifecycle.begin(kind, skinId, undefined, acknowledgeCompatibility, compatibilityContext, undefined, artifactContext, undefined, configurationContext, sourceContext, preservedSkinIds, preservedSkinApprovals, selectionContext)
@@ -173,20 +217,20 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
             : lifecycle.begin(kind, skinId, undefined, acknowledgeCompatibility, compatibilityContext, undefined, artifactContext)
       sendJson(response, 202, { operationId: operation.id })
     } catch (error) {
-      sendJson(response, 409, { error: error instanceof Error ? error.message : String(error) })
+      sendError(response, 409, error)
     }
   }
 
   const disposers = [
     register({ kind: 'exact', path: '/dsh-skin-market/selection-plan', handler: async (request, response) => {
       if (!method(request, response, 'POST')) return
-      if (!matchesOrigin(request)) return sendJson(response, 403, { error: 'same-origin request required' })
+      if (!matchesOrigin(request)) return sendError(response, 403, 'same-origin request required')
       try {
         const { skinId, kind, preservedSkinIds } = await readSelectionPlan(request)
-        if (updaterBusy() !== undefined) return sendJson(response, 409, { error: updaterBusy() })
+        if (updaterBusy() !== undefined) return sendError(response, 409, updaterBusy())
         sendJson(response, 200, await (preservedSkinIds === undefined ? lifecycle.selectionPlan(kind, skinId) : lifecycle.selectionPlan(kind, skinId, preservedSkinIds)))
       } catch (error) {
-        sendJson(response, 409, { error: error instanceof Error ? error.message : String(error) })
+        sendError(response, 409, error)
       }
     } }),
     register({ kind: 'exact', path: '/dsh-skin-market/catalog', handler: async (request, response) => {
@@ -194,7 +238,7 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
       try {
         sendJson(response, 200, await catalogPayload(false))
       } catch (error) {
-        sendJson(response, 502, { error: error instanceof Error ? error.message : String(error) })
+        sendError(response, 502, error)
       }
     } }),
     register({ kind: 'exact', path: '/dsh-skin-market/logs', handler: (request, response) => {
@@ -214,12 +258,16 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
     register({ kind: 'exact', path: '/dsh-skin-market/state', handler: async (request, response) => {
       if (!method(request, response, 'GET')) return
       try {
+        const profileBusy = lifecycle.waitingReason ?? updaterBusy()
+        const profileBusyFields = profileBusy === undefined ? {} : routeMessageFields(profileBusy)
         sendJson(response, 200, {
           hostKind,
           installEnvironment: getInstallEnvironment(options.profile, profileDir),
           selectionPlanAvailable: options.runner.management !== undefined,
           management: options.runner.management === undefined ? undefined : { official: true, installRequiresRestart: options.runner.management.installRequiresRestart, capabilities: options.runner.management.capabilities() },
-          profileBusy: lifecycle.waitingReason ?? updaterBusy(),
+          profileBusy,
+          ...(profileBusyFields.messageKey === undefined ? {} : { profileBusyKey: profileBusyFields.messageKey }),
+          ...(profileBusyFields.messageParams === undefined ? {} : { profileBusyParams: profileBusyFields.messageParams }),
           runtime: options.runtime,
           skins: await lifecycle.runtimeStates(),
           installedClientPlugins: installedClientPlugins(profileDir, lifecycle.catalog),
@@ -234,7 +282,7 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
           runningAgentCount: runningAgentCount(routeHost),
         })
       } catch (error) {
-        sendJson(response, 500, { error: error instanceof Error ? error.message : String(error) })
+        sendError(response, 500, error)
       }
     } }),
     register({ kind: 'exact', path: '/dsh-skin-market/market-update', handler: async (request, response) => {
@@ -243,10 +291,10 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
         response.end()
         return
       }
-      if (request.method === 'POST' && !matchesOrigin(request)) return sendJson(response, 403, { error: 'same-origin request required' })
+      if (request.method === 'POST' && !matchesOrigin(request)) return sendError(response, 403, 'same-origin request required')
       try {
         if (request.method === 'POST') {
-          if (skinWritesBusy() !== undefined) return sendJson(response, 409, { error: skinWritesBusy() })
+          if (skinWritesBusy() !== undefined) return sendError(response, 409, skinWritesBusy())
           const capability = options.runner.management?.capabilities().update
           if (capability?.available === false) return sendJson(response, 501, { error: capability.reason })
           const operation = marketUpdater.startUpdate()
@@ -254,7 +302,7 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
         }
         sendJson(response, 200, { ...(await marketUpdater.status()), operation: marketUpdater.currentOperation() })
       } catch (error) {
-        sendJson(response, 502, { error: error instanceof Error ? error.message : String(error) })
+        sendError(response, 502, error)
       }
     } }),
     register({ kind: 'prefix', path: '/dsh-skin-market/market-update/operations', handler: async (request, response) => {
@@ -264,18 +312,18 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
       const id = cancelling || retrying ? parts.at(-2) ?? '' : parts.at(-1) ?? ''
       if (cancelling || retrying) {
         if (!method(request, response, 'POST')) return
-        if (!matchesOrigin(request)) return sendJson(response, 403, { error: 'same-origin request required' })
+        if (!matchesOrigin(request)) return sendError(response, 403, 'same-origin request required')
         try {
-          if (retrying && skinWritesBusy() !== undefined) return sendJson(response, 409, { error: skinWritesBusy() })
+          if (retrying && skinWritesBusy() !== undefined) return sendError(response, 409, skinWritesBusy())
           if (cancelling) return sendJson(response, 202, marketUpdater.cancel(id))
           const action = await readMarketUpdateRetryAction(request)
-          if (skinWritesBusy() !== undefined) return sendJson(response, 409, { error: skinWritesBusy() })
+          if (skinWritesBusy() !== undefined) return sendError(response, 409, skinWritesBusy())
           return sendJson(response, 202, { operationId: marketUpdater.retry(id, action).id })
-        } catch (error) { return sendJson(response, 409, { error: error instanceof Error ? error.message : String(error) }) }
+        } catch (error) { return sendError(response, 409, error) }
       }
       if (!method(request, response, 'GET')) return
       const operation = marketUpdater.operation(id)
-      if (operation === null) return sendJson(response, 404, { error: '更新任务不存在' })
+      if (operation === null) return sendError(response, 404, '更新任务不存在')
       sendJson(response, 200, operation)
     } }),
     // Prefix routes must not end in `/`: DSH matches descendants by appending
@@ -289,12 +337,12 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
       const id = cancelling || retrying ? parts.at(-2) ?? '' : parts.at(-1) ?? ''
       if (cancelling || retrying) {
         if (!method(request, response, 'POST')) return
-        if (!matchesOrigin(request)) return sendJson(response, 403, { error: 'same-origin request required' })
+        if (!matchesOrigin(request)) return sendError(response, 403, 'same-origin request required')
         try {
           if (cancelling) return sendJson(response, 202, lifecycle.cancel(id))
-          if (updaterBusy() !== undefined) return sendJson(response, 409, { error: updaterBusy() })
+          if (updaterBusy() !== undefined) return sendError(response, 409, updaterBusy())
           const { action, acknowledgeCompatibility, compatibilityContext, artifactContext, configurationContext } = await readOperationRetry(request)
-          if (updaterBusy() !== undefined) return sendJson(response, 409, { error: updaterBusy() })
+          if (updaterBusy() !== undefined) return sendError(response, 409, updaterBusy())
           const retried = configurationContext !== undefined
             ? lifecycle.retry(id, action, acknowledgeCompatibility, compatibilityContext, artifactContext, configurationContext)
             : artifactContext !== undefined
@@ -302,12 +350,12 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
               : lifecycle.retry(id, action, acknowledgeCompatibility, compatibilityContext)
           return sendJson(response, 202, { operationId: retried.id })
         } catch (error) {
-          return sendJson(response, 409, { error: error instanceof Error ? error.message : String(error) })
+          return sendError(response, 409, error)
         }
       }
       if (!method(request, response, 'GET')) return
       const operation = lifecycle.operations.get(id)
-      if (operation === undefined) return sendJson(response, 404, { error: 'operation not found' })
+      if (operation === undefined) return sendError(response, 404, 'operation not found')
       sendJson(response, 200, operation)
     } }),
     register({ kind: 'exact', path: '/dsh-skin-market/install', handler: mutation('install') }),
@@ -320,32 +368,32 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
     register({ kind: 'exact', path: '/dsh-skin-market/uninstall', handler: mutation('uninstall') }),
     register({ kind: 'exact', path: '/dsh-skin-market/restart/clear', handler: async (request, response) => {
       if (!method(request, response, 'POST')) return
-      if (!matchesOrigin(request)) return sendJson(response, 403, { error: 'same-origin request required' })
-      if (hostKind === 'desktop') return sendJson(response, 409, { error: 'Desktop 皮肤不能由浏览器确认重启回执' })
+      if (!matchesOrigin(request)) return sendError(response, 403, 'same-origin request required')
+      if (hostKind === 'desktop') return sendError(response, 409, 'Desktop 皮肤不能由浏览器确认重启回执')
       try {
         const target = await readRestartTarget(request)
-        if (target.kind !== 'skin') return sendJson(response, 400, { error: 'skin restart target required' })
+        if (target.kind !== 'skin') return sendError(response, 400, 'skin restart target required')
         await lifecycle.clearWebRestartReceipt(target.skinId)
         sendJson(response, 200, { cleared: true, skinId: target.skinId })
       } catch (error) {
-        sendJson(response, 409, { error: error instanceof Error ? error.message : String(error) })
+        sendError(response, 409, error)
       }
     } }),
     register({ kind: 'exact', path: '/dsh-skin-market/restart', handler: async (request, response) => {
       if (!method(request, response, 'POST')) return
-      if (!matchesOrigin(request)) return sendJson(response, 403, { error: 'same-origin request required' })
-      if (options.restart?.available !== true) return sendJson(response, 501, { error: 'restart is unavailable in this DSH host' })
-      if (!directLoopbackRequest(request)) return sendJson(response, 403, { error: '只能从本机直接请求重启，不能通过代理或转发请求' })
+      if (!matchesOrigin(request)) return sendError(response, 403, 'same-origin request required')
+      if (options.restart?.available !== true) return sendError(response, 501, 'restart is unavailable in this DSH host')
+      if (!directLoopbackRequest(request)) return sendError(response, 403, '只能从本机直接请求重启，不能通过代理或转发请求')
       try {
         const target = await readRestartTarget(request)
         if (target.kind === 'market-update') {
-          if (!marketUpdater.restartRequired) return sendJson(response, 409, { error: '皮肤市场没有待应用的更新' })
+          if (!marketUpdater.restartRequired) return sendError(response, 409, '皮肤市场没有待应用的更新')
         } else {
           const skinState = lifecycle.states().find(item => item.skinId === target.skinId)
           // Browser and Host loaders are separate. The browser can correctly
           // require a restart while the Host half is already live, so accept
           // either active representation for the selected installed skin.
-          if (!canRestartSkin(skinState)) return sendJson(response, 409, { error: '请先选择并使用此皮肤，再重新启动 DeepSeek Harness' })
+          if (!canRestartSkin(skinState)) return sendError(response, 409, '请先选择并使用此皮肤，再重新启动 DeepSeek Harness')
         }
         assertRestartClearOfSkinOperations(lifecycle.currentOperations(), marketUpdater.currentOperation())
         await waitForRestartSafety(routeHost)
@@ -353,7 +401,7 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
         sendJson(response, 202, { restarting: true, instanceId })
         options.restart.schedule()
       } catch (error) {
-        sendJson(response, 409, { error: error instanceof Error ? error.message : String(error) })
+        sendError(response, 409, error)
       }
     } }),
   ]

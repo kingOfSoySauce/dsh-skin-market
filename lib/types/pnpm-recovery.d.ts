@@ -1,8 +1,11 @@
 import { type CommandResult } from './commands.ts';
+import type { OperationMessageKey, OperationMessageParams } from './operation-message.ts';
 export type PnpmFailureKind = 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'no-matching-version' | 'integrity' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'command';
 export interface PnpmFailure {
     kind: PnpmFailureKind;
     message: string;
+    messageKey?: OperationMessageKey;
+    messageParams?: OperationMessageParams;
     packageName?: string;
     buildKey?: string;
     buildKeys?: string[];

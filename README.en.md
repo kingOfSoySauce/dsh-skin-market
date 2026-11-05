@@ -1,6 +1,4 @@
-# DSH Skin Market
-
-[中文](./README.md)
+# DSH Skin Market <sup><a href="./README.md">中文</a></sup>
 
 A community skin market embedded in DSH settings: browse, search, install, use, disable, pin, update, and uninstall DSH skins.
 

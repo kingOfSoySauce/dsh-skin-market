@@ -129,6 +129,8 @@ export interface RuntimeSkin {
   })
   artifactRisk?: { context: string; packageName: string; version: string; warnings: string[] }
   error?: string
+  errorKey?: OperationMessageFields['messageKey']
+  errorParams?: OperationMessageFields['messageParams']
 }
 
 export interface InstalledClientPlugin {

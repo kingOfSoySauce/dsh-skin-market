@@ -29,6 +29,8 @@ export interface MarketUpdateStatus {
   latestVersion: string
   updateAvailable: boolean
   updateBlockedReason?: string
+  updateBlockedReasonKey?: OperationMessageFields['messageKey']
+  updateBlockedReasonParams?: OperationMessageFields['messageParams']
   /** Optional legacy status field; release age is handled from actual Desktop failures. */
   updateAvailableAt?: string
   packageOperationsWarning?: string
@@ -108,6 +110,17 @@ function causeSummary(error: unknown): string {
 
 function hostOf(registry: string): string {
   try { return new URL(registry).host } catch { return registry }
+}
+
+function failureMessageKey(kind: OperationFailure['kind']): OperationMessageKey | undefined {
+  if (kind === 'network') return 'failure.networkProblem'
+  if (kind === 'fetch-timeout') return 'failure.timeoutProblem'
+  if (kind === 'fetch-404') return 'failure.fetch404Problem'
+  if (kind === 'no-matching-version') return 'failure.versionProblem'
+  if (kind === 'integrity') return 'failure.integrityProblem'
+  if (kind === 'release-age') return 'failure.releaseAgeProblem'
+  if (kind === 'build-approval') return 'failure.buildProblem'
+  return 'failure.commandProblem'
 }
 
 class MarketProgressTracker {
@@ -380,6 +393,7 @@ export function createMarketUpdater(
       ...(held === null ? {} : {
         ...(held.until === undefined ? {} : { updateAvailableAt: held.until }),
         updateBlockedReason: held.reason,
+        updateBlockedReasonKey: 'failure.releaseAgeWait',
       }),
     }
     checkedReleases.set(next, release)
@@ -467,8 +481,8 @@ export function createMarketUpdater(
       }
       if (!before.updateAvailable) {
         if (before.updateBlockedReason !== undefined) {
-          operation.failure = { kind: 'release-age', message: before.updateBlockedReason }
-          setOperation(operation, { phase: 'failed', message: before.updateBlockedReason, status: before })
+          operation.failure = { kind: 'release-age', message: before.updateBlockedReason, messageKey: before.updateBlockedReasonKey ?? 'failure.releaseAgeWait', messageParams: before.updateBlockedReasonParams }
+          setOperation(operation, { phase: 'failed', message: before.updateBlockedReason, messageKey: before.updateBlockedReasonKey ?? 'failure.releaseAgeWait', messageParams: before.updateBlockedReasonParams, status: before })
         } else {
           setOperation(operation, { phase: 'done', message: '已经是最新版本', messageKey: 'common.marketAlreadyLatest', status: before })
         }
@@ -479,7 +493,7 @@ export function createMarketUpdater(
       if (checkedRelease === undefined || checkedRelease.version !== before.latestVersion || currentRelease === null
         || !sameRelease(currentRelease, checkedRelease)) {
         const message = '版本检查结果已变化，请重新检查后再更新。'
-        operation.failure = { kind: 'command', message }
+        operation.failure = { kind: 'command', message, messageKey: 'common.marketCheckChanged' }
         setOperation(operation, { phase: 'failed', message, messageKey: 'common.marketCheckChanged', status: before })
         return
       }
@@ -690,6 +704,7 @@ export function createMarketUpdater(
           operation.failure = {
             kind: error.kind,
             message: error.message,
+            messageKey: failureMessageKey(error.kind),
             ...(error.kind === 'network' || error.kind === 'fetch-timeout' || error.kind === 'fetch-404' || error.kind === 'no-matching-version'
               ? { action: 'retry' as const } : {}),
           }
@@ -700,6 +715,8 @@ export function createMarketUpdater(
           operation.failure = {
             kind: failure.kind,
             message: failure.message,
+            messageKey: failure.messageKey ?? failureMessageKey(failure.kind),
+            messageParams: failure.messageParams,
             ...(failure.packageName === undefined ? {} : { packageName: failure.packageName }),
             ...(action === undefined ? {} : { action }),
           }

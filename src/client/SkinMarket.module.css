@@ -114,11 +114,35 @@
 .homeGithubAction:focus-visible .homeGithubLabel { display: inline; }
 .homeContent { display: grid; min-height: 0; gap: 30px; margin-top: 12px; padding: 24px 24px 38px; overflow-y: auto; overflow-anchor: none; overscroll-behavior: contain; scrollbar-gutter: stable; -webkit-overflow-scrolling: touch; }
 .homeSection { min-width: 0; }
-.homeSectionTitle { display: flex; min-height: 28px; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 12px; flex-wrap: wrap; }
+.homeSectionTitle { container-type: inline-size; display: flex; min-height: 28px; align-items: center; justify-content: flex-start; gap: 14px; margin-bottom: 12px; flex-wrap: wrap; }
 .homeSectionTitle h3 { font-size: 15px; font-weight: 600; line-height: 22px; }
-.discoverHeading { display: flex; min-width: 0; flex: 1; flex-wrap: wrap; align-items: center; gap: 10px; }
+.discoverHeading { display: flex; min-width: 0; flex: 1 1 auto; flex-wrap: wrap; align-items: center; gap: 10px; }
+.homeSectionTitle > .segmented { flex: 0 0 auto; }
 .homeHeader > .headerDiscover { grid-column: 1 / -1; margin-bottom: 0; }
 .discoverTitle[data-docked="true"] { visibility: hidden; }
+
+@container (max-width: 680px) {
+  .discoverHeading > h3 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+}
+
+@container (max-width: 560px) {
+  .homeSectionTitle { align-items: flex-start; gap: 8px; }
+  .discoverHeading,
+  .homeSectionTitle > .segmented { width: 100%; flex: 1 1 100%; }
+  .discoverHeading { gap: 6px; }
+  .discoverHeading > .segmented { flex-wrap: wrap; justify-content: flex-start; }
+  .homeSectionTitle > .segmented { justify-content: flex-start; }
+}
 .installedRow { display: grid; grid-template-columns: repeat(var(--installed-columns), minmax(0, 1fr)); gap: 20px; overflow: hidden; }
 .homeCard {
   box-sizing: border-box;
@@ -160,7 +184,7 @@
 .homeCardFooter { position: absolute; z-index: 1; right: 0; bottom: 0; left: 0; display: flex; min-width: 0; min-height: 24px; align-items: center; gap: 8px; padding: 0 6px 10px 12px; color: var(--dsw-alias-label-caption); font-size: 11px; line-height: 17px; }
 .homeCardRepo { min-width: 0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .feedMeta { display: inline-flex; flex: none; align-items: center; gap: 4px; white-space: nowrap; }
-.cardInlineActions { display: inline-flex; min-width: 0; align-items: center; gap: 4px; flex: none; }
+.cardInlineActions { display: inline-flex; min-width: 0; max-width: 100%; align-items: center; gap: 4px; flex: 0 1 auto; flex-wrap: wrap; justify-content: flex-start; }
 .cardAction { min-height: 24px; height: 24px; padding-inline: 8px; border-radius: var(--dsw-radius-sm); font-size: 11px; line-height: 16px; flex: none; }
 .cardActionProgress { display: inline-flex; min-height: 24px; align-items: center; gap: 4px; color: var(--dsw-alias-label-caption); font-size: 11px; line-height: 17px; }
 .cardActionProgress svg { width: 13px; height: 13px; animation: spin 1s linear infinite; }
@@ -349,6 +373,7 @@
 .cardStars { display: inline-flex; flex: none; align-items: center; gap: 3px; white-space: nowrap; }
 
 .statusLabel { display: inline-flex; min-width: 0; align-items: center; color: var(--dsw-alias-label-tertiary, var(--dsw-alias-label-secondary)); font-size: 11px; font-weight: 400; line-height: 17px; white-space: nowrap; }
+.homeCardFooter .statusLabel { max-width: 42%; overflow: hidden; text-overflow: ellipsis; }
 .statusLabel[data-active="true"] { color: var(--dsw-alias-state-success-primary); }
 
 .listSkeleton { display: grid; gap: 4px; }

@@ -1,12 +1,15 @@
 import { commandError, type CommandResult } from './commands.ts'
 import { readDependencies } from './profile.ts'
 import { normalizeRegistryPlan } from './registry-plan.ts'
+import type { OperationMessageKey, OperationMessageParams } from './operation-message.ts'
 
 export type PnpmFailureKind = 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'no-matching-version' | 'integrity' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'command'
 
 export interface PnpmFailure {
   kind: PnpmFailureKind
   message: string
+  messageKey?: OperationMessageKey
+  messageParams?: OperationMessageParams
   packageName?: string
   buildKey?: string
   buildKeys?: string[]
@@ -80,7 +83,7 @@ function packageNameFromFetch404(output: string): string | undefined {
 }
 
 export function classifyPnpmFailure(result: CommandResult): PnpmFailure {
-  if (result.aborted) return { kind: 'command', message: '操作已取消' }
+  if (result.aborted) return { kind: 'command', message: '操作已取消', messageKey: 'common.cancelled' }
 
   const output = outputOf(result)
   const stalled = /printed nothing for (\d+)ms and was terminated/.exec(output)
@@ -88,13 +91,13 @@ export function classifyPnpmFailure(result: CommandResult): PnpmFailure {
     const scripts = [...output.matchAll(/node_modules[\\/]((?:@[^\\/\s]+[\\/])?[^\\/\s]+) (?:pre|post)?install[:$]/g)]
     const packageName = scripts.at(-1)?.[1]?.replace(/\\/g, '/')
     const minutes = Math.max(1, Math.round(Number(stalled[1]) / 60000))
-    return { kind: 'script-timeout', ...(packageName === undefined ? {} : { packageName }), message: `${packageName === undefined ? '安装步骤' : `依赖 ${packageName} 的安装脚本`} ${minutes} 分钟没有输出，被宿主终止；请检查脚本与下载连接后重试。此结果不证明文件尚未改变。` }
+    return { kind: 'script-timeout', ...(packageName === undefined ? {} : { packageName }), message: `${packageName === undefined ? '安装步骤' : `依赖 ${packageName} 的安装脚本`} ${minutes} 分钟没有输出，被宿主终止；请检查脚本与下载连接后重试。此结果不证明文件尚未改变。`, messageKey: 'failure.scriptProblem' }
   }
   if (output.includes('ERR_PNPM_OUTDATED_LOCKFILE')) {
-    return { kind: 'lockfile-outdated', message: 'profile 的 pnpm-lock.yaml 与 package.json 不一致，pnpm 已拒绝此次操作；请备份锁文件并在该 profile 中对齐声明后重试，不要删除整个锁文件。' }
+    return { kind: 'lockfile-outdated', message: 'profile 的 pnpm-lock.yaml 与 package.json 不一致，pnpm 已拒绝此次操作；请备份锁文件并在该 profile 中对齐声明后重试，不要删除整个锁文件。', messageKey: 'failure.lockfileProblem' }
   }
   if (output.includes('ERR_PNPM_LOCKFILE_MISSING_DEPENDENCY') || /Broken lockfile/i.test(output)) {
-    return { kind: 'lockfile-broken', message: 'profile 的 pnpm-lock.yaml 缺少其引用的依赖条目，pnpm 已拒绝此次操作；请备份锁文件并修复缺失记录后重试，不要删除整个锁文件或直接替换其他插件版本。' }
+    return { kind: 'lockfile-broken', message: 'profile 的 pnpm-lock.yaml 缺少其引用的依赖条目，pnpm 已拒绝此次操作；请备份锁文件并修复缺失记录后重试，不要删除整个锁文件或直接替换其他插件版本。', messageKey: 'failure.lockfileBrokenProblem' }
   }
   const ignoredKeys = ignoredBuildKeys(output)
   if (ignoredKeys.length > 0 || /ERR_PNPM_IGNORED_BUILDS/i.test(output)) {
@@ -104,6 +107,7 @@ export function classifyPnpmFailure(result: CommandResult): PnpmFailure {
       message: packageName === undefined
         ? '依赖包含被 pnpm 阻止的构建脚本；请批准精确构建项后重试'
         : `依赖 ${packageName}${ignoredKeys.length > 1 ? ` 等 ${ignoredKeys.length} 个依赖` : ''} 包含被 pnpm 阻止的构建脚本；请批准后重试`,
+      messageKey: 'failure.buildProblem',
       packageName,
       buildKey: packageName,
       ...(ignoredKeys.length === 0 ? {} : { buildKeys: ignoredKeys }),
@@ -115,6 +119,7 @@ export function classifyPnpmFailure(result: CommandResult): PnpmFailure {
     return {
       kind: 'build-approval',
       message: 'GitHub 插件包含被 pnpm 阻止的构建脚本；请批准精确构建项后重试',
+      messageKey: 'failure.buildProblem',
       packageName: packageNameFromBuildKey(buildKey),
       buildKey,
       ...(buildKey === undefined ? {} : { buildKeys: [buildKey] }),
@@ -125,6 +130,7 @@ export function classifyPnpmFailure(result: CommandResult): PnpmFailure {
     return {
       kind: 'release-age',
       message: '依赖仍受 pnpm 新包保护；已自动临时放宽并重试一次，请稍后再试',
+      messageKey: 'failure.releaseAgeProblem',
     }
   }
 
@@ -132,6 +138,7 @@ export function classifyPnpmFailure(result: CommandResult): PnpmFailure {
     return {
       kind: 'fetch-timeout',
       message: commandError(result),
+      messageKey: 'failure.timeoutProblem',
     }
   }
 
@@ -139,6 +146,7 @@ export function classifyPnpmFailure(result: CommandResult): PnpmFailure {
     return {
       kind: 'network',
       message: '插件下载遇到临时网络错误；已自动重试一次，请检查网络后重试',
+      messageKey: 'failure.networkProblem',
     }
   }
 
@@ -149,34 +157,36 @@ export function classifyPnpmFailure(result: CommandResult): PnpmFailure {
       message: packageName === undefined
         ? '有依赖无法从 npm registry 找到；请检查依赖声明、registry 权限或之前失败操作留下的幽灵依赖'
         : `依赖 ${packageName} 无法从 npm registry 找到；它可能是未发布的宿主依赖、私有包或之前失败操作留下的幽灵依赖`,
+      messageKey: 'failure.fetch404Problem',
       packageName,
     }
   }
 
   if (/ERR_PNPM_NO_MATCHING_VERSION|No matching version found|No matching version/i.test(output)) {
-    return { kind: 'no-matching-version', message: '安装源没有所需的精确版本；请检查其他配置的安装源' }
+    return { kind: 'no-matching-version', message: '安装源没有所需的精确版本；请检查其他配置的安装源', messageKey: 'failure.versionProblem' }
   }
 
   if (/ERR_PNPM_TARBALL_INTEGRITY|integrity checksum failed|integrity.*mismatch/i.test(output)) {
-    return { kind: 'integrity', message: '安装源返回的包完整性校验失败；请检查其他配置的安装源' }
+    return { kind: 'integrity', message: '安装源返回的包完整性校验失败；请检查其他配置的安装源', messageKey: 'failure.integrityProblem' }
   }
 
   if (output.includes('ERR_PNPM_ADDING_TO_ROOT')) {
-    return { kind: 'adding-to-root', message: 'pnpm 拒绝在 workspace 根目录安装；市场已识别为兼容性问题，请重试' }
+    return { kind: 'adding-to-root', message: 'pnpm 拒绝在 workspace 根目录安装；市场已识别为兼容性问题，请重试', messageKey: 'failure.commandProblem' }
   }
 
   if (/--workspace-root may only be used inside a workspace/i.test(output)) {
-    return { kind: 'not-a-workspace', message: '当前 profile 不是 pnpm workspace，却传入了 -w；市场已识别为兼容性问题，请重试' }
+    return { kind: 'not-a-workspace', message: '当前 profile 不是 pnpm workspace，却传入了 -w；市场已识别为兼容性问题，请重试', messageKey: 'failure.commandProblem' }
   }
 
   if (/ERR_PNPM_UNEXPECTED_STORE|Unexpected store location/i.test(output)) {
     return {
       kind: 'unexpected-store',
       message: '当前 profile 的 node_modules 由另一代 pnpm store 链接（常见于本机同时装了 pnpm 10 和 11）。请用 node_modules/.modules.yaml 记录的同一版 pnpm 再操作，或用现在的 pnpm 重建该 profile 的 node_modules。不要在 DSH 源码仓库目录里看 pnpm 版本来判断。',
+      messageKey: 'failure.storeProblem',
     }
   }
 
-  return { kind: 'command', message: commandError(result) }
+  return { kind: 'command', message: commandError(result), messageKey: 'failure.commandProblem' }
 }
 
 function withReleaseAgeOverride(args: readonly string[]): string[] {

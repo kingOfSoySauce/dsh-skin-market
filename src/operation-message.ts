@@ -58,6 +58,66 @@ export type OperationMessageKey =
   | 'common.marketOperationRestoring'
   | 'common.marketAlreadyLatest'
   | 'common.marketCheckChanged'
+  | 'common.operationResultUnknown'
+  | 'common.operationResultPending'
+  | 'common.skinOperationsBusy'
+  | 'common.dshComponentDisabled'
+  | 'common.dshComponentRestartFailed'
+  | 'common.dshComponentWaiting'
+  | 'common.dshComponentLoading'
+  | 'common.dshComponentFailed'
+  | 'common.dshComponentUnknown'
+  | 'common.dshComponentNotLoaded'
+  | 'server.requestNotAdmitted'
+  | 'server.sameOriginRequired'
+  | 'server.invalidRequest'
+  | 'server.marketUpdateBusy'
+  | 'server.marketUpdateWaiting'
+  | 'server.skinOperationsBusy'
+  | 'server.operationNotFound'
+  | 'server.marketUpdateOperationNotFound'
+  | 'server.desktopRestartReceiptUnsupported'
+  | 'server.restartTargetRequired'
+  | 'server.restartUnavailable'
+  | 'server.directLoopbackRequired'
+  | 'server.marketUpdateRestartMissing'
+  | 'server.skinRestartSelectionRequired'
+  | 'server.restartBlockedByOperations'
+  | 'server.restartBlockedByMarketUpdate'
+  | 'server.agentRunning'
+  | 'server.agentStarted'
+  | 'failure.scriptProblem'
+  | 'failure.lockfileProblem'
+  | 'failure.lockfileBrokenProblem'
+  | 'failure.buildProblem'
+  | 'failure.releaseAgeProblem'
+  | 'failure.timeoutProblem'
+  | 'failure.networkProblem'
+  | 'failure.fetch404Problem'
+  | 'failure.versionProblem'
+  | 'failure.integrityProblem'
+  | 'failure.storeProblem'
+  | 'failure.commandProblem'
+  | 'failure.diskProblem'
+  | 'failure.permissionProblem'
+  | 'failure.pnpmProblem'
+  | 'failure.releaseAgeWait'
+  | 'failure.conflict'
+  | 'failure.compatibility'
+  | 'failure.managementProblem'
+  | 'failure.unknownPluginProblem'
+  | 'failure.unaddressableProblem'
+  | 'failure.invalidSpecProblem'
+  | 'failure.ambiguousInstallProblem'
+  | 'failure.notBundleProblem'
+  | 'failure.notRemovableProblem'
+  | 'failure.stopProfileProblem'
+  | 'failure.bundleInUseProblem'
+  | 'failure.staleApprovalProblem'
+  | 'failure.operationStateProblem'
+  | 'failure.overrideDisabled'
+  | 'failure.overrideEnabled'
+  | 'failure.overrideGeneric'
 
 export type OperationMessageParams = Readonly<Record<string, string | number>>
 
@@ -71,6 +131,27 @@ export interface OperationMessageFields {
 export interface OperationStepFields {
   stepKey?: OperationMessageKey
   stepParams?: OperationMessageParams
+}
+
+/** An error that keeps a legacy raw message alongside a translatable key. */
+export class MarketMessageError extends Error implements OperationMessageFields {
+  readonly messageKey: OperationMessageKey
+  readonly messageParams?: OperationMessageParams
+
+  constructor(message: string, key: OperationMessageKey, params?: OperationMessageParams) {
+    super(message)
+    this.name = 'MarketMessageError'
+    this.messageKey = key
+    this.messageParams = params
+  }
+}
+
+export function messageFields(error: unknown): OperationMessageFields {
+  if (!(error instanceof Error)) return {}
+  const candidate = error as Error & OperationMessageFields
+  return candidate.messageKey === undefined
+    ? {}
+    : { messageKey: candidate.messageKey, ...(candidate.messageParams === undefined ? {} : { messageParams: candidate.messageParams }) }
 }
 
 /** Keep the legacy raw value and its optional locale metadata in sync. */

@@ -12,6 +12,8 @@ export interface MarketUpdateStatus {
     latestVersion: string;
     updateAvailable: boolean;
     updateBlockedReason?: string;
+    updateBlockedReasonKey?: OperationMessageFields['messageKey'];
+    updateBlockedReasonParams?: OperationMessageFields['messageParams'];
     /** Optional legacy status field; release age is handled from actual Desktop failures. */
     updateAvailableAt?: string;
     packageOperationsWarning?: string;

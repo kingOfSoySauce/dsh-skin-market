@@ -184,6 +184,8 @@ export interface SkinRuntimeState {
   artifactRisk?: SkinArtifactRisk
   sourceMigration?: SkinSourceMigration
   error?: string
+  errorKey?: OperationMessageFields['messageKey']
+  errorParams?: OperationMessageFields['messageParams']
 }
 
 export interface InstalledClientPlugin {

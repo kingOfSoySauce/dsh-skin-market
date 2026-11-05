@@ -71,7 +71,7 @@ import {
   type LoaderIdentity,
   type InstalledArtifactSnapshot,
 } from './profile.ts'
-import { writeOperationMessage, writeOperationStep, type OperationMessageKey, type OperationMessageParams } from './operation-message.ts'
+import { messageFields, writeOperationMessage, writeOperationStep, type OperationMessageKey, type OperationMessageParams } from './operation-message.ts'
 import type { DesktopInstallCapability, DshRuntime, InstallConflict, LoaderEntry, MarketHostKind, Operation, OperationFailure, OperationKind, OperationRetryAction, PersistedMarketState, SelectionOperationKind, SkinArtifactRisk, SkinEntry, SkinRuntimeState } from './types.ts'
 
 export interface LifecycleHost {
@@ -1420,7 +1420,7 @@ export class SkinLifecycle {
       const sourceMigration = this.hostKind === 'desktop' ? undefined : npmSourceMigration(this.options.profileDir, skin)
       const restartPending = state.pendingRestart?.pid === process.pid && state.pendingRestart.skinIds.includes(skin.id)
       return { ...runtime, ...(runtime.installation === 'installed' && this.management === undefined ? { selectionHostApplied, selectionHostStatus,
-        ...(selectionClientTargets === undefined ? {} : { selectionClientTargets }) } : {}), ...(!restartPending && enabled.has(skin.id) && entries.length > 0 && entries.every(entry => entry.options.disabled === true) ? { activation: 'unavailable' as const, error: '皮肤组件已关闭；请点击使用以自动启用，或在官方插件页检查覆盖配置' } : {}), ...(!restartPending && enabled.has(skin.id) && this.unverifiedRestartSkinIds.has(skin.id) ? { activation: 'unavailable' as const, error: '重启后皮肤仍未生效，请在官方插件页检查组件开关、加载错误或更高优先级的覆盖配置' } : {}), ...(restartPending ? { activation: 'restart-required' as const, error: undefined,
+        ...(selectionClientTargets === undefined ? {} : { selectionClientTargets }) } : {}), ...(!restartPending && enabled.has(skin.id) && entries.length > 0 && entries.every(entry => entry.options.disabled === true) ? { activation: 'unavailable' as const, error: '皮肤组件已关闭；请点击使用以自动启用，或在官方插件页检查覆盖配置', errorKey: 'common.dshComponentDisabled' as const } : {}), ...(!restartPending && enabled.has(skin.id) && this.unverifiedRestartSkinIds.has(skin.id) ? { activation: 'unavailable' as const, error: '重启后皮肤仍未生效，请在官方插件页检查组件开关、加载错误或更高优先级的覆盖配置', errorKey: 'common.dshComponentRestartFailed' as const } : {}), ...(restartPending ? { activation: 'restart-required' as const, error: undefined,
         ...(selectionChanges.includes(skin.id) ? { restartSource: 'selection' as const } : {}) } : {}), ...(sourceMigration === undefined ? {} : { sourceMigration }) }
     })
   }
@@ -1478,18 +1478,18 @@ export class SkinLifecycle {
           if (matches.length === 0 && state.activation === 'inactive' && !state.primary && !state.pinned && bundle?.enabled !== true) {
             return { ...state, activation: 'inactive' as const, error: undefined }
           }
-          if (matches.length !== 1) return { ...state, activation: 'unavailable' as const, error: '无法确认唯一的皮肤主组件，请在官方插件页检查加载状态' }
+          if (matches.length !== 1) return { ...state, activation: 'unavailable' as const, error: '无法确认唯一的皮肤主组件，请在官方插件页检查加载状态', errorKey: 'common.dshComponentUnknown' as const }
           const row = matches[0]
           if (row.enabled === false) {
             bundle ??= await bundleFor(skin.package)
             return state.activation === 'inactive' && !state.primary && !state.pinned && bundle?.enabled !== true
               ? { ...state, activation: 'inactive' as const, error: undefined }
-              : { ...state, activation: 'unavailable' as const, error: '皮肤组件已关闭；请点击使用以自动启用，或在官方插件页检查覆盖配置' }
+              : { ...state, activation: 'unavailable' as const, error: '皮肤组件已关闭；请点击使用以自动启用，或在官方插件页检查覆盖配置', errorKey: 'common.dshComponentDisabled' as const }
           }
-          if (row.enabled !== true) return { ...state, activation: 'unavailable' as const, error: '宿主未提供可确认的组件启用状态，请在官方插件页核对' }
+          if (row.enabled !== true) return { ...state, activation: 'unavailable' as const, error: '宿主未提供可确认的组件启用状态，请在官方插件页核对', errorKey: 'common.dshComponentUnknown' as const }
           if (row.fiberPhase === 'active') return { ...state, activation: 'active' as const, error: undefined }
-          if (row.fiberPhase === 'loading' || row.fiberPhase === 'pending') return { ...state, activation: 'switching' as const, error: row.fiberPhase === 'loading' ? '皮肤组件正在加载，请稍候' : '皮肤组件正在等待所需服务，请在官方插件页查看详情' }
-          return { ...state, activation: 'unavailable' as const, error: row.fiberPhase === 'failed' ? '皮肤组件加载失败，请在官方插件页查看错误详情' : row.fiberPhase === null ? '皮肤组件已启用但尚未运行，请在官方插件页查看加载状态' : '宿主未提供可确认的组件运行状态，请在官方插件页核对' }
+          if (row.fiberPhase === 'loading' || row.fiberPhase === 'pending') return { ...state, activation: 'switching' as const, error: row.fiberPhase === 'loading' ? '皮肤组件正在加载，请稍候' : '皮肤组件正在等待所需服务，请在官方插件页查看详情', errorKey: row.fiberPhase === 'loading' ? 'common.dshComponentLoading' as const : 'common.dshComponentWaiting' as const }
+          return { ...state, activation: 'unavailable' as const, error: row.fiberPhase === 'failed' ? '皮肤组件加载失败，请在官方插件页查看错误详情' : row.fiberPhase === null ? '皮肤组件已启用但尚未运行，请在官方插件页查看加载状态' : '宿主未提供可确认的组件运行状态，请在官方插件页核对', errorKey: row.fiberPhase === 'failed' ? 'common.dshComponentFailed' as const : row.fiberPhase === null ? 'common.dshComponentNotLoaded' as const : 'common.dshComponentUnknown' as const }
         }))
       }
       // This read holds the selection queue only to clean up receipts. A
@@ -1515,7 +1515,7 @@ export class SkinLifecycle {
       }
       return inspected.map((state, index) => this.describeRestartVerification(inferredIds.has(state.skinId) && !confirmed.has(state.skinId) ? current[index] : state))
     } catch (error) {
-      return current.map(state => inspect.includes(state) && state.activation !== 'restart-required' && !inferredIds.has(state.skinId) ? { ...state, activation: 'unavailable' as const, error: `${this.unverifiedRestartSkinIds.has(state.skinId) ? '重启后皮肤仍未生效：' : ''}无法核对皮肤组件运行状态：${errorMessage(error)}` } : state)
+      return current.map(state => inspect.includes(state) && state.activation !== 'restart-required' && !inferredIds.has(state.skinId) ? { ...state, activation: 'unavailable' as const, error: `${this.unverifiedRestartSkinIds.has(state.skinId) ? '重启后皮肤仍未生效：' : ''}无法核对皮肤组件运行状态：${errorMessage(error)}`, errorKey: 'common.dshComponentUnknown' as const } : state)
     } finally {
       if (timer !== undefined) clearTimeout(timer)
     }
@@ -1524,7 +1524,7 @@ export class SkinLifecycle {
   private describeRestartVerification(state: SkinRuntimeState): SkinRuntimeState {
     if (state.activation === 'active') this.unverifiedRestartSkinIds.delete(state.skinId)
     if (!this.unverifiedRestartSkinIds.has(state.skinId) || state.activation === 'restart-required') return state
-    return { ...state, error: `重启后皮肤仍未生效：${state.error ?? '请在官方插件页检查组件开关、加载错误或更高优先级的覆盖配置'}` }
+    return { ...state, error: `重启后皮肤仍未生效：${state.error ?? '请在官方插件页检查组件开关、加载错误或更高优先级的覆盖配置'}`, errorKey: 'common.dshComponentRestartFailed' }
   }
 
   private liveOperations(): Operation[] {
@@ -1855,9 +1855,9 @@ export class SkinLifecycle {
       }
       if (this.expired.has(operation.id)) {
         const message = `安装已达到总时限，已停止继续重试${this.recoveryErrors.has(operation.id) ? `；${this.recoveryErrors.get(operation.id)}` : ''}`
-        operation.failure = { kind: 'command', message, ...(this.recoveryErrors.has(operation.id) ? {} : { action: 'retry' as const }) }
+        operation.failure = { kind: 'command', message, messageKey: 'failure.timeoutProblem', ...(this.recoveryErrors.has(operation.id) ? {} : { action: 'retry' as const }) }
         logEvent('error', 'operation-timeout', message, operation.id)
-        this.update(operation, 'failed', message)
+        this.update(operation, 'failed', message, 'failure.timeoutProblem')
       } else if ((operation.application === 'cancelled' || operation.application === undefined && this.abortControllers.get(operation.id)?.signal.aborted === true) && !this.recoveryErrors.has(operation.id)) this.update(operation, 'cancelled', '操作已取消', 'common.cancelled')
       else {
         if (error instanceof PnpmCommandError) {
@@ -1871,6 +1871,8 @@ export class SkinLifecycle {
           const operationFailure: OperationFailure = {
             kind: failure.kind,
             message: failure.message,
+            ...(failure.messageKey === undefined ? {} : { messageKey: failure.messageKey }),
+            ...(failure.messageParams === undefined ? {} : { messageParams: failure.messageParams }),
             ...(failure.packageName === undefined ? {} : { packageName: failure.packageName }),
             ...(buildKeys.length === 0 ? {} : { buildKeys }),
             ...(action === undefined ? {} : { action }),
@@ -1879,13 +1881,13 @@ export class SkinLifecycle {
           if (buildKeys.length > 0) this.pendingBuildKeys.set(operation.id, buildKeys)
         }
         if (error instanceof InstallConflictError) {
-          operation.failure = { kind: 'conflict', message: error.message, conflicts: error.conflicts }
+          operation.failure = { kind: 'conflict', message: error.message, messageKey: 'failure.conflict', conflicts: error.conflicts }
         }
         if (error instanceof ArtifactRiskError && (operation.kind === 'activate' || operation.kind === 'pin')
           && this.abortControllers.get(operation.id)?.signal.aborted !== true) {
           const risk = inspectSkinArtifactRisk(this.options.profileDir, this.skin(operation.skinId), this.hostKind)
           if (risk?.context === error.risk.context && !isSkinArtifactRiskAcknowledged(this.options.profileDir, this.skin(operation.skinId), this.hostKind)) {
-            operation.failure = { kind: 'integrity', message: error.message, packageName: risk.packageName, artifactRisk: risk, action: 'approve-artifact' }
+            operation.failure = { kind: 'integrity', message: error.message, messageKey: 'failure.integrityProblem', packageName: risk.packageName, artifactRisk: risk, action: 'approve-artifact' }
             this.failedArtifactContexts.set(operation.id, { context: risk.context, skinId: operation.skinId, kind: operation.kind })
           }
         }
@@ -1917,7 +1919,8 @@ export class SkinLifecycle {
             operation.failure.message += `；${recoveryError}`
           }
         }
-        this.update(operation, 'failed', `${errorMessage(error)}${recoveryError === undefined ? '' : `；${recoveryError}`}`)
+        const operationFields = operation.failure === undefined ? messageFields(error) : { messageKey: operation.failure.messageKey, messageParams: operation.failure.messageParams }
+        this.update(operation, 'failed', `${errorMessage(error)}${recoveryError === undefined ? '' : `；${recoveryError}`}`, operationFields.messageKey, operationFields.messageParams)
       }
     } finally {
       clearTimeout(this.deadlineTimers.get(operation.id))

@@ -261,6 +261,8 @@ interface MarketStateResponse {
   marketUpdateRestartRequired?: boolean
   management?: { official: boolean; installRequiresRestart?: boolean; capabilities: Record<'install' | 'update' | 'enable' | 'disable' | 'remove', { available: boolean; reason?: string }> }
   profileBusy?: string
+  profileBusyKey?: Operation['messageKey']
+  profileBusyParams?: Operation['messageParams']
 }
 
 interface MarketUpdateStatus {
@@ -268,6 +270,8 @@ interface MarketUpdateStatus {
   latestVersion: string
   updateAvailable: boolean
   updateBlockedReason?: string
+  updateBlockedReasonKey?: Operation['messageKey']
+  updateBlockedReasonParams?: Operation['messageParams']
   updateAvailableAt?: string
 }
 
@@ -611,15 +615,18 @@ export function restoreMarketStyleOrder(root: ParentNode = document, marker = cs
 
 async function json<T>(url: string, init?: RequestInit, t: Translator = defaultTranslator): Promise<T> {
   const response = await fetch(url, init)
-  let body: T & { error?: string }
+  let body: T & { error?: string; errorKey?: Operation['messageKey']; errorParams?: Operation['messageParams'] }
   try {
-    body = await response.json() as T & { error?: string }
+    body = await response.json() as T & { error?: string; errorKey?: Operation['messageKey']; errorParams?: Operation['messageParams'] }
   } catch {
     throw new Error(response.ok
       ? t('market.updateServiceDataInvalid')
       : t('market.requestFailed', { url, status: response.status }))
   }
-  if (!response.ok) throw new Error(body.error ?? `HTTP ${response.status}`)
+  if (!response.ok) {
+    const message = operationMessage({ message: body.error, messageKey: body.errorKey, messageParams: body.errorParams }, t)
+    throw new Error(message ?? `HTTP ${response.status}`)
+  }
   return body
 }
 
@@ -854,7 +861,10 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const officialDesktop = hostKind === 'desktop' && management?.official === true
   const installRequiresRestart = hostKind === 'desktop' && management?.official === true && management.installRequiresRestart === true
   const [profileBusy, setProfileBusy] = useState<string>()
-  const marketWriteReason = profileBusy ?? (management?.capabilities.update.available === false ? management.capabilities.update.reason ?? t('market.profileWriteBlocked') : undefined)
+  const [profileBusyKey, setProfileBusyKey] = useState<Operation['messageKey']>()
+  const [profileBusyParams, setProfileBusyParams] = useState<Operation['messageParams']>()
+  const translatedProfileBusy = operationMessage({ message: profileBusy, messageKey: profileBusyKey, messageParams: profileBusyParams }, t)
+  const marketWriteReason = translatedProfileBusy ?? (management?.capabilities.update.available === false ? management.capabilities.update.reason ?? t('market.profileWriteBlocked') : undefined)
   const [restartAvailable, setRestartAvailable] = useState(true)
   const [installedClientPlugins, setInstalledClientPlugins] = useState<InstalledClientPlugin[]>([])
   const [loading, setLoading] = useState(true)
@@ -1209,6 +1219,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     setManagement(state.management)
     setSelectionPlanAvailable(state.selectionPlanAvailable === true)
     setProfileBusy(state.profileBusy)
+    setProfileBusyKey(state.profileBusyKey)
+    setProfileBusyParams(state.profileBusyParams)
     setRestartAvailable(state.restartAvailable !== false)
     setOperations(current => {
       const incoming = (state.operations ?? (state.operation == null ? [] : [state.operation]))
@@ -1838,12 +1850,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   }, [marketOperation, t, waitForMarketUpdate])
 
   const actionReason = useCallback((kind: MutationKind): string | null => {
-    if (profileBusy !== undefined) return profileBusy
+    if (translatedProfileBusy !== undefined) return translatedProfileBusy
     if (marketUpdating || marketOperation !== null && !['done', 'failed', 'cancelled'].includes(marketOperation.phase)) return t('common.marketUpdatingBlocked')
     const action = kind === 'install' ? 'install' : kind === 'update' || kind === 'migrate' ? 'update' : kind === 'activate' || kind === 'pin' ? 'enable' : kind === 'uninstall' ? 'remove' : 'disable'
     const capability = management?.capabilities[action]
     return capability?.available === false ? capability.reason ?? t('market.profileWriteBlocked') : null
-  }, [management, marketOperation, marketUpdating, profileBusy, t])
+  }, [management, marketOperation, marketUpdating, translatedProfileBusy, t])
   const currentActionReason = useRef(actionReason)
   currentActionReason.current = actionReason
 
@@ -2821,7 +2833,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
               <Button className={css.homeSubmitAction} variant="outline" size="sm" icon={<UploadSimpleIcon size={15} aria-hidden="true" />} onClick={() => { setShowSubmission(true); setSubmissionCopied(false) }}>{t('market.submitSkin')}</Button>
             </div>
           </div>
-          {marketUpdate?.updateBlockedReason !== undefined && <p className={css.notice} role="status">{marketUpdate.updateBlockedReason}</p>}
+          {marketUpdate?.updateBlockedReason !== undefined && <p className={css.notice} role="status">{operationMessage({ message: marketUpdate.updateBlockedReason, messageKey: marketUpdate.updateBlockedReasonKey, messageParams: marketUpdate.updateBlockedReasonParams }, t)}</p>}
           <Input className={css.homeSearch} value={homeQuery} onChange={event => setHomeQuery(event.currentTarget.value)} icon={<IconSearchOutline />} placeholder={t('market.search')} aria-label={t('market.search')} />
           <div className={css.homeSearchPlaceholder} aria-hidden="true" />
           {discoverDocked && <DiscoverToolbar t={t} className={css.headerDiscover} headingId="discover-skins-title" label={homeQuery.trim() === '' ? t('common.discoverMore') : t('common.searchResults')} enabledCategories={enabledCategories} onToggleCategory={category => setEnabledCategories(current => {
@@ -2969,7 +2981,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           {renderCompletedUninstallBanner(undefined, selected.id)}
           {renderPendingRestartBanner(undefined, selected.id)}
           {error !== null && <div className={css.error} role="alert">{error}</div>}
-          {state.activation === 'unavailable' && state.error !== undefined && <div className={css.error} role="status">{state.error}</div>}
+          {state.activation === 'unavailable' && state.error !== undefined && <div className={css.error} role="status">{operationMessage({ message: state.error, messageKey: state.errorKey, messageParams: state.errorParams }, t)}</div>}
 
           <div className={css.galleryGroup} data-paused={galleryPaused ? 'true' : 'false'} onMouseEnter={() => setCarouselPausedState(true)} onMouseLeave={() => setCarouselPausedState(false)} onFocusCapture={() => setCarouselPausedState(true)} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setCarouselPausedState(false) }}>
             <div className={css.hero}>

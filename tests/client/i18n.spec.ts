@@ -10,7 +10,9 @@ describe('first-party message catalog', () => {
   it('renders representative English labels and formatted messages', () => {
     const t = createStaticTranslator('en')
     expect(t('common.activate')).toBe('Enable')
-    expect(t('common.pin')).toBe('Make resident')
+    expect(t('common.pin')).toBe('Pin')
+    expect(t('common.unpin')).toBe('Unpin')
+    expect(t('common.pinned')).toBe('Pinned')
     expect(t('common.currentDsh', { version: '0.1.0' })).toBe('Current DSH 0.1.0')
     expect(t('compatibility.incompatible', { version: '0.1.0', range: '^2.0.0' })).toContain('outside')
     expect(t('common.durationMinutes', { minutes: 2, seconds: 7 })).toBe('2 min 7 sec')
@@ -20,6 +22,8 @@ describe('first-party message catalog', () => {
     const t = createStaticTranslator('en')
     expect(operationMessage({ message: '正在等待其他皮肤操作完成' }, t)).toBe('Waiting for another skin operation to finish')
     expect(operationMessage({ message: '下载并检查安装包', messageKey: 'common.stepDownloadInspect' }, t)).toBe('Download and inspect the install package file')
+    expect(operationMessage({ messageKey: 'server.restartBlockedByOperations', messageParams: { count: 2 } }, t)).toContain('2 skin operation(s)')
+    expect(operationMessage({ messageKey: 'common.dshComponentDisabled' }, t)).toContain('Choose Use')
     const diagnostic = 'RAW_DIAGNOSTIC_MARKER /private/profile\nline 2'
     expect(operationMessage({ message: diagnostic }, t)).toBe(diagnostic)
   })

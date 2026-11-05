@@ -6,6 +6,7 @@ import { resolveProfileDir } from './profile.ts'
 import type { MarketHostKind } from './types.ts'
 import type { OfficialInstallProgress, OfficialManagementAdapter, OfficialManagementResult } from './official-desktop.ts'
 import { normalizeRegistryBase, registryPlanFromSnapshot, type RegistryPlanProvider } from './registry-plan.ts'
+import { MarketMessageError } from './operation-message.ts'
 
 export interface CommandResult {
   exitCode: number | null
@@ -386,22 +387,22 @@ function commandOutput(result: CommandResult): string {
 export function createPnpmProvisioner(execute: CommandExecutor = runCommand): (options?: CommandOptions) => Promise<void> {
   let ready: Promise<void> | null = null
   return async (options?: CommandOptions): Promise<void> => {
-    if (options?.signal?.aborted === true) throw new Error('操作已取消')
+    if (options?.signal?.aborted === true) throw new MarketMessageError('操作已取消', 'common.cancelled')
     if (ready !== null) return ready
     ready = (async () => {
       let env = commandEnvironment(options)
       const deadline = options?.timeoutMs === undefined ? undefined : Date.now() + commandTimeout(options, PROVISION_COMMAND_TIMEOUT_MS)
       const step = async (file: string, args: readonly string[]): Promise<CommandResult> => {
-        if (options?.signal?.aborted === true) throw new Error('操作已取消')
+        if (options?.signal?.aborted === true) throw new MarketMessageError('操作已取消', 'common.cancelled')
         const remaining = deadline === undefined ? undefined : deadline - Date.now()
-        if (remaining !== undefined && remaining <= 0) throw new Error('pnpm 准备超时，已停止；请检查工具环境后重试')
+        if (remaining !== undefined && remaining <= 0) throw new MarketMessageError('pnpm 准备超时，已停止；请检查工具环境后重试', 'failure.timeoutProblem')
         const result = await execute(file, args, {
           ...options,
           env,
           ...(remaining === undefined ? {} : { timeoutMs: Math.min(PROVISION_COMMAND_TIMEOUT_MS, remaining) }),
         })
-        if (result.aborted === true || Boolean(options?.signal?.aborted)) throw new Error('操作已取消')
-        if (result.timedOut) throw new Error('pnpm 准备超时，已停止；请检查工具环境后重试')
+        if (result.aborted === true || Boolean(options?.signal?.aborted)) throw new MarketMessageError('操作已取消', 'common.cancelled')
+        if (result.timedOut) throw new MarketMessageError('pnpm 准备超时，已停止；请检查工具环境后重试', 'failure.timeoutProblem')
         return result
       }
       const probe = (): Promise<CommandResult> => step('pnpm', ['--version'])
@@ -421,7 +422,7 @@ export function createPnpmProvisioner(execute: CommandExecutor = runCommand): (o
       const details = [commandOutput(corepack), commandOutput(npmInstall), commandOutput(prefix)]
         .filter(Boolean)
         .join('\n')
-      throw new Error(`未找到 pnpm，已尝试 Corepack 和 npm 自动安装；请先安装 Node.js/npm 后重试${details ? `\n${details}` : ''}`)
+      throw new MarketMessageError(`未找到 pnpm，已尝试 Corepack 和 npm 自动安装；请先安装 Node.js/npm 后重试${details ? `\n${details}` : ''}`, 'failure.pnpmProblem')
     })()
     try {
       await ready
