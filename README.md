@@ -1,4 +1,4 @@
-# DSH 皮肤市场 <sup><a href="./README.en.md">English</a></sup>
+# DSH 皮肤市场 <sub><a href="./README.en.md">English</a></sub>
 
 一个嵌入 DSH 设置页的社区皮肤市场：浏览、搜索、安装、使用、停用、常驻、更新和卸载 DSH 皮肤。
 
