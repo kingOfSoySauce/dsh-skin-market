@@ -35,8 +35,6 @@ compatibility:
     - web
 marketScreenshots:
   - skin-screenshots/LX-HMKK__DSH-appearance/f81df51c108d855c576c6d721128046de3af0fa3/home.png
-  - skin-screenshots/LX-HMKK__DSH-appearance/f81df51c108d855c576c6d721128046de3af0fa3/conversation.png
-  - skin-screenshots/LX-HMKK__DSH-appearance/f81df51c108d855c576c6d721128046de3af0fa3/settings.png
 screenshots:
   - https://raw.githubusercontent.com/LX-HMKK/DSH-appearance/f81df51c108d855c576c6d721128046de3af0fa3/assets/theme-preview.png
 listScreenshot: https://raw.githubusercontent.com/LX-HMKK/DSH-appearance/f81df51c108d855c576c6d721128046de3af0fa3/assets/theme-preview.png
@@ -68,6 +66,6 @@ license:
 featuredRank: 997
 starsSnapshot: 3
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:33.554Z
+metadataUpdatedAt: 2026-11-05T11:58:16.000Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:51:33.554Z
+updatedAt: 2026-11-05T11:58:16.000Z

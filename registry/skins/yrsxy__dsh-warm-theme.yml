@@ -26,8 +26,6 @@ compatibility:
     - web
 marketScreenshots:
   - skin-screenshots/yrsxy__dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/home.png
-  - skin-screenshots/yrsxy__dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/conversation.png
-  - skin-screenshots/yrsxy__dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/settings.png
 screenshots:
   - https://raw.githubusercontent.com/yrsxy/dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/assets/screenshots/warm-paper.png
   - https://raw.githubusercontent.com/yrsxy/dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/assets/screenshots/old-book.png

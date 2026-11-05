@@ -32,11 +32,11 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/assets/five-themes.png
-  - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/assets/warm-tone-compare.png
-  - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/assets/tone-variants.png
-  - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/assets/contrast-levels.png
-listScreenshot: https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/assets/five-themes.png
+  - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/085992962dc6f01383186c0e66015a2ab9d9fda9/assets/five-themes.png
+  - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/085992962dc6f01383186c0e66015a2ab9d9fda9/assets/warm-tone-compare.png
+  - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/085992962dc6f01383186c0e66015a2ab9d9fda9/assets/tone-variants.png
+  - https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/085992962dc6f01383186c0e66015a2ab9d9fda9/assets/contrast-levels.png
+listScreenshot: https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/085992962dc6f01383186c0e66015a2ab9d9fda9/assets/five-themes.png
 review:
   compatibility: unverified
   preview: verified
@@ -63,12 +63,8 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/home.png
-  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/conversation.png
-  - skin-screenshots/AaronKate__dsh-codex-appearance/6fd9cc9a339c783a36be13d9a82a98b11e813582/settings.png
 featuredRank: 1000
 releaseUpdatedAt: 2026-11-04T00:04:21.594Z
-metadataUpdatedAt: 2026-11-05T00:23:22.896Z
+metadataUpdatedAt: 2026-11-05T11:58:16.000Z
 starsUpdatedAt: 2026-10-30T03:54:07.219Z
-updatedAt: 2026-11-05T00:23:22.896Z
+updatedAt: 2026-11-05T11:58:16.000Z

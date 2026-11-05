@@ -26,8 +26,6 @@ compatibility:
     - web
 marketScreenshots:
   - skin-screenshots/v587d__dsh-custom-skin/9bbe4fa5e8685ab0b20490b1ca79cbb4f03cf297/home.png
-  - skin-screenshots/v587d__dsh-custom-skin/9bbe4fa5e8685ab0b20490b1ca79cbb4f03cf297/conversation.png
-  - skin-screenshots/v587d__dsh-custom-skin/9bbe4fa5e8685ab0b20490b1ca79cbb4f03cf297/settings.png
 screenshots:
   - https://raw.githubusercontent.com/v587d/dsh-custom-skin/9bbe4fa5e8685ab0b20490b1ca79cbb4f03cf297/assets/setting.png
 listScreenshot: https://raw.githubusercontent.com/v587d/dsh-custom-skin/9bbe4fa5e8685ab0b20490b1ca79cbb4f03cf297/assets/setting.png

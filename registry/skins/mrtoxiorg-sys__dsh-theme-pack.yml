@@ -3,7 +3,7 @@ name:
   zh: dsh-theme-pack
   en: dsh-theme-pack
 author: mrtoxiorg-sys
-description: "18 color themes for the DeepSeek Harness web GUI: light+dark palettes, WCAG-checked, picker in Settings"
+description: "19 color themes for the DeepSeek Harness web GUI: light+dark palettes, WCAG-checked, picker in Settings"
 repo: https://github.com/mrtoxiorg-sys/dsh-theme-pack
 package: "@local/dsh-theme-pack"
 rowId: mrtoxiorg-dsh-theme-pack
@@ -26,11 +26,8 @@ compatibility:
     - web
 marketScreenshots:
   - skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/home.png
-  - skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/conversation.png
-  - skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/settings.png
 screenshots:
   - https://raw.githubusercontent.com/mrtoxiorg-sys/dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/docs/preview.png
-  - https://raw.githubusercontent.com/mrtoxiorg-sys/dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/token-coverage.png
 listScreenshot: https://raw.githubusercontent.com/mrtoxiorg-sys/dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/docs/preview.png
 review:
   compatibility: verified
@@ -63,6 +60,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-03T19:20:00+08:00
-metadataUpdatedAt: 2026-11-05T00:24:03.258Z
+metadataUpdatedAt: 2026-11-05T11:58:16.000Z
 starsUpdatedAt: 2026-11-03T19:20:00+08:00
-updatedAt: 2026-11-05T00:24:03.258Z
+updatedAt: 2026-11-05T11:58:16.000Z

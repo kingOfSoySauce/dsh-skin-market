@@ -24,13 +24,9 @@ compatibility:
   dsh: 0.2.0-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/home.png
-  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/conversation.png
-  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/settings.png
 screenshots:
-  - https://raw.githubusercontent.com/xiaotuchu/dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/preview.png
-listScreenshot: https://raw.githubusercontent.com/xiaotuchu/dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/preview.png
+  - https://raw.githubusercontent.com/xiaotuchu/dsh-theme-eye-care/55bb37115c58ffbcd25624c0b283872af7a1ed00/preview.png
+listScreenshot: https://raw.githubusercontent.com/xiaotuchu/dsh-theme-eye-care/55bb37115c58ffbcd25624c0b283872af7a1ed00/preview.png
 review:
   compatibility: unverified
   preview: verified

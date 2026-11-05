@@ -26,8 +26,6 @@ compatibility:
     - web
 marketScreenshots:
   - skin-screenshots/RZ-0410__dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/home.png
-  - skin-screenshots/RZ-0410__dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/conversation.png
-  - skin-screenshots/RZ-0410__dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/settings.png
 screenshots:
   - https://raw.githubusercontent.com/RZ-0410/dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/docs/jk.jpg
   - https://raw.githubusercontent.com/RZ-0410/dsh-theme-quartet/ac9246200c8843663aa637f602888179eb2f291b/docs/tech.jpg
