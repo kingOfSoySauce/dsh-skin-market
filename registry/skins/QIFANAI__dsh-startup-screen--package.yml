@@ -26,10 +26,9 @@ compatibility:
   platform:
     - web
 screenshots:
+  - skin-screenshots/QIFANAI__dsh-startup-screen--package/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/preset-dark.gif
   - skin-screenshots/QIFANAI__dsh-startup-screen--package/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/home.gif
-  - https://raw.githubusercontent.com/QIFANAI/dsh-startup-screen/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/docs/screenshots/dark.webp
-  - https://raw.githubusercontent.com/QIFANAI/dsh-startup-screen/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/docs/screenshots/light.webp
-listScreenshot: skin-screenshots/QIFANAI__dsh-startup-screen--package/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/home.gif
+listScreenshot: skin-screenshots/QIFANAI__dsh-startup-screen--package/8499f9df21c6cb27bef8ed7bb1ba29da654fc795/preset-dark.gif
 review:
   compatibility: unverified
   preview: verified

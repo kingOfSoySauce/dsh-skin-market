@@ -34,10 +34,14 @@ marketScreenshots:
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/conversation.png
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/settings.png
 screenshots:
+  - skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/ddfa614695b4b5d5eb49dbb832134048162318c1/home.gif
+  - skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/ddfa614695b4b5d5eb49dbb832134048162318c1/preset-emerald.gif
+  - skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/ddfa614695b4b5d5eb49dbb832134048162318c1/preset-indigo.gif
+  - skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/ddfa614695b4b5d5eb49dbb832134048162318c1/preset-nous.gif
+  - skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/ddfa614695b4b5d5eb49dbb832134048162318c1/preset-sunset.gif
   - https://raw.githubusercontent.com/LAN-TINA-WS/dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/docs/screenshots/dsgirl-fashion-workshop.jpg
   - https://raw.githubusercontent.com/LAN-TINA-WS/dsh-gui-customization/9945cdb96449deafc764016a032b878299264872/docs/screenshots/gui-customization.png
-  - skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/ddfa614695b4b5d5eb49dbb832134048162318c1/home.gif
-listScreenshot: https://raw.githubusercontent.com/LAN-TINA-WS/dsh-gui-customization/11918fdb89b796b12d92c9a09e79dbf9d413df9a/docs/screenshots/dsgirl-fashion-workshop.jpg
+listScreenshot: skin-screenshots/LAN-TINA-WS__dsh-gui-customization--packages--dsh-gui-customization/ddfa614695b4b5d5eb49dbb832134048162318c1/home.gif
 review:
   compatibility: unverified
   preview: verified

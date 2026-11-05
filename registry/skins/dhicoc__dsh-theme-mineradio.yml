@@ -29,11 +29,19 @@ compatibility:
   platform:
   - web
 marketScreenshots:
-- skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.png
-- skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/conversation.png
-- skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/settings.png
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.png
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/conversation.png
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/settings.png
 screenshots:
-- skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.gif
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.gif
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/preset-compat-deepsea-balanced.gif
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/preset-compat-midnight-vivid.gif
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/preset-compat-mist-balanced.gif
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/preset-compat-rainbow-performance.gif
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/preset-compat-studio-performance.gif
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/preset-mica-deepsea-performance.gif
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/preset-mica-midnight-vivid.gif
+listScreenshot: skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.gif
 review:
   compatibility: verified
   preview: verified

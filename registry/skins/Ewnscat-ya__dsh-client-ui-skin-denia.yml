@@ -33,12 +33,13 @@ marketScreenshots:
   - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/conversation.png
   - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/settings.png
 screenshots:
+  - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/home.gif
+  - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/preset-light.gif
   - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/be39c4861376c12c94fa1c1ca25055a53e6f60f7/preview/light.webp
   - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/be39c4861376c12c94fa1c1ca25055a53e6f60f7/preview/dark.webp
   - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/1b846939864137123203f1cc8db628e1331df62a/preview/light.webp
   - https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/1b846939864137123203f1cc8db628e1331df62a/preview/dark.webp
-  - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/home.gif
-listScreenshot: https://raw.githubusercontent.com/Ewnscat-ya/dsh-client-ui-skin-denia/9d445e4823af05d67504bdf4b5bef60f74d8cf07/preview/light.webp
+listScreenshot: skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/home.gif
 review:
   compatibility: verified
   preview: verified

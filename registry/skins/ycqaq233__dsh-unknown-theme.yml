@@ -33,14 +33,15 @@ marketScreenshots:
   - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/conversation.png
   - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/settings.png
 screenshots:
+  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/preset-dark.gif
+  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/preset-light.gif
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B5%85%E8%89%B2%E4%B8%BB%E9%A1%B5.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B7%B1%E8%89%B2%E4%B8%BB%E9%A1%B5.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B5%85%E8%89%B2%E5%AF%B9%E8%AF%9D.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B7%B1%E8%89%B2%E5%AF%B9%E8%AF%9D.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/浅色主页.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/深色主页.png
-  - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/浅色对话.png
-  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/home.gif
+listScreenshot: skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/preset-dark.gif
 review:
   compatibility: verified
   preview: verified

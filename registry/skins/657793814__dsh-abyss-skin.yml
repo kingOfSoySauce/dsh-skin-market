@@ -27,14 +27,15 @@ compatibility:
   platform:
   - web
 marketScreenshots:
-- skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/home.png
-- skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/conversation.png
-- skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/settings.png
+  - skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/home.png
+  - skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/conversation.png
+  - skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/settings.png
 screenshots:
-- skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/home.gif
-- skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/home.png
-- skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/conversation.png
-- skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/settings.png
+  - skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/preset-abyss.gif
+  - skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/preset-muse.gif
+  - skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/home.gif
+  - skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/preset-vermilion.gif
+listScreenshot: skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/preset-abyss.gif
 review:
   compatibility: verified
   preview: verified

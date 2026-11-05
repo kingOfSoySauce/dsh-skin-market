@@ -27,7 +27,7 @@ compatibility:
     - web
 screenshots:
   - skin-screenshots/yannicksong0106__dsh-550c-boot/df7d202f62088897f476961ef87f408fb525b1ac/home.gif
-  - https://raw.githubusercontent.com/yannicksong0106/dsh-550c-boot/df7d202f62088897f476961ef87f408fb525b1ac/docs/preview-full.png
+  - skin-screenshots/yannicksong0106__dsh-550c-boot/df7d202f62088897f476961ef87f408fb525b1ac/preset-ueg.gif
 listScreenshot: skin-screenshots/yannicksong0106__dsh-550c-boot/df7d202f62088897f476961ef87f408fb525b1ac/home.gif
 review:
   compatibility: unverified

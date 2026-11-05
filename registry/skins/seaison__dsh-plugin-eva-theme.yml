@@ -29,11 +29,12 @@ marketScreenshots:
   - skin-screenshots/seaison__dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/conversation.png
   - skin-screenshots/seaison__dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/settings.png
 screenshots:
+  - skin-screenshots/seaison__dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/preset-asuka.gif
+  - skin-screenshots/seaison__dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/preset-rei.gif
   - https://raw.githubusercontent.com/seaison/dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/docs/screenshots/pilot-selection.png
   - https://raw.githubusercontent.com/seaison/dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/docs/screenshots/character-asuka.png
   - https://raw.githubusercontent.com/seaison/dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/docs/screenshots/character-rei.png
-  - skin-screenshots/seaison__dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/home.gif
-listScreenshot: https://raw.githubusercontent.com/seaison/dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/docs/screenshots/pilot-selection.png
+listScreenshot: skin-screenshots/seaison__dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/preset-asuka.gif
 review:
   compatibility: unverified
   preview: verified

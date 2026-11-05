@@ -31,8 +31,10 @@ marketScreenshots:
   - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/conversation.png
   - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/settings.png
 screenshots:
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/preset-eco.gif
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/preset-fancy.gif
   - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.gif
-listScreenshot: https://raw.githubusercontent.com/KylinQ01/dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/assets/bizhi.jpg
+listScreenshot: skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/preset-eco.gif
 review:
   compatibility: verified
   preview: verified

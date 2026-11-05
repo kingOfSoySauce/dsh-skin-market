@@ -41,14 +41,15 @@ marketScreenshots:
   - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/conversation.png
   - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/settings.png
 screenshots:
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/docs/settings-expressions.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/docs/settings-desktop-launch.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/docs/dock-icon.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/docs/desktop-app.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/settings-expressions.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/settings-desktop-launch.png
-  - https://raw.githubusercontent.com/Yuuhann1999/dsh-bloub-mood/51cd388950582dea45c424ca8a85ac039a27f7b1/docs/dock-icon.png
-  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/home.gif
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-attentif.gif
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-blase.gif
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-colere.gif
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-confus.gif
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-curieux.gif
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-effraye.gif
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-excite.gif
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-fier.gif
+listScreenshot: skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-attentif.gif
 review:
   compatibility: unverified
   preview: verified

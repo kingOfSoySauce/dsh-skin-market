@@ -35,9 +35,11 @@ marketScreenshots:
   - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/conversation.png
   - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/settings.png
 screenshots:
+  - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/preset-day.gif
+  - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/preset-night.gif
   - https://raw.githubusercontent.com/GGBond2424648901/deep-whale-day-night-theme/70b23c60d6a6dd4e0a67a0d1d5b1a123e6e2d12e/preview/light.webp
   - https://raw.githubusercontent.com/GGBond2424648901/deep-whale-day-night-theme/70b23c60d6a6dd4e0a67a0d1d5b1a123e6e2d12e/preview/dark.webp
-  - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/home.gif
+listScreenshot: skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/preset-day.gif
 review:
   compatibility: verified
   preview: verified
