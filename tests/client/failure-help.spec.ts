@@ -170,9 +170,9 @@ describe('failure help', () => {
 
   it('attaches the skin commit link to a packaging intercept', () => {
     const notice = interceptNotice(failed('command', `${skin.package} bundle patch is missing: ./cordis.patch.yml`), '液态玻璃', skin)
-    expect(notice.title).toBe('已拦截安装')
-    expect(notice.what).toBe('「液态玻璃」的安装包缺少必要文件。')
-    expect(notice.why).toContain('先核对安装目标与包文件')
+    expect(notice.title).toBe('安装已阻止')
+    expect(notice.what).toBe('「液态玻璃」的安装包文件缺少必要文件。')
+    expect(notice.why).toContain('请先核对安装目标与安装包文件')
     expect(`${notice.what}${notice.why}`).not.toMatch(/cordis|patch|package\.json|profile|files/)
     expect(notice.links).toEqual([{ href: `https://github.com/a/b/tree/${'a'.repeat(40)}`, label: '打开皮肤仓库' }])
   })
@@ -311,7 +311,7 @@ describe('failure help', () => {
       artifactRisk: { context: 'opaque-artifact-context', packageName: skin.package, version: '1.0.0', warnings: [raw] },
     } })
     const notice = interceptNotice(operation, '测试皮肤', skin)
-    expect(notice.what).toBe('「测试皮肤」的安装包未通过市场核验，使用后可能导致页面异常。')
+    expect(notice.what).toBe('「测试皮肤」的安装包文件未通过市场核验，使用后可能导致页面异常。')
     expect(notice.why).toBe('')
     expect(notice.links).toEqual([])
     expect(notice).not.toHaveProperty('warnings')

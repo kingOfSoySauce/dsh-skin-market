@@ -56,6 +56,7 @@ import { MARKET_INSTALL_TROUBLESHOOT_URL } from '../../src/client/failure-help.t
 import { apply as applyClient, createClientSkinRuntime, missingPrimitives, switchClientSkin } from '../../src/client/index.ts'
 import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt } from '../../src/client/submission.ts'
 import { setGeneratedMediaSources } from '../../src/media-preview.ts'
+import { createStaticTranslator } from '../../src/client/i18n.ts'
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { CatalogSkin, Operation, RuntimeSkin } from '../../src/client/types.ts'
 
@@ -211,7 +212,7 @@ describe('client market', () => {
     const dialog = await screen.findByRole('dialog', { name: '启用未完成' })
     expect(dialog.textContent).toContain('「原皮肤」被其他设置强制启用。')
     expect(dialog.textContent).not.toContain('「测试皮肤」被其他设置禁用')
-    for (const text of [file, oldSkin.rowId, 'disabled: false', '这个 DSH 目录下的其他 profile', '备份']) expect(dialog.textContent).toContain(text)
+    for (const text of [file, oldSkin.rowId, 'disabled: false', '此 DSH 目录中的其他 profile', '备份']) expect(dialog.textContent).toContain(text)
     expect(within(dialog).queryByRole('button', { name: '复制排查提示词' })).toBeNull()
     expect(fetchMock.mock.calls.filter(([, init]) => init?.method === 'POST')).toHaveLength(1)
     fireEvent.click(within(dialog).getByRole('button', { name: '解除覆盖并继续' }))
@@ -494,9 +495,9 @@ describe('client market', () => {
     expect(isInterceptFailure(operation)).toBe(true)
     expect(isInterceptFailure({ ...operation, failure: { kind: 'network', message: '网络错误', action: 'retry' } })).toBe(false)
     const notice = interceptNotice(operation, '液态玻璃', skin)
-    expect(notice.title).toBe('已拦截安装')
-    expect(notice.what).toBe('「液态玻璃」的安装包缺少必要文件。')
-    expect(notice.why).toContain('先核对安装目标与包文件')
+    expect(notice.title).toBe('安装已阻止')
+    expect(notice.what).toBe('「液态玻璃」的安装包文件缺少必要文件。')
+    expect(notice.why).toContain('请先核对安装目标与安装包文件')
     expect(notice.links).toEqual([{ href: `https://github.com/a/b/tree/${'a'.repeat(40)}`, label: '打开皮肤仓库' }])
   })
 
@@ -505,15 +506,15 @@ describe('client market', () => {
     operation.failure!.artifactRisk!.warnings.push('锁文件缺少 SRI：/Users/example/private-profile/pnpm-lock.yaml', '读取 C:\\Users\\example\\profile\\pnpm-lock.yaml 未完成')
     const notice = interceptNotice(operation, '测试皮肤', skin)
     expect(isInterceptFailure(operation)).toBe(true)
-    expect(notice.title).toBe('安装需要确认构件风险')
-    expect(notice.what).toBe('「测试皮肤」的安装包未通过市场核验，使用后可能导致页面异常。')
+    expect(notice.title).toBe('安装需要确认安装包风险')
+    expect(notice.what).toBe('「测试皮肤」的安装包文件未通过市场核验，使用后可能导致页面异常。')
     expect(notice.why).toBe('')
     expect(notice.links).toEqual([])
     expect(notice).not.toHaveProperty('warnings')
     expect(JSON.stringify(notice)).not.toContain('private-profile')
     const blocked = interceptNotice({ ...operation, failure: { kind: 'integrity', message: 'npm 未物化预期包版本或声明的可加载入口' } }, '测试皮肤', skin)
     expect(blocked.title).toBe('安装未完成')
-    expect(blocked.what).toBe('「测试皮肤」：安装包无法通过校验。')
+    expect(blocked.what).toBe('「测试皮肤」：安装包文件无法通过校验。')
     expect(blocked.why).toContain('核对安装源与缓存，不要跳过校验')
   })
 
@@ -532,9 +533,9 @@ describe('client market', () => {
     })
     vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
-    fireEvent.click((await screen.findAllByRole('button', { name: '换用 npm' }))[0]!)
-    const firstDialog = screen.getByRole('dialog', { name: '换用 npm 安装源' })
-    expect(firstDialog.textContent).toContain('测试皮肤将换用同版本 npm 安装包，保留当前启用和常驻状态。')
+    fireEvent.click((await screen.findAllByRole('button', { name: '切换到 npm 来源' }))[0]!)
+    const firstDialog = screen.getByRole('dialog', { name: '切换到 npm 来源' })
+    expect(firstDialog.textContent).toContain('“测试皮肤”将切换到同版本 npm 来源，保留当前启用和常驻状态。')
     expect(firstDialog.textContent).not.toContain(sourceMigration.currentSource)
     expect(firstDialog.querySelector('code, ul, ol, details')).toBeNull()
     expect(firstDialog.className).toContain('warningModal')
@@ -542,11 +543,11 @@ describe('client market', () => {
     fireEvent.click(within(firstDialog).getByRole('button', { name: '取消' }))
     expect(migrated).toBe(false)
 
-    fireEvent.click(screen.getAllByRole('button', { name: '换用 npm' })[0]!)
-    fireEvent.click(screen.getByRole('button', { name: '确认换用 npm' }))
+    fireEvent.click(screen.getAllByRole('button', { name: '切换到 npm 来源' })[0]!)
+    fireEvent.click(screen.getByRole('button', { name: '确认切换到 npm 来源' }))
     expect(await screen.findByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeTruthy()
-    expect(screen.queryByText('测试皮肤 已换用 npm，待重启生效')).toBeNull()
-    expect(screen.queryByRole('button', { name: '换用 npm' })).toBeNull()
+    expect(screen.queryByText('测试皮肤 已切换到 npm 来源，待重启生效')).toBeNull()
+    expect(screen.queryByRole('button', { name: '切换到 npm 来源' })).toBeNull()
     expect(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/migrate') && init?.method === 'POST')?.[1]?.body).toBe(JSON.stringify({ skinId: skin.id }))
     expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/update') && init?.method === 'POST')).toBe(false)
     expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/restart') && init?.method === 'POST')).toBe(false)
@@ -560,7 +561,7 @@ describe('client market', () => {
     } })))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
-    expect(screen.queryByRole('button', { name: '换用 npm' })).toBeNull()
+    expect(screen.queryByRole('button', { name: '切换到 npm 来源' })).toBeNull()
   })
 
   it.each(['card replacement', 'card update', 'detail update'])('confirms local replacement from the %s entry and sends the approved source context', async entry => {
@@ -773,7 +774,7 @@ describe('client market', () => {
     fireEvent.click(update)
 
     expect(await screen.findByRole('dialog', { name: '需要重启 DSH 应用皮肤市场更新' })).toBeTruthy()
-    expect(screen.getByText(/皮肤市场 0.1.16 将在重启后生效/)).toBeTruthy()
+    expect(screen.getByText(/皮肤市场已更新，重启后生效/)).toBeTruthy()
     expect(screen.getByRole('button', { name: '取消' })).toBeTruthy()
     fireEvent.click(screen.getByRole('button', { name: '取消' }))
     expect(screen.queryByText('皮肤市场已更新，待重启生效')).toBeNull()
@@ -874,6 +875,29 @@ describe('client market', () => {
     expect(operationRequests).toBeGreaterThan(0)
   })
 
+  it('renders typed operation messages and progress steps through the English translator', async () => {
+    const operation = {
+      id: 'english-operation', kind: 'install' as const, skinId: skin.id, phase: 'downloading' as const,
+      startedAt: new Date().toISOString(), message: '正在等待其他皮肤操作完成', messageKey: 'common.operationWaitingOther' as const,
+      step: '下载并检查安装包', stepKey: 'common.stepDownloadInspect' as const,
+    }
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation, runtime: dshRuntime }) }
+      throw new Error(`Unexpected request: ${url}`)
+    }))
+    render(<SkinMarketSection t={createStaticTranslator('en')} />)
+
+    await waitFor(() => expect(screen.getByRole('status').querySelector('strong')?.textContent).toBe('Downloading “Test Skin”'))
+    const banner = screen.getByRole('status')
+    const detailsButton = within(banner).getByRole('button', { name: 'Details' })
+    fireEvent.click(detailsButton)
+    expect(within(banner).getByText('Waiting for another skin operation to finish')).toBeTruthy()
+    expect(within(banner).getByText('Download and inspect the install package file')).toBeTruthy()
+    expect(banner.textContent).not.toContain('正在等待其他皮肤操作完成')
+    expect(banner.textContent).not.toContain('下载并检查安装包')
+  })
+
   it.each(['done', 'failed', 'cancelled'] as const)('refreshes host state and unlocks skin actions after a waiting market update becomes %s', async phase => {
     let terminal = false
     let operationRequests = 0
@@ -969,7 +993,7 @@ describe('client market', () => {
     vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, status: 200, json: async () => { throw new SyntaxError('Unexpected end of JSON input') } })))
     render(<SkinMarketSection t={key => key} />)
 
-    expect(await screen.findByText('皮肤市场服务未返回有效数据，请确认 Host 插件已经更新')).toBeTruthy()
+    expect(await screen.findByText('皮肤市场服务未返回有效数据，请确认 DSH 插件已经更新')).toBeTruthy()
     expect(screen.queryByText(/Unexpected end of JSON input/)).toBeNull()
   })
 
@@ -1199,10 +1223,10 @@ describe('client market', () => {
     fireEvent.click(screen.getByRole('button', { name: '查看全部已安装' }))
     expect(await screen.findByRole('button', { name: '已安装', pressed: true })).toBeTruthy()
     expect(screen.getByRole('heading', { name: '已装皮肤 5' })).toBeTruthy()
-    const sidebarCards = screen.getByRole('complementary', { name: 'catalog' }).querySelectorAll<HTMLButtonElement>('button[data-skin-id]')
+    const sidebarCards = screen.getByRole('complementary', { name: '皮肤列表' }).querySelectorAll<HTMLButtonElement>('button[data-skin-id]')
     expect([...sidebarCards].map(card => card.dataset.skinId)).toEqual(installedSkins.map(item => item.id).reverse())
     fireEvent.click(screen.getByRole('button', { name: '全部' }))
-    expect(within(screen.getByRole('complementary', { name: 'catalog' })).getByRole('group', { name: '排序方式' })).toBeTruthy()
+    expect(within(screen.getByRole('complementary', { name: '皮肤列表' })).getByRole('group', { name: '排序方式' })).toBeTruthy()
   })
 
   it('shows installed skeletons while runtime state loads and hides the section when empty', async () => {
@@ -1304,7 +1328,7 @@ describe('client market', () => {
     fireEvent.click(install)
 
     await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/install') && init?.method === 'POST')).toBe(true))
-    await waitFor(() => expect(screen.getByRole('group', { name: '测试皮肤 操作' }).textContent).toContain('使用中'))
+    await waitFor(() => expect(screen.getByRole('group', { name: '测试皮肤 操作' }).textContent).toContain('启用中'))
     await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/activate') && init?.method === 'POST')).toBe(true))
   })
 
@@ -1675,7 +1699,7 @@ describe('client market', () => {
 
     await openSkinCard(/测试皮肤 已安装卡片/)
     const detail = screen.getByRole('main', { name: '皮肤详情内容' })
-    for (const name of [activation === 'active' ? '停用' : '使用', '常驻使用', '更新', '卸载']) {
+    for (const name of [activation === 'active' ? '停用' : '使用', '设为常驻', '更新', '卸载']) {
       const button = within(detail).getByRole('button', { name })
       expect(button.hasAttribute('disabled')).toBe(true)
       expect(button.getAttribute('title')).toBe(reason)
@@ -1801,8 +1825,8 @@ describe('client market', () => {
     })
     vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
-    fireEvent.click((await screen.findAllByRole('button', { name: '换用 npm' }))[0]!)
-    fireEvent.click(screen.getByRole('button', { name: '确认换用 npm' }))
+    fireEvent.click((await screen.findAllByRole('button', { name: '切换到 npm 来源' }))[0]!)
+    fireEvent.click(screen.getByRole('button', { name: '确认切换到 npm 来源' }))
     expect(screen.queryByRole('dialog', { name: '使用前确认' })).toBeNull()
     await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/migrate') && init?.method === 'POST')).toBe(true))
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/migrate') && init?.method === 'POST')?.[1]?.body))).toEqual({ skinId: skin.id })
@@ -1890,7 +1914,7 @@ describe('client market', () => {
     expect(fetchMock.mock.calls.some(([, init]) => init?.method === 'POST')).toBe(false)
     expect(warning.textContent).toContain('皮肤或运行环境已变化，请重新确认')
     if (changed === 'runtime') expect(warning.textContent).toContain('不在作者声明的兼容范围')
-    else if (changed === 'unknown') expect(warning.textContent).toContain('尚未确认兼容性')
+    else if (changed === 'unknown') expect(warning.textContent).toContain('兼容性未确认')
     else expect(warning.textContent).toContain('版本 2.0.0')
     fireEvent.click(within(warning).getByRole('button', { name: /(?:仍然|确认)使用/ }))
     await waitFor(() => expect(fetchMock.mock.calls.filter(([url, init]) => url.endsWith('/activate') && init?.method === 'POST')).toHaveLength(1))
@@ -1950,7 +1974,7 @@ describe('client market', () => {
     expect(screen.queryByRole('button', { name: '确认重启' })).toBeNull()
     await waitFor(() => expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/install'))).toBe(true))
     expect(screen.queryByRole('dialog', { name: '使用前确认' })).toBeNull()
-    expect(screen.queryByRole('dialog', { name: '已拦截安装' })).toBeNull()
+    expect(screen.queryByRole('dialog', { name: '安装已阻止' })).toBeNull()
   })
 
   it('offers a prompt and a single executable command for manual Web installation', async () => {
@@ -2230,11 +2254,11 @@ describe('client market', () => {
     expect(await screen.findByRole('button', { name: '测试皮肤 已安装卡片' })).toBeTruthy()
     expect(screen.getByRole('button', { name: '测试皮肤 界面预览' })).toBeTruthy()
     expect(screen.getAllByRole('button', { name: '使用' })).toHaveLength(2)
-    expect(screen.getByRole('button', { name: '常驻' })).toBeTruthy()
+    expect(screen.getByRole('button', { name: '设为常驻' })).toBeTruthy()
     expect(screen.getAllByRole('button', { name: '更新' })).toHaveLength(2)
     await openSkinCard()
     const use = screen.getByRole('button', { name: '使用' })
-    const pin = screen.getByRole('button', { name: '常驻使用' })
+    const pin = screen.getByRole('button', { name: '设为常驻' })
     expect(use.getAttribute('variant')).toBe('primary')
     expect(pin.getAttribute('variant')).toBe('outline')
     expect(use.compareDocumentPosition(pin) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
@@ -2298,13 +2322,13 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
-    const pin = await screen.findByRole('button', { name: '常驻使用' })
+    const pin = await screen.findByRole('button', { name: '设为常驻' })
     expect(pin.getAttribute('title')).toContain('宠物、音效')
     fireEvent.click(pin)
     const dialog = screen.getByRole('dialog', { name: '使用前确认' })
-    expect(dialog.textContent).toContain('设置常驻后，其他皮肤仍可能继续使用。')
+    expect(dialog.textContent).toContain('设为常驻后，其他皮肤仍可同时使用。')
     expect(dialog.querySelector('ul, ol, code, a, details')).toBeNull()
-    expect(screen.getByRole('button', { name: '确认常驻使用' })).toBeTruthy()
+    expect(screen.getByRole('button', { name: '确认设为常驻' })).toBeTruthy()
   })
 
   it('shows an active cancel action for a pinned skin', async () => {
@@ -2574,7 +2598,7 @@ describe('client market', () => {
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
     const dialog = await screen.findByRole('dialog', { name: '使用前确认' })
-    expect(dialog.textContent).toContain('使用后会关闭其他未常驻的皮肤。')
+    expect(dialog.textContent).toContain('使用后会停用其他未设为常驻的皮肤。')
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/activate'))).toBe(false)
     fireEvent.click(within(dialog).getByRole('button', { name: '取消' }))
     expect(window.localStorage.getItem('dsh-skin-market:activation-warning-accepted')).toBeNull()
@@ -2678,7 +2702,7 @@ describe('client market', () => {
     expect(screen.queryByRole('button', { name: /重启/ })).toBeNull()
     fireEvent.click(screen.getByRole('button', { name: '重新使用' }))
     await waitFor(() => expect(screen.queryByText('皮肤组件已关闭，尚未生效。')).toBeNull())
-    expect(screen.getAllByText('正在使用').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('使用中').length).toBeGreaterThan(0)
     expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
   })
 
@@ -2783,7 +2807,7 @@ describe('client market', () => {
     expect(screen.queryByText(/设置已保存，请手动重启/)).toBeNull()
     expect(screen.queryByRole('button', { name: '查看重启提示' })).toBeNull()
     await openSkinCard()
-    expect(screen.getAllByText('正在使用').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('使用中').length).toBeGreaterThan(0)
     expect(screen.queryByText('待重启')).toBeNull()
     expect(screen.queryByRole('button', { name: '重启以应用' })).toBeNull()
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/restart'))).toBe(false)
@@ -2803,7 +2827,7 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
-    await waitFor(() => expect(screen.getAllByText('正在使用').length).toBeGreaterThan(0))
+    await waitFor(() => expect(screen.getAllByText('使用中').length).toBeGreaterThan(0))
     expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
     expect(screen.queryByRole('button', { name: '查看重启提示' })).toBeNull()
     expect(screen.queryByText('待重启')).toBeNull()
@@ -2874,7 +2898,7 @@ describe('client market', () => {
     await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
     await openSkinCard()
     const details = screen.getByRole('main', { name: '皮肤详情内容' })
-    expect(within(details).getByText('需要重启')).toBeTruthy()
+    expect(within(details).getByText('待重启')).toBeTruthy()
   })
 
   it('keeps the official Desktop self-update flow host-managed after the package is written', async () => {
@@ -3218,7 +3242,7 @@ describe('client market', () => {
       render(<SkinMarketSection t={key => key} clientRuntime={{ setActive: vi.fn(), probeActive: () => 'active', probeSyncing: () => false }} />)
       expect((await screen.findAllByText('使用中', { exact: true })).length).toBeGreaterThan(0)
       expect(screen.queryByRole('button', { name: '使用' })).toBeNull()
-      expect(screen.getByRole('button', { name: '常驻' })).toBeTruthy()
+      expect(screen.getByRole('button', { name: '设为常驻' })).toBeTruthy()
     })
 
     it('waits for graph settlement and clears a real delayed-client reminder in the same tab', async () => {
@@ -3293,7 +3317,7 @@ describe('client market', () => {
       render(<SkinMarketSection t={key => key} clientRuntime={{ setActive, probeActive: () => activated ? 'active' : 'disabled', probeSyncing: () => false }} />)
       await openSkinCard()
       fireEvent.click(screen.getByRole('button', { name: '使用' }))
-      await waitFor(() => expect(screen.getAllByText('正在使用', { exact: true }).length).toBeGreaterThan(0))
+      await waitFor(() => expect(screen.getAllByText('使用中', { exact: true }).length).toBeGreaterThan(0))
       expect(setActive).toHaveBeenCalledWith(skin.package, true)
       expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
     })
@@ -3370,8 +3394,8 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} clientRuntime={clientRuntime} />)
     await openSkinCard()
 
-    fireEvent.click(await screen.findByRole('button', { name: kind === 'pin' ? '常驻使用' : '使用' }))
-    if (kind === 'pin') fireEvent.click(await screen.findByRole('button', { name: '确认常驻使用' }))
+    fireEvent.click(await screen.findByRole('button', { name: kind === 'pin' ? '设为常驻' : '使用' }))
+    if (kind === 'pin') fireEvent.click(await screen.findByRole('button', { name: '确认设为常驻' }))
     const dialog = await screen.findByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })
     expect(dialog.textContent).not.toMatch(/仍可继续使用/)
     expect(dialog.textContent).not.toContain('当前 Host 尚未加载安全检查')
@@ -3428,10 +3452,10 @@ describe('client market', () => {
     vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '测试皮肤 已安装卡片' }))
-    fireEvent.click(screen.getByRole('button', { name: '常驻使用' }))
+    fireEvent.click(screen.getByRole('button', { name: '设为常驻' }))
     const dialog = await screen.findByRole('dialog', { name: '使用前确认' })
     expect(fetchMock.mock.calls.some(([, init]) => init?.method === 'POST')).toBe(false)
-    fireEvent.click(within(dialog).getByRole('button', { name: '仍然常驻使用' }))
+    fireEvent.click(within(dialog).getByRole('button', { name: '仍然设为常驻' }))
     await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/pin') && init?.method === 'POST')).toBe(true))
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/pin') && init?.method === 'POST')?.[1]?.body))).toEqual({ skinId: skin.id, acknowledgeCompatibility: true, compatibilityContext: compatibilityContext(incompatible, dshRuntime) })
   })
@@ -3474,7 +3498,7 @@ describe('client market', () => {
     const heading = await screen.findByRole('heading', { name: '发现更多' })
     const filters = screen.getByRole('group', { name: '分类' })
     expect(heading.parentElement).toBe(filters.parentElement)
-    expect(screen.queryByText('正在使用、常驻优先，其余按最近操作排序')).toBeNull()
+    expect(screen.queryByText('使用中、常驻优先，其余按最近操作排序')).toBeNull()
     expect(within(filters).getByRole('button', { name: '皮肤' }).getAttribute('aria-pressed')).toBe('true')
     expect(within(filters).getByRole('button', { name: '启动动画' }).getAttribute('aria-pressed')).toBe('true')
     expect(within(filters).getByRole('button', { name: '桌宠' }).getAttribute('aria-pressed')).toBe('false')
@@ -3578,7 +3602,7 @@ describe('client market', () => {
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
 
     await waitFor(() => expect(screen.getByRole('status').textContent).toContain('正在下载“测试皮肤”'))
-    expect(within(screen.getByRole('status')).getByTitle(/^已用时 /).textContent).toMatch(/^\d+ 秒$/)
+    expect(within(screen.getByRole('status')).getByTitle(/^耗时 /).textContent).toMatch(/^\d+ 秒$/)
     const dialog = await screen.findByRole('dialog', { name: '安装未完成' }, { timeout: 2_000 })
     expect(dialog.textContent).toContain('未能完成本次操作。请复制日志反馈。')
     expect(dialog.textContent).not.toContain('GitHub 插件下载超时')
@@ -3629,9 +3653,9 @@ describe('client market', () => {
 
       clock.mockReturnValue(now + 5000)
       await waitFor(() => expect(within(details).queryByText(/KB\/s/)).toBeNull(), { timeout: 2000 })
-      expect(within(details).queryByText(/未有输出/)).toBeNull()
+      expect(within(details).queryByText(/没有输出/)).toBeNull()
       clock.mockReturnValue(now + 30_000)
-      await waitFor(() => expect(within(details).getByText('已 30 秒未有输出')).toBeTruthy(), { timeout: 2000 })
+      await waitFor(() => expect(within(details).getByText('已有 30 秒没有输出')).toBeTruthy(), { timeout: 2000 })
       expect(banner.textContent).not.toContain('可复制日志查看')
       const copyLog = within(banner).getByRole('button', { name: '复制日志' })
       fireEvent.click(copyLog)
@@ -3693,7 +3717,7 @@ describe('client market', () => {
     fireEvent.click(within(banner).getByRole('button', { name: '详情' }))
     expect(within(banner).getByText('写入插件').closest('[hidden]')).toBeNull()
     expect(within(banner).queryByText('链接依赖')).toBeNull()
-    expect(within(banner).queryByText(/未有输出/)).toBeNull()
+    expect(within(banner).queryByText(/没有输出/)).toBeNull()
   })
 
   it.each([20, 44])('keeps a %s-second recovery concise until diagnostics are requested and leaves install controls locked', async elapsedSeconds => {
@@ -3719,15 +3743,15 @@ describe('client market', () => {
       await openSkinCard(/深海女仆工坊 界面预览/)
       const banner = screen.getByRole('status')
       expect(banner.querySelector('strong')?.textContent).toBe('正在恢复原有依赖 · 深海女仆工坊')
-      expect(within(banner).getByTitle(`已用时 ${elapsedSeconds} 秒`).textContent).toBe(`${elapsedSeconds} 秒`)
+      expect(within(banner).getByTitle(`耗时 ${elapsedSeconds} 秒`).textContent).toBe(`${elapsedSeconds} 秒`)
       expect(banner.textContent).not.toContain('正在写入插件')
       const disclosure = within(banner).getByRole('button', { name: '详情' })
       const details = document.getElementById(disclosure.getAttribute('aria-controls')!)!
       expect(details.hasAttribute('hidden')).toBe(true)
       expect(within(banner).getByText('恢复原有 profile 依赖').closest('[hidden]')).toBe(details)
       expect(within(banner).getByText('安装未完成，正在恢复原有依赖').closest('[hidden]')).toBe(details)
-      if (elapsedSeconds === 44) expect(within(details).getByText('已 39 秒未有输出').closest('[hidden]')).toBe(details)
-      else expect(within(details).queryByText(/未有输出/)).toBeNull()
+      if (elapsedSeconds === 44) expect(within(details).getByText('已有 39 秒没有输出').closest('[hidden]')).toBe(details)
+      else expect(within(details).queryByText(/没有输出/)).toBeNull()
       expect(within(banner).queryByRole('button', { name: '复制日志' })).toBeNull()
       expect(within(banner).queryByRole('button', { name: '取消' })).toBeNull()
       expect(screen.getByRole('button', { name: '安装' }).hasAttribute('disabled')).toBe(true)
@@ -3840,8 +3864,8 @@ describe('client market', () => {
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
 
-    const dialog = await screen.findByRole('dialog', { name: '已拦截安装' })
-    expect(dialog.textContent).toContain('「测试皮肤」的安装包缺少必要文件。请先核对安装目标与包文件，确认缺包后反馈作者。')
+    const dialog = await screen.findByRole('dialog', { name: '安装已阻止' })
+    expect(dialog.textContent).toContain('「测试皮肤」的安装包文件缺少必要文件。请先核对安装目标与安装包文件，确认缺包后反馈作者。')
     expect(dialog.textContent).not.toContain('cordis.patch.yml')
     expect(dialog.querySelector('details, code, ul, ol')).toBeNull()
     expect(dialog.className).toContain('warningModal')
@@ -3956,28 +3980,28 @@ describe('client market', () => {
     vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
-    fireEvent.click(screen.getByRole('button', { name: mode === 'install-and-use' ? '安装并使用' : mode === 'pin' ? '常驻使用' : '使用' }))
+    fireEvent.click(screen.getByRole('button', { name: mode === 'install-and-use' ? '安装并使用' : mode === 'pin' ? '设为常驻' : '使用' }))
     let dialog = await screen.findByRole('dialog', { name: '使用前确认' })
-    expect(dialog.textContent).toContain('安装包未通过市场核验')
+    expect(dialog.textContent).toContain('安装包文件尚未验证')
     expect(dialog.textContent).not.toContain('SRI')
     expect(dialog.querySelector('ul, ol, code, a, details')).toBeNull()
     expect(dialog.textContent).toContain('不在作者声明的兼容范围')
     if (mode === 'pin') {
-      expect(dialog.textContent).toContain('设置常驻后，其他皮肤仍可能继续使用。')
+      expect(dialog.textContent).toContain('设为常驻后，其他皮肤仍可同时使用。')
       expect(dialog.textContent).not.toContain('使用后将停用其他普通皮肤')
-    } else expect(dialog.textContent).toContain('使用后会关闭其他未常驻的皮肤。')
+    } else expect(dialog.textContent).toContain('使用后会停用其他未设为常驻的皮肤。')
     expect(dialog.textContent).not.toContain(risk.context)
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith(`/${kind}`))).toBe(false)
-    expect(screen.queryByRole('dialog', { name: '常驻使用此皮肤' })).toBeNull()
-    expect(screen.queryByRole('dialog', { name: '安装需要确认构件风险' })).toBeNull()
+    expect(screen.queryByRole('dialog', { name: '设为常驻此皮肤' })).toBeNull()
+    expect(screen.queryByRole('dialog', { name: '安装需要确认安装包风险' })).toBeNull()
     if (mode !== 'install-and-use') {
       fireEvent.click(within(dialog).getByRole('button', { name: '取消' }))
       expect(fetchMock.mock.calls.some(([url]) => url.endsWith(`/${kind}`))).toBe(false)
       expect(window.localStorage.getItem('dsh-skin-market:activation-warning-accepted')).toBeNull()
-      fireEvent.click(screen.getByRole('button', { name: mode === 'pin' ? '常驻使用' : '使用' }))
+      fireEvent.click(screen.getByRole('button', { name: mode === 'pin' ? '设为常驻' : '使用' }))
       dialog = await screen.findByRole('dialog', { name: '使用前确认' })
     }
-    const accept = within(dialog).getByRole('button', { name: mode === 'pin' ? '仍然常驻使用' : '仍然使用' })
+    const accept = within(dialog).getByRole('button', { name: mode === 'pin' ? '仍然设为常驻' : '仍然使用' })
     fireEvent.click(accept)
     fireEvent.click(accept)
     await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith(`/${kind}`))).toHaveLength(1))
@@ -4004,7 +4028,7 @@ describe('client market', () => {
     await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(requests))
     fireEvent.click(within(dialog).getByRole('button', { name: '仍然使用' }))
     expect(dialog.textContent).toContain('皮肤或运行环境已变化，请重新确认。')
-    expect(dialog.textContent).toContain('安装包未通过市场核验')
+    expect(dialog.textContent).toContain('安装包文件尚未验证')
     expect(dialog.textContent).not.toContain('SRI')
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/activate'))).toBe(false)
     fireEvent.click(within(dialog).getByRole('button', { name: '仍然使用' }))
@@ -4040,9 +4064,9 @@ describe('client market', () => {
     vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '安装并使用' }))
-    const dialog = await screen.findByRole('dialog', { name: '安装需要确认构件风险' })
+    const dialog = await screen.findByRole('dialog', { name: '安装需要确认安装包风险' })
     expect(dialog.textContent).toContain('测试皮肤（版本 1.0.0）')
-    expect(dialog.textContent).toContain('安装包未通过市场核验')
+    expect(dialog.textContent).toContain('安装包文件尚未验证')
     expect(dialog.textContent).not.toContain('SRI')
     expect(dialog.querySelector('ul, ol, code, a, details')).toBeNull()
     expect(dialog.textContent).not.toContain('actual-artifact-context')
@@ -4050,7 +4074,7 @@ describe('client market', () => {
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/retry'))).toBe(false)
     fireEvent.click(within(dialog).getByRole('button', { name: closeLabel }))
-    expect(screen.queryByRole('dialog', { name: '安装需要确认构件风险' })).toBeNull()
+    expect(screen.queryByRole('dialog', { name: '安装需要确认安装包风险' })).toBeNull()
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/retry') || url.endsWith('/activate'))).toBe(false)
   })
 
@@ -4084,7 +4108,7 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '安装并使用' }))
-    const dialog = await screen.findByRole('dialog', { name: '安装需要确认构件风险' })
+    const dialog = await screen.findByRole('dialog', { name: '安装需要确认安装包风险' })
     expect(retryRequests).toBe(0)
     const approval = within(dialog).getByRole('button', { name: '仍然继续' })
     fireEvent.click(approval)
@@ -4093,10 +4117,10 @@ describe('client market', () => {
     expect(within(dialog).getByRole('button', { name: '处理中…' }).hasAttribute('disabled')).toBe(true)
     expect(within(dialog).getByRole('button', { name: '取消' }).hasAttribute('disabled')).toBe(true)
     fireEvent.click(within(dialog).getByRole('button', { name: '关闭' }))
-    expect(screen.getByRole('dialog', { name: '安装需要确认构件风险' })).toBeTruthy()
+    expect(screen.getByRole('dialog', { name: '安装需要确认安装包风险' })).toBeTruthy()
     await act(async () => { finishRetry() })
     await waitFor(() => expect(activateRequests).toBe(1))
-    expect(screen.queryByRole('dialog', { name: '安装需要确认构件风险' })).toBeNull()
+    expect(screen.queryByRole('dialog', { name: '安装需要确认安装包风险' })).toBeNull()
     expect(screen.queryByRole('dialog', { name: '使用前确认' })).toBeNull()
   })
 
@@ -4116,15 +4140,15 @@ describe('client market', () => {
     }))
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '安装并使用' }))
-    const dialog = await screen.findByRole('dialog', { name: '安装需要确认构件风险' })
+    const dialog = await screen.findByRole('dialog', { name: '安装需要确认安装包风险' })
     fireEvent.click(within(dialog).getByRole('button', { name: '仍然继续' }))
     await waitFor(() => expect(within(dialog).getByRole('alert').textContent).toBe('未能继续操作，请复制日志反馈。'))
     expect(dialog.textContent).not.toContain('实际构件已变化')
     expect(retries).toBe(1)
-    expect(screen.getByRole('dialog', { name: '安装需要确认构件风险' })).toBe(dialog)
+    expect(screen.getByRole('dialog', { name: '安装需要确认安装包风险' })).toBe(dialog)
     expect(within(dialog).getByRole('button', { name: '仍然继续' }).hasAttribute('disabled')).toBe(false)
     fireEvent.click(within(dialog).getByRole('button', { name: '取消' }))
-    expect(screen.queryByRole('dialog', { name: '安装需要确认构件风险' })).toBeNull()
+    expect(screen.queryByRole('dialog', { name: '安装需要确认安装包风险' })).toBeNull()
   })
 
   it('lets users decline a release-age exception without silently retrying', async () => {
@@ -4160,15 +4184,15 @@ describe('client market', () => {
     vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
-    const actionLabel = { install: '仅安装', update: '更新', activate: '使用', pin: '常驻使用' }[kind]
+    const actionLabel = { install: '仅安装', update: '更新', activate: '使用', pin: '设为常驻' }[kind]
     fireEvent.click(screen.getByRole('button', { name: actionLabel }))
     if (kind === 'activate' || kind === 'pin') {
       const confirmation = await screen.findByRole('dialog', { name: '使用前确认' })
       expect(confirmation.textContent).toContain('不在作者声明的兼容范围')
       expect(fetchMock.mock.calls.some(([url]) => url.endsWith(`/${kind}`))).toBe(false)
-      fireEvent.click(within(confirmation).getByRole('button', { name: kind === 'pin' ? '仍然常驻使用' : '仍然使用' }))
+      fireEvent.click(within(confirmation).getByRole('button', { name: kind === 'pin' ? '仍然设为常驻' : '仍然使用' }))
     }
-    const title = { install: '安装未完成', update: '更新未完成', activate: '启用未完成', pin: '设置常驻未完成' }[kind]
+    const title = { install: '安装未完成', update: '更新未完成', activate: '启用未完成', pin: '设为常驻未完成' }[kind]
     const dialog = await screen.findByRole('dialog', { name: title })
     expect(dialog.textContent).toContain('未通过当前 DSH 的兼容检查')
     expect(within(dialog).getByRole('button', { name: '知道了' })).toBeTruthy()
@@ -4421,7 +4445,7 @@ describe('client market', () => {
     expect(screen.queryByRole('button', { name: '确认重启' })).toBeNull()
     await waitFor(() => expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/install'))).toBe(true))
     expect(screen.queryByRole('dialog', { name: '使用前确认' })).toBeNull()
-    expect(screen.queryByRole('dialog', { name: '已拦截安装' })).toBeNull()
+    expect(screen.queryByRole('dialog', { name: '安装已阻止' })).toBeNull()
     expect(screen.getByText('该仓库暂无可识别的皮肤截图，市场使用本地占位卡，不会加载 GitHub 仓库图片。')).toBeTruthy()
     expect(screen.getAllByRole('img', { name: '测试皮肤 暂无界面截图' }).length).toBeGreaterThanOrEqual(2)
     expect(document.querySelector(`img[src="${unverified.screenshots[0]}"]`)).toBeNull()
@@ -4752,7 +4776,7 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
-    fireEvent.click(await screen.findByTitle('打开手动安装面板'))
+    fireEvent.click(await screen.findByTitle('该皮肤需要在桌面应用的官方插件面板确认安装。'))
     expect(screen.getByRole('dialog', { name: '安装 测试皮肤' })).toBeTruthy()
     expect(screen.queryByRole('button', { name: '打开安装页面' })).toBeNull()
     expect(open).not.toHaveBeenCalled()
@@ -4772,7 +4796,7 @@ describe('client market', () => {
 
     expect(await screen.findByRole('heading', { name: '仓库健康' })).toBeTruthy()
     expect(screen.getByText('README 截图').nextSibling?.textContent).toBe('符合要求')
-    expect(screen.getByText('兼容版本').nextSibling?.textContent).toBe('建议完善')
+    expect(screen.getByText('兼容范围').nextSibling?.textContent).toBe('建议完善')
     expect(screen.getByText('建议声明支持的 DSH Web 版本范围。')).toBeTruthy()
   })
 

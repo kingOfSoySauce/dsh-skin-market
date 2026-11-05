@@ -71,6 +71,7 @@ import {
   type LoaderIdentity,
   type InstalledArtifactSnapshot,
 } from './profile.ts'
+import { writeOperationMessage, writeOperationStep, type OperationMessageKey, type OperationMessageParams } from './operation-message.ts'
 import type { DesktopInstallCapability, DshRuntime, InstallConflict, LoaderEntry, MarketHostKind, Operation, OperationFailure, OperationKind, OperationRetryAction, PersistedMarketState, SelectionOperationKind, SkinArtifactRisk, SkinEntry, SkinRuntimeState } from './types.ts'
 
 export interface LifecycleHost {
@@ -152,12 +153,18 @@ class ArtifactRiskError extends Error {
   constructor(readonly risk: SkinArtifactRisk) { super(risk.warnings.join('；')) }
 }
 
-function recoveryMessage(failure: PnpmFailure): string {
-  if (failure.recovery === 'disable-peer-autoinstall') return '检测到宿主提供但 npm 未发布的 peer，正在关闭 peer 自动安装并重试'
-  if (failure.kind === 'release-age') return '检测到新包保护，正在临时放宽本次命令并重试'
-  if (failure.kind === 'fetch-timeout') return '当前步骤超时，正在剩余安装时间内重试一次'
-  if (failure.kind === 'network') return '检测到临时网络错误，正在自动重试'
-  return failure.message
+interface OperationMessageValue {
+  message: string
+  key?: OperationMessageKey
+  params?: OperationMessageParams
+}
+
+function recoveryMessage(failure: PnpmFailure): OperationMessageValue {
+  if (failure.recovery === 'disable-peer-autoinstall') return { message: '检测到宿主提供但 npm 未发布的 peer，正在关闭 peer 自动安装并重试', key: 'common.recoveryPeerAutoinstall' }
+  if (failure.kind === 'release-age') return { message: '检测到新包保护，正在临时放宽本次命令并重试', key: 'common.recoveryReleaseAge' }
+  if (failure.kind === 'fetch-timeout') return { message: '当前步骤超时，正在剩余安装时间内重试一次', key: 'common.recoveryTimeout' }
+  if (failure.kind === 'network') return { message: '检测到临时网络错误，正在自动重试', key: 'common.recoveryNetwork' }
+  return { message: failure.message }
 }
 
 interface ProfileInstallSnapshot {
@@ -628,7 +635,7 @@ export class SkinLifecycle {
       // state; it does not require pretending the old build was restored.
       if (repaired.length > 0 && (repairedRefusal || baseline !== undefined && managedArtifactUnchanged(this.options.profileDir, baseline))) {
         this.checkDeadline(operation)
-        if (operation !== undefined) operation.message = '已修复版本放行规则，正在重试'
+        if (operation !== undefined) writeOperationMessage(operation, '已修复版本放行规则，正在重试', 'common.recoveryReleaseAgeRepair')
         return await attempt()
       }
     }
@@ -661,7 +668,7 @@ export class SkinLifecycle {
       if (result.exitCode === 0 && !result.timedOut && result.aborted !== true
         && result.management?.application !== 'failed') return result
       if (index + 1 >= plan.length || !this.shouldTryNextRegistry(result)) return result
-      this.update(operation, operation.phase, `当前安装源失败，正在尝试备用安装源（${index + 2}/${plan.length}）`)
+      this.update(operation, operation.phase, `当前安装源失败，正在尝试备用安装源（${index + 2}/${plan.length}）`, 'common.operationFallbackRegistry', { current: index + 2, total: plan.length })
     }
     return result!
   }
@@ -722,7 +729,7 @@ export class SkinLifecycle {
     } finally {
       clearTimeout(timer)
       this.pendingLifecycle.delete(promise)
-      if (delayed && operation?.phase === 'waiting' && !this.unresolvedManager && !this.disposed) this.update(operation, 'activating', '宿主启停已结束，正在核对结果')
+      if (delayed && operation?.phase === 'waiting' && !this.unresolvedManager && !this.disposed) this.update(operation, 'activating', '宿主启停已结束，正在核对结果', 'common.operationHostApplied')
     }
   }
 
@@ -1027,7 +1034,7 @@ export class SkinLifecycle {
   }
 
   private async repairMaterializedPackage(skin: SkinEntry, operation: Operation): Promise<void> {
-    this.update(operation, 'installing', `正在修复已记录但未物化的皮肤依赖：${skin.package}`)
+    this.update(operation, 'installing', `正在修复已记录但未物化的皮肤依赖：${skin.package}`, 'common.operationRepairingRecordedDependency', { package: skin.package })
     await this.run(['install'], operation)
   }
 
@@ -1595,7 +1602,7 @@ export class SkinLifecycle {
       const timer = setTimeout(() => {
         this.expired.add(operation.id)
         operation.cancelable = false
-        operation.message = '已达到安装总时限，正在结束当前步骤'
+        writeOperationMessage(operation, '已达到安装总时限，正在结束当前步骤', 'common.operationTimeoutEnding')
         this.abortControllers.get(operation.id)?.abort()
       }, timeoutMs)
       timer.unref?.()
@@ -1649,9 +1656,9 @@ export class SkinLifecycle {
     return this.begin(failed.kind, failed.skinId, approvedBuildKeys, acknowledgeCompatibility, acknowledgedContext, releaseAgeApproval, artifactContext, configurationRepair, undefined, this.sourceMigrationContexts.get(id)?.context, failed.preservedSkinIds, failed.preservedSkinApprovals, failed.selectionContext)
   }
 
-  private update(operation: Operation, phase: Operation['phase'], message?: string): void {
+  private update(operation: Operation, phase: Operation['phase'], message?: string, messageKey?: OperationMessageKey, messageParams?: OperationMessageParams): void {
     operation.phase = phase
-    operation.message = message
+    writeOperationMessage(operation, message, messageKey, messageParams)
     operation.cancelable = (operation.kind === 'install' || operation.kind === 'update' || operation.kind === 'migrate')
       && (phase === 'queued' || phase === 'resolving' || phase === 'downloading')
       && this.management?.capabilities().cancel.available !== false
@@ -1663,7 +1670,7 @@ export class SkinLifecycle {
     if (operation === undefined) throw new Error('operation not found')
     if (operation.phase === 'done' || operation.phase === 'failed' || operation.phase === 'cancelled') return operation
     if (operation.cancelable !== true) throw new Error('当前阶段无法安全取消，请等待操作完成')
-    this.update(operation, 'cancelling', '正在取消并清理临时文件')
+    this.update(operation, 'cancelling', '正在取消并清理临时文件', 'common.operationCancelCleanup')
     this.abortControllers.get(id)?.abort()
     return operation
   }
@@ -1681,7 +1688,9 @@ export class SkinLifecycle {
       if (this.waitingReason !== undefined) throw new Error(this.waitingReason)
       this.checkDeadline(operation)
       if (operation.phase === 'queued' || operation.phase === 'resolving' || operation.phase === 'downloading') {
-        operation.message = operation.phase === 'queued' ? '正在等待其他皮肤操作完成' : '下载完成，正在等待写入'
+        writeOperationMessage(operation,
+          operation.phase === 'queued' ? '正在等待其他皮肤操作完成' : '下载完成，正在等待写入',
+          operation.phase === 'queued' ? 'common.operationWaitingOther' : 'common.operationWaitingWrite')
       }
       this.profileLockOwner = operation.id
       this.profileOperation = operation
@@ -1780,7 +1789,7 @@ export class SkinLifecycle {
   private async withDownloadSlot<T>(operation: Operation, fn: () => Promise<T>): Promise<T> {
     this.checkDeadline(operation)
     if (this.downloadAvailable === 0) {
-      this.update(operation, 'queued', '正在等待下载名额')
+      this.update(operation, 'queued', '正在等待下载名额', 'common.operationWaitingDownloadSlot')
       await new Promise<void>((resolve, reject) => {
         const controller = this.abortControllers.get(operation.id)
         const waiter = (): void => {
@@ -1818,10 +1827,10 @@ export class SkinLifecycle {
       else if (operation.kind === 'unpin') await this.unpin(operation)
       else if (operation.kind === 'update' || operation.kind === 'migrate') await this.updateSkin(operation)
       else await this.uninstall(operation)
-      this.update(operation, 'done', operation.message)
+      this.update(operation, 'done', operation.message, operation.messageKey, operation.messageParams)
     } catch (error) {
       if (this.disposed) {
-        if (this.abortControllers.get(operation.id)?.signal.aborted && operation.application === undefined && this.management === undefined) this.update(operation, 'cancelled', '宿主已停止，操作已结束')
+        if (this.abortControllers.get(operation.id)?.signal.aborted && operation.application === undefined && this.management === undefined) this.update(operation, 'cancelled', '宿主已停止，操作已结束', 'common.operationHostStopped')
         return
       }
       if (this.unresolvedManager) {
@@ -1849,7 +1858,7 @@ export class SkinLifecycle {
         operation.failure = { kind: 'command', message, ...(this.recoveryErrors.has(operation.id) ? {} : { action: 'retry' as const }) }
         logEvent('error', 'operation-timeout', message, operation.id)
         this.update(operation, 'failed', message)
-      } else if ((operation.application === 'cancelled' || operation.application === undefined && this.abortControllers.get(operation.id)?.signal.aborted === true) && !this.recoveryErrors.has(operation.id)) this.update(operation, 'cancelled', '操作已取消')
+      } else if ((operation.application === 'cancelled' || operation.application === undefined && this.abortControllers.get(operation.id)?.signal.aborted === true) && !this.recoveryErrors.has(operation.id)) this.update(operation, 'cancelled', '操作已取消', 'common.cancelled')
       else {
         if (error instanceof PnpmCommandError) {
           const failure = error.failure
@@ -1983,7 +1992,10 @@ export class SkinLifecycle {
           return result
         },
         onRetry: failure => {
-          if (operation !== undefined) this.update(operation, operation.phase, recoveryMessage(failure))
+          if (operation !== undefined) {
+            const next = recoveryMessage(failure)
+            this.update(operation, operation.phase, next.message, next.key, next.params)
+          }
         },
       })
     } catch (error) {
@@ -2014,7 +2026,9 @@ export class SkinLifecycle {
     const temporary = directoryIndex >= 0 && args[directoryIndex + 1] !== this.options.profileDir
     const verb = args.find(arg => arg === 'add' || arg === 'install' || arg === 'remove')
     if (tracksMutation && !temporary && verb !== undefined) this.profileMutations.set(operation.id, (this.profileMutations.get(operation.id) ?? 0) + 1)
-    operation.step = temporary ? '下载并检查安装包' : verb === 'remove' ? '移除插件依赖' : verb === 'install' ? '同步 profile 依赖' : '安装到 profile'
+    const step = temporary ? '下载并检查安装包' : verb === 'remove' ? '移除插件依赖' : verb === 'install' ? '同步 profile 依赖' : '安装到 profile'
+    const stepKey: OperationMessageKey = temporary ? 'common.stepDownloadInspect' : verb === 'remove' ? 'common.stepRemoveDependency' : verb === 'install' ? 'common.stepSyncProfile' : 'common.stepInstallProfile'
+    writeOperationStep(operation, step, stepKey)
     operation.attempt = attempt
     operation.stepStartedAt = new Date().toISOString()
     delete operation.lastOutputAt
@@ -2058,7 +2072,7 @@ export class SkinLifecycle {
     if (!restore()) return
     if ((this.profileMutations.get(operation.id) ?? 0) <= mutationsBefore) return
     this.update(operation, 'installing', '安装未完成，正在恢复原有依赖')
-    operation.step = '恢复原有 profile 依赖'
+    writeOperationStep(operation, '恢复原有 profile 依赖', 'common.stepRestoreProfile')
     operation.attempt = 1
     operation.stepStartedAt = new Date().toISOString()
     delete operation.lastOutputAt
@@ -2227,7 +2241,10 @@ export class SkinLifecycle {
           onStderr: chunk => tracker.push(chunk, operation),
           })
         },
-        onRetry: failure => this.update(operation, operation.phase, recoveryMessage(failure)),
+        onRetry: failure => {
+          const next = recoveryMessage(failure)
+          this.update(operation, operation.phase, next.message, next.key, next.params)
+        },
       })
       this.desktopRecoveryBaselines.set(operation.id, {
         snapshot: snapshotInstallFiles(this.options.profileDir, skin.package, skin.install.version),
@@ -2504,9 +2521,11 @@ export class SkinLifecycle {
         this.reconcileDisabledSkinIds(state)
         this.recordRestart(state, skin.id, operation.restartRequired === true)
         writeMarketState(this.options.profileDir, state)
-        operation.message = operation.restartRequired
-          ? this.hostKind === 'desktop' ? '安装构件已修复；请手动重启 Desktop App 完成应用' : '安装构件已修复；请重启 DSH 完成应用'
-          : 'skin was already installed; market state reconciled'
+        if (operation.restartRequired) {
+          writeOperationMessage(operation,
+            this.hostKind === 'desktop' ? '安装构件已修复；请手动重启 Desktop App 完成应用' : '安装构件已修复；请重启 DSH 完成应用',
+            this.hostKind === 'desktop' ? 'common.operationInstallPackageRepairedDesktop' : 'common.operationInstallPackageRepairedDsh')
+        } else writeOperationMessage(operation, 'skin was already installed; market state reconciled', 'common.operationInstallReconciled')
         return
       } catch (error) {
         await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
@@ -2546,9 +2565,11 @@ export class SkinLifecycle {
         inferredRestart ? installedArtifactHash(this.options.profileDir, skin.package) : undefined)
       writeMarketState(this.options.profileDir, state)
       cleanupCompatibilityPatchFiles(detachedPatchFiles.filter(file => file !== compatibilityPatchFile(this.options.profileDir, skin.package, skin.install.version)))
-      operation.message = operation.restartRequired
-        ? this.hostKind === 'desktop' ? '安装构件已验证；请手动重启 Desktop App 完成应用' : '安装构件已验证；请重启 DSH 完成应用'
-        : 'installed; choose Use to activate'
+      if (operation.restartRequired) {
+        writeOperationMessage(operation,
+          this.hostKind === 'desktop' ? '安装构件已验证；请手动重启 Desktop App 完成应用' : '安装构件已验证；请重启 DSH 完成应用',
+          this.hostKind === 'desktop' ? 'common.operationInstallPackageVerifiedDesktop' : 'common.operationInstallPackageVerifiedDsh')
+      } else writeOperationMessage(operation, 'installed; choose Use to activate', 'common.operationInstallReady')
     } catch (error) {
       await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
       throw error
@@ -2653,7 +2674,7 @@ export class SkinLifecycle {
     operation.restartRequired = true
     this.recordRestart(next, skin.id, true)
     writeMarketState(this.options.profileDir, next)
-    operation.message = `启停选择已保存，目标当前未加载；请手动重启 Desktop App\n${diagnostic}`
+    writeOperationMessage(operation, `启停选择已保存，目标当前未加载；请手动重启 Desktop App\n${diagnostic}`, 'common.operationSelectionSavedRestartDesktop', { diagnostic })
     logEvent('warn', 'selection-saved-restart-required', diagnostic, operation.id)
     return true
   }
@@ -2723,11 +2744,9 @@ export class SkinLifecycle {
         await this.inspectRuntimeStates(true)
         operation.restartRequired = readMarketState(this.options.profileDir).pendingRestart?.skinIds.includes(skin.id) === true
       }
-      if (operation.restartRequired === true) {
-        operation.message = 'activation saved; restart DSH to load this skin'
-      } else {
-        operation.message = active?.found && active.live ? 'skin is active' : '启用设置已保存，但皮肤组件尚未运行；请在官方插件页检查加载状态'
-      }
+      if (operation.restartRequired === true) writeOperationMessage(operation, 'activation saved; restart DSH to load this skin', 'common.operationActivationSavedRestart')
+      else if (active?.found && active.live) writeOperationMessage(operation, 'skin is active', 'common.operationActive')
+      else writeOperationMessage(operation, '启用设置已保存，但皮肤组件尚未运行；请在官方插件页检查加载状态', 'common.operationActivationNotRunning')
     } catch (error) {
       if (await this.retainSavedOfficialSelection(error, operation, previous, next, skin)) return
       await this.rollbackSelection(previous, selection)
@@ -2750,7 +2769,7 @@ export class SkinLifecycle {
       this.releaseManagedLoaders(state, skin.id)
       this.reconcileDisabledSkinIds(state)
       writeMarketState(this.options.profileDir, state)
-      operation.message = '市场记录已清理；检测到同名但不同来源的外部插件，未修改该插件'
+      writeOperationMessage(operation, '市场记录已清理；检测到同名但不同来源的外部插件，未修改该插件', 'common.operationExternalReconciled')
       return
     }
     this.update(operation, 'activating')
@@ -2769,9 +2788,9 @@ export class SkinLifecycle {
       await this.syncManagedLoaders(state, true)
       this.recordSelectionRestart(previous, state, skin, operation)
       writeMarketState(this.options.profileDir, state)
-      operation.message = operation.restartRequired === true
-        ? 'skin disabled; restart DSH to apply the change'
-        : this.enabledSkinIds(state).size === 0 ? 'DSH default appearance restored; package kept installed' : 'skin disabled; other enabled skins were kept active'
+      if (operation.restartRequired === true) writeOperationMessage(operation, 'skin disabled; restart DSH to apply the change', 'common.operationDisabledRestart')
+      else if (this.enabledSkinIds(state).size === 0) writeOperationMessage(operation, 'DSH default appearance restored; package kept installed', 'common.operationDefaultAppearanceRestored')
+      else writeOperationMessage(operation, 'skin disabled; other enabled skins were kept active', 'common.operationDisabledKept')
     } catch (error) {
       await this.rollbackSelection(previous, selection)
       throw error
@@ -2809,11 +2828,9 @@ export class SkinLifecycle {
         await this.inspectRuntimeStates(true)
         operation.restartRequired = readMarketState(this.options.profileDir).pendingRestart?.skinIds.includes(skin.id) === true
       }
-      if (operation.restartRequired === true) {
-        operation.message = 'pin saved; restart DSH to load this skin'
-      } else {
-        operation.message = active.found && active.live ? 'skin is pinned and active' : '常驻设置已保存，但皮肤组件尚未运行；请在官方插件页检查状态'
-      }
+      if (operation.restartRequired === true) writeOperationMessage(operation, 'pin saved; restart DSH to load this skin', 'common.operationPinSavedRestart')
+      else if (active.found && active.live) writeOperationMessage(operation, 'skin is pinned and active', 'common.operationPinnedActive')
+      else writeOperationMessage(operation, '常驻设置已保存，但皮肤组件尚未运行；请在官方插件页检查状态', 'common.operationPinNotRunning')
     } catch (error) {
       if (await this.retainSavedOfficialSelection(error, operation, previous, next, skin)) return
       await this.rollbackSelection(previous, selection)
@@ -2844,9 +2861,9 @@ export class SkinLifecycle {
       await this.syncManagedLoaders(next, true)
       this.recordSelectionRestart(previous, next, skin, operation)
       writeMarketState(this.options.profileDir, next)
-      operation.message = operation.restartRequired === true
-        ? 'skin is no longer pinned; restart DSH to apply the change'
-        : next.activeSkinId === skin.id ? 'skin is no longer pinned and remains the current skin' : 'skin is no longer pinned and was disabled'
+      if (operation.restartRequired === true) writeOperationMessage(operation, 'skin is no longer pinned; restart DSH to apply the change', 'common.operationUnpinRestart')
+      else if (next.activeSkinId === skin.id) writeOperationMessage(operation, 'skin is no longer pinned and remains the current skin', 'common.operationUnpinCurrent')
+      else writeOperationMessage(operation, 'skin is no longer pinned and was disabled', 'common.operationUnpinDisabled')
     } catch (error) {
       await this.rollbackSelection(previous, selection)
       throw error
@@ -2940,9 +2957,13 @@ export class SkinLifecycle {
         writeMarketState(this.options.profileDir, nextState)
         cleanupCompatibilityPatchFiles(detachedPatchFiles.filter(file => file !== compatibilityPatchFile(this.options.profileDir, skin.package, skin.install.version)))
         const migrationLabel = sourceContext === undefined ? '已换用 npm' : '已替换为市场版本'
-        operation.message = needsUseConfirmation ? '安装构件已更新；使用或常驻前请确认当前版本提示' : operation.kind === 'migrate'
-          ? wasActive ? `${migrationLabel}并保留启用状态；重启 DSH 后生效` : `${migrationLabel}并保留停用状态`
-          : operation.restartRequired ? '更新已验证，原启停状态已保留；重启宿主后加载新版本' : wasActive ? 'updated and kept active' : 'updated and kept inactive'
+        if (needsUseConfirmation) writeOperationMessage(operation, '安装构件已更新；使用或常驻前请确认当前版本提示', 'common.operationNeedsUseConfirmation')
+        else if (operation.kind === 'migrate') {
+          if (wasActive) writeOperationMessage(operation, `${migrationLabel}并保留启用状态；重启 DSH 后生效`, sourceContext === undefined ? 'common.operationNpmMigrationActiveRestart' : 'common.operationMarketMigrationActiveRestart')
+          else writeOperationMessage(operation, `${migrationLabel}并保留停用状态`, sourceContext === undefined ? 'common.operationNpmMigrationInactive' : 'common.operationMarketMigrationInactive')
+        } else if (operation.restartRequired) writeOperationMessage(operation, '更新已验证，原启停状态已保留；重启宿主后加载新版本', 'common.operationUpdateVerifiedRestart')
+        else if (wasActive) writeOperationMessage(operation, 'updated and kept active', 'common.operationUpdatedActive')
+        else writeOperationMessage(operation, 'updated and kept inactive', 'common.operationUpdatedInactive')
       } catch (error) {
         // Before our add starts, a new source belongs to another writer. Do
         // not restore the old manifest over that newer choice.
@@ -3005,7 +3026,7 @@ export class SkinLifecycle {
       await this.syncManagedLoaders(next, false)
       writeMarketState(this.options.profileDir, next)
       cleanupCompatibilityPatchFiles(detachedPatchFiles)
-      operation.message = 'skin uninstalled'
+      writeOperationMessage(operation, 'skin uninstalled', 'common.operationUninstalled')
     } catch (error) {
       await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
       throw error

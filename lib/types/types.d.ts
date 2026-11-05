@@ -1,4 +1,5 @@
 export type MarketHostKind = 'dsh' | 'desktop';
+import type { OperationMessageFields, OperationStepFields } from './operation-message.ts';
 export type DesktopInstallCapability = {
     mode: 'managed';
     registry: 'npm';
@@ -214,7 +215,7 @@ export interface SkinArtifactRisk {
     version: string;
     warnings: string[];
 }
-export interface OperationFailure {
+export interface OperationFailure extends OperationMessageFields {
     kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'compatibility' | 'conflict' | 'command' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'pnpm-missing' | 'no-matching-version' | 'disk-full' | 'permission' | 'integrity' | 'configuration-override';
     message: string;
     code?: string;
@@ -234,7 +235,7 @@ export interface OperationFailure {
     action?: OperationRetryAction;
     conflicts?: InstallConflict[];
 }
-export interface Operation {
+export interface Operation extends OperationMessageFields, OperationStepFields {
     id: string;
     kind: OperationKind;
     skinId: string;

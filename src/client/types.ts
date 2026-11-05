@@ -1,6 +1,7 @@
 export type MarketHostKind = 'dsh' | 'desktop'
 
 import type { ConfigurationOverridePlan } from '../configuration-override-types.ts'
+import type { OperationMessageFields, OperationStepFields } from '../operation-message.ts'
 export type { ConfigurationOverridePlan } from '../configuration-override-types.ts'
 
 export interface DshRuntime {
@@ -147,6 +148,8 @@ export interface Operation {
   selectionContext?: string
   phase: 'queued' | 'resolving' | 'downloading' | 'installing' | 'validating' | 'activating' | 'waiting' | 'cancelling' | 'cancelled' | 'done' | 'failed'
   message?: string
+  messageKey?: OperationMessageFields['messageKey']
+  messageParams?: OperationMessageFields['messageParams']
   cancelable?: boolean
   application?: 'applied' | 'restart-required' | 'overridden' | 'failed' | 'cancelled'
   restartRequired?: boolean
@@ -154,6 +157,8 @@ export interface Operation {
   totalBytes?: number
   bytesPerSecond?: number
   step?: string
+  stepKey?: OperationStepFields['stepKey']
+  stepParams?: OperationStepFields['stepParams']
   stepStartedAt?: string
   attempt?: number
   lastOutputAt?: string
@@ -161,6 +166,8 @@ export interface Operation {
   failure?: {
     kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'compatibility' | 'conflict' | 'command' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'pnpm-missing' | 'no-matching-version' | 'disk-full' | 'permission' | 'integrity' | 'configuration-override'
     message: string
+    messageKey?: OperationMessageFields['messageKey']
+    messageParams?: OperationMessageFields['messageParams']
     code?: string
     desiredEnabled?: boolean
     targetSkinId?: string

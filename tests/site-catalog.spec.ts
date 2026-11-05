@@ -17,8 +17,11 @@ describe('live site catalog', () => {
   })
 
   it('rejects failed or malformed catalog responses', async () => {
-    await expect(fetchLiveCatalog('/catalog.json', async () => ({ ok: false, status: 503, json: async () => ({}) }))).rejects.toThrow('HTTP 503')
-    await expect(fetchLiveCatalog('/catalog.json', async () => ({ ok: true, status: 200, json: async () => ({ schemaVersion: 2, skins: [] }) }))).rejects.toThrow('目录版本不受支持')
+    await expect(fetchLiveCatalog('/catalog.json', async () => ({ ok: false, status: 503, json: async () => ({}) }))).rejects.toMatchObject({ code: 'request', status: 503 })
+    await expect(fetchLiveCatalog('/catalog.json', async () => ({ ok: true, status: 200, json: async () => ({ schemaVersion: 2, skins: [] }) }))).rejects.toMatchObject({ code: 'unsupportedVersion' })
+    await expect(fetchLiveCatalog('/catalog.json', async () => ({ ok: true, status: 200, json: async () => { throw new Error('not JSON') } }))).rejects.toMatchObject({ code: 'invalidResponse' })
+    await expect(fetchLiveCatalog('/catalog.json', async () => ({ ok: true, status: 200, json: async () => ({ schemaVersion: 1, generatedAt: 'not-a-date', skins: [] }) }))).rejects.toMatchObject({ code: 'invalidResponse' })
+    await expect(fetchLiveCatalog('/catalog.json', async () => ({ ok: true, status: 200, json: async () => ({ schemaVersion: 1, generatedAt: '2026-09-08T00:00:00Z' }) }))).rejects.toMatchObject({ code: 'missingSkins' })
   })
 
   it('falls back to the bundled Pages catalog when the remote catalog is unavailable', async () => {

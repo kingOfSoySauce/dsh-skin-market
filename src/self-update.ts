@@ -13,6 +13,7 @@ import { compareVersions, parseVersion } from './semver.ts'
 import { marketFetch, marketNetworkMode } from './market-fetch.ts'
 import { normalizeRegistryBase } from './registry-plan.ts'
 import type { OperationFailure } from './types.ts'
+import { writeOperationMessage, type OperationMessageFields, type OperationMessageKey, type OperationMessageParams } from './operation-message.ts'
 import type { OfficialApplication } from './official-desktop.ts'
 
 export const MARKET_NPM_PACKAGE = 'dsh-skin-market'
@@ -41,6 +42,8 @@ export interface MarketUpdateOperation {
   id: string
   phase: MarketUpdatePhase
   message?: string
+  messageKey?: OperationMessageFields['messageKey']
+  messageParams?: OperationMessageFields['messageParams']
   status?: MarketUpdateStatus
   cancelable?: boolean
   downloadedBytes?: number
@@ -403,6 +406,8 @@ export function createMarketUpdater(
 
   const setOperation = (operation: MarketUpdateOperation, patch: Partial<MarketUpdateOperation>): void => {
     Object.assign(operation, patch)
+    if ('message' in patch) writeOperationMessage(operation, patch.message, patch.messageKey, patch.messageParams)
+    else if ('messageKey' in patch) writeOperationMessage(operation, operation.message, patch.messageKey, patch.messageParams)
     operation.cancelable = patch.cancelable !== false && cancellationAvailable() && !['done', 'failed', 'cancelled', 'cancelling', 'waiting'].includes(operation.phase)
     if (operation.phase === 'done' || operation.phase === 'failed' || operation.phase === 'cancelled') {
       operation.finishedAt = new Date().toISOString()
@@ -438,7 +443,7 @@ export function createMarketUpdater(
       try {
         restore()
         if (compareInstalledArtifact(profileDir, baseline).ok) return undefined
-        setOperation(operation, { phase: 'installing', cancelable: false, message: '正在恢复更新前的皮肤市场' })
+        setOperation(operation, { phase: 'installing', cancelable: false, message: '正在恢复更新前的皮肤市场', messageKey: 'common.marketOperationRestoring' })
         const recovery = await runner(profile, pluginArgsFor(profileDir, ['install', '--prefer-offline', '--reporter=ndjson']), {
           timeoutMs: RECOVERY_TIMEOUT_MS,
           signal: AbortSignal.timeout(RECOVERY_TIMEOUT_MS),
@@ -454,7 +459,7 @@ export function createMarketUpdater(
       }
     }
     try {
-      setOperation(operation, { phase: 'checking', message: '正在检查皮肤市场版本' })
+      setOperation(operation, { phase: 'checking', message: '正在检查皮肤市场版本', messageKey: 'common.marketOperationChecking' })
       const before = await status(true)
       operation.status = before
       if (approval !== undefined && (!sameRelease(approval.release, checkedReleases.get(before) ?? { registry: '', version: '', gitHead: '', tarball: '' }))) {
@@ -465,7 +470,7 @@ export function createMarketUpdater(
           operation.failure = { kind: 'release-age', message: before.updateBlockedReason }
           setOperation(operation, { phase: 'failed', message: before.updateBlockedReason, status: before })
         } else {
-          setOperation(operation, { phase: 'done', message: '已经是最新版本', status: before })
+          setOperation(operation, { phase: 'done', message: '已经是最新版本', messageKey: 'common.marketAlreadyLatest', status: before })
         }
         return
       }
@@ -475,7 +480,7 @@ export function createMarketUpdater(
         || !sameRelease(currentRelease, checkedRelease)) {
         const message = '版本检查结果已变化，请重新检查后再更新。'
         operation.failure = { kind: 'command', message }
-        setOperation(operation, { phase: 'failed', message, status: before })
+        setOperation(operation, { phase: 'failed', message, messageKey: 'common.marketCheckChanged', status: before })
         return
       }
       // Freeze the checked source and integrity across concurrent metadata requests.
@@ -501,7 +506,10 @@ export function createMarketUpdater(
       const report = (chunk: string): void => {
         if (operation.phase !== 'downloading' && operation.phase !== 'installing') return
         tracker.push(chunk, operation)
-        if (chunk.trim() !== '') operation.message = operation.phase === 'downloading' ? '正在下载皮肤市场更新包' : '正在写入皮肤市场更新'
+        if (chunk.trim() !== '') setOperation(operation, {
+          message: operation.phase === 'downloading' ? '正在下载皮肤市场更新包' : '正在写入皮肤市场更新',
+          messageKey: operation.phase === 'downloading' ? 'common.marketOperationDownloading' : 'common.marketOperationInstalling',
+        })
       }
       const run = async (args: readonly string[]) => {
         await runner.ensurePnpm?.({ signal: controller.signal })
@@ -546,7 +554,7 @@ export function createMarketUpdater(
               if (baseline?.ok !== true || baseline.version === null) return '更新前的市场版本无法验证，不能安全回滚'
               if (compareInstalledArtifact(profileDir, baseline).ok) return undefined
               const restoreSignal = AbortSignal.timeout(RECOVERY_TIMEOUT_MS)
-              setOperation(operation, { phase: 'installing', cancelable: false, message: '正在恢复更新前的皮肤市场' })
+              setOperation(operation, { phase: 'installing', cancelable: false, message: '正在恢复更新前的皮肤市场', messageKey: 'common.marketOperationRestoring' })
               const restored = await runner(profile, ['add', `${MARKET_NPM_PACKAGE}@${baseline.version}`, '--reporter=ndjson'], {
                 signal: restoreSignal, onStdout: report, onStderr: report,
               })
@@ -611,7 +619,10 @@ export function createMarketUpdater(
               })
               return lastResult
             },
-            onRetry: failure => setOperation(operation, { message: recoveryMessage(failure) }),
+            onRetry: failure => {
+              const next = recoveryMessage(failure)
+              setOperation(operation, { message: next.message, messageKey: next.key })
+            },
           })
         } catch (error) {
           if (error instanceof PnpmCommandError) {
@@ -623,7 +634,7 @@ export function createMarketUpdater(
 
       // Resolve this version online. `--prefer-offline` would reuse a stale
       // packument that still lacks the latest we just read from npm.
-      setOperation(operation, { phase: 'downloading', message: '正在下载皮肤市场更新包' })
+      setOperation(operation, { phase: 'downloading', message: '正在下载皮肤市场更新包', messageKey: 'common.marketOperationDownloading' })
       mutationStarted = true
       await run(['add', `${MARKET_NPM_PACKAGE}@${targetRelease.version}`, '--reporter=ndjson'])
       const materialized = validateNpmArtifact(profileDir, { name: MARKET_NPM_PACKAGE, ...targetRelease })
@@ -643,6 +654,7 @@ export function createMarketUpdater(
         ...(lastResult?.management?.application === undefined ? {} : { application: lastResult.management.application }),
         restartRequired: true,
         integrityVerified: materialized.integrityVerified,
+        messageKey: 'common.marketUpdatedRestart',
         message: lastResult?.management?.application === 'overridden'
           ? '更新包版本已验证，但启用状态被其他配置覆盖；请在设置 → 插件核验，重启后仍可能未启用'
           : '更新完成，重启 DSH 后生效',
@@ -651,12 +663,12 @@ export function createMarketUpdater(
     } catch (error) {
       if (lastResult?.management?.application !== undefined) operation.application = lastResult.management.application
       if (managerOwned && lastResult?.management?.indeterminate === true) {
-        setOperation(operation, { phase: 'waiting', application: 'unknown', message: '官方 Desktop 的市场更新结果尚未确认；请等待或重新启动应用后核验，期间不会再修改插件' })
+        setOperation(operation, { phase: 'waiting', application: 'unknown', message: '官方 Desktop 的市场更新结果尚未确认；请等待或重新启动应用后核验，期间不会再修改插件', messageKey: 'common.marketOperationWaiting' })
         return
       }
       const recoveryError = await recover()
       const cancelled = managerOwned ? lastResult?.management?.application === 'cancelled' : controller.signal.aborted
-      if (cancelled && recoveryError === undefined) setOperation(operation, { phase: 'cancelled', message: '更新已取消' })
+      if (cancelled && recoveryError === undefined) setOperation(operation, { phase: 'cancelled', message: '更新已取消', messageKey: 'common.marketOperationCancelled' })
       else {
         const officialFailure = managerOwned && lastResult?.management?.application === 'failed' ? officialOperationFailure(lastResult) : undefined
         if (error instanceof ManualInstallRequired) {
@@ -812,7 +824,7 @@ export function createMarketUpdater(
       if (operation === undefined) throw new Error('更新任务不存在')
       if (operation.cancelable !== true) return operation
       if (!cancellationAvailable()) { operation.cancelable = false; return operation }
-      setOperation(operation, { phase: 'cancelling', message: '正在取消皮肤市场更新' })
+      setOperation(operation, { phase: 'cancelling', message: '正在取消皮肤市场更新', messageKey: 'common.marketOperationCancelling' })
       abortControllers.get(id)?.abort()
       return operation
     },
@@ -832,7 +844,7 @@ export function createMarketUpdater(
       for (const id of abortControllers.keys()) {
         const operation = operations.get(id)
         if (operation?.cancelable === true) {
-          setOperation(operation, { phase: 'cancelling', message: '正在停止皮肤市场更新' })
+          setOperation(operation, { phase: 'cancelling', message: '正在停止皮肤市场更新', messageKey: 'common.marketOperationCancelling' })
         }
         abortControllers.get(id)?.abort()
       }
@@ -841,10 +853,16 @@ export function createMarketUpdater(
   }
 }
 
-function recoveryMessage(failure: PnpmFailure): string {
-  if (failure.recovery === 'disable-peer-autoinstall') return '检测到宿主提供但 npm 未发布的 peer，正在关闭 peer 自动安装并重试'
-  if (failure.kind === 'release-age') return '检测到新包保护，正在临时放宽本次更新并重试'
-  if (failure.kind === 'fetch-timeout') return '下载超时，正在延长 pnpm 下载等待时间并重试'
-  if (failure.kind === 'network') return '检测到临时网络错误，正在自动重试'
-  return failure.message
+interface MarketOperationMessageValue {
+  message: string
+  key?: OperationMessageKey
+  params?: OperationMessageParams
+}
+
+function recoveryMessage(failure: PnpmFailure): MarketOperationMessageValue {
+  if (failure.recovery === 'disable-peer-autoinstall') return { message: '检测到宿主提供但 npm 未发布的 peer，正在关闭 peer 自动安装并重试', key: 'common.recoveryPeerAutoinstall' }
+  if (failure.kind === 'release-age') return { message: '检测到新包保护，正在临时放宽本次更新并重试', key: 'common.recoveryReleaseAge' }
+  if (failure.kind === 'fetch-timeout') return { message: '下载超时，正在延长 pnpm 下载等待时间并重试', key: 'common.recoveryTimeout' }
+  if (failure.kind === 'network') return { message: '检测到临时网络错误，正在自动重试', key: 'common.recoveryNetwork' }
+  return { message: failure.message }
 }

@@ -1,5 +1,6 @@
 import type { PluginRunner } from './commands.ts';
 import type { OperationFailure } from './types.ts';
+import { type OperationMessageFields } from './operation-message.ts';
 import type { OfficialApplication } from './official-desktop.ts';
 export declare const MARKET_NPM_PACKAGE = "dsh-skin-market";
 export declare const MARKET_NPM_REGISTRY = "https://registry.npmjs.org";
@@ -22,6 +23,8 @@ export interface MarketUpdateOperation {
     id: string;
     phase: MarketUpdatePhase;
     message?: string;
+    messageKey?: OperationMessageFields['messageKey'];
+    messageParams?: OperationMessageFields['messageParams'];
     status?: MarketUpdateStatus;
     cancelable?: boolean;
     downloadedBytes?: number;

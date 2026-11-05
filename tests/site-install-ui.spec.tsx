@@ -57,7 +57,7 @@ describe('public install panel', () => {
     render(<App skins={[{ ...skin, install: { ...skin.install, target: `github:example/skins#${commit}`, desktop: { mode: 'managed', registry: 'npm', packageName: '@example/skin', packageVersion: '1.0.0' } } }]} />)
     fireEvent.click(screen.getByRole('button', { name: '需手动安装' }))
 
-    const dialog = screen.getByRole('dialog')
+    const dialog = screen.getByRole('dialog', { name: '安装 测试皮肤' })
     expect(dialog.querySelector('.install-method-grid')?.getAttribute('data-single')).toBe('false')
     expect(within(dialog).queryByRole('combobox')).toBeNull()
     expect(within(dialog).queryByRole('tablist')).toBeNull()
@@ -129,7 +129,7 @@ describe('public install panel', () => {
   it('keeps the market-only dialog as a single group with the same three fields', async () => {
     render(<App skins={[skin]} />)
     fireEvent.click(screen.getByRole('button', { name: '安装皮肤市场' }))
-    const dialog = screen.getByRole('dialog')
+    const dialog = screen.getByRole('dialog', { name: '安装皮肤市场' })
     expect(dialog.querySelector('.install-method-grid')?.getAttribute('data-single')).toBe('true')
     expect(within(dialog).queryByRole('region', { name: '安装这个皮肤' })).toBeNull()
     expect(within(dialog).getAllByRole('region')).toHaveLength(1)
