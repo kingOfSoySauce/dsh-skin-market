@@ -9,46 +9,65 @@ package: dsh-claude-style
 rowId: nwflower-dsh-claude-style
 category: skin
 tags:
-- appearance
-- theme
-- claude-style
+  - appearance
+  - theme
+  - claude-style
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
-  target: 'github:Nwflower/dsh-claude-style#2fe529209ace010a2473f6def0221f342f301c88'
-  version: 0.19.6
-  commit: 2fe529209ace010a2473f6def0221f342f301c88
+  target: github:Nwflower/dsh-claude-style#d3a511b51e2eebdfc41952135a02d8f2752032a6
+  version: 0.19.8
+  commit: d3a511b51e2eebdfc41952135a02d8f2752032a6
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
+  npm:
+    name: dsh-claude-style
+    version: 0.19.8
+    integrity: sha512-9S2Vpw0lTv+hOgThNGsvvlcHe9pq/TZnVhZNphIZozmYTl7cB80sLjBw2//Y741d0A3k0P7UprFXh9C8dtWzkQ==
+    repository: https://github.com/Nwflower/dsh-claude-style
+    gitHead: d3a511b51e2eebdfc41952135a02d8f2752032a6
 compatibility:
-  dsh: '>=0.1.7'
+  dsh: ">=0.1.7"
   platform:
-  - web
+    - web
 screenshots:
-- https://raw.githubusercontent.com/Nwflower/dsh-claude-style/2fe529209ace010a2473f6def0221f342f301c88/docs/screenshots/claude-home-light.png
-- https://raw.githubusercontent.com/Nwflower/dsh-claude-style/2fe529209ace010a2473f6def0221f342f301c88/docs/screenshots/claude-conversation-dark.png
+  - https://raw.githubusercontent.com/Nwflower/dsh-claude-style/2fe529209ace010a2473f6def0221f342f301c88/docs/screenshots/claude-home-light.png
+  - https://raw.githubusercontent.com/Nwflower/dsh-claude-style/2fe529209ace010a2473f6def0221f342f301c88/docs/screenshots/claude-conversation-dark.png
+listScreenshot: https://raw.githubusercontent.com/Nwflower/dsh-claude-style/d3a511b51e2eebdfc41952135a02d8f2752032a6/docs/screenshots/claude-home-light.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
-  installation: verified
+  installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
-    installation: pass
+    compatibility: pass
+    installation: improve
     installCommand: pass
-    topic: improve
+    topic: pass
   suggestions:
-  - 固定 commit 的隔离导入曾在本轮宿主上失败；收录展示保留上游界面图，不把它写成当前宿主运行通过。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: d3a511b51e2eebdfc41952135a02d8f2752032a6
+    packageVersion: 0.19.8
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.5-rc.1"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-05T00:23:24.780Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 445
-releaseUpdatedAt: '2026-11-04T14:29:50+08:00'
-metadataUpdatedAt: '2026-11-04T14:29:50+08:00'
-starsUpdatedAt: '2026-11-04T14:29:50+08:00'
-updatedAt: '2026-11-04T14:29:50+08:00'
+starsSnapshot: 464
+releaseUpdatedAt: 2026-11-05T00:23:27.729Z
+metadataUpdatedAt: 2026-11-05T00:23:27.729Z
+starsUpdatedAt: 2026-11-05T00:23:27.729Z
+updatedAt: 2026-11-05T00:23:27.729Z

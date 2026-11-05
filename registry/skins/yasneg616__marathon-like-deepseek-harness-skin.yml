@@ -31,7 +31,7 @@ screenshots:
 listScreenshot: https://raw.githubusercontent.com/yasneg616/marathon-like-deepseek-harness-skin/d95c5e344d223bd7f7a1cef04b8e42202764a1b2/docs/media/overview.jpg
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -57,8 +57,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1106
-starsSnapshot: 20
+starsSnapshot: 22
 releaseUpdatedAt: 2026-11-04T00:04:06.492Z
-metadataUpdatedAt: 2026-11-04T00:04:06.492Z
-starsUpdatedAt: 2026-11-04T00:04:06.492Z
-updatedAt: 2026-11-04T00:04:06.492Z
+metadataUpdatedAt: 2026-11-05T00:23:33.062Z
+starsUpdatedAt: 2026-11-05T00:23:33.062Z
+updatedAt: 2026-11-05T00:23:33.062Z

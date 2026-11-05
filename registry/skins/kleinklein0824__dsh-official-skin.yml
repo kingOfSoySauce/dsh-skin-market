@@ -14,9 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:kleinklein0824/dsh-official-skin#c750ce1c6e54d52667e8bb34600e799f0b62a24c
-  version: 1.0.0
-  commit: c750ce1c6e54d52667e8bb34600e799f0b62a24c
+  target: github:kleinklein0824/dsh-official-skin#0b817f109959bb3f19eef1a590d918bc5d69bb67
+  version: 1.1.5
+  commit: 0b817f109959bb3f19eef1a590d918bc5d69bb67
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-official-skin
+    packageVersion: 1.1.5
+    integrity: sha512-BuFDRbRa88QwVAKbtaOjr1njeMEtdn8+fNT+BpoklmkWP7IxgD1vv+UxAcJRiNBmIv0w394TYtXySMzxXliW1Q==
+  npm:
+    name: dsh-official-skin
+    version: 1.1.5
+    integrity: sha512-BuFDRbRa88QwVAKbtaOjr1njeMEtdn8+fNT+BpoklmkWP7IxgD1vv+UxAcJRiNBmIv0w394TYtXySMzxXliW1Q==
+    repository: https://github.com/kleinklein0824/dsh-official-skin
+    gitHead: 0b817f109959bb3f19eef1a590d918bc5d69bb67
 compatibility:
   dsh: unverified
   platform:
@@ -24,6 +36,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/c750ce1c6e54d52667e8bb34600e799f0b62a24c/docs/preview-dark.png
   - https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/c750ce1c6e54d52667e8bb34600e799f0b62a24c/docs/preview-light.png
+listScreenshot: https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/0b817f109959bb3f19eef1a590d918bc5d69bb67/docs/preview-dark.png
 review:
   compatibility: unverified
   preview: verified
@@ -34,18 +47,24 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
-    installCommand: improve
-    topic: improve
+    installCommand: pass
+    topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
-    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 0b817f109959bb3f19eef1a590d918bc5d69bb67
+    packageVersion: 1.1.5
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-05T00:23:59.698Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-04T01:48:23.346Z
-metadataUpdatedAt: 2026-11-04T01:48:23.346Z
+releaseUpdatedAt: 2026-11-05T00:24:01.100Z
+metadataUpdatedAt: 2026-11-05T00:24:01.100Z
 starsUpdatedAt: 2026-11-04T01:48:23.346Z
-updatedAt: 2026-11-04T01:48:23.346Z
+updatedAt: 2026-11-05T00:24:01.100Z

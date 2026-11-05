@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-04T00:05:49.528Z",
+  "generatedAt": "2026-11-05T00:24:59.298Z",
   "historyDays": 71,
   "earliestObservedDay": 20681,
   "repos": {
@@ -189,6 +189,19 @@
     "54088lp/dsh-kafka-ui": {
       "owner": "54088lp",
       "createdAt": "2026-08-17T18:17:43Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "657793814/dsh-abyss-skin": {
+      "owner": "657793814",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -730,6 +743,19 @@
     },
     "anarcadia/chuanban-dsh-theme": {
       "owner": "Anarcadia",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "andersen216/dsh-whale-girl-live2d": {
+      "owner": "Andersen216",
       "createdAt": null,
       "daily": {},
       "totals": {
@@ -2310,12 +2336,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 2
+        },
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 23,
         "pulls": 4,
-        "issues": 16
+        "issues": 17
       },
       "forks": 10,
       "watchers": 4,
@@ -2525,6 +2556,19 @@
     "devourerm/dsh-naiwa-theme": {
       "owner": "DevourerM",
       "createdAt": "2026-08-14T13:53:15Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "dhicoc/dsh-theme-mineradio": {
+      "owner": "dhicoc",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -3312,11 +3356,16 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 1447,
-        "pulls": 105,
+        "pulls": 106,
         "issues": 138
       },
       "forks": 78,
@@ -3409,6 +3458,19 @@
     },
     "ethanchen669/dsh-plugin-fly-skins": {
       "owner": "ethanchen669",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "ethanhannn/dsh-theme": {
+      "owner": "EthanHannn",
       "createdAt": null,
       "daily": {},
       "totals": {
@@ -5238,12 +5300,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 1
+        },
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 12,
         "pulls": 1,
-        "issues": 2
+        "issues": 3
       },
       "forks": 0,
       "watchers": 0,
@@ -5681,6 +5748,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "kleinklein0824/dsh-official-skin": {
+      "owner": "kleinklein0824",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "kogisune/dsh-skin-koi-pond": {
       "owner": "Kogisune",
       "createdAt": "2026-08-20T08:51:25Z",
@@ -5837,6 +5917,19 @@
         "commits": 0,
         "pulls": 0,
         "issues": 1
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "kylinq01/dsh-startup-animation": {
+      "owner": "KylinQ01",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
       },
       "forks": 0,
       "watchers": 0,
@@ -6967,12 +7060,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 3
+        "issues": 4
       },
       "forks": 0,
       "watchers": 0,
@@ -7179,6 +7277,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "lxj5820/dsh-boot-animation": {
+      "owner": "lxj5820",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "lxxz1918/dsh-theme-customizer": {
       "owner": "lxxz1918",
       "createdAt": "2026-08-22T00:29:59Z",
@@ -7368,6 +7479,19 @@
     "mantonlove/dsh-prism-plugin": {
       "owner": "mantonlove",
       "createdAt": "2026-08-18T08:53:15Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "math-lrz/dsh-theme-pack": {
+      "owner": "math-lrz",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -7614,6 +7738,19 @@
     },
     "mrmolabs/dsh-yorha-ui": {
       "owner": "MrmoLabs",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "mrtoxiorg-sys/dsh-theme-pack": {
+      "owner": "mrtoxiorg-sys",
       "createdAt": null,
       "daily": {},
       "totals": {
@@ -8545,14 +8682,38 @@
           "commits": 0,
           "pulls": 1,
           "issues": 1
+        },
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 247,
         "pulls": 2,
-        "issues": 32
+        "issues": 33
       },
       "forks": 1,
+      "watchers": 0,
+      "truncated": false
+    },
+    "nwflower/dsh-claude-style": {
+      "owner": "Nwflower",
+      "createdAt": null,
+      "daily": {
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 3,
+          "issues": 11
+        }
+      },
+      "totals": {
+        "commits": 0,
+        "pulls": 3,
+        "issues": 11
+      },
+      "forks": 0,
       "watchers": 0,
       "truncated": false
     },
@@ -9203,405 +9364,6 @@
       },
       "forks": 0,
       "watchers": 0,
-      "truncated": false
-    },
-    "revolutionla/dsh-dream-skin": {
-      "owner": "RevolutionLA",
-      "createdAt": "2026-08-15T02:38:54Z",
-      "daily": {
-        "2026-08-17": {
-          "commits": 8,
-          "pulls": 1,
-          "issues": 1
-        },
-        "2026-08-18": {
-          "commits": 3,
-          "pulls": 1,
-          "issues": 2
-        },
-        "2026-08-19": {
-          "commits": 6,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-08-20": {
-          "commits": 0,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-08-21": {
-          "commits": 29,
-          "pulls": 1,
-          "issues": 4
-        },
-        "2026-08-22": {
-          "commits": 4,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-08-23": {
-          "commits": 6,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-08-24": {
-          "commits": 3,
-          "pulls": 1,
-          "issues": 2
-        },
-        "2026-08-25": {
-          "commits": 14,
-          "pulls": 3,
-          "issues": 1
-        },
-        "2026-08-26": {
-          "commits": 5,
-          "pulls": 1,
-          "issues": 0
-        },
-        "2026-08-27": {
-          "commits": 5,
-          "pulls": 1,
-          "issues": 1
-        },
-        "2026-08-28": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-08-29": {
-          "commits": 5,
-          "pulls": 1,
-          "issues": 2
-        },
-        "2026-08-30": {
-          "commits": 3,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-08-31": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-09-01": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-02": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-03": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-09-04": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-05": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-06": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-07": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-09-08": {
-          "commits": 2,
-          "pulls": 1,
-          "issues": 1
-        },
-        "2026-09-09": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-10": {
-          "commits": 3,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-11": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-12": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-13": {
-          "commits": 2,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-09-14": {
-          "commits": 8,
-          "pulls": 0,
-          "issues": 2
-        },
-        "2026-09-15": {
-          "commits": 3,
-          "pulls": 1,
-          "issues": 1
-        },
-        "2026-09-16": {
-          "commits": 2,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-09-17": {
-          "commits": 3,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-18": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-19": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-20": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-21": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-22": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-09-23": {
-          "commits": 2,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-24": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-25": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-26": {
-          "commits": 3,
-          "pulls": 1,
-          "issues": 0
-        },
-        "2026-09-27": {
-          "commits": 6,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-09-28": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-09-29": {
-          "commits": 6,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-09-30": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-01": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-02": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-03": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-04": {
-          "commits": 1,
-          "pulls": 3,
-          "issues": 0
-        },
-        "2026-10-05": {
-          "commits": 9,
-          "pulls": 1,
-          "issues": 1
-        },
-        "2026-10-06": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-07": {
-          "commits": 2,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-08": {
-          "commits": 6,
-          "pulls": 0,
-          "issues": 2
-        },
-        "2026-10-09": {
-          "commits": 8,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-10": {
-          "commits": 5,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-11": {
-          "commits": 3,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-12": {
-          "commits": 5,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-13": {
-          "commits": 14,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-14": {
-          "commits": 3,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-15": {
-          "commits": 3,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-16": {
-          "commits": 3,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-17": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 0
-        },
-        "2026-10-18": {
-          "commits": 1,
-          "pulls": 1,
-          "issues": 0
-        },
-        "2026-10-19": {
-          "commits": 1,
-          "pulls": 0,
-          "issues": 2
-        },
-        "2026-10-20": {
-          "commits": 10,
-          "pulls": 1,
-          "issues": 0
-        },
-        "2026-10-21": {
-          "commits": 5,
-          "pulls": 2,
-          "issues": 1
-        },
-        "2026-10-22": {
-          "commits": 3,
-          "pulls": 1,
-          "issues": 2
-        },
-        "2026-10-23": {
-          "commits": 5,
-          "pulls": 1,
-          "issues": 0
-        },
-        "2026-10-24": {
-          "commits": 7,
-          "pulls": 1,
-          "issues": 0
-        },
-        "2026-10-25": {
-          "commits": 1,
-          "pulls": 1,
-          "issues": 0
-        },
-        "2026-10-27": {
-          "commits": 0,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-10-28": {
-          "commits": 0,
-          "pulls": 1,
-          "issues": 0
-        },
-        "2026-10-29": {
-          "commits": 0,
-          "pulls": 1,
-          "issues": 0
-        },
-        "2026-10-30": {
-          "commits": 0,
-          "pulls": 2,
-          "issues": 2
-        },
-        "2026-11-01": {
-          "commits": 0,
-          "pulls": 1,
-          "issues": 0
-        },
-        "2026-11-02": {
-          "commits": 0,
-          "pulls": 0,
-          "issues": 1
-        },
-        "2026-11-03": {
-          "commits": 0,
-          "pulls": 1,
-          "issues": 2
-        }
-      },
-      "totals": {
-        "commits": 252,
-        "pulls": 31,
-        "issues": 42
-      },
-      "forks": 27,
-      "watchers": 1,
       "truncated": false
     },
     "rindbeans/codex-ui": {
@@ -10556,12 +10318,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 439,
         "pulls": 28,
-        "issues": 103
+        "issues": 104
       },
       "forks": 88,
       "watchers": 3,
@@ -10663,6 +10430,19 @@
     "sodazilla-zzz/dsh-tide-ui": {
       "owner": "SoDaZilla-zzz",
       "createdAt": "2026-08-17T00:56:53Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "something11235/dsh-video-skin": {
+      "owner": "Something11235",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -10968,11 +10748,16 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 61,
-        "pulls": 4,
+        "pulls": 5,
         "issues": 10
       },
       "forks": 12,
@@ -11550,11 +11335,16 @@
           "commits": 1,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 133,
-        "pulls": 1,
+        "pulls": 2,
         "issues": 14
       },
       "forks": 3,
@@ -12123,12 +11913,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 216,
         "pulls": 3,
-        "issues": 20
+        "issues": 21
       },
       "forks": 3,
       "watchers": 0,
@@ -12333,6 +12128,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "wwfzs/dsh-plugin-startup-animation": {
+      "owner": "WWFZS",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "wwxiaoqi/ui-theme-quota-show": {
       "owner": "wwxiaoqi",
       "createdAt": "2026-08-15T06:06:08Z",
@@ -12472,12 +12280,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 25,
         "pulls": 8,
-        "issues": 25
+        "issues": 26
       },
       "forks": 26,
       "watchers": 1,
@@ -12811,6 +12624,19 @@
       "watchers": 0,
       "truncated": false
     },
+    "xxue-z/deepseek-harness-skin": {
+      "owner": "xxue-z",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
     "xxxrickymorty-dev/dsh-rick": {
       "owner": "xxxrickymorty-dev",
       "createdAt": "2026-08-17T03:04:46Z",
@@ -12859,11 +12685,17 @@
     "yannicksong0106/dsh-550c-boot": {
       "owner": "yannicksong0106",
       "createdAt": null,
-      "daily": {},
+      "daily": {
+        "2026-11-04": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 0,
@@ -14350,6 +14182,19 @@
         "issues": 1
       },
       "forks": 1,
+      "watchers": 0,
+      "truncated": false
+    },
+    "zhu1090093659/dsh-pet": {
+      "owner": "zhu1090093659",
+      "createdAt": null,
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
       "watchers": 0,
       "truncated": false
     },

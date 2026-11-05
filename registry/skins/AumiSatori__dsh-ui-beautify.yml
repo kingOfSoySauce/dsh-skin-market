@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:AumiSatori/dsh-ui-beautify#49fca8f522e2c2b236f3e9a085aa447e3317379f
-  version: 0.5.3
-  commit: 49fca8f522e2c2b236f3e9a085aa447e3317379f
+  target: github:AumiSatori/dsh-ui-beautify#a15f7060f45ae648a794b173eed55c41e5b4839f
+  version: 0.6.0
+  commit: a15f7060f45ae648a794b173eed55c41e5b4839f
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。
@@ -52,20 +52,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 49fca8f522e2c2b236f3e9a085aa447e3317379f
-    packageVersion: 0.5.3
+    commit: a15f7060f45ae648a794b173eed55c41e5b4839f
+    packageVersion: 0.6.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.2 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-04T00:04:06.934Z
+    checkedAt: 2026-11-05T00:23:36.167Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 6
-releaseUpdatedAt: 2026-11-04T00:04:07.904Z
-metadataUpdatedAt: 2026-11-04T00:04:07.904Z
+releaseUpdatedAt: 2026-11-05T00:23:37.538Z
+metadataUpdatedAt: 2026-11-05T00:23:37.538Z
 starsUpdatedAt: 2026-11-01T22:47:34.610Z
-updatedAt: 2026-11-04T00:04:07.904Z
+updatedAt: 2026-11-05T00:23:37.538Z

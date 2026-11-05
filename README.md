@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-04**：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)——Claude Code 风格主题。详见[收录日志](./docs/recently-added.md#recent-2026-11-04-followup)。
+- **2026-11-05**：[Something11235/dsh-video-skin](https://github.com/Something11235/dsh-video-skin)（`0.1.6`）——dsh-video-skin。详见[收录日志](./docs/recently-added.md#自动同步更新)。
 
 
 <a id="manual-update"></a>

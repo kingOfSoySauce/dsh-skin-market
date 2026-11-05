@@ -9,12 +9,12 @@ package: dsh-startup-animation
 rowId: dsh-startup-animation
 category: skin
 tags:
-- appearance
-- animation
-- wallpaper
+  - appearance
+  - animation
+  - wallpaper
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:KylinQ01/dsh-startup-animation#8edc4c7957549d8a210e27575413750238d715ab
   version: 2.1.0
@@ -25,13 +25,14 @@ install:
 compatibility:
   dsh: 0.1.7-rc.2
   platform:
-  - web
+    - web
 marketScreenshots:
-- skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.png
-- skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/conversation.png
-- skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/settings.png
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.png
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/conversation.png
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/settings.png
 screenshots:
-- skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.gif
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.gif
+listScreenshot: https://raw.githubusercontent.com/KylinQ01/dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/assets/bizhi.jpg
 review:
   compatibility: verified
   preview: verified
@@ -40,18 +41,27 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
-    topic: improve
+    topic: pass
   suggestions:
-  - 隔离运行证据固定在 DSH 0.1.7-rc.2；发布前仍需按目标宿主版本复核。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 8edc4c7957549d8a210e27575413750238d715ab
+    packageVersion: 2.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-05T00:23:35.945Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 6
-releaseUpdatedAt: '2026-11-03T19:20:00+08:00'
-metadataUpdatedAt: '2026-11-03T19:20:00+08:00'
-starsUpdatedAt: '2026-11-03T19:20:00+08:00'
-updatedAt: '2026-11-03T19:20:00+08:00'
+releaseUpdatedAt: 2026-11-03T19:20:00+08:00
+metadataUpdatedAt: 2026-11-05T00:23:36.265Z
+starsUpdatedAt: 2026-11-03T19:20:00+08:00
+updatedAt: 2026-11-05T00:23:36.265Z

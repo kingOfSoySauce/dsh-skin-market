@@ -9,49 +9,64 @@ package: dsh-video-skin
 rowId: dsh-video-skin
 category: skin
 tags:
-- appearance
-- animation
-- wallpaper
+  - appearance
+  - animation
+  - wallpaper
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
-  target: github:Something11235/dsh-video-skin#75aa541813ee32083e1b22e06f987809545e9ff8
+  target: github:Something11235/dsh-video-skin#2f954a1d6ac6140880f1a58438ed746f2f7f3da4
   version: 0.1.6
-  commit: 75aa541813ee32083e1b22e06f987809545e9ff8
+  commit: 2f954a1d6ac6140880f1a58438ed746f2f7f3da4
   desktop:
     mode: manual-only
     reason: 当前仅完成 DSH Web 隔离运行验收；Desktop 安装路径尚未单独核验。
+  npm:
+    name: dsh-video-skin
+    version: 0.1.6
+    integrity: sha512-bMAHsTIzhCq8sSpKcV+mKZmTRlTPfgswRNtGZYnPHXVv9aIBQSIUh0FF3ZCS9e1YBiT1oDstMm79DMW7uRiApQ==
+    repository: https://github.com/Something11235/dsh-video-skin
+    gitHead: 2f954a1d6ac6140880f1a58438ed746f2f7f3da4
 compatibility:
   dsh: 0.1.7-rc.2
   platform:
-  - web
-marketScreenshots:
-- skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/home.png
-- skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/conversation.png
-- skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/settings.png
+    - web
 screenshots:
-- skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/home.gif
+  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/home.gif
+listScreenshot: https://raw.githubusercontent.com/Something11235/dsh-video-skin/2f954a1d6ac6140880f1a58438ed746f2f7f3da4/docs/e2e-1-boot.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
-    topic: improve
+    topic: pass
   suggestions:
-  - 隔离运行证据固定在 DSH 0.1.7-rc.2；发布前仍需按目标宿主版本复核。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 2f954a1d6ac6140880f1a58438ed746f2f7f3da4
+    packageVersion: 0.1.6
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-04T00:03:55.179Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 104
+marketScreenshots:
+  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/home.png
+  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/conversation.png
+  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/settings.png
 featuredRank: 1000
-starsSnapshot: 102
-releaseUpdatedAt: '2026-11-03T19:20:00+08:00'
-metadataUpdatedAt: '2026-11-03T19:20:00+08:00'
-starsUpdatedAt: '2026-11-03T19:20:00+08:00'
-updatedAt: '2026-11-03T19:20:00+08:00'
+releaseUpdatedAt: 2026-11-05T00:23:22.896Z
+metadataUpdatedAt: 2026-11-05T00:23:22.896Z
+starsUpdatedAt: 2026-11-05T00:23:22.896Z
+updatedAt: 2026-11-05T00:23:22.896Z

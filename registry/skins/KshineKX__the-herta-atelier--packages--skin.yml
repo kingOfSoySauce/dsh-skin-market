@@ -27,6 +27,7 @@ screenshots:
   - https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/showcase-beta14-light.jpg
   - https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/overview-beta11-light.jpg
   - https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/overview-beta11-dark.jpg
+listScreenshot: https://raw.githubusercontent.com/KshineKX/the-herta-atelier/197291ae6ea0dee96da9e0b5bf36997faa8ec977/packages/skin/preview/showcase-beta14-dark.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -41,12 +42,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 197291ae6ea0dee96da9e0b5bf36997faa8ec977
+    packageVersion: 0.4.0-beta.14
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-04T00:04:42.402Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-02T11:24:50.397Z
-metadataUpdatedAt: 2026-11-02T11:24:50.397Z
+metadataUpdatedAt: 2026-11-05T00:23:22.896Z
 starsUpdatedAt: 2026-11-02T11:24:50.397Z
-updatedAt: 2026-11-02T11:24:50.397Z
+updatedAt: 2026-11-05T00:23:22.896Z
