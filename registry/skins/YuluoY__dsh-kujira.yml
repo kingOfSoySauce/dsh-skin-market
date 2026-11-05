@@ -27,12 +27,11 @@ compatibility:
 marketScreenshots:
   - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.png
   - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/conversation.png
-  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/settings.png
 screenshots:
   - https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/menu.zh.png
   - https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/balance.zh.png
   - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.gif
-listScreenshot: https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/menu.zh.png
+listScreenshot: skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.gif
 review:
   compatibility: unverified
   preview: verified

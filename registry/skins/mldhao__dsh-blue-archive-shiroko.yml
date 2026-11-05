@@ -29,6 +29,7 @@ compatibility:
     - web
 screenshots:
   - skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/home.gif
+listScreenshot: skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -63,4 +64,3 @@ updatedAt: 2026-11-03T01:37:26.503Z
 marketScreenshots:
   - skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/home.png
   - skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/conversation.png
-  - skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/settings.png

@@ -24,13 +24,13 @@ compatibility:
 marketScreenshots:
   - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.png
   - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/conversation.png
-  - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/settings.png
 screenshots:
   - https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/01-boot.png
   - https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/02-greet.png
   - https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/03-eye-states.png
   - https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/04-settings.png
   - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.gif
+listScreenshot: skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.gif
 review:
   compatibility: unverified
   preview: verified

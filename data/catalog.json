@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T04:29:14.179Z",
+  "generatedAt": "2026-11-05T11:51:49.654Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -6666,15 +6666,14 @@
       },
       "marketScreenshots": [
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Tommy00748__dsh-theme-cyberpunk2077/a3681ee431f59c64b8bf37d34ee609ddc7811278/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Tommy00748__dsh-theme-cyberpunk2077/a3681ee431f59c64b8bf37d34ee609ddc7811278/conversation.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Tommy00748__dsh-theme-cyberpunk2077/a3681ee431f59c64b8bf37d34ee609ddc7811278/settings.png"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Tommy00748__dsh-theme-cyberpunk2077/a3681ee431f59c64b8bf37d34ee609ddc7811278/conversation.png"
       ],
       "screenshots": [
         "https://raw.githubusercontent.com/Tommy00748/dsh-theme-cyberpunk2077/a3681ee431f59c64b8bf37d34ee609ddc7811278/assets/screenshot.png",
         "https://raw.githubusercontent.com/Tommy00748/dsh-theme-cyberpunk2077/a3681ee431f59c64b8bf37d34ee609ddc7811278/assets/relic-easter-egg.png",
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Tommy00748__dsh-theme-cyberpunk2077/a3681ee431f59c64b8bf37d34ee609ddc7811278/home.gif"
       ],
-      "listScreenshot": "https://raw.githubusercontent.com/Tommy00748/dsh-theme-cyberpunk2077/a3681ee431f59c64b8bf37d34ee609ddc7811278/assets/screenshot.png",
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Tommy00748__dsh-theme-cyberpunk2077/a3681ee431f59c64b8bf37d34ee609ddc7811278/home.gif",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
@@ -6713,10 +6712,6 @@
       "starsUpdatedAt": "2026-10-31T04:39:11.085Z",
       "updatedAt": "2026-10-31T04:39:11.085Z",
       "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/149d61189040c901570238b793356f78.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/149d61189040c901570238b793356f78.full.webp"
-        },
         "screenshots": [
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/149d61189040c901570238b793356f78.preview.webp",
@@ -11830,6 +11825,7 @@
       "screenshots": [
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/home.gif"
       ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/home.gif",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
@@ -11869,10 +11865,8 @@
       "updatedAt": "2026-11-03T01:37:26.503Z",
       "marketScreenshots": [
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/conversation.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/settings.png"
-      ],
-      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/home.gif"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/mldhao__dsh-blue-archive-shiroko/313f6c5bc89b00b18dc2baa9f719e8a3f12e0a72/conversation.png"
+      ]
     },
     {
       "id": "mtaech.dsh-material-you",
@@ -16315,8 +16309,7 @@
       },
       "marketScreenshots": [
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/conversation.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/settings.png"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/conversation.png"
       ],
       "screenshots": [
         "https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/55e946419121188efc8c1023b6b92f9db6c80eef/cover/dsh-endfield-workbench-readme-banner-5x2.png",
@@ -16328,7 +16321,7 @@
         "https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/dsh-settings-final.jpg",
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/home.gif"
       ],
-      "listScreenshot": "https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/55e946419121188efc8c1023b6b92f9db6c80eef/cover/dsh-endfield-workbench-readme-banner-5x2.png",
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/home.gif",
       "review": {
         "compatibility": "verified",
         "preview": "verified",
@@ -16369,10 +16362,6 @@
       "starsUpdatedAt": "2026-11-05T00:23:27.730Z",
       "updatedAt": "2026-11-05T00:23:27.730Z",
       "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/31dab533f77723b6b0baf615bc7678ef.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/31dab533f77723b6b0baf615bc7678ef.full.webp"
-        },
         "screenshots": [
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/31dab533f77723b6b0baf615bc7678ef.preview.webp",
@@ -16912,9 +16901,9 @@
       "screenshots": [
         "https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots1.webp",
         "https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots2.webp",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/359bfad889b4f3d2e79515c4145f624f34ba84f1/home.gif"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.gif"
       ],
-      "listScreenshot": "https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots1.webp",
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.gif",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
@@ -16949,9 +16938,8 @@
       },
       "starsSnapshot": 159,
       "marketScreenshots": [
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/359bfad889b4f3d2e79515c4145f624f34ba84f1/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/359bfad889b4f3d2e79515c4145f624f34ba84f1/conversation.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/359bfad889b4f3d2e79515c4145f624f34ba84f1/settings.png"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/conversation.png"
       ],
       "featuredRank": 154,
       "releaseUpdatedAt": "2026-10-30T23:01:05.165Z",
@@ -16959,10 +16947,6 @@
       "starsUpdatedAt": "2026-11-05T00:23:22.896Z",
       "updatedAt": "2026-11-05T00:23:22.896Z",
       "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f2631999f9a2f990261179dfa04777b2.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f2631999f9a2f990261179dfa04777b2.full.webp"
-        },
         "screenshots": [
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f2631999f9a2f990261179dfa04777b2.preview.webp",
@@ -22867,14 +22851,13 @@
       },
       "marketScreenshots": [
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/conversation.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/settings.png"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/conversation.png"
       ],
       "screenshots": [
         "https://raw.githubusercontent.com/aceice01/dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/docs/preview.png",
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/home.gif"
       ],
-      "listScreenshot": "https://raw.githubusercontent.com/aceice01/dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/docs/preview.png",
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/home.gif",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
@@ -22914,10 +22897,6 @@
       "starsUpdatedAt": "2026-11-04T00:03:59.804Z",
       "updatedAt": "2026-11-04T00:03:59.804Z",
       "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4ea3326c8862a31aecd72f95149116e8.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4ea3326c8862a31aecd72f95149116e8.full.webp"
-        },
         "screenshots": [
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4ea3326c8862a31aecd72f95149116e8.preview.webp",
@@ -23530,15 +23509,14 @@
       },
       "marketScreenshots": [
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/conversation.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/settings.png"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/conversation.png"
       ],
       "screenshots": [
         "https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/menu.zh.png",
         "https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/balance.zh.png",
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.gif"
       ],
-      "listScreenshot": "https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/menu.zh.png",
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.gif",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
@@ -23578,10 +23556,6 @@
       "starsUpdatedAt": "2026-10-31T04:39:11.972Z",
       "updatedAt": "2026-10-31T04:39:11.972Z",
       "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3ecf25f967cce0f5b118672bfa0d963b.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3ecf25f967cce0f5b118672bfa0d963b.full.webp"
-        },
         "screenshots": [
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3ecf25f967cce0f5b118672bfa0d963b.preview.webp",
@@ -24643,15 +24617,14 @@
       },
       "marketScreenshots": [
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wawo77__dsh-opencode-go-usage/e6a39c3f44a9ca3bde24cb70b51edec818e43ac6/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wawo77__dsh-opencode-go-usage/e6a39c3f44a9ca3bde24cb70b51edec818e43ac6/conversation.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wawo77__dsh-opencode-go-usage/e6a39c3f44a9ca3bde24cb70b51edec818e43ac6/settings.png"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wawo77__dsh-opencode-go-usage/e6a39c3f44a9ca3bde24cb70b51edec818e43ac6/conversation.png"
       ],
       "screenshots": [
         "https://raw.githubusercontent.com/wawo77/dsh-opencode-go-usage/e6a39c3f44a9ca3bde24cb70b51edec818e43ac6/docs/pet.png",
         "https://raw.githubusercontent.com/wawo77/dsh-opencode-go-usage/e6a39c3f44a9ca3bde24cb70b51edec818e43ac6/docs/animation.png",
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wawo77__dsh-opencode-go-usage/e6a39c3f44a9ca3bde24cb70b51edec818e43ac6/home.gif"
       ],
-      "listScreenshot": "https://raw.githubusercontent.com/wawo77/dsh-opencode-go-usage/e6a39c3f44a9ca3bde24cb70b51edec818e43ac6/docs/pet.png",
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wawo77__dsh-opencode-go-usage/e6a39c3f44a9ca3bde24cb70b51edec818e43ac6/home.gif",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
@@ -24690,10 +24663,6 @@
       "starsUpdatedAt": "2026-10-26T23:11:33.671Z",
       "updatedAt": "2026-10-26T23:11:33.671Z",
       "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b653da39df2b2b6fb906dc54cdc2fa48.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b653da39df2b2b6fb906dc54cdc2fa48.full.webp"
-        },
         "screenshots": [
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b653da39df2b2b6fb906dc54cdc2fa48.preview.webp",
@@ -35414,8 +35383,7 @@
       },
       "marketScreenshots": [
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/conversation.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/settings.png"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/conversation.png"
       ],
       "screenshots": [
         "https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/01-boot.png",
@@ -35424,6 +35392,7 @@
         "https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/04-settings.png",
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.gif"
       ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.gif",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
@@ -35453,12 +35422,7 @@
       "metadataUpdatedAt": "2026-10-28T01:36:01.943Z",
       "starsUpdatedAt": "2026-10-28T01:36:01.943Z",
       "updatedAt": "2026-10-28T01:36:01.943Z",
-      "listScreenshot": "https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/01-boot.png",
       "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8f0824a34f7028804a045789eadc908e.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8f0824a34f7028804a045789eadc908e.full.webp"
-        },
         "screenshots": [
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8f0824a34f7028804a045789eadc908e.preview.webp",
@@ -51297,16 +51261,15 @@
         ]
       },
       "marketScreenshots": [
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/conversation.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/settings.png"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/conversation.png"
       ],
       "screenshots": [
         "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png",
         "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/preview-idle-coffee.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/home.gif"
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.gif"
       ],
-      "listScreenshot": "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png",
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.gif",
       "review": {
         "compatibility": "verified",
         "preview": "verified",
@@ -51344,10 +51307,6 @@
       "starsUpdatedAt": "2026-11-05T00:23:28.246Z",
       "updatedAt": "2026-11-05T00:23:28.246Z",
       "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5e6003b43d0569fcee238615ff6d687c.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5e6003b43d0569fcee238615ff6d687c.full.webp"
-        },
         "screenshots": [
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5e6003b43d0569fcee238615ff6d687c.preview.webp",

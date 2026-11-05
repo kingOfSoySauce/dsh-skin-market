@@ -31,7 +31,6 @@ compatibility:
 marketScreenshots:
   - skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/home.png
   - skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/conversation.png
-  - skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/settings.png
 screenshots:
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/55e946419121188efc8c1023b6b92f9db6c80eef/cover/dsh-endfield-workbench-readme-banner-5x2.png
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/66b05412f3f5df4d497cd9f86ec96656a2be4648/dsh-packaged-final.jpg
@@ -41,7 +40,7 @@ screenshots:
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/dsh-packaged-final.jpg
   - https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/7993d60782658e7c30a5ff421a3f621c1aba9487/dsh-settings-final.jpg
   - skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/home.gif
-listScreenshot: https://raw.githubusercontent.com/rison114514/dsh-endfield-ui/f04014212edcc619b0cd3d0cfeef4d2e265898ec/cover/dsh-endfield-workbench-readme-banner-5x2.png
+listScreenshot: skin-screenshots/rison114514__dsh-endfield-ui--endfield-ui-plugin/d9d5c722cdb63e8c78d455af5a4896f7c3817cc8/home.gif
 review:
   compatibility: verified
   preview: verified
