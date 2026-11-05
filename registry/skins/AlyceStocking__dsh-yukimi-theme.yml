@@ -25,10 +25,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/home.png
-  - skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/conversation.png
-  - skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -57,9 +53,13 @@ license:
   code: MIT
   commercialUse: true
   notice: 代码 MIT；角色与在线素材按仓库说明使用，不自动纳入 MIT 范围。
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/home.png
+  - skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/conversation.png
+  - skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-04T00:04:38.184Z
-metadataUpdatedAt: 2026-11-04T17:40:01Z
+metadataUpdatedAt: 2026-11-05T00:23:22.896Z
 starsUpdatedAt: 2026-11-01T00:00:00.000Z
-updatedAt: 2026-11-04T17:40:01Z
+updatedAt: 2026-11-05T00:23:22.896Z

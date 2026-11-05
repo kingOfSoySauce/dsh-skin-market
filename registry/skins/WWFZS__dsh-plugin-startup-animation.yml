@@ -9,28 +9,29 @@ package: dsh-plugin-startup-animation
 rowId: wwfzs-dsh-plugin-startup-animation
 category: splash
 tags:
-- animation
-- startup
-- splash
+  - animation
+  - startup
+  - splash
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
-  target: 'github:WWFZS/dsh-plugin-startup-animation#3173ace4a769b20e5c0fa48486ee9df790db7e46'
-  version: 1.22.1
-  commit: 3173ace4a769b20e5c0fa48486ee9df790db7e46
+  target: github:WWFZS/dsh-plugin-startup-animation#f17a7910bc7050b3312b9273fc827e22e745bda3
+  version: 1.23.1
+  commit: f17a7910bc7050b3312b9273fc827e22e745bda3
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
 compatibility:
-  dsh: '>=0.2.0'
+  dsh: ">=0.2.0"
   platform:
-  - web
+    - web
 screenshots:
-- skin-screenshots/WWFZS__dsh-plugin-startup-animation/3173ace4a769b20e5c0fa48486ee9df790db7e46/home.gif
+  - skin-screenshots/WWFZS__dsh-plugin-startup-animation/3173ace4a769b20e5c0fa48486ee9df790db7e46/home.gif
+listScreenshot: https://raw.githubusercontent.com/WWFZS/dsh-plugin-startup-animation/f17a7910bc7050b3312b9273fc827e22e745bda3/docs/library-videos.jpg
 review:
   compatibility: unverified
-  preview: verified
+  preview: repository-card
   installation: verified
 health:
   status: improvements
@@ -39,15 +40,23 @@ health:
     compatibility: improve
     installation: pass
     installCommand: pass
-    topic: improve
+    topic: pass
   suggestions:
-  - '固定版本声明 DSH >=0.2.0；本轮在 0.1.7-rc.2 完成 GIF 运行取证，使用时仍按作者兼容范围核对宿主。'
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: f17a7910bc7050b3312b9273fc827e22e745bda3
+    packageVersion: 1.23.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-05T00:23:37.643Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 4
-releaseUpdatedAt: '2026-11-04T14:29:50+08:00'
-metadataUpdatedAt: '2026-11-04T14:29:50+08:00'
-starsUpdatedAt: '2026-11-04T14:29:50+08:00'
-updatedAt: '2026-11-04T14:29:50+08:00'
+starsSnapshot: 5
+releaseUpdatedAt: 2026-11-05T00:23:39.587Z
+metadataUpdatedAt: 2026-11-05T00:23:39.587Z
+starsUpdatedAt: 2026-11-05T00:23:39.587Z
+updatedAt: 2026-11-05T00:23:39.587Z

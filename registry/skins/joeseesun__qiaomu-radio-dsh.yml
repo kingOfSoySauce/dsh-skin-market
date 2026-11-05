@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:joeseesun/qiaomu-radio-dsh#c1b3a7ebcc3a8d262381cc749fd0cad72c4cfece
-  version: 0.1.3
-  commit: c1b3a7ebcc3a8d262381cc749fd0cad72c4cfece
+  target: github:joeseesun/qiaomu-radio-dsh#c1be1b079dda042c58124dbf610cb673d050e42a
+  version: 0.1.4
+  commit: c1be1b079dda042c58124dbf610cb673d050e42a
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -44,12 +44,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: c1b3a7ebcc3a8d262381cc749fd0cad72c4cfece
-    packageVersion: 0.1.3
+    commit: c1be1b079dda042c58124dbf610cb673d050e42a
+    packageVersion: 0.1.4
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-11-01T01:43:36.027Z
+    checkedAt: 2026-11-05T00:23:49.059Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -58,7 +58,7 @@ license:
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-01T01:43:36.363Z
-metadataUpdatedAt: 2026-11-01T01:43:36.363Z
+releaseUpdatedAt: 2026-11-05T00:23:49.378Z
+metadataUpdatedAt: 2026-11-05T00:23:49.378Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-11-01T01:43:36.363Z
+updatedAt: 2026-11-05T00:23:49.378Z

@@ -3,17 +3,16 @@ name:
   zh: dsh-theme-pack
   en: dsh-theme-pack
 author: mrtoxiorg-sys
-description: '18 color themes for the DeepSeek Harness web GUI: light+dark palettes,
-  WCAG-checked, picker in Settings'
+description: "18 color themes for the DeepSeek Harness web GUI: light+dark palettes, WCAG-checked, picker in Settings"
 repo: https://github.com/mrtoxiorg-sys/dsh-theme-pack
-package: '@local/dsh-theme-pack'
+package: "@local/dsh-theme-pack"
 rowId: mrtoxiorg-dsh-theme-pack
 category: skin
 tags:
-- appearance
+  - appearance
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:mrtoxiorg-sys/dsh-theme-pack#baec234992d207b80241dfe4105598d8c8536fb3
   version: 1.2.6
@@ -24,12 +23,15 @@ install:
 compatibility:
   dsh: 0.1.7-rc.2
   platform:
-  - web
+    - web
 marketScreenshots:
-- skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/home.png
-- skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/conversation.png
-- skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/settings.png
-screenshots: []
+  - skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/home.png
+  - skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/conversation.png
+  - skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/mrtoxiorg-sys/dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/docs/preview.png
+  - https://raw.githubusercontent.com/mrtoxiorg-sys/dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/token-coverage.png
+listScreenshot: https://raw.githubusercontent.com/mrtoxiorg-sys/dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/docs/preview.png
 review:
   compatibility: verified
   preview: verified
@@ -38,18 +40,29 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: improve
   suggestions:
-  - 隔离运行证据固定在 DSH 0.1.7-rc.2；发布前仍需按目标宿主版本复核。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: baec234992d207b80241dfe4105598d8c8536fb3
+    packageVersion: 1.2.6
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-05T00:24:03.025Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: '2026-11-03T19:20:00+08:00'
-metadataUpdatedAt: '2026-11-03T19:20:00+08:00'
-starsUpdatedAt: '2026-11-03T19:20:00+08:00'
-updatedAt: '2026-11-03T19:20:00+08:00'
+releaseUpdatedAt: 2026-11-03T19:20:00+08:00
+metadataUpdatedAt: 2026-11-05T00:24:03.258Z
+starsUpdatedAt: 2026-11-03T19:20:00+08:00
+updatedAt: 2026-11-05T00:24:03.258Z

@@ -13,9 +13,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:lyx0717/dsh-washer#18b39bd009690f0d5ec34025316367a0d955420f
-  version: 0.10.3
-  commit: 18b39bd009690f0d5ec34025316367a0d955420f
+  target: github:lyx0717/dsh-washer#0bbe7e347a39a80df74a1089ae17e0ce9e5ca722
+  version: 0.10.4
+  commit: 0bbe7e347a39a80df74a1089ae17e0ce9e5ca722
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -46,19 +46,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 18b39bd009690f0d5ec34025316367a0d955420f
-    packageVersion: 0.10.3
+    commit: 0bbe7e347a39a80df74a1089ae17e0ce9e5ca722
+    packageVersion: 0.10.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-04T00:04:46.531Z
+    checkedAt: 2026-11-05T00:24:02.208Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-04T00:04:49.362Z
-metadataUpdatedAt: 2026-11-04T00:04:49.362Z
+releaseUpdatedAt: 2026-11-05T00:24:03.574Z
+metadataUpdatedAt: 2026-11-05T00:24:03.574Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-04T00:04:49.362Z
+updatedAt: 2026-11-05T00:24:03.574Z
