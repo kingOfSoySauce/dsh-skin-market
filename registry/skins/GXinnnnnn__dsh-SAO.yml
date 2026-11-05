@@ -25,14 +25,9 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/context-liquid.png
-  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/settings-context.png
-  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/14148e5a5459d84d6339d4021862cd04dc3864b9/assets/screenshots/workspace.png
-  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/settings-appearance.png
-  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/settings-context.png
-  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/context-frosted.png
-  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/settings-wallpaper.png
-listScreenshot: https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/settings-appearance.png
+  - skin-screenshots/GXinnnnnn__dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/home.gif
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/workspace.png
+listScreenshot: skin-screenshots/GXinnnnnn__dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/home.gif
 review:
   compatibility: unverified
   preview: verified
