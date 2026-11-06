@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T16:50:57.860Z",
+  "generatedAt": "2026-11-06T18:08:53.107Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -37779,6 +37779,68 @@
       }
     },
     {
+      "id": "haoranx98.dsh.skin.galaxy",
+      "name": {
+        "zh": "星河 Galaxy",
+        "en": "Galaxy"
+      },
+      "author": "haoranx98",
+      "description": "原生 WebGPU 实时渲染的紫蓝星云皮肤：银河尘带斜贯视野，远近星点带视差与轻微闪烁，并有随机流星；深空配色适配 light/dark/system，无运行时 CDN、图片或额外依赖。",
+      "repo": "https://github.com/haoranx98/dsh-skin-galaxy",
+      "package": "dsh-skin-galaxy",
+      "rowId": "galaxy-skin",
+      "category": "skin",
+      "tags": [
+        "appearance"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:haoranx98/dsh-skin-galaxy#7f72079d38ca4fb2ee2c9a0e285018feadbcfc83",
+        "version": "0.1.5",
+        "commit": "7f72079d38ca4fb2ee2c9a0e285018feadbcfc83"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/haoranx98/dsh-skin-galaxy/7f72079d38ca4fb2ee2c9a0e285018feadbcfc83/screenshots/dsh-galaxy.gif"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-06T18:08:49.862Z",
+      "metadataUpdatedAt": "2026-11-06T18:08:49.862Z",
+      "starsUpdatedAt": "2026-11-06T18:08:49.862Z",
+      "updatedAt": "2026-11-06T18:08:49.862Z"
+    },
+    {
       "id": "harmlessfunny.dsh-pet-in-frame",
       "name": {
         "zh": "dsh-pet-in-frame",
@@ -62027,6 +62089,16 @@
       "pullsPerDay": 0,
       "issuesPerDay": 0,
       "score": 0.007,
+      "asOf": "2026-11-06"
+    },
+    "haoranx98.dsh.skin.galaxy": {
+      "ageDays": 1,
+      "starsPerDay": 0,
+      "starGrowthPerDay": 0,
+      "commitsPerDay": 0,
+      "pullsPerDay": 0,
+      "issuesPerDay": 0,
+      "score": 0,
       "asOf": "2026-11-06"
     },
     "haoyueqin.deepseek-harness-background": {
