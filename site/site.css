@@ -288,9 +288,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .install-dialog { max-height: calc(100dvh - 32px); padding: 20px; }
   .install-method-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
 }
-.health { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
-.health h3 { margin-bottom: 6px; }
-.health p { margin: 0; color: var(--secondary); font-size: 12px; line-height: 19px; }
 .gallery-group { display: grid; gap: 8px; }
 .gallery { position: relative; width: 100%; aspect-ratio: 16 / 8.4; overflow: hidden; border: 1px solid var(--border); border-radius: var(--dsw-radius-lg); background: var(--photo-bg); }
 .gallery-open { display: block; width: 100%; height: 100%; cursor: zoom-in; padding: 0; color: inherit; border: 0; background: transparent; }

@@ -543,9 +543,6 @@
 .changelog strong { color: var(--dsw-alias-label-caption); font-weight: 500; }
 .changelog a { color: var(--dsw-alias-label-primary); font-size: 12px; text-decoration: none; }
 .changelog a:hover { text-decoration: underline; }
-.healthList span[data-health="pass"] { color: var(--dsw-alias-state-success-primary); }
-.healthList span[data-health="improve"] { color: var(--dsw-alias-state-warn-label); }
-.healthSuggestion { margin: 8px 0 0; color: var(--dsw-alias-label-secondary); font-size: 11px; line-height: 17px; }
 .collectionTitle { margin-top: 18px; padding-top: 14px; border-top: 0.5px solid var(--dsw-alias-border-l3); }
 
 .recommendations { order: 7; padding-top: 18px; border-top: 0.5px solid var(--dsw-alias-border-l2); }

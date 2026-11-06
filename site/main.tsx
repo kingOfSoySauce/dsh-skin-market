@@ -441,7 +441,7 @@ export function App({ skins }: { skins: Skin[] }) {
         </div>
 
         <div className="information">
-          <article><h3>{t('info.about')}</h3><p>{selected.description}</p><div className="tags">{selected.tags.map(tag => <span key={tag}>{tag}</span>)}</div>{selected.health && <div className="health"><h3>{t('info.health')}</h3><p>{selected.health.status === 'healthy' ? t('info.healthHealthy') : selected.health.suggestions.join(' ')}</p></div>}</article>
+          <article><h3>{t('info.about')}</h3><p>{selected.description}</p><div className="tags">{selected.tags.map(tag => <span key={tag}>{tag}</span>)}</div></article>
           <dl><div><dt>{t('info.license')}</dt><dd>{selected.license.code}</dd></div><div><dt>{t('info.modes')}</dt><dd>{selected.modes.join(' / ')}</dd></div><div><dt>{t('info.platform')}</dt><dd>{selected.compatibility.platform.join(' / ')}</dd></div></dl>
         </div>
 

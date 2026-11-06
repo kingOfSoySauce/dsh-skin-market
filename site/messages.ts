@@ -65,8 +65,7 @@ const zhMessages = {
   'gallery.exit': '退出全屏查看',
   'gallery.viewShot': '查看截图 {index}',
   'info.about': '关于此皮肤',
-  'info.health': '仓库健康',
-  'info.healthHealthy': 'README 展示、兼容声明和一键安装准备均符合要求。',
+
   'info.license': '许可证',
   'info.modes': '模式',
   'info.platform': '平台',
@@ -195,8 +194,7 @@ const enMessages: { [K in keyof typeof zhMessages]: string } = {
   'gallery.exit': 'Exit full-screen viewer',
   'gallery.viewShot': 'View screenshot {index}',
   'info.about': 'About this skin',
-  'info.health': 'Repository health',
-  'info.healthHealthy': 'README previews, compatibility notes, and one-click installation information meet the market requirements.',
+
   'info.license': 'License',
   'info.modes': 'Modes',
   'info.platform': 'Platform',

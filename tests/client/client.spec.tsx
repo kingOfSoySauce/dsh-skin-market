@@ -4776,15 +4776,15 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
-    fireEvent.click(await screen.findByTitle('该皮肤需要在桌面应用的官方插件面板确认安装。'))
+    fireEvent.click(within(screen.getByRole('main', { name: '皮肤详情内容' })).getByRole('button', { name: '安装' }))
     expect(screen.getByRole('dialog', { name: '安装 测试皮肤' })).toBeTruthy()
     expect(screen.queryByRole('button', { name: '打开安装页面' })).toBeNull()
     expect(open).not.toHaveBeenCalled()
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/install'))).toBe(false)
-    expect(screen.getByText('该仓库距离市场的一键安装规范还差少量信息；可参考右侧仓库健康建议完善，当前请按维护者说明安装。')).toBeTruthy()
+    expect(screen.getByText('该皮肤暂不支持市场直接安装。')).toBeTruthy()
   })
 
-  it('shows constructive repository health checks and suggestions', async () => {
+  it('does not expose repository health checks in skin details', async () => {
     const healthSkin = { ...skin, health: {
       status: 'improvements' as const,
       checks: { readmeScreenshots: 'pass' as const, compatibility: 'improve' as const, installation: 'pass' as const },
@@ -4794,10 +4794,10 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
-    expect(await screen.findByRole('heading', { name: '仓库健康' })).toBeTruthy()
-    expect(screen.getByText('README 截图').nextSibling?.textContent).toBe('符合要求')
-    expect(screen.getByText('兼容范围').nextSibling?.textContent).toBe('建议完善')
-    expect(screen.getByText('建议声明支持的 DSH Web 版本范围。')).toBeTruthy()
+    await screen.findByRole('heading', { name: '关于此皮肤' })
+    expect(screen.queryByRole('heading', { name: '仓库健康' })).toBeNull()
+    expect(screen.queryByText('README 截图')).toBeNull()
+    expect(screen.queryByText('建议声明支持的 DSH Web 版本范围。')).toBeNull()
   })
 
   it('generates and copies an agent PR prompt without submitting to GitHub', async () => {

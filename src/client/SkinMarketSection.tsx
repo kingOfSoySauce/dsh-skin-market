@@ -812,14 +812,6 @@ function GalleryPreloads({ skin, screenshots }: { skin: CatalogSkin; screenshots
   })}</>
 }
 
-const healthLabelKeys = {
-  readmeScreenshots: 'common.healthReadmeScreenshots',
-  compatibility: 'common.healthCompatibility',
-  installation: 'common.healthInstallation',
-  installCommand: 'common.healthInstallCommand',
-  topic: 'common.healthTopic',
-} as const
-
 function DiscoverToolbar({ className, placeholderRef, docked = false, headingId, label, enabledCategories, onToggleCategory, sortBy, onSortBy, t }: {
   className: string
   placeholderRef?: { current: HTMLDivElement | null }
@@ -1652,9 +1644,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const manualInstallNotice = hostKind === 'desktop'
     ? t('common.manualInstallUnavailableDesktop', { reason: desktopManualReasonLabel(desktopManualReason, t) })
     : t('common.manualInstallUnavailableMarket')
-  const manualHealthNotice = hostKind === 'desktop'
-    ? manualInstallNotice
-    : t('common.manualHealthMissing')
   const autoInstallable = !manualOnly
   const reportedInstallPlatform = installEnvironment?.platform
   const installPlatformUnknown = reportedInstallPlatform === undefined || reportedInstallPlatform === 'unknown'
@@ -2951,7 +2940,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
                 {autoInstallable && (officialDesktop || !deferInstallAndUse) && <Button variant="primary" size="sm" icon={<IconDownloadOutline />} disabled={selectedBusy !== undefined || installAndUseReason !== null || officialDesktop && deferInstallAndUse} title={installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t('common.noOtherInstall') : installRequiresRestart ? t('market.restartDesktopGuidance') : undefined)} onClick={() => void installAndActivate()}>{officialDesktop ? t('common.install') : t('common.installAndUse')}</Button>}
                 {autoInstallable && !officialDesktop && <Button variant={deferInstallAndUse ? 'primary' : 'outline'} size="sm" icon={deferInstallAndUse ? <IconDownloadOutline /> : undefined} disabled={selectedBusy !== undefined || actionReason('install') !== null} title={actionReason('install') ?? (deferInstallAndUse ? t('common.installAfterCurrent') : undefined)} onClick={() => void run('install')}>{deferInstallAndUse ? t('common.install') : t('common.onlyInstall')}</Button>}
                 {autoInstallable && <Button variant="outline" size="sm" disabled={selectedBusy !== undefined} onClick={() => { setInstallCopied(null); setShowInstallOptions(true) }}>{t('common.otherInstallMethods')}</Button>}
-                {manualOnly && <Button variant="outline" size="sm" icon={<MarkGithubIcon size={16} />} disabled={selectedBusy !== undefined || openingPluginPanel || officialDesktop && deferInstallAndUse} title={officialDesktop ? t('common.installThisSkin') : t('common.manualInstallCheck')} onClick={() => openManualInstall(selected)}>{hostKind === 'desktop' ? t('common.install') : t('common.checkAndGuideInstall')}</Button>}
+                {manualOnly && <Button variant="outline" size="sm" icon={<MarkGithubIcon size={16} />} disabled={selectedBusy !== undefined || openingPluginPanel || officialDesktop && deferInstallAndUse} onClick={() => openManualInstall(selected)}>{t('common.install')}</Button>}
                 {manualOnly && officialDesktop && <Button variant="outline" size="sm" onClick={() => { setInstallCopied(null); setShowInstallOptions(true) }}>{t('common.otherInstallMethods')}</Button>}
               </>}
               {state.installation === 'installed' && state.activation === 'inactive' && <Button variant="primary" size="sm" disabled={selectedBusy !== undefined || actionReason('activate') !== null} title={actionReason('activate') ?? undefined} onClick={activateSelected}>{t('common.use')}</Button>}
@@ -2996,8 +2985,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           </div>
 
           <div className={css.aboutGrid}>
-            <article><h3>{t('common.aboutSkin')}</h3><p>{selected.description}</p><div className={css.tags}>{selected.tags.map(tag => <Pill key={tag}>{tag}</Pill>)}</div><dl className={css.metadata}><div><dt>{t('common.license')}</dt><dd>{selected.license.code}</dd></div><div><dt>{t('common.commercialUse')}</dt><dd>{selected.license.commercialUse ? t('common.licenseAllowed') : t('common.notAuthorized')}</dd></div><div><dt>{t('common.modes')}</dt><dd>{selected.modes.join(' / ')}</dd></div></dl>{manualOnly && <p className={css.notice}>{manualHealthNotice}</p>}{selected.review?.preview === 'repository-card' && !(selected.marketScreenshots?.length) && <p className={css.notice}>{t('common.noRepositoryScreenshot')}</p>}{usesMarketScreenshots(selected) && <p className={css.notice}>{t('common.marketScreenshotNotice')}</p>}{selected.license.notice && <p className={css.notice}>{selected.license.notice}</p>}</article>
-            <aside className={css.changelog}><h3>{t('common.repositoryHealth')}</h3>{selected.health ? <><ol className={css.healthList}>{Object.entries(selected.health.checks).map(([key, value]) => <li key={key}><strong>{t(healthLabelKeys[key as keyof typeof healthLabelKeys])}</strong><span data-health={value}>{value === 'pass' ? t('common.healthPass') : t('common.healthImprove')}</span></li>)}</ol>{selected.health.suggestions.map(suggestion => <p className={css.healthSuggestion} key={suggestion}>{suggestion}</p>)}</> : <p className={css.healthSuggestion}>{t('common.waitingHealthScan')}</p>}<h3 className={css.collectionTitle}>{t('common.collectionInfo')}</h3><ol><li><strong>{selected.install.version}</strong><span>{t('common.updatedAt', { date: displayDate(selected.releaseUpdatedAt, t) })}</span></li><li><strong>Stars</strong><span>{t('common.starsUpdatedAt', { count: selected.githubStars, date: displayDate(selected.starsUpdatedAt, t) })}</span></li><li><strong>{t('common.compatibility')}</strong><span>{compatibilityUnverified ? t('common.waitingCompatibility') : t('common.supportsDsh', { range: selected.compatibility.dsh })}</span></li></ol><a href={selected.repo} target="_blank" rel="noreferrer">{t('common.repositoryDetails')}</a></aside>
+            <article><h3>{t('common.aboutSkin')}</h3><p>{selected.description}</p><div className={css.tags}>{selected.tags.map(tag => <Pill key={tag}>{tag}</Pill>)}</div><dl className={css.metadata}><div><dt>{t('common.license')}</dt><dd>{selected.license.code}</dd></div><div><dt>{t('common.commercialUse')}</dt><dd>{selected.license.commercialUse ? t('common.licenseAllowed') : t('common.notAuthorized')}</dd></div><div><dt>{t('common.modes')}</dt><dd>{selected.modes.join(' / ')}</dd></div></dl>{manualOnly && <p className={css.notice}>{manualInstallNotice}</p>}{selected.review?.preview === 'repository-card' && !(selected.marketScreenshots?.length) && <p className={css.notice}>{t('common.noRepositoryScreenshot')}</p>}{usesMarketScreenshots(selected) && <p className={css.notice}>{t('common.marketScreenshotNotice')}</p>}{selected.license.notice && <p className={css.notice}>{selected.license.notice}</p>}</article>
+            <aside className={css.changelog}><h3>{t('common.collectionInfo')}</h3><ol><li><strong>{selected.install.version}</strong><span>{t('common.updatedAt', { date: displayDate(selected.releaseUpdatedAt, t) })}</span></li><li><strong>Stars</strong><span>{t('common.starsUpdatedAt', { count: selected.githubStars, date: displayDate(selected.starsUpdatedAt, t) })}</span></li><li><strong>{t('common.compatibility')}</strong><span>{compatibilityUnverified ? t('common.waitingCompatibility') : t('common.supportsDsh', { range: selected.compatibility.dsh })}</span></li></ol><a href={selected.repo} target="_blank" rel="noreferrer">{t('common.repositoryDetails')}</a></aside>
           </div>
 
           <section className={css.recommendations}><h3>{t('common.moreRecommendations')}</h3><div>{recommendations.map(skin => renderHomeCard(skin, 'discover'))}</div></section>
