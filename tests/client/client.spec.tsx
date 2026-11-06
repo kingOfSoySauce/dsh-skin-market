@@ -39,9 +39,9 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', () => {
       children,
       footer,
     ) : null,
-    IconChevronLeftOutline14: icon, IconChevronDownOutline14: icon, IconCopyOutline16: copyIcon, IconCheckOutline16: checkIcon, IconDownloadOutline16: icon, IconLinkOutline16: icon, IconLoadingOutline16: icon,
+    IconChevronLeftOutline14: icon, IconChevronDownOutline14: icon, IconCloseOutline16: icon, IconCopyOutline16: copyIcon, IconCheckOutline16: checkIcon, IconDownloadOutline16: icon, IconLinkOutline16: icon, IconLoadingOutline16: icon,
     IconRefreshOutline16: icon, IconSearchOutline16: icon, IconTrashOutline16: icon,
-    IconChevronLeftOutlineRegular: icon, IconChevronDownOutlineRegular: icon, IconCopyOutlineRegular: copyIcon, IconCheckOutlineRegular: checkIcon, IconDownloadOutlineRegular: icon, IconLoadingOutlineRegular: icon,
+    IconChevronLeftOutlineRegular: icon, IconChevronDownOutlineRegular: icon, IconCloseOutlineRegular: icon, IconCopyOutlineRegular: copyIcon, IconCheckOutlineRegular: checkIcon, IconDownloadOutlineRegular: icon, IconLoadingOutlineRegular: icon,
     IconRefreshOutlineRegular: icon, IconSearchOutlineRegular: icon, IconTrashOutlineRegular: icon,
     writeClipboard: async (text: string) => {
       if (navigator.clipboard?.writeText === undefined) return false
@@ -3488,6 +3488,9 @@ describe('client market', () => {
     fireEvent.change(screen.getByRole('textbox'), { target: { value: '终末地' } })
     expect(screen.getByRole('button', { name: /描述皮肤 界面预览/ })).toBeTruthy()
     expect(screen.queryByRole('button', { name: /测试皮肤 界面预览/ })).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: '清空搜索' }))
+    expect((screen.getByRole('textbox') as HTMLInputElement).value).toBe('')
+    expect(screen.getByRole('button', { name: /测试皮肤 界面预览/ })).toBeTruthy()
   })
 
   it('shows heat, Stars and latest sorting modes and highlights the active one', async () => {

@@ -37,6 +37,17 @@ describe('public catalog filters', () => {
     expect(screen.getByRole('group', { name: '分类' })).toBeTruthy()
   })
 
+  it('clears the public catalog search from the visible clear button', () => {
+    render(<App skins={[skin]} />)
+
+    const search = screen.getByRole('textbox', { name: '搜索皮肤、作者或标签' })
+    fireEvent.change(search, { target: { value: '测试' } })
+    fireEvent.click(screen.getByRole('button', { name: '清空搜索' }))
+
+    expect((search as HTMLInputElement).value).toBe('')
+    expect(screen.getByRole('button', { name: /测试皮肤 界面预览/ })).toBeTruthy()
+  })
+
   it('shows skins and splash by default and toggles the other categories', () => {
     const pet = { ...skin, id: 'test.pet', name: { zh: '桌面宠物', en: 'Desk Pet' }, category: 'pet' as const }
     const player = { ...skin, id: 'test.player', name: { zh: '音乐播放器', en: 'Music Player' }, category: 'player' as const }

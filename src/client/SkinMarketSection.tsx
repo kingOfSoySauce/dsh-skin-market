@@ -62,6 +62,7 @@ type PrimitiveSwitchProps = { checked: boolean; onChange: (next: boolean) => voi
 const Switch = primitiveModule.Switch as ComponentType<PrimitiveSwitchProps>
 const IconChevronLeftOutline = resolvePrimitiveIcon(primitiveModule, 'IconChevronLeftOutlineRegular', 'IconChevronLeftOutline14')
 const IconCheckOutline = resolvePrimitiveIcon(primitiveModule, 'IconCheckOutlineRegular', 'IconCheckOutline16')
+const IconCloseOutline = resolvePrimitiveIcon(primitiveModule, 'IconCloseOutlineRegular', 'IconCloseOutline16')
 const IconCopyOutline = resolvePrimitiveIcon(primitiveModule, 'IconCopyOutlineRegular', 'IconCopyOutline16')
 const IconDownloadOutline = resolvePrimitiveIcon(primitiveModule, 'IconDownloadOutlineRegular', 'IconDownloadOutline16')
 const IconLoadingOutline = resolvePrimitiveIcon(primitiveModule, 'IconLoadingOutlineRegular', 'IconLoadingOutline16')
@@ -832,6 +833,18 @@ function DiscoverToolbar({ className, placeholderRef, docked = false, headingId,
       </div>
     </div>
     <CatalogSortOptions value={sortBy} onChange={onSortBy} t={t} />
+  </div>
+}
+
+function MarketSearch({ value, onChange, className, t }: { value: string; onChange: (value: string) => void; className?: string; t: Translator }) {
+  const fieldRef = useRef<HTMLDivElement | null>(null)
+  const clear = () => {
+    onChange('')
+    fieldRef.current?.querySelector<HTMLInputElement>('input')?.focus()
+  }
+  return <div ref={fieldRef} className={`${css.searchField} ${className ?? ''}`}>
+    <Input className={css.searchInput} value={value} onChange={event => onChange(event.currentTarget.value)} icon={<IconSearchOutline />} placeholder={t('market.search')} aria-label={t('market.search')} />
+    {value.length > 0 && <Button className={css.searchClear} variant="ghost" size="sm" icon={<IconCloseOutline />} aria-label={t('common.clearSearch')} title={t('common.clearSearch')} onMouseDown={event => event.preventDefault()} onClick={clear} />}
   </div>
 }
 
@@ -2823,7 +2836,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             </div>
           </div>
           {marketUpdate?.updateBlockedReason !== undefined && <p className={css.notice} role="status">{operationMessage({ message: marketUpdate.updateBlockedReason, messageKey: marketUpdate.updateBlockedReasonKey, messageParams: marketUpdate.updateBlockedReasonParams }, t)}</p>}
-          <Input className={css.homeSearch} value={homeQuery} onChange={event => setHomeQuery(event.currentTarget.value)} icon={<IconSearchOutline />} placeholder={t('market.search')} aria-label={t('market.search')} />
+          <MarketSearch className={css.homeSearch} value={homeQuery} onChange={setHomeQuery} t={t} />
           <div className={css.homeSearchPlaceholder} aria-hidden="true" />
           {discoverDocked && <DiscoverToolbar t={t} className={css.headerDiscover} headingId="discover-skins-title" label={homeQuery.trim() === '' ? t('common.discoverMore') : t('common.searchResults')} enabledCategories={enabledCategories} onToggleCategory={category => setEnabledCategories(current => {
             const next = new Set(current)
@@ -2877,7 +2890,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         <div className={css.browserPanel}>
       <aside className={css.catalog} aria-label={t('market.catalog')}>
         <div className={css.catalogHeader}>
-          <Input value={query} onChange={event => setQuery(event.currentTarget.value)} icon={<IconSearchOutline />} placeholder={t('market.search')} aria-label={t('market.search')} />
+          <MarketSearch className={css.catalogSearch} value={query} onChange={setQuery} t={t} />
           <div className={css.filterBar}>
             <div className={`${css.filters} ${css.segmented}`} role="group" aria-label={t('common.listRange')}>
               <button type="button" aria-pressed={filter === 'all'} onClick={() => { setFilter('all'); setSortBy('heat') }}>{t('common.all')}</button>

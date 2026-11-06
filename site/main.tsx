@@ -177,7 +177,12 @@ function GalleryPreloads({ skin, screenshots }: { skin: Skin; screenshots: strin
 
 function SearchBox({ query, onQueryChange, style }: { query: string; onQueryChange: (value: string) => void; style?: CSSProperties }) {
   const { t } = useSitePreferences()
-  return <label className="search site-search" style={style}><MagnifyingGlass size={18} /><input value={query} onChange={event => onQueryChange(event.currentTarget.value)} placeholder={t('search.label')} aria-label={t('search.label')} /></label>
+  const inputRef = useRef<HTMLInputElement | null>(null)
+  const clear = () => {
+    onQueryChange('')
+    inputRef.current?.focus()
+  }
+  return <div className="search site-search" style={style}><MagnifyingGlass size={18} /><input ref={inputRef} value={query} onChange={event => onQueryChange(event.currentTarget.value)} placeholder={t('search.label')} aria-label={t('search.label')} />{query.length > 0 && <button type="button" className="search-clear" aria-label={t('search.clear')} title={t('search.clear')} onMouseDown={event => event.preventDefault()} onClick={clear}><X size={16} aria-hidden="true" /></button>}</div>
 }
 
 export function App({ skins }: { skins: Skin[] }) {
@@ -279,7 +284,7 @@ export function App({ skins }: { skins: Skin[] }) {
     const availableRight = actionsRect.left - gap
     const width = Math.max(0, Math.min(520, availableRight - availableLeft))
     setSearchStyle({ position: 'fixed', zIndex: 21, visibility: 'visible', top: rowRect.top + (rowRect.height - 38) / 2, left: availableRight - width, width, height: 38 })
-  }, [feedCompact])
+  }, [feedCompact, language])
 
   useLayoutEffect(() => {
     updateSearchGeometry()

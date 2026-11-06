@@ -217,6 +217,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .search:focus-within { border-color: var(--focus); }
 .search input { min-width: 0; flex: 1; color: var(--text); border: 0; outline: 0; background: transparent; font-size: 13px; }
 .search input::placeholder { color: var(--caption); }
+.search-clear { display: grid; width: 28px; height: 28px; cursor: pointer; flex: none; place-items: center; padding: 0; color: var(--caption); border: 0; border-radius: var(--dsw-radius-sm); background: transparent; }
+.search-clear:hover { color: var(--text); background: var(--surface-3); }
 .catalog-tools { display: flex; align-items: center; justify-content: space-between; }
 .catalog-tools button { cursor: pointer; padding: 4px 7px; color: var(--secondary); border: 0; border-radius: var(--dsw-radius-sm); background: transparent; font-size: 11px; }
 .catalog-tools button:hover { color: var(--text); background: var(--surface-3); }
