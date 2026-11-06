@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:niiang/dsh-kimino-theme#a70ea47a6030a564d307628b65d7cf454e002361
+  target: github:niiang/dsh-kimino-theme#e8ce017b9b0bf980553780a856abbecc8ae1840e
   version: 68.4.2
-  commit: a70ea47a6030a564d307628b65d7cf454e002361
+  commit: e8ce017b9b0bf980553780a856abbecc8ae1840e
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,10 +28,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/home.png
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/conversation.png
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/settings.png
 screenshots:
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0d066fe583be48341fcf8064fd6dfc4ea760bc8a/docs/screenshots/home-hero.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0d066fe583be48341fcf8064fd6dfc4ea760bc8a/docs/screenshots/sidebar.png
@@ -57,19 +53,23 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: a70ea47a6030a564d307628b65d7cf454e002361
+    commit: e8ce017b9b0bf980553780a856abbecc8ae1840e
     packageVersion: 68.4.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-05T00:23:29.798Z
+    checkedAt: 2026-11-05T20:40:42.818Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 145
 starsSnapshot: 43
-releaseUpdatedAt: 2026-11-05T00:23:33.111Z
-metadataUpdatedAt: 2026-11-05T00:23:33.111Z
+marketScreenshots:
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/home.png
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/conversation.png
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/settings.png
+featuredRank: 145
+releaseUpdatedAt: 2026-11-06T00:08:18.130Z
+metadataUpdatedAt: 2026-11-06T00:08:18.130Z
 starsUpdatedAt: 2026-10-30T03:53:27.502Z
-updatedAt: 2026-11-05T00:23:33.111Z
+updatedAt: 2026-11-06T00:08:18.130Z

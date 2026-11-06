@@ -15,9 +15,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:Sutera-Diffusus/dsh-whale-musume#120b6e244fab2a7c841b768b98d3aebae22ec8de
-  version: 2.5.0
-  commit: 120b6e244fab2a7c841b768b98d3aebae22ec8de
+  target: github:Sutera-Diffusus/dsh-whale-musume#4e6d06262257a134b81cb9b1ce85a224cd3a600b
+  version: 2.5.1
+  commit: 4e6d06262257a134b81cb9b1ce85a224cd3a600b
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -25,9 +25,6 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.png
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png
   - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/preview-idle-coffee.png
@@ -47,20 +44,23 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 120b6e244fab2a7c841b768b98d3aebae22ec8de
-    packageVersion: 2.5.0
+    commit: 4e6d06262257a134b81cb9b1ce85a224cd3a600b
+    packageVersion: 2.5.1
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-11-05T00:23:26.901Z
+    checkedAt: 2026-11-05T20:40:38.134Z
     findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 203
+marketScreenshots:
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.png
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/conversation.png
 featuredRank: 1033
-starsSnapshot: 201
-releaseUpdatedAt: 2026-11-05T00:23:28.246Z
-metadataUpdatedAt: 2026-11-05T00:23:28.246Z
-starsUpdatedAt: 2026-11-05T00:23:28.246Z
-updatedAt: 2026-11-05T00:23:28.246Z
+releaseUpdatedAt: 2026-11-06T00:08:18.130Z
+metadataUpdatedAt: 2026-11-06T00:08:18.130Z
+starsUpdatedAt: 2026-11-06T00:08:18.130Z
+updatedAt: 2026-11-06T00:08:18.130Z

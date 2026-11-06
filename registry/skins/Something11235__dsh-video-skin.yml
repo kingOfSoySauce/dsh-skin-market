@@ -32,10 +32,6 @@ compatibility:
   dsh: 0.1.7-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/home.png
-  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/conversation.png
-  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/settings.png
 screenshots:
   - skin-screenshots/Something11235__dsh-video-skin/2f954a1d6ac6140880f1a58438ed746f2f7f3da4/home.gif
   - skin-screenshots/Something11235__dsh-video-skin/2f954a1d6ac6140880f1a58438ed746f2f7f3da4/preset-near-native.gif
@@ -66,9 +62,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 104
+starsSnapshot: 107
+marketScreenshots:
+  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/home.png
+  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/conversation.png
+  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/settings.png
 featuredRank: 1000
 releaseUpdatedAt: 2026-11-05T00:23:22.896Z
-metadataUpdatedAt: 2026-11-05T00:23:22.896Z
-starsUpdatedAt: 2026-11-05T00:23:22.896Z
-updatedAt: 2026-11-05T00:23:22.896Z
+metadataUpdatedAt: 2026-11-06T00:08:18.130Z
+starsUpdatedAt: 2026-11-06T00:08:18.130Z
+updatedAt: 2026-11-06T00:08:18.130Z

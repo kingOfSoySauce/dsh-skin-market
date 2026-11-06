@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:ShanHaiFish/dsh-usage-pet#26e6e9b08411362e54fb69692e6b7f7e4a17f177
-  version: 0.5.0
-  commit: 26e6e9b08411362e54fb69692e6b7f7e4a17f177
+  target: github:ShanHaiFish/dsh-usage-pet#a45143051ce3d073a3df326cb493789cd17a495e
+  version: 0.6.0
+  commit: a45143051ce3d073a3df326cb493789cd17a495e
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -24,8 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/ShanHaiFish__dsh-usage-pet/26e6e9b08411362e54fb69692e6b7f7e4a17f177/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/ShanHaiFish/dsh-usage-pet/26e6e9b08411362e54fb69692e6b7f7e4a17f177/docs/preview-opencode-collapsed.png
   - https://raw.githubusercontent.com/ShanHaiFish/dsh-usage-pet/26e6e9b08411362e54fb69692e6b7f7e4a17f177/docs/preview-deepseek-account-collapsed.png
@@ -47,19 +45,21 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 26e6e9b08411362e54fb69692e6b7f7e4a17f177
-    packageVersion: 0.5.0
+    commit: a45143051ce3d073a3df326cb493789cd17a495e
+    packageVersion: 0.6.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:53:07.420Z
+    checkedAt: 2026-11-05T20:41:11.348Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:08.015Z
+marketScreenshots:
+  - skin-screenshots/ShanHaiFish__dsh-usage-pet/26e6e9b08411362e54fb69692e6b7f7e4a17f177/conversation.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-06T00:08:18.130Z
+metadataUpdatedAt: 2026-11-06T00:08:18.130Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:08.015Z
+updatedAt: 2026-11-06T00:08:18.130Z
