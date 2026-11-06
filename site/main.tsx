@@ -12,6 +12,7 @@ import type { CatalogSkin } from '../src/client/types.ts'
 import { MARKET_CLI_COMMAND, MARKET_DESKTOP_INPUT, MARKET_PUBLIC_URL, MARKET_REPOSITORY, marketPrompt, skinDesktopInput, skinPrompt, skinWebCommandGroups } from './prompts.ts'
 import type { InstallCommandGroup } from '../src/client/submission.ts'
 import { githubRepoLabel } from '../src/display-title.ts'
+import { localizedSkinDescription } from '../src/localized-copy.ts'
 import { matchesCatalogSearch } from '../src/catalog-search.ts'
 import { SitePreferencesProvider, useSitePreferences, type SiteTheme } from './preferences.tsx'
 import { localizedSkinName, type MessageKey, type SiteLanguage } from './messages.ts'
@@ -148,13 +149,14 @@ function CatalogCard({ skin, onOpen, onInstall }: { skin: Skin; onOpen: () => vo
   const { language, t } = useSitePreferences()
   const repoLabel = githubRepoLabel(skin.repo)
   const title = localizedSkinName(skin, language)
+  const description = localizedSkinDescription(skin.description, skin.localizedCopy, language)
   const manualOnly = skin.review?.installation === 'manual-only'
   return <article className="feed-card">
     <button className="feed-card-open dsh-skin-media-hover" aria-label={t('skin.preview', { name: title })} onClick={onOpen}>
       <span className="feed-card-media"><PreviewMedia skin={skin} src={getCatalogListScreenshot(skin)} fallbackSources={getCatalogScreenshotUrls(skin)} alt={t('skin.preview', { name: title })} kind="card" loading="lazy" /></span>
       <span className="feed-card-copy">
         <span className="feed-card-title"><strong title={title}>{title}</strong><span className="feed-card-stats"><StarIcon size={12} /> {skin.starsSnapshot}</span></span>
-        <span className="feed-card-description" title={skin.description}>{skin.description}</span>
+        {description !== undefined && <span className="feed-card-description" title={description}>{description}</span>}
       </span>
     </button>
     <div className="feed-card-footer">
@@ -177,7 +179,12 @@ function GalleryPreloads({ skin, screenshots }: { skin: Skin; screenshots: strin
 
 function SearchBox({ query, onQueryChange, style }: { query: string; onQueryChange: (value: string) => void; style?: CSSProperties }) {
   const { t } = useSitePreferences()
-  return <label className="search site-search" style={style}><MagnifyingGlass size={18} /><input value={query} onChange={event => onQueryChange(event.currentTarget.value)} placeholder={t('search.label')} aria-label={t('search.label')} /></label>
+  const inputRef = useRef<HTMLInputElement | null>(null)
+  const clear = () => {
+    onQueryChange('')
+    inputRef.current?.focus()
+  }
+  return <div className="search site-search" style={style}><MagnifyingGlass size={18} /><input ref={inputRef} value={query} onChange={event => onQueryChange(event.currentTarget.value)} placeholder={t('search.label')} aria-label={t('search.label')} />{query.length > 0 && <button type="button" className="search-clear" aria-label={t('search.clear')} title={t('search.clear')} onMouseDown={event => event.preventDefault()} onClick={clear}><X size={16} aria-hidden="true" /></button>}</div>
 }
 
 export function App({ skins }: { skins: Skin[] }) {
@@ -209,6 +216,7 @@ export function App({ skins }: { skins: Skin[] }) {
 
   const selected = skins.find(item => item.id === selectedId) ?? skins[0]
   const selectedName = selected === undefined ? '' : localizedSkinName(selected, language)
+  const selectedDescription = selected === undefined ? undefined : localizedSkinDescription(selected.description, selected.localizedCopy, language)
   const selectedScreenshots = selected === undefined ? [] : getCatalogScreenshotUrls(selected)
   const shotCount = selectedScreenshots.length
   const filtered = useMemo(() => skins
@@ -279,7 +287,7 @@ export function App({ skins }: { skins: Skin[] }) {
     const availableRight = actionsRect.left - gap
     const width = Math.max(0, Math.min(520, availableRight - availableLeft))
     setSearchStyle({ position: 'fixed', zIndex: 21, visibility: 'visible', top: rowRect.top + (rowRect.height - 38) / 2, left: availableRight - width, width, height: 38 })
-  }, [feedCompact])
+  }, [feedCompact, language])
 
   useLayoutEffect(() => {
     updateSearchGeometry()
@@ -417,7 +425,7 @@ export function App({ skins }: { skins: Skin[] }) {
         <button className="mobile-back" onClick={() => setDetailOpen(false)}><ArrowLeft size={16} /> {t('skin.backToDiscover')}</button>
         <header className="skin-head">
           <div className="avatar"><PreviewMedia key={`${selected.id}:${getCatalogListScreenshot(selected) ?? 'missing'}:avatar`} skin={selected} src={getCatalogListScreenshot(selected)} alt="" kind="avatar" /></div>
-          <div className="skin-title"><div><h2>{selectedName}</h2><p className="skin-description" title={selected.description}>{selected.description}</p><p className="repo-id">{githubRepoLabel(selected.repo)}</p></div><div className="meta"><span>{t('skin.version', { version: selected.install.version })}</span><span>{t('skin.dshVersion', { version: selected.compatibility.dsh })}</span><span className={verified ? 'verified' : 'unverified'}>{verified ? t('skin.compatibilityVerified') : t('skin.compatibilityPending')}</span></div></div>
+          <div className="skin-title"><div><h2>{selectedName}</h2>{selectedDescription !== undefined && <p className="skin-description" title={selectedDescription}>{selectedDescription}</p>}<p className="repo-id">{githubRepoLabel(selected.repo)}</p><div className="meta"><span>{t('skin.version', { version: selected.install.version })}</span><span>{t('skin.dshVersion', { version: selected.compatibility.dsh })}</span><span className={verified ? 'verified' : 'unverified'}>{verified ? t('skin.compatibilityVerified') : t('skin.compatibilityPending')}</span></div></div></div>
         </header>
 
         <div className="detail-actions">
@@ -441,7 +449,7 @@ export function App({ skins }: { skins: Skin[] }) {
         </div>
 
         <div className="information">
-          <article><h3>{t('info.about')}</h3><p>{selected.description}</p><div className="tags">{selected.tags.map(tag => <span key={tag}>{tag}</span>)}</div>{selected.health && <div className="health"><h3>{t('info.health')}</h3><p>{selected.health.status === 'healthy' ? t('info.healthHealthy') : selected.health.suggestions.join(' ')}</p></div>}</article>
+          <article><h3>{t('info.about')}</h3>{selectedDescription !== undefined && <p>{selectedDescription}</p>}<div className="tags">{selected.tags.map(tag => <span key={tag}>{tag}</span>)}</div></article>
           <dl><div><dt>{t('info.license')}</dt><dd>{selected.license.code}</dd></div><div><dt>{t('info.modes')}</dt><dd>{selected.modes.join(' / ')}</dd></div><div><dt>{t('info.platform')}</dt><dd>{selected.compatibility.platform.join(' / ')}</dd></div></dl>
         </div>
 

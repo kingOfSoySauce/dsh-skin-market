@@ -20,6 +20,7 @@ import { createFailureRepairPrompt, interceptNotice, isInterceptFailure, marketU
 import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, createSubmissionPrompt, REGISTRY_REPOSITORY } from './submission.ts'
 import { probeClientSkinSelection, switchClientSkin, type ClientSkinExpectation, type ClientSkinRuntime, type ClientSkinSelectionStatus } from './index.ts'
 import { displayTitle, githubRepoLabel } from '../display-title.ts'
+import { localizedSkinDescription } from '../localized-copy.ts'
 import { assessCompatibility, compatibilityContext as skinCompatibilityContext, type CompatibilityAssessment } from '../compatibility.ts'
 import { matchesCatalogSearch } from '../catalog-search.ts'
 import { desktopInstallPlan } from '../desktop-install.ts'
@@ -34,6 +35,10 @@ export type { InterceptNotice } from './failure-help.ts'
 
 function skinNameLabel(skin: Pick<CatalogSkin, 'name'> | undefined, t: Translator, fallback = t('common.skin')): string {
   return skin === undefined ? fallback : localizedSkinName(skin.name, t)
+}
+
+function skinDescriptionLabel(skin: Pick<CatalogSkin, 'description' | 'localizedCopy'>, t: Translator): string | undefined {
+  return localizedSkinDescription(skin.description, skin.localizedCopy, t.locale?.() === 'en' ? 'en' : 'zh')
 }
 
 interface PrimitiveIconProps {
@@ -62,6 +67,7 @@ type PrimitiveSwitchProps = { checked: boolean; onChange: (next: boolean) => voi
 const Switch = primitiveModule.Switch as ComponentType<PrimitiveSwitchProps>
 const IconChevronLeftOutline = resolvePrimitiveIcon(primitiveModule, 'IconChevronLeftOutlineRegular', 'IconChevronLeftOutline14')
 const IconCheckOutline = resolvePrimitiveIcon(primitiveModule, 'IconCheckOutlineRegular', 'IconCheckOutline16')
+const IconCloseOutline = resolvePrimitiveIcon(primitiveModule, 'IconCloseOutlineRegular', 'IconCloseOutline16')
 const IconCopyOutline = resolvePrimitiveIcon(primitiveModule, 'IconCopyOutlineRegular', 'IconCopyOutline16')
 const IconDownloadOutline = resolvePrimitiveIcon(primitiveModule, 'IconDownloadOutlineRegular', 'IconDownloadOutline16')
 const IconLoadingOutline = resolvePrimitiveIcon(primitiveModule, 'IconLoadingOutlineRegular', 'IconLoadingOutline16')
@@ -812,14 +818,6 @@ function GalleryPreloads({ skin, screenshots }: { skin: CatalogSkin; screenshots
   })}</>
 }
 
-const healthLabelKeys = {
-  readmeScreenshots: 'common.healthReadmeScreenshots',
-  compatibility: 'common.healthCompatibility',
-  installation: 'common.healthInstallation',
-  installCommand: 'common.healthInstallCommand',
-  topic: 'common.healthTopic',
-} as const
-
 function DiscoverToolbar({ className, placeholderRef, docked = false, headingId, label, enabledCategories, onToggleCategory, sortBy, onSortBy, t }: {
   className: string
   placeholderRef?: { current: HTMLDivElement | null }
@@ -840,6 +838,27 @@ function DiscoverToolbar({ className, placeholderRef, docked = false, headingId,
       </div>
     </div>
     <CatalogSortOptions value={sortBy} onChange={onSortBy} t={t} />
+  </div>
+}
+
+function MarketSearch({ value, onChange, className, t }: { value: string; onChange: (value: string) => void; className?: string; t: Translator }) {
+  const fieldRef = useRef<HTMLDivElement | null>(null)
+  const clear = () => {
+    onChange('')
+    fieldRef.current?.querySelector<HTMLInputElement>('input')?.focus()
+  }
+  return <div ref={fieldRef} className={`${css.searchField} ${className ?? ''}`}>
+    <Input className={css.searchInput} value={value} onChange={event => onChange(event.currentTarget.value)} icon={<IconSearchOutline />} placeholder={t('market.search')} aria-label={t('market.search')} />
+    {value.length > 0 && <Button
+      className={css.searchClear}
+      variant="ghost"
+      size="sm"
+      icon={<IconCloseOutline />}
+      aria-label={t('common.clearSearch')}
+      title={t('common.clearSearch')}
+      onMouseDown={event => event.preventDefault()}
+      onClick={clear}
+    />}
   </div>
 }
 
@@ -1652,9 +1671,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const manualInstallNotice = hostKind === 'desktop'
     ? t('common.manualInstallUnavailableDesktop', { reason: desktopManualReasonLabel(desktopManualReason, t) })
     : t('common.manualInstallUnavailableMarket')
-  const manualHealthNotice = hostKind === 'desktop'
-    ? manualInstallNotice
-    : t('common.manualHealthMissing')
   const autoInstallable = !manualOnly
   const reportedInstallPlatform = installEnvironment?.platform
   const installPlatformUnknown = reportedInstallPlatform === undefined || reportedInstallPlatform === 'unknown'
@@ -2525,12 +2541,13 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             : null
     const open = () => location === 'installed' ? openInstalledBrowser(skin.id) : openBrowser(skin.id, 'discover')
     const name = localizedSkinName(skin.name, t)
+    const description = skinDescriptionLabel(skin, t)
     return <article className={css.homeCard} data-active={itemState.activation === 'active' ? 'true' : undefined} data-actions={actionCount} key={`${location}:${skin.id}`}>
       <button type="button" className={`${css.homeCardOpen} dsh-skin-media-hover`} aria-current={itemState.activation === 'active' ? 'true' : undefined} aria-label={location === 'installed' ? t('common.installedCard', { name }) : t('common.interfacePreview', { name })} onClick={open}>
         <span className={css.homeCardMedia}><PreviewMedia t={t} skin={skin} src={getCatalogListScreenshot(skin)} fallbackSources={getCatalogScreenshotUrls(skin)} alt={t('common.interfacePreview', { name })} kind="recommendation" loading="lazy" /></span>
         <span className={css.homeCardCopy}>
           <span className={css.homeCardTitleRow}><strong title={name}>{name}</strong>{location === 'discover' && <span className={css.feedMeta}><StarIcon size={12} aria-hidden="true" /> {skin.githubStars}</span>}</span>
-          <span className={css.homeCardDescription} title={skin.description}>{displayTitle(skin.description)}</span>
+          {description !== undefined && <span className={css.homeCardDescription} title={description}>{displayTitle(description)}</span>}
         </span>
       </button>
       <div className={css.homeCardFooter}>
@@ -2810,6 +2827,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   }
   useLayoutEffect(() => { syncDiscoverDockRef.current() })
   const selectedName = skinNameLabel(selected, t, t('common.currentSkin'))
+  const selectedDescription = selected === undefined ? '' : skinDescriptionLabel(selected, t)
 
   return (
     <section className={css.root} data-dsh-skin-market data-layout={layout} data-detail={showDetail ? 'open' : 'closed'} data-browser-open={browserOpen ? 'true' : 'false'}>
@@ -2834,7 +2852,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             </div>
           </div>
           {marketUpdate?.updateBlockedReason !== undefined && <p className={css.notice} role="status">{operationMessage({ message: marketUpdate.updateBlockedReason, messageKey: marketUpdate.updateBlockedReasonKey, messageParams: marketUpdate.updateBlockedReasonParams }, t)}</p>}
-          <Input className={css.homeSearch} value={homeQuery} onChange={event => setHomeQuery(event.currentTarget.value)} icon={<IconSearchOutline />} placeholder={t('market.search')} aria-label={t('market.search')} />
+          <MarketSearch className={css.homeSearch} value={homeQuery} onChange={setHomeQuery} t={t} />
           <div className={css.homeSearchPlaceholder} aria-hidden="true" />
           {discoverDocked && <DiscoverToolbar t={t} className={css.headerDiscover} headingId="discover-skins-title" label={homeQuery.trim() === '' ? t('common.discoverMore') : t('common.searchResults')} enabledCategories={enabledCategories} onToggleCategory={category => setEnabledCategories(current => {
             const next = new Set(current)
@@ -2888,7 +2906,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         <div className={css.browserPanel}>
       <aside className={css.catalog} aria-label={t('market.catalog')}>
         <div className={css.catalogHeader}>
-          <Input value={query} onChange={event => setQuery(event.currentTarget.value)} icon={<IconSearchOutline />} placeholder={t('market.search')} aria-label={t('market.search')} />
+          <MarketSearch className={css.catalogSearch} value={query} onChange={setQuery} t={t} />
           <div className={css.filterBar}>
             <div className={`${css.filters} ${css.segmented}`} role="group" aria-label={t('common.listRange')}>
               <button type="button" aria-pressed={filter === 'all'} onClick={() => { setFilter('all'); setSortBy('heat') }}>{t('common.all')}</button>
@@ -2907,11 +2925,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             const itemState = runtimeFor(states, skin.id)
             const live = liveOperationFor(operations, skin.id)
             const mutationLabel = live === undefined ? null : t(mutationLabelKeys[live.kind])
+            const description = skinDescriptionLabel(skin, t)
             return <Button key={skin.id} variant="ghost" className={css.skinCard} data-skin-id={skin.id} data-selected={skin.id === selected?.id} aria-current={skin.id === selected?.id ? 'true' : undefined} onClick={() => select(skin.id)}>
               <span className={`${css.skinCardPreview} dsh-skin-media-hover`}><PreviewMedia t={t} key={`${skin.id}:${getCatalogListScreenshot(skin) ?? 'missing'}:list`} skin={skin} src={getCatalogListScreenshot(skin)} fallbackSources={getCatalogScreenshotUrls(skin)} alt={t('common.interfacePreview', { name: localizedSkinName(skin.name, t) })} kind="list" loading="lazy" /></span>
               <span className={css.skinCardBody}>
                 <span className={css.cardTitle}>{localizedSkinName(skin.name, t)}</span>
-                <span className={css.cardDescription} title={skin.description}>{displayTitle(skin.description)}</span>
+                {description !== undefined && <span className={css.cardDescription} title={description}>{displayTitle(description)}</span>}
                 <span className={css.cardMetaLine}>
                   <span className={css.cardMeta} title={githubRepoLabel(skin.repo)}>{githubRepoLabel(skin.repo)}</span>
                   <span className={css.cardStars} title={t('common.githubStarsSnapshot', { date: displayDate(skin.starsUpdatedAt, t) })}><StarIcon size={12} aria-hidden="true" /> {skin.githubStars}</span>
@@ -2933,7 +2952,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             <div className={css.skinAvatar}><PreviewMedia key={`${selected.id}:${getCatalogListScreenshot(selected) ?? 'missing'}:avatar`} skin={selected} src={getCatalogListScreenshot(selected)} alt="" kind="avatar" /></div>
             <div className={css.titleBlock}>
               <h2>{selectedName}</h2>
-              <p className={css.description} title={selected.description}>{displayTitle(selected.description)}</p>
+              {selectedDescription !== undefined && <p className={css.description} title={selectedDescription}>{displayTitle(selectedDescription)}</p>}
               <p className={css.author}>{githubRepoLabel(selected.repo)}</p>
               <p className={css.version}>{t('common.version', { version: selected.install.version })}<span aria-hidden="true"> · </span>{compatibilityUnverified ? t('common.compatibilityPending') : t('common.compatibleWithDsh', { range: selected.compatibility.dsh })}{runtime?.version !== undefined && runtime.version !== null && <><span aria-hidden="true"> · </span>{t('common.currentDsh', { version: runtime.version })}</>}<StatusLabel active={state.activation === 'active'}>{statusLabel(state, t)}</StatusLabel></p>
             </div>
@@ -2944,7 +2963,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
                 {autoInstallable && (officialDesktop || !deferInstallAndUse) && <Button variant="primary" size="sm" icon={<IconDownloadOutline />} disabled={selectedBusy !== undefined || installAndUseReason !== null || officialDesktop && deferInstallAndUse} title={installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t('common.noOtherInstall') : installRequiresRestart ? t('market.restartDesktopGuidance') : undefined)} onClick={() => void installAndActivate()}>{officialDesktop ? t('common.install') : t('common.installAndUse')}</Button>}
                 {autoInstallable && !officialDesktop && <Button variant={deferInstallAndUse ? 'primary' : 'outline'} size="sm" icon={deferInstallAndUse ? <IconDownloadOutline /> : undefined} disabled={selectedBusy !== undefined || actionReason('install') !== null} title={actionReason('install') ?? (deferInstallAndUse ? t('common.installAfterCurrent') : undefined)} onClick={() => void run('install')}>{deferInstallAndUse ? t('common.install') : t('common.onlyInstall')}</Button>}
                 {autoInstallable && <Button variant="outline" size="sm" disabled={selectedBusy !== undefined} onClick={() => { setInstallCopied(null); setShowInstallOptions(true) }}>{t('common.otherInstallMethods')}</Button>}
-                {manualOnly && <Button variant="outline" size="sm" icon={<MarkGithubIcon size={16} />} disabled={selectedBusy !== undefined || openingPluginPanel || officialDesktop && deferInstallAndUse} title={officialDesktop ? t('common.installThisSkin') : t('common.manualInstallCheck')} onClick={() => openManualInstall(selected)}>{hostKind === 'desktop' ? t('common.install') : t('common.checkAndGuideInstall')}</Button>}
+                {manualOnly && <Button variant="outline" size="sm" icon={<MarkGithubIcon size={16} />} disabled={selectedBusy !== undefined || openingPluginPanel || officialDesktop && deferInstallAndUse} onClick={() => openManualInstall(selected)}>{t('common.install')}</Button>}
                 {manualOnly && officialDesktop && <Button variant="outline" size="sm" onClick={() => { setInstallCopied(null); setShowInstallOptions(true) }}>{t('common.otherInstallMethods')}</Button>}
               </>}
               {state.installation === 'installed' && state.activation === 'inactive' && <Button variant="primary" size="sm" disabled={selectedBusy !== undefined || actionReason('activate') !== null} title={actionReason('activate') ?? undefined} onClick={activateSelected}>{t('common.use')}</Button>}
@@ -2989,8 +3008,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           </div>
 
           <div className={css.aboutGrid}>
-            <article><h3>{t('common.aboutSkin')}</h3><p>{selected.description}</p><div className={css.tags}>{selected.tags.map(tag => <Pill key={tag}>{tag}</Pill>)}</div><dl className={css.metadata}><div><dt>{t('common.license')}</dt><dd>{selected.license.code}</dd></div><div><dt>{t('common.commercialUse')}</dt><dd>{selected.license.commercialUse ? t('common.licenseAllowed') : t('common.notAuthorized')}</dd></div><div><dt>{t('common.modes')}</dt><dd>{selected.modes.join(' / ')}</dd></div></dl>{manualOnly && <p className={css.notice}>{manualHealthNotice}</p>}{selected.review?.preview === 'repository-card' && !(selected.marketScreenshots?.length) && <p className={css.notice}>{t('common.noRepositoryScreenshot')}</p>}{usesMarketScreenshots(selected) && <p className={css.notice}>{t('common.marketScreenshotNotice')}</p>}{selected.license.notice && <p className={css.notice}>{selected.license.notice}</p>}</article>
-            <aside className={css.changelog}><h3>{t('common.repositoryHealth')}</h3>{selected.health ? <><ol className={css.healthList}>{Object.entries(selected.health.checks).map(([key, value]) => <li key={key}><strong>{t(healthLabelKeys[key as keyof typeof healthLabelKeys])}</strong><span data-health={value}>{value === 'pass' ? t('common.healthPass') : t('common.healthImprove')}</span></li>)}</ol>{selected.health.suggestions.map(suggestion => <p className={css.healthSuggestion} key={suggestion}>{suggestion}</p>)}</> : <p className={css.healthSuggestion}>{t('common.waitingHealthScan')}</p>}<h3 className={css.collectionTitle}>{t('common.collectionInfo')}</h3><ol><li><strong>{selected.install.version}</strong><span>{t('common.updatedAt', { date: displayDate(selected.releaseUpdatedAt, t) })}</span></li><li><strong>Stars</strong><span>{t('common.starsUpdatedAt', { count: selected.githubStars, date: displayDate(selected.starsUpdatedAt, t) })}</span></li><li><strong>{t('common.compatibility')}</strong><span>{compatibilityUnverified ? t('common.waitingCompatibility') : t('common.supportsDsh', { range: selected.compatibility.dsh })}</span></li></ol><a href={selected.repo} target="_blank" rel="noreferrer">{t('common.repositoryDetails')}</a></aside>
+            <article><h3>{t('common.aboutSkin')}</h3><p>{selectedDescription}</p><div className={css.tags}>{selected.tags.map(tag => <Pill key={tag}>{tag}</Pill>)}</div><dl className={css.metadata}><div><dt>{t('common.license')}</dt><dd>{selected.license.code}</dd></div><div><dt>{t('common.commercialUse')}</dt><dd>{selected.license.commercialUse ? t('common.licenseAllowed') : t('common.notAuthorized')}</dd></div><div><dt>{t('common.modes')}</dt><dd>{selected.modes.join(' / ')}</dd></div></dl>{manualOnly && <p className={css.notice}>{manualInstallNotice}</p>}{selected.review?.preview === 'repository-card' && !(selected.marketScreenshots?.length) && <p className={css.notice}>{t('common.noRepositoryScreenshot')}</p>}{usesMarketScreenshots(selected) && <p className={css.notice}>{t('common.marketScreenshotNotice')}</p>}{selected.license.notice && <p className={css.notice}>{selected.license.notice}</p>}</article>
+            <aside className={css.changelog}><h3>{t('common.collectionInfo')}</h3><ol><li><strong>{selected.install.version}</strong><span>{t('common.updatedAt', { date: displayDate(selected.releaseUpdatedAt, t) })}</span></li><li><strong>Stars</strong><span>{t('common.starsUpdatedAt', { count: selected.githubStars, date: displayDate(selected.starsUpdatedAt, t) })}</span></li><li><strong>{t('common.compatibility')}</strong><span>{compatibilityUnverified ? t('common.waitingCompatibility') : t('common.supportsDsh', { range: selected.compatibility.dsh })}</span></li></ol><a href={selected.repo} target="_blank" rel="noreferrer">{t('common.repositoryDetails')}</a></aside>
           </div>
 
           <section className={css.recommendations}><h3>{t('common.moreRecommendations')}</h3><div>{recommendations.map(skin => renderHomeCard(skin, 'discover'))}</div></section>

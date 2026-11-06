@@ -31,6 +31,20 @@ export interface CompatibilityAdapter {
   key: 'locale' | string
 }
 
+export type LocalizedText = Partial<Record<'zh' | 'en', string>>
+
+export type DescriptionPolicy = 'show' | 'omit'
+
+export interface LocalizedSkinCopy {
+  name?: LocalizedText
+  description?: LocalizedText
+  descriptionPolicy?: DescriptionPolicy
+}
+
+export interface CatalogDisplayCopy {
+  skins: Record<string, LocalizedSkinCopy>
+}
+
 export interface DshRuntime {
   version: string | null
   capabilities: string[]
@@ -117,6 +131,7 @@ export interface CatalogFile {
   schemaVersion: number
   generatedAt: string
   skins: SkinEntry[]
+  displayCopy?: CatalogDisplayCopy
   /** Continuous per-skin-age heat data; kept outside entries for old-client compatibility. */
   heat?: Record<string, SkinHeat>
 }
@@ -141,6 +156,7 @@ export interface CatalogSkin extends SkinEntry {
   starsStale: boolean
   starsUpdatedAt: string
   recommendations: string[]
+  localizedCopy?: LocalizedSkinCopy
   heat?: SkinHeat
 }
 

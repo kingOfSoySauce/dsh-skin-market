@@ -137,7 +137,8 @@ const [starHistory, repoActivity] = await Promise.all([
   optionalJson('data/repo-activity.json'),
 ])
 const heat = buildHeatMap({ skins, history: starHistory, activity: repoActivity, today: dayNumber(new Date()) })
+const displayCopy = await optionalJson('data/catalog-copy.json')
 
-const catalog = buildCatalogWire(skins, { previous, heat })
+const catalog = buildCatalogWire(skins, { previous, heat, displayCopy })
 if (!checkOnly) await writeFile(catalogPath, `${JSON.stringify(catalog, null, 2)}\n`)
 console.log(`validated ${skins.length} skins${checkOnly ? ' (catalog not written)' : ''}`)

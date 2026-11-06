@@ -1,4 +1,5 @@
 import { decodeCatalogWire } from '../src/catalog-wire.ts'
+import { localizedSkinNameRecord } from '../src/localized-copy.ts'
 import type { SkinHeat } from '../src/types.ts'
 
 interface CatalogResponse {
@@ -52,6 +53,11 @@ export async function fetchLiveCatalog<T>(url: string, fetcher: CatalogFetcher =
   for (const skin of decoded.skins) {
     const heat = decoded.heat?.[skin.id]
     if (heat !== undefined) (skin as typeof skin & { heat?: SkinHeat }).heat = heat
+    const localizedCopy = decoded.displayCopy?.skins[skin.id]
+    if (localizedCopy !== undefined) {
+      ;(skin as typeof skin & { localizedCopy?: typeof localizedCopy }).localizedCopy = localizedCopy
+      skin.name = localizedSkinNameRecord(skin.name, localizedCopy)
+    }
   }
   return decoded.skins as T[]
 }

@@ -132,6 +132,45 @@ describe('standalone site preferences', () => {
 })
 
 describe('English standalone site rendering', () => {
+  it('repositions the compact search when the language changes header action widths', async () => {
+    let actionsLeft = 900
+    const rect = (left: number, top: number, width: number, height: number): DOMRect => ({
+      bottom: top + height,
+      height,
+      left,
+      right: left + width,
+      toJSON: () => ({}),
+      top,
+      width,
+      x: left,
+      y: top,
+    })
+    const getBoundingClientRect = vi.spyOn(HTMLElement.prototype, 'getBoundingClientRect').mockImplementation(function () {
+      if (this.classList.contains('feed-search-slot')) return rect(0, 0, 1000, 42)
+      if (this.classList.contains('topbar-main')) return rect(0, 0, 1000, 68)
+      if (this.classList.contains('topbar')) return rect(0, 0, 1000, 68)
+      if (this.classList.contains('brand')) return rect(0, 0, 180, 40)
+      if (this.classList.contains('top-actions')) return rect(actionsLeft, 0, 300, 60)
+      return rect(0, 0, 0, 0)
+    })
+
+    render(<SitePreferencesProvider initialLanguage="zh"><App skins={[skin]} /></SitePreferencesProvider>)
+    try {
+      const search = screen.getByRole('textbox', { name: '搜索皮肤、作者或标签' })
+      fireEvent.scroll(window)
+      await waitFor(() => expect(search.parentElement?.getAttribute('style')).toContain('position: fixed'))
+      const before = search.parentElement?.getAttribute('style')
+
+      actionsLeft = 780
+      fireEvent.click(screen.getByRole('button', { name: '语言' }))
+      const englishSearch = await screen.findByRole('textbox', { name: 'Search skins, authors, or tags' })
+      await waitFor(() => expect(englishSearch.parentElement?.getAttribute('style')).not.toBe(before))
+      expect(englishSearch.parentElement?.getAttribute('style')).toContain('left: 236px')
+    } finally {
+      getBoundingClientRect.mockRestore()
+    }
+  })
+
   it('exposes compact, labelled language and theme controls', () => {
     render(<SitePreferencesProvider initialLanguage="en"><App skins={[skin]} /></SitePreferencesProvider>)
 

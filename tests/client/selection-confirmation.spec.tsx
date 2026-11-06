@@ -22,7 +22,7 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', () => {
     },
     IconChevronLeftOutline14: icon, IconChevronDownOutline14: icon, IconCheckOutline16: icon, IconCopyOutline16: icon, IconDownloadOutline16: icon, IconLinkOutline16: icon, IconLoadingOutline16: icon,
     IconRefreshOutline16: icon, IconSearchOutline16: icon, IconTrashOutline16: icon,
-    IconChevronLeftOutlineRegular: icon, IconChevronDownOutlineRegular: icon, IconCheckOutlineRegular: icon, IconCopyOutlineRegular: icon, IconDownloadOutlineRegular: icon, IconLoadingOutlineRegular: icon,
+    IconChevronLeftOutlineRegular: icon, IconChevronDownOutlineRegular: icon, IconCheckOutlineRegular: icon, IconCloseOutlineRegular: icon, IconCopyOutlineRegular: icon, IconDownloadOutlineRegular: icon, IconLoadingOutlineRegular: icon,
     IconRefreshOutlineRegular: icon, IconSearchOutlineRegular: icon, IconTrashOutlineRegular: icon,
   }
 })

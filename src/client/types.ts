@@ -1,3 +1,5 @@
+import type { LocalizedSkinCopy } from '../types.ts'
+
 export type MarketHostKind = 'dsh' | 'desktop'
 
 import type { ConfigurationOverridePlan } from '../configuration-override-types.ts'
@@ -36,6 +38,7 @@ export interface CatalogSkin {
   name: { zh: string; en: string }
   author: string
   description: string
+  localizedCopy?: LocalizedSkinCopy
   repo: string
   subpath?: string
   package: string
