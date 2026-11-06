@@ -2911,13 +2911,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           })}
           {!catalogLoading && visibleCount < filtered.length && <div className={css.loadMoreHint} aria-hidden="true"><span /><span /></div>}
           {!catalogLoading && filtered.length === 0 && <p className={css.empty}>{t('common.noMatchingSkins')}</p>}
-          {!loading && filter === 'installed' && installedClientPlugins.map(plugin => <div className={`${css.skinCard} ${css.externalPlugin}`} key={plugin.package}>
-            <span className={css.skinCardBody}>
-              <span className={css.cardTitle}>{plugin.package}</span>
-              <span className={css.cardMetaLine}>{t('common.marketExternalPlugin')} · {plugin.version ?? t('common.versionUnknown')} · {plugin.registered ? t('common.registered', { rowIds: plugin.rowIds.join(', ') }) : t('common.loaderMissing')}</span>
-            </span>
-            <StatusLabel>{t('common.marketExternal')}</StatusLabel>
-          </div>)}
           {!loading && browserOpen && selected === undefined && error !== null && <div className={css.error} role="alert">{error}</div>}
         </div>
       </aside>

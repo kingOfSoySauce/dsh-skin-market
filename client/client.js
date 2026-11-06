@@ -6750,25 +6750,6 @@ window.__ModuleLoader__.load({
 												className: SkinMarket_module_css_default.empty,
 												children: t("common.noMatchingSkins")
 											}),
-											!loading && filter === "installed" && installedClientPlugins.map((plugin) => /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
-												className: `${SkinMarket_module_css_default.skinCard} ${SkinMarket_module_css_default.externalPlugin}`,
-												children: [/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
-													className: SkinMarket_module_css_default.skinCardBody,
-													children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("span", {
-														className: SkinMarket_module_css_default.cardTitle,
-														children: plugin.package
-													}), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
-														className: SkinMarket_module_css_default.cardMetaLine,
-														children: [
-															t("common.marketExternalPlugin"),
-															" · ",
-															plugin.version ?? t("common.versionUnknown"),
-															" · ",
-															plugin.registered ? t("common.registered", { rowIds: plugin.rowIds.join(", ") }) : t("common.loaderMissing")
-														]
-													})]
-												}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(StatusLabel, { children: t("common.marketExternal") })]
-											}, plugin.package)),
 											!loading && browserOpen && selected === void 0 && error !== null && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
 												className: SkinMarket_module_css_default.error,
 												role: "alert",

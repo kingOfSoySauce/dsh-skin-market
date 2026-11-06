@@ -352,7 +352,6 @@
 }
 
 .skinCard:hover { background: var(--dsw-specific-sidebar-nav-item-hover, var(--dsw-alias-interactive-bg-hover)); }
-.externalPlugin { min-height: 58px; cursor: default; border: 1px dashed var(--dsw-alias-border-l2); }
 .skinCard[data-selected="true"] { background: var(--dsw-specific-sidebar-nav-item-active, var(--dsw-alias-button-ghost-active-fill)); box-shadow: inset 0 0 0 0.5px var(--dsw-alias-button-ghost-active-border); }
 .skinCardPreview { display: block; width: 56px; height: 56px; flex: none; overflow: hidden; border-radius: var(--dsw-radius-sm); background: var(--dsw-alias-bg-layer-3); }
 .skinCardPreview > img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: .35; transition: opacity var(--ds-transition-duration) var(--ds-ease-in-out), transform var(--ds-transition-duration-slow) var(--ds-ease-in-out); }
