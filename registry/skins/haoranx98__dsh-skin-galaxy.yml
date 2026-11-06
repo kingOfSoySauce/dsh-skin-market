@@ -1,0 +1,6 @@
+url: https://github.com/haoranx98/dsh-skin-galaxy
+name:
+  zh: 星河 Galaxy
+  en: Galaxy
+author: haoranx98
+description: 原生 WebGPU 实时渲染的紫蓝星云皮肤：银河尘带斜贯视野，远近星点带视差与轻微闪烁，并有随机流星；深空配色适配 light/dark/system，无运行时 CDN、图片或额外依赖。
