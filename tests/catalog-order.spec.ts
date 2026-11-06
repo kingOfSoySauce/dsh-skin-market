@@ -77,6 +77,50 @@ describe('public catalog order', () => {
     expect(usesMarketScreenshots(entry)).toBe(false)
   })
 
+  it('honors an explicit GIF cover when it is a dynamic version of an upstream screenshot', () => {
+    const gif = 'https://pages.example/market-home.gif'
+    const entry = {
+      ...previewed,
+      listScreenshot: gif,
+      screenshots: ['preview.png', gif],
+    }
+
+    expect(getCatalogScreenshotUrls(entry)).toEqual([gif, 'preview.png'])
+    expect(getCatalogListScreenshot(entry)).toBe(gif)
+  })
+
+  it('honors an explicit market cover even when the source has usable screenshots', () => {
+    const market = 'https://pages.example/market-home.png'
+    const entry = {
+      ...previewed,
+      listScreenshot: market,
+      marketScreenshots: [market],
+    }
+
+    expect(getCatalogScreenshotUrls(entry)).toEqual([market, 'preview.png'])
+    expect(getCatalogListScreenshot(entry)).toBe(market)
+  })
+
+  it('drops an invalid explicit cover instead of returning it as a fallback', () => {
+    const entry = {
+      ...previewed,
+      listScreenshot: 'https://pages.example/missing.gif',
+      screenshots: ['preview.png'],
+    }
+
+    expect(getCatalogScreenshotUrls(entry)).toEqual(['preview.png'])
+    expect(getCatalogListScreenshot(entry)).toBe('preview.png')
+  })
+
+  it('keeps the client gallery at the registry limit', () => {
+    const entry = {
+      ...previewed,
+      screenshots: Array.from({ length: 9 }, (_, index) => `preview-${index}.png`),
+    }
+
+    expect(getCatalogScreenshotUrls(entry)).toHaveLength(8)
+  })
+
   it('uses market captures only when upstream screenshots are unavailable', () => {
     const entry = {
       ...previewed,

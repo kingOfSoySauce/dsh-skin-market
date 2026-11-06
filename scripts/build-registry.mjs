@@ -88,11 +88,11 @@ for (const file of files) {
   if (skin.listScreenshot) skin.listScreenshot = resolveScreenshotRef(skin.listScreenshot)
   const marketScreenshots = skin.marketScreenshots ?? []
   const screenshots = [...new Set(resolveScreenshotList(skin.screenshots))]
-  const display = displayScreenshots(marketScreenshots, screenshots, skin.subpath)
+  const display = displayScreenshots(marketScreenshots, screenshots, skin.subpath, skin.listScreenshot, skin.review?.preview)
   if (display.length === 0) console.warn(`${file}: no displayable screenshot; keeping the entry without media`)
   const configuredListScreenshot = skin.listScreenshot
   const listScreenshot = configuredListScreenshot !== undefined
-    ? (display.includes(configuredListScreenshot) ? configuredListScreenshot : display[0] ?? configuredListScreenshot)
+    ? (display.includes(configuredListScreenshot) ? configuredListScreenshot : display[0])
     : marketScreenshots.length > 0 ? display[0] : undefined
   const media = mediaForSources(display, listScreenshot ?? display[0])
   skins.push({ ...skin, ...(listScreenshot ? { listScreenshot } : {}), screenshots, ...(media ? { media } : {}) })

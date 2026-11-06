@@ -42,11 +42,11 @@ async function sourceUrls() {
     const skin = parse(await readFile(join(sourceDir, file), 'utf8'))
     const marketScreenshots = (skin.marketScreenshots ?? []).map(canonicalScreenshotUrl)
     const screenshots = [...new Set((skin.screenshots ?? []).map(canonicalScreenshotUrl))]
-    const display = displayScreenshots(marketScreenshots, screenshots, skin.subpath)
-    const configuredListScreenshot = skin.listScreenshot
+    const configuredListScreenshot = skin.listScreenshot === undefined ? undefined : canonicalScreenshotUrl(skin.listScreenshot)
+    const display = displayScreenshots(marketScreenshots, screenshots, skin.subpath, configuredListScreenshot, skin.review?.preview)
     const listScreenshot = configuredListScreenshot !== undefined && display.includes(configuredListScreenshot)
       ? configuredListScreenshot
-      : display[0] ?? configuredListScreenshot
+      : display[0]
     for (const source of [listScreenshot, ...display]) if (isRasterImageUrl(source)) urls.add(source)
   }
   const selected = requestedSource === undefined ? [...urls] : [...urls].filter(source => source === requestedSource)
