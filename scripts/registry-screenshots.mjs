@@ -5,6 +5,8 @@ export function mergeScreenshots(marketScreenshots = [], upstreamScreenshots = [
   return [...new Set([...marketScreenshots, ...upstream])].slice(0, 8)
 }
 
+export const MAX_DISPLAY_SCREENSHOTS = 8
+
 function matchingScreenshots(upstreamScreenshots, subpath) {
   if (subpath === undefined || subpath.trim() === '') return []
   const normalizedSubpath = subpath.replace(/^\/+|\/+$/g, '')
@@ -40,20 +42,31 @@ export function hasCrossPackageScreenshots(upstreamScreenshots = [], subpath) {
 
 /**
  * Build the renderable screenshot list without changing the source-of-truth
- * `screenshots` field. Repository-card URLs are never displayed when a
- * maintainer-provided market capture is available.
+ * `screenshots` field. An explicit listScreenshot is an editorial cover choice;
+ * repository-card URLs are never promoted as a cover.
  */
-export function displayScreenshots(marketScreenshots = [], upstreamScreenshots = [], subpath) {
+export function displayScreenshots(marketScreenshots = [], upstreamScreenshots = [], subpath, listScreenshot, reviewPreview = 'verified') {
   const upstream = scopedScreenshots(upstreamScreenshots, subpath)
   const contaminated = hasCrossPackageScreenshots(upstreamScreenshots, subpath)
-  const usableUpstream = upstream.filter(url => !isRepositoryPreviewUrl(url))
+  const usableUpstream = reviewPreview === 'repository-card' ? [] : upstream.filter(url => !isRepositoryPreviewUrl(url))
+  const preferred = listScreenshot !== undefined
+    && !isRepositoryPreviewUrl(listScreenshot)
+    && (marketScreenshots.includes(listScreenshot) || (reviewPreview !== 'repository-card' && upstream.includes(listScreenshot)))
+    ? listScreenshot
+    : undefined
+  const orderPreferred = display => {
+    const unique = [...new Set(display)]
+    if (preferred === undefined) return unique
+    return [preferred, ...unique.filter(source => source !== preferred)]
+  }
   if (contaminated) {
     const scopedDisplay = [...new Set([...marketScreenshots, ...usableUpstream])]
-    if (scopedDisplay.length > 0) return scopedDisplay.slice(0, 8)
+    if (preferred !== undefined && !scopedDisplay.includes(preferred)) scopedDisplay.unshift(preferred)
+    if (scopedDisplay.length > 0) return orderPreferred(scopedDisplay).slice(0, MAX_DISPLAY_SCREENSHOTS)
   }
-  if (usableUpstream.length > 0) return [...new Set(usableUpstream)].slice(0, 8)
-  if (marketScreenshots.length > 0) return [...new Set(marketScreenshots)].slice(0, 8)
-  return [...new Set(upstream)].slice(0, 8)
+  if (usableUpstream.length > 0) return orderPreferred(usableUpstream).slice(0, MAX_DISPLAY_SCREENSHOTS)
+  if (marketScreenshots.length > 0) return orderPreferred(marketScreenshots).slice(0, MAX_DISPLAY_SCREENSHOTS)
+  return orderPreferred(upstream).slice(0, MAX_DISPLAY_SCREENSHOTS)
 }
 
 export function isRepositoryPreviewUrl(url) {

@@ -29,6 +29,32 @@ describe('registry screenshot merge', () => {
     )).toEqual(['https://raw.example/original.png'])
   })
 
+  it('puts an explicit dynamic cover before other usable screenshots', () => {
+    expect(displayScreenshots(
+      ['https://pages.example/market.png'],
+      ['https://raw.example/original.png', 'https://pages.example/market.gif'],
+      undefined,
+      'https://pages.example/market.gif',
+    )).toEqual([
+      'https://pages.example/market.gif',
+      'https://raw.example/original.png',
+    ])
+  })
+
+  it('uses the same eight-image limit as the client', () => {
+    expect(displayScreenshots([], Array.from({ length: 9 }, (_, index) => `https://raw.example/${index}.png`))).toHaveLength(8)
+  })
+
+  it('does not promote an upstream cover when the entry is marked repository-card', () => {
+    expect(displayScreenshots(
+      ['https://pages.example/market.gif'],
+      ['https://raw.example/original.png'],
+      undefined,
+      'https://raw.example/original.png',
+      'repository-card',
+    )).toEqual(['https://pages.example/market.gif'])
+  })
+
   it('uses market captures and the current package when a monorepo list mixes packages', () => {
     expect(displayScreenshots(
       ['https://pages.example/market.png'],

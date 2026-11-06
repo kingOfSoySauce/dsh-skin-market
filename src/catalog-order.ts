@@ -6,6 +6,8 @@ export interface PreviewableCatalogEntry {
   screenshots: string[]
 }
 
+export const MAX_CATALOG_SCREENSHOTS = 8
+
 function isRepositoryPreviewUrl(url: string): boolean {
   return url.includes('opengraph.githubassets.com/')
     || url.includes('repository-images.githubusercontent.com/')
@@ -40,6 +42,19 @@ function hasCrossPackageScreenshots(upstreamScreenshots: string[], subpath: stri
   return scoped.length > 0 && scoped.length < unique.length
 }
 
+function preferScreenshot(screenshots: string[], preferred: string | undefined): string[] {
+  const unique = [...new Set(screenshots)]
+  if (preferred === undefined) return unique
+  return [preferred, ...unique.filter(source => source !== preferred)]
+}
+
+function explicitScreenshot(entry: PreviewableCatalogEntry, market: string[], upstream: string[]): string | undefined {
+  const preferred = entry.listScreenshot
+  if (preferred === undefined || isRepositoryPreviewUrl(preferred)) return undefined
+  if (market.includes(preferred)) return preferred
+  return entry.review?.preview === 'repository-card' || !upstream.includes(preferred) ? undefined : preferred
+}
+
 export function usesMarketScreenshots(entry: PreviewableCatalogEntry): boolean {
   const market = entry.marketScreenshots ?? []
   const upstream = entry.screenshots
@@ -50,8 +65,9 @@ export function usesMarketScreenshots(entry: PreviewableCatalogEntry): boolean {
 }
 
 /**
- * Returns the URLs that should actually be rendered. Market captures are
- * intentionally kept separate from the source-of-truth repository screenshots.
+ * Returns the URLs that should actually be rendered. An explicit listScreenshot
+ * is an editorial cover choice and may intentionally promote a market capture
+ * or dynamic GIF ahead of the source-of-truth repository screenshots.
  */
 export function getCatalogScreenshotUrls(entry: PreviewableCatalogEntry): string[] {
   const market = entry.marketScreenshots ?? []
@@ -61,17 +77,19 @@ export function getCatalogScreenshotUrls(entry: PreviewableCatalogEntry): string
   const usableUpstream = entry.review?.preview === 'repository-card'
     ? []
     : scopedUpstream.filter(url => !isRepositoryPreviewUrl(url))
+  const preferred = explicitScreenshot(entry, market, scopedUpstream)
   if (contaminated) {
     const scopedDisplay = [...new Set([...market, ...usableUpstream])]
-    if (scopedDisplay.length > 0) return scopedDisplay
+    if (preferred !== undefined && !scopedDisplay.includes(preferred)) scopedDisplay.unshift(preferred)
+    if (scopedDisplay.length > 0) return preferScreenshot(scopedDisplay, preferred).slice(0, MAX_CATALOG_SCREENSHOTS)
   }
-  if (usableUpstream.length > 0) return [...new Set(usableUpstream)]
-  if (market.length > 0) return [...new Set(market)]
-  return [...new Set([...market, ...scopedUpstream])]
+  if (usableUpstream.length > 0) return preferScreenshot(usableUpstream, preferred).slice(0, MAX_CATALOG_SCREENSHOTS)
+  if (market.length > 0) return preferScreenshot(market, preferred).slice(0, MAX_CATALOG_SCREENSHOTS)
+  return preferScreenshot([...new Set([...market, ...scopedUpstream])], preferred).slice(0, MAX_CATALOG_SCREENSHOTS)
 }
 
 export function getCatalogListScreenshot(entry: PreviewableCatalogEntry): string | undefined {
-  return getCatalogScreenshotUrls(entry)[0] ?? entry.listScreenshot
+  return getCatalogScreenshotUrls(entry)[0]
 }
 
 /** Keep entries with real UI imagery ahead of repository-only placeholders. */

@@ -8,10 +8,10 @@ const root = resolve(fileURLToPath(new URL('..', import.meta.url)))
 const outputDir = resolve(process.env.SKIN_MEDIA_OUTPUT_DIR ?? join(root, 'site/public/skin-media', 'v1'))
 
 function sourceUrlsForSkin(skin) {
-  const display = displayScreenshots(skin.marketScreenshots ?? [], skin.screenshots ?? [], skin.subpath)
+  const display = displayScreenshots(skin.marketScreenshots ?? [], skin.screenshots ?? [], skin.subpath, skin.listScreenshot, skin.review?.preview)
   const list = skin.listScreenshot !== undefined && display.includes(skin.listScreenshot)
     ? skin.listScreenshot
-    : display[0] ?? skin.listScreenshot
+    : display[0]
   return [...new Set([list, ...display].filter(isRasterImageUrl))]
 }
 
