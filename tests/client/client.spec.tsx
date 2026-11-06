@@ -1229,6 +1229,26 @@ describe('client market', () => {
     expect(within(screen.getByRole('complementary', { name: '皮肤列表' })).getByRole('group', { name: '排序方式' })).toBeTruthy()
   })
 
+  it('does not render client plugins outside the market catalog in the installed list', async () => {
+    const externalPackage = '@captain1275/dsh-client-ui-skin-blue-fantasy'
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+      ok: true,
+      json: async () => url.endsWith('/catalog') ? { skins: [skin] } : {
+        skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }],
+        installedClientPlugins: [{ package: externalPackage, version: '0.3.1', spec: 'github:CAPTAIN1275/dsh-ui-web', rowIds: [], registered: false }],
+      },
+    })))
+
+    render(<SkinMarketSection t={key => key} />)
+    fireEvent.click(await screen.findByRole('button', { name: /测试皮肤 已安装卡片/ }))
+
+    expect(screen.getByRole('button', { name: '已安装', pressed: true })).toBeTruthy()
+    expect(within(screen.getByRole('complementary', { name: '皮肤列表' })).getByRole('button', { name: /测试皮肤/ })).toBeTruthy()
+    expect(screen.queryByText(externalPackage)).toBeNull()
+    expect(screen.queryByText('市场外客户端插件')).toBeNull()
+    expect(screen.queryByText('尚未发现 loader 注册项')).toBeNull()
+  })
+
   it('shows installed skeletons while runtime state loads and hides the section when empty', async () => {
     let resolveState!: (value: { skins: never[] }) => void
     const state = new Promise<{ skins: never[] }>(resolve => { resolveState = resolve })
