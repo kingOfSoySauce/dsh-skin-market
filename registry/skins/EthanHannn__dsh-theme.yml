@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:EthanHannn/dsh-theme#4a0152debaa11f75466f92587993513c69b5857b
+  target: github:EthanHannn/dsh-theme#4ae296cd9a8468c5c0a6ad60eb33ee4fcbf86766
   version: 0.2.0
-  commit: 4a0152debaa11f75466f92587993513c69b5857b
+  commit: 4ae296cd9a8468c5c0a6ad60eb33ee4fcbf86766
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
@@ -32,7 +32,7 @@ screenshots:
 listScreenshot: https://raw.githubusercontent.com/EthanHannn/dsh-theme/4a0152debaa11f75466f92587993513c69b5857b/docs/screenshots/141-oshi-backstage-starlight-light.webp
 review:
   compatibility: verified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -45,20 +45,20 @@ health:
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: 4a0152debaa11f75466f92587993513c69b5857b
+    commit: 4ae296cd9a8468c5c0a6ad60eb33ee4fcbf86766
     packageVersion: 0.2.0
     scannerVersion: static-v2
     dshVersion: ^0.2.1-rc.3
     mode: static
     result: pass
-    checkedAt: 2026-11-05T00:23:46.579Z
+    checkedAt: 2026-11-05T20:40:56.269Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-05T00:23:49.738Z
-metadataUpdatedAt: 2026-11-05T00:23:49.738Z
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-06T00:08:18.130Z
+metadataUpdatedAt: 2026-11-06T00:08:18.130Z
 starsUpdatedAt: 2026-11-04T14:29:50+08:00
-updatedAt: 2026-11-05T00:23:49.738Z
+updatedAt: 2026-11-06T00:08:18.130Z
