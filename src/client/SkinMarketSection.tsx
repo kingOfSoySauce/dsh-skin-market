@@ -890,7 +890,7 @@ function SkinSpark({ values, from, language }: { values: number[] | undefined; f
   const current = values[values.length - 1]
   const active = hovered === null ? undefined : geometry.points[hovered]
   const activeValue = active === undefined ? undefined : Math.round(active.value)
-  const area = `${geometry.d} L${VIEW_W} ${VIEW_H} L${geometry.points[0].x} ${VIEW_H} Z`
+  const area = `${geometry.d} L${VIEW_W} ${geometry.end.y} L${VIEW_W} ${VIEW_H} L${geometry.points[0].x} ${VIEW_H} Z`
   return <figure className={css.spark}>
     <svg
       viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
@@ -914,7 +914,7 @@ function SkinSpark({ values, from, language }: { values: number[] | undefined; f
           <stop offset="100%" className={css.sparkFillBottom} />
         </linearGradient>
         <linearGradient id={`${gradientId}-x`} x1="0" y1="0" x2="1" y2="0">
-          <stop offset="84%" stopColor="#fff" stopOpacity="1" />
+          <stop offset="93%" stopColor="#fff" stopOpacity="1" />
           <stop offset="100%" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
         <mask id={maskId}>
