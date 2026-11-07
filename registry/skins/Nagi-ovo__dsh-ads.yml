@@ -16,18 +16,12 @@ modes:
   - light
   - dark
 install:
-  target: github:Nagi-ovo/dsh-ads#a5854a37bbe24078878740ae4567e59cc75c29ec
-  version: 0.1.3
-  commit: a5854a37bbe24078878740ae4567e59cc75c29ec
+  target: github:Nagi-ovo/dsh-ads#76a3bcec64ba83abecbacbd114ce08861921ade4
+  version: 0.1.4
+  commit: 76a3bcec64ba83abecbacbd114ce08861921ade4
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  npm:
-    name: "@nagi-ovo/dsh-ads"
-    version: 0.1.3
-    integrity: sha512-7RMKGii5av9fUu9/bYSHyIRFwNjnApNVI64mtfy5B2Buu3aUoQrk4Y2BDJ+9BtfZTnw1O6Fhfb9UwmvoTqIc4Q==
-    repository: https://github.com/Nagi-ovo/dsh-ads
-    gitHead: a5854a37bbe24078878740ae4567e59cc75c29ec
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -56,20 +50,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: a5854a37bbe24078878740ae4567e59cc75c29ec
-    packageVersion: 0.1.3
+    commit: 76a3bcec64ba83abecbacbd114ce08861921ade4
+    packageVersion: 0.1.4
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
     mode: static
     result: pass
-    checkedAt: 2026-10-20T22:15:00.987Z
+    checkedAt: 2026-11-07T05:33:42.741Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 142
 starsSnapshot: 712
-releaseUpdatedAt: 2026-10-21T22:16:55.918Z
-metadataUpdatedAt: 2026-10-20T22:15:03.327Z
+releaseUpdatedAt: 2026-11-07T05:33:45.264Z
+metadataUpdatedAt: 2026-11-07T05:33:45.264Z
 starsUpdatedAt: 2026-11-06T00:08:18.212Z
-updatedAt: 2026-11-06T00:08:18.212Z
+updatedAt: 2026-11-07T05:33:45.264Z

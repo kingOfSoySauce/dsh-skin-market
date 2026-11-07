@@ -15,16 +15,25 @@ tags:
 modes:
   - dark
 install:
-  target: github:Sutera-Diffusus/dsh-whale-musume#4e6d06262257a134b81cb9b1ce85a224cd3a600b
-  version: 2.5.1
-  commit: 4e6d06262257a134b81cb9b1ce85a224cd3a600b
+  target: github:Sutera-Diffusus/dsh-whale-musume#7d21771b69b0f2510ceaad2d975ee5052851156f
+  version: 2.5.2
+  commit: 7d21771b69b0f2510ceaad2d975ee5052851156f
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: dsh-whale-musume
+    version: 2.5.2
+    integrity: sha512-zDKDRl8urON/4DEbgZuQ1KrJlsrtCMXOgQCwKm5H9Ju46TWdJdkWkjPOmhylxhu4WO7tWzz+cno4CQ890QRi7g==
+    repository: https://github.com/Sutera-Diffusus/dsh-whale-musume
+    gitHead: 7d21771b69b0f2510ceaad2d975ee5052851156f
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.png
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png
   - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/preview-idle-coffee.png
@@ -44,23 +53,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 4e6d06262257a134b81cb9b1ce85a224cd3a600b
-    packageVersion: 2.5.1
+    commit: 7d21771b69b0f2510ceaad2d975ee5052851156f
+    packageVersion: 2.5.2
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-11-05T20:40:38.134Z
+    checkedAt: 2026-11-07T05:33:43.189Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 203
-marketScreenshots:
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.png
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/conversation.png
 featuredRank: 1033
-releaseUpdatedAt: 2026-11-06T00:08:18.130Z
-metadataUpdatedAt: 2026-11-06T00:08:18.130Z
-starsUpdatedAt: 2026-11-06T00:08:18.130Z
-updatedAt: 2026-11-06T00:08:18.130Z
+starsSnapshot: 207
+releaseUpdatedAt: 2026-11-07T05:33:44.495Z
+metadataUpdatedAt: 2026-11-07T05:33:44.495Z
+starsUpdatedAt: 2026-11-07T05:33:44.495Z
+updatedAt: 2026-11-07T05:33:44.495Z

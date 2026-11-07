@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lsjspl/dsh-reel#d3b19ffc012201f4444b6d7279e4caf8865e571f
-  version: 0.1.6
-  commit: d3b19ffc012201f4444b6d7279e4caf8865e571f
+  target: github:lsjspl/dsh-reel#d8feaf7500d39f880150142bdac4de4aedd08aa2
+  version: 0.2.0
+  commit: d8feaf7500d39f880150142bdac4de4aedd08aa2
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -47,20 +47,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: d3b19ffc012201f4444b6d7279e4caf8865e571f
-    packageVersion: 0.1.6
+    commit: d8feaf7500d39f880150142bdac4de4aedd08aa2
+    packageVersion: 0.2.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:08:36.370Z
+    checkedAt: 2026-11-07T05:33:58.014Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-07T05:34:00.524Z
+metadataUpdatedAt: 2026-11-07T05:34:00.524Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:00:28.784Z
+updatedAt: 2026-11-07T05:34:00.524Z

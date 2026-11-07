@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-06T00:09:17.241Z",
+  "generatedAt": "2026-11-07T05:35:17.232Z",
   "historyDays": 71,
   "earliestObservedDay": 20681,
   "repos": {
@@ -3018,11 +3018,16 @@
           "commits": 3,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-06": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 148,
-        "pulls": 22,
+        "pulls": 23,
         "issues": 0
       },
       "forks": 0,
@@ -3460,11 +3465,17 @@
     "eternalnight996/dsh-theme": {
       "owner": "EternalNight996",
       "createdAt": "2026-08-22T13:28:38Z",
-      "daily": {},
+      "daily": {
+        "2026-11-06": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 0,
       "watchers": 0,
@@ -4240,6 +4251,19 @@
     "hanyi7867069-create/dsh-moonrise": {
       "owner": "hanyi7867069-create",
       "createdAt": "2026-08-17T09:27:51Z",
+      "daily": {},
+      "totals": {
+        "commits": 0,
+        "pulls": 0,
+        "issues": 0
+      },
+      "forks": 0,
+      "watchers": 0,
+      "truncated": false
+    },
+    "haoranx98/dsh-skin-galaxy": {
+      "owner": "haoranx98",
+      "createdAt": null,
       "daily": {},
       "totals": {
         "commits": 0,
@@ -5928,12 +5952,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-06": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 2
         }
       },
       "totals": {
         "commits": 0,
-        "pulls": 1,
-        "issues": 2
+        "pulls": 2,
+        "issues": 4
       },
       "forks": 1,
       "watchers": 0,
@@ -8745,12 +8774,22 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-06": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        },
+        "2026-11-07": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 247,
         "pulls": 2,
-        "issues": 34
+        "issues": 36
       },
       "forks": 1,
       "watchers": 0,
@@ -8769,12 +8808,22 @@
           "commits": 0,
           "pulls": 2,
           "issues": 8
+        },
+        "2026-11-06": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 6
+        },
+        "2026-11-07": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 2
         }
       },
       "totals": {
         "commits": 0,
-        "pulls": 5,
-        "issues": 19
+        "pulls": 6,
+        "issues": 27
       },
       "forks": 0,
       "watchers": 0,
@@ -10396,12 +10445,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 3
+        },
+        "2026-11-06": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 2
         }
       },
       "totals": {
         "commits": 439,
         "pulls": 29,
-        "issues": 107
+        "issues": 109
       },
       "forks": 88,
       "watchers": 3,
@@ -12017,12 +12071,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-06": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 216,
         "pulls": 3,
-        "issues": 22
+        "issues": 23
       },
       "forks": 3,
       "watchers": 0,
@@ -12585,11 +12644,17 @@
     "xiaoyuxixi333/whale-fantasy": {
       "owner": "xiaoyuxixi333",
       "createdAt": "2026-10-23T08:14:30Z",
-      "daily": {},
+      "daily": {
+        "2026-11-06": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
+        }
+      },
       "totals": {
         "commits": 0,
         "pulls": 0,
-        "issues": 0
+        "issues": 1
       },
       "forks": 1,
       "watchers": 0,
@@ -12911,12 +12976,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 2
+        },
+        "2026-11-06": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 8,
         "pulls": 5,
-        "issues": 8
+        "issues": 9
       },
       "forks": 0,
       "watchers": 0,
@@ -13259,12 +13329,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 1
+        },
+        "2026-11-06": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 122,
         "pulls": 17,
-        "issues": 18
+        "issues": 19
       },
       "forks": 9,
       "watchers": 1,

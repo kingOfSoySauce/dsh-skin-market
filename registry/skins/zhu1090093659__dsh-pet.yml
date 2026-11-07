@@ -16,19 +16,13 @@ modes:
   - light
   - dark
 install:
-  target: github:zhu1090093659/dsh-pet#d19284a539618e5eadb6c263d842008a2b600bb0
+  target: github:zhu1090093659/dsh-pet#169a94e559fa762c4802fa677a91ad4f385545c6
   version: 0.4.15
-  commit: d19284a539618e5eadb6c263d842008a2b600bb0
+  commit: 169a94e559fa762c4802fa677a91ad4f385545c6
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
-  allowBuild: "@linxin666/dsh-pet@https://codeload.github.com/zhu1090093659/dsh-pet/tar.gz/d19284a539618e5eadb6c263d842008a2b600bb0"
-  npm:
-    name: "@linxin666/dsh-pet"
-    version: 0.4.15
-    integrity: sha512-Th0TdYxedPCmqkg7c3zoWJiEc93YDS3LWuo6RRetUTFNdX6G4SQ8C1CXOwPLQpG6kRS11KHluzZLt+VeYEZnrg==
-    repository: https://github.com/zhu1090093659/dsh-pet
-    gitHead: d19284a539618e5eadb6c263d842008a2b600bb0
+  allowBuild: "@linxin666/dsh-pet@https://codeload.github.com/zhu1090093659/dsh-pet/tar.gz/169a94e559fa762c4802fa677a91ad4f385545c6"
 compatibility:
   dsh: ">=0.2.1-rc.3"
   platform:
@@ -53,15 +47,15 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 >=0.2.1-rc.3 未被本次检测范围 ^0.2.2-rc.1 完全覆盖（固定版本 d19284a539618e5eadb6c263d842008a2b600bb0）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.2.1-rc.3 未被本次检测范围 ^0.2.2-rc.1 完全覆盖（固定版本 169a94e559fa762c4802fa677a91ad4f385545c6）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: d19284a539618e5eadb6c263d842008a2b600bb0
+    commit: 169a94e559fa762c4802fa677a91ad4f385545c6
     packageVersion: 0.4.15
     scannerVersion: static-v2
     dshVersion: ^0.2.2-rc.1
     mode: static
     result: unknown
-    checkedAt: 2026-11-05T00:23:29.036Z
+    checkedAt: 2026-11-07T05:33:45.484Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -69,8 +63,8 @@ license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 66
-releaseUpdatedAt: 2026-11-05T00:23:31.142Z
-metadataUpdatedAt: 2026-11-05T00:23:31.142Z
-starsUpdatedAt: 2026-11-05T00:23:31.142Z
-updatedAt: 2026-11-05T00:23:31.142Z
+starsSnapshot: 67
+releaseUpdatedAt: 2026-11-07T05:33:46.602Z
+metadataUpdatedAt: 2026-11-07T05:33:46.602Z
+starsUpdatedAt: 2026-11-07T05:33:46.602Z
+updatedAt: 2026-11-07T05:33:46.602Z

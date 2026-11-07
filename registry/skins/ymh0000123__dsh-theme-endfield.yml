@@ -17,16 +17,25 @@ tags:
 modes:
   - dark
 install:
-  target: github:ymh0000123/dsh-theme-endfield#ada9396a957633a40bdad89ff084b0136b9515b4
-  version: 1.2.3
-  commit: ada9396a957633a40bdad89ff084b0136b9515b4
+  target: github:ymh0000123/dsh-theme-endfield#32bb43317ae9f35e47cdabae34ba1f2ad7ddfbc2
+  version: 1.2.4
+  commit: 32bb43317ae9f35e47cdabae34ba1f2ad7ddfbc2
   desktop:
     mode: manual-only
     reason: npm-package-not-found
+  npm:
+    name: dsh-theme-endfield
+    version: 1.2.4
+    integrity: sha512-YQN9kdST6BtjFI6b/Jn0d3mBz0SbJ55HjHPfUBx1UL8ebrc5JFWCeWQhNFtIg8aFkHs3kc3Xw3iiuxqIREwVJQ==
+    repository: https://github.com/ymh0000123/dsh-theme-endfield
+    gitHead: 32bb43317ae9f35e47cdabae34ba1f2ad7ddfbc2
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.png
+  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots1.webp
   - https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots2.webp
@@ -39,31 +48,27 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: ada9396a957633a40bdad89ff084b0136b9515b4
-    packageVersion: 1.2.3
+    commit: 32bb43317ae9f35e47cdabae34ba1f2ad7ddfbc2
+    packageVersion: 1.2.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T23:01:04.633Z
+    checkedAt: 2026-11-07T05:33:43.793Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 160
-marketScreenshots:
-  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.png
-  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/conversation.png
 featuredRank: 154
-releaseUpdatedAt: 2026-10-30T23:01:05.165Z
-metadataUpdatedAt: 2026-10-31T04:39:10.957Z
-starsUpdatedAt: 2026-11-06T00:08:18.130Z
-updatedAt: 2026-11-06T00:08:18.130Z
+starsSnapshot: 161
+releaseUpdatedAt: 2026-11-07T05:33:44.550Z
+metadataUpdatedAt: 2026-11-07T05:33:44.550Z
+starsUpdatedAt: 2026-11-07T05:33:44.550Z
+updatedAt: 2026-11-07T05:33:44.550Z

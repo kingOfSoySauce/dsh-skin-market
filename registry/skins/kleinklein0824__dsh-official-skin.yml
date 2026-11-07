@@ -14,21 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:kleinklein0824/dsh-official-skin#0b817f109959bb3f19eef1a590d918bc5d69bb67
-  version: 1.1.5
-  commit: 0b817f109959bb3f19eef1a590d918bc5d69bb67
+  target: github:kleinklein0824/dsh-official-skin#2e9f93060ed10f043843e69c53bb79985bdd0265
+  version: 1.1.6
+  commit: 2e9f93060ed10f043843e69c53bb79985bdd0265
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-official-skin
-    packageVersion: 1.1.5
-    integrity: sha512-BuFDRbRa88QwVAKbtaOjr1njeMEtdn8+fNT+BpoklmkWP7IxgD1vv+UxAcJRiNBmIv0w394TYtXySMzxXliW1Q==
+    packageVersion: 1.1.6
+    integrity: sha512-lsiIQHiaMHiWqCYR9lKSLrei7zs1npzED13vfS1TPHhQmmClIYBPBhj9ljOGhHl/4B3wY0YVciFsIvcmoidY9g==
   npm:
     name: dsh-official-skin
-    version: 1.1.5
-    integrity: sha512-BuFDRbRa88QwVAKbtaOjr1njeMEtdn8+fNT+BpoklmkWP7IxgD1vv+UxAcJRiNBmIv0w394TYtXySMzxXliW1Q==
+    version: 1.1.6
+    integrity: sha512-lsiIQHiaMHiWqCYR9lKSLrei7zs1npzED13vfS1TPHhQmmClIYBPBhj9ljOGhHl/4B3wY0YVciFsIvcmoidY9g==
     repository: https://github.com/kleinklein0824/dsh-official-skin
-    gitHead: 0b817f109959bb3f19eef1a590d918bc5d69bb67
+    gitHead: 2e9f93060ed10f043843e69c53bb79985bdd0265
 compatibility:
   dsh: unverified
   platform:
@@ -52,19 +52,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 0b817f109959bb3f19eef1a590d918bc5d69bb67
-    packageVersion: 1.1.5
+    commit: 2e9f93060ed10f043843e69c53bb79985bdd0265
+    packageVersion: 1.1.6
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-05T00:23:59.698Z
+    checkedAt: 2026-11-07T05:34:15.655Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-05T00:24:01.100Z
-metadataUpdatedAt: 2026-11-05T00:24:01.100Z
+releaseUpdatedAt: 2026-11-07T05:34:16.291Z
+metadataUpdatedAt: 2026-11-07T05:34:16.291Z
 starsUpdatedAt: 2026-11-04T01:48:23.346Z
-updatedAt: 2026-11-05T00:24:01.100Z
+updatedAt: 2026-11-07T05:34:16.291Z

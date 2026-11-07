@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:YangShen-SWE/dsh-plugin-simple-pet#44c1d58372af45eca9473950b9ec0e01abea2d6a
-  version: 1.1.7
-  commit: 44c1d58372af45eca9473950b9ec0e01abea2d6a
+  target: github:YangShen-SWE/dsh-plugin-simple-pet#8975f7879fd04f30bd7e4d8aa2301943c1ed08d2
+  version: 1.1.8
+  commit: 8975f7879fd04f30bd7e4d8aa2301943c1ed08d2
   desktop:
     mode: manual-only
     reason: 原生宠物窗口和会话联动尚未完成官方 Desktop 实机验收。
@@ -42,21 +42,21 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 44c1d58372af45eca9473950b9ec0e01abea2d6a
-    packageVersion: 1.1.7
+    commit: 8975f7879fd04f30bd7e4d8aa2301943c1ed08d2
+    packageVersion: 1.1.8
     scannerVersion: static-v2
     dshVersion: 0.2.0-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-11-04T00:04:33.794Z
+    checkedAt: 2026-11-07T05:34:10.830Z
     findings: []
 license:
   code: SEE LICENSE
   commercialUse: false
   notice: 代码MIT；默认图集允许随原样插件分发并保留声明，单独复用或用于其他产品须另获授权。
-starsSnapshot: 1
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-04T00:04:35.227Z
-metadataUpdatedAt: 2026-11-04T00:04:35.227Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-07T05:34:12.370Z
+metadataUpdatedAt: 2026-11-07T05:34:12.370Z
 starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-11-04T00:04:35.227Z
+updatedAt: 2026-11-07T05:34:12.370Z

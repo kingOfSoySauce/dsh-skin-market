@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:laoduu/DeepSeek-Harness-yizi-themes#b55f29c6fd771a7a001c2e4a793f2dbdd23020cb
-  version: 0.5.6
-  commit: b55f29c6fd771a7a001c2e4a793f2dbdd23020cb
+  target: github:laoduu/DeepSeek-Harness-yizi-themes#99fa4bfea97a3be3b9a06213e44c1a19b5a0c864
+  version: 0.5.8
+  commit: 99fa4bfea97a3be3b9a06213e44c1a19b5a0c864
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  allowBuild: dsh-yizi-themes@https://codeload.github.com/laoduu/DeepSeek-Harness-yizi-themes/tar.gz/b55f29c6fd771a7a001c2e4a793f2dbdd23020cb
+  allowBuild: dsh-yizi-themes@https://codeload.github.com/laoduu/DeepSeek-Harness-yizi-themes/tar.gz/99fa4bfea97a3be3b9a06213e44c1a19b5a0c864
 compatibility:
   dsh: 0.1.0-rc.8
   platform:
@@ -50,13 +50,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: b55f29c6fd771a7a001c2e4a793f2dbdd23020cb
-    packageVersion: 0.5.6
+    commit: 99fa4bfea97a3be3b9a06213e44c1a19b5a0c864
+    packageVersion: 0.5.8
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.8
     mode: static
     result: unknown
-    checkedAt: 2026-10-30T03:53:36.304Z
+    checkedAt: 2026-11-07T05:33:52.114Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -65,7 +65,7 @@ license:
   commercialUse: true
 featuredRank: 83
 starsSnapshot: 5
-releaseUpdatedAt: 2026-10-30T03:53:37.014Z
-metadataUpdatedAt: 2026-10-30T03:53:37.014Z
+releaseUpdatedAt: 2026-11-07T05:33:52.916Z
+metadataUpdatedAt: 2026-11-07T05:33:52.916Z
 starsUpdatedAt: 2026-10-24T21:31:34.957Z
-updatedAt: 2026-10-30T03:53:37.014Z
+updatedAt: 2026-11-07T05:33:52.916Z

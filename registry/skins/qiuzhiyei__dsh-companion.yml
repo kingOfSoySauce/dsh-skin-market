@@ -14,18 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:qiuzhiyei/dsh-companion#aea8890217ab9466997317ecb437d3245824b0d8
-  version: 2.2.0
-  commit: aea8890217ab9466997317ecb437d3245824b0d8
+  target: github:qiuzhiyei/dsh-companion#ae95d902df214b9df681ee8eb4d67c1f5adc06e7
+  version: 2.2.1
+  commit: ae95d902df214b9df681ee8eb4d67c1f5adc06e7
   desktop:
     mode: manual-only
     reason: 首次使用需要 Electron 辅助进程和原生桌宠验收。
   npm:
     name: "@qiuzhiyei/dsh-companion"
-    version: 2.2.0
-    integrity: sha512-rdAgwL/nlBPtTn9kpP2sPfsJ4cwke86/x49xuQYW/tlBlc/kQhoev1zAJ/0uYxMfuIUgZr9n5RVoHe+6RbNvDQ==
+    version: 2.2.1
+    integrity: sha512-wsojtp4/IC5Qt/Ps8TlX3P+E6qcAeTyjH26nzx7JZH9/0CqdHMkn6du5K+pvLv2lTHuDxZubmHrwkrJUBk8+Nw==
     repository: https://github.com/qiuzhiyei/dsh-companion
-    gitHead: aea8890217ab9466997317ecb437d3245824b0d8
+    gitHead: ae95d902df214b9df681ee8eb4d67c1f5adc06e7
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
@@ -47,20 +47,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: aea8890217ab9466997317ecb437d3245824b0d8
-    packageVersion: 2.2.0
+    commit: ae95d902df214b9df681ee8eb4d67c1f5adc06e7
+    packageVersion: 2.2.1
     scannerVersion: static-v2
     dshVersion: 0.2.0-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-11-05T20:40:57.709Z
+    checkedAt: 2026-11-07T05:34:08.894Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-06T00:08:18.130Z
-metadataUpdatedAt: 2026-11-06T00:08:18.130Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-07T05:34:10.393Z
+metadataUpdatedAt: 2026-11-07T05:34:10.393Z
 starsUpdatedAt: 2026-10-31T11:28:16Z
-updatedAt: 2026-11-06T00:08:18.130Z
+updatedAt: 2026-11-07T05:34:10.393Z

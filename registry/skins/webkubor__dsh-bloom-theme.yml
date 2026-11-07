@@ -16,12 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#d9dda1f7237a10e8b8c148277889782bf2aa8ebe
-  version: 0.25.1
-  commit: d9dda1f7237a10e8b8c148277889782bf2aa8ebe
+  target: github:webkubor/dsh-bloom-theme#74b3d1feb6ed1869ce78b5967077f5451e69c942
+  version: 0.26.0
+  commit: 74b3d1feb6ed1869ce78b5967077f5451e69c942
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: dsh-bloom-theme
+    packageVersion: 0.26.0
+    integrity: sha512-tUtfTtvxMMiW7XrXETKuQCxEG8tIDl1/Un4ZIiqbSJek/ixINKIOZpWzDx2xuGCF+zQjEZbviEOMMssnIH8Kxw==
+  npm:
+    name: dsh-bloom-theme
+    version: 0.26.0
+    integrity: sha512-tUtfTtvxMMiW7XrXETKuQCxEG8tIDl1/Un4ZIiqbSJek/ixINKIOZpWzDx2xuGCF+zQjEZbviEOMMssnIH8Kxw==
+    repository: https://github.com/webkubor/dsh-bloom-theme
+    gitHead: 74b3d1feb6ed1869ce78b5967077f5451e69c942
 compatibility:
   dsh: unverified
   platform:
@@ -46,24 +55,25 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: d9dda1f7237a10e8b8c148277889782bf2aa8ebe
-    packageVersion: 0.25.1
+    commit: 74b3d1feb6ed1869ce78b5967077f5451e69c942
+    packageVersion: 0.26.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-05T20:40:42.502Z
+    checkedAt: 2026-11-07T05:33:45.491Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 46
 featuredRank: 193
-releaseUpdatedAt: 2026-11-06T00:08:18.130Z
-metadataUpdatedAt: 2026-11-06T00:08:18.130Z
-starsUpdatedAt: 2026-11-05T00:23:39.886Z
-updatedAt: 2026-11-06T00:08:18.130Z
+starsSnapshot: 71
+releaseUpdatedAt: 2026-11-07T05:33:49.341Z
+metadataUpdatedAt: 2026-11-07T05:33:49.341Z
+starsUpdatedAt: 2026-11-07T05:33:49.341Z
+updatedAt: 2026-11-07T05:33:49.341Z
