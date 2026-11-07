@@ -13,18 +13,18 @@ tags:
 modes:
   - light
 install:
-  target: github:lisongxuan/ds-hentai#20ad36877f5862630857584cfb59158c699a94d8
-  version: 0.7.1
-  commit: 20ad36877f5862630857584cfb59158c699a94d8
+  target: github:lisongxuan/ds-hentai#4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6
+  version: 0.7.2
+  commit: 4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6
   desktop:
     mode: manual-only
     reason: npm-source-unverified
   npm:
     name: ds-hentai
-    version: 0.7.1
-    integrity: sha512-Tap6tt84fB91b1iGg751F8XMfm4xGdbZF78TAmgxesI25hJSVOziB9Aiy6RcOwZo5vmjOJPKWiUjmN3FLoevMQ==
+    version: 0.7.2
+    integrity: sha512-Ex8jIQSs9iu3kYqfYDbzQL6ewMcfqgsdsQUlcZbRR5VZj1CtS+DiBWSA+UzoLtZC/qpcWV8su1pCEOEBHQl1DQ==
     repository: https://github.com/lisongxuan/ds-hentai
-    gitHead: 20ad36877f5862630857584cfb59158c699a94d8
+    gitHead: 4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -47,20 +47,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 20ad36877f5862630857584cfb59158c699a94d8
-    packageVersion: 0.7.1
+    commit: 4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6
+    packageVersion: 0.7.2
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-19T22:56:33.603Z
+    checkedAt: 2026-11-07T05:33:55.518Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1095
 starsSnapshot: 3
-releaseUpdatedAt: 2026-10-19T22:56:34.531Z
-metadataUpdatedAt: 2026-10-19T22:56:34.531Z
+releaseUpdatedAt: 2026-11-07T05:33:56.333Z
+metadataUpdatedAt: 2026-11-07T05:33:56.333Z
 starsUpdatedAt: 2026-10-30T03:53:41.003Z
-updatedAt: 2026-10-30T03:53:41.003Z
+updatedAt: 2026-11-07T05:33:56.333Z

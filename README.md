@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-05**：[Something11235/dsh-video-skin](https://github.com/Something11235/dsh-video-skin)（`0.1.6`）——dsh-video-skin。详见[收录日志](./docs/recently-added.md#自动同步更新)。
+- **2026-11-07**：[星河 Galaxy](https://github.com/haoranx98/dsh-skin-galaxy)（haoranx98）——原生 WebGPU 实时渲染的紫蓝星云皮肤：银河尘带斜贯视野，远近星点带视差与轻微闪烁，并有随机流星；深空配色适配 light/dark/system，无运行时 CDN、图片或额外依赖。。详见[收录日志](./docs/recently-added.md#自动同步更新)。
 
 
 <a id="manual-update"></a>

@@ -13,9 +13,9 @@ tags:
 modes:
   - light
 install:
-  target: github:louke6572/dsh-whale-widget-plus#df08522f54aef92182524488ff2cbbeedde780fa
-  version: 0.7.3
-  commit: df08522f54aef92182524488ff2cbbeedde780fa
+  target: github:louke6572/dsh-whale-widget-plus#e831912413033491781f0edd1b43235a59a92c02
+  version: 0.7.4
+  commit: e831912413033491781f0edd1b43235a59a92c02
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -23,6 +23,10 @@ compatibility:
   dsh: 0.1.1-rc.2
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/home.png
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/conversation.png
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/settings.png
 screenshots:
   - https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png
 listScreenshot: https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png
@@ -40,24 +44,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: df08522f54aef92182524488ff2cbbeedde780fa
-    packageVersion: 0.7.3
+    commit: e831912413033491781f0edd1b43235a59a92c02
+    packageVersion: 0.7.4
     scannerVersion: static-v2
     dshVersion: 0.1.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-11-05T20:40:40.330Z
+    checkedAt: 2026-11-07T05:33:45.174Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 88
-marketScreenshots:
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/home.png
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/conversation.png
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/settings.png
 featuredRank: 944
-releaseUpdatedAt: 2026-11-06T00:08:18.130Z
-metadataUpdatedAt: 2026-11-06T00:08:18.130Z
-starsUpdatedAt: 2026-11-06T00:08:18.130Z
-updatedAt: 2026-11-06T00:08:18.130Z
+starsSnapshot: 89
+releaseUpdatedAt: 2026-11-07T05:33:45.510Z
+metadataUpdatedAt: 2026-11-07T05:33:45.510Z
+starsUpdatedAt: 2026-11-07T05:33:45.510Z
+updatedAt: 2026-11-07T05:33:45.510Z
