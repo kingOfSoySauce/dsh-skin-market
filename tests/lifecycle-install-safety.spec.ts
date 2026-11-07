@@ -119,6 +119,36 @@ describe('installation boundaries', () => {
     expect(readFileSync(join(dir, 'package.json'), 'utf8')).toBe(before)
   })
 
+  it('reports a pre-existing lockfile drift instead of blaming the failed recovery', async () => {
+    const { dir, skin } = fixture()
+    atomicWriteJson(join(dir, 'package.json'), { dependencies: { 'installed-skin': `github:owner/installed#${'c'.repeat(40)}` } })
+    atomicWriteText(join(dir, 'pnpm-lock.yaml'), [
+      "lockfileVersion: '9.0'",
+      'importers:',
+      '  .:',
+      '    dependencies:',
+      '      installed-skin:',
+      `        specifier: github:owner/installed#${'f'.repeat(40)}`,
+      `        version: https://codeload.github.com/owner/installed/tar.gz/${'f'.repeat(40)}`,
+      '',
+    ].join('\n'))
+    const calls: string[][] = []
+    const runner: PluginRunner = async (_profile, args) => {
+      ;(calls as string[][]).push([...args])
+      if (args.includes('--dir')) {
+        materialize(args[args.indexOf('--dir') + 1]!, skin)
+        return ok()
+      }
+      if (args[0] === 'add') return { ...ok(), exitCode: 1, stderr: 'ERR_PNPM_FETCH_404 GET https://codeload.github.com/x/y/tar.gz/' + 'a'.repeat(40) + ': Not Found' }
+      return ok()
+    }
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner }, [skin])
+    const operation = lifecycle.begin('install', skin.id)
+    await until(() => operation.phase === 'failed')
+    expect(operation.message).toContain('已不一致')
+    expect(calls.some(args => args[0] === 'install')).toBe(false)
+  })
+
   it('uses an independent recovery signal after the total deadline interrupts a live install', async () => {
     vi.useFakeTimers()
     const { dir, skin } = fixture()

@@ -11,7 +11,8 @@
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
   "bin": {
-    "dsh-skin-market-reset": "lib/reset-cli.js"
+    "dsh-skin-market-reset": "lib/reset-cli.js",
+    "dsh-skin-market-repair": "lib/repair-cli.js"
   },
   "license": "MIT",
   "scripts": {
@@ -25,14 +26,17 @@
     "media:check": "node scripts/check-media.mjs",
     "smoke:submission": "vitest run tests/submission.spec.ts tests/client/client.spec.tsx",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.client.json --noEmit && tsc -p tsconfig.site.json --noEmit",
-    "build:host": "tsc -p tsconfig.json && chmod +x lib/reset-cli.js",
+    "build:host": "tsc -p tsconfig.json && chmod +x lib/reset-cli.js lib/repair-cli.js",
     "build:client": "tsdown",
     "build:site": "vite build --config vite.site.config.ts",
     "build": "npm run registry && npm run build:host && npm run build:client",
     "test": "vitest run",
     "check": "npm run registry && npm run typecheck && npm run test && npm run build && npm run build:site && node scripts/preflight.mjs",
     "release": "node ops/release.mjs",
-    "prepack": "npm run check"
+    "prepack": "npm run check",
+    "audit:sources": "node scripts/audit-install-sources.mjs",
+    "audit:sources:check": "node scripts/audit-install-sources.mjs --fail-on-dead",
+    "catalog:cleanup": "node scripts/propose-catalog-cleanup.mjs"
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1"

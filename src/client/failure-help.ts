@@ -140,6 +140,7 @@ function failureExplanation(kind: FailureHelpSubject['failureKind'], message: st
   if (kind === 'permission' || /\b(?:EACCES|EPERM)\b/.test(diagnostic)) return render({ problem: 'failure.permissionProblem', next: 'failure.permissionNext' })
   if (kind === 'network' || /\b(?:ENOTFOUND|ECONNRESET|ECONNREFUSED|EAI_AGAIN)\b/.test(diagnostic)) return render({ problem: 'failure.networkProblem', next: 'failure.networkNext' })
   if (kind === 'fetch-timeout' || /\bETIMEDOUT\b/.test(diagnostic)) return render({ problem: 'failure.timeoutProblem', next: 'failure.timeoutNext' })
+  if (kind === 'existing-source-unreachable') return render({ problem: 'failure.existingSourceProblem', next: 'failure.existingSourceNext' })
   if (kind === 'fetch-404' || /ERR_PNPM_FETCH_404/.test(diagnostic)) return render({ problem: 'failure.fetch404Problem', next: 'failure.fetch404Next' })
   if (kind === 'no-matching-version') return render({ problem: 'failure.versionProblem', next: 'failure.versionNext' })
   if (kind === 'pnpm-missing') return render({ problem: 'failure.pnpmProblem', next: 'failure.pnpmNext' })
@@ -156,7 +157,7 @@ function failureExplanation(kind: FailureHelpSubject['failureKind'], message: st
 }
 
 function isEnvironmentFailure(kind: FailureHelpSubject['failureKind']): boolean {
-  return kind === 'unexpected-store' || kind === 'fetch-404' || kind === 'no-matching-version' || kind === 'network'
+  return kind === 'unexpected-store' || kind === 'fetch-404' || kind === 'existing-source-unreachable' || kind === 'no-matching-version' || kind === 'network'
     || kind === 'fetch-timeout' || kind === 'script-timeout' || kind === 'lockfile-outdated' || kind === 'lockfile-broken'
     || kind === 'disk-full' || kind === 'permission' || kind === 'pnpm-missing'
 }
@@ -183,6 +184,7 @@ const localRepairGuidance: Record<string, MessageKey> = {
   network: 'failure.repair.network',
   'fetch-timeout': 'failure.repair.timeout',
   'fetch-404': 'failure.repair.fetch404',
+  'existing-source-unreachable': 'failure.repair.existingSource',
   'no-matching-version': 'failure.repair.version',
   'script-timeout': 'failure.repair.script',
   'incomplete-install': 'failure.repair.incomplete',

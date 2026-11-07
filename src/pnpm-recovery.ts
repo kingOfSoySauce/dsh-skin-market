@@ -3,7 +3,7 @@ import { readDependencies } from './profile.ts'
 import { normalizeRegistryPlan } from './registry-plan.ts'
 import type { OperationMessageKey, OperationMessageParams } from './operation-message.ts'
 
-export type PnpmFailureKind = 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'no-matching-version' | 'integrity' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'command'
+export type PnpmFailureKind = 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'existing-source-unreachable' | 'no-matching-version' | 'integrity' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'command'
 
 export interface PnpmFailure {
   kind: PnpmFailureKind
@@ -79,6 +79,40 @@ function packageNameFromFetch404(output: string): string | undefined {
     return name === '' ? undefined : name
   } catch {
     return undefined
+  }
+}
+
+/**
+ * A `fetch-404` for a git tarball can be caused by a dependency this profile
+ * already installed, not by the package being installed now. pnpm resolves
+ * every git dependency on add/install, so such a leftover blocks the whole
+ * operation. Name that dependency so the person can repair the profile.
+ */
+function existingDependencyForFetchFailure(output: string, profileDir: string): { packageName: string; repository: string; commit: string } | null {
+  const match = /GET\s+https?:\/\/codeload\.github\.com\/([^/\s"'`]+)\/([^/\s"'`]+)\/tar\.gz\/([0-9a-f]{40})/i.exec(output)
+  if (match === null) return null
+  const repository = `${match[1]}/${match[2]}`
+  const commit = match[3]!.toLowerCase()
+  const dependencies = readDependencies(profileDir)
+  for (const [packageName, spec] of Object.entries(dependencies)) {
+    const parsed = /^github:([^#]+)#([0-9a-f]{40})(?:&path:[^\s]+)?$/i.exec(spec.trim())
+    if (parsed === null) continue
+    if (parsed[1]!.toLowerCase() !== repository.toLowerCase()) continue
+    if (parsed[2]!.toLowerCase() !== commit) continue
+    return { packageName, repository: parsed[1]!, commit }
+  }
+  return null
+}
+
+function withExistingSourceContext(failure: PnpmFailure, result: CommandResult, profileDir?: string): PnpmFailure {
+  if (failure.kind !== 'fetch-404' || profileDir === undefined) return failure
+  const existing = existingDependencyForFetchFailure(outputOf(result), profileDir)
+  if (existing === null) return failure
+  return {
+    kind: 'existing-source-unreachable',
+    message: `已安装的依赖 ${existing.packageName} 的上游仓库 ${existing.repository}#${existing.commit.slice(0, 12)} 已不可访问（404）。pnpm 每次安装都会重新解析它，所以本次操作无法继续；请先在外部终端修复 profile（迁移到可用来源或移除该插件）后再试。`,
+    messageKey: 'failure.existingSourceProblem',
+    packageName: existing.packageName,
   }
 }
 
@@ -273,7 +307,7 @@ export async function runPnpmWithRecovery(args: readonly string[], options: Pnpm
 
   const currentArgs = attemptArgs()
   const disablePeerAutoinstall = shouldDisablePeerAutoinstall(currentArgs, failure, options.profileDir)
-  if (!disablePeerAutoinstall && !isAutomaticallyRecoverable(failure.kind)) throw new PnpmCommandError(failure, result)
+  if (!disablePeerAutoinstall && !isAutomaticallyRecoverable(failure.kind)) throw new PnpmCommandError(withExistingSourceContext(failure, result, options.profileDir), result)
 
   options.onRetry?.(disablePeerAutoinstall ? { ...failure, recovery: 'disable-peer-autoinstall' } : failure)
   const retryArgs = disablePeerAutoinstall
@@ -284,7 +318,8 @@ export async function runPnpmWithRecovery(args: readonly string[], options: Pnpm
     : undefined
   const retryResult = await options.attempt(retryArgs, retryOptions)
   if (retryResult.exitCode === 0 && !retryResult.timedOut && retryResult.aborted !== true) return
-  throw new PnpmCommandError(classifyPnpmFailure(retryResult), retryResult)
+  const retryFailure = classifyPnpmFailure(retryResult)
+  throw new PnpmCommandError(withExistingSourceContext(retryFailure, retryResult, options.profileDir), retryResult)
 }
 
 /** Return only structured, non-secret pnpm failure metadata for copied logs. */

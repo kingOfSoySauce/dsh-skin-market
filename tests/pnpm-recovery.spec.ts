@@ -54,6 +54,34 @@ describe('pnpm recovery', () => {
     await expect(runPnpmWithRecovery(['add', 'skin@1.0.0'], { attempt: async () => { attempts += 1; return result } })).rejects.toMatchObject({ failure: { kind: 'script-timeout' } })
     expect(attempts).toBe(1)
   })
+  it('attributes a fetch 404 to an already installed dependency instead of the new package', async () => {
+    const profileDir = mkdtempSync(join(tmpdir(), 'pnpm-existing-source-'))
+    writeFileSync(join(profileDir, 'package.json'), JSON.stringify({
+      dependencies: { 'dead-skin': `github:owner/dead#${'d'.repeat(40)}` },
+    }))
+    const output = `[ERR_PNPM_FETCH_404] GET https://codeload.github.com/owner/dead/tar.gz/${'d'.repeat(40)}: Not Found - 404`
+    await expect(runPnpmWithRecovery(['add', 'new-skin@1.0.0'], {
+      profileDir,
+      attempt: async () => failed(output),
+    })).rejects.toMatchObject({
+      failure: {
+        kind: 'existing-source-unreachable',
+        packageName: 'dead-skin',
+        message: expect.stringContaining('dead-skin'),
+      },
+    })
+  })
+
+  it('keeps a fetch 404 for an unknown package classified as fetch-404', async () => {
+    const profileDir = mkdtempSync(join(tmpdir(), 'pnpm-existing-source-'))
+    writeFileSync(join(profileDir, 'package.json'), JSON.stringify({ dependencies: {} }))
+    const output = `[ERR_PNPM_FETCH_404] GET https://codeload.github.com/owner/other/tar.gz/${'e'.repeat(40)}: Not Found - 404`
+    await expect(runPnpmWithRecovery(['add', 'new-skin@1.0.0'], {
+      profileDir,
+      attempt: async () => failed(output),
+    })).rejects.toMatchObject({ failure: { kind: 'fetch-404' } })
+  })
+
   it('retries a release-age failure with a command-scoped override', async () => {
     const calls: Array<{ args: readonly string[]; env?: NodeJS.ProcessEnv }> = []
     await runPnpmWithRecovery(['add', '@example/skin@1.0.0'], {

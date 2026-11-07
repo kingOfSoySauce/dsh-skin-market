@@ -110,6 +110,7 @@ First follow the specific reason shown in the market dialog or banner. Do not re
 | Enable/disable overridden by another setting | Follow the component-specific instructions in the dialog; do not reinstall repeatedly. When the market can safely locate the override, it provides a direct repair entry point. |
 | Installation blocked by new-package protection | Allow only the exact version named in the error, or wait for the protection period to end. Do not disable global protection. |
 | Operation result is still being confirmed | Wait for the market to verify the result from DSH. Do not click Install, Enable, or Uninstall again. |
+| Installation/update fails with a 404 URL that points at another installed plugin (its upstream repository is gone) | Fully exit DSH, then repair the profile dependencies from an external terminal as described in “Installation blocked by an unreachable installed dependency” below |
 | The page cannot be operated because of a skin conflict | Stop the relevant DSH Web process, then use the Web reset command below. |
 
 <a id="release-wait"></a>
@@ -126,6 +127,41 @@ Please handle this DSH Desktop new-package protection error. First confirm the a
 Only handle the minimumReleaseAgeExclude field in this profile’s pnpm-workspace.yaml. First merge versions already allowed by rules for the same package, while preserving other rules, comments, and the global age policy. If the exact version in the error does not already have an exception, show me the package name, version, and source, and add that exact version only after I confirm. Do not set minimumReleaseAge=0. Do not allow future versions of the entire package. Do not read .env, credentials, or other secret configuration. If a mixed configuration may contain secrets, first obtain narrowly scoped authorization to read the specified fields.
 
 If you are running inside this DSH, do not modify its active combination configuration, restart it, or install the current DSH. First prepare a repeatable apply-and-rollback plan for an external terminal or independent Agent. I will perform Desktop package operations on the official page. Finally, verify the actual installed version and component state, and report the concrete result.
+```
+
+</details>
+
+<a id="profile-dependency-repair"></a>
+### Installation blocked by an unreachable installed dependency
+
+The error looks like `ERR_PNPM_FETCH_404` with a URL under `codeload.github.com/...`, and that repository belongs to a plugin you installed **earlier**, not to the skin you are installing now. pnpm resolves every Git dependency in the profile on each install; once one upstream repository or commit is deleted, every install, update, uninstall, and market self-update fails.
+
+The market cannot edit dependencies inside a running DSH. Fully exit DSH (closing the page is not enough), then run the repair command from an external terminal. The command ships with the market package and is fetched through `npx`, so it does not require updating the market inside the affected profile and does not run `pnpm add` against the running DSH.
+
+```bash
+# Read-only diagnosis: unreachable sources, lockfile drift, planned removals
+npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web
+
+# After fully exiting DSH, apply the repair; --keep <package> preserves one unreachable plugin
+npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web --apply --yes --i-have-stopped-dsh
+
+# Roll back when needed
+npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web --rollback ~/.dsh/profiles/web/.dsh-skin-market/backups/repair-<timestamp> --yes --i-have-stopped-dsh
+```
+
+The repair backs up `package.json` and `pnpm-lock.yaml` inside the profile first, removes only dependencies confirmed unreachable, then runs one `install --no-frozen-lockfile` with the same pnpm generation as the profile. It then verifies the remaining dependencies, lockfile consistency, and the installed market version. The run may need the network because pnpm re-fetches the other Git dependencies; do not disable integrity checks and do not delete the whole lockfile. When the catalog maintainers have moved a skin to a new repository or an npm source and provide the full pinned target, pass `--migrate package=<target>` to keep it instead of removing it (for example `--migrate dsh-dream-skin=dsh-dream-skin@11.7.0`). Migration targets must be confirmed by the maintainers; unreachable dependencies without a confirmed target are removed by default. Start DSH afterwards, verify the page version and the saved enable/disable selection, then retry the original installation. Both diagnosis and repair need `pnpm`; when it is not on PATH, pass `--pnpm <executable>` pointing at the same pnpm generation the profile used.
+
+<details>
+<summary><strong>Need an Agent to repair profile dependencies?</strong></summary>
+
+```text
+This DSH skin install/update failed during pnpm dependency resolution: the error points at a codeload.github.com 404 for an upstream repository of a plugin I already installed, not at the skin I am installing. Diagnose read-only first; do not retry the install or uninstall anything.
+
+1. Confirm the DSH home, profile, and profile directory actually used by the running DSH; do not assume default paths.
+2. Read package.json, pnpm-lock.yaml, and node_modules only, and identify which installed dependencies have unreachable upstream repositories/commits, where package.json and the lockfile disagree, and which packages are actually materialized. Do not read .env, credentials, or mixed configuration that may contain secrets.
+3. Show me the diagnosis, the exact packages to remove, the backup directory, and the repair command. After I confirm, I will run it from an external terminal or through an independent Agent after fully exiting DSH. If you are running inside this DSH, do not modify your own active profile, install/uninstall the current DSH, or stop/restart yourself.
+4. Keep a backup before repairing; remove only dependencies confirmed unreachable; do not disable integrity checks, relax allowBuild, delete the whole lockfile, or touch other skins.
+5. After repairing, verify the installed versions, lockfile consistency, and the saved enable/disable selection. If you cannot read runtime state, ask me for the official page result and say it is unverified. Confirm the original failure cause is gone before retrying the original operation.
 ```
 
 </details>

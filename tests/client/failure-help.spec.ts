@@ -45,7 +45,7 @@ describe('failure repair handoff', () => {
     }
   })
 
-  it.each(['unexpected-store', 'lockfile-outdated', 'lockfile-broken', 'pnpm-missing', 'disk-full', 'permission', 'network', 'fetch-timeout', 'fetch-404', 'no-matching-version', 'script-timeout'] as const)('offers a bounded local investigation for %s', kind => {
+  it.each(['unexpected-store', 'lockfile-outdated', 'lockfile-broken', 'pnpm-missing', 'disk-full', 'permission', 'network', 'fetch-timeout', 'fetch-404', 'existing-source-unreachable', 'no-matching-version', 'script-timeout'] as const)('offers a bounded local investigation for %s', kind => {
     const prompt = createFailureRepairPrompt({ ...options, operation: failed(kind, 'local failure') })!
     expect(prompt).toContain(`排查类别：${kind}`)
     expect(prompt).toContain(skin.package)
@@ -401,7 +401,7 @@ describe('failure help', () => {
   })
 
   it.each([
-    'release-age', 'network', 'fetch-timeout', 'build-approval', 'fetch-404', 'adding-to-root',
+    'release-age', 'network', 'fetch-timeout', 'build-approval', 'fetch-404', 'existing-source-unreachable', 'adding-to-root',
     'not-a-workspace', 'unexpected-store', 'compatibility', 'conflict', 'command', 'lockfile-outdated',
     'lockfile-broken', 'script-timeout', 'pnpm-missing', 'no-matching-version', 'disk-full', 'permission', 'integrity',
   ] as const)('limits %s notices to one help link and short controlled text', kind => {

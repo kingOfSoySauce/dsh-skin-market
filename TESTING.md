@@ -15,6 +15,14 @@ npm run check
 
 这些检查不会安装到真实 DSH profile。生命周期超时、丢失管理结果、目录替换中取消、恢复命令返回成功但入口仍缺失、SRI 不匹配等故障，用临时目录和模拟宿主测试；不要在正常使用的 profile 中删除锁文件、包文件或制造故障。
 
+目录安装源审计需要外网，默认不进入 `npm run check`：`npm run audit:sources` 只读探测目录里每个固定 GitHub tarball 与 npm tarball；`npm run audit:sources:check` 在有不可达来源时退出码非 0。新增或更新条目前也应先跑一次。探测结果分 reachable / missing（404/410）/ unknown（网络或其它状态码），只有 missing 才能进入后续处置。
+
+`.github/workflows/audit-install-sources.yml` 每日先审计，再用 `npm run catalog:cleanup`（只读诊断；`--write` 才改文件）对 missing 源分类并生成 `chore/audit-install-sources` 分支和/或更新一个 PR，人工评审后合并，不自动合并：
+- GitHub 仓库改名且固定 commit 在新名下仍存在 → 更正条目 `repo`、`install.target`、npm repository 和截图 URL；
+- npm 同版本 artifact 通过校验（version、gitHead 对应固定 commit、repository 一致、integrity 与下载 tarball 的 sha512 一致、tarball 内 package.json 身份一致）→ 保留条目不删，补 npm 源；
+- 其余 → 移除条目；无法判定的来源只进入 PR 报告的待人工复核区。
+本机复跑：`node scripts/audit-install-sources.mjs --json > /tmp/audit.json && node scripts/propose-catalog-cleanup.mjs --report /tmp/audit.json`（加 `--write` 才会改 registry 与目录）。
+
 ## 2. Web 浏览器验收
 
 开发构建可从当前目录安装：
@@ -146,6 +154,23 @@ Desktop 自带命令从 `0.2.0-rc.2` 起是另一个**离线维护入口**：先
 - 过期/损坏锁文件与静默脚本超时分别提示，不能因误判网络错误而重试或重新解析其他插件。
 
 每次人工验收记录：市场版本、宿主版本、平台/profile、测试皮肤、每一步结果及必要的截图/市场诊断日志。未执行、不能执行和失败分别写明；浏览器检查通过不写成“原生 Desktop 已验证”。
+### 4.1 profile 依赖失效与外部修复 CLI
+
+用户 profile 中任一已安装 Git 依赖的上游仓库或 commit 被删除后，pnpm 的任何 add/remove/install 都会在全量解析时 404，市场内的安装、更新、卸载与自更新全部不可用，且市场无法在运行中的 DSH 内修复。用临时 profile 目录验收 `src/repair-cli.ts` / `src/repair.ts`，不要对日常 profile 演练：
+
+- 只读诊断：`node lib/repair-cli.js --profile-dir <临时 profile>` 必须列出不可达依赖、未知来源、package.json 与 pnpm-lock.yaml 的漂移、将移除的精确包名和备份目录，且不修改任何文件。
+- 拒绝条件：未加 `--yes`、`--i-have-stopped-dsh` 时 `--apply` 必须拒绝；profile 由另一代际 pnpm 安装（`node_modules/.modules.yaml` 的 `packageManager` 与当前 `pnpm --version` 不一致）时，未加 `--allow-pnpm-mismatch` 必须拒绝并提示改用同一代际。
+- 应用与校验：用同一代际 pnpm 在临时 profile 上执行 `--apply`，确认只移除确认 404 的依赖，`--keep` 的包保留，备份目录内有 package.json、pnpm-lock.yaml 和 repair.json；结束后剩余依赖物化、锁文件与声明一致、dsh-skin-market 安装版本不变。
+- 失败恢复：让 pnpm 安装失败或让校验失败（例如锁文件未对齐），确认 package.json 与 pnpm-lock.yaml 恢复为操作前内容；用备份目录执行 `--rollback`，确认恢复并重新安装原依赖集合。
+- 未知来源（非 404 状态或网络超时）不得自动移除；`--reconcile` 只用于修复锁文件漂移，不扩大移除范围。
+
+迁移验收（不依赖真实 profile）：对确认已迁移到新仓库或 npm 源的皮肤，用 `--migrate <包名>=<完整固定目标>` 在临时 profile 上执行 apply，确认包名保留、声明被替换为目标、锁文件一致、npm 精确版本目标的实际安装版本与目标一致；给非不可达依赖或非法目标（如 `latest`）时必须拒绝。迁移目标必须由维护者确认并记录来源证据（改名重定向、npm gitHead/integrity、或逐文件哈希对比）。
+
+自动化故障用例应覆盖迁移路径：合法/非法迁移目标、`--keep` 与 `--migrate` 冲突、迁移后版本校验、迁移失败回滚；以及每日清理的分类（改名、npm 复活、移除、非 GitHub 来源不自动处置）。
+
+自动化故障用例应覆盖：不可达来源识别（404 与 5xx/超时分开）、锁文件漂移检测、--keep、备份内容、安装失败与校验失败时的回滚、rollback 命令、安装版本保持、同一代际 pnpm 校验。
+
+
 
 ## 5. Web 回滚与清理
 

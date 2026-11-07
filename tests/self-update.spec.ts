@@ -25,7 +25,10 @@ function materialize(profileDir: string, version: string): void {
   writeFileSync(join(directory, 'package.json'), JSON.stringify({ name: MARKET_NPM_PACKAGE, version, main: './host.js', exports: { '.': './host.js', './client': './client.js' }, dsh: { client: { platform: 'web' } } }))
   writeFileSync(join(directory, 'host.js'), `export const version = '${version}'`)
   writeFileSync(join(directory, 'client.js'), `export const clientVersion = '${version}'`)
-  writeFileSync(join(profileDir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\nimporters:\n  .:\n    dependencies:\n      ${MARKET_NPM_PACKAGE}:\n        specifier: '${version}'\n        version: '${version}'\npackages:\n  '${MARKET_NPM_PACKAGE}@${version}':\n    resolution:\n      integrity: ${REVIEWED_INTEGRITY}\n`)
+  const dependencyYaml = Object.entries(manifest.dependencies as Record<string, string>)
+    .map(([name, spec]) => `      ${name}:\n        specifier: '${spec}'\n        version: '${spec}'`)
+    .join('\n')
+  writeFileSync(join(profileDir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\nimporters:\n  .:\n    dependencies:\n${dependencyYaml}\npackages:\n  '${MARKET_NPM_PACKAGE}@${version}':\n    resolution:\n      integrity: ${REVIEWED_INTEGRITY}\n`)
 }
 
 function installedProfile(version: string): string {
@@ -787,6 +790,23 @@ describe('market self update', () => {
     expect(readFileSync(join(profileDir, 'pnpm-lock.yaml'), 'utf8')).toBe(lock)
     expect(compareInstalledArtifact(profileDir, baseline).ok).toBe(true)
     expect(updater.restartRequired).toBe(false)
+  })
+
+  it('does not run a frozen recovery install when the pre-update lockfile already drifted', async () => {
+    const profileDir = installedProfile('0.1.15')
+    const manifest = JSON.parse(readFileSync(join(profileDir, 'package.json'), 'utf8')) as { dependencies: Record<string, string> }
+    manifest.dependencies[MARKET_NPM_PACKAGE] = 'file:/tmp/old/dsh-skin-market-0.1.15.tgz'
+    writeFileSync(join(profileDir, 'package.json'), JSON.stringify(manifest))
+    const calls: string[] = []
+    const runner = vi.fn(async (_profile: string, args: readonly string[]) => {
+      calls.push(args[0] ?? '')
+      if (args[0] === 'add') rmSync(join(profileDir, 'node_modules', MARKET_NPM_PACKAGE, 'client.js'))
+      return { exitCode: 1, stdout: '', stderr: 'ERR_PNPM_FETCH_404', timedOut: false }
+    })
+    const updater = createMarketUpdater('web', runner, { currentVersion: '0.1.15', profileDir, fetch: latest('0.1.16') })
+    await expect(updater.update()).rejects.toThrow('已不一致')
+    expect(calls).toEqual(['add'])
+    expect(JSON.parse(readFileSync(join(profileDir, 'package.json'), 'utf8')).dependencies[MARKET_NPM_PACKAGE]).toBe('file:/tmp/old/dsh-skin-market-0.1.15.tgz')
   })
 
   it('reports failed recovery when its command exits zero but a declared entry is still missing', async () => {

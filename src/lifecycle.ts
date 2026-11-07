@@ -7,6 +7,7 @@ import { assessCompatibility, compatibilityContext } from './compatibility.ts'
 import { persistCompatibilityPatch, planCompatibilityPatch } from './compatibility-adapter.ts'
 import type { CommandOptions, CommandResult, PluginInstallRequest, PluginRunner } from './commands.ts'
 import { loadCatalog } from './catalog.ts'
+import { inspectLockfileDrift } from './repair.ts'
 import { desktopGithubInstallPlan, desktopInstallPlan } from './desktop-install.ts'
 import { companionAsSkin, discoverMonorepoTarget, isNpmInstallTarget, npmInstallTarget, preferredInstallTarget, reviewedNpmSourceError, updateInstallTarget } from './install-resolution.ts'
 import { sharedLoaderIdentifiers } from './loader-ownership.ts'
@@ -1034,6 +1035,10 @@ export class SkinLifecycle {
   }
 
   private async repairMaterializedPackage(skin: SkinEntry, operation: Operation): Promise<void> {
+    const drift = inspectLockfileDrift(this.options.profileDir)
+    if (drift.length > 0) {
+      throw new Error(`profile 的 package.json 与 pnpm-lock.yaml 已不一致（${drift.slice(0, 3).map(entry => entry.packageName).join('、')}${drift.length > 3 ? ' 等' : ''}）；已停止修复，请先在外部终端修复 profile 后再试`)
+    }
     this.update(operation, 'installing', `正在修复已记录但未物化的皮肤依赖：${skin.package}`, 'common.operationRepairingRecordedDependency', { package: skin.package })
     await this.run(['install'], operation)
   }
@@ -2074,6 +2079,19 @@ export class SkinLifecycle {
     }
     if (!restore()) return
     if ((this.profileMutations.get(operation.id) ?? 0) <= mutationsBefore) return
+    // pnpm cannot reconcile a lockfile that was already inconsistent before this
+    // operation; the market sets CI=true for every child process, which makes a
+    // plain `pnpm install` a frozen install and fails with a misleading
+    // OUTDATED_LOCKFILE before any dependency is restored. Report the drift as a
+    // pre-existing profile problem instead of blaming this operation.
+    const drift = inspectLockfileDrift(this.options.profileDir)
+    if (drift.length > 0) {
+      const detail = drift.slice(0, 3).map(entry => `${entry.packageName}: package.json=${entry.manifestSpec ?? '(absent)'} lockfile=${entry.lockfileSpec ?? '(absent)'}`).join('; ')
+      const message = `安装前 profile 的 package.json 与 pnpm-lock.yaml 已不一致（${detail}${drift.length > 3 ? `；另有 ${drift.length - 3} 处` : ''}）；本次操作未完成，未重新安装依赖。请先在外部终端修复 profile 后再试。`
+      this.recoveryErrors.set(operation.id, message)
+      logEvent('warn', 'recovery-pre-existing-drift', detail, operation.id)
+      return
+    }
     this.update(operation, 'installing', '安装未完成，正在恢复原有依赖')
     writeOperationStep(operation, '恢复原有 profile 依赖', 'common.stepRestoreProfile')
     operation.attempt = 1

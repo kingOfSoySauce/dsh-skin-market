@@ -111,6 +111,7 @@ Agent 每次只指导一项操作，等你反馈后继续：打开「插件 → 
 | 启用/停用被其他配置覆盖 | 按弹窗指出的组件处理；不要反复重装。市场能安全定位覆盖时，会给出明确的修复入口 |
 | 安装被新包保护阻止 | 只允许报错中明确指出的那个精确版本，或等待保护期结束；不要关闭全局保护 |
 | 操作结果正在确认 | 等待市场核对宿主结果，不要再次点击安装、启用或卸载 |
+| 安装/更新时报 404，URL 指向已安装的其它插件（上游仓库已删除） | 先完全退出 DSH，再在外部终端按下方「安装被已安装插件的失效来源阻塞」修复 profile 依赖 |
 | 页面因皮肤冲突无法操作 | 停止对应的 DSH Web 进程后，使用下面的 Web 重置命令 |
 
 <a id="release-wait"></a>
@@ -127,6 +128,41 @@ Agent 每次只指导一项操作，等你反馈后继续：打开「插件 → 
 仅处理这个 profile 的 pnpm-workspace.yaml 中 minimumReleaseAgeExclude 字段。先合并同名规则中已经允许的版本，保留其他规则、注释和全局年龄策略。如果报错中的精确版本确实没有例外，先向我展示包名、版本和来源，由我确认后才添加这个精确版本。不要设置 minimumReleaseAge=0，不要允许整个包的未来版本，不要读取 .env、凭据或其他存放秘密的配置。混合配置可能含秘密时，先取得指定字段的限定读取授权。
 
 如果你正运行在这个 DSH 中，不要修改自己的活动组合配置、重启或安装当前宿主；先准备可重复执行的 apply 与 rollback 方案，交给外部终端或独立 Agent 执行。Desktop 包操作由我在官方页面重试。最后核对实际安装版本和组件状态，报告具体结果。
+```
+
+</details>
+
+<a id="profile-dependency-repair"></a>
+### 安装被已安装插件的失效来源阻塞
+
+报错形如 `ERR_PNPM_FETCH_404`，URL 指向 `codeload.github.com/...`，而该仓库属于你**之前安装过**的插件，并不是这次要装的皮肤。pnpm 每次安装都会重新解析 profile 里全部 Git 依赖；只要其中一个上游仓库或 commit 被删除，安装、更新、卸载和更新皮肤市场本身都会失败。
+
+市场不能在运行中的 DSH 里替你修改依赖，需要先**完全退出 DSH**（不是只关页面），再从外部终端执行下面的命令。修复命令随市场包发布，通过 `npx` 取用最新版，不需要先更新当前 profile 里的市场，也不会对运行中的 DSH 执行 `pnpm add`。
+
+```bash
+# 只读诊断：列出失效来源、锁文件漂移和计划移除的包
+npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web
+
+# 完全退出 DSH 后执行修复；用 --keep <包名> 可保留某个失效插件
+npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web --apply --yes --i-have-stopped-dsh
+
+# 需要时回滚
+npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web --rollback ~/.dsh/profiles/web/.dsh-skin-market/backups/repair-<时间戳> --yes --i-have-stopped-dsh
+```
+
+修复会先把 `package.json` 和 `pnpm-lock.yaml` 备份到 profile 内，只移除诊断确认 404 的依赖，然后用该 profile 同一代际的 pnpm 执行一次 `install --no-frozen-lockfile`；完成后校验剩余依赖、锁文件一致性和皮肤市场版本。过程中可能需要网络（pnpm 会重新拉取其余 Git 依赖），不要关闭完整性校验，也不要删除整个锁文件。如果目录维护者已经把同名皮肤改到新仓库或 npm 源，并给出完整固定目标，可以用 `--migrate 包名=完整目标` 保留皮肤而不是删除（例如 `--migrate dsh-dream-skin=dsh-dream-skin@11.7.0`）。迁移目标必须由维护者确认；没有确认目标的失效依赖仍按默认方式移除。修复后启动 DSH，核对页面版本和保存的启用/停用选择，再重试原安装。诊断和修复都需要 `pnpm` 可用；如果 PATH 中没有 pnpm，用 `--pnpm <可执行文件>` 指向该 profile 使用的同一版本。
+
+<details>
+<summary><strong>需要 Agent 帮忙修复 profile 依赖？</strong></summary>
+
+```text
+这次 DSH 皮肤安装/更新失败在 pnpm 依赖解析阶段：报错指向 codeload.github.com 上某个我已安装插件的上游仓库 404，而不是我要装的皮肤。请先只读诊断，不要重试安装或卸载。
+
+1. 确认当前 DSH 的 home、profile 和 profile 目录，不要假设默认路径；确认这个 DSH 正在使用该 profile。
+2. 只读核对 profile 的 package.json、pnpm-lock.yaml 和 node_modules，找出：哪些已安装依赖的上游仓库/commit 已不可达、package.json 与锁文件有哪些不一致、哪些包实际已物化。不要读取 .env、凭据或可能含秘密的配置。
+3. 先给我看诊断结果、计划移除的精确包名、备份目录和修复命令；我确认后，由我在外部终端或由独立 Agent 在完全退出 DSH 后执行修复。你如果正运行在这个 DSH 中，不要修改自己的活动 profile、安装或卸载当前 DSH、停止或重启自己。
+4. 修复前保留备份；只移除确认不可达的依赖，不关闭完整性校验、不放宽 allowBuild、不删除整个锁文件、不改其他皮肤。
+5. 修复后核对实际安装版本、锁定文件一致性与启用/停用选择；未读到运行状态时请我提供官方页面结果，并注明尚未验证。最后核对失败原因是否已消除，再按原操作重试。
 ```
 
 </details>

@@ -9,6 +9,7 @@ import { logEvent } from './log.ts'
 import { officialFailureDiagnostic, officialOperationFailure, ManualInstallRequired } from './official-failure.ts'
 import { allowReleaseAgeVersion, isReleaseAgeExcluded, parseReleaseAgeTarget, readMinimumReleaseAgeMs, repairReleaseAgeExcludes, type ReleaseAgeTarget } from './release-age.ts'
 import { compareInstalledArtifact, manifestFile, packageManifest, pnpmLockfile, readDependencies, readProfileBundles, resolveProfileDir, restoreFile, snapshotFile, snapshotInstalledArtifact, validateNpmArtifact, type FileSnapshot, type InstalledArtifactSnapshot } from './profile.ts'
+import { inspectLockfileDrift } from './repair.ts'
 import { compareVersions, parseVersion } from './semver.ts'
 import { marketFetch, marketNetworkMode } from './market-fetch.ts'
 import { normalizeRegistryBase } from './registry-plan.ts'
@@ -457,6 +458,14 @@ export function createMarketUpdater(
       try {
         restore()
         if (compareInstalledArtifact(profileDir, baseline).ok) return undefined
+        // The market runs child pnpm with CI=true, so this install is frozen.
+        // A lockfile that was already wrong before the update fails before any
+        // dependency is restored. Say that, and do not start the install.
+        const drift = inspectLockfileDrift(profileDir)
+        if (drift.length > 0) {
+          const detail = drift.slice(0, 3).map(entry => `${entry.packageName}: package.json=${entry.manifestSpec ?? '(absent)'} lockfile=${entry.lockfileSpec ?? '(absent)'}`).join('; ')
+          return `更新前 profile 的 package.json 与 pnpm-lock.yaml 已不一致（${detail}${drift.length > 3 ? `；另有 ${drift.length - 3} 处` : ''}）；本次更新未完成，未重新安装依赖。请先在外部终端修复 profile 后再试。`
+        }
         setOperation(operation, { phase: 'installing', cancelable: false, message: '正在恢复更新前的皮肤市场', messageKey: 'common.marketOperationRestoring' })
         const recovery = await runner(profile, pluginArgsFor(profileDir, ['install', '--prefer-offline', '--reporter=ndjson']), {
           timeoutMs: RECOVERY_TIMEOUT_MS,

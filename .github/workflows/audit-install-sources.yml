@@ -1,0 +1,73 @@
+name: Audit and repair catalog install sources
+
+on:
+  schedule:
+    # Daily: a pinned community repository or npm release can disappear at any time.
+    - cron: '23 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: audit-install-sources
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Probe pinned install sources
+        run: node scripts/audit-install-sources.mjs --json > "$RUNNER_TEMP/audit.json"
+
+      - name: Classify unreachable sources and prepare review report
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/propose-catalog-cleanup.mjs \
+            --report "$RUNNER_TEMP/audit.json" \
+            --markdown > "$RUNNER_TEMP/report.md"
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Apply catalog cleanup
+        id: cleanup
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/propose-catalog-cleanup.mjs --report "$RUNNER_TEMP/audit.json" --write
+          if git diff --quiet -- registry/skins data/catalog.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B chore/audit-install-sources
+          git add registry/skins data/catalog.json
+          git commit -m 'chore(registry): repair unreachable install sources'
+          git push --force origin chore/audit-install-sources
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update the review pull request
+        if: steps.cleanup.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh pr list --head chore/audit-install-sources --state open --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh pr edit "$existing" --body-file "$RUNNER_TEMP/report.md"
+          else
+            gh pr create \
+              --base main \
+              --head chore/audit-install-sources \
+              --title 'chore(registry): repair unreachable install sources' \
+              --body-file "$RUNNER_TEMP/report.md"
+          fi

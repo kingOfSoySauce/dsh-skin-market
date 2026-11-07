@@ -94,6 +94,7 @@ export type OperationMessageKey =
   | 'failure.timeoutProblem'
   | 'failure.networkProblem'
   | 'failure.fetch404Problem'
+  | 'failure.existingSourceProblem'
   | 'failure.versionProblem'
   | 'failure.integrityProblem'
   | 'failure.storeProblem'

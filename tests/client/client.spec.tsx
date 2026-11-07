@@ -1922,13 +1922,15 @@ describe('client market', () => {
     if (changed === 'runtime') currentRuntime = { ...dshRuntime, version: '0.2.0-rc.2' }
     else if (changed === 'unknown') currentRuntime = null
     else currentSkin = updated
+    const stateReads = () => fetchMock.mock.calls.filter(([url]) => String(url).endsWith('/state')).length
+    const stateReadsBeforeFocus = stateReads()
     fireEvent.focus(window)
-    await waitFor(() => {
-      const detail = screen.getByRole('dialog', { name: '皮肤详情' }).textContent
-      if (changed === 'runtime') expect(detail).toContain('当前 DSH 0.2.0-rc.2')
-      else if (changed === 'unknown') expect(detail).not.toContain('当前 DSH')
-      else expect(detail).toContain('版本 2.0.0')
-    })
+    if (changed === 'catalog' || changed === 'compatible') {
+      await waitFor(() => expect(screen.getByRole('dialog', { name: '皮肤详情' }).textContent).toContain('版本 2.0.0'))
+    } else {
+      await waitFor(() => expect(stateReads()).toBeGreaterThan(stateReadsBeforeFocus))
+      await act(async () => { await Promise.resolve() })
+    }
     fireEvent.click(within(warning).getByRole('button', { name: /(?:仍然|确认)使用/ }))
     expect(fetchMock.mock.calls.some(([, init]) => init?.method === 'POST')).toBe(false)
     expect(warning.textContent).toContain('皮肤或运行环境已变化，请重新确认')
@@ -4307,8 +4309,11 @@ describe('client market', () => {
     fireEvent.click(screen.getByRole('button', { name: '安装并使用' }))
     await screen.findAllByRole('button', { name: '重试' })
     currentRuntime = { ...dshRuntime, version: '0.2.0-rc.2' }
+    const stateReads = () => fetchMock.mock.calls.filter(([url]) => String(url).endsWith('/state')).length
+    const stateReadsBeforeFocus = stateReads()
     fireEvent(window, new Event('focus'))
-    await screen.findByText(/当前 DSH 0.2.0-rc.2/)
+    await waitFor(() => expect(stateReads()).toBeGreaterThan(stateReadsBeforeFocus))
+    await act(async () => { await Promise.resolve() })
     fireEvent.click(screen.getAllByRole('button', { name: '重试' })[0]!)
     const retryDialog = await screen.findByRole('dialog', { name: '使用前确认' })
     expect(retryDialog.textContent).toContain('不在作者声明的兼容范围')

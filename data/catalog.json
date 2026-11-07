@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T13:29:46.331Z",
+  "generatedAt": "2026-11-07T17:23:18.468Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -26230,115 +26230,6 @@
       }
     },
     {
-      "id": "jryang1997.dsh-ascii-whales",
-      "name": {
-        "zh": "dsh-ascii-whales",
-        "en": "dsh-ascii-whales"
-      },
-      "author": "jryang1997",
-      "description": "Five whale species with shaded cells or ASCII fill; every content card and the input box is frosted glass with whales blurred behind it, plus independent random dives, tail-stroke ripples, optional input-box avoidance, occasional random spouts, drifting ASCII wind and cloud shadows, continuous toroidal swimming, a whale-size slider, and in-place config updates that never restart the school.",
-      "repo": "https://github.com/jryang1997/dsh-ascii-whales",
-      "package": "@local/dsh-ascii-ocean",
-      "rowId": "ascii-whale-background",
-      "category": "skin",
-      "tags": [
-        "appearance",
-        "glass"
-      ],
-      "modes": [
-        "light",
-        "dark"
-      ],
-      "install": {
-        "target": "github:jryang1997/dsh-ascii-whales#51bf4e4477c3af95884b8b962dd95fce50c0542d",
-        "version": "1.0.0",
-        "commit": "51bf4e4477c3af95884b8b962dd95fce50c0542d",
-        "desktop": {
-          "mode": "manual-only",
-          "reason": "尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。"
-        }
-      },
-      "compatibility": {
-        "dsh": "unverified",
-        "platform": [
-          "web"
-        ]
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/cruise.gif",
-        "https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/modes.png",
-        "https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/dive.gif",
-        "https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/tail.gif",
-        "https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/rain.gif",
-        "https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/dictation-echo.gif",
-        "https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/reading-glass.png",
-        "https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/dark.png"
-      ],
-      "listScreenshot": "https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/38aaae3ff90fcc28cec99397456be6ccb28662de/docs/images/cruise.gif",
-      "review": {
-        "compatibility": "unverified",
-        "preview": "verified",
-        "installation": "verified"
-      },
-      "health": {
-        "status": "improvements",
-        "checks": {
-          "readmeScreenshots": "pass",
-          "compatibility": "improve",
-          "installation": "pass",
-          "installCommand": "pass",
-          "topic": "pass"
-        },
-        "suggestions": [
-          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
-        ],
-        "scan": {
-          "commit": "51bf4e4477c3af95884b8b962dd95fce50c0542d",
-          "packageVersion": "1.0.0",
-          "scannerVersion": "static-v2",
-          "mode": "static",
-          "result": "pass",
-          "checkedAt": "2026-11-04T00:04:12.459Z",
-          "findings": []
-        }
-      },
-      "license": {
-        "code": "MIT",
-        "commercialUse": true
-      },
-      "starsSnapshot": 2,
-      "marketScreenshots": [
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/jryang1997__dsh-ascii-whales/0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/jryang1997__dsh-ascii-whales/0be8361fcc5b07e5c009aaa5ea710a6ad5b692c4/conversation.png"
-      ],
-      "featuredRank": 998,
-      "releaseUpdatedAt": "2026-11-04T00:04:17.887Z",
-      "metadataUpdatedAt": "2026-11-05T00:23:22.896Z",
-      "starsUpdatedAt": "2026-11-04T00:04:17.887Z",
-      "updatedAt": "2026-11-05T00:23:22.896Z",
-      "media": {
-        "screenshots": [
-          null,
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/49279f328cdb1342a31cdc86b4e438df.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/49279f328cdb1342a31cdc86b4e438df.full.webp"
-          },
-          null,
-          null,
-          null,
-          null,
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0de12f4157b24e94f4484b00f5e78824.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0de12f4157b24e94f4484b00f5e78824.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0a2da36fdfbb68f11e74d08fd81ac1b4.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0a2da36fdfbb68f11e74d08fd81ac1b4.full.webp"
-          }
-        ]
-      }
-    },
-    {
       "id": "lucasx001.dsh-skin-claude-code",
       "name": {
         "zh": "dsh-skin-claude-code",
@@ -29319,129 +29210,6 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8429dda5fdf75c36758ba15a82869b09.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8429dda5fdf75c36758ba15a82869b09.full.webp"
-          }
-        ]
-      }
-    },
-    {
-      "id": "huihuangddfs.dsh-codex-mini-pet",
-      "name": {
-        "zh": "dsh-codex-mini-pet",
-        "en": "dsh-codex-mini-pet"
-      },
-      "author": "HuiHuangDDFS",
-      "description": "DeepSeek Harness 聊天 / 工作双模式与桌面宠物伙伴，内嵌 DeepSeek 官网，支持 Codex v1/v2 图集。",
-      "repo": "https://github.com/HuiHuangDDFS/dsh-codex-mini-pet",
-      "package": "dsh-codex-mini-pet",
-      "rowId": "dsh-codex-mini-pet",
-      "category": "pet",
-      "tags": [
-        "pet"
-      ],
-      "modes": [
-        "light",
-        "dark"
-      ],
-      "install": {
-        "target": "github:HuiHuangDDFS/dsh-codex-mini-pet#21e2c0e5f30662ac3e12d48d65ad4a6dbb0a936f",
-        "version": "2.0.9",
-        "commit": "21e2c0e5f30662ac3e12d48d65ad4a6dbb0a936f",
-        "desktop": {
-          "mode": "manual-only",
-          "reason": "尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。"
-        }
-      },
-      "compatibility": {
-        "dsh": "0.2.1-rc.2",
-        "platform": [
-          "web"
-        ]
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/assets/pets/deepseek/preview.png",
-        "https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/assets/pets/whale-girl/preview.png",
-        "https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/assets/pets/zhiyu/preview.png",
-        "https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/docs/images/chat-mode.png",
-        "https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/docs/images/work-mode.png",
-        "https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/docs/images/desktop-pet.png",
-        "https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/docs/images/settings-pets.png"
-      ],
-      "listScreenshot": "https://raw.githubusercontent.com/HuiHuangDDFS/dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/assets/pets/deepseek/preview.png",
-      "review": {
-        "compatibility": "unverified",
-        "preview": "verified",
-        "installation": "verified"
-      },
-      "health": {
-        "status": "improvements",
-        "checks": {
-          "readmeScreenshots": "pass",
-          "compatibility": "improve",
-          "installation": "pass",
-          "installCommand": "pass",
-          "topic": "pass"
-        },
-        "suggestions": [
-          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
-        ],
-        "scan": {
-          "commit": "21e2c0e5f30662ac3e12d48d65ad4a6dbb0a936f",
-          "packageVersion": "2.0.9",
-          "scannerVersion": "static-v2",
-          "mode": "static",
-          "result": "pass",
-          "checkedAt": "2026-11-04T00:04:17.573Z",
-          "findings": []
-        }
-      },
-      "license": {
-        "code": "MIT",
-        "commercialUse": true
-      },
-      "starsSnapshot": 2,
-      "marketScreenshots": [
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/HuiHuangDDFS__dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/home.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/HuiHuangDDFS__dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/conversation.png",
-        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/HuiHuangDDFS__dsh-codex-mini-pet/9a5a02d10f661f0ff9efc34bb7e679bdd135ff19/settings.png"
-      ],
-      "featuredRank": 999,
-      "releaseUpdatedAt": "2026-11-04T00:04:19.865Z",
-      "metadataUpdatedAt": "2026-11-05T00:23:22.896Z",
-      "starsUpdatedAt": "2026-11-01T22:47:38.993Z",
-      "updatedAt": "2026-11-05T00:23:22.896Z",
-      "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4f4f7b1d08be0fc0e68fdbe5f467dbbb.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4f4f7b1d08be0fc0e68fdbe5f467dbbb.full.webp"
-        },
-        "screenshots": [
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4f4f7b1d08be0fc0e68fdbe5f467dbbb.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4f4f7b1d08be0fc0e68fdbe5f467dbbb.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/cc9f7a99ac8b5dae21e3a2f0ff44f243.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/cc9f7a99ac8b5dae21e3a2f0ff44f243.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b60e5d7ef9e34d3d2eb33fbe81b4342a.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b60e5d7ef9e34d3d2eb33fbe81b4342a.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/cfc08d8ee594b1e1954891815964be3b.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/cfc08d8ee594b1e1954891815964be3b.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/500654bd10cc35d2e5a76b7c7d1a17eb.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/500654bd10cc35d2e5a76b7c7d1a17eb.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c1092fa843206b7192d66d6d1ed7bfa4.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c1092fa843206b7192d66d6d1ed7bfa4.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f85a2f97d5f1e838b0f1df7dd1b8b234.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f85a2f97d5f1e838b0f1df7dd1b8b234.full.webp"
           }
         ]
       }
@@ -54862,101 +54630,6 @@
       }
     },
     {
-      "id": "iasiv5.skins",
-      "name": {
-        "zh": "skins",
-        "en": "skins"
-      },
-      "author": "iasiv5",
-      "description": "dsh-skins — DSH Web 多皮肤插件",
-      "repo": "https://github.com/iasiv5/skins",
-      "package": "dsh-skins",
-      "rowId": "skins",
-      "category": "skin",
-      "tags": [
-        "wallpaper",
-        "motion",
-        "token-theme",
-        "light-dark"
-      ],
-      "modes": [
-        "light",
-        "dark"
-      ],
-      "install": {
-        "target": "github:iasiv5/skins#85a5c3c544175ff8c1e3a820de76902c90407e8c",
-        "version": "1.0.1",
-        "commit": "85a5c3c544175ff8c1e3a820de76902c90407e8c",
-        "desktop": {
-          "mode": "manual-only",
-          "reason": "npm-package-not-found"
-        }
-      },
-      "compatibility": {
-        "dsh": "^0.1.1-rc.2",
-        "platform": [
-          "web"
-        ]
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/iasiv5/skins/85a5c3c544175ff8c1e3a820de76902c90407e8c/docs/assets/preview-meirenzhi-1.webp",
-        "https://raw.githubusercontent.com/iasiv5/skins/85a5c3c544175ff8c1e3a820de76902c90407e8c/docs/assets/preview-meirenzhi-2.webp"
-      ],
-      "review": {
-        "compatibility": "verified",
-        "preview": "verified",
-        "installation": "verified"
-      },
-      "health": {
-        "status": "healthy",
-        "checks": {
-          "readmeScreenshots": "pass",
-          "compatibility": "pass",
-          "installation": "pass",
-          "installCommand": "pass",
-          "topic": "pass"
-        },
-        "suggestions": [],
-        "scan": {
-          "commit": "85a5c3c544175ff8c1e3a820de76902c90407e8c",
-          "packageVersion": "1.0.1",
-          "scannerVersion": "static-v2",
-          "dshVersion": "^0.1.1-rc.2",
-          "mode": "static",
-          "result": "pass",
-          "checkedAt": "2026-09-07T21:58:46.491Z",
-          "findings": []
-        }
-      },
-      "license": {
-        "code": "MIT",
-        "commercialUse": true
-      },
-      "featuredRank": 1072,
-      "starsSnapshot": 1,
-      "releaseUpdatedAt": "2026-09-07T21:58:46.646Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
-      "starsUpdatedAt": "2026-09-07T21:58:46.646Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
-      "listScreenshot": "https://raw.githubusercontent.com/iasiv5/skins/85a5c3c544175ff8c1e3a820de76902c90407e8c/docs/assets/preview-meirenzhi-1.webp",
-      "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7f345f81595f26b9d4cffb47d9508cd9.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7f345f81595f26b9d4cffb47d9508cd9.full.webp"
-        },
-        "screenshots": [
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7f345f81595f26b9d4cffb47d9508cd9.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7f345f81595f26b9d4cffb47d9508cd9.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/340a0c179e72295a4d0b0d4ce44c1b53.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/340a0c179e72295a4d0b0d4ce44c1b53.full.webp"
-          }
-        ]
-      }
-    },
-    {
       "id": "krystal-cao.deepseek-harness-swift",
       "name": {
         "zh": "deepseek-harness-swift",
@@ -55142,102 +54815,6 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/42392d6c0a924c91b82265cdbf3307dd.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/42392d6c0a924c91b82265cdbf3307dd.full.webp"
-          }
-        ]
-      }
-    },
-    {
-      "id": "linyuan-ai1.dsh-plugins-linyuana",
-      "name": {
-        "zh": "dsh-plugins-linyuana",
-        "en": "dsh-plugins-linyuana"
-      },
-      "author": "linyuan-ai1",
-      "description": "DeepSeek Harness 的回复卡片颜色 插件。",
-      "repo": "https://github.com/linyuan-ai1/dsh-plugins",
-      "subpath": "packages/dsh-card-color",
-      "package": "dsh-card-color",
-      "rowId": "dsh-card-color",
-      "category": "skin",
-      "tags": [
-        "wallpaper",
-        "pastel",
-        "token-theme",
-        "light-dark"
-      ],
-      "modes": [
-        "light",
-        "dark"
-      ],
-      "install": {
-        "target": "github:linyuan-ai1/dsh-plugins#2ea9d87972fbc970cf725f8a7643c738f1196c36&path:/packages/dsh-card-color",
-        "version": "0.1.1",
-        "commit": "2ea9d87972fbc970cf725f8a7643c738f1196c36",
-        "desktop": {
-          "mode": "manual-only",
-          "reason": "npm-repository-mismatch"
-        }
-      },
-      "compatibility": {
-        "dsh": "^0.1.0-rc.6",
-        "platform": [
-          "web"
-        ]
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/linyuan-ai1/dsh-plugins/2ea9d87972fbc970cf725f8a7643c738f1196c36/packages/dsh-card-color/docs/screenshots/screenshot-1.png",
-        "https://raw.githubusercontent.com/linyuan-ai1/dsh-plugins/2ea9d87972fbc970cf725f8a7643c738f1196c36/packages/dsh-card-color/docs/screenshots/screenshot-2.png"
-      ],
-      "review": {
-        "compatibility": "verified",
-        "preview": "verified",
-        "installation": "verified"
-      },
-      "health": {
-        "status": "healthy",
-        "checks": {
-          "readmeScreenshots": "pass",
-          "compatibility": "pass",
-          "installation": "pass",
-          "installCommand": "pass",
-          "topic": "pass"
-        },
-        "suggestions": [],
-        "scan": {
-          "commit": "2ea9d87972fbc970cf725f8a7643c738f1196c36",
-          "packageVersion": "0.1.1",
-          "scannerVersion": "static-v2",
-          "dshVersion": "^0.1.0-rc.6",
-          "mode": "static",
-          "result": "pass",
-          "checkedAt": "2026-09-07T21:58:48.185Z",
-          "findings": []
-        }
-      },
-      "license": {
-        "code": "MIT",
-        "commercialUse": true
-      },
-      "featuredRank": 1075,
-      "starsSnapshot": 1,
-      "releaseUpdatedAt": "2026-09-07T21:58:48.259Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
-      "starsUpdatedAt": "2026-09-07T21:58:48.259Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
-      "listScreenshot": "https://raw.githubusercontent.com/linyuan-ai1/dsh-plugins/2ea9d87972fbc970cf725f8a7643c738f1196c36/packages/dsh-card-color/docs/screenshots/screenshot-1.png",
-      "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5bdb2bb133dd67fc989f48245011dbb4.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5bdb2bb133dd67fc989f48245011dbb4.full.webp"
-        },
-        "screenshots": [
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5bdb2bb133dd67fc989f48245011dbb4.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5bdb2bb133dd67fc989f48245011dbb4.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/29906a05027c1bda45583e4da2aa5d98.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/29906a05027c1bda45583e4da2aa5d98.full.webp"
           }
         ]
       }
@@ -60075,6 +59652,13 @@
       "repository": "https://github.com/TQSY114514/dsh-ui-appearance",
       "gitHead": "4bc525ebe6f5ad630f7767814060cee9a4eda760"
     },
+    "twelvecarbon.dsh-conversation-toc": {
+      "name": "dsh-conversation-toc",
+      "version": "0.1.1",
+      "integrity": "sha512-Ccobbr/4ou5ttKzpewiWWnhoHj7inMikHmIvLvc3vMlFrG7P/t3iB1Z4ByZKLu2UoBEp7FS7uPU1zNssayxzUg==",
+      "repository": "https://github.com/twelvecarbon/dsh-conversation-toc",
+      "gitHead": "2061ba44575d92a7069b7ba2edac848ccf7a328a"
+    },
     "vderr.dsh-echocat-prettier": {
       "name": "dsh-echocat-prettier",
       "version": "0.23.6",
@@ -62312,16 +61896,6 @@
       "score": 0.006587,
       "asOf": "2026-11-07"
     },
-    "huihuangddfs.dsh-codex-mini-pet": {
-      "ageDays": 1,
-      "starsPerDay": 0,
-      "starGrowthPerDay": 0,
-      "commitsPerDay": 0,
-      "pullsPerDay": 0,
-      "issuesPerDay": 0,
-      "score": 0,
-      "asOf": "2026-11-07"
-    },
     "hwfee.cds-theme": {
       "ageDays": 1,
       "starsPerDay": 0,
@@ -62363,16 +61937,6 @@
       "asOf": "2026-11-07"
     },
     "i1j.dsh-krill-theme": {
-      "ageDays": 1,
-      "starsPerDay": 0,
-      "starGrowthPerDay": 0,
-      "commitsPerDay": 0,
-      "pullsPerDay": 0,
-      "issuesPerDay": 0,
-      "score": 0,
-      "asOf": "2026-11-07"
-    },
-    "iasiv5.skins": {
       "ageDays": 1,
       "starsPerDay": 0,
       "starGrowthPerDay": 0,
@@ -62600,16 +62164,6 @@
       "pullsPerDay": 0,
       "issuesPerDay": 0,
       "score": 0.006062,
-      "asOf": "2026-11-07"
-    },
-    "jryang1997.dsh-ascii-whales": {
-      "ageDays": 1,
-      "starsPerDay": 0,
-      "starGrowthPerDay": 0,
-      "commitsPerDay": 0,
-      "pullsPerDay": 0,
-      "issuesPerDay": 0,
-      "score": 0,
       "asOf": "2026-11-07"
     },
     "juliye2025.dsh-butler-atelier": {
@@ -63153,16 +62707,6 @@
       "asOf": "2026-11-07"
     },
     "linkbag.dsh-capyreporter": {
-      "ageDays": 1,
-      "starsPerDay": 0,
-      "starGrowthPerDay": 0,
-      "commitsPerDay": 0,
-      "pullsPerDay": 0,
-      "issuesPerDay": 0,
-      "score": 0,
-      "asOf": "2026-11-07"
-    },
-    "linyuan-ai1.dsh-plugins-linyuana": {
       "ageDays": 1,
       "starsPerDay": 0,
       "starGrowthPerDay": 0,
@@ -65003,16 +64547,6 @@
       "asOf": "2026-11-07"
     },
     "tszmzz1026.dsh.glass.theme": {
-      "ageDays": 1,
-      "starsPerDay": 0,
-      "starGrowthPerDay": 0,
-      "commitsPerDay": 0,
-      "pullsPerDay": 0,
-      "issuesPerDay": 0,
-      "score": 0,
-      "asOf": "2026-11-07"
-    },
-    "twelvecarbon.dsh-conversation-toc": {
       "ageDays": 1,
       "starsPerDay": 0,
       "starGrowthPerDay": 0,
@@ -68587,17 +68121,6 @@
         },
         "descriptionPolicy": "show"
       },
-      "huihuangddfs.dsh-codex-mini-pet": {
-        "name": {
-          "zh": "Codex 聊天与桌面伙伴",
-          "en": "Codex Chat & Desktop Companion"
-        },
-        "description": {
-          "zh": "切换内嵌的 DeepSeek 官网聊天与原生项目工作，配有支持任务状态提醒的动画桌面伙伴，并支持导入 Codex v1/v2 宠物包。",
-          "en": "Switch between embedded DeepSeek website chat and native project work, with an animated desktop companion for task-status notifications and support for importing Codex v1/v2 pet packs."
-        },
-        "descriptionPolicy": "show"
-      },
       "hwfee.cds-theme": {
         "name": {
           "zh": "Claude Design System 主题",
@@ -68652,13 +68175,6 @@
           "en": "A Deep Sea / Shallow Sea theme with dark mode using brightness and light mode using clarity to express hierarchy, while following the system appearance. A lightweight plankton animation fills the conversation area; the “Deep diving…” state adds upward motion and soft glow, and a jellyfish button exposes live particle controls. Reduced-motion mode falls back to a static frame; the plugin changes theme and color, not layout."
         },
         "descriptionPolicy": "show"
-      },
-      "iasiv5.skins": {
-        "name": {
-          "zh": "DSH 多皮肤",
-          "en": "DSH Multi-Skin"
-        },
-        "descriptionPolicy": "omit"
       },
       "imfuxing.dsh-widget-journey-west": {
         "name": {
@@ -68901,13 +68417,6 @@
           "en": "A DSH Web theme inspired by the DeepSeek homepage, with a deep-blue gradient, translucent glass, a procedural fluid background, a mouse-reactive elastic grid, and two fish that avoid the pointer. Effects are toggleable and respect reduced-motion preferences."
         },
         "descriptionPolicy": "show"
-      },
-      "jryang1997.dsh-ascii-whales": {
-        "name": {
-          "zh": "dsh-ascii-whales",
-          "en": "dsh-ascii-whales"
-        },
-        "descriptionPolicy": "omit"
       },
       "juliye2025.dsh-butler-atelier": {
         "name": {
@@ -69509,13 +69018,6 @@
           "en": "A floating capybara reports workspace/session labels, assistant milestones and distinct completion, failure or cancellation outcomes, with an optional always-on-top Electron companion, custom artwork and away notifications."
         },
         "descriptionPolicy": "show"
-      },
-      "linyuan-ai1.dsh-plugins-linyuana": {
-        "name": {
-          "zh": "回复卡片配色",
-          "en": "Reply Card Colors"
-        },
-        "descriptionPolicy": "omit"
       },
       "linzhuolisoc.dsh-skin-study": {
         "name": {
