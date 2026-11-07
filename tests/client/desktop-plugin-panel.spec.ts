@@ -522,6 +522,21 @@ describe('native installation handoff tracking', () => {
     expect(panel.bridge.takeManualRecovery!()).toBeNull()
   })
 
+  it('keeps tracking a retry that starts while the official dialog is closed', async () => {
+    const panel = trackedPanel()
+    await panel.bridge.open(spec, { ...handoff, operationId: 'install-3' })
+    panel.start('failed-request')
+    panel.publish({ install: { phase: 'failed', open: true, spec, requestId: 'failed-request' } })
+    panel.publish({ install: { phase: 'starting', open: false, spec, requestId: 'retried-request' } })
+    expect(panel.bridge.takeManualRecovery!()).toBeNull()
+    panel.done('retried-request')
+    panel.enable()
+    panel.finish()
+    panel.inventory()
+    expect(panel.bridge.takeActivationIntent!()?.requestId).toBe('retried-request')
+    expect(panel.bridge.takeManualRecovery!()).toBeNull()
+  })
+
   it('does not record a dialog that was closed before it was submitted', async () => {
     const panel = trackedPanel()
     await panel.bridge.open(spec, { ...handoff, operationId: 'install-2' })

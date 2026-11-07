@@ -9,6 +9,7 @@ describe('install recovery route', () => {
     expect(recoveryRoute({ phase: 'failed', kind: 'uninstall', failure: { kind: 'unexpected-store' } })).toBe('decision')
     expect(recoveryRoute({ phase: 'failed', kind: 'update', failure: { kind: 'unexpected-store' } })).toBe('decision')
     expect(recoveryRoute({ phase: 'failed', kind: 'install' })).toBe('decision')
+    expect(recoveryRoute({ phase: 'failed', kind: 'install', failure: { kind: 'release-age' } })).toBe('decision')
     expect(recoveryRoute({ phase: 'failed', kind: 'uninstall', failure: { kind: 'command', code: 'stop-profile' } })).toBe('decision')
   })
 

@@ -1,7 +1,7 @@
 import type { ManualFollowUp } from '../types.ts'
 
 const DECISION_ACTIONS = new Set(['approve-build', 'approve-release-age', 'approve-artifact', 'repair-configuration'])
-const DECISION_KINDS = new Set(['conflict', 'compatibility', 'configuration-override', 'existing-source-unreachable', 'build-approval', 'unexpected-store', 'adding-to-root', 'not-a-workspace', 'lockfile-outdated', 'lockfile-broken', 'script-timeout', 'pnpm-missing', 'disk-full', 'permission', 'integrity'])
+const DECISION_KINDS = new Set(['conflict', 'compatibility', 'configuration-override', 'existing-source-unreachable', 'build-approval', 'release-age', 'unexpected-store', 'adding-to-root', 'not-a-workspace', 'lockfile-outdated', 'lockfile-broken', 'script-timeout', 'pnpm-missing', 'disk-full', 'permission', 'integrity'])
 const SPECIAL_UNINSTALL_CODES = new Set(['stop-profile', 'bundle-in-use', 'not-removable', 'unaddressable', 'management-required'])
 
 export type RecoveryRoute = 'ignore' | 'decision' | 'enable' | 'uninstall' | 'check' | 'replace' | 'install'

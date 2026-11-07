@@ -1072,6 +1072,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const clientRestartNotices = useRef(new Map<string, PendingRestartNotice>())
   const recoveryClaim = useRef<ManualRecovery | null>(null)
   const retryBlockedRecovery = useRef(true)
+  const recoveryViewMounted = useRef(true)
+  const [recoveryFocus, setRecoveryFocus] = useState(0)
   const [installRecovery, setInstallRecovery] = useState<InstallRecoveryView | null>(null)
   const restartTargetRef = useRef<RestartTarget | null>(null)
   pendingRestartRef.current = pendingRestart
@@ -1617,9 +1619,10 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     if (!mounted.current) return
     if (result.ok && result.kind === 'prefilled') {
       desktopPluginPanel.noteRecovery?.(operation.id, 'opened')
+      setDismissedNoticeIds(ids => [...new Set([...ids, `failed:${operation.id}`])].slice(-100))
       return
     }
-    if (result.ok && result.kind === 'resumed') {
+    if (result.ok && result.kind === 'resumed' || !result.ok && result.code === 'busy') {
       showInstallRecovery({ operationId: operation.id, lead: 'blocked', spec, skinId: skin?.id, packageName: handoff.packageName, companions })
       desktopPluginPanel.noteRecovery?.(operation.id, 'blocked')
       return
@@ -1630,13 +1633,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   useEffect(() => {
     if (installRecovery !== null) return undefined
     const allowBlocked = retryBlockedRecovery.current
-    retryBlockedRecovery.current = false
     const manual = recoveryClaim.current === null ? desktopPluginPanel?.takeManualRecovery?.() ?? null : null
-    if (manual?.operationId) {
+    if (manual) {
       recoveryClaim.current = manual
       const skin = skinsRef.current.find(item => item.id === manual.skinId)
       setInstallRecovery({
-        operationId: manual.operationId,
+        operationId: manual.operationId ?? `native:${manual.skinId}`,
         lead: manual.companions === true ? 'companions' : 'none',
         spec: manual.spec,
         skinId: manual.skinId,
@@ -1645,7 +1647,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         name: skin === undefined ? undefined : localizedSkinName(skin.name, t),
       })
       return () => {
-        if (recoveryClaim.current === manual) {
+        if (!recoveryViewMounted.current && recoveryClaim.current === manual) {
           desktopPluginPanel?.restoreManualRecovery?.(manual)
           recoveryClaim.current = null
         }
@@ -1663,9 +1665,28 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       const route = recoveryRoute({ phase: 'failed', kind: operation.kind ?? 'update', failure: operation.failure })
       return route !== 'decision' && route !== 'ignore'
     })
-    if (next !== undefined) void startInstallRecovery(next)
+    if (next !== undefined) {
+      if ((desktopPluginPanel?.recoveryStatus?.(next.id) ?? null) === 'blocked') retryBlockedRecovery.current = false
+      void startInstallRecovery(next)
+    }
     return undefined
-  }, [desktopPluginPanel, dismissedNoticeIds, installRecovery, marketOperation, operations, startInstallRecovery, t])
+  }, [desktopPluginPanel, dismissedNoticeIds, installRecovery, marketOperation, operations, recoveryFocus, startInstallRecovery, t])
+
+  useEffect(() => {
+    recoveryViewMounted.current = true
+    const retryBlocked = () => {
+      retryBlockedRecovery.current = true
+      setRecoveryFocus(value => value + 1)
+    }
+    window.addEventListener('focus', retryBlocked)
+    const onVisible = () => { if (document.visibilityState === 'visible') retryBlocked() }
+    document.addEventListener('visibilitychange', onVisible)
+    return () => {
+      recoveryViewMounted.current = false
+      window.removeEventListener('focus', retryBlocked)
+      document.removeEventListener('visibilitychange', onVisible)
+    }
+  }, [])
 
   const checkMarketUpdate = useCallback(async () => {
     try {
@@ -2618,7 +2639,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     setShowInstallOptions(false)
     closeBrowser()
     try {
-      const result = await desktopPluginPanel.open(target, { skinId: skin.id, packageName: skin.package })
+      const failed = operations.find(operation => operation.skinId === skin.id && operation.phase === 'failed')
+      const result = await desktopPluginPanel.open(target, { skinId: skin.id, packageName: skin.package, operationId: failed?.id })
       if (!result.ok && mounted.current) {
         setError(result.reason)
       }
@@ -3343,9 +3365,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         open={installRecovery !== null}
         onClose={() => {
           recoveryClaim.current = null
-          if (installRecovery !== null) {
+          if (installRecovery !== null && installRecovery.lead !== 'blocked') {
             desktopPluginPanel?.forgetRecovery?.(installRecovery.operationId)
             dismissNotice(`failed:${installRecovery.operationId}`)
+          } else if (installRecovery?.lead === 'blocked') {
+            desktopPluginPanel?.noteRecovery?.(installRecovery.operationId, 'blocked')
+            retryBlockedRecovery.current = true
           }
           setPromptFallback(null)
           setInstallRecovery(null)
@@ -3372,9 +3397,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           {recoveryPrompt !== null && <Button variant="outline" size="sm" onClick={() => void copyRecoveryPrompt()}>{t('common.copyTroubleshootingPrompt')}</Button>}
           <Button variant="outline" size="sm" onClick={() => {
             recoveryClaim.current = null
-            if (installRecovery !== null) {
+            if (installRecovery !== null && installRecovery.lead !== 'blocked') {
               desktopPluginPanel?.forgetRecovery?.(installRecovery.operationId)
               dismissNotice(`failed:${installRecovery.operationId}`)
+            } else if (installRecovery?.lead === 'blocked') {
+              desktopPluginPanel?.noteRecovery?.(installRecovery.operationId, 'blocked')
+              retryBlockedRecovery.current = true
             }
             setInstallRecovery(null)
           }}>{t('common.close')}</Button>

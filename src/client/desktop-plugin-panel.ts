@@ -25,7 +25,7 @@ export type RecoveryStatus = 'started' | 'opened' | 'blocked' | 'manual'
 
 export type DesktopPluginPanelResult =
   | { ok: true; kind: 'prefilled' | 'resumed' }
-  | { ok: false; reason: string }
+  | { ok: false; reason: string; code?: 'busy' | 'unavailable' }
 
 export interface DesktopPluginPanelContext {
   /** Cordis permits optional service reads through get(), without hard injection. */
@@ -163,9 +163,9 @@ function resume(face: ManagerFace, state: ManagerSnapshot, requestedSpec: string
   if (install.open) return { ok: true, kind: 'resumed' }
   if (typeof install.requestId === 'string' && install.requestId !== '' && install.phase !== 'checking') {
     face.openInstall()
-    return snapshot(face)?.install.open ? { ok: true, kind: 'resumed' } : { ok: false, reason: BUSY }
+    return snapshot(face)?.install.open ? { ok: true, kind: 'resumed' } : { ok: false, reason: BUSY, code: 'busy' }
   }
-  return { ok: false, reason: BUSY }
+  return { ok: false, reason: BUSY, code: 'busy' }
 }
 
 export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options: { readyTimeoutMs?: number } = {}): DesktopPluginPanel {
@@ -256,14 +256,17 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
         } else if (install.spec !== '' && install.spec.trim() !== current.spec) stopReceipt()
         return
       }
+      const terminalFailureClose = current.lastOutcome === 'failed' && !install.open
+        && !ACTIVE_PHASES.has(install.phase) && install.phase !== 'done'
       if (install.spec.trim() !== current.spec) {
-        const failedClosed = current.lastOutcome === 'failed' && !install.open
-        if (failedClosed) enqueueManual(current)
-        stopReceipt()
-        if (failedClosed) notify()
-        return
-      }
-      if (current.lastOutcome === 'failed' && !install.open) {
+        if (terminalFailureClose) {
+          enqueueManual(current)
+          stopReceipt()
+          notify()
+          return
+        }
+        if (!ACTIVE_PHASES.has(install.phase) && install.phase !== 'done') { stopReceipt(); return }
+      } else if (terminalFailureClose) {
         enqueueManual(current)
         stopReceipt()
         notify()
