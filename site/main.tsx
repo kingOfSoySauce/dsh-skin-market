@@ -62,9 +62,8 @@ function StarSpark({ values, from, language }: { values: number[] | undefined; f
   const current = values[values.length - 1]
   const active = hovered === null ? undefined : geometry.points[hovered]
   const activeValue = active === undefined ? undefined : Math.round(active.value)
-  // Keep the run flat after the last sample, then drop to the baseline: a
-  // straight right edge here would read as a diagonal wedge.
-  const area = `${geometry.d} L${VIEW_W} ${geometry.end.y} L${VIEW_W} ${VIEW_H} L${geometry.points[0].x} ${VIEW_H} Z`
+  // The fill stops at the last sample, straight down to the baseline.
+  const area = `${geometry.d} L${geometry.end.x} ${VIEW_H} L${geometry.points[0].x} ${VIEW_H} Z`
   return <figure className="skin-spark">
     <svg
       viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
@@ -83,15 +82,13 @@ function StarSpark({ values, from, language }: { values: number[] | undefined; f
       onMouseLeave={() => setHovered(null)}
     >
       <defs>
-        <filter id={`${uid}-soft`} x="-4%" y="-20%" width="108%" height="240%">
-          <feGaussianBlur stdDeviation="4" />
-        </filter>
-        <clipPath id={`${uid}-clip`}><path d={area} /></clipPath>
+        <linearGradient id={`${uid}-fill`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" className="skin-spark-fill-top" />
+          <stop offset="78%" className="skin-spark-fill-mid" />
+          <stop offset="100%" className="skin-spark-fill-end" />
+        </linearGradient>
       </defs>
-      <path className="skin-spark-area" d={area} />
-      <g clipPath={`url(#${uid}-clip)`}>
-        <path className="skin-spark-shade" d={geometry.d} transform="translate(0 9)" filter={`url(#${uid}-soft)`} vectorEffect="non-scaling-stroke" />
-      </g>
+      <path className="skin-spark-area" d={area} fill={`url(#${uid}-fill)`} />
       <path className="skin-spark-line" d={geometry.d} vectorEffect="non-scaling-stroke" />
     </svg>
     <span

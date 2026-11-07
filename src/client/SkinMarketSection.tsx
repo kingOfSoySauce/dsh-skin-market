@@ -888,7 +888,7 @@ function SkinSpark({ values, from, language }: { values: number[] | undefined; f
   const current = values[values.length - 1]
   const active = hovered === null ? undefined : geometry.points[hovered]
   const activeValue = active === undefined ? undefined : Math.round(active.value)
-  const area = `${geometry.d} L${VIEW_W} ${geometry.end.y} L${VIEW_W} ${VIEW_H} L${geometry.points[0].x} ${VIEW_H} Z`
+  const area = `${geometry.d} L${geometry.end.x} ${VIEW_H} L${geometry.points[0].x} ${VIEW_H} Z`
   return <figure className={css.spark}>
     <svg
       viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
@@ -907,15 +907,13 @@ function SkinSpark({ values, from, language }: { values: number[] | undefined; f
       onMouseLeave={() => setHovered(null)}
     >
       <defs>
-        <filter id={`${uid}-soft`} x="-4%" y="-20%" width="108%" height="240%">
-          <feGaussianBlur stdDeviation="4" />
-        </filter>
-        <clipPath id={`${uid}-clip`}><path d={area} /></clipPath>
+        <linearGradient id={`${uid}-fill`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" className={css.sparkFillTop} />
+          <stop offset="78%" className={css.sparkFillMid} />
+          <stop offset="100%" className={css.sparkFillEnd} />
+        </linearGradient>
       </defs>
-      <path className={css.sparkArea} d={area} />
-      <g clipPath={`url(#${uid}-clip)`}>
-        <path className={css.sparkShade} d={geometry.d} transform="translate(0 9)" filter={`url(#${uid}-soft)`} vectorEffect="non-scaling-stroke" />
-      </g>
+      <path className={css.sparkArea} d={area} fill={`url(#${uid}-fill)`} />
       <path className={css.sparkLine} d={geometry.d} vectorEffect="non-scaling-stroke" />
     </svg>
     <span
