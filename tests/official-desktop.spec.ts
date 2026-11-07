@@ -305,6 +305,7 @@ describe('official Desktop runner', () => {
     expect(operation.message).toContain(`请在官方插件页先卸载当前包，再添加 ${MARKET_NPM_PACKAGE}@0.1.64。`)
     expect(operation.failure).toMatchObject({
       manualSpec: `${MARKET_NPM_PACKAGE}@0.1.64`,
+      manualFollowUp: 'uninstall-then-add',
       message: expect.stringContaining('先卸载当前包'),
     })
   })

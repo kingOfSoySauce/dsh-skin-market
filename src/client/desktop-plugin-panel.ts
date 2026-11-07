@@ -5,15 +5,23 @@
  */
 export interface DesktopPluginPanel {
   available(): boolean
-  open(spec: string, handoff?: DesktopInstallHandoff): Promise<DesktopPluginPanelResult>
+  open(spec: string, handoff?: DesktopInstallHandoff, options?: { navigateOnResume?: boolean }): Promise<DesktopPluginPanelResult>
   observe?(listener: () => void): () => void
   takeActivationIntent?(): DesktopActivationIntent | null
   restoreActivationIntent?(intent: DesktopActivationIntent): void
+  /** Remember that this failed operation was handed to the install panel. */
+  noteRecovery?(operationId: string, status: RecoveryStatus): void
+  recoveryStatus?(operationId: string): RecoveryStatus | null
+  forgetRecovery?(operationId: string): void
+  takeManualRecovery?(): ManualRecovery | null
+  restoreManualRecovery?(recovery: ManualRecovery): void
   dispose?(): void
 }
 
-export interface DesktopInstallHandoff { skinId: string; packageName: string }
+export interface DesktopInstallHandoff { skinId: string; packageName: string; operationId?: string; companions?: boolean }
 export interface DesktopActivationIntent extends DesktopInstallHandoff { spec: string; requestId: string }
+export interface ManualRecovery { operationId?: string; skinId: string; packageName: string; spec: string; companions?: boolean }
+export type RecoveryStatus = 'started' | 'opened' | 'blocked' | 'manual'
 
 export type DesktopPluginPanelResult =
   | { ok: true; kind: 'prefilled' | 'resumed' }
@@ -165,6 +173,8 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
   const observers = new Set<() => void>()
   const activationIntents: DesktopActivationIntent[] = []
   const issuedIntents = new Map<string, DesktopActivationIntent>()
+  const manualRecoveries: ManualRecovery[] = []
+  const recoveryState = new Map<string, RecoveryStatus>()
   let receipt: HandoffReceipt | undefined
   let disposeStore: (() => void) | undefined
   let disposeRemote: (() => void) | undefined
@@ -246,7 +256,19 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
         } else if (install.spec !== '' && install.spec.trim() !== current.spec) stopReceipt()
         return
       }
-      if (install.spec.trim() !== current.spec) { stopReceipt(); return }
+      if (install.spec.trim() !== current.spec) {
+        const failedClosed = current.lastOutcome === 'failed' && !install.open
+        if (failedClosed) enqueueManual(current)
+        stopReceipt()
+        if (failedClosed) notify()
+        return
+      }
+      if (current.lastOutcome === 'failed' && !install.open) {
+        enqueueManual(current)
+        stopReceipt()
+        notify()
+        return
+      }
       const inspectedName = object(install.subject)?.name
       // Git/tarball inspection knows only the spec's form. Package identity
       // becomes mandatory when the completed install reports `installed`.
@@ -263,11 +285,19 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
       if (requestId !== current.requestId || requestId === undefined) return
       if (install.phase === 'failed' || install.phase === 'unknown') {
         current.retryAllowed = true
-        if (current.lastOutcome !== install.phase) { current.lastOutcome = install.phase; notify() }
+        const outcome = install.phase === 'failed' ? 'failed' : 'unknown'
+        if (current.lastOutcome !== outcome) { current.lastOutcome = outcome; notify() }
+        if (outcome === 'failed' && !install.open) {
+          enqueueManual(current)
+          stopReceipt()
+          notify()
+        }
         return
       }
       if (install.phase !== 'done') return
       if (install.installed !== current.packageName) { stopReceipt(); return }
+      dropManual(current.skinId, current.spec)
+      if (current.operationId) recoveryState.delete(current.operationId)
       if (!current.installed) { current.installed = true; notify() }
       if (install.enabling === true) {
         current.enabling = true
@@ -276,6 +306,20 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
       }
     } catch { stopReceipt() }
   }
+  const enqueueManual = (current: HandoffReceipt): void => {
+    const item: ManualRecovery = {
+      operationId: current.operationId, skinId: current.skinId, packageName: current.packageName, spec: current.spec, companions: current.companions,
+    }
+    if (manualRecoveries.some(existing => existing.operationId === item.operationId && existing.skinId === item.skinId && existing.spec === item.spec)) return
+    manualRecoveries.push(item)
+    if (current.operationId) recoveryState.set(current.operationId, 'manual')
+  }
+  const dropManual = (skinId: string, spec: string): void => {
+    for (let index = manualRecoveries.length - 1; index >= 0; index -= 1) {
+      const item = manualRecoveries[index]
+      if (item !== undefined && item.skinId === skinId && item.spec === spec) manualRecoveries.splice(index, 1)
+    }
+  }
   const beginHandoff = (target: PanelTarget, spec: string, handoff: DesktopInstallHandoff | undefined): void => {
     stopReceipt()
     navigationGeneration += 1
@@ -283,11 +327,11 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
     receipt = { ...handoff, spec, target, installed: false, retryAllowed: false, enabling: false, completed: false }
     disposeStore = target.face.hooks.pluginManager.subscribe(trackSnapshot)
   }
-  const navigate = (result: DesktopPluginPanelResult, layout: PanelLayout): DesktopPluginPanelResult => {
-    if (result.ok) layout.selectPanel('plugins')
+  const navigate = (result: DesktopPluginPanelResult, layout: PanelLayout, navigateOnResume: boolean): DesktopPluginPanelResult => {
+    if (result.ok && (result.kind === 'prefilled' || navigateOnResume)) layout.selectPanel('plugins')
     return result
   }
-  const open = async (spec: string, handoff: DesktopInstallHandoff | undefined): Promise<DesktopPluginPanelResult> => {
+  const open = async (spec: string, handoff: DesktopInstallHandoff | undefined, navigateOnResume = true): Promise<DesktopPluginPanelResult> => {
     try {
       if (lifetime.signal.aborted) return { ok: false, reason: UNAVAILABLE }
       watchRemote()
@@ -296,7 +340,7 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
       let state = snapshot(target.face)
       if (!state) return { ok: false, reason: UNAVAILABLE }
       const active = resume(target.face, state, spec)
-      if (active) return navigate(active, target.layout)
+      if (active) return navigate(active, target.layout, navigateOnResume)
       target.face.ensure()
       if (!await waitUntilLoaded(target.face.hooks.pluginManager, options.readyTimeoutMs ?? 8_000, lifetime.signal)) {
         return { ok: false, reason: LOAD_FAILED }
@@ -308,17 +352,17 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
       state = snapshot(current.face)
       if (!state || state.status !== 'ready') return { ok: false, reason: LOAD_FAILED }
       const becameActive = resume(current.face, state, spec)
-      if (becameActive) return navigate(becameActive, current.layout)
+      if (becameActive) return navigate(becameActive, current.layout, navigateOnResume)
       if (state.install.phase !== 'idle' || !state.install.open) current.face.openInstall()
       const opened = snapshot(current.face)
       if (!opened?.install.open) return { ok: false, reason: UNAVAILABLE }
       // Never overwrite a run that the official face reports after opening.
-      if (!EDITABLE_PHASES.has(opened.install.phase) || opened.install.enabling) return navigate({ ok: true, kind: 'resumed' }, current.layout)
+      if (!EDITABLE_PHASES.has(opened.install.phase) || opened.install.enabling) return navigate({ ok: true, kind: 'resumed' }, current.layout, navigateOnResume)
       current.face.editInstallSpec(spec)
       const filled = snapshot(current.face)
       if (!filled?.install.open || filled.install.spec !== spec) return { ok: false, reason: UNAVAILABLE }
       beginHandoff(current, spec, handoff)
-      return navigate({ ok: true, kind: 'prefilled' }, current.layout)
+      return navigate({ ok: true, kind: 'prefilled' }, current.layout, navigateOnResume)
     } catch {
       return { ok: false, reason: UNAVAILABLE }
     }
@@ -331,12 +375,12 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
         return target !== undefined && snapshot(target.face) !== undefined
       } catch { return false }
     },
-    open(input, handoff) {
+    open(input, handoff, options) {
       const spec = input.trim()
       if (!spec) return Promise.resolve({ ok: false, reason: '此皮肤缺少可用的安装地址。' })
       if (pending) return pending.spec === spec ? pending.promise
         : Promise.resolve({ ok: false, reason: '正在打开原生添加插件面板，请稍后重试。' })
-      const promise = open(spec, handoff).finally(() => { if (pending?.promise === promise) pending = undefined })
+      const promise = open(spec, handoff, options?.navigateOnResume !== false).finally(() => { if (pending?.promise === promise) pending = undefined })
       pending = { spec, promise }
       return promise
     },
@@ -357,6 +401,28 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
       activationIntents.unshift(issued)
       notify()
     },
+    noteRecovery(operationId, status) {
+      if (!operationId || lifetime.signal.aborted) return
+      recoveryState.set(operationId, status)
+    },
+    recoveryStatus(operationId) {
+      return recoveryState.get(operationId) ?? null
+    },
+    forgetRecovery(operationId) {
+      recoveryState.delete(operationId)
+      for (let index = manualRecoveries.length - 1; index >= 0; index -= 1) {
+        if (manualRecoveries[index]?.operationId === operationId) manualRecoveries.splice(index, 1)
+      }
+    },
+    takeManualRecovery() {
+      const item = manualRecoveries.shift()
+      return item === undefined ? null : { ...item }
+    },
+    restoreManualRecovery(recovery) {
+      if (lifetime.signal.aborted || manualRecoveries.some(item => item.operationId === recovery.operationId && item.skinId === recovery.skinId && item.spec === recovery.spec)) return
+      manualRecoveries.unshift({ ...recovery })
+      notify()
+    },
     dispose() {
       lifetime.abort()
       stopReceipt()
@@ -365,6 +431,8 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
       observers.clear()
       activationIntents.length = 0
       issuedIntents.clear()
+      manualRecoveries.length = 0
+      recoveryState.clear()
     },
   }
 }

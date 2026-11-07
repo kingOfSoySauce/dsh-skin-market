@@ -26,7 +26,9 @@ import { localizedSkinDescription } from '../localized-copy.ts'
 import { assessCompatibility, compatibilityContext as skinCompatibilityContext, type CompatibilityAssessment } from '../compatibility.ts'
 import { matchesCatalogSearch } from '../catalog-search.ts'
 import { desktopInstallPlan } from '../desktop-install.ts'
-import type { DesktopActivationIntent, DesktopPluginPanel } from './desktop-plugin-panel.ts'
+import { preferredInstallTarget } from '../install-source.ts'
+import { recoveryRoute } from './install-recovery.ts'
+import type { DesktopActivationIntent, DesktopPluginPanel, ManualRecovery } from './desktop-plugin-panel.ts'
 import type { CatalogSkin, DshRuntime, InstalledClientPlugin, MarketHostKind, Operation, RuntimeSkin } from './types.ts'
 import type { ConfigurationOverrideBatchPlan } from '../configuration-override-types.ts'
 import { curveDayLabel, curveEntry, sparklineGeometry, type StarCurve } from '../star-curves.ts'
@@ -283,6 +285,16 @@ interface MarketUpdateStatus {
   updateBlockedReasonKey?: Operation['messageKey']
   updateBlockedReasonParams?: Operation['messageParams']
   updateAvailableAt?: string
+}
+
+interface InstallRecoveryView {
+  operationId: string
+  lead: 'none' | 'open-failed' | 'blocked' | 'companions' | 'replace' | 'enable' | 'uninstall' | 'check'
+  spec?: string
+  skinId?: string
+  packageName?: string
+  name?: string
+  companions?: boolean
 }
 
 interface MarketUpdateOperation {
@@ -1058,7 +1070,9 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const hostStateRead = useRef<Promise<void> | null>(null)
   const pendingRestartRef = useRef<PendingRestartNotice | null>(null)
   const clientRestartNotices = useRef(new Map<string, PendingRestartNotice>())
-  const marketFallbackOpened = useRef(new Set<string>())
+  const recoveryClaim = useRef<ManualRecovery | null>(null)
+  const retryBlockedRecovery = useRef(true)
+  const [installRecovery, setInstallRecovery] = useState<InstallRecoveryView | null>(null)
   const restartTargetRef = useRef<RestartTarget | null>(null)
   pendingRestartRef.current = pendingRestart
   restartTargetRef.current = restartTarget
@@ -1526,24 +1540,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     }
   }, [hostKind, restartAvailable, t])
 
-  const openMarketUpdateFallback = useCallback(async (operation: MarketUpdateOperation) => {
-    const spec = operation.failure?.fallbackSpec?.trim()
-    if (!officialDesktop || desktopPluginPanel?.available() !== true || spec === undefined || spec === ''
-      || marketFallbackOpened.current.has(operation.id) || !mounted.current) return
-    marketFallbackOpened.current.add(operation.id)
-    try {
-      const result = await desktopPluginPanel.open(spec, { skinId: 'dsh-skin-market', packageName: 'dsh-skin-market' })
-      if (!mounted.current || !result.ok) return
-      const message = result.kind === 'prefilled'
-        ? t('market.installPanelPrefilled', { spec })
-        : t('market.installPanelExistingTask')
-      setMarketOperation(current => current?.id === operation.id ? { ...current, message } : current)
-    } catch {
-      // The failure dialog and exact fallback spec remain available when the
-      // optional native panel bridge cannot be opened.
-    }
-  }, [desktopPluginPanel, officialDesktop, t])
-
   const waitForMarketUpdate = useCallback(async (operationId: string) => {
     if (marketUpdatePolls.current.has(operationId)) return
     marketUpdatePolls.current.add(operationId)
@@ -1566,7 +1562,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           if (!mounted.current) return
           setMarketUpdating(false)
           setError(null)
-          if (operation.phase === 'failed') void openMarketUpdateFallback(operation)
           return
         }
         await new Promise(resolve => setTimeout(resolve, operation.phase === 'waiting' ? 5000 : 600))
@@ -1581,7 +1576,96 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     } finally {
       marketUpdatePolls.current.delete(operationId)
     }
-  }, [applyMarketState, openMarketUpdateFallback, t])
+  }, [applyMarketState, t])
+
+  const pinnedRecoverySpec = useCallback((skin: CatalogSkin) => {
+    if (hostKind === 'desktop') {
+      const plan = desktopInstallPlan(skin, officialDesktop)
+      if (plan.kind !== 'manual') return plan.target
+    }
+    return preferredInstallTarget(skin)
+  }, [hostKind, officialDesktop])
+
+  const showInstallRecovery = useCallback((view: InstallRecoveryView) => {
+    desktopPluginPanel?.noteRecovery?.(view.operationId, 'manual')
+    if (view.skinId) {
+      userSelectedRef.current = true
+      selectedIdRef.current = view.skinId
+      setSelectedId(view.skinId)
+    }
+    setInstallRecovery(view)
+  }, [desktopPluginPanel])
+
+  const startInstallRecovery = useCallback(async (operation: { id: string; kind?: Operation['kind']; skinId?: string; failure?: Operation['failure'] }) => {
+    const route = recoveryRoute({ phase: 'failed', kind: operation.kind ?? 'update', failure: operation.failure })
+    if (route === 'ignore' || route === 'decision') return
+    const skin = operation.skinId === undefined ? undefined : skinsRef.current.find(item => item.id === operation.skinId)
+    const name = skin === undefined ? t('nav.market') : localizedSkinName(skin.name, t)
+    if (route === 'enable') { showInstallRecovery({ operationId: operation.id, lead: 'enable', name, skinId: skin?.id }); return }
+    if (route === 'uninstall') { showInstallRecovery({ operationId: operation.id, lead: 'uninstall', name, skinId: skin?.id, packageName: skin?.package }); return }
+    if (route === 'check') { showInstallRecovery({ operationId: operation.id, lead: 'check', skinId: skin?.id }); return }
+    const spec = operation.failure?.manualSpec || operation.failure?.fallbackSpec || (skin === undefined ? '' : pinnedRecoverySpec(skin))
+    const companions = (skin?.install.companions?.length ?? 0) > 0
+    if (route === 'replace') { showInstallRecovery({ operationId: operation.id, lead: 'replace', spec, skinId: skin?.id, packageName: skin?.package, name, companions }); return }
+    const handoff = { skinId: skin?.id ?? 'dsh-skin-market', packageName: skin?.package ?? 'dsh-skin-market', operationId: operation.id, companions }
+    if (spec === '' || desktopPluginPanel?.available() !== true) {
+      showInstallRecovery({ operationId: operation.id, lead: companions ? 'companions' : 'none', spec, skinId: skin?.id, packageName: handoff.packageName, companions })
+      return
+    }
+    desktopPluginPanel.noteRecovery?.(operation.id, 'started')
+    const result = await desktopPluginPanel.open(spec, handoff, { navigateOnResume: false })
+    if (!mounted.current) return
+    if (result.ok && result.kind === 'prefilled') {
+      desktopPluginPanel.noteRecovery?.(operation.id, 'opened')
+      return
+    }
+    if (result.ok && result.kind === 'resumed') {
+      showInstallRecovery({ operationId: operation.id, lead: 'blocked', spec, skinId: skin?.id, packageName: handoff.packageName, companions })
+      desktopPluginPanel.noteRecovery?.(operation.id, 'blocked')
+      return
+    }
+    showInstallRecovery({ operationId: operation.id, lead: 'open-failed', spec, skinId: skin?.id, packageName: handoff.packageName, companions })
+  }, [desktopPluginPanel, pinnedRecoverySpec, showInstallRecovery, t])
+
+  useEffect(() => {
+    if (installRecovery !== null) return undefined
+    const allowBlocked = retryBlockedRecovery.current
+    retryBlockedRecovery.current = false
+    const manual = recoveryClaim.current === null ? desktopPluginPanel?.takeManualRecovery?.() ?? null : null
+    if (manual?.operationId) {
+      recoveryClaim.current = manual
+      const skin = skinsRef.current.find(item => item.id === manual.skinId)
+      setInstallRecovery({
+        operationId: manual.operationId,
+        lead: manual.companions === true ? 'companions' : 'none',
+        spec: manual.spec,
+        skinId: manual.skinId,
+        packageName: manual.packageName,
+        companions: manual.companions,
+        name: skin === undefined ? undefined : localizedSkinName(skin.name, t),
+      })
+      return () => {
+        if (recoveryClaim.current === manual) {
+          desktopPluginPanel?.restoreManualRecovery?.(manual)
+          recoveryClaim.current = null
+        }
+      }
+    }
+    const failed = [
+      ...operations.filter(operation => operation.phase === 'failed'),
+      ...(marketOperation?.phase === 'failed' ? [{ id: marketOperation.id, kind: 'update' as const, skinId: undefined, failure: marketOperation.failure }] : []),
+    ]
+    const next = failed.find(operation => {
+      const status = desktopPluginPanel?.recoveryStatus?.(operation.id) ?? null
+      if (status === 'opened' || status === 'started' || status === 'manual') return false
+      if (status === 'blocked') return allowBlocked
+      if (dismissedNoticeIds.includes(`failed:${operation.id}`)) return false
+      const route = recoveryRoute({ phase: 'failed', kind: operation.kind ?? 'update', failure: operation.failure })
+      return route !== 'decision' && route !== 'ignore'
+    })
+    if (next !== undefined) void startInstallRecovery(next)
+    return undefined
+  }, [desktopPluginPanel, dismissedNoticeIds, installRecovery, marketOperation, operations, startInstallRecovery, t])
 
   const checkMarketUpdate = useCallback(async () => {
     try {
@@ -2641,9 +2725,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     </article>
   }
 
-  const needsFailurePrompt = (operation: { id: string; phase?: string; failure?: Operation['failure'] }) =>
-    (isInterceptFailure(operation) || operation.phase === 'failed' && operation.failure?.action === 'retry')
+  const needsFailurePrompt = (operation: { id: string; phase?: string; kind?: Operation['kind']; failure?: Operation['failure'] }) => {
+    const route = recoveryRoute({ phase: operation.phase ?? '', kind: operation.kind ?? 'update', failure: operation.failure })
+    return route === 'decision'
+      && (isInterceptFailure(operation) || operation.phase === 'failed' && operation.failure?.action === 'retry')
       && !dismissedNoticeIds.includes(`failed:${operation.id}`)
+  }
   const interceptOperation = operations.find(needsFailurePrompt) ?? null
   const interceptSkin = interceptOperation === null ? undefined : skins.find(skin => skin.id === (interceptOperation.failure?.targetSkinId ?? interceptOperation.skinId))
   const marketInterceptOperation = interceptOperation === null && marketOperation !== null && needsFailurePrompt(marketOperation) ? marketOperation : null
@@ -2677,6 +2764,11 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     operation: interceptOperation, skin: interceptSkin, hostKind, runtimeVersion: runtime?.version,
   }
   const repairPrompt = configurationPlan !== undefined || repairPromptOptions === null ? null : createFailureRepairPrompt({ ...repairPromptOptions, t })
+  const recoveryOperation = installRecovery === null ? undefined : operations.find(item => item.id === installRecovery.operationId)
+  const recoverySkin = installRecovery?.skinId === undefined ? undefined : skins.find(item => item.id === installRecovery.skinId)
+  const recoveryPrompt = recoveryOperation === undefined || recoverySkin === undefined ? null : createFailureRepairPrompt({
+    operation: recoveryOperation, skin: recoverySkin, hostKind, runtimeVersion: runtime?.version, allowGeneric: true, t,
+  })
   const sourceGuide = existingSourceGuide({
     failure: interceptFailure,
     kind: interceptOperation?.kind,
@@ -2687,6 +2779,33 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     profileDir: installEnvironment?.profileDir,
     t,
   })
+  const copyRecoveryPrompt = async () => {
+    if (recoveryPrompt === null || recoveryOperation === undefined || recoverySkin === undefined) return
+    const operationId = recoveryOperation.id
+    setCopyingPromptId(operationId)
+    setCopiedPromptId(null)
+    setPromptFallback(null)
+    try {
+      let diagnosticLog: string | undefined
+      try {
+        const response = await fetch(`/dsh-skin-market/logs?operationId=${encodeURIComponent(operationId)}`, { cache: 'no-store' })
+        if (response.ok) diagnosticLog = await response.text()
+      } catch { diagnosticLog = undefined }
+      const text = createFailureRepairPrompt({
+        operation: recoveryOperation, skin: recoverySkin, hostKind, runtimeVersion: runtime?.version, diagnosticLog, allowGeneric: true, t,
+      })
+      if (text === null) return
+      try {
+        await copyTextToClipboard(text, t)
+        setCopiedPromptId(operationId)
+        window.setTimeout(() => setCopiedPromptId(current => current === operationId ? null : current), 2400)
+      } catch {
+        setPromptFallback({ operationId, text, error: t('market.promptClipboardFailed') })
+      }
+    } finally {
+      setCopyingPromptId(current => current === operationId ? null : current)
+    }
+  }
   const copyRepairPrompt = async () => {
     if (repairPromptOptions === null || repairPrompt === null) return
     const operationId = repairPromptOptions.operation.id
@@ -3219,6 +3338,64 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           </div>}
           {copyLogError !== null && <p role="alert">{copyLogError}</p>}
         </div> : undefined}
+      </Modal>
+      <Modal
+        open={installRecovery !== null}
+        onClose={() => {
+          recoveryClaim.current = null
+          if (installRecovery !== null) {
+            desktopPluginPanel?.forgetRecovery?.(installRecovery.operationId)
+            dismissNotice(`failed:${installRecovery.operationId}`)
+          }
+          setPromptFallback(null)
+          setInstallRecovery(null)
+        }}
+        title={installRecovery?.lead === 'uninstall' ? t('common.uninstall') : installRecovery?.lead === 'enable' ? t('common.use') : installRecovery?.skinId ? t('common.installSkinTitle', { name: skinNameLabel(skins.find(skin => skin.id === installRecovery.skinId), t) }) : t('failure.marketUpdateFailed')}
+        closeLabel={t('common.close')}
+        className={css.modalSurface}
+        description={installRecovery === null ? undefined : installRecovery.lead === 'open-failed' ? t('failure.recoveryOpenFailed') : installRecovery.lead === 'blocked' ? t('failure.recoveryBlocked') : installRecovery.lead === 'companions' ? t('failure.recoveryCompanions') : installRecovery.lead === 'replace' && installRecovery.spec ? t('failure.manualReplace', { spec: installRecovery.spec }) : installRecovery.lead === 'enable' && installRecovery.name ? t('failure.recoveryEnable', { name: installRecovery.name }) : installRecovery.lead === 'uninstall' && installRecovery.name ? t('failure.recoveryUninstall', { name: installRecovery.name }) : installRecovery.lead === 'check' ? t('common.resultNotConfirmed') : installRecovery.lead === 'none' ? hostKind === 'desktop' ? t('common.desktopInstallInput') : t('common.webInstallCommand') : undefined}
+        footer={<>
+          {installRecovery?.lead === 'open-failed' && <Button variant="primary" size="sm" onClick={() => {
+            if (installRecovery.spec === undefined || installRecovery.spec === '' || desktopPluginPanel === undefined) return
+            void desktopPluginPanel.open(installRecovery.spec, { skinId: installRecovery.skinId ?? 'dsh-skin-market', packageName: installRecovery.packageName ?? 'dsh-skin-market', operationId: installRecovery.operationId, companions: installRecovery.companions }, { navigateOnResume: false }).then(result => {
+              if (!mounted.current) return
+              if (result.ok && result.kind === 'prefilled') {
+                desktopPluginPanel.noteRecovery?.(installRecovery.operationId, 'opened')
+                recoveryClaim.current = null
+                setInstallRecovery(null)
+              } else if (result.ok && result.kind === 'resumed') {
+                desktopPluginPanel.noteRecovery?.(installRecovery.operationId, 'blocked')
+                setInstallRecovery({ ...installRecovery, lead: 'blocked' })
+              }
+            })
+          }}>{t('failure.recoveryOpenPanel')}</Button>}
+          {recoveryPrompt !== null && <Button variant="outline" size="sm" onClick={() => void copyRecoveryPrompt()}>{t('common.copyTroubleshootingPrompt')}</Button>}
+          <Button variant="outline" size="sm" onClick={() => {
+            recoveryClaim.current = null
+            if (installRecovery !== null) {
+              desktopPluginPanel?.forgetRecovery?.(installRecovery.operationId)
+              dismissNotice(`failed:${installRecovery.operationId}`)
+            }
+            setInstallRecovery(null)
+          }}>{t('common.close')}</Button>
+        </>}
+      >
+        {installRecovery?.spec ? <div className={css.installOptions}>
+          <div>
+            <strong>{t('common.packageName')}</strong>
+            <span className={css.copyCapsule}>
+              <Input className={css.copyCapsuleInput} readOnly value={installRecovery.spec} aria-label={t('common.packageName')} />
+              <Button className={css.copyCapsuleButton} variant="ghost" size="sm" icon={<IconCopyOutline />} aria-label={t('common.copyLabel', { label: t('common.packageName') })} onClick={() => void copyTextToClipboard(installRecovery.spec ?? '', t)} />
+            </span>
+          </div>
+          {promptFallback !== null && promptFallback.operationId === installRecovery.operationId && <>
+            <p role="alert">{promptFallback.error}</p>
+            <textarea className={css.repairPromptFallback} aria-label={t('common.copyRepairPromptLabel')} readOnly rows={8} value={promptFallback.text} />
+          </>}
+        </div> : promptFallback !== null && installRecovery !== null && promptFallback.operationId === installRecovery.operationId ? <>
+          <p role="alert">{promptFallback.error}</p>
+          <textarea className={css.repairPromptFallback} aria-label={t('common.copyRepairPromptLabel')} readOnly rows={8} value={promptFallback.text} />
+        </> : undefined}
       </Modal>
       <Modal
         open={showInstallOptions}

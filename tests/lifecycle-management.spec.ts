@@ -1156,6 +1156,7 @@ describe('official plugin manager lifecycle', () => {
     const failed = await finished(host.lifecycle.begin('update', item.id))
     expect(failed.phase).toBe('failed')
     expect(failed.failure?.manualSpec).toBe(`${item.package}@1.1.0`)
+    expect(failed.failure?.manualFollowUp).toBe('uninstall-then-add')
     expect(failed.message).toContain(`请在官方插件页先卸载当前包，再添加 ${item.package}@1.1.0。`)
     expect(host.manager.removeBundle).toHaveBeenCalledWith(item.package)
   })

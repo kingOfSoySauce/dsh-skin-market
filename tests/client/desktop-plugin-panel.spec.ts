@@ -511,6 +511,31 @@ describe('native installation handoff tracking', () => {
     expect(panel.bridge.takeActivationIntent!()).toBeNull()
   })
 
+  it('records a submitted install failure only after the official dialog closes', async () => {
+    const panel = trackedPanel()
+    await panel.bridge.open(spec, { ...handoff, operationId: 'install-1' })
+    panel.start('failed-request')
+    panel.publish({ install: { phase: 'failed', open: true, spec, requestId: 'failed-request' } })
+    expect(panel.bridge.takeManualRecovery!()).toBeNull()
+    panel.publish({ install: { phase: 'idle', open: false, spec: '' } })
+    expect(panel.bridge.takeManualRecovery!()).toEqual({ ...handoff, operationId: 'install-1', spec, companions: undefined })
+    expect(panel.bridge.takeManualRecovery!()).toBeNull()
+  })
+
+  it('does not record a dialog that was closed before it was submitted', async () => {
+    const panel = trackedPanel()
+    await panel.bridge.open(spec, { ...handoff, operationId: 'install-2' })
+    panel.publish({ install: { phase: 'idle', open: false, spec: '' } })
+    expect(panel.bridge.takeManualRecovery!()).toBeNull()
+  })
+
+  it('does not navigate away when a recovery open finds an existing install task', async () => {
+    const panel = trackedPanel()
+    panel.publish({ install: { phase: 'installing', open: true, spec: 'other-spec', requestId: 'busy' } })
+    await expect(panel.bridge.open(spec, handoff, { navigateOnResume: false })).resolves.toEqual({ ok: true, kind: 'resumed' })
+    expect(panel.ctx.layout.selectPanel).not.toHaveBeenCalled()
+  })
+
   it('can associate an explicitly retried install with its new request id', async () => {
     const panel = trackedPanel()
     await panel.bridge.open(spec, handoff)

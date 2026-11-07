@@ -171,6 +171,8 @@ export interface FailureRepairPromptOptions {
   diagnosticLog?: string
   /** Optional host-bound translator; defaults to the registered Chinese catalog. */
   t?: Translator
+  /** Recovery panels still need a prompt when the failure has no narrower repair topic. */
+  allowGeneric?: boolean
 }
 
 const localRepairGuidance: Record<string, MessageKey> = {
@@ -211,7 +213,7 @@ export function createFailureRepairPrompt(options: FailureRepairPromptOptions): 
   const affectedSkinId = operation.failure?.targetSkinId ?? operation.skinId
   if (operation.phase !== 'failed' || skin == null || skin.id !== affectedSkinId
     || [skin.id, skin.package, skin.rowId].some(value => value.trim() === '')) return null
-  const topic = repairTopic(operation, t)
+  const topic = repairTopic(operation, t) ?? (options.allowGeneric === true ? 'recovery' : null)
   if (topic === null) return null
   const desired = operation.failure?.desiredEnabled
   const goal = desired !== undefined

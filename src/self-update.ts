@@ -600,25 +600,28 @@ export function createMarketUpdater(
             if (removed.management?.application === 'failed' || removed.management?.application === 'cancelled' || removed.exitCode !== 0 && removed.exitCode !== null) {
               lastResult = removed
               const reason = officialOperationFailure(removed)?.message ?? '官方 Desktop 未能卸载当前皮肤市场，无法安装新版'
-              if (removed.management?.indeterminate === true) throw new ManualInstallRequired(manualSpec, `${reason}；卸载结果未确认，暂不继续修改 profile`)
+              if (removed.management?.indeterminate === true) throw new ManualInstallRequired(manualSpec, `${reason}；卸载结果未确认，暂不继续修改 profile`, 'check')
               const restoreError = await restoreRemovedMarket()
-              throw new ManualInstallRequired(manualSpec, restoreError === undefined ? `${reason}；已恢复更新前的皮肤市场` : `${reason}；${restoreError}`)
+              throw new ManualInstallRequired(manualSpec, restoreError === undefined ? `${reason}；已恢复更新前的皮肤市场` : `${reason}；${restoreError}`, restoreError === undefined ? 'uninstall-then-add' : 'check')
             }
             lastResult = await runner(profile, args, { signal: controller.signal, onStdout: report, onStderr: report })
             if (lastResult.management?.application === 'failed' || lastResult.management?.application === 'cancelled'
               || lastResult.management?.indeterminate === true || lastResult.exitCode !== 0 && lastResult.exitCode !== null) {
               const reason = officialOperationFailure(lastResult)?.message ?? '官方 Desktop 未能安装新版皮肤市场'
-              if (lastResult.management?.indeterminate === true) throw new ManualInstallRequired(manualSpec, `${reason}；安装结果未确认，暂不继续修改 profile`)
+              if (lastResult.management?.indeterminate === true) throw new ManualInstallRequired(manualSpec, `${reason}；安装结果未确认，暂不继续修改 profile`, 'check')
               const restoreError = await restoreRemovedMarket()
+              if (restoreError === undefined && officialOperationFailure(lastResult)?.kind === 'release-age') {
+                throw new Error(`${reason}；已恢复更新前的皮肤市场，请等待新版本通过安全观察期后再更新`)
+              }
               throw new ManualInstallRequired(manualSpec, restoreError === undefined
-                ? `${reason}；已恢复更新前的皮肤市场，请等待新版本通过安全观察期后再更新`
-                : `${reason}；${restoreError}`)
+                ? `${reason}；已恢复更新前的皮肤市场`
+                : `${reason}；${restoreError}`, restoreError === undefined ? 'uninstall-then-add' : 'check')
             }
             if (selected && lastResult.exitCode === 0 && runner.management !== undefined) {
               const restored = await runner.management.setBundleEnabled(MARKET_NPM_PACKAGE, true, { signal: controller.signal })
               if (restored.management?.application === 'failed' || restored.exitCode !== 0 && restored.exitCode !== null) {
                 lastResult = restored
-                throw new ManualInstallRequired(manualSpec, '新版已安装，但未能恢复皮肤市场的启用选择')
+                throw new ManualInstallRequired(manualSpec, '新版已安装，但未能恢复皮肤市场的启用选择', 'enable')
               }
             }
           }
@@ -701,6 +704,7 @@ export function createMarketUpdater(
             code: officialFailure?.code ?? 'already-installed',
             message: error.message,
             manualSpec: error.manualSpec,
+            manualFollowUp: error.followUp,
           }
           logEvent('error', 'market-update-manual', error.message, operation.id)
         } else if (officialFailure !== undefined) {
@@ -745,8 +749,8 @@ export function createMarketUpdater(
             operation.failure = { ...operation.failure!, message: `${operation.failure!.message}；${recoveryMessage}` }
           } else {
             operation.failure = officialFailure === undefined
-              ? { kind: 'command', message: error instanceof ManualInstallRequired ? `${error.message}；${recoveryError}` : recoveryError, ...(operation.failure?.manualSpec === undefined ? {} : { manualSpec: operation.failure.manualSpec, code: 'already-installed' as const }) }
-              : { ...officialFailure, message: `${error instanceof ManualInstallRequired ? error.message : officialFailure.message}；${recoveryError}`, ...(operation.failure?.manualSpec === undefined ? {} : { manualSpec: operation.failure.manualSpec }) }
+              ? { kind: 'command', message: error instanceof ManualInstallRequired ? `${error.message}；${recoveryError}` : recoveryError, ...(operation.failure?.manualSpec === undefined ? {} : { manualSpec: operation.failure.manualSpec, ...(operation.failure.manualFollowUp === undefined ? {} : { manualFollowUp: operation.failure.manualFollowUp }), code: 'already-installed' as const }) }
+              : { ...officialFailure, message: `${error instanceof ManualInstallRequired ? error.message : officialFailure.message}；${recoveryError}`, ...(operation.failure?.manualSpec === undefined ? {} : { manualSpec: operation.failure.manualSpec, ...(operation.failure.manualFollowUp === undefined ? {} : { manualFollowUp: operation.failure.manualFollowUp }) }) }
             delete operation.failure.action
           }
           logEvent('error', 'market-update-recovery', recoveryError, operation.id)

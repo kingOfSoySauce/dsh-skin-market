@@ -73,7 +73,7 @@ import {
   type InstalledArtifactSnapshot,
 } from './profile.ts'
 import { messageFields, writeOperationMessage, writeOperationStep, type OperationMessageKey, type OperationMessageParams } from './operation-message.ts'
-import type { DesktopInstallCapability, DshRuntime, InstallConflict, LoaderEntry, MarketHostKind, Operation, OperationFailure, OperationKind, OperationRetryAction, PersistedMarketState, SelectionOperationKind, SkinArtifactRisk, SkinEntry, SkinRuntimeState } from './types.ts'
+import type { DesktopInstallCapability, DshRuntime, InstallConflict, LoaderEntry, ManualFollowUp, MarketHostKind, Operation, OperationFailure, OperationKind, OperationRetryAction, PersistedMarketState, SelectionOperationKind, SkinArtifactRisk, SkinEntry, SkinRuntimeState } from './types.ts'
 
 export interface LifecycleHost {
   loader: { entries(): Iterable<LoaderEntry> }
@@ -141,7 +141,7 @@ function removePrefetchDirectory(directory: string): void {
 function errorMessage(error: unknown): string { return error instanceof Error ? error.message : String(error) }
 
 class ManagedOperationError extends Error {
-  constructor(readonly result: CommandResult, message: string, readonly targetSkinId?: string, readonly manualSpec?: string) { super(message) }
+  constructor(readonly result: CommandResult, message: string, readonly targetSkinId?: string, readonly manualSpec?: string, readonly manualFollowUp?: ManualFollowUp) { super(message) }
 }
 
 interface ConfigurationRepairApproval { failedId: string; context: string; binding: string }
@@ -678,11 +678,14 @@ export class SkinLifecycle {
   private async replaceInstalledDesktopPackage(packageName: string, spec: string, operation: Operation, install: () => Promise<CommandResult>): Promise<CommandResult> {
     const selected = readProfileBundles(this.options.profileDir).includes(packageName)
     const signal = this.abortControllers.get(operation.id)?.signal
+    let step: 'remove' | 'install' | 'enable' = 'remove'
     try {
       const removed = await this.options.runner(this.options.profile, ['remove', packageName], { signal })
       this.acceptManagement(removed, operation)
+      step = 'install'
       const installed = await install()
       this.acceptManagement(installed, operation)
+      step = 'enable'
       if (selected && this.management !== undefined) {
         const restored = await this.management.setBundleEnabled(packageName, true, { signal })
         this.acceptManagement(restored, operation)
@@ -690,7 +693,9 @@ export class SkinLifecycle {
       return installed
     } catch (error) {
       if (error instanceof ManagedOperationError) {
-        throw new ManagedOperationError(error.result, `${error.message} ${manualInstallInstruction(spec)}`, error.targetSkinId, spec)
+        const followUp: ManualFollowUp = step === 'enable' ? 'enable' : step === 'install' ? 'install' : 'uninstall-then-add'
+        const message = followUp === 'uninstall-then-add' ? `${error.message} ${manualInstallInstruction(spec)}` : error.message
+        throw new ManagedOperationError(error.result, message, error.targetSkinId, spec, followUp)
       }
       throw error
     }
@@ -1852,6 +1857,7 @@ export class SkinLifecycle {
             ...(operation.failure ?? { kind: 'command', message: error.message }),
             message: error.message,
             manualSpec: error.manualSpec,
+            ...(error.manualFollowUp === undefined ? {} : { manualFollowUp: error.manualFollowUp }),
             code: operation.failure?.code ?? 'already-installed',
           }
         }

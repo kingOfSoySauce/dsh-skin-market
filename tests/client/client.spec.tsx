@@ -248,23 +248,12 @@ describe('client market', () => {
     vi.stubGlobal('fetch', fetchMock)
     const view = render(<SkinMarketSection t={key => key} />)
     if (source === 'skin') fireEvent.click(await screen.findByRole('button', { name: '安装并使用' }))
-    const title = source === 'skin' ? '安装未完成' : '皮肤市场更新失败'
+    const title = source === 'skin' ? '安装 测试皮肤' : '皮肤市场更新失败'
     const dialog = await screen.findByRole('dialog', { name: title })
-    expect(dialog.className).toContain('warningModal')
-    expect(dialog.textContent).toContain('暂时无法连接安装源。请检查网络后重试。')
+    expect(dialog.textContent).toContain('复制命令，在运行 DSH 的电脑上执行。')
     expect(dialog.textContent).not.toContain('ECONNRESET')
-    expect(dialog.querySelector('details, code, ul, ol')).toBeNull()
-    expect(within(dialog).queryAllByRole('link').length).toBeLessThanOrEqual(1)
-    fireEvent.click(within(dialog).getByRole('button', { name: '重试' }))
-    expect(within(dialog).getByRole('button', { name: '处理中…' }).hasAttribute('disabled')).toBe(true)
-    expect(within(dialog).getByRole('button', { name: '取消' }).hasAttribute('disabled')).toBe(true)
-    fireEvent.click(within(dialog).getByRole('button', { name: '处理中…' }))
-    await act(async () => { finishRetry({ ok: false, status: 409, json: async () => ({ error: 'raw retry failure /Users/private/token' }) }); await pending })
-    await waitFor(() => expect(within(dialog).getByRole('alert').textContent).toBe('未能继续操作，请复制日志反馈。'))
-    expect(retries).toBe(1)
-    expect(dialog.textContent).not.toContain('raw retry failure')
-    expect(within(dialog).getByRole('button', { name: '重试' }).hasAttribute('disabled')).toBe(false)
-    fireEvent.click(within(dialog).getByRole('button', { name: '取消' }))
+    expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
+    fireEvent.click(within(dialog).getAllByRole('button', { name: '关闭' })[0]!)
     expect(screen.queryByRole('status')).toBeNull()
     const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
     fireEvent.focus(window)
@@ -445,9 +434,10 @@ describe('client market', () => {
     expect(document.querySelector('[role="status"] strong')).toBeNull()
     phase = 'failed'
     fireEvent.focus(window)
-    const failure = await screen.findByRole('dialog', { name: source === 'skin' ? '安装未完成' : '皮肤市场更新失败' })
-    expect(within(failure).getByRole('button', { name: '重试' })).toBeTruthy()
-    fireEvent.click(within(failure).getByRole('button', { name: '取消' }))
+    const failure = await screen.findByRole('dialog', { name: source === 'skin' ? '安装 测试皮肤' : '皮肤市场更新失败' })
+    expect(failure.textContent).toContain('复制命令，在运行 DSH 的电脑上执行。')
+    expect(within(failure).queryByRole('button', { name: '重试' })).toBeNull()
+    fireEvent.click(within(failure).getAllByRole('button', { name: '关闭' })[0]!)
     expect(document.querySelector('[role="status"] strong')).toBeNull()
     expect(screen.getByRole('button', { name: '安装并使用' }).hasAttribute('disabled')).toBe(false)
   })
@@ -504,9 +494,8 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} />)
     const firstCard = (await screen.findByRole('button', { name: '测试皮肤 界面预览' })).closest('article')!
     fireEvent.click(within(firstCard).getByRole('button', { name: '安装并使用' }))
-    const firstDialog = await screen.findByRole('dialog', { name: '安装未完成' })
-    fireEvent.click(within(firstDialog).getByRole('button', { name: '重试' }))
-    await waitFor(() => expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/operations/first-retry-running'))).toBe(true))
+    const firstDialog = await screen.findByRole('dialog', { name: '安装 测试皮肤' })
+    fireEvent.click(within(firstDialog).getAllByRole('button', { name: '关闭' })[0]!)
     const otherCard = screen.getByRole('button', { name: '另一皮肤 界面预览' }).closest('article')!
     fireEvent.click(within(otherCard).getByRole('button', { name: /^安装(?:并使用)?$/ }))
     await waitFor(() => expect(screen.getByRole('dialog', { name: '安装未完成' }).textContent).toContain('另一皮肤'))
@@ -1018,8 +1007,9 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '更新皮肤市场到 0.1.16' }))
     const dialog = await screen.findByRole('dialog', { name: '皮肤市场更新失败' })
-    expect(within(dialog).getByRole('link', { name: '查看安装排查' }).getAttribute('href')).toBe(MARKET_INSTALL_TROUBLESHOOT_URL)
-    expect(within(dialog).queryByRole('link', { name: '查看手动更新' })).toBeNull()
+    expect(dialog.textContent).toContain('复制命令，在运行 DSH 的电脑上执行。')
+    expect(within(dialog).queryByRole('link', { name: '查看安装排查' })).toBeNull()
+    expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
   })
 
   it('turns an empty successful response into a useful Host update error', async () => {
@@ -3957,10 +3947,10 @@ describe('client market', () => {
     await openSkinCard()
 
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
-    expect((await screen.findAllByRole('button', { name: '重试' }, { timeout: 2_000 })).length).toBeGreaterThan(0)
-    fireEvent.click(screen.getAllByRole('button', { name: '重试' })[0]!)
-
-    await waitFor(() => expect(retryRequests).toBe(1))
+    const dialog = await screen.findByRole('dialog', { name: '安装 测试皮肤' })
+    expect(dialog.textContent).toContain('复制命令，在运行 DSH 的电脑上执行。')
+    expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
+    expect(retryRequests).toBe(0)
   })
 
   it('allows only the displayed exact version then asks for use risks only after release-age approval completes installation', async () => {

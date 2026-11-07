@@ -183,6 +183,7 @@ export interface Operation {
     releaseAgeTarget?: { packageName: string; version: string }
     artifactRisk?: { context: string; packageName: string; version: string; warnings: string[] }
     manualSpec?: string
+    manualFollowUp?: 'uninstall-then-add' | 'enable' | 'install' | 'check'
     fallbackSpec?: string
     action?: 'retry' | 'approve-build' | 'approve-release-age' | 'approve-artifact' | 'repair-configuration'
     conflicts?: Array<{ kind: 'package' | 'repository' | 'row' | 'loader'; incoming: string; existing: string; identifiers: string[] }>

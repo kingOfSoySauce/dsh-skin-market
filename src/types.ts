@@ -225,6 +225,8 @@ export type SelectionOperationKind = 'activate' | 'deactivate' | 'pin' | 'unpin'
 export type OperationKind = 'install' | SelectionOperationKind | 'update' | 'migrate' | 'uninstall'
 export type OperationPhase = 'queued' | 'resolving' | 'downloading' | 'installing' | 'validating' | 'activating' | 'waiting' | 'cancelling' | 'cancelled' | 'done' | 'failed'
 export type OperationRetryAction = 'retry' | 'approve-build' | 'approve-release-age' | 'approve-artifact' | 'repair-configuration'
+/** What the user must do after an automatic install could not finish. */
+export type ManualFollowUp = 'uninstall-then-add' | 'enable' | 'install' | 'check'
 
 export interface SkinArtifactRisk {
   context: string
@@ -245,6 +247,8 @@ export interface OperationFailure extends OperationMessageFields {
   releaseAgeTarget?: { packageName: string; version: string }
   artifactRisk?: SkinArtifactRisk
   manualSpec?: string
+  /** Set only when the failed step is known. Absent manualSpec failures are ordinary installs. */
+  manualFollowUp?: ManualFollowUp
   /** An exact verified target that the official Desktop panel may prefill after a failure. */
   fallbackSpec?: string
   buildKeys?: string[]

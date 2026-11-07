@@ -2,7 +2,7 @@ import type { CommandResult } from './commands.ts'
 import { sanitizeLogText } from './log.ts'
 import { classifyPnpmFailure } from './pnpm-recovery.ts'
 import { parseReleaseAgeTarget } from './release-age.ts'
-import type { OperationFailure } from './types.ts'
+import type { ManualFollowUp, OperationFailure } from './types.ts'
 import type { OperationMessageKey } from './operation-message.ts'
 
 const PACKAGE_FAILURES: Record<string, Pick<OperationFailure, 'kind' | 'message' | 'messageKey' | 'messageParams'>> = {
@@ -53,11 +53,13 @@ export function manualInstallInstruction(spec: string): string {
 
 export class ManualInstallRequired extends Error {
   readonly manualSpec: string
+  readonly followUp: ManualFollowUp
 
-  constructor(spec: string, cause: string) {
-    super(`${cause} ${manualInstallInstruction(spec)}`)
+  constructor(spec: string, cause: string, followUp: ManualFollowUp) {
+    super(followUp === 'uninstall-then-add' ? `${cause} ${manualInstallInstruction(spec)}` : cause)
     this.name = 'ManualInstallRequired'
     this.manualSpec = spec
+    this.followUp = followUp
   }
 }
 
