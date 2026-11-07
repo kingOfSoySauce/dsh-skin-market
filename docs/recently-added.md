@@ -1,5 +1,20 @@
 # 近期收录
 
+<!-- dsh-admission:haoranx98.dsh.skin.galaxy -->
+<a id="recent-2026-11-07-haoranx98-dsh-skin-galaxy"></a>
+
+## 2026-11-07 · 星河 Galaxy
+
+作者：haoranx98
+
+原生 WebGPU 实时渲染的紫蓝星云皮肤：银河尘带斜贯视野，远近星点带视差与轻微闪烁，并有随机流星；深空配色适配 light/dark/system，无运行时 CDN、图片或额外依赖。
+
+GitHub：[haoranx98/dsh-skin-galaxy](https://github.com/haoranx98/dsh-skin-galaxy)
+
+<img src="https://raw.githubusercontent.com/haoranx98/dsh-skin-galaxy/7f72079d38ca4fb2ee2c9a0e285018feadbcfc83/screenshots/dsh-galaxy.gif" width="60%" alt="星河 Galaxy">
+
+<!-- /dsh-admission:haoranx98.dsh.skin.galaxy -->
+
 <a id="recent-2026-11-04-followup"></a>
 
 ## 2026-11-04 · dsh-claude-style
@@ -60,7 +75,7 @@ GitHub：[WWFZS/dsh-plugin-startup-animation](https://github.com/WWFZS/dsh-plugi
 
 GitHub：[657793814/dsh-abyss-skin](https://github.com/657793814/dsh-abyss-skin)
 
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/home.gif" width="60%" alt="dsh-abyss-skin">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/preset-abyss.gif" width="60%" alt="dsh-abyss-skin">
 
 ## 2026-11-04 · deepseek-harness-skin
 
@@ -70,7 +85,7 @@ GitHub：[657793814/dsh-abyss-skin](https://github.com/657793814/dsh-abyss-skin)
 
 GitHub：[xxue-z/deepseek-harness-skin](https://github.com/xxue-z/deepseek-harness-skin)
 
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/home.gif" width="60%" alt="deepseek-harness-skin">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/preset-crayon.gif" width="60%" alt="deepseek-harness-skin">
 
 ## 2026-11-04 · dsh-boot-animation
 
@@ -92,7 +107,7 @@ GitHub：[lxj5820/dsh-boot-animation](https://github.com/lxj5820/dsh-boot-animat
 
 GitHub：[Something11235/dsh-video-skin](https://github.com/Something11235/dsh-video-skin)
 
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/home.gif" width="60%" alt="dsh-video-skin">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Something11235__dsh-video-skin/2f954a1d6ac6140880f1a58438ed746f2f7f3da4/home.gif" width="60%" alt="dsh-video-skin">
 
 ## 2026-11-03 · dsh-whale-girl-live2d
 
@@ -112,7 +127,7 @@ GitHub：[Andersen216/dsh-whale-girl-live2d](https://github.com/Andersen216/dsh-
 
 GitHub：[KylinQ01/dsh-startup-animation](https://github.com/KylinQ01/dsh-startup-animation)
 
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.gif" width="60%" alt="dsh-startup-animation">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/preset-eco.gif" width="60%" alt="dsh-startup-animation">
 
 ## 2026-11-03 · dsh-theme-mineradio
 
@@ -342,7 +357,7 @@ DeepSeek Harness 启动画面与启动动画：黑幕标识、档案底板、交
 
 GitHub：[6shenhonghong9/dsh-startup-screen](https://github.com/6shenhonghong9/dsh-startup-screen)
 
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/6shenhonghong9__dsh-startup-screen/1f35ea33810e02a900b31df01f9c806f92f398df/home.gif" width="60%" alt="dsh-startup-screen">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/6shenhonghong9__dsh-startup-screen/1f35ea33810e02a900b31df01f9c806f92f398df/preset-dark.gif" width="60%" alt="dsh-startup-screen">
 
 ## 2026-10-31 · dsh-UI美化
 
@@ -670,7 +685,7 @@ GitHub：[realMisakaMikoto/dsh-skin-studio](https://github.com/realMisakaMikoto/
 
 GitHub：[taoser258/dsh-client-ui-skin-qingxiao](https://github.com/taoser258/dsh-client-ui-skin-qingxiao)
 
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/home.gif" width="60%" alt="dsh-client-ui-skin-qingxiao">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/preset-dark.gif" width="60%" alt="dsh-client-ui-skin-qingxiao">
 
 ## 2026-09-08 · dsh-whale-aqua-theme
 
@@ -830,7 +845,7 @@ GitHub：[CoolTea001/dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-them
 
 GitHub：[Ddamage/dsh-shunshun-wallpaper](https://github.com/Ddamage/dsh-shunshun-wallpaper)
 
-<img src="https://github.com/Ddamage/dsh-shunshun-wallpaper/releases/download/v1.0.1/rotating_horse_smooth.gif" width="60%" alt="dsh-shunshun-wallpaper">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Ddamage__dsh-shunshun-wallpaper/6f42d12d2b652b14ddc84a3221ddeef47e066d4a/home.gif" width="60%" alt="dsh-shunshun-wallpaper">
 
 ## 2026-09-08 · dsh-atom-commune-skin
 
@@ -1851,17 +1866,6 @@ Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风�
 GitHub：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)
 
 <img src="https://raw.githubusercontent.com/Nwflower/dsh-claude-style/2fe529209ace010a2473f6def0221f342f301c88/docs/screenshots/claude-home-light.png" width="60%" alt="dsh-claude-style">
-
-<!-- dsh-auto-entry:haoranx98.dsh.skin.galaxy -->
-### 2026-11-06 · 星河 Galaxy
-
-作者：haoranx98
-
-原生 WebGPU 实时渲染的紫蓝星云皮肤：银河尘带斜贯视野，远近星点带视差与轻微闪烁，并有随机流星；深空配色适配 light/dark/system，无运行时 CDN、图片或额外依赖。
-
-GitHub：[haoranx98/dsh-skin-galaxy](https://github.com/haoranx98/dsh-skin-galaxy)
-
-<img src="https://raw.githubusercontent.com/haoranx98/dsh-skin-galaxy/7f72079d38ca4fb2ee2c9a0e285018feadbcfc83/screenshots/dsh-galaxy.gif" width="60%" alt="星河 Galaxy">
 
 <!-- dsh-auto-entry:something11235.dsh-video-skin -->
 ### 2026-11-07 · dsh-video-skin

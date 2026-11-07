@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-05**: [Something11235/dsh-video-skin](https://github.com/Something11235/dsh-video-skin) (`0.1.6`) — dsh-video-skin. See the [recent additions log](./docs/recently-added.md#自动同步更新).
+- **2026-11-07**: [Galaxy](https://github.com/haoranx98/dsh-skin-galaxy) (haoranx98). See the [recent additions log](./docs/recently-added.md#recent-2026-11-07-haoranx98-dsh-skin-galaxy).
 
 <a id="manual-update"></a>
 ## Install and update

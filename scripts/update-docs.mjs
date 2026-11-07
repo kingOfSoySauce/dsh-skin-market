@@ -1,3 +1,5 @@
+// Nightly documentation sync uses dsh-skin-market-ops/scripts/update-docs.mjs.
+// This copy is only the public test helper. Do not treat it as the ingestion writer.
 import { readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
