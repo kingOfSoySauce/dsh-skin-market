@@ -51,7 +51,7 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', () => {
   }
 })
 
-import { HOME_CATALOG_BATCH_SIZE, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, interceptNotice, isInterceptFailure, resolvePrimitiveIcon, restartDocumentProbeUrl, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection, waitForRestartDocument } from '../../src/client/SkinMarketSection.tsx'
+import { HOME_CATALOG_BATCH_SIZE, WEB_CLIENT_SETTLE_MS, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, interceptNotice, isInterceptFailure, resolvePrimitiveIcon, restartDocumentProbeUrl, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection, waitForRestartDocument } from '../../src/client/SkinMarketSection.tsx'
 import { MARKET_INSTALL_TROUBLESHOOT_URL } from '../../src/client/failure-help.ts'
 import { apply as applyClient, createClientSkinRuntime, missingPrimitives, switchClientSkin } from '../../src/client/index.ts'
 import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt } from '../../src/client/submission.ts'
@@ -3266,31 +3266,36 @@ describe('client market', () => {
     })
 
     it('waits for graph settlement and clears a real delayed-client reminder in the same tab', async () => {
-      let phase = 'missing' as 'missing' | 'active'
-      let syncing = false
-      let notify!: () => void
-      const fetchMock = serveWebState(() => [webSkin()])
-      const unsubscribe = vi.fn()
-      const view = render(<SkinMarketSection t={key => key} clientRuntime={{ setActive: vi.fn(), probeActive: () => phase, probeSyncing: () => syncing,
-        observe: listener => { notify = listener; return unsubscribe } }} />)
-      expect((await screen.findAllByText('正在加载', { exact: true })).length).toBeGreaterThan(0)
-      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
-      await screen.findByRole('dialog', { name: '需要重启 DSH 应用此皮肤' }, { timeout: 3000 })
-      phase = 'active'
-      syncing = true
-      act(() => notify())
-      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
-      expect(screen.queryByText('使用中', { exact: true })).toBeNull()
-      syncing = false
-      act(() => notify())
-      expect(screen.getAllByText('使用中', { exact: true }).length).toBeGreaterThan(0)
-      expect(screen.queryByText('待重启', { exact: true })).toBeNull()
-      const reads = fetchMock.mock.calls.length
-      act(() => { notify(); notify(); notify() })
-      expect(fetchMock.mock.calls.length).toBe(reads)
-      expect(fetchMock.mock.calls.every(([url]) => !url.endsWith('/restart'))).toBe(true)
-      view.unmount()
-      expect(unsubscribe).toHaveBeenCalledOnce()
+      vi.useFakeTimers({ toFake: ['setTimeout', 'Date'] })
+      try {
+        let phase = 'missing' as 'missing' | 'active'
+        let syncing = false
+        let notify!: () => void
+        const fetchMock = serveWebState(() => [webSkin()])
+        const unsubscribe = vi.fn()
+        const view = render(<SkinMarketSection t={key => key} catalogCache={{ read: async () => null, write: async () => undefined }} clientRuntime={{ setActive: vi.fn(), probeActive: () => phase, probeSyncing: () => syncing,
+          observe: listener => { notify = listener; return unsubscribe } }} />)
+        await act(async () => { await vi.advanceTimersByTimeAsync(0) })
+        expect(screen.getAllByText('正在加载', { exact: true }).length).toBeGreaterThan(0)
+        expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+        await act(async () => { await vi.advanceTimersByTimeAsync(WEB_CLIENT_SETTLE_MS) })
+        expect(screen.getByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeTruthy()
+        phase = 'active'
+        syncing = true
+        act(() => notify())
+        expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+        expect(screen.queryByText('使用中', { exact: true })).toBeNull()
+        syncing = false
+        act(() => notify())
+        expect(screen.getAllByText('使用中', { exact: true }).length).toBeGreaterThan(0)
+        expect(screen.queryByText('待重启', { exact: true })).toBeNull()
+        const reads = fetchMock.mock.calls.length
+        act(() => { notify(); notify(); notify() })
+        expect(fetchMock.mock.calls.length).toBe(reads)
+        expect(fetchMock.mock.calls.every(([url]) => !url.endsWith('/restart'))).toBe(true)
+        view.unmount()
+        expect(unsubscribe).toHaveBeenCalledOnce()
+      } finally { vi.useRealTimers() }
     })
 
     it('does not flash a restart dialog while an active Web client is settling', async () => {
