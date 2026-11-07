@@ -252,7 +252,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .avatar { display: block; width: 136px; height: 136px; overflow: hidden; border-radius: var(--dsw-radius-lg); background: var(--surface-2); }
 .avatar > img, .avatar > .preview-placeholder { display: block; width: 100%; height: 100%; object-fit: cover; }
 .skin-title { display: flex; min-width: 0; align-items: center; justify-content: space-between; gap: 26px; align-self: center; }
-.skin-title-copy { min-width: 0; }
+.skin-title-copy { display: flex; min-width: 0; flex-direction: column; align-self: stretch; }
 .skin-spark { position: relative; align-self: stretch; width: 224px; margin: 0; color: var(--caption); }
 .skin-spark > svg { display: block; width: 224px; height: 100%; overflow: visible; cursor: crosshair; }
 .skin-spark-line { fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; }
@@ -261,6 +261,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .skin-spark-fill-end { stop-color: var(--caption); stop-opacity: 0; }
 .skin-spark-end > svg { width: 12px; height: 12px; flex: none; }
 .skin-spark-end { position: absolute; display: inline-flex; align-items: center; gap: 4px; transform: translate(-6px, -50%); color: inherit; font-size: 11px; font-weight: 500; font-variant-numeric: tabular-nums; line-height: 16px; white-space: nowrap; }
+.skin-spark-end > svg { color: #d9a316; }
 .skin-spark-tip { position: absolute; z-index: 2; padding: 2px 6px; color: var(--text); border: 1px solid var(--border); border-radius: var(--dsw-radius-sm); background: var(--surface); font-size: 11px; line-height: 16px; white-space: nowrap; pointer-events: none; transform: translate(-50%, -130%); box-shadow: 0 2px 8px var(--shadow); font-variant-numeric: tabular-nums; }
 .skin-title-copy h2 { display: -webkit-box; margin: -3px 0 0; overflow: hidden; font-size: 25px; line-height: 30px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
 .skin-title-copy .skin-description { display: -webkit-box; max-width: 700px; margin: 4px 0 0; overflow: hidden; color: var(--secondary); font-size: 13px; line-height: 21px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
@@ -271,7 +272,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .repo-line > svg { flex: none; }
 .repo-line > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .description { max-width: 700px; margin: 11px 0 0; color: var(--secondary); font-size: 13px; line-height: 21px; }
-.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 6px; color: var(--caption); font-size: 11px; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: auto; padding-top: 6px; color: var(--caption); font-size: 11px; }
 .meta .verified { color: var(--success); }
 .meta .unverified { color: inherit; }
 .notice { margin: 0; padding: 10px 12px; color: var(--warning); border: 1px solid color-mix(in srgb, var(--warning) 25%, var(--border)); border-radius: var(--dsw-radius-lg); background: color-mix(in srgb, var(--warning) 7%, transparent); font-size: 12px; line-height: 19px; }
