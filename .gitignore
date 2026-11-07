@@ -14,5 +14,6 @@ design-qa.md
 .private-ops/
 site/public/skin-media/
 .playwright-mcp/
+.hermes/
 AGENTS.md
 **/AGENTS.md
