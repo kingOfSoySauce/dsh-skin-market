@@ -53,8 +53,6 @@ function StarSpark({ values, from, language }: { values: number[] | undefined; f
   const VIEW_H = 100
   const LABEL = 54
   const uid = useId().replace(/[^a-zA-Z0-9]/g, '')
-  const gradientId = `spark-fill-${uid}`
-  const maskId = `spark-mask-${uid}`
   const geometry = useMemo(
     () => values === undefined ? undefined : sparklineGeometry(values, VIEW_W - LABEL, VIEW_H),
     [values],
@@ -85,19 +83,15 @@ function StarSpark({ values, from, language }: { values: number[] | undefined; f
       onMouseLeave={() => setHovered(null)}
     >
       <defs>
-        <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" className="skin-spark-stop-top" />
-          <stop offset="100%" className="skin-spark-stop-bottom" />
-        </linearGradient>
-        <linearGradient id={`${gradientId}-x`} x1="0" y1="0" x2="1" y2="0">
-          <stop offset="93%" stopColor="#fff" stopOpacity="1" />
-          <stop offset="100%" stopColor="#fff" stopOpacity="0" />
-        </linearGradient>
-        <mask id={maskId}>
-          <rect x="0" y="0" width={VIEW_W} height={VIEW_H} fill={`url(#${gradientId}-x)`} />
-        </mask>
+        <filter id={`${uid}-soft`} x="-4%" y="-20%" width="108%" height="240%">
+          <feGaussianBlur stdDeviation="4" />
+        </filter>
+        <clipPath id={`${uid}-clip`}><path d={area} /></clipPath>
       </defs>
-      <path className="skin-spark-area" d={area} fill={`url(#${gradientId})`} mask={`url(#${maskId})`} />
+      <path className="skin-spark-area" d={area} />
+      <g clipPath={`url(#${uid}-clip)`}>
+        <path className="skin-spark-shade" d={geometry.d} transform="translate(0 9)" filter={`url(#${uid}-soft)`} vectorEffect="non-scaling-stroke" />
+      </g>
       <path className="skin-spark-line" d={geometry.d} vectorEffect="non-scaling-stroke" />
     </svg>
     <span
