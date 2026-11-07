@@ -3022,12 +3022,13 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
               <h2>{selectedName}</h2>
               <a className={css.repoLine} href={selected.repo} target="_blank" rel="noreferrer"><MarkGithubIcon size={13} aria-hidden="true" /><span>{githubRepoLabel(selected.repo)}</span></a>
               {selectedDescription !== undefined && <p className={css.description} title={selectedDescription}>{displayTitle(selectedDescription)}</p>}
-              <p className={css.version}>{t('common.version', { version: selected.install.version })}<span aria-hidden="true"> · </span>{compatibilityUnverified ? t('common.compatibilityPending') : t('common.compatibleWithDsh', { range: selected.compatibility.dsh })}{runtime?.version !== undefined && runtime.version !== null && <><span aria-hidden="true"> · </span>{t('common.currentDsh', { version: runtime.version })}</>}<StatusLabel active={state.activation === 'active'}>{statusLabel(state, t)}</StatusLabel></p>
+              <p className={css.version}>{t('common.version', { version: selected.install.version })}<span aria-hidden="true"> · </span>{compatibilityUnverified ? t('common.compatibilityPending') : t('common.compatibleWithDsh', { range: selected.compatibility.dsh })}</p>
             </div>
             <SkinSpark values={curveEntry(starCurves, selected.repo)?.stars} from={curveEntry(starCurves, selected.repo)?.from} language={providedT.locale?.() ?? 'zh'} />
           </header>
 
           <div className={css.actionRow}>
+              <StatusLabel active={state.activation === 'active'}>{statusLabel(state, t)}</StatusLabel>
               {state.installation === 'missing' && <>
                 {autoInstallable && (officialDesktop || !deferInstallAndUse) && <Button variant="primary" size="sm" icon={<IconDownloadOutline />} disabled={selectedBusy !== undefined || installAndUseReason !== null || officialDesktop && deferInstallAndUse} title={installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t('common.noOtherInstall') : installRequiresRestart ? t('market.restartDesktopGuidance') : undefined)} onClick={() => void installAndActivate()}>{officialDesktop ? t('common.install') : t('common.installAndUse')}</Button>}
                 {autoInstallable && !officialDesktop && <Button variant={deferInstallAndUse ? 'primary' : 'outline'} size="sm" icon={deferInstallAndUse ? <IconDownloadOutline /> : undefined} disabled={selectedBusy !== undefined || actionReason('install') !== null} title={actionReason('install') ?? (deferInstallAndUse ? t('common.installAfterCurrent') : undefined)} onClick={() => void run('install')}>{deferInstallAndUse ? t('common.install') : t('common.onlyInstall')}</Button>}
@@ -3060,7 +3061,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           {state.activation === 'unavailable' && state.error !== undefined && <div className={css.error} role="status">{operationMessage({ message: state.error, messageKey: state.errorKey, messageParams: state.errorParams }, t)}</div>}
 
           <div className={css.galleryGroup} data-paused={galleryPaused ? 'true' : 'false'} onMouseEnter={() => setCarouselPausedState(true)} onMouseLeave={() => setCarouselPausedState(false)} onFocusCapture={() => setCarouselPausedState(true)} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setCarouselPausedState(false) }}>
-            <div className={css.headPanel}>
+            <div className={css.hero}>
               <button className={`${css.heroOpen} dsh-skin-media-hover`} aria-label={`${t('common.fullscreenView')} ${t('common.skinScreenshot', { name: selected.name.zh, index: shotIndex + 1 })}`} onClick={() => setLightboxOpen(true)}>
                 <PreviewMedia t={t} key={`${selected.id}:${selectedScreenshots[shotIndex] ?? 'missing'}:hero`} skin={selected} src={selectedScreenshots[shotIndex]} alt={t('common.skinLargePreview', { name: selected.name.zh })} kind="hero" />
               </button>
