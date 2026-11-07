@@ -493,8 +493,6 @@ export function App({ skins, curves = {} }: { skins: Skin[]; curves?: Record<str
           <StarSpark values={curveEntry(curves, selected.repo)?.stars} from={curveEntry(curves, selected.repo)?.from} language={language} />
         </header>
 
-        {!verified && <p className="notice">{t('skin.compatibilityNotice')}</p>}
-        {selected.review?.preview === 'repository-card' && !(selected.marketScreenshots?.length) && <p className="notice">{t('skin.repositoryPreviewNotice')}</p>}
         {usesMarketScreenshots(selected) && <p className="notice">{t('skin.marketScreenshotNotice')}</p>}
 
         <div className="gallery-group" data-paused={galleryPaused ? 'true' : 'false'} onMouseEnter={() => setCarouselPaused(true)} onMouseLeave={() => setCarouselPaused(false)} onFocusCapture={() => setCarouselPaused(true)} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setCarouselPaused(false) }}>
