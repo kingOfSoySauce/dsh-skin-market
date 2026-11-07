@@ -255,22 +255,22 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .skin-title-copy { min-width: 0; }
 .skin-spark { position: relative; align-self: stretch; width: 224px; margin: 0; color: var(--secondary); }
 .skin-spark > svg { display: block; width: 224px; height: 100%; overflow: visible; cursor: crosshair; }
-.skin-spark-line { fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; }
-.skin-spark-stop-top { stop-color: var(--primary); stop-opacity: .16; }
+.skin-spark-line { fill: none; stroke: var(--primary); stroke-width: 1.4; stroke-linecap: round; }
+.skin-spark-stop-top { stop-color: var(--primary); stop-opacity: .42; }
 .skin-spark-stop-bottom { stop-color: var(--primary); stop-opacity: 0; }
 .skin-spark-end > svg { width: 12px; height: 12px; flex: none; }
 .skin-spark-end { position: absolute; display: inline-flex; align-items: center; gap: 4px; transform: translate(-6px, -50%); color: var(--secondary); font-size: 11px; font-weight: 500; font-variant-numeric: tabular-nums; line-height: 16px; white-space: nowrap; }
 .skin-spark-tip { position: absolute; z-index: 2; padding: 2px 6px; color: var(--text); border: 1px solid var(--border); border-radius: var(--dsw-radius-sm); background: var(--surface); font-size: 11px; line-height: 16px; white-space: nowrap; pointer-events: none; transform: translate(-50%, -130%); box-shadow: 0 2px 8px var(--shadow); font-variant-numeric: tabular-nums; }
-.skin-title h2 { display: -webkit-box; margin: 0; overflow: hidden; font-size: 25px; line-height: 32px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
-.skin-title .skin-description { display: -webkit-box; max-width: 700px; margin: 7px 0 0; overflow: hidden; color: var(--secondary); font-size: 13px; line-height: 21px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
-.repo-row { display: flex; min-width: 0; align-items: center; gap: 10px; margin-top: 8px; }
+.skin-title-copy h2 { display: -webkit-box; margin: -3px 0 0; overflow: hidden; font-size: 25px; line-height: 30px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
+.skin-title-copy .skin-description { display: -webkit-box; max-width: 700px; margin: 4px 0 0; overflow: hidden; color: var(--secondary); font-size: 13px; line-height: 21px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
+.repo-row { display: flex; min-width: 0; align-items: center; gap: 10px; margin-top: 5px; }
 .repo-row .button { height: 28px; flex: none; padding: 0 12px; font-size: 12px; }
 .repo-line { display: inline-flex; min-width: 0; align-items: center; gap: 5px; margin: 0; color: var(--secondary); font-size: 12px; line-height: 18px; text-decoration: none; }
 .repo-line:hover { color: var(--text); text-decoration: underline; text-underline-offset: 2px; }
 .repo-line > svg { flex: none; }
 .repo-line > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .description { max-width: 700px; margin: 11px 0 0; color: var(--secondary); font-size: 13px; line-height: 21px; }
-.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 8px; color: var(--caption); font-size: 11px; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 6px; color: var(--caption); font-size: 11px; }
 .meta .verified, .meta .unverified { padding: 2px 7px; border-radius: var(--dsw-radius-sm); }
 .meta .verified { color: var(--success); background: color-mix(in srgb, var(--success) 11%, transparent); }
 .meta .unverified { color: var(--warning); background: color-mix(in srgb, var(--warning) 11%, transparent); }
@@ -382,7 +382,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .modal-home-back { display: none; }
   .skin-head { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .avatar { display: none; }
-  .skin-title h2 { font-size: 20px; line-height: 27px; }
+  .skin-title-copy h2 { font-size: 20px; line-height: 27px; }
   .description { margin-top: 7px; }
   .skin-spark { grid-column: 1; align-self: auto; width: 100%; height: 120px; margin-top: 10px; }
   .skin-spark > svg { width: 100%; height: 120px; }

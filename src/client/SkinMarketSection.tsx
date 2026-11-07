@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type ComponentType, type CSSProperties, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { SquaresFourIcon, XIcon } from '@phosphor-icons/react'
-import { MarkGithubIcon, StarIcon } from '@primer/octicons-react'
+import { MarkGithubIcon, StarFillIcon, StarIcon } from '@primer/octicons-react'
 import * as primitiveExports from '@deepseek-ai/dsh-client-ui-primitives'
 import {
   Button,
@@ -914,7 +914,7 @@ function SkinSpark({ values, from, language }: { values: number[] | undefined; f
           <stop offset="100%" className={css.sparkFillBottom} />
         </linearGradient>
         <linearGradient id={`${gradientId}-x`} x1="0" y1="0" x2="1" y2="0">
-          <stop offset="62%" stopColor="#fff" stopOpacity="1" />
+          <stop offset="84%" stopColor="#fff" stopOpacity="1" />
           <stop offset="100%" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
         <mask id={maskId}>
@@ -927,7 +927,7 @@ function SkinSpark({ values, from, language }: { values: number[] | undefined; f
     <span
       className={css.sparkEnd}
       style={{ left: `${(geometry.end.x / VIEW_W) * 100}%`, top: `${(geometry.end.y / VIEW_H) * 100}%` }}
-    ><StarIcon size={12} aria-hidden="true" />{current}</span>
+    ><StarFillIcon size={12} aria-hidden="true" />{current}</span>
     {active !== undefined && from !== undefined && activeValue !== undefined && <span
       className={css.sparkTip}
       style={{ left: `${(active.x / VIEW_W) * 100}%`, top: `${(active.y / VIEW_H) * 100}%` }}
