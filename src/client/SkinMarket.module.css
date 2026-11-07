@@ -472,7 +472,7 @@
 .spark { position: relative; align-self: stretch; width: 224px; margin: 0; color: var(--dsw-alias-label-caption); }
 .spark > svg { display: block; width: 224px; height: 100%; overflow: visible; cursor: crosshair; }
 .sparkEnd { position: absolute; display: inline-flex; align-items: center; gap: 4px; transform: translate(-6px, -50%); white-space: nowrap; color: inherit; font-size: 11px; font-weight: 500; line-height: 16px; font-variant-numeric: tabular-nums; }
-.sparkEnd > svg { width: 12px; height: 12px; flex: none; color: var(--dsw-alias-state-warning-primary, #d9a316); }
+.sparkEnd > svg { width: 12px; height: 12px; flex: none; color: inherit; }
 .sparkLine { fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; }
 .sparkArea { stroke: none; }
 .sparkFillTop { stop-color: var(--dsw-alias-label-caption); stop-opacity: .20; }

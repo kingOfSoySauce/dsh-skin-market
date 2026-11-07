@@ -113,7 +113,7 @@ export function sparklineGeometry(values: number[], width: number, height: numbe
   const clean = values.filter(value => Number.isFinite(value))
   if (clean.length < 2 || width <= 0 || height <= 0) return undefined
   const lastIndex = clean.length - 1
-  const points = downsample(soften(clean, 2))
+  const points = downsample(soften(clean, 5), 48)
   const low = Math.min(...clean)
   const high = Math.max(...clean)
   const span = high - low || 1

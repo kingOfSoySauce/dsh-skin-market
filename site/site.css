@@ -261,7 +261,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .skin-spark-fill-end { stop-color: var(--caption); stop-opacity: 0; }
 .skin-spark-end > svg { width: 12px; height: 12px; flex: none; }
 .skin-spark-end { position: absolute; display: inline-flex; align-items: center; gap: 4px; transform: translate(-6px, -50%); color: inherit; font-size: 11px; font-weight: 500; font-variant-numeric: tabular-nums; line-height: 16px; white-space: nowrap; }
-.skin-spark-end > svg { color: #d9a316; }
 .skin-spark-tip { position: absolute; z-index: 2; padding: 2px 6px; color: var(--text); border: 1px solid var(--border); border-radius: var(--dsw-radius-sm); background: var(--surface); font-size: 11px; line-height: 16px; white-space: nowrap; pointer-events: none; transform: translate(-50%, -130%); box-shadow: 0 2px 8px var(--shadow); font-variant-numeric: tabular-nums; }
 .skin-title-copy h2 { display: -webkit-box; margin: -3px 0 0; overflow: hidden; font-size: 25px; line-height: 30px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
 .skin-title-copy .skin-description { display: -webkit-box; max-width: 700px; margin: 4px 0 0; overflow: hidden; color: var(--secondary); font-size: 13px; line-height: 21px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
