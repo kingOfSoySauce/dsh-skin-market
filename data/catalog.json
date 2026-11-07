@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T09:50:54.773Z",
+  "generatedAt": "2026-11-07T13:18:43.514Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -68342,17 +68342,6 @@
         "description": {
           "zh": "月升 Moonrise 是一套深夜写代码风格的暗色主题，以深蓝夜色为底、琥珀色为强调；通过 `ctx.theme.register()` 覆盖 DSH 文档化的 `--dsw-alias-*` 语义 token，安装后可在设置 → 外观选择。",
           "en": "Moonrise is a late-night coding theme with an amber-on-midnight palette. It registers a dark `ThemeDefinition` through `ctx.theme.register()`, overriding DSH's documented `--dsw-alias-*` semantic tokens; select it in Settings → Appearance after installation."
-        },
-        "descriptionPolicy": "show"
-      },
-      "haoranx98.dsh.skin.galaxy": {
-        "name": {
-          "zh": "星河 Galaxy",
-          "en": "Galaxy"
-        },
-        "description": {
-          "zh": "原生 WebGPU 实时渲染的紫蓝星云皮肤：银河尘带斜贯视野，远近星点带视差与轻微闪烁，并有随机流星；深空配色适配 light/dark/system，无运行时 CDN、图片或额外依赖。",
-          "en": "A purple-blue nebula skin rendered live with native WebGPU: a Milky Way dust band crosses the view, near and far stars have parallax and a slight twinkle, and meteors appear at random. Its deep-space colors adapt to light, dark, and system mode, with no runtime CDN, images, or extra dependencies."
         },
         "descriptionPolicy": "show"
       },
