@@ -297,153 +297,153 @@ window.__ModuleLoader__.load({
 			document.head.appendChild(tag);
 		}
 		var SkinMarket_module_css_default = {
-			"sparkFillMid": "VqXecW_sparkFillMid",
-			"homeSearch": "VqXecW_homeSearch",
-			"segmented": "VqXecW_segmented",
-			"cardInlineActions": "VqXecW_cardInlineActions",
-			"loadMoreHint": "VqXecW_loadMoreHint",
-			"homeUpdateAction": "VqXecW_homeUpdateAction",
-			"homeContent": "VqXecW_homeContent",
-			"homeTitleRow": "VqXecW_homeTitleRow",
-			"skeletonShimmer": "VqXecW_skeletonShimmer",
-			"warningModal": "VqXecW_warningModal",
-			"lightbox": "VqXecW_lightbox",
-			"thumbnails": "VqXecW_thumbnails",
-			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
-			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
-			"homeCardRepo": "VqXecW_homeCardRepo",
-			"interceptNotice": "VqXecW_interceptNotice",
-			"activationConflictList": "VqXecW_activationConflictList",
-			"manualInstallGuide": "VqXecW_manualInstallGuide",
-			"skinCardBody": "VqXecW_skinCardBody",
-			"operationDetails": "VqXecW_operationDetails",
-			"repairPromptFallback": "VqXecW_repairPromptFallback",
-			"hero": "VqXecW_hero",
-			"operationCopyLog": "VqXecW_operationCopyLog",
-			"installOptions": "VqXecW_installOptions",
-			"homeGithubLabel": "VqXecW_homeGithubLabel",
-			"detailHeader": "VqXecW_detailHeader",
-			"searchField": "VqXecW_searchField",
-			"cardMeta": "VqXecW_cardMeta",
-			"catalogTitle": "VqXecW_catalogTitle",
-			"error": "VqXecW_error",
-			"home": "VqXecW_home",
-			"homeCardFooter": "VqXecW_homeCardFooter",
-			"sparkFillTop": "VqXecW_sparkFillTop",
-			"notice": "VqXecW_notice",
-			"homeLoadMore": "VqXecW_homeLoadMore",
-			"filterBar": "VqXecW_filterBar",
-			"detailSkeleton": "VqXecW_detailSkeleton",
-			"discoverTitle": "VqXecW_discoverTitle",
-			"sparkFillEnd": "VqXecW_sparkFillEnd",
-			"cardMetaLine": "VqXecW_cardMetaLine",
-			"discoveryGrid": "VqXecW_discoveryGrid",
-			"thumbnailFrame": "VqXecW_thumbnailFrame",
-			"installedMoreCard": "VqXecW_installedMoreCard",
-			"skinCard": "VqXecW_skinCard",
-			"titleBlock": "VqXecW_titleBlock",
-			"operationDismiss": "VqXecW_operationDismiss",
-			"catalogSearch": "VqXecW_catalogSearch",
-			"operationMeta": "VqXecW_operationMeta",
-			"homeCardDescription": "VqXecW_homeCardDescription",
-			"cardTitle": "VqXecW_cardTitle",
-			"operationMessage": "VqXecW_operationMessage",
-			"actionRow": "VqXecW_actionRow",
-			"cardAction": "VqXecW_cardAction",
-			"lightboxNext": "VqXecW_lightboxNext",
-			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
-			"sparkEnd": "VqXecW_sparkEnd",
-			"spin": "VqXecW_spin",
-			"operationElapsed": "VqXecW_operationElapsed",
-			"detail": "VqXecW_detail",
-			"homeActions": "VqXecW_homeActions",
-			"srOnly": "VqXecW_srOnly",
-			"heroOpen": "VqXecW_heroOpen",
-			"discoverHeading": "VqXecW_discoverHeading",
-			"catalog": "VqXecW_catalog",
-			"homeCardOpen": "VqXecW_homeCardOpen",
-			"browserContent": "VqXecW_browserContent",
-			"aboutGrid": "VqXecW_aboutGrid",
-			"homeCardCopy": "VqXecW_homeCardCopy",
-			"root": "VqXecW_root",
-			"headerDiscover": "VqXecW_headerDiscover",
-			"cardStars": "VqXecW_cardStars",
-			"version": "VqXecW_version",
-			"listLoading": "VqXecW_listLoading",
-			"sparkTip": "VqXecW_sparkTip",
-			"homeSection": "VqXecW_homeSection",
 			"thumbnailProgress": "VqXecW_thumbnailProgress",
-			"operationCancel": "VqXecW_operationCancel",
-			"statusLabel": "VqXecW_statusLabel",
-			"installedRow": "VqXecW_installedRow",
-			"skinCardPreview": "VqXecW_skinCardPreview",
-			"heroNav": "VqXecW_heroNav",
-			"lightboxClose": "VqXecW_lightboxClose",
+			"warningModal": "VqXecW_warningModal",
 			"description": "VqXecW_description",
-			"homeGithubAction": "VqXecW_homeGithubAction",
-			"heroNext": "VqXecW_heroNext",
-			"loading": "VqXecW_loading",
-			"galleryGroup": "VqXecW_galleryGroup",
-			"operationActions": "VqXecW_operationActions",
-			"filters": "VqXecW_filters",
-			"activationSwitch": "VqXecW_activationSwitch",
-			"sparkLine": "VqXecW_sparkLine",
-			"repoLine": "VqXecW_repoLine",
 			"skeletonCard": "VqXecW_skeletonCard",
-			"galleryProgress": "VqXecW_galleryProgress",
-			"previewPlaceholder": "VqXecW_previewPlaceholder",
-			"feedMeta": "VqXecW_feedMeta",
-			"skinList": "VqXecW_skinList",
-			"lightboxPrev": "VqXecW_lightboxPrev",
-			"copyCapsule": "VqXecW_copyCapsule",
-			"lightboxNav": "VqXecW_lightboxNav",
-			"spark": "VqXecW_spark",
-			"heroPrev": "VqXecW_heroPrev",
-			"pinWarning": "VqXecW_pinWarning",
-			"installCommandGroup": "VqXecW_installCommandGroup",
-			"activationConflictState": "VqXecW_activationConflictState",
-			"homeHeader": "VqXecW_homeHeader",
-			"empty": "VqXecW_empty",
-			"cardDescription": "VqXecW_cardDescription",
-			"browserHomeBack": "VqXecW_browserHomeBack",
-			"searchClear": "VqXecW_searchClear",
-			"modalSurface": "VqXecW_modalSurface",
-			"collectionTitle": "VqXecW_collectionTitle",
-			"operation": "VqXecW_operation",
-			"homeCardMedia": "VqXecW_homeCardMedia",
-			"homeSectionTitle": "VqXecW_homeSectionTitle",
-			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
-			"operationDiagnostics": "VqXecW_operationDiagnostics",
-			"interceptHelp": "VqXecW_interceptHelp",
-			"lightboxStage": "VqXecW_lightboxStage",
-			"mobileBack": "VqXecW_mobileBack",
-			"installCommandLabel": "VqXecW_installCommandLabel",
-			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
-			"marketUpdateButton": "VqXecW_marketUpdateButton",
-			"homeError": "VqXecW_homeError",
-			"tags": "VqXecW_tags",
-			"listSkeleton": "VqXecW_listSkeleton",
-			"recommendations": "VqXecW_recommendations",
-			"browserModal": "VqXecW_browserModal",
-			"homeLoading": "VqXecW_homeLoading",
-			"homeOperations": "VqXecW_homeOperations",
-			"iconOnlyButton": "VqXecW_iconOnlyButton",
-			"catalogHeader": "VqXecW_catalogHeader",
-			"activationConflictRow": "VqXecW_activationConflictRow",
-			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
-			"catalogTitleMain": "VqXecW_catalogTitleMain",
-			"browserPanel": "VqXecW_browserPanel",
-			"activationConflicts": "VqXecW_activationConflicts",
-			"homeCard": "VqXecW_homeCard",
-			"skinAvatar": "VqXecW_skinAvatar",
+			"discoverTitle": "VqXecW_discoverTitle",
+			"operationDetails": "VqXecW_operationDetails",
 			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
-			"sparkArea": "VqXecW_sparkArea",
+			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
+			"homeSearch": "VqXecW_homeSearch",
+			"homeCardDescription": "VqXecW_homeCardDescription",
+			"srOnly": "VqXecW_srOnly",
+			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
+			"repoLine": "VqXecW_repoLine",
+			"operationMessage": "VqXecW_operationMessage",
+			"browser": "VqXecW_browser",
+			"homeCardRepo": "VqXecW_homeCardRepo",
+			"homeLoading": "VqXecW_homeLoading",
 			"changelog": "VqXecW_changelog",
-			"homeOperation": "VqXecW_homeOperation",
-			"installSegmented": "VqXecW_installSegmented",
+			"homeTitleRow": "VqXecW_homeTitleRow",
 			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
+			"lightboxStage": "VqXecW_lightboxStage",
+			"loading": "VqXecW_loading",
+			"activationSwitch": "VqXecW_activationSwitch",
+			"galleryProgress": "VqXecW_galleryProgress",
+			"installCommandGroup": "VqXecW_installCommandGroup",
+			"segmented": "VqXecW_segmented",
+			"sparkFillTop": "VqXecW_sparkFillTop",
+			"version": "VqXecW_version",
+			"browserHomeBack": "VqXecW_browserHomeBack",
+			"mobileBack": "VqXecW_mobileBack",
+			"interceptHelp": "VqXecW_interceptHelp",
+			"homeCard": "VqXecW_homeCard",
+			"thumbnails": "VqXecW_thumbnails",
+			"titleBlock": "VqXecW_titleBlock",
+			"cardDescription": "VqXecW_cardDescription",
+			"tags": "VqXecW_tags",
+			"repairPromptFallback": "VqXecW_repairPromptFallback",
+			"homeActions": "VqXecW_homeActions",
+			"homeCardCopy": "VqXecW_homeCardCopy",
+			"heroPrev": "VqXecW_heroPrev",
+			"installOptions": "VqXecW_installOptions",
+			"searchField": "VqXecW_searchField",
+			"iconOnlyButton": "VqXecW_iconOnlyButton",
+			"operation": "VqXecW_operation",
+			"marketUpdateButton": "VqXecW_marketUpdateButton",
+			"hero": "VqXecW_hero",
+			"browserPanel": "VqXecW_browserPanel",
+			"detail": "VqXecW_detail",
+			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
+			"heroNav": "VqXecW_heroNav",
+			"skinCard": "VqXecW_skinCard",
+			"aboutGrid": "VqXecW_aboutGrid",
+			"activationConflictState": "VqXecW_activationConflictState",
+			"lightboxPrev": "VqXecW_lightboxPrev",
+			"lightboxNext": "VqXecW_lightboxNext",
+			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
+			"browserContent": "VqXecW_browserContent",
+			"skinCardPreview": "VqXecW_skinCardPreview",
+			"installedRow": "VqXecW_installedRow",
+			"lightbox": "VqXecW_lightbox",
+			"recommendations": "VqXecW_recommendations",
+			"actionRow": "VqXecW_actionRow",
+			"error": "VqXecW_error",
+			"homeSection": "VqXecW_homeSection",
+			"installCommandLabel": "VqXecW_installCommandLabel",
+			"copyCapsule": "VqXecW_copyCapsule",
+			"modalSurface": "VqXecW_modalSurface",
 			"cardActionProgress": "VqXecW_cardActionProgress",
-			"browser": "VqXecW_browser"
+			"lightboxClose": "VqXecW_lightboxClose",
+			"lightboxNav": "VqXecW_lightboxNav",
+			"interceptNotice": "VqXecW_interceptNotice",
+			"installedMoreCard": "VqXecW_installedMoreCard",
+			"detailSkeleton": "VqXecW_detailSkeleton",
+			"catalogSearch": "VqXecW_catalogSearch",
+			"sparkLine": "VqXecW_sparkLine",
+			"skinList": "VqXecW_skinList",
+			"previewPlaceholder": "VqXecW_previewPlaceholder",
+			"searchClear": "VqXecW_searchClear",
+			"catalogTitleMain": "VqXecW_catalogTitleMain",
+			"homeOperation": "VqXecW_homeOperation",
+			"homeCardMedia": "VqXecW_homeCardMedia",
+			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
+			"homeUpdateAction": "VqXecW_homeUpdateAction",
+			"headerDiscover": "VqXecW_headerDiscover",
+			"homeCardOpen": "VqXecW_homeCardOpen",
+			"root": "VqXecW_root",
+			"homeCardFooter": "VqXecW_homeCardFooter",
+			"statusLabel": "VqXecW_statusLabel",
+			"empty": "VqXecW_empty",
+			"homeHeader": "VqXecW_homeHeader",
+			"cardTitle": "VqXecW_cardTitle",
+			"pinWarning": "VqXecW_pinWarning",
+			"spark": "VqXecW_spark",
+			"operationDiagnostics": "VqXecW_operationDiagnostics",
+			"feedMeta": "VqXecW_feedMeta",
+			"cardStars": "VqXecW_cardStars",
+			"filterBar": "VqXecW_filterBar",
+			"heroNext": "VqXecW_heroNext",
+			"operationDismiss": "VqXecW_operationDismiss",
+			"heroOpen": "VqXecW_heroOpen",
+			"discoveryGrid": "VqXecW_discoveryGrid",
+			"manualInstallGuide": "VqXecW_manualInstallGuide",
+			"operationCancel": "VqXecW_operationCancel",
+			"sparkTip": "VqXecW_sparkTip",
+			"discoverHeading": "VqXecW_discoverHeading",
+			"sparkFillEnd": "VqXecW_sparkFillEnd",
+			"cardAction": "VqXecW_cardAction",
+			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
+			"homeContent": "VqXecW_homeContent",
+			"cardInlineActions": "VqXecW_cardInlineActions",
+			"homeLoadMore": "VqXecW_homeLoadMore",
+			"catalogHeader": "VqXecW_catalogHeader",
+			"operationActions": "VqXecW_operationActions",
+			"spin": "VqXecW_spin",
+			"loadMoreHint": "VqXecW_loadMoreHint",
+			"skeletonShimmer": "VqXecW_skeletonShimmer",
+			"cardMetaLine": "VqXecW_cardMetaLine",
+			"sparkArea": "VqXecW_sparkArea",
+			"thumbnailFrame": "VqXecW_thumbnailFrame",
+			"detailHeader": "VqXecW_detailHeader",
+			"collectionTitle": "VqXecW_collectionTitle",
+			"listSkeleton": "VqXecW_listSkeleton",
+			"sparkFillMid": "VqXecW_sparkFillMid",
+			"activationConflicts": "VqXecW_activationConflicts",
+			"activationConflictRow": "VqXecW_activationConflictRow",
+			"homeGithubAction": "VqXecW_homeGithubAction",
+			"homeOperations": "VqXecW_homeOperations",
+			"catalog": "VqXecW_catalog",
+			"sparkEnd": "VqXecW_sparkEnd",
+			"cardMeta": "VqXecW_cardMeta",
+			"activationConflictList": "VqXecW_activationConflictList",
+			"operationCopyLog": "VqXecW_operationCopyLog",
+			"notice": "VqXecW_notice",
+			"filters": "VqXecW_filters",
+			"home": "VqXecW_home",
+			"homeError": "VqXecW_homeError",
+			"browserModal": "VqXecW_browserModal",
+			"catalogTitle": "VqXecW_catalogTitle",
+			"galleryGroup": "VqXecW_galleryGroup",
+			"installSegmented": "VqXecW_installSegmented",
+			"operationMeta": "VqXecW_operationMeta",
+			"skinAvatar": "VqXecW_skinAvatar",
+			"homeSectionTitle": "VqXecW_homeSectionTitle",
+			"listLoading": "VqXecW_listLoading",
+			"skinCardBody": "VqXecW_skinCardBody",
+			"homeGithubLabel": "VqXecW_homeGithubLabel",
+			"operationElapsed": "VqXecW_operationElapsed"
 		};
 		//#endregion
 		//#region \0dsh-skin-market-css:/Users/leon/Code/liang-intensity-calibrator/code/dsh-skin-market/src/client/media-hover.module.css.mjs
@@ -1275,6 +1275,12 @@ window.__ModuleLoader__.load({
 				"failure.operation": "{action}未完成",
 				"failure.autoReplaceIncomplete": "自动替换未完成。",
 				"failure.manualReplace": "请在官方插件页先卸载当前包，再添加 {spec}。",
+				"failure.recoveryOpenFailed": "打不开安装面板。",
+				"failure.recoveryOpenPanel": "打开安装面板",
+				"failure.recoveryBlocked": "官方插件页还有一个安装没结束。请到官方插件页完成或关闭它。回到这里后，会打开安装面板。",
+				"failure.recoveryCompanions": "这款皮肤有配套包，要按顺序安装。",
+				"failure.recoveryEnable": "「{name}」的新版已经装上，请到官方插件页启用。",
+				"failure.recoveryUninstall": "卸载未完成。请到官方插件页移除「{name}」。",
 				"failure.releaseAgeProblem": "所需版本仍处于新包保护期。",
 				"failure.releaseAgeTitle": "{action}需要允许新版本",
 				"failure.releaseAgeWhat": "{packageName}@{version} 仍处于新包保护期。",
@@ -1904,6 +1910,12 @@ window.__ModuleLoader__.load({
 				"failure.operation": "{action} incomplete",
 				"failure.autoReplaceIncomplete": "Automatic replacement did not complete.",
 				"failure.manualReplace": "Uninstall the current package in the official plugin page, then add {spec}.",
+				"failure.recoveryOpenFailed": "The install panel could not be opened.",
+				"failure.recoveryOpenPanel": "Open install panel",
+				"failure.recoveryBlocked": "The official plugin page still has an unfinished install. Finish or close it there. The install panel will open when you come back here.",
+				"failure.recoveryCompanions": "This skin has companion packages and must be installed in order.",
+				"failure.recoveryEnable": "The new version of “{name}” is installed. Enable it on the official plugin page.",
+				"failure.recoveryUninstall": "Uninstall did not finish. Remove “{name}” on the official plugin page.",
 				"failure.releaseAgeProblem": "This version is still in the release protection period and cannot be installed yet.",
 				"failure.releaseAgeTitle": "{action} requires permission for a new version",
 				"failure.releaseAgeWhat": "{packageName}@{version} is still in the release protection period.",
@@ -2777,7 +2789,7 @@ window.__ModuleLoader__.load({
 				skin.package,
 				skin.rowId
 			].some((value) => value.trim() === "")) return null;
-			const topic = repairTopic(operation, t);
+			const topic = repairTopic(operation, t) ?? (options.allowGeneric === true ? "recovery" : null);
 			if (topic === null) return null;
 			const desired = operation.failure?.desiredEnabled;
 			const goal = desired !== void 0 ? t(desired ? "failure.goalDesiredEnable" : "failure.goalDesiredDisable") : affectedSkinId !== operation.skinId ? t("failure.goalAffected") : operation.kind === "pin" ? t("failure.goalPin") : operation.kind === "activate" ? t("failure.goalActivate") : operation.kind === "deactivate" ? t("failure.goalDeactivate") : operation.kind === "unpin" ? t("failure.goalUnpin") : operation.kind === "uninstall" ? t("failure.goalUninstall") : t("failure.goalOther", { action: operationLabel(operation.kind, t) });
@@ -3290,6 +3302,66 @@ window.__ModuleLoader__.load({
 				entry.rowId,
 				...entry.tags
 			].join(" ").toLowerCase().includes(normalizedQuery);
+		}
+		//#endregion
+		//#region src/client/install-recovery.ts
+		const DECISION_ACTIONS = /* @__PURE__ */ new Set([
+			"approve-build",
+			"approve-release-age",
+			"approve-artifact",
+			"repair-configuration"
+		]);
+		const DECISION_KINDS = /* @__PURE__ */ new Set([
+			"conflict",
+			"compatibility",
+			"configuration-override",
+			"existing-source-unreachable",
+			"build-approval",
+			"release-age",
+			"unexpected-store",
+			"adding-to-root",
+			"not-a-workspace",
+			"lockfile-outdated",
+			"lockfile-broken",
+			"script-timeout",
+			"pnpm-missing",
+			"disk-full",
+			"permission",
+			"integrity"
+		]);
+		const SPECIAL_UNINSTALL_CODES = /* @__PURE__ */ new Set([
+			"stop-profile",
+			"bundle-in-use",
+			"not-removable",
+			"unaddressable",
+			"management-required"
+		]);
+		function recoveryRoute(operation) {
+			if (operation.phase !== "failed") return "ignore";
+			const failure = operation.failure;
+			if (failure === void 0) return "decision";
+			if (failure?.action !== void 0 && DECISION_ACTIONS.has(failure.action)) return "decision";
+			if (failure?.kind !== void 0 && DECISION_KINDS.has(failure.kind)) return "decision";
+			if ([
+				"activate",
+				"deactivate",
+				"pin",
+				"unpin"
+			].includes(operation.kind)) return "decision";
+			if (operation.kind === "uninstall") {
+				if (failure?.code !== void 0 && SPECIAL_UNINSTALL_CODES.has(failure.code)) return "decision";
+				if (failure?.kind !== void 0 && failure.kind !== "command") return "decision";
+				return "uninstall";
+			}
+			if (![
+				"install",
+				"update",
+				"migrate"
+			].includes(operation.kind)) return "decision";
+			if (failure?.manualFollowUp === "enable") return "enable";
+			if (failure?.manualFollowUp === "check") return "check";
+			if (failure?.manualFollowUp === "uninstall-then-add") return "replace";
+			return "install";
 		}
 		//#endregion
 		//#region src/star-curves.ts
@@ -4494,7 +4566,11 @@ window.__ModuleLoader__.load({
 			const hostStateRead = (0, react.useRef)(null);
 			const pendingRestartRef = (0, react.useRef)(null);
 			const clientRestartNotices = (0, react.useRef)(/* @__PURE__ */ new Map());
-			const marketFallbackOpened = (0, react.useRef)(/* @__PURE__ */ new Set());
+			const recoveryClaim = (0, react.useRef)(null);
+			const retryBlockedRecovery = (0, react.useRef)(true);
+			const recoveryViewMounted = (0, react.useRef)(true);
+			const [recoveryFocus, setRecoveryFocus] = (0, react.useState)(0);
+			const [installRecovery, setInstallRecovery] = (0, react.useState)(null);
 			const restartTargetRef = (0, react.useRef)(null);
 			pendingRestartRef.current = pendingRestart;
 			restartTargetRef.current = restartTarget;
@@ -5030,27 +5106,6 @@ window.__ModuleLoader__.load({
 				restartAvailable,
 				t
 			]);
-			const openMarketUpdateFallback = (0, react.useCallback)(async (operation) => {
-				const spec = operation.failure?.fallbackSpec?.trim();
-				if (!officialDesktop || desktopPluginPanel?.available() !== true || spec === void 0 || spec === "" || marketFallbackOpened.current.has(operation.id) || !mounted.current) return;
-				marketFallbackOpened.current.add(operation.id);
-				try {
-					const result = await desktopPluginPanel.open(spec, {
-						skinId: "dsh-skin-market",
-						packageName: "dsh-skin-market"
-					});
-					if (!mounted.current || !result.ok) return;
-					const message = result.kind === "prefilled" ? t("market.installPanelPrefilled", { spec }) : t("market.installPanelExistingTask");
-					setMarketOperation((current) => current?.id === operation.id ? {
-						...current,
-						message
-					} : current);
-				} catch {}
-			}, [
-				desktopPluginPanel,
-				officialDesktop,
-				t
-			]);
 			const waitForMarketUpdate = (0, react.useCallback)(async (operationId) => {
 				if (marketUpdatePolls.current.has(operationId)) return;
 				marketUpdatePolls.current.add(operationId);
@@ -5073,7 +5128,6 @@ window.__ModuleLoader__.load({
 							if (!mounted.current) return;
 							setMarketUpdating(false);
 							setError(null);
-							if (operation.phase === "failed") openMarketUpdateFallback(operation);
 							return;
 						}
 						await new Promise((resolve) => setTimeout(resolve, operation.phase === "waiting" ? 5e3 : 600));
@@ -5096,11 +5150,195 @@ window.__ModuleLoader__.load({
 				} finally {
 					marketUpdatePolls.current.delete(operationId);
 				}
+			}, [applyMarketState, t]);
+			const pinnedRecoverySpec = (0, react.useCallback)((skin) => {
+				if (hostKind === "desktop") {
+					const plan = desktopInstallPlan(skin, officialDesktop);
+					if (plan.kind !== "manual") return plan.target;
+				}
+				return preferredInstallTarget(skin);
+			}, [hostKind, officialDesktop]);
+			const showInstallRecovery = (0, react.useCallback)((view) => {
+				desktopPluginPanel?.noteRecovery?.(view.operationId, "manual");
+				if (view.skinId) {
+					userSelectedRef.current = true;
+					selectedIdRef.current = view.skinId;
+					setSelectedId(view.skinId);
+				}
+				setInstallRecovery(view);
+			}, [desktopPluginPanel]);
+			const startInstallRecovery = (0, react.useCallback)(async (operation) => {
+				const route = recoveryRoute({
+					phase: "failed",
+					kind: operation.kind ?? "update",
+					failure: operation.failure
+				});
+				if (route === "ignore" || route === "decision") return;
+				const skin = operation.skinId === void 0 ? void 0 : skinsRef.current.find((item) => item.id === operation.skinId);
+				const name = skin === void 0 ? t("nav.market") : localizedSkinName(skin.name, t);
+				if (route === "enable") {
+					showInstallRecovery({
+						operationId: operation.id,
+						lead: "enable",
+						name,
+						skinId: skin?.id
+					});
+					return;
+				}
+				if (route === "uninstall") {
+					showInstallRecovery({
+						operationId: operation.id,
+						lead: "uninstall",
+						name,
+						skinId: skin?.id,
+						packageName: skin?.package
+					});
+					return;
+				}
+				if (route === "check") {
+					showInstallRecovery({
+						operationId: operation.id,
+						lead: "check",
+						skinId: skin?.id
+					});
+					return;
+				}
+				const spec = operation.failure?.manualSpec || operation.failure?.fallbackSpec || (skin === void 0 ? "" : pinnedRecoverySpec(skin));
+				const companions = (skin?.install.companions?.length ?? 0) > 0;
+				if (route === "replace") {
+					showInstallRecovery({
+						operationId: operation.id,
+						lead: "replace",
+						spec,
+						skinId: skin?.id,
+						packageName: skin?.package,
+						name,
+						companions
+					});
+					return;
+				}
+				const handoff = {
+					skinId: skin?.id ?? "dsh-skin-market",
+					packageName: skin?.package ?? "dsh-skin-market",
+					operationId: operation.id,
+					companions
+				};
+				if (spec === "" || desktopPluginPanel?.available() !== true) {
+					showInstallRecovery({
+						operationId: operation.id,
+						lead: companions ? "companions" : "none",
+						spec,
+						skinId: skin?.id,
+						packageName: handoff.packageName,
+						companions
+					});
+					return;
+				}
+				desktopPluginPanel.noteRecovery?.(operation.id, "started");
+				const result = await desktopPluginPanel.open(spec, handoff, { navigateOnResume: false });
+				if (!mounted.current) return;
+				if (result.ok && result.kind === "prefilled") {
+					desktopPluginPanel.noteRecovery?.(operation.id, "opened");
+					setDismissedNoticeIds((ids) => [.../* @__PURE__ */ new Set([...ids, `failed:${operation.id}`])].slice(-100));
+					return;
+				}
+				if (result.ok && result.kind === "resumed" || !result.ok && result.code === "busy") {
+					showInstallRecovery({
+						operationId: operation.id,
+						lead: "blocked",
+						spec,
+						skinId: skin?.id,
+						packageName: handoff.packageName,
+						companions
+					});
+					desktopPluginPanel.noteRecovery?.(operation.id, "blocked");
+					return;
+				}
+				showInstallRecovery({
+					operationId: operation.id,
+					lead: "open-failed",
+					spec,
+					skinId: skin?.id,
+					packageName: handoff.packageName,
+					companions
+				});
 			}, [
-				applyMarketState,
-				openMarketUpdateFallback,
+				desktopPluginPanel,
+				pinnedRecoverySpec,
+				showInstallRecovery,
 				t
 			]);
+			(0, react.useEffect)(() => {
+				if (installRecovery !== null) return void 0;
+				const allowBlocked = retryBlockedRecovery.current;
+				const manual = recoveryClaim.current === null ? desktopPluginPanel?.takeManualRecovery?.() ?? null : null;
+				if (manual) {
+					recoveryClaim.current = manual;
+					const skin = skinsRef.current.find((item) => item.id === manual.skinId);
+					setInstallRecovery({
+						operationId: manual.operationId ?? `native:${manual.skinId}`,
+						lead: manual.companions === true ? "companions" : "none",
+						spec: manual.spec,
+						skinId: manual.skinId,
+						packageName: manual.packageName,
+						companions: manual.companions,
+						name: skin === void 0 ? void 0 : localizedSkinName(skin.name, t)
+					});
+					return () => {
+						if (!recoveryViewMounted.current && recoveryClaim.current === manual) {
+							desktopPluginPanel?.restoreManualRecovery?.(manual);
+							recoveryClaim.current = null;
+						}
+					};
+				}
+				const next = [...operations.filter((operation) => operation.phase === "failed"), ...marketOperation?.phase === "failed" ? [{
+					id: marketOperation.id,
+					kind: "update",
+					skinId: void 0,
+					failure: marketOperation.failure
+				}] : []].find((operation) => {
+					const status = desktopPluginPanel?.recoveryStatus?.(operation.id) ?? null;
+					if (status === "opened" || status === "started" || status === "manual") return false;
+					if (status === "blocked") return allowBlocked;
+					if (dismissedNoticeIds.includes(`failed:${operation.id}`)) return false;
+					const route = recoveryRoute({
+						phase: "failed",
+						kind: operation.kind ?? "update",
+						failure: operation.failure
+					});
+					return route !== "decision" && route !== "ignore";
+				});
+				if (next !== void 0) {
+					if ((desktopPluginPanel?.recoveryStatus?.(next.id) ?? null) === "blocked") retryBlockedRecovery.current = false;
+					startInstallRecovery(next);
+				}
+			}, [
+				desktopPluginPanel,
+				dismissedNoticeIds,
+				installRecovery,
+				marketOperation,
+				operations,
+				recoveryFocus,
+				startInstallRecovery,
+				t
+			]);
+			(0, react.useEffect)(() => {
+				recoveryViewMounted.current = true;
+				const retryBlocked = () => {
+					retryBlockedRecovery.current = true;
+					setRecoveryFocus((value) => value + 1);
+				};
+				window.addEventListener("focus", retryBlocked);
+				const onVisible = () => {
+					if (document.visibilityState === "visible") retryBlocked();
+				};
+				document.addEventListener("visibilitychange", onVisible);
+				return () => {
+					recoveryViewMounted.current = false;
+					window.removeEventListener("focus", retryBlocked);
+					document.removeEventListener("visibilitychange", onVisible);
+				};
+			}, []);
 			const checkMarketUpdate = (0, react.useCallback)(async () => {
 				try {
 					const status = await json("/dsh-skin-market/market-update", void 0, t);
@@ -6322,9 +6560,11 @@ window.__ModuleLoader__.load({
 				setShowInstallOptions(false);
 				closeBrowser();
 				try {
+					const failed = operations.find((operation) => operation.skinId === skin.id && operation.phase === "failed");
 					const result = await desktopPluginPanel.open(target, {
 						skinId: skin.id,
-						packageName: skin.package
+						packageName: skin.package,
+						operationId: failed?.id
 					});
 					if (!result.ok && mounted.current) setError(result.reason);
 				} catch {
@@ -6531,7 +6771,13 @@ window.__ModuleLoader__.load({
 					})]
 				}, `${location}:${skin.id}`);
 			};
-			const needsFailurePrompt = (operation) => (isInterceptFailure(operation) || operation.phase === "failed" && operation.failure?.action === "retry") && !dismissedNoticeIds.includes(`failed:${operation.id}`);
+			const needsFailurePrompt = (operation) => {
+				return recoveryRoute({
+					phase: operation.phase ?? "",
+					kind: operation.kind ?? "update",
+					failure: operation.failure
+				}) === "decision" && (isInterceptFailure(operation) || operation.phase === "failed" && operation.failure?.action === "retry") && !dismissedNoticeIds.includes(`failed:${operation.id}`);
+			};
 			const interceptOperation = operations.find(needsFailurePrompt) ?? null;
 			const interceptSkin = interceptOperation === null ? void 0 : skins.find((skin) => skin.id === (interceptOperation.failure?.targetSkinId ?? interceptOperation.skinId));
 			const marketInterceptOperation = interceptOperation === null && marketOperation !== null && needsFailurePrompt(marketOperation) ? marketOperation : null;
@@ -6560,6 +6806,16 @@ window.__ModuleLoader__.load({
 				...repairPromptOptions,
 				t
 			});
+			const recoveryOperation = installRecovery === null ? void 0 : operations.find((item) => item.id === installRecovery.operationId);
+			const recoverySkin = installRecovery?.skinId === void 0 ? void 0 : skins.find((item) => item.id === installRecovery.skinId);
+			const recoveryPrompt = recoveryOperation === void 0 || recoverySkin === void 0 ? null : createFailureRepairPrompt({
+				operation: recoveryOperation,
+				skin: recoverySkin,
+				hostKind,
+				runtimeVersion: runtime?.version,
+				allowGeneric: true,
+				t
+			});
 			const sourceGuide = existingSourceGuide({
 				failure: interceptFailure,
 				kind: interceptOperation?.kind,
@@ -6570,6 +6826,45 @@ window.__ModuleLoader__.load({
 				profileDir: installEnvironment?.profileDir,
 				t
 			});
+			const copyRecoveryPrompt = async () => {
+				if (recoveryPrompt === null || recoveryOperation === void 0 || recoverySkin === void 0) return;
+				const operationId = recoveryOperation.id;
+				setCopyingPromptId(operationId);
+				setCopiedPromptId(null);
+				setPromptFallback(null);
+				try {
+					let diagnosticLog;
+					try {
+						const response = await fetch(`/dsh-skin-market/logs?operationId=${encodeURIComponent(operationId)}`, { cache: "no-store" });
+						if (response.ok) diagnosticLog = await response.text();
+					} catch {
+						diagnosticLog = void 0;
+					}
+					const text = createFailureRepairPrompt({
+						operation: recoveryOperation,
+						skin: recoverySkin,
+						hostKind,
+						runtimeVersion: runtime?.version,
+						diagnosticLog,
+						allowGeneric: true,
+						t
+					});
+					if (text === null) return;
+					try {
+						await copyTextToClipboard(text, t);
+						setCopiedPromptId(operationId);
+						window.setTimeout(() => setCopiedPromptId((current) => current === operationId ? null : current), 2400);
+					} catch {
+						setPromptFallback({
+							operationId,
+							text,
+							error: t("market.promptClipboardFailed")
+						});
+					}
+				} finally {
+					setCopyingPromptId((current) => current === operationId ? null : current);
+				}
+			};
 			const copyRepairPrompt = async () => {
 				if (repairPromptOptions === null || repairPrompt === null) return;
 				const operationId = repairPromptOptions.operation.id;
@@ -7866,6 +8161,113 @@ window.__ModuleLoader__.load({
 						}) : void 0
 					}),
 					/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Modal, {
+						open: installRecovery !== null,
+						onClose: () => {
+							recoveryClaim.current = null;
+							if (installRecovery !== null && installRecovery.lead !== "blocked") {
+								desktopPluginPanel?.forgetRecovery?.(installRecovery.operationId);
+								dismissNotice(`failed:${installRecovery.operationId}`);
+							} else if (installRecovery?.lead === "blocked") {
+								desktopPluginPanel?.noteRecovery?.(installRecovery.operationId, "blocked");
+								retryBlockedRecovery.current = true;
+							}
+							setPromptFallback(null);
+							setInstallRecovery(null);
+						},
+						title: installRecovery?.lead === "uninstall" ? t("common.uninstall") : installRecovery?.lead === "enable" ? t("common.use") : installRecovery?.skinId ? t("common.installSkinTitle", { name: skinNameLabel(skins.find((skin) => skin.id === installRecovery.skinId), t) }) : t("failure.marketUpdateFailed"),
+						closeLabel: t("common.close"),
+						className: SkinMarket_module_css_default.modalSurface,
+						description: installRecovery === null ? void 0 : installRecovery.lead === "open-failed" ? t("failure.recoveryOpenFailed") : installRecovery.lead === "blocked" ? t("failure.recoveryBlocked") : installRecovery.lead === "companions" ? t("failure.recoveryCompanions") : installRecovery.lead === "replace" && installRecovery.spec ? t("failure.manualReplace", { spec: installRecovery.spec }) : installRecovery.lead === "enable" && installRecovery.name ? t("failure.recoveryEnable", { name: installRecovery.name }) : installRecovery.lead === "uninstall" && installRecovery.name ? t("failure.recoveryUninstall", { name: installRecovery.name }) : installRecovery.lead === "check" ? t("common.resultNotConfirmed") : installRecovery.lead === "none" ? hostKind === "desktop" ? t("common.desktopInstallInput") : t("common.webInstallCommand") : void 0,
+						footer: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [
+							installRecovery?.lead === "open-failed" && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+								variant: "primary",
+								size: "sm",
+								onClick: () => {
+									if (installRecovery.spec === void 0 || installRecovery.spec === "" || desktopPluginPanel === void 0) return;
+									desktopPluginPanel.open(installRecovery.spec, {
+										skinId: installRecovery.skinId ?? "dsh-skin-market",
+										packageName: installRecovery.packageName ?? "dsh-skin-market",
+										operationId: installRecovery.operationId,
+										companions: installRecovery.companions
+									}, { navigateOnResume: false }).then((result) => {
+										if (!mounted.current) return;
+										if (result.ok && result.kind === "prefilled") {
+											desktopPluginPanel.noteRecovery?.(installRecovery.operationId, "opened");
+											recoveryClaim.current = null;
+											setInstallRecovery(null);
+										} else if (result.ok && result.kind === "resumed") {
+											desktopPluginPanel.noteRecovery?.(installRecovery.operationId, "blocked");
+											setInstallRecovery({
+												...installRecovery,
+												lead: "blocked"
+											});
+										}
+									});
+								},
+								children: t("failure.recoveryOpenPanel")
+							}),
+							recoveryPrompt !== null && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+								variant: "outline",
+								size: "sm",
+								onClick: () => void copyRecoveryPrompt(),
+								children: t("common.copyTroubleshootingPrompt")
+							}),
+							/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+								variant: "outline",
+								size: "sm",
+								onClick: () => {
+									recoveryClaim.current = null;
+									if (installRecovery !== null && installRecovery.lead !== "blocked") {
+										desktopPluginPanel?.forgetRecovery?.(installRecovery.operationId);
+										dismissNotice(`failed:${installRecovery.operationId}`);
+									} else if (installRecovery?.lead === "blocked") {
+										desktopPluginPanel?.noteRecovery?.(installRecovery.operationId, "blocked");
+										retryBlockedRecovery.current = true;
+									}
+									setInstallRecovery(null);
+								},
+								children: t("common.close")
+							})
+						] }),
+						children: installRecovery?.spec ? /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+							className: SkinMarket_module_css_default.installOptions,
+							children: [/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: t("common.packageName") }), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
+								className: SkinMarket_module_css_default.copyCapsule,
+								children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Input, {
+									className: SkinMarket_module_css_default.copyCapsuleInput,
+									readOnly: true,
+									value: installRecovery.spec,
+									"aria-label": t("common.packageName")
+								}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+									className: SkinMarket_module_css_default.copyCapsuleButton,
+									variant: "ghost",
+									size: "sm",
+									icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
+									"aria-label": t("common.copyLabel", { label: t("common.packageName") }),
+									onClick: () => void copyTextToClipboard(installRecovery.spec ?? "", t)
+								})]
+							})] }), promptFallback !== null && promptFallback.operationId === installRecovery.operationId && /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+								role: "alert",
+								children: promptFallback.error
+							}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("textarea", {
+								className: SkinMarket_module_css_default.repairPromptFallback,
+								"aria-label": t("common.copyRepairPromptLabel"),
+								readOnly: true,
+								rows: 8,
+								value: promptFallback.text
+							})] })]
+						}) : promptFallback !== null && installRecovery !== null && promptFallback.operationId === installRecovery.operationId ? /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+							role: "alert",
+							children: promptFallback.error
+						}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("textarea", {
+							className: SkinMarket_module_css_default.repairPromptFallback,
+							"aria-label": t("common.copyRepairPromptLabel"),
+							readOnly: true,
+							rows: 8,
+							value: promptFallback.text
+						})] }) : void 0
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Modal, {
 						open: showInstallOptions,
 						onClose: () => setShowInstallOptions(false),
 						title: t("common.installSkinTitle", { name: selected?.name.zh ?? t("common.skin") }),
@@ -8198,12 +8600,14 @@ window.__ModuleLoader__.load({
 					kind: "resumed"
 				} : {
 					ok: false,
-					reason: BUSY
+					reason: BUSY,
+					code: "busy"
 				};
 			}
 			return {
 				ok: false,
-				reason: BUSY
+				reason: BUSY,
+				code: "busy"
 			};
 		}
 		function createDesktopPluginPanel(ctx, options = {}) {
@@ -8211,6 +8615,8 @@ window.__ModuleLoader__.load({
 			const observers = /* @__PURE__ */ new Set();
 			const activationIntents = [];
 			const issuedIntents = /* @__PURE__ */ new Map();
+			const manualRecoveries = [];
+			const recoveryState = /* @__PURE__ */ new Map();
 			let receipt;
 			let disposeStore;
 			let disposeRemote;
@@ -8308,8 +8714,22 @@ window.__ModuleLoader__.load({
 						} else if (install.spec !== "" && install.spec.trim() !== current.spec) stopReceipt();
 						return;
 					}
+					const terminalFailureClose = current.lastOutcome === "failed" && !install.open && !ACTIVE_PHASES.has(install.phase) && install.phase !== "done";
 					if (install.spec.trim() !== current.spec) {
+						if (terminalFailureClose) {
+							enqueueManual(current);
+							stopReceipt();
+							notify();
+							return;
+						}
+						if (!ACTIVE_PHASES.has(install.phase) && install.phase !== "done") {
+							stopReceipt();
+							return;
+						}
+					} else if (terminalFailureClose) {
+						enqueueManual(current);
 						stopReceipt();
+						notify();
 						return;
 					}
 					const inspectedName = object(install.subject)?.name;
@@ -8332,8 +8752,14 @@ window.__ModuleLoader__.load({
 					if (requestId !== current.requestId || requestId === void 0) return;
 					if (install.phase === "failed" || install.phase === "unknown") {
 						current.retryAllowed = true;
-						if (current.lastOutcome !== install.phase) {
-							current.lastOutcome = install.phase;
+						const outcome = install.phase === "failed" ? "failed" : "unknown";
+						if (current.lastOutcome !== outcome) {
+							current.lastOutcome = outcome;
+							notify();
+						}
+						if (outcome === "failed" && !install.open) {
+							enqueueManual(current);
+							stopReceipt();
 							notify();
 						}
 						return;
@@ -8343,6 +8769,8 @@ window.__ModuleLoader__.load({
 						stopReceipt();
 						return;
 					}
+					dropManual(current.skinId, current.spec);
+					if (current.operationId) recoveryState.delete(current.operationId);
 					if (!current.installed) {
 						current.installed = true;
 						notify();
@@ -8354,6 +8782,24 @@ window.__ModuleLoader__.load({
 					}
 				} catch {
 					stopReceipt();
+				}
+			};
+			const enqueueManual = (current) => {
+				const item = {
+					operationId: current.operationId,
+					skinId: current.skinId,
+					packageName: current.packageName,
+					spec: current.spec,
+					companions: current.companions
+				};
+				if (manualRecoveries.some((existing) => existing.operationId === item.operationId && existing.skinId === item.skinId && existing.spec === item.spec)) return;
+				manualRecoveries.push(item);
+				if (current.operationId) recoveryState.set(current.operationId, "manual");
+			};
+			const dropManual = (skinId, spec) => {
+				for (let index = manualRecoveries.length - 1; index >= 0; index -= 1) {
+					const item = manualRecoveries[index];
+					if (item !== void 0 && item.skinId === skinId && item.spec === spec) manualRecoveries.splice(index, 1);
 				}
 			};
 			const beginHandoff = (target, spec, handoff) => {
@@ -8371,11 +8817,11 @@ window.__ModuleLoader__.load({
 				};
 				disposeStore = target.face.hooks.pluginManager.subscribe(trackSnapshot);
 			};
-			const navigate = (result, layout) => {
-				if (result.ok) layout.selectPanel("plugins");
+			const navigate = (result, layout, navigateOnResume) => {
+				if (result.ok && (result.kind === "prefilled" || navigateOnResume)) layout.selectPanel("plugins");
 				return result;
 			};
-			const open = async (spec, handoff) => {
+			const open = async (spec, handoff, navigateOnResume = true) => {
 				try {
 					if (lifetime.signal.aborted) return {
 						ok: false,
@@ -8393,7 +8839,7 @@ window.__ModuleLoader__.load({
 						reason: UNAVAILABLE
 					};
 					const active = resume(target.face, state, spec);
-					if (active) return navigate(active, target.layout);
+					if (active) return navigate(active, target.layout, navigateOnResume);
 					target.face.ensure();
 					if (!await waitUntilLoaded(target.face.hooks.pluginManager, options.readyTimeoutMs ?? 8e3, lifetime.signal)) return {
 						ok: false,
@@ -8414,7 +8860,7 @@ window.__ModuleLoader__.load({
 						reason: LOAD_FAILED
 					};
 					const becameActive = resume(current.face, state, spec);
-					if (becameActive) return navigate(becameActive, current.layout);
+					if (becameActive) return navigate(becameActive, current.layout, navigateOnResume);
 					if (state.install.phase !== "idle" || !state.install.open) current.face.openInstall();
 					const opened = snapshot(current.face);
 					if (!opened?.install.open) return {
@@ -8424,7 +8870,7 @@ window.__ModuleLoader__.load({
 					if (!EDITABLE_PHASES.has(opened.install.phase) || opened.install.enabling) return navigate({
 						ok: true,
 						kind: "resumed"
-					}, current.layout);
+					}, current.layout, navigateOnResume);
 					current.face.editInstallSpec(spec);
 					const filled = snapshot(current.face);
 					if (!filled?.install.open || filled.install.spec !== spec) return {
@@ -8435,7 +8881,7 @@ window.__ModuleLoader__.load({
 					return navigate({
 						ok: true,
 						kind: "prefilled"
-					}, current.layout);
+					}, current.layout, navigateOnResume);
 				} catch {
 					return {
 						ok: false,
@@ -8453,7 +8899,7 @@ window.__ModuleLoader__.load({
 						return false;
 					}
 				},
-				open(input, handoff) {
+				open(input, handoff, options) {
 					const spec = input.trim();
 					if (!spec) return Promise.resolve({
 						ok: false,
@@ -8463,7 +8909,7 @@ window.__ModuleLoader__.load({
 						ok: false,
 						reason: "正在打开原生添加插件面板，请稍后重试。"
 					});
-					const promise = open(spec, handoff).finally(() => {
+					const promise = open(spec, handoff, options?.navigateOnResume !== false).finally(() => {
 						if (pending?.promise === promise) pending = void 0;
 					});
 					pending = {
@@ -8491,6 +8937,26 @@ window.__ModuleLoader__.load({
 					activationIntents.unshift(issued);
 					notify();
 				},
+				noteRecovery(operationId, status) {
+					if (!operationId || lifetime.signal.aborted) return;
+					recoveryState.set(operationId, status);
+				},
+				recoveryStatus(operationId) {
+					return recoveryState.get(operationId) ?? null;
+				},
+				forgetRecovery(operationId) {
+					recoveryState.delete(operationId);
+					for (let index = manualRecoveries.length - 1; index >= 0; index -= 1) if (manualRecoveries[index]?.operationId === operationId) manualRecoveries.splice(index, 1);
+				},
+				takeManualRecovery() {
+					const item = manualRecoveries.shift();
+					return item === void 0 ? null : { ...item };
+				},
+				restoreManualRecovery(recovery) {
+					if (lifetime.signal.aborted || manualRecoveries.some((item) => item.operationId === recovery.operationId && item.skinId === recovery.skinId && item.spec === recovery.spec)) return;
+					manualRecoveries.unshift({ ...recovery });
+					notify();
+				},
 				dispose() {
 					lifetime.abort();
 					stopReceipt();
@@ -8501,6 +8967,8 @@ window.__ModuleLoader__.load({
 					observers.clear();
 					activationIntents.length = 0;
 					issuedIntents.clear();
+					manualRecoveries.length = 0;
+					recoveryState.clear();
 				}
 			};
 		}

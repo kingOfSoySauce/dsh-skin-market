@@ -477,6 +477,12 @@ export declare const messageCatalog: {
         readonly 'failure.operation': '{action}未完成';
         readonly 'failure.autoReplaceIncomplete': '自动替换未完成。';
         readonly 'failure.manualReplace': '请在官方插件页先卸载当前包，再添加 {spec}。';
+        readonly 'failure.recoveryOpenFailed': '打不开安装面板。';
+        readonly 'failure.recoveryOpenPanel': '打开安装面板';
+        readonly 'failure.recoveryBlocked': '官方插件页还有一个安装没结束。请到官方插件页完成或关闭它。回到这里后，会打开安装面板。';
+        readonly 'failure.recoveryCompanions': '这款皮肤有配套包，要按顺序安装。';
+        readonly 'failure.recoveryEnable': '「{name}」的新版已经装上，请到官方插件页启用。';
+        readonly 'failure.recoveryUninstall': '卸载未完成。请到官方插件页移除「{name}」。';
         readonly 'failure.releaseAgeProblem': '所需版本仍处于新包保护期。';
         readonly 'failure.releaseAgeTitle': '{action}需要允许新版本';
         readonly 'failure.releaseAgeWhat': '{packageName}@{version} 仍处于新包保护期。';
@@ -1106,6 +1112,12 @@ export declare const messageCatalog: {
         readonly 'failure.operation': '{action} incomplete';
         readonly 'failure.autoReplaceIncomplete': 'Automatic replacement did not complete.';
         readonly 'failure.manualReplace': 'Uninstall the current package in the official plugin page, then add {spec}.';
+        readonly 'failure.recoveryOpenFailed': 'The install panel could not be opened.';
+        readonly 'failure.recoveryOpenPanel': 'Open install panel';
+        readonly 'failure.recoveryBlocked': 'The official plugin page still has an unfinished install. Finish or close it there. The install panel will open when you come back here.';
+        readonly 'failure.recoveryCompanions': 'This skin has companion packages and must be installed in order.';
+        readonly 'failure.recoveryEnable': 'The new version of “{name}” is installed. Enable it on the official plugin page.';
+        readonly 'failure.recoveryUninstall': 'Uninstall did not finish. Remove “{name}” on the official plugin page.';
         readonly 'failure.releaseAgeProblem': 'This version is still in the release protection period and cannot be installed yet.';
         readonly 'failure.releaseAgeTitle': '{action} requires permission for a new version';
         readonly 'failure.releaseAgeWhat': '{packageName}@{version} is still in the release protection period.';
