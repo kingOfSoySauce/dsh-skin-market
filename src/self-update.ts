@@ -117,6 +117,7 @@ function failureMessageKey(kind: OperationFailure['kind']): OperationMessageKey 
   if (kind === 'network') return 'failure.networkProblem'
   if (kind === 'fetch-timeout') return 'failure.timeoutProblem'
   if (kind === 'fetch-404') return 'failure.fetch404Problem'
+  if (kind === 'existing-source-unreachable') return 'failure.existingSourceProblem'
   if (kind === 'no-matching-version') return 'failure.versionProblem'
   if (kind === 'integrity') return 'failure.integrityProblem'
   if (kind === 'release-age') return 'failure.releaseAgeProblem'
@@ -727,6 +728,7 @@ export function createMarketUpdater(
             messageKey: failure.messageKey ?? failureMessageKey(failure.kind),
             messageParams: failure.messageParams,
             ...(failure.packageName === undefined ? {} : { packageName: failure.packageName }),
+            ...(failure.unreachableSource === undefined ? {} : { unreachableSource: failure.unreachableSource }),
             ...(action === undefined ? {} : { action }),
           }
         }

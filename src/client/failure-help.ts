@@ -314,8 +314,85 @@ function manualInstallNotice(title: string, spec: string | undefined, t: Transla
   }
 }
 
+export interface ExistingSourceStep {
+  id: 'manual' | 'command' | 'agent'
+  title: string
+  body: string
+  copy?: string
+  copyLabel?: string
+}
+
+function shellQuote(value: string): string {
+  return /^[A-Za-z0-9_./:@=-]+$/.test(value) ? value : `'${value.replaceAll("'", `'\\''`)}'`
+}
+
+function repairCommand(profile?: string, profileDir?: string): string {
+  const tail = '--apply --yes --i-have-stopped-dsh'
+  if (profileDir !== undefined && profileDir.trim() !== '') {
+    return `npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile-dir ${shellQuote(profileDir.trim())} ${tail}`
+  }
+  if (profile !== undefined && profile.trim() !== '') {
+    return `npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile ${shellQuote(profile.trim())} ${tail}`
+  }
+  return `npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile <profile> ${tail}`
+}
+
+/** Folded recovery choices for a 404 that belongs to an already installed dependency. */
+export function existingSourceGuide(options: {
+  failure?: Operation['failure']
+  actionLabel?: string
+  kind?: Operation['kind']
+  targetName: string
+  targetPackage?: string
+  profile?: string
+  profileDir?: string
+  t?: Translator
+}): ExistingSourceStep[] | null {
+  const failure = options.failure
+  const packageName = failure?.packageName?.trim()
+  const source = failure?.unreachableSource
+  if (failure?.kind !== 'existing-source-unreachable' || packageName === undefined || packageName === '' || source === undefined) return null
+  const t = options.t ?? defaultTranslator
+  const action = options.actionLabel ?? (options.kind === undefined ? t('failure.marketUpdateAction') : operationLabel(options.kind, t))
+  const profile = options.profile?.trim() || t('failure.existingSourceUnknownProfile')
+  const profileDir = options.profileDir?.trim() || t('failure.existingSourceUnknownDir')
+  const location = options.profileDir?.trim() ? `${options.profileDir.trim()}/` : t('failure.existingSourceUnknownLocation')
+  const command = repairCommand(options.profile, options.profileDir)
+  const shared = {
+    packageName,
+    repository: source.repository,
+    commit: source.commit,
+    action,
+    targetName: options.targetName,
+    command,
+    profile,
+    profileDir,
+    location,
+    targetPackage: options.targetPackage?.trim() ? t('failure.existingSourceTargetPackage', { package: options.targetPackage.trim() }) : '',
+  }
+  const prompt = t('failure.existingSourcePrompt', shared)
+  return [
+    { id: 'manual', title: t('failure.existingSourceStep1Title', { packageName }), body: t('failure.existingSourceStep1', shared) },
+    { id: 'command', title: t('failure.existingSourceStep2Title'), body: t('failure.existingSourceStep2', shared), copy: command, copyLabel: t('failure.existingSourceCopyCommand') },
+    { id: 'agent', title: t('failure.existingSourceStep3Title'), body: `${t('failure.existingSourceStep3')}\n\n${prompt}`, copy: prompt, copyLabel: t('common.copyPrompt') },
+  ]
+}
+
+function existingSourceNotice(action: string, name: string, failure: Operation['failure'] | undefined, t: Translator): InterceptNotice | undefined {
+  const packageName = failure?.packageName?.trim()
+  if (failure?.kind !== 'existing-source-unreachable' || packageName === undefined || packageName === '' || failure.unreachableSource === undefined) return
+  return {
+    title: t('failure.operation', { action }),
+    what: t('failure.existingSourceWhat', { packageName, repository: failure.unreachableSource.repository, commit: failure.unreachableSource.commit.slice(0, 12), action, name }),
+    why: t('failure.existingSourceNext'),
+    links: [],
+  }
+}
+
 export function interceptNotice(operation: Operation, skinName: string, skin?: FailureHelpSubject['skin'], t: Translator = defaultTranslator): InterceptNotice {
   const kind = operationLabel(operation.kind, t)
+  const blocked = existingSourceNotice(kind, skinName, operation.failure, t)
+  if (blocked !== undefined) return blocked
   const manual = manualInstallNotice(t('failure.operation', { action: kind }), operation.failure?.manualSpec, t)
   if (manual !== undefined) return manual
   const raw = (operation.failure?.message ?? operation.message ?? '').trim()
@@ -411,6 +488,8 @@ export function interceptNotice(operation: Operation, skinName: string, skin?: F
 }
 
 export function marketUpdateNotice(operation: { failure?: Operation['failure']; message?: string }, t: Translator = defaultTranslator): InterceptNotice {
+  const blocked = existingSourceNotice(t('failure.marketUpdateAction'), t('market.title'), operation.failure, t)
+  if (blocked !== undefined) return blocked
   const manual = manualInstallNotice(t('failure.marketUpdateFailed'), operation.failure?.manualSpec, t)
   if (manual !== undefined) return manual
   const raw = (operation.failure?.message ?? operation.message ?? '').trim()

@@ -241,6 +241,7 @@ export interface OperationFailure extends OperationMessageFields {
   targetSkinId?: string
   configurationOverride?: import('./configuration-override-types.ts').ConfigurationOverridePlan
   packageName?: string
+  unreachableSource?: { repository: string; commit: string }
   releaseAgeTarget?: { packageName: string; version: string }
   artifactRisk?: SkinArtifactRisk
   manualSpec?: string

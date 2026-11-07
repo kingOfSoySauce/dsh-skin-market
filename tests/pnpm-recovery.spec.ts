@@ -67,6 +67,7 @@ describe('pnpm recovery', () => {
       failure: {
         kind: 'existing-source-unreachable',
         packageName: 'dead-skin',
+        unreachableSource: { repository: 'owner/dead', commit: 'd'.repeat(40) },
         message: expect.stringContaining('dead-skin'),
       },
     })

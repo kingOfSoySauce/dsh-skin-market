@@ -178,6 +178,7 @@ export interface Operation {
     targetSkinId?: string
     configurationOverride?: ConfigurationOverridePlan
     packageName?: string
+    unreachableSource?: { repository: string; commit: string }
     buildKeys?: string[]
     releaseAgeTarget?: { packageName: string; version: string }
     artifactRisk?: { context: string; packageName: string; version: string; warnings: string[] }

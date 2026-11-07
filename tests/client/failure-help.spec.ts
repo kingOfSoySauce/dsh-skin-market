@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   createFailureRepairPrompt,
+  existingSourceGuide,
   failureHelpLinks,
   interceptNotice,
   isInterceptFailure,
@@ -30,6 +31,27 @@ function failed(kind: NonNullable<Operation['failure']>['kind'], message: string
     message, failure: { kind, message }, ...extra,
   }
 }
+
+describe('unreachable installed source', () => {
+  it('names the blocking package and keeps the repair outside this DSH', () => {
+    const commit = 'd'.repeat(40)
+    const steps = existingSourceGuide({
+      failure: { kind: 'existing-source-unreachable', message: 'blocked', packageName: 'dead-skin', unreachableSource: { repository: 'owner/dead', commit } },
+      kind: 'uninstall',
+      targetName: '测试皮肤',
+      targetPackage: 'skin',
+      profile: 'web',
+      profileDir: '/Users/leon/.dsh/profiles/web',
+    })!
+    expect(steps.map(step => step.id)).toEqual(['manual', 'command', 'agent'])
+    expect(steps[0]?.body).toContain('不要在市场里卸载 dead-skin')
+    expect(steps[1]?.copy).toBe('npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile-dir /Users/leon/.dsh/profiles/web --apply --yes --i-have-stopped-dsh')
+    expect(steps[2]?.copy).toContain('DSH 以外的 Agent')
+    expect(steps[2]?.copy).toContain('不要中断')
+    expect(steps[2]?.copy).toContain('卸载「测试皮肤」')
+    expect(existingSourceGuide({ failure: { kind: 'fetch-404', message: 'missing' }, targetName: '测试皮肤' })).toBeNull()
+  })
+})
 
 describe('failure repair handoff', () => {
   const options = { operation: failed('unexpected-store', 'store mismatch'), skin, hostKind: 'desktop' as const }

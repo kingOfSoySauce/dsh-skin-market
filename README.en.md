@@ -110,7 +110,7 @@ First follow the specific reason shown in the market dialog or banner. Do not re
 | Enable/disable overridden by another setting | Follow the component-specific instructions in the dialog; do not reinstall repeatedly. When the market can safely locate the override, it provides a direct repair entry point. |
 | Installation blocked by new-package protection | Allow only the exact version named in the error, or wait for the protection period to end. Do not disable global protection. |
 | Operation result is still being confirmed | Wait for the market to verify the result from DSH. Do not click Install, Enable, or Uninstall again. |
-| Installation/update fails with a 404 URL that points at another installed plugin (its upstream repository is gone) | Fully exit DSH, then repair the profile dependencies from an external terminal as described in “Installation blocked by an unreachable installed dependency” below |
+| Install, update, or uninstall is blocked by another installed plugin’s dead repository | Follow the three folded steps in the failure dialog: remove that dependency by hand, quit DSH and run the repair command, or give the prompt to an agent outside this DSH. Do not uninstall that plugin inside Market |
 | The page cannot be operated because of a skin conflict | Stop the relevant DSH Web process, then use the Web reset command below. |
 
 <a id="release-wait"></a>
@@ -136,7 +136,7 @@ If you are running inside this DSH, do not modify its active combination configu
 
 The error looks like `ERR_PNPM_FETCH_404` with a URL under `codeload.github.com/...`, and that repository belongs to a plugin you installed **earlier**, not to the skin you are installing now. pnpm resolves every Git dependency in the profile on each install; once one upstream repository or commit is deleted, every install, update, uninstall, and market self-update fails.
 
-The market cannot edit dependencies inside a running DSH. Fully exit DSH (closing the page is not enough), then run the repair command from an external terminal. The command ships with the market package and is fetched through `npx`, so it does not require updating the market inside the affected profile and does not run `pnpm add` against the running DSH.
+The failure dialog has the same three steps, folded by default. The market cannot edit dependencies inside a running DSH. Fully exit DSH (closing the page is not enough), then run the repair command from an external terminal. The command ships with the market package and is fetched through `npx`, so it does not require updating the market inside the affected profile and does not run `pnpm add` against the running DSH.
 
 ```bash
 # Read-only diagnosis: unreachable sources, lockfile drift, planned removals

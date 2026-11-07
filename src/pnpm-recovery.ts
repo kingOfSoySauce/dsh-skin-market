@@ -11,6 +11,8 @@ export interface PnpmFailure {
   messageKey?: OperationMessageKey
   messageParams?: OperationMessageParams
   packageName?: string
+  /** GitHub source already recorded in this profile, when a 404 belongs to it. */
+  unreachableSource?: { repository: string; commit: string }
   buildKey?: string
   buildKeys?: string[]
   recovery?: 'disable-peer-autoinstall'
@@ -113,6 +115,7 @@ function withExistingSourceContext(failure: PnpmFailure, result: CommandResult, 
     message: `已安装的依赖 ${existing.packageName} 的上游仓库 ${existing.repository}#${existing.commit.slice(0, 12)} 已不可访问（404）。pnpm 每次安装都会重新解析它，所以本次操作无法继续；请先在外部终端修复 profile（迁移到可用来源或移除该插件）后再试。`,
     messageKey: 'failure.existingSourceProblem',
     packageName: existing.packageName,
+    unreachableSource: { repository: existing.repository, commit: existing.commit },
   }
 }
 

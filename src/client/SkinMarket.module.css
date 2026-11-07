@@ -564,7 +564,7 @@
 .empty { padding: 24px 8px; text-align: center; }
 
 .warningModal p, .warningModal a { color: var(--dsw-alias-label-secondary); font-size: 13px; line-height: 21px; overflow-wrap: anywhere; }
-.warningModal p { margin: 0; }
+.warningModal p { margin: 0; white-space: pre-wrap; }
 .warningModal a { text-decoration: underline; text-underline-offset: 2px; }
 .interceptNotice { display: grid; gap: 8px; }
 .activationConflicts { display: grid; gap: 8px; margin-top: 12px; }

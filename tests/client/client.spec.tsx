@@ -39,6 +39,8 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', () => {
       children,
       footer,
     ) : null,
+    DisclosureRow: ({ title, open, onToggle, children }: { title: string; open: boolean; onToggle: () => void; children?: React.ReactNode }) => React.createElement('div', null, React.createElement('button', { type: 'button', 'aria-expanded': open, onClick: onToggle }, title), open ? children : null),
+    CodeBlock: ({ code, copyLabel }: { code: string; copyLabel?: string }) => React.createElement('pre', null, code, React.createElement('button', { type: 'button' }, copyLabel)),
     IconChevronLeftOutline14: icon, IconChevronDownOutline14: icon, IconCloseOutline16: icon, IconCopyOutline16: copyIcon, IconCheckOutline16: checkIcon, IconDownloadOutline16: icon, IconLinkOutline16: icon, IconLoadingOutline16: icon,
     IconRefreshOutline16: icon, IconSearchOutline16: icon, IconTrashOutline16: icon,
     IconChevronLeftOutlineRegular: icon, IconChevronDownOutlineRegular: icon, IconCloseOutlineRegular: icon, IconCopyOutlineRegular: copyIcon, IconCheckOutlineRegular: checkIcon, IconDownloadOutlineRegular: icon, IconLoadingOutlineRegular: icon,
@@ -274,6 +276,38 @@ describe('client market', () => {
     await screen.findByRole('button', { name: /测试皮肤 界面预览/ })
     expect(screen.queryByRole('dialog', { name: title })).toBeNull()
     expect(screen.queryByRole('status')).toBeNull()
+  })
+
+  it('folds three recovery steps for an unreachable installed source and leaves them closed', async () => {
+    const commit = 'd'.repeat(40)
+    const operation = {
+      id: 'dead-source', kind: 'install' as const, skinId: skin.id, phase: 'failed' as const, startedAt: new Date().toISOString(),
+      failure: { kind: 'existing-source-unreachable' as const, message: 'blocked', packageName: 'dead-skin', unreachableSource: { repository: 'owner/dead', commit } },
+    }
+    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime, installEnvironment: { platform: 'darwin', profile: 'web', profileDir: '/Users/leon/.dsh/profiles/web', cliAvailable: true } }) }
+      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.75', latestVersion: '0.1.75', updateAvailable: false }) }
+      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: operation.id }) }
+      if (url.endsWith(`/operations/${operation.id}`)) return { ok: true, json: async () => operation }
+      throw new Error(`Unexpected request: ${url}`)
+    }))
+    render(<SkinMarketSection t={key => key} />)
+    fireEvent.click(await screen.findByRole('button', { name: '安装并使用' }))
+    const dialog = await screen.findByRole('dialog', { name: '安装未完成' })
+    const steps = within(dialog).getAllByRole('button', { expanded: false })
+    expect(steps.map(step => step.textContent)).toEqual(['方法 1：手动去掉 dead-skin', '方法 2：退出 DSH 后执行修复命令', '方法 3：交给 DSH 以外的 Agent'])
+    expect(dialog.textContent).toContain('owner/dead')
+    expect(dialog.textContent).not.toContain('不要在市场里卸载 dead-skin')
+    expect(dialog.textContent).not.toContain('--i-have-stopped-dsh')
+    fireEvent.click(steps[0]!)
+    fireEvent.click(steps[1]!)
+    fireEvent.click(steps[2]!)
+    expect(dialog.textContent).toContain('不要在市场里卸载 dead-skin')
+    expect(dialog.textContent).toContain('--i-have-stopped-dsh')
+    expect(dialog.textContent).toContain('不要中断')
+    expect(within(dialog).queryByRole('button', { name: '复制排查提示词' })).toBeNull()
+    expect(within(dialog).getByRole('button', { name: '复制提示词' })).toBeTruthy()
   })
 
   it.each(['plain', 'build'] as const)('hides an acknowledged %s failure and prompts again for a new operation', async type => {

@@ -5,6 +5,8 @@ import { MarkGithubIcon, StarFillIcon, StarIcon } from '@primer/octicons-react'
 import * as primitiveExports from '@deepseek-ai/dsh-client-ui-primitives'
 import {
   Button,
+  CodeBlock,
+  DisclosureRow,
   Input,
   Modal,
   Pill,
@@ -16,7 +18,7 @@ import { compareCatalogOrder, getCatalogListScreenshot, getCatalogScreenshotUrls
 import { generatedMediaFor, generatedMediaManifestUrl, generatedMediaUrl, parseGeneratedMediaManifest, previewSourceCandidates, setGeneratedMediaSources } from '../media-preview.ts'
 import { useLazyMedia } from '../media-visibility.ts'
 import { browserCatalogCache, type CatalogCache } from './catalog-cache.ts'
-import { createFailureRepairPrompt, interceptNotice, isInterceptFailure, marketUpdateNotice } from './failure-help.ts'
+import { createFailureRepairPrompt, existingSourceGuide, interceptNotice, isInterceptFailure, marketUpdateNotice } from './failure-help.ts'
 import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, REGISTRY_REPOSITORY } from './submission.ts'
 import { probeClientSkinSelection, switchClientSkin, type ClientSkinExpectation, type ClientSkinRuntime, type ClientSkinSelectionStatus } from './index.ts'
 import { displayTitle, githubRepoLabel } from '../display-title.ts'
@@ -1001,6 +1003,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const [copiedSpec, setCopiedSpec] = useState(false)
   const [copyingPromptId, setCopyingPromptId] = useState<string | null>(null)
   const [copiedPromptId, setCopiedPromptId] = useState<string | null>(null)
+  const [openSourceSteps, setOpenSourceSteps] = useState<Record<string, boolean>>({})
   const [promptFallback, setPromptFallback] = useState<{ operationId: string; text: string; error: string } | null>(null)
   const [copyLogError, setCopyLogError] = useState<string | null>(null)
   const [interceptApprovalPending, setInterceptApprovalPending] = useState<string[]>([])
@@ -2674,6 +2677,16 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     operation: interceptOperation, skin: interceptSkin, hostKind, runtimeVersion: runtime?.version,
   }
   const repairPrompt = configurationPlan !== undefined || repairPromptOptions === null ? null : createFailureRepairPrompt({ ...repairPromptOptions, t })
+  const sourceGuide = existingSourceGuide({
+    failure: interceptFailure,
+    kind: interceptOperation?.kind,
+    actionLabel: interceptOperation === null ? t('failure.marketUpdateAction') : undefined,
+    targetName: interceptOperation !== null ? skinNameLabel(interceptSkin, t, interceptOperation.skinId) : t('market.title'),
+    targetPackage: interceptOperation !== null ? interceptSkin?.package : 'dsh-skin-market',
+    profile: installEnvironment?.profile,
+    profileDir: installEnvironment?.profileDir,
+    t,
+  })
   const copyRepairPrompt = async () => {
     if (repairPromptOptions === null || repairPrompt === null) return
     const operationId = repairPromptOptions.operation.id
@@ -3145,7 +3158,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           pin: interceptOperation?.kind === 'pin',
         }, t)}
         footer={<>
-          {repairPrompt !== null && <Button variant="outline" size="sm" icon={copiedPromptId === interceptLogId ? <IconCheckOutline /> : <IconCopyOutline />}
+          {repairPrompt !== null && sourceGuide === null && <Button variant="outline" size="sm" icon={copiedPromptId === interceptLogId ? <IconCheckOutline /> : <IconCopyOutline />}
             disabled={copyingPromptId === interceptLogId || copyingLogId === interceptLogId || interceptPending}
             onClick={() => { void copyRepairPrompt() }}
           >{t('common.copyTroubleshootingPrompt')}</Button>}
@@ -3175,10 +3188,22 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             </>}
         </>}
       >
-        {intercept !== null && (configurationPlan !== undefined || repairPrompt !== null || artifactRisk === undefined && intercept.links.length > 0 || interceptHasError || copyLogError !== null || intercept.copySpec !== undefined) ? <div className={css.interceptNotice}>
+        {intercept !== null && (configurationPlan !== undefined || repairPrompt !== null || sourceGuide !== null || artifactRisk === undefined && intercept.links.length > 0 || interceptHasError || copyLogError !== null || intercept.copySpec !== undefined) ? <div className={css.interceptNotice}>
           {intercept.copySpec !== undefined && <p>{t('common.manualAddHint', { spec: intercept.copySpec })}</p>}
           {configurationPlan !== undefined && interceptOperation !== null && <ConfigurationChanges t={t} skins={skins} plan={{ status: 'repairable', reason: configurationPlan.reason, changes: [{ ...configurationPlan, skinId: interceptOperation.failure?.targetSkinId ?? interceptOperation.skinId }] }} />}
-          {repairPrompt !== null && <p>{t('common.copyRepairHint')}</p>}
+          {sourceGuide !== null && sourceGuide.map(step => <DisclosureRow
+            key={step.id}
+            icon={<IconCopyOutline size={14} />}
+            title={step.title}
+            open={openSourceSteps[step.id] === true}
+            expandable
+            expandOnRowClick
+            onToggle={() => setOpenSourceSteps(current => ({ ...current, [step.id]: current[step.id] !== true }))}
+          >
+            <p>{step.body}</p>
+            {step.copy !== undefined && <CodeBlock code={step.copy} lang={step.id === 'command' ? 'bash' : undefined} copyLabel={step.copyLabel} copiedLabel={t('failure.existingSourceCopied')} />}
+          </DisclosureRow>)}
+          {repairPrompt !== null && sourceGuide === null && <p>{t('common.copyRepairHint')}</p>}
           {repairPrompt !== null && interceptFailure?.configurationOverride?.status === 'blocked' && <p>{interceptFailure.configurationOverride.reason}</p>}
           {promptFallback !== null && promptFallback.operationId === interceptLogId && <>
             <p role="alert">{promptFallback.error}</p>

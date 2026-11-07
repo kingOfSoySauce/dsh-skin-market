@@ -1879,6 +1879,7 @@ export class SkinLifecycle {
             ...(failure.messageKey === undefined ? {} : { messageKey: failure.messageKey }),
             ...(failure.messageParams === undefined ? {} : { messageParams: failure.messageParams }),
             ...(failure.packageName === undefined ? {} : { packageName: failure.packageName }),
+            ...(failure.unreachableSource === undefined ? {} : { unreachableSource: failure.unreachableSource }),
             ...(buildKeys.length === 0 ? {} : { buildKeys }),
             ...(action === undefined ? {} : { action }),
           }

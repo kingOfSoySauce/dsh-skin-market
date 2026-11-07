@@ -7,6 +7,11 @@ export interface PnpmFailure {
     messageKey?: OperationMessageKey;
     messageParams?: OperationMessageParams;
     packageName?: string;
+    /** GitHub source already recorded in this profile, when a 404 belongs to it. */
+    unreachableSource?: {
+        repository: string;
+        commit: string;
+    };
     buildKey?: string;
     buildKeys?: string[];
     recovery?: 'disable-peer-autoinstall';
