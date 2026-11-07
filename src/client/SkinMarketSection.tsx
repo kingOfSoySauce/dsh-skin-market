@@ -877,7 +877,7 @@ const SPARK_LABEL_WIDTH = 34
 function SkinSpark({ values, from, language }: { values: number[] | undefined; from: number | undefined; language: string }) {
   const VIEW_W = 1000
   const VIEW_H = 100
-  const LABEL = 54
+  const LABEL = 10
   const uid = useId().replace(/[^a-zA-Z0-9]/g, '')
   const geometry = useMemo(
     () => values === undefined ? undefined : sparklineGeometry(values, VIEW_W - LABEL, VIEW_H),
@@ -919,7 +919,7 @@ function SkinSpark({ values, from, language }: { values: number[] | undefined; f
     <span
       className={css.sparkEnd}
       style={{ left: `${(geometry.end.x / VIEW_W) * 100}%`, top: `${(geometry.end.y / VIEW_H) * 100}%` }}
-    ><StarFillIcon size={12} aria-hidden="true" />{current}</span>
+    >{current}<StarFillIcon size={12} aria-hidden="true" /></span>
     {active !== undefined && from !== undefined && activeValue !== undefined && <span
       className={css.sparkTip}
       style={{ left: `${(active.x / VIEW_W) * 100}%`, top: `${(active.y / VIEW_H) * 100}%` }}
@@ -3019,7 +3019,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           <header className={css.detailHeader}>
             <div className={css.skinAvatar}><PreviewMedia key={`${selected.id}:${getCatalogListScreenshot(selected) ?? 'missing'}:avatar`} skin={selected} src={getCatalogListScreenshot(selected)} alt="" kind="avatar" /></div>
             <div className={css.titleBlock}>
-              <h2>{selectedName}</h2>
+              <h2 title={selectedName}>{selectedName}</h2>
               <a className={css.repoLine} href={selected.repo} target="_blank" rel="noreferrer"><MarkGithubIcon size={13} aria-hidden="true" /><span>{githubRepoLabel(selected.repo)}</span></a>
               {selectedDescription !== undefined && <p className={css.description} title={selectedDescription}>{displayTitle(selectedDescription)}</p>}
               <p className={css.version}>{t('common.version', { version: selected.install.version })}<span aria-hidden="true"> · </span>{compatibilityUnverified ? t('common.compatibilityPending') : t('common.compatibleWithDsh', { range: selected.compatibility.dsh })}</p>

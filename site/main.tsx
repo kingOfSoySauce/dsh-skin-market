@@ -51,7 +51,7 @@ function marketCategory(skin: { category?: string }): MarketCategory {
 function StarSpark({ values, from, language }: { values: number[] | undefined; from: number | undefined; language: string }) {
   const VIEW_W = 1000
   const VIEW_H = 100
-  const LABEL = 54
+  const LABEL = 10
   const uid = useId().replace(/[^a-zA-Z0-9]/g, '')
   const geometry = useMemo(
     () => values === undefined ? undefined : sparklineGeometry(values, VIEW_W - LABEL, VIEW_H),
@@ -94,7 +94,7 @@ function StarSpark({ values, from, language }: { values: number[] | undefined; f
     <span
       className="skin-spark-end"
       style={{ left: `${(geometry.end.x / VIEW_W) * 100}%`, top: `${(geometry.end.y / VIEW_H) * 100}%` }}
-    ><StarFillIcon size={12} aria-hidden="true" />{current}</span>
+    >{current}<StarFillIcon size={12} aria-hidden="true" /></span>
     {active !== undefined && from !== undefined && activeValue !== undefined && <span
       className="skin-spark-tip"
       style={{ left: `${(active.x / VIEW_W) * 100}%`, top: `${(active.y / VIEW_H) * 100}%` }}
@@ -482,7 +482,7 @@ export function App({ skins, curves = {} }: { skins: Skin[]; curves?: Record<str
         <header className="skin-head">
           <div className="avatar"><PreviewMedia key={`${selected.id}:${getCatalogListScreenshot(selected) ?? 'missing'}:avatar`} skin={selected} src={getCatalogListScreenshot(selected)} alt="" kind="avatar" /></div>
           <div className="skin-title-copy">
-            <h2>{selectedName}</h2>
+            <h2 title={selectedName}>{selectedName}</h2>
             <div className="repo-row">
               <button className="button primary" onClick={() => { setCopied(null); setInstallDialog('skin') }}>{t('skin.installThis')}</button>
               <a className="repo-line" href={selected.repo} target="_blank" rel="noreferrer"><GithubLogo size={13} aria-hidden="true" /><span>{githubRepoLabel(selected.repo)}</span></a>
