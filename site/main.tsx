@@ -604,12 +604,22 @@ function Site() {
     const curvesUrl = useLocalPreviewCatalog
       ? `${import.meta.env.BASE_URL}star-curves.json`
       : REMOTE_STAR_CURVES_URL
-    void fetch(curvesUrl, { cache: 'no-store', signal: controller.signal })
-      .then(response => response.ok ? response.json() : undefined)
-      .then(value => {
-        if (!disposed && value !== undefined) setCurves(parseStarCurves(value))
+    const localCurvesUrl = `${import.meta.env.BASE_URL}star-curves.json`
+    const readCurves = async (url: string) => {
+      const response = await fetch(url, { cache: 'no-store', signal: controller.signal })
+      if (!response.ok) return undefined
+      return parseStarCurves(await response.json())
+    }
+    void readCurves(curvesUrl)
+      // One failed request must not leave every detail panel blank: the page
+      // ships its own copy of the series beside the catalog.
+      .catch(() => undefined)
+      .then(curves => curves !== undefined && Object.keys(curves).length > 0
+        ? curves
+        : readCurves(localCurvesUrl).catch(() => undefined))
+      .then(curves => {
+        if (!disposed && curves !== undefined && Object.keys(curves).length > 0) setCurves(curves)
       })
-      .catch(() => { /* the detail panel simply has no curve */ })
     return () => { disposed = true; controller.abort() }
   }, [])
 
