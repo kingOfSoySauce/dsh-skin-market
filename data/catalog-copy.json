@@ -3254,6 +3254,24 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
+    "haoranx98.dsh.skin.galaxy": {
+      "name": {
+        "zh": "星河 Galaxy",
+        "en": "Galaxy"
+      },
+      "description": {
+        "zh": "原生 WebGPU 实时渲染的紫蓝星云皮肤：银河尘带斜贯视野，远近星点带视差与轻微闪烁，并有随机流星；深空配色适配 light/dark/system，无运行时 CDN、图片或额外依赖。",
+        "en": "A purple-blue nebula skin rendered live with native WebGPU: a Milky Way dust band crosses the view, near and far stars have parallax and a slight twinkle, and meteors appear at random. Its deep-space colors adapt to light, dark, and system mode, with no runtime CDN, images, or extra dependencies."
+      },
+      "descriptionPolicy": "show",
+      "source": {
+        "kind": "curated",
+        "hash": "13575190be035307c1fd5c56f4159811b27e809291e2fe28d8693c891ef6e5d0",
+        "approvedAt": "2026-11-07"
+      },
+      "override": true,
+      "nameSource": "repository-evidence"
+    },
     "jungenius.stack.dsh.zcode.ui": {
       "name": {
         "zh": "DSH ZCode UI",

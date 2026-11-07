@@ -140,33 +140,17 @@ If a skin conflict makes the DSH Web page unusable, stop the current DSH Web pro
 
 This command disables skins managed by Skin Market and restores the default appearance, while keeping the installed skin packages and Skin Market. Then restart DSH Web. Do not run this Web profile command for official Desktop. Disable the conflicting skin in the app’s plugin manager or in the market instead.
 
-## Online catalog
+## For developers
 
-New skins and catalog information update independently; you do not need to upgrade the market plugin first:
+If you maintain a DSH skin, give one of the prompts below to an Agent to prepare a catalog entry or update its display fields. The market does not log in to GitHub for you or silently create a PR.
 
-- When the market opens, it reads the latest catalog. While the page remains open, it checks about every 5 minutes and checks again when it regains focus.
-- The browser keeps the most recent valid catalog and prefers the cache when the network is unavailable.
-- Search and sorting cover the full catalog, and the list loads in batches.
-- Installation targets in the catalog are fixed to the version or complete commit recorded when the skin was accepted. The market checks the target and entry point before installation.
-- Community skins are not a security endorsement from DSH or the market. Read the skin repository, license, and compatibility range before using one.
+A new entry is a thin YAML file containing only `url`, `subpath`, `name`, `author`, `description`, and `screenshots`. If you write `name`, include both `zh` and `en`. CI reads the package, loader id, commit, license, and compatibility range from the skin repository. Do not write them into the YAML. A community PR changes exactly one `registry/skins/<owner>__<repo>.yml` and does not edit `data/catalog.json` or `data/catalog-copy.json`.
 
-## Submit your skin
+CI must be able to read the skin repository: a public GitHub repository or monorepo subdirectory; `package.json` with name, version, license, and `dsh.client`; and a matching loader row in `cordis.patch.yml`. Preview images must be png, jpg, webp, or gif files in the repository. It also helps to declare the DSH Web version range and a `dsh plugin add` command in the README, and to add the `dsh-plugin` topic.
 
-If you develop a DSH skin, prepare a public GitHub repository and submit one `registry/skins/<owner>__<repo>.yml` file to this repository. The catalog entry contains submission information only; CI fills in the package, commit, loader ID, and preview image.
+An existing entry can change only `name.zh`, `name.en`, `author`, `description`, and `screenshots`. Do not change the id, install target, commit, package, or rowId. This PR does not refresh the pinned version. Acceptance is not a security certification.
 
-```yaml
-url: https://github.com/<owner>/<repo>
-```
-
-For a monorepo subpackage, also add `subpath:`. YAML may contain only `url`, `subpath`, `name`, `author`, `description`, and `screenshots`. Do not write `package`, `rowId`, `category`, `tags`, or `install`. The generated catalog file `data/catalog.json` does not need to be maintained in a community PR.
-
-Requirements:
-
-- It must be a public, installable DSH Web skin repository or monorepo subpackage.
-- The install source must be fixed to a complete 40-character commit SHA.
-- The repository or package metadata must provide the package, row ID, license, and DSH compatibility range.
-- Preview images must be real screenshots of the interface from the repository.
-- Acceptance is not security certification or official endorsement.
+Local acceptance steps are in [TESTING.md](./TESTING.md).
 
 <details>
 <summary><strong>Click to expand the skin submission prompt</strong></summary>
@@ -177,63 +161,66 @@ Copy the entire prompt below to your Agent:
 Please submit my DSH skin to DSH Skin Market.
 
 Skin repository: <your skin repository URL>
-Target directory repository: https://github.com/kingOfSoySauce/dsh-skin-market
-Directory path: registry/skins
+Target catalog repository: https://github.com/kingOfSoySauce/dsh-skin-market
+Catalog path: registry/skins
 
-Please complete the following steps:
+Follow these steps:
 1. Use read-only checks to confirm that the skin repository is a public GitHub repository (or a monorepo subdirectory) and is an installable DSH Web skin. Do not read .env, credentials, or chat history.
-2. Fork or clone the target directory repository and create a new branch. Add only one YAML file under registry/skins. Do not overwrite existing entries or modify data/catalog.json.
-3. The YAML must be a thin entry. Only url, subpath, name, author, description, and screenshots are allowed. Adding package, rowId, category, tags, modes, compatibility, install, or other fields will fail. CI fills in the remaining fields from the skin repository:
+2. Confirm that CI can read these materials from that repository. If any are missing, tell me first and do not invent them:
+   - package.json has name, version, license, and dsh.client
+   - cordis.patch.yml has a loader row matching the package name
+   - the description is in the thin entry or package.json description
+   - preview images are png, jpg, webp, or gif files in the repository, from screenshots.json relative paths, README images, or the thin entry screenshots field
+   - the README should declare a DSH Web version range and include a dsh plugin add command; the repository should have the dsh-plugin topic
+3. Fork or clone the catalog repository and create a branch. Add exactly one YAML file under registry/skins, named owner__repo.yml (owner__repo--path.yml for a subpackage). Do not overwrite an existing entry or edit data/catalog.json or data/catalog-copy.json.
+4. The YAML must be a thin entry. Only these fields are allowed, and no others: url, subpath, name, author, description, screenshots. Adding package, rowId, category, tags, modes, compatibility, install, commit, or any other key fails the full schema check. The content may only be:
 
 url: https://github.com/<owner>/<repo>
 # subpath: packages/my-skin   # only for a monorepo subpackage
+# name:                       # optional; if present, include both zh and en
+#   zh: Chinese name
+#   en: English name
+# author: owner               # optional; defaults to the GitHub owner
+# description: one sentence about what the user sees
+# screenshots:                # optional; repository-relative image paths only
+#   - screenshots/home.png
 
-4. Put preview images in screenshots.json or the README in the skin repository. Do not use SVG, data URI, or a third-party image host.
-5. Do not write the full schema. If registry:check reports missing id/install, remove the extra fields and run it again; do not fill in the schema.
-6. Run npm run registry:check in the root of the target directory repository. Do not install anything into my real DSH profile.
-7. git diff --name-only must contain only registry/skins/<entry-file>.yml. Commit the change and create a PR in the target directory repository with the title feat(registry): add <skin-name>.
+5. Do not write the full schema or invent a commit SHA, rowId, or license. If npm run registry:check reports a missing id/install, remove every field outside the thin entry and rerun it. Do not fill in the schema to pass CI.
+6. Run npm run registry:check in the catalog repository root. Do not install anything into my real DSH profile.
+7. git diff --name-only must contain only registry/skins/<entry-file>.yml. Commit and create a PR titled feat(registry): add <skin-name>.
 8. Return the PR link. If you do not have GitHub permission, only prepare the branch and copyable PR content.
 
-Acceptance is not security certification. Do not claim that this skin has been endorsed by DSH, a security team, or the market.
+Acceptance is not a security certification. Do not claim that DSH, a security team, or the market endorsed this skin.
 ```
 
 </details>
 
-## Safety and boundaries
+<details>
+<summary><strong>Click to expand the display-field update prompt</strong></summary>
 
-- The market installs only skin identifiers listed in the catalog. It does not accept arbitrary commands or installation addresses.
-- The market does not log in to GitHub for you or silently create a PR. Whether to fork, commit, or create a PR is decided by you and the Agent’s actual actions.
-- Community skins are not security certifications from DSH or the market. Before installing, review the skin repository, license, compatibility range, and source.
+Use this when changing only the name, author, description, or preview images. Fill in the fields and new text before copying.
 
-## Local development
+```text
+Please update the display fields of a skin already listed in DSH Skin Market.
 
-Node.js 22 or higher is required.
+Skin repository: <your skin repository URL>
+Target catalog repository: https://github.com/kingOfSoySauce/dsh-skin-market
+Catalog path: registry/skins
+Fields to change: <which of name.zh, name.en, author, description, and screenshots, plus the new content>
 
-```bash
-git clone https://github.com/kingOfSoySauce/dsh-skin-market.git
-cd dsh-skin-market
-npm install
-npm run dev
+Follow these steps:
+1. Use read-only checks to confirm that this repository already has an entry under registry/skins and that its remote matches the entry repo. If you cannot find it, stop and ask me. Do not create a new entry. Do not read .env, credentials, or chat history.
+2. Edit only that existing YAML file. A community PR may change exactly one registry/skins/<entry>.yml. Do not change other entries, data/catalog.json, or data/catalog-copy.json.
+3. Change only these display fields: name.zh, name.en, author, description, and screenshots. name must keep both zh and en. description should say what the user sees. screenshots may use only png, jpg, webp, or gif files from the repository at the currently pinned commit. Do not switch them to a newer commit, SVG, a data URI, or a third-party image host.
+4. Do not change id, repo, subpath, package, rowId, category, tags, modes, install, compatibility, review, health, license, featuredRank, star counts, or any timestamp. This PR does not refresh the pinned version. If a version refresh is needed, say so in the PR body and do not invent install.target.
+5. Run npm run registry:check in the catalog repository root. Do not install anything into my real DSH profile.
+6. git diff --name-only must contain only that one YAML file. Commit and create a PR titled feat(registry): update <skin-name> display fields.
+7. Return the PR link. If you do not have GitHub permission, only prepare the branch and copyable PR content.
+
+Do not claim that the fields are already live in the online catalog. After merge, catalog sync writes them into the catalog. Acceptance is not a security certification.
 ```
 
-`npm run dev` starts a preview page using Mock Host data and does not modify any DSH profile.
-
-When developing local catalog entries, you can make the market read the catalog bundled with the current build:
-
-```sh
-DSH_SKIN_MARKET_LOCAL_CATALOG=1 dsh web
-```
-
-Common checks:
-
-```bash
-npm run registry
-npm test
-npm run typecheck
-npm run build
-```
-
-See [TESTING.md](./TESTING.md) for the complete local installation and manual acceptance steps.
+</details>
 
 ## License
 

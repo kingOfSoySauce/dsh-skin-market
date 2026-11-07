@@ -141,36 +141,20 @@ Agent 每次只指导一项操作，等你反馈后继续：打开「插件 → 
 
 这个命令会关闭皮肤市场管理的皮肤并恢复默认外观，但保留已安装的皮肤包和皮肤市场。随后重新启动 DSH Web。官方 Desktop 不要执行这个 Web profile 命令，请在应用插件管理器或市场中停用冲突皮肤。
 
-## 在线目录
+## 给开发者
 
-新皮肤和目录信息会独立更新，不需要先升级市场插件：
+维护 DSH 皮肤时，把下面的提示词交给 Agent，准备收录或更新展示字段。市场不会代替你登录 GitHub，也不会静默创建 PR。
 
-- 市场打开时读取最新目录，页面保持打开时约每 5 分钟检查一次，重新获得焦点时也会检查；
-- 浏览器会保留最近一次有效目录，网络异常时优先展示缓存；
-- 搜索和排序覆盖完整目录，列表按批次加载；
-- 目录中的安装目标固定到收录时的版本或完整 commit，市场会在安装前校验目标和入口；
-- 社区皮肤不是 DSH 官方或市场的安全背书，使用前请查看皮肤仓库说明、许可证和兼容范围。
+新收录只写薄条目：`url`、`subpath`、`name`、`author`、`description`、`screenshots`。`name` 如果写，必须同时有 `zh` 和 `en`。package、loader id、commit、许可证和兼容范围由 CI 从皮肤仓库读取，不要写进 YAML。社区 PR 只改一个 `registry/skins/<owner>__<repo>.yml`，不要改 `data/catalog.json` 或 `data/catalog-copy.json`。
 
-## 提交你的皮肤
+皮肤仓库需要能被 CI 读到：公开 GitHub 仓库或 monorepo 子目录；`package.json` 有 name、version、license 和 `dsh.client`；`cordis.patch.yml` 有对应 loader。预览图用仓库内的 png、jpg、webp 或 gif。建议 README 声明 DSH Web 版本范围和一条 `dsh plugin add` 安装命令，并为仓库加上 `dsh-plugin` Topic。
 
-如果你开发了 DSH 皮肤，准备一个公开 GitHub 仓库后，在本仓库提交一个 `registry/skins/<owner>__<repo>.yml` 即可。目录条目只写收录信息，CI 会补全 package、commit、loader id 和预览图。
+已收录皮肤只能改展示字段：`name.zh`、`name.en`、`author`、`description`、`screenshots`。不要改 id、安装目标、commit、package 或 rowId。固定版本刷新不由这次 PR 改写。收录不等于安全认证。
 
-```yaml
-url: https://github.com/<owner>/<repo>
-```
-
-monorepo 子包再加 `subpath:`。YAML 只允许 `url`、`subpath`、`name`、`author`、`description`、`screenshots`；不要写 `package`、`rowId`、`category`、`tags` 或 `install`。目录生成文件 `data/catalog.json` 不需要在社区 PR 中维护。
-
-收录要求：
-
-- 必须是公开、可安装的 DSH Web 皮肤仓库或 monorepo 子包；
-- 安装来源固定到完整 40 位 commit SHA；
-- 仓库或 package 元数据提供 package、row ID、许可证和 DSH 兼容范围；
-- 预览图来自仓库中的真实界面截图；
-- 收录不等于安全认证或官方背书。
+本地验收步骤见 [TESTING.md](./TESTING.md)。
 
 <details>
-<summary><strong>点击展开提交皮肤提示词</strong></summary>
+<summary><strong>点击展开收录皮肤提示词</strong></summary>
 
 复制以下整段提示词给你的 Agent：
 
@@ -181,18 +165,30 @@ monorepo 子包再加 `subpath:`。YAML 只允许 `url`、`subpath`、`name`、`
 目标目录仓库：https://github.com/kingOfSoySauce/dsh-skin-market
 目录路径：registry/skins
 
-请自主完成以下工作：
+请按以下步骤完成：
 1. 只用只读方式确认皮肤仓库是公开的 GitHub 仓库（或 monorepo 子目录），且确实是可安装的 DSH Web 皮肤。不要读取 .env、凭据或聊天记录。
-2. fork 或 clone 目标目录仓库并新建分支。在 registry/skins 下只新增一个 YAML，不要覆盖已有条目，不要修改 data/catalog.json。
-3. YAML 必须写成薄条目。只允许 url、subpath、name、author、description、screenshots。多写 package、rowId、category、tags、modes、compatibility、install 等字段会失败；CI 会从皮肤仓库补全其余字段：
+2. 确认 CI 能从该仓库读到这些材料；缺了就先告诉我，不要编造：
+   - package.json 有 name、version、license，以及 dsh.client
+   - cordis.patch.yml 有与 package 名对应的 loader 行
+   - 描述在薄条目 description 或 package.json description
+   - 预览图是仓库内的 png、jpg、webp 或 gif，来自 screenshots.json 相对路径、README 仓库图片，或薄条目 screenshots
+   - 建议 README 声明 DSH Web 版本范围，并包含一条 dsh plugin add 安装命令；建议仓库加上 dsh-plugin Topic
+3. fork 或 clone 目标目录仓库并新建分支。在 registry/skins 下只新增一个 YAML，文件名用 owner__repo.yml（子包用 owner__repo--path.yml）。不要覆盖已有条目，不要修改 data/catalog.json 或 data/catalog-copy.json。
+4. YAML 必须写成薄条目。只允许这些字段，一个都不能多：url、subpath、name、author、description、screenshots。多写 package、rowId、category、tags、modes、compatibility、install、commit 或任何其他键，CI 会按完整 schema 校验并失败。内容只能是：
 
 url: https://github.com/<owner>/<repo>
 # subpath: packages/my-skin   # 仅 monorepo 子包需要
+# name:                       # 可选；如果写，必须同时有 zh 和 en
+#   zh: 中文名
+#   en: English name
+# author: owner               # 可选；未填写时使用 GitHub owner
+# description: 一句用户能看到的外观或行为说明
+# screenshots:                # 可选；只写仓库内图片相对路径
+#   - screenshots/home.png
 
-4. 预览图放在皮肤仓库的 screenshots.json 或 README 内；不要使用 SVG、data URI 或第三方图床。
-5. 不要写完整 schema。若 registry:check 报缺少 id/install，删掉多余字段再跑，不要补全 schema。
+5. 不要写完整 schema，不要编造 commit SHA、rowId 或许可证。若 npm run registry:check 报缺少 id/install，先删掉薄条目以外的字段再跑，不要靠补全 schema 过 CI。
 6. 在目标目录仓库根目录运行 npm run registry:check。不得安装到我的真实 DSH profile。
-7. git diff --name-only 应只有 registry/skins/<条目文件>.yml。提交并向目标目录仓库创建 PR，标题 feat(registry): add <皮肤名>。
+7. git diff --name-only 应只有 registry/skins/<条目文件>.yml。提交并创建 PR，标题 feat(registry): add <皮肤名>。
 8. 返回 PR 链接；没有 GitHub 权限时只准备好分支和可复制的 PR 内容。
 
 收录不等于安全认证。不要声称该皮肤已被 DSH 官方、安全团队或市场背书。
@@ -200,41 +196,32 @@ url: https://github.com/<owner>/<repo>
 
 </details>
 
-## 安全与边界
+<details>
+<summary><strong>点击展开更新展示字段提示词</strong></summary>
 
-- 市场只能安装目录中收录的皮肤标识，不接受任意命令或安装地址。
-- 市场不会代替你登录 GitHub，也不会静默创建 PR；提交皮肤时，是否 fork、提交或创建 PR 由你和 Agent 的实际操作决定。
-- 社区皮肤不是 DSH 官方或市场的安全认证。安装前请查看皮肤仓库、许可证、兼容范围和来源。
+只改名称、作者、描述或预览图时，复制这段。把要改的字段和内容填进提示词。
 
-## 本地开发
+```text
+请帮我更新 DSH 皮肤市场里已收录皮肤的展示字段。
 
-需要 Node.js 22 或更高版本。
+皮肤仓库：<你的皮肤仓库地址>
+目标目录仓库：https://github.com/kingOfSoySauce/dsh-skin-market
+目录路径：registry/skins
+要改的字段：<name.zh / name.en / author / description / screenshots 中的哪几项，以及新内容>
 
-```bash
-git clone https://github.com/kingOfSoySauce/dsh-skin-market.git
-cd dsh-skin-market
-npm install
-npm run dev
+请按以下步骤完成：
+1. 只用只读方式确认这个仓库已经在 registry/skins 里有条目，并且仓库 remote 与条目的 repo 一致。找不到就停下来问我，不要新建条目。不要读取 .env、凭据或聊天记录。
+2. 只修改这一条已有 YAML。社区 PR 只能改一个 registry/skins/<条目>.yml，不要改其他条目、data/catalog.json 或 data/catalog-copy.json。
+3. 只允许改这些展示字段：name.zh、name.en、author、description、screenshots。name 必须同时保留 zh 和 en。description 写用户能看到的外观或行为。screenshots 只能使用当前已固定 commit 下的仓库内 png、jpg、webp 或 gif，不要换成更新的 commit、SVG、data URI 或第三方图床。
+4. 不要改 id、repo、subpath、package、rowId、category、tags、modes、install、compatibility、review、health、license、featuredRank、star 计数或任何时间字段。固定版本刷新不由这次 PR 改写；如果需要更新固定版本，只在 PR 正文说明，不要编造 install.target。
+5. 在目标目录仓库根目录运行 npm run registry:check。不得安装到我的真实 DSH profile。
+6. git diff --name-only 应只有这一条 YAML。提交并创建 PR，标题 feat(registry): update <皮肤名> display fields。
+7. 返回 PR 链接；没有 GitHub 权限时只准备好分支和可复制的 PR 内容。
+
+不要声称字段已经在线上目录生效。合并后由仓库的目录同步写入 catalog。收录不等于安全认证。
 ```
 
-`npm run dev` 启动使用 Mock Host 数据的预览页面，不会修改任何 DSH profile。
-
-本地开发目录条目时，可以让市场固定读取当前构建包内的目录：
-
-```sh
-DSH_SKIN_MARKET_LOCAL_CATALOG=1 dsh web
-```
-
-常用检查命令：
-
-```bash
-npm run registry
-npm test
-npm run typecheck
-npm run build
-```
-
-完整的本地安装和人工验收步骤见 [TESTING.md](./TESTING.md)。
+</details>
 
 ## License
 
