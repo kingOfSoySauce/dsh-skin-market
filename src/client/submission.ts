@@ -6,7 +6,6 @@ import { defaultTranslator, type Translator } from './i18n.ts'
 import type { CatalogSkin, MarketHostKind } from './types.ts'
 
 export const REGISTRY_REPOSITORY = 'https://github.com/kingOfSoySauce/dsh-skin-market'
-export const REGISTRY_PATH = 'registry/skins'
 export const CLI_INSTALL_WARNING = defaultTranslator('submission.cliWarning')
 
 export function normalizeGitHubRepository(value: string): string | null {
@@ -19,20 +18,6 @@ export function normalizeGitHubRepository(value: string): string | null {
   } catch {
     return null
   }
-}
-
-export function createSubmissionPrompt(repositoryInput?: string, t: Translator = defaultTranslator): string {
-  const repository = repositoryInput === undefined ? null : normalizeGitHubRepository(repositoryInput)
-  if (repositoryInput !== undefined && repository === null) return ''
-  const repositoryLine = repository === null
-    ? t('submission.repositoryLine')
-    : `${t('submission.repositoryLabel')}${repository}`
-
-  return t('submission.prompt', {
-    repositoryLine,
-    registryRepository: REGISTRY_REPOSITORY,
-    registryPath: REGISTRY_PATH,
-  })
 }
 
 export function createSkinInstallPrompt(skin: CatalogSkin, hostKind?: MarketHostKind, context?: InstallCommandContext, t: Translator = defaultTranslator): string {

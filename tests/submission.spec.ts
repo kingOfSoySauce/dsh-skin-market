@@ -1,36 +1,12 @@
 import { describe, expect, it } from 'vitest'
-import { createSkinInstallCommand, createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, createSkinInstallSearchKeyword, createSubmissionPrompt, normalizeGitHubRepository, REGISTRY_REPOSITORY } from '../src/client/submission.ts'
+import { createSkinInstallCommand, createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, createSkinInstallSearchKeyword, normalizeGitHubRepository } from '../src/client/submission.ts'
 import type { CatalogSkin } from '../src/client/types.ts'
 
 describe('agent-assisted skin submission', () => {
-  it('normalizes a public GitHub repository and generates an actionable PR prompt', () => {
-    const repository = normalizeGitHubRepository('https://github.com/example/dsh-skin.git')
-    expect(repository).toBe('https://github.com/example/dsh-skin')
-
-    const prompt = createSubmissionPrompt(repository!)
-    expect(prompt).toContain('皮肤仓库：https://github.com/example/dsh-skin')
-    expect(prompt).toContain(`目标目录仓库：${REGISTRY_REPOSITORY}`)
-    expect(prompt).toContain('YAML 必须写成薄条目')
-    expect(prompt).toContain('只允许这些字段，一个都不能多')
-    expect(prompt).toContain('url: https://github.com/<owner>/<repo>')
-    expect(prompt).toContain('npm run registry:check')
-    expect(prompt).toContain('不要靠补全 schema 过 CI')
-    expect(prompt).toContain('不要修改 data/catalog.json')
-    expect(prompt).toContain('创建 PR')
-    expect(prompt).toContain('不要读取 .env')
-  })
-
-  it('rejects non-repository and non-GitHub URLs', () => {
+  it('normalizes a public GitHub repository and rejects non-repository URLs', () => {
+    expect(normalizeGitHubRepository('https://github.com/example/dsh-skin.git')).toBe('https://github.com/example/dsh-skin')
     expect(normalizeGitHubRepository('https://example.com/owner/repo')).toBeNull()
     expect(normalizeGitHubRepository('https://github.com/owner/repo/issues')).toBeNull()
-    expect(createSubmissionPrompt('not a url')).toBe('')
-  })
-
-  it('generates a direct prompt that asks the agent to resolve the skin repository', () => {
-    const prompt = createSubmissionPrompt()
-    expect(prompt).toContain('如果当前工作区就是待提交的皮肤仓库')
-    expect(prompt).toContain('否则先向我索要公开 GitHub 仓库地址')
-    expect(prompt).toContain(`目标目录仓库：${REGISTRY_REPOSITORY}`)
   })
 
   it('generates a pinned installation fallback prompt with an exact build approval', () => {
