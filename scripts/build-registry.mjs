@@ -8,7 +8,6 @@ import { mediaForSources } from './media.mjs'
 import { isThinSubmission, hydrateSkinSubmission, thinSubmissionHint } from './hydrate-submission.mjs'
 import { resolveScreenshotList, resolveScreenshotRef } from './screenshot-refs.mjs'
 import { buildCatalogWire } from './catalog-wire.mjs'
-import { buildHeatMap, dayNumber } from './heat.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const checkOnly = process.argv.includes('--check')
@@ -129,15 +128,14 @@ async function optionalJson(relativePath) {
   }
 }
 
-// Momentum ranks recent movement instead of lifetime stars. Both inputs are
-// generated files: star samples are recorded daily, repository activity is
-// refreshed by the private nightly. A missing file simply omits the signal.
-const [starHistory, repoActivity] = await Promise.all([
-  optionalJson('data/star-history.json'),
-  optionalJson('data/repo-activity.json'),
-])
-const heat = buildHeatMap({ skins, history: starHistory, activity: repoActivity, today: dayNumber(new Date()) })
 const displayCopy = await optionalJson('data/catalog-copy.json')
+// Heat is computed in the private ops repo. This build only keeps scores that
+// already passed the old client wire shape, so a public registry run cannot
+// put the old lifetime average back on top.
+const known = new Set(skins.map(skin => skin.id))
+const heat = previous?.heat && typeof previous.heat === 'object'
+  ? Object.fromEntries(Object.entries(previous.heat).filter(([id]) => known.has(id)))
+  : undefined
 
 const catalog = buildCatalogWire(skins, { previous, heat, displayCopy })
 if (!checkOnly) await writeFile(catalogPath, `${JSON.stringify(catalog, null, 2)}\n`)
