@@ -871,13 +871,16 @@ const SPARK_HEIGHT = 170
 const SPARK_LABEL_WIDTH = 34
 
 /**
- * One line, no axes, full width under the header. The count sits at the line's
- * end as real text, so the label never stretches with the chart.
+ * One line, no axes, stretched to the header block. The fill fades downward and
+ * to the right; the star and the count sit on the endpoint itself.
  */
 function SkinSpark({ values, from, language }: { values: number[] | undefined; from: number | undefined; language: string }) {
   const VIEW_W = 1000
-  const VIEW_H = 64
-  const LABEL = 46
+  const VIEW_H = 100
+  const LABEL = 54
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, '')
+  const gradientId = `spark-fill-${uid}`
+  const maskId = `spark-mask-${uid}`
   const geometry = useMemo(
     () => values === undefined ? undefined : sparklineGeometry(values, VIEW_W - LABEL, VIEW_H),
     [values],
@@ -887,6 +890,7 @@ function SkinSpark({ values, from, language }: { values: number[] | undefined; f
   const current = values[values.length - 1]
   const active = hovered === null ? undefined : geometry.points[hovered]
   const activeValue = active === undefined ? undefined : Math.round(active.value)
+  const area = `${geometry.d} L${VIEW_W} ${VIEW_H} L${geometry.points[0].x} ${VIEW_H} Z`
   return <figure className={css.spark}>
     <svg
       viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
@@ -904,10 +908,26 @@ function SkinSpark({ values, from, language }: { values: number[] | undefined; f
       }}
       onMouseLeave={() => setHovered(null)}
     >
-      <path className={css.sparkArea} d={`${geometry.d} L${geometry.end.x} ${VIEW_H} L${geometry.points[0].x} ${VIEW_H} Z`} />
+      <defs>
+        <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" className={css.sparkFillTop} />
+          <stop offset="100%" className={css.sparkFillBottom} />
+        </linearGradient>
+        <linearGradient id={`${gradientId}-x`} x1="0" y1="0" x2="1" y2="0">
+          <stop offset="62%" stopColor="#fff" stopOpacity="1" />
+          <stop offset="100%" stopColor="#fff" stopOpacity="0" />
+        </linearGradient>
+        <mask id={maskId}>
+          <rect x="0" y="0" width={VIEW_W} height={VIEW_H} fill={`url(#${gradientId}-x)`} />
+        </mask>
+      </defs>
+      <path className={css.sparkArea} d={area} fill={`url(#${gradientId})`} mask={`url(#${maskId})`} />
       <path className={css.sparkLine} d={geometry.d} vectorEffect="non-scaling-stroke" />
     </svg>
-    <span className={css.sparkEnd}><StarIcon size={12} aria-hidden="true" />{current}</span>
+    <span
+      className={css.sparkEnd}
+      style={{ left: `${(geometry.end.x / VIEW_W) * 100}%`, top: `${(geometry.end.y / VIEW_H) * 100}%` }}
+    ><StarIcon size={12} aria-hidden="true" />{current}</span>
     {active !== undefined && from !== undefined && activeValue !== undefined && <span
       className={css.sparkTip}
       style={{ left: `${(active.x / VIEW_W) * 100}%`, top: `${(active.y / VIEW_H) * 100}%` }}
