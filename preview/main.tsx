@@ -6,6 +6,7 @@ import { IconAgentPresetOutline16, IconDataOutline16, IconPersonalizationOutline
 import { SkinMarketSection } from '../src/client/SkinMarketSection.tsx'
 import type { RuntimeSkin } from '../src/client/types.ts'
 import catalogWire from '../data/catalog.json'
+import starCurvesWire from '../data/star-curves.json'
 import { decodeCatalogWire } from '../src/catalog-wire.ts'
 import './preview.css'
 
@@ -28,6 +29,7 @@ declare global {
 
 window.fetch = async (input, init) => {
   const url = String(input)
+  if (url.includes('star-curves')) return new Response(JSON.stringify(starCurvesWire), { status: 200 })
   if (url.endsWith('/catalog')) return new Response(JSON.stringify({ skins }), { status: 200 })
   if (url.endsWith('/state')) return new Response(JSON.stringify({ skins: [...runtime.values()] }), { status: 200 })
   if (url.includes('/operations/')) return new Response(JSON.stringify(operations.get(url.split('/').pop() ?? '') ?? { phase: 'done' }), { status: 200 })

@@ -729,14 +729,13 @@ describe('client market', () => {
     vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
-    fireEvent.click(screen.getByRole('button', { name: '提交皮肤' }))
-    expect(screen.getByRole('dialog', { name: '提交你的皮肤' })).toBeTruthy()
     fireEvent.click(await screen.findByRole('button', { name: /第二皮肤 界面预览/ }))
+    expect(screen.getByRole('dialog', { name: '皮肤详情' })).toBeTruthy()
     window.dispatchEvent(new Event('focus'))
 
     await waitFor(() => expect(catalogRequests).toBe(2))
     expect(screen.getByRole('heading', { name: '第二皮肤' })).toBeTruthy()
-    expect(screen.getByRole('dialog', { name: '提交你的皮肤' })).toBeTruthy()
+    expect(screen.getByRole('dialog', { name: '皮肤详情' })).toBeTruthy()
   })
 
   it('hides catalog metadata and the manual refresh control', async () => {
@@ -2006,7 +2005,7 @@ describe('client market', () => {
     vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [manual] } : { skins: [] } })))
     render(<SkinMarketSection t={key => key} />)
 
-    fireEvent.click(await screen.findByRole('button', { name: '需手动安装' }))
+    fireEvent.click(await screen.findByRole('button', { name: '安装' }))
     const dialog = screen.getByRole('dialog', { name: '安装 测试皮肤' })
     expect(dialog.textContent).toContain('提示词')
     expect(dialog.textContent).toContain('命令')
@@ -4827,25 +4826,5 @@ describe('client market', () => {
     expect(screen.queryByRole('heading', { name: '仓库健康' })).toBeNull()
     expect(screen.queryByText('README 截图')).toBeNull()
     expect(screen.queryByText('建议声明支持的 DSH Web 版本范围。')).toBeNull()
-  })
-
-  it('generates and copies an agent PR prompt without submitting to GitHub', async () => {
-    const writeText = vi.fn(async () => undefined)
-    Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText } })
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
-
-    render(<SkinMarketSection t={key => key} />)
-    await waitFor(() => expect(screen.getByRole('button', { name: '提交皮肤' })).toBeTruthy())
-    fireEvent.click(screen.getByRole('button', { name: '提交皮肤' }))
-
-    const prompt = screen.getByRole('textbox', { name: 'Agent 投稿提示词' }) as HTMLTextAreaElement
-    expect(screen.queryByRole('textbox', { name: '皮肤 GitHub 仓库' })).toBeNull()
-    expect(prompt.value).toContain('否则先向我索要公开 GitHub 仓库地址')
-    expect(prompt.value).toContain('目标目录仓库：https://github.com/kingOfSoySauce/dsh-skin-market')
-    fireEvent.click(screen.getByRole('button', { name: '复制提示词' }))
-    await waitFor(() => expect(writeText).toHaveBeenCalledWith(prompt.value))
-    const copyPrompt = screen.getByRole('button', { name: '复制提示词' })
-    await waitFor(() => expect(copyPrompt.querySelector('[data-icon="check"]')).toBeTruthy())
-    expect(copyPrompt.textContent).toBe('复制提示词')
   })
 })

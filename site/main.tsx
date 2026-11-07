@@ -2,7 +2,8 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, typ
 import { createRoot } from 'react-dom/client'
 import { ArrowLeft, Check, Copy, DownloadSimpleIcon, GithubLogo, MagnifyingGlass, Moon, Sun, Translate, X } from '@phosphor-icons/react'
 import { StarIcon } from '@primer/octicons-react'
-import { CatalogLoadError, fetchLiveCatalog, fetchLiveCatalogWithFallback, REMOTE_CATALOG_URL } from './catalog.ts'
+import { CatalogLoadError, fetchLiveCatalog, fetchLiveCatalogWithFallback, REMOTE_CATALOG_URL, REMOTE_STAR_CURVES_URL } from './catalog.ts'
+import { curveDayLabel, curveEntry, parseStarCurves, sparklineGeometry } from '../src/star-curves.ts'
 import { comparePublicCatalogOrder, shouldRenderPublicPreview } from './catalog-order.ts'
 import type { CatalogSort } from '../src/catalog-order.ts'
 import { getCatalogListScreenshot, getCatalogScreenshotUrls, usesMarketScreenshots } from '../src/catalog-order.ts'
@@ -44,6 +45,48 @@ const THEME_OPTIONS: readonly { value: SiteTheme; label: MessageKey; description
 
 function marketCategory(skin: { category?: string }): MarketCategory {
   return skin.category === 'pet' || skin.category === 'player' || skin.category === 'splash' ? skin.category : 'skin'
+}
+
+
+function StarSpark({ values, from, language }: { values: number[] | undefined; from: number | undefined; language: string }) {
+  const VIEW_W = 1000
+  const VIEW_H = 64
+  const LABEL = 46
+  const geometry = useMemo(
+    () => values === undefined ? undefined : sparklineGeometry(values, VIEW_W - LABEL, VIEW_H),
+    [values],
+  )
+  const [hovered, setHovered] = useState<number | null>(null)
+  if (geometry === undefined || values === undefined) return null
+  const current = values[values.length - 1]
+  const active = hovered === null ? undefined : geometry.points[hovered]
+  const activeValue = active === undefined ? undefined : Math.round(active.value)
+  return <figure className="skin-spark">
+    <svg
+      viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
+      preserveAspectRatio="none"
+      role="img"
+      aria-label={`stars 从 ${values[0]} 涨到 ${current}`}
+      onMouseMove={event => {
+        const rect = event.currentTarget.getBoundingClientRect()
+        const x = ((event.clientX - rect.left) / rect.width) * VIEW_W
+        let best = 0
+        for (let index = 1; index < geometry.points.length; index += 1) {
+          if (Math.abs(geometry.points[index].x - x) < Math.abs(geometry.points[best].x - x)) best = index
+        }
+        setHovered(best)
+      }}
+      onMouseLeave={() => setHovered(null)}
+    >
+      <path className="skin-spark-area" d={`${geometry.d} L${geometry.end.x} ${VIEW_H} L${geometry.points[0].x} ${VIEW_H} Z`} />
+      <path className="skin-spark-line" d={geometry.d} vectorEffect="non-scaling-stroke" />
+    </svg>
+    <span className="skin-spark-end"><StarIcon size={12} aria-hidden="true" />{current}</span>
+    {active !== undefined && from !== undefined && activeValue !== undefined && <span
+      className="skin-spark-tip"
+      style={{ left: `${(active.x / VIEW_W) * 100}%`, top: `${(active.y / VIEW_H) * 100}%` }}
+    >{curveDayLabel(from, geometry.dayOf(active.ratio), language)} · {activeValue}</span>}
+  </figure>
 }
 
 function terminalMessageKey(key: string): MessageKey | undefined {
@@ -187,7 +230,7 @@ function SearchBox({ query, onQueryChange, style }: { query: string; onQueryChan
   return <div className="search site-search" style={style}><MagnifyingGlass size={18} /><input ref={inputRef} value={query} onChange={event => onQueryChange(event.currentTarget.value)} placeholder={t('search.label')} aria-label={t('search.label')} />{query.length > 0 && <button type="button" className="search-clear" aria-label={t('search.clear')} title={t('search.clear')} onMouseDown={event => event.preventDefault()} onClick={clear}><X size={16} aria-hidden="true" /></button>}</div>
 }
 
-export function App({ skins }: { skins: Skin[] }) {
+export function App({ skins, curves = {} }: { skins: Skin[]; curves?: Record<string, { from: number; stars: number[] }> }) {
   const { language, t } = useSitePreferences()
   const [selectedId, setSelectedId] = useState(skins[0]?.id ?? '')
   const [query, setQuery] = useState('')
@@ -420,19 +463,22 @@ export function App({ skins }: { skins: Skin[] }) {
     {detailOpen && <div className="browser-overlay" role="presentation">
       <button className="browser-mask" aria-hidden="true" tabIndex={-1} onClick={() => setDetailOpen(false)} />
       <section className="browser-panel" role="dialog" aria-modal="true" aria-label={t('skin.details')}>
-        <header className="browser-titlebar"><span><strong>{t('skin.details')}</strong><small>{githubRepoLabel(selected.repo)}</small></span><button className="button outline" aria-label={t('skin.closeDetails')} title={t('skin.closeDetails')} onClick={() => setDetailOpen(false)}><X size={15} /></button></header>
+        <header className="browser-titlebar"><span><strong>{t('skin.details')}</strong></span><button className="button outline" aria-label={t('skin.closeDetails')} title={t('skin.closeDetails')} onClick={() => setDetailOpen(false)}><X size={15} /></button></header>
         <section className="detail" ref={detailRef} aria-label={t('skin.detailsContent')}>
         <button className="mobile-back" onClick={() => setDetailOpen(false)}><ArrowLeft size={16} /> {t('skin.backToDiscover')}</button>
         <header className="skin-head">
           <div className="avatar"><PreviewMedia key={`${selected.id}:${getCatalogListScreenshot(selected) ?? 'missing'}:avatar`} skin={selected} src={getCatalogListScreenshot(selected)} alt="" kind="avatar" /></div>
-          <div className="skin-title"><div><h2>{selectedName}</h2>{selectedDescription !== undefined && <p className="skin-description" title={selectedDescription}>{selectedDescription}</p>}<p className="repo-id">{githubRepoLabel(selected.repo)}</p><div className="meta"><span>{t('skin.version', { version: selected.install.version })}</span><span>{t('skin.dshVersion', { version: selected.compatibility.dsh })}</span><span className={verified ? 'verified' : 'unverified'}>{verified ? t('skin.compatibilityVerified') : t('skin.compatibilityPending')}</span></div></div></div>
+          <div className="skin-title-copy">
+            <h2>{selectedName}</h2>
+            <div className="repo-row">
+              <button className="button primary" onClick={() => { setCopied(null); setInstallDialog('skin') }}>{t('skin.installThis')}</button>
+              <a className="repo-line" href={selected.repo} target="_blank" rel="noreferrer"><GithubLogo size={13} aria-hidden="true" /><span>{githubRepoLabel(selected.repo)}</span></a>
+            </div>
+            {selectedDescription !== undefined && <p className="skin-description" title={selectedDescription}>{selectedDescription}</p>}
+            <div className="meta"><span>{t('skin.version', { version: selected.install.version })}</span><span>{t('skin.dshVersion', { version: selected.compatibility.dsh })}</span><span className={verified ? 'verified' : 'unverified'}>{verified ? t('skin.compatibilityVerified') : t('skin.compatibilityPending')}</span></div>
+          </div>
+          <StarSpark values={curveEntry(curves, selected.repo)?.stars} from={curveEntry(curves, selected.repo)?.from} language={language} />
         </header>
-
-        <div className="detail-actions">
-          <button className="button primary" onClick={() => { setCopied(null); setInstallDialog('skin') }}>{t('skin.installThis')}</button>
-          <a className="button outline repo-button" href={selected.repo} target="_blank" rel="noreferrer"><GithubLogo size={17} /><span>{selected.repo.replace('https://', '')}</span></a>
-          <span className="detail-stars"><StarIcon size={16} /> {selected.starsSnapshot}</span>
-        </div>
 
         {!verified && <p className="notice">{t('skin.compatibilityNotice')}</p>}
         {selected.review?.preview === 'repository-card' && !(selected.marketScreenshots?.length) && <p className="notice">{t('skin.repositoryPreviewNotice')}</p>}
@@ -510,6 +556,7 @@ function InstallGroup({ title, prompt, desktopInput, command, commandGroups, cop
 function Site() {
   const { t } = useSitePreferences()
   const [catalog, setCatalog] = useState<{ skins?: Skin[]; error?: unknown }>({})
+  const [curves, setCurves] = useState<Record<string, { from: number; stars: number[] }>>({})
   const [mediaReady, setMediaReady] = useState(() => !hasGeneratedMediaBase())
 
   useEffect(() => {
@@ -541,6 +588,17 @@ function Site() {
       .catch(error => {
         if (!disposed && !controller.signal.aborted) setCatalog({ error })
       })
+    // Star curves only feed the detail chart. A failure leaves the chart out
+    // rather than blocking the page.
+    const curvesUrl = useLocalPreviewCatalog
+      ? `${import.meta.env.BASE_URL}star-curves.json`
+      : REMOTE_STAR_CURVES_URL
+    void fetch(curvesUrl, { cache: 'no-store', signal: controller.signal })
+      .then(response => response.ok ? response.json() : undefined)
+      .then(value => {
+        if (!disposed && value !== undefined) setCurves(parseStarCurves(value))
+      })
+      .catch(() => { /* the detail panel simply has no curve */ })
     return () => { disposed = true; controller.abort() }
   }, [])
 
@@ -555,7 +613,7 @@ function Site() {
     return <main className="empty-page">{t('catalog.error.generic')}</main>
   }
   if (catalog.skins === undefined) return <main className="empty-page">{t('catalog.loading')}</main>
-  return <App skins={catalog.skins} />
+  return <App skins={catalog.skins} curves={curves} />
 }
 
 function PreviewMedia({ skin, src, fallbackSources, alt, kind, loading }: { skin: Skin; src?: string; fallbackSources?: readonly string[]; alt: string; kind: 'list' | 'avatar' | 'gallery' | 'thumbnail' | 'recommendation' | 'card'; loading?: 'eager' | 'lazy' }) {

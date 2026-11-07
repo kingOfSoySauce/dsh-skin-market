@@ -119,6 +119,27 @@ try {
   previous = JSON.parse(await readFile(catalogPath, 'utf8'))
 } catch { /* first build */ }
 
+// The heat step records a fresh star reading into the catalog after the
+// registry was hydrated. A rebuild must not roll that back to an older
+// snapshot, or the card and the detail chart disagree for a day.
+if (previous?.skins !== undefined) {
+  const fresher = new Map()
+  for (const entry of Array.isArray(previous.skins) ? previous.skins : []) {
+    if (typeof entry?.id !== 'string') continue
+    const at = Date.parse(entry.starsUpdatedAt)
+    if (!Number.isFinite(at) || !Number.isInteger(entry.starsSnapshot)) continue
+    fresher.set(entry.id, { starsSnapshot: entry.starsSnapshot, starsUpdatedAt: entry.starsUpdatedAt, at })
+  }
+  for (const skin of skins) {
+    const candidate = fresher.get(skin.id)
+    if (candidate === undefined) continue
+    const own = Date.parse(skin.starsUpdatedAt)
+    if (Number.isFinite(own) && candidate.at <= own) continue
+    skin.starsSnapshot = candidate.starsSnapshot
+    skin.starsUpdatedAt = candidate.starsUpdatedAt
+  }
+}
+
 async function optionalJson(relativePath) {
   try {
     return JSON.parse(await readFile(join(root, relativePath), 'utf8'))

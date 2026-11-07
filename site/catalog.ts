@@ -11,6 +11,7 @@ interface CatalogResponse {
 type CatalogFetcher = (url: string, init: RequestInit) => Promise<CatalogResponse>
 
 export const REMOTE_CATALOG_URL = 'https://raw.githubusercontent.com/kingOfSoySauce/dsh-skin-market/main/data/catalog.json'
+export const REMOTE_STAR_CURVES_URL = 'https://raw.githubusercontent.com/kingOfSoySauce/dsh-skin-market/main/data/star-curves.json'
 
 export type CatalogLoadErrorCode = 'request' | 'invalidResponse' | 'unsupportedVersion' | 'missingSkins'
 

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type ComponentType, type CSSProperties, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
-import { SquaresFourIcon, UploadSimpleIcon, XIcon } from '@phosphor-icons/react'
+import { SquaresFourIcon, XIcon } from '@phosphor-icons/react'
 import { MarkGithubIcon, StarIcon } from '@primer/octicons-react'
 import * as primitiveExports from '@deepseek-ai/dsh-client-ui-primitives'
 import {
@@ -17,7 +17,7 @@ import { generatedMediaFor, generatedMediaManifestUrl, generatedMediaUrl, parseG
 import { useLazyMedia } from '../media-visibility.ts'
 import { browserCatalogCache, type CatalogCache } from './catalog-cache.ts'
 import { createFailureRepairPrompt, interceptNotice, isInterceptFailure, marketUpdateNotice } from './failure-help.ts'
-import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, createSubmissionPrompt, REGISTRY_REPOSITORY } from './submission.ts'
+import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, REGISTRY_REPOSITORY } from './submission.ts'
 import { probeClientSkinSelection, switchClientSkin, type ClientSkinExpectation, type ClientSkinRuntime, type ClientSkinSelectionStatus } from './index.ts'
 import { displayTitle, githubRepoLabel } from '../display-title.ts'
 import { localizedSkinDescription } from '../localized-copy.ts'
@@ -27,6 +27,8 @@ import { desktopInstallPlan } from '../desktop-install.ts'
 import type { DesktopActivationIntent, DesktopPluginPanel } from './desktop-plugin-panel.ts'
 import type { CatalogSkin, DshRuntime, InstalledClientPlugin, MarketHostKind, Operation, RuntimeSkin } from './types.ts'
 import type { ConfigurationOverrideBatchPlan } from '../configuration-override-types.ts'
+import { curveDayLabel, curveEntry, sparklineGeometry, type StarCurve } from '../star-curves.ts'
+import { loadStarCurves } from './star-curves-client.ts'
 import type { InstallCommandContext, InstallEnvironment } from '../install-command.ts'
 import { createTranslator, defaultTranslator, formatDateLabel, localizedSkinName, operationMessage, type MessageKey, type Translator } from './i18n.ts'
 
@@ -862,6 +864,57 @@ function MarketSearch({ value, onChange, className, t }: { value: string; onChan
   </div>
 }
 
+/** GitHub's star glyph, drawn at the end of the detail curve. */
+const SPARK_STAR_GLYPH = 'M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.816 6.375a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z'
+const SPARK_WIDTH = 224
+const SPARK_HEIGHT = 170
+const SPARK_LABEL_WIDTH = 34
+
+/**
+ * One line, no axes, full width under the header. The count sits at the line's
+ * end as real text, so the label never stretches with the chart.
+ */
+function SkinSpark({ values, from, language }: { values: number[] | undefined; from: number | undefined; language: string }) {
+  const VIEW_W = 1000
+  const VIEW_H = 64
+  const LABEL = 46
+  const geometry = useMemo(
+    () => values === undefined ? undefined : sparklineGeometry(values, VIEW_W - LABEL, VIEW_H),
+    [values],
+  )
+  const [hovered, setHovered] = useState<number | null>(null)
+  if (geometry === undefined || values === undefined) return null
+  const current = values[values.length - 1]
+  const active = hovered === null ? undefined : geometry.points[hovered]
+  const activeValue = active === undefined ? undefined : Math.round(active.value)
+  return <figure className={css.spark}>
+    <svg
+      viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
+      preserveAspectRatio="none"
+      role="img"
+      aria-label={`${current} stars`}
+      onMouseMove={event => {
+        const rect = event.currentTarget.getBoundingClientRect()
+        const x = ((event.clientX - rect.left) / rect.width) * VIEW_W
+        let best = 0
+        for (let index = 1; index < geometry.points.length; index += 1) {
+          if (Math.abs(geometry.points[index].x - x) < Math.abs(geometry.points[best].x - x)) best = index
+        }
+        setHovered(best)
+      }}
+      onMouseLeave={() => setHovered(null)}
+    >
+      <path className={css.sparkArea} d={`${geometry.d} L${geometry.end.x} ${VIEW_H} L${geometry.points[0].x} ${VIEW_H} Z`} />
+      <path className={css.sparkLine} d={geometry.d} vectorEffect="non-scaling-stroke" />
+    </svg>
+    <span className={css.sparkEnd}><StarIcon size={12} aria-hidden="true" />{current}</span>
+    {active !== undefined && from !== undefined && activeValue !== undefined && <span
+      className={css.sparkTip}
+      style={{ left: `${(active.x / VIEW_W) * 100}%`, top: `${(active.y / VIEW_H) * 100}%` }}
+    >{curveDayLabel(from, geometry.dayOf(active.ratio), language)} · {activeValue}</span>}
+  </figure>
+}
+
 export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime, catalogCache = browserCatalogCache, desktopPluginPanel }: SkinMarketSectionProps) {
   // Keep older host/test injection points usable when they echo an unknown key;
   // the fallback lives at the translator boundary, not in render branches.
@@ -914,9 +967,18 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const [restartCheckFinished, setRestartCheckFinished] = useState(false)
   const [showDetail, setShowDetail] = useState(false)
   const [browserOpen, setBrowserOpen] = useState(false)
+  // Curves are only needed while a detail panel is open. Load once per session
+  // and let a failure fall back to a panel without a chart.
+  const [starCurves, setStarCurves] = useState<Record<string, StarCurve>>({})
+  useEffect(() => {
+    if (!browserOpen) return
+    let active = true
+    void loadStarCurves().then(curves => {
+      if (active && Object.keys(curves).length > 0) setStarCurves(curves)
+    })
+    return () => { active = false }
+  }, [browserOpen])
   const [browserOrigin, setBrowserOrigin] = useState<'discover' | 'installed'>('discover')
-  const [showSubmission, setShowSubmission] = useState(false)
-  const [submissionCopied, setSubmissionCopied] = useState(false)
   const [showInstallOptions, setShowInstallOptions] = useState(false)
   const [installCopied, setInstallCopied] = useState<string | null>(null)
   const [openingPluginPanel, setOpeningPluginPanel] = useState(false)
@@ -2504,11 +2566,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   }
   const activateCard = (skinId: string) => activateSkin(skinId)
   const recommendations = selected?.recommendations.map(id => skins.find(skin => skin.id === id)).filter((skin): skin is CatalogSkin => skin !== undefined) ?? []
-  const submissionPrompt = createSubmissionPrompt(undefined, t)
-  const copySubmissionPrompt = async () => {
-    await copyTextToClipboard(submissionPrompt, t)
-    setSubmissionCopied(true)
-  }
   const copyInstallOption = async (key: string, content: string) => {
     if (selected === undefined) return
     await copyTextToClipboard(content, t)
@@ -2848,7 +2905,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
                 onClick={() => { void updateMarket() }}
               ><span className={css.marketUpdateLabel}>{marketUpdating || marketUpdateActive ? t('market.updating') : t('market.update')}</span></Button>}
               <Button className={css.homeGithubAction} variant="outline" size="sm" icon={<MarkGithubIcon size={15} aria-hidden="true" />} aria-label={t('market.githubRepository')} title={t('market.githubRepository')} onClick={() => window.open(REGISTRY_REPOSITORY, '_blank', 'noopener,noreferrer')}><span className={css.homeGithubLabel}>GitHub</span></Button>
-              <Button className={css.homeSubmitAction} variant="outline" size="sm" icon={<UploadSimpleIcon size={15} aria-hidden="true" />} onClick={() => { setShowSubmission(true); setSubmissionCopied(false) }}>{t('market.submitSkin')}</Button>
             </div>
           </div>
           {marketUpdate?.updateBlockedReason !== undefined && <p className={css.notice} role="status">{operationMessage({ message: marketUpdate.updateBlockedReason, messageKey: marketUpdate.updateBlockedReasonKey, messageParams: marketUpdate.updateBlockedReasonParams }, t)}</p>}
@@ -2952,10 +3008,11 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             <div className={css.skinAvatar}><PreviewMedia key={`${selected.id}:${getCatalogListScreenshot(selected) ?? 'missing'}:avatar`} skin={selected} src={getCatalogListScreenshot(selected)} alt="" kind="avatar" /></div>
             <div className={css.titleBlock}>
               <h2>{selectedName}</h2>
+              <a className={css.repoLine} href={selected.repo} target="_blank" rel="noreferrer"><MarkGithubIcon size={13} aria-hidden="true" /><span>{githubRepoLabel(selected.repo)}</span></a>
               {selectedDescription !== undefined && <p className={css.description} title={selectedDescription}>{displayTitle(selectedDescription)}</p>}
-              <p className={css.author}>{githubRepoLabel(selected.repo)}</p>
               <p className={css.version}>{t('common.version', { version: selected.install.version })}<span aria-hidden="true"> · </span>{compatibilityUnverified ? t('common.compatibilityPending') : t('common.compatibleWithDsh', { range: selected.compatibility.dsh })}{runtime?.version !== undefined && runtime.version !== null && <><span aria-hidden="true"> · </span>{t('common.currentDsh', { version: runtime.version })}</>}<StatusLabel active={state.activation === 'active'}>{statusLabel(state, t)}</StatusLabel></p>
             </div>
+            <SkinSpark values={curveEntry(starCurves, selected.repo)?.stars} from={curveEntry(starCurves, selected.repo)?.from} language={providedT.locale?.() ?? 'zh'} />
           </header>
 
           <div className={css.actionRow}>
@@ -2979,11 +3036,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
               {state.updateAvailable && !manualOnly && <Button variant={state.activation === 'active' && !state.pinned ? 'primary' : 'outline'} size="sm" icon={<IconRefreshOutline />} disabled={selectedBusy !== undefined || actionReason('update') !== null} title={actionReason('update') ?? undefined} onClick={() => void run('update')}>{t('common.updateAction')}</Button>}
               {hostKind === 'dsh' && state.installation === 'installed' && state.sourceMigration !== undefined && !manualOnly && <Button variant="outline" size="sm" disabled={selectedBusy !== undefined || actionReason('migrate') !== null} title={actionReason('migrate') ?? undefined} onClick={() => setConfirmMigration({ skin: selected, source: state.sourceMigration! })}>{state.sourceMigration.kind === 'local' ? t('common.replaceWithMarket') : t('common.useNpm')}</Button>}
               {state.installation !== 'missing' && <Button className={css.iconOnlyButton} variant="outline" size="sm" icon={<IconTrashOutline />} aria-label={t('common.uninstall')} title={actionReason('uninstall') ?? t('common.uninstall')} disabled={selectedBusy !== undefined || actionReason('uninstall') !== null} onClick={() => setConfirmUninstall(true)} />}
-              <span className={css.actionDivider} aria-hidden="true" />
-              <span className={css.repoMeta}>
-                <span className={css.stars} title={t('common.githubStarsSnapshot', { date: displayDate(selected.starsUpdatedAt, t) })}><StarIcon size={16} aria-hidden="true" /> {selected.githubStars}</span>
-                <a className={css.repoLink} href={selected.repo} target="_blank" rel="noreferrer" title={selected.repo}><MarkGithubIcon size={16} aria-hidden="true" /><span>{selected.repo.replace('https://', '')}</span></a>
-              </span>
           </div>
 
           {(selected.install.companions?.length ?? 0) > 0 && <p className={css.notice} role="note">{t('common.companionNotice')}</p>}
@@ -2996,7 +3048,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           {state.activation === 'unavailable' && state.error !== undefined && <div className={css.error} role="status">{operationMessage({ message: state.error, messageKey: state.errorKey, messageParams: state.errorParams }, t)}</div>}
 
           <div className={css.galleryGroup} data-paused={galleryPaused ? 'true' : 'false'} onMouseEnter={() => setCarouselPausedState(true)} onMouseLeave={() => setCarouselPausedState(false)} onFocusCapture={() => setCarouselPausedState(true)} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setCarouselPausedState(false) }}>
-            <div className={css.hero}>
+            <div className={css.headPanel}>
               <button className={`${css.heroOpen} dsh-skin-media-hover`} aria-label={`${t('common.fullscreenView')} ${t('common.skinScreenshot', { name: selected.name.zh, index: shotIndex + 1 })}`} onClick={() => setLightboxOpen(true)}>
                 <PreviewMedia t={t} key={`${selected.id}:${selectedScreenshots[shotIndex] ?? 'missing'}:hero`} skin={selected} src={selectedScreenshots[shotIndex]} alt={t('common.skinLargePreview', { name: selected.name.zh })} kind="hero" />
               </button>
@@ -3247,20 +3299,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
                     : `${restartTarget?.kind === 'market-update' ? t('common.marketUpdatedRestart') : ''}${t('common.saveBeforeRestart')}`}
         footer={<><Button variant="outline" size="sm" disabled={restarting} onClick={() => dismissRestartNotice()}>{manualDesktopRestart ? t('market.dismiss') : t('common.cancel')}</Button>{!manualDesktopRestart && <Button variant="primary" size="sm" disabled={restarting || restartInstallBlock !== null || (runningAgents === null && !restartCheckFinished) || (runningAgents ?? 0) > 0} onClick={() => void restartNow()}>{restarting ? t('common.restartingShort') : restartInstallBlock !== null ? t('common.installingSkin') : runningAgents === null && !restartCheckFinished ? t('common.checking') : runningAgents === null ? t('common.confirmNoTaskRestart') : runningAgents > 0 ? t('common.taskRunning') : t('common.confirmRestart')}</Button>}</>}
       />
-      <Modal
-        open={showSubmission}
-        onClose={() => setShowSubmission(false)}
-        title={t('common.submissionTitle')}
-        closeLabel={t('common.close')}
-        className={css.modalSurface}
-        description={t('common.submissionDescription')}
-        footer={<><Button variant="outline" size="sm" onClick={() => setShowSubmission(false)}>{t('common.close')}</Button><Button variant="primary" size="sm" icon={submissionCopied ? <IconCheckOutline /> : <IconCopyOutline />} onClick={() => void copySubmissionPrompt()}>{t('common.copyPrompt')}</Button></>}
-      >
-        <div className={css.submission}>
-          <textarea aria-label={t('common.agentPromptLabel')} readOnly value={submissionPrompt} rows={16} />
-          <small>{t('common.promptNotAuthorization')}</small>
-        </div>
-      </Modal>
     </section>
   )
 }

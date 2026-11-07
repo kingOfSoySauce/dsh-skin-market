@@ -67,7 +67,7 @@ describe('public catalog filters', () => {
 describe('public install panel', () => {
   it('shows aligned skin and market groups with one package and one common command each', async () => {
     render(<App skins={[{ ...skin, install: { ...skin.install, target: `github:example/skins#${commit}`, desktop: { mode: 'managed', registry: 'npm', packageName: '@example/skin', packageVersion: '1.0.0' } } }]} />)
-    fireEvent.click(screen.getByRole('button', { name: '需手动安装' }))
+    fireEvent.click(screen.getByRole('button', { name: '安装' }))
 
     const dialog = screen.getByRole('dialog', { name: '安装 测试皮肤' })
     expect(dialog.querySelector('.install-method-grid')?.getAttribute('data-single')).toBe('false')

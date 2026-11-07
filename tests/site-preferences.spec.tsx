@@ -222,7 +222,7 @@ describe('English standalone site rendering', () => {
     expect(screen.getByRole('button', { name: 'Test Skin interface preview' })).toBeTruthy()
     expect(screen.getByText('社区原文描述')).toBeTruthy()
 
-    fireEvent.click(screen.getByRole('button', { name: 'Manual install' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Install' }))
     expect(screen.getByRole('heading', { name: 'Install Test Skin' })).toBeTruthy()
     expect(screen.getByRole('dialog', { name: 'Install Test Skin' }).textContent).toContain(`github:example/skins#${commit}`)
   })
