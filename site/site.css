@@ -253,12 +253,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .avatar > img, .avatar > .preview-placeholder { display: block; width: 100%; height: 100%; object-fit: cover; }
 .skin-title { display: flex; min-width: 0; align-items: center; justify-content: space-between; gap: 26px; align-self: center; }
 .skin-title-copy { min-width: 0; }
-.skin-spark { position: relative; align-self: stretch; width: 224px; margin: 0; color: color-mix(in srgb, var(--primary) 62%, transparent); }
+.skin-spark { position: relative; align-self: stretch; width: 224px; margin: 0; color: var(--caption); }
 .skin-spark > svg { display: block; width: 224px; height: 100%; overflow: visible; cursor: crosshair; }
 .skin-spark-line { fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; }
-.skin-spark-fill-top { stop-color: var(--primary); stop-opacity: .30; }
-.skin-spark-fill-mid { stop-color: var(--primary); stop-opacity: .24; }
-.skin-spark-fill-end { stop-color: var(--primary); stop-opacity: 0; }
+.skin-spark-fill-top { stop-color: var(--caption); stop-opacity: .20; }
+.skin-spark-fill-mid { stop-color: var(--caption); stop-opacity: .15; }
+.skin-spark-fill-end { stop-color: var(--caption); stop-opacity: 0; }
 .skin-spark-end > svg { width: 12px; height: 12px; flex: none; }
 .skin-spark-end { position: absolute; display: inline-flex; align-items: center; gap: 4px; transform: translate(-6px, -50%); color: inherit; font-size: 11px; font-weight: 500; font-variant-numeric: tabular-nums; line-height: 16px; white-space: nowrap; }
 .skin-spark-end > svg { color: #d9a316; }
