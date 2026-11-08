@@ -1800,7 +1800,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     if (home === null || typeof ResizeObserver === 'undefined') return
     const updateSlots = () => {
       const width = home.clientWidth
-      setInstalledSlots(width < 560 ? 2 : width < 820 ? 3 : width < 1080 ? 4 : 5)
+      setInstalledSlots(width < 480 ? 1 : width < 560 ? 2 : width < 820 ? 3 : width < 1080 ? 4 : 5)
     }
     updateSlots()
     const observer = new ResizeObserver(updateSlots)
@@ -2748,10 +2748,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     const canMigrate = hostKind === 'dsh' && itemState.installation === 'installed' && itemState.sourceMigration !== undefined && !isManualOnly(skin)
     const pinActionAvailable = location === 'installed' && itemState.installation === 'installed'
       && itemState.activation !== 'switching' && (itemState.activation !== 'restart-required' || itemState.pinned === true)
+    const updateActionAvailable = itemState.installation === 'installed' && itemState.updateAvailable && !isManualOnly(skin) && itemState.activation !== 'unavailable'
+    const stopUnavailableActionAvailable = itemState.installation === 'installed' && itemState.activation === 'unavailable'
     const actionCount = cardMutation !== undefined || needsInstall
       ? 1
       : itemState.installation === 'installed'
-        ? Number(itemState.activation === 'inactive' || itemState.activation === 'active' || itemState.activation === 'unavailable') + Number(itemState.activation === 'unavailable') + Number(itemState.updateAvailable && !isManualOnly(skin)) + Number(canMigrate) + Number(pinActionAvailable)
+        ? Number(itemState.activation === 'inactive' || itemState.activation === 'active' || itemState.activation === 'unavailable') + Number(stopUnavailableActionAvailable) + Number(updateActionAvailable) + Number(pinActionAvailable)
         : 0
     const stateText = itemState.installation === 'broken'
       ? t('common.installError')
@@ -2766,9 +2768,15 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           : itemState.installation === 'installed'
             ? t('common.installed')
             : null
+    // The Installed section already says "installed"; only surface a state that
+    // adds information there (a pending update, active/pinned, restart, error).
+    const footerStateText = location === 'installed' && itemState.installation === 'installed' && itemState.activation === 'inactive'
+      ? updateActionAvailable ? t('common.updateAvailable') : null
+      : stateText
     const open = () => location === 'installed' ? openInstalledBrowser(skin.id) : openBrowser(skin.id, 'discover')
     const name = localizedSkinName(skin.name, t)
     const description = skinDescriptionLabel(skin, t)
+    const migrateLabel = itemState.sourceMigration?.kind === 'local' ? t('common.replaceWithMarket') : t('common.useNpm')
     return <article className={css.homeCard} data-active={itemState.activation === 'active' ? 'true' : undefined} data-actions={actionCount} key={`${location}:${skin.id}`}>
       <button type="button" className={`${css.homeCardOpen} dsh-skin-media-hover`} aria-current={itemState.activation === 'active' ? 'true' : undefined} aria-label={location === 'installed' ? t('common.installedCard', { name }) : t('common.interfacePreview', { name })} onClick={open}>
         <span className={css.homeCardMedia}><PreviewMedia t={t} skin={skin} src={getCatalogListScreenshot(skin)} fallbackSources={getCatalogScreenshotUrls(skin)} alt={t('common.interfacePreview', { name })} kind="recommendation" loading="lazy" /></span>
@@ -2778,18 +2786,20 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         </span>
       </button>
       <div className={css.homeCardFooter}>
-        <span className={css.homeCardRepo} title={githubRepoLabel(skin.repo)}>{githubRepoLabel(skin.repo)}</span>
-        {stateText !== null && <StatusLabel active={itemState.activation === 'active'}>{stateText}</StatusLabel>}
+        <div className={css.homeCardMeta}>
+          <span className={css.homeCardRepo} title={githubRepoLabel(skin.repo)}>{githubRepoLabel(skin.repo)}</span>
+          {footerStateText !== null && <StatusLabel active={itemState.activation === 'active'}>{footerStateText}</StatusLabel>}
+          {canMigrate && <button type="button" className={css.cardSourceAction} aria-label={migrateLabel} title={actionReason('migrate') ?? migrateLabel} disabled={actionReason('migrate') !== null} onClick={() => setConfirmMigration({ skin, source: itemState.sourceMigration! })}>{t('common.migrateCompact')}</button>}
+        </div>
         {actionCount > 0 && <div className={css.cardInlineActions} role="group" aria-label={`${name} ${t('common.actions')}`}>
           {cardMutation !== undefined ? <span className={css.cardActionProgress}><IconLoadingOutline />{t(mutationLabelKeys[cardMutation.kind])}</span> : <>
             {needsInstall && <Button className={css.cardAction} variant="outline" size="sm" disabled={openingPluginPanel || (isManualOnly(skin) ? officialDesktop && deferInstallAndUse : installAndUseReason !== null || officialDesktop && deferInstallAndUse)} title={isManualOnly(skin) ? officialDesktop ? t('common.installThisSkin') : t('common.copyInstallPrompt') : installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t('common.noOtherInstall') : deferInstallAndUse ? t('common.installAfterCurrent') : installRequiresRestart ? t('market.restartDesktopGuidance') : t('common.installAndUse'))} onClick={() => openCardInstall(skin)}>{isManualOnly(skin) ? hostKind === 'desktop' ? t('common.install') : t('common.manualInstall') : officialDesktop || deferInstallAndUse ? t('common.install') : t('common.installAndUse')}</Button>}
             {itemState.installation === 'installed' && itemState.activation === 'inactive' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('activate') !== null} title={actionReason('activate') ?? undefined} onClick={() => activateCard(skin.id)}>{t('common.use')}</Button>}
-            {itemState.installation === 'installed' && itemState.activation === 'unavailable' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('activate') !== null} title={actionReason('activate') ?? undefined} onClick={() => activateCard(skin.id)}>{t('common.useAgain')}</Button>}
-            {itemState.installation === 'installed' && itemState.activation === 'unavailable' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('deactivate') !== null} title={actionReason('deactivate') ?? undefined} onClick={() => { void runForSkin(skin.id, 'deactivate') }}>{t('common.deactivate')}</Button>}
+            {itemState.installation === 'installed' && itemState.activation === 'unavailable' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('activate') !== null} title={actionReason('activate') ?? t('common.useAgain')} onClick={() => activateCard(skin.id)}>{t('common.use')}</Button>}
+            {stopUnavailableActionAvailable && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('deactivate') !== null} title={actionReason('deactivate') ?? undefined} onClick={() => { void runForSkin(skin.id, 'deactivate') }}>{t('common.deactivate')}</Button>}
             {itemState.installation === 'installed' && itemState.activation === 'active' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('deactivate') !== null} title={actionReason('deactivate') ?? undefined} onClick={() => { void runForSkin(skin.id, 'deactivate') }}>{t('common.deactivate')}</Button>}
-            {pinActionAvailable && <Button className={css.cardAction} variant="outline" size="sm" aria-pressed={itemState.pinned === true} disabled={actionReason(itemState.pinned ? 'unpin' : 'pin') !== null} title={actionReason(itemState.pinned ? 'unpin' : 'pin') ?? undefined} onClick={() => { void runForSkin(skin.id, itemState.pinned ? 'unpin' : 'pin') }}>{itemState.pinned ? t('common.unpin') : t('common.pin')}</Button>}
-            {itemState.installation === 'installed' && itemState.updateAvailable && !isManualOnly(skin) && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('update') !== null} title={actionReason('update') ?? undefined} onClick={() => { void runForSkin(skin.id, 'update') }}>{t('common.updateAction')}</Button>}
-            {canMigrate && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('migrate') !== null} title={actionReason('migrate') ?? undefined} onClick={() => setConfirmMigration({ skin, source: itemState.sourceMigration! })}>{itemState.sourceMigration?.kind === 'local' ? t('common.replaceWithMarket') : t('common.useNpm')}</Button>}
+            {pinActionAvailable && <Button className={css.cardAction} variant="outline" size="sm" aria-pressed={itemState.pinned === true} disabled={actionReason(itemState.pinned ? 'unpin' : 'pin') !== null} title={actionReason(itemState.pinned ? 'unpin' : 'pin') ?? (itemState.pinned ? t('common.unpinDescription') : t('common.pinDescriptionActive'))} onClick={() => { void runForSkin(skin.id, itemState.pinned ? 'unpin' : 'pin') }}>{itemState.pinned ? t('common.unpin') : t('common.pinCompact')}</Button>}
+            {updateActionAvailable && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('update') !== null} title={actionReason('update') ?? undefined} onClick={() => { void runForSkin(skin.id, 'update') }}>{t('common.updateAction')}</Button>}
           </>}
         </div>}
       </div>

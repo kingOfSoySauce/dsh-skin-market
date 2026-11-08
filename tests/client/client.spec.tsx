@@ -2287,8 +2287,13 @@ describe('client market', () => {
     expect(await screen.findByRole('button', { name: '测试皮肤 已安装卡片' })).toBeTruthy()
     expect(screen.getByRole('button', { name: '测试皮肤 界面预览' })).toBeTruthy()
     expect(screen.getAllByRole('button', { name: '使用' })).toHaveLength(2)
-    expect(screen.getByRole('button', { name: '设为常驻' })).toBeTruthy()
+    expect(screen.getByRole('button', { name: '常驻' })).toBeTruthy()
     expect(screen.getAllByRole('button', { name: '更新' })).toHaveLength(2)
+    const installedArticle = screen.getByRole('button', { name: '测试皮肤 已安装卡片' }).closest('article')!
+    expect(within(installedArticle).queryByText('已安装')).toBeNull()
+    expect(within(installedArticle).getByText('可更新')).toBeTruthy()
+    const discoveryArticle = screen.getByRole('button', { name: '测试皮肤 界面预览' }).closest('article')!
+    expect(within(discoveryArticle).getByText('已安装')).toBeTruthy()
     await openSkinCard()
     const use = screen.getByRole('button', { name: '使用' })
     const pin = screen.getByRole('button', { name: '设为常驻' })
@@ -3275,7 +3280,7 @@ describe('client market', () => {
       render(<SkinMarketSection t={key => key} clientRuntime={{ setActive: vi.fn(), probeActive: () => 'active', probeSyncing: () => false }} />)
       expect((await screen.findAllByText('使用中', { exact: true })).length).toBeGreaterThan(0)
       expect(screen.queryByRole('button', { name: '使用' })).toBeNull()
-      expect(screen.getByRole('button', { name: '设为常驻' })).toBeTruthy()
+      expect(screen.getByRole('button', { name: '常驻' })).toBeTruthy()
     })
 
     it('waits for graph settlement and clears a real delayed-client reminder in the same tab', async () => {

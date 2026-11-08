@@ -149,14 +149,15 @@
 }
 .installedRow { display: grid; grid-template-columns: repeat(var(--installed-columns), minmax(0, 1fr)); gap: 20px; overflow: hidden; }
 .homeCard {
+  --market-card-hover: var(--dsw-alias-interactive-bg-hover);
   box-sizing: border-box;
   position: relative;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   min-width: 0;
   min-height: 0;
-  grid-template-columns: minmax(0, 1fr);
   cursor: pointer;
   padding: 0;
   text-align: left;
@@ -164,35 +165,41 @@
   border: 0.5px solid var(--dsw-alias-border-l2);
   border-radius: var(--dsw-radius-xl);
   overflow: hidden;
-  background: transparent;
+  background: var(--dsw-alias-bg-layer-1);
+  -webkit-backdrop-filter: var(--dsw-menu-backdrop-filter, none);
+  backdrop-filter: var(--dsw-menu-backdrop-filter, none);
   font: inherit;
   transition: border-color var(--ds-transition-duration) var(--ds-ease-in-out), background var(--ds-transition-duration) var(--ds-ease-in-out);
 }
-.homeCard:hover, .homeCard:focus-within { border-color: var(--dsw-alias-border-l1); }
+.homeCard:hover, .homeCard:focus-within { border-color: var(--dsw-alias-border-l1); background-image: linear-gradient(var(--market-card-hover), var(--market-card-hover)); }
 /* Cards own their surface instead of inheriting the host's ghost-button rules.
    Hover tokens may be translucent or absent in a different plugin entry point;
    paint them over the card surface without replacing its background color. */
 .homeCardOpen,
-.installedMoreCard { --market-card-hover: var(--dsw-alias-interactive-bg-hover); appearance: none; background: var(--dsw-alias-bg-layer-1); -webkit-backdrop-filter: var(--dsw-menu-backdrop-filter, none); backdrop-filter: var(--dsw-menu-backdrop-filter, none); }
-.homeCardOpen { display: flex; width: 100%; height: auto !important; min-width: 0; min-height: 0 !important; max-height: none !important; grid-area: 1 / 1; align-self: stretch; z-index: 0; flex-direction: column; align-items: stretch; padding: 0; color: inherit; border: 0; border-radius: inherit; outline: none; cursor: pointer; font: inherit; text-align: left; }
+.installedMoreCard { appearance: none; background: transparent; }
+.homeCardOpen { display: flex; width: 100%; height: auto !important; min-width: 0; min-height: 0 !important; max-height: none !important; flex: 1 1 auto; flex-direction: column; align-items: stretch; padding: 0; color: inherit; border: 0; border-radius: inherit; outline: none; cursor: pointer; font: inherit; text-align: left; }
 .homeCardOpen:hover, .homeCardOpen:focus, .homeCardOpen:focus-visible, .homeCardOpen:active,
-.installedMoreCard:hover, .installedMoreCard:focus-visible, .installedMoreCard:active { outline: none; background-image: linear-gradient(var(--market-card-hover), var(--market-card-hover)); }
-.homeCard[data-active="true"] .homeCardOpen { background-color: color-mix(in srgb, var(--dsw-alias-state-success-primary) 4%, var(--dsw-alias-bg-layer-1)); }
+.installedMoreCard:hover, .installedMoreCard:focus-visible, .installedMoreCard:active { outline: none; }
+.homeCard[data-active="true"] { background-color: color-mix(in srgb, var(--dsw-alias-state-success-primary) 4%, var(--dsw-alias-bg-layer-1)); }
 .homeCardMedia { display: block; width: 100%; aspect-ratio: 16 / 9; flex: none; overflow: hidden; background: var(--dsw-alias-bg-layer-2); }
 .homeCardMedia > img,
 .homeCardMedia > .previewPlaceholder { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.homeCardCopy { box-sizing: border-box; display: flex; width: 100%; min-width: 0; flex: 1; flex-direction: column; justify-content: flex-start; gap: 6px; padding: 12px 14px 44px; }
+.homeCardCopy { box-sizing: border-box; display: flex; width: 100%; min-width: 0; flex: 1; flex-direction: column; justify-content: flex-start; gap: 6px; padding: 12px 14px 0; }
 .homeCardTitleRow { display: flex; min-width: 0; align-items: flex-start; justify-content: space-between; gap: 8px; }
 .homeCardTitleRow > strong { display: -webkit-box; min-width: 0; flex: 1; overflow: hidden; font-size: 13px; font-weight: 550; line-height: 19px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
 .homeCardDescription { display: -webkit-box; overflow: hidden; color: var(--dsw-alias-label-secondary); font-size: 11px; line-height: 17px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
-.homeCardFooter { position: absolute; z-index: 1; right: 0; bottom: 0; left: 0; display: flex; min-width: 0; min-height: 24px; align-items: center; gap: 8px; padding: 0 6px 10px 12px; color: var(--dsw-alias-label-caption); font-size: 11px; line-height: 17px; }
+.homeCardFooter { display: flex; min-width: 0; flex-direction: column; gap: 8px; padding: 10px 14px 12px; color: var(--dsw-alias-label-caption); font-size: 11px; line-height: 17px; cursor: default; }
+.homeCardMeta { display: flex; min-width: 0; align-items: center; gap: 8px; }
 .homeCardRepo { min-width: 0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cardSourceAction { flex: none; padding: 0; color: inherit; border: 0; background: transparent; font: inherit; line-height: inherit; white-space: nowrap; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.cardSourceAction:hover, .cardSourceAction:focus-visible { color: var(--dsw-alias-label-primary); }
+.cardSourceAction:disabled { color: var(--dsw-alias-label-dimmed); cursor: default; }
 .feedMeta { display: inline-flex; flex: none; align-items: center; gap: 4px; white-space: nowrap; }
-.cardInlineActions { display: inline-flex; min-width: 0; max-width: 100%; align-items: center; gap: 4px; flex: 0 1 auto; flex-wrap: wrap; justify-content: flex-start; }
-.cardAction { min-height: 24px; height: 24px; padding-inline: 8px; border-radius: var(--dsw-radius-sm); font-size: 11px; line-height: 16px; flex: none; }
+.cardInlineActions { display: flex; width: 100%; min-width: 0; max-width: 100%; align-items: center; gap: 4px; flex: none; flex-wrap: nowrap; justify-content: flex-end; }
+.cardAction { min-height: 24px; height: 24px; padding-inline: 6px; border-radius: var(--dsw-radius-sm); font-size: 11px; line-height: 16px; white-space: nowrap; flex: none; }
 .cardActionProgress { display: inline-flex; min-height: 24px; align-items: center; gap: 4px; color: var(--dsw-alias-label-caption); font-size: 11px; line-height: 17px; }
 .cardActionProgress svg { width: 13px; height: 13px; animation: spin 1s linear infinite; }
-.installedMoreCard { display: flex; min-height: 0; align-items: center; justify-content: center; gap: 9px; color: var(--dsw-alias-label-secondary); text-align: center; }
+.installedMoreCard { display: flex; min-height: 0; flex-direction: row; align-items: center; justify-content: center; gap: 9px; color: var(--dsw-alias-label-secondary); text-align: center; }
 .installedMoreCard strong { font-size: 13px; font-weight: 550; line-height: 19px; }
 .installedSkeletonCard { display: grid; overflow: hidden; border: 0.5px solid var(--dsw-alias-border-l2); border-radius: var(--dsw-radius-xl); background: var(--dsw-alias-bg-layer-1); }
 .installedSkeletonCard > span:first-child { display: block; width: 100%; aspect-ratio: 16 / 9; }
@@ -373,7 +380,7 @@
 .cardStars { display: inline-flex; flex: none; align-items: center; gap: 3px; white-space: nowrap; }
 
 .statusLabel { display: inline-flex; min-width: 0; align-items: center; color: var(--dsw-alias-label-tertiary, var(--dsw-alias-label-secondary)); font-size: 11px; font-weight: 400; line-height: 17px; white-space: nowrap; }
-.homeCardFooter .statusLabel { max-width: 42%; overflow: hidden; text-overflow: ellipsis; }
+.homeCardFooter .statusLabel { max-width: 55%; overflow: hidden; text-overflow: ellipsis; }
 .statusLabel[data-active="true"] { color: var(--dsw-alias-state-success-primary); }
 
 .listSkeleton { display: grid; gap: 4px; }
@@ -611,8 +618,8 @@
   .homeContent { gap: 24px; padding: 20px 16px 30px; }
   .installedRow { gap: 16px; }
   .discoveryGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-  .homeCardCopy { padding: 9px 12px 44px; }
-  .homeCardFooter { gap: 6px; padding-right: 6px; padding-left: 12px; }
+  .homeCardCopy { padding: 9px 12px 0; }
+  .homeCardFooter { gap: 6px; padding: 8px 12px 10px; }
   .browserModal { width: 100vw; height: 100vh; max-width: 100vw; max-height: 100vh; border-radius: 0; }
   .browser { display: block; background: var(--dsw-alias-bg-layer-2); backdrop-filter: none; }
   .browserPanel { display: block; width: 100%; height: 100%; border: 0; border-radius: 0; box-shadow: none; }
