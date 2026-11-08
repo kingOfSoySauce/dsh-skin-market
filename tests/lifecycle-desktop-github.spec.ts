@@ -28,13 +28,13 @@ async function finished(operation: Operation): Promise<Operation> {
   return operation
 }
 
-function fixture(subpath?: string) {
+function fixture(subpath?: string, options: { manual?: boolean; desktopReason?: string } = {}) {
   const base = structuredClone(loadCatalog().skins[0]!)
   const commit = 'a'.repeat(40)
   const item: SkinEntry = { ...base, id: 'github-test', package: 'dsh-github-test', rowId: 'github-test', repo: 'https://github.com/Fixture/Skin', subpath,
     compatibility: { dsh: '*', platform: ['web'] },
-    review: { compatibility: 'verified', preview: 'verified', installation: 'verified' },
-    install: { target: `github:Fixture/Skin#${commit}${subpath === undefined ? '' : `&path:/${subpath}`}`, commit, version: '1.0.0', desktop: { mode: 'manual-only', reason: 'npm-package-not-found' } },
+    review: { compatibility: 'verified', preview: 'verified', installation: options.manual === true ? 'manual-only' : 'verified' },
+    install: { target: `github:Fixture/Skin#${commit}${subpath === undefined ? '' : `&path:/${subpath}`}`, commit, version: '1.0.0', desktop: { mode: 'manual-only', reason: options.desktopReason ?? 'npm-package-not-found' } },
   }
   const directory = mkdtempSync(join(tmpdir(), 'dsh-desktop-github-lifecycle-'))
   directories.push(directory)
@@ -93,6 +93,18 @@ describe('official Desktop pinned GitHub installation', () => {
     expect(readMarketState(f.directory)).toMatchObject({ activeSkinId: null, disabledSkinIds: [f.item.id] })
     expect(f.lifecycle.states()[0]).toMatchObject({ installation: 'installed', installedVersion: '1.0.0', updateAvailable: false })
     expect(f.manager.setBundleEnabled).not.toHaveBeenCalledWith(f.item.package, true)
+  })
+
+  it('installs an unreviewed npm-fallback GitHub source through the official manager', async () => {
+    const f = fixture(undefined, { manual: true })
+    expect(await finished(f.lifecycle.begin('install', f.item.id))).toMatchObject({ phase: 'done' })
+    expect(f.manager.installBundle).toHaveBeenCalledExactlyOnceWith(f.item.install.target, { enabled: false, saveExact: true, requestId: expect.any(String) })
+  })
+
+  it('keeps an explicitly manual Desktop source blocked', () => {
+    const f = fixture(undefined, { manual: true, desktopReason: '当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。' })
+    expect(() => f.lifecycle.begin('install', f.item.id)).toThrow('Desktop 当前不支持该皮肤的一键安装')
+    expect(f.manager.installBundle).not.toHaveBeenCalled()
   })
 
   it('recognizes an existing verified GitHub artifact without reinstalling', async () => {

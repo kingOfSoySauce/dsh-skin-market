@@ -2099,6 +2099,46 @@ describe('client market', () => {
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/install'))).toBe(false)
   })
 
+  it('warns before installing an unreviewed Desktop GitHub fallback', async () => {
+    const manual: CatalogSkin = {
+      ...skin,
+      repo: 'https://github.com/a/b',
+      install: { target: `github:a/b#${'a'.repeat(40)}`, commit: 'a'.repeat(40), version: '1.0.0', desktop: { mode: 'manual-only', reason: 'npm-package-not-found' } },
+      review: { compatibility: 'verified', preview: 'verified', installation: 'manual-only' },
+      health: {
+        status: 'improvements' as const,
+        checks: { readmeScreenshots: 'pass' as const, compatibility: 'pass' as const, installation: 'improve' as const },
+        suggestions: [],
+        scan: {
+          commit: 'a'.repeat(40), packageVersion: '1.0.0', scannerVersion: 'static-v2', mode: 'static' as const,
+          result: 'unknown' as const, checkedAt: '2026-11-08T00:00:00.000Z',
+          findings: [{ code: 'client-source-unavailable', message: '无法读取固定版本的 client 入口，静态扫描结果未知。' }],
+        },
+      },
+    }
+    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [manual] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'desktop', management: officialManagement, runtime: dshRuntime, skins: [] }) }
+      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'desktop-warned-install' }) }
+      if (url.endsWith('/operations/desktop-warned-install')) return { ok: true, json: async () => ({ id: 'desktop-warned-install', kind: 'install', skinId: manual.id, phase: 'done' }) }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'desktop-warned-activate' }) }
+      if (url.endsWith('/operations/desktop-warned-activate')) return { ok: true, json: async () => ({ id: 'desktop-warned-activate', kind: 'activate', skinId: manual.id, phase: 'done' }) }
+      return { ok: true, json: async () => ({}) }
+    })
+    vi.stubGlobal('fetch', fetchMock)
+    render(<SkinMarketSection t={key => key} />)
+
+    await openSkinCard()
+    fireEvent.click(within(screen.getByRole('main', { name: '皮肤详情内容' })).getByRole('button', { name: '安装' }))
+    const dialog = await screen.findByRole('dialog', { name: '该皮肤未通过安装前核验' })
+    expect(dialog.textContent).toContain('固定版本的仓库没有提交可读取的客户端入口')
+    expect(dialog.textContent).toContain(manual.install.target)
+    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/install'))).toBe(false)
+
+    fireEvent.click(within(dialog).getByRole('button', { name: '仍然安装' }))
+    await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/install') && init?.method === 'POST')).toBe(true))
+  })
+
   it('installs a reviewed GitHub Desktop skin without requiring an npm publication', async () => {
     const github: CatalogSkin = {
       ...managedDesktopSkin,

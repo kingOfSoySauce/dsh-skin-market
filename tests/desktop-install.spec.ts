@@ -4,7 +4,7 @@ import { join } from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
 import { stringify } from 'yaml'
 import { loadCatalog } from '../src/catalog.ts'
-import { desktopGithubInstallPlan, desktopInstallPlan } from '../src/desktop-install.ts'
+import { desktopGithubInstallPlan, desktopInstallationWarning, desktopInstallPlan } from '../src/desktop-install.ts'
 import { atomicWriteJson, atomicWriteText, compareInstalledArtifact, packageDir, reviewedInstalledSpecMatches, snapshotInstalledArtifact, validateDesktopArtifact } from '../src/profile.ts'
 import type { SkinEntry } from '../src/types.ts'
 
@@ -32,6 +32,28 @@ describe('official Desktop install planning', () => {
     item.install.desktop = { mode: 'managed', registry: 'npm', packageName: item.package, packageVersion: item.install.version }
     expect(desktopInstallPlan(item, true)).toEqual({ kind: 'npm', target: '@fixture/skin@1.0.0' })
     expect(desktopGithubInstallPlan(item)).toEqual({ kind: 'github', target: item.install.target })
+  })
+
+  it('allows an unreviewed npm fallback with a warning and keeps curator prose manual', () => {
+    const item = skin()
+    item.review!.installation = 'manual-only'
+    expect(desktopInstallPlan(item, true).kind).toBe('manual')
+    expect(desktopInstallPlan(item, true, true)).toEqual({ kind: 'github', target: item.install.target })
+    expect(desktopInstallationWarning(item, true)).toBe('GitHub 安装来源尚未通过市场核验')
+    item.install.desktop = { mode: 'manual-only', reason: '当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。' }
+    expect(desktopInstallPlan(item, true, true).kind).toBe('manual')
+    expect(desktopInstallationWarning(item, true)).toBeUndefined()
+  })
+
+  it('allows publication-hook fallbacks but keeps install-hook and structural blockers manual', () => {
+    const item = skin()
+    item.review!.installation = 'manual-only'
+    item.install.desktop = { mode: 'manual-only', reason: 'npm-lifecycle-scripts:prepack,prepublish' }
+    expect(desktopInstallPlan(item, true, true).kind).toBe('manual')
+    item.install.desktop = { mode: 'manual-only', reason: 'npm-lifecycle-scripts:prepack,prepublishOnly' }
+    expect(desktopInstallPlan(item, true, true).kind).toBe('github')
+    item.install.companions = [{ package: 'companion', target: item.install.target, version: '1.0.0', commit: item.install.commit, rowId: 'companion' }]
+    expect(desktopInstallPlan(item, true, true).kind).toBe('manual')
   })
 
   it.each(['unreviewed', 'companion', 'allowBuild', 'mutable', 'wrong repo', 'wrong path', 'traversal'] as const)('keeps %s sources manual', reason => {

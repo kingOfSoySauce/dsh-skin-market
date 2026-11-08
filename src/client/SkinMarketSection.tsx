@@ -25,7 +25,7 @@ import { displayTitle, githubRepoLabel } from '../display-title.ts'
 import { localizedSkinDescription } from '../localized-copy.ts'
 import { assessCompatibility, compatibilityContext as skinCompatibilityContext, type CompatibilityAssessment } from '../compatibility.ts'
 import { matchesCatalogSearch } from '../catalog-search.ts'
-import { desktopInstallPlan } from '../desktop-install.ts'
+import { desktopInstallPlan, desktopInstallationWarning } from '../desktop-install.ts'
 import { preferredInstallTarget } from '../install-source.ts'
 import { recoveryRoute } from './install-recovery.ts'
 import type { DesktopActivationIntent, DesktopPluginPanel, ManualRecovery } from './desktop-plugin-panel.ts'
@@ -771,7 +771,11 @@ function installationUnverifiedReason(skin: CatalogSkin, t: Translator = default
 }
 
 /** The reviewed source the install path will actually try. */
-function installationTargetLabel(skin: CatalogSkin): string {
+function installationTargetLabel(skin: CatalogSkin, hostKind: MarketHostKind, officialDesktop: boolean): string {
+  if (hostKind === 'desktop') {
+    const plan = desktopInstallPlan(skin, officialDesktop, true)
+    if (plan.kind !== 'manual') return plan.target
+  }
   try { return preferredInstallTarget(skin) } catch { return skin.install.target }
 }
 
@@ -1691,7 +1695,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
 
   const pinnedRecoverySpec = useCallback((skin: CatalogSkin) => {
     if (hostKind === 'desktop') {
-      const plan = desktopInstallPlan(skin, officialDesktop)
+      const plan = desktopInstallPlan(skin, officialDesktop, true)
       if (plan.kind !== 'manual') return plan.target
     }
     return preferredInstallTarget(skin)
@@ -1963,13 +1967,14 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const shotCount = selectedScreenshots.length
   const state = selected === undefined ? null : runtimeFor(states, selected.id)
   const compatibilityUnverified = selected?.review?.compatibility === 'unverified'
-  // Catalog review is a warning on Web, not a capability gate. Desktop still
-  // uses its host-specific install plan because some sources cannot be managed.
+  // Catalog review is a warning on Web and official Desktop; the host-specific
+  // plan still keeps structurally impossible or explicitly manual sources manual.
   const isManualOnly = (skin: CatalogSkin): boolean => hostKind === 'desktop'
-    ? desktopInstallPlan(skin, officialDesktop).kind === 'manual'
+    ? desktopInstallPlan(skin, officialDesktop, true).kind === 'manual'
     : false
-  const isInstallationUnverified = (skin: CatalogSkin): boolean => hostKind === 'dsh'
-    && skin.review?.installation === 'manual-only'
+  const isInstallationUnverified = (skin: CatalogSkin): boolean => hostKind === 'desktop'
+    ? desktopInstallationWarning(skin, officialDesktop) !== undefined
+    : hostKind === 'dsh' && skin.review?.installation === 'manual-only'
   const manualOnly = selected !== undefined && isManualOnly(selected)
   const installationUnverified = selected !== undefined && isInstallationUnverified(selected)
   const selectedDesktopPlan = selected === undefined ? undefined : desktopInstallPlan(selected, officialDesktop)
@@ -2299,8 +2304,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       }
       // A catalog review gap is acknowledged once per attempt. The operation
       // still runs through the normal prefetch, validation and rollback path.
-      if (starting && hostKind === 'dsh' && options.installationAcknowledged !== true
-        && (kind === 'install' || kind === 'update') && target.review?.installation === 'manual-only') {
+      const unverified = hostKind === 'desktop'
+        ? desktopInstallationWarning(target, officialDesktop) !== undefined
+        : target.review?.installation === 'manual-only'
+      if (starting && (hostKind === 'dsh' || hostKind === 'desktop' && officialDesktop)
+        && options.installationAcknowledged !== true
+        && (kind === 'install' || kind === 'update') && unverified) {
         setUnverifiedInstall({ skin: target, kind, options })
         return false
       }
@@ -3085,7 +3094,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     ? t('common.installationUnverifiedUpdateDescription', { reason: installationUnverifiedReason(unverifiedInstall.skin, t) })
     : t('common.installationUnverifiedDescription', {
       reason: installationUnverifiedReason(unverifiedInstall.skin, t),
-      target: installationTargetLabel(unverifiedInstall.skin),
+      target: installationTargetLabel(unverifiedInstall.skin, hostKind, officialDesktop),
     })
   const selectedBusy = selected === undefined ? undefined : liveOperationFor(operations, selected.id)
   const selectedInstallAndUsePending = selected !== undefined && continuingInstallActivation.current.has(selected.id)

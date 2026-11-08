@@ -1607,14 +1607,15 @@ export class SkinLifecycle {
     if (artifactContext !== undefined && kind !== 'activate' && kind !== 'pin') throw new Error('安装构件确认仅适用于使用或常驻操作')
     if (kind === 'install' || kind === 'update' || kind === 'migrate') {
       if (this.hostKind === 'desktop') {
-        const plan = desktopInstallPlan(skin, this.management !== undefined)
+        const plan = desktopInstallPlan(skin, this.management !== undefined, true)
         if (plan.kind === 'manual') throw new Error(`Desktop 当前不支持该皮肤的一键安装（${plan.reason}），请使用官方添加插件面板`)
       }
-      // Web does not treat the catalog review as an install capability. An
-      // unreadable client source is a verification gap, not proof that the
-      // pinned target cannot install; the prefetch and validation below still
-      // reject a source that does not materialize the reviewed package. The
-      // client asks for consent before starting these operations.
+      // The market hosts do not treat the catalog review as an install
+      // capability. An unreadable client source is a verification gap, not
+      // proof that the pinned target cannot install; the host-specific
+      // validation below still rejects a source that does not materialize the
+      // reviewed package. The client asks for consent before starting these
+      // operations.
     }
     if (kind === 'migrate') this.assertNpmMigration(skin, sourceContext)
     if (this.liveOperations().some(operation => operation.skinId === skinId)) {
@@ -2213,11 +2214,11 @@ export class SkinLifecycle {
     if (/^github:/i.test(current) || /^(?:git\+)?(?:https?|git):\/\/github\.com\//i.test(current)
       || /^https:\/\/codeload\.github\.com\//i.test(current) || /^(?:ssh:\/\/)?git@github\.com[:/]/i.test(current)) {
       if (!githubArtifactSourceMatches(skin, current)) throw new Error('当前 GitHub 仓库或子目录与市场来源不同，无法自动换源；请按原安装方式更新')
-      const plan = desktopGithubInstallPlan(skin)
+      const plan = desktopGithubInstallPlan(skin, true)
       if (this.management === undefined || plan.kind !== 'github') throw new Error(`当前 GitHub 来源无法自动更新；${plan.kind === 'manual' ? plan.reason : '此宿主不支持 GitHub 安装'}，请按原安装方式更新`)
       return plan.target
     }
-    const plan = desktopInstallPlan(skin, this.management !== undefined)
+    const plan = desktopInstallPlan(skin, this.management !== undefined, true)
     const npm = current.startsWith(`npm:${skin.package}@`) ? current.slice(`npm:${skin.package}@`.length)
       : current.startsWith(`${skin.package}@`) ? current.slice(`${skin.package}@`.length) : current
     if (plan.kind === 'npm' && (isVersionRange(npm) && npm !== 'unverified' || /^[A-Za-z][A-Za-z0-9._-]*$/.test(npm))) return plan.target
@@ -2232,7 +2233,7 @@ export class SkinLifecycle {
       // published npm alternative. Only the official transaction accepts Git.
       const selectedTarget = target ?? (current === undefined ? undefined : this.desktopUpdateTarget(skin))
       const githubTarget = selectedTarget === skin.install.target
-      const plan = githubTarget && this.management !== undefined ? desktopGithubInstallPlan(skin) : desktopInstallPlan(skin, this.management !== undefined)
+      const plan = githubTarget && this.management !== undefined ? desktopGithubInstallPlan(skin, true) : desktopInstallPlan(skin, this.management !== undefined, true)
       if (plan.kind === 'manual') throw new Error(`Desktop 当前不支持该皮肤的一键安装（${plan.reason}），请使用官方添加插件面板`)
       if (selectedTarget !== undefined && plan.target !== selectedTarget) throw new Error('Desktop 安装目标与已核验来源不一致')
       // The native transaction materializes packages before we can inspect
