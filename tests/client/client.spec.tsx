@@ -1093,6 +1093,31 @@ describe('client market', () => {
     skinStyle.remove()
   })
 
+  it('keeps the market dialog sizing rule owned and restores it if a host prunes it', async () => {
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runtime: dshRuntime, skins: [] }) }
+      return { ok: true, json: async () => ({}) }
+    }))
+    const view = render(<SkinMarketSection t={key => key} />)
+    const style = document.head.querySelector<HTMLStyleElement>('style[data-dsh-skin-market-wide]')
+    expect(style).toBeTruthy()
+    // An untagged rule gets claimed by a skin on older hosts; the owner makes
+    // the rule part of the market so a skin's prune cannot take it away.
+    expect(style!.dataset.plugin).toBe('dsh-skin-market')
+    const orderSkin = document.createElement('style')
+    orderSkin.dataset.plugin = 'late-skin'
+    document.head.append(orderSkin)
+    restoreMarketStyleOrder(document)
+    expect(document.head.lastElementChild).toBe(style)
+    orderSkin.remove()
+
+    style!.remove()
+    await waitFor(() => expect(style!.isConnected).toBe(true))
+    view.unmount()
+    expect(document.head.querySelector('style[data-dsh-skin-market-wide]')).toBeNull()
+  })
+
   it('hot-disables and re-enables an existing client skin entry', async () => {
     const update = vi.fn(async () => undefined)
     const runtime = createClientSkinRuntime({ entries: () => [{ options: { name: 'skin-package' }, update }] })

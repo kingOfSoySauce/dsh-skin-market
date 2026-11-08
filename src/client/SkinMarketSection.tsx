@@ -642,6 +642,7 @@ export async function waitForRestartDocument(input: {
 export function restoreMarketStyleOrder(root: ParentNode = document, marker = css.segmented): void {
   for (const style of root.querySelectorAll<HTMLStyleElement>('style')) {
     const ownsMarketCss = style.dataset.plugin === 'dsh-skin-market'
+      || style.dataset.dshSkinMarketWide === 'true'
       || style.textContent?.includes(`.${marker}`) === true
     if (ownsMarketCss) style.parentNode?.appendChild(style)
   }
@@ -1935,9 +1936,19 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   useEffect(() => {
     const style = document.createElement('style')
     style.dataset.dshSkinMarketWide = 'true'
+    // Older hosts claim every untagged <style> for whichever plugin factory
+    // runs next. Without this owner, enabling a skin adopted the market's
+    // sizing rule and disabling that skin removed it with the skin's styles.
+    style.dataset.plugin = 'dsh-skin-market'
     style.textContent = '@media (min-width: 960px){[role="dialog"]:has([data-dsh-skin-market]){width:min(1280px,calc(100vw - 48px));height:min(860px,calc(100vh - 48px))}}'
     document.head.appendChild(style)
-    return () => style.remove()
+    // Keep the rule mounted even if a host or another plugin still removes the
+    // node; the market stays open, so its dialog must keep its sizing.
+    const observer = typeof MutationObserver === 'undefined' ? null : new MutationObserver(() => {
+      if (!style.isConnected) document.head.appendChild(style)
+    })
+    observer?.observe(document.head, { childList: true })
+    return () => { observer?.disconnect(); style.remove() }
   }, [])
   const selected = skins.find(skin => skin.id === selectedId) ?? skins[0]
   const selectedScreenshots = selected === undefined ? [] : getCatalogScreenshotUrls(selected)
