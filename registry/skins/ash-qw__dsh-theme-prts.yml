@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:ash-qw/dsh-theme-prts#00983f51e02bfd8362587498292037f705fc6f1d
-  version: 2.7.2
-  commit: 00983f51e02bfd8362587498292037f705fc6f1d
+  target: github:ash-qw/dsh-theme-prts#51332ec2bf795764bddc9d177a20c6c7074d9efe
+  version: 3.0.0
+  commit: 51332ec2bf795764bddc9d177a20c6c7074d9efe
   desktop:
     mode: manual-only
     reason: npm-lifecycle-scripts:prepublishOnly
@@ -46,19 +46,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 00983f51e02bfd8362587498292037f705fc6f1d
-    packageVersion: 2.7.2
+    commit: 51332ec2bf795764bddc9d177a20c6c7074d9efe
+    packageVersion: 3.0.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-07T05:33:49.988Z
+    checkedAt: 2026-11-08T00:17:42.679Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 1090
-starsSnapshot: 15
-releaseUpdatedAt: 2026-11-07T05:33:51.287Z
-metadataUpdatedAt: 2026-11-07T05:33:51.287Z
-starsUpdatedAt: 2026-11-07T05:33:51.287Z
-updatedAt: 2026-11-07T05:33:51.287Z
+starsSnapshot: 16
+releaseUpdatedAt: 2026-11-08T00:17:43.373Z
+metadataUpdatedAt: 2026-11-08T00:17:43.373Z
+starsUpdatedAt: 2026-11-08T00:17:43.373Z
+updatedAt: 2026-11-08T00:17:43.373Z

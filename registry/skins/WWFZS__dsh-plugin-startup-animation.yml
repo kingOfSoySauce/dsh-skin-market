@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:WWFZS/dsh-plugin-startup-animation#28bb147e0eec311f9c6dc5812f256697b4900c21
+  target: github:WWFZS/dsh-plugin-startup-animation#941dc642583269636befe92a2838519e84be7b82
   version: 1.31.1
-  commit: 28bb147e0eec311f9c6dc5812f256697b4900c21
+  commit: 941dc642583269636befe92a2838519e84be7b82
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
@@ -44,19 +44,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 28bb147e0eec311f9c6dc5812f256697b4900c21
+    commit: 941dc642583269636befe92a2838519e84be7b82
     packageVersion: 1.31.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-07T05:33:52.952Z
+    checkedAt: 2026-11-08T00:17:44.047Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 5
-releaseUpdatedAt: 2026-11-07T05:33:53.971Z
-metadataUpdatedAt: 2026-11-07T05:33:53.971Z
+releaseUpdatedAt: 2026-11-08T00:17:44.726Z
+metadataUpdatedAt: 2026-11-08T00:17:44.726Z
 starsUpdatedAt: 2026-11-05T00:23:39.587Z
-updatedAt: 2026-11-07T05:33:53.971Z
+updatedAt: 2026-11-08T00:17:44.726Z

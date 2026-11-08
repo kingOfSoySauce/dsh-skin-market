@@ -17,18 +17,12 @@ tags:
 modes:
   - dark
 install:
-  target: github:ymh0000123/dsh-theme-endfield#32bb43317ae9f35e47cdabae34ba1f2ad7ddfbc2
-  version: 1.2.4
-  commit: 32bb43317ae9f35e47cdabae34ba1f2ad7ddfbc2
+  target: github:ymh0000123/dsh-theme-endfield#903f5fb59b77ca158f6e35e417bd23198d174057
+  version: 1.2.5
+  commit: 903f5fb59b77ca158f6e35e417bd23198d174057
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  npm:
-    name: dsh-theme-endfield
-    version: 1.2.4
-    integrity: sha512-YQN9kdST6BtjFI6b/Jn0d3mBz0SbJ55HjHPfUBx1UL8ebrc5JFWCeWQhNFtIg8aFkHs3kc3Xw3iiuxqIREwVJQ==
-    repository: https://github.com/ymh0000123/dsh-theme-endfield
-    gitHead: 32bb43317ae9f35e47cdabae34ba1f2ad7ddfbc2
 compatibility:
   dsh: unverified
   platform:
@@ -56,19 +50,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 32bb43317ae9f35e47cdabae34ba1f2ad7ddfbc2
-    packageVersion: 1.2.4
+    commit: 903f5fb59b77ca158f6e35e417bd23198d174057
+    packageVersion: 1.2.5
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-07T05:33:43.793Z
+    checkedAt: 2026-11-08T00:17:40.135Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 154
-starsSnapshot: 161
-releaseUpdatedAt: 2026-11-07T05:33:44.550Z
-metadataUpdatedAt: 2026-11-07T05:33:44.550Z
-starsUpdatedAt: 2026-11-07T05:33:44.550Z
-updatedAt: 2026-11-07T05:33:44.550Z
+starsSnapshot: 162
+releaseUpdatedAt: 2026-11-08T00:17:40.533Z
+metadataUpdatedAt: 2026-11-08T00:17:40.533Z
+starsUpdatedAt: 2026-11-08T00:17:40.533Z
+updatedAt: 2026-11-08T00:17:40.533Z
