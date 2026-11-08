@@ -887,6 +887,32 @@ describe('profile state', () => {
     expect(() => assertNoLoaderConflicts(dir, skin)).toThrow(other)
   })
 
+  it('does not treat a shared implementation plugin name as a loader conflict', () => {
+    const dir = fixture()
+    const base = loadCatalog().skins[0]
+    const skin = { ...base, package: '@example/preset-skin', rowId: 'preset-skin-main' }
+    const official = '@deepseek-ai/dsh-agent-preset'
+    atomicWriteJson(join(dir, 'package.json'), { dependencies: { [official]: 'file:/agent-preset' } })
+    const officialDir = join(dir, 'node_modules', ...official.split('/'))
+    mkdirSync(officialDir, { recursive: true })
+    atomicWriteJson(join(officialDir, 'package.json'), {
+      name: official,
+      version: '1.0.0',
+      dsh: { bundle: { patch: './cordis.patch.yml' }, client: { platform: 'web' } },
+    })
+    atomicWriteText(join(officialDir, 'cordis.patch.yml'), `- insert:\n    - id: agent-preset\n      name: ${JSON.stringify(official)}\n`)
+    const incomingDir = join(dir, 'node_modules', ...skin.package.split('/'))
+    mkdirSync(incomingDir, { recursive: true })
+    atomicWriteJson(join(incomingDir, 'package.json'), {
+      name: skin.package,
+      version: skin.install.version,
+      dsh: { bundle: { patch: './cordis.patch.yml' }, client: { platform: 'web' } },
+    })
+    atomicWriteText(join(incomingDir, 'cordis.patch.yml'), `- insert:\n    - id: preset-skin\n      name: ${JSON.stringify(official)}\n    - id: ${skin.rowId}\n      name: ${JSON.stringify(skin.package)}\n`)
+
+    expect(() => assertNoLoaderConflicts(dir, skin)).not.toThrow()
+  })
+
   it('removes an inactive bundle from the stack and restores it without duplicating its row', () => {
     const dir = fixture()
     const skin = isolatedCatalogSkin()

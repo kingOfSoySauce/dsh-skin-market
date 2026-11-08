@@ -1725,6 +1725,36 @@ describe('skin lifecycle', () => {
     expect(readDependencies(dir)).toEqual({})
   })
 
+  it('allows a live row that shares the implementation plugin name but not its id', async () => {
+    const dir = fixture()
+    const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() })
+    const base = firstInstallable(probe)
+    const skin = { ...base, id: 'shared-name.skin', package: '@example/shared-name', rowId: 'shared-name' }
+    const official = '@deepseek-ai/dsh-agent-preset'
+    const rows = [{ id: 'preset-shared-name', name: official }, { id: skin.rowId, name: skin.package }]
+    const liveEntry: LoaderEntry = { options: { id: 'agent-preset', name: official }, fiber: {}, update: async () => undefined }
+    const runner: PluginRunner = async (_profile, args) => {
+      if (args[0] === 'add' && args.includes('--dir')) {
+        const temporary = args[args.indexOf('--dir') + 1]!
+        atomicWriteJson(join(temporary, 'package.json'), { private: true, dependencies: { [skin.package]: skin.install.target } })
+        writeBundleRows(temporary, skin, rows)
+        return success()
+      }
+      if (args[0] === 'add') {
+        atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
+        writeBundleRows(dir, skin, rows)
+      }
+      if (args[0] === 'remove') atomicWriteJson(join(dir, 'package.json'), { dependencies: {} })
+      return success()
+    }
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [liveEntry] } }, { profile: 'test', profileDir: dir, runner }, [skin])
+
+    const operation = await finished(lifecycle.begin('install', skin.id))
+
+    expect(operation.phase).toBe('done')
+    expect(readDependencies(dir)[skin.package]).toBe(skin.install.target)
+  })
+
   it('rejects a catalog row id mismatch from the prefetched immutable bundle', async () => {
     const dir = fixture()
     const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() })
