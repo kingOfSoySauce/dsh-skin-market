@@ -103,6 +103,8 @@ interface ActivationConflict {
 
 interface CompatibilityConfirmation {
   skin: CatalogSkin
+  /** Install was blocked by enabled skins. Confirm closes them and retries the install. */
+  installConflict?: { operationId: string }
   assessment: CompatibilityAssessment
   actionLabel: string
   context: string
@@ -124,6 +126,16 @@ function activationConflicts(target: CatalogSkin, catalog: readonly CatalogSkin[
     const skin = catalog.find(item => item.id === state.skinId)
     if (skin === undefined || marketCategory(skin) === targetCategory) return []
     return [{ skin, state, keep: true, assessment: installCompatibility(skin, 'dsh', runtime, t), artifactRisk: state.artifactRisk }]
+  })
+}
+
+function enabledSkinsForInstallConflict(operation: { failure?: Operation['failure'] }, skins: readonly CatalogSkin[], states: RuntimeSkin[]): CatalogSkin[] {
+  const names = new Set((operation.failure?.conflicts ?? []).map(conflict => conflict.existing))
+  if (names.size === 0) return []
+  return skins.filter(skin => {
+    if (!names.has(skin.package)) return false
+    const state = runtimeFor(states, skin.id)
+    return state.installation === 'installed' && (state.activation === 'active' || state.primary === true || state.pinned === true)
   })
 }
 
@@ -1073,6 +1085,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const recoveryClaim = useRef<ManualRecovery | null>(null)
   const retryBlockedRecovery = useRef(true)
   const recoveryViewMounted = useRef(true)
+  const conflictCloseTried = useRef(new Set<string>())
+  const runForSkinRef = useRef<(skinId: string, kind: MutationKind, existingOperationId?: string, options?: SkinOperationOptions) => Promise<boolean>>(async () => false)
   const [recoveryFocus, setRecoveryFocus] = useState(0)
   const [installRecovery, setInstallRecovery] = useState<InstallRecoveryView | null>(null)
   const restartTargetRef = useRef<RestartTarget | null>(null)
@@ -2118,7 +2132,17 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       try { window.localStorage.setItem(ACTIVATION_WARNING_KEY, 'true') } catch { /* storage may be unavailable */ }
       setActivationWarningAccepted(true)
     }
-    const preserved = accepted && confirmation?.conflicts !== undefined
+    const installConflict = confirmation?.installConflict
+    if (accepted && installConflict !== undefined && confirmation?.conflicts !== undefined) {
+      const closed = confirmation.conflicts.filter(conflict => !conflict.keep)
+      const skinId = confirmation.skin.id
+      void (async () => {
+        for (const conflict of closed) await runForSkinRef.current(conflict.skin.id, 'deactivate')
+        setDismissedNoticeIds(ids => [...new Set([...ids, `failed:${installConflict.operationId}`])].slice(-100))
+        await runForSkinRef.current(skinId, 'install', undefined, { installAndUse: true })
+      })()
+    }
+    const preserved = accepted && confirmation?.conflicts !== undefined && installConflict === undefined
       ? (preservedOverride ?? preservedSkinIds(statesRef.current, confirmation.conflicts)).filter(id => id !== confirmation.skin.id)
       : undefined
     const approvals = preserved === undefined ? undefined : preservedSkinApprovals(statesRef.current, skinsRef.current, preserved, runtimeRef.current)
@@ -2442,7 +2466,30 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
 
   const nativeActivation = useRef(runForSkin)
   nativeActivation.current = runForSkin
+  runForSkinRef.current = runForSkin
   const nativePanelSync = useRef<(() => void) | undefined>(undefined)
+  useEffect(() => {
+    if (compatibilityConfirmation !== null) return
+    const operation = operations.find(item => item.phase === 'failed' && item.failure?.kind === 'conflict' && !dismissedNoticeIds.includes(`failed:${item.id}`) && !conflictCloseTried.current.has(item.skinId))
+    if (operation === undefined) return
+    const matches = enabledSkinsForInstallConflict(operation, skins, states)
+    const target = skins.find(skin => skin.id === operation.skinId)
+    if (matches.length === 0 || target === undefined) return
+    conflictCloseTried.current.add(operation.skinId)
+    const assessmentFor = (skin: CatalogSkin) => installCompatibility(skin, 'dsh', runtime, t) ?? { decision: 'unknown' as const, reason: t('common.unknownDshVersionInstall'), adapterIds: [] }
+    setCompatibilityConfirmation({
+      skin: target,
+      assessment: assessmentFor(target),
+      actionLabel: t('common.install'),
+      context: skinCompatibilityContext(target, runtime),
+      firstUse: false,
+      pin: false,
+      kind: 'activate',
+      conflicts: matches.map(skin => ({ skin, state: runtimeFor(states, skin.id), keep: false, assessment: assessmentFor(skin), artifactRisk: runtimeFor(states, skin.id).artifactRisk })),
+      installConflict: { operationId: operation.id },
+    })
+  }, [compatibilityConfirmation, dismissedNoticeIds, operations, runtime, skins, states, t])
+
   useEffect(() => {
     if (!officialDesktop || desktopPluginPanel?.observe === undefined && clientRuntime?.observe === undefined) return
     let disposed = false
@@ -2747,7 +2794,9 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     </article>
   }
 
-  const needsFailurePrompt = (operation: { id: string; phase?: string; kind?: Operation['kind']; failure?: Operation['failure'] }) => {
+  const needsFailurePrompt = (operation: { id: string; phase?: string; kind?: Operation['kind']; skinId?: string; failure?: Operation['failure'] }) => {
+    if (operation.failure?.kind === 'conflict' && operation.skinId !== undefined && !conflictCloseTried.current.has(operation.skinId) && enabledSkinsForInstallConflict(operation, skins, states).length > 0) return false
+    if (compatibilityConfirmation?.installConflict?.operationId === operation.id) return false
     const route = recoveryRoute({ phase: operation.phase ?? '', kind: operation.kind ?? 'update', failure: operation.failure })
     return route === 'decision'
       && (isInterceptFailure(operation) || operation.phase === 'failed' && operation.failure?.action === 'retry')
@@ -2791,6 +2840,22 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const recoveryPrompt = recoveryOperation === undefined || recoverySkin === undefined ? null : createFailureRepairPrompt({
     operation: recoveryOperation, skin: recoverySkin, hostKind, runtimeVersion: runtime?.version, allowGeneric: true, t,
   })
+  const manualRecovery = installRecovery !== null && installRecovery.skinId !== undefined
+    && ['none', 'open-failed', 'blocked', 'companions', 'replace'].includes(installRecovery.lead)
+    ? installRecovery : null
+  const closeManualPanel = () => {
+    setShowInstallOptions(false)
+    if (manualRecovery === null) return
+    recoveryClaim.current = null
+    if (manualRecovery.lead !== 'blocked') {
+      desktopPluginPanel?.forgetRecovery?.(manualRecovery.operationId)
+      dismissNotice(`failed:${manualRecovery.operationId}`)
+    } else {
+      desktopPluginPanel?.noteRecovery?.(manualRecovery.operationId, 'blocked')
+      retryBlockedRecovery.current = true
+    }
+    setInstallRecovery(null)
+  }
   const sourceGuide = existingSourceGuide({
     failure: interceptFailure,
     kind: interceptOperation?.kind,
@@ -3329,7 +3394,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             </>}
         </>}
       >
-        {intercept !== null && (configurationPlan !== undefined || repairPrompt !== null || sourceGuide !== null || artifactRisk === undefined && intercept.links.length > 0 || interceptHasError || copyLogError !== null || intercept.copySpec !== undefined) ? <div className={css.interceptNotice}>
+        {intercept !== null && (configurationPlan !== undefined || repairPrompt !== null || sourceGuide !== null || artifactRisk === undefined && intercept.links.length > 0 || interceptHasError || copyLogError !== null || intercept.copySpec !== undefined || (intercept.details?.length ?? 0) > 0) ? <div className={css.interceptNotice}>
+          {intercept.details?.map(line => <p key={line}>{line}</p>)}
           {intercept.copySpec !== undefined && <p>{t('common.manualAddHint', { spec: intercept.copySpec })}</p>}
           {configurationPlan !== undefined && interceptOperation !== null && <ConfigurationChanges t={t} skins={skins} plan={{ status: 'repairable', reason: configurationPlan.reason, changes: [{ ...configurationPlan, skinId: interceptOperation.failure?.targetSkinId ?? interceptOperation.skinId }] }} />}
           {sourceGuide !== null && sourceGuide.map(step => <DisclosureRow
@@ -3362,7 +3428,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         </div> : undefined}
       </Modal>
       <Modal
-        open={installRecovery !== null}
+        open={installRecovery !== null && manualRecovery === null}
         onClose={() => {
           recoveryClaim.current = null
           if (installRecovery !== null && installRecovery.lead !== 'blocked') {
@@ -3426,21 +3492,50 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         </> : undefined}
       </Modal>
       <Modal
-        open={showInstallOptions}
-        onClose={() => setShowInstallOptions(false)}
+        open={showInstallOptions || manualRecovery !== null}
+        onClose={closeManualPanel}
         title={t('common.installSkinTitle', { name: selected?.name.zh ?? t('common.skin') })}
         closeLabel={t('common.close')}
         className={css.modalSurface}
-        description={manualOnly
+        description={[manualRecovery === null ? undefined : manualRecovery.lead === 'open-failed' ? t('failure.recoveryOpenFailed') : manualRecovery.lead === 'blocked' ? t('failure.recoveryBlocked') : manualRecovery.lead === 'companions' ? t('failure.recoveryCompanions') : manualRecovery.lead === 'replace' && manualRecovery.spec ? t('failure.manualReplace', { spec: manualRecovery.spec }) : undefined, manualOnly
           ? hostKind === 'desktop'
             ? `${manualInstallNotice}${t('common.manualPromptDesktop')}`
             : `${manualInstallNotice}${t('common.manualPromptWeb')}`
           : hostKind === 'desktop'
             ? t('common.desktopInstallInput')
-            : t('common.webInstallCommand')}
-        footer={manualOnly ? undefined : <Button variant="outline" size="sm" onClick={() => setShowInstallOptions(false)}>{t('common.close')}</Button>}
+            : t('common.webInstallCommand')].filter(Boolean).join('')}
+        footer={<>
+          {manualRecovery?.lead === 'open-failed' && <Button variant="primary" size="sm" onClick={() => {
+            if (manualRecovery.spec === undefined || manualRecovery.spec === '' || desktopPluginPanel === undefined) return
+            void desktopPluginPanel.open(manualRecovery.spec, { skinId: manualRecovery.skinId ?? 'dsh-skin-market', packageName: manualRecovery.packageName ?? 'dsh-skin-market', operationId: manualRecovery.operationId, companions: manualRecovery.companions }, { navigateOnResume: false }).then(result => {
+              if (!mounted.current) return
+              if (result.ok && result.kind === 'prefilled') {
+                desktopPluginPanel.noteRecovery?.(manualRecovery.operationId, 'opened')
+                setDismissedNoticeIds(ids => [...new Set([...ids, `failed:${manualRecovery.operationId}`])].slice(-100))
+                recoveryClaim.current = null
+                setShowInstallOptions(false)
+                setInstallRecovery(null)
+              } else if (result.ok && result.kind === 'resumed' || !result.ok && result.code === 'busy') {
+                desktopPluginPanel.noteRecovery?.(manualRecovery.operationId, 'blocked')
+                setInstallRecovery({ ...manualRecovery, lead: 'blocked' })
+              }
+            })
+          }}>{t('failure.recoveryOpenPanel')}</Button>}
+          {manualRecovery !== null && recoveryPrompt !== null && <Button variant="outline" size="sm" onClick={() => void copyRecoveryPrompt()}>{t('common.copyTroubleshootingPrompt')}</Button>}
+          <Button variant="outline" size="sm" onClick={closeManualPanel}>{t('common.close')}</Button>
+        </>}
       >
         <div className={css.installOptions}>
+          {installInputs.map(entry => {
+            const key = `input:${entry.key}`
+            return <div key={key}>
+              <strong>{entry.label}</strong>
+              <span className={css.copyCapsule}>
+                <Input className={css.copyCapsuleInput} readOnly value={entry.value} aria-label={entry.label} />
+                <Button className={css.copyCapsuleButton} variant="ghost" size="sm" icon={installCopied === `${selected?.id}:${key}:${entry.value}` ? <IconCheckOutline /> : <IconCopyOutline />} aria-label={t('common.copyLabel', { label: entry.label })} title={t('common.copyLabel', { label: entry.label })} onClick={() => void copyInstallOption(key, entry.value)} />
+              </span>
+            </div>
+          })}
           <div>
             <strong>{t('common.installOptionPrompt')}</strong>
             <span className={css.copyCapsule}>
@@ -3450,17 +3545,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           </div>
           {hostKind === 'desktop' ? <>
             {manualOnly && <div className={css.manualInstallGuide}><p>{t('common.openAddPlugin')}</p></div>}
-            {installInputs.map(entry => {
-              const label = entry.label
-              const key = `input:${entry.key}`
-              return <div key={key}>
-                <strong>{label}</strong>
-                <span className={css.copyCapsule}>
-                  <Input className={css.copyCapsuleInput} readOnly value={entry.value} aria-label={label} />
-                  <Button className={css.copyCapsuleButton} variant="ghost" size="sm" icon={installCopied === `${selected?.id}:${key}:${entry.value}` ? <IconCheckOutline /> : <IconCopyOutline />} aria-label={t('common.copyLabel', { label })} title={t('common.copyLabel', { label })} onClick={() => void copyInstallOption(key, entry.value)} />
-                </span>
-              </div>
-            })}
           </> : <div>
             <div className={css.installCommandLabel}>
               <strong>{t('common.installOptionCommand')}</strong>
@@ -3492,10 +3576,10 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       <Modal
         open={warningDialog === 'use'}
         onClose={() => finishCompatibilityConfirmation(false)}
-        title={compatibilityConfirmation?.kind === 'deactivate' || compatibilityConfirmation?.kind === 'unpin' ? t('common.operationConfirmation') : t('common.switchConfirmation')}
+        title={compatibilityConfirmation?.installConflict !== undefined || compatibilityConfirmation?.kind === 'deactivate' || compatibilityConfirmation?.kind === 'unpin' ? t('common.operationConfirmation') : t('common.switchConfirmation')}
         closeLabel={t('common.close')}
         className={css.warningModal}
-        description={compatibilityConfirmation === null ? undefined : describeUseConfirmation({
+        description={compatibilityConfirmation?.installConflict !== undefined ? t('failure.conflictCloseFirst') : compatibilityConfirmation === null ? undefined : describeUseConfirmation({
           ...compatibilityConfirmation,
           assessment: compatibilityConfirmation.kind === 'activate' || compatibilityConfirmation.kind === 'pin' ? compatibilityConfirmation.assessment : undefined,
           name: localizedSkinName(compatibilityConfirmation.skin.name, t),

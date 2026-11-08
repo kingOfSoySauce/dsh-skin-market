@@ -369,6 +369,23 @@ describe('failure help', () => {
     expect(notice.links.length).toBeLessThanOrEqual(1)
   })
 
+  it('names the installed package in a conflict and keeps that fact in the repair prompt', () => {
+    const operation = failed('conflict', '发现插件安装冲突', { failure: {
+      kind: 'conflict',
+      message: '发现插件安装冲突',
+      conflicts: [{ kind: 'loader', incoming: skin.package, existing: 'other-skin', identifiers: ['theme.row'] }],
+    } })
+    const notice = interceptNotice(operation, '测试皮肤', skin)
+    expect(notice.details).toEqual(['与已安装的 other-skin 冲突，标识 theme.row。'])
+    expect(notice.why).toBe('请先在官方插件页停用或卸载 other-skin，再安装这个皮肤。')
+    expect(notice.copySpec).toBe(skin.package)
+    const prompt = createFailureRepairPrompt({ operation, skin, hostKind: 'dsh' })
+    expect(prompt).toContain('other-skin')
+    expect(prompt).toContain('theme.row')
+    expect(prompt).toContain(skin.package)
+    expect(prompt).toContain(skin.install.target)
+  })
+
   it('does not mistake an earlier recovered warning for the terminal error or override a structured Host category', () => {
     const message = '[WARN] minimumReleaseAge recovered\nERR_PNPM_FETCH_404 RAW_DIAGNOSTIC_MARKER'
     const inferred = interceptNotice(failed('command', message), '测试皮肤', skin)

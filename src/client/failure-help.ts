@@ -18,6 +18,8 @@ export interface InterceptNotice {
   what: string
   why: string
   links: FailureHelpLink[]
+  /** One line per known install conflict. The summary stays in what/why. */
+  details?: string[]
   copySpec?: string
 }
 
@@ -213,7 +215,8 @@ export function createFailureRepairPrompt(options: FailureRepairPromptOptions): 
   const affectedSkinId = operation.failure?.targetSkinId ?? operation.skinId
   if (operation.phase !== 'failed' || skin == null || skin.id !== affectedSkinId
     || [skin.id, skin.package, skin.rowId].some(value => value.trim() === '')) return null
-  const topic = repairTopic(operation, t) ?? (options.allowGeneric === true ? 'recovery' : null)
+  const conflictFacts = conflictPromptFacts(operation, skin, t)
+  const topic = repairTopic(operation, t) ?? (conflictFacts !== null ? 'conflict' : options.allowGeneric === true ? 'recovery' : null)
   if (topic === null) return null
   const desired = operation.failure?.desiredEnabled
   const goal = desired !== undefined
@@ -231,7 +234,7 @@ export function createFailureRepairPrompt(options: FailureRepairPromptOptions): 
   const diagnostic = options.diagnosticLog === undefined || options.diagnosticLog === ''
     ? ''
     : `\n\n${t('failure.prompt.diagnostic', { diagnostic: options.diagnosticLog })}`
-  const explanation = t(localRepairGuidance[topic] ?? 'failure.repair.recovery')
+  const explanation = conflictFacts ?? t(localRepairGuidance[topic] ?? 'failure.repair.recovery')
   return [
     t('failure.prompt.title'),
     '',
@@ -302,6 +305,34 @@ export function failureHelpLinks(options: FailureHelpSubject, t: Translator = de
   if (options.failureKind === 'compatibility' || /bundle patch is missing:/i.test(message)) return skinLink === null ? [] : [skinLink]
   if (options.failureKind === 'integrity' || options.failureKind === 'build-approval') return []
   return [troubleshootLink]
+}
+
+function describeConflicts(conflicts: NonNullable<Operation['failure']>['conflicts'] | undefined, t: Translator): { lines: string[]; handle?: string } {
+  const rows = conflicts ?? []
+  const lines = rows.map(conflict => {
+    const identifiers = conflict.identifiers.map(identifier => identifier.trim()).filter(identifier => identifier !== '')
+    return t('failure.conflictLine', {
+      existing: conflict.existing,
+      identifiers: identifiers.length === 0 ? '' : t('failure.conflictIdentifiers', { identifiers: identifiers.join('、') }),
+    })
+  })
+  const existing = [...new Set(rows.map(conflict => conflict.existing.trim()).filter(name => name !== ''))]
+  const handle = existing.length === 0 ? undefined
+    : existing.length === 1 ? t('failure.conflictHandleOne', { existing: existing[0] })
+      : t('failure.conflictHandleMany', { existing: existing.join('、') })
+  return { lines, handle }
+}
+
+function conflictPromptFacts(operation: Operation, skin: CatalogSkin, t: Translator): string | null {
+  if (operation.failure?.kind !== 'conflict') return null
+  const described = describeConflicts(operation.failure.conflicts, t)
+  if (described.lines.length === 0 && described.handle === undefined) return null
+  return [
+    ...described.lines,
+    described.handle ?? t('failure.conflictNext'),
+    t('failure.conflictPackage', { packageName: skin.package }),
+    t('failure.conflictTarget', { target: skin.install.target }),
+  ].join('\n')
 }
 
 function manualInstallNotice(title: string, spec: string | undefined, t: Translator): InterceptNotice | undefined {
@@ -391,7 +422,7 @@ function existingSourceNotice(action: string, name: string, failure: Operation['
   }
 }
 
-export function interceptNotice(operation: Operation, skinName: string, skin?: FailureHelpSubject['skin'], t: Translator = defaultTranslator): InterceptNotice {
+export function interceptNotice(operation: Operation, skinName: string, skin?: (NonNullable<FailureHelpSubject['skin']> & { package?: string }) | null, t: Translator = defaultTranslator): InterceptNotice {
   const kind = operationLabel(operation.kind, t)
   const blocked = existingSourceNotice(kind, skinName, operation.failure, t)
   if (blocked !== undefined) return blocked
@@ -457,11 +488,14 @@ export function interceptNotice(operation: Operation, skinName: string, skin?: F
     }
   }
   if (operation.failure?.kind === 'conflict' || raw.includes('发现插件安装冲突')) {
+    const described = describeConflicts(operation.failure?.conflicts, t)
     return {
       title: t('failure.installBlocked'),
       what: t('failure.conflict', { name: skinName }),
-      why: t('failure.conflictNext'),
+      why: described.handle ?? t('failure.conflictNext'),
       links,
+      ...(described.lines.length === 0 ? {} : { details: described.lines }),
+      ...(skin?.package?.trim() ? { copySpec: skin.package } : {}),
     }
   }
   if (operation.failure?.kind === 'compatibility') {

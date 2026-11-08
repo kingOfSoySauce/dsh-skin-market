@@ -297,153 +297,153 @@ window.__ModuleLoader__.load({
 			document.head.appendChild(tag);
 		}
 		var SkinMarket_module_css_default = {
-			"thumbnailProgress": "VqXecW_thumbnailProgress",
-			"warningModal": "VqXecW_warningModal",
-			"description": "VqXecW_description",
-			"skeletonCard": "VqXecW_skeletonCard",
-			"discoverTitle": "VqXecW_discoverTitle",
-			"operationDetails": "VqXecW_operationDetails",
-			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
-			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
-			"homeSearch": "VqXecW_homeSearch",
-			"homeCardDescription": "VqXecW_homeCardDescription",
-			"srOnly": "VqXecW_srOnly",
-			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
-			"repoLine": "VqXecW_repoLine",
-			"operationMessage": "VqXecW_operationMessage",
-			"browser": "VqXecW_browser",
-			"homeCardRepo": "VqXecW_homeCardRepo",
-			"homeLoading": "VqXecW_homeLoading",
-			"changelog": "VqXecW_changelog",
-			"homeTitleRow": "VqXecW_homeTitleRow",
-			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
-			"lightboxStage": "VqXecW_lightboxStage",
-			"loading": "VqXecW_loading",
-			"activationSwitch": "VqXecW_activationSwitch",
-			"galleryProgress": "VqXecW_galleryProgress",
-			"installCommandGroup": "VqXecW_installCommandGroup",
-			"segmented": "VqXecW_segmented",
-			"sparkFillTop": "VqXecW_sparkFillTop",
-			"version": "VqXecW_version",
-			"browserHomeBack": "VqXecW_browserHomeBack",
 			"mobileBack": "VqXecW_mobileBack",
-			"interceptHelp": "VqXecW_interceptHelp",
-			"homeCard": "VqXecW_homeCard",
-			"thumbnails": "VqXecW_thumbnails",
-			"titleBlock": "VqXecW_titleBlock",
-			"cardDescription": "VqXecW_cardDescription",
-			"tags": "VqXecW_tags",
-			"repairPromptFallback": "VqXecW_repairPromptFallback",
-			"homeActions": "VqXecW_homeActions",
-			"homeCardCopy": "VqXecW_homeCardCopy",
-			"heroPrev": "VqXecW_heroPrev",
-			"installOptions": "VqXecW_installOptions",
-			"searchField": "VqXecW_searchField",
-			"iconOnlyButton": "VqXecW_iconOnlyButton",
-			"operation": "VqXecW_operation",
-			"marketUpdateButton": "VqXecW_marketUpdateButton",
-			"hero": "VqXecW_hero",
-			"browserPanel": "VqXecW_browserPanel",
-			"detail": "VqXecW_detail",
-			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
-			"heroNav": "VqXecW_heroNav",
-			"skinCard": "VqXecW_skinCard",
-			"aboutGrid": "VqXecW_aboutGrid",
-			"activationConflictState": "VqXecW_activationConflictState",
-			"lightboxPrev": "VqXecW_lightboxPrev",
-			"lightboxNext": "VqXecW_lightboxNext",
-			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
-			"browserContent": "VqXecW_browserContent",
-			"skinCardPreview": "VqXecW_skinCardPreview",
-			"installedRow": "VqXecW_installedRow",
-			"lightbox": "VqXecW_lightbox",
-			"recommendations": "VqXecW_recommendations",
-			"actionRow": "VqXecW_actionRow",
-			"error": "VqXecW_error",
-			"homeSection": "VqXecW_homeSection",
-			"installCommandLabel": "VqXecW_installCommandLabel",
-			"copyCapsule": "VqXecW_copyCapsule",
-			"modalSurface": "VqXecW_modalSurface",
-			"cardActionProgress": "VqXecW_cardActionProgress",
-			"lightboxClose": "VqXecW_lightboxClose",
-			"lightboxNav": "VqXecW_lightboxNav",
-			"interceptNotice": "VqXecW_interceptNotice",
-			"installedMoreCard": "VqXecW_installedMoreCard",
-			"detailSkeleton": "VqXecW_detailSkeleton",
-			"catalogSearch": "VqXecW_catalogSearch",
-			"sparkLine": "VqXecW_sparkLine",
-			"skinList": "VqXecW_skinList",
-			"previewPlaceholder": "VqXecW_previewPlaceholder",
-			"searchClear": "VqXecW_searchClear",
-			"catalogTitleMain": "VqXecW_catalogTitleMain",
-			"homeOperation": "VqXecW_homeOperation",
-			"homeCardMedia": "VqXecW_homeCardMedia",
-			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
-			"homeUpdateAction": "VqXecW_homeUpdateAction",
-			"headerDiscover": "VqXecW_headerDiscover",
-			"homeCardOpen": "VqXecW_homeCardOpen",
-			"root": "VqXecW_root",
-			"homeCardFooter": "VqXecW_homeCardFooter",
-			"statusLabel": "VqXecW_statusLabel",
-			"empty": "VqXecW_empty",
-			"homeHeader": "VqXecW_homeHeader",
-			"cardTitle": "VqXecW_cardTitle",
-			"pinWarning": "VqXecW_pinWarning",
-			"spark": "VqXecW_spark",
-			"operationDiagnostics": "VqXecW_operationDiagnostics",
-			"feedMeta": "VqXecW_feedMeta",
-			"cardStars": "VqXecW_cardStars",
-			"filterBar": "VqXecW_filterBar",
+			"description": "VqXecW_description",
 			"heroNext": "VqXecW_heroNext",
-			"operationDismiss": "VqXecW_operationDismiss",
-			"heroOpen": "VqXecW_heroOpen",
-			"discoveryGrid": "VqXecW_discoveryGrid",
-			"manualInstallGuide": "VqXecW_manualInstallGuide",
-			"operationCancel": "VqXecW_operationCancel",
-			"sparkTip": "VqXecW_sparkTip",
-			"discoverHeading": "VqXecW_discoverHeading",
-			"sparkFillEnd": "VqXecW_sparkFillEnd",
-			"cardAction": "VqXecW_cardAction",
-			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
-			"homeContent": "VqXecW_homeContent",
-			"cardInlineActions": "VqXecW_cardInlineActions",
-			"homeLoadMore": "VqXecW_homeLoadMore",
-			"catalogHeader": "VqXecW_catalogHeader",
-			"operationActions": "VqXecW_operationActions",
-			"spin": "VqXecW_spin",
-			"loadMoreHint": "VqXecW_loadMoreHint",
-			"skeletonShimmer": "VqXecW_skeletonShimmer",
-			"cardMetaLine": "VqXecW_cardMetaLine",
-			"sparkArea": "VqXecW_sparkArea",
-			"thumbnailFrame": "VqXecW_thumbnailFrame",
-			"detailHeader": "VqXecW_detailHeader",
-			"collectionTitle": "VqXecW_collectionTitle",
-			"listSkeleton": "VqXecW_listSkeleton",
+			"version": "VqXecW_version",
+			"cardDescription": "VqXecW_cardDescription",
 			"sparkFillMid": "VqXecW_sparkFillMid",
-			"activationConflicts": "VqXecW_activationConflicts",
-			"activationConflictRow": "VqXecW_activationConflictRow",
-			"homeGithubAction": "VqXecW_homeGithubAction",
-			"homeOperations": "VqXecW_homeOperations",
-			"catalog": "VqXecW_catalog",
-			"sparkEnd": "VqXecW_sparkEnd",
-			"cardMeta": "VqXecW_cardMeta",
-			"activationConflictList": "VqXecW_activationConflictList",
-			"operationCopyLog": "VqXecW_operationCopyLog",
-			"notice": "VqXecW_notice",
-			"filters": "VqXecW_filters",
-			"home": "VqXecW_home",
-			"homeError": "VqXecW_homeError",
-			"browserModal": "VqXecW_browserModal",
-			"catalogTitle": "VqXecW_catalogTitle",
-			"galleryGroup": "VqXecW_galleryGroup",
-			"installSegmented": "VqXecW_installSegmented",
-			"operationMeta": "VqXecW_operationMeta",
-			"skinAvatar": "VqXecW_skinAvatar",
+			"modalSurface": "VqXecW_modalSurface",
 			"homeSectionTitle": "VqXecW_homeSectionTitle",
+			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
+			"installCommandLabel": "VqXecW_installCommandLabel",
+			"recommendations": "VqXecW_recommendations",
+			"searchClear": "VqXecW_searchClear",
+			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
+			"loading": "VqXecW_loading",
+			"notice": "VqXecW_notice",
+			"activationConflictList": "VqXecW_activationConflictList",
+			"activationConflictState": "VqXecW_activationConflictState",
+			"lightboxClose": "VqXecW_lightboxClose",
+			"homeUpdateAction": "VqXecW_homeUpdateAction",
+			"homeCardFooter": "VqXecW_homeCardFooter",
+			"operationDismiss": "VqXecW_operationDismiss",
+			"homeLoading": "VqXecW_homeLoading",
+			"filterBar": "VqXecW_filterBar",
+			"detailHeader": "VqXecW_detailHeader",
+			"sparkArea": "VqXecW_sparkArea",
+			"galleryGroup": "VqXecW_galleryGroup",
+			"homeTitleRow": "VqXecW_homeTitleRow",
+			"copyCapsule": "VqXecW_copyCapsule",
+			"manualInstallGuide": "VqXecW_manualInstallGuide",
+			"repoLine": "VqXecW_repoLine",
+			"lightboxNext": "VqXecW_lightboxNext",
+			"homeHeader": "VqXecW_homeHeader",
+			"filters": "VqXecW_filters",
+			"iconOnlyButton": "VqXecW_iconOnlyButton",
+			"activationSwitch": "VqXecW_activationSwitch",
+			"sparkTip": "VqXecW_sparkTip",
+			"titleBlock": "VqXecW_titleBlock",
+			"loadMoreHint": "VqXecW_loadMoreHint",
+			"homeCardCopy": "VqXecW_homeCardCopy",
+			"changelog": "VqXecW_changelog",
+			"marketUpdateButton": "VqXecW_marketUpdateButton",
+			"interceptNotice": "VqXecW_interceptNotice",
+			"browser": "VqXecW_browser",
+			"sparkEnd": "VqXecW_sparkEnd",
+			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
+			"statusLabel": "VqXecW_statusLabel",
+			"skinList": "VqXecW_skinList",
+			"activationConflictRow": "VqXecW_activationConflictRow",
+			"cardStars": "VqXecW_cardStars",
+			"catalog": "VqXecW_catalog",
+			"discoveryGrid": "VqXecW_discoveryGrid",
+			"operationMessage": "VqXecW_operationMessage",
+			"heroPrev": "VqXecW_heroPrev",
+			"interceptHelp": "VqXecW_interceptHelp",
+			"heroNav": "VqXecW_heroNav",
+			"thumbnailProgress": "VqXecW_thumbnailProgress",
+			"cardActionProgress": "VqXecW_cardActionProgress",
+			"empty": "VqXecW_empty",
+			"thumbnailFrame": "VqXecW_thumbnailFrame",
+			"browserHomeBack": "VqXecW_browserHomeBack",
+			"heroOpen": "VqXecW_heroOpen",
+			"cardInlineActions": "VqXecW_cardInlineActions",
+			"root": "VqXecW_root",
+			"segmented": "VqXecW_segmented",
+			"cardMetaLine": "VqXecW_cardMetaLine",
+			"collectionTitle": "VqXecW_collectionTitle",
+			"lightbox": "VqXecW_lightbox",
+			"catalogTitleMain": "VqXecW_catalogTitleMain",
+			"operationActions": "VqXecW_operationActions",
+			"homeOperation": "VqXecW_homeOperation",
+			"homeCardDescription": "VqXecW_homeCardDescription",
+			"lightboxStage": "VqXecW_lightboxStage",
+			"homeCard": "VqXecW_homeCard",
+			"sparkFillEnd": "VqXecW_sparkFillEnd",
+			"operationDiagnostics": "VqXecW_operationDiagnostics",
+			"repairPromptFallback": "VqXecW_repairPromptFallback",
+			"operationDetails": "VqXecW_operationDetails",
 			"listLoading": "VqXecW_listLoading",
-			"skinCardBody": "VqXecW_skinCardBody",
+			"lightboxNav": "VqXecW_lightboxNav",
+			"homeCardOpen": "VqXecW_homeCardOpen",
+			"browserModal": "VqXecW_browserModal",
+			"hero": "VqXecW_hero",
+			"detail": "VqXecW_detail",
+			"home": "VqXecW_home",
+			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
 			"homeGithubLabel": "VqXecW_homeGithubLabel",
-			"operationElapsed": "VqXecW_operationElapsed"
+			"activationConflicts": "VqXecW_activationConflicts",
+			"skinAvatar": "VqXecW_skinAvatar",
+			"galleryProgress": "VqXecW_galleryProgress",
+			"homeCardMedia": "VqXecW_homeCardMedia",
+			"spark": "VqXecW_spark",
+			"thumbnails": "VqXecW_thumbnails",
+			"aboutGrid": "VqXecW_aboutGrid",
+			"installSegmented": "VqXecW_installSegmented",
+			"sparkFillTop": "VqXecW_sparkFillTop",
+			"operationCopyLog": "VqXecW_operationCopyLog",
+			"homeContent": "VqXecW_homeContent",
+			"homeSearch": "VqXecW_homeSearch",
+			"operationMeta": "VqXecW_operationMeta",
+			"homeOperations": "VqXecW_homeOperations",
+			"skinCard": "VqXecW_skinCard",
+			"cardMeta": "VqXecW_cardMeta",
+			"skeletonCard": "VqXecW_skeletonCard",
+			"installedMoreCard": "VqXecW_installedMoreCard",
+			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
+			"cardAction": "VqXecW_cardAction",
+			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
+			"discoverTitle": "VqXecW_discoverTitle",
+			"pinWarning": "VqXecW_pinWarning",
+			"detailSkeleton": "VqXecW_detailSkeleton",
+			"browserPanel": "VqXecW_browserPanel",
+			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
+			"catalogHeader": "VqXecW_catalogHeader",
+			"skinCardPreview": "VqXecW_skinCardPreview",
+			"searchField": "VqXecW_searchField",
+			"listSkeleton": "VqXecW_listSkeleton",
+			"discoverHeading": "VqXecW_discoverHeading",
+			"operation": "VqXecW_operation",
+			"spin": "VqXecW_spin",
+			"browserContent": "VqXecW_browserContent",
+			"cardTitle": "VqXecW_cardTitle",
+			"catalogSearch": "VqXecW_catalogSearch",
+			"homeActions": "VqXecW_homeActions",
+			"operationElapsed": "VqXecW_operationElapsed",
+			"skinCardBody": "VqXecW_skinCardBody",
+			"homeLoadMore": "VqXecW_homeLoadMore",
+			"operationCancel": "VqXecW_operationCancel",
+			"tags": "VqXecW_tags",
+			"installedRow": "VqXecW_installedRow",
+			"previewPlaceholder": "VqXecW_previewPlaceholder",
+			"skeletonShimmer": "VqXecW_skeletonShimmer",
+			"catalogTitle": "VqXecW_catalogTitle",
+			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
+			"warningModal": "VqXecW_warningModal",
+			"homeSection": "VqXecW_homeSection",
+			"homeError": "VqXecW_homeError",
+			"srOnly": "VqXecW_srOnly",
+			"homeGithubAction": "VqXecW_homeGithubAction",
+			"sparkLine": "VqXecW_sparkLine",
+			"headerDiscover": "VqXecW_headerDiscover",
+			"error": "VqXecW_error",
+			"actionRow": "VqXecW_actionRow",
+			"installCommandGroup": "VqXecW_installCommandGroup",
+			"installOptions": "VqXecW_installOptions",
+			"homeCardRepo": "VqXecW_homeCardRepo",
+			"lightboxPrev": "VqXecW_lightboxPrev",
+			"feedMeta": "VqXecW_feedMeta"
 		};
 		//#endregion
 		//#region \0dsh-skin-market-css:/Users/leon/Code/liang-intensity-calibrator/code/dsh-skin-market/src/client/media-hover.module.css.mjs
@@ -1298,6 +1298,13 @@ window.__ModuleLoader__.load({
 				"failure.missingFilesNext": "请先核对安装目标与安装包文件，确认缺包后反馈作者。",
 				"failure.conflict": "「{name}」与已安装插件冲突。",
 				"failure.conflictNext": "请核对冲突的包、来源或组件标识；仅停用未必能解除安装冲突。",
+				"failure.conflictLine": "与已安装的 {existing} 冲突{identifiers}。",
+				"failure.conflictIdentifiers": "，标识 {identifiers}",
+				"failure.conflictPackage": "包名：{packageName}",
+				"failure.conflictTarget": "安装目标：{target}",
+				"failure.conflictCloseFirst": "这些插件正在使用。先关闭后再继续安装。",
+				"failure.conflictHandleOne": "请先在官方插件页停用或卸载 {existing}，再安装这个皮肤。",
+				"failure.conflictHandleMany": "请先在官方插件页停用或卸载这些包：{existing}。然后再安装这个皮肤。",
 				"failure.compatibility": "「{name}」未通过当前 DSH 的兼容检查。",
 				"failure.compatibilityNext": "请核对宿主版本与皮肤声明的兼容范围（当前 DSH）。",
 				"failure.metadataMismatch": "「{name}」的安装信息与安装包不一致。",
@@ -1933,6 +1940,13 @@ window.__ModuleLoader__.load({
 				"failure.missingFilesNext": "Check the install target and package file first. Report it to the author after confirming the package is incomplete.",
 				"failure.conflict": "“{name}” conflicts with an installed plugin.",
 				"failure.conflictNext": "Check the conflicting package, source, or component identifier; disabling it alone may not resolve an install conflict.",
+				"failure.conflictLine": "Conflicts with installed {existing}{identifiers}.",
+				"failure.conflictIdentifiers": " ({identifiers})",
+				"failure.conflictPackage": "Package: {packageName}",
+				"failure.conflictTarget": "Install target: {target}",
+				"failure.conflictCloseFirst": "These plugins are in use. Close them before continuing the install.",
+				"failure.conflictHandleOne": "Disable or uninstall {existing} on the official plugin page, then install this skin.",
+				"failure.conflictHandleMany": "Disable or uninstall these packages on the official plugin page: {existing}. Then install this skin.",
 				"failure.compatibility": "“{name}” did not pass the current DSH compatibility check.",
 				"failure.compatibilityNext": "Check the current DSH version against the skin’s declared compatibility range.",
 				"failure.metadataMismatch": "The install information for “{name}” does not match the install package.",
@@ -2789,7 +2803,8 @@ window.__ModuleLoader__.load({
 				skin.package,
 				skin.rowId
 			].some((value) => value.trim() === "")) return null;
-			const topic = repairTopic(operation, t) ?? (options.allowGeneric === true ? "recovery" : null);
+			const conflictFacts = conflictPromptFacts(operation, skin, t);
+			const topic = repairTopic(operation, t) ?? (conflictFacts !== null ? "conflict" : options.allowGeneric === true ? "recovery" : null);
 			if (topic === null) return null;
 			const desired = operation.failure?.desiredEnabled;
 			const goal = desired !== void 0 ? t(desired ? "failure.goalDesiredEnable" : "failure.goalDesiredDisable") : affectedSkinId !== operation.skinId ? t("failure.goalAffected") : operation.kind === "pin" ? t("failure.goalPin") : operation.kind === "activate" ? t("failure.goalActivate") : operation.kind === "deactivate" ? t("failure.goalDeactivate") : operation.kind === "unpin" ? t("failure.goalUnpin") : operation.kind === "uninstall" ? t("failure.goalUninstall") : t("failure.goalOther", { action: operationLabel(operation.kind, t) });
@@ -2797,7 +2812,7 @@ window.__ModuleLoader__.load({
 			const host = desktop ? t("common.hostDesktop") : t("common.hostWeb");
 			const hostInstructions = desktop ? t("failure.prompt.hostDesktop") : t("failure.prompt.hostWeb");
 			const diagnostic = options.diagnosticLog === void 0 || options.diagnosticLog === "" ? "" : `\n\n${t("failure.prompt.diagnostic", { diagnostic: options.diagnosticLog })}`;
-			const explanation = t(localRepairGuidance[topic] ?? "failure.repair.recovery");
+			const explanation = conflictFacts ?? t(localRepairGuidance[topic] ?? "failure.repair.recovery");
 			return [
 				t("failure.prompt.title"),
 				"",
@@ -2873,6 +2888,32 @@ window.__ModuleLoader__.load({
 			if (options.failureKind === "compatibility" || /bundle patch is missing:/i.test(message)) return skinLink === null ? [] : [skinLink];
 			if (options.failureKind === "integrity" || options.failureKind === "build-approval") return [];
 			return [troubleshootLink];
+		}
+		function describeConflicts(conflicts, t) {
+			const rows = conflicts ?? [];
+			const lines = rows.map((conflict) => {
+				const identifiers = conflict.identifiers.map((identifier) => identifier.trim()).filter((identifier) => identifier !== "");
+				return t("failure.conflictLine", {
+					existing: conflict.existing,
+					identifiers: identifiers.length === 0 ? "" : t("failure.conflictIdentifiers", { identifiers: identifiers.join("、") })
+				});
+			});
+			const existing = [...new Set(rows.map((conflict) => conflict.existing.trim()).filter((name) => name !== ""))];
+			return {
+				lines,
+				handle: existing.length === 0 ? void 0 : existing.length === 1 ? t("failure.conflictHandleOne", { existing: existing[0] }) : t("failure.conflictHandleMany", { existing: existing.join("、") })
+			};
+		}
+		function conflictPromptFacts(operation, skin, t) {
+			if (operation.failure?.kind !== "conflict") return null;
+			const described = describeConflicts(operation.failure.conflicts, t);
+			if (described.lines.length === 0 && described.handle === void 0) return null;
+			return [
+				...described.lines,
+				described.handle ?? t("failure.conflictNext"),
+				t("failure.conflictPackage", { packageName: skin.package }),
+				t("failure.conflictTarget", { target: skin.install.target })
+			].join("\n");
 		}
 		function manualInstallNotice(title, spec, t) {
 			const value = spec?.trim();
@@ -3018,12 +3059,17 @@ window.__ModuleLoader__.load({
 				why: t("failure.missingFilesNext"),
 				links
 			};
-			if (operation.failure?.kind === "conflict" || raw.includes("发现插件安装冲突")) return {
-				title: t("failure.installBlocked"),
-				what: t("failure.conflict", { name: skinName }),
-				why: t("failure.conflictNext"),
-				links
-			};
+			if (operation.failure?.kind === "conflict" || raw.includes("发现插件安装冲突")) {
+				const described = describeConflicts(operation.failure?.conflicts, t);
+				return {
+					title: t("failure.installBlocked"),
+					what: t("failure.conflict", { name: skinName }),
+					why: described.handle ?? t("failure.conflictNext"),
+					links,
+					...described.lines.length === 0 ? {} : { details: described.lines },
+					...skin?.package?.trim() ? { copySpec: skin.package } : {}
+				};
+			}
 			if (operation.failure?.kind === "compatibility") return {
 				title: t("failure.operation", { action: kind }),
 				what: t("failure.compatibility", { name: skinName }),
@@ -3586,6 +3632,15 @@ window.__ModuleLoader__.load({
 					assessment: installCompatibility(skin, "dsh", runtime, t),
 					artifactRisk: state.artifactRisk
 				}];
+			});
+		}
+		function enabledSkinsForInstallConflict(operation, skins, states) {
+			const names = new Set((operation.failure?.conflicts ?? []).map((conflict) => conflict.existing));
+			if (names.size === 0) return [];
+			return skins.filter((skin) => {
+				if (!names.has(skin.package)) return false;
+				const state = runtimeFor(states, skin.id);
+				return state.installation === "installed" && (state.activation === "active" || state.primary === true || state.pinned === true);
 			});
 		}
 		function preservedSkinIds(states, conflicts) {
@@ -4569,6 +4624,8 @@ window.__ModuleLoader__.load({
 			const recoveryClaim = (0, react.useRef)(null);
 			const retryBlockedRecovery = (0, react.useRef)(true);
 			const recoveryViewMounted = (0, react.useRef)(true);
+			const conflictCloseTried = (0, react.useRef)(/* @__PURE__ */ new Set());
+			const runForSkinRef = (0, react.useRef)(async () => false);
 			const [recoveryFocus, setRecoveryFocus] = (0, react.useState)(0);
 			const [installRecovery, setInstallRecovery] = (0, react.useState)(null);
 			const restartTargetRef = (0, react.useRef)(null);
@@ -5922,7 +5979,17 @@ window.__ModuleLoader__.load({
 					} catch {}
 					setActivationWarningAccepted(true);
 				}
-				const preserved = accepted && confirmation?.conflicts !== void 0 ? (preservedOverride ?? preservedSkinIds(statesRef.current, confirmation.conflicts)).filter((id) => id !== confirmation.skin.id) : void 0;
+				const installConflict = confirmation?.installConflict;
+				if (accepted && installConflict !== void 0 && confirmation?.conflicts !== void 0) {
+					const closed = confirmation.conflicts.filter((conflict) => !conflict.keep);
+					const skinId = confirmation.skin.id;
+					(async () => {
+						for (const conflict of closed) await runForSkinRef.current(conflict.skin.id, "deactivate");
+						setDismissedNoticeIds((ids) => [.../* @__PURE__ */ new Set([...ids, `failed:${installConflict.operationId}`])].slice(-100));
+						await runForSkinRef.current(skinId, "install", void 0, { installAndUse: true });
+					})();
+				}
+				const preserved = accepted && confirmation?.conflicts !== void 0 && installConflict === void 0 ? (preservedOverride ?? preservedSkinIds(statesRef.current, confirmation.conflicts)).filter((id) => id !== confirmation.skin.id) : void 0;
 				const approvals = preserved === void 0 ? void 0 : preservedSkinApprovals(statesRef.current, skinsRef.current, preserved, runtimeRef.current);
 				resolve?.(accepted && confirmation !== null ? {
 					context: confirmation.context,
@@ -6305,7 +6372,47 @@ window.__ModuleLoader__.load({
 			}, [runForSkin]);
 			const nativeActivation = (0, react.useRef)(runForSkin);
 			nativeActivation.current = runForSkin;
+			runForSkinRef.current = runForSkin;
 			const nativePanelSync = (0, react.useRef)(void 0);
+			(0, react.useEffect)(() => {
+				if (compatibilityConfirmation !== null) return;
+				const operation = operations.find((item) => item.phase === "failed" && item.failure?.kind === "conflict" && !dismissedNoticeIds.includes(`failed:${item.id}`) && !conflictCloseTried.current.has(item.skinId));
+				if (operation === void 0) return;
+				const matches = enabledSkinsForInstallConflict(operation, skins, states);
+				const target = skins.find((skin) => skin.id === operation.skinId);
+				if (matches.length === 0 || target === void 0) return;
+				conflictCloseTried.current.add(operation.skinId);
+				const assessmentFor = (skin) => installCompatibility(skin, "dsh", runtime, t) ?? {
+					decision: "unknown",
+					reason: t("common.unknownDshVersionInstall"),
+					adapterIds: []
+				};
+				setCompatibilityConfirmation({
+					skin: target,
+					assessment: assessmentFor(target),
+					actionLabel: t("common.install"),
+					context: compatibilityContext(target, runtime),
+					firstUse: false,
+					pin: false,
+					kind: "activate",
+					conflicts: matches.map((skin) => ({
+						skin,
+						state: runtimeFor(states, skin.id),
+						keep: false,
+						assessment: assessmentFor(skin),
+						artifactRisk: runtimeFor(states, skin.id).artifactRisk
+					})),
+					installConflict: { operationId: operation.id }
+				});
+			}, [
+				compatibilityConfirmation,
+				dismissedNoticeIds,
+				operations,
+				runtime,
+				skins,
+				states,
+				t
+			]);
 			(0, react.useEffect)(() => {
 				if (!officialDesktop || desktopPluginPanel?.observe === void 0 && clientRuntime?.observe === void 0) return;
 				let disposed = false;
@@ -6772,6 +6879,8 @@ window.__ModuleLoader__.load({
 				}, `${location}:${skin.id}`);
 			};
 			const needsFailurePrompt = (operation) => {
+				if (operation.failure?.kind === "conflict" && operation.skinId !== void 0 && !conflictCloseTried.current.has(operation.skinId) && enabledSkinsForInstallConflict(operation, skins, states).length > 0) return false;
+				if (compatibilityConfirmation?.installConflict?.operationId === operation.id) return false;
 				return recoveryRoute({
 					phase: operation.phase ?? "",
 					kind: operation.kind ?? "update",
@@ -6816,6 +6925,26 @@ window.__ModuleLoader__.load({
 				allowGeneric: true,
 				t
 			});
+			const manualRecovery = installRecovery !== null && installRecovery.skinId !== void 0 && [
+				"none",
+				"open-failed",
+				"blocked",
+				"companions",
+				"replace"
+			].includes(installRecovery.lead) ? installRecovery : null;
+			const closeManualPanel = () => {
+				setShowInstallOptions(false);
+				if (manualRecovery === null) return;
+				recoveryClaim.current = null;
+				if (manualRecovery.lead !== "blocked") {
+					desktopPluginPanel?.forgetRecovery?.(manualRecovery.operationId);
+					dismissNotice(`failed:${manualRecovery.operationId}`);
+				} else {
+					desktopPluginPanel?.noteRecovery?.(manualRecovery.operationId, "blocked");
+					retryBlockedRecovery.current = true;
+				}
+				setInstallRecovery(null);
+			};
 			const sourceGuide = existingSourceGuide({
 				failure: interceptFailure,
 				kind: interceptOperation?.kind,
@@ -8095,9 +8224,10 @@ window.__ModuleLoader__.load({
 								children: interceptPending ? t("common.processing") : interceptApprovalAction === "repair-configuration" ? t("common.removeOverrideContinue") : interceptApprovalAction === "retry" ? t("common.retry") : artifactRisk === void 0 ? t("common.allowContinue") : interceptOperation?.kind === "activate" ? t("common.stillUseAction") : interceptOperation?.kind === "pin" ? t("common.stillPinAction") : t("common.stillContinueAction")
 							})] })
 						] }),
-						children: intercept !== null && (configurationPlan !== void 0 || repairPrompt !== null || sourceGuide !== null || artifactRisk === void 0 && intercept.links.length > 0 || interceptHasError || copyLogError !== null || intercept.copySpec !== void 0) ? /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+						children: intercept !== null && (configurationPlan !== void 0 || repairPrompt !== null || sourceGuide !== null || artifactRisk === void 0 && intercept.links.length > 0 || interceptHasError || copyLogError !== null || intercept.copySpec !== void 0 || (intercept.details?.length ?? 0) > 0) ? /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
 							className: SkinMarket_module_css_default.interceptNotice,
 							children: [
+								intercept.details?.map((line) => /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", { children: line }, line)),
 								intercept.copySpec !== void 0 && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", { children: t("common.manualAddHint", { spec: intercept.copySpec }) }),
 								configurationPlan !== void 0 && interceptOperation !== null && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(ConfigurationChanges, {
 									t,
@@ -8161,7 +8291,7 @@ window.__ModuleLoader__.load({
 						}) : void 0
 					}),
 					/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Modal, {
-						open: installRecovery !== null,
+						open: installRecovery !== null && manualRecovery === null,
 						onClose: () => {
 							recoveryClaim.current = null;
 							if (installRecovery !== null && installRecovery.lead !== "blocked") {
@@ -8268,123 +8398,163 @@ window.__ModuleLoader__.load({
 						})] }) : void 0
 					}),
 					/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Modal, {
-						open: showInstallOptions,
-						onClose: () => setShowInstallOptions(false),
+						open: showInstallOptions || manualRecovery !== null,
+						onClose: closeManualPanel,
 						title: t("common.installSkinTitle", { name: selected?.name.zh ?? t("common.skin") }),
 						closeLabel: t("common.close"),
 						className: SkinMarket_module_css_default.modalSurface,
-						description: manualOnly ? hostKind === "desktop" ? `${manualInstallNotice}${t("common.manualPromptDesktop")}` : `${manualInstallNotice}${t("common.manualPromptWeb")}` : hostKind === "desktop" ? t("common.desktopInstallInput") : t("common.webInstallCommand"),
-						footer: manualOnly ? void 0 : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
-							variant: "outline",
-							size: "sm",
-							onClick: () => setShowInstallOptions(false),
-							children: t("common.close")
-						}),
+						description: [manualRecovery === null ? void 0 : manualRecovery.lead === "open-failed" ? t("failure.recoveryOpenFailed") : manualRecovery.lead === "blocked" ? t("failure.recoveryBlocked") : manualRecovery.lead === "companions" ? t("failure.recoveryCompanions") : manualRecovery.lead === "replace" && manualRecovery.spec ? t("failure.manualReplace", { spec: manualRecovery.spec }) : void 0, manualOnly ? hostKind === "desktop" ? `${manualInstallNotice}${t("common.manualPromptDesktop")}` : `${manualInstallNotice}${t("common.manualPromptWeb")}` : hostKind === "desktop" ? t("common.desktopInstallInput") : t("common.webInstallCommand")].filter(Boolean).join(""),
+						footer: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [
+							manualRecovery?.lead === "open-failed" && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+								variant: "primary",
+								size: "sm",
+								onClick: () => {
+									if (manualRecovery.spec === void 0 || manualRecovery.spec === "" || desktopPluginPanel === void 0) return;
+									desktopPluginPanel.open(manualRecovery.spec, {
+										skinId: manualRecovery.skinId ?? "dsh-skin-market",
+										packageName: manualRecovery.packageName ?? "dsh-skin-market",
+										operationId: manualRecovery.operationId,
+										companions: manualRecovery.companions
+									}, { navigateOnResume: false }).then((result) => {
+										if (!mounted.current) return;
+										if (result.ok && result.kind === "prefilled") {
+											desktopPluginPanel.noteRecovery?.(manualRecovery.operationId, "opened");
+											setDismissedNoticeIds((ids) => [.../* @__PURE__ */ new Set([...ids, `failed:${manualRecovery.operationId}`])].slice(-100));
+											recoveryClaim.current = null;
+											setShowInstallOptions(false);
+											setInstallRecovery(null);
+										} else if (result.ok && result.kind === "resumed" || !result.ok && result.code === "busy") {
+											desktopPluginPanel.noteRecovery?.(manualRecovery.operationId, "blocked");
+											setInstallRecovery({
+												...manualRecovery,
+												lead: "blocked"
+											});
+										}
+									});
+								},
+								children: t("failure.recoveryOpenPanel")
+							}),
+							manualRecovery !== null && recoveryPrompt !== null && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+								variant: "outline",
+								size: "sm",
+								onClick: () => void copyRecoveryPrompt(),
+								children: t("common.copyTroubleshootingPrompt")
+							}),
+							/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+								variant: "outline",
+								size: "sm",
+								onClick: closeManualPanel,
+								children: t("common.close")
+							})
+						] }),
 						children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
 							className: SkinMarket_module_css_default.installOptions,
-							children: [/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: t("common.installOptionPrompt") }), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
-								className: SkinMarket_module_css_default.copyCapsule,
-								children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("code", {
-									title: installPrompt,
-									children: installPrompt
-								}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
-									className: SkinMarket_module_css_default.copyCapsuleButton,
-									variant: "ghost",
-									size: "sm",
-									icon: installCopied === `${selected?.id}:prompt:${installPrompt}` ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCheckOutline, {}) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
-									"aria-label": t("common.copyPrompt"),
-									title: t("common.copyPrompt"),
-									onClick: () => void copyInstallOption("prompt", installPrompt)
-								})]
-							})] }), hostKind === "desktop" ? /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [manualOnly && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
-								className: SkinMarket_module_css_default.manualInstallGuide,
-								children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", { children: t("common.openAddPlugin") })
-							}), installInputs.map((entry) => {
-								const label = entry.label;
-								const key = `input:${entry.key}`;
-								return /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: label }), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
+							children: [
+								installInputs.map((entry) => {
+									const key = `input:${entry.key}`;
+									return /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: entry.label }), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
+										className: SkinMarket_module_css_default.copyCapsule,
+										children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Input, {
+											className: SkinMarket_module_css_default.copyCapsuleInput,
+											readOnly: true,
+											value: entry.value,
+											"aria-label": entry.label
+										}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+											className: SkinMarket_module_css_default.copyCapsuleButton,
+											variant: "ghost",
+											size: "sm",
+											icon: installCopied === `${selected?.id}:${key}:${entry.value}` ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCheckOutline, {}) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
+											"aria-label": t("common.copyLabel", { label: entry.label }),
+											title: t("common.copyLabel", { label: entry.label }),
+											onClick: () => void copyInstallOption(key, entry.value)
+										})]
+									})] }, key);
+								}),
+								/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: t("common.installOptionPrompt") }), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
 									className: SkinMarket_module_css_default.copyCapsule,
-									children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Input, {
-										className: SkinMarket_module_css_default.copyCapsuleInput,
-										readOnly: true,
-										value: entry.value,
-										"aria-label": label
+									children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("code", {
+										title: installPrompt,
+										children: installPrompt
 									}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 										className: SkinMarket_module_css_default.copyCapsuleButton,
 										variant: "ghost",
 										size: "sm",
-										icon: installCopied === `${selected?.id}:${key}:${entry.value}` ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCheckOutline, {}) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
-										"aria-label": t("common.copyLabel", { label }),
-										title: t("common.copyLabel", { label }),
-										onClick: () => void copyInstallOption(key, entry.value)
+										icon: installCopied === `${selected?.id}:prompt:${installPrompt}` ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCheckOutline, {}) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
+										"aria-label": t("common.copyPrompt"),
+										title: t("common.copyPrompt"),
+										onClick: () => void copyInstallOption("prompt", installPrompt)
 									})]
-								})] }, key);
-							})] }) : /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", { children: [
-								/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
-									className: SkinMarket_module_css_default.installCommandLabel,
-									children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: t("common.installOptionCommand") }), installPlatform === "win32" && /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
-										className: SkinMarket_module_css_default.installSegmented,
-										role: "group",
-										"aria-label": t("common.installOptionTerminal"),
-										children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("button", {
-											type: "button",
-											"aria-pressed": windowsTerminal === "powershell",
-											onClick: () => {
-												setWindowsTerminal("powershell");
-												setInstallCopied(null);
-											},
-											children: "PowerShell"
-										}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("button", {
-											type: "button",
-											"aria-pressed": windowsTerminal === "cmd",
-											onClick: () => {
-												setWindowsTerminal("cmd");
-												setInstallCopied(null);
-											},
-											children: "CMD"
-										})]
-									})]
-								}),
-								installCommandGroups.map((group) => /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
-									className: SkinMarket_module_css_default.installCommandGroup,
-									role: "group",
-									"aria-label": group.label || t("common.installCommand"),
-									children: [installCommandGroups.length > 1 && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: group.label }), group.commands.map((entry) => {
-										const label = installCommandGroups.length > 1 ? `${group.label} ${entry.label}` : entry.label;
-										const key = `command:${group.key}:${entry.key}`;
-										return /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
-											className: SkinMarket_module_css_default.copyCapsule,
-											children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("code", {
-												title: entry.value,
-												children: entry.value
-											}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
-												className: SkinMarket_module_css_default.copyCapsuleButton,
-												variant: "ghost",
-												size: "sm",
-												icon: installCopied === `${selected?.id}:${key}:${entry.value}` ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCheckOutline, {}) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
-												"aria-label": t("common.copyLabel", { label }),
-												title: t("common.copyLabel", { label }),
-												onClick: () => void copyInstallOption(key, entry.value)
+								})] }),
+								hostKind === "desktop" ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(react_jsx_runtime.Fragment, { children: manualOnly && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+									className: SkinMarket_module_css_default.manualInstallGuide,
+									children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", { children: t("common.openAddPlugin") })
+								}) }) : /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", { children: [
+									/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+										className: SkinMarket_module_css_default.installCommandLabel,
+										children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: t("common.installOptionCommand") }), installPlatform === "win32" && /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+											className: SkinMarket_module_css_default.installSegmented,
+											role: "group",
+											"aria-label": t("common.installOptionTerminal"),
+											children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("button", {
+												type: "button",
+												"aria-pressed": windowsTerminal === "powershell",
+												onClick: () => {
+													setWindowsTerminal("powershell");
+													setInstallCopied(null);
+												},
+												children: "PowerShell"
+											}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("button", {
+												type: "button",
+												"aria-pressed": windowsTerminal === "cmd",
+												onClick: () => {
+													setWindowsTerminal("cmd");
+													setInstallCopied(null);
+												},
+												children: "CMD"
 											})]
-										}, key);
-									})]
-								}, group.key)),
-								installCommands.length === 0 && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
-									className: SkinMarket_module_css_default.notice,
-									role: "status",
-									children: canUsePowerShell ? t("common.installPathCmd") : installEnvironment?.cliAvailable === false ? t("common.installPathUnknown") : t("common.installCommandUnavailable")
-								}),
-								/* @__PURE__ */ (0, react_jsx_runtime.jsx)("small", { children: t("submission.cliWarning") })
-							] })]
+										})]
+									}),
+									installCommandGroups.map((group) => /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+										className: SkinMarket_module_css_default.installCommandGroup,
+										role: "group",
+										"aria-label": group.label || t("common.installCommand"),
+										children: [installCommandGroups.length > 1 && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: group.label }), group.commands.map((entry) => {
+											const label = installCommandGroups.length > 1 ? `${group.label} ${entry.label}` : entry.label;
+											const key = `command:${group.key}:${entry.key}`;
+											return /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
+												className: SkinMarket_module_css_default.copyCapsule,
+												children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("code", {
+													title: entry.value,
+													children: entry.value
+												}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+													className: SkinMarket_module_css_default.copyCapsuleButton,
+													variant: "ghost",
+													size: "sm",
+													icon: installCopied === `${selected?.id}:${key}:${entry.value}` ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCheckOutline, {}) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconCopyOutline, {}),
+													"aria-label": t("common.copyLabel", { label }),
+													title: t("common.copyLabel", { label }),
+													onClick: () => void copyInstallOption(key, entry.value)
+												})]
+											}, key);
+										})]
+									}, group.key)),
+									installCommands.length === 0 && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+										className: SkinMarket_module_css_default.notice,
+										role: "status",
+										children: canUsePowerShell ? t("common.installPathCmd") : installEnvironment?.cliAvailable === false ? t("common.installPathUnknown") : t("common.installCommandUnavailable")
+									}),
+									/* @__PURE__ */ (0, react_jsx_runtime.jsx)("small", { children: t("submission.cliWarning") })
+								] })
+							]
 						})
 					}),
 					/* @__PURE__ */ (0, react_jsx_runtime.jsxs)(_deepseek_ai_dsh_client_ui_primitives.Modal, {
 						open: warningDialog === "use",
 						onClose: () => finishCompatibilityConfirmation(false),
-						title: compatibilityConfirmation?.kind === "deactivate" || compatibilityConfirmation?.kind === "unpin" ? t("common.operationConfirmation") : t("common.switchConfirmation"),
+						title: compatibilityConfirmation?.installConflict !== void 0 || compatibilityConfirmation?.kind === "deactivate" || compatibilityConfirmation?.kind === "unpin" ? t("common.operationConfirmation") : t("common.switchConfirmation"),
 						closeLabel: t("common.close"),
 						className: SkinMarket_module_css_default.warningModal,
-						description: compatibilityConfirmation === null ? void 0 : describeUseConfirmation({
+						description: compatibilityConfirmation?.installConflict !== void 0 ? t("failure.conflictCloseFirst") : compatibilityConfirmation === null ? void 0 : describeUseConfirmation({
 							...compatibilityConfirmation,
 							assessment: compatibilityConfirmation.kind === "activate" || compatibilityConfirmation.kind === "pin" ? compatibilityConfirmation.assessment : void 0,
 							name: localizedSkinName(compatibilityConfirmation.skin.name, t),

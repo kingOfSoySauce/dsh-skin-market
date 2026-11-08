@@ -2028,7 +2028,7 @@ describe('client market', () => {
     expect(screen.getByRole('button', { name: '复制命令' })).toBeTruthy()
     expect(screen.getAllByRole('button', { name: '复制提示词' })).toHaveLength(1)
     expect(screen.queryByRole('button', { name: '取消' })).toBeNull()
-    expect(screen.queryByRole('textbox', { name: '插件包名' })).toBeNull()
+    expect((screen.getByRole('textbox', { name: '插件包名' }) as HTMLInputElement).value).toBe(manual.install.target)
     expect(screen.queryByRole('button', { name: '打开安装页面' })).toBeNull()
     expect(open).not.toHaveBeenCalled()
     fireEvent.click(screen.getByRole('button', { name: '复制命令' }))

@@ -500,6 +500,13 @@ export declare const messageCatalog: {
         readonly 'failure.missingFilesNext': '请先核对安装目标与安装包文件，确认缺包后反馈作者。';
         readonly 'failure.conflict': '「{name}」与已安装插件冲突。';
         readonly 'failure.conflictNext': '请核对冲突的包、来源或组件标识；仅停用未必能解除安装冲突。';
+        readonly 'failure.conflictLine': '与已安装的 {existing} 冲突{identifiers}。';
+        readonly 'failure.conflictIdentifiers': '，标识 {identifiers}';
+        readonly 'failure.conflictPackage': '包名：{packageName}';
+        readonly 'failure.conflictTarget': '安装目标：{target}';
+        readonly 'failure.conflictCloseFirst': '这些插件正在使用。先关闭后再继续安装。';
+        readonly 'failure.conflictHandleOne': '请先在官方插件页停用或卸载 {existing}，再安装这个皮肤。';
+        readonly 'failure.conflictHandleMany': '请先在官方插件页停用或卸载这些包：{existing}。然后再安装这个皮肤。';
         readonly 'failure.compatibility': '「{name}」未通过当前 DSH 的兼容检查。';
         readonly 'failure.compatibilityNext': '请核对宿主版本与皮肤声明的兼容范围（当前 DSH）。';
         readonly 'failure.metadataMismatch': '「{name}」的安装信息与安装包不一致。';
@@ -1135,6 +1142,13 @@ export declare const messageCatalog: {
         readonly 'failure.missingFilesNext': 'Check the install target and package file first. Report it to the author after confirming the package is incomplete.';
         readonly 'failure.conflict': '“{name}” conflicts with an installed plugin.';
         readonly 'failure.conflictNext': 'Check the conflicting package, source, or component identifier; disabling it alone may not resolve an install conflict.';
+        readonly 'failure.conflictLine': 'Conflicts with installed {existing}{identifiers}.';
+        readonly 'failure.conflictIdentifiers': ' ({identifiers})';
+        readonly 'failure.conflictPackage': 'Package: {packageName}';
+        readonly 'failure.conflictTarget': 'Install target: {target}';
+        readonly 'failure.conflictCloseFirst': 'These plugins are in use. Close them before continuing the install.';
+        readonly 'failure.conflictHandleOne': 'Disable or uninstall {existing} on the official plugin page, then install this skin.';
+        readonly 'failure.conflictHandleMany': 'Disable or uninstall these packages on the official plugin page: {existing}. Then install this skin.';
         readonly 'failure.compatibility': '“{name}” did not pass the current DSH compatibility check.';
         readonly 'failure.compatibilityNext': 'Check the current DSH version against the skin’s declared compatibility range.';
         readonly 'failure.metadataMismatch': 'The install information for “{name}” does not match the install package.';
