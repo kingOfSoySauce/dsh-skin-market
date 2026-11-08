@@ -297,155 +297,155 @@ window.__ModuleLoader__.load({
 			document.head.appendChild(tag);
 		}
 		var SkinMarket_module_css_default = {
-			"pinWarning": "VqXecW_pinWarning",
-			"operation": "VqXecW_operation",
-			"previewPlaceholder": "VqXecW_previewPlaceholder",
-			"spin": "VqXecW_spin",
-			"operationDismiss": "VqXecW_operationDismiss",
-			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
-			"root": "VqXecW_root",
-			"notice": "VqXecW_notice",
-			"catalogTitleMain": "VqXecW_catalogTitleMain",
-			"installSegmented": "VqXecW_installSegmented",
-			"heroNext": "VqXecW_heroNext",
-			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
-			"error": "VqXecW_error",
-			"galleryProgress": "VqXecW_galleryProgress",
-			"mobileBack": "VqXecW_mobileBack",
-			"filters": "VqXecW_filters",
-			"skinList": "VqXecW_skinList",
-			"cardDescription": "VqXecW_cardDescription",
-			"installedRow": "VqXecW_installedRow",
-			"operationCopyLog": "VqXecW_operationCopyLog",
-			"detail": "VqXecW_detail",
-			"lightboxNext": "VqXecW_lightboxNext",
-			"operationDetails": "VqXecW_operationDetails",
-			"browserHomeBack": "VqXecW_browserHomeBack",
-			"heroNav": "VqXecW_heroNav",
-			"homeSearch": "VqXecW_homeSearch",
-			"searchField": "VqXecW_searchField",
-			"filterBar": "VqXecW_filterBar",
-			"hero": "VqXecW_hero",
-			"empty": "VqXecW_empty",
-			"detailSkeleton": "VqXecW_detailSkeleton",
-			"homeTitleRow": "VqXecW_homeTitleRow",
-			"thumbnailFrame": "VqXecW_thumbnailFrame",
-			"cardMetaLine": "VqXecW_cardMetaLine",
-			"operationMessage": "VqXecW_operationMessage",
-			"version": "VqXecW_version",
-			"activationConflicts": "VqXecW_activationConflicts",
-			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
-			"titleBlock": "VqXecW_titleBlock",
-			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
-			"warningModal": "VqXecW_warningModal",
-			"statusLabel": "VqXecW_statusLabel",
-			"homeActions": "VqXecW_homeActions",
-			"cardActionProgress": "VqXecW_cardActionProgress",
-			"srOnly": "VqXecW_srOnly",
-			"lightboxStage": "VqXecW_lightboxStage",
-			"lightboxClose": "VqXecW_lightboxClose",
-			"homeGithubLabel": "VqXecW_homeGithubLabel",
-			"installOptions": "VqXecW_installOptions",
-			"skeletonShimmer": "VqXecW_skeletonShimmer",
-			"sparkLine": "VqXecW_sparkLine",
-			"browserPanel": "VqXecW_browserPanel",
-			"description": "VqXecW_description",
-			"sparkArea": "VqXecW_sparkArea",
-			"activationConflictRow": "VqXecW_activationConflictRow",
-			"homeContent": "VqXecW_homeContent",
-			"discoverHeading": "VqXecW_discoverHeading",
-			"homeCard": "VqXecW_homeCard",
-			"homeError": "VqXecW_homeError",
-			"heroOpen": "VqXecW_heroOpen",
-			"detailHeader": "VqXecW_detailHeader",
-			"sparkFillEnd": "VqXecW_sparkFillEnd",
-			"operationMeta": "VqXecW_operationMeta",
-			"listLoading": "VqXecW_listLoading",
-			"homeCardMedia": "VqXecW_homeCardMedia",
-			"thumbnails": "VqXecW_thumbnails",
-			"homeCardMeta": "VqXecW_homeCardMeta",
-			"lightboxPrev": "VqXecW_lightboxPrev",
-			"sparkTip": "VqXecW_sparkTip",
-			"cardTitle": "VqXecW_cardTitle",
-			"homeHeader": "VqXecW_homeHeader",
-			"browserModal": "VqXecW_browserModal",
-			"homeLoadMore": "VqXecW_homeLoadMore",
-			"installCommandLabel": "VqXecW_installCommandLabel",
-			"tags": "VqXecW_tags",
-			"homeCardCopy": "VqXecW_homeCardCopy",
-			"homeSection": "VqXecW_homeSection",
-			"collectionTitle": "VqXecW_collectionTitle",
-			"listSkeleton": "VqXecW_listSkeleton",
-			"skeletonCard": "VqXecW_skeletonCard",
-			"operationDiagnostics": "VqXecW_operationDiagnostics",
-			"homeCardOpen": "VqXecW_homeCardOpen",
-			"changelog": "VqXecW_changelog",
-			"discoverTitle": "VqXecW_discoverTitle",
-			"galleryGroup": "VqXecW_galleryGroup",
-			"loading": "VqXecW_loading",
-			"browser": "VqXecW_browser",
-			"homeLoading": "VqXecW_homeLoading",
-			"homeCardFooter": "VqXecW_homeCardFooter",
-			"cardStars": "VqXecW_cardStars",
-			"operationElapsed": "VqXecW_operationElapsed",
-			"activationConflictState": "VqXecW_activationConflictState",
-			"operationActions": "VqXecW_operationActions",
-			"activationSwitch": "VqXecW_activationSwitch",
-			"headerDiscover": "VqXecW_headerDiscover",
-			"modalSurface": "VqXecW_modalSurface",
-			"segmented": "VqXecW_segmented",
-			"copyCapsule": "VqXecW_copyCapsule",
-			"thumbnailProgress": "VqXecW_thumbnailProgress",
-			"feedMeta": "VqXecW_feedMeta",
-			"repoLine": "VqXecW_repoLine",
-			"iconOnlyButton": "VqXecW_iconOnlyButton",
-			"skinCardPreview": "VqXecW_skinCardPreview",
-			"catalogHeader": "VqXecW_catalogHeader",
-			"skinCardBody": "VqXecW_skinCardBody",
-			"catalog": "VqXecW_catalog",
-			"catalogSearch": "VqXecW_catalogSearch",
-			"cardInlineActions": "VqXecW_cardInlineActions",
-			"repairPromptFallback": "VqXecW_repairPromptFallback",
-			"catalogTitle": "VqXecW_catalogTitle",
-			"installedMoreCard": "VqXecW_installedMoreCard",
-			"sparkFillTop": "VqXecW_sparkFillTop",
-			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
-			"installCommandGroup": "VqXecW_installCommandGroup",
-			"cardSourceAction": "VqXecW_cardSourceAction",
-			"browserContent": "VqXecW_browserContent",
-			"lightbox": "VqXecW_lightbox",
-			"discoveryGrid": "VqXecW_discoveryGrid",
-			"homeCardRepo": "VqXecW_homeCardRepo",
-			"cardMeta": "VqXecW_cardMeta",
-			"aboutGrid": "VqXecW_aboutGrid",
-			"recommendations": "VqXecW_recommendations",
-			"searchClear": "VqXecW_searchClear",
-			"skinAvatar": "VqXecW_skinAvatar",
-			"heroPrev": "VqXecW_heroPrev",
-			"sparkFillMid": "VqXecW_sparkFillMid",
-			"homeCardDescription": "VqXecW_homeCardDescription",
-			"skinCard": "VqXecW_skinCard",
-			"homeSectionTitle": "VqXecW_homeSectionTitle",
-			"actionRow": "VqXecW_actionRow",
 			"interceptNotice": "VqXecW_interceptNotice",
+			"aboutGrid": "VqXecW_aboutGrid",
+			"discoveryGrid": "VqXecW_discoveryGrid",
+			"sparkFillTop": "VqXecW_sparkFillTop",
+			"discoverTitle": "VqXecW_discoverTitle",
+			"modalSurface": "VqXecW_modalSurface",
+			"catalogHeader": "VqXecW_catalogHeader",
+			"activationConflictState": "VqXecW_activationConflictState",
+			"home": "VqXecW_home",
+			"lightboxStage": "VqXecW_lightboxStage",
+			"skinCardBody": "VqXecW_skinCardBody",
+			"repoLine": "VqXecW_repoLine",
+			"homeCardCopy": "VqXecW_homeCardCopy",
+			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
+			"browserHomeBack": "VqXecW_browserHomeBack",
+			"homeTitleRow": "VqXecW_homeTitleRow",
+			"mobileBack": "VqXecW_mobileBack",
+			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
+			"homeOperations": "VqXecW_homeOperations",
+			"installCommandLabel": "VqXecW_installCommandLabel",
+			"operation": "VqXecW_operation",
+			"sparkLine": "VqXecW_sparkLine",
+			"discoverHeading": "VqXecW_discoverHeading",
+			"description": "VqXecW_description",
+			"spark": "VqXecW_spark",
+			"notice": "VqXecW_notice",
+			"detailSkeleton": "VqXecW_detailSkeleton",
+			"cardMeta": "VqXecW_cardMeta",
+			"skinList": "VqXecW_skinList",
+			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
+			"feedMeta": "VqXecW_feedMeta",
+			"homeLoadMore": "VqXecW_homeLoadMore",
+			"root": "VqXecW_root",
+			"cardSourceAction": "VqXecW_cardSourceAction",
+			"heroNav": "VqXecW_heroNav",
+			"homeSection": "VqXecW_homeSection",
+			"catalogTitle": "VqXecW_catalogTitle",
+			"homeOperation": "VqXecW_homeOperation",
+			"detailHeader": "VqXecW_detailHeader",
+			"collectionTitle": "VqXecW_collectionTitle",
+			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
+			"segmented": "VqXecW_segmented",
+			"homeCardMedia": "VqXecW_homeCardMedia",
+			"homeCardFooter": "VqXecW_homeCardFooter",
+			"marketUpdateButton": "VqXecW_marketUpdateButton",
+			"homeGithubLabel": "VqXecW_homeGithubLabel",
+			"galleryGroup": "VqXecW_galleryGroup",
+			"lightboxNav": "VqXecW_lightboxNav",
+			"operationDismiss": "VqXecW_operationDismiss",
+			"installedRow": "VqXecW_installedRow",
+			"filters": "VqXecW_filters",
+			"skinCardPreview": "VqXecW_skinCardPreview",
+			"galleryProgress": "VqXecW_galleryProgress",
+			"sparkEnd": "VqXecW_sparkEnd",
+			"pinWarning": "VqXecW_pinWarning",
+			"sparkFillMid": "VqXecW_sparkFillMid",
+			"operationDiagnostics": "VqXecW_operationDiagnostics",
+			"heroPrev": "VqXecW_heroPrev",
+			"lightbox": "VqXecW_lightbox",
+			"homeLoading": "VqXecW_homeLoading",
+			"homeCardOpen": "VqXecW_homeCardOpen",
+			"activationConflictRow": "VqXecW_activationConflictRow",
+			"changelog": "VqXecW_changelog",
+			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
+			"cardMetaLine": "VqXecW_cardMetaLine",
+			"browser": "VqXecW_browser",
+			"homeSectionTitle": "VqXecW_homeSectionTitle",
+			"lightboxNext": "VqXecW_lightboxNext",
+			"skeletonCard": "VqXecW_skeletonCard",
+			"listSkeleton": "VqXecW_listSkeleton",
+			"catalog": "VqXecW_catalog",
+			"searchField": "VqXecW_searchField",
+			"lightboxPrev": "VqXecW_lightboxPrev",
+			"homeCardDescription": "VqXecW_homeCardDescription",
+			"thumbnailFrame": "VqXecW_thumbnailFrame",
+			"homeUpdateAction": "VqXecW_homeUpdateAction",
+			"thumbnails": "VqXecW_thumbnails",
+			"spin": "VqXecW_spin",
+			"listLoading": "VqXecW_listLoading",
+			"detail": "VqXecW_detail",
+			"skinCard": "VqXecW_skinCard",
+			"homeCardMeta": "VqXecW_homeCardMeta",
+			"heroOpen": "VqXecW_heroOpen",
+			"installCommandGroup": "VqXecW_installCommandGroup",
+			"homeGithubAction": "VqXecW_homeGithubAction",
+			"operationElapsed": "VqXecW_operationElapsed",
 			"activationConflictList": "VqXecW_activationConflictList",
 			"interceptHelp": "VqXecW_interceptHelp",
-			"operationCancel": "VqXecW_operationCancel",
-			"homeUpdateAction": "VqXecW_homeUpdateAction",
-			"manualInstallGuide": "VqXecW_manualInstallGuide",
-			"sparkEnd": "VqXecW_sparkEnd",
-			"homeGithubAction": "VqXecW_homeGithubAction",
-			"lightboxNav": "VqXecW_lightboxNav",
-			"spark": "VqXecW_spark",
-			"homeOperations": "VqXecW_homeOperations",
+			"cardInlineActions": "VqXecW_cardInlineActions",
+			"cardStars": "VqXecW_cardStars",
 			"cardAction": "VqXecW_cardAction",
-			"marketUpdateButton": "VqXecW_marketUpdateButton",
-			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
+			"hero": "VqXecW_hero",
 			"loadMoreHint": "VqXecW_loadMoreHint",
-			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
+			"sparkFillEnd": "VqXecW_sparkFillEnd",
+			"homeCard": "VqXecW_homeCard",
+			"installedMoreCard": "VqXecW_installedMoreCard",
 			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
-			"homeOperation": "VqXecW_homeOperation",
-			"home": "VqXecW_home"
+			"homeCardRepo": "VqXecW_homeCardRepo",
+			"installSegmented": "VqXecW_installSegmented",
+			"operationCancel": "VqXecW_operationCancel",
+			"searchClear": "VqXecW_searchClear",
+			"empty": "VqXecW_empty",
+			"homeHeader": "VqXecW_homeHeader",
+			"browserPanel": "VqXecW_browserPanel",
+			"operationDetails": "VqXecW_operationDetails",
+			"skeletonShimmer": "VqXecW_skeletonShimmer",
+			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
+			"installOptions": "VqXecW_installOptions",
+			"copyCapsule": "VqXecW_copyCapsule",
+			"homeActions": "VqXecW_homeActions",
+			"operationMessage": "VqXecW_operationMessage",
+			"catalogTitleMain": "VqXecW_catalogTitleMain",
+			"operationActions": "VqXecW_operationActions",
+			"titleBlock": "VqXecW_titleBlock",
+			"version": "VqXecW_version",
+			"homeError": "VqXecW_homeError",
+			"error": "VqXecW_error",
+			"filterBar": "VqXecW_filterBar",
+			"repairPromptFallback": "VqXecW_repairPromptFallback",
+			"headerDiscover": "VqXecW_headerDiscover",
+			"previewPlaceholder": "VqXecW_previewPlaceholder",
+			"catalogSearch": "VqXecW_catalogSearch",
+			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
+			"actionRow": "VqXecW_actionRow",
+			"sparkTip": "VqXecW_sparkTip",
+			"statusLabel": "VqXecW_statusLabel",
+			"recommendations": "VqXecW_recommendations",
+			"heroNext": "VqXecW_heroNext",
+			"tags": "VqXecW_tags",
+			"cardActionProgress": "VqXecW_cardActionProgress",
+			"activationConflicts": "VqXecW_activationConflicts",
+			"cardTitle": "VqXecW_cardTitle",
+			"skinAvatar": "VqXecW_skinAvatar",
+			"warningModal": "VqXecW_warningModal",
+			"manualInstallGuide": "VqXecW_manualInstallGuide",
+			"thumbnailProgress": "VqXecW_thumbnailProgress",
+			"operationMeta": "VqXecW_operationMeta",
+			"homeSearch": "VqXecW_homeSearch",
+			"sparkArea": "VqXecW_sparkArea",
+			"browserContent": "VqXecW_browserContent",
+			"homeContent": "VqXecW_homeContent",
+			"browserModal": "VqXecW_browserModal",
+			"lightboxClose": "VqXecW_lightboxClose",
+			"loading": "VqXecW_loading",
+			"operationCopyLog": "VqXecW_operationCopyLog",
+			"srOnly": "VqXecW_srOnly",
+			"activationSwitch": "VqXecW_activationSwitch",
+			"cardDescription": "VqXecW_cardDescription",
+			"iconOnlyButton": "VqXecW_iconOnlyButton"
 		};
 		//#endregion
 		//#region \0dsh-skin-market-css:/Users/leon/Code/liang-intensity-calibrator/code/dsh-skin-market/src/client/media-hover.module.css.mjs
@@ -3766,7 +3766,7 @@ window.__ModuleLoader__.load({
 		}
 		function pendingRestartTitle(title, restartAvailable, t) {
 			return t("common.pendingRestartTitle", {
-				title,
+				title: title.replace(/[。．.!！?？；;]+$/u, ""),
 				suffix: restartAvailable ? t("common.pendingRestart") : t("common.manualRestart")
 			});
 		}
@@ -4028,18 +4028,35 @@ window.__ModuleLoader__.load({
 		function clientFailureId(scope) {
 			return `${scope}-${Date.now()}-${++clientFailureSequence}`;
 		}
-		function restartPromptKey(state, target) {
-			return target.kind === "skin" ? JSON.stringify([
-				target.kind,
-				target.skinId,
-				state.restartNoticeId ?? "legacy",
-				runtimeFor(state.skins, target.skinId).installedVersion,
-				runtimeFor(state.skins, target.skinId).restartSource ?? "protected"
-			]) : JSON.stringify([
-				target.kind,
-				"",
-				state.marketUpdateNoticeId ?? "legacy"
-			]);
+		/**
+		* A restart prompt belongs to a pending target, not to a single Host receipt.
+		* The Host can revise the receipt id, installed version or restart source
+		* while the same skin still waits for one restart. Keying by target keeps the
+		* acknowledged prompt quiet until that pending target is actually cleared;
+		* another target is a new item and may prompt once.
+		*/
+		function restartPromptKey(target) {
+			return JSON.stringify([target.kind, target.kind === "skin" ? target.skinId : ""]);
+		}
+		function rememberRestartPromptKey(key, prompts) {
+			prompts.add(key);
+			try {
+				const saved = JSON.parse(window.sessionStorage.getItem(RESTART_PROMPTS_KEY) ?? "[]");
+				if (Array.isArray(saved)) {
+					for (const item of saved) if (typeof item === "string") prompts.add(item);
+				}
+				window.sessionStorage.setItem(RESTART_PROMPTS_KEY, JSON.stringify([...prompts].slice(-100)));
+			} catch {}
+		}
+		function rememberDismissedRestartBannerKey(key, banners) {
+			banners.add(key);
+			try {
+				const saved = JSON.parse(window.sessionStorage.getItem(DISMISSED_RESTART_BANNERS_KEY) ?? "[]");
+				if (Array.isArray(saved)) {
+					for (const item of saved) if (typeof item === "string") banners.add(item);
+				}
+				window.sessionStorage.setItem(DISMISSED_RESTART_BANNERS_KEY, JSON.stringify([...banners].slice(-100)));
+			} catch {}
 		}
 		const GALLERY_INTERVAL_MS = 5600;
 		const HOME_COMPACT_ENTER_SCROLL = 72;
@@ -4671,7 +4688,7 @@ window.__ModuleLoader__.load({
 				});
 			}, []);
 			const presentRestartNotice = (0, react.useCallback)((notice, state, autoPrompt = true) => {
-				const key = restartPromptKey(state, notice.target);
+				const key = restartPromptKey(notice.target);
 				restartNoticeHistory.current.set(key, notice);
 				if (dismissedRestartBanners.current.has(key)) return;
 				pendingRestartRef.current = notice;
@@ -4683,11 +4700,8 @@ window.__ModuleLoader__.load({
 						for (const item of saved) if (typeof item === "string") restartPrompts.current.add(item);
 					}
 					seen ||= restartPrompts.current.has(key);
-					restartPrompts.current.add(key);
-					window.sessionStorage.setItem(RESTART_PROMPTS_KEY, JSON.stringify([...restartPrompts.current].slice(-100)));
-				} catch {
-					restartPrompts.current.add(key);
-				}
+				} catch {}
+				rememberRestartPromptKey(key, restartPrompts.current);
 				if (seen || !autoPrompt) return;
 				restartTargetRef.current = notice.target;
 				setRestartTarget(notice.target);
@@ -5014,7 +5028,8 @@ window.__ModuleLoader__.load({
 					const skin = runtimeFor(state.skins, skinId);
 					if (state.hostKind === "desktop" || notice.instanceId !== state.instanceId || skin.installation !== "installed" || skin.activation === "inactive" && skin.primary !== true && skin.pinned !== true) clientRestartNotices.current.delete(skinId);
 				}
-				const pendingFor = (target) => target.kind === "market-update" ? state.marketUpdateRestartRequired === true : !webRestartGrace.current.has(target.skinId) && (runtimeFor(state.skins, target.skinId).activation === "restart-required" || clientRestartNotices.current.has(target.skinId));
+				const restartStillPending = (target) => target.kind === "market-update" ? state.marketUpdateRestartRequired === true : runtimeFor(state.skins, target.skinId).activation === "restart-required" || clientRestartNotices.current.has(target.skinId);
+				const pendingFor = (target) => target.kind === "market-update" ? restartStillPending(target) : !webRestartGrace.current.has(target.skinId) && restartStillPending(target);
 				for (const [storageKey, records] of [[RESTART_PROMPTS_KEY, restartPrompts.current], [DISMISSED_RESTART_BANNERS_KEY, dismissedRestartBanners.current]]) {
 					try {
 						const saved = JSON.parse(window.sessionStorage.getItem(storageKey) ?? "[]");
@@ -5024,10 +5039,10 @@ window.__ModuleLoader__.load({
 					} catch {}
 					for (const key of records) try {
 						const [kind, skinId] = JSON.parse(key);
-						if (kind === "skin" && !pendingFor({
+						if (!restartStillPending({
 							kind,
 							skinId
-						}) || kind === "market-update" && state.marketUpdateRestartRequired === false) records.delete(key);
+						})) records.delete(key);
 					} catch {
 						records.delete(key);
 					}
@@ -5035,7 +5050,7 @@ window.__ModuleLoader__.load({
 						window.sessionStorage.setItem(storageKey, JSON.stringify([...records].slice(-100)));
 					} catch {}
 				}
-				const visiblePendingFor = (target) => pendingFor(target) && !dismissedRestartBanners.current.has(restartPromptKey(state, target));
+				const visiblePendingFor = (target) => pendingFor(target) && !dismissedRestartBanners.current.has(restartPromptKey(target));
 				const held = (target) => target.kind === "skin" && (continuingInstallActivation.current.has(target.skinId) || inflightSkinIds.current.has(target.skinId) || (state.operations ?? (state.operation == null ? [] : [state.operation])).some((operation) => operation.skinId === target.skinId && isLiveOperation(operation)));
 				for (const id of installRestartNotices.current.keys()) if (!held({
 					kind: "skin",
@@ -5193,8 +5208,7 @@ window.__ModuleLoader__.load({
 				};
 				restartTargetRef.current = target;
 				setRestartTarget(target);
-				const state = latestMarketState.current;
-				const notice = state === null ? void 0 : restartNoticeHistory.current.get(restartPromptKey(state, target));
+				const notice = latestMarketState.current === null ? void 0 : restartNoticeHistory.current.get(restartPromptKey(target));
 				if (notice !== void 0) {
 					pendingRestartRef.current = notice;
 					setPendingRestart(notice);
@@ -6310,7 +6324,7 @@ window.__ModuleLoader__.load({
 								if (continueInstallAndUse) return true;
 								const forgetDeferredPromptReceipt = () => {
 									if (!deferRestartPresentation) return;
-									const key = restartPromptKey(refreshed, {
+									const key = restartPromptKey({
 										kind: "skin",
 										skinId: target.id
 									});
@@ -7270,23 +7284,47 @@ window.__ModuleLoader__.load({
 				terminal: true,
 				onDismiss: () => setCompletedUninstall(null)
 			});
-			const dismissRestartNotice = (target = restartTargetRef.current) => {
+			const matchesRestartTarget = (notice, target) => notice !== null && notice.target.kind === target.kind && (target.kind === "market-update" || notice.target.kind === "skin" && notice.target.skinId === target.skinId);
+			/**
+			* Closing the restart dialog keeps the pending item in the market banner so
+			* it can still be acted on without the dialog coming back by itself. The
+			* target's prompt key is already recorded as seen, so state refreshes,
+			* polling and remounts only restore the banner.
+			*/
+			const dismissRestartDialog = () => {
+				const target = restartTargetRef.current;
 				if (target !== null) {
-					const state = latestMarketState.current;
-					if (state !== null) {
-						dismissedRestartBanners.current.add(restartPromptKey(state, target));
-						try {
-							window.sessionStorage.setItem(DISMISSED_RESTART_BANNERS_KEY, JSON.stringify([...dismissedRestartBanners.current].slice(-100)));
-						} catch {}
+					const key = restartPromptKey(target);
+					rememberRestartPromptKey(key, restartPrompts.current);
+					if (dismissedRestartBanners.current.has(key)) {
+						if (matchesRestartTarget(pendingRestartRef.current, target)) {
+							pendingRestartRef.current = null;
+							setPendingRestart(null);
+						}
+					} else if (!matchesRestartTarget(pendingRestartRef.current, target)) {
+						const remembered = restartNoticeHistory.current.get(key);
+						if (remembered !== void 0) {
+							pendingRestartRef.current = remembered;
+							setPendingRestart(remembered);
+						}
 					}
-					if (pendingRestartRef.current?.target.kind === target.kind && (target.kind === "market-update" || pendingRestartRef.current.target.kind === "skin" && pendingRestartRef.current.target.skinId === target.skinId)) {
+				}
+				setConfirmRestart(false);
+			};
+			/** The banner's own close control acknowledges the whole pending item. */
+			const dismissRestartBanner = (target = restartTargetRef.current) => {
+				if (target !== null) {
+					const key = restartPromptKey(target);
+					rememberRestartPromptKey(key, restartPrompts.current);
+					rememberDismissedRestartBannerKey(key, dismissedRestartBanners.current);
+					if (matchesRestartTarget(pendingRestartRef.current, target)) {
 						pendingRestartRef.current = null;
 						setPendingRestart(null);
 					}
 				}
 				setConfirmRestart(false);
 			};
-			const renderPendingRestartBanner = (className, skinId) => warningDialog !== null || pendingRestart === null || latestMarketState.current !== null && dismissedRestartBanners.current.has(restartPromptKey(latestMarketState.current, pendingRestart.target)) || skinId !== void 0 && pendingRestart.target.kind === "skin" && pendingRestart.target.skinId !== skinId ? null : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(OperationBanner, {
+			const renderPendingRestartBanner = (className, skinId) => warningDialog !== null || pendingRestart === null || dismissedRestartBanners.current.has(restartPromptKey(pendingRestart.target)) || skinId !== void 0 && pendingRestart.target.kind === "skin" && pendingRestart.target.skinId !== skinId ? null : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(OperationBanner, {
 				t,
 				className,
 				title: pendingRestart.title,
@@ -7299,7 +7337,7 @@ window.__ModuleLoader__.load({
 					onClick: () => void openRestartConfirm(pendingRestart.target.kind === "skin" ? pendingRestart.target.skinId : void 0, pendingRestart.target.kind),
 					children: restartAvailable ? t(pendingRestart.target.kind === "skin" && runtimeFor(states, pendingRestart.target.skinId).restartOnlyToStop === true ? "common.restartStopAction" : "common.restartToApply") : t("common.viewRestartHelp")
 				}),
-				onDismiss: () => dismissRestartNotice(pendingRestart.target)
+				onDismiss: () => dismissRestartBanner(pendingRestart.target)
 			});
 			const marketUpdateActive = marketOperation !== null && ![
 				"done",
@@ -8719,7 +8757,7 @@ window.__ModuleLoader__.load({
 					/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Modal, {
 						open: warningDialog === "restart",
 						onClose: () => {
-							if (!restarting) dismissRestartNotice();
+							if (!restarting) dismissRestartDialog();
 						},
 						title: manualDesktopRestart ? t("common.restartManualTitle") : restartTarget?.kind === "market-update" ? t("common.restartTargetMarket") : restartForStop ? t("common.restartTargetSkinStop") : t("common.restartTargetSkin"),
 						closeLabel: t("common.close"),
@@ -8729,7 +8767,7 @@ window.__ModuleLoader__.load({
 							variant: "outline",
 							size: "sm",
 							disabled: restarting,
-							onClick: () => dismissRestartNotice(),
+							onClick: () => dismissRestartDialog(),
 							children: manualDesktopRestart ? t("market.dismiss") : t("common.cancel")
 						}), !manualDesktopRestart && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 							variant: "primary",

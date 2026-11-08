@@ -341,7 +341,10 @@ function webClientSelectionError(status: ClientSkinSelectionStatus, t: Translato
 }
 
 function pendingRestartTitle(title: string, restartAvailable: boolean, t: Translator): string {
-  return t('common.pendingRestartTitle', { title, suffix: restartAvailable ? t('common.pendingRestart') : t('common.manualRestart') })
+  // Host messages may already end with a full stop. The template adds its own
+  // separator before the status suffix, so do not emit "。，" in the banner.
+  const lead = title.replace(/[。．.!！?？；;]+$/u, '')
+  return t('common.pendingRestartTitle', { title: lead, suffix: restartAvailable ? t('common.pendingRestart') : t('common.manualRestart') })
 }
 
 function skinOperationTitle(operation: Operation, name: string, t: Translator): string {
@@ -565,12 +568,35 @@ function clientFailureId(scope: string): string {
   return `${scope}-${Date.now()}-${++clientFailureSequence}`
 }
 
-function restartPromptKey(state: MarketStateResponse, target: RestartTarget): string {
-  return target.kind === 'skin'
-    ? JSON.stringify([target.kind, target.skinId, state.restartNoticeId ?? 'legacy', runtimeFor(state.skins, target.skinId).installedVersion,
-      runtimeFor(state.skins, target.skinId).restartSource ?? 'protected'])
-    : JSON.stringify([target.kind, '', state.marketUpdateNoticeId ?? 'legacy'])
+/**
+ * A restart prompt belongs to a pending target, not to a single Host receipt.
+ * The Host can revise the receipt id, installed version or restart source
+ * while the same skin still waits for one restart. Keying by target keeps the
+ * acknowledged prompt quiet until that pending target is actually cleared;
+ * another target is a new item and may prompt once.
+ */
+function restartPromptKey(target: RestartTarget): string {
+  return JSON.stringify([target.kind, target.kind === 'skin' ? target.skinId : ''])
 }
+
+function rememberRestartPromptKey(key: string, prompts: Set<string>): void {
+  prompts.add(key)
+  try {
+    const saved = JSON.parse(window.sessionStorage.getItem(RESTART_PROMPTS_KEY) ?? '[]')
+    if (Array.isArray(saved)) for (const item of saved) if (typeof item === 'string') prompts.add(item)
+    window.sessionStorage.setItem(RESTART_PROMPTS_KEY, JSON.stringify([...prompts].slice(-100)))
+  } catch { /* the in-memory record is enough for this mount */ }
+}
+
+function rememberDismissedRestartBannerKey(key: string, banners: Set<string>): void {
+  banners.add(key)
+  try {
+    const saved = JSON.parse(window.sessionStorage.getItem(DISMISSED_RESTART_BANNERS_KEY) ?? '[]')
+    if (Array.isArray(saved)) for (const item of saved) if (typeof item === 'string') banners.add(item)
+    window.sessionStorage.setItem(DISMISSED_RESTART_BANNERS_KEY, JSON.stringify([...banners].slice(-100)))
+  } catch { /* the in-memory record is enough for this mount */ }
+}
+
 export const CATALOG_BATCH_SIZE = 20
 export const HOME_CATALOG_BATCH_SIZE = 24
 const GALLERY_INTERVAL_MS = 5600
@@ -1137,7 +1163,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   }, [])
 
   const presentRestartNotice = useCallback((notice: PendingRestartNotice, state: MarketStateResponse, autoPrompt = true) => {
-    const key = restartPromptKey(state, notice.target)
+    const key = restartPromptKey(notice.target)
     restartNoticeHistory.current.set(key, notice)
     if (dismissedRestartBanners.current.has(key)) return
     pendingRestartRef.current = notice
@@ -1147,9 +1173,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       const saved = JSON.parse(window.sessionStorage.getItem(RESTART_PROMPTS_KEY) ?? '[]')
       if (Array.isArray(saved)) for (const item of saved) if (typeof item === 'string') restartPrompts.current.add(item)
       seen ||= restartPrompts.current.has(key)
-      restartPrompts.current.add(key)
-      window.sessionStorage.setItem(RESTART_PROMPTS_KEY, JSON.stringify([...restartPrompts.current].slice(-100)))
-    } catch { restartPrompts.current.add(key) }
+    } catch { /* the in-memory record is enough for this mount */ }
+    rememberRestartPromptKey(key, restartPrompts.current)
     if (seen || !autoPrompt) return
     restartTargetRef.current = notice.target
     setRestartTarget(notice.target)
@@ -1422,12 +1447,16 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       if (state.hostKind === 'desktop' || notice.instanceId !== state.instanceId || skin.installation !== 'installed'
         || skin.activation === 'inactive' && skin.primary !== true && skin.pinned !== true) clientRestartNotices.current.delete(skinId)
     }
-    const pendingFor = (target: RestartTarget) => target.kind === 'market-update'
+    const restartStillPending = (target: RestartTarget) => target.kind === 'market-update'
       ? state.marketUpdateRestartRequired === true
-      : !webRestartGrace.current.has(target.skinId)
-        && (runtimeFor(state.skins, target.skinId).activation === 'restart-required' || clientRestartNotices.current.has(target.skinId))
-    // Acknowledged prompts and closed banners stay quiet for this receipt.
-    // Rearm a legacy reminder only after the host clears this pending target.
+      : runtimeFor(state.skins, target.skinId).activation === 'restart-required' || clientRestartNotices.current.has(target.skinId)
+    const pendingFor = (target: RestartTarget) => target.kind === 'market-update'
+      ? restartStillPending(target)
+      : !webRestartGrace.current.has(target.skinId) && restartStillPending(target)
+    // Acknowledged prompts and closed banners stay quiet for this pending
+    // target. Rearm only after the host clears that target. The settlement
+    // grace below must not erase the acknowledgement: it only postpones the
+    // presentation until the browser graph settles.
     for (const [storageKey, records] of [[RESTART_PROMPTS_KEY, restartPrompts.current], [DISMISSED_RESTART_BANNERS_KEY, dismissedRestartBanners.current]] as const) {
       try {
         const saved = JSON.parse(window.sessionStorage.getItem(storageKey) ?? '[]')
@@ -1436,12 +1465,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       for (const key of records) {
         try {
           const [kind, skinId] = JSON.parse(key)
-          if (kind === 'skin' && !pendingFor({ kind, skinId }) || kind === 'market-update' && state.marketUpdateRestartRequired === false) records.delete(key)
+          if (!restartStillPending({ kind, skinId })) records.delete(key)
         } catch { records.delete(key) }
       }
       try { window.sessionStorage.setItem(storageKey, JSON.stringify([...records].slice(-100))) } catch { /* storage may be unavailable */ }
     }
-    const visiblePendingFor = (target: RestartTarget) => pendingFor(target) && !dismissedRestartBanners.current.has(restartPromptKey(state, target))
+    const visiblePendingFor = (target: RestartTarget) => pendingFor(target) && !dismissedRestartBanners.current.has(restartPromptKey(target))
     const held = (target: RestartTarget) => target.kind === 'skin'
       && (continuingInstallActivation.current.has(target.skinId) || inflightSkinIds.current.has(target.skinId)
         || (state.operations ?? (state.operation == null ? [] : [state.operation])).some(operation => operation.skinId === target.skinId && isLiveOperation(operation)))
@@ -1588,7 +1617,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     restartTargetRef.current = target
     setRestartTarget(target)
     const state = latestMarketState.current
-    const notice = state === null ? undefined : restartNoticeHistory.current.get(restartPromptKey(state, target))
+    const notice = state === null ? undefined : restartNoticeHistory.current.get(restartPromptKey(target))
     if (notice !== undefined) { pendingRestartRef.current = notice; setPendingRestart(notice) }
     setConfirmRestart(true)
     if (hostKind === 'desktop' && !restartAvailable) {
@@ -2422,7 +2451,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             if (continueInstallAndUse) return true
             const forgetDeferredPromptReceipt = () => {
               if (!deferRestartPresentation) return
-              const key = restartPromptKey(refreshed, { kind: 'skin', skinId: target.id })
+              const key = restartPromptKey({ kind: 'skin', skinId: target.id })
               restartPrompts.current.delete(key)
               try {
                 const saved = JSON.parse(window.sessionStorage.getItem(RESTART_PROMPTS_KEY) ?? '[]')
@@ -3132,15 +3161,44 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     onDismiss={() => setCompletedUninstall(null)}
   />
 
-  const dismissRestartNotice = (target: RestartTarget | null = restartTargetRef.current) => {
+  const matchesRestartTarget = (notice: PendingRestartNotice | null, target: RestartTarget): boolean => notice !== null
+    && notice.target.kind === target.kind
+    && (target.kind === 'market-update' || notice.target.kind === 'skin' && notice.target.skinId === target.skinId)
+
+  /**
+   * Closing the restart dialog keeps the pending item in the market banner so
+   * it can still be acted on without the dialog coming back by itself. The
+   * target's prompt key is already recorded as seen, so state refreshes,
+   * polling and remounts only restore the banner.
+   */
+  const dismissRestartDialog = () => {
+    const target = restartTargetRef.current
     if (target !== null) {
-      const state = latestMarketState.current
-      if (state !== null) {
-        dismissedRestartBanners.current.add(restartPromptKey(state, target))
-        try { window.sessionStorage.setItem(DISMISSED_RESTART_BANNERS_KEY, JSON.stringify([...dismissedRestartBanners.current].slice(-100))) } catch { /* the in-memory record is enough for this mount */ }
+      const key = restartPromptKey(target)
+      rememberRestartPromptKey(key, restartPrompts.current)
+      if (dismissedRestartBanners.current.has(key)) {
+        if (matchesRestartTarget(pendingRestartRef.current, target)) {
+          pendingRestartRef.current = null
+          setPendingRestart(null)
+        }
+      } else if (!matchesRestartTarget(pendingRestartRef.current, target)) {
+        const remembered = restartNoticeHistory.current.get(key)
+        if (remembered !== undefined) {
+          pendingRestartRef.current = remembered
+          setPendingRestart(remembered)
+        }
       }
-      if (pendingRestartRef.current?.target.kind === target.kind
-        && (target.kind === 'market-update' || pendingRestartRef.current.target.kind === 'skin' && pendingRestartRef.current.target.skinId === target.skinId)) {
+    }
+    setConfirmRestart(false)
+  }
+
+  /** The banner's own close control acknowledges the whole pending item. */
+  const dismissRestartBanner = (target: RestartTarget | null = restartTargetRef.current) => {
+    if (target !== null) {
+      const key = restartPromptKey(target)
+      rememberRestartPromptKey(key, restartPrompts.current)
+      rememberDismissedRestartBannerKey(key, dismissedRestartBanners.current)
+      if (matchesRestartTarget(pendingRestartRef.current, target)) {
         pendingRestartRef.current = null
         setPendingRestart(null)
       }
@@ -3149,7 +3207,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   }
 
   const renderPendingRestartBanner = (className?: string, skinId?: string) => warningDialog !== null || pendingRestart === null
-    || latestMarketState.current !== null && dismissedRestartBanners.current.has(restartPromptKey(latestMarketState.current, pendingRestart.target))
+    || dismissedRestartBanners.current.has(restartPromptKey(pendingRestart.target))
     || skinId !== undefined && pendingRestart.target.kind === 'skin' && pendingRestart.target.skinId !== skinId ? null : <OperationBanner
     t={t}
     className={className}
@@ -3158,7 +3216,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     metadata={[]}
     terminal
     action={<Button variant="outline" size="sm" onClick={() => void openRestartConfirm(pendingRestart.target.kind === 'skin' ? pendingRestart.target.skinId : undefined, pendingRestart.target.kind)}>{restartAvailable ? t(pendingRestart.target.kind === 'skin' && runtimeFor(states, pendingRestart.target.skinId).restartOnlyToStop === true ? 'common.restartStopAction' : 'common.restartToApply') : t('common.viewRestartHelp')}</Button>}
-    onDismiss={() => dismissRestartNotice(pendingRestart.target)}
+    onDismiss={() => dismissRestartBanner(pendingRestart.target)}
   />
   const marketUpdateActive = marketOperation !== null && !['done', 'failed', 'cancelled'].includes(marketOperation.phase)
   syncDiscoverDockRef.current = () => {
@@ -3690,7 +3748,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       />
       <Modal
         open={warningDialog === 'restart'}
-        onClose={() => { if (!restarting) dismissRestartNotice() }}
+        onClose={() => { if (!restarting) dismissRestartDialog() }}
         title={manualDesktopRestart ? t('common.restartManualTitle') : restartTarget?.kind === 'market-update' ? t('common.restartTargetMarket') : restartForStop ? t('common.restartTargetSkinStop') : t('common.restartTargetSkin')}
         closeLabel={t('common.close')}
         className={css.warningModal}
@@ -3701,7 +3759,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
                 : runningAgents === null ? t('common.noRunningTask')
                   : runningAgents > 0 ? t('common.agentRunning', { count: runningAgents })
                     : `${restartTarget?.kind === 'market-update' ? t('common.marketUpdatedRestart') : ''}${t('common.saveBeforeRestart')}`}
-        footer={<><Button variant="outline" size="sm" disabled={restarting} onClick={() => dismissRestartNotice()}>{manualDesktopRestart ? t('market.dismiss') : t('common.cancel')}</Button>{!manualDesktopRestart && <Button variant="primary" size="sm" disabled={restarting || restartInstallBlock !== null || (runningAgents === null && !restartCheckFinished) || (runningAgents ?? 0) > 0} onClick={() => void restartNow()}>{restarting ? t('common.restartingShort') : restartInstallBlock !== null ? t('common.installingSkin') : runningAgents === null && !restartCheckFinished ? t('common.checking') : runningAgents === null ? t('common.confirmNoTaskRestart') : runningAgents > 0 ? t('common.taskRunning') : t('common.confirmRestart')}</Button>}</>}
+        footer={<><Button variant="outline" size="sm" disabled={restarting} onClick={() => dismissRestartDialog()}>{manualDesktopRestart ? t('market.dismiss') : t('common.cancel')}</Button>{!manualDesktopRestart && <Button variant="primary" size="sm" disabled={restarting || restartInstallBlock !== null || (runningAgents === null && !restartCheckFinished) || (runningAgents ?? 0) > 0} onClick={() => void restartNow()}>{restarting ? t('common.restartingShort') : restartInstallBlock !== null ? t('common.installingSkin') : runningAgents === null && !restartCheckFinished ? t('common.checking') : runningAgents === null ? t('common.confirmNoTaskRestart') : runningAgents > 0 ? t('common.taskRunning') : t('common.confirmRestart')}</Button>}</>}
       />
     </section>
   )

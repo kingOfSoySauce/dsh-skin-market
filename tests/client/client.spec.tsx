@@ -1529,11 +1529,13 @@ describe('client market', () => {
       expect(restartDialog.textContent).toContain('已启用“测试皮肤”')
       fireEvent.click(within(restartDialog).getByRole('button', { name: '知道了' }))
       expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
-      expect(screen.queryByText('测试皮肤 已切换，请手动重启 Desktop App 后生效')).toBeNull()
+      expect(screen.getAllByText('测试皮肤 已切换，请手动重启 Desktop App 后生效').length).toBeGreaterThan(0)
       if (entry === 'discovery') await openSkinCard()
       fireEvent.click(screen.getAllByRole('button', { name: '查看重启提示' })[0]!)
       expect(screen.getByRole('dialog', { name: '请手动重启 Desktop App' })).toBeTruthy()
       fireEvent.click(within(screen.getByRole('dialog', { name: '请手动重启 Desktop App' })).getByRole('button', { name: '关闭' }))
+      expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
+      expect(screen.getAllByText('测试皮肤 已切换，请手动重启 Desktop App 后生效').length).toBeGreaterThan(0)
     } else {
       expect(await screen.findAllByRole('button', { name: '停用' })).not.toHaveLength(0)
       expect(screen.queryByText(/请手动重启 Desktop App/)).toBeNull()
@@ -2785,10 +2787,11 @@ describe('client market', () => {
     fireEvent(window, new Event('focus'))
     await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(beforeFocus))
     expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
+    expect(screen.getByText('测试皮肤 设置已保存，请手动重启 Desktop App 后生效')).toBeTruthy()
     view.unmount()
     render(<SkinMarketSection t={key => key} />)
     await screen.findByRole('button', { name: /测试皮肤 已安装卡片/ })
-    expect(screen.queryByText('测试皮肤 设置已保存，请手动重启 Desktop App 后生效')).toBeNull()
+    expect(screen.getByText('测试皮肤 设置已保存，请手动重启 Desktop App 后生效')).toBeTruthy()
     expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '查看重启提示' }))
@@ -2804,7 +2807,7 @@ describe('client market', () => {
     if (outcome === 'unavailable') expect(screen.getByText('皮肤组件已关闭，尚未生效。')).toBeTruthy()
   })
 
-  it.each(['skin', 'market-update'] as const)('keeps an acknowledged %s restart notice closed across polling and remount, then shows a new receipt', async target => {
+  it.each(['skin', 'market-update'] as const)('keeps one acknowledged %s restart item in the banner without repeating the dialog', async target => {
     let receipt = 'first-change'
     let pending = true
     const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
@@ -2818,40 +2821,45 @@ describe('client market', () => {
     const pollRefresh = intervalSpy.mock.calls.find(([, delay]) => delay === 5 * 60 * 1000)?.[0]
     intervalSpy.mockRestore()
     expect(typeof pollRefresh).toBe('function')
-    fireEvent.click(within(await screen.findByRole('dialog', { name: '请手动重启 Desktop App' })).getByRole('button', { name: '知道了' }))
-    const bannerTitle = target === 'skin' ? '测试皮肤 设置已保存，请手动重启 Desktop App 后生效' : '皮肤市场已更新，请手动重启 Desktop App 后生效'
-    expect(screen.queryByText(bannerTitle)).toBeNull()
+    const dismissDialog = (dialog: HTMLElement) => fireEvent.click(within(dialog).getByRole('button', { name: target === 'skin' ? '关闭' : '知道了' }))
+    dismissDialog(await screen.findByRole('dialog', { name: '请手动重启 Desktop App' }))
+    const bannerTitle = target === 'skin' ? '测试皮肤 设置已保存，请手动重启 Desktop App 后生效' : '皮肤市场已更新，重启后生效，请手动重启 Desktop App 后生效'
+    expect(screen.getByText(bannerTitle)).toBeTruthy()
+    expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
     await act(async () => { (pollRefresh as () => void)() })
-    expect(screen.queryByText(bannerTitle)).toBeNull()
+    expect(screen.getByText(bannerTitle)).toBeTruthy()
     const refreshState = async () => {
       const previous = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
       fireEvent(window, new Event('focus'))
       await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(previous))
     }
     await refreshState()
-    expect(screen.queryByText(bannerTitle)).toBeNull()
+    expect(screen.getByText(bannerTitle)).toBeTruthy()
     expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
     view.unmount()
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
-    expect(screen.queryByText(bannerTitle)).toBeNull()
-    if (target === 'skin') {
-      expect(screen.getAllByText('待重启').length).toBeGreaterThan(0)
-      expect(screen.getByRole('button', { name: '查看重启提示' })).toBeTruthy()
-    }
+    expect(screen.getAllByText(bannerTitle).length).toBeGreaterThan(0)
+    expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
+    if (target === 'skin') expect(screen.getAllByText('待重启').length).toBeGreaterThan(0)
+    // A revised receipt for the same pending target is still the same item.
     receipt = 'second-change'
     await refreshState()
-    expect(screen.queryByText(bannerTitle)).toBeNull()
-    expect(screen.getByRole('dialog', { name: '请手动重启 Desktop App' })).toBeTruthy()
-    fireEvent.click(within(screen.getByRole('dialog', { name: '请手动重启 Desktop App' })).getByRole('button', { name: '知道了' }))
-    expect(screen.queryByText(bannerTitle)).toBeNull()
+    expect(screen.getAllByText(bannerTitle).length).toBeGreaterThan(0)
+    expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
+    // Closing the banner itself keeps this item quiet until the Host clears it.
+    fireEvent.click(screen.getAllByRole('button', { name: '关闭提示' })[0]!)
+    expect(screen.queryAllByText(bannerTitle)).toHaveLength(0)
+    expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
     pending = false
     await refreshState()
-    expect(screen.queryByText(bannerTitle)).toBeNull()
+    expect(screen.queryAllByText(bannerTitle)).toHaveLength(0)
     pending = true
     await refreshState()
-    expect(screen.queryByText(bannerTitle)).toBeNull()
-    expect(screen.getByRole('dialog', { name: '请手动重启 Desktop App' })).toBeTruthy()
+    const nextDialog = screen.getByRole('dialog', { name: '请手动重启 Desktop App' })
+    expect(nextDialog).toBeTruthy()
+    dismissDialog(nextDialog)
+    expect(screen.getAllByText(bannerTitle).length).toBeGreaterThan(0)
   })
 
   it('clears every restart reminder when the same Desktop process confirms the skin became active', async () => {
@@ -3159,16 +3167,16 @@ describe('client market', () => {
     view.unmount()
     render(<SkinMarketSection t={key => key} />)
     await screen.findByRole('button', { name: /测试皮肤 界面预览/ })
-    expect(screen.queryByText('测试皮肤 已卸载，请手动重启 Desktop App 后生效')).toBeNull()
+    expect(screen.getByText('测试皮肤 已卸载，请手动重启 Desktop App 后生效')).toBeTruthy()
     expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
     await openSkinCard()
     const details = screen.getByRole('main', { name: '皮肤详情内容' })
-    expect(within(details).queryByText('测试皮肤 已卸载，请手动重启 Desktop App 后生效')).toBeNull()
-    fireEvent.click(within(details).getByRole('button', { name: '查看重启提示' }))
+    expect(within(details).getByText('测试皮肤 已卸载，请手动重启 Desktop App 后生效')).toBeTruthy()
+    fireEvent.click(screen.getByRole('button', { name: '查看重启提示' }))
     expect(screen.getByRole('dialog', { name: '请手动重启 Desktop App' }).textContent).toContain('“测试皮肤”已卸载，重启后生效。')
   })
 
-  it.each(['completed-task', 'restored'] as const)('hides the acknowledged manual market-update notice for a %s across refresh and remount', async mode => {
+  it.each(['completed-task', 'restored'] as const)('keeps the acknowledged manual market-update notice in the banner for a %s across refresh and remount', async mode => {
     let updated = mode === 'restored'
     const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
@@ -3191,11 +3199,11 @@ describe('client market', () => {
     fireEvent(window, new Event('focus'))
     await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
     expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
-    expect(screen.queryByText('皮肤市场已更新，请手动重启 Desktop App 后生效')).toBeNull()
+    expect(screen.getByText('皮肤市场已更新，重启后生效，请手动重启 Desktop App 后生效')).toBeTruthy()
     view.unmount()
     render(<SkinMarketSection t={key => key} />)
     await screen.findByRole('button', { name: /测试皮肤 界面预览/ })
-    expect(screen.queryByText('皮肤市场已更新，请手动重启 Desktop App 后生效')).toBeNull()
+    expect(screen.getByText('皮肤市场已更新，重启后生效，请手动重启 Desktop App 后生效')).toBeTruthy()
     expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
     expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/restart') && init?.method === 'POST')).toBe(false)
   })
@@ -3219,8 +3227,9 @@ describe('client market', () => {
     expect(await screen.findByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeTruthy()
     expect(await screen.findByText('重启会断开当前会话连接，请先保存工作。')).toBeTruthy()
     fireEvent.click(screen.getByRole('button', { name: '取消' }))
-    expect(screen.queryByText('测试皮肤 已更新，待重启生效')).toBeNull()
-    fireEvent.click(screen.getByRole('button', { name: '重启以应用' }))
+    expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+    expect(screen.getAllByText('测试皮肤 已更新，待重启生效').length).toBeGreaterThan(0)
+    fireEvent.click(screen.getAllByRole('button', { name: '重启以应用' })[0]!)
     expect(screen.getByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeTruthy()
     expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/update') && init?.method === 'POST')).toBe(true)
   })
@@ -3353,6 +3362,26 @@ describe('client market', () => {
       act(() => notify())
       await waitFor(() => expect(screen.getAllByText('使用中', { exact: true }).length).toBeGreaterThan(0))
       expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+    })
+
+    it('keeps a dismissed Web restart notice quiet when the settle window runs again', async () => {
+      window.sessionStorage.clear()
+      const fetchMock = serveWebState(() => [webSkin({ restartSource: undefined })])
+      render(<SkinMarketSection t={key => key} clientRuntime={{ setActive: vi.fn(), probeActive: () => 'loading', probeSyncing: () => false }} />)
+      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+      const first = await screen.findByRole('dialog', { name: '需要重启 DSH 应用此皮肤' }, { timeout: 4000 })
+      fireEvent.click(within(first).getByRole('button', { name: '取消' }))
+      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+      expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
+      // A fresh focus starts another settlement window. The acknowledged key
+      // must survive it so the dialog cannot reopen for the same pending skin.
+      const beforeFocus = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+      fireEvent(window, new Event('focus'))
+      await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(beforeFocus))
+      await waitFor(() => expect(screen.queryByText('测试皮肤 设置已保存，待重启生效')).toBeNull())
+      await act(async () => { await new Promise(resolve => setTimeout(resolve, WEB_CLIENT_SETTLE_MS + 200)) })
+      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+      expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
     })
 
     it.each(['soft receipt', 'already applied receipt'] as const)('rechecks a loading Host with a state-only read before reporting success (%s)', async receipt => {
@@ -3495,7 +3524,7 @@ describe('client market', () => {
 
     it('labels an already seen stop receipt with a stop action instead of applying the skin', async () => {
       window.sessionStorage.clear()
-      const seenKey = JSON.stringify(['skin', skin.id, 'same-receipt', '1.0.0', 'protected'])
+      const seenKey = JSON.stringify(['skin', skin.id])
       window.sessionStorage.setItem('dsh-skin-market:restart-prompts', JSON.stringify([seenKey]))
       serveWebState(() => [webSkin({
         activation: 'restart-required', primary: false, pinned: false,
@@ -3537,15 +3566,19 @@ describe('client market', () => {
       expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
     })
 
-    it('rearms a protected same-version receipt after its soft selection reminder was dismissed', async () => {
+    it('keeps the same pending skin in the banner after its soft selection reminder was dismissed', async () => {
       let protectedReceipt = false
-      serveWebState(() => [webSkin({ restartSource: protectedReceipt ? undefined : 'selection' })])
+      const fetchMock = serveWebState(() => [webSkin({ restartSource: protectedReceipt ? undefined : 'selection' })])
       render(<SkinMarketSection t={key => key} />)
       fireEvent.click(within(await screen.findByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).getByRole('button', { name: '取消' }))
       expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+      expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
       protectedReceipt = true
+      const beforeFocus = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
       fireEvent(window, new Event('focus'))
-      expect(await screen.findByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeTruthy()
+      await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(beforeFocus))
+      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+      expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
     })
   })
 
@@ -3576,10 +3609,10 @@ describe('client market', () => {
     fireEvent(window, new Event('focus'))
     await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
     expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
-    expect(screen.queryByText(/待重启生效/)).toBeNull()
+    expect(screen.getAllByText(/待重启生效/).length).toBeGreaterThan(0)
     instanceId = 'web-after-restart'
     fireEvent(window, new Event('focus'))
-    await waitFor(() => expect(screen.queryByText(/待重启生效/)).toBeNull())
+    await waitFor(() => expect(screen.queryAllByText(/待重启生效/)).toHaveLength(0))
   })
 
   it('asks before using an incompatible installed skin and preserves the restart flow after consent', async () => {
