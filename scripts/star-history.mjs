@@ -55,3 +55,18 @@ export function latestRepositorySnapshots(entries) {
   }
   return { snapshots: new Map([...snapshots].map(([slug, sample]) => [slug, [sample.day, sample.stars, sample.observedAt]])), skinIds }
 }
+
+/** Choose the newest catalog star reading for each repository. */
+export function latestCatalogSnapshots(skins) {
+  const snapshots = new Map()
+  for (const skin of Array.isArray(skins) ? skins : []) {
+    const slug = typeof skin?.repo === 'string' && /^https:\/\/github\.com\/[^/]+\/[^/]+\/?$/i.test(skin.repo) ? repoSlug(skin.repo) : ''
+    const observedAt = Date.parse(skin?.starsUpdatedAt)
+    if (slug === '' || !Number.isInteger(skin?.starsSnapshot) || skin.starsSnapshot < 0 || !Number.isFinite(observedAt)) continue
+    const prior = snapshots.get(slug)
+    if (prior === undefined || observedAt > prior.observedAt) {
+      snapshots.set(slug, { day: dayNumber(observedAt), stars: skin.starsSnapshot, observedAt })
+    }
+  }
+  return new Map([...snapshots].map(([slug, sample]) => [slug, [sample.day, sample.stars, sample.observedAt]]))
+}

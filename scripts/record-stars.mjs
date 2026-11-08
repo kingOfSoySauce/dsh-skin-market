@@ -6,6 +6,11 @@
 // market-observed day in `data/star-history.json`. Retention is storage only;
 // scoring uses the skin's own age.
 //
+// The registry YAML is not the only reading: the private heat step writes a
+// fresher snapshot straight into `data/catalog.json` for every skin, and it does
+// not rewrite every entry file. Recording both keeps a repository whose file was
+// not refreshed from showing the same number for months.
+//
 // Usage:
 //   node scripts/record-stars.mjs              # merge dated registry observations
 //   node scripts/record-stars.mjs --backfill   # merge git history once
@@ -18,7 +23,7 @@ import { fileURLToPath } from 'node:url'
 import { promisify } from 'node:util'
 import { parse } from 'yaml'
 import { DAY_MS, dayNumber, repoSlug } from './heat.mjs'
-import { earliestObservedDay, latestRepositorySnapshots, mergeStarSamples, parseStarHistoryLog } from './star-history.mjs'
+import { earliestObservedDay, latestCatalogSnapshots, latestRepositorySnapshots, mergeStarSamples, parseStarHistoryLog } from './star-history.mjs'
 
 const run = promisify(execFile)
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -35,6 +40,16 @@ async function readHistory() {
     return { ...parsed, skins: parsed.skins ?? {} }
   } catch (error) {
     if (error?.code === 'ENOENT') return { schemaVersion: 2, repos: {}, skins: {} }
+    throw error
+  }
+}
+
+async function catalogSnapshots() {
+  try {
+    const catalog = JSON.parse(await readFile(join(root, 'data/catalog.json'), 'utf8'))
+    return latestCatalogSnapshots(catalog?.skins)
+  } catch (error) {
+    if (error?.code === 'ENOENT') return new Map()
     throw error
   }
 }
@@ -97,6 +112,13 @@ for (const [slug, sample] of current.snapshots) {
   // Keep the actual observation time and preserve a later same-day observation.
   repos[slug] = mergeStarSamples(repos[slug] ?? [], [sample], today, HISTORY_DAYS)
 }
+// The heat step's catalog reading can be fresher than the entry file. Without
+// it the public series keeps one value for months and the chart draws a plateau
+// that never existed.
+const recorded = await catalogSnapshots()
+for (const [slug, sample] of recorded) {
+  repos[slug] = mergeStarSamples(repos[slug] ?? [], [sample], today, HISTORY_DAYS)
+}
 
 for (const slug of Object.keys(repos)) {
   if (repos[slug].length === 0) delete repos[slug]
@@ -108,4 +130,4 @@ const unchanged = baseline === `${canonical(repos)}|${canonical(skins)}`
 const generatedAt = unchanged && typeof recordedAt === 'string' ? recordedAt : new Date(today * DAY_MS).toISOString()
 const contents = `{\n  "schemaVersion": 2,\n  "generatedAt": ${JSON.stringify(generatedAt)},\n  "retentionDays": ${HISTORY_DAYS},\n  "repos": {\n${repoLines.join(',\n')}\n  },\n  "skins": {\n${skinLines.join(',\n')}\n  }\n}\n`
 await writeFile(historyPath, contents)
-console.log(`recorded ${current.snapshots.size} repositories (${Object.keys(repos).length} tracked) and ${current.skinIds.size} skin ages in data/star-history.json`)
+console.log(`recorded ${current.snapshots.size} registry and ${recorded.size} catalog readings (${Object.keys(repos).length} repositories tracked) and ${current.skinIds.size} skin ages in data/star-history.json`)

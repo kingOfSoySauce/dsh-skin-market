@@ -118,12 +118,14 @@ function StarSpark({ values, from, live, title, language }: { values: number[] |
   </figure>
 }
 
-const BRAND_MARK = 'M222.4 55.9L172.7 39.3L169.7 39.2L164.4 42.4L158.3 56.1L150.2 64.9L143.4 69.1L135.9 71.7L124.0 72.3L112.6 69.1L105.8 64.9L97.7 56.1L91.6 42.4L88.7 40.0L85.1 39.0L32.6 56.2L26.4 60.3L22.4 66.6L21.2 73.9L25.8 101.6L27.6 105.4L30.5 107.7L34.1 108.6L66.6 108.7L66.7 200.4L68.1 205.9L71.9 211.6L77.7 215.5L84.7 216.9L172.5 216.9L178.2 215.6L184.1 211.7L187.5 206.9L189.3 200.1L189.4 108.7L222.5 108.6L226.0 107.4L229.0 104.5L230.2 101.6L234.5 76.0L234.6 70.7L233.6 66.6L231.0 61.9L227.2 58.3L222.4 55.9Z'
+const BRAND_MARK_BACK = 'M190.1 167.0L194.4 166.2L198.9 163.6L201.7 160.3L203.4 155.3L203.5 86.7L228.0 86.6L232.7 83.9L233.8 81.4L237.2 60.1L236.0 54.7L232.7 50.3L228.0 47.5L189.3 35.1L185.0 37.6L180.4 47.7L174.5 54.2L166.7 58.4L160.9 59.7L155.0 59.7L149.3 58.4L141.5 54.2L135.5 47.7L131.0 37.6L128.4 35.5L125.7 35.1L85.8 48.5L82.1 51.4L80.0 54.7L79.0 62.4'
+const BRAND_MARK_FRONT = 'M168.0 101.5L128.9 89.1L125.0 91.5L120.5 101.7L114.5 108.2L106.7 112.4L101.0 113.7L95.1 113.7L89.3 112.4L81.5 108.2L75.6 101.7L71.0 91.5L68.8 89.7L66.2 89.0L28.0 101.5L22.7 104.8L19.7 109.4L18.9 114.8L22.2 135.4L23.6 138.2L28.0 140.6L52.5 140.6L52.5 208.7L53.6 212.8L56.4 217.0L60.7 219.9L65.9 220.9L131.0 220.9L136.1 219.6L139.6 217.0L142.1 213.5L143.5 208.4L143.5 140.6L168.1 140.6L171.0 139.5L172.9 137.6L177.1 112.5L173.9 105.4L168.0 101.5Z'
 
 function BrandMark() {
   return (
     <svg className="brand-mark" viewBox="0 0 256 256" role="img" aria-label="DSH 皮肤市场">
-      <path d={BRAND_MARK} fill="none" stroke="currentColor" strokeWidth="18.4" strokeLinejoin="round" />
+      <path d={BRAND_MARK_BACK} fill="none" stroke="currentColor" strokeWidth="13.68" strokeLinecap="round" strokeLinejoin="round" />
+      <path d={BRAND_MARK_FRONT} fill="none" stroke="currentColor" strokeWidth="13.68" strokeLinejoin="round" />
     </svg>
   )
 }
@@ -649,27 +651,25 @@ function Site() {
         if (!disposed && !controller.signal.aborted) setCatalog({ error })
       })
     // Star curves only feed the detail chart. A failure leaves the chart out
-    // rather than blocking the page. The card reads the catalog shipped with
-    // this build, so the chart reads the curve file shipped with it too: the
-    // raw main copy can move ahead while Pages is still deploying, and a chart
-    // that ends on tomorrow's count next to yesterday's card is the same bug as
-    // a curve frozen at its export day.
+    // rather than blocking the page. The catalog prefers the raw main branch,
+    // so the chart asks the same place and both describe the same commit; the
+    // copy beside the deployed page is the fallback.
+    const curvesUrl = useLocalPreviewCatalog
+      ? `${import.meta.env.BASE_URL}star-curves.json`
+      : REMOTE_STAR_CURVES_URL
     const localCurvesUrl = `${import.meta.env.BASE_URL}star-curves.json`
     const readCurves = async (url: string) => {
       const response = await fetch(url, { cache: 'no-store', signal: controller.signal })
       if (!response.ok) return undefined
       return parseStarCurves(await response.json())
     }
-    const readFirstCurves = async (urls: string[]) => {
-      for (const url of urls) {
-        const curves = await readCurves(url).catch(() => undefined)
-        if (curves !== undefined && Object.keys(curves).length > 0) return curves
-      }
-      return undefined
-    }
-    void readFirstCurves(useLocalPreviewCatalog ? [localCurvesUrl] : [localCurvesUrl, REMOTE_STAR_CURVES_URL])
+    void readCurves(curvesUrl)
+      .catch(() => undefined)
+      .then(curves => curves !== undefined && Object.keys(curves).length > 0
+        ? curves
+        : readCurves(localCurvesUrl).catch(() => undefined))
       .then(curves => {
-        if (!disposed && curves !== undefined) setCurves(curves)
+        if (!disposed && curves !== undefined && Object.keys(curves).length > 0) setCurves(curves)
       })
     return () => { disposed = true; controller.abort() }
   }, [])

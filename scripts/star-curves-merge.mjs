@@ -23,6 +23,14 @@ import { DAY_MS } from './heat.mjs'
 /** Longest series kept per repository; the sparkline downsamples to 48 points. */
 export const CURVE_WINDOW_DAYS = 120
 
+/**
+ * A history-only series may only have readings this far apart. A longer gap
+ * cannot be filled honestly: repeating the earlier total draws a plateau that
+ * the repository never had (one entry sat at 1607 for 76 days because its file
+ * was never refreshed, while the repository had already climbed past 3000).
+ */
+export const MAX_HISTORY_GAP_DAYS = 14
+
 /** A slip this large is a bad reading, not an unstar. */
 function toleratedDrop(previous) {
   return Math.max(2, previous * 0.05)
@@ -50,6 +58,14 @@ function readSamples(samples, today) {
     if (existing === undefined || observedAt >= existing.observedAt) byDay.set(day, { day, stars, observedAt })
   }
   return [...byDay.values()].sort((left, right) => left.day - right.day)
+}
+
+/** Readings close enough together that a flat fill describes the gap. */
+function isDense(points) {
+  for (let index = 1; index < points.length; index += 1) {
+    if (points[index].day - points[index - 1].day > MAX_HISTORY_GAP_DAYS) return false
+  }
+  return true
 }
 
 /** Star totals only move, they do not jump back and forth. */
@@ -85,7 +101,7 @@ export function buildCurveSeries({ curve, samples = [], snapshot, today, windowD
   } else {
     points = readSamples(samples, today)
     if (snapshotPoint !== undefined) points = points.filter(point => point.day < snapshotPoint.day).concat(snapshotPoint)
-    if (points.length < 2 || !isCumulative(points)) return undefined
+    if (points.length < 2 || !isCumulative(points) || !isDense(points)) return undefined
   }
   // The catalog reading is the headline number, so it is also the last point.
   // A stale card ends the chart earlier instead of leaving a fresher tail.

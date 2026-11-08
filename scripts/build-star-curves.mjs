@@ -43,6 +43,10 @@ if (catalog === undefined || !Array.isArray(catalog.skins)) {
 }
 const history = (await optionalJson(historyPath))?.repos ?? {}
 const previous = await optionalJson(curvesPath) ?? { schemaVersion: 1, repos: {} }
+// GitHub owner and repository names keep their case, but the market keys
+// repositories lowercased. Match the exported curve regardless of how the
+// producer spelled the slug, and write the normalized key back.
+const priorCurves = new Map(Object.entries(previous.repos ?? {}).map(([slug, curve]) => [slug.toLowerCase(), curve]))
 const today = dayNumber(new Date())
 
 // A repository can back several skins (npm siblings). The newest reading is the
@@ -63,7 +67,7 @@ const repos = {}
 let added = 0
 let extended = 0
 for (const slug of [...snapshots.keys()].sort()) {
-  const prior = previous.repos?.[slug]
+  const prior = priorCurves.get(slug)
   const series = buildCurveSeries({
     curve: prior,
     samples: history[slug],

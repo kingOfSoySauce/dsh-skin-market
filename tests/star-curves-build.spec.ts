@@ -68,6 +68,22 @@ describe('star curve merge', () => {
     })?.stars).toEqual([6, 6, 6, 4])
   })
 
+  it('refuses a history whose readings are too far apart to fill honestly', () => {
+    // A file that was not refreshed for months: the flat fill would claim the
+    // repository stopped gaining stars, which is what the deep-whale curve did.
+    expect(buildCurveSeries({
+      samples: [[20700, 1607, AT(20700)]],
+      snapshot: { day: 20765, stars: 3057 },
+      today: TODAY,
+    })).toBeUndefined()
+    const dense = buildCurveSeries({
+      samples: [[20750, 10, AT(20750)], [20762, 10, AT(20762)]],
+      snapshot: { day: 20765, stars: 14 },
+      today: TODAY,
+    })
+    expect(dense?.stars.at(-1)).toBe(14)
+  })
+
   it('cannot draw a line from one reading', () => {
     expect(buildCurveSeries({ snapshot: { day: 20765, stars: 3 }, today: TODAY })).toBeUndefined()
     expect(buildCurveSeries({ curve: { from: 20765, stars: [3] }, today: TODAY })).toBeUndefined()
