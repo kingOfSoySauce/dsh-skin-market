@@ -1,4 +1,49 @@
-url: https://github.com/kleinklein0824/dsh-official-skin
+id: kleinklein0824.dsh.official.skin
 name:
   zh: DSH 官网风格皮肤
   en: DSH Official-Site Style Skin
+author: kleinklein0824
+description: DeepSeek 官网风格皮肤：深蓝宇宙感背景（流体极光 + 粒子鲸鱼 + 星座网格）与浅色玻璃主题，右上角一键切换
+repo: https://github.com/kleinklein0824/dsh-official-skin
+package: dsh-official-skin
+rowId: official-skin
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:kleinklein0824/dsh-official-skin#fcb3d640561b329cd827c6935edc581db02f0320
+  version: 1.1.8
+  commit: fcb3d640561b329cd827c6935edc581db02f0320
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/fcb3d640561b329cd827c6935edc581db02f0320/docs/preview-dark.png
+  - https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/fcb3d640561b329cd827c6935edc581db02f0320/docs/preview-light.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-08T00:06:46.841Z
+metadataUpdatedAt: 2026-11-08T00:06:46.841Z
+starsUpdatedAt: 2026-11-08T00:06:46.841Z
+updatedAt: 2026-11-08T00:06:46.841Z
