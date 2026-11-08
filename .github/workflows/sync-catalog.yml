@@ -16,7 +16,6 @@ on:
       - 'scripts/media.mjs'
       - 'package.json'
       - 'package-lock.json'
-      - 'data/repo-activity.json'
   workflow_dispatch:
 
 permissions:
