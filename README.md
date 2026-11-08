@@ -46,7 +46,7 @@ dsh-skin-market@latest
 
 ### 方法 4： Agent 帮忙
 
-复制下面的提示词给你的 DSH Agent。它会先判断当前是 Web 还是官方 Desktop；Desktop 的安装、启用和重启仍由你在应用界面完成。
+复制下面的提示词给你的 DSH Agent。它会先判断当前是 Web 还是官方 Desktop。Web 由 Agent 执行命令；官方 Desktop 如果当前 DSH 提供插件管理工具（plugin_manager），Agent 可以在你确认精确目标和 profile 后直接安装/启用；工具不可用或需要应用内确认时，Agent 指导你在「插件 → 添加插件」操作。重启仍由你完成。
 
 <details>
 <summary><strong>点击展开提示词</strong></summary>
@@ -57,7 +57,7 @@ dsh-skin-market@latest
 请帮我安装 dsh-skin-market。先只读确认当前是 Web 版还是官方 Desktop，以及当前宿主和实际 profile。Web 查看 dsh --version；官方 Desktop 以应用“关于”中的版本为准，不把系统终端的 npm dsh 版本当作桌面版本。无法读取应用信息时，请让我提供该版本；无法判断宿主就先问我。
 
 - Web 版：执行 dsh plugin --profile web add "dsh-skin-market@latest"，然后核对同一 web profile 中的依赖和 bundle。
-- 官方 Desktop：你负责只读核查和操作指导，安装、启用及重启由我在应用界面完成。不要代我点击安装或启用，不要执行 dsh plugin --profile desktop、pnpm 或其他安装命令，也不要修改 Desktop profile。每次只给下一项操作，等我反馈后继续：打开「插件 → 添加插件」，输入 dsh-skin-market@latest，确认安装结果，再按应用提示启用；需要重启时指导我完全退出并重新打开应用。
+- 官方 Desktop：先只读确认当前 profile 和已安装版本。如果当前宿主提供插件管理工具（plugin_manager）且你能确认当前 profile，先告诉我准备安装/更新的精确目标和会修改的 profile，我确认后由你安装并启用；安装后核对实际版本、启用状态和是否需要重启。工具不可用、宿主拒绝或需要我在应用内确认时，再指导我打开「插件 → 添加插件」，输入 dsh-skin-market@latest，由我点击安装并按应用提示启用。不要执行 dsh plugin --profile desktop，不要用 npm/pnpm 直接写 Desktop profile，也不要手改 profile。重启由我完成。每次只给一个操作，等我反馈再继续。
 
 这次只安装皮肤市场，不做其他皮肤的冲突检查，也不要求停用它们。不要替我安装其他皮肤。安装后告诉我从哪里打开「皮肤市场」；Desktop 以插件页状态和我的实际操作反馈核对结果，没有核实就不要声称安装或启用成功。不要读取 .env、凭据或聊天记录。
 ```
@@ -68,7 +68,7 @@ dsh-skin-market@latest
 请更新已安装的 dsh-skin-market。先判断当前宿主和实际 profile：Web 查看 dsh --version；官方 Desktop 查看应用“关于”中的版本，不用系统终端的 npm dsh 版本替代。无法判断就先问我。
 
 - Web 版：只读确认 web profile 已安装 dsh-skin-market，再执行 dsh plugin --profile web add "dsh-skin-market@latest"。
-- 官方 Desktop：只读核对版本和插件状态，逐步指导我在桌面应用「插件 → 添加插件」中输入 dsh-skin-market@latest、确认更新结果并按提示启用；每次只给下一项操作，等我反馈后继续。安装、启用及重启由我在应用界面完成，不要代操作、执行 Desktop 安装命令或修改 profile。
+- 官方 Desktop：先只读核对版本和插件状态。如果当前宿主提供插件管理工具（plugin_manager）且你能确认 profile，先告诉我准备更新的精确目标和会修改的 profile，我确认后由你更新并启用；更新后核对实际版本、启用状态和是否需要重启。工具不可用、宿主拒绝或需要我在应用内确认时，再指导我在「插件 → 添加插件」中输入 dsh-skin-market@latest、确认更新结果并按提示启用。不要执行 dsh plugin --profile desktop，不要用 npm/pnpm 直接写 Desktop profile，也不要手改 profile。重启由我完成。
 
 Web 更新后验证同一宿主的 dsh-skin-market 依赖和 bundle；Desktop 根据插件页状态和我的实际反馈核对结果，没有核实就不要声称成功。告诉我更新前后版本及需要重启哪个宿主。不要替我更新或卸载其他皮肤。
 ```
@@ -83,16 +83,16 @@ Web 更新后验证同一宿主的 dsh-skin-market 依赖和 bundle；Desktop �
 
 可直接安装的 npm 皮肤会使用「安装」或「安装并使用」流程。官方 Desktop 默认先安装，再进入使用确认；取消使用确认时，皮肤包会保留，但不会启用。
 
-标为「需手动安装」的 GitHub 或 monorepo 子目录皮肤，需要把市场提供的完整固定目标交给 Agent，并由你在 Desktop 的「插件 → 添加插件」中确认。不要把完整 commit 或 `&path:/子目录` 改成 `latest`、仓库主分支或另一个包名。
+标为「需手动安装」的皮肤，需要把市场提供的完整固定目标交给 Agent。有已发布 npm 包时用 `name@version`（预构建）；没有 npm 包时才用 GitHub 完整 commit 和 `&path:/子目录`。不要用未构建的 GitHub 源码代替 npm 包，也不要把 commit 或子目录改成 `latest`、仓库主分支或另一个包名。
 
 <details>
 <summary><strong>点击展开手动皮肤安装流程</strong></summary>
 
 Agent 先只读确认当前 Desktop 版本和其他已启用的皮肤；发现冲突时列出名称，指导你在应用中停用，并核对停用结果后再继续。拿不到启用状态时，应请你提供插件列表或界面状态，不能把“无法确认”当成“没有冲突”。
 
-安装目标使用面板给出的完整固定 spec。GitHub 目标保留完整 commit；monorepo 子包还要保留 `&path:/子目录`，例如 `github:owner/repo#<完整 commit>&path:/packages/skin`。没有 npm 包时，不要把该目标换成包名、`latest` 或仓库主分支。
+安装目标使用面板给出的完整固定 spec。有 npm 包的皮肤优先 `name@version`；没有 npm 包时用 GitHub 完整 commit，monorepo 子包还要保留 `&path:/子目录`，例如 `github:owner/repo#<完整 commit>&path:/packages/skin`。不要把该目标换成 `latest` 或仓库主分支。
 
-Agent 每次只指导一项操作，等你反馈后继续：打开「插件 → 添加插件」、粘贴完整目标、确认安装结果、按提示启用，最后按当前版本要求完全退出并重新打开应用。Agent 不代点安装或启用，不执行 Desktop 安装命令，也不修改 profile。界面不支持该目标或安装失败时，先核对原始报错和维护者说明，再决定下一步；依赖伴生包的皮肤须核对完整安装要求。
+如果当前宿主提供插件管理工具（plugin_manager），Agent 把最终精确目标和会修改的 profile 发给你确认后，可直接安装（默认不启用）；需要启用时先查冲突并再次确认。工具不可用、宿主拒绝或需要你在应用内处理构建授权时，Agent 指导你打开「插件 → 添加插件」、粘贴完整目标、确认安装结果、按提示启用，最后按当前版本要求完全退出并重新打开应用。Agent 不执行 `dsh plugin --profile desktop`，不手改 profile；构建授权只按宿主返回的精确项逐项确认；重启由你完成。界面不支持该目标或安装失败时，先核对原始报错和维护者说明，再决定下一步；依赖伴生包的皮肤须核对完整安装要求。
 
 这些说明不改变市场的 npm 一键安装流程，也不代表所有 GitHub 或子目录皮肤都已完成官方 Desktop 实机验收。
 

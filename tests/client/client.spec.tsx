@@ -2093,7 +2093,7 @@ describe('client market', () => {
     await waitFor(() => expect(dialog.textContent).toContain('无法自动安装：未找到可供 Desktop 安装的 npm 包'))
     expect(dialog.textContent).toContain('插件包名')
     expect(dialog.textContent).toContain('打开「插件 → 添加插件」，输入：')
-    expect(dialog.textContent).toContain('桌面端由你在插件页操作')
+    expect(dialog.textContent).toContain('宿主提供插件管理工具时可由 Agent 确认目标后安装')
     expect(screen.getByRole('textbox', { name: '插件包名' })).toHaveProperty('value', createSkinInstallInputs(manual)[0]!.value)
     expect(screen.queryByRole('button', { name: '复制命令' })).toBeNull()
     expect([...dialog.querySelectorAll('code')].map(node => node.textContent)).toEqual([createSkinInstallPrompt(manual, 'desktop')])

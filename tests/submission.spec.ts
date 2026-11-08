@@ -105,7 +105,7 @@ describe('agent-assisted skin submission', () => {
     expect(prompt).not.toContain(skin.install.target)
   })
 
-  it('guides manual Desktop installs without Web commands, profile edits or a market loop', () => {
+  it('routes manual Desktop installs through a confirmed agent install with a user fallback', () => {
     const commit = 'a'.repeat(40)
     const target = `github:owner/repo#${commit}&path:/packages/skin`
     const companionTarget = `github:owner/repo#${commit}&path:/packages/manager`
@@ -118,17 +118,35 @@ describe('agent-assisted skin submission', () => {
     const prompt = createSkinInstallPrompt(manual, 'desktop')
     expect(prompt).toContain(target)
     expect(prompt).toContain(companionTarget)
-    expect(prompt).toContain('每次只给我一个具体操作，等我反馈后再给下一步')
+    expect(prompt).toContain('插件管理工具')
+    expect(prompt).toContain('由你安装（默认不启用）')
     expect(prompt).toContain('不能把“已安装”直接当成“已启用”')
     expect(prompt).toContain('无法读取启用状态时，先请我提供插件页中的状态')
     expect(prompt).toContain('「插件 → 添加插件」')
-    expect(prompt).toContain('由我点击安装')
-    expect(prompt).toContain('未核实不能宣称安装成功')
+    expect(prompt).toContain('未核实不能宣称安装或启用成功')
     expect(prompt).not.toContain('dsh plugin --profile web')
     expect(prompt).not.toContain('pnpm add')
     expect(prompt).not.toContain('web-only-build-key')
     expect(prompt).not.toContain('幂等地确认')
     expect(prompt).not.toContain('Desktop 由皮肤市场负责安装')
+  })
+
+  it('prefers the published npm package in manual Desktop prompts', () => {
+    const commit = 'a'.repeat(40)
+    const manual = {
+      repo: 'https://github.com/owner/repo', package: 'skin', rowId: 'skin',
+      install: { target: `github:owner/repo#${commit}`, commit, version: '1.0.0',
+        desktop: { mode: 'manual-only', reason: 'npm-package-not-found' },
+        npm: {
+          name: 'skin', version: '1.0.0',
+          integrity: 'sha512-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==',
+          repository: 'https://github.com/owner/repo', gitHead: commit,
+        } },
+    } as CatalogSkin
+    const prompt = createSkinInstallPrompt(manual, 'desktop')
+    expect(prompt).toContain('skin@1.0.0')
+    expect(prompt).toContain('已发布的 npm 包')
+    expect(prompt).toContain('没有 npm 包时再用 GitHub')
   })
 
   it('keeps managed npm Desktop skins on the market one-click path', () => {
@@ -139,7 +157,8 @@ describe('agent-assisted skin submission', () => {
         desktop: { mode: 'managed', registry: 'npm', packageName: 'skin', packageVersion: '1.0.0' } },
     } as CatalogSkin
     const prompt = createSkinInstallPrompt(managed, 'desktop')
-    expect(prompt).toContain('由我点击一键安装')
+    expect(prompt).toContain('点击一键安装')
+    expect(prompt).toContain('插件管理工具')
     expect(prompt).not.toContain('这款皮肤在桌面市场需要手动安装')
     expect(prompt).not.toContain('dsh plugin --profile web')
   })
