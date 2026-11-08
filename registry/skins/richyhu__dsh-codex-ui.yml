@@ -1,1 +1,50 @@
-url: https://github.com/richyhu/dsh-codex-ui
+id: richyhu.dsh.codex.ui
+name:
+  zh: dsh-codex-ui
+  en: dsh-codex-ui
+author: richyhu
+description: Codex-style rail and navigation shell for the DeepSeek Harness Web UI.
+repo: https://github.com/richyhu/dsh-codex-ui
+package: dsh-codex-ui
+rowId: dsh-codex-ui
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:richyhu/dsh-codex-ui#6d871e844fdd81b16258850bd9ffbcdac283670a
+  version: 0.1.1
+  commit: 6d871e844fdd81b16258850bd9ffbcdac283670a
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-08T00:11:23.006Z
+metadataUpdatedAt: 2026-11-08T00:11:23.006Z
+starsUpdatedAt: 2026-11-08T00:11:23.006Z
+updatedAt: 2026-11-08T00:11:23.006Z
