@@ -13,9 +13,9 @@ tags:
 modes:
   - light
 install:
-  target: github:louke6572/dsh-whale-widget-plus#e831912413033491781f0edd1b43235a59a92c02
-  version: 0.7.4
-  commit: e831912413033491781f0edd1b43235a59a92c02
+  target: github:louke6572/dsh-whale-widget-plus#54c22d7811f183a3dbf78f29bfe91e045e964755
+  version: 0.7.5
+  commit: 54c22d7811f183a3dbf78f29bfe91e045e964755
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -44,20 +44,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: e831912413033491781f0edd1b43235a59a92c02
-    packageVersion: 0.7.4
+    commit: 54c22d7811f183a3dbf78f29bfe91e045e964755
+    packageVersion: 0.7.5
     scannerVersion: static-v2
     dshVersion: 0.1.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-11-07T05:33:45.174Z
+    checkedAt: 2026-11-08T00:17:40.960Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 944
-starsSnapshot: 89
-releaseUpdatedAt: 2026-11-07T05:33:45.510Z
-metadataUpdatedAt: 2026-11-07T05:33:45.510Z
-starsUpdatedAt: 2026-11-07T05:33:45.510Z
-updatedAt: 2026-11-07T05:33:45.510Z
+starsSnapshot: 90
+releaseUpdatedAt: 2026-11-08T00:17:41.133Z
+metadataUpdatedAt: 2026-11-08T00:17:41.133Z
+starsUpdatedAt: 2026-11-08T00:17:41.133Z
+updatedAt: 2026-11-08T00:17:41.133Z
