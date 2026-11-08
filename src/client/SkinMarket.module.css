@@ -182,7 +182,6 @@
 .homeCardMedia { display: block; width: 100%; aspect-ratio: 16 / 9; flex: none; overflow: hidden; background: var(--dsw-alias-bg-layer-2); }
 .homeCardMedia > img,
 .homeCardMedia > .previewPlaceholder { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.frozenPreview { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; background: var(--dsw-alias-bg-layer-2); }
 .homeCardCopy { box-sizing: border-box; display: flex; width: 100%; min-width: 0; flex: 1; flex-direction: column; justify-content: flex-start; gap: 6px; padding: 12px 14px 0; }
 .homeCardTitleRow { display: flex; min-width: 0; align-items: flex-start; justify-content: space-between; gap: 8px; }
 .homeCardTitleRow > strong { display: -webkit-box; min-width: 0; flex: 1; overflow: hidden; font-size: 13px; font-weight: 550; line-height: 19px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
@@ -363,7 +362,6 @@
 .skinCardPreview { display: block; width: 56px; height: 56px; flex: none; overflow: hidden; border-radius: var(--dsw-radius-sm); background: var(--dsw-alias-bg-layer-3); }
 .skinCardPreview > img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: .35; transition: opacity var(--ds-transition-duration) var(--ds-ease-in-out), transform var(--ds-transition-duration-slow) var(--ds-ease-in-out); }
 .skinCardPreview > img[data-loaded="true"] { opacity: 1; }
-.skinCardPreview > .frozenPreview { background: var(--dsw-alias-bg-layer-3); }
 .skinCardPreview > .previewPlaceholder { width: 100%; height: 100%; }
 .previewPlaceholder { box-sizing: border-box; display: flex; min-width: 0; align-items: center; justify-content: center; flex-direction: column; gap: 4px; color: var(--dsw-alias-label-caption); background: linear-gradient(145deg, var(--dsw-alias-bg-layer-2), var(--dsw-alias-bg-layer-1)); text-align: center; overflow: hidden; }
 .previewPlaceholder strong { display: block; max-width: 88%; overflow: hidden; color: var(--dsw-alias-label-secondary); font-size: var(--dsw-font-xxs-12-font-size); font-weight: 500; line-height: var(--dsw-font-xxs-12-line-height); text-overflow: ellipsis; white-space: nowrap; }
@@ -666,3 +664,33 @@
 }
 
 @media (prefers-reduced-motion: reduce) { .operation svg, .loading svg, .listLoading svg { animation: none; } }
+
+/* Discover keeps the original compact one-line footer; the two-row action bar is
+   installed-only. */
+.homeCard[data-location="discover"] { display: grid; grid-template-columns: minmax(0, 1fr); background: transparent; }
+.homeCard[data-location="discover"]:hover,
+.homeCard[data-location="discover"]:focus-within { background-image: none; }
+.homeCard[data-location="discover"][data-active="true"] { background-color: transparent; }
+.homeCard[data-location="discover"] .homeCardOpen { grid-area: 1 / 1; align-self: stretch; z-index: 0; flex: none; background: var(--dsw-alias-bg-layer-1); -webkit-backdrop-filter: var(--dsw-menu-backdrop-filter, none); backdrop-filter: var(--dsw-menu-backdrop-filter, none); }
+.homeCard[data-location="discover"] .homeCardOpen:hover,
+.homeCard[data-location="discover"] .homeCardOpen:focus,
+.homeCard[data-location="discover"] .homeCardOpen:focus-visible,
+.homeCard[data-location="discover"] .homeCardOpen:active { background-image: linear-gradient(var(--market-card-hover), var(--market-card-hover)); }
+.homeCard[data-location="discover"][data-active="true"] .homeCardOpen { background-color: color-mix(in srgb, var(--dsw-alias-state-success-primary) 4%, var(--dsw-alias-bg-layer-1)); }
+.homeCard[data-location="discover"] .homeCardCopy { padding: 12px 14px 44px; }
+.homeCard[data-location="discover"] .homeCardFooter { position: absolute; z-index: 1; right: 0; bottom: 0; left: 0; display: flex; flex-direction: row; min-height: 24px; align-items: center; gap: 8px; padding: 0 6px 10px 12px; cursor: pointer; }
+.homeCard[data-location="discover"] .homeCardMeta { display: contents; }
+.homeCard[data-location="discover"] .cardInlineActions { display: inline-flex; width: auto; min-width: 0; max-width: 100%; align-items: center; gap: 4px; flex: 0 1 auto; flex-wrap: wrap; justify-content: flex-start; }
+.homeCard[data-location="discover"] .cardAction { padding-inline: 8px; }
+.homeCard[data-location="discover"] .homeCardFooter .statusLabel { max-width: 42%; }
+@media (max-width: 959px) {
+  .homeCard[data-location="discover"] .homeCardCopy { padding: 9px 12px 44px; }
+  .homeCard[data-location="discover"] .homeCardFooter { gap: 6px; padding: 0 6px 10px 12px; }
+}
+
+/* Installed cards start as the original one-line footer. The action group is
+   atomic (nowrap); when the card is too narrow it wraps below the metadata as a
+   whole, so the buttons themselves never break. */
+.homeCard[data-location="installed"] .homeCardFooter { flex-direction: row; flex-wrap: wrap; align-items: center; }
+.homeCard[data-location="installed"] .homeCardMeta { flex: 1 1 82px; min-width: 0; }
+.homeCard[data-location="installed"] .cardInlineActions { width: auto; flex: 0 0 auto; margin-left: auto; flex-wrap: nowrap; justify-content: flex-end; }

@@ -803,57 +803,6 @@ interface PreviewMediaProps {
   t?: Translator
 }
 
-export function isAnimatedPreviewSource(source: string | undefined): boolean {
-  if (source === undefined) return false
-  return /^data:image\/gif(?:[;,])/i.test(source) || /\.gif(?:$|[?#])/i.test(source)
-}
-
-/**
- * Card covers must not loop an animated GIF: one grid can contain dozens of
- * them, and the constant motion makes the whole market look like it is
- * flashing. Draw the first frame once so the cover is a stable poster; the
- * detail hero and gallery still use the original animated source.
- */
-function FrozenGifPreview({ source, alt, square, onError }: { source: string; alt: string; square: boolean; onError: () => void }) {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null)
-  const [fallback, setFallback] = useState(false)
-  const onErrorRef = useRef(onError)
-  onErrorRef.current = onError
-  useEffect(() => {
-    let cancelled = false
-    const image = new Image()
-    image.decoding = 'async'
-    image.onload = () => {
-      if (cancelled) return
-      const canvas = canvasRef.current
-      if (canvas === null) return
-      const context = canvas.getContext('2d')
-      if (context === null || image.naturalWidth <= 0 || image.naturalHeight <= 0) {
-        setFallback(true)
-        return
-      }
-      const width = square ? 112 : 720
-      const height = square ? 112 : 405
-      canvas.width = width
-      canvas.height = height
-      const scale = Math.max(width / image.naturalWidth, height / image.naturalHeight)
-      const drawWidth = image.naturalWidth * scale
-      const drawHeight = image.naturalHeight * scale
-      try {
-        context.drawImage(image, (width - drawWidth) / 2, (height - drawHeight) / 2, drawWidth, drawHeight)
-        canvas.dataset.loaded = 'true'
-      } catch {
-        setFallback(true)
-      }
-    }
-    image.onerror = () => { if (!cancelled) onErrorRef.current() }
-    image.src = source
-    return () => { cancelled = true; image.onload = null; image.onerror = null }
-  }, [source, square])
-  if (fallback) return <img className={css.frozenPreview} src={source} alt={alt} loading="lazy" decoding="async" onError={onError} />
-  return <canvas ref={canvasRef} className={css.frozenPreview} role="img" aria-label={alt} width={square ? 112 : 720} height={square ? 112 : 405} />
-}
-
 function PreviewMedia({ skin, src, fallbackSources, alt, kind, loading, t = defaultTranslator }: PreviewMediaProps) {
   const candidates = previewSourceCandidates(src, fallbackSources)
   const candidateKey = candidates.join('\u0001')
@@ -881,12 +830,7 @@ function PreviewMedia({ skin, src, fallbackSources, alt, kind, loading, t = defa
   if (placeholder) return <div className={css.previewPlaceholder} data-preview-kind={kind} role="img" aria-label={t('common.noScreenshot', { name: localizedSkinName(skin.name, t) })}><MarkGithubIcon aria-hidden="true" /><strong>{skin.author}</strong><small>{t('common.noScreenshotShort')}</small></div>
   if (!lazyMedia.visible) return <span ref={lazyMedia.ref} className={css.mediaLazyPlaceholder} role="img" aria-label={alt} />
   const media = generatedMediaFor(skin, activeSrc, kind)
-  if (media === undefined) {
-    if ((kind === 'recommendation' || kind === 'list') && isAnimatedPreviewSource(activeSrc)) {
-      return <FrozenGifPreview source={activeSrc} alt={alt} square={kind === 'list'} onError={tryNextSource} />
-    }
-    return <img src={activeSrc} alt={alt} loading={loading} decoding="async" onLoad={event => { event.currentTarget.dataset.loaded = 'true' }} onError={tryNextSource} />
-  }
+  if (media === undefined) return <img src={activeSrc} alt={alt} loading={loading} decoding="async" onLoad={event => { event.currentTarget.dataset.loaded = 'true' }} onError={tryNextSource} />
   const showFull = kind === 'hero'
   if (showFull) {
     if (fullFailed) return <img src={activeSrc} alt={alt} loading={loading} decoding="async" onError={tryNextSource} />
@@ -2863,14 +2807,17 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     const cardMutation = liveOperationFor(operations, skin.id)
     const needsInstall = itemState.installation === 'missing' || itemState.installation === 'broken'
     const canMigrate = hostKind === 'dsh' && itemState.installation === 'installed' && itemState.sourceMigration !== undefined && !isManualOnly(skin)
-    const pinActionAvailable = location === 'installed' && itemState.installation === 'installed'
+    const installedCard = location === 'installed'
+    const pinActionAvailable = installedCard && itemState.installation === 'installed'
       && itemState.activation !== 'switching' && (itemState.activation !== 'restart-required' || itemState.pinned === true)
-    const updateActionAvailable = itemState.installation === 'installed' && itemState.updateAvailable && !isManualOnly(skin) && itemState.activation !== 'unavailable'
+    const updateActionAvailable = installedCard
+      ? itemState.installation === 'installed' && itemState.updateAvailable && !isManualOnly(skin) && itemState.activation !== 'unavailable'
+      : itemState.installation === 'installed' && itemState.updateAvailable && !isManualOnly(skin)
     const stopUnavailableActionAvailable = itemState.installation === 'installed' && itemState.activation === 'unavailable'
     const actionCount = cardMutation !== undefined || needsInstall
       ? 1
       : itemState.installation === 'installed'
-        ? Number(itemState.activation === 'inactive' || itemState.activation === 'active' || itemState.activation === 'unavailable') + Number(stopUnavailableActionAvailable) + Number(updateActionAvailable) + Number(pinActionAvailable)
+        ? Number(itemState.activation === 'inactive' || itemState.activation === 'active' || itemState.activation === 'unavailable') + Number(stopUnavailableActionAvailable) + Number(updateActionAvailable) + Number(pinActionAvailable) + Number(!installedCard && canMigrate)
         : 0
     const stateText = itemState.installation === 'broken'
       ? t('common.installError')
@@ -2887,36 +2834,37 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             : null
     // The Installed section already says "installed"; only surface a state that
     // adds information there (a pending update, active/pinned, restart, error).
-    const footerStateText = location === 'installed' && itemState.installation === 'installed' && itemState.activation === 'inactive'
+    const footerStateText = installedCard && itemState.installation === 'installed' && itemState.activation === 'inactive'
       ? updateActionAvailable ? t('common.updateAvailable') : null
       : stateText
-    const open = () => location === 'installed' ? openInstalledBrowser(skin.id) : openBrowser(skin.id, 'discover')
+    const open = () => installedCard ? openInstalledBrowser(skin.id) : openBrowser(skin.id, 'discover')
     const name = localizedSkinName(skin.name, t)
     const description = skinDescriptionLabel(skin, t)
     const migrateLabel = itemState.sourceMigration?.kind === 'local' ? t('common.replaceWithMarket') : t('common.useNpm')
-    return <article className={css.homeCard} data-active={itemState.activation === 'active' ? 'true' : undefined} data-actions={actionCount} key={`${location}:${skin.id}`}>
-      <button type="button" className={`${css.homeCardOpen} dsh-skin-media-hover`} aria-current={itemState.activation === 'active' ? 'true' : undefined} aria-label={location === 'installed' ? t('common.installedCard', { name }) : t('common.interfacePreview', { name })} onClick={open}>
+    return <article className={css.homeCard} data-location={location} data-active={itemState.activation === 'active' ? 'true' : undefined} data-actions={actionCount} key={`${location}:${skin.id}`}>
+      <button type="button" className={`${css.homeCardOpen} dsh-skin-media-hover`} aria-current={itemState.activation === 'active' ? 'true' : undefined} aria-label={installedCard ? t('common.installedCard', { name }) : t('common.interfacePreview', { name })} onClick={open}>
         <span className={css.homeCardMedia}><PreviewMedia t={t} skin={skin} src={getCatalogListScreenshot(skin)} fallbackSources={getCatalogScreenshotUrls(skin)} alt={t('common.interfacePreview', { name })} kind="recommendation" loading="lazy" /></span>
         <span className={css.homeCardCopy}>
-          <span className={css.homeCardTitleRow}><strong title={name}>{name}</strong>{location === 'discover' && <span className={css.feedMeta}><StarIcon size={12} aria-hidden="true" /> {skin.githubStars}</span>}</span>
+          <span className={css.homeCardTitleRow}><strong title={name}>{name}</strong>{!installedCard && <span className={css.feedMeta}><StarIcon size={12} aria-hidden="true" /> {skin.githubStars}</span>}</span>
           {description !== undefined && <span className={css.homeCardDescription} title={description}>{displayTitle(description)}</span>}
         </span>
       </button>
-      <div className={css.homeCardFooter}>
+      <div className={css.homeCardFooter} data-location={location}>
         <div className={css.homeCardMeta}>
           <span className={css.homeCardRepo} title={githubRepoLabel(skin.repo)}>{githubRepoLabel(skin.repo)}</span>
           {footerStateText !== null && <StatusLabel active={itemState.activation === 'active'}>{footerStateText}</StatusLabel>}
-          {canMigrate && <button type="button" className={css.cardSourceAction} aria-label={migrateLabel} title={actionReason('migrate') ?? migrateLabel} disabled={actionReason('migrate') !== null} onClick={() => setConfirmMigration({ skin, source: itemState.sourceMigration! })}>{t('common.migrateCompact')}</button>}
+          {installedCard && canMigrate && <button type="button" className={css.cardSourceAction} aria-label={migrateLabel} title={actionReason('migrate') ?? migrateLabel} disabled={actionReason('migrate') !== null} onClick={() => setConfirmMigration({ skin, source: itemState.sourceMigration! })}>{t('common.migrateCompact')}</button>}
         </div>
         {actionCount > 0 && <div className={css.cardInlineActions} role="group" aria-label={`${name} ${t('common.actions')}`}>
           {cardMutation !== undefined ? <span className={css.cardActionProgress}><IconLoadingOutline />{t(mutationLabelKeys[cardMutation.kind])}</span> : <>
             {needsInstall && <Button className={css.cardAction} variant="outline" size="sm" disabled={openingPluginPanel || (isManualOnly(skin) ? officialDesktop && deferInstallAndUse : installAndUseReason !== null || officialDesktop && deferInstallAndUse)} title={isManualOnly(skin) ? officialDesktop ? t('common.installThisSkin') : t('common.copyInstallPrompt') : installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t('common.noOtherInstall') : deferInstallAndUse ? t('common.installAfterCurrent') : installRequiresRestart ? t('market.restartDesktopGuidance') : t('common.installAndUse'))} onClick={() => openCardInstall(skin)}>{isManualOnly(skin) ? hostKind === 'desktop' ? t('common.install') : t('common.manualInstall') : officialDesktop || deferInstallAndUse ? t('common.install') : t('common.installAndUse')}</Button>}
             {itemState.installation === 'installed' && itemState.activation === 'inactive' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('activate') !== null} title={actionReason('activate') ?? undefined} onClick={() => activateCard(skin.id)}>{t('common.use')}</Button>}
-            {itemState.installation === 'installed' && itemState.activation === 'unavailable' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('activate') !== null} title={actionReason('activate') ?? t('common.useAgain')} onClick={() => activateCard(skin.id)}>{t('common.use')}</Button>}
+            {itemState.installation === 'installed' && itemState.activation === 'unavailable' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('activate') !== null} title={actionReason('activate') ?? (installedCard ? t('common.useAgain') : undefined)} onClick={() => activateCard(skin.id)}>{installedCard ? t('common.use') : t('common.useAgain')}</Button>}
             {stopUnavailableActionAvailable && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('deactivate') !== null} title={actionReason('deactivate') ?? undefined} onClick={() => { void runForSkin(skin.id, 'deactivate') }}>{t('common.deactivate')}</Button>}
             {itemState.installation === 'installed' && itemState.activation === 'active' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('deactivate') !== null} title={actionReason('deactivate') ?? undefined} onClick={() => { void runForSkin(skin.id, 'deactivate') }}>{t('common.deactivate')}</Button>}
             {pinActionAvailable && <Button className={css.cardAction} variant="outline" size="sm" aria-pressed={itemState.pinned === true} disabled={actionReason(itemState.pinned ? 'unpin' : 'pin') !== null} title={actionReason(itemState.pinned ? 'unpin' : 'pin') ?? (itemState.pinned ? t('common.unpinDescription') : t('common.pinDescriptionActive'))} onClick={() => { void runForSkin(skin.id, itemState.pinned ? 'unpin' : 'pin') }}>{itemState.pinned ? t('common.unpin') : t('common.pinCompact')}</Button>}
             {updateActionAvailable && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('update') !== null} title={actionReason('update') ?? undefined} onClick={() => { void runForSkin(skin.id, 'update') }}>{t('common.updateAction')}</Button>}
+            {!installedCard && canMigrate && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('migrate') !== null} title={actionReason('migrate') ?? undefined} onClick={() => setConfirmMigration({ skin, source: itemState.sourceMigration! })}>{migrateLabel}</Button>}
           </>}
         </div>}
       </div>
