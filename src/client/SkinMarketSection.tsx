@@ -1979,9 +1979,9 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const installationUnverified = selected !== undefined && isInstallationUnverified(selected)
   const selectedDesktopPlan = selected === undefined ? undefined : desktopInstallPlan(selected, officialDesktop)
   const desktopManualReason = selectedDesktopPlan?.kind === 'manual' ? selectedDesktopPlan.reason : undefined
-  const manualInstallNotice = hostKind === 'desktop'
+  const manualInstallNotice = manualOnly
     ? t('common.manualInstallUnavailableDesktop', { reason: desktopManualReasonLabel(desktopManualReason, t) })
-    : t('common.manualInstallUnavailableMarket')
+    : ''
   const installationUnverifiedNotice = selected === undefined ? '' : t('common.installationUnverifiedNotice', {
     reason: installationUnverifiedReason(selected, t),
   })
@@ -2819,31 +2819,31 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     setInstallCopied(null)
     setError(null)
     setShowInstallOptions(false)
-    closeBrowser()
-    if (!officialDesktop || desktopPluginPanel === undefined) {
-      setError(t('market.installPanelUnavailable'))
-      return
-    }
+    // Show the button-level progress before the native panel handoff; closing
+    // the market first left the user with no feedback while the panel loaded.
     setOpeningPluginPanel(true)
-    setShowInstallOptions(false)
-    closeBrowser()
     try {
+      if (!officialDesktop || desktopPluginPanel === undefined) {
+        setError(t('market.installPanelUnavailable'))
+        return
+      }
       const failed = operations.find(operation => operation.skinId === skin.id && operation.phase === 'failed')
       const result = await desktopPluginPanel.open(target, { skinId: skin.id, packageName: skin.package, operationId: failed?.id })
-      if (!result.ok && mounted.current) {
-        setError(result.reason)
-      }
+      if (!mounted.current) return
+      if (result.ok) closeBrowser()
+      else setError(result.reason)
     } catch {
-      if (mounted.current) {
-        setError(t('market.installPanelOpenFailed'))
-      }
+      if (mounted.current) setError(t('market.installPanelOpenFailed'))
     } finally {
       if (mounted.current) setOpeningPluginPanel(false)
     }
   }
   const openManualInstall = (skin: CatalogSkin) => {
     if (officialDesktop) {
-      void openPluginPanel(skin, skin.install.target)
+      // Prefer the pinned npm release when the catalog knows one: a git
+      // checkout may not contain the built entry pnpm will not build, while
+      // the published tarball does.
+      void openPluginPanel(skin, preferredInstallTarget(skin))
       return
     }
     chooseSkin(skin.id)
@@ -2919,6 +2919,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       ? updateActionAvailable ? t('common.updateAvailable') : null
       : stateText
     const open = () => installedCard ? openInstalledBrowser(skin.id) : openBrowser(skin.id, 'discover')
+    const openingThisPanel = openingPluginPanel && selected?.id === skin.id
     const name = localizedSkinName(skin.name, t)
     const description = skinDescriptionLabel(skin, t)
     const migrateLabel = itemState.sourceMigration?.kind === 'local' ? t('common.replaceWithMarket') : t('common.useNpm')
@@ -2938,7 +2939,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         </div>
         {actionCount > 0 && <div className={css.cardInlineActions} role="group" aria-label={`${name} ${t('common.actions')}`}>
           {cardMutation !== undefined ? <span className={css.cardActionProgress}><IconLoadingOutline />{t(mutationLabelKeys[cardMutation.kind])}</span> : <>
-            {needsInstall && <Button className={css.cardAction} variant="outline" size="sm" disabled={openingPluginPanel || (isManualOnly(skin) ? officialDesktop && deferInstallAndUse : installAndUseReason !== null || officialDesktop && deferInstallAndUse)} title={isManualOnly(skin) ? officialDesktop ? t('common.installThisSkin') : t('common.copyInstallPrompt') : installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t('common.noOtherInstall') : deferInstallAndUse ? t('common.installAfterCurrent') : installRequiresRestart ? t('market.restartDesktopGuidance') : t('common.installAndUse'))} onClick={() => openCardInstall(skin)}>{isManualOnly(skin) ? hostKind === 'desktop' ? t('common.install') : t('common.manualInstall') : officialDesktop || deferInstallAndUse ? t('common.install') : t('common.installAndUse')}</Button>}
+            {needsInstall && <Button className={css.cardAction} variant="outline" size="sm" icon={openingThisPanel ? <IconLoadingOutline /> : undefined} disabled={openingPluginPanel || (isManualOnly(skin) ? officialDesktop && deferInstallAndUse : installAndUseReason !== null || officialDesktop && deferInstallAndUse)} title={openingThisPanel ? t('common.openingInstallPanel') : isManualOnly(skin) ? officialDesktop ? t('common.installThisSkin') : t('common.copyInstallPrompt') : installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t('common.noOtherInstall') : deferInstallAndUse ? t('common.installAfterCurrent') : installRequiresRestart ? t('market.restartDesktopGuidance') : t('common.installAndUse'))} onClick={() => openCardInstall(skin)}>{openingThisPanel ? t('common.openingInstallPanel') : isManualOnly(skin) ? hostKind === 'desktop' ? t('common.install') : t('common.manualInstall') : officialDesktop || deferInstallAndUse ? t('common.install') : t('common.installAndUse')}</Button>}
             {itemState.installation === 'installed' && itemState.activation === 'inactive' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('activate') !== null} title={actionReason('activate') ?? undefined} onClick={() => activateCard(skin.id)}>{t('common.use')}</Button>}
             {itemState.installation === 'installed' && itemState.activation === 'unavailable' && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('activate') !== null} title={actionReason('activate') ?? (installedCard ? t('common.useAgain') : undefined)} onClick={() => activateCard(skin.id)}>{installedCard ? t('common.use') : t('common.useAgain')}</Button>}
             {stopUnavailableActionAvailable && <Button className={css.cardAction} variant="outline" size="sm" disabled={actionReason('deactivate') !== null} title={actionReason('deactivate') ?? undefined} onClick={() => { void runForSkin(skin.id, 'deactivate') }}>{t('common.deactivate')}</Button>}
@@ -3001,6 +3002,31 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const manualRecovery = installRecovery !== null && installRecovery.skinId !== undefined
     && ['none', 'open-failed', 'blocked', 'companions', 'replace'].includes(installRecovery.lead)
     ? installRecovery : null
+  const recoveryDescription = installRecovery === null ? undefined
+    : installRecovery.lead === 'open-failed' ? t('failure.manualInstallFallback')
+      : installRecovery.lead === 'blocked' ? t('failure.recoveryBlocked')
+        : installRecovery.lead === 'companions' ? t('failure.recoveryCompanions')
+          : installRecovery.lead === 'replace' && installRecovery.spec ? t('failure.manualReplace', { spec: installRecovery.spec })
+            : installRecovery.lead === 'enable' && installRecovery.name ? t('failure.recoveryEnable', { name: installRecovery.name })
+              : installRecovery.lead === 'uninstall' && installRecovery.name ? t('failure.recoveryUninstall', { name: installRecovery.name })
+                : installRecovery.lead === 'check' ? t('common.resultNotConfirmed')
+                  : installRecovery.lead === 'none'
+                    ? installRecovery.spec !== undefined && installRecovery.spec.trim() !== ''
+                      ? hostKind === 'desktop' ? t('common.desktopInstallInput') : t('common.manualSpecCopy')
+                      : t('failure.marketUpdateRetry')
+                    : undefined
+  const manualPanelDescription = (() => {
+    const failure = manualRecovery === null || manualOnly ? undefined
+      : manualRecovery.lead === 'open-failed' || manualRecovery.lead === 'none' ? t('failure.manualInstallFallback')
+        : manualRecovery.lead === 'blocked' ? t('failure.recoveryBlocked')
+          : manualRecovery.lead === 'companions' ? t('failure.recoveryCompanions')
+            : manualRecovery.lead === 'replace' && manualRecovery.spec ? t('failure.manualReplace', { spec: manualRecovery.spec })
+              : undefined
+    const input = manualOnly ? `${manualInstallNotice}${t('common.manualPromptDesktop')}`
+      : hostKind === 'desktop' ? t('common.desktopInstallInput')
+        : failure === undefined ? t('common.manualInstallInput') : undefined
+    return [failure, input].filter(Boolean).join('')
+  })()
   const closeManualPanel = () => {
     setShowInstallOptions(false)
     if (manualRecovery === null) return
@@ -3443,10 +3469,10 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           <div className={css.actionRow}>
               <StatusLabel active={state.activation === 'active'}>{statusLabel(state, t)}</StatusLabel>
               {state.installation === 'missing' && <>
-                {autoInstallable && (officialDesktop || !deferInstallAndUse) && <Button variant="primary" size="sm" icon={<IconDownloadOutline />} disabled={selectedBusy !== undefined || installAndUseReason !== null || officialDesktop && deferInstallAndUse} title={installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t('common.noOtherInstall') : installRequiresRestart ? t('market.restartDesktopGuidance') : undefined)} onClick={() => void installAndActivate()}>{officialDesktop ? t('common.install') : t('common.installAndUse')}</Button>}
-                {autoInstallable && !officialDesktop && <Button variant={deferInstallAndUse ? 'primary' : 'outline'} size="sm" icon={deferInstallAndUse ? <IconDownloadOutline /> : undefined} disabled={selectedBusy !== undefined || actionReason('install') !== null} title={actionReason('install') ?? (deferInstallAndUse ? t('common.installAfterCurrent') : undefined)} onClick={() => void run('install')}>{deferInstallAndUse ? t('common.install') : t('common.onlyInstall')}</Button>}
+                {autoInstallable && (officialDesktop || !deferInstallAndUse) && <Button variant="primary" size="sm" icon={selectedBusy !== undefined ? <IconLoadingOutline /> : <IconDownloadOutline />} disabled={selectedBusy !== undefined || installAndUseReason !== null || officialDesktop && deferInstallAndUse} title={selectedBusy !== undefined ? t('common.mutationInstall') : installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t('common.noOtherInstall') : installRequiresRestart ? t('market.restartDesktopGuidance') : undefined)} onClick={() => void installAndActivate()}>{officialDesktop ? t('common.install') : t('common.installAndUse')}</Button>}
+                {autoInstallable && !officialDesktop && <Button variant={deferInstallAndUse ? 'primary' : 'outline'} size="sm" icon={selectedBusy !== undefined ? <IconLoadingOutline /> : deferInstallAndUse ? <IconDownloadOutline /> : undefined} disabled={selectedBusy !== undefined || actionReason('install') !== null} title={selectedBusy !== undefined ? t('common.mutationInstall') : actionReason('install') ?? (deferInstallAndUse ? t('common.installAfterCurrent') : undefined)} onClick={() => void run('install')}>{deferInstallAndUse ? t('common.install') : t('common.onlyInstall')}</Button>}
                 {autoInstallable && <Button variant="outline" size="sm" disabled={selectedBusy !== undefined} onClick={() => { setInstallCopied(null); setShowInstallOptions(true) }}>{t('common.otherInstallMethods')}</Button>}
-                {manualOnly && <Button variant="outline" size="sm" disabled={selectedBusy !== undefined || openingPluginPanel || officialDesktop && deferInstallAndUse} onClick={() => openManualInstall(selected)}>{t('common.install')}</Button>}
+                {manualOnly && <Button variant="outline" size="sm" icon={openingPluginPanel ? <IconLoadingOutline /> : undefined} disabled={selectedBusy !== undefined || openingPluginPanel || officialDesktop && deferInstallAndUse} onClick={() => openManualInstall(selected)}>{openingPluginPanel ? t('common.openingInstallPanel') : t('common.install')}</Button>}
                 {manualOnly && officialDesktop && <Button variant="outline" size="sm" onClick={() => { setInstallCopied(null); setShowInstallOptions(true) }}>{t('common.otherInstallMethods')}</Button>}
               </>}
               {state.installation === 'installed' && state.activation === 'inactive' && <Button variant="primary" size="sm" disabled={selectedBusy !== undefined || actionReason('activate') !== null} title={actionReason('activate') ?? undefined} onClick={activateSelected}>{t('common.use')}</Button>}
@@ -3459,7 +3485,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
               {(state.activation === 'active' || state.activation === 'unavailable') && <Button variant="outline" size="sm" disabled={selectedBusy !== undefined || actionReason('deactivate') !== null} title={actionReason('deactivate') ?? undefined} onClick={() => void run('deactivate')}>{t('common.deactivate')}</Button>}
               {state.activation === 'active' && <Button className={css.pinAction} variant="outline" size="sm" aria-pressed={state.pinned === true} title={actionReason(state.pinned ? 'unpin' : 'pin') ?? (state.pinned ? t('common.unpinDescription') : t('common.pinDescriptionActive'))} disabled={selectedBusy !== undefined || actionReason(state.pinned ? 'unpin' : 'pin') !== null} onClick={() => { void run(state.pinned ? 'unpin' : 'pin') }}>{state.pinned ? t('common.unpin') : t('common.pinUse')}</Button>}
               {state.activation === 'restart-required' && state.pinned && <Button className={css.pinAction} variant="outline" size="sm" aria-pressed="true" title={actionReason('unpin') ?? t('common.unpinRestartDescription')} disabled={selectedBusy !== undefined || actionReason('unpin') !== null} onClick={() => void run('unpin')}>{t('common.unpin')}</Button>}
-              {state.updateAvailable && !manualOnly && <Button variant={state.activation === 'active' && !state.pinned ? 'primary' : 'outline'} size="sm" icon={<IconRefreshOutline />} disabled={selectedBusy !== undefined || actionReason('update') !== null} title={actionReason('update') ?? undefined} onClick={() => void run('update')}>{t('common.updateAction')}</Button>}
+              {state.updateAvailable && !manualOnly && <Button variant={state.activation === 'active' && !state.pinned ? 'primary' : 'outline'} size="sm" icon={selectedBusy !== undefined ? <IconLoadingOutline /> : <IconRefreshOutline />} disabled={selectedBusy !== undefined || actionReason('update') !== null} title={selectedBusy !== undefined ? t('common.mutationUpdate') : actionReason('update') ?? undefined} onClick={() => void run('update')}>{t('common.updateAction')}</Button>}
               {hostKind === 'dsh' && state.installation === 'installed' && state.sourceMigration !== undefined && !installationUnverified && <Button variant="outline" size="sm" disabled={selectedBusy !== undefined || actionReason('migrate') !== null} title={actionReason('migrate') ?? undefined} onClick={() => setConfirmMigration({ skin: selected, source: state.sourceMigration! })}>{state.sourceMigration.kind === 'local' ? t('common.replaceWithMarket') : t('common.useNpm')}</Button>}
               {state.installation !== 'missing' && <Button className={css.iconOnlyButton} variant="outline" size="sm" icon={<IconTrashOutline />} aria-label={t('common.uninstall')} title={actionReason('uninstall') ?? t('common.uninstall')} disabled={selectedBusy !== undefined || actionReason('uninstall') !== null} onClick={() => setConfirmUninstall(true)} />}
           </div>
@@ -3647,22 +3673,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         title={installRecovery?.lead === 'uninstall' ? t('common.uninstall') : installRecovery?.lead === 'enable' ? t('common.use') : installRecovery?.skinId ? t('common.installSkinTitle', { name: skinNameLabel(skins.find(skin => skin.id === installRecovery.skinId), t) }) : t('failure.marketUpdateFailed')}
         closeLabel={t('common.close')}
         className={css.modalSurface}
-        description={installRecovery === null ? undefined : installRecovery.lead === 'open-failed' ? t('failure.recoveryOpenFailed') : installRecovery.lead === 'blocked' ? t('failure.recoveryBlocked') : installRecovery.lead === 'companions' ? t('failure.recoveryCompanions') : installRecovery.lead === 'replace' && installRecovery.spec ? t('failure.manualReplace', { spec: installRecovery.spec }) : installRecovery.lead === 'enable' && installRecovery.name ? t('failure.recoveryEnable', { name: installRecovery.name }) : installRecovery.lead === 'uninstall' && installRecovery.name ? t('failure.recoveryUninstall', { name: installRecovery.name }) : installRecovery.lead === 'check' ? t('common.resultNotConfirmed') : installRecovery.lead === 'none' ? hostKind === 'desktop' ? t('common.desktopInstallInput') : t('common.webInstallCommand') : undefined}
+        description={recoveryDescription}
         footer={<>
-          {installRecovery?.lead === 'open-failed' && <Button variant="primary" size="sm" onClick={() => {
-            if (installRecovery.spec === undefined || installRecovery.spec === '' || desktopPluginPanel === undefined) return
-            void desktopPluginPanel.open(installRecovery.spec, { skinId: installRecovery.skinId ?? 'dsh-skin-market', packageName: installRecovery.packageName ?? 'dsh-skin-market', operationId: installRecovery.operationId, companions: installRecovery.companions }, { navigateOnResume: false }).then(result => {
-              if (!mounted.current) return
-              if (result.ok && result.kind === 'prefilled') {
-                desktopPluginPanel.noteRecovery?.(installRecovery.operationId, 'opened')
-                recoveryClaim.current = null
-                setInstallRecovery(null)
-              } else if (result.ok && result.kind === 'resumed') {
-                desktopPluginPanel.noteRecovery?.(installRecovery.operationId, 'blocked')
-                setInstallRecovery({ ...installRecovery, lead: 'blocked' })
-              }
-            })
-          }}>{t('failure.recoveryOpenPanel')}</Button>}
           {recoveryPrompt !== null && <Button variant="outline" size="sm" onClick={() => void copyRecoveryPrompt()}>{t('common.copyTroubleshootingPrompt')}</Button>}
           <Button variant="outline" size="sm" onClick={() => {
             recoveryClaim.current = null
@@ -3700,30 +3712,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         title={t('common.installSkinTitle', { name: selected?.name.zh ?? t('common.skin') })}
         closeLabel={t('common.close')}
         className={css.modalSurface}
-        description={[manualRecovery === null ? undefined : manualRecovery.lead === 'open-failed' ? t('failure.recoveryOpenFailed') : manualRecovery.lead === 'blocked' ? t('failure.recoveryBlocked') : manualRecovery.lead === 'companions' ? t('failure.recoveryCompanions') : manualRecovery.lead === 'replace' && manualRecovery.spec ? t('failure.manualReplace', { spec: manualRecovery.spec }) : undefined, manualOnly
-          ? hostKind === 'desktop'
-            ? `${manualInstallNotice}${t('common.manualPromptDesktop')}`
-            : `${manualInstallNotice}${t('common.manualPromptWeb')}`
-          : hostKind === 'desktop'
-            ? t('common.desktopInstallInput')
-            : t('common.webInstallCommand')].filter(Boolean).join('')}
+        description={manualPanelDescription}
         footer={<>
-          {manualRecovery?.lead === 'open-failed' && <Button variant="primary" size="sm" onClick={() => {
-            if (manualRecovery.spec === undefined || manualRecovery.spec === '' || desktopPluginPanel === undefined) return
-            void desktopPluginPanel.open(manualRecovery.spec, { skinId: manualRecovery.skinId ?? 'dsh-skin-market', packageName: manualRecovery.packageName ?? 'dsh-skin-market', operationId: manualRecovery.operationId, companions: manualRecovery.companions }, { navigateOnResume: false }).then(result => {
-              if (!mounted.current) return
-              if (result.ok && result.kind === 'prefilled') {
-                desktopPluginPanel.noteRecovery?.(manualRecovery.operationId, 'opened')
-                setDismissedNoticeIds(ids => [...new Set([...ids, `failed:${manualRecovery.operationId}`])].slice(-100))
-                recoveryClaim.current = null
-                setShowInstallOptions(false)
-                setInstallRecovery(null)
-              } else if (result.ok && result.kind === 'resumed' || !result.ok && result.code === 'busy') {
-                desktopPluginPanel.noteRecovery?.(manualRecovery.operationId, 'blocked')
-                setInstallRecovery({ ...manualRecovery, lead: 'blocked' })
-              }
-            })
-          }}>{t('failure.recoveryOpenPanel')}</Button>}
           {manualRecovery !== null && recoveryPrompt !== null && <Button variant="outline" size="sm" onClick={() => void copyRecoveryPrompt()}>{t('common.copyTroubleshootingPrompt')}</Button>}
           <Button variant="outline" size="sm" onClick={closeManualPanel}>{t('common.close')}</Button>
         </>}

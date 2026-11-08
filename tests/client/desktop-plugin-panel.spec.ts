@@ -130,6 +130,25 @@ describe('official Desktop add-plugin panel bridge', () => {
     expect(panel.ctx.layout.selectPanel).toHaveBeenCalledWith('plugins')
   })
 
+  it('rebinds when a render replaces the controller while the inventory loads', async () => {
+    const panel = officialPanel({ status: 'idle' })
+    panel.face.ensure.mockImplementation(() => panel.publish({ status: 'loading' }))
+    const opening = createDesktopPluginPanel(panel.ctx).open('skin@1.2.3')
+    const replacementFace = {
+      hooks: panel.face.hooks,
+      ensure: vi.fn(),
+      openInstall: vi.fn(() => panel.publish({ install: { phase: 'idle', open: true, spec: '' } })),
+      editInstallSpec: vi.fn((spec: string) => panel.publish({ install: { phase: 'idle', open: true, spec } })),
+      runInstall: vi.fn(),
+    }
+    panel.setWinners([{ options: { key: 'plugins' }, inject: () => replacementFace, component: () => null }])
+    panel.publish({ status: 'ready' })
+    await expect(opening).resolves.toEqual({ ok: true, kind: 'prefilled' })
+    expect(replacementFace.openInstall).toHaveBeenCalled()
+    expect(replacementFace.editInstallSpec).toHaveBeenCalledWith('skin@1.2.3')
+    expect(panel.face.editInstallSpec).not.toHaveBeenCalled()
+  })
+
   it.each(['unavailable', 'error'])('returns a usable fallback when the official inventory is %s', async status => {
     const panel = officialPanel({ status })
     await expect(createDesktopPluginPanel(panel.ctx).open('skin')).resolves.toMatchObject({ ok: false, reason: expect.stringContaining('未能加载') })
@@ -232,14 +251,14 @@ describe('official Desktop add-plugin panel bridge', () => {
     await expect(bridge.open('later-skin')).resolves.toEqual({ ok: true, kind: 'prefilled' })
   })
 
-  it('abandons a controller replaced during loading', async () => {
+  it('continues with a re-created controller wrapper during loading', async () => {
     const panel = officialPanel({ status: 'loading' })
     const opening = createDesktopPluginPanel(panel.ctx).open('skin')
     panel.setWinners([{ ...panel.entry }])
     panel.publish({ status: 'ready' })
-    await expect(opening).resolves.toMatchObject({ ok: false, reason: expect.stringContaining('重新加载') })
-    expect(panel.face.openInstall).not.toHaveBeenCalled()
-    expect(panel.face.editInstallSpec).not.toHaveBeenCalled()
+    await expect(opening).resolves.toEqual({ ok: true, kind: 'prefilled' })
+    expect(panel.face.openInstall).toHaveBeenCalled()
+    expect(panel.face.editInstallSpec).toHaveBeenCalledWith('skin')
   })
 
   it.each([

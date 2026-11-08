@@ -101,6 +101,24 @@ describe('official Desktop pinned GitHub installation', () => {
     expect(f.manager.installBundle).toHaveBeenCalledExactlyOnceWith(f.item.install.target, { enabled: false, saveExact: true, requestId: expect.any(String) })
   })
 
+  it('retries a GitHub build approval with the exact tarball key the Host reported', async () => {
+    const f = fixture(undefined, { manual: true })
+    const key = `${f.item.package}@https://codeload.github.com/Fixture/Skin/tar.gz/${f.item.install.commit}`
+    f.manager.installBundle.mockResolvedValueOnce({
+      application: 'failed', changed: false, stage: 'install', target: f.item.install.target,
+      pendingBuilds: [key], error: { code: 'build-approval-required', message: 'git-hosted package needs build approval' },
+    })
+    const failed = await finished(f.lifecycle.begin('install', f.item.id))
+    expect(failed).toMatchObject({ phase: 'failed', failure: { kind: 'build-approval', action: 'approve-build', buildKeys: [key] } })
+    expect(f.manager.installBundle).toHaveBeenCalledTimes(1)
+
+    const retried = await finished(f.lifecycle.retry(failed.id, 'approve-build'))
+    expect(retried).toMatchObject({ phase: 'done', application: 'applied' })
+    expect(f.manager.installBundle).toHaveBeenCalledTimes(2)
+    expect(f.manager.installBundle.mock.calls[1]?.[0]).toBe(f.item.install.target)
+    expect(f.manager.installBundle.mock.calls[1]?.[1]).toMatchObject({ approvedBuilds: [key] })
+  })
+
   it('keeps an explicitly manual Desktop source blocked', () => {
     const f = fixture(undefined, { manual: true, desktopReason: '当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。' })
     expect(() => f.lifecycle.begin('install', f.item.id)).toThrow('Desktop 当前不支持该皮肤的一键安装')

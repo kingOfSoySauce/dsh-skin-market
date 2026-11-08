@@ -250,7 +250,9 @@ describe('client market', () => {
     if (source === 'skin') fireEvent.click(await screen.findByRole('button', { name: '安装并使用' }))
     const title = source === 'skin' ? '安装 测试皮肤' : '皮肤市场更新失败'
     const dialog = await screen.findByRole('dialog', { name: title })
-    expect(dialog.textContent).toContain('复制命令，在运行 DSH 的电脑上执行。')
+    if (source === 'skin') expect(dialog.textContent).toContain('自动安装失败，请手动安装。')
+    expect(dialog.textContent).not.toContain('复制命令')
+    expect(within(dialog).queryByRole('button', { name: '打开安装面板' })).toBeNull()
     expect(dialog.textContent).not.toContain('ECONNRESET')
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
     fireEvent.click(within(dialog).getAllByRole('button', { name: '关闭' })[0]!)
@@ -435,7 +437,10 @@ describe('client market', () => {
     phase = 'failed'
     fireEvent.focus(window)
     const failure = await screen.findByRole('dialog', { name: source === 'skin' ? '安装 测试皮肤' : '皮肤市场更新失败' })
-    expect(failure.textContent).toContain('复制命令，在运行 DSH 的电脑上执行。')
+    if (source === 'skin') expect(failure.textContent).toContain('自动安装失败，请手动安装。')
+    else expect(failure.textContent).toContain('更新未完成，请关闭后重新点击更新。')
+    expect(failure.textContent).not.toContain('复制命令')
+    expect(within(failure).queryByRole('button', { name: '打开安装面板' })).toBeNull()
     expect(within(failure).queryByRole('button', { name: '重试' })).toBeNull()
     fireEvent.click(within(failure).getAllByRole('button', { name: '关闭' })[0]!)
     expect(document.querySelector('[role="status"] strong')).toBeNull()
@@ -520,7 +525,7 @@ describe('client market', () => {
     const notice = interceptNotice(operation, '液态玻璃', skin)
     expect(notice.title).toBe('安装已阻止')
     expect(notice.what).toBe('「液态玻璃」的安装包文件缺少必要文件。')
-    expect(notice.why).toContain('请先核对安装目标与安装包文件')
+    expect(notice.why).toContain('请复制日志反馈作者')
     expect(notice.links).toEqual([{ href: `https://github.com/a/b/tree/${'a'.repeat(40)}`, label: '打开皮肤仓库' }])
   })
 
@@ -1007,7 +1012,7 @@ describe('client market', () => {
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '更新皮肤市场到 0.1.16' }))
     const dialog = await screen.findByRole('dialog', { name: '皮肤市场更新失败' })
-    expect(dialog.textContent).toContain('复制命令，在运行 DSH 的电脑上执行。')
+    expect(dialog.textContent).toContain('更新未完成，请关闭后重新点击更新。')
     expect(within(dialog).queryByRole('link', { name: '查看安装排查' })).toBeNull()
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
   })
@@ -2131,6 +2136,7 @@ describe('client market', () => {
     await openSkinCard()
     fireEvent.click(within(screen.getByRole('main', { name: '皮肤详情内容' })).getByRole('button', { name: '安装' }))
     const dialog = await screen.findByRole('dialog', { name: '该皮肤未通过安装前核验' })
+    expect(screen.getByRole('dialog', { name: '皮肤详情' })).toBeTruthy()
     expect(dialog.textContent).toContain('固定版本的仓库没有提交可读取的客户端入口')
     expect(dialog.textContent).toContain(manual.install.target)
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/install'))).toBe(false)
@@ -2169,6 +2175,52 @@ describe('client market', () => {
     expect(fetchMock.mock.calls.filter(([url, init]) => url.endsWith('/install') && init?.method === 'POST')).toHaveLength(1)
     expect(open).not.toHaveBeenCalled()
     expect(await screen.findAllByRole('button', { name: '停用' })).not.toHaveLength(0)
+  })
+
+  it('keeps the detail open with progress until the manual Desktop panel is ready', async () => {
+    const manual: CatalogSkin = {
+      ...skin,
+      install: { ...skin.install, target: `github:a/b#${'a'.repeat(40)}`, commit: 'a'.repeat(40), desktop: { mode: 'manual-only', reason: 'npm-package-not-found' }, allowBuild: 'github:a/b#path:packages/skin' },
+      review: { compatibility: 'verified', preview: 'verified', installation: 'verified' },
+    }
+    let resolveOpen: ((value: { ok: true; kind: 'prefilled' }) => void) | undefined
+    const open = vi.fn(() => new Promise<{ ok: true; kind: 'prefilled' }>(resolve => { resolveOpen = resolve }))
+    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog')
+      ? { skins: [manual] }
+      : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [] } })))
+    render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open }} />)
+
+    await openSkinCard()
+    fireEvent.click(within(screen.getByRole('main', { name: '皮肤详情内容' })).getByRole('button', { name: '安装' }))
+    expect(screen.getByRole('button', { name: '正在打开安装面板…' })).toBeTruthy()
+    expect(screen.getByRole('dialog', { name: '皮肤详情' })).toBeTruthy()
+    resolveOpen?.({ ok: true, kind: 'prefilled' })
+    await waitFor(() => expect(screen.queryByRole('dialog', { name: '皮肤详情' })).toBeNull())
+  })
+
+  it('prefers the pinned npm release when handing a manual Desktop skin to the panel', async () => {
+    const manual: CatalogSkin = {
+      ...skin,
+      install: {
+        ...skin.install,
+        target: `github:a/b#${'a'.repeat(40)}`,
+        desktop: { mode: 'manual-only', reason: '当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。' },
+        npm: {
+          name: 'skin', version: '1.0.0',
+          integrity: 'sha512-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==',
+          repository: 'https://github.com/a/b', gitHead: 'a'.repeat(40),
+        },
+      },
+      review: { compatibility: 'verified', preview: 'verified', installation: 'manual-only' },
+    }
+    const open = vi.fn(async (_spec: string) => ({ ok: true as const, kind: 'prefilled' as const }))
+    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog')
+      ? { skins: [manual] }
+      : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [] } }))
+    vi.stubGlobal('fetch', fetchMock)
+    render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open }} />)
+    fireEvent.click(await screen.findByRole('button', { name: '安装' }))
+    await waitFor(() => expect(open).toHaveBeenCalledWith('skin@1.0.0', { skinId: manual.id, packageName: manual.package }))
   })
 
   it.each(['prefilled', 'resumed', 'unavailable'] as const)('hands a manual Desktop target to the official panel (%s)', async outcome => {
@@ -4113,7 +4165,7 @@ describe('client market', () => {
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
 
     const dialog = await screen.findByRole('dialog', { name: '安装已阻止' })
-    expect(dialog.textContent).toContain('「测试皮肤」的安装包文件缺少必要文件。请先核对安装目标与安装包文件，确认缺包后反馈作者。')
+    expect(dialog.textContent).toContain('「测试皮肤」的安装包文件缺少必要文件。请复制日志反馈作者，等待修复后的版本。')
     expect(dialog.textContent).not.toContain('cordis.patch.yml')
     expect(dialog.querySelector('details, code, ul, ol')).toBeNull()
     expect(dialog.className).toContain('warningModal')
@@ -4154,7 +4206,8 @@ describe('client market', () => {
 
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
     const dialog = await screen.findByRole('dialog', { name: '安装 测试皮肤' })
-    expect(dialog.textContent).toContain('复制命令，在运行 DSH 的电脑上执行。')
+    expect(dialog.textContent).toContain('自动安装失败，请手动安装。')
+    expect(within(dialog).queryByRole('button', { name: '打开安装面板' })).toBeNull()
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
     expect(retryRequests).toBe(0)
   })
@@ -4668,7 +4721,7 @@ describe('client market', () => {
 
     fireEvent.click(await screen.findByRole('button', { name: '其他安装方式' }))
     const dialog = screen.getByRole('dialog', { name: '安装 测试皮肤' })
-    expect(dialog.textContent).toContain('复制命令，在运行 DSH 的电脑上执行。')
+    expect(dialog.textContent).toContain('复制提示词或命令手动安装。')
     expect([...dialog.querySelectorAll('code')].map(node => node.textContent)).toEqual([createSkinInstallPrompt(skin, 'dsh'), createSkinInstallCommands(skin)[0]!.value])
     expect(within(dialog).queryByRole('combobox')).toBeNull()
     fireEvent.click(within(dialog).getByRole('button', { name: '复制提示词' }))

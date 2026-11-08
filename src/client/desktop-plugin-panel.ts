@@ -78,7 +78,6 @@ interface HandoffReceipt extends DesktopInstallHandoff {
 const ACTIVE_PHASES = new Set(['checking', 'starting', 'running', 'installing', 'cancelling', 'applying', 'unconfirmed', 'indeterminate'])
 const EDITABLE_PHASES = new Set(['idle', 'unknown', 'done', 'failed'])
 const UNAVAILABLE = '暂时无法打开 DSH 添加插件面板，请重试。'
-const CHANGED = 'DSH 插件面板刚刚重新加载，请重试。'
 const LOAD_FAILED = 'DSH 插件列表暂时未能加载，请稍后重试。'
 const BUSY = '原生添加插件面板仍在处理另一项任务，请先在插件页确认其状态。'
 
@@ -349,9 +348,19 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
         return { ok: false, reason: LOAD_FAILED }
       }
       if (lifetime.signal.aborted) return { ok: false, reason: UNAVAILABLE }
-      // HMR may replace the controller while its inventory read is pending.
-      const current = findTarget(ctx)
-      if (!current || current.entry !== target.entry || current.face !== target.face) return { ok: false, reason: CHANGED }
+      // A normal re-render or HMR can replace the controller (and its face)
+      // while the inventory read is pending. Rebind to the current controller
+      // and wait for its store instead of failing the user's handoff; object
+      // identity is not a stable panel identity here.
+      let current = findTarget(ctx)
+      if (!current) return { ok: false, reason: UNAVAILABLE }
+      if (current.face !== target.face) {
+        if (!await waitUntilLoaded(current.face.hooks.pluginManager, options.readyTimeoutMs ?? 8_000, lifetime.signal)) {
+          return { ok: false, reason: LOAD_FAILED }
+        }
+        if (lifetime.signal.aborted) return { ok: false, reason: UNAVAILABLE }
+        current = findTarget(ctx) ?? current
+      }
       state = snapshot(current.face)
       if (!state || state.status !== 'ready') return { ok: false, reason: LOAD_FAILED }
       const becameActive = resume(current.face, state, spec)

@@ -297,155 +297,155 @@ window.__ModuleLoader__.load({
 			document.head.appendChild(tag);
 		}
 		var SkinMarket_module_css_default = {
-			"operationDetails": "VqXecW_operationDetails",
-			"lightboxPrev": "VqXecW_lightboxPrev",
-			"browserHomeBack": "VqXecW_browserHomeBack",
-			"marketUpdateButton": "VqXecW_marketUpdateButton",
-			"browserPanel": "VqXecW_browserPanel",
-			"lightbox": "VqXecW_lightbox",
-			"homeSectionTitle": "VqXecW_homeSectionTitle",
-			"cardDescription": "VqXecW_cardDescription",
-			"thumbnailProgress": "VqXecW_thumbnailProgress",
-			"detailHeader": "VqXecW_detailHeader",
-			"error": "VqXecW_error",
-			"homeCardRepo": "VqXecW_homeCardRepo",
-			"cardSourceAction": "VqXecW_cardSourceAction",
-			"installSegmented": "VqXecW_installSegmented",
-			"homeCardFooter": "VqXecW_homeCardFooter",
-			"titleBlock": "VqXecW_titleBlock",
-			"listSkeleton": "VqXecW_listSkeleton",
-			"skinAvatar": "VqXecW_skinAvatar",
-			"operation": "VqXecW_operation",
-			"empty": "VqXecW_empty",
-			"homeUpdateAction": "VqXecW_homeUpdateAction",
-			"skeletonShimmer": "VqXecW_skeletonShimmer",
-			"homeError": "VqXecW_homeError",
-			"catalogSearch": "VqXecW_catalogSearch",
-			"heroPrev": "VqXecW_heroPrev",
-			"repairPromptFallback": "VqXecW_repairPromptFallback",
-			"srOnly": "VqXecW_srOnly",
-			"heroNav": "VqXecW_heroNav",
-			"previewPlaceholder": "VqXecW_previewPlaceholder",
-			"searchField": "VqXecW_searchField",
-			"homeLoading": "VqXecW_homeLoading",
-			"lightboxNext": "VqXecW_lightboxNext",
-			"loading": "VqXecW_loading",
-			"homeOperations": "VqXecW_homeOperations",
-			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
-			"installedMoreCard": "VqXecW_installedMoreCard",
-			"heroOpen": "VqXecW_heroOpen",
-			"installedRow": "VqXecW_installedRow",
-			"pinWarning": "VqXecW_pinWarning",
-			"installOptions": "VqXecW_installOptions",
-			"home": "VqXecW_home",
-			"skinList": "VqXecW_skinList",
-			"warningModal": "VqXecW_warningModal",
-			"statusLabel": "VqXecW_statusLabel",
-			"operationDiagnostics": "VqXecW_operationDiagnostics",
-			"cardAction": "VqXecW_cardAction",
-			"homeHeader": "VqXecW_homeHeader",
-			"homeSearch": "VqXecW_homeSearch",
-			"browserModal": "VqXecW_browserModal",
-			"loadMoreHint": "VqXecW_loadMoreHint",
-			"homeActions": "VqXecW_homeActions",
-			"galleryProgress": "VqXecW_galleryProgress",
+			"homeSection": "VqXecW_homeSection",
 			"cardActionProgress": "VqXecW_cardActionProgress",
-			"homeCardDescription": "VqXecW_homeCardDescription",
+			"catalogSearch": "VqXecW_catalogSearch",
+			"heroNav": "VqXecW_heroNav",
+			"spark": "VqXecW_spark",
+			"homeActions": "VqXecW_homeActions",
+			"homeCard": "VqXecW_homeCard",
+			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
+			"aboutGrid": "VqXecW_aboutGrid",
+			"homeUpdateAction": "VqXecW_homeUpdateAction",
+			"heroPrev": "VqXecW_heroPrev",
+			"thumbnailFrame": "VqXecW_thumbnailFrame",
+			"skinCardPreview": "VqXecW_skinCardPreview",
+			"thumbnails": "VqXecW_thumbnails",
+			"homeCardRepo": "VqXecW_homeCardRepo",
+			"homeError": "VqXecW_homeError",
+			"homeLoadMore": "VqXecW_homeLoadMore",
+			"lightboxClose": "VqXecW_lightboxClose",
+			"homeSectionTitle": "VqXecW_homeSectionTitle",
+			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
+			"heroNext": "VqXecW_heroNext",
+			"heroOpen": "VqXecW_heroOpen",
+			"previewPlaceholder": "VqXecW_previewPlaceholder",
+			"browserContent": "VqXecW_browserContent",
+			"homeTitleRow": "VqXecW_homeTitleRow",
+			"homeCardCopy": "VqXecW_homeCardCopy",
+			"filterBar": "VqXecW_filterBar",
+			"description": "VqXecW_description",
+			"detailHeader": "VqXecW_detailHeader",
+			"cardDescription": "VqXecW_cardDescription",
+			"browserHomeBack": "VqXecW_browserHomeBack",
+			"lightboxNav": "VqXecW_lightboxNav",
+			"collectionTitle": "VqXecW_collectionTitle",
+			"loading": "VqXecW_loading",
+			"srOnly": "VqXecW_srOnly",
+			"skeletonCard": "VqXecW_skeletonCard",
+			"empty": "VqXecW_empty",
+			"activationConflicts": "VqXecW_activationConflicts",
+			"homeHeader": "VqXecW_homeHeader",
+			"sparkTip": "VqXecW_sparkTip",
+			"cardMetaLine": "VqXecW_cardMetaLine",
+			"interceptNotice": "VqXecW_interceptNotice",
+			"sparkFillTop": "VqXecW_sparkFillTop",
+			"marketUpdateButton": "VqXecW_marketUpdateButton",
+			"homeCardFooter": "VqXecW_homeCardFooter",
 			"headerDiscover": "VqXecW_headerDiscover",
-			"actionRow": "VqXecW_actionRow",
-			"homeGithubLabel": "VqXecW_homeGithubLabel",
 			"cardInlineActions": "VqXecW_cardInlineActions",
-			"copyCapsule": "VqXecW_copyCapsule",
-			"repoLine": "VqXecW_repoLine",
+			"galleryProgress": "VqXecW_galleryProgress",
+			"skinAvatar": "VqXecW_skinAvatar",
+			"titleBlock": "VqXecW_titleBlock",
+			"homeContent": "VqXecW_homeContent",
+			"filters": "VqXecW_filters",
+			"galleryGroup": "VqXecW_galleryGroup",
+			"segmented": "VqXecW_segmented",
 			"operationElapsed": "VqXecW_operationElapsed",
 			"operationDismiss": "VqXecW_operationDismiss",
-			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
-			"spark": "VqXecW_spark",
-			"mobileBack": "VqXecW_mobileBack",
-			"activationSwitch": "VqXecW_activationSwitch",
-			"manualInstallGuide": "VqXecW_manualInstallGuide",
-			"catalogTitle": "VqXecW_catalogTitle",
-			"homeContent": "VqXecW_homeContent",
-			"aboutGrid": "VqXecW_aboutGrid",
-			"sparkLine": "VqXecW_sparkLine",
-			"detail": "VqXecW_detail",
-			"homeCardMedia": "VqXecW_homeCardMedia",
-			"collectionTitle": "VqXecW_collectionTitle",
-			"cardMeta": "VqXecW_cardMeta",
-			"homeCardOpen": "VqXecW_homeCardOpen",
-			"modalSurface": "VqXecW_modalSurface",
-			"activationConflictRow": "VqXecW_activationConflictRow",
+			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
 			"installCommandLabel": "VqXecW_installCommandLabel",
-			"sparkEnd": "VqXecW_sparkEnd",
-			"activationConflictList": "VqXecW_activationConflictList",
-			"cardMetaLine": "VqXecW_cardMetaLine",
-			"activationConflicts": "VqXecW_activationConflicts",
-			"lightboxNav": "VqXecW_lightboxNav",
-			"sparkArea": "VqXecW_sparkArea",
-			"homeSection": "VqXecW_homeSection",
-			"skinCardPreview": "VqXecW_skinCardPreview",
-			"homeLoadMore": "VqXecW_homeLoadMore",
-			"operationMessage": "VqXecW_operationMessage",
-			"changelog": "VqXecW_changelog",
-			"spin": "VqXecW_spin",
-			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
-			"sparkFillTop": "VqXecW_sparkFillTop",
-			"searchClear": "VqXecW_searchClear",
-			"homeCard": "VqXecW_homeCard",
-			"homeGithubAction": "VqXecW_homeGithubAction",
-			"description": "VqXecW_description",
+			"operationDetails": "VqXecW_operationDetails",
+			"operationMeta": "VqXecW_operationMeta",
+			"operationCopyLog": "VqXecW_operationCopyLog",
+			"homeSearch": "VqXecW_homeSearch",
+			"homeOperations": "VqXecW_homeOperations",
+			"browserModal": "VqXecW_browserModal",
 			"homeOperation": "VqXecW_homeOperation",
 			"root": "VqXecW_root",
-			"lightboxStage": "VqXecW_lightboxStage",
-			"version": "VqXecW_version",
-			"segmented": "VqXecW_segmented",
-			"feedMeta": "VqXecW_feedMeta",
-			"catalogHeader": "VqXecW_catalogHeader",
-			"thumbnailFrame": "VqXecW_thumbnailFrame",
-			"tags": "VqXecW_tags",
-			"detailSkeleton": "VqXecW_detailSkeleton",
-			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
-			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
-			"skinCard": "VqXecW_skinCard",
-			"sparkFillMid": "VqXecW_sparkFillMid",
-			"catalog": "VqXecW_catalog",
-			"discoverTitle": "VqXecW_discoverTitle",
-			"catalogTitleMain": "VqXecW_catalogTitleMain",
-			"filterBar": "VqXecW_filterBar",
-			"hero": "VqXecW_hero",
-			"recommendations": "VqXecW_recommendations",
-			"galleryGroup": "VqXecW_galleryGroup",
-			"discoverHeading": "VqXecW_discoverHeading",
-			"interceptNotice": "VqXecW_interceptNotice",
-			"homeTitleRow": "VqXecW_homeTitleRow",
-			"discoveryGrid": "VqXecW_discoveryGrid",
-			"heroNext": "VqXecW_heroNext",
-			"thumbnails": "VqXecW_thumbnails",
-			"installCommandGroup": "VqXecW_installCommandGroup",
-			"sparkTip": "VqXecW_sparkTip",
-			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
-			"iconOnlyButton": "VqXecW_iconOnlyButton",
-			"browser": "VqXecW_browser",
-			"skinCardBody": "VqXecW_skinCardBody",
-			"notice": "VqXecW_notice",
-			"activationConflictState": "VqXecW_activationConflictState",
-			"sparkFillEnd": "VqXecW_sparkFillEnd",
-			"interceptHelp": "VqXecW_interceptHelp",
-			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
-			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
-			"skeletonCard": "VqXecW_skeletonCard",
-			"lightboxClose": "VqXecW_lightboxClose",
-			"operationCancel": "VqXecW_operationCancel",
-			"operationActions": "VqXecW_operationActions",
-			"operationCopyLog": "VqXecW_operationCopyLog",
-			"cardStars": "VqXecW_cardStars",
-			"browserContent": "VqXecW_browserContent",
-			"listLoading": "VqXecW_listLoading",
-			"homeCardCopy": "VqXecW_homeCardCopy",
-			"cardTitle": "VqXecW_cardTitle",
-			"filters": "VqXecW_filters",
+			"installedMoreCard": "VqXecW_installedMoreCard",
 			"homeCardMeta": "VqXecW_homeCardMeta",
-			"operationMeta": "VqXecW_operationMeta"
+			"home": "VqXecW_home",
+			"operationDiagnostics": "VqXecW_operationDiagnostics",
+			"sparkLine": "VqXecW_sparkLine",
+			"interceptHelp": "VqXecW_interceptHelp",
+			"repairPromptFallback": "VqXecW_repairPromptFallback",
+			"discoverHeading": "VqXecW_discoverHeading",
+			"version": "VqXecW_version",
+			"discoveryGrid": "VqXecW_discoveryGrid",
+			"cardAction": "VqXecW_cardAction",
+			"activationConflictState": "VqXecW_activationConflictState",
+			"repoLine": "VqXecW_repoLine",
+			"homeCardDescription": "VqXecW_homeCardDescription",
+			"cardTitle": "VqXecW_cardTitle",
+			"cardMeta": "VqXecW_cardMeta",
+			"sparkFillEnd": "VqXecW_sparkFillEnd",
+			"skinCardBody": "VqXecW_skinCardBody",
+			"copyCapsule": "VqXecW_copyCapsule",
+			"modalSurface": "VqXecW_modalSurface",
+			"hero": "VqXecW_hero",
+			"operation": "VqXecW_operation",
+			"activationSwitch": "VqXecW_activationSwitch",
+			"catalog": "VqXecW_catalog",
+			"statusLabel": "VqXecW_statusLabel",
+			"manualInstallGuide": "VqXecW_manualInstallGuide",
+			"error": "VqXecW_error",
+			"searchField": "VqXecW_searchField",
+			"skinCard": "VqXecW_skinCard",
+			"searchClear": "VqXecW_searchClear",
+			"installOptions": "VqXecW_installOptions",
+			"installCommandGroup": "VqXecW_installCommandGroup",
+			"installedRow": "VqXecW_installedRow",
+			"lightboxNext": "VqXecW_lightboxNext",
+			"mobileBack": "VqXecW_mobileBack",
+			"browserPanel": "VqXecW_browserPanel",
+			"homeGithubLabel": "VqXecW_homeGithubLabel",
+			"homeCardOpen": "VqXecW_homeCardOpen",
+			"installSegmented": "VqXecW_installSegmented",
+			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
+			"operationMessage": "VqXecW_operationMessage",
+			"operationCancel": "VqXecW_operationCancel",
+			"catalogTitle": "VqXecW_catalogTitle",
+			"iconOnlyButton": "VqXecW_iconOnlyButton",
+			"activationConflictList": "VqXecW_activationConflictList",
+			"lightbox": "VqXecW_lightbox",
+			"lightboxPrev": "VqXecW_lightboxPrev",
+			"skinList": "VqXecW_skinList",
+			"catalogHeader": "VqXecW_catalogHeader",
+			"sparkArea": "VqXecW_sparkArea",
+			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
+			"recommendations": "VqXecW_recommendations",
+			"tags": "VqXecW_tags",
+			"listSkeleton": "VqXecW_listSkeleton",
+			"listLoading": "VqXecW_listLoading",
+			"lightboxStage": "VqXecW_lightboxStage",
+			"thumbnailProgress": "VqXecW_thumbnailProgress",
+			"notice": "VqXecW_notice",
+			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
+			"spin": "VqXecW_spin",
+			"sparkEnd": "VqXecW_sparkEnd",
+			"discoverTitle": "VqXecW_discoverTitle",
+			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
+			"detail": "VqXecW_detail",
+			"skeletonShimmer": "VqXecW_skeletonShimmer",
+			"homeGithubAction": "VqXecW_homeGithubAction",
+			"operationActions": "VqXecW_operationActions",
+			"warningModal": "VqXecW_warningModal",
+			"cardStars": "VqXecW_cardStars",
+			"sparkFillMid": "VqXecW_sparkFillMid",
+			"activationConflictRow": "VqXecW_activationConflictRow",
+			"pinWarning": "VqXecW_pinWarning",
+			"loadMoreHint": "VqXecW_loadMoreHint",
+			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
+			"cardSourceAction": "VqXecW_cardSourceAction",
+			"actionRow": "VqXecW_actionRow",
+			"homeCardMedia": "VqXecW_homeCardMedia",
+			"catalogTitleMain": "VqXecW_catalogTitleMain",
+			"feedMeta": "VqXecW_feedMeta",
+			"homeLoading": "VqXecW_homeLoading",
+			"detailSkeleton": "VqXecW_detailSkeleton",
+			"changelog": "VqXecW_changelog",
+			"browser": "VqXecW_browser"
 		};
 		//#endregion
 		//#region \0dsh-skin-market-css:/Users/leon/Code/liang-intensity-calibrator/code/dsh-skin-market/src/client/media-hover.module.css.mjs
@@ -850,8 +850,8 @@ window.__ModuleLoader__.load({
 				"market.requestFailed": "皮肤市场请求失败（{url}，HTTP {status}）",
 				"market.clipboardUnavailable": "当前页面没有可用的剪贴板权限",
 				"market.restartTimeout": "DeepSeek Harness 重启超时，请手动刷新页面",
-				"market.installPanelUnavailable": "当前 DSH 暂未提供可用的安装面板入口，可从「其他安装方式」复制目标。",
-				"market.installPanelOpenFailed": "暂时无法打开安装面板，可从「其他安装方式」复制目标。",
+				"market.installPanelUnavailable": "无法打开安装面板，请改用「其他安装方式」。",
+				"market.installPanelOpenFailed": "无法打开安装面板，请改用「其他安装方式」。",
 				"market.installPanelExistingTask": "官方插件页已有安装任务，已保留原任务，没有覆盖用户输入。",
 				"market.installPanelPrefilled": "已打开官方插件页并预填 {spec}，请在官方面板确认安装。",
 				"market.installSourceChanged": "安装来源已变化，请刷新后重新选择操作。",
@@ -894,7 +894,6 @@ window.__ModuleLoader__.load({
 				"common.migrationCompatibility": "目标版本需要兼容性确认，替换后先停用；确认使用或常驻后再启用。",
 				"common.migrationKeepState": "保留当前启用和常驻状态；",
 				"common.manualPromptDesktop": "复制提示词，让 Agent 检查冲突并逐步指导；桌面端由你在插件页操作。",
-				"common.manualPromptWeb": "可复制提示词让 Agent 检查，或按维护者说明使用下面的命令。",
 				"common.copyTroubleshootingPrompt": "复制排查提示词",
 				"common.copyPackageName": "复制包名",
 				"common.copyLog": "复制日志",
@@ -994,7 +993,6 @@ window.__ModuleLoader__.load({
 				"common.terminal": "终端",
 				"common.installCommand": "安装命令",
 				"common.packageName": "插件包名",
-				"common.manualPaste": "手动添加时粘贴：",
 				"common.openAddPlugin": "打开「插件 → 添加插件」，输入：",
 				"common.copyLabel": "复制{label}",
 				"common.githubStarsSnapshot": "GitHub Stars 快照，更新于 {date}",
@@ -1048,13 +1046,11 @@ window.__ModuleLoader__.load({
 				"common.loaderMissing": "尚未发现 loader 注册项",
 				"common.marketExternal": "市场外",
 				"common.versionSnapshotUpdated": "版本快照更新于 {date}",
-				"common.starsUpdated": "{count}，更新于 {date}",
 				"common.companionNotice": "使用该皮肤时会加载细节定制面板；停用或换到其他皮肤后会从设置页撤掉，不会当成一张独立皮肤。",
 				"common.noRepositoryScreenshot": "该仓库暂无可识别的皮肤截图，市场使用本地占位卡，不会加载 GitHub 仓库图片。",
 				"common.marketScreenshotNotice": "当前展示的是市场在隔离 DSH 中实机补录的截图；仓库尚无可识别的界面截图。",
 				"common.licenseNotice": "许可证说明",
 				"common.manualInstallUnavailableDesktop": "无法自动安装：{reason}。",
-				"common.manualInstallUnavailableMarket": "该皮肤暂不支持市场直接安装。",
 				"common.installationUnverifiedTitle": "该皮肤未通过安装前核验",
 				"common.installationUnverifiedUpdateTitle": "该更新未通过安装前核验",
 				"common.installationUnverifiedNoClient": "固定版本的仓库没有提交可读取的客户端入口，市场无法完成静态检查。",
@@ -1066,13 +1062,13 @@ window.__ModuleLoader__.load({
 				"common.installationUnverifiedUpdateDescription": "原因：{reason}市场会沿用当前安装来源更新；完整性校验仍会执行，失败会按现有恢复流程处理。",
 				"common.stillInstall": "仍然安装",
 				"common.stillUpdate": "仍然更新",
+				"common.openingInstallPanel": "正在打开安装面板…",
 				"common.installPathCmd": "当前安装路径无法用于 CMD，请切换到 PowerShell 后复制命令。",
 				"common.installPathUnknown": "当前 DSH 目录无法通过终端准确定位，请在市场内安装，或复制提示词检查安装方式。",
 				"common.installCommandUnavailable": "无法为当前环境生成安装命令，请复制提示词检查安装方式。",
 				"common.desktopInstallInput": "在「插件 → 添加插件」中输入下面的包名。",
-				"common.webInstallCommand": "复制命令，在运行 DSH 的电脑上执行。",
-				"common.promptManualDesktop": "复制提示词，让 Agent 检查冲突并逐步指导；桌面端由你在插件页操作。",
-				"common.promptManualWeb": "可复制提示词让 Agent 检查，或按维护者说明使用下面的命令。",
+				"common.manualInstallInput": "复制提示词或命令手动安装。",
+				"common.manualSpecCopy": "复制下面的包名，手动安装。",
 				"common.operationPromptLabel": "排查提示词",
 				"common.copyRepairHint": "可复制排查提示词交给本地 Agent，先检查实际环境和失败阶段。",
 				"common.manualAddHint": "手动添加时粘贴：{spec}",
@@ -1175,7 +1171,6 @@ window.__ModuleLoader__.load({
 				"common.downloadProgress": "{downloaded} / {total}",
 				"common.bytesPerSecond": "{bytes}/s",
 				"common.downloadedOnly": "已下载 {bytes}",
-				"common.openingInstallPanel": "正在打开安装面板，请稍候。",
 				"common.waitingDshConfirmation": "等待 DSH 确认",
 				"common.cancelSkinOperation": "正在取消",
 				"common.cancelled": "已取消",
@@ -1299,8 +1294,6 @@ window.__ModuleLoader__.load({
 				"common.nativeTargetChanged": "原生安装目标已变化，请重新选择皮肤使用。",
 				"common.selectionPlanInvalid": "启用预检未返回有效方案，请更新皮肤市场后重试。",
 				"common.marketUpdatingBlocked": "皮肤市场正在更新，完成前暂时不能修改插件",
-				"common.checkOperationState": "请等待或在官方插件页核对，确认前不要重复操作。",
-				"common.waitingTaskState": "操作结果尚未确认，暂不能修改插件。请等待，或在插件页核对状态。",
 				"common.errorWithStatus": "HTTP {status}",
 				"common.screenshotCount": "截图 {index}",
 				"common.closePrompt": "关闭提示",
@@ -1322,9 +1315,8 @@ window.__ModuleLoader__.load({
 				"failure.operation": "{action}未完成",
 				"failure.autoReplaceIncomplete": "自动替换未完成。",
 				"failure.manualReplace": "请在官方插件页先卸载当前包，再添加 {spec}。",
-				"failure.recoveryOpenFailed": "打不开安装面板。",
-				"failure.recoveryOpenPanel": "打开安装面板",
-				"failure.recoveryBlocked": "官方插件页还有一个安装没结束。请到官方插件页完成或关闭它。回到这里后，会打开安装面板。",
+				"failure.manualInstallFallback": "自动安装失败，请手动安装。",
+				"failure.recoveryBlocked": "官方插件页还有安装未结束，请先完成或关闭它。",
 				"failure.recoveryCompanions": "这款皮肤有配套包，要按顺序安装。",
 				"failure.recoveryEnable": "「{name}」的新版已经装上，请到官方插件页启用。",
 				"failure.recoveryUninstall": "卸载未完成。请到官方插件页移除「{name}」。",
@@ -1342,7 +1334,7 @@ window.__ModuleLoader__.load({
 				"failure.overrideNext": "请先检查覆盖来源，再按原操作重试。",
 				"failure.installBlocked": "安装已阻止",
 				"failure.missingFiles": "「{name}」的安装包文件缺少必要文件。",
-				"failure.missingFilesNext": "请先核对安装目标与安装包文件，确认缺包后反馈作者。",
+				"failure.missingFilesNext": "请复制日志反馈作者，等待修复后的版本。",
 				"failure.conflict": "「{name}」与已安装插件冲突。",
 				"failure.conflictNext": "请核对冲突的包、来源或组件标识；仅停用未必能解除安装冲突。",
 				"failure.conflictInUse": "「{existing}」正在使用，与这次安装冲突{identifiers}。先关闭再继续安装。",
@@ -1351,7 +1343,7 @@ window.__ModuleLoader__.load({
 				"failure.conflictPackage": "包名：{packageName}",
 				"failure.conflictTarget": "安装目标：{target}",
 				"failure.compatibility": "「{name}」未通过当前 DSH 的兼容检查。",
-				"failure.compatibilityNext": "请核对宿主版本与皮肤声明的兼容范围（当前 DSH）。",
+				"failure.compatibilityNext": "请核对 DSH 版本与皮肤声明的兼容范围。",
 				"failure.metadataMismatch": "「{name}」的安装信息与安装包不一致。",
 				"failure.metadataMismatchNext": "请复制日志，反馈市场维护者核对目录与实际安装包文件。",
 				"failure.failureWhat": "「{name}」：{problem}",
@@ -1364,9 +1356,9 @@ window.__ModuleLoader__.load({
 				"failure.operationStateProblem": "操作完成，但插件状态还未确认。",
 				"failure.operationStateNext": "请先在官方插件页核对实际状态。",
 				"failure.sourceCheckProblem": "请求未通过来源检查。",
-				"failure.sourceCheckNext": "请从当前 DSH 页面重试，仍失败请复制日志反馈；不要绕过检查。",
+				"failure.sourceCheckNext": "请从当前 DSH 页面重试；仍失败请复制日志反馈。",
 				"failure.authorizationProblem": "操作未通过当前 DSH 授权。",
-				"failure.authorizationNext": "请通过官方登录或授权入口核对，不要绕过权限检查。",
+				"failure.authorizationNext": "请通过官方登录或授权入口重新登录后重试。",
 				"failure.hostResultProblem": "DSH 还没有返回操作结果。",
 				"failure.hostResultNext": "请等待或在官方插件页核对，确认前不要重复操作。",
 				"failure.stopProfileProblem": "目标组件仍在运行。",
@@ -1437,12 +1429,13 @@ window.__ModuleLoader__.load({
 				"failure.integrityProblem": "安装包文件无法通过校验。",
 				"failure.integrityNext": "请保留日志并核对安装源与缓存，不要跳过校验。",
 				"failure.missingArtifactProblem": "安装结果缺少必要文件。",
-				"failure.missingArtifactNext": "请先核对安装是否完整及实际包状态。",
+				"failure.missingArtifactNext": "请重新安装；仍失败请复制日志反馈。",
 				"failure.missingModuleProblem": "插件缺少运行所需的文件或依赖。",
-				"failure.missingModuleNext": "请先区分安装未完成、宿主依赖和插件声明问题。",
+				"failure.missingModuleNext": "请重新安装；仍失败请复制日志反馈。",
 				"failure.genericProblem": "未能完成本次操作。",
 				"failure.genericNext": "请复制日志反馈。",
 				"failure.marketUpdateFailed": "皮肤市场更新失败",
+				"failure.marketUpdateRetry": "更新未完成，请关闭后重新点击更新。",
 				"failure.marketUpdateApprovalTitle": "更新需要允许新版本",
 				"failure.marketFallback": "已保留经过验证的精确版本 {spec}；正在打开官方插件页并预填，请在官方面板确认安装。",
 				"failure.links.skinRepository": "打开皮肤仓库",
@@ -1516,8 +1509,8 @@ window.__ModuleLoader__.load({
 				"market.requestFailed": "Skin Market request failed ({url}, HTTP {status})",
 				"market.clipboardUnavailable": "This page has no usable clipboard permission",
 				"market.restartTimeout": "DeepSeek Harness restart timed out. Refresh the page manually",
-				"market.installPanelUnavailable": "This DSH has no usable install-panel entry yet. Copy the target from “Other install methods”",
-				"market.installPanelOpenFailed": "The install panel could not be opened. Copy the target from “Other install methods”",
+				"market.installPanelUnavailable": "The install panel could not be opened. Use “Other install methods”.",
+				"market.installPanelOpenFailed": "The install panel could not be opened. Use “Other install methods”.",
 				"market.installPanelExistingTask": "The official plugin page already has an install task. The existing task was kept",
 				"market.installPanelPrefilled": "Opened the official plugin page with {spec} prefilled. Confirm the install in the official panel",
 				"market.installSourceChanged": "The install source changed. Refresh and choose the operation again",
@@ -1560,7 +1553,6 @@ window.__ModuleLoader__.load({
 				"common.migrationCompatibility": "The target version requires compatibility confirmation; it will be disabled after replacement and can be enabled after confirming use or resident status. ",
 				"common.migrationKeepState": "The current enabled and resident state is kept; ",
 				"common.manualPromptDesktop": "Copy the prompt so an Agent can check conflicts and guide you step by step; operate the desktop plugin page yourself.",
-				"common.manualPromptWeb": "Copy the prompt for an Agent to check, or follow the maintainer’s instructions with the command below.",
 				"common.copyTroubleshootingPrompt": "Copy troubleshooting prompt",
 				"common.copyPackageName": "Copy package name",
 				"common.copyLog": "Copy log",
@@ -1660,7 +1652,6 @@ window.__ModuleLoader__.load({
 				"common.terminal": "Terminal",
 				"common.installCommand": "Install command",
 				"common.packageName": "Plugin package name",
-				"common.manualPaste": "Paste this when adding manually:",
 				"common.openAddPlugin": "Open “Plugins → Add plugin” and enter:",
 				"common.copyLabel": "Copy {label}",
 				"common.githubStarsSnapshot": "GitHub Stars snapshot, updated {date}",
@@ -1714,13 +1705,11 @@ window.__ModuleLoader__.load({
 				"common.loaderMissing": "No loader registration found",
 				"common.marketExternal": "External to Market",
 				"common.versionSnapshotUpdated": "Version snapshot updated {date}",
-				"common.starsUpdated": "{count}, updated {date}",
 				"common.companionNotice": "This skin loads a detail customization panel. It is removed from settings when disabled or when another skin is selected; it is not treated as a separate skin.",
 				"common.noRepositoryScreenshot": "This repository has no recognizable skin screenshot. Market uses a local placeholder card and does not load repository images from GitHub.",
 				"common.marketScreenshotNotice": "This preview was captured by Market in an isolated DSH. The repository has no recognizable interface screenshot.",
 				"common.licenseNotice": "License notice",
 				"common.manualInstallUnavailableDesktop": "Automatic installation is unavailable: {reason}.",
-				"common.manualInstallUnavailableMarket": "This skin cannot be installed directly by Market yet.",
 				"common.installationUnverifiedTitle": "This skin has not passed pre-install verification",
 				"common.installationUnverifiedUpdateTitle": "This update has not passed pre-install verification",
 				"common.installationUnverifiedNoClient": "The pinned repository does not commit a readable client entry, so Market could not complete its static check.",
@@ -1732,13 +1721,13 @@ window.__ModuleLoader__.load({
 				"common.installationUnverifiedUpdateDescription": "Reason: {reason} Market will update from the currently installed source. Integrity checks still run, and failures use the existing recovery flow.",
 				"common.stillInstall": "Install anyway",
 				"common.stillUpdate": "Update anyway",
+				"common.openingInstallPanel": "Opening the install panel…",
 				"common.installPathCmd": "This install path cannot be used with CMD. Switch to PowerShell and copy the command.",
 				"common.installPathUnknown": "The current DSH directory cannot be located accurately from the terminal. Install in Market or copy the prompt to inspect the install method.",
 				"common.installCommandUnavailable": "No install command can be generated for this environment. Copy the prompt to inspect the install method.",
 				"common.desktopInstallInput": "Enter the package name in “Plugins → Add plugin”.",
-				"common.webInstallCommand": "Copy the command and run it on the computer running DSH.",
-				"common.promptManualDesktop": "Copy the prompt so an Agent can check conflicts and guide you step by step; operate the desktop plugin page yourself.",
-				"common.promptManualWeb": "Copy the prompt for an Agent to check, or follow the maintainer’s instructions with the command below.",
+				"common.manualInstallInput": "Copy the prompt or command and install manually.",
+				"common.manualSpecCopy": "Copy the package name below and install manually.",
 				"common.installSourceChanged": "The install source changed. Refresh and choose the operation again.",
 				"common.nativeTargetChanged": "The native install target changed. Select the skin again to use it.",
 				"common.selectionPlanInvalid": "The enablement preflight returned an invalid plan. Update Skin Market and try again.",
@@ -1845,7 +1834,6 @@ window.__ModuleLoader__.load({
 				"common.downloadProgress": "{downloaded} / {total}",
 				"common.bytesPerSecond": "{bytes}/s",
 				"common.downloadedOnly": "Downloaded {bytes}",
-				"common.openingInstallPanel": "Opening the install panel. Please wait.",
 				"common.waitingDshConfirmation": "Waiting for DSH confirmation",
 				"common.cancelSkinOperation": "Cancelling",
 				"common.cancelled": "Cancelled",
@@ -1965,8 +1953,6 @@ window.__ModuleLoader__.load({
 				"common.pinDescriptionActive": "Keep enabled while switching skins. Useful for additive plugins such as pets and sounds; skins may conflict",
 				"common.unpinRestartDescription": "Remove resident status and cancel the pending enablement",
 				"common.installNotAuthorized": "The operation could not continue. Copy the log and report it.",
-				"common.checkOperationState": "Wait or verify the state in the official plugin page. Do not repeat the operation before it is confirmed.",
-				"common.waitingTaskState": "The operation result is not confirmed yet, so plugin changes are unavailable. Wait or verify the state in the plugin page.",
 				"common.errorWithStatus": "HTTP {status}",
 				"common.screenshotCount": "Screenshot {index}",
 				"common.closePrompt": "Close notice",
@@ -1977,9 +1963,8 @@ window.__ModuleLoader__.load({
 				"failure.operation": "{action} incomplete",
 				"failure.autoReplaceIncomplete": "Automatic replacement did not complete.",
 				"failure.manualReplace": "Uninstall the current package in the official plugin page, then add {spec}.",
-				"failure.recoveryOpenFailed": "The install panel could not be opened.",
-				"failure.recoveryOpenPanel": "Open install panel",
-				"failure.recoveryBlocked": "The official plugin page still has an unfinished install. Finish or close it there. The install panel will open when you come back here.",
+				"failure.manualInstallFallback": "Automatic installation failed. Install manually.",
+				"failure.recoveryBlocked": "The official plugin page still has an unfinished install. Finish or close it first.",
 				"failure.recoveryCompanions": "This skin has companion packages and must be installed in order.",
 				"failure.recoveryEnable": "The new version of “{name}” is installed. Enable it on the official plugin page.",
 				"failure.recoveryUninstall": "Uninstall did not finish. Remove “{name}” on the official plugin page.",
@@ -1997,7 +1982,7 @@ window.__ModuleLoader__.load({
 				"failure.overrideNext": "Check the override source first, then retry the original operation.",
 				"failure.installBlocked": "Installation blocked",
 				"failure.missingFiles": "The install package for “{name}” is missing required files.",
-				"failure.missingFilesNext": "Check the install target and package file first. Report it to the author after confirming the package is incomplete.",
+				"failure.missingFilesNext": "Copy the log and report it to the author. Wait for a fixed version.",
 				"failure.conflict": "“{name}” conflicts with an installed plugin.",
 				"failure.conflictNext": "Check the conflicting package, source, or component identifier; disabling it alone may not resolve an install conflict.",
 				"failure.conflictInUse": "“{existing}” is in use and conflicts with this install{identifiers}. Close it before continuing.",
@@ -2019,9 +2004,9 @@ window.__ModuleLoader__.load({
 				"failure.operationStateProblem": "The operation completed, but the plugin state is not confirmed.",
 				"failure.operationStateNext": "Check the actual state in the official plugin page first.",
 				"failure.sourceCheckProblem": "The request did not pass the source check.",
-				"failure.sourceCheckNext": "Retry from the current DSH page. If it still fails, copy the log; do not bypass the check.",
+				"failure.sourceCheckNext": "Retry from the current DSH page. If it still fails, copy the log and report it.",
 				"failure.authorizationProblem": "The operation did not pass DSH authorization.",
-				"failure.authorizationNext": "Check through the official login or authorization entry; do not bypass permission checks.",
+				"failure.authorizationNext": "Sign in again through the official login or authorization entry, then retry.",
 				"failure.hostResultProblem": "DSH has not returned a confirmed operation result.",
 				"failure.hostResultNext": "Wait or verify the result in the official plugin page. Do not repeat the operation before confirmation.",
 				"failure.stopProfileProblem": "The target component is still running.",
@@ -2092,12 +2077,13 @@ window.__ModuleLoader__.load({
 				"failure.integrityProblem": "The install package did not pass verification.",
 				"failure.integrityNext": "Keep the log and check the install source and cache. Do not skip verification.",
 				"failure.missingArtifactProblem": "The install result is missing required files.",
-				"failure.missingArtifactNext": "Check that the installation is complete and inspect the actual package state.",
+				"failure.missingArtifactNext": "Reinstall. If it still fails, copy the log and report it.",
 				"failure.missingModuleProblem": "The plugin is missing files or dependencies required to run.",
-				"failure.missingModuleNext": "Distinguish an incomplete installation from a DSH dependency or plugin declaration problem.",
+				"failure.missingModuleNext": "Reinstall. If it still fails, copy the log and report it.",
 				"failure.genericProblem": "The operation did not complete.",
 				"failure.genericNext": "Copy the log and report it.",
 				"failure.marketUpdateFailed": "Skin Market update failed",
+				"failure.marketUpdateRetry": "The update did not finish. Close this dialog and start the update again.",
 				"failure.marketUpdateApprovalTitle": "Update requires permission for a new version",
 				"failure.marketFallback": "The verified exact version {spec} was kept. The official plugin page is opening with it prefilled; confirm the install in the official panel.",
 				"failure.links.skinRepository": "Open skin repository",
@@ -5742,7 +5728,7 @@ window.__ModuleLoader__.load({
 			const installationUnverified = selected !== void 0 && isInstallationUnverified(selected);
 			const selectedDesktopPlan = selected === void 0 ? void 0 : desktopInstallPlan(selected, officialDesktop);
 			const desktopManualReason = selectedDesktopPlan?.kind === "manual" ? selectedDesktopPlan.reason : void 0;
-			const manualInstallNotice = hostKind === "desktop" ? t("common.manualInstallUnavailableDesktop", { reason: desktopManualReasonLabel(desktopManualReason, t) }) : t("common.manualInstallUnavailableMarket");
+			const manualInstallNotice = manualOnly ? t("common.manualInstallUnavailableDesktop", { reason: desktopManualReasonLabel(desktopManualReason, t) }) : "";
 			const installationUnverifiedNotice = selected === void 0 ? "" : t("common.installationUnverifiedNotice", { reason: installationUnverifiedReason(selected, t) });
 			const autoInstallable = !manualOnly;
 			const reportedInstallPlatform = installEnvironment?.platform;
@@ -6840,22 +6826,21 @@ window.__ModuleLoader__.load({
 				setInstallCopied(null);
 				setError(null);
 				setShowInstallOptions(false);
-				closeBrowser();
-				if (!officialDesktop || desktopPluginPanel === void 0) {
-					setError(t("market.installPanelUnavailable"));
-					return;
-				}
 				setOpeningPluginPanel(true);
-				setShowInstallOptions(false);
-				closeBrowser();
 				try {
+					if (!officialDesktop || desktopPluginPanel === void 0) {
+						setError(t("market.installPanelUnavailable"));
+						return;
+					}
 					const failed = operations.find((operation) => operation.skinId === skin.id && operation.phase === "failed");
 					const result = await desktopPluginPanel.open(target, {
 						skinId: skin.id,
 						packageName: skin.package,
 						operationId: failed?.id
 					});
-					if (!result.ok && mounted.current) setError(result.reason);
+					if (!mounted.current) return;
+					if (result.ok) closeBrowser();
+					else setError(result.reason);
 				} catch {
 					if (mounted.current) setError(t("market.installPanelOpenFailed"));
 				} finally {
@@ -6864,7 +6849,7 @@ window.__ModuleLoader__.load({
 			};
 			const openManualInstall = (skin) => {
 				if (officialDesktop) {
-					openPluginPanel(skin, skin.install.target);
+					openPluginPanel(skin, preferredInstallTarget(skin));
 					return;
 				}
 				chooseSkin(skin.id);
@@ -6908,6 +6893,7 @@ window.__ModuleLoader__.load({
 				const stateText = itemState.installation === "broken" ? t("common.installError") : itemState.activation === "active" ? compactStatusLabel(itemState, t) : itemState.activation === "restart-required" ? t("common.restartRequired") : itemState.activation === "unavailable" ? t("common.notApplied") : itemState.activation === "switching" ? t("common.loadingState") : itemState.installation === "installed" ? t("common.installed") : null;
 				const footerStateText = installedCard && itemState.installation === "installed" && itemState.activation === "inactive" ? updateActionAvailable ? t("common.updateAvailable") : null : stateText;
 				const open = () => installedCard ? openInstalledBrowser(skin.id) : openBrowser(skin.id, "discover");
+				const openingThisPanel = openingPluginPanel && selected?.id === skin.id;
 				const name = localizedSkinName(skin.name, t);
 				const description = skinDescriptionLabel(skin, t);
 				const migrateLabel = itemState.sourceMigration?.kind === "local" ? t("common.replaceWithMarket") : t("common.useNpm");
@@ -6997,10 +6983,11 @@ window.__ModuleLoader__.load({
 									className: SkinMarket_module_css_default.cardAction,
 									variant: "outline",
 									size: "sm",
+									icon: openingThisPanel ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconLoadingOutline, {}) : void 0,
 									disabled: openingPluginPanel || (isManualOnly(skin) ? officialDesktop && deferInstallAndUse : installAndUseReason !== null || officialDesktop && deferInstallAndUse),
-									title: isManualOnly(skin) ? officialDesktop ? t("common.installThisSkin") : t("common.copyInstallPrompt") : installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t("common.noOtherInstall") : deferInstallAndUse ? t("common.installAfterCurrent") : installRequiresRestart ? t("market.restartDesktopGuidance") : t("common.installAndUse")),
+									title: openingThisPanel ? t("common.openingInstallPanel") : isManualOnly(skin) ? officialDesktop ? t("common.installThisSkin") : t("common.copyInstallPrompt") : installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t("common.noOtherInstall") : deferInstallAndUse ? t("common.installAfterCurrent") : installRequiresRestart ? t("market.restartDesktopGuidance") : t("common.installAndUse")),
 									onClick: () => openCardInstall(skin),
-									children: isManualOnly(skin) ? hostKind === "desktop" ? t("common.install") : t("common.manualInstall") : officialDesktop || deferInstallAndUse ? t("common.install") : t("common.installAndUse")
+									children: openingThisPanel ? t("common.openingInstallPanel") : isManualOnly(skin) ? hostKind === "desktop" ? t("common.install") : t("common.manualInstall") : officialDesktop || deferInstallAndUse ? t("common.install") : t("common.installAndUse")
 								}),
 								itemState.installation === "installed" && itemState.activation === "inactive" && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 									className: SkinMarket_module_css_default.cardAction,
@@ -7136,6 +7123,11 @@ window.__ModuleLoader__.load({
 				"companions",
 				"replace"
 			].includes(installRecovery.lead) ? installRecovery : null;
+			const recoveryDescription = installRecovery === null ? void 0 : installRecovery.lead === "open-failed" ? t("failure.manualInstallFallback") : installRecovery.lead === "blocked" ? t("failure.recoveryBlocked") : installRecovery.lead === "companions" ? t("failure.recoveryCompanions") : installRecovery.lead === "replace" && installRecovery.spec ? t("failure.manualReplace", { spec: installRecovery.spec }) : installRecovery.lead === "enable" && installRecovery.name ? t("failure.recoveryEnable", { name: installRecovery.name }) : installRecovery.lead === "uninstall" && installRecovery.name ? t("failure.recoveryUninstall", { name: installRecovery.name }) : installRecovery.lead === "check" ? t("common.resultNotConfirmed") : installRecovery.lead === "none" ? installRecovery.spec !== void 0 && installRecovery.spec.trim() !== "" ? hostKind === "desktop" ? t("common.desktopInstallInput") : t("common.manualSpecCopy") : t("failure.marketUpdateRetry") : void 0;
+			const manualPanelDescription = (() => {
+				const failure = manualRecovery === null || manualOnly ? void 0 : manualRecovery.lead === "open-failed" || manualRecovery.lead === "none" ? t("failure.manualInstallFallback") : manualRecovery.lead === "blocked" ? t("failure.recoveryBlocked") : manualRecovery.lead === "companions" ? t("failure.recoveryCompanions") : manualRecovery.lead === "replace" && manualRecovery.spec ? t("failure.manualReplace", { spec: manualRecovery.spec }) : void 0;
+				return [failure, manualOnly ? `${manualInstallNotice}${t("common.manualPromptDesktop")}` : hostKind === "desktop" ? t("common.desktopInstallInput") : failure === void 0 ? t("common.manualInstallInput") : void 0].filter(Boolean).join("");
+			})();
 			const closeManualPanel = () => {
 				setShowInstallOptions(false);
 				if (manualRecovery === null) return;
@@ -7915,18 +7907,18 @@ window.__ModuleLoader__.load({
 													autoInstallable && (officialDesktop || !deferInstallAndUse) && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 														variant: "primary",
 														size: "sm",
-														icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconDownloadOutline, {}),
+														icon: selectedBusy !== void 0 ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconLoadingOutline, {}) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconDownloadOutline, {}),
 														disabled: selectedBusy !== void 0 || installAndUseReason !== null || officialDesktop && deferInstallAndUse,
-														title: installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t("common.noOtherInstall") : installRequiresRestart ? t("market.restartDesktopGuidance") : void 0),
+														title: selectedBusy !== void 0 ? t("common.mutationInstall") : installAndUseReason ?? (officialDesktop && deferInstallAndUse ? t("common.noOtherInstall") : installRequiresRestart ? t("market.restartDesktopGuidance") : void 0),
 														onClick: () => void installAndActivate(),
 														children: officialDesktop ? t("common.install") : t("common.installAndUse")
 													}),
 													autoInstallable && !officialDesktop && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 														variant: deferInstallAndUse ? "primary" : "outline",
 														size: "sm",
-														icon: deferInstallAndUse ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconDownloadOutline, {}) : void 0,
+														icon: selectedBusy !== void 0 ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconLoadingOutline, {}) : deferInstallAndUse ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconDownloadOutline, {}) : void 0,
 														disabled: selectedBusy !== void 0 || actionReason("install") !== null,
-														title: actionReason("install") ?? (deferInstallAndUse ? t("common.installAfterCurrent") : void 0),
+														title: selectedBusy !== void 0 ? t("common.mutationInstall") : actionReason("install") ?? (deferInstallAndUse ? t("common.installAfterCurrent") : void 0),
 														onClick: () => void run("install"),
 														children: deferInstallAndUse ? t("common.install") : t("common.onlyInstall")
 													}),
@@ -7943,9 +7935,10 @@ window.__ModuleLoader__.load({
 													manualOnly && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 														variant: "outline",
 														size: "sm",
+														icon: openingPluginPanel ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconLoadingOutline, {}) : void 0,
 														disabled: selectedBusy !== void 0 || openingPluginPanel || officialDesktop && deferInstallAndUse,
 														onClick: () => openManualInstall(selected),
-														children: t("common.install")
+														children: openingPluginPanel ? t("common.openingInstallPanel") : t("common.install")
 													}),
 													manualOnly && officialDesktop && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 														variant: "outline",
@@ -8031,9 +8024,9 @@ window.__ModuleLoader__.load({
 												state.updateAvailable && !manualOnly && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 													variant: state.activation === "active" && !state.pinned ? "primary" : "outline",
 													size: "sm",
-													icon: /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconRefreshOutline, {}),
+													icon: selectedBusy !== void 0 ? /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconLoadingOutline, {}) : /* @__PURE__ */ (0, react_jsx_runtime.jsx)(IconRefreshOutline, {}),
 													disabled: selectedBusy !== void 0 || actionReason("update") !== null,
-													title: actionReason("update") ?? void 0,
+													title: selectedBusy !== void 0 ? t("common.mutationUpdate") : actionReason("update") ?? void 0,
 													onClick: () => void run("update"),
 													children: t("common.updateAction")
 												}),
@@ -8562,58 +8555,28 @@ window.__ModuleLoader__.load({
 						title: installRecovery?.lead === "uninstall" ? t("common.uninstall") : installRecovery?.lead === "enable" ? t("common.use") : installRecovery?.skinId ? t("common.installSkinTitle", { name: skinNameLabel(skins.find((skin) => skin.id === installRecovery.skinId), t) }) : t("failure.marketUpdateFailed"),
 						closeLabel: t("common.close"),
 						className: SkinMarket_module_css_default.modalSurface,
-						description: installRecovery === null ? void 0 : installRecovery.lead === "open-failed" ? t("failure.recoveryOpenFailed") : installRecovery.lead === "blocked" ? t("failure.recoveryBlocked") : installRecovery.lead === "companions" ? t("failure.recoveryCompanions") : installRecovery.lead === "replace" && installRecovery.spec ? t("failure.manualReplace", { spec: installRecovery.spec }) : installRecovery.lead === "enable" && installRecovery.name ? t("failure.recoveryEnable", { name: installRecovery.name }) : installRecovery.lead === "uninstall" && installRecovery.name ? t("failure.recoveryUninstall", { name: installRecovery.name }) : installRecovery.lead === "check" ? t("common.resultNotConfirmed") : installRecovery.lead === "none" ? hostKind === "desktop" ? t("common.desktopInstallInput") : t("common.webInstallCommand") : void 0,
-						footer: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [
-							installRecovery?.lead === "open-failed" && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
-								variant: "primary",
-								size: "sm",
-								onClick: () => {
-									if (installRecovery.spec === void 0 || installRecovery.spec === "" || desktopPluginPanel === void 0) return;
-									desktopPluginPanel.open(installRecovery.spec, {
-										skinId: installRecovery.skinId ?? "dsh-skin-market",
-										packageName: installRecovery.packageName ?? "dsh-skin-market",
-										operationId: installRecovery.operationId,
-										companions: installRecovery.companions
-									}, { navigateOnResume: false }).then((result) => {
-										if (!mounted.current) return;
-										if (result.ok && result.kind === "prefilled") {
-											desktopPluginPanel.noteRecovery?.(installRecovery.operationId, "opened");
-											recoveryClaim.current = null;
-											setInstallRecovery(null);
-										} else if (result.ok && result.kind === "resumed") {
-											desktopPluginPanel.noteRecovery?.(installRecovery.operationId, "blocked");
-											setInstallRecovery({
-												...installRecovery,
-												lead: "blocked"
-											});
-										}
-									});
-								},
-								children: t("failure.recoveryOpenPanel")
-							}),
-							recoveryPrompt !== null && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
-								variant: "outline",
-								size: "sm",
-								onClick: () => void copyRecoveryPrompt(),
-								children: t("common.copyTroubleshootingPrompt")
-							}),
-							/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
-								variant: "outline",
-								size: "sm",
-								onClick: () => {
-									recoveryClaim.current = null;
-									if (installRecovery !== null && installRecovery.lead !== "blocked") {
-										desktopPluginPanel?.forgetRecovery?.(installRecovery.operationId);
-										dismissNotice(`failed:${installRecovery.operationId}`);
-									} else if (installRecovery?.lead === "blocked") {
-										desktopPluginPanel?.noteRecovery?.(installRecovery.operationId, "blocked");
-										retryBlockedRecovery.current = true;
-									}
-									setInstallRecovery(null);
-								},
-								children: t("common.close")
-							})
-						] }),
+						description: recoveryDescription,
+						footer: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [recoveryPrompt !== null && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+							variant: "outline",
+							size: "sm",
+							onClick: () => void copyRecoveryPrompt(),
+							children: t("common.copyTroubleshootingPrompt")
+						}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+							variant: "outline",
+							size: "sm",
+							onClick: () => {
+								recoveryClaim.current = null;
+								if (installRecovery !== null && installRecovery.lead !== "blocked") {
+									desktopPluginPanel?.forgetRecovery?.(installRecovery.operationId);
+									dismissNotice(`failed:${installRecovery.operationId}`);
+								} else if (installRecovery?.lead === "blocked") {
+									desktopPluginPanel?.noteRecovery?.(installRecovery.operationId, "blocked");
+									retryBlockedRecovery.current = true;
+								}
+								setInstallRecovery(null);
+							},
+							children: t("common.close")
+						})] }),
 						children: installRecovery?.spec ? /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
 							className: SkinMarket_module_css_default.installOptions,
 							children: [/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("strong", { children: t("common.packageName") }), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("span", {
@@ -8658,50 +8621,18 @@ window.__ModuleLoader__.load({
 						title: t("common.installSkinTitle", { name: selected?.name.zh ?? t("common.skin") }),
 						closeLabel: t("common.close"),
 						className: SkinMarket_module_css_default.modalSurface,
-						description: [manualRecovery === null ? void 0 : manualRecovery.lead === "open-failed" ? t("failure.recoveryOpenFailed") : manualRecovery.lead === "blocked" ? t("failure.recoveryBlocked") : manualRecovery.lead === "companions" ? t("failure.recoveryCompanions") : manualRecovery.lead === "replace" && manualRecovery.spec ? t("failure.manualReplace", { spec: manualRecovery.spec }) : void 0, manualOnly ? hostKind === "desktop" ? `${manualInstallNotice}${t("common.manualPromptDesktop")}` : `${manualInstallNotice}${t("common.manualPromptWeb")}` : hostKind === "desktop" ? t("common.desktopInstallInput") : t("common.webInstallCommand")].filter(Boolean).join(""),
-						footer: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [
-							manualRecovery?.lead === "open-failed" && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
-								variant: "primary",
-								size: "sm",
-								onClick: () => {
-									if (manualRecovery.spec === void 0 || manualRecovery.spec === "" || desktopPluginPanel === void 0) return;
-									desktopPluginPanel.open(manualRecovery.spec, {
-										skinId: manualRecovery.skinId ?? "dsh-skin-market",
-										packageName: manualRecovery.packageName ?? "dsh-skin-market",
-										operationId: manualRecovery.operationId,
-										companions: manualRecovery.companions
-									}, { navigateOnResume: false }).then((result) => {
-										if (!mounted.current) return;
-										if (result.ok && result.kind === "prefilled") {
-											desktopPluginPanel.noteRecovery?.(manualRecovery.operationId, "opened");
-											setDismissedNoticeIds((ids) => [.../* @__PURE__ */ new Set([...ids, `failed:${manualRecovery.operationId}`])].slice(-100));
-											recoveryClaim.current = null;
-											setShowInstallOptions(false);
-											setInstallRecovery(null);
-										} else if (result.ok && result.kind === "resumed" || !result.ok && result.code === "busy") {
-											desktopPluginPanel.noteRecovery?.(manualRecovery.operationId, "blocked");
-											setInstallRecovery({
-												...manualRecovery,
-												lead: "blocked"
-											});
-										}
-									});
-								},
-								children: t("failure.recoveryOpenPanel")
-							}),
-							manualRecovery !== null && recoveryPrompt !== null && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
-								variant: "outline",
-								size: "sm",
-								onClick: () => void copyRecoveryPrompt(),
-								children: t("common.copyTroubleshootingPrompt")
-							}),
-							/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
-								variant: "outline",
-								size: "sm",
-								onClick: closeManualPanel,
-								children: t("common.close")
-							})
-						] }),
+						description: manualPanelDescription,
+						footer: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [manualRecovery !== null && recoveryPrompt !== null && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+							variant: "outline",
+							size: "sm",
+							onClick: () => void copyRecoveryPrompt(),
+							children: t("common.copyTroubleshootingPrompt")
+						}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+							variant: "outline",
+							size: "sm",
+							onClick: closeManualPanel,
+							children: t("common.close")
+						})] }),
 						children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
 							className: SkinMarket_module_css_default.installOptions,
 							children: [
@@ -8927,7 +8858,6 @@ window.__ModuleLoader__.load({
 			"failed"
 		]);
 		const UNAVAILABLE = "暂时无法打开 DSH 添加插件面板，请重试。";
-		const CHANGED = "DSH 插件面板刚刚重新加载，请重试。";
 		const LOAD_FAILED = "DSH 插件列表暂时未能加载，请稍后重试。";
 		const BUSY = "原生添加插件面板仍在处理另一项任务，请先在插件页确认其状态。";
 		function object(value) {
@@ -9274,11 +9204,22 @@ window.__ModuleLoader__.load({
 						ok: false,
 						reason: UNAVAILABLE
 					};
-					const current = findTarget(ctx);
-					if (!current || current.entry !== target.entry || current.face !== target.face) return {
+					let current = findTarget(ctx);
+					if (!current) return {
 						ok: false,
-						reason: CHANGED
+						reason: UNAVAILABLE
 					};
+					if (current.face !== target.face) {
+						if (!await waitUntilLoaded(current.face.hooks.pluginManager, options.readyTimeoutMs ?? 8e3, lifetime.signal)) return {
+							ok: false,
+							reason: LOAD_FAILED
+						};
+						if (lifetime.signal.aborted) return {
+							ok: false,
+							reason: UNAVAILABLE
+						};
+						current = findTarget(ctx) ?? current;
+					}
 					state = snapshot(current.face);
 					if (!state || state.status !== "ready") return {
 						ok: false,

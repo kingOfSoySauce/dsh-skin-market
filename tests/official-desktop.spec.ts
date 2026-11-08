@@ -584,6 +584,23 @@ describe('official management release contracts', () => {
     expect(manager.installBundle).not.toHaveBeenCalled()
   })
 
+  it('passes the exact git or tarball build key the Host reported for a GitHub skin', async () => {
+    const manager = fullManager()
+    const runner = officialDesktopRunner(() => manager, runtime('0.2.1-rc.3'))
+    const keys = [
+      'dsh-claude-desktop-theme@https://codeload.github.com/zkforge/dsh-claude-desktop-theme/tar.gz/0bda59ab167074e5753fd7415bf55e8dbb2a6886',
+      '@scope/helper@git+https://github.com/owner/repo.git#0123456789abcdef0123456789abcdef01234567',
+      'mono-skin@https://codeload.github.com/owner/repo/tar.gz/0123456789abcdef0123456789abcdef01234567#path:packages/my skin',
+    ]
+    const spec = 'github:zkforge/dsh-claude-desktop-theme#0bda59ab167074e5753fd7415bf55e8dbb2a6886'
+    await runner.installPlugin!('desktop', {
+      packageName: 'dsh-claude-desktop-theme', packageVersion: '0.10.3', spec, receiptId: 'request', approvedBuilds: keys,
+    })
+    expect(manager.installBundle).toHaveBeenCalledWith(spec, {
+      enabled: false, requestId: 'request', approvedBuilds: keys, saveExact: true,
+    })
+  })
+
   it('refuses unsupported registry options instead of silently ignoring them', async () => {
     const manager = fullManager()
     const runner = officialDesktopRunner(() => manager, runtime('0.1.6-alpha.2'))
