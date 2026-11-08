@@ -12,7 +12,7 @@
 // not refreshed from showing the same number for months.
 //
 // Usage:
-//   node scripts/record-stars.mjs              # merge dated registry observations
+//   node scripts/record-stars.mjs --history=<path>  # merge dated observations into a state file
 //   node scripts/record-stars.mjs --backfill   # merge git history once
 //
 // The catalog builder reads the file; clients never see it directly.
@@ -28,7 +28,8 @@ import { earliestObservedDay, latestCatalogSnapshots, latestRepositorySnapshots,
 const run = promisify(execFile)
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const registryDir = join(root, 'registry/skins')
-const historyPath = join(root, 'data/star-history.json')
+const historyPath = resolve(process.argv.find(argument => argument.startsWith('--history='))?.slice('--history='.length)
+  ?? join(root, 'data/star-history.json'))
 const HISTORY_DAYS = 730 // storage retention only; scoring uses each skin's age
 const backfill = process.argv.includes('--backfill')
 const today = dayNumber(new Date())
@@ -130,4 +131,4 @@ const unchanged = baseline === `${canonical(repos)}|${canonical(skins)}`
 const generatedAt = unchanged && typeof recordedAt === 'string' ? recordedAt : new Date(today * DAY_MS).toISOString()
 const contents = `{\n  "schemaVersion": 2,\n  "generatedAt": ${JSON.stringify(generatedAt)},\n  "retentionDays": ${HISTORY_DAYS},\n  "repos": {\n${repoLines.join(',\n')}\n  },\n  "skins": {\n${skinLines.join(',\n')}\n  }\n}\n`
 await writeFile(historyPath, contents)
-console.log(`recorded ${current.snapshots.size} registry and ${recorded.size} catalog readings (${Object.keys(repos).length} repositories tracked) and ${current.skinIds.size} skin ages in data/star-history.json`)
+console.log(`recorded ${current.snapshots.size} registry and ${recorded.size} catalog readings (${Object.keys(repos).length} repositories tracked) and ${current.skinIds.size} skin ages in ${historyPath}`)

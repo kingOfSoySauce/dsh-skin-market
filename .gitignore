@@ -17,3 +17,5 @@ site/public/skin-media/
 .hermes/
 AGENTS.md
 **/AGENTS.md
+data/star-history.json
+data/recently-added-state.json
