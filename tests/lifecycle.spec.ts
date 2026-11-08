@@ -448,7 +448,7 @@ describe('skin lifecycle', () => {
     expect((parse(readFileSync(profilePatchFile(dir), 'utf8')) as Array<{ id?: string }>).some(row => row.id === child.id)).toBe(false)
   })
 
-  it('gates market installation by installation readiness, not compatibility verification', () => {
+  it('does not gate web installs on the catalog installation review', async () => {
     const dir = fixture()
     const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() })
     const base = probe.catalog[0]
@@ -456,8 +456,12 @@ describe('skin lifecycle', () => {
     const unverifiedInstallable = { ...base, id: 'installable.skin', review: { compatibility: 'unverified' as const, preview: 'verified' as const, installation: 'verified' as const } }
     const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() }, [compatibleManual, unverifiedInstallable])
 
-    expect(() => lifecycle.begin('install', compatibleManual.id)).toThrow('尚未满足市场自动安装所需信息')
-    expect(() => lifecycle.begin('install', unverifiedInstallable.id)).not.toThrow()
+    const manual = lifecycle.begin('install', compatibleManual.id)
+    expect(manual.kind).toBe('install')
+    await finished(manual)
+    const installed = lifecycle.begin('install', unverifiedInstallable.id)
+    expect(installed.kind).toBe('install')
+    await finished(installed)
   })
 
   it('uses Desktop installPlugin for managed npm skins and blocks manual-only skins', async () => {

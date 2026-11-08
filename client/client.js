@@ -297,155 +297,155 @@ window.__ModuleLoader__.load({
 			document.head.appendChild(tag);
 		}
 		var SkinMarket_module_css_default = {
-			"interceptNotice": "VqXecW_interceptNotice",
-			"aboutGrid": "VqXecW_aboutGrid",
-			"discoveryGrid": "VqXecW_discoveryGrid",
-			"sparkFillTop": "VqXecW_sparkFillTop",
-			"discoverTitle": "VqXecW_discoverTitle",
-			"modalSurface": "VqXecW_modalSurface",
-			"catalogHeader": "VqXecW_catalogHeader",
-			"activationConflictState": "VqXecW_activationConflictState",
-			"home": "VqXecW_home",
-			"lightboxStage": "VqXecW_lightboxStage",
-			"skinCardBody": "VqXecW_skinCardBody",
-			"repoLine": "VqXecW_repoLine",
-			"homeCardCopy": "VqXecW_homeCardCopy",
-			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
-			"browserHomeBack": "VqXecW_browserHomeBack",
-			"homeTitleRow": "VqXecW_homeTitleRow",
-			"mobileBack": "VqXecW_mobileBack",
-			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
-			"homeOperations": "VqXecW_homeOperations",
-			"installCommandLabel": "VqXecW_installCommandLabel",
-			"operation": "VqXecW_operation",
-			"sparkLine": "VqXecW_sparkLine",
-			"discoverHeading": "VqXecW_discoverHeading",
-			"description": "VqXecW_description",
-			"spark": "VqXecW_spark",
-			"notice": "VqXecW_notice",
-			"detailSkeleton": "VqXecW_detailSkeleton",
-			"cardMeta": "VqXecW_cardMeta",
-			"skinList": "VqXecW_skinList",
-			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
-			"feedMeta": "VqXecW_feedMeta",
-			"homeLoadMore": "VqXecW_homeLoadMore",
-			"root": "VqXecW_root",
-			"cardSourceAction": "VqXecW_cardSourceAction",
-			"heroNav": "VqXecW_heroNav",
-			"homeSection": "VqXecW_homeSection",
-			"catalogTitle": "VqXecW_catalogTitle",
-			"homeOperation": "VqXecW_homeOperation",
-			"detailHeader": "VqXecW_detailHeader",
-			"collectionTitle": "VqXecW_collectionTitle",
+			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
 			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
-			"segmented": "VqXecW_segmented",
-			"homeCardMedia": "VqXecW_homeCardMedia",
-			"homeCardFooter": "VqXecW_homeCardFooter",
-			"marketUpdateButton": "VqXecW_marketUpdateButton",
-			"homeGithubLabel": "VqXecW_homeGithubLabel",
-			"galleryGroup": "VqXecW_galleryGroup",
-			"lightboxNav": "VqXecW_lightboxNav",
-			"operationDismiss": "VqXecW_operationDismiss",
-			"installedRow": "VqXecW_installedRow",
-			"filters": "VqXecW_filters",
-			"skinCardPreview": "VqXecW_skinCardPreview",
-			"galleryProgress": "VqXecW_galleryProgress",
-			"sparkEnd": "VqXecW_sparkEnd",
+			"interceptNotice": "VqXecW_interceptNotice",
+			"detailHeader": "VqXecW_detailHeader",
 			"pinWarning": "VqXecW_pinWarning",
-			"sparkFillMid": "VqXecW_sparkFillMid",
-			"operationDiagnostics": "VqXecW_operationDiagnostics",
-			"heroPrev": "VqXecW_heroPrev",
-			"lightbox": "VqXecW_lightbox",
-			"homeLoading": "VqXecW_homeLoading",
-			"homeCardOpen": "VqXecW_homeCardOpen",
-			"activationConflictRow": "VqXecW_activationConflictRow",
-			"changelog": "VqXecW_changelog",
-			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
-			"cardMetaLine": "VqXecW_cardMetaLine",
-			"browser": "VqXecW_browser",
-			"homeSectionTitle": "VqXecW_homeSectionTitle",
-			"lightboxNext": "VqXecW_lightboxNext",
-			"skeletonCard": "VqXecW_skeletonCard",
-			"listSkeleton": "VqXecW_listSkeleton",
-			"catalog": "VqXecW_catalog",
-			"searchField": "VqXecW_searchField",
-			"lightboxPrev": "VqXecW_lightboxPrev",
-			"homeCardDescription": "VqXecW_homeCardDescription",
-			"thumbnailFrame": "VqXecW_thumbnailFrame",
-			"homeUpdateAction": "VqXecW_homeUpdateAction",
-			"thumbnails": "VqXecW_thumbnails",
-			"spin": "VqXecW_spin",
-			"listLoading": "VqXecW_listLoading",
-			"detail": "VqXecW_detail",
-			"skinCard": "VqXecW_skinCard",
-			"homeCardMeta": "VqXecW_homeCardMeta",
-			"heroOpen": "VqXecW_heroOpen",
-			"installCommandGroup": "VqXecW_installCommandGroup",
 			"homeGithubAction": "VqXecW_homeGithubAction",
+			"homeLoadMore": "VqXecW_homeLoadMore",
+			"homeContent": "VqXecW_homeContent",
+			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
+			"sparkFillEnd": "VqXecW_sparkFillEnd",
+			"operationCopyLog": "VqXecW_operationCopyLog",
 			"operationElapsed": "VqXecW_operationElapsed",
-			"activationConflictList": "VqXecW_activationConflictList",
-			"interceptHelp": "VqXecW_interceptHelp",
+			"homeSection": "VqXecW_homeSection",
+			"activationConflicts": "VqXecW_activationConflicts",
+			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
+			"headerDiscover": "VqXecW_headerDiscover",
+			"spin": "VqXecW_spin",
+			"iconOnlyButton": "VqXecW_iconOnlyButton",
+			"activationConflictRow": "VqXecW_activationConflictRow",
+			"listLoading": "VqXecW_listLoading",
+			"cardDescription": "VqXecW_cardDescription",
+			"operationDismiss": "VqXecW_operationDismiss",
+			"homeCardCopy": "VqXecW_homeCardCopy",
+			"installOptions": "VqXecW_installOptions",
 			"cardInlineActions": "VqXecW_cardInlineActions",
 			"cardStars": "VqXecW_cardStars",
-			"cardAction": "VqXecW_cardAction",
-			"hero": "VqXecW_hero",
-			"loadMoreHint": "VqXecW_loadMoreHint",
-			"sparkFillEnd": "VqXecW_sparkFillEnd",
-			"homeCard": "VqXecW_homeCard",
-			"installedMoreCard": "VqXecW_installedMoreCard",
-			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
-			"homeCardRepo": "VqXecW_homeCardRepo",
-			"installSegmented": "VqXecW_installSegmented",
-			"operationCancel": "VqXecW_operationCancel",
-			"searchClear": "VqXecW_searchClear",
-			"empty": "VqXecW_empty",
-			"homeHeader": "VqXecW_homeHeader",
-			"browserPanel": "VqXecW_browserPanel",
-			"operationDetails": "VqXecW_operationDetails",
-			"skeletonShimmer": "VqXecW_skeletonShimmer",
-			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
-			"installOptions": "VqXecW_installOptions",
-			"copyCapsule": "VqXecW_copyCapsule",
-			"homeActions": "VqXecW_homeActions",
-			"operationMessage": "VqXecW_operationMessage",
-			"catalogTitleMain": "VqXecW_catalogTitleMain",
-			"operationActions": "VqXecW_operationActions",
-			"titleBlock": "VqXecW_titleBlock",
-			"version": "VqXecW_version",
-			"homeError": "VqXecW_homeError",
-			"error": "VqXecW_error",
-			"filterBar": "VqXecW_filterBar",
-			"repairPromptFallback": "VqXecW_repairPromptFallback",
-			"headerDiscover": "VqXecW_headerDiscover",
-			"previewPlaceholder": "VqXecW_previewPlaceholder",
-			"catalogSearch": "VqXecW_catalogSearch",
-			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
-			"actionRow": "VqXecW_actionRow",
-			"sparkTip": "VqXecW_sparkTip",
-			"statusLabel": "VqXecW_statusLabel",
-			"recommendations": "VqXecW_recommendations",
-			"heroNext": "VqXecW_heroNext",
-			"tags": "VqXecW_tags",
-			"cardActionProgress": "VqXecW_cardActionProgress",
-			"activationConflicts": "VqXecW_activationConflicts",
-			"cardTitle": "VqXecW_cardTitle",
-			"skinAvatar": "VqXecW_skinAvatar",
-			"warningModal": "VqXecW_warningModal",
-			"manualInstallGuide": "VqXecW_manualInstallGuide",
-			"thumbnailProgress": "VqXecW_thumbnailProgress",
-			"operationMeta": "VqXecW_operationMeta",
+			"discoverTitle": "VqXecW_discoverTitle",
+			"catalog": "VqXecW_catalog",
 			"homeSearch": "VqXecW_homeSearch",
-			"sparkArea": "VqXecW_sparkArea",
-			"browserContent": "VqXecW_browserContent",
-			"homeContent": "VqXecW_homeContent",
+			"home": "VqXecW_home",
+			"repairPromptFallback": "VqXecW_repairPromptFallback",
+			"mobileBack": "VqXecW_mobileBack",
+			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
+			"homeUpdateAction": "VqXecW_homeUpdateAction",
+			"skinCardPreview": "VqXecW_skinCardPreview",
+			"skinList": "VqXecW_skinList",
+			"operationDiagnostics": "VqXecW_operationDiagnostics",
 			"browserModal": "VqXecW_browserModal",
-			"lightboxClose": "VqXecW_lightboxClose",
+			"catalogSearch": "VqXecW_catalogSearch",
+			"catalogTitleMain": "VqXecW_catalogTitleMain",
+			"homeOperation": "VqXecW_homeOperation",
+			"homeCardDescription": "VqXecW_homeCardDescription",
+			"description": "VqXecW_description",
+			"installedRow": "VqXecW_installedRow",
+			"lightboxNext": "VqXecW_lightboxNext",
+			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
+			"browserPanel": "VqXecW_browserPanel",
+			"homeActions": "VqXecW_homeActions",
+			"lightboxNav": "VqXecW_lightboxNav",
+			"spark": "VqXecW_spark",
+			"sparkLine": "VqXecW_sparkLine",
+			"browserHomeBack": "VqXecW_browserHomeBack",
+			"homeCardMeta": "VqXecW_homeCardMeta",
+			"heroNext": "VqXecW_heroNext",
+			"homeOperations": "VqXecW_homeOperations",
+			"filters": "VqXecW_filters",
+			"homeCardRepo": "VqXecW_homeCardRepo",
+			"skinCardBody": "VqXecW_skinCardBody",
+			"sparkFillTop": "VqXecW_sparkFillTop",
+			"sparkTip": "VqXecW_sparkTip",
+			"copyCapsule": "VqXecW_copyCapsule",
+			"thumbnailProgress": "VqXecW_thumbnailProgress",
+			"installCommandGroup": "VqXecW_installCommandGroup",
+			"empty": "VqXecW_empty",
+			"catalogTitle": "VqXecW_catalogTitle",
+			"skeletonCard": "VqXecW_skeletonCard",
+			"installSegmented": "VqXecW_installSegmented",
+			"galleryProgress": "VqXecW_galleryProgress",
+			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
+			"thumbnails": "VqXecW_thumbnails",
+			"homeError": "VqXecW_homeError",
+			"homeHeader": "VqXecW_homeHeader",
+			"interceptHelp": "VqXecW_interceptHelp",
+			"browser": "VqXecW_browser",
+			"marketUpdateButton": "VqXecW_marketUpdateButton",
+			"skinCard": "VqXecW_skinCard",
+			"cardTitle": "VqXecW_cardTitle",
+			"cardMeta": "VqXecW_cardMeta",
+			"detailSkeleton": "VqXecW_detailSkeleton",
+			"heroPrev": "VqXecW_heroPrev",
+			"listSkeleton": "VqXecW_listSkeleton",
+			"homeGithubLabel": "VqXecW_homeGithubLabel",
+			"installedMoreCard": "VqXecW_installedMoreCard",
+			"cardActionProgress": "VqXecW_cardActionProgress",
+			"galleryGroup": "VqXecW_galleryGroup",
+			"heroOpen": "VqXecW_heroOpen",
+			"sparkFillMid": "VqXecW_sparkFillMid",
+			"installCommandLabel": "VqXecW_installCommandLabel",
+			"operationActions": "VqXecW_operationActions",
+			"version": "VqXecW_version",
+			"actionRow": "VqXecW_actionRow",
+			"cardSourceAction": "VqXecW_cardSourceAction",
+			"browserContent": "VqXecW_browserContent",
+			"hero": "VqXecW_hero",
+			"titleBlock": "VqXecW_titleBlock",
+			"cardMetaLine": "VqXecW_cardMetaLine",
+			"heroNav": "VqXecW_heroNav",
+			"feedMeta": "VqXecW_feedMeta",
+			"searchField": "VqXecW_searchField",
+			"homeCardOpen": "VqXecW_homeCardOpen",
+			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
+			"sparkEnd": "VqXecW_sparkEnd",
+			"operation": "VqXecW_operation",
+			"previewPlaceholder": "VqXecW_previewPlaceholder",
 			"loading": "VqXecW_loading",
-			"operationCopyLog": "VqXecW_operationCopyLog",
-			"srOnly": "VqXecW_srOnly",
+			"activationConflictState": "VqXecW_activationConflictState",
+			"operationDetails": "VqXecW_operationDetails",
+			"lightboxStage": "VqXecW_lightboxStage",
+			"tags": "VqXecW_tags",
+			"homeTitleRow": "VqXecW_homeTitleRow",
+			"skeletonShimmer": "VqXecW_skeletonShimmer",
+			"lightboxClose": "VqXecW_lightboxClose",
+			"discoverHeading": "VqXecW_discoverHeading",
+			"sparkArea": "VqXecW_sparkArea",
+			"recommendations": "VqXecW_recommendations",
+			"homeLoading": "VqXecW_homeLoading",
+			"homeCardMedia": "VqXecW_homeCardMedia",
+			"warningModal": "VqXecW_warningModal",
+			"lightboxPrev": "VqXecW_lightboxPrev",
+			"statusLabel": "VqXecW_statusLabel",
+			"aboutGrid": "VqXecW_aboutGrid",
+			"operationMessage": "VqXecW_operationMessage",
+			"operationCancel": "VqXecW_operationCancel",
+			"thumbnailFrame": "VqXecW_thumbnailFrame",
 			"activationSwitch": "VqXecW_activationSwitch",
-			"cardDescription": "VqXecW_cardDescription",
-			"iconOnlyButton": "VqXecW_iconOnlyButton"
+			"discoveryGrid": "VqXecW_discoveryGrid",
+			"searchClear": "VqXecW_searchClear",
+			"modalSurface": "VqXecW_modalSurface",
+			"operationMeta": "VqXecW_operationMeta",
+			"notice": "VqXecW_notice",
+			"homeSectionTitle": "VqXecW_homeSectionTitle",
+			"homeCard": "VqXecW_homeCard",
+			"srOnly": "VqXecW_srOnly",
+			"loadMoreHint": "VqXecW_loadMoreHint",
+			"homeCardFooter": "VqXecW_homeCardFooter",
+			"lightbox": "VqXecW_lightbox",
+			"repoLine": "VqXecW_repoLine",
+			"collectionTitle": "VqXecW_collectionTitle",
+			"skinAvatar": "VqXecW_skinAvatar",
+			"catalogHeader": "VqXecW_catalogHeader",
+			"root": "VqXecW_root",
+			"segmented": "VqXecW_segmented",
+			"activationConflictList": "VqXecW_activationConflictList",
+			"manualInstallGuide": "VqXecW_manualInstallGuide",
+			"filterBar": "VqXecW_filterBar",
+			"detail": "VqXecW_detail",
+			"changelog": "VqXecW_changelog",
+			"cardAction": "VqXecW_cardAction",
+			"error": "VqXecW_error"
 		};
 		//#endregion
 		//#region \0dsh-skin-market-css:/Users/leon/Code/liang-intensity-calibrator/code/dsh-skin-market/src/client/media-hover.module.css.mjs
@@ -1025,6 +1025,17 @@ window.__ModuleLoader__.load({
 				"common.licenseNotice": "许可证说明",
 				"common.manualInstallUnavailableDesktop": "无法自动安装：{reason}。",
 				"common.manualInstallUnavailableMarket": "该皮肤暂不支持市场直接安装。",
+				"common.installationUnverifiedTitle": "该皮肤未通过安装前核验",
+				"common.installationUnverifiedUpdateTitle": "该更新未通过安装前核验",
+				"common.installationUnverifiedNoClient": "固定版本的仓库没有提交可读取的客户端入口，市场无法完成静态检查。",
+				"common.installationUnverifiedLoaderShape": "固定版本的插件加载器模块形态与市场预期不一致。",
+				"common.installationUnverifiedKeyedSlot": "固定版本的设置页插槽注册缺少 key，可能导致设置页异常。",
+				"common.installationUnverifiedGeneric": "该条目不满足市场的安装前核验条件。",
+				"common.installationUnverifiedNotice": "该皮肤未通过市场安装前核验：{reason}仍可安装；失败会按现有恢复流程处理。",
+				"common.installationUnverifiedDescription": "原因：{reason}市场将使用固定目标 {target} 安装。完整性校验仍会执行，安装失败会按现有恢复流程处理。",
+				"common.installationUnverifiedUpdateDescription": "原因：{reason}市场会沿用当前安装来源更新；完整性校验仍会执行，失败会按现有恢复流程处理。",
+				"common.stillInstall": "仍然安装",
+				"common.stillUpdate": "仍然更新",
 				"common.installPathCmd": "当前安装路径无法用于 CMD，请切换到 PowerShell 后复制命令。",
 				"common.installPathUnknown": "当前 DSH 目录无法通过终端准确定位，请在市场内安装，或复制提示词检查安装方式。",
 				"common.installCommandUnavailable": "无法为当前环境生成安装命令，请复制提示词检查安装方式。",
@@ -1680,6 +1691,17 @@ window.__ModuleLoader__.load({
 				"common.licenseNotice": "License notice",
 				"common.manualInstallUnavailableDesktop": "Automatic installation is unavailable: {reason}.",
 				"common.manualInstallUnavailableMarket": "This skin cannot be installed directly by Market yet.",
+				"common.installationUnverifiedTitle": "This skin has not passed pre-install verification",
+				"common.installationUnverifiedUpdateTitle": "This update has not passed pre-install verification",
+				"common.installationUnverifiedNoClient": "The pinned repository does not commit a readable client entry, so Market could not complete its static check.",
+				"common.installationUnverifiedLoaderShape": "The pinned version has a plugin-loader module shape that Market does not recognize.",
+				"common.installationUnverifiedKeyedSlot": "The pinned version registers the settings slot without a key, which may break the settings page.",
+				"common.installationUnverifiedGeneric": "This entry does not meet Market’s pre-install verification requirements.",
+				"common.installationUnverifiedNotice": "This skin has not passed Market’s pre-install verification: {reason} You can still install it; failures use the existing recovery flow.",
+				"common.installationUnverifiedDescription": "Reason: {reason} Market will install the pinned target {target}. Integrity checks still run, and failures use the existing recovery flow.",
+				"common.installationUnverifiedUpdateDescription": "Reason: {reason} Market will update from the currently installed source. Integrity checks still run, and failures use the existing recovery flow.",
+				"common.stillInstall": "Install anyway",
+				"common.stillUpdate": "Update anyway",
 				"common.installPathCmd": "This install path cannot be used with CMD. Switch to PowerShell and copy the command.",
 				"common.installPathUnknown": "The current DSH directory cannot be located accurately from the terminal. Install in Market or copy the prompt to inspect the install method.",
 				"common.installCommandUnavailable": "No install command can be generated for this environment. Copy the prompt to inspect the install method.",
@@ -4193,6 +4215,23 @@ window.__ModuleLoader__.load({
 			};
 			return assessCompatibility(skin, runtime, t);
 		}
+		/** Explain a catalog review gap without exposing internal scan codes. */
+		function installationUnverifiedReason(skin, t = defaultTranslator) {
+			const code = skin.health?.scan?.findings?.[0]?.code;
+			if (code === "client-source-unavailable") return t("common.installationUnverifiedNoClient");
+			if (code === "dsh-plugin-loader-module-shape-mismatch") return t("common.installationUnverifiedLoaderShape");
+			if (code === "keyed-slot-missing-key") return t("common.installationUnverifiedKeyedSlot");
+			if (skin.health?.checks?.installation === "improve") return t("common.installationUnverifiedNoClient");
+			return t("common.installationUnverifiedGeneric");
+		}
+		/** The reviewed source the install path will actually try. */
+		function installationTargetLabel(skin) {
+			try {
+				return preferredInstallTarget(skin);
+			} catch {
+				return skin.install.target;
+			}
+		}
 		function displayDate(value, t = defaultTranslator) {
 			return formatDateLabel(value, t);
 		}
@@ -4548,6 +4587,7 @@ window.__ModuleLoader__.load({
 			const [error, setError] = (0, react.useState)(null);
 			const [confirmUninstall, setConfirmUninstall] = (0, react.useState)(false);
 			const [confirmMigration, setConfirmMigration] = (0, react.useState)(null);
+			const [unverifiedInstall, setUnverifiedInstall] = (0, react.useState)(null);
 			const [activationWarningAccepted, setActivationWarningAccepted] = (0, react.useState)(() => {
 				try {
 					return window.localStorage.getItem(ACTIVATION_WARNING_KEY) === "true";
@@ -5662,11 +5702,14 @@ window.__ModuleLoader__.load({
 			const shotCount = selectedScreenshots.length;
 			const state = selected === void 0 ? null : runtimeFor(states, selected.id);
 			const compatibilityUnverified = selected?.review?.compatibility === "unverified";
-			const isManualOnly = (skin) => hostKind === "desktop" ? desktopInstallPlan(skin, officialDesktop).kind === "manual" : skin.review?.installation === "manual-only";
+			const isManualOnly = (skin) => hostKind === "desktop" ? desktopInstallPlan(skin, officialDesktop).kind === "manual" : false;
+			const isInstallationUnverified = (skin) => hostKind === "dsh" && skin.review?.installation === "manual-only";
 			const manualOnly = selected !== void 0 && isManualOnly(selected);
+			const installationUnverified = selected !== void 0 && isInstallationUnverified(selected);
 			const selectedDesktopPlan = selected === void 0 ? void 0 : desktopInstallPlan(selected, officialDesktop);
 			const desktopManualReason = selectedDesktopPlan?.kind === "manual" ? selectedDesktopPlan.reason : void 0;
 			const manualInstallNotice = hostKind === "desktop" ? t("common.manualInstallUnavailableDesktop", { reason: desktopManualReasonLabel(desktopManualReason, t) }) : t("common.manualInstallUnavailableMarket");
+			const installationUnverifiedNotice = selected === void 0 ? "" : t("common.installationUnverifiedNotice", { reason: installationUnverifiedReason(selected, t) });
 			const autoInstallable = !manualOnly;
 			const reportedInstallPlatform = installEnvironment?.platform;
 			const installPlatformUnknown = reportedInstallPlatform === void 0 || reportedInstallPlatform === "unknown";
@@ -6117,6 +6160,14 @@ window.__ModuleLoader__.load({
 							});
 							return false;
 						}
+					}
+					if (starting && hostKind === "dsh" && options.installationAcknowledged !== true && (kind === "install" || kind === "update") && target.review?.installation === "manual-only") {
+						setUnverifiedInstall({
+							skin: target,
+							kind,
+							options
+						});
+						return false;
 					}
 					const stopContinuation = async () => {
 						if (!continuingInstallActivation.current.delete(skinId) || !mounted.current) return;
@@ -6653,17 +6704,32 @@ window.__ModuleLoader__.load({
 				if (selected === void 0) return;
 				activateSkin(selected.id);
 			}, [activateSkin, selected]);
+			const installAndActivateSkin = (0, react.useCallback)(async (skinId, options = {}) => {
+				if (await runForSkin(skinId, "install", void 0, {
+					...options,
+					installAndUse: true
+				}) && mounted.current) activateSkin(skinId, pendingInstallActivation.current.get(skinId));
+			}, [activateSkin, runForSkin]);
 			const installAndActivate = (0, react.useCallback)(async () => {
 				if (selected === void 0) return;
-				if (await runForSkin(selected.id, "install", void 0, { installAndUse: true }) && mounted.current) activateSkin(selected.id, pendingInstallActivation.current.get(selected.id));
-			}, [
-				activateSkin,
-				runForSkin,
-				selected
-			]);
-			const installAndActivateSkin = (0, react.useCallback)(async (skinId) => {
-				if (await runForSkin(skinId, "install", void 0, { installAndUse: true }) && mounted.current) activateSkin(skinId, pendingInstallActivation.current.get(skinId));
-			}, [activateSkin, runForSkin]);
+				await installAndActivateSkin(selected.id);
+			}, [installAndActivateSkin, selected]);
+			const resumeUnverifiedInstall = () => {
+				const pending = unverifiedInstall;
+				setUnverifiedInstall(null);
+				if (pending === null) return;
+				if (pending.kind === "install" && pending.options.installAndUse === true) {
+					installAndActivateSkin(pending.skin.id, {
+						...pending.options,
+						installationAcknowledged: true
+					});
+					return;
+				}
+				runForSkinRef.current(pending.skin.id, pending.kind, void 0, {
+					...pending.options,
+					installationAcknowledged: true
+				});
+			};
 			const restartNow = (0, react.useCallback)(async () => {
 				if (hostKind === "desktop" && !restartAvailable) {
 					setError(t("market.restartDesktop"));
@@ -6798,7 +6864,7 @@ window.__ModuleLoader__.load({
 				const itemState = runtimeFor(states, skin.id);
 				const cardMutation = liveOperationFor(operations, skin.id);
 				const needsInstall = itemState.installation === "missing" || itemState.installation === "broken";
-				const canMigrate = hostKind === "dsh" && itemState.installation === "installed" && itemState.sourceMigration !== void 0 && !isManualOnly(skin);
+				const canMigrate = hostKind === "dsh" && itemState.installation === "installed" && itemState.sourceMigration !== void 0 && !isInstallationUnverified(skin);
 				const installedCard = location === "installed";
 				const pinActionAvailable = installedCard && itemState.installation === "installed" && itemState.activation !== "switching" && (itemState.activation !== "restart-required" || itemState.pinned === true);
 				const updateActionAvailable = installedCard ? itemState.installation === "installed" && itemState.updateAvailable && !isManualOnly(skin) && itemState.activation !== "unavailable" : itemState.installation === "installed" && itemState.updateAvailable && !isManualOnly(skin);
@@ -7138,8 +7204,12 @@ window.__ModuleLoader__.load({
 				}
 			};
 			const waitingOperation = operations.find((operation) => operation.phase === "waiting" && !dismissedNoticeIds.includes(`waiting:${operation.id}`)) ?? (marketOperation?.phase === "waiting" && !dismissedNoticeIds.includes(`waiting:${marketOperation.id}`) ? marketOperation : null);
-			const warningDialog = compatibilityConfirmation !== null ? "use" : confirmUninstall ? "uninstall" : confirmMigration !== null ? "migration" : buildApprovalOperation !== null ? "build" : intercept !== null ? "intercept" : waitingOperation !== null ? "waiting" : confirmRestart ? "restart" : null;
+			const warningDialog = compatibilityConfirmation !== null ? "use" : confirmUninstall ? "uninstall" : confirmMigration !== null ? "migration" : unverifiedInstall !== null ? "installation" : buildApprovalOperation !== null ? "build" : intercept !== null ? "intercept" : waitingOperation !== null ? "waiting" : confirmRestart ? "restart" : null;
 			const buildApprovalTargets = buildApprovalOperation?.failure?.buildKeys?.join("、") || buildApprovalOperation?.failure?.packageName;
+			const unverifiedInstallDescription = unverifiedInstall === null ? void 0 : unverifiedInstall.kind === "update" ? t("common.installationUnverifiedUpdateDescription", { reason: installationUnverifiedReason(unverifiedInstall.skin, t) }) : t("common.installationUnverifiedDescription", {
+				reason: installationUnverifiedReason(unverifiedInstall.skin, t),
+				target: installationTargetLabel(unverifiedInstall.skin)
+			});
 			const selectedBusy = selected === void 0 ? void 0 : liveOperationFor(operations, selected.id);
 			const selectedInstallAndUsePending = selected !== void 0 && continuingInstallActivation.current.has(selected.id);
 			const activationDialogConflicts = compatibilityConfirmation?.kind === "activate" ? compatibilityConfirmation.conflicts ?? [] : [];
@@ -7932,7 +8002,7 @@ window.__ModuleLoader__.load({
 													onClick: () => void run("update"),
 													children: t("common.updateAction")
 												}),
-												hostKind === "dsh" && state.installation === "installed" && state.sourceMigration !== void 0 && !manualOnly && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+												hostKind === "dsh" && state.installation === "installed" && state.sourceMigration !== void 0 && !installationUnverified && /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
 													variant: "outline",
 													size: "sm",
 													disabled: selectedBusy !== void 0 || actionReason("migrate") !== null,
@@ -8068,6 +8138,10 @@ window.__ModuleLoader__.load({
 												manualOnly && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
 													className: SkinMarket_module_css_default.notice,
 													children: manualInstallNotice
+												}),
+												installationUnverified && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+													className: SkinMarket_module_css_default.notice,
+													children: installationUnverifiedNotice
 												}),
 												selected.review?.preview === "repository-card" && !selected.marketScreenshots?.length && /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
 													className: SkinMarket_module_css_default.notice,
@@ -8223,6 +8297,25 @@ window.__ModuleLoader__.load({
 								run("uninstall");
 							},
 							children: t("common.confirmUninstall")
+						})] })
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Modal, {
+						open: warningDialog === "installation",
+						onClose: () => setUnverifiedInstall(null),
+						title: t(unverifiedInstall?.kind === "update" ? "common.installationUnverifiedUpdateTitle" : "common.installationUnverifiedTitle"),
+						closeLabel: t("common.close"),
+						className: SkinMarket_module_css_default.warningModal,
+						description: unverifiedInstallDescription,
+						footer: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+							variant: "outline",
+							size: "sm",
+							onClick: () => setUnverifiedInstall(null),
+							children: t("common.cancel")
+						}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Button, {
+							variant: "primary",
+							size: "sm",
+							onClick: resumeUnverifiedInstall,
+							children: t(unverifiedInstall?.kind === "update" ? "common.stillUpdate" : "common.stillInstall")
 						})] })
 					}),
 					/* @__PURE__ */ (0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.Modal, {

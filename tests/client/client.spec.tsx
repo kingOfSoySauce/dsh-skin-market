@@ -2046,8 +2046,9 @@ describe('client market', () => {
     vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [manual] } : { skins: [] } })))
     render(<SkinMarketSection t={key => key} />)
 
-    fireEvent.click(await screen.findByRole('button', { name: '安装' }))
-    const dialog = screen.getByRole('dialog', { name: '安装 测试皮肤' })
+    await openSkinCard()
+    fireEvent.click(screen.getByRole('button', { name: '其他安装方式' }))
+    const dialog = await screen.findByRole('dialog', { name: '安装 测试皮肤' })
     expect(dialog.textContent).toContain('提示词')
     expect(dialog.textContent).toContain('命令')
     expect(dialog.textContent).not.toContain('也可自行打开「插件 → 添加插件」，输入：')
@@ -4934,21 +4935,59 @@ describe('client market', () => {
     expect(image.getAttribute('src')).toBe(secondPreview)
   })
 
-  it('sends verified client-only skins to their manual installation guide', async () => {
-    const manual = { ...skin, review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'manual-only' as const } }
-    const open = vi.fn()
-    vi.stubGlobal('open', open)
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [manual] } : { skins: [] } }))
+  it('warns before automatically installing a manual-only web skin', async () => {
+    const manual = {
+      ...skin,
+      review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'manual-only' as const },
+      health: {
+        status: 'improvements' as const,
+        checks: { readmeScreenshots: 'pass' as const, compatibility: 'pass' as const, installation: 'improve' as const },
+        suggestions: [],
+        scan: {
+          commit: skin.install.commit, packageVersion: skin.install.version, scannerVersion: 'static-v2', mode: 'static' as const,
+          result: 'unknown' as const, checkedAt: '2026-11-08T00:00:00.000Z',
+          findings: [{ code: 'client-source-unavailable', message: '无法读取固定版本的 client 入口，静态扫描结果未知。' }],
+        },
+      },
+    }
+    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [manual] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runtime: dshRuntime, skins: [] }) }
+      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'manual-install' }) }
+      if (url.endsWith('/operations/manual-install')) return { ok: true, json: async () => ({ id: 'manual-install', kind: 'install', skinId: manual.id, phase: 'done' }) }
+      return { ok: true, json: async () => ({}) }
+    })
     vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
-    fireEvent.click(within(screen.getByRole('main', { name: '皮肤详情内容' })).getByRole('button', { name: '安装' }))
-    expect(screen.getByRole('dialog', { name: '安装 测试皮肤' })).toBeTruthy()
-    expect(screen.queryByRole('button', { name: '打开安装页面' })).toBeNull()
-    expect(open).not.toHaveBeenCalled()
+    fireEvent.click(within(screen.getByRole('main', { name: '皮肤详情内容' })).getByRole('button', { name: '仅安装' }))
+    const dialog = await screen.findByRole('dialog', { name: '该皮肤未通过安装前核验' })
+    expect(dialog.textContent).toContain('固定版本的仓库没有提交可读取的客户端入口')
+    expect(dialog.textContent).toContain(manual.install.target)
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/install'))).toBe(false)
-    expect(screen.getByText('该皮肤暂不支持市场直接安装。')).toBeTruthy()
+
+    fireEvent.click(within(dialog).getByRole('button', { name: '仍然安装' }))
+    await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/install') && init?.method === 'POST')).toBe(true))
+  })
+
+  it('warns before updating a manual-only web skin and keeps the update entry visible', async () => {
+    const manual = { ...skin, review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'manual-only' as const } }
+    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [manual] }) }
+      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runtime: dshRuntime, skins: [{ skinId: manual.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }] }) }
+      if (url.endsWith('/update') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'manual-update' }) }
+      if (url.endsWith('/operations/manual-update')) return { ok: true, json: async () => ({ id: 'manual-update', kind: 'update', skinId: manual.id, phase: 'done' }) }
+      return { ok: true, json: async () => ({}) }
+    })
+    vi.stubGlobal('fetch', fetchMock)
+    render(<SkinMarketSection t={key => key} />)
+
+    await openSkinCard()
+    fireEvent.click(within(screen.getByRole('main', { name: '皮肤详情内容' })).getByRole('button', { name: '更新' }))
+    const dialog = await screen.findByRole('dialog', { name: '该更新未通过安装前核验' })
+    fireEvent.click(within(dialog).getByRole('button', { name: '仍然更新' }))
+    await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/update') && init?.method === 'POST')).toBe(true))
   })
 
   it('does not expose repository health checks in skin details', async () => {

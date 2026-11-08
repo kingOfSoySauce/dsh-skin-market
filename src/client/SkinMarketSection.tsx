@@ -233,6 +233,7 @@ interface SkinOperationOptions {
   selectionContext?: string
   sourceContext?: string
   installAndUse?: boolean
+  installationAcknowledged?: boolean
   cancelled?: () => boolean
   onHandled?: () => void
 }
@@ -759,6 +760,21 @@ function installCompatibility(skin: CatalogSkin, hostKind: MarketHostKind, runti
   return assessCompatibility(skin, runtime, t)
 }
 
+/** Explain a catalog review gap without exposing internal scan codes. */
+function installationUnverifiedReason(skin: CatalogSkin, t: Translator = defaultTranslator): string {
+  const code = skin.health?.scan?.findings?.[0]?.code
+  if (code === 'client-source-unavailable') return t('common.installationUnverifiedNoClient')
+  if (code === 'dsh-plugin-loader-module-shape-mismatch') return t('common.installationUnverifiedLoaderShape')
+  if (code === 'keyed-slot-missing-key') return t('common.installationUnverifiedKeyedSlot')
+  if (skin.health?.checks?.installation === 'improve') return t('common.installationUnverifiedNoClient')
+  return t('common.installationUnverifiedGeneric')
+}
+
+/** The reviewed source the install path will actually try. */
+function installationTargetLabel(skin: CatalogSkin): string {
+  try { return preferredInstallTarget(skin) } catch { return skin.install.target }
+}
+
 function displayDate(value: string, t: Translator = defaultTranslator): string {
   return formatDateLabel(value, t)
 }
@@ -1023,6 +1039,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const [error, setError] = useState<string | null>(null)
   const [confirmUninstall, setConfirmUninstall] = useState(false)
   const [confirmMigration, setConfirmMigration] = useState<{ skin: CatalogSkin; source: NonNullable<RuntimeSkin['sourceMigration']>; changed?: boolean } | null>(null)
+  const [unverifiedInstall, setUnverifiedInstall] = useState<{ skin: CatalogSkin; kind: 'install' | 'update'; options: SkinOperationOptions } | null>(null)
   const [activationWarningAccepted, setActivationWarningAccepted] = useState(() => {
     try { return window.localStorage.getItem(ACTIVATION_WARNING_KEY) === 'true' } catch { return false }
   })
@@ -1946,15 +1963,23 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const shotCount = selectedScreenshots.length
   const state = selected === undefined ? null : runtimeFor(states, selected.id)
   const compatibilityUnverified = selected?.review?.compatibility === 'unverified'
+  // Catalog review is a warning on Web, not a capability gate. Desktop still
+  // uses its host-specific install plan because some sources cannot be managed.
   const isManualOnly = (skin: CatalogSkin): boolean => hostKind === 'desktop'
     ? desktopInstallPlan(skin, officialDesktop).kind === 'manual'
-    : skin.review?.installation === 'manual-only'
+    : false
+  const isInstallationUnverified = (skin: CatalogSkin): boolean => hostKind === 'dsh'
+    && skin.review?.installation === 'manual-only'
   const manualOnly = selected !== undefined && isManualOnly(selected)
+  const installationUnverified = selected !== undefined && isInstallationUnverified(selected)
   const selectedDesktopPlan = selected === undefined ? undefined : desktopInstallPlan(selected, officialDesktop)
   const desktopManualReason = selectedDesktopPlan?.kind === 'manual' ? selectedDesktopPlan.reason : undefined
   const manualInstallNotice = hostKind === 'desktop'
     ? t('common.manualInstallUnavailableDesktop', { reason: desktopManualReasonLabel(desktopManualReason, t) })
     : t('common.manualInstallUnavailableMarket')
+  const installationUnverifiedNotice = selected === undefined ? '' : t('common.installationUnverifiedNotice', {
+    reason: installationUnverifiedReason(selected, t),
+  })
   const autoInstallable = !manualOnly
   const reportedInstallPlatform = installEnvironment?.platform
   const installPlatformUnknown = reportedInstallPlatform === undefined || reportedInstallPlatform === 'unknown'
@@ -2271,6 +2296,13 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           setConfirmMigration({ skin: target, source })
           return false
         }
+      }
+      // A catalog review gap is acknowledged once per attempt. The operation
+      // still runs through the normal prefetch, validation and rollback path.
+      if (starting && hostKind === 'dsh' && options.installationAcknowledged !== true
+        && (kind === 'install' || kind === 'update') && target.review?.installation === 'manual-only') {
+        setUnverifiedInstall({ skin: target, kind, options })
+        return false
       }
       const stopContinuation = async () => {
         if (!continuingInstallActivation.current.delete(skinId) || !mounted.current) return
@@ -2707,14 +2739,25 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     activateSkin(selected.id)
   }, [activateSkin, selected])
 
+  const installAndActivateSkin = useCallback(async (skinId: string, options: SkinOperationOptions = {}) => {
+    if (await runForSkin(skinId, 'install', undefined, { ...options, installAndUse: true }) && mounted.current) activateSkin(skinId, pendingInstallActivation.current.get(skinId))
+  }, [activateSkin, runForSkin])
+
   const installAndActivate = useCallback(async () => {
     if (selected === undefined) return
-    if (await runForSkin(selected.id, 'install', undefined, { installAndUse: true }) && mounted.current) activateSkin(selected.id, pendingInstallActivation.current.get(selected.id))
-  }, [activateSkin, runForSkin, selected])
+    await installAndActivateSkin(selected.id)
+  }, [installAndActivateSkin, selected])
 
-  const installAndActivateSkin = useCallback(async (skinId: string) => {
-    if (await runForSkin(skinId, 'install', undefined, { installAndUse: true }) && mounted.current) activateSkin(skinId, pendingInstallActivation.current.get(skinId))
-  }, [activateSkin, runForSkin])
+  const resumeUnverifiedInstall = () => {
+    const pending = unverifiedInstall
+    setUnverifiedInstall(null)
+    if (pending === null) return
+    if (pending.kind === 'install' && pending.options.installAndUse === true) {
+      void installAndActivateSkin(pending.skin.id, { ...pending.options, installationAcknowledged: true })
+      return
+    }
+    void runForSkinRef.current(pending.skin.id, pending.kind, undefined, { ...pending.options, installationAcknowledged: true })
+  }
 
   const restartNow = useCallback(async () => {
     if (hostKind === 'desktop' && !restartAvailable) {
@@ -2835,7 +2878,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     const itemState = runtimeFor(states, skin.id)
     const cardMutation = liveOperationFor(operations, skin.id)
     const needsInstall = itemState.installation === 'missing' || itemState.installation === 'broken'
-    const canMigrate = hostKind === 'dsh' && itemState.installation === 'installed' && itemState.sourceMigration !== undefined && !isManualOnly(skin)
+    const canMigrate = hostKind === 'dsh' && itemState.installation === 'installed' && itemState.sourceMigration !== undefined && !isInstallationUnverified(skin)
     const installedCard = location === 'installed'
     const pinActionAvailable = installedCard && itemState.installation === 'installed'
       && itemState.activation !== 'switching' && (itemState.activation !== 'restart-required' || itemState.pinned === true)
@@ -3032,11 +3075,18 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const warningDialog = compatibilityConfirmation !== null ? 'use'
     : confirmUninstall ? 'uninstall'
       : confirmMigration !== null ? 'migration'
-        : buildApprovalOperation !== null ? 'build'
-          : intercept !== null ? 'intercept'
-            : waitingOperation !== null ? 'waiting'
-              : confirmRestart ? 'restart' : null
+        : unverifiedInstall !== null ? 'installation'
+          : buildApprovalOperation !== null ? 'build'
+            : intercept !== null ? 'intercept'
+              : waitingOperation !== null ? 'waiting'
+                : confirmRestart ? 'restart' : null
   const buildApprovalTargets = buildApprovalOperation?.failure?.buildKeys?.join('、') || buildApprovalOperation?.failure?.packageName
+  const unverifiedInstallDescription = unverifiedInstall === null ? undefined : unverifiedInstall.kind === 'update'
+    ? t('common.installationUnverifiedUpdateDescription', { reason: installationUnverifiedReason(unverifiedInstall.skin, t) })
+    : t('common.installationUnverifiedDescription', {
+      reason: installationUnverifiedReason(unverifiedInstall.skin, t),
+      target: installationTargetLabel(unverifiedInstall.skin),
+    })
   const selectedBusy = selected === undefined ? undefined : liveOperationFor(operations, selected.id)
   const selectedInstallAndUsePending = selected !== undefined && continuingInstallActivation.current.has(selected.id)
   const activationDialogConflicts = compatibilityConfirmation?.kind === 'activate' ? compatibilityConfirmation.conflicts ?? [] : []
@@ -3401,7 +3451,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
               {state.activation === 'active' && <Button className={css.pinAction} variant="outline" size="sm" aria-pressed={state.pinned === true} title={actionReason(state.pinned ? 'unpin' : 'pin') ?? (state.pinned ? t('common.unpinDescription') : t('common.pinDescriptionActive'))} disabled={selectedBusy !== undefined || actionReason(state.pinned ? 'unpin' : 'pin') !== null} onClick={() => { void run(state.pinned ? 'unpin' : 'pin') }}>{state.pinned ? t('common.unpin') : t('common.pinUse')}</Button>}
               {state.activation === 'restart-required' && state.pinned && <Button className={css.pinAction} variant="outline" size="sm" aria-pressed="true" title={actionReason('unpin') ?? t('common.unpinRestartDescription')} disabled={selectedBusy !== undefined || actionReason('unpin') !== null} onClick={() => void run('unpin')}>{t('common.unpin')}</Button>}
               {state.updateAvailable && !manualOnly && <Button variant={state.activation === 'active' && !state.pinned ? 'primary' : 'outline'} size="sm" icon={<IconRefreshOutline />} disabled={selectedBusy !== undefined || actionReason('update') !== null} title={actionReason('update') ?? undefined} onClick={() => void run('update')}>{t('common.updateAction')}</Button>}
-              {hostKind === 'dsh' && state.installation === 'installed' && state.sourceMigration !== undefined && !manualOnly && <Button variant="outline" size="sm" disabled={selectedBusy !== undefined || actionReason('migrate') !== null} title={actionReason('migrate') ?? undefined} onClick={() => setConfirmMigration({ skin: selected, source: state.sourceMigration! })}>{state.sourceMigration.kind === 'local' ? t('common.replaceWithMarket') : t('common.useNpm')}</Button>}
+              {hostKind === 'dsh' && state.installation === 'installed' && state.sourceMigration !== undefined && !installationUnverified && <Button variant="outline" size="sm" disabled={selectedBusy !== undefined || actionReason('migrate') !== null} title={actionReason('migrate') ?? undefined} onClick={() => setConfirmMigration({ skin: selected, source: state.sourceMigration! })}>{state.sourceMigration.kind === 'local' ? t('common.replaceWithMarket') : t('common.useNpm')}</Button>}
               {state.installation !== 'missing' && <Button className={css.iconOnlyButton} variant="outline" size="sm" icon={<IconTrashOutline />} aria-label={t('common.uninstall')} title={actionReason('uninstall') ?? t('common.uninstall')} disabled={selectedBusy !== undefined || actionReason('uninstall') !== null} onClick={() => setConfirmUninstall(true)} />}
           </div>
 
@@ -3427,7 +3477,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           </div>
 
           <div className={css.aboutGrid}>
-            <article><h3>{t('common.aboutSkin')}</h3><p>{selectedDescription}</p><div className={css.tags}>{selected.tags.map(tag => <Pill key={tag}>{tag}</Pill>)}</div><dl className={css.metadata}><div><dt>{t('common.license')}</dt><dd>{selected.license.code}</dd></div><div><dt>{t('common.commercialUse')}</dt><dd>{selected.license.commercialUse ? t('common.licenseAllowed') : t('common.notAuthorized')}</dd></div><div><dt>{t('common.modes')}</dt><dd>{selected.modes.join(' / ')}</dd></div></dl>{manualOnly && <p className={css.notice}>{manualInstallNotice}</p>}{selected.review?.preview === 'repository-card' && !(selected.marketScreenshots?.length) && <p className={css.notice}>{t('common.noRepositoryScreenshot')}</p>}{usesMarketScreenshots(selected) && <p className={css.notice}>{t('common.marketScreenshotNotice')}</p>}{selected.license.notice && <p className={css.notice}>{selected.license.notice}</p>}</article>
+            <article><h3>{t('common.aboutSkin')}</h3><p>{selectedDescription}</p><div className={css.tags}>{selected.tags.map(tag => <Pill key={tag}>{tag}</Pill>)}</div><dl className={css.metadata}><div><dt>{t('common.license')}</dt><dd>{selected.license.code}</dd></div><div><dt>{t('common.commercialUse')}</dt><dd>{selected.license.commercialUse ? t('common.licenseAllowed') : t('common.notAuthorized')}</dd></div><div><dt>{t('common.modes')}</dt><dd>{selected.modes.join(' / ')}</dd></div></dl>{manualOnly && <p className={css.notice}>{manualInstallNotice}</p>}{installationUnverified && <p className={css.notice}>{installationUnverifiedNotice}</p>}{selected.review?.preview === 'repository-card' && !(selected.marketScreenshots?.length) && <p className={css.notice}>{t('common.noRepositoryScreenshot')}</p>}{usesMarketScreenshots(selected) && <p className={css.notice}>{t('common.marketScreenshotNotice')}</p>}{selected.license.notice && <p className={css.notice}>{selected.license.notice}</p>}</article>
             <aside className={css.changelog}><h3>{t('common.collectionInfo')}</h3><ol><li><strong>{selected.install.version}</strong><span>{t('common.updatedAt', { date: displayDate(selected.releaseUpdatedAt, t) })}</span></li><li><strong>Stars</strong><span>{t('common.starsUpdatedAt', { count: selected.githubStars, date: displayDate(selected.starsUpdatedAt, t) })}</span></li><li><strong>{t('common.compatibility')}</strong><span>{compatibilityUnverified ? t('common.waitingCompatibility') : t('common.supportsDsh', { range: selected.compatibility.dsh })}</span></li></ol><a href={selected.repo} target="_blank" rel="noreferrer">{t('common.repositoryDetails')}</a></aside>
           </div>
 
@@ -3456,6 +3506,15 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         footer={<><Button variant="outline" size="sm" onClick={() => { if (buildApprovalOperation !== null) dismissNotice(`failed:${buildApprovalOperation.id}`) }}>{t('common.cancel')}</Button><Button variant="primary" size="sm" onClick={approveBuildAndRetry}>{t('common.allowAndRetry')}</Button></>}
       />
       <Modal open={warningDialog === 'uninstall'} onClose={() => setConfirmUninstall(false)} title={t('common.uninstallSkin')} closeLabel={t('common.close')} className={css.warningModal} description={t('common.uninstallDescription', { action: state?.activation === 'active' ? t('common.disableAnd') : '', name: `「${selected?.name.zh ?? t('common.currentSkin')}」` })} footer={<><Button variant="outline" size="sm" onClick={() => setConfirmUninstall(false)}>{t('common.cancel')}</Button><Button variant="primary" size="sm" onClick={() => { setConfirmUninstall(false); void run('uninstall') }}>{t('common.confirmUninstall')}</Button></>} />
+      <Modal
+        open={warningDialog === 'installation'}
+        onClose={() => setUnverifiedInstall(null)}
+        title={t(unverifiedInstall?.kind === 'update' ? 'common.installationUnverifiedUpdateTitle' : 'common.installationUnverifiedTitle')}
+        closeLabel={t('common.close')}
+        className={css.warningModal}
+        description={unverifiedInstallDescription}
+        footer={<><Button variant="outline" size="sm" onClick={() => setUnverifiedInstall(null)}>{t('common.cancel')}</Button><Button variant="primary" size="sm" onClick={resumeUnverifiedInstall}>{t(unverifiedInstall?.kind === 'update' ? 'common.stillUpdate' : 'common.stillInstall')}</Button></>}
+      />
       <Modal
         open={warningDialog === 'migration'}
         onClose={() => setConfirmMigration(null)}
