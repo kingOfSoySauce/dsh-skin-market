@@ -166,8 +166,6 @@
   border-radius: var(--dsw-radius-xl);
   overflow: hidden;
   background: var(--dsw-alias-bg-layer-1);
-  -webkit-backdrop-filter: var(--dsw-menu-backdrop-filter, none);
-  backdrop-filter: var(--dsw-menu-backdrop-filter, none);
   font: inherit;
   transition: border-color var(--ds-transition-duration) var(--ds-ease-in-out), background var(--ds-transition-duration) var(--ds-ease-in-out);
 }
