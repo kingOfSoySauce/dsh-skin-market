@@ -1812,10 +1812,10 @@ describe('client market', () => {
     fireEvent.click(await screen.findByRole('button', { name: '安装' }))
     const failure = await screen.findByRole('dialog', { name: '启用未完成' })
     if (application === 'overridden') {
-      expect(failure.textContent).toContain('检查覆盖来源')
+      expect(failure.textContent).toContain('核对覆盖来源')
       expect(failure.textContent).not.toContain('重启无法')
     } else {
-      expect(failure.textContent).toContain('未能完成本次操作。请复制日志反馈。')
+      expect(failure.textContent).toContain('未能完成本次操作。请复制日志反馈给市场维护者。')
       expect(failure.textContent).not.toContain(message)
     }
     expect(screen.queryByRole('dialog', { name: '请手动重启 Desktop App' })).toBeNull()
@@ -3904,12 +3904,12 @@ describe('client market', () => {
     await waitFor(() => expect(screen.getByRole('status').textContent).toContain('正在下载“测试皮肤”'))
     expect(within(screen.getByRole('status')).getByTitle(/^耗时 /).textContent).toMatch(/^\d+ 秒$/)
     const dialog = await screen.findByRole('dialog', { name: '安装未完成' }, { timeout: 2_000 })
-    expect(dialog.textContent).toContain('未能完成本次操作。请复制日志反馈。')
+    expect(dialog.textContent).toContain('未能完成本次操作。请复制日志反馈给市场维护者。')
     expect(dialog.textContent).not.toContain('GitHub 插件下载超时')
     expect(screen.queryByRole('status')).toBeNull()
     expect(screen.queryByRole('alert')).toBeNull()
     window.dispatchEvent(new Event('focus'))
-    expect(screen.getByRole('dialog', { name: '安装未完成' }).textContent).toContain('未能完成本次操作。请复制日志反馈。')
+    expect(screen.getByRole('dialog', { name: '安装未完成' }).textContent).toContain('未能完成本次操作。请复制日志反馈给市场维护者。')
   })
 
   it('discloses command diagnostics, expires stale speed on its tick, and lets a running install copy its log', async () => {
@@ -4120,7 +4120,7 @@ describe('client market', () => {
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
 
     const dialog = await screen.findByRole('dialog', { name: '安装未完成' })
-    expect(dialog.textContent).toContain('未能完成本次操作。请复制日志反馈。')
+    expect(dialog.textContent).toContain('未能完成本次操作。请复制日志反馈给市场维护者。')
     expect(dialog.textContent).not.toContain(longMessage)
     expect(dialog.querySelector('details, code, ul, ol')).toBeNull()
     expect(dialog.className).toContain('warningModal')
@@ -4443,7 +4443,7 @@ describe('client market', () => {
     fireEvent.click(await screen.findByRole('button', { name: '安装并使用' }))
     const dialog = await screen.findByRole('dialog', { name: '安装需要确认安装包风险' })
     fireEvent.click(within(dialog).getByRole('button', { name: '仍然继续' }))
-    await waitFor(() => expect(within(dialog).getByRole('alert').textContent).toBe('未能继续操作，请复制日志反馈。'))
+    await waitFor(() => expect(within(dialog).getByRole('alert').textContent).toBe('操作未完成，请重试；仍失败请复制日志反馈。'))
     expect(dialog.textContent).not.toContain('实际构件已变化')
     expect(retries).toBe(1)
     expect(screen.getByRole('dialog', { name: '安装需要确认安装包风险' })).toBe(dialog)

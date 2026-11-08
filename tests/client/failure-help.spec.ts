@@ -174,7 +174,7 @@ describe('failure help', () => {
   it('sends catalog mismatches to market maintainers and preserves precise host recovery actions', () => {
     const mismatch = interceptNotice(failed('command', '目录元数据与包实际声明不一致'), skin.name.zh, skin)
     expect(mismatch.links).toEqual([{ href: MARKET_REPORT_URL, label: '反馈市场问题' }])
-    for (const [code, next] of [['stop-profile', '重试卸载'], ['unknown-plugin', '刷新官方插件页'], ['unaddressable', '组件标识'], ['management-required', '宿主支持的管理入口']] as const) {
+    for (const [code, next] of [['stop-profile', '重试卸载'], ['unknown-plugin', '刷新官方插件页'], ['unaddressable', '组件标识'], ['management-required', '官方插件页手动完成']] as const) {
       const operation = failed('command', 'host failure', { failure: { kind: 'command', message: 'host failure', code } })
       const notice = interceptNotice(operation, skin.name.zh, skin)
       expect(notice.why).toContain(next)
@@ -221,7 +221,7 @@ describe('failure help', () => {
     const notice = marketUpdateNotice({
       failure: { kind: 'command', code: 'already-installed', message: '自动替换未完成', manualSpec: spec },
     })
-    expect(notice.what).toBe('自动替换未完成。')
+    expect(notice.what).toBe('当前安装不能直接覆盖，需要手动替换。')
     expect(notice.why).toBe(`请在官方插件页先卸载当前包，再添加 ${spec}。`)
     expect(notice.copySpec).toBe(spec)
     expect(interceptNotice(failed('command', '宿主拒绝安装', { failure: { kind: 'command', message: '宿主拒绝安装', manualSpec: 'dsh-test@1.1.0' } }), '测试皮肤').copySpec).toBe('dsh-test@1.1.0')
@@ -286,17 +286,17 @@ describe('failure help', () => {
 
   it('keeps long or unknown diagnostics in logs and shows one short next step', () => {
     const long = `Error: ${'x'.repeat(1_000)}\n${'at installer\n'.repeat(20)}`
-    expect(interceptNotice(failed('command', long), '测试皮肤').why).toBe('请复制日志反馈。')
+    expect(interceptNotice(failed('command', long), '测试皮肤').why).toBe('请复制日志反馈给市场维护者。')
     const override = '启停设置已保存，但被其他配置覆盖，尚未生效'
-    expect(interceptNotice(failed('command', override), '测试皮肤').why).toBe('请复制日志反馈。')
+    expect(interceptNotice(failed('command', override), '测试皮肤').why).toBe('请复制日志反馈给市场维护者。')
     const exportWithoutError = '# dsh-skin-market diagnostic log\nversion: 0.1.60\noperationId: test\n[info] operation: install example'
-    expect(interceptNotice(failed('command', exportWithoutError), '测试皮肤').why).toBe('请复制日志反馈。')
+    expect(interceptNotice(failed('command', exportWithoutError), '测试皮肤').why).toBe('请复制日志反馈给市场维护者。')
   })
 
   it('gives an overridden enablement one concise action instead of repeated restart advice', () => {
     const notice = interceptNotice(failed('command', '目标组件被更高优先级配置停用；重复重启无效。', { kind: 'activate', application: 'overridden' }), '龙之继承者', skin)
     expect(notice.what).toBe('「龙之继承者」被其他设置禁用。')
-    expect(notice.why).toContain('检查覆盖来源')
+    expect(notice.why).toContain('核对覆盖来源')
     expect(notice.links).toEqual([])
     expect(`${notice.what}${notice.why}`).not.toMatch(/重启|profile|已停止/)
     const disable = interceptNotice(failed('command', '启停被覆盖', { kind: 'deactivate', application: 'overridden' }), '龙之继承者', skin)
@@ -357,7 +357,7 @@ describe('failure help', () => {
 
   it.each([
     ['conflict', '发现插件安装冲突：RAW_DIAGNOSTIC_MARKER', '与已安装插件冲突', '仅停用未必能解除安装冲突'],
-    ['command', '市场目录元数据与包实际声明不一致：RAW_DIAGNOSTIC_MARKER', '安装信息与安装包不一致', '反馈市场维护者'],
+    ['command', '市场目录元数据与包实际声明不一致：RAW_DIAGNOSTIC_MARKER', '安装信息与安装包不一致', '反馈市场问题'],
     ['disk-full', 'ENOSPC RAW_DIAGNOSTIC_MARKER', '磁盘空间不足', '释放空间'],
     ['permission', 'EACCES RAW_DIAGNOSTIC_MARKER', '应用无权写入安装目录', '检查目录权限'],
     ['command', '官方管理操作后构件与原有版本不一致 RAW_DIAGNOSTIC_MARKER', '插件状态尚未确认', '核对实际状态'],

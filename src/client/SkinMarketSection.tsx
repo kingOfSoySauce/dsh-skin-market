@@ -3027,6 +3027,10 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         : failure === undefined ? t('common.manualInstallInput') : undefined
     return [failure, input].filter(Boolean).join('')
   })()
+  const manualPanelName = selected?.name.zh ?? t('common.skin')
+  const manualPanelTitle = recoveryOperation?.kind === 'update' ? t('common.updateSkinTitle', { name: manualPanelName })
+    : recoveryOperation?.kind === 'migrate' ? t('common.migrateSkinTitle', { name: manualPanelName })
+      : t('common.installSkinTitle', { name: manualPanelName })
   const closeManualPanel = () => {
     setShowInstallOptions(false)
     if (manualRecovery === null) return
@@ -3709,7 +3713,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       <Modal
         open={showInstallOptions || manualRecovery !== null}
         onClose={closeManualPanel}
-        title={t('common.installSkinTitle', { name: selected?.name.zh ?? t('common.skin') })}
+        title={manualPanelTitle}
         closeLabel={t('common.close')}
         className={css.modalSurface}
         description={manualPanelDescription}
