@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T15:39:09.574Z",
+  "generatedAt": "2026-11-08T17:48:03.455Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -43162,6 +43162,106 @@
       "metadataUpdatedAt": "2026-11-08T00:11:23.006Z",
       "starsUpdatedAt": "2026-11-08T00:11:23.006Z",
       "updatedAt": "2026-11-08T00:11:23.006Z"
+    },
+    {
+      "id": "ririko2.lllj.dsh.skin",
+      "name": {
+        "zh": "柠檬水工厂 · 昼夜双模",
+        "en": "LimeLight Lemonade Jam"
+      },
+      "author": "Ririko2",
+      "description": "《ライムライト・レモネードジャム》主题：纸白/深蓝昼夜双模，六位角色按会话分配，官方 SD 头像与贴纸、游戏原文台词完成卡，四套随机分割线。",
+      "repo": "https://github.com/Ririko2/lllj-dsh-skin",
+      "package": "dsh-skin-lllj",
+      "rowId": "lllj-skin",
+      "category": "skin",
+      "tags": [
+        "appearance"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Ririko2/lllj-dsh-skin#4e874a46284a6c045a533072148969252fd5a01d",
+        "version": "0.7.4",
+        "commit": "4e874a46284a6c045a533072148969252fd5a01d"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/empty-day.png",
+        "https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/empty-night.png",
+        "https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/chat-day.png",
+        "https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/chat-anju.png",
+        "https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/empty-day-group.png",
+        "https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/chat-ririko.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 1,
+      "releaseUpdatedAt": "2026-11-08T17:48:02.165Z",
+      "metadataUpdatedAt": "2026-11-08T17:48:02.165Z",
+      "starsUpdatedAt": "2026-11-08T17:48:02.165Z",
+      "updatedAt": "2026-11-08T17:48:02.165Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ddbefda47ae930f49b8cf61baa665113.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ddbefda47ae930f49b8cf61baa665113.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ddbefda47ae930f49b8cf61baa665113.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ddbefda47ae930f49b8cf61baa665113.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f811b0826fff72ae46c721281eea8b11.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f811b0826fff72ae46c721281eea8b11.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0d5b7f46d545f15930be649bf5c5e0b7.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0d5b7f46d545f15930be649bf5c5e0b7.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5fb1154f3513491fc3383402b125c2bd.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5fb1154f3513491fc3383402b125c2bd.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e9be056643a51e3378a2d3709274193d.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e9be056643a51e3378a2d3709274193d.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d98942a01f28c50be43bfa4575fa98af.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d98942a01f28c50be43bfa4575fa98af.full.webp"
+          }
+        ]
+      }
     },
     {
       "id": "rz-0410.dsh-theme-quartet",
