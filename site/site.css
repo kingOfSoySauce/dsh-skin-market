@@ -128,7 +128,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .topbar-main { display: flex; width: 100%; min-height: 68px; align-items: center; justify-content: space-between; gap: 24px; }
 .topbar > .feed-section-title { width: 100%; flex: none; margin-bottom: 0; padding-bottom: 10px; }
 .brand { display: inline-flex; align-items: center; gap: 11px; color: inherit; text-decoration: none; }
-.brand-mark { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid var(--border-strong); border-radius: var(--dsw-radius-md); background: var(--surface-2); font-size: 10px; font-weight: 750; letter-spacing: .08em; }
+.brand-mark { display: block; width: 34px; height: 34px; flex: none; color: var(--text); }
 .brand > span:last-child { display: grid; }
 .brand strong { font-size: 15px; line-height: 20px; }
 .brand small { color: var(--caption); font-size: 11px; line-height: 15px; }

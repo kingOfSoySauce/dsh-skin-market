@@ -118,6 +118,18 @@ function StarSpark({ values, from, live, title, language }: { values: number[] |
   </figure>
 }
 
+const BRAND_MARK_BACK = 'M190.1 167.0L194.4 166.2L198.9 163.6L201.7 160.3L203.4 155.3L203.5 86.7L228.0 86.6L232.7 83.9L233.8 81.4L237.2 60.1L236.0 54.7L232.7 50.3L228.0 47.5L189.3 35.1L185.0 37.6L180.4 47.7L174.5 54.2L166.7 58.4L160.9 59.7L155.0 59.7L149.3 58.4L141.5 54.2L135.5 47.7L131.0 37.6L128.4 35.5L125.7 35.1L85.8 48.5L82.1 51.4L80.0 54.7L79.0 62.4Z'
+const BRAND_MARK_FRONT = 'M168.0 101.5L128.9 89.1L125.0 91.5L120.5 101.7L114.5 108.2L106.7 112.4L101.0 113.7L95.1 113.7L89.3 112.4L81.5 108.2L75.6 101.7L71.0 91.5L68.8 89.7L66.2 89.0L28.0 101.5L22.7 104.8L19.7 109.4L18.9 114.8L22.2 135.4L23.6 138.2L28.0 140.6L52.5 140.6L52.5 208.7L53.6 212.8L56.4 217.0L60.7 219.9L65.9 220.9L131.0 220.9L136.1 219.6L139.6 217.0L142.1 213.5L143.5 208.4L143.5 140.6L168.1 140.6L171.0 139.5L172.9 137.6L177.1 112.5L173.9 105.4L168.0 101.5Z'
+
+function BrandMark() {
+  return (
+    <svg className="brand-mark" viewBox="0 0 256 256" role="img" aria-label="DSH 皮肤市场">
+      <path d={BRAND_MARK_BACK} fill="none" stroke="currentColor" strokeWidth="13.7" strokeLinecap="round" strokeLinejoin="round" />
+      <path d={BRAND_MARK_FRONT} fill="none" stroke="currentColor" strokeWidth="13.7" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
 function terminalMessageKey(key: string): MessageKey | undefined {
   if (key === 'posix') return 'install.terminal.posix'
   if (key === 'powershell') return 'install.terminal.powershell'
@@ -291,6 +303,9 @@ export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; cur
   const selectedName = selected === undefined ? '' : localizedSkinName(selected, language)
   const selectedDescription = selected === undefined ? undefined : localizedSkinDescription(selected.description, selected.localizedCopy, language)
   const selectedScreenshots = selected === undefined ? [] : getCatalogScreenshotUrls(selected)
+  // A repository without a usable timeline still needs its number: the chart is
+  // the only other place the panel shows it.
+  const selectedCurve = selected === undefined ? undefined : curveEntry(curves, selected.repo)
   const shotCount = selectedScreenshots.length
   const filtered = useMemo(() => skins
     .filter(skin => matchesCatalogSearch(skin, query) && enabledCategories.has(marketCategory(skin)))
@@ -477,7 +492,7 @@ export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; cur
     <header className="topbar" ref={topbarRef}>
       <div className="topbar-main">
         <a className="brand" ref={brandRef} href={import.meta.env.BASE_URL}>
-          <span className="brand-mark">DSH</span>
+          <BrandMark />
           <span><strong>{t('site.brand')}</strong><small>dsh-skin-market</small></span>
         </a>
         <nav className="top-actions" ref={topActionsRef} aria-label={t('site.platformActions')}>
@@ -524,9 +539,9 @@ export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; cur
               <a className="repo-line" href={selected.repo} target="_blank" rel="noreferrer"><GithubLogo size={13} aria-hidden="true" /><span>{githubRepoLabel(selected.repo)}</span></a>
             </div>
             {selectedDescription !== undefined && <p className="skin-description" title={selectedDescription}>{selectedDescription}</p>}
-            <div className="meta"><span>{t('skin.version', { version: selected.install.version })}</span><span>{t('skin.dshVersion', { version: selected.compatibility.dsh })}</span><span className={verified ? 'verified' : 'unverified'}>{verified ? t('skin.compatibilityVerified') : t('skin.compatibilityPending')}</span></div>
+            <div className="meta"><span>{t('skin.version', { version: selected.install.version })}</span><span>{t('skin.dshVersion', { version: selected.compatibility.dsh })}</span><span className={verified ? 'verified' : 'unverified'}>{verified ? t('skin.compatibilityVerified') : t('skin.compatibilityPending')}</span>{selectedCurve === undefined && <span className="skin-stars" title={starsTitle(selected, liveStarsBySkin[selected.id], t, language)}><StarFillIcon size={11} aria-hidden="true" /> {liveStarsBySkin[selected.id]?.stars ?? selected.starsSnapshot}</span>}</div>
           </div>
-          <StarSpark values={curveEntry(curves, selected.repo)?.stars} from={curveEntry(curves, selected.repo)?.from} live={liveStarsBySkin[selected.id]} title={starsTitle(selected, liveStarsBySkin[selected.id], t, language)} language={language} />
+          <StarSpark values={selectedCurve?.stars} from={selectedCurve?.from} live={liveStarsBySkin[selected.id]} title={starsTitle(selected, liveStarsBySkin[selected.id], t, language)} language={language} />
         </header>
 
         {usesMarketScreenshots(selected) && <p className="notice">{t('skin.marketScreenshotNotice')}</p>}

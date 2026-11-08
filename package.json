@@ -15,6 +15,7 @@
     "dsh-skin-market-repair": "lib/repair-cli.js"
   },
   "license": "MIT",
+  "icon": "assets/icon.png",
   "scripts": {
     "dev": "vite --config vite.preview.config.ts",
     "dev:site": "vite --config vite.site.config.ts",
@@ -67,6 +68,7 @@
   "files": [
     "lib",
     "client",
+    "assets",
     "data/catalog.json",
     "registry",
     "cordis.patch.yml",
