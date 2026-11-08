@@ -1228,7 +1228,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     const installedClients = new Set((state.installedClientPlugins ?? []).map(item => item.package))
     for (const item of state.skins) {
       if (item.installation !== 'installed') { webClientPackages.current.delete(item.skinId); webSelectionSkinIds.current.delete(item.skinId); continue }
-      if (!selected.has(item.skinId) && item.restartSource !== 'selection' && !clientRestartNotices.current.has(item.skinId)) continue
+      if (!selected.has(item.skinId) && item.restartSource !== 'selection' && item.restartOnlyToStop !== true && !clientRestartNotices.current.has(item.skinId)) continue
       webSelectionSkinIds.current.add(item.skinId)
       const skin = skinsRef.current.find(skin => skin.id === item.skinId)
       if (skin === undefined) continue
@@ -1309,6 +1309,20 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       for (const id of webRestartGrace.current.keys()) if (!currentIds.has(id)) webRestartGrace.current.delete(id)
       setWebClientRetryAt(retryAt)
     } else webRestartGrace.current.clear()
+    const requestReceiptClear = (skinId: string) => {
+      const key = JSON.stringify([state.restartNoticeId ?? 'legacy', skinId])
+      if (webReceiptCleared.current.has(key) || webReceiptClearInFlight.current.has(key)) return
+      webReceiptClearInFlight.current.add(key)
+      void json('/dsh-skin-market/restart/clear', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ skinId }),
+      }).then(() => {
+        webReceiptCleared.current.add(key)
+      }).catch(() => undefined).finally(() => {
+        webReceiptClearInFlight.current.delete(key)
+      })
+    }
     const skins = state.skins.map<RuntimeSkin>(item => {
       const softSelection = item.activation === 'restart-required' && item.restartSource === 'selection'
       // A Web restart receipt is only useful while the requested module is
@@ -1322,6 +1336,19 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         if (clientApplied) {
           clientRestartNotices.current.delete(item.skinId)
           return { ...item, activation: 'active', error: undefined }
+        }
+        // The mirror case: the saved selection is disabled and the browser
+        // loader confirms the running module is gone. Stopping has already
+        // taken effect, so a restart is no longer required and the card can
+        // return to its installed/inactive state.
+        if (item.restartOnlyToStop === true && skin !== undefined && !selected.has(item.skinId)) {
+          const owned = webClientPackages.current.get(item.skinId) ?? [skin.package]
+          const stopped = probeClientSkinSelection(clientRuntime, owned.map(packageName => ({ package: packageName, active: false })))
+          if (stopped.status === 'applied') {
+            requestReceiptClear(item.skinId)
+            clientRestartNotices.current.delete(item.skinId)
+            return { ...item, activation: 'inactive', error: undefined }
+          }
         }
         if (!softSelection) return item
       }
@@ -1337,9 +1364,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       // The browser state now owns this tab's client-only reminder, including
       // asynchronous recovery after an earlier missing-entry observation.
       if (clientRuntime.probeActive !== undefined) clientRestartNotices.current.delete(item.skinId)
-      if (status.status === 'applied') return softSelection && item.selectionHostApplied === true
-        && (hasCompleteTargets || packages.length > 0)
-        ? { ...item, activation: selected.has(item.skinId) ? 'active' : 'inactive', error: undefined } : item
+      if (status.status === 'applied') {
+        if (!selected.has(item.skinId)) requestReceiptClear(item.skinId)
+        return softSelection && item.selectionHostApplied === true
+          && (hasCompleteTargets || packages.length > 0)
+          ? { ...item, activation: selected.has(item.skinId) ? 'active' : 'inactive', error: undefined } : item
+      }
       return { ...item, activation: status.status === 'unavailable' ? 'unavailable' : status.status, error: hostError ?? webClientSelectionError(status, t) }
     })
     return { ...state, skins }
@@ -2769,6 +2799,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const deferInstallAndUse = livePnpmOperations(operations).length > 0
   const restartInstallBlock = restartBlockedByInstalls(operations, skins, t)
   const manualDesktopRestart = hostKind === 'desktop' && !restartAvailable
+  const restartSkinState = restartTarget?.kind === 'skin' ? runtimeFor(states, restartTarget.skinId) : undefined
+  const restartForStop = restartSkinState?.restartOnlyToStop === true
   const installAndUseReason = actionReason('install') ?? (officialDesktop ? actionReason('activate') : null)
   const restartNoticeMatchesTarget = pendingRestart !== null && restartTarget !== null
     && pendingRestart.target.kind === restartTarget.kind
@@ -3148,7 +3180,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     startedAt={pendingRestart.startedAt}
     metadata={[]}
     terminal
-    action={<Button variant="outline" size="sm" onClick={() => void openRestartConfirm(pendingRestart.target.kind === 'skin' ? pendingRestart.target.skinId : undefined, pendingRestart.target.kind)}>{restartAvailable ? t('common.restartToApply') : t('common.viewRestartHelp')}</Button>}
+    action={<Button variant="outline" size="sm" onClick={() => void openRestartConfirm(pendingRestart.target.kind === 'skin' ? pendingRestart.target.skinId : undefined, pendingRestart.target.kind)}>{restartAvailable ? t(pendingRestart.target.kind === 'skin' && runtimeFor(states, pendingRestart.target.skinId).restartOnlyToStop === true ? 'common.restartStopAction' : 'common.restartToApply') : t('common.viewRestartHelp')}</Button>}
     onDismiss={() => dismissRestartNotice(pendingRestart.target)}
   />
   const marketUpdateActive = marketOperation !== null && !['done', 'failed', 'cancelled'].includes(marketOperation.phase)
@@ -3327,7 +3359,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
               {state.installation === 'installed' && state.activation === 'unavailable' && <Button variant="primary" size="sm" disabled={selectedBusy !== undefined || actionReason('activate') !== null} title={actionReason('activate') ?? undefined} onClick={activateSelected}>{t('common.useAgain')}</Button>}
               {state.installation === 'installed' && state.activation === 'inactive' && <Button className={css.pinAction} variant="outline" size="sm" aria-pressed="false" title={actionReason('pin') ?? t('common.pinDescription')} disabled={selectedBusy !== undefined || actionReason('pin') !== null} onClick={() => { void run('pin') }}>{t('common.pinUse')}</Button>}
               {state.activation === 'restart-required' && selectedBusy === undefined && !selectedInstallAndUsePending && (restartAvailable
-                ? <Button variant="primary" size="sm" disabled={selectedBusy !== undefined} title={restartInstallBlock ?? undefined} onClick={() => void openRestartConfirm()}>{t('common.restartToApply')}</Button>
+                ? <Button variant="primary" size="sm" disabled={selectedBusy !== undefined} title={restartInstallBlock ?? undefined} onClick={() => void openRestartConfirm()}>{state.restartOnlyToStop ? t('common.restartStopAction') : t('common.restartToApply')}</Button>
                 : pendingRestart?.target.kind === 'skin' && pendingRestart.target.skinId === selected.id ? null
                 : <Button variant="outline" size="sm" onClick={() => void openRestartConfirm()}>{t('common.viewRestartHelp')}</Button>)}
               {(state.activation === 'active' || state.activation === 'unavailable') && <Button variant="outline" size="sm" disabled={selectedBusy !== undefined || actionReason('deactivate') !== null} title={actionReason('deactivate') ?? undefined} onClick={() => void run('deactivate')}>{t('common.deactivate')}</Button>}
@@ -3682,7 +3714,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       <Modal
         open={warningDialog === 'restart'}
         onClose={() => { if (!restarting) dismissRestartNotice() }}
-        title={manualDesktopRestart ? t('common.restartManualTitle') : restartTarget?.kind === 'market-update' ? t('common.restartTargetMarket') : t('common.restartTargetSkin')}
+        title={manualDesktopRestart ? t('common.restartManualTitle') : restartTarget?.kind === 'market-update' ? t('common.restartTargetMarket') : restartForStop ? t('common.restartTargetSkinStop') : t('common.restartTargetSkin')}
         closeLabel={t('common.close')}
         className={css.warningModal}
         description={manualDesktopRestart ? manualRestartDescription

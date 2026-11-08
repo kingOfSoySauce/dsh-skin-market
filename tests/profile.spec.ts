@@ -474,6 +474,17 @@ describe('profile state', () => {
     }
   })
 
+  it('keeps stop provenance only for known skin ids and allows it beside an install proof', () => {
+    const dir = fixture()
+    const pendingRestart = { pid: 1234, id: 'stop', skinIds: ['one', 'two'],
+      inferredInstalls: { one: 'a'.repeat(64) }, stoppedSkinIds: ['one', 'one', 'unknown'] }
+    writeMarketState(dir, { version: 1, activeSkinId: null, disabledSkinIds: ['one'], pendingRestart })
+    expect(readMarketState(dir).pendingRestart).toEqual({ pid: 1234, id: 'stop', skinIds: ['one', 'two'],
+      inferredInstalls: { one: 'a'.repeat(64) }, stoppedSkinIds: ['one'] })
+    atomicWriteJson(join(dir, '.dsh-skin-market', 'state.json'), { version: 1, activeSkinId: null, disabledSkinIds: [], pendingRestart: { ...pendingRestart, stoppedSkinIds: ['unknown'] } })
+    expect(readMarketState(dir).pendingRestart?.stoppedSkinIds).toBeUndefined()
+  })
+
   it('uses every declared bundle patch in order for validation and skin registration', () => {
     const dir = fixture()
     const skin = isolatedCatalogSkin()

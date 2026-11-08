@@ -745,6 +745,7 @@ export class SkinLifecycle {
     const inferredInstalls = new Map(Object.entries(previous?.inferredInstalls ?? {}))
     const selectionChanges = new Set(previous?.selectionChanges ?? [])
     const selectionArtifacts = new Map(Object.entries(previous?.selectionArtifacts ?? {}))
+    const stoppedSkinIds = new Set(previous?.stoppedSkinIds ?? [])
     if (required) ids.add(skinId)
     else if (removed) ids.delete(skinId)
     // An installation/update or explicit Host result always takes precedence
@@ -752,6 +753,7 @@ export class SkinLifecycle {
     if (required || removed) {
       selectionChanges.delete(skinId)
       selectionArtifacts.delete(skinId)
+      stoppedSkinIds.delete(skinId)
     }
     if (!ids.has(skinId) || required && inferredArtifact === undefined) inferredInstalls.delete(skinId)
     else if (required && inferredArtifact !== undefined) inferredInstalls.set(skinId, inferredArtifact)
@@ -760,10 +762,26 @@ export class SkinLifecycle {
       ...(inferredInstalls.size > 0 ? { inferredInstalls: Object.fromEntries(inferredInstalls) } : {}),
       ...(selectionChanges.size > 0 ? { selectionChanges: [...selectionChanges] } : {}),
       ...(selectionArtifacts.size > 0 ? { selectionArtifacts: Object.fromEntries(selectionArtifacts) } : {}),
+      ...(stoppedSkinIds.size > 0 ? { stoppedSkinIds: [...stoppedSkinIds] } : {}),
     }
   }
 
-  /** Clear a Web receipt after the browser loader has confirmed the skin live. */
+  /**
+   * Keep the receipt's direction in step with the saved selection. A disabled
+   * skin's restart is only needed to stop its running instance; once the page
+   * confirms that instance is gone, no restart is required for the appearance.
+   */
+  private syncRestartIntent(state: PersistedMarketState, skinId: string): void {
+    const pending = state.pendingRestart
+    if (pending?.pid !== process.pid || !pending.skinIds.includes(skinId)) return
+    const stopped = new Set(pending.stoppedSkinIds ?? [])
+    if (this.enabledSkinIds(state).has(skinId)) stopped.delete(skinId)
+    else stopped.add(skinId)
+    const { stoppedSkinIds: _previousStops, ...rest } = pending
+    state.pendingRestart = stopped.size > 0 ? { ...rest, stoppedSkinIds: [...stopped] } : rest
+  }
+
+  /** Clear a Web receipt after the browser loader has confirmed the skin live or stopped. */
   async clearWebRestartReceipt(skinId: string): Promise<void> {
     if (this.management !== undefined) throw new Error('仅 Web 皮肤可以确认浏览器重启回执')
     this.skin(skinId)
@@ -776,11 +794,13 @@ export class SkinLifecycle {
       const selectionChanges = (pending.selectionChanges ?? []).filter(id => id !== skinId)
       const selectionArtifacts = Object.fromEntries(Object.entries(pending.selectionArtifacts ?? {}).filter(([id]) => id !== skinId))
       const inferredInstalls = Object.fromEntries(Object.entries(pending.inferredInstalls ?? {}).filter(([id]) => id !== skinId))
+      const stoppedSkinIds = (pending.stoppedSkinIds ?? []).filter(id => id !== skinId)
       state.pendingRestart = skinIds.length === 0 ? undefined : {
         pid: pending.pid, skinIds, id: pending.id,
         ...(Object.keys(inferredInstalls).length > 0 ? { inferredInstalls } : {}),
         ...(selectionChanges.length > 0 ? { selectionChanges } : {}),
         ...(Object.keys(selectionArtifacts).length > 0 ? { selectionArtifacts } : {}),
+        ...(stoppedSkinIds.length > 0 ? { stoppedSkinIds } : {}),
       }
       writeMarketState(this.options.profileDir, state)
     })
@@ -835,6 +855,7 @@ export class SkinLifecycle {
       ...(pending?.inferredInstalls === undefined ? {} : { inferredInstalls: pending.inferredInstalls }),
       ...(selectionChanges.size > 0 ? { selectionChanges: [...selectionChanges] } : {}),
       ...(selectionArtifacts.size > 0 ? { selectionArtifacts: Object.fromEntries(selectionArtifacts) } : {}),
+      ...(pending?.stoppedSkinIds === undefined ? {} : { stoppedSkinIds: pending.stoppedSkinIds }),
     }
     // This flag remains reserved for actual installation/Host requirements;
     // selection inferences are verified independently in each browser tab.
@@ -1429,8 +1450,10 @@ export class SkinLifecycle {
       if (runtime.installation === 'installed' && isWebClientPackage(this.options.profileDir, skin.package)) runtime.clientModule = true
       const sourceMigration = this.hostKind === 'desktop' ? undefined : npmSourceMigration(this.options.profileDir, skin)
       const restartPending = state.pendingRestart?.pid === process.pid && state.pendingRestart.skinIds.includes(skin.id)
+      const restartOnlyToStop = restartPending && !enabled.has(skin.id) && state.pendingRestart?.stoppedSkinIds?.includes(skin.id) === true
       return { ...runtime, ...(runtime.installation === 'installed' && this.management === undefined ? { selectionHostApplied, selectionHostStatus,
         ...(selectionClientTargets === undefined ? {} : { selectionClientTargets }) } : {}), ...(!restartPending && enabled.has(skin.id) && entries.length > 0 && entries.every(entry => entry.options.disabled === true) ? { activation: 'unavailable' as const, error: '皮肤组件已关闭；请点击使用以自动启用，或在官方插件页检查覆盖配置', errorKey: 'common.dshComponentDisabled' as const } : {}), ...(!restartPending && enabled.has(skin.id) && this.unverifiedRestartSkinIds.has(skin.id) ? { activation: 'unavailable' as const, error: '重启后皮肤仍未生效，请在官方插件页检查组件开关、加载错误或更高优先级的覆盖配置', errorKey: 'common.dshComponentRestartFailed' as const } : {}), ...(restartPending ? { activation: 'restart-required' as const, error: undefined,
+        ...(restartOnlyToStop ? { restartOnlyToStop: true as const } : {}),
         ...(selectionChanges.includes(skin.id) ? { restartSource: 'selection' as const } : {}) } : {}), ...(sourceMigration === undefined ? {} : { sourceMigration }) }
     })
   }
@@ -2767,6 +2790,7 @@ export class SkinLifecycle {
       active = await this.setEntryDisabled(skin, false)
       await this.syncManagedLoaders(next, true)
       this.recordSelectionRestart(previous, next, skin, operation)
+      this.syncRestartIntent(next, skin.id)
       writeMarketState(this.options.profileDir, next)
       if (next.pendingRestart?.inferredInstalls?.[skin.id] !== undefined) {
         await this.inspectRuntimeStates(true)
@@ -2815,6 +2839,7 @@ export class SkinLifecycle {
       await this.syncInstalledCompanions(state, true)
       await this.syncManagedLoaders(state, true)
       this.recordSelectionRestart(previous, state, skin, operation)
+      this.syncRestartIntent(state, skin.id)
       writeMarketState(this.options.profileDir, state)
       if (operation.restartRequired === true) writeOperationMessage(operation, 'skin disabled; restart DSH to apply the change', 'common.operationDisabledRestart')
       else if (this.enabledSkinIds(state).size === 0) writeOperationMessage(operation, 'DSH default appearance restored; package kept installed', 'common.operationDefaultAppearanceRestored')
@@ -2851,6 +2876,7 @@ export class SkinLifecycle {
       await this.syncManagedLoaders(next, true)
       const active = await this.setEntryDisabled(skin, false)
       this.recordSelectionRestart(previous, next, skin, operation)
+      this.syncRestartIntent(next, skin.id)
       writeMarketState(this.options.profileDir, next)
       if (next.pendingRestart?.inferredInstalls?.[skin.id] !== undefined) {
         await this.inspectRuntimeStates(true)
@@ -2888,6 +2914,7 @@ export class SkinLifecycle {
       await this.syncInstalledCompanions(next, true)
       await this.syncManagedLoaders(next, true)
       this.recordSelectionRestart(previous, next, skin, operation)
+      this.syncRestartIntent(next, skin.id)
       writeMarketState(this.options.profileDir, next)
       if (operation.restartRequired === true) writeOperationMessage(operation, 'skin is no longer pinned; restart DSH to apply the change', 'common.operationUnpinRestart')
       else if (next.activeSkinId === skin.id) writeOperationMessage(operation, 'skin is no longer pinned and remains the current skin', 'common.operationUnpinCurrent')

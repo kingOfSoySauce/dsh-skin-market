@@ -24,6 +24,13 @@ export function pnpmWorkspaceFile(profileDir: string): string { return join(prof
 export function pnpmLockfile(profileDir: string): string { return join(profileDir, 'pnpm-lock.yaml') }
 export function marketStateFile(profileDir: string): string { return join(profileDir, '.dsh-skin-market', 'state.json') }
 
+/** Keep only stop markers that still name a skin in the same receipt. */
+function normalizedStoppedSkinIds(pending: Record<string, unknown>): string[] {
+  if (!Array.isArray(pending.stoppedSkinIds) || !Array.isArray(pending.skinIds)) return []
+  const known = new Set(pending.skinIds.filter((id): id is string => typeof id === 'string'))
+  return [...new Set(pending.stoppedSkinIds.filter((id): id is string => typeof id === 'string' && known.has(id)))]
+}
+
 export function readJson<T>(file: string, fallback: T): T {
   try { return JSON.parse(readFileSync(file, 'utf8')) as T } catch { return fallback }
 }
@@ -88,6 +95,10 @@ export function readMarketState(profileDir: string): PersistedMarketState {
           && (pending.selectionChanges as string[]).includes(id) && typeof hash === 'string' && /^[a-f0-9]{64}$/.test(hash)
           && !(isRecord(pending.inferredInstalls) && id in pending.inferredInstalls))
         ? { selectionArtifacts: { ...pending.selectionArtifacts } as Record<string, string> } : {}),
+      // A stop receipt may coexist with an install/update artifact proof: the
+      // proof says how to verify the build, the stop says restart is no longer
+      // needed once the running instance is confirmed gone.
+      ...(normalizedStoppedSkinIds(pending).length > 0 ? { stoppedSkinIds: normalizedStoppedSkinIds(pending) } : {}),
     }
   }
   return value

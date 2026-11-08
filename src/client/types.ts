@@ -120,6 +120,8 @@ export interface RuntimeSkin {
   updateAvailable: boolean
   clientModule?: boolean
   restartSource?: 'selection'
+  /** This receipt only has to stop a running skin; a confirmed stop clears it. */
+  restartOnlyToStop?: boolean
   selectionHostApplied?: boolean
   selectionHostStatus?: 'applied' | 'switching' | 'restart-required' | 'unavailable'
   selectionClientTargets?: Array<{ package: string; active: boolean }>

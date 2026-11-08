@@ -443,6 +443,8 @@ export declare const messageCatalog: {
         readonly 'common.skinMarketUpdatedRestart': '皮肤市场将在重启后生效。';
         readonly 'common.waitBeforeRestart': '请等待操作完成后再重启。';
         readonly 'common.restartTargetSkin': '需要重启 DSH 应用此皮肤';
+        readonly 'common.restartTargetSkinStop': '需要重启 DSH 完成停用';
+        readonly 'common.restartStopAction': '重启以完成停用';
         readonly 'common.restartTargetMarket': '需要重启 DSH 应用皮肤市场更新';
         readonly 'common.restartManualTitle': '请手动重启 Desktop App';
         readonly 'common.noOtherInstall': '请等待当前安装完成，再安装其他皮肤';
@@ -1100,6 +1102,8 @@ export declare const messageCatalog: {
         readonly 'common.skinMarketUpdatedRestart': 'Skin Market will apply after restart.';
         readonly 'common.waitBeforeRestart': 'Wait for the operation to finish before restarting.';
         readonly 'common.restartTargetSkin': 'Restart DSH to apply this skin';
+        readonly 'common.restartTargetSkinStop': 'Restart DSH to finish disabling';
+        readonly 'common.restartStopAction': 'Restart to finish disabling';
         readonly 'common.restartTargetMarket': 'Restart DSH to apply the Skin Market update';
         readonly 'common.restartManualTitle': 'Restart Desktop App manually';
         readonly 'common.noOtherInstall': 'Wait for the current installation to finish before installing another skin';

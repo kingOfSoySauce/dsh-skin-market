@@ -3402,6 +3402,62 @@ describe('client market', () => {
       expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
     })
 
+    it('returns a stopped Web skin to installed when its stop receipt outlives the module', async () => {
+      const fetchMock = serveWebState(() => [webSkin({
+        activation: 'restart-required', primary: false, pinned: false,
+        restartSource: undefined, restartOnlyToStop: true,
+        selectionClientTargets: [{ package: skin.package, active: false }],
+      })])
+      render(<SkinMarketSection t={key => key} clientRuntime={{
+        setActive: vi.fn(),
+        probeActive: () => 'missing',
+        probeSyncing: () => false,
+      }} />)
+      expect((await screen.findAllByRole('button', { name: '使用' })).length).toBeGreaterThan(0)
+      expect(screen.queryByText('待重启', { exact: true })).toBeNull()
+      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 完成停用' })).toBeNull()
+      await waitFor(() => expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/restart/clear'))).toBe(true))
+    })
+
+    it('keeps a stop receipt while the old Web module is still running and uses stop-specific copy', async () => {
+      window.sessionStorage.clear()
+      serveWebState(() => [webSkin({
+        activation: 'restart-required', primary: false, pinned: false,
+        restartSource: undefined, restartOnlyToStop: true,
+        selectionClientTargets: [{ package: skin.package, active: false }],
+      })])
+      render(<SkinMarketSection t={key => key} clientRuntime={{
+        setActive: vi.fn(),
+        probeActive: () => 'active',
+        probeSyncing: () => false,
+      }} />)
+      const dialog = await screen.findByRole('dialog', { name: '需要重启 DSH 完成停用' }, { timeout: 3000 })
+      expect(dialog.textContent).toContain('重启会断开当前会话连接，请先保存工作。')
+      expect(screen.getAllByText('待重启', { exact: true }).length).toBeGreaterThan(0)
+      expect(screen.queryByRole('button', { name: '重启以应用' })).toBeNull()
+      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
+    })
+
+    it('labels an already seen stop receipt with a stop action instead of applying the skin', async () => {
+      window.sessionStorage.clear()
+      const seenKey = JSON.stringify(['skin', skin.id, 'same-receipt', '1.0.0', 'protected'])
+      window.sessionStorage.setItem('dsh-skin-market:restart-prompts', JSON.stringify([seenKey]))
+      serveWebState(() => [webSkin({
+        activation: 'restart-required', primary: false, pinned: false,
+        restartSource: undefined, restartOnlyToStop: true,
+        selectionClientTargets: [{ package: skin.package, active: false }],
+      })])
+      render(<SkinMarketSection t={key => key} clientRuntime={{
+        setActive: vi.fn(),
+        probeActive: () => 'active',
+        probeSyncing: () => false,
+      }} />)
+      expect(await screen.findByRole('button', { name: '重启以完成停用' })).toBeTruthy()
+      expect(screen.queryByRole('button', { name: '重启以应用' })).toBeNull()
+      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 完成停用' })).toBeNull()
+    })
+
     it.each(['unconfirmed Host', 'incomplete browser list', 'missing probe'] as const)('does not confirm a soft selection with %s', async missing => {
       serveWebState(() => [webSkin({ selectionHostApplied: missing === 'unconfirmed Host' ? false : true,
         selectionHostStatus: missing === 'unconfirmed Host' ? 'unavailable' : 'applied',

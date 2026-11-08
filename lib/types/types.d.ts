@@ -190,6 +190,8 @@ export interface SkinRuntimeState {
     clientModule?: boolean;
     /** A browser-local selection check may refine only this inferred restart reason. */
     restartSource?: 'selection';
+    /** This receipt only has to stop a running skin; a confirmed stop clears it. */
+    restartOnlyToStop?: boolean;
     /** Every managed Host row matches the current complete enabled selection. */
     selectionHostApplied?: boolean;
     /** Complete managed Host selection, including asynchronous apply/dispose phases. */
@@ -304,6 +306,8 @@ export interface PersistedMarketState {
         selectionChanges?: string[];
         /** Main and owned companion/loader artifacts bound to each selection inference. */
         selectionArtifacts?: Record<string, string>;
+        /** Skins that were disabled while running; a confirmed stop no longer needs a restart. */
+        stoppedSkinIds?: string[];
     };
     activity?: Record<string, SkinActivity>;
     /** Companion packages linked to installed owner skins. */
