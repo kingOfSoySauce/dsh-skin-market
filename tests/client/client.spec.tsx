@@ -3427,7 +3427,7 @@ describe('client market', () => {
       expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用此皮肤' })).toBeNull()
     })
 
-    it('keeps a stop receipt after the browser module is gone until the host restarts', async () => {
+    it('clears a stop receipt when the host and browser both confirm the stop', async () => {
       window.sessionStorage.clear()
       const fetchMock = serveWebState(() => [webSkin({
         activation: 'restart-required', primary: false, pinned: false,
@@ -3439,11 +3439,28 @@ describe('client market', () => {
         probeActive: () => 'missing',
         probeSyncing: () => false,
       }} />)
+      expect((await screen.findAllByRole('button', { name: '使用' })).length).toBeGreaterThan(0)
+      expect(screen.queryByText('待重启', { exact: true })).toBeNull()
+      expect(screen.queryByRole('dialog', { name: '需要重启 DSH 完成停用' })).toBeNull()
+      await waitFor(() => expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/restart/clear'))).toBe(true))
+    })
+
+    it('keeps a stop receipt when the host has not applied the disable', async () => {
+      window.sessionStorage.clear()
+      const fetchMock = serveWebState(() => [webSkin({
+        activation: 'restart-required', primary: false, pinned: false,
+        restartSource: undefined, restartOnlyToStop: true,
+        selectionHostApplied: false, selectionHostStatus: 'switching',
+        selectionClientTargets: [{ package: skin.package, active: false }],
+      })])
+      render(<SkinMarketSection t={key => key} clientRuntime={{
+        setActive: vi.fn(),
+        probeActive: () => 'missing',
+        probeSyncing: () => false,
+      }} />)
       const dialog = await screen.findByRole('dialog', { name: '需要重启 DSH 完成停用' }, { timeout: 3000 })
       expect(dialog.textContent).toContain('重启会断开当前会话连接，请先保存工作。')
       expect(screen.getAllByText('待重启', { exact: true }).length).toBeGreaterThan(0)
-      expect(screen.queryByRole('button', { name: '使用中' })).toBeNull()
-      expect(screen.queryByRole('button', { name: '重启以应用' })).toBeNull()
       expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/restart/clear'))).toBe(false)
     })
 
@@ -3454,7 +3471,8 @@ describe('client market', () => {
       serveWebState(() => [
         webSkin({ activation: 'active', primary: true, restartSource: undefined, selectionClientTargets: undefined }),
         webSkin({ skinId: second.id, activation: 'restart-required', primary: false,
-          restartSource: 'selection', restartOnlyToStop: true, selectionClientTargets: undefined }),
+          restartSource: 'selection', restartOnlyToStop: true, selectionHostApplied: false,
+          selectionHostStatus: 'switching', selectionClientTargets: undefined }),
       ], [skin, second])
       render(<SkinMarketSection t={key => key} clientRuntime={{
         setActive: vi.fn(),

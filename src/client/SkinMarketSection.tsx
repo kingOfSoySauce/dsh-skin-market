@@ -1324,10 +1324,20 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     const skins = state.skins.map<RuntimeSkin>(item => {
       const softSelection = item.activation === 'restart-required' && item.restartSource === 'selection'
       const packages = webClientPackages.current.get(item.skinId) ?? []
-      // A stop receipt stays until the host restarts. The browser module can
-      // disappear while theme variables or other host effects are still live,
-      // so an absent module alone is not proof that disabling is complete.
+      const skin = skinsRef.current.find(candidate => candidate.id === item.skinId)
+      // A stop receipt clears only when both sides agree: the Host selection is
+      // applied and the browser module is confirmed gone. An absent browser
+      // module alone can leave theme variables or other Host effects behind.
       if (item.activation === 'restart-required' && item.restartOnlyToStop === true) {
+        const stopped = item.selectionHostApplied === true && item.selectionHostStatus === 'applied' && !selected.has(item.skinId)
+          ? probeClientSkinSelection(clientRuntime, (packages.length > 0 ? packages : skin === undefined ? [] : [skin.package])
+            .map(packageName => ({ package: packageName, active: false })))
+          : undefined
+        if (stopped?.status === 'applied') {
+          requestReceiptClear(item.skinId)
+          clientRestartNotices.current.delete(item.skinId)
+          return { ...item, activation: 'inactive', error: undefined }
+        }
         return { ...item, activation: 'restart-required', error: undefined }
       }
       // A Web restart receipt is only useful while the requested module is
@@ -1335,7 +1345,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       // the live module is stronger evidence than any earlier install/Host
       // receipt, regardless of how that receipt was classified.
       if (item.activation === 'restart-required' && !softSelection && state.hostKind !== 'desktop') {
-        const skin = skinsRef.current.find(candidate => candidate.id === item.skinId)
         const clientApplied = selected.has(item.skinId) && skin !== undefined
           && probeClientSkinSelection(clientRuntime, [{ package: skin.package, active: true }]).status === 'applied'
         if (clientApplied) {
@@ -1375,7 +1384,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       // asynchronous recovery after an earlier missing-entry observation.
       if (clientRuntime.probeActive !== undefined) clientRestartNotices.current.delete(item.skinId)
       if (status.status === 'applied') {
-        if (item.restartOnlyToStop === true) return { ...item, activation: 'restart-required', error: undefined }
         if (!selected.has(item.skinId)) requestReceiptClear(item.skinId)
         return softSelection && item.selectionHostApplied === true
           && (hasCompleteTargets || packages.length > 0)
