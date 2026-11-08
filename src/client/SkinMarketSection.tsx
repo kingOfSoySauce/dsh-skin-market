@@ -294,9 +294,8 @@ interface MarketUpdateStatus {
   currentVersion: string
   latestVersion: string
   updateAvailable: boolean
+  /** Present while a release-age hold suppresses the update action. */
   updateBlockedReason?: string
-  updateBlockedReasonKey?: Operation['messageKey']
-  updateBlockedReasonParams?: Operation['messageParams']
   updateAvailableAt?: string
 }
 
@@ -1070,6 +1069,9 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const [openingPluginPanel, setOpeningPluginPanel] = useState(false)
   const [marketUpdate, setMarketUpdate] = useState<MarketUpdateStatus | null>(null)
   const [marketOperation, setMarketOperation] = useState<MarketUpdateOperation | null>(null)
+  // A held release stays silent: no button and no explanatory banner. The
+  // button appears once the hold expires and the server reports availability.
+  const marketUpdateOffered = marketUpdate?.updateAvailable === true && marketUpdate.updateBlockedReason === undefined
   const [copyingLogId, setCopyingLogId] = useState<string | null>(null)
   const [copiedLogId, setCopiedLogId] = useState<string | null>(null)
   const [copiedSpec, setCopiedSpec] = useState(false)
@@ -1862,6 +1864,17 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     return () => controller.abort()
   }, [])
   useEffect(() => { void checkMarketUpdate() }, [checkMarketUpdate])
+  // Re-check when the recorded protection window ends so the button can appear
+  // without waiting for the next background refresh.
+  useEffect(() => {
+    if (marketUpdateOffered || marketUpdate?.updateAvailableAt === undefined) return
+    const availableAt = Date.parse(marketUpdate.updateAvailableAt)
+    if (!Number.isFinite(availableAt)) return
+    const delay = availableAt - Date.now() + 1_000
+    if (delay <= 0 || delay > 2_147_483_647) return
+    const timer = window.setTimeout(() => { void checkMarketUpdate() }, delay)
+    return () => window.clearTimeout(timer)
+  }, [checkMarketUpdate, marketUpdateOffered, marketUpdate?.updateAvailableAt])
   useEffect(() => {
     if (marketOperation === null || ['done', 'failed', 'cancelled'].includes(marketOperation.phase)) return
     void waitForMarketUpdate(marketOperation.id)
@@ -3349,7 +3362,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           <div className={css.homeTitleRow}>
             <div><h2>{t('market.title')}</h2><p>{t('market.communitySkins', { count: skins.length })}</p></div>
             <div className={css.homeActions}>
-              {marketUpdate?.updateAvailable === true && <Button
+              {marketUpdateOffered && <Button
                 className={`${css.marketUpdateButton} ${css.homeUpdateAction}`}
                 variant="outline"
                 size="sm"
@@ -3362,7 +3375,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
               <Button className={css.homeGithubAction} variant="outline" size="sm" icon={<MarkGithubIcon size={15} aria-hidden="true" />} aria-label={t('market.githubRepository')} title={t('market.githubRepository')} onClick={() => window.open(REGISTRY_REPOSITORY, '_blank', 'noopener,noreferrer')}><span className={css.homeGithubLabel}>GitHub</span></Button>
             </div>
           </div>
-          {marketUpdate?.updateBlockedReason !== undefined && <p className={css.notice} role="status">{operationMessage({ message: marketUpdate.updateBlockedReason, messageKey: marketUpdate.updateBlockedReasonKey, messageParams: marketUpdate.updateBlockedReasonParams }, t)}</p>}
           <MarketSearch className={css.homeSearch} value={homeQuery} onChange={setHomeQuery} t={t} />
           <div className={css.homeSearchPlaceholder} aria-hidden="true" />
           {discoverDocked && <DiscoverToolbar t={t} className={css.headerDiscover} headingId="discover-skins-title" label={homeQuery.trim() === '' ? t('common.discoverMore') : t('common.searchResults')} enabledCategories={enabledCategories} onToggleCategory={category => setEnabledCategories(current => {

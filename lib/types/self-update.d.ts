@@ -9,6 +9,7 @@ export interface MarketUpdateStatus {
     currentVersion: string;
     /** Version of the Host module serving this updater, independent of the installed package. */
     loadedVersion?: string;
+    /** Newest installable release; older than the registry's latest tag while that tag is inside a release-age hold. */
     latestVersion: string;
     updateAvailable: boolean;
     updateBlockedReason?: string;

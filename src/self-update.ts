@@ -27,6 +27,7 @@ export interface MarketUpdateStatus {
   currentVersion: string
   /** Version of the Host module serving this updater, independent of the installed package. */
   loadedVersion?: string
+  /** Newest installable release; older than the registry's latest tag while that tag is inside a release-age hold. */
   latestVersion: string
   updateAvailable: boolean
   updateBlockedReason?: string
@@ -229,7 +230,7 @@ function verifiedPublishedAt(value: unknown): string | undefined {
   return Number.isFinite(timestamp) && new Date(timestamp).toISOString().slice(0, 19) === value.slice(0, 19) ? value : undefined
 }
 
-function releaseFromPackument(value: unknown, registry: string): MarketRelease | 'no-matching-version' {
+function releaseFromPackument(value: unknown, registry: string): MarketRelease[] | 'no-matching-version' {
   if (value === null || typeof value !== 'object' || Array.isArray(value)) throw new Error('npm 未返回对象格式的市场 metadata')
   const packument = value as Record<string, unknown>
   const tags = packument['dist-tags']
@@ -238,42 +239,58 @@ function releaseFromPackument(value: unknown, registry: string): MarketRelease |
   if (typeof latestVersion !== 'string' || parseVersion(latestVersion) === null) return 'no-matching-version'
   const versions = packument.versions
   if (versions === null || typeof versions !== 'object' || Array.isArray(versions)) throw new Error('npm 未返回有效的市场版本列表')
-  const releaseValue = (versions as Record<string, unknown>)[latestVersion]
-  if (releaseValue === null || typeof releaseValue !== 'object' || Array.isArray(releaseValue)) return 'no-matching-version'
-  const releaseRecord = releaseValue as Record<string, unknown>
-  const gitHead = releaseRecord.gitHead
-  const dist = releaseRecord.dist
-  const tarball = dist !== null && typeof dist === 'object' && !Array.isArray(dist) ? (dist as Record<string, unknown>).tarball : undefined
-  const integrity = dist !== null && typeof dist === 'object' && !Array.isArray(dist) ? (dist as Record<string, unknown>).integrity : undefined
+  const records = versions as Record<string, unknown>
+  const latestRecord = records[latestVersion]
+  if (latestRecord === null || typeof latestRecord !== 'object' || Array.isArray(latestRecord)) return 'no-matching-version'
   const time = packument.time
-  const publishedAt = time !== null && typeof time === 'object' && !Array.isArray(time)
-    ? (time as Record<string, unknown>)[latestVersion] : undefined
-  if (releaseRecord.name !== undefined && releaseRecord.name !== MARKET_NPM_PACKAGE) throw new Error('npm 市场构件包名不一致')
-  if (releaseRecord.version !== latestVersion) throw new Error('npm 市场构件版本不一致')
-  if (typeof gitHead !== 'string' || !/^[0-9a-f]{40}$/i.test(gitHead)) throw new Error('npm 市场构件缺少可验证的 gitHead')
-  if (typeof tarball !== 'string') throw new Error('npm 市场构件缺少 tarball')
-  const tarballUrl = new URL(tarball)
-  const registryUrl = new URL(registry)
-  if (tarballUrl.protocol !== registryUrl.protocol || tarballUrl.host !== registryUrl.host) {
-    throw new Error(`npm 市场构件 tarball host 与 registry 不一致（${hostOf(registry)}）`)
+  const parseRelease = (version: string, recordValue: unknown): MarketRelease => {
+    if (recordValue === null || typeof recordValue !== 'object' || Array.isArray(recordValue)) throw new Error('npm 市场构件版本记录格式无效')
+    const releaseRecord = recordValue as Record<string, unknown>
+    const gitHead = releaseRecord.gitHead
+    const dist = releaseRecord.dist
+    const tarball = dist !== null && typeof dist === 'object' && !Array.isArray(dist) ? (dist as Record<string, unknown>).tarball : undefined
+    const integrity = dist !== null && typeof dist === 'object' && !Array.isArray(dist) ? (dist as Record<string, unknown>).integrity : undefined
+    const publishedAt = time !== null && typeof time === 'object' && !Array.isArray(time)
+      ? (time as Record<string, unknown>)[version] : undefined
+    if (releaseRecord.name !== undefined && releaseRecord.name !== MARKET_NPM_PACKAGE) throw new Error('npm 市场构件包名不一致')
+    if (releaseRecord.version !== version) throw new Error('npm 市场构件版本不一致')
+    if (typeof gitHead !== 'string' || !/^[0-9a-f]{40}$/i.test(gitHead)) throw new Error('npm 市场构件缺少可验证的 gitHead')
+    if (typeof tarball !== 'string') throw new Error('npm 市场构件缺少 tarball')
+    const tarballUrl = new URL(tarball)
+    const registryUrl = new URL(registry)
+    if (tarballUrl.protocol !== registryUrl.protocol || tarballUrl.host !== registryUrl.host) {
+      throw new Error(`npm 市场构件 tarball host 与 registry 不一致（${hostOf(registry)}）`)
+    }
+    if (integrity !== undefined && (typeof integrity !== 'string' || !/^[A-Za-z0-9_-]+-[A-Za-z0-9+/=_-]+$/u.test(integrity))) {
+      throw new Error('npm 市场构件完整性 metadata 不合法')
+    }
+    return {
+      registry,
+      version,
+      gitHead: gitHead.toLowerCase(),
+      tarball,
+      ...(typeof integrity === 'string' ? { integrity } : {}),
+      ...(typeof publishedAt === 'string' && verifiedPublishedAt(publishedAt) !== undefined ? { publishedAt } : {}),
+    }
   }
-  if (integrity !== undefined && (typeof integrity !== 'string' || !/^[A-Za-z0-9_-]+-[A-Za-z0-9+/=_-]+$/u.test(integrity))) {
-    throw new Error('npm 市场构件完整性 metadata 不合法')
+  const latest = parseRelease(latestVersion, latestRecord)
+  const releases = [latest]
+  for (const [version, record] of Object.entries(records)) {
+    if (version === latestVersion) continue
+    const parsed = parseVersion(version)
+    // Only stable versions below the published latest tag can be fallbacks;
+    // the update line never moves to an untagged newer build.
+    if (parsed === null || parsed.prerelease.length > 0 || compareVersions(version, latestVersion) >= 0) continue
+    try { releases.push(parseRelease(version, record)) } catch { /* older, unverifiable records are not fallback candidates */ }
   }
-  return {
-    registry,
-    version: latestVersion,
-    gitHead: gitHead.toLowerCase(),
-    tarball,
-    ...(typeof integrity === 'string' ? { integrity } : {}),
-    ...(typeof publishedAt === 'string' && verifiedPublishedAt(publishedAt) !== undefined ? { publishedAt } : {}),
-  }
+  releases.sort((left, right) => compareVersions(right.version, left.version))
+  return releases
 }
 
 async function fetchMarketRelease(
   registries: readonly string[],
   fetcher: typeof fetch,
-): Promise<{ release: MarketRelease; attempts: RegistryAttempt[] }> {
+): Promise<{ releases: MarketRelease[]; attempts: RegistryAttempt[] }> {
   const attempts: RegistryAttempt[] = []
   let lastKind: OperationFailure['kind'] = 'network'
   for (const registry of registries) {
@@ -307,20 +324,20 @@ async function fetchMarketRelease(
       attempts.push({ registry: hostOf(registry), outcome: 'invalid-json', cause: causeSummary(error) })
       throw new MarketMetadataError(`npm ${hostOf(registry)} 返回的市场 metadata 无法解析`, 'command', attempts)
     }
-    let release: MarketRelease | 'no-matching-version'
+    let releases: MarketRelease[] | 'no-matching-version'
     try {
-      release = releaseFromPackument(value, registry)
+      releases = releaseFromPackument(value, registry)
     } catch (error) {
       attempts.push({ registry: hostOf(registry), outcome: 'invalid-metadata', cause: causeSummary(error) })
       throw new MarketMetadataError(error instanceof Error ? error.message : String(error), 'command', attempts)
     }
-    if (release === 'no-matching-version') {
+    if (releases === 'no-matching-version') {
       lastKind = 'no-matching-version'
       attempts.push({ registry: hostOf(registry), outcome: 'no-matching-version' })
       continue
     }
     attempts.push({ registry: hostOf(registry), outcome: 'ok' })
-    return { release, attempts }
+    return { releases, attempts }
   }
   const detail = attempts.map(attempt => `${attempt.registry}=${attempt.outcome}`).join(', ')
   throw new MarketMetadataError(`所有配置的 npm 安装源均未返回可验证的市场版本（${detail}）`, lastKind, attempts)
@@ -341,8 +358,9 @@ export function createMarketUpdater(
   const loadedVersion = options.currentVersion ?? packageVersion()
   let installedVersion = loadedVersion
   const cacheMs = options.cacheMs ?? 5 * 60 * 1000
-  let cached: { checkedAt: number; status: MarketUpdateStatus; release: MarketRelease } | null = null
-  let latestRelease: MarketRelease | null = null
+  let cached: { checkedAt: number; status: MarketUpdateStatus; options: readonly MarketRelease[] } | null = null
+  let selectedRelease: MarketRelease | null = null
+  let releaseOptions: readonly MarketRelease[] = []
   let updating = false
   let restartRequired = false
   let activeOperation: string | null = null
@@ -386,9 +404,16 @@ export function createMarketUpdater(
     } : null
   }
 
-  const releaseStatus = (release: MarketRelease): MarketUpdateStatus => {
+  const releaseChoice = (options: readonly MarketRelease[]): { status: MarketUpdateStatus; release: MarketRelease } => {
+    const latest = options[0]!
+    const latestUpgrade = compareVersions(latest.version, installedVersion) > 0
+    const latestHold = latestUpgrade ? releaseAgeHold(latest) : null
+    // A protected latest release must not block a release that already left
+    // the observation window: prefer the newest installable version.
+    const release = latestHold === null ? latest
+      : options.find(option => compareVersions(option.version, installedVersion) > 0 && releaseAgeHold(option) === null) ?? latest
+    const held = release === latest ? latestHold : null
     const upgrade = compareVersions(release.version, installedVersion) > 0
-    const held = upgrade ? releaseAgeHold(release) : null
     const next: MarketUpdateStatus = {
       currentVersion: installedVersion, loadedVersion, latestVersion: release.version,
       updateAvailable: upgrade && held === null,
@@ -399,7 +424,7 @@ export function createMarketUpdater(
       }),
     }
     checkedReleases.set(next, release)
-    return next
+    return { status: next, release }
   }
 
   const reconcileInstalledVersion = (): void => {
@@ -411,13 +436,16 @@ export function createMarketUpdater(
     if (typeof dependency !== 'string' || dependency.trim() === '') return
     const version = packageManifest(profileDir, MARKET_NPM_PACKAGE)?.version
     if (typeof version !== 'string' || parseVersion(version) === null) return
-    const source = latestRelease?.version === version
-      ? { name: MARKET_NPM_PACKAGE, ...latestRelease }
-      : { name: MARKET_NPM_PACKAGE, version }
+    const known = releaseOptions.find(release => release.version === version)
+    const source = known === undefined ? { name: MARKET_NPM_PACKAGE, version } : { name: MARKET_NPM_PACKAGE, ...known }
     if (!validateNpmArtifact(profileDir, source).ok) return
     installedVersion = version
     restartRequired = installedVersion !== loadedVersion
-    if (cached !== null) cached.status = releaseStatus(cached.release)
+    if (cached !== null) {
+      const choice = releaseChoice(cached.options)
+      cached.status = choice.status
+      selectedRelease = choice.release
+    }
   }
 
   const setOperation = (operation: MarketUpdateOperation, patch: Partial<MarketUpdateOperation>): void => {
@@ -437,10 +465,11 @@ export function createMarketUpdater(
     let mutationStarted = false
     let lastResult: CommandResult | undefined
     let targetRelease: MarketRelease | undefined
-    let fallbackRelease: MarketRelease | undefined = cached !== null
-      && Date.now() - cached.checkedAt <= cacheMs
-      && compareVersions(cached.release.version, installedVersion) > 0
-      ? cached.release : undefined
+    const cachedTarget = cached !== null && Date.now() - cached.checkedAt <= cacheMs
+      ? checkedReleases.get(cached.status)
+      : undefined
+    let fallbackRelease: MarketRelease | undefined = cachedTarget !== undefined && compareVersions(cachedTarget.version, installedVersion) > 0
+      ? cachedTarget : undefined
     let managedArtifactMismatch = false
     const approval = pendingApprovals.get(operation.id)
     const managerOwned = runner.management !== undefined
@@ -499,7 +528,7 @@ export function createMarketUpdater(
         return
       }
       const checkedRelease = checkedReleases.get(before)
-      const currentRelease = latestRelease
+      const currentRelease = selectedRelease
       if (checkedRelease === undefined || checkedRelease.version !== before.latestVersion || currentRelease === null
         || !sameRelease(currentRelease, checkedRelease)) {
         const message = '版本检查结果已变化，请重新检查后再更新。'
@@ -516,7 +545,7 @@ export function createMarketUpdater(
         const target = failed?.failure?.releaseAgeTarget
         if (failed?.phase !== 'failed' || failed.failure !== approval.failure || failed.failure.action !== 'approve-release-age'
           || target?.packageName !== approval.target.packageName || target.version !== approval.target.version
-          || latestRelease === null || targetRelease === undefined || !sameRelease(approval.release, targetRelease) || !sameRelease(latestRelease, targetRelease)) {
+          || selectedRelease === null || targetRelease === undefined || !sameRelease(approval.release, targetRelease) || !sameRelease(selectedRelease, targetRelease)) {
           throw new Error('待批准的更新或精确版本已变化，请重新更新并核对提示。')
         }
         if (controller.signal.aborted) throw new Error('更新已取消')
@@ -674,8 +703,10 @@ export function createMarketUpdater(
       if (controller.signal.aborted && !managerOwned) throw new Error('更新已取消')
       installedVersion = materialized.version
       restartRequired = true
-      const next = releaseStatus(targetRelease)
-      cached = { checkedAt: Date.now(), status: next, release: targetRelease }
+      const options = releaseOptions.length > 0 ? releaseOptions : [targetRelease]
+      const choice = releaseChoice(options)
+      cached = { checkedAt: Date.now(), status: choice.status, options }
+      selectedRelease = choice.release
       setOperation(operation, {
         phase: 'done',
         ...(lastResult?.management?.application === undefined ? {} : { application: lastResult.management.application }),
@@ -685,7 +716,7 @@ export function createMarketUpdater(
         message: lastResult?.management?.application === 'overridden'
           ? '更新包版本已验证，但启用状态被其他配置覆盖；请在设置 → 插件核验，重启后仍可能未启用'
           : '更新完成，重启 DSH 后生效',
-        status: next,
+        status: choice.status,
       })
     } catch (error) {
       if (lastResult?.management?.application !== undefined) operation.application = lastResult.management.application
@@ -755,7 +786,7 @@ export function createMarketUpdater(
           }
           logEvent('error', 'market-update-recovery', recoveryError, operation.id)
         }
-        const verifiedFallback = fallbackRelease !== undefined && latestRelease === fallbackRelease
+        const verifiedFallback = fallbackRelease !== undefined && selectedRelease === fallbackRelease
           && compareVersions(fallbackRelease.version, installedVersion) > 0
           ? `${MARKET_NPM_PACKAGE}@${fallbackRelease.version}` : undefined
         if (verifiedFallback !== undefined && operation.failure !== undefined && operation.failure.fallbackSpec === undefined) {
@@ -789,13 +820,16 @@ export function createMarketUpdater(
     const registryKey = registries.join('\n')
     if (cached !== null && cachedRegistryKey !== null && cachedRegistryKey !== registryKey) {
       cached = null
-      latestRelease = null
+      selectedRelease = null
+      releaseOptions = []
     }
     if (!force && cached !== null && Date.now() - cached.checkedAt < cacheMs) {
-      cached.status = releaseStatus(cached.release)
-      return cached.status
+      const choice = releaseChoice(cached.options)
+      cached.status = choice.status
+      selectedRelease = choice.release
+      return choice.status
     }
-    let result: { release: MarketRelease; attempts: RegistryAttempt[] }
+    let result: { releases: readonly MarketRelease[]; attempts: RegistryAttempt[] }
     try {
       result = await fetchMarketRelease(registries, fetchLatest)
     } catch (error) {
@@ -803,12 +837,12 @@ export function createMarketUpdater(
       throw error
     }
     lastRegistryAttempts = result.attempts
-    const release = result.release
-    const next = releaseStatus(release)
-    latestRelease = release
+    releaseOptions = result.releases
+    const choice = releaseChoice(result.releases)
+    selectedRelease = choice.release
     cachedRegistryKey = registryKey
-    cached = { checkedAt: Date.now(), status: next, release }
-    return next
+    cached = { checkedAt: Date.now(), status: choice.status, options: result.releases }
+    return choice.status
   }
 
   const startUpdate = (approval?: MarketReleaseApproval): MarketUpdateOperation => {

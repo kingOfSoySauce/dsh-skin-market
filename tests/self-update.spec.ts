@@ -41,6 +41,23 @@ function latest(version: string, includeIntegrity = true, time: unknown = { [ver
   return vi.fn(async () => ({ ok: true, json: async () => ({ 'dist-tags': { latest: version }, time, versions: { [version]: { version, gitHead: 'c'.repeat(40), dist: { tarball: `https://registry.npmjs.org/dsh-skin-market/-/dsh-skin-market-${version}.tgz`, ...(includeIntegrity ? { integrity: REVIEWED_INTEGRITY } : {}) } } } }) })) as unknown as typeof fetch
 }
 
+function packument(latestVersion: string, releases: ReadonlyArray<{ version: string; published?: string; integrity?: string }>): typeof fetch {
+  const versions: Record<string, unknown> = {}
+  const time: Record<string, string> = {}
+  for (const release of releases) {
+    versions[release.version] = {
+      version: release.version,
+      gitHead: 'd'.repeat(40),
+      dist: {
+        tarball: `https://registry.npmjs.org/dsh-skin-market/-/dsh-skin-market-${release.version}.tgz`,
+        ...(release.integrity === undefined ? {} : { integrity: release.integrity }),
+      },
+    }
+    if (release.published !== undefined) time[release.version] = release.published
+  }
+  return vi.fn(async () => ({ ok: true, json: async () => ({ 'dist-tags': { latest: latestVersion }, time, versions }) })) as unknown as typeof fetch
+}
+
 function releaseAgeFailure(packageName = 'dsh-skin-market', version = '0.1.60'): CommandResult {
   const output = `[ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION] 1 lockfile entries failed verification:\n ${packageName}@${version} was published at 2026-10-15T07:47:31.608Z, within the minimumReleaseAge cutoff (2026-10-14T08:04:41.370Z)`
   return { exitCode: 1, stdout: '', stderr: output, timedOut: false, management: {
@@ -64,6 +81,61 @@ describe('market self update', () => {
     expect(status.updateAvailable).toBe(false)
     expect(status.updateBlockedReason).toContain('供应链安全观察期')
     expect(status.updateAvailableAt).toBeDefined()
+    expect(runner).not.toHaveBeenCalled()
+  })
+
+  it('updates to the newest release that already passed the Desktop release-age window', async () => {
+    const profileDir = installedProfile('0.1.59')
+    writeFileSync(join(profileDir, 'pnpm-workspace.yaml'), 'minimumReleaseAge: 1440\n')
+    const runner = vi.fn(async (_profile: string, args: readonly string[]) => {
+      if (args.includes(`${MARKET_NPM_PACKAGE}@0.1.60`)) materialize(profileDir, '0.1.60')
+      return { exitCode: 0, stdout: '', stderr: '', timedOut: false }
+    }) as unknown as PluginRunner
+    runner.hostKind = 'desktop'
+    const now = Date.now()
+    const updater = createMarketUpdater('desktop', runner, {
+      currentVersion: '0.1.59',
+      profileDir,
+      cacheMs: 0,
+      fetch: packument('0.1.61', [
+        { version: '0.1.60', published: new Date(now - 25 * 60 * 60 * 1000).toISOString(), integrity: REVIEWED_INTEGRITY },
+        { version: '0.1.61', published: new Date(now - 60 * 60 * 1000).toISOString(), integrity: REVIEWED_INTEGRITY },
+      ]),
+    })
+
+    const before = await updater.status()
+    expect(before).toMatchObject({ currentVersion: '0.1.59', latestVersion: '0.1.60', updateAvailable: true })
+    expect(before.updateBlockedReason).toBeUndefined()
+    expect(before.updateAvailableAt).toBeUndefined()
+
+    await updater.update()
+    expect(runner).toHaveBeenCalledTimes(1)
+    expect(runner.mock.calls[0]?.[1]).toEqual(expect.arrayContaining([`${MARKET_NPM_PACKAGE}@0.1.60`]))
+    expect(runner.mock.calls[0]?.[1]).not.toContain(`${MARKET_NPM_PACKAGE}@0.1.61`)
+
+    const after = await updater.status()
+    expect(after).toMatchObject({ currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: false })
+    expect(after.updateBlockedReason).toContain('供应链安全观察期')
+  })
+
+  it('does not fall back to a release or prerelease whose age cannot be verified', async () => {
+    const profileDir = installedProfile('0.1.59')
+    writeFileSync(join(profileDir, 'pnpm-workspace.yaml'), 'minimumReleaseAge: 1440\n')
+    const runner = vi.fn(async () => ({ exitCode: 0, stdout: '', stderr: '', timedOut: false })) as unknown as PluginRunner
+    runner.hostKind = 'desktop'
+    const now = Date.now()
+    const updater = createMarketUpdater('desktop', runner, {
+      currentVersion: '0.1.59', profileDir,
+      fetch: packument('0.1.61', [
+        { version: '0.1.60-rc.1', published: new Date(now - 25 * 60 * 60 * 1000).toISOString(), integrity: REVIEWED_INTEGRITY },
+        { version: '0.1.60', integrity: REVIEWED_INTEGRITY },
+        { version: '0.1.61', published: new Date(now - 60 * 60 * 1000).toISOString(), integrity: REVIEWED_INTEGRITY },
+      ]),
+    })
+    const status = await updater.status()
+    expect(status.updateAvailable).toBe(false)
+    expect(status.latestVersion).toBe('0.1.61')
+    expect(status.updateBlockedReason).toContain('供应链安全观察期')
     expect(runner).not.toHaveBeenCalled()
   })
 

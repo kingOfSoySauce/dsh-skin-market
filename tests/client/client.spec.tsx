@@ -815,20 +815,49 @@ describe('client market', () => {
     expect(screen.queryByRole('dialog', { name: '需要重启 DSH 应用皮肤市场更新' })).toBeNull()
   })
 
-  it('explains a Desktop release-age hold without offering a guaranteed-to-fail button', async () => {
+  it('keeps a Desktop release-age hold silent without offering a dead update action', async () => {
+    let marketUpdateChecks = 0
     const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
       if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
       if (url.endsWith('/market-update') && init?.method === 'POST') return { ok: true, json: async () => ({ currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: true,
-        updateBlockedReason: '旧版服务推断的新包保护', packageOperationsWarning: '旧版服务推断的安装风险', updateAvailableAt: new Date(Date.now() + 60_000).toISOString() }) }
+      if (url.endsWith('/market-update')) {
+        marketUpdateChecks += 1
+        return { ok: true, json: async () => ({ currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: true,
+          updateBlockedReason: '旧版服务推断的新包保护', packageOperationsWarning: '旧版服务推断的安装风险', updateAvailableAt: new Date(Date.now() + 60_000).toISOString() }) }
+      }
       throw new Error(`Unexpected request: ${url}`)
     })
     vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
+    const install = await screen.findByRole('button', { name: '安装并使用' })
+    await waitFor(() => expect(marketUpdateChecks).toBeGreaterThan(0))
+    expect(install.hasAttribute('disabled')).toBe(false)
     expect(screen.queryByRole('button', { name: '更新皮肤市场到 0.1.61' })).toBeNull()
-    expect(await screen.findByText('旧版服务推断的新包保护')).toBeTruthy()
-    expect((await screen.findByRole('button', { name: '安装并使用' })).hasAttribute('disabled')).toBe(false)
+    expect(screen.queryByText('旧版服务推断的新包保护')).toBeNull()
+  })
+
+  it('reveals the update action when a release-age hold expires', async () => {
+    vi.useFakeTimers({ toFake: ['setTimeout', 'Date'] })
+    try {
+      let held = true
+      const availableAt = new Date(Date.now() + 60_000).toISOString()
+      vi.stubGlobal('fetch', vi.fn(async (url: string) => {
+        if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
+        if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
+        if (url.endsWith('/market-update')) return { ok: true, json: async () => held
+          ? { currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: false, updateBlockedReason: '供应链安全观察期', updateAvailableAt: availableAt }
+          : { currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: true } }
+        throw new Error(`Unexpected request: ${url}`)
+      }))
+      render(<SkinMarketSection t={key => key} />)
+      await act(async () => { await vi.advanceTimersByTimeAsync(0) })
+      expect(screen.getByRole('button', { name: '安装并使用' })).toBeTruthy()
+      expect(screen.queryByRole('button', { name: '更新皮肤市场到 0.1.61' })).toBeNull()
+      held = false
+      await act(async () => { await vi.advanceTimersByTimeAsync(61_000) })
+      expect(screen.getByRole('button', { name: '更新皮肤市场到 0.1.61' })).toBeTruthy()
+    } finally { vi.useRealTimers() }
   })
 
   it('keeps the real Desktop restart reminder while a market update is available', async () => {
