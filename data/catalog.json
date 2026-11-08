@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T14:38:11.468Z",
+  "generatedAt": "2026-11-08T15:29:56.370Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -58483,19 +58483,16 @@
         "dark"
       ],
       "install": {
-        "target": "github:zkforge/dsh-claude-desktop-theme#0a37136961be639e55bbbf1a4e24590f8e504ca5",
+        "target": "github:zkforge/dsh-claude-desktop-theme#0bda59ab167074e5753fd7415bf55e8dbb2a6886",
         "version": "0.10.3",
-        "commit": "0a37136961be639e55bbbf1a4e24590f8e504ca5",
+        "commit": "0bda59ab167074e5753fd7415bf55e8dbb2a6886",
         "desktop": {
-          "mode": "managed",
-          "registry": "npm",
-          "packageName": "dsh-claude-desktop-theme",
-          "packageVersion": "0.10.3",
-          "integrity": "sha512-uQysrwZe2KsNgnBP69/zOuyIN9inAAbsh1/ulgIsEsWbk9KdPa42eLnAGbw0he+ehjSmOjZhGZVa4bLuV6ckwQ=="
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
         }
       },
       "compatibility": {
-        "dsh": ">=0.2.1-rc.3 <0.3.0-0",
+        "dsh": "0.2.0-rc.2",
         "platform": [
           "web"
         ]
@@ -59868,13 +59865,6 @@
       "integrity": "sha512-xJomEZAwgneCjCg8I+EAFn/arSYjWzTpfRKk7Pz6vX+dnjIIkIxUeceFeqfjVDrEUf5ZfLPI6PKdfFzGlaEo7w==",
       "repository": "https://github.com/zhu1090093659/dsh-pet",
       "gitHead": "ae2c9d443eda35a6439597c1787c7607e988bbed"
-    },
-    "zkforge.dsh-claude-desktop-theme": {
-      "name": "dsh-claude-desktop-theme",
-      "version": "0.10.3",
-      "integrity": "sha512-uQysrwZe2KsNgnBP69/zOuyIN9inAAbsh1/ulgIsEsWbk9KdPa42eLnAGbw0he+ehjSmOjZhGZVa4bLuV6ckwQ==",
-      "repository": "https://github.com/zkforge/dsh-claude-desktop-theme",
-      "gitHead": "0a37136961be639e55bbbf1a4e24590f8e504ca5"
     },
     "zmm863-commits.dsh-client-ui-paopaocat": {
       "name": "dsh-client-ui-paopaocat",

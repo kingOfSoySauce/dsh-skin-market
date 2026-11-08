@@ -15,23 +15,14 @@ modes:
   - light
   - dark
 install:
-  target: github:zkforge/dsh-claude-desktop-theme#0a37136961be639e55bbbf1a4e24590f8e504ca5
+  target: github:zkforge/dsh-claude-desktop-theme#0bda59ab167074e5753fd7415bf55e8dbb2a6886
   version: 0.10.3
-  commit: 0a37136961be639e55bbbf1a4e24590f8e504ca5
+  commit: 0bda59ab167074e5753fd7415bf55e8dbb2a6886
   desktop:
-    mode: managed
-    registry: npm
-    packageName: dsh-claude-desktop-theme
-    packageVersion: 0.10.3
-    integrity: sha512-uQysrwZe2KsNgnBP69/zOuyIN9inAAbsh1/ulgIsEsWbk9KdPa42eLnAGbw0he+ehjSmOjZhGZVa4bLuV6ckwQ==
-  npm:
-    name: dsh-claude-desktop-theme
-    version: 0.10.3
-    integrity: sha512-uQysrwZe2KsNgnBP69/zOuyIN9inAAbsh1/ulgIsEsWbk9KdPa42eLnAGbw0he+ehjSmOjZhGZVa4bLuV6ckwQ==
-    repository: https://github.com/zkforge/dsh-claude-desktop-theme
-    gitHead: 0a37136961be639e55bbbf1a4e24590f8e504ca5
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: ">=0.2.1-rc.3 <0.3.0-0"
+  dsh: 0.2.0-rc.2
   platform:
     - web
 screenshots:
