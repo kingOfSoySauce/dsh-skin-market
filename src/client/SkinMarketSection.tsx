@@ -18,7 +18,7 @@ import { compareCatalogOrder, getCatalogListScreenshot, getCatalogScreenshotUrls
 import { generatedMediaFor, generatedMediaManifestUrl, generatedMediaUrl, parseGeneratedMediaManifest, previewSourceCandidates, setGeneratedMediaSources } from '../media-preview.ts'
 import { useLazyMedia } from '../media-visibility.ts'
 import { browserCatalogCache, type CatalogCache } from './catalog-cache.ts'
-import { createFailureRepairPrompt, existingSourceGuide, interceptNotice, isInterceptFailure, marketUpdateNotice } from './failure-help.ts'
+import { conflictInstallCopy, createFailureRepairPrompt, existingSourceGuide, interceptNotice, isInterceptFailure, marketUpdateNotice } from './failure-help.ts'
 import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, REGISTRY_REPOSITORY } from './submission.ts'
 import { probeClientSkinSelection, switchClientSkin, type ClientSkinExpectation, type ClientSkinRuntime, type ClientSkinSelectionStatus } from './index.ts'
 import { displayTitle, githubRepoLabel } from '../display-title.ts'
@@ -104,7 +104,7 @@ interface ActivationConflict {
 interface CompatibilityConfirmation {
   skin: CatalogSkin
   /** Install was blocked by enabled skins. Confirm closes them and retries the install. */
-  installConflict?: { operationId: string }
+  installConflict?: { operationId: string; summary: string }
   assessment: CompatibilityAssessment
   actionLabel: string
   context: string
@@ -2475,6 +2475,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     const matches = enabledSkinsForInstallConflict(operation, skins, states)
     const target = skins.find(skin => skin.id === operation.skinId)
     if (matches.length === 0 || target === undefined) return
+    const summary = conflictInstallCopy(operation.failure?.conflicts, t).summary
+    if (summary === undefined) return
     conflictCloseTried.current.add(operation.skinId)
     const assessmentFor = (skin: CatalogSkin) => installCompatibility(skin, 'dsh', runtime, t) ?? { decision: 'unknown' as const, reason: t('common.unknownDshVersionInstall'), adapterIds: [] }
     setCompatibilityConfirmation({
@@ -2486,7 +2488,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       pin: false,
       kind: 'activate',
       conflicts: matches.map(skin => ({ skin, state: runtimeFor(states, skin.id), keep: false, assessment: assessmentFor(skin), artifactRisk: runtimeFor(states, skin.id).artifactRisk })),
-      installConflict: { operationId: operation.id },
+      installConflict: { operationId: operation.id, summary },
     })
   }, [compatibilityConfirmation, dismissedNoticeIds, operations, runtime, skins, states, t])
 
@@ -3579,13 +3581,13 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         title={compatibilityConfirmation?.installConflict !== undefined || compatibilityConfirmation?.kind === 'deactivate' || compatibilityConfirmation?.kind === 'unpin' ? t('common.operationConfirmation') : t('common.switchConfirmation')}
         closeLabel={t('common.close')}
         className={css.warningModal}
-        description={compatibilityConfirmation?.installConflict !== undefined ? t('failure.conflictCloseFirst') : compatibilityConfirmation === null ? undefined : describeUseConfirmation({
+        description={compatibilityConfirmation?.installConflict?.summary ?? (compatibilityConfirmation === null ? undefined : describeUseConfirmation({
           ...compatibilityConfirmation,
           assessment: compatibilityConfirmation.kind === 'activate' || compatibilityConfirmation.kind === 'pin' ? compatibilityConfirmation.assessment : undefined,
           name: localizedSkinName(compatibilityConfirmation.skin.name, t),
           version: compatibilityConfirmation.skin.install.version,
           hasConflictSelection: activationDialogConflicts.length > 0,
-        }, t)}
+        }, t))}
         footer={activationDialogConflicts.length > 0 ? <>
           <Button variant="outline" size="sm" onClick={() => finishCompatibilityConfirmation(true, allClosedPreservedSkinIds)}>{t('common.closeAllAndContinue')}</Button>
           <Button variant="primary" size="sm" onClick={() => finishCompatibilityConfirmation(true)}>{activationSelectionLabel(activationDialogConflicts, t)}</Button>

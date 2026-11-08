@@ -376,7 +376,7 @@ describe('failure help', () => {
       conflicts: [{ kind: 'loader', incoming: skin.package, existing: 'other-skin', identifiers: ['theme.row'] }],
     } })
     const notice = interceptNotice(operation, '测试皮肤', skin)
-    expect(notice.details).toEqual(['与已安装的 other-skin 冲突，标识 theme.row。'])
+    expect(notice.details).toEqual(['「other-skin」正在使用，与这次安装冲突，标识 theme.row。先关闭再继续安装。'])
     expect(notice.why).toBe('请先在官方插件页停用或卸载 other-skin，再安装这个皮肤。')
     expect(notice.copySpec).toBe(skin.package)
     const prompt = createFailureRepairPrompt({ operation, skin, hostKind: 'dsh' })

@@ -307,28 +307,24 @@ export function failureHelpLinks(options: FailureHelpSubject, t: Translator = de
   return [troubleshootLink]
 }
 
-function describeConflicts(conflicts: NonNullable<Operation['failure']>['conflicts'] | undefined, t: Translator): { lines: string[]; handle?: string } {
+export function conflictInstallCopy(conflicts: NonNullable<Operation['failure']>['conflicts'] | undefined, t: Translator = defaultTranslator): { summary?: string; handle?: string } {
   const rows = conflicts ?? []
-  const lines = rows.map(conflict => {
-    const identifiers = conflict.identifiers.map(identifier => identifier.trim()).filter(identifier => identifier !== '')
-    return t('failure.conflictLine', {
-      existing: conflict.existing,
-      identifiers: identifiers.length === 0 ? '' : t('failure.conflictIdentifiers', { identifiers: identifiers.join('、') }),
-    })
-  })
   const existing = [...new Set(rows.map(conflict => conflict.existing.trim()).filter(name => name !== ''))]
-  const handle = existing.length === 0 ? undefined
-    : existing.length === 1 ? t('failure.conflictHandleOne', { existing: existing[0] })
-      : t('failure.conflictHandleMany', { existing: existing.join('、') })
-  return { lines, handle }
+  const identifiers = [...new Set(rows.flatMap(conflict => conflict.identifiers.map(identifier => identifier.trim()).filter(identifier => identifier !== '')))]
+  if (existing.length === 0) return {}
+  const summary = t('failure.conflictInUse', {
+    existing: existing.join('、'),
+    identifiers: identifiers.length === 0 ? '' : t('failure.conflictIdentifiers', { identifiers: identifiers.join('、') }),
+  })
+  return { summary, handle: t('failure.conflictHandle', { existing: existing.join('、') }) }
 }
 
 function conflictPromptFacts(operation: Operation, skin: CatalogSkin, t: Translator): string | null {
   if (operation.failure?.kind !== 'conflict') return null
-  const described = describeConflicts(operation.failure.conflicts, t)
-  if (described.lines.length === 0 && described.handle === undefined) return null
+  const described = conflictInstallCopy(operation.failure.conflicts, t)
+  if (described.summary === undefined && described.handle === undefined) return null
   return [
-    ...described.lines,
+    ...(described.summary === undefined ? [] : [described.summary]),
     described.handle ?? t('failure.conflictNext'),
     t('failure.conflictPackage', { packageName: skin.package }),
     t('failure.conflictTarget', { target: skin.install.target }),
@@ -488,13 +484,13 @@ export function interceptNotice(operation: Operation, skinName: string, skin?: (
     }
   }
   if (operation.failure?.kind === 'conflict' || raw.includes('发现插件安装冲突')) {
-    const described = describeConflicts(operation.failure?.conflicts, t)
+    const described = conflictInstallCopy(operation.failure?.conflicts, t)
     return {
       title: t('failure.installBlocked'),
       what: t('failure.conflict', { name: skinName }),
       why: described.handle ?? t('failure.conflictNext'),
       links,
-      ...(described.lines.length === 0 ? {} : { details: described.lines }),
+      ...(described.summary === undefined ? {} : { details: [described.summary] }),
       ...(skin?.package?.trim() ? { copySpec: skin.package } : {}),
     }
   }
