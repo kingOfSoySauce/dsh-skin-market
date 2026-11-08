@@ -3,7 +3,7 @@ name:
   zh: DSH 官网风格皮肤
   en: DSH Official-Site Style Skin
 author: kleinklein0824
-description: DeepSeek 官网风格皮肤：深蓝宇宙感背景（流体极光 + 粒子鲸鱼 + 星座网格）与浅色玻璃主题，右上角一键切换。
+description: DeepSeek 官网风格皮肤：深蓝宇宙感背景（流体极光 + 粒子鲸鱼 + 星座网格）与浅色玻璃主题，右上角一键切换
 repo: https://github.com/kleinklein0824/dsh-official-skin
 package: dsh-official-skin
 rowId: official-skin
@@ -14,29 +14,29 @@ modes:
   - light
   - dark
 install:
-  target: github:kleinklein0824/dsh-official-skin#2e9f93060ed10f043843e69c53bb79985bdd0265
-  version: 1.1.6
-  commit: 2e9f93060ed10f043843e69c53bb79985bdd0265
+  target: github:kleinklein0824/dsh-official-skin#fcb3d640561b329cd827c6935edc581db02f0320
+  version: 1.1.8
+  commit: fcb3d640561b329cd827c6935edc581db02f0320
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-official-skin
-    packageVersion: 1.1.6
-    integrity: sha512-lsiIQHiaMHiWqCYR9lKSLrei7zs1npzED13vfS1TPHhQmmClIYBPBhj9ljOGhHl/4B3wY0YVciFsIvcmoidY9g==
+    packageVersion: 1.1.8
+    integrity: sha512-Vfx+DuSGW3X//mWdnuPp4TKpo+3kVSF3dqSz+4ugG+PWvW0c93OfnI/XuFSZdlCVeSODSUcTgpJ2Wq8lnMD41g==
   npm:
     name: dsh-official-skin
-    version: 1.1.6
-    integrity: sha512-lsiIQHiaMHiWqCYR9lKSLrei7zs1npzED13vfS1TPHhQmmClIYBPBhj9ljOGhHl/4B3wY0YVciFsIvcmoidY9g==
+    version: 1.1.8
+    integrity: sha512-Vfx+DuSGW3X//mWdnuPp4TKpo+3kVSF3dqSz+4ugG+PWvW0c93OfnI/XuFSZdlCVeSODSUcTgpJ2Wq8lnMD41g==
     repository: https://github.com/kleinklein0824/dsh-official-skin
-    gitHead: 2e9f93060ed10f043843e69c53bb79985bdd0265
+    gitHead: fcb3d640561b329cd827c6935edc581db02f0320
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/c750ce1c6e54d52667e8bb34600e799f0b62a24c/docs/preview-dark.png
-  - https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/c750ce1c6e54d52667e8bb34600e799f0b62a24c/docs/preview-light.png
-listScreenshot: https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/0b817f109959bb3f19eef1a590d918bc5d69bb67/docs/preview-dark.png
+  - https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/fcb3d640561b329cd827c6935edc581db02f0320/docs/preview-dark.png
+  - https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/fcb3d640561b329cd827c6935edc581db02f0320/docs/preview-light.png
+listScreenshot: https://raw.githubusercontent.com/kleinklein0824/dsh-official-skin/fcb3d640561b329cd827c6935edc581db02f0320/docs/preview-dark.png
 review:
   compatibility: unverified
   preview: verified
@@ -52,19 +52,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 2e9f93060ed10f043843e69c53bb79985bdd0265
-    packageVersion: 1.1.6
+    commit: fcb3d640561b329cd827c6935edc581db02f0320
+    packageVersion: 1.1.8
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-07T05:34:15.655Z
+    checkedAt: 2026-11-08T00:17:52.811Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-07T05:34:16.291Z
-metadataUpdatedAt: 2026-11-07T05:34:16.291Z
-starsUpdatedAt: 2026-11-04T01:48:23.346Z
-updatedAt: 2026-11-07T05:34:16.291Z
+releaseUpdatedAt: 2026-11-08T00:17:53.173Z
+metadataUpdatedAt: 2026-11-08T00:17:53.173Z
+starsUpdatedAt: 2026-11-08T00:06:46.841Z
+updatedAt: 2026-11-08T00:17:53.173Z

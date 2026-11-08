@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-07T05:35:17.232Z",
+  "generatedAt": "2026-11-08T00:18:46.928Z",
   "historyDays": 71,
   "earliestObservedDay": 20681,
   "repos": {
@@ -1282,11 +1282,16 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-07": {
+          "commits": 0,
+          "pulls": 2,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 2,
-        "pulls": 1,
+        "pulls": 3,
         "issues": 1
       },
       "forks": 2,
@@ -2363,12 +2368,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-07": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 23,
         "pulls": 4,
-        "issues": 17
+        "issues": 18
       },
       "forks": 10,
       "watchers": 4,
@@ -3393,11 +3403,16 @@
           "commits": 0,
           "pulls": 1,
           "issues": 2
+        },
+        "2026-11-07": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 1447,
-        "pulls": 107,
+        "pulls": 108,
         "issues": 140
       },
       "forks": 78,
@@ -3664,12 +3679,17 @@
           "commits": 0,
           "pulls": 1,
           "issues": 0
+        },
+        "2026-11-07": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 2
         }
       },
       "totals": {
         "commits": 7,
         "pulls": 1,
-        "issues": 1
+        "issues": 3
       },
       "forks": 0,
       "watchers": 0,
@@ -4743,19 +4763,6 @@
     },
     "huanlinoto/dsh-plugin-better-sidebar-plugin-audio": {
       "owner": "HuanLinOTO",
-      "createdAt": null,
-      "daily": {},
-      "totals": {
-        "commits": 0,
-        "pulls": 0,
-        "issues": 0
-      },
-      "forks": 0,
-      "watchers": 0,
-      "truncated": false
-    },
-    "huihuangddfs/dsh-codex-mini-pet": {
-      "owner": "HuiHuangDDFS",
       "createdAt": null,
       "daily": {},
       "totals": {
@@ -8816,14 +8823,14 @@
         },
         "2026-11-07": {
           "commits": 0,
-          "pulls": 0,
-          "issues": 2
+          "pulls": 4,
+          "issues": 8
         }
       },
       "totals": {
         "commits": 0,
-        "pulls": 6,
-        "issues": 27
+        "pulls": 10,
+        "issues": 33
       },
       "forks": 0,
       "watchers": 0,
@@ -10450,12 +10457,17 @@
           "commits": 0,
           "pulls": 0,
           "issues": 2
+        },
+        "2026-11-07": {
+          "commits": 0,
+          "pulls": 0,
+          "issues": 1
         }
       },
       "totals": {
         "commits": 439,
         "pulls": 29,
-        "issues": 109
+        "issues": 110
       },
       "forks": 88,
       "watchers": 3,
@@ -12981,11 +12993,16 @@
           "commits": 0,
           "pulls": 0,
           "issues": 1
+        },
+        "2026-11-07": {
+          "commits": 0,
+          "pulls": 1,
+          "issues": 0
         }
       },
       "totals": {
         "commits": 8,
-        "pulls": 5,
+        "pulls": 6,
         "issues": 9
       },
       "forks": 0,

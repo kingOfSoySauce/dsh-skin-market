@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:HuanLinOTO/dsh-plugin-better-sidebar-plugin-audio#9e59a980a6da85b92697412b8c239bdf5d6bbf66
+  target: github:HuanLinOTO/dsh-plugin-better-sidebar-plugin-audio#9566aee377ada2cb862e8bfd194b2d33bb4fe23c
   version: 0.1.0
-  commit: 9e59a980a6da85b92697412b8c239bdf5d6bbf66
+  commit: 9566aee377ada2cb862e8bfd194b2d33bb4fe23c
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -25,7 +25,7 @@ install:
     version: 0.1.0
     integrity: sha512-c7i3QlWljT+tb0I5VcU0DlmsL5WC6mo+6MSnnLudZF3h4MWe7jclcWXbSh09ZmqVXacaTqF396gfUtu9RLhIkg==
     repository: https://github.com/HuanLinOTO/dsh-plugin-better-sidebar-plugin-audio
-    gitHead: 9e59a980a6da85b92697412b8c239bdf5d6bbf66
+    gitHead: 9566aee377ada2cb862e8bfd194b2d33bb4fe23c
 compatibility:
   dsh: unverified
   platform:
@@ -51,19 +51,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 9e59a980a6da85b92697412b8c239bdf5d6bbf66
+    commit: 9566aee377ada2cb862e8bfd194b2d33bb4fe23c
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:09:01.229Z
+    checkedAt: 2026-11-08T00:17:44.231Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 4
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T23:00:28.784Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-08T00:17:45.052Z
+metadataUpdatedAt: 2026-11-08T00:17:45.052Z
 starsUpdatedAt: 2026-11-06T00:08:18.130Z
-updatedAt: 2026-11-06T00:08:18.130Z
+updatedAt: 2026-11-08T00:17:45.052Z
