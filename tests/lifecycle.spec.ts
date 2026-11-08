@@ -1325,6 +1325,15 @@ describe('skin lifecycle', () => {
     expect(readMarketState(dir).pendingRestart?.stoppedSkinIds ?? []).not.toContain(one.id)
   })
 
+  it('resolves a managed host-only row with a built-in module name through its owner package', async () => {
+    const { dir, skins: [one], lifecycle } = webSelectionFixture()
+    writeMarketState(dir, { ...readMarketState(dir), managedLoaders: {
+      'preset-fairy': { id: 'preset-fairy', name: '@deepseek-ai/dsh-agent-preset', packageName: one.package, ownerSkinIds: [one.id] },
+    } })
+    const state = lifecycle.states().find(state => state.skinId === one.id)!
+    expect(state.selectionClientTargets).toContainEqual({ package: one.package, active: true })
+  })
+
   it('keeps pinned Web skins live and does not invent a receipt when removing the current primary pin', async () => {
     const { dir, skins: [one, two, pinned], entries, lifecycle, updates } = webSelectionFixture()
     await finished(lifecycle.begin('pin', pinned.id))

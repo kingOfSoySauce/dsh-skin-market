@@ -1245,6 +1245,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     }
     const expected: ClientSkinExpectation[] = completeTargets !== undefined ? completeTargets
       : [...fallbackTargets].map(([packageName, active]) => ({ package: packageName, active }))
+    const ownedPackages = new Set([...webClientPackages.current.values()].flat())
+    const foreignTargets = expected.filter(target => !ownedPackages.has(target.package))
     const result = probeClientSkinSelection(clientRuntime, expected)
     webClientResult.current = JSON.stringify(result)
     const softSelections = state.skins.filter(item => item.restartSource === 'selection' && item.activation === 'restart-required')
@@ -1254,18 +1256,14 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     const selectionKey = JSON.stringify([state.instanceId, state.restartNoticeId, [...expected].sort((a, b) => a.package.localeCompare(b.package))])
     let visibleResult = result
     let retryAt: number | null = null
-    let hostError: string | undefined
     if (hostSelections.length > 0) {
-      if (!hasCompleteTargets || hostSelections.some(item => item.selectionHostStatus === 'unavailable'
+      if (hostSelections.some(item => item.selectionHostStatus === 'unavailable'
         || item.selectionHostApplied !== true && item.selectionHostStatus === undefined)) {
         visibleResult = { status: 'unavailable', activity: 'unknown' }
-        hostError = !hasCompleteTargets ? t('common.dshComponentTargetsIncomplete') : t('common.dshComponentUnknown')
       } else if (visibleResult.status !== 'unavailable' && hostSelections.some(item => item.selectionHostStatus === 'switching')) {
         visibleResult = { status: 'switching', activity: 'loading' }
-        hostError = t('common.dshComponentLoading')
       } else if (visibleResult.status !== 'unavailable' && visibleResult.status !== 'switching' && hostSelections.some(item => item.selectionHostApplied !== true)) {
         visibleResult = { status: 'restart-required', activity: 'missing' }
-        hostError = t('common.dshComponentNotLoaded')
       }
     }
     if (hostPending) {
@@ -1278,7 +1276,6 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       if (Date.now() < deadline) {
         retryAt = Math.min(retryAt ?? deadline, deadline)
         visibleResult = { ...visibleResult, status: 'switching' }
-        hostError = undefined
       }
     } else webClientGrace.current = null
     setWebClientRetryAt(retryAt)
@@ -1326,6 +1323,13 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     }
     const skins = state.skins.map<RuntimeSkin>(item => {
       const softSelection = item.activation === 'restart-required' && item.restartSource === 'selection'
+      const packages = webClientPackages.current.get(item.skinId) ?? []
+      // A stop receipt stays until the host restarts. The browser module can
+      // disappear while theme variables or other host effects are still live,
+      // so an absent module alone is not proof that disabling is complete.
+      if (item.activation === 'restart-required' && item.restartOnlyToStop === true) {
+        return { ...item, activation: 'restart-required', error: undefined }
+      }
       // A Web restart receipt is only useful while the requested module is
       // absent. Once the browser loader reports the requested skin active,
       // the live module is stronger evidence than any earlier install/Host
@@ -1338,40 +1342,46 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           clientRestartNotices.current.delete(item.skinId)
           return { ...item, activation: 'active', error: undefined }
         }
-        // The mirror case: the saved selection is disabled and the browser
-        // loader confirms the running module is gone. Stopping has already
-        // taken effect, so a restart is no longer required and the card can
-        // return to its installed/inactive state.
-        if (item.restartOnlyToStop === true && skin !== undefined && !selected.has(item.skinId)) {
-          const owned = webClientPackages.current.get(item.skinId) ?? [skin.package]
-          const stopped = probeClientSkinSelection(clientRuntime, owned.map(packageName => ({ package: packageName, active: false })))
-          if (stopped.status === 'applied') {
-            requestReceiptClear(item.skinId)
-            clientRestartNotices.current.delete(item.skinId)
-            return { ...item, activation: 'inactive', error: undefined }
-          }
-        }
         if (!softSelection) return item
       }
       if (item.activation !== 'active' && item.activation !== 'inactive' && !softSelection) return item
-      const packages = webClientPackages.current.get(item.skinId) ?? []
       if (!softSelection && packages.length === 0 && !(hasCompleteTargets && webSelectionSkinIds.current.has(item.skinId))) return item
-      let status = visibleResult
-      if (!hasCompleteTargets && !softSelection && !selected.has(item.skinId)) {
-        const ownTargets = expected.filter(target => packages.includes(target.package))
-        const ownResult = probeClientSkinSelection(clientRuntime, ownTargets)
-        status = ownResult.status === 'restart-required' && visibleResult.status === 'switching' ? { ...ownResult, status: 'switching' } : ownResult
+      // Judge each skin by its own browser packages. One unrelated failed
+      // module must not turn every other installed skin into "not applied".
+      const ownTargets = expected.filter(target => packages.includes(target.package)
+        || selected.has(item.skinId) && foreignTargets.some(foreign => foreign.package === target.package))
+      let status = ownTargets.length > 0 ? probeClientSkinSelection(clientRuntime, ownTargets) : visibleResult
+      // A selected skin's own probe can say "missing" while the complete host
+      // selection is still settling. Keep the shared settle window instead of
+      // flashing a restart prompt before the graph has finished switching.
+      if (visibleResult.status === 'switching' && status.status === 'restart-required') {
+        status = { ...status, status: 'switching' }
+      }
+      let itemHostError: string | undefined
+      if (hostSelections.includes(item)) {
+        const hostStatus = item.selectionHostStatus
+        if (hostStatus === 'unavailable' || item.selectionHostApplied !== true && hostStatus === undefined) {
+          status = { status: 'unavailable', activity: 'unknown' }
+          itemHostError = t('common.dshComponentUnknown')
+        } else if (status.status !== 'unavailable' && status.status !== 'switching' && hostStatus === 'switching') {
+          status = { status: 'switching', activity: 'loading' }
+          itemHostError = t('common.dshComponentLoading')
+        } else if (status.status !== 'unavailable' && status.status !== 'switching' && item.selectionHostApplied !== true) {
+          status = { status: 'restart-required', activity: 'missing' }
+          itemHostError = t('common.dshComponentNotLoaded')
+        }
       }
       // The browser state now owns this tab's client-only reminder, including
       // asynchronous recovery after an earlier missing-entry observation.
       if (clientRuntime.probeActive !== undefined) clientRestartNotices.current.delete(item.skinId)
       if (status.status === 'applied') {
+        if (item.restartOnlyToStop === true) return { ...item, activation: 'restart-required', error: undefined }
         if (!selected.has(item.skinId)) requestReceiptClear(item.skinId)
         return softSelection && item.selectionHostApplied === true
           && (hasCompleteTargets || packages.length > 0)
           ? { ...item, activation: selected.has(item.skinId) ? 'active' : 'inactive', error: undefined } : item
       }
-      return { ...item, activation: status.status === 'unavailable' ? 'unavailable' : status.status, error: hostError ?? webClientSelectionError(status, t) }
+      return { ...item, activation: status.status === 'unavailable' ? 'unavailable' : status.status, error: itemHostError ?? webClientSelectionError(status, t) }
     })
     return { ...state, skins }
   }, [clientRuntime, t])

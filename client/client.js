@@ -297,156 +297,156 @@ window.__ModuleLoader__.load({
 			document.head.appendChild(tag);
 		}
 		var SkinMarket_module_css_default = {
-			"browserHomeBack": "VqXecW_browserHomeBack",
-			"hero": "VqXecW_hero",
-			"headerDiscover": "VqXecW_headerDiscover",
-			"sparkEnd": "VqXecW_sparkEnd",
-			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
-			"homeTitleRow": "VqXecW_homeTitleRow",
-			"catalog": "VqXecW_catalog",
-			"root": "VqXecW_root",
-			"browserModal": "VqXecW_browserModal",
-			"statusLabel": "VqXecW_statusLabel",
-			"feedMeta": "VqXecW_feedMeta",
-			"browser": "VqXecW_browser",
-			"operationDiagnostics": "VqXecW_operationDiagnostics",
-			"browserPanel": "VqXecW_browserPanel",
-			"lightbox": "VqXecW_lightbox",
-			"cardDescription": "VqXecW_cardDescription",
-			"operation": "VqXecW_operation",
-			"cardTitle": "VqXecW_cardTitle",
-			"home": "VqXecW_home",
-			"homeCardCopy": "VqXecW_homeCardCopy",
-			"warningModal": "VqXecW_warningModal",
-			"skinCard": "VqXecW_skinCard",
-			"interceptHelp": "VqXecW_interceptHelp",
-			"copyCapsule": "VqXecW_copyCapsule",
-			"installedRow": "VqXecW_installedRow",
-			"homeGithubLabel": "VqXecW_homeGithubLabel",
-			"titleBlock": "VqXecW_titleBlock",
-			"recommendations": "VqXecW_recommendations",
-			"homeHeader": "VqXecW_homeHeader",
-			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
-			"activationConflictState": "VqXecW_activationConflictState",
-			"skeletonShimmer": "VqXecW_skeletonShimmer",
-			"detail": "VqXecW_detail",
-			"skinCardPreview": "VqXecW_skinCardPreview",
-			"pinWarning": "VqXecW_pinWarning",
-			"operationActions": "VqXecW_operationActions",
-			"homeError": "VqXecW_homeError",
-			"segmented": "VqXecW_segmented",
-			"homeContent": "VqXecW_homeContent",
-			"cardStars": "VqXecW_cardStars",
-			"catalogTitle": "VqXecW_catalogTitle",
-			"galleryGroup": "VqXecW_galleryGroup",
-			"homeLoadMore": "VqXecW_homeLoadMore",
-			"tags": "VqXecW_tags",
-			"catalogTitleMain": "VqXecW_catalogTitleMain",
-			"discoverTitle": "VqXecW_discoverTitle",
-			"error": "VqXecW_error",
-			"operationMessage": "VqXecW_operationMessage",
-			"srOnly": "VqXecW_srOnly",
-			"activationConflictRow": "VqXecW_activationConflictRow",
-			"operationCancel": "VqXecW_operationCancel",
-			"activationSwitch": "VqXecW_activationSwitch",
-			"repairPromptFallback": "VqXecW_repairPromptFallback",
-			"browserContent": "VqXecW_browserContent",
-			"cardActionProgress": "VqXecW_cardActionProgress",
-			"homeUpdateAction": "VqXecW_homeUpdateAction",
-			"installSegmented": "VqXecW_installSegmented",
-			"collectionTitle": "VqXecW_collectionTitle",
-			"heroOpen": "VqXecW_heroOpen",
-			"modalSurface": "VqXecW_modalSurface",
-			"catalogHeader": "VqXecW_catalogHeader",
-			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
-			"homeCardMedia": "VqXecW_homeCardMedia",
-			"heroNav": "VqXecW_heroNav",
-			"spin": "VqXecW_spin",
-			"mobileBack": "VqXecW_mobileBack",
-			"lightboxNav": "VqXecW_lightboxNav",
-			"homeCard": "VqXecW_homeCard",
-			"homeOperation": "VqXecW_homeOperation",
-			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
-			"filters": "VqXecW_filters",
-			"filterBar": "VqXecW_filterBar",
-			"cardMetaLine": "VqXecW_cardMetaLine",
-			"thumbnails": "VqXecW_thumbnails",
-			"description": "VqXecW_description",
-			"operationDismiss": "VqXecW_operationDismiss",
-			"activationConflictList": "VqXecW_activationConflictList",
-			"iconOnlyButton": "VqXecW_iconOnlyButton",
-			"homeCardOpen": "VqXecW_homeCardOpen",
-			"installCommandLabel": "VqXecW_installCommandLabel",
-			"discoverHeading": "VqXecW_discoverHeading",
-			"searchField": "VqXecW_searchField",
-			"detailSkeleton": "VqXecW_detailSkeleton",
-			"manualInstallGuide": "VqXecW_manualInstallGuide",
-			"galleryProgress": "VqXecW_galleryProgress",
-			"loading": "VqXecW_loading",
-			"loadMoreHint": "VqXecW_loadMoreHint",
-			"homeLoading": "VqXecW_homeLoading",
-			"installOptions": "VqXecW_installOptions",
-			"sparkFillTop": "VqXecW_sparkFillTop",
-			"previewPlaceholder": "VqXecW_previewPlaceholder",
-			"thumbnailProgress": "VqXecW_thumbnailProgress",
-			"lightboxPrev": "VqXecW_lightboxPrev",
-			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
-			"listLoading": "VqXecW_listLoading",
-			"sparkLine": "VqXecW_sparkLine",
-			"spark": "VqXecW_spark",
-			"thumbnailFrame": "VqXecW_thumbnailFrame",
 			"homeSearch": "VqXecW_homeSearch",
-			"frozenPreview": "VqXecW_frozenPreview",
-			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
-			"sparkFillEnd": "VqXecW_sparkFillEnd",
-			"operationCopyLog": "VqXecW_operationCopyLog",
-			"aboutGrid": "VqXecW_aboutGrid",
-			"lightboxClose": "VqXecW_lightboxClose",
-			"repoLine": "VqXecW_repoLine",
-			"cardSourceAction": "VqXecW_cardSourceAction",
-			"skeletonCard": "VqXecW_skeletonCard",
-			"homeGithubAction": "VqXecW_homeGithubAction",
-			"homeCardFooter": "VqXecW_homeCardFooter",
-			"skinAvatar": "VqXecW_skinAvatar",
-			"version": "VqXecW_version",
-			"operationElapsed": "VqXecW_operationElapsed",
-			"homeCardMeta": "VqXecW_homeCardMeta",
-			"skinCardBody": "VqXecW_skinCardBody",
-			"marketUpdateButton": "VqXecW_marketUpdateButton",
-			"searchClear": "VqXecW_searchClear",
-			"cardMeta": "VqXecW_cardMeta",
-			"homeSectionTitle": "VqXecW_homeSectionTitle",
-			"homeCardDescription": "VqXecW_homeCardDescription",
-			"operationDetails": "VqXecW_operationDetails",
-			"activationConflicts": "VqXecW_activationConflicts",
-			"heroPrev": "VqXecW_heroPrev",
-			"homeActions": "VqXecW_homeActions",
-			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
-			"cardAction": "VqXecW_cardAction",
-			"heroNext": "VqXecW_heroNext",
-			"operationMeta": "VqXecW_operationMeta",
-			"cardInlineActions": "VqXecW_cardInlineActions",
-			"lightboxStage": "VqXecW_lightboxStage",
-			"homeSection": "VqXecW_homeSection",
-			"listSkeleton": "VqXecW_listSkeleton",
+			"homeOperation": "VqXecW_homeOperation",
+			"homeGithubLabel": "VqXecW_homeGithubLabel",
+			"spin": "VqXecW_spin",
 			"discoveryGrid": "VqXecW_discoveryGrid",
-			"sparkArea": "VqXecW_sparkArea",
-			"changelog": "VqXecW_changelog",
-			"empty": "VqXecW_empty",
-			"homeCardRepo": "VqXecW_homeCardRepo",
-			"catalogSearch": "VqXecW_catalogSearch",
-			"sparkTip": "VqXecW_sparkTip",
-			"installedMoreCard": "VqXecW_installedMoreCard",
-			"lightboxNext": "VqXecW_lightboxNext",
-			"sparkFillMid": "VqXecW_sparkFillMid",
+			"homeContent": "VqXecW_homeContent",
+			"modalSurface": "VqXecW_modalSurface",
+			"hero": "VqXecW_hero",
+			"skinCardPreview": "VqXecW_skinCardPreview",
+			"copyCapsule": "VqXecW_copyCapsule",
+			"cardTitle": "VqXecW_cardTitle",
+			"previewPlaceholder": "VqXecW_previewPlaceholder",
+			"homeCardMedia": "VqXecW_homeCardMedia",
 			"notice": "VqXecW_notice",
-			"actionRow": "VqXecW_actionRow",
-			"skinList": "VqXecW_skinList",
-			"interceptNotice": "VqXecW_interceptNotice",
-			"detailHeader": "VqXecW_detailHeader",
+			"browserPanel": "VqXecW_browserPanel",
+			"operationDiagnostics": "VqXecW_operationDiagnostics",
+			"skinCardBody": "VqXecW_skinCardBody",
 			"installedSkeletonCard": "VqXecW_installedSkeletonCard",
+			"iconOnlyButton": "VqXecW_iconOnlyButton",
+			"heroPrev": "VqXecW_heroPrev",
+			"marketUpdateLabel": "VqXecW_marketUpdateLabel",
+			"operationCancel": "VqXecW_operationCancel",
+			"catalog": "VqXecW_catalog",
+			"filters": "VqXecW_filters",
+			"discoverTitle": "VqXecW_discoverTitle",
+			"operationDetails": "VqXecW_operationDetails",
+			"statusLabel": "VqXecW_statusLabel",
+			"spark": "VqXecW_spark",
+			"homeLoading": "VqXecW_homeLoading",
+			"sparkFillTop": "VqXecW_sparkFillTop",
+			"sparkEnd": "VqXecW_sparkEnd",
+			"error": "VqXecW_error",
+			"activationConflictState": "VqXecW_activationConflictState",
+			"description": "VqXecW_description",
+			"browserModal": "VqXecW_browserModal",
+			"titleBlock": "VqXecW_titleBlock",
+			"cardDescription": "VqXecW_cardDescription",
+			"version": "VqXecW_version",
+			"activationConflictList": "VqXecW_activationConflictList",
+			"homeCardDescription": "VqXecW_homeCardDescription",
+			"loadMoreHint": "VqXecW_loadMoreHint",
+			"homeGithubAction": "VqXecW_homeGithubAction",
+			"empty": "VqXecW_empty",
+			"searchClear": "VqXecW_searchClear",
+			"lightboxThumbnails": "VqXecW_lightboxThumbnails",
+			"segmented": "VqXecW_segmented",
+			"filterBar": "VqXecW_filterBar",
+			"detailHeader": "VqXecW_detailHeader",
+			"cardStars": "VqXecW_cardStars",
+			"lightbox": "VqXecW_lightbox",
+			"lightboxPrev": "VqXecW_lightboxPrev",
+			"srOnly": "VqXecW_srOnly",
+			"skinAvatar": "VqXecW_skinAvatar",
+			"repoLine": "VqXecW_repoLine",
+			"installCommandLabel": "VqXecW_installCommandLabel",
+			"aboutGrid": "VqXecW_aboutGrid",
+			"pinWarning": "VqXecW_pinWarning",
+			"homeLoadMore": "VqXecW_homeLoadMore",
+			"detail": "VqXecW_detail",
+			"heroNav": "VqXecW_heroNav",
+			"catalogSearch": "VqXecW_catalogSearch",
+			"skinList": "VqXecW_skinList",
+			"activationConflicts": "VqXecW_activationConflicts",
 			"homeOperations": "VqXecW_homeOperations",
-			"installCommandGroup": "VqXecW_installCommandGroup"
+			"mediaLazyPlaceholder": "VqXecW_mediaLazyPlaceholder",
+			"homeError": "VqXecW_homeError",
+			"lightboxStage": "VqXecW_lightboxStage",
+			"marketUpdateButton": "VqXecW_marketUpdateButton",
+			"homeSection": "VqXecW_homeSection",
+			"interceptNotice": "VqXecW_interceptNotice",
+			"heroNext": "VqXecW_heroNext",
+			"thumbnailFrame": "VqXecW_thumbnailFrame",
+			"skeletonShimmer": "VqXecW_skeletonShimmer",
+			"homeSectionTitle": "VqXecW_homeSectionTitle",
+			"interceptHelp": "VqXecW_interceptHelp",
+			"operationCopyLog": "VqXecW_operationCopyLog",
+			"warningModal": "VqXecW_warningModal",
+			"homeCardCopy": "VqXecW_homeCardCopy",
+			"thumbnailProgress": "VqXecW_thumbnailProgress",
+			"cardMetaLine": "VqXecW_cardMetaLine",
+			"installOptions": "VqXecW_installOptions",
+			"operationMessage": "VqXecW_operationMessage",
+			"browser": "VqXecW_browser",
+			"sparkFillEnd": "VqXecW_sparkFillEnd",
+			"heroOpen": "VqXecW_heroOpen",
+			"activationConflictRow": "VqXecW_activationConflictRow",
+			"operationActions": "VqXecW_operationActions",
+			"cardActionProgress": "VqXecW_cardActionProgress",
+			"copyCapsuleInput": "VqXecW_copyCapsuleInput",
+			"operation": "VqXecW_operation",
+			"collectionTitle": "VqXecW_collectionTitle",
+			"installSegmented": "VqXecW_installSegmented",
+			"actionRow": "VqXecW_actionRow",
+			"installedMoreCard": "VqXecW_installedMoreCard",
+			"homeHeader": "VqXecW_homeHeader",
+			"frozenPreview": "VqXecW_frozenPreview",
+			"homeCardFooter": "VqXecW_homeCardFooter",
+			"listSkeleton": "VqXecW_listSkeleton",
+			"browserContent": "VqXecW_browserContent",
+			"catalogTitle": "VqXecW_catalogTitle",
+			"mobileBack": "VqXecW_mobileBack",
+			"galleryProgress": "VqXecW_galleryProgress",
+			"sparkArea": "VqXecW_sparkArea",
+			"manualInstallGuide": "VqXecW_manualInstallGuide",
+			"changelog": "VqXecW_changelog",
+			"loading": "VqXecW_loading",
+			"searchField": "VqXecW_searchField",
+			"galleryGroup": "VqXecW_galleryGroup",
+			"root": "VqXecW_root",
+			"discoverHeading": "VqXecW_discoverHeading",
+			"homeActions": "VqXecW_homeActions",
+			"headerDiscover": "VqXecW_headerDiscover",
+			"homeCardTitleRow": "VqXecW_homeCardTitleRow",
+			"catalogTitleMain": "VqXecW_catalogTitleMain",
+			"homeCard": "VqXecW_homeCard",
+			"browserHomeBack": "VqXecW_browserHomeBack",
+			"skinCard": "VqXecW_skinCard",
+			"catalogHeader": "VqXecW_catalogHeader",
+			"detailSkeleton": "VqXecW_detailSkeleton",
+			"lightboxNext": "VqXecW_lightboxNext",
+			"lightboxNav": "VqXecW_lightboxNav",
+			"cardSourceAction": "VqXecW_cardSourceAction",
+			"homeSearchPlaceholder": "VqXecW_homeSearchPlaceholder",
+			"cardAction": "VqXecW_cardAction",
+			"operationMeta": "VqXecW_operationMeta",
+			"homeUpdateAction": "VqXecW_homeUpdateAction",
+			"tags": "VqXecW_tags",
+			"installedRow": "VqXecW_installedRow",
+			"homeCardRepo": "VqXecW_homeCardRepo",
+			"sparkLine": "VqXecW_sparkLine",
+			"feedMeta": "VqXecW_feedMeta",
+			"recommendations": "VqXecW_recommendations",
+			"listLoading": "VqXecW_listLoading",
+			"skeletonCard": "VqXecW_skeletonCard",
+			"home": "VqXecW_home",
+			"activationSwitch": "VqXecW_activationSwitch",
+			"sparkTip": "VqXecW_sparkTip",
+			"cardMeta": "VqXecW_cardMeta",
+			"cardInlineActions": "VqXecW_cardInlineActions",
+			"operationElapsed": "VqXecW_operationElapsed",
+			"installCommandGroup": "VqXecW_installCommandGroup",
+			"lightboxClose": "VqXecW_lightboxClose",
+			"homeCardMeta": "VqXecW_homeCardMeta",
+			"sparkFillMid": "VqXecW_sparkFillMid",
+			"homeCardOpen": "VqXecW_homeCardOpen",
+			"copyCapsuleButton": "VqXecW_copyCapsuleButton",
+			"operationDismiss": "VqXecW_operationDismiss",
+			"homeTitleRow": "VqXecW_homeTitleRow",
+			"thumbnails": "VqXecW_thumbnails",
+			"repairPromptFallback": "VqXecW_repairPromptFallback"
 		};
 		//#endregion
 		//#region \0dsh-skin-market-css:/Users/leon/Code/liang-intensity-calibrator/code/dsh-skin-market/src/client/media-hover.module.css.mjs
@@ -4807,6 +4807,8 @@ window.__ModuleLoader__.load({
 					package: packageName,
 					active
 				}));
+				const ownedPackages = new Set([...webClientPackages.current.values()].flat());
+				const foreignTargets = expected.filter((target) => !ownedPackages.has(target.package));
 				const result = probeClientSkinSelection(clientRuntime, expected);
 				webClientResult.current = JSON.stringify(result);
 				const softSelections = state.skins.filter((item) => item.restartSource === "selection" && item.activation === "restart-required");
@@ -4819,27 +4821,19 @@ window.__ModuleLoader__.load({
 				]);
 				let visibleResult = result;
 				let retryAt = null;
-				let hostError;
 				if (hostSelections.length > 0) {
-					if (!hasCompleteTargets || hostSelections.some((item) => item.selectionHostStatus === "unavailable" || item.selectionHostApplied !== true && item.selectionHostStatus === void 0)) {
-						visibleResult = {
-							status: "unavailable",
-							activity: "unknown"
-						};
-						hostError = !hasCompleteTargets ? t("common.dshComponentTargetsIncomplete") : t("common.dshComponentUnknown");
-					} else if (visibleResult.status !== "unavailable" && hostSelections.some((item) => item.selectionHostStatus === "switching")) {
-						visibleResult = {
-							status: "switching",
-							activity: "loading"
-						};
-						hostError = t("common.dshComponentLoading");
-					} else if (visibleResult.status !== "unavailable" && visibleResult.status !== "switching" && hostSelections.some((item) => item.selectionHostApplied !== true)) {
-						visibleResult = {
-							status: "restart-required",
-							activity: "missing"
-						};
-						hostError = t("common.dshComponentNotLoaded");
-					}
+					if (hostSelections.some((item) => item.selectionHostStatus === "unavailable" || item.selectionHostApplied !== true && item.selectionHostStatus === void 0)) visibleResult = {
+						status: "unavailable",
+						activity: "unknown"
+					};
+					else if (visibleResult.status !== "unavailable" && hostSelections.some((item) => item.selectionHostStatus === "switching")) visibleResult = {
+						status: "switching",
+						activity: "loading"
+					};
+					else if (visibleResult.status !== "unavailable" && visibleResult.status !== "switching" && hostSelections.some((item) => item.selectionHostApplied !== true)) visibleResult = {
+						status: "restart-required",
+						activity: "missing"
+					};
 				}
 				if (hostPending) {
 					if (webHostReview.current?.key !== selectionKey) webHostReview.current = {
@@ -4861,7 +4855,6 @@ window.__ModuleLoader__.load({
 							...visibleResult,
 							status: "switching"
 						};
-						hostError = void 0;
 					}
 				} else webClientGrace.current = null;
 				setWebClientRetryAt(retryAt);
@@ -4917,6 +4910,12 @@ window.__ModuleLoader__.load({
 				};
 				const skins = state.skins.map((item) => {
 					const softSelection = item.activation === "restart-required" && item.restartSource === "selection";
+					const packages = webClientPackages.current.get(item.skinId) ?? [];
+					if (item.activation === "restart-required" && item.restartOnlyToStop === true) return {
+						...item,
+						activation: "restart-required",
+						error: void 0
+					};
 					if (item.activation === "restart-required" && !softSelection && state.hostKind !== "desktop") {
 						const skin = skinsRef.current.find((candidate) => candidate.id === item.skinId);
 						if (selected.has(item.skinId) && skin !== void 0 && probeClientSkinSelection(clientRuntime, [{
@@ -4930,35 +4929,46 @@ window.__ModuleLoader__.load({
 								error: void 0
 							};
 						}
-						if (item.restartOnlyToStop === true && skin !== void 0 && !selected.has(item.skinId)) {
-							if (probeClientSkinSelection(clientRuntime, (webClientPackages.current.get(item.skinId) ?? [skin.package]).map((packageName) => ({
-								package: packageName,
-								active: false
-							}))).status === "applied") {
-								requestReceiptClear(item.skinId);
-								clientRestartNotices.current.delete(item.skinId);
-								return {
-									...item,
-									activation: "inactive",
-									error: void 0
-								};
-							}
-						}
 						if (!softSelection) return item;
 					}
 					if (item.activation !== "active" && item.activation !== "inactive" && !softSelection) return item;
-					const packages = webClientPackages.current.get(item.skinId) ?? [];
 					if (!softSelection && packages.length === 0 && !(hasCompleteTargets && webSelectionSkinIds.current.has(item.skinId))) return item;
-					let status = visibleResult;
-					if (!hasCompleteTargets && !softSelection && !selected.has(item.skinId)) {
-						const ownResult = probeClientSkinSelection(clientRuntime, expected.filter((target) => packages.includes(target.package)));
-						status = ownResult.status === "restart-required" && visibleResult.status === "switching" ? {
-							...ownResult,
-							status: "switching"
-						} : ownResult;
+					const ownTargets = expected.filter((target) => packages.includes(target.package) || selected.has(item.skinId) && foreignTargets.some((foreign) => foreign.package === target.package));
+					let status = ownTargets.length > 0 ? probeClientSkinSelection(clientRuntime, ownTargets) : visibleResult;
+					if (visibleResult.status === "switching" && status.status === "restart-required") status = {
+						...status,
+						status: "switching"
+					};
+					let itemHostError;
+					if (hostSelections.includes(item)) {
+						const hostStatus = item.selectionHostStatus;
+						if (hostStatus === "unavailable" || item.selectionHostApplied !== true && hostStatus === void 0) {
+							status = {
+								status: "unavailable",
+								activity: "unknown"
+							};
+							itemHostError = t("common.dshComponentUnknown");
+						} else if (status.status !== "unavailable" && status.status !== "switching" && hostStatus === "switching") {
+							status = {
+								status: "switching",
+								activity: "loading"
+							};
+							itemHostError = t("common.dshComponentLoading");
+						} else if (status.status !== "unavailable" && status.status !== "switching" && item.selectionHostApplied !== true) {
+							status = {
+								status: "restart-required",
+								activity: "missing"
+							};
+							itemHostError = t("common.dshComponentNotLoaded");
+						}
 					}
 					if (clientRuntime.probeActive !== void 0) clientRestartNotices.current.delete(item.skinId);
 					if (status.status === "applied") {
+						if (item.restartOnlyToStop === true) return {
+							...item,
+							activation: "restart-required",
+							error: void 0
+						};
 						if (!selected.has(item.skinId)) requestReceiptClear(item.skinId);
 						return softSelection && item.selectionHostApplied === true && (hasCompleteTargets || packages.length > 0) ? {
 							...item,
@@ -4969,7 +4979,7 @@ window.__ModuleLoader__.load({
 					return {
 						...item,
 						activation: status.status === "unavailable" ? "unavailable" : status.status,
-						error: hostError ?? webClientSelectionError(status, t)
+						error: itemHostError ?? webClientSelectionError(status, t)
 					};
 				});
 				return {

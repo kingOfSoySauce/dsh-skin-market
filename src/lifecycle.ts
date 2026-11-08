@@ -1313,8 +1313,12 @@ export class SkinLifecycle {
       // Unknown legacy row ownership cannot prove a complete browser graph.
       const name = identity.name
       let packageName = name !== undefined && validPackage(name) && packageManifest(this.options.profileDir, name) !== null ? name : undefined
+      // A bundle may insert a Host-only row whose module name is a built-in
+      // package that does not exist in the profile (for example an agent
+      // preset). Ownership still points at the installed owner package; use it
+      // so one Host-only child cannot make the whole browser selection unknown.
       if (packageName === undefined && identity.packageName !== undefined
-        && (name === undefined || name === identity.packageName || name.startsWith(`${identity.packageName}/`))) packageName = identity.packageName
+        && packageManifest(this.options.profileDir, identity.packageName) !== null) packageName = identity.packageName
       if (packageName === undefined || !add(packageName, identity.ownerSkinIds.some(id => enabled.has(id)))) return undefined
     }
     return [...targets].map(([packageName, active]) => ({ package: packageName, active }))
@@ -1333,7 +1337,7 @@ export class SkinLifecycle {
       const name = identity.name
       let packageName = name !== undefined && validPackage(name) && packageManifest(this.options.profileDir, name) !== null ? name : undefined
       if (packageName === undefined && identity.packageName !== undefined
-        && (name === undefined || name === identity.packageName || name.startsWith(`${identity.packageName}/`))) packageName = identity.packageName
+        && packageManifest(this.options.profileDir, identity.packageName) !== null) packageName = identity.packageName
       if (packageName === undefined) return undefined
       packages.add(packageName)
     }
