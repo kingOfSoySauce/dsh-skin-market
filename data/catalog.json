@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T15:29:56.370Z",
+  "generatedAt": "2026-11-08T15:39:09.574Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -58483,12 +58483,15 @@
         "dark"
       ],
       "install": {
-        "target": "github:zkforge/dsh-claude-desktop-theme#0bda59ab167074e5753fd7415bf55e8dbb2a6886",
+        "target": "github:zkforge/dsh-claude-desktop-theme#0a37136961be639e55bbbf1a4e24590f8e504ca5",
         "version": "0.10.3",
-        "commit": "0bda59ab167074e5753fd7415bf55e8dbb2a6886",
+        "commit": "0a37136961be639e55bbbf1a4e24590f8e504ca5",
         "desktop": {
-          "mode": "manual-only",
-          "reason": "npm-package-not-found"
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "dsh-claude-desktop-theme",
+          "packageVersion": "0.10.3",
+          "integrity": "sha512-uQysrwZe2KsNgnBP69/zOuyIN9inAAbsh1/ulgIsEsWbk9KdPa42eLnAGbw0he+ehjSmOjZhGZVa4bLuV6ckwQ=="
         }
       },
       "compatibility": {
@@ -58525,16 +58528,16 @@
         "suggestions": [
           "建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。",
           "固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。",
-          "DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.2 未被本次检测范围 0.2.1-rc.3 完全覆盖（固定版本 0bda59ab167074e5753fd7415bf55e8dbb2a6886）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。"
+          "DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.2 未被本次检测范围 0.2.1-rc.3 完全覆盖（固定版本 0a37136961be639e55bbbf1a4e24590f8e504ca5）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。"
         ],
         "scan": {
-          "commit": "0bda59ab167074e5753fd7415bf55e8dbb2a6886",
+          "commit": "0a37136961be639e55bbbf1a4e24590f8e504ca5",
           "packageVersion": "0.10.3",
           "scannerVersion": "static-v2",
           "dshVersion": "0.2.1-rc.3",
           "mode": "static",
           "result": "unknown",
-          "checkedAt": "2026-11-07T05:33:47.243Z",
+          "checkedAt": "2026-11-08T15:33:51.131Z",
           "findings": [
             {
               "code": "client-source-unavailable",
@@ -58549,10 +58552,10 @@
       },
       "featuredRank": 1113,
       "starsSnapshot": 34,
-      "releaseUpdatedAt": "2026-11-07T05:33:50.285Z",
-      "metadataUpdatedAt": "2026-11-07T05:33:50.285Z",
+      "releaseUpdatedAt": "2026-11-08T15:36:27.745Z",
+      "metadataUpdatedAt": "2026-11-08T15:39:02.274Z",
       "starsUpdatedAt": "2026-11-07T12:05:04.295Z",
-      "updatedAt": "2026-11-07T05:33:50.285Z",
+      "updatedAt": "2026-11-08T15:39:02.274Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3a11f60c87d282d86823af32fa049566.preview.webp",
@@ -59865,6 +59868,13 @@
       "integrity": "sha512-xJomEZAwgneCjCg8I+EAFn/arSYjWzTpfRKk7Pz6vX+dnjIIkIxUeceFeqfjVDrEUf5ZfLPI6PKdfFzGlaEo7w==",
       "repository": "https://github.com/zhu1090093659/dsh-pet",
       "gitHead": "ae2c9d443eda35a6439597c1787c7607e988bbed"
+    },
+    "zkforge.dsh-claude-desktop-theme": {
+      "name": "dsh-claude-desktop-theme",
+      "version": "0.10.3",
+      "integrity": "sha512-uQysrwZe2KsNgnBP69/zOuyIN9inAAbsh1/ulgIsEsWbk9KdPa42eLnAGbw0he+ehjSmOjZhGZVa4bLuV6ckwQ==",
+      "repository": "https://github.com/zkforge/dsh-claude-desktop-theme",
+      "gitHead": "0a37136961be639e55bbbf1a4e24590f8e504ca5"
     },
     "zmm863-commits.dsh-client-ui-paopaocat": {
       "name": "dsh-client-ui-paopaocat",
