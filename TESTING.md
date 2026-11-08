@@ -13,15 +13,11 @@ npm ci
 npm run check
 ```
 
+CI 在 `.github/workflows/test.yml` 对 PR 与 `main` 运行 `npm run typecheck` 和 `npm test`；发布前的完整检查仍以本机 `npm run check` 为准。
+
 这些检查不会安装到真实 DSH profile。生命周期超时、丢失管理结果、目录替换中取消、恢复命令返回成功但入口仍缺失、SRI 不匹配等故障，用临时目录和模拟宿主测试；不要在正常使用的 profile 中删除锁文件、包文件或制造故障。
 
-目录安装源审计需要外网，默认不进入 `npm run check`：`npm run audit:sources` 只读探测目录里每个固定 GitHub tarball 与 npm tarball；`npm run audit:sources:check` 在有不可达来源时退出码非 0。新增或更新条目前也应先跑一次。探测结果分 reachable / missing（404/410）/ unknown（网络或其它状态码），只有 missing 才能进入后续处置。
-
-`.github/workflows/audit-install-sources.yml` 每日先审计，再用 `npm run catalog:cleanup`（只读诊断；`--write` 才改文件）对 missing 源分类并生成 `chore/audit-install-sources` 分支和/或更新一个 PR，人工评审后合并，不自动合并：
-- GitHub 仓库改名且固定 commit 在新名下仍存在 → 更正条目 `repo`、`install.target`、npm repository 和截图 URL；
-- npm 同版本 artifact 通过校验（version、gitHead 对应固定 commit、repository 一致、integrity 与下载 tarball 的 sha512 一致、tarball 内 package.json 身份一致）→ 保留条目不删，补 npm 源；
-- 其余 → 移除条目；无法判定的来源只进入 PR 报告的待人工复核区。
-本机复跑：`node scripts/audit-install-sources.mjs --json > /tmp/audit.json && node scripts/propose-catalog-cleanup.mjs --report /tmp/audit.json`（加 `--write` 才会改 registry 与目录）。
+安装源审计与目录清理是维护者的私有流程，在 ops 仓库每日运行并通过 PR 更新本目录，不在本仓库包含脚本或 workflow。
 
 ## 2. Web 浏览器验收
 

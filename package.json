@@ -34,11 +34,7 @@
     "build": "npm run registry && npm run build:host && npm run build:client",
     "test": "vitest run",
     "check": "npm run registry && npm run typecheck && npm run test && npm run build && npm run build:site && node scripts/preflight.mjs",
-    "release": "node ops/release.mjs",
-    "prepack": "npm run check",
-    "audit:sources": "node scripts/audit-install-sources.mjs",
-    "audit:sources:check": "node scripts/audit-install-sources.mjs --fail-on-dead",
-    "catalog:cleanup": "node scripts/propose-catalog-cleanup.mjs"
+    "prepack": "npm run check"
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1"
