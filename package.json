@@ -18,7 +18,8 @@
   "scripts": {
     "dev": "vite --config vite.preview.config.ts",
     "dev:site": "vite --config vite.site.config.ts",
-    "registry": "node scripts/build-registry.mjs",
+    "registry": "node scripts/build-registry.mjs && node scripts/build-star-curves.mjs",
+    "stars:curves": "node scripts/build-star-curves.mjs",
     "registry:check": "node scripts/build-registry.mjs --check",
     "stars:record": "node scripts/record-stars.mjs",
     "hydrate": "node scripts/hydrate-submission.mjs",

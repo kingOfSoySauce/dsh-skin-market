@@ -56,12 +56,12 @@ jobs:
 
       - name: Commit generated catalog when it changed
         run: |
-          if git diff --quiet -- data/catalog.json data/star-history.json registry/skins; then
+          if git diff --quiet -- data/catalog.json data/star-history.json data/star-curves.json registry/skins; then
             echo 'catalog and registry are already up to date.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/catalog.json data/star-history.json registry/skins
+          git add data/catalog.json data/star-history.json data/star-curves.json registry/skins
           git commit -m 'chore(registry): regenerate catalog'
           git push

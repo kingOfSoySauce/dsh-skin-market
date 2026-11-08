@@ -16,7 +16,8 @@ import { githubRepoLabel } from '../src/display-title.ts'
 import { localizedSkinDescription } from '../src/localized-copy.ts'
 import { matchesCatalogSearch } from '../src/catalog-search.ts'
 import { SitePreferencesProvider, useSitePreferences, type SiteTheme } from './preferences.tsx'
-import { localizedSkinName, type MessageKey, type SiteLanguage } from './messages.ts'
+import { localizedSkinName, type MessageKey, type SiteLanguage, type SiteTranslator } from './messages.ts'
+import { liveStars, withLiveReading, type LiveStarLoader, type LiveStarReading } from './live-stars.ts'
 import './site.css'
 import '../src/client/media-hover.module.css'
 
@@ -24,6 +25,16 @@ interface Skin extends CatalogSkin {
   featuredRank: number
   starsSnapshot: number
   updatedAt: string
+}
+
+function starTime(value: number, language: SiteLanguage): string {
+  return new Date(value).toLocaleString(language === 'zh' ? 'zh-CN' : 'en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+}
+
+function starsTitle(skin: Skin, live: LiveStarReading | undefined, t: SiteTranslator, language: SiteLanguage): string | undefined {
+  if (live !== undefined) return t('skin.starsLive', { date: starTime(live.observedAt, language) })
+  const snapshotAt = Date.parse(skin.starsUpdatedAt)
+  return Number.isFinite(snapshotAt) ? t('skin.starsSnapshot', { date: starTime(snapshotAt, language) }) : undefined
 }
 
 const GALLERY_INTERVAL_MS = 5600
@@ -48,18 +59,22 @@ function marketCategory(skin: { category?: string }): MarketCategory {
 }
 
 
-function StarSpark({ values, from, language }: { values: number[] | undefined; from: number | undefined; language: string }) {
+function StarSpark({ values, from, live, title, language }: { values: number[] | undefined; from: number | undefined; live?: LiveStarReading; title?: string; language: string }) {
   const VIEW_W = 1000
   const VIEW_H = 100
   const LABEL = 10
   const uid = useId().replace(/[^a-zA-Z0-9]/g, '')
+  const series = useMemo(
+    () => values === undefined || from === undefined ? undefined : withLiveReading(values, from, live),
+    [values, from, live],
+  )
   const geometry = useMemo(
-    () => values === undefined ? undefined : sparklineGeometry(values, VIEW_W - LABEL, VIEW_H),
-    [values],
+    () => series === undefined ? undefined : sparklineGeometry(series, VIEW_W - LABEL, VIEW_H),
+    [series],
   )
   const [hovered, setHovered] = useState<number | null>(null)
-  if (geometry === undefined || values === undefined) return null
-  const current = values[values.length - 1]
+  if (geometry === undefined || series === undefined) return null
+  const current = series[series.length - 1]
   const active = hovered === null ? undefined : geometry.points[hovered]
   const activeValue = active === undefined ? undefined : Math.round(active.value)
   // The fill stops at the last sample, straight down to the baseline.
@@ -69,7 +84,7 @@ function StarSpark({ values, from, language }: { values: number[] | undefined; f
       viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
       preserveAspectRatio="none"
       role="img"
-      aria-label={`stars 从 ${values[0]} 涨到 ${current}`}
+      aria-label={`stars 从 ${series[0]} 涨到 ${current}`}
       onMouseMove={event => {
         const rect = event.currentTarget.getBoundingClientRect()
         const x = ((event.clientX - rect.left) / rect.width) * VIEW_W
@@ -94,6 +109,7 @@ function StarSpark({ values, from, language }: { values: number[] | undefined; f
     <span
       className="skin-spark-end"
       style={{ left: `${(geometry.end.x / VIEW_W) * 100}%`, top: `${(geometry.end.y / VIEW_H) * 100}%` }}
+      title={title}
     >{current}<StarFillIcon size={12} aria-hidden="true" /></span>
     {active !== undefined && from !== undefined && activeValue !== undefined && <span
       className="skin-spark-tip"
@@ -201,7 +217,7 @@ function DiscoverToolbar({ docked = false, placeholderRef, enabledCategories, on
   </div>
 }
 
-function CatalogCard({ skin, onOpen, onInstall }: { skin: Skin; onOpen: () => void; onInstall: () => void }) {
+function CatalogCard({ skin, live, onOpen, onInstall }: { skin: Skin; live?: LiveStarReading; onOpen: () => void; onInstall: () => void }) {
   const { language, t } = useSitePreferences()
   const repoLabel = githubRepoLabel(skin.repo)
   const title = localizedSkinName(skin, language)
@@ -211,7 +227,7 @@ function CatalogCard({ skin, onOpen, onInstall }: { skin: Skin; onOpen: () => vo
     <button className="feed-card-open dsh-skin-media-hover" aria-label={t('skin.preview', { name: title })} onClick={onOpen}>
       <span className="feed-card-media"><PreviewMedia skin={skin} src={getCatalogListScreenshot(skin)} fallbackSources={getCatalogScreenshotUrls(skin)} alt={t('skin.preview', { name: title })} kind="card" loading="lazy" /></span>
       <span className="feed-card-copy">
-        <span className="feed-card-title"><strong title={title}>{title}</strong><span className="feed-card-stats"><StarIcon size={12} /> {skin.starsSnapshot}</span></span>
+        <span className="feed-card-title"><strong title={title}>{title}</strong><span className="feed-card-stats" title={starsTitle(skin, live, t, language)}><StarIcon size={12} /> {live?.stars ?? skin.starsSnapshot}</span></span>
         {description !== undefined && <span className="feed-card-description" title={description}>{description}</span>}
       </span>
     </button>
@@ -243,7 +259,7 @@ function SearchBox({ query, onQueryChange, style }: { query: string; onQueryChan
   return <div className="search site-search" style={style}><MagnifyingGlass size={18} /><input ref={inputRef} value={query} onChange={event => onQueryChange(event.currentTarget.value)} placeholder={t('search.label')} aria-label={t('search.label')} />{query.length > 0 && <button type="button" className="search-clear" aria-label={t('search.clear')} title={t('search.clear')} onMouseDown={event => event.preventDefault()} onClick={clear}><X size={16} aria-hidden="true" /></button>}</div>
 }
 
-export function App({ skins, curves = {} }: { skins: Skin[]; curves?: Record<string, { from: number; stars: number[] }> }) {
+export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; curves?: Record<string, { from: number; stars: number[] }>; liveStarLoader?: LiveStarLoader }) {
   const { language, t } = useSitePreferences()
   const [selectedId, setSelectedId] = useState(skins[0]?.id ?? '')
   const [query, setQuery] = useState('')
@@ -269,6 +285,7 @@ export function App({ skins, curves = {} }: { skins: Skin[]; curves?: Record<str
   const brandRef = useRef<HTMLAnchorElement | null>(null)
   const topActionsRef = useRef<HTMLElement | null>(null)
   const [searchStyle, setSearchStyle] = useState<CSSProperties | undefined>(undefined)
+  const [liveStarsBySkin, setLiveStarsBySkin] = useState<Record<string, LiveStarReading>>({})
 
   const selected = skins.find(item => item.id === selectedId) ?? skins[0]
   const selectedName = selected === undefined ? '' : localizedSkinName(selected, language)
@@ -288,6 +305,25 @@ export function App({ skins, curves = {} }: { skins: Skin[]; curves?: Record<str
         const bMatch = b.tags.filter(tag => selected.tags.includes(tag)).length
         return bMatch - aMatch || b.starsSnapshot - a.starsSnapshot
       }).slice(0, 4)
+
+  // The grid keeps the catalog snapshot, which is what sorting and first paint
+  // use. Opening a detail asks GitHub for the current count instead of waiting
+  // for the next catalog build; the loader caches and backs off on rate limits,
+  // and a failed request leaves the snapshot number in place.
+  useEffect(() => {
+    const active = selected
+    if (liveStarLoader === undefined || !detailOpen || active === undefined) return
+    let disposed = false
+    void liveStarLoader.load(active.repo).then(reading => {
+      if (disposed || reading === undefined) return
+      setLiveStarsBySkin(current => {
+        const prior = current[active.id]
+        if (prior !== undefined && prior.observedAt === reading.observedAt && prior.stars === reading.stars) return current
+        return { ...current, [active.id]: reading }
+      })
+    })
+    return () => { disposed = true }
+  }, [detailOpen, liveStarLoader, selected?.id, selected?.repo])
 
   const select = (id: string) => {
     setSelectedId(id)
@@ -465,7 +501,7 @@ export function App({ skins, curves = {} }: { skins: Skin[]; curves?: Record<str
       <section className="feed-content" aria-label={t('catalog.section')}>
         <DiscoverToolbar docked={discoverDocked} placeholderRef={discoverTitleRef} enabledCategories={enabledCategories} onToggleCategory={toggleCategory} sort={sort} onSort={setSort} />
         {visibleSkins.length > 0 ? <div className="skin-grid">
-          {visibleSkins.map(skin => <CatalogCard key={skin.id} skin={skin} onOpen={() => select(skin.id)} onInstall={() => { setSelectedId(skin.id); setShot(0); setCopied(null); setInstallDialog('skin') }} />)}
+          {visibleSkins.map(skin => <CatalogCard key={skin.id} skin={skin} live={liveStarsBySkin[skin.id]} onOpen={() => select(skin.id)} onInstall={() => { setSelectedId(skin.id); setShot(0); setCopied(null); setInstallDialog('skin') }} />)}
         </div> : <p className="no-results feed-empty">{t('catalog.noResults')}</p>}
         {visibleCount < filtered.length && <div className="feed-loading" aria-hidden="true"><span /><span /></div>}
       </section>
@@ -490,7 +526,7 @@ export function App({ skins, curves = {} }: { skins: Skin[]; curves?: Record<str
             {selectedDescription !== undefined && <p className="skin-description" title={selectedDescription}>{selectedDescription}</p>}
             <div className="meta"><span>{t('skin.version', { version: selected.install.version })}</span><span>{t('skin.dshVersion', { version: selected.compatibility.dsh })}</span><span className={verified ? 'verified' : 'unverified'}>{verified ? t('skin.compatibilityVerified') : t('skin.compatibilityPending')}</span></div>
           </div>
-          <StarSpark values={curveEntry(curves, selected.repo)?.stars} from={curveEntry(curves, selected.repo)?.from} language={language} />
+          <StarSpark values={curveEntry(curves, selected.repo)?.stars} from={curveEntry(curves, selected.repo)?.from} live={liveStarsBySkin[selected.id]} title={starsTitle(selected, liveStarsBySkin[selected.id], t, language)} language={language} />
         </header>
 
         {usesMarketScreenshots(selected) && <p className="notice">{t('skin.marketScreenshotNotice')}</p>}
@@ -510,7 +546,7 @@ export function App({ skins, curves = {} }: { skins: Skin[]; curves?: Record<str
           <dl><div><dt>{t('info.license')}</dt><dd>{selected.license.code}</dd></div><div><dt>{t('info.modes')}</dt><dd>{selected.modes.join(' / ')}</dd></div><div><dt>{t('info.platform')}</dt><dd>{selected.compatibility.platform.join(' / ')}</dd></div></dl>
         </div>
 
-        {recommendations.length > 0 && <section className="recommendations"><h3>{t('info.recommendations')}</h3><div>{recommendations.map(skin => <CatalogCard key={skin.id} skin={skin} onOpen={() => { setSelectedId(skin.id); setShot(0) }} onInstall={() => { setSelectedId(skin.id); setShot(0); setCopied(null); setInstallDialog('skin') }} />)}</div></section>}
+        {recommendations.length > 0 && <section className="recommendations"><h3>{t('info.recommendations')}</h3><div>{recommendations.map(skin => <CatalogCard key={skin.id} skin={skin} live={liveStarsBySkin[skin.id]} onOpen={() => { setSelectedId(skin.id); setShot(0) }} onInstall={() => { setSelectedId(skin.id); setShot(0); setCopied(null); setInstallDialog('skin') }} />)}</div></section>}
         </section>
       </section>
     </div>}
@@ -600,25 +636,27 @@ function Site() {
         if (!disposed && !controller.signal.aborted) setCatalog({ error })
       })
     // Star curves only feed the detail chart. A failure leaves the chart out
-    // rather than blocking the page.
-    const curvesUrl = useLocalPreviewCatalog
-      ? `${import.meta.env.BASE_URL}star-curves.json`
-      : REMOTE_STAR_CURVES_URL
+    // rather than blocking the page. The card reads the catalog shipped with
+    // this build, so the chart reads the curve file shipped with it too: the
+    // raw main copy can move ahead while Pages is still deploying, and a chart
+    // that ends on tomorrow's count next to yesterday's card is the same bug as
+    // a curve frozen at its export day.
     const localCurvesUrl = `${import.meta.env.BASE_URL}star-curves.json`
     const readCurves = async (url: string) => {
       const response = await fetch(url, { cache: 'no-store', signal: controller.signal })
       if (!response.ok) return undefined
       return parseStarCurves(await response.json())
     }
-    void readCurves(curvesUrl)
-      // One failed request must not leave every detail panel blank: the page
-      // ships its own copy of the series beside the catalog.
-      .catch(() => undefined)
-      .then(curves => curves !== undefined && Object.keys(curves).length > 0
-        ? curves
-        : readCurves(localCurvesUrl).catch(() => undefined))
+    const readFirstCurves = async (urls: string[]) => {
+      for (const url of urls) {
+        const curves = await readCurves(url).catch(() => undefined)
+        if (curves !== undefined && Object.keys(curves).length > 0) return curves
+      }
+      return undefined
+    }
+    void readFirstCurves(useLocalPreviewCatalog ? [localCurvesUrl] : [localCurvesUrl, REMOTE_STAR_CURVES_URL])
       .then(curves => {
-        if (!disposed && curves !== undefined && Object.keys(curves).length > 0) setCurves(curves)
+        if (!disposed && curves !== undefined) setCurves(curves)
       })
     return () => { disposed = true; controller.abort() }
   }, [])
@@ -634,7 +672,7 @@ function Site() {
     return <main className="empty-page">{t('catalog.error.generic')}</main>
   }
   if (catalog.skins === undefined) return <main className="empty-page">{t('catalog.loading')}</main>
-  return <App skins={catalog.skins} curves={curves} />
+  return <App skins={catalog.skins} curves={curves} liveStarLoader={liveStars} />
 }
 
 function PreviewMedia({ skin, src, fallbackSources, alt, kind, loading }: { skin: Skin; src?: string; fallbackSources?: readonly string[]; alt: string; kind: 'list' | 'avatar' | 'gallery' | 'thumbnail' | 'recommendation' | 'card'; loading?: 'eager' | 'lazy' }) {
