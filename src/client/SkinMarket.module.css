@@ -184,6 +184,7 @@
 .homeCardMedia { display: block; width: 100%; aspect-ratio: 16 / 9; flex: none; overflow: hidden; background: var(--dsw-alias-bg-layer-2); }
 .homeCardMedia > img,
 .homeCardMedia > .previewPlaceholder { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.frozenPreview { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; background: var(--dsw-alias-bg-layer-2); }
 .homeCardCopy { box-sizing: border-box; display: flex; width: 100%; min-width: 0; flex: 1; flex-direction: column; justify-content: flex-start; gap: 6px; padding: 12px 14px 0; }
 .homeCardTitleRow { display: flex; min-width: 0; align-items: flex-start; justify-content: space-between; gap: 8px; }
 .homeCardTitleRow > strong { display: -webkit-box; min-width: 0; flex: 1; overflow: hidden; font-size: 13px; font-weight: 550; line-height: 19px; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
@@ -364,6 +365,7 @@
 .skinCardPreview { display: block; width: 56px; height: 56px; flex: none; overflow: hidden; border-radius: var(--dsw-radius-sm); background: var(--dsw-alias-bg-layer-3); }
 .skinCardPreview > img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: .35; transition: opacity var(--ds-transition-duration) var(--ds-ease-in-out), transform var(--ds-transition-duration-slow) var(--ds-ease-in-out); }
 .skinCardPreview > img[data-loaded="true"] { opacity: 1; }
+.skinCardPreview > .frozenPreview { background: var(--dsw-alias-bg-layer-3); }
 .skinCardPreview > .previewPlaceholder { width: 100%; height: 100%; }
 .previewPlaceholder { box-sizing: border-box; display: flex; min-width: 0; align-items: center; justify-content: center; flex-direction: column; gap: 4px; color: var(--dsw-alias-label-caption); background: linear-gradient(145deg, var(--dsw-alias-bg-layer-2), var(--dsw-alias-bg-layer-1)); text-align: center; overflow: hidden; }
 .previewPlaceholder strong { display: block; max-width: 88%; overflow: hidden; color: var(--dsw-alias-label-secondary); font-size: var(--dsw-font-xxs-12-font-size); font-weight: 500; line-height: var(--dsw-font-xxs-12-line-height); text-overflow: ellipsis; white-space: nowrap; }

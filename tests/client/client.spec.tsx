@@ -53,7 +53,7 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', () => {
   }
 })
 
-import { HOME_CATALOG_BATCH_SIZE, WEB_CLIENT_SETTLE_MS, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, interceptNotice, isInterceptFailure, resolvePrimitiveIcon, restartDocumentProbeUrl, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection, waitForRestartDocument } from '../../src/client/SkinMarketSection.tsx'
+import { HOME_CATALOG_BATCH_SIZE, WEB_CLIENT_SETTLE_MS, captureListScroll, compareInstalledSkinOrder, compareSkinOrder, interceptNotice, isAnimatedPreviewSource, isInterceptFailure, resolvePrimitiveIcon, restartDocumentProbeUrl, restartReloadUrl, restoreListScroll, restoreMarketStyleOrder, SkinMarketSection, waitForRestartDocument } from '../../src/client/SkinMarketSection.tsx'
 import { MARKET_INSTALL_TROUBLESHOOT_URL } from '../../src/client/failure-help.ts'
 import { apply as applyClient, createClientSkinRuntime, missingPrimitives, switchClientSkin } from '../../src/client/index.ts'
 import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt } from '../../src/client/submission.ts'
@@ -101,6 +101,16 @@ async function openSkinCard(name: RegExp = /测试皮肤 界面预览/) {
 function visibleWarningDialogs(): HTMLElement[] {
   return screen.queryAllByRole('dialog').filter(dialog => dialog.className.includes('warningModal'))
 }
+
+describe('animated cover handling', () => {
+  it('detects GIF covers and leaves static screenshots animated-free', () => {
+    expect(isAnimatedPreviewSource('https://example.com/skin/home.gif')).toBe(true)
+    expect(isAnimatedPreviewSource('https://example.com/skin/home.GIF?raw=1')).toBe(true)
+    expect(isAnimatedPreviewSource('data:image/gif;base64,R0lGODlhAQABAAAAACw=')).toBe(true)
+    expect(isAnimatedPreviewSource('https://example.com/skin/home.png')).toBe(false)
+    expect(isAnimatedPreviewSource(undefined)).toBe(false)
+  })
+})
 
 describe('client market', () => {
   it.each(['desktop', 'dsh'] as const)('copies a read-only repair handoff with the %s host, original action and sanitized operation log', async hostKind => {

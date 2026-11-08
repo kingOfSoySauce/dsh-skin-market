@@ -802,6 +802,57 @@ interface PreviewMediaProps {
   t?: Translator
 }
 
+export function isAnimatedPreviewSource(source: string | undefined): boolean {
+  if (source === undefined) return false
+  return /^data:image\/gif(?:[;,])/i.test(source) || /\.gif(?:$|[?#])/i.test(source)
+}
+
+/**
+ * Card covers must not loop an animated GIF: one grid can contain dozens of
+ * them, and the constant motion makes the whole market look like it is
+ * flashing. Draw the first frame once so the cover is a stable poster; the
+ * detail hero and gallery still use the original animated source.
+ */
+function FrozenGifPreview({ source, alt, square, onError }: { source: string; alt: string; square: boolean; onError: () => void }) {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const [fallback, setFallback] = useState(false)
+  const onErrorRef = useRef(onError)
+  onErrorRef.current = onError
+  useEffect(() => {
+    let cancelled = false
+    const image = new Image()
+    image.decoding = 'async'
+    image.onload = () => {
+      if (cancelled) return
+      const canvas = canvasRef.current
+      if (canvas === null) return
+      const context = canvas.getContext('2d')
+      if (context === null || image.naturalWidth <= 0 || image.naturalHeight <= 0) {
+        setFallback(true)
+        return
+      }
+      const width = square ? 112 : 720
+      const height = square ? 112 : 405
+      canvas.width = width
+      canvas.height = height
+      const scale = Math.max(width / image.naturalWidth, height / image.naturalHeight)
+      const drawWidth = image.naturalWidth * scale
+      const drawHeight = image.naturalHeight * scale
+      try {
+        context.drawImage(image, (width - drawWidth) / 2, (height - drawHeight) / 2, drawWidth, drawHeight)
+        canvas.dataset.loaded = 'true'
+      } catch {
+        setFallback(true)
+      }
+    }
+    image.onerror = () => { if (!cancelled) onErrorRef.current() }
+    image.src = source
+    return () => { cancelled = true; image.onload = null; image.onerror = null }
+  }, [source, square])
+  if (fallback) return <img className={css.frozenPreview} src={source} alt={alt} loading="lazy" decoding="async" onError={onError} />
+  return <canvas ref={canvasRef} className={css.frozenPreview} role="img" aria-label={alt} width={square ? 112 : 720} height={square ? 112 : 405} />
+}
+
 function PreviewMedia({ skin, src, fallbackSources, alt, kind, loading, t = defaultTranslator }: PreviewMediaProps) {
   const candidates = previewSourceCandidates(src, fallbackSources)
   const candidateKey = candidates.join('\u0001')
@@ -829,7 +880,12 @@ function PreviewMedia({ skin, src, fallbackSources, alt, kind, loading, t = defa
   if (placeholder) return <div className={css.previewPlaceholder} data-preview-kind={kind} role="img" aria-label={t('common.noScreenshot', { name: localizedSkinName(skin.name, t) })}><MarkGithubIcon aria-hidden="true" /><strong>{skin.author}</strong><small>{t('common.noScreenshotShort')}</small></div>
   if (!lazyMedia.visible) return <span ref={lazyMedia.ref} className={css.mediaLazyPlaceholder} role="img" aria-label={alt} />
   const media = generatedMediaFor(skin, activeSrc, kind)
-  if (media === undefined) return <img src={activeSrc} alt={alt} loading={loading} decoding="async" onLoad={event => { event.currentTarget.dataset.loaded = 'true' }} onError={tryNextSource} />
+  if (media === undefined) {
+    if ((kind === 'recommendation' || kind === 'list') && isAnimatedPreviewSource(activeSrc)) {
+      return <FrozenGifPreview source={activeSrc} alt={alt} square={kind === 'list'} onError={tryNextSource} />
+    }
+    return <img src={activeSrc} alt={alt} loading={loading} decoding="async" onLoad={event => { event.currentTarget.dataset.loaded = 'true' }} onError={tryNextSource} />
+  }
   const showFull = kind === 'hero'
   if (showFull) {
     if (fullFailed) return <img src={activeSrc} alt={alt} loading={loading} decoding="async" onError={tryNextSource} />
