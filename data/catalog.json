@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T06:47:18.386Z",
+  "generatedAt": "2026-11-09T07:04:05.109Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -52796,7 +52796,7 @@
         }
       },
       "compatibility": {
-        "dsh": "^0.1.2-alpha.1",
+        "dsh": "^0.2.2-rc.1",
         "platform": [
           "web"
         ]

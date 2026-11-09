@@ -24,7 +24,7 @@ install:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: ^0.1.2-alpha.1
+  dsh: ^0.2.2-rc.1
   platform:
     - web
 screenshots:
