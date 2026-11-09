@@ -8,7 +8,7 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../f
 import { interceptNotice, isInterceptFailure, SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { Operation } from '../../src/client/types.ts'
-import { stubMarketFetch } from '../fixtures/market-host.ts'
+import { methodSent, requestCount, requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
 import { artifactRiskOperation, dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, registerMarketTestDom, visibleWarningDialogs, zh } from '../fixtures/client-market.tsx'
 
 registerMarketTestDom()
@@ -161,9 +161,9 @@ describe('client market recovery', () => {
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
     fireEvent.click(within(dialog).getAllByRole('button', { name: '关闭' })[0]!)
     expect(screen.queryByRole('status')).toBeNull()
-    const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const stateRequests = requestCount(fetchMock, '/state')
     fireEvent.focus(window)
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateRequests))
     expect(screen.queryByRole('dialog', { name: title })).toBeNull()
     expect(screen.queryByRole('status')).toBeNull()
     view.unmount()
@@ -228,7 +228,7 @@ describe('client market recovery', () => {
     expect(generation).toBe(2)
     fireEvent.click(within(next).getByRole('button', { name: '关闭' }))
     expect(screen.queryByRole('status')).toBeNull()
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/retry'))).toBe(false)
+    expect(requestSent(fetchMock, '/retry')).toBe(false)
   })
   it.each(['post', 'poll'] as const)('prompts again after a second independent skin installation %s exception', async stage => {
     const clock = vi.spyOn(Date, 'now').mockReturnValue(1_800_000_000_000)
@@ -298,9 +298,9 @@ describe('client market recovery', () => {
     expect(dialog.className).toContain('warningModal')
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
     fireEvent.click(within(dialog).getByRole('button', { name: '知道了' }))
-    const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const stateRequests = requestCount(fetchMock, '/state')
     fireEvent.focus(window)
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateRequests))
     expect(screen.queryByRole('dialog', { name: zh['common.confirmResult'] })).toBeNull()
     expect(document.querySelector('[role="status"] strong')).toBeNull()
     expect(screen.queryByRole('button', { name: '重试' })).toBeNull()
@@ -353,9 +353,9 @@ describe('client market recovery', () => {
     fireEvent.click((await screen.findAllByRole('button', { name: '使用' }))[0]!)
     const use = await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })
     pending = true
-    const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const stateRequests = requestCount(fetchMock, '/state')
     fireEvent.focus(window)
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateRequests))
     expect(visibleWarningDialogs()).toEqual([use])
     const pendingTitle = pendingKind === 'restart' ? zh['common.restartManualTitle'] : zh['common.confirmResult']
     expect(screen.queryByRole('dialog', { name: pendingTitle })).toBeNull()
@@ -363,9 +363,9 @@ describe('client market recovery', () => {
     const deferred = await screen.findByRole('dialog', { name: pendingTitle })
     expect(visibleWarningDialogs()).toEqual([deferred])
     fireEvent.click(within(deferred).getByRole('button', { name: '知道了' }))
-    const afterDismiss = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const afterDismiss = requestCount(fetchMock, '/state')
     fireEvent.focus(window)
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(afterDismiss))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(afterDismiss))
     await act(async () => {})
     expect(screen.queryByRole('dialog', { name: pendingTitle })).toBeNull()
   })
@@ -462,8 +462,8 @@ describe('client market recovery', () => {
     expect(screen.queryByText('测试皮肤 已切换到 npm 来源，待重启生效')).toBeNull()
     expect(screen.queryByRole('button', { name: '切换到 npm 来源' })).toBeNull()
     expect(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/migrate') && init?.method === 'POST')?.[1]?.body).toBe(JSON.stringify({ skinId: skin.id }))
-    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/update') && init?.method === 'POST')).toBe(false)
-    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/restart') && init?.method === 'POST')).toBe(false)
+    expect(requestSent(fetchMock, '/update', 'POST')).toBe(false)
+    expect(requestSent(fetchMock, '/restart', 'POST')).toBe(false)
   })
   it.each(['missing', 'no-source', 'manual', 'desktop'])('hides source migration for %s skins', async mode => {
     const entry = mode === 'manual' ? { ...skin, review: { compatibility: 'verified', preview: 'verified', installation: 'manual-only' } } : skin
@@ -499,14 +499,14 @@ describe('client market recovery', () => {
     expect(dialog.textContent).toContain('取消不会更换安装来源')
     expect(dialog.textContent).not.toContain(sourceMigration.currentSource)
     fireEvent.click(within(dialog).getByRole('button', { name: '取消' }))
-    expect(fetchMock.mock.calls.some(([, init]) => init?.method === 'POST')).toBe(false)
+    expect(methodSent(fetchMock, 'POST')).toBe(false)
 
     fireEvent.click(screen.getAllByRole('button', { name: zh['common.replaceWithMarket'] })[0]!)
     fireEvent.click(screen.getByRole('button', { name: '确认替换' }))
     expect(await screen.findByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeTruthy()
     expect(screen.queryByText('测试皮肤 已替换为市场版本，待重启生效')).toBeNull()
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/migrate') && init?.method === 'POST')?.[1]?.body))).toEqual({ skinId: skin.id, sourceContext: sourceMigration.context })
-    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/update') && init?.method === 'POST')).toBe(false)
+    expect(requestSent(fetchMock, '/update', 'POST')).toBe(false)
     expect(screen.queryByRole('button', { name: zh['common.replaceWithMarket'] })).toBeNull()
   })
   it('explains that an incompatible market replacement first disables the selected local skin', async () => {
@@ -540,9 +540,9 @@ describe('client market recovery', () => {
     sourceMigration = changed === 'context'
       ? { ...sourceMigration, context: 'b'.repeat(64) }
       : { ...sourceMigration, currentVersion: '1.1.0', downgrade: true }
-    const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const stateRequests = requestCount(fetchMock, '/state')
     fireEvent(window, new Event('focus'))
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateRequests))
     fireEvent.click(screen.getByRole('button', { name: '确认替换' }))
     const updated = screen.getByRole('dialog', { name: zh['common.replaceWithMarket'] })
     expect(updated.textContent).toContain('安装来源或版本已变化，请重新确认')
@@ -550,9 +550,9 @@ describe('client market recovery', () => {
       expect(updated.textContent).toContain('当前版本 1.1.0 → 市场版本 1.0.0')
       expect(updated.textContent).toContain('降级')
     }
-    expect(fetchMock.mock.calls.some(([, init]) => init?.method === 'POST')).toBe(false)
+    expect(methodSent(fetchMock, 'POST')).toBe(false)
     fireEvent.click(within(updated).getByRole('button', { name: '确认替换' }))
-    await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/migrate') && init?.method === 'POST')).toBe(true))
+    await waitFor(() => expect(requestSent(fetchMock, '/migrate', 'POST')).toBe(true))
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/migrate') && init?.method === 'POST')?.[1]?.body))).toEqual({ skinId: skin.id, sourceContext: sourceMigration.context })
   })
 })

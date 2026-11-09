@@ -6,7 +6,7 @@ import { describe, expect, it, vi } from 'vitest'
 vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../fixtures/client-market.tsx')).createPrimitivesMock())
 
 import { SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
-import { stubMarketFetch } from '../fixtures/market-host.ts'
+import { requestCount, requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
 import { dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
 
 registerMarketTestDom()
@@ -54,12 +54,12 @@ describe('client market restart and selection', () => {
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
     const dialog = await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })
     expect(dialog.textContent).toContain(zh['common.firstUseRisk'])
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/activate'))).toBe(false)
+    expect(requestSent(fetchMock, '/activate')).toBe(false)
     fireEvent.click(within(dialog).getByRole('button', { name: '取消' }))
     expect(window.localStorage.getItem('dsh-skin-market:activation-warning-accepted')).toBeNull()
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
     fireEvent.click(within(await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })).getByRole('button', { name: '确认使用' }))
-    await waitFor(() => expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/activate'))).toBe(true))
+    await waitFor(() => expect(requestSent(fetchMock, '/activate')).toBe(true))
     expect(screen.queryByRole('dialog', { name: zh['common.switchConfirmation'] })).toBeNull()
     expect(window.localStorage.getItem('dsh-skin-market:activation-warning-accepted')).toBe('true')
   })
@@ -107,7 +107,7 @@ describe('client market restart and selection', () => {
     expect(await screen.findAllByText('使用中')).not.toHaveLength(0)
     expect(screen.queryByRole('button', { name: zh['common.restartToApply'] })).toBeNull()
     expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
-    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/restart/clear') && init?.method === 'POST')).toBe(true)
+    expect(requestSent(fetchMock, '/restart/clear', 'POST')).toBe(true)
   })
   it('shows the official Desktop restart instruction without posting to the market restart route', async () => {
     const fetchMock = stubMarketFetch(async (url: string, _init?: RequestInit) => ({
@@ -126,7 +126,7 @@ describe('client market restart and selection', () => {
 
     expect(await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })).toBeTruthy()
     expect(screen.queryByRole('button', { name: zh['common.restartToApply'] })).toBeNull()
-    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/restart') && init?.method === 'POST')).toBe(false)
+    expect(requestSent(fetchMock, '/restart', 'POST')).toBe(false)
   })
   it('shows an unavailable component honestly and lets Use retry its activation without suggesting restart', async () => {
     let activated = false
@@ -163,9 +163,9 @@ describe('client market restart and selection', () => {
     const view = render(<SkinMarketSection t={key => key} />)
     fireEvent.click(within(await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })).getByRole('button', { name: '知道了' }))
     routeRevision += 1
-    const beforeFocus = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const beforeFocus = requestCount(fetchMock, '/state')
     fireEvent(window, new Event('focus'))
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(beforeFocus))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(beforeFocus))
     expect(screen.queryByRole('dialog', { name: zh['common.restartManualTitle'] })).toBeNull()
     expect(screen.getByText('测试皮肤 设置已保存，请手动重启 Desktop App 后生效')).toBeTruthy()
     view.unmount()
@@ -207,9 +207,9 @@ describe('client market restart and selection', () => {
     await act(async () => { (pollRefresh as () => void)() })
     expect(screen.getByText(bannerTitle)).toBeTruthy()
     const refreshState = async () => {
-      const previous = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+      const previous = requestCount(fetchMock, '/state')
       fireEvent(window, new Event('focus'))
-      await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(previous))
+      await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(previous))
     }
     await refreshState()
     expect(screen.getByText(bannerTitle)).toBeTruthy()
@@ -257,7 +257,7 @@ describe('client market restart and selection', () => {
     expect(screen.getAllByText('使用中').length).toBeGreaterThan(0)
     expect(screen.queryByText('待重启')).toBeNull()
     expect(screen.queryByRole('button', { name: zh['common.restartToApply'] })).toBeNull()
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/restart'))).toBe(false)
+    expect(requestSent(fetchMock, '/restart')).toBe(false)
   })
   it('uses confirmed active Desktop state to clear an activation operation restart hint', async () => {
     let active = false
@@ -332,9 +332,9 @@ describe('client market restart and selection', () => {
     expect(marketDialog.textContent).not.toContain('完全退出 Desktop App')
     fireEvent.click(within(marketDialog).getByRole('button', { name: '知道了' }))
     installing = false
-    const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const stateRequests = requestCount(fetchMock, '/state')
     fireEvent(window, new Event('focus'))
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateRequests))
     await openSkinCard()
     const details = screen.getByRole('main', { name: zh['common.detailContent'] })
     expect(within(details).getByText('待重启')).toBeTruthy()
@@ -391,7 +391,7 @@ describe('client market restart and selection', () => {
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: actionLabel }))
     if (kind === 'uninstall') fireEvent.click(within(await screen.findByRole('dialog', { name: zh['common.uninstallSkin'] })).getByRole('button', { name: zh['common.confirmUninstall'] }))
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(1))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(1))
     if (restartRequired) {
       const dialog = await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })
       expect(dialog.textContent).toContain('完全退出 Desktop App 后重新打开')
@@ -401,9 +401,9 @@ describe('client market restart and selection', () => {
       }
       expect(within(dialog).queryByRole('button', { name: /立即重启|确认无任务/ })).toBeNull()
       fireEvent.click(within(dialog).getByRole('button', { name: '知道了' }))
-      const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+      const stateRequests = requestCount(fetchMock, '/state')
       fireEvent(window, new Event('focus'))
-      await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
+      await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateRequests))
       expect(screen.queryByRole('dialog', { name: zh['common.restartManualTitle'] })).toBeNull()
       fireEvent.click(screen.getAllByRole('button', { name: zh['common.viewRestartHelp'] })[0]!)
       expect(screen.getByRole('dialog', { name: zh['common.restartManualTitle'] })).toBeTruthy()
@@ -417,7 +417,7 @@ describe('client market restart and selection', () => {
       expect(screen.queryByRole('button', { name: zh['common.viewRestartHelp'] })).toBeNull()
       if (kind === 'uninstall') expect(within(screen.getByRole('main', { name: zh['common.detailContent'] })).getByText('测试皮肤 已卸载')).toBeTruthy()
     }
-    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/restart') && init?.method === 'POST')).toBe(false)
+    expect(requestSent(fetchMock, '/restart', 'POST')).toBe(false)
   })
   it.each([
     ['same-skin', 'missing'], ['same-skin', 'omitted'],
@@ -468,9 +468,9 @@ describe('client market restart and selection', () => {
     expect(within(details).queryByText('蓝色幻想 已安装，但未启用')).toBeNull()
     expect(within(details).queryByRole('button', { name: zh['common.viewRestartHelp'] })).toBeNull()
     expect(screen.queryByRole('dialog', { name: zh['common.restartManualTitle'] })).toBeNull()
-    const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const stateRequests = requestCount(fetchMock, '/state')
     fireEvent(window, new Event('focus'))
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateRequests))
     expect(within(details).getByText(`${target.name.zh} 已卸载`)).toBeTruthy()
     expect(within(details).queryByText('蓝色幻想 已安装，但未启用')).toBeNull()
 
@@ -505,7 +505,7 @@ describe('client market restart and selection', () => {
     const details = screen.getByRole('main', { name: zh['common.detailContent'] })
     fireEvent.click(within(details).getByRole('button', { name: '卸载' }))
     fireEvent.click(within(await screen.findByRole('dialog', { name: zh['common.uninstallSkin'] })).getByRole('button', { name: zh['common.confirmUninstall'] }))
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(1))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(1))
     await act(async () => {})
     expect(within(details).getByRole('button', { name: '卸载' }).hasAttribute('disabled')).toBe(false)
     expect(screen.queryByText(/测试皮肤 已卸载/)).toBeNull()
@@ -552,9 +552,9 @@ describe('client market restart and selection', () => {
     const dialog = await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })
     expect(dialog.textContent).toContain(zh['common.marketUpdatedRestart'])
     fireEvent.click(within(dialog).getByRole('button', { name: '知道了' }))
-    const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const stateRequests = requestCount(fetchMock, '/state')
     fireEvent(window, new Event('focus'))
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateRequests))
     expect(screen.queryByRole('dialog', { name: zh['common.restartManualTitle'] })).toBeNull()
     expect(screen.getByText('皮肤市场已更新，重启后生效，请手动重启 Desktop App 后生效')).toBeTruthy()
     view.unmount()
@@ -562,7 +562,7 @@ describe('client market restart and selection', () => {
     await screen.findByRole('button', { name: /测试皮肤 界面预览/ })
     expect(screen.getByText('皮肤市场已更新，重启后生效，请手动重启 Desktop App 后生效')).toBeTruthy()
     expect(screen.queryByRole('dialog', { name: zh['common.restartManualTitle'] })).toBeNull()
-    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/restart') && init?.method === 'POST')).toBe(false)
+    expect(requestSent(fetchMock, '/restart', 'POST')).toBe(false)
   })
   it('asks for restart after updating the active skin', async () => {
     let updated = false
@@ -586,7 +586,7 @@ describe('client market restart and selection', () => {
     expect(screen.getAllByText('测试皮肤 已更新，待重启生效').length).toBeGreaterThan(0)
     fireEvent.click(screen.getAllByRole('button', { name: zh['common.restartToApply'] })[0]!)
     expect(screen.getByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeTruthy()
-    expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/update') && init?.method === 'POST')).toBe(true)
+    expect(requestSent(fetchMock, '/update', 'POST')).toBe(true)
   })
   it('disables restart when the Host reports a running Agent', async () => {
     stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { runningAgentCount: 2, skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] }))

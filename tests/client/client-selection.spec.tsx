@@ -8,7 +8,7 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../f
 import { WEB_CLIENT_SETTLE_MS, SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { CatalogSkin, RuntimeSkin } from '../../src/client/types.ts'
-import { stubMarketFetch } from '../fixtures/market-host.ts'
+import { methodSent, requestCount, requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
 import { dshRuntime, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
 
 registerMarketTestDom()
@@ -113,9 +113,9 @@ describe('client market selection convergence', () => {
       expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
       // A fresh focus starts another settlement window. The acknowledged key
       // must survive it so the dialog cannot reopen for the same pending skin.
-      const beforeFocus = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+      const beforeFocus = requestCount(fetchMock, '/state')
       fireEvent(window, new Event('focus'))
-      await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(beforeFocus))
+      await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(beforeFocus))
       await waitFor(() => expect(screen.queryByText('测试皮肤 设置已保存，待重启生效')).toBeNull())
       await act(async () => { await new Promise(resolve => setTimeout(resolve, WEB_CLIENT_SETTLE_MS + 200)) })
       expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
@@ -197,7 +197,7 @@ describe('client market selection convergence', () => {
       expect((await screen.findAllByRole('button', { name: '使用' })).length).toBeGreaterThan(0)
       expect(screen.queryByText('待重启', { exact: true })).toBeNull()
       expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkinStop'] })).toBeNull()
-      await waitFor(() => expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/restart/clear'))).toBe(true))
+      await waitFor(() => expect(requestSent(fetchMock, '/restart/clear')).toBe(true))
     })
 
     it('keeps a stop receipt when the host has not applied the disable', async () => {
@@ -216,7 +216,7 @@ describe('client market selection convergence', () => {
       const dialog = await screen.findByRole('dialog', { name: zh['common.restartTargetSkinStop'] }, { timeout: 3000 })
       expect(dialog.textContent).toContain(zh['common.saveBeforeRestart'])
       expect(screen.getAllByText('待重启', { exact: true }).length).toBeGreaterThan(0)
-      expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/restart/clear'))).toBe(false)
+      expect(requestSent(fetchMock, '/restart/clear')).toBe(false)
     })
 
     it('does not mark an active skin unavailable when another skin has an incomplete stop receipt', async () => {
@@ -310,9 +310,9 @@ describe('client market selection convergence', () => {
       expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
       expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
       protectedReceipt = true
-      const beforeFocus = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+      const beforeFocus = requestCount(fetchMock, '/state')
       fireEvent(window, new Event('focus'))
-      await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(beforeFocus))
+      await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(beforeFocus))
       expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
       expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
     })
@@ -339,9 +339,9 @@ describe('client market selection convergence', () => {
     expect(clientRuntime.setActive).toHaveBeenCalledWith(skin.package, true)
     expect(screen.queryByText('待重启')).toBeNull()
     fireEvent.click(within(dialog).getByRole('button', { name: '取消' }))
-    const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const stateRequests = requestCount(fetchMock, '/state')
     fireEvent(window, new Event('focus'))
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateRequests))
     expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
     expect(screen.getAllByText(/待重启生效/).length).toBeGreaterThan(0)
     instanceId = 'web-after-restart'
@@ -367,7 +367,7 @@ describe('client market selection convergence', () => {
     const compatibilityDialog = await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })
     expect(compatibilityDialog.textContent).toMatch(/不在作者声明的兼容范围/)
     expect(compatibilityDialog.querySelector('ul, ol, code, a, details')).toBeNull()
-    expect(fetchMock.mock.calls.some(([, init]) => init?.method === 'POST')).toBe(false)
+    expect(methodSent(fetchMock, 'POST')).toBe(false)
     fireEvent.click(within(compatibilityDialog).getByRole('button', { name: '仍然使用' }))
     const dialog = await screen.findByRole('dialog', { name: zh['common.restartTargetSkin'] })
     expect(dialog.textContent).toContain(zh['common.saveBeforeRestart'])
@@ -387,9 +387,9 @@ describe('client market selection convergence', () => {
     fireEvent.click(await screen.findByRole('button', { name: '测试皮肤 已安装卡片' }))
     fireEvent.click(screen.getByRole('button', { name: '设为常驻' }))
     const dialog = await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })
-    expect(fetchMock.mock.calls.some(([, init]) => init?.method === 'POST')).toBe(false)
+    expect(methodSent(fetchMock, 'POST')).toBe(false)
     fireEvent.click(within(dialog).getByRole('button', { name: '仍然设为常驻' }))
-    await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/pin') && init?.method === 'POST')).toBe(true))
+    await waitFor(() => expect(requestSent(fetchMock, '/pin', 'POST')).toBe(true))
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/pin') && init?.method === 'POST')?.[1]?.body))).toEqual({ skinId: skin.id, acknowledgeCompatibility: true, compatibilityContext: compatibilityContext(incompatible, dshRuntime) })
   })
 })

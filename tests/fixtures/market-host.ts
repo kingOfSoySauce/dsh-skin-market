@@ -26,3 +26,25 @@ export function stubMarketFetch(handler: FetchLike) {
   vi.stubGlobal('fetch', mock)
   return mock
 }
+
+interface FetchMockLike {
+  mock: { calls: Array<[string, RequestInit | undefined]> }
+}
+
+/** Count requests whose URL ends with the given suffix. */
+export function requestCount(fetchMock: FetchMockLike, suffix: string): number {
+  return fetchMock.mock.calls.filter(([url]) => String(url).endsWith(suffix)).length
+}
+
+/** Whether any request matched the suffix, optionally constrained to a method. */
+export function requestSent(fetchMock: FetchMockLike, suffix: string, method?: string): boolean {
+  return fetchMock.mock.calls.some(([url, init]) => String(url).endsWith(suffix) && (method === undefined || init?.method === method))
+}
+
+export function methodCount(fetchMock: FetchMockLike, method: string): number {
+  return fetchMock.mock.calls.filter(([, init]) => init?.method === method).length
+}
+
+export function methodSent(fetchMock: FetchMockLike, method: string): boolean {
+  return fetchMock.mock.calls.some(([, init]) => init?.method === method)
+}

@@ -10,7 +10,7 @@ import { MARKET_INSTALL_TROUBLESHOOT_URL } from '../../src/client/failure-help.t
 import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallPrompt } from '../../src/client/submission.ts'
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { Operation } from '../../src/client/types.ts'
-import { stubMarketFetch } from '../fixtures/market-host.ts'
+import { requestCount, requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
 import { artifactRiskOperation, dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
 
 registerMarketTestDom()
@@ -414,12 +414,12 @@ describe('client market operations', () => {
       expect(dialog.textContent).not.toContain('使用后将停用其他普通皮肤')
     } else expect(dialog.textContent).toContain(zh['common.firstUseRisk'])
     expect(dialog.textContent).not.toContain(risk.context)
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith(`/${kind}`))).toBe(false)
+    expect(requestSent(fetchMock, `/${kind}`)).toBe(false)
     expect(screen.queryByRole('dialog', { name: '设为常驻此皮肤' })).toBeNull()
     expect(screen.queryByRole('dialog', { name: '安装需要确认安装包风险' })).toBeNull()
     if (mode !== 'install-and-use') {
       fireEvent.click(within(dialog).getByRole('button', { name: '取消' }))
-      expect(fetchMock.mock.calls.some(([url]) => url.endsWith(`/${kind}`))).toBe(false)
+      expect(requestSent(fetchMock, `/${kind}`)).toBe(false)
       expect(window.localStorage.getItem('dsh-skin-market:activation-warning-accepted')).toBeNull()
       fireEvent.click(screen.getByRole('button', { name: mode === 'pin' ? '设为常驻' : '使用' }))
       dialog = await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })
@@ -444,16 +444,16 @@ describe('client market operations', () => {
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
     const dialog = await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })
     risk = { ...risk, context: 'changed-artifact-context', warnings: ['新构件缺少可核对的 SRI'] }
-    const requests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const requests = requestCount(fetchMock, '/state')
     fireEvent.focus(window)
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(requests))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(requests))
     fireEvent.click(within(dialog).getByRole('button', { name: '仍然使用' }))
     expect(dialog.textContent).toContain(zh['common.confirmationChanged'])
     expect(dialog.textContent).toContain(zh['common.installPackageUnverified'])
     expect(dialog.textContent).not.toContain('SRI')
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/activate'))).toBe(false)
+    expect(requestSent(fetchMock, '/activate')).toBe(false)
     fireEvent.click(within(dialog).getByRole('button', { name: '仍然使用' }))
-    await waitFor(() => expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/activate'))).toBe(true))
+    await waitFor(() => expect(requestSent(fetchMock, '/activate')).toBe(true))
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url]) => url.endsWith('/activate'))?.[1]?.body)).artifactContext).toBe('changed-artifact-context')
   })
   it('does not ask about an accepted unchanged artifact again after refreshed state removes its risk', async () => {
@@ -489,7 +489,7 @@ describe('client market operations', () => {
     expect(dialog.textContent).not.toContain('actual-artifact-context')
     expect(within(dialog).getByRole('button', { name: '仍然继续' })).toBeTruthy()
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/retry'))).toBe(false)
+    expect(requestSent(fetchMock, '/retry')).toBe(false)
     fireEvent.click(within(dialog).getByRole('button', { name: closeLabel }))
     expect(screen.queryByRole('dialog', { name: '安装需要确认安装包风险' })).toBeNull()
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/retry') || url.endsWith('/activate'))).toBe(false)
@@ -576,7 +576,7 @@ describe('client market operations', () => {
     expect(dialog.textContent).toContain('@example/dependency@2.3.4')
     fireEvent.click(within(dialog).getByRole('button', { name: '取消' }))
     expect(screen.queryByRole('dialog', { name: '安装需要允许新版本' })).toBeNull()
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/retry'))).toBe(false)
+    expect(requestSent(fetchMock, '/retry')).toBe(false)
   })
   it.each(['install', 'update', 'activate', 'pin'] as const)('acknowledges a Host compatibility rejection during %s without offering or issuing a retry', async kind => {
     const target = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
@@ -600,7 +600,7 @@ describe('client market operations', () => {
     if (kind === 'activate' || kind === 'pin') {
       const confirmation = await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })
       expect(confirmation.textContent).toContain(zh['common.compatibilityRiskLabel'])
-      expect(fetchMock.mock.calls.some(([url]) => url.endsWith(`/${kind}`))).toBe(false)
+      expect(requestSent(fetchMock, `/${kind}`)).toBe(false)
       fireEvent.click(within(confirmation).getByRole('button', { name: kind === 'pin' ? '仍然设为常驻' : '仍然使用' }))
     }
     const title = { install: '安装未完成', update: '更新未完成', activate: '启用未完成', pin: '设为常驻未完成' }[kind]
@@ -613,13 +613,13 @@ describe('client market operations', () => {
     fireEvent.click(within(dialog).getByRole('button', { name: '知道了' }))
     expect(screen.queryByRole('dialog', { name: title })).toBeNull()
     expect(screen.queryByRole('status')).toBeNull()
-    const stateRequests = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const stateRequests = requestCount(fetchMock, '/state')
     fireEvent.focus(window)
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateRequests))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateRequests))
     expect(screen.queryByRole('dialog', { name: title })).toBeNull()
     expect(screen.queryByRole('status')).toBeNull()
     expect(fetchMock.mock.calls.filter(([, init]) => init?.method === 'POST')).toHaveLength(1)
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/retry'))).toBe(false)
+    expect(requestSent(fetchMock, '/retry')).toBe(false)
   })
   it('does not offer approval when the host cannot identify the exact blocked version', async () => {
     const operation = { id: 'unknown-age', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), failure: {
@@ -632,7 +632,7 @@ describe('client market operations', () => {
     expect(dialog.textContent).toContain('所需版本仍处于新包保护期。请等待保护期结束后重试。')
     expect(within(dialog).queryByRole('button', { name: '允许并继续' })).toBeNull()
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/retry'))).toBe(false)
+    expect(requestSent(fetchMock, '/retry')).toBe(false)
   })
   it.each([
     { kind: 'update', action: 'approve-release-age', failureKind: 'release-age' },
@@ -777,7 +777,7 @@ describe('client market operations', () => {
 
     fireEvent.click(await screen.findByRole('button', { name: zh['common.installAndUse'] }))
 
-    await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/activate') && init?.method === 'POST')).toBe(true))
+    await waitFor(() => expect(requestSent(fetchMock, '/activate', 'POST')).toBe(true))
   })
   it('warns that compatibility is unverified but still installs', async () => {
     const unverified = { ...skin, review: { compatibility: 'unverified' as const, preview: 'repository-card' as const, installation: 'verified' as const }, compatibility: { dsh: 'unverified', platform: ['web'] } }
@@ -802,7 +802,7 @@ describe('client market operations', () => {
     expect(screen.queryByRole('dialog', { name: zh['common.switchConfirmation'] })).toBeNull()
     fireEvent.click(automatic)
     expect(screen.queryByRole('button', { name: zh['common.confirmRestart'] })).toBeNull()
-    await waitFor(() => expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/install'))).toBe(true))
+    await waitFor(() => expect(requestSent(fetchMock, '/install')).toBe(true))
     expect(screen.queryByRole('dialog', { name: zh['common.switchConfirmation'] })).toBeNull()
     expect(screen.queryByRole('dialog', { name: '安装已阻止' })).toBeNull()
     expect(screen.getByText(zh['common.noRepositoryScreenshot'])).toBeTruthy()
@@ -873,9 +873,9 @@ describe('client market operations', () => {
     fireEvent.click(within(dialog).getByRole('button', { name: '复制命令' }))
     await waitFor(() => expect(writeText).toHaveBeenLastCalledWith(createSkinInstallCommands(subdirectorySkin, { ...installEnvironment, shell: 'powershell' })[0]!.value))
     fireEvent.click(cmd)
-    const stateReads = fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length
+    const stateReads = requestCount(fetchMock, '/state')
     fireEvent.focus(window)
-    await waitFor(() => expect(fetchMock.mock.calls.filter(([url]) => url.endsWith('/state')).length).toBeGreaterThan(stateReads))
+    await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(stateReads))
     expect(cmd.getAttribute('aria-pressed')).toBe('true')
     expect(powershell.getAttribute('aria-pressed')).toBe('false')
     fireEvent.click(within(dialog).getByRole('button', { name: '复制命令' }))
@@ -1138,10 +1138,10 @@ describe('client market operations', () => {
     const dialog = await screen.findByRole('dialog', { name: zh['common.installationUnverifiedTitle'] })
     expect(dialog.textContent).toContain('固定版本的仓库没有提交可读取的客户端入口')
     expect(dialog.textContent).toContain(manual.install.target)
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/install'))).toBe(false)
+    expect(requestSent(fetchMock, '/install')).toBe(false)
 
     fireEvent.click(within(dialog).getByRole('button', { name: zh['common.stillInstall'] }))
-    await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/install') && init?.method === 'POST')).toBe(true))
+    await waitFor(() => expect(requestSent(fetchMock, '/install', 'POST')).toBe(true))
   })
   it('warns before updating a manual-only web skin and keeps the update entry visible', async () => {
     const manual = { ...skin, review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'manual-only' as const } }
@@ -1158,7 +1158,7 @@ describe('client market operations', () => {
     fireEvent.click(within(screen.getByRole('main', { name: zh['common.detailContent'] })).getByRole('button', { name: '更新' }))
     const dialog = await screen.findByRole('dialog', { name: zh['common.installationUnverifiedUpdateTitle'] })
     fireEvent.click(within(dialog).getByRole('button', { name: zh['common.stillUpdate'] }))
-    await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/update') && init?.method === 'POST')).toBe(true))
+    await waitFor(() => expect(requestSent(fetchMock, '/update', 'POST')).toBe(true))
   })
   it('does not expose repository health checks in skin details', async () => {
     const healthSkin = { ...skin, health: {

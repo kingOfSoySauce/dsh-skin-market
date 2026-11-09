@@ -10,7 +10,7 @@ import { captureListScroll, compareInstalledSkinOrder, compareSkinOrder, resolve
 import { MARKET_INSTALL_TROUBLESHOOT_URL } from '../../src/client/failure-help.ts'
 import { apply as applyClient, createClientSkinRuntime, missingPrimitives, switchClientSkin } from '../../src/client/index.ts'
 import { createStaticTranslator } from '../../src/client/i18n.ts'
-import { stubMarketFetch } from '../fixtures/market-host.ts'
+import { requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
 import { dshRuntime, managedDesktopSkin, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
 
 registerMarketTestDom()
@@ -108,7 +108,7 @@ describe('client market catalog and updates', () => {
     expect(await screen.findByRole('button', { name: /测试皮肤 界面预览/ })).toBeTruthy()
     expect(screen.queryByText(/内置目录|在线目录/)).toBeNull()
     expect(screen.queryByRole('button', { name: '刷新在线目录' })).toBeNull()
-    expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/catalog/refresh'))).toBe(false)
+    expect(requestSent(fetchMock, '/catalog/refresh')).toBe(false)
   })
   it('shows a compact self-update action only when GitHub has a newer market version', async () => {
     let restartRequired = false
