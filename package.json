@@ -27,7 +27,7 @@
     "hydrate": "node scripts/hydrate-submission.mjs",
     "media:build": "node scripts/build-media.mjs",
     "media:check": "node scripts/check-media.mjs",
-    "smoke:submission": "vitest run tests/submission.spec.ts tests/client/client.spec.tsx",
+    "smoke:submission": "vitest run tests/submission.spec.ts tests/client/client-recovery.spec.tsx tests/client/client-market.spec.tsx tests/client/client-install.spec.tsx tests/client/client-discovery.spec.tsx tests/client/client-restart.spec.tsx tests/client/client-selection.spec.tsx tests/client/client-operations.spec.tsx",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.client.json --noEmit && tsc -p tsconfig.site.json --noEmit",
     "build:host": "tsc -p tsconfig.json && chmod +x lib/reset-cli.js lib/repair-cli.js",
     "build:client": "tsdown",
