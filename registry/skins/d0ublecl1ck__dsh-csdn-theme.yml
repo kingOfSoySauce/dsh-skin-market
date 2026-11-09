@@ -14,12 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:d0ublecl1ck/dsh-csdn-theme#b1c28da000991b84445b3d599447931da2d6e0ad
+  target: github:d0ublecl1ck/dsh-csdn-theme#45f56044c62442a0d4b533fdb9d14f30257d63bf
   version: 0.2.3
-  commit: b1c28da000991b84445b3d599447931da2d6e0ad
+  commit: 45f56044c62442a0d4b533fdb9d14f30257d63bf
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-csdn-theme
+    version: 0.2.3
+    integrity: sha512-GONanmVHAAFBrf9SpaPCdKpqJNe1/bCPW6UQ0HRzA5sfSbfsqSCQaOOoXsmt1pvabjA99+a5qYrVT903kOFtpQ==
+    repository: https://github.com/d0ublecl1ck/dsh-csdn-theme
+    gitHead: 45f56044c62442a0d4b533fdb9d14f30257d63bf
 compatibility:
   dsh: unverified
   platform:
@@ -47,19 +53,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: b1c28da000991b84445b3d599447931da2d6e0ad
+    commit: 45f56044c62442a0d4b533fdb9d14f30257d63bf
     packageVersion: 0.2.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:52:43.649Z
+    checkedAt: 2026-11-09T00:17:35.800Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:52:44.145Z
+releaseUpdatedAt: 2026-11-09T00:17:36.959Z
+metadataUpdatedAt: 2026-11-09T00:17:36.959Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:44.145Z
+updatedAt: 2026-11-09T00:17:36.959Z

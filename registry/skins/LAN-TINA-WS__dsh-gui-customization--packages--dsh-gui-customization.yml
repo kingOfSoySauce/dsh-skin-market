@@ -19,12 +19,21 @@ modes:
   - light
   - dark
 install:
-  target: github:LAN-TINA-WS/dsh-gui-customization#ddfa614695b4b5d5eb49dbb832134048162318c1&path:/packages/dsh-gui-customization
+  target: github:LAN-TINA-WS/dsh-gui-customization#43d98d282c31762c23638b22dabf9d7185658f5e&path:/packages/dsh-gui-customization
   version: 0.6.5
-  commit: ddfa614695b4b5d5eb49dbb832134048162318c1
+  commit: 43d98d282c31762c23638b22dabf9d7185658f5e
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: dsh-gui-customization
+    packageVersion: 0.6.5
+    integrity: sha512-E8VCkfaR0VKEcYYloIyDAPjiYfyUng/LMlsoXLYileKP/qg5wAt5wUS+5W6R0kv1JYlGAIxXsspPzZKA/BE+UA==
+  npm:
+    name: dsh-gui-customization
+    version: 0.6.5
+    integrity: sha512-E8VCkfaR0VKEcYYloIyDAPjiYfyUng/LMlsoXLYileKP/qg5wAt5wUS+5W6R0kv1JYlGAIxXsspPzZKA/BE+UA==
+    repository: https://github.com/LAN-TINA-WS/dsh-gui-customization
+    gitHead: 43d98d282c31762c23638b22dabf9d7185658f5e
 compatibility:
   dsh: unverified
   platform:
@@ -57,19 +66,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: ddfa614695b4b5d5eb49dbb832134048162318c1
+    commit: 43d98d282c31762c23638b22dabf9d7185658f5e
     packageVersion: 0.6.5
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-02T10:29:24.227Z
+    checkedAt: 2026-11-09T00:13:12.441Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 985
 starsSnapshot: 18
-releaseUpdatedAt: 2026-10-02T10:29:25.232Z
-metadataUpdatedAt: 2026-10-02T10:29:25.232Z
+releaseUpdatedAt: 2026-11-09T00:13:13.554Z
+metadataUpdatedAt: 2026-11-09T00:13:13.554Z
 starsUpdatedAt: 2026-10-23T22:01:25.105Z
-updatedAt: 2026-10-23T22:01:25.105Z
+updatedAt: 2026-11-09T00:13:13.554Z

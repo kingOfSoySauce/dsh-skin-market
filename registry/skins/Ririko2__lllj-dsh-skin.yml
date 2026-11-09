@@ -17,6 +17,9 @@ install:
   target: github:Ririko2/lllj-dsh-skin#4e874a46284a6c045a533072148969252fd5a01d
   version: 0.7.4
   commit: 4e874a46284a6c045a533072148969252fd5a01d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/chat-anju.png
   - https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/empty-day-group.png
   - https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/chat-ririko.png
+listScreenshot: https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/empty-day.png
 review:
   compatibility: unverified
   preview: verified
@@ -43,12 +47,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 4e874a46284a6c045a533072148969252fd5a01d
+    packageVersion: 0.7.4
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T00:16:43.109Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-08T17:48:02.165Z
-metadataUpdatedAt: 2026-11-08T17:48:02.165Z
+releaseUpdatedAt: 2026-11-09T00:16:46.159Z
+metadataUpdatedAt: 2026-11-09T00:16:46.159Z
 starsUpdatedAt: 2026-11-08T17:48:02.165Z
-updatedAt: 2026-11-08T17:48:02.165Z
+updatedAt: 2026-11-09T00:16:46.159Z

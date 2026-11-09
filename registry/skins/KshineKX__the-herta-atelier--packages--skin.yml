@@ -18,6 +18,9 @@ install:
   target: github:KshineKX/the-herta-atelier#197291ae6ea0dee96da9e0b5bf36997faa8ec977&path:/packages/skin
   version: 0.4.0-beta.14
   commit: 197291ae6ea0dee96da9e0b5bf36997faa8ec977
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
 compatibility:
   dsh: unverified
   platform:
@@ -53,9 +56,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-02T11:24:50.397Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-09T00:18:09.491Z
 metadataUpdatedAt: 2026-11-05T00:23:22.896Z
 starsUpdatedAt: 2026-11-02T11:24:50.397Z
-updatedAt: 2026-11-05T00:23:22.896Z
+updatedAt: 2026-11-09T00:18:09.491Z

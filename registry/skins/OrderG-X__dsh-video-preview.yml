@@ -14,18 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:OrderG-X/dsh-video-preview#3fe01e6b03f070370b19eb8459787599005643a1
-  version: 0.5.5
-  commit: 3fe01e6b03f070370b19eb8459787599005643a1
+  target: github:OrderG-X/dsh-video-preview#455250786fea0058191adca67a873a8b51be0f0b
+  version: 0.5.6
+  commit: 455250786fea0058191adca67a873a8b51be0f0b
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: "@orderg-x/dsh-video-preview"
+    packageVersion: 0.5.6
+    integrity: sha512-3BnTjGJJGjaXLz4RVU/8JzrTI9oRTCyLPU1iD/kBwjoyzGphQ5v4AA5cM0lBb6bp+tFR1IU14VrJtgpJs+qkzg==
   npm:
     name: "@orderg-x/dsh-video-preview"
-    version: 0.5.5
-    integrity: sha512-LEJiWSO6UlN8IbwMdFh0WdauzYvZidBgPzDJlDySXp/US5VsBPc+MKiuGCVo4Q5JFHSAOWS4RxCbAKmwPLoBmA==
+    version: 0.5.6
+    integrity: sha512-3BnTjGJJGjaXLz4RVU/8JzrTI9oRTCyLPU1iD/kBwjoyzGphQ5v4AA5cM0lBb6bp+tFR1IU14VrJtgpJs+qkzg==
     repository: https://github.com/OrderG-X/dsh-video-preview
-    gitHead: 3fe01e6b03f070370b19eb8459787599005643a1
+    gitHead: 455250786fea0058191adca67a873a8b51be0f0b
 compatibility:
   dsh: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
   platform:
@@ -49,20 +52,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 3fe01e6b03f070370b19eb8459787599005643a1
-    packageVersion: 0.5.5
+    commit: 455250786fea0058191adca67a873a8b51be0f0b
+    packageVersion: 0.5.6
     scannerVersion: static-v2
     dshVersion: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-07T05:33:55.888Z
+    checkedAt: 2026-11-09T00:14:34.471Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 0
-releaseUpdatedAt: 2026-11-07T05:33:56.896Z
-metadataUpdatedAt: 2026-11-07T05:33:56.896Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-09T00:14:35.781Z
+metadataUpdatedAt: 2026-11-09T00:14:35.781Z
 starsUpdatedAt: 2026-11-01T01:43:34.817Z
-updatedAt: 2026-11-07T05:33:56.896Z
+updatedAt: 2026-11-09T00:14:35.781Z

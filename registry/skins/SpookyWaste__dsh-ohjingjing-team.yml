@@ -24,6 +24,8 @@ compatibility:
   dsh: ">=0.1.7-rc.2 <0.3.0-0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/SpookyWaste__dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/panel-live.webp
   - https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/header-runway_1.png
@@ -54,11 +56,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
-marketScreenshots:
-  - skin-screenshots/SpookyWaste__dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/conversation.png
 featuredRank: 999
+starsSnapshot: 3
 releaseUpdatedAt: 2026-11-07T05:33:57.631Z
-metadataUpdatedAt: 2026-11-08T00:17:37.744Z
+metadataUpdatedAt: 2026-11-09T00:14:38.641Z
 starsUpdatedAt: 2026-10-27T23:01:00.045Z
-updatedAt: 2026-11-08T00:17:37.744Z
+updatedAt: 2026-11-09T00:14:38.641Z

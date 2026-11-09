@@ -26,6 +26,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/home.png
+  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/conversation.png
+  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -53,13 +57,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/home.png
-  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/conversation.png
-  - skin-screenshots/Sovero__dsh_plugins--dsh-ocean-theme/cf4864c10da496272b483e10d51839372c65713d/settings.png
 featuredRank: 999
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-03T01:37:44.336Z
-metadataUpdatedAt: 2026-11-04T00:03:48.975Z
+metadataUpdatedAt: 2026-11-09T00:16:48.557Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-04T00:03:48.975Z
+updatedAt: 2026-11-09T00:16:48.557Z

@@ -13,12 +13,18 @@ tags:
 modes:
   - dark
 install:
-  target: github:FOX4096/dsh-custom-css#6d91e31f76ca73510f450b1dd1605531b9be6bf7
+  target: github:FOX4096/dsh-custom-css#75d24d779fa3a1ad34f547709a6844671c75757a
   version: 0.13.0
-  commit: 6d91e31f76ca73510f450b1dd1605531b9be6bf7
+  commit: 75d24d779fa3a1ad34f547709a6844671c75757a
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-custom-css
+    version: 0.13.0
+    integrity: sha512-p7zcuSp3hO9NlUUz5c5/o1sQT1LQqYs/+ExgWafAf70vJ3OEy/4qscawQkhf1AEykQQ91WgecMqqCIrRifUkzQ==
+    repository: https://github.com/FOX4096/dsh-custom-css
+    gitHead: 75d24d779fa3a1ad34f547709a6844671c75757a
 compatibility:
   dsh: unverified
   platform:
@@ -44,19 +50,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 6d91e31f76ca73510f450b1dd1605531b9be6bf7
+    commit: 75d24d779fa3a1ad34f547709a6844671c75757a
     packageVersion: 0.13.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-08T00:17:45.745Z
+    checkedAt: 2026-11-09T00:14:56.767Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-08T00:17:45.860Z
-metadataUpdatedAt: 2026-11-08T00:17:45.860Z
+releaseUpdatedAt: 2026-11-09T00:14:56.817Z
+metadataUpdatedAt: 2026-11-09T00:14:56.817Z
 starsUpdatedAt: 2026-11-01T22:47:39.649Z
-updatedAt: 2026-11-08T00:17:45.860Z
+updatedAt: 2026-11-09T00:14:56.817Z

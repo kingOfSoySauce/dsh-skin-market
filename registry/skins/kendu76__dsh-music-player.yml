@@ -18,8 +18,11 @@ install:
   version: 1.0.3
   commit: 172355b147f91ae994631aa4cbd61adfe8a5fb66
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-music-player
+    packageVersion: 1.0.3
+    integrity: sha512-3pYMYug66vXILUNjLUtXy6DjSU6illd0kfM0t9YebUmQGfiHU6AOf67pj38A604zm5SKKXYjuo+jU1RIHEiwfg==
   npm:
     name: dsh-music-player
     version: 1.0.3
@@ -63,9 +66,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 21
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T23:00:28.784Z
+starsSnapshot: 21
+releaseUpdatedAt: 2026-11-09T00:13:09.382Z
 metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-27T23:00:28.784Z
-updatedAt: 2026-10-27T23:00:28.784Z
+updatedAt: 2026-11-09T00:13:09.382Z

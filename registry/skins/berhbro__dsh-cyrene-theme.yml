@@ -23,8 +23,11 @@ install:
   version: 0.4.1
   commit: 47cf4bf307f52906028b422f30568a52c1ef8f87
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-cyrene-theme
+    packageVersion: 0.4.1
+    integrity: sha512-aGwOdTClOEvM3luhlesEIYHK3hEzwpLs4p5wahl0/ezB/i1DvRhjTNkuuZoUlw0xkIZcciGVTZAVbzorKuB6bQ==
   npm:
     name: dsh-cyrene-theme
     version: 0.4.1
@@ -35,6 +38,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/home.png
+  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/conversation.png
+  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/settings.png
 screenshots:
   - https://raw.githubusercontent.com/berhbro/dsh-cyrene-theme/6f2e3ad4b4a28379b1d1932feb330f79213273cd/docs/screenshots/DarkTheme.png
   - https://raw.githubusercontent.com/berhbro/dsh-cyrene-theme/6f2e3ad4b4a28379b1d1932feb330f79213273cd/docs/screenshots/LightTheme.png
@@ -67,13 +74,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 56
-marketScreenshots:
-  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/home.png
-  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/conversation.png
-  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/settings.png
 featuredRank: 1109
-releaseUpdatedAt: 2026-11-01T22:47:22.690Z
-metadataUpdatedAt: 2026-11-03T01:36:56.745Z
-starsUpdatedAt: 2026-11-06T00:08:18.130Z
-updatedAt: 2026-11-06T00:08:18.130Z
+starsSnapshot: 58
+releaseUpdatedAt: 2026-11-09T00:12:50.182Z
+metadataUpdatedAt: 2026-11-09T00:12:50.182Z
+starsUpdatedAt: 2026-11-09T00:12:50.182Z
+updatedAt: 2026-11-09T00:12:50.182Z

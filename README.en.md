@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-07**: [Galaxy](https://github.com/haoranx98/dsh-skin-galaxy) (haoranx98). See the [recent additions log](./docs/recently-added.md#recent-2026-11-07-haoranx98-dsh-skin-galaxy).
+- **2026-11-09**: [LimeLight Lemonade Jam](https://github.com/Ririko2/lllj-dsh-skin) (Ririko2). See the [recent additions log](./docs/recently-added.md#recent-2026-11-09-ririko2-lllj-dsh-skin).
 
 <a id="manual-update"></a>
 ## Install and update

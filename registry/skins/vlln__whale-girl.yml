@@ -14,16 +14,26 @@ modes:
   - light
   - dark
 install:
-  target: github:vlln/whale-girl#c3f4afb400755062991c7e9991b745b3016abeeb
+  target: github:vlln/whale-girl#d7b695bc423f5081bcc0fcb6df0064f257a7e16b
   version: 0.2.4
-  commit: c3f4afb400755062991c7e9991b745b3016abeeb
+  commit: d7b695bc423f5081bcc0fcb6df0064f257a7e16b
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: whale-girl
+    version: 0.2.4
+    integrity: sha512-IGeztfLE+50c0XU6HVSV5qY4vshdLbzJ5b7OW5FRSltBrvIUJ6lb+qWBSPVCpVhdPOV/rjvBYg9SKcysbRAzUA==
+    repository: https://github.com/vlln/whale-girl
+    gitHead: d7b695bc423f5081bcc0fcb6df0064f257a7e16b
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/home.png
+  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/conversation.png
+  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/settings.png
 screenshots:
   - https://raw.githubusercontent.com/vlln/whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/docs/preview/idle.gif
   - https://raw.githubusercontent.com/vlln/whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/docs/preview/working.gif
@@ -49,23 +59,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: c3f4afb400755062991c7e9991b745b3016abeeb
+    commit: d7b695bc423f5081bcc0fcb6df0064f257a7e16b
     packageVersion: 0.2.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T23:01:02.022Z
+    checkedAt: 2026-11-09T00:12:31.982Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 405
-marketScreenshots:
-  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/home.png
-  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/conversation.png
-  - skin-screenshots/vlln__whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/settings.png
 featuredRank: 620
-releaseUpdatedAt: 2026-10-30T23:01:04.704Z
-metadataUpdatedAt: 2026-10-31T04:39:10.957Z
+starsSnapshot: 405
+releaseUpdatedAt: 2026-11-09T00:12:35.296Z
+metadataUpdatedAt: 2026-11-09T00:12:35.296Z
 starsUpdatedAt: 2026-11-07T05:33:38.409Z
-updatedAt: 2026-11-07T05:33:38.409Z
+updatedAt: 2026-11-09T00:12:35.296Z

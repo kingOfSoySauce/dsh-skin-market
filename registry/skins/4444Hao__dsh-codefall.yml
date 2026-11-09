@@ -14,12 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:4444Hao/dsh-codefall#68159fcced1d65c7ea356821859ea80d365c523a
+  target: github:4444Hao/dsh-codefall#25145d52a4892ca8585d24efb53f3028e74c245b
   version: 0.2.0
-  commit: 68159fcced1d65c7ea356821859ea80d365c523a
+  commit: 25145d52a4892ca8585d24efb53f3028e74c245b
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-codefall
+    version: 0.2.0
+    integrity: sha512-CeTPubgPXHdiHByO/Se3QRy9cNeyjnXJ+6ETw91IcqJhhnjA2LW/N05cZUOHdcdkGaz/OOVX5WjuvIwVUFU2LQ==
+    repository: https://github.com/4444Hao/dsh-codefall
+    gitHead: 25145d52a4892ca8585d24efb53f3028e74c245b
 compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
@@ -46,19 +52,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 68159fcced1d65c7ea356821859ea80d365c523a
+    commit: 25145d52a4892ca8585d24efb53f3028e74c245b
     packageVersion: 0.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:51:57.104Z
+    checkedAt: 2026-11-09T00:15:33.932Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:57.313Z
+releaseUpdatedAt: 2026-11-09T00:15:35.058Z
+metadataUpdatedAt: 2026-11-09T00:15:35.058Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:51:57.313Z
+updatedAt: 2026-11-09T00:15:35.058Z

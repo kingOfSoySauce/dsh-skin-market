@@ -18,12 +18,19 @@ install:
   version: 0.1.1
   commit: 8e3bdf82af7d180eecabe4065f675222b3f54b98
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-bgm-service
+    packageVersion: 0.1.1
+    integrity: sha512-9ROEwLcem4yUnYRqf/kxflbm0TETNciItZpBjP1pPUJ6T4Cy97nxRDy00ZJ6LK2LUFeZ4GvmNHwCNMxO4rjXIQ==
 compatibility:
   dsh: ^0.1.7-rc.2
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/LLYlab__DBS/8e3bdf82af7d180eecabe4065f675222b3f54b98/home.png
+  - skin-screenshots/LLYlab__DBS/8e3bdf82af7d180eecabe4065f675222b3f54b98/conversation.png
+  - skin-screenshots/LLYlab__DBS/8e3bdf82af7d180eecabe4065f675222b3f54b98/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -52,13 +59,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/LLYlab__DBS/8e3bdf82af7d180eecabe4065f675222b3f54b98/home.png
-  - skin-screenshots/LLYlab__DBS/8e3bdf82af7d180eecabe4065f675222b3f54b98/conversation.png
-  - skin-screenshots/LLYlab__DBS/8e3bdf82af7d180eecabe4065f675222b3f54b98/settings.png
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-09T00:18:17.512Z
+metadataUpdatedAt: 2026-11-09T00:18:17.512Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-30T03:53:15.825Z
+updatedAt: 2026-11-09T00:18:17.512Z

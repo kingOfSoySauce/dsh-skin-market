@@ -14,12 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:orxz/deepseek-harness-pets#62b3e498cdb0bb7acbe3043a9e84eaba905f1e09
+  target: github:orxz/deepseek-harness-pets#23a84627b205c54c8b7c2587dee6495d2f2f7ae4
   version: 0.2.3
-  commit: 62b3e498cdb0bb7acbe3043a9e84eaba905f1e09
+  commit: 23a84627b205c54c8b7c2587dee6495d2f2f7ae4
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: deepseek-harness-pets
+    version: 0.2.3
+    integrity: sha512-ZrnqUP1011SJ57cNRX2k3qJaWvpsNwG6TJDKFVGc/4EJ7oTGeriBg+6Hzc6RiiAERr+/FHDSrBBm1qaGxPVpTA==
+    repository: https://github.com/orxz/deepseek-harness-pets
+    gitHead: 23a84627b205c54c8b7c2587dee6495d2f2f7ae4
 compatibility:
   dsh: ">=0.1.0-rc.5"
   platform:
@@ -34,26 +40,29 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.5 未被本次检测范围 0.1.0-rc.5 完全覆盖（固定版本 62b3e498cdb0bb7acbe3043a9e84eaba905f1e09）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.5 未被本次检测范围 0.1.0-rc.5 完全覆盖（固定版本 23a84627b205c54c8b7c2587dee6495d2f2f7ae4）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 62b3e498cdb0bb7acbe3043a9e84eaba905f1e09
+    commit: 23a84627b205c54c8b7c2587dee6495d2f2f7ae4
     packageVersion: 0.2.3
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:32:47.868Z
+    checkedAt: 2026-11-09T00:16:36.836Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-26T01:52:19.386Z
+releaseUpdatedAt: 2026-11-09T00:16:37.065Z
+metadataUpdatedAt: 2026-11-09T00:16:37.065Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:19.386Z
+updatedAt: 2026-11-09T00:16:37.065Z

@@ -18,13 +18,22 @@ modes:
   - light
   - dark
 install:
-  target: github:gooosie/dsh-whale-bg#2746a7eacba5c0dde28e29d00b6b15f1f2894164
+  target: github:gooosie/dsh-whale-bg#9c1844406e599d3a2b2e6a1ef64aab621aa8db2c
   version: 0.1.0
-  commit: 2746a7eacba5c0dde28e29d00b6b15f1f2894164
+  commit: 9c1844406e599d3a2b2e6a1ef64aab621aa8db2c
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepare,prepublishOnly
-  allowBuild: dsh-whale-bg@https://codeload.github.com/gooosie/dsh-whale-bg/tar.gz/2746a7eacba5c0dde28e29d00b6b15f1f2894164
+    mode: managed
+    registry: npm
+    packageName: dsh-whale-bg
+    packageVersion: 0.1.0
+    integrity: sha512-NV3fiCIzWvgo0LTexBLeutPbH3lyNk0wA/En6kStXJ2jA5nW0JVR2L6xNzsWegABu4wSDhoNraoM1MI/MhJB4w==
+  allowBuild: dsh-whale-bg@https://codeload.github.com/gooosie/dsh-whale-bg/tar.gz/9c1844406e599d3a2b2e6a1ef64aab621aa8db2c
+  npm:
+    name: dsh-whale-bg
+    version: 0.1.0
+    integrity: sha512-NV3fiCIzWvgo0LTexBLeutPbH3lyNk0wA/En6kStXJ2jA5nW0JVR2L6xNzsWegABu4wSDhoNraoM1MI/MhJB4w==
+    repository: https://github.com/gooosie/dsh-whale-bg
+    gitHead: 9c1844406e599d3a2b2e6a1ef64aab621aa8db2c
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -32,6 +41,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/gooosie/dsh-whale-bg/2746a7eacba5c0dde28e29d00b6b15f1f2894164/docs/assets/dsh-whale-bg-preview.webp
   - https://raw.githubusercontent.com/gooosie/dsh-whale-bg/2746a7eacba5c0dde28e29d00b6b15f1f2894164/docs/assets/dsh-whale-bg-preview.gif
+listScreenshot: https://raw.githubusercontent.com/gooosie/dsh-whale-bg/2746a7eacba5c0dde28e29d00b6b15f1f2894164/docs/assets/dsh-whale-bg-preview.webp
 review:
   compatibility: verified
   preview: verified
@@ -39,22 +49,23 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: pass
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 2746a7eacba5c0dde28e29d00b6b15f1f2894164
+    commit: 9c1844406e599d3a2b2e6a1ef64aab621aa8db2c
     packageVersion: 0.1.0
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: unknown
-    checkedAt: 2026-08-23T05:33:34.577Z
+    checkedAt: 2026-11-09T00:17:49.965Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -63,7 +74,7 @@ license:
   commercialUse: true
 featuredRank: 104
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-23T05:33:34.648Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+releaseUpdatedAt: 2026-11-09T00:17:50.859Z
+metadataUpdatedAt: 2026-11-09T00:17:50.859Z
 starsUpdatedAt: 2026-09-12T21:26:10.329Z
-updatedAt: 2026-09-12T21:26:10.329Z
+updatedAt: 2026-11-09T00:17:50.859Z

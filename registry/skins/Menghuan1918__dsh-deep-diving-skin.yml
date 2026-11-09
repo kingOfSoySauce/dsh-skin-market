@@ -26,6 +26,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Menghuan1918/dsh-deep-diving-skin/8cc4c62a0275261886542f7a33c0126748c8dbaa/icon.svg
+listScreenshot: https://raw.githubusercontent.com/Menghuan1918/dsh-deep-diving-skin/8cc4c62a0275261886542f7a33c0126748c8dbaa/icon.svg
 review:
   compatibility: verified
   preview: repository-card
@@ -52,10 +53,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 4
-listScreenshot: https://raw.githubusercontent.com/Menghuan1918/dsh-deep-diving-skin/8cc4c62a0275261886542f7a33c0126748c8dbaa/icon.svg
 featuredRank: 1000
+starsSnapshot: 5
 releaseUpdatedAt: 2026-10-31T11:28:16Z
-metadataUpdatedAt: 2026-11-01T22:47:11.915Z
-starsUpdatedAt: 2026-11-01T22:47:11.915Z
-updatedAt: 2026-11-01T22:47:11.915Z
+metadataUpdatedAt: 2026-11-09T00:13:59.288Z
+starsUpdatedAt: 2026-11-09T00:13:59.288Z
+updatedAt: 2026-11-09T00:13:59.288Z

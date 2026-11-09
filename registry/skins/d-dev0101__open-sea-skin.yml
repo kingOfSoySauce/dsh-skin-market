@@ -18,22 +18,20 @@ modes:
   - light
   - dark
 install:
-  target: github:d-dev0101/open-sea-skin#5a969094a275768f88703776f44d3d9dd7f4c765
-  version: 1.2.7
-  commit: 5a969094a275768f88703776f44d3d9dd7f4c765
+  target: github:d-dev0101/open-sea-skin#a8e79435d21eac28fbbf2574c60708c912c49ce1
+  version: 1.2.8
+  commit: a8e79435d21eac28fbbf2574c60708c912c49ce1
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  npm:
-    name: open-sea-skin
-    version: 1.2.7
-    integrity: sha512-IZD4p4ABfZSoYR/DZdZtiES8+18Ws6afkvPO5gbTdaQm3XiY6MoJa6+XRzMCancdUEUKR+kqF2bDtb4n4181zQ==
-    repository: https://github.com/d-dev0101/open-sea-skin
-    gitHead: 5a969094a275768f88703776f44d3d9dd7f4c765
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/home.png
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/conversation.png
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/settings.png
 screenshots:
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-dark-overview-40.gif
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-light-overview-40.gif
@@ -59,25 +57,21 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 5a969094a275768f88703776f44d3d9dd7f4c765
-    packageVersion: 1.2.7
+    commit: a8e79435d21eac28fbbf2574c60708c912c49ce1
+    packageVersion: 1.2.8
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-11-01T01:43:21.334Z
+    checkedAt: 2026-11-09T00:12:31.656Z
     findings: []
 license:
   code: MIT
   commercialUse: true
   notice: Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1.
-starsSnapshot: 388
-marketScreenshots:
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/home.png
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/conversation.png
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/settings.png
 featuredRank: 0
-releaseUpdatedAt: 2026-11-01T01:43:26.227Z
-metadataUpdatedAt: 2026-11-01T22:47:11.915Z
+starsSnapshot: 388
+releaseUpdatedAt: 2026-11-09T00:12:35.702Z
+metadataUpdatedAt: 2026-11-09T00:12:35.702Z
 starsUpdatedAt: 2026-11-07T05:33:38.409Z
-updatedAt: 2026-11-07T05:33:38.409Z
+updatedAt: 2026-11-09T00:12:35.702Z

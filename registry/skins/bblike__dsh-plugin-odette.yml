@@ -27,6 +27,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/bblike/dsh-plugin-odette/e8014e7b32daa8b23b2847d75e05f16ee4263ae9/assets/preview.png
+listScreenshot: https://raw.githubusercontent.com/bblike/dsh-plugin-odette/e8014e7b32daa8b23b2847d75e05f16ee4263ae9/assets/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -55,6 +56,6 @@ license:
 featuredRank: 1009
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-23T05:29:58.218Z
-metadataUpdatedAt: 2026-08-23T05:29:58.218Z
+metadataUpdatedAt: 2026-11-09T00:14:49.596Z
 starsUpdatedAt: 2026-09-21T22:35:58.975Z
-updatedAt: 2026-09-21T22:35:58.975Z
+updatedAt: 2026-11-09T00:14:49.596Z

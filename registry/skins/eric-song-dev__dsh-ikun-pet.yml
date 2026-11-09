@@ -16,12 +16,18 @@ modes:
   - light
   - dark
 install:
-  target: github:eric-song-dev/dsh-ikun-pet#ada74e3755730bbff1e619ca0f8ff7926d03ba98
+  target: github:eric-song-dev/dsh-ikun-pet#89e49da94a64c160a1192bb892fca0bfa03e8e31
   version: 2.2.0
-  commit: ada74e3755730bbff1e619ca0f8ff7926d03ba98
+  commit: 89e49da94a64c160a1192bb892fca0bfa03e8e31
   desktop:
     mode: manual-only
     reason: 尚未完成与该固定版本对应的官方 Desktop 实机验收。
+  npm:
+    name: dsh-ikun-pet
+    version: 2.2.0
+    integrity: sha512-FEI5lVskxvf3GDmpVgO+7YjIh087oUFFHwosIzR5Djj0w46KvkTkcLc6UHrt6Ru2xEjHui1YcV+epaKYzvSAeQ==
+    repository: https://github.com/eric-song-dev/dsh-ikun-pet
+    gitHead: 89e49da94a64c160a1192bb892fca0bfa03e8e31
 compatibility:
   dsh: unverified
   platform:
@@ -44,19 +50,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: ada74e3755730bbff1e619ca0f8ff7926d03ba98
+    commit: 89e49da94a64c160a1192bb892fca0bfa03e8e31
     packageVersion: 2.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:07:52.684Z
+    checkedAt: 2026-11-09T00:13:24.336Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 11
 featuredRank: 1000
-releaseUpdatedAt: 2026-10-31T11:28:16Z
-metadataUpdatedAt: 2026-11-01T22:47:11.915Z
+starsSnapshot: 11
+releaseUpdatedAt: 2026-11-09T00:13:24.704Z
+metadataUpdatedAt: 2026-11-09T00:13:24.704Z
 starsUpdatedAt: 2026-11-07T05:33:38.409Z
-updatedAt: 2026-11-07T05:33:38.409Z
+updatedAt: 2026-11-09T00:13:24.704Z

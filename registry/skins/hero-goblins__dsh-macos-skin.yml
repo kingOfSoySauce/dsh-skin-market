@@ -26,6 +26,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/hero-goblins/dsh-macos-skin/da6eebb494f53eec2dc6e1f335c6a1866ac023a4/preview.png
+listScreenshot: https://raw.githubusercontent.com/hero-goblins/dsh-macos-skin/da6eebb494f53eec2dc6e1f335c6a1866ac023a4/preview.png
 review:
   compatibility: verified
   preview: verified
@@ -54,6 +55,6 @@ license:
 featuredRank: 1020
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:33:45.219Z
-metadataUpdatedAt: 2026-08-23T05:33:45.219Z
+metadataUpdatedAt: 2026-11-09T00:17:53.921Z
 starsUpdatedAt: 2026-09-09T21:40:55.576Z
-updatedAt: 2026-09-09T21:40:55.576Z
+updatedAt: 2026-11-09T00:17:53.921Z

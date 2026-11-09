@@ -15,12 +15,21 @@ modes:
   - light
   - dark
 install:
-  target: github:tpmoonchefryan/dsh-joi-channel-theme#f0e25376eab69847958285f365da724cb07d7eac
+  target: github:tpmoonchefryan/dsh-joi-channel-theme#5879e04fbc75251d50b0bb6416fb0f691d608a20
   version: 0.1.14
-  commit: f0e25376eab69847958285f365da724cb07d7eac
+  commit: 5879e04fbc75251d50b0bb6416fb0f691d608a20
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: dsh-joi-channel-theme
+    packageVersion: 0.1.14
+    integrity: sha512-Yho/mcJlaJyp29ZYMvwNtICvOIPmXZQbFQZAqU21tFAHrBIU/dFNq9rZM0nm1bmS7SSocsmS4ZlPwdcxRQgLxg==
+  npm:
+    name: dsh-joi-channel-theme
+    version: 0.1.14
+    integrity: sha512-Yho/mcJlaJyp29ZYMvwNtICvOIPmXZQbFQZAqU21tFAHrBIU/dFNq9rZM0nm1bmS7SSocsmS4ZlPwdcxRQgLxg==
+    repository: https://github.com/tpmoonchefryan/dsh-joi-channel-theme
+    gitHead: 5879e04fbc75251d50b0bb6416fb0f691d608a20
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
@@ -50,15 +59,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.5 未被本次检测范围 ^0.1.7-rc.1 || ^0.2.0-rc.1 完全覆盖（固定版本 f0e25376eab69847958285f365da724cb07d7eac）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.5 未被本次检测范围 ^0.1.7-rc.1 || ^0.2.0-rc.1 完全覆盖（固定版本 5879e04fbc75251d50b0bb6416fb0f691d608a20）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: f0e25376eab69847958285f365da724cb07d7eac
+    commit: 5879e04fbc75251d50b0bb6416fb0f691d608a20
     packageVersion: 0.1.14
     scannerVersion: static-v2
     dshVersion: ^0.1.7-rc.1 || ^0.2.0-rc.1
     mode: static
     result: unknown
-    checkedAt: 2026-11-04T00:04:02.166Z
+    checkedAt: 2026-11-09T00:13:09.516Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -67,7 +76,7 @@ license:
   commercialUse: true
 featuredRank: 94
 starsSnapshot: 21
-releaseUpdatedAt: 2026-11-04T00:04:08.551Z
-metadataUpdatedAt: 2026-11-04T00:04:08.551Z
+releaseUpdatedAt: 2026-11-09T00:13:15.989Z
+metadataUpdatedAt: 2026-11-09T00:13:15.989Z
 starsUpdatedAt: 2026-11-05T00:23:33.061Z
-updatedAt: 2026-11-05T00:23:33.061Z
+updatedAt: 2026-11-09T00:13:15.989Z

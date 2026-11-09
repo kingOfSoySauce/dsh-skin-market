@@ -30,6 +30,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/A-BigDog/Gandalf/0c9a0f6fcc6e810afb5a8220c944f08428802102/docs/screenshot.jpg
+listScreenshot: https://raw.githubusercontent.com/A-BigDog/Gandalf/0c9a0f6fcc6e810afb5a8220c944f08428802102/docs/screenshot.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -60,7 +61,6 @@ license:
 featuredRank: 1068
 starsSnapshot: 0
 releaseUpdatedAt: 2026-09-07T21:58:41.299Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-09T00:17:13.031Z
 starsUpdatedAt: 2026-09-09T21:40:46.302Z
-updatedAt: 2026-09-09T21:40:46.302Z
-listScreenshot: https://raw.githubusercontent.com/A-BigDog/Gandalf/0c9a0f6fcc6e810afb5a8220c944f08428802102/docs/screenshot.jpg
+updatedAt: 2026-11-09T00:17:13.031Z

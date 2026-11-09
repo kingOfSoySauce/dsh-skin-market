@@ -20,8 +20,11 @@ install:
   version: 0.3.5
   commit: dc5808e7a0df45cda0dfebe3a324d1f4e0152b51
   desktop:
-    mode: manual-only
-    reason: npm-source-unverified
+    mode: managed
+    registry: npm
+    packageName: dsh-animation-optimization
+    packageVersion: 0.3.5
+    integrity: sha512-cpqQ+lEACtJHSUKHvGxkt0Q2cMQo7TIYhBhjHDlqOuQLQP2FDv8FSqIHgyLZQRt/BBNlVL3iCCqXTO6l7FNPbw==
   npm:
     name: dsh-animation-optimization
     version: 0.3.5
@@ -63,8 +66,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1036
-starsSnapshot: 11
-releaseUpdatedAt: 2026-10-26T01:51:06.262Z
+starsSnapshot: 12
+releaseUpdatedAt: 2026-11-09T00:13:20.654Z
 metadataUpdatedAt: 2026-10-26T01:51:06.262Z
-starsUpdatedAt: 2026-11-08T00:17:42.927Z
-updatedAt: 2026-11-08T00:17:42.927Z
+starsUpdatedAt: 2026-11-09T00:13:20.654Z
+updatedAt: 2026-11-09T00:13:20.654Z

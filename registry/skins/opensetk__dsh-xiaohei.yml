@@ -30,15 +30,17 @@ screenshots:
   - https://raw.githubusercontent.com/opensetk/dsh-xiaohei/2fc2610f341c9a17426804ccfd519dc0a2f18a2a/docs/screenshots/QQ_1786634322842.png
 listScreenshot: https://raw.githubusercontent.com/opensetk/dsh-xiaohei/2fc2610f341c9a17426804ccfd519dc0a2f18a2a/docs/screenshots/QQ_1786634277517.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
     compatibility: pass
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions: []
   scan:
     commit: 2fc2610f341c9a17426804ccfd519dc0a2f18a2a
@@ -55,6 +57,6 @@ license:
 featuredRank: 995
 starsSnapshot: 5
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T00:14:00.508Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T00:14:00.508Z

@@ -18,8 +18,11 @@ install:
   version: 0.2.0
   commit: d8feaf7500d39f880150142bdac4de4aedd08aa2
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-reel
+    packageVersion: 0.2.0
+    integrity: sha512-T05nOwCqET74USSfXTMQ3tHQiS9y/VDNmXcnUoHyKJsz/NafASJYhxYKITu+otsISEvz/YWuP82cusRfoqUd4Q==
 compatibility:
   dsh: ">=0.2.0-rc.1 <0.3.0-0"
   platform:
@@ -58,9 +61,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 0
-releaseUpdatedAt: 2026-11-07T05:34:00.524Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-09T00:15:11.787Z
 metadataUpdatedAt: 2026-11-07T05:34:00.524Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-11-07T05:34:00.524Z
+updatedAt: 2026-11-09T00:15:11.787Z

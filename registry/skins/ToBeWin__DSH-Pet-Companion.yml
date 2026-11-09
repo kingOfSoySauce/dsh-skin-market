@@ -15,12 +15,18 @@ modes:
   - light
   - dark
 install:
-  target: github:ToBeWin/DSH-Pet-Companion#61269dc79e594a721fad3eaca71c94b9ba6b56d2
+  target: github:ToBeWin/DSH-Pet-Companion#53fc630ecb186169622f0ebca5267aae125484dc
   version: 0.1.0
-  commit: 61269dc79e594a721fad3eaca71c94b9ba6b56d2
+  commit: 53fc630ecb186169622f0ebca5267aae125484dc
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: "@tobewin/dsh-pet-companion"
+    version: 0.1.0
+    integrity: sha512-nJEWpRldBDxU8sus5fz4lCB7DAlsNnL92NhBkHs1M6n65YoOW+5Dv5LC+c+qLx0Qln9M06gYiw4Linj/PciFFQ==
+    repository: https://github.com/ToBeWin/DSH-Pet-Companion
+    gitHead: 53fc630ecb186169622f0ebca5267aae125484dc
 compatibility:
   dsh: unverified
   platform:
@@ -37,22 +43,24 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: improve
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 61269dc79e594a721fad3eaca71c94b9ba6b56d2
+    commit: 53fc630ecb186169622f0ebca5267aae125484dc
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-10-26T01:52:26.409Z
+    checkedAt: 2026-11-09T00:16:52.114Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -61,7 +69,7 @@ license:
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-26T01:52:26.903Z
-metadataUpdatedAt: 2026-10-26T01:52:26.903Z
+releaseUpdatedAt: 2026-11-09T00:16:52.838Z
+metadataUpdatedAt: 2026-11-09T00:16:52.838Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:26.903Z
+updatedAt: 2026-11-09T00:16:52.838Z

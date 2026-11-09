@@ -19,7 +19,7 @@ install:
   commit: ef9685c9b4f0f4e3c810ebf520d3f67d099b1e39
   desktop:
     mode: manual-only
-    reason: npm-package-not-found
+    reason: npm-repository-mismatch
 compatibility:
   dsh: unverified
   platform:
@@ -53,9 +53,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 4
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-09T00:14:20.923Z
 metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-11-05T00:23:22.896Z
-updatedAt: 2026-11-05T00:23:22.896Z
+updatedAt: 2026-11-09T00:14:20.923Z

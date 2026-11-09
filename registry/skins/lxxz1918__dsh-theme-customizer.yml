@@ -16,15 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:lxxz1918/dsh-theme-customizer#b336537ff709350ca165af75c49af5ba33b59fbe
+  target: github:lxxz1918/dsh-theme-customizer#96e4b60edd71ed05871c31efd27c0bfc1a4cc3c8
   version: 1.0.5
-  commit: b336537ff709350ca165af75c49af5ba33b59fbe
+  commit: 96e4b60edd71ed05871c31efd27c0bfc1a4cc3c8
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-theme-customizer
     packageVersion: 1.0.5
     integrity: sha512-M0UGDfurCEFYm4n8lFk+xwkebKYklrUxRGqrNyI1mF1yh/Lh5Wu9+ilnxEntBAPxQqat2Sph34nHqwRwEp6xnQ==
+  npm:
+    name: dsh-theme-customizer
+    version: 1.0.5
+    integrity: sha512-M0UGDfurCEFYm4n8lFk+xwkebKYklrUxRGqrNyI1mF1yh/Lh5Wu9+ilnxEntBAPxQqat2Sph34nHqwRwEp6xnQ==
+    repository: https://github.com/lxxz1918/dsh-theme-customizer
+    gitHead: 96e4b60edd71ed05871c31efd27c0bfc1a4cc3c8
 compatibility:
   dsh: unverified
   platform:
@@ -36,6 +42,7 @@ screenshots:
   - https://github.com/lxxz1918/dsh-theme-customizer/raw/main/docs/screenshots/4-sakura/0-front-1.jpg
   - https://github.com/lxxz1918/dsh-theme-customizer/raw/main/docs/screenshots/1-aurora/0-front-2.jpg
   - https://github.com/lxxz1918/dsh-theme-customizer/raw/main/docs/screenshots/1-aurora/0-settings.jpg
+listScreenshot: https://raw.githubusercontent.com/lxxz1918/dsh-theme-customizer/96e4b60edd71ed05871c31efd27c0bfc1a4cc3c8/docs/screenshots/1-aurora/0-front-1.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -51,19 +58,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: b336537ff709350ca165af75c49af5ba33b59fbe
+    commit: 96e4b60edd71ed05871c31efd27c0bfc1a4cc3c8
     packageVersion: 1.0.5
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-28T04:09:07.044Z
+    checkedAt: 2026-11-09T00:14:14.411Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1028
 starsSnapshot: 4
-releaseUpdatedAt: 2026-08-28T04:09:07.133Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+releaseUpdatedAt: 2026-11-09T00:14:19.526Z
+metadataUpdatedAt: 2026-11-09T00:14:19.526Z
 starsUpdatedAt: 2026-11-05T00:23:38.699Z
-updatedAt: 2026-11-05T00:23:38.699Z
+updatedAt: 2026-11-09T00:14:19.526Z

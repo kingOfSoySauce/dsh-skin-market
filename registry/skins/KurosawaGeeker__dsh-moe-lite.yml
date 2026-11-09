@@ -19,12 +19,21 @@ modes:
   - light
   - dark
 install:
-  target: github:KurosawaGeeker/dsh-moe-lite#e8529789091ee5e9c49a77fe0ae6ef894001a1a2
+  target: github:KurosawaGeeker/dsh-moe-lite#9d4767199981f755202f3f3e43a219f5cb93092c
   version: 0.15.3
-  commit: e8529789091ee5e9c49a77fe0ae6ef894001a1a2
+  commit: 9d4767199981f755202f3f3e43a219f5cb93092c
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-moe-clean
+    packageVersion: 0.15.3
+    integrity: sha512-GPUtGGnOkXCYO7dgQ6wTQGICTyTyEdmYE3n6C8pVdfGFYTH6kfW9FU4UaTp/SeK2u91iHxgBbt0MwKqeeg0HGw==
+  npm:
+    name: dsh-moe-clean
+    version: 0.15.3
+    integrity: sha512-GPUtGGnOkXCYO7dgQ6wTQGICTyTyEdmYE3n6C8pVdfGFYTH6kfW9FU4UaTp/SeK2u91iHxgBbt0MwKqeeg0HGw==
+    repository: https://github.com/KurosawaGeeker/dsh-moe-lite
+    gitHead: 9d4767199981f755202f3f3e43a219f5cb93092c
 compatibility:
   dsh: unverified
   platform:
@@ -52,19 +61,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: e8529789091ee5e9c49a77fe0ae6ef894001a1a2
+    commit: 9d4767199981f755202f3f3e43a219f5cb93092c
     packageVersion: 0.15.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-05T20:40:44.277Z
+    checkedAt: 2026-11-09T00:13:01.219Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
-starsSnapshot: 24
 featuredRank: 1112
-releaseUpdatedAt: 2026-11-06T00:08:18.130Z
-metadataUpdatedAt: 2026-11-06T00:08:18.130Z
-starsUpdatedAt: 2026-11-01T01:43:27.878Z
-updatedAt: 2026-11-06T00:08:18.130Z
+starsSnapshot: 25
+releaseUpdatedAt: 2026-11-09T00:13:04.383Z
+metadataUpdatedAt: 2026-11-09T00:13:04.383Z
+starsUpdatedAt: 2026-11-09T00:13:04.383Z
+updatedAt: 2026-11-09T00:13:04.383Z

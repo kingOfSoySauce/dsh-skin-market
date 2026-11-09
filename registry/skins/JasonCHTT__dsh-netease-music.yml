@@ -26,6 +26,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/JasonCHTT/dsh-netease-music/4aab9fd1a5b566730ebc24609208dbd2fa0b1fa4/demo.jpg
+listScreenshot: https://raw.githubusercontent.com/JasonCHTT/dsh-netease-music/4aab9fd1a5b566730ebc24609208dbd2fa0b1fa4/demo.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -52,10 +53,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-listScreenshot: https://raw.githubusercontent.com/JasonCHTT/dsh-netease-music/4aab9fd1a5b566730ebc24609208dbd2fa0b1fa4/demo.jpg
 featuredRank: 0
+starsSnapshot: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+metadataUpdatedAt: 2026-11-09T00:17:58.876Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:00:28.784Z
+updatedAt: 2026-11-09T00:17:58.876Z

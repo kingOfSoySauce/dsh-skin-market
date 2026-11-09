@@ -21,24 +21,27 @@ install:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
 compatibility:
-  dsh: unverified
+  dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/longgege-cd/dsh-skin-pixel-anime/ca3255f7d93bbead5a313b258a3dff04222d1f6e/assets/screenshots/1.jpg
 listScreenshot: https://raw.githubusercontent.com/longgege-cd/dsh-skin-pixel-anime/ca3255f7d93bbead5a313b258a3dff04222d1f6e/assets/screenshots/1.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
-    compatibility: improve
+    readmeScreenshots: improve
+    compatibility: pass
     installation: pass
+    installCommand: improve
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: ca3255f7d93bbead5a313b258a3dff04222d1f6e
     packageVersion: 0.11.0
@@ -54,6 +57,6 @@ license:
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T00:16:25.719Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T00:16:25.719Z

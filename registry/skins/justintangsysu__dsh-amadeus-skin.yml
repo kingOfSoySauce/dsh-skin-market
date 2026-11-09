@@ -27,6 +27,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/justintangsysu/dsh-amadeus-skin/7f074e5d54b60fbfb423d11d096c5b054607c026/preview/preview.webp
+listScreenshot: https://raw.githubusercontent.com/justintangsysu/dsh-amadeus-skin/7f074e5d54b60fbfb423d11d096c5b054607c026/preview/preview.webp
 review:
   compatibility: unverified
   preview: verified
@@ -55,6 +56,6 @@ license:
 featuredRank: 181
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:33:57.271Z
-metadataUpdatedAt: 2026-08-23T05:33:57.271Z
+metadataUpdatedAt: 2026-11-09T00:18:05.285Z
 starsUpdatedAt: 2026-09-09T21:40:59.583Z
-updatedAt: 2026-09-09T21:40:59.583Z
+updatedAt: 2026-11-09T00:18:05.285Z
