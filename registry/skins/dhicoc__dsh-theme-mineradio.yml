@@ -6,7 +6,7 @@ author: dhicoc
 description: A cinematic visual-radio glass theme for DeepSeek Harness (DSH) Desktop — port of the Mineradio music player's champagne-glass aesthetic. Fluid or wallpaper backdrop, light-glass panels, custom knobs, and the drifting-glow cursor treatment.
 repo: https://github.com/dhicoc/dsh-theme-mineradio
 package: dsh-theme-mineradio
-rowId: dsh-theme-mineradio
+rowId: ui-mineradio
 category: skin
 tags:
   - appearance

@@ -6,7 +6,7 @@ author: lxj5820
 description: 用全屏视频替换 DSH 内核开屏页并淡入主界面的纯开屏动画插件。
 repo: https://github.com/lxj5820/dsh-boot-animation
 package: dsh-boot-animation
-rowId: lxj5820-dsh-boot-animation
+rowId: boot-animation
 category: splash
 tags:
   - animation

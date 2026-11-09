@@ -6,7 +6,7 @@ author: louke6572
 description: DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计
 repo: https://github.com/louke6572/dsh-whale-widget-plus
 package: dsh-dfy
-rowId: dsh-whale-widget-plus
+rowId: dsh-dfy
 category: pet
 tags:
   - pet

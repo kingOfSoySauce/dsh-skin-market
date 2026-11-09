@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T07:21:18.783Z",
+  "generatedAt": "2026-11-09T07:36:48.076Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -8590,7 +8590,7 @@
       "description": "DeepSeek Harness 主题体验插件：OKLCH 主题提案 + 主题设计器（跨重启持久化）",
       "repo": "https://github.com/suzike/freestyle-dsh-theme",
       "package": "dsh-freestyle-theme",
-      "rowId": "theme",
+      "rowId": "freestyle-theme",
       "category": "skin",
       "tags": [
         "wallpaper",
@@ -8665,9 +8665,9 @@
       "featuredRank": 41,
       "starsSnapshot": 12,
       "releaseUpdatedAt": "2026-10-21T22:17:15.852Z",
-      "metadataUpdatedAt": "2026-10-21T22:17:15.852Z",
+      "metadataUpdatedAt": "2026-11-09T06:46:09.101Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.801Z",
-      "updatedAt": "2026-10-21T22:17:15.852Z",
+      "updatedAt": "2026-11-09T06:46:09.101Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0aee573dbda498a4e4c63b9be448a002.preview.webp",
@@ -18585,7 +18585,7 @@
       "description": "田园小屋皮肤（Pastoral Cottage Skin）—— 面向 DeepSeek Harness Web GUI（dsh web）的纯 UI 换肤插件。",
       "repo": "https://github.com/crack-time/dsh-web-ui-skin",
       "package": "@crack/dsh-archive",
-      "rowId": "dsh-web-ui-skin",
+      "rowId": "dsh-archive",
       "category": "skin",
       "tags": [
         "wallpaper",
@@ -18653,9 +18653,9 @@
       "featuredRank": 174,
       "starsSnapshot": 0,
       "releaseUpdatedAt": "2026-09-13T21:25:03.770Z",
-      "metadataUpdatedAt": "2026-09-13T21:25:03.770Z",
+      "metadataUpdatedAt": "2026-11-09T06:45:04.606Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.801Z",
-      "updatedAt": "2026-09-13T21:25:03.770Z",
+      "updatedAt": "2026-11-09T06:45:04.606Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5e464919c6bf87459aa9cea4c35528b8.preview.webp",
@@ -19102,7 +19102,7 @@
       "description": "Odette 冰雪梦幻主题 —— DSH 客户端的深/浅双模式 UI 美化皮肤。",
       "repo": "https://github.com/lkdx0220/Genshin-odette-skin-dsh",
       "package": "dsh-odette-skin",
-      "rowId": "odette-skin",
+      "rowId": "dsh-odette-skin",
       "category": "skin",
       "tags": [
         "wallpaper",
@@ -19181,9 +19181,9 @@
       "featuredRank": 182,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-10-04T22:19:51.427Z",
-      "metadataUpdatedAt": "2026-10-04T22:19:51.427Z",
+      "metadataUpdatedAt": "2026-11-09T06:45:39.075Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.801Z",
-      "updatedAt": "2026-10-04T22:19:51.427Z",
+      "updatedAt": "2026-11-09T06:45:39.075Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4efff8bff2b0a24310d7812c615d39f8.preview.webp",
@@ -19888,7 +19888,7 @@
       "description": "DeepSeek Harness 的 C-137 皮肤：28 张目录海报、自定义场景、霓虹外观，以及叠加层宠物（Rick、Morty、传送枪）。",
       "repo": "https://github.com/xxxrickymorty-dev/dsh-rick",
       "package": "dsh-rick",
-      "rowId": "dsh-rick",
+      "rowId": "c137",
       "category": "skin",
       "tags": [
         "glass",
@@ -20818,7 +20818,7 @@
       "description": "面向 DeepSeek Harness Web 的桌面体验增强插件。它保留官方 UI 的会话和槽位契约，在其上组合成熟社区能力，并补充统一的个性化和文件引用体验。",
       "repo": "https://github.com/AlexYin-Tongji/dsh-ui-enhancer",
       "package": "dsh-ui-enhancer",
-      "rowId": "ui-enhancer-web-ui-settings",
+      "rowId": "ui-enhancer",
       "category": "skin",
       "tags": [
         "wallpaper",
@@ -20892,9 +20892,9 @@
       "featuredRank": 207,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-09-15T03:04:43.290Z",
-      "metadataUpdatedAt": "2026-08-23T15:32:42.387Z",
+      "metadataUpdatedAt": "2026-11-09T06:58:22.519Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.801Z",
-      "updatedAt": "2026-09-15T03:04:43.290Z"
+      "updatedAt": "2026-11-09T06:58:22.519Z"
     },
     {
       "id": "feng78-boop.dsh-thirteen-bg",
@@ -22154,7 +22154,7 @@
       "description": "DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计",
       "repo": "https://github.com/louke6572/dsh-whale-widget-plus",
       "package": "dsh-dfy",
-      "rowId": "dsh-whale-widget-plus",
+      "rowId": "dsh-dfy",
       "category": "pet",
       "tags": [
         "pet"
@@ -26554,7 +26554,7 @@
       "description": "一个为 DSH（DeepSeek Harness） 网页版开发的客户端插件：把侧边栏升级为双模式导航，并为聊天界面提供深度外观定制。",
       "repo": "https://github.com/Magic-Mercury/dsh-chat-customizer",
       "package": "dsh-chat-customizer",
-      "rowId": "ui-sidebar",
+      "rowId": "dsh-chat-customizer",
       "category": "skin",
       "tags": [
         "wallpaper",
@@ -26623,9 +26623,9 @@
       "featuredRank": 998,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-08-23T10:18:29.045Z",
-      "metadataUpdatedAt": "2026-11-09T00:15:10.717Z",
+      "metadataUpdatedAt": "2026-11-09T06:44:37.547Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-09T00:15:10.717Z",
+      "updatedAt": "2026-11-09T06:44:37.547Z",
       "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Magic-Mercury__dsh-chat-customizer/ee8da1661e4077d771945fb5e9e0b7b8c5fa7eb7/home.png",
       "media": {
         "list": {
@@ -35179,7 +35179,7 @@
       "description": "佐城雪美主题：深蓝配色、卡面背景、桌面宠物纸片小人、轮播图和签名铭牌。",
       "repo": "https://github.com/AlyceStocking/dsh-yukimi-theme",
       "package": "dsh-cgss-idol-theme",
-      "rowId": "yukimi-theme",
+      "rowId": "cgss-idol-theme",
       "category": "skin",
       "tags": [
         "appearance",
@@ -35246,9 +35246,9 @@
       "featuredRank": 1000,
       "starsSnapshot": 0,
       "releaseUpdatedAt": "2026-11-04T00:04:38.184Z",
-      "metadataUpdatedAt": "2026-11-09T00:17:18.321Z",
+      "metadataUpdatedAt": "2026-11-09T06:44:11.843Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-09T00:17:18.321Z",
+      "updatedAt": "2026-11-09T06:44:11.843Z",
       "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AlyceStocking__dsh-yukimi-theme/5813a4c84e53fd028dfa56d5c462515ec5a6d974/home.png",
       "media": {
         "list": {
@@ -36852,7 +36852,7 @@
       "description": "A cinematic visual-radio glass theme for DeepSeek Harness (DSH) Desktop — port of the Mineradio music player's champagne-glass aesthetic. Fluid or wallpaper backdrop, light-glass panels, custom knobs, and the drifting-glow cursor treatment.",
       "repo": "https://github.com/dhicoc/dsh-theme-mineradio",
       "package": "dsh-theme-mineradio",
-      "rowId": "dsh-theme-mineradio",
+      "rowId": "ui-mineradio",
       "category": "skin",
       "tags": [
         "appearance",
@@ -37616,7 +37616,7 @@
       "description": "DeepSeek Harness theme pack：一个插件提供多组主题与 light/dark/system 模式。",
       "repo": "https://github.com/EthanHannn/dsh-theme",
       "package": "dsh-themes",
-      "rowId": "ethanhannn-dsh-themes",
+      "rowId": "themes",
       "category": "skin",
       "tags": [
         "appearance",
@@ -37683,9 +37683,9 @@
       "featuredRank": 1000,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-11-09T00:16:03.605Z",
-      "metadataUpdatedAt": "2026-11-09T00:16:03.605Z",
+      "metadataUpdatedAt": "2026-11-09T06:44:32.641Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-09T00:16:03.605Z",
+      "updatedAt": "2026-11-09T06:44:32.641Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/11fe3c3f944da90e8e11e7ca07394974.preview.webp",
@@ -40947,7 +40947,7 @@
       "description": "用全屏视频替换 DSH 内核开屏页并淡入主界面的纯开屏动画插件。",
       "repo": "https://github.com/lxj5820/dsh-boot-animation",
       "package": "dsh-boot-animation",
-      "rowId": "lxj5820-dsh-boot-animation",
+      "rowId": "boot-animation",
       "category": "splash",
       "tags": [
         "animation",
@@ -41304,7 +41304,7 @@
       "description": "替换 DSH 运行状态行（「深度求索中，用时 …」）的图标、文本与颜色；默认图标为旋转太极，默认文本「少女祈祷中」，默认颜色为红色。",
       "repo": "https://github.com/Menghuan1918/dsh-deep-diving-skin",
       "package": "dsh-deep-diving-skin",
-      "rowId": "deep-diving-skin",
+      "rowId": "dsh-deep-diving-skin",
       "category": "skin",
       "tags": [
         "appearance"
@@ -41367,9 +41367,9 @@
       "featuredRank": 1000,
       "starsSnapshot": 5,
       "releaseUpdatedAt": "2026-10-31T11:28:16Z",
-      "metadataUpdatedAt": "2026-11-09T00:13:59.288Z",
+      "metadataUpdatedAt": "2026-11-09T06:44:45.035Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-09T00:13:59.288Z"
+      "updatedAt": "2026-11-09T06:44:45.035Z"
     },
     {
       "id": "microsharpant.dsh-theme-presets",
@@ -41682,7 +41682,7 @@
       "description": "19 color themes for the DeepSeek Harness web GUI: light+dark palettes, WCAG-checked, picker in Settings",
       "repo": "https://github.com/mrtoxiorg-sys/dsh-theme-pack",
       "package": "@local/dsh-theme-pack",
-      "rowId": "mrtoxiorg-dsh-theme-pack",
+      "rowId": "theme-pack",
       "category": "skin",
       "tags": [
         "appearance"
@@ -41750,9 +41750,9 @@
       "featuredRank": 1000,
       "starsSnapshot": 0,
       "releaseUpdatedAt": "2026-11-03T19:20:00+08:00",
-      "metadataUpdatedAt": "2026-11-05T11:58:16.000Z",
+      "metadataUpdatedAt": "2026-11-09T06:46:00.714Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-05T11:58:16.000Z",
+      "updatedAt": "2026-11-09T06:46:00.714Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3192466d3436b77470fcb199340768f7.preview.webp",
@@ -46229,7 +46229,7 @@
       "description": "DeepSeek Harness 全屏开机动画与视频/壁纸/音频库；纯开屏候选，仅展示真实开屏 GIF。",
       "repo": "https://github.com/WWFZS/dsh-plugin-startup-animation",
       "package": "dsh-plugin-startup-animation",
-      "rowId": "wwfzs-dsh-plugin-startup-animation",
+      "rowId": "startup-animation",
       "category": "splash",
       "tags": [
         "animation",
@@ -46293,9 +46293,9 @@
       "featuredRank": 1000,
       "starsSnapshot": 5,
       "releaseUpdatedAt": "2026-11-09T00:14:06.790Z",
-      "metadataUpdatedAt": "2026-11-09T00:14:06.790Z",
+      "metadataUpdatedAt": "2026-11-09T06:44:56.513Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-09T00:14:06.790Z"
+      "updatedAt": "2026-11-09T06:44:56.513Z"
     },
     {
       "id": "xiaoluofoxington.dsh-theme-hacker-terminal",
@@ -46722,7 +46722,7 @@
       "description": "DeepSeek Harness 壁纸与半透明面板主题系统，带主题管理、导入与生成能力。",
       "repo": "https://github.com/xxue-z/deepseek-harness-skin",
       "package": "@xxue-z/dsh-skin",
-      "rowId": "xxue-z-dsh-skin",
+      "rowId": "dsh-skin",
       "category": "skin",
       "tags": [
         "appearance",
@@ -46809,7 +46809,7 @@
       "description": "DeepSeek Colorful - A comprehensive UI theme and customizer plugin for DeepSeek Harness (Custom theme palettes, frosted glass & live video/wallpapers)",
       "repo": "https://github.com/yaanlaan/deepseek-colorful",
       "package": "dsh-colorful",
-      "rowId": "deepseek-colorful",
+      "rowId": "dsh-colorful",
       "category": "skin",
       "tags": [
         "appearance",
@@ -46873,9 +46873,9 @@
       "featuredRank": 1000,
       "starsSnapshot": 0,
       "releaseUpdatedAt": "2026-10-26T01:53:23.725Z",
-      "metadataUpdatedAt": "2026-10-26T01:53:23.725Z",
+      "metadataUpdatedAt": "2026-11-09T06:46:29.367Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-10-26T01:53:23.725Z",
+      "updatedAt": "2026-11-09T06:46:29.367Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/063c5bdc3ff77503a635e40d28dcb825.preview.webp",
@@ -51833,7 +51833,7 @@
       "description": "DSH web 界面增强：Solarized 浅色主题 + Maple Mono 字体、紧凑对话布局、思考/工具链折叠胶囊、官方余额 + 本轮成本 + 用量图表",
       "repo": "https://github.com/jiangnanquan/dsh-ux",
       "package": "dsh-uxexo",
-      "rowId": "dsh-enhance",
+      "rowId": "dsh-uxexo",
       "category": "skin",
       "tags": [
         "token-theme",
@@ -51896,9 +51896,9 @@
       "featuredRank": 1034,
       "starsSnapshot": 10,
       "releaseUpdatedAt": "2026-10-21T22:17:18.724Z",
-      "metadataUpdatedAt": "2026-10-21T22:17:18.724Z",
+      "metadataUpdatedAt": "2026-11-09T06:45:20.878Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-10-26T01:51:05.520Z",
+      "updatedAt": "2026-11-09T06:45:20.878Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/38f8ab39829f7625e9b59eef671e84f7.preview.webp",

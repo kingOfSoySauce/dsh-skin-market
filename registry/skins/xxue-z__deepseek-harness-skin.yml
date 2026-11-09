@@ -6,7 +6,7 @@ author: xxue-z
 description: DeepSeek Harness 壁纸与半透明面板主题系统，带主题管理、导入与生成能力。
 repo: https://github.com/xxue-z/deepseek-harness-skin
 package: "@xxue-z/dsh-skin"
-rowId: xxue-z-dsh-skin
+rowId: dsh-skin
 category: skin
 tags:
   - appearance

@@ -22,7 +22,14 @@ function fixture() {
   directories.push(directory)
   const base = loadCatalog().skins.find(skin => skin.review?.installation !== 'manual-only' && skin.install.npm === undefined)!
   const skins = ['previous', 'target'].map(name => ({ ...base, id: `identity.${name}`, package: `@example/${name}`, rowId: `identity-${name}` }))
-  const collision = loadCatalog().skins.find(skin => skin.id === 'magic-mercury.dsh-chat-customizer')!
+  // This skin's patch disables the native ui-sidebar row and inserts its own.
+  // A market entry claiming a host row id is the scenario under test, so the
+  // collision is simulated here instead of read from the catalog: the catalog
+  // stores the skin's own row id (dsh-chat-customizer), not the row it hides.
+  const collision = {
+    ...loadCatalog().skins.find(skin => skin.id === 'magic-mercury.dsh-chat-customizer')!,
+    rowId: 'ui-sidebar',
+  }
   expect(collision).toMatchObject({ package: 'dsh-chat-customizer', rowId: 'ui-sidebar' })
   atomicWriteJson(join(directory, 'package.json'), { dependencies: Object.fromEntries(skins.map(skin => [skin.package, skin.install.target])) })
   atomicWriteText(profilePatchFile(directory), '[]\n')

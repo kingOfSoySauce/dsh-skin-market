@@ -6,7 +6,7 @@ author: EthanHannn
 description: DeepSeek Harness theme pack：一个插件提供多组主题与 light/dark/system 模式。
 repo: https://github.com/EthanHannn/dsh-theme
 package: dsh-themes
-rowId: ethanhannn-dsh-themes
+rowId: themes
 category: skin
 tags:
   - appearance
@@ -60,6 +60,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 1
 releaseUpdatedAt: 2026-11-09T00:16:03.605Z
-metadataUpdatedAt: 2026-11-09T00:16:03.605Z
+metadataUpdatedAt: 2026-11-09T06:44:32.641Z
 starsUpdatedAt: 2026-11-04T14:29:50+08:00
-updatedAt: 2026-11-09T00:16:03.605Z
+updatedAt: 2026-11-09T06:44:32.641Z

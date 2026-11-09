@@ -6,7 +6,7 @@ author: WWFZS
 description: DeepSeek Harness 全屏开机动画与视频/壁纸/音频库；纯开屏候选，仅展示真实开屏 GIF。
 repo: https://github.com/WWFZS/dsh-plugin-startup-animation
 package: dsh-plugin-startup-animation
-rowId: wwfzs-dsh-plugin-startup-animation
+rowId: startup-animation
 category: splash
 tags:
   - animation
@@ -57,6 +57,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 5
 releaseUpdatedAt: 2026-11-09T00:14:06.790Z
-metadataUpdatedAt: 2026-11-09T00:14:06.790Z
+metadataUpdatedAt: 2026-11-09T06:44:56.513Z
 starsUpdatedAt: 2026-11-05T00:23:39.587Z
-updatedAt: 2026-11-09T00:14:06.790Z
+updatedAt: 2026-11-09T06:44:56.513Z

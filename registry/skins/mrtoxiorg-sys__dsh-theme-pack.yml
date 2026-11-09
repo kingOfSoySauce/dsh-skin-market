@@ -6,7 +6,7 @@ author: mrtoxiorg-sys
 description: "19 color themes for the DeepSeek Harness web GUI: light+dark palettes, WCAG-checked, picker in Settings"
 repo: https://github.com/mrtoxiorg-sys/dsh-theme-pack
 package: "@local/dsh-theme-pack"
-rowId: mrtoxiorg-dsh-theme-pack
+rowId: theme-pack
 category: skin
 tags:
   - appearance
@@ -60,6 +60,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-03T19:20:00+08:00
-metadataUpdatedAt: 2026-11-05T11:58:16.000Z
+metadataUpdatedAt: 2026-11-09T06:46:00.714Z
 starsUpdatedAt: 2026-11-03T19:20:00+08:00
-updatedAt: 2026-11-05T11:58:16.000Z
+updatedAt: 2026-11-09T06:46:00.714Z

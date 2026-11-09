@@ -6,7 +6,7 @@ author: Magic-Mercury
 description: 一个为 DSH（DeepSeek Harness） 网页版开发的客户端插件：把侧边栏升级为双模式导航，并为聊天界面提供深度外观定制。
 repo: https://github.com/Magic-Mercury/dsh-chat-customizer
 package: dsh-chat-customizer
-rowId: ui-sidebar
+rowId: dsh-chat-customizer
 category: skin
 tags:
   - wallpaper
@@ -62,6 +62,6 @@ license:
 featuredRank: 998
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-23T10:18:29.045Z
-metadataUpdatedAt: 2026-11-09T00:15:10.717Z
+metadataUpdatedAt: 2026-11-09T06:44:37.547Z
 starsUpdatedAt: 2026-08-23T10:18:29.045Z
-updatedAt: 2026-11-09T00:15:10.717Z
+updatedAt: 2026-11-09T06:44:37.547Z
