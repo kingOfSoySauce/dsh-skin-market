@@ -2,15 +2,14 @@
 // @vitest-environment jsdom
 import { act, cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
-import React from 'react'
 
 vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../fixtures/client-market.tsx')).createPrimitivesMock())
 
 import { SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
 import { stubMarketFetch } from '../fixtures/market-host.ts'
-import { dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, useMarketTestDom, zh } from '../fixtures/client-market.tsx'
+import { dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
 
-useMarketTestDom()
+registerMarketTestDom()
 
 describe('client market restart and selection', () => {
   it('uses DSH action priority and icons for inactive and active skins', async () => {

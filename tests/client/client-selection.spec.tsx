@@ -2,7 +2,6 @@
 // @vitest-environment jsdom
 import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
-import React from 'react'
 
 vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../fixtures/client-market.tsx')).createPrimitivesMock())
 
@@ -10,9 +9,9 @@ import { WEB_CLIENT_SETTLE_MS, SkinMarketSection } from '../../src/client/SkinMa
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { CatalogSkin, RuntimeSkin } from '../../src/client/types.ts'
 import { stubMarketFetch } from '../fixtures/market-host.ts'
-import { dshRuntime, openSkinCard, skin, useMarketTestDom, zh } from '../fixtures/client-market.tsx'
+import { dshRuntime, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
 
-useMarketTestDom()
+registerMarketTestDom()
 
 describe('client market selection convergence', () => {
   describe('Web selection runtime convergence', () => {

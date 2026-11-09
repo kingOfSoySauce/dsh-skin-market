@@ -2,16 +2,15 @@
 // @vitest-environment jsdom
 import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
-import React from 'react'
 
 vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../fixtures/client-market.tsx')).createPrimitivesMock())
 
 import { HOME_CATALOG_BATCH_SIZE, SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
 import type { Operation } from '../../src/client/types.ts'
 import { stubMarketFetch } from '../fixtures/market-host.ts'
-import { dshRuntime, openSkinCard, skin, useMarketTestDom, zh } from '../fixtures/client-market.tsx'
+import { dshRuntime, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
 
-useMarketTestDom()
+registerMarketTestDom()
 
 describe('client market discovery', () => {
   it('keeps installed skins in discovery and exposes Use and Update on both cards', async () => {

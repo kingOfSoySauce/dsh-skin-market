@@ -2,7 +2,6 @@
 // @vitest-environment jsdom
 import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
-import React from 'react'
 
 vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../fixtures/client-market.tsx')).createPrimitivesMock())
 
@@ -10,9 +9,9 @@ import { interceptNotice, isInterceptFailure, SkinMarketSection } from '../../sr
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { Operation } from '../../src/client/types.ts'
 import { stubMarketFetch } from '../fixtures/market-host.ts'
-import { artifactRiskOperation, dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, useMarketTestDom, visibleWarningDialogs, zh } from '../fixtures/client-market.tsx'
+import { artifactRiskOperation, dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, registerMarketTestDom, visibleWarningDialogs, zh } from '../fixtures/client-market.tsx'
 
-useMarketTestDom()
+registerMarketTestDom()
 
 describe('client market recovery', () => {
   it.each(['desktop', 'dsh'] as const)('copies a read-only repair handoff with the %s host, original action and sanitized operation log', async hostKind => {

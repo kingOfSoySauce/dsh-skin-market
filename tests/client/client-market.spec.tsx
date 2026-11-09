@@ -11,9 +11,9 @@ import { MARKET_INSTALL_TROUBLESHOOT_URL } from '../../src/client/failure-help.t
 import { apply as applyClient, createClientSkinRuntime, missingPrimitives, switchClientSkin } from '../../src/client/index.ts'
 import { createStaticTranslator } from '../../src/client/i18n.ts'
 import { stubMarketFetch } from '../fixtures/market-host.ts'
-import { dshRuntime, managedDesktopSkin, openSkinCard, skin, useMarketTestDom, zh } from '../fixtures/client-market.tsx'
+import { dshRuntime, managedDesktopSkin, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
 
-useMarketTestDom()
+registerMarketTestDom()
 
 describe('client market catalog and updates', () => {
   it('puts skins without a usable preview after previewed skins before comparing stars', () => {

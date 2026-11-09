@@ -2,7 +2,6 @@
 // @vitest-environment jsdom
 import { act, cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
-import React from 'react'
 
 vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../fixtures/client-market.tsx')).createPrimitivesMock())
 
@@ -12,9 +11,9 @@ import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinIn
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { Operation } from '../../src/client/types.ts'
 import { stubMarketFetch } from '../fixtures/market-host.ts'
-import { artifactRiskOperation, dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, useMarketTestDom, zh } from '../fixtures/client-market.tsx'
+import { artifactRiskOperation, dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
 
-useMarketTestDom()
+registerMarketTestDom()
 
 describe('client market operations', () => {
   it('names the skin and compact elapsed time in the operation banner, then shows failures promptly', async () => {

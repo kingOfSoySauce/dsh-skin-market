@@ -38,9 +38,19 @@ export function artifactRiskOperation(id = 'install-artifact-risk'): Operation {
 }
 
 /** Register the DOM lifecycle every client-market spec relies on. */
-export function useMarketTestDom(): void {
+export function registerMarketTestDom(): void {
   beforeEach(() => { window.localStorage.setItem('dsh-skin-market:activation-warning-accepted', 'true') })
-  afterEach(() => { cleanup(); setGeneratedMediaSources(undefined); window.localStorage.clear(); window.sessionStorage.clear(); vi.unstubAllGlobals() })
+  afterEach(() => {
+    cleanup()
+    setGeneratedMediaSources(undefined)
+    window.localStorage.clear()
+    window.sessionStorage.clear()
+    // A failed test must not leak its fetch clipboard, URL or injected style into the next one.
+    Reflect.deleteProperty(navigator, 'clipboard')
+    window.history.replaceState(null, '', '/')
+    document.head.querySelector('style[data-dsh-skin-market-wide]')?.remove()
+    vi.unstubAllGlobals()
+  })
 }
 
 export async function openSkinCard(name: RegExp = /测试皮肤 界面预览/) {
