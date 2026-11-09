@@ -1,7 +1,6 @@
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import { parse as parseYaml, stringify as stringifyYaml } from 'yaml'
 import {
   applyProfileRepair,
@@ -13,6 +12,9 @@ import {
   type RepairInspection,
   type RepairRunner,
 } from '../src/repair.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+
+afterEach(cleanupTempDirs)
 
 const ALIVE_COMMIT = 'a'.repeat(40)
 const DEAD_COMMIT = 'b'.repeat(40)
@@ -65,7 +67,7 @@ function materialize(dir: string, dependencies = ['alive-skin', 'dead-skin', 'ds
 }
 
 function fixture(options: { driftMarket?: boolean } = {}): Fixture {
-  const dir = mkdtempSync(join(tmpdir(), 'skin-repair-'))
+  const dir = tempDir('skin-repair-')
   writeManifest(dir)
   writeLockfile(dir, options)
   materialize(dir)

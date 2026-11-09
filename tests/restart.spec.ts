@@ -21,7 +21,7 @@ describe('CLI restart scheduler', () => {
     expect(spawn).toHaveBeenCalledTimes(1)
     expect(spawn.mock.calls[0]?.[0]).toBe('/node')
     expect(JSON.stringify(spawn.mock.calls[0]?.[1])).toContain('--port')
-    expect(JSON.stringify(spawn.mock.calls[0]?.[1])).toContain('detached: false')
+    expect(spawn.mock.calls[0]?.[2]).toMatchObject({ cwd: '/work', detached: true, stdio: 'ignore' })
     expect(child.unref).toHaveBeenCalledOnce()
     expect(exit).toHaveBeenCalledOnce()
   })

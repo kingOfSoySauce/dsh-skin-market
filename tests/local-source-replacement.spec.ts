@@ -9,6 +9,7 @@ import type { CommandResult, PluginRunner } from '../src/commands.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { atomicWriteJson, atomicWriteText, compatibilityPatchFile, ensurePatchedDependency, npmSourceMigration, packageDir, packageManifest, readDependencies, readMarketState, snapshotInstalledArtifact, validateNpmArtifact, writeMarketState } from '../src/profile.ts'
 import type { Operation, PersistedMarketState, SkinEntry } from '../src/types.ts'
+import { operationWaiter } from './fixtures/operations.ts'
 
 const directories: string[] = []
 const ok = (): CommandResult => ({ exitCode: 0, stdout: '', stderr: '', timedOut: false })
@@ -82,13 +83,7 @@ function migrate(lifecycle: SkinLifecycle, skin: SkinEntry, context?: string): O
   return lifecycle.begin('migrate', skin.id, undefined, false, undefined, undefined, undefined, undefined, undefined, context)
 }
 
-async function finished(operation: Operation): Promise<Operation> {
-  for (let index = 0; index < 500; index++) {
-    if (['done', 'failed', 'cancelled'].includes(operation.phase)) return operation
-    await new Promise(resolve => setTimeout(resolve, 1))
-  }
-  throw new Error('operation did not finish')
-}
+const finished = operationWaiter({ attempts: 500, intervalMs: 1, message: 'operation did not finish' })
 
 function profileSnapshot(directory: string, skin: SkinEntry): Record<string, string | null> {
   return Object.fromEntries([

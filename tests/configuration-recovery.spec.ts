@@ -11,6 +11,7 @@ import { SkinLifecycle } from '../src/lifecycle.ts'
 import { officialDesktopRunner, type OfficialPluginManagerLike } from '../src/official-desktop.ts'
 import { atomicWriteJson, atomicWriteText, packageDir, profilePatchFile, readMarketState, writeMarketState } from '../src/profile.ts'
 import type { DshRuntime, LoaderEntry, Operation, SelectionOperationKind, SkinEntry } from '../src/types.ts'
+import { conditionWaiter, operationWaiter } from './fixtures/operations.ts'
 
 const directories: string[] = []
 const lifecycles: SkinLifecycle[] = []
@@ -43,18 +44,8 @@ function skin(id: string): SkinEntry {
   }
 }
 
-async function until(predicate: () => boolean): Promise<void> {
-  for (let index = 0; index < 250; index++) {
-    if (predicate()) return
-    await new Promise(resolve => setTimeout(resolve, 2))
-  }
-  throw new Error('configuration recovery operation did not settle')
-}
-
-async function finished(operation: Operation): Promise<Operation> {
-  await until(() => ['done', 'failed', 'cancelled'].includes(operation.phase))
-  return operation
-}
+const until = conditionWaiter({ attempts: 250, intervalMs: 2, message: 'configuration recovery operation did not settle' })
+const finished = operationWaiter({ attempts: 250, intervalMs: 2, message: 'configuration recovery operation did not settle' })
 
 /** The fake official Host writes the profile row; the home row wins over it. */
 function fixture(catalog: SkinEntry[], initial: { active?: string; home?: string; overlays?: string[]; bundled?: boolean } = {}) {
@@ -421,9 +412,7 @@ describe('official configuration recovery integration', () => {
     const callsBefore = host.manager.setPluginEnabled.mock.calls.length
     item.install.commit = 'b'.repeat(40)
     item.install.target = `github:fixture/${item.id}#${item.install.commit}`
-    let retried: Operation | undefined
-    try { retried = repair(host, failed) } catch {}
-    if (retried !== undefined) expect((await finished(retried)).phase).toBe('failed')
+    expect(() => repair(host, failed)).toThrow('配置修复目标已变化，请重新检查后确认')
     expect(readFileSync(host.homePatch, 'utf8')).toBe(host.originalHome)
     expect(host.backups()).toEqual([])
     expect(host.manager.setPluginEnabled).toHaveBeenCalledTimes(callsBefore)
@@ -437,9 +426,7 @@ describe('official configuration recovery integration', () => {
     const clientFile = join(packageDir(host.directory, item.package), 'client', 'client.js')
     if (change === 'replaced') writeFileSync(clientFile, 'export const changedAfterDiagnosis = true\n')
     else rmSync(clientFile)
-    let retried: Operation | undefined
-    try { retried = repair(host, failed) } catch {}
-    if (retried !== undefined) expect((await finished(retried)).phase).toBe('failed')
+    expect(() => repair(host, failed)).toThrow('配置修复目标已变化，请重新检查后确认')
     expect(readFileSync(host.homePatch, 'utf8')).toBe(host.originalHome)
     expect(host.backups()).toEqual([])
     expect(host.manager.setPluginEnabled).toHaveBeenCalledTimes(callsBefore)

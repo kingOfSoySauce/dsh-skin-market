@@ -7,7 +7,8 @@ import type { CommandResult, PluginRunner } from '../src/commands.ts'
 import { companionAsSkin, updateInstallTarget } from '../src/install-resolution.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { atomicWriteJson, atomicWriteText, npmSourceMigration, packageManifest, readDependencies, readMarketState, writeMarketState } from '../src/profile.ts'
-import type { Operation, PersistedMarketState, SkinEntry } from '../src/types.ts'
+import type { PersistedMarketState, SkinEntry } from '../src/types.ts'
+import { operationWaiter } from './fixtures/operations.ts'
 
 const temporaryDirectories: string[] = []
 const ok = (): CommandResult => ({ exitCode: 0, stdout: '', stderr: '', timedOut: false })
@@ -37,13 +38,7 @@ function materialize(dir: string, skin: SkinEntry, spec: string, version = skin.
   }
 }
 
-async function finished(operation: Operation): Promise<Operation> {
-  for (let index = 0; index < 200; index++) {
-    if (['done', 'failed', 'cancelled'].includes(operation.phase)) return operation
-    await new Promise(resolve => setTimeout(resolve, 1))
-  }
-  throw new Error('operation did not finish')
-}
+const finished = operationWaiter({ intervalMs: 1, message: 'operation did not finish' })
 
 function lifecycleFor(dir: string, skin: SkinEntry, runner: PluginRunner = async () => ok()) {
   return new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner, recoveryTimeoutMs: 321 }, [skin])

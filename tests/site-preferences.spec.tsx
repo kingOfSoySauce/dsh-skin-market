@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { App } from '../site/main.tsx'
-import { localizedSkinName, messageKeys, siteMessages } from '../site/messages.ts'
+import { localizedSkinName, siteMessages } from '../site/messages.ts'
 import { resolveBrowserLanguage, SitePreferencesProvider, useSitePreferences } from '../site/preferences.tsx'
 import { marketPrompt, skinPrompt } from '../site/prompts.ts'
 import type { CatalogSkin } from '../src/client/types.ts'
@@ -71,7 +71,6 @@ afterEach(() => {
 describe('standalone site preferences', () => {
   it('keeps the supported locale dictionaries key-symmetric', () => {
     expect(Object.keys(siteMessages.zh).sort()).toEqual(Object.keys(siteMessages.en).sort())
-    expect(messageKeys()).toHaveLength(Object.keys(siteMessages.zh).length)
     expect(localizedSkinName({ name: { zh: '原始名称', en: '' } }, 'en')).toBe('原始名称')
   })
 

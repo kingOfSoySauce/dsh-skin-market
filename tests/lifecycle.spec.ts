@@ -1,28 +1,25 @@
 import { createHash } from 'node:crypto'
-import { existsSync, mkdirSync, mkdtempSync, readFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { existsSync, mkdirSync, readFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import { parse, stringify } from 'yaml'
 import { maxParallelDownloads, SkinLifecycle } from '../src/lifecycle.ts'
 import { compatibilityContext } from '../src/compatibility.ts'
 import { atomicWriteJson, atomicWriteText, compatibilityPatchFile, ensurePatchedDependency, patchedDependenciesNeedSync, pnpmWorkspaceFile, profilePatchFile, readDependencies, readMarketState, writeMarketState } from '../src/profile.ts'
 import type { CommandOptions, CommandResult, PluginInstallRequest, PluginRunner } from '../src/commands.ts'
-import type { LoaderEntry, Operation, SkinEntry } from '../src/types.ts'
+import type { LoaderEntry, SkinEntry } from '../src/types.ts'
+import { operationWaiter } from './fixtures/operations.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+
+afterEach(cleanupTempDirs)
 
 function fixture() {
-  const dir = mkdtempSync(join(tmpdir(), 'skin-lifecycle-'))
+  const dir = tempDir('skin-lifecycle-')
   atomicWriteJson(join(dir, 'package.json'), { dependencies: {} })
   return dir
 }
 
-async function finished(operation: Operation): Promise<Operation> {
-  for (let index = 0; index < 200; index++) {
-    if (operation.phase === 'done' || operation.phase === 'failed' || operation.phase === 'cancelled') return operation
-    await new Promise(resolve => setTimeout(resolve, 5))
-  }
-  throw new Error('operation did not finish')
-}
+const finished = operationWaiter({ intervalMs: 5, message: 'operation did not finish' })
 
 function success(): CommandResult { return { exitCode: 0, stdout: '', stderr: '', timedOut: false } }
 
@@ -450,18 +447,18 @@ describe('skin lifecycle', () => {
 
   it('does not gate web installs on the catalog installation review', async () => {
     const dir = fixture()
-    const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() })
+    const attempted: string[][] = []
+    const runner: PluginRunner = async (_profile, args) => { attempted.push(args); return success() }
+    const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner })
     const base = probe.catalog[0]
     const compatibleManual = { ...base, id: 'manual.skin', review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'manual-only' as const } }
     const unverifiedInstallable = { ...base, id: 'installable.skin', review: { compatibility: 'unverified' as const, preview: 'verified' as const, installation: 'verified' as const } }
-    const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() }, [compatibleManual, unverifiedInstallable])
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner }, [compatibleManual, unverifiedInstallable])
 
-    const manual = lifecycle.begin('install', compatibleManual.id)
-    expect(manual.kind).toBe('install')
-    await finished(manual)
-    const installed = lifecycle.begin('install', unverifiedInstallable.id)
-    expect(installed.kind).toBe('install')
-    await finished(installed)
+    await finished(lifecycle.begin('install', compatibleManual.id))
+    expect(attempted.some(args => args.includes(compatibleManual.install.target))).toBe(true)
+    await finished(lifecycle.begin('install', unverifiedInstallable.id))
+    expect(attempted.some(args => args.includes(unverifiedInstallable.install.target))).toBe(true)
   })
 
   it('uses Desktop installPlugin for managed npm skins and blocks manual-only skins', async () => {

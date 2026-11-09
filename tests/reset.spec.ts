@@ -1,14 +1,16 @@
-import { mkdirSync, mkdtempSync, readFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { mkdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import { parse } from 'yaml'
 import { loadCatalog } from '../src/catalog.ts'
 import { companionAsSkin } from '../src/install-resolution.ts'
 import { atomicWriteJson, atomicWriteText, profilePatchFile, readMarketState, writeMarketState } from '../src/profile.ts'
 import { resetManagedSkins } from '../src/reset.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
 
-function fixture() { return mkdtempSync(join(tmpdir(), 'skin-reset-')) }
+afterEach(cleanupTempDirs)
+
+function fixture() { return tempDir('skin-reset-') }
 
 function isolatedSkins(count: number) {
   const skins = loadCatalog().skins

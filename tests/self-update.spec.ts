@@ -1,7 +1,7 @@
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import { parse } from 'yaml'
 import { compareVersions, createMarketUpdater, MARKET_NPM_METADATA_URL, MARKET_NPM_PACKAGE } from '../src/self-update.ts'
 import type { CommandOptions, CommandResult, PluginRunner } from '../src/commands.ts'
@@ -31,11 +31,19 @@ function materialize(profileDir: string, version: string): void {
   writeFileSync(join(profileDir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\nimporters:\n  .:\n    dependencies:\n${dependencyYaml}\npackages:\n  '${MARKET_NPM_PACKAGE}@${version}':\n    resolution:\n      integrity: ${REVIEWED_INTEGRITY}\n`)
 }
 
+const temporaryDirectories: string[] = []
+
 function installedProfile(version: string): string {
   const directory = mkdtempSync(join(tmpdir(), 'market-artifact-'))
+  temporaryDirectories.push(directory)
   materialize(directory, version)
   return directory
 }
+
+afterEach(() => {
+  for (const directory of temporaryDirectories.splice(0)) rmSync(directory, { recursive: true, force: true })
+})
+
 
 function latest(version: string, includeIntegrity = true, time: unknown = { [version]: '2000-01-01T00:00:00.000Z' }): typeof fetch {
   return vi.fn(async () => ({ ok: true, json: async () => ({ 'dist-tags': { latest: version }, time, versions: { [version]: { version, gitHead: 'c'.repeat(40), dist: { tarball: `https://registry.npmjs.org/dsh-skin-market/-/dsh-skin-market-${version}.tgz`, ...(includeIntegrity ? { integrity: REVIEWED_INTEGRITY } : {}) } } } }) })) as unknown as typeof fetch
@@ -638,6 +646,7 @@ describe('market self update', () => {
 
   it('only installs when npm has a newer immutable package and hides the update afterwards', async () => {
     const dshHome = mkdtempSync(join(tmpdir(), 'dsh-market-self-update-'))
+    temporaryDirectories.push(dshHome)
     const profileDir = join(dshHome, 'profiles', 'web')
     mkdirSync(profileDir, { recursive: true })
     materialize(profileDir, '0.1.15')

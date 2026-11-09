@@ -7,7 +7,8 @@ import { loadCatalog } from '../src/catalog.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { officialDesktopRunner, type OfficialPluginManagerLike } from '../src/official-desktop.ts'
 import { atomicWriteJson, atomicWriteText, packageDir, readDependencies, readMarketState, readProfileBundles } from '../src/profile.ts'
-import type { Operation, SkinEntry } from '../src/types.ts'
+import type { SkinEntry } from '../src/types.ts'
+import { conditionWaiter, operationWaiter } from './fixtures/operations.ts'
 
 const directories: string[] = []
 const lifecycles: SkinLifecycle[] = []
@@ -16,17 +17,8 @@ afterEach(async () => {
   for (const directory of directories.splice(0)) rmSync(directory, { recursive: true, force: true })
 })
 
-async function until(predicate: () => boolean): Promise<void> {
-  for (let index = 0; index < 500; index++) {
-    if (predicate()) return
-    await new Promise(resolve => setTimeout(resolve, 2))
-  }
-  throw new Error('GitHub lifecycle condition did not settle')
-}
-async function finished(operation: Operation): Promise<Operation> {
-  await until(() => ['done', 'failed', 'cancelled', 'waiting'].includes(operation.phase))
-  return operation
-}
+const until = conditionWaiter({ attempts: 500, intervalMs: 2, message: 'GitHub lifecycle condition did not settle' })
+const finished = operationWaiter({ attempts: 500, intervalMs: 2, message: 'GitHub lifecycle condition did not settle', terminal: ['done', 'failed', 'cancelled', 'waiting'] })
 
 function fixture(subpath?: string, options: { manual?: boolean; desktopReason?: string } = {}) {
   const base = structuredClone(loadCatalog().skins[0]!)

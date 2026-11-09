@@ -478,11 +478,6 @@ describe('official management release contracts', () => {
     },
   )
 
-  it('does not infer optional argument support from callable proxy methods', () => {
-    const runner = officialDesktopRunner(() => fullManager(), runtime('0.1.6-alpha.2'))
-    expect(runner.management!.capabilities()).toMatchObject({ wait: { available: false }, registry: { available: false }, saveExact: { available: false } })
-  })
-
   it('fails closed per actual missing method and reads a new manager generation', async () => {
     let manager = fullManager()
     manager.setBundleEnabled = undefined

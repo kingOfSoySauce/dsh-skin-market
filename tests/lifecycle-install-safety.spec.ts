@@ -1,5 +1,4 @@
-import { existsSync, mkdirSync, mkdtempSync, readFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { existsSync, mkdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { loadCatalog } from '../src/catalog.ts'
@@ -8,9 +7,13 @@ import { SkinLifecycle } from '../src/lifecycle.ts'
 import { atomicWriteJson, atomicWriteText, ensurePatchedDependency, profilePatchFile, readDependencies, readMarketState } from '../src/profile.ts'
 import * as profile from '../src/profile.ts'
 import type { Operation, SkinEntry } from '../src/types.ts'
+import { conditionWaiter } from './fixtures/operations.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+
+afterEach(cleanupTempDirs)
 
 function fixture() {
-  const dir = mkdtempSync(join(tmpdir(), 'skin-install-safety-'))
+  const dir = tempDir('skin-install-safety-')
   atomicWriteJson(join(dir, 'package.json'), { dependencies: {} })
   const skin: SkinEntry = { ...loadCatalog().skins[0], id: 'test.npm-skin', package: 'test-npm-skin', rowId: 'test-npm-skin', repo: 'https://github.com/example/skin',
     review: { installation: 'verified', preview: 'verified', compatibility: 'verified' },
@@ -28,10 +31,7 @@ function materialize(dir: string, skin: SkinEntry, integrity?: string): void {
   if (integrity) atomicWriteText(join(dir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\npackages:\n  '${skin.package}@${skin.install.version}':\n    resolution:\n      integrity: ${integrity}\n`)
 }
 
-async function until(predicate: () => boolean): Promise<void> {
-  for (let i = 0; i < 100 && !predicate(); i++) await new Promise(resolve => setTimeout(resolve, 1))
-  expect(predicate()).toBe(true)
-}
+const until = conditionWaiter({ attempts: 100, intervalMs: 1, message: 'installation boundary condition did not settle' })
 
 describe('installation boundaries', () => {
   afterEach(() => { vi.restoreAllMocks(); vi.useRealTimers() })

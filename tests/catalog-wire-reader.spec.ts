@@ -1,11 +1,13 @@
-import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import { CatalogStore, loadCatalog, validateCatalog } from '../src/catalog.ts'
 import { decodeCatalogWire, encodeCatalogWire } from '../src/catalog-wire.ts'
 import type { NpmInstallSource } from '../src/types.ts'
 import { buildCatalogWire } from '../scripts/catalog-wire.mjs'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+
+afterEach(cleanupTempDirs)
 
 function fixture() {
   const bundled = loadCatalog()
@@ -94,7 +96,7 @@ describe('catalog wire reader', () => {
 
   it('stores wire data and restores runtime npm metadata from the shared cache offline', async () => {
     const { wire, npm } = fixture()
-    const dir = mkdtempSync(join(tmpdir(), 'skin-catalog-wire-'))
+    const dir = tempDir('skin-catalog-wire-')
     const store = new CatalogStore(dir, { fetcher: async () => ({ ok: true, status: 200, json: async () => wire }) })
     const accepted = await store.refresh(true)
     expect(accepted.source).toBe('remote')
@@ -108,7 +110,7 @@ describe('catalog wire reader', () => {
 
   it('writes transitional inline remote metadata back to the cache as wire data', async () => {
     const { wire } = fixture()
-    const dir = mkdtempSync(join(tmpdir(), 'skin-catalog-inline-'))
+    const dir = tempDir('skin-catalog-inline-')
     const runtime = validateCatalog(wire)
     const store = new CatalogStore(dir, { fetcher: async () => ({ ok: true, status: 200, json: async () => runtime }) })
     expect((await store.refresh(true)).source).toBe('remote')
@@ -118,7 +120,7 @@ describe('catalog wire reader', () => {
   it('requires a new timestamp for changed npm metadata and keeps the accepted cache', async () => {
     const { wire, skin, npm } = fixture()
     let remote = wire
-    const dir = mkdtempSync(join(tmpdir(), 'skin-catalog-npm-timestamp-'))
+    const dir = tempDir('skin-catalog-npm-timestamp-')
     const store = new CatalogStore(dir, { fetcher: async () => ({ ok: true, status: 200, json: async () => remote }) })
     expect((await store.refresh(true)).source).toBe('remote')
     remote = { ...wire, npmSources: { [skin.id]: { ...npm, integrity: 'sha512-def' } } }
@@ -131,7 +133,7 @@ describe('catalog wire reader', () => {
   it('keeps the accepted catalog when remote npm metadata is invalid', async () => {
     const { wire, skin, npm } = fixture()
     let remote: unknown = wire
-    const dir = mkdtempSync(join(tmpdir(), 'skin-catalog-npm-fallback-'))
+    const dir = tempDir('skin-catalog-npm-fallback-')
     const store = new CatalogStore(dir, { fetcher: async () => ({ ok: true, status: 200, json: async () => remote }) })
     await store.refresh(true)
     remote = { ...wire, npmSources: { [skin.id]: { ...npm, gitHead: 'invalid' } } }
@@ -144,7 +146,7 @@ describe('catalog wire reader', () => {
   it.each(['add', 'remove'])('rejects a metadata-only %s without a new timestamp', async change => {
     const { catalog, wire } = fixture()
     let remote = change === 'add' ? catalog : wire
-    const store = new CatalogStore(mkdtempSync(join(tmpdir(), 'skin-catalog-npm-presence-')), {
+    const store = new CatalogStore(tempDir('skin-catalog-npm-presence-'), {
       fetcher: async () => ({ ok: true, status: 200, json: async () => remote }),
     })
     const accepted = await store.refresh(true)
@@ -157,7 +159,7 @@ describe('catalog wire reader', () => {
   it('ignores npm object key ordering when comparing an unchanged timestamp', async () => {
     const { wire, skin, npm } = fixture()
     let remote = wire
-    const store = new CatalogStore(mkdtempSync(join(tmpdir(), 'skin-catalog-npm-order-')), {
+    const store = new CatalogStore(tempDir('skin-catalog-npm-order-'), {
       fetcher: async () => ({ ok: true, status: 200, json: async () => remote }),
     })
     await store.refresh(true)
@@ -167,7 +169,7 @@ describe('catalog wire reader', () => {
 
   it('falls back to bundled data when saved cache npm metadata is invalid', () => {
     const { wire, skin, npm } = fixture()
-    const dir = mkdtempSync(join(tmpdir(), 'skin-catalog-npm-bad-cache-'))
+    const dir = tempDir('skin-catalog-npm-bad-cache-')
     mkdirSync(join(dir, '.dsh-skin-market'))
     writeFileSync(join(dir, '.dsh-skin-market/catalog.json'), JSON.stringify({ ...wire, npmSources: { [skin.id]: { ...npm, integrity: 'unverified' } } }))
     const store = new CatalogStore(dir)

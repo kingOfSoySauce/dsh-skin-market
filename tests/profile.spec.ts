@@ -4,14 +4,25 @@ import { mkdirSync, mkdtempSync, readFileSync, rmSync, symlinkSync } from 'node:
 import { syncBuiltinESMExports } from 'node:module'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import { isScalar, parse, parseDocument, visit } from 'yaml'
 import { buildApprovalKeyForTarget, effectiveBuildApprovalKey } from '../src/build-approval.ts'
-import { acknowledgeSkinArtifactRisk, assertLoaderMetadata, assertNoLoaderConflicts, atomicWriteJson, atomicWriteText, compareInstalledArtifact, compatibilityPatchFile, ensureBuildAllowed, ensurePatchedDependency, ensureSkinRegistration, inspectSkinArtifactRisk, InstallConflictError, installedClientPlugins, installedSpecMatches, isSkinArtifactRiskAcknowledged, packageLoaderOwnershipAt, patchedDependenciesNeedSync, pnpmWorkspaceFile, profilePatchFile, readMarketState, removeCompatibilityPatches, removeProfileBundles, removeSkinRegistration, reviewedInstalledSpecMatches, runtimeState, setManagedLoaderOverride, snapshotInstalledArtifact, validateDesktopArtifact, validateInstalledSkin, validateNpmArtifact, writeMarketState } from '../src/profile.ts'
+import { acknowledgeSkinArtifactRisk, assertLoaderMetadata, assertNoLoaderConflicts, atomicWriteJson, atomicWriteText, compareInstalledArtifact, compatibilityPatchFile, ensureBuildAllowed, ensurePatchedDependency, ensureSkinRegistration, inspectSkinArtifactRisk, InstallConflictError, installedClientPlugins, installedSpecMatches, isSkinArtifactRiskAcknowledged, marketStateFile, packageLoaderOwnershipAt, patchedDependenciesNeedSync, pnpmWorkspaceFile, profilePatchFile, readMarketState, removeCompatibilityPatches, removeProfileBundles, removeSkinRegistration, reviewedInstalledSpecMatches, runtimeState, setManagedLoaderOverride, snapshotInstalledArtifact, validateDesktopArtifact, validateInstalledSkin, validateNpmArtifact, writeMarketState } from '../src/profile.ts'
 import { loadCatalog } from '../src/catalog.ts'
 import { CORDIS_JS_TAG, cordisYamlOptions } from '../src/cordis-yaml.ts'
 
-function fixture() { return mkdtempSync(join(tmpdir(), 'skin-profile-')) }
+const temporaryDirectories: string[] = []
+
+function fixture() {
+  const directory = mkdtempSync(join(tmpdir(), 'skin-profile-'))
+  temporaryDirectories.push(directory)
+  return directory
+}
+
+afterEach(() => {
+  for (const directory of temporaryDirectories.splice(0)) rmSync(directory, { recursive: true, force: true })
+})
+
 
 function isolatedCatalogSkin() {
   const skins = loadCatalog().skins
@@ -626,9 +637,11 @@ describe('profile state', () => {
     rmSync(join(directory, 'host.js'))
     expect(validateNpmArtifact(dir, source)).toMatchObject({ ok: false, reason: expect.stringContaining('可加载入口') })
   })
-  it('atomically persists active and disabled skin state', () => {
+  it('persists active and disabled skin state without leaving a temporary file', () => {
     const dir = fixture()
     writeMarketState(dir, { version: 1, activeSkinId: 'a', disabledSkinIds: ['b'] })
+    expect(JSON.parse(readFileSync(marketStateFile(dir), 'utf8'))).toMatchObject({ version: 1, activeSkinId: 'a', disabledSkinIds: ['b'] })
+    expect(fs.readdirSync(join(dir, '.dsh-skin-market')).filter(name => name !== 'state.json')).toEqual([])
     expect(readMarketState(dir)).toEqual({ version: 1, activeSkinId: 'a', disabledSkinIds: ['b'] })
   })
 

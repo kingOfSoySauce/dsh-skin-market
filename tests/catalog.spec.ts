@@ -1,9 +1,11 @@
-import { mkdtempSync, readFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import { CatalogStore, catalogWithStars, recommend, repositorySlug, validateCatalog } from '../src/catalog.ts'
 import { loadCatalog } from '../src/catalog.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+
+afterEach(cleanupTempDirs)
 
 describe('catalog', () => {
   it('contains pinned, curated install targets', () => {
@@ -118,7 +120,7 @@ describe('catalog', () => {
   })
 
   it('accepts a newer remote catalog, caches it, and reuses it offline', async () => {
-    const dir = mkdtempSync(join(tmpdir(), 'skin-catalog-'))
+    const dir = tempDir('skin-catalog-')
     const bundled = loadCatalog()
     const remote = structuredClone(bundled)
     remote.generatedAt = new Date(Date.parse(bundled.generatedAt) + 60_000).toISOString()
@@ -138,7 +140,7 @@ describe('catalog', () => {
 
   it('keeps the bundled catalog in local development mode without requesting remote data', async () => {
     const fetcher = vi.fn(async () => ({ ok: true, status: 200, json: async () => { throw new Error('remote should not be called') } }))
-    const store = new CatalogStore(mkdtempSync(join(tmpdir(), 'skin-catalog-local-')), {
+    const store = new CatalogStore(tempDir('skin-catalog-local-'), {
       fetcher,
       preferBundled: true,
     })
@@ -152,7 +154,7 @@ describe('catalog', () => {
   it('rejects stale or structurally conflicting remote catalogs', async () => {
     const bundled = loadCatalog()
     const stale = { ...structuredClone(bundled), generatedAt: '2020-01-01T00:00:00.000Z' }
-    const staleStore = new CatalogStore(mkdtempSync(join(tmpdir(), 'skin-catalog-stale-')), {
+    const staleStore = new CatalogStore(tempDir('skin-catalog-stale-'), {
       fetcher: async () => ({ ok: true, status: 200, json: async () => stale }),
     })
     const result = await staleStore.refresh(true)

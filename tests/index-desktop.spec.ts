@@ -1,17 +1,19 @@
-import { existsSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { existsSync, mkdirSync, rmSync } from 'node:fs'
 import { join } from 'node:path'
 import { Readable } from 'node:stream'
 import type { Context } from '@deepseek-ai/cordis'
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import { loadCatalog } from '../src/catalog.ts'
 import { apply } from '../src/index.ts'
 import type { LoaderEntry } from '../src/types.ts'
 import type { HostConnectionLike } from '../src/http.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+
+afterEach(cleanupTempDirs)
 
 describe('official Desktop entrypoint', () => {
   it('uses the Desktop route for explicit profile=desktop without profileContext.dir and fails closed without pluginManager', async () => {
-    const profileRoot = mkdtempSync(join(tmpdir(), 'dsh-skin-market-index-'))
+    const profileRoot = tempDir('dsh-skin-market-index-')
     const previousHome = process.env.DSH_HOME
     process.env.DSH_HOME = profileRoot
     let cleanup: (() => void | Promise<void>) | undefined
@@ -77,7 +79,7 @@ describe('official Desktop entrypoint', () => {
   })
 
   it.each(['web', 'desktop'] as const)('preserves the actual %s profile and re-reads a host admission service that appears after startup', async profile => {
-    const profileRoot = mkdtempSync(join(tmpdir(), 'dsh-market-host-entry-'))
+    const profileRoot = tempDir('dsh-market-host-entry-')
     const previousHome = process.env.DSH_HOME
     process.env.DSH_HOME = profileRoot
     const profileDir = join(profileRoot, 'profiles', profile)
