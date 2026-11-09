@@ -6,7 +6,7 @@ author: zhu1090093659
 description: Multi-pet companion plugin for the DSH Web GUI：registry 驱动的浮层桌宠，支持状态反应、命名、投喂、互动和亲密度。
 repo: https://github.com/zhu1090093659/dsh-pet
 package: "@linxin666/dsh-pet"
-rowId: zhu1090093659-dsh-pet
+rowId: pet
 category: pet
 tags:
   - pet
@@ -71,6 +71,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 68
 releaseUpdatedAt: 2026-11-08T00:17:41.931Z
-metadataUpdatedAt: 2026-11-08T00:17:41.931Z
+metadataUpdatedAt: 2026-11-09T08:06:17.195Z
 starsUpdatedAt: 2026-11-08T00:17:41.931Z
-updatedAt: 2026-11-08T00:17:41.931Z
+updatedAt: 2026-11-09T08:06:17.195Z

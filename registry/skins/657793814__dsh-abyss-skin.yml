@@ -2,21 +2,21 @@ id: 657793814.dsh-abyss-skin
 name:
   zh: dsh-abyss-skin
   en: dsh-abyss-skin
-author: '657793814'
+author: "657793814"
 description: DeepSeek Harness 主题皮肤：启动画面、动态背景与主题切换器复合包。
 repo: https://github.com/657793814/dsh-abyss-skin
 package: dsh-abyss-skin
-rowId: 657793814-dsh-abyss-skin
+rowId: dsh-abyss-skin
 category: skin
 tags:
-- appearance
-- animation
-- wallpaper
+  - appearance
+  - animation
+  - wallpaper
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
-  target: 'github:657793814/dsh-abyss-skin#ed50e81c34948798cb9cd15340c7290850125781'
+  target: github:657793814/dsh-abyss-skin#ed50e81c34948798cb9cd15340c7290850125781
   version: 1.6.0
   commit: ed50e81c34948798cb9cd15340c7290850125781
   desktop:
@@ -25,7 +25,7 @@ install:
 compatibility:
   dsh: 0.1.7-rc.2
   platform:
-  - web
+    - web
 marketScreenshots:
   - skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/home.png
   - skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd15340c7290850125781/conversation.png
@@ -39,23 +39,37 @@ listScreenshot: skin-screenshots/657793814__dsh-abyss-skin/ed50e81c34948798cb9cd
 review:
   compatibility: verified
   preview: verified
-  installation: verified
+  installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
-    installation: pass
+    compatibility: improve
+    installation: improve
     installCommand: pass
     topic: improve
   suggestions:
-  - 运行 GIF 实测 92 帧 / 11.51 秒；固定在 DSH 0.1.7-rc.2。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: ed50e81c34948798cb9cd15340c7290850125781
+    packageVersion: 1.6.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-09T08:05:45.760Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 1
-releaseUpdatedAt: '2026-11-04T14:29:50+08:00'
-metadataUpdatedAt: '2026-11-04T14:29:50+08:00'
-starsUpdatedAt: '2026-11-04T14:29:50+08:00'
-updatedAt: '2026-11-04T14:29:50+08:00'
+releaseUpdatedAt: 2026-11-04T14:29:50+08:00
+metadataUpdatedAt: 2026-11-09T08:05:50.629Z
+starsUpdatedAt: 2026-11-04T14:29:50+08:00
+updatedAt: 2026-11-09T08:05:50.629Z
