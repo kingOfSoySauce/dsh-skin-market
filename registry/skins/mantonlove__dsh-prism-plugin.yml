@@ -3,7 +3,7 @@ name:
   zh: dsh-prism-plugin
   en: dsh-prism-plugin
 author: mantonlove
-description: Prism · 棱镜 — DSH 毛玻璃主题插件
+description: Prism · 棱镜 — 支持 DSH 0.2.2-rc.1 的毛玻璃主题插件
 repo: https://github.com/mantonlove/dsh-prism-plugin
 package: "@deepseek-ai/dsh-client-ui-prism"
 rowId: ui-prism
