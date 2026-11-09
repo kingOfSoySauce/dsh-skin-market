@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T00:27:44.259Z",
+  "generatedAt": "2026-11-09T06:34:54.105Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -41894,7 +41894,7 @@
       "description": "Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。",
       "repo": "https://github.com/Nwflower/dsh-claude-style",
       "package": "dsh-claude-style",
-      "rowId": "nwflower-dsh-claude-style",
+      "rowId": "ui-skin-claude-style",
       "category": "skin",
       "tags": [
         "appearance",

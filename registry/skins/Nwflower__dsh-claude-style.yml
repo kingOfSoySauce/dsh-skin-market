@@ -6,7 +6,7 @@ author: Nwflower
 description: Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
 repo: https://github.com/Nwflower/dsh-claude-style
 package: dsh-claude-style
-rowId: nwflower-dsh-claude-style
+rowId: ui-skin-claude-style
 category: skin
 tags:
   - appearance
