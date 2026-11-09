@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T00:21:11.574Z",
+  "generatedAt": "2026-11-09T00:27:44.259Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -34360,6 +34360,83 @@
       }
     },
     {
+      "id": "2856964164.lab.deepseek",
+      "name": {
+        "zh": "DT-OS 皮肤",
+        "en": "DT-OS Skin"
+      },
+      "author": "2856964164-lab",
+      "description": "底特律风格的冷蓝工业配色，深色为深蓝黑底配冷蓝高光，浅色为冷灰白底配藏蓝强调色；空白会话页显示分环仿生人开机标记。深浅两套配色均可独立使用。",
+      "repo": "https://github.com/2856964164-lab/deepseek",
+      "package": "dsh-skin-android-boot",
+      "rowId": "skin-android-boot",
+      "category": "skin",
+      "tags": [
+        "appearance"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:2856964164-lab/deepseek#f841dc0ed1816527f269b470d5c500c89e8e7d62",
+        "version": "0.1.0",
+        "commit": "f841dc0ed1816527f269b470d5c500c89e8e7d62"
+      },
+      "compatibility": {
+        "dsh": "^0.1.0-rc.6",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/2856964164-lab/deepseek/f841dc0ed1816527f269b470d5c500c89e8e7d62/screenshots/dark.png",
+        "https://raw.githubusercontent.com/2856964164-lab/deepseek/f841dc0ed1816527f269b470d5c500c89e8e7d62/screenshots/light.png"
+      ],
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "healthy",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "pass",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": []
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-09T00:27:42.770Z",
+      "metadataUpdatedAt": "2026-11-09T00:27:42.770Z",
+      "starsUpdatedAt": "2026-11-09T00:27:42.770Z",
+      "updatedAt": "2026-11-09T00:27:42.770Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f324a83c48b79947226d138e0c909991.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f324a83c48b79947226d138e0c909991.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f324a83c48b79947226d138e0c909991.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f324a83c48b79947226d138e0c909991.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d85db640304362aa9853c9f5cd9eafbf.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d85db640304362aa9853c9f5cd9eafbf.full.webp"
+          }
+        ]
+      }
+    },
+    {
       "id": "657793814.dsh-abyss-skin",
       "name": {
         "zh": "dsh-abyss-skin",
@@ -52694,7 +52771,7 @@
         "en": "dsh-prism-plugin"
       },
       "author": "mantonlove",
-      "description": "Prism · 棱镜 — DSH 毛玻璃主题插件",
+      "description": "Prism · 棱镜 — 支持 DSH 0.2.2-rc.1 的毛玻璃主题插件",
       "repo": "https://github.com/mantonlove/dsh-prism-plugin",
       "package": "@deepseek-ai/dsh-client-ui-prism",
       "rowId": "ui-prism",
