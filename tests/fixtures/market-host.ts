@@ -28,7 +28,7 @@ export function stubMarketFetch(handler: FetchLike) {
 }
 
 interface FetchMockLike {
-  mock: { calls: Array<[string, RequestInit | undefined]> }
+  mock: { calls: Array<[string, RequestInit?]> }
 }
 
 /** Count requests whose URL ends with the given suffix. */
