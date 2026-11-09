@@ -19,10 +19,17 @@ install:
   target: github:tiantyu/dsh-skin-toggle#781fd4605756503f9635d6083686e079b5a8944f
   version: 0.4.0
   commit: 781fd4605756503f9635d6083686e079b5a8944f
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -39,16 +46,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 781fd4605756503f9635d6083686e079b5a8944f
+    packageVersion: 0.4.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:14:08.646Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 122
-starsSnapshot: 5
-releaseUpdatedAt: 2026-08-18 15:40:53.638000+00:00
-metadataUpdatedAt: 2026-08-22T08:15:27.491Z
-starsUpdatedAt: 2026-08-31T23:11:57.700Z
-updatedAt: 2026-08-31T23:11:57.700Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/settings.png
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-09T07:14:08.647Z
+metadataUpdatedAt: 2026-11-09T07:14:08.647Z
+starsUpdatedAt: 2026-11-09T07:14:08.647Z
+updatedAt: 2026-11-09T07:14:08.647Z

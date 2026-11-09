@@ -16,19 +16,22 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#4bc525ebe6f5ad630f7767814060cee9a4eda760
-  version: 0.1.26
-  commit: 4bc525ebe6f5ad630f7767814060cee9a4eda760
+  target: github:TQSY114514/dsh-ui-appearance#a7260bec8bece3c195899d8245f9604ace5f50cb
+  version: 0.1.28
+  commit: a7260bec8bece3c195899d8245f9604ace5f50cb
   desktop:
-    mode: manual-only
-    reason: npm-version-mismatch
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/4bc525ebe6f5ad630f7767814060cee9a4eda760
+    mode: managed
+    registry: npm
+    packageName: dsh-ui-appearance
+    packageVersion: 0.1.28
+    integrity: sha512-unIS7kXggOJE/sNjuwoYE6fwx04oHxpR5QqFlj879st8jmhkV4GfTQUHNemhihHuhphxu0neZj7z/i5iz2Nrpg==
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/a7260bec8bece3c195899d8245f9604ace5f50cb
   npm:
     name: dsh-ui-appearance
-    version: 0.1.26
-    integrity: sha512-Z1E5ar/ieQkqZuiKtu9hZVQrOPxZQpz7VOo/WcxPmdM1Sf+nu4a/m/AuMEKryN9PlE9CtBFHB/KzxOuCLL/Jvg==
+    version: 0.1.28
+    integrity: sha512-unIS7kXggOJE/sNjuwoYE6fwx04oHxpR5QqFlj879st8jmhkV4GfTQUHNemhihHuhphxu0neZj7z/i5iz2Nrpg==
     repository: https://github.com/TQSY114514/dsh-ui-appearance
-    gitHead: 4bc525ebe6f5ad630f7767814060cee9a4eda760
+    gitHead: a7260bec8bece3c195899d8245f9604ace5f50cb
 compatibility:
   dsh: unverified
   platform:
@@ -60,12 +63,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 4bc525ebe6f5ad630f7767814060cee9a4eda760
-    packageVersion: 0.1.26
+    commit: a7260bec8bece3c195899d8245f9604ace5f50cb
+    packageVersion: 0.1.28
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-10-30T23:01:08.953Z
+    checkedAt: 2026-11-09T07:12:58.998Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -73,8 +76,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 36
-starsSnapshot: 26
-releaseUpdatedAt: 2026-10-30T23:01:11.698Z
-metadataUpdatedAt: 2026-10-30T23:01:11.698Z
-starsUpdatedAt: 2026-10-26T23:11:18.540Z
-updatedAt: 2026-10-30T23:01:11.698Z
+starsSnapshot: 29
+releaseUpdatedAt: 2026-11-09T07:13:01.004Z
+metadataUpdatedAt: 2026-11-09T07:13:01.004Z
+starsUpdatedAt: 2026-11-09T07:13:01.004Z
+updatedAt: 2026-11-09T07:13:01.004Z

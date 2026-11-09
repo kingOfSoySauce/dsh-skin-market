@@ -38,16 +38,19 @@ screenshots:
   - https://raw.githubusercontent.com/zmm863-commits/dsh-client-ui-paopaocat/1970fa791fe514c52fa52a5d4db6a40b9c50c2d0/screenshots/01-home.jpg
 listScreenshot: https://raw.githubusercontent.com/zmm863-commits/dsh-client-ui-paopaocat/1970fa791fe514c52fa52a5d4db6a40b9c50c2d0/screenshots/01-home.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: pass
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
     commit: 1970fa791fe514c52fa52a5d4db6a40b9c50c2d0
     packageVersion: 0.3.4
@@ -63,6 +66,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T07:19:00.342Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T07:19:00.342Z

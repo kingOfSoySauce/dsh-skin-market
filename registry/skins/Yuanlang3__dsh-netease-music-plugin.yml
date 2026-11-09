@@ -24,6 +24,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Yuanlang3__dsh-netease-music-plugin/98ceb84bd661e0a38a707e26a2b93f44c8b5142e/home.png
+  - skin-screenshots/Yuanlang3__dsh-netease-music-plugin/98ceb84bd661e0a38a707e26a2b93f44c8b5142e/conversation.png
+  - skin-screenshots/Yuanlang3__dsh-netease-music-plugin/98ceb84bd661e0a38a707e26a2b93f44c8b5142e/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -51,13 +55,9 @@ health:
 license:
   code: Apache-2.0
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/Yuanlang3__dsh-netease-music-plugin/98ceb84bd661e0a38a707e26a2b93f44c8b5142e/home.png
-  - skin-screenshots/Yuanlang3__dsh-netease-music-plugin/98ceb84bd661e0a38a707e26a2b93f44c8b5142e/conversation.png
-  - skin-screenshots/Yuanlang3__dsh-netease-music-plugin/98ceb84bd661e0a38a707e26a2b93f44c8b5142e/settings.png
 featuredRank: 0
+starsSnapshot: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+metadataUpdatedAt: 2026-11-09T07:18:50.946Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-30T03:53:15.825Z
+updatedAt: 2026-11-09T07:18:50.946Z

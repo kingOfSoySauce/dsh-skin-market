@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:yhPrime/dsh-theme-picker#d9b00d6c212187baa5590533afa1816a0119f11e
-  version: 1.0.0
-  commit: d9b00d6c212187baa5590533afa1816a0119f11e
+  target: github:yhPrime/dsh-theme-picker#1a97a640201b5db1e8e11e65a9e3efb82cb38b3b
+  version: 2.2.0
+  commit: 1a97a640201b5db1e8e11e65a9e3efb82cb38b3b
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -24,10 +24,14 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/home.png
+  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/conversation.png
+  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/settings.png
 screenshots: []
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
@@ -41,24 +45,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: d9b00d6c212187baa5590533afa1816a0119f11e
-    packageVersion: 1.0.0
+    commit: 1a97a640201b5db1e8e11e65a9e3efb82cb38b3b
+    packageVersion: 2.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-26T03:27:49.161Z
+    checkedAt: 2026-11-09T07:18:47.703Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 165
-starsSnapshot: 2
-releaseUpdatedAt: 2026-08-26T03:27:49.304Z
-metadataUpdatedAt: 2026-08-26T03:27:49.304Z
-starsUpdatedAt: 2026-08-25T07:10:33.961Z
-updatedAt: 2026-08-26T03:27:49.304Z
-
-marketScreenshots:
-  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/home.png
-  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/conversation.png
-  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/settings.png
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-09T07:18:47.703Z
+metadataUpdatedAt: 2026-11-09T07:18:47.703Z
+starsUpdatedAt: 2026-11-09T07:18:47.703Z
+updatedAt: 2026-11-09T07:18:47.703Z

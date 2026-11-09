@@ -9,25 +9,26 @@ package: dsh-boot-animation
 rowId: lxj5820-dsh-boot-animation
 category: splash
 tags:
-- animation
-- startup
-- splash
+  - animation
+  - startup
+  - splash
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
-  target: 'github:lxj5820/dsh-boot-animation#b7786cd749ef18608340a8f5e2071a3656ebf009'
+  target: github:lxj5820/dsh-boot-animation#3eaa46e24776cd8f10d613c84947e884d8e7f10b
   version: 0.3.0
-  commit: b7786cd749ef18608340a8f5e2071a3656ebf009
+  commit: 3eaa46e24776cd8f10d613c84947e884d8e7f10b
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
 compatibility:
   dsh: 0.1.7-rc.2
   platform:
-  - web
+    - web
 screenshots:
-- skin-screenshots/lxj5820__dsh-boot-animation/b7786cd749ef18608340a8f5e2071a3656ebf009/home.gif
+  - skin-screenshots/lxj5820__dsh-boot-animation/b7786cd749ef18608340a8f5e2071a3656ebf009/home.gif
+listScreenshot: https://raw.githubusercontent.com/lxj5820/dsh-boot-animation/3eaa46e24776cd8f10d613c84947e884d8e7f10b/assets/preview.gif
 review:
   compatibility: verified
   preview: verified
@@ -36,18 +37,27 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
-    topic: improve
+    topic: pass
   suggestions:
-  - 纯开屏候选只展示 GIF；运行 GIF 实测 92 帧 / 11.51 秒，三视图不作为收录门槛。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 3eaa46e24776cd8f10d613c84947e884d8e7f10b
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:12:36.035Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 315
-releaseUpdatedAt: '2026-11-04T14:29:50+08:00'
-metadataUpdatedAt: '2026-11-04T14:29:50+08:00'
-starsUpdatedAt: '2026-11-04T14:29:50+08:00'
-updatedAt: '2026-11-04T14:29:50+08:00'
+starsSnapshot: 335
+releaseUpdatedAt: 2026-11-09T07:12:36.684Z
+metadataUpdatedAt: 2026-11-09T07:12:36.684Z
+starsUpdatedAt: 2026-11-09T07:12:36.684Z
+updatedAt: 2026-11-09T07:12:36.684Z

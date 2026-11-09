@@ -20,6 +20,12 @@ install:
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-piggy
+    version: 0.37.2
+    integrity: sha512-iIQ13Vrhvp4uVMA7+sNNKMgWG8D2fTruNLN/iEMMdgbZHuhpDTBvJ5a2WBTZPuaFVHXZH43cq6mv951r2wdWtg==
+    repository: https://github.com/CLICGGER-TYPES/dsh-piggy
+    gitHead: b859d224676065e68cabecf0966829166fc85aeb
 compatibility:
   dsh: unverified
   platform:
@@ -63,7 +69,7 @@ license:
   commercialUse: true
 featuredRank: 969
 starsSnapshot: 33
-releaseUpdatedAt: 2026-11-08T00:17:42.592Z
+releaseUpdatedAt: 2026-11-09T07:12:56.588Z
 metadataUpdatedAt: 2026-11-08T00:17:42.592Z
 starsUpdatedAt: 2026-10-30T03:53:15.825Z
-updatedAt: 2026-11-08T00:17:42.592Z
+updatedAt: 2026-11-09T07:12:56.588Z

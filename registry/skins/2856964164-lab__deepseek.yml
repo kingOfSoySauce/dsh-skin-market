@@ -17,6 +17,9 @@ install:
   target: github:2856964164-lab/deepseek#f841dc0ed1816527f269b470d5c500c89e8e7d62
   version: 0.1.0
   commit: f841dc0ed1816527f269b470d5c500c89e8e7d62
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -24,6 +27,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/2856964164-lab/deepseek/f841dc0ed1816527f269b470d5c500c89e8e7d62/screenshots/dark.png
   - https://raw.githubusercontent.com/2856964164-lab/deepseek/f841dc0ed1816527f269b470d5c500c89e8e7d62/screenshots/light.png
+listScreenshot: https://raw.githubusercontent.com/2856964164-lab/deepseek/f841dc0ed1816527f269b470d5c500c89e8e7d62/screenshots/dark.png
 review:
   compatibility: verified
   preview: verified
@@ -37,12 +41,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: f841dc0ed1816527f269b470d5c500c89e8e7d62
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:16:38.276Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-09T00:27:42.770Z
-metadataUpdatedAt: 2026-11-09T00:27:42.770Z
+releaseUpdatedAt: 2026-11-09T07:16:38.538Z
+metadataUpdatedAt: 2026-11-09T07:16:38.538Z
 starsUpdatedAt: 2026-11-09T00:27:42.770Z
-updatedAt: 2026-11-09T00:27:42.770Z
+updatedAt: 2026-11-09T07:16:38.538Z

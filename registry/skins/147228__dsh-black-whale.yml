@@ -15,9 +15,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:147228/dsh-xiaoyao-skins#174f65d9135e932383a8f3a19fa522f16875a139&path:/packages/skins/black-whale
+  target: github:147228/dsh-xiaoyao-skins#555a9acbc4c269faa64fd2647205b290d4654903&path:/packages/skins/black-whale
   version: 0.1.4
-  commit: 174f65d9135e932383a8f3a19fa522f16875a139
+  commit: 555a9acbc4c269faa64fd2647205b290d4654903
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -36,6 +36,7 @@ screenshots:
   - https://raw.githubusercontent.com/147228/dsh-xiaoyao-skins/174f65d9135e932383a8f3a19fa522f16875a139/packages/skins/great-wall-beacon/preview/dark.jpg
   - https://raw.githubusercontent.com/147228/dsh-xiaoyao-skins/174f65d9135e932383a8f3a19fa522f16875a139/packages/skins/great-wall-sunrise/preview/dark.jpg
   - https://raw.githubusercontent.com/147228/dsh-xiaoyao-skins/174f65d9135e932383a8f3a19fa522f16875a139/packages/skins/great-wall-snow/preview/dark.jpg
+listScreenshot: https://raw.githubusercontent.com/147228/dsh-xiaoyao-skins/555a9acbc4c269faa64fd2647205b290d4654903/packages/skins/black-whale/preview/dark.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -47,24 +48,23 @@ health:
     compatibility: improve
     installation: pass
     installCommand: pass
-    topic: improve
+    topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: 174f65d9135e932383a8f3a19fa522f16875a139
+    commit: 555a9acbc4c269faa64fd2647205b290d4654903
     packageVersion: 0.1.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T10:12:36.677Z
+    checkedAt: 2026-11-09T07:13:04.723Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 216
 starsSnapshot: 23
-releaseUpdatedAt: 2026-08-23T10:12:37.210Z
-metadataUpdatedAt: 2026-08-23T17:16:55.690Z
+releaseUpdatedAt: 2026-11-09T07:13:05.746Z
+metadataUpdatedAt: 2026-11-09T07:13:05.746Z
 starsUpdatedAt: 2026-09-13T21:23:38.213Z
-updatedAt: 2026-09-13T21:23:38.213Z
+updatedAt: 2026-11-09T07:13:05.746Z

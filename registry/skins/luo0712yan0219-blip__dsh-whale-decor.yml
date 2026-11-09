@@ -21,42 +21,45 @@ install:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
 compatibility:
-  dsh: unverified
+  dsh: ^0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/home.png
+  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/conversation.png
+  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/settings.png
 screenshots: []
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: improve
+    compatibility: pass
     installation: pass
+    installCommand: pass
+    topic: improve
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
     commit: 00920e5768b170872aa02784adc433ae4f0c2f0f
     packageVersion: 0.1.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:39:49.562Z
+    checkedAt: 2026-11-09T07:16:00.837Z
     findings: []
 license:
   code: MIT
-  commercialUse: false
+  commercialUse: true
   notice: 代码MIT；默认PC2005-cloud动画另按其非商业及署名约定使用，未打包私人背景。
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:41.767Z
+metadataUpdatedAt: 2026-11-09T07:16:00.838Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:41.767Z
-marketScreenshots:
-  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/home.png
-  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/conversation.png
-  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/settings.png
+updatedAt: 2026-11-09T07:16:00.838Z

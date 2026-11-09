@@ -22,15 +22,15 @@ install:
   target: github:SoDaZilla-zzz/dsh-tide-ui#b7f6cea136a052bfe5b3cbebcc4e29788b5eb30a
   version: 0.1.0
   commit: b7f6cea136a052bfe5b3cbebcc4e29788b5eb30a
+  desktop:
+    mode: manual-only
+    reason: companion-not-desktop-installable
   companions:
     - package: dsh-liquid-glass-balance-card
       target: github:SoDaZilla-zzz/dsh-liquid-glass-balance-card#3fbca87bf6d68af66f1669c592bae1e6e6ab4463
       version: 0.2.0
       commit: 3fbca87bf6d68af66f1669c592bae1e6e6ab4463
       rowId: liquid-glass-balance-card
-  desktop:
-    mode: manual-only
-    reason: companion-not-desktop-installable
 compatibility:
   dsh: unverified
   platform:
@@ -38,6 +38,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-tide-ui/b7f6cea136a052bfe5b3cbebcc4e29788b5eb30a/preview/light.png
   - https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-tide-ui/b7f6cea136a052bfe5b3cbebcc4e29788b5eb30a/preview/dark.png
+listScreenshot: https://raw.githubusercontent.com/SoDaZilla-zzz/dsh-tide-ui/b7f6cea136a052bfe5b3cbebcc4e29788b5eb30a/preview/light.png
 review:
   compatibility: unverified
   preview: verified
@@ -70,7 +71,7 @@ license:
   commercialUse: true
 featuredRank: 256
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-23T10:27:49.533Z
-metadataUpdatedAt: 2026-08-23T10:27:49.533Z
+releaseUpdatedAt: 2026-11-09T07:18:18.682Z
+metadataUpdatedAt: 2026-11-09T07:18:18.682Z
 starsUpdatedAt: 2026-08-23T10:27:49.533Z
-updatedAt: 2026-08-23T10:27:49.533Z
+updatedAt: 2026-11-09T07:18:18.682Z

@@ -14,16 +14,26 @@ modes:
   - light
   - dark
 install:
-  target: github:alexfengrui/dsh-client-ui-skin-real-madrid#548157967c13fce1dd045ec27ee792b2be457626
+  target: github:alexfengrui/dsh-client-ui-skin-real-madrid#97f28bda0c7a0302e0b37d7f45abebcf84fccc8f
   version: 1.1.0
-  commit: 548157967c13fce1dd045ec27ee792b2be457626
+  commit: 97f28bda0c7a0302e0b37d7f45abebcf84fccc8f
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-client-ui-skin-real-madrid
+    version: 1.1.0
+    integrity: sha512-KV9UCVUn6UebsxYIYtdQxUDa/el8AIShNUQf9P1HiVAHM8ZcRkBYzuHMNwcZDNdM3QmqhcP8D2H9lJNXqTsHbg==
+    repository: https://github.com/alexfengrui/dsh-client-ui-skin-real-madrid
+    gitHead: 97f28bda0c7a0302e0b37d7f45abebcf84fccc8f
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/home.png
+  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/conversation.png
+  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -33,29 +43,29 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 0.1.0-rc.6 完全覆盖（固定版本 97f28bda0c7a0302e0b37d7f45abebcf84fccc8f）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 548157967c13fce1dd045ec27ee792b2be457626
+    commit: 97f28bda0c7a0302e0b37d7f45abebcf84fccc8f
     packageVersion: 1.1.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:39:49.562Z
+    checkedAt: 2026-11-09T07:15:21.706Z
     findings: []
 license:
-  code: MIT
+  code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 代码MIT；内嵌队徽CC BY-NC-SA 4.0，须署名、非商业及相同方式共享；球场照片另适用Unsplash License。
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:40.601Z
+releaseUpdatedAt: 2026-11-09T07:15:21.725Z
+metadataUpdatedAt: 2026-11-09T07:15:21.725Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:40.601Z
-marketScreenshots:
-  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/home.png
-  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/conversation.png
-  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/settings.png
+updatedAt: 2026-11-09T07:15:21.725Z
