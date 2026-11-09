@@ -37,7 +37,8 @@
     "check": "npm run registry && npm run contract:check && npm run typecheck && npm run test && npm run build && npm run build:site && node scripts/preflight.mjs",
     "prepack": "npm run check",
     "contract:check": "node scripts/submission-contract.mjs --check",
-    "completeness": "node scripts/completeness-report.mjs"
+    "completeness": "node scripts/completeness-report.mjs",
+    "completeness:diff": "node scripts/completeness-report.mjs --since"
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1"
