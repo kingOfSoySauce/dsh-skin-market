@@ -9,7 +9,7 @@ import { interceptNotice, isInterceptFailure, SkinMarketSection } from '../../sr
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { Operation } from '../../src/client/types.ts'
 import { methodSent, requestCount, requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
-import { artifactRiskOperation, dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, registerMarketTestDom, visibleWarningDialogs, zh } from '../fixtures/client-market.tsx'
+import { artifactRiskOperation, dshRuntime, incompatibleDesktopSkin, managedDesktopSkin, officialManagement, openSkinCard, registerMarketTestDom, skin, visibleWarningDialogs, zh } from '../fixtures/client-market.tsx'
 
 registerMarketTestDom()
 
@@ -340,7 +340,7 @@ describe('client market recovery', () => {
     expect(screen.getByRole('button', { name: zh['common.installAndUse'] }).hasAttribute('disabled')).toBe(false)
   })
   it.each(['restart', 'waiting'] as const)('keeps a use confirmation in front of a new passive %s prompt without dropping that prompt', async pendingKind => {
-    const incompatible = { ...managedDesktopSkin, compatibility: { dsh: '0.1.0-rc.6', platform: ['web', 'desktop'] } }
+    const incompatible = incompatibleDesktopSkin
     let pending = false
     const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [incompatible] }
       : url.endsWith('/market-update') ? { currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false }

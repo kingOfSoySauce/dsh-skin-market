@@ -22,6 +22,16 @@ export const managedDesktopSkin = {
   install: { ...skin.install, desktop: { mode: 'managed', registry: 'npm', packageName: skin.package, packageVersion: skin.install.version } },
 } satisfies CatalogSkin
 
+export const incompatibleSkin = {
+  ...skin,
+  compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] },
+} satisfies CatalogSkin
+
+export const incompatibleDesktopSkin = {
+  ...managedDesktopSkin,
+  compatibility: { dsh: '0.1.0-rc.6', platform: ['web', 'desktop'] },
+} satisfies CatalogSkin
+
 export const officialManagement = {
   official: true,
   capabilities: { install: { available: true }, update: { available: true }, enable: { available: true }, disable: { available: true }, remove: { available: true } },

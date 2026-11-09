@@ -9,7 +9,7 @@ import { WEB_CLIENT_SETTLE_MS, SkinMarketSection } from '../../src/client/SkinMa
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { CatalogSkin, RuntimeSkin } from '../../src/client/types.ts'
 import { methodSent, requestCount, requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
-import { dshRuntime, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
+import { dshRuntime, incompatibleSkin, openSkinCard, registerMarketTestDom, skin, zh } from '../fixtures/client-market.tsx'
 
 registerMarketTestDom()
 
@@ -349,7 +349,7 @@ describe('client market selection convergence', () => {
     await waitFor(() => expect(screen.queryAllByText(/待重启生效/)).toHaveLength(0))
   })
   it('asks before using an incompatible installed skin and preserves the restart flow after consent', async () => {
-    const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
+    const incompatible = incompatibleSkin
     let activated = false
     const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { skins: [incompatible] }
@@ -375,7 +375,7 @@ describe('client market selection convergence', () => {
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/activate') && init?.method === 'POST')?.[1]?.body))).toEqual({ skinId: incompatible.id, acknowledgeCompatibility: true, compatibilityContext: compatibilityContext(incompatible, { ...dshRuntime, version: '0.1.1-rc.1' }) })
   })
   it('asks separately for an incompatible skin before enabling it as a pinned plugin', async () => {
-    const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
+    const incompatible = incompatibleSkin
     const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { skins: [incompatible] }
       if (url.endsWith('/state')) return { runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] }

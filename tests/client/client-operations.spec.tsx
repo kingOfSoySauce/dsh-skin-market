@@ -11,7 +11,7 @@ import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinIn
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { Operation } from '../../src/client/types.ts'
 import { requestCount, requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
-import { artifactRiskOperation, dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
+import { artifactRiskOperation, dshRuntime, incompatibleSkin, managedDesktopSkin, officialManagement, openSkinCard, registerMarketTestDom, skin, zh } from '../fixtures/client-market.tsx'
 
 registerMarketTestDom()
 
@@ -337,7 +337,7 @@ describe('client market operations', () => {
     expect(retryRequests).toBe(0)
   })
   it('allows only the displayed exact version then asks for use risks only after release-age approval completes installation', async () => {
-    const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
+    const incompatible = incompatibleSkin
     let retryRequests = 0
     let activateRequests = 0
     stubMarketFetch(async (url: string, init?: RequestInit) => {
@@ -379,7 +379,7 @@ describe('client market operations', () => {
   })
   it.each(['install-and-use', 'activate', 'pin'] as const)('combines artifact, compatibility, and first-use risks once when %s reaches use', async mode => {
     window.localStorage.removeItem('dsh-skin-market:activation-warning-accepted')
-    const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
+    const incompatible = incompatibleSkin
     const risk = artifactRiskOperation().failure!.artifactRisk!
     let installed = mode !== 'install-and-use'
     let used = false
@@ -495,7 +495,7 @@ describe('client market operations', () => {
     expect(fetchMock.mock.calls.some(([url]) => url.endsWith('/retry') || url.endsWith('/activate'))).toBe(false)
   })
   it('approves only on an explicit artifact risk click, prevents duplicate requests, and preserves compatibility and install-and-use', async () => {
-    const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
+    const incompatible = incompatibleSkin
     const operation = artifactRiskOperation()
     let retryRequests = 0
     let activateRequests = 0
@@ -638,7 +638,7 @@ describe('client market operations', () => {
     { kind: 'update', action: 'approve-release-age', failureKind: 'release-age' },
     { kind: 'install', action: 'approve-build', failureKind: 'build-approval' },
   ] as const)('does not ask optional use confirmation during a $kind $action retry', async ({ kind, action, failureKind }) => {
-    const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
+    const incompatible = incompatibleSkin
     let retries = 0
     const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { skins: [incompatible] }

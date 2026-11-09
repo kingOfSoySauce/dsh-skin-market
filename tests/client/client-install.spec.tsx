@@ -10,7 +10,7 @@ import { createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPr
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { CatalogSkin } from '../../src/client/types.ts'
 import { methodSent, requestCount, requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
-import { dshRuntime, managedDesktopSkin, officialManagement, openSkinCard, skin, registerMarketTestDom, zh } from '../fixtures/client-market.tsx'
+import { dshRuntime, incompatibleDesktopSkin, incompatibleSkin, managedDesktopSkin, officialManagement, openSkinCard, registerMarketTestDom, skin, zh } from '../fixtures/client-market.tsx'
 
 registerMarketTestDom()
 
@@ -446,7 +446,7 @@ describe('client market install and use', () => {
     expect(screen.queryByText('测试皮肤 已切换，请手动重启 Desktop App 后生效')).toBeNull()
   })
   it('installs without optional warnings and asks once only before the install-and-use activation', async () => {
-    const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
+    const incompatible = incompatibleSkin
     const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { skins: [incompatible] }
       if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
@@ -476,7 +476,7 @@ describe('client market install and use', () => {
     expect(screen.queryByRole('dialog', { name: zh['common.switchConfirmation'] })).toBeNull()
   })
   it.each(['discovery', 'detail'])('updates an incompatible skin in the %s view without optional risk confirmation', async entry => {
-    const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
+    const incompatible = incompatibleSkin
     const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { skins: [incompatible] }
       if (url.endsWith('/state')) return { runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }] }
@@ -494,7 +494,7 @@ describe('client market install and use', () => {
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/update') && init?.method === 'POST')?.[1]?.body))).toEqual({ skinId: skin.id })
   })
   it('migrates after source confirmation without an optional compatibility warning', async () => {
-    const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
+    const incompatible = incompatibleSkin
     const sourceMigration = { target: 'skin@1.0.0', currentSource: skin.install.target }
     const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { skins: [incompatible] }
@@ -511,7 +511,7 @@ describe('client market install and use', () => {
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/migrate') && init?.method === 'POST')?.[1]?.body))).toEqual({ skinId: skin.id })
   })
   it('installs on official Desktop before asking once for automatic activation', async () => {
-    const incompatible = { ...managedDesktopSkin, compatibility: { dsh: '0.1.0-rc.6', platform: ['web', 'desktop'] } }
+    const incompatible = incompatibleDesktopSkin
     let installed = false
     const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) return { skins: [incompatible] }
@@ -535,7 +535,7 @@ describe('client market install and use', () => {
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/activate') && init?.method === 'POST')?.[1]?.body))).toEqual({ skinId: skin.id, acknowledgeCompatibility: true, compatibilityContext: compatibilityContext(incompatible, { ...dshRuntime, version: '0.2.0-rc.2' }) })
   })
   it.each(['unmount', 'profile-busy'])('does not start an incompatible activation if %s interrupts its confirmation', async interruption => {
-    const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
+    const incompatible = incompatibleSkin
     let profileBusy = false
     const fetchMock = stubMarketFetch(async (url: string, _init?: RequestInit) => (url.endsWith('/catalog') ? { skins: [incompatible] } : url.endsWith('/state') ? { skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }], runtime: dshRuntime, ...(profileBusy && { profileBusy: '当前 profile 正在等待宿主确认' }) } : {}))
     const view = render(<SkinMarketSection t={key => key} />)
