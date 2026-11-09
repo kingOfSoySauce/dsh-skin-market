@@ -3,20 +3,18 @@ name:
   zh: dsh-theme-mineradio
   en: dsh-theme-mineradio
 author: dhicoc
-description: A cinematic visual-radio glass theme for DeepSeek Harness (DSH) Desktop
-  — port of the Mineradio music player's champagne-glass aesthetic. Fluid or wallpaper
-  backdrop, light-glass panels, custom knobs, and the drifting-glow cursor treatment.
+description: A cinematic visual-radio glass theme for DeepSeek Harness (DSH) Desktop — port of the Mineradio music player's champagne-glass aesthetic. Fluid or wallpaper backdrop, light-glass panels, custom knobs, and the drifting-glow cursor treatment.
 repo: https://github.com/dhicoc/dsh-theme-mineradio
 package: dsh-theme-mineradio
 rowId: dsh-theme-mineradio
 category: skin
 tags:
-- appearance
-- animation
-- wallpaper
+  - appearance
+  - animation
+  - wallpaper
 modes:
-- light
-- dark
+  - light
+  - dark
 install:
   target: github:dhicoc/dsh-theme-mineradio#60ac976b9fb761ba6ded8f0ddf3a51459b82ffea
   version: 3.0.5
@@ -24,10 +22,16 @@ install:
   desktop:
     mode: manual-only
     reason: 当前仅完成 DSH Web 隔离运行验收；Desktop 安装路径尚未单独核验。
+  npm:
+    name: dsh-theme-mineradio
+    version: 3.0.5
+    integrity: sha512-PU8shoC2C+zIkLvnD0Ol1Xp9Tr4BzL3udabxhYPPR7f51RX9JF8NQHu0Q3G34M/54RR68wqo3stkovLpYUCa5A==
+    repository: https://github.com/dhicoc/dsh-theme-mineradio
+    gitHead: 60ac976b9fb761ba6ded8f0ddf3a51459b82ffea
 compatibility:
   dsh: 0.1.7-rc.2
   platform:
-  - web
+    - web
 marketScreenshots:
   - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.png
   - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/conversation.png
@@ -43,25 +47,34 @@ screenshots:
   - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/preset-mica-midnight-vivid.gif
 listScreenshot: skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.gif
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
-    topic: improve
+    topic: pass
   suggestions:
-  - 隔离运行证据固定在 DSH 0.1.7-rc.2；发布前仍需按目标宿主版本复核。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.7-rc.2 未被本次检测范围 ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.2.0-rc.2 完全覆盖（固定版本 60ac976b9fb761ba6ded8f0ddf3a51459b82ffea）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 60ac976b9fb761ba6ded8f0ddf3a51459b82ffea
+    packageVersion: 3.0.5
+    scannerVersion: static-v2
+    dshVersion: ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:13:07.379Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 20
-releaseUpdatedAt: '2026-11-03T19:20:00+08:00'
-metadataUpdatedAt: '2026-11-03T19:20:00+08:00'
-starsUpdatedAt: '2026-11-03T19:20:00+08:00'
-updatedAt: '2026-11-03T19:20:00+08:00'
+releaseUpdatedAt: 2026-11-09T07:13:07.840Z
+metadataUpdatedAt: 2026-11-09T07:13:07.840Z
+starsUpdatedAt: 2026-11-03T19:20:00+08:00
+updatedAt: 2026-11-09T07:13:07.840Z

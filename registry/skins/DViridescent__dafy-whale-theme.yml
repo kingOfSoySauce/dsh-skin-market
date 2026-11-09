@@ -17,12 +17,16 @@ install:
   target: github:DViridescent/dafy-whale-theme#99e8c571c40eee8d2e0599af8eddfcbf4f47fc89
   version: 1.2.0
   commit: 99e8c571c40eee8d2e0599af8eddfcbf4f47fc89
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/DViridescent/dafy-whale-theme/99e8c571c40eee8d2e0599af8eddfcbf4f47fc89/preview.png
+listScreenshot: https://raw.githubusercontent.com/DViridescent/dafy-whale-theme/99e8c571c40eee8d2e0599af8eddfcbf4f47fc89/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -37,14 +41,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 99e8c571c40eee8d2e0599af8eddfcbf4f47fc89
+    packageVersion: 1.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:13:13.887Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 43
-starsSnapshot: 8
-releaseUpdatedAt: 2026-08-16 13:47:59.806000+00:00
-metadataUpdatedAt: 2026-08-20T06:32:23.101Z
-starsUpdatedAt: 2026-08-28T04:08:36.830Z
-updatedAt: 2026-08-28T04:08:36.830Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/DViridescent__dafy-whale-theme/99e8c571c40eee8d2e0599af8eddfcbf4f47fc89/7794c6478864.png
+starsSnapshot: 14
+releaseUpdatedAt: 2026-11-09T07:13:13.906Z
+metadataUpdatedAt: 2026-11-09T07:13:13.906Z
+starsUpdatedAt: 2026-11-09T07:13:13.906Z
+updatedAt: 2026-11-09T07:13:13.906Z

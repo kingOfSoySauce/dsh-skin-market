@@ -17,12 +17,25 @@ install:
   target: github:haoranx98/dsh-skin-galaxy#7f72079d38ca4fb2ee2c9a0e285018feadbcfc83
   version: 0.1.5
   commit: 7f72079d38ca4fb2ee2c9a0e285018feadbcfc83
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-skin-galaxy
+    packageVersion: 0.1.5
+    integrity: sha512-Oef64kB6d399mcaXy73rSBCXLrmys6FRZL79EDB3NZ3G2InbZ7jHLOqUDZsiivvb2mGa5guYrvBUoMHMRJg9iQ==
+  npm:
+    name: dsh-skin-galaxy
+    version: 0.1.5
+    integrity: sha512-Oef64kB6d399mcaXy73rSBCXLrmys6FRZL79EDB3NZ3G2InbZ7jHLOqUDZsiivvb2mGa5guYrvBUoMHMRJg9iQ==
+    repository: https://github.com/haoranx98/dsh-skin-galaxy
+    gitHead: 7f72079d38ca4fb2ee2c9a0e285018feadbcfc83
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/haoranx98/dsh-skin-galaxy/7f72079d38ca4fb2ee2c9a0e285018feadbcfc83/screenshots/dsh-galaxy.gif
+listScreenshot: https://raw.githubusercontent.com/haoranx98/dsh-skin-galaxy/7f72079d38ca4fb2ee2c9a0e285018feadbcfc83/screenshots/dsh-galaxy.gif
 review:
   compatibility: unverified
   preview: verified
@@ -37,12 +50,20 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 7f72079d38ca4fb2ee2c9a0e285018feadbcfc83
+    packageVersion: 0.1.5
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:15:41.859Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 0
-releaseUpdatedAt: 2026-11-06T18:08:49.862Z
-metadataUpdatedAt: 2026-11-06T18:08:49.862Z
-starsUpdatedAt: 2026-11-06T18:08:49.862Z
-updatedAt: 2026-11-06T18:08:49.862Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-09T07:15:42.053Z
+metadataUpdatedAt: 2026-11-09T07:15:42.053Z
+starsUpdatedAt: 2026-11-09T07:15:42.053Z
+updatedAt: 2026-11-09T07:15:42.053Z

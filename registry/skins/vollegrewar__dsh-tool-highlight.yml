@@ -35,6 +35,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/vollegrewar/dsh-tool-highlight/f5f0e89101de1b24972f94ab0baf8cc0891f1baf/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/vollegrewar/dsh-tool-highlight/f5f0e89101de1b24972f94ab0baf8cc0891f1baf/docs/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -63,7 +64,6 @@ license:
 featuredRank: 1100
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-18T09:49:06.865Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-09T07:18:34.002Z
 starsUpdatedAt: 2026-09-07T21:59:04.048Z
-updatedAt: 2026-10-18T09:49:06.865Z
-listScreenshot: https://raw.githubusercontent.com/vollegrewar/dsh-tool-highlight/f5f0e89101de1b24972f94ab0baf8cc0891f1baf/docs/preview.png
+updatedAt: 2026-11-09T07:18:34.002Z

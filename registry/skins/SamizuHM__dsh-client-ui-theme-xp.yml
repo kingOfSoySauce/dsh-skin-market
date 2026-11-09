@@ -37,6 +37,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/SamizuHM/dsh-client-ui-theme-xp/3cc412f4e877c127dea2e5b6e3413e5ddc95ce97/docs/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/SamizuHM/dsh-client-ui-theme-xp/3cc412f4e877c127dea2e5b6e3413e5ddc95ce97/docs/screenshot.png
 review:
   compatibility: unverified
   preview: verified
@@ -65,6 +66,6 @@ license:
 featuredRank: 28
 starsSnapshot: 8
 releaseUpdatedAt: 2026-08-23T05:28:21.070Z
-metadataUpdatedAt: 2026-08-23T05:28:21.070Z
+metadataUpdatedAt: 2026-11-09T07:13:29.478Z
 starsUpdatedAt: 2026-11-04T00:04:05.761Z
-updatedAt: 2026-11-04T00:04:05.761Z
+updatedAt: 2026-11-09T07:13:29.478Z

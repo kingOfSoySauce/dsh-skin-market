@@ -15,22 +15,22 @@ modes:
   - light
   - dark
 install:
-  target: github:Chael-Chael/dsh-ascii-whales#bb651813fe6379a5ef3535980c4c66df12c91f04
-  version: 0.1.5
-  commit: bb651813fe6379a5ef3535980c4c66df12c91f04
+  target: github:Chael-Chael/dsh-ascii-whales#fdcc976f7d66245b7e0c3d5f81018c5a109d56a6
+  version: 0.1.6
+  commit: fdcc976f7d66245b7e0c3d5f81018c5a109d56a6
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-ascii-whales
-    packageVersion: 0.1.5
-    integrity: sha512-UQXy2xtMOJfsnJX8DocAU2AGmvFCLVpuUnuU3UBmqFzVjZgm6JwO/vUE9hX+vwFI4so2zFv9Dx540Vkn2OE/ig==
-  allowBuild: dsh-ascii-whales@https://codeload.github.com/Chael-Chael/dsh-ascii-whales/tar.gz/bb651813fe6379a5ef3535980c4c66df12c91f04
+    packageVersion: 0.1.6
+    integrity: sha512-YoSZmIq0y7NjlxnUsQMjydnqyodWzF+fJZhQKFYzMNTHAKqf5K581tmyVZtPmZLkfyN+1Bnr4P30X/HNvrZshg==
+  allowBuild: dsh-ascii-whales@https://codeload.github.com/Chael-Chael/dsh-ascii-whales/tar.gz/fdcc976f7d66245b7e0c3d5f81018c5a109d56a6
   npm:
     name: dsh-ascii-whales
-    version: 0.1.5
-    integrity: sha512-UQXy2xtMOJfsnJX8DocAU2AGmvFCLVpuUnuU3UBmqFzVjZgm6JwO/vUE9hX+vwFI4so2zFv9Dx540Vkn2OE/ig==
+    version: 0.1.6
+    integrity: sha512-YoSZmIq0y7NjlxnUsQMjydnqyodWzF+fJZhQKFYzMNTHAKqf5K581tmyVZtPmZLkfyN+1Bnr4P30X/HNvrZshg==
     repository: https://github.com/Chael-Chael/dsh-ascii-whales
-    gitHead: bb651813fe6379a5ef3535980c4c66df12c91f04
+    gitHead: fdcc976f7d66245b7e0c3d5f81018c5a109d56a6
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
@@ -57,13 +57,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: bb651813fe6379a5ef3535980c4c66df12c91f04
-    packageVersion: 0.1.5
+    commit: fdcc976f7d66245b7e0c3d5f81018c5a109d56a6
+    packageVersion: 0.1.6
     scannerVersion: static-v2
     dshVersion: 0.2.0-rc.2
     mode: static
     result: unknown
-    checkedAt: 2026-10-26T01:51:21.678Z
+    checkedAt: 2026-11-09T07:13:11.803Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -72,7 +72,7 @@ license:
   commercialUse: false
 featuredRank: 996
 starsSnapshot: 15
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:24.769Z
+releaseUpdatedAt: 2026-11-09T07:13:15.555Z
+metadataUpdatedAt: 2026-11-09T07:13:15.555Z
 starsUpdatedAt: 2026-11-09T00:13:22.300Z
-updatedAt: 2026-11-09T00:13:22.300Z
+updatedAt: 2026-11-09T07:13:15.555Z

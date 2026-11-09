@@ -34,18 +34,17 @@ listScreenshot: https://raw.githubusercontent.com/noexcs/dsh-skin-glass/085df7da
 review:
   compatibility: unverified
   preview: verified
-  installation: manual-only
+  installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
     compatibility: improve
-    installation: improve
+    installation: pass
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
   scan:
     commit: 085df7daf0ebc65f721e66896406bb9877489b59
     packageVersion: 0.1.0
@@ -60,6 +59,6 @@ license:
 featuredRank: 116
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:34:30.514Z
-metadataUpdatedAt: 2026-11-09T00:18:31.720Z
+metadataUpdatedAt: 2026-11-09T07:17:56.484Z
 starsUpdatedAt: 2026-09-09T21:41:05.801Z
-updatedAt: 2026-11-09T00:18:31.720Z
+updatedAt: 2026-11-09T07:17:56.484Z

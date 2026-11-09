@@ -17,18 +17,18 @@ install:
   target: github:Respawn-ID/dsh-rhine-splash#9808714bf87bae1066e74167039b820aa4f7cbd2
   version: 0.2.9
   commit: 9808714bf87bae1066e74167039b820aa4f7cbd2
-  npm:
-    name: dsh-rhine-splash
-    version: 0.2.9
-    integrity: sha512-2andVyVL/Nb9mupxEjhYSFAHUc1CXihHSq9BvtMCWDAEoSF1CmstbAE2EgMzOu/lWuSNvq2N6WyX9xrv0h0giw==
-    repository: https://github.com/Respawn-ID/dsh-rhine-splash
-    gitHead: 9808714bf87bae1066e74167039b820aa4f7cbd2
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-rhine-splash
     packageVersion: 0.2.9
     integrity: sha512-2andVyVL/Nb9mupxEjhYSFAHUc1CXihHSq9BvtMCWDAEoSF1CmstbAE2EgMzOu/lWuSNvq2N6WyX9xrv0h0giw==
+  npm:
+    name: dsh-rhine-splash
+    version: 0.2.9
+    integrity: sha512-2andVyVL/Nb9mupxEjhYSFAHUc1CXihHSq9BvtMCWDAEoSF1CmstbAE2EgMzOu/lWuSNvq2N6WyX9xrv0h0giw==
+    repository: https://github.com/Respawn-ID/dsh-rhine-splash
+    gitHead: 9808714bf87bae1066e74167039b820aa4f7cbd2
 compatibility:
   dsh: 0.2.1-rc.5
   platform:
@@ -44,20 +44,30 @@ review:
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 9808714bf87bae1066e74167039b820aa4f7cbd2
+    packageVersion: 0.2.9
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:13:02.277Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 3
-releaseUpdatedAt: 2026-11-04T02:25:39.259Z
-metadataUpdatedAt: 2026-11-04T02:25:39.259Z
-starsUpdatedAt: 2026-10-18T21:26:30.671Z
-updatedAt: 2026-11-04T02:25:39.259Z
+starsSnapshot: 24
+releaseUpdatedAt: 2026-11-09T07:13:02.774Z
+metadataUpdatedAt: 2026-11-09T07:13:02.774Z
+starsUpdatedAt: 2026-11-09T07:13:02.774Z
+updatedAt: 2026-11-09T07:13:02.774Z

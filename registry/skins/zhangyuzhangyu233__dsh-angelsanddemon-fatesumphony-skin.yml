@@ -28,6 +28,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/zhangyuzhangyu233__dsh-angelsanddemon-fatesumphony-skin/32f389260a6bef7af235fda58ad6acd75e054dda/home.png
+  - skin-screenshots/zhangyuzhangyu233__dsh-angelsanddemon-fatesumphony-skin/32f389260a6bef7af235fda58ad6acd75e054dda/conversation.png
+  - skin-screenshots/zhangyuzhangyu233__dsh-angelsanddemon-fatesumphony-skin/32f389260a6bef7af235fda58ad6acd75e054dda/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -59,10 +63,6 @@ license:
 featuredRank: 199
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:32:46.817Z
-metadataUpdatedAt: 2026-10-30T03:54:29.472Z
+metadataUpdatedAt: 2026-11-09T07:18:57.294Z
 starsUpdatedAt: 2026-09-09T21:41:26.652Z
-updatedAt: 2026-10-30T03:54:29.472Z
-marketScreenshots:
-  - skin-screenshots/zhangyuzhangyu233__dsh-angelsanddemon-fatesumphony-skin/32f389260a6bef7af235fda58ad6acd75e054dda/home.png
-  - skin-screenshots/zhangyuzhangyu233__dsh-angelsanddemon-fatesumphony-skin/32f389260a6bef7af235fda58ad6acd75e054dda/conversation.png
-  - skin-screenshots/zhangyuzhangyu233__dsh-angelsanddemon-fatesumphony-skin/32f389260a6bef7af235fda58ad6acd75e054dda/settings.png
+updatedAt: 2026-11-09T07:18:57.294Z

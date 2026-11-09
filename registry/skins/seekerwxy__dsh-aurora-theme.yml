@@ -26,6 +26,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/home.png
+  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/conversation.png
+  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/settings.png
 screenshots:
   - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/home.gif
 review:
@@ -58,10 +62,6 @@ license:
 featuredRank: 119
 starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:34:52.309Z
-metadataUpdatedAt: 2026-10-30T03:54:21.159Z
+metadataUpdatedAt: 2026-11-09T07:18:12.380Z
 starsUpdatedAt: 2026-09-09T21:41:09.890Z
-updatedAt: 2026-10-30T03:54:21.159Z
-marketScreenshots:
-  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/home.png
-  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/conversation.png
-  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/settings.png
+updatedAt: 2026-11-09T07:18:12.380Z

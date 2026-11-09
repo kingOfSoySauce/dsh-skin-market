@@ -6,7 +6,7 @@ author: Small-tailqwq
 description: DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。
 repo: https://github.com/Small-tailqwq/dsh-deep-whale
 subpath: maid-atelier
-package: "@dsh-external/dsh-client-ui-skin-maid-atelier"
+package: "@smalltailqwq/dsh-client-ui-skin-maid-atelier"
 rowId: ui-skin-maid-atelier
 category: skin
 tags:
@@ -20,18 +20,24 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#b693d2c224a0a6fb5b621e7cc1284f20d9849c1c&path:/maid-atelier
-  version: 0.0.1
-  commit: b693d2c224a0a6fb5b621e7cc1284f20d9849c1c
+  target: github:Small-tailqwq/dsh-deep-whale#d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b&path:/maid-atelier
+  version: 0.1.10
+  commit: d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b
+  desktop:
+    mode: manual-only
+    reason: companion-not-desktop-installable
   companions:
     - package: "@dsh-external/dsh-client-ui-skin-deep-whale-manager"
       target: github:Small-tailqwq/dsh-deep-whale#b693d2c224a0a6fb5b621e7cc1284f20d9849c1c&path:/skin-manager
-      version: "0.1.0"
+      version: 0.1.0
       commit: b693d2c224a0a6fb5b621e7cc1284f20d9849c1c
       rowId: ui-skin-deep-whale-manager
-  desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+  npm:
+    name: "@smalltailqwq/dsh-client-ui-skin-maid-atelier"
+    version: 0.1.10
+    integrity: sha512-eQFyZqzmTJmHveYwIESa8brF2w9rN4Cge+tw88T0SIEMkdN1FSCoQ+HZioK+Y4vr5qyNUaUBmjpmoBfSSufBgA==
+    repository: https://github.com/Small-tailqwq/dsh-deep-whale
+    gitHead: d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -39,6 +45,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/873f5c6d7f52aa4e4283a5ffd5598229595184da/maid-atelier/preview/light.webp
   - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/873f5c6d7f52aa4e4283a5ffd5598229595184da/maid-atelier/preview/dark.webp
+listScreenshot: https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b/maid-atelier/preview/light.webp
 review:
   compatibility: verified
   preview: verified
@@ -46,30 +53,29 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: b693d2c224a0a6fb5b621e7cc1284f20d9849c1c
-    packageVersion: 0.0.1
+    commit: d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b
+    packageVersion: 0.1.10
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:26:45.364Z
+    checkedAt: 2026-11-09T07:12:30.835Z
     findings: []
 license:
-  code: CC-BY-NC-SA-4.0
+  code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
 featuredRank: 2
-starsSnapshot: 1607
-releaseUpdatedAt: 2026-08-23T05:26:45.427Z
-metadataUpdatedAt: 2026-08-23T05:26:45.427Z
-starsUpdatedAt: 2026-08-23T05:26:45.427Z
-updatedAt: 2026-08-23T05:26:45.427Z
+starsSnapshot: 3070
+releaseUpdatedAt: 2026-11-09T07:12:32.056Z
+metadataUpdatedAt: 2026-11-09T07:12:32.056Z
+starsUpdatedAt: 2026-11-09T07:12:32.056Z
+updatedAt: 2026-11-09T07:12:32.056Z
