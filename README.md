@@ -187,7 +187,7 @@ npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web --rollback
 | --- | --- | --- |
 | 作者写（薄条目） | `url`、`subpath`、`name`、`author`、`description`、`screenshots` | 只写这些；`name` 写了就必须同时有 `zh` 和 `en`。 |
 | CI 自动补 | `package`、`rowId`、`install`、`license`、`compatibility`、`category`、`tags`、`modes` | 不要手写；写了会被 schema 拒绝。 |
-| 软必填（不阻断，进补全队列） | 可用预览图（上游或实机）、双语展示名 / 描述、动效 GIF（motion）、启动 launchGif（splash） | 缺了仍可合并，但会进补全队列并在每日报告出现。 |
+| 软必填（不阻断，进补全队列） | 可用预览图（上游或实机）、双语展示名 / 描述、动效 GIF（motion）、启动 launchGif（splash） | 缺了仍可合并，但会记录在每日完整性报告；补全队列接入后自动进队。 |
 | 推荐（只提示） | 实机截图 `marketScreenshots`、封面 `listScreenshot`、WebP `media`、README 安装命令 / 版本范围 / `dsh-plugin` topic、Desktop 支持 | 不阻断合并。 |
 <!-- submission-contract:END -->
 

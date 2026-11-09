@@ -187,7 +187,7 @@ A new entry is a thin YAML file; fields and priority are in the table below. CI 
 | --- | --- | --- |
 | Author (thin entry) | `url`, `subpath`, `name`, `author`, `description`, `screenshots` | Write only these. If you write `name`, include both `zh` and `en`. |
 | Filled by CI | `package`, `rowId`, `install`, `license`, `compatibility`, `category`, `tags`, `modes` | Do not write these; the schema rejects them. |
-| Soft-required (non-blocking, enters the completion queue) | a usable preview image (upstream or captured), bilingual display name / description, motion GIF, splash launchGif | An entry may merge without them, but it enters the completion queue and the daily report. |
+| Soft-required (non-blocking, enters the completion queue) | a usable preview image (upstream or captured), bilingual display name / description, motion GIF, splash launchGif | An entry may merge without them; it is recorded in the daily completeness report and enters the completion queue once enabled. |
 | Recommended (advisory only) | captured `marketScreenshots`, cover `listScreenshot`, WebP `media`, README install command / version range / `dsh-plugin` topic, Desktop support | Never blocks a merge. |
 <!-- submission-contract:END -->
 

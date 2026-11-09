@@ -53,7 +53,7 @@ export function renderBlock(contract, locale) {
         '| --- | --- | --- |',
         `| 作者写（薄条目） | ${author} | 只写这些；\`name\` 写了就必须同时有 \`zh\` 和 \`en\`。 |`,
         `| CI 自动补 | ${auto} | 不要手写；写了会被 schema 拒绝。 |`,
-        `| 软必填（不阻断，进补全队列） | ${soft} | 缺了仍可合并，但会进补全队列并在每日报告出现。 |`,
+        `| 软必填（不阻断，进补全队列） | ${soft} | 缺了仍可合并，但会记录在每日完整性报告；补全队列接入后自动进队。 |`,
         `| 推荐（只提示） | ${recommended} | 不阻断合并。 |`,
       ]
     : [
@@ -61,7 +61,7 @@ export function renderBlock(contract, locale) {
         '| --- | --- | --- |',
         `| Author (thin entry) | ${author} | Write only these. If you write \`name\`, include both \`zh\` and \`en\`. |`,
         `| Filled by CI | ${auto} | Do not write these; the schema rejects them. |`,
-        `| Soft-required (non-blocking, enters the completion queue) | ${soft} | An entry may merge without them, but it enters the completion queue and the daily report. |`,
+        `| Soft-required (non-blocking, enters the completion queue) | ${soft} | An entry may merge without them; it is recorded in the daily completeness report and enters the completion queue once enabled. |`,
         `| Recommended (advisory only) | ${recommended} | Never blocks a merge. |`,
       ]
   return lines.join('\n')
@@ -71,11 +71,11 @@ export function renderBlock(contract, locale) {
 /** Turn Ajv errors into one actionable sentence for thin submissions. */
 export function schemaErrorHint(contract, errors = []) {
   const missing = errors.filter(error => error.keyword === 'required').map(error => error.params?.missingProperty).filter(Boolean)
-  if (missing.includes('name')) return 'name 必须同时有 zh 和 en；薄条目里写了 name 就两个都写。'
+  if (missing.includes('name')) return 'name 必须同时有 zh 和 en。'
   const extra = errors.find(error => error.keyword === 'additionalProperties')
   if (extra) return `薄条目只允许这些字段：${contract.authorFields.map(field => '`' + field + '`').join('、')}；其余由 CI 补。`
   if (errors.some(error => String(error.instancePath ?? '').startsWith('/name'))) return 'name.zh 与 name.en 都必须是非空字符串。'
-  if (missing.length) return `缺少字段：${[...new Set(missing)].join('、')}；薄条目补不齐时先检查 package.json 与 cordis.patch.yml。`
+  if (missing.length) return `缺少字段：${[...new Set(missing)].join('、')}；若来自薄条目，先检查 package.json 与 cordis.patch.yml。`
   return ''
 }
 
