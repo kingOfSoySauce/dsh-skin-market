@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T08:05:28.430Z",
+  "generatedAt": "2026-11-09T08:33:50.083Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -17709,7 +17709,7 @@
       "description": "DeepSeek Harness 主题选择插件：管理应用主题与已安装主题插件，同一时间仅一个主题生效。",
       "repo": "https://github.com/yhPrime/dsh-theme-picker",
       "package": "dsh-theme-picker",
-      "rowId": "dsh-theme-picker",
+      "rowId": "theme-picker",
       "category": "skin",
       "tags": [
         "token-theme"
@@ -17774,9 +17774,9 @@
       "featuredRank": 165,
       "starsSnapshot": 0,
       "releaseUpdatedAt": "2026-11-09T07:18:47.703Z",
-      "metadataUpdatedAt": "2026-11-09T07:18:47.703Z",
+      "metadataUpdatedAt": "2026-11-09T08:11:05.394Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.801Z",
-      "updatedAt": "2026-11-09T07:18:47.703Z",
+      "updatedAt": "2026-11-09T08:11:05.394Z",
       "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/home.png",
       "media": {
         "list": {
@@ -34660,7 +34660,7 @@
       "description": "DeepSeek Harness 主题皮肤：启动画面、动态背景与主题切换器复合包。",
       "repo": "https://github.com/657793814/dsh-abyss-skin",
       "package": "dsh-abyss-skin",
-      "rowId": "657793814-dsh-abyss-skin",
+      "rowId": "dsh-abyss-skin",
       "category": "skin",
       "tags": [
         "appearance",
@@ -34701,20 +34701,38 @@
       "review": {
         "compatibility": "verified",
         "preview": "verified",
-        "installation": "verified"
+        "installation": "manual-only"
       },
       "health": {
         "status": "improvements",
         "checks": {
           "readmeScreenshots": "pass",
-          "compatibility": "pass",
-          "installation": "pass",
+          "compatibility": "improve",
+          "installation": "improve",
           "installCommand": "pass",
           "topic": "improve"
         },
         "suggestions": [
-          "运行 GIF 实测 92 帧 / 11.51 秒；固定在 DSH 0.1.7-rc.2。"
-        ]
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。",
+          "固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。"
+        ],
+        "scan": {
+          "commit": "ed50e81c34948798cb9cd15340c7290850125781",
+          "packageVersion": "1.6.0",
+          "scannerVersion": "static-v2",
+          "dshVersion": "0.1.7-rc.2",
+          "mode": "static",
+          "result": "unknown",
+          "checkedAt": "2026-11-09T08:05:45.760Z",
+          "findings": [
+            {
+              "code": "client-source-unavailable",
+              "message": "无法读取固定版本的 client 入口，静态扫描结果未知。"
+            }
+          ]
+        }
       },
       "license": {
         "code": "MIT",
@@ -34723,9 +34741,9 @@
       "featuredRank": 1000,
       "starsSnapshot": 1,
       "releaseUpdatedAt": "2026-11-04T14:29:50+08:00",
-      "metadataUpdatedAt": "2026-11-04T14:29:50+08:00",
+      "metadataUpdatedAt": "2026-11-09T08:05:50.629Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-04T14:29:50+08:00"
+      "updatedAt": "2026-11-09T08:05:50.629Z"
     },
     {
       "id": "6shenhonghong9.dsh-startup-screen",
@@ -35369,7 +35387,7 @@
       "description": "🐋 鲸鱼娘桌宠 · Whale Girl Live2D —— DSH（DeepSeek Harness）Web 界面里的 Live2D 桌宠：跟着 agent 的真实状态换表情与动作，点一下就能直接跟 agent 说话，右键是钱包。A Live2D desktop pet for the DSH Web UI. 安装 Install: dsh plugin --profile web add github:Andersen216/dsh-whale-girl-live2d",
       "repo": "https://github.com/Andersen216/dsh-whale-girl-live2d",
       "package": "dsh-whale-girl-live2d",
-      "rowId": "dsh-whale-girl-live2d",
+      "rowId": "dsh-live2d-pet",
       "category": "pet",
       "tags": [
         "appearance",
@@ -35399,24 +35417,44 @@
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Andersen216__dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/conversation.png",
         "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Andersen216__dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/settings.png"
       ],
-      "screenshots": [],
+      "screenshots": [
+        "https://raw.githubusercontent.com/Andersen216/dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/docs/screenshots/01-%E5%BE%85%E6%9C%BA.jpg"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/Andersen216/dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/docs/screenshots/01-%E5%BE%85%E6%9C%BA.jpg",
       "review": {
         "compatibility": "verified",
         "preview": "verified",
-        "installation": "verified"
+        "installation": "manual-only"
       },
       "health": {
         "status": "improvements",
         "checks": {
           "readmeScreenshots": "pass",
-          "compatibility": "pass",
-          "installation": "pass",
+          "compatibility": "improve",
+          "installation": "improve",
           "installCommand": "pass",
-          "topic": "improve"
+          "topic": "pass"
         },
         "suggestions": [
-          "隔离运行证据固定在 DSH 0.1.7-rc.2；发布前仍需按目标宿主版本复核。"
-        ]
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。",
+          "固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。"
+        ],
+        "scan": {
+          "commit": "f977bef508690e75ba6535cd8f4ce18e7f6ba9b0",
+          "packageVersion": "0.4.6",
+          "scannerVersion": "static-v2",
+          "dshVersion": "0.1.7-rc.2",
+          "mode": "static",
+          "result": "unknown",
+          "checkedAt": "2026-11-09T08:05:55.684Z",
+          "findings": [
+            {
+              "code": "client-source-unavailable",
+              "message": "无法读取固定版本的 client 入口，静态扫描结果未知。"
+            }
+          ]
+        }
       },
       "license": {
         "code": "MIT",
@@ -35425,27 +35463,18 @@
       "featuredRank": 1000,
       "starsSnapshot": 92,
       "releaseUpdatedAt": "2026-11-03T19:20:00+08:00",
-      "metadataUpdatedAt": "2026-11-03T19:20:00+08:00",
-      "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-03T19:20:00+08:00",
-      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Andersen216__dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/home.png",
+      "metadataUpdatedAt": "2026-11-09T08:05:56.313Z",
+      "starsUpdatedAt": "2026-11-09T08:05:56.313Z",
+      "updatedAt": "2026-11-09T08:05:56.313Z",
       "media": {
         "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6f0d68ddf12b502cc4bb349f21c2182a.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6f0d68ddf12b502cc4bb349f21c2182a.full.webp"
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/27e6fbe16708a502fc6db88b72bbb3ad.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/27e6fbe16708a502fc6db88b72bbb3ad.full.webp"
         },
         "screenshots": [
           {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6f0d68ddf12b502cc4bb349f21c2182a.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6f0d68ddf12b502cc4bb349f21c2182a.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1a94c886ec349260de53cca84db22f57.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1a94c886ec349260de53cca84db22f57.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0817c9535c1404c00921c7b069de0fe2.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0817c9535c1404c00921c7b069de0fe2.full.webp"
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/27e6fbe16708a502fc6db88b72bbb3ad.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/27e6fbe16708a502fc6db88b72bbb3ad.full.webp"
           }
         ]
       }
@@ -41144,7 +41173,7 @@
       "description": "16 套 DeepSeek Harness Web GUI 主题皮肤，覆盖 Catppuccin、Gruvbox、Everforest、Nord、Dracula 等配色。",
       "repo": "https://github.com/math-lrz/dsh-theme-pack",
       "package": "dsh-theme-pack",
-      "rowId": "math-lrz-dsh-theme-pack",
+      "rowId": "dsh-theme-pack",
       "category": "skin",
       "tags": [
         "appearance",
@@ -41174,23 +41203,34 @@
         "https://raw.githubusercontent.com/math-lrz/dsh-theme-pack/5a4cdbe9e6acc68f467be4af5458d2ea2e2b1616/previews/_gallery.png",
         "https://raw.githubusercontent.com/math-lrz/dsh-theme-pack/5a4cdbe9e6acc68f467be4af5458d2ea2e2b1616/previews/dracula.png"
       ],
+      "listScreenshot": "https://raw.githubusercontent.com/math-lrz/dsh-theme-pack/5a4cdbe9e6acc68f467be4af5458d2ea2e2b1616/previews/_gallery.png",
       "review": {
         "compatibility": "unverified",
         "preview": "verified",
-        "installation": "verified"
+        "installation": "manual-only"
       },
       "health": {
         "status": "improvements",
         "checks": {
           "readmeScreenshots": "pass",
           "compatibility": "improve",
-          "installation": "pass",
+          "installation": "improve",
           "installCommand": "pass",
-          "topic": "improve"
+          "topic": "pass"
         },
         "suggestions": [
-          "固定版本主题选择器未在本轮宿主中形成实机证据；保留固定 commit 上游展示图。"
-        ]
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。"
+        ],
+        "scan": {
+          "commit": "5a4cdbe9e6acc68f467be4af5458d2ea2e2b1616",
+          "packageVersion": "1.0.0",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-09T08:06:03.598Z",
+          "findings": []
+        }
       },
       "license": {
         "code": "MIT",
@@ -41199,9 +41239,9 @@
       "featuredRank": 1000,
       "starsSnapshot": 2,
       "releaseUpdatedAt": "2026-11-04T14:29:50+08:00",
-      "metadataUpdatedAt": "2026-11-04T14:29:50+08:00",
+      "metadataUpdatedAt": "2026-11-09T08:06:04.950Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-04T14:29:50+08:00",
+      "updatedAt": "2026-11-09T08:06:04.950Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d58d7c2ea450b0f4090aa2aedc2ef86e.preview.webp",
@@ -48200,7 +48240,7 @@
       "description": "Multi-pet companion plugin for the DSH Web GUI：registry 驱动的浮层桌宠，支持状态反应、命名、投喂、互动和亲密度。",
       "repo": "https://github.com/zhu1090093659/dsh-pet",
       "package": "@linxin666/dsh-pet",
-      "rowId": "zhu1090093659-dsh-pet",
+      "rowId": "pet",
       "category": "pet",
       "tags": [
         "pet",
@@ -48275,9 +48315,9 @@
       "featuredRank": 1000,
       "starsSnapshot": 68,
       "releaseUpdatedAt": "2026-11-08T00:17:41.931Z",
-      "metadataUpdatedAt": "2026-11-08T00:17:41.931Z",
+      "metadataUpdatedAt": "2026-11-09T08:06:17.195Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-08T00:17:41.931Z",
+      "updatedAt": "2026-11-09T08:06:17.195Z",
       "media": {
         "screenshots": [
           null,
@@ -52411,7 +52451,7 @@
       "description": "DeepSeek Harness Web UI 的本地皮肤工作室：创建、实时预览、管理与分享完整外观。",
       "repo": "https://github.com/realMisakaMikoto/dsh-skin-studio",
       "package": "@local/dsh-desktop-skin-studio",
-      "rowId": "skin-studio",
+      "rowId": "dsh-desktop-skin-studio",
       "category": "skin",
       "tags": [
         "wallpaper",
@@ -52478,9 +52518,9 @@
       "featuredRank": 1040,
       "starsSnapshot": 3,
       "releaseUpdatedAt": "2026-11-09T07:14:22.999Z",
-      "metadataUpdatedAt": "2026-11-09T07:14:22.999Z",
+      "metadataUpdatedAt": "2026-11-09T08:11:00.238Z",
       "starsUpdatedAt": "2026-11-09T07:21:16.802Z",
-      "updatedAt": "2026-11-09T07:14:22.999Z",
+      "updatedAt": "2026-11-09T08:11:00.238Z",
       "media": {
         "list": {
           "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3d824982c8b4ab5584b2dc85b80e193b.preview.webp",
