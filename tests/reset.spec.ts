@@ -7,6 +7,7 @@ import { companionAsSkin } from '../src/install-resolution.ts'
 import { atomicWriteJson, atomicWriteText, profilePatchFile, readMarketState, writeMarketState } from '../src/profile.ts'
 import { resetManagedSkins } from '../src/reset.ts'
 import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 afterEach(cleanupTempDirs)
 
@@ -86,7 +87,7 @@ describe('emergency skin reset', () => {
 
   it('rolls every file back when a registration conflicts', () => {
     const dir = fixture()
-    const skin = loadCatalog().skins[0]
+    const skin = catalogFixtureSkin()
     const manifest = JSON.stringify({ dependencies: { [skin.package]: skin.install.target }, dsh: { profile: { bundles: [skin.package] } } }, null, 2) + '\n'
     const patch = `- insert:\n    - id: ${skin.rowId}\n      name: conflicting-package\n`
     atomicWriteText(join(dir, 'package.json'), manifest)

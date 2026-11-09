@@ -3,12 +3,12 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { stringify } from 'yaml'
-import { loadCatalog } from '../src/catalog.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { officialDesktopRunner, type OfficialPluginManagerLike } from '../src/official-desktop.ts'
 import { atomicWriteJson, atomicWriteText, packageDir, readDependencies, readMarketState, readProfileBundles } from '../src/profile.ts'
 import type { SkinEntry } from '../src/types.ts'
 import { conditionWaiter, operationWaiter } from './fixtures/operations.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 const directories: string[] = []
 const lifecycles: SkinLifecycle[] = []
@@ -21,7 +21,7 @@ const until = conditionWaiter({ attempts: 500, intervalMs: 2, message: 'GitHub l
 const finished = operationWaiter({ attempts: 500, intervalMs: 2, message: 'GitHub lifecycle condition did not settle', terminal: ['done', 'failed', 'cancelled', 'waiting'] })
 
 function fixture(subpath?: string, options: { manual?: boolean; desktopReason?: string } = {}) {
-  const base = structuredClone(loadCatalog().skins[0]!)
+  const base = catalogFixtureSkin()
   const commit = 'a'.repeat(40)
   const item: SkinEntry = { ...base, id: 'github-test', package: 'dsh-github-test', rowId: 'github-test', repo: 'https://github.com/Fixture/Skin', subpath,
     compatibility: { dsh: '*', platform: ['web'] },

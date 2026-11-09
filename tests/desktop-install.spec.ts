@@ -3,16 +3,16 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
 import { stringify } from 'yaml'
-import { loadCatalog } from '../src/catalog.ts'
 import { desktopGithubInstallPlan, desktopInstallationWarning, desktopInstallPlan } from '../src/desktop-install.ts'
 import { atomicWriteJson, atomicWriteText, compareInstalledArtifact, packageDir, reviewedInstalledSpecMatches, snapshotInstalledArtifact, validateDesktopArtifact } from '../src/profile.ts'
 import type { SkinEntry } from '../src/types.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 const directories: string[] = []
 afterEach(() => { for (const directory of directories.splice(0)) rmSync(directory, { recursive: true, force: true }) })
 
 function skin(subpath?: string): SkinEntry {
-  const base = structuredClone(loadCatalog().skins[0]!)
+  const base = catalogFixtureSkin()
   const commit = 'a'.repeat(40)
   return { ...base, id: 'fixture.github', package: '@fixture/skin', rowId: 'github-fixture', repo: 'https://github.com/Fixture/Skin', subpath,
     review: { compatibility: 'verified', preview: 'verified', installation: 'verified' },

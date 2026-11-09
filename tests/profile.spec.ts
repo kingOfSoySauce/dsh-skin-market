@@ -10,6 +10,7 @@ import { buildApprovalKeyForTarget, effectiveBuildApprovalKey } from '../src/bui
 import { acknowledgeSkinArtifactRisk, assertLoaderMetadata, assertNoLoaderConflicts, atomicWriteJson, atomicWriteText, compareInstalledArtifact, compatibilityPatchFile, ensureBuildAllowed, ensurePatchedDependency, ensureSkinRegistration, inspectSkinArtifactRisk, InstallConflictError, installedClientPlugins, installedSpecMatches, isSkinArtifactRiskAcknowledged, marketStateFile, packageLoaderOwnershipAt, patchedDependenciesNeedSync, pnpmWorkspaceFile, profilePatchFile, readMarketState, removeCompatibilityPatches, removeProfileBundles, removeSkinRegistration, reviewedInstalledSpecMatches, runtimeState, setManagedLoaderOverride, snapshotInstalledArtifact, validateDesktopArtifact, validateInstalledSkin, validateNpmArtifact, writeMarketState } from '../src/profile.ts'
 import { loadCatalog } from '../src/catalog.ts'
 import { CORDIS_JS_TAG, cordisYamlOptions } from '../src/cordis-yaml.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 const temporaryDirectories: string[] = []
 
@@ -38,7 +39,7 @@ function isolatedCatalogSkin() {
 }
 
 describe('profile patch YAML round trips', () => {
-  const skin = { ...loadCatalog().skins[0]!, id: 'example.skin', package: '@example/skin', rowId: 'example-skin' }
+  const skin = { ...catalogFixtureSkin(), id: 'example.skin', package: '@example/skin', rowId: 'example-skin' }
   // The host expressions from Issue 118 are data for the editor, never executable code.
   const source = `# shared host settings
 - id: builtin
@@ -422,7 +423,7 @@ describe('exact installed artifact acknowledgement', () => {
 describe('profile state', () => {
   it.each(['client', 'bundle'] as const)('rejects a %s realpath resolving to a secret-shaped file before reading it', kind => {
     const dir = fixture()
-    const skin = loadCatalog().skins[0]
+    const skin = catalogFixtureSkin()
     const directory = join(dir, 'node_modules', skin.package)
     const entry = join(directory, kind === 'client' ? 'client.js' : 'bundle.yml')
     atomicWriteJson(join(directory, 'package.json'), {
@@ -562,7 +563,7 @@ describe('profile state', () => {
 
   it('does not skip reviewed integrity for an npm caret source resolved by the lock importer', () => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const skin = { ...base, install: { ...base.install, npm: { name: base.package, version: base.install.version, integrity: 'sha512-reviewed', repository: base.repo, gitHead: base.install.commit } } }
     const spec = `^${skin.install.version}`
     atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: spec } })
@@ -583,7 +584,7 @@ describe('profile state', () => {
 
   it('validates managed Desktop integrity without requiring synthetic npm repository evidence', () => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const skin = { ...base, install: { ...base.install, npm: undefined, desktop: { mode: 'managed' as const, registry: 'npm' as const, packageName: base.package, packageVersion: base.install.version, integrity: 'sha512-reviewed' } } }
     const directory = join(dir, 'node_modules', skin.package)
     const spec = `^${skin.install.version}`
@@ -602,7 +603,7 @@ describe('profile state', () => {
 
   it('requires the matching root importer for an exact Desktop source, including legacy metadata without SRI', () => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const skin = { ...base, install: { ...base.install, npm: undefined, desktop: { mode: 'managed' as const, registry: 'npm' as const, packageName: base.package, packageVersion: base.install.version } } }
     const directory = join(dir, 'node_modules', skin.package)
     atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.version } })
@@ -675,7 +676,7 @@ describe('profile state', () => {
 
   it('detects installed, active, and update states independently', () => {
     const dir = fixture()
-    const skin = loadCatalog().skins[0]
+    const skin = catalogFixtureSkin()
     atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
     const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
     mkdirSync(packageDir, { recursive: true })
@@ -695,7 +696,7 @@ describe('profile state', () => {
     { primary: true, pinned: true, loaderFound: true },
   ])('does not infer a pending restart from an unstarted selected component: %j', ({ primary, pinned, loaderFound }) => {
     const dir = fixture()
-    const skin = loadCatalog().skins[0]
+    const skin = catalogFixtureSkin()
     atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
     atomicWriteJson(join(dir, 'node_modules', skin.package, 'package.json'), {
       name: skin.package, version: skin.install.version, dsh: { client: { platform: 'web' } },
@@ -709,7 +710,7 @@ describe('profile state', () => {
 
   it('keeps unselected, missing, and broken installations separate from unavailable components', () => {
     const dir = fixture()
-    const skin = loadCatalog().skins[0]
+    const skin = catalogFixtureSkin()
     expect(runtimeState(dir, skin, skin.id, false, false, [skin.id])).toMatchObject({
       installation: 'missing', activation: 'inactive', primary: false, pinned: false,
     })
@@ -731,7 +732,7 @@ describe('profile state', () => {
   it('marks an installed skin as updatable when a companion is missing', () => {
     const dir = fixture()
     const commit = 'a'.repeat(40)
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const companion = {
       package: '@example/companion',
       target: `github:example/repo#${commit}&path:/manager`,
@@ -753,7 +754,7 @@ describe('profile state', () => {
 
   it.each(['version', 'package', 'alias'])('validates the reviewed npm repository and lockfile integrity for a %s spec', form => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const integrity = 'sha512-abc'
     const skin = {
       ...base,
@@ -773,7 +774,7 @@ describe('profile state', () => {
 
   it('keeps an existing pinned GitHub installation healthy when the catalog adds npm', () => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const skin = {
       ...base,
       install: { ...base.install, npm: { name: base.package, version: base.install.version, integrity: 'sha512-reviewed', repository: base.repo, gitHead: base.install.commit } },
@@ -790,7 +791,7 @@ describe('profile state', () => {
 
   it.each(['github', 'npm'])('keeps an older %s installation updateable when a newer npm artifact is reviewed', source => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const oldVersion = '0.0.0'
     const skin = {
       ...base,
@@ -809,7 +810,7 @@ describe('profile state', () => {
 
   it.each(['version', 'repository'])('rejects an npm artifact with a mismatched %s despite matching integrity', field => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const integrity = 'sha512-reviewed'
     const skin = {
       ...base,
@@ -840,7 +841,7 @@ describe('profile state', () => {
     ['https://github.com/Another/Theme', false],
   ])('uses the same GitHub identity rules as npm archive review for %s', (repository, accepted) => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const integrity = 'sha512-reviewed'
     const skin = {
       ...base,
@@ -858,7 +859,7 @@ describe('profile state', () => {
 
   it('detects a duplicate loader row before market registration', () => {
     const dir = fixture()
-    const skin = loadCatalog().skins[0]
+    const skin = catalogFixtureSkin()
     atomicWriteJson(join(dir, 'package.json'), { dependencies: { another: 'github:example/another#commit' } })
     atomicWriteText(profilePatchFile(dir), `- insert:\n    - id: ${skin.rowId}\n      name: another\n`)
 
@@ -868,7 +869,7 @@ describe('profile state', () => {
 
   it('rejects a catalog row id that does not match the bundle-owned primary loader', () => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const skin = { ...base, rowId: 'better-sidebar' }
     const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
     mkdirSync(packageDir, { recursive: true })
@@ -886,7 +887,7 @@ describe('profile state', () => {
 
   it('reports the owner of a duplicate loader from an installed bundle', () => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const skin = { ...base, package: '@example/incoming-loader', rowId: 'incoming-loader' }
     const other = '@example/existing-loader'
     atomicWriteJson(join(dir, 'package.json'), { dependencies: { [other]: 'file:/existing-loader' } })
@@ -913,7 +914,7 @@ describe('profile state', () => {
 
   it('does not treat a shared implementation plugin name as a loader conflict', () => {
     const dir = fixture()
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const skin = { ...base, package: '@example/preset-skin', rowId: 'preset-skin-main' }
     const official = '@deepseek-ai/dsh-agent-preset'
     atomicWriteJson(join(dir, 'package.json'), { dependencies: { [official]: 'file:/agent-preset' } })
@@ -1073,7 +1074,7 @@ describe('profile state', () => {
     const dir = fixture()
     const commit = 'c'.repeat(40)
     const skin = {
-      ...loadCatalog().skins[0],
+      ...catalogFixtureSkin(),
       package: '@scope/subdir-skin',
       install: {
         target: `github:example/monorepo#${commit}&path:/packages/skin`,
@@ -1095,7 +1096,7 @@ describe('profile state', () => {
 
   it('reports a broken bundle patch before registration mutates the profile', () => {
     const dir = fixture()
-    const skin = loadCatalog().skins[0]
+    const skin = catalogFixtureSkin()
     const packageDir = join(dir, 'node_modules', ...skin.package.split('/'))
     mkdirSync(packageDir, { recursive: true })
     atomicWriteJson(join(packageDir, 'package.json'), {
@@ -1118,7 +1119,7 @@ describe('profile state', () => {
   })
 
   it.each(['npm', 'desktop'])('matches exact %s package specs without accepting version substrings or another source', source => {
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const version = '1.2.3'
     const skin = {
       ...base,

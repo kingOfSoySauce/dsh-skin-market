@@ -2,12 +2,12 @@ import { mkdtempSync, readFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
-import { loadCatalog } from '../src/catalog.ts'
 import type { PluginRunner } from '../src/commands.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { atomicWriteJson, atomicWriteText, packageManifest, readDependencies, readMarketState, writeMarketState } from '../src/profile.ts'
 import type { SkinEntry } from '../src/types.ts'
 import { operationWaiter } from './fixtures/operations.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 const temporaryDirectories: string[] = []
 
@@ -29,7 +29,7 @@ describe('Web update source concurrency', () => {
     temporaryDirectories.push(directory)
     const commit = 'a'.repeat(40)
     const skin: SkinEntry = {
-      ...loadCatalog().skins[0]!, id: 'update-source.skin', package: '@example/update-source-skin', rowId: 'update-source-skin',
+      ...catalogFixtureSkin(), id: 'update-source.skin', package: '@example/update-source-skin', rowId: 'update-source-skin',
       repo: 'https://github.com/example/update-source-skin', subpath: undefined,
       review: { installation: 'verified', preview: 'verified', compatibility: 'verified' },
       install: {

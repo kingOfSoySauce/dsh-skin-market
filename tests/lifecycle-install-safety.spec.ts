@@ -1,7 +1,6 @@
 import { existsSync, mkdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { loadCatalog } from '../src/catalog.ts'
 import type { CommandOptions, CommandResult, PluginRunner } from '../src/commands.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { atomicWriteJson, atomicWriteText, ensurePatchedDependency, profilePatchFile, readDependencies, readMarketState } from '../src/profile.ts'
@@ -9,13 +8,14 @@ import * as profile from '../src/profile.ts'
 import type { Operation, SkinEntry } from '../src/types.ts'
 import { conditionWaiter } from './fixtures/operations.ts'
 import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 afterEach(cleanupTempDirs)
 
 function fixture() {
   const dir = tempDir('skin-install-safety-')
   atomicWriteJson(join(dir, 'package.json'), { dependencies: {} })
-  const skin: SkinEntry = { ...loadCatalog().skins[0], id: 'test.npm-skin', package: 'test-npm-skin', rowId: 'test-npm-skin', repo: 'https://github.com/example/skin',
+  const skin: SkinEntry = { ...catalogFixtureSkin(), id: 'test.npm-skin', package: 'test-npm-skin', rowId: 'test-npm-skin', repo: 'https://github.com/example/skin',
     review: { installation: 'verified', preview: 'verified', compatibility: 'verified' },
     install: { target: `github:example/skin#${'a'.repeat(40)}`, version: '1.0.0', commit: 'a'.repeat(40) } }
   return { dir, skin }

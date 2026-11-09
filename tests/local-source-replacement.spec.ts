@@ -4,12 +4,12 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
 import { parse, stringify } from 'yaml'
-import { loadCatalog } from '../src/catalog.ts'
 import type { CommandResult, PluginRunner } from '../src/commands.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { atomicWriteJson, atomicWriteText, compatibilityPatchFile, ensurePatchedDependency, npmSourceMigration, packageDir, packageManifest, readDependencies, readMarketState, snapshotInstalledArtifact, validateNpmArtifact, writeMarketState } from '../src/profile.ts'
 import type { Operation, PersistedMarketState, SkinEntry } from '../src/types.ts'
 import { operationWaiter } from './fixtures/operations.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 const directories: string[] = []
 const ok = (): CommandResult => ({ exitCode: 0, stdout: '', stderr: '', timedOut: false })
@@ -44,7 +44,7 @@ function fixture(source: 'file' | 'link' = 'file', selection: 'primary' | 'pinne
   directories.push(directory)
   const commit = 'a'.repeat(40)
   const skin: SkinEntry = {
-    ...loadCatalog().skins[0]!, id: 'replacement.skin', package: '@example/replacement-skin', rowId: 'replacement-skin',
+    ...catalogFixtureSkin(), id: 'replacement.skin', package: '@example/replacement-skin', rowId: 'replacement-skin',
     repo: 'https://github.com/example/replacement-skin', subpath: undefined,
     review: { installation: 'verified', preview: 'verified', compatibility: 'verified' },
     install: {

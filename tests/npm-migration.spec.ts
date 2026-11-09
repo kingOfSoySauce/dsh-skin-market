@@ -2,13 +2,13 @@ import { mkdtempSync, readFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
-import { loadCatalog } from '../src/catalog.ts'
 import type { CommandResult, PluginRunner } from '../src/commands.ts'
 import { companionAsSkin, updateInstallTarget } from '../src/install-resolution.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { atomicWriteJson, atomicWriteText, npmSourceMigration, packageManifest, readDependencies, readMarketState, writeMarketState } from '../src/profile.ts'
 import type { PersistedMarketState, SkinEntry } from '../src/types.ts'
 import { operationWaiter } from './fixtures/operations.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 const temporaryDirectories: string[] = []
 const ok = (): CommandResult => ({ exitCode: 0, stdout: '', stderr: '', timedOut: false })
@@ -18,7 +18,7 @@ function fixture(): { dir: string; skin: SkinEntry } {
   temporaryDirectories.push(dir)
   const commit = 'a'.repeat(40)
   const skin: SkinEntry = {
-    ...loadCatalog().skins[0]!, id: 'migration.skin', package: '@example/migration-skin', rowId: 'migration-skin',
+    ...catalogFixtureSkin(), id: 'migration.skin', package: '@example/migration-skin', rowId: 'migration-skin',
     repo: 'https://github.com/example/migration-skin', subpath: undefined,
     review: { installation: 'verified', preview: 'verified', compatibility: 'verified' },
     install: { target: `github:example/migration-skin#${commit}`, version: '1.0.0', commit,
