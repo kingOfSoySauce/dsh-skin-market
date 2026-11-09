@@ -32,6 +32,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Misaki14987/dsh-theme-taffy/58761735d967c3cbf551a9bd7aa292bb13258853/docs/screenshot-dark.png
   - https://raw.githubusercontent.com/Misaki14987/dsh-theme-taffy/58761735d967c3cbf551a9bd7aa292bb13258853/docs/screenshot-light.png
+listScreenshot: https://raw.githubusercontent.com/Misaki14987/dsh-theme-taffy/58761735d967c3cbf551a9bd7aa292bb13258853/docs/screenshot-dark.png
 review:
   compatibility: verified
   preview: verified
@@ -60,6 +61,6 @@ license:
 featuredRank: 44
 starsSnapshot: 5
 releaseUpdatedAt: 2026-08-23T05:28:33.931Z
-metadataUpdatedAt: 2026-08-23T05:28:33.931Z
+metadataUpdatedAt: 2026-11-09T00:13:59.744Z
 starsUpdatedAt: 2026-09-09T21:39:19.300Z
-updatedAt: 2026-09-09T21:39:19.300Z
+updatedAt: 2026-11-09T00:13:59.744Z

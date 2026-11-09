@@ -15,21 +15,28 @@ tags:
 modes:
   - light
 install:
-  target: github:AshModeling/dsh-light-theater#23980ad2b2f39413863da963a70afd1148b1220d
+  target: github:AshModeling/dsh-light-theater#86f28ba673567877c6eadf1b7592b1eea9d2cddf
   version: 0.1.0
-  commit: 23980ad2b2f39413863da963a70afd1148b1220d
+  commit: 86f28ba673567877c6eadf1b7592b1eea9d2cddf
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-light-theater
     packageVersion: 0.1.0
     integrity: sha512-HZ23LiZnE0Ia+LRD/Qu+ZFVEOL+IJgC5RdbPihZ0liURESed1YEPO6gRb0Vm7rQKNBebEw8PVC/2GvdtOlOWTQ==
+  npm:
+    name: dsh-light-theater
+    version: 0.1.0
+    integrity: sha512-HZ23LiZnE0Ia+LRD/Qu+ZFVEOL+IJgC5RdbPihZ0liURESed1YEPO6gRb0Vm7rQKNBebEw8PVC/2GvdtOlOWTQ==
+    repository: https://github.com/AshModeling/dsh-light-theater
+    gitHead: 86f28ba673567877c6eadf1b7592b1eea9d2cddf
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/AshModeling/dsh-light-theater/23980ad2b2f39413863da963a70afd1148b1220d/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/AshModeling/dsh-light-theater/23980ad2b2f39413863da963a70afd1148b1220d/docs/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,25 +47,25 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 23980ad2b2f39413863da963a70afd1148b1220d
+    commit: 86f28ba673567877c6eadf1b7592b1eea9d2cddf
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:28.925Z
+    checkedAt: 2026-11-09T00:15:44.833Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1054
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-07T21:58:28.999Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+releaseUpdatedAt: 2026-11-09T00:15:45.074Z
+metadataUpdatedAt: 2026-11-09T00:15:45.074Z
 starsUpdatedAt: 2026-09-18T21:38:11.342Z
-updatedAt: 2026-09-18T21:38:11.342Z
-listScreenshot: https://raw.githubusercontent.com/AshModeling/dsh-light-theater/23980ad2b2f39413863da963a70afd1148b1220d/docs/preview.png
+updatedAt: 2026-11-09T00:15:45.074Z

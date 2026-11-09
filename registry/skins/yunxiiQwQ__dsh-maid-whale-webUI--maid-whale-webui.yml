@@ -22,8 +22,11 @@ install:
   version: 0.1.1
   commit: 1d48d7147de7307ab53e4f7a1027e722753e2321
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: "@yunxii/dsh-client-ui-skin-maid-whale-webui"
+    packageVersion: 0.1.1
+    integrity: sha512-dRzBXLICiWQZRff0Gz5X1CYyTTlnpxnT9/R61W6YvOlYssR2ke1Ydod+Ua+tylh+NlTgf5m94122m1xdhWUcGw==
 compatibility:
   dsh: unverified
   platform:
@@ -63,9 +66,9 @@ health:
 license:
   code: BSD-3-Clause
   commercialUse: true
-starsSnapshot: 48
 featuredRank: 22
-releaseUpdatedAt: 2026-11-07T05:33:49.067Z
+starsSnapshot: 48
+releaseUpdatedAt: 2026-11-09T00:12:53.165Z
 metadataUpdatedAt: 2026-11-07T05:33:49.067Z
 starsUpdatedAt: 2026-11-01T01:43:19.508Z
-updatedAt: 2026-11-07T05:33:49.067Z
+updatedAt: 2026-11-09T00:12:53.165Z

@@ -18,8 +18,11 @@ install:
   version: 1.0.2
   commit: f2883612668bcc7af4bf065543bccfabf734a758
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: "@frog755/dsh-prompt-vault"
+    packageVersion: 1.0.2
+    integrity: sha512-WGgVaQOLvlFw8yikWOJv08PSTbWX+TId1fkslMM/dGDE2/3TlyKRuhL8WUpSLcTN+3gFPvEtpEDxhu4QrS9Paw==
   npm:
     name: "@frog755/dsh-prompt-vault"
     version: 1.0.2
@@ -60,7 +63,7 @@ license:
   commercialUse: true
 featuredRank: 1045
 starsSnapshot: 5
-releaseUpdatedAt: 2026-09-10T21:34:46.235Z
+releaseUpdatedAt: 2026-11-09T00:13:56.998Z
 metadataUpdatedAt: 2026-09-10T21:34:46.235Z
 starsUpdatedAt: 2026-10-06T00:45:31.212Z
-updatedAt: 2026-10-06T00:45:31.212Z
+updatedAt: 2026-11-09T00:13:56.998Z

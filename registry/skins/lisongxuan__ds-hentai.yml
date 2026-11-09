@@ -17,8 +17,11 @@ install:
   version: 0.7.2
   commit: 4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6
   desktop:
-    mode: manual-only
-    reason: npm-source-unverified
+    mode: managed
+    registry: npm
+    packageName: ds-hentai
+    packageVersion: 0.7.2
+    integrity: sha512-Ex8jIQSs9iu3kYqfYDbzQL6ewMcfqgsdsQUlcZbRR5VZj1CtS+DiBWSA+UzoLtZC/qpcWV8su1pCEOEBHQl1DQ==
   npm:
     name: ds-hentai
     version: 0.7.2
@@ -58,9 +61,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 1095
-releaseUpdatedAt: 2026-11-07T05:33:56.333Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-09T00:14:31.745Z
 metadataUpdatedAt: 2026-11-07T05:33:56.333Z
 starsUpdatedAt: 2026-10-30T03:53:41.003Z
-updatedAt: 2026-11-07T05:33:56.333Z
+updatedAt: 2026-11-09T00:14:31.745Z

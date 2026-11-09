@@ -25,6 +25,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/azkbzxf__dsh-vscode-scrollbar/b5416576cf9fc05a62f782002d95cd6b0dcdc46f/home.png
+  - skin-screenshots/azkbzxf__dsh-vscode-scrollbar/b5416576cf9fc05a62f782002d95cd6b0dcdc46f/conversation.png
+  - skin-screenshots/azkbzxf__dsh-vscode-scrollbar/b5416576cf9fc05a62f782002d95cd6b0dcdc46f/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -52,13 +56,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/azkbzxf__dsh-vscode-scrollbar/b5416576cf9fc05a62f782002d95cd6b0dcdc46f/home.png
-  - skin-screenshots/azkbzxf__dsh-vscode-scrollbar/b5416576cf9fc05a62f782002d95cd6b0dcdc46f/conversation.png
-  - skin-screenshots/azkbzxf__dsh-vscode-scrollbar/b5416576cf9fc05a62f782002d95cd6b0dcdc46f/settings.png
 featuredRank: 1000
+starsSnapshot: 0
 releaseUpdatedAt: 2026-11-01T00:00:00.000Z
-metadataUpdatedAt: 2026-11-05T00:23:22.896Z
+metadataUpdatedAt: 2026-11-09T00:17:19.204Z
 starsUpdatedAt: 2026-11-01T00:00:00.000Z
-updatedAt: 2026-11-05T00:23:22.896Z
+updatedAt: 2026-11-09T00:17:19.204Z

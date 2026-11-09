@@ -18,8 +18,11 @@ install:
   version: 0.1.0
   commit: 9566aee377ada2cb862e8bfd194b2d33bb4fe23c
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: "@huanlin/dsh-plugin-better-sidebar-plugin-audio"
+    packageVersion: 0.1.0
+    integrity: sha512-c7i3QlWljT+tb0I5VcU0DlmsL5WC6mo+6MSnnLudZF3h4MWe7jclcWXbSh09ZmqVXacaTqF396gfUtu9RLhIkg==
   npm:
     name: "@huanlin/dsh-plugin-better-sidebar-plugin-audio"
     version: 0.1.0
@@ -63,7 +66,7 @@ license:
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 4
-releaseUpdatedAt: 2026-11-08T00:17:45.052Z
+releaseUpdatedAt: 2026-11-09T00:14:11.133Z
 metadataUpdatedAt: 2026-11-08T00:17:45.052Z
 starsUpdatedAt: 2026-11-06T00:08:18.130Z
-updatedAt: 2026-11-08T00:17:45.052Z
+updatedAt: 2026-11-09T00:14:11.133Z

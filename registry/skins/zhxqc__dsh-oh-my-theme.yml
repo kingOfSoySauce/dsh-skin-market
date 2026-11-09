@@ -14,15 +14,21 @@ tags:
 modes:
   - dark
 install:
-  target: github:zhxqc/dsh-oh-my-theme#6dbea1ac6131abccea755551eb294a8cc4805786
+  target: github:zhxqc/dsh-oh-my-theme#5052f83f4ccc21da11f37b27824f2c95052fb25b
   version: 0.6.0
-  commit: 6dbea1ac6131abccea755551eb294a8cc4805786
+  commit: 5052f83f4ccc21da11f37b27824f2c95052fb25b
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-oh-my-theme
     packageVersion: 0.6.0
     integrity: sha512-1TDG5zGZ//MhG71l4T2EfYueVSDS/TiRFD2Mb/QWW5AI1n7Y4kfiIoi2u+e/K4wTZutrcx/GH6WEtIo9eSw7xA==
+  npm:
+    name: dsh-oh-my-theme
+    version: 0.6.0
+    integrity: sha512-1TDG5zGZ//MhG71l4T2EfYueVSDS/TiRFD2Mb/QWW5AI1n7Y4kfiIoi2u+e/K4wTZutrcx/GH6WEtIo9eSw7xA==
+    repository: https://github.com/zhxqc/dsh-oh-my-theme
+    gitHead: 5052f83f4ccc21da11f37b27824f2c95052fb25b
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -33,6 +39,7 @@ screenshots:
   - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/slider-icon.png
   - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/file-sys.png
   - https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/6dbea1ac6131abccea755551eb294a8cc4805786/docs/assets/md-preview.png
+listScreenshot: https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/5052f83f4ccc21da11f37b27824f2c95052fb25b/docs/assets/setting.png
 review:
   compatibility: verified
   preview: verified
@@ -47,20 +54,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 6dbea1ac6131abccea755551eb294a8cc4805786
+    commit: 5052f83f4ccc21da11f37b27824f2c95052fb25b
     packageVersion: 0.6.0
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:28:38.457Z
+    checkedAt: 2026-11-09T00:13:45.829Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 10
 starsSnapshot: 7
-releaseUpdatedAt: 2026-08-23T05:28:38.539Z
-metadataUpdatedAt: 2026-08-26T03:23:50.867Z
+releaseUpdatedAt: 2026-11-09T00:13:47.899Z
+metadataUpdatedAt: 2026-11-09T00:13:47.899Z
 starsUpdatedAt: 2026-10-02T10:29:36.362Z
-updatedAt: 2026-10-02T10:29:36.362Z
+updatedAt: 2026-11-09T00:13:47.899Z

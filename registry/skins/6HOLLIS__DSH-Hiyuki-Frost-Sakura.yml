@@ -30,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/6HOLLIS/DSH-Hiyuki-Frost-Sakura/9f94094e426b5fa62dea20118ef1792125445505/artifacts/qa/dsh-rc2-calm.png
   - https://raw.githubusercontent.com/6HOLLIS/DSH-Hiyuki-Frost-Sakura/9f94094e426b5fa62dea20118ef1792125445505/artifacts/qa/dsh-rc2-settings.jpg
+listScreenshot: https://raw.githubusercontent.com/6HOLLIS/DSH-Hiyuki-Frost-Sakura/9f94094e426b5fa62dea20118ef1792125445505/artifacts/qa/dsh-rc2-calm.png
 review:
   compatibility: verified
   preview: verified
@@ -63,7 +64,6 @@ license:
 featuredRank: 1067
 starsSnapshot: 1
 releaseUpdatedAt: 2026-09-07T21:58:41.388Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-09T00:15:37.068Z
 starsUpdatedAt: 2026-09-07T21:58:41.388Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/6HOLLIS/DSH-Hiyuki-Frost-Sakura/9f94094e426b5fa62dea20118ef1792125445505/artifacts/qa/dsh-rc2-calm.png
+updatedAt: 2026-11-09T00:15:37.068Z

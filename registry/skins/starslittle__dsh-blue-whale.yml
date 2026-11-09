@@ -38,6 +38,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/starslittle/dsh-blue-whale/e18aa1e27e98df98c478b8d24076a94e64d43ed5/docs/compare-home.png
   - https://raw.githubusercontent.com/starslittle/dsh-blue-whale/e18aa1e27e98df98c478b8d24076a94e64d43ed5/docs/compare-brand.png
+listScreenshot: https://raw.githubusercontent.com/starslittle/dsh-blue-whale/e18aa1e27e98df98c478b8d24076a94e64d43ed5/docs/compare-home.png
 review:
   compatibility: verified
   preview: verified
@@ -66,6 +67,6 @@ license:
 featuredRank: 6
 starsSnapshot: 1
 releaseUpdatedAt: 2026-09-15T03:03:54.597Z
-metadataUpdatedAt: 2026-08-23T05:28:24.292Z
+metadataUpdatedAt: 2026-11-09T00:16:49.596Z
 starsUpdatedAt: 2026-11-08T00:17:43.265Z
-updatedAt: 2026-11-08T00:17:43.265Z
+updatedAt: 2026-11-09T00:16:49.596Z

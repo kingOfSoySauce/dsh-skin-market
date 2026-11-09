@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:NoNameLeGo/dsh-catppuccin#abd8ec7b23f718aceb8633070af76df12f6185af
-  version: 0.7.2
-  commit: abd8ec7b23f718aceb8633070af76df12f6185af
+  target: github:NoNameLeGo/dsh-catppuccin#0c04a222f91048718a6f65582afa2de60d059a11
+  version: 0.7.3
+  commit: 0c04a222f91048718a6f65582afa2de60d059a11
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
-  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/abd8ec7b23f718aceb8633070af76df12f6185af"
+  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/0c04a222f91048718a6f65582afa2de60d059a11"
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -52,15 +52,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 0.2.1-rc.2 完全覆盖（固定版本 abd8ec7b23f718aceb8633070af76df12f6185af）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 0.2.1-rc.2 完全覆盖（固定版本 0c04a222f91048718a6f65582afa2de60d059a11）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: abd8ec7b23f718aceb8633070af76df12f6185af
-    packageVersion: 0.7.2
+    commit: 0c04a222f91048718a6f65582afa2de60d059a11
+    packageVersion: 0.7.3
     scannerVersion: static-v2
     dshVersion: 0.2.1-rc.2
     mode: static
     result: unknown
-    checkedAt: 2026-11-08T00:17:40.985Z
+    checkedAt: 2026-11-09T00:12:43.560Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -69,7 +69,7 @@ license:
   commercialUse: true
 featuredRank: 5
 starsSnapshot: 83
-releaseUpdatedAt: 2026-11-08T00:17:42.226Z
-metadataUpdatedAt: 2026-11-08T00:17:42.226Z
+releaseUpdatedAt: 2026-11-09T00:12:46.008Z
+metadataUpdatedAt: 2026-11-09T00:12:46.008Z
 starsUpdatedAt: 2026-11-08T00:17:42.226Z
-updatedAt: 2026-11-08T00:17:42.226Z
+updatedAt: 2026-11-09T00:12:46.008Z

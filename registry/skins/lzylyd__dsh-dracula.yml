@@ -25,6 +25,10 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/lzylyd__dsh-dracula/d03495118b21019a9e45f63044985faf6962e5f6/home.png
+  - skin-screenshots/lzylyd__dsh-dracula/d03495118b21019a9e45f63044985faf6962e5f6/conversation.png
+  - skin-screenshots/lzylyd__dsh-dracula/d03495118b21019a9e45f63044985faf6962e5f6/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -59,10 +63,6 @@ license:
 featuredRank: 85
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:31:51.316Z
-metadataUpdatedAt: 2026-10-30T03:53:58.056Z
+metadataUpdatedAt: 2026-11-09T00:16:29.076Z
 starsUpdatedAt: 2026-09-09T21:40:27.778Z
-updatedAt: 2026-10-30T03:53:58.056Z
-marketScreenshots:
-  - skin-screenshots/lzylyd__dsh-dracula/d03495118b21019a9e45f63044985faf6962e5f6/home.png
-  - skin-screenshots/lzylyd__dsh-dracula/d03495118b21019a9e45f63044985faf6962e5f6/conversation.png
-  - skin-screenshots/lzylyd__dsh-dracula/d03495118b21019a9e45f63044985faf6962e5f6/settings.png
+updatedAt: 2026-11-09T00:16:29.076Z

@@ -26,6 +26,10 @@ compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/home.png
+  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/conversation.png
+  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/settings.png
 screenshots:
   - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/demo.gif
   - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/console.png
@@ -60,13 +64,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 33
-marketScreenshots:
-  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/home.png
-  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/conversation.png
-  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/settings.png
 featuredRank: 981
+starsSnapshot: 33
 releaseUpdatedAt: 2026-10-27T23:00:48.166Z
-metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+metadataUpdatedAt: 2026-11-09T00:12:56.759Z
 starsUpdatedAt: 2026-11-08T00:17:37.744Z
-updatedAt: 2026-11-08T00:17:37.744Z
+updatedAt: 2026-11-09T00:12:56.759Z

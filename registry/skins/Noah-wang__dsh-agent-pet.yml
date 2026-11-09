@@ -20,7 +20,6 @@ install:
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  allowBuild: dsh-agent-pet@https://codeload.github.com/Noah-wang/dsh-agent-pet/tar.gz/ebafb85aedca28206093d8e4bfbec98a3f5975ca
 compatibility:
   dsh: unverified
   platform:
@@ -35,11 +34,14 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - README 图片未通过文件、尺寸或图片 hash 检查，请补充可核验的运行截图。
   scan:
     commit: ebafb85aedca28206093d8e4bfbec98a3f5975ca
     packageVersion: 0.5.0
@@ -53,7 +55,7 @@ license:
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-11-09T00:18:31.834Z
+metadataUpdatedAt: 2026-11-09T00:18:31.834Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T00:18:31.834Z

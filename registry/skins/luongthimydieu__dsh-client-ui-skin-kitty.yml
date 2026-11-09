@@ -21,24 +21,25 @@ install:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.2-alpha.1 <0.2.0-0 || >=0.2.1-rc.1 <0.3.0-0"
   platform:
     - web
 screenshots:
   - https://github.com/user-attachments/assets/0fe98ec1-cf49-4e0f-9214-1ef8bd460e62
 listScreenshot: https://github.com/user-attachments/assets/0fe98ec1-cf49-4e0f-9214-1ef8bd460e62
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
-  suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    installCommand: pass
+    topic: pass
+  suggestions: []
   scan:
     commit: 0c5966ccc810cd9d7b7b55aabb4a0527b8053f76
     packageVersion: 1.0.0
@@ -54,6 +55,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T00:18:20.936Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T00:18:20.936Z

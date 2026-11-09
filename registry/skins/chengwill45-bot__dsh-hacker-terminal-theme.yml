@@ -29,6 +29,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/chengwill45-bot/dsh-hacker-terminal-theme/b49094d19ee5e48323431feeea2aaadce78ea26f/preview.png
+listScreenshot: https://raw.githubusercontent.com/chengwill45-bot/dsh-hacker-terminal-theme/b49094d19ee5e48323431feeea2aaadce78ea26f/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -57,6 +58,6 @@ license:
 featuredRank: 1010
 starsSnapshot: 2
 releaseUpdatedAt: 2026-08-23T05:33:12.282Z
-metadataUpdatedAt: 2026-08-23T05:33:12.282Z
+metadataUpdatedAt: 2026-11-09T00:14:50.827Z
 starsUpdatedAt: 2026-09-09T21:39:45.523Z
-updatedAt: 2026-09-09T21:39:45.523Z
+updatedAt: 2026-11-09T00:14:50.827Z

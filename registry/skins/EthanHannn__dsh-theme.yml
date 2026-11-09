@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:EthanHannn/dsh-theme#4ae296cd9a8468c5c0a6ad60eb33ee4fcbf86766
+  target: github:EthanHannn/dsh-theme#77b35fb916b34aecf20092beecf178b57f3aa0cd
   version: 0.2.0
-  commit: 4ae296cd9a8468c5c0a6ad60eb33ee4fcbf86766
+  commit: 77b35fb916b34aecf20092beecf178b57f3aa0cd
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
@@ -31,34 +31,35 @@ screenshots:
   - https://raw.githubusercontent.com/EthanHannn/dsh-theme/dbe038c1d18d1767ecbe57f3b108403315a019a9/docs/screenshots/142-solo-shadow-patrol-dark.webp
 listScreenshot: https://raw.githubusercontent.com/EthanHannn/dsh-theme/4a0152debaa11f75466f92587993513c69b5857b/docs/screenshots/141-oshi-backstage-starlight-light.webp
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.2.1-rc.3 未被本次检测范围 ^0.2.2-rc.1 完全覆盖（固定版本 77b35fb916b34aecf20092beecf178b57f3aa0cd）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 4ae296cd9a8468c5c0a6ad60eb33ee4fcbf86766
+    commit: 77b35fb916b34aecf20092beecf178b57f3aa0cd
     packageVersion: 0.2.0
     scannerVersion: static-v2
-    dshVersion: ^0.2.1-rc.3
+    dshVersion: ^0.2.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-11-05T20:40:56.269Z
+    checkedAt: 2026-11-09T00:16:00.145Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-06T00:08:18.130Z
-metadataUpdatedAt: 2026-11-06T00:08:18.130Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-09T00:16:03.605Z
+metadataUpdatedAt: 2026-11-09T00:16:03.605Z
 starsUpdatedAt: 2026-11-04T14:29:50+08:00
-updatedAt: 2026-11-06T00:08:18.130Z
+updatedAt: 2026-11-09T00:16:03.605Z

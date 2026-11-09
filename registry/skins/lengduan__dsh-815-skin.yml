@@ -19,8 +19,11 @@ install:
   version: 0.1.44
   commit: 0f411d0d6d70d3487f7f11e895b88bc1a8c41e0f
   desktop:
-    mode: manual-only
-    reason: npm-repository-mismatch
+    mode: managed
+    registry: npm
+    packageName: "@lengduan/dsh-client-ui-skin-815"
+    packageVersion: 0.1.44
+    integrity: sha512-7wVEZGmPhWeovfbURL/vcDauCinesQmLUNgii1PaxJ5kuL7ST0PFvmgITuAquhPuwLMQtX0ubQy3s380PCunww==
   npm:
     name: "@lengduan/dsh-client-ui-skin-815"
     version: 0.1.44
@@ -70,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 111
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-07T05:34:17.958Z
+releaseUpdatedAt: 2026-11-09T00:18:12.790Z
 metadataUpdatedAt: 2026-11-07T05:34:17.958Z
 starsUpdatedAt: 2026-09-18T21:39:28.012Z
-updatedAt: 2026-11-07T05:34:17.958Z
+updatedAt: 2026-11-09T00:18:12.790Z

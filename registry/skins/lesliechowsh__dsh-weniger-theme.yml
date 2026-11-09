@@ -21,7 +21,7 @@ install:
   commit: 51d9f31f7dae3e119b610227b75bea9bd99f6ffa
   desktop:
     mode: manual-only
-    reason: npm-source-unverified
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -58,7 +58,7 @@ license:
   commercialUse: true
 featuredRank: 209
 starsSnapshot: 4
-releaseUpdatedAt: 2026-09-12T21:24:01.350Z
+releaseUpdatedAt: 2026-11-09T00:14:13.685Z
 metadataUpdatedAt: 2026-09-12T21:24:01.350Z
 starsUpdatedAt: 2026-09-18T21:37:23.390Z
-updatedAt: 2026-09-18T21:37:23.390Z
+updatedAt: 2026-11-09T00:14:13.685Z

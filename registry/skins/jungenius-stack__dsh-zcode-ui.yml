@@ -14,12 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:jungenius-stack/dsh-zcode-ui#d5c036f4d091b9fe3d31ac1813f4ecf5465ebc15
-  version: 2.3.6
-  commit: d5c036f4d091b9fe3d31ac1813f4ecf5465ebc15
+  target: github:jungenius-stack/dsh-zcode-ui#d5db5102fbeb931dd15a20d0b5851f73f9e65ac3
+  version: 2.3.7
+  commit: d5db5102fbeb931dd15a20d0b5851f73f9e65ac3
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-zcode-ui
+    packageVersion: 2.3.7
+    integrity: sha512-Vma3vELuFwvnbC/fMlzgUwpNVC5rQJmuoYU9GZgLLGbVhQtaGJlkKMZyPzn2VTSWtIB3+9uG6PFpSHzvEvaqPA==
+  npm:
+    name: dsh-zcode-ui
+    version: 2.3.7
+    integrity: sha512-Vma3vELuFwvnbC/fMlzgUwpNVC5rQJmuoYU9GZgLLGbVhQtaGJlkKMZyPzn2VTSWtIB3+9uG6PFpSHzvEvaqPA==
+    repository: https://github.com/jungenius-stack/dsh-zcode-ui
+    gitHead: d5db5102fbeb931dd15a20d0b5851f73f9e65ac3
 compatibility:
   dsh: ">=0.2.0-rc.2 <0.3.0-0"
   platform:
@@ -43,20 +52,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: d5c036f4d091b9fe3d31ac1813f4ecf5465ebc15
-    packageVersion: 2.3.6
+    commit: d5db5102fbeb931dd15a20d0b5851f73f9e65ac3
+    packageVersion: 2.3.7
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.2 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-08T00:17:44.632Z
+    checkedAt: 2026-11-09T00:14:11.258Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 3
-releaseUpdatedAt: 2026-11-08T00:17:45.274Z
-metadataUpdatedAt: 2026-11-08T00:17:45.274Z
-starsUpdatedAt: 2026-11-08T00:17:45.274Z
-updatedAt: 2026-11-08T00:17:45.274Z
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-09T00:14:12.905Z
+metadataUpdatedAt: 2026-11-09T00:14:12.905Z
+starsUpdatedAt: 2026-11-09T00:14:12.905Z
+updatedAt: 2026-11-09T00:14:12.905Z

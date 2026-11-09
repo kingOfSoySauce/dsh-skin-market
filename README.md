@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-07**：[星河 Galaxy](https://github.com/haoranx98/dsh-skin-galaxy)（haoranx98）——原生 WebGPU 实时渲染的紫蓝星云皮肤：银河尘带斜贯视野，远近星点带视差与轻微闪烁，并有随机流星；深空配色适配 light/dark/system，无运行时 CDN、图片或额外依赖。详见[收录日志](./docs/recently-added.md#recent-2026-11-07-haoranx98-dsh-skin-galaxy)。
+- **2026-11-09**：[柠檬水工厂 · 昼夜双模](https://github.com/Ririko2/lllj-dsh-skin)（Ririko2）——《ライムライト・レモネードジャム》主题：纸白/深蓝昼夜双模，六位角色按会话分配，官方 SD 头像与贴纸、游戏原文台词完成卡，四套随机分割线。详见[收录日志](./docs/recently-added.md#recent-2026-11-09-ririko2-lllj-dsh-skin)。
 
 
 <a id="manual-update"></a>

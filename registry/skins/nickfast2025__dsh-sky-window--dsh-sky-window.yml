@@ -24,7 +24,6 @@ install:
     packageName: dsh-sky-window
     packageVersion: 0.1.2
     integrity: sha512-t+5hSTevsfmvUa0CEtg/7JAGDNPGtizhFIrKndC7VFdpP+Im8J7MBoI6nOyEGchM1qOYKXYp6N6h070klz8rmQ==
-  allowBuild: dsh-sky-window@https://codeload.github.com/nickfast2025/dsh-sky-window/tar.gz/4ffebe5479a393a32ad969df4424ebb984a4eebe#path:dsh-sky-window
   npm:
     name: dsh-sky-window
     version: 0.1.2
@@ -47,9 +46,12 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 4ffebe5479a393a32ad969df4424ebb984a4eebe
     packageVersion: 0.1.2
@@ -63,7 +65,7 @@ license:
   commercialUse: true
 featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-26T01:52:19.324Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+releaseUpdatedAt: 2026-11-09T00:16:38.369Z
+metadataUpdatedAt: 2026-11-09T00:16:38.369Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:19.324Z
+updatedAt: 2026-11-09T00:16:38.369Z

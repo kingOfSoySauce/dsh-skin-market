@@ -21,7 +21,7 @@ install:
   commit: 581794ac36116e7d576d9270f1996b486bf6a8aa
   desktop:
     mode: manual-only
-    reason: npm-package-not-found
+    reason: npm-repository-mismatch
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -29,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Zhang9628/qixi-plugin/581794ac36116e7d576d9270f1996b486bf6a8aa/assets/barrage.jpg
   - https://raw.githubusercontent.com/Zhang9628/qixi-plugin/581794ac36116e7d576d9270f1996b486bf6a8aa/assets/card.png
+listScreenshot: https://raw.githubusercontent.com/Zhang9628/qixi-plugin/581794ac36116e7d576d9270f1996b486bf6a8aa/assets/barrage.jpg
 review:
   compatibility: verified
   preview: verified
@@ -60,7 +61,7 @@ license:
   commercialUse: true
 featuredRank: 1002
 starsSnapshot: 5
-releaseUpdatedAt: 2026-08-23T05:28:53.508Z
-metadataUpdatedAt: 2026-08-23T05:28:53.508Z
+releaseUpdatedAt: 2026-11-09T00:14:04.694Z
+metadataUpdatedAt: 2026-11-09T00:14:04.694Z
 starsUpdatedAt: 2026-08-21T17:50:48.830Z
-updatedAt: 2026-08-23T05:28:53.508Z
+updatedAt: 2026-11-09T00:14:04.694Z

@@ -28,6 +28,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/zealot00/dsh-pet/cb31dd4474f655e1caa87ed10d4403ba46a3f8b5/docs/screenshot-states.png
   - https://raw.githubusercontent.com/zealot00/dsh-pet/cb31dd4474f655e1caa87ed10d4403ba46a3f8b5/docs/screenshot-scene.png
+listScreenshot: https://raw.githubusercontent.com/zealot00/dsh-pet/cb31dd4474f655e1caa87ed10d4403ba46a3f8b5/docs/screenshot-states.png
 review:
   compatibility: unverified
   preview: verified
@@ -56,6 +57,6 @@ license:
 featuredRank: 73
 starsSnapshot: 4
 releaseUpdatedAt: 2026-08-23T05:29:42.888Z
-metadataUpdatedAt: 2026-08-23T05:29:42.888Z
+metadataUpdatedAt: 2026-11-09T00:14:21.963Z
 starsUpdatedAt: 2026-10-08T23:45:30.953Z
-updatedAt: 2026-10-08T23:45:30.953Z
+updatedAt: 2026-11-09T00:14:21.963Z

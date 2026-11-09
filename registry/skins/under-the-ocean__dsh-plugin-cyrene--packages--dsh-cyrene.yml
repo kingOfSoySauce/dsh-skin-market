@@ -27,6 +27,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/under-the-ocean__dsh-plugin-cyrene--packages--dsh-cyrene/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/home.png
+  - skin-screenshots/under-the-ocean__dsh-plugin-cyrene--packages--dsh-cyrene/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/conversation.png
+  - skin-screenshots/under-the-ocean__dsh-plugin-cyrene--packages--dsh-cyrene/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,13 +59,9 @@ license:
   code: MIT
   commercialUse: true
   notice: 代码 MIT；Live2D 模型按仓库 MODEL_LICENSE 使用，须保留作者署名与底层角色的非商业说明。
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/under-the-ocean__dsh-plugin-cyrene--packages--dsh-cyrene/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/home.png
-  - skin-screenshots/under-the-ocean__dsh-plugin-cyrene--packages--dsh-cyrene/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/conversation.png
-  - skin-screenshots/under-the-ocean__dsh-plugin-cyrene--packages--dsh-cyrene/4824aab1ffaf5d3f195ab8b68b32c31e206f99b7/settings.png
 featuredRank: 999
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-01T00:00:00.000Z
-metadataUpdatedAt: 2026-11-05T00:23:22.896Z
+metadataUpdatedAt: 2026-11-09T00:16:53.321Z
 starsUpdatedAt: 2026-11-01T00:00:00.000Z
-updatedAt: 2026-11-05T00:23:22.896Z
+updatedAt: 2026-11-09T00:16:53.321Z

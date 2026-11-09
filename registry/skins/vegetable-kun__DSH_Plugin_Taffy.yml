@@ -24,6 +24,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/vegetable-kun__DSH_Plugin_Taffy/4b2c7a5ced26a703e9ede67c3082a851b5ce414f/home.png
+  - skin-screenshots/vegetable-kun__DSH_Plugin_Taffy/4b2c7a5ced26a703e9ede67c3082a851b5ce414f/conversation.png
+  - skin-screenshots/vegetable-kun__DSH_Plugin_Taffy/4b2c7a5ced26a703e9ede67c3082a851b5ce414f/settings.png
 screenshots:
   - https://raw.githubusercontent.com/vegetable-kun/DSH_Plugin_Taffy/4b2c7a5ced26a703e9ede67c3082a851b5ce414f/assets/demo.gif
   - https://github.com/user-attachments/assets/3118f157-4fa5-44ba-889e-4e056bfa2ebf
@@ -54,13 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
-marketScreenshots:
-  - skin-screenshots/vegetable-kun__DSH_Plugin_Taffy/4b2c7a5ced26a703e9ede67c3082a851b5ce414f/home.png
-  - skin-screenshots/vegetable-kun__DSH_Plugin_Taffy/4b2c7a5ced26a703e9ede67c3082a851b5ce414f/conversation.png
-  - skin-screenshots/vegetable-kun__DSH_Plugin_Taffy/4b2c7a5ced26a703e9ede67c3082a851b5ce414f/settings.png
 featuredRank: 997
+starsSnapshot: 3
 releaseUpdatedAt: 2026-11-03T01:37:22.909Z
-metadataUpdatedAt: 2026-11-04T00:03:48.975Z
+metadataUpdatedAt: 2026-11-09T00:14:41.928Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-04T00:03:48.975Z
+updatedAt: 2026-11-09T00:14:41.928Z

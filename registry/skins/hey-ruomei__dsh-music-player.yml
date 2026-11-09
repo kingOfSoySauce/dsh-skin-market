@@ -19,11 +19,15 @@ install:
   commit: 153bd346eae50b2fa1edd1dac9afabc2237aead2
   desktop:
     mode: manual-only
-    reason: npm-package-not-found
+    reason: npm-repository-mismatch
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/hey-ruomei__dsh-music-player/153bd346eae50b2fa1edd1dac9afabc2237aead2/home.png
+  - skin-screenshots/hey-ruomei__dsh-music-player/153bd346eae50b2fa1edd1dac9afabc2237aead2/conversation.png
+  - skin-screenshots/hey-ruomei__dsh-music-player/153bd346eae50b2fa1edd1dac9afabc2237aead2/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -51,13 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/hey-ruomei__dsh-music-player/153bd346eae50b2fa1edd1dac9afabc2237aead2/home.png
-  - skin-screenshots/hey-ruomei__dsh-music-player/153bd346eae50b2fa1edd1dac9afabc2237aead2/conversation.png
-  - skin-screenshots/hey-ruomei__dsh-music-player/153bd346eae50b2fa1edd1dac9afabc2237aead2/settings.png
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-09T00:17:54.294Z
+metadataUpdatedAt: 2026-11-09T00:17:54.294Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-30T03:53:15.825Z
+updatedAt: 2026-11-09T00:17:54.294Z
