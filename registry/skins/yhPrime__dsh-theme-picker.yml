@@ -6,7 +6,7 @@ author: yhPrime
 description: DeepSeek Harness 主题选择插件：管理应用主题与已安装主题插件，同一时间仅一个主题生效。
 repo: https://github.com/yhPrime/dsh-theme-picker
 package: dsh-theme-picker
-rowId: dsh-theme-picker
+rowId: theme-picker
 category: skin
 tags:
   - token-theme
@@ -58,6 +58,6 @@ license:
 featuredRank: 165
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-09T07:18:47.703Z
-metadataUpdatedAt: 2026-11-09T07:18:47.703Z
+metadataUpdatedAt: 2026-11-09T08:11:05.394Z
 starsUpdatedAt: 2026-11-09T07:18:47.703Z
-updatedAt: 2026-11-09T07:18:47.703Z
+updatedAt: 2026-11-09T08:11:05.394Z

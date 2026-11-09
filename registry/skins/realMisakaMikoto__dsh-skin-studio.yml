@@ -6,7 +6,7 @@ author: realMisakaMikoto
 description: DeepSeek Harness Web UI 的本地皮肤工作室：创建、实时预览、管理与分享完整外观。
 repo: https://github.com/realMisakaMikoto/dsh-skin-studio
 package: "@local/dsh-desktop-skin-studio"
-rowId: skin-studio
+rowId: dsh-desktop-skin-studio
 category: skin
 tags:
   - wallpaper
@@ -60,6 +60,6 @@ license:
 featuredRank: 1040
 starsSnapshot: 3
 releaseUpdatedAt: 2026-11-09T07:14:22.999Z
-metadataUpdatedAt: 2026-11-09T07:14:22.999Z
+metadataUpdatedAt: 2026-11-09T08:11:00.238Z
 starsUpdatedAt: 2026-09-09T21:39:39.254Z
-updatedAt: 2026-11-09T07:14:22.999Z
+updatedAt: 2026-11-09T08:11:00.238Z
