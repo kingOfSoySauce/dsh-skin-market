@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T06:34:54.105Z",
+  "generatedAt": "2026-11-09T06:47:18.386Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -37647,11 +37647,11 @@
     {
       "id": "gxinnnnnn.dsh.sao",
       "name": {
-        "zh": "dsh-SAO（主包）",
-        "en": "dsh-SAO (root package)"
+        "zh": "dsh-SAO",
+        "en": "dsh-SAO"
       },
       "author": "GXinnnnnn",
-      "description": "仓库根目录安装包，与已收录的 market 子包功能相同，两者请选择一种，切换前停用或移除已有副本。提供双启动动画与角色语音、主题配色、液态与磨砂玻璃、自定义壁纸和模型强度调节；右栏支持连续背景、卡片透明度补偿和常用标签页统一样式，保留 Browser 原生界面，右上角采用直角，内侧采用平整衔接。",
+      "description": "刀剑神域风格皮肤：双 Link Start 启动动画与桐人／亚丝娜语音，可选择全部功能或仅限启动动画；主题配色、带主题色的大圆角玻璃设置、液态与磨砂玻璃、独立透明度和连续右栏背景；紧凑通透的会话标签与单行状态读数；九张内置壁纸、本地图片及 4K／5K 静音循环视频，支持静态省电；配有模型思考强度滑条。",
       "repo": "https://github.com/GXinnnnnn/dsh-SAO",
       "package": "@local/dsh-sao-link-start",
       "rowId": "sao-link-start",
