@@ -1,7 +1,7 @@
 import { execFileSync } from 'node:child_process'
-import { mkdtempSync, rmSync, writeFileSync } from 'node:fs'
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
-import { join } from 'node:path'
+import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
 import { previewState, copyState, classifyCatalog, diffReports, renderMarkdown, renderDiffMarkdown } from '../scripts/completeness-report.mjs'
@@ -14,6 +14,15 @@ function runReport(args: string[]) {
     encoding: 'utf8',
     stdio: ['ignore', 'pipe', 'pipe'],
   })
+}
+
+function runReportFailure(args: string[]) {
+  try {
+    runReport(args)
+  } catch (error) {
+    return String((error as { stderr?: Buffer }).stderr ?? '')
+  }
+  throw new Error(`expected failure: ${args.join(' ')}`)
 }
 
 const fullCopy = { name: { zh: '名', en: 'Name' }, description: { zh: '描述', en: 'Description' } }
@@ -135,7 +144,7 @@ describe('completeness markdown', () => {
   it('shows preview state in the missing-preview section', () => {
     const markdown = renderMarkdown(report([missingPreviewSkin('a')]))
     const section = markdown.split('## 缺预览（1）')[1].split('## 仅仓库卡')[0]
-    expect(markdown).toContain('- catalog generatedAt: unknown')
+    expect(markdown).toContain('- catalogGeneratedAt: unknown')
     expect(section).toContain('- `a` — r/a — missing')
   })
 
@@ -156,7 +165,7 @@ describe('completeness markdown', () => {
   it('renders a no-change diff', () => {
     const diff = diffReports(report([captureSkin('a')]), report([captureSkin('a')]))
     const markdown = renderDiffMarkdown(diff)
-    expect(markdown).toContain('- catalog generatedAt: unknown')
+    expect(markdown).toContain('- catalogGeneratedAt: unknown')
     expect(markdown).toContain('新增：0 / 移除：0 / 变化：0')
     expect(markdown).toContain('无变化。')
   })
@@ -178,8 +187,8 @@ describe('completeness markdown', () => {
     const diff = diffReports(report([captureSkin('a')]), current)
     expect(current.catalogGeneratedAt).toBe(generatedAt)
     expect(JSON.parse(JSON.stringify(current)).catalogGeneratedAt).toBe(generatedAt)
-    expect(renderMarkdown(current)).toContain(`- catalog generatedAt: ${generatedAt}`)
-    expect(renderDiffMarkdown({ ...diff, catalogGeneratedAt: generatedAt })).toContain(`- catalog generatedAt: ${generatedAt}`)
+    expect(renderMarkdown(current)).toContain(`- catalogGeneratedAt: ${generatedAt}`)
+    expect(renderDiffMarkdown({ ...diff, catalogGeneratedAt: generatedAt })).toContain(`- catalogGeneratedAt: ${generatedAt}`)
   })
 })
 
@@ -192,7 +201,7 @@ describe('completeness --since CLI', () => {
       writeFileSync(previousPath, JSON.stringify(snapshot, null, 2))
 
       const unchanged = runReport(['--since', previousPath])
-      expect(unchanged).toContain(`- catalog generatedAt: ${snapshot.catalogGeneratedAt}`)
+      expect(unchanged).toContain(`- catalogGeneratedAt: ${snapshot.catalogGeneratedAt}`)
       expect(unchanged).toContain('新增：0 / 移除：0 / 变化：0')
       expect(unchanged).toContain('无变化。')
 
@@ -216,6 +225,125 @@ describe('completeness --since CLI', () => {
       const changedJson = JSON.parse(runReport(['--since', previousPath, '--json']))
       expect(changedJson.counts).toEqual({ total: snapshot.items.length, added: 1, removed: 1, changed: 1 })
       expect(changedJson.catalogGeneratedAt).toBe(snapshot.catalogGeneratedAt)
+    } finally {
+      rmSync(dir, { recursive: true, force: true })
+    }
+  })
+})
+
+describe('completeness --catalog CLI', () => {
+  const localGeneratedAt = JSON.parse(readFileSync(join(root, 'data', 'catalog.json'), 'utf8')).generatedAt as string
+
+  function writeFixture(dir: string) {
+    const path = join(dir, 'catalog-main.json')
+    writeFileSync(path, JSON.stringify({
+      generatedAt: '2000-01-01T00:00:00.000Z',
+      skins: [
+        { id: 'fixture.capture', repo: 'https://github.com/example/fixture-capture', marketScreenshots: ['https://example.com/x.png'], screenshots: [], review: { preview: 'verified' } },
+        { id: 'fixture.missing', repo: 'https://github.com/example/fixture-missing', screenshots: [], review: { preview: 'verified' } },
+      ],
+      displayCopy: { skins: { 'fixture.capture': fullCopy } },
+    }, null, 2))
+    return path
+  }
+
+  it('reads a fixture catalog from --catalog <path> and marks it explicit', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'completeness-catalog-'))
+    try {
+      const fixture = writeFixture(dir)
+      const report = JSON.parse(runReport(['--catalog', fixture, '--json']))
+      expect(report.catalogGeneratedAt).toBe('2000-01-01T00:00:00.000Z')
+      expect(report.localCatalogGeneratedAt).toBe(localGeneratedAt)
+      expect(report.catalogSource).toBe('explicit')
+      expect(report.localCatalogBehind).toBe(true)
+      expect(report.catalogFreshness).toBeUndefined()
+      expect(report.counts.total).toBe(2)
+      expect(report.items.map((item: { id: string }) => item.id)).toEqual(['fixture.capture', 'fixture.missing'])
+      expect(report.counts.preview).toEqual({ capture: 1, upstream: 0, card: 0, missing: 1 })
+      expect(report.counts.copy).toEqual({ approved: 1, partial: 0, missing: 1 })
+
+      const markdown = runReport(['--catalog', fixture])
+      expect(markdown).toContain('- catalogGeneratedAt: 2000-01-01T00:00:00.000Z')
+      expect(markdown).toContain('- catalog source: explicit')
+      expect(markdown).toContain('- local catalog behind: true')
+      expect(markdown).not.toContain('localCatalogGeneratedAt:')
+      expect(markdown).not.toContain('catalog 新鲜度')
+    } finally {
+      rmSync(dir, { recursive: true, force: true })
+    }
+  })
+
+  it('marks the default repository catalog as repository and not behind', () => {
+    const report = JSON.parse(runReport(['--json']))
+    expect(report.catalogSource).toBe('repository')
+    expect(report.localCatalogBehind).toBe(false)
+    expect(report.catalogFreshness).toBeUndefined()
+
+    const markdown = runReport([])
+    expect(markdown).toContain('- catalog source: repository')
+    expect(markdown).toContain('- local catalog behind: false')
+  })
+
+  it('combines --catalog with --since', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'completeness-catalog-diff-'))
+    try {
+      const fixture = writeFixture(dir)
+      const snapshotPath = join(dir, 'snapshot.json')
+      writeFileSync(snapshotPath, runReport(['--catalog', fixture, '--json']))
+
+      const diff = JSON.parse(runReport(['--catalog', fixture, '--since', snapshotPath, '--json']))
+      expect(diff.counts).toEqual({ total: 2, added: 0, removed: 0, changed: 0 })
+      expect(diff.catalogGeneratedAt).toBe('2000-01-01T00:00:00.000Z')
+      expect(diff.catalogSource).toBe('explicit')
+      expect(diff.localCatalogBehind).toBe(true)
+    } finally {
+      rmSync(dir, { recursive: true, force: true })
+    }
+  })
+
+  it('accepts --catalog=<path>, including a path relative to the cwd', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'completeness-catalog-inline-'))
+    try {
+      const fixture = writeFixture(dir)
+      const inline = JSON.parse(runReport([`--catalog=${fixture}`, '--json']))
+      expect(inline.counts.total).toBe(2)
+      expect(inline.catalogGeneratedAt).toBe('2000-01-01T00:00:00.000Z')
+
+      const relativeFixture = relative(root, fixture)
+      expect(relativeFixture.startsWith('..')).toBe(true)
+      const relativeReport = JSON.parse(runReport([`--catalog=${relativeFixture}`, '--json']))
+      expect(relativeReport.items.map((item: { id: string }) => item.id)).toEqual(['fixture.capture', 'fixture.missing'])
+    } finally {
+      rmSync(dir, { recursive: true, force: true })
+    }
+  })
+
+  it('fails when --catalog has no path', () => {
+    expect(runReportFailure(['--catalog'])).toContain('--catalog 需要一个 catalog 文件路径')
+  })
+
+  it('fails when --catalog is followed by another flag', () => {
+    expect(runReportFailure(['--catalog', '--json'])).toContain('--catalog 需要一个 catalog 文件路径')
+  })
+
+  it('fails when the catalog file is missing', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'completeness-catalog-missing-'))
+    try {
+      const stderr = runReportFailure(['--catalog', join(dir, 'missing.json'), '--json'])
+      expect(stderr).toContain('无法读取 catalog')
+    } finally {
+      rmSync(dir, { recursive: true, force: true })
+    }
+  })
+
+  it('fails when the catalog has no skins', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'completeness-catalog-empty-'))
+    try {
+      const fixture = join(dir, 'catalog-main.json')
+      for (const body of [{ generatedAt: '2000-01-01T00:00:00.000Z', skins: [] }, { generatedAt: '2000-01-01T00:00:00.000Z' }]) {
+        writeFileSync(fixture, JSON.stringify(body))
+        expect(runReportFailure(['--catalog', fixture, '--json'])).toContain('catalog 缺少 skins 或为空')
+      }
     } finally {
       rmSync(dir, { recursive: true, force: true })
     }

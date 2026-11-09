@@ -3,6 +3,7 @@ import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+const localCatalogPath = join(root, 'data', 'catalog.json')
 const REPOSITORY_PREVIEW = /opengraph\.githubassets\.com|repository-images\.githubusercontent\.com|dshfind\.com\/api\/card/i
 const MARKET_ASSET = /(?:^skin-screenshots\/)|(?:kingofsoysauce\.github\.io\/dsh-skin-market\/skin-screenshots\/)/i
 
@@ -57,6 +58,23 @@ export function classifyCatalog(catalog) {
     // Full item list so `--json` snapshots can be diffed without rescanning the catalog.
     items,
     catalogGeneratedAt: typeof catalog?.generatedAt === 'string' ? catalog.generatedAt : null,
+  }
+}
+
+function catalogSourceLines(report) {
+  if (report.catalogSource === undefined && report.localCatalogBehind === undefined) return []
+  const lines = []
+  if (report.catalogSource !== undefined) lines.push(`- catalog source: ${report.catalogSource}`)
+  if (report.localCatalogBehind !== undefined) lines.push(`- local catalog behind: ${report.localCatalogBehind}`)
+  return lines
+}
+
+async function readLocalCatalogGeneratedAt() {
+  try {
+    const local = JSON.parse(await readFile(localCatalogPath, 'utf8'))
+    return typeof local?.generatedAt === 'string' ? local.generatedAt : null
+  } catch {
+    return null
   }
 }
 
@@ -136,7 +154,8 @@ export function renderMarkdown(report, { limit = 30 } = {}) {
   const lines = [
     '# 内容完整性报告',
     '',
-    `- catalog generatedAt: ${report.catalogGeneratedAt ?? 'unknown'}`,
+    `- catalogGeneratedAt: ${report.catalogGeneratedAt ?? 'unknown'}`,
+    ...catalogSourceLines(report),
     `- 条目：${counts.total}`,
     `- 预览：capture ${counts.preview.capture} / upstream ${counts.preview.upstream} / card ${counts.preview.card} / missing ${counts.preview.missing}`,
     `- 文案：approved ${counts.copy.approved} / partial ${counts.copy.partial} / missing ${counts.copy.missing}`,
@@ -164,7 +183,8 @@ export function renderDiffMarkdown(diff, { limit = 30 } = {}) {
   const lines = [
     '# 内容完整性增量报告',
     '',
-    `- catalog generatedAt: ${diff.catalogGeneratedAt ?? 'unknown'}`,
+    `- catalogGeneratedAt: ${diff.catalogGeneratedAt ?? 'unknown'}`,
+    ...catalogSourceLines(diff),
     `- 当前条目：${counts.total}`,
     `- 新增：${counts.added} / 移除：${counts.removed} / 变化：${counts.changed}`,
   ]
@@ -205,14 +225,39 @@ async function main(args) {
   }
   if (since === '') throw new Error('--since 需要一个快照文件路径，例如 --since snapshot.json')
 
-  const catalog = JSON.parse(await readFile(join(root, 'data', 'catalog.json'), 'utf8'))
-  const report = classifyCatalog(catalog)
+  const catalogIndex = args.indexOf('--catalog')
+  const inlineCatalog = args.find(arg => arg.startsWith('--catalog='))
+  let catalogArg = inlineCatalog ? inlineCatalog.slice('--catalog='.length) : null
+  if (catalogArg === null && catalogIndex >= 0) {
+    catalogArg = args[catalogIndex + 1]
+    if (!catalogArg || catalogArg.startsWith('--')) throw new Error('--catalog 需要一个 catalog 文件路径，例如 --catalog "$TMPDIR/catalog-main.json"')
+  }
+  if (catalogArg === '') throw new Error('--catalog 需要一个 catalog 文件路径，例如 --catalog "$TMPDIR/catalog-main.json"')
+  const catalogPath = resolve(catalogArg ?? localCatalogPath)
+  let catalog
+  try {
+    catalog = JSON.parse(await readFile(catalogPath, 'utf8'))
+  } catch (error) {
+    throw new Error(`无法读取 catalog：${catalogPath}（${error.code ?? error.message}）`)
+  }
+  if (!Array.isArray(catalog?.skins) || catalog.skins.length === 0) throw new Error('catalog 缺少 skins 或为空')
+  const base = classifyCatalog(catalog)
+  const localCatalogGeneratedAt = await readLocalCatalogGeneratedAt()
+  const catalogSource = catalogArg === null ? 'repository' : 'explicit'
+  const localCatalogBehind = localCatalogGeneratedAt !== null && base.catalogGeneratedAt !== null && localCatalogGeneratedAt !== base.catalogGeneratedAt
+  const report = { ...base, localCatalogGeneratedAt, catalogSource, localCatalogBehind }
   if (since !== null) {
     const previous = JSON.parse(await readFile(resolve(since), 'utf8'))
     if (!Array.isArray(previous) && !Array.isArray(previous?.items) && !Array.isArray(previous?.skins)) {
       console.error('warning: 上一份快照没有 items，新增/移除可能不完整；请用当前版本重新生成基线快照。')
     }
-    const diff = { ...diffReports(previous, report), catalogGeneratedAt: report.catalogGeneratedAt }
+    const diff = {
+      ...diffReports(previous, report),
+      catalogGeneratedAt: report.catalogGeneratedAt,
+      localCatalogGeneratedAt: report.localCatalogGeneratedAt,
+      catalogSource: report.catalogSource,
+      localCatalogBehind: report.localCatalogBehind,
+    }
     if (json) console.log(JSON.stringify(diff, null, 2))
     else console.log(renderDiffMarkdown(diff, { limit: safeLimit }))
     return
