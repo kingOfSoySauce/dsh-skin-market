@@ -180,7 +180,16 @@ npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web --rollback
 
 维护 DSH 皮肤时，把下面的提示词交给 Agent，准备收录或更新展示字段。市场不会代替你登录 GitHub，也不会静默创建 PR。
 
-新收录只写薄条目：`url`、`subpath`、`name`、`author`、`description`、`screenshots`。`name` 如果写，必须同时有 `zh` 和 `en`。package、loader id、commit、许可证和兼容范围由 CI 从皮肤仓库读取，不要写进 YAML。社区 PR 只改一个 `registry/skins/<owner>__<repo>.yml`，不要改 `data/catalog.json` 或 `data/catalog-copy.json`。
+新收录只写薄条目，字段和优先级见下表。package、loader id、commit、许可证和兼容范围由 CI 从皮肤仓库读取，不要写进 YAML。社区 PR 只改一个 `registry/skins/<owner>__<repo>.yml`，不要改 `data/catalog.json` 或 `data/catalog-copy.json`。
+
+<!-- submission-contract:START -->
+| 类别 | 字段 / 项 | 规则 |
+| --- | --- | --- |
+| 作者写（薄条目） | `url`、`subpath`、`name`、`author`、`description`、`screenshots` | 只写这些；`name` 写了就必须同时有 `zh` 和 `en`。 |
+| CI 自动补 | `package`、`rowId`、`install`、`license`、`compatibility`、`category`、`tags`、`modes` | 不要手写；写了会被 schema 拒绝。 |
+| 软必填（不阻断，进补全队列） | 可用预览图（上游或实机）、双语展示名 / 描述、动效 GIF（motion）、启动 launchGif（splash） | 缺了仍可合并，但会进补全队列并在每日报告出现。 |
+| 推荐（只提示） | 实机截图 `marketScreenshots`、封面 `listScreenshot`、WebP `media`、README 安装命令 / 版本范围 / `dsh-plugin` topic、Desktop 支持 | 不阻断合并。 |
+<!-- submission-contract:END -->
 
 皮肤仓库需要能被 CI 读到：公开 GitHub 仓库或 monorepo 子目录；`package.json` 有 name、version、license 和 `dsh.client`；`cordis.patch.yml` 有对应 loader。预览图用仓库内的 png、jpg、webp 或 gif。建议 README 声明 DSH Web 版本范围和一条 `dsh plugin add` 安装命令，并为仓库加上 `dsh-plugin` Topic。
 

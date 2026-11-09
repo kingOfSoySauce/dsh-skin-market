@@ -180,7 +180,16 @@ This command disables skins managed by Skin Market and restores the default appe
 
 If you maintain a DSH skin, give one of the prompts below to an Agent to prepare a catalog entry or update its display fields. The market does not log in to GitHub for you or silently create a PR.
 
-A new entry is a thin YAML file containing only `url`, `subpath`, `name`, `author`, `description`, and `screenshots`. If you write `name`, include both `zh` and `en`. CI reads the package, loader id, commit, license, and compatibility range from the skin repository. Do not write them into the YAML. A community PR changes exactly one `registry/skins/<owner>__<repo>.yml` and does not edit `data/catalog.json` or `data/catalog-copy.json`.
+A new entry is a thin YAML file; fields and priority are in the table below. CI reads the package, loader id, commit, license, and compatibility range from the skin repository. Do not write them into the YAML. A community PR changes exactly one `registry/skins/<owner>__<repo>.yml` and does not edit `data/catalog.json` or `data/catalog-copy.json`.
+
+<!-- submission-contract:START -->
+| Group | Fields / items | Rule |
+| --- | --- | --- |
+| Author (thin entry) | `url`, `subpath`, `name`, `author`, `description`, `screenshots` | Write only these. If you write `name`, include both `zh` and `en`. |
+| Filled by CI | `package`, `rowId`, `install`, `license`, `compatibility`, `category`, `tags`, `modes` | Do not write these; the schema rejects them. |
+| Soft-required (non-blocking, enters the completion queue) | a usable preview image (upstream or captured), bilingual display name / description, motion GIF, splash launchGif | An entry may merge without them, but it enters the completion queue and the daily report. |
+| Recommended (advisory only) | captured `marketScreenshots`, cover `listScreenshot`, WebP `media`, README install command / version range / `dsh-plugin` topic, Desktop support | Never blocks a merge. |
+<!-- submission-contract:END -->
 
 CI must be able to read the skin repository: a public GitHub repository or monorepo subdirectory; `package.json` with name, version, license, and `dsh.client`; and a matching loader row in `cordis.patch.yml`. Preview images must be png, jpg, webp, or gif files in the repository. It also helps to declare the DSH Web version range and a `dsh plugin add` command in the README, and to add the `dsh-plugin` topic.
 
