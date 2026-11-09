@@ -61,6 +61,7 @@ import { setGeneratedMediaSources } from '../../src/media-preview.ts'
 import { createStaticTranslator, messageCatalog } from '../../src/client/i18n.ts'
 import { compatibilityContext } from '../../src/compatibility.ts'
 import type { CatalogSkin, Operation, RuntimeSkin } from '../../src/client/types.ts'
+import { stubMarketFetch } from '../fixtures/market-host.ts'
 
 /** Product copy from the same catalog the section renders; rewording must not break behavior tests. */
 const zh = messageCatalog.zh
@@ -111,16 +112,15 @@ describe('client market', () => {
     Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText } })
     const operation: Operation = { id: 'repair-handoff', skinId: skin.id, kind: 'uninstall', phase: 'failed', startedAt: new Date().toISOString(), failure: { kind: 'unexpected-store', message: 'store mismatch' } }
     const diagnosticLog = '# dsh-skin-market diagnostic log\nversion: 0.1.62\n[error] sanitized-store-mismatch\n'
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind, runtime: { ...dshRuntime, version: '0.2.1-alpha.3' }, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ updateAvailable: false }) }
-      if (url.endsWith('/uninstall') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: operation.id }) }
-      if (url.endsWith(`/operations/${operation.id}`)) return { ok: true, json: async () => operation }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { hostKind, runtime: { ...dshRuntime, version: '0.2.1-alpha.3' }, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
+      if (url.endsWith('/uninstall') && init?.method === 'POST') return { operationId: operation.id }
+      if (url.endsWith(`/operations/${operation.id}`)) return operation
       if (url.endsWith('/logs?operationId=repair-handoff')) return { ok: true, text: async () => diagnosticLog }
       throw new Error(`Unexpected request: ${url} ${init?.method ?? 'GET'}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard(/测试皮肤 已安装卡片/)
     fireEvent.click(screen.getByRole('button', { name: '卸载' }))
@@ -153,18 +153,17 @@ describe('client market', () => {
       kind: 'configuration-override', message: 'covered', desiredEnabled: false,
       configurationOverride: { status: 'blocked', rowId: skin.rowId, desiredEnabled: false, sharedAcrossProfiles: true, reason: '需要原管理工具处理。' },
     } }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'desktop', runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', installedVersion: '1.0.0', updateAvailable: false }] }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ updateAvailable: false }) }
-      if (url.endsWith('/deactivate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: operation.id }) }
-      if (url.endsWith(`/operations/${operation.id}`)) return { ok: true, json: async () => operation }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { hostKind: 'desktop', runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', installedVersion: '1.0.0', updateAvailable: false }] }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
+      if (url.endsWith('/deactivate') && init?.method === 'POST') return { operationId: operation.id }
+      if (url.endsWith(`/operations/${operation.id}`)) return operation
       if (url.endsWith('/logs?operationId=repair-copy-failed')) return failure === 'logs'
         ? { ok: false, status: 500 }
         : { ok: true, text: async () => '# dsh-skin-market diagnostic log\nredacted' }
       throw new Error(`Unexpected request: ${url} ${init?.method ?? 'GET'}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     const card = await screen.findByRole('button', { name: /测试皮肤 已安装卡片/ })
     fireEvent.click(within(card.closest('article')!).getByRole('button', { name: '停用' }))
@@ -192,25 +191,24 @@ describe('client market', () => {
       configurationOverride: { status: 'repairable', context, source: 'home', file, rowId: oldSkin.rowId, previousDisabled: false, desiredEnabled: false, sharedAcrossProfiles: true, reason: '静态覆盖可移除。' },
     } }
     let repaired = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin, oldSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin, oldSkin] }
+      if (url.endsWith('/state')) return { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [
         { skinId: skin.id, installation: 'installed', activation: repaired ? 'active' : 'inactive', installedVersion: '1.0.0', updateAvailable: false },
         { skinId: oldSkin.id, installation: 'installed', activation: repaired ? 'inactive' : 'active', primary: true, installedVersion: '1.0.0', updateAvailable: false },
-      ] }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ updateAvailable: false }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: operation.id }) }
-      if (url.endsWith(`/operations/${operation.id}`)) return { ok: true, json: async () => operation }
+      ] }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: operation.id }
+      if (url.endsWith(`/operations/${operation.id}`)) return operation
       if (url.endsWith('/operations/repair-native/retry') && init?.method === 'POST') {
         expect(JSON.parse(String(init.body))).toEqual({ action: 'repair-configuration', configurationContext: context,
           acknowledgeCompatibility: true, compatibilityContext: compatibilityContext(managedDesktopSkin, dshRuntime) })
         repaired = true
-        return { ok: true, json: async () => ({ operationId: 'repair-native-running' }) }
+        return { operationId: 'repair-native-running' }
       }
-      if (url.endsWith('/operations/repair-native-running')) return { ok: true, json: async () => ({ ...operation, id: 'repair-native-running', phase: 'done', application: 'applied', failure: undefined }) }
+      if (url.endsWith('/operations/repair-native-running')) return { ...operation, id: 'repair-native-running', phase: 'done', application: 'applied', failure: undefined }
       throw new Error(`Unexpected request: ${url} ${init?.method ?? 'GET'}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     const card = await screen.findByRole('button', { name: /测试皮肤 已安装卡片/ })
     fireEvent.click(within(card.closest('article')!).getByRole('button', { name: '使用' }))
@@ -233,14 +231,14 @@ describe('client market', () => {
     let retries = 0
     let finishRetry!: (response: unknown) => void
     const pending = new Promise(resolve => { finishRetry = resolve })
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime,
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime,
         ...(source === 'skin' ? { operations: [] } : { marketUpdateOperation: operation }),
-      }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: id }) }
-      if (url.endsWith(`/operations/${id}`)) return { ok: true, json: async () => ({ ...operation, kind: 'install', skinId: skin.id }) }
+      }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: id }
+      if (url.endsWith(`/operations/${id}`)) return { ...operation, kind: 'install', skinId: skin.id }
       if (url.endsWith(`/operations/${id}/retry`) && init?.method === 'POST') {
         retries += 1
         expect(JSON.parse(String(init.body))).toEqual({ action: 'retry' })
@@ -248,7 +246,6 @@ describe('client market', () => {
       }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     const view = render(<SkinMarketSection t={key => key} />)
     if (source === 'skin') fireEvent.click(await screen.findByRole('button', { name: zh['common.installAndUse'] }))
     const title = source === 'skin' ? '安装 测试皮肤' : '皮肤市场更新失败'
@@ -278,14 +275,14 @@ describe('client market', () => {
       id: 'dead-source', kind: 'install' as const, skinId: skin.id, phase: 'failed' as const, startedAt: new Date().toISOString(),
       failure: { kind: 'existing-source-unreachable' as const, message: 'blocked', packageName: 'dead-skin', unreachableSource: { repository: 'owner/dead', commit } },
     }
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime, installEnvironment: { platform: 'darwin', profile: 'web', profileDir: '/Users/leon/.dsh/profiles/web', cliAvailable: true } }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.75', latestVersion: '0.1.75', updateAvailable: false }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: operation.id }) }
-      if (url.endsWith(`/operations/${operation.id}`)) return { ok: true, json: async () => operation }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime, installEnvironment: { platform: 'darwin', profile: 'web', profileDir: '/Users/leon/.dsh/profiles/web', cliAvailable: true } }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.75', latestVersion: '0.1.75', updateAvailable: false }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: operation.id }
+      if (url.endsWith(`/operations/${operation.id}`)) return operation
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: zh['common.installAndUse'] }))
     const dialog = await screen.findByRole('dialog', { name: '安装未完成' })
@@ -306,18 +303,17 @@ describe('client market', () => {
 
   it.each(['plain', 'build'] as const)('hides an acknowledged %s failure and prompts again for a new operation', async type => {
     let generation = 0
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ updateAvailable: false }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: `${type}-${++generation}` }) }
-      if (url.endsWith(`/operations/${type}-${generation}`)) return { ok: true, json: async () => ({
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: `${type}-${++generation}` }
+      if (url.endsWith(`/operations/${type}-${generation}`)) return {
         id: `${type}-${generation}`, kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(),
         ...(type === 'build' && { failure: { kind: 'build-approval', message: 'blocked native build', action: 'approve-build', packageName: 'node-pty' } }),
-      }) }
+      }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     const install = await screen.findByRole('button', { name: zh['common.installAndUse'] })
     fireEvent.click(install)
@@ -336,19 +332,18 @@ describe('client market', () => {
   it.each(['post', 'poll'] as const)('prompts again after a second independent skin installation %s exception', async stage => {
     const clock = vi.spyOn(Date, 'now').mockReturnValue(1_800_000_000_000)
     let attempts = 0
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ updateAvailable: false }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
       if (url.endsWith('/install') && init?.method === 'POST') {
         attempts += 1
         if (stage === 'post') throw new Error('connection failed')
-        return { ok: true, json: async () => ({ operationId: `poll-exception-${attempts}` }) }
+        return { operationId: `poll-exception-${attempts}` }
       }
       if (url.includes('/operations/poll-exception-')) throw new Error('poll failed')
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     try {
       render(<SkinMarketSection t={key => key} />)
       await openSkinCard()
@@ -365,14 +360,13 @@ describe('client market', () => {
   it('prompts again when a second market-update request fails before returning an operation', async () => {
     const clock = vi.spyOn(Date, 'now').mockReturnValue(1_800_000_000_000)
     let attempts = 0
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
       if (url.endsWith('/market-update') && init?.method === 'POST') { attempts += 1; throw new Error('request failed') }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.61', latestVersion: '0.1.62', updateAvailable: true }) }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.61', latestVersion: '0.1.62', updateAvailable: true }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     try {
       render(<SkinMarketSection t={key => key} />)
       const update = await screen.findByRole('button', { name: '更新皮肤市场到 0.1.62' })
@@ -389,16 +383,15 @@ describe('client market', () => {
     let generation = 1
     let phase = 'waiting'
     const operation = () => ({ id: `${source}-waiting-${generation}`, phase, startedAt: new Date().toISOString(), message: 'native raw result', ...(source === 'skin' && { kind: 'install', skinId: skin.id }) })
-    const fetchMock = vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime,
+    const fetchMock = stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime,
         ...(phase === 'waiting' && { profileBusy: '宿主结果尚未确认' }),
         ...(source === 'skin' ? { operations: [operation()] } : { marketUpdateOperation: operation() }),
-      }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false }) }
-      return { ok: true, json: async () => operation() }
+      }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false }
+      return operation()
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     let dialog = await screen.findByRole('dialog', { name: zh['common.confirmResult'] })
     expect(dialog.textContent).toContain(zh['common.resultNotConfirmed'])
@@ -429,10 +422,9 @@ describe('client market', () => {
       ...(source === 'skin' && { kind: 'install', skinId: skin.id }),
       ...(phase === 'failed' && { failure: { kind: 'network', message: 'ECONNRESET', action: 'retry' } }),
     })
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] }
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] }
       : url.endsWith('/state') ? { skins: [], runtime: dshRuntime, ...(phase === 'waiting' && { profileBusy: '等待宿主确认' }), ...(source === 'skin' ? { operations: [operation()] } : { marketUpdateOperation: operation() }) }
-        : url.endsWith('/market-update') ? { updateAvailable: false } : operation() }))
-    vi.stubGlobal('fetch', fetchMock)
+        : url.endsWith('/market-update') ? { updateAvailable: false } : operation()))
     render(<SkinMarketSection t={key => key} />)
     const waiting = await screen.findByRole('dialog', { name: zh['common.confirmResult'] })
     fireEvent.click(within(waiting).getByRole('button', { name: '知道了' }))
@@ -453,14 +445,13 @@ describe('client market', () => {
   it.each(['restart', 'waiting'] as const)('keeps a use confirmation in front of a new passive %s prompt without dropping that prompt', async pendingKind => {
     const incompatible = { ...managedDesktopSkin, compatibility: { dsh: '0.1.0-rc.6', platform: ['web', 'desktop'] } }
     let pending = false
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [incompatible] }
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [incompatible] }
       : url.endsWith('/market-update') ? { currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false }
         : { hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version: '0.2.1-alpha.3' }, management: officialManagement,
           skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }],
           ...(pending && pendingKind === 'restart' && { marketUpdateRestartRequired: true }),
           ...(pending && pendingKind === 'waiting' && { operations: [{ id: 'passive-waiting', kind: 'install', skinId: 'other.skin', phase: 'waiting', startedAt: new Date().toISOString() }] }),
-        } }))
-    vi.stubGlobal('fetch', fetchMock)
+        }))
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click((await screen.findAllByRole('button', { name: '使用' }))[0]!)
     const use = await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })
@@ -488,17 +479,16 @@ describe('client market', () => {
     const first = { id: 'first-retry-source', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), failure: { kind: 'network', message: 'ECONNRESET', action: 'retry' } }
     let finishPoll!: (response: unknown) => void
     const polling = new Promise(resolve => { finishPoll = resolve })
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin, other] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime, operations: retried ? [{ ...first, id: 'first-retry-running', phase: completed ? 'done' : 'installing', failure: undefined }] : [] }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: JSON.parse(String(init.body)).skinId === other.id ? 'unrelated-failure' : first.id }) }
-      if (url.endsWith('/operations/first-retry-source')) return { ok: true, json: async () => first }
-      if (url.endsWith('/operations/unrelated-failure')) return { ok: true, json: async () => ({ id: 'unrelated-failure', kind: 'install', skinId: other.id, phase: 'failed', startedAt: new Date().toISOString(), message: 'raw other failure' }) }
-      if (url.endsWith('/operations/first-retry-source/retry') && init?.method === 'POST') { retried = true; return { ok: true, json: async () => ({ operationId: 'first-retry-running' }) } }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin, other] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime, operations: retried ? [{ ...first, id: 'first-retry-running', phase: completed ? 'done' : 'installing', failure: undefined }] : [] }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: JSON.parse(String(init.body)).skinId === other.id ? 'unrelated-failure' : first.id }
+      if (url.endsWith('/operations/first-retry-source')) return first
+      if (url.endsWith('/operations/unrelated-failure')) return { id: 'unrelated-failure', kind: 'install', skinId: other.id, phase: 'failed', startedAt: new Date().toISOString(), message: 'raw other failure' }
+      if (url.endsWith('/operations/first-retry-source/retry') && init?.method === 'POST') { retried = true; return { operationId: 'first-retry-running' } }
       if (url.endsWith('/operations/first-retry-running')) return await polling
-      return { ok: true, json: async () => ({}) }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     const firstCard = (await screen.findByRole('button', { name: '测试皮肤 界面预览' })).closest('article')!
     fireEvent.click(within(firstCard).getByRole('button', { name: zh['common.installAndUse'] }))
@@ -552,17 +542,16 @@ describe('client market', () => {
   it('asks before migrating the chosen skin and preserves the active-skin restart flow', async () => {
     let migrated = false
     const sourceMigration = { target: 'skin@1.0.0', currentSource: skin.install.target }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runningAgentCount: 0, runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: migrated ? 'restart-required' : 'active', pinned: true, installedVersion: '1.0.0', updateAvailable: false, ...(!migrated && { sourceMigration }) }] }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { hostKind: 'dsh', runningAgentCount: 0, runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: migrated ? 'restart-required' : 'active', pinned: true, installedVersion: '1.0.0', updateAvailable: false, ...(!migrated && { sourceMigration }) }] }
       if (url.endsWith('/migrate') && init?.method === 'POST') {
         migrated = true
-        return { ok: true, json: async () => ({ operationId: 'migrate-1' }) }
+        return { operationId: 'migrate-1' }
       }
-      if (url.endsWith('/operations/migrate-1')) return { ok: true, json: async () => ({ id: 'migrate-1', kind: 'migrate', skinId: skin.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+      if (url.endsWith('/operations/migrate-1')) return { id: 'migrate-1', kind: 'migrate', skinId: skin.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click((await screen.findAllByRole('button', { name: '切换到 npm 来源' }))[0]!)
     const firstDialog = screen.getByRole('dialog', { name: '切换到 npm 来源' })
@@ -586,10 +575,10 @@ describe('client market', () => {
 
   it.each(['missing', 'no-source', 'manual', 'desktop'])('hides source migration for %s skins', async mode => {
     const entry = mode === 'manual' ? { ...skin, review: { compatibility: 'verified', preview: 'verified', installation: 'manual-only' } } : skin
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [entry] } : {
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [entry] } : {
       hostKind: mode === 'desktop' ? 'desktop' : 'dsh',
       skins: [{ skinId: skin.id, installation: mode === 'missing' ? 'missing' : 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false, ...(mode !== 'no-source' && { sourceMigration: { target: 'skin@1.0.0', currentSource: skin.install.target } }) }],
-    } })))
+    }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     expect(screen.queryByRole('button', { name: '切换到 npm 来源' })).toBeNull()
@@ -598,17 +587,16 @@ describe('client market', () => {
   it.each(['card replacement', 'card update', 'detail update'])('confirms local replacement from the %s entry and sends the approved source context', async entry => {
     let migrated = false
     const sourceMigration = { kind: 'local', target: 'skin@1.0.0', currentSource: 'file:/Users/example/private-skins/local.tgz', currentVersion: '1.1.0-compat.2', targetVersion: '1.0.0', context: 'a'.repeat(64), downgrade: true }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runningAgentCount: 0, runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: migrated ? 'restart-required' : 'active', pinned: true, installedVersion: migrated ? '1.0.0' : sourceMigration.currentVersion, updateAvailable: !migrated, ...(!migrated && { sourceMigration }) }] }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { hostKind: 'dsh', runningAgentCount: 0, runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: migrated ? 'restart-required' : 'active', pinned: true, installedVersion: migrated ? '1.0.0' : sourceMigration.currentVersion, updateAvailable: !migrated, ...(!migrated && { sourceMigration }) }] }
       if (url.endsWith('/migrate') && init?.method === 'POST') {
         migrated = true
-        return { ok: true, json: async () => ({ operationId: 'local-replacement' }) }
+        return { operationId: 'local-replacement' }
       }
-      if (url.endsWith('/operations/local-replacement')) return { ok: true, json: async () => ({ id: 'local-replacement', kind: 'migrate', skinId: skin.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+      if (url.endsWith('/operations/local-replacement')) return { id: 'local-replacement', kind: 'migrate', skinId: skin.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     if (entry === 'detail update') await openSkinCard(/测试皮肤 已安装卡片/)
     fireEvent.click((await screen.findAllByRole('button', { name: entry === 'card replacement' ? zh['common.replaceWithMarket'] : '更新' }))[0]!)
@@ -634,11 +622,10 @@ describe('client market', () => {
   it('explains that an incompatible market replacement first disables the selected local skin', async () => {
     const entry = { ...skin, compatibility: { ...skin.compatibility, dsh: '^9.0.0' } }
     const sourceMigration = { kind: 'local', target: 'skin@1.0.0', currentSource: 'file:/tmp/local.tgz', currentVersion: '1.1.0', targetVersion: '1.0.0', context: 'a'.repeat(64), downgrade: true }
-    const fetchMock = vi.fn(async (url: string, _init?: RequestInit) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [entry] } : {
+    const fetchMock = stubMarketFetch(async (url: string, _init?: RequestInit) => (url.endsWith('/catalog') ? { skins: [entry] } : {
       hostKind: 'dsh', runtime: dshRuntime, management: officialManagement,
       skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', primary: true, pinned: true, installedVersion: sourceMigration.currentVersion, updateAvailable: true, sourceMigration }],
-    } }))
-    vi.stubGlobal('fetch', fetchMock)
+    }))
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click((await screen.findAllByRole('button', { name: zh['common.replaceWithMarket'] }))[0]!)
     const dialog = await screen.findByRole('dialog', { name: zh['common.replaceWithMarket'] })
@@ -650,14 +637,13 @@ describe('client market', () => {
 
   it.each(['context', 'version'] as const)('requires another confirmation when local replacement %s changes', async changed => {
     let sourceMigration = { kind: 'local' as const, target: 'skin@1.0.0', currentSource: 'link:/Users/example/private-skins/local', currentVersion: '0.9.0', targetVersion: '1.0.0', context: 'a'.repeat(64), downgrade: false }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: sourceMigration.currentVersion, updateAvailable: true, sourceMigration }] }) }
-      if (url.endsWith('/migrate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'replacement-refreshed' }) }
-      if (url.endsWith('/operations/replacement-refreshed')) return { ok: true, json: async () => ({ id: 'replacement-refreshed', kind: 'migrate', skinId: skin.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { hostKind: 'dsh', runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: sourceMigration.currentVersion, updateAvailable: true, sourceMigration }] }
+      if (url.endsWith('/migrate') && init?.method === 'POST') return { operationId: 'replacement-refreshed' }
+      if (url.endsWith('/operations/replacement-refreshed')) return { id: 'replacement-refreshed', kind: 'migrate', skinId: skin.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click((await screen.findAllByRole('button', { name: zh['common.replaceWithMarket'] }))[0]!)
     expect(screen.getByRole('dialog', { name: zh['common.replaceWithMarket'] }).textContent).toContain('当前版本 0.9.0 → 市场版本 1.0.0')
@@ -750,14 +736,13 @@ describe('client market', () => {
   it('keeps the selected detail and open modal during a catalog refresh', async () => {
     const second = { ...skin, id: 'test.second', name: { zh: '第二皮肤', en: 'Second Skin' }, package: 'second-skin', rowId: 'second-skin' }
     let catalogRequests = 0
-    const fetchMock = vi.fn(async (url: string) => {
+    const fetchMock = stubMarketFetch(async (url: string) => {
       if (url.endsWith('/catalog')) {
         catalogRequests += 1
-        return { ok: true, json: async () => ({ skins: catalogRequests === 1 ? [skin, second] : [skin] }) }
+        return { skins: catalogRequests === 1 ? [skin, second] : [skin] }
       }
-      return { ok: true, json: async () => ({ skins: [], installedClientPlugins: [], runningAgentCount: 0 }) }
+      return { skins: [], installedClientPlugins: [], runningAgentCount: 0 }
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     fireEvent.click(await screen.findByRole('button', { name: /第二皮肤 界面预览/ }))
@@ -770,11 +755,10 @@ describe('client market', () => {
   })
 
   it('hides catalog metadata and the manual refresh control', async () => {
-    const fetchMock = vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin], generatedAt: '2026-08-15T12:00:00Z', catalogSource: 'bundled' }) }
-      return { ok: true, json: async () => ({ skins: [], installedClientPlugins: [], runningAgentCount: 0 }) }
+    const fetchMock = stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [skin], generatedAt: '2026-08-15T12:00:00Z', catalogSource: 'bundled' }
+      return { skins: [], installedClientPlugins: [], runningAgentCount: 0 }
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     expect(await screen.findByRole('button', { name: /测试皮肤 界面预览/ })).toBeTruthy()
@@ -785,18 +769,17 @@ describe('client market', () => {
 
   it('shows a compact self-update action only when GitHub has a newer market version', async () => {
     let restartRequired = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runningAgentCount: 0, marketUpdateRestartRequired: restartRequired }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runningAgentCount: 0, marketUpdateRestartRequired: restartRequired }
       if (url.endsWith('/market-update') && init?.method === 'POST') {
         restartRequired = true
-        return { ok: true, json: async () => ({ currentVersion: '0.1.16', latestVersion: '0.1.16', updateAvailable: false }) }
+        return { currentVersion: '0.1.16', latestVersion: '0.1.16', updateAvailable: false }
       }
-      if (url.endsWith('/market-update') && restartRequired) return { ok: true, json: async () => ({ currentVersion: '0.1.16', latestVersion: '0.1.16', updateAvailable: false }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.15', latestVersion: '0.1.16', updateAvailable: true }) }
+      if (url.endsWith('/market-update') && restartRequired) return { currentVersion: '0.1.16', latestVersion: '0.1.16', updateAvailable: false }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.15', latestVersion: '0.1.16', updateAvailable: true }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     const view = render(<SkinMarketSection t={key => key} />)
 
     const update = await screen.findByRole('button', { name: '更新皮肤市场到 0.1.16' })
@@ -820,18 +803,17 @@ describe('client market', () => {
 
   it('keeps a Desktop release-age hold silent without offering a dead update action', async () => {
     let marketUpdateChecks = 0
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/market-update') && init?.method === 'POST') return { ok: true, json: async () => ({ currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/market-update') && init?.method === 'POST') return { currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false }
       if (url.endsWith('/market-update')) {
         marketUpdateChecks += 1
-        return { ok: true, json: async () => ({ currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: true,
-          updateBlockedReason: '旧版服务推断的新包保护', packageOperationsWarning: '旧版服务推断的安装风险', updateAvailableAt: new Date(Date.now() + 60_000).toISOString() }) }
+        return { currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: true,
+          updateBlockedReason: '旧版服务推断的新包保护', packageOperationsWarning: '旧版服务推断的安装风险', updateAvailableAt: new Date(Date.now() + 60_000).toISOString() }
       }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     const install = await screen.findByRole('button', { name: zh['common.installAndUse'] })
     await waitFor(() => expect(marketUpdateChecks).toBeGreaterThan(0))
@@ -845,14 +827,14 @@ describe('client market', () => {
     try {
       let held = true
       const availableAt = new Date(Date.now() + 60_000).toISOString()
-      vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-        if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-        if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-        if (url.endsWith('/market-update')) return { ok: true, json: async () => held
+      stubMarketFetch(async (url: string) => {
+        if (url.endsWith('/catalog')) return { skins: [skin] }
+        if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+        if (url.endsWith('/market-update')) return held
           ? { currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: false, updateBlockedReason: '供应链安全观察期', updateAvailableAt: availableAt }
-          : { currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: true } }
+          : { currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: true }
         throw new Error(`Unexpected request: ${url}`)
-      }))
+      })
       render(<SkinMarketSection t={key => key} />)
       await act(async () => { await vi.advanceTimersByTimeAsync(0) })
       expect(screen.getByRole('button', { name: zh['common.installAndUse'] })).toBeTruthy()
@@ -864,11 +846,11 @@ describe('client market', () => {
   })
 
   it('keeps the real Desktop restart reminder while a market update is available', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
       hostKind: 'desktop', restartAvailable: false, skins: [], marketUpdateRestartRequired: true,
     } : url.endsWith('/market-update') ? {
       currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: true,
-    } : {} })))
+    } : {}))
     render(<SkinMarketSection t={key => key} />)
     expect(await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })).toBeTruthy()
     expect(screen.getByRole('button', { name: '更新皮肤市场到 0.1.61' }).hasAttribute('disabled')).toBe(false)
@@ -877,21 +859,20 @@ describe('client market', () => {
   it('requires an explicit exact-version approval before continuing a market update', async () => {
     let approved = false
     const failure = { kind: 'release-age', message: '新包保护', action: 'approve-release-age', releaseAgeTarget: { packageName: 'dsh-skin-market', version: '0.1.61' } }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/market-update') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'market-age-source' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/market-update') && init?.method === 'POST') return { operationId: 'market-age-source' }
       if (url.endsWith('/market-update/operations/market-age-source/retry') && init?.method === 'POST') {
         expect(JSON.parse(String(init.body))).toEqual({ action: 'approve-release-age' })
         approved = true
-        return { ok: true, json: async () => ({ operationId: 'market-age-approved' }) }
+        return { operationId: 'market-age-approved' }
       }
-      if (url.endsWith('/market-update/operations/market-age-source')) return { ok: true, json: async () => ({ id: 'market-age-source', phase: 'failed', startedAt: new Date().toISOString(), failure }) }
-      if (url.endsWith('/market-update/operations/market-age-approved')) return { ok: true, json: async () => ({ id: 'market-age-approved', phase: 'done', startedAt: new Date().toISOString(), status: { currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false } }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: true }) }
+      if (url.endsWith('/market-update/operations/market-age-source')) return { id: 'market-age-source', phase: 'failed', startedAt: new Date().toISOString(), failure }
+      if (url.endsWith('/market-update/operations/market-age-approved')) return { id: 'market-age-approved', phase: 'done', startedAt: new Date().toISOString(), status: { currentVersion: '0.1.61', latestVersion: '0.1.61', updateAvailable: false } }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.60', latestVersion: '0.1.61', updateAvailable: true }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '更新皮肤市场到 0.1.61' }))
     const dialog = await screen.findByRole('dialog', { name: zh['failure.marketUpdateApprovalTitle'] })
@@ -908,18 +889,17 @@ describe('client market', () => {
 
   it('uses the shared operation banner in the home header while the market updates', async () => {
     let operationRequests = 0
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runningAgentCount: 0, marketUpdateOperation: null }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runningAgentCount: 0, marketUpdateOperation: null }
       if (url.endsWith('/market-update') && init?.method === 'POST') return { ok: true, status: 202, json: async () => ({ operationId: 'market-update-1' }) }
       if (url.endsWith('/market-update/operations/market-update-1')) {
         operationRequests += 1
-        return { ok: true, json: async () => ({ id: 'market-update-1', phase: 'downloading', cancelable: true, startedAt: new Date().toISOString(), message: '正在下载皮肤市场更新包' }) }
+        return { id: 'market-update-1', phase: 'downloading', cancelable: true, startedAt: new Date().toISOString(), message: '正在下载皮肤市场更新包' }
       }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.15', latestVersion: '0.1.16', updateAvailable: true, operation: null }) }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.15', latestVersion: '0.1.16', updateAvailable: true, operation: null }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     fireEvent.click(await screen.findByRole('button', { name: '更新皮肤市场到 0.1.16' }))
@@ -940,11 +920,11 @@ describe('client market', () => {
       startedAt: new Date().toISOString(), message: zh['common.operationWaitingOther'], messageKey: 'common.operationWaitingOther' as const,
       step: '下载并检查安装包', stepKey: 'common.stepDownloadInspect' as const,
     }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation, runtime: dshRuntime }) }
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], operation, runtime: dshRuntime }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={createStaticTranslator('en')} />)
 
     await waitFor(() => expect(screen.getByRole('status').querySelector('strong')?.textContent).toBe('Downloading “Test Skin”'))
@@ -964,22 +944,22 @@ describe('client market', () => {
     let resolveTerminal!: (value: unknown) => void
     const terminalResult = new Promise<unknown>(resolve => { resolveTerminal = resolve })
     const operation = { id: 'market-waiting', phase, startedAt: '2026-10-14T00:00:00Z' }
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
       if (url.endsWith('/state')) {
         stateRequests += 1
-        return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime, runningAgentCount: 0, marketUpdateOperation: terminal ? operation : null }) }
+        return { skins: [], runtime: dshRuntime, runningAgentCount: 0, marketUpdateOperation: terminal ? operation : null }
       }
-      if (url.endsWith('/market-update') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: operation.id }) }
+      if (url.endsWith('/market-update') && init?.method === 'POST') return { operationId: operation.id }
       if (url.endsWith('/market-update/operations/market-waiting')) {
         operationRequests += 1
-        return { ok: true, json: async () => operationRequests === 1
+        return operationRequests === 1
           ? { ...operation, phase: 'waiting', message: '等待宿主确认市场更新' }
-          : terminalResult }
+          : terminalResult
       }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.57', latestVersion: '0.1.58', updateAvailable: true, operation: null }) }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.57', latestVersion: '0.1.58', updateAvailable: true, operation: null }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     const update = await screen.findByRole('button', { name: '更新皮肤市场到 0.1.58' })
     const install = await screen.findByRole('button', { name: zh['common.installAndUse'] })
@@ -1005,17 +985,17 @@ describe('client market', () => {
   it('explains a market self-update store mismatch in a dialog with the troubleshooting README', async () => {
     const clipboard = vi.fn(async () => undefined)
     Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText: clipboard } })
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runningAgentCount: 0, marketUpdateOperation: null }) }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runningAgentCount: 0, marketUpdateOperation: null }
       if (url.endsWith('/market-update') && init?.method === 'POST') return { ok: true, status: 202, json: async () => ({ operationId: 'market-update-store' }) }
       if (url.endsWith('/logs?operationId=market-update-store')) return { ok: true, text: async () => '# dsh-skin-market diagnostic log\nkind=unexpected-store' }
       if (url.endsWith('/market-update/operations/market-update-store')) {
-        return { ok: true, json: async () => ({ id: 'market-update-store', phase: 'failed', startedAt: new Date().toISOString(), message: '当前 profile 的 node_modules 由另一代 pnpm store 链接', failure: { kind: 'unexpected-store', message: '当前 profile 的 node_modules 由另一代 pnpm store 链接' } }) }
+        return { id: 'market-update-store', phase: 'failed', startedAt: new Date().toISOString(), message: '当前 profile 的 node_modules 由另一代 pnpm store 链接', failure: { kind: 'unexpected-store', message: '当前 profile 的 node_modules 由另一代 pnpm store 链接' } }
       }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.15', latestVersion: '0.1.16', updateAvailable: true, operation: null }) }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.15', latestVersion: '0.1.16', updateAvailable: true, operation: null }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
 
     fireEvent.click(await screen.findByRole('button', { name: '更新皮肤市场到 0.1.16' }))
@@ -1031,16 +1011,16 @@ describe('client market', () => {
   })
 
   it('keeps a generic market self-update failure on the diagnostic path', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runningAgentCount: 0 }) }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runningAgentCount: 0 }
       if (url.endsWith('/market-update') && init?.method === 'POST') return { ok: true, status: 202, json: async () => ({ operationId: 'market-update-generic' }) }
       if (url.endsWith('/market-update/operations/market-update-generic')) {
-        return { ok: true, json: async () => ({ id: 'market-update-generic', phase: 'failed', startedAt: new Date().toISOString(), message: 'plugin command exited 1', failure: { kind: 'command', message: 'plugin command exited 1' } }) }
+        return { id: 'market-update-generic', phase: 'failed', startedAt: new Date().toISOString(), message: 'plugin command exited 1', failure: { kind: 'command', message: 'plugin command exited 1' } }
       }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.15', latestVersion: '0.1.16', updateAvailable: true }) }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.15', latestVersion: '0.1.16', updateAvailable: true }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '更新皮肤市场到 0.1.16' }))
     const dialog = await screen.findByRole('dialog', { name: '皮肤市场更新失败' })
@@ -1050,7 +1030,7 @@ describe('client market', () => {
   })
 
   it('turns an empty successful response into a useful Host update error', async () => {
-    vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, status: 200, json: async () => { throw new SyntaxError('Unexpected end of JSON input') } })))
+    stubMarketFetch(async () => ({ ok: true, status: 200, json: async () => { throw new SyntaxError('Unexpected end of JSON input') } }))
     render(<SkinMarketSection t={key => key} />)
 
     expect(await screen.findByText(zh['market.updateServiceDataInvalid'])).toBeTruthy()
@@ -1121,11 +1101,11 @@ describe('client market', () => {
   })
 
   it('keeps the market dialog sizing rule owned and restores it if a host prunes it', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runtime: dshRuntime, skins: [] }) }
-      return { ok: true, json: async () => ({}) }
-    }))
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [] }
+      if (url.endsWith('/state')) return { hostKind: 'dsh', runtime: dshRuntime, skins: [] }
+      return {}
+    })
     const view = render(<SkinMarketSection t={key => key} />)
     const style = document.head.querySelector<HTMLStyleElement>('style[data-dsh-skin-market-wide]')
     expect(style).toBeTruthy()
@@ -1214,10 +1194,10 @@ describe('client market', () => {
     const activeSkin = { ...skin, id: 'test.active', name: { zh: '当前皮肤', en: 'Active Skin' } }
     let resolveCatalog!: (value: unknown) => void
     let resolveState!: (value: unknown) => void
-    vi.stubGlobal('fetch', vi.fn((url: string) => new Promise(resolve => {
+    stubMarketFetch((url: string) => new Promise(resolve => {
       if (url.endsWith('/catalog')) resolveCatalog = resolve
       else resolveState = resolve
-    })))
+    }))
 
     render(<SkinMarketSection t={key => key} />)
     expect(screen.getByText(zh['common.loadingSkins'])).toBeTruthy()
@@ -1238,7 +1218,7 @@ describe('client market', () => {
   })
 
   it('opens details in a labelled modal surface with an explicit close action', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
@@ -1251,7 +1231,7 @@ describe('client market', () => {
   })
 
   it('does not mutate the host settings navigation DOM', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
     render(
       <div role="dialog" aria-label="设置" data-test-settings-dialog>
         <nav>
@@ -1288,10 +1268,10 @@ describe('client market', () => {
       installedAt: `2026-08-${String(index + 1).padStart(2, '0')}T00:00:00Z`,
       lastOperatedAt: `2026-08-${String(index + 1).padStart(2, '0')}T00:00:00Z`,
     }))
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+    stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog') ? { skins: installedSkins } : { skins: runtime },
-    })))
+    }))
     render(<SkinMarketSection t={key => key} />)
 
     await waitFor(() => {
@@ -1316,13 +1296,13 @@ describe('client market', () => {
 
   it('does not render client plugins outside the market catalog in the installed list', async () => {
     const externalPackage = '@captain1275/dsh-client-ui-skin-blue-fantasy'
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+    stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog') ? { skins: [skin] } : {
         skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }],
         installedClientPlugins: [{ package: externalPackage, version: '0.3.1', spec: 'github:CAPTAIN1275/dsh-ui-web', rowIds: [], registered: false }],
       },
-    })))
+    }))
 
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: /测试皮肤 已安装卡片/ }))
@@ -1337,10 +1317,10 @@ describe('client market', () => {
   it('shows installed skeletons while runtime state loads and hides the section when empty', async () => {
     let resolveState!: (value: { skins: never[] }) => void
     const state = new Promise<{ skins: never[] }>(resolve => { resolveState = resolve })
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+    stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog') ? { skins: [skin] } : state,
-    })))
+    }))
 
     render(<SkinMarketSection t={key => key} />)
 
@@ -1352,11 +1332,11 @@ describe('client market', () => {
   it('keeps installed skeletons when runtime state arrives before catalog skins', async () => {
     let resolveCatalog!: (value: unknown) => void
     let resolveState!: (value: unknown) => void
-    vi.stubGlobal('fetch', vi.fn((url: string) => new Promise(resolve => {
+    stubMarketFetch((url: string) => new Promise(resolve => {
       if (url.endsWith('/catalog')) resolveCatalog = resolve
       else if (url.endsWith('/state')) resolveState = resolve
-      else resolve({ ok: true, json: async () => ({}) })
-    })))
+      else resolve(({}))
+    }))
 
     render(<SkinMarketSection t={key => key} />)
     expect(await screen.findByRole('status', { name: zh['common.loadingInstalledSkins'] })).toBeTruthy()
@@ -1377,11 +1357,11 @@ describe('client market', () => {
   it('paints installed cards from the cached catalog without waiting for catalog revalidation', async () => {
     const catalogCache = { read: vi.fn(async () => [skin]), write: vi.fn(async () => undefined) }
     let resolveState!: (value: unknown) => void
-    vi.stubGlobal('fetch', vi.fn((url: string) => {
+    stubMarketFetch((url: string) => {
       if (url.endsWith('/catalog')) return new Promise(() => undefined)
       if (url.endsWith('/state')) return new Promise(resolve => { resolveState = resolve })
-      return Promise.resolve({ ok: true, json: async () => ({}) })
-    }))
+      return Promise.resolve(({}))
+    })
 
     render(<SkinMarketSection t={key => key} catalogCache={catalogCache} />)
     expect(await screen.findByRole('button', { name: /测试皮肤 界面预览/ })).toBeTruthy()
@@ -1397,7 +1377,7 @@ describe('client market', () => {
   })
 
   it('opens an installed card directly in its selected detail', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+    stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [{
         skinId: skin.id,
@@ -1407,7 +1387,7 @@ describe('client market', () => {
         updateAvailable: false,
         installedAt: '2026-08-16T00:00:00Z',
       }] },
-    })))
+    }))
     render(<SkinMarketSection t={key => key} />)
 
     fireEvent.click(await screen.findByRole('button', { name: /测试皮肤 已安装卡片/ }))
@@ -1416,15 +1396,14 @@ describe('client market', () => {
   })
 
   it('installs and activates from the discovery card action', async () => {
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'card-install' }) }
-      if (url.endsWith('/operations/card-install')) return { ok: true, json: async () => ({ id: 'card-install', kind: 'install', skinId: skin.id, phase: 'done' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'card-install' }
+      if (url.endsWith('/operations/card-install')) return { id: 'card-install', kind: 'install', skinId: skin.id, phase: 'done' }
       if (url.endsWith('/activate') && init?.method === 'POST') return await new Promise(() => undefined)
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     const install = await screen.findByRole('button', { name: zh['common.installAndUse'] })
@@ -1440,27 +1419,26 @@ describe('client market', () => {
   it.each(['desktop', 'dsh'] as const)('keeps install-and-use for a %s host whose completed install does not require restart', async hostKind => {
     let installed = false
     let active = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin] }
+      if (url.endsWith('/state')) return {
         hostKind, restartAvailable: hostKind === 'dsh', runtime: { ...dshRuntime, version: '0.2.1-alpha.1' },
         ...(hostKind === 'desktop' ? { management: { ...officialManagement, installRequiresRestart: false } } : {}),
         skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: active ? 'active' : 'inactive', installedVersion: '1.0.0', updateAvailable: false }] : [],
-      }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }) }
+      }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }
       if (url.endsWith('/install') && init?.method === 'POST') {
         installed = true
-        return { ok: true, json: async () => ({ operationId: 'current-install' }) }
+        return { operationId: 'current-install' }
       }
-      if (url.endsWith('/operations/current-install')) return { ok: true, json: async () => ({ id: 'current-install', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: false }) }
+      if (url.endsWith('/operations/current-install')) return { id: 'current-install', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: false }
       if (url.endsWith('/activate') && init?.method === 'POST') {
         active = true
-        return { ok: true, json: async () => ({ operationId: 'current-activate' }) }
+        return { operationId: 'current-activate' }
       }
-      if (url.endsWith('/operations/current-activate')) return { ok: true, json: async () => ({ id: 'current-activate', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: false }) }
+      if (url.endsWith('/operations/current-activate')) return { id: 'current-activate', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: false }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     const clientRuntime = { setActive: vi.fn(async () => true) }
     render(<SkinMarketSection t={key => key} clientRuntime={clientRuntime} />)
     fireEvent.click(await screen.findByRole('button', { name: hostKind === 'desktop' ? '安装' : zh['common.installAndUse'] }))
@@ -1474,26 +1452,25 @@ describe('client market', () => {
   it('does not show a restart prompt when a Web install receipt is followed by an active hot activation', async () => {
     let installed = false
     let active = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return {
         hostKind: 'dsh', restartNoticeId: 'hot-receipt', runtime: dshRuntime,
         skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: active ? 'restart-required' : 'inactive', primary: active, clientModule: active, installedVersion: '1.0.0', updateAvailable: false }] : [],
-      }) }
+      }
       if (url.endsWith('/install') && init?.method === 'POST') {
         installed = true
-        return { ok: true, json: async () => ({ operationId: 'hot-install' }) }
+        return { operationId: 'hot-install' }
       }
-      if (url.endsWith('/operations/hot-install')) return { ok: true, json: async () => ({ id: 'hot-install', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: true }) }
+      if (url.endsWith('/operations/hot-install')) return { id: 'hot-install', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: true }
       if (url.endsWith('/activate') && init?.method === 'POST') {
         active = true
-        return { ok: true, json: async () => ({ operationId: 'hot-activate' }) }
+        return { operationId: 'hot-activate' }
       }
-      if (url.endsWith('/operations/hot-activate')) return { ok: true, json: async () => ({ id: 'hot-activate', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: true }) }
-      if (url.endsWith('/restart/clear') && init?.method === 'POST') return { ok: true, json: async () => ({ cleared: true, skinId: skin.id }) }
+      if (url.endsWith('/operations/hot-activate')) return { id: 'hot-activate', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: true }
+      if (url.endsWith('/restart/clear') && init?.method === 'POST') return { cleared: true, skinId: skin.id }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     const clientRuntime = {
       setActive: vi.fn(async () => true),
       probeActive: vi.fn(() => 'active' as const),
@@ -1521,32 +1498,31 @@ describe('client market', () => {
     let switched = false
     let finishActivation!: (value: unknown) => void
     const activationResult = new Promise<unknown>(resolve => { finishActivation = resolve })
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin, oldSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin, oldSkin] }
+      if (url.endsWith('/state')) return {
         hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version },
         management: { ...officialManagement, ...(installHint !== undefined && { installRequiresRestart: installHint }) },
         skins: [
           { skinId: oldSkin.id, installation: 'installed', activation: switched ? 'inactive' : 'active', primary: !switched, installedVersion: '1.0.0', updateAvailable: false },
           ...(installed ? [{ skinId: skin.id, installation: 'installed', activation: switched ? installRestart || switchRestart ? 'restart-required' : 'active' : installRestart ? 'restart-required' : 'inactive', primary: switched, installedVersion: '1.0.0', updateAvailable: false }] : []),
         ],
-      }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }) }
+      }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }
       if (url.endsWith('/install') && init?.method === 'POST') {
         installed = true
-        return { ok: true, json: async () => ({ operationId: 'alpha3-install' }) }
+        return { operationId: 'alpha3-install' }
       }
-      if (url.endsWith('/operations/alpha3-install')) return { ok: true, json: async () => ({ id: 'alpha3-install', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: installRestart }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'alpha3-switch' }) }
-      if (url.endsWith('/operations/alpha3-switch')) return { ok: true, json: async () => activationResult }
+      if (url.endsWith('/operations/alpha3-install')) return { id: 'alpha3-install', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: installRestart }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'alpha3-switch' }
+      if (url.endsWith('/operations/alpha3-switch')) return activationResult
       if (url.endsWith('/uninstall') && init?.method === 'POST') {
         installed = false
-        return { ok: true, json: async () => ({ operationId: 'alpha3-remove' }) }
+        return { operationId: 'alpha3-remove' }
       }
-      if (url.endsWith('/operations/alpha3-remove')) return { ok: true, json: async () => ({ id: 'alpha3-remove', kind: 'uninstall', skinId: skin.id, phase: 'done', restartRequired: false }) }
+      if (url.endsWith('/operations/alpha3-remove')) return { id: 'alpha3-remove', kind: 'uninstall', skinId: skin.id, phase: 'done', restartRequired: false }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     const clientRuntime = { setActive: vi.fn(async () => true) }
     render(<SkinMarketSection t={key => key} clientRuntime={clientRuntime} />)
     if (entry === 'detail') await openSkinCard()
@@ -1594,7 +1570,7 @@ describe('client market', () => {
     let activated = false
     let rejectCompletionCatalog: (() => void) | undefined
     let completionCatalogRejected = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) {
         if (installed && failurePoint === 'catalog') throw new Error('catalog temporarily unavailable')
         if (activated && failurePoint === 'activate-refresh') {
@@ -1603,31 +1579,30 @@ describe('client market', () => {
             rejectCompletionCatalog = () => { completionCatalogRejected = true; reject(new Error('catalog temporarily unavailable')) }
           })
         }
-        return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
+        return { skins: [managedDesktopSkin] }
       }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+      if (url.endsWith('/state')) return {
         hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version: '0.2.1-alpha.3' },
         management: { ...officialManagement, installRequiresRestart: false },
         skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] : [],
-      }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }) }
+      }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }
       if (url.endsWith('/install') && init?.method === 'POST') {
         installed = true
-        return { ok: true, json: async () => ({ operationId: 'interrupted-install' }) }
+        return { operationId: 'interrupted-install' }
       }
-      if (url.endsWith('/operations/interrupted-install')) return { ok: true, json: async () => ({ id: 'interrupted-install', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: true }) }
+      if (url.endsWith('/operations/interrupted-install')) return { id: 'interrupted-install', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: true }
       if (url.endsWith('/activate') && init?.method === 'POST') {
         if (failurePoint === 'activate-post') throw new Error('activate transport unavailable')
         activated = true
-        return { ok: true, json: async () => ({ operationId: 'interrupted-activate' }) }
+        return { operationId: 'interrupted-activate' }
       }
       if (url.endsWith('/operations/interrupted-activate')) {
         if (failurePoint === 'activate-poll') throw new Error('activate result unavailable')
-        return { ok: true, json: async () => ({ id: 'interrupted-activate', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: true }) }
+        return { id: 'interrupted-activate', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: true }
       }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '安装' }))
@@ -1653,16 +1628,15 @@ describe('client market', () => {
   it.each(['discovery', 'detail'])('does not activate an installed skin when its %s view unmounts during the completion response', async entry => {
     let resolveOperation!: (value: unknown) => void
     const operationResult = new Promise<unknown>(resolve => { resolveOperation = resolve })
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'unmounted-install' }) }
-      if (url.endsWith('/operations/unmounted-install')) return { ok: true, json: async () => operationResult }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'unexpected-activate' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'unmounted-install' }
+      if (url.endsWith('/operations/unmounted-install')) return operationResult
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'unexpected-activate' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     const view = render(<SkinMarketSection t={key => key} />)
     if (entry === 'detail') await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: zh['common.installAndUse'] }))
@@ -1680,15 +1654,14 @@ describe('client market', () => {
   it('does not change the client loader when the view unmounts during a deactivate completion response', async () => {
     let resolveOperation!: (value: unknown) => void
     const operationResult = new Promise<unknown>(resolve => { resolveOperation = resolve })
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', installedVersion: '1.0.0', updateAvailable: false }], runtime: dshRuntime }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }) }
-      if (url.endsWith('/deactivate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'unmounted-deactivate' }) }
-      if (url.endsWith('/operations/unmounted-deactivate')) return { ok: true, json: async () => operationResult }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', installedVersion: '1.0.0', updateAvailable: false }], runtime: dshRuntime }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }
+      if (url.endsWith('/deactivate') && init?.method === 'POST') return { operationId: 'unmounted-deactivate' }
+      if (url.endsWith('/operations/unmounted-deactivate')) return operationResult
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     const clientRuntime = { setActive: vi.fn(async () => true) }
     const view = render(<SkinMarketSection t={key => key} clientRuntime={clientRuntime} />)
     fireEvent.click((await screen.findAllByRole('button', { name: '停用' }))[0]!)
@@ -1705,23 +1678,22 @@ describe('client market', () => {
 
   it('lets a second discovery card start while another install is still downloading', async () => {
     const other = { ...skin, id: 'test.other', name: { zh: '另一款皮肤', en: 'Other Skin' }, package: 'other-skin', rowId: 'other-skin', repo: 'https://github.com/a/c' }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin, other] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime, operations: [] }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin, other] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime, operations: [] }
       if (url.endsWith('/install') && init?.method === 'POST') {
         const body = JSON.parse(String(init.body)) as { skinId: string }
-        return { ok: true, json: async () => ({ operationId: `install-${body.skinId}` }) }
+        return { operationId: `install-${body.skinId}` }
       }
       if (url.includes('/operations/install-')) {
         const id = url.split('/').at(-1)!
         const skinId = id.slice('install-'.length)
-        return { ok: true, json: async () => ({
+        return {
           id, kind: 'install', skinId, phase: skinId === other.id ? 'done' : 'downloading', startedAt: new Date().toISOString(),
-        }) }
+        }
       }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     const first = await screen.findByRole('group', { name: '测试皮肤 操作' })
@@ -1738,15 +1710,14 @@ describe('client market', () => {
 
   it.each(['discovery', 'detail'] as const)('keeps the official Desktop %s install as one automatic action and waits for another installation', async entry => {
     const other = { ...managedDesktopSkin, id: 'other.skin', name: { zh: '正在安装的皮肤', en: 'Installing Skin' } }
-    const fetchMock = vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin, other] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+    const fetchMock = stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin, other] }
+      if (url.endsWith('/state')) return {
         hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version: '0.2.0-rc.2' }, management: { ...officialManagement, installRequiresRestart: true }, skins: [],
         operations: [{ id: 'other-install', skinId: other.id, kind: 'install', phase: 'downloading', startedAt: new Date().toISOString() }],
-      }) }
-      return { ok: true, json: async () => ({}) }
+      }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     if (entry === 'detail') await openSkinCard()
     const region = entry === 'detail' ? screen.getByRole('main', { name: zh['common.detailContent'] }) : await screen.findByRole('group', { name: '测试皮肤 操作' })
@@ -1761,10 +1732,10 @@ describe('client market', () => {
 
   it.each(['discovery', 'detail'] as const)('blocks the official Desktop %s install when the host cannot enable its target', async entry => {
     const reason = '当前宿主无法保存插件启用状态'
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : {
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : {
       hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version: '0.2.0-rc.2' }, skins: [],
       management: { ...officialManagement, capabilities: { ...officialManagement.capabilities, enable: { available: false, reason } } },
-    } })))
+    }))
     render(<SkinMarketSection t={key => key} />)
     if (entry === 'detail') await openSkinCard()
     const region = entry === 'detail' ? screen.getByRole('main', { name: zh['common.detailContent'] }) : await screen.findByRole('group', { name: '测试皮肤 操作' })
@@ -1779,7 +1750,7 @@ describe('client market', () => {
     const reason = '官方管理接口尚未核验当前 DSH 版本'
     const busy = '正在等待宿主确认当前操作'
     let profileBusy: string | undefined
-    const fetchMock = vi.fn(async (url: string, _init?: RequestInit) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] }
+    const fetchMock = stubMarketFetch(async (url: string, _init?: RequestInit) => (url.endsWith('/catalog') ? { skins: [managedDesktopSkin] }
       : url.endsWith('/market-update') ? { updateAvailable: true, currentVersion: '1.0.0', latestVersion: '9.0.0' }
       : {
         hostKind: 'desktop', runtime: { ...dshRuntime, version: '0.2.1-rc.1' }, profileBusy,
@@ -1788,8 +1759,7 @@ describe('client market', () => {
           enable: { available: false, reason }, disable: { available: false, reason }, remove: { available: false, reason },
         } },
         skins: [{ skinId: skin.id, installation: 'installed', activation, installedVersion: '0.9.0', updateAvailable: true }],
-      } }))
-    vi.stubGlobal('fetch', fetchMock)
+      }))
     render(<SkinMarketSection t={key => key} />)
     const card = await screen.findByRole('button', { name: /测试皮肤 已安装卡片/ })
     const actions = within(card.closest('article')!).getByRole('group', { name: '测试皮肤 操作' })
@@ -1827,19 +1797,18 @@ describe('client market', () => {
     let installed = false
     const oldSkin = { ...managedDesktopSkin, id: 'old.skin', package: 'old-skin', name: { zh: '原皮肤', en: 'Old Skin' } }
     const message = application === 'overridden' ? '启停设置已保存，但被其他配置覆盖，尚未生效' : '启用保存失败，已恢复原皮肤'
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin, oldSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'desktop', restartAvailable: false, restartNoticeId: 'installation-and-rollback', runtime: { ...dshRuntime, version: '0.2.0-rc.2' }, management: { ...officialManagement, installRequiresRestart: true }, skins: [
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin, oldSkin] }
+      if (url.endsWith('/state')) return { hostKind: 'desktop', restartAvailable: false, restartNoticeId: 'installation-and-rollback', runtime: { ...dshRuntime, version: '0.2.0-rc.2' }, management: { ...officialManagement, installRequiresRestart: true }, skins: [
         { skinId: oldSkin.id, installation: 'installed', activation: installed ? 'restart-required' : 'active', primary: true, installedVersion: '1.0.0', updateAvailable: false },
         ...(installed ? [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', primary: false, installedVersion: '1.0.0', updateAvailable: false }] : []),
-      ] }) }
-      if (url.endsWith('/install') && init?.method === 'POST') { installed = true; return { ok: true, json: async () => ({ operationId: 'installed-before-failure' }) } }
-      if (url.endsWith('/operations/installed-before-failure')) return { ok: true, json: async () => ({ id: 'installed-before-failure', skinId: skin.id, kind: 'install', phase: 'done', restartRequired: true }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'switch-failed' }) }
-      if (url.endsWith('/operations/switch-failed')) return { ok: true, json: async () => ({ id: 'switch-failed', skinId: skin.id, kind: 'activate', phase: 'failed', application, message }) }
-      return { ok: true, json: async () => ({}) }
+      ] }
+      if (url.endsWith('/install') && init?.method === 'POST') { installed = true; return { operationId: 'installed-before-failure' } }
+      if (url.endsWith('/operations/installed-before-failure')) return { id: 'installed-before-failure', skinId: skin.id, kind: 'install', phase: 'done', restartRequired: true }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'switch-failed' }
+      if (url.endsWith('/operations/switch-failed')) return { id: 'switch-failed', skinId: skin.id, kind: 'activate', phase: 'failed', application, message }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '安装' }))
     const failure = await screen.findByRole('dialog', { name: '启用未完成' })
@@ -1870,16 +1839,15 @@ describe('client market', () => {
 
   it('installs without optional warnings and asks once only before the install-and-use activation', async () => {
     const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [incompatible] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'op-incompatible' }) }
-      if (url.endsWith('/operations/op-incompatible')) return { ok: true, json: async () => ({ id: 'op-incompatible', kind: 'install', skinId: skin.id, phase: 'done' }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'op-activate' }) }
-      if (url.endsWith('/operations/op-activate')) return { ok: true, json: async () => ({ id: 'op-activate', kind: 'activate', skinId: skin.id, phase: 'done' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [incompatible] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'op-incompatible' }
+      if (url.endsWith('/operations/op-incompatible')) return { id: 'op-incompatible', kind: 'install', skinId: skin.id, phase: 'done' }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'op-activate' }
+      if (url.endsWith('/operations/op-activate')) return { id: 'op-activate', kind: 'activate', skinId: skin.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '仅安装' }))
@@ -1902,14 +1870,13 @@ describe('client market', () => {
 
   it.each(['discovery', 'detail'])('updates an incompatible skin in the %s view without optional risk confirmation', async entry => {
     const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [incompatible] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }] }) }
-      if (url.endsWith('/update') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'incompatible-update' }) }
-      if (url.endsWith('/operations/incompatible-update')) return { ok: true, json: async () => ({ id: 'incompatible-update', kind: 'update', skinId: skin.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [incompatible] }
+      if (url.endsWith('/state')) return { runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }] }
+      if (url.endsWith('/update') && init?.method === 'POST') return { operationId: 'incompatible-update' }
+      if (url.endsWith('/operations/incompatible-update')) return { id: 'incompatible-update', kind: 'update', skinId: skin.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     if (entry === 'detail') {
       fireEvent.click(await screen.findByRole('button', { name: '测试皮肤 已安装卡片' }))
@@ -1923,14 +1890,13 @@ describe('client market', () => {
   it('migrates after source confirmation without an optional compatibility warning', async () => {
     const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
     const sourceMigration = { target: 'skin@1.0.0', currentSource: skin.install.target }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [incompatible] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false, sourceMigration }] }) }
-      if (url.endsWith('/migrate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'incompatible-migrate' }) }
-      if (url.endsWith('/operations/incompatible-migrate')) return { ok: true, json: async () => ({ id: 'incompatible-migrate', kind: 'migrate', skinId: skin.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [incompatible] }
+      if (url.endsWith('/state')) return { runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false, sourceMigration }] }
+      if (url.endsWith('/migrate') && init?.method === 'POST') return { operationId: 'incompatible-migrate' }
+      if (url.endsWith('/operations/incompatible-migrate')) return { id: 'incompatible-migrate', kind: 'migrate', skinId: skin.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click((await screen.findAllByRole('button', { name: '切换到 npm 来源' }))[0]!)
     fireEvent.click(screen.getByRole('button', { name: '确认切换到 npm 来源' }))
@@ -1942,16 +1908,15 @@ describe('client market', () => {
   it('installs on official Desktop before asking once for automatic activation', async () => {
     const incompatible = { ...managedDesktopSkin, compatibility: { dsh: '0.1.0-rc.6', platform: ['web', 'desktop'] } }
     let installed = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [incompatible] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version: '0.2.0-rc.2' }, management: { ...officialManagement, installRequiresRestart: true }, skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] : [] }) }
-      if (url.endsWith('/install') && init?.method === 'POST') { installed = true; return { ok: true, json: async () => ({ operationId: 'incompatible-desktop' }) } }
-      if (url.endsWith('/operations/incompatible-desktop')) return { ok: true, json: async () => ({ id: 'incompatible-desktop', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: true }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'incompatible-desktop-activate' }) }
-      if (url.endsWith('/operations/incompatible-desktop-activate')) return { ok: true, json: async () => ({ id: 'incompatible-desktop-activate', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: true }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [incompatible] }
+      if (url.endsWith('/state')) return { hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version: '0.2.0-rc.2' }, management: { ...officialManagement, installRequiresRestart: true }, skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] : [] }
+      if (url.endsWith('/install') && init?.method === 'POST') { installed = true; return { operationId: 'incompatible-desktop' } }
+      if (url.endsWith('/operations/incompatible-desktop')) return { id: 'incompatible-desktop', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: true }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'incompatible-desktop-activate' }
+      if (url.endsWith('/operations/incompatible-desktop-activate')) return { id: 'incompatible-desktop-activate', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: true }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '安装' }))
     const dialog = await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })
@@ -1968,8 +1933,7 @@ describe('client market', () => {
   it.each(['unmount', 'profile-busy'])('does not start an incompatible activation if %s interrupts its confirmation', async interruption => {
     const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
     let profileBusy = false
-    const fetchMock = vi.fn(async (url: string, _init?: RequestInit) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [incompatible] } : url.endsWith('/state') ? { skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }], runtime: dshRuntime, ...(profileBusy && { profileBusy: '当前 profile 正在等待宿主确认' }) } : {} }))
-    vi.stubGlobal('fetch', fetchMock)
+    const fetchMock = stubMarketFetch(async (url: string, _init?: RequestInit) => (url.endsWith('/catalog') ? { skins: [incompatible] } : url.endsWith('/state') ? { skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }], runtime: dshRuntime, ...(profileBusy && { profileBusy: '当前 profile 正在等待宿主确认' }) } : {}))
     const view = render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
@@ -1991,14 +1955,13 @@ describe('client market', () => {
     const original = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
     const updated = { ...original, install: { ...skin.install, version: '2.0.0', commit: 'b'.repeat(40), target: `https://github.com/a/b.git#${'b'.repeat(40)}` }, compatibility: { ...original.compatibility, dsh: changed === 'compatible' ? '>=0.1.0-rc.6' : '<0.0.9' } }
     let currentSkin = original
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [currentSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }], runtime: dshRuntime }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'refreshed-install' }) }
-      if (url.endsWith('/operations/refreshed-install')) return { ok: true, json: async () => ({ id: 'refreshed-install', kind: 'activate', skinId: skin.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [currentSkin] }
+      if (url.endsWith('/state')) return { skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }], runtime: dshRuntime }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'refreshed-install' }
+      if (url.endsWith('/operations/refreshed-install')) return { id: 'refreshed-install', kind: 'activate', skinId: skin.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
@@ -2024,19 +1987,18 @@ describe('client market', () => {
     const original = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
     const updated = { ...original, install: { ...skin.install, version: '2.0.0', commit: 'b'.repeat(40), target: `https://github.com/a/b.git#${'b'.repeat(40)}` }, compatibility: { ...original.compatibility, dsh: '<0.0.9' } }
     let installed = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [installed ? updated : original] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ runtime: dshRuntime, skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: true }] : [] }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'changed-before-use-install' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [installed ? updated : original] }
+      if (url.endsWith('/state')) return { runtime: dshRuntime, skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: true }] : [] }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'changed-before-use-install' }
       if (url.endsWith('/operations/changed-before-use-install')) {
         installed = true
-        return { ok: true, json: async () => ({ id: 'changed-before-use-install', kind: 'install', skinId: skin.id, phase: 'done' }) }
+        return { id: 'changed-before-use-install', kind: 'install', skinId: skin.id, phase: 'done' }
       }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'changed-before-use-activate' }) }
-      if (url.endsWith('/operations/changed-before-use-activate')) return { ok: true, json: async () => ({ id: 'changed-before-use-activate', kind: 'activate', skinId: skin.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'changed-before-use-activate' }
+      if (url.endsWith('/operations/changed-before-use-activate')) return { id: 'changed-before-use-activate', kind: 'activate', skinId: skin.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: zh['common.installAndUse'] }))
@@ -2053,16 +2015,15 @@ describe('client market', () => {
   })
 
   it('still installs when runtime version is unknown', async () => {
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [] }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'op-unknown' }) }
-      if (url.endsWith('/operations/op-unknown')) return { ok: true, json: async () => ({ id: 'op-unknown', kind: 'install', skinId: skin.id, phase: 'done' }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'op-activate' }) }
-      if (url.endsWith('/operations/op-activate')) return { ok: true, json: async () => ({ id: 'op-activate', kind: 'activate', skinId: skin.id, phase: 'done' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [] }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'op-unknown' }
+      if (url.endsWith('/operations/op-unknown')) return { id: 'op-unknown', kind: 'install', skinId: skin.id, phase: 'done' }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'op-activate' }
+      if (url.endsWith('/operations/op-activate')) return { id: 'op-activate', kind: 'activate', skinId: skin.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -2080,7 +2041,7 @@ describe('client market', () => {
     const open = vi.fn()
     Object.assign(navigator, { clipboard: { writeText } })
     vi.stubGlobal('open', open)
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [manual] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [manual] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
@@ -2109,7 +2070,7 @@ describe('client market', () => {
       install: { ...skin.install, desktop: { mode: 'manual-only' as const, reason: 'npm-package-not-found' } },
       review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'manual-only' as const },
     }
-    const fetchMock = vi.fn(async (url: string) => ({
+    const fetchMock = stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog')
         ? { skins: [manual] }
@@ -2117,7 +2078,6 @@ describe('client market', () => {
     }))
     const writeText = vi.fn(async () => undefined)
     Object.assign(navigator, { clipboard: { writeText } })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     fireEvent.click(await screen.findByRole('button', { name: '安装' }))
@@ -2153,16 +2113,15 @@ describe('client market', () => {
         },
       },
     }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [manual] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'desktop', management: officialManagement, runtime: dshRuntime, skins: [] }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'desktop-warned-install' }) }
-      if (url.endsWith('/operations/desktop-warned-install')) return { ok: true, json: async () => ({ id: 'desktop-warned-install', kind: 'install', skinId: manual.id, phase: 'done' }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'desktop-warned-activate' }) }
-      if (url.endsWith('/operations/desktop-warned-activate')) return { ok: true, json: async () => ({ id: 'desktop-warned-activate', kind: 'activate', skinId: manual.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [manual] }
+      if (url.endsWith('/state')) return { hostKind: 'desktop', management: officialManagement, runtime: dshRuntime, skins: [] }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'desktop-warned-install' }
+      if (url.endsWith('/operations/desktop-warned-install')) return { id: 'desktop-warned-install', kind: 'install', skinId: manual.id, phase: 'done' }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'desktop-warned-activate' }
+      if (url.endsWith('/operations/desktop-warned-activate')) return { id: 'desktop-warned-activate', kind: 'activate', skinId: manual.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
@@ -2187,20 +2146,19 @@ describe('client market', () => {
     let installed = false
     let active = false
     const open = vi.fn()
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [github] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [github] }
+      if (url.endsWith('/state')) return {
         hostKind: 'desktop', runtime: { ...dshRuntime, version: '0.2.1-alpha.3' }, management: officialManagement,
         skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: active ? 'active' : 'inactive', installedVersion: '1.0.0', updateAvailable: false }] : [],
-      }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ updateAvailable: false }) }
-      if (url.endsWith('/install') && init?.method === 'POST') { installed = true; return { ok: true, json: async () => ({ operationId: 'github-install' }) } }
-      if (url.endsWith('/activate') && init?.method === 'POST') { active = true; return { ok: true, json: async () => ({ operationId: 'github-activate' }) } }
-      if (url.endsWith('/operations/github-install')) return { ok: true, json: async () => ({ id: 'github-install', kind: 'install', skinId: skin.id, phase: 'done' }) }
-      if (url.endsWith('/operations/github-activate')) return { ok: true, json: async () => ({ id: 'github-activate', kind: 'activate', skinId: skin.id, phase: 'done' }) }
+      }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
+      if (url.endsWith('/install') && init?.method === 'POST') { installed = true; return { operationId: 'github-install' } }
+      if (url.endsWith('/activate') && init?.method === 'POST') { active = true; return { operationId: 'github-activate' } }
+      if (url.endsWith('/operations/github-install')) return { id: 'github-install', kind: 'install', skinId: skin.id, phase: 'done' }
+      if (url.endsWith('/operations/github-activate')) return { id: 'github-activate', kind: 'activate', skinId: skin.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open }} />)
     fireEvent.click(await screen.findByRole('button', { name: '安装' }))
     await waitFor(() => expect(fetchMock.mock.calls.some(([url, init]) => url.endsWith('/activate') && init?.method === 'POST')).toBe(true))
@@ -2217,9 +2175,9 @@ describe('client market', () => {
     }
     let resolveOpen: ((value: { ok: true; kind: 'prefilled' }) => void) | undefined
     const open = vi.fn(() => new Promise<{ ok: true; kind: 'prefilled' }>(resolve => { resolveOpen = resolve }))
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog')
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog')
       ? { skins: [manual] }
-      : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [] } })))
+      : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [] }))
     render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open }} />)
 
     await openSkinCard()
@@ -2246,10 +2204,9 @@ describe('client market', () => {
       review: { compatibility: 'verified', preview: 'verified', installation: 'manual-only' },
     }
     const open = vi.fn(async (_spec: string) => ({ ok: true as const, kind: 'prefilled' as const }))
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog')
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog')
       ? { skins: [manual] }
-      : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [] } }))
-    vi.stubGlobal('fetch', fetchMock)
+      : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [] }))
     render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open }} />)
     fireEvent.click(await screen.findByRole('button', { name: '安装' }))
     await waitFor(() => expect(open).toHaveBeenCalledWith('skin@1.0.0', { skinId: manual.id, packageName: manual.package }))
@@ -2265,10 +2222,9 @@ describe('client market', () => {
     const open = vi.fn(async (_spec: string) => outcome === 'unavailable'
       ? { ok: false as const, reason: '插件列表加载失败，请复制目标。' }
       : { ok: true as const, kind: outcome })
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog')
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog')
       ? { skins: [manual] }
-      : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [] } }))
-    vi.stubGlobal('fetch', fetchMock)
+      : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [] }))
     render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open }} />)
     fireEvent.click(await screen.findByRole('button', { name: '安装' }))
     await waitFor(() => expect(open).toHaveBeenCalledWith(target, { skinId: manual.id, packageName: manual.package }))
@@ -2283,11 +2239,10 @@ describe('client market', () => {
     let installed = false
     let notify!: () => void
     const takeActivationIntent = vi.fn(() => null)
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog')
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog')
       ? { skins: [managedDesktopSkin] }
       : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement,
-        skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] : [] } }))
-    vi.stubGlobal('fetch', fetchMock)
+        skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] : [] }))
     render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open: vi.fn(), takeActivationIntent,
       observe: listener => { notify = listener; return () => undefined } }} />)
     await screen.findByRole('button', { name: '安装' })
@@ -2302,16 +2257,15 @@ describe('client market', () => {
     let active = false
     const intent = { skinId: skin.id, packageName: skin.package, spec: managedDesktopSkin.install.target, requestId: 'native-request' }
     const takeActivationIntent = vi.fn().mockReturnValueOnce(intent).mockReturnValue(null)
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'desktop', runtime: dshRuntime, management: officialManagement,
-        skins: [{ skinId: skin.id, installation: 'installed', activation: active ? 'active' : 'inactive', installedVersion: '1.0.0', updateAvailable: false }] }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ updateAvailable: false }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') { active = true; return { ok: true, json: async () => ({ operationId: 'native-activate' }) } }
-      if (url.endsWith('/operations/native-activate')) return { ok: true, json: async () => ({ id: 'native-activate', kind: 'activate', skinId: skin.id, phase: 'done' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin] }
+      if (url.endsWith('/state')) return { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement,
+        skins: [{ skinId: skin.id, installation: 'installed', activation: active ? 'active' : 'inactive', installedVersion: '1.0.0', updateAvailable: false }] }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
+      if (url.endsWith('/activate') && init?.method === 'POST') { active = true; return { operationId: 'native-activate' } }
+      if (url.endsWith('/operations/native-activate')) return { id: 'native-activate', kind: 'activate', skinId: skin.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     let notify!: () => void
     render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open: vi.fn(), takeActivationIntent,
       observe: listener => { notify = listener; return () => undefined } }} />)
@@ -2332,11 +2286,10 @@ describe('client market', () => {
     const restoreActivationIntent = vi.fn((value: typeof intent) => { pending = value })
     const panel = { available: () => true, open: vi.fn(), observe: () => () => undefined,
       takeActivationIntent: () => { const value = pending; pending = null; return value }, restoreActivationIntent }
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog')
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog')
       ? { skins: [managedDesktopSkin] }
       : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement,
-        skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] } }))
-    vi.stubGlobal('fetch', fetchMock)
+        skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] }))
     const first = render(<SkinMarketSection t={key => key} desktopPluginPanel={panel} />)
     await screen.findByRole('dialog', { name: zh['common.switchConfirmation'] })
     first.unmount()
@@ -2356,18 +2309,17 @@ describe('client market', () => {
     let release!: (value: unknown) => void
     const state = () => ({ hostKind: 'desktop', runtime: dshRuntime, management: officialManagement,
       skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] : [] })
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin] }
       if (url.endsWith('/state')) {
         const snapshot = state()
         if (hold) { hold = false; return await new Promise(resolve => { release = resolve }) }
-        return { ok: true, json: async () => snapshot }
+        return snapshot
       }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'native-race-activate' }) }
-      if (url.endsWith('/operations/native-race-activate')) return { ok: true, json: async () => ({ id: 'native-race-activate', kind: 'activate', skinId: skin.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({ updateAvailable: false }) }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'native-race-activate' }
+      if (url.endsWith('/operations/native-race-activate')) return { id: 'native-race-activate', kind: 'activate', skinId: skin.id, phase: 'done' }
+      return { updateAvailable: false }
     })
-    vi.stubGlobal('fetch', fetchMock)
     const takeActivationIntent = vi.fn(() => { const value = pending; pending = null; return value })
     render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open: vi.fn(), takeActivationIntent,
       observe: listener => { notify = listener; return () => undefined } }} />)
@@ -2387,10 +2339,10 @@ describe('client market', () => {
   it.each([
     ['active', '使用中'], ['missing', '待重启'], ['failed', '未生效'],
   ] as const)('checks the browser client module before displaying a natively active skin (%s)', async (phase, label) => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog')
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog')
       ? { skins: [managedDesktopSkin] }
       : { hostKind: 'desktop', restartAvailable: false, runtime: dshRuntime, management: officialManagement,
-        skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', clientModule: true, installedVersion: '1.0.0', updateAvailable: false }] } })))
+        skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', clientModule: true, installedVersion: '1.0.0', updateAvailable: false }] }))
     const probeActive = vi.fn(() => phase)
     render(<SkinMarketSection t={key => key} clientRuntime={{ setActive: vi.fn(), probeActive }} />)
     expect(await screen.findAllByText(label, { exact: true })).not.toHaveLength(0)
@@ -2407,9 +2359,9 @@ describe('client market', () => {
       review: { compatibility: 'verified', preview: 'verified', installation: 'verified' },
     }
     const open = vi.fn(async (_spec: string) => ({ ok: true as const, kind: 'prefilled' as const }))
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog')
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog')
       ? { skins: [manual] }
-      : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [] } })))
+      : { hostKind: 'desktop', runtime: dshRuntime, management: officialManagement, skins: [] }))
     render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open }} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: zh['common.otherInstallMethods'] }))
@@ -2423,7 +2375,7 @@ describe('client market', () => {
   })
 
   it('keeps installed skins in discovery and exposes Use and Update on both cards', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+    stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [{
         skinId: skin.id,
@@ -2433,7 +2385,7 @@ describe('client market', () => {
         updateAvailable: true,
         installedAt: '2026-08-16T00:00:00Z',
       }] },
-    })))
+    }))
     render(<SkinMarketSection t={key => key} />)
 
     expect(await screen.findByRole('button', { name: '测试皮肤 已安装卡片' })).toBeTruthy()
@@ -2459,19 +2411,18 @@ describe('client market', () => {
     let activated = false
     const installOperation: Operation = { id: 'install-new-skin', kind: 'install', skinId: skin.id, phase: 'done', restartRequired: true, startedAt: new Date().toISOString() }
     const activateOperation: Operation = { id: 'activate-new-skin', kind: 'activate', skinId: skin.id, phase: 'done', startedAt: new Date().toISOString() }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runtime: dshRuntime, skins: [{
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { hostKind: 'dsh', runtime: dshRuntime, skins: [{
         skinId: skin.id, installation: installed ? 'installed' : 'missing', activation: activated ? 'active' : 'inactive',
         installedVersion: installed ? skin.install.version : undefined, updateAvailable: false,
-      }] }) }
-      if (url.endsWith('/install') && init?.method === 'POST') { installed = true; return { ok: true, json: async () => ({ operationId: installOperation.id }) } }
-      if (url.endsWith('/activate') && init?.method === 'POST') { activated = true; return { ok: true, json: async () => ({ operationId: activateOperation.id }) } }
-      if (url.endsWith(`/operations/${installOperation.id}`)) return { ok: true, json: async () => installOperation }
-      if (url.endsWith(`/operations/${activateOperation.id}`)) return { ok: true, json: async () => activateOperation }
+      }] }
+      if (url.endsWith('/install') && init?.method === 'POST') { installed = true; return { operationId: installOperation.id } }
+      if (url.endsWith('/activate') && init?.method === 'POST') { activated = true; return { operationId: activateOperation.id } }
+      if (url.endsWith(`/operations/${installOperation.id}`)) return installOperation
+      if (url.endsWith(`/operations/${activateOperation.id}`)) return activateOperation
       throw new Error(`Unexpected request: ${url} ${init?.method ?? 'GET'}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -2481,7 +2432,7 @@ describe('client market', () => {
   })
 
   it('exposes Stop on active installed cards', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+    stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [{
         skinId: skin.id,
@@ -2490,14 +2441,14 @@ describe('client market', () => {
         installedVersion: '1.0.0',
         updateAvailable: false,
       }] },
-    })))
+    }))
     render(<SkinMarketSection t={key => key} />)
 
     expect(await screen.findAllByRole('button', { name: '停用' })).toHaveLength(2)
   })
 
   it('explains the conflict risk before pinning an active skin', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+    stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [{
         skinId: skin.id,
@@ -2508,7 +2459,7 @@ describe('client market', () => {
         installedVersion: '1.0.0',
         updateAvailable: false,
       }] },
-    })))
+    }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -2522,7 +2473,7 @@ describe('client market', () => {
   })
 
   it('shows an active cancel action for a pinned skin', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+    stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [{
         skinId: skin.id,
@@ -2533,7 +2484,7 @@ describe('client market', () => {
         installedVersion: '1.0.0',
         updateAvailable: true,
       }] },
-    })))
+    }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -2551,7 +2502,7 @@ describe('client market', () => {
 
   it('shows the cached catalog before background revalidation finishes', async () => {
     const catalogCache = { read: vi.fn(async () => [skin]), write: vi.fn(async () => undefined) }
-    vi.stubGlobal('fetch', vi.fn(async () => await new Promise(() => undefined)))
+    stubMarketFetch(async () => await new Promise(() => undefined))
 
     render(<SkinMarketSection t={key => key} catalogCache={catalogCache} />)
 
@@ -2564,7 +2515,7 @@ describe('client market', () => {
 
   it('writes a successfully refreshed catalog to the browser cache', async () => {
     const catalogCache = { read: vi.fn(async () => null), write: vi.fn(async () => undefined) }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
 
     render(<SkinMarketSection t={key => key} catalogCache={catalogCache} />)
 
@@ -2580,7 +2531,7 @@ describe('client market', () => {
       name: { zh: `测试皮肤 ${index}`, en: `Test Skin ${index}` },
       githubStars: HOME_CATALOG_BATCH_SIZE * 2 + 5 - index,
     }))
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins } : { skins: [] }))
     const view = render(<SkinMarketSection t={key => key} />)
 
     await screen.findByRole('button', { name: /测试皮肤 0 界面预览/ })
@@ -2613,7 +2564,7 @@ describe('client market', () => {
       }
     }
     vi.stubGlobal('IntersectionObserver', TestObserver)
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins } : { skins: [] }))
     const view = render(<div style={{ overflowY: hostKind === 'element' ? 'auto' : 'visible' }}><SkinMarketSection t={key => key} layout="embedded" /></div>)
     await screen.findByRole('button', { name: /测试皮肤 0 界面预览/ })
     const count = () => screen.getAllByRole('button', { name: /测试皮肤 \d+ 界面预览/ }).length
@@ -2646,7 +2597,7 @@ describe('client market', () => {
   })
 
   it.each(['element', 'window'] as const)('compacts the embedded header from the %s host scroll position and restores it on return', async hostKind => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
     const view = render(<div style={{ overflowY: hostKind === 'element' ? 'auto' : 'visible' }}><SkinMarketSection t={key => key} layout="embedded" /></div>)
     await screen.findByRole('button', { name: /测试皮肤 界面预览/ })
     const host = view.container.firstElementChild as HTMLElement
@@ -2684,9 +2635,9 @@ describe('client market', () => {
 
   it('places a live operation below the docked discovery toolbar', async () => {
     const startedAt = new Date().toISOString()
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog')
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog')
       ? { skins: [skin] }
-      : { skins: [], operations: [{ id: 'installing', skinId: skin.id, kind: 'install', phase: 'downloading', startedAt }] } })))
+      : { skins: [], operations: [{ id: 'installing', skinId: skin.id, kind: 'install', phase: 'downloading', startedAt }] }))
     render(<SkinMarketSection t={key => key} />)
     await screen.findByText('正在下载“测试皮肤”')
 
@@ -2709,7 +2660,7 @@ describe('client market', () => {
       name: { zh: `测试皮肤 ${index}`, en: `Test Skin ${index}` },
     }))
     vi.stubGlobal('IntersectionObserver', undefined)
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins } : { skins: [] }))
     render(<SkinMarketSection t={key => key} layout="embedded" />)
     await waitFor(() => expect(screen.getAllByRole('button', { name: /测试皮肤 \d+ 界面预览/ })).toHaveLength(skins.length))
   })
@@ -2717,21 +2668,21 @@ describe('client market', () => {
   it('keeps list and detail visible while refreshing after an operation', async () => {
     let catalogCalls = 0
     let stateCalls = 0
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
       if (url.endsWith('/catalog')) {
         catalogCalls += 1
         if (catalogCalls > 1) return await new Promise(() => undefined)
-        return { ok: true, json: async () => ({ skins: [skin] }) }
+        return { skins: [skin] }
       }
       if (url.endsWith('/state')) {
         stateCalls += 1
         if (stateCalls > 1) return await new Promise(() => undefined)
-        return { ok: true, json: async () => ({ skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', installedVersion: '1.0.0', updateAvailable: false }] }) }
+        return { skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', installedVersion: '1.0.0', updateAvailable: false }] }
       }
-      if (url.endsWith('/deactivate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'deactivate-1' }) }
-      if (url.endsWith('/operations/deactivate-1')) return { ok: true, json: async () => ({ id: 'deactivate-1', phase: 'done' }) }
+      if (url.endsWith('/deactivate') && init?.method === 'POST') return { operationId: 'deactivate-1' }
+      if (url.endsWith('/operations/deactivate-1')) return { id: 'deactivate-1', phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
 
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
@@ -2745,10 +2696,10 @@ describe('client market', () => {
 
   it('uses DSH action priority and icons for inactive and active skins', async () => {
     let active = false
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      return { ok: true, json: async () => ({ skins: [{ skinId: skin.id, installation: 'installed', activation: active ? 'active' : 'inactive', installedVersion: '1.0.0', updateAvailable: true }] }) }
-    }))
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      return { skins: [{ skinId: skin.id, installation: 'installed', activation: active ? 'active' : 'inactive', installedVersion: '1.0.0', updateAvailable: true }] }
+    })
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     const use = await screen.findByRole('button', { name: '使用' })
@@ -2775,13 +2726,12 @@ describe('client market', () => {
 
   it('shows the first-use notice once in the existing use confirmation and cancels without changing state', async () => {
     window.localStorage.removeItem('dsh-skin-market:activation-warning-accepted')
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] }
       if (url.endsWith('/activate') && init?.method === 'POST') return await new Promise(() => undefined)
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
@@ -2798,7 +2748,7 @@ describe('client market', () => {
   })
 
   it('uses the DSH outline capsule for the mobile back action', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     const back = (await screen.findAllByRole('button', { name: zh['common.backToDiscover'] }))
@@ -2808,7 +2758,7 @@ describe('client market', () => {
   })
 
   it('replaces Use with a restart confirmation when activation needs restart', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { runningAgentCount: 0, skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { runningAgentCount: 0, skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -2822,7 +2772,7 @@ describe('client market', () => {
   })
 
   it('clears a Web selection restart receipt when the client module is already active', async () => {
-    const fetchMock = vi.fn(async (url: string, _init?: RequestInit) => ({
+    const fetchMock = stubMarketFetch(async (url: string, _init?: RequestInit) => ({
       ok: true,
       json: async () => url.endsWith('/catalog')
         ? { skins: [skin] }
@@ -2833,7 +2783,6 @@ describe('client market', () => {
           }],
         },
     }))
-    vi.stubGlobal('fetch', fetchMock)
     const clientRuntime = {
       setActive: vi.fn(async () => true),
       probeActive: vi.fn(() => 'active' as const),
@@ -2848,7 +2797,7 @@ describe('client market', () => {
   })
 
   it('shows the official Desktop restart instruction without posting to the market restart route', async () => {
-    const fetchMock = vi.fn(async (url: string, _init?: RequestInit) => ({
+    const fetchMock = stubMarketFetch(async (url: string, _init?: RequestInit) => ({
       ok: true,
       json: async () => url.endsWith('/catalog')
         ? { skins: [skin] }
@@ -2859,7 +2808,6 @@ describe('client market', () => {
           skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }],
         },
     }))
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -2870,18 +2818,17 @@ describe('client market', () => {
 
   it('shows an unavailable component honestly and lets Use retry its activation without suggesting restart', async () => {
     let activated = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin] }
+      if (url.endsWith('/state')) return {
         instanceId: 'component-session', hostKind: 'desktop', restartAvailable: false, runtime: dshRuntime, management: officialManagement,
         skins: [{ skinId: skin.id, installation: 'installed', activation: activated ? 'active' : 'unavailable', primary: true, installedVersion: '1.0.0', updateAvailable: false,
           ...(!activated && { error: '皮肤组件已关闭，尚未生效。' }) }],
-      }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') { activated = true; return { ok: true, json: async () => ({ operationId: 'enable-component' }) } }
-      if (url.endsWith('/operations/enable-component')) return { ok: true, json: async () => ({ id: 'enable-component', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: false }) }
-      return { ok: true, json: async () => ({}) }
+      }
+      if (url.endsWith('/activate') && init?.method === 'POST') { activated = true; return { operationId: 'enable-component' } }
+      if (url.endsWith('/operations/enable-component')) return { id: 'enable-component', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: false }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     expect(screen.getAllByText('未生效').length).toBeGreaterThan(0)
@@ -2897,12 +2844,11 @@ describe('client market', () => {
   it.each(['active', 'unavailable', 'removed'] as const)('restores a real pending skin once, then clears every restart reminder after it becomes %s', async outcome => {
     let restarted = false
     let routeRevision = 0
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
       instanceId: restarted ? 'after-restart' : `before-restart-${routeRevision}`, restartNoticeId: 'stable-pending-group', hostKind: 'desktop', restartAvailable: false, management: officialManagement,
       skins: restarted && outcome === 'removed' ? [] : [{ skinId: skin.id, installation: 'installed', activation: restarted ? outcome : 'restart-required', primary: true, lastOperatedAt: `2026-10-15T01:00:0${routeRevision}Z`, installedVersion: '1.0.0', updateAvailable: false,
         ...(restarted && outcome === 'unavailable' && { error: '皮肤组件已关闭，尚未生效。' }) }],
-    } : {} }))
-    vi.stubGlobal('fetch', fetchMock)
+    } : {}))
     const view = render(<SkinMarketSection t={key => key} />)
     fireEvent.click(within(await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })).getByRole('button', { name: '知道了' }))
     routeRevision += 1
@@ -2933,12 +2879,11 @@ describe('client market', () => {
   it.each(['skin', 'market-update'] as const)('keeps one acknowledged %s restart item in the banner without repeating the dialog', async target => {
     let receipt = 'first-change'
     let pending = true
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
       instanceId: 'same-desktop-process', restartNoticeId: receipt, marketUpdateNoticeId: receipt, hostKind: 'desktop', restartAvailable: false, management: officialManagement,
       marketUpdateRestartRequired: pending && target === 'market-update',
       skins: [{ skinId: skin.id, installation: 'installed', activation: pending && target === 'skin' ? 'restart-required' : 'active', primary: true, installedVersion: '1.0.0', updateAvailable: false }],
-    } : {} }))
-    vi.stubGlobal('fetch', fetchMock)
+    } : {}))
     const intervalSpy = vi.spyOn(window, 'setInterval')
     const view = render(<SkinMarketSection t={key => key} />)
     const pollRefresh = intervalSpy.mock.calls.find(([, delay]) => delay === 5 * 60 * 1000)?.[0]
@@ -2987,11 +2932,10 @@ describe('client market', () => {
 
   it('clears every restart reminder when the same Desktop process confirms the skin became active', async () => {
     let active = false
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
       instanceId: 'same-desktop-process', restartNoticeId: 'hot-applied-selection', hostKind: 'desktop', restartAvailable: false, management: officialManagement,
       skins: [{ skinId: skin.id, installation: 'installed', activation: active ? 'active' : 'restart-required', primary: true, installedVersion: '1.0.0', updateAvailable: false }],
-    } : {} }))
-    vi.stubGlobal('fetch', fetchMock)
+    } : {}))
     render(<SkinMarketSection t={key => key} />)
     expect(await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })).toBeTruthy()
 
@@ -3009,15 +2953,14 @@ describe('client market', () => {
 
   it('uses confirmed active Desktop state to clear an activation operation restart hint', async () => {
     let active = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ instanceId: 'hot-activation', hostKind: 'desktop', restartAvailable: false, management: officialManagement,
-        skins: [{ skinId: skin.id, installation: 'installed', activation: active ? 'active' : 'inactive', primary: active, installedVersion: '1.0.0', updateAvailable: false }] }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') { active = true; return { ok: true, json: async () => ({ operationId: 'hinted-restart' }) } }
-      if (url.endsWith('/operations/hinted-restart')) return { ok: true, json: async () => ({ id: 'hinted-restart', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: true }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin] }
+      if (url.endsWith('/state')) return { instanceId: 'hot-activation', hostKind: 'desktop', restartAvailable: false, management: officialManagement,
+        skins: [{ skinId: skin.id, installation: 'installed', activation: active ? 'active' : 'inactive', primary: active, installedVersion: '1.0.0', updateAvailable: false }] }
+      if (url.endsWith('/activate') && init?.method === 'POST') { active = true; return { operationId: 'hinted-restart' } }
+      if (url.endsWith('/operations/hinted-restart')) return { id: 'hinted-restart', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: true }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
@@ -3029,15 +2972,14 @@ describe('client market', () => {
 
   it('opens the restart dialog when an applied operation still leaves an explicit pending restart in refreshed state', async () => {
     let used = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ instanceId: 'applied-with-pending', hostKind: 'desktop', restartAvailable: false, management: officialManagement,
-        skins: [{ skinId: skin.id, installation: 'installed', activation: used ? 'restart-required' : 'inactive', primary: used, installedVersion: '1.0.0', updateAvailable: false }] }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') { used = true; return { ok: true, json: async () => ({ operationId: 'applied-but-pending' }) } }
-      if (url.endsWith('/operations/applied-but-pending')) return { ok: true, json: async () => ({ id: 'applied-but-pending', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: false }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin] }
+      if (url.endsWith('/state')) return { instanceId: 'applied-with-pending', hostKind: 'desktop', restartAvailable: false, management: officialManagement,
+        skins: [{ skinId: skin.id, installation: 'installed', activation: used ? 'restart-required' : 'inactive', primary: used, installedVersion: '1.0.0', updateAvailable: false }] }
+      if (url.endsWith('/activate') && init?.method === 'POST') { used = true; return { operationId: 'applied-but-pending' } }
+      if (url.endsWith('/operations/applied-but-pending')) return { id: 'applied-but-pending', kind: 'activate', skinId: skin.id, phase: 'done', restartRequired: false }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
@@ -3046,11 +2988,11 @@ describe('client market', () => {
   })
 
   it('does not present a restart dialog for an unresolved operation even if an earlier pending fact is restored', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
       instanceId: 'unknown-result', hostKind: 'desktop', restartAvailable: false,
       skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }],
       operations: [{ id: 'unknown-use', kind: 'activate', skinId: skin.id, phase: 'waiting', startedAt: '2026-10-15T00:00:00Z', message: '宿主未返回可确认的操作结果' }],
-    } : {} })))
+    } : {}))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     expect(screen.queryByText('宿主未返回可确认的操作结果')).toBeNull()
@@ -3060,9 +3002,9 @@ describe('client market', () => {
 
   it('clears the self-update reminder and its open dialog when the restarted Host clears its pending flag', async () => {
     let pending = true
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
       instanceId: pending ? 'old-market' : 'new-market', hostKind: 'desktop', restartAvailable: false, skins: [], marketUpdateRestartRequired: pending,
-    } : {} })))
+    } : {}))
     render(<SkinMarketSection t={key => key} />)
     expect(await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })).toBeTruthy()
     pending = false
@@ -3074,12 +3016,11 @@ describe('client market', () => {
 
   it('waits for ongoing installations before manual restart and describes the chosen restart target', async () => {
     let installing = true
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
       hostKind: 'desktop', restartAvailable: false, marketUpdateRestartRequired: true,
       skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }],
       operations: installing ? [{ id: 'other-install', skinId: 'other.skin', kind: 'install', phase: 'downloading', startedAt: new Date().toISOString() }] : [],
-    } : {} }))
-    vi.stubGlobal('fetch', fetchMock)
+    } : {}))
     render(<SkinMarketSection t={key => key} />)
     const marketDialog = await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })
     expect(marketDialog.textContent).toContain('还有 1 款皮肤正在安装或更新')
@@ -3097,7 +3038,7 @@ describe('client market', () => {
 
   it('keeps the official Desktop self-update flow host-managed after the package is written', async () => {
     let updated = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => ({
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => ({
       ok: true,
       json: async () => url.endsWith('/catalog')
         ? { skins: [skin] }
@@ -3109,7 +3050,6 @@ describe('client market', () => {
               ? { currentVersion: '0.1.56', latestVersion: '0.1.57', updateAvailable: true }
               : {},
     }))
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     fireEvent.click(await screen.findByRole('button', { name: '更新皮肤市场到 0.1.57' }))
@@ -3130,22 +3070,21 @@ describe('client market', () => {
     ['uninstall', '卸载', true], ['uninstall', '卸载', false],
   ] as const)('opens the manual Desktop restart dialog for %s only when its result requires restart (%s, %s)', async (kind, actionLabel, restartRequired) => {
     let completed = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin] }
+      if (url.endsWith('/state')) return {
         hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version: '0.2.1-alpha.3' },
         management: { ...officialManagement, installRequiresRestart: false },
         skins: [{ skinId: skin.id, installation: completed && kind === 'uninstall' ? 'missing' : 'installed', activation: completed && restartRequired ? 'restart-required' : kind === 'activate' ? completed ? 'active' : 'inactive' : completed && (kind === 'deactivate' || kind === 'uninstall') ? 'inactive' : 'active', installedVersion: '1.0.0', updateAvailable: kind === 'update' && !completed }],
-      }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }) }
+      }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.58', latestVersion: '0.1.58', updateAvailable: false }
       if (url.endsWith(`/${kind}`) && init?.method === 'POST') {
         completed = true
-        return { ok: true, json: async () => ({ operationId: 'desktop-result' }) }
+        return { operationId: 'desktop-result' }
       }
-      if (url.endsWith('/operations/desktop-result')) return { ok: true, json: async () => ({ id: 'desktop-result', kind, skinId: skin.id, phase: 'done', restartRequired }) }
+      if (url.endsWith('/operations/desktop-result')) return { id: 'desktop-result', kind, skinId: skin.id, phase: 'done', restartRequired }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: actionLabel }))
@@ -3188,32 +3127,31 @@ describe('client market', () => {
     const target = targetKind === 'same-skin' ? blue : minecraft
     let blueInstalled = false
     let removedId: string | undefined
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [blue, minecraft] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [blue, minecraft] }
+      if (url.endsWith('/state')) return {
         hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version: '0.2.1-alpha.3' },
         management: { ...officialManagement, installRequiresRestart: false },
         skins: [
           { skinId: minecraft.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false },
           ...(blueInstalled ? [{ skinId: blue.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] : []),
         ].flatMap(item => item.skinId !== removedId ? [item] : removedRow === 'omitted' ? [] : [{ ...item, installation: 'missing', activation: 'inactive' }]),
-      }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.60', latestVersion: '0.1.60', updateAvailable: false }) }
+      }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.60', latestVersion: '0.1.60', updateAvailable: false }
       if (url.endsWith('/install') && init?.method === 'POST') {
         blueInstalled = true
-        return { ok: true, json: async () => ({ operationId: 'blue-before-remove-install' }) }
+        return { operationId: 'blue-before-remove-install' }
       }
-      if (url.endsWith('/operations/blue-before-remove-install')) return { ok: true, json: async () => ({ id: 'blue-before-remove-install', kind: 'install', skinId: blue.id, phase: 'done', restartRequired: true }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'blue-before-remove-activate' }) }
-      if (url.endsWith('/operations/blue-before-remove-activate')) return { ok: true, json: async () => ({ id: 'blue-before-remove-activate', kind: 'activate', skinId: blue.id, phase: 'failed', message: '启用保存失败，已恢复原皮肤' }) }
+      if (url.endsWith('/operations/blue-before-remove-install')) return { id: 'blue-before-remove-install', kind: 'install', skinId: blue.id, phase: 'done', restartRequired: true }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'blue-before-remove-activate' }
+      if (url.endsWith('/operations/blue-before-remove-activate')) return { id: 'blue-before-remove-activate', kind: 'activate', skinId: blue.id, phase: 'failed', message: '启用保存失败，已恢复原皮肤' }
       if (url.endsWith('/uninstall') && init?.method === 'POST') {
         removedId = JSON.parse(init.body as string).skinId
-        return { ok: true, json: async () => ({ operationId: 'hot-remove-result' }) }
+        return { operationId: 'hot-remove-result' }
       }
-      if (url.endsWith('/operations/hot-remove-result')) return { ok: true, json: async () => ({ id: 'hot-remove-result', kind: 'uninstall', skinId: target.id, phase: 'done', restartRequired: false }) }
+      if (url.endsWith('/operations/hot-remove-result')) return { id: 'hot-remove-result', kind: 'uninstall', skinId: target.id, phase: 'done', restartRequired: false }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '安装' }))
     const failure = await screen.findByRole('dialog', { name: '启用未完成' })
@@ -3251,18 +3189,17 @@ describe('client market', () => {
   })
 
   it.each(['failed', 'cancelled'] as const)('does not report uninstall success when the removal result is %s', async phase => {
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin] }
+      if (url.endsWith('/state')) return {
         hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version: '0.2.1-alpha.3' }, management: officialManagement,
         skins: [{ skinId: skin.id, installation: 'installed', activation: 'active', installedVersion: '1.0.0', updateAvailable: false }],
-      }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.60', latestVersion: '0.1.60', updateAvailable: false }) }
-      if (url.endsWith('/uninstall') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'unsuccessful-remove' }) }
-      if (url.endsWith('/operations/unsuccessful-remove')) return { ok: true, json: async () => ({ id: 'unsuccessful-remove', kind: 'uninstall', skinId: skin.id, phase, message: phase === 'failed' ? '卸载保存失败' : '已取消卸载' }) }
+      }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.60', latestVersion: '0.1.60', updateAvailable: false }
+      if (url.endsWith('/uninstall') && init?.method === 'POST') return { operationId: 'unsuccessful-remove' }
+      if (url.endsWith('/operations/unsuccessful-remove')) return { id: 'unsuccessful-remove', kind: 'uninstall', skinId: skin.id, phase, message: phase === 'failed' ? '卸载保存失败' : '已取消卸载' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     const details = screen.getByRole('main', { name: zh['common.detailContent'] })
@@ -3277,10 +3214,10 @@ describe('client market', () => {
   })
 
   it('restores an uninstalled skin pending restart with its removal title and explanation', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [managedDesktopSkin] } : url.endsWith('/state') ? {
       instanceId: 'restored-remove', hostKind: 'desktop', restartAvailable: false, runtime: { ...dshRuntime, version: '0.2.1-alpha.3' }, management: officialManagement,
       skins: [{ skinId: skin.id, installation: 'missing', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }],
-    } : {} })))
+    } : {}))
     const view = render(<SkinMarketSection t={key => key} />)
     expect(screen.queryByText('测试皮肤 已卸载，请手动重启 Desktop App 后生效')).toBeNull()
     const initialDialog = await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })
@@ -3301,18 +3238,17 @@ describe('client market', () => {
 
   it.each(['completed-task', 'restored'] as const)('keeps the acknowledged manual market-update notice in the banner for a %s across refresh and remount', async mode => {
     let updated = mode === 'restored'
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [managedDesktopSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'desktop', restartAvailable: false, skins: [], marketUpdateRestartRequired: updated }) }
-      if (url.endsWith('/market-update') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'desktop-market-update' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [managedDesktopSkin] }
+      if (url.endsWith('/state')) return { hostKind: 'desktop', restartAvailable: false, skins: [], marketUpdateRestartRequired: updated }
+      if (url.endsWith('/market-update') && init?.method === 'POST') return { operationId: 'desktop-market-update' }
       if (url.endsWith('/market-update/operations/desktop-market-update')) {
         updated = true
-        return { ok: true, json: async () => ({ id: 'desktop-market-update', phase: 'done', startedAt: new Date().toISOString() }) }
+        return { id: 'desktop-market-update', phase: 'done', startedAt: new Date().toISOString() }
       }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: updated ? '0.1.58' : '0.1.57', latestVersion: '0.1.58', updateAvailable: !updated }) }
+      if (url.endsWith('/market-update')) return { currentVersion: updated ? '0.1.58' : '0.1.57', latestVersion: '0.1.58', updateAvailable: !updated }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     const view = render(<SkinMarketSection t={key => key} />)
     if (mode === 'completed-task') fireEvent.click(await screen.findByRole('button', { name: '更新皮肤市场到 0.1.58' }))
     const dialog = await screen.findByRole('dialog', { name: zh['common.restartManualTitle'] })
@@ -3333,15 +3269,14 @@ describe('client market', () => {
 
   it('asks for restart after updating the active skin', async () => {
     let updated = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ currentVersion: '0.1.26', latestVersion: '0.1.26', updateAvailable: false }) }
-      if (url.endsWith('/update') && init?.method === 'POST') { updated = true; return { ok: true, json: async () => ({ operationId: 'update-1' }) } }
-      if (url.endsWith('/operations/update-1')) return { ok: true, json: async () => ({ id: 'update-1', phase: 'done' }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ runningAgentCount: 0, skins: [{ skinId: skin.id, installation: 'installed', activation: updated ? 'restart-required' : 'active', installedVersion: '1.0.0', updateAvailable: !updated }], runtime: dshRuntime }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/market-update')) return { currentVersion: '0.1.26', latestVersion: '0.1.26', updateAvailable: false }
+      if (url.endsWith('/update') && init?.method === 'POST') { updated = true; return { operationId: 'update-1' } }
+      if (url.endsWith('/operations/update-1')) return { id: 'update-1', phase: 'done' }
+      if (url.endsWith('/state')) return { runningAgentCount: 0, skins: [{ skinId: skin.id, installation: 'installed', activation: updated ? 'restart-required' : 'active', installedVersion: '1.0.0', updateAvailable: !updated }], runtime: dshRuntime }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -3358,7 +3293,7 @@ describe('client market', () => {
   })
 
   it('disables restart when the Host reports a running Agent', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { runningAgentCount: 2, skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { runningAgentCount: 2, skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -3369,7 +3304,7 @@ describe('client market', () => {
 
   it('blocks restart while another skin is still installing', async () => {
     const other = { ...skin, id: 'test.other', name: { zh: '另一款皮肤', en: 'Other Skin' }, package: 'other-skin', rowId: 'other-skin', repo: 'https://github.com/a/c' }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+    stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog')
         ? { skins: [skin, other] }
@@ -3378,7 +3313,7 @@ describe('client market', () => {
           skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }],
           operations: [{ id: 'install-other', kind: 'install', skinId: other.id, phase: 'downloading', startedAt: new Date().toISOString() }],
         },
-    })))
+    }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -3388,7 +3323,7 @@ describe('client market', () => {
   })
 
   it('allows an explicit one-time restart when the old Host cannot report Agent state', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [{ skinId: skin.id, installation: 'installed', activation: 'restart-required', installedVersion: '1.0.0', updateAvailable: false }] }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -3406,10 +3341,9 @@ describe('client market', () => {
     }
 
     function serveWebState(state: () => RuntimeSkin[], catalog: CatalogSkin[] = [skin]) {
-      const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: catalog }
+      const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: catalog }
         : url.endsWith('/state') ? { instanceId: 'same-web-instance', restartNoticeId: 'same-receipt', hostKind: 'dsh', runtime: dshRuntime, runningAgentCount: 0, skins: state() }
-          : { updateAvailable: false } }))
-      vi.stubGlobal('fetch', fetchMock)
+          : { updateAvailable: false }))
       return fetchMock
     }
 
@@ -3523,7 +3457,7 @@ describe('client market', () => {
 
     it('uses the actual probe after an activation request whose loader boolean is false', async () => {
       let activated = false
-      const fetchMock = vi.fn(async (url: string, init?: RequestInit) => ({ ok: true, json: async () => {
+      const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => ({ ok: true, json: async () => {
         if (url.endsWith('/catalog')) return { skins: [skin] }
         if (url.endsWith('/state')) return { instanceId: 'accepted-is-not-applied', hostKind: 'dsh', runtime: dshRuntime,
           skins: [webSkin({ activation: activated ? 'restart-required' : 'inactive', primary: activated,
@@ -3532,7 +3466,6 @@ describe('client market', () => {
         if (url.endsWith('/operations/activate-client-probe')) return { id: 'activate-client-probe', skinId: skin.id, kind: 'activate', phase: 'done' }
         return { updateAvailable: false }
       } }))
-      vi.stubGlobal('fetch', fetchMock)
       const setActive = vi.fn(async () => false)
       render(<SkinMarketSection t={key => key} clientRuntime={{ setActive, probeActive: () => activated ? 'active' : 'disabled', probeSyncing: () => false }} />)
       await openSkinCard()
@@ -3546,7 +3479,7 @@ describe('client market', () => {
       let stopped = false
       let companionPhase = 'active' as 'active' | 'missing'
       let notify!: () => void
-      const fetchMock = vi.fn(async (url: string, init?: RequestInit) => ({ ok: true, json: async () => {
+      const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => ({ ok: true, json: async () => {
         if (url.endsWith('/catalog')) return { skins: [skin] }
         if (url.endsWith('/state')) return { instanceId: 'stopping-companion', hostKind: 'dsh', runtime: dshRuntime,
           skins: [webSkin({ clientModule: undefined, activation: stopped ? 'restart-required' : 'active', primary: !stopped && kind === 'deactivate', pinned: !stopped && kind === 'unpin',
@@ -3555,7 +3488,6 @@ describe('client market', () => {
         if (url.endsWith('/operations/stop-browser-companion')) return { id: 'stop-browser-companion', skinId: skin.id, kind, phase: 'done' }
         return { updateAvailable: false }
       } }))
-      vi.stubGlobal('fetch', fetchMock)
       render(<SkinMarketSection t={key => key} clientRuntime={{ setActive: vi.fn(async () => true), probeActive: () => companionPhase, probeSyncing: () => false,
         observe: listener => { notify = listener; return () => undefined } }} />)
       await openSkinCard()
@@ -3708,14 +3640,13 @@ describe('client market', () => {
   it.each(['activate', 'pin'] as const)('preserves a real Web-client failure after %s without fabricating a Host activation state', async kind => {
     let activated = false
     let instanceId = 'web-before-restart'
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ instanceId, runningAgentCount: 0, skins: [{ skinId: skin.id, installation: 'installed', activation: activated || kind === 'pin' ? 'active' : 'inactive', primary: activated || kind === 'pin', pinned: activated && kind === 'pin', installedVersion: '1.0.0', updateAvailable: false }], runtime: dshRuntime }) }
-      if (url.endsWith(`/${kind}`) && init?.method === 'POST') { activated = true; return { ok: true, json: async () => ({ operationId: 'client-failure' }) } }
-      if (url.endsWith('/operations/client-failure')) return { ok: true, json: async () => ({ id: 'client-failure', kind, skinId: skin.id, phase: 'done', restartRequired: false }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { instanceId, runningAgentCount: 0, skins: [{ skinId: skin.id, installation: 'installed', activation: activated || kind === 'pin' ? 'active' : 'inactive', primary: activated || kind === 'pin', pinned: activated && kind === 'pin', installedVersion: '1.0.0', updateAvailable: false }], runtime: dshRuntime }
+      if (url.endsWith(`/${kind}`) && init?.method === 'POST') { activated = true; return { operationId: 'client-failure' } }
+      if (url.endsWith('/operations/client-failure')) return { id: 'client-failure', kind, skinId: skin.id, phase: 'done', restartRequired: false }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     const clientRuntime = { setActive: vi.fn(async () => false) }
     render(<SkinMarketSection t={key => key} clientRuntime={clientRuntime} />)
     await openSkinCard()
@@ -3741,14 +3672,13 @@ describe('client market', () => {
   it('asks before using an incompatible installed skin and preserves the restart flow after consent', async () => {
     const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
     let activated = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [incompatible] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ runningAgentCount: 0, skins: [{ skinId: incompatible.id, installation: 'installed', activation: activated ? 'restart-required' : 'inactive', installedVersion: '1.0.0', updateAvailable: false }], runtime: { version: '0.1.1-rc.1', capabilities: ['slot:keyed:settings.plugin.item'], source: 'injected' } }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') { activated = true; return { ok: true, json: async () => ({ operationId: 'activate-1' }) } }
-      if (url.endsWith('/operations/activate-1')) return { ok: true, json: async () => ({ id: 'activate-1', phase: 'done' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [incompatible] }
+      if (url.endsWith('/state')) return { runningAgentCount: 0, skins: [{ skinId: incompatible.id, installation: 'installed', activation: activated ? 'restart-required' : 'inactive', installedVersion: '1.0.0', updateAvailable: false }], runtime: { version: '0.1.1-rc.1', capabilities: ['slot:keyed:settings.plugin.item'], source: 'injected' } }
+      if (url.endsWith('/activate') && init?.method === 'POST') { activated = true; return { operationId: 'activate-1' } }
+      if (url.endsWith('/operations/activate-1')) return { id: 'activate-1', phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     const clientRuntime = { setActive: vi.fn(async () => false) }
     render(<SkinMarketSection t={key => key} clientRuntime={clientRuntime} />)
     await openSkinCard()
@@ -3768,14 +3698,13 @@ describe('client market', () => {
 
   it('asks separately for an incompatible skin before enabling it as a pinned plugin', async () => {
     const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [incompatible] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] }) }
-      if (url.endsWith('/pin') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'incompatible-pin' }) }
-      if (url.endsWith('/operations/incompatible-pin')) return { ok: true, json: async () => ({ id: 'incompatible-pin', kind: 'pin', skinId: skin.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [incompatible] }
+      if (url.endsWith('/state')) return { runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }] }
+      if (url.endsWith('/pin') && init?.method === 'POST') return { operationId: 'incompatible-pin' }
+      if (url.endsWith('/operations/incompatible-pin')) return { id: 'incompatible-pin', kind: 'pin', skinId: skin.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: '测试皮肤 已安装卡片' }))
     fireEvent.click(screen.getByRole('button', { name: '设为常驻' }))
@@ -3788,7 +3717,7 @@ describe('client market', () => {
 
   it('filters the catalog from the native search input', async () => {
     const descriptionMatch = { ...skin, id: 'description.match', name: { zh: '描述皮肤', en: 'Description Skin' }, description: '终末地风格的深色主题' }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin, descriptionMatch] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin, descriptionMatch] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
     await screen.findByRole('button', { name: /测试皮肤 界面预览/ })
     fireEvent.change(screen.getByRole('textbox'), { target: { value: '终末地' } })
@@ -3801,7 +3730,7 @@ describe('client market', () => {
   })
 
   it('shows heat, Stars and latest sorting modes and highlights the active one', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
     await screen.findByRole('heading', { name: zh['common.discoverMore'] })
     const sortOptions = screen.getByRole('group', { name: zh['common.sortBy'] })
@@ -3823,7 +3752,7 @@ describe('client market', () => {
     const pet = { ...skin, id: 'test.pet', name: { zh: '桌面宠物', en: 'Desk Pet' }, category: 'pet' }
     const player = { ...skin, id: 'test.player', name: { zh: '音乐播放器', en: 'Music Player' }, category: 'player' }
     const legacy = { ...skin, id: 'test.legacy', name: { zh: '旧分类皮肤', en: 'Legacy Skin' }, category: 'theme' }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin, pet, player, legacy] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin, pet, player, legacy] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
     const heading = await screen.findByRole('heading', { name: zh['common.discoverMore'] })
     const filters = screen.getByRole('group', { name: '分类' })
@@ -3855,7 +3784,7 @@ describe('client market', () => {
   })
 
   it('docks the discovery bar into the header and keeps the original space', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} layout="embedded" />)
     const title = (await screen.findByRole('heading', { name: zh['common.discoverMore'] })).parentElement!.parentElement!
     const header = title.closest('main')!.querySelector('header')!
@@ -3876,7 +3805,7 @@ describe('client market', () => {
 
   it('shows Stars in list rows and marks the selected skin', async () => {
     const secondSkin = { ...skin, id: 'test.second', name: { zh: '第二皮肤', en: 'Second Skin' }, githubStars: 7 }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin, secondSkin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin, secondSkin] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
@@ -3893,12 +3822,12 @@ describe('client market', () => {
   })
 
   it('shows an installing status on the matching list row immediately', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
       if (init?.method === 'POST') return await new Promise(() => undefined)
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -3914,18 +3843,18 @@ describe('client market', () => {
 
   it('names the skin and compact elapsed time in the operation banner, then shows failures promptly', async () => {
     let operationRequests = 0
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation: null, runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'install-progress' }) }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], operation: null, runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'install-progress' }
       if (url.endsWith('/operations/install-progress')) {
         operationRequests += 1
-        return { ok: true, json: async () => operationRequests === 1
+        return operationRequests === 1
           ? { id: 'install-progress', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date().toISOString() }
-          : { id: 'install-progress', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: 'GitHub 插件下载超时' } }
+          : { id: 'install-progress', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: 'GitHub 插件下载超时' }
       }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -3952,12 +3881,12 @@ describe('client market', () => {
       step: '下载 npm 皮肤包', stepStartedAt: new Date(now - 1000).toISOString(), attempt: 2, pnpmStage: 'downloading',
       lastOutputAt: new Date(now).toISOString(), downloadedBytes: 2048, totalBytes: 4096, bytesPerSecond: 1024,
     }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation, runtime: dshRuntime }) }
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], operation, runtime: dshRuntime }
       if (url.endsWith('/logs?operationId=install-live-log')) return { ok: true, text: async () => '# dsh-skin-market diagnostic log\nredacted' }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     try {
       render(<SkinMarketSection t={key => key} />)
       await waitFor(() => expect(screen.getByRole('status').querySelector('strong')?.textContent).toBe('正在下载“测试皮肤”'))
@@ -4010,14 +3939,14 @@ describe('client market', () => {
       id: 'uninstall-status', kind: 'uninstall', skinId: skin.id, phase, step,
       startedAt: new Date().toISOString(), downloadedBytes: 2048, totalBytes: 4096,
     }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return {
         skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }],
         operation, runtime: dshRuntime,
-      }) }
+      }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     await waitFor(() => expect(screen.getByRole('status').querySelector('strong')?.textContent).toBe(title))
     await openSkinCard()
@@ -4033,14 +3962,14 @@ describe('client market', () => {
 
   it('uses the current command start for silence detection when the operation has already been running', async () => {
     const now = Date.now()
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime, operation: {
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime, operation: {
         id: 'new-step', kind: 'install', skinId: skin.id, phase: 'installing', startedAt: new Date(now - 300_000).toISOString(),
         step: '写入插件', stepStartedAt: new Date(now).toISOString(), attempt: 1, pnpmStage: 'linking', lastOutputAt: new Date(now - 60_000).toISOString(),
-      } }) }
+      } }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     await waitFor(() => expect(screen.getByRole('status').querySelector('strong')?.textContent).toBe('正在安装“测试皮肤”'))
     const banner = screen.getByRole('status')
@@ -4062,12 +3991,12 @@ describe('client market', () => {
       stepStartedAt: new Date(now - elapsedSeconds * 1000).toISOString(), attempt: 1,
       lastOutputAt: new Date(now - (elapsedSeconds - 5) * 1000).toISOString(), message: '安装未完成，正在恢复原有依赖',
     }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [recoveringSkin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation, runtime: dshRuntime }) }
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [recoveringSkin] }
+      if (url.endsWith('/state')) return { skins: [], operation, runtime: dshRuntime }
       if (url.endsWith('/logs?operationId=install-recovery')) return { ok: true, text: async () => '# dsh-skin-market diagnostic log\nredacted' }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     try {
       render(<SkinMarketSection t={key => key} />)
       await openSkinCard(/深海女仆工坊 界面预览/)
@@ -4108,11 +4037,11 @@ describe('client market', () => {
       id: 'stale-recovery-step', kind: 'install', skinId: skin.id, phase, cancelable: false,
       startedAt: new Date().toISOString(), step: zh['common.stepRestoreProfile'], message,
     }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation, runtime: dshRuntime }) }
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], operation, runtime: dshRuntime }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     if (phase === 'waiting') {
       expect(await screen.findByRole('dialog', { name: zh['common.confirmResult'] })).toBeTruthy()
@@ -4131,20 +4060,19 @@ describe('client market', () => {
     const longMessage = '依赖 @deepseek-ai/dsh-compact 无法从 npm registry 找到；这是一个很长的 pnpm 诊断信息，需要完整展示而不能挤在横幅里。'
     const clipboard = vi.fn(async () => undefined)
     Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText: clipboard } })
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation: null, runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'install-copy' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], operation: null, runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'install-copy' }
       if (url.endsWith('/logs?operationId=install-copy')) return { ok: true, text: async () => '# dsh-skin-market diagnostic log\nredacted' }
       if (url.endsWith('/operations/install-copy')) {
         operationRequests += 1
-        return { ok: true, json: async () => operationRequests === 1
+        return operationRequests === 1
           ? { id: 'install-copy', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date().toISOString() }
-          : { id: 'install-copy', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: longMessage } }
+          : { id: 'install-copy', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: longMessage }
       }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
@@ -4177,19 +4105,19 @@ describe('client market', () => {
     let operationRequests = 0
     const clipboard = vi.fn(async () => undefined)
     Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText: clipboard } })
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation: null, runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'install-patch' }) }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], operation: null, runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'install-patch' }
       if (url.endsWith('/logs?operationId=install-patch')) return { ok: true, text: async () => '# dsh-skin-market diagnostic log\nbundle patch is missing' }
       if (url.endsWith('/operations/install-patch')) {
         operationRequests += 1
-        return { ok: true, json: async () => operationRequests === 1
+        return operationRequests === 1
           ? { id: 'install-patch', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date().toISOString() }
-          : { id: 'install-patch', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: `${skin.package} bundle patch is missing: ./cordis.patch.yml` } }
+          : { id: 'install-patch', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: `${skin.package} bundle patch is missing: ./cordis.patch.yml` }
       }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
@@ -4213,24 +4141,24 @@ describe('client market', () => {
   it('keeps a classified install failure in its dialog without offering retry', async () => {
     let operationRequests = 0
     let retryRequests = 0
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'install-retry-source' }) }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'install-retry-source' }
       if (url.endsWith('/operations/install-retry-source/retry') && init?.method === 'POST') {
         retryRequests += 1
         expect(JSON.parse(String(init.body))).toEqual({ action: 'retry' })
-        return { ok: true, json: async () => ({ operationId: 'install-retry-target' }) }
+        return { operationId: 'install-retry-target' }
       }
       if (url.endsWith('/operations/install-retry-source')) {
         operationRequests += 1
-        return { ok: true, json: async () => operationRequests === 1
+        return operationRequests === 1
           ? { id: 'install-retry-source', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date().toISOString() }
-          : { id: 'install-retry-source', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: '插件下载遇到临时网络错误', failure: { kind: 'network', message: '插件下载遇到临时网络错误', action: 'retry' } } }
+          : { id: 'install-retry-source', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: '插件下载遇到临时网络错误', failure: { kind: 'network', message: '插件下载遇到临时网络错误', action: 'retry' } }
       }
-      if (url.endsWith('/operations/install-retry-target')) return { ok: true, json: async () => ({ id: 'install-retry-target', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: '仍然失败', failure: { kind: 'network', message: '仍然失败', action: 'retry' } }) }
+      if (url.endsWith('/operations/install-retry-target')) return { id: 'install-retry-target', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: '仍然失败', failure: { kind: 'network', message: '仍然失败', action: 'retry' } }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -4246,26 +4174,26 @@ describe('client market', () => {
     const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
     let retryRequests = 0
     let activateRequests = 0
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [incompatible] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'install-age-source' }) }
-      if (url.endsWith('/operations/install-age-source')) return { ok: true, json: async () => ({ id: 'install-age-source', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), failure: {
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [incompatible] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'install-age-source' }
+      if (url.endsWith('/operations/install-age-source')) return { id: 'install-age-source', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), failure: {
         kind: 'release-age', message: '新包保护拦住市场版本', action: 'approve-release-age', releaseAgeTarget: { packageName: 'dsh-skin-market', version: '0.1.61' },
-      } }) }
+      } }
       if (url.endsWith('/operations/install-age-source/retry') && init?.method === 'POST') {
         retryRequests += 1
         expect(JSON.parse(String(init.body))).toEqual({ action: 'approve-release-age' })
-        return { ok: true, json: async () => ({ operationId: 'install-age-approved' }) }
+        return { operationId: 'install-age-approved' }
       }
-      if (url.endsWith('/operations/install-age-approved')) return { ok: true, json: async () => ({ id: 'install-age-approved', kind: 'install', skinId: skin.id, phase: 'done' }) }
+      if (url.endsWith('/operations/install-age-approved')) return { id: 'install-age-approved', kind: 'install', skinId: skin.id, phase: 'done' }
       if (url.endsWith('/activate') && init?.method === 'POST') {
         activateRequests += 1
-        return { ok: true, json: async () => ({ operationId: 'activate-age-approved' }) }
+        return { operationId: 'activate-age-approved' }
       }
-      if (url.endsWith('/operations/activate-age-approved')) return { ok: true, json: async () => ({ id: 'activate-age-approved', kind: 'activate', skinId: skin.id, phase: 'done' }) }
+      if (url.endsWith('/operations/activate-age-approved')) return { id: 'activate-age-approved', kind: 'activate', skinId: skin.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: zh['common.installAndUse'] }))
@@ -4291,24 +4219,23 @@ describe('client market', () => {
     let installed = mode !== 'install-and-use'
     let used = false
     const kind = mode === 'pin' ? 'pin' : 'activate'
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [incompatible] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ runtime: dshRuntime, skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false, ...(!used && { artifactRisk: risk }) }] : [] }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [incompatible] }
+      if (url.endsWith('/state')) return { runtime: dshRuntime, skins: installed ? [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false, ...(!used && { artifactRisk: risk }) }] : [] }
       if (url.endsWith('/install') && init?.method === 'POST') {
         installed = true
         expect(JSON.parse(String(init.body))).toEqual({ skinId: skin.id })
-        return { ok: true, json: async () => ({ operationId: 'merged-install' }) }
+        return { operationId: 'merged-install' }
       }
-      if (url.endsWith('/operations/merged-install')) return { ok: true, json: async () => ({ id: 'merged-install', kind: 'install', skinId: skin.id, phase: 'done' }) }
+      if (url.endsWith('/operations/merged-install')) return { id: 'merged-install', kind: 'install', skinId: skin.id, phase: 'done' }
       if (url.endsWith(`/${kind}`) && init?.method === 'POST') {
         used = true
         expect(JSON.parse(String(init.body))).toEqual({ skinId: skin.id, acknowledgeCompatibility: true, compatibilityContext: compatibilityContext(incompatible, dshRuntime), artifactContext: risk.context })
-        return { ok: true, json: async () => ({ operationId: 'merged-use' }) }
+        return { operationId: 'merged-use' }
       }
-      if (url.endsWith('/operations/merged-use')) return { ok: true, json: async () => ({ id: 'merged-use', kind, skinId: skin.id, phase: 'done' }) }
+      if (url.endsWith('/operations/merged-use')) return { id: 'merged-use', kind, skinId: skin.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: mode === 'install-and-use' ? zh['common.installAndUse'] : mode === 'pin' ? '设为常驻' : '使用' }))
@@ -4341,14 +4268,13 @@ describe('client market', () => {
 
   it('refreshes a changed artifact in the pending use dialog before sending its new context', async () => {
     let risk = artifactRiskOperation().failure!.artifactRisk!
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false, artifactRisk: risk }] }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'changed-risk-use' }) }
-      if (url.endsWith('/operations/changed-risk-use')) return { ok: true, json: async () => ({ id: 'changed-risk-use', kind: 'activate', skinId: skin.id, phase: 'done' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false, artifactRisk: risk }] }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'changed-risk-use' }
+      if (url.endsWith('/operations/changed-risk-use')) return { id: 'changed-risk-use', kind: 'activate', skinId: skin.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
@@ -4370,14 +4296,13 @@ describe('client market', () => {
   it('does not ask about an accepted unchanged artifact again after refreshed state removes its risk', async () => {
     const risk = artifactRiskOperation().failure!.artifactRisk!
     let accepted = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false, ...(!accepted && { artifactRisk: risk }) }] }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') { accepted = true; return { ok: true, json: async () => ({ operationId: 'accepted-use' }) } }
-      if (url.endsWith('/operations/accepted-use')) return { ok: true, json: async () => ({ id: 'accepted-use', kind: 'activate', skinId: skin.id, phase: 'done' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { runtime: dshRuntime, skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false, ...(!accepted && { artifactRisk: risk }) }] }
+      if (url.endsWith('/activate') && init?.method === 'POST') { accepted = true; return { operationId: 'accepted-use' } }
+      if (url.endsWith('/operations/accepted-use')) return { id: 'accepted-use', kind: 'activate', skinId: skin.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: '使用' }))
@@ -4391,8 +4316,7 @@ describe('client market', () => {
 
   it.each(['取消', '关闭'])('keeps artifact risk approval explicit and makes %s leave the install unchanged', async closeLabel => {
     const operation = artifactRiskOperation()
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : url.endsWith('/state') ? { skins: [], runtime: dshRuntime } : url.endsWith('/install') && init?.method === 'POST' ? { operationId: operation.id } : url.endsWith(`/operations/${operation.id}`) ? operation : {} }))
-    vi.stubGlobal('fetch', fetchMock)
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => (url.endsWith('/catalog') ? { skins: [skin] } : url.endsWith('/state') ? { skins: [], runtime: dshRuntime } : url.endsWith('/install') && init?.method === 'POST' ? { operationId: operation.id } : url.endsWith(`/operations/${operation.id}`) ? operation : {}))
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: zh['common.installAndUse'] }))
     const dialog = await screen.findByRole('dialog', { name: '安装需要确认安装包风险' })
@@ -4416,26 +4340,26 @@ describe('client market', () => {
     let activateRequests = 0
     let finishRetry!: () => void
     const retryGate = new Promise<void>(resolve => { finishRetry = resolve })
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [incompatible] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: operation.id }) }
-      if (url.endsWith(`/operations/${operation.id}`)) return { ok: true, json: async () => operation }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [incompatible] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: operation.id }
+      if (url.endsWith(`/operations/${operation.id}`)) return operation
       if (url.endsWith(`/operations/${operation.id}/retry`) && init?.method === 'POST') {
         retryRequests += 1
         expect(JSON.parse(String(init.body))).toEqual({ action: 'approve-artifact', acknowledgeCompatibility: true, compatibilityContext: compatibilityContext(incompatible, dshRuntime) })
         await retryGate
-        return { ok: true, json: async () => ({ operationId: 'artifact-approved' }) }
+        return { operationId: 'artifact-approved' }
       }
-      if (url.endsWith('/operations/artifact-approved')) return { ok: true, json: async () => ({ id: 'artifact-approved', kind: 'install', skinId: skin.id, phase: 'done' }) }
+      if (url.endsWith('/operations/artifact-approved')) return { id: 'artifact-approved', kind: 'install', skinId: skin.id, phase: 'done' }
       if (url.endsWith('/activate') && init?.method === 'POST') {
         activateRequests += 1
         expect(JSON.parse(String(init.body))).toEqual({ skinId: skin.id, acknowledgeCompatibility: true, compatibilityContext: compatibilityContext(incompatible, dshRuntime) })
-        return { ok: true, json: async () => ({ operationId: 'artifact-approved-activate' }) }
+        return { operationId: 'artifact-approved-activate' }
       }
-      if (url.endsWith('/operations/artifact-approved-activate')) return { ok: true, json: async () => ({ id: 'artifact-approved-activate', kind: 'activate', skinId: skin.id, phase: 'done' }) }
+      if (url.endsWith('/operations/artifact-approved-activate')) return { id: 'artifact-approved-activate', kind: 'activate', skinId: skin.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: zh['common.installAndUse'] }))
@@ -4458,17 +4382,17 @@ describe('client market', () => {
   it('keeps a rejected artifact approval in the same dialog with the changed-context error', async () => {
     const operation = artifactRiskOperation()
     let retries = 0
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: operation.id }) }
-      if (url.endsWith(`/operations/${operation.id}`)) return { ok: true, json: async () => operation }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: operation.id }
+      if (url.endsWith(`/operations/${operation.id}`)) return operation
       if (url.endsWith(`/operations/${operation.id}/retry`) && init?.method === 'POST') {
         retries += 1
         return { ok: false, status: 409, json: async () => ({ error: '实际构件已变化，请重新操作后确认风险' }) }
       }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: zh['common.installAndUse'] }))
     const dialog = await screen.findByRole('dialog', { name: '安装需要确认安装包风险' })
@@ -4486,8 +4410,7 @@ describe('client market', () => {
     const failedOperation = { id: 'declined-age', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), failure: {
       kind: 'release-age', message: '新包保护', action: 'approve-release-age', releaseAgeTarget: { packageName: '@example/dependency', version: '2.3.4' },
     } }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : url.endsWith('/state') ? { skins: [], runtime: dshRuntime } : url.endsWith('/install') && init?.method === 'POST' ? { operationId: failedOperation.id } : url.endsWith('/operations/declined-age') ? failedOperation : {} }))
-    vi.stubGlobal('fetch', fetchMock)
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => (url.endsWith('/catalog') ? { skins: [skin] } : url.endsWith('/state') ? { skins: [], runtime: dshRuntime } : url.endsWith('/install') && init?.method === 'POST' ? { operationId: failedOperation.id } : url.endsWith('/operations/declined-age') ? failedOperation : {}))
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: zh['common.installAndUse'] }))
     const dialog = await screen.findByRole('dialog', { name: '安装需要允许新版本' })
@@ -4504,15 +4427,14 @@ describe('client market', () => {
     const operation: Operation = { id, kind, skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), failure: {
       kind: 'compatibility', code: 'incompatible-version', message: 'Host rejected incompatible plugin peers',
     } }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [target] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: kind === 'install' ? [] : [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: kind === 'update' ? '0.9.0' : '1.0.0', updateAvailable: kind === 'update' }], runtime: hostRuntime }) }
-      if (url.endsWith('/market-update')) return { ok: true, json: async () => ({ updateAvailable: false }) }
-      if (url.endsWith(`/${kind}`) && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: id }) }
-      if (url.endsWith(`/operations/${id}`)) return { ok: true, json: async () => operation }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [target] }
+      if (url.endsWith('/state')) return { skins: kind === 'install' ? [] : [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: kind === 'update' ? '0.9.0' : '1.0.0', updateAvailable: kind === 'update' }], runtime: hostRuntime }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
+      if (url.endsWith(`/${kind}`) && init?.method === 'POST') return { operationId: id }
+      if (url.endsWith(`/operations/${id}`)) return operation
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     const actionLabel = { install: '仅安装', update: '更新', activate: '使用', pin: '设为常驻' }[kind]
@@ -4546,8 +4468,7 @@ describe('client market', () => {
     const operation = { id: 'unknown-age', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), failure: {
       kind: 'release-age', message: '新包保护拦截，未能确定具体版本，请复制日志反馈。', action: 'approve-release-age',
     } }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : url.endsWith('/state') ? { skins: [], runtime: dshRuntime } : url.endsWith('/install') && init?.method === 'POST' ? { operationId: operation.id } : url.endsWith('/operations/unknown-age') ? operation : {} }))
-    vi.stubGlobal('fetch', fetchMock)
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => (url.endsWith('/catalog') ? { skins: [skin] } : url.endsWith('/state') ? { skins: [], runtime: dshRuntime } : url.endsWith('/install') && init?.method === 'POST' ? { operationId: operation.id } : url.endsWith('/operations/unknown-age') ? operation : {}))
     render(<SkinMarketSection t={key => key} />)
     fireEvent.click(await screen.findByRole('button', { name: zh['common.installAndUse'] }))
     const dialog = await screen.findByRole('dialog', { name: '安装未完成' })
@@ -4563,20 +4484,19 @@ describe('client market', () => {
   ] as const)('does not ask optional use confirmation during a $kind $action retry', async ({ kind, action, failureKind }) => {
     const incompatible = { ...skin, compatibility: { dsh: '<0.1.0-rc.6', platform: ['web'] } }
     let retries = 0
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [incompatible] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: kind === 'update' ? [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }] : [], runtime: dshRuntime }) }
-      if (url.endsWith(`/${kind}`) && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'compat-retry-source' }) }
-      if (url.endsWith('/operations/compat-retry-source')) return { ok: true, json: async () => ({ id: 'compat-retry-source', kind, skinId: skin.id, phase: 'failed', failure: { kind: failureKind, message: '需要允许', action, releaseAgeTarget: { packageName: 'dsh-skin-market', version: '0.1.61' } } }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [incompatible] }
+      if (url.endsWith('/state')) return { skins: kind === 'update' ? [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }] : [], runtime: dshRuntime }
+      if (url.endsWith(`/${kind}`) && init?.method === 'POST') return { operationId: 'compat-retry-source' }
+      if (url.endsWith('/operations/compat-retry-source')) return { id: 'compat-retry-source', kind, skinId: skin.id, phase: 'failed', failure: { kind: failureKind, message: '需要允许', action, releaseAgeTarget: { packageName: 'dsh-skin-market', version: '0.1.61' } } }
       if (url.endsWith('/operations/compat-retry-source/retry')) {
         retries += 1
         expect(JSON.parse(String(init?.body))).toEqual({ action })
-        return { ok: true, json: async () => ({ operationId: 'compat-retry-target' }) }
+        return { operationId: 'compat-retry-target' }
       }
-      if (url.endsWith('/operations/compat-retry-target')) return { ok: true, json: async () => ({ id: 'compat-retry-target', kind, skinId: skin.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+      if (url.endsWith('/operations/compat-retry-target')) return { id: 'compat-retry-target', kind, skinId: skin.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(screen.getByRole('button', { name: kind === 'update' ? '更新' : '仅安装' }))
@@ -4589,24 +4509,24 @@ describe('client market', () => {
   it.each(['packageName', 'buildKeys'] as const)('puts exact %s build approval in one concise confirmation body', async targetMode => {
     let operationRequests = 0
     let retryRequests = 0
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation: null, runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'install-build-approval' }) }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], operation: null, runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'install-build-approval' }
       if (url.endsWith('/operations/install-build-approval/retry') && init?.method === 'POST') {
         retryRequests += 1
         expect(JSON.parse(String(init.body))).toEqual({ action: 'approve-build' })
-        return { ok: true, json: async () => ({ operationId: 'install-build-approval-retry' }) }
+        return { operationId: 'install-build-approval-retry' }
       }
       if (url.endsWith('/operations/install-build-approval')) {
         operationRequests += 1
-        return { ok: true, json: async () => operationRequests === 1
+        return operationRequests === 1
           ? { id: 'install-build-approval', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date().toISOString() }
-          : { id: 'install-build-approval', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: '依赖 node-pty 等 2 个依赖包含被 pnpm 阻止的构建脚本；请批准后重试', failure: { kind: 'build-approval', message: '依赖 node-pty 等 2 个依赖包含被 pnpm 阻止的构建脚本；请批准后重试', packageName: 'node-pty', ...(targetMode === 'buildKeys' && { buildKeys: ['node-pty', '@fixture/native-helper'] }), action: 'approve-build' } } }
+          : { id: 'install-build-approval', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: '依赖 node-pty 等 2 个依赖包含被 pnpm 阻止的构建脚本；请批准后重试', failure: { kind: 'build-approval', message: '依赖 node-pty 等 2 个依赖包含被 pnpm 阻止的构建脚本；请批准后重试', packageName: 'node-pty', ...(targetMode === 'buildKeys' && { buildKeys: ['node-pty', '@fixture/native-helper'] }), action: 'approve-build' } }
       }
-      if (url.endsWith('/operations/install-build-approval-retry')) return { ok: true, json: async () => ({ id: 'install-build-approval-retry', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: '仍然失败', failure: { kind: 'build-approval', message: '仍然失败', packageName: 'node-pty', action: 'approve-build' } }) }
+      if (url.endsWith('/operations/install-build-approval-retry')) return { id: 'install-build-approval-retry', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: '仍然失败', failure: { kind: 'build-approval', message: '仍然失败', packageName: 'node-pty', action: 'approve-build' } }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -4627,28 +4547,28 @@ describe('client market', () => {
     let sourceRequests = 0
     let retryRequests = 0
     let activateRequests = 0
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation: null, runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'install-intent-source' }) }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], operation: null, runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'install-intent-source' }
       if (url.endsWith('/activate') && init?.method === 'POST') {
         activateRequests += 1
-        return { ok: true, json: async () => ({ operationId: 'activate-after-approval' }) }
+        return { operationId: 'activate-after-approval' }
       }
       if (url.endsWith('/operations/install-intent-source/retry') && init?.method === 'POST') {
         retryRequests += 1
-        return { ok: true, json: async () => ({ operationId: 'install-intent-retry' }) }
+        return { operationId: 'install-intent-retry' }
       }
       if (url.endsWith('/operations/install-intent-source')) {
         sourceRequests += 1
-        return { ok: true, json: async () => sourceRequests === 1
+        return sourceRequests === 1
           ? { id: 'install-intent-source', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date().toISOString() }
-          : { id: 'install-intent-source', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: '需要批准', failure: { kind: 'build-approval', message: '需要批准', packageName: 'node-pty', action: 'approve-build' } } }
+          : { id: 'install-intent-source', kind: 'install', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: '需要批准', failure: { kind: 'build-approval', message: '需要批准', packageName: 'node-pty', action: 'approve-build' } }
       }
-      if (url.endsWith('/operations/install-intent-retry')) return { ok: true, json: async () => ({ id: 'install-intent-retry', kind: 'install', skinId: skin.id, phase: 'done' }) }
-      if (url.endsWith('/operations/activate-after-approval')) return { ok: true, json: async () => ({ id: 'activate-after-approval', kind: 'activate', skinId: skin.id, phase: 'done' }) }
+      if (url.endsWith('/operations/install-intent-retry')) return { id: 'install-intent-retry', kind: 'install', skinId: skin.id, phase: 'done' }
+      if (url.endsWith('/operations/activate-after-approval')) return { id: 'activate-after-approval', kind: 'activate', skinId: skin.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
-    }))
+    })
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -4661,20 +4581,19 @@ describe('client market', () => {
 
   it('shows available byte progress in one banner and cancels the download', async () => {
     let cancelled = false
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], operation: null, runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'install-cancel' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], operation: null, runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'install-cancel' }
       if (url.endsWith('/operations/install-cancel/cancel') && init?.method === 'POST') {
         cancelled = true
-        return { ok: true, json: async () => ({ id: 'install-cancel', phase: 'cancelling' }) }
+        return { id: 'install-cancel', phase: 'cancelling' }
       }
-      if (url.endsWith('/operations/install-cancel')) return { ok: true, json: async () => cancelled
+      if (url.endsWith('/operations/install-cancel')) return cancelled
         ? { id: 'install-cancel', kind: 'install', skinId: skin.id, phase: 'cancelled', startedAt: new Date().toISOString() }
-        : { id: 'install-cancel', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date().toISOString(), cancelable: true, downloadedBytes: 1024 ** 2, totalBytes: 2 * 1024 ** 2, bytesPerSecond: 512 * 1024 } }
+        : { id: 'install-cancel', kind: 'install', skinId: skin.id, phase: 'downloading', startedAt: new Date().toISOString(), cancelable: true, downloadedBytes: 1024 ** 2, totalBytes: 2 * 1024 ** 2, bytesPerSecond: 512 * 1024 }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -4693,15 +4612,14 @@ describe('client market', () => {
   })
 
   it('activates a verified skin after installation completes', async () => {
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [skin] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'install-1' }) }
-      if (url.endsWith('/operations/install-1')) return { ok: true, json: async () => ({ id: 'install-1', phase: 'done' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'install-1' }
+      if (url.endsWith('/operations/install-1')) return { id: 'install-1', phase: 'done' }
       if (url.endsWith('/activate') && init?.method === 'POST') return await new Promise(() => undefined)
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -4712,16 +4630,15 @@ describe('client market', () => {
 
   it('warns that compatibility is unverified but still installs', async () => {
     const unverified = { ...skin, review: { compatibility: 'unverified' as const, preview: 'repository-card' as const, installation: 'verified' as const }, compatibility: { dsh: 'unverified', platform: ['web'] } }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [unverified] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ skins: [], runtime: dshRuntime }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'op-unverified' }) }
-      if (url.endsWith('/operations/op-unverified')) return { ok: true, json: async () => ({ id: 'op-unverified', kind: 'install', skinId: unverified.id, phase: 'done' }) }
-      if (url.endsWith('/activate') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'op-activate' }) }
-      if (url.endsWith('/operations/op-activate')) return { ok: true, json: async () => ({ id: 'op-activate', kind: 'activate', skinId: unverified.id, phase: 'done' }) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [unverified] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'op-unverified' }
+      if (url.endsWith('/operations/op-unverified')) return { id: 'op-unverified', kind: 'install', skinId: unverified.id, phase: 'done' }
+      if (url.endsWith('/activate') && init?.method === 'POST') return { operationId: 'op-activate' }
+      if (url.endsWith('/operations/op-activate')) return { id: 'op-activate', kind: 'activate', skinId: unverified.id, phase: 'done' }
       throw new Error(`Unexpected request: ${url}`)
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -4743,7 +4660,7 @@ describe('client market', () => {
   })
 
   it('shows the Agent prompt first and one executable command in single-line capsules', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
     const writeText = vi.fn(async () => undefined)
     Object.assign(navigator, { clipboard: { writeText } })
     render(<SkinMarketSection t={key => key} />)
@@ -4768,10 +4685,10 @@ describe('client market', () => {
     const installEnvironment = { platform, profile: 'work', profileDir: '/srv/DSH data/profiles/work', dshHome: '/srv/DSH data' }
     const writeText = vi.fn(async (_text: string) => undefined)
     Object.assign(navigator, { clipboard: { writeText } })
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({
+    stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog') ? { skins: [subdirectorySkin] } : { hostKind: 'dsh', skins: [], installEnvironment },
-    })))
+    }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: zh['common.otherInstallMethods'] }))
@@ -4790,11 +4707,10 @@ describe('client market', () => {
     const installEnvironment = { platform: 'win32' as const, profile: 'work', profileDir: 'C:\\DSH data\\profiles\\work', dshHome: 'C:\\DSH data' }
     const writeText = vi.fn(async (_text: string) => undefined)
     Object.assign(navigator, { clipboard: { writeText } })
-    const fetchMock = vi.fn(async (url: string) => ({
+    const fetchMock = stubMarketFetch(async (url: string) => ({
       ok: true,
       json: async () => url.endsWith('/catalog') ? { skins: [subdirectorySkin] } : { hostKind: 'dsh', skins: [], installEnvironment: { ...installEnvironment } },
     }))
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: zh['common.otherInstallMethods'] }))
@@ -4825,7 +4741,7 @@ describe('client market', () => {
     ] } }
     const writeText = vi.fn(async (_text: string) => undefined)
     Object.assign(navigator, { clipboard: { writeText } })
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [subdirectorySkin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [subdirectorySkin] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: zh['common.otherInstallMethods'] }))
@@ -4858,7 +4774,7 @@ describe('client market', () => {
     const installEnvironment = { platform: 'linux' as const, profile: 'web', profileDir: '/srv/dsh/profiles/web' }
     const writeText = vi.fn(async (_text: string) => undefined)
     Object.assign(navigator, { clipboard: { writeText } })
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [companionSkin] } : { skins: [], installEnvironment } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [companionSkin] } : { skins: [], installEnvironment }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: zh['common.otherInstallMethods'] }))
@@ -4884,7 +4800,7 @@ describe('client market', () => {
 
   it('explains when a custom profile directory cannot be addressed by the install CLI', async () => {
     const installEnvironment = { platform: 'linux' as const, profile: 'work', profileDir: '/srv/custom-profile', cliAvailable: false }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [], installEnvironment } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [], installEnvironment }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: zh['common.otherInstallMethods'] }))
@@ -4898,7 +4814,7 @@ describe('client market', () => {
   it('suggests PowerShell when CMD cannot represent the actual directory literally', async () => {
     const subdirectorySkin = { ...skin, install: { ...skin.install, target: `${skin.install.target}&path:/packages/skin` } }
     const installEnvironment = { platform: 'win32' as const, profile: 'work', profileDir: 'C:\\DSH!data\\profiles\\work' }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [subdirectorySkin] } : { skins: [], installEnvironment } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [subdirectorySkin] } : { skins: [], installEnvironment }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: zh['common.otherInstallMethods'] }))
@@ -4919,7 +4835,7 @@ describe('client market', () => {
     } }
     const writeText = vi.fn(async (_text: string) => undefined)
     Object.assign(navigator, { clipboard: { writeText } })
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [npmSkin] } : { hostKind: 'desktop', skins: [], management: officialManagement } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [npmSkin] } : { hostKind: 'desktop', skins: [], management: officialManagement }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: zh['common.otherInstallMethods'] }))
@@ -4939,7 +4855,7 @@ describe('client market', () => {
   })
 
   it('replaces a failed verified screenshot instead of retaining stale image pixels', async () => {
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
@@ -4956,7 +4872,7 @@ describe('client market', () => {
       review: { compatibility: 'verified' as const, preview: 'repository-card' as const, installation: 'verified' as const },
       marketScreenshots: ['https://example.com/market-home.png'],
     }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [supplemented] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [supplemented] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
@@ -4973,7 +4889,7 @@ describe('client market', () => {
       screenshots: [upstreamCover],
       review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'verified' as const },
     }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [supplemented] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [supplemented] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
@@ -4989,8 +4905,7 @@ describe('client market', () => {
       ...skin,
       media: { list: { preview, full }, screenshots: [{ preview, full }] },
     }
-    const fetchMock = vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [layered] } : { skins: [] } }))
-    vi.stubGlobal('fetch', fetchMock)
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [layered] } : { skins: [] }))
 
     window.history.replaceState({}, '', '/')
     render(<SkinMarketSection t={key => key} />)
@@ -5016,11 +4931,11 @@ describe('client market', () => {
       screenshots: [source],
       media: { list: { preview: 'https://cdn.example.com/aurora.webp', full: 'https://cdn.example.com/aurora-full.webp' }, screenshots: [{ preview: 'https://cdn.example.com/aurora.webp', full: 'https://cdn.example.com/aurora-full.webp' }] },
     }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [layered] }) }
-      if (url.endsWith('/manifest.json')) return { ok: true, json: async () => ({}) }
-      return { ok: true, json: async () => ({ skins: [], installedClientPlugins: [], runningAgentCount: 0 }) }
-    }))
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [layered] }
+      if (url.endsWith('/manifest.json')) return {}
+      return { skins: [], installedClientPlugins: [], runningAgentCount: 0 }
+    })
     render(<SkinMarketSection t={key => key} />)
 
     const image = await screen.findByRole('img', { name: '测试皮肤 界面预览' })
@@ -5043,11 +4958,11 @@ describe('client market', () => {
         ],
       },
     }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [layered] }) }
-      if (url.endsWith('/manifest.json')) return { ok: true, json: async () => ({ [first]: 'first', [second]: 'second' }) }
-      return { ok: true, json: async () => ({ skins: [], installedClientPlugins: [], runningAgentCount: 0 }) }
-    }))
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [layered] }
+      if (url.endsWith('/manifest.json')) return { [first]: 'first', [second]: 'second' }
+      return { skins: [], installedClientPlugins: [], runningAgentCount: 0 }
+    })
     render(<SkinMarketSection t={key => key} />)
 
     const image = await screen.findByRole('img', { name: '测试皮肤 界面预览' })
@@ -5073,14 +4988,13 @@ describe('client market', () => {
         },
       },
     }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [manual] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runtime: dshRuntime, skins: [] }) }
-      if (url.endsWith('/install') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'manual-install' }) }
-      if (url.endsWith('/operations/manual-install')) return { ok: true, json: async () => ({ id: 'manual-install', kind: 'install', skinId: manual.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [manual] }
+      if (url.endsWith('/state')) return { hostKind: 'dsh', runtime: dshRuntime, skins: [] }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'manual-install' }
+      if (url.endsWith('/operations/manual-install')) return { id: 'manual-install', kind: 'install', skinId: manual.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
@@ -5096,14 +5010,13 @@ describe('client market', () => {
 
   it('warns before updating a manual-only web skin and keeps the update entry visible', async () => {
     const manual = { ...skin, review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'manual-only' as const } }
-    const fetchMock = vi.fn(async (url: string, init?: RequestInit) => {
-      if (url.endsWith('/catalog')) return { ok: true, json: async () => ({ skins: [manual] }) }
-      if (url.endsWith('/state')) return { ok: true, json: async () => ({ hostKind: 'dsh', runtime: dshRuntime, skins: [{ skinId: manual.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }] }) }
-      if (url.endsWith('/update') && init?.method === 'POST') return { ok: true, json: async () => ({ operationId: 'manual-update' }) }
-      if (url.endsWith('/operations/manual-update')) return { ok: true, json: async () => ({ id: 'manual-update', kind: 'update', skinId: manual.id, phase: 'done' }) }
-      return { ok: true, json: async () => ({}) }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [manual] }
+      if (url.endsWith('/state')) return { hostKind: 'dsh', runtime: dshRuntime, skins: [{ skinId: manual.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }] }
+      if (url.endsWith('/update') && init?.method === 'POST') return { operationId: 'manual-update' }
+      if (url.endsWith('/operations/manual-update')) return { id: 'manual-update', kind: 'update', skinId: manual.id, phase: 'done' }
+      return {}
     })
-    vi.stubGlobal('fetch', fetchMock)
     render(<SkinMarketSection t={key => key} />)
 
     await openSkinCard()
@@ -5119,7 +5032,7 @@ describe('client market', () => {
       checks: { readmeScreenshots: 'pass' as const, compatibility: 'improve' as const, installation: 'pass' as const },
       suggestions: ['建议声明支持的 DSH Web 版本范围。'],
     } }
-    vi.stubGlobal('fetch', vi.fn(async (url: string) => ({ ok: true, json: async () => url.endsWith('/catalog') ? { skins: [healthSkin] } : { skins: [] } })))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [healthSkin] } : { skins: [] }))
     render(<SkinMarketSection t={key => key} />)
     await openSkinCard()
 
