@@ -1,4 +1,4 @@
-// Client market tests: install, install-and-use, manual Desktop handoff and native panel flows
+// Client market tests: install, install-and-use and manual Desktop handoff
 // @vitest-environment jsdom
 import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
@@ -960,5 +960,57 @@ describe('client market install and use', () => {
     expect(within(dialog).queryByRole('button', { name: '安装' })).toBeNull()
     expect(within(dialog).queryByRole('button', { name: '打开添加插件' })).toBeNull()
     expect(open).not.toHaveBeenCalled()
+  })
+
+  it('warns before automatically installing a manual-only web skin', async () => {
+    const manual = {
+      ...skin,
+      review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'manual-only' as const },
+      health: {
+        status: 'improvements' as const,
+        checks: { readmeScreenshots: 'pass' as const, compatibility: 'pass' as const, installation: 'improve' as const },
+        suggestions: [],
+        scan: {
+          commit: skin.install.commit, packageVersion: skin.install.version, scannerVersion: 'static-v2', mode: 'static' as const,
+          result: 'unknown' as const, checkedAt: '2026-11-08T00:00:00.000Z',
+          findings: [{ code: 'client-source-unavailable', message: '无法读取固定版本的 client 入口，静态扫描结果未知。' }],
+        },
+      },
+    }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [manual] }
+      if (url.endsWith('/state')) return { hostKind: 'dsh', runtime: dshRuntime, skins: [] }
+      if (url.endsWith('/install') && init?.method === 'POST') return { operationId: 'manual-install' }
+      if (url.endsWith('/operations/manual-install')) return { id: 'manual-install', kind: 'install', skinId: manual.id, phase: 'done' }
+      return {}
+    })
+    render(<SkinMarketSection t={key => key} />)
+
+    await openSkinCard()
+    fireEvent.click(within(screen.getByRole('main', { name: zh['common.detailContent'] })).getByRole('button', { name: '仅安装' }))
+    const dialog = await screen.findByRole('dialog', { name: zh['common.installationUnverifiedTitle'] })
+    expect(dialog.textContent).toContain('固定版本的仓库没有提交可读取的客户端入口')
+    expect(dialog.textContent).toContain(manual.install.target)
+    expect(requestSent(fetchMock, '/install')).toBe(false)
+
+    fireEvent.click(within(dialog).getByRole('button', { name: zh['common.stillInstall'] }))
+    await waitFor(() => expect(requestSent(fetchMock, '/install', 'POST')).toBe(true))
+  })
+  it('warns before updating a manual-only web skin and keeps the update entry visible', async () => {
+    const manual = { ...skin, review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'manual-only' as const } }
+    const fetchMock = stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [manual] }
+      if (url.endsWith('/state')) return { hostKind: 'dsh', runtime: dshRuntime, skins: [{ skinId: manual.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }] }
+      if (url.endsWith('/update') && init?.method === 'POST') return { operationId: 'manual-update' }
+      if (url.endsWith('/operations/manual-update')) return { id: 'manual-update', kind: 'update', skinId: manual.id, phase: 'done' }
+      return {}
+    })
+    render(<SkinMarketSection t={key => key} />)
+
+    await openSkinCard()
+    fireEvent.click(within(screen.getByRole('main', { name: zh['common.detailContent'] })).getByRole('button', { name: '更新' }))
+    const dialog = await screen.findByRole('dialog', { name: zh['common.installationUnverifiedUpdateTitle'] })
+    fireEvent.click(within(dialog).getByRole('button', { name: zh['common.stillUpdate'] }))
+    await waitFor(() => expect(requestSent(fetchMock, '/update', 'POST')).toBe(true))
   })
 })

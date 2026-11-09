@@ -1,6 +1,6 @@
-// Client market tests: installed cards, discovery scrolling, search/sort and embedded layout
+// Client market tests: installed cards, discovery scrolling, search/sort, screenshots and media
 // @vitest-environment jsdom
-import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
+import { act, cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 
 vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../fixtures/client-market.tsx')).createPrimitivesMock())
@@ -440,5 +440,134 @@ describe('client market discovery', () => {
     expect(otherMethods.getAttribute('variant')).toBe('outline')
     fireEvent.click(automatic)
     expect(await screen.findByRole('button', { name: /测试皮肤 界面预览.*安装中/ })).toBeTruthy()
+  })
+
+  it('replaces a failed verified screenshot instead of retaining stale image pixels', async () => {
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
+    render(<SkinMarketSection t={key => key} />)
+    await openSkinCard()
+
+    const preview = await screen.findByAltText('测试皮肤 大图预览')
+    fireEvent.error(preview)
+
+    expect(screen.getByRole('img', { name: '测试皮肤 暂无界面截图' })).toBeTruthy()
+  })
+  it('labels market-only captures when the repository has no usable screenshot', async () => {
+    const supplemented = {
+      ...skin,
+      screenshots: [],
+      review: { compatibility: 'verified' as const, preview: 'repository-card' as const, installation: 'verified' as const },
+      marketScreenshots: ['https://example.com/market-home.png'],
+    }
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [supplemented] } : { skins: [] }))
+    render(<SkinMarketSection t={key => key} />)
+
+    await openSkinCard()
+    expect(screen.getByText(zh['common.marketScreenshotNotice'])).toBeTruthy()
+  })
+  it('uses the upstream screenshot when it is usable, without rendering market captures', async () => {
+    const market = 'https://example.com/market-home.png'
+    const upstreamCover = 'https://example.com/upstream-cover.png'
+    const supplemented = {
+      ...skin,
+      listScreenshot: upstreamCover,
+      marketScreenshots: [market],
+      screenshots: [upstreamCover],
+      review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'verified' as const },
+    }
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [supplemented] } : { skins: [] }))
+    render(<SkinMarketSection t={key => key} />)
+
+    await openSkinCard()
+    expect(document.querySelector(`img[src="${upstreamCover}"]`)).toBeTruthy()
+    expect(screen.getByAltText('测试皮肤 大图预览').getAttribute('src')).toBe(upstreamCover)
+    expect(screen.queryByText(zh['common.marketScreenshotNotice'])).toBeNull()
+  })
+  it('uses catalog WebP media by default and keeps the original-image fallback available', async () => {
+    const preview = 'https://cdn.example.com/preview.webp'
+    const full = 'https://cdn.example.com/full.webp'
+    const layered = {
+      ...skin,
+      media: { list: { preview, full }, screenshots: [{ preview, full }] },
+    }
+    const fetchMock = stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [layered] } : { skins: [] }))
+
+    window.history.replaceState({}, '', '/')
+    render(<SkinMarketSection t={key => key} />)
+    const cardPreview = await screen.findByRole('img', { name: '测试皮肤 界面预览' })
+    await waitFor(() => expect(cardPreview.getAttribute('src')).toBe(preview))
+    fireEvent.click(await screen.findByRole('button', { name: /测试皮肤 界面预览/ }))
+    const fullImage = await waitFor(() => document.querySelector(`img[src="${full}"]`))
+    expect(fullImage).toBeTruthy()
+    expect(fullImage?.parentElement?.querySelector(`img[src="${preview}"]`)).toBeNull()
+
+    cleanup()
+    window.history.replaceState({}, '', '/?dsh-media=0')
+    render(<SkinMarketSection t={key => key} />)
+    await screen.findByRole('button', { name: /测试皮肤 界面预览/ })
+    expect(document.querySelector(`img[src="${preview}"]`)).toBeNull()
+    window.history.replaceState({}, '', '/')
+  })
+  it('uses the original card screenshot immediately when its source is absent from the manifest', async () => {
+    const source = 'https://example.com/aurora-missing.png'
+    const layered = {
+      ...skin,
+      screenshots: [source],
+      media: { list: { preview: 'https://cdn.example.com/aurora.webp', full: 'https://cdn.example.com/aurora-full.webp' }, screenshots: [{ preview: 'https://cdn.example.com/aurora.webp', full: 'https://cdn.example.com/aurora-full.webp' }] },
+    }
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [layered] }
+      if (url.endsWith('/manifest.json')) return {}
+      return { skins: [], installedClientPlugins: [], runningAgentCount: 0 }
+    })
+    render(<SkinMarketSection t={key => key} />)
+
+    const image = await screen.findByRole('img', { name: '测试皮肤 界面预览' })
+    await waitFor(() => expect(image.getAttribute('src')).toBe(source))
+  })
+  it('moves a failed card to the next catalog screenshot after WebP and original fallback fail', async () => {
+    const first = 'https://example.com/aurora-first.png'
+    const second = 'https://example.com/aurora-second.png'
+    const firstPreview = 'https://cdn.example.com/aurora-first.webp'
+    const secondPreview = 'https://cdn.example.com/aurora-second.webp'
+    const layered = {
+      ...skin,
+      screenshots: [first, second],
+      media: {
+        list: { preview: firstPreview, full: 'https://cdn.example.com/aurora-first-full.webp' },
+        screenshots: [
+          { preview: firstPreview, full: 'https://cdn.example.com/aurora-first-full.webp' },
+          { preview: secondPreview, full: 'https://cdn.example.com/aurora-second-full.webp' },
+        ],
+      },
+    }
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [layered] }
+      if (url.endsWith('/manifest.json')) return { [first]: 'first', [second]: 'second' }
+      return { skins: [], installedClientPlugins: [], runningAgentCount: 0 }
+    })
+    render(<SkinMarketSection t={key => key} />)
+
+    const image = await screen.findByRole('img', { name: '测试皮肤 界面预览' })
+    await waitFor(() => expect(image.getAttribute('src')).toBe(firstPreview))
+    fireEvent.error(image)
+    expect(image.getAttribute('src')).toBe(first)
+    fireEvent.error(image)
+    expect(image.getAttribute('src')).toBe(secondPreview)
+  })
+  it('does not expose repository health checks in skin details', async () => {
+    const healthSkin = { ...skin, health: {
+      status: 'improvements' as const,
+      checks: { readmeScreenshots: 'pass' as const, compatibility: 'improve' as const, installation: 'pass' as const },
+      suggestions: ['建议声明支持的 DSH Web 版本范围。'],
+    } }
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [healthSkin] } : { skins: [] }))
+    render(<SkinMarketSection t={key => key} />)
+    await openSkinCard()
+
+    await screen.findByRole('heading', { name: zh['common.aboutSkin'] })
+    expect(screen.queryByRole('heading', { name: '仓库健康' })).toBeNull()
+    expect(screen.queryByText('README 截图')).toBeNull()
+    expect(screen.queryByText('建议声明支持的 DSH Web 版本范围。')).toBeNull()
   })
 })
