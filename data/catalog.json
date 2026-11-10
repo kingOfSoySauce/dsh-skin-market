@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T08:33:50.083Z",
+  "generatedAt": "2026-11-10T00:33:38.453Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -53196,11 +53196,11 @@
     {
       "id": "mantonlove.dsh-prism-plugin",
       "name": {
-        "zh": "dsh-prism-plugin",
-        "en": "dsh-prism-plugin"
+        "zh": "DSH Background",
+        "en": "DSH Background"
       },
       "author": "mantonlove",
-      "description": "Prism · 棱镜 — 支持 DSH 0.2.2-rc.1 的毛玻璃主题插件",
+      "description": "DSH Background — 上传自定义图片或 GIF 背景，调整毛玻璃、透明度、字体与颜色；支持 DSH 0.2.2-rc.1",
       "repo": "https://github.com/mantonlove/dsh-prism-plugin",
       "package": "@deepseek-ai/dsh-client-ui-prism",
       "rowId": "ui-prism",
