@@ -8,12 +8,14 @@ import { mediaForSources } from './media.mjs'
 import { isThinSubmission, hydrateSkinSubmission, thinSubmissionHint } from './hydrate-submission.mjs'
 import { resolveScreenshotList, resolveScreenshotRef } from './screenshot-refs.mjs'
 import { buildCatalogWire } from './catalog-wire.mjs'
+import { loadContract, schemaErrorHint } from './submission-contract.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const checkOnly = process.argv.includes('--check')
 const schema = JSON.parse(await readFile(join(root, 'registry/skin.schema.json'), 'utf8'))
 const ajv = new Ajv({ allErrors: true, strict: false, validateFormats: false })
 const validate = ajv.compile(schema)
+const submissionContract = await loadContract()
 const sourceDir = join(root, 'registry/skins')
 const files = (await readdir(sourceDir)).filter(file => file.endsWith('.yml')).sort()
 const skins = []
@@ -41,7 +43,9 @@ for (const file of files) {
   if (!validate(skin)) {
     const details = (validate.errors ?? []).map(error => `${error.instancePath || '/'} ${error.message}`).join('; ')
     const hint = thinSubmissionHint(skin)
-    throw new Error(hint ? `${file}: ${details}; ${hint}` : `${file}: ${details}`)
+    const contractHint = schemaErrorHint(submissionContract, validate.errors ?? [])
+    const parts = [details, hint, contractHint].filter(Boolean)
+    throw new Error(`${file}: ${parts.join('; ')}`)
   }
   if (!isVersionRange(skin.compatibility.dsh)) throw new Error(`${file}: compatibility.dsh is not a supported semver range`)
   // Surface stale review data to maintainers without removing the entry or
