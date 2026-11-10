@@ -58,7 +58,7 @@ license:
   code: MIT
   commercialUse: true
   notice: 代码采用 MIT；第三方角色、品牌、语音和音乐按 NOTICE 单独说明，不随代码 MIT 授权。维护者在 NOTICE 声明《EM20#070720》已获公开版本再分发授权，并要求随包保留来源说明。
-starsSnapshot: 42
+starsSnapshot: 45
 marketScreenshots:
   - skin-screenshots/seaison__dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/home.png
   - skin-screenshots/seaison__dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/conversation.png
@@ -66,5 +66,5 @@ marketScreenshots:
 featuredRank: 999
 releaseUpdatedAt: 2026-10-26T01:51:13.165Z
 metadataUpdatedAt: 2026-11-10T00:42:47.982Z
-starsUpdatedAt: 2026-11-08T00:17:41.700Z
-updatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-10T09:19:16.352Z
+updatedAt: 2026-11-10T09:19:16.352Z

@@ -15,21 +15,21 @@ modes:
   - light
   - dark
 install:
-  target: github:zkforge/dsh-claude-desktop-theme#0a37136961be639e55bbbf1a4e24590f8e504ca5
-  version: 0.10.3
-  commit: 0a37136961be639e55bbbf1a4e24590f8e504ca5
+  target: github:zkforge/dsh-claude-desktop-theme#03885a9e3286272c81ff411c37eb7130acc1b1c1
+  version: 0.10.4
+  commit: 03885a9e3286272c81ff411c37eb7130acc1b1c1
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-claude-desktop-theme
-    packageVersion: 0.10.3
-    integrity: sha512-uQysrwZe2KsNgnBP69/zOuyIN9inAAbsh1/ulgIsEsWbk9KdPa42eLnAGbw0he+ehjSmOjZhGZVa4bLuV6ckwQ==
+    packageVersion: 0.10.4
+    integrity: sha512-v9egLx6WkkKhreluYPXmvxw7rNURX4zBwbH5HcWVa6ZwOwUC4XUvEithKVi14pWhIvmsFj4qlvdFtmj9d9iMsw==
   npm:
     name: dsh-claude-desktop-theme
-    version: 0.10.3
-    integrity: sha512-uQysrwZe2KsNgnBP69/zOuyIN9inAAbsh1/ulgIsEsWbk9KdPa42eLnAGbw0he+ehjSmOjZhGZVa4bLuV6ckwQ==
+    version: 0.10.4
+    integrity: sha512-v9egLx6WkkKhreluYPXmvxw7rNURX4zBwbH5HcWVa6ZwOwUC4XUvEithKVi14pWhIvmsFj4qlvdFtmj9d9iMsw==
     repository: https://github.com/zkforge/dsh-claude-desktop-theme
-    gitHead: 0a37136961be639e55bbbf1a4e24590f8e504ca5
+    gitHead: 03885a9e3286272c81ff411c37eb7130acc1b1c1
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
@@ -59,15 +59,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.2 未被本次检测范围 0.2.1-rc.3 完全覆盖（固定版本 0a37136961be639e55bbbf1a4e24590f8e504ca5）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.2 未被本次检测范围 0.2.1-rc.3 完全覆盖（固定版本 03885a9e3286272c81ff411c37eb7130acc1b1c1）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 0a37136961be639e55bbbf1a4e24590f8e504ca5
-    packageVersion: 0.10.3
+    commit: 03885a9e3286272c81ff411c37eb7130acc1b1c1
+    packageVersion: 0.10.4
     scannerVersion: static-v2
     dshVersion: 0.2.1-rc.3
     mode: static
     result: unknown
-    checkedAt: 2026-11-08T15:33:51.131Z
+    checkedAt: 2026-11-10T09:19:37.166Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -75,8 +75,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1113
-starsSnapshot: 35
-releaseUpdatedAt: 2026-11-08T15:36:27.745Z
-metadataUpdatedAt: 2026-11-08T15:39:02.274Z
-starsUpdatedAt: 2026-11-09T07:12:59.227Z
-updatedAt: 2026-11-09T07:12:59.227Z
+starsSnapshot: 36
+releaseUpdatedAt: 2026-11-10T09:19:41.219Z
+metadataUpdatedAt: 2026-11-10T09:19:41.219Z
+starsUpdatedAt: 2026-11-10T09:19:41.219Z
+updatedAt: 2026-11-10T09:19:41.219Z

@@ -30,8 +30,6 @@ compatibility:
   dsh: ">=0.2.1-rc.2"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/yrsxy__dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/home.png
 screenshots:
   - https://raw.githubusercontent.com/yrsxy/dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/assets/screenshots/warm-paper.png
   - https://raw.githubusercontent.com/yrsxy/dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/assets/screenshots/old-book.png
@@ -67,9 +65,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/yrsxy__dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/home.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-09T07:18:52.139Z
-metadataUpdatedAt: 2026-11-09T07:18:52.139Z
+metadataUpdatedAt: 2026-11-10T09:19:16.352Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T07:18:52.139Z
+updatedAt: 2026-11-10T09:19:16.352Z
