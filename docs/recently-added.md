@@ -1544,6 +1544,28 @@ GitHub：[louke6572/dsh-whale-widget-plus](https://github.com/louke6572/dsh-whal
 
 <img src="https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png" width="60%" alt="dsh-whale-widget-plus">
 
+<!-- dsh-auto-entry:lyx0717.dsh-washer -->
+### 2026-11-10 · dsh-washer
+
+作者：lyx0717
+
+滚筒洗衣机 · 用一台洗衣机的运转状态显示 Agent 的工作状态
+
+GitHub：[lyx0717/dsh-washer](https://github.com/lyx0717/dsh-washer)
+
+<img src="https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-washing.png" width="60%" alt="dsh-washer">
+
+<!-- dsh-auto-entry:yrsxy.dsh-warm-theme -->
+### 2026-11-10 · dsh-warm-theme
+
+作者：yrsxy
+
+DSH 护眼配色包 —— 5 套低蓝光配色，通过官方 ctx.theme.overrideTokens 扩展点覆盖语义 token，零布局改动、热生效。
+
+GitHub：[yrsxy/dsh-warm-theme](https://github.com/yrsxy/dsh-warm-theme)
+
+<img src="https://raw.githubusercontent.com/yrsxy/dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/assets/screenshots/warm-paper.png" width="60%" alt="dsh-warm-theme">
+
 <!-- dsh-auto-entry:01virex.dsh-deepshub -->
 ### 2026-11-10 · dsh-deepshub
 
@@ -3502,17 +3524,6 @@ GitHub：[Yyyyyylor/dsh-asuka-school-theme](https://github.com/Yyyyyylor/dsh-asu
 
 <img src="https://raw.githubusercontent.com/Yyyyyylor/dsh-asuka-school-theme/905423054241cd3c5200b23387f9f7d4b7314d9d/docs/images/theme-asuka-preview.png" width="60%" alt="dsh-asuka-school-theme">
 
-<!-- dsh-auto-entry:yrsxy.dsh-warm-theme -->
-### 2026-11-09 · dsh-warm-theme
-
-作者：yrsxy
-
-DSH 护眼配色包 —— 5 套低蓝光配色，通过官方 ctx.theme.overrideTokens 扩展点覆盖语义 token，零布局改动、热生效。
-
-GitHub：[yrsxy/dsh-warm-theme](https://github.com/yrsxy/dsh-warm-theme)
-
-<img src="https://raw.githubusercontent.com/yrsxy/dsh-warm-theme/8e3e4bbcd66202cd792c832e256397ceb4d651dd/assets/screenshots/warm-paper.png" width="60%" alt="dsh-warm-theme">
-
 <!-- dsh-auto-entry:yuanlang3.dsh.netease.music -->
 ### 2026-11-09 · dsh-netease-music-plugin
 
@@ -4282,17 +4293,6 @@ DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。
 GitHub：[Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)
 
 <img src="https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b/maid-atelier/preview/light.webp" width="60%" alt="深海女仆工坊">
-
-<!-- dsh-auto-entry:lyx0717.dsh-washer -->
-### 2026-11-09 · dsh-washer
-
-作者：lyx0717
-
-滚筒洗衣机 · 用一台洗衣机的运转状态显示 Agent 的工作状态
-
-GitHub：[lyx0717/dsh-washer](https://github.com/lyx0717/dsh-washer)
-
-<img src="https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-washing.png" width="60%" alt="dsh-washer">
 
 <!-- dsh-auto-entry:lorisyounger.dsh.vpet.skin -->
 ### 2026-11-09 · VPet
