@@ -21,6 +21,8 @@ See the [recent additions log](./docs/recently-added.md).
 <a id="manual-update"></a>
 ## Install and update
 
+Works with DSH Web `>=0.1.0-rc.6` and official Desktop `>=0.2.0-rc.1`.
+
 > If an update fails, first uninstall `dsh-skin-market`, then reinstall it using the installation method above. If uninstalling or reinstalling still fails, read the error message and copy the diagnostic log.
 
 ### Method 1: Command
@@ -188,10 +190,10 @@ A new entry is a thin YAML file; fields and priority are in the table below. CI 
 | Author (thin entry) | `url`, `subpath`, `name`, `author`, `description`, `screenshots` | Write only these. If you write `name`, include both `zh` and `en`. |
 | Filled by CI | `package`, `rowId`, `install`, `license`, `compatibility`, `category`, `tags`, `modes` | Do not write these; the schema rejects them. |
 | Soft-required (non-blocking, enters the completion queue) | a usable preview image (upstream or captured), bilingual display name / description, motion GIF, splash launchGif | An entry may merge without them; it is recorded in the daily completeness report and enters the completion queue once enabled. |
-| Recommended (advisory only) | captured `marketScreenshots`, cover `listScreenshot`, WebP `media`, README install command / version range / `dsh-plugin` topic, Desktop support | Never blocks a merge. |
+| Recommended (advisory only) | captured `marketScreenshots`, cover `listScreenshot`, WebP `media`, README install command / version range (Web and official Desktop) / `dsh-plugin` topic, Desktop install support (npm package or manual install notes) | Never blocks a merge. |
 <!-- submission-contract:END -->
 
-CI must be able to read the skin repository: a public GitHub repository or monorepo subdirectory; `package.json` with name, version, license, and `dsh.client`; and a matching loader row in `cordis.patch.yml`. Preview images must be png, jpg, webp, or gif files in the repository. It also helps to declare the DSH Web version range and a `dsh plugin add` command in the README, and to add the `dsh-plugin` topic.
+CI must be able to read the skin repository: a public GitHub repository or monorepo subdirectory; `package.json` with name, version, license, and `dsh.client`; and a matching loader row in `cordis.patch.yml`. Preview images must be png, jpg, webp, or gif files in the repository. It also helps to declare the DSH Web and official Desktop version ranges and a `dsh plugin add` command in the README, and to add the `dsh-plugin` topic.
 
 An existing entry can change only `name.zh`, `name.en`, `author`, `description`, and `screenshots`. Do not change the id, install target, commit, package, or rowId. This PR does not refresh the pinned version. Acceptance is not a security certification.
 
@@ -210,13 +212,13 @@ Target catalog repository: https://github.com/kingOfSoySauce/dsh-skin-market
 Catalog path: registry/skins
 
 Follow these steps:
-1. Use read-only checks to confirm that the skin repository is a public GitHub repository (or a monorepo subdirectory) and is an installable DSH Web skin. Do not read .env, credentials, or chat history.
+1. Use read-only checks to confirm that the skin repository is a public GitHub repository (or a monorepo subdirectory) and is an installable DSH skin (Web and official Desktop share the Web client). Do not read .env, credentials, or chat history.
 2. Confirm that CI can read these materials from that repository. If any are missing, tell me first and do not invent them:
    - package.json has name, version, license, and dsh.client
    - cordis.patch.yml has a loader row matching the package name
    - the description is in the thin entry or package.json description
    - preview images are png, jpg, webp, or gif files in the repository, from screenshots.json relative paths, README images, or the thin entry screenshots field
-   - the README should declare a DSH Web version range and include a dsh plugin add command; the repository should have the dsh-plugin topic
+   - the README should declare the DSH Web and official Desktop version ranges and include a dsh plugin add command; the repository should have the dsh-plugin topic
 3. Fork or clone the catalog repository and create a branch. Add exactly one YAML file under registry/skins, named owner__repo.yml (owner__repo--path.yml for a subpackage). Do not overwrite an existing entry or edit data/catalog.json or data/catalog-copy.json.
 4. The YAML must be a thin entry. Only these fields are allowed, and no others: url, subpath, name, author, description, screenshots. Adding package, rowId, category, tags, modes, compatibility, install, commit, or any other key fails the full schema check. The content may only be:
 

@@ -49,7 +49,7 @@
     { "zh": "实机截图 `marketScreenshots`", "en": "captured `marketScreenshots`" },
     { "zh": "封面 `listScreenshot`", "en": "cover `listScreenshot`" },
     { "zh": "WebP `media`", "en": "WebP `media`" },
-    { "zh": "README 安装命令 / 版本范围 / `dsh-plugin` topic", "en": "README install command / version range / `dsh-plugin` topic" },
-    { "zh": "Desktop 支持", "en": "Desktop support" }
+    { "zh": "README 安装命令 / 版本范围（Web 与官方 Desktop）/ `dsh-plugin` topic", "en": "README install command / version range (Web and official Desktop) / `dsh-plugin` topic" },
+    { "zh": "Desktop 安装支持（npm 包或手动安装说明）", "en": "Desktop install support (npm package or manual install notes)" }
   ]
 }

@@ -21,6 +21,8 @@
 <a id="manual-update"></a>
 ## 安装、更新
 
+兼容 DSH Web `>=0.1.0-rc.6` 与官方 Desktop `>=0.2.0-rc.1`。
+
 > 更新失败时，可先卸载 `dsh-skin-market`，再按上面的安装方法重装；如果卸载或重装仍失败，再查看错误提示并复制诊断日志。
 
 ### 方法 1：命令
@@ -188,10 +190,10 @@ npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web --rollback
 | 作者写（薄条目） | `url`、`subpath`、`name`、`author`、`description`、`screenshots` | 只写这些；`name` 写了就必须同时有 `zh` 和 `en`。 |
 | CI 自动补 | `package`、`rowId`、`install`、`license`、`compatibility`、`category`、`tags`、`modes` | 不要手写；写了会被 schema 拒绝。 |
 | 软必填（不阻断，进补全队列） | 可用预览图（上游或实机）、双语展示名 / 描述、动效 GIF（motion）、启动 launchGif（splash） | 缺了仍可合并，但会记录在每日完整性报告；补全队列接入后自动进队。 |
-| 推荐（只提示） | 实机截图 `marketScreenshots`、封面 `listScreenshot`、WebP `media`、README 安装命令 / 版本范围 / `dsh-plugin` topic、Desktop 支持 | 不阻断合并。 |
+| 推荐（只提示） | 实机截图 `marketScreenshots`、封面 `listScreenshot`、WebP `media`、README 安装命令 / 版本范围（Web 与官方 Desktop）/ `dsh-plugin` topic、Desktop 安装支持（npm 包或手动安装说明） | 不阻断合并。 |
 <!-- submission-contract:END -->
 
-皮肤仓库需要能被 CI 读到：公开 GitHub 仓库或 monorepo 子目录；`package.json` 有 name、version、license 和 `dsh.client`；`cordis.patch.yml` 有对应 loader。预览图用仓库内的 png、jpg、webp 或 gif。建议 README 声明 DSH Web 版本范围和一条 `dsh plugin add` 安装命令，并为仓库加上 `dsh-plugin` Topic。
+皮肤仓库需要能被 CI 读到：公开 GitHub 仓库或 monorepo 子目录；`package.json` 有 name、version、license 和 `dsh.client`；`cordis.patch.yml` 有对应 loader。预览图用仓库内的 png、jpg、webp 或 gif。建议 README 声明 DSH Web 与官方 Desktop 的版本范围和一条 `dsh plugin add` 安装命令，并为仓库加上 `dsh-plugin` Topic。
 
 已收录皮肤只能改展示字段：`name.zh`、`name.en`、`author`、`description`、`screenshots`。不要改 id、安装目标、commit、package 或 rowId。固定版本刷新不由这次 PR 改写。收录不等于安全认证。
 
@@ -210,13 +212,13 @@ npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web --rollback
 目录路径：registry/skins
 
 请按以下步骤完成：
-1. 只用只读方式确认皮肤仓库是公开的 GitHub 仓库（或 monorepo 子目录），且确实是可安装的 DSH Web 皮肤。不要读取 .env、凭据或聊天记录。
+1. 只用只读方式确认皮肤仓库是公开的 GitHub 仓库（或 monorepo 子目录），且确实是可安装的 DSH 皮肤（Web 与官方 Desktop 共用 Web 客户端）。不要读取 .env、凭据或聊天记录。
 2. 确认 CI 能从该仓库读到这些材料；缺了就先告诉我，不要编造：
    - package.json 有 name、version、license，以及 dsh.client
    - cordis.patch.yml 有与 package 名对应的 loader 行
    - 描述在薄条目 description 或 package.json description
    - 预览图是仓库内的 png、jpg、webp 或 gif，来自 screenshots.json 相对路径、README 仓库图片，或薄条目 screenshots
-   - 建议 README 声明 DSH Web 版本范围，并包含一条 dsh plugin add 安装命令；建议仓库加上 dsh-plugin Topic
+   - 建议 README 声明 DSH Web 与官方 Desktop 的版本范围，并包含一条 dsh plugin add 安装命令；建议仓库加上 dsh-plugin Topic
 3. fork 或 clone 目标目录仓库并新建分支。在 registry/skins 下只新增一个 YAML，文件名用 owner__repo.yml（子包用 owner__repo--path.yml）。不要覆盖已有条目，不要修改 data/catalog.json 或 data/catalog-copy.json。
 4. YAML 必须写成薄条目。只允许这些字段，一个都不能多：url、subpath、name、author、description、screenshots。多写 package、rowId、category、tags、modes、compatibility、install、commit 或任何其他键，CI 会按完整 schema 校验并失败。内容只能是：
 
