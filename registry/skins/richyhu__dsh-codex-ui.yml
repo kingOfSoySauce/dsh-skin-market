@@ -25,9 +25,13 @@ compatibility:
   platform:
     - web
 screenshots: []
+marketScreenshots:
+  - skin-screenshots/richyhu__dsh-codex-ui/6d871e844fdd81b16258850bd9ffbcdac283670a/home.png
+  - skin-screenshots/richyhu__dsh-codex-ui/6d871e844fdd81b16258850bd9ffbcdac283670a/conversation.png
+  - skin-screenshots/richyhu__dsh-codex-ui/6d871e844fdd81b16258850bd9ffbcdac283670a/settings.png
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
 health:
   status: improvements
