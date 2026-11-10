@@ -14,11 +14,6 @@
 
 [打开在线皮肤市场](https://kingofsoysauce.github.io/dsh-skin-market/)
 
-### 近期收录
-
-- **2026-11-10**：[skins](https://github.com/iasiv5/skins)（iasiv5）——dsh-skins — DSH Web 多皮肤插件。详见[收录日志](./docs/recently-added.md#recent-2026-11-10-iasiv5-skins)。
-
-
 <a id="manual-update"></a>
 ## 安装、更新
 

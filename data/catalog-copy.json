@@ -504,24 +504,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "lilcandi.dsh-music-on": {
-      "name": {
-        "zh": "音乐台",
-        "en": "Music Dock"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "音乐台：右下角可拖动播放器，提供六种样式和七种配色的实时频谱，支持拖放本地音频，以及 Bilibili、网易云音乐和 QQ 音乐歌单链接。",
-        "en": "A music dock with a draggable bottom-right player, live spectrum in six styles and seven colour themes, drag-and-drop local audio, and Bilibili, NetEase Cloud Music, and QQ Music playlist links."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "845be29a0516afcc64bdaec9775f003635682052a30d2f706a6c199ec07159ad",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "community"
-    },
     "llylab.dsh.bgm.service": {
       "name": {
         "zh": "DBS",
@@ -7012,20 +6994,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "twelvecarbon.dsh-conversation-toc": {
-      "name": {
-        "zh": "对话主题目录",
-        "en": "Conversation Topic Outline"
-      },
-      "descriptionPolicy": "omit",
-      "source": {
-        "kind": "curated",
-        "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "wwxiaoqi.ui-theme-quota-show": {
       "name": {
         "zh": "DeepSeek API 余额卡",
@@ -10032,20 +10000,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "iasiv5.skins": {
-      "name": {
-        "zh": "DSH 多皮肤",
-        "en": "DSH Multi-Skin"
-      },
-      "descriptionPolicy": "omit",
-      "source": {
-        "kind": "curated",
-        "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "krystal-cao.deepseek-harness-swift": {
       "name": {
         "zh": "DSH Desktop 主机桥接",
@@ -10077,20 +10031,6 @@
       },
       "override": true,
       "nameSource": "repository-evidence"
-    },
-    "linyuan-ai1.dsh-plugins-linyuana": {
-      "name": {
-        "zh": "回复卡片配色",
-        "en": "Reply Card Colors"
-      },
-      "descriptionPolicy": "omit",
-      "source": {
-        "kind": "curated",
-        "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-subpath-evidence"
     },
     "liuherong808-dev.dsh-whale-purse": {
       "name": {
