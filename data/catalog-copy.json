@@ -10895,6 +10895,294 @@
       },
       "override": true,
       "nameSource": "repository-evidence"
+    },
+    "huzhengcai471-crypto.dsh-startup-secret": {
+      "name": {
+        "zh": "启动密令",
+        "en": "Startup Secret"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "六幕全屏启动序列：黑幕徽章 → 过曝 → 暗色「技术档案」底板 → 五步交互授权 → 色散故障揭幕；自带五个真声音色与五款赛博电子立绘，可给「身份资料确认」设访问密码，并可选择是否在片尾弹出「降世」事件窗口。",
+        "en": "A six-act full-screen boot sequence — emblem, overexposure, dossier panel, five-step authorization and a glitch-dissolve reveal — with five built-in real-voice tracks, five cyber portraits, an optional access password on the identity step and an optional “Descent” event window after the intro."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "fe057f3fad4e26cd7542e7df406f657ea8d6316d55f78ddcc07db5bd27410d20",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "leerolling.dsh-boot-suite": {
+      "name": {
+        "zh": "开机套件",
+        "en": "Boot Suite"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "冷启动时播放六幕代码动画（黑幕标识、过曝洗白、暖白档案底板、五步授权、色散故障揭幕），结束后落到自选聊天壁纸；支持导入视频/图片、三段转场和 1~24 幕模板，34 项参数可调。",
+        "en": "Plays a six-act code-drawn boot animation on cold start — black emblem, overexposed flash, warm dossier panel, five-step authorization, glitch reveal — then lands on your own chat wallpaper; import video or images, three transitions and 1–24-act templates, with 34 adjustable options."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "6778ea8d672c0dc6f7e6cfc503d47fdc13eb4555e24bd7f9f327538227837ddb",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "yiheng-guo.dsh-boot-animation-pro": {
+      "name": {
+        "zh": "片头片库",
+        "en": "Intro Clip Library"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "打开 DSH、新对话或钉住的会话时，把视频片头铺满整个窗口播放；带播放控制、触发规则、按星期与时段自动换片、片库管理，以及中英双语界面。",
+        "en": "Plays video intros full-frame when DSH opens, a new conversation starts or a pinned session is used, with playback controls, trigger rules, day/time-based clips, clip library management and a bilingual UI."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d2162e49407730a132859cfabce21d160ecaa44c058dfb1ccf010f35e0304fc8",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "kddkbd.deepseek-splash-animation": {
+      "name": {
+        "zh": "视频片头",
+        "en": "Video Intro"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "启动时铺满播放指定视频，播完 0.3 秒渐隐露出界面；自带一段默认视频装好即用，也可在设置里换成自己的，清空路径即彻底关闭。",
+        "en": "Plays your chosen video over the full screen at startup and fades it out over 0.3 seconds; a default video works out of the box, you can swap in your own, and clearing the path turns it off entirely."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "4c864929be52fa9c4b8e7c2cd1ef2d52bb55b465d95329cf9f408ddfdcf308e9",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "ga17-lhy.dsh-boot-splash": {
+      "name": {
+        "zh": "启动状态窗",
+        "en": "Boot Status Window"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "开机时叠一段全窗口启动画面（默认渐变底），片尾交叉溶解进界面；可切换成启动状态窗，逐行回放实测的宿主模块加载、外壳进度与资源耗时，配置走纯 JSON 文件。",
+        "en": "Overlays a full-window boot screen (a gradient by default) that cross-dissolves into the interface, and can switch to a boot status window that replays measured host module loads, shell progress and resource timings; configuration is a plain JSON file."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "6e382ff1c58be661bc2302e16c431a903d05b2fbf300e50ea3b4fbae6abaf9ea",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "gin-7.dsh-pet-remielle": {
+      "name": {
+        "zh": "蕾米埃尔桌宠",
+        "en": "Remielle Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "由真实会话事件驱动的蕾米埃尔贴纸桌宠：随任务阶段切换贴纸与状态气泡，汇报项目、阶段、待办和进度，支持 SSE 实时推送与可选的透明置顶桌面悬浮窗。",
+        "en": "A Remielle sticker pet driven by real session events: changes stickers and status bubbles with the task phase, reports project, stage, to-dos and progress, with SSE live updates and an optional transparent always-on-top desktop window."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a165ef695a56eee947be0dcf8696f054dd4f69189f0d859ca6c4abeb02535fbb",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "yi-111-a.dsh-jingling": {
+      "name": {
+        "zh": "鲸灵",
+        "en": "Jingling"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "本地优先的陪伴插件「鲸灵」：记得你允许她记住的事，陪你整理思路，不会擅自执行操作；含可审阅的记忆、受限预设与可选的 Windows 桌面伙伴。",
+        "en": "Jingling is a local-first companion that remembers only what you allow, helps you sort out thoughts, and never acts on its own, with reviewable memory, a restricted preset and an optional Windows desktop sidecar."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "73a33b3b5e27e0c2e0f5e9fd6a2871c756d7dacb3db8a298b58cfc007957b3d0",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "cyanfish-x.dsh-live2d-pets": {
+      "name": {
+        "zh": "Live2D 看板娘",
+        "en": "Live2D Companion"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "Live2D 看板娘悬浮在界面一角，实时镜像 agent 的思考、空闲、出错、完成、交付与待审批状态；内置 5 条模型和 6 种人设，支持分部位触摸、拖动停靠、换模型与人设热切换。",
+        "en": "A Live2D mascot in the corner mirrors agent states (thinking, idle, error, done, delivered, awaiting approval) with 5 bundled models and 6 personas, per-part touch reactions, drag-to-dock and hot-swappable models and personas."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b5c8152752501c4769ab70d6cfc2adbfe8dcfe24b78de09c495036de6d06fb53",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "gosomea.dsh-bigfish": {
+      "name": {
+        "zh": "大肥鱼",
+        "en": "Bigfish"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "住在 Web 界面里的可拖动大肥鱼：升级后共 101 类动作（新增 72 段动画）和 18 种举牌演出，会敲键盘、翻书、举牌等你，任务结束开心收工；支持替换角色、制作动作和自定义台词。",
+        "en": "A draggable big fish living in the Web UI with 101 action types after the upgrade (72 new animations) and 18 sign-board skits — typing, reading, holding signs while you wait and celebrating when the task ends — plus replaceable characters, custom actions and lines."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "1835b7dc2be7ab191421053aadb64e8ac55da76c67720f95e4172f5399560d9d",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "whitefirer.dsh-niulai-pet": {
+      "name": {
+        "zh": "牛来桌宠",
+        "en": "NiuLai Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在界面角落养一头《牛来》的小牛：平时呼吸、眨眼、踱步、打盹和气泡唠叨，agent 任务完成时蹦出来喊「妈~~妈~~」并同步嘴型；含九款皮肤、事件绑定与 WebAudio 合成叫声。",
+        "en": "A little NiuLai calf living in the corner of the Web UI — breathing, blinking, pacing, dozing and chattering in bubbles, then popping up to shout “Ma~ma~” with synced mouth when an agent task completes; nine skins, event binding and WebAudio-synthesized calls."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a29f408201dc9371ad14c4646e73bbe8f170736a43a589e0bf861391a2c7001a",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "drliuhuan.dsh-plugin-vrmpet3d": {
+      "name": {
+        "zh": "桌宠 3D",
+        "en": "VRM Pet 3D"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "随任务状态活动的 VRM 3D 桌宠：可在应用内显示，也能在 Desktop 上开独立透明悬浮窗，任务进行、等待确认、完成或出错时播放对应动作；自带两款模型与 VRMA 动作包，可导入自己的模型并配置表情、视线和物理（早期版本，3D 渲染会占用 GPU 与内存）。",
+        "en": "A VRM 3D pet that reacts to task state in-app or in a separate transparent floating window on Desktop, playing matching actions for running, waiting, done and error; two models and a VRMA action pack ship ready, and you can import your own with expressions, gaze and physics (early version; 3D rendering uses GPU and memory)."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "c3e477967ddf7e54a08475a95b74314e110a535bd4d46dc5a4cbc8a974c6c3b2",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "u1s1-king.dsh-live2d-mygo": {
+      "name": {
+        "zh": "MyGO!!!!! 看板娘",
+        "en": "MyGO!!!!! Live2D Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "收录 MyGO!!!!! 五位成员的 Live2D 看板娘：高松燈、千早愛音、要楽奈、長崎そよ、椎名立希，每角色多套换装合计 74 套；支持拖拽移动、视线跟随、换装与拍照，模型本地同源加载、零网络请求。",
+        "en": "A Live2D mascot set featuring all five MyGO!!!!! members — Takamatsu Tomori, Chihaya Anon, Kaname Raana, Nagasaki Soyo and Shiina Taki — with 74 outfits in total; drag to move, mouse-follow gaze, outfit switching and photo capture, with models loaded locally and no network requests."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "7b8402011bbaac5041076a9e2d00e92b301495166b5122b5634a28c618edfb6d",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "yifffan.dsh-plugin-whale-pet": {
+      "name": {
+        "zh": "鲸鱼伙伴",
+        "en": "Whale Companion"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "住在窗口里的小鲸鱼伙伴：随工作、等待、庆祝、出错、休息和睡眠六种状态切换贴纸，可拖动、缩放、隐藏与恢复，可只看当前会话或全部会话，任务完成时同步提醒。",
+        "en": "A little whale buddy living inside the window that switches between six states — working, waiting, celebrating, error, resting and sleeping — and can be dragged, resized, hidden and restored, scoped to the current or all sessions with completion sync."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "51488137a06ad983d460bf6b7482c891b213ba3f51006a95d129fbdafa18e942",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "ysppwn721.better-dsh-pet": {
+      "name": {
+        "zh": "桌面大肥鱼",
+        "en": "Desktop Bigfish"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "跑在 Windows 桌面上的大肥鱼：独立透明置顶窗口不占网页界面，监听会话状态切换 91 个透明动画，支持语音唤醒/闲聊、番茄钟、喂食、吐槽与简单任务执行。",
+        "en": "A big fish that runs on the Windows desktop in a separate transparent always-on-top window, switching among 91 animations from real session state, with voice wake/chat, pomodoro, feeding, roasts and simple task runs."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d68cb142c847c746bbb8683122e4146c0c2dbdab2c598c862814af32889a7f0a",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "cookiesheep.whale-on-desk": {
+      "name": {
+        "zh": "鲸桌",
+        "en": "Whale on Desk"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "像素鲸鱼桌宠：agent 干活时游泳、调工具时吐泡泡、等待批准时贴屏敲玻璃并闪烁标签页标题，任务结束用真实数字汇报；含成长系统、可自制状态精灵与可选 Agent 语音。",
+        "en": "A pixel-art whale companion that swims while agents work, blows bubbles on tool calls, taps the glass and flashes the tab title when an approval waits, and reports finished turns with real numbers; it adds a growth system, make-your-own state sprites and optional agent voice."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "ec6033f286fc0082e23e7a457709d822dee29dd7c566c8f55a6e6dc7b6c14142",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
+    },
+    "forget6610.dsh-theme-clove": {
+      "name": {
+        "zh": "丁香",
+        "en": "Clove"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "暮色调粉紫皮肤：33 个 design token（深紫半透明表面、蝶粉强调色、粉紫渐变滚动条）、整页暗紫壁纸与暗角、聊天卡与气泡圆角；全部挂在插件 fiber 上，卸载后页面干净还原。",
+        "en": "A dusk-toned theme with 33 design tokens (deep-purple translucent surfaces, butterfly-pink accents, pink-purple gradient scrollbars), a full-page dark-purple wallpaper with vignette, and rounded chat cards and bubbles; everything binds to the plugin fiber and uninstalls cleanly."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "ecd4e68438821edc4a72d6f292382027c7163e77f3a8d1026bb9feb89ece7d53",
+        "approvedAt": "2026-11-11"
+      },
+      "override": true,
+      "nameSource": "repository-evidence (pinned README)"
     }
   }
 }
