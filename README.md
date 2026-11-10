@@ -16,8 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-10**：[skins](https://github.com/iasiv5/skins)（iasiv5）——dsh-skins — DSH Web 多皮肤插件。详见[收录日志](./docs/recently-added.md#recent-2026-11-10-iasiv5-skins)。
-
+最新收录见[收录日志](./docs/recently-added.md)。
 
 <a id="manual-update"></a>
 ## 安装、更新

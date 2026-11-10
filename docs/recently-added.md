@@ -1,50 +1,5 @@
 # 近期收录
 
-<!-- dsh-admission:iasiv5.skins -->
-<a id="recent-2026-11-10-iasiv5-skins"></a>
-
-## 2026-11-10 · skins
-
-作者：iasiv5
-
-dsh-skins — DSH Web 多皮肤插件
-
-GitHub：[iasiv5/skins](https://github.com/iasiv5/skins)
-
-<img src="https://raw.githubusercontent.com/iasiv5/skins/85a5c3c544175ff8c1e3a820de76902c90407e8c/docs/assets/preview-meirenzhi-1.webp" width="60%" alt="skins">
-
-<!-- /dsh-admission:iasiv5.skins -->
-
-<!-- dsh-admission:linyuan-ai1.dsh-plugins-linyuana -->
-<a id="recent-2026-11-10-linyuan-ai1-dsh-plugins-linyuana"></a>
-
-## 2026-11-10 · dsh-plugins-linyuana
-
-作者：linyuan-ai1
-
-DeepSeek Harness 的回复卡片颜色 插件。
-
-GitHub：[linyuan-ai1/dsh-plugins](https://github.com/linyuan-ai1/dsh-plugins)
-
-<img src="https://raw.githubusercontent.com/linyuan-ai1/dsh-plugins/2ea9d87972fbc970cf725f8a7643c738f1196c36/packages/dsh-card-color/docs/screenshots/screenshot-1.png" width="60%" alt="dsh-plugins-linyuana">
-
-<!-- /dsh-admission:linyuan-ai1.dsh-plugins-linyuana -->
-
-<!-- dsh-admission:twelvecarbon.dsh-conversation-toc -->
-<a id="recent-2026-11-10-twelvecarbon-dsh-conversation-toc"></a>
-
-## 2026-11-10 · dsh-conversation-toc
-
-作者：twelvecarbon
-
-DeepSeek Harness 对话大纲插件 —— 在会话页右侧显示对话主题目录（类似 DeepSeek 网页版右边栏），随滚动高亮当前主题，点击即可快捷跳转到对应消息位置。
-
-GitHub：[twelvecarbon/dsh-conversation-toc](https://github.com/twelvecarbon/dsh-conversation-toc)
-
-<img src="https://raw.githubusercontent.com/twelvecarbon/dsh-conversation-toc/2061ba44575d92a7069b7ba2edac848ccf7a328a/docs/assets/toc-panel.png" width="60%" alt="dsh-conversation-toc">
-
-<!-- /dsh-admission:twelvecarbon.dsh-conversation-toc -->
-
 <!-- dsh-admission:ririko2.lllj.dsh.skin -->
 <a id="recent-2026-11-09-ririko2-lllj-dsh-skin"></a>
 
