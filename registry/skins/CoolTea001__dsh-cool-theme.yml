@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CoolTea001/dsh-cool-theme#73403d5053fc1aabe0342f8ef8d2963084ad71f6
-  version: 0.10.0
-  commit: 73403d5053fc1aabe0342f8ef8d2963084ad71f6
+  target: github:CoolTea001/dsh-cool-theme#1118407c634d38a93475ff88d0e8fbd1c6d46b9a
+  version: 0.11.0
+  commit: 1118407c634d38a93475ff88d0e8fbd1c6d46b9a
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-cool-theme
-    packageVersion: 0.10.0
-    integrity: sha512-5ahR3FJ3kaGGW4BX3mL/sFsa3nBH0Wsj8Wn6HPpdIAj4xJSnY8ADki+FHhxUcNcKOEeAGWf6YR8YIU12VM5Eew==
+    packageVersion: 0.11.0
+    integrity: sha512-YI83jzJp2lE8DE+4sf5IbTWyHb7my3QTiHm+ZUkUjdYtnZcUnhgfnN8EJfjSwiDDWDmvfn+bi4dGSTQS98xQTw==
   npm:
     name: dsh-cool-theme
-    version: 0.10.0
-    integrity: sha512-5ahR3FJ3kaGGW4BX3mL/sFsa3nBH0Wsj8Wn6HPpdIAj4xJSnY8ADki+FHhxUcNcKOEeAGWf6YR8YIU12VM5Eew==
+    version: 0.11.0
+    integrity: sha512-YI83jzJp2lE8DE+4sf5IbTWyHb7my3QTiHm+ZUkUjdYtnZcUnhgfnN8EJfjSwiDDWDmvfn+bi4dGSTQS98xQTw==
     repository: https://github.com/CoolTea001/dsh-cool-theme
-    gitHead: 73403d5053fc1aabe0342f8ef8d2963084ad71f6
+    gitHead: 1118407c634d38a93475ff88d0e8fbd1c6d46b9a
 compatibility:
   dsh: unverified
   platform:
@@ -55,19 +55,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 73403d5053fc1aabe0342f8ef8d2963084ad71f6
-    packageVersion: 0.10.0
+    commit: 1118407c634d38a93475ff88d0e8fbd1c6d46b9a
+    packageVersion: 0.11.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-27T23:00:52.104Z
+    checkedAt: 2026-11-10T09:19:57.980Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 7
 featuredRank: 1056
-releaseUpdatedAt: 2026-10-27T23:00:53.589Z
-metadataUpdatedAt: 2026-10-27T23:00:53.589Z
+starsSnapshot: 7
+releaseUpdatedAt: 2026-11-10T09:19:59.253Z
+metadataUpdatedAt: 2026-11-10T09:19:59.253Z
 starsUpdatedAt: 2026-10-30T03:53:15.825Z
-updatedAt: 2026-10-30T03:53:15.825Z
+updatedAt: 2026-11-10T09:19:59.253Z

@@ -15,21 +15,21 @@ tags:
 modes:
   - light
 install:
-  target: github:lengduan/dsh-815-skin#994e07104fe78ad831a9ee26a7a8feb64a6dfc08
-  version: 0.1.45
-  commit: 994e07104fe78ad831a9ee26a7a8feb64a6dfc08
+  target: github:lengduan/dsh-815-skin#da97da2e61c4061aa52e21de87e0fc264abac11c
+  version: 0.1.46
+  commit: da97da2e61c4061aa52e21de87e0fc264abac11c
   desktop:
     mode: managed
     registry: npm
     packageName: "@lengduan/dsh-client-ui-skin-815"
-    packageVersion: 0.1.45
-    integrity: sha512-VHIyQF6w6qi6w7x1FFfMiwr9IzpPYDTQwgackruhRk68J3Re7KCbfXrxhzU0ErOB/GpW80zsi15Qa8iJQgIqkA==
+    packageVersion: 0.1.46
+    integrity: sha512-f/zsfUVKX8Fh6VB0mYnC5tg0W42zaNUffJWMQurhqt/TjeIEgK1tu7l0JH4BlARZcXaZd9U0AErUuLOg/qEpAw==
   npm:
     name: "@lengduan/dsh-client-ui-skin-815"
-    version: 0.1.45
-    integrity: sha512-VHIyQF6w6qi6w7x1FFfMiwr9IzpPYDTQwgackruhRk68J3Re7KCbfXrxhzU0ErOB/GpW80zsi15Qa8iJQgIqkA==
+    version: 0.1.46
+    integrity: sha512-f/zsfUVKX8Fh6VB0mYnC5tg0W42zaNUffJWMQurhqt/TjeIEgK1tu7l0JH4BlARZcXaZd9U0AErUuLOg/qEpAw==
     repository: https://github.com/lengduan/dsh-815-skin
-    gitHead: 994e07104fe78ad831a9ee26a7a8feb64a6dfc08
+    gitHead: da97da2e61c4061aa52e21de87e0fc264abac11c
 compatibility:
   dsh: unverified
   platform:
@@ -59,12 +59,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 994e07104fe78ad831a9ee26a7a8feb64a6dfc08
-    packageVersion: 0.1.45
+    commit: da97da2e61c4061aa52e21de87e0fc264abac11c
+    packageVersion: 0.1.46
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-11-09T07:17:30.485Z
+    checkedAt: 2026-11-10T09:22:51.146Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -73,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 111
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-09T07:17:32.113Z
-metadataUpdatedAt: 2026-11-09T07:17:32.113Z
+releaseUpdatedAt: 2026-11-10T09:22:53.935Z
+metadataUpdatedAt: 2026-11-10T09:22:53.935Z
 starsUpdatedAt: 2026-09-18T21:39:28.012Z
-updatedAt: 2026-11-09T07:17:32.113Z
+updatedAt: 2026-11-10T09:22:53.935Z

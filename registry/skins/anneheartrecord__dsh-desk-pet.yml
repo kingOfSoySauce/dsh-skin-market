@@ -5,8 +5,8 @@ name:
 author: anneheartrecord
 description: Always-on-top DeepSeek Harness desktop pet. Default whale, four skins, four silent states. Not an in-page widget.
 repo: https://github.com/anneheartrecord/dsh-desk-pet
-package: dsh-desk-pet
-rowId: dsh-desk-pet
+package: deepseek-desk-pet
+rowId: deepseek-desk-pet
 category: pet
 tags:
   - wallpaper
@@ -15,12 +15,15 @@ tags:
 modes:
   - light
 install:
-  target: github:anneheartrecord/dsh-desk-pet#93c0a90e8147c53cb5d3f3f4babb75e89ebe930b
-  version: 0.1.0
-  commit: 93c0a90e8147c53cb5d3f3f4babb75e89ebe930b
+  target: github:anneheartrecord/dsh-desk-pet#2605f871c1cfbd0ec6491c4b83bd1857c1fc79cd
+  version: 0.3.0
+  commit: 2605f871c1cfbd0ec6491c4b83bd1857c1fc79cd
   desktop:
-    mode: manual-only
-    reason: dsh-plugin-loader-module-shape-mismatch
+    mode: managed
+    registry: npm
+    packageName: deepseek-desk-pet
+    packageVersion: 0.3.0
+    integrity: sha512-/HahtWen78Zdp9WVfbSY52cJivt1kOFW3MHNjUP4LhmjfsEheLPPEtloMMjHLopyS5kufk2uwuCJ6xABIVY7VQ==
 compatibility:
   dsh: unverified
   platform:
@@ -30,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/anneheartrecord/dsh-desk-pet/93c0a90e8147c53cb5d3f3f4babb75e89ebe930b/assets/web/threadcore/working/00.png
   - https://raw.githubusercontent.com/anneheartrecord/dsh-desk-pet/93c0a90e8147c53cb5d3f3f4babb75e89ebe930b/assets/web/jellyfish/happy/00.png
   - https://raw.githubusercontent.com/anneheartrecord/dsh-desk-pet/93c0a90e8147c53cb5d3f3f4babb75e89ebe930b/assets/web/nautilus/sleeping/00.png
+listScreenshot: https://raw.githubusercontent.com/anneheartrecord/dsh-desk-pet/2605f871c1cfbd0ec6491c4b83bd1857c1fc79cd/docs/media/diy-skin.png
 review:
   compatibility: unverified
   preview: verified
@@ -37,30 +41,31 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 固定版本的桌宠素材已补入预览；当前 DSH loader 对该插件的模块导出形状不兼容，因此暂不提供一键安装。
-    - 修复插件入口导出后，可重新执行桌面端 smoke test 并恢复 verified 安装状态。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 93c0a90e8147c53cb5d3f3f4babb75e89ebe930b
-    packageVersion: 0.1.0
-    scannerVersion: runtime-smoke-v1
-    mode: runtime
-    result: fail
-    checkedAt: 2026-08-24T04:29:13.000Z
+    commit: 2605f871c1cfbd0ec6491c4b83bd1857c1fc79cd
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-10T09:20:01.148Z
     findings:
-      - code: dsh-plugin-loader-module-shape-mismatch
-        message: 当前 DSH loader 收到 plugin/index.mjs 模块命名空间对象，未解析为可 apply 的插件入口。
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 48
-starsSnapshot: 3
-releaseUpdatedAt: 2026-08-16T13:48:42.914Z
-metadataUpdatedAt: 2026-08-16T14:18:29.509Z
-starsUpdatedAt: 2026-08-16T13:48:42.914Z
-updatedAt: 2026-08-16T14:18:29.509Z
+starsSnapshot: 6
+releaseUpdatedAt: 2026-11-10T09:20:04.588Z
+metadataUpdatedAt: 2026-11-10T09:20:04.588Z
+starsUpdatedAt: 2026-11-10T09:20:04.588Z
+updatedAt: 2026-11-10T09:20:04.588Z
