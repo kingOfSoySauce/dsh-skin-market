@@ -15,21 +15,6 @@ GitHub：[iasiv5/skins](https://github.com/iasiv5/skins)
 
 <!-- /dsh-admission:iasiv5.skins -->
 
-<!-- dsh-admission:lilcandi.dsh-music-on -->
-<a id="recent-2026-11-10-lilcandi-dsh-music-on"></a>
-
-## 2026-11-10 · dsh-music-on
-
-作者：lilcandi
-
-DSH Web 界面右下角的音乐台。一枚可拖动的胶囊常驻在那里，点开是播放卡片：拖入本地音频即播、 粘贴 B 站 / 网易云音乐 / QQ 音乐的歌单链接自动解析入队、页面底部跟着一条蓝白频谱。
-
-GitHub：[lilcandi/dsh-music-on](https://github.com/lilcandi/dsh-music-on)
-
-<img src="https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-capsule.png" width="60%" alt="dsh-music-on">
-
-<!-- /dsh-admission:lilcandi.dsh-music-on -->
-
 <!-- dsh-admission:linyuan-ai1.dsh-plugins-linyuana -->
 <a id="recent-2026-11-10-linyuan-ai1-dsh-plugins-linyuana"></a>
 
@@ -7001,6 +6986,17 @@ dsh-plugin-lx-music（落雪音乐 · 内嵌歌词 + 播放控制）
 GitHub：[afawfawffaf/dsh-plugin-lx-music](https://github.com/afawfawffaf/dsh-plugin-lx-music)
 
 <img src="https://raw.githubusercontent.com/afawfawffaf/dsh-plugin-lx-music/9ce582f6c516f745a8ac009e6d4ad64dfa1cb8c8/assets/screenshots/01-lyrics-and-controls.jpg" width="60%" alt="dsh-plugin-lx-music">
+
+<!-- dsh-auto-entry:lilcandi.dsh-music-on -->
+### 2026-10-27 · dsh-music-on
+
+作者：lilcandi
+
+DSH Web 界面右下角的音乐台。一枚可拖动的胶囊常驻在那里，点开是播放卡片：拖入本地音频即播、 粘贴 B 站 / 网易云音乐 / QQ 音乐的歌单链接自动解析入队、页面底部跟着一条蓝白频谱。
+
+GitHub：[lilcandi/dsh-music-on](https://github.com/lilcandi/dsh-music-on)
+
+<img src="https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-capsule.png" width="60%" alt="dsh-music-on">
 
 <!-- dsh-auto-entry:caimc21069065-prog.dsh-my-music -->
 ### 2026-10-27 · dsh-my-music
