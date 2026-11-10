@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T00:48:13.324Z",
+  "generatedAt": "2026-11-10T06:42:08.022Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -2706,109 +2706,6 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/9d21b1affa35ca7ecddfb60c5672613c.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/9d21b1affa35ca7ecddfb60c5672613c.full.webp"
-          }
-        ]
-      }
-    },
-    {
-      "id": "lilcandi.dsh-music-on",
-      "name": {
-        "zh": "dsh-music-on",
-        "en": "dsh-music-on"
-      },
-      "author": "lilcandi",
-      "description": "DSH Web 界面右下角的音乐台。一枚可拖动的胶囊常驻在那里，点开是播放卡片：拖入本地音频即播、 粘贴 B 站 / 网易云音乐 / QQ 音乐的歌单链接自动解析入队、页面底部跟着一条蓝白频谱。",
-      "repo": "https://github.com/lilcandi/dsh-music-on",
-      "package": "dsh-music-on",
-      "rowId": "dsh-music-on",
-      "category": "player",
-      "tags": [
-        "player"
-      ],
-      "modes": [
-        "light",
-        "dark"
-      ],
-      "install": {
-        "target": "github:lilcandi/dsh-music-on#e87455f12adb2499a3664073efc1ba4f22e555ef",
-        "version": "0.2.1",
-        "commit": "e87455f12adb2499a3664073efc1ba4f22e555ef",
-        "desktop": {
-          "mode": "manual-only",
-          "reason": "npm-package-not-found"
-        }
-      },
-      "compatibility": {
-        "dsh": "unverified",
-        "platform": [
-          "web"
-        ]
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-capsule.png",
-        "https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-dock.png",
-        "https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-spectrum.png",
-        "https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-settings.png"
-      ],
-      "listScreenshot": "https://raw.githubusercontent.com/lilcandi/dsh-music-on/e87455f12adb2499a3664073efc1ba4f22e555ef/docs/screenshot-capsule.png",
-      "review": {
-        "compatibility": "unverified",
-        "preview": "verified",
-        "installation": "verified"
-      },
-      "health": {
-        "status": "improvements",
-        "checks": {
-          "readmeScreenshots": "pass",
-          "compatibility": "improve",
-          "installation": "pass",
-          "installCommand": "pass",
-          "topic": "pass"
-        },
-        "suggestions": [
-          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
-        ],
-        "scan": {
-          "commit": "e87455f12adb2499a3664073efc1ba4f22e555ef",
-          "packageVersion": "0.2.1",
-          "scannerVersion": "static-v2",
-          "mode": "static",
-          "result": "pass",
-          "checkedAt": "2026-10-26T23:11:51.574Z",
-          "findings": []
-        }
-      },
-      "license": {
-        "code": "MIT",
-        "commercialUse": true
-      },
-      "featuredRank": 0,
-      "starsSnapshot": 1,
-      "releaseUpdatedAt": "2026-10-27T05:10:00.000Z",
-      "metadataUpdatedAt": "2026-10-27T23:00:28.784Z",
-      "starsUpdatedAt": "2026-11-09T07:21:16.801Z",
-      "updatedAt": "2026-10-27T23:00:28.784Z",
-      "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ee898dcb3452665799da84393e3a8428.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ee898dcb3452665799da84393e3a8428.full.webp"
-        },
-        "screenshots": [
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ee898dcb3452665799da84393e3a8428.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ee898dcb3452665799da84393e3a8428.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/45587a20da822e0b2a3ae7001c6242ed.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/45587a20da822e0b2a3ae7001c6242ed.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2ff45139fa59b89401c1254894e8b0f8.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2ff45139fa59b89401c1254894e8b0f8.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3673204c55a064330d569b4236e1fcdb.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3673204c55a064330d569b4236e1fcdb.full.webp"
           }
         ]
       }
@@ -21682,101 +21579,6 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/afc3f82c86bc9f6f46f67dc1f8fbb345.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/afc3f82c86bc9f6f46f67dc1f8fbb345.full.webp"
-          }
-        ]
-      }
-    },
-    {
-      "id": "twelvecarbon.dsh-conversation-toc",
-      "name": {
-        "zh": "dsh-conversation-toc",
-        "en": "dsh-conversation-toc"
-      },
-      "author": "twelvecarbon",
-      "description": "DeepSeek Harness 对话大纲插件 —— 在会话页右侧显示对话主题目录（类似 DeepSeek 网页版右边栏），随滚动高亮当前主题，点击即可快捷跳转到对应消息位置。",
-      "repo": "https://github.com/twelvecarbon/dsh-conversation-toc",
-      "package": "dsh-conversation-toc",
-      "rowId": "conversation-toc",
-      "category": "skin",
-      "tags": [
-        "retro",
-        "token-theme",
-        "light-dark"
-      ],
-      "modes": [
-        "light",
-        "dark"
-      ],
-      "install": {
-        "target": "github:twelvecarbon/dsh-conversation-toc#2061ba44575d92a7069b7ba2edac848ccf7a328a",
-        "version": "0.1.1",
-        "commit": "2061ba44575d92a7069b7ba2edac848ccf7a328a",
-        "desktop": {
-          "mode": "manual-only",
-          "reason": "npm-lifecycle-scripts:prepublishOnly"
-        }
-      },
-      "compatibility": {
-        "dsh": "unverified",
-        "platform": [
-          "web"
-        ]
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/twelvecarbon/dsh-conversation-toc/2061ba44575d92a7069b7ba2edac848ccf7a328a/docs/assets/toc-panel.png",
-        "https://raw.githubusercontent.com/twelvecarbon/dsh-conversation-toc/2061ba44575d92a7069b7ba2edac848ccf7a328a/docs/assets/toc-rail.png"
-      ],
-      "review": {
-        "compatibility": "unverified",
-        "preview": "verified",
-        "installation": "verified"
-      },
-      "health": {
-        "status": "improvements",
-        "checks": {
-          "readmeScreenshots": "pass",
-          "compatibility": "improve",
-          "installation": "pass",
-          "installCommand": "pass",
-          "topic": "improve"
-        },
-        "suggestions": [
-          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
-          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
-        ],
-        "scan": {
-          "commit": "2061ba44575d92a7069b7ba2edac848ccf7a328a",
-          "packageVersion": "0.1.1",
-          "scannerVersion": "static-v2",
-          "mode": "static",
-          "result": "pass",
-          "checkedAt": "2026-08-23T10:28:28.303Z",
-          "findings": []
-        }
-      },
-      "license": {
-        "code": "MIT",
-        "commercialUse": true
-      },
-      "featuredRank": 257,
-      "starsSnapshot": 0,
-      "releaseUpdatedAt": "2026-08-23T10:28:28.872Z",
-      "metadataUpdatedAt": "2026-09-08T09:58:43.271Z",
-      "starsUpdatedAt": "2026-08-23T10:28:28.872Z",
-      "updatedAt": "2026-09-08T09:58:43.271Z",
-      "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d46671be494d16a85b91694be5ff708e.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d46671be494d16a85b91694be5ff708e.full.webp"
-        },
-        "screenshots": [
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d46671be494d16a85b91694be5ff708e.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d46671be494d16a85b91694be5ff708e.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1e57c0ab9d2dfce4b1e5963fea126a02.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1e57c0ab9d2dfce4b1e5963fea126a02.full.webp"
           }
         ]
       }
@@ -55577,101 +55379,6 @@
       }
     },
     {
-      "id": "iasiv5.skins",
-      "name": {
-        "zh": "skins",
-        "en": "skins"
-      },
-      "author": "iasiv5",
-      "description": "dsh-skins — DSH Web 多皮肤插件",
-      "repo": "https://github.com/iasiv5/skins",
-      "package": "dsh-skins",
-      "rowId": "skins",
-      "category": "skin",
-      "tags": [
-        "wallpaper",
-        "motion",
-        "token-theme",
-        "light-dark"
-      ],
-      "modes": [
-        "light",
-        "dark"
-      ],
-      "install": {
-        "target": "github:iasiv5/skins#85a5c3c544175ff8c1e3a820de76902c90407e8c",
-        "version": "1.0.1",
-        "commit": "85a5c3c544175ff8c1e3a820de76902c90407e8c",
-        "desktop": {
-          "mode": "manual-only",
-          "reason": "npm-package-not-found"
-        }
-      },
-      "compatibility": {
-        "dsh": "^0.1.1-rc.2",
-        "platform": [
-          "web"
-        ]
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/iasiv5/skins/85a5c3c544175ff8c1e3a820de76902c90407e8c/docs/assets/preview-meirenzhi-1.webp",
-        "https://raw.githubusercontent.com/iasiv5/skins/85a5c3c544175ff8c1e3a820de76902c90407e8c/docs/assets/preview-meirenzhi-2.webp"
-      ],
-      "review": {
-        "compatibility": "verified",
-        "preview": "verified",
-        "installation": "verified"
-      },
-      "health": {
-        "status": "healthy",
-        "checks": {
-          "readmeScreenshots": "pass",
-          "compatibility": "pass",
-          "installation": "pass",
-          "installCommand": "pass",
-          "topic": "pass"
-        },
-        "suggestions": [],
-        "scan": {
-          "commit": "85a5c3c544175ff8c1e3a820de76902c90407e8c",
-          "packageVersion": "1.0.1",
-          "scannerVersion": "static-v2",
-          "dshVersion": "^0.1.1-rc.2",
-          "mode": "static",
-          "result": "pass",
-          "checkedAt": "2026-09-07T21:58:46.491Z",
-          "findings": []
-        }
-      },
-      "license": {
-        "code": "MIT",
-        "commercialUse": true
-      },
-      "featuredRank": 1072,
-      "starsSnapshot": 1,
-      "releaseUpdatedAt": "2026-09-07T21:58:46.646Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
-      "starsUpdatedAt": "2026-09-07T21:58:46.646Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
-      "listScreenshot": "https://raw.githubusercontent.com/iasiv5/skins/85a5c3c544175ff8c1e3a820de76902c90407e8c/docs/assets/preview-meirenzhi-1.webp",
-      "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7f345f81595f26b9d4cffb47d9508cd9.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7f345f81595f26b9d4cffb47d9508cd9.full.webp"
-        },
-        "screenshots": [
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7f345f81595f26b9d4cffb47d9508cd9.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7f345f81595f26b9d4cffb47d9508cd9.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/340a0c179e72295a4d0b0d4ce44c1b53.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/340a0c179e72295a4d0b0d4ce44c1b53.full.webp"
-          }
-        ]
-      }
-    },
-    {
       "id": "krystal-cao.deepseek-harness-swift",
       "name": {
         "zh": "deepseek-harness-swift",
@@ -55857,102 +55564,6 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/42392d6c0a924c91b82265cdbf3307dd.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/42392d6c0a924c91b82265cdbf3307dd.full.webp"
-          }
-        ]
-      }
-    },
-    {
-      "id": "linyuan-ai1.dsh-plugins-linyuana",
-      "name": {
-        "zh": "dsh-plugins-linyuana",
-        "en": "dsh-plugins-linyuana"
-      },
-      "author": "linyuan-ai1",
-      "description": "DeepSeek Harness 的回复卡片颜色 插件。",
-      "repo": "https://github.com/linyuan-ai1/dsh-plugins",
-      "subpath": "packages/dsh-card-color",
-      "package": "dsh-card-color",
-      "rowId": "dsh-card-color",
-      "category": "skin",
-      "tags": [
-        "wallpaper",
-        "pastel",
-        "token-theme",
-        "light-dark"
-      ],
-      "modes": [
-        "light",
-        "dark"
-      ],
-      "install": {
-        "target": "github:linyuan-ai1/dsh-plugins#2ea9d87972fbc970cf725f8a7643c738f1196c36&path:/packages/dsh-card-color",
-        "version": "0.1.1",
-        "commit": "2ea9d87972fbc970cf725f8a7643c738f1196c36",
-        "desktop": {
-          "mode": "manual-only",
-          "reason": "npm-repository-mismatch"
-        }
-      },
-      "compatibility": {
-        "dsh": "^0.1.0-rc.6",
-        "platform": [
-          "web"
-        ]
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/linyuan-ai1/dsh-plugins/2ea9d87972fbc970cf725f8a7643c738f1196c36/packages/dsh-card-color/docs/screenshots/screenshot-1.png",
-        "https://raw.githubusercontent.com/linyuan-ai1/dsh-plugins/2ea9d87972fbc970cf725f8a7643c738f1196c36/packages/dsh-card-color/docs/screenshots/screenshot-2.png"
-      ],
-      "review": {
-        "compatibility": "verified",
-        "preview": "verified",
-        "installation": "verified"
-      },
-      "health": {
-        "status": "healthy",
-        "checks": {
-          "readmeScreenshots": "pass",
-          "compatibility": "pass",
-          "installation": "pass",
-          "installCommand": "pass",
-          "topic": "pass"
-        },
-        "suggestions": [],
-        "scan": {
-          "commit": "2ea9d87972fbc970cf725f8a7643c738f1196c36",
-          "packageVersion": "0.1.1",
-          "scannerVersion": "static-v2",
-          "dshVersion": "^0.1.0-rc.6",
-          "mode": "static",
-          "result": "pass",
-          "checkedAt": "2026-09-07T21:58:48.185Z",
-          "findings": []
-        }
-      },
-      "license": {
-        "code": "MIT",
-        "commercialUse": true
-      },
-      "featuredRank": 1075,
-      "starsSnapshot": 1,
-      "releaseUpdatedAt": "2026-09-07T21:58:48.259Z",
-      "metadataUpdatedAt": "2026-09-08T03:10:45.087Z",
-      "starsUpdatedAt": "2026-09-07T21:58:48.259Z",
-      "updatedAt": "2026-09-08T03:10:45.087Z",
-      "listScreenshot": "https://raw.githubusercontent.com/linyuan-ai1/dsh-plugins/2ea9d87972fbc970cf725f8a7643c738f1196c36/packages/dsh-card-color/docs/screenshots/screenshot-1.png",
-      "media": {
-        "list": {
-          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5bdb2bb133dd67fc989f48245011dbb4.preview.webp",
-          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5bdb2bb133dd67fc989f48245011dbb4.full.webp"
-        },
-        "screenshots": [
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5bdb2bb133dd67fc989f48245011dbb4.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5bdb2bb133dd67fc989f48245011dbb4.full.webp"
-          },
-          {
-            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/29906a05027c1bda45583e4da2aa5d98.preview.webp",
-            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/29906a05027c1bda45583e4da2aa5d98.full.webp"
           }
         ]
       }
@@ -64155,16 +63766,6 @@
       "score": 0,
       "asOf": "2026-11-10"
     },
-    "lilcandi.dsh-music-on": {
-      "ageDays": 1,
-      "starsPerDay": 0,
-      "starGrowthPerDay": 0,
-      "commitsPerDay": 0,
-      "pullsPerDay": 0,
-      "issuesPerDay": 0,
-      "score": 0,
-      "asOf": "2026-11-10"
-    },
     "lildanger.dsh-skin-win2000": {
       "ageDays": 1,
       "starsPerDay": 0,
@@ -69695,13 +69296,6 @@
         },
         "descriptionPolicy": "show"
       },
-      "iasiv5.skins": {
-        "name": {
-          "zh": "DSH 多皮肤",
-          "en": "DSH Multi-Skin"
-        },
-        "descriptionPolicy": "omit"
-      },
       "imfuxing.dsh-widget-journey-west": {
         "name": {
           "zh": "西游师徒悬浮窗",
@@ -70479,17 +70073,6 @@
         },
         "descriptionPolicy": "show"
       },
-      "lilcandi.dsh-music-on": {
-        "name": {
-          "zh": "音乐台",
-          "en": "Music Dock"
-        },
-        "description": {
-          "zh": "音乐台：右下角可拖动播放器，提供六种样式和七种配色的实时频谱，支持拖放本地音频，以及 Bilibili、网易云音乐和 QQ 音乐歌单链接。",
-          "en": "A music dock with a draggable bottom-right player, live spectrum in six styles and seven colour themes, drag-and-drop local audio, and Bilibili, NetEase Cloud Music, and QQ Music playlist links."
-        },
-        "descriptionPolicy": "show"
-      },
       "lildanger.dsh-skin-win2000": {
         "name": {
           "zh": "Windows 2000 经典皮肤",
@@ -70544,13 +70127,6 @@
           "en": "A floating capybara reports workspace/session labels, assistant milestones and distinct completion, failure or cancellation outcomes, with an optional always-on-top Electron companion, custom artwork and away notifications."
         },
         "descriptionPolicy": "show"
-      },
-      "linyuan-ai1.dsh-plugins-linyuana": {
-        "name": {
-          "zh": "回复卡片配色",
-          "en": "Reply Card Colors"
-        },
-        "descriptionPolicy": "omit"
       },
       "linzhuolisoc.dsh-skin-study": {
         "name": {
@@ -72575,13 +72151,6 @@
           "en": "An independent CSS-only theme providing gold-violet liquid glass, gold input text, code colors, geometric assistant marks, workbench cards, and reading typography. It includes no game backgrounds, characters, video, audio, or external media. It supports palette controls, focus mode, and reduced motion; reasoning-slider styling only applies when a compatible selector plugin is already installed. Verified on Windows / Harness `0.2.0-rc.2`; the package requires Node `>=22.19`."
         },
         "descriptionPolicy": "show"
-      },
-      "twelvecarbon.dsh-conversation-toc": {
-        "name": {
-          "zh": "对话主题目录",
-          "en": "Conversation Topic Outline"
-        },
-        "descriptionPolicy": "omit"
       },
       "u1s1-king.dsh-gbc-ui": {
         "name": {
