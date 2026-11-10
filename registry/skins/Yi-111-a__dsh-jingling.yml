@@ -1,0 +1,61 @@
+id: yi-111-a.dsh-jingling
+name:
+  zh: dsh-jingling
+  en: dsh-jingling
+author: Yi-111-a
+description: 你的 DSH 桌面小同伴 · 本地优先 · 安静陪伴 · 不偷看
+repo: https://github.com/Yi-111-a/dsh-jingling
+package: dsh-jingling
+rowId: souldock
+category: pet
+tags:
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:Yi-111-a/dsh-jingling#c0fdb376551f67f11c08fe74e05221a848c5d6bc
+  version: 0.1.0-alpha.19
+  commit: c0fdb376551f67f11c08fe74e05221a848c5d6bc
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
+  allowBuild: dsh-jingling@https://codeload.github.com/Yi-111-a/dsh-jingling/tar.gz/c0fdb376551f67f11c08fe74e05221a848c5d6bc
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Yi-111-a/dsh-jingling/c0fdb376551f67f11c08fe74e05221a848c5d6bc/assets/jingling-idle.png
+listScreenshot: https://raw.githubusercontent.com/Yi-111-a/dsh-jingling/c0fdb376551f67f11c08fe74e05221a848c5d6bc/assets/jingling-idle.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: c0fdb376551f67f11c08fe74e05221a848c5d6bc
+    packageVersion: 0.1.0-alpha.19
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:26:44.072Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1114
+starsSnapshot: 52
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-10T18:11:15.809Z
+starsUpdatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-10T18:11:15.809Z

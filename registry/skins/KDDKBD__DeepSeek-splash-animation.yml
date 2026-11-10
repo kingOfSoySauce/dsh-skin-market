@@ -1,0 +1,60 @@
+id: kddkbd.deepseek-splash-animation
+name:
+  zh: DeepSeek-splash-animation
+  en: DeepSeek-splash-animation
+author: KDDKBD
+description: 给 DeepSeek Harness 加一段自定义开屏动画：启动时播放你指定的视频，播完后 0.3 秒渐隐，露出 DSH 界面。
+repo: https://github.com/KDDKBD/DeepSeek-splash-animation
+package: dsh-splash-animation
+rowId: dsh-splash-animation
+category: splash
+tags:
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:KDDKBD/DeepSeek-splash-animation#bd82a5718507ecb752f04492d9639058ee9291d8
+  version: 0.4.5
+  commit: bd82a5718507ecb752f04492d9639058ee9291d8
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/KDDKBD__DeepSeek-splash-animation/bd82a5718507ecb752f04492d9639058ee9291d8/launch.gif
+listScreenshot: skin-screenshots/KDDKBD__DeepSeek-splash-animation/bd82a5718507ecb752f04492d9639058ee9291d8/launch.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: bd82a5718507ecb752f04492d9639058ee9291d8
+    packageVersion: 0.4.5
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:26:40.576Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1113
+starsSnapshot: 53
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-10T18:11:15.809Z
+starsUpdatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-10T18:11:15.809Z

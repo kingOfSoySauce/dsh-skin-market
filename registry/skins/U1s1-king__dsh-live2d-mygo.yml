@@ -1,0 +1,64 @@
+id: u1s1-king.dsh-live2d-mygo
+name:
+  zh: dsh-live2d-mygo
+  en: dsh-live2d-mygo
+author: U1s1-king
+description: MyGO!!!!! Live2D 桌宠插件 —— 为 DeepSeek Harness Web GUI 添加可拖拽的 Live2D 看板娘。
+repo: https://github.com/U1s1-king/dsh-live2d-mygo
+package: dsh-live2d-mygo
+rowId: ui-live2d-mygo
+category: pet
+tags:
+  - retro
+modes:
+  - light
+  - dark
+install:
+  target: github:U1s1-king/dsh-live2d-mygo#ff1072895d1ea52ed39271a1ed982d305a9188a6
+  version: 0.1.0
+  commit: ff1072895d1ea52ed39271a1ed982d305a9188a6
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+marketScreenshots:
+  - skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/home.png
+  - skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/conversation.png
+  - skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/settings.png
+listScreenshot: skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/home.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: ff1072895d1ea52ed39271a1ed982d305a9188a6
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:27:04.402Z
+    findings: []
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1129
+starsSnapshot: 12
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-10T18:11:15.809Z
+starsUpdatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-10T18:11:15.809Z

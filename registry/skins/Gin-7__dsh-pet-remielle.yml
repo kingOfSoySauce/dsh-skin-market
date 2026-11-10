@@ -1,0 +1,76 @@
+id: gin-7.dsh-pet-remielle
+name:
+  zh: dsh-pet-remielle
+  en: dsh-pet-remielle
+author: Gin-7
+description: dsh-pet-remielle · 蕾米埃尔桌宠
+repo: https://github.com/Gin-7/dsh-pet-remielle
+package: dsh-pet-remielle
+rowId: dsh-pet-remielle
+category: pet
+tags:
+  - glass
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:Gin-7/dsh-pet-remielle#b502cf886707647fef2ac27320ae03b80d75223f
+  version: 0.4.7
+  commit: b502cf886707647fef2ac27320ae03b80d75223f
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-pet-remielle
+    packageVersion: 0.4.7
+    integrity: sha512-N/kg1a2IwxllUBhFsKtSzb9FT/W7MZCLuQ7GIzNCa2WIMqY+hrpPGFr4RRYYTywhKpdQdWNmvMAQLGDMF6tDQA==
+  npm:
+    name: dsh-pet-remielle
+    version: 0.4.7
+    integrity: sha512-N/kg1a2IwxllUBhFsKtSzb9FT/W7MZCLuQ7GIzNCa2WIMqY+hrpPGFr4RRYYTywhKpdQdWNmvMAQLGDMF6tDQA==
+    repository: https://github.com/Gin-7/dsh-pet-remielle
+    gitHead: b502cf886707647fef2ac27320ae03b80d75223f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/01.gif
+  - https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/02.gif
+  - https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/03.gif
+  - https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/04.gif
+  - https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/05.gif
+  - https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/06.gif
+listScreenshot: https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/01.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: b502cf886707647fef2ac27320ae03b80d75223f
+    packageVersion: 0.4.7
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:26:40.255Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1112
+starsSnapshot: 63
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-10T18:11:15.809Z
+starsUpdatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-10T18:11:15.809Z

@@ -1,0 +1,61 @@
+id: yiheng-guo.dsh-boot-animation-pro
+name:
+  zh: dsh-boot-animation-pro
+  en: dsh-boot-animation-pro
+author: Yiheng-guo
+description: 给 DSH 加一段开机动画：打开 DSH、新对话、或你钉住的会话时，视频铺满整个窗口播放。
+repo: https://github.com/Yiheng-guo/dsh-boot-animation-pro
+package: dsh-boot-animation-pro
+rowId: dsh-boot-animation-pro
+category: splash
+tags:
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:Yiheng-guo/dsh-boot-animation-pro#0e6a9287fa9c92af569e9f7ad95683a77bf6a1e9
+  version: 1.0.0
+  commit: 0e6a9287fa9c92af569e9f7ad95683a77bf6a1e9
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/Yiheng-guo__dsh-boot-animation-pro/0e6a9287fa9c92af569e9f7ad95683a77bf6a1e9/launch.gif
+listScreenshot: skin-screenshots/Yiheng-guo__dsh-boot-animation-pro/0e6a9287fa9c92af569e9f7ad95683a77bf6a1e9/launch.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 0e6a9287fa9c92af569e9f7ad95683a77bf6a1e9
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:26:38.077Z
+    findings: []
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1111
+starsSnapshot: 78
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-10T18:11:15.809Z
+starsUpdatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-10T18:11:15.809Z

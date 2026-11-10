@@ -1,0 +1,81 @@
+id: ysppwn721.better-dsh-pet
+name:
+  zh: better-dsh-pet
+  en: better-dsh-pet
+author: ysppwn721
+description: 一只住在 Windows 桌面上的大肥鱼，由 DeepSeek Harness 真实工作状态驱动。
+repo: https://github.com/ysppwn721/better-dsh-pet
+package: better-dsh-pet
+rowId: pet
+category: pet
+tags:
+  - wallpaper
+  - glass
+  - anime
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:ysppwn721/better-dsh-pet#3f4b161313304740f1bc764c4114ddac97204374
+  version: 0.3.6
+  commit: 3f4b161313304740f1bc764c4114ddac97204374
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: better-dsh-pet
+    packageVersion: 0.3.6
+    integrity: sha512-dIRbzHIN5g2w+VXA8YG89ibtGeW5UgCliYvkk1z0C5VER/3qu3OuEsGOZGOuPvW5AGuSehB0gtnQPf6XdPbQ9g==
+  npm:
+    name: better-dsh-pet
+    version: 0.3.6
+    integrity: sha512-dIRbzHIN5g2w+VXA8YG89ibtGeW5UgCliYvkk1z0C5VER/3qu3OuEsGOZGOuPvW5AGuSehB0gtnQPf6XdPbQ9g==
+    repository: https://github.com/ysppwn721/better-dsh-pet
+    gitHead: 3f4b161313304740f1bc764c4114ddac97204374
+compatibility:
+  dsh: ">=0.1.0-rc.6"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/daiji-huxi-xiuxian.gif
+  - https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/dongzhangxiwang.gif
+  - https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/haqian-liantian.gif
+  - https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/yuandi-xiaoqi-chenmian.gif
+  - https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/chaoda-shenlanyao.gif
+  - https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/youxian-hengga.gif
+  - https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/yuandi-piaofu-tabu.gif
+  - https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/pangxie-zoulu.gif
+listScreenshot: https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/daiji-huxi-xiuxian.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 3f4b161313304740f1bc764c4114ddac97204374
+    packageVersion: 0.3.6
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:27:08.254Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1123
+starsSnapshot: 11
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-10T18:11:15.809Z
+starsUpdatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-10T18:11:15.809Z

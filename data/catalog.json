@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T15:31:21.725Z",
+  "generatedAt": "2026-11-10T18:12:06.556Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -58604,6 +58604,87 @@
       }
     },
     {
+      "id": "huzhengcai471-crypto.dsh-startup-secret",
+      "name": {
+        "zh": "dsh-startup-secret",
+        "en": "dsh-startup-secret"
+      },
+      "author": "huzhengcai471-crypto",
+      "description": "DSH 的启动界面与启动动画插件（二次创作版）。",
+      "repo": "https://github.com/huzhengcai471-crypto/dsh-startup-secret",
+      "package": "dsh-startup-secret",
+      "rowId": "dsh-startup-secret",
+      "category": "splash",
+      "tags": [
+        "wallpaper",
+        "glass",
+        "motion",
+        "token-theme",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:huzhengcai471-crypto/dsh-startup-secret#f159b63dc38c2b85e8c18554c7a40213e8663c1a",
+        "version": "1.5.2",
+        "commit": "f159b63dc38c2b85e8c18554c7a40213e8663c1a",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/huzhengcai471-crypto__dsh-startup-secret/f159b63dc38c2b85e8c18554c7a40213e8663c1a/launch.gif"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/huzhengcai471-crypto__dsh-startup-secret/f159b63dc38c2b85e8c18554c7a40213e8663c1a/launch.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "f159b63dc38c2b85e8c18554c7a40213e8663c1a",
+          "packageVersion": "1.5.2",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:29.254Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1107,
+      "starsSnapshot": 198,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z"
+    },
+    {
       "id": "yannicksong0106.dsh-550c-skin",
       "name": {
         "zh": "550C",
@@ -58906,6 +58987,89 @@
       }
     },
     {
+      "id": "leerolling.dsh-boot-suite",
+      "name": {
+        "zh": "dsh-boot-suite",
+        "en": "dsh-boot-suite"
+      },
+      "author": "LeeRolling",
+      "description": "DeepSeek Harness 开机套件 —— 六幕开机动画 + 聊天壁纸。 一个插件，两个半侧：冷启动的仪式感，和进入聊天后的那张底图。 v2.2.0 起分幕是数据：可以换成任意幕数（124）的模板。",
+      "repo": "https://github.com/LeeRolling/dsh-boot-suite",
+      "package": "dsh-boot-suite",
+      "rowId": "dsh-boot-suite",
+      "category": "splash",
+      "tags": [
+        "wallpaper",
+        "glass",
+        "motion",
+        "token-theme",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:LeeRolling/dsh-boot-suite#baec191c80fa057cab690997e269392dc9ca841e",
+        "version": "2.16.11",
+        "commit": "baec191c80fa057cab690997e269392dc9ca841e",
+        "desktop": {
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "dsh-boot-suite",
+          "packageVersion": "2.16.11",
+          "integrity": "sha512-2V0eql2cu2iVMb5O8jGWKa9sjWpRMmNJGKQRUpjPgRnvGQUaEQ0oi87Ilawm1X3q+zVR1UJ0HitcUiusAp46Cg=="
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/LeeRolling__dsh-boot-suite/baec191c80fa057cab690997e269392dc9ca841e/launch.gif"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/LeeRolling__dsh-boot-suite/baec191c80fa057cab690997e269392dc9ca841e/launch.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "baec191c80fa057cab690997e269392dc9ca841e",
+          "packageVersion": "2.16.11",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:30.447Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1109,
+      "starsSnapshot": 120,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z"
+    },
+    {
       "id": "harmlessfunny.dsh-background-by-model",
       "name": {
         "zh": "dsh-background-by-model",
@@ -59107,6 +59271,169 @@
       }
     },
     {
+      "id": "yiheng-guo.dsh-boot-animation-pro",
+      "name": {
+        "zh": "dsh-boot-animation-pro",
+        "en": "dsh-boot-animation-pro"
+      },
+      "author": "Yiheng-guo",
+      "description": "给 DSH 加一段开机动画：打开 DSH、新对话、或你钉住的会话时，视频铺满整个窗口播放。",
+      "repo": "https://github.com/Yiheng-guo/dsh-boot-animation-pro",
+      "package": "dsh-boot-animation-pro",
+      "rowId": "dsh-boot-animation-pro",
+      "category": "splash",
+      "tags": [
+        "motion",
+        "token-theme"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Yiheng-guo/dsh-boot-animation-pro#0e6a9287fa9c92af569e9f7ad95683a77bf6a1e9",
+        "version": "1.0.0",
+        "commit": "0e6a9287fa9c92af569e9f7ad95683a77bf6a1e9",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Yiheng-guo__dsh-boot-animation-pro/0e6a9287fa9c92af569e9f7ad95683a77bf6a1e9/launch.gif"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Yiheng-guo__dsh-boot-animation-pro/0e6a9287fa9c92af569e9f7ad95683a77bf6a1e9/launch.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "0e6a9287fa9c92af569e9f7ad95683a77bf6a1e9",
+          "packageVersion": "1.0.0",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:38.077Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "BSD-3-Clause",
+        "commercialUse": true
+      },
+      "featuredRank": 1111,
+      "starsSnapshot": 78,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z"
+    },
+    {
+      "id": "gin-7.dsh-pet-remielle",
+      "name": {
+        "zh": "dsh-pet-remielle",
+        "en": "dsh-pet-remielle"
+      },
+      "author": "Gin-7",
+      "description": "dsh-pet-remielle · 蕾米埃尔桌宠",
+      "repo": "https://github.com/Gin-7/dsh-pet-remielle",
+      "package": "dsh-pet-remielle",
+      "rowId": "dsh-pet-remielle",
+      "category": "pet",
+      "tags": [
+        "glass",
+        "motion",
+        "token-theme"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Gin-7/dsh-pet-remielle#b502cf886707647fef2ac27320ae03b80d75223f",
+        "version": "0.4.7",
+        "commit": "b502cf886707647fef2ac27320ae03b80d75223f",
+        "desktop": {
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "dsh-pet-remielle",
+          "packageVersion": "0.4.7",
+          "integrity": "sha512-N/kg1a2IwxllUBhFsKtSzb9FT/W7MZCLuQ7GIzNCa2WIMqY+hrpPGFr4RRYYTywhKpdQdWNmvMAQLGDMF6tDQA=="
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/01.gif",
+        "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/02.gif",
+        "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/03.gif",
+        "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/04.gif",
+        "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/05.gif",
+        "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/06.gif"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/Gin-7/dsh-pet-remielle/b502cf886707647fef2ac27320ae03b80d75223f/assets/pets/remielle/01.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "b502cf886707647fef2ac27320ae03b80d75223f",
+          "packageVersion": "0.4.7",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:40.255Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1112,
+      "starsSnapshot": 63,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z"
+    },
+    {
       "id": "kurosawageeker.dsh-moe-lite",
       "name": {
         "zh": "dsh-moe-lite",
@@ -59226,6 +59553,82 @@
           }
         ]
       }
+    },
+    {
+      "id": "kddkbd.deepseek-splash-animation",
+      "name": {
+        "zh": "DeepSeek-splash-animation",
+        "en": "DeepSeek-splash-animation"
+      },
+      "author": "KDDKBD",
+      "description": "给 DeepSeek Harness 加一段自定义开屏动画：启动时播放你指定的视频，播完后 0.3 秒渐隐，露出 DSH 界面。",
+      "repo": "https://github.com/KDDKBD/DeepSeek-splash-animation",
+      "package": "dsh-splash-animation",
+      "rowId": "dsh-splash-animation",
+      "category": "splash",
+      "tags": [
+        "motion"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:KDDKBD/DeepSeek-splash-animation#bd82a5718507ecb752f04492d9639058ee9291d8",
+        "version": "0.4.5",
+        "commit": "bd82a5718507ecb752f04492d9639058ee9291d8",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KDDKBD__DeepSeek-splash-animation/bd82a5718507ecb752f04492d9639058ee9291d8/launch.gif"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KDDKBD__DeepSeek-splash-animation/bd82a5718507ecb752f04492d9639058ee9291d8/launch.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "bd82a5718507ecb752f04492d9639058ee9291d8",
+          "packageVersion": "0.4.5",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:40.576Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1113,
+      "starsSnapshot": 53,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z"
     },
     {
       "id": "zkforge.dsh-claude-desktop-theme",
@@ -59363,6 +59766,94 @@
       }
     },
     {
+      "id": "yi-111-a.dsh-jingling",
+      "name": {
+        "zh": "dsh-jingling",
+        "en": "dsh-jingling"
+      },
+      "author": "Yi-111-a",
+      "description": "你的 DSH 桌面小同伴 · 本地优先 · 安静陪伴 · 不偷看",
+      "repo": "https://github.com/Yi-111-a/dsh-jingling",
+      "package": "dsh-jingling",
+      "rowId": "souldock",
+      "category": "pet",
+      "tags": [
+        "glass"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Yi-111-a/dsh-jingling#c0fdb376551f67f11c08fe74e05221a848c5d6bc",
+        "version": "0.1.0-alpha.19",
+        "commit": "c0fdb376551f67f11c08fe74e05221a848c5d6bc",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-version-not-stable"
+        },
+        "allowBuild": "dsh-jingling@https://codeload.github.com/Yi-111-a/dsh-jingling/tar.gz/c0fdb376551f67f11c08fe74e05221a848c5d6bc"
+      },
+      "compatibility": {
+        "dsh": "0.1.0-rc.6",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Yi-111-a/dsh-jingling/c0fdb376551f67f11c08fe74e05221a848c5d6bc/assets/jingling-idle.png"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/Yi-111-a/dsh-jingling/c0fdb376551f67f11c08fe74e05221a848c5d6bc/assets/jingling-idle.png",
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "healthy",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "pass",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [],
+        "scan": {
+          "commit": "c0fdb376551f67f11c08fe74e05221a848c5d6bc",
+          "packageVersion": "0.1.0-alpha.19",
+          "scannerVersion": "static-v2",
+          "dshVersion": "0.1.0-rc.6",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:44.072Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1114,
+      "starsSnapshot": 52,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0612c2276ff2818c71e8a0ed38a22eed.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0612c2276ff2818c71e8a0ed38a22eed.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0612c2276ff2818c71e8a0ed38a22eed.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0612c2276ff2818c71e8a0ed38a22eed.full.webp"
+          }
+        ]
+      }
+    },
+    {
       "id": "meto-ventus.dsh-ventus-whale",
       "name": {
         "zh": "dsh-ventus-whale",
@@ -59441,6 +59932,204 @@
       "metadataUpdatedAt": "2026-10-22T06:40:00.000Z",
       "starsUpdatedAt": "2026-11-10T09:27:09.985Z",
       "updatedAt": "2026-10-22T06:40:00.000Z"
+    },
+    {
+      "id": "yifffan.dsh-plugin-whale-pet",
+      "name": {
+        "zh": "dsh-plugin-whale-pet",
+        "en": "dsh-plugin-whale-pet"
+      },
+      "author": "Yifffan",
+      "description": "一只住在 DSH 窗口里的小鲸鱼。陪你工作、等你决定，也陪你好好打个盹。",
+      "repo": "https://github.com/Yifffan/dsh-plugin-whale-pet",
+      "package": "dsh-plugin-whale-pet",
+      "rowId": "whale-pet",
+      "category": "pet",
+      "tags": [
+        "motion",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Yifffan/dsh-plugin-whale-pet#6efec117faa6b677cc9e1f5305bc547352c54065",
+        "version": "0.2.9",
+        "commit": "6efec117faa6b677cc9e1f5305bc547352c54065",
+        "desktop": {
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "dsh-plugin-whale-pet",
+          "packageVersion": "0.2.9",
+          "integrity": "sha512-dVvVl2omCJze0IFRFU80TgzoXjiyENagDMyZUVAONSgl4loEu1OzYhlojNSUMoTHoRdspvaitL4/hJtT8j2Qbg=="
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Yifffan/dsh-plugin-whale-pet/6efec117faa6b677cc9e1f5305bc547352c54065/docs/images/whale-states.png"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/Yifffan/dsh-plugin-whale-pet/6efec117faa6b677cc9e1f5305bc547352c54065/docs/images/whale-states.png",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "improve",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ],
+        "scan": {
+          "commit": "6efec117faa6b677cc9e1f5305bc547352c54065",
+          "packageVersion": "0.2.9",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:47.875Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "SEE LICENSE IN LICENSE",
+        "commercialUse": false
+      },
+      "featuredRank": 1116,
+      "starsSnapshot": 37,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/9117c1b096c07ef85403efbbea117f71.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/9117c1b096c07ef85403efbbea117f71.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/9117c1b096c07ef85403efbbea117f71.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/9117c1b096c07ef85403efbbea117f71.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cyanfish-x.dsh-live2d-pets",
+      "name": {
+        "zh": "dsh-live2d-pets",
+        "en": "dsh-live2d-pets"
+      },
+      "author": "cyanfish-x",
+      "description": "给 DeepSeek Harness 请了个看板娘：你思考它歪头，你完成它撒花，还能摸头！",
+      "repo": "https://github.com/cyanfish-x/dsh-live2d-pets",
+      "package": "dsh-live2d-pets",
+      "rowId": "live2d-pet",
+      "category": "pet",
+      "tags": [
+        "motion"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:cyanfish-x/dsh-live2d-pets#6af6f021354afbf30394e363f23caafc800f2b28",
+        "version": "0.3.0",
+        "commit": "6af6f021354afbf30394e363f23caafc800f2b28",
+        "desktop": {
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "dsh-live2d-pets",
+          "packageVersion": "0.3.0",
+          "integrity": "sha512-q28lG/ZIFvrjbJR4RU6aGkZ1L2Z/KJTVnuGkqs7iuapI21dGCOwB2ZMPJvNMsoOCSxvAO44EEW8thqx4Gp6gIQ=="
+        },
+        "allowBuild": "dsh-live2d-pets@https://codeload.github.com/cyanfish-x/dsh-live2d-pets/tar.gz/6af6f021354afbf30394e363f23caafc800f2b28"
+      },
+      "compatibility": {
+        "dsh": "^0.1.5-rc.3",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/cyanfish-x/dsh-live2d-pets/6af6f021354afbf30394e363f23caafc800f2b28/docs/media/hero.jpg",
+        "https://raw.githubusercontent.com/cyanfish-x/dsh-live2d-pets/6af6f021354afbf30394e363f23caafc800f2b28/docs/media/settings-pet-config.png"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/cyanfish-x/dsh-live2d-pets/6af6f021354afbf30394e363f23caafc800f2b28/docs/media/hero.jpg",
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "manual-only"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "pass",
+          "installation": "improve",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。",
+          "固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。"
+        ],
+        "scan": {
+          "commit": "6af6f021354afbf30394e363f23caafc800f2b28",
+          "packageVersion": "0.3.0",
+          "scannerVersion": "static-v2",
+          "dshVersion": "^0.1.5-rc.3",
+          "mode": "static",
+          "result": "unknown",
+          "checkedAt": "2026-11-10T12:26:49.186Z",
+          "findings": [
+            {
+              "code": "client-source-unavailable",
+              "message": "无法读取固定版本的 client 入口，静态扫描结果未知。"
+            }
+          ]
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1117,
+      "starsSnapshot": 33,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8c177dd71f413ec657dbc668be383279.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8c177dd71f413ec657dbc668be383279.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8c177dd71f413ec657dbc668be383279.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8c177dd71f413ec657dbc668be383279.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6184e95f28e4bb66a5303f82a3d1c2e9.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6184e95f28e4bb66a5303f82a3d1c2e9.full.webp"
+          }
+        ]
+      }
     },
     {
       "id": "nishuoyang.dsh-wallpaper-bg",
@@ -59671,6 +60360,231 @@
       }
     },
     {
+      "id": "gosomea.dsh-bigfish",
+      "name": {
+        "zh": "dsh-bigfish",
+        "en": "dsh-bigfish"
+      },
+      "author": "gosomea",
+      "description": "🐋 大肥鱼 · DSH Bigfish",
+      "repo": "https://github.com/gosomea/dsh-bigfish",
+      "package": "dsh-bigfish",
+      "rowId": "bigfish",
+      "category": "pet",
+      "tags": [
+        "motion",
+        "token-theme",
+        "light-dark"
+      ],
+      "modes": [
+        "dark"
+      ],
+      "install": {
+        "target": "github:gosomea/dsh-bigfish#47138f8c986dd8f8614c30395d91d562ea0a2d1d",
+        "version": "0.7.0-next.1",
+        "commit": "47138f8c986dd8f8614c30395d91d562ea0a2d1d",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-version-not-stable"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/playful-motions.gif",
+        "https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/bigfish-demo.gif",
+        "https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/playful-sign.png",
+        "https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/playful-preview-dark.png",
+        "https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/waiting.png",
+        "https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/working.png",
+        "https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/tools.png",
+        "https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/dark.png"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/playful-motions.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "manual-only"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "improve",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。",
+          "固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。"
+        ],
+        "scan": {
+          "commit": "47138f8c986dd8f8614c30395d91d562ea0a2d1d",
+          "packageVersion": "0.7.0-next.1",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "unknown",
+          "checkedAt": "2026-11-10T12:26:53.158Z",
+          "findings": [
+            {
+              "code": "client-source-unavailable",
+              "message": "无法读取固定版本的 client 入口，静态扫描结果未知。"
+            }
+          ]
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1119,
+      "starsSnapshot": 24,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z",
+      "media": {
+        "screenshots": [
+          null,
+          null,
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/98da4f23198f74ef36e0a41280c800a3.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/98da4f23198f74ef36e0a41280c800a3.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/68ba69da4d922ff4668b9dc7a263d06b.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/68ba69da4d922ff4668b9dc7a263d06b.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ae7430c16e69dd6ecbed3a091a1ea8d4.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ae7430c16e69dd6ecbed3a091a1ea8d4.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2715a1034fad1f86dcf61db399080e92.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2715a1034fad1f86dcf61db399080e92.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e00d82c9e9009416ee91da93fe9f4d72.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e00d82c9e9009416ee91da93fe9f4d72.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ebe278da39f1b72003f5092e4f6d2c43.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ebe278da39f1b72003f5092e4f6d2c43.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whitefirer.dsh-niulai-pet",
+      "name": {
+        "zh": "dsh-niulai-pet",
+        "en": "dsh-niulai-pet"
+      },
+      "author": "whitefirer",
+      "description": "牛来桌宠 —— 在 dsh web 界面角落里养一头《牛来》的小牛。平时呼吸、眨眼、踱步、 打盹、气泡唠叨；agent 任务一完成，它就蹦出来喊一声「妈妈」。",
+      "repo": "https://github.com/whitefirer/dsh-niulai-pet",
+      "package": "dsh-niulai-pet",
+      "rowId": "niulai-pet",
+      "category": "pet",
+      "tags": [
+        "wallpaper",
+        "glass"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:whitefirer/dsh-niulai-pet#9103857bffceaa5fe71eff6e273a4662600fe0fb",
+        "version": "0.4.15",
+        "commit": "9103857bffceaa5fe71eff6e273a4662600fe0fb",
+        "desktop": {
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "dsh-niulai-pet",
+          "packageVersion": "0.4.15",
+          "integrity": "sha512-AwMU9cD7BbSItBQ/VtHO8QaSQTWom+8gKshSTiLAddnv8vQCvR25eO1nNmresmeQMlMaJopSqP449G4I8ZTG2g=="
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/whitefirer/dsh-niulai-pet/9103857bffceaa5fe71eff6e273a4662600fe0fb/docs/family.png",
+        "https://raw.githubusercontent.com/whitefirer/dsh-niulai-pet/9103857bffceaa5fe71eff6e273a4662600fe0fb/docs/assets/family-layered.png",
+        "https://raw.githubusercontent.com/whitefirer/dsh-niulai-pet/9103857bffceaa5fe71eff6e273a4662600fe0fb/docs/demo.gif",
+        "https://raw.githubusercontent.com/whitefirer/dsh-niulai-pet/9103857bffceaa5fe71eff6e273a4662600fe0fb/docs/assets/packs-overview.jpg"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/whitefirer/dsh-niulai-pet/9103857bffceaa5fe71eff6e273a4662600fe0fb/docs/family.png",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "9103857bffceaa5fe71eff6e273a4662600fe0fb",
+          "packageVersion": "0.4.15",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:27:02.044Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1120,
+      "starsSnapshot": 17,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/41f3b18c9a12b587e47f600a7730c122.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/41f3b18c9a12b587e47f600a7730c122.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/41f3b18c9a12b587e47f600a7730c122.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/41f3b18c9a12b587e47f600a7730c122.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/35fddf023ee1294a32199f7385ffe856.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/35fddf023ee1294a32199f7385ffe856.full.webp"
+          },
+          null,
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/15ac204f1f264ae164e1cc56b4b0f6ce.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/15ac204f1f264ae164e1cc56b4b0f6ce.full.webp"
+          }
+        ]
+      }
+    },
+    {
       "id": "avalonskyafar.skin",
       "name": {
         "zh": "skin",
@@ -59879,6 +60793,570 @@
           }
         ]
       }
+    },
+    {
+      "id": "ysppwn721.better-dsh-pet",
+      "name": {
+        "zh": "better-dsh-pet",
+        "en": "better-dsh-pet"
+      },
+      "author": "ysppwn721",
+      "description": "一只住在 Windows 桌面上的大肥鱼，由 DeepSeek Harness 真实工作状态驱动。",
+      "repo": "https://github.com/ysppwn721/better-dsh-pet",
+      "package": "better-dsh-pet",
+      "rowId": "pet",
+      "category": "pet",
+      "tags": [
+        "wallpaper",
+        "glass",
+        "anime",
+        "motion",
+        "token-theme"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:ysppwn721/better-dsh-pet#3f4b161313304740f1bc764c4114ddac97204374",
+        "version": "0.3.6",
+        "commit": "3f4b161313304740f1bc764c4114ddac97204374",
+        "desktop": {
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "better-dsh-pet",
+          "packageVersion": "0.3.6",
+          "integrity": "sha512-dIRbzHIN5g2w+VXA8YG89ibtGeW5UgCliYvkk1z0C5VER/3qu3OuEsGOZGOuPvW5AGuSehB0gtnQPf6XdPbQ9g=="
+        }
+      },
+      "compatibility": {
+        "dsh": ">=0.1.0-rc.6",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/daiji-huxi-xiuxian.gif",
+        "https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/dongzhangxiwang.gif",
+        "https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/haqian-liantian.gif",
+        "https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/yuandi-xiaoqi-chenmian.gif",
+        "https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/chaoda-shenlanyao.gif",
+        "https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/youxian-hengga.gif",
+        "https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/yuandi-piaofu-tabu.gif",
+        "https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/pangxie-zoulu.gif"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/daiji-huxi-xiuxian.gif",
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "pass",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ],
+        "scan": {
+          "commit": "3f4b161313304740f1bc764c4114ddac97204374",
+          "packageVersion": "0.3.6",
+          "scannerVersion": "static-v2",
+          "dshVersion": ">=0.1.0-rc.6",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:27:08.254Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1123,
+      "starsSnapshot": 11,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z"
+    },
+    {
+      "id": "cookiesheep.whale-on-desk",
+      "name": {
+        "zh": "whale-on-desk",
+        "en": "whale-on-desk"
+      },
+      "author": "cookiesheep",
+      "description": "whale-on-desk 🐳 鲸桌",
+      "repo": "https://github.com/cookiesheep/whale-on-desk",
+      "package": "whale-on-desk",
+      "rowId": "whale",
+      "category": "pet",
+      "tags": [
+        "wallpaper",
+        "glass",
+        "motion",
+        "token-theme"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:cookiesheep/whale-on-desk#d50a2e45eddcb6cd1483820f9c4c1e8991913581",
+        "version": "3.0.0",
+        "commit": "d50a2e45eddcb6cd1483820f9c4c1e8991913581",
+        "desktop": {
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "whale-on-desk",
+          "packageVersion": "3.0.0",
+          "integrity": "sha512-g5KIb8OS7Pc8tn/er0lmba8BVpEeTgwY3qIrnAuyHdFBSfYoxcd8sTHnXgkYy+RaWQrYLRBccoo9K8KB9SEBUA=="
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/cookiesheep/whale-on-desk/d50a2e45eddcb6cd1483820f9c4c1e8991913581/docs/media/demo.gif",
+        "https://raw.githubusercontent.com/cookiesheep/whale-on-desk/d50a2e45eddcb6cd1483820f9c4c1e8991913581/docs/media/aquarium.gif"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/cookiesheep/whale-on-desk/d50a2e45eddcb6cd1483820f9c4c1e8991913581/docs/media/demo.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "d50a2e45eddcb6cd1483820f9c4c1e8991913581",
+          "packageVersion": "3.0.0",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:27:15.680Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1125,
+      "starsSnapshot": 9,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z"
+    },
+    {
+      "id": "drliuhuan.dsh-plugin-vrmpet3d",
+      "name": {
+        "zh": "dsh-plugin-vrmpet3d",
+        "en": "dsh-plugin-vrmpet3d"
+      },
+      "author": "drliuhuan",
+      "description": "桌宠 3D · VRM Pet 3D",
+      "repo": "https://github.com/drliuhuan/dsh-plugin-vrmpet3d",
+      "package": "dsh-plugin-vrmpet3d",
+      "rowId": "vrmpet3d",
+      "category": "pet",
+      "tags": [
+        "glass",
+        "retro",
+        "motion"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:drliuhuan/dsh-plugin-vrmpet3d#462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc",
+        "version": "0.1.4",
+        "commit": "462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc",
+        "desktop": {
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "dsh-plugin-vrmpet3d",
+          "packageVersion": "0.1.4",
+          "integrity": "sha512-Okoes++kIo8cbnv0sUkN5tNsEdZCO5y1ERe0gB75NPGjT3JaasHGU+cagIi3VYzqmLQgOxAJiSncFrw9n+7wHw=="
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/states-overview.png",
+        "https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/chatter-gaze.gif",
+        "https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/idle.png",
+        "https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/working.png",
+        "https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/waiting.png",
+        "https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/done.png"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/states-overview.png",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "improve",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。"
+        ],
+        "scan": {
+          "commit": "462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc",
+          "packageVersion": "0.1.4",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:27:14.376Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1126,
+      "starsSnapshot": 10,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e254fe405a7772c5c6179e9549d0c95d.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e254fe405a7772c5c6179e9549d0c95d.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e254fe405a7772c5c6179e9549d0c95d.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e254fe405a7772c5c6179e9549d0c95d.full.webp"
+          },
+          null,
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2585078d892eba2cccc0a20913f29d82.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2585078d892eba2cccc0a20913f29d82.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3290941ec196ee3cf281ebd65d0c8107.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3290941ec196ee3cf281ebd65d0c8107.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3aef4ed209a7b681666460368be7ce0a.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3aef4ed209a7b681666460368be7ce0a.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7e276457120a7a5405d4b900c8721561.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7e276457120a7a5405d4b900c8721561.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "forget6610.dsh-theme-clove",
+      "name": {
+        "zh": "dsh-theme-clove",
+        "en": "dsh-theme-clove"
+      },
+      "author": "forget6610",
+      "description": "暮色调的 DeepSeek Harness Web GUI 皮肤：粉紫配色、暗紫壁纸、卡片和滚动条样式。",
+      "repo": "https://github.com/forget6610/dsh-theme-clove",
+      "package": "dsh-theme-clove",
+      "rowId": "clove-theme",
+      "category": "skin",
+      "tags": [
+        "wallpaper",
+        "glass",
+        "token-theme",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:forget6610/dsh-theme-clove#e8a6df935de979353443b529c9697a6a9ffe4bd5",
+        "version": "1.0.1",
+        "commit": "e8a6df935de979353443b529c9697a6a9ffe4bd5",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/forget6610/dsh-theme-clove/e8a6df935de979353443b529c9697a6a9ffe4bd5/preview/preview.png"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/forget6610/dsh-theme-clove/e8a6df935de979353443b529c9697a6a9ffe4bd5/preview/preview.png",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "e8a6df935de979353443b529c9697a6a9ffe4bd5",
+          "packageVersion": "1.0.1",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:27:19.872Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1127,
+      "starsSnapshot": 8,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a362d7db1b21aa12967a4f4873d75284.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a362d7db1b21aa12967a4f4873d75284.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a362d7db1b21aa12967a4f4873d75284.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a362d7db1b21aa12967a4f4873d75284.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ga17-lhy.dsh-boot-splash",
+      "name": {
+        "zh": "dsh-boot-splash",
+        "en": "dsh-boot-splash"
+      },
+      "author": "GA17-LHY",
+      "description": "自建 DSH 启动画面插件：开机时叠一段全窗口画面（默认为渐变底），片尾交叉溶解进界面。",
+      "repo": "https://github.com/GA17-LHY/dsh-boot-splash",
+      "package": "boot-splash",
+      "rowId": "boot-splash",
+      "category": "splash",
+      "tags": [
+        "wallpaper",
+        "glass",
+        "retro",
+        "motion",
+        "token-theme"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:GA17-LHY/dsh-boot-splash#6dd58cb072f3f5972dcc290c27af99ff5900f052",
+        "version": "0.6.1",
+        "commit": "6dd58cb072f3f5972dcc290c27af99ff5900f052",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/GA17-LHY__dsh-boot-splash/6dd58cb072f3f5972dcc290c27af99ff5900f052/launch.gif"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/GA17-LHY__dsh-boot-splash/6dd58cb072f3f5972dcc290c27af99ff5900f052/launch.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "improve",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ],
+        "scan": {
+          "commit": "6dd58cb072f3f5972dcc290c27af99ff5900f052",
+          "packageVersion": "0.6.1",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:27:20.319Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1128,
+      "starsSnapshot": 8,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z"
+    },
+    {
+      "id": "u1s1-king.dsh-live2d-mygo",
+      "name": {
+        "zh": "dsh-live2d-mygo",
+        "en": "dsh-live2d-mygo"
+      },
+      "author": "U1s1-king",
+      "description": "MyGO!!!!! Live2D 桌宠插件 —— 为 DeepSeek Harness Web GUI 添加可拖拽的 Live2D 看板娘。",
+      "repo": "https://github.com/U1s1-king/dsh-live2d-mygo",
+      "package": "dsh-live2d-mygo",
+      "rowId": "ui-live2d-mygo",
+      "category": "pet",
+      "tags": [
+        "retro"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:U1s1-king/dsh-live2d-mygo#ff1072895d1ea52ed39271a1ed982d305a9188a6",
+        "version": "0.1.0",
+        "commit": "ff1072895d1ea52ed39271a1ed982d305a9188a6",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/home.png",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "ff1072895d1ea52ed39271a1ed982d305a9188a6",
+          "packageVersion": "0.1.0",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:27:04.402Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "CC-BY-NC-SA-4.0",
+        "commercialUse": false
+      },
+      "featuredRank": 1129,
+      "starsSnapshot": 12,
+      "releaseUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "metadataUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "starsUpdatedAt": "2026-11-10T18:11:15.809Z",
+      "updatedAt": "2026-11-10T18:11:15.809Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2854370603a1e6384bba43d6070fc5df.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2854370603a1e6384bba43d6070fc5df.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2854370603a1e6384bba43d6070fc5df.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2854370603a1e6384bba43d6070fc5df.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c7e313bb0697d30dc6f5b7551b93f4f9.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c7e313bb0697d30dc6f5b7551b93f4f9.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/06a1fc615b16da39f371d6f7bc808826.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/06a1fc615b16da39f371d6f7bc808826.full.webp"
+          }
+        ]
+      }
     }
   ],
   "npmSources": {
@@ -60022,6 +61500,13 @@
       "repository": "https://github.com/CloudSen/dsh-umbrella-theme",
       "gitHead": "a745f1138c161a2f967d3aa9a21d49eaba17b5ac"
     },
+    "cookiesheep.whale-on-desk": {
+      "name": "whale-on-desk",
+      "version": "3.0.0",
+      "integrity": "sha512-g5KIb8OS7Pc8tn/er0lmba8BVpEeTgwY3qIrnAuyHdFBSfYoxcd8sTHnXgkYy+RaWQrYLRBccoo9K8KB9SEBUA==",
+      "repository": "https://github.com/cookiesheep/whale-on-desk",
+      "gitHead": "d50a2e45eddcb6cd1483820f9c4c1e8991913581"
+    },
     "cooltea001.dsh-cool-theme": {
       "name": "dsh-cool-theme",
       "version": "0.11.0",
@@ -60049,6 +61534,13 @@
       "integrity": "sha512-iGok299U10OD5h8HG/Hih6XJgNEvysV7o0P0SWOl/sShqfVeAVAGX2/pby8uY3deDKj7zb1tUJlzCWPjFxtXHg==",
       "repository": "https://github.com/cpt-kenvie/EmotionPet",
       "gitHead": "c8406a069040ada3d347b44e5db0a263de58ee27"
+    },
+    "cyanfish-x.dsh-live2d-pets": {
+      "name": "dsh-live2d-pets",
+      "version": "0.3.0",
+      "integrity": "sha512-q28lG/ZIFvrjbJR4RU6aGkZ1L2Z/KJTVnuGkqs7iuapI21dGCOwB2ZMPJvNMsoOCSxvAO44EEW8thqx4Gp6gIQ==",
+      "repository": "https://github.com/cyanfish-x/dsh-live2d-pets",
+      "gitHead": "6af6f021354afbf30394e363f23caafc800f2b28"
     },
     "cyberryre.dsh-lx-music": {
       "name": "lx-music-for-dsh",
@@ -60105,6 +61597,13 @@
       "integrity": "sha512-fpmS+8pMw778qMKtevNUtRDTjMXWP9/0fpIgMtOem0KRPWW+a14HJz8OUpacFOX3LwyxozCQKkOvMgv8N+2dmw==",
       "repository": "https://github.com/doitian/dsh-music",
       "gitHead": "ad12fbb31e5ab455e32aaf9ee818def57de2c412"
+    },
+    "drliuhuan.dsh-plugin-vrmpet3d": {
+      "name": "dsh-plugin-vrmpet3d",
+      "version": "0.1.4",
+      "integrity": "sha512-Okoes++kIo8cbnv0sUkN5tNsEdZCO5y1ERe0gB75NPGjT3JaasHGU+cagIi3VYzqmLQgOxAJiSncFrw9n+7wHw==",
+      "repository": "https://github.com/drliuhuan/dsh-plugin-vrmpet3d",
+      "gitHead": "462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc"
     },
     "elysia395.dsh-wallpaper-engine": {
       "name": "dsh-plugin-wallpaper-engine",
@@ -60175,6 +61674,13 @@
       "integrity": "sha512-WGgVaQOLvlFw8yikWOJv08PSTbWX+TId1fkslMM/dGDE2/3TlyKRuhL8WUpSLcTN+3gFPvEtpEDxhu4QrS9Paw==",
       "repository": "https://github.com/Frog755/dsh-prompt-vault",
       "gitHead": "f2883612668bcc7af4bf065543bccfabf734a758"
+    },
+    "gin-7.dsh-pet-remielle": {
+      "name": "dsh-pet-remielle",
+      "version": "0.4.7",
+      "integrity": "sha512-N/kg1a2IwxllUBhFsKtSzb9FT/W7MZCLuQ7GIzNCa2WIMqY+hrpPGFr4RRYYTywhKpdQdWNmvMAQLGDMF6tDQA==",
+      "repository": "https://github.com/Gin-7/dsh-pet-remielle",
+      "gitHead": "b502cf886707647fef2ac27320ae03b80d75223f"
     },
     "gooosie.dsh-whale-bg": {
       "name": "dsh-whale-bg",
@@ -60329,6 +61835,13 @@
       "integrity": "sha512-E8VCkfaR0VKEcYYloIyDAPjiYfyUng/LMlsoXLYileKP/qg5wAt5wUS+5W6R0kv1JYlGAIxXsspPzZKA/BE+UA==",
       "repository": "https://github.com/LAN-TINA-WS/dsh-gui-customization",
       "gitHead": "43d98d282c31762c23638b22dabf9d7185658f5e"
+    },
+    "leerolling.dsh-boot-suite": {
+      "name": "dsh-boot-suite",
+      "version": "2.16.11",
+      "integrity": "sha512-2V0eql2cu2iVMb5O8jGWKa9sjWpRMmNJGKQRUpjPgRnvGQUaEQ0oi87Ilawm1X3q+zVR1UJ0HitcUiusAp46Cg==",
+      "repository": "https://github.com/LeeRolling/dsh-boot-suite",
+      "gitHead": "baec191c80fa057cab690997e269392dc9ca841e"
     },
     "lengduan.dsh-815-skin": {
       "name": "@lengduan/dsh-client-ui-skin-815",
@@ -60778,6 +62291,13 @@
       "repository": "https://github.com/weibaohui/dsh-matrix",
       "gitHead": "a8bba88fb0a0e2a62e71ec34957200983c6de610"
     },
+    "whitefirer.dsh-niulai-pet": {
+      "name": "dsh-niulai-pet",
+      "version": "0.4.15",
+      "integrity": "sha512-AwMU9cD7BbSItBQ/VtHO8QaSQTWom+8gKshSTiLAddnv8vQCvR25eO1nNmresmeQMlMaJopSqP449G4I8ZTG2g==",
+      "repository": "https://github.com/whitefirer/dsh-niulai-pet",
+      "gitHead": "9103857bffceaa5fe71eff6e273a4662600fe0fb"
+    },
     "wilsonchengassistant.dsh-media-web-preview": {
       "name": "dsh-media-web-preview",
       "version": "1.0.0",
@@ -60848,6 +62368,13 @@
       "repository": "https://github.com/yicun0316/dsh-claude-slider",
       "gitHead": "0be24603134bb126750793ae8f671afa9e45eea9"
     },
+    "yifffan.dsh-plugin-whale-pet": {
+      "name": "dsh-plugin-whale-pet",
+      "version": "0.2.9",
+      "integrity": "sha512-dVvVl2omCJze0IFRFU80TgzoXjiyENagDMyZUVAONSgl4loEu1OzYhlojNSUMoTHoRdspvaitL4/hJtT8j2Qbg==",
+      "repository": "https://github.com/Yifffan/dsh-plugin-whale-pet",
+      "gitHead": "6efec117faa6b677cc9e1f5305bc547352c54065"
+    },
     "ylifeonlyonce.dsh-calendar": {
       "name": "dsh-usage-calendar",
       "version": "0.1.4",
@@ -60882,6 +62409,13 @@
       "integrity": "sha512-3K7FingB12WG9NbgjwmwuML+k5hvyGRrS1P5/LSC6vzD88x6WjXr/JGogcJNb16DnG3sXhg6baUvLyH6qR2RbQ==",
       "repository": "https://github.com/yrsxy/dsh-warm-theme",
       "gitHead": "2077d784604826567fc6abe733517cc066e84514"
+    },
+    "ysppwn721.better-dsh-pet": {
+      "name": "better-dsh-pet",
+      "version": "0.3.6",
+      "integrity": "sha512-dIRbzHIN5g2w+VXA8YG89ibtGeW5UgCliYvkk1z0C5VER/3qu3OuEsGOZGOuPvW5AGuSehB0gtnQPf6XdPbQ9g==",
+      "repository": "https://github.com/ysppwn721/better-dsh-pet",
+      "gitHead": "3f4b161313304740f1bc764c4114ddac97204374"
     },
     "yummyxl.dsh-eyecare": {
       "name": "dsh-eyecare",
