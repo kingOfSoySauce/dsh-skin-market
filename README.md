@@ -14,6 +14,10 @@
 
 [打开在线皮肤市场](https://kingofsoysauce.github.io/dsh-skin-market/)
 
+### 近期收录
+
+最新收录见[收录日志](./docs/recently-added.md)。
+
 <a id="manual-update"></a>
 ## 安装、更新
 

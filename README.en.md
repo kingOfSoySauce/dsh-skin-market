@@ -14,6 +14,10 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 [Open the online skin market](https://kingofsoysauce.github.io/dsh-skin-market/)
 
+### Recently added
+
+See the [recent additions log](./docs/recently-added.md).
+
 <a id="manual-update"></a>
 ## Install and update
 
