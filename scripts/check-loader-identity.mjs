@@ -12,7 +12,7 @@
  * repository must not block an otherwise correct submission.
  */
 import { execFileSync } from 'node:child_process'
-import { readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { parse } from 'yaml'
 import { primaryLoaderIdFromPatch } from './loader-rows.mjs'
@@ -96,6 +96,18 @@ export async function checkLoaderIdentity(entries, options = {}) {
   return { checked, failures, warnings }
 }
 
+/**
+ * Read the registry entries behind a changed-path list. Paths that no longer
+ * exist are deleted entries: they have no row to verify, and reading them back
+ * would throw ENOENT and fail an unrelated submission.
+ * @param {string[]} paths
+ */
+export function readEntries(paths) {
+  return paths
+    .filter(file => existsSync(file))
+    .map(file => ({ file, value: parse(readFileSync(file, 'utf8')) }))
+}
+
 async function main() {
   const base = arg('base')
   const head = arg('head')
@@ -105,7 +117,7 @@ async function main() {
   else if (base !== undefined && head !== undefined) paths = changedFiles(base, head)
   else if (process.argv.includes('--all')) paths = allFiles()
   else paths = changedFiles('HEAD', 'HEAD') // nothing changed locally: no-op
-  const entries = paths.map(file => ({ file, value: parse(readFileSync(file, 'utf8')) }))
+  const entries = readEntries(paths)
   const result = await checkLoaderIdentity(entries)
   for (const warning of result.warnings) console.warn(`warning: ${warning}`)
   if (result.failures.length > 0) {

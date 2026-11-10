@@ -1,5 +1,8 @@
+import { mkdtempSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { checkLoaderIdentity, patchUrl } from '../scripts/check-loader-identity.mjs'
+import { checkLoaderIdentity, patchUrl, readEntries } from '../scripts/check-loader-identity.mjs'
 
 const patch = (id, name = 'dsh-skin') => `- insert:\n    - id: ${id}\n      name: '${name}'\n`
 
@@ -62,5 +65,15 @@ describe('loader identity admission check', () => {
     expect(patchUrl({ ...entry().value, subpath: 'packages/skin' }))
       .toBe(`https://raw.githubusercontent.com/a/b/${'a'.repeat(40)}/packages/skin/cordis.patch.yml`)
     expect(patchUrl({ ...entry().value, install: { commit: 'main' } })).toBeNull()
+  })
+
+  it('ignores deleted entries instead of throwing ENOENT', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'loader-identity-'))
+    const kept = join(dir, 'kept.yml')
+    writeFileSync(kept, 'id: a.b\nrowId: ui-skin-a\n')
+    const entries = readEntries([kept, join(dir, 'deleted.yml')])
+    expect(entries).toHaveLength(1)
+    expect(entries[0].file).toBe(kept)
+    expect(entries[0].value.rowId).toBe('ui-skin-a')
   })
 })
