@@ -29,10 +29,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Cerrda__dsh-cerrda-theme/4bdf404f7edac640ac32f4ae470c57ab53327634/home.png
-  - skin-screenshots/Cerrda__dsh-cerrda-theme/4bdf404f7edac640ac32f4ae470c57ab53327634/conversation.png
-  - skin-screenshots/Cerrda__dsh-cerrda-theme/4bdf404f7edac640ac32f4ae470c57ab53327634/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -60,9 +56,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 173
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/Cerrda__dsh-cerrda-theme/4bdf404f7edac640ac32f4ae470c57ab53327634/home.png
+  - skin-screenshots/Cerrda__dsh-cerrda-theme/4bdf404f7edac640ac32f4ae470c57ab53327634/conversation.png
+  - skin-screenshots/Cerrda__dsh-cerrda-theme/4bdf404f7edac640ac32f4ae470c57ab53327634/settings.png
+featuredRank: 173
 releaseUpdatedAt: 2026-08-23T05:33:09.345Z
-metadataUpdatedAt: 2026-11-09T00:17:27.351Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-09-09T21:40:49.870Z
-updatedAt: 2026-11-09T00:17:27.351Z
+updatedAt: 2026-11-10T00:42:47.982Z

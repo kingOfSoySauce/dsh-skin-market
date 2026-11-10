@@ -36,10 +36,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/home.png
-  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/conversation.png
-  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/settings.png
 screenshots:
   - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-attentif.gif
   - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/preset-blase.gif
@@ -75,9 +71,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1003
 starsSnapshot: 17
+marketScreenshots:
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/home.png
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/conversation.png
+  - skin-screenshots/Yuuhann1999__dsh-bloub-mood/c626528b3d6c32669c265d7144e85f60f48570d2/settings.png
+featuredRank: 1003
 releaseUpdatedAt: 2026-08-23T05:29:40.934Z
-metadataUpdatedAt: 2026-08-23T05:29:40.934Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-11-09T00:13:13.835Z
-updatedAt: 2026-11-09T00:13:13.835Z
+updatedAt: 2026-11-10T00:42:47.982Z

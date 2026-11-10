@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/c-ling__dsh-plugin-pet/672c068626a460268cc3e5514e9ff912dc5630a6/home.png
-  - skin-screenshots/c-ling__dsh-plugin-pet/672c068626a460268cc3e5514e9ff912dc5630a6/conversation.png
-  - skin-screenshots/c-ling__dsh-plugin-pet/672c068626a460268cc3e5514e9ff912dc5630a6/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 996
 starsSnapshot: 5
+marketScreenshots:
+  - skin-screenshots/c-ling__dsh-plugin-pet/672c068626a460268cc3e5514e9ff912dc5630a6/home.png
+  - skin-screenshots/c-ling__dsh-plugin-pet/672c068626a460268cc3e5514e9ff912dc5630a6/conversation.png
+  - skin-screenshots/c-ling__dsh-plugin-pet/672c068626a460268cc3e5514e9ff912dc5630a6/settings.png
+featuredRank: 996
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:22.773Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-11-01T22:47:33.079Z
-updatedAt: 2026-11-01T22:47:33.079Z
+updatedAt: 2026-11-10T00:42:47.982Z

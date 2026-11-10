@@ -33,10 +33,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Rain-Shuoyu__dsh-client-deep-sneak/21d0646de043b5bb2e18835826394e0aa2fe7497/home.png
-  - skin-screenshots/Rain-Shuoyu__dsh-client-deep-sneak/21d0646de043b5bb2e18835826394e0aa2fe7497/conversation.png
-  - skin-screenshots/Rain-Shuoyu__dsh-client-deep-sneak/21d0646de043b5bb2e18835826394e0aa2fe7497/settings.png
 screenshots:
   - skin-screenshots/Rain-Shuoyu__dsh-client-deep-sneak/21d0646de043b5bb2e18835826394e0aa2fe7497/home.gif
 review:
@@ -66,9 +62,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/Rain-Shuoyu__dsh-client-deep-sneak/21d0646de043b5bb2e18835826394e0aa2fe7497/home.png
+  - skin-screenshots/Rain-Shuoyu__dsh-client-deep-sneak/21d0646de043b5bb2e18835826394e0aa2fe7497/conversation.png
+  - skin-screenshots/Rain-Shuoyu__dsh-client-deep-sneak/21d0646de043b5bb2e18835826394e0aa2fe7497/settings.png
+featuredRank: 0
 releaseUpdatedAt: 2026-11-09T00:16:40.383Z
-metadataUpdatedAt: 2026-11-09T00:16:40.383Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-11-09T00:16:40.383Z
+updatedAt: 2026-11-10T00:42:47.982Z

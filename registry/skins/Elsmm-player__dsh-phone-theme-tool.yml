@@ -27,10 +27,6 @@ compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Elsmm-player__dsh-phone-theme-tool/cd9d99094830a20ec34e91e32a2f1e526963e63a/home.png
-  - skin-screenshots/Elsmm-player__dsh-phone-theme-tool/cd9d99094830a20ec34e91e32a2f1e526963e63a/conversation.png
-  - skin-screenshots/Elsmm-player__dsh-phone-theme-tool/cd9d99094830a20ec34e91e32a2f1e526963e63a/settings.png
 screenshots:
   - skin-screenshots/Elsmm-player__dsh-phone-theme-tool/cd9d99094830a20ec34e91e32a2f1e526963e63a/home.png
   - skin-screenshots/Elsmm-player__dsh-phone-theme-tool/cd9d99094830a20ec34e91e32a2f1e526963e63a/conversation.png
@@ -63,9 +59,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/Elsmm-player__dsh-phone-theme-tool/cd9d99094830a20ec34e91e32a2f1e526963e63a/home.png
+  - skin-screenshots/Elsmm-player__dsh-phone-theme-tool/cd9d99094830a20ec34e91e32a2f1e526963e63a/conversation.png
+  - skin-screenshots/Elsmm-player__dsh-phone-theme-tool/cd9d99094830a20ec34e91e32a2f1e526963e63a/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-22T06:09:00Z
-metadataUpdatedAt: 2026-11-09T00:17:43.596Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-31T06:50:39Z
-updatedAt: 2026-11-09T00:17:43.596Z
+updatedAt: 2026-11-10T00:42:47.982Z

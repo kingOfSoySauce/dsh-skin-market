@@ -24,10 +24,6 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/home.png
-  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/conversation.png
-  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -57,9 +53,13 @@ license:
   code: MIT
   commercialUse: true
   notice: 代码MIT；默认PC2005-cloud动画另按其非商业及署名约定使用，未打包私人背景。
-featuredRank: 999
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/home.png
+  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/conversation.png
+  - skin-screenshots/luo0712yan0219-blip__dsh-whale-decor/00920e5768b170872aa02784adc433ae4f0c2f0f/settings.png
+featuredRank: 999
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-11-09T07:16:00.838Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T07:16:00.838Z
+updatedAt: 2026-11-10T00:42:47.982Z

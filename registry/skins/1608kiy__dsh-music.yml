@@ -24,10 +24,6 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/1608kiy__dsh-music/0c0bfe03e1b63a58ab99d605740e1833168802dd/home.png
-  - skin-screenshots/1608kiy__dsh-music/0c0bfe03e1b63a58ab99d605740e1833168802dd/conversation.png
-  - skin-screenshots/1608kiy__dsh-music/0c0bfe03e1b63a58ab99d605740e1833168802dd/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/1608kiy__dsh-music/0c0bfe03e1b63a58ab99d605740e1833168802dd/home.png
+  - skin-screenshots/1608kiy__dsh-music/0c0bfe03e1b63a58ab99d605740e1833168802dd/conversation.png
+  - skin-screenshots/1608kiy__dsh-music/0c0bfe03e1b63a58ab99d605740e1833168802dd/settings.png
+featuredRank: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-11-09T00:17:10.359Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-11-09T00:17:10.359Z
+updatedAt: 2026-11-10T00:42:47.982Z

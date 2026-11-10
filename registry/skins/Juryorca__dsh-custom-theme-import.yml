@@ -25,10 +25,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Juryorca__dsh-custom-theme-import/3a501cf063b288009cf62d2f9c04c3dd59a2e74f/home.png
-  - skin-screenshots/Juryorca__dsh-custom-theme-import/3a501cf063b288009cf62d2f9c04c3dd59a2e74f/conversation.png
-  - skin-screenshots/Juryorca__dsh-custom-theme-import/3a501cf063b288009cf62d2f9c04c3dd59a2e74f/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -56,9 +52,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 162
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/Juryorca__dsh-custom-theme-import/3a501cf063b288009cf62d2f9c04c3dd59a2e74f/home.png
+  - skin-screenshots/Juryorca__dsh-custom-theme-import/3a501cf063b288009cf62d2f9c04c3dd59a2e74f/conversation.png
+  - skin-screenshots/Juryorca__dsh-custom-theme-import/3a501cf063b288009cf62d2f9c04c3dd59a2e74f/settings.png
+featuredRank: 162
 releaseUpdatedAt: 2026-11-09T07:15:51.549Z
-metadataUpdatedAt: 2026-11-09T07:15:51.549Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-08-18 15:42:51.227000+00:00
-updatedAt: 2026-11-09T07:15:51.549Z
+updatedAt: 2026-11-10T00:42:47.982Z

@@ -36,9 +36,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.png
-  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots1.webp
   - https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots2.webp
@@ -69,9 +66,12 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 154
 starsSnapshot: 164
+marketScreenshots:
+  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.png
+  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/conversation.png
+featuredRank: 154
 releaseUpdatedAt: 2026-11-09T00:12:38.120Z
-metadataUpdatedAt: 2026-11-09T00:12:38.120Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-11-09T07:12:41.083Z
-updatedAt: 2026-11-09T07:12:41.083Z
+updatedAt: 2026-11-10T00:42:47.982Z

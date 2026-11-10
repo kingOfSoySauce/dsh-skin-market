@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/l-vM2k__dsh-ayaka-theme/2a1e0143f22f38f7e86c4cdc323e734cf5b028ba/home.png
-  - skin-screenshots/l-vM2k__dsh-ayaka-theme/2a1e0143f22f38f7e86c4cdc323e734cf5b028ba/conversation.png
-  - skin-screenshots/l-vM2k__dsh-ayaka-theme/2a1e0143f22f38f7e86c4cdc323e734cf5b028ba/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 999
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/l-vM2k__dsh-ayaka-theme/2a1e0143f22f38f7e86c4cdc323e734cf5b028ba/home.png
+  - skin-screenshots/l-vM2k__dsh-ayaka-theme/2a1e0143f22f38f7e86c4cdc323e734cf5b028ba/conversation.png
+  - skin-screenshots/l-vM2k__dsh-ayaka-theme/2a1e0143f22f38f7e86c4cdc323e734cf5b028ba/settings.png
+featuredRank: 999
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:52:12.650Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:12.650Z
+updatedAt: 2026-11-10T00:42:47.982Z

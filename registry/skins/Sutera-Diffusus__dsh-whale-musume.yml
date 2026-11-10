@@ -34,9 +34,6 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.png
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png
   - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/preview-idle-coffee.png
@@ -67,9 +64,12 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 210
+marketScreenshots:
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.png
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/conversation.png
 featuredRank: 1033
-starsSnapshot: 209
 releaseUpdatedAt: 2026-11-09T00:12:38.008Z
-metadataUpdatedAt: 2026-11-09T00:12:38.008Z
-starsUpdatedAt: 2026-11-09T07:12:40.605Z
-updatedAt: 2026-11-09T07:12:40.605Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-10T00:42:47.982Z

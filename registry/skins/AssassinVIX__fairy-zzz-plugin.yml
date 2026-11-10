@@ -33,9 +33,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.png
-  - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/01-boot.png
   - https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/02-greet.png
@@ -69,9 +66,12 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 30
+marketScreenshots:
+  - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.png
+  - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/conversation.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-09T07:12:58.715Z
-metadataUpdatedAt: 2026-11-09T07:12:58.715Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-11-09T07:12:58.715Z
-updatedAt: 2026-11-09T07:12:58.715Z
+updatedAt: 2026-11-10T00:42:47.982Z

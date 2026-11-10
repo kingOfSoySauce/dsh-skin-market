@@ -14,21 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:kendu76/dsh-music-player#172355b147f91ae994631aa4cbd61adfe8a5fb66
-  version: 1.0.3
-  commit: 172355b147f91ae994631aa4cbd61adfe8a5fb66
+  target: github:kendu76/dsh-music-player#89b4e2b4c7effa12226af99a6aee45ae59800694
+  version: 1.0.4
+  commit: 89b4e2b4c7effa12226af99a6aee45ae59800694
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-music-player
-    packageVersion: 1.0.3
-    integrity: sha512-3pYMYug66vXILUNjLUtXy6DjSU6illd0kfM0t9YebUmQGfiHU6AOf67pj38A604zm5SKKXYjuo+jU1RIHEiwfg==
+    packageVersion: 1.0.4
+    integrity: sha512-2WiaDwMR858nN5AMCSW8BAzjmvRFWtegnsese4U7M5XEzGRzN1yQ7cZm2Mn31vNXdxcyLJy0kfxVdy9X0IURPw==
   npm:
     name: dsh-music-player
-    version: 1.0.3
-    integrity: sha512-3pYMYug66vXILUNjLUtXy6DjSU6illd0kfM0t9YebUmQGfiHU6AOf67pj38A604zm5SKKXYjuo+jU1RIHEiwfg==
+    version: 1.0.4
+    integrity: sha512-2WiaDwMR858nN5AMCSW8BAzjmvRFWtegnsese4U7M5XEzGRzN1yQ7cZm2Mn31vNXdxcyLJy0kfxVdy9X0IURPw==
     repository: https://github.com/kendu76/dsh-music-player
-    gitHead: 172355b147f91ae994631aa4cbd61adfe8a5fb66
+    gitHead: 89b4e2b4c7effa12226af99a6aee45ae59800694
 compatibility:
   dsh: unverified
   platform:
@@ -56,19 +56,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 172355b147f91ae994631aa4cbd61adfe8a5fb66
-    packageVersion: 1.0.3
+    commit: 89b4e2b4c7effa12226af99a6aee45ae59800694
+    packageVersion: 1.0.4
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:07:48.200Z
+    checkedAt: 2026-11-10T00:10:44.993Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 21
-releaseUpdatedAt: 2026-11-09T00:13:09.382Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+featuredRank: 0
+releaseUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-27T23:00:28.784Z
-updatedAt: 2026-11-09T00:13:09.382Z
+updatedAt: 2026-11-10T00:42:47.982Z

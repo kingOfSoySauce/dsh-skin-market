@@ -30,10 +30,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/d0ublecl1ck__dsh-csdn-theme/b1c28da000991b84445b3d599447931da2d6e0ad/home.png
-  - skin-screenshots/d0ublecl1ck__dsh-csdn-theme/b1c28da000991b84445b3d599447931da2d6e0ad/conversation.png
-  - skin-screenshots/d0ublecl1ck__dsh-csdn-theme/b1c28da000991b84445b3d599447931da2d6e0ad/settings.png
 screenshots:
   - https://raw.githubusercontent.com/d0ublecl1ck/dsh-csdn-theme/b1c28da000991b84445b3d599447931da2d6e0ad/assets/screenshot-light.png
   - https://raw.githubusercontent.com/d0ublecl1ck/dsh-csdn-theme/b1c28da000991b84445b3d599447931da2d6e0ad/assets/screenshot-dark.png
@@ -63,9 +59,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/d0ublecl1ck__dsh-csdn-theme/b1c28da000991b84445b3d599447931da2d6e0ad/home.png
+  - skin-screenshots/d0ublecl1ck__dsh-csdn-theme/b1c28da000991b84445b3d599447931da2d6e0ad/conversation.png
+  - skin-screenshots/d0ublecl1ck__dsh-csdn-theme/b1c28da000991b84445b3d599447931da2d6e0ad/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-09T00:17:36.959Z
-metadataUpdatedAt: 2026-11-09T00:17:36.959Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T00:17:36.959Z
+updatedAt: 2026-11-10T00:42:47.982Z

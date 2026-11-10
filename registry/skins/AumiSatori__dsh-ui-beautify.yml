@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:AumiSatori/dsh-ui-beautify#952819c4e2986bf4435358b7f4459ac8a6444b5b
-  version: 0.6.0
-  commit: 952819c4e2986bf4435358b7f4459ac8a6444b5b
+  target: github:AumiSatori/dsh-ui-beautify#38ae67b928eacb333596bc345cf3be4628a492aa
+  version: 0.6.1
+  commit: 38ae67b928eacb333596bc345cf3be4628a492aa
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。
@@ -28,10 +28,6 @@ compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png
-  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/conversation.png
-  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/settings.png
 screenshots:
   - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png
   - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/conversation.png
@@ -52,20 +48,24 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 952819c4e2986bf4435358b7f4459ac8a6444b5b
-    packageVersion: 0.6.0
+    commit: 38ae67b928eacb333596bc345cf3be4628a492aa
+    packageVersion: 0.6.1
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.2 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-09T07:13:24.716Z
+    checkedAt: 2026-11-10T00:11:07.728Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 9
-releaseUpdatedAt: 2026-11-09T07:13:25.383Z
-metadataUpdatedAt: 2026-11-09T07:13:25.383Z
+marketScreenshots:
+  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png
+  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/conversation.png
+  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/settings.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-11-09T00:13:41.321Z
-updatedAt: 2026-11-09T07:13:25.383Z
+updatedAt: 2026-11-10T00:42:47.982Z

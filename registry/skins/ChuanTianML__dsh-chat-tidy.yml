@@ -33,8 +33,6 @@ compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/ChuanTianML__dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/ChuanTianML/dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/docs/images/tidy-work-working.png
   - https://raw.githubusercontent.com/ChuanTianML/dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/docs/images/tidy-work-completed.png
@@ -67,9 +65,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 995
 starsSnapshot: 5
+marketScreenshots:
+  - skin-screenshots/ChuanTianML__dsh-chat-tidy/a22a7c973ecc8fbf33265c1e919d8445a2aff0da/conversation.png
+featuredRank: 995
 releaseUpdatedAt: 2026-10-25T19:44:52.681Z
-metadataUpdatedAt: 2026-10-26T01:51:18.673Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:51:18.673Z
+updatedAt: 2026-11-10T00:42:47.982Z

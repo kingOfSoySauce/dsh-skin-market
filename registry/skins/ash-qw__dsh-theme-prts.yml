@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ash-qw/dsh-theme-prts#85b1ae8c4ff6207ab57de568d6210c03f2dcb4f4
-  version: 3.1.0
-  commit: 85b1ae8c4ff6207ab57de568d6210c03f2dcb4f4
+  target: github:ash-qw/dsh-theme-prts#21078b556ef9417291e31bff3258d178a49f9609
+  version: 3.2.0
+  commit: 21078b556ef9417291e31bff3258d178a49f9609
   desktop:
     mode: managed
     registry: npm
     packageName: "@ash-qw/dsh-theme-prts"
-    packageVersion: 3.1.0
-    integrity: sha512-l2EEa9BwG/aR/rey9LmGLZAZsYidkHvGmsRXsKeKHZepvNvvgnPQP6noUKJb2CYNEWUPcJaMd0flLke53e85Yw==
+    packageVersion: 3.2.0
+    integrity: sha512-579MoMfNi+kxvYr5qCOsq4y9I+TlbW7a0FSkzO/QYVZ3HYPIws7J/YwoPTnSibk1aB3qJVXDAL3rtd4A2nmsTw==
   npm:
     name: "@ash-qw/dsh-theme-prts"
-    version: 3.1.0
-    integrity: sha512-l2EEa9BwG/aR/rey9LmGLZAZsYidkHvGmsRXsKeKHZepvNvvgnPQP6noUKJb2CYNEWUPcJaMd0flLke53e85Yw==
+    version: 3.2.0
+    integrity: sha512-579MoMfNi+kxvYr5qCOsq4y9I+TlbW7a0FSkzO/QYVZ3HYPIws7J/YwoPTnSibk1aB3qJVXDAL3rtd4A2nmsTw==
     repository: https://github.com/ash-qw/dsh-theme-prts
-    gitHead: 85b1ae8c4ff6207ab57de568d6210c03f2dcb4f4
+    gitHead: 21078b556ef9417291e31bff3258d178a49f9609
 compatibility:
   dsh: unverified
   platform:
@@ -55,19 +55,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 85b1ae8c4ff6207ab57de568d6210c03f2dcb4f4
-    packageVersion: 3.1.0
+    commit: 21078b556ef9417291e31bff3258d178a49f9609
+    packageVersion: 3.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-09T00:13:13.580Z
+    checkedAt: 2026-11-10T00:10:50.295Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
-featuredRank: 1090
 starsSnapshot: 16
-releaseUpdatedAt: 2026-11-09T00:13:15.917Z
-metadataUpdatedAt: 2026-11-09T00:13:15.917Z
+featuredRank: 1090
+releaseUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-11-08T00:17:43.373Z
-updatedAt: 2026-11-09T00:13:15.917Z
+updatedAt: 2026-11-10T00:42:47.982Z
