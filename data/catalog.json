@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T09:27:12.259Z",
+  "generatedAt": "2026-11-10T12:07:02.267Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -67179,6 +67179,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "2856964164.lab.deepseek": {
+        "name": {
+          "zh": "DT-OS 皮肤",
+          "en": "DT-OS Skin"
+        },
+        "description": {
+          "zh": "「底特律：变人」风格主题：用 theme.overrideTokens 覆盖 14 个主题令牌，深色为深蓝黑底加冷蓝高光，浅色为冷灰白底加藏蓝强调；空白会话页头像位换成带四个刻度点的断口圆环品牌标记，卸载后恢复宿主主题。",
+          "en": "Detroit-inspired theme that overrides 14 theme tokens: deep blue-black with cool blue highlights in dark mode, cool grey-white with navy accents in light mode, plus a split-ring brand mark on the empty conversation page; removing the plugin restores the host theme."
+        },
+        "descriptionPolicy": "show"
+      },
       "4444hao.dsh-codefall": {
         "name": {
           "zh": "Codefall 数字雨与绿色主题",
@@ -71373,6 +71384,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "richyhu.dsh.codex.ui": {
+        "name": {
+          "zh": "Codex 风格界面外壳",
+          "en": "Codex-style UI Shell"
+        },
+        "description": {
+          "zh": "把 DSH Web 界面改成 Codex 风格导航外壳：常驻 56px 图标栏加会话/项目列，会话与输入框保持原样；含插件自有品牌位、合并面板、原生毛玻璃、0.36s 折叠动效、账号菜单和用量面板（tokens、峰值、连续天数、365 天热力图）。",
+          "en": "Codex-style navigation shell for the DSH Web UI: a permanent 56px icon rail plus the session/project column, joined panels, native frosted glass, a 0.36s collapse motion, an account menu and a usage dashboard (tokens, peak, streaks, 365-day heatmap); the conversation and composer stay untouched."
+        },
+        "descriptionPolicy": "show"
+      },
       "rindbeans.codex-ui": {
         "name": {
           "zh": "codex-ui",
@@ -71381,6 +71403,17 @@
         "description": {
           "zh": "codex-ui 将 DSH Web 的窗口边缘、侧栏分界、右栏、输入区、浅深色调色板和设置模态框按 Codex 风格重做；默认可接管模型选择器，提供按提供方分组的模型列表与可拖动、可用 ←/→/Home/End 操作的推理功率轨，关闭 `modelPicker` 后立即交回宿主原生菜单。它还提供 Trajectory 视图的“← 对话”出口，以及主题、强调色、字体、半透明侧栏和对比度配置。设置模态层只使用宿主锚点，不移动或复制宿主节点；主题覆盖默认空值时不产生覆盖，卸载后恢复下层主题。它是社区插件，并非 DeepSeek 官方产品。目标宿主为 DSH `0.1.7-rc.2`、Node ≥22；README 说明最新增量并未全部在真实 `dsh web` 实例上验证，宿主结构不匹配时部分层会告警并跳过。MIT 许可。",
           "en": "codex-ui restyles DSH Web’s window edges, sidebar dividers, right panel, composer, light/dark palettes, and settings modal to resemble Codex. Its model-picker face B is enabled by default and supplies provider-grouped models plus a draggable reasoning power rail with ←/→/Home/End controls; turning off `modelPicker` hands the seat back to the host’s native menu. It also adds a “← Chat” exit for Trajectory, along with settings for theme, accent, fonts, translucent sidebar, and contrast. The settings layer uses host anchors without moving or cloning host nodes; empty overrides leave the underlying theme untouched, and uninstall removes the layer. This is a community plugin, not an official DeepSeek product. It targets DSH `0.1.7-rc.2` and Node ≥22; the README notes that the newest additions were not all tested in a live `dsh web` instance, and layers warn and skip when host structure does not match. MIT licensed."
+        },
+        "descriptionPolicy": "show"
+      },
+      "ririko2.lllj.dsh.skin": {
+        "name": {
+          "zh": "LimeLight Lemonade Jam 皮肤",
+          "en": "LimeLight Lemonade Jam Skin"
+        },
+        "description": {
+          "zh": "《ライムライト・レモネードジャム》主题皮肤：昼夜双主题跟随系统并可手动切换，每个会话首次打开时分配并固定一位角色（共六位），重绘消息、工具行与任务完成卡，背景为 1920×1080 剧情 CG 加分级磨砂。",
+          "en": "LimeLight Lemonade Jam theme with day/night palettes, a character assigned and pinned per conversation (six in total), redrawn messages, tool rows and task cards, and 1920×1080 story CGs as a graded, frosted background."
         },
         "descriptionPolicy": "show"
       },

@@ -10841,6 +10841,60 @@
       },
       "override": true,
       "nameSource": "repository-evidence"
+    },
+    "2856964164.lab.deepseek": {
+      "name": {
+        "zh": "DT-OS 皮肤",
+        "en": "DT-OS Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "「底特律：变人」风格主题：用 theme.overrideTokens 覆盖 14 个主题令牌，深色为深蓝黑底加冷蓝高光，浅色为冷灰白底加藏蓝强调；空白会话页头像位换成带四个刻度点的断口圆环品牌标记，卸载后恢复宿主主题。",
+        "en": "Detroit-inspired theme that overrides 14 theme tokens: deep blue-black with cool blue highlights in dark mode, cool grey-white with navy accents in light mode, plus a split-ring brand mark on the empty conversation page; removing the plugin restores the host theme."
+      },
+      "source": {
+        "kind": "repository-evidence",
+        "hash": "4341c69e377802c6f213f80d13d060a857efd9debed411423aeb545514a5eeb2",
+        "approvedAt": "2026-11-10"
+      },
+      "override": true,
+      "nameSource": "repository-evidence"
+    },
+    "richyhu.dsh.codex.ui": {
+      "name": {
+        "zh": "Codex 风格界面外壳",
+        "en": "Codex-style UI Shell"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 DSH Web 界面改成 Codex 风格导航外壳：常驻 56px 图标栏加会话/项目列，会话与输入框保持原样；含插件自有品牌位、合并面板、原生毛玻璃、0.36s 折叠动效、账号菜单和用量面板（tokens、峰值、连续天数、365 天热力图）。",
+        "en": "Codex-style navigation shell for the DSH Web UI: a permanent 56px icon rail plus the session/project column, joined panels, native frosted glass, a 0.36s collapse motion, an account menu and a usage dashboard (tokens, peak, streaks, 365-day heatmap); the conversation and composer stay untouched."
+      },
+      "source": {
+        "kind": "repository-evidence",
+        "hash": "15e5902aec4177a71afe68e322d68c72d58ef4c9f3be2ca7ea430aad9ab2fa53",
+        "approvedAt": "2026-11-10"
+      },
+      "override": true,
+      "nameSource": "repository-evidence"
+    },
+    "ririko2.lllj.dsh.skin": {
+      "name": {
+        "zh": "LimeLight Lemonade Jam 皮肤",
+        "en": "LimeLight Lemonade Jam Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "《ライムライト・レモネードジャム》主题皮肤：昼夜双主题跟随系统并可手动切换，每个会话首次打开时分配并固定一位角色（共六位），重绘消息、工具行与任务完成卡，背景为 1920×1080 剧情 CG 加分级磨砂。",
+        "en": "LimeLight Lemonade Jam theme with day/night palettes, a character assigned and pinned per conversation (six in total), redrawn messages, tool rows and task cards, and 1920×1080 story CGs as a graded, frosted background."
+      },
+      "source": {
+        "kind": "repository-evidence",
+        "hash": "a9bc8d6168cf045b9766b34e36e3ed63d2703f7a92e81fc940abc1208772a628",
+        "approvedAt": "2026-11-10"
+      },
+      "override": true,
+      "nameSource": "repository-evidence"
     }
   }
 }
