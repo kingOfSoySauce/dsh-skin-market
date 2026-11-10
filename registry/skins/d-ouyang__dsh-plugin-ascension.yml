@@ -31,10 +31,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/d-ouyang__dsh-plugin-ascension/3e9e72bf7bdf59b45d8a616a198210993c40010e/home.png
-  - skin-screenshots/d-ouyang__dsh-plugin-ascension/3e9e72bf7bdf59b45d8a616a198210993c40010e/conversation.png
-  - skin-screenshots/d-ouyang__dsh-plugin-ascension/3e9e72bf7bdf59b45d8a616a198210993c40010e/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -62,9 +58,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/d-ouyang__dsh-plugin-ascension/3e9e72bf7bdf59b45d8a616a198210993c40010e/home.png
+  - skin-screenshots/d-ouyang__dsh-plugin-ascension/3e9e72bf7bdf59b45d8a616a198210993c40010e/conversation.png
+  - skin-screenshots/d-ouyang__dsh-plugin-ascension/3e9e72bf7bdf59b45d8a616a198210993c40010e/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-26T01:52:44.129Z
-metadataUpdatedAt: 2026-10-26T01:52:44.129Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:44.129Z
+updatedAt: 2026-11-10T00:42:47.982Z

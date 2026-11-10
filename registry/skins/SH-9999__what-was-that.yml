@@ -32,10 +32,6 @@ compatibility:
   dsh: ">=0.1.6-alpha.2"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/SH-9999__what-was-that/c49d76f01a07bef65c40d4d4956fc4968dca8cd2/home.png
-  - skin-screenshots/SH-9999__what-was-that/c49d76f01a07bef65c40d4d4956fc4968dca8cd2/conversation.png
-  - skin-screenshots/SH-9999__what-was-that/c49d76f01a07bef65c40d4d4956fc4968dca8cd2/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -63,9 +59,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 998
 starsSnapshot: 2
+marketScreenshots:
+  - skin-screenshots/SH-9999__what-was-that/c49d76f01a07bef65c40d4d4956fc4968dca8cd2/home.png
+  - skin-screenshots/SH-9999__what-was-that/c49d76f01a07bef65c40d4d4956fc4968dca8cd2/conversation.png
+  - skin-screenshots/SH-9999__what-was-that/c49d76f01a07bef65c40d4d4956fc4968dca8cd2/settings.png
+featuredRank: 998
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:51.093Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:51:51.093Z
+updatedAt: 2026-11-10T00:42:47.982Z

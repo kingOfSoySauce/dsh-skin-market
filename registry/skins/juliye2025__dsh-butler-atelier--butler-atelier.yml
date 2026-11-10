@@ -28,10 +28,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/juliye2025__dsh-butler-atelier--butler-atelier/ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/juliye2025__dsh-butler-atelier--butler-atelier/ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/juliye2025__dsh-butler-atelier--butler-atelier/ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a/settings.png
 screenshots:
   - https://raw.githubusercontent.com/juliye2025/dsh-butler-atelier/ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a/butler-atelier/preview/chibi-mascot.webp
   - https://raw.githubusercontent.com/juliye2025/dsh-butler-atelier/ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a/butler-atelier/preview/light-mode.jpg
@@ -62,9 +58,13 @@ health:
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
-featuredRank: 253
 starsSnapshot: 2
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/juliye2025__dsh-butler-atelier--butler-atelier/ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/juliye2025__dsh-butler-atelier--butler-atelier/ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/juliye2025__dsh-butler-atelier--butler-atelier/ce9dd4e6cbe48b69075368d9eadbe111b81b5b6a/settings.png
+featuredRank: 253
 releaseUpdatedAt: 2026-08-23T10:25:59.733Z
-metadataUpdatedAt: 2026-11-09T00:15:04.886Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-21T22:17:56.762Z
-updatedAt: 2026-11-09T00:15:04.886Z
+updatedAt: 2026-11-10T00:42:47.982Z

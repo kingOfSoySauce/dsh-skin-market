@@ -24,10 +24,6 @@ compatibility:
   dsh: ^0.1.1-rc.1
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/nxz1026__SinglePlayer/73e552c5fbf57016aceb3677fa26092e9e1fbd2b/home.png
-  - skin-screenshots/nxz1026__SinglePlayer/73e552c5fbf57016aceb3677fa26092e9e1fbd2b/conversation.png
-  - skin-screenshots/nxz1026__SinglePlayer/73e552c5fbf57016aceb3677fa26092e9e1fbd2b/settings.png
 screenshots:
   - skin-screenshots/nxz1026__SinglePlayer/73e552c5fbf57016aceb3677fa26092e9e1fbd2b/home.gif
 review:
@@ -56,9 +52,13 @@ health:
 license:
   code: GPL-3.0-only
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 2
+marketScreenshots:
+  - skin-screenshots/nxz1026__SinglePlayer/73e552c5fbf57016aceb3677fa26092e9e1fbd2b/home.png
+  - skin-screenshots/nxz1026__SinglePlayer/73e552c5fbf57016aceb3677fa26092e9e1fbd2b/conversation.png
+  - skin-screenshots/nxz1026__SinglePlayer/73e552c5fbf57016aceb3677fa26092e9e1fbd2b/settings.png
+featuredRank: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-11-09T00:15:15.132Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-11-09T00:15:15.132Z
+updatedAt: 2026-11-10T00:42:47.982Z

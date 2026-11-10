@@ -31,10 +31,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/home.png
-  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/conversation.png
-  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -62,9 +58,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 999
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/home.png
+  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/conversation.png
+  - skin-screenshots/sorry123maker__dsh-salary-cat/072e1f9574868dc15c9abc077f6f3f6e1b2a7da2/settings.png
+featuredRank: 999
 releaseUpdatedAt: 2026-10-26T01:52:24.335Z
-metadataUpdatedAt: 2026-10-26T01:52:24.335Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:24.335Z
+updatedAt: 2026-11-10T00:42:47.982Z

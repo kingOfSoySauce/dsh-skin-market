@@ -25,10 +25,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/KimFischer99__DeepSeek-Harness-Desktop--plugins--anthropic-theme/15c79c9267c2e5160111e030e49370d2bb3dc41b/home.png
-  - skin-screenshots/KimFischer99__DeepSeek-Harness-Desktop--plugins--anthropic-theme/15c79c9267c2e5160111e030e49370d2bb3dc41b/conversation.png
-  - skin-screenshots/KimFischer99__DeepSeek-Harness-Desktop--plugins--anthropic-theme/15c79c9267c2e5160111e030e49370d2bb3dc41b/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -56,9 +52,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/KimFischer99__DeepSeek-Harness-Desktop--plugins--anthropic-theme/15c79c9267c2e5160111e030e49370d2bb3dc41b/home.png
+  - skin-screenshots/KimFischer99__DeepSeek-Harness-Desktop--plugins--anthropic-theme/15c79c9267c2e5160111e030e49370d2bb3dc41b/conversation.png
+  - skin-screenshots/KimFischer99__DeepSeek-Harness-Desktop--plugins--anthropic-theme/15c79c9267c2e5160111e030e49370d2bb3dc41b/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:52:54.686Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:54.686Z
+updatedAt: 2026-11-10T00:42:47.982Z

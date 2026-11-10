@@ -26,10 +26,6 @@ compatibility:
   dsh: ">=0.0.1-rc.1"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Sim-xia__dsh-vscode-theme/1e22fa74783f5f84e7ecb8d7b96fb2997dc9d4f8/home.png
-  - skin-screenshots/Sim-xia__dsh-vscode-theme/1e22fa74783f5f84e7ecb8d7b96fb2997dc9d4f8/conversation.png
-  - skin-screenshots/Sim-xia__dsh-vscode-theme/1e22fa74783f5f84e7ecb8d7b96fb2997dc9d4f8/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -57,9 +53,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 35
 starsSnapshot: 4
+marketScreenshots:
+  - skin-screenshots/Sim-xia__dsh-vscode-theme/1e22fa74783f5f84e7ecb8d7b96fb2997dc9d4f8/home.png
+  - skin-screenshots/Sim-xia__dsh-vscode-theme/1e22fa74783f5f84e7ecb8d7b96fb2997dc9d4f8/conversation.png
+  - skin-screenshots/Sim-xia__dsh-vscode-theme/1e22fa74783f5f84e7ecb8d7b96fb2997dc9d4f8/settings.png
+featuredRank: 35
 releaseUpdatedAt: 2026-08-23T05:32:20.972Z
-metadataUpdatedAt: 2026-11-09T07:14:06.805Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-27T23:00:59.621Z
-updatedAt: 2026-11-09T07:14:06.805Z
+updatedAt: 2026-11-10T00:42:47.982Z

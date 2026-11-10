@@ -14,15 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:lsjspl/dsh-reel#d8feaf7500d39f880150142bdac4de4aedd08aa2
-  version: 0.2.0
-  commit: d8feaf7500d39f880150142bdac4de4aedd08aa2
+  target: github:lsjspl/dsh-reel#78edd90b2318b331e509ab4e90e903112cce8942
+  version: 0.2.1
+  commit: 78edd90b2318b331e509ab4e90e903112cce8942
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-reel
-    packageVersion: 0.2.0
-    integrity: sha512-T05nOwCqET74USSfXTMQ3tHQiS9y/VDNmXcnUoHyKJsz/NafASJYhxYKITu+otsISEvz/YWuP82cusRfoqUd4Q==
+    packageVersion: 0.2.1
+    integrity: sha512-5od5ilfvA+bMmrYrUkSrRyaUgHGIc2+kzck6v0xGX5YqvblrihUxteo/R+sRla7IXkdjFkIGVHTr9xOGuC+FzQ==
+  npm:
+    name: dsh-reel
+    version: 0.2.1
+    integrity: sha512-5od5ilfvA+bMmrYrUkSrRyaUgHGIc2+kzck6v0xGX5YqvblrihUxteo/R+sRla7IXkdjFkIGVHTr9xOGuC+FzQ==
+    repository: https://github.com/lsjspl/dsh-reel
+    gitHead: 78edd90b2318b331e509ab4e90e903112cce8942
 compatibility:
   dsh: ">=0.2.0-rc.1 <0.3.0-0"
   platform:
@@ -50,20 +56,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: d8feaf7500d39f880150142bdac4de4aedd08aa2
-    packageVersion: 0.2.0
+    commit: 78edd90b2318b331e509ab4e90e903112cce8942
+    packageVersion: 0.2.1
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-07T05:33:58.014Z
+    checkedAt: 2026-11-10T00:12:55.116Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-09T00:15:11.787Z
-metadataUpdatedAt: 2026-11-07T05:34:00.524Z
+featuredRank: 0
+releaseUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-11-09T00:15:11.787Z
+updatedAt: 2026-11-10T00:42:47.982Z

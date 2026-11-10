@@ -24,8 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/hzhgino__dsh-caonima/c31db47091d45d78f546eefca5a1e557993f75f4/home.png
 screenshots:
   - https://raw.githubusercontent.com/hzhgino/dsh-caonima/c31db47091d45d78f546eefca5a1e557993f75f4/preview.jpg
 listScreenshot: https://raw.githubusercontent.com/hzhgino/dsh-caonima/c31db47091d45d78f546eefca5a1e557993f75f4/preview.jpg
@@ -54,9 +52,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/hzhgino__dsh-caonima/c31db47091d45d78f546eefca5a1e557993f75f4/home.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:52:51.021Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:51.021Z
+updatedAt: 2026-11-10T00:42:47.982Z

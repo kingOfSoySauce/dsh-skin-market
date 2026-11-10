@@ -26,10 +26,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -57,9 +53,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 122
 starsSnapshot: 4
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/tiantyu__dsh-skin-toggle/781fd4605756503f9635d6083686e079b5a8944f/settings.png
+featuredRank: 122
 releaseUpdatedAt: 2026-11-09T07:14:08.647Z
-metadataUpdatedAt: 2026-11-09T07:14:08.647Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-11-09T07:14:08.647Z
-updatedAt: 2026-11-09T07:14:08.647Z
+updatedAt: 2026-11-10T00:42:47.982Z

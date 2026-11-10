@@ -24,8 +24,6 @@ compatibility:
   dsh: ">=0.1.1-rc.1"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Stellum-Waq__dsh-pet-ronaldo/db09e4d59a99c1916fef06d444a0f2a562e6ddc2/home.png
 screenshots:
   - https://raw.githubusercontent.com/Stellum-Waq/dsh-pet-ronaldo/db09e4d59a99c1916fef06d444a0f2a562e6ddc2/docs/preview.png
   - https://raw.githubusercontent.com/Stellum-Waq/dsh-pet-ronaldo/db09e4d59a99c1916fef06d444a0f2a562e6ddc2/screenshots/demo-idle.png
@@ -58,9 +56,11 @@ license:
   code: MIT
   commercialUse: true
   notice: 代码MIT；默认宠物素材另适用DPSL-1.0。额外siu.mp3不在该素材许可范围内。
-featuredRank: 994
 starsSnapshot: 6
+marketScreenshots:
+  - skin-screenshots/Stellum-Waq__dsh-pet-ronaldo/db09e4d59a99c1916fef06d444a0f2a562e6ddc2/home.png
+featuredRank: 994
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:17.344Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:51:17.344Z
+updatedAt: 2026-11-10T00:42:47.982Z

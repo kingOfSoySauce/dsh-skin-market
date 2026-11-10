@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-09**：[柠檬水工厂 · 昼夜双模](https://github.com/Ririko2/lllj-dsh-skin)（Ririko2）——《ライムライト・レモネードジャム》主题：纸白/深蓝昼夜双模，六位角色按会话分配，官方 SD 头像与贴纸、游戏原文台词完成卡，四套随机分割线。详见[收录日志](./docs/recently-added.md#recent-2026-11-09-ririko2-lllj-dsh-skin)。
+- **2026-11-10**：[skins](https://github.com/iasiv5/skins)（iasiv5）——dsh-skins — DSH Web 多皮肤插件。详见[收录日志](./docs/recently-added.md#recent-2026-11-10-iasiv5-skins)。
 
 
 <a id="manual-update"></a>

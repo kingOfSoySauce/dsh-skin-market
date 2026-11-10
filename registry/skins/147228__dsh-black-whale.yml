@@ -25,10 +25,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/147228__dsh-xiaoyao-skins--packages--skins--black-whale/174f65d9135e932383a8f3a19fa522f16875a139/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/147228__dsh-xiaoyao-skins--packages--skins--black-whale/174f65d9135e932383a8f3a19fa522f16875a139/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/147228__dsh-xiaoyao-skins--packages--skins--black-whale/174f65d9135e932383a8f3a19fa522f16875a139/settings.png
 screenshots:
   - https://raw.githubusercontent.com/147228/dsh-xiaoyao-skins/174f65d9135e932383a8f3a19fa522f16875a139/packages/skins/black-whale/preview/dark.jpg
   - https://raw.githubusercontent.com/147228/dsh-xiaoyao-skins/174f65d9135e932383a8f3a19fa522f16875a139/packages/skins/ocean/preview/dark.jpg
@@ -62,9 +58,13 @@ health:
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
-featuredRank: 216
 starsSnapshot: 23
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/147228__dsh-xiaoyao-skins--packages--skins--black-whale/174f65d9135e932383a8f3a19fa522f16875a139/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/147228__dsh-xiaoyao-skins--packages--skins--black-whale/174f65d9135e932383a8f3a19fa522f16875a139/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/147228__dsh-xiaoyao-skins--packages--skins--black-whale/174f65d9135e932383a8f3a19fa522f16875a139/settings.png
+featuredRank: 216
 releaseUpdatedAt: 2026-11-09T07:13:05.746Z
-metadataUpdatedAt: 2026-11-09T07:13:05.746Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-09-13T21:23:38.213Z
-updatedAt: 2026-11-09T07:13:05.746Z
+updatedAt: 2026-11-10T00:42:47.982Z

@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.1.2-rc.1"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/home.png
-  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/conversation.png
-  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 998
 starsSnapshot: 2
+marketScreenshots:
+  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/home.png
+  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/conversation.png
+  - skin-screenshots/victor10035445__dsh-v-theme/160f84354af237fa1f305b2337b61261a81b75c5/settings.png
+featuredRank: 998
 releaseUpdatedAt: 2026-11-08T00:17:47.024Z
-metadataUpdatedAt: 2026-11-08T00:17:47.024Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-08T00:17:47.024Z
+updatedAt: 2026-11-10T00:42:47.982Z

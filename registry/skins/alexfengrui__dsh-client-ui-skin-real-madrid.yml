@@ -30,10 +30,6 @@ compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/home.png
-  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/conversation.png
-  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -63,9 +59,13 @@ license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 代码MIT；内嵌队徽CC BY-NC-SA 4.0，须署名、非商业及相同方式共享；球场照片另适用Unsplash License。
-featuredRank: 999
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/home.png
+  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/conversation.png
+  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/settings.png
+featuredRank: 999
 releaseUpdatedAt: 2026-11-09T07:15:21.725Z
-metadataUpdatedAt: 2026-11-09T07:15:21.725Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T07:15:21.725Z
+updatedAt: 2026-11-10T00:42:47.982Z

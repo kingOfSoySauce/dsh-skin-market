@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/hanyi7867069-create__dsh-moonrise/4e8029680754eafa5fa738fea3f03ac2c605c138/home.png
-  - skin-screenshots/hanyi7867069-create__dsh-moonrise/4e8029680754eafa5fa738fea3f03ac2c605c138/conversation.png
-  - skin-screenshots/hanyi7867069-create__dsh-moonrise/4e8029680754eafa5fa738fea3f03ac2c605c138/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 178
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/hanyi7867069-create__dsh-moonrise/4e8029680754eafa5fa738fea3f03ac2c605c138/home.png
+  - skin-screenshots/hanyi7867069-create__dsh-moonrise/4e8029680754eafa5fa738fea3f03ac2c605c138/conversation.png
+  - skin-screenshots/hanyi7867069-create__dsh-moonrise/4e8029680754eafa5fa738fea3f03ac2c605c138/settings.png
+featuredRank: 178
 releaseUpdatedAt: 2026-08-23T05:33:41.338Z
-metadataUpdatedAt: 2026-11-09T00:17:51.836Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-09-09T21:40:21.587Z
-updatedAt: 2026-11-09T00:17:51.836Z
+updatedAt: 2026-11-10T00:42:47.982Z

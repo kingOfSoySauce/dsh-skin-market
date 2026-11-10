@@ -33,10 +33,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/doitian__dsh-music/aee0390bd2145f7d55fae684e0fe5f26ddeda4b7/home.png
-  - skin-screenshots/doitian__dsh-music/aee0390bd2145f7d55fae684e0fe5f26ddeda4b7/conversation.png
-  - skin-screenshots/doitian__dsh-music/aee0390bd2145f7d55fae684e0fe5f26ddeda4b7/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -64,9 +60,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/doitian__dsh-music/aee0390bd2145f7d55fae684e0fe5f26ddeda4b7/home.png
+  - skin-screenshots/doitian__dsh-music/aee0390bd2145f7d55fae684e0fe5f26ddeda4b7/conversation.png
+  - skin-screenshots/doitian__dsh-music/aee0390bd2145f7d55fae684e0fe5f26ddeda4b7/settings.png
+featuredRank: 0
 releaseUpdatedAt: 2026-11-09T00:15:55.970Z
-metadataUpdatedAt: 2026-11-09T00:15:55.970Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-11-07T05:33:38.409Z
-updatedAt: 2026-11-09T00:15:55.970Z
+updatedAt: 2026-11-10T00:42:47.982Z

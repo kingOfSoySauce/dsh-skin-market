@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.2.0 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/home.png
-  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/conversation.png
-  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/settings.png
 screenshots:
   - https://raw.githubusercontent.com/CN-Mg/dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/assets/icon.png
   - https://raw.githubusercontent.com/CN-Mg/dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/assets/preview.png
@@ -59,9 +55,13 @@ license:
   code: MIT
   commercialUse: true
   notice: 代码MIT；角色美术CC BY-NC-SA 4.0，须署名、非商业使用并以相同方式共享。
-featuredRank: 999
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/home.png
+  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/conversation.png
+  - skin-screenshots/CN-Mg__dsh_infj_pet/8895eebca0f8df5c1e8837b545c85fa0b627786f/settings.png
+featuredRank: 999
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:52:01.573Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:01.573Z
+updatedAt: 2026-11-10T00:42:47.982Z

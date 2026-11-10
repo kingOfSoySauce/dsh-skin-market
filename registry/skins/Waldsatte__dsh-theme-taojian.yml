@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Waldsatte__dsh-theme-taojian/ec2b237a94dad0aa183c1c361beaa7771fdc3ebc/home.png
-  - skin-screenshots/Waldsatte__dsh-theme-taojian/ec2b237a94dad0aa183c1c361beaa7771fdc3ebc/conversation.png
-  - skin-screenshots/Waldsatte__dsh-theme-taojian/ec2b237a94dad0aa183c1c361beaa7771fdc3ebc/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 999
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/Waldsatte__dsh-theme-taojian/ec2b237a94dad0aa183c1c361beaa7771fdc3ebc/home.png
+  - skin-screenshots/Waldsatte__dsh-theme-taojian/ec2b237a94dad0aa183c1c361beaa7771fdc3ebc/conversation.png
+  - skin-screenshots/Waldsatte__dsh-theme-taojian/ec2b237a94dad0aa183c1c361beaa7771fdc3ebc/settings.png
+featuredRank: 999
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:52:28.001Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:28.001Z
+updatedAt: 2026-11-10T00:42:47.982Z

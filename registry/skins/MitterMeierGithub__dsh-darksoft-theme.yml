@@ -23,10 +23,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MitterMeierGithub__dsh-darksoft-theme/5c8fc05e545d7e135be7afc786d00ba0b160b3c5/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MitterMeierGithub__dsh-darksoft-theme/5c8fc05e545d7e135be7afc786d00ba0b160b3c5/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MitterMeierGithub__dsh-darksoft-theme/5c8fc05e545d7e135be7afc786d00ba0b160b3c5/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 1
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MitterMeierGithub__dsh-darksoft-theme/5c8fc05e545d7e135be7afc786d00ba0b160b3c5/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MitterMeierGithub__dsh-darksoft-theme/5c8fc05e545d7e135be7afc786d00ba0b160b3c5/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MitterMeierGithub__dsh-darksoft-theme/5c8fc05e545d7e135be7afc786d00ba0b160b3c5/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-08-26T04:27:35.751Z
-metadataUpdatedAt: 2026-08-26T04:27:35.751Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-09-09T21:39:56.188Z
-updatedAt: 2026-09-09T21:39:56.188Z
+updatedAt: 2026-11-10T00:42:47.982Z

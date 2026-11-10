@@ -32,10 +32,6 @@ compatibility:
   dsh: 0.1.7-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.png
-  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/conversation.png
-  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/settings.png
 screenshots:
   - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.gif
   - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/preset-compat-deepsea-balanced.gif
@@ -72,9 +68,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 20
+marketScreenshots:
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.png
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/conversation.png
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-09T07:13:07.840Z
-metadataUpdatedAt: 2026-11-09T07:13:07.840Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-11-03T19:20:00+08:00
-updatedAt: 2026-11-09T07:13:07.840Z
+updatedAt: 2026-11-10T00:42:47.982Z
