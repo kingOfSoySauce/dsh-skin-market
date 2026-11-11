@@ -28,10 +28,6 @@ compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png
-  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/conversation.png
-  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/settings.png
 screenshots:
   - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png
   - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/conversation.png
@@ -63,9 +59,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 9
+marketScreenshots:
+  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png
+  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/conversation.png
+  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-11T00:07:58.680Z
-metadataUpdatedAt: 2026-11-11T00:07:58.680Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-11-09T00:13:41.321Z
-updatedAt: 2026-11-11T00:07:58.680Z
+updatedAt: 2026-11-11T13:17:15.192Z

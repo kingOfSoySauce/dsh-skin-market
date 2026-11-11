@@ -52,14 +52,14 @@ health:
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-10T12:27:11.351Z
+    checkedAt: 2026-11-10T00:11:03.754Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1124
 starsSnapshot: 10
+featuredRank: 1124
 releaseUpdatedAt: 2026-11-11T06:41:11.005Z
-metadataUpdatedAt: 2026-11-11T06:41:11.005Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-11-11T06:41:11.005Z
-updatedAt: 2026-11-11T06:41:11.005Z
+updatedAt: 2026-11-11T13:17:15.192Z

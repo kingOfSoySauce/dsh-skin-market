@@ -33,7 +33,6 @@ screenshots:
   - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/home.png
   - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/conversation.png
   - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/settings.png
-listScreenshot: skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/launch.gif
 review:
   compatibility: unverified
   preview: verified
@@ -55,14 +54,15 @@ health:
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-10T12:26:50.705Z
+    checkedAt: 2026-11-11T00:07:44.230Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1131
 starsSnapshot: 31
+listScreenshot: skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/launch.gif
+featuredRank: 1131
 releaseUpdatedAt: 2026-11-11T06:41:11.005Z
-metadataUpdatedAt: 2026-11-11T06:41:11.005Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-11-11T06:41:11.005Z
-updatedAt: 2026-11-11T06:41:11.005Z
+updatedAt: 2026-11-11T13:17:15.192Z

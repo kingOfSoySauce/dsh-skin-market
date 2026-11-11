@@ -26,10 +26,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/RayYeung1989__claude-parchment-theme/824cef053f1cabcfaca93ae6b63261f66279f238/home.png
-  - skin-screenshots/RayYeung1989__claude-parchment-theme/824cef053f1cabcfaca93ae6b63261f66279f238/conversation.png
-  - skin-screenshots/RayYeung1989__claude-parchment-theme/824cef053f1cabcfaca93ae6b63261f66279f238/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -58,9 +54,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 91
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/RayYeung1989__claude-parchment-theme/824cef053f1cabcfaca93ae6b63261f66279f238/home.png
+  - skin-screenshots/RayYeung1989__claude-parchment-theme/824cef053f1cabcfaca93ae6b63261f66279f238/conversation.png
+  - skin-screenshots/RayYeung1989__claude-parchment-theme/824cef053f1cabcfaca93ae6b63261f66279f238/settings.png
+featuredRank: 91
 releaseUpdatedAt: 2026-11-09T07:16:12.190Z
-metadataUpdatedAt: 2026-11-11T00:09:06.695Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-11-09T07:16:12.190Z
-updatedAt: 2026-11-11T00:09:06.695Z
+updatedAt: 2026-11-11T13:17:15.192Z

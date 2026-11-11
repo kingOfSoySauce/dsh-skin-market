@@ -24,8 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/ShenpingDD__wooden-fish-dsh/9b4514098e91cdff880f439a18abd3c18efafbf4/home.png
 screenshots:
   - https://raw.githubusercontent.com/ShenpingDD/wooden-fish-dsh/9b4514098e91cdff880f439a18abd3c18efafbf4/docs/screenshots/ui-design-preview.png
 listScreenshot: https://raw.githubusercontent.com/ShenpingDD/wooden-fish-dsh/9b4514098e91cdff880f439a18abd3c18efafbf4/docs/screenshots/ui-design-preview.png
@@ -54,9 +52,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/ShenpingDD__wooden-fish-dsh/9b4514098e91cdff880f439a18abd3c18efafbf4/home.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:08.154Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:08.154Z
+updatedAt: 2026-11-11T13:17:15.192Z

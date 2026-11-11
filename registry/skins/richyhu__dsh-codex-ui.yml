@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/richyhu__dsh-codex-ui/6d871e844fdd81b16258850bd9ffbcdac283670a/home.png
-  - skin-screenshots/richyhu__dsh-codex-ui/6d871e844fdd81b16258850bd9ffbcdac283670a/conversation.png
-  - skin-screenshots/richyhu__dsh-codex-ui/6d871e844fdd81b16258850bd9ffbcdac283670a/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -57,9 +53,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/richyhu__dsh-codex-ui/6d871e844fdd81b16258850bd9ffbcdac283670a/home.png
+  - skin-screenshots/richyhu__dsh-codex-ui/6d871e844fdd81b16258850bd9ffbcdac283670a/conversation.png
+  - skin-screenshots/richyhu__dsh-codex-ui/6d871e844fdd81b16258850bd9ffbcdac283670a/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-09T07:18:08.285Z
-metadataUpdatedAt: 2026-11-11T00:10:02.757Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-11-08T00:11:23.006Z
-updatedAt: 2026-11-11T00:10:02.757Z
+updatedAt: 2026-11-11T13:17:15.192Z

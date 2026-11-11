@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/home.png
-  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/conversation.png
-  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 165
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/home.png
+  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/conversation.png
+  - skin-screenshots/yhPrime__dsh-theme-picker/d9b00d6c212187baa5590533afa1816a0119f11e/settings.png
+featuredRank: 165
 releaseUpdatedAt: 2026-11-09T07:18:47.703Z
-metadataUpdatedAt: 2026-11-09T08:11:05.394Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-11-09T07:18:47.703Z
-updatedAt: 2026-11-09T08:11:05.394Z
+updatedAt: 2026-11-11T13:17:15.192Z

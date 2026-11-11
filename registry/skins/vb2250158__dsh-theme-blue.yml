@@ -23,10 +23,6 @@ compatibility:
   dsh: 0.2.1-alpha.1
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/home.png
-  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/conversation.png
-  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -54,9 +50,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/home.png
+  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/conversation.png
+  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-11T00:10:14.205Z
-metadataUpdatedAt: 2026-11-11T00:10:14.205Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-11T00:10:14.205Z
+updatedAt: 2026-11-11T13:17:15.192Z

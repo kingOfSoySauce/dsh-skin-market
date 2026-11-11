@@ -25,9 +25,6 @@ compatibility:
   dsh: ">=0.2.0 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Yinhefuluoye__dsh-glass-effect/78ad066bd3cfb4d44c20b0bc3fc2574719c8f830/home.png
-  - skin-screenshots/Yinhefuluoye__dsh-glass-effect/78ad066bd3cfb4d44c20b0bc3fc2574719c8f830/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/Yinhefuluoye/dsh-glass-effect/78ad066bd3cfb4d44c20b0bc3fc2574719c8f830/assets/settings-row.png
 listScreenshot: https://raw.githubusercontent.com/Yinhefuluoye/dsh-glass-effect/78ad066bd3cfb4d44c20b0bc3fc2574719c8f830/assets/settings-row.png
@@ -57,9 +54,12 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/Yinhefuluoye__dsh-glass-effect/78ad066bd3cfb4d44c20b0bc3fc2574719c8f830/home.png
+  - skin-screenshots/Yinhefuluoye__dsh-glass-effect/78ad066bd3cfb4d44c20b0bc3fc2574719c8f830/conversation.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:24.383Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:24.383Z
+updatedAt: 2026-11-11T13:17:15.192Z

@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lxj5820/dsh-boot-animation#3eaa46e24776cd8f10d613c84947e884d8e7f10b
+  target: github:lxj5820/dsh-boot-animation#6c2ef4b1d5ca4b791323d247fea5b7f6e272cc71
   version: 0.3.0
-  commit: 3eaa46e24776cd8f10d613c84947e884d8e7f10b
+  commit: 6c2ef4b1d5ca4b791323d247fea5b7f6e272cc71
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
@@ -44,20 +44,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 3eaa46e24776cd8f10d613c84947e884d8e7f10b
+    commit: 6c2ef4b1d5ca4b791323d247fea5b7f6e272cc71
     packageVersion: 0.3.0
     scannerVersion: static-v2
     dshVersion: 0.1.7-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-11-09T07:12:36.035Z
+    checkedAt: 2026-11-11T13:17:18.418Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 339
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-09T07:12:36.684Z
-metadataUpdatedAt: 2026-11-09T07:12:36.684Z
-starsUpdatedAt: 2026-11-11T00:07:28.933Z
-updatedAt: 2026-11-11T00:07:28.933Z
+starsSnapshot: 340
+releaseUpdatedAt: 2026-11-11T13:17:18.777Z
+metadataUpdatedAt: 2026-11-11T13:17:18.777Z
+starsUpdatedAt: 2026-11-11T13:17:18.777Z
+updatedAt: 2026-11-11T13:17:18.777Z

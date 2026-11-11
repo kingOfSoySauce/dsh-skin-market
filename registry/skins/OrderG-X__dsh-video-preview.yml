@@ -14,21 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:OrderG-X/dsh-video-preview#455250786fea0058191adca67a873a8b51be0f0b
-  version: 0.5.6
-  commit: 455250786fea0058191adca67a873a8b51be0f0b
+  target: github:OrderG-X/dsh-video-preview#a9476a7507b58353b52363d8c8d68cc98c22adaf
+  version: 0.5.7
+  commit: a9476a7507b58353b52363d8c8d68cc98c22adaf
   desktop:
     mode: managed
     registry: npm
     packageName: "@orderg-x/dsh-video-preview"
-    packageVersion: 0.5.6
-    integrity: sha512-3BnTjGJJGjaXLz4RVU/8JzrTI9oRTCyLPU1iD/kBwjoyzGphQ5v4AA5cM0lBb6bp+tFR1IU14VrJtgpJs+qkzg==
+    packageVersion: 0.5.7
+    integrity: sha512-KAlYgO2rOZgHiZ5EO2L6XyfFuC4fGjFRrP2xBqaaCGLgDMCnU5QQkQv6ZPmr6zAGR2TJMvk7eNB8b1H8+U+AYA==
   npm:
     name: "@orderg-x/dsh-video-preview"
-    version: 0.5.6
-    integrity: sha512-3BnTjGJJGjaXLz4RVU/8JzrTI9oRTCyLPU1iD/kBwjoyzGphQ5v4AA5cM0lBb6bp+tFR1IU14VrJtgpJs+qkzg==
+    version: 0.5.7
+    integrity: sha512-KAlYgO2rOZgHiZ5EO2L6XyfFuC4fGjFRrP2xBqaaCGLgDMCnU5QQkQv6ZPmr6zAGR2TJMvk7eNB8b1H8+U+AYA==
     repository: https://github.com/OrderG-X/dsh-video-preview
-    gitHead: 455250786fea0058191adca67a873a8b51be0f0b
+    gitHead: a9476a7507b58353b52363d8c8d68cc98c22adaf
 compatibility:
   dsh: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
   platform:
@@ -52,20 +52,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 455250786fea0058191adca67a873a8b51be0f0b
-    packageVersion: 0.5.6
+    commit: a9476a7507b58353b52363d8c8d68cc98c22adaf
+    packageVersion: 0.5.7
     scannerVersion: static-v2
     dshVersion: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-09T00:14:34.471Z
+    checkedAt: 2026-11-11T13:17:50.353Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 0
-releaseUpdatedAt: 2026-11-09T00:14:35.781Z
-metadataUpdatedAt: 2026-11-09T00:14:35.781Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-11T13:17:51.098Z
+metadataUpdatedAt: 2026-11-11T13:17:51.098Z
 starsUpdatedAt: 2026-11-01T01:43:34.817Z
-updatedAt: 2026-11-09T00:14:35.781Z
+updatedAt: 2026-11-11T13:17:51.098Z

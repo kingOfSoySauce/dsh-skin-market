@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.2.1-rc.2"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/home.png
-  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/conversation.png
-  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/home.png
+  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/conversation.png
+  - skin-screenshots/Nektropy__dsh-starry-sky-theme/ce77a8c19d29102321b4af8a6f3f4bc942d14b51/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:02.312Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:02.312Z
+updatedAt: 2026-11-11T13:17:15.192Z

@@ -25,9 +25,6 @@ compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Siloet-phy__analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/home.png
-  - skin-screenshots/Siloet-phy__analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/Siloet-phy/analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/docs/light.png
   - https://raw.githubusercontent.com/Siloet-phy/analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/docs/dark.png
@@ -57,9 +54,12 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/Siloet-phy__analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/home.png
+  - skin-screenshots/Siloet-phy__analog-liquid-glass-for-dsh/06dce8110e2400fbf0a67840dbc911b262133ada/conversation.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:09.205Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:09.205Z
+updatedAt: 2026-11-11T13:17:15.192Z

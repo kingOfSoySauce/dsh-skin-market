@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/sHen9Qi__dsh-asuka-pet/c79bf6db06d343fb022a30325b5b088e45c8438f/home.png
-  - skin-screenshots/sHen9Qi__dsh-asuka-pet/c79bf6db06d343fb022a30325b5b088e45c8438f/conversation.png
-  - skin-screenshots/sHen9Qi__dsh-asuka-pet/c79bf6db06d343fb022a30325b5b088e45c8438f/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -56,9 +52,13 @@ license:
   code: CC BY-NC-SA 4.0
   commercialUse: false
   notice: CC BY-NC-SA 4.0：须署名、非商业使用，并以相同许可分享改编作品。
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/sHen9Qi__dsh-asuka-pet/c79bf6db06d343fb022a30325b5b088e45c8438f/home.png
+  - skin-screenshots/sHen9Qi__dsh-asuka-pet/c79bf6db06d343fb022a30325b5b088e45c8438f/conversation.png
+  - skin-screenshots/sHen9Qi__dsh-asuka-pet/c79bf6db06d343fb022a30325b5b088e45c8438f/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:07.715Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:07.715Z
+updatedAt: 2026-11-11T13:17:15.192Z

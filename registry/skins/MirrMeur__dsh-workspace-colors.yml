@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/MirrMeur__dsh-workspace-colors/1f8023f22c758902a8bd7f7402767cd340ddca7e/home.png
-  - skin-screenshots/MirrMeur__dsh-workspace-colors/1f8023f22c758902a8bd7f7402767cd340ddca7e/conversation.png
-  - skin-screenshots/MirrMeur__dsh-workspace-colors/1f8023f22c758902a8bd7f7402767cd340ddca7e/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/MirrMeur__dsh-workspace-colors/1f8023f22c758902a8bd7f7402767cd340ddca7e/home.png
+  - skin-screenshots/MirrMeur__dsh-workspace-colors/1f8023f22c758902a8bd7f7402767cd340ddca7e/conversation.png
+  - skin-screenshots/MirrMeur__dsh-workspace-colors/1f8023f22c758902a8bd7f7402767cd340ddca7e/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:01.367Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:01.367Z
+updatedAt: 2026-11-11T13:17:15.192Z

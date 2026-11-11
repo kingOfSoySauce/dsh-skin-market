@@ -27,10 +27,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/VlanTech__dsh-glassic-mist-theme/af4e9c3967df0fbeeead25b4f1426e30382d1a90/home.png
-  - skin-screenshots/VlanTech__dsh-glassic-mist-theme/af4e9c3967df0fbeeead25b4f1426e30382d1a90/conversation.png
-  - skin-screenshots/VlanTech__dsh-glassic-mist-theme/af4e9c3967df0fbeeead25b4f1426e30382d1a90/settings.png
 screenshots:
   - skin-screenshots/VlanTech__dsh-glassic-mist-theme/af4e9c3967df0fbeeead25b4f1426e30382d1a90/home.gif
 review:
@@ -60,9 +56,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 123
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/VlanTech__dsh-glassic-mist-theme/af4e9c3967df0fbeeead25b4f1426e30382d1a90/home.png
+  - skin-screenshots/VlanTech__dsh-glassic-mist-theme/af4e9c3967df0fbeeead25b4f1426e30382d1a90/conversation.png
+  - skin-screenshots/VlanTech__dsh-glassic-mist-theme/af4e9c3967df0fbeeead25b4f1426e30382d1a90/settings.png
+featuredRank: 123
 releaseUpdatedAt: 2026-08-23T05:35:10.390Z
-metadataUpdatedAt: 2026-11-09T07:18:33.182Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-09-09T21:41:17.611Z
-updatedAt: 2026-11-09T07:18:33.182Z
+updatedAt: 2026-11-11T13:17:15.192Z
