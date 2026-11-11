@@ -14,22 +14,25 @@ modes:
   - light
   - dark
 install:
-  target: github:xchannel1987/dsh-mobile-xc#48afb6b005c130a231cedf71f18865273eda4599
-  version: 0.6.8
-  commit: 48afb6b005c130a231cedf71f18865273eda4599
+  target: github:xchannel1987/dsh-mobile-xc#2abbdff70876251745547c9d46157713b3912862
+  version: 0.6.11
+  commit: 2abbdff70876251745547c9d46157713b3912862
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
   npm:
     name: dsh-mobile-xc
-    version: 0.6.8
-    integrity: sha512-QBDFxIeujAC5o8hVruTQrOyLyFPc2goOdbxRVv8xAmE7kWpeLdBxmSjg5LQ3cg2hitu/yIFabmCwQl2+isUPzA==
+    version: 0.6.11
+    integrity: sha512-ZHr2qvti/tafvB1gOY+1ENYBlXxetXXPRAb0zT4IOvdHFfAxcYKcs684MYF9116C5FVsL8p/fF69Umbv3wbzhg==
     repository: https://github.com/xchannel1987/dsh-mobile-xc
-    gitHead: 48afb6b005c130a231cedf71f18865273eda4599
+    gitHead: 2abbdff70876251745547c9d46157713b3912862
 compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/home.png
+  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/conversation.png
 screenshots: []
 review:
   compatibility: unverified
@@ -47,22 +50,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 48afb6b005c130a231cedf71f18865273eda4599
-    packageVersion: 0.6.8
+    commit: 2abbdff70876251745547c9d46157713b3912862
+    packageVersion: 0.6.11
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:52:29.474Z
+    checkedAt: 2026-11-11T00:08:22.903Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
-marketScreenshots:
-  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/home.png
-  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/conversation.png
 featuredRank: 999
-releaseUpdatedAt: 2026-10-26T01:52:29.632Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-11T00:08:22.930Z
+metadataUpdatedAt: 2026-11-11T00:08:22.930Z
 starsUpdatedAt: 2026-10-30T03:54:03.224Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-11T00:08:22.930Z

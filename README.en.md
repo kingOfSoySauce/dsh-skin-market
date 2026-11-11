@@ -16,6 +16,8 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
+- **2026-11-11**: [dsh-startup-secret](https://github.com/huzhengcai471-crypto/dsh-startup-secret) (huzhengcai471-crypto). See the [recent additions log](./docs/recently-added.md#recent-2026-11-11-huzhengcai471-crypto-dsh-startup-secret).
+
 See the [recent additions log](./docs/recently-added.md).
 
 <a id="manual-update"></a>

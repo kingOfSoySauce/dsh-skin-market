@@ -13,9 +13,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:vb2250158/dsh-theme-blue#67dd93b851aa7eb47ce1b20547403f32c24f5d5f
-  version: 0.1.0-rc.8.19
-  commit: 67dd93b851aa7eb47ce1b20547403f32c24f5d5f
+  target: github:vb2250158/dsh-theme-blue#66e253b13345ed7edceaa98b2b82106a97e8be80
+  version: 0.1.0-rc.8.20
+  commit: 66e253b13345ed7edceaa98b2b82106a97e8be80
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -43,20 +43,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
-    commit: 67dd93b851aa7eb47ce1b20547403f32c24f5d5f
-    packageVersion: 0.1.0-rc.8.19
+    commit: 66e253b13345ed7edceaa98b2b82106a97e8be80
+    packageVersion: 0.1.0-rc.8.20
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-alpha.1 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-11-05T00:24:07.943Z
+    checkedAt: 2026-11-11T00:10:14.204Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-05T00:24:08.085Z
-metadataUpdatedAt: 2026-11-09T07:18:31.843Z
+releaseUpdatedAt: 2026-11-11T00:10:14.205Z
+metadataUpdatedAt: 2026-11-11T00:10:14.205Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T07:18:31.843Z
+updatedAt: 2026-11-11T00:10:14.205Z
