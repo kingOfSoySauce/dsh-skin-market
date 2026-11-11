@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T06:43:48.873Z",
+  "generatedAt": "2026-11-11T06:56:29.117Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -69364,6 +69364,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "01virex.dsh-status-rotator": {
+        "name": {
+          "zh": "状态行文案轮播",
+          "en": "Status Phrase Rotator"
+        },
+        "description": {
+          "zh": "把运行中的状态行换成 1550 条按思考 / 运行 / 长任务阶段轮换的梗文案，支持打字机输出、昼夜渐变、滚动/顶部/底部弹幕和可选鲸尾动画，保留宿主运行时长时钟；14 个主题词库包可分别启用，也能用设置页或外部词库替换。",
+          "en": "Replaces the running status text with 1,550 phrases rotating per thinking/running/long-task phase, with typewriter output, day/night gradients, scroll/top/bottom danmaku and an optional animated whale tail, while keeping the host's elapsed-time clock; 14 phrase packs toggle separately, and the bank can be edited from settings or an external file."
+        },
+        "descriptionPolicy": "show"
+      },
       "0nt-one.dsh-neo-skin": {
         "name": {
           "zh": "新粗野主义主题",
@@ -69581,6 +69592,17 @@
         "description": {
           "zh": "六幕启动动画依次经过 DeepSeek 标识、过曝转场、暖白「技术档案」底板、交互式访问授权和故障揭幕；支持暖白/暗色主题、确认步骤与跳过。",
           "en": "A six-stage startup animation moves through the DeepSeek mark, an overexposure transition, a warm-white “technical file” panel, interactive access authorization and a glitch reveal, with light/dark themes, confirmations and skip controls."
+        },
+        "descriptionPolicy": "show"
+      },
+      "9livewolf.dsh-think-bounce-pet": {
+        "name": {
+          "zh": "思考弹球宠物",
+          "en": "Think Bounce Pet"
+        },
+        "description": {
+          "zh": "推理一开始，就有球从屏幕边缘飞入并持续弹跳，思考结束后缩小消失；另有不受状态影响的常驻球，可拍走、拖拽扔出，重力、初速度、碰撞损耗和大小都能实时调。",
+          "en": "A ball launches in from a random screen edge when a reasoning step starts and bounces until the step ends, while a constant ball keeps bouncing regardless of state; both can be poked or flung, with live gravity, launch speed, bounce loss and size settings."
         },
         "descriptionPolicy": "show"
       },
@@ -74317,6 +74339,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "solispark.deepseek-harness-shorekeeper-theme": {
+        "name": {
+          "zh": "守岸人主题",
+          "en": "Shorekeeper Theme"
+        },
+        "description": {
+          "zh": "启动时播放「逐笔线稿 → 睁眼 → 标识拼装」的守岸人影片，片尾消散聚合为无缝循环的全屏背景；侧边栏面板可换成自己的图片或视频（上限 120 MB，只存本机 IndexedDB），并调透明度、压暗和模糊。",
+          "en": "On launch it plays a Shorekeeper intro — line art drawn stroke by stroke, eyes opening, then the Black Shores emblem assembling — and hands over to a seamless looping full-screen background. A sidebar panel swaps in your own image or video (up to 120 MB, kept in local IndexedDB) and adjusts opacity, dimming and blur."
+        },
+        "descriptionPolicy": "show"
+      },
       "something11235.dsh-video-skin": {
         "name": {
           "zh": "循环视频背景与开场",
@@ -74347,6 +74380,17 @@
         "description": {
           "zh": "在界面下铺设海洋场景，包含鱼群、鲸鱼、鲨鱼、水母、海带和沉船；鼠标移动会激起水波，配色随明暗主题切换。",
           "en": "An ocean scene beneath the interface, with schools of fish, whales, sharks, jellyfish, kelp and a sunken ship. Pointer movement creates ripples, and the palette follows the light or dark theme."
+        },
+        "descriptionPolicy": "show"
+      },
+      "soviet-dreadnaught.dsh-theme-longmarch": {
+        "name": {
+          "zh": "长征机",
+          "en": "Long March Machine"
+        },
+        "description": {
+          "zh": "把 Web GUI 换成《烈焰升腾》新左派「长征 / Loji」AI 路线的终端：纯黑底、磷光红字符、红色数据雨与 CRT 扫描线，四套部门预设各带徽记、配色和背景纹样；纯视觉插件，不注册工具、不发网络请求。",
+          "en": "Turns the Web GUI into the terminal of The Fire Rises' New Left “Long March / Loji” AI route: pure black with phosphor-red glyphs, red data rain and CRT scanlines, plus four department presets each with its own emblem, palette and background pattern. It is purely visual: no tools registered, no network requests."
         },
         "descriptionPolicy": "show"
       },
@@ -74479,6 +74523,17 @@
         "description": {
           "zh": "从 DSH 侧栏打开壁纸抽屉，选择系统预设、纯色、渐变、图片或视频背景；支持缩放定位、适配模式、毛玻璃、亮暗文字方案，以及由模型调用的 bg_apply 工具。本地媒体保存在本机。",
           "en": "Open a wallpaper drawer from the DSH sidebar and choose system presets, solid colors, gradients, images, or videos. Adjust zoom and position, fit modes, glass effects, and light/dark text schemes, or let the model use the bg_apply tool. Media stays on the local machine."
+        },
+        "descriptionPolicy": "show"
+      },
+      "tabmk.dsh-theme-ascetic": {
+        "name": {
+          "zh": "ASCetic",
+          "en": "ASCetic"
+        },
+        "description": {
+          "zh": "ASCII 终端风主题：等宽字体、方框制表符界面与硬阴影，内置 19 套调色板（含 auto / host）和 cozy、compact、dense 三档密度；状态行显示 agent 状态、步数、tok/s 与上下文用量，空会话用 ascii.rest 的字符画，作者在 DSH 0.2.1-rc.3 上实测。",
+          "en": "An ASCII terminal take on the UI: monospace type, box-drawing chrome and hard shadows, with 19 palettes (including auto and host) and cozy/compact/dense densities; a vim-style status line tracks agent state, steps, tok/s and context, empty sessions show ascii.rest art, and it was tested on DSH 0.2.1-rc.3."
         },
         "descriptionPolicy": "show"
       },
@@ -75975,6 +76030,17 @@
         "description": {
           "zh": "仅限 Windows，需安装本机网易云音乐客户端；提供迷你播放条、液态玻璃卡片和黑胶视图，使用本机客户端自动登录，支持 VIP 曲目播放及客户端播放同步。",
           "en": "Windows-only NetEase Cloud Music player requiring the local client; provides a mini bar, liquid glass card, vinyl view, automatic login through the local client, VIP playback, and client playback sync."
+        },
+        "descriptionPolicy": "show"
+      },
+      "zhigengniao258.dsh-theme-tarkov": {
+        "name": {
+          "zh": "塔科夫主题",
+          "en": "Tarkov Theme"
+        },
+        "description": {
+          "zh": "以《逃离塔科夫》主界面为灵感的主题：四段可拖拽取景的 15 秒循环动态背景（窄屏或减少动态时自动停用）、Beta 警告横幅、四类场景提示音与 BGM 浮窗，另有可拖动、点击播放随机 Scav 语音的 Altyn 桌宠和塔科夫风状态行文案。",
+          "en": "A theme modeled on the Escape from Tarkov main menu with four 15-second looping backgrounds you can reframe by dragging (auto-disabled on narrow screens or with reduced motion), a Beta warning banner, sounds for four session events, a BGM dock, a draggable Altyn helmet pet with random Scav voice lines, and Tarkov-flavored status text."
         },
         "descriptionPolicy": "show"
       },
