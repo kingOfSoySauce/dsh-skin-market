@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/ShiMarin233__dsh-session-hud/094ecb94b30ce1960ba7a1ebda18d23c38ab5aab/home.png
-  - skin-screenshots/ShiMarin233__dsh-session-hud/094ecb94b30ce1960ba7a1ebda18d23c38ab5aab/conversation.png
-  - skin-screenshots/ShiMarin233__dsh-session-hud/094ecb94b30ce1960ba7a1ebda18d23c38ab5aab/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -56,9 +52,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/ShiMarin233__dsh-session-hud/094ecb94b30ce1960ba7a1ebda18d23c38ab5aab/home.png
+  - skin-screenshots/ShiMarin233__dsh-session-hud/094ecb94b30ce1960ba7a1ebda18d23c38ab5aab/conversation.png
+  - skin-screenshots/ShiMarin233__dsh-session-hud/094ecb94b30ce1960ba7a1ebda18d23c38ab5aab/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:08.862Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:08.862Z
+updatedAt: 2026-11-11T13:17:15.192Z

@@ -24,8 +24,6 @@ compatibility:
   dsh: 0.1.7-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/home.png
 screenshots:
   - https://raw.githubusercontent.com/mrtoxiorg-sys/dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/docs/preview.png
 listScreenshot: https://raw.githubusercontent.com/mrtoxiorg-sys/dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/docs/preview.png
@@ -57,9 +55,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/home.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-03T19:20:00+08:00
-metadataUpdatedAt: 2026-11-09T06:46:00.714Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-11-03T19:20:00+08:00
-updatedAt: 2026-11-09T06:46:00.714Z
+updatedAt: 2026-11-11T13:17:15.192Z

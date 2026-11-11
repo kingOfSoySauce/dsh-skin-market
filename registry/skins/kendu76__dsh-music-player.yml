@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:kendu76/dsh-music-player#d9b444c02939176eaac71ea082c1dd91d5535a2d
+  target: github:kendu76/dsh-music-player#84b9c926733e2ab21fa9f48d95b6ba75df9ce7f9
   version: 1.0.6
-  commit: d9b444c02939176eaac71ea082c1dd91d5535a2d
+  commit: 84b9c926733e2ab21fa9f48d95b6ba75df9ce7f9
   desktop:
     mode: managed
     registry: npm
@@ -50,19 +50,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: d9b444c02939176eaac71ea082c1dd91d5535a2d
+    commit: 84b9c926733e2ab21fa9f48d95b6ba75df9ce7f9
     packageVersion: 1.0.6
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-11T00:07:48.417Z
+    checkedAt: 2026-11-11T13:17:28.147Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 22
-releaseUpdatedAt: 2026-11-11T00:07:49.991Z
-metadataUpdatedAt: 2026-11-11T00:07:49.991Z
+releaseUpdatedAt: 2026-11-11T13:17:29.132Z
+metadataUpdatedAt: 2026-11-11T13:17:29.132Z
 starsUpdatedAt: 2026-11-10T09:19:16.352Z
-updatedAt: 2026-11-11T00:07:49.991Z
+updatedAt: 2026-11-11T13:17:29.132Z

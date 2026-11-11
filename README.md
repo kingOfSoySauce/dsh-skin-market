@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-11**：[dsh-startup-secret](https://github.com/huzhengcai471-crypto/dsh-startup-secret)（huzhengcai471-crypto）——DSH 的启动界面与启动动画插件（二次创作版）。详见[收录日志](./docs/recently-added.md#recent-2026-11-11-huzhengcai471-crypto-dsh-startup-secret)。
+- **2026-11-11**：[dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator)（01Virex）——A DeepSeek Harness (DSH) client plugin that replaces Deep diving... / 深度求索中... with editable phrases while preserving the host's elapsed-time clock.详见[收录日志](./docs/recently-added.md#recent-2026-11-11-01virex-dsh-status-rotator)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

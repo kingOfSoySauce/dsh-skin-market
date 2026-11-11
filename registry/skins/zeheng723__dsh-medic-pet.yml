@@ -24,8 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/zeheng723__dsh-medic-pet/b3c9c841123daa7b0c6846d65005ee1b9f6a97fd/home.png
 screenshots:
   - https://raw.githubusercontent.com/zeheng723/dsh-medic-pet/b3c9c841123daa7b0c6846d65005ee1b9f6a97fd/docs/preview.png
 listScreenshot: https://raw.githubusercontent.com/zeheng723/dsh-medic-pet/b3c9c841123daa7b0c6846d65005ee1b9f6a97fd/docs/preview.png
@@ -54,9 +52,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/zeheng723__dsh-medic-pet/b3c9c841123daa7b0c6846d65005ee1b9f6a97fd/home.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:26.824Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:26.824Z
+updatedAt: 2026-11-11T13:17:15.192Z

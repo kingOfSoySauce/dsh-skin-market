@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/weijunliang23__dsh-stzb/d2fc4d2ca225c8cc1fdc54ab9cbea46a2887b2d7/home.png
-  - skin-screenshots/weijunliang23__dsh-stzb/d2fc4d2ca225c8cc1fdc54ab9cbea46a2887b2d7/conversation.png
-  - skin-screenshots/weijunliang23__dsh-stzb/d2fc4d2ca225c8cc1fdc54ab9cbea46a2887b2d7/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/weijunliang23__dsh-stzb/d2fc4d2ca225c8cc1fdc54ab9cbea46a2887b2d7/home.png
+  - skin-screenshots/weijunliang23__dsh-stzb/d2fc4d2ca225c8cc1fdc54ab9cbea46a2887b2d7/conversation.png
+  - skin-screenshots/weijunliang23__dsh-stzb/d2fc4d2ca225c8cc1fdc54ab9cbea46a2887b2d7/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:18.926Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:18.926Z
+updatedAt: 2026-11-11T13:17:15.192Z

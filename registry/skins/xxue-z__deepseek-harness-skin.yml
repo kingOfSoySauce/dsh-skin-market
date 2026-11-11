@@ -26,10 +26,6 @@ compatibility:
   dsh: 0.1.7-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/home.png
-  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/conversation.png
-  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/settings.png
 screenshots:
   - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/preset-crayon.gif
   - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/preset-whale.gif
@@ -62,9 +58,13 @@ license:
   code: NOASSERTION
   commercialUse: false
   notice: 固定版本 package 未声明 license，市场不替作者扩大授权范围。
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/home.png
+  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/conversation.png
+  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-04T14:29:50+08:00
-metadataUpdatedAt: 2026-11-09T07:18:45.361Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-11-04T14:29:50+08:00
-updatedAt: 2026-11-09T07:18:45.361Z
+updatedAt: 2026-11-11T13:17:15.192Z

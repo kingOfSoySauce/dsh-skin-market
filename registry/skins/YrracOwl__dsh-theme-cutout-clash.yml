@@ -30,10 +30,6 @@ compatibility:
   dsh: ">=0.1.2-rc.1 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/YrracOwl__dsh-theme-cutout-clash/0bb0f15f6848fde5628c9712ac245e7d61b78643/home.png
-  - skin-screenshots/YrracOwl__dsh-theme-cutout-clash/0bb0f15f6848fde5628c9712ac245e7d61b78643/conversation.png
-  - skin-screenshots/YrracOwl__dsh-theme-cutout-clash/0bb0f15f6848fde5628c9712ac245e7d61b78643/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -61,9 +57,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/YrracOwl__dsh-theme-cutout-clash/0bb0f15f6848fde5628c9712ac245e7d61b78643/home.png
+  - skin-screenshots/YrracOwl__dsh-theme-cutout-clash/0bb0f15f6848fde5628c9712ac245e7d61b78643/conversation.png
+  - skin-screenshots/YrracOwl__dsh-theme-cutout-clash/0bb0f15f6848fde5628c9712ac245e7d61b78643/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-26T01:53:24.744Z
-metadataUpdatedAt: 2026-10-26T01:53:24.744Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:24.744Z
+updatedAt: 2026-11-11T13:17:15.192Z

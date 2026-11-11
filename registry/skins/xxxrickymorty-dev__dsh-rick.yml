@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/home.png
-  - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/conversation.png
-  - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/settings.png
 screenshots:
   - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/home.gif
 listScreenshot: https://raw.githubusercontent.com/xxxrickymorty-dev/dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/docs/preview.png
@@ -57,9 +53,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 196
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/home.png
+  - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/conversation.png
+  - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/settings.png
+featuredRank: 196
 releaseUpdatedAt: 2026-10-14T22:17:33.631Z
-metadataUpdatedAt: 2026-11-09T07:18:45.927Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-08-18 15:46:32.876000+00:00
-updatedAt: 2026-11-09T07:18:45.927Z
+updatedAt: 2026-11-11T13:17:15.192Z

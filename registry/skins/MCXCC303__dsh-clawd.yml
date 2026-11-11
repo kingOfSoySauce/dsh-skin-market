@@ -33,10 +33,6 @@ compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/home.png
-  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/conversation.png
-  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/settings.png
 screenshots:
   - https://github.com/user-attachments/assets/5416ce24-7ba5-49bd-a010-1717cc981548
 listScreenshot: https://github.com/user-attachments/assets/5416ce24-7ba5-49bd-a010-1717cc981548
@@ -66,9 +62,13 @@ license:
   code: MIT
   commercialUse: true
   notice: 代码与默认Text/placeholder原创图形MIT；第三方Clawd/Calico主题未随包分发，其权利不由本插件授予。
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/home.png
+  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/conversation.png
+  - skin-screenshots/MCXCC303__dsh-clawd/15f3ac60cd7c4a81eed91b64c055a5b758acbe17/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:00.815Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:00.815Z
+updatedAt: 2026-11-11T13:17:15.192Z

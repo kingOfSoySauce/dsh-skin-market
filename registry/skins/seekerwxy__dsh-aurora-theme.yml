@@ -26,10 +26,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/home.png
-  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/conversation.png
-  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/settings.png
 screenshots:
   - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/home.gif
 review:
@@ -59,9 +55,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 119
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/home.png
+  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/conversation.png
+  - skin-screenshots/seekerwxy__dsh-aurora-theme/3b220e179812a81e60f2d32259bde9262808cd09/settings.png
+featuredRank: 119
 releaseUpdatedAt: 2026-08-23T05:34:52.309Z
-metadataUpdatedAt: 2026-11-09T07:18:12.380Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-09-09T21:41:09.890Z
-updatedAt: 2026-11-09T07:18:12.380Z
+updatedAt: 2026-11-11T13:17:15.192Z

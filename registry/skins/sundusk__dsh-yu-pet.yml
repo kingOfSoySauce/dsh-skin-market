@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/home.png
-  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/conversation.png
-  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/settings.png
 screenshots:
   - https://raw.githubusercontent.com/sundusk/dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/docs/poses.png
 listScreenshot: https://raw.githubusercontent.com/sundusk/dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/docs/poses.png
@@ -57,9 +53,13 @@ health:
 license:
   code: BSD-3-Clause
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/home.png
+  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/conversation.png
+  - skin-screenshots/sundusk__dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:10.309Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:10.309Z
+updatedAt: 2026-11-11T13:17:15.192Z

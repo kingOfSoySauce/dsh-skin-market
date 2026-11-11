@@ -15,18 +15,12 @@ tags:
 modes:
   - dark
 install:
-  target: github:yannicksong0106/dsh-550c-skin#4819c84c67192d0c59b7036e786852649e6fa491
-  version: 0.1.0-beta.3
-  commit: 4819c84c67192d0c59b7036e786852649e6fa491
+  target: github:yannicksong0106/dsh-550c-skin#aed9e1abfffd3f6a3fad51a66ffe583f7b998025
+  version: 0.1.0-beta.6
+  commit: aed9e1abfffd3f6a3fad51a66ffe583f7b998025
   desktop:
     mode: manual-only
     reason: published-npm-gitHead-differs-from-pin
-  npm:
-    name: dsh-550c-skin
-    version: 0.1.0-beta.3
-    integrity: sha512-kd7jdYlgNxwybOpUm4XS4ApFirHdSTLxv9hRjt3geiRlMID9k8KcWnFCvuQKsvpvvdtn2DhxfZpBG9gzBtOJzQ==
-    repository: https://github.com/yannicksong0106/dsh-550c-skin
-    gitHead: 4819c84c67192d0c59b7036e786852649e6fa491
 compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
@@ -52,19 +46,19 @@ health:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: 4819c84c67192d0c59b7036e786852649e6fa491
-    packageVersion: 0.1.0-beta.3
+    commit: aed9e1abfffd3f6a3fad51a66ffe583f7b998025
+    packageVersion: 0.1.0-beta.6
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:32:16.114Z
+    checkedAt: 2026-11-11T13:17:32.307Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 11
 featuredRank: 1107
-releaseUpdatedAt: 2026-10-24T21:32:16.883Z
-metadataUpdatedAt: 2026-10-24T21:32:16.883Z
+starsSnapshot: 11
+releaseUpdatedAt: 2026-11-11T13:17:32.773Z
+metadataUpdatedAt: 2026-11-11T13:17:32.773Z
 starsUpdatedAt: 2026-11-09T00:13:21.295Z
-updatedAt: 2026-11-09T00:13:21.295Z
+updatedAt: 2026-11-11T13:17:32.773Z
