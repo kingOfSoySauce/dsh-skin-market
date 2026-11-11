@@ -68,14 +68,14 @@ health:
     dshVersion: ">=0.1.0-rc.6"
     mode: static
     result: pass
-    checkedAt: 2026-11-10T12:27:08.254Z
+    checkedAt: 2026-11-10T00:10:59.953Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1123
 starsSnapshot: 11
+featuredRank: 1123
 releaseUpdatedAt: 2026-11-10T18:11:15.809Z
-metadataUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-11T00:07:28.933Z
 starsUpdatedAt: 2026-11-10T18:11:15.809Z
-updatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-11T00:07:28.933Z

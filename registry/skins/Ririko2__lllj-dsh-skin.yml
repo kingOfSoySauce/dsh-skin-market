@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Ririko2/lllj-dsh-skin#5b688616a827e8252444ba678b9c73607c3d1509
-  version: 0.9.9
-  commit: 5b688616a827e8252444ba678b9c73607c3d1509
+  target: github:Ririko2/lllj-dsh-skin#f86e62986c9e5d5d9619d2e077ad10d10bc097f7
+  version: 0.9.10
+  commit: f86e62986c9e5d5d9619d2e077ad10d10bc097f7
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -47,20 +47,20 @@ health:
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: 5b688616a827e8252444ba678b9c73607c3d1509
-    packageVersion: 0.9.9
+    commit: f86e62986c9e5d5d9619d2e077ad10d10bc097f7
+    packageVersion: 0.9.10
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-11-10T09:21:59.253Z
+    checkedAt: 2026-11-11T00:09:07.669Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-10T09:22:03.220Z
-metadataUpdatedAt: 2026-11-10T09:22:03.220Z
+releaseUpdatedAt: 2026-11-11T00:09:10.643Z
+metadataUpdatedAt: 2026-11-11T00:09:10.643Z
 starsUpdatedAt: 2026-11-08T17:48:02.165Z
-updatedAt: 2026-11-10T09:22:03.220Z
+updatedAt: 2026-11-11T00:09:10.643Z

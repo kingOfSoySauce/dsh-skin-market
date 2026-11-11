@@ -16,6 +16,8 @@
 
 ### 近期收录
 
+- **2026-11-11**：[dsh-startup-secret](https://github.com/huzhengcai471-crypto/dsh-startup-secret)（huzhengcai471-crypto）——DSH 的启动界面与启动动画插件（二次创作版）。详见[收录日志](./docs/recently-added.md#recent-2026-11-11-huzhengcai471-crypto-dsh-startup-secret)。
+
 最新收录见[收录日志](./docs/recently-added.md)。
 
 <a id="manual-update"></a>

@@ -24,6 +24,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Cinnamobot__dsh-nothing-skin/9a510a34e62bce35b3ee6305c4934574cf64301e/home.png
+  - skin-screenshots/Cinnamobot__dsh-nothing-skin/9a510a34e62bce35b3ee6305c4934574cf64301e/conversation.png
+  - skin-screenshots/Cinnamobot__dsh-nothing-skin/9a510a34e62bce35b3ee6305c4934574cf64301e/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -51,13 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/Cinnamobot__dsh-nothing-skin/9a510a34e62bce35b3ee6305c4934574cf64301e/home.png
-  - skin-screenshots/Cinnamobot__dsh-nothing-skin/9a510a34e62bce35b3ee6305c4934574cf64301e/conversation.png
-  - skin-screenshots/Cinnamobot__dsh-nothing-skin/9a510a34e62bce35b3ee6305c4934574cf64301e/settings.png
 featuredRank: 1000
+starsSnapshot: 0
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-11T00:09:27.142Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-11T00:09:27.142Z
