@@ -1,0 +1,68 @@
+id: solispark.deepseek-harness-shorekeeper-theme
+name:
+  zh: deepseek-harness-shorekeeper-theme
+  en: deepseek-harness-shorekeeper-theme
+author: SoliSpark
+description: 守岸人主题 · Shorekeeper Theme
+repo: https://github.com/SoliSpark/deepseek-harness-shorekeeper-theme
+package: "@local/dsh-shorekeeper-startup"
+rowId: shorekeeper-startup
+category: skin
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:SoliSpark/deepseek-harness-shorekeeper-theme#62fff8c257649bd11554eb48c3c04e380a817024
+  version: 1.2.1
+  commit: 62fff8c257649bd11554eb48c3c04e380a817024
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/launch.gif
+  - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/home.gif
+  - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/home.png
+  - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/conversation.png
+  - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/settings.png
+listScreenshot: skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/launch.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 62fff8c257649bd11554eb48c3c04e380a817024
+    packageVersion: 1.2.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:26:50.705Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1131
+starsSnapshot: 31
+releaseUpdatedAt: 2026-11-11T06:41:11.005Z
+metadataUpdatedAt: 2026-11-11T06:41:11.005Z
+starsUpdatedAt: 2026-11-11T06:41:11.005Z
+updatedAt: 2026-11-11T06:41:11.005Z

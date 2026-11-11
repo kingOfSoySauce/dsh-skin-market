@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T00:12:58.470Z",
+  "generatedAt": "2026-11-11T06:43:48.873Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -58512,6 +58512,109 @@
       }
     },
     {
+      "id": "01virex.dsh-status-rotator",
+      "name": {
+        "zh": "dsh-status-rotator",
+        "en": "dsh-status-rotator"
+      },
+      "author": "01Virex",
+      "description": "A DeepSeek Harness (DSH) client plugin that replaces Deep diving... / 深度求索中... with editable phrases while preserving the host's elapsed-time clock.",
+      "repo": "https://github.com/01Virex/dsh-status-rotator",
+      "package": "dsh-status-rotator",
+      "rowId": "status-rotator",
+      "category": "skin",
+      "tags": [
+        "motion",
+        "token-theme",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:01Virex/dsh-status-rotator#9b1321ce8cf7662f3c09892269a7b08f905dcd68",
+        "version": "0.38.0",
+        "commit": "9b1321ce8cf7662f3c09892269a7b08f905dcd68",
+        "desktop": {
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "dsh-status-rotator",
+          "packageVersion": "0.38.0",
+          "integrity": "sha512-vLa1XyRsZUsYm1E+CTlT/lH8V74jVBcyFiZ3T4k5PUQV7MfYubC8ojtc1OevsXPRqV4eQ1nLFMVeAIl/umT/ew=="
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/status-preview.gif",
+        "https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/whale-motions.gif",
+        "https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/appearance-themes.png",
+        "https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/danmaku-preview.png",
+        "https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/desktop-npm-install.png"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/status-preview.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "9b1321ce8cf7662f3c09892269a7b08f905dcd68",
+          "packageVersion": "0.38.0",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:25.858Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1106,
+      "starsSnapshot": 229,
+      "releaseUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "metadataUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "starsUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "updatedAt": "2026-11-11T06:41:11.005Z",
+      "media": {
+        "screenshots": [
+          null,
+          null,
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8761b96bdc7a328b1219199f9ea85f6f.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8761b96bdc7a328b1219199f9ea85f6f.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bf3d624e8af65ba2b43d0d5fba87d064.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bf3d624e8af65ba2b43d0d5fba87d064.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8f9a69fb0ac850797ef147f35e3c3a56.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8f9a69fb0ac850797ef147f35e3c3a56.full.webp"
+          }
+        ]
+      }
+    },
+    {
       "id": "yasneg616.marathon-like-deepseek-harness-skin",
       "name": {
         "zh": "Marathon 工业酸",
@@ -60260,6 +60363,132 @@
       }
     },
     {
+      "id": "zhigengniao258.dsh-theme-tarkov",
+      "name": {
+        "zh": "dsh-theme-tarkov",
+        "en": "dsh-theme-tarkov"
+      },
+      "author": "ZHIGENGNIAO258",
+      "description": "以《逃离塔科夫》（Escape from Tarkov）主界面为灵感的 DeepSeek Harness（DSH）Web 界面主题插件：四段动态背景、Beta 警告横幅、提示音、背景音乐、Altyn 桌宠与状态行文本。",
+      "repo": "https://github.com/ZHIGENGNIAO258/dsh-theme-tarkov",
+      "package": "dsh-theme-tarkov",
+      "rowId": "tarkov",
+      "category": "skin",
+      "tags": [
+        "wallpaper",
+        "glass",
+        "motion",
+        "token-theme",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:ZHIGENGNIAO258/dsh-theme-tarkov#0919b705a5661c05310afe6dee8d920b1d2000e6",
+        "version": "0.4.1",
+        "commit": "0919b705a5661c05310afe6dee8d920b1d2000e6",
+        "desktop": {
+          "mode": "managed",
+          "registry": "npm",
+          "packageName": "dsh-theme-tarkov",
+          "packageVersion": "0.4.1",
+          "integrity": "sha512-dj4PUl9ifcSi2ndiyePp1rDbD+xjGkaF7Vv8wl5f7cgNaJAt87wulBucp1tLRAxgYMrJ/x2fC/vq19d2Z0XERw=="
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/banner.png",
+        "https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/hero-banner.png",
+        "https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/settings-panel.jpg",
+        "https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/assets/bg/for-humanity.jpg",
+        "https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/bgm-dock.png",
+        "https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/assets/pet/altyn.png",
+        "https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/status.png"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/hero-banner.png",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ],
+        "scan": {
+          "commit": "0919b705a5661c05310afe6dee8d920b1d2000e6",
+          "packageVersion": "0.4.1",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:51.838Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1118,
+      "starsSnapshot": 29,
+      "releaseUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "metadataUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "starsUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "updatedAt": "2026-11-11T06:41:11.005Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2ba7bc3dc9fbefa6d927f175ac1398bc.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2ba7bc3dc9fbefa6d927f175ac1398bc.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2ba7bc3dc9fbefa6d927f175ac1398bc.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2ba7bc3dc9fbefa6d927f175ac1398bc.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ea5040adcdd4db47232dbe88977945a7.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ea5040adcdd4db47232dbe88977945a7.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ef5be3b22bb9c801fafaa6ba9acaef0d.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ef5be3b22bb9c801fafaa6ba9acaef0d.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/cc5f62233fdceb8ad9b8844b0de8c39d.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/cc5f62233fdceb8ad9b8844b0de8c39d.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7543a536eda25ecf55d5ee227798bff8.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/7543a536eda25ecf55d5ee227798bff8.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8c89fe50935c29ff858d08756081f910.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8c89fe50935c29ff858d08756081f910.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f9044447714c601e194eab36be01e1c7.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f9044447714c601e194eab36be01e1c7.full.webp"
+          }
+        ]
+      }
+    },
+    {
       "id": "cyberwei922.dsh-cyberwhale",
       "name": {
         "zh": "dsh-cyberwhale",
@@ -60795,6 +61024,95 @@
       }
     },
     {
+      "id": "soviet-dreadnaught.dsh-theme-longmarch",
+      "name": {
+        "zh": "dsh-theme-longmarch",
+        "en": "dsh-theme-longmarch"
+      },
+      "author": "Soviet-Dreadnaught",
+      "description": "长征机 · dsh-theme-longmarch",
+      "repo": "https://github.com/Soviet-Dreadnaught/dsh-theme-longmarch",
+      "package": "dsh-theme-longmarch",
+      "rowId": "dsh-theme-longmarch",
+      "category": "skin",
+      "tags": [
+        "wallpaper",
+        "pastel",
+        "token-theme",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Soviet-Dreadnaught/dsh-theme-longmarch#557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0",
+        "version": "1.2.0",
+        "commit": "557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Soviet-Dreadnaught/dsh-theme-longmarch/557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0/docs/demo.gif",
+        "https://raw.githubusercontent.com/Soviet-Dreadnaught/dsh-theme-longmarch/557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0/docs/presets.jpg"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/Soviet-Dreadnaught/dsh-theme-longmarch/557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0/docs/demo.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0",
+          "packageVersion": "1.2.0",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:27:04.040Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1122,
+      "starsSnapshot": 12,
+      "releaseUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "metadataUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "starsUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "updatedAt": "2026-11-11T06:41:11.005Z",
+      "media": {
+        "screenshots": [
+          null,
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2b2147678bf94017b3d5baa7b84bd238.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2b2147678bf94017b3d5baa7b84bd238.full.webp"
+          }
+        ]
+      }
+    },
+    {
       "id": "ysppwn721.better-dsh-pet",
       "name": {
         "zh": "better-dsh-pet",
@@ -60884,6 +61202,107 @@
       "metadataUpdatedAt": "2026-11-11T00:07:28.933Z",
       "starsUpdatedAt": "2026-11-11T00:12:55.909Z",
       "updatedAt": "2026-11-11T00:07:28.933Z"
+    },
+    {
+      "id": "tabmk.dsh-theme-ascetic",
+      "name": {
+        "zh": "dsh-theme-ascetic",
+        "en": "dsh-theme-ascetic"
+      },
+      "author": "TABmk",
+      "description": "ASCetic — compact ASCII / terminal theme for DeepSeek Harness: 19 palettes, 3 densities, vim-style status line, ascii.rest art",
+      "repo": "https://github.com/TABmk/dsh-theme-ascetic",
+      "package": "dsh-theme-ascetic",
+      "rowId": "ui-theme-ascetic",
+      "category": "skin",
+      "tags": [
+        "retro",
+        "pastel",
+        "motion",
+        "token-theme"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:TABmk/dsh-theme-ascetic#d71fafd145fb0807057f020c152c27ad08f8d8ce",
+        "version": "0.3.3",
+        "commit": "d71fafd145fb0807057f020c152c27ad08f8d8ce",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/palettes.png",
+        "https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/session.png",
+        "https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/terminal.png"
+      ],
+      "listScreenshot": "https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/palettes.png",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "d71fafd145fb0807057f020c152c27ad08f8d8ce",
+          "packageVersion": "0.3.3",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:27:11.351Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1124,
+      "starsSnapshot": 10,
+      "releaseUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "metadataUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "starsUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "updatedAt": "2026-11-11T06:41:11.005Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/10122328adbb0ab11c5dcafe90796774.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/10122328adbb0ab11c5dcafe90796774.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/10122328adbb0ab11c5dcafe90796774.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/10122328adbb0ab11c5dcafe90796774.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e518895c3cf441dac5d682b54e21479d.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e518895c3cf441dac5d682b54e21479d.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/32fe87bd1336e9bbce098fac9ee630de.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/32fe87bd1336e9bbce098fac9ee630de.full.webp"
+          }
+        ]
+      }
     },
     {
       "id": "cookiesheep.whale-on-desk",
@@ -61354,6 +61773,206 @@
           {
             "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/06a1fc615b16da39f371d6f7bc808826.preview.webp",
             "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/06a1fc615b16da39f371d6f7bc808826.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "9livewolf.dsh-think-bounce-pet",
+      "name": {
+        "zh": "dsh-think-bounce-pet",
+        "en": "dsh-think-bounce-pet"
+      },
+      "author": "9livewolf",
+      "description": "DeepSeek Harness Web UI 的「思考弹球宠物」插件：让两只大肥鱼在界面里弹来弹去，无实意。",
+      "repo": "https://github.com/9livewolf/dsh-think-bounce-pet",
+      "package": "dsh-think-bounce-pet",
+      "rowId": "think-bounce-pet",
+      "category": "pet",
+      "tags": [
+        "appearance"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:9livewolf/dsh-think-bounce-pet#3bfe9cb32afea176937379351af39dfd46f955f4",
+        "version": "0.1.0",
+        "commit": "3bfe9cb32afea176937379351af39dfd46f955f4",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/home.gif",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/home.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "improve",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。",
+          "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。"
+        ],
+        "scan": {
+          "commit": "3bfe9cb32afea176937379351af39dfd46f955f4",
+          "packageVersion": "0.1.0",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:59.503Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1130,
+      "starsSnapshot": 18,
+      "releaseUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "metadataUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "starsUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "updatedAt": "2026-11-11T06:41:11.005Z",
+      "media": {
+        "screenshots": [
+          null,
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f3d62687c7369e390e99d81dba63af32.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f3d62687c7369e390e99d81dba63af32.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/691a73da56b44b551f702193667566a3.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/691a73da56b44b551f702193667566a3.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e13124ee7ac7edd843e8b03941cca3ac.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e13124ee7ac7edd843e8b03941cca3ac.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "solispark.deepseek-harness-shorekeeper-theme",
+      "name": {
+        "zh": "deepseek-harness-shorekeeper-theme",
+        "en": "deepseek-harness-shorekeeper-theme"
+      },
+      "author": "SoliSpark",
+      "description": "守岸人主题 · Shorekeeper Theme",
+      "repo": "https://github.com/SoliSpark/deepseek-harness-shorekeeper-theme",
+      "package": "@local/dsh-shorekeeper-startup",
+      "rowId": "shorekeeper-startup",
+      "category": "skin",
+      "tags": [
+        "wallpaper",
+        "glass",
+        "motion",
+        "token-theme"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:SoliSpark/deepseek-harness-shorekeeper-theme#62fff8c257649bd11554eb48c3c04e380a817024",
+        "version": "1.2.1",
+        "commit": "62fff8c257649bd11554eb48c3c04e380a817024",
+        "desktop": {
+          "mode": "manual-only",
+          "reason": "npm-package-not-found"
+        }
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/launch.gif",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/home.gif",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/launch.gif",
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。"
+        ],
+        "scan": {
+          "commit": "62fff8c257649bd11554eb48c3c04e380a817024",
+          "packageVersion": "1.2.1",
+          "scannerVersion": "static-v2",
+          "mode": "static",
+          "result": "pass",
+          "checkedAt": "2026-11-10T12:26:50.705Z",
+          "findings": []
+        }
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1131,
+      "starsSnapshot": 31,
+      "releaseUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "metadataUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "starsUpdatedAt": "2026-11-11T06:41:11.005Z",
+      "updatedAt": "2026-11-11T06:41:11.005Z",
+      "media": {
+        "screenshots": [
+          null,
+          null,
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/9270006d00b2fe4aaf635b7869c8a690.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/9270006d00b2fe4aaf635b7869c8a690.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/96755b8df55f7e5ac47c0a1b0d81b3f8.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/96755b8df55f7e5ac47c0a1b0d81b3f8.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/60c0b4d0f6bd2ee712f1dec665224477.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/60c0b4d0f6bd2ee712f1dec665224477.full.webp"
           }
         ]
       }
@@ -62465,6 +63084,13 @@
       "integrity": "sha512-PJ0GrtfuZvcgkewPFlQoxKkj5nuNXUlxWaM/a3NHOlq54M4688ysTaoS0C4DFIT07vNFjYYUF9RaH86XSt+DJA==",
       "repository": "https://github.com/zhang66633/dsh-pixel-ui",
       "gitHead": "ebbbec1ae661a69a9b85b00a2a53234219ad62a6"
+    },
+    "zhigengniao258.dsh-theme-tarkov": {
+      "name": "dsh-theme-tarkov",
+      "version": "0.4.1",
+      "integrity": "sha512-dj4PUl9ifcSi2ndiyePp1rDbD+xjGkaF7Vv8wl5f7cgNaJAt87wulBucp1tLRAxgYMrJ/x2fC/vq19d2Z0XERw==",
+      "repository": "https://github.com/ZHIGENGNIAO258/dsh-theme-tarkov",
+      "gitHead": "0919b705a5661c05310afe6dee8d920b1d2000e6"
     },
     "zhijun-dai.catppuccin": {
       "name": "dsh-catppuccin",

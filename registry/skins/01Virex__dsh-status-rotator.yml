@@ -1,0 +1,69 @@
+id: 01virex.dsh-status-rotator
+name:
+  zh: dsh-status-rotator
+  en: dsh-status-rotator
+author: 01Virex
+description: A DeepSeek Harness (DSH) client plugin that replaces Deep diving... / 深度求索中... with editable phrases while preserving the host's elapsed-time clock.
+repo: https://github.com/01Virex/dsh-status-rotator
+package: dsh-status-rotator
+rowId: status-rotator
+category: skin
+tags:
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:01Virex/dsh-status-rotator#9b1321ce8cf7662f3c09892269a7b08f905dcd68
+  version: 0.38.0
+  commit: 9b1321ce8cf7662f3c09892269a7b08f905dcd68
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-status-rotator
+    packageVersion: 0.38.0
+    integrity: sha512-vLa1XyRsZUsYm1E+CTlT/lH8V74jVBcyFiZ3T4k5PUQV7MfYubC8ojtc1OevsXPRqV4eQ1nLFMVeAIl/umT/ew==
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/status-preview.gif
+  - https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/whale-motions.gif
+  - https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/appearance-themes.png
+  - https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/danmaku-preview.png
+  - https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/desktop-npm-install.png
+listScreenshot: https://raw.githubusercontent.com/01Virex/dsh-status-rotator/9b1321ce8cf7662f3c09892269a7b08f905dcd68/assets/readme/status-preview.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 9b1321ce8cf7662f3c09892269a7b08f905dcd68
+    packageVersion: 0.38.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:26:25.858Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1106
+starsSnapshot: 229
+releaseUpdatedAt: 2026-11-11T06:41:11.005Z
+metadataUpdatedAt: 2026-11-11T06:41:11.005Z
+starsUpdatedAt: 2026-11-11T06:41:11.005Z
+updatedAt: 2026-11-11T06:41:11.005Z

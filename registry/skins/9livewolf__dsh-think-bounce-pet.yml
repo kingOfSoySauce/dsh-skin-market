@@ -1,0 +1,65 @@
+id: 9livewolf.dsh-think-bounce-pet
+name:
+  zh: dsh-think-bounce-pet
+  en: dsh-think-bounce-pet
+author: 9livewolf
+description: DeepSeek Harness Web UI 的「思考弹球宠物」插件：让两只大肥鱼在界面里弹来弹去，无实意。
+repo: https://github.com/9livewolf/dsh-think-bounce-pet
+package: dsh-think-bounce-pet
+rowId: think-bounce-pet
+category: pet
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:9livewolf/dsh-think-bounce-pet#3bfe9cb32afea176937379351af39dfd46f955f4
+  version: 0.1.0
+  commit: 3bfe9cb32afea176937379351af39dfd46f955f4
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/home.gif
+  - skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/home.png
+  - skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/conversation.png
+  - skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/settings.png
+listScreenshot: skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/home.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 3bfe9cb32afea176937379351af39dfd46f955f4
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:26:59.503Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1130
+starsSnapshot: 18
+releaseUpdatedAt: 2026-11-11T06:41:11.005Z
+metadataUpdatedAt: 2026-11-11T06:41:11.005Z
+starsUpdatedAt: 2026-11-11T06:41:11.005Z
+updatedAt: 2026-11-11T06:41:11.005Z

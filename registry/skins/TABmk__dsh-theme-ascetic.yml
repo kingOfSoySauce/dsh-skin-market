@@ -1,0 +1,65 @@
+id: tabmk.dsh-theme-ascetic
+name:
+  zh: dsh-theme-ascetic
+  en: dsh-theme-ascetic
+author: TABmk
+description: "ASCetic — compact ASCII / terminal theme for DeepSeek Harness: 19 palettes, 3 densities, vim-style status line, ascii.rest art"
+repo: https://github.com/TABmk/dsh-theme-ascetic
+package: dsh-theme-ascetic
+rowId: ui-theme-ascetic
+category: skin
+tags:
+  - retro
+  - pastel
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:TABmk/dsh-theme-ascetic#d71fafd145fb0807057f020c152c27ad08f8d8ce
+  version: 0.3.3
+  commit: d71fafd145fb0807057f020c152c27ad08f8d8ce
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/palettes.png
+  - https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/session.png
+  - https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/terminal.png
+listScreenshot: https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/palettes.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d71fafd145fb0807057f020c152c27ad08f8d8ce
+    packageVersion: 0.3.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:27:11.351Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1124
+starsSnapshot: 10
+releaseUpdatedAt: 2026-11-11T06:41:11.005Z
+metadataUpdatedAt: 2026-11-11T06:41:11.005Z
+starsUpdatedAt: 2026-11-11T06:41:11.005Z
+updatedAt: 2026-11-11T06:41:11.005Z
