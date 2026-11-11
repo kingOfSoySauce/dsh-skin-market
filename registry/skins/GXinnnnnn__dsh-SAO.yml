@@ -1,0 +1,64 @@
+id: gxinnnnnn.dsh.sao
+name:
+  zh: dsh-SAO
+  en: dsh-SAO
+author: GXinnnnnn
+description: 刀剑神域主题：双 Link Start 启动动画与桐人／亚丝娜语音，可选全部功能或仅限启动动画，启动白底以真实透明通道自然透出已加载界面；明暗主题色独立记忆、界面底色与本机字体、完整设置主题与清晰控件状态；液态玻璃边缘折射与方向反光，减轻整圈泛白，亦可选磨砂；浮层跟随当前页面取景，仅折射实际可见壁纸；分组件透明度、连续右栏与上下文玻璃、紧凑标签与单行读数；九张壁纸、本地图片或 4K／5K 循环视频及静态省电；模型思考强度滑条。
+repo: https://github.com/GXinnnnnn/dsh-SAO
+package: "@local/dsh-sao-link-start"
+rowId: sao-link-start
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:GXinnnnnn/dsh-SAO#62d34b4dde554e6082a2d7713e993d033efbc705
+  version: 1.0.5
+  commit: 62d34b4dde554e6082a2d7713e993d033efbc705
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/GXinnnnnn__dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/home.gif
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/ad085b71d91995625b5f5b6cd35850024af29317/assets/screenshots/settings-clean.png
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/ad085b71d91995625b5f5b6cd35850024af29317/assets/screenshots/settings-mode-clean.png
+  - https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/assets/screenshots/workspace.png
+listScreenshot: skin-screenshots/GXinnnnnn__dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/home.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 62d34b4dde554e6082a2d7713e993d033efbc705
+    packageVersion: 1.0.5
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:11:50.618Z
+    findings: []
+license:
+  code: SEE LICENSE IN LICENSE
+  commercialUse: false
+featuredRank: 1000
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-06T00:08:18.130Z
+updatedAt: 2026-11-10T00:42:47.982Z
