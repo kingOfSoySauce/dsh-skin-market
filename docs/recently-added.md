@@ -1819,16 +1819,16 @@ GitHub：[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
-<!-- dsh-auto-entry:gxinnnnnn.dsh.sao -->
-### 2026-11-12 · dsh-SAO
+<!-- dsh-auto-entry:hello-heyongping.dsh-helloai-theme -->
+### 2026-11-12 · dsh-helloai-theme
 
-作者：GXinnnnnn
+作者：hello-heyongping
 
-刀剑神域风格皮肤：双 Link Start 启动动画与桐人／亚丝娜语音，可选择全部功能或仅限启动动画；主题配色、带主题色的大圆角玻璃设置、液态与磨砂玻璃、独立透明度和连续右栏背景；紧凑通透的会话标签与单行状态读数；九张内置壁纸、本地图片及 4K／5K 静音循环视频，支持静态省电；配有模型思考强度滑条。
+HelloAI Theme: ten selectable color themes for the DeepSeek Harness web GUI, plus an inline editor to add, reference, edit, rename and delete your own themes, with optional glass styling and token overrides.
 
-GitHub：[GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO)
+GitHub：[hello-heyongping/dsh-helloai-theme](https://github.com/hello-heyongping/dsh-helloai-theme)
 
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/GXinnnnnn__dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/home.gif" width="60%" alt="dsh-SAO">
+<img src="https://raw.githubusercontent.com/hello-heyongping/dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/docs/screenshot-theme-editor.png" width="60%" alt="dsh-helloai-theme">
 
 <!-- dsh-auto-entry:taoser258.dsh-client-ui-skin-qingxiao -->
 ### 2026-11-12 · dsh-client-ui-skin-qingxiao
@@ -1840,6 +1840,17 @@ GitHub：[GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO)
 GitHub：[taoser258/dsh-client-ui-skin-qingxiao](https://github.com/taoser258/dsh-client-ui-skin-qingxiao)
 
 <img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/preset-dark.gif" width="60%" alt="dsh-client-ui-skin-qingxiao">
+
+<!-- dsh-auto-entry:gxinnnnnn.dsh.sao -->
+### 2026-11-12 · dsh-SAO
+
+作者：GXinnnnnn
+
+刀剑神域风格皮肤：双 Link Start 启动动画与桐人／亚丝娜语音，可选择全部功能或仅限启动动画；主题配色、带主题色的大圆角玻璃设置、液态与磨砂玻璃、独立透明度和连续右栏背景；紧凑通透的会话标签与单行状态读数；九张内置壁纸、本地图片及 4K／5K 静音循环视频，支持静态省电；配有模型思考强度滑条。
+
+GitHub：[GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/GXinnnnnn__dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/home.gif" width="60%" alt="dsh-SAO">
 
 <!-- dsh-auto-entry:nwflower.dsh-claude-style -->
 ### 2026-11-12 · dsh-claude-style
@@ -3512,17 +3523,6 @@ GitHub：[hbgdjb/dsh-entry-transition](https://github.com/hbgdjb/dsh-entry-trans
 GitHub：[He2way/dsh-task-console](https://github.com/He2way/dsh-task-console)
 
 <img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/He2way__dsh-task-console/eacfe1cbdf5b9e06fa1d4d2e99a4083114a562fe/home.gif" width="60%" alt="dsh-task-console">
-
-<!-- dsh-auto-entry:hello-heyongping.dsh-helloai-theme -->
-### 2026-11-10 · dsh-helloai-theme
-
-作者：hello-heyongping
-
-HelloAI Theme: ten selectable color themes for the DeepSeek Harness web GUI, plus an inline editor to add, reference, edit, rename and delete your own themes, with optional glass styling and token overrides.
-
-GitHub：[hello-heyongping/dsh-helloai-theme](https://github.com/hello-heyongping/dsh-helloai-theme)
-
-<img src="https://raw.githubusercontent.com/hello-heyongping/dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/docs/screenshot-theme-editor.png" width="60%" alt="dsh-helloai-theme">
 
 <!-- dsh-auto-entry:hey.ruomei.dsh.music.player -->
 ### 2026-11-10 · dsh-music-player-heyruome

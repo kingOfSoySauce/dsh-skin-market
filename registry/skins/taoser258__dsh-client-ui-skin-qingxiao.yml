@@ -38,10 +38,6 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/home.png
-  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/conversation.png
-  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/settings.png
 screenshots:
   - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/preset-dark.gif
   - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/preset-light.gif
@@ -73,9 +69,13 @@ health:
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
-featuredRank: 1041
 starsSnapshot: 11
+marketScreenshots:
+  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/home.png
+  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/conversation.png
+  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/settings.png
+featuredRank: 1041
 releaseUpdatedAt: 2026-11-12T00:10:12.467Z
-metadataUpdatedAt: 2026-11-12T00:10:12.467Z
+metadataUpdatedAt: 2026-11-12T01:34:30.192Z
 starsUpdatedAt: 2026-10-24T21:31:18.197Z
-updatedAt: 2026-11-12T00:10:12.467Z
+updatedAt: 2026-11-12T01:34:30.192Z
