@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   createFailureRepairPrompt,
+  existingSourceGuide,
   failureHelpLinks,
   interceptNotice,
   isInterceptFailure,
@@ -31,6 +32,27 @@ function failed(kind: NonNullable<Operation['failure']>['kind'], message: string
   }
 }
 
+describe('unreachable installed source', () => {
+  it('names the blocking package and keeps the repair outside this DSH', () => {
+    const commit = 'd'.repeat(40)
+    const steps = existingSourceGuide({
+      failure: { kind: 'existing-source-unreachable', message: 'blocked', packageName: 'dead-skin', unreachableSource: { repository: 'owner/dead', commit } },
+      kind: 'uninstall',
+      targetName: '测试皮肤',
+      targetPackage: 'skin',
+      profile: 'web',
+      profileDir: '/Users/leon/.dsh/profiles/web',
+    })!
+    expect(steps.map(step => step.id)).toEqual(['manual', 'command', 'agent'])
+    expect(steps[0]?.body).toContain('不要在市场里卸载 dead-skin')
+    expect(steps[1]?.copy).toBe('npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile-dir /Users/leon/.dsh/profiles/web --apply --yes --i-have-stopped-dsh')
+    expect(steps[2]?.copy).toContain('DSH 以外的 Agent')
+    expect(steps[2]?.copy).toContain('不要中断')
+    expect(steps[2]?.copy).toContain('卸载「测试皮肤」')
+    expect(existingSourceGuide({ failure: { kind: 'fetch-404', message: 'missing' }, targetName: '测试皮肤' })).toBeNull()
+  })
+})
+
 describe('failure repair handoff', () => {
   const options = { operation: failed('unexpected-store', 'store mismatch'), skin, hostKind: 'desktop' as const }
 
@@ -45,7 +67,7 @@ describe('failure repair handoff', () => {
     }
   })
 
-  it.each(['unexpected-store', 'lockfile-outdated', 'lockfile-broken', 'pnpm-missing', 'disk-full', 'permission', 'network', 'fetch-timeout', 'fetch-404', 'no-matching-version', 'script-timeout'] as const)('offers a bounded local investigation for %s', kind => {
+  it.each(['unexpected-store', 'lockfile-outdated', 'lockfile-broken', 'pnpm-missing', 'disk-full', 'permission', 'network', 'fetch-timeout', 'fetch-404', 'existing-source-unreachable', 'no-matching-version', 'script-timeout'] as const)('offers a bounded local investigation for %s', kind => {
     const prompt = createFailureRepairPrompt({ ...options, operation: failed(kind, 'local failure') })!
     expect(prompt).toContain(`排查类别：${kind}`)
     expect(prompt).toContain(skin.package)
@@ -152,7 +174,7 @@ describe('failure help', () => {
   it('sends catalog mismatches to market maintainers and preserves precise host recovery actions', () => {
     const mismatch = interceptNotice(failed('command', '目录元数据与包实际声明不一致'), skin.name.zh, skin)
     expect(mismatch.links).toEqual([{ href: MARKET_REPORT_URL, label: '反馈市场问题' }])
-    for (const [code, next] of [['stop-profile', '重试卸载'], ['unknown-plugin', '刷新官方插件页'], ['unaddressable', '组件标识'], ['management-required', '宿主支持的管理入口']] as const) {
+    for (const [code, next] of [['stop-profile', '重试卸载'], ['unknown-plugin', '刷新官方插件页'], ['unaddressable', '组件标识'], ['management-required', '官方插件页手动完成']] as const) {
       const operation = failed('command', 'host failure', { failure: { kind: 'command', message: 'host failure', code } })
       const notice = interceptNotice(operation, skin.name.zh, skin)
       expect(notice.why).toContain(next)
@@ -170,9 +192,9 @@ describe('failure help', () => {
 
   it('attaches the skin commit link to a packaging intercept', () => {
     const notice = interceptNotice(failed('command', `${skin.package} bundle patch is missing: ./cordis.patch.yml`), '液态玻璃', skin)
-    expect(notice.title).toBe('已拦截安装')
-    expect(notice.what).toBe('「液态玻璃」的安装包缺少必要文件。')
-    expect(notice.why).toContain('先核对安装目标与包文件')
+    expect(notice.title).toBe('安装已阻止')
+    expect(notice.what).toBe('「液态玻璃」的安装包文件缺少必要文件。')
+    expect(notice.why).toContain('请复制日志反馈作者')
     expect(`${notice.what}${notice.why}`).not.toMatch(/cordis|patch|package\.json|profile|files/)
     expect(notice.links).toEqual([{ href: `https://github.com/a/b/tree/${'a'.repeat(40)}`, label: '打开皮肤仓库' }])
   })
@@ -181,7 +203,7 @@ describe('failure help', () => {
     const notice = interceptNotice(failed('compatibility', '插件依赖不兼容', { kind: 'update' }), '测试皮肤', skin)
     expect(notice.title).toBe('更新未完成')
     expect(notice.what).toBe('「测试皮肤」未通过当前 DSH 的兼容检查。')
-    expect(notice.why).toContain('宿主版本与皮肤声明')
+    expect(notice.why).toContain('DSH 版本与皮肤声明的兼容范围')
     expect(notice.what).not.toContain('没有改动')
     expect(`${notice.what}${notice.why}`).not.toMatch(/授权|豁免|忽略检查/)
   })
@@ -199,7 +221,7 @@ describe('failure help', () => {
     const notice = marketUpdateNotice({
       failure: { kind: 'command', code: 'already-installed', message: '自动替换未完成', manualSpec: spec },
     })
-    expect(notice.what).toBe('自动替换未完成。')
+    expect(notice.what).toBe('当前安装不能直接覆盖，需要手动替换。')
     expect(notice.why).toBe(`请在官方插件页先卸载当前包，再添加 ${spec}。`)
     expect(notice.copySpec).toBe(spec)
     expect(interceptNotice(failed('command', '宿主拒绝安装', { failure: { kind: 'command', message: '宿主拒绝安装', manualSpec: 'dsh-test@1.1.0' } }), '测试皮肤').copySpec).toBe('dsh-test@1.1.0')
@@ -241,7 +263,7 @@ describe('failure help', () => {
     ].join('\n')
     const notice = interceptNotice(failed('command', message), '测试皮肤', skin)
     expect(notice.what).toBe('「测试皮肤」：插件缺少运行所需的文件或依赖。')
-    expect(notice.why).toContain('安装未完成、宿主依赖和插件声明')
+    expect(notice.why).toContain('请重新安装')
     expect(`${notice.what}${notice.why}`).not.toMatch(/diagnostic log|operationId|\[info\]|\[error\]|Cannot find|example/)
   })
 
@@ -264,17 +286,17 @@ describe('failure help', () => {
 
   it('keeps long or unknown diagnostics in logs and shows one short next step', () => {
     const long = `Error: ${'x'.repeat(1_000)}\n${'at installer\n'.repeat(20)}`
-    expect(interceptNotice(failed('command', long), '测试皮肤').why).toBe('请复制日志反馈。')
+    expect(interceptNotice(failed('command', long), '测试皮肤').why).toBe('请复制日志反馈给市场维护者。')
     const override = '启停设置已保存，但被其他配置覆盖，尚未生效'
-    expect(interceptNotice(failed('command', override), '测试皮肤').why).toBe('请复制日志反馈。')
+    expect(interceptNotice(failed('command', override), '测试皮肤').why).toBe('请复制日志反馈给市场维护者。')
     const exportWithoutError = '# dsh-skin-market diagnostic log\nversion: 0.1.60\noperationId: test\n[info] operation: install example'
-    expect(interceptNotice(failed('command', exportWithoutError), '测试皮肤').why).toBe('请复制日志反馈。')
+    expect(interceptNotice(failed('command', exportWithoutError), '测试皮肤').why).toBe('请复制日志反馈给市场维护者。')
   })
 
   it('gives an overridden enablement one concise action instead of repeated restart advice', () => {
     const notice = interceptNotice(failed('command', '目标组件被更高优先级配置停用；重复重启无效。', { kind: 'activate', application: 'overridden' }), '龙之继承者', skin)
     expect(notice.what).toBe('「龙之继承者」被其他设置禁用。')
-    expect(notice.why).toContain('检查覆盖来源')
+    expect(notice.why).toContain('核对覆盖来源')
     expect(notice.links).toEqual([])
     expect(`${notice.what}${notice.why}`).not.toMatch(/重启|profile|已停止/)
     const disable = interceptNotice(failed('command', '启停被覆盖', { kind: 'deactivate', application: 'overridden' }), '龙之继承者', skin)
@@ -311,7 +333,7 @@ describe('failure help', () => {
       artifactRisk: { context: 'opaque-artifact-context', packageName: skin.package, version: '1.0.0', warnings: [raw] },
     } })
     const notice = interceptNotice(operation, '测试皮肤', skin)
-    expect(notice.what).toBe('「测试皮肤」的安装包未通过市场核验，使用后可能导致页面异常。')
+    expect(notice.what).toBe('「测试皮肤」的安装包文件未通过市场核验，使用后可能导致页面异常。')
     expect(notice.why).toBe('')
     expect(notice.links).toEqual([])
     expect(notice).not.toHaveProperty('warnings')
@@ -335,7 +357,7 @@ describe('failure help', () => {
 
   it.each([
     ['conflict', '发现插件安装冲突：RAW_DIAGNOSTIC_MARKER', '与已安装插件冲突', '仅停用未必能解除安装冲突'],
-    ['command', '市场目录元数据与包实际声明不一致：RAW_DIAGNOSTIC_MARKER', '安装信息与安装包不一致', '反馈市场维护者'],
+    ['command', '市场目录元数据与包实际声明不一致：RAW_DIAGNOSTIC_MARKER', '安装信息与安装包不一致', '反馈市场问题'],
     ['disk-full', 'ENOSPC RAW_DIAGNOSTIC_MARKER', '磁盘空间不足', '释放空间'],
     ['permission', 'EACCES RAW_DIAGNOSTIC_MARKER', '应用无权写入安装目录', '检查目录权限'],
     ['command', '官方管理操作后构件与原有版本不一致 RAW_DIAGNOSTIC_MARKER', '插件状态尚未确认', '核对实际状态'],
@@ -345,6 +367,23 @@ describe('failure help', () => {
     expect(notice.why).toContain(next)
     expect(`${notice.what}${notice.why}`).not.toContain('RAW_DIAGNOSTIC_MARKER')
     expect(notice.links.length).toBeLessThanOrEqual(1)
+  })
+
+  it('names the installed package in a conflict and keeps that fact in the repair prompt', () => {
+    const operation = failed('conflict', '发现插件安装冲突', { failure: {
+      kind: 'conflict',
+      message: '发现插件安装冲突',
+      conflicts: [{ kind: 'loader', incoming: skin.package, existing: 'other-skin', identifiers: ['theme.row'] }],
+    } })
+    const notice = interceptNotice(operation, '测试皮肤', skin)
+    expect(notice.details).toEqual(['「other-skin」正在使用，与这次安装冲突，标识 theme.row。先关闭再继续安装。'])
+    expect(notice.why).toBe('请先在官方插件页停用或卸载 other-skin，再安装这个皮肤。')
+    expect(notice.copySpec).toBe(skin.package)
+    const prompt = createFailureRepairPrompt({ operation, skin, hostKind: 'dsh' })
+    expect(prompt).toContain('other-skin')
+    expect(prompt).toContain('theme.row')
+    expect(prompt).toContain(skin.package)
+    expect(prompt).toContain(skin.install.target)
   })
 
   it('does not mistake an earlier recovered warning for the terminal error or override a structured Host category', () => {
@@ -401,7 +440,7 @@ describe('failure help', () => {
   })
 
   it.each([
-    'release-age', 'network', 'fetch-timeout', 'build-approval', 'fetch-404', 'adding-to-root',
+    'release-age', 'network', 'fetch-timeout', 'build-approval', 'fetch-404', 'existing-source-unreachable', 'adding-to-root',
     'not-a-workspace', 'unexpected-store', 'compatibility', 'conflict', 'command', 'lockfile-outdated',
     'lockfile-broken', 'script-timeout', 'pnpm-missing', 'no-matching-version', 'disk-full', 'permission', 'integrity',
   ] as const)('limits %s notices to one help link and short controlled text', kind => {

@@ -19,8 +19,11 @@ install:
   version: 1.13.2
   commit: ebbbec1ae661a69a9b85b00a2a53234219ad62a6
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-pixel-ui
+    packageVersion: 1.13.2
+    integrity: sha512-PJ0GrtfuZvcgkewPFlQoxKkj5nuNXUlxWaM/a3NHOlq54M4688ysTaoS0C4DFIT07vNFjYYUF9RaH86XSt+DJA==
   npm:
     name: dsh-pixel-ui
     version: 1.13.2
@@ -32,7 +35,7 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/44454483bbdbbba60822bb7a1d2846ff94ed021c/assets/screenshot-wood.png
+  - https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/ebbbec1ae661a69a9b85b00a2a53234219ad62a6/assets/screenshot-wood.png
   - https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/44454483bbdbbba60822bb7a1d2846ff94ed021c/assets/screenshot-paper.png
 listScreenshot: https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/44454483bbdbbba60822bb7a1d2846ff94ed021c/assets/screenshot-wood.png
 review:
@@ -60,9 +63,9 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 4
 featuredRank: 1053
-starsSnapshot: 3
-releaseUpdatedAt: 2026-11-01T22:47:39.961Z
+releaseUpdatedAt: 2026-11-09T00:14:24.144Z
 metadataUpdatedAt: 2026-11-01T22:47:39.961Z
-starsUpdatedAt: 2026-10-23T22:02:40.368Z
-updatedAt: 2026-11-01T22:47:39.961Z
+starsUpdatedAt: 2026-11-07T05:33:38.409Z
+updatedAt: 2026-11-09T00:14:24.144Z

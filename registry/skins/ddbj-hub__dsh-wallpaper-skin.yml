@@ -37,10 +37,6 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ddbj-hub__dsh-wallpaper-skin/75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ddbj-hub__dsh-wallpaper-skin/75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ddbj-hub__dsh-wallpaper-skin/75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -68,9 +64,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 152
 starsSnapshot: 1
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ddbj-hub__dsh-wallpaper-skin/75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ddbj-hub__dsh-wallpaper-skin/75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ddbj-hub__dsh-wallpaper-skin/75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7/settings.png
+featuredRank: 152
 releaseUpdatedAt: 2026-08-23T05:31:07.142Z
-metadataUpdatedAt: 2026-08-23T05:31:07.142Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-09-09T21:39:46.084Z
-updatedAt: 2026-09-09T21:39:46.084Z
+updatedAt: 2026-11-10T00:42:47.982Z

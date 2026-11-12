@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Obwiler__dsh-tsnet-skin-pilot/419d080cefc4f4f814164bf83c37eb5e343d9a1c/home.png
-  - skin-screenshots/Obwiler__dsh-tsnet-skin-pilot/419d080cefc4f4f814164bf83c37eb5e343d9a1c/conversation.png
-  - skin-screenshots/Obwiler__dsh-tsnet-skin-pilot/419d080cefc4f4f814164bf83c37eb5e343d9a1c/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/Obwiler__dsh-tsnet-skin-pilot/419d080cefc4f4f814164bf83c37eb5e343d9a1c/home.png
+  - skin-screenshots/Obwiler__dsh-tsnet-skin-pilot/419d080cefc4f4f814164bf83c37eb5e343d9a1c/conversation.png
+  - skin-screenshots/Obwiler__dsh-tsnet-skin-pilot/419d080cefc4f4f814164bf83c37eb5e343d9a1c/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:03.031Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:03.031Z
+updatedAt: 2026-11-11T13:17:15.192Z

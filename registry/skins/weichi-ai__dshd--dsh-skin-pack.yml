@@ -30,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/weichi-ai/dshd/d58ba7d34876ae4ab7a2267b3f048561054bac49/docs/assets/img/dshd-pics/opt/1.webp
   - https://raw.githubusercontent.com/weichi-ai/dshd/d58ba7d34876ae4ab7a2267b3f048561054bac49/docs/assets/img/dshd-pics/opt/2.webp
+listScreenshot: https://raw.githubusercontent.com/weichi-ai/dshd/d58ba7d34876ae4ab7a2267b3f048561054bac49/docs/assets/img/dshd-pics/opt/1.webp
 review:
   compatibility: unverified
   preview: verified
@@ -55,10 +56,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1082
 starsSnapshot: 1
+featuredRank: 1082
 releaseUpdatedAt: 2026-09-07T21:58:53.001Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-09T00:16:54.969Z
 starsUpdatedAt: 2026-09-07T21:58:53.001Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/weichi-ai/dshd/d58ba7d34876ae4ab7a2267b3f048561054bac49/docs/assets/img/dshd-pics/opt/1.webp
+updatedAt: 2026-11-09T00:16:54.969Z

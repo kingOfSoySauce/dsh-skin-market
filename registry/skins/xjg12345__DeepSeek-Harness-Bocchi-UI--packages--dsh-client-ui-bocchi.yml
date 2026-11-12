@@ -31,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/xjg12345/DeepSeek-Harness-Bocchi-UI/8db16c00422d89451a045b6887c9bffa75ba5743/assets/image-20260816193230630.png
   - https://raw.githubusercontent.com/xjg12345/DeepSeek-Harness-Bocchi-UI/8db16c00422d89451a045b6887c9bffa75ba5743/assets/image-20260816193252214.png
+listScreenshot: https://raw.githubusercontent.com/xjg12345/DeepSeek-Harness-Bocchi-UI/8db16c00422d89451a045b6887c9bffa75ba5743/assets/image-20260816193230630.png
 review:
   compatibility: verified
   preview: verified
@@ -56,10 +57,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1103
 starsSnapshot: 0
+featuredRank: 1103
 releaseUpdatedAt: 2026-09-07T21:59:05.455Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-09T07:18:43.630Z
 starsUpdatedAt: 2026-09-07T21:59:05.455Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/xjg12345/DeepSeek-Harness-Bocchi-UI/8db16c00422d89451a045b6887c9bffa75ba5743/assets/image-20260816193230630.png
+updatedAt: 2026-11-09T07:18:43.630Z

@@ -22,8 +22,11 @@ install:
   version: 3.3.0
   commit: d421c052afea6683bff9c5dacf93d3580d1eafe6
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-asuka-school-theme
+    packageVersion: 3.3.0
+    integrity: sha512-AMOYTVFxpChziWDm5XFDkJ0vkL+rVK69kNNW+ZrFJ5KZzTfNPkhIrAz8Ok/5ku94kpmLAnCWCtse1DPSGT5G8A==
   npm:
     name: dsh-asuka-school-theme
     version: 3.3.0
@@ -63,9 +66,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1105
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-24T21:34:12.163Z
+featuredRank: 1105
+releaseUpdatedAt: 2026-11-09T07:18:53.923Z
 metadataUpdatedAt: 2026-10-24T21:34:12.163Z
 starsUpdatedAt: 2026-09-07T21:59:06.230Z
-updatedAt: 2026-10-24T21:34:12.163Z
+updatedAt: 2026-11-09T07:18:53.923Z

@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lengzhanbao/dsh-taffy-theme#056b452c385360de51bc016c009dbc0a5140e0cb
-  version: 0.2.2
-  commit: 056b452c385360de51bc016c009dbc0a5140e0cb
+  target: github:lengzhanbao/dsh-taffy-theme#321ef7b52a2e2b0bfff5f9de8783dc5fe648596a
+  version: 0.2.7
+  commit: 321ef7b52a2e2b0bfff5f9de8783dc5fe648596a
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -50,22 +50,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.6 未被本次检测范围 >=0.2.1-rc.2 <0.3.0 完全覆盖（固定版本 056b452c385360de51bc016c009dbc0a5140e0cb）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.6 未被本次检测范围 >=0.2.1-rc.2 <0.3.0 完全覆盖（固定版本 321ef7b52a2e2b0bfff5f9de8783dc5fe648596a）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 056b452c385360de51bc016c009dbc0a5140e0cb
-    packageVersion: 0.2.2
+    commit: 321ef7b52a2e2b0bfff5f9de8783dc5fe648596a
+    packageVersion: 0.2.7
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.2 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-21T22:17:58.693Z
+    checkedAt: 2026-11-08T00:17:45.921Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1017
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-21T22:18:00.701Z
-metadataUpdatedAt: 2026-10-21T22:18:00.701Z
+featuredRank: 1017
+releaseUpdatedAt: 2026-11-08T00:17:47.598Z
+metadataUpdatedAt: 2026-11-08T00:17:47.598Z
 starsUpdatedAt: 2026-09-18T21:37:52.184Z
-updatedAt: 2026-10-21T22:18:00.701Z
+updatedAt: 2026-11-08T00:17:47.598Z

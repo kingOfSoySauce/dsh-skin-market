@@ -1,0 +1,70 @@
+id: xxue-z.deepseek-harness-skin
+name:
+  zh: deepseek-harness-skin
+  en: deepseek-harness-skin
+author: xxue-z
+description: DeepSeek Harness 壁纸与半透明面板主题系统，带主题管理、导入与生成能力。
+repo: https://github.com/xxue-z/deepseek-harness-skin
+package: "@xxue-z/dsh-skin"
+rowId: dsh-skin
+category: skin
+tags:
+  - appearance
+  - animation
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:xxue-z/deepseek-harness-skin#f93ebced727dced2769da65a17a9430d44c2a096
+  version: 1.0.20
+  commit: f93ebced727dced2769da65a17a9430d44c2a096
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/preset-crayon.gif
+  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/preset-whale.gif
+listScreenshot: skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/preset-crayon.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: f93ebced727dced2769da65a17a9430d44c2a096
+    packageVersion: 1.0.20
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:18:44.872Z
+    findings: []
+license:
+  code: NOASSERTION
+  commercialUse: false
+  notice: 固定版本 package 未声明 license，市场不替作者扩大授权范围。
+starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/home.png
+  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/conversation.png
+  - skin-screenshots/xxue-z__deepseek-harness-skin/f93ebced727dced2769da65a17a9430d44c2a096/settings.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-04T14:29:50+08:00
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
+starsUpdatedAt: 2026-11-04T14:29:50+08:00
+updatedAt: 2026-11-11T13:17:15.192Z

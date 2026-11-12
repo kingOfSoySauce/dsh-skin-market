@@ -18,8 +18,11 @@ install:
   version: 1.3.0
   commit: 27e56fc720e9887f4ff697e85e314089c0e7160f
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: lx-music-for-dsh
+    packageVersion: 1.3.0
+    integrity: sha512-w6dQImQk7mVQ7JsHRcUGYZPW93mEcG1YyO7rO1yn1gEJ6xlHL5J0iePS6TM6wZ8u14/W3eJnBnLYdQlHxB6n9Q==
   allowBuild: lx-music-for-dsh@https://codeload.github.com/CyberryRe/lx_music-for-dsh/tar.gz/27e56fc720e9887f4ff697e85e314089c0e7160f
   npm:
     name: lx-music-for-dsh
@@ -31,6 +34,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/CyberryRe__lx_music-for-dsh/27e56fc720e9887f4ff697e85e314089c0e7160f/home.png
+  - skin-screenshots/CyberryRe__lx_music-for-dsh/27e56fc720e9887f4ff697e85e314089c0e7160f/conversation.png
+  - skin-screenshots/CyberryRe__lx_music-for-dsh/27e56fc720e9887f4ff697e85e314089c0e7160f/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -64,11 +71,7 @@ license:
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 4
-releaseUpdatedAt: 2026-10-27T23:00:56.486Z
-metadataUpdatedAt: 2026-10-30T03:53:37.429Z
+releaseUpdatedAt: 2026-11-09T00:14:06.457Z
+metadataUpdatedAt: 2026-11-09T00:14:06.457Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-30T03:53:37.429Z
-marketScreenshots:
-  - skin-screenshots/CyberryRe__lx_music-for-dsh/27e56fc720e9887f4ff697e85e314089c0e7160f/home.png
-  - skin-screenshots/CyberryRe__lx_music-for-dsh/27e56fc720e9887f4ff697e85e314089c0e7160f/conversation.png
-  - skin-screenshots/CyberryRe__lx_music-for-dsh/27e56fc720e9887f4ff697e85e314089c0e7160f/settings.png
+updatedAt: 2026-11-09T00:14:06.457Z

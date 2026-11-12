@@ -25,10 +25,6 @@ compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -56,9 +52,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 997
 starsSnapshot: 3
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/settings.png
+featuredRank: 997
 releaseUpdatedAt: 2026-08-23T10:16:48.742Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-09-09T21:39:41.590Z
-updatedAt: 2026-09-09T21:39:41.590Z
+updatedAt: 2026-11-10T00:42:47.982Z

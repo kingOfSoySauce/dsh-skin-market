@@ -32,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/i1j/dsh-krill-theme/8711e44fd5e9ae94c1913a2bda09be28162432d3/assets/theme-dark-1.0.png
   - https://raw.githubusercontent.com/i1j/dsh-krill-theme/8711e44fd5e9ae94c1913a2bda09be28162432d3/assets/theme-light-1.0.png
   - https://raw.githubusercontent.com/i1j/dsh-krill-theme/8711e44fd5e9ae94c1913a2bda09be28162432d3/assets/plankton-1.0.apng
+listScreenshot: https://raw.githubusercontent.com/i1j/dsh-krill-theme/8711e44fd5e9ae94c1913a2bda09be28162432d3/assets/theme-dark-1.0.png
 review:
   compatibility: unverified
   preview: verified
@@ -57,9 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 79
 starsSnapshot: 1
+featuredRank: 79
 releaseUpdatedAt: 2026-08-23T05:31:23.709Z
-metadataUpdatedAt: 2026-08-23T05:31:23.709Z
+metadataUpdatedAt: 2026-11-09T00:16:10.787Z
 starsUpdatedAt: 2026-09-09T21:40:22.504Z
-updatedAt: 2026-09-09T21:40:22.504Z
+updatedAt: 2026-11-09T00:16:10.787Z

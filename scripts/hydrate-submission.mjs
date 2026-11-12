@@ -78,9 +78,8 @@ function prefix(target, path) {
 function readmeImages(text, target, sha) {
   if (typeof text !== 'string') return []
   const values = []
-  for (const match of text.matchAll(/!\[[^\]]*\]\(\s*(?:<([^>]+)>|([^\s)]+))/gi)) {
-    const raw = match[1] ?? match[2]
-    if (typeof raw !== 'string') continue
+  for (const raw of readmeImageValues(text)) {
+    if (typeof raw !== 'string' || raw.startsWith('data:') || raw.startsWith('#')) continue
     try {
       const absolute = new URL(raw, `https://raw.githubusercontent.com/${target.fullName}/${sha}/${prefix(target, '')}`)
       if (IMAGE_EXTENSION.test(absolute.pathname)) values.push(absolute.href)
@@ -89,9 +88,69 @@ function readmeImages(text, target, sha) {
   return [...new Set(values)].slice(0, 6)
 }
 
+/** Extract inline, reference and HTML image sources from a pinned README. */
+export function readmeImageValues(text) {
+  if (typeof text !== 'string') return []
+  const values = []
+  const definitions = new Map()
+  for (const match of text.matchAll(/^[ \t]{0,3}\[([^\]]+)\]:\s*(?:<([^>]+)>|(\S+))/gm)) definitions.set(match[1].trim().toLowerCase(), match[2] ?? match[3])
+  for (const match of text.matchAll(/!\[[^\]]*\]\(\s*(?:<([^>]+)>|([^\s)]+))/gi)) values.push(match[1] ?? match[2])
+  for (const match of text.matchAll(/!\[([^\]]*)\]\[([^\]]*)\]/g)) {
+    const label = (match[2] || match[1]).trim().toLowerCase()
+    if (definitions.has(label)) values.push(definitions.get(label))
+  }
+  for (const match of text.matchAll(/!\[([^\]]+)\](?![\[(])/g)) {
+    const label = match[1].trim().toLowerCase()
+    if (definitions.has(label)) values.push(definitions.get(label))
+  }
+  for (const match of text.matchAll(/<(?:img|source)\b[^>]*>/gi)) {
+    const src = /\bsrc\s*=\s*(?:"([^"]+)"|'([^']+)'|([^\s>]+))/i.exec(match[0])
+    if (src) values.push(src[1] ?? src[2] ?? src[3])
+    const srcset = /\bsrcset\s*=\s*(?:"([^"]+)"|'([^']+)'|([^\s>]+))/i.exec(match[0])
+    if (srcset) {
+      for (const candidate of (srcset[1] ?? srcset[2] ?? srcset[3]).split(',')) {
+        const value = candidate.trim().split(/\s+/)[0]
+        if (value) values.push(value)
+      }
+    }
+  }
+  return [...new Set(values.filter(value => typeof value === 'string' && value !== ''))]
+}
+
+const DSH_VERSION = String.raw`0\.\d+\.\d+(?:-[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?(?:\+[0-9A-Za-z-]+)?`
+const DSH_COMPARATOR = String.raw`(?:>=|<=|>|<|\^|~|=)?\s*${DSH_VERSION}`
+const DSH_RANGE = new RegExp(String.raw`${DSH_COMPARATOR}(?:\s+${DSH_COMPARATOR})*(?:\s*\|\|\s*${DSH_COMPARATOR}(?:\s+${DSH_COMPARATOR})*)*`, 'g')
+const DSH_KEYWORD = /DSH\b|DeepSeek[-\s]Harness|Harness\b|官方 Desktop|\bDesktop\b|\bWeb\b|兼容|支持/g
+const NEWER_THAN_STATED = /^\s*(?:及以上|以上|或更高|及更新|或更新|and newer|or newer|and above|or later)/i
+
+/**
+ * Read the Web / official Desktop DSH version declaration from a README.
+ * A repo may state both tracks, so every nearby declaration is kept as a
+ * separate `||` clause instead of silently dropping the Desktop one.
+ */
+export function statedDshCompatibility(readme) {
+  if (typeof readme !== 'string' || readme.trim() === '') return null
+  const ranges = []
+  for (const keyword of readme.matchAll(DSH_KEYWORD)) {
+    const start = (keyword.index ?? 0) + keyword[0].length
+    const lineEnd = readme.indexOf('\n', start)
+    const window = readme.slice(start, lineEnd < 0 ? undefined : lineEnd).slice(0, 160)
+    DSH_RANGE.lastIndex = 0
+    const match = DSH_RANGE.exec(window)
+    if (match === null) continue
+    const raw = match[0].replace(/\s+/g, ' ').trim()
+    // A bare stable package version is usually not a host compatibility claim.
+    if (!/[<>=^~]/.test(raw) && !/-[0-9A-Za-z]/.test(raw)) continue
+    const tail = window.slice((match.index ?? 0) + match[0].length)
+    ranges.push(/[<>=^~]/.test(raw) || !NEWER_THAN_STATED.test(tail) ? raw : `>=${raw}`)
+  }
+  const unique = [...new Set(ranges)]
+  return unique.length === 0 ? null : unique.slice(0, 4).join(' || ')
+}
+
 function compatibility(pkg, readme) {
-  const stated = /(?:DSH|DeepSeek Harness|Harness|兼容|支持)[^\n]{0,120}?((?:>=|\^|~)?\s*0\.1\.0-rc\.\d+)/i.exec(readme ?? '')?.[1]
-  if (stated) return stated.replace(/\s+/g, '')
+  const stated = statedDshCompatibility(readme)
+  if (stated) return stated
   const groups = [pkg.peerDependencies ?? {}, pkg.dependencies ?? {}, pkg.devDependencies ?? {}]
   const candidates = groups.flatMap(group => Object.entries(group).filter(([name]) => name.startsWith('@deepseek-ai/dsh-')))
   const dependency = candidates.map(([, version]) => String(version)).find(version => /\d/.test(version) && !version.startsWith('workspace:'))

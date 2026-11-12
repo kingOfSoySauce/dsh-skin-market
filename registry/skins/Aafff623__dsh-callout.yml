@@ -25,17 +25,37 @@ compatibility:
   dsh: ">=0.1.2-rc.1"
   platform:
     - web
-screenshots: []
+screenshots:
+  - https://raw.githubusercontent.com/Aafff623/dsh-callout/0e92c135644be8d84601ea846098f2799ef4dcf7/assets/readme/hero-pixel-1.png
+listScreenshot: https://raw.githubusercontent.com/Aafff623/dsh-callout/0e92c135644be8d84601ea846098f2799ef4dcf7/assets/readme/hero-pixel-1.png
 review:
   compatibility: unverified
-  preview: repository-card
+  preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 0e92c135644be8d84601ea846098f2799ef4dcf7
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-10-26T09:09:37.269Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-01T00:00:00.000Z
-metadataUpdatedAt: 2026-11-02T00:00:00.000Z
+metadataUpdatedAt: 2026-11-03T01:36:56.745Z
 starsUpdatedAt: 2026-11-01T00:00:00.000Z
-updatedAt: 2026-11-02T00:00:00.000Z
+updatedAt: 2026-11-03T01:36:56.745Z

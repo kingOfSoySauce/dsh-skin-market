@@ -37,8 +37,10 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 21ffb6ccfc2d2238efdd79ac1a4d0f74582c0640
     packageVersion: 2.2.0
@@ -50,9 +52,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 998
 starsSnapshot: 2
+featuredRank: 998
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T00:14:44.857Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T00:14:44.857Z

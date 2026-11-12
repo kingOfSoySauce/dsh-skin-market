@@ -9,7 +9,8 @@ import { compatibilityContext } from '../src/compatibility.ts'
 import { exportLogs, sanitizeLogText } from '../src/log.ts'
 import { officialDesktopRunner, type OfficialPluginManagerLike } from '../src/official-desktop.ts'
 import { atomicWriteJson, atomicWriteText, inspectSkinArtifactRisk, isSkinArtifactRiskAcknowledged, packageDir, profilePatchFile, readDependencies, readMarketState, readProfileBundles, writeMarketState } from '../src/profile.ts'
-import type { DshRuntime, LoaderEntry, Operation, SkinEntry } from '../src/types.ts'
+import type { DshRuntime, LoaderEntry, SkinEntry } from '../src/types.ts'
+import { conditionWaiter, operationWaiter } from './fixtures/operations.ts'
 
 const directories: string[] = []
 const lifecycles: SkinLifecycle[] = []
@@ -66,18 +67,8 @@ function deferred<T = unknown>() {
   return { promise, resolve, reject }
 }
 
-async function until(predicate: () => boolean): Promise<void> {
-  for (let index = 0; index < 200; index++) {
-    if (predicate()) return
-    await new Promise(resolve => setTimeout(resolve, 2))
-  }
-  throw new Error('lifecycle condition did not settle')
-}
-
-async function finished(operation: Operation): Promise<Operation> {
-  await until(() => ['done', 'failed', 'cancelled'].includes(operation.phase))
-  return operation
-}
+const until = conditionWaiter({ intervalMs: 2, message: 'lifecycle condition did not settle' })
+const finished = operationWaiter({ intervalMs: 2, message: 'lifecycle condition did not settle' })
 
 /** The fake Host owns package files and selection, just as the real manager does. */
 function fixture(catalog: SkinEntry[], options: { lifecycleWaitMs?: number; hostVersion?: string; saveRange?: boolean } = {}) {
@@ -1156,6 +1147,7 @@ describe('official plugin manager lifecycle', () => {
     const failed = await finished(host.lifecycle.begin('update', item.id))
     expect(failed.phase).toBe('failed')
     expect(failed.failure?.manualSpec).toBe(`${item.package}@1.1.0`)
+    expect(failed.failure?.manualFollowUp).toBe('uninstall-then-add')
     expect(failed.message).toContain(`请在官方插件页先卸载当前包，再添加 ${item.package}@1.1.0。`)
     expect(host.manager.removeBundle).toHaveBeenCalledWith(item.package)
   })

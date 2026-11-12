@@ -1,0 +1,64 @@
+id: soviet-dreadnaught.dsh-theme-longmarch
+name:
+  zh: dsh-theme-longmarch
+  en: dsh-theme-longmarch
+author: Soviet-Dreadnaught
+description: 长征机 · dsh-theme-longmarch
+repo: https://github.com/Soviet-Dreadnaught/dsh-theme-longmarch
+package: dsh-theme-longmarch
+rowId: dsh-theme-longmarch
+category: skin
+tags:
+  - wallpaper
+  - pastel
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Soviet-Dreadnaught/dsh-theme-longmarch#557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0
+  version: 1.2.0
+  commit: 557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Soviet-Dreadnaught/dsh-theme-longmarch/557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0/docs/demo.gif
+  - https://raw.githubusercontent.com/Soviet-Dreadnaught/dsh-theme-longmarch/557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0/docs/presets.jpg
+listScreenshot: https://raw.githubusercontent.com/Soviet-Dreadnaught/dsh-theme-longmarch/557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0/docs/demo.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 557eae9c06c25ce8e6c0db0c85e7d8c7eca11ba0
+    packageVersion: 1.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:10:58.661Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 12
+featuredRank: 1122
+releaseUpdatedAt: 2026-11-11T06:41:11.005Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
+starsUpdatedAt: 2026-11-11T06:41:11.005Z
+updatedAt: 2026-11-11T13:17:15.192Z

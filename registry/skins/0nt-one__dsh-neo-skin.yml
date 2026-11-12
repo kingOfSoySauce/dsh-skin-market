@@ -30,6 +30,7 @@ screenshots:
   - https://raw.githubusercontent.com/0nt-one/dsh-neo-skin/fe5ef0e671fab5ab8c8700013f3966eb9642455f/screenshots/app-light.png
   - https://raw.githubusercontent.com/0nt-one/dsh-neo-skin/fe5ef0e671fab5ab8c8700013f3966eb9642455f/screenshots/app-dark.png
   - https://raw.githubusercontent.com/0nt-one/dsh-neo-skin/fe5ef0e671fab5ab8c8700013f3966eb9642455f/screenshots/newspaper.png
+listScreenshot: https://raw.githubusercontent.com/0nt-one/dsh-neo-skin/fe5ef0e671fab5ab8c8700013f3966eb9642455f/screenshots/app-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -55,9 +56,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 74
 starsSnapshot: 5
+featuredRank: 74
 releaseUpdatedAt: 2026-08-23T05:29:15.158Z
-metadataUpdatedAt: 2026-08-23T05:29:15.158Z
+metadataUpdatedAt: 2026-11-09T00:13:53.612Z
 starsUpdatedAt: 2026-10-21T22:17:32.968Z
-updatedAt: 2026-10-21T22:17:32.968Z
+updatedAt: 2026-11-09T00:13:53.612Z

@@ -1,0 +1,73 @@
+id: leerolling.dsh-boot-suite
+name:
+  zh: dsh-boot-suite
+  en: dsh-boot-suite
+author: LeeRolling
+description: DeepSeek Harness 开机套件 —— 六幕开机动画 + 聊天壁纸。 一个插件，两个半侧：冷启动的仪式感，和进入聊天后的那张底图。 v2.2.0 起分幕是数据：可以换成任意幕数（124）的模板。
+repo: https://github.com/LeeRolling/dsh-boot-suite
+package: dsh-boot-suite
+rowId: dsh-boot-suite
+category: splash
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:LeeRolling/dsh-boot-suite#baec191c80fa057cab690997e269392dc9ca841e
+  version: 2.16.11
+  commit: baec191c80fa057cab690997e269392dc9ca841e
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-boot-suite
+    packageVersion: 2.16.11
+    integrity: sha512-2V0eql2cu2iVMb5O8jGWKa9sjWpRMmNJGKQRUpjPgRnvGQUaEQ0oi87Ilawm1X3q+zVR1UJ0HitcUiusAp46Cg==
+  npm:
+    name: dsh-boot-suite
+    version: 2.16.11
+    integrity: sha512-2V0eql2cu2iVMb5O8jGWKa9sjWpRMmNJGKQRUpjPgRnvGQUaEQ0oi87Ilawm1X3q+zVR1UJ0HitcUiusAp46Cg==
+    repository: https://github.com/LeeRolling/dsh-boot-suite
+    gitHead: baec191c80fa057cab690997e269392dc9ca841e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/LeeRolling__dsh-boot-suite/baec191c80fa057cab690997e269392dc9ca841e/launch.gif
+listScreenshot: skin-screenshots/LeeRolling__dsh-boot-suite/baec191c80fa057cab690997e269392dc9ca841e/launch.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: baec191c80fa057cab690997e269392dc9ca841e
+    packageVersion: 2.16.11
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:10:14.902Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 128
+featuredRank: 1109
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-11T00:07:28.933Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

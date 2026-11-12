@@ -3,6 +3,7 @@ import { join } from 'node:path'
 import Ajv from 'ajv/dist/2020.js'
 import { decodeCatalogWire, encodeCatalogWire } from './catalog-wire.ts'
 import { githubInstallTarget, parseGithubTarget } from './install-resolution.ts'
+import { localizedSkinNameRecord } from './localized-copy.ts'
 import { atomicWriteJson } from './profile.ts'
 import { isVersionRange } from './semver.ts'
 import type { CatalogFile, CatalogSkin, SkinEntry } from './types.ts'
@@ -203,11 +204,15 @@ export function recommend(current: SkinEntry, catalog: SkinEntry[], stars: Reado
 
 export async function catalogWithStars(_profileDir: string, catalog = loadCatalog()): Promise<CatalogSkin[]> {
   const starMap = new Map(catalog.skins.map(skin => [skin.id, skin.starsSnapshot]))
-  return catalog.skins.map(skin => ({
+  return catalog.skins.map(skin => {
+    const localizedCopy = catalog.displayCopy?.skins[skin.id]
+    return {
     ...skin,
+    ...(localizedCopy === undefined ? {} : { name: localizedSkinNameRecord(skin.name, localizedCopy), localizedCopy }),
     githubStars: skin.starsSnapshot,
     starsStale: false,
     recommendations: recommend(skin, catalog.skins, starMap),
     ...(catalog.heat?.[skin.id] === undefined ? {} : { heat: catalog.heat[skin.id] }),
-  }))
+    }
+  })
 }

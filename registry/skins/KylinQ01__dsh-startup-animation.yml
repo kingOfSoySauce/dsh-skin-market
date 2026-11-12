@@ -1,0 +1,69 @@
+id: kylinq01.dsh-startup-animation
+name:
+  zh: dsh-startup-animation
+  en: dsh-startup-animation
+author: KylinQ01
+description: 🌸 给 DeepSeek Harness 的开机动画 + 主界面壁纸：多层动效 + 鼠标视差，两张图可在设置里自由更换并实时预览
+repo: https://github.com/KylinQ01/dsh-startup-animation
+package: dsh-startup-animation
+rowId: dsh-startup-animation
+category: skin
+tags:
+  - appearance
+  - animation
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:KylinQ01/dsh-startup-animation#3a8c57a8fe2113b81ff861e9fc4589ad9bae6460
+  version: 2.1.0
+  commit: 3a8c57a8fe2113b81ff861e9fc4589ad9bae6460
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成 DSH Web 隔离运行验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/preset-eco.gif
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/preset-fancy.gif
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.gif
+listScreenshot: skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/preset-eco.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 3a8c57a8fe2113b81ff861e9fc4589ad9bae6460
+    packageVersion: 2.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:11:30.188Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 8
+marketScreenshots:
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.png
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/conversation.png
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/settings.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

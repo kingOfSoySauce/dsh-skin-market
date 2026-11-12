@@ -1,14 +1,17 @@
-import { mkdirSync, mkdtempSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { mkdirSync } from 'node:fs'
 import { join } from 'node:path'
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import { atomicWriteJson } from '../src/profile.ts'
 import { companionAsSkin, discoverMonorepoTarget, githubInstallTarget, githubPathQuery, npmInstallTarget, parseGithubTarget, preferredInstallTarget } from '../src/install-resolution.ts'
 import { loadCatalog } from '../src/catalog.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
+
+afterEach(cleanupTempDirs)
 
 describe('install resolution', () => {
   it('prefers an exact npm source and parses immutable GitHub targets', () => {
-    const base = loadCatalog().skins[0]
+    const base = catalogFixtureSkin()
     const skin = {
       ...base,
       install: {
@@ -23,8 +26,8 @@ describe('install resolution', () => {
   })
 
   it('redirects a root GitHub collection to its unique DSH child package', () => {
-    const directory = mkdtempSync(join(tmpdir(), 'skin-resolution-'))
-    const base = loadCatalog().skins[0]
+    const directory = tempDir('skin-resolution-')
+    const base = catalogFixtureSkin()
     const commit = 'a'.repeat(40)
     const root = join(directory, 'node_modules', 'repo-root')
     mkdirSync(join(root, 'packages', 'skin'), { recursive: true })
@@ -36,8 +39,8 @@ describe('install resolution', () => {
   })
 
   it('rejects an ambiguous collection instead of guessing a child', () => {
-    const directory = mkdtempSync(join(tmpdir(), 'skin-resolution-'))
-    const base = loadCatalog().skins[0]
+    const directory = tempDir('skin-resolution-')
+    const base = catalogFixtureSkin()
     const commit = 'b'.repeat(40)
     const root = join(directory, 'node_modules', 'repo-root')
     mkdirSync(join(root, 'packages', 'one'), { recursive: true })

@@ -14,12 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:wilsonchengassistant/dsh-media-web-preview#8f7d0dcce0a34d22407d1a306ee8254b3cf63c67
+  target: github:wilsonchengassistant/dsh-media-web-preview#eb1ae92be47e2e79022e72599957643f1357a105
   version: 1.0.0
-  commit: 8f7d0dcce0a34d22407d1a306ee8254b3cf63c67
+  commit: eb1ae92be47e2e79022e72599957643f1357a105
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-media-web-preview
+    packageVersion: 1.0.0
+    integrity: sha512-Kt03s3Rc1YFF759jR7AAMrl5Aoxjwi5jn5Nl1E5jqRb8qxD6NCaUlvJ8dAD6eqZuIXn4iNcHEhMZWGIiC4hqiw==
+  npm:
+    name: dsh-media-web-preview
+    version: 1.0.0
+    integrity: sha512-Kt03s3Rc1YFF759jR7AAMrl5Aoxjwi5jn5Nl1E5jqRb8qxD6NCaUlvJ8dAD6eqZuIXn4iNcHEhMZWGIiC4hqiw==
+    repository: https://github.com/wilsonchengassistant/dsh-media-web-preview
+    gitHead: eb1ae92be47e2e79022e72599957643f1357a105
 compatibility:
   dsh: unverified
   platform:
@@ -35,27 +44,28 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 8f7d0dcce0a34d22407d1a306ee8254b3cf63c67
+    commit: eb1ae92be47e2e79022e72599957643f1357a105
     packageVersion: 1.0.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:10:30.876Z
+    checkedAt: 2026-11-09T07:18:38.379Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 starsSnapshot: 0
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+releaseUpdatedAt: 2026-11-09T07:18:38.839Z
+metadataUpdatedAt: 2026-11-09T07:18:38.839Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:00:28.784Z
+updatedAt: 2026-11-09T07:18:38.839Z

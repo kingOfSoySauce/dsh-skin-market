@@ -128,3 +128,37 @@ test('normalizes a historical empty npmSources map once and invalidates its time
   assert.equal(next.generatedAt, nextTime)
   assert.equal(Object.hasOwn(next, 'npmSources'), false)
 })
+
+test('keeps localized display copy outside closed skin entries and invalidates its timestamp', () => {
+  const entries = [skin()]
+  const displayCopy = { skins: { 'owner.theme': { description: { en: 'A translated description.' } } } }
+  const previous = buildCatalogWire(entries, { generatedAt: firstTime })
+  const next = buildCatalogWire(entries, { previous, displayCopy, generatedAt: nextTime })
+  assert.deepEqual(next.displayCopy, displayCopy)
+  assert.equal(next.generatedAt, nextTime)
+  assert.equal(Object.hasOwn(next.skins[0], 'description'), false)
+  const stable = buildCatalogWire(entries, { previous: next, displayCopy: structuredClone(displayCopy), generatedAt: '2026-09-08T02:00:00.000Z' })
+  assert.equal(stable.generatedAt, nextTime)
+  assert.deepEqual(stable, next)
+})
+
+test('keeps localized display names and explicit description omission in the envelope', () => {
+  const entries = [skin(), skin('other.theme', null)]
+  const displayCopy = {
+    skins: {
+      'owner.theme': {
+        name: { zh: '落雪音乐', en: 'Luoxue Music' },
+        description: { zh: '中文描述', en: 'English description.' },
+        descriptionPolicy: 'show',
+      },
+      'other.theme': {
+        name: { zh: 'Claude Code', en: 'Claude Code' },
+        descriptionPolicy: 'omit',
+      },
+    },
+  }
+  const catalog = buildCatalogWire(entries, { displayCopy, generatedAt: firstTime })
+  assert.deepEqual(catalog.displayCopy, displayCopy)
+  assert.equal(Object.hasOwn(catalog.skins[0], 'name'), false)
+  assert.equal(Object.hasOwn(catalog.skins[0], 'description'), false)
+})

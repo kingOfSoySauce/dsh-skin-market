@@ -1,0 +1,72 @@
+id: gosomea.dsh-bigfish
+name:
+  zh: dsh-bigfish
+  en: dsh-bigfish
+author: gosomea
+description: 🐋 大肥鱼 · DSH Bigfish
+repo: https://github.com/gosomea/dsh-bigfish
+package: dsh-bigfish
+rowId: bigfish
+category: pet
+tags:
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - dark
+install:
+  target: github:gosomea/dsh-bigfish#47138f8c986dd8f8614c30395d91d562ea0a2d1d
+  version: 0.7.0-next.1
+  commit: 47138f8c986dd8f8614c30395d91d562ea0a2d1d
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/playful-motions.gif
+  - https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/bigfish-demo.gif
+  - https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/playful-sign.png
+  - https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/playful-preview-dark.png
+  - https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/waiting.png
+  - https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/working.png
+  - https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/tools.png
+  - https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/dark.png
+listScreenshot: https://raw.githubusercontent.com/gosomea/dsh-bigfish/47138f8c986dd8f8614c30395d91d562ea0a2d1d/docs/media/playful-motions.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 47138f8c986dd8f8614c30395d91d562ea0a2d1d
+    packageVersion: 0.7.0-next.1
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-10T12:26:53.158Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1119
+starsSnapshot: 26
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-10T18:11:15.809Z
+starsUpdatedAt: 2026-11-11T13:17:26.719Z
+updatedAt: 2026-11-11T13:17:26.719Z

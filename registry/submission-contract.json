@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "markers": {
+    "start": "<!-- submission-contract:START -->",
+    "end": "<!-- submission-contract:END -->"
+  },
+  "schemaFields": {
+    "id": "auto",
+    "name": "hard",
+    "author": "hard",
+    "description": "hard",
+    "repo": "auto",
+    "subpath": "author",
+    "package": "auto",
+    "rowId": "auto",
+    "category": "auto",
+    "tags": "auto",
+    "modes": "auto",
+    "install": "auto",
+    "compatibility": "auto",
+    "marketScreenshots": "recommended",
+    "listScreenshot": "recommended",
+    "screenshots": "author",
+    "media": "recommended",
+    "review": "auto",
+    "health": "auto",
+    "license": "auto",
+    "featuredRank": "auto",
+    "starsSnapshot": "auto",
+    "releaseUpdatedAt": "auto",
+    "metadataUpdatedAt": "auto",
+    "starsUpdatedAt": "auto",
+    "updatedAt": "auto"
+  },
+  "qualityTiers": {
+    "name": "soft",
+    "description": "soft",
+    "screenshots": "soft"
+  },
+  "authorFields": ["url", "subpath", "name", "author", "description", "screenshots"],
+  "autoFields": ["package", "rowId", "install", "license", "compatibility", "category", "tags", "modes"],
+  "softItems": [
+    { "zh": "可用预览图（上游或实机）", "en": "a usable preview image (upstream or captured)" },
+    { "zh": "双语展示名 / 描述", "en": "bilingual display name / description" },
+    { "zh": "动效 GIF（motion）", "en": "motion GIF" },
+    { "zh": "启动 launchGif（splash）", "en": "splash launchGif" }
+  ],
+  "recommendedItems": [
+    { "zh": "实机截图 `marketScreenshots`", "en": "captured `marketScreenshots`" },
+    { "zh": "封面 `listScreenshot`", "en": "cover `listScreenshot`" },
+    { "zh": "WebP `media`", "en": "WebP `media`" },
+    { "zh": "README 安装命令 / 版本范围（Web 与官方 Desktop）/ `dsh-plugin` topic", "en": "README install command / version range (Web and official Desktop) / `dsh-plugin` topic" },
+    { "zh": "Desktop 安装支持（npm 包或手动安装说明）", "en": "Desktop install support (npm package or manual install notes)" }
+  ]
+}

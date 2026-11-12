@@ -7,7 +7,8 @@ import { loadCatalog } from '../src/catalog.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { officialDesktopRunner, type OfficialPluginManagerLike } from '../src/official-desktop.ts'
 import { atomicWriteJson, atomicWriteText, packageDir, packageManifest, profilePatchFile, readDependencies, readMarketState, readProfileBundles, writeMarketState } from '../src/profile.ts'
-import type { LoaderEntry, Operation } from '../src/types.ts'
+import type { LoaderEntry } from '../src/types.ts'
+import { operationWaiter } from './fixtures/operations.ts'
 
 const directories: string[] = []
 const lifecycles: SkinLifecycle[] = []
@@ -18,13 +19,7 @@ afterEach(async () => {
   for (const directory of directories.splice(0)) rmSync(directory, { recursive: true, force: true })
 })
 
-async function finished(operation: Operation): Promise<Operation> {
-  for (let index = 0; index < 200; index++) {
-    if (['done', 'failed', 'cancelled'].includes(operation.phase)) return operation
-    await new Promise(resolve => setTimeout(resolve, 5))
-  }
-  throw new Error('operation did not settle')
-}
+const finished = operationWaiter({ intervalMs: 5, message: 'operation did not settle' })
 
 interface FixtureOptions {
   keepRuntimeAfterDisable?: boolean

@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:djh2203/dsh-refined#7fae424593a7343a8a5742b2e78976d6f1d0a2d5
-  version: 1.2.0
-  commit: 7fae424593a7343a8a5742b2e78976d6f1d0a2d5
+  target: github:djh2203/dsh-refined#4e10a254810c5cd1fa7bb058ab944e9a6400376c
+  version: 1.2.2
+  commit: 4e10a254810c5cd1fa7bb058ab944e9a6400376c
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -24,7 +24,9 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+screenshots:
+  - https://raw.githubusercontent.com/djh2203/dsh-refined/4e10a254810c5cd1fa7bb058ab944e9a6400376c/assets/screenshot-1.png
+listScreenshot: https://raw.githubusercontent.com/djh2203/dsh-refined/4e10a254810c5cd1fa7bb058ab944e9a6400376c/assets/screenshot-1.png
 review:
   compatibility: unverified
   preview: verified
@@ -35,27 +37,29 @@ health:
     readmeScreenshots: improve
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 7fae424593a7343a8a5742b2e78976d6f1d0a2d5
-    packageVersion: 1.2.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    commit: 4e10a254810c5cd1fa7bb058ab944e9a6400376c
+    packageVersion: 1.2.2
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:39:49.562Z
+    checkedAt: 2026-11-09T07:15:32.003Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 999
 starsSnapshot: 1
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T18:48:41.128Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:48:41.128Z
 marketScreenshots:
   - skin-screenshots/djh2203__dsh-refined/7fae424593a7343a8a5742b2e78976d6f1d0a2d5/home.png
   - skin-screenshots/djh2203__dsh-refined/7fae424593a7343a8a5742b2e78976d6f1d0a2d5/conversation.png
   - skin-screenshots/djh2203__dsh-refined/7fae424593a7343a8a5742b2e78976d6f1d0a2d5/settings.png
+featuredRank: 999
+releaseUpdatedAt: 2026-11-09T07:15:32.185Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-10-24T21:34:17.947Z
+updatedAt: 2026-11-10T00:42:47.982Z

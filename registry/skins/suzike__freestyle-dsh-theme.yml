@@ -6,7 +6,7 @@ author: suzike
 description: DeepSeek Harness 主题体验插件：OKLCH 主题提案 + 主题设计器（跨重启持久化）
 repo: https://github.com/suzike/freestyle-dsh-theme
 package: dsh-freestyle-theme
-rowId: theme
+rowId: freestyle-theme
 category: skin
 tags:
   - wallpaper
@@ -65,6 +65,6 @@ license:
 featuredRank: 41
 starsSnapshot: 12
 releaseUpdatedAt: 2026-10-21T22:17:15.852Z
-metadataUpdatedAt: 2026-10-21T22:17:15.852Z
+metadataUpdatedAt: 2026-11-09T06:46:09.101Z
 starsUpdatedAt: 2026-10-08T23:45:11.301Z
-updatedAt: 2026-10-21T22:17:15.852Z
+updatedAt: 2026-11-09T06:46:09.101Z

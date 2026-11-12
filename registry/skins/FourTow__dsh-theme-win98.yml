@@ -28,6 +28,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/FourTow/dsh-theme-win98/3d10ec0a2c86583fa96f3554fc3a14b87c59a1d7/assets/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/FourTow/dsh-theme-win98/3d10ec0a2c86583fa96f3554fc3a14b87c59a1d7/assets/screenshot.png
 review:
   compatibility: unverified
   preview: verified
@@ -53,10 +54,9 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 1
 featuredRank: 1092
-starsSnapshot: 0
 releaseUpdatedAt: 2026-09-07T21:58:58.544Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
-starsUpdatedAt: 2026-09-07T21:58:58.544Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/FourTow/dsh-theme-win98/3d10ec0a2c86583fa96f3554fc3a14b87c59a1d7/assets/screenshot.png
+metadataUpdatedAt: 2026-11-09T00:16:02.606Z
+starsUpdatedAt: 2026-11-03T01:37:34.271Z
+updatedAt: 2026-11-09T00:16:02.606Z

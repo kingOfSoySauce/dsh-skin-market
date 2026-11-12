@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/home.png
-  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/conversation.png
-  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -56,9 +52,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/home.png
+  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/conversation.png
+  - skin-screenshots/MicroSharpAnt__dsh-theme-presets/529d654bd30a8868e4429609fe10175fa95a7aaa/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:00.925Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:00.925Z
+updatedAt: 2026-11-11T13:17:15.192Z

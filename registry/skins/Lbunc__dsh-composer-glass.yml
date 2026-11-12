@@ -15,18 +15,12 @@ modes:
   - light
   - dark
 install:
-  target: github:Lbunc/dsh-composer-glass#28e347a2e68aa59890f7cea59ea7e29ff94ce6bd
-  version: 1.1.1
-  commit: 28e347a2e68aa59890f7cea59ea7e29ff94ce6bd
+  target: github:Lbunc/dsh-composer-glass#1b25e0df1305c4526092ebe8e316985e37a3878b
+  version: 1.1.2
+  commit: 1b25e0df1305c4526092ebe8e316985e37a3878b
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
-  npm:
-    name: dsh-composer-glass
-    version: 1.1.1
-    integrity: sha512-05h3aVIhf41AkIq2uMiIq93xtdwxIo4b/M9VIKS2gaGm+G48sEwQM1vCjRtiSCluZSzDUGBJ/z+3944GpRRkcQ==
-    repository: https://github.com/Lbunc/dsh-composer-glass
-    gitHead: 28e347a2e68aa59890f7cea59ea7e29ff94ce6bd
 compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
@@ -49,20 +43,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 28e347a2e68aa59890f7cea59ea7e29ff94ce6bd
-    packageVersion: 1.1.1
+    commit: 1b25e0df1305c4526092ebe8e316985e37a3878b
+    packageVersion: 1.1.2
     scannerVersion: static-v2
     dshVersion: ">=0.1.7-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:53:56.074Z
+    checkedAt: 2026-11-08T00:17:48.311Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
+starsSnapshot: 2
 featuredRank: 999
-releaseUpdatedAt: 2026-10-30T03:53:57.180Z
-metadataUpdatedAt: 2026-10-30T03:53:57.180Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T03:53:57.180Z
+releaseUpdatedAt: 2026-11-08T00:17:49.091Z
+metadataUpdatedAt: 2026-11-08T00:17:49.091Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

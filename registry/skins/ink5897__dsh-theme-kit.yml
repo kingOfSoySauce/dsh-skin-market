@@ -22,8 +22,11 @@ install:
   version: 0.1.4
   commit: 94af42b6136e3b82a944bea8b1dc179272931a02
   desktop:
-    mode: manual-only
-    reason: npm-version-mismatch
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-kit
+    packageVersion: 0.1.4
+    integrity: sha512-m5S7ZohVuqu8ypqWrZjm3Jy/HpEj28BuAtFlRBWjVoDTIOE2qA5tYfmVorOALyES0lnZygM2sFai2ROK/TSW4Q==
   npm:
     name: dsh-theme-kit
     version: 0.1.4
@@ -68,9 +71,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 80
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-28T23:50:55.504Z
+featuredRank: 80
+releaseUpdatedAt: 2026-11-09T00:15:03.891Z
 metadataUpdatedAt: 2026-09-28T23:50:55.504Z
 starsUpdatedAt: 2026-09-09T21:39:50.218Z
-updatedAt: 2026-09-28T23:50:55.504Z
+updatedAt: 2026-11-09T00:15:03.891Z

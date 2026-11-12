@@ -16,15 +16,12 @@ modes:
   - light
   - dark
 install:
-  target: github:dsh-plugins/dsh-thought-buddy#bb8f1aa5972aab844b0c9793f0793b34f4a486b8
-  version: 0.2.0
-  commit: bb8f1aa5972aab844b0c9793f0793b34f4a486b8
-  npm:
-    name: "@dsh-plugin/dsh-thought-buddy"
-    version: 0.2.0
-    integrity: sha512-revaKFPIowUWgQkdJdA/k61AWj62N18tp8spb1kupiu5g9q5rmklB+JhJQEruU/LREkaIJ8g98ASm31szd9dtg==
-    repository: https://github.com/dsh-plugins/dsh-thought-buddy
-    gitHead: bb8f1aa5972aab844b0c9793f0793b34f4a486b8
+  target: github:dsh-plugins/dsh-thought-buddy#2622864f3b29dc24691407c83cbba4b1f06517fd
+  version: 2.0.0
+  commit: 2622864f3b29dc24691407c83cbba4b1f06517fd
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -33,6 +30,7 @@ screenshots:
   - https://raw.githubusercontent.com/dsh-plugins/dsh-thought-buddy/bb8f1aa5972aab844b0c9793f0793b34f4a486b8/docs/banner.png
   - https://raw.githubusercontent.com/dsh-plugins/dsh-thought-buddy/bb8f1aa5972aab844b0c9793f0793b34f4a486b8/docs/effect.gif
   - https://raw.githubusercontent.com/dsh-plugins/dsh-thought-buddy/bb8f1aa5972aab844b0c9793f0793b34f4a486b8/docs/img.png
+listScreenshot: https://raw.githubusercontent.com/dsh-plugins/dsh-thought-buddy/dd8fc9056d22530085b2bfda44443a1788d979ab/docs/img.png
 review:
   compatibility: unverified
   preview: verified
@@ -48,16 +46,23 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 2622864f3b29dc24691407c83cbba4b1f06517fd
+    packageVersion: 2.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-10T09:19:54.318Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 29
-starsSnapshot: 2
-releaseUpdatedAt: 2026-08-16T12:16:21.589Z
-metadataUpdatedAt: 2026-08-20T06:32:43.426Z
-starsUpdatedAt: 2026-08-18T15:41:33.414Z
-updatedAt: 2026-08-20T06:32:43.426Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dsh-plugins__dsh-thought-buddy/bb8f1aa5972aab844b0c9793f0793b34f4a486b8/99c6cfa966e2.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dsh-plugins__dsh-thought-buddy/bb8f1aa5972aab844b0c9793f0793b34f4a486b8/d895d547ac18.gif
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dsh-plugins__dsh-thought-buddy/bb8f1aa5972aab844b0c9793f0793b34f4a486b8/955a0fdd5eca.png
+starsSnapshot: 8
+releaseUpdatedAt: 2026-11-10T09:19:55.914Z
+metadataUpdatedAt: 2026-11-10T09:19:55.914Z
+starsUpdatedAt: 2026-11-09T07:13:28.512Z
+updatedAt: 2026-11-10T09:19:55.914Z

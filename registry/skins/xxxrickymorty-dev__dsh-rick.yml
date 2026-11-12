@@ -6,7 +6,7 @@ author: xxxrickymorty-dev
 description: DeepSeek Harness 的 C-137 皮肤：28 张目录海报、自定义场景、霓虹外观，以及叠加层宠物（Rick、Morty、传送枪）。
 repo: https://github.com/xxxrickymorty-dev/dsh-rick
 package: dsh-rick
-rowId: dsh-rick
+rowId: c137
 category: skin
 tags:
   - glass
@@ -53,13 +53,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 196
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-14T22:17:33.631Z
-metadataUpdatedAt: 2026-10-30T03:54:26.646Z
-starsUpdatedAt: 2026-08-18 15:46:32.876000+00:00
-updatedAt: 2026-10-30T03:54:26.646Z
 marketScreenshots:
   - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/home.png
   - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/conversation.png
   - skin-screenshots/xxxrickymorty-dev__dsh-rick/91105ecd4d9f476cca06dfc7db769b2871f5c450/settings.png
+featuredRank: 196
+releaseUpdatedAt: 2026-10-14T22:17:33.631Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
+starsUpdatedAt: 2026-08-18 15:46:32.876000+00:00
+updatedAt: 2026-11-11T13:17:15.192Z

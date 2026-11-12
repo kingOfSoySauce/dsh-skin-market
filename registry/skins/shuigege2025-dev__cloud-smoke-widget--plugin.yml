@@ -30,6 +30,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/shuigege2025-dev/cloud-smoke-widget/0576b3cb2db00b1815a17f2eea110434f3584df4/preview/cloud-smoking.gif
+listScreenshot: https://raw.githubusercontent.com/shuigege2025-dev/cloud-smoke-widget/0576b3cb2db00b1815a17f2eea110434f3584df4/preview/cloud-smoking.gif
 review:
   compatibility: unverified
   preview: verified
@@ -56,10 +57,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1079
 starsSnapshot: 1
+featuredRank: 1079
 releaseUpdatedAt: 2026-09-07T21:58:51.056Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-09T00:16:47.685Z
 starsUpdatedAt: 2026-09-07T21:58:51.056Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/shuigege2025-dev/cloud-smoke-widget/0576b3cb2db00b1815a17f2eea110434f3584df4/preview/cloud-smoking.gif
+updatedAt: 2026-11-09T00:16:47.685Z

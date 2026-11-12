@@ -5,22 +5,22 @@ name:
 author: louke6572
 description: DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计
 repo: https://github.com/louke6572/dsh-whale-widget-plus
-package: dsh-whale-widget-plus
-rowId: dsh-whale-widget-plus
+package: dsh-dfy
+rowId: dsh-dfy
 category: pet
 tags:
   - pet
 modes:
   - light
 install:
-  target: github:louke6572/dsh-whale-widget-plus#8f5022e798d2b0d6641460b05a8695b5ddd6165b
-  version: 0.7.1
-  commit: 8f5022e798d2b0d6641460b05a8695b5ddd6165b
+  target: github:louke6572/dsh-whale-widget-plus#2d0ceb196cab85bd6f6cfa9d1cdac1ad45f736f6
+  version: 0.7.7
+  commit: 2d0ceb196cab85bd6f6cfa9d1cdac1ad45f736f6
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
 compatibility:
-  dsh: unverified
+  dsh: 0.1.1-rc.2
   platform:
     - web
 marketScreenshots:
@@ -31,33 +31,33 @@ screenshots:
   - https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png
 listScreenshot: https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
-    commit: 8f5022e798d2b0d6641460b05a8695b5ddd6165b
-    packageVersion: 0.7.1
+    commit: 2d0ceb196cab85bd6f6cfa9d1cdac1ad45f736f6
+    packageVersion: 0.7.7
     scannerVersion: static-v2
+    dshVersion: 0.1.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-11-01T22:47:18.775Z
+    checkedAt: 2026-11-11T13:17:21.410Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 944
-starsSnapshot: 82
-releaseUpdatedAt: 2026-11-01T22:47:19.136Z
-metadataUpdatedAt: 2026-11-01T22:47:19.136Z
-starsUpdatedAt: 2026-11-01T22:47:19.136Z
-updatedAt: 2026-11-01T22:47:19.136Z
+starsSnapshot: 94
+releaseUpdatedAt: 2026-11-11T13:17:21.655Z
+metadataUpdatedAt: 2026-11-11T13:17:21.655Z
+starsUpdatedAt: 2026-11-10T09:19:29.804Z
+updatedAt: 2026-11-11T13:17:21.655Z

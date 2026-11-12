@@ -29,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/dingyi580/dsh-plugin-gemini-theme/c7c22fe81945cfdd6da91f5175785761e2b086c1/assets/hero-dark.png
   - https://raw.githubusercontent.com/dingyi580/dsh-plugin-gemini-theme/c7c22fe81945cfdd6da91f5175785761e2b086c1/assets/conversation-dark.png
+listScreenshot: https://raw.githubusercontent.com/dingyi580/dsh-plugin-gemini-theme/c7c22fe81945cfdd6da91f5175785761e2b086c1/assets/hero-dark.png
 review:
   compatibility: unverified
   preview: verified
@@ -54,10 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 0
 featuredRank: 1069
-starsSnapshot: 1
 releaseUpdatedAt: 2026-09-07T21:58:43.325Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
-starsUpdatedAt: 2026-09-07T21:58:43.325Z
-updatedAt: 2026-09-08T09:45:47.382Z
-listScreenshot: https://raw.githubusercontent.com/dingyi580/dsh-plugin-gemini-theme/c7c22fe81945cfdd6da91f5175785761e2b086c1/assets/hero-dark.png
+metadataUpdatedAt: 2026-11-09T00:15:54.567Z
+starsUpdatedAt: 2026-11-09T00:15:54.567Z
+updatedAt: 2026-11-09T00:15:54.567Z

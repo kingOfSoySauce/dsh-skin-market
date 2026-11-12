@@ -28,13 +28,34 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.unstubAllGlobals() })
 
 describe('public catalog filters', () => {
+  it('omits the redundant public page headings while keeping search and filters', () => {
+    render(<App skins={[skin]} />)
+
+    expect(screen.queryByText('发现皮肤')).toBeNull()
+    expect(screen.queryByText('发现更多')).toBeNull()
+    expect(screen.getByRole('textbox', { name: '搜索皮肤、作者或标签' })).toBeTruthy()
+    expect(screen.getByRole('group', { name: '分类' })).toBeTruthy()
+  })
+
+  it('clears the public catalog search from the visible clear button', () => {
+    render(<App skins={[skin]} />)
+
+    const search = screen.getByRole('textbox', { name: '搜索皮肤、作者或标签' })
+    fireEvent.change(search, { target: { value: '测试' } })
+    const clear = screen.getByRole('button', { name: '清空搜索' })
+    fireEvent.click(clear)
+
+    expect((search as HTMLInputElement).value).toBe('')
+    expect(screen.getByRole('button', { name: /测试皮肤 界面预览/ })).toBeTruthy()
+  })
+
   it('shows skins and splash by default and toggles the other categories', () => {
     const pet = { ...skin, id: 'test.pet', name: { zh: '桌面宠物', en: 'Desk Pet' }, category: 'pet' as const }
     const player = { ...skin, id: 'test.player', name: { zh: '音乐播放器', en: 'Music Player' }, category: 'player' as const }
     render(<App skins={[skin, pet, player]} />)
     const filters = screen.getByRole('group', { name: '分类' })
     expect(within(filters).getByRole('button', { name: '皮肤' }).getAttribute('aria-pressed')).toBe('true')
-    expect(within(filters).getByRole('button', { name: '开屏动画' }).getAttribute('aria-pressed')).toBe('true')
+    expect(within(filters).getByRole('button', { name: '启动动画' }).getAttribute('aria-pressed')).toBe('true')
     expect(within(filters).getByRole('button', { name: '桌宠' }).getAttribute('aria-pressed')).toBe('false')
     expect(screen.queryByRole('button', { name: /桌面宠物 界面预览/ })).toBeNull()
     fireEvent.click(within(filters).getByRole('button', { name: '桌宠' }))
@@ -46,9 +67,9 @@ describe('public catalog filters', () => {
 describe('public install panel', () => {
   it('shows aligned skin and market groups with one package and one common command each', async () => {
     render(<App skins={[{ ...skin, install: { ...skin.install, target: `github:example/skins#${commit}`, desktop: { mode: 'managed', registry: 'npm', packageName: '@example/skin', packageVersion: '1.0.0' } } }]} />)
-    fireEvent.click(screen.getByRole('button', { name: '需手动安装' }))
+    fireEvent.click(screen.getByRole('button', { name: '安装' }))
 
-    const dialog = screen.getByRole('dialog')
+    const dialog = screen.getByRole('dialog', { name: '安装 测试皮肤' })
     expect(dialog.querySelector('.install-method-grid')?.getAttribute('data-single')).toBe('false')
     expect(within(dialog).queryByRole('combobox')).toBeNull()
     expect(within(dialog).queryByRole('tablist')).toBeNull()
@@ -120,7 +141,7 @@ describe('public install panel', () => {
   it('keeps the market-only dialog as a single group with the same three fields', async () => {
     render(<App skins={[skin]} />)
     fireEvent.click(screen.getByRole('button', { name: '安装皮肤市场' }))
-    const dialog = screen.getByRole('dialog')
+    const dialog = screen.getByRole('dialog', { name: '安装皮肤市场' })
     expect(dialog.querySelector('.install-method-grid')?.getAttribute('data-single')).toBe('true')
     expect(within(dialog).queryByRole('region', { name: '安装这个皮肤' })).toBeNull()
     expect(within(dialog).getAllByRole('region')).toHaveLength(1)

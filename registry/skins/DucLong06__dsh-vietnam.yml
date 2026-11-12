@@ -29,15 +29,17 @@ screenshots:
   - https://raw.githubusercontent.com/DucLong06/dsh-vietnam/6d6aa42e00d6f5014954571a107ce353a6631534/docs/screenshots/vivid-halong-light.jpg
 listScreenshot: https://raw.githubusercontent.com/DucLong06/dsh-vietnam/6d6aa42e00d6f5014954571a107ce353a6631534/docs/screenshots/vivid-sonmai-dark.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
     compatibility: pass
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions: []
   scan:
     commit: 6d6aa42e00d6f5014954571a107ce353a6631534
@@ -51,9 +53,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T00:17:42.819Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T00:17:42.819Z

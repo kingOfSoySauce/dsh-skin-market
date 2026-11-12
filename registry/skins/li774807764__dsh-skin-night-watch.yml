@@ -18,6 +18,9 @@ install:
   target: github:li774807764/ai-workarea#bb28478b3102feac1e61468ac6708ee6cc3c6544&path:/skins/night-watch
   version: 1.0.0
   commit: bb28478b3102feac1e61468ac6708ee6cc3c6544
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -26,6 +29,7 @@ screenshots:
   - https://raw.githubusercontent.com/li774807764/ai-workarea/bb28478b3102feac1e61468ac6708ee6cc3c6544/skins/night-watch/screenshots/01-main.png
   - https://raw.githubusercontent.com/li774807764/ai-workarea/bb28478b3102feac1e61468ac6708ee6cc3c6544/skins/night-watch/screenshots/02-radar.png
   - https://raw.githubusercontent.com/li774807764/ai-workarea/bb28478b3102feac1e61468ac6708ee6cc3c6544/skins/night-watch/screenshots/03-log.png
+listScreenshot: https://raw.githubusercontent.com/li774807764/ai-workarea/bb28478b3102feac1e61468ac6708ee6cc3c6544/skins/night-watch/screenshots/01-main.png
 review:
   compatibility: unverified
   preview: verified
@@ -41,12 +45,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: bb28478b3102feac1e61468ac6708ee6cc3c6544
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-02T05:58:14.730Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-02T01:48:00.307Z
-metadataUpdatedAt: 2026-11-02T01:48:00.307Z
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-09T00:18:12.497Z
+metadataUpdatedAt: 2026-11-03T01:36:56.745Z
 starsUpdatedAt: 2026-11-02T01:48:00.307Z
-updatedAt: 2026-11-02T01:48:00.307Z
+updatedAt: 2026-11-09T00:18:12.497Z

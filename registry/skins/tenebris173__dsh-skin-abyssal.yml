@@ -25,10 +25,6 @@ compatibility:
   dsh: ">=0.2.0-rc.2 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/tenebris173__dsh-skin-abyssal/eb16df64fbb146d2083d4144453386b8e8908a1a/home.png
-  - skin-screenshots/tenebris173__dsh-skin-abyssal/eb16df64fbb146d2083d4144453386b8e8908a1a/conversation.png
-  - skin-screenshots/tenebris173__dsh-skin-abyssal/eb16df64fbb146d2083d4144453386b8e8908a1a/settings.png
 screenshots:
   - https://raw.githubusercontent.com/tenebris173/dsh-skin-abyssal/eb16df64fbb146d2083d4144453386b8e8908a1a/preview/abyssal-matrix.png
 listScreenshot: https://raw.githubusercontent.com/tenebris173/dsh-skin-abyssal/eb16df64fbb146d2083d4144453386b8e8908a1a/preview/abyssal-matrix.png
@@ -57,9 +53,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/tenebris173__dsh-skin-abyssal/eb16df64fbb146d2083d4144453386b8e8908a1a/home.png
+  - skin-screenshots/tenebris173__dsh-skin-abyssal/eb16df64fbb146d2083d4144453386b8e8908a1a/conversation.png
+  - skin-screenshots/tenebris173__dsh-skin-abyssal/eb16df64fbb146d2083d4144453386b8e8908a1a/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:11.740Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:11.740Z
+updatedAt: 2026-11-11T13:17:15.192Z

@@ -1,18 +1,21 @@
-import { existsSync, mkdirSync, mkdtempSync, readFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { existsSync, mkdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { loadCatalog } from '../src/catalog.ts'
 import type { CommandOptions, CommandResult, PluginRunner } from '../src/commands.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { atomicWriteJson, atomicWriteText, ensurePatchedDependency, profilePatchFile, readDependencies, readMarketState } from '../src/profile.ts'
 import * as profile from '../src/profile.ts'
 import type { Operation, SkinEntry } from '../src/types.ts'
+import { conditionWaiter } from './fixtures/operations.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
+
+afterEach(cleanupTempDirs)
 
 function fixture() {
-  const dir = mkdtempSync(join(tmpdir(), 'skin-install-safety-'))
+  const dir = tempDir('skin-install-safety-')
   atomicWriteJson(join(dir, 'package.json'), { dependencies: {} })
-  const skin: SkinEntry = { ...loadCatalog().skins[0], id: 'test.npm-skin', package: 'test-npm-skin', rowId: 'test-npm-skin', repo: 'https://github.com/example/skin',
+  const skin: SkinEntry = { ...catalogFixtureSkin(), id: 'test.npm-skin', package: 'test-npm-skin', rowId: 'test-npm-skin', repo: 'https://github.com/example/skin',
     review: { installation: 'verified', preview: 'verified', compatibility: 'verified' },
     install: { target: `github:example/skin#${'a'.repeat(40)}`, version: '1.0.0', commit: 'a'.repeat(40) } }
   return { dir, skin }
@@ -28,10 +31,7 @@ function materialize(dir: string, skin: SkinEntry, integrity?: string): void {
   if (integrity) atomicWriteText(join(dir, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\npackages:\n  '${skin.package}@${skin.install.version}':\n    resolution:\n      integrity: ${integrity}\n`)
 }
 
-async function until(predicate: () => boolean): Promise<void> {
-  for (let i = 0; i < 100 && !predicate(); i++) await new Promise(resolve => setTimeout(resolve, 1))
-  expect(predicate()).toBe(true)
-}
+const until = conditionWaiter({ attempts: 100, intervalMs: 1, message: 'installation boundary condition did not settle' })
 
 describe('installation boundaries', () => {
   afterEach(() => { vi.restoreAllMocks(); vi.useRealTimers() })
@@ -117,6 +117,36 @@ describe('installation boundaries', () => {
     expect(operation.message).toContain('依赖恢复未完成')
     expect(operation.message).toContain('网络')
     expect(readFileSync(join(dir, 'package.json'), 'utf8')).toBe(before)
+  })
+
+  it('reports a pre-existing lockfile drift instead of blaming the failed recovery', async () => {
+    const { dir, skin } = fixture()
+    atomicWriteJson(join(dir, 'package.json'), { dependencies: { 'installed-skin': `github:owner/installed#${'c'.repeat(40)}` } })
+    atomicWriteText(join(dir, 'pnpm-lock.yaml'), [
+      "lockfileVersion: '9.0'",
+      'importers:',
+      '  .:',
+      '    dependencies:',
+      '      installed-skin:',
+      `        specifier: github:owner/installed#${'f'.repeat(40)}`,
+      `        version: https://codeload.github.com/owner/installed/tar.gz/${'f'.repeat(40)}`,
+      '',
+    ].join('\n'))
+    const calls: string[][] = []
+    const runner: PluginRunner = async (_profile, args) => {
+      ;(calls as string[][]).push([...args])
+      if (args.includes('--dir')) {
+        materialize(args[args.indexOf('--dir') + 1]!, skin)
+        return ok()
+      }
+      if (args[0] === 'add') return { ...ok(), exitCode: 1, stderr: 'ERR_PNPM_FETCH_404 GET https://codeload.github.com/x/y/tar.gz/' + 'a'.repeat(40) + ': Not Found' }
+      return ok()
+    }
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner }, [skin])
+    const operation = lifecycle.begin('install', skin.id)
+    await until(() => operation.phase === 'failed')
+    expect(operation.message).toContain('已不一致')
+    expect(calls.some(args => args[0] === 'install')).toBe(false)
   })
 
   it('uses an independent recovery signal after the total deadline interrupts a live install', async () => {

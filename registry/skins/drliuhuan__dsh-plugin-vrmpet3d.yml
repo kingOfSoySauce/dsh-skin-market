@@ -1,0 +1,77 @@
+id: drliuhuan.dsh-plugin-vrmpet3d
+name:
+  zh: dsh-plugin-vrmpet3d
+  en: dsh-plugin-vrmpet3d
+author: drliuhuan
+description: 桌宠 3D · VRM Pet 3D
+repo: https://github.com/drliuhuan/dsh-plugin-vrmpet3d
+package: dsh-plugin-vrmpet3d
+rowId: vrmpet3d
+category: pet
+tags:
+  - glass
+  - retro
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:drliuhuan/dsh-plugin-vrmpet3d#462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc
+  version: 0.1.4
+  commit: 462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-plugin-vrmpet3d
+    packageVersion: 0.1.4
+    integrity: sha512-Okoes++kIo8cbnv0sUkN5tNsEdZCO5y1ERe0gB75NPGjT3JaasHGU+cagIi3VYzqmLQgOxAJiSncFrw9n+7wHw==
+  npm:
+    name: dsh-plugin-vrmpet3d
+    version: 0.1.4
+    integrity: sha512-Okoes++kIo8cbnv0sUkN5tNsEdZCO5y1ERe0gB75NPGjT3JaasHGU+cagIi3VYzqmLQgOxAJiSncFrw9n+7wHw==
+    repository: https://github.com/drliuhuan/dsh-plugin-vrmpet3d
+    gitHead: 462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/states-overview.png
+  - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/chatter-gaze.gif
+  - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/idle.png
+  - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/working.png
+  - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/waiting.png
+  - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/done.png
+listScreenshot: https://raw.githubusercontent.com/drliuhuan/dsh-plugin-vrmpet3d/462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc/assets/screenshots/states-overview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc
+    packageVersion: 0.1.4
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:11:09.847Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 11
+featuredRank: 1126
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-11T00:07:28.933Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

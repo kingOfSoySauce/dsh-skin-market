@@ -2,11 +2,12 @@ import { mkdtempSync, readFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
-import { loadCatalog } from '../src/catalog.ts'
 import type { PluginRunner } from '../src/commands.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { atomicWriteJson, atomicWriteText, packageManifest, readDependencies, readMarketState, writeMarketState } from '../src/profile.ts'
-import type { Operation, SkinEntry } from '../src/types.ts'
+import type { SkinEntry } from '../src/types.ts'
+import { operationWaiter } from './fixtures/operations.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 const temporaryDirectories: string[] = []
 
@@ -18,13 +19,7 @@ function materialize(directory: string, skin: SkinEntry, spec: string, version: 
   atomicWriteText(join(directory, 'pnpm-lock.yaml'), `lockfileVersion: '9.0'\npackages:\n  '${skin.package}@${version}':\n    resolution:\n      integrity: ${skin.install.npm!.integrity}\n`)
 }
 
-async function finished(operation: Operation): Promise<Operation> {
-  for (let index = 0; index < 200; index++) {
-    if (['done', 'failed', 'cancelled'].includes(operation.phase)) return operation
-    await new Promise(resolve => setTimeout(resolve, 1))
-  }
-  throw new Error('operation did not finish')
-}
+const finished = operationWaiter({ intervalMs: 1, message: 'operation did not finish' })
 
 describe('Web update source concurrency', () => {
   afterEach(() => { for (const directory of temporaryDirectories.splice(0)) rmSync(directory, { recursive: true, force: true }) })
@@ -34,7 +29,7 @@ describe('Web update source concurrency', () => {
     temporaryDirectories.push(directory)
     const commit = 'a'.repeat(40)
     const skin: SkinEntry = {
-      ...loadCatalog().skins[0]!, id: 'update-source.skin', package: '@example/update-source-skin', rowId: 'update-source-skin',
+      ...catalogFixtureSkin(), id: 'update-source.skin', package: '@example/update-source-skin', rowId: 'update-source-skin',
       repo: 'https://github.com/example/update-source-skin', subpath: undefined,
       review: { installation: 'verified', preview: 'verified', compatibility: 'verified' },
       install: {

@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.1.7-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/home.png
-  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/conversation.png
-  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/settings.png
 screenshots:
   - https://raw.githubusercontent.com/keleus/deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/docs/deepseek-pet-preview.png
 listScreenshot: https://raw.githubusercontent.com/keleus/deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/docs/deepseek-pet-preview.png
@@ -56,9 +52,13 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 61
+marketScreenshots:
+  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/home.png
+  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/conversation.png
+  - skin-screenshots/keleus__deepseek-pet/b9b61a35c3b2443ecdeab0ed442d6b33c603d343/settings.png
 featuredRank: 939
-starsSnapshot: 60
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:50:50.967Z
-starsUpdatedAt: 2026-11-01T22:47:19.590Z
-updatedAt: 2026-11-01T22:47:19.590Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-09T07:12:50.117Z
+updatedAt: 2026-11-10T00:42:47.982Z

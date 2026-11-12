@@ -22,24 +22,25 @@ install:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
 compatibility:
-  dsh: unverified
+  dsh: 0.1.0-rc.7
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/pineapple880066/dsh-webUI-pets/71bb3a99f2bd04e0e5139a2d3dcbc591ada703fc/assets/webui-preview.png
 listScreenshot: https://raw.githubusercontent.com/pineapple880066/dsh-webUI-pets/71bb3a99f2bd04e0e5139a2d3dcbc591ada703fc/assets/webui-preview.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
-  suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    installCommand: pass
+    topic: pass
+  suggestions: []
   scan:
     commit: 71bb3a99f2bd04e0e5139a2d3dcbc591ada703fc
     packageVersion: 0.1.0-rc.7
@@ -52,9 +53,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 998
 starsSnapshot: 2
+featuredRank: 998
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T00:15:15.838Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T00:15:15.838Z

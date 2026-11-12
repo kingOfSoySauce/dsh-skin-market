@@ -3,9 +3,9 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
 import { stringify } from 'yaml'
-import { loadCatalog } from '../src/catalog.ts'
 import { atomicWriteJson, atomicWriteText, npmSourceMigration, packageDir, profilePatchFile, snapshotInstalledArtifact } from '../src/profile.ts'
 import type { SkinEntry } from '../src/types.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 const directories: string[] = []
 
@@ -18,7 +18,7 @@ function fixture(currentSource = 'file:/tmp/local-skin-1.1.0-compat.2.tgz', curr
   directories.push(directory)
   const commit = 'a'.repeat(40)
   const skin: SkinEntry = {
-    ...loadCatalog().skins[0]!, id: 'local-source.skin', package: '@example/local-source-skin', rowId: 'local-source-skin',
+    ...catalogFixtureSkin(), id: 'local-source.skin', package: '@example/local-source-skin', rowId: 'local-source-skin',
     repo: 'https://github.com/example/local-source-skin', subpath: undefined,
     review: { installation: 'verified', compatibility: 'verified', preview: 'verified' },
     install: {

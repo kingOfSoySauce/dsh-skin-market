@@ -20,7 +20,7 @@ install:
   commit: 896de5d72b5c05d4c8a2263af3586a0b0b4b8cb9
   desktop:
     mode: manual-only
-    reason: npm-package-not-found
+    reason: npm-repository-mismatch
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +28,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Jack-sun-learner/dsh-image-skin/896de5d72b5c05d4c8a2263af3586a0b0b4b8cb9/assets/shot-1.png
   - https://raw.githubusercontent.com/Jack-sun-learner/dsh-image-skin/896de5d72b5c05d4c8a2263af3586a0b0b4b8cb9/assets/shot-2.png
+listScreenshot: https://raw.githubusercontent.com/Jack-sun-learner/dsh-image-skin/896de5d72b5c05d4c8a2263af3586a0b0b4b8cb9/assets/shot-1.png
 review:
   compatibility: unverified
   preview: verified
@@ -53,9 +54,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 81
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-23T05:31:27.186Z
-metadataUpdatedAt: 2026-08-23T05:31:27.186Z
+featuredRank: 81
+releaseUpdatedAt: 2026-11-09T00:16:12.705Z
+metadataUpdatedAt: 2026-11-09T00:16:12.705Z
 starsUpdatedAt: 2026-09-09T21:40:22.849Z
-updatedAt: 2026-09-09T21:40:22.849Z
+updatedAt: 2026-11-09T00:16:12.705Z

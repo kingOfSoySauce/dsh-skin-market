@@ -35,27 +35,29 @@ health:
     readmeScreenshots: improve
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - README 图片未通过文件、尺寸或图片 hash 检查，请补充可核验的运行截图。
   scan:
     commit: b14b22dbf4406ae0f46ce96c60c36bfca5787392
     packageVersion: 1.2.0
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:47:09.060Z
+    checkedAt: 2026-11-09T07:17:55.544Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:57.629Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:57.629Z
 marketScreenshots:
   - skin-screenshots/njuptlzf__dsh-dynamic-background/b14b22dbf4406ae0f46ce96c60c36bfca5787392/home.png
   - skin-screenshots/njuptlzf__dsh-dynamic-background/b14b22dbf4406ae0f46ce96c60c36bfca5787392/conversation.png
   - skin-screenshots/njuptlzf__dsh-dynamic-background/b14b22dbf4406ae0f46ce96c60c36bfca5787392/settings.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-10-25T18:22:32.727Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
+starsUpdatedAt: 2026-10-24T21:34:17.947Z
+updatedAt: 2026-11-11T13:17:15.192Z

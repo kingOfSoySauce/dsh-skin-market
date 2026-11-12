@@ -15,25 +15,30 @@ tags:
 modes:
   - dark
 install:
-  target: github:Sutera-Diffusus/dsh-whale-musume#9ce976e6bfd95c46b643ef1bc74d70c166a04571
-  version: 2.5.0
-  commit: 9ce976e6bfd95c46b643ef1bc74d70c166a04571
+  target: github:Sutera-Diffusus/dsh-whale-musume#3928dfa111393174747659dd867ae33337bc9514
+  version: 2.5.3
+  commit: 3928dfa111393174747659dd867ae33337bc9514
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-whale-musume
+    packageVersion: 2.5.3
+    integrity: sha512-tnrURD18IjNRKcTi7RvXY58jScQP+XJrrYrbPnbVCfq9xoS15CAfzKaoAs/qGDbkTvLzAF4l8/M42FbuGEGsZQ==
+  npm:
+    name: dsh-whale-musume
+    version: 2.5.3
+    integrity: sha512-tnrURD18IjNRKcTi7RvXY58jScQP+XJrrYrbPnbVCfq9xoS15CAfzKaoAs/qGDbkTvLzAF4l8/M42FbuGEGsZQ==
+    repository: https://github.com/Sutera-Diffusus/dsh-whale-musume
+    gitHead: 3928dfa111393174747659dd867ae33337bc9514
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/home.png
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/conversation.png
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/settings.png
 screenshots:
   - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png
   - https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/preview-idle-coffee.png
-  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/e6394df50539cbd143a5e838d4e9901d007be3de/home.gif
-listScreenshot: https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/ba9c69480ec4e606ff654160348eb3682a483dd7/docs/images/homepage-promo.png
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.gif
+listScreenshot: skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -48,20 +53,23 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 9ce976e6bfd95c46b643ef1bc74d70c166a04571
-    packageVersion: 2.5.0
+    commit: 3928dfa111393174747659dd867ae33337bc9514
+    packageVersion: 2.5.3
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-11-01T22:47:17.885Z
+    checkedAt: 2026-11-09T00:12:36.323Z
     findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 211
+marketScreenshots:
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.png
+  - skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/conversation.png
 featuredRank: 1033
-starsSnapshot: 195
-releaseUpdatedAt: 2026-11-01T22:47:20.503Z
-metadataUpdatedAt: 2026-11-01T22:47:20.503Z
-starsUpdatedAt: 2026-11-01T22:47:20.503Z
-updatedAt: 2026-11-01T22:47:20.503Z
+releaseUpdatedAt: 2026-11-09T00:12:38.008Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

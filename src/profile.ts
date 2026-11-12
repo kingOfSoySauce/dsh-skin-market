@@ -24,6 +24,13 @@ export function pnpmWorkspaceFile(profileDir: string): string { return join(prof
 export function pnpmLockfile(profileDir: string): string { return join(profileDir, 'pnpm-lock.yaml') }
 export function marketStateFile(profileDir: string): string { return join(profileDir, '.dsh-skin-market', 'state.json') }
 
+/** Keep only stop markers that still name a skin in the same receipt. */
+function normalizedStoppedSkinIds(pending: Record<string, unknown>): string[] {
+  if (!Array.isArray(pending.stoppedSkinIds) || !Array.isArray(pending.skinIds)) return []
+  const known = new Set(pending.skinIds.filter((id): id is string => typeof id === 'string'))
+  return [...new Set(pending.stoppedSkinIds.filter((id): id is string => typeof id === 'string' && known.has(id)))]
+}
+
 export function readJson<T>(file: string, fallback: T): T {
   try { return JSON.parse(readFileSync(file, 'utf8')) as T } catch { return fallback }
 }
@@ -88,6 +95,10 @@ export function readMarketState(profileDir: string): PersistedMarketState {
           && (pending.selectionChanges as string[]).includes(id) && typeof hash === 'string' && /^[a-f0-9]{64}$/.test(hash)
           && !(isRecord(pending.inferredInstalls) && id in pending.inferredInstalls))
         ? { selectionArtifacts: { ...pending.selectionArtifacts } as Record<string, string> } : {}),
+      // A stop receipt may coexist with an install/update artifact proof: the
+      // proof says how to verify the build, the stop says restart is no longer
+      // needed once the running instance is confirmed gone.
+      ...(normalizedStoppedSkinIds(pending).length > 0 ? { stoppedSkinIds: normalizedStoppedSkinIds(pending) } : {}),
     }
   }
   return value
@@ -757,6 +768,39 @@ export function npmSourceMigration(profileDir: string, skin: SkinEntry): SkinSou
   const validation = validateInstalledSkin(profileDir, skin)
   if (!validation.ok || validation.version !== skin.install.npm?.version) return undefined
   return { target: npmInstallTarget(skin)!, currentSource }
+}
+
+/**
+ * Package names are not enough to prove that a dependency belongs to a market
+ * entry. GitHub installs must stay in the reviewed repository/subpath family;
+ * npm and confirmed local replacements use their existing package provenance.
+ */
+export function installedSkinSourceMatches(profileDir: string, skin: SkinEntry): boolean {
+  const spec = readDependencies(profileDir)[skin.package]
+  if (typeof spec !== 'string' || spec.trim() === '') return false
+  if (isGithubArtifactSpec(spec)) return githubArtifactSourceMatches(skin, spec)
+  // Keep synthetic/legacy GitHub specs usable in migration paths even when a
+  // fixture or old profile has a non-40-character placeholder commit. Real
+  // immutable specs take the stricter branch above.
+  if (/^github:/i.test(spec)) {
+    const repository = /^github:([^#&]+)/i.exec(spec)?.[1]
+    const expected = /^github:([^#&]+)/i.exec(skin.install.target)?.[1]?.toLowerCase() ?? repositoryIdentity(skin.repo)
+    return repository !== undefined && expected !== null && repository.toLowerCase() === expected
+  }
+  if (isLocalMigrationSource(spec)) {
+    const manifest = packageManifest(profileDir, skin.package)
+    const repository = repositoryIdentity(skin.repo)
+    return manifest?.name === skin.package && repository !== null && repositoryIdentity(manifest.repository) === repository
+  }
+  if (npmRange(spec, skin.package) !== null) {
+    // An npm dependency spec identifies the package-level source family. Keep
+    // broken materialized artifacts visible for repair; validateInstalledSkin
+    // remains responsible for version, repository, integrity and loader checks
+    // before any package is used or updated.
+    if (skin.install.npm !== undefined) return true
+    return reviewedInstalledSpecMatches(profileDir, skin, spec, { allowArtifactRisk: true })
+  }
+  return npmSourceMigration(profileDir, skin) !== undefined
 }
 
 export function companionNeedsInstall(profileDir: string, companion: { package: string; commit: string }): boolean {
@@ -1473,13 +1517,28 @@ function latestOperationAt(installedAt: string | null, activity?: SkinActivity):
 export function runtimeState(profileDir: string, skin: SkinEntry, activeSkinId: string | null, loaderLive: boolean, loaderFound: boolean, pinnedSkinIds: string[] = [], activity?: SkinActivity, hostKind: MarketHostKind = 'dsh', enabledSkinIds?: string[]): SkinRuntimeState {
   const dependencies = readDependencies(profileDir)
   const spec = dependencies[skin.package] ?? null
-  const primary = activeSkinId === skin.id
-  const pinned = pinnedSkinIds.includes(skin.id)
   if (spec === null) {
     return { skinId: skin.id, installation: 'missing', activation: 'inactive', primary: false, pinned: false, installedVersion: null, installedSpec: null, installedAt: null, lastOperatedAt: null, updateAvailable: false }
   }
   const installedAt = packageInstalledAt(profileDir, skin.package)
   const lastOperatedAt = latestOperationAt(installedAt, activity)
+  if (!installedSkinSourceMatches(profileDir, skin)) {
+    return {
+      skinId: skin.id,
+      installation: 'broken',
+      activation: 'inactive',
+      primary: false,
+      pinned: false,
+      installedVersion: null,
+      installedSpec: spec,
+      installedAt,
+      lastOperatedAt,
+      updateAvailable: false,
+      error: '已安装包来源与该市场条目不一致；市场不会管理这个插件。',
+    }
+  }
+  const primary = activeSkinId === skin.id
+  const pinned = pinnedSkinIds.includes(skin.id)
   const validation = validateInstalledSkin(profileDir, skin, { allowArtifactRisk: true, hostKind })
   if (!validation.ok) {
     return { skinId: skin.id, installation: 'broken', activation: 'inactive', primary, pinned, installedVersion: null, installedSpec: spec, installedAt, lastOperatedAt, updateAvailable: false, error: validation.reason }

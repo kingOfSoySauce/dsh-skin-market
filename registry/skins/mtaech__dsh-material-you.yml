@@ -29,6 +29,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/mtaech/dsh-material-you/ed551a54dbf7f666e96b85f650cf01870117aba1/demo.png
+listScreenshot: https://raw.githubusercontent.com/mtaech/dsh-material-you/2fe098280dffb65c53224a1f6a90f5d27e032545/demo.png
 review:
   compatibility: verified
   preview: verified
@@ -54,9 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 87
 starsSnapshot: 1
+featuredRank: 87
 releaseUpdatedAt: 2026-08-28T04:08:55.416Z
-metadataUpdatedAt: 2026-08-28T04:08:55.416Z
+metadataUpdatedAt: 2026-11-09T00:16:33.779Z
 starsUpdatedAt: 2026-09-18T21:38:39.615Z
-updatedAt: 2026-09-18T21:38:39.615Z
+updatedAt: 2026-11-09T00:16:33.779Z

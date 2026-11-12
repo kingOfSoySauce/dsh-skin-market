@@ -27,6 +27,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/licheng-ma/dsh-wechat-skin/9528966105ab074631a9b3f7bdf8e2c0a13e3297/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/licheng-ma/dsh-wechat-skin/9528966105ab074631a9b3f7bdf8e2c0a13e3297/docs/preview.png
 review:
   compatibility: verified
   preview: verified
@@ -52,9 +53,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 112
 starsSnapshot: 0
+featuredRank: 112
 releaseUpdatedAt: 2026-08-23T05:34:08.869Z
-metadataUpdatedAt: 2026-08-23T05:34:08.869Z
+metadataUpdatedAt: 2026-11-09T00:18:13.063Z
 starsUpdatedAt: 2026-09-09T21:41:01.259Z
-updatedAt: 2026-09-09T21:41:01.259Z
+updatedAt: 2026-11-09T00:18:13.063Z

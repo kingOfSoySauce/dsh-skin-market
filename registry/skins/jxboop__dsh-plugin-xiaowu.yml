@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/jxboop__dsh-plugin-xiaowu/ffccb456f89d4093241aacbb86c1189f789bc482/home.png
-  - skin-screenshots/jxboop__dsh-plugin-xiaowu/ffccb456f89d4093241aacbb86c1189f789bc482/conversation.png
-  - skin-screenshots/jxboop__dsh-plugin-xiaowu/ffccb456f89d4093241aacbb86c1189f789bc482/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -56,9 +52,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/jxboop__dsh-plugin-xiaowu/ffccb456f89d4093241aacbb86c1189f789bc482/home.png
+  - skin-screenshots/jxboop__dsh-plugin-xiaowu/ffccb456f89d4093241aacbb86c1189f789bc482/conversation.png
+  - skin-screenshots/jxboop__dsh-plugin-xiaowu/ffccb456f89d4093241aacbb86c1189f789bc482/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:52:54.341Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:54.341Z
+updatedAt: 2026-11-10T00:42:47.982Z

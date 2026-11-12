@@ -6,7 +6,7 @@ author: AlexYin-Tongji
 description: 面向 DeepSeek Harness Web 的桌面体验增强插件。它保留官方 UI 的会话和槽位契约，在其上组合成熟社区能力，并补充统一的个性化和文件引用体验。
 repo: https://github.com/AlexYin-Tongji/dsh-ui-enhancer
 package: dsh-ui-enhancer
-rowId: ui-enhancer-web-ui-settings
+rowId: ui-enhancer
 category: skin
 tags:
   - wallpaper
@@ -70,6 +70,6 @@ license:
 featuredRank: 207
 starsSnapshot: 1
 releaseUpdatedAt: 2026-09-15T03:04:43.290Z
-metadataUpdatedAt: 2026-08-23T15:32:42.387Z
+metadataUpdatedAt: 2026-11-09T06:58:22.519Z
 starsUpdatedAt: 2026-09-12T21:25:01.019Z
-updatedAt: 2026-09-15T03:04:43.290Z
+updatedAt: 2026-11-09T06:58:22.519Z

@@ -27,15 +27,17 @@ screenshots:
   - https://raw.githubusercontent.com/Oliveryfaso/dsh-pet-company/77e94a950a20b78ea029907aae248dfeb5d7b1d4/docs/screenshots/pet-tide-bubble.png
 listScreenshot: https://raw.githubusercontent.com/Oliveryfaso/dsh-pet-company/77e94a950a20b78ea029907aae248dfeb5d7b1d4/docs/screenshots/pet-tide-bubble.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
     compatibility: pass
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions: []
   scan:
     commit: 77e94a950a20b78ea029907aae248dfeb5d7b1d4
@@ -47,12 +49,12 @@ health:
     checkedAt: 2026-10-24T21:33:42.211Z
     findings: []
 license:
-  code: MIT
+  code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 代码MIT；默认角色及其衍生图集CC BY-NC 4.0，须署名且仅限非商业用途。
-featuredRank: 1000
 starsSnapshot: 0
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T07:17:57.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T07:17:57.982Z

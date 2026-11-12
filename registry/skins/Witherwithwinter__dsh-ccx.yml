@@ -15,12 +15,18 @@ modes:
   - light
   - dark
 install:
-  target: github:Witherwithwinter/dsh-ccx#8fcf6b4edc4b146378b48cd56ccafd3ea141604a
+  target: github:Witherwithwinter/dsh-ccx#1c8c268d2b1a9bcf9b8f750a91021097dc656256
   version: 0.8.9
-  commit: 8fcf6b4edc4b146378b48cd56ccafd3ea141604a
+  commit: 1c8c268d2b1a9bcf9b8f750a91021097dc656256
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-ccx
+    version: 0.8.9
+    integrity: sha512-bMgohBlLJugCcpkp+fzSbWcqNzBqacd33k9zjeoRrnI9rP7kxBxBUfmSKsrWXHiHq64aiSk8QLpLXoKISnT0+Q==
+    repository: https://github.com/Witherwithwinter/dsh-ccx
+    gitHead: 1c8c268d2b1a9bcf9b8f750a91021097dc656256
 compatibility:
   dsh: unverified
   platform:
@@ -39,22 +45,25 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: improve
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 8fcf6b4edc4b146378b48cd56ccafd3ea141604a
+    commit: 1c8c268d2b1a9bcf9b8f750a91021097dc656256
     packageVersion: 0.8.9
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:32:59.077Z
+    checkedAt: 2026-11-09T00:14:43.047Z
     findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 3
 featuredRank: 999
-starsSnapshot: 2
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
-starsUpdatedAt: 2026-10-30T23:01:22.659Z
-updatedAt: 2026-10-30T23:01:22.659Z
+releaseUpdatedAt: 2026-11-09T00:14:48.500Z
+metadataUpdatedAt: 2026-11-09T00:14:48.500Z
+starsUpdatedAt: 2026-11-03T01:37:22.117Z
+updatedAt: 2026-11-09T00:14:48.500Z

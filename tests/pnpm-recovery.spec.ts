@@ -1,9 +1,11 @@
-import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import { classifyPnpmFailure, failureDiagnostic, PnpmCommandError, runPnpmWithRecovery, withRegistry } from '../src/pnpm-recovery.ts'
 import type { CommandResult } from '../src/commands.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+
+afterEach(cleanupTempDirs)
 
 function failed(output: string): CommandResult {
   return { exitCode: 1, stdout: '', stderr: output, timedOut: false }
@@ -54,6 +56,35 @@ describe('pnpm recovery', () => {
     await expect(runPnpmWithRecovery(['add', 'skin@1.0.0'], { attempt: async () => { attempts += 1; return result } })).rejects.toMatchObject({ failure: { kind: 'script-timeout' } })
     expect(attempts).toBe(1)
   })
+  it('attributes a fetch 404 to an already installed dependency instead of the new package', async () => {
+    const profileDir = tempDir('pnpm-existing-source-')
+    writeFileSync(join(profileDir, 'package.json'), JSON.stringify({
+      dependencies: { 'dead-skin': `github:owner/dead#${'d'.repeat(40)}` },
+    }))
+    const output = `[ERR_PNPM_FETCH_404] GET https://codeload.github.com/owner/dead/tar.gz/${'d'.repeat(40)}: Not Found - 404`
+    await expect(runPnpmWithRecovery(['add', 'new-skin@1.0.0'], {
+      profileDir,
+      attempt: async () => failed(output),
+    })).rejects.toMatchObject({
+      failure: {
+        kind: 'existing-source-unreachable',
+        packageName: 'dead-skin',
+        unreachableSource: { repository: 'owner/dead', commit: 'd'.repeat(40) },
+        message: expect.stringContaining('dead-skin'),
+      },
+    })
+  })
+
+  it('keeps a fetch 404 for an unknown package classified as fetch-404', async () => {
+    const profileDir = tempDir('pnpm-existing-source-')
+    writeFileSync(join(profileDir, 'package.json'), JSON.stringify({ dependencies: {} }))
+    const output = `[ERR_PNPM_FETCH_404] GET https://codeload.github.com/owner/other/tar.gz/${'e'.repeat(40)}: Not Found - 404`
+    await expect(runPnpmWithRecovery(['add', 'new-skin@1.0.0'], {
+      profileDir,
+      attempt: async () => failed(output),
+    })).rejects.toMatchObject({ failure: { kind: 'fetch-404' } })
+  })
+
   it('retries a release-age failure with a command-scoped override', async () => {
     const calls: Array<{ args: readonly string[]; env?: NodeJS.ProcessEnv }> = []
     await runPnpmWithRecovery(['add', '@example/skin@1.0.0'], {
@@ -154,7 +185,7 @@ describe('pnpm recovery', () => {
   })
 
   it('retries an unrequested host peer with peer auto-install disabled', async () => {
-    const profileDir = mkdtempSync(join(tmpdir(), 'pnpm-recovery-host-peer-'))
+    const profileDir = tempDir('pnpm-recovery-host-peer-')
     mkdirSync(profileDir, { recursive: true })
     writeFileSync(join(profileDir, 'package.json'), JSON.stringify({ dependencies: { 'installed-plugin': '1.0.0' } }))
     const calls: Array<readonly string[]> = []
@@ -175,7 +206,7 @@ describe('pnpm recovery', () => {
   })
 
   it('does not hide a direct profile dependency behind the peer recovery', async () => {
-    const profileDir = mkdtempSync(join(tmpdir(), 'pnpm-recovery-direct-'))
+    const profileDir = tempDir('pnpm-recovery-direct-')
     writeFileSync(join(profileDir, 'package.json'), JSON.stringify({ dependencies: { '@deepseek-ai/dsh-compact': '^0.0.1-rc.1' } }))
 
     await expect(runPnpmWithRecovery(['add', 'new-plugin'], {

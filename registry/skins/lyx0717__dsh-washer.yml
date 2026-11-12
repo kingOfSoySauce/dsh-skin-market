@@ -13,27 +13,25 @@ tags:
 modes:
   - dark
 install:
-  target: github:lyx0717/dsh-washer#0f0b5901bfd88158343c73676c157e65dd333752
-  version: 0.10.1
-  commit: 0f0b5901bfd88158343c73676c157e65dd333752
+  target: github:lyx0717/dsh-washer#9925d2a501aed2e56f988e3805587dc3c97370be
+  version: 0.10.5
+  commit: 9925d2a501aed2e56f988e3805587dc3c97370be
   desktop:
     mode: managed
     registry: npm
     packageName: "@lyx0717/dsh-washer"
-    packageVersion: 0.10.1
-    integrity: sha512-CcaaYz0V4GtK5e+deAd7XM5EHgepYvSY0uOwdvG/6G67H+uCAfsNS6LVME0R7hmZrE8Np8ME5eymUrGyBYRE2g==
+    packageVersion: 0.10.5
+    integrity: sha512-1STT9/QrH1YPiYllMa59P3NOIvAR0X6QSARpmu+yDuTu3RM76brXpRSYgGy0OSu9DRqQGp7lPNj0uCMsmpJiVQ==
   npm:
     name: "@lyx0717/dsh-washer"
-    version: 0.10.1
-    integrity: sha512-CcaaYz0V4GtK5e+deAd7XM5EHgepYvSY0uOwdvG/6G67H+uCAfsNS6LVME0R7hmZrE8Np8ME5eymUrGyBYRE2g==
+    version: 0.10.5
+    integrity: sha512-1STT9/QrH1YPiYllMa59P3NOIvAR0X6QSARpmu+yDuTu3RM76brXpRSYgGy0OSu9DRqQGp7lPNj0uCMsmpJiVQ==
     repository: https://github.com/lyx0717/dsh-washer
-    gitHead: 0f0b5901bfd88158343c73676c157e65dd333752
+    gitHead: 9925d2a501aed2e56f988e3805587dc3c97370be
 compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/lyx0717__dsh-washer/70ad9a1827df37348f6a892b52101163e4c46c36/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-washing.png
   - https://raw.githubusercontent.com/lyx0717/dsh-washer/64c42a879c443a56fbb0ff796151b01ecc17ee5f/docs/float-rinsing.png
@@ -55,19 +53,21 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 0f0b5901bfd88158343c73676c157e65dd333752
-    packageVersion: 0.10.1
+    commit: 9925d2a501aed2e56f988e3805587dc3c97370be
+    packageVersion: 0.10.5
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-01T22:47:53.378Z
+    checkedAt: 2026-11-09T00:18:22.562Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-01T22:47:55.483Z
-metadataUpdatedAt: 2026-11-01T22:47:55.483Z
+marketScreenshots:
+  - skin-screenshots/lyx0717__dsh-washer/70ad9a1827df37348f6a892b52101163e4c46c36/conversation.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-09T00:18:23.861Z
+metadataUpdatedAt: 2026-11-10T09:19:16.352Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-01T22:47:55.483Z
+updatedAt: 2026-11-10T09:19:16.352Z

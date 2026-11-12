@@ -1,0 +1,74 @@
+id: nwflower.dsh-claude-style
+name:
+  zh: dsh-claude-style
+  en: dsh-claude-style
+author: Nwflower
+description: Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
+repo: https://github.com/Nwflower/dsh-claude-style
+package: dsh-claude-style
+rowId: ui-skin-claude-style
+category: skin
+tags:
+  - appearance
+  - theme
+  - claude-style
+modes:
+  - light
+  - dark
+install:
+  target: github:Nwflower/dsh-claude-style#0678d88c0dc55ffc9a5112b220f9de3d07ab2fed
+  version: 0.20.3
+  commit: 0678d88c0dc55ffc9a5112b220f9de3d07ab2fed
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
+  npm:
+    name: dsh-claude-style
+    version: 0.20.3
+    integrity: sha512-VYz6K94bsnwK14rImMRNYdUdOOVEgevpszxrBc4x4L2jZnc18vsNVBvAGmuy6tjOjRYRRp4EPYX//tplxzxKqg==
+    repository: https://github.com/Nwflower/dsh-claude-style
+    gitHead: 0678d88c0dc55ffc9a5112b220f9de3d07ab2fed
+compatibility:
+  dsh: ">=0.1.7"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Nwflower/dsh-claude-style/2fe529209ace010a2473f6def0221f342f301c88/docs/screenshots/claude-home-light.png
+  - https://raw.githubusercontent.com/Nwflower/dsh-claude-style/2fe529209ace010a2473f6def0221f342f301c88/docs/screenshots/claude-conversation-dark.png
+listScreenshot: https://raw.githubusercontent.com/Nwflower/dsh-claude-style/d3a511b51e2eebdfc41952135a02d8f2752032a6/docs/screenshots/claude-home-light.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.7 未被本次检测范围 >=0.2.2-rc.1 完全覆盖（固定版本 0678d88c0dc55ffc9a5112b220f9de3d07ab2fed）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 0678d88c0dc55ffc9a5112b220f9de3d07ab2fed
+    packageVersion: 0.20.3
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.2-rc.1"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-11T13:17:17.506Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 561
+releaseUpdatedAt: 2026-11-11T13:17:18.920Z
+metadataUpdatedAt: 2026-11-11T13:17:18.920Z
+starsUpdatedAt: 2026-11-11T13:17:18.920Z
+updatedAt: 2026-11-11T13:17:18.920Z

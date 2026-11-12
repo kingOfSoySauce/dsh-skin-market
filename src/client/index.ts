@@ -2,18 +2,19 @@ import { createElement as h } from 'react'
 import * as primitives from '@deepseek-ai/dsh-client-ui-primitives'
 import { SkinMarketSection } from './SkinMarketSection.tsx'
 import { createDesktopPluginPanel } from './desktop-plugin-panel.ts'
+import { createTranslator, hostDictionaries, type MessageKey, type Translator } from './i18n.ts'
 
 const namespace = 'dsh-skin-market'
-const dictionaries = {
-  zh: { nav: '皮肤市场', title: '皮肤市场', subtitle: '发现并管理 DSH 外观', search: '搜索皮肤', catalog: '皮肤列表' },
-  en: { nav: 'Skin Market', title: 'Skin Market', subtitle: 'Discover and manage DSH skins', search: 'Search skins', catalog: 'Skin catalog' },
-}
 
 interface ClientContext {
   get?: (name: string) => unknown
   on?: (event: 'internal/status', listener: () => void) => () => void
   effect(callback: () => unknown, label?: string): void
-  locale: { register(namespace: string, dictionaries: Record<string, Record<string, string>>): unknown; bind(namespace: string): (key: string) => string }
+  locale: {
+    register(namespace: string, dictionaries: Record<string, Record<string, string>>): unknown
+    bind(namespace: string): (key: string) => string
+    getSnapshot?: () => { active?: string }
+  }
   loader: ClientLoader
   slots: { inject(slot: string, callback: () => unknown): void; register(meta: Record<string, unknown>, component: () => unknown): unknown; entriesOfSlot?: (slot: string) => readonly unknown[] }
   layout?: { selectPanel(panelId: string): void }
@@ -172,18 +173,27 @@ export function apply(ctx: ClientContext): void {
     console.warn(`[dsh-skin-market] missing DSH primitives: ${missing.join(', ')}`)
     return
   }
-  ctx.effect(() => ctx.locale.register(namespace, dictionaries), 'dsh-skin-market: locale')
-  const t = ctx.locale.bind(namespace)
+  ctx.effect(() => ctx.locale.register(namespace, hostDictionaries), 'dsh-skin-market: locale')
+  const hostLocale = () => {
+    try {
+      const active = ctx.locale.getSnapshot?.().active?.toLowerCase()
+      return active?.startsWith('en') === true ? 'en' : 'zh'
+    } catch {
+      return 'zh'
+    }
+  }
+  const t: Translator = createTranslator(ctx.locale.bind(namespace), 'zh', hostLocale)
+  const hostT = (key: string): string => t(key as MessageKey)
   const clientRuntime = createClientSkinRuntime(ctx.loader, ctx)
   const desktopPluginPanel = createDesktopPluginPanel(ctx)
   ctx.effect(() => () => desktopPluginPanel.dispose?.(), 'dsh-skin-market: native install tracking')
   ctx.slots.inject('settings.section', () => ctx.slots.register({
-    name: 'settings.section', id: 'skin-market', order: 45, label: () => t('nav'), locale: namespace, inject: () => ({ t }),
+    name: 'settings.section', id: 'skin-market', order: 45, label: () => t('nav.market'), locale: namespace, inject: () => ({ t: hostT }),
   }, () => h(SkinMarketSection, { t, clientRuntime, desktopPluginPanel, layout: 'fill' })))
   // The injection stays dormant on older hosts and registers when the new
   // Plugins page owns this slot. Both entry points use the same market UI.
   ctx.slots.inject('plugins.bundle.config', () => ctx.slots.register({
-    name: 'plugins.bundle.config', key: namespace, locale: namespace, inject: () => ({ t }),
+    name: 'plugins.bundle.config', key: namespace, locale: namespace, inject: () => ({ t: hostT }),
   }, () => h(SkinMarketSection, { t, clientRuntime, desktopPluginPanel, layout: 'embedded' })))
 }
 

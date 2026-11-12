@@ -18,8 +18,11 @@ install:
   version: 2.1.0
   commit: 1531e22cf7e59d6ca8f88cca3900b477550c887b
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-endfield-re
+    packageVersion: 2.1.0
+    integrity: sha512-7R5FRR3WbpBhxvO1/P2DBotojmq1W4Dh3V3ATNDD/UuJbpAxyC1Uw/y4NiiBsiZEovGijnYxhm0g3hGj8IJ4gg==
   npm:
     name: dsh-theme-endfield-re
     version: 2.1.0
@@ -60,9 +63,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-08T23:46:19.126Z
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-09T00:15:20.755Z
 metadataUpdatedAt: 2026-10-08T23:46:19.126Z
 starsUpdatedAt: 2026-10-08T23:46:19.126Z
-updatedAt: 2026-10-08T23:46:19.126Z
+updatedAt: 2026-11-09T00:15:20.755Z

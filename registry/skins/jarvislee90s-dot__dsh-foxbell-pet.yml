@@ -24,9 +24,6 @@ compatibility:
   dsh: ">=0.1.2-rc.1"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/jarvislee90s-dot__dsh-foxbell-pet/09ab288c63152cc5f857d61ede5ef1441084bbf2/home.png
-  - skin-screenshots/jarvislee90s-dot__dsh-foxbell-pet/09ab288c63152cc5f857d61ede5ef1441084bbf2/settings.png
 screenshots:
   - https://raw.githubusercontent.com/jarvislee90s-dot/dsh-foxbell-pet/09ab288c63152cc5f857d61ede5ef1441084bbf2/reference/%E6%A1%83%E5%AD%90%E8%A1%A3%E6%9C%8D%E7%B2%89%E7%8B%90%E7%8B%B8%E5%BD%A2%E8%B1%A1.png
   - https://raw.githubusercontent.com/jarvislee90s-dot/dsh-foxbell-pet/09ab288c63152cc5f857d61ede5ef1441084bbf2/docs/screenshots/switch-pet.png
@@ -59,9 +56,12 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/jarvislee90s-dot__dsh-foxbell-pet/09ab288c63152cc5f857d61ede5ef1441084bbf2/home.png
+  - skin-screenshots/jarvislee90s-dot__dsh-foxbell-pet/09ab288c63152cc5f857d61ede5ef1441084bbf2/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:52:52.502Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:52.502Z
+updatedAt: 2026-11-10T00:42:47.982Z

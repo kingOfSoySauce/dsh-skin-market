@@ -22,13 +22,14 @@ describe('static catalog prompts', () => {
     expect(MARKET_PROMPT).toContain('无需先检查或停用其他皮肤')
     expect(MARKET_PROMPT).not.toContain('发现其他皮肤插件就列出并停下')
     const desktop = MARKET_PROMPT.split('- 官方 Desktop：')[1]!
-    expect(desktop).toContain('你负责只读检查和逐步指导，我负责操作')
+    expect(desktop).toContain('插件管理工具')
+    expect(desktop).toContain('我确认后由你安装并启用')
     expect(desktop).toContain('每次只给一个操作，等我反馈再继续')
     expect(desktop).toContain('未核实不能宣称成功')
     expect(desktop).not.toContain(MARKET_WEB_COMMAND)
   })
 
-  it('routes manual Desktop skins to user operations while retaining Web installation', () => {
+  it('routes manual Desktop skins to a confirmed agent install with a user fallback', () => {
     const prompt = skinPrompt(skin)
     expect(prompt).toContain(`仓库：${skin.repo}`)
     expect(prompt).toContain(skin.install.target)
@@ -39,8 +40,27 @@ describe('static catalog prompts', () => {
     expect(prompt).toContain('停在安装前')
     const desktop = prompt.split('\n\n官方 Desktop：')[1]!.split('\n\nWeb 版：')[0]!
     expect(desktop).toContain('「插件 → 添加插件」')
-    expect(desktop).toContain('由我点击安装')
+    expect(desktop).toContain('插件管理工具')
+    expect(desktop).toContain('由你安装（默认不启用）')
     expect(desktop).not.toContain('dsh plugin --profile web add')
+  })
+
+  it('prefers the published npm package in manual Desktop prompts', () => {
+    const npmSkin = {
+      ...skin,
+      install: {
+        ...skin.install,
+        npm: {
+          name: 'example-skin', version: '1.0.0',
+          integrity: 'sha512-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==',
+          repository: 'https://github.com/example/dsh-skin', gitHead: 'a'.repeat(40),
+        },
+      },
+    } as CatalogSkin
+    const prompt = skinPrompt(npmSkin)
+    expect(prompt).toContain('example-skin@1.0.0')
+    expect(prompt).toContain('已发布的 npm 包')
+    expect(prompt).toContain('没有 npm 包时再用 GitHub')
   })
 
   it('adds a review-first guard to unverified skin prompts', () => {

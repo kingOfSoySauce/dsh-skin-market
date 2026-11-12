@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:xiaotuchu/dsh-theme-eye-care#f9949fc5f8d0cc0deaa6f3fb86778ceadc1e5580
-  version: 2.2.0
-  commit: f9949fc5f8d0cc0deaa6f3fb86778ceadc1e5580
+  target: github:xiaotuchu/dsh-theme-eye-care#55bb37115c58ffbcd25624c0b283872af7a1ed00
+  version: 3.0.0
+  commit: 55bb37115c58ffbcd25624c0b283872af7a1ed00
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -25,8 +25,8 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/xiaotuchu/dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/preview.png
-listScreenshot: https://raw.githubusercontent.com/xiaotuchu/dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/preview.png
+  - https://raw.githubusercontent.com/xiaotuchu/dsh-theme-eye-care/55bb37115c58ffbcd25624c0b283872af7a1ed00/preview.png
+listScreenshot: https://raw.githubusercontent.com/xiaotuchu/dsh-theme-eye-care/55bb37115c58ffbcd25624c0b283872af7a1ed00/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -42,23 +42,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: f9949fc5f8d0cc0deaa6f3fb86778ceadc1e5580
-    packageVersion: 2.2.0
+    commit: 55bb37115c58ffbcd25624c0b283872af7a1ed00
+    packageVersion: 3.0.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:53:39.371Z
+    checkedAt: 2026-11-05T00:23:38.209Z
     findings: []
 license:
-  code: MIT AND CC-BY-NC-4.0
-  commercialUse: false
+  code: MIT
+  commercialUse: true
 starsSnapshot: 4
-marketScreenshots:
-  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/home.png
-  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/conversation.png
-  - skin-screenshots/xiaotuchu__dsh-theme-eye-care/9a0c11ad7bcbdca646eaf688c6c4b87360e6eb55/settings.png
 featuredRank: 996
-releaseUpdatedAt: 2026-10-30T03:53:39.669Z
-metadataUpdatedAt: 2026-10-30T04:54:31.652Z
+releaseUpdatedAt: 2026-11-05T00:23:38.693Z
+metadataUpdatedAt: 2026-11-05T00:23:38.693Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T04:54:31.652Z
+updatedAt: 2026-11-05T00:23:38.693Z

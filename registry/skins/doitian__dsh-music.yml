@@ -14,12 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:doitian/dsh-music#aee0390bd2145f7d55fae684e0fe5f26ddeda4b7
+  target: github:doitian/dsh-music#ad12fbb31e5ab455e32aaf9ee818def57de2c412
   version: 1.2.0
-  commit: aee0390bd2145f7d55fae684e0fe5f26ddeda4b7
+  commit: ad12fbb31e5ab455e32aaf9ee818def57de2c412
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: "@doitian/dsh-music"
+    packageVersion: 1.2.0
+    integrity: sha512-fpmS+8pMw778qMKtevNUtRDTjMXWP9/0fpIgMtOem0KRPWW+a14HJz8OUpacFOX3LwyxozCQKkOvMgv8N+2dmw==
+  npm:
+    name: "@doitian/dsh-music"
+    version: 1.2.0
+    integrity: sha512-fpmS+8pMw778qMKtevNUtRDTjMXWP9/0fpIgMtOem0KRPWW+a14HJz8OUpacFOX3LwyxozCQKkOvMgv8N+2dmw==
+    repository: https://github.com/doitian/dsh-music
+    gitHead: ad12fbb31e5ab455e32aaf9ee818def57de2c412
 compatibility:
   dsh: unverified
   platform:
@@ -41,23 +50,23 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: aee0390bd2145f7d55fae684e0fe5f26ddeda4b7
+    commit: ad12fbb31e5ab455e32aaf9ee818def57de2c412
     packageVersion: 1.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:09:49.355Z
+    checkedAt: 2026-11-09T00:15:55.656Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
+starsSnapshot: 1
 marketScreenshots:
   - skin-screenshots/doitian__dsh-music/aee0390bd2145f7d55fae684e0fe5f26ddeda4b7/home.png
   - skin-screenshots/doitian__dsh-music/aee0390bd2145f7d55fae684e0fe5f26ddeda4b7/conversation.png
   - skin-screenshots/doitian__dsh-music/aee0390bd2145f7d55fae684e0fe5f26ddeda4b7/settings.png
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-30T03:53:15.825Z
-starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-30T03:53:15.825Z
+releaseUpdatedAt: 2026-11-09T00:15:55.970Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-07T05:33:38.409Z
+updatedAt: 2026-11-10T00:42:47.982Z

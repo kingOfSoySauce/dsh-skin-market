@@ -44,6 +44,19 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: npm run registry:check
 
+      - name: Check the submission contract and README stay in sync
+        run: npm run contract:check
+
+      # A rowId that differs from the pinned patch's loader row passes the
+      # schema check but makes the market refuse activation later, so verify it
+      # against the pinned commit while the submission is still in review.
+      - name: Check loader row ids against the pinned patches
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: node scripts/check-loader-identity.mjs --base "$BASE_SHA" --head "$HEAD_SHA"
+
       - name: Run submission prompt smoke tests
         run: npm run smoke:submission
 

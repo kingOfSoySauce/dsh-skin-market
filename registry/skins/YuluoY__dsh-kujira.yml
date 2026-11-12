@@ -24,15 +24,11 @@ compatibility:
   dsh: 0.1.5-rc.1
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.png
-  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/conversation.png
-  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/settings.png
 screenshots:
   - https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/menu.zh.png
   - https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/balance.zh.png
   - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.gif
-listScreenshot: https://raw.githubusercontent.com/YuluoY/dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/docs/images/menu.zh.png
+listScreenshot: skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -59,9 +55,12 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 992
 starsSnapshot: 10
+marketScreenshots:
+  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/home.png
+  - skin-screenshots/YuluoY__dsh-kujira/9e6b82de8be0a1b9ad4a8f811c0c7a4bc95f15e4/conversation.png
+featuredRank: 992
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:10.962Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-31T04:39:11.972Z
-updatedAt: 2026-10-31T04:39:11.972Z
+updatedAt: 2026-11-10T00:42:47.982Z

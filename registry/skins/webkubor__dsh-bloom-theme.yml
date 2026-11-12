@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#6696f3d58efba3a7f76bfc1b4e27b0ea822321e8
-  version: 0.20.1
-  commit: 6696f3d58efba3a7f76bfc1b4e27b0ea822321e8
+  target: github:webkubor/dsh-bloom-theme#3e482de0417a689addb18b7afef1ded41b4b0fa4
+  version: 0.27.0
+  commit: 3e482de0417a689addb18b7afef1ded41b4b0fa4
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-bloom-theme
-    packageVersion: 0.20.1
-    integrity: sha512-q6t71xHjhxflkFRf9byuOj3X7+9IuIQF/YJPviCbvO4IGEEokJqAnFpdLzZhg6J3SejuFIOqVBZcetTF2IaciQ==
+    packageVersion: 0.27.0
+    integrity: sha512-3OltYZpXKEqewFZVAe7DlM6CWQP3phU/nPptZJbRYd3FkNWcP179Lc8Yd6zvxXK8njcTsDPZCjIeEgsXxN1iHg==
   npm:
     name: dsh-bloom-theme
-    version: 0.20.1
-    integrity: sha512-q6t71xHjhxflkFRf9byuOj3X7+9IuIQF/YJPviCbvO4IGEEokJqAnFpdLzZhg6J3SejuFIOqVBZcetTF2IaciQ==
+    version: 0.27.0
+    integrity: sha512-3OltYZpXKEqewFZVAe7DlM6CWQP3phU/nPptZJbRYd3FkNWcP179Lc8Yd6zvxXK8njcTsDPZCjIeEgsXxN1iHg==
     repository: https://github.com/webkubor/dsh-bloom-theme
-    gitHead: 6696f3d58efba3a7f76bfc1b4e27b0ea822321e8
+    gitHead: 3e482de0417a689addb18b7afef1ded41b4b0fa4
 compatibility:
   dsh: unverified
   platform:
@@ -55,24 +55,25 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 6696f3d58efba3a7f76bfc1b4e27b0ea822321e8
-    packageVersion: 0.20.1
+    commit: 3e482de0417a689addb18b7afef1ded41b4b0fa4
+    packageVersion: 0.27.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-01T22:47:22.466Z
+    checkedAt: 2026-11-08T00:17:40.875Z
     findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 246
 featuredRank: 193
-starsSnapshot: 44
-releaseUpdatedAt: 2026-11-01T22:47:26.653Z
-metadataUpdatedAt: 2026-11-01T22:47:26.653Z
-starsUpdatedAt: 2026-11-01T01:43:29.600Z
-updatedAt: 2026-11-01T22:47:26.653Z
+releaseUpdatedAt: 2026-11-08T00:17:46.188Z
+metadataUpdatedAt: 2026-11-08T00:17:46.188Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

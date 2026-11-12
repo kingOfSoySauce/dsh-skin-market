@@ -30,10 +30,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/01Virex__dsh-deepshub/0f95a8cf6eed9bf0357c827759f53e8ce9a9a8e7/home.png
-  - skin-screenshots/01Virex__dsh-deepshub/0f95a8cf6eed9bf0357c827759f53e8ce9a9a8e7/conversation.png
-  - skin-screenshots/01Virex__dsh-deepshub/0f95a8cf6eed9bf0357c827759f53e8ce9a9a8e7/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -61,9 +57,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/01Virex__dsh-deepshub/0f95a8cf6eed9bf0357c827759f53e8ce9a9a8e7/home.png
+  - skin-screenshots/01Virex__dsh-deepshub/0f95a8cf6eed9bf0357c827759f53e8ce9a9a8e7/conversation.png
+  - skin-screenshots/01Virex__dsh-deepshub/0f95a8cf6eed9bf0357c827759f53e8ce9a9a8e7/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-26T01:52:35.334Z
-metadataUpdatedAt: 2026-10-26T01:52:35.334Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:35.334Z
+updatedAt: 2026-11-10T00:42:47.982Z

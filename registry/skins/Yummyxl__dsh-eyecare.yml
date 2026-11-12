@@ -15,21 +15,28 @@ modes:
   - light
   - dark
 install:
-  target: github:Yummyxl/dsh-eyecare#efeb92e1bcfe54369f88b6e8a176ad87f87a17b0
+  target: github:Yummyxl/dsh-eyecare#e9c92b6da193713a74909569f4eb9e2b623391e6
   version: 1.1.0
-  commit: efeb92e1bcfe54369f88b6e8a176ad87f87a17b0
+  commit: e9c92b6da193713a74909569f4eb9e2b623391e6
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-eyecare
     packageVersion: 1.1.0
     integrity: sha512-sh4QzGQNFbLWQxLwr5H7g0jxrH7UXrOlzzCujKgkKbQjYQ1yDi4C4mGzlsV5bRHZBrrx0njgOy8PFbGmfqLcjA==
+  npm:
+    name: dsh-eyecare
+    version: 1.1.0
+    integrity: sha512-sh4QzGQNFbLWQxLwr5H7g0jxrH7UXrOlzzCujKgkKbQjYQ1yDi4C4mGzlsV5bRHZBrrx0njgOy8PFbGmfqLcjA==
+    repository: https://github.com/Yummyxl/dsh-eyecare
+    gitHead: e9c92b6da193713a74909569f4eb9e2b623391e6
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Yummyxl/dsh-eyecare/efeb92e1bcfe54369f88b6e8a176ad87f87a17b0/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/Yummyxl/dsh-eyecare/efeb92e1bcfe54369f88b6e8a176ad87f87a17b0/screenshot.png
 review:
   compatibility: unverified
   preview: verified
@@ -45,20 +52,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: efeb92e1bcfe54369f88b6e8a176ad87f87a17b0
+    commit: e9c92b6da193713a74909569f4eb9e2b623391e6
     packageVersion: 1.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:27.529Z
+    checkedAt: 2026-11-09T00:15:28.499Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1052
 starsSnapshot: 2
-releaseUpdatedAt: 2026-09-07T21:58:27.689Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+featuredRank: 1052
+releaseUpdatedAt: 2026-11-09T00:15:28.703Z
+metadataUpdatedAt: 2026-11-09T00:15:28.703Z
 starsUpdatedAt: 2026-09-12T21:24:54.544Z
-updatedAt: 2026-09-12T21:24:54.544Z
-listScreenshot: https://raw.githubusercontent.com/Yummyxl/dsh-eyecare/efeb92e1bcfe54369f88b6e8a176ad87f87a17b0/screenshot.png
+updatedAt: 2026-11-09T00:15:28.703Z

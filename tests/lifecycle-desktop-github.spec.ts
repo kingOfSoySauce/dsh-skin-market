@@ -3,11 +3,12 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { stringify } from 'yaml'
-import { loadCatalog } from '../src/catalog.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { officialDesktopRunner, type OfficialPluginManagerLike } from '../src/official-desktop.ts'
 import { atomicWriteJson, atomicWriteText, packageDir, readDependencies, readMarketState, readProfileBundles } from '../src/profile.ts'
-import type { Operation, SkinEntry } from '../src/types.ts'
+import type { SkinEntry } from '../src/types.ts'
+import { conditionWaiter, operationWaiter } from './fixtures/operations.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 const directories: string[] = []
 const lifecycles: SkinLifecycle[] = []
@@ -16,25 +17,16 @@ afterEach(async () => {
   for (const directory of directories.splice(0)) rmSync(directory, { recursive: true, force: true })
 })
 
-async function until(predicate: () => boolean): Promise<void> {
-  for (let index = 0; index < 500; index++) {
-    if (predicate()) return
-    await new Promise(resolve => setTimeout(resolve, 2))
-  }
-  throw new Error('GitHub lifecycle condition did not settle')
-}
-async function finished(operation: Operation): Promise<Operation> {
-  await until(() => ['done', 'failed', 'cancelled', 'waiting'].includes(operation.phase))
-  return operation
-}
+const until = conditionWaiter({ attempts: 500, intervalMs: 2, message: 'GitHub lifecycle condition did not settle' })
+const finished = operationWaiter({ attempts: 500, intervalMs: 2, message: 'GitHub lifecycle condition did not settle', terminal: ['done', 'failed', 'cancelled', 'waiting'] })
 
-function fixture(subpath?: string) {
-  const base = structuredClone(loadCatalog().skins[0]!)
+function fixture(subpath?: string, options: { manual?: boolean; desktopReason?: string } = {}) {
+  const base = catalogFixtureSkin()
   const commit = 'a'.repeat(40)
   const item: SkinEntry = { ...base, id: 'github-test', package: 'dsh-github-test', rowId: 'github-test', repo: 'https://github.com/Fixture/Skin', subpath,
     compatibility: { dsh: '*', platform: ['web'] },
-    review: { compatibility: 'verified', preview: 'verified', installation: 'verified' },
-    install: { target: `github:Fixture/Skin#${commit}${subpath === undefined ? '' : `&path:/${subpath}`}`, commit, version: '1.0.0', desktop: { mode: 'manual-only', reason: 'npm-package-not-found' } },
+    review: { compatibility: 'verified', preview: 'verified', installation: options.manual === true ? 'manual-only' : 'verified' },
+    install: { target: `github:Fixture/Skin#${commit}${subpath === undefined ? '' : `&path:/${subpath}`}`, commit, version: '1.0.0', desktop: { mode: 'manual-only', reason: options.desktopReason ?? 'npm-package-not-found' } },
   }
   const directory = mkdtempSync(join(tmpdir(), 'dsh-desktop-github-lifecycle-'))
   directories.push(directory)
@@ -93,6 +85,36 @@ describe('official Desktop pinned GitHub installation', () => {
     expect(readMarketState(f.directory)).toMatchObject({ activeSkinId: null, disabledSkinIds: [f.item.id] })
     expect(f.lifecycle.states()[0]).toMatchObject({ installation: 'installed', installedVersion: '1.0.0', updateAvailable: false })
     expect(f.manager.setBundleEnabled).not.toHaveBeenCalledWith(f.item.package, true)
+  })
+
+  it('installs an unreviewed npm-fallback GitHub source through the official manager', async () => {
+    const f = fixture(undefined, { manual: true })
+    expect(await finished(f.lifecycle.begin('install', f.item.id))).toMatchObject({ phase: 'done' })
+    expect(f.manager.installBundle).toHaveBeenCalledExactlyOnceWith(f.item.install.target, { enabled: false, saveExact: true, requestId: expect.any(String) })
+  })
+
+  it('retries a GitHub build approval with the exact tarball key the Host reported', async () => {
+    const f = fixture(undefined, { manual: true })
+    const key = `${f.item.package}@https://codeload.github.com/Fixture/Skin/tar.gz/${f.item.install.commit}`
+    f.manager.installBundle.mockResolvedValueOnce({
+      application: 'failed', changed: false, stage: 'install', target: f.item.install.target,
+      pendingBuilds: [key], error: { code: 'build-approval-required', message: 'git-hosted package needs build approval' },
+    })
+    const failed = await finished(f.lifecycle.begin('install', f.item.id))
+    expect(failed).toMatchObject({ phase: 'failed', failure: { kind: 'build-approval', action: 'approve-build', buildKeys: [key] } })
+    expect(f.manager.installBundle).toHaveBeenCalledTimes(1)
+
+    const retried = await finished(f.lifecycle.retry(failed.id, 'approve-build'))
+    expect(retried).toMatchObject({ phase: 'done', application: 'applied' })
+    expect(f.manager.installBundle).toHaveBeenCalledTimes(2)
+    expect(f.manager.installBundle.mock.calls[1]?.[0]).toBe(f.item.install.target)
+    expect(f.manager.installBundle.mock.calls[1]?.[1]).toMatchObject({ approvedBuilds: [key] })
+  })
+
+  it('keeps an explicitly manual Desktop source blocked', () => {
+    const f = fixture(undefined, { manual: true, desktopReason: '当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。' })
+    expect(() => f.lifecycle.begin('install', f.item.id)).toThrow('Desktop 当前不支持该皮肤的一键安装')
+    expect(f.manager.installBundle).not.toHaveBeenCalled()
   })
 
   it('recognizes an existing verified GitHub artifact without reinstalling', async () => {

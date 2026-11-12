@@ -30,14 +30,11 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Ddamage__dsh-shunshun-wallpaper/6f42d12d2b652b14ddc84a3221ddeef47e066d4a/home.png
-  - skin-screenshots/Ddamage__dsh-shunshun-wallpaper/6f42d12d2b652b14ddc84a3221ddeef47e066d4a/conversation.png
-  - skin-screenshots/Ddamage__dsh-shunshun-wallpaper/6f42d12d2b652b14ddc84a3221ddeef47e066d4a/settings.png
 screenshots:
   - https://github.com/Ddamage/dsh-shunshun-wallpaper/releases/download/v1.0.1/rotating_horse_smooth.gif
   - https://github.com/Ddamage/dsh-shunshun-wallpaper/releases/download/v1.0.1/wallpaper.png
   - skin-screenshots/Ddamage__dsh-shunshun-wallpaper/6f42d12d2b652b14ddc84a3221ddeef47e066d4a/home.gif
+listScreenshot: https://github.com/Ddamage/dsh-shunshun-wallpaper/releases/download/v1.0.1/rotating_horse_smooth.gif
 review:
   compatibility: unverified
   preview: verified
@@ -63,10 +60,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1057
 starsSnapshot: 7
+marketScreenshots:
+  - skin-screenshots/Ddamage__dsh-shunshun-wallpaper/6f42d12d2b652b14ddc84a3221ddeef47e066d4a/home.png
+  - skin-screenshots/Ddamage__dsh-shunshun-wallpaper/6f42d12d2b652b14ddc84a3221ddeef47e066d4a/conversation.png
+  - skin-screenshots/Ddamage__dsh-shunshun-wallpaper/6f42d12d2b652b14ddc84a3221ddeef47e066d4a/settings.png
+featuredRank: 1057
 releaseUpdatedAt: 2026-09-07T21:58:43.286Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-22T22:17:03.686Z
-updatedAt: 2026-10-22T22:17:03.686Z
-listScreenshot: https://github.com/Ddamage/dsh-shunshun-wallpaper/releases/download/v1.0.1/rotating_horse_smooth.gif
+updatedAt: 2026-11-10T00:42:47.982Z

@@ -37,6 +37,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Aik358/dsh-anchored-monitor/8cb863fa50c3d17dec2683a247b93f90deeb5a16/docs/dashboard.png
   - https://raw.githubusercontent.com/Aik358/dsh-anchored-monitor/133e0adc2f11a2eb0844683b9405eb88b97d52c0/docs/dashboard.png
+listScreenshot: https://raw.githubusercontent.com/Aik358/dsh-anchored-monitor/086bd05e1e3035ddf23133f3a0ee479291a4b237/docs/dashboard.png
 review:
   compatibility: verified
   preview: verified
@@ -62,9 +63,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 155
 starsSnapshot: 13
+featuredRank: 155
 releaseUpdatedAt: 2026-09-06T21:12:23.917Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+metadataUpdatedAt: 2026-11-09T00:13:19.027Z
 starsUpdatedAt: 2026-10-21T22:17:14.232Z
-updatedAt: 2026-10-21T22:17:14.232Z
+updatedAt: 2026-11-09T00:13:19.027Z

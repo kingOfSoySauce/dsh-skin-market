@@ -29,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/jungeer/dsh-theme-stardew/2f2ac99cb821e4ebd8cd94a5e5cd6e9568c7863a/docs/preview-day.jpg
   - https://raw.githubusercontent.com/jungeer/dsh-theme-stardew/2f2ac99cb821e4ebd8cd94a5e5cd6e9568c7863a/docs/preview-night.jpg
+listScreenshot: https://raw.githubusercontent.com/jungeer/dsh-theme-stardew/2f2ac99cb821e4ebd8cd94a5e5cd6e9568c7863a/docs/preview-day.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -54,9 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 161
 starsSnapshot: 2
+featuredRank: 161
 releaseUpdatedAt: 2026-08-23T05:31:31.952Z
-metadataUpdatedAt: 2026-08-23T05:31:31.952Z
+metadataUpdatedAt: 2026-11-09T00:15:04.027Z
 starsUpdatedAt: 2026-10-30T04:54:33.193Z
-updatedAt: 2026-10-30T04:54:33.193Z
+updatedAt: 2026-11-09T00:15:04.027Z

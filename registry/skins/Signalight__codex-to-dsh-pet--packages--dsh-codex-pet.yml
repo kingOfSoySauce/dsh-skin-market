@@ -31,7 +31,7 @@ install:
     repository: https://github.com/Signalight/codex-to-dsh-pet
     gitHead: e2ee746b53cca4b1509b65f8916f6c5127914019
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.0-rc.6"
   platform:
     - web
 screenshots:
@@ -39,17 +39,18 @@ screenshots:
   - https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/e2ee746b53cca4b1509b65f8916f6c5127914019/assets/screenshots/screenshot-2.png
 listScreenshot: https://raw.githubusercontent.com/Signalight/codex-to-dsh-pet/e2ee746b53cca4b1509b65f8916f6c5127914019/assets/screenshots/screenshot-1.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
-  suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    installCommand: pass
+    topic: pass
+  suggestions: []
   scan:
     commit: e2ee746b53cca4b1509b65f8916f6c5127914019
     packageVersion: 0.5.0
@@ -61,11 +62,11 @@ health:
     findings: []
 license:
   code: MIT
-  commercialUse: false
+  commercialUse: true
   notice: 代码与生成语音MIT；默认娜斯佳角色CC BY-NC 4.0，须署名且仅限非商业用途。
-featuredRank: 995
 starsSnapshot: 5
+featuredRank: 995
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T00:14:01.772Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T00:14:01.772Z

@@ -30,6 +30,7 @@ compatibility:
     - web
 screenshots:
   - https://i0.wp.com/tva1.sinaimg.cn/large/9448bbf8gy1igbaivjxl6j21du0rb1kx.jpg
+listScreenshot: https://i0.wp.com/tva1.sinaimg.cn/large/9448bbf8gy1igbaivjxl6j21du0rb1kx.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -55,9 +56,9 @@ health:
 license:
   code: BSD-3-Clause
   commercialUse: true
-featuredRank: 1019
 starsSnapshot: 0
+featuredRank: 1019
 releaseUpdatedAt: 2026-08-23T05:33:23.785Z
-metadataUpdatedAt: 2026-08-23T05:33:23.785Z
+metadataUpdatedAt: 2026-11-09T00:17:43.438Z
 starsUpdatedAt: 2026-09-09T21:40:51.984Z
-updatedAt: 2026-09-09T21:40:51.984Z
+updatedAt: 2026-11-09T00:17:43.438Z

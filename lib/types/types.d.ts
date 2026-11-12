@@ -1,4 +1,5 @@
 export type MarketHostKind = 'dsh' | 'desktop';
+import type { OperationMessageFields, OperationStepFields } from './operation-message.ts';
 export type DesktopInstallCapability = {
     mode: 'managed';
     registry: 'npm';
@@ -22,6 +23,16 @@ export interface CompatibilityAdapter {
     when: string;
     slot: string;
     key: 'locale' | string;
+}
+export type LocalizedText = Partial<Record<'zh' | 'en', string>>;
+export type DescriptionPolicy = 'show' | 'omit';
+export interface LocalizedSkinCopy {
+    name?: LocalizedText;
+    description?: LocalizedText;
+    descriptionPolicy?: DescriptionPolicy;
+}
+export interface CatalogDisplayCopy {
+    skins: Record<string, LocalizedSkinCopy>;
 }
 export interface DshRuntime {
     version: string | null;
@@ -124,6 +135,7 @@ export interface CatalogFile {
     schemaVersion: number;
     generatedAt: string;
     skins: SkinEntry[];
+    displayCopy?: CatalogDisplayCopy;
     /** Continuous per-skin-age heat data; kept outside entries for old-client compatibility. */
     heat?: Record<string, SkinHeat>;
 }
@@ -146,6 +158,7 @@ export interface CatalogSkin extends SkinEntry {
     starsStale: boolean;
     starsUpdatedAt: string;
     recommendations: string[];
+    localizedCopy?: LocalizedSkinCopy;
     heat?: SkinHeat;
 }
 export type InstallationState = 'missing' | 'installed' | 'updating' | 'broken';
@@ -177,6 +190,8 @@ export interface SkinRuntimeState {
     clientModule?: boolean;
     /** A browser-local selection check may refine only this inferred restart reason. */
     restartSource?: 'selection';
+    /** This receipt only has to stop a running skin; a confirmed stop clears it. */
+    restartOnlyToStop?: boolean;
     /** Every managed Host row matches the current complete enabled selection. */
     selectionHostApplied?: boolean;
     /** Complete managed Host selection, including asynchronous apply/dispose phases. */
@@ -189,6 +204,8 @@ export interface SkinRuntimeState {
     artifactRisk?: SkinArtifactRisk;
     sourceMigration?: SkinSourceMigration;
     error?: string;
+    errorKey?: OperationMessageFields['messageKey'];
+    errorParams?: OperationMessageFields['messageParams'];
 }
 export interface InstalledClientPlugin {
     package: string;
@@ -208,33 +225,41 @@ export type SelectionOperationKind = 'activate' | 'deactivate' | 'pin' | 'unpin'
 export type OperationKind = 'install' | SelectionOperationKind | 'update' | 'migrate' | 'uninstall';
 export type OperationPhase = 'queued' | 'resolving' | 'downloading' | 'installing' | 'validating' | 'activating' | 'waiting' | 'cancelling' | 'cancelled' | 'done' | 'failed';
 export type OperationRetryAction = 'retry' | 'approve-build' | 'approve-release-age' | 'approve-artifact' | 'repair-configuration';
+/** What the user must do after an automatic install could not finish. */
+export type ManualFollowUp = 'uninstall-then-add' | 'enable' | 'install' | 'check';
 export interface SkinArtifactRisk {
     context: string;
     packageName: string;
     version: string;
     warnings: string[];
 }
-export interface OperationFailure {
-    kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'compatibility' | 'conflict' | 'command' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'pnpm-missing' | 'no-matching-version' | 'disk-full' | 'permission' | 'integrity' | 'configuration-override';
+export interface OperationFailure extends OperationMessageFields {
+    kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'existing-source-unreachable' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'compatibility' | 'conflict' | 'command' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'pnpm-missing' | 'no-matching-version' | 'disk-full' | 'permission' | 'integrity' | 'configuration-override';
     message: string;
     code?: string;
     desiredEnabled?: boolean;
     targetSkinId?: string;
     configurationOverride?: import('./configuration-override-types.ts').ConfigurationOverridePlan;
     packageName?: string;
+    unreachableSource?: {
+        repository: string;
+        commit: string;
+    };
     releaseAgeTarget?: {
         packageName: string;
         version: string;
     };
     artifactRisk?: SkinArtifactRisk;
     manualSpec?: string;
+    /** Set only when the failed step is known. Absent manualSpec failures are ordinary installs. */
+    manualFollowUp?: ManualFollowUp;
     /** An exact verified target that the official Desktop panel may prefill after a failure. */
     fallbackSpec?: string;
     buildKeys?: string[];
     action?: OperationRetryAction;
     conflicts?: InstallConflict[];
 }
-export interface Operation {
+export interface Operation extends OperationMessageFields, OperationStepFields {
     id: string;
     kind: OperationKind;
     skinId: string;
@@ -281,6 +306,8 @@ export interface PersistedMarketState {
         selectionChanges?: string[];
         /** Main and owned companion/loader artifacts bound to each selection inference. */
         selectionArtifacts?: Record<string, string>;
+        /** Skins that were disabled while running; a confirmed stop no longer needs a restart. */
+        stoppedSkinIds?: string[];
     };
     activity?: Record<string, SkinActivity>;
     /** Companion packages linked to installed owner skins. */

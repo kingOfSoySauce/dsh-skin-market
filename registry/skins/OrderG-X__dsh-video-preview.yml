@@ -14,18 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:OrderG-X/dsh-video-preview#92d8a01d2df691d6b55afc9741b053540655e0df
-  version: 0.5.4
-  commit: 92d8a01d2df691d6b55afc9741b053540655e0df
+  target: github:OrderG-X/dsh-video-preview#a9476a7507b58353b52363d8c8d68cc98c22adaf
+  version: 0.5.7
+  commit: a9476a7507b58353b52363d8c8d68cc98c22adaf
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: "@orderg-x/dsh-video-preview"
+    packageVersion: 0.5.7
+    integrity: sha512-KAlYgO2rOZgHiZ5EO2L6XyfFuC4fGjFRrP2xBqaaCGLgDMCnU5QQkQv6ZPmr6zAGR2TJMvk7eNB8b1H8+U+AYA==
   npm:
     name: "@orderg-x/dsh-video-preview"
-    version: 0.5.4
-    integrity: sha512-ylfeTfPS4FuZAj6F7bNTyD4VII7j3Wqr36qYDHcDdG6fTIH+nnY/NRiB7xcQYNATk/xazxyW8BvykenAfT9z+g==
+    version: 0.5.7
+    integrity: sha512-KAlYgO2rOZgHiZ5EO2L6XyfFuC4fGjFRrP2xBqaaCGLgDMCnU5QQkQv6ZPmr6zAGR2TJMvk7eNB8b1H8+U+AYA==
     repository: https://github.com/OrderG-X/dsh-video-preview
-    gitHead: 92d8a01d2df691d6b55afc9741b053540655e0df
+    gitHead: a9476a7507b58353b52363d8c8d68cc98c22adaf
 compatibility:
   dsh: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
   platform:
@@ -49,20 +52,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 92d8a01d2df691d6b55afc9741b053540655e0df
-    packageVersion: 0.5.4
+    commit: a9476a7507b58353b52363d8c8d68cc98c22adaf
+    packageVersion: 0.5.7
     scannerVersion: static-v2
     dshVersion: ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-01T22:47:36.044Z
+    checkedAt: 2026-11-11T13:17:50.353Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 0
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-01T22:47:37.305Z
-metadataUpdatedAt: 2026-11-01T22:47:37.305Z
+releaseUpdatedAt: 2026-11-11T13:17:51.098Z
+metadataUpdatedAt: 2026-11-11T13:17:51.098Z
 starsUpdatedAt: 2026-11-01T01:43:34.817Z
-updatedAt: 2026-11-01T22:47:37.305Z
+updatedAt: 2026-11-11T13:17:51.098Z

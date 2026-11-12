@@ -17,15 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CyberWei922/dsh-cyberwhale#f97cbaa7b6f00f05369717c898178d3a774a774f
-  version: 1.0.2
-  commit: f97cbaa7b6f00f05369717c898178d3a774a774f
+  target: github:CyberWei922/dsh-cyberwhale#788915702dc27fa485d15a7eab648c230082ec29
+  version: 1.0.4
+  commit: 788915702dc27fa485d15a7eab648c230082ec29
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-cyberwhale
+    packageVersion: 1.0.4
+    integrity: sha512-QLUezxt3xeMmXVXKbaxmUiOyLjNmYS+LcezJ4RaM2BM/P/GR3nFarBg5gezBWcTQhn92HAjKgxm+iPsh37JqtQ==
   npm:
     name: dsh-cyberwhale
-    version: 1.0.2
-    integrity: sha512-4HmgS1CGycOW0Bj2PvXu4wMjeGQ4JSByOuNJhmxwN8q9KFNVq++WbVuAMEEPMasldponOwIN9vhyKcnXffX4tA==
+    version: 1.0.4
+    integrity: sha512-QLUezxt3xeMmXVXKbaxmUiOyLjNmYS+LcezJ4RaM2BM/P/GR3nFarBg5gezBWcTQhn92HAjKgxm+iPsh37JqtQ==
     repository: https://github.com/CyberWei922/dsh-cyberwhale
-    gitHead: f97cbaa7b6f00f05369717c898178d3a774a774f
+    gitHead: 788915702dc27fa485d15a7eab648c230082ec29
 compatibility:
   dsh: ">=0.2.0-rc.2 <1.0.0"
   platform:
@@ -51,20 +57,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: f97cbaa7b6f00f05369717c898178d3a774a774f
-    packageVersion: 1.0.2
+    commit: 788915702dc27fa485d15a7eab648c230082ec29
+    packageVersion: 1.0.4
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.2 <1.0.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-21T22:17:25.234Z
+    checkedAt: 2026-11-07T05:33:51.634Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1119
 starsSnapshot: 6
-releaseUpdatedAt: 2026-10-22T06:40:00.000Z
-metadataUpdatedAt: 2026-10-22T06:40:00.000Z
+featuredRank: 1119
+releaseUpdatedAt: 2026-11-07T05:33:53.075Z
+metadataUpdatedAt: 2026-11-07T05:33:53.075Z
 starsUpdatedAt: 2026-10-22T06:40:00.000Z
-updatedAt: 2026-10-22T06:40:00.000Z
+updatedAt: 2026-11-07T05:33:53.075Z

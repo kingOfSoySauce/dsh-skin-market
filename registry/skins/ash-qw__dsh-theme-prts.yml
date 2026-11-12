@@ -16,18 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ash-qw/dsh-theme-prts#19f160214ac52150af9bafc33b354be3c0e93d84
-  version: 1.0.6
-  commit: 19f160214ac52150af9bafc33b354be3c0e93d84
+  target: github:ash-qw/dsh-theme-prts#a45f69b61b884786772c563b96130fd99286806a
+  version: 3.2.1
+  commit: a45f69b61b884786772c563b96130fd99286806a
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepublishOnly
+    mode: managed
+    registry: npm
+    packageName: "@ash-qw/dsh-theme-prts"
+    packageVersion: 3.2.1
+    integrity: sha512-FLYBkVX+Memo1/dN1sHOesFAAOEIfjzQSzpB6/8xmi1vKNJKUow2J+CzCrGZOV6pWa5sfx4JoRj7eeiU/xdM/w==
   npm:
     name: "@ash-qw/dsh-theme-prts"
-    version: 1.0.6
-    integrity: sha512-X1Lw3eDnqBup0JPXeIY3ZpP/3tulKd1ReSlU4CglFT060xo+NP+aHBbFMjvGH4x8SeL/TMnVtdrssZQzX2i+bQ==
+    version: 3.2.1
+    integrity: sha512-FLYBkVX+Memo1/dN1sHOesFAAOEIfjzQSzpB6/8xmi1vKNJKUow2J+CzCrGZOV6pWa5sfx4JoRj7eeiU/xdM/w==
     repository: https://github.com/ash-qw/dsh-theme-prts
-    gitHead: 19f160214ac52150af9bafc33b354be3c0e93d84
+    gitHead: a45f69b61b884786772c563b96130fd99286806a
 compatibility:
   dsh: unverified
   platform:
@@ -52,19 +55,19 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 19f160214ac52150af9bafc33b354be3c0e93d84
-    packageVersion: 1.0.6
+    commit: a45f69b61b884786772c563b96130fd99286806a
+    packageVersion: 3.2.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-10T22:26:06.304Z
+    checkedAt: 2026-11-11T00:07:50.744Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
+starsSnapshot: 16
 featuredRank: 1090
-starsSnapshot: 6
-releaseUpdatedAt: 2026-10-10T22:26:07.661Z
-metadataUpdatedAt: 2026-10-10T22:26:07.661Z
-starsUpdatedAt: 2026-10-11T22:48:40.874Z
-updatedAt: 2026-10-11T22:48:40.874Z
+releaseUpdatedAt: 2026-11-11T00:07:52.409Z
+metadataUpdatedAt: 2026-11-11T00:07:52.409Z
+starsUpdatedAt: 2026-11-08T00:17:43.373Z
+updatedAt: 2026-11-11T00:07:52.409Z

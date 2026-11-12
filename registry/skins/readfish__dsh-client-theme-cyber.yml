@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/readfish__dsh-client-theme-cyber/73cd16d971762ec7755357a80a8f92e5b4a23b3a/home.png
-  - skin-screenshots/readfish__dsh-client-theme-cyber/73cd16d971762ec7755357a80a8f92e5b4a23b3a/conversation.png
-  - skin-screenshots/readfish__dsh-client-theme-cyber/73cd16d971762ec7755357a80a8f92e5b4a23b3a/settings.png
 screenshots:
   - https://raw.githubusercontent.com/readfish/dsh-client-theme-cyber/73cd16d971762ec7755357a80a8f92e5b4a23b3a/assets/city.jpg
   - https://raw.githubusercontent.com/readfish/dsh-client-theme-cyber/73cd16d971762ec7755357a80a8f92e5b4a23b3a/assets/cube.jpg
@@ -58,9 +54,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/readfish__dsh-client-theme-cyber/73cd16d971762ec7755357a80a8f92e5b4a23b3a/home.png
+  - skin-screenshots/readfish__dsh-client-theme-cyber/73cd16d971762ec7755357a80a8f92e5b4a23b3a/conversation.png
+  - skin-screenshots/readfish__dsh-client-theme-cyber/73cd16d971762ec7755357a80a8f92e5b4a23b3a/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:05.342Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:05.342Z
+updatedAt: 2026-11-11T13:17:15.192Z

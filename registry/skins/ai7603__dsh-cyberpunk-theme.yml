@@ -29,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/ai7603/dsh-cyberpunk-theme/445693a248a03ebae53f155e8af0401410463d70/docs/screenshots/session-dark.png
   - https://raw.githubusercontent.com/ai7603/dsh-cyberpunk-theme/445693a248a03ebae53f155e8af0401410463d70/docs/screenshots/session-light.png
+listScreenshot: https://raw.githubusercontent.com/ai7603/dsh-cyberpunk-theme/445693a248a03ebae53f155e8af0401410463d70/docs/screenshots/session-dark.png
 review:
   compatibility: unverified
   preview: verified
@@ -54,9 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 47
 starsSnapshot: 3
+featuredRank: 47
 releaseUpdatedAt: 2026-08-23T05:29:19.398Z
-metadataUpdatedAt: 2026-08-23T05:29:19.398Z
+metadataUpdatedAt: 2026-11-09T00:14:23.217Z
 starsUpdatedAt: 2026-09-09T21:39:31.307Z
-updatedAt: 2026-09-09T21:39:31.307Z
+updatedAt: 2026-11-09T00:14:23.217Z

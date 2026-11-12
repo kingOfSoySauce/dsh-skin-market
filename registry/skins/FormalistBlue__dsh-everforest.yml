@@ -14,18 +14,24 @@ modes:
   - light
   - dark
 install:
-  target: github:FormalistBlue/dsh-everforest#f079bd8870c8d05c8f4bcf15f3a2475aef480fac
-  version: 1.3.0
-  commit: f079bd8870c8d05c8f4bcf15f3a2475aef480fac
+  target: github:FormalistBlue/dsh-everforest#acf99702055a1888f860cfa99cecbb5e249b90ca
+  version: 1.5.0
+  commit: acf99702055a1888f860cfa99cecbb5e249b90ca
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-everforest
+    version: 1.5.0
+    integrity: sha512-ktDyCOx9qtQvDRmI9R2dRgJR9gHwWOcZCPLuETWr4/fiStF+yEEcwUpQR7vs4qNOCSKd3e/c8r/goeYu0gIdVg==
+    repository: https://github.com/FormalistBlue/dsh-everforest
+    gitHead: acf99702055a1888f860cfa99cecbb5e249b90ca
 compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0-0"
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/FormalistBlue/dsh-everforest/c71f1d8a2b942ced11b7a51d22971471a25e35bc/.github/assets/everforest-dark-soft.png
+  - https://raw.githubusercontent.com/FormalistBlue/dsh-everforest/f079bd8870c8d05c8f4bcf15f3a2475aef480fac/.github/assets/everforest-dark-soft.png
   - https://raw.githubusercontent.com/FormalistBlue/dsh-everforest/c71f1d8a2b942ced11b7a51d22971471a25e35bc/.github/assets/everforest-light-hard.png
 listScreenshot: https://raw.githubusercontent.com/FormalistBlue/dsh-everforest/c71f1d8a2b942ced11b7a51d22971471a25e35bc/.github/assets/everforest-dark-soft.png
 review:
@@ -44,19 +50,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: f079bd8870c8d05c8f4bcf15f3a2475aef480fac
-    packageVersion: 1.3.0
+    commit: acf99702055a1888f860cfa99cecbb5e249b90ca
+    packageVersion: 1.5.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T23:01:17.992Z
+    checkedAt: 2026-11-09T00:14:27.016Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
+starsSnapshot: 3
 featuredRank: 998
-releaseUpdatedAt: 2026-10-30T23:01:18.860Z
-metadataUpdatedAt: 2026-10-30T23:01:18.860Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T23:01:18.860Z
+releaseUpdatedAt: 2026-11-09T00:14:27.804Z
+metadataUpdatedAt: 2026-11-09T00:14:27.804Z
+starsUpdatedAt: 2026-11-03T01:36:56.745Z
+updatedAt: 2026-11-09T00:14:27.804Z

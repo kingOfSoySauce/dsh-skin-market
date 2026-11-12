@@ -1,0 +1,66 @@
+id: ririko2.lllj.dsh.skin
+name:
+  zh: 柠檬水工厂 · 昼夜双模
+  en: LimeLight Lemonade Jam
+author: Ririko2
+description: 《ライムライト・レモネードジャム》主题：纸白/深蓝昼夜双模，六位角色按会话分配，官方 SD 头像与贴纸、游戏原文台词完成卡，四套随机分割线。
+repo: https://github.com/Ririko2/lllj-dsh-skin
+package: dsh-skin-lllj
+rowId: lllj-skin
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:Ririko2/lllj-dsh-skin#f86e62986c9e5d5d9619d2e077ad10d10bc097f7
+  version: 0.9.10
+  commit: f86e62986c9e5d5d9619d2e077ad10d10bc097f7
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/empty-day.png
+  - https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/empty-night.png
+  - https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/chat-day.png
+  - https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/chat-anju.png
+  - https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/empty-day-group.png
+  - https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/chat-ririko.png
+listScreenshot: https://raw.githubusercontent.com/Ririko2/lllj-dsh-skin/4e874a46284a6c045a533072148969252fd5a01d/docs/empty-day.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: f86e62986c9e5d5d9619d2e077ad10d10bc097f7
+    packageVersion: 0.9.10
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-11-11T00:09:07.669Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 1
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-11T00:09:10.643Z
+metadataUpdatedAt: 2026-11-11T00:09:10.643Z
+starsUpdatedAt: 2026-11-08T17:48:02.165Z
+updatedAt: 2026-11-11T00:09:10.643Z

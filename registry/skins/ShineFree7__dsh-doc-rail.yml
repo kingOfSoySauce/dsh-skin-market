@@ -29,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/ShineFree7/dsh-doc-rail/b667d299a3fe4a574879f2de336c2ae589484f3a/assets/preview-light.png
   - https://raw.githubusercontent.com/ShineFree7/dsh-doc-rail/b667d299a3fe4a574879f2de336c2ae589484f3a/assets/preview-dark.png
+listScreenshot: https://raw.githubusercontent.com/ShineFree7/dsh-doc-rail/b667d299a3fe4a574879f2de336c2ae589484f3a/assets/preview-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -54,10 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1097
 starsSnapshot: 0
+featuredRank: 1097
 releaseUpdatedAt: 2026-09-07T21:59:02.465Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-09T07:18:14.102Z
 starsUpdatedAt: 2026-09-07T21:59:02.465Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/ShineFree7/dsh-doc-rail/b667d299a3fe4a574879f2de336c2ae589484f3a/assets/preview-light.png
+updatedAt: 2026-11-09T07:18:14.102Z

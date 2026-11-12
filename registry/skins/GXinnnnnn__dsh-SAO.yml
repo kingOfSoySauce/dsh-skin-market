@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:GXinnnnnn/dsh-SAO#62d34b4dde554e6082a2d7713e993d033efbc705
-  version: 1.0.5
-  commit: 62d34b4dde554e6082a2d7713e993d033efbc705
+  target: github:GXinnnnnn/dsh-SAO#558e588ed8153cd419afb20036d487835a2ced92
+  version: 1.0.6
+  commit: 558e588ed8153cd419afb20036d487835a2ced92
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -46,19 +46,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 62d34b4dde554e6082a2d7713e993d033efbc705
-    packageVersion: 1.0.5
+    commit: 558e588ed8153cd419afb20036d487835a2ced92
+    packageVersion: 1.0.6
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-10T00:11:50.618Z
+    checkedAt: 2026-11-11T13:17:44.010Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 1000
 starsSnapshot: 4
-releaseUpdatedAt: 2026-11-10T00:42:47.982Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+releaseUpdatedAt: 2026-11-11T13:17:45.721Z
+metadataUpdatedAt: 2026-11-11T13:17:45.721Z
 starsUpdatedAt: 2026-11-06T00:08:18.130Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-11T13:17:45.721Z

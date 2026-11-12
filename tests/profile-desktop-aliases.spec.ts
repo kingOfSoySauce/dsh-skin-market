@@ -224,10 +224,18 @@ describe('Desktop replacement component saved defaults', () => {
     const row = { id: host.skin.rowId, disabled: true }
     const operations = shape === 'insert' ? [{ insert: [{ id: 'another-group', insert: [row] }] }]
       : shape === 'group config' ? [{ id: 'another-group', group: true, config: [row] }]
-        : [{ id: 'outer-group', group: true, config: [{ id: 'inner-group', group: true, config: [{ name: host.skin.package, disabled: true }] }] }]
+        : [{ id: 'outer-group', group: true, config: [{ id: 'inner-group', group: true, config: [row] }] }]
     atomicWriteText(profilePatchFile(host.directory), stringify(operations))
 
     expect(desktopLegacyReplacementEnabled(host.directory, host.skin)).toBe(false)
+  })
+
+  it('ignores a group child that names the target package without a loader id', () => {
+    const host = fixture()
+    const operations = [{ id: 'outer-group', group: true, config: [{ name: host.skin.package, disabled: true }] }]
+    atomicWriteText(profilePatchFile(host.directory), stringify(operations))
+
+    expect(desktopLegacyReplacementEnabled(host.directory, host.skin)).toBe(true)
   })
 
   it.each([undefined, false])('does not interpret ordinary plugin config as loader rows when group=%s', group => {

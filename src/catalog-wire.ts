@@ -1,4 +1,4 @@
-import type { CatalogFile, NpmInstallSource, SkinEntry } from './types.ts'
+import type { CatalogDisplayCopy, CatalogFile, LocalizedSkinCopy, NpmInstallSource, SkinEntry } from './types.ts'
 
 type WireSkinEntry = Omit<SkinEntry, 'install'> & { install: Omit<SkinEntry['install'], 'npm'> }
 
@@ -16,6 +16,47 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   if (typeof value !== 'object' || value === null || Array.isArray(value)) return false
   const prototype = Object.getPrototypeOf(value)
   return prototype === Object.prototype || prototype === null
+}
+
+function localizedText(value: unknown, id: string, field: 'name' | 'description'): { zh?: string; en?: string } {
+  if (!isRecord(value)) throw new Error(`invalid display ${field} for ${id}: must be an object`)
+  if (Object.keys(value).some(key => key !== 'zh' && key !== 'en')) throw new Error(`invalid display ${field} for ${id}: unexpected locale`)
+  for (const [locale, text] of Object.entries(value)) {
+    if (typeof text !== 'string' || text.trim() === '') throw new Error(`invalid display ${field} for ${id}.${locale}`)
+  }
+  if (Object.keys(value).length === 0) throw new Error(`invalid display ${field} for ${id}: must not be empty`)
+  return {
+    ...(typeof value.zh === 'string' ? { zh: value.zh } : {}),
+    ...(typeof value.en === 'string' ? { en: value.en } : {}),
+  }
+}
+
+function localizedSkinCopy(value: unknown, id: string): LocalizedSkinCopy {
+  if (!isRecord(value)) throw new Error(`invalid display copy for ${id}: must be an object`)
+  if (Object.keys(value).some(key => !['name', 'description', 'descriptionPolicy'].includes(key))) throw new Error(`invalid display copy for ${id}: unexpected field`)
+  const name = value.name === undefined ? undefined : localizedText(value.name, id, 'name')
+  const description = value.description === undefined ? undefined : localizedText(value.description, id, 'description')
+  const descriptionPolicy = value.descriptionPolicy
+  if (descriptionPolicy !== undefined && descriptionPolicy !== 'show' && descriptionPolicy !== 'omit') {
+    throw new Error(`invalid display description policy for ${id}`)
+  }
+  if (descriptionPolicy === 'omit' && description !== undefined) throw new Error(`invalid omitted display description for ${id}`)
+  if (descriptionPolicy === 'show' && description === undefined) throw new Error(`missing display description for ${id}`)
+  return {
+    ...(name === undefined ? {} : { name }),
+    ...(description === undefined ? {} : { description }),
+    ...(descriptionPolicy === undefined ? {} : { descriptionPolicy }),
+  }
+}
+
+function displayCopySource(value: unknown, _ids: Set<unknown>): CatalogDisplayCopy {
+  if (!isRecord(value) || !isRecord(value.skins)) throw new Error('catalog displayCopy must contain a skins object')
+  if (Object.keys(value).some(key => key !== 'skins')) throw new Error('catalog displayCopy has an unexpected field')
+  const skins: Record<string, LocalizedSkinCopy> = {}
+  for (const [id, copy] of Object.entries(value.skins)) {
+    skins[id] = localizedSkinCopy(copy, id)
+  }
+  return { skins }
 }
 
 /** Unknown envelope fields are shared with older clients, but a heat entry we
@@ -81,10 +122,11 @@ export function decodeCatalogWire(value: unknown): CatalogFile {
   if (typeof value.generatedAt !== 'string' || !Number.isFinite(Date.parse(value.generatedAt))) throw new Error('catalog generatedAt is invalid')
   if (!Array.isArray(value.skins) || value.skins.length > 5000) throw new Error('catalog skins must be an array of at most 5000 entries')
 
-  const { npmSources, heat, ...catalog } = value
+  const { npmSources, heat, displayCopy, ...catalog } = value
   if (Object.hasOwn(value, 'npmSources') && !isRecord(npmSources)) throw new Error('catalog npmSources must be an object')
   const sources = npmSources as Record<string, unknown> | undefined
   const ids = new Set(value.skins.map(skin => isRecord(skin) ? skin.id : undefined))
+  const localizedCopy = Object.hasOwn(value, 'displayCopy') ? displayCopySource(displayCopy, ids) : undefined
   for (const id of Object.keys(sources ?? {})) {
     if (!ids.has(id)) throw new Error(`npm source references unknown skin: ${id}`)
   }
@@ -109,6 +151,7 @@ export function decodeCatalogWire(value: unknown): CatalogFile {
   return {
     ...catalog,
     skins,
+    ...(localizedCopy === undefined ? {} : { displayCopy: localizedCopy }),
     ...(heatEntries.length === 0 ? {} : { heat: Object.fromEntries(heatEntries) }),
   } as CatalogFile
 }

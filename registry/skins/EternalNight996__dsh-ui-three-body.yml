@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.1.5-alpha.2 <0.3.0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/home.png
-  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/conversation.png
-  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/settings.png
 screenshots:
   - https://raw.githubusercontent.com/EternalNight996/dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/assets/screen/sophon-demo.webp
   - https://raw.githubusercontent.com/EternalNight996/dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/assets/screen/sophon-core.webp
@@ -59,9 +55,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 999
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/home.png
+  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/conversation.png
+  - skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/settings.png
+featuredRank: 999
 releaseUpdatedAt: 2026-10-25T19:39:23.689Z
-metadataUpdatedAt: 2026-10-26T01:52:05.406Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:05.406Z
+updatedAt: 2026-11-10T00:42:47.982Z

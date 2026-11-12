@@ -37,8 +37,10 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 6a65470c1661c47acbd73da62de39c1b26822fe8
     packageVersion: 0.2.0
@@ -50,9 +52,9 @@ health:
 license:
   code: Apache-2.0
   commercialUse: true
+starsSnapshot: 12
 featuredRank: 990
-starsSnapshot: 11
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
-starsUpdatedAt: 2026-10-26T01:51:04.165Z
-updatedAt: 2026-10-26T01:51:04.165Z
+metadataUpdatedAt: 2026-11-09T00:13:19.092Z
+starsUpdatedAt: 2026-11-07T05:33:49.715Z
+updatedAt: 2026-11-09T00:13:19.092Z

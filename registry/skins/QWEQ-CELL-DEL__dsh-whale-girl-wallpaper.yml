@@ -17,6 +17,9 @@ install:
   target: github:QWEQ-CELL-DEL/dsh-whale-girl-wallpaper#f69490ef6563a481abe8a792c2283657d06e18a8
   version: 0.1.0
   commit: f69490ef6563a481abe8a792c2283657d06e18a8
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
@@ -25,6 +28,7 @@ screenshots:
   - https://raw.githubusercontent.com/QWEQ-CELL-DEL/dsh-whale-girl-wallpaper/f69490ef6563a481abe8a792c2283657d06e18a8/screenshots/preview-1.png
   - https://raw.githubusercontent.com/QWEQ-CELL-DEL/dsh-whale-girl-wallpaper/f69490ef6563a481abe8a792c2283657d06e18a8/screenshots/preview-2.png
   - https://raw.githubusercontent.com/QWEQ-CELL-DEL/dsh-whale-girl-wallpaper/f69490ef6563a481abe8a792c2283657d06e18a8/screenshots/preview-3.png
+listScreenshot: https://raw.githubusercontent.com/QWEQ-CELL-DEL/dsh-whale-girl-wallpaper/f69490ef6563a481abe8a792c2283657d06e18a8/screenshots/preview-1.png
 review:
   compatibility: verified
   preview: verified
@@ -38,12 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: f69490ef6563a481abe8a792c2283657d06e18a8
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:18:05.816Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-02T08:17:32.479Z
-metadataUpdatedAt: 2026-10-02T08:17:32.479Z
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-09T07:18:06.346Z
+metadataUpdatedAt: 2026-11-09T07:18:06.346Z
 starsUpdatedAt: 2026-10-02T08:17:32.479Z
-updatedAt: 2026-10-02T08:17:32.479Z
+updatedAt: 2026-11-09T07:18:06.346Z

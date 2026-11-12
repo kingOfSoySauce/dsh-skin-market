@@ -1,0 +1,70 @@
+id: andersen216.dsh-whale-girl-live2d
+name:
+  zh: dsh-whale-girl-live2d
+  en: dsh-whale-girl-live2d
+author: Andersen216
+description: "🐋 鲸鱼娘桌宠 · Whale Girl Live2D —— DSH（DeepSeek Harness）Web 界面里的 Live2D 桌宠：跟着 agent 的真实状态换表情与动作，点一下就能直接跟 agent 说话，右键是钱包。A Live2D desktop pet for the DSH Web UI. 安装 Install: dsh plugin --profile web add github:Andersen216/dsh-whale-girl-live2d"
+repo: https://github.com/Andersen216/dsh-whale-girl-live2d
+package: dsh-whale-girl-live2d
+rowId: dsh-live2d-pet
+category: pet
+tags:
+  - appearance
+  - pet
+modes:
+  - light
+  - dark
+install:
+  target: github:Andersen216/dsh-whale-girl-live2d#f977bef508690e75ba6535cd8f4ce18e7f6ba9b0
+  version: 0.4.6
+  commit: f977bef508690e75ba6535cd8f4ce18e7f6ba9b0
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成 DSH Web 隔离运行验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+    - web
+marketScreenshots:
+  - skin-screenshots/Andersen216__dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/home.png
+  - skin-screenshots/Andersen216__dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/conversation.png
+  - skin-screenshots/Andersen216__dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/Andersen216/dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/docs/screenshots/01-%E5%BE%85%E6%9C%BA.jpg
+listScreenshot: https://raw.githubusercontent.com/Andersen216/dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/docs/screenshots/01-%E5%BE%85%E6%9C%BA.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: f977bef508690e75ba6535cd8f4ce18e7f6ba9b0
+    packageVersion: 0.4.6
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-09T08:05:55.684Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 94
+releaseUpdatedAt: 2026-11-03T19:20:00+08:00
+metadataUpdatedAt: 2026-11-09T08:05:56.313Z
+starsUpdatedAt: 2026-11-11T13:17:21.545Z
+updatedAt: 2026-11-11T13:17:21.545Z

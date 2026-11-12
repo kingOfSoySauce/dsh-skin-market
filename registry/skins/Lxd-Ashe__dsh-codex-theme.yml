@@ -29,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Lxd-Ashe/dsh-codex-theme/eb4b0b2bb09db16b597a51a503fe24d1140b434f/docs/dark-theme.png
   - https://raw.githubusercontent.com/Lxd-Ashe/dsh-codex-theme/eb4b0b2bb09db16b597a51a503fe24d1140b434f/docs/light-theme.png
+listScreenshot: https://raw.githubusercontent.com/Lxd-Ashe/dsh-codex-theme/eb4b0b2bb09db16b597a51a503fe24d1140b434f/docs/dark-theme.png
 review:
   compatibility: verified
   preview: verified
@@ -54,10 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1063
 starsSnapshot: 3
+featuredRank: 1063
 releaseUpdatedAt: 2026-09-07T21:58:34.972Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+metadataUpdatedAt: 2026-11-09T00:14:32.062Z
 starsUpdatedAt: 2026-10-30T03:53:41.006Z
-updatedAt: 2026-10-30T03:53:41.006Z
-listScreenshot: https://raw.githubusercontent.com/Lxd-Ashe/dsh-codex-theme/eb4b0b2bb09db16b597a51a503fe24d1140b434f/docs/dark-theme.png
+updatedAt: 2026-11-09T00:14:32.062Z

@@ -21,13 +21,13 @@ install:
   commit: a5b4bd74062688f3de805050422e6168091952f8
   desktop:
     mode: manual-only
-    reason: npm-source-unverified
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/preview.webp
+  - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/a5b4bd74062688f3de805050422e6168091952f8/assets/preview.webp
   - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/solarized-dark.webp
   - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/solarized-light.webp
   - https://raw.githubusercontent.com/zhijun-dai/Solarized-dsh-theme/b29b689f707e87746912a622789dfd326d0c2de5/assets/selenized-dark.webp
@@ -59,9 +59,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 12
 starsSnapshot: 8
-releaseUpdatedAt: 2026-10-20T22:15:32.241Z
+featuredRank: 12
+releaseUpdatedAt: 2026-11-09T00:13:39.663Z
 metadataUpdatedAt: 2026-10-20T22:15:32.241Z
 starsUpdatedAt: 2026-10-14T22:14:07.282Z
-updatedAt: 2026-10-20T22:15:32.241Z
+updatedAt: 2026-11-09T00:13:39.663Z

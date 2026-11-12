@@ -19,24 +19,46 @@ install:
   target: github:wensincai/dsh-skin-rotator#1f91b08cb59c3b1f5e47db7f071bcde36f89d9ea
   version: 0.1.1
   commit: 1f91b08cb59c3b1f5e47db7f071bcde36f89d9ea
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/wensincai/dsh-skin-rotator/1f91b08cb59c3b1f5e47db7f071bcde36f89d9ea/docs/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/wensincai/dsh-skin-rotator/1f91b08cb59c3b1f5e47db7f071bcde36f89d9ea/docs/screenshot.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 1f91b08cb59c3b1f5e47db7f071bcde36f89d9ea
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:16:23.873Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 2
 featuredRank: 1000
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-19T04:08:02.180Z
-metadataUpdatedAt: 2026-08-20T06:32:57.919Z
-starsUpdatedAt: 2026-08-29T03:15:13.654Z
-updatedAt: 2026-08-29T03:15:13.654Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wensincai__dsh-skin-rotator/a04cdc926dec980ef946731318d74d4e44167dac/65c31dda24b5.png
+releaseUpdatedAt: 2026-11-09T07:16:23.964Z
+metadataUpdatedAt: 2026-11-09T07:16:23.964Z
+starsUpdatedAt: 2026-11-09T07:16:23.964Z
+updatedAt: 2026-11-09T07:16:23.964Z

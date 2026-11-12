@@ -28,7 +28,7 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/Carlown/majia7-dsh-skin/cee84e41791c629cec7c3274c3c7996078cce80a/docs/screenshots/screenshot-off.jpeg
+  - https://raw.githubusercontent.com/Carlown/majia7-dsh-skin/7972213f920728a660532de27c28a65e6396bd20/docs/screenshots/screenshot-off.jpeg
   - https://raw.githubusercontent.com/Carlown/majia7-dsh-skin/cee84e41791c629cec7c3274c3c7996078cce80a/docs/screenshots/screenshot-low.jpeg
   - https://raw.githubusercontent.com/Carlown/majia7-dsh-skin/cee84e41791c629cec7c3274c3c7996078cce80a/docs/screenshots/screenshot-high.jpeg
   - https://raw.githubusercontent.com/Carlown/majia7-dsh-skin/cee84e41791c629cec7c3274c3c7996078cce80a/docs/screenshots/screenshot-max.jpeg
@@ -60,8 +60,8 @@ license:
   code: MIT
   commercialUse: true
   notice: MIT。四张档位图与文档截图为作者自有素材，随 MIT 许可证一并发布。
-featuredRank: 0
 starsSnapshot: 0
+featuredRank: 0
 releaseUpdatedAt: 2026-09-24T22:14:54.446Z
 metadataUpdatedAt: 2026-09-24T22:14:54.446Z
 starsUpdatedAt: 2026-08-26T11:54:32.000Z

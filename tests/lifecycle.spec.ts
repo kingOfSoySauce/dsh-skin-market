@@ -1,28 +1,25 @@
 import { createHash } from 'node:crypto'
-import { existsSync, mkdirSync, mkdtempSync, readFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { existsSync, mkdirSync, readFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import { parse, stringify } from 'yaml'
 import { maxParallelDownloads, SkinLifecycle } from '../src/lifecycle.ts'
 import { compatibilityContext } from '../src/compatibility.ts'
 import { atomicWriteJson, atomicWriteText, compatibilityPatchFile, ensurePatchedDependency, patchedDependenciesNeedSync, pnpmWorkspaceFile, profilePatchFile, readDependencies, readMarketState, writeMarketState } from '../src/profile.ts'
 import type { CommandOptions, CommandResult, PluginInstallRequest, PluginRunner } from '../src/commands.ts'
-import type { LoaderEntry, Operation, SkinEntry } from '../src/types.ts'
+import type { LoaderEntry, SkinEntry } from '../src/types.ts'
+import { operationWaiter } from './fixtures/operations.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+
+afterEach(cleanupTempDirs)
 
 function fixture() {
-  const dir = mkdtempSync(join(tmpdir(), 'skin-lifecycle-'))
+  const dir = tempDir('skin-lifecycle-')
   atomicWriteJson(join(dir, 'package.json'), { dependencies: {} })
   return dir
 }
 
-async function finished(operation: Operation): Promise<Operation> {
-  for (let index = 0; index < 200; index++) {
-    if (operation.phase === 'done' || operation.phase === 'failed' || operation.phase === 'cancelled') return operation
-    await new Promise(resolve => setTimeout(resolve, 5))
-  }
-  throw new Error('operation did not finish')
-}
+const finished = operationWaiter({ intervalMs: 5, message: 'operation did not finish' })
 
 function success(): CommandResult { return { exitCode: 0, stdout: '', stderr: '', timedOut: false } }
 
@@ -448,16 +445,20 @@ describe('skin lifecycle', () => {
     expect((parse(readFileSync(profilePatchFile(dir), 'utf8')) as Array<{ id?: string }>).some(row => row.id === child.id)).toBe(false)
   })
 
-  it('gates market installation by installation readiness, not compatibility verification', () => {
+  it('does not gate web installs on the catalog installation review', async () => {
     const dir = fixture()
-    const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() })
+    const attempted: string[][] = []
+    const runner: PluginRunner = async (_profile, args) => { attempted.push(args); return success() }
+    const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner })
     const base = probe.catalog[0]
     const compatibleManual = { ...base, id: 'manual.skin', review: { compatibility: 'verified' as const, preview: 'verified' as const, installation: 'manual-only' as const } }
     const unverifiedInstallable = { ...base, id: 'installable.skin', review: { compatibility: 'unverified' as const, preview: 'verified' as const, installation: 'verified' as const } }
-    const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() }, [compatibleManual, unverifiedInstallable])
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner }, [compatibleManual, unverifiedInstallable])
 
-    expect(() => lifecycle.begin('install', compatibleManual.id)).toThrow('尚未满足市场自动安装所需信息')
-    expect(() => lifecycle.begin('install', unverifiedInstallable.id)).not.toThrow()
+    await finished(lifecycle.begin('install', compatibleManual.id))
+    expect(attempted.some(args => args.includes(compatibleManual.install.target))).toBe(true)
+    await finished(lifecycle.begin('install', unverifiedInstallable.id))
+    expect(attempted.some(args => args.includes(unverifiedInstallable.install.target))).toBe(true)
   })
 
   it('uses Desktop installPlugin for managed npm skins and blocks manual-only skins', async () => {
@@ -1307,6 +1308,33 @@ describe('skin lifecycle', () => {
       .toMatchObject({ activation: 'restart-required', restartSource: 'selection', selectionHostApplied: true })
   })
 
+  it('marks a deactivated Web skin as stop-only even when an install receipt is already pending', async () => {
+    const { dir, skins: [one], lifecycle } = webSelectionFixture()
+    writeMarketState(dir, { ...readMarketState(dir), pendingRestart: {
+      pid: process.pid, skinIds: [one.id], id: 'hard-before-disable',
+      inferredInstalls: { [one.id]: 'a'.repeat(64) },
+    } })
+    expect(await finished(lifecycle.begin('deactivate', one.id))).toMatchObject({ phase: 'done' })
+    const pending = readMarketState(dir).pendingRestart
+    expect(pending?.skinIds).toContain(one.id)
+    expect(pending?.stoppedSkinIds).toContain(one.id)
+    expect(pending?.inferredInstalls?.[one.id]).toHaveLength(64)
+    expect(lifecycle.states().find(state => state.skinId === one.id)).toMatchObject({
+      activation: 'restart-required', restartOnlyToStop: true,
+    })
+    expect(await finished(lifecycle.begin('activate', one.id))).toMatchObject({ phase: 'done' })
+    expect(readMarketState(dir).pendingRestart?.stoppedSkinIds ?? []).not.toContain(one.id)
+  })
+
+  it('resolves a managed host-only row with a built-in module name through its owner package', async () => {
+    const { dir, skins: [one], lifecycle } = webSelectionFixture()
+    writeMarketState(dir, { ...readMarketState(dir), managedLoaders: {
+      'preset-fairy': { id: 'preset-fairy', name: '@deepseek-ai/dsh-agent-preset', packageName: one.package, ownerSkinIds: [one.id] },
+    } })
+    const state = lifecycle.states().find(state => state.skinId === one.id)!
+    expect(state.selectionClientTargets).toContainEqual({ package: one.package, active: true })
+  })
+
   it('keeps pinned Web skins live and does not invent a receipt when removing the current primary pin', async () => {
     const { dir, skins: [one, two, pinned], entries, lifecycle, updates } = webSelectionFixture()
     await finished(lifecycle.begin('pin', pinned.id))
@@ -1723,6 +1751,36 @@ describe('skin lifecycle', () => {
     expect(operation).toMatchObject({ phase: 'failed', failure: { kind: 'conflict' } })
     expect(liveAdd).toBe(0)
     expect(readDependencies(dir)).toEqual({})
+  })
+
+  it('allows a live row that shares the implementation plugin name but not its id', async () => {
+    const dir = fixture()
+    const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() })
+    const base = firstInstallable(probe)
+    const skin = { ...base, id: 'shared-name.skin', package: '@example/shared-name', rowId: 'shared-name' }
+    const official = '@deepseek-ai/dsh-agent-preset'
+    const rows = [{ id: 'preset-shared-name', name: official }, { id: skin.rowId, name: skin.package }]
+    const liveEntry: LoaderEntry = { options: { id: 'agent-preset', name: official }, fiber: {}, update: async () => undefined }
+    const runner: PluginRunner = async (_profile, args) => {
+      if (args[0] === 'add' && args.includes('--dir')) {
+        const temporary = args[args.indexOf('--dir') + 1]!
+        atomicWriteJson(join(temporary, 'package.json'), { private: true, dependencies: { [skin.package]: skin.install.target } })
+        writeBundleRows(temporary, skin, rows)
+        return success()
+      }
+      if (args[0] === 'add') {
+        atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
+        writeBundleRows(dir, skin, rows)
+      }
+      if (args[0] === 'remove') atomicWriteJson(join(dir, 'package.json'), { dependencies: {} })
+      return success()
+    }
+    const lifecycle = new SkinLifecycle({ loader: { entries: () => [liveEntry] } }, { profile: 'test', profileDir: dir, runner }, [skin])
+
+    const operation = await finished(lifecycle.begin('install', skin.id))
+
+    expect(operation.phase).toBe('done')
+    expect(readDependencies(dir)[skin.package]).toBe(skin.install.target)
   })
 
   it('rejects a catalog row id mismatch from the prefetched immutable bundle', async () => {

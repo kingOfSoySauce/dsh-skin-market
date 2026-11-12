@@ -27,6 +27,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/goatbroai/web-background/7cd751575f590c509c9c7545dbfd48d983aa3640/cover1.png
+listScreenshot: https://raw.githubusercontent.com/goatbroai/web-background/7cd751575f590c509c9c7545dbfd48d983aa3640/cover1.png
 review:
   compatibility: unverified
   preview: verified
@@ -52,9 +53,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1012
 starsSnapshot: 10
+featuredRank: 1012
 releaseUpdatedAt: 2026-08-23T05:33:33.310Z
-metadataUpdatedAt: 2026-08-23T05:33:33.310Z
+metadataUpdatedAt: 2026-11-09T00:13:24.344Z
 starsUpdatedAt: 2026-09-09T21:38:59.510Z
-updatedAt: 2026-09-09T21:38:59.510Z
+updatedAt: 2026-11-09T00:13:24.344Z

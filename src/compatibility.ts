@@ -1,5 +1,6 @@
 import { satisfiesVersionRange } from './semver.ts'
 import type { CompatibilityAdapter, DshRuntime, SkinEntry } from './types.ts'
+import { defaultTranslator, type Translator } from './client/i18n.ts'
 
 type CompatibilitySkin = Pick<SkinEntry, 'compatibility'>
 
@@ -49,33 +50,33 @@ export function applicableAdapters(skin: CompatibilitySkin, runtime: DshRuntime,
   )
 }
 
-export function assessCompatibility(skin: CompatibilitySkin, runtime: DshRuntime): CompatibilityAssessment {
+export function assessCompatibility(skin: CompatibilitySkin, runtime: DshRuntime, t: Translator = defaultTranslator): CompatibilityAssessment {
   if (runtime.version === null) return {
     decision: 'unknown',
-    reason: '无法确认当前 DSH 版本，兼容性需要实际验证',
+    reason: t('compatibility.versionUnknown'),
     adapterIds: [],
   }
 
   const declared = applicableAdapters(skin, runtime, false)
   if (skin.compatibility.dsh === 'unverified') return {
     decision: 'unknown',
-    reason: `皮肤未声明 DSH 兼容范围（当前 ${runtime.version}）`,
+    reason: t('compatibility.unverified', { version: runtime.version }),
     adapterIds: declared.map(adapter => adapter.id),
   }
   if (declared.length > 0) return {
     decision: 'adaptable',
-    reason: `当前 DSH ${runtime.version} 命中可选兼容适配器，安装时仍需验证源码是否可安全适配`,
+    reason: t('compatibility.adapter', { version: runtime.version }),
     adapterIds: declared.map(adapter => adapter.id),
   }
   if (satisfiesVersionRange(runtime.version, skin.compatibility.dsh)) return {
     decision: 'compatible',
-    reason: `当前 DSH ${runtime.version} 在声明范围 ${skin.compatibility.dsh} 内`,
+    reason: t('compatibility.compatible', { version: runtime.version, range: skin.compatibility.dsh }),
     adapterIds: [],
   }
 
   return {
     decision: 'incompatible',
-    reason: `当前 DSH ${runtime.version} 不在作者声明的兼容范围 ${skin.compatibility.dsh} 内，尚未确认此版本能否正常运行该皮肤`,
+    reason: t('compatibility.incompatible', { version: runtime.version, range: skin.compatibility.dsh }),
     adapterIds: [],
   }
 }

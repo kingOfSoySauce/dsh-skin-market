@@ -28,6 +28,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/abbccdd/dsh-panel-tint/1d2cf639218e91d2d54a3446369cfa7c2745afb7/assets/screenshot-panel-tint-blue.png
   - https://raw.githubusercontent.com/abbccdd/dsh-panel-tint/1d2cf639218e91d2d54a3446369cfa7c2745afb7/assets/screenshot-panel-tint-default.png
+listScreenshot: https://raw.githubusercontent.com/abbccdd/dsh-panel-tint/1d2cf639218e91d2d54a3446369cfa7c2745afb7/assets/screenshot-panel-tint-blue.png
 review:
   compatibility: verified
   preview: verified
@@ -53,10 +54,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1089
 starsSnapshot: 0
+featuredRank: 1089
 releaseUpdatedAt: 2026-09-07T21:58:56.000Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-09T00:17:13.826Z
 starsUpdatedAt: 2026-09-07T21:58:56.000Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/abbccdd/dsh-panel-tint/1d2cf639218e91d2d54a3446369cfa7c2745afb7/assets/screenshot-panel-tint-blue.png
+updatedAt: 2026-11-09T00:17:13.826Z

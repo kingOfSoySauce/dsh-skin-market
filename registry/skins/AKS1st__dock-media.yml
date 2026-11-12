@@ -18,8 +18,11 @@ install:
   version: 0.1.2
   commit: 5eb1ece47eb9aed7bbd96e9a7536f716be8186c0
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dock-media
+    packageVersion: 0.1.2
+    integrity: sha512-eO35BsBnEwC+/ipc1IxeSaEjr6yA6DDKom0nrjhy+s0jik9t0xZvWBnEKyr+FHmnp3DjVz7FjYu7BGJiYVZ6vA==
   npm:
     name: dock-media
     version: 0.1.2
@@ -61,7 +64,7 @@ license:
   commercialUse: true
 starsSnapshot: 0
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T23:00:28.784Z
+releaseUpdatedAt: 2026-11-09T00:17:15.549Z
 metadataUpdatedAt: 2026-10-27T23:00:28.784Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:00:28.784Z
+updatedAt: 2026-11-09T00:17:15.549Z

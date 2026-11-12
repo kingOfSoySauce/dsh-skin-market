@@ -1,12 +1,14 @@
-import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import { pluginArgsFor } from '../src/pnpm-compat.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+
+afterEach(cleanupTempDirs)
 
 describe('pnpm workspace compatibility', () => {
   it('adds -w only for add/remove at a workspace root', () => {
-    const dir = mkdtempSync(join(tmpdir(), 'skin-pnpm-compat-'))
+    const dir = tempDir('skin-pnpm-compat-')
     writeFileSync(join(dir, 'pnpm-workspace.yaml'), 'packages:\n  - .\n')
 
     expect(pluginArgsFor(dir, ['add', 'skin'])).toEqual(['add', '-w', 'skin'])
@@ -16,8 +18,8 @@ describe('pnpm workspace compatibility', () => {
   })
 
   it('does not inherit the profile workspace into a --dir temporary project', () => {
-    const profile = mkdtempSync(join(tmpdir(), 'skin-pnpm-profile-'))
-    const temp = mkdtempSync(join(tmpdir(), 'skin-pnpm-temp-'))
+    const profile = tempDir('skin-pnpm-profile-')
+    const temp = tempDir('skin-pnpm-temp-')
     writeFileSync(join(profile, 'pnpm-workspace.yaml'), 'packages:\n  - .\n')
     mkdirSync(temp, { recursive: true })
 

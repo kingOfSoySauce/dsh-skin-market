@@ -25,9 +25,6 @@ compatibility:
   dsh: 0.2.0-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/JHyugou__dsh-sidebar-pet/178587318cf86cc7807ab1e46f88e60e4f454725/home.png
-  - skin-screenshots/JHyugou__dsh-sidebar-pet/178587318cf86cc7807ab1e46f88e60e4f454725/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/JHyugou/dsh-sidebar-pet/178587318cf86cc7807ab1e46f88e60e4f454725/docs/interaction-preview.gif
   - https://raw.githubusercontent.com/JHyugou/dsh-sidebar-pet/178587318cf86cc7807ab1e46f88e60e4f454725/docs/sidebar-detail.png
@@ -58,9 +55,12 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/JHyugou__dsh-sidebar-pet/178587318cf86cc7807ab1e46f88e60e4f454725/home.png
+  - skin-screenshots/JHyugou__dsh-sidebar-pet/178587318cf86cc7807ab1e46f88e60e4f454725/conversation.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:52:53.413Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:53.413Z
+updatedAt: 2026-11-10T00:42:47.982Z

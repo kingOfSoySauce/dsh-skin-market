@@ -1,6 +1,9 @@
+import type { LocalizedSkinCopy } from '../types.ts'
+
 export type MarketHostKind = 'dsh' | 'desktop'
 
 import type { ConfigurationOverridePlan } from '../configuration-override-types.ts'
+import type { OperationMessageFields, OperationStepFields } from '../operation-message.ts'
 export type { ConfigurationOverridePlan } from '../configuration-override-types.ts'
 
 export interface DshRuntime {
@@ -35,6 +38,7 @@ export interface CatalogSkin {
   name: { zh: string; en: string }
   author: string
   description: string
+  localizedCopy?: LocalizedSkinCopy
   repo: string
   subpath?: string
   package: string
@@ -116,6 +120,8 @@ export interface RuntimeSkin {
   updateAvailable: boolean
   clientModule?: boolean
   restartSource?: 'selection'
+  /** This receipt only has to stop a running skin; a confirmed stop clears it. */
+  restartOnlyToStop?: boolean
   selectionHostApplied?: boolean
   selectionHostStatus?: 'applied' | 'switching' | 'restart-required' | 'unavailable'
   selectionClientTargets?: Array<{ package: string; active: boolean }>
@@ -128,6 +134,8 @@ export interface RuntimeSkin {
   })
   artifactRisk?: { context: string; packageName: string; version: string; warnings: string[] }
   error?: string
+  errorKey?: OperationMessageFields['messageKey']
+  errorParams?: OperationMessageFields['messageParams']
 }
 
 export interface InstalledClientPlugin {
@@ -147,6 +155,8 @@ export interface Operation {
   selectionContext?: string
   phase: 'queued' | 'resolving' | 'downloading' | 'installing' | 'validating' | 'activating' | 'waiting' | 'cancelling' | 'cancelled' | 'done' | 'failed'
   message?: string
+  messageKey?: OperationMessageFields['messageKey']
+  messageParams?: OperationMessageFields['messageParams']
   cancelable?: boolean
   application?: 'applied' | 'restart-required' | 'overridden' | 'failed' | 'cancelled'
   restartRequired?: boolean
@@ -154,22 +164,28 @@ export interface Operation {
   totalBytes?: number
   bytesPerSecond?: number
   step?: string
+  stepKey?: OperationStepFields['stepKey']
+  stepParams?: OperationStepFields['stepParams']
   stepStartedAt?: string
   attempt?: number
   lastOutputAt?: string
   pnpmStage?: 'resolving' | 'downloading' | 'linking' | 'building'
   failure?: {
-    kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'compatibility' | 'conflict' | 'command' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'pnpm-missing' | 'no-matching-version' | 'disk-full' | 'permission' | 'integrity' | 'configuration-override'
+    kind: 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'existing-source-unreachable' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'compatibility' | 'conflict' | 'command' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'pnpm-missing' | 'no-matching-version' | 'disk-full' | 'permission' | 'integrity' | 'configuration-override'
     message: string
+    messageKey?: OperationMessageFields['messageKey']
+    messageParams?: OperationMessageFields['messageParams']
     code?: string
     desiredEnabled?: boolean
     targetSkinId?: string
     configurationOverride?: ConfigurationOverridePlan
     packageName?: string
+    unreachableSource?: { repository: string; commit: string }
     buildKeys?: string[]
     releaseAgeTarget?: { packageName: string; version: string }
     artifactRisk?: { context: string; packageName: string; version: string; warnings: string[] }
     manualSpec?: string
+    manualFollowUp?: 'uninstall-then-add' | 'enable' | 'install' | 'check'
     fallbackSpec?: string
     action?: 'retry' | 'approve-build' | 'approve-release-age' | 'approve-artifact' | 'repair-configuration'
     conflicts?: Array<{ kind: 'package' | 'repository' | 'row' | 'loader'; incoming: string; existing: string; identifiers: string[] }>

@@ -28,19 +28,16 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/home.png
-  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/conversation.png
-  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/settings.png
 screenshots:
+  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/preset-dark.gif
+  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/preset-light.gif
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B5%85%E8%89%B2%E4%B8%BB%E9%A1%B5.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B7%B1%E8%89%B2%E4%B8%BB%E9%A1%B5.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B5%85%E8%89%B2%E5%AF%B9%E8%AF%9D.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/%E6%B7%B1%E8%89%B2%E5%AF%B9%E8%AF%9D.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/浅色主页.png
   - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/深色主页.png
-  - https://raw.githubusercontent.com/ycqaq233/dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/assets/浅色对话.png
-  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/home.gif
+listScreenshot: skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/preset-dark.gif
 review:
   compatibility: verified
   preview: verified
@@ -66,9 +63,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 197
 starsSnapshot: 6
+marketScreenshots:
+  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/home.png
+  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/conversation.png
+  - skin-screenshots/ycqaq233__dsh-unknown-theme/02e296a52b0ee53d1230bda14eed15683e547f1d/settings.png
+featuredRank: 197
 releaseUpdatedAt: 2026-08-23T05:30:47.075Z
-metadataUpdatedAt: 2026-08-25T07:09:42.939Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-14T22:14:13.124Z
-updatedAt: 2026-10-14T22:14:13.124Z
+updatedAt: 2026-11-10T00:42:47.982Z

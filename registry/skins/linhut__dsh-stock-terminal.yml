@@ -5,7 +5,7 @@ name:
 author: linhut
 description: 📈 dsh-stock-terminal · 股市行情皮肤 + 功能插件
 repo: https://github.com/linhut/dsh-stock-terminal
-package: "@linxin666/dsh-client-ui-skin-stock"
+package: dsh-stock-terminal
 rowId: ui-skin-stock
 category: skin
 tags:
@@ -14,15 +14,20 @@ modes:
   - light
   - dark
 install:
-  target: github:linhut/dsh-stock-terminal#0f63836135895435d8ed8bce792fb248ab0d45e4
-  version: 1.2.0
-  commit: 0f63836135895435d8ed8bce792fb248ab0d45e4
+  target: github:linhut/dsh-stock-terminal#a11b6b5d78edb2d1ad59da7cb598d25c94acae6a
+  version: 1.7.2
+  commit: a11b6b5d78edb2d1ad59da7cb598d25c94acae6a
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+  allowBuild: dsh-stock-terminal@https://codeload.github.com/linhut/dsh-stock-terminal/tar.gz/a11b6b5d78edb2d1ad59da7cb598d25c94acae6a
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/linhut/dsh-stock-terminal/0f63836135895435d8ed8bce792fb248ab0d45e4/assets/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/linhut/dsh-stock-terminal/a11b6b5d78edb2d1ad59da7cb598d25c94acae6a/assets/screenshot.png
 review:
   compatibility: verified
   preview: verified
@@ -36,14 +41,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: a11b6b5d78edb2d1ad59da7cb598d25c94acae6a
+    packageVersion: 1.7.2
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:13:20.623Z
+    findings: []
 license:
   code: Apache-2.0
   commercialUse: true
+starsSnapshot: 10
 featuredRank: 205
-starsSnapshot: 1
-releaseUpdatedAt: 2026-08-19T04:37:38.927Z
-metadataUpdatedAt: 2026-08-20T06:32:48.622Z
-starsUpdatedAt: 2026-08-19T04:37:38.927Z
-updatedAt: 2026-08-20T06:32:48.622Z
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/linhut__dsh-stock-terminal/0f63836135895435d8ed8bce792fb248ab0d45e4/2c5810b87500.png
+releaseUpdatedAt: 2026-11-09T07:13:20.875Z
+metadataUpdatedAt: 2026-11-09T07:13:20.875Z
+starsUpdatedAt: 2026-11-09T07:13:20.875Z
+updatedAt: 2026-11-09T07:13:20.875Z

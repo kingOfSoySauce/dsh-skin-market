@@ -17,12 +17,21 @@ tags:
 modes:
   - dark
 install:
-  target: github:ymh0000123/dsh-theme-endfield#ada9396a957633a40bdad89ff084b0136b9515b4
-  version: 1.2.3
-  commit: ada9396a957633a40bdad89ff084b0136b9515b4
+  target: github:ymh0000123/dsh-theme-endfield#8315d584b69dfcabd4aa6a1b1d84d1ce14fa660a
+  version: 1.2.5
+  commit: 8315d584b69dfcabd4aa6a1b1d84d1ce14fa660a
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-endfield
+    packageVersion: 1.2.5
+    integrity: sha512-joppva0om4hMOcx/fjLnvboO4k6nzK/q1GueX15Zsyuj3PRUYXeiqjxXDyx/kZYIVvlVxF5DiNN+cFxzF6Zhkg==
+  npm:
+    name: dsh-theme-endfield
+    version: 1.2.5
+    integrity: sha512-joppva0om4hMOcx/fjLnvboO4k6nzK/q1GueX15Zsyuj3PRUYXeiqjxXDyx/kZYIVvlVxF5DiNN+cFxzF6Zhkg==
+    repository: https://github.com/ymh0000123/dsh-theme-endfield
+    gitHead: 8315d584b69dfcabd4aa6a1b1d84d1ce14fa660a
 compatibility:
   dsh: unverified
   platform:
@@ -30,8 +39,8 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots1.webp
   - https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots2.webp
-  - skin-screenshots/ymh0000123__dsh-theme-endfield/359bfad889b4f3d2e79515c4145f624f34ba84f1/home.gif
-listScreenshot: https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/a8dd2ee46a942f409acef876fa59781a12509293/assets/screenshots1.webp
+  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.gif
+listScreenshot: skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -39,32 +48,30 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: ada9396a957633a40bdad89ff084b0136b9515b4
-    packageVersion: 1.2.3
+    commit: 8315d584b69dfcabd4aa6a1b1d84d1ce14fa660a
+    packageVersion: 1.2.5
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T23:01:04.633Z
+    checkedAt: 2026-11-09T00:12:37.291Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 154
+starsSnapshot: 168
 marketScreenshots:
-  - skin-screenshots/ymh0000123__dsh-theme-endfield/359bfad889b4f3d2e79515c4145f624f34ba84f1/home.png
-  - skin-screenshots/ymh0000123__dsh-theme-endfield/359bfad889b4f3d2e79515c4145f624f34ba84f1/conversation.png
-  - skin-screenshots/ymh0000123__dsh-theme-endfield/359bfad889b4f3d2e79515c4145f624f34ba84f1/settings.png
+  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.png
+  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/conversation.png
 featuredRank: 154
-releaseUpdatedAt: 2026-10-30T23:01:05.165Z
-metadataUpdatedAt: 2026-10-31T04:39:10.957Z
-starsUpdatedAt: 2026-11-01T22:47:11.915Z
-updatedAt: 2026-11-01T22:47:11.915Z
+releaseUpdatedAt: 2026-11-09T00:12:38.120Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

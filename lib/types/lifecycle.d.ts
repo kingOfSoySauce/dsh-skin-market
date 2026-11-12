@@ -88,6 +88,7 @@ export declare class SkinLifecycle {
     get catalog(): SkinEntry[];
     private get hostKind();
     private get management();
+    private installedSkins;
     private enabledSkinIds;
     private registryPlanFor;
     private assertSkinLoaderConflicts;
@@ -123,7 +124,13 @@ export declare class SkinLifecycle {
     private acceptManagement;
     private awaitLifecycle;
     private recordRestart;
-    /** Clear a Web receipt after the browser loader has confirmed the skin live. */
+    /**
+     * Keep the receipt's direction in step with the saved selection. A disabled
+     * skin's restart is only needed to stop its running instance; once the page
+     * confirms that instance is gone, no restart is required for the appearance.
+     */
+    private syncRestartIntent;
+    /** Clear a Web receipt after the browser loader has confirmed the skin live or stopped. */
     clearWebRestartReceipt(skinId: string): Promise<void>;
     private recordSelectionRestart;
     get restartNoticeId(): string | undefined;

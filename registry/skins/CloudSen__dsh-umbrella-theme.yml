@@ -14,20 +14,22 @@ modes:
   - light
   - dark
 install:
-  target: github:CloudSen/dsh-umbrella-theme#0d08972db406fafab5ad2cafc7c84c74d1af1566
+  target: github:CloudSen/dsh-umbrella-theme#a745f1138c161a2f967d3aa9a21d49eaba17b5ac
   version: 1.0.1
-  commit: 0d08972db406fafab5ad2cafc7c84c74d1af1566
+  commit: a745f1138c161a2f967d3aa9a21d49eaba17b5ac
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-umbrella-theme
+    version: 1.0.1
+    integrity: sha512-lmhSUEtWP3CQryJ6w1868kOsExlqFdmzkoRPjOVH+mkwTftJruIcxr3A6RaAhAWN5raVoyJ2B51WxSafSshmRg==
+    repository: https://github.com/CloudSen/dsh-umbrella-theme
+    gitHead: a745f1138c161a2f967d3aa9a21d49eaba17b5ac
 compatibility:
   dsh: ">=0.2.1-rc.1 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/home.png
-  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/conversation.png
-  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -44,20 +46,24 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
-    commit: 0d08972db406fafab5ad2cafc7c84c74d1af1566
+    commit: a745f1138c161a2f967d3aa9a21d49eaba17b5ac
     packageVersion: 1.0.1
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:52:42.747Z
+    checkedAt: 2026-11-09T00:17:31.189Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-26T01:52:42.981Z
-metadataUpdatedAt: 2026-10-26T01:52:42.981Z
+marketScreenshots:
+  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/home.png
+  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/conversation.png
+  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/settings.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-09T00:17:31.746Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:42.981Z
+updatedAt: 2026-11-10T00:42:47.982Z

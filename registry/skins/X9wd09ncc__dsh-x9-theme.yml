@@ -37,13 +37,14 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - README 图片未通过文件、尺寸或图片 hash 检查，请补充可核验的运行截图。
   scan:
     commit: 9af49294ab82a3ca1e6c5ab9df46179a5bd9489b
     packageVersion: 9.3.0
@@ -55,13 +56,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 96
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-23T05:32:36.076Z
-metadataUpdatedAt: 2026-10-30T03:54:03.223Z
-starsUpdatedAt: 2026-09-18T21:38:55.528Z
-updatedAt: 2026-10-30T03:54:03.223Z
 marketScreenshots:
   - skin-screenshots/X9wd09ncc__dsh-x9-theme/9af49294ab82a3ca1e6c5ab9df46179a5bd9489b/home.png
   - skin-screenshots/X9wd09ncc__dsh-x9-theme/9af49294ab82a3ca1e6c5ab9df46179a5bd9489b/conversation.png
   - skin-screenshots/X9wd09ncc__dsh-x9-theme/9af49294ab82a3ca1e6c5ab9df46179a5bd9489b/settings.png
+featuredRank: 96
+releaseUpdatedAt: 2026-08-23T05:32:36.076Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-09-18T21:38:55.528Z
+updatedAt: 2026-11-10T00:42:47.982Z

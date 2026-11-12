@@ -29,6 +29,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/lyh9712/dsh-bg-image/3de5438980eee8a10844edfa0ac7b9fd7ef7a9d3/docs/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/lyh9712/dsh-bg-image/3de5438980eee8a10844edfa0ac7b9fd7ef7a9d3/docs/screenshot.png
 review:
   compatibility: verified
   preview: verified
@@ -55,10 +56,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1047
 starsSnapshot: 3
+featuredRank: 1047
 releaseUpdatedAt: 2026-09-07T21:58:26.052Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-09T00:14:32.205Z
 starsUpdatedAt: 2026-10-02T10:30:00.601Z
-updatedAt: 2026-10-02T10:30:00.601Z
-listScreenshot: https://raw.githubusercontent.com/lyh9712/dsh-bg-image/3de5438980eee8a10844edfa0ac7b9fd7ef7a9d3/docs/screenshot.png
+updatedAt: 2026-11-09T00:14:32.205Z

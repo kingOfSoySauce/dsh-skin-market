@@ -21,6 +21,9 @@ install:
   target: github:fengb3/dsh-theme-aurum#7921baa8fd5658a077d6ad21ff7de4107ed15965
   version: 1.2.0
   commit: 7921baa8fd5658a077d6ad21ff7de4107ed15965
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
@@ -28,12 +31,35 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/fengb3/dsh-theme-aurum/a716a46cb55cdd8d05abdcea57e12b43b83a87fd/docs/previews/aurum-light-full.png
   - https://raw.githubusercontent.com/fengb3/dsh-theme-aurum/a716a46cb55cdd8d05abdcea57e12b43b83a87fd/docs/previews/aurum-dark-settings.png
+listScreenshot: https://raw.githubusercontent.com/fengb3/dsh-theme-aurum/7921baa8fd5658a077d6ad21ff7de4107ed15965/docs/previews/aurum-light-full.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 7921baa8fd5658a077d6ad21ff7de4107ed15965
+    packageVersion: 1.2.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:15:37.531Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 0
 starsSnapshot: 1
-releaseUpdatedAt: 2026-08-28T05:00:00Z
-metadataUpdatedAt: 2026-08-28T05:00:00Z
+featuredRank: 0
+releaseUpdatedAt: 2026-11-09T07:15:38.048Z
+metadataUpdatedAt: 2026-11-09T07:15:38.048Z
 starsUpdatedAt: 2026-08-29T03:15:00.748Z
-updatedAt: 2026-08-29T03:15:00.748Z
+updatedAt: 2026-11-09T07:15:38.048Z

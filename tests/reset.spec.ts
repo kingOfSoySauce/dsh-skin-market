@@ -1,14 +1,17 @@
-import { mkdirSync, mkdtempSync, readFileSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { mkdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import { parse } from 'yaml'
 import { loadCatalog } from '../src/catalog.ts'
 import { companionAsSkin } from '../src/install-resolution.ts'
 import { atomicWriteJson, atomicWriteText, profilePatchFile, readMarketState, writeMarketState } from '../src/profile.ts'
 import { resetManagedSkins } from '../src/reset.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
-function fixture() { return mkdtempSync(join(tmpdir(), 'skin-reset-')) }
+afterEach(cleanupTempDirs)
+
+function fixture() { return tempDir('skin-reset-') }
 
 function isolatedSkins(count: number) {
   const skins = loadCatalog().skins
@@ -84,7 +87,7 @@ describe('emergency skin reset', () => {
 
   it('rolls every file back when a registration conflicts', () => {
     const dir = fixture()
-    const skin = loadCatalog().skins[0]
+    const skin = catalogFixtureSkin()
     const manifest = JSON.stringify({ dependencies: { [skin.package]: skin.install.target }, dsh: { profile: { bundles: [skin.package] } } }, null, 2) + '\n'
     const patch = `- insert:\n    - id: ${skin.rowId}\n      name: conflicting-package\n`
     atomicWriteText(join(dir, 'package.json'), manifest)

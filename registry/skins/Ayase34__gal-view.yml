@@ -28,6 +28,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Ayase34/gal-view/d002fe0e7051c618a2665af3c653f9838cd6aa8a/image.png
+listScreenshot: https://raw.githubusercontent.com/Ayase34/gal-view/d002fe0e7051c618a2665af3c653f9838cd6aa8a/image.png
 review:
   compatibility: unverified
   preview: verified
@@ -53,9 +54,9 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 218
 featuredRank: 135
-starsSnapshot: 212
 releaseUpdatedAt: 2026-08-23T05:27:00.963Z
-metadataUpdatedAt: 2026-08-23T05:27:00.963Z
-starsUpdatedAt: 2026-11-01T22:47:15.930Z
-updatedAt: 2026-11-01T22:47:15.930Z
+metadataUpdatedAt: 2026-11-09T00:12:35.934Z
+starsUpdatedAt: 2026-11-11T00:07:28.933Z
+updatedAt: 2026-11-11T00:07:28.933Z

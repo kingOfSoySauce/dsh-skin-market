@@ -26,6 +26,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/SweetCandy-gift/dsh-beige-theme/7b10152f18a50ee8f49fd558eb1be0ba31a5f5df/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/SweetCandy-gift/dsh-beige-theme/7b10152f18a50ee8f49fd558eb1be0ba31a5f5df/docs/preview.png
 review:
   compatibility: verified
   preview: verified
@@ -53,9 +54,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 192
 starsSnapshot: 0
+featuredRank: 192
 releaseUpdatedAt: 2026-08-23T05:35:02.579Z
-metadataUpdatedAt: 2026-08-23T05:35:02.579Z
+metadataUpdatedAt: 2026-11-09T07:18:21.956Z
 starsUpdatedAt: 2026-09-09T21:41:11.651Z
-updatedAt: 2026-09-09T21:41:11.651Z
+updatedAt: 2026-11-09T07:18:21.956Z

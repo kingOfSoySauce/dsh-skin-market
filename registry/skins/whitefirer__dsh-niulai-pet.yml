@@ -1,0 +1,73 @@
+id: whitefirer.dsh-niulai-pet
+name:
+  zh: dsh-niulai-pet
+  en: dsh-niulai-pet
+author: whitefirer
+description: 牛来桌宠 —— 在 dsh web 界面角落里养一头《牛来》的小牛。平时呼吸、眨眼、踱步、 打盹、气泡唠叨；agent 任务一完成，它就蹦出来喊一声「妈妈」。
+repo: https://github.com/whitefirer/dsh-niulai-pet
+package: dsh-niulai-pet
+rowId: niulai-pet
+category: pet
+tags:
+  - wallpaper
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:whitefirer/dsh-niulai-pet#9103857bffceaa5fe71eff6e273a4662600fe0fb
+  version: 0.4.15
+  commit: 9103857bffceaa5fe71eff6e273a4662600fe0fb
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-niulai-pet
+    packageVersion: 0.4.15
+    integrity: sha512-AwMU9cD7BbSItBQ/VtHO8QaSQTWom+8gKshSTiLAddnv8vQCvR25eO1nNmresmeQMlMaJopSqP449G4I8ZTG2g==
+  npm:
+    name: dsh-niulai-pet
+    version: 0.4.15
+    integrity: sha512-AwMU9cD7BbSItBQ/VtHO8QaSQTWom+8gKshSTiLAddnv8vQCvR25eO1nNmresmeQMlMaJopSqP449G4I8ZTG2g==
+    repository: https://github.com/whitefirer/dsh-niulai-pet
+    gitHead: 9103857bffceaa5fe71eff6e273a4662600fe0fb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/whitefirer/dsh-niulai-pet/9103857bffceaa5fe71eff6e273a4662600fe0fb/docs/family.png
+  - https://raw.githubusercontent.com/whitefirer/dsh-niulai-pet/9103857bffceaa5fe71eff6e273a4662600fe0fb/docs/assets/family-layered.png
+  - https://raw.githubusercontent.com/whitefirer/dsh-niulai-pet/9103857bffceaa5fe71eff6e273a4662600fe0fb/docs/demo.gif
+  - https://raw.githubusercontent.com/whitefirer/dsh-niulai-pet/9103857bffceaa5fe71eff6e273a4662600fe0fb/docs/assets/packs-overview.jpg
+listScreenshot: https://raw.githubusercontent.com/whitefirer/dsh-niulai-pet/9103857bffceaa5fe71eff6e273a4662600fe0fb/docs/family.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 9103857bffceaa5fe71eff6e273a4662600fe0fb
+    packageVersion: 0.4.15
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:10:51.598Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 17
+featuredRank: 1120
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-11T00:07:28.933Z
+starsUpdatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-11T00:07:28.933Z

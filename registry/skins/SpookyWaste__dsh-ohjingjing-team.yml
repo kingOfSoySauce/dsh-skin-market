@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:SpookyWaste/dsh-ohjingjing-team#fbb7b9e49efd371c754436b830479d01a1e6b6cd
-  version: 0.4.1
-  commit: fbb7b9e49efd371c754436b830479d01a1e6b6cd
+  target: github:SpookyWaste/dsh-ohjingjing-team#f68ae8808b40d4837aa251736400945fdf774d8d
+  version: 0.4.2
+  commit: f68ae8808b40d4837aa251736400945fdf774d8d
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -24,8 +24,6 @@ compatibility:
   dsh: ">=0.1.7-rc.2 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/SpookyWaste__dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/panel-live.webp
   - https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/header-runway_1.png
@@ -45,20 +43,22 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: fbb7b9e49efd371c754436b830479d01a1e6b6cd
-    packageVersion: 0.4.1
+    commit: f68ae8808b40d4837aa251736400945fdf774d8d
+    packageVersion: 0.4.2
     scannerVersion: static-v2
     dshVersion: ">=0.1.7-rc.2 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:52:24.491Z
+    checkedAt: 2026-11-07T05:33:55.988Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 999
 starsSnapshot: 3
-releaseUpdatedAt: 2026-10-26T01:52:25.264Z
-metadataUpdatedAt: 2026-10-26T01:52:25.264Z
+marketScreenshots:
+  - skin-screenshots/SpookyWaste__dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/conversation.png
+featuredRank: 999
+releaseUpdatedAt: 2026-11-07T05:33:57.631Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-27T23:01:00.045Z
-updatedAt: 2026-10-27T23:01:00.045Z
+updatedAt: 2026-11-10T00:42:47.982Z

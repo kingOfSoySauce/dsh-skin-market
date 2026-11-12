@@ -38,6 +38,7 @@ screenshots:
   - https://raw.githubusercontent.com/zsyayo112/dsh-rick-and-morty/83dfc64c0f53da29b7b7e70c83ea8be11416a6b3/docs/screenshot-c137-dark.png
   - https://raw.githubusercontent.com/zsyayo112/dsh-rick-and-morty/83dfc64c0f53da29b7b7e70c83ea8be11416a6b3/docs/screenshot-meeseeks-light.png
   - https://raw.githubusercontent.com/zsyayo112/dsh-rick-and-morty/83dfc64c0f53da29b7b7e70c83ea8be11416a6b3/docs/screenshot-settings.png
+listScreenshot: https://raw.githubusercontent.com/zsyayo112/dsh-rick-and-morty/83dfc64c0f53da29b7b7e70c83ea8be11416a6b3/docs/screenshot-c137-dark.png
 review:
   compatibility: verified
   preview: verified
@@ -70,6 +71,6 @@ license:
 featuredRank: 166
 starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:32:52.027Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+metadataUpdatedAt: 2026-11-09T00:17:08.851Z
 starsUpdatedAt: 2026-08-18T15:43:58.602Z
-updatedAt: 2026-09-08T09:45:47.382Z
+updatedAt: 2026-11-09T00:17:08.851Z

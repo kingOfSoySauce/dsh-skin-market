@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Upstream196__dsh-label-tune/7f154fb2231c1d6a909501bd1ed256256bcd81cb/home.png
-  - skin-screenshots/Upstream196__dsh-label-tune/7f154fb2231c1d6a909501bd1ed256256bcd81cb/conversation.png
-  - skin-screenshots/Upstream196__dsh-label-tune/7f154fb2231c1d6a909501bd1ed256256bcd81cb/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -55,9 +51,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/Upstream196__dsh-label-tune/7f154fb2231c1d6a909501bd1ed256256bcd81cb/home.png
+  - skin-screenshots/Upstream196__dsh-label-tune/7f154fb2231c1d6a909501bd1ed256256bcd81cb/conversation.png
+  - skin-screenshots/Upstream196__dsh-label-tune/7f154fb2231c1d6a909501bd1ed256256bcd81cb/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:53:16.781Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:16.781Z
+updatedAt: 2026-11-11T13:17:15.192Z

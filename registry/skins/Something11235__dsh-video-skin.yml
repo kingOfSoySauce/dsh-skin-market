@@ -1,0 +1,74 @@
+id: something11235.dsh-video-skin
+name:
+  zh: dsh-video-skin
+  en: dsh-video-skin
+author: Something11235
+description: DSH 视频皮肤：聊天背景 + 有声开机动画 + 界面内透明度调节
+repo: https://github.com/Something11235/dsh-video-skin
+package: dsh-video-skin
+rowId: dsh-video-skin
+category: skin
+tags:
+  - appearance
+  - animation
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:Something11235/dsh-video-skin#2f954a1d6ac6140880f1a58438ed746f2f7f3da4
+  version: 0.1.6
+  commit: 2f954a1d6ac6140880f1a58438ed746f2f7f3da4
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成 DSH Web 隔离运行验收；Desktop 安装路径尚未单独核验。
+  npm:
+    name: dsh-video-skin
+    version: 0.1.6
+    integrity: sha512-bMAHsTIzhCq8sSpKcV+mKZmTRlTPfgswRNtGZYnPHXVv9aIBQSIUh0FF3ZCS9e1YBiT1oDstMm79DMW7uRiApQ==
+    repository: https://github.com/Something11235/dsh-video-skin
+    gitHead: 2f954a1d6ac6140880f1a58438ed746f2f7f3da4
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/Something11235__dsh-video-skin/2f954a1d6ac6140880f1a58438ed746f2f7f3da4/home.gif
+  - skin-screenshots/Something11235__dsh-video-skin/2f954a1d6ac6140880f1a58438ed746f2f7f3da4/preset-near-native.gif
+  - skin-screenshots/Something11235__dsh-video-skin/2f954a1d6ac6140880f1a58438ed746f2f7f3da4/preset-video-clear.gif
+listScreenshot: skin-screenshots/Something11235__dsh-video-skin/2f954a1d6ac6140880f1a58438ed746f2f7f3da4/home.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 2f954a1d6ac6140880f1a58438ed746f2f7f3da4
+    packageVersion: 0.1.6
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-04T00:03:55.179Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 120
+marketScreenshots:
+  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/home.png
+  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/conversation.png
+  - skin-screenshots/Something11235__dsh-video-skin/75aa541813ee32083e1b22e06f987809545e9ff8/settings.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-05T00:23:22.896Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

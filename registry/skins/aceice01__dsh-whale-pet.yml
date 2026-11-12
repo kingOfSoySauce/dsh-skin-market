@@ -25,14 +25,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/home.png
-  - skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/conversation.png
-  - skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/settings.png
 screenshots:
   - https://raw.githubusercontent.com/aceice01/dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/docs/preview.png
   - skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/home.gif
-listScreenshot: https://raw.githubusercontent.com/aceice01/dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/docs/preview.png
+listScreenshot: skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -59,9 +55,12 @@ license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限个人学习、研究、娱乐及非商业复制、修改和分发；须保留许可声明与致谢。
+starsSnapshot: 30
+marketScreenshots:
+  - skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/home.png
+  - skin-screenshots/aceice01__dsh-whale-pet/18fec904ec3b4fd3958b6fb8c2fa9c209679328f/conversation.png
 featuredRank: 978
-starsSnapshot: 27
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:50:58.503Z
-starsUpdatedAt: 2026-11-01T22:47:29.248Z
-updatedAt: 2026-11-01T22:47:29.248Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-09T00:12:57.080Z
+updatedAt: 2026-11-10T00:42:47.982Z

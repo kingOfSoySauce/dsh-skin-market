@@ -21,6 +21,9 @@ install:
   target: github:BeiZi6/dsh-theme-plugin#b3e7e143532c4b6df71da753d2336bb018949d2a
   version: 0.1.0
   commit: b3e7e143532c4b6df71da753d2336bb018949d2a
+  desktop:
+    mode: manual-only
+    reason: npm-package-deprecated
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -40,16 +43,25 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: b3e7e143532c4b6df71da753d2336bb018949d2a
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:13:46.025Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 26
-starsSnapshot: 5
-releaseUpdatedAt: 2026-08-16 12:16:08.600000+00:00
-metadataUpdatedAt: 2026-08-22T08:15:28.457Z
-starsUpdatedAt: 2026-09-07T21:58:20.589Z
-updatedAt: 2026-09-07T21:58:20.589Z
+starsSnapshot: 4
 marketScreenshots:
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/BeiZi6__dsh-theme-plugin/b3e7e143532c4b6df71da753d2336bb018949d2a/home.png
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/BeiZi6__dsh-theme-plugin/b3e7e143532c4b6df71da753d2336bb018949d2a/conversation.png
   - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/BeiZi6__dsh-theme-plugin/b3e7e143532c4b6df71da753d2336bb018949d2a/settings.png
+featuredRank: 26
+releaseUpdatedAt: 2026-11-09T07:13:46.026Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-09T07:13:46.026Z
+updatedAt: 2026-11-10T00:42:47.982Z

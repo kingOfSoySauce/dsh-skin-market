@@ -29,7 +29,9 @@ compatibility:
   platform:
     - web
 screenshots:
-  - skin-screenshots/ZaVang__dsh-diorama/9bd7cd7f6fc63da60082eb9fda2703e1e7c820f2/home.gif
+  - skin-screenshots/ZaVang__dsh-diorama/9bd7cd7f6fc63da60082eb9fda2703e1e7c820f2/preset-occult.gif
+  - skin-screenshots/ZaVang__dsh-diorama/9bd7cd7f6fc63da60082eb9fda2703e1e7c820f2/preset-yukino.gif
+listScreenshot: skin-screenshots/ZaVang__dsh-diorama/9bd7cd7f6fc63da60082eb9fda2703e1e7c820f2/preset-occult.gif
 review:
   compatibility: verified
   preview: verified
@@ -56,13 +58,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 212
 starsSnapshot: 0
-releaseUpdatedAt: 2026-08-23T05:35:37.188Z
-metadataUpdatedAt: 2026-10-30T03:54:28.120Z
-starsUpdatedAt: 2026-09-18T21:40:08.685Z
-updatedAt: 2026-10-30T03:54:28.120Z
 marketScreenshots:
   - skin-screenshots/ZaVang__dsh-diorama/9bd7cd7f6fc63da60082eb9fda2703e1e7c820f2/home.png
   - skin-screenshots/ZaVang__dsh-diorama/9bd7cd7f6fc63da60082eb9fda2703e1e7c820f2/conversation.png
   - skin-screenshots/ZaVang__dsh-diorama/9bd7cd7f6fc63da60082eb9fda2703e1e7c820f2/settings.png
+featuredRank: 212
+releaseUpdatedAt: 2026-08-23T05:35:37.188Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
+starsUpdatedAt: 2026-09-18T21:40:08.685Z
+updatedAt: 2026-11-11T13:17:15.192Z

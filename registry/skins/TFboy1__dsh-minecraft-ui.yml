@@ -41,6 +41,7 @@ screenshots:
   - https://raw.githubusercontent.com/TFboy1/dsh-minecraft-ui/ec5313b87f8688b82421f124cc2f3887c84b3a8c/docs/screenshots/agent-plugin-chest.png
   - https://raw.githubusercontent.com/TFboy1/dsh-minecraft-ui/ec5313b87f8688b82421f124cc2f3887c84b3a8c/docs/screenshots/model-chest.png
   - https://raw.githubusercontent.com/TFboy1/dsh-minecraft-ui/ec5313b87f8688b82421f124cc2f3887c84b3a8c/docs/screenshots/reasoning-enchantment.png
+listScreenshot: https://raw.githubusercontent.com/TFboy1/dsh-minecraft-ui/ec5313b87f8688b82421f124cc2f3887c84b3a8c/docs/banner.png
 review:
   compatibility: verified
   preview: verified
@@ -66,9 +67,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1023
 starsSnapshot: 21
+featuredRank: 1023
 releaseUpdatedAt: 2026-09-15T03:03:43.311Z
-metadataUpdatedAt: 2026-08-23T05:29:31.272Z
+metadataUpdatedAt: 2026-11-09T00:13:10.328Z
 starsUpdatedAt: 2026-10-19T22:54:42.735Z
-updatedAt: 2026-10-19T22:54:42.735Z
+updatedAt: 2026-11-09T00:13:10.328Z

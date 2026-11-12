@@ -1,10 +1,12 @@
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import { createDshPluginAddCommand, createInstallCommand, quoteInstallTarget } from '../src/install-command.ts'
-import { mkdtempSync, writeFileSync, chmodSync, rmSync, existsSync } from 'node:fs'
-import { tmpdir } from 'node:os'
+import { writeFileSync, chmodSync, rmSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { spawnSync } from 'node:child_process'
 import { getInstallEnvironment } from '../src/install-environment.ts'
+import { cleanupTempDirs, tempDir } from './fixtures/temp.ts'
+
+afterEach(cleanupTempDirs)
 
 describe('portable DSH install commands', () => {
   it('uses double quotes for targets containing cmd metacharacters', () => {
@@ -29,7 +31,7 @@ describe('portable DSH install commands', () => {
   })
 
   it('executes one POSIX install with literal custom directories and no command substitution', () => {
-    const directory = mkdtempSync(join(tmpdir(), 'market-copy-command-'))
+    const directory = tempDir('market-copy-command-')
     const fakeCli = join(directory, 'dsh')
     const fakePnpm = join(directory, 'pnpm')
     const script = `#!${process.execPath}\nprocess.stdout.write(JSON.stringify({ args: process.argv.slice(2), home: process.env.DSH_HOME }))\n`

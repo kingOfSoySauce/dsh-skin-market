@@ -14,12 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Rain-Shuoyu/dsh-client-deep-sneak#21d0646de043b5bb2e18835826394e0aa2fe7497
+  target: github:Rain-Shuoyu/dsh-client-deep-sneak#8da38b128755090480c253081d36304b768c3dcc
   version: 0.12.0
-  commit: 21d0646de043b5bb2e18835826394e0aa2fe7497
+  commit: 8da38b128755090480c253081d36304b768c3dcc
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-client-deep-sneak
+    packageVersion: 0.12.0
+    integrity: sha512-MIeJKlmnYsTuRrPNebgylquMngu1Smkuc7+Fz/QUkI8NrbbhMWB/LJbrHecDlKHEz2qdx1LDbpEdXcxtOsYHZA==
+  npm:
+    name: dsh-client-deep-sneak
+    version: 0.12.0
+    integrity: sha512-MIeJKlmnYsTuRrPNebgylquMngu1Smkuc7+Fz/QUkI8NrbbhMWB/LJbrHecDlKHEz2qdx1LDbpEdXcxtOsYHZA==
+    repository: https://github.com/Rain-Shuoyu/dsh-client-deep-sneak
+    gitHead: 8da38b128755090480c253081d36304b768c3dcc
 compatibility:
   dsh: unverified
   platform:
@@ -36,18 +45,19 @@ health:
     readmeScreenshots: improve
     compatibility: improve
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 21d0646de043b5bb2e18835826394e0aa2fe7497
+    commit: 8da38b128755090480c253081d36304b768c3dcc
     packageVersion: 0.12.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:09:16.362Z
+    checkedAt: 2026-11-09T00:16:40.343Z
     findings: []
 license:
   code: MIT
@@ -58,7 +68,7 @@ marketScreenshots:
   - skin-screenshots/Rain-Shuoyu__dsh-client-deep-sneak/21d0646de043b5bb2e18835826394e0aa2fe7497/conversation.png
   - skin-screenshots/Rain-Shuoyu__dsh-client-deep-sneak/21d0646de043b5bb2e18835826394e0aa2fe7497/settings.png
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-30T03:53:15.825Z
+releaseUpdatedAt: 2026-11-09T00:16:40.383Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-30T03:53:15.825Z
+updatedAt: 2026-11-10T00:42:47.982Z

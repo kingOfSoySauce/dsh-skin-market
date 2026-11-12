@@ -31,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/huabai-flowerwhite/dsh-ui-skin/c7c01e5fc9d205d6020078e95739c96d08a6b5ab/How%E2%80%91to%20Showcase1.png
   - https://raw.githubusercontent.com/huabai-flowerwhite/dsh-ui-skin/c7c01e5fc9d205d6020078e95739c96d08a6b5ab/How%E2%80%91to%20Showcase2.png
+listScreenshot: https://raw.githubusercontent.com/huabai-flowerwhite/dsh-ui-skin/c7c01e5fc9d205d6020078e95739c96d08a6b5ab/How%E2%80%91to%20Showcase1.png
 review:
   compatibility: unverified
   preview: verified
@@ -57,9 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1015
 starsSnapshot: 2
+featuredRank: 1015
 releaseUpdatedAt: 2026-08-23T05:30:21.167Z
-metadataUpdatedAt: 2026-08-23T15:29:40.029Z
+metadataUpdatedAt: 2026-11-09T07:14:44.875Z
 starsUpdatedAt: 2026-09-09T21:39:50.057Z
-updatedAt: 2026-09-09T21:39:50.057Z
+updatedAt: 2026-11-09T07:14:44.875Z

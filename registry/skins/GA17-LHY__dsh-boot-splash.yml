@@ -1,0 +1,67 @@
+id: ga17-lhy.dsh-boot-splash
+name:
+  zh: dsh-boot-splash
+  en: dsh-boot-splash
+author: GA17-LHY
+description: 自建 DSH 启动画面插件：开机时叠一段全窗口画面（默认为渐变底），片尾交叉溶解进界面。
+repo: https://github.com/GA17-LHY/dsh-boot-splash
+package: boot-splash
+rowId: boot-splash
+category: splash
+tags:
+  - wallpaper
+  - glass
+  - retro
+  - motion
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:GA17-LHY/dsh-boot-splash#6dd58cb072f3f5972dcc290c27af99ff5900f052
+  version: 0.6.1
+  commit: 6dd58cb072f3f5972dcc290c27af99ff5900f052
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/GA17-LHY__dsh-boot-splash/6dd58cb072f3f5972dcc290c27af99ff5900f052/launch.gif
+listScreenshot: skin-screenshots/GA17-LHY__dsh-boot-splash/6dd58cb072f3f5972dcc290c27af99ff5900f052/launch.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 6dd58cb072f3f5972dcc290c27af99ff5900f052
+    packageVersion: 0.6.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:27:20.319Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 8
+featuredRank: 1128
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-10T18:11:15.809Z
+starsUpdatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-10T18:11:15.809Z

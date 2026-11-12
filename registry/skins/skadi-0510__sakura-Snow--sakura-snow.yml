@@ -31,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/skadi-0510/sakura-Snow/eb68d3af37db571b3067cbbb013c3a27612d8999/sakura-snow/preview/light.webp
   - https://raw.githubusercontent.com/skadi-0510/sakura-Snow/eb68d3af37db571b3067cbbb013c3a27612d8999/sakura-snow/preview/dark.webp
+listScreenshot: https://raw.githubusercontent.com/skadi-0510/sakura-Snow/eb68d3af37db571b3067cbbb013c3a27612d8999/sakura-snow/preview/light.webp
 review:
   compatibility: unverified
   preview: verified
@@ -56,10 +57,9 @@ health:
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
-featuredRank: 1080
 starsSnapshot: 1
+featuredRank: 1080
 releaseUpdatedAt: 2026-09-07T21:58:50.814Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
+metadataUpdatedAt: 2026-11-09T00:16:47.692Z
 starsUpdatedAt: 2026-09-07T21:58:50.814Z
-updatedAt: 2026-09-08T03:10:45.087Z
-listScreenshot: https://raw.githubusercontent.com/skadi-0510/sakura-Snow/eb68d3af37db571b3067cbbb013c3a27612d8999/sakura-snow/preview/light.webp
+updatedAt: 2026-11-09T00:16:47.692Z

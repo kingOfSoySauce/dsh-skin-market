@@ -16,18 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Nagi-ovo/dsh-ads#a5854a37bbe24078878740ae4567e59cc75c29ec
-  version: 0.1.3
-  commit: a5854a37bbe24078878740ae4567e59cc75c29ec
+  target: github:Nagi-ovo/dsh-ads#3ddee7c2793b9e7800658cd525aa3c18fa27a327
+  version: 0.1.4
+  commit: 3ddee7c2793b9e7800658cd525aa3c18fa27a327
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: "@nagi-ovo/dsh-ads"
+    packageVersion: 0.1.4
+    integrity: sha512-tLpJ1V3bQ6+tUaF9OHR8E5cyRHy45vHwkb4pUxsUqWjN/Jk+5s51EpdOWvVlIVBd0dvCjB7yjWv5BjDryDiCkg==
   npm:
     name: "@nagi-ovo/dsh-ads"
-    version: 0.1.3
-    integrity: sha512-7RMKGii5av9fUu9/bYSHyIRFwNjnApNVI64mtfy5B2Buu3aUoQrk4Y2BDJ+9BtfZTnw1O6Fhfb9UwmvoTqIc4Q==
+    version: 0.1.4
+    integrity: sha512-tLpJ1V3bQ6+tUaF9OHR8E5cyRHy45vHwkb4pUxsUqWjN/Jk+5s51EpdOWvVlIVBd0dvCjB7yjWv5BjDryDiCkg==
     repository: https://github.com/Nagi-ovo/dsh-ads
-    gitHead: a5854a37bbe24078878740ae4567e59cc75c29ec
+    gitHead: 3ddee7c2793b9e7800658cd525aa3c18fa27a327
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -56,20 +59,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: a5854a37bbe24078878740ae4567e59cc75c29ec
-    packageVersion: 0.1.3
+    commit: 3ddee7c2793b9e7800658cd525aa3c18fa27a327
+    packageVersion: 0.1.4
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
     mode: static
     result: pass
-    checkedAt: 2026-10-20T22:15:00.987Z
+    checkedAt: 2026-11-09T00:12:31.851Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
+starsSnapshot: 718
 featuredRank: 142
-starsSnapshot: 708
-releaseUpdatedAt: 2026-10-21T22:16:55.918Z
-metadataUpdatedAt: 2026-10-20T22:15:03.327Z
-starsUpdatedAt: 2026-11-01T01:43:19.633Z
-updatedAt: 2026-11-01T01:43:19.633Z
+releaseUpdatedAt: 2026-11-09T00:12:35.228Z
+metadataUpdatedAt: 2026-11-09T00:12:35.228Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

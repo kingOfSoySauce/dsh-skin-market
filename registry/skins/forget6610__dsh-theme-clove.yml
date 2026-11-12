@@ -1,0 +1,63 @@
+id: forget6610.dsh-theme-clove
+name:
+  zh: dsh-theme-clove
+  en: dsh-theme-clove
+author: forget6610
+description: 暮色调的 DeepSeek Harness Web GUI 皮肤：粉紫配色、暗紫壁纸、卡片和滚动条样式。
+repo: https://github.com/forget6610/dsh-theme-clove
+package: dsh-theme-clove
+rowId: clove-theme
+category: skin
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:forget6610/dsh-theme-clove#e8a6df935de979353443b529c9697a6a9ffe4bd5
+  version: 1.0.1
+  commit: e8a6df935de979353443b529c9697a6a9ffe4bd5
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/forget6610/dsh-theme-clove/e8a6df935de979353443b529c9697a6a9ffe4bd5/preview/preview.png
+listScreenshot: https://raw.githubusercontent.com/forget6610/dsh-theme-clove/e8a6df935de979353443b529c9697a6a9ffe4bd5/preview/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: e8a6df935de979353443b529c9697a6a9ffe4bd5
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:11:13.734Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 8
+featuredRank: 1127
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-11T00:07:28.933Z
+starsUpdatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-11T00:07:28.933Z

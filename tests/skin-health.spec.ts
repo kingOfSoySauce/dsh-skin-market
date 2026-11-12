@@ -29,6 +29,7 @@ describe('repository health', () => {
     expect(result.suggestions).toHaveLength(5)
     expect(result.suggestions.join(' ')).toContain('符合 dsh 插件要求')
     expect(result.suggestions.join(' ')).toContain('安装命令')
+    expect(result.suggestions.join(' ')).toContain('官方 Desktop')
     expect(result.suggestions.join(' ')).toContain('dsh-plugin Topic')
     expect(result.suggestions.join(' ')).not.toContain('无法安装')
   })

@@ -24,7 +24,7 @@ install:
   commit: 1482dae64bbb0bafd09c2667e24c5679e12a77df
   desktop:
     mode: manual-only
-    reason: npm-lifecycle-scripts:prepack
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.2-rc.1
   platform:
@@ -58,9 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 4
 featuredRank: 1044
-starsSnapshot: 3
-releaseUpdatedAt: 2026-10-24T21:31:49.644Z
+releaseUpdatedAt: 2026-11-09T00:14:09.262Z
 metadataUpdatedAt: 2026-10-24T21:31:49.644Z
-starsUpdatedAt: 2026-09-25T22:13:01.290Z
-updatedAt: 2026-10-24T21:31:49.644Z
+starsUpdatedAt: 2026-11-04T00:04:08.369Z
+updatedAt: 2026-11-09T00:14:09.262Z

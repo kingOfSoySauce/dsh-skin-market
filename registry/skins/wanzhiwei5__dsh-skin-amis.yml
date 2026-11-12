@@ -30,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/wanzhiwei5/dsh-skin-amis/74d91e4b994d9fb8513ee3df97c43d3280390e58/preview/light.png
   - https://raw.githubusercontent.com/wanzhiwei5/dsh-skin-amis/74d91e4b994d9fb8513ee3df97c43d3280390e58/preview/dark.png
+listScreenshot: https://raw.githubusercontent.com/wanzhiwei5/dsh-skin-amis/74d91e4b994d9fb8513ee3df97c43d3280390e58/preview/light.png
 review:
   compatibility: unverified
   preview: verified
@@ -55,9 +56,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 69
 starsSnapshot: 1
+featuredRank: 69
 releaseUpdatedAt: 2026-08-23T05:30:44.098Z
-metadataUpdatedAt: 2026-08-23T05:30:44.098Z
+metadataUpdatedAt: 2026-11-09T00:16:54.621Z
 starsUpdatedAt: 2026-09-12T21:25:42.519Z
-updatedAt: 2026-09-12T21:25:42.519Z
+updatedAt: 2026-11-09T00:16:54.621Z

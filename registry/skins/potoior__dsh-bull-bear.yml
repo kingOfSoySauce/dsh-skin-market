@@ -30,24 +30,26 @@ install:
     repository: https://github.com/potoior/dsh-bull-bear
     gitHead: 3f6e032b8bab9df4b9b23110716cd9fc399eeb39
 compatibility:
-  dsh: unverified
+  dsh: ^0.1.0-rc.6
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/potoior/dsh-bull-bear/3f6e032b8bab9df4b9b23110716cd9fc399eeb39/assets/screenshot-overview.png
 listScreenshot: https://raw.githubusercontent.com/potoior/dsh-bull-bear/3f6e032b8bab9df4b9b23110716cd9fc399eeb39/assets/screenshot-overview.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
-    compatibility: improve
+    readmeScreenshots: improve
+    compatibility: pass
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
     commit: 3f6e032b8bab9df4b9b23110716cd9fc399eeb39
     packageVersion: 0.1.2
@@ -60,9 +62,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T07:18:03.991Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T07:18:03.991Z

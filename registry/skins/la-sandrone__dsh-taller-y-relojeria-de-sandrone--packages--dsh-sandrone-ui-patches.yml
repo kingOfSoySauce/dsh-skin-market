@@ -14,9 +14,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:la-sandrone/dsh-taller-y-relojeria-de-sandrone#e204e90c3ec81e15c47932405199a5584ea9f08e&path:/packages/dsh-sandrone-ui-patches
+  target: github:la-sandrone/dsh-taller-y-relojeria-de-sandrone#e5a3c203908175db80412303437826885625aeeb&path:/packages/dsh-sandrone-ui-patches
   version: 0.1.0
-  commit: e204e90c3ec81e15c47932405199a5584ea9f08e
+  commit: e5a3c203908175db80412303437826885625aeeb
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -42,12 +42,12 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: e204e90c3ec81e15c47932405199a5584ea9f08e
+    commit: e5a3c203908175db80412303437826885625aeeb
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T23:01:27.151Z
+    checkedAt: 2026-11-05T20:41:06.182Z
     findings: []
 license:
   code: MIT
@@ -59,7 +59,7 @@ marketScreenshots:
   - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/conversation.png
   - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/settings.png
 featuredRank: 1000
-releaseUpdatedAt: 2026-10-30T23:01:27.221Z
-metadataUpdatedAt: 2026-10-31T04:39:10.957Z
+releaseUpdatedAt: 2026-11-06T00:08:18.130Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-31T04:39:10.957Z
+updatedAt: 2026-11-10T00:42:47.982Z

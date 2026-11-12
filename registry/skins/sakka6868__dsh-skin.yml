@@ -20,8 +20,11 @@ install:
   version: 0.4.3
   commit: 9fd8f74e869c2f3728811562a490e4f3b31d0de2
   desktop:
-    mode: manual-only
-    reason: npm-source-unverified
+    mode: managed
+    registry: npm
+    packageName: dsh-skin-alphacoders
+    packageVersion: 0.4.3
+    integrity: sha512-yNWirKvUzgOLk1PkMQXVEwjCg9PnZxC8IqnwVWUZ9Ec6fIAh5tmw7hB3+TKBvmNi9/MtehHE2v2pD5wAUdFVCg==
   npm:
     name: dsh-skin-alphacoders
     version: 0.4.3
@@ -69,7 +72,7 @@ license:
   commercialUse: true
 featuredRank: 92
 starsSnapshot: 2
-releaseUpdatedAt: 2026-10-02T10:30:24.538Z
+releaseUpdatedAt: 2026-11-09T00:15:18.789Z
 metadataUpdatedAt: 2026-10-02T10:30:24.538Z
 starsUpdatedAt: 2026-09-09T21:40:01.594Z
-updatedAt: 2026-10-02T10:30:24.538Z
+updatedAt: 2026-11-09T00:15:18.789Z

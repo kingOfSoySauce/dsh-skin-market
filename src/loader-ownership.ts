@@ -44,8 +44,15 @@ export function parseInsertedLoaderRows(value: unknown, packageName?: string, ro
   return rows
 }
 
+/**
+ * A loader registration is identified by `id` alone. `name` is the plugin that
+ * implements the row, so several rows can legitimately share it: a skin's
+ * inserted preset and the installed official plugin both load
+ * `@deepseek-ai/dsh-agent-preset` under different ids. Comparing names turned
+ * that shared implementation into a false install conflict.
+ */
 export function loaderIdentifiers(identity: LoaderIdentity): string[] {
-  return [identity.id, identity.name].filter((value): value is string => value !== undefined && value !== '')
+  return identity.id === undefined || identity.id === '' ? [] : [identity.id]
 }
 
 export function sharedLoaderIdentifiers(left: LoaderIdentity, right: LoaderIdentity): string[] {

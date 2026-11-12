@@ -6,7 +6,7 @@ author: crack-time
 description: 田园小屋皮肤（Pastoral Cottage Skin）—— 面向 DeepSeek Harness Web GUI（dsh web）的纯 UI 换肤插件。
 repo: https://github.com/crack-time/dsh-web-ui-skin
 package: "@crack/dsh-archive"
-rowId: dsh-web-ui-skin
+rowId: dsh-archive
 category: skin
 tags:
   - wallpaper
@@ -58,9 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 174
 starsSnapshot: 0
+featuredRank: 174
 releaseUpdatedAt: 2026-09-13T21:25:03.770Z
-metadataUpdatedAt: 2026-09-13T21:25:03.770Z
+metadataUpdatedAt: 2026-11-09T06:45:04.606Z
 starsUpdatedAt: 2026-09-09T21:40:15.200Z
-updatedAt: 2026-09-13T21:25:03.770Z
+updatedAt: 2026-11-09T06:45:04.606Z

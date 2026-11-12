@@ -35,27 +35,29 @@ health:
     readmeScreenshots: improve
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 39751b4e3fbb5dce7874750dc481c104d9740a0c
     packageVersion: 0.9.11
-    scannerVersion: isolated-capture-v1
-    dshVersion: 0.2.1-rc.2
-    mode: runtime
+    scannerVersion: static-v2
+    mode: static
     result: pass
-    checkedAt: 2026-10-25T18:56:02.911Z
+    checkedAt: 2026-11-09T07:17:04.125Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-25T19:28:54.496Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T19:28:54.496Z
 marketScreenshots:
   - skin-screenshots/dreamtao2199__dsh-colors/39751b4e3fbb5dce7874750dc481c104d9740a0c/home.png
   - skin-screenshots/dreamtao2199__dsh-colors/39751b4e3fbb5dce7874750dc481c104d9740a0c/conversation.png
   - skin-screenshots/dreamtao2199__dsh-colors/39751b4e3fbb5dce7874750dc481c104d9740a0c/settings.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-10-25T18:22:32.727Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-10-24T21:34:17.947Z
+updatedAt: 2026-11-10T00:42:47.982Z

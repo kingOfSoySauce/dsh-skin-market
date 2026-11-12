@@ -3,11 +3,12 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { stringify } from 'yaml'
-import { loadCatalog } from '../src/catalog.ts'
 import { SkinLifecycle } from '../src/lifecycle.ts'
 import { officialDesktopRunner, type OfficialPluginManagerLike } from '../src/official-desktop.ts'
 import { atomicWriteJson, atomicWriteText, marketStateFile, packageDir, profilePatchFile, readMarketState, readProfileBundles, writeMarketState } from '../src/profile.ts'
-import type { LoaderEntry, Operation, SkinEntry } from '../src/types.ts'
+import type { LoaderEntry, SkinEntry } from '../src/types.ts'
+import { operationWaiter } from './fixtures/operations.ts'
+import { catalogFixtureSkin } from './fixtures/catalog.ts'
 
 const directories: string[] = []
 const lifecycles: SkinLifecycle[] = []
@@ -28,7 +29,7 @@ interface NativeRow {
 function fixture(ids = ['external', 'other']) {
   const directory = mkdtempSync(join(tmpdir(), 'dsh-native-state-'))
   directories.push(directory)
-  const base = loadCatalog().skins[0]!
+  const base = catalogFixtureSkin()
   const catalog: SkinEntry[] = ids.map(id => ({
     ...structuredClone(base), id, rowId: id, package: `native-${id}`, repo: `https://github.com/fixture/${id}`, subpath: undefined,
     compatibility: { dsh: '*', platform: ['web'] },
@@ -101,10 +102,7 @@ function fixture(ids = ['external', 'other']) {
   return { directory, catalog, selected, componentEnabled, rows, entries, manager, lifecycle, on, select, files, writes, host, runtime }
 }
 
-async function finished(operation: Operation): Promise<Operation> {
-  await vi.waitFor(() => expect(['done', 'failed', 'cancelled']).toContain(operation.phase))
-  return operation
-}
+const finished = operationWaiter()
 
 describe('native plugin changes observed by the skin market', () => {
   it('reports every natively enabled skin without adopting or disabling it on a state read', async () => {

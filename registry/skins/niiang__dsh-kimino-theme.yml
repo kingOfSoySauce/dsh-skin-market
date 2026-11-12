@@ -18,20 +18,25 @@ modes:
   - light
   - dark
 install:
-  target: github:niiang/dsh-kimino-theme#4b3c50257c554c196c99e0b59f8a5c802392e9e0
+  target: github:niiang/dsh-kimino-theme#6821cbe097a391eff21c41a62e14adf690194b97
   version: 68.4.2
-  commit: 4b3c50257c554c196c99e0b59f8a5c802392e9e0
+  commit: 6821cbe097a391eff21c41a62e14adf690194b97
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-kimino-theme
+    packageVersion: 68.4.2
+    integrity: sha512-4eAIXqJQXxmw/FXPkXG3Bfppgs12RwWPua+KeBiV0d/+8Zs1daSgofx/HzltuMK2Ucu1IGuqMjUylNHdhdl3hA==
+  npm:
+    name: dsh-kimino-theme
+    version: 68.4.2
+    integrity: sha512-4eAIXqJQXxmw/FXPkXG3Bfppgs12RwWPua+KeBiV0d/+8Zs1daSgofx/HzltuMK2Ucu1IGuqMjUylNHdhdl3hA==
+    repository: https://github.com/niiang/dsh-kimino-theme
+    gitHead: 6821cbe097a391eff21c41a62e14adf690194b97
 compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/home.png
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/conversation.png
-  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/settings.png
 screenshots:
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0d066fe583be48341fcf8064fd6dfc4ea760bc8a/docs/screenshots/home-hero.png
   - https://raw.githubusercontent.com/niiang/dsh-kimino-theme/0d066fe583be48341fcf8064fd6dfc4ea760bc8a/docs/screenshots/sidebar.png
@@ -57,19 +62,23 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 4b3c50257c554c196c99e0b59f8a5c802392e9e0
+    commit: 6821cbe097a391eff21c41a62e14adf690194b97
     packageVersion: 68.4.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-01T22:47:22.146Z
+    checkedAt: 2026-11-09T00:12:51.965Z
     findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 45
+marketScreenshots:
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/home.png
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/conversation.png
+  - skin-screenshots/niiang__dsh-kimino-theme/dfd97996162474bc904659e22b1044b01a514815/settings.png
 featuredRank: 145
-starsSnapshot: 43
-releaseUpdatedAt: 2026-11-01T22:47:26.703Z
-metadataUpdatedAt: 2026-11-01T22:47:26.703Z
-starsUpdatedAt: 2026-10-30T03:53:27.502Z
-updatedAt: 2026-11-01T22:47:26.703Z
+releaseUpdatedAt: 2026-11-09T00:12:54.914Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

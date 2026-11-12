@@ -24,10 +24,6 @@ compatibility:
   dsh: 0.2.1-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/home.png
-  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/conversation.png
-  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/settings.png
 screenshots:
   - https://raw.githubusercontent.com/kiive357q/dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/docs/screenshots/demo-stage.png
   - https://raw.githubusercontent.com/kiive357q/dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/docs/screenshots/appearance.png
@@ -60,9 +56,13 @@ license:
   code: MIT
   commercialUse: true
   notice: 原创代码及默认程序生成的演示资源采用 MIT。原版《家有大猫》图片、音乐、字体与剧本不随公开包分发；用户自行导入的游戏资源不在 MIT 许可内。
-featuredRank: 999
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/home.png
+  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/conversation.png
+  - skin-screenshots/kiive357q__dsh-nekojishi-vn/91e05b63a80a05370a4870750f00113b9fbb47cc/settings.png
+featuredRank: 999
 releaseUpdatedAt: 2026-10-26T01:52:11.778Z
-metadataUpdatedAt: 2026-10-26T01:52:11.778Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:52:11.778Z
+updatedAt: 2026-11-10T00:42:47.982Z

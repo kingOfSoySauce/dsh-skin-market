@@ -6,7 +6,7 @@ author: jiangnanquan
 description: DSH web 界面增强：Solarized 浅色主题 + Maple Mono 字体、紧凑对话布局、思考/工具链折叠胶囊、官方余额 + 本轮成本 + 用量图表
 repo: https://github.com/jiangnanquan/dsh-ux
 package: dsh-uxexo
-rowId: dsh-enhance
+rowId: dsh-uxexo
 category: skin
 tags:
   - token-theme
@@ -54,9 +54,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1034
 starsSnapshot: 10
+featuredRank: 1034
 releaseUpdatedAt: 2026-10-21T22:17:18.724Z
-metadataUpdatedAt: 2026-10-21T22:17:18.724Z
+metadataUpdatedAt: 2026-11-09T06:45:20.878Z
 starsUpdatedAt: 2026-10-26T01:51:05.520Z
-updatedAt: 2026-10-26T01:51:05.520Z
+updatedAt: 2026-11-09T06:45:20.878Z

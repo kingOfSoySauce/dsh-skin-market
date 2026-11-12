@@ -29,6 +29,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/drfccv/dsh-theme-neko/6c7c9a58ff93cef7117cbfc3b48a295039cd7c45/sample/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/drfccv/dsh-theme-neko/6c7c9a58ff93cef7117cbfc3b48a295039cd7c45/sample/screenshot.png
 review:
   compatibility: unverified
   preview: verified
@@ -61,6 +62,6 @@ license:
 featuredRank: 46
 starsSnapshot: 3
 releaseUpdatedAt: 2026-08-23T05:28:59.594Z
-metadataUpdatedAt: 2026-08-23T05:28:59.594Z
+metadataUpdatedAt: 2026-11-09T00:14:25.985Z
 starsUpdatedAt: 2026-09-09T21:39:33.481Z
-updatedAt: 2026-09-09T21:39:33.481Z
+updatedAt: 2026-11-09T00:14:25.985Z

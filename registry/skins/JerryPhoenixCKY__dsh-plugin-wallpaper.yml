@@ -16,13 +16,22 @@ modes:
   - light
   - dark
 install:
-  target: github:JerryPhoenixCKY/dsh-plugin-wallpaper#b964a23b76e267a4a8cd5c602f7a47f488733ae3
+  target: github:JerryPhoenixCKY/dsh-plugin-wallpaper#aaeb5720423c710ad6bce41650e426fa12b0a3fb
   version: 0.1.6
-  commit: b964a23b76e267a4a8cd5c602f7a47f488733ae3
+  commit: aaeb5720423c710ad6bce41650e426fa12b0a3fb
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepare
-  allowBuild: dsh-plugin-wallpaper@https://codeload.github.com/JerryPhoenixCKY/dsh-plugin-wallpaper/tar.gz/b964a23b76e267a4a8cd5c602f7a47f488733ae3
+    mode: managed
+    registry: npm
+    packageName: dsh-plugin-wallpaper
+    packageVersion: 0.1.6
+    integrity: sha512-DlRdNCHpmNlgB8Kv0GsRiIeUoUxKBxRXGCQ+ww+jOquaqTH5TCiWXCJeT5VWrg6txUCGnd0g/Lmwu9WX8dQhnA==
+  allowBuild: dsh-plugin-wallpaper@https://codeload.github.com/JerryPhoenixCKY/dsh-plugin-wallpaper/tar.gz/aaeb5720423c710ad6bce41650e426fa12b0a3fb
+  npm:
+    name: dsh-plugin-wallpaper
+    version: 0.1.6
+    integrity: sha512-DlRdNCHpmNlgB8Kv0GsRiIeUoUxKBxRXGCQ+ww+jOquaqTH5TCiWXCJeT5VWrg6txUCGnd0g/Lmwu9WX8dQhnA==
+    repository: https://github.com/JerryPhoenixCKY/dsh-plugin-wallpaper
+    gitHead: aaeb5720423c710ad6bce41650e426fa12b0a3fb
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -46,20 +55,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: b964a23b76e267a4a8cd5c602f7a47f488733ae3
+    commit: aaeb5720423c710ad6bce41650e426fa12b0a3fb
     packageVersion: 0.1.6
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-09-15T03:05:40.804Z
+    checkedAt: 2026-11-09T00:18:00.027Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1021
 starsSnapshot: 0
-releaseUpdatedAt: 2026-09-15T03:05:42.038Z
-metadataUpdatedAt: 2026-09-15T03:05:42.038Z
+featuredRank: 1021
+releaseUpdatedAt: 2026-11-09T00:18:01.734Z
+metadataUpdatedAt: 2026-11-09T00:18:01.734Z
 starsUpdatedAt: 2026-09-09T21:40:23.049Z
-updatedAt: 2026-09-15T03:05:42.038Z
+updatedAt: 2026-11-09T00:18:01.734Z

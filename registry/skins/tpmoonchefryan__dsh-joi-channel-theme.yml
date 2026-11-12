@@ -15,21 +15,21 @@ modes:
   - light
   - dark
 install:
-  target: github:tpmoonchefryan/dsh-joi-channel-theme#5879e04fbc75251d50b0bb6416fb0f691d608a20
-  version: 0.1.14
-  commit: 5879e04fbc75251d50b0bb6416fb0f691d608a20
+  target: github:tpmoonchefryan/dsh-joi-channel-theme#8a3d335638ea98c2f583d6b43dacd30f397a27fe
+  version: 0.2.0
+  commit: 8a3d335638ea98c2f583d6b43dacd30f397a27fe
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-joi-channel-theme
-    packageVersion: 0.1.14
-    integrity: sha512-Yho/mcJlaJyp29ZYMvwNtICvOIPmXZQbFQZAqU21tFAHrBIU/dFNq9rZM0nm1bmS7SSocsmS4ZlPwdcxRQgLxg==
+    packageVersion: 0.2.0
+    integrity: sha512-UthkKmgh4hMj269AevkS01WKLnp7kJI11F9QMFEB3KlKLnT+QKTjibYCZE9U3RfXyAmEf9wOg8I/23WIQi4LHA==
   npm:
     name: dsh-joi-channel-theme
-    version: 0.1.14
-    integrity: sha512-Yho/mcJlaJyp29ZYMvwNtICvOIPmXZQbFQZAqU21tFAHrBIU/dFNq9rZM0nm1bmS7SSocsmS4ZlPwdcxRQgLxg==
+    version: 0.2.0
+    integrity: sha512-UthkKmgh4hMj269AevkS01WKLnp7kJI11F9QMFEB3KlKLnT+QKTjibYCZE9U3RfXyAmEf9wOg8I/23WIQi4LHA==
     repository: https://github.com/tpmoonchefryan/dsh-joi-channel-theme
-    gitHead: 5879e04fbc75251d50b0bb6416fb0f691d608a20
+    gitHead: 8a3d335638ea98c2f583d6b43dacd30f397a27fe
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
@@ -59,15 +59,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.5 未被本次检测范围 ^0.1.7-rc.1 || ^0.2.0-rc.1 完全覆盖（固定版本 5879e04fbc75251d50b0bb6416fb0f691d608a20）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.5 未被本次检测范围 ^0.1.7-rc.1 || ^0.2.0-rc.1 完全覆盖（固定版本 8a3d335638ea98c2f583d6b43dacd30f397a27fe）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 5879e04fbc75251d50b0bb6416fb0f691d608a20
-    packageVersion: 0.1.14
+    commit: 8a3d335638ea98c2f583d6b43dacd30f397a27fe
+    packageVersion: 0.2.0
     scannerVersion: static-v2
     dshVersion: ^0.1.7-rc.1 || ^0.2.0-rc.1
     mode: static
     result: unknown
-    checkedAt: 2026-10-11T22:48:15.100Z
+    checkedAt: 2026-11-11T00:07:48.403Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -75,8 +75,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 94
-starsSnapshot: 20
-releaseUpdatedAt: 2026-10-18T09:45:24.275Z
-metadataUpdatedAt: 2026-10-11T22:48:22.880Z
-starsUpdatedAt: 2026-10-06T00:45:16.084Z
-updatedAt: 2026-10-18T09:45:24.275Z
+starsSnapshot: 21
+releaseUpdatedAt: 2026-11-11T00:07:53.799Z
+metadataUpdatedAt: 2026-11-11T00:07:53.799Z
+starsUpdatedAt: 2026-11-05T00:23:33.061Z
+updatedAt: 2026-11-11T00:07:53.799Z

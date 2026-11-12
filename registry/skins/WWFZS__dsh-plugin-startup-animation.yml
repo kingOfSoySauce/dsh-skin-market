@@ -1,0 +1,62 @@
+id: wwfzs.dsh-plugin-startup-animation
+name:
+  zh: dsh-plugin-startup-animation
+  en: dsh-plugin-startup-animation
+author: WWFZS
+description: DeepSeek Harness 全屏开机动画与视频/壁纸/音频库；纯开屏候选，仅展示真实开屏 GIF。
+repo: https://github.com/WWFZS/dsh-plugin-startup-animation
+package: dsh-plugin-startup-animation
+rowId: startup-animation
+category: splash
+tags:
+  - animation
+  - startup
+  - splash
+modes:
+  - light
+  - dark
+install:
+  target: github:WWFZS/dsh-plugin-startup-animation#ef7a6704d31aea2c2c14fede0ec6f6d294cd1a04
+  version: 1.31.1
+  commit: ef7a6704d31aea2c2c14fede0ec6f6d294cd1a04
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: ">=0.2.0"
+  platform:
+    - web
+screenshots:
+  - skin-screenshots/WWFZS__dsh-plugin-startup-animation/3173ace4a769b20e5c0fa48486ee9df790db7e46/home.gif
+listScreenshot: https://raw.githubusercontent.com/WWFZS/dsh-plugin-startup-animation/f17a7910bc7050b3312b9273fc827e22e745bda3/docs/library-videos.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: ef7a6704d31aea2c2c14fede0ec6f6d294cd1a04
+    packageVersion: 1.31.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T00:14:04.638Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 7
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-09T00:14:06.790Z
+metadataUpdatedAt: 2026-11-09T06:44:56.513Z
+starsUpdatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-11T13:17:15.192Z

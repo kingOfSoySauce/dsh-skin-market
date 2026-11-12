@@ -17,19 +17,22 @@ modes:
   - light
   - dark
 install:
-  target: github:Sddft97/dsh-client-ui-skin-verdandi#62c91a57149817eea937f2ccccc9cef51776f172
-  version: 0.1.0
-  commit: 62c91a57149817eea937f2ccccc9cef51776f172
+  target: github:Sddft97/dsh-client-ui-skin-verdandi#62a8010869209ff38edfd3acd6c917c6f05b1786
+  version: 0.1.8
+  commit: 62a8010869209ff38edfd3acd6c917c6f05b1786
   desktop:
-    mode: manual-only
-    reason: npm-lifecycle-scripts:prepare,prepublishOnly
-  allowBuild: "@hjbztlbr/dsh-client-ui-skin-verdandi@https://codeload.github.com/Sddft97/dsh-client-ui-skin-verdandi/tar.gz/62c91a57149817eea937f2ccccc9cef51776f172"
+    mode: managed
+    registry: npm
+    packageName: "@hjbztlbr/dsh-client-ui-skin-verdandi"
+    packageVersion: 0.1.8
+    integrity: sha512-cY0o6xqG6P2x372Hc2gWP/YSYbmvk0AGj6XB0tiP6QnEn4hTlOW22Sm45vp4vAWSFi/zqYlMehmV1dsJvRg+Eg==
+  allowBuild: "@hjbztlbr/dsh-client-ui-skin-verdandi@https://codeload.github.com/Sddft97/dsh-client-ui-skin-verdandi/tar.gz/62a8010869209ff38edfd3acd6c917c6f05b1786"
   npm:
     name: "@hjbztlbr/dsh-client-ui-skin-verdandi"
-    version: 0.1.0
-    integrity: sha512-mAvsLEMZiMZqRVvD0GKfNHxOLOd03/NyqRBH/uk/ZL5O2X5vsVTzy3DrnKjInTvxxyG5MkJ3V/Aj4nLYjGb9rA==
+    version: 0.1.8
+    integrity: sha512-cY0o6xqG6P2x372Hc2gWP/YSYbmvk0AGj6XB0tiP6QnEn4hTlOW22Sm45vp4vAWSFi/zqYlMehmV1dsJvRg+Eg==
     repository: https://github.com/Sddft97/dsh-client-ui-skin-verdandi
-    gitHead: 62c91a57149817eea937f2ccccc9cef51776f172
+    gitHead: 62a8010869209ff38edfd3acd6c917c6f05b1786
 compatibility:
   dsh: unverified
   platform:
@@ -38,6 +41,7 @@ screenshots:
   - https://raw.githubusercontent.com/Sddft97/dsh-client-ui-skin-verdandi/62c91a57149817eea937f2ccccc9cef51776f172/preview/light.png
   - https://raw.githubusercontent.com/Sddft97/dsh-client-ui-skin-verdandi/62c91a57149817eea937f2ccccc9cef51776f172/preview/dark.png
   - https://raw.githubusercontent.com/Sddft97/dsh-client-ui-skin-verdandi/62c91a57149817eea937f2ccccc9cef51776f172/preview/settings.png
+listScreenshot: https://raw.githubusercontent.com/Sddft97/dsh-client-ui-skin-verdandi/62a8010869209ff38edfd3acd6c917c6f05b1786/preview/light.png
 review:
   compatibility: unverified
   preview: verified
@@ -53,19 +57,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 62c91a57149817eea937f2ccccc9cef51776f172
-    packageVersion: 0.1.0
+    commit: 62a8010869209ff38edfd3acd6c917c6f05b1786
+    packageVersion: 0.1.8
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:34:50.685Z
+    checkedAt: 2026-11-09T07:13:52.074Z
     findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 5
 featuredRank: 1031
-starsSnapshot: 0
-releaseUpdatedAt: 2026-08-23T05:34:50.782Z
-metadataUpdatedAt: 2026-08-23T05:34:50.782Z
-starsUpdatedAt: 2026-08-23T05:34:50.782Z
-updatedAt: 2026-08-23T05:34:50.782Z
+releaseUpdatedAt: 2026-11-09T07:13:53.776Z
+metadataUpdatedAt: 2026-11-09T07:13:53.776Z
+starsUpdatedAt: 2026-11-09T07:13:53.776Z
+updatedAt: 2026-11-09T07:13:53.776Z

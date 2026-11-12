@@ -29,10 +29,6 @@ compatibility:
   dsh: ">=0.1.2-rc.1 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/YrracOwl__dsh-theme-acid-noir/7a1a770e14438e9c5a5f43894e747a351a00bc39/home.png
-  - skin-screenshots/YrracOwl__dsh-theme-acid-noir/7a1a770e14438e9c5a5f43894e747a351a00bc39/conversation.png
-  - skin-screenshots/YrracOwl__dsh-theme-acid-noir/7a1a770e14438e9c5a5f43894e747a351a00bc39/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -60,9 +56,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/YrracOwl__dsh-theme-acid-noir/7a1a770e14438e9c5a5f43894e747a351a00bc39/home.png
+  - skin-screenshots/YrracOwl__dsh-theme-acid-noir/7a1a770e14438e9c5a5f43894e747a351a00bc39/conversation.png
+  - skin-screenshots/YrracOwl__dsh-theme-acid-noir/7a1a770e14438e9c5a5f43894e747a351a00bc39/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-26T01:53:24.703Z
-metadataUpdatedAt: 2026-10-26T01:53:24.703Z
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:53:24.703Z
+updatedAt: 2026-11-11T13:17:15.192Z

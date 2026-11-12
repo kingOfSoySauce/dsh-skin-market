@@ -1,0 +1,80 @@
+id: zhigengniao258.dsh-theme-tarkov
+name:
+  zh: dsh-theme-tarkov
+  en: dsh-theme-tarkov
+author: ZHIGENGNIAO258
+description: 以《逃离塔科夫》（Escape from Tarkov）主界面为灵感的 DeepSeek Harness（DSH）Web 界面主题插件：四段动态背景、Beta 警告横幅、提示音、背景音乐、Altyn 桌宠与状态行文本。
+repo: https://github.com/ZHIGENGNIAO258/dsh-theme-tarkov
+package: dsh-theme-tarkov
+rowId: tarkov
+category: skin
+tags:
+  - wallpaper
+  - glass
+  - motion
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:ZHIGENGNIAO258/dsh-theme-tarkov#0919b705a5661c05310afe6dee8d920b1d2000e6
+  version: 0.4.1
+  commit: 0919b705a5661c05310afe6dee8d920b1d2000e6
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-tarkov
+    packageVersion: 0.4.1
+    integrity: sha512-dj4PUl9ifcSi2ndiyePp1rDbD+xjGkaF7Vv8wl5f7cgNaJAt87wulBucp1tLRAxgYMrJ/x2fC/vq19d2Z0XERw==
+  npm:
+    name: dsh-theme-tarkov
+    version: 0.4.1
+    integrity: sha512-dj4PUl9ifcSi2ndiyePp1rDbD+xjGkaF7Vv8wl5f7cgNaJAt87wulBucp1tLRAxgYMrJ/x2fC/vq19d2Z0XERw==
+    repository: https://github.com/ZHIGENGNIAO258/dsh-theme-tarkov
+    gitHead: 0919b705a5661c05310afe6dee8d920b1d2000e6
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/banner.png
+  - https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/hero-banner.png
+  - https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/settings-panel.jpg
+  - https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/assets/bg/for-humanity.jpg
+  - https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/bgm-dock.png
+  - https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/assets/pet/altyn.png
+  - https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/status.png
+listScreenshot: https://raw.githubusercontent.com/ZHIGENGNIAO258/dsh-theme-tarkov/0919b705a5661c05310afe6dee8d920b1d2000e6/docs/screenshots/hero-banner.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 0919b705a5661c05310afe6dee8d920b1d2000e6
+    packageVersion: 0.4.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T12:26:51.838Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1118
+starsSnapshot: 29
+releaseUpdatedAt: 2026-11-11T06:41:11.005Z
+metadataUpdatedAt: 2026-11-11T06:41:11.005Z
+starsUpdatedAt: 2026-11-11T06:41:11.005Z
+updatedAt: 2026-11-11T06:41:11.005Z

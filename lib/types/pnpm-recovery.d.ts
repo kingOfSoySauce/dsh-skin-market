@@ -1,9 +1,17 @@
 import { type CommandResult } from './commands.ts';
-export type PnpmFailureKind = 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'no-matching-version' | 'integrity' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'command';
+import type { OperationMessageKey, OperationMessageParams } from './operation-message.ts';
+export type PnpmFailureKind = 'release-age' | 'network' | 'fetch-timeout' | 'build-approval' | 'fetch-404' | 'existing-source-unreachable' | 'no-matching-version' | 'integrity' | 'adding-to-root' | 'not-a-workspace' | 'unexpected-store' | 'lockfile-outdated' | 'lockfile-broken' | 'script-timeout' | 'command';
 export interface PnpmFailure {
     kind: PnpmFailureKind;
     message: string;
+    messageKey?: OperationMessageKey;
+    messageParams?: OperationMessageParams;
     packageName?: string;
+    /** GitHub source already recorded in this profile, when a 404 belongs to it. */
+    unreachableSource?: {
+        repository: string;
+        commit: string;
+    };
     buildKey?: string;
     buildKeys?: string[];
     recovery?: 'disable-peer-autoinstall';

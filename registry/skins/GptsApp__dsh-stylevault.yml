@@ -34,6 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/docs/screenshots/settings-1.png
   - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/docs/screenshots/settings-2.png
   - https://raw.githubusercontent.com/GptsApp/dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/docs/screenshots/settings-3.png
+listScreenshot: https://raw.githubusercontent.com/GptsApp/dsh-stylevault/b627f3a40c86cee9016d3749368479c08b5443b9/docs/screenshots/preview-dark-nord.png
 review:
   compatibility: unverified
   preview: verified
@@ -59,9 +60,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 105
 starsSnapshot: 3
+featuredRank: 105
 releaseUpdatedAt: 2026-08-23T05:33:36.035Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+metadataUpdatedAt: 2026-11-09T00:14:27.530Z
 starsUpdatedAt: 2026-10-26T01:51:43.114Z
-updatedAt: 2026-10-26T01:51:43.114Z
+updatedAt: 2026-11-09T00:14:27.530Z

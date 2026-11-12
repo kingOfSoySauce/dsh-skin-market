@@ -32,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/oceanxuikun/dsh-eva-theme-plugin/dcdf404b83b0c49ccc16a9389222ec513ae3b81d/assets/screenshot01.png
   - https://raw.githubusercontent.com/oceanxuikun/dsh-eva-theme-plugin/dcdf404b83b0c49ccc16a9389222ec513ae3b81d/assets/screenshot00.png
   - https://raw.githubusercontent.com/oceanxuikun/dsh-eva-theme-plugin/dcdf404b83b0c49ccc16a9389222ec513ae3b81d/assets/screenshot02.png
+listScreenshot: https://raw.githubusercontent.com/oceanxuikun/dsh-eva-theme-plugin/dcdf404b83b0c49ccc16a9389222ec513ae3b81d/assets/screenshot01.png
 review:
   compatibility: unverified
   preview: verified
@@ -57,9 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 89
 starsSnapshot: 4
+featuredRank: 89
 releaseUpdatedAt: 2026-08-23T05:30:31.940Z
-metadataUpdatedAt: 2026-09-08T09:45:47.382Z
+metadataUpdatedAt: 2026-11-09T00:14:15.833Z
 starsUpdatedAt: 2026-09-18T21:37:23.870Z
-updatedAt: 2026-09-18T21:37:23.870Z
+updatedAt: 2026-11-09T00:14:15.833Z

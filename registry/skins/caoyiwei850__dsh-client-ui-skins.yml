@@ -32,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/caoyiwei850/dsh-client-ui-skins/2d6d60b2f7c28312149db9507f2bd3ee8acadfdb/assets/screenshots/mint-forest-dsh.jpg
   - https://raw.githubusercontent.com/caoyiwei850/dsh-client-ui-skins/2d6d60b2f7c28312149db9507f2bd3ee8acadfdb/assets/screenshots/ocean-guardian-dsh.jpg
   - https://raw.githubusercontent.com/caoyiwei850/dsh-client-ui-skins/2d6d60b2f7c28312149db9507f2bd3ee8acadfdb/assets/screenshots/crimson-moon-dsh.jpg
+listScreenshot: https://raw.githubusercontent.com/caoyiwei850/dsh-client-ui-skins/f4bc4ef36a04751aca7404d7c0e3275dea31764f/assets/screenshots/mint-forest-dsh.jpg
 review:
   compatibility: verified
   preview: verified
@@ -58,9 +59,9 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 15
 featuredRank: 9
-starsSnapshot: 14
 releaseUpdatedAt: 2026-08-30T01:19:29.479Z
-metadataUpdatedAt: 2026-08-30T01:19:29.479Z
-starsUpdatedAt: 2026-10-20T22:15:22.268Z
-updatedAt: 2026-10-20T22:15:22.268Z
+metadataUpdatedAt: 2026-11-09T00:13:15.860Z
+starsUpdatedAt: 2026-11-04T00:04:02.187Z
+updatedAt: 2026-11-09T00:13:15.860Z

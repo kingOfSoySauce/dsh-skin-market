@@ -1,0 +1,72 @@
+id: yifffan.dsh-plugin-whale-pet
+name:
+  zh: dsh-plugin-whale-pet
+  en: dsh-plugin-whale-pet
+author: Yifffan
+description: 一只住在 DSH 窗口里的小鲸鱼。陪你工作、等你决定，也陪你好好打个盹。
+repo: https://github.com/Yifffan/dsh-plugin-whale-pet
+package: dsh-plugin-whale-pet
+rowId: whale-pet
+category: pet
+tags:
+  - motion
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Yifffan/dsh-plugin-whale-pet#6efec117faa6b677cc9e1f5305bc547352c54065
+  version: 0.2.9
+  commit: 6efec117faa6b677cc9e1f5305bc547352c54065
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-plugin-whale-pet
+    packageVersion: 0.2.9
+    integrity: sha512-dVvVl2omCJze0IFRFU80TgzoXjiyENagDMyZUVAONSgl4loEu1OzYhlojNSUMoTHoRdspvaitL4/hJtT8j2Qbg==
+  npm:
+    name: dsh-plugin-whale-pet
+    version: 0.2.9
+    integrity: sha512-dVvVl2omCJze0IFRFU80TgzoXjiyENagDMyZUVAONSgl4loEu1OzYhlojNSUMoTHoRdspvaitL4/hJtT8j2Qbg==
+    repository: https://github.com/Yifffan/dsh-plugin-whale-pet
+    gitHead: 6efec117faa6b677cc9e1f5305bc547352c54065
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Yifffan/dsh-plugin-whale-pet/6efec117faa6b677cc9e1f5305bc547352c54065/docs/images/whale-states.png
+listScreenshot: https://raw.githubusercontent.com/Yifffan/dsh-plugin-whale-pet/6efec117faa6b677cc9e1f5305bc547352c54065/docs/images/whale-states.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 6efec117faa6b677cc9e1f5305bc547352c54065
+    packageVersion: 0.2.9
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:10:29.307Z
+    findings: []
+license:
+  code: SEE LICENSE IN LICENSE
+  commercialUse: false
+starsSnapshot: 37
+featuredRank: 1116
+releaseUpdatedAt: 2026-11-10T18:11:15.809Z
+metadataUpdatedAt: 2026-11-11T00:07:28.933Z
+starsUpdatedAt: 2026-11-10T18:11:15.809Z
+updatedAt: 2026-11-11T00:07:28.933Z

@@ -15,21 +15,21 @@ modes:
   - light
   - dark
 install:
-  target: github:cpt-kenvie/EmotionPet#2cd085879f2820a00adcf03cf5b7769aae34c928
-  version: 0.1.4
-  commit: 2cd085879f2820a00adcf03cf5b7769aae34c928
+  target: github:cpt-kenvie/EmotionPet#c8406a069040ada3d347b44e5db0a263de58ee27
+  version: 0.1.6
+  commit: c8406a069040ada3d347b44e5db0a263de58ee27
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-emotion-pet
-    packageVersion: 0.1.4
-    integrity: sha512-UczNdpSfU7d5Q11oe5P2pUP+7VQK+7BzdGTslfSr4TXS9592B1WMaLPqyf3XTEWQVBYmQhdGI1OerrHEJ05q7g==
+    packageVersion: 0.1.6
+    integrity: sha512-iGok299U10OD5h8HG/Hih6XJgNEvysV7o0P0SWOl/sShqfVeAVAGX2/pby8uY3deDKj7zb1tUJlzCWPjFxtXHg==
   npm:
     name: dsh-emotion-pet
-    version: 0.1.4
-    integrity: sha512-UczNdpSfU7d5Q11oe5P2pUP+7VQK+7BzdGTslfSr4TXS9592B1WMaLPqyf3XTEWQVBYmQhdGI1OerrHEJ05q7g==
+    version: 0.1.6
+    integrity: sha512-iGok299U10OD5h8HG/Hih6XJgNEvysV7o0P0SWOl/sShqfVeAVAGX2/pby8uY3deDKj7zb1tUJlzCWPjFxtXHg==
     repository: https://github.com/cpt-kenvie/EmotionPet
-    gitHead: 2cd085879f2820a00adcf03cf5b7769aae34c928
+    gitHead: c8406a069040ada3d347b44e5db0a263de58ee27
 compatibility:
   dsh: unverified
   platform:
@@ -47,23 +47,25 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
+    installCommand: pass
+    topic: pass
   suggestions:
-    - 支持的DSH版本尚未明确声明，需在目标版本中确认效果。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 2cd085879f2820a00adcf03cf5b7769aae34c928
-    packageVersion: 0.1.4
+    commit: c8406a069040ada3d347b44e5db0a263de58ee27
+    packageVersion: 0.1.6
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:31:47.112Z
+    checkedAt: 2026-11-02T05:58:05.902Z
     findings: []
 license:
-  code: Learning & Exchange License (Non-Commercial)
+  code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 免费非商业运行、修改及分享须注明出处并保留版权和许可；商业集成、推广或授权须另获许可。
-featuredRank: 997
 starsSnapshot: 3
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+featuredRank: 997
+releaseUpdatedAt: 2026-11-03T01:36:56.745Z
+metadataUpdatedAt: 2026-11-03T01:36:56.745Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-03T01:36:56.745Z

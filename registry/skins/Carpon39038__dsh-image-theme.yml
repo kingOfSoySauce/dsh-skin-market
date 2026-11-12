@@ -27,21 +27,22 @@ compatibility:
   dsh: 0.1.2-rc.1
   platform:
     - web
-screenshots: []
+screenshots:
+  - https://raw.githubusercontent.com/Carpon39038/dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/Carpon39038/dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/docs/preview.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - README 的 docs/preview.png 与 playground 演示界面一致，尚不能作为 DSH Web 实机截图；请补充该固定版本在 DSH 0.1.2-rc.1 中运行的截图。
+  suggestions: []
   scan:
     commit: 25c70fcd31b0cf36f8a0ff57b0413223daaf5d27
     packageVersion: 0.1.1
@@ -54,13 +55,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 60
 starsSnapshot: 1
-releaseUpdatedAt: 2026-09-07T21:58:29.457Z
-metadataUpdatedAt: 2026-10-30T03:53:50.461Z
-starsUpdatedAt: 2026-09-12T21:25:05.195Z
-updatedAt: 2026-10-30T03:53:50.461Z
 marketScreenshots:
   - skin-screenshots/Carpon39038__dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/home.png
   - skin-screenshots/Carpon39038__dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/conversation.png
   - skin-screenshots/Carpon39038__dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/settings.png
+featuredRank: 60
+releaseUpdatedAt: 2026-09-07T21:58:29.457Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-09-12T21:25:05.195Z
+updatedAt: 2026-11-10T00:42:47.982Z

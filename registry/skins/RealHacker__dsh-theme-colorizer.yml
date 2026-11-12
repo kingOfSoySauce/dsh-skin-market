@@ -29,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/RealHacker/dsh-theme-colorizer/bef973bff46bb11499a7c212ccaa384a2ff60962/asset/dsh-color-theme.jpeg
   - https://raw.githubusercontent.com/RealHacker/dsh-theme-colorizer/7c4152c1956ff87d93d74f928f1cf3a9e60101ca/asset/dsh-color-theme.jpeg
+listScreenshot: https://raw.githubusercontent.com/RealHacker/dsh-theme-colorizer/bef973bff46bb11499a7c212ccaa384a2ff60962/asset/dsh-color-theme.jpeg
 review:
   compatibility: unverified
   preview: verified
@@ -54,9 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 117
 starsSnapshot: 2
+featuredRank: 117
 releaseUpdatedAt: 2026-08-23T05:30:35.442Z
-metadataUpdatedAt: 2026-08-23T15:30:01.389Z
+metadataUpdatedAt: 2026-11-09T00:15:17.729Z
 starsUpdatedAt: 2026-09-09T21:39:39.421Z
-updatedAt: 2026-09-09T21:39:39.421Z
+updatedAt: 2026-11-09T00:15:17.729Z

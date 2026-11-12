@@ -28,10 +28,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -59,9 +55,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 63
 starsSnapshot: 2
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/dlpufan__dsh-theme-cyberpunk/0bddb1507514e758f1f63668df2b0c90d8d20102/settings.png
+featuredRank: 63
 releaseUpdatedAt: 2026-08-23T05:30:11.816Z
-metadataUpdatedAt: 2026-08-23T05:30:11.816Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-26T01:51:41.516Z
-updatedAt: 2026-10-26T01:51:41.516Z
+updatedAt: 2026-11-10T00:42:47.982Z

@@ -14,23 +14,32 @@ modes:
   - light
   - dark
 install:
-  target: github:AssassinVIX/fairy-zzz-plugin#0c72cb22736a62fbcc85dedb62149b57f2e502af
-  version: 1.0.1
-  commit: 0c72cb22736a62fbcc85dedb62149b57f2e502af
+  target: github:AssassinVIX/fairy-zzz-plugin#41b3b5bfe3202a72540403d009e3cae944f8413b
+  version: 1.0.3
+  commit: 41b3b5bfe3202a72540403d009e3cae944f8413b
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-fairy-zzz
+    packageVersion: 1.0.3
+    integrity: sha512-w4b1RbGEs9OzfquJ36i1fEkrQ3esxhg1DUc8sQYZL9hpCQX+7YUuFd/d+vwkCbVXRpuraA6r8wG440Mv99XUEg==
+  npm:
+    name: dsh-fairy-zzz
+    version: 1.0.3
+    integrity: sha512-w4b1RbGEs9OzfquJ36i1fEkrQ3esxhg1DUc8sQYZL9hpCQX+7YUuFd/d+vwkCbVXRpuraA6r8wG440Mv99XUEg==
+    repository: https://github.com/AssassinVIX/fairy-zzz-plugin
+    gitHead: 41b3b5bfe3202a72540403d009e3cae944f8413b
 compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.png
-  - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/conversation.png
-  - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/settings.png
 screenshots:
   - https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/01-boot.png
   - https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/02-greet.png
   - https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/03-eye-states.png
   - https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/screenshots/04-settings.png
   - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.gif
+listScreenshot: skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -46,12 +55,23 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 41b3b5bfe3202a72540403d009e3cae944f8413b
+    packageVersion: 1.0.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-09T07:12:57.624Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 30
+marketScreenshots:
+  - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/home.png
+  - skin-screenshots/AssassinVIX__fairy-zzz-plugin/0c72cb22736a62fbcc85dedb62149b57f2e502af/conversation.png
 featuredRank: 1000
-starsSnapshot: 5
-releaseUpdatedAt: 2026-10-28T01:36:01.943Z
-metadataUpdatedAt: 2026-10-28T01:36:01.943Z
-starsUpdatedAt: 2026-10-28T01:36:01.943Z
-updatedAt: 2026-10-28T01:36:01.943Z
+releaseUpdatedAt: 2026-11-09T07:12:58.715Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsUpdatedAt: 2026-11-09T07:12:58.715Z
+updatedAt: 2026-11-10T00:42:47.982Z

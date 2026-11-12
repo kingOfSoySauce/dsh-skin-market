@@ -28,6 +28,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/le-soleil-se-couche/dsh-skin-claude-code/8590170e1c37eca3176469ade61998fd3d5088d4/docs/codex-config.png
   - https://raw.githubusercontent.com/le-soleil-se-couche/dsh-skin-claude-code/8590170e1c37eca3176469ade61998fd3d5088d4/preview/light.png
+listScreenshot: https://raw.githubusercontent.com/le-soleil-se-couche/dsh-skin-claude-code/8590170e1c37eca3176469ade61998fd3d5088d4/docs/codex-config.png
 review:
   compatibility: unverified
   preview: verified
@@ -53,9 +54,9 @@ health:
 license:
   code: BSD-3-Clause
   commercialUse: true
-featuredRank: 50
 starsSnapshot: 4
+featuredRank: 50
 releaseUpdatedAt: 2026-08-23T05:29:04.597Z
-metadataUpdatedAt: 2026-08-23T05:29:04.597Z
+metadataUpdatedAt: 2026-11-09T00:14:12.677Z
 starsUpdatedAt: 2026-09-18T21:37:23.225Z
-updatedAt: 2026-09-18T21:37:23.225Z
+updatedAt: 2026-11-09T00:14:12.677Z

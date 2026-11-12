@@ -38,6 +38,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/ossFrankFrank/dsh-dracula-theme/b8c7e809043296485ebff870a4c705e9139b3d5f/assets/preview.png
   - https://raw.githubusercontent.com/ossFrankFrank/dsh-dracula-theme/684d09a59a62e4180ac087918cb4f6d5aeffef9f/assets/preview.png
+listScreenshot: https://raw.githubusercontent.com/ossFrankFrank/dsh-dracula-theme/28e4621866680a241467fb7249bc07231afb8459/assets/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -64,9 +65,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 186
 starsSnapshot: 2
+featuredRank: 186
 releaseUpdatedAt: 2026-10-18T09:46:40.073Z
-metadataUpdatedAt: 2026-09-08T21:47:42.220Z
+metadataUpdatedAt: 2026-11-09T00:15:16.146Z
 starsUpdatedAt: 2026-09-09T21:39:38.096Z
-updatedAt: 2026-10-18T09:46:40.073Z
+updatedAt: 2026-11-09T00:15:16.146Z

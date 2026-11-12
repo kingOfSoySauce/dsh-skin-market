@@ -15,19 +15,25 @@ modes:
   - light
   - dark
 install:
-  target: github:yannicksong0106/dsh-550c-boot#df7d202f62088897f476961ef87f408fb525b1ac
+  target: github:yannicksong0106/dsh-550c-boot#c4715ef6df148d5212ebff7584217c6485c2e733
   version: 0.5.2
-  commit: df7d202f62088897f476961ef87f408fb525b1ac
+  commit: c4715ef6df148d5212ebff7584217c6485c2e733
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-550c-boot
+    version: 0.5.2
+    integrity: sha512-I94j2pV4ww/vilNi7kklgL71IGxkLTY1sH9opLI8k1dulZo+VTAZ3ow6iNhjsQXyewlUzNsLR5fHR8oueahMsQ==
+    repository: https://github.com/yannicksong0106/dsh-550c-boot
+    gitHead: c4715ef6df148d5212ebff7584217c6485c2e733
 compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
     - web
 screenshots:
   - skin-screenshots/yannicksong0106__dsh-550c-boot/df7d202f62088897f476961ef87f408fb525b1ac/home.gif
-  - https://raw.githubusercontent.com/yannicksong0106/dsh-550c-boot/df7d202f62088897f476961ef87f408fb525b1ac/docs/preview-full.png
+  - skin-screenshots/yannicksong0106__dsh-550c-boot/df7d202f62088897f476961ef87f408fb525b1ac/preset-ueg.gif
 listScreenshot: skin-screenshots/yannicksong0106__dsh-550c-boot/df7d202f62088897f476961ef87f408fb525b1ac/home.gif
 review:
   compatibility: unverified
@@ -37,23 +43,27 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
-  suggestions: []
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: df7d202f62088897f476961ef87f408fb525b1ac
+    commit: c4715ef6df148d5212ebff7584217c6485c2e733
     packageVersion: 0.5.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:30:57.644Z
+    checkedAt: 2026-11-09T00:12:35.566Z
     findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 233
 featuredRank: 817
-starsSnapshot: 211
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-27T06:55:51.000Z
-starsUpdatedAt: 2026-11-01T22:47:15.931Z
-updatedAt: 2026-11-01T22:47:15.931Z
+releaseUpdatedAt: 2026-11-09T00:12:36.551Z
+metadataUpdatedAt: 2026-11-09T00:12:36.551Z
+starsUpdatedAt: 2026-11-11T00:07:28.933Z
+updatedAt: 2026-11-11T00:07:28.933Z

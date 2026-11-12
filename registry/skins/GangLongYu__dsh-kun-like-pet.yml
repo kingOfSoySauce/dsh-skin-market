@@ -24,10 +24,6 @@ compatibility:
   dsh: ">=0.2.0-rc.2 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/home.png
-  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/conversation.png
-  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/settings.png
 screenshots:
   - https://raw.githubusercontent.com/GangLongYu/dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/docs/screenshot-working.png
   - https://raw.githubusercontent.com/GangLongYu/dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/docs/screenshot-wave.png
@@ -58,9 +54,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 998
 starsSnapshot: 2
+marketScreenshots:
+  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/home.png
+  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/conversation.png
+  - skin-screenshots/GangLongYu__dsh-kun-like-pet/d0d9718a440eb4f1f43886be655640f359aef35e/settings.png
+featuredRank: 998
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-26T01:51:43.102Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:51:43.102Z
+updatedAt: 2026-11-10T00:42:47.982Z

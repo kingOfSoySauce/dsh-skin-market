@@ -23,10 +23,6 @@ compatibility:
   dsh: 0.1.2-rc.1
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/home.png
-  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/conversation.png
-  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -54,9 +50,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 998
 starsSnapshot: 2
+marketScreenshots:
+  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/home.png
+  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/conversation.png
+  - skin-screenshots/mozhuanzuojing__dsh-liangwengu/033aee2e90274006b0d00e1640caf96df51b9901/settings.png
+featuredRank: 998
 releaseUpdatedAt: 2026-10-25T19:54:21.217Z
-metadataUpdatedAt: 2026-10-26T01:51:48.731Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-26T01:51:48.731Z
+updatedAt: 2026-11-10T00:42:47.982Z

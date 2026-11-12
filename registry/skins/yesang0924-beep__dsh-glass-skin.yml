@@ -29,7 +29,7 @@ screenshots:
   - https://raw.githubusercontent.com/yesang0924-beep/dsh-glass-skin/88732342772b82a875333c0a1d298df838640220/docs/screenshots/hero.jpg
 listScreenshot: https://raw.githubusercontent.com/yesang0924-beep/dsh-glass-skin/88732342772b82a875333c0a1d298df838640220/docs/screenshots/hero.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -38,7 +38,10 @@ health:
     readmeScreenshots: pass
     compatibility: pass
     installation: pass
-  suggestions: []
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: 88732342772b82a875333c0a1d298df838640220
     packageVersion: 6.0.2
@@ -51,9 +54,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 999
 starsSnapshot: 1
+featuredRank: 999
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-10-25T18:20:01.273Z
+metadataUpdatedAt: 2026-11-09T00:16:59.219Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-25T18:20:01.273Z
+updatedAt: 2026-11-09T00:16:59.219Z

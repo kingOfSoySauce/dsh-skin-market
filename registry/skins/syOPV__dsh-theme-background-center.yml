@@ -29,6 +29,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/syOPV/dsh-theme-background-center/06ff231740697a3f3119be72f5f715677bbbee2c/assets/screenshot.jpg
+listScreenshot: https://raw.githubusercontent.com/syOPV/dsh-theme-background-center/06ff231740697a3f3119be72f5f715677bbbee2c/assets/screenshot.jpg
 review:
   compatibility: verified
   preview: verified
@@ -54,9 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 93
 starsSnapshot: 1
+featuredRank: 93
 releaseUpdatedAt: 2026-08-23T05:32:25.251Z
-metadataUpdatedAt: 2026-08-23T05:32:25.251Z
+metadataUpdatedAt: 2026-11-09T00:16:50.325Z
 starsUpdatedAt: 2026-09-09T21:40:33.836Z
-updatedAt: 2026-09-09T21:40:33.836Z
+updatedAt: 2026-11-09T00:16:50.325Z

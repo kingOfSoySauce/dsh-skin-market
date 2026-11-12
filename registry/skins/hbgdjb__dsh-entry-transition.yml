@@ -24,10 +24,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/hbgdjb__dsh-entry-transition/96f0a90d794fbbf443d2b7d5036263f6399b1d01/home.png
-  - skin-screenshots/hbgdjb__dsh-entry-transition/96f0a90d794fbbf443d2b7d5036263f6399b1d01/conversation.png
-  - skin-screenshots/hbgdjb__dsh-entry-transition/96f0a90d794fbbf443d2b7d5036263f6399b1d01/settings.png
 screenshots:
   - skin-screenshots/hbgdjb__dsh-entry-transition/96f0a90d794fbbf443d2b7d5036263f6399b1d01/home.gif
 listScreenshot: skin-screenshots/hbgdjb__dsh-entry-transition/96f0a90d794fbbf443d2b7d5036263f6399b1d01/home.gif
@@ -58,9 +54,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/hbgdjb__dsh-entry-transition/96f0a90d794fbbf443d2b7d5036263f6399b1d01/home.png
+  - skin-screenshots/hbgdjb__dsh-entry-transition/96f0a90d794fbbf443d2b7d5036263f6399b1d01/conversation.png
+  - skin-screenshots/hbgdjb__dsh-entry-transition/96f0a90d794fbbf443d2b7d5036263f6399b1d01/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-10-27T06:55:51.000Z
+metadataUpdatedAt: 2026-11-10T00:42:47.982Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-27T06:55:51.000Z
+updatedAt: 2026-11-10T00:42:47.982Z

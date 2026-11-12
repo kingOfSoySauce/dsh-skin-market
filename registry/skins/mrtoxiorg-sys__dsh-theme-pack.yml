@@ -1,0 +1,65 @@
+id: mrtoxiorg-sys.dsh-theme-pack
+name:
+  zh: dsh-theme-pack
+  en: dsh-theme-pack
+author: mrtoxiorg-sys
+description: "19 color themes for the DeepSeek Harness web GUI: light+dark palettes, WCAG-checked, picker in Settings"
+repo: https://github.com/mrtoxiorg-sys/dsh-theme-pack
+package: "@local/dsh-theme-pack"
+rowId: theme-pack
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:mrtoxiorg-sys/dsh-theme-pack#baec234992d207b80241dfe4105598d8c8536fb3
+  version: 1.2.6
+  commit: baec234992d207b80241dfe4105598d8c8536fb3
+  desktop:
+    mode: manual-only
+    reason: 当前仅完成 DSH Web 隔离运行验收；Desktop 安装路径尚未单独核验。
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/mrtoxiorg-sys/dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/mrtoxiorg-sys/dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/docs/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: baec234992d207b80241dfe4105598d8c8536fb3
+    packageVersion: 1.2.6
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-05T00:24:03.025Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/mrtoxiorg-sys__dsh-theme-pack/baec234992d207b80241dfe4105598d8c8536fb3/home.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-03T19:20:00+08:00
+metadataUpdatedAt: 2026-11-11T13:17:15.192Z
+starsUpdatedAt: 2026-11-03T19:20:00+08:00
+updatedAt: 2026-11-11T13:17:15.192Z

@@ -30,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/WolfGenerals/ncm-player/f40f982715128d2f4d7928012b6cebf86af4d40e/doc/screenshot-1.png
   - https://raw.githubusercontent.com/WolfGenerals/ncm-player/f40f982715128d2f4d7928012b6cebf86af4d40e/doc/screenshot-2.png
+listScreenshot: https://raw.githubusercontent.com/WolfGenerals/ncm-player/f40f982715128d2f4d7928012b6cebf86af4d40e/doc/screenshot-1.png
 review:
   compatibility: verified
   preview: verified
@@ -55,10 +56,9 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 5
 featuredRank: 1051
-starsSnapshot: 4
 releaseUpdatedAt: 2026-09-07T21:58:26.861Z
-metadataUpdatedAt: 2026-09-08T03:10:45.087Z
-starsUpdatedAt: 2026-10-18T09:46:06.904Z
-updatedAt: 2026-10-18T09:46:06.904Z
-listScreenshot: https://raw.githubusercontent.com/WolfGenerals/ncm-player/f40f982715128d2f4d7928012b6cebf86af4d40e/doc/screenshot-1.png
+metadataUpdatedAt: 2026-11-09T00:14:04.583Z
+starsUpdatedAt: 2026-11-07T05:33:52.674Z
+updatedAt: 2026-11-09T00:14:04.583Z

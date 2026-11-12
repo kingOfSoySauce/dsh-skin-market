@@ -27,6 +27,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/sakuraaa667/dsh-wallpaper-engine/fba60078781763d80bb5b84b8f907ef98e3a632b/assets/screenshot.jpg
+listScreenshot: https://raw.githubusercontent.com/sakuraaa667/dsh-wallpaper-engine/fba60078781763d80bb5b84b8f907ef98e3a632b/assets/screenshot.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -52,9 +53,9 @@ health:
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 14
 featuredRank: 1007
-starsSnapshot: 13
 releaseUpdatedAt: 2026-08-23T05:28:35.729Z
-metadataUpdatedAt: 2026-08-23T05:28:35.729Z
-starsUpdatedAt: 2026-10-30T03:53:28.383Z
-updatedAt: 2026-10-30T03:53:28.383Z
+metadataUpdatedAt: 2026-11-09T00:13:17.782Z
+starsUpdatedAt: 2026-11-08T00:17:42.599Z
+updatedAt: 2026-11-09T00:13:17.782Z

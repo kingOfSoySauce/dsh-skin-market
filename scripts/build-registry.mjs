@@ -8,13 +8,14 @@ import { mediaForSources } from './media.mjs'
 import { isThinSubmission, hydrateSkinSubmission, thinSubmissionHint } from './hydrate-submission.mjs'
 import { resolveScreenshotList, resolveScreenshotRef } from './screenshot-refs.mjs'
 import { buildCatalogWire } from './catalog-wire.mjs'
-import { buildHeatMap, dayNumber } from './heat.mjs'
+import { loadContract, schemaErrorHint } from './submission-contract.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const checkOnly = process.argv.includes('--check')
 const schema = JSON.parse(await readFile(join(root, 'registry/skin.schema.json'), 'utf8'))
 const ajv = new Ajv({ allErrors: true, strict: false, validateFormats: false })
 const validate = ajv.compile(schema)
+const submissionContract = await loadContract()
 const sourceDir = join(root, 'registry/skins')
 const files = (await readdir(sourceDir)).filter(file => file.endsWith('.yml')).sort()
 const skins = []
@@ -42,7 +43,9 @@ for (const file of files) {
   if (!validate(skin)) {
     const details = (validate.errors ?? []).map(error => `${error.instancePath || '/'} ${error.message}`).join('; ')
     const hint = thinSubmissionHint(skin)
-    throw new Error(hint ? `${file}: ${details}; ${hint}` : `${file}: ${details}`)
+    const contractHint = schemaErrorHint(submissionContract, validate.errors ?? [])
+    const parts = [details, hint, contractHint].filter(Boolean)
+    throw new Error(`${file}: ${parts.join('; ')}`)
   }
   if (!isVersionRange(skin.compatibility.dsh)) throw new Error(`${file}: compatibility.dsh is not a supported semver range`)
   // Surface stale review data to maintainers without removing the entry or
@@ -88,11 +91,11 @@ for (const file of files) {
   if (skin.listScreenshot) skin.listScreenshot = resolveScreenshotRef(skin.listScreenshot)
   const marketScreenshots = skin.marketScreenshots ?? []
   const screenshots = [...new Set(resolveScreenshotList(skin.screenshots))]
-  const display = displayScreenshots(marketScreenshots, screenshots, skin.subpath)
+  const display = displayScreenshots(marketScreenshots, screenshots, skin.subpath, skin.listScreenshot, skin.review?.preview)
   if (display.length === 0) console.warn(`${file}: no displayable screenshot; keeping the entry without media`)
   const configuredListScreenshot = skin.listScreenshot
   const listScreenshot = configuredListScreenshot !== undefined
-    ? (display.includes(configuredListScreenshot) ? configuredListScreenshot : display[0] ?? configuredListScreenshot)
+    ? (display.includes(configuredListScreenshot) ? configuredListScreenshot : display[0])
     : marketScreenshots.length > 0 ? display[0] : undefined
   const media = mediaForSources(display, listScreenshot ?? display[0])
   skins.push({ ...skin, ...(listScreenshot ? { listScreenshot } : {}), screenshots, ...(media ? { media } : {}) })
@@ -120,6 +123,27 @@ try {
   previous = JSON.parse(await readFile(catalogPath, 'utf8'))
 } catch { /* first build */ }
 
+// The heat step records a fresh star reading into the catalog after the
+// registry was hydrated. A rebuild must not roll that back to an older
+// snapshot, or the card and the detail chart disagree for a day.
+if (previous?.skins !== undefined) {
+  const fresher = new Map()
+  for (const entry of Array.isArray(previous.skins) ? previous.skins : []) {
+    if (typeof entry?.id !== 'string') continue
+    const at = Date.parse(entry.starsUpdatedAt)
+    if (!Number.isFinite(at) || !Number.isInteger(entry.starsSnapshot)) continue
+    fresher.set(entry.id, { starsSnapshot: entry.starsSnapshot, starsUpdatedAt: entry.starsUpdatedAt, at })
+  }
+  for (const skin of skins) {
+    const candidate = fresher.get(skin.id)
+    if (candidate === undefined) continue
+    const own = Date.parse(skin.starsUpdatedAt)
+    if (Number.isFinite(own) && candidate.at <= own) continue
+    skin.starsSnapshot = candidate.starsSnapshot
+    skin.starsUpdatedAt = candidate.starsUpdatedAt
+  }
+}
+
 async function optionalJson(relativePath) {
   try {
     return JSON.parse(await readFile(join(root, relativePath), 'utf8'))
@@ -129,15 +153,15 @@ async function optionalJson(relativePath) {
   }
 }
 
-// Momentum ranks recent movement instead of lifetime stars. Both inputs are
-// generated files: star samples are recorded daily, repository activity is
-// refreshed by the private nightly. A missing file simply omits the signal.
-const [starHistory, repoActivity] = await Promise.all([
-  optionalJson('data/star-history.json'),
-  optionalJson('data/repo-activity.json'),
-])
-const heat = buildHeatMap({ skins, history: starHistory, activity: repoActivity, today: dayNumber(new Date()) })
+const displayCopy = await optionalJson('data/catalog-copy.json')
+// Heat is computed in the private ops repo. This build only keeps scores that
+// already passed the old client wire shape, so a public registry run cannot
+// put the old lifetime average back on top.
+const known = new Set(skins.map(skin => skin.id))
+const heat = previous?.heat && typeof previous.heat === 'object'
+  ? Object.fromEntries(Object.entries(previous.heat).filter(([id]) => known.has(id)))
+  : undefined
 
-const catalog = buildCatalogWire(skins, { previous, heat })
+const catalog = buildCatalogWire(skins, { previous, heat, displayCopy })
 if (!checkOnly) await writeFile(catalogPath, `${JSON.stringify(catalog, null, 2)}\n`)
 console.log(`validated ${skins.length} skins${checkOnly ? ' (catalog not written)' : ''}`)
