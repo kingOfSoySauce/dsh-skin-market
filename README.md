@@ -25,7 +25,7 @@
 
 兼容 DSH Web `>=0.1.0-rc.6` 与官方 Desktop `>=0.2.0-rc.1`。
 
-> 更新失败时，可先卸载 `dsh-skin-market`，再按上面的安装方法重装；如果卸载或重装仍失败，再查看错误提示并复制诊断日志。
+> 更新失败时先按弹窗原因处理，不要先卸载：官方 Desktop 卸载市场会先摘掉正在运行的插件。Web 可直接重装；Desktop 到「插件 → 添加插件」重新添加 `dsh-skin-market@latest`。重装仍失败时再复制诊断日志。
 
 ### 方法 1：命令
 
@@ -116,6 +116,17 @@ Agent 先只读确认当前 Desktop 版本和其他已启用的皮肤；发现�
 | 操作结果正在确认 | 等待市场核对宿主结果，不要再次点击安装、启用或卸载 |
 | 安装/更新/卸载被另一个已安装插件的失效仓库挡住 | 按失败弹窗里默认折叠的三步处理：手动去掉该依赖、退出 DSH 后执行修复命令，或把提示词交给当前 DSH 以外的 Agent。不要在市场里卸载那个失效插件 |
 | 页面因皮肤冲突无法操作 | 停止对应的 DSH Web 进程后，使用下面的 Web 重置命令 |
+| 点击更新后市场从插件列表消失 | 旧版的 Desktop 自更新会先卸载市场再补装，补装可能没有执行。到「插件 → 添加插件」重新安装 `dsh-skin-market@latest` 并启用 |
+
+### 更新后市场从插件列表消失
+
+旧版市场在官方 Desktop 点击「更新」时会先卸载自己，再执行补装；卸载已经把市场从正在运行的组合里摘掉，补装那一步不会执行，profile 里就只剩一个没有市场的状态。
+
+1. 不要再点市场里的「更新」，那会重复同一步。
+2. 打开 DSH 的「插件 → 添加插件」，输入 `dsh-skin-market@latest`，安装并按提示启用。
+3. 应用内安装被拒绝时，完全退出 DSH（关窗口不算），在 profile 目录（通常是 `~/.dsh/profiles/desktop`，Windows 为 `%USERPROFILE%\.dsh\profiles\desktop`）执行 `pnpm add dsh-skin-market@latest`，确认 `package.json` 的 `dependencies` 和 `dsh.profile.bundles` 都包含 `dsh-skin-market`，再重新打开。
+
+修复后的版本改用 DSH 发布的宿主 pnpm 就地覆盖，不再卸载市场；更新完成后仍需重启 DSH 才会加载新代码。
 
 <a id="release-wait"></a>
 ### 安装被新包保护阻止

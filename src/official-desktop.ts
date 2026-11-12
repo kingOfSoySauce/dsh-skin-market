@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto'
-import type { CommandOptions, CommandResult, PluginInstallRequest, PluginRunner } from './commands.ts'
+import { hostPnpmRunner, type CommandOptions, type CommandResult, type HostPnpmInvocation, type PluginInstallRequest, type PluginRunner } from './commands.ts'
 import { compareVersions } from './semver.ts'
 import { officialOperationFailure } from './official-failure.ts'
 import { normalizeRegistryBase, registryPlanFromSnapshot } from './registry-plan.ts'
@@ -298,6 +298,12 @@ export function officialDesktopRunner(
   getManager: () => OfficialPluginManagerLike | undefined,
   runtime?: DshRuntime,
   events?: OfficialManagementEvents,
+  options?: {
+    /** The profile this runner mutates; the host pnpm runs with it as cwd. */
+    profileDir?: string
+    /** Launcher-published pnpm, read lazily because it may appear after mount. */
+    packageManager?: () => HostPnpmInvocation | undefined
+  },
 ): PluginRunner {
   const version = runtime?.version?.trim().replace(/\+.*/, '') ?? null
   const coreVersion = version === null ? runtime === undefined : recognizedHostVersion(version)
@@ -424,5 +430,8 @@ export function officialDesktopRunner(
     },
   }
   runner.registryPlan = async () => runner.management?.registries?.()
+  if (options?.packageManager !== undefined && options.profileDir !== undefined) {
+    runner.hostPnpm = hostPnpmRunner(options.packageManager, options.profileDir)
+  }
   return runner
 }

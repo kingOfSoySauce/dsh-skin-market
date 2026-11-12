@@ -42,12 +42,26 @@ export interface PluginInstallRequest {
   saveExact?: boolean
 }
 
+/** The launcher-published pnpm executable and environment for one profile. */
+export interface HostPnpmInvocation {
+  command: string
+  args?: readonly string[]
+  env?: Readonly<Record<string, string>>
+}
+
 export interface PluginRunner {
   (profile: string, args: readonly string[], options?: CommandOptions): Promise<CommandResult>
   hostKind?: MarketHostKind
   ensurePnpm?: (options?: CommandOptions) => Promise<void>
   installPlugin?: (profile: string, request: PluginInstallRequest, options?: CommandOptions) => Promise<CommandResult>
   management?: OfficialManagementAdapter
+  /**
+   * Run the host's own pnpm against the profile without going through the
+   * plugin manager. Official Desktop refuses to re-add an installed package
+   * (HMR), and its managed remove-then-install unloads this plugin before the
+   * install step can run, so a self-update has to overlay the package here.
+   */
+  hostPnpm?: (args: readonly string[], options?: CommandOptions) => Promise<CommandResult>
   /** Ordered registry bases supplied by the host for package operations. */
   registryPlan?: RegistryPlanProvider
 }
@@ -442,6 +456,35 @@ export function createPluginCliRunner(registryPlan?: RegistryPlanProvider): Plug
   runner.ensurePnpm = ensurePnpmAvailable
   if (registryPlan !== undefined) runner.registryPlan = registryPlan
   return runner
+}
+
+/**
+ * Run the host-published pnpm in a profile directory.
+ *
+ * The executable is Electron (or the app's own node) plus a pnpm entry, and
+ * its environment is the one the host uses for its own package operations, so
+ * it is passed through as published. The callback is read per call because a
+ * launcher may publish the invocation after this plugin mounts.
+ */
+export function hostPnpmRunner(
+  invocation: () => HostPnpmInvocation | undefined,
+  cwd: string,
+): NonNullable<PluginRunner['hostPnpm']> {
+  return (args, options) => {
+    const host = invocation()
+    if (host === undefined || host.command.trim() === '') {
+      return Promise.resolve({ exitCode: null, stdout: '', stderr: '当前 DSH 未提供宿主 pnpm', timedOut: false })
+    }
+    return runProcess({
+      file: host.command,
+      argv: [...(host.args ?? []), ...args],
+      cwd,
+      viaShell: process.platform === 'win32' && /\.cmd$/i.test(host.command),
+    }, PLUGIN_COMMAND_TIMEOUT_MS, {
+      ...options,
+      env: { ...host.env, ...options?.env },
+    })
+  }
 }
 
 export const runPluginCli: PluginRunner = createPluginCliRunner()

@@ -1,5 +1,5 @@
 import type { Context } from '@deepseek-ai/cordis'
-import { createPluginCliRunner, desktopRunner, type DesktopPnpmLike } from './commands.ts'
+import { createPluginCliRunner, desktopRunner, type DesktopPnpmLike, type HostPnpmInvocation } from './commands.ts'
 import { normalizeOfficialRegistryPlan, officialDesktopRunner, type OfficialPluginManagerLike, type OfficialManagementEvents } from './official-desktop.ts'
 import { resolveProfileDir } from './profile.ts'
 import { mountRoutes, type SkinMarketHost } from './routes.ts'
@@ -11,7 +11,7 @@ export const name = 'dsh-skin-market'
 export interface Config { profile?: string }
 
 interface DesktopProfilesLike { current: { name: string; dir: string } }
-interface ProfileContextLike { name?: unknown; dir?: unknown; home?: unknown; patchPath?: unknown; overlays?: unknown }
+interface ProfileContextLike { name?: unknown; dir?: unknown; home?: unknown; patchPath?: unknown; overlays?: unknown; packageManager?: unknown }
 interface EffectHost extends SkinMarketHost {
   effect(callback: () => (() => void | Promise<void>), label: string): void
 }
@@ -23,6 +23,29 @@ interface LocalServiceReader {
 function argvProfile(): string | undefined {
   const index = process.argv.indexOf('--profile')
   return index >= 0 && process.argv[index + 1] !== undefined ? process.argv[index + 1] : undefined
+}
+
+/**
+ * The pnpm the launcher published for this profile, if any.
+ *
+ * Official Desktop runs package operations through its bundled pnpm under
+ * Electron's node; that invocation is the only thing that can replace the
+ * market's own files without the plugin manager unloading it first. Every
+ * field is checked, and one bad field discards the whole invocation rather
+ * than half of it.
+ */
+function hostPnpmInvocationOf(context: ProfileContextLike | undefined): HostPnpmInvocation | undefined {
+  const published = context?.packageManager
+  if (published === null || typeof published !== 'object' || Array.isArray(published)) return undefined
+  const { command, args, env } = published as { command?: unknown; args?: unknown; env?: unknown }
+  if (typeof command !== 'string' || command.trim() === '') return undefined
+  if (args !== undefined && (!Array.isArray(args) || args.some(arg => typeof arg !== 'string'))) return undefined
+  if (env !== undefined && (env === null || typeof env !== 'object' || Array.isArray(env))) return undefined
+  const merged: Record<string, string> = {}
+  for (const [key, value] of Object.entries((env ?? {}) as Record<string, unknown>)) {
+    if (typeof value === 'string') merged[key] = value
+  }
+  return { command: command.trim(), args: [...(args ?? []) as string[]], env: merged }
 }
 
 export function apply(ctx: Context, config?: Config): void {
@@ -72,7 +95,10 @@ export function apply(ctx: Context, config?: Config): void {
       // after startup. Never fall back to the Web profile in that case: the
       // canonical Desktop directory is the explicit profile name's directory.
       const profileDir = contextDir !== '' ? contextDir : resolveProfileDir(profile)
-      const runner = officialDesktopRunner(() => (readService('pluginManager') as OfficialPluginManagerLike | undefined), runtime, hostContext as unknown as OfficialManagementEvents)
+      const runner = officialDesktopRunner(() => (readService('pluginManager') as OfficialPluginManagerLike | undefined), runtime, hostContext as unknown as OfficialManagementEvents, {
+        profileDir,
+        packageManager: () => hostPnpmInvocationOf(profileContext),
+      })
       host.effect(
         () => mountRoutes(host, { profile, profileDir, runner, hostKind: 'desktop', runtime, agents: undefined, connection, configurationOverride }),
         'dsh-skin-market: official Desktop routes',

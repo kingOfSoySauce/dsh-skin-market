@@ -147,58 +147,50 @@ describe('market self update', () => {
     expect(runner).not.toHaveBeenCalled()
   })
 
-  it('restores the exact old market after an already-installed replacement is refused by release-age', async () => {
+  it('overlays an already installed market with the host pnpm and never removes it', async () => {
     const profileDir = installedProfile('0.1.59')
+    const verbs: string[] = []
     const runner = vi.fn(async (_profile: string, args: readonly string[]) => {
-      if (runner.mock.calls.length === 1) return { ...releaseAgeFailure(), management: { application: 'failed' as const, error: { code: 'already-installed' } } }
-      if (args[0] === 'remove') {
-        rmSync(join(profileDir, 'node_modules', MARKET_NPM_PACKAGE), { recursive: true, force: true })
-        const manifest = JSON.parse(readFileSync(join(profileDir, 'package.json'), 'utf8'))
-        delete manifest.dependencies[MARKET_NPM_PACKAGE]
-        writeFileSync(join(profileDir, 'package.json'), JSON.stringify(manifest))
-        return { exitCode: 0, stdout: '', stderr: '', timedOut: false, management: { application: 'applied' as const } }
-      }
-      if (runner.mock.calls.length === 3) return releaseAgeFailure()
-      materialize(profileDir, '0.1.59')
-      return { exitCode: 0, stdout: '', stderr: '', timedOut: false, management: { application: 'restart-required' as const } }
+      verbs.push(args[0] ?? '')
+      if (verbs.length === 1) return { ...releaseAgeFailure(), management: { application: 'failed' as const, error: { code: 'already-installed' } } }
+      return { exitCode: 0, stdout: '', stderr: '', timedOut: false }
+    }) as unknown as PluginRunner
+    managedRunner(runner)
+    runner.hostKind = 'desktop'
+    const hostPnpm = vi.fn(async () => {
+      materialize(profileDir, '0.1.60')
+      return { exitCode: 0, stdout: '', stderr: '', timedOut: false }
+    })
+    runner.hostPnpm = hostPnpm
+    const updater = createMarketUpdater('desktop', runner, {
+      currentVersion: '0.1.59', profileDir, cacheMs: 0, fetch: latest('0.1.60'),
+    })
+    await expect(updater.update()).resolves.toMatchObject({ currentVersion: '0.1.60', latestVersion: '0.1.60', updateAvailable: false })
+    expect(verbs).toEqual(['add'])
+    expect(hostPnpm).toHaveBeenCalledTimes(1)
+    expect(hostPnpm.mock.calls[0]?.[0]).toEqual(expect.arrayContaining(['add', `${MARKET_NPM_PACKAGE}@0.1.60`]))
+    expect(updater.restartRequired).toBe(true)
+    expect(snapshotInstalledArtifact(profileDir, MARKET_NPM_PACKAGE)).toMatchObject({ ok: true, version: '0.1.60' })
+  })
+
+  it('fails without uninstalling the market when this host publishes no pnpm', async () => {
+    const profileDir = installedProfile('0.1.59')
+    const verbs: string[] = []
+    const runner = vi.fn(async (_profile: string, args: readonly string[]) => {
+      verbs.push(args[0] ?? '')
+      return { ...releaseAgeFailure(), management: { application: 'failed' as const, error: { code: 'already-installed' } } }
     }) as unknown as PluginRunner
     managedRunner(runner)
     runner.hostKind = 'desktop'
     const updater = createMarketUpdater('desktop', runner, {
-      currentVersion: '0.1.59', profileDir, fetch: latest('0.1.60'),
+      currentVersion: '0.1.59', profileDir, cacheMs: 0, fetch: latest('0.1.60'),
     })
     const operation = updater.startUpdate()
     await vi.waitFor(() => expect(operation.phase).toBe('failed'))
-    expect(operation.failure?.kind).toBe('release-age')
+    expect(verbs).toEqual(['add'])
+    expect(operation.message).toContain('市场没有被卸载')
+    expect(operation.message).toContain(`pnpm add ${MARKET_NPM_PACKAGE}@0.1.60`)
     expect(snapshotInstalledArtifact(profileDir, MARKET_NPM_PACKAGE)).toMatchObject({ ok: true, version: '0.1.59' })
-    expect(runner).toHaveBeenCalledTimes(4)
-    expect((runner as ReturnType<typeof vi.fn>).mock.calls.map(call => call[1][0])).toEqual(['add', 'remove', 'add', 'add'])
-  })
-
-  it('restores the old market when the replacement is cancelled after removal', async () => {
-    const profileDir = installedProfile('0.1.59')
-    const runner = vi.fn(async (_profile: string, args: readonly string[]) => {
-      if (runner.mock.calls.length === 1) return { ...releaseAgeFailure(), management: { application: 'failed' as const, error: { code: 'already-installed' } } }
-      if (args[0] === 'remove') {
-        rmSync(join(profileDir, 'node_modules', MARKET_NPM_PACKAGE), { recursive: true, force: true })
-        const manifest = JSON.parse(readFileSync(join(profileDir, 'package.json'), 'utf8'))
-        delete manifest.dependencies[MARKET_NPM_PACKAGE]
-        writeFileSync(join(profileDir, 'package.json'), JSON.stringify(manifest))
-        return { exitCode: 0, stdout: '', stderr: '', timedOut: false, management: { application: 'applied' as const } }
-      }
-      if (runner.mock.calls.length === 3) return { ...releaseAgeFailure(), management: { application: 'cancelled' as const }, aborted: true }
-      materialize(profileDir, '0.1.59')
-      return { exitCode: 0, stdout: '', stderr: '', timedOut: false, management: { application: 'restart-required' as const } }
-    }) as unknown as PluginRunner
-    managedRunner(runner)
-    runner.hostKind = 'desktop'
-    const updater = createMarketUpdater('desktop', runner, {
-      currentVersion: '0.1.59', profileDir, fetch: latest('0.1.60'),
-    })
-    const operation = updater.startUpdate()
-    await vi.waitFor(() => expect(operation.phase).toBe('cancelled'))
-    expect(snapshotInstalledArtifact(profileDir, MARKET_NPM_PACKAGE)).toMatchObject({ ok: true, version: '0.1.59' })
-    expect(runner).toHaveBeenCalledTimes(4)
   })
 
   it.each([{}, { '0.1.60': new Date().toISOString() }, { '0.1.60': 'not-a-time' }])('does not infer a Desktop block or warning from publication metadata %j', async time => {

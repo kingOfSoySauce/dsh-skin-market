@@ -25,7 +25,7 @@ See the [recent additions log](./docs/recently-added.md).
 
 Works with DSH Web `>=0.1.0-rc.6` and official Desktop `>=0.2.0-rc.1`.
 
-> If an update fails, first uninstall `dsh-skin-market`, then reinstall it using the installation method above. If uninstalling or reinstalling still fails, read the error message and copy the diagnostic log.
+> If an update fails, follow the reason in the dialog before uninstalling anything: on official Desktop, removing the market unloads the running plugin. Web can reinstall directly; on Desktop, open “Plugins → Add plugin” and add `dsh-skin-market@latest` again. If that still fails, copy the diagnostic log.
 
 ### Method 1: Command
 
@@ -116,6 +116,17 @@ First follow the specific reason shown in the market dialog or banner. Do not re
 | Operation result is still being confirmed | Wait for the market to verify the result from DSH. Do not click Install, Enable, or Uninstall again. |
 | Install, update, or uninstall is blocked by another installed plugin’s dead repository | Follow the three folded steps in the failure dialog: remove that dependency by hand, quit DSH and run the repair command, or give the prompt to an agent outside this DSH. Do not uninstall that plugin inside Market |
 | The page cannot be operated because of a skin conflict | Stop the relevant DSH Web process, then use the Web reset command below. |
+| The market disappears from the plugin list after clicking Update | The old Desktop self-update removed the market before reinstalling, and the reinstall could not run. Open “Plugins → Add plugin”, install `dsh-skin-market@latest`, and enable it |
+
+### The market disappeared after an update
+
+On official Desktop, older builds removed `dsh-skin-market` when you clicked “Update”, then tried to reinstall it. Removing the bundle unloads the running market, so the reinstall never ran and the profile was left without it.
+
+1. Do not click “Update” in the market again; that repeats the same step.
+2. Open DSH’s “Plugins → Add plugin”, enter `dsh-skin-market@latest`, and enable it when asked.
+3. If the in-app install is refused, quit DSH completely (closing the window is not enough), run `pnpm add dsh-skin-market@latest` in the profile directory (usually `~/.dsh/profiles/desktop`; on Windows `%USERPROFILE%\.dsh\profiles\desktop`), confirm both `dependencies` and `dsh.profile.bundles` contain `dsh-skin-market`, then reopen.
+
+Fixed builds overlay the new package in place with the pnpm DSH publishes, without removing the market. A restart is still required to load the new code.
 
 <a id="release-wait"></a>
 ### Installation blocked by new-package protection

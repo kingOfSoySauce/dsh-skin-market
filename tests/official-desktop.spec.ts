@@ -44,6 +44,17 @@ function fullManager(): OfficialPluginManagerLike {
 }
 
 describe('official Desktop runner', () => {
+  it('exposes the host-published pnpm only when the launcher supplies one for a profile', () => {
+    const manager = fullManager()
+    expect(officialDesktopRunner(() => manager, runtime('0.2.1')).hostPnpm).toBeUndefined()
+    expect(officialDesktopRunner(() => manager, runtime('0.2.1'), undefined, { profileDir: '/profiles/desktop' }).hostPnpm).toBeUndefined()
+    const runner = officialDesktopRunner(() => manager, runtime('0.2.1'), undefined, {
+      profileDir: '/profiles/desktop',
+      packageManager: () => ({ command: '/opt/dsh/node', args: ['/opt/dsh/pnpm.cjs'], env: { ELECTRON_RUN_AS_NODE: '1' } }),
+    })
+    expect(typeof runner.hostPnpm).toBe('function')
+  })
+
   it('exposes the host registry plan without duplicating mirror addresses', async () => {
     const registries = vi.fn(async () => ({
       registry: 'https://registry.npmjs.org/',
@@ -211,8 +222,8 @@ describe('official Desktop runner', () => {
     expect(JSON.parse(readFileSync(manifestFile, 'utf8')).dsh.profile.bundles).toEqual(selected)
   })
 
-  it('replaces an already installed market when HMR Desktop refuses installBundle', async () => {
-    const directory = mkdtempSync(join(tmpdir(), 'dsh-official-self-update-replace-'))
+  it('overlays an already installed market with the host pnpm instead of removing it', async () => {
+    const directory = mkdtempSync(join(tmpdir(), 'dsh-official-self-update-overlay-'))
     temporaryDirectories.push(directory)
     materializeMarket(directory, '0.1.63')
     const selected = [MARKET_NPM_PACKAGE, 'unrelated-bundle']
@@ -220,32 +231,19 @@ describe('official Desktop runner', () => {
     const initialManifest = JSON.parse(readFileSync(manifestFile, 'utf8'))
     initialManifest.dsh.profile.bundles = selected
     writeFileSync(manifestFile, JSON.stringify(initialManifest))
-    const installBundle = vi.fn(async () => {
-      if (installBundle.mock.calls.length === 1) return { application: 'failed', error: { code: 'already-installed', message: 'dsh-skin-market is already installed' } }
+    const installBundle = vi.fn(async () => ({ application: 'failed', error: { code: 'already-installed', message: 'dsh-skin-market is already installed' } }))
+    const removeBundle = vi.fn(async () => ({ application: 'applied' }))
+    const runner = officialDesktopRunner(() => ({ installBundle, removeBundle, cancelInstall: vi.fn(async () => undefined) }))
+    const hostPnpm = vi.fn(async (_args: readonly string[]) => {
       const before = JSON.parse(readFileSync(manifestFile, 'utf8'))
       materializeMarket(directory, '0.1.64')
       const after = JSON.parse(readFileSync(manifestFile, 'utf8'))
       after.dsh = before.dsh
       writeFileSync(manifestFile, JSON.stringify(after))
-      return { application: 'restart-required', version: '0.1.64' }
+      return { exitCode: 0, stdout: '', stderr: '', timedOut: false }
     })
-    const removeBundle = vi.fn(async () => {
-      const manifest = JSON.parse(readFileSync(manifestFile, 'utf8'))
-      delete manifest.dependencies[MARKET_NPM_PACKAGE]
-      manifest.dsh.profile.bundles = manifest.dsh.profile.bundles.filter((name: string) => name !== MARKET_NPM_PACKAGE)
-      writeFileSync(manifestFile, JSON.stringify(manifest))
-      return { application: 'applied' }
-    })
-    const setBundleEnabled = vi.fn(async (name: string, enabled: boolean) => {
-      const manifest = JSON.parse(readFileSync(manifestFile, 'utf8'))
-      const bundles = new Set(manifest.dsh.profile.bundles)
-      if (enabled) bundles.add(name)
-      else bundles.delete(name)
-      manifest.dsh.profile.bundles = [...bundles]
-      writeFileSync(manifestFile, JSON.stringify(manifest))
-      return { application: 'applied', target: name, enabled }
-    })
-    const updater = createMarketUpdater('desktop', officialDesktopRunner(() => ({ installBundle, removeBundle, setBundleEnabled, cancelInstall: vi.fn(async () => undefined) })), {
+    runner.hostPnpm = hostPnpm
+    const updater = createMarketUpdater('desktop', runner, {
       currentVersion: '0.1.63',
       profileDir: directory,
       cacheMs: 0,
@@ -266,19 +264,25 @@ describe('official Desktop runner', () => {
     })
 
     await expect(updater.update()).resolves.toMatchObject({ currentVersion: '0.1.64', latestVersion: '0.1.64', updateAvailable: false })
-    expect(removeBundle).toHaveBeenCalledWith(MARKET_NPM_PACKAGE)
-    expect(installBundle).toHaveBeenCalledTimes(2)
-    expect(setBundleEnabled).toHaveBeenCalledWith(MARKET_NPM_PACKAGE, true)
-    expect(JSON.parse(readFileSync(manifestFile, 'utf8')).dsh.profile.bundles).toEqual(expect.arrayContaining(selected))
+    expect(removeBundle).not.toHaveBeenCalled()
+    expect(installBundle).toHaveBeenCalledTimes(1)
+    expect(hostPnpm).toHaveBeenCalledTimes(1)
+    expect(hostPnpm.mock.calls[0]?.[0]).toEqual(expect.arrayContaining(['add', `${MARKET_NPM_PACKAGE}@0.1.64`]))
+    expect(updater.restartRequired).toBe(true)
+    const manifest = JSON.parse(readFileSync(manifestFile, 'utf8'))
+    expect(manifest.dependencies[MARKET_NPM_PACKAGE]).toBe('0.1.64')
+    expect(manifest.dsh.profile.bundles).toEqual(selected)
   })
 
-  it('tells the user the exact spec when replacing an installed market still fails', async () => {
-    const directory = mkdtempSync(join(tmpdir(), 'dsh-official-self-update-manual-'))
+  it('fails without removing the market when this Desktop publishes no host pnpm', async () => {
+    const directory = mkdtempSync(join(tmpdir(), 'dsh-official-self-update-no-pnpm-'))
     temporaryDirectories.push(directory)
     materializeMarket(directory, '0.1.63')
+    const manifestFile = join(directory, 'package.json')
+    const removeBundle = vi.fn(async () => ({ application: 'applied' }))
     const updater = createMarketUpdater('desktop', officialDesktopRunner(() => ({
       installBundle: vi.fn(async () => ({ application: 'failed', error: { code: 'already-installed', message: 'dsh-skin-market is already installed' } })),
-      removeBundle: vi.fn(async () => ({ application: 'failed', error: { code: 'bundle-in-use', message: 'bundle is in use' } })),
+      removeBundle,
       cancelInstall: vi.fn(async () => undefined),
     })), {
       currentVersion: '0.1.63',
@@ -302,12 +306,52 @@ describe('official Desktop runner', () => {
 
     const operation = updater.startUpdate()
     await vi.waitFor(() => expect(operation.phase).toBe('failed'))
-    expect(operation.message).toContain(`请在官方插件页先卸载当前包，再添加 ${MARKET_NPM_PACKAGE}@0.1.64。`)
-    expect(operation.failure).toMatchObject({
-      manualSpec: `${MARKET_NPM_PACKAGE}@0.1.64`,
-      manualFollowUp: 'uninstall-then-add',
-      message: expect.stringContaining('先卸载当前包'),
+    expect(removeBundle).not.toHaveBeenCalled()
+    expect(operation.message).toContain('市场没有被卸载')
+    expect(operation.message).toContain(`pnpm add ${MARKET_NPM_PACKAGE}@0.1.64`)
+    expect(JSON.parse(readFileSync(manifestFile, 'utf8')).dependencies[MARKET_NPM_PACKAGE]).toBe('0.1.63')
+  })
+
+  it('keeps the installed market when the host pnpm overlay itself fails', async () => {
+    const directory = mkdtempSync(join(tmpdir(), 'dsh-official-self-update-overlay-fail-'))
+    temporaryDirectories.push(directory)
+    materializeMarket(directory, '0.1.63')
+    const manifestFile = join(directory, 'package.json')
+    const removeBundle = vi.fn(async () => ({ application: 'applied' }))
+    const runner = officialDesktopRunner(() => ({
+      installBundle: vi.fn(async () => ({ application: 'failed', error: { code: 'already-installed', message: 'dsh-skin-market is already installed' } })),
+      removeBundle,
+      cancelInstall: vi.fn(async () => undefined),
+    }))
+    runner.hostPnpm = vi.fn(async () => ({
+      exitCode: 1, stdout: '', timedOut: false,
+      stderr: '[ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION] 1 lockfile entries failed verification: dsh-skin-market@0.1.64 was published recently',
+    }))
+    const updater = createMarketUpdater('desktop', runner, {
+      currentVersion: '0.1.63',
+      profileDir: directory,
+      cacheMs: 0,
+      fetch: vi.fn(async () => ({
+        ok: true,
+        json: async () => ({
+          'dist-tags': { latest: '0.1.64' },
+          time: { '0.1.64': '2000-01-01T00:00:00.000Z' },
+          versions: {
+            '0.1.64': {
+              version: '0.1.64',
+              gitHead: 'd'.repeat(40),
+              dist: { tarball: `https://registry.npmjs.org/${MARKET_NPM_PACKAGE}/-/${MARKET_NPM_PACKAGE}-0.1.64.tgz` },
+            },
+          },
+        }),
+      })) as unknown as typeof fetch,
     })
+
+    const operation = updater.startUpdate()
+    await vi.waitFor(() => expect(operation.phase).toBe('failed'))
+    expect(operation.failure?.kind).toBe('release-age')
+    expect(removeBundle).not.toHaveBeenCalled()
+    expect(JSON.parse(readFileSync(manifestFile, 'utf8')).dependencies[MARKET_NPM_PACKAGE]).toBe('0.1.63')
   })
 
   it.each(['applied', 'restart-required', 'overridden'] as const)('accepts application=%s even with a package warning', async application => {

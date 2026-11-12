@@ -1,8 +1,9 @@
-import { mkdirSync, rmSync, writeFileSync } from 'node:fs'
+import { mkdirSync, mkdtempSync, realpathSync, rmSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { PassThrough } from 'node:stream'
 import { describe, expect, it, vi } from 'vitest'
-import { cmdCommandLine, commandError, createPnpmProvisioner, desktopRunner, normalizedEnvironment, pathKey, pathValue, pluginProcess, PNPM_DIRECT_SPAWN_ENOENT_HINT, quoteCmdArg, resolvePnpmForDirectSpawn, toolSearchDirs, type CommandResult, type DesktopPnpmLike } from '../src/commands.ts'
+import { cmdCommandLine, commandError, createPnpmProvisioner, desktopRunner, hostPnpmRunner, normalizedEnvironment, pathKey, pathValue, pluginProcess, PNPM_DIRECT_SPAWN_ENOENT_HINT, quoteCmdArg, resolvePnpmForDirectSpawn, toolSearchDirs, type CommandResult, type DesktopPnpmLike } from '../src/commands.ts'
 
 describe('Windows command shim quoting', () => {
   it('quotes cmd metacharacters as one argument', () => {
@@ -405,5 +406,32 @@ describe('Desktop pnpm adapter', () => {
     } finally {
       vi.useRealTimers()
     }
+  })
+})
+
+describe('host-published pnpm runner', () => {
+  it('runs the published command with its args, environment and the profile as cwd', async () => {
+    const directory = mkdtempSync(join(tmpdir(), 'dsh-host-pnpm-'))
+    try {
+      const runner = hostPnpmRunner(() => ({
+        command: process.execPath,
+        args: ['-e', 'console.log(JSON.stringify({ cwd: process.cwd(), token: process.env.DSH_HOST_TOKEN, argv: process.argv.slice(1) }))'],
+        env: { DSH_HOST_TOKEN: 'host-secret' },
+      }), directory)
+      const result = await runner(['add', 'dsh-skin-market@1.2.3'])
+      expect(result.exitCode).toBe(0)
+      expect(JSON.parse(result.stdout.trim())).toEqual({
+        cwd: realpathSync(directory),
+        token: 'host-secret',
+        argv: ['add', 'dsh-skin-market@1.2.3'],
+      })
+    } finally {
+      rmSync(directory, { recursive: true, force: true })
+    }
+  })
+
+  it('reports a missing published invocation instead of spawning anything', async () => {
+    const runner = hostPnpmRunner(() => undefined, tmpdir())
+    await expect(runner(['add', 'dsh-skin-market@1.2.3'])).resolves.toMatchObject({ exitCode: null, stderr: expect.stringContaining('宿主 pnpm') })
   })
 })
