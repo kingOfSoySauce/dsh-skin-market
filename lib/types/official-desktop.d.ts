@@ -1,4 +1,4 @@
-import type { CommandOptions, CommandResult, PluginRunner } from './commands.ts';
+import { type CommandOptions, type CommandResult, type HostPnpmInvocation, type PluginRunner } from './commands.ts';
 import type { DshRuntime } from './types.ts';
 /** Structural Host service contract; no Electron or generated Client proxy dependency. */
 export interface OfficialPluginManagerLike {
@@ -109,5 +109,10 @@ export interface OfficialManagementAdapter {
  */
 export declare function normalizeOfficialRegistryPlan(value: unknown): string[] | undefined;
 /** One-argument callers retain structural compatibility; added option fields require audited runtime versions. */
-export declare function officialDesktopRunner(getManager: () => OfficialPluginManagerLike | undefined, runtime?: DshRuntime, events?: OfficialManagementEvents): PluginRunner;
+export declare function officialDesktopRunner(getManager: () => OfficialPluginManagerLike | undefined, runtime?: DshRuntime, events?: OfficialManagementEvents, options?: {
+    /** The profile this runner mutates; the host pnpm runs with it as cwd. */
+    profileDir?: string;
+    /** Launcher-published pnpm, read lazily because it may appear after mount. */
+    packageManager?: () => HostPnpmInvocation | undefined;
+}): PluginRunner;
 export {};

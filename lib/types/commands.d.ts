@@ -31,12 +31,25 @@ export interface PluginInstallRequest {
     registry?: string | null;
     saveExact?: boolean;
 }
+/** The launcher-published pnpm executable and environment for one profile. */
+export interface HostPnpmInvocation {
+    command: string;
+    args?: readonly string[];
+    env?: Readonly<Record<string, string>>;
+}
 export interface PluginRunner {
     (profile: string, args: readonly string[], options?: CommandOptions): Promise<CommandResult>;
     hostKind?: MarketHostKind;
     ensurePnpm?: (options?: CommandOptions) => Promise<void>;
     installPlugin?: (profile: string, request: PluginInstallRequest, options?: CommandOptions) => Promise<CommandResult>;
     management?: OfficialManagementAdapter;
+    /**
+     * Run the host's own pnpm against the profile without going through the
+     * plugin manager. Official Desktop refuses to re-add an installed package
+     * (HMR), and its managed remove-then-install unloads this plugin before the
+     * install step can run, so a self-update has to overlay the package here.
+     */
+    hostPnpm?: (args: readonly string[], options?: CommandOptions) => Promise<CommandResult>;
     /** Ordered registry bases supplied by the host for package operations. */
     registryPlan?: RegistryPlanProvider;
 }
@@ -100,6 +113,15 @@ export declare function cmdCommandLine(argv: readonly string[]): string;
 export declare function createPnpmProvisioner(execute?: CommandExecutor): (options?: CommandOptions) => Promise<void>;
 export declare const ensurePnpmAvailable: (options?: CommandOptions) => Promise<void>;
 export declare function createPluginCliRunner(registryPlan?: RegistryPlanProvider): PluginRunner;
+/**
+ * Run the host-published pnpm in a profile directory.
+ *
+ * The executable is Electron (or the app's own node) plus a pnpm entry, and
+ * its environment is the one the host uses for its own package operations, so
+ * it is passed through as published. The callback is read per call because a
+ * launcher may publish the invocation after this plugin mounts.
+ */
+export declare function hostPnpmRunner(invocation: () => HostPnpmInvocation | undefined, cwd: string): NonNullable<PluginRunner['hostPnpm']>;
 export declare const runPluginCli: PluginRunner;
 interface DesktopOperation {
     stdout: NodeJS.ReadableStream;
