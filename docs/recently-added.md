@@ -1819,8 +1819,85 @@ GitHub：[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:hello-heyongping.dsh-helloai-theme -->
+### 2026-11-12 · dsh-helloai-theme
+
+作者：hello-heyongping
+
+HelloAI Theme: ten selectable color themes for the DeepSeek Harness web GUI, plus an inline editor to add, reference, edit, rename and delete your own themes, with optional glass styling and token overrides.
+
+GitHub：[hello-heyongping/dsh-helloai-theme](https://github.com/hello-heyongping/dsh-helloai-theme)
+
+<img src="https://raw.githubusercontent.com/hello-heyongping/dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/docs/screenshot-theme-editor.png" width="60%" alt="dsh-helloai-theme">
+
+<!-- dsh-auto-entry:taoser258.dsh-client-ui-skin-qingxiao -->
+### 2026-11-12 · dsh-client-ui-skin-qingxiao
+
+作者：taoser258
+
+清宵 · 弦凝清霄 — DSH 美化包
+
+GitHub：[taoser258/dsh-client-ui-skin-qingxiao](https://github.com/taoser258/dsh-client-ui-skin-qingxiao)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/preset-dark.gif" width="60%" alt="dsh-client-ui-skin-qingxiao">
+
+<!-- dsh-auto-entry:gxinnnnnn.dsh.sao -->
+### 2026-11-12 · dsh-SAO
+
+作者：GXinnnnnn
+
+刀剑神域风格皮肤：双 Link Start 启动动画与桐人／亚丝娜语音，可选择全部功能或仅限启动动画；主题配色、带主题色的大圆角玻璃设置、液态与磨砂玻璃、独立透明度和连续右栏背景；紧凑通透的会话标签与单行状态读数；九张内置壁纸、本地图片及 4K／5K 静音循环视频，支持静态省电；配有模型思考强度滑条。
+
+GitHub：[GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/GXinnnnnn__dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/home.gif" width="60%" alt="dsh-SAO">
+
+<!-- dsh-auto-entry:nwflower.dsh-claude-style -->
+### 2026-11-12 · dsh-claude-style
+
+作者：Nwflower
+
+Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
+
+GitHub：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)
+
+<img src="https://raw.githubusercontent.com/Nwflower/dsh-claude-style/d3a511b51e2eebdfc41952135a02d8f2752032a6/docs/screenshots/claude-home-light.png" width="60%" alt="dsh-claude-style">
+
+<!-- dsh-auto-entry:berhbro.dsh-cyrene-theme -->
+### 2026-11-12 · dsh-cyrene-theme
+
+作者：berhbro
+
+dsh-cyrene-theme · 昔涟主题
+
+GitHub：[berhbro/dsh-cyrene-theme](https://github.com/berhbro/dsh-cyrene-theme)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/home.gif" width="60%" alt="dsh-cyrene-theme">
+
+<!-- dsh-auto-entry:louke6572.dsh-whale-widget-plus -->
+### 2026-11-12 · dsh-whale-widget-plus
+
+作者：louke6572
+
+DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计
+
+GitHub：[louke6572/dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus)
+
+<img src="https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png" width="60%" alt="dsh-whale-widget-plus">
+
+<!-- dsh-auto-entry:xchannel1987.dsh-mobile-xc -->
+### 2026-11-12 · dsh-mobile-xc
+
+作者：xchannel1987
+
+DSH Web 移动端 UI 适配集大成插件：overlay 抽屉、安全区、canary 防升级失效
+
+GitHub：[xchannel1987/dsh-mobile-xc](https://github.com/xchannel1987/dsh-mobile-xc)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/home.png" width="60%" alt="dsh-mobile-xc">
+
 <!-- dsh-auto-entry:yrsxy.dsh-warm-theme -->
-### 2026-11-11 · dsh-warm-theme
+### 2026-11-12 · dsh-warm-theme
 
 作者：yrsxy
 
@@ -1852,17 +1929,6 @@ GitHub：[EthanHannn/dsh-theme](https://github.com/EthanHannn/dsh-theme)
 
 <img src="https://raw.githubusercontent.com/EthanHannn/dsh-theme/4a0152debaa11f75466f92587993513c69b5857b/docs/screenshots/141-oshi-backstage-starlight-light.webp" width="60%" alt="dsh-theme">
 
-<!-- dsh-auto-entry:xchannel1987.dsh-mobile-xc -->
-### 2026-11-11 · dsh-mobile-xc
-
-作者：xchannel1987
-
-DSH Web 移动端 UI 适配集大成插件：overlay 抽屉、安全区、canary 防升级失效
-
-GitHub：[xchannel1987/dsh-mobile-xc](https://github.com/xchannel1987/dsh-mobile-xc)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/home.png" width="60%" alt="dsh-mobile-xc">
-
 <!-- dsh-auto-entry:orderg-x.dsh-video-preview -->
 ### 2026-11-11 · dsh-video-preview
 
@@ -1873,17 +1939,6 @@ GitHub：[xchannel1987/dsh-mobile-xc](https://github.com/xchannel1987/dsh-mobile
 GitHub：[OrderG-X/dsh-video-preview](https://github.com/OrderG-X/dsh-video-preview)
 
 <img src="https://raw.githubusercontent.com/OrderG-X/dsh-video-preview/7351b414ce84e296c6d8b1a0b0cfd18906f7b3e1/assets/demo.gif" width="60%" alt="dsh-video-preview">
-
-<!-- dsh-auto-entry:gxinnnnnn.dsh.sao -->
-### 2026-11-11 · dsh-SAO
-
-作者：GXinnnnnn
-
-刀剑神域风格皮肤：双 Link Start 启动动画与桐人／亚丝娜语音，可选择全部功能或仅限启动动画；主题配色、带主题色的大圆角玻璃设置、液态与磨砂玻璃、独立透明度和连续右栏背景；紧凑通透的会话标签与单行状态读数；九张内置壁纸、本地图片及 4K／5K 静音循环视频，支持静态省电；配有模型思考强度滑条。
-
-GitHub：[GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/GXinnnnnn__dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/home.gif" width="60%" alt="dsh-SAO">
 
 <!-- dsh-auto-entry:yannicksong0106.dsh-550c-skin -->
 ### 2026-11-11 · 550C
@@ -1906,39 +1961,6 @@ DeepSeek Harness 音乐/小说播放插件。
 GitHub：[kendu76/dsh-music-player](https://github.com/kendu76/dsh-music-player)
 
 <img src="https://raw.githubusercontent.com/kendu76/dsh-music-player/172355b147f91ae994631aa4cbd61adfe8a5fb66/assets/screenshot-bar.png" width="60%" alt="dsh-music-player">
-
-<!-- dsh-auto-entry:berhbro.dsh-cyrene-theme -->
-### 2026-11-11 · dsh-cyrene-theme
-
-作者：berhbro
-
-dsh-cyrene-theme · 昔涟主题
-
-GitHub：[berhbro/dsh-cyrene-theme](https://github.com/berhbro/dsh-cyrene-theme)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/home.gif" width="60%" alt="dsh-cyrene-theme">
-
-<!-- dsh-auto-entry:louke6572.dsh-whale-widget-plus -->
-### 2026-11-11 · dsh-whale-widget-plus
-
-作者：louke6572
-
-DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计
-
-GitHub：[louke6572/dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus)
-
-<img src="https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png" width="60%" alt="dsh-whale-widget-plus">
-
-<!-- dsh-auto-entry:nwflower.dsh-claude-style -->
-### 2026-11-11 · dsh-claude-style
-
-作者：Nwflower
-
-Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
-
-GitHub：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)
-
-<img src="https://raw.githubusercontent.com/Nwflower/dsh-claude-style/d3a511b51e2eebdfc41952135a02d8f2752032a6/docs/screenshots/claude-home-light.png" width="60%" alt="dsh-claude-style">
 
 <!-- dsh-auto-entry:lxj5820.dsh-boot-animation -->
 ### 2026-11-11 · dsh-boot-animation
@@ -3502,17 +3524,6 @@ GitHub：[He2way/dsh-task-console](https://github.com/He2way/dsh-task-console)
 
 <img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/He2way__dsh-task-console/eacfe1cbdf5b9e06fa1d4d2e99a4083114a562fe/home.gif" width="60%" alt="dsh-task-console">
 
-<!-- dsh-auto-entry:hello-heyongping.dsh-helloai-theme -->
-### 2026-11-10 · dsh-helloai-theme
-
-作者：hello-heyongping
-
-HelloAI Theme: ten selectable color themes for the DeepSeek Harness web GUI, plus an inline editor to add, reference, edit, rename and delete your own themes, with optional glass styling and token overrides.
-
-GitHub：[hello-heyongping/dsh-helloai-theme](https://github.com/hello-heyongping/dsh-helloai-theme)
-
-<img src="https://raw.githubusercontent.com/hello-heyongping/dsh-helloai-theme/0ef94cf5c6d1766bf2bb65eeb12846858b277024/docs/screenshot-theme-editor.png" width="60%" alt="dsh-helloai-theme">
-
 <!-- dsh-auto-entry:hey.ruomei.dsh.music.player -->
 ### 2026-11-10 · dsh-music-player-heyruome
 
@@ -4150,17 +4161,6 @@ GitHub：[Stellum-Waq/dsh-pet-ronaldo](https://github.com/Stellum-Waq/dsh-pet-ro
 GitHub：[Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume)
 
 <img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.gif" width="60%" alt="dsh-whale-musume">
-
-<!-- dsh-auto-entry:taoser258.dsh-client-ui-skin-qingxiao -->
-### 2026-11-10 · dsh-client-ui-skin-qingxiao
-
-作者：taoser258
-
-清宵 · 弦凝清霄 — DSH 美化包
-
-GitHub：[taoser258/dsh-client-ui-skin-qingxiao](https://github.com/taoser258/dsh-client-ui-skin-qingxiao)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/preset-dark.gif" width="60%" alt="dsh-client-ui-skin-qingxiao">
 
 <!-- dsh-auto-entry:tenebris173.dsh-skin-prts -->
 ### 2026-11-10 · dsh-skin-prts

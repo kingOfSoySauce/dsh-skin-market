@@ -19,21 +19,21 @@ modes:
   - light
   - dark
 install:
-  target: github:taoser258/dsh-client-ui-skin-qingxiao#cf14084e438a56dd619ab334a83d3498be5e32c7
-  version: 0.4.1
-  commit: cf14084e438a56dd619ab334a83d3498be5e32c7
+  target: github:taoser258/dsh-client-ui-skin-qingxiao#851afeaf44171a2bea841e25c05c666232c35f3f
+  version: 0.7.1
+  commit: 851afeaf44171a2bea841e25c05c666232c35f3f
   desktop:
     mode: managed
     registry: npm
     packageName: "@taosee258/dsh-client-ui-skin-qingxiao"
-    packageVersion: 0.4.1
-    integrity: sha512-rrD5WvIXdfMrgezHvw2nLFoL9APSs0m7vWBfHe5RYD7gtrEPDw0luim8nJekHyDhnKc1idJf8c4/wSiYRMCxKA==
+    packageVersion: 0.7.1
+    integrity: sha512-0OLJj7lUaDoCv3AkV2oyLaikLN2azu6XfgJOJ40MsaYFyqPzcjhRVFKqzyWKPC1oOlHX5C9uDEkExUSiDm02Cw==
   npm:
     name: "@taosee258/dsh-client-ui-skin-qingxiao"
-    version: 0.4.1
-    integrity: sha512-rrD5WvIXdfMrgezHvw2nLFoL9APSs0m7vWBfHe5RYD7gtrEPDw0luim8nJekHyDhnKc1idJf8c4/wSiYRMCxKA==
+    version: 0.7.1
+    integrity: sha512-0OLJj7lUaDoCv3AkV2oyLaikLN2azu6XfgJOJ40MsaYFyqPzcjhRVFKqzyWKPC1oOlHX5C9uDEkExUSiDm02Cw==
     repository: https://github.com/taoser258/dsh-client-ui-skin-qingxiao
-    gitHead: cf14084e438a56dd619ab334a83d3498be5e32c7
+    gitHead: 851afeaf44171a2bea841e25c05c666232c35f3f
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -58,13 +58,13 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: cf14084e438a56dd619ab334a83d3498be5e32c7
-    packageVersion: 0.4.1
+    commit: 851afeaf44171a2bea841e25c05c666232c35f3f
+    packageVersion: 0.7.1
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:31:16.971Z
+    checkedAt: 2026-11-12T00:10:11.214Z
     findings: []
 license:
   code: CC-BY-NC-SA-4.0
@@ -75,7 +75,7 @@ marketScreenshots:
   - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/conversation.png
   - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/settings.png
 featuredRank: 1041
-releaseUpdatedAt: 2026-10-24T21:31:18.197Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+releaseUpdatedAt: 2026-11-12T00:10:12.467Z
+metadataUpdatedAt: 2026-11-12T01:34:30.192Z
 starsUpdatedAt: 2026-10-24T21:31:18.197Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-12T01:34:30.192Z
