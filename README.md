@@ -1,6 +1,6 @@
 # DSH 皮肤市场 <sub><a href="./README.en.md">English</a></sub>
 
-一个嵌入 DSH 设置页的社区皮肤市场：浏览、搜索、安装、使用、停用、常驻、更新和卸载 DSH 皮肤。
+浏览、搜索、安装并管理 DSH 皮肤。
 
 <p align="center">
   <img src="./docs/assets/skin-market-liang.png" alt="DSH 设置中的皮肤市场发现页" width="70%">
