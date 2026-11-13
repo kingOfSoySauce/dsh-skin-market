@@ -1,0 +1,52 @@
+id: jake1266.dsh.doubao.ui
+name:
+  zh: 豆包风皮肤
+  en: Doubao-Style Skin
+author: JAKE1266
+description: 全站换成豆包蓝主色配中性灰的观感：大圆角气泡、卡片与输入框、快捷胶囊，亮暗两套完整色板跟随宿主主题切换。侧栏与首页换成自绘的对话气泡标记和四个快捷入口，另加一页「关于」设置。
+repo: https://github.com/JAKE1266/dsh-doubao-ui
+package: dsh-doubao-ui
+rowId: dsh-doubao-ui
+category: skin
+tags:
+  - token-theme
+  - light-dark
+  - branding
+modes:
+  - light
+  - dark
+install:
+  target: github:JAKE1266/dsh-doubao-ui#2ecb59536f73bc8e1ec1b11fa4294cd01c8d2689
+  version: 1.2.0
+  commit: 2ecb59536f73bc8e1ec1b11fa4294cd01c8d2689
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JAKE1266/dsh-doubao-ui/2ecb59536f73bc8e1ec1b11fa4294cd01c8d2689/assets/preview-light.png
+  - https://raw.githubusercontent.com/JAKE1266/dsh-doubao-ui/2ecb59536f73bc8e1ec1b11fa4294cd01c8d2689/assets/preview-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1163
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/JAKE1266/dsh-doubao-ui/2ecb59536f73bc8e1ec1b11fa4294cd01c8d2689/assets/preview-light.png

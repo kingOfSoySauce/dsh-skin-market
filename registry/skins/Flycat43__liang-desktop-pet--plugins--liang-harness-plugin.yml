@@ -1,0 +1,52 @@
+id: flycat43.liang.harness.plugin
+name:
+  zh: 梁圣 · 页面伙伴
+  en: Liang Companion
+author: Flycat43
+description: 在 DSH 页面里放一个可拖动的透明人物：点一下打开独立输入框，把任务直接发给当前会话，并显示最终输出、运行状态和公开思考摘要。人物有六档称呼与表达风格（小梁到梁祖）、四种任务模式，回复可用浏览器系统语音朗读。
+repo: https://github.com/Flycat43/liang-desktop-pet
+subpath: plugins/liang-harness-plugin
+package: liang-harness-plugin
+rowId: liang-harness-plugin
+category: pet
+tags:
+  - companion
+  - character
+  - voice
+  - chat
+modes:
+  - light
+  - dark
+install:
+  target: github:Flycat43/liang-desktop-pet#36e367799357a16ee2d4c2de79eacca879deef0f&path:/plugins/liang-harness-plugin
+  version: 0.1.0
+  commit: 36e367799357a16ee2d4c2de79eacca879deef0f
+compatibility:
+  dsh: ^0.1.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Flycat43/liang-desktop-pet/36e367799357a16ee2d4c2de79eacca879deef0f/docs/screenshot.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1147
+starsSnapshot: 5
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/Flycat43/liang-desktop-pet/36e367799357a16ee2d4c2de79eacca879deef0f/docs/screenshot.png

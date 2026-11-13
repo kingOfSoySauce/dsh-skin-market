@@ -1,0 +1,54 @@
+id: en.linkes.dsh.sao.theme
+name:
+  zh: 刀剑神域 HUD 皮肤
+  en: Aincrad HUD Skin
+author: EN-linkes
+description: 把 DSH 主界面、DS Bot 与节点模式统一改成刀剑神域 Aincrad 风格的 HUD：深空底色、冷青全息描边、四角括号、扫描带与等宽数字。圆角归零，输入区做成带刻线的命令行窗，彩色位图统一压成青色，三套界面换用同一套配色与字体。
+repo: https://github.com/EN-linkes/dsh-sao-theme
+package: dsh-sao-theme
+rowId: dsh-sao-theme
+category: skin
+tags:
+  - sao
+  - aincrad
+  - hud
+  - monospace
+modes:
+  - dark
+install:
+  target: github:EN-linkes/dsh-sao-theme#30058030b5e30220aeee41372a0bf254d63f0da3
+  version: 1.0.3
+  commit: 30058030b5e30220aeee41372a0bf254d63f0da3
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/EN-linkes/dsh-sao-theme/30058030b5e30220aeee41372a0bf254d63f0da3/docs/final-aincrad.png
+  - https://raw.githubusercontent.com/EN-linkes/dsh-sao-theme/30058030b5e30220aeee41372a0bf254d63f0da3/docs/dsbot-mode.png
+  - https://raw.githubusercontent.com/EN-linkes/dsh-sao-theme/30058030b5e30220aeee41372a0bf254d63f0da3/docs/workflow-mode.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1135
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/EN-linkes/dsh-sao-theme/30058030b5e30220aeee41372a0bf254d63f0da3/docs/final-aincrad.png

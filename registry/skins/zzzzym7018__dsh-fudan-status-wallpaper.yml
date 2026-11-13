@@ -1,0 +1,59 @@
+id: zzzzym7018.dsh.fudan.status.wallpaper
+name:
+  zh: 复旦 · 桌面
+  en: Fudan Desktop
+author: zzzzym7018
+description: 复旦校园主题的桌面插件：可拖动的深蓝金边额度卡显示余额、今日消耗、24 小时走势和天气，点开是含充值/赠送构成、峰谷倒计时与降雨详情的看板。另有六张校园水彩壁纸可调不透明度、模糊与遮罩；侧栏「知行台」把日程、项目与学习内容保存在本机。
+repo: https://github.com/zzzzym7018/dsh-fudan-status-wallpaper
+package: dsh-quota-wallpaper
+rowId: dsh-quota-wallpaper
+category: skin
+tags:
+  - wallpaper
+  - glass
+  - status
+  - utility
+modes:
+  - light
+  - dark
+install:
+  target: github:zzzzym7018/dsh-fudan-status-wallpaper#014ba35d976e9c673b356c8bd10d74e70cb519de
+  version: 4.3.0
+  commit: 014ba35d976e9c673b356c8bd10d74e70cb519de
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/workflow-today.png
+  - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/workflow-calendar.png
+  - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/screenshot-wallpaper.jpg
+  - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/screenshot-morning.jpg
+  - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/screenshot-autumn.jpg
+  - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/screenshot-sunset.jpg
+  - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/screenshot-wallpaper-dark.jpg
+  - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/screenshot-moon.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1171
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/workflow-today.png

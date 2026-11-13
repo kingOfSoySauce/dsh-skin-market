@@ -1,0 +1,56 @@
+id: tanpass.furina.dsh.theme
+name:
+  zh: 芙宁娜主题
+  en: Furina Theme
+author: TanPass
+description: 把 Web 界面换成《原神》芙宁娜／枫丹风格：三套皮肤（雨夜枫丹、水镜鸢尾、沙龙独处）可切换，另有壁纸层、毛玻璃表面、主题化启动屏和设置区内嵌面板。
+repo: https://github.com/TanPass/furina-dsh-theme
+package: furina-dsh-theme
+rowId: furina-dsh-theme
+category: skin
+tags:
+  - theme
+  - wallpaper
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:TanPass/furina-dsh-theme#e60be75e2f7660ee5b4706b9a3da77f789446760
+  version: 1.2.8
+  commit: e60be75e2f7660ee5b4706b9a3da77f789446760
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/current-shot-fontaine-nocturne.png
+  - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/current-shot-hydro-iris.png
+  - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/current-shot-salon-solitude.png
+  - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/settings-theme.png
+  - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/splash-boot.png
+  - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/file-card.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1152
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/current-shot-fontaine-nocturne.png

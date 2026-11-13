@@ -1,0 +1,54 @@
+id: bauerelizabeth07139.tangsan
+name:
+  zh: 唐三美化
+  en: TangSan Mascot
+author: bauerelizabeth07139
+description: 把唐三插画铺成聊天背景，界面表面色按不透明度淡出，背景才透出来；可调界面不透明度、背景模糊、暗色遮罩和壁纸位置。侧栏与会话标题的 logo、浏览器标签页图标也换成唐三头像，可在「设置 → 唐三美化」里关闭并恢复默认图标。
+repo: https://github.com/bauerelizabeth07139/tangsan
+package: tangsan
+rowId: tangsan
+category: skin
+tags:
+  - wallpaper
+  - brand-mark
+  - avatar
+  - mascot
+modes:
+  - light
+  - dark
+install:
+  target: github:bauerelizabeth07139/tangsan#aea08b49cfe89c411ab8d34acb31cda2371ce926
+  version: 0.2.0
+  commit: aea08b49cfe89c411ab8d34acb31cda2371ce926
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/bauerelizabeth07139/tangsan/aea08b49cfe89c411ab8d34acb31cda2371ce926/assets/tangsan-wallpaper.jpg
+  - https://raw.githubusercontent.com/bauerelizabeth07139/tangsan/aea08b49cfe89c411ab8d34acb31cda2371ce926/assets/tangsan.jpg
+  - https://raw.githubusercontent.com/bauerelizabeth07139/tangsan/aea08b49cfe89c411ab8d34acb31cda2371ce926/assets/tangsan-mark.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1144
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/bauerelizabeth07139/tangsan/aea08b49cfe89c411ab8d34acb31cda2371ce926/assets/tangsan-wallpaper.jpg

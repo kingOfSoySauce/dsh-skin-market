@@ -1,0 +1,55 @@
+id: zhangcaiqian.wenfang.themes
+name:
+  zh: 文房六色
+  en: Wenfang Six Palettes
+author: zhangcaiqian
+description: 一个插件注册六套文房色板：玄墨、玄墨·暗、宣纸、宣纸·暗、沧海、青瓷，每套从五个手调颜色展开出约 30 个 --dsw-* 令牌（表面、描边、文字、diff、选区等）。在设置 → 插件市场 → 主题 → 已注册色板里切换，立即生效并在刷新后保留，首次安装会落到最接近的明暗变体。
+repo: https://github.com/zhangcaiqian/wenfang-themes
+subpath: packages/dsh
+package: wenfang-themes
+rowId: wenfang-themes
+category: skin
+tags:
+  - chinese
+  - ink
+  - palette
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:zhangcaiqian/wenfang-themes#0f9b5140a9fb19360e7493c21e5f9636b87cb54d&path:/packages/dsh
+  version: 0.1.0
+  commit: 0f9b5140a9fb19360e7493c21e5f9636b87cb54d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-xuanmo.png
+  - https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-qingci.png
+  - https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-market.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1143
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-xuanmo.png

@@ -1,0 +1,57 @@
+id: frank.fan.818.dsh.f1.skin
+name:
+  zh: F1 赛事控制台
+  en: F1 Race Control
+author: frank-fan-818
+description: 把 F1 赛事控制中心搬进 Web 界面：红牛、法拉利、迈凯伦、梅奔四支车队主题各有品牌色、对比文字和赛车摄影背景。设置页可切换车队、调背景强度、文字衬底与模糊，也能按车队上传自定义壁纸，并跟随明暗与跟随系统。
+repo: https://github.com/frank-fan-818/dsh-f1-skin
+package: dsh-f1-skin
+rowId: ui-f1-skin
+category: skin
+tags:
+  - f1
+  - racing
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:frank-fan-818/dsh-f1-skin#d739db5f58c302c326b954287ca8424b7f1f10e1
+  version: 0.4.0
+  commit: d739db5f58c302c326b954287ca8424b7f1f10e1
+compatibility:
+  dsh: 0.1.1--rc.2-00a6a6.svg || 0.1.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/d739db5f58c302c326b954287ca8424b7f1f10e1/docs/screenshots/redbull-desktop.png
+  - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/d739db5f58c302c326b954287ca8424b7f1f10e1/docs/screenshots/ferrari-desktop.png
+  - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/d739db5f58c302c326b954287ca8424b7f1f10e1/docs/screenshots/mclaren-desktop.png
+  - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/d739db5f58c302c326b954287ca8424b7f1f10e1/docs/screenshots/mercedes-desktop.png
+  - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/d739db5f58c302c326b954287ca8424b7f1f10e1/docs/screenshots/settings-panel.png
+  - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/master/docs/screenshots/ferrari-desktop.png
+  - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/master/docs/screenshots/mclaren-desktop.png
+  - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/master/docs/screenshots/mercedes-desktop.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1161
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/d739db5f58c302c326b954287ca8424b7f1f10e1/docs/screenshots/redbull-desktop.png

@@ -1,0 +1,51 @@
+id: jimmyzwang.cloud.dsh.inkscreen.theme
+name:
+  zh: 水墨纸感主题
+  en: Ink & Paper Theme
+author: Jimmyzwang-cloud
+description: 把 DSH 网页端改成墨纸配色的浅色界面：暖奶油与墨色、磨砂玻璃面板、楷体感的会话正文与等宽代码。聊天上方新增最近会话页签栏，用状态点区分运行、等待、完成与空闲；会话/追踪切换收进同一行做成分段控件，侧栏品牌换成手写「jimmy」与小狗头像。
+repo: https://github.com/Jimmyzwang-cloud/dsh-inkscreen-theme
+package: dsh-inkscreen-theme
+rowId: inkscreen-theme
+category: skin
+tags:
+  - ink
+  - paper
+  - glass
+  - typography
+modes:
+  - light
+install:
+  target: github:Jimmyzwang-cloud/dsh-inkscreen-theme#12f1320b1fe0d7d88d10e4b9bec195397024168f
+  version: 0.1.0
+  commit: 12f1320b1fe0d7d88d10e4b9bec195397024168f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Jimmyzwang-cloud/dsh-inkscreen-theme/12f1320b1fe0d7d88d10e4b9bec195397024168f/assets/screenshot.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1137
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/Jimmyzwang-cloud/dsh-inkscreen-theme/12f1320b1fe0d7d88d10e4b9bec195397024168f/assets/screenshot.png

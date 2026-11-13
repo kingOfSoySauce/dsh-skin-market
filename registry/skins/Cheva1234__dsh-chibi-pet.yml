@@ -1,0 +1,56 @@
+id: cheva1234.dsh.chibi.pet
+name:
+  zh: Q 版悬浮桌宠
+  en: Chibi Floating Pet
+author: Cheva1234
+description: 一只悬浮在 Web 界面上的 Q 版宠物，只认一个会话：它在思考、调用工具、等待授权、完成、出错和打瞌睡时换姿势。可以拖动、点一下摸头、右键送回角落；在气泡里输入请求会排队送进它绑定的会话。
+repo: https://github.com/Cheva1234/dsh-chibi-pet
+package: dsh-chibi-pet
+rowId: dsh-pet
+category: pet
+tags:
+  - pet
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:Cheva1234/dsh-chibi-pet#67e77a6907960c25920ed752d659795799e1225f
+  version: 1.0.1
+  commit: 67e77a6907960c25920ed752d659795799e1225f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Cheva1234/dsh-chibi-pet/67e77a6907960c25920ed752d659795799e1225f/docs/states.png
+  - https://raw.githubusercontent.com/Cheva1234/dsh-chibi-pet/67e77a6907960c25920ed752d659795799e1225f/docs/sidebar-toggle.png
+  - https://raw.githubusercontent.com/Cheva1234/dsh-chibi-pet/67e77a6907960c25920ed752d659795799e1225f/docs/chat.png
+  - https://raw.githubusercontent.com/Cheva1234/dsh-chibi-pet/67e77a6907960c25920ed752d659795799e1225f/docs/drag-grading.png
+  - https://raw.githubusercontent.com/Cheva1234/dsh-chibi-pet/67e77a6907960c25920ed752d659795799e1225f/docs/settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1160
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/Cheva1234/dsh-chibi-pet/67e77a6907960c25920ed752d659795799e1225f/docs/states.png

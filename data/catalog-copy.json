@@ -11291,6 +11291,744 @@
       },
       "override": true,
       "nameSource": "repository-evidence (pinned README)"
+    },
+    "0928oyx.skin.gallery": {
+      "name": {
+        "zh": "免费皮肤画廊",
+        "en": "Free Skin Gallery"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在设置里新增「界面皮肤」栏目，用卡片管理 7 款原创皮肤，可以先试穿再应用、免重启，并带 0–100% 不透明度滑块。还能选本机图片做对话区背景，按画幅框选裁剪后固定不随对话滚动，对话区背景会自动保存。",
+        "en": "Adds an Interface Skins section to DSH settings with cards for seven original skins: try one on, apply it without a restart, and adjust overall opacity from 0 to 100%. It also lets you pick a local image as a fixed chat background, crop it to the chat frame, and saves the setup automatically."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "da449db9d766baac7a68d7733b8f6d6d3b32ab6007204c5649e5c93a944c2cb0",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "bauerelizabeth07139.nai": {
+      "name": {
+        "zh": "奶蛙美化",
+        "en": "Nai Mascot Layer"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把随插件附带的奶蛙照片铺成整块界面背景，再在「奶蛙美化 Nai」设置页调整界面不透明度（25–100%）、壁纸模糊（0–24px）、遮罩（0–90%）和壁纸位置。侧栏与会话标题的品牌标识、浏览器标签页图标会同步换成同一张方形头像，保存后即时生效。",
+        "en": "Wears the bundled Nai photo as a fixed full-window background, with live controls for surface opacity (25–100%), wallpaper blur (0–24 px), scrim (0–90%), and position. The same square avatar replaces the sidebar and conversation brand marks and the tab icon."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "224f9340f937958dfeb1927e146671409306cdae873064d693cb1fe4a4fa6ba8",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "cjjchina3088191870.sudo.dsh.plugin.miku.theme": {
+      "name": {
+        "zh": "初音未来 · 玫瑰女王",
+        "en": "Miku Starlight & Rose Queen"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一个安装包装两款主题：初音未来星光舞台与原创玫瑰女王花房，在「设置 → Ekko 皮肤」里切换，各自记住外观与视频设置，支持浅色、深色和两种手机导航。可分别上传电脑端与手机端启动视频（MP4/WebM，单个不超过 96 MiB），调节声音与最长播放时间，随时跳过。",
+        "en": "Two themes in one package — Miku Starlight Studio and the original Rose Queen — switched from Settings → Ekko Skin, each remembering its own appearance and video settings across light, dark, and two mobile layouts. Desktop and phone startup videos (MP4/WebM up to 96 MiB each) can be uploaded separately with sound, volume, duration, and skip controls."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "851f9458cb540af5c90cad7a3ca47d1e8a88a592e27b3da2bbc412d62ce60420",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "en.linkes.dsh.sao.theme": {
+      "name": {
+        "zh": "刀剑神域 HUD 皮肤",
+        "en": "Aincrad HUD Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 DSH 主界面、DS Bot 与节点模式统一改成刀剑神域 Aincrad 风格的 HUD：深空底色、冷青全息描边、四角括号、扫描带与等宽数字。圆角归零，输入区做成带刻线的命令行窗，彩色位图统一压成青色，三套界面换用同一套配色与字体。",
+        "en": "Repaints the main UI, DS Bot, and node mode in a Sword Art Online / Aincrad HUD language: deep-space ground, cyan holographic outlines, corner brackets, scanlines, and monospace numerals. Corners are squared, the composer becomes a ruled command window, and coloured bitmaps are flattened to cyan."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "2e1293156709e4e0ecc0bf8b7d96304efc5942aee5c1f58fab396b31d479a0bc",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "haitunlang.dsh.aero.skin": {
+      "name": {
+        "zh": "Aero 玻璃主题",
+        "en": "Aero Glass Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 DSH Desktop 界面换成 Windows 7 Aero 风格：约 50 个设计令牌改为玻璃配色，面板、侧栏与标题栏半透明并叠一层细噪点，会话标题栏保持平整、按钮去底色。标题栏有 Aero 开关，设置 → 通用里也有一行；原生模糊补丁为可选步骤。",
+        "en": "Turns the DSH Desktop UI into a Windows 7 Aero-style glass surface: about 50 design tokens get glass palettes for light and dark, while panels, sidebar, and titlebar turn translucent under a fine noise layer and the conversation header stays flat with ghosted controls. An Aero pill in the titlebar and a Settings → General row switch it, and an optional Windows 10 native blur patch is documented separately."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b17152b3e7210a723d60ace89dd3d3a4821e3298ef659ee248bac11832692f4a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "huantest2024.dsh.anime.theme": {
+      "name": {
+        "zh": "二次元壁纸主题",
+        "en": "Anime Wallpaper Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "给 DSH 套上二次元外观：13 张全屏动漫壁纸（也可自行添加），六套全局配色，玻璃质感的侧栏、输入框与弹层；樱花、萤火、落雪三种粒子特效可开关，右下角随机动图挂件预置 8 套。还能上传 mp4/webm 动态壁纸（≤30 MB），主题面板可一键切回原生界面。",
+        "en": "An anime appearance pack for DSH: 13 full-screen wallpapers plus your own, six global colour themes, and glass sidebars, composer, and popovers. Sakura, firefly, and snow particles can be toggled, eight random corner-widget sets ship in the box, and mp4/webm animated wallpapers up to 30 MB can be uploaded."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "8ad271441f4bab6d1eed8d85fc7cf4d039005445035bf3540fc585f799ffba97",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jimmyzwang.cloud.dsh.inkscreen.theme": {
+      "name": {
+        "zh": "水墨纸感主题",
+        "en": "Ink & Paper Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 DSH 网页端改成墨纸配色的浅色界面：暖奶油与墨色、磨砂玻璃面板、楷体感的会话正文与等宽代码。聊天上方新增最近会话页签栏，用状态点区分运行、等待、完成与空闲；会话/追踪切换收进同一行做成分段控件，侧栏品牌换成手写「jimmy」与小狗头像。",
+        "en": "Restyles the DSH web client as a light ink-and-paper surface: warm cream and ink colours, frosted-glass panels, Kai-style conversation text, and monospace code. A recent-conversation tab rail with live status dots sits above the chat, the Conversation/Trace switch becomes a compact segmented control, and the sidebar brand is a handwritten “jimmy” wordmark with a dog avatar."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "9b82db96bcf863ae1c3d68a6bd522a529def6af18f29e259a39e0882e7f1dc7f",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "lichtspur.deepseek.style.theme": {
+      "name": {
+        "zh": "官网风 · 流体玻璃",
+        "en": "DeepSeek Style Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "参考 DeepSeek 官网首页视觉的玻璃主题：流体流动背景、带边缘折射的液态玻璃面板、玻璃侧栏与输入框、磨砂顶栏，以及运行中子代理进度面板，明暗双主题可切。还可开启按北京时间峰谷变色的 DSTT 模式（高峰鲜红、谷时蓝或绿），高峰窗口为工作日 9–12 点与 14–18 点。",
+        "en": "A glass theme built on the DeepSeek homepage look: a fluid particle background, liquid-glass panels with SVG edge refraction, glass sidebar and composer, a frosted header, and a running-subagent progress panel, in light and dark. An optional DSTT mode shifts the brand colour with Beijing-time peak and valley windows (weekdays 9–12 and 14–18)."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a1d3a83a6596e250edcabea3cecc0ccb797583fb397f4e1b61e84e2c03103ba7",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "matriiix67.dsh.theme.studio": {
+      "name": {
+        "zh": "精装修 · 主题工作室",
+        "en": "Theme Studio"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在 DSH 里打开可调的主题工作台：25 套预设（10 套原创加 15 套 VS Code 配色），可改强调色、明暗两套底色与面板色，换界面与代码字体，上传壁纸并调整铺放、透明度与模糊，切换实色到通透的面板材质。还能替换侧栏品牌、导入导出 JSON、写自定义 CSS。",
+        "en": "A theme workbench for DSH: 25 presets (10 original plus 15 VS Code palettes), accent and light/dark surface colours, UI and code fonts with local font scanning, wallpapers with fit, opacity, dim, and blur, and four panel materials from solid to clear. It also covers corner radius, borders, grain, animation, sidebar branding, favicon, JSON import/export, and custom CSS."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d848a06974a24bc865acb7d84580dae8beac1052bb3f1a4078be88b124bc81ea",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "proglop.dsh.skin.silver.wolf.topic": {
+      "name": {
+        "zh": "银狼 · 像素骇入",
+        "en": "Silver Wolf // Pixel Intrusion"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "面向 DSH Desktop 的深色像素皮肤：蓝紫霓虹、实心面板、直角与像素网格，聊天区中央的银狼装饰会随侧栏收展平移，壁纸宽度可在 640–920 px 间调。设置 → 皮肤里带有皮肤管理器，可预览、切换、导入本地皮肤、恢复默认或卸载。",
+        "en": "A dark pixel skin for DSH Desktop: blue-violet neon, solid panels, square corners, and a pixel grid, with a centred Silver Wolf ornament that shifts as the sidebar collapses; wallpaper width is adjustable from 640 to 920 px. A skin manager in Settings → Skins previews, switches, imports local skins, restores the default, and uninstalls."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "457347e8b87543b00a7601159a995581824bcf4b8a710e3853175ff4408c7d75",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "tobewin.dsh.skin.studio": {
+      "name": {
+        "zh": "皮肤工作室",
+        "en": "DSH Skin Studio"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在设置 → 皮肤工作室里切换 10 套内置皮肤，或用「自定义画布」做一套全局外观：上传不超过 5 MB 的本地背景图，选浅色或深色基底，分别调背景、表面、强调与文字颜色，再缩放、移动或拖动焦点为图片取景。图片与配色只保存在本机并即时应用到整个界面。",
+        "en": "Ten built-in skins can be switched from Settings → Skin Studio, or build one global look in Custom Canvas: upload a local background image up to 5 MB, choose a light or dark base, set background, surface, accent, and text colours individually, and zoom, pan, or drag a focal point to frame the image. Images and palettes stay on the device and apply instantly across the interface."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "7445c61533145e3c575906e31613bd18e0306422c3cf09d8aad5a6edf4deb962",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "xcnxnxnx.dsh.portable.tavern": {
+      "name": {
+        "zh": "便携酒馆",
+        "en": "Portable Tavern"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在 DSH 里开一间酒馆：用七块面板捏出 SillyTavern V2/V3 角色卡，也能导入 JSON 或 PNG 角色卡，每个角色独立上下文，可接 OpenAI 兼容接口。支持 1–12 人队伍（各自提示词与模型）、带系统判定的跑团冒险、世界书、六套面板主题与社区扩展。",
+        "en": "Opens a tavern inside DSH: build SillyTavern V2/V3 character cards from seven visual modules, import JSON or PNG cards, and chat with each character in its own context on either the DSH model or a custom OpenAI-compatible endpoint. It also covers parties of 1–12 with per-member prompts and models, dice-and-check RPG adventures with story outlines, world books, six panel themes, and community extensions."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "417fde15aa6a22c9f471ac011b0465d76a842915851d5f0b7de30968118dac37",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zhangcaiqian.wenfang.themes": {
+      "name": {
+        "zh": "文房六色",
+        "en": "Wenfang Six Palettes"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一个插件注册六套文房色板：玄墨、玄墨·暗、宣纸、宣纸·暗、沧海、青瓷，每套从五个手调颜色展开出约 30 个 --dsw-* 令牌（表面、描边、文字、diff、选区等）。在设置 → 插件市场 → 主题 → 已注册色板里切换，立即生效并在刷新后保留，首次安装会落到最接近的明暗变体。",
+        "en": "One plugin registers six Wenfang palettes — Xuanmo, Xuanmo Dimmed, Xuanzhi, Xuanzhi Dimmed, Canghai, and Qingci — each derived from five hand-tuned colours into about 30 --dsw-* tokens for surfaces, borders, text, diffs, and selection. Switch them in Settings → Plugin Market → Themes → registered palettes; changes apply instantly, survive reloads, and fall back to the closest light/dark variant on first install."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "138faeb486a215af7a0d248b74dd5c94af2139fafa82868a994afdf438995b33",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ai.nice.dsh.pamper": {
+      "name": {
+        "zh": "宠爱 · 多角色桌宠",
+        "en": "Pamper Multi-Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "独立桌宠插件：宠爱页面分角色、桌宠配置、发现三栏，可同时显示多只宠物；每只都能开关、改名、调尺寸和角落位置。页面右下角有陪伴浮层，Windows 上还能开无边框透明桌面窗；透明 WebM 动作在发现页按需下载，数据写在 DSH_HOME/pamper。",
+        "en": "An independent pet plugin whose Pamper page splits into characters, pet settings and discovery tabs. Show several pets at once, rename, resize and pin each one, use a corner overlay on any platform or a borderless transparent desktop window on Windows, and download WebM actions on demand."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "c3284e624e8544c305ddb5d4ef69ee72b3f761b7ae0d224e1c4ba656fdc46c8a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "bauerelizabeth07139.tangsan": {
+      "name": {
+        "zh": "唐三美化",
+        "en": "TangSan Mascot"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把唐三插画铺成聊天背景，界面表面色按不透明度淡出，背景才透出来；可调界面不透明度、背景模糊、暗色遮罩和壁纸位置。侧栏与会话标题的 logo、浏览器标签页图标也换成唐三头像，可在「设置 → 唐三美化」里关闭并恢复默认图标。",
+        "en": "Wears a generated TangSan portrait as the chat background, with controls for surface opacity, wallpaper blur, a readability scrim and background position. The same avatar replaces the sidebar and conversation-hero logos plus the tab icon, all from a TangSan settings page."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "76b4598c70111a8092135279e3f26d605d6bacb68f37b761dd825101f1610a6c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "duty25.dsh.aemeath.theme": {
+      "name": {
+        "zh": "爱弥斯像素主题",
+        "en": "Aemeath Pixel Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "鸣潮爱弥斯像素风主题：像素小爱弥斯默认坐在输入框上方，可拖到任意位置，并随 Agent 工作、出错、完成换动作；空闲会伸懒腰、打哈欠，摸头会记好感度。星夜背景可调暗度与模糊、也能换成自定义图，另有四套配色、像素按键与通讯卡式回复，设置页是频段柱样式。",
+        "en": "A pixel Aemeath theme for the DSH web UI. The pixel companion sits above the composer, can be dragged anywhere and changes animation as the agent works, errors out or finishes; the starry background has dim and blur controls plus a custom image, and four palettes, pixel buttons and comms-card replies are included."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b2c45bb6fa74429bb565b305202e8f62f4d7df1b22df1969b0aa23b2dc79b695",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "flycat43.liang.harness.plugin": {
+      "name": {
+        "zh": "梁圣 · 页面伙伴",
+        "en": "Liang Companion"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在 DSH 页面里放一个可拖动的透明人物：点一下打开独立输入框，把任务直接发给当前会话，并显示最终输出、运行状态和公开思考摘要。人物有六档称呼与表达风格（小梁到梁祖）、四种任务模式，回复可用浏览器系统语音朗读。",
+        "en": "An unofficial character companion inside the DSH page. Click the draggable figure to open a separate composer, send tasks to the current session, and read the final output, run status and public thinking summary; six character styles, four task modes and browser speech playback are included."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "51bfefd0ffab63cdece422dbc19f6d410b6bb5be824ba157f07da284f9b32a38",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "haoyu.qi.dsh.hermes.taiji.skin": {
+      "name": {
+        "zh": "乾坤问道",
+        "en": "Taiji Divination Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "纸墨金配色的 DSH 主题，月华白与玄夜两套色板跟随系统外观。每次启动或刷新先播五秒开场：中央先天八卦盘转动，四向行书依次扫入，可点击跳过；回车发送时闪一记太极。侧栏有太极印、占卜令牌与今日一签，另带紫微命盘对话框与每日神明画像。",
+        "en": "A paper-ink-gold skin with Moonlight and Night palettes that follow the system appearance. Each load opens with a five-second bagua plate and four calligraphy lines; Enter sends with a taiji flash, the sidebar holds a taiji seal, a divination token and a daily hexagram, and a Zi Wei chart dialog is included."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "cd00a80066bb40e8a7f493c81541ef4228e47ac335e4114120f71e9a3710365e",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ifer47.dsh.theme.shelter": {
+      "name": {
+        "zh": "檐下",
+        "en": "Shelter"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "给界面加一层很薄的天气：右下角 28px 按钮切换雨、雪、炉火或关闭，强度分轻中暴。雨滴落地会溅开水花并随风倾斜，闪电先在分叉处亮起、隔一会儿才响雷；雪会在窗口底边长出积雪，炉火有暖光与上升的火星。雨声和火声是录音，雪风由代码合成，另有夜间配色。",
+        "en": "A thin layer of weather over the DSH web GUI: a 28 px corner button switches rain, snow, hearth or off at three intensities. Raindrops splash and lean with the wind, lightning flashes before delayed thunder, snow builds a bank along the window, and the hearth glows from below; recorded rain and fire audio, a generated wind and a night palette are included."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "805e69be8252912c2c29fca8020ffa11c262be786968ea844245cdc0bf3a0678",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "keithtmaxwell.dsh.skin.deepsea.tui": {
+      "name": {
+        "zh": "深海终端",
+        "en": "Deepsea Terminal"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "深海终端：蓝色终端框线、消息卡片与代码块；空白会话显示大肥鱼角色欢迎画面，会话状态（思考、工具执行、输出、等待确认）用竖条脉冲提示，底部显示 DSH 进程 CPU 占用。欢迎图、访客来访、底部状态栏、纹理暗角、动效与大肥鱼人设都能单独开关，需配合皮肤管理器使用。",
+        "en": "A terminal-style deep-sea skin for DSH Desktop: blue terminal frames, message cards and code blocks, a large-fish welcome screen, session states shown with vertical pulses and a CPU readout at the bottom. Welcome art, guest visits, status bar, CRT texture, motion and the large-fish persona all have separate switches; the DSH Skin Manager is required for the settings."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "f05f4054f75a08e30e3363e20a68acc38179db251ba1283a02ad4765e737e6a1",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "liuyaguang8023.dsh.jcc.theme": {
+      "name": {
+        "zh": "金铲铲 · 海克斯核心",
+        "en": "Golden Spatula Hexcore"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "金铲铲同人外观：浅色是羊皮纸棋盘地图，深色是奥术蓝黑竞技场，背景用内联 SVG 画六边形看台、金色铲影与海克斯晶体。右下角「海克斯核心」面板可换四枚强化符文、三档棋盘纹理、圆润或锐利棱角与氛围光效；「海克斯强化」三选一抽外观卡，共 12 张，本地存图鉴。",
+        "en": "A Golden Spatula fan theme: parchment board map in light mode, arcane blue-black arena in dark mode, with original inline-SVG backdrops. The hextech-core panel switches four accent runes, three board textures, soft or sharp corners and ambience; a three-card augment draft draws from a local 12-card codex with no currency or cooldowns."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "33d20ec4ad91e8dc743c57a3c1183a0eff19d1bcfd2e4f429ba42b255c2fc155",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "mjw.git.pet": {
+      "name": {
+        "zh": "DSH 桌宠养成",
+        "en": "DSH Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "右下角桌宠：把输入、缓存读取、缓存写入、输出四类 token 累加成经验，升级解锁称号阶梯。它会跟着对话在思考、调用工具、工具出错、完成之间换动画，也可以改名、缩放、拖动，或上传自己的精灵图和状态动作映射；悬停拉出轨道坞，还能开一局局域网 P2P 五子棋。",
+        "en": "A corner pet that turns the four token buckets into XP and unlocks a title ladder as your agent works. It switches animations with live thinking, tool and answered status pushed over SSE; rename, resize, drag and upload custom spritesheets, and the hover orbit dock hides a LAN peer-to-peer gomoku board."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "535346f97e2d2e328b17c563e752f495bdf18f3c36ce38840fda8c342e34090c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "tanpass.furina.dsh.theme": {
+      "name": {
+        "zh": "芙宁娜主题",
+        "en": "Furina Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 Web 界面换成《原神》芙宁娜／枫丹风格：三套皮肤（雨夜枫丹、水镜鸢尾、沙龙独处）可切换，另有壁纸层、毛玻璃表面、主题化启动屏和设置区内嵌面板。",
+        "en": "Turns the DSH Web UI into a Fontaine / Furina theme with three switchable skins (Fontaine Nocturne, Hydro Iris, Salon Solitude), a wallpaper layer, translucent glass surfaces, a themed startup splash and an in-settings theme panel."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "e08f34aa82146356869bd79dcc4edf628fe2736966cd390e107549ce6c68d576",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "wk.single.startup.splash": {
+      "name": {
+        "zh": "超新星启动动画",
+        "en": "Supernova Boot Splash"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "打开页面先满屏播放约 3.6 秒超新星序列：170–380 条拖尾光线向中心汇聚，核心白热过载，爆闪后 430 块碎片与冲击波散开，DEEPSEEK/HARNESS 字标砸出，再拉伸成超空间光线淡出。四角 HUD 显示时间码、节点哈希与版本号，点击或按 Esc 可跳过。",
+        "en": "Plays a full-viewport supernova sequence of about 3.6 seconds on page load: hundreds of light trails converge, the core goes white-hot and detonates, the DEEPSEEK / HARNESS wordmark slams in, then everything stretches into hyperspace. A four-corner HUD shows timecode, node hash and version; click or press Esc to skip."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "9b43da9eebee6e66c5703cf34c0ff79965833c7e1168f5e997020a6736a4d07f",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "xuyixi992.dsh.fish.theme": {
+      "name": {
+        "zh": "鲸鱼娘双层水印",
+        "en": "Whale Girl Watermarks"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "五套定制配色（青蓝、素白、靛紫、墨青、终端），每套都成对定义浅色与深色；界面叠两层独立水印——固定的女仆立绘与 21 张可切换表情图，浓淡可调。终端配色下代码块是纯黑面板、金琥珀关键字，并重着色 9 类语法标记，取自 Windows Terminal 的 Campbell 配色。",
+        "en": "Five custom palettes (blue, paper white, indigo, ink teal, terminal), each defined for light and dark, plus two independent watermark layers: a fixed maid illustration and 21 switchable stickers with intensity control. The terminal palette repaints nine Shiki token types with Windows Terminal's Campbell scheme and gives code a pure-black panel."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "442ff89aeed222c7cceda95f4902b9e01a9e1021f8232ae7a7e62a6ddc67d241",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zekaishi.orivii": {
+      "name": {
+        "zh": "Orivii 陪伴助手",
+        "en": "Orivii"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "住在 DSH 里的 AI 搭子：独立聊天列表、私信式气泡和连续发送；同一角色共享近期对话与可检索历史，新建聊天也能接话。可以用一句话创建、改期和取消提醒，把明确委托交给后台的 DSH Agent 执行并带回结果，还能改称呼、表达方式和双方气泡颜色；多个角色各自保存聊天与记忆。",
+        "en": "An expressive assistant that lives inside DSH. It has its own chat list with DM-style bubbles and consecutive sending, shared memory across chats, natural-language reminders created and rescheduled in conversation, and background work handed to DSH agents with results brought back; character names, tone and bubble colours are adjustable."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "efe29794f588d820678c4e5b37b81f3c2f878792adc15b496981b1630812770f",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zhenhua520.dsh.whalegirl": {
+      "name": {
+        "zh": "鲸鱼娘磨砂壁纸",
+        "en": "Whale Girl Frosted Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "重映射 174 个 --dsw-* 令牌，表面、文字、边框、代码块、滚动条与状态色由同一套调色板推导；插画只铺对话列，侧栏和设置页保持实底。浅色/深色/跟随系统三态成对提交，不改写偏好；「设置 → 皮肤管理」可实时调模糊、表面与气泡透明度、壁纸遮罩、壁纸模糊和聚焦光晕七项参数。",
+        "en": "A whale-girl skin that remaps all 174 --dsw-* tokens from one palette, with the illustration behind the conversation column only. Light, dark and system-following palettes are submitted pairwise without overriding your appearance preference, and seven live parameters in Settings → Skin Manager cover frosted blur, surface and bubble opacity, wallpaper scrim, wallpaper blur and the focus glow."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "4fdf287ff20662f815e0af4b2f36396adf873803b9cef0016ef9f18a322351aa",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "aklnaaw.brand.plugin": {
+      "name": {
+        "zh": "Claude 星芒品牌",
+        "en": "Claude Starburst Brand"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把侧栏的鲸鱼标记与字标换成 Claude 风格的放射星芒和文字字标，并改写浏览器标签标题、换成星芒标签页图标。侧栏底部弹层里可以就地改显示名字、副标题和头像，头像只保存在本机浏览器。",
+        "en": "Replaces the sidebar whale mark and wordmark with a Claude-style starburst and text mark, and switches the browser tab title and favicon to match. Name, subtitle and avatar can be edited from a small bar in the sidebar footer, with the identity kept in this browser's local storage."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "55535f35e3becd707d52cedc3694ef7e681965f731f95fb62974eb287b710e9b",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "cheva1234.dsh.chibi.pet": {
+      "name": {
+        "zh": "Q 版悬浮桌宠",
+        "en": "Chibi Floating Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一只悬浮在 Web 界面上的 Q 版宠物，只认一个会话：它在思考、调用工具、等待授权、完成、出错和打瞌睡时换姿势。可以拖动、点一下摸头、右键送回角落；在气泡里输入请求会排队送进它绑定的会话。",
+        "en": "A chibi pet that floats over the Web UI and follows a single session, changing pose as that session thinks, calls tools, waits for approval, finishes, fails or dozes off. Drag it, pat its head, send it back to its corner, or type a request into its bubble to queue it into the bound session."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "accb6d3b7e944cb00028dbb64fdd57e852e064ec34cd64d791a1b1594999cef9",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "edmok.dsh.minecraft.theme": {
+      "name": {
+        "zh": "Minecraft 像素皮肤",
+        "en": "Minecraft Pixel Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 Web 界面改成 Minecraft 启动器风格：草方块绿、泥土棕、木板与石材配色，方块边框、像素化背景、像素按钮和侧栏装饰，暗色与亮色模式各有一套配色。",
+        "en": "A Minecraft Launcher-style skin in grass green, dirt brown, wood and stone, with blocky borders, pixelated backgrounds, pixel buttons and sidebar decoration. Both dark and light palettes are included."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d9227d341c06578dbdc4ac3c04ed46a5098a401341b6ca3f74b6b890fe17b255",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "frank.fan.818.dsh.f1.skin": {
+      "name": {
+        "zh": "F1 赛事控制台",
+        "en": "F1 Race Control"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 F1 赛事控制中心搬进 Web 界面：红牛、法拉利、迈凯伦、梅奔四支车队主题各有品牌色、对比文字和赛车摄影背景。设置页可切换车队、调背景强度、文字衬底与模糊，也能按车队上传自定义壁纸，并跟随明暗与跟随系统。",
+        "en": "An F1 race-control skin with four team themes — Red Bull, Ferrari, McLaren and Mercedes — each with its own brand colours, readable text backing and broadcast photo backdrop. The native settings panel switches teams, tunes photo strength, text backing and blur, and accepts per-team custom wallpapers while following light, dark or system."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "8dde0970058a83684252daf43d37f32d61611c6c7e71cf7f9519c3b99db82075",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "hetonghao.dsh.zed.space": {
+      "name": {
+        "zh": "Zed Space 动态皮肤",
+        "en": "Zed Space Dynamic Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把动态背景接进 Web 界面：实时海洋可调波浪、日光和自动昼夜；黑洞有地平线、吸积涡旋两个视角，各场景单独保存参数与玻璃浓度。另有本地视频库（单个上限 32 MiB、30 秒、1080p）和在线壁纸市场，下载后可显式应用。",
+        "en": "Animated backgrounds for the Web UI: a live ocean with adjustable waves, sunlight and auto day-night, plus a black hole in event-horizon or accretion-vortex view, each scene keeping its own parameters and glass opacity. A local video library (up to 32 MiB / 30 s / 1080p per clip) and an online wallpaper market let you import or download clips and apply them explicitly."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "0880bbaf76dc7fd684fb438eb95c210c831dbf59ed77721d6d52deabeea3670f",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jake1266.dsh.doubao.ui": {
+      "name": {
+        "zh": "豆包风皮肤",
+        "en": "Doubao-Style Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "全站换成豆包蓝主色配中性灰的观感：大圆角气泡、卡片与输入框、快捷胶囊，亮暗两套完整色板跟随宿主主题切换。侧栏与首页换成自绘的对话气泡标记和四个快捷入口，另加一页「关于」设置。",
+        "en": "A Doubao-inspired full-site skin: blue brand accent on neutral greys, large rounded bubbles, cards and input, pill-shaped quick actions, and complete light and dark palettes that follow the host. The sidebar and hero get a hand-drawn chat-bubble mark plus four quick entries, with an About settings page."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "bdda7073601d2cdc8ac6fd2b25dceb3dc88531105d3a34fcfba16ee0273f8c22",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "kk0421.lawson.fuji.skin": {
+      "name": {
+        "zh": "富士山下 · 黄昏便利店",
+        "en": "Fuji at Dusk · Lawson"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "用一张黄昏富士与便利店照片铺满整个窗口，上面盖一层随设置变化的冷白玻璃；九种材质、四种边缘、漏光与暗角都可调，输入框和面板沿用同一套材质。输入框上方还有 1236 条氛围语句、系统时间与 Open-Meteo 天气，开场是约 4 秒可跳过的显影动画。",
+        "en": "A glass theme built around a dusk Fuji / Lawson photograph that covers the whole window, with nine material finishes, four edge styles, light-leak and vignette controls, and the same material carried onto the composer and panels. A quote bar of 1,236 lines, system time and Open-Meteo weather sit above the composer, and a roughly 4-second opening animation can be skipped."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "385536cee6abe7e5e7dadf70babbf731c862c255357f6f90fb394eb01fa224e6",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "lucky01222.dsh.workbench.theme": {
+      "name": {
+        "zh": "灰原哀主题工作台",
+        "en": "Haibara Workbench Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "冷紫与纸白的明暗配色，把灰原哀的立绘、漫画分镜和 APTX 标志放进欢迎区、页头与侧栏，装饰不挡点击。设置 → 通用 → 外观里可切换主题素材、展示强度、工作台标志与减少动态效果，选「无装饰」只留配色和静态字标。",
+        "en": "A cold-purple and paper-white theme that places Haibara artwork, manga panels and an APTX mark in the welcome area, page header and sidebar without blocking clicks. Settings → General → Appearance switches artwork, display intensity, wordmark and reduced motion, and a no-decoration mode keeps only the colours and static wordmark."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "511f04648cea0bef4a9c0709261115c97984d0c50cbcbd307fce7293825f0aa3",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "orxz.dshthemes.ui": {
+      "name": {
+        "zh": "DSH 主题合集",
+        "en": "DSH Theme Collection"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "内置十一套 DSH 主题配色，并在「设置 → 通用」加一行主题选择器：选中即应用，支持第三方主题注册与选择持久化。",
+        "en": "Ships eleven DSH theme palettes plus a Settings → General theme picker that applies a theme immediately and persists third-party selections."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "651dada22144563119005dc35b4a18a7ed78ea6edc6850fd41dc3d7af01a5849",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "tianyuec11.design.dsh.apple.liquid.glass": {
+      "name": {
+        "zh": "苹果风液态玻璃",
+        "en": "Apple Liquid Glass"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "苹果风液态玻璃材质：输入卡、侧栏控件、模型选择器和发送键各自独立开关玻璃效果，强度 0–100% 可调；输入框上沿有蓝色流光，打字时暂停。顶部深海蓝玻璃胶囊展开后显示会话标题、模式、时间与余额，开场是一颗可跳过的旋转粒子地球。",
+        "en": "An Apple-style liquid-glass material for the composer, sidebar controls, model picker and send button, each with its own switch and a 0–100% intensity slider; a blue edge glow freezes while you type. A deep-navy glass island expands to show the conversation title, mode, time, balance and settings, and the opening is a skippable rotating particle Earth."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "05aadad65222149ae1bf5551338d2524a969143e46696ed7abc4e1eeade67748",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "wujiuyi55.sketch.dsh.alice.skin": {
+      "name": {
+        "zh": "爱丽丝与彼岸皮肤",
+        "en": "Alice Nation Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 Web 界面换成「爱丽丝与彼岸」风格的配色与装饰：60 多个设计令牌一起换，侧栏、气泡、按钮、代码块与滚动条同步变色，右侧叠一层低透明度立绘。右下角角色面板列 12 个头像，点头像换主题色和立绘；面板可拖动、收起，也能关掉背景立绘。",
+        "en": "An Alice Nation-inspired theme that repaints more than 60 design tokens together — sidebar, bubbles, buttons, code blocks and scrollbars — and adds a low-opacity character portrait on the right. A corner panel offers 12 avatars; picking one swaps the accent colour and artwork, and the panel can be dragged or collapsed, or the portrait turned off."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "145efc79d7dd85fd9694dd9ab2415acecde8086d5d211fcb41641be980d70c2d",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "yu502950715yang.dsh.use.wallpaper": {
+      "name": {
+        "zh": "壁纸引擎场景壁纸",
+        "en": "Wallpaper Engine Scene Wallpapers"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在浏览器里实时渲染 Wallpaper Engine 的 scene 壁纸（three.js + Rust/WASM 粒子），也播放视频、web 与图片壁纸，无需后台运行 Wallpaper Engine。面板可调遮罩、模糊、画面适配与音量，支持收藏、隐藏、自动轮播和开机动画。",
+        "en": "Renders Wallpaper Engine scene wallpapers in the browser in real time (three.js + Rust/WASM particles) and also plays video, web and image wallpapers, with no Wallpaper Engine runtime needed. Controls cover overlay opacity, blur, fit mode, sound, a 0.5× render scale, favourites, hiding, auto-rotation, per-wallpaper properties and an optional boot animation."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "e4cf95aa4230985b14a4e58059e5664b10a42ad66606e1b2bac9815d8c9bb171",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zgj980644897.dsh.ui.we2": {
+      "name": {
+        "zh": "WE2 控制台",
+        "en": "WE2 Console"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "米白纸面与墨黑机箱的硬科幻控制台：纸色正文区、墨黑侧栏（悬停反相为纸白）、墨黑代码舱与操作员消息块、零圆角发丝边框，屏幕边框、四角括号和左右刻度尺组成 HUD。侧栏下方有一条实时思考字幕，逐字打出当前会话最后一段推理文本；授权弹窗改成屏幕居中的墨黑对话框。",
+        "en": "An off-white paper and ink hard-sci-fi console: paper canvas, ink sidebar with inverted hover, ink code decks and operator messages, zero radii and hairline borders, plus a bezel HUD with corner brackets and rulers. A live reasoning ticker in the sidebar types out the session's latest reasoning text, and approvals open in a centred ink dialog."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "c6742ba228425634d670c01490650c92d74bd7e13d66f1776df8cae7535c47b7",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zzzzym7018.dsh.fudan.status.wallpaper": {
+      "name": {
+        "zh": "复旦 · 桌面",
+        "en": "Fudan Desktop"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "复旦校园主题的桌面插件：可拖动的深蓝金边额度卡显示余额、今日消耗、24 小时走势和天气，点开是含充值/赠送构成、峰谷倒计时与降雨详情的看板。另有六张校园水彩壁纸可调不透明度、模糊与遮罩；侧栏「知行台」把日程、项目与学习内容保存在本机。",
+        "en": "A Fudan-campus desktop plugin: a draggable navy-and-gold status card shows balance, today's spend, a 24-hour curve and local weather, and expands into a dashboard with top-up/gift breakdown, peak/off-peak countdown and rain details. Six watercolour campus wallpapers have opacity, blur and scrim controls, and a local Zhixing workspace (知行台) keeps schedules, projects and study notes inside the DSH profile."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "900538f59a4b14a43f1b3f5943e98f2e308b5f36fe8c5bf807c91560a3679958",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
     }
   }
 }

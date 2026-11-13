@@ -1,0 +1,51 @@
+id: zgj980644897.dsh.ui.we2
+name:
+  zh: WE2 控制台
+  en: WE2 Console
+author: zgj980644897
+description: 米白纸面与墨黑机箱的硬科幻控制台：纸色正文区、墨黑侧栏（悬停反相为纸白）、墨黑代码舱与操作员消息块、零圆角发丝边框，屏幕边框、四角括号和左右刻度尺组成 HUD。侧栏下方有一条实时思考字幕，逐字打出当前会话最后一段推理文本；授权弹窗改成屏幕居中的墨黑对话框。
+repo: https://github.com/zgj980644897/dsh-ui-we2
+package: dsh-ui-we2
+rowId: ui-we2
+category: skin
+tags:
+  - sci-fi
+  - token-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:zgj980644897/dsh-ui-we2#0ec27be9d11150b8e1a4f9628ae7be8b7bb3ac5f
+  version: 0.13.2
+  commit: 0ec27be9d11150b8e1a4f9628ae7be8b7bb3ac5f
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zgj980644897/dsh-ui-we2/0ec27be9d11150b8e1a4f9628ae7be8b7bb3ac5f/preview/shot.png
+  - https://raw.githubusercontent.com/zgj980644897/dsh-ui-we2/0ec27be9d11150b8e1a4f9628ae7be8b7bb3ac5f/preview/approval.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1169
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/zgj980644897/dsh-ui-we2/0ec27be9d11150b8e1a4f9628ae7be8b7bb3ac5f/preview/shot.png

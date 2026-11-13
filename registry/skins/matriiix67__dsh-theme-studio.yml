@@ -1,0 +1,57 @@
+id: matriiix67.dsh.theme.studio
+name:
+  zh: 精装修 · 主题工作室
+  en: Theme Studio
+author: matriiix67
+description: 在 DSH 里打开可调的主题工作台：25 套预设（10 套原创加 15 套 VS Code 配色），可改强调色、明暗两套底色与面板色，换界面与代码字体，上传壁纸并调整铺放、透明度与模糊，切换实色到通透的面板材质。还能替换侧栏品牌、导入导出 JSON、写自定义 CSS。
+repo: https://github.com/matriiix67/dsh-theme-studio
+package: dsh-theme-studio
+rowId: theme-studio
+category: skin
+tags:
+  - presets
+  - fonts
+  - wallpaper
+  - custom-css
+modes:
+  - light
+  - dark
+install:
+  target: github:matriiix67/dsh-theme-studio#e42c6568b689939d122813b765469dc4604cae01
+  version: 0.1.0
+  commit: e42c6568b689939d122813b765469dc4604cae01
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/sidebar.png
+  - https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/page.png
+  - https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/studio-dark.png
+  - https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/wallpaper.png
+  - https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/brand-panel.png
+  - https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/brand-sidebar.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1139
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/sidebar.png

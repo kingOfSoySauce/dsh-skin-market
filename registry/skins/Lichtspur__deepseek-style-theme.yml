@@ -1,0 +1,55 @@
+id: lichtspur.deepseek.style.theme
+name:
+  zh: 官网风 · 流体玻璃
+  en: DeepSeek Style Theme
+author: Lichtspur
+description: 参考 DeepSeek 官网首页视觉的玻璃主题：流体流动背景、带边缘折射的液态玻璃面板、玻璃侧栏与输入框、磨砂顶栏，以及运行中子代理进度面板，明暗双主题可切。还可开启按北京时间峰谷变色的 DSTT 模式（高峰鲜红、谷时蓝或绿），高峰窗口为工作日 9–12 点与 14–18 点。
+repo: https://github.com/Lichtspur/deepseek-style-theme
+package: dsh-deepseek-style-theme
+rowId: ui-skin-deepseek-style
+category: skin
+tags:
+  - deepseek
+  - glass
+  - fluid
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Lichtspur/deepseek-style-theme#2dfc0406eab2775c48bef4872a9c6582492c3a0a
+  version: 2.1.93
+  commit: 2dfc0406eab2775c48bef4872a9c6582492c3a0a
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Lichtspur/deepseek-style-theme/2dfc0406eab2775c48bef4872a9c6582492c3a0a/assets/readme/preview-valley-blue-light.png
+  - https://raw.githubusercontent.com/Lichtspur/deepseek-style-theme/2dfc0406eab2775c48bef4872a9c6582492c3a0a/assets/readme/preview-peak-red.png
+  - https://raw.githubusercontent.com/Lichtspur/deepseek-style-theme/2dfc0406eab2775c48bef4872a9c6582492c3a0a/assets/readme/preview-valley-blue-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1138
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/Lichtspur/deepseek-style-theme/2dfc0406eab2775c48bef4872a9c6582492c3a0a/assets/readme/preview-valley-blue-light.png

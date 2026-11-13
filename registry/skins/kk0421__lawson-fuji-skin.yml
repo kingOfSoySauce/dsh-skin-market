@@ -1,0 +1,54 @@
+id: kk0421.lawson.fuji.skin
+name:
+  zh: 富士山下 · 黄昏便利店
+  en: Fuji at Dusk · Lawson
+author: kk0421
+description: 用一张黄昏富士与便利店照片铺满整个窗口，上面盖一层随设置变化的冷白玻璃；九种材质、四种边缘、漏光与暗角都可调，输入框和面板沿用同一套材质。输入框上方还有 1236 条氛围语句、系统时间与 Open-Meteo 天气，开场是约 4 秒可跳过的显影动画。
+repo: https://github.com/kk0421/lawson-fuji-skin
+package: lawson-fuji-skin
+rowId: lawson-fuji-skin
+category: skin
+tags:
+  - glass
+  - wallpaper
+  - motion
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:kk0421/lawson-fuji-skin#4f50d5d4814b6bd2ed3bfad2204816760cdf9381
+  version: 1.0.1
+  commit: 4f50d5d4814b6bd2ed3bfad2204816760cdf9381
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/preview.jpg
+  - https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/window-controls.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1165
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/preview.jpg

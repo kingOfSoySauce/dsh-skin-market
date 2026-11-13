@@ -1,0 +1,54 @@
+id: wk.single.startup.splash
+name:
+  zh: 超新星启动动画
+  en: Supernova Boot Splash
+author: wk-single
+description: 打开页面先满屏播放约 3.6 秒超新星序列：170–380 条拖尾光线向中心汇聚，核心白热过载，爆闪后 430 块碎片与冲击波散开，DEEPSEEK/HARNESS 字标砸出，再拉伸成超空间光线淡出。四角 HUD 显示时间码、节点哈希与版本号，点击或按 Esc 可跳过。
+repo: https://github.com/wk-single/my-plugins
+subpath: packages/startup-splash
+package: "@local/dsh-startup-splash"
+rowId: startup-splash
+category: splash
+tags:
+  - boot
+  - supernova
+  - hud
+  - canvas
+modes:
+  - light
+  - dark
+install:
+  target: github:wk-single/my-plugins#c761b53e9e57519744036362ec2abf52db5860de&path:/packages/startup-splash
+  version: 3.0.2
+  commit: c761b53e9e57519744036362ec2abf52db5860de
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/wk-single/my-plugins/c761b53e9e57519744036362ec2abf52db5860de/docs/splash.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 1153
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/wk-single/my-plugins/c761b53e9e57519744036362ec2abf52db5860de/docs/splash.webp

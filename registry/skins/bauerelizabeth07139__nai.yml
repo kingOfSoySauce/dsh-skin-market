@@ -1,0 +1,54 @@
+id: bauerelizabeth07139.nai
+name:
+  zh: 奶蛙美化
+  en: Nai Mascot Layer
+author: bauerelizabeth07139
+description: 把随插件附带的奶蛙照片铺成整块界面背景，再在「奶蛙美化 Nai」设置页调整界面不透明度（25–100%）、壁纸模糊（0–24px）、遮罩（0–90%）和壁纸位置。侧栏与会话标题的品牌标识、浏览器标签页图标会同步换成同一张方形头像，保存后即时生效。
+repo: https://github.com/bauerelizabeth07139/nai
+package: nai
+rowId: nai
+category: skin
+tags:
+  - mascot
+  - wallpaper
+  - brand
+  - favicon
+modes:
+  - light
+  - dark
+install:
+  target: github:bauerelizabeth07139/nai#331d575b50bb9202fef5b4444434596cbc154043
+  version: 0.2.1
+  commit: 331d575b50bb9202fef5b4444434596cbc154043
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/bauerelizabeth07139/nai/331d575b50bb9202fef5b4444434596cbc154043/assets/nai-wallpaper.jpg
+  - https://raw.githubusercontent.com/bauerelizabeth07139/nai/331d575b50bb9202fef5b4444434596cbc154043/assets/nai.jpg
+  - https://raw.githubusercontent.com/bauerelizabeth07139/nai/331d575b50bb9202fef5b4444434596cbc154043/assets/nai-mark.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1132
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/bauerelizabeth07139/nai/331d575b50bb9202fef5b4444434596cbc154043/assets/nai-wallpaper.jpg

@@ -1,0 +1,51 @@
+id: zhenhua520.dsh.whalegirl
+name:
+  zh: 鲸鱼娘磨砂壁纸
+  en: Whale Girl Frosted Skin
+author: zhenhua520
+description: 重映射 174 个 --dsw-* 令牌，表面、文字、边框、代码块、滚动条与状态色由同一套调色板推导；插画只铺对话列，侧栏和设置页保持实底。浅色/深色/跟随系统三态成对提交，不改写偏好；「设置 → 皮肤管理」可实时调模糊、表面与气泡透明度、壁纸遮罩、壁纸模糊和聚焦光晕七项参数。
+repo: https://github.com/zhenhua520/dsh-whalegirl
+package: dsh-whalegirl
+rowId: dsh-whalegirl
+category: skin
+tags:
+  - whale-girl
+  - wallpaper
+  - glass
+  - skin-manager
+modes:
+  - light
+  - dark
+install:
+  target: github:zhenhua520/dsh-whalegirl#d46bfd0fb6627290189483e4112a16dfb7de8fb2
+  version: 1.0.19
+  commit: d46bfd0fb6627290189483e4112a16dfb7de8fb2
+compatibility:
+  dsh: ">=0.2.0-rc.2 <0.3.0-0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zhenhua520/dsh-whalegirl/d46bfd0fb6627290189483e4112a16dfb7de8fb2/assets/previews/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1156
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/zhenhua520/dsh-whalegirl/d46bfd0fb6627290189483e4112a16dfb7de8fb2/assets/previews/preview.png

@@ -1,0 +1,56 @@
+id: haitunlang.dsh.aero.skin
+name:
+  zh: Aero 玻璃主题
+  en: Aero Glass Skin
+author: haitunlang
+description: 把 DSH Desktop 界面换成 Windows 7 Aero 风格：约 50 个设计令牌改为玻璃配色，面板、侧栏与标题栏半透明并叠一层细噪点，会话标题栏保持平整、按钮去底色。标题栏有 Aero 开关，设置 → 通用里也有一行；原生模糊补丁为可选步骤。
+repo: https://github.com/haitunlang/dsh-aero-glass
+subpath: dsh-aero-skin
+package: dsh-aero-skin
+rowId: dsh-aero-skin
+category: skin
+tags:
+  - aero
+  - glass
+  - windows
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:haitunlang/dsh-aero-glass#3a0b4ea4b6859ff6a6877d7b3bafd18929717e0f&path:/dsh-aero-skin
+  version: 1.1.0
+  commit: 3a0b4ea4b6859ff6a6877d7b3bafd18929717e0f
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/haitunlang/dsh-aero-glass/3a0b4ea4b6859ff6a6877d7b3bafd18929717e0f/shots/demo-native.png
+  - https://raw.githubusercontent.com/haitunlang/dsh-aero-glass/3a0b4ea4b6859ff6a6877d7b3bafd18929717e0f/shots/demo-header-closeup.png
+  - https://raw.githubusercontent.com/haitunlang/dsh-aero-glass/3a0b4ea4b6859ff6a6877d7b3bafd18929717e0f/shots/demo-taskbar.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1136
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/haitunlang/dsh-aero-glass/3a0b4ea4b6859ff6a6877d7b3bafd18929717e0f/shots/demo-native.png

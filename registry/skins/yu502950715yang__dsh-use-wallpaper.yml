@@ -1,0 +1,54 @@
+id: yu502950715yang.dsh.use.wallpaper
+name:
+  zh: 壁纸引擎场景壁纸
+  en: Wallpaper Engine Scene Wallpapers
+author: yu502950715yang
+description: 在浏览器里实时渲染 Wallpaper Engine 的 scene 壁纸（three.js + Rust/WASM 粒子），也播放视频、web 与图片壁纸，无需后台运行 Wallpaper Engine。面板可调遮罩、模糊、画面适配与音量，支持收藏、隐藏、自动轮播和开机动画。
+repo: https://github.com/yu502950715yang/dsh-use-wallpaper
+package: "@dsh-use/wallpaper-engine"
+rowId: dsh-wallpaper-engine
+category: skin
+tags:
+  - wallpaper
+  - motion
+  - scene
+  - boot
+modes:
+  - light
+  - dark
+install:
+  target: github:yu502950715yang/dsh-use-wallpaper#d466e173c50d3390434684d5b7aa60136d9805f8
+  version: 1.0.0
+  commit: d466e173c50d3390434684d5b7aa60136d9805f8
+compatibility:
+  dsh: ">=0.2.0-rc.1 <0.3.0 || 0.2.0-rc.1"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yu502950715yang/dsh-use-wallpaper/d466e173c50d3390434684d5b7aa60136d9805f8/assets/screenshots/01-wallpaper-behind-chat.png
+  - https://raw.githubusercontent.com/yu502950715yang/dsh-use-wallpaper/d466e173c50d3390434684d5b7aa60136d9805f8/assets/screenshots/02-settings-panel.png
+  - https://raw.githubusercontent.com/yu502950715yang/dsh-use-wallpaper/d466e173c50d3390434684d5b7aa60136d9805f8/docs/videos/yuki-koizuka-dsh.gif
+  - https://raw.githubusercontent.com/yu502950715yang/dsh-use-wallpaper/d466e173c50d3390434684d5b7aa60136d9805f8/docs/videos/knight-red-cloak-dsh.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1170
+starsSnapshot: 11
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/yu502950715yang/dsh-use-wallpaper/d466e173c50d3390434684d5b7aa60136d9805f8/assets/screenshots/01-wallpaper-behind-chat.png

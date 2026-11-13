@@ -1,0 +1,55 @@
+id: haoyu.qi.dsh.hermes.taiji.skin
+name:
+  zh: 乾坤问道
+  en: Taiji Divination Skin
+author: haoyu-qi
+description: 纸墨金配色的 DSH 主题，月华白与玄夜两套色板跟随系统外观。每次启动或刷新先播五秒开场：中央先天八卦盘转动，四向行书依次扫入，可点击跳过；回车发送时闪一记太极。侧栏有太极印、占卜令牌与今日一签，另带紫微命盘对话框与每日神明画像。
+repo: https://github.com/haoyu-qi/dsh-hermes-taiji-skin
+package: "@local/dsh-hermes-skin"
+rowId: hermes-skin
+category: skin
+tags:
+  - taiji
+  - divination
+  - calligraphy
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:haoyu-qi/dsh-hermes-taiji-skin#f300bba37e9b3f0e7a72f26f5160416ff0f9a2dd
+  version: 3.2.0
+  commit: f300bba37e9b3f0e7a72f26f5160416ff0f9a2dd
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/haoyu-qi/dsh-hermes-taiji-skin/f300bba37e9b3f0e7a72f26f5160416ff0f9a2dd/docs/images/v3-ziwei-chart.webp
+  - https://raw.githubusercontent.com/haoyu-qi/dsh-hermes-taiji-skin/f300bba37e9b3f0e7a72f26f5160416ff0f9a2dd/docs/images/v3-eight-deities.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1149
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/haoyu-qi/dsh-hermes-taiji-skin/f300bba37e9b3f0e7a72f26f5160416ff0f9a2dd/docs/images/v3-ziwei-chart.webp

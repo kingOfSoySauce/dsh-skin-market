@@ -1,0 +1,56 @@
+id: keithtmaxwell.dsh.skin.deepsea.tui
+name:
+  zh: 深海终端
+  en: Deepsea Terminal
+author: KeithTMaxwell
+description: 深海终端：蓝色终端框线、消息卡片与代码块；空白会话显示大肥鱼角色欢迎画面，会话状态（思考、工具执行、输出、等待确认）用竖条脉冲提示，底部显示 DSH 进程 CPU 占用。欢迎图、访客来访、底部状态栏、纹理暗角、动效与大肥鱼人设都能单独开关，需配合皮肤管理器使用。
+repo: https://github.com/KeithTMaxwell/dsh-skin-deepsea-tui
+package: dsh-skin-deepsea-tui
+rowId: ui-skin-pv-deepsea
+category: skin
+tags:
+  - terminal
+  - deep-sea
+  - crt
+  - character
+modes:
+  - dark
+install:
+  target: github:KeithTMaxwell/dsh-skin-deepsea-tui#c434faea492e478a2e9d481487ea293405fc1543
+  version: 0.2.60
+  commit: c434faea492e478a2e9d481487ea293405fc1543
+compatibility:
+  dsh: 0.2.0-rc.2 || 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/deepsea-desktop.png
+  - https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/install-01-plugin-entry-annotated.png
+  - https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/install-02-manager-annotated.png
+  - https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/install-03-skin-annotated.png
+  - https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/install-04-settings-menu-annotated.png
+  - https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/install-05-skin-switch-annotated.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: PolyForm-Noncommercial-1.0.0
+  commercialUse: false
+featuredRank: 1172
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/deepsea-desktop.png

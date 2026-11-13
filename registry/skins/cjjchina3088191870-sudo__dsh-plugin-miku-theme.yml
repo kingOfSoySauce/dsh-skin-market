@@ -1,0 +1,57 @@
+id: cjjchina3088191870.sudo.dsh.plugin.miku.theme
+name:
+  zh: 初音未来 · 玫瑰女王
+  en: Miku Starlight & Rose Queen
+author: cjjchina3088191870-sudo
+description: 一个安装包装两款主题：初音未来星光舞台与原创玫瑰女王花房，在「设置 → Ekko 皮肤」里切换，各自记住外观与视频设置，支持浅色、深色和两种手机导航。可分别上传电脑端与手机端启动视频（MP4/WebM，单个不超过 96 MiB），调节声音与最长播放时间，随时跳过。
+repo: https://github.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme
+package: dsh-plugin-miku-theme
+rowId: ui-skin-ekko-miku
+category: skin
+tags:
+  - miku
+  - rose
+  - anime
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:cjjchina3088191870-sudo/dsh-plugin-miku-theme#8bfbf2ae90b204d881a6d19aa1712bbbb231095f
+  version: 0.4.0
+  commit: 8bfbf2ae90b204d881a6d19aa1712bbbb231095f
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/rose-light.webp
+  - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/rose-dark.webp
+  - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/rose-mobile.png
+  - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/light.webp
+  - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/dark.webp
+  - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/mobile-corner.png
+  - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/startup-settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1133
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/rose-light.webp

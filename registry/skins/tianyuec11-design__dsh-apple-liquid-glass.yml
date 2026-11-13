@@ -1,0 +1,56 @@
+id: tianyuec11.design.dsh.apple.liquid.glass
+name:
+  zh: 苹果风液态玻璃
+  en: Apple Liquid Glass
+author: tianyuec11-design
+description: 苹果风液态玻璃材质：输入卡、侧栏控件、模型选择器和发送键各自独立开关玻璃效果，强度 0–100% 可调；输入框上沿有蓝色流光，打字时暂停。顶部深海蓝玻璃胶囊展开后显示会话标题、模式、时间与余额，开场是一颗可跳过的旋转粒子地球。
+repo: https://github.com/tianyuec11-design/dsh-apple-liquid-glass
+package: dsh-apple-liquid-glass
+rowId: dsh-apple-liquid-glass
+category: skin
+tags:
+  - glass
+  - motion
+  - light-dark
+  - splash
+modes:
+  - light
+  - dark
+install:
+  target: github:tianyuec11-design/dsh-apple-liquid-glass#9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0
+  version: 0.7.4
+  commit: 9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-light.png
+  - https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-dark.png
+  - https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-settings.png
+  - https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-island-collapsed.png
+  - https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-island-open.png
+  - https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-particles.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1168
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-light.png

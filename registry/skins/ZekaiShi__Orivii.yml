@@ -1,0 +1,58 @@
+id: zekaishi.orivii
+name:
+  zh: Orivii 陪伴助手
+  en: Orivii
+author: ZekaiShi
+description: 住在 DSH 里的 AI 搭子：独立聊天列表、私信式气泡和连续发送；同一角色共享近期对话与可检索历史，新建聊天也能接话。可以用一句话创建、改期和取消提醒，把明确委托交给后台的 DSH Agent 执行并带回结果，还能改称呼、表达方式和双方气泡颜色；多个角色各自保存聊天与记忆。
+repo: https://github.com/ZekaiShi/Orivii
+package: dsh-orivii
+rowId: dsh-companion
+category: pet
+tags:
+  - assistant
+  - chat
+  - memory
+  - reminder
+modes:
+  - light
+  - dark
+install:
+  target: github:ZekaiShi/Orivii#b24a34df66c54f09b1f654be2108c97f772a6375
+  version: 1.0.2
+  commit: b24a34df66c54f09b1f654be2108c97f772a6375
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ZekaiShi/Orivii/b24a34df66c54f09b1f654be2108c97f772a6375/media/preview.gif
+  - https://raw.githubusercontent.com/ZekaiShi/Orivii/b24a34df66c54f09b1f654be2108c97f772a6375/media/market-chat.png
+  - https://raw.githubusercontent.com/ZekaiShi/Orivii/b24a34df66c54f09b1f654be2108c97f772a6375/media/market-memory.png
+  - https://raw.githubusercontent.com/ZekaiShi/Orivii/b24a34df66c54f09b1f654be2108c97f772a6375/media/market-work.png
+  - https://raw.githubusercontent.com/ZekaiShi/Orivii/b24a34df66c54f09b1f654be2108c97f772a6375/media/market-identities.png
+  - https://raw.githubusercontent.com/ZekaiShi/Orivii/main/media/preview.gif
+  - https://raw.githubusercontent.com/ZekaiShi/Orivii/main/media/market-chat.png
+  - https://raw.githubusercontent.com/ZekaiShi/Orivii/main/media/market-memory.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1155
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/ZekaiShi/Orivii/b24a34df66c54f09b1f654be2108c97f772a6375/media/preview.gif

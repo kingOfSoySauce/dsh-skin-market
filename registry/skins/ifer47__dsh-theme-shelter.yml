@@ -1,0 +1,56 @@
+id: ifer47.dsh.theme.shelter
+name:
+  zh: 檐下
+  en: Shelter
+author: ifer47
+description: 给界面加一层很薄的天气：右下角 28px 按钮切换雨、雪、炉火或关闭，强度分轻中暴。雨滴落地会溅开水花并随风倾斜，闪电先在分叉处亮起、隔一会儿才响雷；雪会在窗口底边长出积雪，炉火有暖光与上升的火星。雨声和火声是录音，雪风由代码合成，另有夜间配色。
+repo: https://github.com/ifer47/dsh-theme-shelter
+package: dsh-theme-shelter
+rowId: theme-shelter
+category: skin
+tags:
+  - weather
+  - rain
+  - ambience
+  - audio
+modes:
+  - light
+  - dark
+install:
+  target: github:ifer47/dsh-theme-shelter#67cd82ddc0cf5827408dfd4b92eb6286a6510183
+  version: 0.3.1
+  commit: 67cd82ddc0cf5827408dfd4b92eb6286a6510183
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/67cd82ddc0cf5827408dfd4b92eb6286a6510183/docs/night-rain.jpg
+  - https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/67cd82ddc0cf5827408dfd4b92eb6286a6510183/docs/night-snow.jpg
+  - https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/67cd82ddc0cf5827408dfd4b92eb6286a6510183/docs/night-fire.jpg
+  - https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/67cd82ddc0cf5827408dfd4b92eb6286a6510183/docs/preview-panel.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1148
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/67cd82ddc0cf5827408dfd4b92eb6286a6510183/docs/night-rain.jpg

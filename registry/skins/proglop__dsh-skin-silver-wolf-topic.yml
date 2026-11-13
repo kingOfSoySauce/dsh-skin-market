@@ -1,0 +1,50 @@
+id: proglop.dsh.skin.silver.wolf.topic
+name:
+  zh: 银狼 · 像素骇入
+  en: Silver Wolf // Pixel Intrusion
+author: proglop
+description: 面向 DSH Desktop 的深色像素皮肤：蓝紫霓虹、实心面板、直角与像素网格，聊天区中央的银狼装饰会随侧栏收展平移，壁纸宽度可在 640–920 px 间调。设置 → 皮肤里带有皮肤管理器，可预览、切换、导入本地皮肤、恢复默认或卸载。
+repo: https://github.com/proglop/dsh-skin-silver-wolf-topic
+package: dsh-skin-silver-wolf-topic
+rowId: ui-skin-silver-wolf
+category: skin
+tags:
+  - silver-wolf
+  - honkai
+  - pixel
+  - dark
+modes:
+  - dark
+install:
+  target: github:proglop/dsh-skin-silver-wolf-topic#290a8962102157a71e32150dcd57164fe9eeaf17
+  version: 1.1.2
+  commit: 290a8962102157a71e32150dcd57164fe9eeaf17
+compatibility:
+  dsh: 0.2.2-rc.1 || 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/proglop/dsh-skin-silver-wolf-topic/290a8962102157a71e32150dcd57164fe9eeaf17/preview/dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1140
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/proglop/dsh-skin-silver-wolf-topic/290a8962102157a71e32150dcd57164fe9eeaf17/preview/dark.png

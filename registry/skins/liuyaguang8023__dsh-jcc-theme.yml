@@ -1,0 +1,54 @@
+id: liuyaguang8023.dsh.jcc.theme
+name:
+  zh: 金铲铲 · 海克斯核心
+  en: Golden Spatula Hexcore
+author: liuyaguang8023
+description: 金铲铲同人外观：浅色是羊皮纸棋盘地图，深色是奥术蓝黑竞技场，背景用内联 SVG 画六边形看台、金色铲影与海克斯晶体。右下角「海克斯核心」面板可换四枚强化符文、三档棋盘纹理、圆润或锐利棱角与氛围光效；「海克斯强化」三选一抽外观卡，共 12 张，本地存图鉴。
+repo: https://github.com/liuyaguang8023/dsh-jcc-theme
+package: dsh-jcc-theme
+rowId: ui-jcc-theme
+category: skin
+tags:
+  - hextech
+  - palette
+  - fan-theme
+  - codex
+modes:
+  - light
+  - dark
+install:
+  target: github:liuyaguang8023/dsh-jcc-theme#956967c10af52cdb56b806a64dfe917e377066b7
+  version: 0.2.0
+  commit: 956967c10af52cdb56b806a64dfe917e377066b7
+compatibility:
+  dsh: ">=0.2.0-rc.1 || >=0.2.0-rc.1 <0.3.0-0 || 0.2.1-rc.2"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/liuyaguang8023/dsh-jcc-theme/956967c10af52cdb56b806a64dfe917e377066b7/assets/screenshot-dark.png
+  - https://raw.githubusercontent.com/liuyaguang8023/dsh-jcc-theme/956967c10af52cdb56b806a64dfe917e377066b7/assets/screenshot-light.png
+  - https://raw.githubusercontent.com/liuyaguang8023/dsh-jcc-theme/956967c10af52cdb56b806a64dfe917e377066b7/assets/screenshot-sharp.png
+  - https://raw.githubusercontent.com/liuyaguang8023/dsh-jcc-theme/956967c10af52cdb56b806a64dfe917e377066b7/assets/screenshot-draft.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1150
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/liuyaguang8023/dsh-jcc-theme/956967c10af52cdb56b806a64dfe917e377066b7/assets/screenshot-dark.png

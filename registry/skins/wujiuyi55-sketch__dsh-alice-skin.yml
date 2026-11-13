@@ -1,0 +1,55 @@
+id: wujiuyi55.sketch.dsh.alice.skin
+name:
+  zh: 爱丽丝与彼岸皮肤
+  en: Alice Nation Skin
+author: wujiuyi55-sketch
+description: 把 Web 界面换成「爱丽丝与彼岸」风格的配色与装饰：60 多个设计令牌一起换，侧栏、气泡、按钮、代码块与滚动条同步变色，右侧叠一层低透明度立绘。右下角角色面板列 12 个头像，点头像换主题色和立绘；面板可拖动、收起，也能关掉背景立绘。
+repo: https://github.com/wujiuyi55-sketch/dsh-alice-skin
+package: dsh-client-ui-alice-skin
+rowId: ui-alice-skin
+category: skin
+tags:
+  - anime
+  - light-dark
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:wujiuyi55-sketch/dsh-alice-skin#ead5a3a54d001431aa44ba28998310ebf103f1d9
+  version: 0.1.0
+  commit: ead5a3a54d001431aa44ba28998310ebf103f1d9
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/wujiuyi55-sketch/dsh-alice-skin/ead5a3a54d001431aa44ba28998310ebf103f1d9/docs/light.png
+  - https://raw.githubusercontent.com/wujiuyi55-sketch/dsh-alice-skin/ead5a3a54d001431aa44ba28998310ebf103f1d9/docs/dark.png
+  - https://raw.githubusercontent.com/wujiuyi55-sketch/dsh-alice-skin/ead5a3a54d001431aa44ba28998310ebf103f1d9/docs/dragged.png
+  - https://raw.githubusercontent.com/wujiuyi55-sketch/dsh-alice-skin/ead5a3a54d001431aa44ba28998310ebf103f1d9/docs/character-xiaoli.png
+  - https://raw.githubusercontent.com/wujiuyi55-sketch/dsh-alice-skin/ead5a3a54d001431aa44ba28998310ebf103f1d9/docs/aura-off.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1167
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/wujiuyi55-sketch/dsh-alice-skin/ead5a3a54d001431aa44ba28998310ebf103f1d9/docs/light.png

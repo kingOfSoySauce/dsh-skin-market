@@ -1,0 +1,52 @@
+id: orxz.dshthemes.ui
+name:
+  zh: DSH 主题合集
+  en: DSH Theme Collection
+author: orxz
+description: 内置十一套 DSH 主题配色，并在「设置 → 通用」加一行主题选择器：选中即应用，支持第三方主题注册与选择持久化。
+repo: https://github.com/orxz/deepseek-harness-themes
+subpath: packages/ui
+package: "@dshthemes/ui"
+rowId: dsh-themes
+category: skin
+tags:
+  - theme
+  - palette
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:orxz/deepseek-harness-themes#f83ad9980be8b8e47d02e1c3cf8443ab6a02bee3&path:/packages/ui
+  version: 0.2.0
+  commit: f83ad9980be8b8e47d02e1c3cf8443ab6a02bee3
+compatibility:
+  dsh: ^0.0.1-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/orxz/deepseek-harness-themes/f83ad9980be8b8e47d02e1c3cf8443ab6a02bee3/screenshots/settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1166
+starsSnapshot: 7
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/orxz/deepseek-harness-themes/f83ad9980be8b8e47d02e1c3cf8443ab6a02bee3/screenshots/settings.png

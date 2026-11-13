@@ -1,0 +1,54 @@
+id: ai.nice.dsh.pamper
+name:
+  zh: 宠爱 · 多角色桌宠
+  en: Pamper Multi-Pet
+author: Ai-nice
+description: 独立桌宠插件：宠爱页面分角色、桌宠配置、发现三栏，可同时显示多只宠物；每只都能开关、改名、调尺寸和角落位置。页面右下角有陪伴浮层，Windows 上还能开无边框透明桌面窗；透明 WebM 动作在发现页按需下载，数据写在 DSH_HOME/pamper。
+repo: https://github.com/Ai-nice/dsh-pamper
+subpath: plugins/dsh-pamper
+package: dsh-pamper
+rowId: dsh-pamper
+category: pet
+tags:
+  - pet
+  - desktop-pet
+  - multi-pet
+  - windows
+modes:
+  - light
+  - dark
+install:
+  target: github:Ai-nice/dsh-pamper#55abab281a0eeca987d8f977a6470de38cc7c707&path:/plugins/dsh-pamper
+  version: 0.6.0-dev.15
+  commit: 55abab281a0eeca987d8f977a6470de38cc7c707
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Ai-nice/dsh-pamper/55abab281a0eeca987d8f977a6470de38cc7c707/preview/all-characters-shot.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1145
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/Ai-nice/dsh-pamper/55abab281a0eeca987d8f977a6470de38cc7c707/preview/all-characters-shot.png

@@ -1,0 +1,54 @@
+id: tobewin.dsh.skin.studio
+name:
+  zh: 皮肤工作室
+  en: DSH Skin Studio
+author: ToBeWin
+description: 在设置 → 皮肤工作室里切换 10 套内置皮肤，或用「自定义画布」做一套全局外观：上传不超过 5 MB 的本地背景图，选浅色或深色基底，分别调背景、表面、强调与文字颜色，再缩放、移动或拖动焦点为图片取景。图片与配色只保存在本机并即时应用到整个界面。
+repo: https://github.com/ToBeWin/DSH-Skin-Studio
+package: "@tobewin/dsh-skin-studio"
+rowId: tobewin-dsh-skin-studio
+category: skin
+tags:
+  - skins
+  - custom
+  - palette
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:ToBeWin/DSH-Skin-Studio#ace2e57915a28edb3b352002b14d86253ee49fd1
+  version: 0.1.0
+  commit: ace2e57915a28edb3b352002b14d86253ee49fd1
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ToBeWin/DSH-Skin-Studio/ace2e57915a28edb3b352002b14d86253ee49fd1/docs/images/skin-studio-applied.png
+  - https://raw.githubusercontent.com/ToBeWin/DSH-Skin-Studio/ace2e57915a28edb3b352002b14d86253ee49fd1/docs/images/skin-studio.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1141
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/ToBeWin/DSH-Skin-Studio/ace2e57915a28edb3b352002b14d86253ee49fd1/docs/images/skin-studio-applied.png

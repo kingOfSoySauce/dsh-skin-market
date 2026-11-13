@@ -1,0 +1,54 @@
+id: mjw.git.pet
+name:
+  zh: DSH 桌宠养成
+  en: DSH Pet
+author: mjw-git
+description: 右下角桌宠：把输入、缓存读取、缓存写入、输出四类 token 累加成经验，升级解锁称号阶梯。它会跟着对话在思考、调用工具、工具出错、完成之间换动画，也可以改名、缩放、拖动，或上传自己的精灵图和状态动作映射；悬停拉出轨道坞，还能开一局局域网 P2P 五子棋。
+repo: https://github.com/mjw-git/dsh-pet
+subpath: packages/pet
+package: "@dsh-pet/pet"
+rowId: pet
+category: pet
+tags:
+  - pet
+  - xp
+  - spritesheet
+  - gomoku
+modes:
+  - light
+  - dark
+install:
+  target: github:mjw-git/dsh-pet#7b79731589e3cdfcebd964b7a2dcd2d4193d5952&path:/packages/pet
+  version: 0.5.0
+  commit: 7b79731589e3cdfcebd964b7a2dcd2d4193d5952
+compatibility:
+  dsh: 0.1.5-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/mjw-git/dsh-pet/7b79731589e3cdfcebd964b7a2dcd2d4193d5952/demo_en.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1151
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/mjw-git/dsh-pet/7b79731589e3cdfcebd964b7a2dcd2d4193d5952/demo_en.jpg

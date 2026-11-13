@@ -1,0 +1,53 @@
+id: huantest2024.dsh.anime.theme
+name:
+  zh: 二次元壁纸主题
+  en: Anime Wallpaper Theme
+author: huantest2024
+description: 给 DSH 套上二次元外观：13 张全屏动漫壁纸（也可自行添加），六套全局配色，玻璃质感的侧栏、输入框与弹层；樱花、萤火、落雪三种粒子特效可开关，右下角随机动图挂件预置 8 套。还能上传 mp4/webm 动态壁纸（≤30 MB），主题面板可一键切回原生界面。
+repo: https://github.com/huantest2024/dsh-anime-theme
+package: dsh-anime-theme
+rowId: anime-theme
+category: skin
+tags:
+  - anime
+  - wallpaper
+  - glass
+  - particles
+modes:
+  - light
+  - dark
+install:
+  target: github:huantest2024/dsh-anime-theme#aeb82de93f6135e8e7ffeb79d9a09886559ab7ec
+  version: 1.1.0
+  commit: aeb82de93f6135e8e7ffeb79d9a09886559ab7ec
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/huantest2024/dsh-anime-theme/aeb82de93f6135e8e7ffeb79d9a09886559ab7ec/docs/preview.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1158
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/huantest2024/dsh-anime-theme/aeb82de93f6135e8e7ffeb79d9a09886559ab7ec/docs/preview.jpg

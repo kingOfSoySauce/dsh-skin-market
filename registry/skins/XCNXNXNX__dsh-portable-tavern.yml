@@ -1,0 +1,55 @@
+id: xcnxnxnx.dsh.portable.tavern
+name:
+  zh: 便携酒馆
+  en: Portable Tavern
+author: XCNXNXNX
+description: 在 DSH 里开一间酒馆：用七块面板捏出 SillyTavern V2/V3 角色卡，也能导入 JSON 或 PNG 角色卡，每个角色独立上下文，可接 OpenAI 兼容接口。支持 1–12 人队伍（各自提示词与模型）、带系统判定的跑团冒险、世界书、六套面板主题与社区扩展。
+repo: https://github.com/XCNXNXNX/dsh-portable-tavern
+package: dsh-portable-tavern
+rowId: portable-tavern
+category: skin
+tags:
+  - rpg
+  - character-card
+  - chat
+  - theme
+modes:
+  - light
+  - dark
+install:
+  target: github:XCNXNXNX/dsh-portable-tavern#b1b319b60680f8d16acd3499775b57ded8096304
+  version: 0.4.1
+  commit: b1b319b60680f8d16acd3499775b57ded8096304
+compatibility:
+  dsh: 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/chat.png
+  - https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/party.png
+  - https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/adventure.png
+  - https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/character.png
+  - https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/themes.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1142
+starsSnapshot: 25
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/chat.png

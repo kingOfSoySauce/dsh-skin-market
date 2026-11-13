@@ -1,0 +1,57 @@
+id: duty25.dsh.aemeath.theme
+name:
+  zh: 爱弥斯像素主题
+  en: Aemeath Pixel Theme
+author: duty25
+description: 鸣潮爱弥斯像素风主题：像素小爱弥斯默认坐在输入框上方，可拖到任意位置，并随 Agent 工作、出错、完成换动作；空闲会伸懒腰、打哈欠，摸头会记好感度。星夜背景可调暗度与模糊、也能换成自定义图，另有四套配色、像素按键与通讯卡式回复，设置页是频段柱样式。
+repo: https://github.com/duty25/dsh-aemeath-theme
+package: dsh-aemeath-theme
+rowId: aemeath-theme
+category: skin
+tags:
+  - pixel
+  - theme
+  - mobile
+  - companion
+modes:
+  - light
+  - dark
+install:
+  target: github:duty25/dsh-aemeath-theme#872408b84287ed44be2ae8ea9a601ea54704fdc7
+  version: 1.0.2
+  commit: 872408b84287ed44be2ae8ea9a601ea54704fdc7
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/duty25/dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/docs/desktop-chat.webp
+  - https://raw.githubusercontent.com/duty25/dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/docs/desktop-settings-system.webp
+  - https://raw.githubusercontent.com/duty25/dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/docs/phone-chat.webp
+  - https://raw.githubusercontent.com/duty25/dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/docs/phone-sidebar.webp
+  - https://raw.githubusercontent.com/duty25/dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/docs/desktop-settings-modules.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1146
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/duty25/dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/docs/desktop-chat.webp

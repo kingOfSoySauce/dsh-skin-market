@@ -1,0 +1,58 @@
+id: hetonghao.dsh.zed.space
+name:
+  zh: Zed Space 动态皮肤
+  en: Zed Space Dynamic Skin
+author: hetonghao
+description: 把动态背景接进 Web 界面：实时海洋可调波浪、日光和自动昼夜；黑洞有地平线、吸积涡旋两个视角，各场景单独保存参数与玻璃浓度。另有本地视频库（单个上限 32 MiB、30 秒、1080p）和在线壁纸市场，下载后可显式应用。
+repo: https://github.com/hetonghao/dsh-zed-space
+package: dsh-zed-space
+rowId: dsh-zed-space
+category: skin
+tags:
+  - wallpaper
+  - motion
+  - ocean
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:hetonghao/dsh-zed-space#c879d8e6ca6afabcbd227a69cebd0cd4398a300d
+  version: 1.0.2
+  commit: c879d8e6ca6afabcbd227a69cebd0cd4398a300d
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/hetonghao/dsh-zed-space/c879d8e6ca6afabcbd227a69cebd0cd4398a300d/docs/screenshots/harness-event-horizon.png
+  - https://raw.githubusercontent.com/hetonghao/dsh-zed-space/c879d8e6ca6afabcbd227a69cebd0cd4398a300d/docs/screenshots/harness-accretion-vortex.png
+  - https://raw.githubusercontent.com/hetonghao/dsh-zed-space/c879d8e6ca6afabcbd227a69cebd0cd4398a300d/docs/screenshots/harness-ocean.png
+  - https://raw.githubusercontent.com/hetonghao/dsh-zed-space/c879d8e6ca6afabcbd227a69cebd0cd4398a300d/docs/screenshots/harness-video-clouds.png
+  - https://raw.githubusercontent.com/hetonghao/dsh-zed-space/c879d8e6ca6afabcbd227a69cebd0cd4398a300d/docs/screenshots/harness-video-deep-dive.png
+  - https://raw.githubusercontent.com/hetonghao/dsh-zed-space/main/docs/screenshots/harness-event-horizon.png
+  - https://raw.githubusercontent.com/hetonghao/dsh-zed-space/main/docs/screenshots/harness-accretion-vortex.png
+  - https://raw.githubusercontent.com/hetonghao/dsh-zed-space/main/docs/screenshots/harness-ocean.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1162
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/hetonghao/dsh-zed-space/c879d8e6ca6afabcbd227a69cebd0cd4398a300d/docs/screenshots/harness-event-horizon.png

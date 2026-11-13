@@ -1,0 +1,54 @@
+id: 0928oyx.skin.gallery
+name:
+  zh: 免费皮肤画廊
+  en: Free Skin Gallery
+author: 0928OYX
+description: 在设置里新增「界面皮肤」栏目，用卡片管理 7 款原创皮肤，可以先试穿再应用、免重启，并带 0–100% 不透明度滑块。还能选本机图片做对话区背景，按画幅框选裁剪后固定不随对话滚动，对话区背景会自动保存。
+repo: https://github.com/0928OYX/dsh-free-skins
+subpath: skin-gallery
+package: "@dsh-external/dsh-client-ui-skin-gallery"
+rowId: ui-app-skin-gallery
+category: skin
+tags:
+  - anime
+  - gallery
+  - free
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:0928OYX/dsh-free-skins#60bed2182f79e7a62d89d770d5461e3da981547b&path:/skin-gallery
+  version: 0.1.0
+  commit: 60bed2182f79e7a62d89d770d5461e3da981547b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/0928OYX/dsh-free-skins/60bed2182f79e7a62d89d770d5461e3da981547b/preview/session-shorekeeper-poster.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1134
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-13T04:37:09.826Z
+listScreenshot: https://raw.githubusercontent.com/0928OYX/dsh-free-skins/60bed2182f79e7a62d89d770d5461e3da981547b/preview/session-shorekeeper-poster.jpg
