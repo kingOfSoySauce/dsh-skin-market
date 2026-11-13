@@ -1,6 +1,52 @@
-url: https://github.com/Earheart-spy/dsh-nitai-theme
+id: earheart.spy.dsh.nitai.theme
 name:
   zh: 拟态主题 · 功能刘海
   en: Neumorphic Theme with Notch
 author: Earheart-spy
 description: 拟态（新拟态）风格的 DSH 主题：冷灰画布、双向软阴影与明暗双模式；窗口顶部自带功能刘海，显示时钟、星期、峰谷倒计时、今日/会话费用与余额，并按当前模型供应商切换 OpenCode Go 用量视图。
+repo: https://github.com/Earheart-spy/dsh-nitai-theme
+package: dsh-nitai-theme
+rowId: nitai-theme
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:Earheart-spy/dsh-nitai-theme#5e4623b41961b33f49a1b1f30030b3acf7b8c683
+  version: 0.3.0
+  commit: 5e4623b41961b33f49a1b1f30030b3acf7b8c683
+compatibility:
+  dsh: ">=0.2.0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-light.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-dark.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-light-panel.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-dark-panel.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/hover-card-light.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/hover-card-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T05:01:26.557Z
+metadataUpdatedAt: 2026-11-13T05:01:26.557Z
+starsUpdatedAt: 2026-11-13T05:01:26.557Z
+updatedAt: 2026-11-13T05:01:26.557Z
