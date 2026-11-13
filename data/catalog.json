@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T05:19:18.484Z",
+  "generatedAt": "2026-11-13T09:28:17.373Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -65883,6 +65883,262 @@
           }
         ]
       }
+    },
+    {
+      "id": "abitsse6.dsh.theme.zzz",
+      "name": {
+        "zh": "绝区零主题",
+        "en": "Zenless Zone Zero Theme"
+      },
+      "author": "AbiTssE6",
+      "description": "把 Web 界面改成《绝区零》风格，并在背景叠加跟随鼠标、按下缩放的动态「空洞」光圈；设置里可切换印品鸿蒙体/思源黑体字体，并单独开关强制思源黑体。",
+      "repo": "https://github.com/AbiTssE6/dsh-theme-zzz",
+      "subpath": "packages/dsh-theme-zzz",
+      "package": "dsh-theme-zzz",
+      "rowId": "theme-zzz",
+      "category": "skin",
+      "tags": [
+        "zzz",
+        "hollow",
+        "accent",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:AbiTssE6/dsh-theme-zzz#f4ea58c22685264fc7081ecd386dbdffa313b922&path:/packages/dsh-theme-zzz",
+        "version": "0.3.6",
+        "commit": "f4ea58c22685264fc7081ecd386dbdffa313b922"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/f4ea58c22685264fc7081ecd386dbdffa313b922/docs/preview.png",
+        "https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/f4ea58c22685264fc7081ecd386dbdffa313b922/docs/hollow-shot.png",
+        "https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/f4ea58c22685264fc7081ecd386dbdffa313b922/docs/hollow.gif"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1173,
+      "starsSnapshot": 1,
+      "releaseUpdatedAt": "2026-11-13T09:19:15.720Z",
+      "metadataUpdatedAt": "2026-11-13T09:19:15.720Z",
+      "starsUpdatedAt": "2026-11-13T09:19:15.720Z",
+      "updatedAt": "2026-11-13T09:19:15.720Z",
+      "listScreenshot": "https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/f4ea58c22685264fc7081ecd386dbdffa313b922/docs/preview.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5dc4ea0b6dab038fcf4422c79186ed7d.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5dc4ea0b6dab038fcf4422c79186ed7d.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5dc4ea0b6dab038fcf4422c79186ed7d.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5dc4ea0b6dab038fcf4422c79186ed7d.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/790c59ac15ee1fb8190395123293db0b.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/790c59ac15ee1fb8190395123293db0b.full.webp"
+          },
+          null
+        ]
+      }
+    },
+    {
+      "id": "frank6892103.dsh.wutheringwaves",
+      "name": {
+        "zh": "爱弥斯主题",
+        "en": "Aemeath Theme"
+      },
+      "author": "frank6892103",
+      "description": "以《鸣潮》角色爱弥斯为主题的配色皮肤：角色立绘背景与同色系强调色，浅色/深色各一套，可从右下角主题中心与其他角色主题互斥切换，随时恢复官方外观。",
+      "repo": "https://github.com/frank6892103/dsh-WutheringWaves",
+      "subpath": "themes/aemeath",
+      "package": "@dsh-external/dsh-client-ui-skin-wuthering-aemeath",
+      "rowId": "ui-skin-wuthering-aemeath",
+      "category": "skin",
+      "tags": [
+        "character",
+        "wuthering-waves",
+        "artwork",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:frank6892103/dsh-WutheringWaves#a994c8d39e18f8314fdd61654f2b42f0ec933a39&path:/themes/aemeath",
+        "version": "0.3.2",
+        "commit": "a994c8d39e18f8314fdd61654f2b42f0ec933a39"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/frank6892103/dsh-WutheringWaves/a994c8d39e18f8314fdd61654f2b42f0ec933a39/themes/aemeath/preview/dark.webp",
+        "https://raw.githubusercontent.com/frank6892103/dsh-WutheringWaves/a994c8d39e18f8314fdd61654f2b42f0ec933a39/themes/aemeath/preview/light.webp"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1174,
+      "starsSnapshot": 1,
+      "releaseUpdatedAt": "2026-11-13T09:19:15.720Z",
+      "metadataUpdatedAt": "2026-11-13T09:19:15.720Z",
+      "starsUpdatedAt": "2026-11-13T09:19:15.720Z",
+      "updatedAt": "2026-11-13T09:19:15.720Z",
+      "listScreenshot": "https://raw.githubusercontent.com/frank6892103/dsh-WutheringWaves/a994c8d39e18f8314fdd61654f2b42f0ec933a39/themes/aemeath/preview/dark.webp",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5f1ff5e33d4cc4ce0a7080e93e3f9c9e.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5f1ff5e33d4cc4ce0a7080e93e3f9c9e.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5f1ff5e33d4cc4ce0a7080e93e3f9c9e.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5f1ff5e33d4cc4ce0a7080e93e3f9c9e.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bb45b12e174f5fd5d9a847e37de13aba.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bb45b12e174f5fd5d9a847e37de13aba.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ase.sketch.dsh.theme",
+      "name": {
+        "zh": "压印主题",
+        "en": "IMPRINT Theme"
+      },
+      "author": "ase-sketch",
+      "description": "把界面排成每天出的刊物：纸纹与光照做材质、发丝线与页码组织版面、宋体正文配 Georgia 数字，零圆角零阴影；含浅色纸与深色炭纸两套。",
+      "repo": "https://github.com/ase-sketch/dsh-theme",
+      "subpath": "plugins/dsh-theme",
+      "package": "dsh-theme",
+      "rowId": "ui-skin-dsh-theme",
+      "category": "skin",
+      "tags": [
+        "print",
+        "editorial",
+        "paper",
+        "serif",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:ase-sketch/dsh-theme#80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee&path:/plugins/dsh-theme",
+        "version": "0.1.1",
+        "commit": "80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/ase-sketch/dsh-theme/80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee/skins/dsh-ui/preview/light.jpg",
+        "https://raw.githubusercontent.com/ase-sketch/dsh-theme/80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee/skins/dsh-ui/preview/dark.jpg"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1175,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-13T09:19:15.720Z",
+      "metadataUpdatedAt": "2026-11-13T09:19:15.720Z",
+      "starsUpdatedAt": "2026-11-13T09:19:15.720Z",
+      "updatedAt": "2026-11-13T09:19:15.720Z",
+      "listScreenshot": "https://raw.githubusercontent.com/ase-sketch/dsh-theme/80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee/skins/dsh-ui/preview/light.jpg",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c75cb9c3cb234bce49a640c113b953bb.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c75cb9c3cb234bce49a640c113b953bb.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c75cb9c3cb234bce49a640c113b953bb.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c75cb9c3cb234bce49a640c113b953bb.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a94084656965e3332b18d4bb4c562d4e.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a94084656965e3332b18d4bb4c562d4e.full.webp"
+          }
+        ]
+      }
     }
   ],
   "npmSources": {
@@ -73664,6 +73920,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "abitsse6.dsh.theme.zzz": {
+        "name": {
+          "zh": "绝区零主题",
+          "en": "Zenless Zone Zero Theme"
+        },
+        "description": {
+          "zh": "把 Web 界面改成《绝区零》风格，并在背景叠加跟随鼠标、按下缩放的动态「空洞」光圈；设置里可切换印品鸿蒙体/思源黑体字体，并单独开关强制思源黑体。",
+          "en": "A Zenless Zone Zero-style Web skin with a dynamic Hollow ring that follows the cursor and scales on press; the settings page switches between Inpin Hongmeng and Source Han Sans fonts, with a forced-fallback toggle."
+        },
+        "descriptionPolicy": "show"
+      },
       "abyss2021.dsh-glass-skin": {
         "name": {
           "zh": "透明玻璃皮肤",
@@ -73969,6 +74236,17 @@
         "description": {
           "zh": "置顶的 DSH 桌面宠物窗口，默认是鲸鱼，提供四套皮肤和四种静默状态；网页中只显示同步镜像，不是页面内挂件。使用系统 Python，无额外依赖。",
           "en": "An always-on-top DSH desk-pet window with a default whale, four skins, and four silent states; the Web UI shows a synchronized mirror rather than an in-page widget. Uses system Python with no extra dependencies."
+        },
+        "descriptionPolicy": "show"
+      },
+      "ase.sketch.dsh.theme": {
+        "name": {
+          "zh": "压印主题",
+          "en": "IMPRINT Theme"
+        },
+        "description": {
+          "zh": "把界面排成每天出的刊物：纸纹与光照做材质、发丝线与页码组织版面、宋体正文配 Georgia 数字，零圆角零阴影；含浅色纸与深色炭纸两套。",
+          "en": "A print-style layout: paper grain and lighting as material, hairline rules and folio numbers, Song-style body text with Georgia numerals, no rounded corners or shadows; paper and charcoal-paper variants."
         },
         "descriptionPolicy": "show"
       },
@@ -75384,6 +75662,17 @@
         "description": {
           "zh": "把 F1 赛事控制中心搬进 Web 界面：红牛、法拉利、迈凯伦、梅奔四支车队主题各有品牌色、对比文字和赛车摄影背景。设置页可切换车队、调背景强度、文字衬底与模糊，也能按车队上传自定义壁纸，并跟随明暗与跟随系统。",
           "en": "An F1 race-control skin with four team themes — Red Bull, Ferrari, McLaren and Mercedes — each with its own brand colours, readable text backing and broadcast photo backdrop. The native settings panel switches teams, tunes photo strength, text backing and blur, and accepts per-team custom wallpapers while following light, dark or system."
+        },
+        "descriptionPolicy": "show"
+      },
+      "frank6892103.dsh.wutheringwaves": {
+        "name": {
+          "zh": "爱弥斯主题",
+          "en": "Aemeath Theme"
+        },
+        "description": {
+          "zh": "以《鸣潮》角色爱弥斯为主题的配色皮肤：角色立绘背景与同色系强调色，浅色/深色各一套，可从右下角主题中心与其他角色主题互斥切换，随时恢复官方外观。",
+          "en": "An Aemeath (Wuthering Waves) character skin: character artwork background and matching accents in light and dark variants, switchable from the corner theme center and reversible to the default look."
         },
         "descriptionPolicy": "show"
       },
