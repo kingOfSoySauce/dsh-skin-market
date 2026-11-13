@@ -273,6 +273,30 @@ describe('client market catalog and updates', () => {
     expect(banner.textContent).not.toContain(zh['common.operationWaitingOther'])
     expect(banner.textContent).not.toContain('下载并检查安装包')
   })
+  it('opens the skin submission dialog from the home header and copies the localized prompt', async () => {
+    const clipboard = vi.fn(async () => undefined)
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, writable: true, value: { writeText: clipboard } })
+    stubMarketFetch(async (url: string) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [], runtime: dshRuntime }
+      return {}
+    })
+    render(<SkinMarketSection t={createStaticTranslator('zh')} />)
+
+    fireEvent.click(await screen.findByRole('button', { name: zh['market.submitSkin'] }))
+    const dialog = await screen.findByRole('dialog', { name: zh['common.submissionTitle'] })
+    const prompt = within(dialog).getByLabelText(zh['common.agentPromptLabel']) as HTMLTextAreaElement
+    expect(prompt.value).toContain('url（必填）')
+    expect(prompt.value).toContain('name.zh')
+    expect(prompt.value).toContain('category 只能是 skin、pet、player 或 splash')
+    expect(prompt.value).toContain('缺省时由 CI 推导')
+    expect(prompt.value).toContain('npm run registry:check')
+    expect(dialog.textContent).toContain(zh['common.submissionDisclaimer'])
+    expect(dialog.textContent).toContain(zh['common.promptNotAuthorization'])
+
+    fireEvent.click(within(dialog).getByRole('button', { name: zh['common.copyPrompt'] }))
+    await waitFor(() => expect(clipboard).toHaveBeenCalledWith(prompt.value))
+  })
   it.each(['done', 'failed', 'cancelled'] as const)('refreshes host state and unlocks skin actions after a waiting market update becomes %s', async phase => {
     let terminal = false
     let operationRequests = 0

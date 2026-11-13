@@ -195,20 +195,20 @@ This command disables skins managed by Skin Market and restores the default appe
 
 If you maintain a DSH skin, give one of the prompts below to an Agent to prepare a catalog entry or update its display fields. The market does not log in to GitHub for you or silently create a PR.
 
-A new entry is a thin YAML file; fields and priority are in the table below. CI reads the package, loader id, commit, license, and compatibility range from the skin repository. Do not write them into the YAML. A community PR changes exactly one `registry/skins/<owner>__<repo>.yml` and does not edit `data/catalog.json` or `data/catalog-copy.json`.
+A new entry is a thin YAML file; fields and priority are in the table below. `url` is required; the name, author, description, category, tags, modes, preview images, and subpath are optional — fill in what you can confirm and CI derives the rest. CI reads the package, loader id, commit, license, and compatibility range from the skin repository. Do not write them into the YAML. A community PR changes exactly one `registry/skins/<owner>__<repo>.yml` and does not edit `data/catalog.json` or `data/catalog-copy.json`.
 
 <!-- submission-contract:START -->
 | Group | Fields / items | Rule |
 | --- | --- | --- |
-| Author (thin entry) | `url`, `subpath`, `name`, `author`, `description`, `screenshots` | Write only these. If you write `name`, include both `zh` and `en`. |
-| Filled by CI | `package`, `rowId`, `install`, `license`, `compatibility`, `category`, `tags`, `modes` | Do not write these; the schema rejects them. |
+| Author (thin entry) | `url`, `subpath`, `name`, `author`, `description`, `category`, `tags`, `modes`, `screenshots` | Write only these. If you write `name`, include both `zh` and `en`. Every field except `url` may be omitted; CI derives the default: `name`=repository name (subdirectory name for a subpackage), `author`=GitHub owner, `description`=`package.json` description, `category`=`skin`, `tags`=`appearance`, `modes`=`light` and `dark`, `screenshots`=repository `screenshots.json` or README images. |
+| Filled by CI | `package`, `rowId`, `install`, `license`, `compatibility` | Do not write these; the schema rejects them. |
 | Soft-required (non-blocking, enters the completion queue) | a usable preview image (upstream or captured), bilingual display name / description, motion GIF, splash launchGif | An entry may merge without them; it is recorded in the daily completeness report and enters the completion queue once enabled. |
 | Recommended (advisory only) | captured `marketScreenshots`, cover `listScreenshot`, WebP `media`, README install command / version range (Web and official Desktop) / `dsh-plugin` topic, Desktop install support (npm package or manual install notes) | Never blocks a merge. |
 <!-- submission-contract:END -->
 
 CI must be able to read the skin repository: a public GitHub repository or monorepo subdirectory; `package.json` with name, version, license, and `dsh.client`; and a matching loader row in `cordis.patch.yml`. Preview images must be png, jpg, webp, or gif files in the repository. It also helps to declare the DSH Web and official Desktop version ranges and a `dsh plugin add` command in the README, and to add the `dsh-plugin` topic.
 
-An existing entry can change only `name.zh`, `name.en`, `author`, `description`, and `screenshots`. Do not change the id, install target, commit, package, or rowId. This PR does not refresh the pinned version. Acceptance is not a security certification.
+An existing entry can change only `name.zh`, `name.en`, `author`, `description`, `category`, `tags`, `modes`, and `screenshots`. Do not change the id, install target, commit, package, or rowId. This PR does not refresh the pinned version. Acceptance is not a security certification.
 
 Local acceptance steps are in [TESTING.md](./TESTING.md).
 
@@ -218,7 +218,7 @@ Local acceptance steps are in [TESTING.md](./TESTING.md).
 Copy the entire prompt below to your Agent:
 
 ```text
-Please submit my DSH skin to DSH Skin Market.
+Help me submit a DSH skin to DSH Skin Market.
 
 Skin repository: <your skin repository URL>
 Target catalog repository: https://github.com/kingOfSoySauce/dsh-skin-market
@@ -229,28 +229,37 @@ Follow these steps:
 2. Confirm that CI can read these materials from that repository. If any are missing, tell me first and do not invent them:
    - package.json has name, version, license, and dsh.client
    - cordis.patch.yml has a loader row matching the package name
-   - the description is in the thin entry or package.json description
-   - preview images are png, jpg, webp, or gif files in the repository, from screenshots.json relative paths, README images, or the thin entry screenshots field
+   - the description is in the thin entry description or package.json description
+   - preview images are png, jpg, webp, or gif files in the repository, from screenshots.json relative paths, README repository images, or the thin entry screenshots field (https image URLs)
    - the README should declare the DSH Web and official Desktop version ranges and include a dsh plugin add command; the repository should have the dsh-plugin topic
 3. Fork or clone the catalog repository and create a branch. Add exactly one YAML file under registry/skins, named owner__repo.yml (owner__repo--path.yml for a subpackage). Do not overwrite an existing entry or edit data/catalog.json or data/catalog-copy.json.
-4. The YAML must be a thin entry. Only these fields are allowed, and no others: url, subpath, name, author, description, screenshots. Adding package, rowId, category, tags, modes, compatibility, install, commit, or any other key fails the full schema check. The content may only be:
-
+4. The YAML must be a thin entry. Only these fields are allowed, and no others:
+   - url (required): the public GitHub repository; use subpath or the repository tree path for a monorepo subpackage
+   - optional fields: name.zh, name.en, author, description, category, tags, modes, screenshots
+   Every field except url may be omitted, and CI derives the default: name from the repository name, author from the GitHub owner, description from package.json description, category defaults to skin, tags to appearance, modes to light and dark, and screenshots from repository preview images. To keep the catalog useful, fill in the optional fields you can confirm, especially both name.zh and name.en, plus author, description, category, tags, applicable modes, and preview images.
+   Allowed values: category is one of skin, pet, player, or splash; tags is a non-empty array of strings; modes is a non-empty subset of light and dark; screenshots holds https image URLs, or put images in the repository screenshots.json / README. package, rowId, install, license, compatibility, and commit are still read by CI from the repository; do not hand-write them. The content may only be:
 url: https://github.com/<owner>/<repo>
 # subpath: packages/my-skin   # only for a monorepo subpackage
 # name:                       # optional; if present, include both zh and en
 #   zh: Chinese name
 #   en: English name
 # author: owner               # optional; defaults to the GitHub owner
-# description: one sentence about what the user sees
-# screenshots:                # optional; repository-relative image paths only
-#   - screenshots/home.png
+# description: one sentence about what the user sees  # optional; defaults to package.json description
+# category: skin              # optional; skin, pet, player, or splash
+# tags:                       # optional; non-empty array of strings
+#   - appearance
+# modes:                      # optional; non-empty subset of light and dark
+#   - light
+#   - dark
+# screenshots:                # optional; https image URLs; repository screenshots.json or README is preferred
+#   - https://.../screenshots/home.png
 
 5. Do not write the full schema or invent a commit SHA, rowId, or license. If npm run registry:check reports a missing id/install, remove every field outside the thin entry and rerun it. Do not fill in the schema to pass CI.
 6. Run npm run registry:check in the catalog repository root. Do not install anything into my real DSH profile.
-7. git diff --name-only must contain only registry/skins/<entry-file>.yml. Commit and create a PR titled feat(registry): add <skin-name>.
+7. git diff --name-only must contain only registry/skins/<entry-file>.yml. Commit and create a PR against https://github.com/kingOfSoySauce/dsh-skin-market titled feat(registry): add <skin-name>.
 8. Return the PR link. If you do not have GitHub permission, only prepare the branch and copyable PR content.
 
-Acceptance is not a security certification. Do not claim that DSH, a security team, or the market endorsed this skin.
+A catalog entry is not a safety certification. Do not claim that DSH, a security team, or the market endorsed this skin.
 ```
 
 </details>
@@ -258,7 +267,7 @@ Acceptance is not a security certification. Do not claim that DSH, a security te
 <details>
 <summary><strong>Click to expand the display-field update prompt</strong></summary>
 
-Use this when changing only the name, author, description, or preview images. Fill in the fields and new text before copying.
+Use this when changing only the display fields. Fill in the fields and new text before copying.
 
 ```text
 Please update the display fields of a skin already listed in DSH Skin Market.
@@ -266,16 +275,18 @@ Please update the display fields of a skin already listed in DSH Skin Market.
 Skin repository: <your skin repository URL>
 Target catalog repository: https://github.com/kingOfSoySauce/dsh-skin-market
 Catalog path: registry/skins
-Fields to change: <which of name.zh, name.en, author, description, and screenshots, plus the new content>
+Fields to change: <which of name.zh, name.en, author, description, category, tags, modes, and screenshots, plus the new content>
 
 Follow these steps:
 1. Use read-only checks to confirm that this repository already has an entry under registry/skins and that its remote matches the entry repo. If you cannot find it, stop and ask me. Do not create a new entry. Do not read .env, credentials, or chat history.
 2. Edit only that existing YAML file. A community PR may change exactly one registry/skins/<entry>.yml. Do not change other entries, data/catalog.json, or data/catalog-copy.json.
-3. Change only these display fields: name.zh, name.en, author, description, and screenshots. name must keep both zh and en. description should say what the user sees. screenshots may use only png, jpg, webp, or gif files from the repository at the currently pinned commit. Do not switch them to a newer commit, SVG, a data URI, or a third-party image host.
-4. Do not change id, repo, subpath, package, rowId, category, tags, modes, install, compatibility, review, health, license, featuredRank, star counts, or any timestamp. This PR does not refresh the pinned version. If a version refresh is needed, say so in the PR body and do not invent install.target.
+3. Change only these display fields: name.zh, name.en, author, description, category, tags, modes, and screenshots. name must keep both zh and en. description should say what the user sees. category must be one of skin, pet, player, or splash; tags must be a non-empty array of strings; modes may contain only light and dark and must not be empty. screenshots may use only png, jpg, webp, or gif files from the repository at the currently pinned commit. Do not switch them to a newer commit, SVG, a data URI, or a third-party image host.
+4. Do not change id, repo, subpath, package, rowId, install, compatibility, review, health, license, featuredRank, star counts, or any timestamp. This PR does not refresh the pinned version. If a version refresh is needed, say so in the PR body and do not invent install.target.
 5. Run npm run registry:check in the catalog repository root. Do not install anything into my real DSH profile.
 6. git diff --name-only must contain only that one YAML file. Commit and create a PR titled feat(registry): update <skin-name> display fields.
 7. Return the PR link. If you do not have GitHub permission, only prepare the branch and copyable PR content.
+
+Note: `description` and `screenshots` are display fields the author can change directly; when the PR changes only your own single YAML entry, CI will not reject it merely because the description or screenshots changed. CI does not verify entry ownership — the one-YAML rule and human review limit the scope. If this entry already has maintainer-approved display copy in `data/catalog-copy.json`, the YAML change will not automatically change the copy shown in the plugin or site. Include the Chinese and English text you want synced in the PR body; a maintainer will update the display layer after merge. Do not edit `data/catalog-copy.json` in this PR.
 
 Do not claim that the fields are already live in the online catalog. After merge, catalog sync writes them into the catalog. Acceptance is not a security certification.
 ```

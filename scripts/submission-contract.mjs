@@ -32,6 +32,17 @@ export function assertContractCoversSchema(contract, schema) {
   for (const field of allowed) {
     if (field !== 'url' && !properties.includes(field)) throw new Error(`readme field is not in the schema: ${field}`)
   }
+  for (const field of contract.authorFields) {
+    if (field === 'url') continue
+    if (contract.schemaFields[field] === 'auto') throw new Error(`author field ${field} is classified as auto in schemaFields`)
+  }
+  for (const field of contract.autoFields) {
+    if (contract.schemaFields[field] === 'author') throw new Error(`auto field ${field} is classified as author in schemaFields`)
+  }
+  for (const [field, copy] of Object.entries(contract.defaults ?? {})) {
+    if (!contract.authorFields.includes(field) || field === 'url') throw new Error(`defaults reference a field that authors cannot write: ${field}`)
+    if (typeof copy?.zh !== 'string' || typeof copy?.en !== 'string') throw new Error(`defaults for ${field} must provide zh and en text`)
+  }
   const duplicated = contract.authorFields.filter(field => contract.autoFields.includes(field))
   if (duplicated.length) throw new Error(`fields cannot be both author-filled and auto-filled: ${duplicated.join(', ')}`)
   return { properties: properties.length, classified: classified.length }
@@ -47,11 +58,22 @@ export function renderBlock(contract, locale) {
   const auto = contract.autoFields.map(tick).join(zh ? '、' : ', ')
   const soft = contract.softItems.map(item => item[locale]).join(zh ? '、' : ', ')
   const recommended = contract.recommendedItems.map(item => item[locale]).join(zh ? '、' : ', ')
+  const defaults = Object.entries(contract.defaults ?? {})
+    .map(([field, copy]) => `${tick(field)}=${copy[locale]}`)
+    .join(zh ? '、' : ', ')
+  const authorRule = [
+    zh ? '只写这些；`name` 写了就必须同时有 `zh` 和 `en`。' : 'Write only these. If you write `name`, include both `zh` and `en`.',
+    defaults === ''
+      ? ''
+      : zh
+        ? `除 \`url\` 外都可省略，缺省时由 CI 推导：${defaults}。`
+        : `Every field except \`url\` may be omitted; CI derives the default: ${defaults}.`,
+  ].filter(Boolean).join(zh ? '' : ' ')
   const lines = zh
     ? [
         '| 类别 | 字段 / 项 | 规则 |',
         '| --- | --- | --- |',
-        `| 作者写（薄条目） | ${author} | 只写这些；\`name\` 写了就必须同时有 \`zh\` 和 \`en\`。 |`,
+        `| 作者写（薄条目） | ${author} | ${authorRule} |`,
         `| CI 自动补 | ${auto} | 不要手写；写了会被 schema 拒绝。 |`,
         `| 软必填（不阻断，进补全队列） | ${soft} | 缺了仍可合并，但会记录在每日完整性报告；补全队列接入后自动进队。 |`,
         `| 推荐（只提示） | ${recommended} | 不阻断合并。 |`,
@@ -59,7 +81,7 @@ export function renderBlock(contract, locale) {
     : [
         '| Group | Fields / items | Rule |',
         '| --- | --- | --- |',
-        `| Author (thin entry) | ${author} | Write only these. If you write \`name\`, include both \`zh\` and \`en\`. |`,
+        `| Author (thin entry) | ${author} | ${authorRule} |`,
         `| Filled by CI | ${auto} | Do not write these; the schema rejects them. |`,
         `| Soft-required (non-blocking, enters the completion queue) | ${soft} | An entry may merge without them; it is recorded in the daily completeness report and enters the completion queue once enabled. |`,
         `| Recommended (advisory only) | ${recommended} | Never blocks a merge. |`,

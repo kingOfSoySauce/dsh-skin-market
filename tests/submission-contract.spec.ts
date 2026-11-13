@@ -11,6 +11,19 @@ describe('submission contract', () => {
     expect(stats.classified).toBe(stats.properties)
   })
 
+  it('keeps category, tags and modes author-writable and defaulted', async () => {
+    const contract = await loadContract()
+    for (const field of ['category', 'tags', 'modes']) {
+      expect(contract.authorFields).toContain(field)
+      expect(contract.autoFields).not.toContain(field)
+      expect(contract.schemaFields[field]).toBe('author')
+      expect(contract.defaults[field]).toBeDefined()
+    }
+    expect(contract.authorFields.filter(field => contract.autoFields.includes(field))).toEqual([])
+    const zh = renderBlock(contract, 'zh')
+    expect(zh).toContain('缺省时由 CI 推导')
+  })
+
   it('keeps the Chinese README block in sync', async () => {
     const contract = await loadContract()
     const source = await readFile(join(process.cwd(), 'README.md'), 'utf8')

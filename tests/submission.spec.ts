@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { createSkinInstallCommand, createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, createSkinInstallSearchKeyword, normalizeGitHubRepository } from '../src/client/submission.ts'
+import { createSkinInstallCommand, createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, createSkinInstallSearchKeyword, createSubmissionPrompt, normalizeGitHubRepository, REGISTRY_PATH, REGISTRY_REPOSITORY } from '../src/client/submission.ts'
+import { createStaticTranslator } from '../src/client/i18n.ts'
 import type { CatalogSkin } from '../src/client/types.ts'
 
 describe('agent-assisted skin submission', () => {
@@ -7,6 +8,56 @@ describe('agent-assisted skin submission', () => {
     expect(normalizeGitHubRepository('https://github.com/example/dsh-skin.git')).toBe('https://github.com/example/dsh-skin')
     expect(normalizeGitHubRepository('https://example.com/owner/repo')).toBeNull()
     expect(normalizeGitHubRepository('https://github.com/owner/repo/issues')).toBeNull()
+    expect(normalizeGitHubRepository('not a url')).toBeNull()
+  })
+
+  it('generates a submission prompt that normalizes the repository and names the target catalog', () => {
+    const prompt = createSubmissionPrompt('https://github.com/example/dsh-skin.git')
+    expect(prompt).toContain(`皮肤仓库：https://github.com/example/dsh-skin`)
+    expect(prompt).toContain(`目标目录仓库：${REGISTRY_REPOSITORY}`)
+    expect(prompt).toContain(`目录路径：${REGISTRY_PATH}`)
+    expect(prompt).toContain('npm run registry:check')
+    expect(prompt).toContain('创建 PR')
+    expect(prompt).toContain('不要读取 .env')
+    expect(prompt).toContain('收录不等于安全认证')
+  })
+
+  it('requires url and reminds authors to fill every optional field', () => {
+    const prompt = createSubmissionPrompt()
+    expect(prompt).toContain('如果当前工作区就是待提交的皮肤仓库')
+    expect(prompt).toContain('否则先向我索要公开 GitHub 仓库地址')
+    expect(prompt).toContain('url（必填）')
+    for (const field of ['subpath', 'name.zh', 'name.en', 'author', 'description', 'category', 'tags', 'modes', 'screenshots']) {
+      expect(prompt).toContain(field)
+    }
+    expect(prompt).toContain('缺省时由 CI 推导')
+    expect(prompt).toContain('尽量填写你能确认的可选字段')
+    expect(prompt).toContain('category 只能是 skin、pet、player 或 splash')
+    expect(prompt).toContain('tags 是非空字符串数组')
+    expect(prompt).toContain('modes 只能是 light、dark 的非空子集')
+    expect(prompt).toContain('package、rowId、install、license、compatibility、commit 仍由 CI 从仓库读取')
+    expect(prompt).toContain('不要手写')
+    expect(prompt).toContain('只允许以下字段，一个都不能多')
+    expect(prompt).toContain('不要修改 data/catalog.json')
+    expect(prompt).toContain('不要靠补全 schema 过 CI')
+    expect(prompt).toContain('不要声称该皮肤已被 DSH 官方、安全团队或市场背书')
+  })
+
+  it('returns an empty prompt for a URL that is not a GitHub repository', () => {
+    expect(createSubmissionPrompt('https://example.com/owner/repo')).toBe('')
+    expect(createSubmissionPrompt('https://github.com/owner/repo/issues')).toBe('')
+    expect(createSubmissionPrompt('not a url')).toBe('')
+  })
+
+  it('localizes the submission prompt in English', () => {
+    const prompt = createSubmissionPrompt('https://github.com/example/dsh-skin', createStaticTranslator('en'))
+    expect(prompt).toContain('Skin repository: https://github.com/example/dsh-skin')
+    expect(prompt).toContain(`Target catalog repository: ${REGISTRY_REPOSITORY}`)
+    expect(prompt).toContain('url (required)')
+    expect(prompt).toContain('Every field except url may be omitted')
+    expect(prompt).toContain('category is one of skin, pet, player, or splash')
+    expect(prompt).toContain('npm run registry:check')
+    expect(prompt).toContain('A catalog entry is not a safety certification')
   })
 
   it('generates a pinned installation fallback prompt with an exact build approval', () => {

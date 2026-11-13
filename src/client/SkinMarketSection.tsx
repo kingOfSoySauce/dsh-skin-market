@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type ComponentType, type CSSProperties, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
-import { SquaresFourIcon, XIcon } from '@phosphor-icons/react'
+import { SquaresFourIcon, UploadSimpleIcon, XIcon } from '@phosphor-icons/react'
 import { MarkGithubIcon, StarFillIcon, StarIcon } from '@primer/octicons-react'
 import * as primitiveExports from '@deepseek-ai/dsh-client-ui-primitives'
 import {
@@ -19,7 +19,7 @@ import { generatedMediaFor, generatedMediaManifestUrl, generatedMediaUrl, parseG
 import { useLazyMedia } from '../media-visibility.ts'
 import { browserCatalogCache, type CatalogCache } from './catalog-cache.ts'
 import { conflictInstallCopy, createFailureRepairPrompt, existingSourceGuide, interceptNotice, isInterceptFailure, marketUpdateNotice } from './failure-help.ts'
-import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, REGISTRY_REPOSITORY } from './submission.ts'
+import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, createSubmissionPrompt, REGISTRY_REPOSITORY } from './submission.ts'
 import { probeClientSkinSelection, switchClientSkin, type ClientSkinExpectation, type ClientSkinRuntime, type ClientSkinSelectionStatus } from './index.ts'
 import { displayTitle, githubRepoLabel } from '../display-title.ts'
 import { localizedSkinDescription } from '../localized-copy.ts'
@@ -1052,6 +1052,9 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const [restartCheckFinished, setRestartCheckFinished] = useState(false)
   const [showDetail, setShowDetail] = useState(false)
   const [browserOpen, setBrowserOpen] = useState(false)
+  const [showSubmission, setShowSubmission] = useState(false)
+  const [submissionCopied, setSubmissionCopied] = useState(false)
+  const [submissionCopyFailed, setSubmissionCopyFailed] = useState(false)
   // Curves are only needed while a detail panel is open. Load once per session
   // and let a failure fall back to a panel without a chart.
   const [starCurves, setStarCurves] = useState<Record<string, StarCurve>>({})
@@ -2891,6 +2894,17 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   }
   const activateCard = (skinId: string) => activateSkin(skinId)
   const recommendations = selected?.recommendations.map(id => skins.find(skin => skin.id === id)).filter((skin): skin is CatalogSkin => skin !== undefined) ?? []
+  const submissionPrompt = createSubmissionPrompt(undefined, t)
+  const copySubmissionPrompt = async () => {
+    try {
+      await copyTextToClipboard(submissionPrompt, t)
+      setSubmissionCopied(true)
+      setSubmissionCopyFailed(false)
+    } catch {
+      setSubmissionCopied(false)
+      setSubmissionCopyFailed(true)
+    }
+  }
   const copyInstallOption = async (key: string, content: string) => {
     if (selected === undefined) return
     await copyTextToClipboard(content, t)
@@ -3373,6 +3387,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
                 onClick={() => { void updateMarket() }}
               ><span className={css.marketUpdateLabel}>{marketUpdating || marketUpdateActive ? t('market.updating') : t('market.update')}</span></Button>}
               <Button className={css.homeGithubAction} variant="outline" size="sm" icon={<MarkGithubIcon size={15} aria-hidden="true" />} aria-label={t('market.githubRepository')} title={t('market.githubRepository')} onClick={() => window.open(REGISTRY_REPOSITORY, '_blank', 'noopener,noreferrer')}><span className={css.homeGithubLabel}>GitHub</span></Button>
+              <Button className={css.homeSubmitAction} variant="outline" size="sm" icon={<UploadSimpleIcon size={15} aria-hidden="true" />} onClick={() => { setShowSubmission(true); setSubmissionCopied(false); setSubmissionCopyFailed(false) }}>{t('market.submitSkin')}</Button>
             </div>
           </div>
           <MarketSearch className={css.homeSearch} value={homeQuery} onChange={setHomeQuery} t={t} />
@@ -3820,6 +3835,22 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         description={t('common.resultNotConfirmed')}
         footer={<Button variant="primary" size="sm" onClick={() => { if (waitingOperation !== null) dismissNotice(`waiting:${waitingOperation.id}`) }}>{t('market.dismiss')}</Button>}
       />
+      <Modal
+        open={showSubmission}
+        onClose={() => setShowSubmission(false)}
+        title={t('common.submissionTitle')}
+        closeLabel={t('common.close')}
+        className={css.modalSurface}
+        description={t('common.submissionDescription')}
+        footer={<><Button variant="outline" size="sm" onClick={() => setShowSubmission(false)}>{t('common.close')}</Button><Button variant="primary" size="sm" icon={submissionCopied ? <IconCheckOutline /> : <IconCopyOutline />} onClick={() => void copySubmissionPrompt()}>{t('common.copyPrompt')}</Button></>}
+      >
+        <div className={css.submission}>
+          <textarea aria-label={t('common.agentPromptLabel')} readOnly value={submissionPrompt} rows={16} />
+          <small>{t('common.submissionDisclaimer')}</small>
+          <small>{t('common.promptNotAuthorization')}</small>
+          {submissionCopyFailed && <small role="alert">{t('market.clipboardUnavailable')}</small>}
+        </div>
+      </Modal>
       <Modal
         open={warningDialog === 'restart'}
         onClose={() => { if (!restarting) dismissRestartDialog() }}

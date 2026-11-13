@@ -6,9 +6,14 @@ import { primaryLoaderIdFromPatch } from './loader-rows.mjs'
 import { permitsCommercialUse } from './license.mjs'
 import { clientEntryPath, inspectSkinHealth } from './skin-health.mjs'
 
-export const THIN_SUBMISSION_KEYS = ['url', 'subpath', 'description', 'name', 'author', 'screenshots']
+export const THIN_SUBMISSION_KEYS = ['url', 'subpath', 'name', 'author', 'description', 'category', 'tags', 'modes', 'screenshots']
+export const SUBMISSION_CATEGORIES = ['skin', 'pet', 'player', 'splash']
+export const SUBMISSION_MODES = ['light', 'dark']
 const THIN_KEYS = new Set(THIN_SUBMISSION_KEYS)
 const IMAGE_EXTENSION = /\.(?:png|jpe?g|webp|gif)(?:$|\?)/i
+const DEFAULT_CATEGORY = 'skin'
+const DEFAULT_TAGS = ['appearance']
+const DEFAULT_MODES = ['light', 'dark']
 
 function isRecord(value) {
   return typeof value === 'object' && value !== null && !Array.isArray(value)
@@ -28,7 +33,7 @@ export function isThinSubmission(value) {
 export function thinSubmissionHint(value) {
   const extras = extraThinSubmissionKeys(value)
   if (typeof value?.url !== 'string' || value.install !== undefined || extras.length === 0) return ''
-  return `not a thin submission because of extra keys: ${extras.join(', ')}. Keep only ${THIN_SUBMISSION_KEYS.join(', ')} — CI hydrates package, rowId, install, license, screenshots and health. If registry:check reports missing id/install, delete the extra keys; do not complete the full schema.`
+  return `not a thin submission because of extra keys: ${extras.join(', ')}. Keep only ${THIN_SUBMISSION_KEYS.join(', ')} — CI hydrates package, rowId, install, license, compatibility, screenshots and health; category, tags and modes are optional and default to ${DEFAULT_CATEGORY}, ${DEFAULT_TAGS.join('/')} and ${DEFAULT_MODES.join('+')}. If registry:check reports missing id/install, delete the extra keys; do not complete the full schema.`
 }
 
 export function parseGitHubTarget(url, explicitSubpath = null) {
@@ -55,6 +60,57 @@ export function submissionFilename(target) {
 
 function safeId(value) {
   return String(value).toLowerCase().replace(/[^a-z0-9]+/g, '.').replace(/^\.|\.$/g, '')
+}
+
+function optionalString(value, field) {
+  if (value === undefined || value === null) return null
+  if (typeof value !== 'string' || value.trim() === '') throw new Error(`${field} must be a non-empty string`)
+  return value.trim()
+}
+
+/** A thin name is all-or-nothing so a half-translated entry cannot ship as bilingual. */
+function thinName(value, fallback) {
+  if (value === undefined || value === null) return { zh: fallback, en: fallback }
+  if (!isRecord(value) || typeof value.zh !== 'string' || value.zh.trim() === '' || typeof value.en !== 'string' || value.en.trim() === '') {
+    throw new Error('name must provide both zh and en')
+  }
+  return { zh: value.zh.trim(), en: value.en.trim() }
+}
+
+function thinCategory(value) {
+  if (value === undefined || value === null) return DEFAULT_CATEGORY
+  if (typeof value !== 'string' || !SUBMISSION_CATEGORIES.includes(value)) {
+    throw new Error(`category must be one of ${SUBMISSION_CATEGORIES.join(', ')}`)
+  }
+  return value
+}
+
+function thinTags(value) {
+  if (value === undefined || value === null) return [...DEFAULT_TAGS]
+  if (!Array.isArray(value) || value.length === 0) throw new Error('tags must be a non-empty array of non-empty strings')
+  const tags = value.map(item => {
+    if (typeof item !== 'string' || item.trim() === '') throw new Error('tags must be a non-empty array of non-empty strings')
+    return item.trim()
+  })
+  return [...new Set(tags)]
+}
+
+function thinModes(value) {
+  if (value === undefined || value === null) return [...DEFAULT_MODES]
+  if (!Array.isArray(value) || value.length === 0) throw new Error(`modes must be a non-empty subset of ${SUBMISSION_MODES.join(', ')}`)
+  const modes = value.map(item => {
+    if (typeof item !== 'string' || !SUBMISSION_MODES.includes(item)) throw new Error(`modes must be a non-empty subset of ${SUBMISSION_MODES.join(', ')}`)
+    return item
+  })
+  return [...new Set(modes)]
+}
+
+function thinScreenshots(value) {
+  if (value === undefined || value === null) return []
+  if (!Array.isArray(value) || value.some(item => typeof item !== 'string' || item.trim() === '')) {
+    throw new Error('screenshots must be an array of image URLs')
+  }
+  return value.map(item => item.trim())
 }
 
 async function defaultFetchText(url, { timeout = 20000, json = false } = {}) {
@@ -165,8 +221,18 @@ function parsePackage(text) {
 export async function hydrateSkinSubmission(draft, options = {}) {
   const fetchText = options.fetchText ?? defaultFetchText
   const now = options.now ?? new Date().toISOString()
-  const target = parseGitHubTarget(draft.url, draft.subpath ?? null)
+  if (!isRecord(draft) || typeof draft.url !== 'string' || draft.url.trim() === '') throw new Error('url is required')
+  const target = parseGitHubTarget(draft.url, optionalString(draft.subpath, 'subpath'))
   if (target === null) throw new Error('url must be a GitHub repository or tree path')
+
+  // Reject invalid author-controlled fields before any network call so CI
+  // reports the YAML problem instead of a repository fetch failure.
+  const displayName = target.subpath ? target.subpath.split('/').pop() : target.repo
+  const name = thinName(draft.name, displayName)
+  const author = optionalString(draft.author, 'author') ?? target.owner
+  const category = thinCategory(draft.category)
+  const tags = thinTags(draft.tags)
+  const modes = thinModes(draft.modes)
 
   const repoMeta = await fetchText(`https://api.github.com/repos/${target.fullName}`, { json: true }).catch(() => null)
   const sha = typeof options.sha === 'string' ? options.sha : await (async () => {
@@ -195,7 +261,7 @@ export async function hydrateSkinSubmission(draft, options = {}) {
   const rowId = primaryLoader.id
   if (!rowId) throw new Error(primaryLoader.reason ?? 'loader row id missing')
 
-  let declaredScreenshots = Array.isArray(draft.screenshots) ? draft.screenshots : []
+  let declaredScreenshots = thinScreenshots(draft.screenshots)
   if (declaredScreenshots.length === 0 && typeof screenshotsJson === 'string') {
     try {
       const parsed = JSON.parse(screenshotsJson)
@@ -215,10 +281,9 @@ export async function hydrateSkinSubmission(draft, options = {}) {
   if (!licenseCode) throw new Error('license missing')
 
   const dshVersion = compatibility(pkg, readme)
-  const displayName = target.subpath ? target.subpath.split('/').pop() : target.repo
-  const description = typeof draft.description === 'string' && draft.description.trim()
-    ? draft.description.trim()
-    : (typeof pkg.description === 'string' && pkg.description.trim() ? pkg.description.trim() : null)
+  const draftDescription = optionalString(draft.description, 'description')
+  const description = draftDescription
+    ?? (typeof pkg.description === 'string' && pkg.description.trim() ? pkg.description.trim() : null)
   if (!description) throw new Error('description missing; add description to the YAML or package.json')
 
   const clientPath = clientEntryPath(pkg)
@@ -235,22 +300,18 @@ export async function hydrateSkinSubmission(draft, options = {}) {
     hasDshPluginTopic: Array.isArray(repoMeta?.topics) && repoMeta.topics.includes('dsh-plugin'),
   })
 
-  const name = isRecord(draft.name) && typeof draft.name.zh === 'string' && typeof draft.name.en === 'string'
-    ? { zh: draft.name.zh, en: draft.name.en }
-    : { zh: displayName, en: displayName }
-
   return {
     id: `${safeId(target.owner)}.${safeId(displayName)}`,
     name,
-    author: typeof draft.author === 'string' && draft.author.trim() ? draft.author.trim() : target.owner,
+    author,
     description,
     repo: target.repository,
     ...(target.subpath ? { subpath: target.subpath } : {}),
     package: pkg.name,
     rowId,
-    category: 'skin',
-    tags: ['appearance'],
-    modes: ['light', 'dark'],
+    category,
+    tags,
+    modes,
     install: {
       target: `github:${target.fullName}#${sha}${target.subpath ? `&path:/${target.subpath.replace(/^\/+/, '')}` : ''}`,
       version: pkg.version,
@@ -288,7 +349,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   }
   const path = resolve(file)
   const draft = parse(await readFile(path, 'utf8'))
-  if (!isThinSubmission(draft)) throw new Error(`${file} is not a thin submission (url-only YAML)`)
+  if (!isThinSubmission(draft)) throw new Error(`${file} is not a thin submission; keep only ${THIN_SUBMISSION_KEYS.join(', ')}`)
   const skin = await hydrateSkinSubmission(draft)
   await writeFile(path, stringify(skin, { lineWidth: 0 }))
   console.log(`hydrated ${file} → ${skin.id} @ ${skin.install.commit}`)

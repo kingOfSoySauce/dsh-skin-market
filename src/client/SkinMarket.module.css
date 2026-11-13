@@ -568,6 +568,25 @@
 .listLoading svg { animation: spin 1s linear infinite; }
 .empty { padding: 24px 8px; text-align: center; }
 
+.submission { display: grid; width: 100%; min-width: 0; max-width: 100%; gap: 10px; }
+.submission small { margin: 0; color: var(--dsw-alias-label-caption); font-size: var(--dsw-font-xxs-12-font-size); line-height: var(--dsw-font-xxs-12-line-height); }
+.submission textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 300px;
+  resize: vertical;
+  padding: 12px;
+  color: var(--dsw-alias-label-primary);
+  border: 0.5px solid var(--dsw-alias-border-l2);
+  border-radius: var(--dsw-radius-lg);
+  outline: none;
+  background: var(--dsw-alias-bg-layer-1);
+  font: 12px/1.6 var(--ds-font-family-code);
+}
+.submission textarea:focus { border-color: var(--dsw-alias-brand-primary); }
+
 .warningModal p, .warningModal a { color: var(--dsw-alias-label-secondary); font-size: 13px; line-height: 21px; overflow-wrap: anywhere; }
 .warningModal p { margin: 0; white-space: pre-wrap; }
 .warningModal a { text-decoration: underline; text-underline-offset: 2px; }
@@ -612,7 +631,8 @@
   .homeHeader { padding: 18px 16px 14px; }
   .homeHeader[data-compact="true"] { grid-template-columns: minmax(0, auto) auto minmax(0, 1fr); column-gap: 8px; }
   .homeHeader[data-compact="true"] .homeTitleRow h2 { font-size: 17px; line-height: 24px; }
-  .homeHeader[data-compact="true"] .homeActions .homeGithubAction { display: none; }
+  .homeHeader[data-compact="true"] .homeActions .homeGithubAction,
+  .homeHeader[data-compact="true"] .homeActions .homeSubmitAction { display: none; }
   .homeContent { gap: 24px; padding: 20px 16px 30px; }
   .installedRow { gap: 16px; }
   .discoveryGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
@@ -652,7 +672,8 @@
 }
 
 @container (max-width: 620px) {
-  .homeHeader[data-compact="true"] .homeGithubAction { display: none; }
+  .homeHeader[data-compact="true"] .homeGithubAction,
+  .homeHeader[data-compact="true"] .homeSubmitAction { display: none; }
 }
 
 @container (max-width: 520px) {
