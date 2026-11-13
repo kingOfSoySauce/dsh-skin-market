@@ -103,23 +103,43 @@ describe('client market selection convergence', () => {
     })
 
     it('keeps a dismissed Web restart notice quiet when the settle window runs again', async () => {
-      window.sessionStorage.clear()
-      const fetchMock = serveWebState(() => [webSkin({ restartSource: undefined })])
-      render(<SkinMarketSection t={key => key} clientRuntime={{ setActive: vi.fn(), probeActive: () => 'loading', probeSyncing: () => false }} />)
-      expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
-      const first = await screen.findByRole('dialog', { name: zh['common.restartTargetSkin'] }, { timeout: 4000 })
-      fireEvent.click(within(first).getByRole('button', { name: '取消' }))
-      expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
-      expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
-      // A fresh focus starts another settlement window. The acknowledged key
-      // must survive it so the dialog cannot reopen for the same pending skin.
-      const beforeFocus = requestCount(fetchMock, '/state')
-      fireEvent(window, new Event('focus'))
-      await waitFor(() => expect(requestCount(fetchMock, '/state')).toBeGreaterThan(beforeFocus))
-      await waitFor(() => expect(screen.queryByText('测试皮肤 设置已保存，待重启生效')).toBeNull())
-      await act(async () => { await new Promise(resolve => setTimeout(resolve, WEB_CLIENT_SETTLE_MS + 200)) })
-      expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
-      expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
+      // Drive the settlement deadline instead of racing real timers against
+      // Testing Library's timeout on a busy CI worker.
+      vi.useFakeTimers({ toFake: ['setTimeout', 'Date'] })
+      let view: ReturnType<typeof render> | undefined
+      try {
+        window.sessionStorage.clear()
+        const fetchMock = serveWebState(() => [webSkin({ restartSource: undefined })])
+        view = render(<SkinMarketSection t={key => key} catalogCache={{ read: async () => null, write: async () => undefined }} clientRuntime={{ setActive: vi.fn(), probeActive: () => 'loading', probeSyncing: () => false }} />)
+        await act(async () => { await vi.advanceTimersByTimeAsync(0) })
+        expect(requestCount(fetchMock, '/state')).toBe(1)
+        expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
+        await act(async () => { await vi.advanceTimersByTimeAsync(WEB_CLIENT_SETTLE_MS - 1) })
+        expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
+        await act(async () => { await vi.advanceTimersByTimeAsync(1) })
+        const first = screen.getByRole('dialog', { name: zh['common.restartTargetSkin'] })
+        fireEvent.click(within(first).getByRole('button', { name: '取消' }))
+        expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
+        expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
+        // A fresh focus starts another settlement window. The acknowledged key
+        // must survive it so the dialog cannot reopen for the same pending skin.
+        const beforeFocus = requestCount(fetchMock, '/state')
+        fireEvent(window, new Event('focus'))
+        await act(async () => { await vi.advanceTimersByTimeAsync(0) })
+        expect(requestCount(fetchMock, '/state')).toBeGreaterThan(beforeFocus)
+        expect(screen.queryByText('测试皮肤 设置已保存，待重启生效')).toBeNull()
+        expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
+        await act(async () => { await vi.advanceTimersByTimeAsync(WEB_CLIENT_SETTLE_MS - 1) })
+        expect(screen.queryByText('测试皮肤 设置已保存，待重启生效')).toBeNull()
+        expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
+        await act(async () => { await vi.advanceTimersByTimeAsync(1) })
+        expect(screen.queryByRole('dialog', { name: zh['common.restartTargetSkin'] })).toBeNull()
+        expect(screen.getByText('测试皮肤 设置已保存，待重启生效')).toBeTruthy()
+        expect(methodSent(fetchMock, 'POST')).toBe(false)
+      } finally {
+        view?.unmount()
+        vi.useRealTimers()
+      }
     })
 
     it.each(['soft receipt', 'already applied receipt'] as const)('rechecks a loading Host with a state-only read before reporting success (%s)', async receipt => {
