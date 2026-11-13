@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T01:40:40.216Z",
+  "generatedAt": "2026-11-13T00:09:33.948Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -35118,6 +35118,105 @@
       "metadataUpdatedAt": "2026-11-09T00:17:15.191Z",
       "starsUpdatedAt": "2026-11-12T01:40:38.494Z",
       "updatedAt": "2026-11-09T00:17:15.191Z"
+    },
+    {
+      "id": "alaricchanchs.crypto.dsh.naiwa.studio",
+      "name": {
+        "zh": "奶蛙工作室",
+        "en": "Naiwa Studio"
+      },
+      "author": "alaricchanchs-crypto",
+      "description": "赛博风开机动画（视频 + 机械语音 + 现场合成的音效），配灵感池卡片、奶蛙表情库与玻璃质感配色。",
+      "repo": "https://github.com/alaricchanchs-crypto/dsh-naiwa-studio",
+      "package": "dsh-naiwa-studio",
+      "rowId": "naiwa-studio-skin",
+      "category": "skin",
+      "tags": [
+        "appearance"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:alaricchanchs-crypto/dsh-naiwa-studio#c4ef30176306e60f57b22b7322ee28ba383c9ef9",
+        "version": "0.1.0",
+        "commit": "c4ef30176306e60f57b22b7322ee28ba383c9ef9"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/1-splash.jpg",
+        "https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/1b-tunnel.jpg",
+        "https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/1c-holo.jpg",
+        "https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/1d-eyes.jpg",
+        "https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/5-glitch.jpg",
+        "https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/2-main.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1000,
+      "starsSnapshot": 2,
+      "releaseUpdatedAt": "2026-11-13T00:09:32.783Z",
+      "metadataUpdatedAt": "2026-11-13T00:09:32.783Z",
+      "starsUpdatedAt": "2026-11-13T00:09:32.783Z",
+      "updatedAt": "2026-11-13T00:09:32.783Z",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bf8614929ffc9b25397d01b3eb90aa44.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bf8614929ffc9b25397d01b3eb90aa44.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bf8614929ffc9b25397d01b3eb90aa44.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bf8614929ffc9b25397d01b3eb90aa44.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/78ed3d88dce68b1c08aad83d5b4fde97.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/78ed3d88dce68b1c08aad83d5b4fde97.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6d4d1bd3eec00ced52b3591a9a8e9682.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6d4d1bd3eec00ced52b3591a9a8e9682.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b9970b691e5248849627c391c99b79f6.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b9970b691e5248849627c391c99b79f6.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/046ac23f3e6ade5ab03abbafe4d4292c.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/046ac23f3e6ade5ab03abbafe4d4292c.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b143ef4a08cbb2c7f41bc4545f5345fc.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b143ef4a08cbb2c7f41bc4545f5345fc.full.webp"
+          }
+        ]
+      }
     },
     {
       "id": "alycestocking.dsh-yukimi-theme",
