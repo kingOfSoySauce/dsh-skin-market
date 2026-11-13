@@ -1,0 +1,54 @@
+id: frank6892103.dsh.wutheringwaves
+name:
+  zh: 爱弥斯主题
+  en: Aemeath Theme
+author: frank6892103
+description: 以《鸣潮》角色爱弥斯为主题的配色皮肤：角色立绘背景与同色系强调色，浅色/深色各一套，可从右下角主题中心与其他角色主题互斥切换，随时恢复官方外观。
+repo: https://github.com/frank6892103/dsh-WutheringWaves
+subpath: themes/aemeath
+package: "@dsh-external/dsh-client-ui-skin-wuthering-aemeath"
+rowId: ui-skin-wuthering-aemeath
+category: skin
+tags:
+  - character
+  - wuthering-waves
+  - artwork
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:frank6892103/dsh-WutheringWaves#a994c8d39e18f8314fdd61654f2b42f0ec933a39&path:/themes/aemeath
+  version: 0.3.2
+  commit: a994c8d39e18f8314fdd61654f2b42f0ec933a39
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/frank6892103/dsh-WutheringWaves/a994c8d39e18f8314fdd61654f2b42f0ec933a39/themes/aemeath/preview/dark.webp
+  - https://raw.githubusercontent.com/frank6892103/dsh-WutheringWaves/a994c8d39e18f8314fdd61654f2b42f0ec933a39/themes/aemeath/preview/light.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1174
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T09:19:15.720Z
+metadataUpdatedAt: 2026-11-13T09:19:15.720Z
+starsUpdatedAt: 2026-11-13T09:19:15.720Z
+updatedAt: 2026-11-13T09:19:15.720Z
+listScreenshot: https://raw.githubusercontent.com/frank6892103/dsh-WutheringWaves/a994c8d39e18f8314fdd61654f2b42f0ec933a39/themes/aemeath/preview/dark.webp

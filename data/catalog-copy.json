@@ -12029,6 +12029,60 @@
       },
       "override": true,
       "nameSource": "pinned README + maintainer copy review"
+    },
+    "abitsse6.dsh.theme.zzz": {
+      "name": {
+        "zh": "绝区零主题",
+        "en": "Zenless Zone Zero Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 Web 界面改成《绝区零》风格，并在背景叠加跟随鼠标、按下缩放的动态「空洞」光圈；设置里可切换印品鸿蒙体/思源黑体字体，并单独开关强制思源黑体。",
+        "en": "A Zenless Zone Zero-style Web skin with a dynamic Hollow ring that follows the cursor and scales on press; the settings page switches between Inpin Hongmeng and Source Han Sans fonts, with a forced-fallback toggle."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "7e916b73a468f7c57c3be30ffebfd76277b874e504abea4ec74205e286332d06",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ase.sketch.dsh.theme": {
+      "name": {
+        "zh": "压印主题",
+        "en": "IMPRINT Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把界面排成每天出的刊物：纸纹与光照做材质、发丝线与页码组织版面、宋体正文配 Georgia 数字，零圆角零阴影；含浅色纸与深色炭纸两套。",
+        "en": "A print-style layout: paper grain and lighting as material, hairline rules and folio numbers, Song-style body text with Georgia numerals, no rounded corners or shadows; paper and charcoal-paper variants."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "4cb4b3059ae553b1fea6da49267ecac050332cb15437e37bdc7b38c29ecd3e54",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "frank6892103.dsh.wutheringwaves": {
+      "name": {
+        "zh": "爱弥斯主题",
+        "en": "Aemeath Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "以《鸣潮》角色爱弥斯为主题的配色皮肤：角色立绘背景与同色系强调色，浅色/深色各一套，可从右下角主题中心与其他角色主题互斥切换，随时恢复官方外观。",
+        "en": "An Aemeath (Wuthering Waves) character skin: character artwork background and matching accents in light and dark variants, switchable from the corner theme center and reversible to the default look."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "66f2a0a0aa80704c26f521765c0dad6f46cbfd65be6be982177bf0178cee4fbd",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
     }
   }
 }

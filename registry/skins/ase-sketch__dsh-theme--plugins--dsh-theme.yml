@@ -1,0 +1,56 @@
+id: ase.sketch.dsh.theme
+name:
+  zh: 压印主题
+  en: IMPRINT Theme
+author: ase-sketch
+description: 把界面排成每天出的刊物：纸纹与光照做材质、发丝线与页码组织版面、宋体正文配 Georgia 数字，零圆角零阴影；含浅色纸与深色炭纸两套。
+repo: https://github.com/ase-sketch/dsh-theme
+subpath: plugins/dsh-theme
+package: dsh-theme
+rowId: ui-skin-dsh-theme
+category: skin
+tags:
+  - print
+  - editorial
+  - paper
+  - serif
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:ase-sketch/dsh-theme#80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee&path:/plugins/dsh-theme
+  version: 0.1.1
+  commit: 80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ase-sketch/dsh-theme/80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee/skins/dsh-ui/preview/light.jpg
+  - https://raw.githubusercontent.com/ase-sketch/dsh-theme/80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee/skins/dsh-ui/preview/dark.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1175
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-13T09:19:15.720Z
+metadataUpdatedAt: 2026-11-13T09:19:15.720Z
+starsUpdatedAt: 2026-11-13T09:19:15.720Z
+updatedAt: 2026-11-13T09:19:15.720Z
+listScreenshot: https://raw.githubusercontent.com/ase-sketch/dsh-theme/80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee/skins/dsh-ui/preview/light.jpg

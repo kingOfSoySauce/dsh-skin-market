@@ -1,0 +1,55 @@
+id: abitsse6.dsh.theme.zzz
+name:
+  zh: 绝区零主题
+  en: Zenless Zone Zero Theme
+author: AbiTssE6
+description: 把 Web 界面改成《绝区零》风格，并在背景叠加跟随鼠标、按下缩放的动态「空洞」光圈；设置里可切换印品鸿蒙体/思源黑体字体，并单独开关强制思源黑体。
+repo: https://github.com/AbiTssE6/dsh-theme-zzz
+subpath: packages/dsh-theme-zzz
+package: dsh-theme-zzz
+rowId: theme-zzz
+category: skin
+tags:
+  - zzz
+  - hollow
+  - accent
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:AbiTssE6/dsh-theme-zzz#f4ea58c22685264fc7081ecd386dbdffa313b922&path:/packages/dsh-theme-zzz
+  version: 0.3.6
+  commit: f4ea58c22685264fc7081ecd386dbdffa313b922
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/f4ea58c22685264fc7081ecd386dbdffa313b922/docs/preview.png
+  - https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/f4ea58c22685264fc7081ecd386dbdffa313b922/docs/hollow-shot.png
+  - https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/f4ea58c22685264fc7081ecd386dbdffa313b922/docs/hollow.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1173
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-13T09:19:15.720Z
+metadataUpdatedAt: 2026-11-13T09:19:15.720Z
+starsUpdatedAt: 2026-11-13T09:19:15.720Z
+updatedAt: 2026-11-13T09:19:15.720Z
+listScreenshot: https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/master/docs/preview.png
