@@ -27,6 +27,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/chajiuqqq__dsh-claude-theme/976b65da11bd0e23d77aac9cbadd466fea51eb1b/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/chajiuqqq__dsh-claude-theme/976b65da11bd0e23d77aac9cbadd466fea51eb1b/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/chajiuqqq__dsh-claude-theme/976b65da11bd0e23d77aac9cbadd466fea51eb1b/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -54,13 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/chajiuqqq__dsh-claude-theme/976b65da11bd0e23d77aac9cbadd466fea51eb1b/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/chajiuqqq__dsh-claude-theme/976b65da11bd0e23d77aac9cbadd466fea51eb1b/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/chajiuqqq__dsh-claude-theme/976b65da11bd0e23d77aac9cbadd466fea51eb1b/settings.png
 featuredRank: 61
+starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:30:02.557Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-13T00:29:02.212Z
 starsUpdatedAt: 2026-09-12T21:25:05.685Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-13T00:29:02.212Z

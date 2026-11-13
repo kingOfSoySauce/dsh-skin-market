@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:yasneg616/marathon-like-deepseek-harness-skin#94f3d9bf5b170e3fab9de54066a33e2dddc34c03
-  version: 2.4.15
-  commit: 94f3d9bf5b170e3fab9de54066a33e2dddc34c03
+  target: github:yasneg616/marathon-like-deepseek-harness-skin#11332a02bd34e9238d15f7ea5f870a2a92e72dfa
+  version: 2.4.16
+  commit: 11332a02bd34e9238d15f7ea5f870a2a92e72dfa
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -45,20 +45,20 @@ health:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: 94f3d9bf5b170e3fab9de54066a33e2dddc34c03
-    packageVersion: 2.4.15
+    commit: 11332a02bd34e9238d15f7ea5f870a2a92e72dfa
+    packageVersion: 2.4.16
     scannerVersion: static-v2
-    dshVersion: ">=0.2.0-rc.2 <0.2.2-0 || 0.2.2-rc.1"
+    dshVersion: ">=0.2.0-rc.2 <0.2.2-0 || 0.2.2-rc.1 || 0.2.2-rc.2"
     mode: static
     result: pass
-    checkedAt: 2026-11-11T00:07:45.267Z
+    checkedAt: 2026-11-13T00:11:41.981Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 starsSnapshot: 29
 featuredRank: 1106
-releaseUpdatedAt: 2026-11-11T00:07:49.244Z
-metadataUpdatedAt: 2026-11-11T00:07:49.244Z
+releaseUpdatedAt: 2026-11-13T00:28:13.548Z
+metadataUpdatedAt: 2026-11-13T00:28:13.548Z
 starsUpdatedAt: 2026-11-12T00:09:47.866Z
-updatedAt: 2026-11-12T00:09:47.866Z
+updatedAt: 2026-11-13T00:28:13.548Z

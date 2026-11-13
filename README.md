@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-11**：[dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator)（01Virex）——A DeepSeek Harness (DSH) client plugin that replaces Deep diving... / 深度求索中... with editable phrases while preserving the host's elapsed-time clock.详见[收录日志](./docs/recently-added.md#recent-2026-11-11-01virex-dsh-status-rotator)。
+- **2026-11-13**：[奶蛙工作室](https://github.com/alaricchanchs-crypto/dsh-naiwa-studio)（alaricchanchs-crypto）——赛博风开机动画（视频 + 机械语音 + 现场合成的音效），配灵感池卡片、奶蛙表情库与玻璃质感配色。详见[收录日志](./docs/recently-added.md#recent-2026-11-13-alaricchanchs-crypto-dsh-naiwa-studio)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

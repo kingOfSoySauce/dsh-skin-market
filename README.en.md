@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-11**: [dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) (01Virex). See the [recent additions log](./docs/recently-added.md#recent-2026-11-11-01virex-dsh-status-rotator).
+- **2026-11-13**: [Naiwa Studio](https://github.com/alaricchanchs-crypto/dsh-naiwa-studio) (alaricchanchs-crypto). See the [recent additions log](./docs/recently-added.md#recent-2026-11-13-alaricchanchs-crypto-dsh-naiwa-studio).
 
 See the [recent additions log](./docs/recently-added.md).
 

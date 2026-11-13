@@ -32,6 +32,10 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/BPZ0726__dsh-bestui/89902526c31a4e5690df97bcb5da8ffa6a4cac3f/home.png
+  - skin-screenshots/BPZ0726__dsh-bestui/89902526c31a4e5690df97bcb5da8ffa6a4cac3f/conversation.png
+  - skin-screenshots/BPZ0726__dsh-bestui/89902526c31a4e5690df97bcb5da8ffa6a4cac3f/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -59,13 +63,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/BPZ0726__dsh-bestui/89902526c31a4e5690df97bcb5da8ffa6a4cac3f/home.png
-  - skin-screenshots/BPZ0726__dsh-bestui/89902526c31a4e5690df97bcb5da8ffa6a4cac3f/conversation.png
-  - skin-screenshots/BPZ0726__dsh-bestui/89902526c31a4e5690df97bcb5da8ffa6a4cac3f/settings.png
 featuredRank: 170
+starsSnapshot: 0
 releaseUpdatedAt: 2026-08-23T05:33:01.907Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-13T00:29:27.531Z
 starsUpdatedAt: 2026-09-18T21:39:09.704Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-13T00:29:27.531Z
