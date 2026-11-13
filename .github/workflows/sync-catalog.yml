@@ -6,6 +6,7 @@ on:
     paths:
       - 'registry/skins/**'
       - 'registry/skin.schema.json'
+      - 'data/catalog-copy.json'
       - 'scripts/build-registry.mjs'
       - 'scripts/catalog-wire.mjs'
       - 'scripts/heat.mjs'
