@@ -5,18 +5,29 @@ describe('thin registry submissions', () => {
   it('accepts url-only drafts and GitHub tree paths', () => {
     expect(isThinSubmission({ url: 'https://github.com/example/dsh-skin' })).toBe(true)
     expect(isThinSubmission({ url: 'https://github.com/example/dsh-skin', description: '玻璃皮肤' })).toBe(true)
+    expect(isThinSubmission({
+      url: 'https://github.com/example/dsh-skin',
+      category: 'pet',
+      tags: ['retro'],
+      modes: ['dark'],
+    })).toBe(true)
     expect(isThinSubmission({ url: 'https://github.com/example/dsh-skin', id: 'example.dsh-skin' })).toBe(false)
     expect(isThinSubmission({
       url: 'https://github.com/example/dsh-skin',
       package: 'dsh-skin',
-      tags: ['retro'],
+      rowId: 'skin',
     })).toBe(false)
     expect(thinSubmissionHint({
       url: 'https://github.com/example/dsh-skin',
       package: 'dsh-skin',
       rowId: 'skin',
+    })).toContain('extra keys: package, rowId')
+    expect(thinSubmissionHint({
+      url: 'https://github.com/example/dsh-skin',
+      category: 'pet',
       tags: ['retro'],
-    })).toContain('extra keys: package, rowId, tags')
+      modes: ['dark'],
+    })).toBe('')
     expect(thinSubmissionHint({
       url: 'https://github.com/example/dsh-skin',
       install: { target: 'github:example/dsh-skin' },
@@ -68,6 +79,63 @@ describe('thin registry submissions', () => {
       'https://raw.githubusercontent.com/example/dsh-endfield/deadbeefdeadbeefdeadbeefdeadbeefdeadbeef/docs/home.png',
     ])
     expect(skin.starsSnapshot).toBe(4)
+    expect(skin.name).toEqual({ zh: 'dsh-endfield', en: 'dsh-endfield' })
+    expect(skin.author).toBe('example')
+    expect(skin.category).toBe('skin')
+    expect(skin.tags).toEqual(['appearance'])
+    expect(skin.modes).toEqual(['light', 'dark'])
+  })
+
+  it('uses author-provided display fields instead of the hydration defaults', async () => {
+    const sha = 'deadbeefdeadbeefdeadbeefdeadbeefdeadbeef'
+    const files: Record<string, string> = {
+      'package.json': JSON.stringify({
+        name: '@fixture/glass',
+        version: '1.0.0',
+        license: 'MIT',
+        dsh: { client: { platform: 'web' } },
+      }),
+      'cordis.patch.yml': '- insert:\n    - id: glass-skin\n      name: "@fixture/glass"\n',
+      'README.md': '',
+      'LICENSE': 'MIT License',
+      'dist/client.js': 'export {}',
+    }
+    const fetchText = async (url: string) => {
+      if (url.includes('api.github.com/repos/example/glass')) return { default_branch: 'main', stargazers_count: 0, topics: [] }
+      const file = Object.keys(files).find(path => url.endsWith(`/${sha}/${path}`))
+      return file ? files[file] : null
+    }
+
+    const skin = await hydrateSkinSubmission({
+      url: 'https://github.com/example/glass',
+      name: { zh: '玻璃皮肤', en: 'Glass Skin' },
+      author: 'Alice',
+      description: '作者写的描述',
+      category: 'pet',
+      tags: ['retro', 'neon'],
+      modes: ['dark'],
+    }, { fetchText, sha, now: '2026-11-13T00:00:00.000Z' })
+
+    expect(skin.name).toEqual({ zh: '玻璃皮肤', en: 'Glass Skin' })
+    expect(skin.author).toBe('Alice')
+    expect(skin.description).toBe('作者写的描述')
+    expect(skin.category).toBe('pet')
+    expect(skin.tags).toEqual(['retro', 'neon'])
+    expect(skin.modes).toEqual(['dark'])
+  })
+
+  it('rejects invalid author-provided thin fields before fetching', async () => {
+    const fetchText = async () => { throw new Error('network should not run') }
+    const url = 'https://github.com/example/glass'
+    await expect(hydrateSkinSubmission({ url, category: 'theme' }, { fetchText })).rejects.toThrow(/category must be one of skin, pet, player, splash/)
+    await expect(hydrateSkinSubmission({ url, tags: [] }, { fetchText })).rejects.toThrow(/tags must be a non-empty array/)
+    await expect(hydrateSkinSubmission({ url, tags: ['ok', 3] }, { fetchText })).rejects.toThrow(/tags must be a non-empty array/)
+    await expect(hydrateSkinSubmission({ url, modes: ['sepia'] }, { fetchText })).rejects.toThrow(/modes must be a non-empty subset of light, dark/)
+    await expect(hydrateSkinSubmission({ url, modes: [] }, { fetchText })).rejects.toThrow(/modes must be a non-empty subset of light, dark/)
+    await expect(hydrateSkinSubmission({ url, name: { zh: '只有中文' } }, { fetchText })).rejects.toThrow(/name must provide both zh and en/)
+    await expect(hydrateSkinSubmission({}, { fetchText })).rejects.toThrow(/url is required/)
+    await expect(hydrateSkinSubmission({ url: 'https://example.com/a/b' }, { fetchText })).rejects.toThrow(/url must be a GitHub repository/)
+    await expect(hydrateSkinSubmission({ url, subpath: '' }, { fetchText })).rejects.toThrow(/subpath must be a non-empty string/)
   })
 
   it('reads Web and official Desktop version declarations from the README', () => {
