@@ -14,21 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:AKS1st/dock-media#5eb1ece47eb9aed7bbd96e9a7536f716be8186c0
-  version: 0.1.2
-  commit: 5eb1ece47eb9aed7bbd96e9a7536f716be8186c0
+  target: github:AKS1st/dock-media#6a6ff2b2e75dff46be15a749e7366becc43aa597
+  version: 0.1.3
+  commit: 6a6ff2b2e75dff46be15a749e7366becc43aa597
   desktop:
     mode: managed
     registry: npm
     packageName: dock-media
-    packageVersion: 0.1.2
-    integrity: sha512-eO35BsBnEwC+/ipc1IxeSaEjr6yA6DDKom0nrjhy+s0jik9t0xZvWBnEKyr+FHmnp3DjVz7FjYu7BGJiYVZ6vA==
+    packageVersion: 0.1.3
+    integrity: sha512-d+QOB/EZERPFy+cWVLPmQXL6d0LiAstUKTApFn4VYoLPqEGKkMhYN3ROmbecNBjuLibAphV7Tl2GPfrqXSAGug==
   npm:
     name: dock-media
-    version: 0.1.2
-    integrity: sha512-eO35BsBnEwC+/ipc1IxeSaEjr6yA6DDKom0nrjhy+s0jik9t0xZvWBnEKyr+FHmnp3DjVz7FjYu7BGJiYVZ6vA==
+    version: 0.1.3
+    integrity: sha512-d+QOB/EZERPFy+cWVLPmQXL6d0LiAstUKTApFn4VYoLPqEGKkMhYN3ROmbecNBjuLibAphV7Tl2GPfrqXSAGug==
     repository: https://github.com/AKS1st/dock-media
-    gitHead: 5eb1ece47eb9aed7bbd96e9a7536f716be8186c0
+    gitHead: 6a6ff2b2e75dff46be15a749e7366becc43aa597
 compatibility:
   dsh: unverified
   platform:
@@ -52,19 +52,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 5eb1ece47eb9aed7bbd96e9a7536f716be8186c0
-    packageVersion: 0.1.2
+    commit: 6a6ff2b2e75dff46be15a749e7366becc43aa597
+    packageVersion: 0.1.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:09:38.607Z
+    checkedAt: 2026-11-13T00:13:08.086Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 starsSnapshot: 0
 featuredRank: 0
-releaseUpdatedAt: 2026-11-09T00:17:15.549Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+releaseUpdatedAt: 2026-11-13T00:28:13.548Z
+metadataUpdatedAt: 2026-11-13T00:28:13.548Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-11-09T00:17:15.549Z
+updatedAt: 2026-11-13T00:28:13.548Z

@@ -17,6 +17,9 @@ install:
   target: github:alaricchanchs-crypto/dsh-naiwa-studio#c4ef30176306e60f57b22b7322ee28ba383c9ef9
   version: 0.1.0
   commit: c4ef30176306e60f57b22b7322ee28ba383c9ef9
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/1d-eyes.jpg
   - https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/5-glitch.jpg
   - https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/2-main.png
+listScreenshot: https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/1-splash.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -41,13 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: c4ef30176306e60f57b22b7322ee28ba383c9ef9
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-13T00:28:47.094Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-13T00:09:32.783Z
-metadataUpdatedAt: 2026-11-13T00:09:32.783Z
+releaseUpdatedAt: 2026-11-13T00:28:47.836Z
+metadataUpdatedAt: 2026-11-13T00:28:47.836Z
 starsUpdatedAt: 2026-11-13T00:09:32.783Z
-updatedAt: 2026-11-13T00:09:32.783Z
+updatedAt: 2026-11-13T00:28:47.836Z

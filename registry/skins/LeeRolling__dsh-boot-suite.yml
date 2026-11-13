@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:LeeRolling/dsh-boot-suite#e69accaabda58c7887ecf145eca4280eeaf3e5ec
+  target: github:LeeRolling/dsh-boot-suite#83645b8aa9e5b9d8f964dc6e29b4c66dc40f8ddd
   version: 2.16.13
-  commit: e69accaabda58c7887ecf145eca4280eeaf3e5ec
+  commit: 83645b8aa9e5b9d8f964dc6e29b4c66dc40f8ddd
   desktop:
     mode: managed
     registry: npm
@@ -49,19 +49,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: e69accaabda58c7887ecf145eca4280eeaf3e5ec
+    commit: 83645b8aa9e5b9d8f964dc6e29b4c66dc40f8ddd
     packageVersion: 2.16.13
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-12T00:09:55.174Z
+    checkedAt: 2026-11-13T00:11:33.649Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 131
+starsSnapshot: 139
 featuredRank: 1109
-releaseUpdatedAt: 2026-11-12T00:09:55.506Z
-metadataUpdatedAt: 2026-11-12T00:09:55.506Z
-starsUpdatedAt: 2026-11-12T00:09:55.506Z
-updatedAt: 2026-11-12T00:09:55.506Z
+releaseUpdatedAt: 2026-11-13T00:28:13.548Z
+metadataUpdatedAt: 2026-11-13T00:28:13.548Z
+starsUpdatedAt: 2026-11-13T00:28:13.548Z
+updatedAt: 2026-11-13T00:28:13.548Z

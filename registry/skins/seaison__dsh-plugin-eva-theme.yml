@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:seaison/dsh-plugin-eva-theme#f8b96381ceda724c58e79ec375e0dfe08d244349
-  version: 0.51.2
-  commit: f8b96381ceda724c58e79ec375e0dfe08d244349
+  target: github:seaison/dsh-plugin-eva-theme#b2ca8765ec48bf7e5344199f557fdd59c5b588c1
+  version: 0.52.0
+  commit: b2ca8765ec48bf7e5344199f557fdd59c5b588c1
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -47,12 +47,12 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: f8b96381ceda724c58e79ec375e0dfe08d244349
-    packageVersion: 0.51.2
+    commit: b2ca8765ec48bf7e5344199f557fdd59c5b588c1
+    packageVersion: 0.52.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:51:12.846Z
+    checkedAt: 2026-11-13T00:11:38.470Z
     findings: []
 license:
   code: MIT
@@ -64,7 +64,7 @@ marketScreenshots:
   - skin-screenshots/seaison__dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/conversation.png
   - skin-screenshots/seaison__dsh-plugin-eva-theme/f8b96381ceda724c58e79ec375e0dfe08d244349/settings.png
 featuredRank: 999
-releaseUpdatedAt: 2026-10-26T01:51:13.165Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+releaseUpdatedAt: 2026-11-13T00:28:13.548Z
+metadataUpdatedAt: 2026-11-13T00:28:13.548Z
 starsUpdatedAt: 2026-11-11T13:17:15.192Z
-updatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-13T00:28:13.548Z

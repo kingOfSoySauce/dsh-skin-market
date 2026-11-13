@@ -15,21 +15,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CosmoSail/dsh-bloomglass#7e9528e2cf473cbd3b3be9ed18b5a079bc59ceae
-  version: 1.0.6
-  commit: 7e9528e2cf473cbd3b3be9ed18b5a079bc59ceae
+  target: github:CosmoSail/dsh-bloomglass#e0b8dcdb48c7c7383798a7416367a06cf67ffd7d
+  version: 1.0.7
+  commit: e0b8dcdb48c7c7383798a7416367a06cf67ffd7d
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-bloomglass
-    packageVersion: 1.0.6
-    integrity: sha512-ETVraIZgpCJVflbJGBgALSI339JOYJGvi4hq/z5Vbp5wYGR/wrrnPPYh2Phali76IdkuhAz483KHS6cu0NSxHg==
+    packageVersion: 1.0.7
+    integrity: sha512-qhUPF4EpBRZ6U7QgyZ1Ssvxf+Qd6FRLmuZfHMDYOmkQeFy4JhJnuCiqDRCYU1h5AlGrUdrffWv7lac7L6rfJFg==
   npm:
     name: dsh-bloomglass
-    version: 1.0.6
-    integrity: sha512-ETVraIZgpCJVflbJGBgALSI339JOYJGvi4hq/z5Vbp5wYGR/wrrnPPYh2Phali76IdkuhAz483KHS6cu0NSxHg==
+    version: 1.0.7
+    integrity: sha512-qhUPF4EpBRZ6U7QgyZ1Ssvxf+Qd6FRLmuZfHMDYOmkQeFy4JhJnuCiqDRCYU1h5AlGrUdrffWv7lac7L6rfJFg==
     repository: https://github.com/CosmoSail/dsh-bloomglass
-    gitHead: 7e9528e2cf473cbd3b3be9ed18b5a079bc59ceae
+    gitHead: e0b8dcdb48c7c7383798a7416367a06cf67ffd7d
 compatibility:
   dsh: unverified
   platform:
@@ -53,19 +53,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 7e9528e2cf473cbd3b3be9ed18b5a079bc59ceae
-    packageVersion: 1.0.6
+    commit: e0b8dcdb48c7c7383798a7416367a06cf67ffd7d
+    packageVersion: 1.0.7
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-10T09:20:49.665Z
+    checkedAt: 2026-11-13T00:12:18.206Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 starsSnapshot: 2
 featuredRank: 999
-releaseUpdatedAt: 2026-11-10T09:20:56.221Z
-metadataUpdatedAt: 2026-11-10T09:20:56.221Z
+releaseUpdatedAt: 2026-11-13T00:28:13.548Z
+metadataUpdatedAt: 2026-11-13T00:28:13.548Z
 starsUpdatedAt: 2026-11-09T07:14:36.576Z
-updatedAt: 2026-11-10T09:20:56.221Z
+updatedAt: 2026-11-13T00:28:13.548Z

@@ -27,6 +27,10 @@ compatibility:
   dsh: 0.1.2-rc.1
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Carpon39038__dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/home.png
+  - skin-screenshots/Carpon39038__dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/conversation.png
+  - skin-screenshots/Carpon39038__dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/settings.png
 screenshots:
   - https://raw.githubusercontent.com/Carpon39038/dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/docs/preview.png
 listScreenshot: https://raw.githubusercontent.com/Carpon39038/dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/docs/preview.png
@@ -55,13 +59,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/Carpon39038__dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/home.png
-  - skin-screenshots/Carpon39038__dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/conversation.png
-  - skin-screenshots/Carpon39038__dsh-image-theme/25c70fcd31b0cf36f8a0ff57b0413223daaf5d27/settings.png
 featuredRank: 60
+starsSnapshot: 1
 releaseUpdatedAt: 2026-09-07T21:58:29.457Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-13T00:29:01.960Z
 starsUpdatedAt: 2026-09-12T21:25:05.195Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-13T00:29:01.960Z

@@ -14,12 +14,12 @@ modes:
   - light
   - dark
 install:
-  target: github:ywleeo/dsh-image-preview#273a786fb04eadea96338681d261572ccf9e4be4
-  version: 0.2.1
-  commit: 273a786fb04eadea96338681d261572ccf9e4be4
+  target: github:ywleeo/dsh-image-preview#39b33a849c2597a2c6be72970e2d711de2be8a5a
+  version: 0.2.2
+  commit: 39b33a849c2597a2c6be72970e2d711de2be8a5a
   desktop:
     mode: manual-only
-    reason: npm-repository-mismatch
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -44,19 +44,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 273a786fb04eadea96338681d261572ccf9e4be4
-    packageVersion: 0.2.1
+    commit: 39b33a849c2597a2c6be72970e2d711de2be8a5a
+    packageVersion: 0.2.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:09:31.824Z
+    checkedAt: 2026-11-13T00:13:02.230Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 starsSnapshot: 1
 featuredRank: 0
-releaseUpdatedAt: 2026-11-09T00:17:02.633Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+releaseUpdatedAt: 2026-11-13T00:28:13.548Z
+metadataUpdatedAt: 2026-11-13T00:28:13.548Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-11-09T00:17:02.633Z
+updatedAt: 2026-11-13T00:28:13.548Z

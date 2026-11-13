@@ -19,9 +19,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b&path:/orca-link
+  target: github:Small-tailqwq/dsh-deep-whale#6421ca5f01535b26791d4ce945b4be7f265cc6b5&path:/orca-link
   version: 0.1.10
-  commit: d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b
+  commit: 6421ca5f01535b26791d4ce945b4be7f265cc6b5
   desktop:
     mode: manual-only
     reason: companion-not-desktop-installable
@@ -36,7 +36,7 @@ install:
     version: 0.1.10
     integrity: sha512-K9ToRas2Fc8Fx8tkyEzVtfzLsfKqpWSJTtq/ZfcsgfqSL2Ns/NP904JYQX9k0GFR6WwYoE4J/yiPfXhgduL4SA==
     repository: https://github.com/Small-tailqwq/dsh-deep-whale
-    gitHead: d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b
+    gitHead: 6421ca5f01535b26791d4ce945b4be7f265cc6b5
 compatibility:
   dsh: unverified
   platform:
@@ -66,24 +66,24 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b
+    commit: 6421ca5f01535b26791d4ce945b4be7f265cc6b5
     packageVersion: 0.1.10
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-09T07:12:32.672Z
+    checkedAt: 2026-11-13T00:11:29.245Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
-starsSnapshot: 3090
+starsSnapshot: 3096
 marketScreenshots:
   - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/home.png
   - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/conversation.png
   - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/settings.png
 featuredRank: 3
-releaseUpdatedAt: 2026-11-09T07:12:33.862Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
-starsUpdatedAt: 2026-11-12T00:09:47.866Z
-updatedAt: 2026-11-12T00:09:47.866Z
+releaseUpdatedAt: 2026-11-13T00:28:13.548Z
+metadataUpdatedAt: 2026-11-13T00:28:13.548Z
+starsUpdatedAt: 2026-11-13T00:28:13.548Z
+updatedAt: 2026-11-13T00:28:13.548Z
