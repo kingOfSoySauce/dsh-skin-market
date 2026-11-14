@@ -25,7 +25,13 @@ for (const name of files) skins.push(parse(await readFile(join(sourceDir, name),
 let previous
 if (existsSync(file)) {
   try {
-    previous = validateInstallPolicies(JSON.parse(await readFile(file, 'utf8')), skins)
+    const raw = JSON.parse(await readFile(file, 'utf8'))
+    // Drop stale ids before validation: the ops release ledger may remove an
+    // entry while a local bootstrap file still names it. Known ids (including
+    // github-mode observations written by ops) are preserved below.
+    const known = new Set(skins.map(skin => skin.id))
+    const policies = Object.fromEntries(Object.entries(raw?.policies ?? {}).filter(([id]) => known.has(id)))
+    previous = validateInstallPolicies({ ...raw, policies }, skins)
   } catch (error) {
     if (!check) throw error
     console.error(INSTALL_POLICY_PATH + ': ' + (error instanceof Error ? error.message : String(error)))
@@ -34,7 +40,10 @@ if (existsSync(file)) {
 }
 
 const now = new Date().toISOString()
-const policies = {}
+// Bootstrap only fills npm observations. Preserve any existing github-mode
+// observations written by the ops release ledger instead of overwriting them.
+const known = new Set(skins.map(skin => skin.id))
+const policies = Object.fromEntries(Object.entries(previous ?? {}).filter(([id]) => known.has(id)))
 for (const skin of skins) {
   const npm = skin.install?.npm
   if (npm === undefined) continue
