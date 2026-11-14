@@ -64,7 +64,7 @@ describe('official Desktop entrypoint', () => {
       expect(operationResponse.end).toHaveBeenCalled()
 
       expect(operationResponse.writeHead.mock.calls.at(-1)?.[0]).toBe(409)
-      expect(JSON.parse(operationResponse.end.mock.calls.at(-1)?.[0] as string)).toEqual({ error: expect.stringContaining('pluginManager'), errorKey: 'failure.hostUnsupportedProblem' })
+      expect(JSON.parse(operationResponse.end.mock.calls.at(-1)?.[0] as string)).toEqual({ error: expect.stringContaining('pluginManager'), errorKey: 'failure.hostPluginManagerMissing' })
       const afterResponse = { writeHead: vi.fn(), end: vi.fn() }
       await handlers.get('/dsh-skin-market/state')?.({ method: 'GET', headers: {} }, afterResponse)
       expect(JSON.parse(afterResponse.end.mock.calls.at(-1)?.[0] as string).operations).toEqual([])

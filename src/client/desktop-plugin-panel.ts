@@ -1,3 +1,5 @@
+import type { MessageKey } from './i18n.ts'
+
 /**
  * The official rc.2 / alpha.3 Plugins page injects its controller face into the
  * winning `main` registration. This is a guarded adapter to that UI face, not
@@ -25,7 +27,7 @@ export type RecoveryStatus = 'started' | 'opened' | 'blocked' | 'manual'
 
 export type DesktopPluginPanelResult =
   | { ok: true; kind: 'prefilled' | 'resumed' }
-  | { ok: false; reason: string; code?: 'busy' | 'unavailable' }
+  | { ok: false; reason: string; reasonKey?: MessageKey; code?: 'busy' | 'unavailable' }
 
 export interface DesktopPluginPanelContext {
   /** Cordis permits optional service reads through get(), without hard injection. */
@@ -80,6 +82,13 @@ const EDITABLE_PHASES = new Set(['idle', 'unknown', 'done', 'failed'])
 const UNAVAILABLE = '暂时无法打开 DSH 添加插件面板，请重试。'
 const LOAD_FAILED = 'DSH 插件列表暂时未能加载，请稍后重试。'
 const BUSY = '原生添加插件面板仍在处理另一项任务，请先在插件页确认其状态。'
+const MISSING_SOURCE = '此皮肤缺少可用的安装地址。'
+const OPENING = '正在打开原生添加插件面板，请稍后重试。'
+
+/** The raw reason stays for older hosts and diagnostics; the key localizes known first-party text. */
+function failure(reason: string, reasonKey: MessageKey, code?: 'busy' | 'unavailable'): DesktopPluginPanelResult {
+  return { ok: false, reason, reasonKey, ...(code === undefined ? {} : { code }) }
+}
 
 function object(value: unknown): Record<string, unknown> | undefined {
   return value !== null && typeof value === 'object' ? value as Record<string, unknown> : undefined
@@ -162,9 +171,9 @@ function resume(face: ManagerFace, state: ManagerSnapshot, requestedSpec: string
   if (install.open) return { ok: true, kind: 'resumed' }
   if (typeof install.requestId === 'string' && install.requestId !== '' && install.phase !== 'checking') {
     face.openInstall()
-    return snapshot(face)?.install.open ? { ok: true, kind: 'resumed' } : { ok: false, reason: BUSY, code: 'busy' }
+    return snapshot(face)?.install.open ? { ok: true, kind: 'resumed' } : failure(BUSY, 'failure.nativePanelBusy', 'busy')
   }
-  return { ok: false, reason: BUSY, code: 'busy' }
+  return failure(BUSY, 'failure.nativePanelBusy', 'busy')
 }
 
 export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options: { readyTimeoutMs?: number } = {}): DesktopPluginPanel {
@@ -335,48 +344,48 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
   }
   const open = async (spec: string, handoff: DesktopInstallHandoff | undefined, navigateOnResume = true): Promise<DesktopPluginPanelResult> => {
     try {
-      if (lifetime.signal.aborted) return { ok: false, reason: UNAVAILABLE }
+      if (lifetime.signal.aborted) return failure(UNAVAILABLE, 'failure.nativePanelUnavailable')
       watchRemote()
       const target = findTarget(ctx)
-      if (!target) return { ok: false, reason: UNAVAILABLE }
+      if (!target) return failure(UNAVAILABLE, 'failure.nativePanelUnavailable')
       let state = snapshot(target.face)
-      if (!state) return { ok: false, reason: UNAVAILABLE }
+      if (!state) return failure(UNAVAILABLE, 'failure.nativePanelUnavailable')
       const active = resume(target.face, state, spec)
       if (active) return navigate(active, target.layout, navigateOnResume)
       target.face.ensure()
       if (!await waitUntilLoaded(target.face.hooks.pluginManager, options.readyTimeoutMs ?? 8_000, lifetime.signal)) {
-        return { ok: false, reason: LOAD_FAILED }
+        return failure(LOAD_FAILED, 'failure.nativePanelListUnavailable')
       }
-      if (lifetime.signal.aborted) return { ok: false, reason: UNAVAILABLE }
+      if (lifetime.signal.aborted) return failure(UNAVAILABLE, 'failure.nativePanelUnavailable')
       // A normal re-render or HMR can replace the controller (and its face)
       // while the inventory read is pending. Rebind to the current controller
       // and wait for its store instead of failing the user's handoff; object
       // identity is not a stable panel identity here.
       let current = findTarget(ctx)
-      if (!current) return { ok: false, reason: UNAVAILABLE }
+      if (!current) return failure(UNAVAILABLE, 'failure.nativePanelUnavailable')
       if (current.face !== target.face) {
         if (!await waitUntilLoaded(current.face.hooks.pluginManager, options.readyTimeoutMs ?? 8_000, lifetime.signal)) {
-          return { ok: false, reason: LOAD_FAILED }
+          return failure(LOAD_FAILED, 'failure.nativePanelListUnavailable')
         }
-        if (lifetime.signal.aborted) return { ok: false, reason: UNAVAILABLE }
+        if (lifetime.signal.aborted) return failure(UNAVAILABLE, 'failure.nativePanelUnavailable')
         current = findTarget(ctx) ?? current
       }
       state = snapshot(current.face)
-      if (!state || state.status !== 'ready') return { ok: false, reason: LOAD_FAILED }
+      if (!state || state.status !== 'ready') return failure(LOAD_FAILED, 'failure.nativePanelListUnavailable')
       const becameActive = resume(current.face, state, spec)
       if (becameActive) return navigate(becameActive, current.layout, navigateOnResume)
       if (state.install.phase !== 'idle' || !state.install.open) current.face.openInstall()
       const opened = snapshot(current.face)
-      if (!opened?.install.open) return { ok: false, reason: UNAVAILABLE }
+      if (!opened?.install.open) return failure(UNAVAILABLE, 'failure.nativePanelUnavailable')
       // Never overwrite a run that the official face reports after opening.
       if (!EDITABLE_PHASES.has(opened.install.phase) || opened.install.enabling) return navigate({ ok: true, kind: 'resumed' }, current.layout, navigateOnResume)
       current.face.editInstallSpec(spec)
       const filled = snapshot(current.face)
-      if (!filled?.install.open || filled.install.spec !== spec) return { ok: false, reason: UNAVAILABLE }
+      if (!filled?.install.open || filled.install.spec !== spec) return failure(UNAVAILABLE, 'failure.nativePanelUnavailable')
       beginHandoff(current, spec, handoff)
       return navigate({ ok: true, kind: 'prefilled' }, current.layout, navigateOnResume)
     } catch {
-      return { ok: false, reason: UNAVAILABLE }
+      return failure(UNAVAILABLE, 'failure.nativePanelUnavailable')
     }
   }
   return {
@@ -389,9 +398,9 @@ export function createDesktopPluginPanel(ctx: DesktopPluginPanelContext, options
     },
     open(input, handoff, options) {
       const spec = input.trim()
-      if (!spec) return Promise.resolve({ ok: false, reason: '此皮肤缺少可用的安装地址。' })
+      if (!spec) return Promise.resolve(failure(MISSING_SOURCE, 'failure.nativePanelMissingSource'))
       if (pending) return pending.spec === spec ? pending.promise
-        : Promise.resolve({ ok: false, reason: '正在打开原生添加插件面板，请稍后重试。' })
+        : Promise.resolve(failure(OPENING, 'common.nativePanelOpening'))
       const promise = open(spec, handoff, options?.navigateOnResume !== false).finally(() => { if (pending?.promise === promise) pending = undefined })
       pending = { spec, promise }
       return promise

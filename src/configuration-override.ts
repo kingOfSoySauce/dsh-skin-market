@@ -4,6 +4,7 @@ import { dirname, isAbsolute, join, resolve } from 'node:path'
 import { isAlias, isMap, isScalar, isSeq, parseDocument, visit, type Scalar, type YAMLMap } from 'yaml'
 import { CORDIS_JS_TAG, cordisYamlOptions } from './cordis-yaml.ts'
 import type { ConfigurationOverrideBatchPlan, ConfigurationOverridePlan } from './configuration-override-types.ts'
+import type { OperationMessageKey } from './operation-message.ts'
 export type { ConfigurationOverrideBatchPlan, ConfigurationOverridePlan } from './configuration-override-types.ts'
 
 /** These locations and overlay facts must come from the running Host, never an HTTP request. */
@@ -28,6 +29,13 @@ const REASONS: Record<FailureCode, string> = {
   'write-failed': '无法保存配置修复，请检查配置目录的写入权限。',
   'invalid-target': '无法确认目标组件和本次启停方向，请重新操作。',
 }
+const REASON_KEYS: Record<FailureCode, OperationMessageKey> = {
+  unavailable: 'failure.configUnavailable',
+  unsafe: 'failure.configUnsafe',
+  changed: 'failure.configChanged',
+  'write-failed': 'failure.configWriteFailed',
+  'invalid-target': 'failure.configInvalidTarget',
+}
 
 export class ConfigurationOverrideError extends Error {
   constructor(public readonly code: FailureCode) {
@@ -46,7 +54,9 @@ interface Source {
 }
 interface Prepared { source: Source; contents: string; plan: ConfigurationOverridePlan }
 interface PreparedBatch { source: Source; contents: string; plan: ConfigurationOverrideBatchPlan }
-type SourceResult = Source | { status: 'blocked'; reason: string } | { status: 'none'; file: string; reason: string }
+type SourceResult = Source
+  | { status: 'blocked'; reason: string; reasonKey: OperationMessageKey }
+  | { status: 'none'; file: string; reason: string; reasonKey?: OperationMessageKey }
 
 /** Opaque receipt: original configuration bytes stay in this module, outside API responses and logs. */
 export interface ConfigurationOverrideReceipt { readonly backupPath: string }
@@ -215,11 +225,11 @@ function removeDisabled(contents: string, row: YAMLMap, soleRow: boolean): strin
 }
 
 function trustedSource(options: ConfigurationOverrideOptions): SourceResult {
-  if (options.overlays !== undefined && (!Array.isArray(options.overlays) || options.overlays.length > 0)) return { status: 'blocked', reason: '当前宿主含启动覆盖，无法只通过共享配置确认修复结果。' }
-  if (typeof options.home !== 'string' || options.home.trim() === '' || !isAbsolute(options.home)) return { status: 'blocked', reason: '宿主未提供可信的共享配置位置。' }
+  if (options.overlays !== undefined && (!Array.isArray(options.overlays) || options.overlays.length > 0)) return { status: 'blocked', reason: '当前宿主含启动覆盖，无法只通过共享配置确认修复结果。', reasonKey: 'failure.configHostOverlays' }
+  if (typeof options.home !== 'string' || options.home.trim() === '' || !isAbsolute(options.home)) return { status: 'blocked', reason: '宿主未提供可信的共享配置位置。', reasonKey: 'failure.configHomeUntrusted' }
   const home = resolve(options.home)
   const file = join(home, 'cordis.patch.yml')
-  if (options.patchPath !== undefined && resolve(options.patchPath) === file) return { status: 'blocked', reason: '宿主的共享配置与当前配置位置重合，无法确认配置层级。' }
+  if (options.patchPath !== undefined && resolve(options.patchPath) === file) return { status: 'blocked', reason: '宿主的共享配置与当前配置位置重合，无法确认配置层级。', reasonKey: 'failure.configPathOverlap' }
   try { return readSource(file, home) } catch (error) {
     if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
       try { homeIdentity(home) } catch { throw new ConfigurationOverrideError('unavailable') }
@@ -275,13 +285,20 @@ function prepareBatch(options: ConfigurationOverrideOptions, targets: readonly C
   const canonical = canonicalTargets(targets)
   if (canonical.length === 0) return { status: 'none', changes: [], reason: '本次操作没有需要检查的组件。' }
   const source = trustedSource(options)
-  if ('status' in source) return { status: source.status, changes: [], reason: source.reason }
+  if ('status' in source) return {
+    status: source.status, changes: [], reason: source.reason,
+    ...(source.reasonKey === undefined ? {} : { reasonKey: source.reasonKey }),
+  }
   const rows = parseSafe(source.contents).sequence.items as YAMLMap[]
   const changes: ConfigurationOverrideBatchPlan['changes'] = []
   for (const target of canonical) {
     const result = prepareTarget(options, target, source, rows)
     const plan = 'plan' in result ? result.plan : result
-    if (plan.status === 'blocked') return { status: 'blocked', changes: [], reason: plan.reason }
+    if (plan.status === 'blocked') return {
+      status: 'blocked', changes: [], reason: plan.reason,
+      ...(plan.reasonKey === undefined ? {} : { reasonKey: plan.reasonKey }),
+      ...(plan.reasonParams === undefined ? {} : { reasonParams: plan.reasonParams }),
+    }
     if (plan.status === 'repairable') {
       const { context: _singleTargetContext, ...projection } = plan
       changes.push({ ...projection, skinId: target.skinId })
@@ -308,7 +325,12 @@ export function inspectConfigurationOverride(options: ConfigurationOverrideOptio
     const result = prepare(options, target)
     return 'plan' in result ? result.plan : result
   } catch (error) {
-    return { ...basePlan(target), status: 'blocked', reason: error instanceof ConfigurationOverrideError ? error.message : REASONS.unavailable }
+    const failure = error instanceof ConfigurationOverrideError ? error : undefined
+    return {
+      ...basePlan(target), status: 'blocked',
+      reason: failure?.message ?? REASONS.unavailable,
+      reasonKey: failure === undefined ? REASON_KEYS.unavailable : REASON_KEYS[failure.code],
+    }
   }
 }
 
@@ -318,7 +340,12 @@ export function inspectConfigurationOverrides(options: ConfigurationOverrideOpti
     const result = prepareBatch(options, targets)
     return 'plan' in result ? result.plan : result
   } catch (error) {
-    return { status: 'blocked', changes: [], reason: error instanceof ConfigurationOverrideError ? error.message : REASONS.unavailable }
+    const failure = error instanceof ConfigurationOverrideError ? error : undefined
+    return {
+      status: 'blocked', changes: [],
+      reason: failure?.message ?? REASONS.unavailable,
+      reasonKey: failure === undefined ? REASON_KEYS.unavailable : REASON_KEYS[failure.code],
+    }
   }
 }
 

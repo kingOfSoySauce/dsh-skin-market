@@ -29,7 +29,7 @@ import { desktopInstallPlan, desktopInstallationWarning } from '../desktop-insta
 import { preferredInstallTarget } from '../install-source.ts'
 import { recoveryRoute } from './install-recovery.ts'
 import type { DesktopActivationIntent, DesktopPluginPanel, ManualRecovery } from './desktop-plugin-panel.ts'
-import type { CatalogSkin, DshRuntime, InstalledClientPlugin, MarketHostKind, Operation, RuntimeSkin } from './types.ts'
+import type { CatalogSkin, DshRuntime, HostCapabilityState, InstalledClientPlugin, MarketHostKind, Operation, RuntimeSkin } from './types.ts'
 import type { ConfigurationOverrideBatchPlan } from '../configuration-override-types.ts'
 import { curveDayLabel, curveEntry, sparklineGeometry, type StarCurve } from '../star-curves.ts'
 import { loadStarCurves } from './star-curves-client.ts'
@@ -284,10 +284,16 @@ interface MarketStateResponse {
   installedClientPlugins?: InstalledClientPlugin[]
   runningAgentCount?: number
   marketUpdateRestartRequired?: boolean
-  management?: { official: boolean; installRequiresRestart?: boolean; capabilities: Record<'install' | 'update' | 'enable' | 'disable' | 'remove', { available: boolean; reason?: string }> }
+  management?: { official: boolean; installRequiresRestart?: boolean; capabilities: Record<'install' | 'update' | 'enable' | 'disable' | 'remove', HostCapabilityState> }
   profileBusy?: string
   profileBusyKey?: Operation['messageKey']
   profileBusyParams?: Operation['messageParams']
+}
+
+/** Localize a Host capability reason; older Hosts only send the raw diagnostic. */
+function capabilityReasonLabel(capability: HostCapabilityState | undefined, t: Translator): string | undefined {
+  if (capability?.available !== false) return undefined
+  return operationMessage({ message: capability.reason, messageKey: capability.reasonKey, messageParams: capability.reasonParams }, t) ?? t('market.profileWriteBlocked')
 }
 
 interface MarketUpdateStatus {
@@ -1020,7 +1026,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const [profileBusyKey, setProfileBusyKey] = useState<Operation['messageKey']>()
   const [profileBusyParams, setProfileBusyParams] = useState<Operation['messageParams']>()
   const translatedProfileBusy = operationMessage({ message: profileBusy, messageKey: profileBusyKey, messageParams: profileBusyParams }, t)
-  const marketWriteReason = translatedProfileBusy ?? (management?.capabilities.update.available === false ? management.capabilities.update.reason ?? t('market.profileWriteBlocked') : undefined)
+  const marketWriteReason = translatedProfileBusy ?? capabilityReasonLabel(management?.capabilities.update, t)
   const [restartAvailable, setRestartAvailable] = useState(true)
   const [installedClientPlugins, setInstalledClientPlugins] = useState<InstalledClientPlugin[]>([])
   const [loading, setLoading] = useState(true)
@@ -2217,8 +2223,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     if (translatedProfileBusy !== undefined) return translatedProfileBusy
     if (marketUpdating || marketOperation !== null && !['done', 'failed', 'cancelled'].includes(marketOperation.phase)) return t('common.marketUpdatingBlocked')
     const action = kind === 'install' ? 'install' : kind === 'update' || kind === 'migrate' ? 'update' : kind === 'activate' || kind === 'pin' ? 'enable' : kind === 'uninstall' ? 'remove' : 'disable'
-    const capability = management?.capabilities[action]
-    return capability?.available === false ? capability.reason ?? t('market.profileWriteBlocked') : null
+    return capabilityReasonLabel(management?.capabilities[action], t) ?? null
   }, [management, marketOperation, marketUpdating, translatedProfileBusy, t])
   const currentActionReason = useRef(actionReason)
   currentActionReason.current = actionReason
@@ -2865,7 +2870,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       const result = await desktopPluginPanel.open(target, { skinId: skin.id, packageName: skin.package, operationId: failed?.id })
       if (!mounted.current) return
       if (result.ok) closeBrowser()
-      else setError(result.reason)
+      else setError(operationMessage({ message: result.reason, messageKey: result.reasonKey }, t) ?? result.reason)
     } catch {
       if (mounted.current) setError(t('market.installPanelOpenFailed'))
     } finally {
@@ -3700,7 +3705,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
             {step.copy !== undefined && <CodeBlock code={step.copy} lang={step.id === 'command' ? 'bash' : undefined} copyLabel={step.copyLabel} copiedLabel={t('failure.existingSourceCopied')} />}
           </DisclosureRow>)}
           {repairPrompt !== null && sourceGuide === null && <p>{t('common.copyRepairHint')}</p>}
-          {repairPrompt !== null && interceptFailure?.configurationOverride?.status === 'blocked' && <p>{interceptFailure.configurationOverride.reason}</p>}
+          {repairPrompt !== null && interceptFailure?.configurationOverride?.status === 'blocked' && <p>{operationMessage({ message: interceptFailure.configurationOverride.reason, messageKey: interceptFailure.configurationOverride.reasonKey, messageParams: interceptFailure.configurationOverride.reasonParams }, t)}</p>}
           {promptFallback !== null && promptFallback.operationId === interceptLogId && <>
             <p role="alert">{promptFallback.error}</p>
             <textarea className={css.repairPromptFallback} aria-label={t('common.copyRepairPromptLabel')} readOnly rows={8} value={promptFallback.text} />

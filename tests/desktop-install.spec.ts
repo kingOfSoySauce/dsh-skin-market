@@ -24,7 +24,7 @@ describe('official Desktop install planning', () => {
   it.each([undefined, 'packages/skin'])('allows reviewed canonical GitHub %s through the official manager only', path => {
     const item = skin(path)
     expect(desktopInstallPlan(item, true)).toEqual({ kind: 'github', target: item.install.target })
-    expect(desktopInstallPlan(item, false).kind).toBe('manual')
+    expect(desktopInstallPlan(item, false)).toMatchObject({ kind: 'manual', reasonKey: 'failure.desktopNpmOnly' })
   })
 
   it('retains managed npm as the default while keeping a separate pinned GitHub update target', () => {

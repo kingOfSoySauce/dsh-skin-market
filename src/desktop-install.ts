@@ -1,9 +1,10 @@
+import type { OperationMessageKey, OperationMessageParams } from './operation-message.ts'
 import type { SkinEntry } from './types.ts'
 
 export type DesktopInstallSkin = Pick<SkinEntry, 'repo' | 'package' | 'subpath' | 'install' | 'review'>
 export type DesktopInstallPlan =
   | { kind: 'npm' | 'github'; target: string }
-  | { kind: 'manual'; reason: string }
+  | { kind: 'manual'; reason: string; reasonKey?: OperationMessageKey; reasonParams?: OperationMessageParams }
 
 /** Machine reasons that mean "npm is unavailable", not "the GitHub pin is unsafe". */
 const GITHUB_FALLBACK_REASONS = new Set([
@@ -33,30 +34,30 @@ export function desktopInstallPlan(skin: DesktopInstallSkin, official: boolean, 
   const capability = skin.install.desktop
   if (capability?.mode === 'managed') {
     if (capability.packageName !== skin.package || capability.packageVersion !== skin.install.version) {
-      return { kind: 'manual', reason: 'Desktop 安装元数据与皮肤固定版本不一致' }
+      return { kind: 'manual', reason: 'Desktop 安装元数据与皮肤固定版本不一致', reasonKey: 'failure.desktopInstallMetadataProblem' }
     }
     return { kind: 'npm', target: `${capability.packageName}@${capability.packageVersion}` }
   }
-  if (!official) return { kind: 'manual', reason: capability?.reason ?? '当前桌面宿主仅支持已验证的 npm 安装包' }
+  if (!official) return { kind: 'manual', reason: capability?.reason ?? '当前桌面宿主仅支持已验证的 npm 安装包', reasonKey: 'failure.desktopNpmOnly' }
   return desktopGithubInstallPlan(skin, allowUnverified)
 }
 
 /** Also used when updating an existing GitHub source, even if npm is now available. */
 export function desktopGithubInstallPlan(skin: DesktopInstallSkin, allowUnverified = false): DesktopInstallPlan {
   if (skin.review?.installation !== 'verified' && (!allowUnverified || !allowsGithubFallback(skin))) {
-    return { kind: 'manual', reason: 'GitHub 安装来源尚未通过市场核验' }
+    return { kind: 'manual', reason: 'GitHub 安装来源尚未通过市场核验', reasonKey: 'failure.githubSourceUnverified' }
   }
-  if ((skin.install.companions?.length ?? 0) > 0) return { kind: 'manual', reason: '此皮肤需要一起安装伴随插件' }
-  if (skin.install.allowBuild !== undefined) return { kind: 'manual', reason: '此皮肤需要按仓库说明批准 GitHub 构建项' }
+  if ((skin.install.companions?.length ?? 0) > 0) return { kind: 'manual', reason: '此皮肤需要一起安装伴随插件', reasonKey: 'failure.desktopCompanionsRequired' }
+  if (skin.install.allowBuild !== undefined) return { kind: 'manual', reason: '此皮肤需要按仓库说明批准 GitHub 构建项', reasonKey: 'failure.desktopBuildApprovalRequired' }
   const repository = /^https:\/\/github\.com\/([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)$/.exec(skin.repo)?.[1]
   const { commit } = skin.install
   const path = skin.subpath
   if (repository === undefined || repository.split('/').some(part => part === '.' || part === '..') || !/^[0-9a-f]{40}$/.test(commit)
     || path !== undefined && (!/^[A-Za-z0-9_./-]+$/.test(path) || path.split('/').some(part => part === '' || part === '.' || part === '..'))) {
-    return { kind: 'manual', reason: 'GitHub 安装目标缺少有效的固定 commit 或子目录' }
+    return { kind: 'manual', reason: 'GitHub 安装目标缺少有效的固定 commit 或子目录', reasonKey: 'failure.githubTargetInvalid' }
   }
   const target = `github:${repository}#${commit}${path === undefined ? '' : `&path:/${path}`}`
-  if (skin.install.target !== target) return { kind: 'manual', reason: 'GitHub 安装目标与市场固定仓库、commit 或子目录不一致' }
+  if (skin.install.target !== target) return { kind: 'manual', reason: 'GitHub 安装目标与市场固定仓库、commit 或子目录不一致', reasonKey: 'failure.githubTargetMismatch' }
   return { kind: 'github', target }
 }
 

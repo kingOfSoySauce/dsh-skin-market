@@ -1,3 +1,5 @@
+import type { OperationMessageKey, OperationMessageParams } from './operation-message.ts'
+
 /** Public diagnostic projection. Contains no configuration contents or editable paths. */
 export interface ConfigurationOverridePlan {
   status: 'repairable' | 'blocked' | 'none'
@@ -10,6 +12,9 @@ export interface ConfigurationOverridePlan {
   desiredEnabled: boolean
   sharedAcrossProfiles: true
   reason: string
+  /** Catalog key for the raw diagnostic; older Hosts omit it. */
+  reasonKey?: OperationMessageKey
+  reasonParams?: OperationMessageParams
 }
 
 /** One approval covers every target against the same shared-file snapshot. */
@@ -20,4 +25,7 @@ export interface ConfigurationOverrideBatchPlan {
   selectionContext?: string
   changes: Array<ConfigurationOverridePlan & { skinId: string }>
   reason: string
+  /** Catalog key for the raw diagnostic; older Hosts omit it. */
+  reasonKey?: OperationMessageKey
+  reasonParams?: OperationMessageParams
 }

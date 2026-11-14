@@ -151,7 +151,7 @@ describe('official Desktop add-plugin panel bridge', () => {
 
   it.each(['unavailable', 'error'])('returns a usable fallback when the official inventory is %s', async status => {
     const panel = officialPanel({ status })
-    await expect(createDesktopPluginPanel(panel.ctx).open('skin')).resolves.toMatchObject({ ok: false, reason: expect.stringContaining('未能加载') })
+    await expect(createDesktopPluginPanel(panel.ctx).open('skin')).resolves.toMatchObject({ ok: false, reason: expect.stringContaining('未能加载'), reasonKey: 'failure.nativePanelListUnavailable' })
     expect(panel.face.openInstall).not.toHaveBeenCalled()
     expect(panel.ctx.layout.selectPanel).not.toHaveBeenCalled()
   })
@@ -189,7 +189,7 @@ describe('official Desktop add-plugin panel bridge', () => {
   it.each(['checking', 'running', 'future-active-phase'])('does not reset a hidden %s task without an id', async phase => {
     const install = { phase, open: false, spec: 'existing-skin' }
     const panel = officialPanel({ install })
-    await expect(createDesktopPluginPanel(panel.ctx).open('new-skin')).resolves.toMatchObject({ ok: false, reason: expect.stringContaining('另一项任务') })
+    await expect(createDesktopPluginPanel(panel.ctx).open('new-skin')).resolves.toMatchObject({ ok: false, reason: expect.stringContaining('另一项任务'), reasonKey: 'failure.nativePanelBusy' })
     expect(panel.state().install).toBe(install)
     expect(panel.face.openInstall).not.toHaveBeenCalled()
     expect(panel.face.editInstallSpec).not.toHaveBeenCalled()
@@ -240,7 +240,7 @@ describe('official Desktop add-plugin panel bridge', () => {
     const first = bridge.open('first-skin')
     const doubleClick = bridge.open('first-skin')
     expect(doubleClick).toBe(first)
-    await expect(bridge.open('different-skin')).resolves.toMatchObject({ ok: false, reason: expect.stringContaining('正在打开') })
+    await expect(bridge.open('different-skin')).resolves.toMatchObject({ ok: false, reason: expect.stringContaining('正在打开'), reasonKey: 'common.nativePanelOpening' })
     expect(panel.face.ensure).toHaveBeenCalledTimes(1)
     panel.publish({ status: 'ready' })
     await expect(first).resolves.toEqual({ ok: true, kind: 'prefilled' })

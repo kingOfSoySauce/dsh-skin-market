@@ -828,6 +828,9 @@ describe('official installation settlement', () => {
     const withoutUpdate = officialDesktopRunner(() => fullManager(), runtime('0.2.2-rc.2'))
     expect(withoutUpdate.management!.capabilities().managedUpdate.available).toBe(false)
     expect(withoutUpdate.management!.capabilities().managedUpdate.reason).toContain('updateBundle')
+    expect(withoutUpdate.management!.capabilities().managedUpdate).toMatchObject({ reasonKey: 'failure.hostCapabilityMissing', reasonParams: { capability: 'updateBundle' } })
+    const withoutManager = officialDesktopRunner(() => undefined, runtime('0.2.2-rc.2'))
+    expect(withoutManager.management!.capabilities().install).toMatchObject({ available: false, reasonKey: 'failure.hostPluginManagerMissing' })
     // The historical capability keeps meaning "installBundle is available".
     expect(withoutUpdate.management!.capabilities().update).toEqual({ available: true })
   })

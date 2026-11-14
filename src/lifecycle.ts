@@ -1622,18 +1622,18 @@ export class SkinLifecycle {
     if (selectionContext !== undefined && (kind !== 'activate' || !/^[a-f0-9]{64}$/.test(selectionContext))) throw new Error('invalid selection context')
     const action = kind === 'install' ? 'install' : kind === 'update' || kind === 'migrate' ? 'update' : kind === 'activate' || kind === 'pin' ? 'enable' : kind === 'uninstall' ? 'remove' : 'disable'
     const capability = this.management?.capabilities()[action]
-    if (capability?.available === false) throw new MarketMessageError(capability.reason ?? '当前宿主不支持此操作，请使用官方插件页', 'failure.hostUnsupportedProblem')
+    if (capability?.available === false) throw new MarketMessageError(capability.reason ?? '当前宿主不支持此操作，请使用官方插件页', capability.reasonKey ?? 'failure.hostUnsupportedProblem', capability.reasonParams)
     const skin = this.skin(skinId)
     if (kind === 'activate' || kind === 'pin') {
       if (acknowledgeCompatibility === true && acknowledgedContext !== compatibilityContext(skin, this.runtime)) throw new MarketMessageError('皮肤版本、兼容范围或 DSH 版本已变化，请重新确认兼容性提示', 'failure.compatibilityChangedProblem')
       const assessment = assessCompatibility(skin, this.runtime)
-      if (this.management !== undefined && assessment.decision === 'incompatible' && acknowledgeCompatibility !== true) throw new MarketMessageError(`${assessment.reason}；请在兼容性提示中确认后继续`, 'failure.compatibilityConfirmProblem', { reason: assessment.reason })
+      if (this.management !== undefined && assessment.decision === 'incompatible' && acknowledgeCompatibility !== true) throw new MarketMessageError(`${assessment.reason}；请在兼容性提示中确认后继续`, 'failure.compatibilityConfirmProblem')
     }
     if (artifactContext !== undefined && kind !== 'activate' && kind !== 'pin') throw new MarketMessageError('安装构件确认仅适用于使用或常驻操作', 'failure.artifactConsentScopeProblem')
     if (kind === 'install' || kind === 'update' || kind === 'migrate') {
       if (this.hostKind === 'desktop') {
         const plan = desktopInstallPlan(skin, this.management !== undefined, true)
-        if (plan.kind === 'manual') throw new MarketMessageError(`Desktop 当前不支持该皮肤的一键安装（${plan.reason}），请使用官方添加插件面板`, 'failure.desktopManualProblem', { reason: plan.reason })
+        if (plan.kind === 'manual') throw new MarketMessageError(`Desktop 当前不支持该皮肤的一键安装（${plan.reason}），请使用官方添加插件面板`, 'failure.desktopManualProblem')
       }
       // The market hosts do not treat the catalog review as an install
       // capability. An unreadable client source is a verification gap, not

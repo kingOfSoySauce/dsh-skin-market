@@ -12,6 +12,14 @@ export interface DshRuntime {
   source: 'host-package' | 'injected' | 'unknown'
 }
 
+/** One Host management capability; newer Hosts add a catalog key beside the raw diagnostic. */
+export interface HostCapabilityState {
+  available: boolean
+  reason?: string
+  reasonKey?: OperationMessageFields['messageKey']
+  reasonParams?: OperationMessageFields['messageParams']
+}
+
 export type DesktopInstallCapability =
   | {
       mode: 'managed'

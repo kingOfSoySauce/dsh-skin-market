@@ -1,5 +1,6 @@
 import { randomUUID } from 'node:crypto'
 import { hostPnpmRunner, type CommandOptions, type CommandResult, type HostPnpmInvocation, type PluginInstallRequest, type PluginRunner } from './commands.ts'
+import { MarketMessageError, type OperationMessageKey, type OperationMessageParams } from './operation-message.ts'
 import { compareVersions } from './semver.ts'
 import { officialOperationFailure } from './official-failure.ts'
 import { normalizeRegistryBase, registryPlanFromSnapshot } from './registry-plan.ts'
@@ -67,7 +68,12 @@ export interface OfficialInstallProgress {
 export interface OfficialManagementEvents {
   on(event: string, callback: (payload: unknown) => void): (() => void) | void
 }
-export interface OfficialCapability { available: boolean; reason?: string }
+export interface OfficialCapability {
+  available: boolean
+  reason?: string
+  reasonKey?: OperationMessageKey
+  reasonParams?: OperationMessageParams
+}
 export interface OfficialManagementCapabilities {
   install: OfficialCapability
   /** The install-based update path (`installBundle`) this market used before updateBundle was available. */
@@ -282,8 +288,10 @@ async function callManager(operation: () => Promise<unknown>, options?: CommandO
     options?.signal?.removeEventListener('abort', requestCancel)
   }
 }
-function capability(available: boolean, reason: string): OfficialCapability {
-  return available ? { available: true } : { available: false, reason }
+function capability(available: boolean, reason: string, reasonKey?: OperationMessageKey, reasonParams?: OperationMessageParams): OfficialCapability {
+  return available
+    ? { available: true }
+    : { available: false, reason, ...(reasonKey === undefined ? {} : { reasonKey }), ...(reasonParams === undefined ? {} : { reasonParams }) }
 }
 function subscribeProgress(events: OfficialManagementEvents | undefined, requestId: string, options?: CommandOptions): () => void {
   if (events === undefined) return () => undefined
@@ -361,31 +369,49 @@ export function officialDesktopRunner(
   const versionAtLeast = (minimum: string): boolean => recognizedHostVersion(version) && compareVersions(version!, minimum) >= 0
   const versionReason = version === null ? '未能识别官方 DSH 版本'
     : `当前皮肤市场尚未适配 DSH ${version}，请更新皮肤市场后重试`
+  const versionKey: OperationMessageKey = version === null ? 'failure.hostVersionUnknown' : 'failure.hostVersionUnsupported'
+  const versionParams: OperationMessageParams | undefined = version === null ? undefined : { version }
   const capabilities = (): OfficialManagementCapabilities => {
     const manager = getManager()
     const core = coreVersion && manager !== undefined
     const unavailable = manager === undefined ? '官方宿主未提供 pluginManager' : versionReason
+    const unavailableKey: OperationMessageKey = manager === undefined ? 'failure.hostPluginManagerMissing'
+      : version === null ? 'failure.hostVersionUnknown' : 'failure.hostVersionUnsupported'
+    const unavailableParams: OperationMessageParams | undefined = manager === undefined || version === null ? undefined : { version }
     const method = (name: keyof OfficialPluginManagerLike): boolean => core && typeof manager?.[name] === 'function'
+    const state = (available: boolean, reason: string, reasonKey: OperationMessageKey, reasonParams?: OperationMessageParams): OfficialCapability => {
+      if (available) return { available: true }
+      return core
+        ? capability(false, reason, reasonKey, reasonParams)
+        : capability(false, unavailable, unavailableKey, unavailableParams)
+    }
     const cancel = method('cancelInstall')
     const install = method('installBundle')
     const enabled = method('setBundleEnabled') || method('setPluginEnabled')
     return {
-      install: capability(install, !core ? unavailable : '官方 pluginManager 未提供安装接口'),
-      update: capability(install, !core ? unavailable : '官方 pluginManager 未提供更新接口'),
-      managedUpdate: capability(method('updateBundle'), !core ? unavailable : '官方 pluginManager 未提供 updateBundle 接口'),
-      enable: capability(enabled, !core ? unavailable : '官方 pluginManager 未提供启用接口'),
-      disable: capability(enabled, !core ? unavailable : '官方 pluginManager 未提供停用接口'),
-      remove: capability(method('removeBundle'), !core ? unavailable : '官方 pluginManager 未提供卸载接口'),
-      cancel: capability(cancel, !core ? unavailable : '官方 pluginManager 未提供取消接口'),
-      wait: capability(method('waitForInstall') && (runtime === undefined || versionAtLeast(RECOVERY_VERSION)), !core ? unavailable : '此 DSH 版本未提供安装结果恢复接口'),
-      buildApprovals: capability(install, !core ? unavailable : '官方 pluginManager 不支持构建脚本授权'),
-      registry: capability(core && versionAtLeast(RECOVERY_VERSION), !core ? unavailable : `安装源选项需要已核验的 DSH ${RECOVERY_VERSION} 或更新版本`),
-      saveExact: capability(core && versionAtLeast(EXACT_VERSION), !core ? unavailable : `精确保存依赖需要已核验的 DSH ${EXACT_VERSION} 或更新版本`),
+      install: state(install, '官方 pluginManager 未提供安装接口', 'failure.hostCapabilityMissing', { capability: 'install' }),
+      update: state(install, '官方 pluginManager 未提供更新接口', 'failure.hostCapabilityMissing', { capability: 'update' }),
+      managedUpdate: state(method('updateBundle'), '官方 pluginManager 未提供 updateBundle 接口', 'failure.hostCapabilityMissing', { capability: 'updateBundle' }),
+      enable: state(enabled, '官方 pluginManager 未提供启用接口', 'failure.hostCapabilityMissing', { capability: 'enable' }),
+      disable: state(enabled, '官方 pluginManager 未提供停用接口', 'failure.hostCapabilityMissing', { capability: 'disable' }),
+      remove: state(method('removeBundle'), '官方 pluginManager 未提供卸载接口', 'failure.hostCapabilityMissing', { capability: 'remove' }),
+      cancel: state(cancel, '官方 pluginManager 未提供取消接口', 'failure.hostCapabilityMissing', { capability: 'cancel' }),
+      wait: state(method('waitForInstall') && (runtime === undefined || versionAtLeast(RECOVERY_VERSION)), '此 DSH 版本未提供安装结果恢复接口', 'failure.hostCapabilityMissing', { capability: 'wait' }),
+      buildApprovals: state(install, '官方 pluginManager 不支持构建脚本授权', 'failure.hostCapabilityMissing', { capability: 'buildApprovals' }),
+      registry: state(core && versionAtLeast(RECOVERY_VERSION), `安装源选项需要已核验的 DSH ${RECOVERY_VERSION} 或更新版本`, 'failure.hostRegistryUnsupported', { version: RECOVERY_VERSION }),
+      saveExact: state(core && versionAtLeast(EXACT_VERSION), `精确保存依赖需要已核验的 DSH ${EXACT_VERSION} 或更新版本`, 'failure.hostSaveExactUnsupported', { version: EXACT_VERSION }),
     }
   }
+  const versionFailure = (): MarketMessageError => new MarketMessageError(versionReason, versionKey, versionParams)
+  const capabilityFailure = (state: OfficialCapability): MarketMessageError =>
+    new MarketMessageError(
+      state.reason ?? versionReason,
+      state.reasonKey ?? versionKey,
+      state.reasonKey === undefined ? versionParams : state.reasonParams,
+    )
   const requireCapability = (key: keyof OfficialManagementCapabilities): OfficialPluginManagerLike => {
     const state = capabilities()[key]
-    if (!state.available) throw new Error(state.reason)
+    if (!state.available) throw capabilityFailure(state)
     return getManager()!
   }
   const install = async (spec: string, requestId: string, request: Partial<PluginInstallRequest>, options?: CommandOptions): Promise<CommandResult> => {
@@ -394,13 +420,13 @@ export function officialDesktopRunner(
       const caps = capabilities()
       const installOptions: Record<string, unknown> = { enabled: false, requestId }
       if (request.registry !== undefined) {
-        if (!caps.registry.available) throw new Error(caps.registry.reason)
+        if (!caps.registry.available) throw capabilityFailure(caps.registry)
         const normalized = request.registry === null ? null : normalizeRegistryBase(request.registry)
         if (request.registry !== null && normalized === null) throw new Error('安装源必须是无凭据的 HTTP(S) 地址')
         installOptions.registry = request.registry
       }
       if (request.approvedBuilds !== undefined) {
-        if (!caps.buildApprovals.available) throw new Error(caps.buildApprovals.reason)
+        if (!caps.buildApprovals.available) throw capabilityFailure(caps.buildApprovals)
         const names = [...new Set(request.approvedBuilds)]
         if (names.some(name => !exactBuildKey(name))) throw new Error('构建授权只接受官方返回的精确待定项')
         installOptions.approvedBuilds = names
@@ -454,7 +480,7 @@ export function officialDesktopRunner(
     async inspect(spec, options) {
       const manager = requireCapability('install')
       if (typeof manager.inspect !== 'function') throw new Error('官方 pluginManager 未提供安装预检接口')
-      if (options?.registry !== undefined && !capabilities().registry.available) throw new Error(capabilities().registry.reason)
+      if (options?.registry !== undefined && !capabilities().registry.available) throw capabilityFailure(capabilities().registry)
       return readManagerResult(await (versionAtLeast(RECOVERY_VERSION)
         ? manager.inspect(spec, options?.registry === undefined ? undefined : { registry: options.registry }, options?.signal)
         : manager.inspect(spec, options?.signal)))
@@ -466,7 +492,7 @@ export function officialDesktopRunner(
         const requestOptions: Record<string, unknown> = { requestId: updateOptions.requestId }
         if (updateOptions.spec !== undefined) requestOptions.spec = updateOptions.spec
         if (updateOptions.registry !== undefined) {
-          if (!caps.registry.available) throw new Error(caps.registry.reason)
+          if (!caps.registry.available) throw capabilityFailure(caps.registry)
           const normalized = updateOptions.registry === null ? null : normalizeRegistryBase(updateOptions.registry)
           if (updateOptions.registry !== null && normalized === null) throw new Error('安装源必须是无凭据的 HTTP(S) 地址')
           requestOptions.registry = updateOptions.registry
@@ -483,13 +509,13 @@ export function officialDesktopRunner(
     },
     async listBundles() {
       const manager = getManager()
-      if (!coreVersion) throw new Error(versionReason)
+      if (!coreVersion) throw versionFailure()
       if (typeof manager?.listBundles !== 'function') throw new Error('官方 pluginManager 未提供可用的组合包清单')
       return readManagerResult(await manager.listBundles())
     },
     async listPlugins() {
       const manager = getManager()
-      if (!coreVersion) throw new Error(versionReason)
+      if (!coreVersion) throw versionFailure()
       if (typeof manager?.listPlugins !== 'function') throw new Error('官方 pluginManager 未提供可用的插件清单')
       return readManagerResult(await manager.listPlugins())
     },

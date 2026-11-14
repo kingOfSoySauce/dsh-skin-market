@@ -296,7 +296,13 @@ export function mountRoutes(host: SkinMarketHost, options: RouteOptions): () => 
         if (request.method === 'POST') {
           if (skinWritesBusy() !== undefined) return sendError(response, 409, skinWritesBusy())
           const capability = options.runner.management?.capabilities().update
-          if (capability?.available === false) return sendJson(response, 501, { error: capability.reason })
+          if (capability?.available === false) {
+            return sendJson(response, 501, {
+              error: capability.reason,
+              ...(capability.reasonKey === undefined ? {} : { errorKey: capability.reasonKey }),
+              ...(capability.reasonParams === undefined ? {} : { errorParams: capability.reasonParams }),
+            })
+          }
           const operation = marketUpdater.startUpdate()
           return sendJson(response, 202, { operationId: operation.id })
         }
