@@ -1,0 +1,54 @@
+id: hongxin.y.codex.pet.astra.yao
+name:
+  zh: 耀嘉音桌宠
+  en: Astra Yao Pet
+author: hongxin-y
+description: 《绝区零》耀嘉音的像素桌宠：一张 8 列 × 11 行的 Codex v2 图集提供 11 组动作，按会话状态切换待机、构思、执行、候场与出错，头顶气泡轮播台词、脚下显示余额条；同一套图集也能导出给 Codex 当桌宠。
+repo: https://github.com/hongxin-y/codex-pet-Astra-Yao
+package: dsh-pet-astra-yao
+rowId: dsh-pet-astra-yao
+category: pet
+tags:
+  - pixel
+  - sprite
+  - zenless-zone-zero
+  - session-state
+  - balance
+modes:
+  - light
+  - dark
+install:
+  target: github:hongxin-y/codex-pet-Astra-Yao#bea41f95dc287c25ffd7dbde24d89fc712721f87
+  version: 0.1.7
+  commit: bea41f95dc287c25ffd7dbde24d89fc712721f87
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/hongxin-y/codex-pet-Astra-Yao/bea41f95dc287c25ffd7dbde24d89fc712721f87/docs/shot-dsh.png
+  - https://raw.githubusercontent.com/hongxin-y/codex-pet-Astra-Yao/bea41f95dc287c25ffd7dbde24d89fc712721f87/docs/states.webp
+  - https://raw.githubusercontent.com/hongxin-y/codex-pet-Astra-Yao/bea41f95dc287c25ffd7dbde24d89fc712721f87/docs/atlas-overview.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1353
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/hongxin-y/codex-pet-Astra-Yao/bea41f95dc287c25ffd7dbde24d89fc712721f87/docs/shot-dsh.png

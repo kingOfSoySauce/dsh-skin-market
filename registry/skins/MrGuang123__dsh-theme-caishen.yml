@@ -1,0 +1,55 @@
+id: mrguang123.dsh.theme.caishen
+name:
+  zh: 财神打工版
+  en: Caishen at Work
+author: MrGuang123
+description: 朱红描金与暖纸/深檀双配色的财神主题：带字财神首页、云纹金边、金元宝品牌与工作区图标成套，输入框右侧完整展示祥云财神；附带可编辑的提示词库（变量模板、导入导出）与「功德簿」彩蛋。
+repo: https://github.com/MrGuang123/dsh-theme-caishen
+package: dsh-theme-caishen
+rowId: theme-caishen
+category: skin
+tags:
+  - caishen
+  - red-gold
+  - prompt-library
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:MrGuang123/dsh-theme-caishen#6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23
+  version: 0.2.3
+  commit: 6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23
+compatibility:
+  dsh: 0.2.1-rc.2 || >=0.2.1-rc.5 <0.3.0-0 || 0.2.1-rc.5
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1406
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+marketScreenshots:
+  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/home.png
+  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/conversation.png
+  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/settings.png

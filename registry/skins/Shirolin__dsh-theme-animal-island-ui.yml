@@ -1,0 +1,57 @@
+id: shirolin.dsh.theme.animal.island.ui
+name:
+  zh: 动森主题
+  en: Animal Island UI
+author: Shirolin
+description: 动森风主题：日间是双层波点草坪、底部波浪与漂浮叶片，内容区铺半透明奶油纸；夜间换成深青夜空星点、冷色侧栏与暖棕纸面。侧栏顶部 24px 新会话入口扩成 216×60 渡岛船票，标题木牌、木纹选中项与手账感输入框气泡；设置「纸白/均衡/海岛」三档预设与 0.15–0.60 浓度滑杆，插画、纸纹、浅色 diff 与字体可单独关。
+repo: https://github.com/Shirolin/dsh-theme-animal-island-ui
+package: dsh-theme-animal-island-ui
+rowId: dsh-theme-animal-island-ui
+category: skin
+tags:
+  - animal-island
+  - paper
+  - light-dark
+  - sidebar
+  - settings
+modes:
+  - light
+  - dark
+install:
+  target: github:Shirolin/dsh-theme-animal-island-ui#fb6a056834f78e8547efafe3c4f4c9cea87409a3
+  version: 0.3.38
+  commit: fb6a056834f78e8547efafe3c4f4c9cea87409a3
+compatibility:
+  dsh: 0.1.5-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/theme-poster.webp
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/workspace-light.webp
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/workspace-dark.webp
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/sidebar-light.webp
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/sidebar-dark.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1437
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/theme-poster.webp

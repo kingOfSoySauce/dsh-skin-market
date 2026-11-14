@@ -1,0 +1,55 @@
+id: qlruil419.dsh.doro.paradise.theme
+name:
+  zh: Doro 乐园
+  en: Doro Paradise
+author: QLruil419
+description: 以《胜利女神：妮姬》桃乐丝与 Doro 梗形象为灵感的完整主题：亮暗跟随外观，桃乐丝壁纸、侧栏立绘、品牌字标、新会话图标、输入框玫瑰边框与花瓣动画，消息、代码块、工具调用和弹窗统一成玫瑰/莓紫语言。设置里有独立的 Doro Paradise 页面，可调侧栏遮罩与 48–320px 立绘高度、单独缩放 Doro，配置存 $DSH_HOME/doro-paradise-theme.json，重启保留。
+repo: https://github.com/QLruil419/dsh-doro-paradise-theme
+package: dsh-doro-paradise-theme
+rowId: doro-paradise-theme
+category: skin
+tags:
+  - nikke
+  - dorothy
+  - wallpaper
+  - rose
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:QLruil419/dsh-doro-paradise-theme#48b7108aeaee1b0210f36b315cb422bafffd2bf6
+  version: 1.5.0
+  commit: 48b7108aeaee1b0210f36b315cb422bafffd2bf6
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/QLruil419/dsh-doro-paradise-theme/48b7108aeaee1b0210f36b315cb422bafffd2bf6/assets/readme-wallpaper-dorothy.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1422
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/QLruil419/dsh-doro-paradise-theme/48b7108aeaee1b0210f36b315cb422bafffd2bf6/assets/readme-wallpaper-dorothy.png

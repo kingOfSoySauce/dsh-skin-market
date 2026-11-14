@@ -1,0 +1,55 @@
+id: shin4.inkpond.dsh
+name:
+  zh: 墨池
+  en: Inkpond
+author: shin4
+description: 铺在会话界面上的可交互汉字水墨背景：默认「大肥鲸」在汉字海浪里游动，会游向饭碗吃饭、喷米并响应指针；另有莲池、山水、清明上河、二十四节气和北冥可选。跟随明暗主题，默认只在新会话显示、浓度 45%，标签页隐藏时暂停，减少动态或弱设备自动降到静态 / 低档。
+repo: https://github.com/shin4/inkpond-dsh
+package: dsh-inkpond
+rowId: inkpond
+category: skin
+tags:
+  - ink-wash
+  - canvas
+  - background
+  - interactive
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:shin4/inkpond-dsh#f10eebd8edfbaab52f9b39290a19fe8d4d030235
+  version: 0.3.5
+  commit: f10eebd8edfbaab52f9b39290a19fe8d4d030235
+compatibility:
+  dsh: 0.2.2-rc.1 || >=0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/shin4/inkpond-dsh/f10eebd8edfbaab52f9b39290a19fe8d4d030235/docs/images/whale-preview.gif
+  - https://raw.githubusercontent.com/shin4/inkpond-dsh/f10eebd8edfbaab52f9b39290a19fe8d4d030235/docs/images/install-guide-zh.png
+  - https://raw.githubusercontent.com/shin4/inkpond-dsh/f10eebd8edfbaab52f9b39290a19fe8d4d030235/docs/images/whale-preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1435
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/shin4/inkpond-dsh/f10eebd8edfbaab52f9b39290a19fe8d4d030235/docs/images/whale-preview.gif

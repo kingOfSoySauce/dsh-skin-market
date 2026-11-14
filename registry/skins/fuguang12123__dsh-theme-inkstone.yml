@@ -1,0 +1,52 @@
+id: fuguang12123.dsh.theme.inkstone
+name:
+  zh: 墨白
+  en: Inkstone
+author: fuguang12123
+description: 黑白 e-ink 阅读风主题：浅色白底墨字、深色黑底浅字跟随原生明暗；侧栏条目默认无框，悬浮与选中时文字、图标和时间一起反色，细线分隔面板；正文使用本机已装的霞鹜文楷（未装则回退系统字体）。Markdown 六级标题保留红橙黄绿蓝紫，代码差异配色也保留，原生字号与键盘焦点不变。
+repo: https://github.com/fuguang12123/dsh-theme-inkstone
+package: dsh-theme-inkstone
+rowId: inkstone-theme
+category: skin
+tags:
+  - e-ink
+  - monochrome
+  - typography
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:fuguang12123/dsh-theme-inkstone#c4d9a90032d10b984ff0c2f4be043b49d227b4cf
+  version: 0.1.4
+  commit: c4d9a90032d10b984ff0c2f4be043b49d227b4cf
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/fuguang12123/dsh-theme-inkstone/c4d9a90032d10b984ff0c2f4be043b49d227b4cf/docs/images/light.png
+  - https://raw.githubusercontent.com/fuguang12123/dsh-theme-inkstone/c4d9a90032d10b984ff0c2f4be043b49d227b4cf/docs/images/dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1340
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/fuguang12123/dsh-theme-inkstone/c4d9a90032d10b984ff0c2f4be043b49d227b4cf/docs/images/light.png

@@ -1,0 +1,54 @@
+id: beyondgu.klein.cat.pet
+name:
+  zh: 克莱恩猫
+  en: Klein Cat
+author: BeyondGu
+description: 住在界面右下角的黑色小猫：小礼帽、黄水晶和甜冰茶。单击她在「努力工作中 / 累了 / 休息中」三种状态间循环，每态都是手绘 SVG 动画并配独立音效；可拖动并记住位置，悬停出现静音、复位、隐藏小工具栏，侧栏底部猫爪按钮开合宠物，系统开启减少动态效果时自动停掉循环动画。
+repo: https://github.com/BeyondGu/klein-cat-pet
+package: dsh-klein-cat-pet
+rowId: klein-cat-pet
+category: pet
+tags:
+  - pet
+  - cat
+  - svg
+  - states
+  - sound
+modes:
+  - light
+  - dark
+install:
+  target: github:BeyondGu/klein-cat-pet#78d65840919b9e848437357ed9b8d6b384e16676
+  version: 0.1.2
+  commit: 78d65840919b9e848437357ed9b8d6b384e16676
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/BeyondGu/klein-cat-pet/78d65840919b9e848437357ed9b8d6b384e16676/docs/preview.gif
+  - https://raw.githubusercontent.com/BeyondGu/klein-cat-pet/78d65840919b9e848437357ed9b8d6b384e16676/docs/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1300
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/BeyondGu/klein-cat-pet/78d65840919b9e848437357ed9b8d6b384e16676/docs/preview.gif

@@ -1,0 +1,53 @@
+id: hero.jianghaojie.dsh.lively
+name:
+  zh: 动态壁纸片单
+  en: Live Wallpaper Playlist
+author: hero-jianghaojie
+description: 在界面后方垫一层动态壁纸：Flow、Aurora、Starfield、Lava、Mesh、Neon Grid 六套程序化预设各有明暗变体，也支持图片、GIF、WebP、AVIF、MP4 或 WebM（URL 或本地上传，文件存 $DSH_HOME/dsh-lively-media/）。可调壁纸强度、暗化、视频柔化与动画速度，播放列表按 1–240 分钟轮换任意子集，设置里还有壁纸库。
+repo: https://github.com/hero-jianghaojie/dsh-lively
+package: dsh-lively
+rowId: dsh-lively
+category: skin
+tags:
+  - wallpaper
+  - presets
+  - playlist
+  - video
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:hero-jianghaojie/dsh-lively#d8803b6302c873efc84d5f6de6df0c929f937405
+  version: 0.2.1
+  commit: d8803b6302c873efc84d5f6de6df0c929f937405
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/hero-jianghaojie/dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/docs/preview-light.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1351
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/hero-jianghaojie/dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/docs/preview-light.png

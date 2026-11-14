@@ -1,0 +1,55 @@
+id: shellraining.fluent.theme
+name:
+  zh: Win10 Fluent 主题
+  en: Win10 Fluent Theme
+author: shellRaining
+description: 把界面做成 Windows 10 风格：本地壁纸铺底，面板换成亚克力材质，鼠标靠近时边缘点亮并带按压光效，按钮按下朝按压侧倾斜并补上底色，侧栏开合和弹出层重放 Win10 动效。输入区底部铺一条与输入框等宽的亚克力盖住滚到底下的正文；「Win10 风格」和「悬停与按压光效」可在设置里分开关闭，高对比度或减少动画时自动回退原底色，需 0.2.2-rc.1 起的 0.2.x 版本。
+repo: https://github.com/shellRaining/dsh-plugins
+subpath: plugins/fluent-theme
+package: "@shellraining/dsh-fluent-theme"
+rowId: acrylic-wallpaper
+category: skin
+tags:
+  - windows-10
+  - fluent
+  - acrylic
+  - reveal
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:shellRaining/dsh-plugins#55b390d00d48e7caf49134244fae86ec51305989&path:/plugins/fluent-theme
+  version: 0.1.7
+  commit: 55b390d00d48e7caf49134244fae86ec51305989
+compatibility:
+  dsh: ">=0.2.2-rc.1"
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1436
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+marketScreenshots:
+  - skin-screenshots/shellRaining__dsh-plugins--plugins--fluent-theme/55b390d00d48e7caf49134244fae86ec51305989/home.png
+  - skin-screenshots/shellRaining__dsh-plugins--plugins--fluent-theme/55b390d00d48e7caf49134244fae86ec51305989/conversation.png
+  - skin-screenshots/shellRaining__dsh-plugins--plugins--fluent-theme/55b390d00d48e7caf49134244fae86ec51305989/settings.png

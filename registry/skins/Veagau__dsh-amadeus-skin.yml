@@ -1,0 +1,56 @@
+id: veagau.dsh.amadeus.skin
+name:
+  zh: Amadeus
+  en: Amadeus
+author: Veagau
+description: Amadeus 暗红黑金整站皮肤：深色用暗红、黑与暖金，另提供浅酒红配色；正文、背景、代码高亮、链接与按钮统一换色，侧栏、欢迎区与输入区加入静态终端饰件和 Amadeus 标记；不读取对话内容、不改模型、不联网。
+repo: https://github.com/Veagau/dsh-amadeus-skin
+package: "@local/dsh-amadeus-skin"
+rowId: amadeus-skin
+category: skin
+tags:
+  - crimson
+  - terminal
+  - ornaments
+  - dark
+  - light-variant
+modes:
+  - light
+  - dark
+install:
+  target: github:Veagau/dsh-amadeus-skin#cd4c6559efec798cbe4a6e9a20fa6a780e705424
+  version: 1.6.4
+  commit: cd4c6559efec798cbe4a6e9a20fa6a780e705424
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Veagau/dsh-amadeus-skin/cd4c6559efec798cbe4a6e9a20fa6a780e705424/docs/skin-cover.png
+  - https://raw.githubusercontent.com/Veagau/dsh-amadeus-skin/cd4c6559efec798cbe4a6e9a20fa6a780e705424/docs/theme-dark.png
+  - https://raw.githubusercontent.com/Veagau/dsh-amadeus-skin/cd4c6559efec798cbe4a6e9a20fa6a780e705424/docs/theme-activity.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1465
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/Veagau/dsh-amadeus-skin/cd4c6559efec798cbe4a6e9a20fa6a780e705424/docs/skin-cover.png

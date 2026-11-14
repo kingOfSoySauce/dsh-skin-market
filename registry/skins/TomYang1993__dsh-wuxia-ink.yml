@@ -1,0 +1,57 @@
+id: tomyang1993.dsh.wuxia.ink
+name:
+  zh: 影之刃零水墨
+  en: Ink Blade Wuxia
+author: TomYang1993
+description: 取材《影之刃零》的武侠水墨主题：夜墨（深色）与宣纸（浅色）双主题，衬线正文配毛笔标题、纸纹、水墨远山与红日；新会话页放游戏主视觉字标，侧栏品牌行把游戏名牌与原有鲸鱼标识并排，任务完成时砸下毛笔「斩」字，思考时播放聚气动画。
+repo: https://github.com/TomYang1993/dsh-wuxia-ink
+package: dsh-wuxia-ink
+rowId: dsh-wuxia-ink
+category: skin
+tags:
+  - wuxia
+  - ink-wash
+  - phantom-blade-zero
+  - light-dark
+  - animation
+modes:
+  - light
+  - dark
+install:
+  target: github:TomYang1993/dsh-wuxia-ink#2dcca57f010ac1f92ce57c73fa3b7a537f4b5c5c
+  version: 0.4.2
+  commit: 2dcca57f010ac1f92ce57c73fa3b7a537f4b5c5c
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/TomYang1993/dsh-wuxia-ink/2dcca57f010ac1f92ce57c73fa3b7a537f4b5c5c/docs/screenshots/01-idle-and-brand.jpg
+  - https://raw.githubusercontent.com/TomYang1993/dsh-wuxia-ink/2dcca57f010ac1f92ce57c73fa3b7a537f4b5c5c/docs/screenshots/02-working-gathering-qi.jpg
+  - https://raw.githubusercontent.com/TomYang1993/dsh-wuxia-ink/2dcca57f010ac1f92ce57c73fa3b7a537f4b5c5c/docs/screenshots/03-done-finishing-cut.jpg
+  - https://raw.githubusercontent.com/TomYang1993/dsh-wuxia-ink/2dcca57f010ac1f92ce57c73fa3b7a537f4b5c5c/docs/screenshots/06-light-mode.jpg
+  - https://raw.githubusercontent.com/TomYang1993/dsh-wuxia-ink/2dcca57f010ac1f92ce57c73fa3b7a537f4b5c5c/docs/screenshots/04-settings-language.jpg
+  - https://raw.githubusercontent.com/TomYang1993/dsh-wuxia-ink/2dcca57f010ac1f92ce57c73fa3b7a537f4b5c5c/docs/screenshots/05-chinese-run.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1456
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/TomYang1993/dsh-wuxia-ink/2dcca57f010ac1f92ce57c73fa3b7a537f4b5c5c/docs/screenshots/01-idle-and-brand.jpg

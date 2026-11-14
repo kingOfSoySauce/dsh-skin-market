@@ -1,0 +1,54 @@
+id: canye.zdm.dsh.skin.aurora
+name:
+  zh: 极光
+  en: Aurora
+author: Canye-zdm
+description: 近黑蓝夜空基底，两层极光光带以 12s 与 9s 不同周期错位流动，青蓝到紫再到绿渐变，顶部光晕与底部极光绿反光上下呼应；欢迎页标题做成极光渐变，代码块按极光配色重定关键字/字符串/注释，侧栏蓝紫渐变、卡片悬浮发光，明暗双主题并重映射语义色，系统开启减少动态效果时自动停掉光带。
+repo: https://github.com/Canye-zdm/dsh-skin-aurora
+package: dsh-client-ui-skin-aurora
+rowId: ui-skin-aurora
+category: skin
+tags:
+  - aurora
+  - gradient
+  - animated
+  - semantic-colors
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Canye-zdm/dsh-skin-aurora#793fbbbbe530cfa4341d8e2da44be94088f712bd
+  version: 0.1.0
+  commit: 793fbbbbe530cfa4341d8e2da44be94088f712bd
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Canye-zdm/dsh-skin-aurora/793fbbbbe530cfa4341d8e2da44be94088f712bd/preview-dark.png
+  - https://raw.githubusercontent.com/Canye-zdm/dsh-skin-aurora/793fbbbbe530cfa4341d8e2da44be94088f712bd/preview-light.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1306
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Canye-zdm/dsh-skin-aurora/793fbbbbe530cfa4341d8e2da44be94088f712bd/preview-dark.png

@@ -1,0 +1,53 @@
+id: leonty1.dsh.desktop.pet.bulldog
+name:
+  zh: 法斗桌宠
+  en: Bulldog Desk Pet
+author: leonty1
+description: 桌面上一只透明、无边框、始终置顶的法斗，动作来自真实会话状态：待机、思考、工作、等待、成功、出错各对应精灵片段，执行命令与搜索、读写文件会分动作。任务卡能展开多任务表，6 秒后折成胶囊。可拖动、摸头、点爪、甩尾；设置里调大小、活跃度、趴下与入睡时间、提示音和全局快捷键。
+repo: https://github.com/leonty1/dsh-desktop-pet-bulldog
+package: dsh-frenchie
+rowId: dsh-frenchie
+category: pet
+tags:
+  - pet
+  - frenchie
+  - macos
+  - native
+modes:
+  - light
+  - dark
+install:
+  target: github:leonty1/dsh-desktop-pet-bulldog#8c989b5ba7aa05645b8938ce3ea82c4175778da5
+  version: 0.1.0
+  commit: 8c989b5ba7aa05645b8938ce3ea82c4175778da5
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/leonty1/dsh-desktop-pet-bulldog/8c989b5ba7aa05645b8938ce3ea82c4175778da5/docs/images/frenchie-states.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1382
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/leonty1/dsh-desktop-pet-bulldog/8c989b5ba7aa05645b8938ce3ea82c4175778da5/docs/images/frenchie-states.png

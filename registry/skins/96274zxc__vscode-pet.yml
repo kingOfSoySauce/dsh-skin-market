@@ -1,0 +1,52 @@
+id: 96274zxc.vscode.pet
+name:
+  zh: Blobby
+  en: Blobby
+author: 96274zxc
+description: VS Code 官方聊天宠物 Blobby 的非官方移植：坐在输入框上方，跟随光标视线、打字、思考，需要你输入时鼓掌，20 秒没动静就睡着，回合结束踩红钮庆祝；可拖动、甩出、接住，右键换 13 顶帽子与自定义配色，还能玩跳跳乐。Windows 桌面端在窗口最小化或被遮挡时会走传送门落到任务栏上方，双击可把窗口叫回来。
+repo: https://github.com/96274zxc/vscode-pet
+package: vscode-pet
+rowId: vscode-pet
+category: pet
+tags:
+  - vscode
+  - blobby
+  - composer-pet
+  - desktop
+  - physics
+modes:
+  - light
+  - dark
+install:
+  target: github:96274zxc/vscode-pet#8955827284e86dfedcdc5cc601dea392aeca41ce
+  version: 1.2.27
+  commit: 8955827284e86dfedcdc5cc601dea392aeca41ce
+compatibility:
+  dsh: ">=0.2.1-rc.1"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/96274zxc/vscode-pet/8955827284e86dfedcdc5cc601dea392aeca41ce/docs/states.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1287
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/96274zxc/vscode-pet/8955827284e86dfedcdc5cc601dea392aeca41ce/docs/states.png

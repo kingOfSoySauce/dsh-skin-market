@@ -1,0 +1,55 @@
+id: aliciawque.dsh.big.whale
+name:
+  zh: 大鲸鱼
+  en: Big Whale
+author: Aliciawque
+description: 三语语音配口型的大鲸鱼看板娘：日常女仆装之外，还能在小鲸鱼菜单里换成万圣节小魔女——南瓜按钮、鬼魂提灯、分层裙摆各自回弹。她跟随鼠标、可拖拽甩动，5 种待机动作和 8 种表情会随会话事件切换：上下文压缩时捧碗低头，任务完成微笑比耶，失败时垂眼冒汗。
+repo: https://github.com/Aliciawque/dsh-big-whale
+package: dsh-big-whale
+rowId: big-whale-companion
+category: pet
+tags:
+  - pet
+  - whale
+  - lip-sync
+  - outfits
+  - expressions
+modes:
+  - light
+  - dark
+install:
+  target: github:Aliciawque/dsh-big-whale#157a222831e3b6dc1d83239f5ce870733ddc2c4b
+  version: 0.6.0-rc.8
+  commit: 157a222831e3b6dc1d83239f5ce870733ddc2c4b
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Aliciawque/dsh-big-whale/157a222831e3b6dc1d83239f5ce870733ddc2c4b/docs/screenshots/maid-halfbody-hd.png
+  - https://raw.githubusercontent.com/Aliciawque/dsh-big-whale/157a222831e3b6dc1d83239f5ce870733ddc2c4b/docs/screenshots/maid-fullbody-hd.png
+  - https://raw.githubusercontent.com/Aliciawque/dsh-big-whale/157a222831e3b6dc1d83239f5ce870733ddc2c4b/docs/screenshots/witch-halfbody-hd.png
+  - https://raw.githubusercontent.com/Aliciawque/dsh-big-whale/157a222831e3b6dc1d83239f5ce870733ddc2c4b/docs/screenshots/witch-fullbody-hd.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1293
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Aliciawque/dsh-big-whale/157a222831e3b6dc1d83239f5ce870733ddc2c4b/docs/screenshots/maid-halfbody-hd.png

@@ -1,0 +1,52 @@
+id: tippykafuu.dsh.client.ui.wallpaper
+name:
+  zh: 角落壁纸
+  en: Corner Wallpaper
+author: tippykafuu
+description: 把一张壁纸固定在界面右下角、压在控件后面，三个 CSS 变量管构图：尺寸默认 auto min(78vh,58vw)，贴哪个角默认 right 2.5vw bottom -1vh，以及盖在图上让文字清楚的底色浓度（浅色 62%、深色 70%）。侧栏刻意保留实心底，其余容器按需透明；换图要跑 node build-client.mjs <图片路径> 把图片内联进 bundle 后刷新。
+repo: https://github.com/tippykafuu/dsh-client-ui-wallpaper
+package: dsh-client-ui-wallpaper
+rowId: dsh-client-ui-wallpaper
+category: skin
+tags:
+  - wallpaper
+  - corner
+  - tint
+  - css-variables
+modes:
+  - light
+  - dark
+install:
+  target: github:tippykafuu/dsh-client-ui-wallpaper#e27b60daf0a960b5c7e744547dbb7114d0eb3e05
+  version: 1.0.0
+  commit: e27b60daf0a960b5c7e744547dbb7114d0eb3e05
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/tippykafuu/dsh-client-ui-wallpaper/e27b60daf0a960b5c7e744547dbb7114d0eb3e05/assets/wallpaper.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1457
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/tippykafuu/dsh-client-ui-wallpaper/e27b60daf0a960b5c7e744547dbb7114d0eb3e05/assets/wallpaper.png

@@ -1,0 +1,57 @@
+id: kasouhoshino.dsh.custom.background.and.liquid.glass.theme
+name:
+  zh: 液态玻璃背景
+  en: Liquid Glass Background
+author: KasouHoshino
+description: 换成自定义背景，并把面板、输入卡与弹层做成 Apple 式液态玻璃材质；背景支持 PNG/JPEG/GIF/WebP/AVIF 与 H.264 MP4、VP8/VP9 WebM，安装与设置页共 10 种界面语言。
+repo: https://github.com/KasouHoshino/DSH-Custom-Background-and-Liquid-Glass-Theme
+package: "@local/dsh-custom-background_by_nagisa"
+rowId: custom-background
+category: skin
+tags:
+  - liquid-glass
+  - custom-background
+  - materials
+  - i18n
+modes:
+  - light
+  - dark
+install:
+  target: github:KasouHoshino/DSH-Custom-Background-and-Liquid-Glass-Theme#a4e354b405bdc3eee63ac2d8b9a06f37958f157a
+  version: 1.1.0
+  commit: a4e354b405bdc3eee63ac2d8b9a06f37958f157a
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1375
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+marketScreenshots:
+  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/home.png
+  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/conversation.png
+  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/settings.png

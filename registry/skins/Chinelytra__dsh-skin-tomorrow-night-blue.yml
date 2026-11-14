@@ -1,0 +1,50 @@
+id: chinelytra.dsh.skin.tomorrow.night.blue
+name:
+  zh: 明日之夜蓝
+  en: Tomorrow Night Blue
+author: Chinelytra
+description: 整套界面换成 Tomorrow Night Blue 深蓝配色：113 个设计 token 与 11 类代码语法高亮一起换色，画布、侧栏、面板、菜单、气泡、Markdown、diff 和滚动条统一。样式在首次绘制前注入，打开页面不会先闪默认配色。
+repo: https://github.com/Chinelytra/dsh-skin-tomorrow-night-blue
+package: dsh-skin-tomorrow-night-blue
+rowId: skin-tomorrow-night-blue
+category: skin
+tags:
+  - theme
+  - token-theme
+  - dark
+  - syntax
+modes:
+  - dark
+install:
+  target: github:Chinelytra/dsh-skin-tomorrow-night-blue#ff409efe879dda595670368394b9ff04b1b1678a
+  version: 1.0.0
+  commit: ff409efe879dda595670368394b9ff04b1b1678a
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Chinelytra/dsh-skin-tomorrow-night-blue/ff409efe879dda595670368394b9ff04b1b1678a/docs/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1313
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Chinelytra/dsh-skin-tomorrow-night-blue/ff409efe879dda595670368394b9ff04b1b1678a/docs/preview.png

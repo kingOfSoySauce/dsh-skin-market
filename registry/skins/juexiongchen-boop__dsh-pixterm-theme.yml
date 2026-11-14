@@ -1,0 +1,56 @@
+id: juexiongchen.boop.dsh.pixterm.theme
+name:
+  zh: 像素终端蓝
+  en: Pixel Terminal Blue
+author: juexiongchen-boop
+description: "白底像素终端风：全局 VT323，主标题用 Press Start 2P，全屏细扫描线与淡蓝暗角；按钮和开关卡片统一 2px 蓝边加 4px 错位硬阴影，按下走 steps() 段落式位移。标题靠硬投影当图形锚点，引用块用 4px 蓝左边条，用户气泡是白卡加投影，整套只用 #4176E6 一种蓝。"
+repo: https://github.com/juexiongchen-boop/dsh-pixterm-theme
+package: dsh-pixterm-theme
+rowId: pixterm-theme
+category: skin
+tags:
+  - pixel
+  - terminal
+  - retro
+  - light
+modes:
+  - light
+install:
+  target: github:juexiongchen-boop/dsh-pixterm-theme#77cadfbad4e9a5ddcb1a8c20cc47e3c8468bece1
+  version: 1.0.0
+  commit: 77cadfbad4e9a5ddcb1a8c20cc47e3c8468bece1
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/juexiongchen-boop/dsh-pixterm-theme/77cadfbad4e9a5ddcb1a8c20cc47e3c8468bece1/docs/screenshot1.png
+  - https://raw.githubusercontent.com/juexiongchen-boop/dsh-pixterm-theme/77cadfbad4e9a5ddcb1a8c20cc47e3c8468bece1/docs/screenshot2.png
+  - https://raw.githubusercontent.com/juexiongchen-boop/dsh-pixterm-theme/77cadfbad4e9a5ddcb1a8c20cc47e3c8468bece1/docs/screenshot3.png
+  - https://raw.githubusercontent.com/juexiongchen-boop/dsh-pixterm-theme/77cadfbad4e9a5ddcb1a8c20cc47e3c8468bece1/docs/screenshot4.png
+  - https://raw.githubusercontent.com/juexiongchen-boop/dsh-pixterm-theme/77cadfbad4e9a5ddcb1a8c20cc47e3c8468bece1/docs/screenshot5.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1371
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/juexiongchen-boop/dsh-pixterm-theme/77cadfbad4e9a5ddcb1a8c20cc47e3c8468bece1/docs/screenshot1.png

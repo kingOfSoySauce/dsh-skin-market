@@ -1,0 +1,56 @@
+id: yunxiang1218.dsh.skin.deep.space.command.bridge
+name:
+  zh: 深空指挥舰桥
+  en: Deep Space Command Bridge
+author: yunxiang1218
+description: 整页驾驶舱主题：任务屏、AI 核心屏与中央主屏沿用宿主原生节点，舱外是连续深空星景，舱体可转头、拉近拉远。右下角飞行控制用 0–100% 速度滑条驱动巡航与跃迁（极快时出蓝色跃迁通道和长光束），随机航向与随机跃迁随航速自动生效；短按「抬头观景」把视线转向高舷窗，三屏可各自悬浮拖动。
+repo: https://github.com/yunxiang1218/dsh-skin-deep-space-command-bridge
+package: "@dsh-external/dsh-client-ui-skin-deep-space-command-bridge"
+rowId: ui-skin-deep-space-command-bridge
+category: skin
+tags:
+  - sci-fi
+  - cockpit
+  - spaceship
+  - starfield
+  - flight
+modes:
+  - dark
+install:
+  target: github:yunxiang1218/dsh-skin-deep-space-command-bridge#9d8379ee7b26939b5051c80d8afe1124345831eb
+  version: 0.4.0
+  commit: 9d8379ee7b26939b5051c80d8afe1124345831eb
+compatibility:
+  dsh: 0.1.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/bridge.png
+  - https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/observation.png
+  - https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/cabin-far.png
+  - https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/warp.png
+  - https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/floating.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1504
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/bridge.png

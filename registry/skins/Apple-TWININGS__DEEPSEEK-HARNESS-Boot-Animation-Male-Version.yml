@@ -1,0 +1,52 @@
+id: apple.twinings.deepseek.harness.boot.animation.male.version
+name:
+  zh: 蓝调片头与壁纸
+  en: Blue-Toned Intro & Wallpapers
+author: Apple-TWININGS
+description: 进入页面先播 8.6 秒蓝调片头，点击、Esc 或回车可跳过；附三张同主题壁纸（觉醒／凝视／静默），动效可选静态、缓慢缩放或视频循环，背景遮罩 0–85% 可调，也能关掉片头只留壁纸。
+repo: https://github.com/Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version
+package: dsh-boot-animation-male
+rowId: boot-animation-male
+category: skin
+tags:
+  - boot
+  - wallpaper
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version#ea5d1c83b8a05b39167c13b03f2f4af7770e88ed
+  version: 1.0.2
+  commit: ea5d1c83b8a05b39167c13b03f2f4af7770e88ed
+compatibility:
+  dsh: 0.2.0--rc.2-2f7bff.svg || 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version/ea5d1c83b8a05b39167c13b03f2f4af7770e88ed/docs/screenshots/1.0.2/boot.jpg
+  - https://raw.githubusercontent.com/Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version/ea5d1c83b8a05b39167c13b03f2f4af7770e88ed/docs/screenshots/1.0.2/wallpaper.jpg
+  - https://raw.githubusercontent.com/Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version/ea5d1c83b8a05b39167c13b03f2f4af7770e88ed/docs/screenshots/1.0.2/settings.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1295
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version/ea5d1c83b8a05b39167c13b03f2f4af7770e88ed/docs/screenshots/1.0.2/boot.jpg

@@ -1,0 +1,59 @@
+id: zeppeli777.dsh.stardew.skin
+name:
+  zh: 星露谷物语主题
+  en: Stardew Valley Theme
+author: Zeppeli777
+description: 把 Web 界面刷成星露谷物语配色：展示标题用内嵌的 Fusion Pixel 像素字体，App 背景换成像素山谷（内嵌 JPEG，--dsw-alias-bg-base 透明），约 70 个 dsw token 覆盖奶油纸面、深棕描边、木按钮、谷仓红与草绿，圆角压到 2px，选区换成星露谷黄；不替换官方前端，正文与代码排版保留。只接 Web，light/dark 两组 token 同值。
+repo: https://github.com/Zeppeli777/dsh-stardew-skin
+package: dsh-theme-stardew-valley
+rowId: stardew-theme
+category: skin
+tags:
+  - stardew-valley
+  - pixel-art
+  - farming
+  - tokens
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:Zeppeli777/dsh-stardew-skin#396ddd28e250da998ab0c0e20f0492d2d9ca247c
+  version: 0.2.3
+  commit: 396ddd28e250da998ab0c0e20f0492d2d9ca247c
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/theme-preview.png
+  - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/home-021.png
+  - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/chat-021.png
+  - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/long-chat-021.png
+  - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/model-menu-021.png
+  - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/tool-trace-021.png
+  - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/permission-approval-021.png
+  - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/chat-page-fixed.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1503
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/theme-preview.png

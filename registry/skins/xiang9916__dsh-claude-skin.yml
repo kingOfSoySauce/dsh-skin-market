@@ -1,0 +1,53 @@
+id: xiang9916.dsh.claude.skin
+name:
+  zh: Claude 风格皮肤
+  en: Claude Style Skin
+author: xiang9916
+description: "Claude 风格界面皮肤：暖黑 #141413 画布配陶橙 #d97757 点缀，代码块、行内代码与菜单一起调暖，语法高亮用陶土、橄榄、琥珀与薰衣草色；内置 Anthropic 字体模式（Sans／Serif／Mono，中文另配思源宋体），亮暗跟随宿主切换。"
+repo: https://github.com/xiang9916/dsh-claude-skin
+package: dsh-claude-skin
+rowId: ui-claude-skin
+category: skin
+tags:
+  - claude
+  - warm
+  - typography
+  - light-dark
+  - fork
+modes:
+  - light
+  - dark
+install:
+  target: github:xiang9916/dsh-claude-skin#bf03c1c796280623cff566c1001ee530e8c13bbf
+  version: 0.2.2-rc.1
+  commit: bf03c1c796280623cff566c1001ee530e8c13bbf
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xiang9916/dsh-claude-skin/bf03c1c796280623cff566c1001ee530e8c13bbf/docs/dark.png
+  - https://raw.githubusercontent.com/xiang9916/dsh-claude-skin/bf03c1c796280623cff566c1001ee530e8c13bbf/docs/light.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1481
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/xiang9916/dsh-claude-skin/bf03c1c796280623cff566c1001ee530e8c13bbf/docs/dark.png

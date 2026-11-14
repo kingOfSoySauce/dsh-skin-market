@@ -1,0 +1,54 @@
+id: hrauroras.dsh.plugin.ostan.nanami.san
+name:
+  zh: 奈奈酱桌宠
+  en: OStan Nanami-San
+author: Hrauroras
+description: 奈奈酱桌宠：四张立绘对应待机、干活、等你、完成四种神态，跟着你正在看的会话实时切换，报错换担心脸，等你确认时强制切到等待；上方小胶囊报告正在读文件还是跑命令，另有六级好感度与右键菜单。
+repo: https://github.com/Hrauroras/dsh-plugin-ostan-nanami-san
+package: dsh-plugin-ostan-nanami-san
+rowId: ostan-nanami-san
+category: pet
+tags:
+  - chibi
+  - pet
+  - states
+  - affinity
+  - menu
+modes:
+  - light
+  - dark
+install:
+  target: github:Hrauroras/dsh-plugin-ostan-nanami-san#0f1984b6c62253fda9a958295f9f64ee12eb84bd
+  version: 0.6.0
+  commit: 0f1984b6c62253fda9a958295f9f64ee12eb84bd
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Hrauroras/dsh-plugin-ostan-nanami-san/0f1984b6c62253fda9a958295f9f64ee12eb84bd/docs/poses.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1354
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/Hrauroras/dsh-plugin-ostan-nanami-san/0f1984b6c62253fda9a958295f9f64ee12eb84bd/docs/poses.png

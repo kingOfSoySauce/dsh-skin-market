@@ -1,0 +1,52 @@
+id: roberts9012062.dsh.qqmusic.player
+name:
+  zh: QQ 音乐悬浮球
+  en: QQ Music Floating Player
+author: roberts9012062
+description: 右上角一枚绿色音符悬浮球，悬停展开 QQ 音乐面板：扫码登录后歌单持久保存，可浏览创建的歌单与「我喜欢」，点歌或播放全部，歌单缓存 24 小时。面板里有上一首/下一首、进度拖动、音量与静音；悬浮球能拖到任意位置并自动钳制在视口内，无版权或会员歌曲会自动跳过。
+repo: https://github.com/roberts9012062/dsh-qqmusic-player
+package: dsh-qqmusic-player
+rowId: qqmusic-player
+category: player
+tags:
+  - music
+  - qq
+  - login
+  - floating
+modes:
+  - light
+  - dark
+install:
+  target: github:roberts9012062/dsh-qqmusic-player#853268e5d537da616e7a1672584c397d7548fac0
+  version: 1.1.1
+  commit: 853268e5d537da616e7a1672584c397d7548fac0
+compatibility:
+  dsh: ^0.1.0-rc.7
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/roberts9012062/dsh-qqmusic-player/853268e5d537da616e7a1672584c397d7548fac0/assets/screenshot.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1429
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/roberts9012062/dsh-qqmusic-player/853268e5d537da616e7a1672584c397d7548fac0/assets/screenshot.png

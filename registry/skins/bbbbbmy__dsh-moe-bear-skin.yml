@@ -1,0 +1,57 @@
+id: bbbbbmy.dsh.moe.bear.skin
+name:
+  zh: 自嘲熊动态壁纸
+  en: Moe Bear Motion Wallpaper
+author: bbbbbmy
+description: 把一张全窗口壁纸垫在界面最底层，侧栏、顶栏和输入区改成透明或毛玻璃，默认壁纸是包内自带的 1280×720 无缝落叶循环动图；浅色主色雾蓝、深色主色灰绿并随宿主明暗切换，也可以换成自己的壁纸或重新生成动效。
+repo: https://github.com/bbbbbmy/dsh-moe-bear-skin
+package: dsh-moe-bear-skin
+rowId: moe-bear-skin
+category: skin
+tags:
+  - wallpaper
+  - motion
+  - transparent
+  - glass
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:bbbbbmy/dsh-moe-bear-skin#ac38d16d47dcc5549db1315429743c3b80e5910e
+  version: 0.1.1
+  commit: ac38d16d47dcc5549db1315429743c3b80e5910e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview.png
+  - https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview-gallery.webp
+  - https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview-bear.webp
+  - https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/assets/leaf-fall-poster.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1301
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview.png

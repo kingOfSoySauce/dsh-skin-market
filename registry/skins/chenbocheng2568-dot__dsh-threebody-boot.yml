@@ -1,0 +1,55 @@
+id: chenbocheng2568.dot.dsh.threebody.boot
+name:
+  zh: 三体片头
+  en: Three-Body Boot Intro
+author: chenbocheng2568-dot
+description: 打开时实时渲染一段《三体》游戏启动界面：三颗星沿 8 字轨道追逐、标题从模糊里浮现，接着是登录页——身份栏显示你设置的 ID，停下等你用鼠标点「进入」，验证后穿过轨道落到群山远景再淡入界面。精简约 31 秒、完整约 48 秒或完全关闭；Esc 跳过，音量与身份在设置页调。
+repo: https://github.com/chenbocheng2568-dot/dsh-threebody-boot
+package: dsh-threebody-boot
+rowId: boot-threebody
+category: splash
+tags:
+  - splash
+  - three-body
+  - sci-fi
+  - login-gate
+  - realtime
+modes:
+  - light
+  - dark
+install:
+  target: github:chenbocheng2568-dot/dsh-threebody-boot#c44983971e5e35111d5390f90989217906803dce
+  version: 0.3.1
+  commit: c44983971e5e35111d5390f90989217906803dce
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-demo.webp
+  - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-login.jpg
+  - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-granted.jpg
+  - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/landscape.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1309
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-demo.webp

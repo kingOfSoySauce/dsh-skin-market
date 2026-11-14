@@ -1,0 +1,59 @@
+id: wildchiken.dsh.prism.skin
+name:
+  zh: 棱镜配色引擎
+  en: Prism Color Engine
+author: Wildchiken
+description: 棱镜换肤：十套内置主题，也能拖色相、彩度、对比度、明暗等滑杆，让配色引擎重算 224 个颜色变量，亮暗成对并逐对校验对比度；支持图片/渐变轮播壁纸、玻璃感、省电、代码配色与自定义 CSS。
+repo: https://github.com/Wildchiken/dsh-prism-skin
+package: dsh-prism-skin
+rowId: prism-skin
+category: skin
+tags:
+  - theme
+  - seed
+  - contrast
+  - wallpaper
+  - custom-css
+modes:
+  - light
+  - dark
+install:
+  target: github:Wildchiken/dsh-prism-skin#f3eefeec46fa041b187af7bee8c1744e0e3f538d
+  version: 0.7.0
+  commit: f3eefeec46fa041b187af7bee8c1744e0e3f538d
+compatibility:
+  dsh: 0.2.1-rc.5 || 0.2.1--rc.5 || >=0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/assets/cyberpunk-hud.gif
+  - https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/assets/material-3.png
+  - https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/assets/material-3-accents.png
+  - https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/screenshots/settings-light.png
+  - https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/screenshots/panel-dark.png
+  - https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/screenshots/wall-image-dark.png
+  - https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/screenshots/wall-gradient-light.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1474
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/assets/cyberpunk-hud.gif

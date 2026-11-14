@@ -1,0 +1,54 @@
+id: superhercule985.bleach
+name:
+  zh: 井上织姬
+  en: Orihime
+author: SuperHercule985
+description: 一层暖金色黄昏皮肤：底画柔焦铺满整窗，方照作第二层停在右上角，用户消息是琥珀色信笺气泡，输入框是奶油信纸，代码块、菜单与工具行统一棕金配色。左侧栏新增「井上织姬」工作台，可在留白、叠影、窗边、明信片四档构图间切换，并调柔焦、浓度与画片尺寸。
+repo: https://github.com/SuperHercule985/Bleach
+package: dsh-sunset-skin
+rowId: dsh-sunset-skin
+category: skin
+tags:
+  - anime
+  - wallpaper
+  - warm
+  - workshop
+modes:
+  - light
+  - dark
+install:
+  target: github:SuperHercule985/Bleach#81ffbeba262f3fb605d5bc7f6e745ae2a6be7d15
+  version: 1.1.1
+  commit: 81ffbeba262f3fb605d5bc7f6e745ae2a6be7d15
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/SuperHercule985/Bleach/81ffbeba262f3fb605d5bc7f6e745ae2a6be7d15/previews/04-atelier.png
+  - https://raw.githubusercontent.com/SuperHercule985/Bleach/81ffbeba262f3fb605d5bc7f6e745ae2a6be7d15/previews/05-backdrop.png
+  - https://raw.githubusercontent.com/SuperHercule985/Bleach/81ffbeba262f3fb605d5bc7f6e745ae2a6be7d15/assets/golden-hour.jpg
+  - https://raw.githubusercontent.com/SuperHercule985/Bleach/81ffbeba262f3fb605d5bc7f6e745ae2a6be7d15/assets/portrait.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1448
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/SuperHercule985/Bleach/81ffbeba262f3fb605d5bc7f6e745ae2a6be7d15/previews/04-atelier.png

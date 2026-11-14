@@ -1,0 +1,55 @@
+id: lim1202.dsh.agent.theater
+name:
+  zh: Agent Theater
+  en: Agent Theater
+author: lim1202
+description: 把会话页换成角色舞台：Chat、Trajectory 之外多一个「剧场」视图，角色随真实工具事件行动，你的话变成漫画气泡、回复变成字幕，一轮结束时在台上摆出最终答案、真实统计和交付文件（可展开、复制、在侧栏或大图预览）。四幕由真实状态驱动，可导入 Codex Pet 精灵图，没有宠物时用内置占位角色，不额外调用模型。
+repo: https://github.com/lim1202/dsh-agent-theater
+package: dsh-agent-theater
+rowId: agent-theater
+category: pet
+tags:
+  - conversation-view
+  - character-stage
+  - codex-pet
+  - completion-report
+modes:
+  - light
+  - dark
+install:
+  target: github:lim1202/dsh-agent-theater#30768fed2d87039547bd3db9a74c9dc2b2c73808
+  version: 0.1.1
+  commit: 30768fed2d87039547bd3db9a74c9dc2b2c73808
+compatibility:
+  dsh: 0.2.1-rc.x || 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lim1202/dsh-agent-theater/30768fed2d87039547bd3db9a74c9dc2b2c73808/docs/screenshots/pet-working.png
+  - https://raw.githubusercontent.com/lim1202/dsh-agent-theater/30768fed2d87039547bd3db9a74c9dc2b2c73808/docs/screenshots/pet-completion.png
+  - https://raw.githubusercontent.com/lim1202/dsh-agent-theater/30768fed2d87039547bd3db9a74c9dc2b2c73808/docs/screenshots/pet-attention.png
+  - https://raw.githubusercontent.com/lim1202/dsh-agent-theater/30768fed2d87039547bd3db9a74c9dc2b2c73808/docs/screenshots/placeholder-working.png
+  - https://raw.githubusercontent.com/lim1202/dsh-agent-theater/30768fed2d87039547bd3db9a74c9dc2b2c73808/docs/screenshots/placeholder-completion.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1385
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/lim1202/dsh-agent-theater/30768fed2d87039547bd3db9a74c9dc2b2c73808/docs/screenshots/pet-working.png

@@ -1,0 +1,60 @@
+id: chertuion.dsh.quiet.companion.pet
+name:
+  zh: 安静陪伴
+  en: Quiet Companion
+author: Chertuion
+description: macOS 桌面上的 Q 版橙发伙伴：双击文字聊天，摸头、轻戳、碰裙摆也会触发回应；开启观察后，它会结合前台应用、画面与视频对白挑时机开口，也能保持安静。默认模型生成对白，另有记忆、真实任务进度与随时间积累的虚拟零食；24 类动作共 192 帧，本机朗读时嘴型跟随实际音量，仅 Apple Silicon Mac、macOS 14 以上。
+repo: https://github.com/Chertuion/dsh-quiet-companion-pet
+package: dsh-quiet-companion
+rowId: quiet-companion
+category: pet
+tags:
+  - companion
+  - macos
+  - voice
+  - memory
+modes:
+  - light
+  - dark
+install:
+  target: github:Chertuion/dsh-quiet-companion-pet#c89d39955f5ecde042d476d5d314714bb6934b16
+  version: 0.5.1-beta.9
+  commit: c89d39955f5ecde042d476d5d314714bb6934b16
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/desktop-companion.jpg
+  - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/proactive-desktop-bubble.png
+  - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/agent-progress-completed.jpg
+  - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/growth-and-snacks.jpg
+  - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/screen-understanding-result.jpg
+  - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/voice-and-appearance.jpg
+  - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/screen-test-input.jpg
+  - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/proactive-interaction.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1312
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/desktop-companion.jpg

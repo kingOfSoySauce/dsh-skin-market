@@ -1,0 +1,58 @@
+id: mobius.dsh.pixel.liangzu
+name:
+  zh: 像素大头桌宠
+  en: Pixel Bighead Pet
+author: mobius
+description: 像素大头桌宠：6 档性能滑杆各配一套角色，从瘦白领、清秀西装、型男西装、中山装、怒目武者到冕冠帝王，共 30 张两帧循环 GIF；动作跟随会话快照——运行中工作、等待审批或提问时招手、完成后庆祝约 3.6 秒、无会话休息，其余待机。宠物上显示 Lv.N 徽章、状态胶囊与切换气泡，可拖到任意位置并记住，点击看详情。
+repo: https://github.com/mobius/dsh-pixel-liangzu
+package: dsh-pixel-liangzu
+rowId: dsh-pixel-liangzu
+category: pet
+tags:
+  - pixel-art
+  - desktop-pet
+  - performance-slider
+  - gif
+modes:
+  - light
+  - dark
+install:
+  target: github:mobius/dsh-pixel-liangzu#d3adb8420bfc9e376f547c85c693d8019bdcb2da
+  version: 0.2.1
+  commit: d3adb8420bfc9e376f547c85c693d8019bdcb2da
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/mobius/dsh-pixel-liangzu/d3adb8420bfc9e376f547c85c693d8019bdcb2da/assets/gifs/01_idle.gif
+  - https://raw.githubusercontent.com/mobius/dsh-pixel-liangzu/d3adb8420bfc9e376f547c85c693d8019bdcb2da/assets/gifs/06_idle.gif
+  - https://raw.githubusercontent.com/mobius/dsh-pixel-liangzu/d3adb8420bfc9e376f547c85c693d8019bdcb2da/assets/gifs/02_idle.gif
+  - https://raw.githubusercontent.com/mobius/dsh-pixel-liangzu/d3adb8420bfc9e376f547c85c693d8019bdcb2da/assets/gifs/03_idle.gif
+  - https://raw.githubusercontent.com/mobius/dsh-pixel-liangzu/d3adb8420bfc9e376f547c85c693d8019bdcb2da/assets/gifs/04_idle.gif
+  - https://raw.githubusercontent.com/mobius/dsh-pixel-liangzu/d3adb8420bfc9e376f547c85c693d8019bdcb2da/assets/gifs/05_idle.gif
+  - https://raw.githubusercontent.com/mobius/dsh-pixel-liangzu/d3adb8420bfc9e376f547c85c693d8019bdcb2da/assets/screenshot.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1402
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/mobius/dsh-pixel-liangzu/d3adb8420bfc9e376f547c85c693d8019bdcb2da/assets/gifs/01_idle.gif

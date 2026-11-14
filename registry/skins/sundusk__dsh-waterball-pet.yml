@@ -1,0 +1,58 @@
+id: sundusk.dsh.waterball.pet
+name:
+  zh: 水球宠物
+  en: Water Ball Pet
+author: sundusk
+description: 纯 SVG 绘制的水球宠物：球内颜色随会话状态变化（空闲蓝、思考绿、工具调用紫、等待授权黄、提问粉、完成青、出错红、中断深灰、点击挥手橙），外层白色渐变与底部接触阴影保持不变，浅色页面上也看得清边界；眼睛可在设置里切白/黑或隐藏，另有开关、大小与拖动位置，点击水球会挥手。
+repo: https://github.com/sundusk/dsh-waterball-pet
+package: "@sundusk/dsh-waterball"
+rowId: ui-waterball
+category: pet
+tags:
+  - svg
+  - pet
+  - state-colors
+  - settings
+modes:
+  - light
+  - dark
+install:
+  target: github:sundusk/dsh-waterball-pet#5fb3ce282e10fcb109b41bf5ea27c13f04dffe29
+  version: 0.2.0
+  commit: 5fb3ce282e10fcb109b41bf5ea27c13f04dffe29
+compatibility:
+  dsh: 0.1.2-alpha.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-idle-blue-black-eyes.png
+  - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-waiting-green-black-eyes.png
+  - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-authorizing-yellow-black-eyes.png
+  - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-done-cyan-black-eyes.png
+  - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-idle-blue-white-eyes.png
+  - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-idle-blue-no-eyes.png
+  - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-waiting-green-white-eyes.png
+  - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-waiting-green-no-eyes.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1445
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-idle-blue-black-eyes.png

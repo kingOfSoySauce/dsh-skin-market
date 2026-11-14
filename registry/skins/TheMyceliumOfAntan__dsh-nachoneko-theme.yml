@@ -1,0 +1,54 @@
+id: themyceliumofantan.dsh.nachoneko.theme
+name:
+  zh: Nachoneko 主题
+  en: Nachoneko Theme
+author: TheMyceliumOfAntan
+description: "以 #A3D3FF 为锚点重着色整套 token：品牌色、主按钮、状态色、滚动条与气泡一起联动，另有略深的伴生蓝给链接。深色为主：body 铺全屏壁纸加蓝调渐变遮罩，侧栏 20px、输入框 24px、代码块 24px 毛玻璃；设置弹窗左下角贴一张角色装饰图，明暗各有一套遮罩。"
+repo: https://github.com/TheMyceliumOfAntan/dsh-nachoneko-theme
+package: dsh-nachoneko-theme
+rowId: nachoneko-theme
+category: skin
+tags:
+  - anime
+  - wallpaper
+  - blue
+  - frosted
+modes:
+  - light
+  - dark
+install:
+  target: github:TheMyceliumOfAntan/dsh-nachoneko-theme#0d41085e9fbcfc9409e612fd127da9ae5baaee81
+  version: 1.0.0
+  commit: 0d41085e9fbcfc9409e612fd127da9ae5baaee81
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/TheMyceliumOfAntan/dsh-nachoneko-theme/0d41085e9fbcfc9409e612fd127da9ae5baaee81/assets/screenshot.png
+  - https://raw.githubusercontent.com/TheMyceliumOfAntan/dsh-nachoneko-theme/0d41085e9fbcfc9409e612fd127da9ae5baaee81/assets/nachoneko-bg.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1454
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/TheMyceliumOfAntan/dsh-nachoneko-theme/0d41085e9fbcfc9409e612fd127da9ae5baaee81/assets/screenshot.png

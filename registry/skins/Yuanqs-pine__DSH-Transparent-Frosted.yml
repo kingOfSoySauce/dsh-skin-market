@@ -1,0 +1,58 @@
+id: yuanqs.pine.dsh.transparent.frosted
+name:
+  zh: 透明磨砂
+  en: Transparent Frosted
+author: Yuanqs-pine
+description: 把整个界面变成一块透明磨砂玻璃：一条滑杆在真模糊的磨砂与背景彻底消失之间连续过渡，整页区域、组件和展开面板作为一张纸一起变化；设置页有独立滑杆（默认 72%/62%），另带可选的鲸鱼粒子；桌面端透出你的壁纸，Web 端则自绘深色渐变兜底。
+repo: https://github.com/Yuanqs-pine/DSH-Transparent-Frosted
+package: dsh-transparent-frosted
+rowId: dsh-transparent-frosted
+category: skin
+tags:
+  - glass
+  - frosted
+  - transparency
+  - slider
+  - particles
+modes:
+  - light
+  - dark
+install:
+  target: github:Yuanqs-pine/DSH-Transparent-Frosted#51ebf1c9884679d074c1cabfd729bce31d240863
+  version: 1.0.2
+  commit: 51ebf1c9884679d074c1cabfd729bce31d240863
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Yuanqs-pine/DSH-Transparent-Frosted/51ebf1c9884679d074c1cabfd729bce31d240863/docs/frost.jpg
+  - https://raw.githubusercontent.com/Yuanqs-pine/DSH-Transparent-Frosted/51ebf1c9884679d074c1cabfd729bce31d240863/docs/clear.jpg
+  - https://raw.githubusercontent.com/Yuanqs-pine/DSH-Transparent-Frosted/51ebf1c9884679d074c1cabfd729bce31d240863/docs/particles.png
+  - https://raw.githubusercontent.com/Yuanqs-pine/DSH-Transparent-Frosted/51ebf1c9884679d074c1cabfd729bce31d240863/docs/desktop-frost.jpg
+  - https://raw.githubusercontent.com/Yuanqs-pine/DSH-Transparent-Frosted/51ebf1c9884679d074c1cabfd729bce31d240863/docs/desktop-clear.jpg
+  - https://raw.githubusercontent.com/Yuanqs-pine/DSH-Transparent-Frosted/51ebf1c9884679d074c1cabfd729bce31d240863/docs/web-frost.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1496
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/Yuanqs-pine/DSH-Transparent-Frosted/51ebf1c9884679d074c1cabfd729bce31d240863/docs/frost.jpg

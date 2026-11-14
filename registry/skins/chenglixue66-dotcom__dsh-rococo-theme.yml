@@ -1,0 +1,53 @@
+id: chenglixue66.dotcom.dsh.rococo.theme
+name:
+  zh: 洛可可沙龙
+  en: Rococo Salon
+author: chenglixue66-dotcom
+description: 界面换成洛可可沙龙纸面：雾蓝、银蓝与奶白配香槟金细线，模切吊牌式导航、磨砂面板与花边代码块；主页是双线纸框加中央 Bienvenue 和两张神庙版画，授权弹窗改为火漆信笺，深浅两套跟随主题切换。
+repo: https://github.com/chenglixue66-dotcom/dsh-rococo-theme
+package: dsh-rococo-theme
+rowId: rococo-theme
+category: skin
+tags:
+  - appearance
+  - light-dark
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:chenglixue66-dotcom/dsh-rococo-theme#a697960359a48649c4c89f63b5689ab199569f8f
+  version: 0.8.9
+  commit: a697960359a48649c4c89f63b5689ab199569f8f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/chenglixue66-dotcom/dsh-rococo-theme/a697960359a48649c4c89f63b5689ab199569f8f/assets/screenshot-home.png
+  - https://raw.githubusercontent.com/chenglixue66-dotcom/dsh-rococo-theme/a697960359a48649c4c89f63b5689ab199569f8f/assets/screenshot-chat.png
+  - https://raw.githubusercontent.com/chenglixue66-dotcom/dsh-rococo-theme/a697960359a48649c4c89f63b5689ab199569f8f/assets/screenshot-panel.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1310
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/chenglixue66-dotcom/dsh-rococo-theme/a697960359a48649c4c89f63b5689ab199569f8f/assets/screenshot-home.png

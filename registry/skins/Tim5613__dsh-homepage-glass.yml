@@ -1,0 +1,55 @@
+id: tim5613.dsh.homepage.glass
+name:
+  zh: 流动蓝
+  en: Flowing Blue
+author: Tim5613
+description: "左侧栏固定深蓝渐变、不跟随明暗，右侧内容区仍按当前外观走，主按钮用官网蓝 #4d6bfe。浅色模式还能把内容区换成复刻 deepseek.com 首页的「官网流动」背景——直接跑官网原版 WebGL 着色器，约 70 秒横穿一次，系统减少动效时只画一帧。"
+repo: https://github.com/Tim5613/dsh-homepage-glass
+package: dsh-homepage-glass
+rowId: dsh-homepage-glass
+category: skin
+tags:
+  - wallpaper
+  - glass
+  - token-theme
+  - shader
+modes:
+  - light
+  - dark
+install:
+  target: github:Tim5613/dsh-homepage-glass#a9bb39e7a9ceb1a83b1467312076f786d6e30fa0
+  version: 1.3.1
+  commit: a9bb39e7a9ceb1a83b1467312076f786d6e30fa0
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Tim5613/dsh-homepage-glass/a9bb39e7a9ceb1a83b1467312076f786d6e30fa0/assets/screenshot-light.png
+  - https://raw.githubusercontent.com/Tim5613/dsh-homepage-glass/a9bb39e7a9ceb1a83b1467312076f786d6e30fa0/assets/screenshot-dark.png
+  - https://raw.githubusercontent.com/Tim5613/dsh-homepage-glass/a9bb39e7a9ceb1a83b1467312076f786d6e30fa0/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1455
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/Tim5613/dsh-homepage-glass/a9bb39e7a9ceb1a83b1467312076f786d6e30fa0/assets/screenshot-light.png

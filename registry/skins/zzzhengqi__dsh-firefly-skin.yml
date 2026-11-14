@@ -1,0 +1,55 @@
+id: zzzhengqi.dsh.firefly.skin
+name:
+  zh: 流萤
+  en: Firefly
+author: zzzhengqi
+description: 「流萤」原创形象的启动动画与夜航主题：载入时播放线条起笔、上色到睁眼的动画，结束后工作台背景保留同一个人像（呼吸、约 20 秒眨眼、虹膜跟随鼠标），另加环境萤火与右下角 40px 重播按钮；启用期间强制深色，卸载后恢复原主题。
+repo: https://github.com/zzzhengqi/dsh-firefly-skin
+package: dsh-firefly-skin
+rowId: firefly-skin
+category: splash
+tags:
+  - original-character
+  - boot
+  - animation
+  - webgl
+  - dark
+modes:
+  - dark
+install:
+  target: github:zzzhengqi/dsh-firefly-skin#392262e2e39eaf0b4e25fae7f1379ebb6a2458eb
+  version: 1.0.1
+  commit: 392262e2e39eaf0b4e25fae7f1379ebb6a2458eb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/boot.jpg
+  - https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/theme.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: CC-BY-NC-4.0
+  commercialUse: false
+featuredRank: 1511
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/boot.jpg

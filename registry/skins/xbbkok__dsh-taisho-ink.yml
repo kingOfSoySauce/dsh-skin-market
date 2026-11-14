@@ -1,0 +1,52 @@
+id: xbbkok.dsh.taisho.ink
+name:
+  zh: 大正墨染
+  en: Taisho Ink
+author: xbbkok
+description: 白天是和纸与墨色、夜晚是墨夜与余烬的大正风主题：14 个别名 token 成对覆盖明暗色板，绯红作强调色，配 18 颗上升的余烬、10 片飘落的紫藤花瓣和日轮纹章。布局、控件与交互保持原样，粒子在系统「减少动态」下停止。
+repo: https://github.com/xbbkok/dsh-taisho-ink
+package: dsh-taisho-ink
+rowId: dsh-taisho-ink
+category: skin
+tags:
+  - theme
+  - retro
+  - japanese
+  - particles
+modes:
+  - light
+  - dark
+install:
+  target: github:xbbkok/dsh-taisho-ink#9021184f227f5a52f9309ee105fabee8333ee8bc
+  version: 1.0.2
+  commit: 9021184f227f5a52f9309ee105fabee8333ee8bc
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xbbkok/dsh-taisho-ink/9021184f227f5a52f9309ee105fabee8333ee8bc/docs/ambience.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1479
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/xbbkok/dsh-taisho-ink/9021184f227f5a52f9309ee105fabee8333ee8bc/docs/ambience.gif

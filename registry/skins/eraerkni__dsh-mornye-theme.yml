@@ -1,0 +1,55 @@
+id: eraerkni.dsh.mornye.theme
+name:
+  zh: 莫宁主题
+  en: Mornye Theme
+author: eraerkni
+description: 整套界面换成冷色调的「莫宁」：一段随包 20MB 的 mp4 当全屏动态壁纸（也可切留边），输入框和弹窗改成半透明磨砂，AI 回复旁有圆形头像。另有一只可拖动的桌宠，右键能选显示 DeepSeek 余额或 OpenCode Go 订阅额度、定时说一句自定义台词，还能加装莫宁人格与开屏画面。
+repo: https://github.com/eraerkni/dsh-mornye-theme
+package: dsh-mornye-theme
+rowId: dsh-mornye-theme
+category: skin
+tags:
+  - theme
+  - wallpaper
+  - pet
+  - glass
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:eraerkni/dsh-mornye-theme#55b61c75655848038e8b86b04dd3a43f5e8783cf
+  version: 0.2.2
+  commit: 55b61c75655848038e8b86b04dd3a43f5e8783cf
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/eraerkni/dsh-mornye-theme/55b61c75655848038e8b86b04dd3a43f5e8783cf/docs/preview.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1327
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/eraerkni/dsh-mornye-theme/55b61c75655848038e8b86b04dd3a43f5e8783cf/docs/preview.jpg

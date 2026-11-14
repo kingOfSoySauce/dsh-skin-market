@@ -1,0 +1,54 @@
+id: neo65536.engineer.dsh.skin.whale.girl
+name:
+  zh: 鲸鱼娘
+  en: Whale Girl
+author: Neo65536-engineer
+description: 给界面换一身会呼吸的深海皮肤：左右各一张镜像立绘、昼夜两套背景，蕾丝花边和描金输入框框住正文，Q 版吉祥物在侧栏每 5–11 秒随机换表情。内置安全区引擎给正文、代码块和表格各铺一层实底，右栏展开时立绘也不会压住文字。
+repo: https://github.com/Neo65536-engineer/dsh-skin-whale-girl
+package: dsh-skin-whale-girl
+rowId: dsh-skin-whale-girl
+category: skin
+tags:
+  - anime
+  - full-ui
+  - light-dark
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:Neo65536-engineer/dsh-skin-whale-girl#8e51a099bfab8475ae76381cfe345ba3e10ce52d
+  version: 0.2.0
+  commit: 8e51a099bfab8475ae76381cfe345ba3e10ce52d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Neo65536-engineer/dsh-skin-whale-girl/8e51a099bfab8475ae76381cfe345ba3e10ce52d/docs/preview-light.png
+  - https://raw.githubusercontent.com/Neo65536-engineer/dsh-skin-whale-girl/8e51a099bfab8475ae76381cfe345ba3e10ce52d/docs/preview-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1413
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/Neo65536-engineer/dsh-skin-whale-girl/8e51a099bfab8475ae76381cfe345ba3e10ce52d/docs/preview-light.png

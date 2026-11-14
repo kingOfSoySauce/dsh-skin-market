@@ -1,0 +1,53 @@
+id: rikfish163.rgb.dsh.pets
+name:
+  zh: 任务面板桌宠
+  en: Task Panel Pet
+author: rikfish163-rgb
+description: 像素桌宠＋实时任务面板：宠物随 Agent 在待命、思考、工作中、等你回答、已完成与失败间切换精灵动画，有提问时亮红色角标、浏览器标签页标题显示 ([N])；面板三个标签——进行中（后台 Job、Goal、子代理）、已完成（重启后保留，最多 200 条）、等你回答，浮在任意页面。卡片可展开输出并跳转会话，宠物可拖拽、64–280px 缩放、35–100% 透明度，也能上传自己的图。
+repo: https://github.com/rikfish163-rgb/dsh-pets
+package: "@dsh-local/dsh-pets"
+rowId: dsh-pets
+category: pet
+tags:
+  - desktop-pet
+  - task-panel
+  - sprite
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:rikfish163-rgb/dsh-pets#37242bbc4e2003f86639cb023d36b7b25a7a0cc2
+  version: 0.1.0
+  commit: 37242bbc4e2003f86639cb023d36b7b25a7a0cc2
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/rikfish163-rgb/dsh-pets/37242bbc4e2003f86639cb023d36b7b25a7a0cc2/assets/pet-sheet.png
+  - https://raw.githubusercontent.com/rikfish163-rgb/dsh-pets/37242bbc4e2003f86639cb023d36b7b25a7a0cc2/assets/lulu-spritesheet.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1430
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/rikfish163-rgb/dsh-pets/37242bbc4e2003f86639cb023d36b7b25a7a0cc2/assets/pet-sheet.png

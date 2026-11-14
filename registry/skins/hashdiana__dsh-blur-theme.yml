@@ -1,0 +1,52 @@
+id: hashdiana.dsh.blur.theme
+name:
+  zh: 毛玻璃卡片
+  en: Frosted Glass Cards
+author: hashdiana
+description: 把界面改成整套毛玻璃：侧边栏收成 22px 圆角浮动卡片，会话头变成半透明磨砂条，消息滚动时上沿融到浏览器顶边、下沿沉进输入带；输入卡片是整面磨砂悬浮层，设置里有 0–100 的实时模糊滑杆。
+repo: https://github.com/hashdiana/dsh-blur-theme
+package: dsh-gaussian-blur
+rowId: dsh-gaussian-blur
+category: skin
+tags:
+  - appearance
+  - glass
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:hashdiana/dsh-blur-theme#895aa76c48e475180f25d79314834b7ffc32d0c2
+  version: 0.1.0
+  commit: 895aa76c48e475180f25d79314834b7ffc32d0c2
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/hashdiana/dsh-blur-theme/895aa76c48e475180f25d79314834b7ffc32d0c2/p1.png
+  - https://raw.githubusercontent.com/hashdiana/dsh-blur-theme/895aa76c48e475180f25d79314834b7ffc32d0c2/p2.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1348
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/hashdiana/dsh-blur-theme/895aa76c48e475180f25d79314834b7ffc32d0c2/p1.png

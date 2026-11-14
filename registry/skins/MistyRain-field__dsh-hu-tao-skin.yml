@@ -1,0 +1,54 @@
+id: mistyrain.field.dsh.hu.tao.skin
+name:
+  zh: 胡桃往生堂主题
+  en: Hu Tao Theme
+author: MistyRain-field
+description: 往生堂气质的胡桃皮肤：墨黑、绯红与琥珀金共 14 个主题令牌分亮暗两套，叠一层梅花飘落、流光蝴蝶与「往生堂」金印的氛围层，附跟随侧栏移动的浮动开关和三个独立开关。
+repo: https://github.com/MistyRain-field/dsh-hu-tao-skin
+package: dsh-hu-tao-skin
+rowId: dsh-hu-tao-skin
+category: skin
+tags:
+  - genshin
+  - theme
+  - hu-tao
+  - crimson
+  - ambience
+modes:
+  - light
+  - dark
+install:
+  target: github:MistyRain-field/dsh-hu-tao-skin#602c08637c33d94fc849f4a55323a56f709a3299
+  version: 1.0.0
+  commit: 602c08637c33d94fc849f4a55323a56f709a3299
+compatibility:
+  dsh: 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/MistyRain-field/dsh-hu-tao-skin/602c08637c33d94fc849f4a55323a56f709a3299/docs/skin-on.png
+  - https://raw.githubusercontent.com/MistyRain-field/dsh-hu-tao-skin/602c08637c33d94fc849f4a55323a56f709a3299/docs/skin-off.png
+  - https://raw.githubusercontent.com/MistyRain-field/dsh-hu-tao-skin/602c08637c33d94fc849f4a55323a56f709a3299/docs/default-ui-before.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1400
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/MistyRain-field/dsh-hu-tao-skin/602c08637c33d94fc849f4a55323a56f709a3299/docs/skin-on.png

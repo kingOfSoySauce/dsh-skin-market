@@ -1,0 +1,58 @@
+id: dlpufan.yuhao.pet
+name:
+  zh: 宇昊桌面宠物
+  en: Yuhao Desktop Pet
+author: dlpufan
+description: 一只叫宇昊的狐狸兽人少年常驻界面右下角：7 种表情都是会呼吸的动态立绘，随对话状态自动切换，也会被对话里的情绪词临时触发；可以喂食、玩耍、洗澡、学习、打工、睡觉，消耗 token 自动攒积分，再在商店里换东西。
+repo: https://github.com/dlpufan/yuhao-pet
+package: yuhao-pet
+rowId: yuhao-pet
+category: pet
+tags:
+  - fox
+  - mascot
+  - raising
+  - points
+  - expressions
+modes:
+  - light
+  - dark
+install:
+  target: github:dlpufan/yuhao-pet#f6991f72ccbe737d32f863a99f5e8e1cf02e0a83
+  version: 0.1.0
+  commit: f6991f72ccbe737d32f863a99f5e8e1cf02e0a83
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/dlpufan/yuhao-pet/f6991f72ccbe737d32f863a99f5e8e1cf02e0a83/assets/full.webp
+  - https://raw.githubusercontent.com/dlpufan/yuhao-pet/f6991f72ccbe737d32f863a99f5e8e1cf02e0a83/assets/preview-normal.png
+  - https://raw.githubusercontent.com/dlpufan/yuhao-pet/f6991f72ccbe737d32f863a99f5e8e1cf02e0a83/assets/preview-happy.png
+  - https://raw.githubusercontent.com/dlpufan/yuhao-pet/f6991f72ccbe737d32f863a99f5e8e1cf02e0a83/assets/preview-sad.png
+  - https://raw.githubusercontent.com/dlpufan/yuhao-pet/f6991f72ccbe737d32f863a99f5e8e1cf02e0a83/assets/preview-angry.png
+  - https://raw.githubusercontent.com/dlpufan/yuhao-pet/f6991f72ccbe737d32f863a99f5e8e1cf02e0a83/assets/preview-scared.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1320
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/dlpufan/yuhao-pet/f6991f72ccbe737d32f863a99f5e8e1cf02e0a83/assets/full.webp

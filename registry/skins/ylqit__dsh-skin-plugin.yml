@@ -1,0 +1,58 @@
+id: ylqit.dsh.skin.plugin
+name:
+  zh: 声明式换肤工作室
+  en: Declarative Skin Studio
+author: ylqit
+description: 声明式换肤插件：只接受 .dshskin schema v4，v1–v3 直接拒绝；主题只能改受控 token、背景、组件表面图、装饰图标与固定模板，禁止 JS、HTML、任意 CSS、外链与布局改动。内置杰尼龟水舱、妙蛙种子生长舱与皮卡丘电能三套；工作室提供真实界面导览图、点击定位、明暗缩略图、拖放替换与试穿。
+repo: https://github.com/ylqit/dsh-skin-plugin
+package: "@ylq77147/dsh-skin-plugin"
+rowId: dsh-skin-plugin
+category: skin
+tags:
+  - declarative
+  - skins
+  - studio
+  - safety
+modes:
+  - light
+  - dark
+install:
+  target: github:ylqit/dsh-skin-plugin#6a39d573e13ee14d28d7d72481b527a55a435905
+  version: 0.4.0
+  commit: 6a39d573e13ee14d28d7d72481b527a55a435905
+compatibility:
+  dsh: 0.1.0-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/theme-pikachu-light.webp
+  - https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/theme-pikachu-dark.webp
+  - https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/theme-squirtle-light.webp
+  - https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/theme-bulbasaur-light.webp
+  - https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/studio-theme-library.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1491
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/theme-pikachu-light.webp

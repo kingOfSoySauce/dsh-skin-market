@@ -1,0 +1,54 @@
+id: rizenhnt.dsh.skin.digital.arcade
+name:
+  zh: 像素霓虹工作台
+  en: Digital Arcade
+author: RizenHNT
+description: 深蓝底配像素人物、青蓝霓虹和街机菜单：首页 01 GAME START、02 WORKSPACE SELECT、03 MODE SELECT 直接驱动现有输入、工作区和预设，另有光标粒子、HUD 扫描与发送反馈；外观设置把颜色模式和界面风格拆开，两种自定义风格都是暗色。
+repo: https://github.com/RizenHNT/dsh-skin-digital-arcade
+package: dsh-skin-digital-arcade
+rowId: skin-digital-arcade
+category: skin
+tags:
+  - appearance
+  - pixel
+  - retro
+modes:
+  - dark
+install:
+  target: github:RizenHNT/dsh-skin-digital-arcade#c14020575d68486edd726176aaffa9a07eac343f
+  version: 0.3.2
+  commit: c14020575d68486edd726176aaffa9a07eac343f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/workbench-home.jpg
+  - https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/appearance-settings.jpg
+  - https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/workbench-mode-menu.jpg
+  - https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/workbench-mobile.jpg
+  - https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/appearance-mobile.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1428
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/workbench-home.jpg

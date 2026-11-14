@@ -1,0 +1,53 @@
+id: redrain.wang.wechat.dsh.skin
+name:
+  zh: 微信电脑版皮肤
+  en: WeChat Desktop Skin
+author: redrain-wang
+description: "微信电脑版风格的浅色皮肤：微信绿 #07c160 作强调色、用户消息是右侧浅绿气泡 #95ec69、助手消息是左侧白气泡，会话列表换成微信灰侧栏（彩色字母头像与最后消息预览），最左 56px 功能栏 6 个入口可配置，字号 5 档；深色模式回退官方外观。"
+repo: https://github.com/redrain-wang/wechat-dsh-skin
+package: dsh-wechat-style-skin
+rowId: dsh-wechat-style-skin
+category: skin
+tags:
+  - wechat
+  - light
+  - bubbles
+  - sidebar
+  - typography
+modes:
+  - light
+install:
+  target: github:redrain-wang/wechat-dsh-skin#54ecd51aa6fc9133829e11dc2b9cb2200d9e55b5
+  version: 0.1.1
+  commit: 54ecd51aa6fc9133829e11dc2b9cb2200d9e55b5
+compatibility:
+  dsh: 0.1.0-rc
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/redrain-wang/wechat-dsh-skin/54ecd51aa6fc9133829e11dc2b9cb2200d9e55b5/docs/screenshot-sidebar.png
+  - https://raw.githubusercontent.com/redrain-wang/wechat-dsh-skin/54ecd51aa6fc9133829e11dc2b9cb2200d9e55b5/docs/screenshot-chat.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1425
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/redrain-wang/wechat-dsh-skin/54ecd51aa6fc9133829e11dc2b9cb2200d9e55b5/docs/screenshot-sidebar.png

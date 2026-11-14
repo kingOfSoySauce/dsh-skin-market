@@ -1,0 +1,56 @@
+id: www12456.dsh.plugin.whale
+name:
+  zh: 鲸鱼状态条
+  en: Whale Status Bar
+author: www12456
+description: 对话界面加一条随会话状态换泳姿的鲸鱼：静止、思考、工作中三档，一轮回答结束跃出水面捕食；侧栏粮仓可展开充值、赠送和今日消耗，低于阈值时图标变橙；另有峰谷海面、用量金额、接零食小游戏和沙漏定时发送。
+repo: https://github.com/www12456/dsh-plugin-whale
+package: dsh-plugin-whale
+rowId: dsh-plugin-whale
+category: skin
+tags:
+  - appearance
+  - ocean
+  - utility
+modes:
+  - light
+  - dark
+install:
+  target: github:www12456/dsh-plugin-whale#c8627a787a7c8e9bb45e014dd25af66fb130593a
+  version: 1.2.0
+  commit: c8627a787a7c8e9bb45e014dd25af66fb130593a
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/www12456/dsh-plugin-whale/c8627a787a7c8e9bb45e014dd25af66fb130593a/docs/images/strip.jpg
+  - https://raw.githubusercontent.com/www12456/dsh-plugin-whale/c8627a787a7c8e9bb45e014dd25af66fb130593a/docs/images/balance.jpg
+  - https://raw.githubusercontent.com/www12456/dsh-plugin-whale/c8627a787a7c8e9bb45e014dd25af66fb130593a/docs/images/timer.jpg
+  - https://raw.githubusercontent.com/www12456/dsh-plugin-whale/c8627a787a7c8e9bb45e014dd25af66fb130593a/docs/images/play.jpg
+  - https://raw.githubusercontent.com/www12456/dsh-plugin-whale/c8627a787a7c8e9bb45e014dd25af66fb130593a/docs/images/valley.jpg
+  - https://raw.githubusercontent.com/www12456/dsh-plugin-whale/c8627a787a7c8e9bb45e014dd25af66fb130593a/docs/images/office.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1477
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/www12456/dsh-plugin-whale/c8627a787a7c8e9bb45e014dd25af66fb130593a/docs/images/strip.jpg

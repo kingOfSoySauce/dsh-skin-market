@@ -1,0 +1,52 @@
+id: hacxy.dsh.live2d
+name:
+  zh: Live2D 挂件
+  en: Live2D Widget
+author: hacxy
+description: 右下角常驻一只 Live2D 看板娘：默认内置 Cubism 6 模型，也支持任意 .model.json（Cubism 2）与 .model3.json（Cubism 6）；模型下载时显示加载进度条，可拖到任意位置。模型地址、宽高、透明度、层级、锚定边与间距、缩放、音量、日志级别、总开关与拖拽共 13 项都在「设置 → Live2D」里调整，保存即生效，面板配色跟随明暗。
+repo: https://github.com/hacxy/dsh-live2d
+package: dsh-live2d
+rowId: live2d
+category: pet
+tags:
+  - live2d
+  - widget
+  - cubism
+  - settings
+modes:
+  - light
+  - dark
+install:
+  target: github:hacxy/dsh-live2d#91ec64940e5799ab4c8b419e1b654677e9d7354b
+  version: 0.1.0
+  commit: 91ec64940e5799ab4c8b419e1b654677e9d7354b
+compatibility:
+  dsh: ^0.1.0-rc.7
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/hacxy/dsh-live2d/91ec64940e5799ab4c8b419e1b654677e9d7354b/assets/screenshot.png
+  - https://raw.githubusercontent.com/hacxy/dsh-live2d/91ec64940e5799ab4c8b419e1b654677e9d7354b/assets/panel.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1349
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/hacxy/dsh-live2d/91ec64940e5799ab4c8b419e1b654677e9d7354b/assets/screenshot.png

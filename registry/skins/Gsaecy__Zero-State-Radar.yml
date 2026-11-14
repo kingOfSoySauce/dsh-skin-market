@@ -1,0 +1,52 @@
+id: gsaecy.zero.state.radar
+name:
+  zh: 零态雷达
+  en: Zero-State Radar
+author: Gsaecy
+description: 赛博朋克 HUD 皮肤：恒定夜间配色覆盖 114 个宿主颜色变量，空会话时一条扫描线自上而下扫过，扫过处浮现点阵世界地图、58 个城市节点、15 条航线与左下角遥测读数；发出第一条消息即整体退场。
+repo: https://github.com/Gsaecy/Zero-State-Radar
+package: dsh-cyberdeck
+rowId: dsh-cyberdeck
+category: skin
+tags:
+  - cyberpunk
+  - hud
+  - radar
+  - dark
+  - map
+modes:
+  - dark
+install:
+  target: github:Gsaecy/Zero-State-Radar#58e0b377fe3b9051e4286e6b0428be75dcba8078
+  version: 0.1.3
+  commit: 58e0b377fe3b9051e4286e6b0428be75dcba8078
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/home.png
+  - https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/session.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1346
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/home.png

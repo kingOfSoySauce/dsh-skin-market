@@ -1,0 +1,55 @@
+id: 203.11.dsh.fat.fish
+name:
+  zh: 大肥鱼桌宠
+  en: Chubby Fish Buddy
+author: 203-11
+description: 可拖动的蓝发人鱼桌宠：待机浮动、眨眼、吐气泡，还会向前游一下；按可调间隔提醒喝水与起身走动，支持暂停 / 继续 / 稍后提醒与一键记录，并显示今日次数与最近历史。形象可换成自己的 PNG / JPG / WebP / GIF（本地缩放到 1024px），大小 60%–200% 可调，提示音是用 Web Audio 现场合成的原创曼波风小旋律。
+repo: https://github.com/203-11/dsh-fat-fish
+package: dsh-fat-fish
+rowId: fat-fish
+category: pet
+tags:
+  - fish-maid
+  - reminder
+  - hydration
+  - custom-avatar
+  - web-audio
+modes:
+  - light
+  - dark
+install:
+  target: github:203-11/dsh-fat-fish#21a63e42f0f5d6ea3b597498b33bfc6abe74b993
+  version: 1.0.0
+  commit: 21a63e42f0f5d6ea3b597498b33bfc6abe74b993
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1288
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+marketScreenshots:
+  - skin-screenshots/203-11__dsh-fat-fish/21a63e42f0f5d6ea3b597498b33bfc6abe74b993/home.gif
+  - skin-screenshots/203-11__dsh-fat-fish/21a63e42f0f5d6ea3b597498b33bfc6abe74b993/home.png
+  - skin-screenshots/203-11__dsh-fat-fish/21a63e42f0f5d6ea3b597498b33bfc6abe74b993/conversation.png

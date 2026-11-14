@@ -1,0 +1,53 @@
+id: zhongyichang1998.dsh.open.meadow
+name:
+  zh: 海风与草甸
+  en: Open Meadow
+author: zhongyichang1998
+description: 动态海边主题：手绘海景里有漂移云层、局部海面纹理与移动浪花，三簇前景花草随风摆动；静风、微风、强风控制花草摆幅、水面波动、浪花速度与云速，清晨/正午/日落三个时段与节能/均衡/精细三档画质。背景可见度默认 70%（10%–95% 可调），输入框、代码与菜单保留阅读底色，设置嵌在「设置 → 通用设置」里。
+repo: https://github.com/zhongyichang1998/dsh-open-meadow
+package: dsh-open-meadow
+rowId: open-meadow
+category: skin
+tags:
+  - seaside
+  - dynamic-background
+  - wind
+  - quality
+  - light
+modes:
+  - light
+  - dark
+install:
+  target: github:zhongyichang1998/dsh-open-meadow#52090c659c6bbe0dbd71493e25c96c1652399fdc
+  version: 1.0.0-preview.3
+  commit: 52090c659c6bbe0dbd71493e25c96c1652399fdc
+compatibility:
+  dsh: 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zhongyichang1998/dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/docs/screenshots/settings.jpg
+  - https://raw.githubusercontent.com/zhongyichang1998/dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/assets/production/coast.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1507
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/zhongyichang1998/dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/docs/screenshots/settings.jpg

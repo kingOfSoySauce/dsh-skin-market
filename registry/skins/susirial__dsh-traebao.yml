@@ -1,0 +1,56 @@
+id: susirial.dsh.traebao
+name:
+  zh: TRAE 宝
+  en: TRAE Bao
+author: susirial
+description: 会看会话的桌宠：新会话、排队提示、思考、工具执行、成功与失败对应九种动作，挂官方 shell.overlay 与 settings.section 槽位，不替换产品布局。每个动作都能换成自己的 WebP，九个状态加左右键都能映射内置或自定义音效；导入素材存在 $DSH_HOME/pet-assets/dsh-juan-pet/，经过大小、扩展名、MIME 与 magic byte 校验。
+repo: https://github.com/susirial/dsh-traebao
+package: dsh-plugin-juan-pet
+rowId: dsh-juan-pet
+category: pet
+tags:
+  - trae
+  - desktop-pet
+  - custom-assets
+  - sounds
+  - conversation-aware
+modes:
+  - light
+  - dark
+install:
+  target: github:susirial/dsh-traebao#60b7452314a6382d6cbc8609fbb9f08daad2b93e
+  version: 0.1.0
+  commit: 60b7452314a6382d6cbc8609fbb9f08daad2b93e
+compatibility:
+  dsh: 0.1.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/susirial/dsh-traebao/60b7452314a6382d6cbc8609fbb9f08daad2b93e/docs/dsh-trae%E5%AE%9D%E5%9C%A8%E5%AF%B9%E8%AF%9D%E7%95%8C%E9%9D%A2.png
+  - https://raw.githubusercontent.com/susirial/dsh-traebao/60b7452314a6382d6cbc8609fbb9f08daad2b93e/docs/dsh-trae%E5%AE%9D%E9%85%8D%E7%BD%AE%E7%95%8C%E9%9D%A2.png
+  - https://raw.githubusercontent.com/susirial/dsh-traebao/60b7452314a6382d6cbc8609fbb9f08daad2b93e/docs/dsh-trae%E5%AE%9D%E6%9B%BF%E6%8D%A2%E6%9F%90%E4%B8%AA%E5%8A%A8%E4%BD%9C%E5%9B%BE%E7%89%87%E7%A4%BA%E6%84%8F%E5%9B%BE.png
+  - https://raw.githubusercontent.com/susirial/dsh-traebao/60b7452314a6382d6cbc8609fbb9f08daad2b93e/docs/dsh-trae%E5%AE%9D%E9%85%8D%E7%BD%AE%E5%92%8C%E5%AF%BC%E5%85%A5%E9%9F%B3%E6%95%88.png
+  - https://raw.githubusercontent.com/susirial/dsh-traebao/60b7452314a6382d6cbc8609fbb9f08daad2b93e/assets/pets/trae/idle.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1450
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/susirial/dsh-traebao/60b7452314a6382d6cbc8609fbb9f08daad2b93e/docs/dsh-trae%E5%AE%9D%E5%9C%A8%E5%AF%B9%E8%AF%9D%E7%95%8C%E9%9D%A2.png

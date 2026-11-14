@@ -1,0 +1,52 @@
+id: johnsonspirit.ocean.wave.theme
+name:
+  zh: 大海海浪
+  en: Ocean Wave
+author: johnsonspirit
+description: 背景铺四层 canvas 海浪，带浪花边、日月光晕和闪烁波光，一条鲸鱼每 28 秒从左向右游过中间波峰，拖出尾迹和上升气泡；界面各层换成明暗两套半透明 token，侧栏和面板能透出海浪。
+repo: https://github.com/johnsonspirit/ocean-wave-theme
+package: "@johnsonspirit/ocean-wave-theme"
+rowId: ocean-wave-theme
+category: skin
+tags:
+  - appearance
+  - ocean
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:johnsonspirit/ocean-wave-theme#77cfa73fe608dee78523f98e181a20e54d306913
+  version: 1.1.1
+  commit: 77cfa73fe608dee78523f98e181a20e54d306913
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/johnsonspirit/ocean-wave-theme/77cfa73fe608dee78523f98e181a20e54d306913/assets/screenshot-light.png
+  - https://raw.githubusercontent.com/johnsonspirit/ocean-wave-theme/77cfa73fe608dee78523f98e181a20e54d306913/assets/screenshot-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1372
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/johnsonspirit/ocean-wave-theme/77cfa73fe608dee78523f98e181a20e54d306913/assets/screenshot-light.png

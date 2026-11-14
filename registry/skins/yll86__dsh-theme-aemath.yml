@@ -1,0 +1,54 @@
+id: yll86.dsh.theme.aemath
+name:
+  zh: 爱弥斯主题
+  en: AEMEATH Theme
+author: yll86
+description: "渐湖暮色里的樱花瓣配一点虚质空间幽光：浅色「樱花晨光」与深色「樱夜」两套配色覆盖整套设计令牌，主色紫罗兰玫粉（#963f86 / #c96f9e），按钮、链接、选中态、滚动条与代码块全部联动；对话区铺一层淡彩立绘背景，左下角挂 Q 版圆形徽章，favicon 与页面标题也换掉，样式、立绘、favicon 全部内联、不向外请求。"
+repo: https://github.com/yll86/dsh-theme-aemath
+package: dsh-theme-aemath
+rowId: ui-theme-aemath
+category: skin
+tags:
+  - theme
+  - sakura
+  - violet
+  - artwork
+  - favicon
+modes:
+  - light
+  - dark
+install:
+  target: github:yll86/dsh-theme-aemath#f3c04ade49779b9c8999d44f41bc01bef8613504
+  version: 1.0.0
+  commit: f3c04ade49779b9c8999d44f41bc01bef8613504
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yll86/dsh-theme-aemath/f3c04ade49779b9c8999d44f41bc01bef8613504/assets/aemath-poster.jpg
+  - https://raw.githubusercontent.com/yll86/dsh-theme-aemath/f3c04ade49779b9c8999d44f41bc01bef8613504/assets/aemath-bg.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1490
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/yll86/dsh-theme-aemath/f3c04ade49779b9c8999d44f41bc01bef8613504/assets/aemath-poster.jpg

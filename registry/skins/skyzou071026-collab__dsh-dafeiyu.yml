@@ -1,0 +1,52 @@
+id: skyzou071026.collab.dsh.dafeiyu
+name:
+  zh: 大肥鱼桌面伴侣
+  en: Bigfish Desktop Companion
+author: skyzou071026-collab
+description: 透明、无边框、始终置顶的原生桌面窗口，由插件拉起、随 DSH 退出：显示思考、查找、修改、执行、验证、等待确认、完成和错误等真实任务状态，气泡里写项目、步骤、多任务和待办进度，还能显示 DeepSeek 余额并区分 API Key 与登录账户。支持拖动、摸头、戳身体、碰尾巴，可调大小、气泡、声音与减少动态，也能在页面右下角开一个轻量角色（默认关闭）。
+repo: https://github.com/skyzou071026-collab/dsh-dafeiyu
+package: dsh-dafeiyu
+rowId: dsh-dafeiyu
+category: pet
+tags:
+  - bigfish
+  - desktop-pet
+  - native-window
+  - balance
+  - status
+modes:
+  - light
+  - dark
+install:
+  target: github:skyzou071026-collab/dsh-dafeiyu#440b843a9634b76bcb756b68f50457064b16e74f
+  version: 0.1.23
+  commit: 440b843a9634b76bcb756b68f50457064b16e74f
+compatibility:
+  dsh: 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/skyzou071026-collab/dsh-dafeiyu/440b843a9634b76bcb756b68f50457064b16e74f/docs/images/balance-preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1441
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/skyzou071026-collab/dsh-dafeiyu/440b843a9634b76bcb756b68f50457064b16e74f/docs/images/balance-preview.png

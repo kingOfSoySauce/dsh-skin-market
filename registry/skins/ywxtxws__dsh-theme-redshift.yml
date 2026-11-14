@@ -1,0 +1,54 @@
+id: ywxtxws.dsh.theme.redshift
+name:
+  zh: 赤色观测站
+  en: Redshift Observatory
+author: ywxtxws
+description: 深空赤色主题：114 个色变量全部重映射成暗红体系（明暗两套），背景是一张 2560×1440 的程序化深空——星云、尘埃带、引力透镜黑洞、弧形地平线与小行星，由脚本从零绘制、不含外部素材；上面再叠 4 条互质周期撕裂光带、29 秒一轮的引力波、46 颗星尘、52/13px 双密度网格、四角 HUD 与每 7–14 秒一次的过载，右上角常驻 112×150 观测窗。
+repo: https://github.com/ywxtxws/dsh-theme-redshift
+package: dsh-theme-redshift
+rowId: dsh-theme-redshift
+category: skin
+tags:
+  - deep-space
+  - crimson
+  - procedural
+  - hud
+  - dark
+modes:
+  - light
+  - dark
+install:
+  target: github:ywxtxws/dsh-theme-redshift#dc6665e1237398c2f7f5c610d5e1a9b312939e79
+  version: 0.3.0
+  commit: dc6665e1237398c2f7f5c610d5e1a9b312939e79
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ywxtxws/dsh-theme-redshift/dc6665e1237398c2f7f5c610d5e1a9b312939e79/docs/screenshot.jpg
+  - https://raw.githubusercontent.com/ywxtxws/dsh-theme-redshift/dc6665e1237398c2f7f5c610d5e1a9b312939e79/docs/rift.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1498
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/ywxtxws/dsh-theme-redshift/dc6665e1237398c2f7f5c610d5e1a9b312939e79/docs/screenshot.jpg

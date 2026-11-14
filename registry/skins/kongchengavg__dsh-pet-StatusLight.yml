@@ -1,0 +1,54 @@
+id: kongchengavg.dsh.pet.statuslight
+name:
+  zh: 角色状态灯
+  en: Character Status Light
+author: kongchengavg
+description: 角色表情状态灯：九位角色（芙宁娜、胡桃、空、纳西妲、枫原万叶、荧、钟离、红绿灯、机器人）随任务在思考、报错、完成与空闲四态间切换表情，右键随时换角色并记住选择；任务完成、出错或向你提问时弹角色气泡，可点「查看详情」跳到对应会话。Windows 下另有独立于浏览器的透明置顶小窗，浏览器最小化也可见。
+repo: https://github.com/kongchengavg/dsh-pet-StatusLight
+package: dsh-pet-statuslight
+rowId: dsh-pet-statuslight
+category: pet
+tags:
+  - desktop-pet
+  - characters
+  - notifications
+  - windows
+modes:
+  - light
+  - dark
+install:
+  target: github:kongchengavg/dsh-pet-StatusLight#62cc338cee3ccf18a87280063f3f1d9031404489
+  version: 1.1.0
+  commit: 62cc338cee3ccf18a87280063f3f1d9031404489
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/kongchengavg/dsh-pet-StatusLight/62cc338cee3ccf18a87280063f3f1d9031404489/assets/screenshots/characters.png
+  - https://raw.githubusercontent.com/kongchengavg/dsh-pet-StatusLight/62cc338cee3ccf18a87280063f3f1d9031404489/assets/screenshots/states.png
+  - https://raw.githubusercontent.com/kongchengavg/dsh-pet-StatusLight/62cc338cee3ccf18a87280063f3f1d9031404489/assets/screenshots/chatbox.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1377
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/kongchengavg/dsh-pet-StatusLight/62cc338cee3ccf18a87280063f3f1d9031404489/assets/screenshots/characters.png

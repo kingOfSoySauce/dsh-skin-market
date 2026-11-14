@@ -1,0 +1,55 @@
+id: cestbonn.dsh.bilibili.radio
+name:
+  zh: bilibili 电台
+  en: bilibili Radio
+author: cestbonn
+description: 侧栏里的音乐播放器：搜歌、切歌、看滚动歌词，歌单含我喜欢、听歌排行与自定义列表，还能刷 B 站音乐榜单和相关推荐；说一句想听什么，桌宠大肥鱼帮你找歌切歌。音源走本机 127.0.0.1:13210 代理，需要能访问 B 站。
+repo: https://github.com/cestbonn/dsh-bilibili-radio
+package: dsh-bilibili-radio
+rowId: bilibili-radio
+category: player
+tags:
+  - bilibili
+  - player
+  - lyrics
+  - playlist
+  - sidebar
+modes:
+  - light
+  - dark
+install:
+  target: github:cestbonn/dsh-bilibili-radio#25be86a1aaadf789fac786431a68aca742f8e67b
+  version: 0.1.0
+  commit: 25be86a1aaadf789fac786431a68aca742f8e67b
+compatibility:
+  dsh: 0.2.2--rc.1+-5786FE || 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/cestbonn/dsh-bilibili-radio/25be86a1aaadf789fac786431a68aca742f8e67b/examples/main.png
+  - https://raw.githubusercontent.com/cestbonn/dsh-bilibili-radio/25be86a1aaadf789fac786431a68aca742f8e67b/examples/lyrics.png
+  - https://raw.githubusercontent.com/cestbonn/dsh-bilibili-radio/25be86a1aaadf789fac786431a68aca742f8e67b/examples/suggestion1.png
+  - https://raw.githubusercontent.com/cestbonn/dsh-bilibili-radio/25be86a1aaadf789fac786431a68aca742f8e67b/examples/suggestions2.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1307
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/cestbonn/dsh-bilibili-radio/25be86a1aaadf789fac786431a68aca742f8e67b/examples/main.png

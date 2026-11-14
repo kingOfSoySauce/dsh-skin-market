@@ -1,0 +1,55 @@
+id: whatcannotbesaid.dsh.quasar.theme
+name:
+  zh: QUASAR
+  en: QUASAR
+author: WhatCannotBeSaid
+description: 太空主题皮肤：侧栏品牌位是一颗墨色黑洞，应用背后是一张活的吸积盘，全部样式压在一层可整层移除的覆盖层里——53 个实测令牌，半透明表面的 alpha 按 WCAG 对比度预算解出；品牌行拆成三个点击区，隐藏 7 个官方入口并重排输入区控件。
+repo: https://github.com/WhatCannotBeSaid/dsh-quasar-theme
+package: dsh-quasar-theme
+rowId: dsh-quasar-theme
+category: skin
+tags:
+  - space
+  - black-hole
+  - tokens
+  - light-dark
+  - removable
+modes:
+  - light
+  - dark
+install:
+  target: github:WhatCannotBeSaid/dsh-quasar-theme#53c76a569886e43cee9ff0ae09da181babcd8d73
+  version: 0.1.7
+  commit: 53c76a569886e43cee9ff0ae09da181babcd8d73
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/WhatCannotBeSaid/dsh-quasar-theme/53c76a569886e43cee9ff0ae09da181babcd8d73/docs/preview-dark.jpg
+  - https://raw.githubusercontent.com/WhatCannotBeSaid/dsh-quasar-theme/53c76a569886e43cee9ff0ae09da181babcd8d73/docs/preview-light.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1473
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/WhatCannotBeSaid/dsh-quasar-theme/53c76a569886e43cee9ff0ae09da181babcd8d73/docs/preview-dark.jpg

@@ -1,0 +1,56 @@
+id: fengyevvv.dsh.wallpaper.intro
+name:
+  zh: 壁纸与片头
+  en: Wallpaper & Intro
+author: fengyevvv
+description: 在界面背后铺本机图片、视频或 Wallpaper Engine 视频壁纸，启动时再播一段自定义片头。片头可以是任意视频或图片，能调展示时长、淡出和声音，点画面或按 Esc/空格/回车跳过；遮罩、模糊、画布不透明度亮暗各一套，拖动即时生效。另带壁纸轮播与右下角快捷面板。
+repo: https://github.com/fengyevvv/dsh-wallpaper-intro
+package: dsh-wallpaper-intro
+rowId: wallpaper-intro
+category: splash
+tags:
+  - wallpaper
+  - intro
+  - wallpaper-engine
+  - rotation
+modes:
+  - light
+  - dark
+install:
+  target: github:fengyevvv/dsh-wallpaper-intro#9f2531590cefe3ecad5c34bd4d4a23bee58624c5
+  version: 0.1.0
+  commit: 9f2531590cefe3ecad5c34bd4d4a23bee58624c5
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/boot.png
+  - https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/background.png
+  - https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/settings.png
+  - https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/quick-panel.png
+  - https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/rotation.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1332
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/boot.png

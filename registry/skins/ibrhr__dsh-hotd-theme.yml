@@ -1,0 +1,54 @@
+id: ibrhr.dsh.hotd.theme
+name:
+  zh: 龙之家族主题
+  en: House of the Dragon Theme
+author: ibrhr
+description: 以《龙之家族》龙石岛为底的主题：浅色是羊皮纸暖调、深色是黑曜石配绯红高光，两侧有角色立绘、龙焰余烬粒子和自定义矢量图标，头部与输入框用毛玻璃。顶部徽章还顺带统计 OpenCode 花费与 token、显示 DeepSeek API 半价/高峰倒计时，点开是 14 天用量看板。
+repo: https://github.com/ibrhr/dsh-hotd-theme
+package: "@dsh-external/dsh-hotd-theme"
+rowId: ui-skin-hotd-theme
+category: skin
+tags:
+  - theme
+  - fantasy
+  - particles
+  - dashboard
+modes:
+  - light
+  - dark
+install:
+  target: github:ibrhr/dsh-hotd-theme#2ff89e5115dfdd9f351a0b98a6bf032e509ddbd8
+  version: 1.0.0
+  commit: 2ff89e5115dfdd9f351a0b98a6bf032e509ddbd8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ibrhr/dsh-hotd-theme/2ff89e5115dfdd9f351a0b98a6bf032e509ddbd8/preview/light.webp
+  - https://raw.githubusercontent.com/ibrhr/dsh-hotd-theme/2ff89e5115dfdd9f351a0b98a6bf032e509ddbd8/preview/dark.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1358
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/ibrhr/dsh-hotd-theme/2ff89e5115dfdd9f351a0b98a6bf032e509ddbd8/preview/light.webp

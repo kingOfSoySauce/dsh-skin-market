@@ -1,0 +1,54 @@
+id: aurora.lucas365.dsh.deep.wake.splash
+name:
+  zh: 深醒
+  en: Deep Wake
+author: Aurora-Lucas365
+description: 打开界面时浅蓝线条汇聚成一条线描鲸鱼，向前游动带出一圈低对比波纹，随后中央淡入「deepseek HARNESS」字标，约 3 秒后淡出交还界面。Esc 或点击可跳过，设置里能关闭，并遵循系统的「减少动态」偏好。
+repo: https://github.com/Aurora-Lucas365/dsh-deep-wake-splash
+package: dsh-deep-wake-splash
+rowId: deep-wake-splash
+category: splash
+tags:
+  - splash
+  - minimal
+  - whale
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:Aurora-Lucas365/dsh-deep-wake-splash#c42060eb691b4d9c079d8b7cd012ff0e46732f60
+  version: 0.1.0
+  commit: c42060eb691b4d9c079d8b7cd012ff0e46732f60
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Aurora-Lucas365/dsh-deep-wake-splash/c42060eb691b4d9c079d8b7cd012ff0e46732f60/splash.gif
+  - https://raw.githubusercontent.com/Aurora-Lucas365/dsh-deep-wake-splash/c42060eb691b4d9c079d8b7cd012ff0e46732f60/splash.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1297
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Aurora-Lucas365/dsh-deep-wake-splash/c42060eb691b4d9c079d8b7cd012ff0e46732f60/splash.gif

@@ -1,0 +1,52 @@
+id: jake1266.dsh.nailong.ui
+name:
+  zh: 奶龙明黄
+  en: Nailong Yellow
+author: JAKE1266
+description: 明黄蛋黄主色配暖橙点缀与奶白表面：按钮、卡片用 8–28px 圆角和带回弹的缓动，滚动条、选区、引用块、聚焦环都染上品牌色，深色主题用深暖棕而不是冷黑，另附一枚自绘的圆润小恐龙轮廓标记，不含任何奶龙形象素材。
+repo: https://github.com/JAKE1266/dsh-nailong-ui
+package: dsh-nailong-ui
+rowId: dsh-nailong-ui
+category: skin
+tags:
+  - appearance
+  - light-dark
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:JAKE1266/dsh-nailong-ui#37da828212b39654dd8e1b356e9776f1171e6c28
+  version: 1.0.0
+  commit: 37da828212b39654dd8e1b356e9776f1171e6c28
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JAKE1266/dsh-nailong-ui/37da828212b39654dd8e1b356e9776f1171e6c28/assets/preview-light.png
+  - https://raw.githubusercontent.com/JAKE1266/dsh-nailong-ui/37da828212b39654dd8e1b356e9776f1171e6c28/assets/preview-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1363
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/JAKE1266/dsh-nailong-ui/37da828212b39654dd8e1b356e9776f1171e6c28/assets/preview-light.png

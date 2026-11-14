@@ -1,0 +1,59 @@
+id: masterchiefm.dsh.realtime.tps.pet
+name:
+  zh: 实时速度悬浮窗
+  en: Live Speed Overlay
+author: Masterchiefm
+description: 一个可拖动的悬浮窗，三种形态可选：桌宠（默认小肥鱼，另含月薪喵和矢量小机器人）、环形仪表、紧凑速度胶囊。实时读数把流式文本增量在 15 秒滚动窗口上积分估算 token，再用最近 8 个已完成调用的比值中位数校准，未校准时带 ≈；均速用上报输出 token 除以解码墙钟时间。右键切换形态，设置页可调均速口径、宠物形象和 0.6×–2× 窗口大小。
+repo: https://github.com/Masterchiefm/dsh-realtime-tps-pet
+package: dsh-realtime-tps-pet
+rowId: realtime-tps-pet
+category: pet
+tags:
+  - speed
+  - overlay
+  - pet
+  - gauge
+  - tokens
+modes:
+  - light
+  - dark
+install:
+  target: github:Masterchiefm/dsh-realtime-tps-pet#9487d93ad71bf5b5742cbf167b737afb7c4b8fb3
+  version: 0.2.2
+  commit: 9487d93ad71bf5b5742cbf167b737afb7c4b8fb3
+compatibility:
+  dsh: 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/pet_closeup.png
+  - https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/capsule_closeup.png
+  - https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/gauge_closeup.png
+  - https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/pet_in_app.png
+  - https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/capsule_in_app.png
+  - https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/gauge_in_app.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1399
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/pet_closeup.png

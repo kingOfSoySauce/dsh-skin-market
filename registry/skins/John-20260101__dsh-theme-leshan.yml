@@ -1,0 +1,58 @@
+id: john.20260101.dsh.theme.leshan
+name:
+  zh: 乐山摄影皮肤
+  en: Leshan Photo Skins
+author: John-20260101
+description: 三张乐山照片做成的主题包：三江夜、凌云晚照、峨眉夜雾各以一张原尺寸照片铺满页面，每套只声明六个输入色，引擎推导出 119 个别名令牌，三套 × 明暗共六组配色，正文对比度 15.4–16.5:1。右下角乐山胶囊或 Alt+K 循环切换，选择存在浏览器本地；照片经精确白名单只读路由分发，无服务时退回纯色仍可用。
+repo: https://github.com/John-20260101/dsh-theme-leshan
+package: dsh-theme-leshan
+rowId: theme-leshan
+category: skin
+tags:
+  - photography
+  - wallpaper
+  - palettes
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:John-20260101/dsh-theme-leshan#2739b5adb3528cc09fc50debbed2acea049515e8
+  version: 0.1.2
+  commit: 2739b5adb3528cc09fc50debbed2acea049515e8
+compatibility:
+  dsh: 0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-leshan/2739b5adb3528cc09fc50debbed2acea049515e8/assets/screenshots/00-leshan-2400x1350.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-leshan/2739b5adb3528cc09fc50debbed2acea049515e8/assets/screenshots/01-sanjiang-light-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-leshan/2739b5adb3528cc09fc50debbed2acea049515e8/assets/screenshots/02-sanjiang-dark-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-leshan/2739b5adb3528cc09fc50debbed2acea049515e8/assets/screenshots/03-lingyun-light-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-leshan/2739b5adb3528cc09fc50debbed2acea049515e8/assets/screenshots/04-lingyun-dark-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-leshan/2739b5adb3528cc09fc50debbed2acea049515e8/assets/screenshots/05-emei-light-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-leshan/2739b5adb3528cc09fc50debbed2acea049515e8/assets/screenshots/06-emei-dark-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-leshan/2739b5adb3528cc09fc50debbed2acea049515e8/assets/keyart/sanjiang-1536x1024.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1370
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/John-20260101/dsh-theme-leshan/2739b5adb3528cc09fc50debbed2acea049515e8/assets/screenshots/00-leshan-2400x1350.jpg

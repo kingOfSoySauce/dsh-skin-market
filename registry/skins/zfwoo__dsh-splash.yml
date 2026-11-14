@@ -1,0 +1,52 @@
+id: zfwoo.dsh.splash
+name:
+  zh: 霓虹鲸启动
+  en: Neon Whale Splash
+author: zfwoo
+description: 赛博朋克启动动画：在 React 挂载前铺满屏幕，透视网格、CRT 扫描线、霓虹鲸鱼与逐行滚动的启动日志，进度计和日志共用一条时间轴，最后以 CRT 塌缩收场；默认 10 秒，按任意键或点击任意处跳过，自带设置页可改时长与配色预设。
+repo: https://github.com/zfwoo/dsh-splash
+package: "@local/dsh-splash"
+rowId: dsh-splash
+category: splash
+tags:
+  - cyberpunk
+  - boot
+  - animation
+  - crt
+  - skip
+modes:
+  - light
+  - dark
+install:
+  target: github:zfwoo/dsh-splash#13515fc004ce15c40eb2b62f4447b1872a056fe5
+  version: 1.0.0
+  commit: 13515fc004ce15c40eb2b62f4447b1872a056fe5
+compatibility:
+  dsh: 0.1.6-alpha.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zfwoo/dsh-splash/13515fc004ce15c40eb2b62f4447b1872a056fe5/docs/screenshot.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1502
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/zfwoo/dsh-splash/13515fc004ce15c40eb2b62f4447b1872a056fe5/docs/screenshot.png

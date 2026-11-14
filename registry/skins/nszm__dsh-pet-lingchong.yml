@@ -1,0 +1,53 @@
+id: nszm.dsh.pet.lingchong
+name:
+  zh: 灵宠
+  en: Lingchong
+author: nszm
+description: 整屏浮层上一只可拖的灵宠：布偶猫、金毛、水豚三只常驻，轻叩蓄能 +1、连击出星星眼，会眨眼、打盹，位置按窗口百分比记住；侧栏面板可换宠、调大小（30%–300%）与音效。也能导入自己的宠物——照片变 2.5D 立绘，GLB / VRM / STL / OBJ / PLY 变可拖着旋转的真 3D，数据全在本机。
+repo: https://github.com/nszm/dsh-pet-lingchong
+package: dsh-pet-lingchong
+rowId: dsh-pet-lingchong
+category: pet
+tags:
+  - pet
+  - 3d
+  - photo-import
+  - overlay
+  - capybara
+modes:
+  - light
+  - dark
+install:
+  target: github:nszm/dsh-pet-lingchong#2ed6e01252aa0313737d5c9a95158477ad3e2281
+  version: 1.1.3
+  commit: 2ed6e01252aa0313737d5c9a95158477ad3e2281
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/nszm/dsh-pet-lingchong/2ed6e01252aa0313737d5c9a95158477ad3e2281/assets/showcase.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1418
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/nszm/dsh-pet-lingchong/2ed6e01252aa0313737d5c9a95158477ad3e2281/assets/showcase.png

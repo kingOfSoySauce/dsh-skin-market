@@ -1,0 +1,56 @@
+id: qinpanwan.dsh.monash.skin
+name:
+  zh: 蒙纳士蓝
+  en: Monash Blue
+author: QinpanWan
+description: "整屏铺 Monash Blue #006DAE 深蓝渐变，背景取学校官网首页主横幅，右上角盾形校徽白色水印、右下角彩色校标贴纸，侧栏与输入区是深蓝毛玻璃白字，消息气泡保持浅色可读；品牌素材全部内联，离线可用。只做官方亮色一套外观，没有暗色分支。"
+repo: https://github.com/QinpanWan/dsh-monash-skin
+package: dsh-monash-skin
+rowId: ui-skin-monash
+category: skin
+tags:
+  - monash
+  - university
+  - campus
+  - blue
+  - brand
+modes:
+  - light
+install:
+  target: github:QinpanWan/dsh-monash-skin#5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e
+  version: 1.0.0
+  commit: 5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: CC-BY-SA-4.0
+  commercialUse: true
+featuredRank: 1423
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+marketScreenshots:
+  - skin-screenshots/QinpanWan__dsh-monash-skin/5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e/home.gif
+  - skin-screenshots/QinpanWan__dsh-monash-skin/5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e/home.png
+  - skin-screenshots/QinpanWan__dsh-monash-skin/5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e/conversation.png

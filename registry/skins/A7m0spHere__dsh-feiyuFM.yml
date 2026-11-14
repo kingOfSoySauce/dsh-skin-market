@@ -1,0 +1,53 @@
+id: a7m0sphere.dsh.feiyufm
+name:
+  zh: 肥鱼电台
+  en: FeiyuFM
+author: A7m0spHere
+description: 侧栏电台面板里导入常听的歌曲，网易云按参考歌曲给出候选、模型再挑出一批并附简短理由；支持逐行歌词点句跳转、喜欢／少推荐反馈、日常/专注/静听三种听歌模式与浅深两套界面，自动续播会避开最近 50 首已开始的歌曲。
+repo: https://github.com/A7m0spHere/dsh-feiyuFM
+package: dsh-feiyufm
+rowId: fishfm
+category: player
+tags:
+  - music
+  - netease
+  - lyrics
+  - playlist
+  - mascot
+modes:
+  - light
+  - dark
+install:
+  target: github:A7m0spHere/dsh-feiyuFM#3b24b893803d9964c029b6d20c751a358160dc02
+  version: 0.1.2
+  commit: 3b24b893803d9964c029b6d20c751a358160dc02
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/A7m0spHere/dsh-feiyuFM/3b24b893803d9964c029b6d20c751a358160dc02/assets/readme/panel.png
+  - https://raw.githubusercontent.com/A7m0spHere/dsh-feiyuFM/3b24b893803d9964c029b6d20c751a358160dc02/assets/readme/panel-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1290
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/A7m0spHere/dsh-feiyuFM/3b24b893803d9964c029b6d20c751a358160dc02/assets/readme/panel.png

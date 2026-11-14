@@ -1,0 +1,55 @@
+id: soulzhou.dsh.background.studio
+name:
+  zh: 背景工作室
+  en: Background Studio
+author: SoulZhou
+description: 在设置里加一页「背景」：曜石、极光、星云、蓝图、燕麦、樱雾六套渐变各有明暗两版，也能换成自己的图片或任意纯色，光晕强度与 0–100% 不透明度可调，「面板透出」让侧栏和画布直接露出底图。
+repo: https://github.com/SoulZhou/dsh-background-studio
+package: dsh-background-studio
+rowId: background-studio
+category: skin
+tags:
+  - background
+  - wallpaper
+  - presets
+  - solid-color
+  - settings-page
+modes:
+  - light
+  - dark
+install:
+  target: github:SoulZhou/dsh-background-studio#7f3b659ce3628b09969b4baaad3e38e98f1f1050
+  version: 0.4.0
+  commit: 7f3b659ce3628b09969b4baaad3e38e98f1f1050
+compatibility:
+  dsh: ^0.2.1-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/settings-custom.png
+  - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/color-background.jpg
+  - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/color-settings.jpg
+  - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/canvas-custom.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1443
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/settings-custom.png

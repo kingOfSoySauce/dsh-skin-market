@@ -1,0 +1,55 @@
+id: wedomizing.dsh.genshin.nicole.skin
+name:
+  zh: 尼可 PV 背景
+  en: Nicole PV Backdrop
+author: Wedomizing
+description: 把《原神》尼可角色 PV 里的画面铺成背景：14 张去字幕截图按顺序轮换，每次两秒淡入淡出，没有声音也不播放视频。右下角可暂停、继续或手动前后切图，间隔能设 1/5/10/30/60 分钟，默认 1 分钟；切到别的标签页和系统开「减少动态」时会暂停。
+repo: https://github.com/Wedomizing/Dsh_genshin_nicole_skin
+package: dsh-skin-genshin-nicole
+rowId: genshin-nicole-background
+category: skin
+tags:
+  - anime
+  - wallpaper
+  - slideshow
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Wedomizing/Dsh_genshin_nicole_skin#ff5dc2304ca1ee50755a11dd70346e71548c8619
+  version: 0.3.8
+  commit: ff5dc2304ca1ee50755a11dd70346e71548c8619
+compatibility:
+  dsh: 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-frame-07.png
+  - https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-dark.png
+  - https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-light.png
+  - https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-frame-13.png
+  - https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-settings-light.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1472
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-frame-07.png

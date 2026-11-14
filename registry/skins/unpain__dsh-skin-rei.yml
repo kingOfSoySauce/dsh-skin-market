@@ -1,0 +1,55 @@
+id: unpain.dsh.skin.rei
+name:
+  zh: 凌波丽·零号机
+  en: Rei · Unit-00
+author: unpain
+description: 雾白、冰蓝、深海军蓝加极少量红色焦点的零号机医疗舱风格：欢迎页有完整凌波丽立绘、UNIT-00 同步环和玻璃效果，进入对话后立绘退到右侧并降低透明度与饱和度。亮色、暗色、设置弹窗、菜单、终端与消息状态分别设计，适配宽屏、窄屏和减少动态，角色素材内嵌不联网。
+repo: https://github.com/unpain/dsh-skin-rei
+package: dsh-skin-rei
+rowId: ui-skin-rei-interface
+category: skin
+tags:
+  - anime
+  - full-ui
+  - light-dark
+  - medical
+modes:
+  - light
+  - dark
+install:
+  target: github:unpain/dsh-skin-rei#ec7a5b7bb5812f9e6d0111b7d47649a3e38f98a7
+  version: 0.1.1
+  commit: ec7a5b7bb5812f9e6d0111b7d47649a3e38f98a7
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/unpain/dsh-skin-rei/ec7a5b7bb5812f9e6d0111b7d47649a3e38f98a7/preview/dark.webp
+  - https://raw.githubusercontent.com/unpain/dsh-skin-rei/ec7a5b7bb5812f9e6d0111b7d47649a3e38f98a7/preview/light.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1464
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/unpain/dsh-skin-rei/ec7a5b7bb5812f9e6d0111b7d47649a3e38f98a7/preview/dark.webp

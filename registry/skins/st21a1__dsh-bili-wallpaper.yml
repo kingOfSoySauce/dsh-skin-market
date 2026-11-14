@@ -1,0 +1,53 @@
+id: st21a1.dsh.bili.wallpaper
+name:
+  zh: B站背景
+  en: Bilibili Wallpaper
+author: st21a1
+description: 把 B 站直播间或任意视频铺成聊天界面背后的背景：扫码登录自己的账号后可拿原画，粘直播链接/房号或视频 BV 号（支持分 P），清晰度可选；铺满或完整、背景模糊、压暗遮罩、面板不透明度、静音/音量/倍速都能调，切后台自动暂停，开播或地址过期后自动重新解析接上。
+repo: https://github.com/st21a1/dsh-bili-wallpaper
+package: dsh-bili-wallpaper
+rowId: bili-wallpaper
+category: skin
+tags:
+  - wallpaper
+  - bilibili
+  - live
+  - video
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:st21a1/dsh-bili-wallpaper#5e4e767e93ae7124865a6bc8147fab738c95dc85
+  version: 0.3.0
+  commit: 5e4e767e93ae7124865a6bc8147fab738c95dc85
+compatibility:
+  dsh: ^0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/st21a1/dsh-bili-wallpaper/5e4e767e93ae7124865a6bc8147fab738c95dc85/assets/screenshot-settings.png
+  - https://raw.githubusercontent.com/st21a1/dsh-bili-wallpaper/5e4e767e93ae7124865a6bc8147fab738c95dc85/assets/screenshot-background.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1444
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/st21a1/dsh-bili-wallpaper/5e4e767e93ae7124865a6bc8147fab738c95dc85/assets/screenshot-settings.png

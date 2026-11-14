@@ -1,0 +1,54 @@
+id: nizihan29.dsh.theme.strinova
+name:
+  zh: 卡拉彼丘主题
+  en: Strinova Theme
+author: nizihan29
+description: 暖琥珀金的卡拉彼丘配色，浅色和深色两套；角色卡随机轮换，卡面带一句台词和右下角 Q 版表情包，界面背景飘浮粒子，侧栏 logo 可换自定义图片。主题通过一份 client 注册，不写死档位，profile 里把 config.enabled 改成 false 就能暂时停掉样式注入、保留插件。内置图片来自卡拉彼丘 Wiki，版权归官方。
+repo: https://github.com/nizihan29/dsh-theme-strinova
+package: dsh-theme-strinova
+rowId: strinova
+category: skin
+tags:
+  - strinova
+  - amber
+  - character-card
+  - particles
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:nizihan29/dsh-theme-strinova#346e136f21a0ae1f4f977e49b3f8c360a6370016
+  version: 0.1.0
+  commit: 346e136f21a0ae1f4f977e49b3f8c360a6370016
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/nizihan29/dsh-theme-strinova/346e136f21a0ae1f4f977e49b3f8c360a6370016/assets/screenshot.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1416
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/nizihan29/dsh-theme-strinova/346e136f21a0ae1f4f977e49b3f8c360a6370016/assets/screenshot.png

@@ -1,0 +1,52 @@
+id: doveli.gu.dsh.dyou.wine
+name:
+  zh: D友の酒
+  en: Dyou Wine
+author: DoveLi-Gu
+description: 整页按固定 120 BPM 一起 Q 弹，同时一只蓝白鲸鱼娘毛绒玩偶满屏巡航、碰墙反弹。两个效果独立开关，微醺 / 上头 / 整活三档只改幅度；内置原梗 BGM 默认关闭，可暂停、按 Escape 醒酒，切到后台自动暂停。
+repo: https://github.com/DoveLi-Gu/dsh-dyou-wine
+package: dsh-dyou-wine
+rowId: dsh-dyou-wine
+category: pet
+tags:
+  - pet
+  - jelly
+  - music
+  - whale
+  - animation
+modes:
+  - light
+  - dark
+install:
+  target: github:DoveLi-Gu/dsh-dyou-wine#8f148a62a666d855060d3571b993a3d8b6c7e5a4
+  version: 0.1.0-alpha.14
+  commit: 8f148a62a666d855060d3571b993a3d8b6c7e5a4
+compatibility:
+  dsh: 0.2.0-rc.2 || 0.1.0-alpha.14.tgz
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/DoveLi-Gu/dsh-dyou-wine/8f148a62a666d855060d3571b993a3d8b6c7e5a4/docs/assets/demo.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1323
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/DoveLi-Gu/dsh-dyou-wine/8f148a62a666d855060d3571b993a3d8b6c7e5a4/docs/assets/demo.gif

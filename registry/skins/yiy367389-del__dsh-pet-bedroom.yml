@@ -1,0 +1,55 @@
+id: yiy367389.del.dsh.pet.bedroom
+name:
+  zh: 桌宠卧室
+  en: Pet Bedroom
+author: yiy367389-del
+description: 给桌宠盖一间卧室：独立网页拿一张 1536×1024 房间图当整间屋子，点床、电脑桌、椅子或书架它就走过去做动作，桌上摆着真实日记与读书笔记，时辰、天气、壁纸、家具都能换；手机里的 QQ 会话和刷抖音要接自己的后端。
+repo: https://github.com/yiy367389-del/dsh-pet-bedroom
+package: dsh-pet-bedroom
+rowId: dsh-pet-bedroom
+category: pet
+tags:
+  - bedroom
+  - room
+  - qq
+  - furniture
+  - standalone-page
+modes:
+  - light
+  - dark
+install:
+  target: github:yiy367389-del/dsh-pet-bedroom#5f72ffe739342a2ad0a4bc13b179af21b698214c
+  version: 2.3.5
+  commit: 5f72ffe739342a2ad0a4bc13b179af21b698214c
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yiy367389-del/dsh-pet-bedroom/5f72ffe739342a2ad0a4bc13b179af21b698214c/assets/screenshot-room.jpg
+  - https://raw.githubusercontent.com/yiy367389-del/dsh-pet-bedroom/5f72ffe739342a2ad0a4bc13b179af21b698214c/assets/screenshot-qq.jpg
+  - https://raw.githubusercontent.com/yiy367389-del/dsh-pet-bedroom/5f72ffe739342a2ad0a4bc13b179af21b698214c/assets/room.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1489
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/yiy367389-del/dsh-pet-bedroom/5f72ffe739342a2ad0a4bc13b179af21b698214c/assets/screenshot-room.jpg

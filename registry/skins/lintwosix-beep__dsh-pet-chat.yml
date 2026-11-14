@@ -1,0 +1,55 @@
+id: lintwosix.beep.dsh.pet.chat
+name:
+  zh: 宠物聊天
+  en: Pet Chat
+author: lintwosix-beep
+description: 基于 dsh-pet（MIT）的二创桌宠：动画、素材与桌面窗口全部保留，另加 QQ 风格对话面板——气泡＋头像＋日期分隔，可在对话记录、收藏与分支之间切换；分支聊完点「合并到主对话」会以合并转发卡片落进记录，面板停靠在小女仆右侧并支持八向缩放。寒暄走本地规则表不花 token，真问题才发给模型。
+repo: https://github.com/lintwosix-beep/dsh-pet-chat
+package: dsh-pet-chat
+rowId: dsh-pet-chat
+category: pet
+tags:
+  - desktop-pet
+  - chat-panel
+  - branching
+  - fork
+modes:
+  - light
+  - dark
+install:
+  target: github:lintwosix-beep/dsh-pet-chat#267c63ec0fbcd5d0398901bf6f0737c14160fd4c
+  version: 0.3.9
+  commit: 267c63ec0fbcd5d0398901bf6f0737c14160fd4c
+compatibility:
+  dsh: ^0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/promo/01-hero.png
+  - https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/promo/02-compare.png
+  - https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/screenshot-dock.png
+  - https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/screenshot-branch.png
+  - https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/screenshot-menu.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1386
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/promo/01-hero.png

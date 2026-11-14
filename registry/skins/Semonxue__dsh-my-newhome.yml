@@ -1,0 +1,53 @@
+id: semonxue.dsh.my.newhome
+name:
+  zh: 自定义主页
+  en: Custom Homepage
+author: Semonxue
+description: 把首屏整体换掉：配色、背景图、自定义 Logo，输入框上方摆 3×2 最近工作区、3×2 常用入口和最多 4 个自定义组件，默认按最近使用排序；卡片只在首页出现，打开历史对话自动隐藏。
+repo: https://github.com/Semonxue/dsh-my-newhome
+package: dsh-my-newhome
+rowId: dsh-my-newhome
+category: skin
+tags:
+  - homepage
+  - workspaces
+  - quick-links
+  - api-usage
+  - logo
+modes:
+  - light
+  - dark
+install:
+  target: github:Semonxue/dsh-my-newhome#756a38c2bb6209a095a208f5c3e6df9b43f6f0c9
+  version: 0.5.0
+  commit: 756a38c2bb6209a095a208f5c3e6df9b43f6f0c9
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Semonxue/dsh-my-newhome/756a38c2bb6209a095a208f5c3e6df9b43f6f0c9/docs/home.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1434
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/Semonxue/dsh-my-newhome/756a38c2bb6209a095a208f5c3e6df9b43f6f0c9/docs/home.png

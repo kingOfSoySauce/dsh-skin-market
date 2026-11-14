@@ -1,0 +1,54 @@
+id: luwendi.qq.dsh.eva.skin
+name:
+  zh: EVA 赛璐璐
+  en: EVA Cel-Shade
+author: luwendi-qq
+description: 把界面换成 EVA 赛璐璐质感：初号机紫、零号机蓝、二号机红配荧光绿与警示黄，墨黑描边、方角、无模糊硬投影，全屏 CRT 扫描线可关；左栏会话行加 3px 状态轨（绿=运行中呼吸、黄=已完成、红=等你回复），右侧跳转条用荧光绿刻度，还能内嵌一张压暗底图。
+repo: https://github.com/luwendi-qq/dsh-eva-skin
+package: "@winstonlu/dsh-eva-skin"
+rowId: winstonlu-dsh-eva-skin
+category: skin
+tags:
+  - eva
+  - cel-shade
+  - scanlines
+  - hard-shadow
+  - accent
+modes:
+  - light
+  - dark
+install:
+  target: github:luwendi-qq/dsh-eva-skin#091b4bd84493cebb9d15aede263258a29ccc5c18
+  version: 1.0.72
+  commit: 091b4bd84493cebb9d15aede263258a29ccc5c18
+compatibility:
+  dsh: ">=0.2.0-rc.2"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/luwendi-qq/dsh-eva-skin/091b4bd84493cebb9d15aede263258a29ccc5c18/docs/screenshots/hero.webp
+  - https://raw.githubusercontent.com/luwendi-qq/dsh-eva-skin/091b4bd84493cebb9d15aede263258a29ccc5c18/docs/screenshots/details.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1394
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/luwendi-qq/dsh-eva-skin/091b4bd84493cebb9d15aede263258a29ccc5c18/docs/screenshots/hero.webp

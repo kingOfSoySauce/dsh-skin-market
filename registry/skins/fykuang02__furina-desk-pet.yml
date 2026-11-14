@@ -1,0 +1,52 @@
+id: fykuang02.furina.desk.pet
+name:
+  zh: 芙宁娜桌宠
+  en: Furina Desk Pet
+author: fykuang02
+description: 卡通大头芙宁娜浮在页面上：点击会弹跳、迸出爱心粒子、飘「+1」和随机台词，约 8% 概率触发金色暴击；下方好感度条从初识一路升到「水神的宠儿」，可拖拽并按视口百分比记住位置，右键菜单可重置、收起或隐藏。
+repo: https://github.com/fykuang02/furina-desk-pet
+package: "@dsh-external/dsh-client-ui-furina-desk-pet"
+rowId: furina-desk-pet
+category: pet
+tags:
+  - pet
+  - anime
+  - character
+modes:
+  - light
+  - dark
+install:
+  target: github:fykuang02/furina-desk-pet#60617164b936e1a54c8af5214842df89a2d92402
+  version: 1.0.0
+  commit: 60617164b936e1a54c8af5214842df89a2d92402
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/fykuang02/furina-desk-pet/60617164b936e1a54c8af5214842df89a2d92402/assets/source/furina-happy.webp
+  - https://raw.githubusercontent.com/fykuang02/furina-desk-pet/60617164b936e1a54c8af5214842df89a2d92402/assets/source/furina-shocked.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1343
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/fykuang02/furina-desk-pet/60617164b936e1a54c8af5214842df89a2d92402/assets/source/furina-happy.webp

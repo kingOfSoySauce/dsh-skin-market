@@ -1,0 +1,55 @@
+id: artificialimbecile.dsh.whale.chat
+name:
+  zh: 鲸聊
+  en: Whale Chat
+author: Artificialimbecile
+description: 透明鲸鱼桌宠住在界面右下角：待机呼吸、随机小动作、点击回应，能拖到四个角并记住位置。双击打开对话面板，可设名字、称呼、自称和人设正文，对话记忆重启不丢；它还会按间隔自己出门上网，从来源清单抓取内容后用设定的口吻讲给你听，并保留来源链接。
+repo: https://github.com/Artificialimbecile/dsh-whale-chat
+package: dsh-whale-chat
+rowId: dsh-whale-chat
+category: pet
+tags:
+  - whale
+  - chat
+  - persona
+  - roam
+modes:
+  - light
+  - dark
+install:
+  target: github:Artificialimbecile/dsh-whale-chat#43f63bcdf8570877f68671e406070d54b28c403b
+  version: 0.1.4
+  commit: 43f63bcdf8570877f68671e406070d54b28c403b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/chat-panel.png
+  - https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/chat-panel-roam.png
+  - https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/settings-persona.png
+  - https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/pet.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1296
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/chat-panel.png

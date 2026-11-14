@@ -1,0 +1,51 @@
+id: zhule33.cmyk.muse.plush.skin
+name:
+  zh: Muse 毛绒
+  en: Muse Plush
+author: zhule33-cmyk
+description: 整窗毛绒：粉蓝长绒铺满窗口、侧栏直接露出绒毛，对话区盖一层半透明浅蓝；气泡和输入框是灰米色肚皮绒、边缘经 SVG 位移滤镜变毛茸茸，品牌色与发送键是深棕纽扣，输入框右上角趴一只会眨眼的小团子，夜间换成深蓝灰绒。
+repo: https://github.com/zhule33-cmyk/muse-plush-skin
+package: dsh-client-ui-skin-muse-plush
+rowId: ui-skin-muse-plush
+category: skin
+tags:
+  - appearance
+  - pastel
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:zhule33-cmyk/muse-plush-skin#b17f9f992bb723d4612d244c601971e18514d987
+  version: 1.0.0
+  commit: b17f9f992bb723d4612d244c601971e18514d987
+compatibility:
+  dsh: 0.2.2-rc
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zhule33-cmyk/muse-plush-skin/b17f9f992bb723d4612d244c601971e18514d987/preview/light.png
+  - https://raw.githubusercontent.com/zhule33-cmyk/muse-plush-skin/b17f9f992bb723d4612d244c601971e18514d987/preview/dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1508
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/zhule33-cmyk/muse-plush-skin/b17f9f992bb723d4612d244c601971e18514d987/preview/light.png

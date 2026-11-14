@@ -1,0 +1,56 @@
+id: traveritas.dsh.yet.another.slider.thingy
+name:
+  zh: 思考强度滑条
+  en: Reasoning Effort Slider
+author: Traveritas
+description: 把 composer 的模型位换成「模型行 + 思考强度滑条」：档位、分组与提交路径仍走原生模型目录。滑条有三种外观（紧凑 / 块面 / 胶囊）、拇指可切圆角方或圆、标准或大两档，配色可增删预设，另有流光场、密度粒子、心跳、字符点阵、渐变五套跟档位的特效，拖动可切逐档或平滑。
+repo: https://github.com/Traveritas/dsh-yet-another-slider-thingy
+package: dsh-yet-another-slider-thingy
+rowId: yet-another-slider
+category: skin
+tags:
+  - composer
+  - slider
+  - reasoning
+  - effects
+  - palettes
+modes:
+  - light
+  - dark
+install:
+  target: github:Traveritas/dsh-yet-another-slider-thingy#f5ef8488c909d05794e582cfa9f32780f42b4717
+  version: 0.7.0
+  commit: f5ef8488c909d05794e582cfa9f32780f42b4717
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Traveritas/dsh-yet-another-slider-thingy/f5ef8488c909d05794e582cfa9f32780f42b4717/docs/skins.gif
+  - https://raw.githubusercontent.com/Traveritas/dsh-yet-another-slider-thingy/f5ef8488c909d05794e582cfa9f32780f42b4717/docs/thumbs.gif
+  - https://raw.githubusercontent.com/Traveritas/dsh-yet-another-slider-thingy/f5ef8488c909d05794e582cfa9f32780f42b4717/docs/drag.gif
+  - https://raw.githubusercontent.com/Traveritas/dsh-yet-another-slider-thingy/f5ef8488c909d05794e582cfa9f32780f42b4717/docs/effects.gif
+  - https://raw.githubusercontent.com/Traveritas/dsh-yet-another-slider-thingy/f5ef8488c909d05794e582cfa9f32780f42b4717/docs/palettes.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1459
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/Traveritas/dsh-yet-another-slider-thingy/f5ef8488c909d05794e582cfa9f32780f42b4717/docs/skins.gif

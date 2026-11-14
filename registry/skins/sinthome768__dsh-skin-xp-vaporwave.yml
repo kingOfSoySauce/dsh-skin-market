@@ -1,0 +1,52 @@
+id: sinthome768.dsh.skin.xp.vaporwave
+name:
+  zh: XP 蒸汽波
+  en: XP Vaporwave
+author: sinthome768
+description: 把 Windows XP 的窗口界面层叠在霓虹蒸汽波城市上，背后是一层指针可穿透的「飞掠城市」画布。皮肤注册进主题选择器，和内置明暗皮肤并列，选中才生效，切回默认主题时会干净卸载。
+repo: https://github.com/sinthome768/dsh-skin-xp-vaporwave
+package: dsh-skin-xp-vaporwave
+rowId: ui-skin-xp-vaporwave
+category: skin
+tags:
+  - theme
+  - retro
+  - vaporwave
+  - windows
+modes:
+  - dark
+install:
+  target: github:sinthome768/dsh-skin-xp-vaporwave#303f4489c9b33372ea77b51d318475f746571896
+  version: 0.1.2
+  commit: 303f4489c9b33372ea77b51d318475f746571896
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/sinthome768/dsh-skin-xp-vaporwave/303f4489c9b33372ea77b51d318475f746571896/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1440
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/sinthome768/dsh-skin-xp-vaporwave/303f4489c9b33372ea77b51d318475f746571896/preview.png

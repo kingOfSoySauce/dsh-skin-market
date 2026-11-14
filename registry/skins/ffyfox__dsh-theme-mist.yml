@@ -1,0 +1,61 @@
+id: ffyfox.dsh.theme.mist
+name:
+  zh: Mist 主题
+  en: Mist Theme
+author: ffyfox
+description: 把移动端 DSH Go 参考设计的色彩与材质搬到桌面与 Web：低饱和中性色、0.5px 发丝描边、底部输入区真实毛玻璃、右上角单点氛围光晕，侧栏有玻璃与平铺两种材质。内置雾蓝、黛青、暮紫、松石、琥珀、石墨六套强调色，与浅色/深色/跟随系统叠出 12 种组合且都过 WCAG AA，设置→通用设置里直接切换。
+repo: https://github.com/ffyfox/dsh-theme-mist
+package: dsh-theme-mist
+rowId: dsh-theme-mist
+category: skin
+tags:
+  - mist
+  - glass
+  - accents
+  - minimal
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:ffyfox/dsh-theme-mist#078c7dfc4e2523935f11be0754080076b5c02a0b
+  version: 0.1.0
+  commit: 078c7dfc4e2523935f11be0754080076b5c02a0b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/hero-light.webp
+  - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/hero-dark.webp
+  - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/accents/mist.webp
+  - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/accents/dusk.webp
+  - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/sidebar-sheet.webp
+  - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/sidebar-flat.webp
+  - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/accents/daiqing.webp
+  - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/accents/turquoise.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1336
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/hero-light.webp

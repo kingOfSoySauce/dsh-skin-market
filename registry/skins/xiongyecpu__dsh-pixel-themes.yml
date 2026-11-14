@@ -1,0 +1,56 @@
+id: xiongyecpu.dsh.pixel.themes
+name:
+  zh: 水果像素主题
+  en: Fruit Pixel Themes
+author: xiongyecpu
+description: 21 套水果主题：柠檬、柚子、青柠、西瓜、西瓜冰、草莓、蓝莓、葡萄、苹果、蜜桃、樱桃、橙子、芒果、猕猴桃、菠萝、火龙果、石榴、牛油果、椰子、香蕉、荔枝，每套 15 色推导出约 55 个语义色变量，明暗两套值自动跟随。换肤入口在「设置 → 主题风格」整页画廊，也可在输入框上方横条直接弹浮层；另带聊天消息编号 T01/回复 T01（可关）与过程行左侧主题色竖线。
+repo: https://github.com/xiongyecpu/dsh-pixel-themes
+package: dsh-pixel-themes
+rowId: pixel-themes
+category: skin
+tags:
+  - fruit
+  - pixel-art
+  - palettes
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:xiongyecpu/dsh-pixel-themes#843d8a11c1c8484875907ff170491bb6f70c6061
+  version: 1.2.1
+  commit: 843d8a11c1c8484875907ff170491bb6f70c6061
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/gallery-settings.png
+  - https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/preview-watermelon.png
+  - https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/preview-dark.png
+  - https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/picker-fruits.png
+  - https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/preview-strawberry.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1484
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/gallery-settings.png

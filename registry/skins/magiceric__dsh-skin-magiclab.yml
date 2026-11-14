@@ -1,0 +1,53 @@
+id: magiceric.dsh.skin.magiclab
+name:
+  zh: 外观实验室
+  en: Skin Lab
+author: magiceric
+description: 五套可切换皮肤：长征（近黑暖金）、声呐（深青荧光绿）、翻牌（灰底琥珀数字）、胶片（暖棕颗粒加 2.39:1 遮幅）、水墨（宣纸墨染），每套连侧栏、对话框、输入框和代码块一起换。每套还配专属启动动画与音效，可在「外观实验室」里切换、重播和开关声音。
+repo: https://github.com/magiceric/dsh-skin-magiclab
+package: dsh-skin-magiclab
+rowId: dsh-skin-magiclab
+category: skin
+tags:
+  - theme
+  - multi-skin
+  - boot
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:magiceric/dsh-skin-magiclab#6006c02819cc6eed44f8c4a573df9ecb2dc79ab7
+  version: 1.0.0
+  commit: 6006c02819cc6eed44f8c4a573df9ecb2dc79ab7
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/assets/screenshot-boot.jpg
+  - https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/assets/screenshot-app.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1396
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/assets/screenshot-boot.jpg

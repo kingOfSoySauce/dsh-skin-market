@@ -1,0 +1,54 @@
+id: jake1266.dsh.kimi.ui
+name:
+  zh: Kimi 风格皮肤
+  en: Kimi-Style Skin
+author: JAKE1266
+description: "Kimi 风格换肤：以 Kimi 官方色板为锚点，品牌蓝 #1783ff、暖灰中性面与暖白/中性暗面，深色优先；气泡 20px、输入卡 28px、面板 24px 大圆角，胶囊、菜单与面板用 20px 模糊的玻璃质感，发送键与品牌字为蓝到深紫渐变，覆盖全部语义色令牌。侧栏品牌与新会话首页换成自绘月牙 SVG 和四个快捷胶囊；预览图为示意图，非实机截图。"
+repo: https://github.com/JAKE1266/dsh-kimi-ui
+package: dsh-kimi-ui
+rowId: dsh-kimi-ui
+category: skin
+tags:
+  - kimi-style
+  - blue-violet
+  - glass
+  - large-radius
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:JAKE1266/dsh-kimi-ui#79d497f5cfcdfacb7f944406d7a6faec1fe77817
+  version: 2.0.0
+  commit: 79d497f5cfcdfacb7f944406d7a6faec1fe77817
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JAKE1266/dsh-kimi-ui/79d497f5cfcdfacb7f944406d7a6faec1fe77817/assets/preview-light.png
+  - https://raw.githubusercontent.com/JAKE1266/dsh-kimi-ui/79d497f5cfcdfacb7f944406d7a6faec1fe77817/assets/preview-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1362
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/JAKE1266/dsh-kimi-ui/79d497f5cfcdfacb7f944406d7a6faec1fe77817/assets/preview-light.png

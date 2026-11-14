@@ -1,0 +1,56 @@
+id: kabarryo.dsh.fatfish
+name:
+  zh: 输入框大肥鱼
+  en: Composer Bigfish
+author: kabarryo
+description: 贴在输入框上沿外侧、约 96px 见方的大肥鱼：待命、输入、生成、等批准、等回答、出错、完成、闲置、上下文吃撑九种状态各配一组表情，进入状态随机挑一张，同一状态停留超过 45 秒自动换一张；闲置有脚本，从摸鱼、不想说话一路演到困了、晚安、充电中。29 张挑好的表情合成动画 WebP 内嵌在 client.js。
+repo: https://github.com/kabarryo/dsh-fatfish
+package: dsh-fatfish
+rowId: fatfish-mascot
+category: pet
+tags:
+  - bigfish
+  - mascot
+  - emotes
+  - status
+  - composer
+modes:
+  - light
+  - dark
+install:
+  target: github:kabarryo/dsh-fatfish#c12bccd258e2fa5e6693676487d5def62135f544
+  version: 0.1.0
+  commit: c12bccd258e2fa5e6693676487d5def62135f544
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/kabarryo/dsh-fatfish/c12bccd258e2fa5e6693676487d5def62135f544/assets/screenshots/composer-light.webp
+  - https://raw.githubusercontent.com/kabarryo/dsh-fatfish/c12bccd258e2fa5e6693676487d5def62135f544/assets/screenshots/states.webp
+  - https://raw.githubusercontent.com/kabarryo/dsh-fatfish/c12bccd258e2fa5e6693676487d5def62135f544/assets/screenshots/composer-dark.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1374
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/kabarryo/dsh-fatfish/c12bccd258e2fa5e6693676487d5def62135f544/assets/screenshots/composer-light.webp

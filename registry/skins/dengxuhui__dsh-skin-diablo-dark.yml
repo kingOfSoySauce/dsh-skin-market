@@ -1,0 +1,54 @@
+id: dengxuhui.dsh.skin.diablo.dark
+name:
+  zh: 暗黑 · 熔火
+  en: Diablo Dark
+author: dengxuhui
+description: 暗黑哥特配色：沥青黑底、血晶红与熔火金点缀、骨白正文，半透明磨砂面板透出程序化余烬与裂纹符文背景，另有日晒骨白的羊皮纸亮色版，跟随系统明暗切换。标题用蚀刻碑文风、正文哥特衬线、代码等宽，背景位图为内联的 AI 生成素材。
+repo: https://github.com/dengxuhui/dsh-skin-diablo-dark
+package: "@dengxuhui/dsh-client-ui-skin-diablo-dark"
+rowId: ui-skin-diablo-dark
+category: skin
+tags:
+  - gothic
+  - dark
+  - frosted
+  - tokens
+modes:
+  - light
+  - dark
+install:
+  target: github:dengxuhui/dsh-skin-diablo-dark#ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95
+  version: 0.2.0
+  commit: ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/dengxuhui/dsh-skin-diablo-dark/ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95/preview/dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1318
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/dengxuhui/dsh-skin-diablo-dark/ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95/preview/dark.png

@@ -1,0 +1,54 @@
+id: yimeng.life.dsh.happy
+name:
+  zh: 十景动效背景
+  en: Ten Animated Backdrops
+author: yimeng-life
+description: 给对话区加一层整屏动效背景，共十种场景：星空跃迁、代码雨、电路脉冲、华山论剑、小猫散步、小女生、飞机大战、赛车、飘雪、肥皂泡；每个回合随机换一个、回合内不变，Alt+T 可固定下一张；正文列用按列宽计算的横向纱保证可读，浅深主题自动换调色板与混合模式。
+repo: https://github.com/yimeng-life/dsh-happy
+package: dsh-happy
+rowId: happy
+category: skin
+tags:
+  - animation
+  - backdrops
+  - canvas
+  - scenes
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:yimeng-life/dsh-happy#8f9cf4d617eb2df7ab48a2fa49a08e1d2fbf3ebb
+  version: 0.5.2
+  commit: 8f9cf4d617eb2df7ab48a2fa49a08e1d2fbf3ebb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yimeng-life/dsh-happy/8f9cf4d617eb2df7ab48a2fa49a08e1d2fbf3ebb/screenshot.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1488
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/yimeng-life/dsh-happy/8f9cf4d617eb2df7ab48a2fa49a08e1d2fbf3ebb/screenshot.png

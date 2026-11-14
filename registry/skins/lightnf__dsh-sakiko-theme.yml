@@ -1,0 +1,55 @@
+id: lightnf.dsh.sakiko.theme
+name:
+  zh: 丰川祥子主题
+  en: Togawa Sakiko Theme
+author: lightnf
+description: 月白房间配色的丰川祥子主题：73 个颜色变量重映射成银蓝，侧栏放立绘、诗句与手写签名，四角有光晕和飘落音符，空白会话的品牌标记换成蓝色蝴蝶结；装饰层落在应用最底层，不遮消息和输入框。
+repo: https://github.com/lightnf/dsh-sakiko-theme
+package: dsh-theme-sakiko
+rowId: theme-sakiko
+category: skin
+tags:
+  - bang-dream
+  - theme
+  - sakiko
+  - portrait
+  - notes
+modes:
+  - light
+  - dark
+install:
+  target: github:lightnf/dsh-sakiko-theme#3c7469e372cb6acdf657154faebc8750747a6817
+  version: 0.3.0
+  commit: 3c7469e372cb6acdf657154faebc8750747a6817
+compatibility:
+  dsh: 0.1.5-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lightnf/dsh-sakiko-theme/3c7469e372cb6acdf657154faebc8750747a6817/docs/sidebar.webp
+  - https://raw.githubusercontent.com/lightnf/dsh-sakiko-theme/3c7469e372cb6acdf657154faebc8750747a6817/docs/corners.webp
+  - https://raw.githubusercontent.com/lightnf/dsh-sakiko-theme/3c7469e372cb6acdf657154faebc8750747a6817/docs/settings.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1384
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/lightnf/dsh-sakiko-theme/3c7469e372cb6acdf657154faebc8750747a6817/docs/sidebar.webp

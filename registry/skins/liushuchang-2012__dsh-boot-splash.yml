@@ -1,0 +1,51 @@
+id: liushuchang.2012.dsh.boot.splash
+name:
+  zh: 白鲸墨潮
+  en: Whale Ink Tide
+author: liushuchang-2012
+description: 启动片：白蓝鲸鱼居中，加载进度化成由下往上漫过身体的墨潮（潮线就是进度条），完全变黑后左移，从身体里拉出 | deepseek HARNESS 字标、回弹落定，最后淡出交还界面；整段 7.6 秒一条确定性时间线，点击任意处跳过。
+repo: https://github.com/liushuchang-2012/dsh-boot-splash
+package: dsh-boot-splash
+rowId: dsh-boot-splash
+category: splash
+tags:
+  - boot
+  - animation
+  - minimal
+modes:
+  - light
+  - dark
+install:
+  target: github:liushuchang-2012/dsh-boot-splash#3078632eef268bd466686f803ffd65d5f4ede9c3
+  version: 0.2.0
+  commit: 3078632eef268bd466686f803ffd65d5f4ede9c3
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/liushuchang-2012/dsh-boot-splash/3078632eef268bd466686f803ffd65d5f4ede9c3/preview/boot-splash.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1387
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/liushuchang-2012/dsh-boot-splash/3078632eef268bd466686f803ffd65d5f4ede9c3/preview/boot-splash.gif

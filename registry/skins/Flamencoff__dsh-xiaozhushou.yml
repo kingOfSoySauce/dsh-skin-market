@@ -1,0 +1,55 @@
+id: flamencoff.dsh.xiaozhushou
+name:
+  zh: 小助手工作台
+  en: Xiaozhushou Workbench
+author: Flamencoff
+description: 侧栏一块工作任务看板，屏幕边一只鲸鱼娘浮窗：收起时只剩形象，点开直接显示最急的事和待办，可拖着换位置、右键隐藏或唤回。秘书、CEO、史官三个角色分工处理待办与记录，所有台账、审计与长期记忆都以本地 JSON／Markdown 保存。
+repo: https://github.com/Flamencoff/dsh-xiaozhushou
+package: dsh-xiaozhushou
+rowId: steward
+category: pet
+tags:
+  - task-board
+  - assistant
+  - whale
+  - companion
+  - local-data
+modes:
+  - light
+  - dark
+install:
+  target: github:Flamencoff/dsh-xiaozhushou#51750b4e2e2843c9e6479c056f7d47702cc9dc23
+  version: 0.47.9
+  commit: 51750b4e2e2843c9e6479c056f7d47702cc9dc23
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Flamencoff/dsh-xiaozhushou/51750b4e2e2843c9e6479c056f7d47702cc9dc23/docs/screenshots/board-full.png
+  - https://raw.githubusercontent.com/Flamencoff/dsh-xiaozhushou/51750b4e2e2843c9e6479c056f7d47702cc9dc23/docs/screenshots/whale-expressions.png
+  - https://raw.githubusercontent.com/Flamencoff/dsh-xiaozhushou/51750b4e2e2843c9e6479c056f7d47702cc9dc23/docs/screenshots/mascot.png
+  - https://raw.githubusercontent.com/Flamencoff/dsh-xiaozhushou/51750b4e2e2843c9e6479c056f7d47702cc9dc23/docs/screenshots/overlay.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1337
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/Flamencoff/dsh-xiaozhushou/51750b4e2e2843c9e6479c056f7d47702cc9dc23/docs/screenshots/board-full.png

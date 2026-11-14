@@ -1,0 +1,53 @@
+id: loyalchiiina.dsh.sidebar.media.player
+name:
+  zh: 侧边栏多媒体播放器
+  en: Sidebar Media Player
+author: loyalchiiina
+description: 作为 dsh-better-sidebar 的配套插件，把侧边栏里的音视频预览换成一个统一播放器：覆盖 mp4/webm/mov 等视频与 mp3/flac/ogg 等音频，进度条通过 HTTP Range 流式拖动，带实时频谱、音准（Hz 与音名）、同名 .srt/.vtt/.ass 字幕和 .lrc 歌词滚动高亮。
+repo: https://github.com/loyalchiiina/dsh-sidebar-media-player
+package: dsh-sidebar-media-player
+rowId: dsh-sidebar-media-player
+category: player
+tags:
+  - audio
+  - video
+  - subtitles
+  - lyrics
+  - spectrum
+modes:
+  - light
+  - dark
+install:
+  target: github:loyalchiiina/dsh-sidebar-media-player#71f8bb43182b78bc73c606eb190ee48ad17c7185
+  version: 0.2.0
+  commit: 71f8bb43182b78bc73c606eb190ee48ad17c7185
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/loyalchiiina/dsh-sidebar-media-player/71f8bb43182b78bc73c606eb190ee48ad17c7185/docs/screenshots/01-video-subtitle.png
+  - https://raw.githubusercontent.com/loyalchiiina/dsh-sidebar-media-player/71f8bb43182b78bc73c606eb190ee48ad17c7185/docs/screenshots/02-audio-lyric.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1390
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/loyalchiiina/dsh-sidebar-media-player/71f8bb43182b78bc73c606eb190ee48ad17c7185/docs/screenshots/01-video-subtitle.png

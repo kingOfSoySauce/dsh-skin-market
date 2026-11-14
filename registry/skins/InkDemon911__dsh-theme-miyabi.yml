@@ -1,0 +1,55 @@
+id: inkdemon911.dsh.theme.miyabi
+name:
+  zh: 霜月雅刃
+  en: Frost Moon Miyabi
+author: InkDemon911
+description: 《绝区零》星见雅主题「霜月雅刃」：116 个设计令牌各给浅深两档，夜档霜蓝冷调、昼档白霜，叠加新艾利都 CRT 扫描线与斜切网格；界面不透明度 40–100% 与立绘浓度 4–100% 两个独立滑杆，右下角氛围条可调强度、切换霜点档。
+repo: https://github.com/InkDemon911/dsh-theme-miyabi
+package: dsh-theme-miyabi
+rowId: dsh-theme-miyabi
+category: skin
+tags:
+  - zenless-zone-zero
+  - anime
+  - tokens
+  - crt
+  - opacity
+modes:
+  - light
+  - dark
+install:
+  target: github:InkDemon911/dsh-theme-miyabi#f189b810ee62db6bca66d9acaa6cdadeabac3710
+  version: 4.1.3
+  commit: f189b810ee62db6bca66d9acaa6cdadeabac3710
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/InkDemon911/dsh-theme-miyabi/f189b810ee62db6bca66d9acaa6cdadeabac3710/docs/cover.jpg
+  - https://raw.githubusercontent.com/InkDemon911/dsh-theme-miyabi/f189b810ee62db6bca66d9acaa6cdadeabac3710/docs/figures/fig-palette.png
+  - https://raw.githubusercontent.com/InkDemon911/dsh-theme-miyabi/f189b810ee62db6bca66d9acaa6cdadeabac3710/assets/miyabi-wallpaper.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1360
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/InkDemon911/dsh-theme-miyabi/f189b810ee62db6bca66d9acaa6cdadeabac3710/docs/cover.jpg

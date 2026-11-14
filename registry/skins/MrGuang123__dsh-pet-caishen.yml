@@ -1,0 +1,52 @@
+id: mrguang123.dsh.pet.caishen
+name:
+  zh: 阿财
+  en: Acai
+author: MrGuang123
+description: 红衣描金、脚踩祥云的小财神住在独立透明悬浮窗里：有任务时拨算盘，需要你拿主意时举牌，一轮结束抱元宝作揖，还会摸头与打盹。点任务气泡能回到对应会话，可拖动、记忆多屏位置、调大小，并支持安静模式与减少动画；透明区域的点击会穿透。
+repo: https://github.com/MrGuang123/dsh-pet-caishen
+package: dsh-pet-caishen
+rowId: pet-caishen
+category: pet
+tags:
+  - pet
+  - desktop
+  - macos
+  - chinese-style
+modes:
+  - light
+  - dark
+install:
+  target: github:MrGuang123/dsh-pet-caishen#21ce3603fb3bf086814fa0d9001e25481ce9b90f
+  version: 0.2.0-rc.3
+  commit: 21ce3603fb3bf086814fa0d9001e25481ce9b90f
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/MrGuang123/dsh-pet-caishen/21ce3603fb3bf086814fa0d9001e25481ce9b90f/docs/screenshots/acai-preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1404
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/MrGuang123/dsh-pet-caishen/21ce3603fb3bf086814fa0d9001e25481ce9b90f/docs/screenshots/acai-preview.png

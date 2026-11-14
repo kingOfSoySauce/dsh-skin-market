@@ -1,0 +1,52 @@
+id: wyp809.dsh.peak.tint
+name:
+  zh: 峰谷染色
+  en: Peak Tint
+author: wyp809
+description: 按 API 计费时段给界面染色：高峰时段转暖色、空闲时段转冷绿，时段表可按星期与起止时间编，支持跨夜、按北京时间解释，配色也能改。六套内置配色、四支取色器、渐变角度与强度、15–100% 不透明度；覆盖范围分贴边、全屏、关闭三档，点输入框左侧胶囊循环切换，检测到壁纸插件会自动降级。
+repo: https://github.com/wyp809/dsh-peak-tint
+package: dsh-peak-tint
+rowId: peak-tint
+category: skin
+tags:
+  - pricing
+  - tint
+  - gradient
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:wyp809/dsh-peak-tint#70dd00027b8294e09186eda37d3192a5e99e4917
+  version: 0.1.0
+  commit: 70dd00027b8294e09186eda37d3192a5e99e4917
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/wyp809/dsh-peak-tint/70dd00027b8294e09186eda37d3192a5e99e4917/docs/peak-dark.png
+  - https://raw.githubusercontent.com/wyp809/dsh-peak-tint/70dd00027b8294e09186eda37d3192a5e99e4917/docs/offpeak-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1478
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/wyp809/dsh-peak-tint/70dd00027b8294e09186eda37d3192a5e99e4917/docs/peak-dark.png

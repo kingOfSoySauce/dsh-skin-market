@@ -1,0 +1,54 @@
+id: yangsong608.dsh.startup.moss
+name:
+  zh: 550W 核心终端
+  en: 550W Core Terminal
+author: yangsong608
+description: 冷启动时播约 12.4 秒的核心终端序列：终端启动、异常回滚到 SLOT_A、本机体检、550W 铭牌翻转 180° 露出 MOSS 再揭幕，点按或按键可跳过。套装还带深红与青绿两套同款主题、全屏访问门口令和开机体检页，体检显示版本、插件清单、定时任务、最近会话与磁盘内存数据。
+repo: https://github.com/yangsong608/dsh-startup-moss
+package: dsh-startup-moss
+rowId: dsh-startup-moss
+category: splash
+tags:
+  - splash
+  - sci-fi
+  - terminal
+  - theme
+modes:
+  - light
+  - dark
+install:
+  target: github:yangsong608/dsh-startup-moss#0dc2d0722efee8f8294745b93bcf59daf83975b2
+  version: 0.5.0
+  commit: 0dc2d0722efee8f8294745b93bcf59daf83975b2
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yangsong608/dsh-startup-moss/0dc2d0722efee8f8294745b93bcf59daf83975b2/docs/screenshots/boot.png
+  - https://raw.githubusercontent.com/yangsong608/dsh-startup-moss/0dc2d0722efee8f8294745b93bcf59daf83975b2/docs/screenshots/emblem-moss.png
+  - https://raw.githubusercontent.com/yangsong608/dsh-startup-moss/0dc2d0722efee8f8294745b93bcf59daf83975b2/docs/screenshots/gate.png
+  - https://raw.githubusercontent.com/yangsong608/dsh-startup-moss/0dc2d0722efee8f8294745b93bcf59daf83975b2/docs/screenshots/diagnostics.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1487
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/yangsong608/dsh-startup-moss/0dc2d0722efee8f8294745b93bcf59daf83975b2/docs/screenshots/boot.png

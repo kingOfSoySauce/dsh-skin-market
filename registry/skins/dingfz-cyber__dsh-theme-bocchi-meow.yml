@@ -1,0 +1,56 @@
+id: dingfz.cyber.dsh.theme.bocchi.meow
+name:
+  zh: 波奇酱喵喵喵
+  en: Bocchi Meow
+author: dingfz-cyber
+description: 奶油白底配樱花粉按钮与气泡，右侧放波奇立绘，侧栏挂拍立得和唱片、猫爪、音符装饰，跟随浅色、深色或系统外观切换；聊天区变窄时自动收起右侧装饰，角色与装饰不接收鼠标操作，图片全部内嵌在构建产物里，不连外部图床。当前为 1.0.0 试用版。
+repo: https://github.com/dingfz-cyber/dsh-theme-bocchi-meow
+package: dsh-theme-bocchi-meow
+rowId: ui-theme-bocchi-meow
+category: skin
+tags:
+  - bocchi
+  - sakura
+  - anime
+  - mascot
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:dingfz-cyber/dsh-theme-bocchi-meow#bce1d22f76b5dec09320ea68320e02a56ac68169
+  version: 1.0.0
+  commit: bce1d22f76b5dec09320ea68320e02a56ac68169
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/dingfz-cyber/dsh-theme-bocchi-meow/bce1d22f76b5dec09320ea68320e02a56ac68169/preview/design-preview.png
+  - https://raw.githubusercontent.com/dingfz-cyber/dsh-theme-bocchi-meow/bce1d22f76b5dec09320ea68320e02a56ac68169/assets/character.png
+  - https://raw.githubusercontent.com/dingfz-cyber/dsh-theme-bocchi-meow/bce1d22f76b5dec09320ea68320e02a56ac68169/assets/sidebar.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1321
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/dingfz-cyber/dsh-theme-bocchi-meow/bce1d22f76b5dec09320ea68320e02a56ac68169/preview/design-preview.png

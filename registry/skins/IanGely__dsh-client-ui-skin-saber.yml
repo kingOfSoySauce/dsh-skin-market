@@ -1,0 +1,58 @@
+id: iangely.dsh.client.ui.skin.saber
+name:
+  zh: Saber 昼夜壁纸
+  en: Saber Day & Night Wallpaper
+author: IanGely
+description: 昼夜双壁纸：亮色用白天插画、暗色用夜景插画，跟随外观设置自动切换。正文落在左侧一层薄纱阅读底板上（约 55% 底色加 6px 磨砂），右侧留白让壁纸人物保持清晰；侧栏、整页内容、编辑器与文件预览按层给不透明度，设置弹窗压到 0.92 并加磨砂。
+repo: https://github.com/IanGely/dsh-client-ui-skin-saber
+package: dsh-client-ui-skin-saber
+rowId: ui-skin-saber
+category: skin
+tags:
+  - saber
+  - wallpaper
+  - day-night
+  - frosted
+modes:
+  - light
+  - dark
+install:
+  target: github:IanGely/dsh-client-ui-skin-saber#d8b950e8565f217c26a7bf7ed31664c03643295e
+  version: 0.3.0
+  commit: d8b950e8565f217c26a7bf7ed31664c03643295e
+compatibility:
+  dsh: 0.2.1-rc.3 || 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/preview.png
+  - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/preview-pages.png
+  - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/preview-rightbar.png
+  - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/preview-editor.png
+  - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/preview-settings.png
+  - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/assets/light.png
+  - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/assets/dark.png
+  - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/preview-editor-plugin.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1357
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/preview.png

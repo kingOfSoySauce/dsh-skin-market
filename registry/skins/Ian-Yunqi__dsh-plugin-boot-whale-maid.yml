@@ -1,0 +1,51 @@
+id: ian.yunqi.dsh.plugin.boot.whale.maid
+name:
+  zh: 鲸鱼女仆开场
+  en: Whale Maid Intro
+author: Ian-Yunqi
+description: 开场是一幕深蓝宫殿，银发女仆与蓝白长裙主立绘登场，蓝发 Q 版助手随后出现，「深度求索」四字缓缓显现、舞台渐隐进入界面；完整播放 9.6 秒、末 1.2 秒渐出，点击或 Esc 立即跳过，减少动态效果时改播 2.6 秒静态开场。
+repo: https://github.com/Ian-Yunqi/dsh-plugin-boot-whale-maid
+package: dsh-boot
+rowId: dsh-boot
+category: splash
+tags:
+  - boot
+  - animation
+  - anime
+modes:
+  - light
+  - dark
+install:
+  target: github:Ian-Yunqi/dsh-plugin-boot-whale-maid#44d215cd3ef034d1a138ed9c3d5bbf9b610864d4
+  version: 0.3.1
+  commit: 44d215cd3ef034d1a138ed9c3d5bbf9b610864d4
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Ian-Yunqi/dsh-plugin-boot-whale-maid/44d215cd3ef034d1a138ed9c3d5bbf9b610864d4/screenshots/deepseek-stage.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1356
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/Ian-Yunqi/dsh-plugin-boot-whale-maid/44d215cd3ef034d1a138ed9c3d5bbf9b610864d4/screenshots/deepseek-stage.png

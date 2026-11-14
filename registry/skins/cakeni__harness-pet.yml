@@ -1,0 +1,53 @@
+id: cakeni.harness.pet
+name:
+  zh: Harness 小鲸鱼
+  en: Harness Pet
+author: cakeni
+description: 一只像素小鲸鱼浮在页面角落，按会话状态在待机、思考、执行、搜索、编辑、等待、出错与完成等九种动画间切换，拖动时朝移动方向游动，点击会挥鳍。上方卡片显示最近提问、回复与进度，可调大小与透明度，也能开始终置顶的小窗跟到主窗口最小化之后。
+repo: https://github.com/cakeni/harness-pet
+package: harness-pet
+rowId: harness-pet
+category: pet
+tags:
+  - pet
+  - pixel
+  - whale
+  - companion
+  - animation
+modes:
+  - light
+  - dark
+install:
+  target: github:cakeni/harness-pet#29bb8f0fbba5514b83300a103e2a1088a02b433a
+  version: 0.1.0
+  commit: 29bb8f0fbba5514b83300a103e2a1088a02b433a
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/cakeni/harness-pet/29bb8f0fbba5514b83300a103e2a1088a02b433a/assets/whale/whale-animation-v6-contact-sheet.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1303
+starsSnapshot: 6
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/cakeni/harness-pet/29bb8f0fbba5514b83300a103e2a1088a02b433a/assets/whale/whale-animation-v6-contact-sheet.png

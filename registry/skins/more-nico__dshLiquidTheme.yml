@@ -1,0 +1,57 @@
+id: more.nico.dshliquidtheme
+name:
+  zh: 虎鲸液态玻璃
+  en: Orca Liquid Glass
+author: more-nico
+description: 在官方浅色、深色之上叠一层 macOS 液态玻璃：侧栏、顶栏、输入条和设置弹层用圆角折射弯折背后的内容，白边以鼠标为圆心渐隐，内置 2K 深海虎鲸壁纸，也能换成图片地址、本地图或纯色，设置里有折射开关。
+repo: https://github.com/more-nico/dshLiquidTheme
+package: dsh-liquid-theme
+rowId: dsh-liquid-theme
+category: skin
+tags:
+  - appearance
+  - glass
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:more-nico/dshLiquidTheme#612e24a5fb574a97f60f4d3a4f8735b5e3388479
+  version: 0.4.2
+  commit: 612e24a5fb574a97f60f4d3a4f8735b5e3388479
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/home.png
+  - https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/chat.png
+  - https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/settings.png
+  - https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/wallpaper-seaside.jpg
+  - https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/wallpaper-sky.jpg
+  - https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/wallpaper-cat.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1403
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/home.png

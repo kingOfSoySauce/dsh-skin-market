@@ -1,0 +1,49 @@
+id: simon.yyy.dsh.theme.escook
+name:
+  zh: escook 经典
+  en: escook Classic
+author: Simon-yyy
+description: "深紫暗夜底色 #1f2430 配琥珀金强调色 #ffcc66，复刻 VS Code 上的 escook 配色：粉红关键字、天蓝函数、薄荷绿字符串、鲜橙常量，侧栏、对话气泡、设置面板、市场卡片和滚动条一起适配。"
+repo: https://github.com/Simon-yyy/dsh-theme-escook
+package: dsh-theme-escook
+rowId: dsh-theme-escook
+category: skin
+tags:
+  - appearance
+  - dark
+  - token-theme
+modes:
+  - dark
+install:
+  target: github:Simon-yyy/dsh-theme-escook#9541c51153309b620b6deffe042aeb2b5823cb37
+  version: 1.0.4
+  commit: 9541c51153309b620b6deffe042aeb2b5823cb37
+compatibility:
+  dsh: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.2 <0.3.0-0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Simon-yyy/dsh-theme-escook/9541c51153309b620b6deffe042aeb2b5823cb37/assets/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1438
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/Simon-yyy/dsh-theme-escook/9541c51153309b620b6deffe042aeb2b5823cb37/assets/preview.png

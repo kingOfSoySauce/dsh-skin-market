@@ -1,0 +1,58 @@
+id: nas1112.self.evolve
+name:
+  zh: 自我进化
+  en: Self-Evolve
+author: NAS1112
+description: 任务完整结束后自动复盘一次：把值得记的经验写进工作区或全局 AGENTS.md 与 ~/.agents/skills，默认只在确有失败或走通复杂流程时写、一次最多一条，不打断对话流。右下角桌宠用状态动画播报进化次数，点开是经验库：记忆、技能提案（看 diff 再应用）、决策统计与批量清空；模型侧提供 record / propose / status 三个工具。
+repo: https://github.com/NAS1112/self-evolve
+package: "@local/self-evolve"
+rowId: self-evolve
+category: pet
+tags:
+  - memory
+  - skills
+  - review
+  - desktop-pet
+modes:
+  - light
+  - dark
+install:
+  target: github:NAS1112/self-evolve#8cc4944622f1091c456470097bc6341b7fb6c7d4
+  version: 0.5.2
+  commit: 8cc4944622f1091c456470097bc6341b7fb6c7d4
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/NAS1112/self-evolve/8cc4944622f1091c456470097bc6341b7fb6c7d4/pet-preview.png
+  - https://raw.githubusercontent.com/NAS1112/self-evolve/8cc4944622f1091c456470097bc6341b7fb6c7d4/pet-bubble-preview.png
+  - https://raw.githubusercontent.com/NAS1112/self-evolve/8cc4944622f1091c456470097bc6341b7fb6c7d4/dock-preview.png
+  - https://raw.githubusercontent.com/NAS1112/self-evolve/8cc4944622f1091c456470097bc6341b7fb6c7d4/ledger-preview.png
+  - https://raw.githubusercontent.com/NAS1112/self-evolve/8cc4944622f1091c456470097bc6341b7fb6c7d4/library-preview.png
+  - https://raw.githubusercontent.com/NAS1112/self-evolve/8cc4944622f1091c456470097bc6341b7fb6c7d4/scene-settled.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1411
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/NAS1112/self-evolve/8cc4944622f1091c456470097bc6341b7fb6c7d4/pet-preview.png

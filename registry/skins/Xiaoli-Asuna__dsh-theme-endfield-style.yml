@@ -1,0 +1,53 @@
+id: xiaoli.asuna.dsh.theme.endfield.style
+name:
+  zh: 终末地信号条
+  en: Endfield Signal Rail
+author: Xiaoli-Asuna
+description: 终末地风格主题：荧光黄侧栏标题与右缘信号条，页眉用巨大的 DEEPFIELD 背景字和程序化等高线，工程灰白与石墨黑两套配色跟随明暗设置，小圆角细描边，侧栏另给外观设置入口。非官方同人。
+repo: https://github.com/Xiaoli-Asuna/dsh-theme-endfield-style
+package: dsh-theme-endfield-style
+rowId: endfield-theme
+category: skin
+tags:
+  - arknights
+  - endfield
+  - theme
+  - sidebar
+  - contours
+modes:
+  - light
+  - dark
+install:
+  target: github:Xiaoli-Asuna/dsh-theme-endfield-style#e808ec9aa7d0343fed1d60fdbef9894b2620b3df
+  version: 0.1.0
+  commit: e808ec9aa7d0343fed1d60fdbef9894b2620b3df
+compatibility:
+  dsh: 0.1.5-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Xiaoli-Asuna/dsh-theme-endfield-style/e808ec9aa7d0343fed1d60fdbef9894b2620b3df/assets/screenshot-light.png
+  - https://raw.githubusercontent.com/Xiaoli-Asuna/dsh-theme-endfield-style/e808ec9aa7d0343fed1d60fdbef9894b2620b3df/assets/screenshot-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1482
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/Xiaoli-Asuna/dsh-theme-endfield-style/e808ec9aa7d0343fed1d60fdbef9894b2620b3df/assets/screenshot-light.png

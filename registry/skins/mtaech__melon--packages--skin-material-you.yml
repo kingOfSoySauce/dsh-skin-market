@@ -1,0 +1,58 @@
+id: mtaech.skin.material.you
+name:
+  zh: Material You 皮肤
+  en: Material You Skin
+author: mtaech
+description: "整套界面换成 Material 3 的 HCT 色调：由种子色 #3B82F6 推导的五条色板接管按钮、标签与表面色，圆角、缓动与字号字重按 M3 重排，字体换成自托管的 Maple Mono NF CN 等宽。侧栏工作区卡片、树状引导线和选中胶囊一并重绘，标题后补上可见会话数与最近活动时间；设置→外观可选 material-you-light / material-you-dark 固定外观。"
+repo: https://github.com/mtaech/melon
+subpath: packages/skin-material-you
+package: dsh-skin-material-you
+rowId: ui-skin-material-you
+category: skin
+tags:
+  - material-you
+  - material-3
+  - hct
+  - monospace
+  - sidebar
+modes:
+  - light
+  - dark
+install:
+  target: github:mtaech/melon#e024b6dcb9f1aea657184996d395b2419bda55d3&path:/packages/skin-material-you
+  version: 0.2.0
+  commit: e024b6dcb9f1aea657184996d395b2419bda55d3
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1409
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+marketScreenshots:
+  - skin-screenshots/mtaech__melon--packages--skin-material-you/e024b6dcb9f1aea657184996d395b2419bda55d3/home.png
+  - skin-screenshots/mtaech__melon--packages--skin-material-you/e024b6dcb9f1aea657184996d395b2419bda55d3/conversation.png
+  - skin-screenshots/mtaech__melon--packages--skin-material-you/e024b6dcb9f1aea657184996d395b2419bda55d3/settings.png

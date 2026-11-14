@@ -1,0 +1,56 @@
+id: galizhajidanbaofan.dsh.theme.notebook.paper
+name:
+  zh: 笔记本纸
+  en: Notebook Paper
+author: galizhajidanbaofan
+description: 把桌面端铺成一张横线笔记本纸：纸色底、墨蓝横线跨整页对齐，侧栏右缘一条朱红竖线分栏。气泡和输入框是白色手绘勾线卡片，悬停画波浪线、选中圈朱红椭圆、完成打对勾。横线线距分宽、中、细三档，纸纹与头像可开关，头像可导入裁剪，共用 24–48px 尺寸滑块。
+repo: https://github.com/galizhajidanbaofan/dsh-theme-notebook-paper
+package: dsh-theme-notebook-paper
+rowId: notebook-paper-theme
+category: skin
+tags:
+  - notebook
+  - paper
+  - light
+  - hand-drawn
+modes:
+  - light
+install:
+  target: github:galizhajidanbaofan/dsh-theme-notebook-paper#3cc228336ab3fb2ca1f1aaab8dff1bb791220d6f
+  version: 1.0.2
+  commit: 3cc228336ab3fb2ca1f1aaab8dff1bb791220d6f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/galizhajidanbaofan/dsh-theme-notebook-paper/3cc228336ab3fb2ca1f1aaab8dff1bb791220d6f/docs/hero.png
+  - https://raw.githubusercontent.com/galizhajidanbaofan/dsh-theme-notebook-paper/3cc228336ab3fb2ca1f1aaab8dff1bb791220d6f/docs/settings.png
+  - https://raw.githubusercontent.com/galizhajidanbaofan/dsh-theme-notebook-paper/3cc228336ab3fb2ca1f1aaab8dff1bb791220d6f/docs/sidebar.png
+  - https://raw.githubusercontent.com/galizhajidanbaofan/dsh-theme-notebook-paper/3cc228336ab3fb2ca1f1aaab8dff1bb791220d6f/docs/chat.png
+  - https://raw.githubusercontent.com/galizhajidanbaofan/dsh-theme-notebook-paper/3cc228336ab3fb2ca1f1aaab8dff1bb791220d6f/docs/composer.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1341
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/galizhajidanbaofan/dsh-theme-notebook-paper/3cc228336ab3fb2ca1f1aaab8dff1bb791220d6f/docs/hero.png

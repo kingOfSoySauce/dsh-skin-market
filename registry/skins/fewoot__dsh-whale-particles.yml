@@ -1,0 +1,54 @@
+id: fewoot.dsh.whale.particles
+name:
+  zh: 鲸鱼点阵
+  en: Whale Particles
+author: fewoot
+description: 把鲸鱼剪影铺成点阵界面背景：每颗粒子各自带平滑外力，鼠标靠近时躁动、移开又归位；自动模式让波沿 360° 扫过主体并做全屏呼吸。主体可换成导入的透明 PNG 照片，粒子双色渐变、发光强度、配色、帧率上限与渲染精度都能调。
+repo: https://github.com/fewoot/dsh-whale-particles
+package: dsh-whale-particles
+rowId: whale-particles
+category: skin
+tags:
+  - wallpaper
+  - particles
+  - motion
+  - interactive
+  - whale
+modes:
+  - light
+  - dark
+install:
+  target: github:fewoot/dsh-whale-particles#e8ac7eef66255be053b330b6dd1e4bb65d5ccb91
+  version: 0.6.0
+  commit: e8ac7eef66255be053b330b6dd1e4bb65d5ccb91
+compatibility:
+  dsh: 0.2.0-rc.2 || 0.1.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/fewoot/dsh-whale-particles/e8ac7eef66255be053b330b6dd1e4bb65d5ccb91/media/shot-whale.png
+  - https://raw.githubusercontent.com/fewoot/dsh-whale-particles/e8ac7eef66255be053b330b6dd1e4bb65d5ccb91/media/shot-photo.png
+  - https://raw.githubusercontent.com/fewoot/dsh-whale-particles/e8ac7eef66255be053b330b6dd1e4bb65d5ccb91/assets/whale-preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1335
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/fewoot/dsh-whale-particles/e8ac7eef66255be053b330b6dd1e4bb65d5ccb91/media/shot-whale.png
