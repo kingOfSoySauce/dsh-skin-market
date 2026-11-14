@@ -3278,8 +3278,8 @@
         "en": "DeepSeek Website-Inspired Skin"
       },
       "description": {
-        "zh": "以 DeepSeek 官网为灵感，深色搭配流体极光、粒子鲸鱼和星座网格，浅色采用蓝色渐变与玻璃面板，随宿主外观切换。",
-        "en": "Inspired by the DeepSeek website, with fluid aurora, a particle whale and a constellation grid in dark mode, blue gradients and glass panels in light mode, and switching tied to the host’s appearance setting."
+        "zh": "以 DeepSeek 官网为灵感：深色为深蓝极光、粒子鲸鱼与星座网格，浅色为蓝色渐变与玻璃面板；右上角单个按钮切换主题，并同步宿主外观设置与标题栏配色。",
+        "en": "Inspired by the DeepSeek website: deep-blue aurora, a particle whale and a constellation grid in dark mode, blue gradients and glass panels in light mode; one button in the top-right switches themes and syncs the host’s appearance setting and title-bar colors."
       },
       "descriptionPolicy": "show",
       "source": {
