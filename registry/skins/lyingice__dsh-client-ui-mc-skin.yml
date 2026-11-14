@@ -1,0 +1,55 @@
+id: lyingice.dsh.client.ui.mc.skin
+name:
+  zh: Minecraft GUI 主题
+  en: Minecraft GUI Theme
+author: lyingice
+description: "Minecraft 风格换肤：工作区 #313233、对话区 #6B6B6B、#C6C6C6 的立体斜角按钮、绿板分页和 24×24 像素标志。两个独立开关——MC 主题与 MC 像素字体（16 MB 的 Minecraft AE 字体由宿主半边按需下发，仅在开启时下载），接上宿主用户设置、重启后保留；删除用 #FF5555、添加用 #55FF55。整站为深色单套配色。"
+repo: https://github.com/lyingice/dsh-client-ui-mc-skin
+package: dsh-client-ui-mc-skin
+rowId: ui-mc-skin
+category: skin
+tags:
+  - minecraft
+  - pixel
+  - gui
+  - font
+  - dark
+modes:
+  - dark
+install:
+  target: github:lyingice/dsh-client-ui-mc-skin#1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc
+  version: 1.3.1
+  commit: 1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1393
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+marketScreenshots:
+  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/home.png
+  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/conversation.png
+  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/settings.png

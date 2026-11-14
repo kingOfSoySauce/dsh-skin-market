@@ -1,0 +1,57 @@
+id: i.qx.i.dsh.plugin.skins
+name:
+  zh: 九色玻璃皮肤
+  en: Nine-Palette Glass Skins
+author: I-QX-I
+description: 玻璃换肤插件：Aero、极光、石墨、凤凰、翠岚、火焰、青境、玫瑰石英、琥珀九款配色，液体玻璃与模糊玻璃两种材质；高光与折射厚度、背景流动速度与色彩、透明度与光感可分别调整，长输入与长消息用更轻的阅读材质。支持中英文与宿主明暗外观，新安装默认 Aero 液体玻璃。
+repo: https://github.com/I-QX-I/dsh-plugin-skins
+package: dsh-plugin-skins
+rowId: skins
+category: skin
+tags:
+  - glass
+  - liquid-glass
+  - palettes
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:I-QX-I/dsh-plugin-skins#949cb275510269240f38755867d5666f76fd4924
+  version: 2.6.3
+  commit: 949cb275510269240f38755867d5666f76fd4924
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/aero-motion.webp
+  - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/glass-input.webp
+  - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/themes-settings.png
+  - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/material-settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1355
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/aero-motion.webp

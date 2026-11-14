@@ -1,0 +1,51 @@
+id: xjyzhengshuai.dsh.desktop.pet
+name:
+  zh: 右下角小宠
+  en: Corner Pet
+author: XJYzhengshuai
+description: 右下角一只小宠物：没有会话在跑时轻轻呼吸，有会话运行时上下弹跳并顶出「思考中…」气泡，任务结束连跳五下喊「你干嘛」；点它可随时重播语音，鼠标移上去出现 × 收起，图和音频都内联、不额外请求。
+repo: https://github.com/XJYzhengshuai/dsh-desktop-pet
+package: dsh-desktop-pet
+rowId: desktop-pet
+category: pet
+tags:
+  - pet
+  - motion
+  - character
+modes:
+  - light
+  - dark
+install:
+  target: github:XJYzhengshuai/dsh-desktop-pet#212a9bce353a99c67236674cb9a897e902d28a74
+  version: 1.0.0
+  commit: 212a9bce353a99c67236674cb9a897e902d28a74
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/XJYzhengshuai/dsh-desktop-pet/212a9bce353a99c67236674cb9a897e902d28a74/assets/pet.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1485
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/XJYzhengshuai/dsh-desktop-pet/212a9bce353a99c67236674cb9a897e902d28a74/assets/pet.png

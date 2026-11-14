@@ -1,0 +1,60 @@
+id: zeelinkcn.dsh.global.radio
+name:
+  zh: 全球电台
+  en: Global Radio
+author: zeelinkCN
+description: 左侧栏进网易云风格的发现页：3 张大 banner、20 个城市入口、12 张分类卡与自适应网格，点分类卡会随机挑一台开播；卡片和播放页显示 FM/AM 频率。全屏播放页有模糊台标背景、旋转台标和频谱、波形、环形三种可视化，底部常驻播放条；后台播放收进侧栏迷你条，与网易云音乐自动互斥。
+repo: https://github.com/zeelinkCN/dsh-global-radio
+package: "@local/global-radio"
+rowId: global-radio
+category: player
+tags:
+  - radio
+  - hls
+  - visualizer
+  - player
+modes:
+  - light
+  - dark
+install:
+  target: github:zeelinkCN/dsh-global-radio#17f32f03d665263a70e981191da5c56bfc8c2b33
+  version: 1.2.1
+  commit: 17f32f03d665263a70e981191da5c56bfc8c2b33
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zeelinkCN/dsh-global-radio/17f32f03d665263a70e981191da5c56bfc8c2b33/docs/screenshot-home-light.png
+  - https://raw.githubusercontent.com/zeelinkCN/dsh-global-radio/17f32f03d665263a70e981191da5c56bfc8c2b33/docs/screenshot-home-dark.png
+  - https://raw.githubusercontent.com/zeelinkCN/dsh-global-radio/17f32f03d665263a70e981191da5c56bfc8c2b33/docs/screenshot-player.png
+  - https://raw.githubusercontent.com/zeelinkCN/dsh-global-radio/17f32f03d665263a70e981191da5c56bfc8c2b33/docs/screenshot-player-dark.png
+  - https://raw.githubusercontent.com/zeelinkCN/dsh-global-radio/17f32f03d665263a70e981191da5c56bfc8c2b33/docs/screenshot-playerbar.png
+  - https://raw.githubusercontent.com/zeelinkCN/dsh-global-radio/17f32f03d665263a70e981191da5c56bfc8c2b33/docs/screenshot-mini-stacked.png
+  - https://raw.githubusercontent.com/zeelinkCN/dsh-global-radio/17f32f03d665263a70e981191da5c56bfc8c2b33/docs/screenshot-collection-city.png
+  - https://raw.githubusercontent.com/zeelinkCN/dsh-global-radio/17f32f03d665263a70e981191da5c56bfc8c2b33/docs/screenshot-hls.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1500
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/zeelinkCN/dsh-global-radio/17f32f03d665263a70e981191da5c56bfc8c2b33/docs/screenshot-home-light.png

@@ -1,0 +1,53 @@
+id: gavinff1990.fanggao.pet
+name:
+  zh: 方糕萌宠
+  en: Fanggao Pet
+author: gavinff1990
+description: 一只跟着会话状态变形的方糕：对话进行时奔跑、完成时躺下睡觉、出错时生气，三种形态都是逐帧 SVG 动画。可拖到任意位置，右键或 Shift 拖动旋转角度，位置与角度刷新后保留，浮层本身不挡其它点击。
+repo: https://github.com/gavinff1990/fanggao-pet
+package: "@local/fanggao-pet"
+rowId: fanggao-pet
+category: pet
+tags:
+  - pet
+  - svg
+  - animation
+  - companion
+modes:
+  - light
+  - dark
+install:
+  target: github:gavinff1990/fanggao-pet#0564c71ac3f3f71c744aad36148f33d81e9ad19f
+  version: 1.0.0
+  commit: 0564c71ac3f3f71c744aad36148f33d81e9ad19f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/gavinff1990/fanggao-pet/0564c71ac3f3f71c744aad36148f33d81e9ad19f/docs/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1342
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/gavinff1990/fanggao-pet/0564c71ac3f3f71c744aad36148f33d81e9ad19f/docs/preview.png

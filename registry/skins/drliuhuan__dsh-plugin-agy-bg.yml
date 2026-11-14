@@ -1,0 +1,53 @@
+id: drliuhuan.dsh.plugin.agy.bg
+name:
+  zh: 反重力粒子背景
+  en: Antigravity Particle Backdrop
+author: drliuhuan
+description: 在界面背后铺一层跟随鼠标的 WebGL 粒子背景：整页外壳变透明，粒子场从工作区透出来，侧栏、输入框、卡片和弹窗保留自己的底色。粒子环带缓动、呼吸半径、环带位移与低速漂移，配色随明暗主题切换；设置 → 通用里的开关可随时关掉，帧率分节能、普通、高性能三档。
+repo: https://github.com/drliuhuan/dsh-plugin-agy-bg
+package: dsh-plugin-agy-bg
+rowId: agy-bg
+category: skin
+tags:
+  - particles
+  - webgl
+  - cursor
+  - background
+modes:
+  - light
+  - dark
+install:
+  target: github:drliuhuan/dsh-plugin-agy-bg#409a924eee77d11f7f6090bd730dc0ae86e9c4cd
+  version: 0.1.5
+  commit: 409a924eee77d11f7f6090bd730dc0ae86e9c4cd
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-agy-bg/409a924eee77d11f7f6090bd730dc0ae86e9c4cd/docs/preview-light.png
+  - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-agy-bg/409a924eee77d11f7f6090bd730dc0ae86e9c4cd/docs/preview-dark.png
+  - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-agy-bg/409a924eee77d11f7f6090bd730dc0ae86e9c4cd/docs/settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1326
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/drliuhuan/dsh-plugin-agy-bg/409a924eee77d11f7f6090bd730dc0ae86e9c4cd/docs/preview-light.png

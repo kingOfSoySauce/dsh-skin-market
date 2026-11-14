@@ -1,0 +1,54 @@
+id: eric8bit.dsh.plugin.minis.skin
+name:
+  zh: Minis 卡片
+  en: Minis Cards
+author: eric8bit
+description: 冷调浅灰蓝聊天卡片、钢蓝灰用户气泡、iOS 蓝思考栏和黑色代码面板，设置面板做成毛玻璃、侧栏用染色玻璃；通过覆盖主题令牌实现，不强制明暗——跟着设置里的浅色/深色/跟随系统自动套对应配色，停用即完全还原。宿主升级若改了构建期 CSS 类名，卡片样式会失效，需要更新类名重新构建。
+repo: https://github.com/eric8bit/dsh-plugin-minis-skin
+package: "@dsh-external/dsh-plugin-minis-skin"
+rowId: minis-skin
+category: skin
+tags:
+  - minis
+  - glass
+  - cool-tone
+  - cards
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:eric8bit/dsh-plugin-minis-skin#801ee4bf73fc7f244f52296ff9ace1e46d812288
+  version: 0.0.1
+  commit: 801ee4bf73fc7f244f52296ff9ace1e46d812288
+compatibility:
+  dsh: ">=0.0.1-rc.1 <0.2.0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/eric8bit/dsh-plugin-minis-skin/801ee4bf73fc7f244f52296ff9ace1e46d812288/cards/%E4%BA%AE%E8%89%B2.png
+  - https://raw.githubusercontent.com/eric8bit/dsh-plugin-minis-skin/801ee4bf73fc7f244f52296ff9ace1e46d812288/cards/%E6%B7%B1%E8%89%B2.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1328
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/eric8bit/dsh-plugin-minis-skin/801ee4bf73fc7f244f52296ff9ace1e46d812288/cards/%E4%BA%AE%E8%89%B2.png

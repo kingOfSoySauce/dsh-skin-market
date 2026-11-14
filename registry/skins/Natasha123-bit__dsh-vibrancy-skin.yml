@@ -1,0 +1,53 @@
+id: natasha123.bit.dsh.vibrancy.skin
+name:
+  zh: 原生磨砂材质
+  en: Native Vibrancy
+author: Natasha123-bit
+description: 把会话面板、侧栏、气泡和输入框那层不透明底色换成同族半透明，让窗口自带的 macOS 原生磨砂透出来；强度分磨砂 24%、均衡 40%、实心 62% 三档，背景可选「透到壁纸」垫自己的图或「透到桌面」，只换材质、布局不动。
+repo: https://github.com/Natasha123-bit/dsh-vibrancy-skin
+package: dsh-vibrancy-skin
+rowId: vibrancy-skin
+category: skin
+tags:
+  - appearance
+  - glass
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Natasha123-bit/dsh-vibrancy-skin#d25e4382646213301b028859ee827c26a5c4bc60
+  version: 1.6.1
+  commit: d25e4382646213301b028859ee827c26a5c4bc60
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Natasha123-bit/dsh-vibrancy-skin/d25e4382646213301b028859ee827c26a5c4bc60/assets/screenshots/conversation.png
+  - https://raw.githubusercontent.com/Natasha123-bit/dsh-vibrancy-skin/d25e4382646213301b028859ee827c26a5c4bc60/assets/screenshots/settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1412
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/Natasha123-bit/dsh-vibrancy-skin/d25e4382646213301b028859ee827c26a5c4bc60/assets/screenshots/conversation.png

@@ -1,0 +1,57 @@
+id: okazaki01.dsh.air.theme
+name:
+  zh: AIR 夏日青空
+  en: AIR Summer Sky
+author: Okazaki01
+description: 《AIR》夏日青空主题：神尾观铃全景铺满窗口，浅深两套；11 片羽毛随机落速飘落，三层 CSS 云缓慢横移，思考时起双环魔法阵，发送键是带光晕的魔法书与点击涟漪。输入框四角有定制弧形金饰、上边框中央嵌金色宝石徽章，侧栏有 Q 版观铃剪影与樱花枝；打开设置窗口时主题自动让位，可经 dsh-skin-switch 热切换。
+repo: https://github.com/Okazaki01/dsh-air-theme
+package: "@dsh-external/dsh-client-ui-skin-air"
+rowId: ui-skin-air
+category: skin
+tags:
+  - air
+  - anime
+  - gold
+  - feathers
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Okazaki01/dsh-air-theme#bb0465efb5faa79582117fd857b4209486aa4fa5
+  version: 0.2.6
+  commit: bb0465efb5faa79582117fd857b4209486aa4fa5
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/preview/light-new-session.png
+  - https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/preview/light-conversation.png
+  - https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/preview/dark-new-session.png
+  - https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/preview/dark-conversation.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: CC-BY-SA-4.0
+  commercialUse: true
+featuredRank: 1420
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/preview/light-new-session.png

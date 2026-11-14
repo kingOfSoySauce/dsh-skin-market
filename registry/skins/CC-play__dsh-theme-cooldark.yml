@@ -1,0 +1,52 @@
+id: cc.play.dsh.theme.cooldark
+name:
+  zh: CoolDark
+  en: CoolDark
+author: CC-play
+description: 低对比度深色主题：画布、侧栏与浮层按 10 级中性暗灰色阶分层，正文使用柔和浅灰，不纯黑也不偏暖；整站 token 换肤，不改布局与功能，装好后直接生效。
+repo: https://github.com/CC-play/dsh-theme-cooldark
+package: dsh-theme-cooldark
+rowId: cooldark
+category: skin
+tags:
+  - dark
+  - low-contrast
+  - neutral
+  - tokens
+modes:
+  - dark
+install:
+  target: github:CC-play/dsh-theme-cooldark#00f49620a419951149ad013ef3c4e0d20ad025fb
+  version: 0.5.1
+  commit: 00f49620a419951149ad013ef3c4e0d20ad025fb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/CC-play/dsh-theme-cooldark/00f49620a419951149ad013ef3c4e0d20ad025fb/assets/screenshot-1.png
+  - https://raw.githubusercontent.com/CC-play/dsh-theme-cooldark/00f49620a419951149ad013ef3c4e0d20ad025fb/assets/screenshot-2.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1308
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/CC-play/dsh-theme-cooldark/00f49620a419951149ad013ef3c4e0d20ad025fb/assets/screenshot-1.png

@@ -1,0 +1,54 @@
+id: levitate403.dsh.firefly.bg
+name:
+  zh: 流萤背景
+  en: Firefly Background
+author: levitate403
+description: 四张米游社流萤主题壁纸垫在界面后方，再撒一层 canvas 萤火虫（默认 26 只，可调到 64 只）。面板改成半透明玻璃：改主题令牌之外，还按颜色和尺寸探测外壳里写死的不透明容器打洞，晚渲染或切页新长出的容器靠延时补打和 MutationObserver 补齐。设置页可调遮罩浓度、背景模糊、萤火虫数量、面板通透度和缓慢漂移，深色是青黑夜色玻璃，浅色自动加白雾与 2.5px 模糊。
+repo: https://github.com/levitate403/dsh-firefly-bg
+package: dsh-firefly-bg
+rowId: firefly-bg
+category: skin
+tags:
+  - wallpaper
+  - firefly
+  - canvas
+  - glass
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:levitate403/dsh-firefly-bg#2a07e0ae528a3b61f3f77d870b5437f5d9b70107
+  version: 1.0.0
+  commit: 2a07e0ae528a3b61f3f77d870b5437f5d9b70107
+compatibility:
+  dsh: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/01-chat-rooftop.jpg
+  - https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/02-settings-panel.jpg
+  - https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/03-dark-fireworks.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1383
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/01-chat-rooftop.jpg

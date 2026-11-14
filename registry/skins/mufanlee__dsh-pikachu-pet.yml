@@ -1,0 +1,57 @@
+id: mufanlee.dsh.pikachu.pet
+name:
+  zh: 皮卡丘桌宠
+  en: Pikachu Pet
+author: mufanlee
+description: 右下角常驻一只皮卡丘，跟着会话状态换动作：运行中奔跑跳跃、脸颊冒电火花，等确认时举手跳并顶「！」，一轮完成欢呼洒星光，空闲 90 秒换睡姿趴下。点击会叫，8 张姿势与 3 段叫声从候选里随机、避免连续重复；悬停右上角可静音，声音开关也在设置→通用里，偏好存 localStorage，不联网无遥测。
+repo: https://github.com/mufanlee/dsh-pikachu-pet
+package: "@local/dsh-pikachu-pet"
+rowId: pikachu-pet
+category: pet
+tags:
+  - pikachu
+  - mascot
+  - status
+  - sound
+  - pixel
+modes:
+  - light
+  - dark
+install:
+  target: github:mufanlee/dsh-pikachu-pet#b8efd5cfc4294d124d11f777581c1f57c11c46a1
+  version: 1.0.0
+  commit: b8efd5cfc4294d124d11f777581c1f57c11c46a1
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/mufanlee/dsh-pikachu-pet/b8efd5cfc4294d124d11f777581c1f57c11c46a1/assets/pose-stand.webp
+  - https://raw.githubusercontent.com/mufanlee/dsh-pikachu-pet/b8efd5cfc4294d124d11f777581c1f57c11c46a1/assets/pose-run.webp
+  - https://raw.githubusercontent.com/mufanlee/dsh-pikachu-pet/b8efd5cfc4294d124d11f777581c1f57c11c46a1/assets/pose-call.webp
+  - https://raw.githubusercontent.com/mufanlee/dsh-pikachu-pet/b8efd5cfc4294d124d11f777581c1f57c11c46a1/assets/pose-laugh.webp
+  - https://raw.githubusercontent.com/mufanlee/dsh-pikachu-pet/b8efd5cfc4294d124d11f777581c1f57c11c46a1/assets/pose-sleep-curl.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1408
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/mufanlee/dsh-pikachu-pet/b8efd5cfc4294d124d11f777581c1f57c11c46a1/assets/pose-stand.webp

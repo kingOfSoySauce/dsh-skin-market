@@ -1,0 +1,55 @@
+id: sorphone.dsh.eyecare.bg
+name:
+  zh: 护眼绿背景
+  en: Eye-care Green Background
+author: Sorphone
+description: 把界面背景换成护眼绿的极小插件：覆盖画布、卡片、侧栏、菜单、输入框、代码块等 31 个表面 token，文字、边框、字体、圆角与布局保持官方原样；设置页新增「护眼绿背景」分区，可取色、输入十六进制或选 4 个预设，配置写入 $DSH_HOME 下的文件。
+repo: https://github.com/Sorphone/dsh-eyecare-bg
+package: dsh-eyecare-bg
+rowId: eyecare-bg
+category: skin
+tags:
+  - eyecare
+  - green
+  - background
+  - tokens
+  - settings
+modes:
+  - light
+  - dark
+install:
+  target: github:Sorphone/dsh-eyecare-bg#b1ee96bb671a27e414ec14d00c95b3191f1ad0a0
+  version: 3.0.0
+  commit: b1ee96bb671a27e414ec14d00c95b3191f1ad0a0
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Sorphone/dsh-eyecare-bg/b1ee96bb671a27e414ec14d00c95b3191f1ad0a0/preview-settings.png
+  - https://raw.githubusercontent.com/Sorphone/dsh-eyecare-bg/b1ee96bb671a27e414ec14d00c95b3191f1ad0a0/preview-mock.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1442
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/Sorphone/dsh-eyecare-bg/b1ee96bb671a27e414ec14d00c95b3191f1ad0a0/preview-settings.png

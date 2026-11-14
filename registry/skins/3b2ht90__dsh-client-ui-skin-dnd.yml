@@ -1,0 +1,55 @@
+id: 3b2ht90.dsh.client.ui.skin.dnd
+name:
+  zh: 龙与地下城
+  en: Dungeons & Dragons
+author: 3b2ht90
+description: 亮色是冒险者的羊皮纸卷宗：暖纸底、深棕墨、深铜金；暗色换成龙巢地牢的炭黑棕、余烬橙与秘银蓝。输入框和主要按钮是深金直角方框，发送键换成带「20」面的 D20 骰子，AI 工作时播放骰子翻滚帧动画。
+repo: https://github.com/3b2ht90/dsh-client-ui-skin-dnd
+package: "@dsh-external/dsh-client-ui-skin-dnd"
+rowId: ui-skin-dnd
+category: skin
+tags:
+  - dnd
+  - fantasy
+  - dice
+  - parchment
+modes:
+  - light
+  - dark
+install:
+  target: github:3b2ht90/dsh-client-ui-skin-dnd#85aaa7c3abd77de457b928d0844e597e5bc3db11
+  version: 0.1.2
+  commit: 85aaa7c3abd77de457b928d0844e597e5bc3db11
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/3b2ht90/dsh-client-ui-skin-dnd/85aaa7c3abd77de457b928d0844e597e5bc3db11/preview/light.png
+  - https://raw.githubusercontent.com/3b2ht90/dsh-client-ui-skin-dnd/85aaa7c3abd77de457b928d0844e597e5bc3db11/preview/dark.png
+  - https://raw.githubusercontent.com/3b2ht90/dsh-client-ui-skin-dnd/85aaa7c3abd77de457b928d0844e597e5bc3db11/art/die-roll.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1289
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/3b2ht90/dsh-client-ui-skin-dnd/85aaa7c3abd77de457b928d0844e597e5bc3db11/preview/light.png

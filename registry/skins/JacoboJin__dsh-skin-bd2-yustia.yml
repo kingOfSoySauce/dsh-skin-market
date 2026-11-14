@@ -1,0 +1,55 @@
+id: jacobojin.dsh.skin.bd2.yustia
+name:
+  zh: 悠丝缇亚
+  en: Justia
+author: JacoboJin
+description: 以《棕色尘埃2》圣剑骑士悠丝缇亚为主题的昼夜双模式皮肤：浅色是暖象牙底配圣金，深色是深夜暖黑配烛光金，全界面毛玻璃化、对话区透出立绘。背景库可换图、填绝对路径或 https 链接，侧栏透明度、帷幕深浅、圣光与星尘浓度都在面板里调，设置自动记忆。
+repo: https://github.com/JacoboJin/dsh-skin-bd2-yustia
+package: "@dsh-session/dsh-skin-bd2-yustia"
+rowId: ui-skin-bd2-yustia
+category: skin
+tags:
+  - game-character
+  - dual-mode
+  - glassmorphism
+  - wallpaper
+  - gold
+modes:
+  - light
+  - dark
+install:
+  target: github:JacoboJin/dsh-skin-bd2-yustia#51b171a9d9f48a945a63935fe25c8f4ff3ee1535
+  version: 1.0.0
+  commit: 51b171a9d9f48a945a63935fe25c8f4ff3ee1535
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JacoboJin/dsh-skin-bd2-yustia/51b171a9d9f48a945a63935fe25c8f4ff3ee1535/preview/light.png
+  - https://raw.githubusercontent.com/JacoboJin/dsh-skin-bd2-yustia/51b171a9d9f48a945a63935fe25c8f4ff3ee1535/preview/dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1361
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/JacoboJin/dsh-skin-bd2-yustia/51b171a9d9f48a945a63935fe25c8f4ff3ee1535/preview/light.png

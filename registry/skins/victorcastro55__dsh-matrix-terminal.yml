@@ -1,0 +1,52 @@
+id: victorcastro55.dsh.matrix.terminal
+name:
+  zh: 磷光终端
+  en: Phosphor Terminal
+author: victorcastro55
+description: 磷光绿终端风：界面压成等宽、零圆角与扫描线（每三像素一条暗行），123 个色变量全部重映射成同一绿色系；输入框下新增命令提示行 harness@matrix:~$＋会话号前八位与闪烁方块光标。聊天区只留你问的与模型答的，工具调用、系统提示与重试等过程行移到右侧工作日志，另有一页「脉冲」用神经星座显示推理与工具工作。
+repo: https://github.com/victorcastro55/dsh-matrix-terminal
+package: dsh-matrix-terminal
+rowId: matrix-terminal
+category: skin
+tags:
+  - terminal
+  - phosphor
+  - scanlines
+  - work-log
+  - dark
+modes:
+  - dark
+install:
+  target: github:victorcastro55/dsh-matrix-terminal#80da61a90c763fb9d3a89ca6578447c671c7907c
+  version: 1.5.5
+  commit: 80da61a90c763fb9d3a89ca6578447c671c7907c
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/victorcastro55/dsh-matrix-terminal/80da61a90c763fb9d3a89ca6578447c671c7907c/docs/overview.png
+  - https://raw.githubusercontent.com/victorcastro55/dsh-matrix-terminal/80da61a90c763fb9d3a89ca6578447c671c7907c/docs/prompt-line.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: AGPL-3.0
+  commercialUse: true
+featuredRank: 1467
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/victorcastro55/dsh-matrix-terminal/80da61a90c763fb9d3a89ca6578447c671c7907c/docs/overview.png

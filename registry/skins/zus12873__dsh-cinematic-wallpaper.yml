@@ -1,0 +1,53 @@
+id: zus12873.dsh.cinematic.wallpaper
+name:
+  zh: 银幕觉醒
+  en: Cinematic Awakening
+author: zus12873
+description: 每次打开页面先播 7 秒电影感开场：光线、线框、面扫，角色睁眼、虹膜泛绿、镜头推近；点按或任意键可跳过，片头期间的按键不会漏进输入框。落幕后角色留在界面后方当动态壁纸，头发半速来回摆动约 24 秒一循环，文字按背后画面自动取深/浅色，输入框在浅色下 28%、深色下 30% 不透明。
+repo: https://github.com/zus12873/dsh-cinematic-wallpaper
+package: dsh-cinematic-wallpaper
+rowId: dsh-cinematic-wallpaper
+category: skin
+tags:
+  - wallpaper
+  - cinematic
+  - intro
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:zus12873/dsh-cinematic-wallpaper#06e5a9bc353bb2e418c3fd7ff0b661367a1b86b8
+  version: 0.2.0
+  commit: 06e5a9bc353bb2e418c3fd7ff0b661367a1b86b8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zus12873/dsh-cinematic-wallpaper/06e5a9bc353bb2e418c3fd7ff0b661367a1b86b8/docs/images/wallpaper.jpg
+  - https://raw.githubusercontent.com/zus12873/dsh-cinematic-wallpaper/06e5a9bc353bb2e418c3fd7ff0b661367a1b86b8/docs/images/intro.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1510
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/zus12873/dsh-cinematic-wallpaper/06e5a9bc353bb2e418c3fd7ff0b661367a1b86b8/docs/images/wallpaper.jpg

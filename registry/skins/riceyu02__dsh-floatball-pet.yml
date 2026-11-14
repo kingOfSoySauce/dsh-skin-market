@@ -1,0 +1,56 @@
+id: riceyu02.dsh.floatball.pet
+name:
+  zh: 悬浮球桌宠
+  en: Floating Ball Pet
+author: riceyu02
+description: 系统级悬浮球：平时是一颗小鲸鱼球，鼠标移入向右展开灵动岛，上方显示账户余额、下方显示运行时长，点齿轮升起设置面板改大小和不透明度；单击把窗口调到最前，检测到全屏游戏会自动让位。仅 Windows。
+repo: https://github.com/riceyu02/dsh-floatball-pet
+package: dsh-floatball-pet
+rowId: ui-settings-dsh-floatball-pet
+category: pet
+tags:
+  - floating-ball
+  - balance
+  - uptime
+  - windows
+  - tray
+modes:
+  - light
+  - dark
+install:
+  target: github:riceyu02/dsh-floatball-pet#a06c659b41e207b1ecc4b8fb95150add1afdedff
+  version: 0.3.3
+  commit: a06c659b41e207b1ecc4b8fb95150add1afdedff
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/riceyu02/dsh-floatball-pet/a06c659b41e207b1ecc4b8fb95150add1afdedff/docs/01-idle.png
+  - https://raw.githubusercontent.com/riceyu02/dsh-floatball-pet/a06c659b41e207b1ecc4b8fb95150add1afdedff/docs/02-hover.png
+  - https://raw.githubusercontent.com/riceyu02/dsh-floatball-pet/a06c659b41e207b1ecc4b8fb95150add1afdedff/docs/03-panel.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1426
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/riceyu02/dsh-floatball-pet/a06c659b41e207b1ecc4b8fb95150add1afdedff/docs/01-idle.png

@@ -1,0 +1,52 @@
+id: lianghui32.dsh.theme.blue.planet
+name:
+  zh: 蔚蓝星球
+  en: Azure Planet
+author: lianghui32
+description: 深空星野与蓝色星球地平线主题：154 个语义色令牌全部调成深海蓝，主界面面板保持半透明，行星弧线、星环与大气辉光从背后透出；右下角 HUD 提供「全辉／静谧／关闭」三档动效，选择写入 localStorage，页面隐藏或系统减少动效时自动停止。
+repo: https://github.com/lianghui32/dsh-theme-blue-planet
+package: dsh-theme-blue-planet
+rowId: theme-blue-planet
+category: skin
+tags:
+  - space
+  - planet
+  - animation
+  - tokens
+  - hud
+modes:
+  - light
+  - dark
+install:
+  target: github:lianghui32/dsh-theme-blue-planet#2c5136e8f10d13c4d40db76434c20bb6dbcca30e
+  version: 0.2.12
+  commit: 2c5136e8f10d13c4d40db76434c20bb6dbcca30e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lianghui32/dsh-theme-blue-planet/2c5136e8f10d13c4d40db76434c20bb6dbcca30e/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1392
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/lianghui32/dsh-theme-blue-planet/2c5136e8f10d13c4d40db76434c20bb6dbcca30e/preview.png

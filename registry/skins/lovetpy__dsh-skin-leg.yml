@@ -1,0 +1,57 @@
+id: lovetpy.dsh.skin.leg
+name:
+  zh: 美腿
+  en: Weimei
+author: lovetpy
+description: 整屏铺一张 2560×1440 插画作背景，亮色与暗色各配一层阅读遮罩并随外观实时切换，面板和输入区换成半透明表面让画作透出来。图片以 base64 内嵌在包里、不额外请求资源，换背景需替换 client 内的插画重新打包。
+repo: https://github.com/lovetpy/dsh-skin-leg
+package: dsh-skin-leg
+rowId: ui-skin-leg
+category: skin
+tags:
+  - wallpaper
+  - illustration
+  - translucent
+  - light-dark
+  - 2k
+modes:
+  - light
+  - dark
+install:
+  target: github:lovetpy/dsh-skin-leg#cbbae2ea0af924350103f31a70d6b2c3ee60290a
+  version: 0.1.0
+  commit: cbbae2ea0af924350103f31a70d6b2c3ee60290a
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1389
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+marketScreenshots:
+  - skin-screenshots/lovetpy__dsh-skin-leg/cbbae2ea0af924350103f31a70d6b2c3ee60290a/home.png
+  - skin-screenshots/lovetpy__dsh-skin-leg/cbbae2ea0af924350103f31a70d6b2c3ee60290a/conversation.png
+  - skin-screenshots/lovetpy__dsh-skin-leg/cbbae2ea0af924350103f31a70d6b2c3ee60290a/settings.png

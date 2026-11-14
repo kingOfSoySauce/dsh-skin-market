@@ -1,0 +1,59 @@
+id: leriuslei.dsh.whalepaper
+name:
+  zh: 潮汐之间
+  en: ASCII Orca
+author: LeriusLei
+description: 界面背景是一整片 ASCII 字符绘成的三维海洋：三头虎鲸巡游、翻滚、下潜，偶尔浮出水面喷水、追赶鱼群或跃出海面溅起浪花，海色按本地时间从深夜换到黄昏。可切换三种海天构图，并调亮度、饱和度与柔化，聊天区保持透明。
+repo: https://github.com/LeriusLei/dsh-whalepaper
+package: dsh-whalepaper
+rowId: dsh-whalepaper
+category: skin
+tags:
+  - wallpaper
+  - ascii
+  - motion
+  - ocean
+  - retro
+modes:
+  - light
+  - dark
+install:
+  target: github:LeriusLei/dsh-whalepaper#dfd7433bac3e87380f2c8f04f4b3e62faa8f4cf0
+  version: 0.6.1
+  commit: dfd7433bac3e87380f2c8f04f4b3e62faa8f4cf0
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/LeriusLei/dsh-whalepaper/dfd7433bac3e87380f2c8f04f4b3e62faa8f4cf0/docs/media/breach.gif
+  - https://raw.githubusercontent.com/LeriusLei/dsh-whalepaper/dfd7433bac3e87380f2c8f04f4b3e62faa8f4cf0/docs/media/rolling.gif
+  - https://raw.githubusercontent.com/LeriusLei/dsh-whalepaper/dfd7433bac3e87380f2c8f04f4b3e62faa8f4cf0/docs/media/surface-blow-dive.gif
+  - https://raw.githubusercontent.com/LeriusLei/dsh-whalepaper/dfd7433bac3e87380f2c8f04f4b3e62faa8f4cf0/docs/media/swimming.gif
+  - https://raw.githubusercontent.com/LeriusLei/dsh-whalepaper/dfd7433bac3e87380f2c8f04f4b3e62faa8f4cf0/docs/media/chasing-fish.gif
+  - https://raw.githubusercontent.com/LeriusLei/dsh-whalepaper/dfd7433bac3e87380f2c8f04f4b3e62faa8f4cf0/wallpaper/previews/night-balanced.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1381
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/LeriusLei/dsh-whalepaper/dfd7433bac3e87380f2c8f04f4b3e62faa8f4cf0/docs/media/breach.gif

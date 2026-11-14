@@ -1,0 +1,55 @@
+id: mjh520.dsh.welcome.boot
+name:
+  zh: 自定义启动视频
+  en: Custom Boot Video
+author: MJH520
+description: 启动时默认播放自带的一段鲸鱼女仆开机动画，也可以在「设置 → 内置插件」里换成自己的视频、动图或静图（mp4 / webm / gif / webp 等 20 种格式），支持声音开关、播完渐隐时长、铺满或完整显示、播放速率和跳过方式；内置视频关掉且路径清空时完全不介入启动。
+repo: https://github.com/MJH520/dsh-welcome-boot
+package: dsh-welcome-boot
+rowId: dsh-welcome-boot
+category: splash
+tags:
+  - splash
+  - video
+  - customizable
+  - sound
+  - settings
+modes:
+  - light
+  - dark
+install:
+  target: github:MJH520/dsh-welcome-boot#a35a088c8daa038e6842d39d4932832c11edbdb2
+  version: 1.0.0
+  commit: a35a088c8daa038e6842d39d4932832c11edbdb2
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/MJH520/dsh-welcome-boot/a35a088c8daa038e6842d39d4932832c11edbdb2/assets/screenshots/splash.png
+  - https://raw.githubusercontent.com/MJH520/dsh-welcome-boot/a35a088c8daa038e6842d39d4932832c11edbdb2/assets/screenshots/settings.png
+  - https://raw.githubusercontent.com/MJH520/dsh-welcome-boot/a35a088c8daa038e6842d39d4932832c11edbdb2/assets/banner.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1401
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/MJH520/dsh-welcome-boot/a35a088c8daa038e6842d39d4932832c11edbdb2/assets/screenshots/splash.png

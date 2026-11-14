@@ -1,0 +1,53 @@
+id: tongy1n.ui.muyu
+name:
+  zh: 赛博木鱼
+  en: Cyber Wooden Fish
+author: TongY1n
+description: 赛博木鱼悬浮摆件：点一下敲一次并累加功德，长按拖动换位置，位置和功德存在本机；仓库刻意不做声音，纯装饰、不联网、不读会话，刷新页面后进度还在。
+repo: https://github.com/TongY1n/ui-muyu
+package: dsh-ui-muyu
+rowId: ui-muyu
+category: pet
+tags:
+  - wooden-fish
+  - floating-widget
+  - merit
+  - decorative
+  - offline
+modes:
+  - light
+  - dark
+install:
+  target: github:TongY1n/ui-muyu#cb21032dcb832d194deac4993508bca426c41547
+  version: 0.1.6
+  commit: cb21032dcb832d194deac4993508bca426c41547
+compatibility:
+  dsh: ^0.2.0-rc.2 || ^0.2.1-alpha.2 || ^0.2.2-alpha.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/TongY1n/ui-muyu/cb21032dcb832d194deac4993508bca426c41547/docs/images/preview.png
+  - https://cdn.jsdelivr.net/gh/TongY1n/ui-muyu@main/docs/images/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1458
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/TongY1n/ui-muyu/cb21032dcb832d194deac4993508bca426c41547/docs/images/preview.png

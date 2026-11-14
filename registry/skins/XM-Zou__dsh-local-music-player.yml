@@ -1,0 +1,55 @@
+id: xm.zou.dsh.local.music.player
+name:
+  zh: 本地音乐库
+  en: Local Music Library
+author: XM-Zou
+description: 左侧栏「音乐」入口打开本地音乐库：导入文件或整个文件夹（文件夹名自动成歌单），读取 ID3v2 标题与封面，文件名里的《》会拆成歌名与歌曲信息。歌单可多对多、拖动排序，未分类歌单置顶；播放支持暂停、切歌、进度、音量、随机与列表/单曲循环，另有 ZIP 备份恢复和中英双语界面。
+repo: https://github.com/XM-Zou/dsh-local-music-player
+package: dsh-local-music-player
+rowId: dsh-local-music-player
+category: player
+tags:
+  - music
+  - local
+  - playlist
+  - indexeddb
+modes:
+  - light
+  - dark
+install:
+  target: github:XM-Zou/dsh-local-music-player#da8ae04175bde41568238a5b783baeb04b71e7fb
+  version: 0.7.3
+  commit: da8ae04175bde41568238a5b783baeb04b71e7fb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/banner.png
+  - https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/features.png
+  - https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/player.png
+  - https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/playlist-menu.png
+  - https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/backup.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1486
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/banner.png

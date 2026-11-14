@@ -1,0 +1,53 @@
+id: yq1930.dsh.skin.asuka.p01
+name:
+  zh: 明日香·绯色天际
+  en: Asuka · Scarlet Horizon
+author: yq1930
+description: 精绘双立绘与城市穹顶日夜场景：酒红金饰框架框住聊天区，人物随窗口宽窄换边、缩小或只留一侧，消息坐在清晰阅读卡片上。亮色、暗色、账号菜单、代码差异与设置页分别配色，五项偏好可保存；角色素材内嵌，声明兼容 0.1.7-rc.2～0.2.x。
+repo: https://github.com/yq1930/dsh-skin-asuka-p01
+package: dsh-skin-asuka-p01
+rowId: ui-skin-asuka-p01
+category: skin
+tags:
+  - anime
+  - full-ui
+  - light-dark
+  - art
+modes:
+  - light
+  - dark
+install:
+  target: github:yq1930/dsh-skin-asuka-p01#b7b89c362417e13f6bc00c512bf06c015eef42fd
+  version: 0.6.1
+  commit: b7b89c362417e13f6bc00c512bf06c015eef42fd
+compatibility:
+  dsh: 0.1.7-rc.2 || 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yq1930/dsh-skin-asuka-p01/b7b89c362417e13f6bc00c512bf06c015eef42fd/preview/light.webp
+  - https://raw.githubusercontent.com/yq1930/dsh-skin-asuka-p01/b7b89c362417e13f6bc00c512bf06c015eef42fd/preview/dark.webp
+  - https://raw.githubusercontent.com/yq1930/dsh-skin-asuka-p01/b7b89c362417e13f6bc00c512bf06c015eef42fd/preview/settings.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1494
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/yq1930/dsh-skin-asuka-p01/b7b89c362417e13f6bc00c512bf06c015eef42fd/preview/light.webp

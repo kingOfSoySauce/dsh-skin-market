@@ -1,0 +1,59 @@
+id: koggua.edit.dsh.pet.sayaka
+name:
+  zh: 美树沙耶香桌宠
+  en: Sayaka Miki Pet
+author: KOGGUA-EDIT
+description: 美树沙耶香把会话状态翻译成十二张立绘：没事睡觉、跑命令拔刀、出错伤心几秒、成功高兴、整轮结束累倒，闲着每 14–30 秒擦一次剑；每态刚切换时冒一句独白气泡，部分台词配录音。十秒内连点会依次害羞、生气、气炸，按住拖动时被拎走，立绘直接硬切不淡入。
+repo: https://github.com/KOGGUA-EDIT/dsh-pet-sayaka
+package: dsh-pet-sayaka
+rowId: dsh-pet-sayaka
+category: pet
+tags:
+  - pet
+  - anime
+  - sprites
+  - voice
+  - states
+modes:
+  - light
+  - dark
+install:
+  target: github:KOGGUA-EDIT/dsh-pet-sayaka#6e38d3222c75089fb68b16ae45d9d7bf81240adf
+  version: 1.1.1
+  commit: 6e38d3222c75089fb68b16ae45d9d7bf81240adf
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/sleep.png
+  - https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/thinking.png
+  - https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/sword.png
+  - https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/happy.png
+  - https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/sad.png
+  - https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/drag.png
+  - https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/calm.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1378
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/sleep.png

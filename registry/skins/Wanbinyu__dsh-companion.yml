@@ -1,0 +1,51 @@
+id: wanbinyu.dsh.companion
+name:
+  zh: 状态感知伙伴
+  en: State-Aware Companion
+author: Wanbinyu
+description: 一只会读任务状态的桌面伙伴：空闲、思考、工具调用、等待确认、完成和失败各有动作与气泡，可拖动、缩放、点击回应，五分钟休息和十分钟长任务另有动作；装了 dsh-billing 时还会显示本轮／会话费用、Token 与额度进度。
+repo: https://github.com/Wanbinyu/dsh-companion
+package: dsh-companion
+rowId: companion
+category: pet
+tags:
+  - pet
+  - companion
+  - character
+modes:
+  - light
+  - dark
+install:
+  target: github:Wanbinyu/dsh-companion#7e381ae09d0173c448d1b20344c318a86bf3102f
+  version: 0.1.13
+  commit: 7e381ae09d0173c448d1b20344c318a86bf3102f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Wanbinyu/dsh-companion/7e381ae09d0173c448d1b20344c318a86bf3102f/docs/images/companion-overview.png
+  - https://raw.githubusercontent.com/Wanbinyu/dsh-companion/7e381ae09d0173c448d1b20344c318a86bf3102f/docs/images/companion-dialogue-settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1468
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/Wanbinyu/dsh-companion/7e381ae09d0173c448d1b20344c318a86bf3102f/docs/images/companion-overview.png

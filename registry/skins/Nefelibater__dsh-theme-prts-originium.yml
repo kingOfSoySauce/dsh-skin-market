@@ -1,0 +1,59 @@
+id: nefelibater.dsh.theme.prts.originium
+name:
+  zh: PRTS · 源石协议
+  en: PRTS · Originium Protocol
+author: Nefelibater
+description: 冷峻工业风的双面主题：浅色是冷灰青纸面档案、深色是冷墨蓝终端，两者都配琥珀金定位线。欢迎页有可拖动旋转的 3D 源石晶簇（224 块晶体、8134 个三角面）与测绘网格；侧栏角落的「P/01」收起普瑞赛斯三张记忆影像。启动动画约 3.3 秒，可跳过、重播或关闭，另有专注阅读模式收起装饰。
+repo: https://github.com/Nefelibater/dsh-theme-prts-originium
+package: dsh-theme-prts-originium
+rowId: dsh-theme-prts-originium
+category: skin
+tags:
+  - arknights
+  - prts
+  - 3d
+  - industrial
+modes:
+  - light
+  - dark
+install:
+  target: github:Nefelibater/dsh-theme-prts-originium#a6e40fd5ae32ec45dbb86080f86c954011e6a1b5
+  version: 1.4.2
+  commit: a6e40fd5ae32ec45dbb86080f86c954011e6a1b5
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/docs/images/theme-light.png
+  - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/docs/images/theme-dark.png
+  - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-home-light.jpg
+  - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-home-dark.jpg
+  - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-boot-dark.jpg
+  - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-memory.jpg
+  - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-composer.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1414
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/docs/images/theme-light.png

@@ -1,0 +1,54 @@
+id: a380467214.art.dsh.cyber.skin
+name:
+  zh: 赛博霓虹
+  en: Cyber Neon
+author: a380467214-art
+description: 深蓝黑底配霓虹青与霓虹粉：品牌/成功、错误、警告等语义色全部重映射，界面换成等宽字体、全直角和淡网格背景，按钮与标题带霓虹辉光，滚动条以及新装的插件面板会一起继承这套配色，停用即恢复原生外观。
+repo: https://github.com/a380467214-art/dsh-cyber-skin
+package: dsh-cyber-skin
+rowId: cyber-skin
+category: skin
+tags:
+  - cyberpunk
+  - neon
+  - dark
+  - monospace
+  - grid
+modes:
+  - dark
+install:
+  target: github:a380467214-art/dsh-cyber-skin#a1d064e81145650e291ad576ff52f9aa0a817deb
+  version: 0.3.9
+  commit: a1d064e81145650e291ad576ff52f9aa0a817deb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/a380467214-art/dsh-cyber-skin/a1d064e81145650e291ad576ff52f9aa0a817deb/docs/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1291
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/a380467214-art/dsh-cyber-skin/a1d064e81145650e291ad576ff52f9aa0a817deb/docs/preview.png

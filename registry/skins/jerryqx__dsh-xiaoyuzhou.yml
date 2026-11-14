@@ -1,0 +1,54 @@
+id: jerryqx.dsh.xiaoyuzhou
+name:
+  zh: 小宇宙播客
+  en: Xiaoyuzhou Podcast
+author: jerryqx
+description: 在会话输入框下方加一条播客播放条，点开面板可粘贴小宇宙分享链接直接播放，免登录。面板支持订阅、shownotes 阅读、断点续播（超过 30 秒才记忆）、0.75–2 倍速与音量；扫码登录后能搜索节目、同步订阅并看到更早的单集。还注册 podcast_play 工具，让模型直接帮你播放某一期。
+repo: https://github.com/jerryqx/dsh-xiaoyuzhou
+package: dsh-xiaoyuzhou
+rowId: xiaoyuzhou
+category: player
+tags:
+  - podcast
+  - player
+  - xiaoyuzhou
+  - login
+modes:
+  - light
+  - dark
+install:
+  target: github:jerryqx/dsh-xiaoyuzhou#ac6a2defc85d4379a38f6b0406b2d4d171cc3627
+  version: 0.2.4
+  commit: ac6a2defc85d4379a38f6b0406b2d4d171cc3627
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/jerryqx/dsh-xiaoyuzhou/ac6a2defc85d4379a38f6b0406b2d4d171cc3627/assets/screenshot-bar.png
+  - https://raw.githubusercontent.com/jerryqx/dsh-xiaoyuzhou/ac6a2defc85d4379a38f6b0406b2d4d171cc3627/assets/screenshot-mysubs.png
+  - https://raw.githubusercontent.com/jerryqx/dsh-xiaoyuzhou/ac6a2defc85d4379a38f6b0406b2d4d171cc3627/assets/screenshot-podcast.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1364
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/jerryqx/dsh-xiaoyuzhou/ac6a2defc85d4379a38f6b0406b2d4d171cc3627/assets/screenshot-bar.png

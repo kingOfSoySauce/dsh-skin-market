@@ -1,0 +1,58 @@
+id: unpain.dsh.skin.schierke
+name:
+  zh: 史尔基 · 灵界魔导书
+  en: Schierke · Astral Grimoire
+author: unpain
+description: 把界面重排成一册摊开的灵界田野志：侧栏是布面章节索引，输入区是带页边线的观察条，消息、推理、代码和设置分别变成页边批注、脚注、墨块与附录页。亮色用骨纸、褪鼠尾草、石南紫与赭墨，暗色用夜纸、月玉与暖象牙字；随包附一幅可收纳的角色图版，活跃会话时淡出，也可完全去掉而不丢皮肤身份。
+repo: https://github.com/unpain/dsh-skin-schierke
+package: dsh-skin-schierke
+rowId: ui-skin-schierke-interface
+category: skin
+tags:
+  - grimoire
+  - folio
+  - marginalia
+  - anime
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:unpain/dsh-skin-schierke#052cd9dc0a28c6254a4eef53e45085177a356e17
+  version: 0.2.0
+  commit: 052cd9dc0a28c6254a4eef53e45085177a356e17
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/unpain/dsh-skin-schierke/052cd9dc0a28c6254a4eef53e45085177a356e17/preview/light.webp
+  - https://raw.githubusercontent.com/unpain/dsh-skin-schierke/052cd9dc0a28c6254a4eef53e45085177a356e17/preview/dark.webp
+  - https://raw.githubusercontent.com/unpain/dsh-skin-schierke/052cd9dc0a28c6254a4eef53e45085177a356e17/preview/active-chat.webp
+  - https://raw.githubusercontent.com/unpain/dsh-skin-schierke/052cd9dc0a28c6254a4eef53e45085177a356e17/preview/no-art.webp
+  - https://raw.githubusercontent.com/unpain/dsh-skin-schierke/052cd9dc0a28c6254a4eef53e45085177a356e17/preview/dsh-dark.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1463
+starsSnapshot: 6
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/unpain/dsh-skin-schierke/052cd9dc0a28c6254a4eef53e45085177a356e17/preview/light.webp

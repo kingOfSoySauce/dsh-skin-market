@@ -1,0 +1,52 @@
+id: qiao.neyc.silverhand.dsh.pet
+name:
+  zh: 银手桌宠
+  en: Silverhand Pet
+author: Qiao-NEYC
+description: 一位银色机械臂的赛博朋克佣兵住在右下角：待机呼吸、干活、看完输出、挥手打招呼、一轮结束庆祝、出错沮丧、等你审批时立正，按真实 agent 状态切换。可拖动换位置，拖动时朝移动方向走；悬停查看当前状态，点一下会跳。
+repo: https://github.com/Qiao-NEYC/silverhand-dsh-pet
+package: silverhand-dsh-pet
+rowId: silverhand
+category: pet
+tags:
+  - pet
+  - cyberpunk
+  - sprite
+  - companion
+modes:
+  - light
+  - dark
+install:
+  target: github:Qiao-NEYC/silverhand-dsh-pet#dfad6fbf4c4a694c3a9072d50f5ae2e8ef4c6188
+  version: 1.0.2
+  commit: dfad6fbf4c4a694c3a9072d50f5ae2e8ef4c6188
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Qiao-NEYC/silverhand-dsh-pet/dfad6fbf4c4a694c3a9072d50f5ae2e8ef4c6188/docs/demo.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1424
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/Qiao-NEYC/silverhand-dsh-pet/dfad6fbf4c4a694c3a9072d50f5ae2e8ef4c6188/docs/demo.gif

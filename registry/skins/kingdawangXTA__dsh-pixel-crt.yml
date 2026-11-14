@@ -1,0 +1,51 @@
+id: kingdawangxta.dsh.pixel.crt
+name:
+  zh: CRT 像素
+  en: CRT Pixel
+author: kingdawangXTA
+description: 只改会话区与输入区的 CRT 像素皮肤：近黑底、青色强调、2px 硬边框与 3px 方块阴影，标题和按钮用点阵字体、正文保持系统字体，再叠一层轻微扫描线；侧栏与标题栏不动，关掉插件即恢复原样。
+repo: https://github.com/kingdawangXTA/dsh-pixel-crt
+package: dsh-pixel-crt
+rowId: dsh-pixel-crt
+category: skin
+tags:
+  - crt
+  - pixel
+  - dark
+  - scoped
+modes:
+  - dark
+install:
+  target: github:kingdawangXTA/dsh-pixel-crt#8bd992e37561eae674b1501603ad5652fb870d91
+  version: 0.1.0
+  commit: 8bd992e37561eae674b1501603ad5652fb870d91
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/kingdawangXTA/dsh-pixel-crt/8bd992e37561eae674b1501603ad5652fb870d91/assets/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1376
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/kingdawangXTA/dsh-pixel-crt/8bd992e37561eae674b1501603ad5652fb870d91/assets/preview.png

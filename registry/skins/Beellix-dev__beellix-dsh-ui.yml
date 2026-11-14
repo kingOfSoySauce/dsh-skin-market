@@ -1,0 +1,59 @@
+id: beellix.dev.beellix.dsh.ui
+name:
+  zh: Beelli X UI
+  en: Beelli X UI
+author: Beellix-dev
+description: 接管设置与侧栏，改成可搜索的分类设置：外观里能导入图片或 MP4 壁纸、调磨砂与透明度并存成皮肤方案，可上传 WebP/GIF 桌宠动作、挑 1、2、3 或 5 秒启动动画，模型页可接厂商预设或自定义接口。实机验收为 Windows 桌面端，建议同时只启用一个接管设置页的插件。
+repo: https://github.com/Beellix-dev/beellix-dsh-ui
+package: "@beellix-ai/dsh-web-gui"
+rowId: dsh-web-gui
+category: skin
+tags:
+  - settings
+  - skins
+  - pets
+  - windows
+  - suite
+modes:
+  - light
+  - dark
+install:
+  target: github:Beellix-dev/beellix-dsh-ui#5ba54cb1cfa9bfd255038e01686aba1a003237d3
+  version: 0.1.1
+  commit: 5ba54cb1cfa9bfd255038e01686aba1a003237d3
+compatibility:
+  dsh: 0.2.1-rc.4
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/sidebar.png
+  - https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/settings-skins.png
+  - https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/settings-pets.png
+  - https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/settings-effects.png
+  - https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/settings-models.png
+  - https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/archives.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1299
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/sidebar.png

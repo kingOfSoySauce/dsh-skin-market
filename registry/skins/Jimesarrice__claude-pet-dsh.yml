@@ -1,0 +1,52 @@
+id: jimesarrice.claude.pet.dsh
+name:
+  zh: Claude 桌宠
+  en: Claude Pet
+author: Jimesarrice
+description: Q 版 Claude 桌宠：展开时按 8×9 精灵图集播放，收起后缩成右下角迷你 Clawd；跟随回合、工具、审批与待办状态切换，气泡显示当前任务和完成进度，出错会一直保持到点「本次错误已处理」。
+repo: https://github.com/Jimesarrice/claude-pet-dsh
+package: claude-pet-dsh
+rowId: claude-pet-dsh
+category: pet
+tags:
+  - claude
+  - chibi
+  - pet
+  - spritesheet
+  - overlay
+modes:
+  - light
+  - dark
+install:
+  target: github:Jimesarrice/claude-pet-dsh#3ac847cac8e7fea8a6acc552effcae2d55e6b51e
+  version: 0.3.1
+  commit: 3ac847cac8e7fea8a6acc552effcae2d55e6b51e
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Jimesarrice/claude-pet-dsh/3ac847cac8e7fea8a6acc552effcae2d55e6b51e/assets/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1368
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/Jimesarrice/claude-pet-dsh/3ac847cac8e7fea8a6acc552effcae2d55e6b51e/assets/preview.png

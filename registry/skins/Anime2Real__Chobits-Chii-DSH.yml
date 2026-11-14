@@ -1,0 +1,53 @@
+id: anime2real.chobits.chii.dsh
+name:
+  zh: 小叽绘本皮肤
+  en: Chii Picture-Book Skin
+author: Anime2Real
+description: 绘本风换肤：奶油暖底＋暖墨文字＋低饱和玫瑰点缀，明暗两套色板；五张插画做成拍立得照片墙沿界面四周散布、向中心渐隐，鼠标移动时按各自深度反向视差。右下角常驻 Live2D 小叽，视线跟随鼠标，会话开始运行时切到 Look；窄窗口自动收起边缘照片，桌宠可在插件页单独开关。
+repo: https://github.com/Anime2Real/Chobits-Chii-DSH
+package: chobits-chii-dsh
+rowId: ui-chobits-chii
+category: skin
+tags:
+  - picture-book
+  - live2d
+  - polaroid
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Anime2Real/Chobits-Chii-DSH#e32dfef487903a8f377293ca49d2b347eb704ebd
+  version: 1.0.2
+  commit: e32dfef487903a8f377293ca49d2b347eb704ebd
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Anime2Real/Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/docs/preview-light.png
+  - https://raw.githubusercontent.com/Anime2Real/Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/docs/preview-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1294
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Anime2Real/Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/docs/preview-light.png

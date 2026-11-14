@@ -1,0 +1,53 @@
+id: aidenwanggitgit.paper.skin
+name:
+  zh: 期刊桌面
+  en: Paper Skin · Journal Desk
+author: AidenWanggitgit
+description: 侧栏换成期刊书脊：Nature、Science、IEEE、Elsevier 四套封面可选，配初审、评审、大修、小修、录用、见刊六个稿件阶段；对话背景铺编辑部来信，来信透明度 5%–80% 可调，纸张纹理可关，明暗跟随外观。
+repo: https://github.com/AidenWanggitgit/paper-skin
+package: paper-skin
+rowId: paper-skin
+category: skin
+tags:
+  - journal
+  - academic
+  - typography
+  - paper
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:AidenWanggitgit/paper-skin#8c77d5199d8544a67eae8435fbf42c82b8656171
+  version: 1.0.0
+  commit: 8c77d5199d8544a67eae8435fbf42c82b8656171
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/AidenWanggitgit/paper-skin/8c77d5199d8544a67eae8435fbf42c82b8656171/docs/preview-nature.webp
+  - https://raw.githubusercontent.com/AidenWanggitgit/paper-skin/8c77d5199d8544a67eae8435fbf42c82b8656171/docs/preview-panel.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1292
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/AidenWanggitgit/paper-skin/8c77d5199d8544a67eae8435fbf42c82b8656171/docs/preview-nature.webp

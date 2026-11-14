@@ -1,0 +1,53 @@
+id: youqishan.dsh.skin.3bridge
+name:
+  zh: 立绘壁纸编辑器
+  en: Standee Wallpaper Editor
+author: youqishan
+description: 立绘壁纸编辑器：三个立绘区（左艾拉、右女儿、辅助位父亲，默认隐藏）各自可选角色、表情或关掉显示，17 张场景壁纸随亮暗切换白日／夜晚；右下角调色板能实时改立绘高度、偏移、背景透明度和消息框装饰，也支持上传自定义背景。
+repo: https://github.com/youqishan/dsh-skin-3bridge
+package: "@dsh-external/dsh-skin-3bridge"
+rowId: ui-skin-threebridge
+category: skin
+tags:
+  - appearance
+  - wallpaper
+  - presets
+modes:
+  - light
+  - dark
+install:
+  target: github:youqishan/dsh-skin-3bridge#566502bb830cbc07ececd1d188b998373cef39de
+  version: 0.2.0
+  commit: 566502bb830cbc07ececd1d188b998373cef39de
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/youqishan/dsh-skin-3bridge/566502bb830cbc07ececd1d188b998373cef39de/preview/light.webp
+  - https://raw.githubusercontent.com/youqishan/dsh-skin-3bridge/566502bb830cbc07ececd1d188b998373cef39de/preview/dark.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1492
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/youqishan/dsh-skin-3bridge/566502bb830cbc07ececd1d188b998373cef39de/preview/light.webp

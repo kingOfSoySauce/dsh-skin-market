@@ -1,0 +1,53 @@
+id: ruru516.dsh.quicktime.player
+name:
+  zh: 侧栏视频台
+  en: Sidebar Video Deck
+author: rUrU516
+description: 在右侧栏注册一种视频标签页，文件页、聊天引用或其他侧栏插件打开的视频都落进这里。Host 用 HTTP Range 流式输出，进度可拖动；Desktop 的 dsh-app:// 下改走带 token 的 127.0.0.1 端口。滚轮 1×–8× 缩放、平移、双击全屏，0.2×–5× 变速、逐帧、画中画、截图到剪贴板，两个剪刀标记用宿主 ffmpeg 流拷贝导出无损片段，位置与设置按路径记住。
+repo: https://github.com/rUrU516/dsh-quicktime-player
+package: dsh-quicktime-player
+rowId: quicktime-player
+category: player
+tags:
+  - video
+  - sidebar
+  - seek
+  - frame-capture
+  - ffmpeg
+modes:
+  - light
+  - dark
+install:
+  target: github:rUrU516/dsh-quicktime-player#2c99d56e816745babad798f240ab62ce78dc6bbb
+  version: 0.4.0
+  commit: 2c99d56e816745babad798f240ab62ce78dc6bbb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/rUrU516/dsh-quicktime-player/2c99d56e816745babad798f240ab62ce78dc6bbb/docs/screenshot.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1432
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/rUrU516/dsh-quicktime-player/2c99d56e816745babad798f240ab62ce78dc6bbb/docs/screenshot.jpg

@@ -1,0 +1,56 @@
+id: zenglihunter.dsh.petdex.pet
+name:
+  zh: Petdex 宠物
+  en: Petdex Pet
+author: zenglihunter
+description: 把 Petdex 的像素宠物搬到右下角：跟随工具调用、任务完成、等待批准等状态切换九种精灵动画，可拖动、悬停互动，同一状态持续 5 秒后自动隐藏。自带小杰、奇犽、酷拉皮卡、雷欧力四个猎人宠物包，设置页能调大小、切换删除、搜图库，也能粘贴安装代码一键装新宠物。
+repo: https://github.com/zenglihunter/dsh-petdex-pet
+package: "@dsh-external/dsh-petdex-pet"
+rowId: dsh-petdex-pet
+category: pet
+tags:
+  - pet
+  - pixel
+  - sprite
+  - gallery
+modes:
+  - light
+  - dark
+install:
+  target: github:zenglihunter/dsh-petdex-pet#952b53379de1f362e4b7244bfb63996e9dc140cc
+  version: 0.3.2
+  commit: 952b53379de1f362e4b7244bfb63996e9dc140cc
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zenglihunter/dsh-petdex-pet/952b53379de1f362e4b7244bfb63996e9dc140cc/img/screenshot.png
+  - https://raw.githubusercontent.com/zenglihunter/dsh-petdex-pet/952b53379de1f362e4b7244bfb63996e9dc140cc/img/menu.png
+  - https://raw.githubusercontent.com/zenglihunter/dsh-petdex-pet/952b53379de1f362e4b7244bfb63996e9dc140cc/img/install.png
+  - https://raw.githubusercontent.com/zenglihunter/dsh-petdex-pet/952b53379de1f362e4b7244bfb63996e9dc140cc/img/banner.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1501
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/zenglihunter/dsh-petdex-pet/952b53379de1f362e4b7244bfb63996e9dc140cc/img/screenshot.png

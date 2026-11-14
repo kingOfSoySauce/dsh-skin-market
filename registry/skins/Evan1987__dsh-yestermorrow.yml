@@ -1,0 +1,54 @@
+id: evan1987.dsh.yestermorrow
+name:
+  zh: 昨日之明日
+  en: YESTERMORROW
+author: Evan1987
+description: 一个插件装三套复古未来主义皮肤——黄昏列车「以太工造」、霓虹雨夜「霓虹夜行」、太空港落日「落日海岸」，在设置里即时切换、不重载页面；三套共用 22 条标注出处的影视与哲学题词，点圆钮或按 R 换一句。
+repo: https://github.com/Evan1987/dsh-yestermorrow
+package: "@zcm/dsh-client-ui-skin-yestermorrow"
+rowId: ui-skin-yestermorrow
+category: skin
+tags:
+  - retrofuturism
+  - three-in-one
+  - presets
+  - epigraphs
+modes:
+  - light
+  - dark
+install:
+  target: github:Evan1987/dsh-yestermorrow#7765cdfeee60be1811ea6dd039546b8dfbfdc3e5
+  version: 0.2.0
+  commit: 7765cdfeee60be1811ea6dd039546b8dfbfdc3e5
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Evan1987/dsh-yestermorrow/7765cdfeee60be1811ea6dd039546b8dfbfdc3e5/preview/live-dark.png
+  - https://raw.githubusercontent.com/Evan1987/dsh-yestermorrow/7765cdfeee60be1811ea6dd039546b8dfbfdc3e5/preview/live-light.png
+  - https://raw.githubusercontent.com/Evan1987/dsh-yestermorrow/7765cdfeee60be1811ea6dd039546b8dfbfdc3e5/preview/neon-hero.png
+  - https://raw.githubusercontent.com/Evan1987/dsh-yestermorrow/7765cdfeee60be1811ea6dd039546b8dfbfdc3e5/preview/sunset-hero.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1329
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Evan1987/dsh-yestermorrow/7765cdfeee60be1811ea6dd039546b8dfbfdc3e5/preview/live-dark.png

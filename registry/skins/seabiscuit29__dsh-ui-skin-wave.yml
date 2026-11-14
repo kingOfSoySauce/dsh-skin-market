@@ -1,0 +1,56 @@
+id: seabiscuit29.dsh.ui.skin.wave
+name:
+  zh: 六色波纹
+  en: Hex Ripple
+author: seabiscuit29
+description: 六套配色（蓝、橘、绿、灰、紫、玫红）× 明暗两系，设置页用可滑动色条切换、即时生效；另有一个跟随鼠标的六边形数字波纹特效，可随时关掉。插件只加一个 style 标签与特效层，关闭即 100% 恢复默认外观。
+repo: https://github.com/seabiscuit29/dsh-ui-skin-wave
+package: dsh-ui-skin-wave
+rowId: dsh-ui-skin-wave
+category: skin
+tags:
+  - palettes
+  - light-dark
+  - ripple
+  - animation
+modes:
+  - light
+  - dark
+install:
+  target: github:seabiscuit29/dsh-ui-skin-wave#9fa3dc0906f26d502c70b0217d02ad7101e91f6c
+  version: 0.3.0
+  commit: 9fa3dc0906f26d502c70b0217d02ad7101e91f6c
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/seabiscuit29/dsh-ui-skin-wave/9fa3dc0906f26d502c70b0217d02ad7101e91f6c/design/preview.png
+  - https://raw.githubusercontent.com/seabiscuit29/dsh-ui-skin-wave/9fa3dc0906f26d502c70b0217d02ad7101e91f6c/design/ui-home-ripple.png
+  - https://raw.githubusercontent.com/seabiscuit29/dsh-ui-skin-wave/9fa3dc0906f26d502c70b0217d02ad7101e91f6c/design/ui-settings-blue.png
+  - https://raw.githubusercontent.com/seabiscuit29/dsh-ui-skin-wave/9fa3dc0906f26d502c70b0217d02ad7101e91f6c/design/ui-settings-light.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1431
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/seabiscuit29/dsh-ui-skin-wave/9fa3dc0906f26d502c70b0217d02ad7101e91f6c/design/preview.png

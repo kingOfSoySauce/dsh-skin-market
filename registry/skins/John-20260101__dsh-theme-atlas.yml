@@ -1,0 +1,58 @@
+id: john.20260101.dsh.theme.atlas
+name:
+  zh: Atlas
+  en: Atlas
+author: John-20260101
+description: 六套材质皮肤共用一个配色引擎：墨玉、赤陶、极光、深海、樱雾、素笺，每套声明 6 个输入色，推导出界面读取的 119 个 token 并做对比度实测（正文 14.9:1 起）。右下角 Atlas 胶囊或 Alt+K 切换，纯 CSS 无图片、不注册路由，也不覆盖你的明暗偏好。
+repo: https://github.com/John-20260101/dsh-theme-atlas
+package: dsh-theme-atlas
+rowId: theme-atlas
+category: skin
+tags:
+  - material
+  - palette
+  - token-theme
+  - light-dark
+  - css-only
+modes:
+  - light
+  - dark
+install:
+  target: github:John-20260101/dsh-theme-atlas#12f6bf50f88d3155e255e3514b62e0f83180ded7
+  version: 0.3.0
+  commit: 12f6bf50f88d3155e255e3514b62e0f83180ded7
+compatibility:
+  dsh: 0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/00-hero-2400x1350.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/01-ink-jade-light-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/02-terracotta-light-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/04-abyss-light-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/06-paper-light-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/07-aurora-dark-1600x1000.jpg
+  - https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/08-paper-dark-1600x1000.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1369
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/00-hero-2400x1350.jpg

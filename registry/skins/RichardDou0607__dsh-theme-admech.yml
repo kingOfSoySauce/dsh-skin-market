@@ -1,0 +1,57 @@
+id: richarddou0607.dsh.theme.admech
+name:
+  zh: 机械神教 · 铸炉圣殿
+  en: Forge-Cathedral
+author: RichardDou0607
+description: 机械神教 · 铸炉圣殿：铁黑底、黄铜描边与尖拱窗框，发光的齿轮-骷髅徽记，火星红主按钮；自绘 SVG 主视觉、状态配色与推荐标签都重做，还带启动前奏、遥测条和思考程度滑块。另附 macOS 应用图标替换器（需在「App 管理」授权），Windows 侧有实测安装流程。
+repo: https://github.com/RichardDou0607/dsh-theme-admech
+package: dsh-theme-admech
+rowId: theme-admech
+category: skin
+tags:
+  - tech-gothic
+  - dark
+  - brass
+  - app-icon
+  - intro
+modes:
+  - dark
+install:
+  target: github:RichardDou0607/dsh-theme-admech#6297a8b0dda8b09254a3c9358e7108c86221b39a
+  version: 0.9.3
+  commit: 6297a8b0dda8b09254a3c9358e7108c86221b39a
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/hero-desktop.png
+  - https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/splash-desktop.png
+  - https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/v080-telemetry.png
+  - https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/v080-effort-slider.png
+  - https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/v092-composer-clean.png
+  - https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/windows/hero-1440x900.png
+  - https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/cards-reliquary-preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1427
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/hero-desktop.png

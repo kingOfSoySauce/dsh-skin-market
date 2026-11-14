@@ -1,0 +1,54 @@
+id: machi12.dsh.gundam.graphite.theme
+name:
+  zh: 高达 · 石墨
+  en: Gundam Graphite
+author: machi12
+description: 内置 1672×941 黑灰机甲壁纸，侧栏、输入卡和弹窗统一成石墨玻璃面板，背景里流动银灰粒子，还有一层被鼠标推开又回弹的弹性网格。16 项实时设置：壁纸遮罩与虚化、面板不透明度、粒子亮度、数量、速度、网格五种模式、视差、帧率上限；关掉开关即回原生外观。
+repo: https://github.com/machi12/dsh-gundam-graphite-theme
+package: dsh-gundam-graphite-theme
+rowId: dsh-gundam-graphite-theme
+category: skin
+tags:
+  - mecha
+  - graphite
+  - particles
+  - dark
+modes:
+  - dark
+install:
+  target: github:machi12/dsh-gundam-graphite-theme#36788deb35e9780bae96908d40b1aaa227948734
+  version: 1.0.1
+  commit: 36788deb35e9780bae96908d40b1aaa227948734
+compatibility:
+  dsh: ">=0.2.0-rc.2"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/01-home.png
+  - https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/02-before-after.png
+  - https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/03-settings.png
+  - https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/04-theme-controls.png
+  - https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/05-compact.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1397
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/01-home.png

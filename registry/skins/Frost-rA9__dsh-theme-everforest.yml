@@ -1,0 +1,59 @@
+id: frost.ra9.dsh.theme.everforest
+name:
+  zh: Everforest
+  en: Everforest
+author: Frost-rA9
+description: 把界面刷成 Everforest 官方配色：hard / medium / soft 三档对比度 × 明暗两面的 6 套调色板，154 个基础 token 全覆盖，代码块也用 Everforest 语法高亮色。在设置里选深度即可，Default 一键恢复内置配色；选择按浏览器记住，明暗还能交给系统。
+repo: https://github.com/Frost-rA9/dsh-theme-everforest
+package: "@local/dsh-theme-everforest"
+rowId: everforest-theme
+category: skin
+tags:
+  - everforest
+  - palette
+  - light-dark
+  - syntax
+  - token-theme
+modes:
+  - light
+  - dark
+install:
+  target: github:Frost-rA9/dsh-theme-everforest#d319b52cc99f4c0e6c77803386d656797c89e9e5
+  version: 1.0.0
+  commit: d319b52cc99f4c0e6c77803386d656797c89e9e5
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Frost-rA9/dsh-theme-everforest/d319b52cc99f4c0e6c77803386d656797c89e9e5/docs/previews/light-medium.png
+  - https://raw.githubusercontent.com/Frost-rA9/dsh-theme-everforest/d319b52cc99f4c0e6c77803386d656797c89e9e5/docs/previews/light-hard.png
+  - https://raw.githubusercontent.com/Frost-rA9/dsh-theme-everforest/d319b52cc99f4c0e6c77803386d656797c89e9e5/docs/previews/light-soft.png
+  - https://raw.githubusercontent.com/Frost-rA9/dsh-theme-everforest/d319b52cc99f4c0e6c77803386d656797c89e9e5/docs/previews/dark-hard.png
+  - https://raw.githubusercontent.com/Frost-rA9/dsh-theme-everforest/d319b52cc99f4c0e6c77803386d656797c89e9e5/docs/previews/dark-medium.png
+  - https://raw.githubusercontent.com/Frost-rA9/dsh-theme-everforest/d319b52cc99f4c0e6c77803386d656797c89e9e5/docs/previews/dark-soft.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1338
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/Frost-rA9/dsh-theme-everforest/d319b52cc99f4c0e6c77803386d656797c89e9e5/docs/previews/light-medium.png

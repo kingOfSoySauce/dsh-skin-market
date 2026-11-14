@@ -1,0 +1,53 @@
+id: sunjay.lee.dsh.k.on.pet
+name:
+  zh: 轻音少女桌宠
+  en: K-ON! Desk Pets
+author: sunjay-lee
+description: 五位轻音少女角色挂在界面上：可单选或全开，任意方位行走、四边出界回绕，单击播各自反应动作和中文台词，双击跳舞，还能拎起来甩出；茶桌可拖动、角色拖上去自动入座，在外溜达久了会自己走回座位。
+repo: https://github.com/sunjay-lee/dsh-k-on-pet
+package: dsh-k-on-pet
+rowId: dsh-k-on-pet
+category: pet
+tags:
+  - pet
+  - anime
+  - character
+modes:
+  - light
+  - dark
+install:
+  target: github:sunjay-lee/dsh-k-on-pet#d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2
+  version: 0.6.2
+  commit: d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2
+compatibility:
+  dsh: 0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2/docs/in-dsh.png
+  - https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2/docs/preview.png
+  - https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2/docs/table.png
+  - https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2/docs/settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1446
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2/docs/in-dsh.png

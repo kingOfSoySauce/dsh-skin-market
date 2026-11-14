@@ -1,0 +1,51 @@
+id: zshao56.dsh.theme.qianfu
+name:
+  zh: 潜伏
+  en: QIANFU
+author: zshao56
+description: 《潜伏》双配色主题：浅色「旧纸档案」是泛黄电报纸、铁胆墨水、墨绿西装与黄铜包角，深色「暗夜电台」是近黑墨绿、烟青台面、黄铜旋钮与压暗绛红，跟着外观设置切换。macOS 侧栏铺成纸色，底部挂一只原创「潜伏鲸」（礼帽、风衣领、红领带），上方站长金句卡每 5 分钟自动换一句，点击可立刻换。
+repo: https://github.com/zshao56/dsh-theme-qianfu
+package: dsh-theme-qianfu
+rowId: dsh-theme-qianfu
+category: skin
+tags:
+  - lurk
+  - paper
+  - muted
+  - mascot
+modes:
+  - light
+  - dark
+install:
+  target: github:zshao56/dsh-theme-qianfu#26ebfc76283ac08854527712839e9a8280c957c1
+  version: 0.5.0
+  commit: 26ebfc76283ac08854527712839e9a8280c957c1
+compatibility:
+  dsh: 0.2.0-rc.2 || 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zshao56/dsh-theme-qianfu/26ebfc76283ac08854527712839e9a8280c957c1/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1509
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/zshao56/dsh-theme-qianfu/26ebfc76283ac08854527712839e9a8280c957c1/preview.png

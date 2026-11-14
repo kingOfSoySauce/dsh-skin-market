@@ -1,0 +1,55 @@
+id: jerryqx.dsh.ximalaya
+name:
+  zh: 喜马拉雅播客播放器
+  en: Ximalaya Podcast Player
+author: jerryqx
+description: 在界面里边聊边听喜马拉雅：搜索专辑与有声书、翻曲目列表、一键播放，输入区上方常驻播放条支持上下集、快进快退、进度拖动、音量与 0.75–2x 倍速。订阅、收藏和关注会写回账号并与手机 App 同步，也能直接对 agent 说「播放三体」触发播放。
+repo: https://github.com/jerryqx/dsh-ximalaya
+package: dsh-ximalaya
+rowId: ximalaya-podcast
+category: player
+tags:
+  - player
+  - podcast
+  - music
+  - tool
+modes:
+  - light
+  - dark
+install:
+  target: github:jerryqx/dsh-ximalaya#2fbd8296e3032fe626f41e8ea2f56605ecf48d15
+  version: 0.5.2
+  commit: 2fbd8296e3032fe626f41e8ea2f56605ecf48d15
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/2fbd8296e3032fe626f41e8ea2f56605ecf48d15/assets/panel-search.png
+  - https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/2fbd8296e3032fe626f41e8ea2f56605ecf48d15/assets/panel-album.png
+  - https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/2fbd8296e3032fe626f41e8ea2f56605ecf48d15/assets/panel-mine-subs.png
+  - https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/2fbd8296e3032fe626f41e8ea2f56605ecf48d15/assets/panel-mine-anchors.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1366
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/2fbd8296e3032fe626f41e8ea2f56605ecf48d15/assets/panel-search.png

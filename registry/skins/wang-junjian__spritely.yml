@@ -1,0 +1,54 @@
+id: wang.junjian.spritely
+name:
+  zh: Spritely 精灵
+  en: Spritely
+author: wang-junjian
+description: 界面角落放一只会动的小精灵，随工作状态切姿态：待命、思考、撰写、调用工具、等你确认、出错，运行收尾时会庆祝一下；眼珠跟着鼠标，可拖到任意位置一键归位。四款角色（蓝球、薄荷机器人、猫咪、幽灵）可切换，背景支持纯色、渐变、图片 URL 与本地上传；在消息里划词会弹出复制、朗读、提问工具条。
+repo: https://github.com/wang-junjian/spritely
+package: "@wangjunjian/dsh-spritely"
+rowId: ui-sprite
+category: pet
+tags:
+  - mascot
+  - characters
+  - cursor
+  - background
+modes:
+  - light
+  - dark
+install:
+  target: github:wang-junjian/spritely#a4f700204daf2c2416cdac67adb69c9f753c50c2
+  version: 0.3.0
+  commit: a4f700204daf2c2416cdac67adb69c9f753c50c2
+compatibility:
+  dsh: ^0.1.0-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/wang-junjian/spritely/a4f700204daf2c2416cdac67adb69c9f753c50c2/images/dsh-plugin-spritely.webp
+  - https://raw.githubusercontent.com/wang-junjian/spritely/a4f700204daf2c2416cdac67adb69c9f753c50c2/images/demo1.webp
+  - https://raw.githubusercontent.com/wang-junjian/spritely/a4f700204daf2c2416cdac67adb69c9f753c50c2/images/demo2.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1470
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/wang-junjian/spritely/a4f700204daf2c2416cdac67adb69c9f753c50c2/images/dsh-plugin-spritely.webp

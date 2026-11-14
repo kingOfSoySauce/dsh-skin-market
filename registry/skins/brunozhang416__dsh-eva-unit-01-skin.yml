@@ -1,0 +1,58 @@
+id: brunozhang416.dsh.eva.unit.01.skin
+name:
+  zh: 初号机启动控制台
+  en: EVA Launch Console
+author: brunozhang416
+description: 打开先放「使徒、襲来」标题卡，点击起動后进入插入栓选驾驶员：同步环从 0 充满、手动接続開始，约 15.9 秒启动序列后进入驾驶舱主界面——余额映射成 EVA 电量、低于 ¥15 自动暴走，配色随初号机／二号机／零号机切换。
+repo: https://github.com/brunozhang416/dsh-eva-unit-01-skin
+package: dsh-eva-unit-01-skin
+rowId: eva-unit-01-skin
+category: skin
+tags:
+  - appearance
+  - anime
+  - motion
+modes:
+  - light
+  - dark
+install:
+  target: github:brunozhang416/dsh-eva-unit-01-skin#79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead
+  version: 1.10.16
+  commit: 79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/angel.jpg
+  - https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/cockpit-panel.jpg
+  - https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/pilot-gate.jpg
+  - https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/berserk-01.jpg
+  - https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/pilot-selected.jpg
+  - https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/launch-lcl.jpg
+  - https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/pilot-caption.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1305
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/angel.jpg

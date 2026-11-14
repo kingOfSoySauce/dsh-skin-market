@@ -1,0 +1,55 @@
+id: veduis.dsh.workspace.tints
+name:
+  zh: 工作区染色
+  en: Workspace Tints
+author: Veduis
+description: 给每个工作区一道暖冷渐变的淡色，标题下方出现 2px 色条，会话缩进成树状层级；有会话在你不在时跑完，整行变绿，打开即清除。设置里可把染色强度调成柔和、极淡或关闭，层级与完成提示始终保留。
+repo: https://github.com/Veduis/dsh-workspace-tints
+package: dsh-workspace-tints
+rowId: workspace-tints
+category: skin
+tags:
+  - workspace
+  - sidebar
+  - tints
+  - hierarchy
+  - unread
+modes:
+  - light
+  - dark
+install:
+  target: github:Veduis/dsh-workspace-tints#7363e26e949522fe0726e544e8c2a8ea3c312d62
+  version: 1.0.0
+  commit: 7363e26e949522fe0726e544e8c2a8ea3c312d62
+compatibility:
+  dsh: ^0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/7363e26e949522fe0726e544e8c2a8ea3c312d62/screenshots/cover.png
+  - https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/7363e26e949522fe0726e544e8c2a8ea3c312d62/screenshots/sidebar-dark.png
+  - https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/7363e26e949522fe0726e544e8c2a8ea3c312d62/screenshots/sidebar-light.png
+  - https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/7363e26e949522fe0726e544e8c2a8ea3c312d62/screenshots/settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1466
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/7363e26e949522fe0726e544e8c2a8ea3c312d62/screenshots/cover.png

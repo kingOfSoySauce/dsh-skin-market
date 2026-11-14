@@ -1,0 +1,51 @@
+id: oldnana1.dsh.theme.edgerunners
+name:
+  zh: 边缘行者
+  en: Edgerunners
+author: OLDnana1
+description: 以 Lucy 的神经链接终端为灵感的暗色主题：输入栏是八角切角 HUD，粉→紫→青霓虹流光压在墨黑玻璃上，用户气泡带黄色渐变八角边、AI 气泡挂粉色神经链接状态头，右下角有瑞贝卡立绘和可开的斯安威斯坦鼠标残影，右侧 SYSTEM_STATUS 面板每秒刷新。
+repo: https://github.com/OLDnana1/dsh-theme-edgerunners
+package: dsh-theme-edgerunners
+rowId: theme-edgerunners
+category: skin
+tags:
+  - appearance
+  - anime
+  - dark
+modes:
+  - dark
+install:
+  target: github:OLDnana1/dsh-theme-edgerunners#6224537ec1ebe50aa5136a91368eaa43d593dad4
+  version: 0.1.0
+  commit: 6224537ec1ebe50aa5136a91368eaa43d593dad4
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/OLDnana1/dsh-theme-edgerunners/6224537ec1ebe50aa5136a91368eaa43d593dad4/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1419
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/OLDnana1/dsh-theme-edgerunners/6224537ec1ebe50aa5136a91368eaa43d593dad4/preview.png

@@ -1,0 +1,52 @@
+id: weixiurui.dsh.firefly.forest
+name:
+  zh: 萤火森林
+  en: Firefly Forest
+author: weixiurui
+description: 界面后方一层夏夜灌木林：一夜压缩成 45 分钟的夜之流，入夜、深夜、将明依次推进，色温、雾、月光、虫量与声音连续变化；全局风场每 16–42 秒一阵，驱动草叶、雾、落叶、雨丝和萤火虫。萤火虫各有色温、闪频与作息，靠近会「对闪」，被照亮的蛾子、猫头鹰或狐狸会引来光团；还有月相月光、每天首次打开的苏醒、偶发蛛网，以及刺猬、小熊猫、小浣熊三种每 70–180 秒路过的小动物。
+repo: https://github.com/weixiurui/dsh-firefly-forest
+package: dsh-firefly-forest
+rowId: dsh-firefly-forest
+category: skin
+tags:
+  - firefly
+  - ambient
+  - canvas
+  - night
+  - wind
+modes:
+  - dark
+install:
+  target: github:weixiurui/dsh-firefly-forest#171bc52776781a88cbf3cc381a4cc47bf7d4f140
+  version: 0.10.1
+  commit: 171bc52776781a88cbf3cc381a4cc47bf7d4f140
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/weixiurui/dsh-firefly-forest/171bc52776781a88cbf3cc381a4cc47bf7d4f140/assets/screenshot-1.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1471
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/weixiurui/dsh-firefly-forest/171bc52776781a88cbf3cc381a4cc47bf7d4f140/assets/screenshot-1.png

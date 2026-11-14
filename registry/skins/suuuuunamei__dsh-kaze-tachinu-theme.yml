@@ -1,0 +1,53 @@
+id: suuuuunamei.dsh.kaze.tachinu.theme
+name:
+  zh: 起风了
+  en: Kaze Tachinu
+author: suuuuunamei
+description: 宫崎骏《起风了》主题：天蓝玻璃拟态界面配电影壁纸与自绘徽标，输入卡、会话统计胶囊、40px 底部渐隐和滚动条都重绘；壁纸、徽标、占位文案与强调色可在设置里替换，主题强制深色玻璃视觉、亮暗共用一套。
+repo: https://github.com/suuuuunamei/dsh-kaze-tachinu-theme
+package: dsh-kaze-tachinu-theme
+rowId: kaze-tachinu-theme
+category: skin
+tags:
+  - ghibli
+  - glass
+  - wallpaper
+  - custom-assets
+modes:
+  - dark
+install:
+  target: github:suuuuunamei/dsh-kaze-tachinu-theme#c6cd5f969838c9bd992df35bc3d13b7c4615a89b
+  version: 1.0.0
+  commit: c6cd5f969838c9bd992df35bc3d13b7c4615a89b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/suuuuunamei/dsh-kaze-tachinu-theme/c6cd5f969838c9bd992df35bc3d13b7c4615a89b/docs/screenshots/home-hero.png
+  - https://raw.githubusercontent.com/suuuuunamei/dsh-kaze-tachinu-theme/c6cd5f969838c9bd992df35bc3d13b7c4615a89b/docs/screenshots/chat-main.png
+  - https://raw.githubusercontent.com/suuuuunamei/dsh-kaze-tachinu-theme/c6cd5f969838c9bd992df35bc3d13b7c4615a89b/assets/current.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1449
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/suuuuunamei/dsh-kaze-tachinu-theme/c6cd5f969838c9bd992df35bc3d13b7c4615a89b/docs/screenshots/home-hero.png

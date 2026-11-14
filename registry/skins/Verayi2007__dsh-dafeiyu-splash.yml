@@ -1,0 +1,55 @@
+id: verayi2007.dsh.dafeiyu.splash
+name:
+  zh: 大肥鱼启动动画
+  en: Bigfish Splash
+author: Verayi2007
+description: 启动时的一段五拍片头：大肥鱼娘先从屏幕底边探头，看清是你后一下冲到面前占满整屏，再退回舞台缩回原大小，冲你挥手说「嗨～」，2.9 秒字标落款、3.05 秒一道高光扫过，4.6 秒收幕。整段 5 秒由一条关键帧镜头驱动，点击、按键或滚轮随时跳过，跟随系统减少动态效果。
+repo: https://github.com/Verayi2007/dsh-dafeiyu-splash
+package: dsh-dafeiyu-splash
+rowId: dafeiyu-splash
+category: splash
+tags:
+  - splash
+  - character
+  - animation
+  - skippable
+  - css
+modes:
+  - light
+  - dark
+install:
+  target: github:Verayi2007/dsh-dafeiyu-splash#bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3
+  version: 1.1.0
+  commit: bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Verayi2007/dsh-dafeiyu-splash/bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3/docs/preview.png
+  - https://raw.githubusercontent.com/Verayi2007/dsh-dafeiyu-splash/bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3/docs/preview-end.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1469
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/Verayi2007/dsh-dafeiyu-splash/bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3/docs/preview.png

@@ -1,0 +1,53 @@
+id: kurohanekaoruko.dsh.start
+name:
+  zh: 终端自检启动
+  en: Terminal Self-Check Boot
+author: KurohaneKaoruko
+description: 启动时约 4 秒「安全启动」过场：白色字符雨铺满整屏，左侧终端逐行打印自检日志，进度条解压到 100% 后闪出 ACCESS GRANTED，整屏淡出进入界面；任意点击或按键跳过，同一会话只播一次。
+repo: https://github.com/KurohaneKaoruko/DSH-START
+package: dsh-boot-sequence
+rowId: dsh-boot-sequence
+category: splash
+tags:
+  - boot
+  - animation
+  - retro
+modes:
+  - light
+  - dark
+install:
+  target: github:KurohaneKaoruko/DSH-START#b85f3e30aefd81846ab8a98f707a2270a21b8c0e
+  version: 0.1.0
+  commit: b85f3e30aefd81846ab8a98f707a2270a21b8c0e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/KurohaneKaoruko/DSH-START/b85f3e30aefd81846ab8a98f707a2270a21b8c0e/docs/boot.png
+  - https://raw.githubusercontent.com/KurohaneKaoruko/DSH-START/b85f3e30aefd81846ab8a98f707a2270a21b8c0e/docs/granted.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1380
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/KurohaneKaoruko/DSH-START/b85f3e30aefd81846ab8a98f707a2270a21b8c0e/docs/boot.png

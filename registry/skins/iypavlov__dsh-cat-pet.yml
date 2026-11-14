@@ -1,0 +1,54 @@
+id: iypavlov.dsh.cat.pet
+name:
+  zh: 猫咪桌宠
+  en: Cat Companion
+author: iypavlov
+description: 猫咪桌宠浮在界面上层，可以拖着换位置并记住坐标；空闲时坐着，智能体思考时躺下睡觉，回合结束或你开始打字再醒来。npm 与 GitHub 两种装法，装完重启生效。
+repo: https://github.com/iypavlov/dsh-cat-pet
+package: dsh-cat-pet
+rowId: cat-pet
+category: pet
+tags:
+  - cat
+  - pet
+  - drag
+  - sleep
+  - npm
+modes:
+  - light
+  - dark
+install:
+  target: github:iypavlov/dsh-cat-pet#d5ff1a24d342e6ff26657ec9afb1f106d20de1d8
+  version: 0.1.0
+  commit: d5ff1a24d342e6ff26657ec9afb1f106d20de1d8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/iypavlov/dsh-cat-pet/d5ff1a24d342e6ff26657ec9afb1f106d20de1d8/assets/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1359
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/iypavlov/dsh-cat-pet/d5ff1a24d342e6ff26657ec9afb1f106d20de1d8/assets/preview.png

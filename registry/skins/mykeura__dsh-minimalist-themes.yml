@@ -1,0 +1,58 @@
+id: mykeura.dsh.minimalist.themes
+name:
+  zh: 极简暖色主题集
+  en: Minimalist Warm Themes
+author: mykeura
+description: 18 套暖色极简配色，在插件详情页的主题选择器里点色板即应用、选重置恢复内置主题；应用级浅色/深色/系统外观仍由「设置 → 通用 → 外观」单独控制。
+repo: https://github.com/mykeura/dsh-minimalist-themes
+package: "@mykeura/dsh-minimalist-themes"
+rowId: minimalist-themes
+category: skin
+tags:
+  - minimalist
+  - warm
+  - palettes
+  - picker
+modes:
+  - light
+  - dark
+install:
+  target: github:mykeura/dsh-minimalist-themes#cef41ce4e22b0dcb5537b21b7beae11f3e858a2b
+  version: 1.1.1
+  commit: cef41ce4e22b0dcb5537b21b7beae11f3e858a2b
+compatibility:
+  dsh: 0.2.2-alpha.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/dsh-minimalist-themes.gif
+  - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/minimalist-beetroot-juice.jpg
+  - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/minimalist-coffee-with-milk.jpg
+  - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/minimalist-oceans.jpg
+  - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/minimalist-yuzu.jpg
+  - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/minimalist-blackberry-juice.jpg
+  - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/minimalist-cornmeal-porridge.jpg
+  - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/minimalist-diana-yin.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1407
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/dsh-minimalist-themes.gif

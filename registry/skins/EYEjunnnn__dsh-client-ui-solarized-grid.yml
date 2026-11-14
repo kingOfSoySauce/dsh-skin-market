@@ -1,0 +1,57 @@
+id: eyejunnnn.dsh.client.ui.solarized.grid
+name:
+  zh: Solarized 网格纸
+  en: Solarized Grid Paper
+author: EYEjunnnn
+description: 把主题表里的 201 项颜色变量重映射成 Solarized：浅色是淡青卡片配墨色左边条，深色是象牙卡片配朱橙边条，对话滚动区铺 75px 主线加 15px 细线的网格纸，正文对比度压到 8.77:1。
+repo: https://github.com/EYEjunnnn/dsh-client-ui-solarized-grid
+package: dsh-client-ui-solarized-grid
+rowId: ui-solarized-grid
+category: skin
+tags:
+  - solarized
+  - grid
+  - typography
+  - light-dark
+  - bubbles
+modes:
+  - light
+  - dark
+install:
+  target: github:EYEjunnnn/dsh-client-ui-solarized-grid#a4d2d51bf13dc5721faa7099337b967f25010e6b
+  version: 1.0.0
+  commit: a4d2d51bf13dc5721faa7099337b967f25010e6b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/EYEjunnnn/dsh-client-ui-solarized-grid/a4d2d51bf13dc5721faa7099337b967f25010e6b/docs/light.png
+  - https://raw.githubusercontent.com/EYEjunnnn/dsh-client-ui-solarized-grid/a4d2d51bf13dc5721faa7099337b967f25010e6b/docs/dark.png
+  - https://raw.githubusercontent.com/EYEjunnnn/dsh-client-ui-solarized-grid/a4d2d51bf13dc5721faa7099337b967f25010e6b/docs/bubble-light.png
+  - https://raw.githubusercontent.com/EYEjunnnn/dsh-client-ui-solarized-grid/a4d2d51bf13dc5721faa7099337b967f25010e6b/docs/bubble-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1330
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/EYEjunnnn/dsh-client-ui-solarized-grid/a4d2d51bf13dc5721faa7099337b967f25010e6b/docs/light.png

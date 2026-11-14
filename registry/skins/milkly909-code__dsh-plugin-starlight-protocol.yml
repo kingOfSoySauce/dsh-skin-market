@@ -1,0 +1,54 @@
+id: milkly909.code.dsh.plugin.starlight.protocol
+name:
+  zh: 星轨协议 2077
+  en: Starlight Protocol
+author: milkly909-code
+description: 星轨协议 2077 外观套件：深空动态天体背景（银河带、3D 星座网、三档航速）叠加赛博朋克 HUD 主题（霓虹青与战术金黄、切角轮廓、合成音效），启动时播放特工档案鉴权序列，无边框窗口下还补了侧栏折叠按钮；代号与播报可在设置里配置。
+repo: https://github.com/milkly909-code/dsh-plugin-starlight-protocol
+package: dsh-plugin-starlight-protocol
+rowId: dsh-plugin-starlight-protocol
+category: skin
+tags:
+  - space
+  - cyberpunk
+  - hud
+  - boot
+  - wallpaper
+modes:
+  - dark
+install:
+  target: github:milkly909-code/dsh-plugin-starlight-protocol#eb2febdff32261bc3b5c133907eb6b91cf2f2a14
+  version: 1.0.3
+  commit: eb2febdff32261bc3b5c133907eb6b91cf2f2a14
+compatibility:
+  dsh: ">=0.2.1-rc.3 <0.3.0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/milkly909-code/dsh-plugin-starlight-protocol/eb2febdff32261bc3b5c133907eb6b91cf2f2a14/assets/app-expanded.png
+  - https://raw.githubusercontent.com/milkly909-code/dsh-plugin-starlight-protocol/eb2febdff32261bc3b5c133907eb6b91cf2f2a14/assets/app-folded.png
+  - https://raw.githubusercontent.com/milkly909-code/dsh-plugin-starlight-protocol/eb2febdff32261bc3b5c133907eb6b91cf2f2a14/assets/startup-intro.png
+  - https://raw.githubusercontent.com/milkly909-code/dsh-plugin-starlight-protocol/eb2febdff32261bc3b5c133907eb6b91cf2f2a14/assets/startup-auth.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1398
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/milkly909-code/dsh-plugin-starlight-protocol/eb2febdff32261bc3b5c133907eb6b91cf2f2a14/assets/app-expanded.png

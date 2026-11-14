@@ -1,0 +1,53 @@
+id: sinthome768.dsh.skin.soviet.constructivism
+name:
+  zh: 苏联构成主义
+  en: Soviet Constructivism
+author: sinthome768
+description: 理性红、黑、纸面的构成主义海报层：硬边规则线、放射光束、动态对角线、半调网点与工业剪影，配色收在红、黑、米三色。它注册进皮肤注册表，和内置明暗皮肤出现在同一个主题选择器里；未选中时不生效，切回默认主题会干净卸载。
+repo: https://github.com/sinthome768/dsh-skin-soviet-constructivism
+package: dsh-skin-soviet-constructivism
+rowId: ui-skin-soviet-constructivism
+category: skin
+tags:
+  - constructivism
+  - poster
+  - red
+  - official
+modes:
+  - light
+  - dark
+install:
+  target: github:sinthome768/dsh-skin-soviet-constructivism#e9877a5f8750bc7c63d5e4e5036499b712c231d1
+  version: 0.1.2
+  commit: e9877a5f8750bc7c63d5e4e5036499b712c231d1
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/sinthome768/dsh-skin-soviet-constructivism/e9877a5f8750bc7c63d5e4e5036499b712c231d1/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1439
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/sinthome768/dsh-skin-soviet-constructivism/e9877a5f8750bc7c63d5e4e5036499b712c231d1/preview.png

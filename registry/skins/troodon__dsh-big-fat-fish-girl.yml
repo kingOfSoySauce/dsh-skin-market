@@ -1,0 +1,59 @@
+id: troodon.dsh.big.fat.fish.girl
+name:
+  zh: 大肥鱼女孩
+  en: Big Fat Fish Girl
+author: troodon
+description: 透明置顶窗口里的桌宠：主界面最小化时仍浮在其他应用之上，跟随所有会话的活动，展示当前工作、工具调用、请求、完成与出错；有请求时优先显示等待动画，完成后显示服务商上报的输入输出 token。空闲有视线跟随、悬停反应、随机动作、睡觉与偶发横移，连续工作 3–5 分钟可出现零食动画；点击她把主界面唤回到上次会话。支持英/俄/简中，尺寸 88–172px。
+repo: https://github.com/troodon/dsh-big-fat-fish-girl
+package: big-fat-fish-girl
+rowId: big-fat-fish-girl
+category: pet
+tags:
+  - desktop-pet
+  - activity
+  - token-usage
+  - macos
+modes:
+  - light
+  - dark
+install:
+  target: github:troodon/dsh-big-fat-fish-girl#cd82c2e956746985365637dc2b3f2c987cc22663
+  version: 0.8.0
+  commit: cd82c2e956746985365637dc2b3f2c987cc22663
+compatibility:
+  dsh: 0.2.0-rc.2 || 0.2.0-rc.2.md
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/session.gif
+  - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/working.gif
+  - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/snack.gif
+  - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/sleep.gif
+  - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/waiting.gif
+  - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/tools.gif
+  - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/wallet.gif
+  - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/poses.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: Unlicense
+  commercialUse: true
+featuredRank: 1460
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/session.gif

@@ -1,0 +1,53 @@
+id: lrplrplrp.dsh.live2d
+name:
+  zh: Live2D 看板娘工坊
+  en: Live2D Waifu Studio
+author: lrplrplrp
+description: 在页面里渲染可拖动的 Live2D 看板娘：内置的 DeepSeek 造型模型按思考、工作、输出、完成、出错切换动作与表情，视线跟随鼠标，可拖拽缩放、调整画布，设置页能改动画映射；把含 model3.json 的模型文件夹放进 assets 即被自动识别。
+repo: https://github.com/lrplrplrp/dsh-live2d
+package: "@lrplrplrp/dsh-live2d"
+rowId: "@lrplrplrp/dsh-live2d"
+category: skin
+tags:
+  - live2d
+  - waifu
+  - states
+  - settings
+  - model-import
+modes:
+  - light
+  - dark
+install:
+  target: github:lrplrplrp/dsh-live2d#1ba6522a18408716a5c71a81575503ddad9b96be
+  version: 0.1.4
+  commit: 1ba6522a18408716a5c71a81575503ddad9b96be
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lrplrplrp/dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/docs/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1391
+starsSnapshot: 6
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/lrplrplrp/dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/docs/preview.png

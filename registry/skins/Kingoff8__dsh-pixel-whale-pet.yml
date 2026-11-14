@@ -1,0 +1,61 @@
+id: kingoff8.dsh.pixel.whale.pet
+name:
+  zh: 像素小鲸鱼
+  en: Pixel Whale Calf
+author: Kingoff8
+description: 像素小鲸鱼在聊天区空白处游动，躲开消息文字和鼠标，跟着思考、输出、工具调用、等待、完成、出错等阶段换动作；偶尔喷水、戴耳机听歌，回合完成时放一场彩色烟花。纯前端，无后端服务。
+repo: https://github.com/Kingoff8/dsh-pixel-whale-pet
+package: dsh-pixel-whale-pet
+rowId: dsh-pixel-whale-pet
+category: pet
+tags:
+  - pixel
+  - whale
+  - pet
+  - states
+  - fireworks
+modes:
+  - light
+  - dark
+install:
+  target: github:Kingoff8/dsh-pixel-whale-pet#70756ac1ae745e919767feeb5e0d3a2222acd40b
+  version: 1.1.0
+  commit: 70756ac1ae745e919767feeb5e0d3a2222acd40b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Kingoff8/dsh-pixel-whale-pet/70756ac1ae745e919767feeb5e0d3a2222acd40b/docs/preview-states.png
+  - https://raw.githubusercontent.com/Kingoff8/dsh-pixel-whale-pet/70756ac1ae745e919767feeb5e0d3a2222acd40b/docs/preview-live.png
+  - https://raw.githubusercontent.com/Kingoff8/dsh-pixel-whale-pet/70756ac1ae745e919767feeb5e0d3a2222acd40b/docs/preview-writing.png
+  - https://raw.githubusercontent.com/Kingoff8/dsh-pixel-whale-pet/70756ac1ae745e919767feeb5e0d3a2222acd40b/docs/preview-fountain.png
+  - https://raw.githubusercontent.com/Kingoff8/dsh-pixel-whale-pet/70756ac1ae745e919767feeb5e0d3a2222acd40b/docs/preview-firework.png
+  - https://raw.githubusercontent.com/Kingoff8/dsh-pixel-whale-pet/70756ac1ae745e919767feeb5e0d3a2222acd40b/docs/preview-drag.png
+  - https://raw.githubusercontent.com/Kingoff8/dsh-pixel-whale-pet/70756ac1ae745e919767feeb5e0d3a2222acd40b/docs/thinking-mouth-check.png
+  - https://raw.githubusercontent.com/Kingoff8/dsh-pixel-whale-pet/70756ac1ae745e919767feeb5e0d3a2222acd40b/docs/preview-music.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1379
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/Kingoff8/dsh-pixel-whale-pet/70756ac1ae745e919767feeb5e0d3a2222acd40b/docs/preview-states.png

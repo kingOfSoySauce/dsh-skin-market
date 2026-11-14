@@ -1,0 +1,53 @@
+id: t.ms.reyes.dsh.dstuber
+name:
+  zh: 鲸鱼娘语音桌宠
+  en: Whale Voice Pet
+author: T-MS-Reyes
+description: Windows 桌面上的 Live2D 桌宠：透明置顶窗口可拖动、双击换表情、右键开设置，16 种情绪逐句切换，嘴型按音节驱动；回答用 Edge TTS 或本地 GPT-SoVITS 念出，内置两套鲸鱼娘模型，也能上传自己的模型。
+repo: https://github.com/T-MS-Reyes/dsh-DSTuber
+package: dsh-dstuber
+rowId: dsh-dstuber
+category: pet
+tags:
+  - live2d
+  - pet
+  - tts
+  - lipsync
+  - windows
+modes:
+  - light
+  - dark
+install:
+  target: github:T-MS-Reyes/dsh-DSTuber#ebdb2aa1112276c50bd970b3b63c86825bccd754
+  version: 0.1.0
+  commit: ebdb2aa1112276c50bd970b3b63c86825bccd754
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/T-MS-Reyes/dsh-DSTuber/ebdb2aa1112276c50bd970b3b63c86825bccd754/assets/big-fish.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1451
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/T-MS-Reyes/dsh-DSTuber/ebdb2aa1112276c50bd970b3b63c86825bccd754/assets/big-fish.png

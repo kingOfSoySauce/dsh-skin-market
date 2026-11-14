@@ -1,0 +1,54 @@
+id: lizhuangcoding.dsh.chicken.pet
+name:
+  zh: 像素鸡
+  en: Pixel Chicken
+author: lizhuangCoding
+description: 一只原创像素鸡住在界面里：干活时搬砖、思考时托腮、等你回复时翘首，闲下来会按加权随机轮换打盹、踱步、啄米、抖毛、转球、投篮等十种待机动作。共 20 个动作、每行最多 8 帧，全部由代码程序化绘制；活跃度、位置与大小可调。
+repo: https://github.com/lizhuangCoding/dsh-chicken-pet
+package: dsh-chicken-pet
+rowId: chicken-pet
+category: pet
+tags:
+  - pet
+  - pixel
+  - animation
+  - autonomous
+modes:
+  - light
+  - dark
+install:
+  target: github:lizhuangCoding/dsh-chicken-pet#320f094343aa46f63f384305ed6a94af0a301df1
+  version: 0.15.0
+  commit: 320f094343aa46f63f384305ed6a94af0a301df1
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lizhuangCoding/dsh-chicken-pet/320f094343aa46f63f384305ed6a94af0a301df1/docs/rows-ball.png
+  - https://raw.githubusercontent.com/lizhuangCoding/dsh-chicken-pet/320f094343aa46f63f384305ed6a94af0a301df1/docs/rows-work.png
+  - https://raw.githubusercontent.com/lizhuangCoding/dsh-chicken-pet/320f094343aa46f63f384305ed6a94af0a301df1/docs/settings-card.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1388
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/lizhuangCoding/dsh-chicken-pet/320f094343aa46f63f384305ed6a94af0a301df1/docs/rows-ball.png

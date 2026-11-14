@@ -1,0 +1,50 @@
+id: chenbocheng2568.dot.dsh.threebody.skin
+name:
+  zh: 三体片头皮肤
+  en: Three-Body Intro Skin
+author: chenbocheng2568-dot
+description: 《三体》启动片头冷调换肤：近黑蓝底（#05070b）、冰白与钢灰文字、唯一冷青强调色（#86d6ff）；片尾群山远景做成三层虚影叠在界面上——天空静帧、canvas 星空绕天极四小时一圈、带透明度的山峦静帧。输入框上缘右侧有水滴领队、七艘战舰三角编队；虚影浓度、星空转速、四角光晕与舰队各有开关。
+repo: https://github.com/chenbocheng2568-dot/dsh-threebody-skin
+package: dsh-threebody-skin
+rowId: skin-threebody
+category: skin
+tags:
+  - three-body
+  - sci-fi
+  - starfield
+  - dark
+modes:
+  - dark
+install:
+  target: github:chenbocheng2568-dot/dsh-threebody-skin#563f7271f8e86e0b5c2f8a223e7ba6aad2f42132
+  version: 0.2.0
+  commit: 563f7271f8e86e0b5c2f8a223e7ba6aad2f42132
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-skin/563f7271f8e86e0b5c2f8a223e7ba6aad2f42132/docs/skin-hero.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1311
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-skin/563f7271f8e86e0b5c2f8a223e7ba6aad2f42132/docs/skin-hero.jpg

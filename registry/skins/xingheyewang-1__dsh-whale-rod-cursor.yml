@@ -1,0 +1,56 @@
+id: xingheyewang.1.dsh.whale.rod.cursor
+name:
+  zh: 鱼竿鲸鱼娘
+  en: Fishing Rod Whale Girl
+author: xingheyewang-1
+description: 把系统光标换成一根鱼竿，线上吊着 Q 版鲸鱼娘：鼠标移动她就猛拽、甩飞、荡几下收回，甩猛了冒出字随力度变大的萌语气泡，停下演「钓鱼佬又空军了」小剧场；鱼竿会按悬停对象变色（输入区青绿、按钮淡金、按下橙红），还会跟着会话状态切平时 / 在忙 / 干完了三种姿态。
+repo: https://github.com/xingheyewang-1/dsh-whale-rod-cursor
+package: dsh-whale-rod-cursor
+rowId: rod-cursor
+category: pet
+tags:
+  - pet
+  - cursor
+  - spring-physics
+  - poses
+  - whale
+modes:
+  - light
+  - dark
+install:
+  target: github:xingheyewang-1/dsh-whale-rod-cursor#31a493da7e3063375cf52fc6423c846fe785c431
+  version: 0.1.11
+  commit: 31a493da7e3063375cf52fc6423c846fe785c431
+compatibility:
+  dsh: ^0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/%E5%85%A8%E6%99%AF.png
+  - https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/%E9%B1%BC%E7%AB%BF%E6%88%AA%E5%9B%BE1.png
+  - https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/%E9%B2%B8%E9%B1%BC%E5%A8%98%E7%89%B9%E5%86%99.png
+  - https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/%E5%B0%8F%E5%89%A7%E5%9C%BA.png
+  - https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/schematic.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1483
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/%E5%85%A8%E6%99%AF.png

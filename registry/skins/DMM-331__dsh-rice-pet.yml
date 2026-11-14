@@ -1,0 +1,54 @@
+id: dmm.331.dsh.rice.pet
+name:
+  zh: 鲸鱼娘吃白饭
+  en: Rice-Eating Whale Maid
+author: DMM-331
+description: 鲸鱼娘桌宠：模型生成时一口一口吃白饭，跑工具时放下碗记笔记，等你审批时挥手，出错会噎住；macOS 与 Windows 上能走出窗口待在桌面任意角落，每完成一轮攒一颗饵，右键下海捞宝（36 件宝物、5 档稀有度）。
+repo: https://github.com/DMM-331/dsh-rice-pet
+package: dsh-rice-pet
+rowId: whale-rice
+category: pet
+tags:
+  - whale
+  - pet
+  - desktop-overlay
+  - treasure
+  - macos-windows
+modes:
+  - light
+  - dark
+install:
+  target: github:DMM-331/dsh-rice-pet#f6149c4134f6e92e1f974fcc688b3c98bd88d17e
+  version: 0.2.8
+  commit: f6149c4134f6e92e1f974fcc688b3c98bd88d17e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/DMM-331/dsh-rice-pet/f6149c4134f6e92e1f974fcc688b3c98bd88d17e/art/previews/eat.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1322
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/DMM-331/dsh-rice-pet/f6149c4134f6e92e1f974fcc688b3c98bd88d17e/art/previews/eat.gif

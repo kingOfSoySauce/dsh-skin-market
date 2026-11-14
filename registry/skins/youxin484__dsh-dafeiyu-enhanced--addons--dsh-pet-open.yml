@@ -1,0 +1,53 @@
+id: youxin484.dsh.pet.open
+name:
+  zh: 打开桌宠
+  en: Open Pet Button
+author: youxin484
+description: 在输入框工具行、模型强度变阻器左侧加一个「打开桌宠」按钮，一键把被「本次隐藏」藏起来、又没有恢复入口的桌宠叫回来。点击后调用桌宠的配置接口：先尝试启用，必要时关再开触发 helper 重启，失败重试三次，并保证最终恢复到启用状态；composer 空间紧张时只留图标。
+repo: https://github.com/youxin484/dsh-dafeiyu-enhanced
+subpath: addons/dsh-pet-open
+package: dsh-pet-open
+rowId: dsh-pet-open
+category: pet
+tags:
+  - pet
+  - composer
+  - button
+  - companion
+modes:
+  - light
+  - dark
+install:
+  target: github:youxin484/dsh-dafeiyu-enhanced#e4006c754b40570ddaa8bb5d2d1ed16cdd2e8af2&path:/addons/dsh-pet-open
+  version: 1.0.0
+  commit: e4006c754b40570ddaa8bb5d2d1ed16cdd2e8af2
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/youxin484/dsh-dafeiyu-enhanced/e4006c754b40570ddaa8bb5d2d1ed16cdd2e8af2/docs/images/hardware-plate.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1493
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/youxin484/dsh-dafeiyu-enhanced/e4006c754b40570ddaa8bb5d2d1ed16cdd2e8af2/docs/images/hardware-plate.png

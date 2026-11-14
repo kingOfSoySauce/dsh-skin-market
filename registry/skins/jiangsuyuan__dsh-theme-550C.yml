@@ -1,0 +1,52 @@
+id: jiangsuyuan.dsh.theme.550c
+name:
+  zh: 550C 控制台
+  en: 550C Console
+author: jiangsuyuan
+description: 把界面换成《流浪地球》550C 控制台风格：青黑表面、冷白遥测文字、单一琥珀指令色，全部直角、结构线 2px；日夜强制同一套深色配色，装好即生效，不注册主题选择器。
+repo: https://github.com/jiangsuyuan/dsh-theme-550C
+package: "@jiangsuyuan/dsh-theme-550c"
+rowId: dsh-theme-550c
+category: skin
+tags:
+  - sci-fi
+  - wandering-earth
+  - console
+  - dark
+  - tokens
+modes:
+  - dark
+install:
+  target: github:jiangsuyuan/dsh-theme-550C#c8f00e9f6d889f67e7fa83312c43a3d67c0079d8
+  version: 1.0.0
+  commit: c8f00e9f6d889f67e7fa83312c43a3d67c0079d8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/jiangsuyuan/dsh-theme-550C/c8f00e9f6d889f67e7fa83312c43a3d67c0079d8/docs/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1367
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/jiangsuyuan/dsh-theme-550C/c8f00e9f6d889f67e7fa83312c43a3d67c0079d8/docs/preview.png

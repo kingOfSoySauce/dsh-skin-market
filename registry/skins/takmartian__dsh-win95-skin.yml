@@ -1,0 +1,54 @@
+id: takmartian.dsh.win95.skin
+name:
+  zh: Windows 95
+  en: Windows 95
+author: takmartian
+description: "把界面重画成 Windows 95 应用：银灰 #c0c0c0 外壳、白色文档区、深蓝 #000080 标题栏与选中块，2px 凸起/凹陷斜角用在按钮、菜单、对话框和输入框；经典 16px 滚动条配像素箭头与 50% 抖动轨道，手绘 16×16 像素图标，字体换成 Fusion Pixel 12px（OFL），不联网加载。"
+repo: https://github.com/takmartian/dsh-win95-skin
+package: dsh_win95_skin
+rowId: dsh_win95_skin
+category: skin
+tags:
+  - windows95
+  - retro
+  - pixel
+  - bevel
+  - font
+modes:
+  - light
+  - dark
+install:
+  target: github:takmartian/dsh-win95-skin#15200f7be7a045226aec6185b826250efd491c6c
+  version: 0.4.1
+  commit: 15200f7be7a045226aec6185b826250efd491c6c
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/takmartian/dsh-win95-skin/15200f7be7a045226aec6185b826250efd491c6c/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1452
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/takmartian/dsh-win95-skin/15200f7be7a045226aec6185b826250efd491c6c/preview.png

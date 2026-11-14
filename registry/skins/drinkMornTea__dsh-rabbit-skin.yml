@@ -1,0 +1,53 @@
+id: drinkmorntea.dsh.rabbit.skin
+name:
+  zh: 木屋白兔
+  en: Cabin Rabbit
+author: drinkMornTea
+description: 窗口变成木屋一角：奶油色纸张叠在深棕木板上，白兔站在右下角，体重五档可从设置里的滑杆或输入框右侧短滑杆调，从清瘦喂到膨胀；浅色、深色两套配色随主题切换，五张图在构建时内联进包。
+repo: https://github.com/drinkMornTea/dsh-rabbit-skin
+package: dsh-rabbit-skin
+rowId: rabbit-skin
+category: skin
+tags:
+  - appearance
+  - light-dark
+  - character
+modes:
+  - light
+  - dark
+install:
+  target: github:drinkMornTea/dsh-rabbit-skin#d440c249c8afdfe42074a62401290423612c76f0
+  version: 0.1.0
+  commit: d440c249c8afdfe42074a62401290423612c76f0
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/drinkMornTea/dsh-rabbit-skin/d440c249c8afdfe42074a62401290423612c76f0/docs/preview-light.webp
+  - https://raw.githubusercontent.com/drinkMornTea/dsh-rabbit-skin/d440c249c8afdfe42074a62401290423612c76f0/docs/preview-dark.webp
+  - https://raw.githubusercontent.com/drinkMornTea/dsh-rabbit-skin/d440c249c8afdfe42074a62401290423612c76f0/docs/settings-row.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1325
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/drinkMornTea/dsh-rabbit-skin/d440c249c8afdfe42074a62401290423612c76f0/docs/preview-light.webp

@@ -1,0 +1,57 @@
+id: doya16.dsh.shorekeeper
+name:
+  zh: 守岸人桌宠
+  en: Shorekeeper Pet
+author: Doya16
+description: 鸣潮守岸人桌宠：思考、查阅、编写、执行、等待回应、完成、报错与暂停各有表情，完成或出错时用语音回应；内置三套共 83 个 GIF、40 段音频、54 组语音字幕配对与两款字体。摸头、双击、拖动、投喂可分别绑定 GIF、音频与气泡，底部余额框点按刷新。仅 Windows 10/11 x64 本机 Harness，首次需下载约 229 MiB 完整程序。
+repo: https://github.com/Doya16/dsh-shorekeeper
+package: dsh-shorekeeper
+rowId: shorekeeper
+category: pet
+tags:
+  - desktop-pet
+  - wuthering-waves
+  - voice
+  - gif
+  - windows
+modes:
+  - light
+  - dark
+install:
+  target: github:Doya16/dsh-shorekeeper#3f429ffe25806656a3d549aa6515cbb6b5c515f0
+  version: 1.2.7
+  commit: 3f429ffe25806656a3d549aa6515cbb6b5c515f0
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/social/showcase.gif
+  - https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/social/cover-landscape.jpg
+  - https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/social/multi-project.jpg
+  - https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/images/full-settings.png
+  - https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/social/lock-click-through.jpg
+  - https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/social/size-preview.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1324
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/social/showcase.gif

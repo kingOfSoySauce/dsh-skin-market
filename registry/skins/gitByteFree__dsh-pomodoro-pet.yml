@@ -1,0 +1,57 @@
+id: gitbytefree.dsh.pomodoro.pet
+name:
+  zh: 番茄精灵
+  en: Pomodoro Pet
+author: gitByteFree
+description: 番茄钟加四象限任务的效率插件，附一只 emoji 版番茄精灵：每完成一轮专注就涨经验，从小苗一路进化到彩虹王；标准 25／深度 50／冲刺 15 分钟三档，也可自定义 5–120 分钟，底部胶囊常驻倒计时，18 个成就解锁 4 套装扮。
+repo: https://github.com/gitByteFree/dsh-pomodoro-pet
+package: dsh-pomodoro-pet
+rowId: pomodoro-pet
+category: pet
+tags:
+  - pomodoro
+  - focus
+  - tasks
+  - emoji
+  - growth
+modes:
+  - light
+  - dark
+install:
+  target: github:gitByteFree/dsh-pomodoro-pet#98b8f529e5d451162ab57e61c6a0f4d8145842c3
+  version: 0.10.0
+  commit: 98b8f529e5d451162ab57e61c6a0f4d8145842c3
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/gitByteFree/dsh-pomodoro-pet/98b8f529e5d451162ab57e61c6a0f4d8145842c3/png/focus-panel.png
+  - https://raw.githubusercontent.com/gitByteFree/dsh-pomodoro-pet/98b8f529e5d451162ab57e61c6a0f4d8145842c3/png/pet-capsule.png
+  - https://raw.githubusercontent.com/gitByteFree/dsh-pomodoro-pet/98b8f529e5d451162ab57e61c6a0f4d8145842c3/png/settings.png
+  - https://cdn.jsdelivr.net/gh/gitByteFree/dsh-pomodoro-pet@main/png/focus-panel.png
+  - https://cdn.jsdelivr.net/gh/gitByteFree/dsh-pomodoro-pet@main/png/pet-capsule.png
+  - https://cdn.jsdelivr.net/gh/gitByteFree/dsh-pomodoro-pet@main/png/settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1345
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/gitByteFree/dsh-pomodoro-pet/98b8f529e5d451162ab57e61c6a0f4d8145842c3/png/focus-panel.png

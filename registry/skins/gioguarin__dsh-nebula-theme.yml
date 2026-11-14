@@ -1,0 +1,55 @@
+id: gioguarin.dsh.nebula.theme
+name:
+  zh: Nebula 主题
+  en: Nebula Theme
+author: gioguarin
+description: 靛紫夜空铺满页面上方，底部一条活火线随状态起伏：空闲时只留低伏余烬，会话运行时火焰前沿升起，浮动聊天窗也带上余烬边框；暗色阅读纱保证正文对比度，输入区做成玻璃板让火光透出。火焰场 256×112，空闲 12fps、运行 30fps，明暗两种模式都覆盖同一套配色，减少动态效果时火焰静止。
+repo: https://github.com/gioguarin/dsh-nebula-theme
+package: "@local/nebula-theme"
+rowId: nebula-theme
+category: skin
+tags:
+  - nebula
+  - ember
+  - animated
+  - canvas
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:gioguarin/dsh-nebula-theme#e4f9745ce0259394aa09edbf4668a814b45e941b
+  version: 1.0.0
+  commit: e4f9745ce0259394aa09edbf4668a814b45e941b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/gioguarin/dsh-nebula-theme/e4f9745ce0259394aa09edbf4668a814b45e941b/preview/new-chat.png
+  - https://raw.githubusercontent.com/gioguarin/dsh-nebula-theme/e4f9745ce0259394aa09edbf4668a814b45e941b/preview/chat-idle.png
+  - https://raw.githubusercontent.com/gioguarin/dsh-nebula-theme/e4f9745ce0259394aa09edbf4668a814b45e941b/preview/chat-thinking.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1344
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/gioguarin/dsh-nebula-theme/e4f9745ce0259394aa09edbf4668a814b45e941b/preview/new-chat.png

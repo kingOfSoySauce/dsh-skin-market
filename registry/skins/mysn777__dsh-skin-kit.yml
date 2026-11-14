@@ -1,0 +1,58 @@
+id: mysn777.dsh.skin.kit
+name:
+  zh: 皮肤工坊
+  en: Skin Workshop
+author: mysn777
+description: 装一次就能在界面里换皮肤：十套内置壁纸皮肤（云海星球、比奇堡晴日、冰川河谷、富士夜色等），点卡片即时生效不用重启；面板不透明度、壁纸模糊与亮度三个滑杆实时调参；也能把自己的图片或 mp4/webm 视频做成新皮肤，调好的方案可导出 .dshskin 分享、导入即还原。
+repo: https://github.com/mysn777/dsh-skin-kit
+package: dsh-skin-kit
+rowId: ui-skin-kit
+category: skin
+tags:
+  - wallpaper
+  - presets
+  - diy
+  - live-tuning
+modes:
+  - light
+  - dark
+install:
+  target: github:mysn777/dsh-skin-kit#4ab35b9fb9f85e380207d95f3525c5a8873e5ebb
+  version: 0.2.0
+  commit: 4ab35b9fb9f85e380207d95f3525c5a8873e5ebb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/mysn777/dsh-skin-kit/4ab35b9fb9f85e380207d95f3525c5a8873e5ebb/docs/images/social-preview.jpg
+  - https://raw.githubusercontent.com/mysn777/dsh-skin-kit/4ab35b9fb9f85e380207d95f3525c5a8873e5ebb/skins/assets/glacier-river.webp
+  - https://raw.githubusercontent.com/mysn777/dsh-skin-kit/4ab35b9fb9f85e380207d95f3525c5a8873e5ebb/skins/assets/fuji-night.webp
+  - https://raw.githubusercontent.com/mysn777/dsh-skin-kit/4ab35b9fb9f85e380207d95f3525c5a8873e5ebb/skins/assets/cloud-orbit.webp
+  - https://raw.githubusercontent.com/mysn777/dsh-skin-kit/4ab35b9fb9f85e380207d95f3525c5a8873e5ebb/skins/assets/ocean-avenue.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1410
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/mysn777/dsh-skin-kit/4ab35b9fb9f85e380207d95f3525c5a8873e5ebb/docs/images/social-preview.jpg

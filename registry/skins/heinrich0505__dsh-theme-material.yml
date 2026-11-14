@@ -1,0 +1,59 @@
+id: heinrich0505.dsh.theme.material
+name:
+  zh: Material 配色包
+  en: Material Palette Pack
+author: heinrich0505
+description: 一个 token 引擎从十个输入推出整套颜色，共八套主题：Palenight、Ocean、Darker、Lighter、Catppuccin Latte、Vitesse、Snazzy、GitHub Gray。设置 → 通用 → 主题里点色卡即换，选深色主题时会把外观一起切到深色。每套自动补齐另一侧的明暗版本，正文对比度不低于 7:1。
+repo: https://github.com/heinrich0505/dsh-theme-material
+package: dsh-theme-material
+rowId: theme-material
+category: skin
+tags:
+  - material
+  - palettes
+  - light-dark
+  - tokens
+modes:
+  - light
+  - dark
+install:
+  target: github:heinrich0505/dsh-theme-material#a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc
+  version: 0.4.2
+  commit: a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/heinrich0505/dsh-theme-material/a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc/assets/theme-palenight.png
+  - https://raw.githubusercontent.com/heinrich0505/dsh-theme-material/a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc/assets/theme-ocean.png
+  - https://raw.githubusercontent.com/heinrich0505/dsh-theme-material/a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc/assets/theme-darker.png
+  - https://raw.githubusercontent.com/heinrich0505/dsh-theme-material/a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc/assets/theme-lighter.png
+  - https://raw.githubusercontent.com/heinrich0505/dsh-theme-material/a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc/assets/theme-latte.png
+  - https://raw.githubusercontent.com/heinrich0505/dsh-theme-material/a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc/assets/theme-vitesse.png
+  - https://raw.githubusercontent.com/heinrich0505/dsh-theme-material/a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc/assets/theme-snazzy.png
+  - https://raw.githubusercontent.com/heinrich0505/dsh-theme-material/a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc/assets/theme-github-gray.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1350
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/heinrich0505/dsh-theme-material/a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc/assets/theme-palenight.png

@@ -1,0 +1,56 @@
+id: yuna78.dsh.maoxuan.pet
+name:
+  zh: 鲸鱼娘小毛
+  en: Xiao Mao Pet
+author: yuna78
+description: 鲸鱼娘小毛桌宠：每小时挑一篇毛选，配一句督促和一条当天能验证的启示，红皮书气泡可回翻；自带 33 篇公开语料与「毛选创业参谋」预设，引文逐字命中才使用，macOS 上点一下还能让她站到桌面。
+repo: https://github.com/yuna78/dsh-maoxuan-pet
+package: dsh-plugin-maoxuan-pet
+rowId: dsh-maoxuan-pet
+category: pet
+tags:
+  - mao
+  - whale
+  - pet
+  - quotes
+  - macos
+modes:
+  - light
+  - dark
+install:
+  target: github:yuna78/dsh-maoxuan-pet#96992650af1f5e78025b991ef6cf303830ef6bea
+  version: 0.3.2
+  commit: 96992650af1f5e78025b991ef6cf303830ef6bea
+compatibility:
+  dsh: ">=0.2.1-rc.2 <0.3.0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/docs/screenshot-hero.png
+  - https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/assets/pet-idle.png
+  - https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/assets/pet-talk.png
+  - https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/assets/pet-blink.png
+  - https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/assets/pet-read.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1497
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/docs/screenshot-hero.png

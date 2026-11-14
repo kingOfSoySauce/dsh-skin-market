@@ -1,0 +1,52 @@
+id: talulra.dsh.wallpaper.glass
+name:
+  zh: 桌面壁纸透出
+  en: Desktop Wallpaper Reveal
+author: talulra
+description: 把本机桌面壁纸透到界面后面：窗口变半透明，壁纸按屏幕位置像素对齐（窗口像桌面上挖的洞），跟随系统壁纸与填充方式实时更新，并按壁纸明暗自动调整遮罩；对话框、菜单面板与内嵌浏览器保持不透明。右下角可拖动 ◐ 胶囊控制壁纸显隐、三档透明度、0/8/16/28px 虚化、对齐开关与重置，设置存本机。
+repo: https://github.com/talulra/dsh-wallpaper-glass
+package: dsh-wallpaper-glass
+rowId: ui-wallpaper-glass
+category: skin
+tags:
+  - wallpaper
+  - translucent
+  - pixel-aligned
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:talulra/dsh-wallpaper-glass#9b7dd37708e16feac99076769849d121411a6c11
+  version: 0.5.4
+  commit: 9b7dd37708e16feac99076769849d121411a6c11
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/talulra/dsh-wallpaper-glass/9b7dd37708e16feac99076769849d121411a6c11/assets/screenshot-1.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1453
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/talulra/dsh-wallpaper-glass/9b7dd37708e16feac99076769849d121411a6c11/assets/screenshot-1.png

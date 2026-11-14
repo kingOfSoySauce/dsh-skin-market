@@ -1,0 +1,52 @@
+id: sunshinezhi.dsh.scifi.splash
+name:
+  zh: 科幻片头
+  en: Sci-Fi Splash
+author: sunshinezhi
+description: 浅色新拟态界面：淡粉紫蓝渐变打底，白卡配柔和双层阴影与内高光，输入框、按钮、开关同步换肤，品牌标识改为粉→紫→蓝渐变，对话区右下角留一枚半透明 Q 版鱼水印。启动时另有深空科幻片头：HUD 线、进度条和 CLICK TO SKIP，覆盖聊天、插件市场、设置、语音克隆与宠物页。
+repo: https://github.com/sunshinezhi/dsh-scifi-splash
+package: dsh-scifi-splash
+rowId: scifi-blue
+category: splash
+tags:
+  - neumorphic
+  - splash
+  - light
+  - sci-fi
+modes:
+  - light
+  - dark
+install:
+  target: github:sunshinezhi/dsh-scifi-splash#f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c
+  version: 1.2.0
+  commit: f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/sunshinezhi/dsh-scifi-splash/f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c/screenshot-1.png
+  - https://raw.githubusercontent.com/sunshinezhi/dsh-scifi-splash/f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c/screenshot-2.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1447
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/sunshinezhi/dsh-scifi-splash/f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c/screenshot-1.png

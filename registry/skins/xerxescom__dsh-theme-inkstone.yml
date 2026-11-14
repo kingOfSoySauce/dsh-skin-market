@@ -1,0 +1,53 @@
+id: xerxescom.dsh.theme.inkstone
+name:
+  zh: 砚
+  en: Inkstone
+author: xerxescom
+description: 暖墨加一点朱砂：纸白暖中性阶（OKLCH 80°）承担表面，一个朱砂红承担全部强调色，注册 inkstone-light 与 inkstone-dark 两个可选主题，默认浅色，可在设置里切回原主题。149 个 token 加 8 个非颜色声明按明暗成对写出，38 组前景/背景配对按合成后的颜色算 WCAG 对比度并全部抬到下限之上；可选背景图默认关闭，开启后铺图、盖同色遮罩并加 3px 模糊。
+repo: https://github.com/xerxescom/dsh-theme-inkstone
+package: dsh-theme-inkstone
+rowId: dsh-theme-inkstone
+category: skin
+tags:
+  - inkstone
+  - cinnabar
+  - contrast
+  - tokens
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:xerxescom/dsh-theme-inkstone#6d354719010986ca0fbeebca3f5f0379b4319e46
+  version: 0.2.0
+  commit: 6d354719010986ca0fbeebca3f5f0379b4319e46
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xerxescom/dsh-theme-inkstone/6d354719010986ca0fbeebca3f5f0379b4319e46/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1480
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/xerxescom/dsh-theme-inkstone/6d354719010986ca0fbeebca3f5f0379b4319e46/preview.png

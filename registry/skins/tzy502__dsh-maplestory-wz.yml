@@ -1,0 +1,54 @@
+id: tzy502.dsh.maplestory.wz
+name:
+  zh: 冒险岛 WZ 工坊
+  en: MapleStory WZ Studio
+author: tzy502
+description: 读取本机冒险岛客户端的 WZ 数据：分类浏览与中英文名搜索、怪物／NPC／装备图鉴、动作精灵图与 GIF、纸娃娃（16 部位 + 2500 把椅子）、聊天气泡和可平移的地图背景，另外在界面上浮一只会走动的桌宠，坐姿由所选椅子驱动。
+repo: https://github.com/tzy502/dsh-maplestory-wz
+package: dsh-maplestory-wz
+rowId: maplestory-wz
+category: pet
+tags:
+  - pet
+  - pixel
+  - retro
+modes:
+  - light
+  - dark
+install:
+  target: github:tzy502/dsh-maplestory-wz#5a2aeb0dbba8b4b5d701a2bed428f30f9ed25e11
+  version: 1.0.0
+  commit: 5a2aeb0dbba8b4b5d701a2bed428f30f9ed25e11
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/tzy502/dsh-maplestory-wz/5a2aeb0dbba8b4b5d701a2bed428f30f9ed25e11/docs/screenshots/01-paper-doll.png
+  - https://raw.githubusercontent.com/tzy502/dsh-maplestory-wz/5a2aeb0dbba8b4b5d701a2bed428f30f9ed25e11/docs/screenshots/02-background.png
+  - https://raw.githubusercontent.com/tzy502/dsh-maplestory-wz/5a2aeb0dbba8b4b5d701a2bed428f30f9ed25e11/docs/screenshots/03-update.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1461
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/tzy502/dsh-maplestory-wz/5a2aeb0dbba8b4b5d701a2bed428f30f9ed25e11/docs/screenshots/01-paper-doll.png

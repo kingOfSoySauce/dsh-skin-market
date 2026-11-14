@@ -1,0 +1,53 @@
+id: unknownue.dsh.skin.endfield
+name:
+  zh: 终末地工业
+  en: Endfield Industrial
+author: unknownue
+description: "以终末地平面设计语言重绘整站：深色工业画布 #191919 配信号黄 #FFFA00，直角面板、发丝线、角括号、// 区块前缀、45° 斜线和黄绿焦点描边；内置 Jost、Michroma、JetBrains Mono 三款开源字体与自绘徽标。设置里共 15 项，可调强调色、描边辉光、圆角、印版模式与位置、自定义图片（≤2MB）等，另有一套派生浅色。"
+repo: https://github.com/unknownue/dsh-skin-endfield
+package: dsh-skin-endfield
+rowId: skin-endfield
+category: skin
+tags:
+  - endfield
+  - industrial
+  - fonts
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:unknownue/dsh-skin-endfield#c7ca061e86ccf03277f1e1522605ec6628474402
+  version: 0.1.5
+  commit: c7ca061e86ccf03277f1e1522605ec6628474402
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/unknownue/dsh-skin-endfield/c7ca061e86ccf03277f1e1522605ec6628474402/docs/images/skin-themes.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1462
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/unknownue/dsh-skin-endfield/c7ca061e86ccf03277f1e1522605ec6628474402/docs/images/skin-themes.png

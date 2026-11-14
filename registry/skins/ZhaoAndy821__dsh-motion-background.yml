@@ -1,0 +1,53 @@
+id: zhaoandy821.dsh.motion.background
+name:
+  zh: 动态背景引擎
+  en: Motion Background Engine
+author: ZhaoAndy821
+description: 把对话界面底色换成实时演算画面或一段素材：着色器型用 WebGL2/GLSL 逐帧出画，媒体型用 mp4、webm、gif 或图片铺底；每个效果是 mods 目录里的一个文件夹，放进去就多一个效果，视频可选循环或往返播放。
+repo: https://github.com/ZhaoAndy821/dsh-motion-background
+package: dsh-motion-background
+rowId: motion-background
+category: skin
+tags:
+  - dynamic-background
+  - shader
+  - media
+  - mods
+  - settings-page
+modes:
+  - light
+  - dark
+install:
+  target: github:ZhaoAndy821/dsh-motion-background#73f77106486ddf69b7f6bc5881e9582c36f9dc53
+  version: 0.1.0
+  commit: 73f77106486ddf69b7f6bc5881e9582c36f9dc53
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ZhaoAndy821/dsh-motion-background/73f77106486ddf69b7f6bc5881e9582c36f9dc53/docs/preview/meteor.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1506
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/ZhaoAndy821/dsh-motion-background/73f77106486ddf69b7f6bc5881e9582c36f9dc53/docs/preview/meteor.gif

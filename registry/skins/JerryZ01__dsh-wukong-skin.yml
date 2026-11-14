@@ -1,0 +1,54 @@
+id: jerryz01.dsh.wukong.skin
+name:
+  zh: 如意金箍棒
+  en: Ruyi Jingu Bang
+author: JerryZ01
+description: 输入框右侧多一条强度滑轨，拖动时孙悟空从石猴、美猴王、齐天大圣、孙行者、斗战胜佛一路走到斗战胜祖：31 帧人像逐级变化，界面配色在石白、赭石、蟠桃金、丹炉火、黑金之间插值，深浅主题与人像同步。滑轨档位直接读当前模型的推理等级，跨果位播一句台词，朗读默认关闭。
+repo: https://github.com/JerryZ01/dsh-wukong-skin
+package: "@daily-vibe/dsh-client-wukong-intensity-skin"
+rowId: wukong-intensity-skin
+category: skin
+tags:
+  - wukong
+  - slider
+  - reasoning-effort
+  - portraits
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:JerryZ01/dsh-wukong-skin#514ac46910167ac72565c7b668a566a9726e1317
+  version: 0.1.0
+  commit: 514ac46910167ac72565c7b668a566a9726e1317
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JerryZ01/dsh-wukong-skin/514ac46910167ac72565c7b668a566a9726e1317/assets/ladder-preview.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1365
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/JerryZ01/dsh-wukong-skin/514ac46910167ac72565c7b668a566a9726e1317/assets/ladder-preview.jpg

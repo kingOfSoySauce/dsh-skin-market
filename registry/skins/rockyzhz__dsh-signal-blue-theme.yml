@@ -1,0 +1,53 @@
+id: rockyzhz.dsh.signal.blue.theme
+name:
+  zh: 信号蓝
+  en: Signal Blue
+author: rockyzhz
+description: "给界面的瑞士风配色：纸色、墨色和四档中性灰承担层次，只留一个强调色 #1B3BFF；浅色是冷白纸配淡蓝侧栏，深色是深蓝夜底 #0F1A35 而不是纯黑。圆角收到 2–12px、阴影换成发丝线、字体以 Inter 优先，明暗仍由设置里的外观控制。"
+repo: https://github.com/rockyzhz/dsh-signal-blue-theme
+package: dsh-signal-blue-theme
+rowId: dsh-signal-blue-theme
+category: skin
+tags:
+  - theme
+  - swiss
+  - minimal
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:rockyzhz/dsh-signal-blue-theme#0898a097e376abd5790ecd20ae6694af70a2332c
+  version: 1.1.0
+  commit: 0898a097e376abd5790ecd20ae6694af70a2332c
+compatibility:
+  dsh: ^0.2.1-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/rockyzhz/dsh-signal-blue-theme/0898a097e376abd5790ecd20ae6694af70a2332c/assets/zh/preview-light.png
+  - https://raw.githubusercontent.com/rockyzhz/dsh-signal-blue-theme/0898a097e376abd5790ecd20ae6694af70a2332c/assets/zh/preview-dark.png
+  - https://raw.githubusercontent.com/rockyzhz/dsh-signal-blue-theme/0898a097e376abd5790ecd20ae6694af70a2332c/assets/zh/preview-sidebar.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1433
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+starsUpdatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T11:59:04.760Z
+listScreenshot: https://raw.githubusercontent.com/rockyzhz/dsh-signal-blue-theme/0898a097e376abd5790ecd20ae6694af70a2332c/assets/zh/preview-light.png

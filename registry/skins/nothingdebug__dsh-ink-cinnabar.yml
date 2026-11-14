@@ -1,0 +1,53 @@
+id: nothingdebug.dsh.ink.cinnabar
+name:
+  zh: 墨与朱砂
+  en: Ink & Cinnabar
+author: nothingdebug
+description: 国风主题：朱砂作强调、鎏金作描边、墨与宣纸作底，宣纸（浅）与墨夜（深）两套配色完整覆盖别名令牌；搭配玻璃壁纸插件时对话区自动加压底，壁纸只播一遍并定格，进入新会话再播。
+repo: https://github.com/nothingdebug/dsh-ink-cinnabar
+package: dsh-ink-cinnabar
+rowId: ink-cinnabar
+category: skin
+tags:
+  - chinese-style
+  - ink
+  - theme
+  - cinnabar
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:nothingdebug/dsh-ink-cinnabar#6e6dcf408dd16c34498de4d9eb20246d4bf9cb39
+  version: 0.1.0
+  commit: 6e6dcf408dd16c34498de4d9eb20246d4bf9cb39
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/nothingdebug/dsh-ink-cinnabar/6e6dcf408dd16c34498de4d9eb20246d4bf9cb39/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1417
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/nothingdebug/dsh-ink-cinnabar/6e6dcf408dd16c34498de4d9eb20246d4bf9cb39/preview.png

@@ -1,0 +1,58 @@
+id: f.0426.dsh.theme.dishuhai
+name:
+  zh: 抵数海
+  en: Dishuhai
+author: F-0426
+description: "双模式主题：深色是终末地工业风，近黑底 #0d0d0c 配信号黄 #ffef00、等高线地形纹理与 88px 网格、三段色工业条；浅色照官网配色做白蓝卡片、呼吸网格和 14px 大圆角气泡。启动页也跟着切：深色「抵数海」错落字标配黄条进度与黄块扫屏，浅色 2600 个粒子汇聚成白鲸再眨一下眼。"
+repo: https://github.com/F-0426/dsh-theme-dishuhai
+package: dsh-theme-dishuhai
+rowId: dishuhai-theme
+category: skin
+tags:
+  - dual-mode
+  - industrial
+  - corporate
+  - splash
+  - contour
+modes:
+  - light
+  - dark
+install:
+  target: github:F-0426/dsh-theme-dishuhai#7b6c2ea19553a96808177b32907c7875089b3d12
+  version: 1.0.0
+  commit: 7b6c2ea19553a96808177b32907c7875089b3d12
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-compare.png
+  - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-splash-dark.png
+  - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-splash-light.png
+  - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-dark.png
+  - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-light.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: CC-BY-NC-4.0
+  commercialUse: false
+featuredRank: 1331
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-compare.png

@@ -1,0 +1,54 @@
+id: felixjiashengfu.dsh.preview.theme
+name:
+  zh: 文档预览配色
+  en: Document Preview Palette
+author: FelixJiashengFu
+description: 给侧边栏里的 PDF、Word、PPT 和 Excel 预览换纸张底色：纯黑、墨黑、深灰、午夜蓝、墨绿、护眼米黄、豆沙绿、淡蓝、淡粉，或用取色器自选；深色方案带 70–120% 亮度滑杆，选择记在浏览器里，只改显示、不动文件。
+repo: https://github.com/FelixJiashengFu/dsh-preview-theme
+package: dsh-preview-theme
+rowId: preview-theme
+category: skin
+tags:
+  - appearance
+  - palette
+  - utility
+modes:
+  - light
+  - dark
+install:
+  target: github:FelixJiashengFu/dsh-preview-theme#ae68fc9cebe6541b03d7f87c4d1fe459773138a7
+  version: 0.1.0
+  commit: ae68fc9cebe6541b03d7f87c4d1fe459773138a7
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/FelixJiashengFu/dsh-preview-theme/ae68fc9cebe6541b03d7f87c4d1fe459773138a7/docs/pdf-black.png
+  - https://raw.githubusercontent.com/FelixJiashengFu/dsh-preview-theme/ae68fc9cebe6541b03d7f87c4d1fe459773138a7/docs/pdf-sepia.png
+  - https://raw.githubusercontent.com/FelixJiashengFu/dsh-preview-theme/ae68fc9cebe6541b03d7f87c4d1fe459773138a7/docs/xlsx-black.png
+  - https://raw.githubusercontent.com/FelixJiashengFu/dsh-preview-theme/ae68fc9cebe6541b03d7f87c4d1fe459773138a7/docs/xlsx-sky.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1333
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/FelixJiashengFu/dsh-preview-theme/ae68fc9cebe6541b03d7f87c4d1fe459773138a7/docs/pdf-black.png

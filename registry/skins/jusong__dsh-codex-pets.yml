@@ -1,0 +1,53 @@
+id: jusong.dsh.codex.pets
+name:
+  zh: 小鲸鱼桌面宠物
+  en: Whale Desktop Pet
+author: jusong
+description: 一只小鲸鱼浮在 macOS 桌面所有窗口之上：点它把主窗口带到前台，拖着换位置，闲置时自己演小动作，系统开了「减少动态」就只显示静态帧。设置里能换宠物、调 80–260px 大小，另有最近会话球、右键新会话输入框和 Command+Option+N 快捷键。
+repo: https://github.com/jusong/dsh-codex-pets
+package: dsh-codex-pets
+rowId: dsh-codex-pets
+category: pet
+tags:
+  - pet
+  - desktop
+  - whale
+  - macos
+  - electron
+modes:
+  - light
+  - dark
+install:
+  target: github:jusong/dsh-codex-pets#e33edd41fe393cde14b3dc17d9e4bd2413aee834
+  version: 0.13.0
+  commit: e33edd41fe393cde14b3dc17d9e4bd2413aee834
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/jusong/dsh-codex-pets/e33edd41fe393cde14b3dc17d9e4bd2413aee834/pets/deepseek-whale/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1373
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/jusong/dsh-codex-pets/e33edd41fe393cde14b3dc17d9e4bd2413aee834/pets/deepseek-whale/preview.png

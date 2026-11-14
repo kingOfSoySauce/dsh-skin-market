@@ -1,0 +1,56 @@
+id: yuanawaqwq.dsh.columbina.pet
+name:
+  zh: 哥伦比娅桌宠
+  en: Columbina Pet
+author: Yuanawaqwq
+description: 把《原神》愚人众第三席「少女」哥伦比娅放进桌面：浮在窗口最上层，拖动时有真实物理摆动，四套 2D live 形象和 14 张表情包随时换；右键菜单管音量、夜间勿扰、省电、素材自检、设置和待机动作。76 句中/日/英台词用官方原声，字幕跟实际播放进度走，还会按时间与场景播报天气。语音包与 Helper 运行时按文档安装，tarball 约 148MB。
+repo: https://github.com/Yuanawaqwq/dsh-columbina-pet
+package: dsh-columbina-pet
+rowId: dsh-columbina-pet
+category: pet
+tags:
+  - genshin
+  - columbina
+  - desktop-pet
+  - voice
+  - physics
+modes:
+  - light
+  - dark
+install:
+  target: github:Yuanawaqwq/dsh-columbina-pet#32db68b48f7f4bdf5d90435af744a9e790159a7c
+  version: 1.2.2
+  commit: 32db68b48f7f4bdf5d90435af744a9e790159a7c
+compatibility:
+  dsh: 0.2.2-rc.1 || 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Yuanawaqwq/dsh-columbina-pet/32db68b48f7f4bdf5d90435af744a9e790159a7c/docs/screenshots/01-desktop.png
+  - https://raw.githubusercontent.com/Yuanawaqwq/dsh-columbina-pet/32db68b48f7f4bdf5d90435af744a9e790159a7c/docs/screenshots/02-menu.png
+  - https://raw.githubusercontent.com/Yuanawaqwq/dsh-columbina-pet/32db68b48f7f4bdf5d90435af744a9e790159a7c/docs/screenshots/03-skins.png
+  - https://raw.githubusercontent.com/Yuanawaqwq/dsh-columbina-pet/32db68b48f7f4bdf5d90435af744a9e790159a7c/docs/screenshots/04-settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1495
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/Yuanawaqwq/dsh-columbina-pet/32db68b48f7f4bdf5d90435af744a9e790159a7c/docs/screenshots/01-desktop.png

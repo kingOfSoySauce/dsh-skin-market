@@ -1,0 +1,56 @@
+id: zhengmin486.dsh.desktop.pet
+name:
+  zh: 悬浮球桌宠
+  en: Floating Ball Pet
+author: zhengmin486
+description: 系统级悬浮球：平时是一颗小鲸鱼球，鼠标移上去向右展开成灵动岛，上方显示账户余额、下方是精确到秒的运行时长，最右侧齿轮点开设置面板，拖滑块同时改悬浮球与灵动岛大小（40–96px）。单击球把主窗口叫到最前；可换 GIF/PNG 图标，检测到游戏全屏自动隐藏，托盘菜单与开机自启齐全。
+repo: https://github.com/zhengmin486/dsh-desktop-pet
+package: dsh-desktop-pet
+rowId: ui-settings-dsh-desktop-pet
+category: pet
+tags:
+  - pet
+  - desktop
+  - floating-ball
+  - balance
+  - uptime
+modes:
+  - light
+  - dark
+install:
+  target: github:zhengmin486/dsh-desktop-pet#ca7a1824cd5fdf483c7249bde26802b5e66c6aef
+  version: 0.2.19
+  commit: ca7a1824cd5fdf483c7249bde26802b5e66c6aef
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zhengmin486/dsh-desktop-pet/ca7a1824cd5fdf483c7249bde26802b5e66c6aef/docs/01-idle.png
+  - https://raw.githubusercontent.com/zhengmin486/dsh-desktop-pet/ca7a1824cd5fdf483c7249bde26802b5e66c6aef/docs/02-hover.png
+  - https://raw.githubusercontent.com/zhengmin486/dsh-desktop-pet/ca7a1824cd5fdf483c7249bde26802b5e66c6aef/docs/03-panel.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1505
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/zhengmin486/dsh-desktop-pet/ca7a1824cd5fdf483c7249bde26802b5e66c6aef/docs/01-idle.png

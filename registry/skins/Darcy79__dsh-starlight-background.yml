@@ -1,0 +1,57 @@
+id: darcy79.dsh.starlight.background
+name:
+  zh: 星轨光感
+  en: Starlight Field
+author: Darcy79
+description: 覆盖整个窗口的星轨光场：右侧海风插画随呼吸轻摆长发与裙边、鲸尾绕连接处轻摆，约每 4–8 秒眨一次眼；流星按推理深度联动，按档位固定 2/4/7/10 颗，另有周期流星与高亮「新想法」流星。右下角齿轮独立控制总开关、流星与插画动效，Alt+L 也可开关；开启后输入框变玻璃，深浅色各有插画透明度。
+repo: https://github.com/Darcy79/dsh-starlight-background
+package: dsh-starlight-background
+rowId: dsh-starlight-background
+category: skin
+tags:
+  - dynamic-background
+  - illustration
+  - meteors
+  - light-dark
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:Darcy79/dsh-starlight-background#d94fb04e1625da13614cd2b337e5c109a5159587
+  version: 0.4.1
+  commit: d94fb04e1625da13614cd2b337e5c109a5159587
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Darcy79/dsh-starlight-background/d94fb04e1625da13614cd2b337e5c109a5159587/media/starlight-motion.gif
+  - https://raw.githubusercontent.com/Darcy79/dsh-starlight-background/d94fb04e1625da13614cd2b337e5c109a5159587/media/in-harness.png
+  - https://raw.githubusercontent.com/Darcy79/dsh-starlight-background/d94fb04e1625da13614cd2b337e5c109a5159587/media/dsh-browser.png
+  - https://raw.githubusercontent.com/Darcy79/dsh-starlight-background/d94fb04e1625da13614cd2b337e5c109a5159587/media/settings-panel.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1316
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Darcy79/dsh-starlight-background/d94fb04e1625da13614cd2b337e5c109a5159587/media/starlight-motion.gif

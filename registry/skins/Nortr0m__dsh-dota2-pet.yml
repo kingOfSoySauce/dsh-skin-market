@@ -1,0 +1,55 @@
+id: nortr0m.dsh.dota2.pet
+name:
+  zh: Dota 2 桌宠
+  en: Dota 2 Pet
+author: Nortr0m
+description: 在界面上养一只 Dota 2 英雄：包内自带 3 个英雄共 786 帧离线烘焙动作（待机、跑动、攻击、技能、死亡、胜利），不装游戏也能用；配好账号后按你最近常用的英雄出场，会和会话状态联动，Windows 下还能贴到桌面。
+repo: https://github.com/Nortr0m/dsh-dota2-pet
+package: dsh-dota2-pet
+rowId: dota2-pet
+category: pet
+tags:
+  - dota2
+  - game
+  - heroes
+  - animation
+  - windows
+modes:
+  - light
+  - dark
+install:
+  target: github:Nortr0m/dsh-dota2-pet#9d2b22a83107416f3ac68fa0055fa7d45c5a6f8c
+  version: 0.2.7
+  commit: 9d2b22a83107416f3ac68fa0055fa7d45c5a6f8c
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Nortr0m/dsh-dota2-pet/9d2b22a83107416f3ac68fa0055fa7d45c5a6f8c/docs/heroes_preview.png
+  - https://raw.githubusercontent.com/Nortr0m/dsh-dota2-pet/9d2b22a83107416f3ac68fa0055fa7d45c5a6f8c/docs/cosmetics_dress_test.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1415
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/Nortr0m/dsh-dota2-pet/9d2b22a83107416f3ac68fa0055fa7d45c5a6f8c/docs/heroes_preview.png

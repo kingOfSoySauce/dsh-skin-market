@@ -1,0 +1,55 @@
+id: awahara.dsh.plugin.boot.splash
+name:
+  zh: HUD 启动序列
+  en: HUD Boot Sequence
+author: Awahara
+description: 应用挂载完成后在界面上播一段约 3.8 秒的 HUD 引导序列：深空渐变、缓慢漂移的网格与透视地板、三组反向旋转的刻度环、进度弧、自绘六边形和鲸标，HARNESS 字标逐字揭示，左下角滚动 ok/linked/online 启动日志；点击或 Esc、空格、回车可跳过，每个标签页只播一次，系统减少动态效果时缩短到约 1.4 秒。
+repo: https://github.com/Awahara/dsh-plugin-boot-splash
+package: dsh-plugin-boot-splash
+rowId: ui-boot-splash
+category: splash
+tags:
+  - hud
+  - boot
+  - sci-fi
+  - grid
+  - whale
+modes:
+  - light
+  - dark
+install:
+  target: github:Awahara/dsh-plugin-boot-splash#bba4c684c048396cc5cfec26f0ca6d520f5c04dc
+  version: 1.0.0
+  commit: bba4c684c048396cc5cfec26f0ca6d520f5c04dc
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Awahara/dsh-plugin-boot-splash/bba4c684c048396cc5cfec26f0ca6d520f5c04dc/docs/screenshots/draw.png
+  - https://raw.githubusercontent.com/Awahara/dsh-plugin-boot-splash/bba4c684c048396cc5cfec26f0ca6d520f5c04dc/docs/screenshots/run.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1298
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Awahara/dsh-plugin-boot-splash/bba4c684c048396cc5cfec26f0ca6d520f5c04dc/docs/screenshots/draw.png

@@ -1,0 +1,54 @@
+id: buddha68.dsh.msg.resize
+name:
+  zh: 对话浮窗
+  en: Floating Chat Pane
+author: buddha68
+description: 把对话区（消息列加输入框）变成可拖动的浮窗：拖右下角把手改宽高，最小 460×320；拖右上角把手搬位置；双击复位，聚焦把手后方向键微调。位置和尺寸存在 localStorage，刷新、重开都保留，活动范围限制在对话内容窗格内。
+repo: https://github.com/buddha68/dsh-msg-resize
+package: dsh-msg-resize
+rowId: msg-resize
+category: skin
+tags:
+  - layout
+  - floating
+  - resize
+  - chat
+modes:
+  - light
+  - dark
+install:
+  target: github:buddha68/dsh-msg-resize#14381dae55c18455313fc3dd5b5c1263d57794b4
+  version: 2.6.0
+  commit: 14381dae55c18455313fc3dd5b5c1263d57794b4
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/buddha68/dsh-msg-resize/14381dae55c18455313fc3dd5b5c1263d57794b4/assets/screenshot-1.png
+  - https://raw.githubusercontent.com/buddha68/dsh-msg-resize/14381dae55c18455313fc3dd5b5c1263d57794b4/assets/screenshot-2.png
+  - https://raw.githubusercontent.com/buddha68/dsh-msg-resize/14381dae55c18455313fc3dd5b5c1263d57794b4/assets/handles.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1304
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/buddha68/dsh-msg-resize/14381dae55c18455313fc3dd5b5c1263d57794b4/assets/screenshot-1.png

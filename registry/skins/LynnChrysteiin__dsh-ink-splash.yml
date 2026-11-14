@@ -1,0 +1,58 @@
+id: lynnchrysteiin.dsh.ink.splash
+name:
+  zh: 线稿开场
+  en: Line-Art Intro
+author: LynnChrysteiin
+description: 把一张图提取成线稿，启动时逐笔勾勒：线条一条条浮现、笔尖带光，全部画完后所有边缘瞬间高亮，再化入界面；线稿保留原图配色和粗细，内置五套素材，底色、线色、用色模式、宽度与速度都能在设置里实时调。
+repo: https://github.com/LynnChrysteiin/dsh-ink-splash
+package: "@local/dsh-ink-splash"
+rowId: ink-splash
+category: splash
+tags:
+  - boot
+  - animation
+  - presets
+modes:
+  - light
+  - dark
+install:
+  target: github:LynnChrysteiin/dsh-ink-splash#09df1939ec5299f7c5bbc8c0d53391e745a2b728
+  version: 0.2.0
+  commit: 09df1939ec5299f7c5bbc8c0d53391e745a2b728
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/splash-light.png
+  - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/splash-dark.png
+  - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/presets/ds-line.png
+  - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/presets/maid.png
+  - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/presets/ds-bg.png
+  - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/presets/chibi.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1395
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/splash-light.png

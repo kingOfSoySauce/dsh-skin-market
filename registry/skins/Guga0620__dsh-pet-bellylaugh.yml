@@ -1,0 +1,57 @@
+id: guga0620.dsh.pet.bellylaugh
+name:
+  zh: 奶龙桌宠
+  en: Bellylaugh Pet
+author: Guga0620
+description: 奶龙常驻界面右下角，动作跟着 Agent 工作状态走：待机呼吸眨眼、工作时揉肚子、每次工具跑完左右小跑、任务完成捧腹大笑并冒「哈哈哈哈哈哈哈哈」、出错抖一下。形象与笑声可热换（8 列 × 9 行精灵图，单帧 192×208），可拖动记位置、右键归位、长按抚摸。
+repo: https://github.com/Guga0620/dsh-pet-bellylaugh
+package: dsh-pet-bellylaugh
+rowId: ui-pet-bellylaugh
+category: pet
+tags:
+  - pet
+  - dragon
+  - spritesheet
+  - states
+  - sound
+modes:
+  - light
+  - dark
+install:
+  target: github:Guga0620/dsh-pet-bellylaugh#5ece6713d055ff9c0aca04f53a479e944fe127e8
+  version: 0.1.0
+  commit: 5ece6713d055ff9c0aca04f53a479e944fe127e8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Guga0620/dsh-pet-bellylaugh/5ece6713d055ff9c0aca04f53a479e944fe127e8/preview/idle.png
+  - https://raw.githubusercontent.com/Guga0620/dsh-pet-bellylaugh/5ece6713d055ff9c0aca04f53a479e944fe127e8/preview/laugh.png
+  - https://raw.githubusercontent.com/Guga0620/dsh-pet-bellylaugh/5ece6713d055ff9c0aca04f53a479e944fe127e8/preview/working.png
+  - https://raw.githubusercontent.com/Guga0620/dsh-pet-bellylaugh/5ece6713d055ff9c0aca04f53a479e944fe127e8/preview/error.png
+  - https://raw.githubusercontent.com/Guga0620/dsh-pet-bellylaugh/5ece6713d055ff9c0aca04f53a479e944fe127e8/preview/hidden.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1347
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+starsUpdatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T11:56:57.679Z
+listScreenshot: https://raw.githubusercontent.com/Guga0620/dsh-pet-bellylaugh/5ece6713d055ff9c0aca04f53a479e944fe127e8/preview/idle.png

@@ -1,0 +1,56 @@
+id: wtstarmark.dsh.myskin
+name:
+  zh: 可视化皮肤编辑器
+  en: Visual Skin Editor
+author: WTStarMark
+description: 在真实界面上点选改外观：绘制模式可选中元素改样式、文字、字体、位置与缩放，面板可停靠左右；皮肤管理页提供深海/暖阳/粉黛三套预设、启用开关、皮肤库与 .dshframework 导入导出，还能一键让皮肤不接管背景以便和壁纸/玻璃插件共存。适配 0.1.7-rc.2、0.2.0-rc.1 与 0.2.0-rc.2，Web 与 Desktop 共用同一套客户端管线。
+repo: https://github.com/WTStarMark/dsh-myskin
+package: dsh-myskin
+rowId: dsh-myskin
+category: skin
+tags:
+  - skin-editor
+  - visual-editor
+  - skin-package
+  - presets
+modes:
+  - light
+  - dark
+install:
+  target: github:WTStarMark/dsh-myskin#014b1aa9054dabb413fb18283832dd83e71e5726
+  version: 0.4.1
+  commit: 014b1aa9054dabb413fb18283832dd83e71e5726
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/skin-applied.png
+  - https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/conversation.png
+  - https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/settings-skin-manager.jpg
+  - https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/draw-mode.png
+  - https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/settings-account.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1476
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+starsUpdatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T12:00:04.493Z
+listScreenshot: https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/skin-applied.png

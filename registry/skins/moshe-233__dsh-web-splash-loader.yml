@@ -1,0 +1,51 @@
+id: moshe.233.dsh.web.splash.loader
+name:
+  zh: 液态玻璃加载屏
+  en: Liquid Glass Splash Loader
+author: moshe-233
+description: 首帧就在页面最上层盖一层高斯模糊的液态玻璃遮罩，避免白屏和组件分批挂载的跳动；中间是一枚带脉冲光晕的深海鲸鱼图标，下方实时列出各插件的加载光圈、就绪对勾与耗时。全部就绪后弹性淡出，3.5 秒超时兜底；启动后在右下角留一枚状态胶囊，点开可看完整耗时并复制 JSON 报告。
+repo: https://github.com/moshe-233/dsh-web-splash-loader
+package: "@moshe-233/dsh-web-splash-loader"
+rowId: web-splash-loader
+category: splash
+tags:
+  - splash
+  - loader
+  - glass
+  - plugins
+modes:
+  - light
+  - dark
+install:
+  target: github:moshe-233/dsh-web-splash-loader#a53f3b1e3804d4878d009ffef0b014b7d5e0b449
+  version: 0.1.0
+  commit: a53f3b1e3804d4878d009ffef0b014b7d5e0b449
+compatibility:
+  dsh: ">=0.1.0-rc.6"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/moshe-233/dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1405
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/moshe-233/dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/preview.png

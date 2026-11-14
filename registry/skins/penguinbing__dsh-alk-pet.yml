@@ -1,0 +1,53 @@
+id: penguinbing.dsh.alk.pet
+name:
+  zh: ALK 桌宠
+  en: ALK Pet
+author: penguinbing
+description: 把任务状态做成桌面宠物：待机、思考、工作、等待确认、完成、出错各播对应动画，约 12 帧/秒。多会话时用状态圆点列出，每行最多 12 个，悬停切到对应任务；气泡显示会话标题和当前待办、步骤或工具参数，子 Agent 归到父会话。macOS、Windows 走原生置顶窗，启动失败自动回退页面内宠物。
+repo: https://github.com/penguinbing/dsh-alk-pet
+package: dsh-alk-pet
+rowId: dsh-alk-pet
+category: pet
+tags:
+  - pet
+  - tasks
+  - native
+  - multi-session
+modes:
+  - light
+  - dark
+install:
+  target: github:penguinbing/dsh-alk-pet#e2271edd3ca48b86789f98b9d790ddffd9ecc854
+  version: 0.5.0
+  commit: e2271edd3ca48b86789f98b9d790ddffd9ecc854
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/penguinbing/dsh-alk-pet/e2271edd3ca48b86789f98b9d790ddffd9ecc854/docs/screenshots/multi-task.png
+  - https://raw.githubusercontent.com/penguinbing/dsh-alk-pet/e2271edd3ca48b86789f98b9d790ddffd9ecc854/docs/screenshots/multi-row.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1421
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+starsUpdatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T11:57:59.992Z
+listScreenshot: https://raw.githubusercontent.com/penguinbing/dsh-alk-pet/e2271edd3ca48b86789f98b9d790ddffd9ecc854/docs/screenshots/multi-task.png

@@ -1,0 +1,54 @@
+id: cui.chengyu.dsh.wechat.theme
+name:
+  zh: 微信主题
+  en: WeChat Theme
+author: Cui-chengyu
+description: 把聊天界面换成微信的样子：侧栏微信灰、自己的消息绿气泡（#95EC69）带右尖角、助手白气泡左尖角、绿色发送键（#07C160），顶部标签选中改绿色下划线，已归档会话灰底并显示「已归档」标签；深色模式换成深灰底配亮绿。纯样式注入，不加按钮、不改行为。
+repo: https://github.com/Cui-chengyu/dsh-wechat-theme
+package: dsh-wechat-theme
+rowId: dsh-wechat-theme
+category: skin
+tags:
+  - wechat
+  - green
+  - chat
+  - dark-mode
+  - css-only
+modes:
+  - light
+  - dark
+install:
+  target: github:Cui-chengyu/dsh-wechat-theme#5c0fe13ef9a3275d107557c73c342113252f4504
+  version: 0.1.0
+  commit: 5c0fe13ef9a3275d107557c73c342113252f4504
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/5c0fe13ef9a3275d107557c73c342113252f4504/assets/screenshot-chat.png
+  - https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/5c0fe13ef9a3275d107557c73c342113252f4504/assets/screenshot-bubbles.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1315
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+starsUpdatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T11:55:59.482Z
+listScreenshot: https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/5c0fe13ef9a3275d107557c73c342113252f4504/assets/screenshot-chat.png
