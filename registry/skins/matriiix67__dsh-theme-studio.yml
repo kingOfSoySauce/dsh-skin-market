@@ -20,6 +20,9 @@ install:
   target: github:matriiix67/dsh-theme-studio#e42c6568b689939d122813b765469dc4604cae01
   version: 0.1.0
   commit: e42c6568b689939d122813b765469dc4604cae01
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: 0.2.1-rc.5
   platform:
@@ -31,6 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/wallpaper.png
   - https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/brand-panel.png
   - https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/brand-sidebar.png
+listScreenshot: https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/sidebar.png
 review:
   compatibility: verified
   preview: verified
@@ -39,19 +43,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: e42c6568b689939d122813b765469dc4604cae01
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:23:56.682Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1139
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+releaseUpdatedAt: 2026-11-14T00:23:58.197Z
+metadataUpdatedAt: 2026-11-14T00:23:58.197Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/matriiix67/dsh-theme-studio/e42c6568b689939d122813b765469dc4604cae01/docs/sidebar.png
+updatedAt: 2026-11-14T00:23:58.197Z

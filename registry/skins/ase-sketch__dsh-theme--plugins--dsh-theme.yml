@@ -22,6 +22,9 @@ install:
   target: github:ase-sketch/dsh-theme#80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee&path:/plugins/dsh-theme
   version: 0.1.1
   commit: 80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -29,6 +32,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/ase-sketch/dsh-theme/80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee/skins/dsh-ui/preview/light.jpg
   - https://raw.githubusercontent.com/ase-sketch/dsh-theme/80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee/skins/dsh-ui/preview/dark.jpg
+listScreenshot: https://raw.githubusercontent.com/ase-sketch/dsh-theme/80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee/skins/dsh-ui/preview/light.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -42,15 +46,22 @@ health:
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:24:13.811Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1175
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-13T09:19:15.720Z
-metadataUpdatedAt: 2026-11-13T09:19:15.720Z
+releaseUpdatedAt: 2026-11-14T00:24:13.996Z
+metadataUpdatedAt: 2026-11-14T00:24:13.996Z
 starsUpdatedAt: 2026-11-13T09:19:15.720Z
-updatedAt: 2026-11-13T09:19:15.720Z
-listScreenshot: https://raw.githubusercontent.com/ase-sketch/dsh-theme/80cdbd1eb7382a4cc64fec4451bfa5f29d2ff7ee/skins/dsh-ui/preview/light.jpg
+updatedAt: 2026-11-14T00:24:13.996Z

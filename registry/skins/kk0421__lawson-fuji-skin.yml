@@ -20,6 +20,9 @@ install:
   target: github:kk0421/lawson-fuji-skin#4f50d5d4814b6bd2ed3bfad2204816760cdf9381
   version: 1.0.1
   commit: 4f50d5d4814b6bd2ed3bfad2204816760cdf9381
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -27,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/preview.jpg
   - https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/window-controls.png
+listScreenshot: https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/preview.jpg
 review:
   compatibility: verified
   preview: verified
@@ -35,20 +39,29 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 4f50d5d4814b6bd2ed3bfad2204816760cdf9381
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:24:30.382Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1165
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+releaseUpdatedAt: 2026-11-14T00:24:30.668Z
+metadataUpdatedAt: 2026-11-14T00:24:30.668Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/preview.jpg
+updatedAt: 2026-11-14T00:24:30.668Z

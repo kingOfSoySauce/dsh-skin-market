@@ -14,18 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:FormalistBlue/dsh-everforest#acf99702055a1888f860cfa99cecbb5e249b90ca
-  version: 1.5.0
-  commit: acf99702055a1888f860cfa99cecbb5e249b90ca
+  target: github:FormalistBlue/dsh-everforest#292b386f87b9c08a2ead73009e152ccb3b2c1a5f
+  version: 1.6.0
+  commit: 292b386f87b9c08a2ead73009e152ccb3b2c1a5f
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
   npm:
     name: dsh-everforest
-    version: 1.5.0
-    integrity: sha512-ktDyCOx9qtQvDRmI9R2dRgJR9gHwWOcZCPLuETWr4/fiStF+yEEcwUpQR7vs4qNOCSKd3e/c8r/goeYu0gIdVg==
+    version: 1.6.0
+    integrity: sha512-9lIefW9kXoI8B61i6QbYcEcQZ96sbIPmCta4dtOKYrIXcJv+O3OpsqZfCootoC/oBGxLql2OFHxCjBnJmASesA==
     repository: https://github.com/FormalistBlue/dsh-everforest
-    gitHead: acf99702055a1888f860cfa99cecbb5e249b90ca
+    gitHead: 292b386f87b9c08a2ead73009e152ccb3b2c1a5f
 compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0-0"
   platform:
@@ -50,19 +50,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: acf99702055a1888f860cfa99cecbb5e249b90ca
-    packageVersion: 1.5.0
+    commit: 292b386f87b9c08a2ead73009e152ccb3b2c1a5f
+    packageVersion: 1.6.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-09T00:14:27.016Z
+    checkedAt: 2026-11-14T00:23:14.011Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 4
 featuredRank: 998
-releaseUpdatedAt: 2026-11-09T00:14:27.804Z
-metadataUpdatedAt: 2026-11-09T00:14:27.804Z
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-14T00:23:14.504Z
+metadataUpdatedAt: 2026-11-14T00:23:14.504Z
 starsUpdatedAt: 2026-11-13T00:28:13.548Z
-updatedAt: 2026-11-13T00:28:13.548Z
+updatedAt: 2026-11-14T00:23:14.504Z

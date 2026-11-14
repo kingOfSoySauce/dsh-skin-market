@@ -18,9 +18,12 @@ modes:
   - light
   - dark
 install:
-  target: github:zhangcaiqian/wenfang-themes#0f9b5140a9fb19360e7493c21e5f9636b87cb54d&path:/packages/dsh
+  target: github:zhangcaiqian/wenfang-themes#e4f6950f3dd8fe36ae14d78bf3054dc1a1d74c1d&path:/packages/dsh
   version: 0.1.0
-  commit: 0f9b5140a9fb19360e7493c21e5f9636b87cb54d
+  commit: e4f6950f3dd8fe36ae14d78bf3054dc1a1d74c1d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -29,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-xuanmo.png
   - https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-qingci.png
   - https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-market.png
+listScreenshot: https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-xuanmo.png
 review:
   compatibility: unverified
   preview: verified
@@ -36,20 +40,28 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: e4f6950f3dd8fe36ae14d78bf3054dc1a1d74c1d
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:25:01.474Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1143
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+releaseUpdatedAt: 2026-11-14T00:25:02.006Z
+metadataUpdatedAt: 2026-11-14T00:25:02.006Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-xuanmo.png
+updatedAt: 2026-11-14T00:25:02.006Z

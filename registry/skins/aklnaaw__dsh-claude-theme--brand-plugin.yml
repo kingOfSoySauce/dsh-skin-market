@@ -19,6 +19,9 @@ install:
   target: github:aklnaaw/dsh-claude-theme#d348e22ca01946d649792b70b11f328972123801&path:/brand-plugin
   version: 1.0.0
   commit: d348e22ca01946d649792b70b11f328972123801
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/aklnaaw/dsh-claude-theme/d348e22ca01946d649792b70b11f328972123801/cover/orange-reading.png
   - https://raw.githubusercontent.com/aklnaaw/dsh-claude-theme/d348e22ca01946d649792b70b11f328972123801/claude/preview/light.jpg
   - https://raw.githubusercontent.com/aklnaaw/dsh-claude-theme/d348e22ca01946d649792b70b11f328972123801/claude/preview/dark.jpg
+listScreenshot: https://raw.githubusercontent.com/aklnaaw/dsh-claude-theme/d348e22ca01946d649792b70b11f328972123801/cover/blue-maid.png
 review:
   compatibility: unverified
   preview: verified
@@ -41,14 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d348e22ca01946d649792b70b11f328972123801
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:22:52.418Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1157
 starsSnapshot: 32
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+releaseUpdatedAt: 2026-11-14T00:22:53.097Z
+metadataUpdatedAt: 2026-11-14T00:22:53.097Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/aklnaaw/dsh-claude-theme/d348e22ca01946d649792b70b11f328972123801/cover/blue-maid.png
+updatedAt: 2026-11-14T00:22:53.097Z
