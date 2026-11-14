@@ -1,0 +1,51 @@
+id: wangxuyang1221.dsh.skin.wuhu.traffic.agent
+name:
+  zh: 芜湖交管警用智能体皮肤
+  en: Wuhu Traffic-Police Agent Skin
+author: wangxuyang1221
+description: 把品牌区、徽标和页面标题换成芜湖市公安交管标识，配深蓝配色、直线边框、装饰刻度与中文会话状态标签，空态欢迎语也一并替换；任务看板、SSH、插件市场、会话列表与消息发送等仍由原有界面提供，卸载时恢复 DOM、属性、标题、favicon 与样式变量。
+repo: https://github.com/wangxuyang1221/dsh-skin-wuhu-traffic-agent
+package: "@wuhu-traffic/dsh-client-ui-skin"
+rowId: ui-skin-wuhu-traffic-agent
+category: skin
+tags:
+  - police
+  - brand-identity
+  - deep-blue
+  - status-labels
+modes:
+  - dark
+install:
+  target: github:wangxuyang1221/dsh-skin-wuhu-traffic-agent#926f2cd1ca450ab44e1fc6cf108426a55c5cfed0
+  version: 0.1.0
+  commit: 926f2cd1ca450ab44e1fc6cf108426a55c5cfed0
+compatibility:
+  dsh: 0.2.1-rc.2 || 0.2.1-rc.2.md || 0.1.7-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/wangxuyang1221/dsh-skin-wuhu-traffic-agent/926f2cd1ca450ab44e1fc6cf108426a55c5cfed0/preview/dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1275
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/wangxuyang1221/dsh-skin-wuhu-traffic-agent/926f2cd1ca450ab44e1fc6cf108426a55c5cfed0/preview/dark.png

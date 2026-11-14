@@ -1,0 +1,54 @@
+id: lubenkov.dsh.pajama.whale
+name:
+  zh: 蓝鲸睡衣桌宠
+  en: Pajama Whale Pet
+author: lubenkov
+description: 一只穿蓝鲸连体衣的小人桌宠：可拖来拖去，贴到窗口边缘会压扁，会眨眼、打盹，头顶的想法云按优先级汇报 agent 在做什么；12 张精灵图共 129 帧全部内联，不发起外部请求。
+repo: https://github.com/lubenkov/dsh-pajama-whale
+package: dsh-pajama-whale
+rowId: pajama-whale
+category: pet
+tags:
+  - desktop-pet
+  - onesie
+  - drag
+  - status-cloud
+modes:
+  - light
+  - dark
+install:
+  target: github:lubenkov/dsh-pajama-whale#dd246fff468d6ed53464aadefd804ac6ff864d66
+  version: 0.3.6
+  commit: dd246fff468d6ed53464aadefd804ac6ff864d66
+compatibility:
+  dsh: 0.2.1--rc.2 || 0.2.1-rc.2 || >=0.2.1-rc.2 <0.3.0-0
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/dd246fff468d6ed53464aadefd804ac6ff864d66/docs/idle.png
+  - https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/dd246fff468d6ed53464aadefd804ac6ff864d66/docs/squash.png
+  - https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/dd246fff468d6ed53464aadefd804ac6ff864d66/docs/working.png
+  - https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/dd246fff468d6ed53464aadefd804ac6ff864d66/docs/cloud.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1240
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/dd246fff468d6ed53464aadefd804ac6ff864d66/docs/idle.png

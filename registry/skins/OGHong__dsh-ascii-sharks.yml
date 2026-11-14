@@ -1,0 +1,53 @@
+id: oghong.dsh.ascii.sharks
+name:
+  zh: ASCII 鲨鱼海洋
+  en: ASCII Shark Ocean
+author: OGHong
+description: 只在新建会话页出现的字符画海洋：几群鱼会真的躲虎鲸、虎鲸会真的追鱼，明暗主题自适应、整体半透明，离屏即停，鼠标划过会惊散鱼群。
+repo: https://github.com/OGHong/dsh-ascii-sharks
+package: dsh-ascii-sharks
+rowId: ascii-sharks
+category: skin
+tags:
+  - ascii
+  - ocean
+  - boids
+  - new-session
+modes:
+  - light
+  - dark
+install:
+  target: github:OGHong/dsh-ascii-sharks#7df298f2f22a56f440f7203063cffe19421ac790
+  version: 0.1.0
+  commit: 7df298f2f22a56f440f7203063cffe19421ac790
+compatibility:
+  dsh: 0.2.1--rc.2-lightgrey
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/OGHong/dsh-ascii-sharks/7df298f2f22a56f440f7203063cffe19421ac790/docs/hero-dark.png
+  - https://raw.githubusercontent.com/OGHong/dsh-ascii-sharks/7df298f2f22a56f440f7203063cffe19421ac790/docs/settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1248
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/OGHong/dsh-ascii-sharks/7df298f2f22a56f440f7203063cffe19421ac790/docs/hero-dark.png

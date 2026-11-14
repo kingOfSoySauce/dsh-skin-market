@@ -1,0 +1,56 @@
+id: stitchmaps.dsh.ikunchick.pet
+name:
+  zh: 篮球小鸡桌宠
+  en: Basketball Chick Pet
+author: stitchmaps
+description: 右下角常驻的像素小鸡桌宠：思考时运球、点击挥手、干完活庆祝、闲置打瞌睡，可拖拽记忆位置、贴边吸附并左右镜像；另带每轮消耗气泡与余额/账单面板。
+repo: https://github.com/stitchmaps/dsh-ikunchick-pet
+package: dsh-ikunchick-pet
+rowId: dsh-ikunchick-pet
+category: pet
+tags:
+  - pet
+  - pixel
+  - draggable
+  - balance
+modes:
+  - light
+  - dark
+install:
+  target: github:stitchmaps/dsh-ikunchick-pet#834138dc96d9508b67733bf0331239a22b3f4915
+  version: 0.5.0
+  commit: 834138dc96d9508b67733bf0331239a22b3f4915
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/panel.png
+  - https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/preview-dribble.webp
+  - https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/reminder.png
+  - https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/consume.png
+  - https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/ledger.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1265
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/panel.png

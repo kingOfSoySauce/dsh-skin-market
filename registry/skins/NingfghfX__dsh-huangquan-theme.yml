@@ -1,0 +1,53 @@
+id: ningfghfx.dsh.huangquan.theme
+name:
+  zh: 黄泉外观
+  en: Huangquan Theme
+author: NingfghfX
+description: 黄泉同人外观：全屏壁纸预设配可调蒙版（0–1）与 0–50px 毛玻璃，输入框外圈按四角摆放彼岸花花环，右下角呼吸挂件点开「黄泉外观工作台」；另有全屏斜雨、鼠标花瓣拖尾和每 3 秒刷新的余额气泡。
+repo: https://github.com/NingfghfX/dsh-huangquan-theme
+package: dsh-huangquan-theme
+rowId: dsh-huangquan-theme
+category: skin
+tags:
+  - wallpaper
+  - spider-lily
+  - rain
+  - petal-trail
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:NingfghfX/dsh-huangquan-theme#24b673057d95ab519157cc2df306272c41d99373
+  version: 2.0.1
+  commit: 24b673057d95ab519157cc2df306272c41d99373
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/NingfghfX/dsh-huangquan-theme/24b673057d95ab519157cc2df306272c41d99373/docs/screenshot.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1247
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/NingfghfX/dsh-huangquan-theme/24b673057d95ab519157cc2df306272c41d99373/docs/screenshot.jpg

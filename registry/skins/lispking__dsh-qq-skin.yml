@@ -1,0 +1,54 @@
+id: lispking.dsh.qq.skin
+name:
+  zh: QQ NT 风格皮肤
+  en: QQ NT Skin
+author: lispking
+description: "把 QQ NT 的聊天语言套到界面上：亮色近白表面配 #12B7F5 品牌蓝与 #A8E3FF 气泡，暗色以 #101822 蓝灰为底；五种色板（经典蓝/炫彩紫/简洁白/经典绿/深空黑）与气泡尾巴、助手头像、聊天宽度都能在设置里切换。"
+repo: https://github.com/lispking/dsh-qq-skin
+package: dsh-qq-skin
+rowId: qq-skin
+category: skin
+tags:
+  - qq-nt
+  - messenger
+  - palettes
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:lispking/dsh-qq-skin#ce7f443447a12437068f105c43044760719d0489
+  version: 0.2.0
+  commit: ce7f443447a12437068f105c43044760719d0489
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lispking/dsh-qq-skin/ce7f443447a12437068f105c43044760719d0489/assets/chat.png
+  - https://raw.githubusercontent.com/lispking/dsh-qq-skin/ce7f443447a12437068f105c43044760719d0489/assets/settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1237
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/lispking/dsh-qq-skin/ce7f443447a12437068f105c43044760719d0489/assets/chat.png

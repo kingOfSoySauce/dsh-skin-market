@@ -1,0 +1,52 @@
+id: 2154036609.ux.dsh.startup.blade
+name:
+  zh: 拔刀启动动画
+  en: Blade-Draw Splash
+author: 2154036609-ux
+description: 约 2.6 秒的纯装饰启动动画：黑幕落下、鞘口一点冷光，刀身自右下向左上拔出，屏幕轻震并把黑幕真正「划开」——切口里透出的是真实界面；随后白闪、残留一线刀锋、黑幕溶解与火花受重力沉降，默认就定格在你当前的界面 / 壁纸上。也可在 DSH_HOME 放一张 frame.png 定格成一张画，或放 3–5 秒片段切到影片模式，点一下 / 按任意键跳过。
+repo: https://github.com/2154036609-ux/dsh-startup-blade
+package: dsh-startup-blade
+rowId: startup-blade
+category: splash
+tags:
+  - katana
+  - blade
+  - startup
+  - screen-cut
+modes:
+  - light
+  - dark
+install:
+  target: github:2154036609-ux/dsh-startup-blade#36fdf4809aa849622685f88347a048ac9c69c1bb
+  version: 1.0.0
+  commit: 36fdf4809aa849622685f88347a048ac9c69c1bb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/2154036609-ux/dsh-startup-blade/36fdf4809aa849622685f88347a048ac9c69c1bb/docs/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1204
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/2154036609-ux/dsh-startup-blade/36fdf4809aa849622685f88347a048ac9c69c1bb/docs/preview.png

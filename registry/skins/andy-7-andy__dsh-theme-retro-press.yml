@@ -1,0 +1,55 @@
+id: andy.7.andy.dsh.theme.retro.press
+name:
+  zh: 复古油墨主题
+  en: Retro Press
+author: andy-7-andy
+description: 九套复古印刷配色，每套以一件实物命名——鼠尾草、牛皮纸、铅字、蓝晒纸、孔版、显像管、荧光屏、打孔卡、软盘——并各自决定中英文字体配对、纸纹或扫描线、压印强度与段落线。设置里还能调版心宽度（600/720/满宽）、圆角、线条、密度与深色磷光，13 种拉丁字面随包内嵌，汉字底线是 4239 字的思源宋体子集。
+repo: https://github.com/andy-7-andy/dsh-theme-retro-press
+package: dsh-theme-retro-press
+rowId: retro-press
+category: skin
+tags:
+  - retro
+  - typography
+  - palettes
+  - letterpress
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:andy-7-andy/dsh-theme-retro-press#4e9d2e271dc003135ca43a4219846d0b43075683
+  version: 3.13.3
+  commit: 4e9d2e271dc003135ca43a4219846d0b43075683
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/4e9d2e271dc003135ca43a4219846d0b43075683/assets/palettes.png
+  - https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/4e9d2e271dc003135ca43a4219846d0b43075683/assets/scenes.jpg
+  - https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/4e9d2e271dc003135ca43a4219846d0b43075683/assets/press.png
+  - https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/4e9d2e271dc003135ca43a4219846d0b43075683/assets/phosphor.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1212
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/4e9d2e271dc003135ca43a4219846d0b43075683/assets/palettes.png

@@ -1,0 +1,52 @@
+id: pyyxzi.dsh.deepmoyu
+name:
+  zh: 鲸鱼摸鱼
+  en: DeepMoYu
+author: pyyxzi
+description: 让鲸鱼娘自己刷 B站的桌宠工作台：按关注、分区排行、全站热门或关键词自己找片，读 AI 字幕原文再判断，获授权后自己发评论、发动态、回私信，每天写一份选片日报。发送默认全部关闭、逐项授权，发送前还要过审核、永久判重、节奏冷却与平台额度；另有记忆与表情收藏、本地视频工作室（只生成本地文件、不自动投稿），运行方式覆盖当前会话、新开会话、后台与定时。
+repo: https://github.com/pyyxzi/dsh-deepmoyu
+package: dsh-deepmoyu
+rowId: dafeiyu
+category: pet
+tags:
+  - bilibili
+  - desktop-pet
+  - autonomous-agent
+  - memory
+  - video-studio
+modes:
+  - light
+  - dark
+install:
+  target: github:pyyxzi/dsh-deepmoyu#527d5c47ea6a6fc0440f54ee84ff473a919003ab
+  version: 2.7.1
+  commit: 527d5c47ea6a6fc0440f54ee84ff473a919003ab
+compatibility:
+  dsh: ">=0.1.7-rc.1"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/pyyxzi/dsh-deepmoyu/527d5c47ea6a6fc0440f54ee84ff473a919003ab/assets/screenshots/workspace.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1254
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/pyyxzi/dsh-deepmoyu/527d5c47ea6a6fc0440f54ee84ff473a919003ab/assets/screenshots/workspace.png

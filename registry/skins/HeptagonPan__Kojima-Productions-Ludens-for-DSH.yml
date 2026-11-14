@@ -1,0 +1,56 @@
+id: heptagonpan.kojima.productions.ludens.for.dsh
+name:
+  zh: Ludens 终端
+  en: Ludens Terminal
+author: HeptagonPan
+description: 以 Kojima Productions 黑白工业气质为骨架、叠加死亡搁浅式琥珀全息终端：焦油黑画布、发丝线、等宽全大写读数、Odradek 扫描环、chiral 连线与右侧 KJP 骷髅，亮/暗/激活态各有预览。
+repo: https://github.com/HeptagonPan/Kojima-Productions-Ludens-for-DSH
+package: dsh-client-ui-skin-kojima-productions
+rowId: ui-skin-kojima-productions
+category: skin
+tags:
+  - kojima
+  - death-stranding
+  - terminal
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:HeptagonPan/Kojima-Productions-Ludens-for-DSH#3be43c074b632c11b3c2ebea2922e914383c7917
+  version: 0.2.2
+  commit: 3be43c074b632c11b3c2ebea2922e914383c7917
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/HeptagonPan/Kojima-Productions-Ludens-for-DSH/3be43c074b632c11b3c2ebea2922e914383c7917/preview/dark.webp
+  - https://raw.githubusercontent.com/HeptagonPan/Kojima-Productions-Ludens-for-DSH/3be43c074b632c11b3c2ebea2922e914383c7917/preview/light.webp
+  - https://raw.githubusercontent.com/HeptagonPan/Kojima-Productions-Ludens-for-DSH/3be43c074b632c11b3c2ebea2922e914383c7917/preview/active.webp
+  - https://raw.githubusercontent.com/HeptagonPan/Kojima-Productions-Ludens-for-DSH/3be43c074b632c11b3c2ebea2922e914383c7917/preview/settings.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1224
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/HeptagonPan/Kojima-Productions-Ludens-for-DSH/3be43c074b632c11b3c2ebea2922e914383c7917/preview/dark.webp

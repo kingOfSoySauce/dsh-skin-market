@@ -1,0 +1,55 @@
+id: zouwj16.dsh.bg.theme
+name:
+  zh: 界面底色（暖色）
+  en: Interface Palette (Warm)
+author: zouwj16
+description: 以 Claude 桌面端深色主题的实测值重绘一套暖色表面：画布、抬升层、侧栏及其三态、卡片与选择器、输入框、用户气泡、代码块、滚动条与文字阶梯都换成暖灰 / 暖白，浅色与深色各一套并跟随「浅色 / 深色 / 跟随系统」自动切换；只改颜色 token，不动布局、字号与字体族。另附可选的 Windows 原生窗口底色补丁（等长改写 app.asar，带 --verify / --revert），消除呼出时的白闪。
+repo: https://github.com/zouwj16/dsh-bg-theme
+package: "@local/dsh-bg-theme"
+rowId: bg-theme
+category: skin
+tags:
+  - warm-palette
+  - claude-inspired
+  - token-override
+  - light-dark
+  - windows
+modes:
+  - light
+  - dark
+install:
+  target: github:zouwj16/dsh-bg-theme#2b2811e99a56287cb66c899af47b438218bde0a1
+  version: 1.2.0
+  commit: 2b2811e99a56287cb66c899af47b438218bde0a1
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zouwj16/dsh-bg-theme/2b2811e99a56287cb66c899af47b438218bde0a1/palette.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1286
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/zouwj16/dsh-bg-theme/2b2811e99a56287cb66c899af47b438218bde0a1/palette.png

@@ -1,0 +1,55 @@
+id: steady.sakura.dsh.friend
+name:
+  zh: 小鲸桌面陪伴
+  en: Little Whale Desktop Companion
+author: steady-sakura
+description: 会动、能聊天的桌面小伙伴：106 个动作来自 dsh-pet，双击展开气泡聊天、拖拽可甩动，接自己的 API Key 对话并可在气泡里滚动读长回复；还能经授权观察选定的窗口（本机约每 3 秒采样，分析间隔 5–120 秒），日记、长期记忆和角色文件夹都留在本机。
+repo: https://github.com/steady-sakura/dsh-friend
+package: dsh-friend
+rowId: dsh-friend
+category: pet
+tags:
+  - desktop-window
+  - chat
+  - screen-sharing
+  - local-memory
+  - voice
+modes:
+  - light
+  - dark
+install:
+  target: github:steady-sakura/dsh-friend#0b7fe7e29b2278216310c9554fc4485029af07bd
+  version: 0.7.4
+  commit: 0b7fe7e29b2278216310c9554fc4485029af07bd
+compatibility:
+  dsh: 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/steady-sakura/dsh-friend/0b7fe7e29b2278216310c9554fc4485029af07bd/docs/screenshots/pet.png
+  - https://raw.githubusercontent.com/steady-sakura/dsh-friend/0b7fe7e29b2278216310c9554fc4485029af07bd/docs/screenshots/bubble.png
+  - https://raw.githubusercontent.com/steady-sakura/dsh-friend/0b7fe7e29b2278216310c9554fc4485029af07bd/docs/screenshots/chat.png
+  - https://raw.githubusercontent.com/steady-sakura/dsh-friend/0b7fe7e29b2278216310c9554fc4485029af07bd/docs/screenshots/settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1266
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/steady-sakura/dsh-friend/0b7fe7e29b2278216310c9554fc4485029af07bd/docs/screenshots/pet.png

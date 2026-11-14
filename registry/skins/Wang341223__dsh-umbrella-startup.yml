@@ -1,0 +1,55 @@
+id: wang341223.dsh.umbrella.startup
+name:
+  zh: 保护伞公司启动动画
+  en: Umbrella Corporation Startup
+author: Wang341223
+description: 生化危机保护伞公司主题的六幕冷启动：黑幕金属伞徽 → 暗红过曝 → 暗色企业档案底板 → 五步访问授权 → 红蓝 RGB 分离故障揭幕 → ACCESS GRANTED，前两步可停在按钮 / Enter 上，右上 SKIP 或 Esc 直达主界面；六段真声与两段界面音效随素材对齐，不播完不推进。三十三项设置可改身份名称、编号、配色与文案，暗色暗室与浅色档案白两套配色，并有 9 秒 / 15 秒 / 音频 +1.5 秒三重卡死防线。
+repo: https://github.com/Wang341223/dsh-umbrella-startup
+package: dsh-umbrella-startup
+rowId: dsh-umbrella-startup
+category: splash
+tags:
+  - resident-evil
+  - umbrella
+  - cold-start
+  - voice
+  - windows
+modes:
+  - light
+  - dark
+install:
+  target: github:Wang341223/dsh-umbrella-startup#1e57b4c74cba94929d85c6c1ad4621f783fc588f
+  version: 1.0.0
+  commit: 1e57b4c74cba94929d85c6c1ad4621f783fc588f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Wang341223/dsh-umbrella-startup/1e57b4c74cba94929d85c6c1ad4621f783fc588f/docs/screenshots/theme-dark.png
+  - https://raw.githubusercontent.com/Wang341223/dsh-umbrella-startup/1e57b4c74cba94929d85c6c1ad4621f783fc588f/docs/screenshots/theme-light.png
+  - https://raw.githubusercontent.com/Wang341223/dsh-umbrella-startup/1e57b4c74cba94929d85c6c1ad4621f783fc588f/docs/screenshots/title-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1274
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/Wang341223/dsh-umbrella-startup/1e57b4c74cba94929d85c6c1ad4621f783fc588f/docs/screenshots/theme-dark.png

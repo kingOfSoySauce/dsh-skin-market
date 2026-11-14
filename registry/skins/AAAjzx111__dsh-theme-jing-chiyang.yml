@@ -1,0 +1,54 @@
+id: aaajzx111.dsh.theme.jing.chiyang
+name:
+  zh: 镜 · 炽阳神光
+  en: Jing · Blazing Sunlight
+author: AAAjzx111
+description: 王者荣耀「镜 · 炽阳神光」主题：墨蓝与熔金配色的全屏夜穹（日轮、光冕、镜面裂纹），叠加会呼吸的光、约 19 秒一次的掠光与跟随鼠标的神光光晕；左下角「镜」徽记可在神光/静谧/关闭三档切换，选择记进 localStorage。启动时播约 5 秒的镜面破碎开场：整张主视觉被切成 56 片玻璃，显现、炸开、悬停后逆向重组。
+repo: https://github.com/AAAjzx111/dsh-theme-jing-chiyang
+package: dsh-theme-jing-chiyang
+rowId: theme-jing-chiyang
+category: skin
+tags:
+  - honor-of-kings
+  - dynamic-background
+  - gold
+  - intro-animation
+  - dark
+modes:
+  - dark
+install:
+  target: github:AAAjzx111/dsh-theme-jing-chiyang#d857c35ae506e269c0c3e0b656b54cb322aab424
+  version: 1.3.0
+  commit: d857c35ae506e269c0c3e0b656b54cb322aab424
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/preview.jpg
+  - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/assets/key-art.webp
+  - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/assets/intro.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1207
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/preview.jpg

@@ -1,0 +1,56 @@
+id: w.j.y.wjy.dsh.ink.whale
+name:
+  zh: 墨鲸开屏
+  en: Ink Whale Splash
+author: w-j-y-wjy
+description: 启动时按真实笔顺把你的称呼与问候写成墨字，收在鲸鱼锁标与副标题上，再让鲸鱼缓慢推近、整屏淡出；8 套手写体、深浅色、播放节奏与问候语都在设置页可调，完整流程约 15 秒。
+repo: https://github.com/w-j-y-wjy/dsh-ink-whale
+package: dsh-ink-whale
+rowId: ink-whale
+category: splash
+tags:
+  - ink
+  - handwriting
+  - whale
+  - customizable
+modes:
+  - light
+  - dark
+install:
+  target: github:w-j-y-wjy/dsh-ink-whale#acb18f775321f8258fb948557bf76b24c18fcc01
+  version: 0.2.1
+  commit: acb18f775321f8258fb948557bf76b24c18fcc01
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/preview-light-final.png
+  - https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/preview-light-writing.png
+  - https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/preview-dark-final.png
+  - https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/preview-dark-writing.png
+  - https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/plugin-settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1273
+starsSnapshot: 7
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/preview-light-final.png

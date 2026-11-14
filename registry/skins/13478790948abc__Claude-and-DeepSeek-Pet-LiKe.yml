@@ -1,0 +1,56 @@
+id: 13478790948abc.claude.and.deepseek.pet.like
+name:
+  zh: Claude × DeepSeek 桌宠
+  en: Claude × DeepSeek Pet
+author: 13478790948abc
+description: 左边 Claude、右边 DeepSeek 的双人 Q 版桌宠：每 5 秒贴贴 3 秒并冒爱心，需要你授权或任务完成时头顶弹出气泡；主窗口最小化后转为桌面悬浮层，素材换成 12×5 的精灵图即可替换角色。
+repo: https://github.com/13478790948abc/Claude-and-DeepSeek-Pet-LiKe
+package: "@local/dsh-duo-pet"
+rowId: duo-pet
+category: pet
+tags:
+  - claude
+  - deepseek
+  - chibi
+  - desktop-pet
+modes:
+  - light
+  - dark
+install:
+  target: github:13478790948abc/Claude-and-DeepSeek-Pet-LiKe#d8f914f2bc51df26d816338e4760971d709a4005
+  version: 1.1.1
+  commit: d8f914f2bc51df26d816338e4760971d709a4005
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/13478790948abc/Claude-and-DeepSeek-Pet-LiKe/d8f914f2bc51df26d816338e4760971d709a4005/docs/preview-snuggle.png
+  - https://raw.githubusercontent.com/13478790948abc/Claude-and-DeepSeek-Pet-LiKe/d8f914f2bc51df26d816338e4760971d709a4005/docs/preview-mouth.png
+  - https://raw.githubusercontent.com/13478790948abc/Claude-and-DeepSeek-Pet-LiKe/d8f914f2bc51df26d816338e4760971d709a4005/docs/preview-snuggle-zoom.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1200
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/13478790948abc/Claude-and-DeepSeek-Pet-LiKe/d8f914f2bc51df26d816338e4760971d709a4005/docs/preview-snuggle.png

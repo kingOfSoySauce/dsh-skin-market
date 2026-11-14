@@ -1,0 +1,57 @@
+id: muzapar00.united.nation.skin.deepseek.harness
+name:
+  zh: 联合国
+  en: United Nations
+author: muzapar00
+description: 白底联合国蓝、徽记与六张维和照片慢速轮播的整套主题：附带 7,030 种语言的可搜索选择器（其中 127 种已有完整翻译）和 193 面会员国国旗，配色、背景、丝带与动效都能在「设置 → 联合国」里单独关闭。
+repo: https://github.com/muzapar00/united_nation_skin_deepseek_harness
+package: dsh-theme-un
+rowId: dsh-theme-un
+category: skin
+tags:
+  - united-nations
+  - i18n
+  - language-picker
+  - peacekeeping
+  - flags
+modes:
+  - light
+  - dark
+install:
+  target: github:muzapar00/united_nation_skin_deepseek_harness#284075c612c6faee7aa4c19655efe3038107c40f
+  version: 0.3.0
+  commit: 284075c612c6faee7aa4c19655efe3038107c40f
+compatibility:
+  dsh: 0.1.5-009EDB
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/home-light-zh.png
+  - https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/language-picker-zh.png
+  - https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/language-picker-ar-rtl.png
+  - https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/settings-un-zh.png
+  - https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/flag-wall-zh.png
+  - https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/settings-flags-zh.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1244
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/home-light-zh.png

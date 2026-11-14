@@ -1,0 +1,54 @@
+id: yuanzephyr920.oss.dsh.idle.crt
+name:
+  zh: 待机显像管
+  en: Idle CRT
+author: yuanzephyr920-oss
+description: 没有会话在跑（busy=false）且页面内十分钟没人碰鼠标键盘时，盖上一块 CRT 板：辉光字、扫描线、38 秒一轮的循环反色扫掠，在窗口里点一下、按个键或触摸就淡出；鼠标移动默认不收起，只让整帧跟着指针偏 ±1.2% 做视差微动。逐帧全 GPU 合成，真机满 60fps、零运行时依赖，派生自 dsh-splash-crt 并把启动闪屏改成待机屏保。
+repo: https://github.com/yuanzephyr920-oss/dsh-idle-crt
+package: dsh-idle-crt
+rowId: dsh-idle-crt
+category: splash
+tags:
+  - screensaver
+  - crt
+  - webgl
+  - idle
+  - retro
+modes:
+  - dark
+install:
+  target: github:yuanzephyr920-oss/dsh-idle-crt#dff7b50ab649f2d4eb480e515496e1b95f1c4136
+  version: 0.3.1
+  commit: dff7b50ab649f2d4eb480e515496e1b95f1c4136
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yuanzephyr920-oss/dsh-idle-crt/dff7b50ab649f2d4eb480e515496e1b95f1c4136/docs/screenshot-plate.png
+  - https://raw.githubusercontent.com/yuanzephyr920-oss/dsh-idle-crt/dff7b50ab649f2d4eb480e515496e1b95f1c4136/docs/screenshot-settings.png
+  - https://raw.githubusercontent.com/yuanzephyr920-oss/dsh-idle-crt/dff7b50ab649f2d4eb480e515496e1b95f1c4136/docs/screenshot-warmup.png
+  - https://raw.githubusercontent.com/yuanzephyr920-oss/dsh-idle-crt/dff7b50ab649f2d4eb480e515496e1b95f1c4136/docs/comment-demo.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1282
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/yuanzephyr920-oss/dsh-idle-crt/dff7b50ab649f2d4eb480e515496e1b95f1c4136/docs/screenshot-plate.png

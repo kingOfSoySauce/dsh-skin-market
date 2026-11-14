@@ -1,0 +1,58 @@
+id: meihaoyangfang.painted.screens
+name:
+  zh: 画屏
+  en: Painted Screens
+author: meihaoyangfang
+description: 一个插件 15 套皮肤：从樱花树下、鲸歌、霓虹残响到 EVA-02、黑金回廊、一比特，每套有自己的色板、品牌位与开场动画；屏幕右缘的圆点打开皮肤墙，点哪套即时切换、刷新后保留。
+repo: https://github.com/meihaoyangfang/painted-screens
+package: "@mhstory/painted-screens"
+rowId: huaping
+category: skin
+tags:
+  - skin-pack
+  - gallery
+  - switcher
+  - opening-animation
+modes:
+  - light
+  - dark
+install:
+  target: github:meihaoyangfang/painted-screens#485d4000c0f99c8c51d911817842d0d64d663793
+  version: 0.1.0
+  commit: 485d4000c0f99c8c51d911817842d0d64d663793
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/sakura.jpg
+  - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/whale-song.jpg
+  - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/cyberpunk.jpg
+  - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/eva02-asuka.jpg
+  - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/ink-bamboo.jpg
+  - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/rose-cream.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1242
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/sakura.jpg

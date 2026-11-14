@@ -1,0 +1,56 @@
+id: tonykingwjx.dsh.thinking.bar
+name:
+  zh: 思考档位滑杆
+  en: Thinking Level Slider
+author: TonyKingWJX
+description: 把输入框右下角的模型与思考等级选择器换成自绘滑杆：Codex、能量充能、曲率跃迁、量子纠缠、鲸鱼娘、梁圣六种外观切换即时生效；只改外观，档位仍来自系统模型目录。
+repo: https://github.com/TonyKingWJX/dsh-thinking-bar
+package: dsh-thinking-bar
+rowId: dsh-thinking-bar
+category: skin
+tags:
+  - model-selector
+  - reasoning
+  - skins
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:TonyKingWJX/dsh-thinking-bar#4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb
+  version: 1.0.7
+  commit: 4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb
+compatibility:
+  dsh: 0.2.1-rc.2 || >=0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-codex-dark.png
+  - https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-energy-dark.png
+  - https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-warp-dark.png
+  - https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-quantum-dark.png
+  - https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-whale-dark.png
+  - https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-liang-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1269
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-codex-dark.png

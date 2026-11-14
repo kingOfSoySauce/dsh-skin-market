@@ -1,0 +1,52 @@
+id: shawsheepsussiah.dsh.haavk.boot
+name:
+  zh: 哈夫克 Relink 启动动画
+  en: HAAVK Relink Boot Splash
+author: ShawSheepSussiah
+description: 全屏 H.264 1080p 启动视频：6 条字幕按 video.currentTime 与配音逐句对齐，Canvas 星尘粒子与四角光标、扫描线、右侧数据流的 HUD 边框叠在视频上；Windows 下还能隐藏原生最小化 / 最大化 / 关闭按钮而无需全屏，设置页可关动画或一键重播。视频 1.6 秒未起播切墙钟、17 秒硬兜底放行，任何一步失败都不锁死界面。
+repo: https://github.com/ShawSheepSussiah/dsh-haavk-boot
+package: "@shawsheepsussiah/dsh-haavk-boot"
+rowId: dsh-haavk-boot
+category: splash
+tags:
+  - boot-video
+  - captions
+  - particles
+  - hud
+  - windows
+modes:
+  - light
+  - dark
+install:
+  target: github:ShawSheepSussiah/dsh-haavk-boot#b7290bd384ff6146a0239c6c3a89d3b7fb2368d2
+  version: 0.2.7
+  commit: b7290bd384ff6146a0239c6c3a89d3b7fb2368d2
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ShawSheepSussiah/dsh-haavk-boot/b7290bd384ff6146a0239c6c3a89d3b7fb2368d2/docs/screenshots/splash-full.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1260
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/ShawSheepSussiah/dsh-haavk-boot/b7290bd384ff6146a0239c6c3a89d3b7fb2368d2/docs/screenshots/splash-full.png

@@ -1,0 +1,54 @@
+id: cngtn.dsh.cngtn.pond
+name:
+  zh: 纸墨锦鲤池
+  en: Paper Koi Pond
+author: cngtn
+description: 纸墨风主题：暖纸表面、发丝级描边、近直角圆角与等宽字号阶梯，界面背后是一池活的 ASCII 锦鲤——七种锦鲤有 20 节点脊柱，可投喂，也会被快速划过惊动。
+repo: https://github.com/cngtn/dsh-cngtn-pond
+package: "@cngtn/dsh-cngtn-pond"
+rowId: cngtn-pond
+category: skin
+tags:
+  - paper-ink
+  - ascii
+  - koi
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:cngtn/dsh-cngtn-pond#a6d97cfb0700005feb098c4aa11741b402b561e5
+  version: 1.5.5
+  commit: a6d97cfb0700005feb098c4aa11741b402b561e5
+compatibility:
+  dsh: 0.2.2-rc.1 || 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/cngtn/dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/docs/preview-dark-1.png
+  - https://raw.githubusercontent.com/cngtn/dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/docs/preview-dark-2.png
+  - https://raw.githubusercontent.com/cngtn/dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/docs/preview-light-1.png
+  - https://raw.githubusercontent.com/cngtn/dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/docs/preview-light-2.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1218
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/cngtn/dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/docs/preview-dark-1.png

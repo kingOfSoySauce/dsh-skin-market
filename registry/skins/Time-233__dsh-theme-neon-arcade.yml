@@ -1,0 +1,58 @@
+id: time.233.dsh.theme.neon.arcade
+name:
+  zh: 霓虹像素电玩
+  en: NEON ARCADE
+author: Time-233
+description: 深紫黑底、电光青与品红描边的霓虹像素主题，配原创像素精灵、星空、城市剪影和像素鲸鱼，辉光、网格与单条 CRT 扫描线都能单独开关；内置三款可关的小游戏：像素空战（拖拽战机、自动射击、无限复活）、愤怒的小猪（拉弹弓）和霓虹切水果（滑动切割，切中炸弹整屏晃动 + 两次白闪 + YOU LOSE）。已在 Windows 上验证兼容 Harness 0.2.1-rc.1～rc.5，独立 Web 客户端不启用。
+repo: https://github.com/Time-233/dsh-theme-neon-arcade
+package: dsh-theme-neon-arcade
+rowId: dsh-theme-neon-arcade
+category: skin
+tags:
+  - neon
+  - pixel-art
+  - arcade
+  - mini-games
+  - desktop
+modes:
+  - light
+  - dark
+install:
+  target: github:Time-233/dsh-theme-neon-arcade#5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe
+  version: 1.5.1
+  commit: 5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe
+compatibility:
+  dsh: 0.2.1-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/theme.png
+  - https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/air-battle.png
+  - https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/pig-sling.png
+  - https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/pig-sling-day.png
+  - https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/fruit-slice.png
+  - https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/fruit-slice-loss.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1268
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/theme.png

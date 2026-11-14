@@ -1,0 +1,58 @@
+id: rindbeans.dsh.nocturne
+name:
+  zh: 缮写室
+  en: Nocturne Scriptorium
+author: rinDBeans
+description: 把 Claude Code 桌面端的视觉语言搬过来：暖米色表面、陶土橙强调色与思源宋体界面，配真实会话状态点、显示上下文占用/缓存命中率/花费与 tok/s 的输入区 HUD、Diff 审查抽屉，以及含 26 周热力图、连续天数与高峰时段的用量概览。
+repo: https://github.com/rinDBeans/dsh-nocturne
+package: dsh-nocturne
+rowId: nocturne
+category: skin
+tags:
+  - webgl
+  - paper
+  - lighting
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:rinDBeans/dsh-nocturne#0da5db49de437e66965ca733220c9dfc344d1508
+  version: 0.7.1
+  commit: 0da5db49de437e66965ca733220c9dfc344d1508
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/rinDBeans/dsh-nocturne/0da5db49de437e66965ca733220c9dfc344d1508/docs/previews/nocturne-hero.png
+  - https://raw.githubusercontent.com/rinDBeans/dsh-nocturne/0da5db49de437e66965ca733220c9dfc344d1508/docs/previews/papers-matrix.png
+  - https://raw.githubusercontent.com/rinDBeans/dsh-nocturne/0da5db49de437e66965ca733220c9dfc344d1508/docs/previews/nocturne-mode-matrix.png
+  - https://raw.githubusercontent.com/rinDBeans/dsh-nocturne/0da5db49de437e66965ca733220c9dfc344d1508/docs/previews/ink-cursor.png
+  - https://raw.githubusercontent.com/rinDBeans/dsh-nocturne/0da5db49de437e66965ca733220c9dfc344d1508/docs/previews/quill-cursor.png
+  - https://raw.githubusercontent.com/rinDBeans/dsh-nocturne/0da5db49de437e66965ca733220c9dfc344d1508/docs/previews/nocturne-settings-native.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1258
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/rinDBeans/dsh-nocturne/0da5db49de437e66965ca733220c9dfc344d1508/docs/previews/nocturne-hero.png

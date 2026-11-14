@@ -1,0 +1,57 @@
+id: jonathanchang.alt.dsh.86.zone.ui
+name:
+  zh: 86 战术 HUD
+  en: Eighty-Six Tactical HUD
+author: JonathanChang-alt
+description: 蓝黑底、青蓝线条与扫描层的 86 战术皮肤：右上角蕾娜线稿 HUD 可换 5 张头像，右栏状态台读本机真实 CPU、内存、磁盘、负载与 uptime，事件流记录真实事件；共 18 项设置。
+repo: https://github.com/JonathanChang-alt/dsh-86-zone-ui
+package: dsh-86-zone-ui
+rowId: e86-zone
+category: skin
+tags:
+  - eighty-six
+  - hud
+  - system-metrics
+  - settings
+modes:
+  - dark
+install:
+  target: github:JonathanChang-alt/dsh-86-zone-ui#829bf7cc3a31797809924bab1ce4eb186ded2b39
+  version: 0.1.0
+  commit: 829bf7cc3a31797809924bab1ce4eb186ded2b39
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-zone-ui/829bf7cc3a31797809924bab1ce4eb186ded2b39/docs/overview.jpg
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-zone-ui/829bf7cc3a31797809924bab1ce4eb186ded2b39/docs/rail.jpg
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-zone-ui/829bf7cc3a31797809924bab1ce4eb186ded2b39/docs/idcards.jpg
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-zone-ui/829bf7cc3a31797809924bab1ce4eb186ded2b39/docs/sidebar.jpg
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-zone-ui/829bf7cc3a31797809924bab1ce4eb186ded2b39/docs/lockup.jpg
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-zone-ui/829bf7cc3a31797809924bab1ce4eb186ded2b39/docs/tabs.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1233
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-zone-ui/829bf7cc3a31797809924bab1ce4eb186ded2b39/docs/overview.jpg

@@ -1,0 +1,54 @@
+id: achenglinus.dsh.linus.brand
+name:
+  zh: Linus 品牌与宠物
+  en: Linus Brand and Pet
+author: AChengLinus
+description: "把自己的插画角色装进界面：侧栏左上角的品牌标记换成 Linus 头像 + 名字，输入框上沿的默认吉祥物也换成同一角色，18 个状态各有 24–72 帧连续动作、约 19fps 并带像素粒子，状态切换用 280ms 淡入上移过渡。它不改皮肤文件，而是依赖 dsh-claude-style 皮肤的 brandName / mascot: deepy 机制注入，关掉即回原样。"
+repo: https://github.com/AChengLinus/dsh-linus-brand
+package: dsh-linus-brand
+rowId: dsh-linus-brand
+category: pet
+tags:
+  - brand
+  - mascot
+  - pixel-art
+  - sprite-animation
+  - claude-style
+modes:
+  - light
+  - dark
+install:
+  target: github:AChengLinus/dsh-linus-brand#9709ac4e1ea03a258a676ec392f70a95eaa9d0e7
+  version: 1.0.0
+  commit: 9709ac4e1ea03a258a676ec392f70a95eaa9d0e7
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/AChengLinus/dsh-linus-brand/9709ac4e1ea03a258a676ec392f70a95eaa9d0e7/docs/pet-animation.png
+  - https://raw.githubusercontent.com/AChengLinus/dsh-linus-brand/9709ac4e1ea03a258a676ec392f70a95eaa9d0e7/docs/pet-typing.gif
+  - https://raw.githubusercontent.com/AChengLinus/dsh-linus-brand/9709ac4e1ea03a258a676ec392f70a95eaa9d0e7/docs/pet-states.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1209
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/AChengLinus/dsh-linus-brand/9709ac4e1ea03a258a676ec392f70a95eaa9d0e7/docs/pet-animation.png

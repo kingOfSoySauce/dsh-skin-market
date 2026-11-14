@@ -1,0 +1,52 @@
+id: chenyuan1251.dsh.pet.niumali
+name:
+  zh: 牛马力
+  en: Niumali
+author: chenyuan1251
+description: 右下角浮着一只小牛，点开是「牛马力·替你活」：开工收工打卡、专注计时、待办、手帐、旅行与探宝都在一个浮窗里，收起后专注计时不中断。
+repo: https://github.com/chenyuan1251/dsh-pet-niumali
+package: dsh-pet-niumali
+rowId: dsh-pet-niumali
+category: pet
+tags:
+  - desktop-pet
+  - check-in
+  - focus
+  - journal
+modes:
+  - light
+  - dark
+install:
+  target: github:chenyuan1251/dsh-pet-niumali#02cfce59ee5a3f9cc718293751566e0123fed726
+  version: 8.0.2
+  commit: 02cfce59ee5a3f9cc718293751566e0123fed726
+compatibility:
+  dsh: ^0.1.0-rc.6 || ^0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/chenyuan1251/dsh-pet-niumali/02cfce59ee5a3f9cc718293751566e0123fed726/assets/screenshots/01-pet-page.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1216
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/chenyuan1251/dsh-pet-niumali/02cfce59ee5a3f9cc718293751566e0123fed726/assets/screenshots/01-pet-page.png

@@ -1,0 +1,58 @@
+id: vianvio.dsh.assistant
+name:
+  zh: DSH 小助手
+  en: DSH Assistant
+author: vianvio
+description: 由会话事件驱动的 macOS 原生悬浮伴侣：透明无边框窗口常驻在其它应用之上，按真实状态切换待机、思考、执行、等你确认、完成、出错等七个状态，同状态还会随机换姿势；多项目并行时气泡只写谁在跑、谁在等你，完成 / 出错 / 待确认另起可点击通知。右键还能生成当天「今天干了什么」日报，按项目聚合成 Markdown 并一键复制。
+repo: https://github.com/vianvio/dsh-assistant
+package: dsh-assistant
+rowId: dsh-assistant
+category: pet
+tags:
+  - macos
+  - agent-status
+  - notifications
+  - daily-report
+  - desktop-window
+modes:
+  - light
+  - dark
+install:
+  target: github:vianvio/dsh-assistant#f1272566a01ab4674d101ccd8f2700e5ef0c75b1
+  version: 0.2.3
+  commit: f1272566a01ab4674d101ccd8f2700e5ef0c75b1
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-idle.png
+  - https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-thinking.png
+  - https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-working.png
+  - https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-waiting.png
+  - https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-success.png
+  - https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-error.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1272
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-idle.png

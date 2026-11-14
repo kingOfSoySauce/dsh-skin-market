@@ -1,0 +1,53 @@
+id: iris.change.dsh.eva.skins
+name:
+  zh: EVA 皮肤合集
+  en: EVA Skin Collection
+author: Iris-change
+description: 一个插件装四套 EVA 皮肤：二号机、零号机、初号机、八号机，应用内随时切换也可切回默认；每套带约 20 秒启动动画，Esc 可跳过、Ctrl+Alt+B 重播，且不改 app.asar、不需独立启动器。
+repo: https://github.com/Iris-change/dsh-eva-skins
+package: dsh-eva-skins
+rowId: dsh-eva-skins
+category: splash
+tags:
+  - evangelion
+  - skin-pack
+  - boot-animation
+  - switcher
+modes:
+  - dark
+install:
+  target: github:Iris-change/dsh-eva-skins#2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4
+  version: 2.1.6
+  commit: 2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Iris-change/dsh-eva-skins/2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4/docs/boot.jpg
+  - https://raw.githubusercontent.com/Iris-change/dsh-eva-skins/2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4/docs/skins.jpg
+  - https://raw.githubusercontent.com/Iris-change/dsh-eva-skins/2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4/docs/switcher.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1228
+starsSnapshot: 6
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/Iris-change/dsh-eva-skins/2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4/docs/boot.jpg

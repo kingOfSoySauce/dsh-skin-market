@@ -1,0 +1,59 @@
+id: hub.spec.dsh.composer.effort.slider
+name:
+  zh: 推理等级滑杆
+  en: Reasoning Effort Slider
+author: Hub-spec
+description: 输入框工具行里的推理等级滑杆：点开胶囊拖到 Off / Low / High / Max，松手写回当前会话，改动对下一个请求生效。档位读自模型的 reasoning.efforts 元数据，模型没有该元数据时整个控件隐藏；齿轮里可选五种填充特效（原页面、音频条、极光、格子、超空间）、胶囊或通栏填充与六种拖尾，亮暗配色跟随界面。
+repo: https://github.com/Hub-spec/dsh-composer-effort-slider
+package: dsh-composer-effort-slider
+rowId: reasoning-effort-slider
+category: skin
+tags:
+  - reasoning-effort
+  - slider
+  - composer
+  - model
+  - effects
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Hub-spec/dsh-composer-effort-slider#d8ee219e8c5c947d64237f218568e47c74a311b0
+  version: 1.0.1
+  commit: d8ee219e8c5c947d64237f218568e47c74a311b0
+compatibility:
+  dsh: 0.2.1--rc.2-4d6bfe || 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/dark.png
+  - https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/settings.png
+  - https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/light.png
+  - https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/effect-original.png
+  - https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/effect-audio.png
+  - https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/effect-aurora.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1230
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/dark.png

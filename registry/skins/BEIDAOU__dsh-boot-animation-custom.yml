@@ -1,0 +1,53 @@
+id: beidaou.dsh.boot.animation.custom
+name:
+  zh: 欢迎回来启动动画
+  en: Welcome Back Boot Animation
+author: BEIDAOU
+description: 桌面端启动动画：8 段短片可随机轮播或固定播放，片尾淡入工作区，并按时间段换问候；素材与控制页可管理，额外的「欢迎回来」语音可单独开关。
+repo: https://github.com/BEIDAOU/dsh-boot-animation-custom
+package: dsh-boot-animation-custom
+rowId: boot-animation-custom
+category: splash
+tags:
+  - launch-video
+  - clip-library
+  - greeting
+  - custom
+modes:
+  - light
+  - dark
+install:
+  target: github:BEIDAOU/dsh-boot-animation-custom#81ac4076747133e14982e4dbd1d75bd5562d8de7
+  version: 0.3.1
+  commit: 81ac4076747133e14982e4dbd1d75bd5562d8de7
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/BEIDAOU/dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/docs/images/preview-01.jpg
+  - https://raw.githubusercontent.com/BEIDAOU/dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/docs/images/preview-02.jpg
+  - https://raw.githubusercontent.com/BEIDAOU/dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/docs/images/preview-03.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1214
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/BEIDAOU/dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/docs/images/preview-01.jpg

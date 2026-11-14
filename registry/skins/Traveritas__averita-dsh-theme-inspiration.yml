@@ -1,0 +1,57 @@
+id: traveritas.averita.dsh.theme.inspiration
+name:
+  zh: AveritA 主题灵感集
+  en: AveritA Theme Collection
+author: Traveritas
+description: 四套主题（昼雾 · 靛夜、冷晨、暮玫瑰、暮紫）× 浅 / 深各一套，每套 205 个令牌；背景二选一：点阵（圆点 / 方块 / 字符 / 字符墙，缩放 0.5–4×、浓淡 30–400% 与动效呼吸可调）或 WebGL 流光场（默认跟随主题取色，另有四套固定色板、明暗可反转）。另有可改字标的品牌位、新会话星标首屏、纸品 / 星芒装饰与四个区域总开关，全部在「设置 → 主题」即时切换。
+repo: https://github.com/Traveritas/averita-dsh-theme-inspiration
+package: dsh-theme-averita
+rowId: averita-theme
+category: skin
+tags:
+  - multi-theme
+  - dot-matrix
+  - flow-field
+  - brand
+  - componentized
+modes:
+  - light
+  - dark
+install:
+  target: github:Traveritas/averita-dsh-theme-inspiration#4d8ad076ed1d538af73c965d9cc064eb29ad6628
+  version: 0.7.1
+  commit: 4d8ad076ed1d538af73c965d9cc064eb29ad6628
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/palette-themes.png
+  - https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/shots-new/a-l.png
+  - https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/shots-new/a-d.png
+  - https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/shots-new/b-l.png
+  - https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/shots-new/b-d.png
+  - https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/shots-new/c-l.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1270
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/palette-themes.png

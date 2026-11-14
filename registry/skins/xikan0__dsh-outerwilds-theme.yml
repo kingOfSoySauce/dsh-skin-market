@@ -1,0 +1,53 @@
+id: xikan0.dsh.outerwilds.theme
+name:
+  zh: 星际拓荒主题
+  en: Outer Wilds Theme
+author: xikan0
+description: 把《星际拓荒》的营地氛围搬进界面：可调背景亮度、星星数量、面板透明度、字号与布局密度，篝火轻微摇动也可切换成静止画面，侧栏还能显示随系统声音起伏的音频波形。
+repo: https://github.com/xikan0/dsh-outerwilds-theme
+package: dsh-outerwilds-theme
+rowId: ui-outerwilds-theme
+category: skin
+tags:
+  - outer-wilds
+  - campfire
+  - settings
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:xikan0/dsh-outerwilds-theme#5a9b1feaeee4f2269646b7498eec26cdcb846e7d
+  version: 0.1.6
+  commit: 5a9b1feaeee4f2269646b7498eec26cdcb846e7d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xikan0/dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/docs/screenshots/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1280
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/xikan0/dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/docs/screenshots/preview.png

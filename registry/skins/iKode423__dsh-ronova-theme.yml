@@ -1,0 +1,56 @@
+id: ikode423.dsh.ronova.theme
+name:
+  zh: 若娜瓦主题
+  en: Ronova Theme
+author: iKode423
+description: 绯红、灰烬与金瞳配色的若娜瓦同人主题：宋体标题、酒红选中态，空状态、侧栏与对话两侧会出现 Q 版贴纸；只覆盖 14 个别名 token，卸载即回原样。
+repo: https://github.com/iKode423/dsh-ronova-theme
+package: "@local/ronova"
+rowId: ronova
+category: skin
+tags:
+  - genshin
+  - ronova
+  - stickers
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:iKode423/dsh-ronova-theme#17331e3e13d41d90c1292eba6bbec31fa9b0476b
+  version: 0.1.1
+  commit: 17331e3e13d41d90c1292eba6bbec31fa9b0476b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-dark-new-chat.webp
+  - https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-dark-chat.webp
+  - https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-light-new-chat.webp
+  - https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-light-chat.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1227
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-dark-new-chat.webp

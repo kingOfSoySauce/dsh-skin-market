@@ -1,0 +1,57 @@
+id: bosaiting.dsh.process.tree
+name:
+  zh: 过程树
+  en: Process Tree
+author: Bosaiting
+description: 把工具调用记录画成可交互的过程树：默认用「任务函数」视图展示调用、真实参数、注释与嵌套作用域，也可切经典曲线、安静线条或植物手稿，并配 VS Code Dark+、JetBrains Darcula、Catppuccin Mocha、Dracula Classic 四套代码配色。
+repo: https://github.com/Bosaiting/dsh-process-tree
+package: dsh-process-tree
+rowId: dsh-process-tree
+category: skin
+tags:
+  - process-tree
+  - tool-calls
+  - visualization
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Bosaiting/dsh-process-tree#1c2bd9f702015418f45cbb3ccba048d3fba19b37
+  version: 0.11.2
+  commit: 1c2bd9f702015418f45cbb3ccba048d3fba19b37
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Bosaiting/dsh-process-tree/1c2bd9f702015418f45cbb3ccba048d3fba19b37/docs/images/code-view-dark.png
+  - https://raw.githubusercontent.com/Bosaiting/dsh-process-tree/1c2bd9f702015418f45cbb3ccba048d3fba19b37/docs/images/code-view-light.png
+  - https://raw.githubusercontent.com/Bosaiting/dsh-process-tree/1c2bd9f702015418f45cbb3ccba048d3fba19b37/docs/images/code-failures.png
+  - https://raw.githubusercontent.com/Bosaiting/dsh-process-tree/1c2bd9f702015418f45cbb3ccba048d3fba19b37/docs/images/palette-vscode.png
+  - https://raw.githubusercontent.com/Bosaiting/dsh-process-tree/1c2bd9f702015418f45cbb3ccba048d3fba19b37/docs/images/palette-jetbrains.png
+  - https://raw.githubusercontent.com/Bosaiting/dsh-process-tree/1c2bd9f702015418f45cbb3ccba048d3fba19b37/docs/images/palette-catppuccin.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1215
+starsSnapshot: 19
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/Bosaiting/dsh-process-tree/1c2bd9f702015418f45cbb3ccba048d3fba19b37/docs/images/code-view-dark.png

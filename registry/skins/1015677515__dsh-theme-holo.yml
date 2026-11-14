@@ -1,0 +1,57 @@
+id: 1015677515.dsh.theme.holo
+name:
+  zh: 赫萝主题
+  en: Holo Theme
+author: "1015677515"
+description: 羊皮纸底＋麦金强调色的《狼与香辛料》赫萝主题：约 12 秒的 canvas 开场动画从暗处红眼、狼影描红、光爆到标题解码，输入框边有只露兜帽与双眼的她会探头，右栏待机画面六片可换，还有可拖动的「狼与香辛料」字标、动态档案卡、侧栏麦田与羊皮纸便笺。七组装饰各有独立开关，深色「星夜麦田」仍是测试功能。
+repo: https://github.com/1015677515/dsh-theme-holo
+package: dsh-theme-holo
+rowId: theme-holo
+category: skin
+tags:
+  - spice-and-wolf
+  - holo
+  - parchment
+  - intro-animation
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:1015677515/dsh-theme-holo#7f6080d88d3149af613d6a6ae0dad0299eaba864
+  version: 1.0.7
+  commit: 7f6080d88d3149af613d6a6ae0dad0299eaba864
+compatibility:
+  dsh: 0.2.0--rc.1 || >=0.2.0-rc.1 <0.3.0-0 || 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/assets/cover.webp
+  - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/docs/intro-final.webp
+  - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/docs/gui-overview.png
+  - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/docs/scene-grid.png
+  - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/docs/readme-banner.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1199
+starsSnapshot: 13
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/assets/cover.webp

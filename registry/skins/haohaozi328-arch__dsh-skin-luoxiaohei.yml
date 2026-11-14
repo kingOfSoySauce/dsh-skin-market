@@ -1,0 +1,54 @@
+id: haohaozi328.arch.dsh.skin.luoxiaohei
+name:
+  zh: 小黑森林
+  en: Luo Xiaohei Forest
+author: haohaozi328-arch
+description: 罗小黑主题：浅色「奶油森林」与深色「深夜森林」随系统切换，森林插画背景上飘落叶片，AI 回答与工具调用套透明玻璃气泡；设置页有 7 个选项可调背景来源、落叶密度与装饰开关。
+repo: https://github.com/haohaozi328-arch/dsh-skin-luoxiaohei
+package: dsh-skin-luoxiaohei
+rowId: ui-skin-luoxiaohei
+category: skin
+tags:
+  - luo-xiaohei
+  - forest
+  - dual-theme
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:haohaozi328-arch/dsh-skin-luoxiaohei#910723bb10bfd790dd8680b2a9be63d5b00f0a2d
+  version: 0.2.1
+  commit: 910723bb10bfd790dd8680b2a9be63d5b00f0a2d
+compatibility:
+  dsh: 0.2.2-rc.1 || 0.1.7-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/haohaozi328-arch/dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/img/1.jpg
+  - https://raw.githubusercontent.com/haohaozi328-arch/dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/img/2.jpg
+  - https://raw.githubusercontent.com/haohaozi328-arch/dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/img/3.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1225
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/haohaozi328-arch/dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/img/1.jpg

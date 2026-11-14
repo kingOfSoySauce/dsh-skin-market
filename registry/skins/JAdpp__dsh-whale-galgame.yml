@@ -1,0 +1,55 @@
+id: jadpp.dsh.whale.galgame
+name:
+  zh: 鲸鱼娘 Galgame
+  en: Whale Girl Galgame
+author: JAdpp
+description: 对话界面变成一场多角色 Galgame：DeepSeek、Claude、GPT、Gemini、Kimi、Grok 六位模型娘各有独立立绘、好感度与记忆，日常互动和任务 Token 都会累积好感；另有小剧场多角色短剧与可点开的桌面桌宠。
+repo: https://github.com/JAdpp/dsh-whale-galgame
+package: dsh-whale-galgame
+rowId: ui-whale-galgame
+category: pet
+tags:
+  - galgame
+  - multi-character
+  - affection
+  - desktop-pet
+modes:
+  - light
+  - dark
+install:
+  target: github:JAdpp/dsh-whale-galgame#aa6ee3df79f8707131eefcdf17acef37cfd5bc4f
+  version: 0.7.0
+  commit: aa6ee3df79f8707131eefcdf17acef37cfd5bc4f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JAdpp/dsh-whale-galgame/aa6ee3df79f8707131eefcdf17acef37cfd5bc4f/docs/screenshots/galgame-overview.jpg
+  - https://raw.githubusercontent.com/JAdpp/dsh-whale-galgame/aa6ee3df79f8707131eefcdf17acef37cfd5bc4f/docs/screenshots/plugin-settings.png
+  - https://raw.githubusercontent.com/JAdpp/dsh-whale-galgame/aa6ee3df79f8707131eefcdf17acef37cfd5bc4f/docs/screenshots/side-story-multi-character.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1229
+starsSnapshot: 44
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/JAdpp/dsh-whale-galgame/aa6ee3df79f8707131eefcdf17acef37cfd5bc4f/docs/screenshots/galgame-overview.jpg

@@ -1,0 +1,54 @@
+id: jinxing.01.dsh.music.player
+name:
+  zh: B站歌单播放器
+  en: Bilibili Playlist Player
+author: JinXing-01
+description: 右下角可拖动、可折叠的悬浮播放器：把 B 站收藏夹当歌单，只拉音频轨、默认 192k AAC，不请求视频流；也支持网易云，带队列、持久化与 agent 音乐工具。
+repo: https://github.com/JinXing-01/dsh-music-player
+package: dsh-music-v2
+rowId: dsh-music-v2
+category: player
+tags:
+  - bilibili
+  - playlist
+  - floating
+  - queue
+modes:
+  - light
+  - dark
+install:
+  target: github:JinXing-01/dsh-music-player#b559f9f80e4008b3567a179dc8e3e960a4c83bfb
+  version: 0.1.0
+  commit: b559f9f80e4008b3567a179dc8e3e960a4c83bfb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JinXing-01/dsh-music-player/b559f9f80e4008b3567a179dc8e3e960a4c83bfb/screenshots/player.png
+  - https://raw.githubusercontent.com/JinXing-01/dsh-music-player/b559f9f80e4008b3567a179dc8e3e960a4c83bfb/screenshots/bilibili-tab.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1232
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/JinXing-01/dsh-music-player/b559f9f80e4008b3567a179dc8e3e960a4c83bfb/screenshots/player.png

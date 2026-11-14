@@ -1,0 +1,52 @@
+id: kinglhy2006.dsh.crt.theme
+name:
+  zh: CRT 终端
+  en: CRT Terminal
+author: kinglhy2006
+description: 磷光绿配色的 CRT 终端皮肤：近黑底、扫描线与等宽字体只覆盖设计令牌，不改组件结构；侧栏页脚带仪表盘，显示输出速度、内存、CPU、会话与累计 token、今日花费和可选的 DeepSeek 余额。
+repo: https://github.com/kinglhy2006/dsh-crt-theme
+package: dsh-crt-theme
+rowId: crt-theme
+category: skin
+tags:
+  - crt
+  - phosphor
+  - monospace
+  - dashboard
+modes:
+  - dark
+install:
+  target: github:kinglhy2006/dsh-crt-theme#21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e
+  version: 1.0.0
+  commit: 21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/kinglhy2006/dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/docs/preview.png
+  - https://raw.githubusercontent.com/kinglhy2006/dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/docs/dashboard.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1235
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/kinglhy2006/dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/docs/preview.png

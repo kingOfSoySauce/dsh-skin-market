@@ -1,0 +1,55 @@
+id: zkb.1271.dsh.pet.whale
+name:
+  zh: 像素蓝鲸桌宠
+  en: Pixel Blue Whale Pet
+author: zkb-1271
+description: 替你盯任务的像素蓝鲸：任务跑起来会巡游，出错发抖冒火，等你审批时蹦跳，完成时顶着一道通到页底的水柱横渡整屏；既能住在页面里，也能开成覆盖全屏、其余区域鼠标穿透的桌面悬浮窗，摇晃会喷水、单击有 50% 爱心 / 50% 喷水，并开放 window.dshPetWhale 脚本接口。
+repo: https://github.com/zkb-1271/dsh-pet-whale
+package: dsh-pet-whale
+rowId: dsh-pet-whale
+category: pet
+tags:
+  - pixel-art
+  - desktop-overlay
+  - task-status
+  - water
+  - programmable
+modes:
+  - light
+  - dark
+install:
+  target: github:zkb-1271/dsh-pet-whale#6c6f3d3ac517b278708d7c0a2a663a25a6e02f12
+  version: 1.2.1
+  commit: 6c6f3d3ac517b278708d7c0a2a663a25a6e02f12
+compatibility:
+  dsh: 0.1.6-alpha.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zkb-1271/dsh-pet-whale/6c6f3d3ac517b278708d7c0a2a663a25a6e02f12/docs/images/social-preview.png
+  - https://raw.githubusercontent.com/zkb-1271/dsh-pet-whale/6c6f3d3ac517b278708d7c0a2a663a25a6e02f12/docs/images/showcase-overlay.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 1285
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/zkb-1271/dsh-pet-whale/6c6f3d3ac517b278708d7c0a2a663a25a6e02f12/docs/images/social-preview.png

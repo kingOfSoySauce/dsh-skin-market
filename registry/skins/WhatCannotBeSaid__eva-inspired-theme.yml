@@ -1,0 +1,54 @@
+id: whatcannotbesaid.eva.inspired.theme
+name:
+  zh: NERV 闸门
+  en: NERV Gate
+author: WhatCannotBeSaid
+description: 以 NERV 闸门为原型的双模式主题：亮色「Title Card」像片头字卡，暗色「Central Dogma」是地下都市指挥室；55 条实测 token 落在同一层可移除的覆盖层上，另带启动遮罩与三段式品牌行。
+repo: https://github.com/WhatCannotBeSaid/eva-inspired-theme
+package: eva-inspired-theme
+rowId: eva-inspired-theme
+category: skin
+tags:
+  - evangelion
+  - nerv
+  - dual-mode
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:WhatCannotBeSaid/eva-inspired-theme#13ab3a50898e14e72639b21441bc3e22c7fcb423
+  version: 1.3.0
+  commit: 13ab3a50898e14e72639b21441bc3e22c7fcb423
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/WhatCannotBeSaid/eva-inspired-theme/13ab3a50898e14e72639b21441bc3e22c7fcb423/docs/preview-light.jpg
+  - https://raw.githubusercontent.com/WhatCannotBeSaid/eva-inspired-theme/13ab3a50898e14e72639b21441bc3e22c7fcb423/docs/preview-dark.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1276
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/WhatCannotBeSaid/eva-inspired-theme/13ab3a50898e14e72639b21441bc3e22c7fcb423/docs/preview-light.jpg

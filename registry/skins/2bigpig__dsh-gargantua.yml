@@ -1,0 +1,50 @@
+id: 2bigpig.dsh.gargantua
+name:
+  zh: 卡冈图雅
+  en: Gargantua
+author: 2bigpig
+description: 《星际穿越》风格的实时 4K 黑洞铺在会话中栏：新会话时醒目、聊天时变淡，不覆盖侧栏，也不拦截输入、滚动与选择；每次启用或启动时通过官方主题接口把整个界面切为深色并保存一次，避免浅色底上黑洞几乎看不见。实际绘制分辨率始终为 3840×2160，动画源码独立开源。
+repo: https://github.com/2bigpig/dsh-gargantua
+package: dsh-gargantua
+rowId: gargantua
+category: skin
+tags:
+  - black-hole
+  - interstellar
+  - webgpu
+  - background
+modes:
+  - dark
+install:
+  target: github:2bigpig/dsh-gargantua#70755987128836a5ab70e0c8e6bdfbcbf70759d3
+  version: 0.2.1
+  commit: 70755987128836a5ab70e0c8e6bdfbcbf70759d3
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/2bigpig/dsh-gargantua/70755987128836a5ab70e0c8e6bdfbcbf70759d3/docs/demo.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1220
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/2bigpig/dsh-gargantua/70755987128836a5ab70e0c8e6bdfbcbf70759d3/docs/demo.gif
