@@ -10,6 +10,7 @@ import { loadCatalog } from './catalog.ts'
 import { inspectLockfileDrift } from './repair.ts'
 import { desktopGithubInstallPlan, desktopInstallPlan } from './desktop-install.ts'
 import { companionAsSkin, discoverMonorepoTarget, isNpmInstallTarget, npmInstallTarget, preferredInstallTarget, reviewedNpmSourceError, updateInstallTarget } from './install-resolution.ts'
+import { managedUpdateTarget, type ManagedUpdateTarget } from './managed-update.ts'
 import { sharedLoaderIdentifiers } from './loader-ownership.ts'
 import { classifyPnpmFailure, failureDiagnostic, PnpmCommandError, runPnpmWithRecovery, type PnpmFailure } from './pnpm-recovery.ts'
 import { pluginArgsFor } from './pnpm-compat.ts'
@@ -2251,6 +2252,62 @@ export class SkinLifecycle {
     throw new Error('当前皮肤使用本地、自定义或无法继续核验的安装来源，无法自动换源；请按原安装方式更新')
   }
 
+  /** The official in-place update target for an installed skin, when this Host can replace it. */
+  private managedUpdateTargetFor(skin: SkinEntry): ManagedUpdateTarget | undefined {
+    const management = this.management
+    if (management === undefined || management.updateBundle === undefined) return undefined
+    if (!management.capabilities().managedUpdate.available) return undefined
+    const currentSpec = readDependencies(this.options.profileDir)[skin.package]
+    const installedVersion = packageManifest(this.options.profileDir, skin.package)?.version
+    return managedUpdateTarget(skin, currentSpec, typeof installedVersion === 'string' ? installedVersion : undefined)
+  }
+
+  /**
+   * Replace an installed skin through the official pluginManager transaction.
+   * The Host removes the installed copy, installs the exact target and restores
+   * the removed version when the target fails.
+   * @param skin - the catalog entry whose target was already resolved.
+   * @param operation - the running update operation.
+   * @param target - the exact target the Host replaces the installed copy with.
+   * @returns true when the Host installed the target; false when it refused
+   *   before removing anything, so the ordinary install path may run.
+   */
+  private async managedUpdateSkin(skin: SkinEntry, operation: Operation, target: ManagedUpdateTarget): Promise<boolean> {
+    const management = this.management!
+    const updateBundle = management.updateBundle!
+    const controller = this.abortControllers.get(operation.id)
+    this.update(operation, 'installing', '正在由官方插件管理更新皮肤', 'common.operationHostUpdateStarting')
+    operation.cancelable = management.capabilities().cancel.available
+    const result = await updateBundle.call(management, skin.package, target.version, {
+      requestId: operation.id,
+      ...(target.kind === 'git' && target.spec !== undefined ? { spec: target.spec } : {}),
+      signal: controller?.signal,
+      timeoutMs: this.remainingTime(operation),
+      onUpdateStep: step => {
+        if (step === 'removing') this.update(operation, 'installing', '正在移除已安装的版本', 'common.operationHostUpdateRemoving')
+        else if (step === 'installing') {
+          this.update(operation, 'installing', '正在安装新版本', 'common.operationHostUpdateInstalling')
+          operation.cancelable = management.capabilities().cancel.available
+        } else if (step === 'restoring') this.update(operation, 'installing', '更新失败，正在恢复已安装的版本', 'common.operationHostUpdateRestoring')
+        else this.update(operation, 'installing', '正在检查可更新的版本', 'common.operationHostUpdateChecking')
+      },
+    })
+    if (result.management?.application === 'failed' && (result.management as Record<string, unknown>).step === 'check') {
+      logEvent('info', 'managed-update-fallback', `官方更新预检拒绝：${officialFailureDiagnostic(result)}`, operation.id)
+      this.update(operation, 'installing', '官方更新预检未通过，改用市场安装流程', 'common.operationHostUpdateFallback')
+      return false
+    }
+    this.acceptManagement(result, operation, skin)
+    if (result.management?.version !== undefined && result.management.version !== target.version) {
+      throw new Error('官方宿主更新的版本与已核验目标不一致')
+    }
+    const artifact = validateDesktopArtifact(this.options.profileDir, skin, { allowArtifactRisk: true })
+    if (!artifact.ok) throw new Error(artifact.reason ?? '官方宿主更新构件未通过核验')
+    this.assertLegacyOfficialPeers(packageManifest(this.options.profileDir, skin.package))
+    if (management.installRequiresRestart) operation.restartRequired = true
+    return true
+  }
+
   private async installPackage(skin: SkinEntry, operation: Operation, state: PersistedMarketState, target?: string, prefetched?: PrefetchedPackage): Promise<void> {
     if (this.hostKind === 'desktop') {
       this.desktopManagedAttempts.add(operation.id)
@@ -3019,7 +3076,9 @@ export class SkinLifecycle {
         if (this.hostKind !== 'desktop' && readDependencies(this.options.profileDir)[skin.package] !== originalSpec) throw new Error('更新来源在安装准备期间发生变化，请刷新后重试')
         if (prefetched === undefined) this.update(operation, 'downloading')
         installationStarted = true
-        await this.installPackage(skin, operation, previousState, target, prefetched)
+        const managed = operation.kind === 'update' ? this.managedUpdateTargetFor(skin) : undefined
+        const appliedByHost = managed === undefined ? false : await this.managedUpdateSkin(skin, operation, managed)
+        if (!appliedByHost) await this.installPackage(skin, operation, previousState, target, prefetched)
         skin = this.adoptInstalledLoaderRowId(skin, operation)
         await this.applyCompatibility(skin, operation)
         this.update(operation, 'validating')

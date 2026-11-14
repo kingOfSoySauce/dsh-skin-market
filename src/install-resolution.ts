@@ -93,7 +93,7 @@ export function reviewedNpmSourceError(skin: SkinEntry): string | null {
   return null
 }
 
-function isNpmDependencySpec(spec: string, packageName: string): boolean {
+export function isNpmDependencySpec(spec: string, packageName: string): boolean {
   let version = spec
   for (const prefix of [`npm:${packageName}@`, `${packageName}@`]) {
     if (version.startsWith(prefix)) { version = version.slice(prefix.length); break }

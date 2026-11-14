@@ -4,7 +4,7 @@ import { homedir } from 'node:os'
 import { dirname, join, resolve } from 'node:path'
 import { resolveProfileDir } from './profile.ts'
 import type { MarketHostKind } from './types.ts'
-import type { OfficialInstallProgress, OfficialManagementAdapter, OfficialManagementResult } from './official-desktop.ts'
+import type { ManagedUpdateStep, OfficialInstallProgress, OfficialManagementAdapter, OfficialManagementResult } from './official-desktop.ts'
 import { normalizeRegistryBase, registryPlanFromSnapshot, type RegistryPlanProvider } from './registry-plan.ts'
 import { MarketMessageError } from './operation-message.ts'
 
@@ -25,6 +25,8 @@ export interface CommandOptions {
   onStdout?: (chunk: string) => void
   onStderr?: (chunk: string) => void
   onManagementState?: (state: OfficialInstallProgress) => void
+  /** The official Host announced an update step for this operation's request id. */
+  onUpdateStep?: (step: ManagedUpdateStep) => void
 }
 
 export type CommandExecutor = (file: string, args: readonly string[], options?: CommandOptions) => Promise<CommandResult>

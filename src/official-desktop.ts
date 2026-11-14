@@ -8,6 +8,8 @@ import type { DshRuntime } from './types.ts'
 /** Structural Host service contract; no Electron or generated Client proxy dependency. */
 export interface OfficialPluginManagerLike {
   installBundle(spec: string, options?: Record<string, unknown>): Promise<unknown>
+  /** DSH 0.2.x replaces an installed bundle in place, restoring it when the target fails. */
+  updateBundle?(name: string, version: string, options?: Record<string, unknown>): Promise<unknown>
   removeBundle(name: string): Promise<unknown>
   /** DSH 0.2.1 exposes the configured registry and its ordered fallbacks. */
   registries?(): Promise<unknown>
@@ -68,7 +70,10 @@ export interface OfficialManagementEvents {
 export interface OfficialCapability { available: boolean; reason?: string }
 export interface OfficialManagementCapabilities {
   install: OfficialCapability
+  /** The install-based update path (`installBundle`) this market used before updateBundle was available. */
   update: OfficialCapability
+  /** The official `pluginManager.updateBundle`: one Host transaction with its own rollback. */
+  managedUpdate: OfficialCapability
   enable: OfficialCapability
   disable: OfficialCapability
   remove: OfficialCapability
@@ -79,6 +84,16 @@ export interface OfficialManagementCapabilities {
   saveExact: OfficialCapability
 }
 export interface OfficialInspectionOptions { registry?: string | null; signal?: AbortSignal }
+/** The steps the Host announces while it replaces an installed bundle. */
+export type ManagedUpdateStep = 'checking' | 'removing' | 'installing' | 'restoring'
+/** One official in-place update: the exact target the Host replaces and how to follow its progress. */
+export interface ManagedUpdateOptions extends CommandOptions {
+  requestId: string
+  /** The Git spec pinned to a full commit of the installed repository directory; required for Git copies. */
+  spec?: string
+  /** The registry asked first, or null for pnpm's own configuration. */
+  registry?: string | null
+}
 export interface OfficialManagementAdapter {
   /** Newly installed code on these Hosts may need restart; saving enablement is still supported. */
   readonly installRequiresRestart: boolean
@@ -86,6 +101,8 @@ export interface OfficialManagementAdapter {
   setBundleEnabled(name: string, enabled: boolean, options?: CommandOptions): Promise<CommandResult>
   setPluginEnabled(entryId: string, enabled: boolean, options?: CommandOptions): Promise<CommandResult>
   inspect(spec: string, options?: OfficialInspectionOptions): Promise<unknown>
+  /** Replace an installed bundle with a strictly newer version through the Host's own transaction. */
+  updateBundle?(name: string, version: string, options: ManagedUpdateOptions): Promise<CommandResult>
   listBundles(): Promise<unknown>
   listPlugins(): Promise<unknown>
   /** Ordered registry bases supplied by the official host, when available. */
@@ -172,6 +189,21 @@ function managerResult(value: unknown, requestId?: string, strict = false): Comm
   const failure = officialOperationFailure(result)
   if (failed && failure !== undefined) result.stderr = failure.message
   return result
+}
+/** Flatten the Host's PluginUpdateResult so the ChangeResult mapper reads its install answer. */
+function flattenUpdateResult(value: unknown): unknown {
+  const unwrapped = unwrapResult(value)
+  const record = asRecord(unwrapped)
+  if (record === undefined) return unwrapped
+  const result = asRecord(record.result)
+  if (result === undefined) return record
+  return {
+    ...result,
+    ...(record.from === undefined ? {} : { from: record.from }),
+    ...(record.to === undefined ? {} : { to: record.to }),
+    ...(record.step === undefined ? {} : { step: record.step }),
+    ...(asRecord(record.restore) === undefined ? {} : { restore: record.restore }),
+  }
 }
 function managerError(error: unknown, _options?: CommandOptions): CommandResult {
   return {
@@ -276,6 +308,25 @@ function subscribeProgress(events: OfficialManagementEvents | undefined, request
   }
   return () => { for (const dispose of disposers) dispose() }
 }
+const UPDATE_STEPS: readonly ManagedUpdateStep[] = ['checking', 'removing', 'installing', 'restoring']
+/** Follow the Host's update steps for one request; unrelated request ids are ignored. */
+function subscribeUpdateProgress(events: OfficialManagementEvents | undefined, requestId: string, options?: CommandOptions): () => void {
+  if (events === undefined || options?.onUpdateStep === undefined) return () => undefined
+  let dispose: (() => void) | void = undefined
+  try {
+    dispose = events.on('plugin-manager/update-state', value => {
+      const record = asRecord(value)
+      if (record?.requestId !== requestId) return
+      const step = record.step
+      if (typeof step !== 'string' || !UPDATE_STEPS.includes(step as ManagedUpdateStep)) return
+      options.onUpdateStep!(step as ManagedUpdateStep)
+    })
+  } catch (error) {
+    if (dispose !== undefined) dispose()
+    throw error
+  }
+  return () => { if (dispose !== undefined) dispose() }
+}
 
 const PACKAGE_NAME = /^(?:@[a-z0-9][a-z0-9._~-]*\/)?[a-z0-9][a-z0-9._~-]*$/
 /**
@@ -321,6 +372,7 @@ export function officialDesktopRunner(
     return {
       install: capability(install, !core ? unavailable : '官方 pluginManager 未提供安装接口'),
       update: capability(install, !core ? unavailable : '官方 pluginManager 未提供更新接口'),
+      managedUpdate: capability(method('updateBundle'), !core ? unavailable : '官方 pluginManager 未提供 updateBundle 接口'),
       enable: capability(enabled, !core ? unavailable : '官方 pluginManager 未提供启用接口'),
       disable: capability(enabled, !core ? unavailable : '官方 pluginManager 未提供停用接口'),
       remove: capability(method('removeBundle'), !core ? unavailable : '官方 pluginManager 未提供卸载接口'),
@@ -406,6 +458,28 @@ export function officialDesktopRunner(
       return readManagerResult(await (versionAtLeast(RECOVERY_VERSION)
         ? manager.inspect(spec, options?.registry === undefined ? undefined : { registry: options.registry }, options?.signal)
         : manager.inspect(spec, options?.signal)))
+    },
+    async updateBundle(name, version, updateOptions) {
+      try {
+        const manager = requireCapability('managedUpdate')
+        const caps = capabilities()
+        const requestOptions: Record<string, unknown> = { requestId: updateOptions.requestId }
+        if (updateOptions.spec !== undefined) requestOptions.spec = updateOptions.spec
+        if (updateOptions.registry !== undefined) {
+          if (!caps.registry.available) throw new Error(caps.registry.reason)
+          const normalized = updateOptions.registry === null ? null : normalizeRegistryBase(updateOptions.registry)
+          if (updateOptions.registry !== null && normalized === null) throw new Error('安装源必须是无凭据的 HTTP(S) 地址')
+          requestOptions.registry = updateOptions.registry
+        }
+        const unsubscribe = subscribeUpdateProgress(events, updateOptions.requestId, updateOptions)
+        try {
+          return await callManager(async () => flattenUpdateResult(await manager.updateBundle!(name, version, requestOptions)), updateOptions, {
+            requestId: updateOptions.requestId,
+            ...(caps.cancel.available ? { cancel: () => manager.cancelInstall!(updateOptions.requestId) } : {}),
+            ...(caps.wait.available ? { wait: () => manager.waitForInstall!(updateOptions.requestId) } : {}),
+          }, runtime !== undefined)
+        } finally { unsubscribe() }
+      } catch (error) { return managerError(error, updateOptions) }
     },
     async listBundles() {
       const manager = getManager()

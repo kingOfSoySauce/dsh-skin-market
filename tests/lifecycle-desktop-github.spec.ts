@@ -20,7 +20,7 @@ afterEach(async () => {
 const until = conditionWaiter({ attempts: 500, intervalMs: 2, message: 'GitHub lifecycle condition did not settle' })
 const finished = operationWaiter({ attempts: 500, intervalMs: 2, message: 'GitHub lifecycle condition did not settle', terminal: ['done', 'failed', 'cancelled', 'waiting'] })
 
-function fixture(subpath?: string, options: { manual?: boolean; desktopReason?: string } = {}) {
+function fixture(subpath?: string, options: { manual?: boolean; desktopReason?: string; managedUpdate?: boolean } = {}) {
   const base = catalogFixtureSkin()
   const commit = 'a'.repeat(40)
   const item: SkinEntry = { ...base, id: 'github-test', package: 'dsh-github-test', rowId: 'github-test', repo: 'https://github.com/Fixture/Skin', subpath,
@@ -66,6 +66,15 @@ function fixture(subpath?: string, options: { manual?: boolean; desktopReason?: 
     setPluginEnabled: vi.fn(async (): Promise<unknown> => ({ application: 'applied' })),
     listBundles: vi.fn(async (): Promise<unknown> => [{ name: item.package, installed: true, enabled: false, rows: [{ rowId: item.rowId, moduleName: item.package }] }]),
     listPlugins: vi.fn(async (): Promise<unknown> => []),
+    ...(options.managedUpdate === true
+      ? {
+          updateBundle: vi.fn(async (name: string, version: string, updateOptions?: Record<string, unknown>): Promise<unknown> => {
+            const spec = typeof updateOptions?.spec === 'string' ? updateOptions.spec : item.install.target
+            materialize(spec, version)
+            return { from: '0.0.0', to: version, step: 'install', result: { application: 'applied', changed: true, stage: 'install', target: name, version } }
+          }),
+        }
+      : {}),
   } satisfies OfficialPluginManagerLike
   const runtime = { version: '0.2.1-alpha.3', source: 'injected' as const, capabilities: [] }
   const runner = officialDesktopRunner(() => manager, runtime)
@@ -194,5 +203,51 @@ describe('official Desktop pinned GitHub installation', () => {
     expect(f.manager.cancelInstall).toHaveBeenCalledWith(requestId)
     expect(f.manager.installBundle).toHaveBeenCalledTimes(1)
     expect(readDependencies(f.directory)[f.item.package]).toBeUndefined()
+  })
+})
+
+describe('official Desktop managed update', () => {
+  function updatingFixture(subpath = 'packages/skin') {
+    const f = fixture(subpath, { managedUpdate: true })
+    const previous = f.item.install.target.replace(f.item.install.commit, 'b'.repeat(40))
+    f.materialize(previous, '0.9.0')
+    f.item.install.desktop = { mode: 'managed', registry: 'npm', packageName: f.item.package, packageVersion: f.item.install.version }
+    return { ...f, previous }
+  }
+
+  it('replaces a pinned GitHub copy through the official transaction and skips the install path', async () => {
+    const f = updatingFixture()
+    const operation = await finished(f.lifecycle.begin('update', f.item.id))
+    expect(operation.phase).toBe('done')
+    expect(f.manager.updateBundle).toHaveBeenCalledExactlyOnceWith(f.item.package, '1.0.0', expect.objectContaining({ requestId: operation.id, spec: f.item.install.target }))
+    expect(f.manager.installBundle).not.toHaveBeenCalled()
+    expect(readDependencies(f.directory)[f.item.package]).toBe(f.item.install.target)
+    expect(f.lifecycle.states()[0]).toMatchObject({ installation: 'installed', installedVersion: '1.0.0' })
+  })
+
+  it('falls back to the market install path when the Host refuses the target before replacing anything', async () => {
+    const f = updatingFixture()
+    f.manager.updateBundle.mockResolvedValueOnce({
+      from: '0.9.0', to: '1.0.0', step: 'check',
+      result: { application: 'failed', changed: false, stage: 'install', target: f.item.package, error: { code: 'invalid-spec', diagnostic: 'fixture refused' } },
+    })
+    const operation = await finished(f.lifecycle.begin('update', f.item.id))
+    expect(operation.phase).toBe('done')
+    expect(f.manager.updateBundle).toHaveBeenCalledTimes(1)
+    expect(f.manager.installBundle).toHaveBeenCalledTimes(1)
+    expect(readDependencies(f.directory)[f.item.package]).toBe(f.item.install.target)
+  })
+
+  it('fails without repeating the update when the Host restored the previous version', async () => {
+    const f = updatingFixture()
+    f.manager.updateBundle.mockResolvedValueOnce({
+      from: '0.9.0', to: '1.0.0', step: 'install',
+      result: { application: 'failed', changed: false, stage: 'install', target: f.item.package, error: { code: 'operation-error', diagnostic: 'fixture refused' } },
+      restore: { application: 'applied', changed: true, stage: 'install', target: f.item.package },
+    })
+    const operation = await finished(f.lifecycle.begin('update', f.item.id))
+    expect(operation).toMatchObject({ phase: 'failed', application: 'failed' })
+    expect(f.manager.installBundle).not.toHaveBeenCalled()
+    expect(readDependencies(f.directory)[f.item.package]).toBe(f.previous)
   })
 })

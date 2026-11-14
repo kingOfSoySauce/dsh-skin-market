@@ -24,6 +24,9 @@ describe('first-party message catalog', () => {
     expect(operationMessage({ message: '下载并检查安装包', messageKey: 'common.stepDownloadInspect' }, t)).toBe('Download and inspect the install package file')
     expect(operationMessage({ messageKey: 'server.restartBlockedByOperations', messageParams: { count: 2 } }, t)).toContain('2 skin operation(s)')
     expect(operationMessage({ messageKey: 'common.dshComponentDisabled' }, t)).toContain('Choose Use')
+    expect(operationMessage({ messageKey: 'common.operationHostUpdateRemoving' }, t)).toBe('Removing the installed version')
+    expect(operationMessage({ messageKey: 'common.operationHostUpdateFallback' }, t)).toContain('official update check')
+    expect(operationMessage({ messageKey: 'common.operationHostUpdateRestoring' }, createStaticTranslator('zh'))).toBe('更新失败，正在恢复已安装的版本')
     const diagnostic = 'RAW_DIAGNOSTIC_MARKER /private/profile\nline 2'
     expect(operationMessage({ message: diagnostic }, t)).toBe(diagnostic)
   })

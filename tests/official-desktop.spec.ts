@@ -29,6 +29,17 @@ function materializeMarket(directory: string, version: string): void {
   writeFileSync(join(packageDir, 'cordis.patch.yml'), '[]\n')
 }
 
+function updateManager(overrides: Partial<OfficialPluginManagerLike> = {}): OfficialPluginManagerLike {
+  return {
+    ...fullManager(),
+    updateBundle: vi.fn(async () => ({
+      from: '1.2.2', to: '1.2.3', step: 'install',
+      result: { changed: true, application: 'applied', stage: 'install', target: 'dsh-demo', bundle: 'dsh-demo', version: '1.2.3' },
+    })),
+    ...overrides,
+  }
+}
+
 function fullManager(): OfficialPluginManagerLike {
   return {
     installBundle: vi.fn(async () => ({ changed: true, application: 'applied', stage: 'enable', target: 'skin' })),
@@ -809,5 +820,79 @@ describe('official installation settlement', () => {
     expect(onManagementState).toHaveBeenCalledExactlyOnceWith({ requestId: 'request', phase: 'applying' })
     expect(handlers.size).toBe(0)
     expect(dispose).toHaveBeenCalledTimes(2)
+  })
+
+  it('reports updateBundle as a separate capability from the install-based update path', () => {
+    const withUpdate = officialDesktopRunner(() => updateManager(), runtime('0.2.2-rc.2'))
+    expect(withUpdate.management!.capabilities().managedUpdate).toEqual({ available: true })
+    const withoutUpdate = officialDesktopRunner(() => fullManager(), runtime('0.2.2-rc.2'))
+    expect(withoutUpdate.management!.capabilities().managedUpdate.available).toBe(false)
+    expect(withoutUpdate.management!.capabilities().managedUpdate.reason).toContain('updateBundle')
+    // The historical capability keeps meaning "installBundle is available".
+    expect(withoutUpdate.management!.capabilities().update).toEqual({ available: true })
+  })
+
+  it('forwards the exact target to updateBundle and maps an applied Host transaction', async () => {
+    const manager = updateManager()
+    const runner = officialDesktopRunner(() => manager, runtime('0.2.2-rc.2'))
+    const result = await runner.management!.updateBundle!('dsh-demo', '1.2.3', { requestId: 'request', registry: 'https://registry.npmjs.org' })
+    expect(manager.updateBundle).toHaveBeenCalledWith('dsh-demo', '1.2.3', { requestId: 'request', registry: 'https://registry.npmjs.org' })
+    expect(result.exitCode).toBe(0)
+    expect(result.management).toMatchObject({ application: 'applied', from: '1.2.2', to: '1.2.3', step: 'install', version: '1.2.3' })
+  })
+
+  it('forwards a pinned Git spec for a Git-installed bundle', async () => {
+    const manager = updateManager()
+    const runner = officialDesktopRunner(() => manager, runtime('0.2.2-rc.2'))
+    const spec = 'github:acme/dsh-demo#0f95a8cf6eed9bf0357c827759f53e8ce9a9a8e7'
+    await runner.management!.updateBundle!('dsh-demo', '1.2.4', { requestId: 'request', spec })
+    expect(manager.updateBundle).toHaveBeenCalledWith('dsh-demo', '1.2.4', { requestId: 'request', spec })
+  })
+
+  it('reports a failed update together with the version restored by the Host', async () => {
+    const manager = updateManager({
+      updateBundle: vi.fn(async () => ({
+        from: '1.2.2', to: '1.2.3', step: 'install',
+        result: { changed: false, application: 'failed', stage: 'install', target: 'dsh-demo', error: { code: 'operation-error', diagnostic: 'boom' } },
+        restore: { changed: true, application: 'applied', stage: 'install', target: 'dsh-demo' },
+      })),
+    })
+    const runner = officialDesktopRunner(() => manager, runtime('0.2.2-rc.2'))
+    const result = await runner.management!.updateBundle!('dsh-demo', '1.2.3', { requestId: 'request' })
+    expect(result.exitCode).toBe(1)
+    expect(result.management).toMatchObject({
+      application: 'failed', from: '1.2.2', to: '1.2.3',
+      restore: { application: 'applied', stage: 'install', target: 'dsh-demo' },
+    })
+  })
+
+  it('reports an update whose answer was lost as unconfirmed instead of repeating it', async () => {
+    const manager = updateManager({ updateBundle: vi.fn(async () => { throw new Error('host refused') }) })
+    const runner = officialDesktopRunner(() => manager, runtime('0.2.2-rc.2'))
+    const result = await runner.management!.updateBundle!('dsh-demo', '1.2.3', { requestId: 'request' })
+    expect(result.exitCode).toBe(1)
+    expect(result.management).toMatchObject({ application: 'unknown', indeterminate: true })
+  })
+
+  it('streams the matching update steps and withdraws the listener after settlement', async () => {
+    const handlers = new Map<string, (value: unknown) => void>()
+    const events = { on(event: string, callback: (value: unknown) => void) {
+      handlers.set(event, callback)
+      return () => { handlers.delete(event) }
+    } }
+    const manager = updateManager({
+      updateBundle: vi.fn(async () => {
+        handlers.get('plugin-manager/update-state')!({ requestId: 'other', step: 'installing' })
+        handlers.get('plugin-manager/update-state')!({ requestId: 'request', step: 'removing' })
+        handlers.get('plugin-manager/update-state')!({ requestId: 'request', step: 'installing' })
+        handlers.get('plugin-manager/update-state')!({ requestId: 'request', step: 'unknown-step' })
+        return { from: '1.2.2', to: '1.2.3', step: 'install', result: { changed: true, application: 'applied', stage: 'install', target: 'dsh-demo', version: '1.2.3' } }
+      }),
+    })
+    const onUpdateStep = vi.fn()
+    const runner = officialDesktopRunner(() => manager, runtime('0.2.2-rc.2'), events)
+    await runner.management!.updateBundle!('dsh-demo', '1.2.3', { requestId: 'request', onUpdateStep })
+    expect(onUpdateStep.mock.calls).toEqual([['removing'], ['installing']])
+    expect(handlers.size).toBe(0)
   })
 })
