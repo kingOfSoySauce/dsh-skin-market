@@ -145,6 +145,18 @@ function readmeImages(text, target, sha) {
   return [...new Set(values)].slice(0, 6)
 }
 
+/**
+ * GIF-first README order: a recorded GIF is the strongest preview of an
+ * animated skin, so it is listed before static README images. The market build
+ * applies the same rule to every display list, and this keeps the hydrated
+ * source-of-truth `screenshots` field consistent with it for future entries.
+ * Author-declared screenshots stay first because that list is explicit.
+ */
+function gifFirstReadmeImages(values) {
+  const gifs = values.filter(value => /\.gif(?:$|[?#])/i.test(value))
+  return [...gifs, ...values.filter(value => !/\.gif(?:$|[?#])/i.test(value))]
+}
+
 /** Extract inline, reference and HTML image sources from a pinned README. */
 export function readmeImageValues(text) {
   if (typeof text !== 'string') return []
@@ -294,7 +306,7 @@ export async function hydrateSkinSubmission(draft, options = {}) {
       }
     } catch { /* ignore */ }
   }
-  const screenshots = [...new Set([...declaredScreenshots, ...readmeImages(readme, target, sha)])]
+  const screenshots = [...new Set([...declaredScreenshots, ...gifFirstReadmeImages(readmeImages(readme, target, sha))])]
     .filter(url => /^https:\/\//.test(url) && IMAGE_EXTENSION.test(url))
     .slice(0, 8)
 

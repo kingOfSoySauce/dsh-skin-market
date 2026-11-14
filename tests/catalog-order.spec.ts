@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { comparePublicCatalogOrder, shouldRenderPublicPreview, type PublicCatalogEntry } from '../site/catalog-order.ts'
 import { getCatalogListScreenshot, getCatalogScreenshotUrls, usesMarketScreenshots } from '../src/catalog-order.ts'
+import { displayScreenshots } from '../scripts/registry-screenshots.mjs'
 
 const previewed = {
   review: { preview: 'verified' as const },
@@ -149,5 +150,76 @@ describe('public catalog order', () => {
     ])
     expect(getCatalogListScreenshot(entry)).toBe('https://pages.example/market.png')
     expect(usesMarketScreenshots(entry)).toBe(true)
+  })
+})
+
+describe('GIF-first catalog display', () => {
+  const staticFirst = {
+    ...previewed,
+    screenshots: ['https://raw.example/home.png', 'https://raw.example/demo.gif', 'https://raw.example/chat.png'],
+  }
+
+  it('promotes a GIF ahead of static screenshots when no editorial cover exists', () => {
+    expect(getCatalogScreenshotUrls(staticFirst)).toEqual([
+      'https://raw.example/demo.gif',
+      'https://raw.example/home.png',
+      'https://raw.example/chat.png',
+    ])
+    expect(getCatalogListScreenshot(staticFirst)).toBe('https://raw.example/demo.gif')
+  })
+
+  it('treats a listScreenshot that repeats the first author screenshot as a mechanical cover', () => {
+    const entry = { ...staticFirst, listScreenshot: 'https://raw.example/home.png' }
+    expect(getCatalogScreenshotUrls(entry)).toEqual([
+      'https://raw.example/demo.gif',
+      'https://raw.example/home.png',
+      'https://raw.example/chat.png',
+    ])
+    expect(getCatalogListScreenshot(entry)).toBe('https://raw.example/demo.gif')
+  })
+
+  it('keeps an editorial cover first and promotes the remaining GIFs behind it', () => {
+    const entry = { ...staticFirst, listScreenshot: 'https://raw.example/chat.png' }
+    expect(getCatalogScreenshotUrls(entry)).toEqual([
+      'https://raw.example/chat.png',
+      'https://raw.example/demo.gif',
+      'https://raw.example/home.png',
+    ])
+    expect(getCatalogListScreenshot(entry)).toBe('https://raw.example/chat.png')
+  })
+
+  it('promotes a GIF that would otherwise fall outside the eight-image limit', () => {
+    const entry = {
+      ...previewed,
+      screenshots: [...Array.from({ length: 8 }, (_, index) => `https://raw.example/static-${index}.png`), 'https://raw.example/demo.gif'],
+    }
+    const display = getCatalogScreenshotUrls(entry)
+    expect(display).toHaveLength(8)
+    expect(display[0]).toBe('https://raw.example/demo.gif')
+  })
+
+  it('renders the same GIF-first order as the catalog build', () => {
+    const fixtures = [
+      { ...previewed, screenshots: ['https://raw.example/home.png', 'https://raw.example/demo.gif'] },
+      { ...previewed, screenshots: ['https://raw.example/home.png', 'https://raw.example/demo.gif'], listScreenshot: 'https://raw.example/home.png' },
+      { ...previewed, screenshots: ['https://raw.example/home.png', 'https://raw.example/demo.gif'], listScreenshot: 'https://raw.example/home.png', marketScreenshots: ['https://pages.example/market.png'] },
+      { ...previewed, marketScreenshots: ['https://pages.example/market.png'], screenshots: ['https://raw.example/home.png', 'https://raw.example/demo.gif'] },
+      {
+        ...previewed,
+        subpath: 'packages/skins/ocean',
+        marketScreenshots: ['https://pages.example/market.png'],
+        screenshots: ['https://raw.example/repo/packages/skins/black-whale/preview/dark.png', 'https://raw.example/repo/packages/skins/ocean/preview/dark.png', 'https://raw.example/repo/packages/skins/ocean/preview/demo.gif'],
+      },
+    ]
+
+    for (const entry of fixtures) {
+      expect(getCatalogScreenshotUrls(entry)).toEqual(displayScreenshots(
+        entry.marketScreenshots ?? [],
+        entry.screenshots,
+        entry.subpath,
+        entry.listScreenshot,
+        entry.review?.preview,
+      ))
+    }
   })
 })

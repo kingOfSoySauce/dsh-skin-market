@@ -89,11 +89,16 @@ for (const file of files) {
   const screenshots = [...new Set(resolveScreenshotList(skin.screenshots))]
   const display = displayScreenshots(marketScreenshots, screenshots, skin.subpath, skin.listScreenshot, skin.review?.preview)
   if (display.length === 0) console.warn(`${file}: no displayable screenshot; keeping the entry without media`)
-  const configuredListScreenshot = skin.listScreenshot
-  const listScreenshot = configuredListScreenshot !== undefined
-    ? (display.includes(configuredListScreenshot) ? configuredListScreenshot : display[0])
-    : marketScreenshots.length > 0 ? display[0] : undefined
-  const media = mediaForSources(display, listScreenshot ?? display[0])
+  // The catalog cover is the first rendered screenshot. GIF-first may promote a
+  // GIF over the mechanical `listScreenshot = screenshots[0]` cover the publish
+  // pipeline records, so keep the resolved value instead of the raw YAML field;
+  // a real editorial cover is already first and therefore unchanged. The same
+  // resolved source drives media.list so an entry and its WebP descriptor agree.
+  const resolvedListScreenshot = display[0]
+  const listScreenshot = skin.listScreenshot !== undefined || marketScreenshots.length > 0
+    ? resolvedListScreenshot
+    : undefined
+  const media = mediaForSources(display, resolvedListScreenshot)
   skins.push({ ...skin, ...(listScreenshot ? { listScreenshot } : {}), screenshots, ...(media ? { media } : {}) })
 }
 

@@ -1,3 +1,23 @@
+const GIF_SCREENSHOT_PATTERN = /\.gif(?:$|[?#])/i
+
+export function isGifScreenshot(url) {
+  return typeof url === 'string' && GIF_SCREENSHOT_PATTERN.test(url)
+}
+
+/**
+ * Stable GIF-first partition: every GIF keeps its relative order ahead of the
+ * static images, and the static images keep their own relative order after
+ * them. Used by the market build and the sites/clients that render it so an
+ * animated skin never shows a static cover just because the README listed the
+ * PNG first.
+ */
+export function gifFirstScreenshots(sources = []) {
+  const gifs = []
+  const statics = []
+  for (const source of sources) (isGifScreenshot(source) ? gifs : statics).push(source)
+  return [...gifs, ...statics]
+}
+
 export function mergeScreenshots(marketScreenshots = [], upstreamScreenshots = []) {
   const upstream = marketScreenshots.length > 0
     ? upstreamScreenshots.filter(url => !isRepositoryPreviewUrl(url))
@@ -41,9 +61,43 @@ export function hasCrossPackageScreenshots(upstreamScreenshots = [], subpath) {
 }
 
 /**
+ * A listScreenshot that merely repeats the first author screenshot is the
+ * mechanical cover the publish pipeline records (listScreenshot = screenshots[0]),
+ * not an editorial choice. GIF-first may override it, otherwise every published
+ * entry would keep the static first image as its market cover forever.
+ *
+ * Any other listScreenshot is an editorial cover and stays first; a cover that
+ * is the first market capture is always editorial because that capture was
+ * reviewed as the market proof.
+ */
+function isMechanicalCover(preferred, marketScreenshots, upstreamScreenshots) {
+  return preferred !== undefined
+    && preferred === upstreamScreenshots[0]
+    && preferred !== marketScreenshots[0]
+}
+
+/**
+ * Deterministic display order: deduplicate, keep an editorial cover first,
+ * promote every remaining GIF ahead of the static screenshots, then apply the
+ * eight-image display limit. Both the build and the site use this ordering so
+ * the catalog media descriptors line up with what the page renders.
+ */
+function orderDisplayScreenshots(display, preferred, mechanical) {
+  const unique = [...new Set(display)]
+  const rest = preferred === undefined ? unique : unique.filter(source => source !== preferred)
+  const ordered = preferred === undefined
+    ? gifFirstScreenshots(unique)
+    : mechanical
+      ? gifFirstScreenshots([preferred, ...rest])
+      : [preferred, ...gifFirstScreenshots(rest)]
+  return ordered.slice(0, MAX_DISPLAY_SCREENSHOTS)
+}
+
+/**
  * Build the renderable screenshot list without changing the source-of-truth
  * `screenshots` field. An explicit listScreenshot is an editorial cover choice;
- * repository-card URLs are never promoted as a cover.
+ * repository-card URLs are never promoted as a cover. When no editorial cover
+ * contradicts it, GIFs are promoted ahead of static screenshots.
  */
 export function displayScreenshots(marketScreenshots = [], upstreamScreenshots = [], subpath, listScreenshot, reviewPreview = 'verified') {
   const upstream = scopedScreenshots(upstreamScreenshots, subpath)
@@ -54,19 +108,16 @@ export function displayScreenshots(marketScreenshots = [], upstreamScreenshots =
     && (marketScreenshots.includes(listScreenshot) || (reviewPreview !== 'repository-card' && upstream.includes(listScreenshot)))
     ? listScreenshot
     : undefined
-  const orderPreferred = display => {
-    const unique = [...new Set(display)]
-    if (preferred === undefined) return unique
-    return [preferred, ...unique.filter(source => source !== preferred)]
-  }
+  const mechanical = isMechanicalCover(preferred, marketScreenshots, upstreamScreenshots)
+  const orderPreferred = display => orderDisplayScreenshots(display, preferred, mechanical)
   if (contaminated) {
     const scopedDisplay = [...new Set([...marketScreenshots, ...usableUpstream])]
     if (preferred !== undefined && !scopedDisplay.includes(preferred)) scopedDisplay.unshift(preferred)
-    if (scopedDisplay.length > 0) return orderPreferred(scopedDisplay).slice(0, MAX_DISPLAY_SCREENSHOTS)
+    if (scopedDisplay.length > 0) return orderPreferred(scopedDisplay)
   }
-  if (usableUpstream.length > 0) return orderPreferred(usableUpstream).slice(0, MAX_DISPLAY_SCREENSHOTS)
-  if (marketScreenshots.length > 0) return orderPreferred(marketScreenshots).slice(0, MAX_DISPLAY_SCREENSHOTS)
-  return orderPreferred(upstream).slice(0, MAX_DISPLAY_SCREENSHOTS)
+  if (usableUpstream.length > 0) return orderPreferred(usableUpstream)
+  if (marketScreenshots.length > 0) return orderPreferred(marketScreenshots)
+  return orderPreferred(upstream)
 }
 
 export function isRepositoryPreviewUrl(url) {

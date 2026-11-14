@@ -249,3 +249,58 @@ describe('thin registry submissions', () => {
     expect(skin.review.compatibility).toBe('verified')
   })
 })
+
+it('orders hydrated README screenshots GIF-first so the market cover keeps the animation', async () => {
+  const sha = 'deadbeefdeadbeefdeadbeefdeadbeefdeadbeef'
+  const files: Record<string, string> = {
+    'package.json': JSON.stringify({
+      name: '@fixture/animated',
+      version: '1.0.0',
+      license: 'MIT',
+      dsh: { bundle: { patch: './cordis.patch.yml' }, client: { platform: 'web' } },
+    }),
+    'cordis.patch.yml': '- insert:\n    - id: animated-skin\n      name: "@fixture/animated"\n',
+    'README.md': '![home](docs/home.png)\n\n![demo](docs/demo.gif)\n\n![chat](docs/chat.png)\n',
+    'LICENSE': 'MIT License',
+  }
+  const fetchText = async (url: string) => {
+    if (url.includes('api.github.com/repos/example/animated')) return { default_branch: 'main', stargazers_count: 0, topics: [] }
+    const file = Object.keys(files).find(path => url.endsWith(`/${sha}/${path}`))
+    return file ? files[file] : null
+  }
+
+  const skin = await hydrateSkinSubmission(
+    { url: 'https://github.com/example/animated', description: '动画皮肤' },
+    { fetchText, sha, now: '2026-11-14T00:00:00.000Z' },
+  )
+
+  expect(skin.screenshots.map(url => url.split('/').pop())).toEqual(['demo.gif', 'home.png', 'chat.png'])
+})
+
+it('keeps author-declared screenshots before the GIF-first README images', async () => {
+  const sha = 'deadbeefdeadbeefdeadbeefdeadbeefdeadbeef'
+  const declared = `https://raw.githubusercontent.com/example/animated/${sha}/docs/declared.png`
+  const files: Record<string, string> = {
+    'package.json': JSON.stringify({
+      name: '@fixture/animated',
+      version: '1.0.0',
+      license: 'MIT',
+      dsh: { bundle: { patch: './cordis.patch.yml' }, client: { platform: 'web' } },
+    }),
+    'cordis.patch.yml': '- insert:\n    - id: animated-skin\n      name: "@fixture/animated"\n',
+    'README.md': '![home](docs/home.png)\n\n![demo](docs/demo.gif)\n',
+    'LICENSE': 'MIT License',
+  }
+  const fetchText = async (url: string) => {
+    if (url.includes('api.github.com/repos/example/animated')) return { default_branch: 'main', stargazers_count: 0, topics: [] }
+    const file = Object.keys(files).find(path => url.endsWith(`/${sha}/${path}`))
+    return file ? files[file] : null
+  }
+
+  const skin = await hydrateSkinSubmission(
+    { url: 'https://github.com/example/animated', description: '动画皮肤', screenshots: [declared] },
+    { fetchText, sha, now: '2026-11-14T00:00:00.000Z' },
+  )
+
+  expect(skin.screenshots.map(url => url.split('/').pop())).toEqual(['declared.png', 'demo.gif', 'home.png'])
+})
