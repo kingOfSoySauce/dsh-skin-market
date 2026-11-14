@@ -355,7 +355,25 @@ describe('confirmed replacement of a local skin source', () => {
     expect(readMarketState(directory)).toMatchObject({ activeSkinId: skin.id, pinnedSkinIds: [] })
   })
 
-  it.each(['integrity', 'repository', 'gitHead', 'importer', 'row', 'client'] as const)('rejects a downloaded npm %s mismatch before replacing the local source', async mismatch => {
+  it('adopts a downloaded npm row id mismatch before replacing the local source', async () => {
+    const { directory, skin } = fixture()
+    let calls = 0
+    const runner: PluginRunner = async (_profile, args) => {
+      calls++
+      const directoryIndex = args.indexOf('--dir')
+      const targetDirectory = directoryIndex >= 0 ? args[directoryIndex + 1]! : directory
+      materialize(targetDirectory, skin, directoryIndex >= 0 ? '1.0.0' : skin.install.version)
+      const target = packageDir(targetDirectory, skin.package)
+      atomicWriteText(join(target, 'cordis.patch.yml'), stringify([{ insert: [{ id: 'wrong-row', name: skin.package }] }]))
+      return ok()
+    }
+    const lifecycle = lifecycleFor(directory, skin, runner)
+    expect((await finished(migrate(lifecycle, skin, localMigration(directory, skin).context))).phase).toBe('done')
+    expect(calls).toBeGreaterThan(0)
+    expect(lifecycle.catalog.find(entry => entry.id === skin.id)?.rowId).toBe('wrong-row')
+  })
+
+  it.each(['integrity', 'repository', 'gitHead', 'importer', 'client'] as const)('rejects a downloaded npm %s mismatch before replacing the local source', async mismatch => {
     const { directory, skin } = fixture()
     const before = profileSnapshot(directory, skin)
     let calls = 0

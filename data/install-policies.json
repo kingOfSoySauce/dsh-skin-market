@@ -1,0 +1,2070 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-14T13:40:24.422Z",
+  "policies": {
+    "01virex.dsh-deepshub": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-deepshub",
+      "resolved": {
+        "version": "0.3.2",
+        "commit": "0f95a8cf6eed9bf0357c827759f53e8ce9a9a8e7",
+        "integrity": "sha512-mNW95viqpfne7ksm7+rcf0OTGQqryfz6+xYP06aycnBx2IYnuf4qDLw38Km8x5e54iBbjO951f7wyq9jT+2cjw==",
+        "gitHead": "0f95a8cf6eed9bf0357c827759f53e8ce9a9a8e7",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "4444hao.dsh-codefall": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-codefall",
+      "resolved": {
+        "version": "0.2.0",
+        "commit": "25145d52a4892ca8585d24efb53f3028e74c245b",
+        "integrity": "sha512-CeTPubgPXHdiHByO/Se3QRy9cNeyjnXJ+6ETw91IcqJhhnjA2LW/N05cZUOHdcdkGaz/OOVX5WjuvIwVUFU2LQ==",
+        "gitHead": "25145d52a4892ca8585d24efb53f3028e74c245b",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "aaronkate.dsh-codex-appearance": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-eye-comfort",
+      "resolved": {
+        "version": "0.3.23",
+        "commit": "0279355ad9a12ad62e2b7a829d9b23a9ee31d61f",
+        "integrity": "sha512-O9iKUyJK1qgNEa4YhFS1LYdP1g2VprqeU7ZuimVH7lT2b1Qo0BPxDmiGj6KsmPN0XOz6MxIdImrHIiZK6QgZWw==",
+        "gitHead": "0279355ad9a12ad62e2b7a829d9b23a9ee31d61f",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "aik358.dsh-anchored-monitor": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@a9i5k4/dsh-anchored-monitor",
+      "resolved": {
+        "version": "0.3.1",
+        "commit": "086bd05e1e3035ddf23133f3a0ee479291a4b237",
+        "integrity": "sha512-/EuT3gen4m3+lYKfjmGWgIU5ibYcmDR24TdiIJ5nCdSUTEfG6YM1gQMowppe4tsIVu4MuipgriAQqgnglaKvMw==",
+        "gitHead": "086bd05e1e3035ddf23133f3a0ee479291a4b237",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "aks1st.dock-media": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dock-media",
+      "resolved": {
+        "version": "0.1.3",
+        "commit": "6a6ff2b2e75dff46be15a749e7366becc43aa597",
+        "integrity": "sha512-d+QOB/EZERPFy+cWVLPmQXL6d0LiAstUKTApFn4VYoLPqEGKkMhYN3ROmbecNBjuLibAphV7Tl2GPfrqXSAGug==",
+        "gitHead": "6a6ff2b2e75dff46be15a749e7366becc43aa597",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "alexfengrui.dsh-client-ui-skin-real-madrid": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-client-ui-skin-real-madrid",
+      "resolved": {
+        "version": "1.1.0",
+        "commit": "97f28bda0c7a0302e0b37d7f45abebcf84fccc8f",
+        "integrity": "sha512-KV9UCVUn6UebsxYIYtdQxUDa/el8AIShNUQf9P1HiVAHM8ZcRkBYzuHMNwcZDNdM3QmqhcP8D2H9lJNXqTsHbg==",
+        "gitHead": "97f28bda0c7a0302e0b37d7f45abebcf84fccc8f",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "alexpeng07.dsh-custom-plugin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@alexpeng/dsh-custom-plugin",
+      "resolved": {
+        "version": "0.9.3",
+        "commit": "9fc50a5de87da550acb70d6957bebec2ff75e1d6",
+        "integrity": "sha512-tJL5/Do3LQ1wzfTLcPmjwfn8JdYDL+5ZtUqdsgU3FerLxYlNpZ6HVRuQ/vP1wptFh2p5M2NtTQ8t5hy1K+wjZQ==",
+        "gitHead": "9fc50a5de87da550acb70d6957bebec2ff75e1d6",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "alexyin-tongji.dsh-ui-enhancer": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-ui-enhancer",
+      "resolved": {
+        "version": "0.2.0",
+        "commit": "87f17fe74076570023e01e5d0fc55c21affd2c23",
+        "integrity": "sha512-fKABrDkQtWXYSEyhb2EWNshf8z8BBRVZlS4x2KAaFVoph9M0NRo3u45fvtHtXPy/PZEGKi3nvnAWNEYI1Zfltg==",
+        "gitHead": "87f17fe74076570023e01e5d0fc55c21affd2c23",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "anionex.dsh-eye-care": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@anionex/dsh-eye-care",
+      "resolved": {
+        "version": "0.1.3",
+        "commit": "e242e3a836c64b9ed0e9411abd96b6d34478d2bf",
+        "integrity": "sha512-Z4+XzQnt6idDgW/m7vbg7WkScKmF1eVU+pRt4WowVcE8uoVm+6BRJBeDdk8a9qKZ7DU9Fh0ScQ07yaOZhz2grg==",
+        "gitHead": "e242e3a836c64b9ed0e9411abd96b6d34478d2bf",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ash-qw.dsh-theme-prts": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@ash-qw/dsh-theme-prts",
+      "resolved": {
+        "version": "4.1.0",
+        "commit": "9b3e53e83cda3b6fa56e8f7b890d22a99f3e971e",
+        "integrity": "sha512-SK/6bh+MP1z36PyUmXno/+DrGJRfmg4ZE7c84jk+aM5dq8OEx0pi9rRQBQZ1mer2kKCgOGk5ExjQuJRPecFnrg==",
+        "gitHead": "9b3e53e83cda3b6fa56e8f7b890d22a99f3e971e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ashmodeling.dsh-light-theater": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-light-theater",
+      "resolved": {
+        "version": "0.1.0",
+        "commit": "86f28ba673567877c6eadf1b7592b1eea9d2cddf",
+        "integrity": "sha512-HZ23LiZnE0Ia+LRD/Qu+ZFVEOL+IJgC5RdbPihZ0liURESed1YEPO6gRb0Vm7rQKNBebEw8PVC/2GvdtOlOWTQ==",
+        "gitHead": "86f28ba673567877c6eadf1b7592b1eea9d2cddf",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "assassinvix.fairy.zzz.plugin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-fairy-zzz",
+      "resolved": {
+        "version": "1.0.3",
+        "commit": "41b3b5bfe3202a72540403d009e3cae944f8413b",
+        "integrity": "sha512-w4b1RbGEs9OzfquJ36i1fEkrQ3esxhg1DUc8sQYZL9hpCQX+7YUuFd/d+vwkCbVXRpuraA6r8wG440Mv99XUEg==",
+        "gitHead": "41b3b5bfe3202a72540403d009e3cae944f8413b",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "badai147.dsh-leafy-skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-leafy-skin",
+      "resolved": {
+        "version": "0.2.1",
+        "commit": "7bdb43d3ce20e45a25640234da51c49f23930943",
+        "integrity": "sha512-aAZrSeW3+W8uqqpDQwxjrpwySauUEt52e+Wq6KCis/mkG085SqINmJ3LSYO9vZ6dUFwfcz3Nhf7BfskaHPrpRg==",
+        "gitHead": "7bdb43d3ce20e45a25640234da51c49f23930943",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "berhbro.dsh-cyrene-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-cyrene-theme",
+      "resolved": {
+        "version": "0.4.2",
+        "commit": "c3d62adbd4030efa65cff9bd29630bb51fc3dc8a",
+        "integrity": "sha512-v/xyFfeKKLs/ja/2r8SnIy2szCzcNZ19/EAtoL90jnoYqehxRROmBV8pk9fccWctcyHUYlU5j8Flc/I218l6ng==",
+        "gitHead": "c3d62adbd4030efa65cff9bd29630bb51fc3dc8a",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ch4acko3.code-render": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@ch4acko3/dsh-code-render",
+      "resolved": {
+        "version": "0.1.3",
+        "commit": "15fb33ac4c2bac687bcee99ed2bcaf21d8f473bd",
+        "integrity": "sha512-aTMlRcu0VTJPekXudoas77XXLmdSMEZpOazVSerW3+h/NQrh8BclqJOkztkkRSJ7TyQREC1Y6MueQgLKAGMNfQ==",
+        "gitHead": "15fb33ac4c2bac687bcee99ed2bcaf21d8f473bd",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "chael-chael.dsh-ascii-whales": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-ascii-whales",
+      "resolved": {
+        "version": "0.1.6",
+        "commit": "fdcc976f7d66245b7e0c3d5f81018c5a109d56a6",
+        "integrity": "sha512-YoSZmIq0y7NjlxnUsQMjydnqyodWzF+fJZhQKFYzMNTHAKqf5K581tmyVZtPmZLkfyN+1Bnr4P30X/HNvrZshg==",
+        "gitHead": "fdcc976f7d66245b7e0c3d5f81018c5a109d56a6",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "chuantianml.dsh-chat-tidy": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-chat-tidy",
+      "resolved": {
+        "version": "0.4.1",
+        "commit": "a22a7c973ecc8fbf33265c1e919d8445a2aff0da",
+        "integrity": "sha512-ifQfLX0c39EPo59wRrCuSFmBy4CTRv4iCStCTlYw0pBlKug1BSBSlY7k9735aIEZWp/ymConLE0aNJsuJ74s2g==",
+        "gitHead": "a22a7c973ecc8fbf33265c1e919d8445a2aff0da",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "cicero010.dsh-whale-atelier": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-whale-atelier",
+      "resolved": {
+        "version": "1.1.0",
+        "commit": "e8433fbb90504374a532ff8d5141e7c4e8bff37e",
+        "integrity": "sha512-uDVD5OjQLBbrI7pjEnx1UwsvIi3eA5JH4WOQ8bl13gDtWwPODP3eEs7UxlsFzUEgFVG+lbTTgZq7f1ooVD8KSA==",
+        "gitHead": "e8433fbb90504374a532ff8d5141e7c4e8bff37e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "clicgger-types.dsh-piggy": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-piggy",
+      "resolved": {
+        "version": "0.37.3-rc.1",
+        "commit": "4a6370a3a0a915594270b82ddf16c881f2a5e9b4",
+        "integrity": "sha512-15YMX/nYaZcpSAcgVjWn30HWv2ctK75DUkwwFALhEZ0uZi1A8mbIrwzo+MlkOBw6dGjdjIxMFWJvgCd5rxGIpw==",
+        "gitHead": "4a6370a3a0a915594270b82ddf16c881f2a5e9b4",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "cloudsen.dsh-umbrella-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-umbrella-theme",
+      "resolved": {
+        "version": "1.0.1",
+        "commit": "a745f1138c161a2f967d3aa9a21d49eaba17b5ac",
+        "integrity": "sha512-lmhSUEtWP3CQryJ6w1868kOsExlqFdmzkoRPjOVH+mkwTftJruIcxr3A6RaAhAWN5raVoyJ2B51WxSafSshmRg==",
+        "gitHead": "a745f1138c161a2f967d3aa9a21d49eaba17b5ac",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "cookiesheep.whale-on-desk": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "whale-on-desk",
+      "resolved": {
+        "version": "3.0.0",
+        "commit": "d50a2e45eddcb6cd1483820f9c4c1e8991913581",
+        "integrity": "sha512-g5KIb8OS7Pc8tn/er0lmba8BVpEeTgwY3qIrnAuyHdFBSfYoxcd8sTHnXgkYy+RaWQrYLRBccoo9K8KB9SEBUA==",
+        "gitHead": "d50a2e45eddcb6cd1483820f9c4c1e8991913581",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "cooltea001.dsh-cool-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-cool-theme",
+      "resolved": {
+        "version": "0.11.0",
+        "commit": "1118407c634d38a93475ff88d0e8fbd1c6d46b9a",
+        "integrity": "sha512-YI83jzJp2lE8DE+4sf5IbTWyHb7my3QTiHm+ZUkUjdYtnZcUnhgfnN8EJfjSwiDDWDmvfn+bi4dGSTQS98xQTw==",
+        "gitHead": "1118407c634d38a93475ff88d0e8fbd1c6d46b9a",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "copyninja123.dsh-bubble-skins": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-bubble-skins",
+      "resolved": {
+        "version": "0.2.1",
+        "commit": "6c40f944fd36286630f72409d65f11b109c2c7d7",
+        "integrity": "sha512-XnBu+7g4BK5joqBAD5w7klfERYRLJ7U96fpwhm87vvO7i523QcnXtztBf6luAGqzQR4HBvOiJVRz8rx+5fC+EA==",
+        "gitHead": "6c40f944fd36286630f72409d65f11b109c2c7d7",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "cosmosail.dsh-bloomglass": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-bloomglass",
+      "resolved": {
+        "version": "1.0.7",
+        "commit": "e0b8dcdb48c7c7383798a7416367a06cf67ffd7d",
+        "integrity": "sha512-qhUPF4EpBRZ6U7QgyZ1Ssvxf+Qd6FRLmuZfHMDYOmkQeFy4JhJnuCiqDRCYU1h5AlGrUdrffWv7lac7L6rfJFg==",
+        "gitHead": "e0b8dcdb48c7c7383798a7416367a06cf67ffd7d",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "cpt-kenvie.emotionpet": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-emotion-pet",
+      "resolved": {
+        "version": "0.1.6",
+        "commit": "c8406a069040ada3d347b44e5db0a263de58ee27",
+        "integrity": "sha512-iGok299U10OD5h8HG/Hih6XJgNEvysV7o0P0SWOl/sShqfVeAVAGX2/pby8uY3deDKj7zb1tUJlzCWPjFxtXHg==",
+        "gitHead": "c8406a069040ada3d347b44e5db0a263de58ee27",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "cyanfish-x.dsh-live2d-pets": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-live2d-pets",
+      "resolved": {
+        "version": "0.3.0",
+        "commit": "6af6f021354afbf30394e363f23caafc800f2b28",
+        "integrity": "sha512-q28lG/ZIFvrjbJR4RU6aGkZ1L2Z/KJTVnuGkqs7iuapI21dGCOwB2ZMPJvNMsoOCSxvAO44EEW8thqx4Gp6gIQ==",
+        "gitHead": "6af6f021354afbf30394e363f23caafc800f2b28",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "cyberryre.dsh-lx-music": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "lx-music-for-dsh",
+      "resolved": {
+        "version": "1.3.0",
+        "commit": "27e56fc720e9887f4ff697e85e314089c0e7160f",
+        "integrity": "sha512-w6dQImQk7mVQ7JsHRcUGYZPW93mEcG1YyO7rO1yn1gEJ6xlHL5J0iePS6TM6wZ8u14/W3eJnBnLYdQlHxB6n9Q==",
+        "gitHead": "27e56fc720e9887f4ff697e85e314089c0e7160f",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "cyberwei922.dsh-cyberwhale": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-cyberwhale",
+      "resolved": {
+        "version": "1.0.4",
+        "commit": "788915702dc27fa485d15a7eab648c230082ec29",
+        "integrity": "sha512-QLUezxt3xeMmXVXKbaxmUiOyLjNmYS+LcezJ4RaM2BM/P/GR3nFarBg5gezBWcTQhn92HAjKgxm+iPsh37JqtQ==",
+        "gitHead": "788915702dc27fa485d15a7eab648c230082ec29",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "d-ouyang.dsh-plugin-ascension": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-plugin-ascension",
+      "resolved": {
+        "version": "0.2.0",
+        "commit": "3e9e72bf7bdf59b45d8a616a198210993c40010e",
+        "integrity": "sha512-04UM92U+qdPCeacBevCD8Lc2+jKZSpODF3ZSddAKuuyvOkDT3temQxBDGGJenst7J86RT+mvG43eGCYkrcKgUA==",
+        "gitHead": "3e9e72bf7bdf59b45d8a616a198210993c40010e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "d0ublecl1ck.dsh-csdn-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-csdn-theme",
+      "resolved": {
+        "version": "0.2.3",
+        "commit": "45f56044c62442a0d4b533fdb9d14f30257d63bf",
+        "integrity": "sha512-GONanmVHAAFBrf9SpaPCdKpqJNe1/bCPW6UQ0HRzA5sfSbfsqSCQaOOoXsmt1pvabjA99+a5qYrVT903kOFtpQ==",
+        "gitHead": "45f56044c62442a0d4b533fdb9d14f30257d63bf",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ddbj-hub.dsh-wallpaper-skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-wallpaper-skin",
+      "resolved": {
+        "version": "1.4.1",
+        "commit": "75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7",
+        "integrity": "sha512-poQt1pnObgmPHubQSM9PaKj2p+blyQRhrsAB26p9qnkaKpRHUz1Or11m+7Idr+b4x+UhoKXpYQCd5ic6dEGdPg==",
+        "gitHead": "75bd37fe0846a676b05d0cf0d816cf7f9b04c3c7",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "dhicoc.dsh-theme-mineradio": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-mineradio",
+      "resolved": {
+        "version": "3.0.5",
+        "commit": "60ac976b9fb761ba6ded8f0ddf3a51459b82ffea",
+        "integrity": "sha512-PU8shoC2C+zIkLvnD0Ol1Xp9Tr4BzL3udabxhYPPR7f51RX9JF8NQHu0Q3G34M/54RR68wqo3stkovLpYUCa5A==",
+        "gitHead": "60ac976b9fb761ba6ded8f0ddf3a51459b82ffea",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "docjlm.pramanix-eyjafjalla": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-arknights",
+      "resolved": {
+        "version": "0.1.0",
+        "commit": "87116ed1536c61dbb287addd9e4830cf3e8e0f36",
+        "integrity": "sha512-8dyau987Qj1VTcVZAVm4KEFohKnYixJANgJjxMtuxZccWlsBUQrR8al2lxXDhS5p2Q6JiOEzJHHI7bKr5ejToQ==",
+        "gitHead": "87116ed1536c61dbb287addd9e4830cf3e8e0f36",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "doitian.doitian.dsh.music": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@doitian/dsh-music",
+      "resolved": {
+        "version": "1.2.0",
+        "commit": "ad12fbb31e5ab455e32aaf9ee818def57de2c412",
+        "integrity": "sha512-fpmS+8pMw778qMKtevNUtRDTjMXWP9/0fpIgMtOem0KRPWW+a14HJz8OUpacFOX3LwyxozCQKkOvMgv8N+2dmw==",
+        "gitHead": "ad12fbb31e5ab455e32aaf9ee818def57de2c412",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "drliuhuan.dsh-plugin-vrmpet3d": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-plugin-vrmpet3d",
+      "resolved": {
+        "version": "0.1.4",
+        "commit": "462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc",
+        "integrity": "sha512-Okoes++kIo8cbnv0sUkN5tNsEdZCO5y1ERe0gB75NPGjT3JaasHGU+cagIi3VYzqmLQgOxAJiSncFrw9n+7wHw==",
+        "gitHead": "462bda9bcdcd4d0d14a4c33ab675bffbfadbcffc",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "elysia395.dsh-wallpaper-engine": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-plugin-wallpaper-engine",
+      "resolved": {
+        "version": "1.4.2",
+        "commit": "354a906603c3fb1debad038461bbf111125762da",
+        "integrity": "sha512-0IE/jGXiAMMEDM3fXP5p4r+DF3EcCJOPXaiX94lanz5ZBBSY6hjoELqB10u1X3B1zs8B7jyjzZ3aiJF562Pb7g==",
+        "gitHead": "354a906603c3fb1debad038461bbf111125762da",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "eric-song-dev.dsh-ikun-pet": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-ikun-pet",
+      "resolved": {
+        "version": "2.2.0",
+        "commit": "89e49da94a64c160a1192bb892fca0bfa03e8e31",
+        "integrity": "sha512-FEI5lVskxvf3GDmpVgO+7YjIh087oUFFHwosIzR5Djj0w46KvkTkcLc6UHrt6Ru2xEjHui1YcV+epaKYzvSAeQ==",
+        "gitHead": "89e49da94a64c160a1192bb892fca0bfa03e8e31",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "eternalnight996.dsh-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@eternalnight/dsh-theme",
+      "resolved": {
+        "version": "0.5.1",
+        "commit": "d01383f8d82d3020607f16b62a8f6445df9f4978",
+        "integrity": "sha512-vhr2qCKOX8wBknuUN1cndldM0YZMFPCR3M4HFQqeFekFVvbbm0Ugkzl13JSp6OPVR0ZQvAU9CMbSCsejZgWGwA==",
+        "gitHead": "d01383f8d82d3020607f16b62a8f6445df9f4978",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ethanchen669.dsh-plugin-fly-skins": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@dsh-fly/dsh-plugin-fly-skins",
+      "resolved": {
+        "version": "0.2.7",
+        "commit": "2887c4844399c7bd389c9eb90920e82cba04b711",
+        "integrity": "sha512-w1ETPJm/+BCanAjWEzOAZozsXiKuRw7W51jgswj8B8PBlqc56Y5nxUByT++/DfGR2u7NrH9B4aHFe/39t4lV/w==",
+        "gitHead": "2887c4844399c7bd389c9eb90920e82cba04b711",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "feng78-boop.dsh-thirteen-bg": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-thirteen-bg",
+      "resolved": {
+        "version": "0.5.2",
+        "commit": "a11e0d90eb0b81f3d880fd6bfd9d792d5101b15e",
+        "integrity": "sha512-ByWnQPKVUkaN7DQPSr14FB99o7phAbAV7D0IKStbY1V0YRP9Oqd60k7saCncpbkr21jPhQ5jSC3deIobxDZnsA==",
+        "gitHead": "a11e0d90eb0b81f3d880fd6bfd9d792d5101b15e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "fengb3.dsh-theme-macintosh": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-macintosh",
+      "resolved": {
+        "version": "0.1.2",
+        "commit": "3758f2b0cad97190e8fa1e2b33683ea2f6f6c079",
+        "integrity": "sha512-QK35AGwJfg8/TrhvYQoPUtofBsx6yBPoBDMc0tOLPhwt1TIaX9GUyF+xO0vGDtGPZKK7voxvoXAaZNVoOs7xCA==",
+        "gitHead": "3758f2b0cad97190e8fa1e2b33683ea2f6f6c079",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "formalistblue.dsh-everforest": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-everforest",
+      "resolved": {
+        "version": "1.6.0",
+        "commit": "292b386f87b9c08a2ead73009e152ccb3b2c1a5f",
+        "integrity": "sha512-9lIefW9kXoI8B61i6QbYcEcQZ96sbIPmCta4dtOKYrIXcJv+O3OpsqZfCootoC/oBGxLql2OFHxCjBnJmASesA==",
+        "gitHead": "292b386f87b9c08a2ead73009e152ccb3b2c1a5f",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "fox4096.dsh-custom-css": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-custom-css",
+      "resolved": {
+        "version": "0.13.0",
+        "commit": "75d24d779fa3a1ad34f547709a6844671c75757a",
+        "integrity": "sha512-p7zcuSp3hO9NlUUz5c5/o1sQT1LQqYs/+ExgWafAf70vJ3OEy/4qscawQkhf1AEykQQ91WgecMqqCIrRifUkzQ==",
+        "gitHead": "75d24d779fa3a1ad34f547709a6844671c75757a",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "frank.fan.818.dsh.f1.skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-f1-skin",
+      "resolved": {
+        "version": "0.4.0",
+        "commit": "d739db5f58c302c326b954287ca8424b7f1f10e1",
+        "integrity": "sha512-0bUI5t5M6bGd9FJLrM4PiaPd+vRYzh6XIczJMiLQt+0Pp0Gik1lil5v9SW0TidLFthMIJlvK+9kuDAKA9aRodw==",
+        "gitHead": "d739db5f58c302c326b954287ca8424b7f1f10e1",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "frankxxxxue.dsh-photo-skins": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-photo-skins",
+      "resolved": {
+        "version": "0.2.0",
+        "commit": "106f3dd033f8dc3bfc91b848af473844e70c747f",
+        "integrity": "sha512-ZfNP+wyruSHeaYOED/tMnbNUcAKXNmJZc6O2oDTNSVVajhbpsQfNYlbAJZ98wsG/kYKMGjCsjUprPmoZLyGVpg==",
+        "gitHead": "106f3dd033f8dc3bfc91b848af473844e70c747f",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "frog755.dsh-prompt-vault": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@frog755/dsh-prompt-vault",
+      "resolved": {
+        "version": "1.0.2",
+        "commit": "f2883612668bcc7af4bf065543bccfabf734a758",
+        "integrity": "sha512-WGgVaQOLvlFw8yikWOJv08PSTbWX+TId1fkslMM/dGDE2/3TlyKRuhL8WUpSLcTN+3gFPvEtpEDxhu4QrS9Paw==",
+        "gitHead": "f2883612668bcc7af4bf065543bccfabf734a758",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "gin-7.dsh-pet-remielle": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-pet-remielle",
+      "resolved": {
+        "version": "0.4.7",
+        "commit": "b502cf886707647fef2ac27320ae03b80d75223f",
+        "integrity": "sha512-N/kg1a2IwxllUBhFsKtSzb9FT/W7MZCLuQ7GIzNCa2WIMqY+hrpPGFr4RRYYTywhKpdQdWNmvMAQLGDMF6tDQA==",
+        "gitHead": "b502cf886707647fef2ac27320ae03b80d75223f",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "gooosie.dsh-whale-bg": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-whale-bg",
+      "resolved": {
+        "version": "0.1.0",
+        "commit": "9c1844406e599d3a2b2e6a1ef64aab621aa8db2c",
+        "integrity": "sha512-NV3fiCIzWvgo0LTexBLeutPbH3lyNk0wA/En6kStXJ2jA5nW0JVR2L6xNzsWegABu4wSDhoNraoM1MI/MhJB4w==",
+        "gitHead": "9c1844406e599d3a2b2e6a1ef64aab621aa8db2c",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "haoranx98.dsh.skin.galaxy": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-skin-galaxy",
+      "resolved": {
+        "version": "0.1.6",
+        "commit": "54abbd93c2aa60b1e014604e6b60e858d85f511a",
+        "integrity": "sha512-Rfmd8KCD+VB0RYTZahoPFWYNoEzMKzDmsi7yJmGVM6BXDoh6yL7UDP50u5OIyLJGoX7UpfJGE6KQogp0GlHTqg==",
+        "gitHead": "54abbd93c2aa60b1e014604e6b60e858d85f511a",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "haoyueqin.deepseek-harness-background": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "deepseek-harness-background",
+      "resolved": {
+        "version": "0.6.1",
+        "commit": "55e252f10c3070388f55deb1477a15557859f66b",
+        "integrity": "sha512-XqZymaRsdsLFYZ5qkzPXzi9/zC2tiBBLoNO2NOtlaPj6mJTDafrIluoKBIxIMPfTttwaAn54Y5oXxBk1UL23JA==",
+        "gitHead": "55e252f10c3070388f55deb1477a15557859f66b",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "harmlessfunny.dsh-background-by-model": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-background-by-model",
+      "resolved": {
+        "version": "0.12.4",
+        "commit": "bde0ddd84198725d2fbb6c76ce6913a958c183c0",
+        "integrity": "sha512-A8QCT68y42+6t+fYbRbdwBZDvKZ07hm4SLdzSUmWvuqAKMpPL93brrZk49W6LVd4KqeJkyoL2cUkf8hHNIZbjg==",
+        "gitHead": "bde0ddd84198725d2fbb6c76ce6913a958c183c0",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "harmlessfunny.dsh-pet-in-frame": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-pet-in-frame",
+      "resolved": {
+        "version": "0.6.0",
+        "commit": "8328aca0688a42090f7383c25800dce13b23036e",
+        "integrity": "sha512-BQjWv1mqnxB2SkEPa4w7Bbmz+mcM23nHnB6ast7A6tFa5AinlnUzU/pHLC5nkQKqI4Zxudp1Hg7SaXPahzMB5A==",
+        "gitHead": "8328aca0688a42090f7383c25800dce13b23036e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "hetonghao.dsh.zed.space": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-zed-space",
+      "resolved": {
+        "version": "1.0.2",
+        "commit": "c879d8e6ca6afabcbd227a69cebd0cd4398a300d",
+        "integrity": "sha512-Rm8gfttxaFCyrHipVPGYWIsts3EiRVWuQuj1h4XAREip3e9/YNYFCNolzox/OXdSBrCgZuDS0pszemRc40ALEQ==",
+        "gitHead": "c879d8e6ca6afabcbd227a69cebd0cd4398a300d",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "huanlinoto.dsh-plugin-better-sidebar-plugin-audio": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@huanlin/dsh-plugin-better-sidebar-plugin-audio",
+      "resolved": {
+        "version": "0.1.0",
+        "commit": "9566aee377ada2cb862e8bfd194b2d33bb4fe23c",
+        "integrity": "sha512-c7i3QlWljT+tb0I5VcU0DlmsL5WC6mo+6MSnnLudZF3h4MWe7jclcWXbSh09ZmqVXacaTqF396gfUtu9RLhIkg==",
+        "gitHead": "9566aee377ada2cb862e8bfd194b2d33bb4fe23c",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "hyposelen1a.dsh-columbina-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-columbina-theme",
+      "resolved": {
+        "version": "0.2.3",
+        "commit": "2104b60fcd32894ec22e1fbb4a37d8f22af1b0b3",
+        "integrity": "sha512-hNIOWaobuD7mNeNI4nrXxYHiUFf5lfQqsn9sO697yQBuEZDwEfIBOiMo1bfY4rUm4t5P8l7+gruCvs32VH7ySg==",
+        "gitHead": "2104b60fcd32894ec22e1fbb4a37d8f22af1b0b3",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ifer47.dsh.theme.shelter": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-shelter",
+      "resolved": {
+        "version": "0.7.3",
+        "commit": "20948a047e95aae8df77574b924c697c6dea14f6",
+        "integrity": "sha512-oKa86uqjLE9LHDhT0ptXj7BKzVXjzF5uk3dsc67+jfvUCxXEzuAKpIUP4unh+BTqDIlpNPzBrNG47Crl3WpoHg==",
+        "gitHead": "20948a047e95aae8df77574b924c697c6dea14f6",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ink5897.dsh-theme-kit": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-kit",
+      "resolved": {
+        "version": "0.1.4",
+        "commit": "94af42b6136e3b82a944bea8b1dc179272931a02",
+        "integrity": "sha512-m5S7ZohVuqu8ypqWrZjm3Jy/HpEj28BuAtFlRBWjVoDTIOE2qA5tYfmVorOALyES0lnZygM2sFai2ROK/TSW4Q==",
+        "gitHead": "94af42b6136e3b82a944bea8b1dc179272931a02",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ip050.dsh-video-player-ip050": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-video-player",
+      "resolved": {
+        "version": "0.1.1",
+        "commit": "11967b02d2658ecee9b93b723ea6e9c51e4f408c",
+        "integrity": "sha512-8cYcGjzm3Vnx02K6OzE21bk82jWf2xH3bSTI2VaGCw0lxwaNd3jgSeN9j3FoKilIzfmbJ7TF5gYDN661DEBmDQ==",
+        "gitHead": "11967b02d2658ecee9b93b723ea6e9c51e4f408c",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "jerryphoenixcky.dsh-plugin-wallpaper": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-plugin-wallpaper",
+      "resolved": {
+        "version": "0.1.6",
+        "commit": "aaeb5720423c710ad6bce41650e426fa12b0a3fb",
+        "integrity": "sha512-DlRdNCHpmNlgB8Kv0GsRiIeUoUxKBxRXGCQ+ww+jOquaqTH5TCiWXCJeT5VWrg6txUCGnd0g/Lmwu9WX8dQhnA==",
+        "gitHead": "aaeb5720423c710ad6bce41650e426fa12b0a3fb",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "jimmy0123-ux.dsh-token-pet": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-token-pet",
+      "resolved": {
+        "version": "0.4.2",
+        "commit": "ca315d8b04f70770598d657629641d3437115a46",
+        "integrity": "sha512-+8eAE8PmjITyPVTY7X0vjvCIc6ct5XfQA7g2kIrByrWNAEx6PVrsrnxQJX4j6yvuVEsC2g5rdUHjkAg4B0Df0Q==",
+        "gitHead": "ca315d8b04f70770598d657629641d3437115a46",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "jinxlux.xiao-theme-dsh-ui-plugin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "xiao-ui-theme-ts",
+      "resolved": {
+        "version": "0.14.0",
+        "commit": "becd979acd16b35a5324a0f50bb97541bab5cf9b",
+        "integrity": "sha512-zWcOzeTgyGxM6X+dIGHf7yfRLK1LuN2A03TFs91dl8o9emFCIFXKmKxiT9ay3dw8chD/9UP4oXF+hmq0AZ9CsA==",
+        "gitHead": "becd979acd16b35a5324a0f50bb97541bab5cf9b",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "johnnyting.dsh-official-homepage-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-official-homepage-theme",
+      "resolved": {
+        "version": "1.0.12",
+        "commit": "a80b70e809a091c815f8678d69cf1c88ffa11e91",
+        "integrity": "sha512-w8FTBljB9Ml/MG/xTQQmlq6GmDOlF5iMH4MnliczLdDDL0EFc+9Wqk/c92baez3iOLCu987+/tYUUMhcTqGfRA==",
+        "gitHead": "a80b70e809a091c815f8678d69cf1c88ffa11e91",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "jungenius.stack.dsh.zcode.ui": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-zcode-ui",
+      "resolved": {
+        "version": "2.3.9",
+        "commit": "517d642b3fc7373d2e534096b1c89be7e5863245",
+        "integrity": "sha512-XyXOlAzqDP7sBcD8hYp0vY1EDbOyqSjfdrjRaKjh50o3Riuv3MXb+grObsM5H0/l7UT9wJ9BXoRc0aQsa9ENpg==",
+        "gitHead": "517d642b3fc7373d2e534096b1c89be7e5863245",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "keithtmaxwell.dsh.skin.deepsea.tui": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-skin-deepsea-tui",
+      "resolved": {
+        "version": "0.2.60",
+        "commit": "c434faea492e478a2e9d481487ea293405fc1543",
+        "integrity": "sha512-L8vjG5srQYsyQuwl+2RZQ0x2kKQ47pO/A75ZzC2g23yFhmFGcI0JxwuPdIY8jU91xsj0TLwnqzmvrpogXQ7jXw==",
+        "gitHead": "c434faea492e478a2e9d481487ea293405fc1543",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "kelemiao.dsh-animation-optimization": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-animation-optimization",
+      "resolved": {
+        "version": "0.3.5",
+        "commit": "dc5808e7a0df45cda0dfebe3a324d1f4e0152b51",
+        "integrity": "sha512-cpqQ+lEACtJHSUKHvGxkt0Q2cMQo7TIYhBhjHDlqOuQLQP2FDv8FSqIHgyLZQRt/BBNlVL3iCCqXTO6l7FNPbw==",
+        "gitHead": "dc5808e7a0df45cda0dfebe3a324d1f4e0152b51",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "kendu76.dsh-music-player": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-music-player",
+      "resolved": {
+        "version": "1.0.7",
+        "commit": "1dd467c4a449965272fac306d7fa655188a667f2",
+        "integrity": "sha512-9yYHYzvrK8so/N2JSvpdVZAh5r9nZ6QNuwtjZmOiR634FQiekT8YXKF88oILveAP4rGZ9dbyHA+bDBczCNaYRQ==",
+        "gitHead": "1dd467c4a449965272fac306d7fa655188a667f2",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "kleinklein0824.dsh.official.skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-official-skin",
+      "resolved": {
+        "version": "1.1.8",
+        "commit": "fcb3d640561b329cd827c6935edc581db02f0320",
+        "integrity": "sha512-Vfx+DuSGW3X//mWdnuPp4TKpo+3kVSF3dqSz+4ugG+PWvW0c93OfnI/XuFSZdlCVeSODSUcTgpJ2Wq8lnMD41g==",
+        "gitHead": "fcb3d640561b329cd827c6935edc581db02f0320",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "kongxiangyiren.dhs-theme-plugin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@kongxiangyiren/dhs-theme-plugin",
+      "resolved": {
+        "version": "0.0.3",
+        "commit": "5c0c62eb40bdf7ef976add97d93af74d0fd98e77",
+        "integrity": "sha512-g3bUOrsdOyr/yzlZaSQiATcOQ/8MsQeSIURKI2Zqa6wjAzJ4Ne1Co+OJJjoUG2GBLes2VhqWOSSABKD+gSMISw==",
+        "gitHead": "5c0c62eb40bdf7ef976add97d93af74d0fd98e77",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "kurosawageeker.dsh-moe-lite": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-moe-clean",
+      "resolved": {
+        "version": "0.15.3",
+        "commit": "9d4767199981f755202f3f3e43a219f5cb93092c",
+        "integrity": "sha512-GPUtGGnOkXCYO7dgQ6wTQGICTyTyEdmYE3n6C8pVdfGFYTH6kfW9FU4UaTp/SeK2u91iHxgBbt0MwKqeeg0HGw==",
+        "gitHead": "9d4767199981f755202f3f3e43a219f5cb93092c",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "kviiinh.dsh-whale-particles-bg": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-whale-particles-bg",
+      "resolved": {
+        "version": "1.3.4",
+        "commit": "eac9ccd7d22ec25520365dc91f6fdce53b95d655",
+        "integrity": "sha512-a0qO/29Q1rBoe8m0VXbsuB395xnJ5iXyBUJ72YAlJEOExy1vpfBODWcn1mJwlg/h6MQeSXYtKXqF300YQEyhtg==",
+        "gitHead": "eac9ccd7d22ec25520365dc91f6fdce53b95d655",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lan-tina-ws.dsh-gui-customization": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-gui-customization",
+      "resolved": {
+        "version": "0.6.5",
+        "commit": "43d98d282c31762c23638b22dabf9d7185658f5e",
+        "integrity": "sha512-E8VCkfaR0VKEcYYloIyDAPjiYfyUng/LMlsoXLYileKP/qg5wAt5wUS+5W6R0kv1JYlGAIxXsspPzZKA/BE+UA==",
+        "gitHead": "43d98d282c31762c23638b22dabf9d7185658f5e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lengduan.dsh-815-skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@lengduan/dsh-client-ui-skin-815",
+      "resolved": {
+        "version": "0.1.48",
+        "commit": "60f680aa97862c8f42a4b767f96c4890f81537b8",
+        "integrity": "sha512-yP5OTK45H0uQuqunXDFw9rILWvOQAWCVryo0NBTQ/8hVH9IO5Al1U8edVC+D2UJ9gO8QfQ60aYkHD3QY6NGzdw==",
+        "gitHead": "60f680aa97862c8f42a4b767f96c4890f81537b8",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lhy723.dsh-neu-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-neu-theme",
+      "resolved": {
+        "version": "0.2.0",
+        "commit": "060830c428f7cfdf1266f7653425c11df7818da5",
+        "integrity": "sha512-knBCr7ae5Qm51F4N0XXLvDy7beVC6jYNbXwp0M1DQiiWWi7N5iyUNzDZpUh3eB8mS8a6CxQh9XQBsIIibMd0Gg==",
+        "gitHead": "060830c428f7cfdf1266f7653425c11df7818da5",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lichtspur.deepseek.style.theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-deepseek-style-theme",
+      "resolved": {
+        "version": "2.1.93",
+        "commit": "35ff914800e166743f35c358d4f72eb7dc78dfc9",
+        "integrity": "sha512-UgmmnAUnltUyqhhgs9dSZZqe1/SR7xqyHYg8i7ygMwPC2M26YkOLGKNRfNnE2Xb1mPtn39OSxXnopSz5AGHEtA==",
+        "gitHead": "35ff914800e166743f35c358d4f72eb7dc78dfc9",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lildanger.dsh-skin-win2000": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-skin-win2000",
+      "resolved": {
+        "version": "1.3.1",
+        "commit": "908ff7d80554721d40e15ef30c7c378e054db551",
+        "integrity": "sha512-kcmSN/aumjolMGcfVbXKu6daoDn8Jfn7N8xGa4qU2Xqa4rCiagplcUzI/at/Rru1l/iZYojzutWAtzxP9ZyK7g==",
+        "gitHead": "908ff7d80554721d40e15ef30c7c378e054db551",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "linkbag.dsh-capyreporter": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-capyreporter",
+      "resolved": {
+        "version": "0.6.27",
+        "commit": "48b24616188fe892c1a411721959c7763dba73c6",
+        "integrity": "sha512-gqZTbeyMiyvjghHvu4yfApDHauzlDekBZ+h7TGZ1+INvY/3nXsXy0R/Ux0a3R810C8tKeCgwC+6K8LNV4h+Rfw==",
+        "gitHead": "48b24616188fe892c1a411721959c7763dba73c6",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lisongxuan.ds-hentai": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "ds-hentai",
+      "resolved": {
+        "version": "0.7.2",
+        "commit": "4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6",
+        "integrity": "sha512-Ex8jIQSs9iu3kYqfYDbzQL6ewMcfqgsdsQUlcZbRR5VZj1CtS+DiBWSA+UzoLtZC/qpcWV8su1pCEOEBHQl1DQ==",
+        "gitHead": "4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lkdxzhxi.dsh-glass-ui-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-glass-ui-theme",
+      "resolved": {
+        "version": "0.2.6",
+        "commit": "940c4495db199365fa788d47112ff858d66ce0ec",
+        "integrity": "sha512-i2yQELyMJxrvoR4tKqAx+LJxEwUJNXOmNYdy8D8O8GFxwNpNuCvEH0P9zFcJqKWH0lQTRytOSnU4Q5WMfU5KSg==",
+        "gitHead": "940c4495db199365fa788d47112ff858d66ce0ec",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lorisyounger.dsh.vpet.skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-client-vpet-skin",
+      "resolved": {
+        "version": "0.1.13",
+        "commit": "b75d19035cb5a7a662f74ec4b3bb8d2b58c41de7",
+        "integrity": "sha512-QOJGwzMPZXe3b9IlrRMy3ZhzBzrHMSCEnd06o8LgCZ4SvWorqv7fFDj8BD+FcUN3ZW4cWE/S93j4yBCngKqc/w==",
+        "gitHead": "b75d19035cb5a7a662f74ec4b3bb8d2b58c41de7",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "loyalchiiina.dsh-todo-float-ball": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-todo-float-ball",
+      "resolved": {
+        "version": "0.14.11",
+        "commit": "4864fd3d624c493f6c2f8a10be8a24675a76e159",
+        "integrity": "sha512-Ll9T6LGBHCYIiUWcs1wnKXfXxL0duZqAMsmDAa2ARKo179XDQURRbxmLhdEVUKTy9Ulg43KUQckJ/VZdyvyEsw==",
+        "gitHead": "4864fd3d624c493f6c2f8a10be8a24675a76e159",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lsjspl.dsh-reel": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-reel",
+      "resolved": {
+        "version": "0.2.1",
+        "commit": "78edd90b2318b331e509ab4e90e903112cce8942",
+        "integrity": "sha512-5od5ilfvA+bMmrYrUkSrRyaUgHGIc2+kzck6v0xGX5YqvblrihUxteo/R+sRla7IXkdjFkIGVHTr9xOGuC+FzQ==",
+        "gitHead": "78edd90b2318b331e509ab4e90e903112cce8942",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lx-hmkk.dsh-appearance": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@hmkk/dsh-appearance",
+      "resolved": {
+        "version": "0.1.0",
+        "commit": "f81df51c108d855c576c6d721128046de3af0fa3",
+        "integrity": "sha512-O7rhyZTl+K5c4pIacXxnQMvPLSInOhaCus+mYhni2sMzUsIEtMykw6QP82fhfRQYitAvRjf8eHjo4Hf4K4AHTw==",
+        "gitHead": "f81df51c108d855c576c6d721128046de3af0fa3",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lxxz1918.dsh-theme-customizer": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-customizer",
+      "resolved": {
+        "version": "1.0.5",
+        "commit": "96e4b60edd71ed05871c31efd27c0bfc1a4cc3c8",
+        "integrity": "sha512-M0UGDfurCEFYm4n8lFk+xwkebKYklrUxRGqrNyI1mF1yh/Lh5Wu9+ilnxEntBAPxQqat2Sph34nHqwRwEp6xnQ==",
+        "gitHead": "96e4b60edd71ed05871c31efd27c0bfc1a4cc3c8",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "lyx0717.dsh-washer": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@lyx0717/dsh-washer",
+      "resolved": {
+        "version": "0.10.5",
+        "commit": "9925d2a501aed2e56f988e3805587dc3c97370be",
+        "integrity": "sha512-1STT9/QrH1YPiYllMa59P3NOIvAR0X6QSARpmu+yDuTu3RM76brXpRSYgGy0OSu9DRqQGp7lPNj0uCMsmpJiVQ==",
+        "gitHead": "9925d2a501aed2e56f988e3805587dc3c97370be",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "mangmax.dsh-themes": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-themes",
+      "resolved": {
+        "version": "0.2.1",
+        "commit": "ed3c781e9622b2c3d6e2111f4721c472b9c764bd",
+        "integrity": "sha512-qy0DTgmoy4BxYlRbdtZUQrCpg7lgnaw/lWTx6/iMDuyAyOq3sTMUaf8yLRaQeldiKpThGpLJuZ6aVx7x1BZGfQ==",
+        "gitHead": "ed3c781e9622b2c3d6e2111f4721c472b9c764bd",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "mcxcc303.dsh-clawd": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@mcxcc303/dsh-clawd",
+      "resolved": {
+        "version": "0.1.1",
+        "commit": "15f3ac60cd7c4a81eed91b64c055a5b758acbe17",
+        "integrity": "sha512-VLnve87QWYJ1yHOETNjN4EydvApL59SiCEd9u9OnDRjPHlzt64bkaoo3aWfpVpfyctrhd0HCy9vxcGMrH0nnfg==",
+        "gitHead": "15f3ac60cd7c4a81eed91b64c055a5b758acbe17",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "miasakiii.dsh-miasaki": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@miasaki/dsh-appearance",
+      "resolved": {
+        "version": "0.1.0",
+        "commit": "fe806722cd9ec4efc7ec57369e3c9d06bb03df39",
+        "integrity": "sha512-XOwvy1CRUcYVplL3jFU/TJYWLzjB6WdAP462iPoSaJto2ISY92H4yIwBxn/JoMm4ut2AuQMSNmrPW6+ZrJrX/w==",
+        "gitHead": "fe806722cd9ec4efc7ec57369e3c9d06bb03df39",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "more-nico.dsh-nico-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-nico-theme",
+      "resolved": {
+        "version": "0.3.9",
+        "commit": "99ce2ccf6c4f7464c7b22de97f54d57ca84e41d7",
+        "integrity": "sha512-LOZKxWLGdY7FyLUJ/Lma4Rkk015BmBEyGF+4yObl76kdV4MdGBOipzPfoTJjGZT9eVILYO19UoZwdBQdQ4GLKQ==",
+        "gitHead": "99ce2ccf6c4f7464c7b22de97f54d57ca84e41d7",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "mrmolabs.dsh-yorha-ui": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-yorha-ui",
+      "resolved": {
+        "version": "0.1.1",
+        "commit": "4b85ac3fce3688ec42298798343f2f615190372d",
+        "integrity": "sha512-20fNyY2U3inP37I9QIU+AtwfJ443VrkhxPGKKKJiqza81J3PLnofmrngKorYw1xan2nhWQ+RlAcxPlz241P4ZA==",
+        "gitHead": "4b85ac3fce3688ec42298798343f2f615190372d",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "mumuer1024.dsh-ui-liteglass": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-ui-liteglass",
+      "resolved": {
+        "version": "0.2.5",
+        "commit": "f08c6a169b7bf965927bb0ec3f666a668db1d53e",
+        "integrity": "sha512-9M9QFJaGe8XvfIrzGTPV1GnwDp9sGJfoxF/Xq7unckt4SHwMv4NImkUJMlH8t12chi10SMQ6W/4oqTH0Y6fKDw==",
+        "gitHead": "f08c6a169b7bf965927bb0ec3f666a668db1d53e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "nagi-ovo.dsh-ads": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@nagi-ovo/dsh-ads",
+      "resolved": {
+        "version": "0.1.5",
+        "commit": "a58182019dba40fcfcf83c1fc22f63151cc0412b",
+        "integrity": "sha512-chhPeOT2U/bCEghlKHHPTZhcpnF9MjYdoZdUBzK+4TkooGXVndBRPMhp/n4eZeKK4CyQWAFVphLCGlZWT0LH0w==",
+        "gitHead": "a58182019dba40fcfcf83c1fc22f63151cc0412b",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "nickfast2025.dsh-sky-window": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-sky-window",
+      "resolved": {
+        "version": "0.1.2",
+        "commit": "4ffebe5479a393a32ad969df4424ebb984a4eebe",
+        "integrity": "sha512-t+5hSTevsfmvUa0CEtg/7JAGDNPGtizhFIrKndC7VFdpP+Im8J7MBoI6nOyEGchM1qOYKXYp6N6h070klz8rmQ==",
+        "gitHead": "4ffebe5479a393a32ad969df4424ebb984a4eebe",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "niiang.dsh-kimino-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-kimino-theme",
+      "resolved": {
+        "version": "68.4.2",
+        "commit": "6821cbe097a391eff21c41a62e14adf690194b97",
+        "integrity": "sha512-4eAIXqJQXxmw/FXPkXG3Bfppgs12RwWPua+KeBiV0d/+8Zs1daSgofx/HzltuMK2Ucu1IGuqMjUylNHdhdl3hA==",
+        "gitHead": "6821cbe097a391eff21c41a62e14adf690194b97",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "nishuoyang.dsh-wallpaper-bg": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-wallpaper-bg",
+      "resolved": {
+        "version": "0.5.18",
+        "commit": "49307b4229edd8cb0a6a29bef4cec7cc36240892",
+        "integrity": "sha512-uldurkYFatl7IBYrECckgwT0F1/tJzTwDuUYyek9Q3NH4MVRSt5tytTlYg+JfU/U4HQtC+37l51qG+0txJRP7Q==",
+        "gitHead": "49307b4229edd8cb0a6a29bef4cec7cc36240892",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "nwflower.dsh-claude-style": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-claude-style",
+      "resolved": {
+        "version": "0.21.0",
+        "commit": "08162f93fcaeadf4ae7de4780691ca5a360c3aa7",
+        "integrity": "sha512-YU0iBxGun3Eq2n3i2jdMoznvFsblfyx+FJiz1CEOM4dANqfhb0lS8qT++iUjnuDri8UXP13mx3KaW04OeJ9AaA==",
+        "gitHead": "08162f93fcaeadf4ae7de4780691ca5a360c3aa7",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "orderg-x.dsh-video-preview": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@orderg-x/dsh-video-preview",
+      "resolved": {
+        "version": "0.5.7",
+        "commit": "337e6fb543325077d8dda0532b71c8fdca0fe16e",
+        "integrity": "sha512-KAlYgO2rOZgHiZ5EO2L6XyfFuC4fGjFRrP2xBqaaCGLgDMCnU5QQkQv6ZPmr6zAGR2TJMvk7eNB8b1H8+U+AYA==",
+        "gitHead": "337e6fb543325077d8dda0532b71c8fdca0fe16e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "orxz.deepseek-harness-pets": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "deepseek-harness-pets",
+      "resolved": {
+        "version": "0.2.3",
+        "commit": "23a84627b205c54c8b7c2587dee6495d2f2f7ae4",
+        "integrity": "sha512-ZrnqUP1011SJ57cNRX2k3qJaWvpsNwG6TJDKFVGc/4EJ7oTGeriBg+6Hzc6RiiAERr+/FHDSrBBm1qaGxPVpTA==",
+        "gitHead": "23a84627b205c54c8b7c2587dee6495d2f2f7ae4",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "orxz.dshthemes.ui": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@dshthemes/ui",
+      "resolved": {
+        "version": "0.2.0",
+        "commit": "f83ad9980be8b8e47d02e1c3cf8443ab6a02bee3",
+        "integrity": "sha512-KGWA69xUP8DID9/hVHqsQe/joOA290CkK/hoqMCRRJ+/RDYC3d/Cns0XvgKFquB0W0nvNhFVxGlX3AAqOwRjdg==",
+        "gitHead": "f83ad9980be8b8e47d02e1c3cf8443ab6a02bee3",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ossfrankfrank.dsh-dracula-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-dracula-theme",
+      "resolved": {
+        "version": "1.1.0",
+        "commit": "28e4621866680a241467fb7249bc07231afb8459",
+        "integrity": "sha512-R2biqmAXf/reh7AvQPtX2ixx0gfqDAw+yoMAofpwdNAjmIRZ8uZrQ3tQq9vpll5suiRRckemBP1ujJcVXA1aUw==",
+        "gitHead": "28e4621866680a241467fb7249bc07231afb8459",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "pakiknowledge.dsh-client-ui-skin-claude": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@pakiknowledge/dsh-client-ui-skin-claude",
+      "resolved": {
+        "version": "0.2.1",
+        "commit": "a240ab43bd15fd4b2cc853d20bee2c749299134a",
+        "integrity": "sha512-EAsMW/XQ2TSqevzCdrF7M9e9DwmNMUqrEO/rqld9QLYizh2sJuEoV4nHqtviZTftsALNNL8aXj2cmN3/ppSyYg==",
+        "gitHead": "a240ab43bd15fd4b2cc853d20bee2c749299134a",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "potoior.dsh-bull-bear": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-bull-bear",
+      "resolved": {
+        "version": "0.1.2",
+        "commit": "3f6e032b8bab9df4b9b23110716cd9fc399eeb39",
+        "integrity": "sha512-SRaErikNu+a6BDKWSbtbmMiwcUeYnIFIn3xVQWwrH0grzj8WJA+sWDA6R2E2+pJlh5BjFjbD12QTdOJtryL7SA==",
+        "gitHead": "3f6e032b8bab9df4b9b23110716cd9fc399eeb39",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "purezhi.dsh-plugin-whale3": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@purezhi/dsh-plugin-whale3",
+      "resolved": {
+        "version": "1.0.0",
+        "commit": "4316e20db366308fa3cbd8c20f8baa4c38600b6a",
+        "integrity": "sha512-D6nZkAh92nB6WTAdmsAYGTu8CDQG2FYT3KINQvUhBX+3ypdG8D20u710a1x+NSBIJ/Tlfk52rxKFj+veYArrsw==",
+        "gitHead": "4316e20db366308fa3cbd8c20f8baa4c38600b6a",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "qin839.dsh-visual-system": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-visual-system",
+      "resolved": {
+        "version": "1.4.0",
+        "commit": "6aea3621237f576586d94b4fbe6dd1845ac99ac6",
+        "integrity": "sha512-gfEB1befPZAAtIBqB8VOEvg9X48iZ8RExTnnuexTMp2+qmSEPrA2NuoVTJf5kv9W3NKzeBkmdmB8Qiy6Hofirg==",
+        "gitHead": "6aea3621237f576586d94b4fbe6dd1845ac99ac6",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "qiuzhiyei.dsh-companion": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@qiuzhiyei/dsh-companion",
+      "resolved": {
+        "version": "2.2.1",
+        "commit": "ae95d902df214b9df681ee8eb4d67c1f5adc06e7",
+        "integrity": "sha512-wsojtp4/IC5Qt/Ps8TlX3P+E6qcAeTyjH26nzx7JZH9/0CqdHMkn6du5K+pvLv2lTHuDxZubmHrwkrJUBk8+Nw==",
+        "gitHead": "ae95d902df214b9df681ee8eb4d67c1f5adc06e7",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "rain.shuoyu.dsh.client.deep.sneak": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-client-deep-sneak",
+      "resolved": {
+        "version": "0.12.0",
+        "commit": "8da38b128755090480c253081d36304b768c3dcc",
+        "integrity": "sha512-MIeJKlmnYsTuRrPNebgylquMngu1Smkuc7+Fz/QUkI8NrbbhMWB/LJbrHecDlKHEz2qdx1LDbpEdXcxtOsYHZA==",
+        "gitHead": "8da38b128755090480c253081d36304b768c3dcc",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "raven3005672.dsh-plugin-shell-skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-plugin-shell-skin",
+      "resolved": {
+        "version": "0.2.2",
+        "commit": "ed9cb8245dbb462b45b13e9a05e4b4f9128c96e5",
+        "integrity": "sha512-bUGkiLGhKJVkKKPuheBtOWp71b4UZFKYMCBfpo1hPYxJ0SQmkeCfmqTTWaofGA3T/Qi6WSlSlZg6tj42K0mTJg==",
+        "gitHead": "ed9cb8245dbb462b45b13e9a05e4b4f9128c96e5",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "renjie2026.dsh-theme-gallery": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-gallery",
+      "resolved": {
+        "version": "0.8.3",
+        "commit": "d3019ff56ba0e4a97fd5351fd0f6b2443b28d1e2",
+        "integrity": "sha512-xXZgEKyTvocD+FFsDU8Q6nqDAG7oHmV+qZZrmB9jrea2/fTe1p4b0rJYFlJ/eu1b27payymmgVr3QRhAeHPqVA==",
+        "gitHead": "d3019ff56ba0e4a97fd5351fd0f6b2443b28d1e2",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "respawn.id.dsh.rhine.splash": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-rhine-splash",
+      "resolved": {
+        "version": "0.2.9",
+        "commit": "9808714bf87bae1066e74167039b820aa4f7cbd2",
+        "integrity": "sha512-2andVyVL/Nb9mupxEjhYSFAHUc1CXihHSq9BvtMCWDAEoSF1CmstbAE2EgMzOu/lWuSNvq2N6WyX9xrv0h0giw==",
+        "gitHead": "9808714bf87bae1066e74167039b820aa4f7cbd2",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ronnyjung2021.dsh-mimo-skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-mimo-skin",
+      "resolved": {
+        "version": "0.2.0",
+        "commit": "62ea164f5db6d73eabc8581442adc7bc37933ac3",
+        "integrity": "sha512-HA5acFuRqVYpTTARmjz0uDtZt4wBKNk5CXjWtrZBWPzyRXCgZR84RLS/kLpmcrle2u5KV6uhlC+lkVki76Uisg==",
+        "gitHead": "62ea164f5db6d73eabc8581442adc7bc37933ac3",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ronnyjung2021.dsh-trae-skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-trae-skin",
+      "resolved": {
+        "version": "0.2.0",
+        "commit": "f888b046350f71b245181763fff647c323ec1f96",
+        "integrity": "sha512-g2h+bzzpzFjVsq1OV+ZoVjEf6dQzTAevU2YIIL4VRz0JhiXPpEEWmEmpSP37qjACl9vQGYM4zaDHzFiKPnuAtA==",
+        "gitHead": "f888b046350f71b245181763fff647c323ec1f96",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "sakka6868.dsh-skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-skin-alphacoders",
+      "resolved": {
+        "version": "0.4.3",
+        "commit": "9fd8f74e869c2f3728811562a490e4f3b31d0de2",
+        "integrity": "sha512-yNWirKvUzgOLk1PkMQXVEwjCg9PnZxC8IqnwVWUZ9Ec6fIAh5tmw7hB3+TKBvmNi9/MtehHE2v2pD5wAUdFVCg==",
+        "gitHead": "9fd8f74e869c2f3728811562a490e4f3b31d0de2",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "samizuhm.dsh-client-ui-theme-xp": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-client-ui-theme-xp",
+      "resolved": {
+        "version": "0.1.1",
+        "commit": "3cc412f4e877c127dea2e5b6e3413e5ddc95ce97",
+        "integrity": "sha512-PAD3jNggSUsiRSIKvEZs/QrGEx3L3cdwO/WE4XuTnPfn6Wyglt6ThClfuvBm+/ozw0Cn+mQapM03t9dcn+IODQ==",
+        "gitHead": "3cc412f4e877c127dea2e5b6e3413e5ddc95ce97",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "sddft97.dsh-client-ui-skin-verdandi": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@hjbztlbr/dsh-client-ui-skin-verdandi",
+      "resolved": {
+        "version": "0.1.8",
+        "commit": "62a8010869209ff38edfd3acd6c917c6f05b1786",
+        "integrity": "sha512-cY0o6xqG6P2x372Hc2gWP/YSYbmvk0AGj6XB0tiP6QnEn4hTlOW22Sm45vp4vAWSFi/zqYlMehmV1dsJvRg+Eg==",
+        "gitHead": "62a8010869209ff38edfd3acd6c917c6f05b1786",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "sh-9999.what-was-that": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "what-was-that",
+      "resolved": {
+        "version": "0.1.12",
+        "commit": "c49d76f01a07bef65c40d4d4956fc4968dca8cd2",
+        "integrity": "sha512-kLDay7zm5Be1GIp+l2hl29+GvCSejERcMjHNFuCh/8quXn+9Zh+Tb+dcMGeXNDeozddI9Nxfeb9r6ITToFcECg==",
+        "gitHead": "c49d76f01a07bef65c40d4d4956fc4968dca8cd2",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "shawnlone.dsh-theme-tuner": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-tuner",
+      "resolved": {
+        "version": "0.1.4",
+        "commit": "c0dd8333b6e25eded1c3221529707929228da5c8",
+        "integrity": "sha512-20lqRM2RhS3PargdBOQ5aYEHRkRnZvLqXFdaIbXooWzJ1i8marCBHkaGi/0OWh+MXcjkH65zMPqKPd2jJuSS0Q==",
+        "gitHead": "c0dd8333b6e25eded1c3221529707929228da5c8",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "signalight.dsh-codex-pet": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@signalight/dsh-codex-pet",
+      "resolved": {
+        "version": "0.5.0",
+        "commit": "e2ee746b53cca4b1509b65f8916f6c5127914019",
+        "integrity": "sha512-7nsweI7+xHqZj8ymGWFT9eQAOZJiOlue62MWGxGRYw2KAyj6M0A2ZLYC+9hre/Bjcv1GlVeWtYtI+Z4uABEE3w==",
+        "gitHead": "e2ee746b53cca4b1509b65f8916f6c5127914019",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "skillynotfound.dsh.theme.endfield.re": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-endfield-re",
+      "resolved": {
+        "version": "2.1.0",
+        "commit": "1531e22cf7e59d6ca8f88cca3900b477550c887b",
+        "integrity": "sha512-7R5FRR3WbpBhxvO1/P2DBotojmq1W4Dh3V3ATNDD/UuJbpAxyC1Uw/y4NiiBsiZEovGijnYxhm0g3hGj8IJ4gg==",
+        "gitHead": "1531e22cf7e59d6ca8f88cca3900b477550c887b",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "smith-yue.harness-plugin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-skin-token-dashboard",
+      "resolved": {
+        "version": "0.1.0",
+        "commit": "86c26ca4a4382a08243873f576e50e1b8ef01a2b",
+        "integrity": "sha512-lY4r4UikREbZkSSa0c60g8paSEiGgw5UKI6ScRBzTfXbOolK8dPd3bzCzYZeec7qHDvMGU9uQYbPqPDN1eCl5Q==",
+        "gitHead": "86c26ca4a4382a08243873f576e50e1b8ef01a2b",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "soarguo.dsh-skin-lab": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-skin-lab",
+      "resolved": {
+        "version": "1.0.4",
+        "commit": "ad32833d069666a19f534715afd2bcd63bb3a80e",
+        "integrity": "sha512-oWshicQlWDcTFAcQsXRu/3kpGnyDwv+12m6iyHIgdApwh4glr7MgIOpaKlOsgPz919A1GcKdUpudkIY7B/AtZg==",
+        "gitHead": "ad32833d069666a19f534715afd2bcd63bb3a80e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "something11235.dsh-video-skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-video-skin",
+      "resolved": {
+        "version": "0.1.6",
+        "commit": "2f954a1d6ac6140880f1a58438ed746f2f7f3da4",
+        "integrity": "sha512-bMAHsTIzhCq8sSpKcV+mKZmTRlTPfgswRNtGZYnPHXVv9aIBQSIUh0FF3ZCS9e1YBiT1oDstMm79DMW7uRiApQ==",
+        "gitHead": "2f954a1d6ac6140880f1a58438ed746f2f7f3da4",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "sorry123maker.dsh-salary-cat": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-salary-cat",
+      "resolved": {
+        "version": "1.0.1",
+        "commit": "072e1f9574868dc15c9abc077f6f3f6e1b2a7da2",
+        "integrity": "sha512-mW8g5XI00IeHNt8osb98focAaequi2CcgJI85vk+uh7rL7zSMYCDQc/CRufBaDVZTkx4qoFQ3YReAmJya9NFmg==",
+        "gitHead": "072e1f9574868dc15c9abc077f6f3f6e1b2a7da2",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "starslittle.dsh-blue-whale": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-blue-whale",
+      "resolved": {
+        "version": "0.1.0",
+        "commit": "e18aa1e27e98df98c478b8d24076a94e64d43ed5",
+        "integrity": "sha512-fQRkkY86lygqGKCjbW1qMQGU+sso854vJM8WiG36G6f+izejnT48y0qWqshMAIleZatRzcEYPJFZrziRtuxJdA==",
+        "gitHead": "e18aa1e27e98df98c478b8d24076a94e64d43ed5",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "sutera-diffusus.dsh-whale-musume": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-whale-musume",
+      "resolved": {
+        "version": "2.5.3",
+        "commit": "3928dfa111393174747659dd867ae33337bc9514",
+        "integrity": "sha512-tnrURD18IjNRKcTi7RvXY58jScQP+XJrrYrbPnbVCfq9xoS15CAfzKaoAs/qGDbkTvLzAF4l8/M42FbuGEGsZQ==",
+        "gitHead": "3928dfa111393174747659dd867ae33337bc9514",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "taiyakioffical.claude-style-skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "claude-style-skin",
+      "resolved": {
+        "version": "0.1.1",
+        "commit": "09cfe36237b7fa0c4e57141b364b8bf50f084d37",
+        "integrity": "sha512-NFpLT73ku2kerPTq2KRa43uEp6GnlIyC7evYXBGMgpIN1E0MvQTzyxtqDyyRwF4f9DVAjbCAMgcg0RFrAhRlzw==",
+        "gitHead": "09cfe36237b7fa0c4e57141b364b8bf50f084d37",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "taoser258.dsh-client-ui-skin-qingxiao": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@taosee258/dsh-client-ui-skin-qingxiao",
+      "resolved": {
+        "version": "0.7.1",
+        "commit": "851afeaf44171a2bea841e25c05c666232c35f3f",
+        "integrity": "sha512-0OLJj7lUaDoCv3AkV2oyLaikLN2azu6XfgJOJ40MsaYFyqPzcjhRVFKqzyWKPC1oOlHX5C9uDEkExUSiDm02Cw==",
+        "gitHead": "851afeaf44171a2bea841e25c05c666232c35f3f",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "tfboy1.dsh-minecraft-ui": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-minecraft-ui",
+      "resolved": {
+        "version": "0.3.0",
+        "commit": "ec5313b87f8688b82421f124cc2f3887c84b3a8c",
+        "integrity": "sha512-lIc2gsdnoCZrNn7C1bWqJ9aarP+yWnFB/+6aTiorqcoC2siqFnxVs5f/KN0WjGK4kR2TbTZ/6bevlYkfULvcww==",
+        "gitHead": "ec5313b87f8688b82421f124cc2f3887c84b3a8c",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "tobewin.dsh-pet-companion": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@tobewin/dsh-pet-companion",
+      "resolved": {
+        "version": "0.1.0",
+        "commit": "53fc630ecb186169622f0ebca5267aae125484dc",
+        "integrity": "sha512-nJEWpRldBDxU8sus5fz4lCB7DAlsNnL92NhBkHs1M6n65YoOW+5Dv5LC+c+qLx0Qln9M06gYiw4Linj/PciFFQ==",
+        "gitHead": "53fc630ecb186169622f0ebca5267aae125484dc",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "tpmoonchefryan.dsh-joi-channel-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-joi-channel-theme",
+      "resolved": {
+        "version": "0.2.0",
+        "commit": "8a3d335638ea98c2f583d6b43dacd30f397a27fe",
+        "integrity": "sha512-UthkKmgh4hMj269AevkS01WKLnp7kJI11F9QMFEB3KlKLnT+QKTjibYCZE9U3RfXyAmEf9wOg8I/23WIQi4LHA==",
+        "gitHead": "8a3d335638ea98c2f583d6b43dacd30f397a27fe",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "tqsy114514.dsh-ui-appearance": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-ui-appearance",
+      "resolved": {
+        "version": "0.1.28",
+        "commit": "a7260bec8bece3c195899d8245f9604ace5f50cb",
+        "integrity": "sha512-unIS7kXggOJE/sNjuwoYE6fwx04oHxpR5QqFlj879st8jmhkV4GfTQUHNemhihHuhphxu0neZj7z/i5iz2Nrpg==",
+        "gitHead": "a7260bec8bece3c195899d8245f9604ace5f50cb",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "vderr.dsh-echocat-prettier": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-echocat-prettier",
+      "resolved": {
+        "version": "0.23.6",
+        "commit": "8af04d93f2378acd7d421d9d9eb86af4bf9f9310",
+        "integrity": "sha512-d7JTusw8hIVPgU5Y1srHxE6BRrCInmw/hZ1+Pazh/Zwchh/mhfp1crYkJdCFYhQ19nk8lr2d8AKFZhL84JpVcg==",
+        "gitHead": "8af04d93f2378acd7d421d9d9eb86af4bf9f9310",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "vlln.whale-girl": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "whale-girl",
+      "resolved": {
+        "version": "0.2.4",
+        "commit": "d7b695bc423f5081bcc0fcb6df0064f257a7e16b",
+        "integrity": "sha512-IGeztfLE+50c0XU6HVSV5qY4vshdLbzJ5b7OW5FRSltBrvIUJ6lb+qWBSPVCpVhdPOV/rjvBYg9SKcysbRAzUA==",
+        "gitHead": "d7b695bc423f5081bcc0fcb6df0064f257a7e16b",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "vollegrewar.dsh-tool-highlight": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-tool-highlight",
+      "resolved": {
+        "version": "0.2.6",
+        "commit": "f5f0e89101de1b24972f94ab0baf8cc0891f1baf",
+        "integrity": "sha512-benaFEDlgtLVBZu9/GDLLN/whjk6aDGbVHG775WaAgTZjh1FjVoyVeqg0mPzsiGLqT/Xw2JApHRAlffXUFyzAg==",
+        "gitHead": "f5f0e89101de1b24972f94ab0baf8cc0891f1baf",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "webkubor.dsh-bloom-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-bloom-theme",
+      "resolved": {
+        "version": "0.27.0",
+        "commit": "3e482de0417a689addb18b7afef1ded41b4b0fa4",
+        "integrity": "sha512-3OltYZpXKEqewFZVAe7DlM6CWQP3phU/nPptZJbRYd3FkNWcP179Lc8Yd6zvxXK8njcTsDPZCjIeEgsXxN1iHg==",
+        "gitHead": "3e482de0417a689addb18b7afef1ded41b4b0fa4",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "weibaohui.dsh-ambient": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@weibaohui/dsh-ambient",
+      "resolved": {
+        "version": "0.1.3",
+        "commit": "f56ef27e26c67826966a94cee4e65e547b563ccc",
+        "integrity": "sha512-hNOwwx8G87AV8z8+De6oh4HdFc0bckYzjH6dS788D1ui+ozq5fSl2d6nClVihb+f8H97KJSPLuwomQtChiPi8A==",
+        "gitHead": "f56ef27e26c67826966a94cee4e65e547b563ccc",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "weibaohui.dsh-matrix": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@weibaohui/dsh-matrix",
+      "resolved": {
+        "version": "0.7.1",
+        "commit": "a8bba88fb0a0e2a62e71ec34957200983c6de610",
+        "integrity": "sha512-G6EF6LoEZ9ESkn1I/kvx3tGH1+qXu7j6qES5ckDpG7x5wv6xtleXcU25LbIx6aJS0VoDYsShcslA4ZC4/vaBbQ==",
+        "gitHead": "a8bba88fb0a0e2a62e71ec34957200983c6de610",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "whitefirer.dsh-niulai-pet": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-niulai-pet",
+      "resolved": {
+        "version": "0.4.15",
+        "commit": "9103857bffceaa5fe71eff6e273a4662600fe0fb",
+        "integrity": "sha512-AwMU9cD7BbSItBQ/VtHO8QaSQTWom+8gKshSTiLAddnv8vQCvR25eO1nNmresmeQMlMaJopSqP449G4I8ZTG2g==",
+        "gitHead": "9103857bffceaa5fe71eff6e273a4662600fe0fb",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "wilsonchengassistant.dsh-media-web-preview": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-media-web-preview",
+      "resolved": {
+        "version": "1.0.0",
+        "commit": "eb1ae92be47e2e79022e72599957643f1357a105",
+        "integrity": "sha512-Kt03s3Rc1YFF759jR7AAMrl5Aoxjwi5jn5Nl1E5jqRb8qxD6NCaUlvJ8dAD6eqZuIXn4iNcHEhMZWGIiC4hqiw==",
+        "gitHead": "eb1ae92be47e2e79022e72599957643f1357a105",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "witherwithwinter.dsh-ccx": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-ccx",
+      "resolved": {
+        "version": "0.8.9",
+        "commit": "1c8c268d2b1a9bcf9b8f750a91021097dc656256",
+        "integrity": "sha512-bMgohBlLJugCcpkp+fzSbWcqNzBqacd33k9zjeoRrnI9rP7kxBxBUfmSKsrWXHiHq64aiSk8QLpLXoKISnT0+Q==",
+        "gitHead": "1c8c268d2b1a9bcf9b8f750a91021097dc656256",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "xchannel1987.dsh-mobile-xc": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-mobile-xc",
+      "resolved": {
+        "version": "0.6.15",
+        "commit": "1e1795bcd5459de678cec2c08473cb82c12e0ba9",
+        "integrity": "sha512-k7frBcbIqIK7Q6b7zfyHLyDod60cfKwbTH/goV0tVkh5GlVdWt63UFVSm/Cst9lv2T8Z8gi23xD1MpGP3D4dwA==",
+        "gitHead": "1e1795bcd5459de678cec2c08473cb82c12e0ba9",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "xcnxnxnx.dsh.portable.tavern": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-portable-tavern",
+      "resolved": {
+        "version": "0.4.1",
+        "commit": "153bfc7e505fa300340e1ce1aac13a04b7a36416",
+        "integrity": "sha512-Ya4ZRnbrHiLjbD0OwEdCHaLJXxOux12Ul+D5W4zFehmbQzgVSgR8kKFFxwmBX62ch+5cWFxG4JTi7+w3kGTRQA==",
+        "gitHead": "153bfc7e505fa300340e1ce1aac13a04b7a36416",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "xiaokaizhou.dsh-media-preview": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "media-preview",
+      "resolved": {
+        "version": "0.1.3",
+        "commit": "673b38897bf83d6d4a8b30014cda14bc67a826c1",
+        "integrity": "sha512-YPS4BDZzPWmVxgqMX6jfR64YaXr7VsKUWabrd9Sfo7A3fr2OPAc+RBoty7T8viQBfXJMJAHzKlYqqbsrdXLRkw==",
+        "gitHead": "673b38897bf83d6d4a8b30014cda14bc67a826c1",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "xkxkiscoder.dsh.ui.zzz.sunna": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-ui-zzz-sunna",
+      "resolved": {
+        "version": "0.1.6",
+        "commit": "5e98100379b9527df5928b797131734d724e614f",
+        "integrity": "sha512-07xj2/4kiBV0cAcSRaRjiBc3DlBe0CIDTg2LECbKrBHB8kGnzhvxmnxBov6WwUvTvVhKQ5zdzvXvistDT0crMw==",
+        "gitHead": "5e98100379b9527df5928b797131734d724e614f",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "xmnathan.dsh-skin-galactic-opera": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-skin-galactic-opera",
+      "resolved": {
+        "version": "0.2.1",
+        "commit": "0f9329e6d58d08a6aa5d73f2c184c18eb6dd89b2",
+        "integrity": "sha512-gqkexIVSvdIFOZpYVvSIE9f5gHJ/FOugkv6qICl/c1izvNOCcus1kQTXZlHs06p1IhEKgxHS4P8piS8qc7AWjw==",
+        "gitHead": "0f9329e6d58d08a6aa5d73f2c184c18eb6dd89b2",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yannicksong0106.dsh-550c-boot": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-550c-boot",
+      "resolved": {
+        "version": "0.5.2",
+        "commit": "c4715ef6df148d5212ebff7584217c6485c2e733",
+        "integrity": "sha512-I94j2pV4ww/vilNi7kklgL71IGxkLTY1sH9opLI8k1dulZo+VTAZ3ow6iNhjsQXyewlUzNsLR5fHR8oueahMsQ==",
+        "gitHead": "c4715ef6df148d5212ebff7584217c6485c2e733",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yanzwzz.dsh-whale-girl-pet": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-whale-girl-pet",
+      "resolved": {
+        "version": "0.3.11",
+        "commit": "53e9ab8e2c779f4c0feb902cfa940c098c83d228",
+        "integrity": "sha512-yZnfDg6BNdCC0+V4mRjAjEiUYX0FZWz8ZiJag8Xep+LGkWoamxCoY/Pv+SjgCuySViRHQFOth4Q85OA4f31BXQ==",
+        "gitHead": "53e9ab8e2c779f4c0feb902cfa940c098c83d228",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yicun0316.dsh-claude-slider": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-claude-slider",
+      "resolved": {
+        "version": "2.11.0",
+        "commit": "0be24603134bb126750793ae8f671afa9e45eea9",
+        "integrity": "sha512-GWQr1ajhKkZ/PdPG/Ug9OaZul+CcK7dTAmDuVGUDft3Oh2IaBsuv4KEm3bw+v5vKufOwvzFaNW3gPt5xeENPkw==",
+        "gitHead": "0be24603134bb126750793ae8f671afa9e45eea9",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yifffan.dsh-plugin-whale-pet": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-plugin-whale-pet",
+      "resolved": {
+        "version": "0.2.9",
+        "commit": "6efec117faa6b677cc9e1f5305bc547352c54065",
+        "integrity": "sha512-dVvVl2omCJze0IFRFU80TgzoXjiyENagDMyZUVAONSgl4loEu1OzYhlojNSUMoTHoRdspvaitL4/hJtT8j2Qbg==",
+        "gitHead": "6efec117faa6b677cc9e1f5305bc547352c54065",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ylifeonlyonce.dsh-calendar": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-usage-calendar",
+      "resolved": {
+        "version": "0.1.4",
+        "commit": "6901d070bcfa2b6103cde39fe08f886ffe111cd0",
+        "integrity": "sha512-0dBzN8Ziu502/1RS01AbCJNSLeKtzi5tQQV8ehI9AJ5NaFzP+YFZBtvizp3T4OhXoq3FIDN+zpOYALe+jeIJqw==",
+        "gitHead": "6901d070bcfa2b6103cde39fe08f886ffe111cd0",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ymh0000123.dsh-theme-endfield": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-endfield",
+      "resolved": {
+        "version": "1.2.7",
+        "commit": "7f3a174e9162d78037695b98d92a08711ac202c1",
+        "integrity": "sha512-h9g3LcaBoHmmg+O/I0OPbkFkwMJtreF88EARlgIi0LbN5rcdeZ7VcoTHZdbnMuKgfm9BxOu/6AvyWSwtP4ukRg==",
+        "gitHead": "7f3a174e9162d78037695b98d92a08711ac202c1",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yrracowl.dsh-theme-acid-noir": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-acid-noir",
+      "resolved": {
+        "version": "0.4.7",
+        "commit": "7a1a770e14438e9c5a5f43894e747a351a00bc39",
+        "integrity": "sha512-gUkRdfMaxmZmS1VmDBiDB5zKZual6DWzsVxbm+k+a9kgpoAR6305fj+XxyW3qjs7ViI/kJe3qfS3vnFiNfaQRA==",
+        "gitHead": "7a1a770e14438e9c5a5f43894e747a351a00bc39",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yrracowl.dsh-theme-cutout-clash": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-cutout-clash",
+      "resolved": {
+        "version": "0.5.11",
+        "commit": "0bb0f15f6848fde5628c9712ac245e7d61b78643",
+        "integrity": "sha512-UO146ZmvKarePKDhD0WFi2tZShMUPj39NGLnQAqxfNJz15O+beI63EpRRvmXh02h4KLDtYiNZwXYJm1dzr9EwA==",
+        "gitHead": "0bb0f15f6848fde5628c9712ac245e7d61b78643",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yrsxy.dsh-warm-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-warm-theme",
+      "resolved": {
+        "version": "0.2.0",
+        "commit": "2077d784604826567fc6abe733517cc066e84514",
+        "integrity": "sha512-3K7FingB12WG9NbgjwmwuML+k5hvyGRrS1P5/LSC6vzD88x6WjXr/JGogcJNb16DnG3sXhg6baUvLyH6qR2RbQ==",
+        "gitHead": "2077d784604826567fc6abe733517cc066e84514",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "ysppwn721.better-dsh-pet": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "better-dsh-pet",
+      "resolved": {
+        "version": "0.3.6",
+        "commit": "3f4b161313304740f1bc764c4114ddac97204374",
+        "integrity": "sha512-dIRbzHIN5g2w+VXA8YG89ibtGeW5UgCliYvkk1z0C5VER/3qu3OuEsGOZGOuPvW5AGuSehB0gtnQPf6XdPbQ9g==",
+        "gitHead": "3f4b161313304740f1bc764c4114ddac97204374",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yu502950715yang.dsh.use.wallpaper": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@dsh-use/wallpaper-engine",
+      "resolved": {
+        "version": "1.0.1",
+        "commit": "5b22957c8657b1ce3292362dcbad963cc0965c26",
+        "integrity": "sha512-uixUcmNE05tHpzneInttk28yVYOUOYhKpuH7IDV8/dOfxOAvddyCYc44dH9VlthTm6YrAscftRvGmdPSmE/31w==",
+        "gitHead": "5b22957c8657b1ce3292362dcbad963cc0965c26",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yummyxl.dsh-eyecare": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-eyecare",
+      "resolved": {
+        "version": "1.1.0",
+        "commit": "e9c92b6da193713a74909569f4eb9e2b623391e6",
+        "integrity": "sha512-sh4QzGQNFbLWQxLwr5H7g0jxrH7UXrOlzzCujKgkKbQjYQ1yDi4C4mGzlsV5bRHZBrrx0njgOy8PFbGmfqLcjA==",
+        "gitHead": "e9c92b6da193713a74909569f4eb9e2b623391e6",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yuqisun.dsh-theme-machine": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-machine",
+      "resolved": {
+        "version": "0.1.3",
+        "commit": "e7e7762e16ff6469fe9153e5d75bac1b37b0ef13",
+        "integrity": "sha512-07xUJMSAuhHWuYEYbRN7kCX2R4eVUHjhNQpSM3lQozwJLV2g2bXX2QPOsfsgeSBLSDeH3fJXbXbEW0vVC+l00A==",
+        "gitHead": "e7e7762e16ff6469fe9153e5d75bac1b37b0ef13",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yushi-xxh.dsh-homepage-skin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-homepage-skin",
+      "resolved": {
+        "version": "0.1.13",
+        "commit": "329f9e0b12cab223b00b3e75e2f73453d9a46ed5",
+        "integrity": "sha512-VCXbd8IlI/r1Yfs3B1u5G8q+kqgubZfW1ERgrn9Q61DiMG09eafH0vFTe1yglF99k69Ny0S8yGHRq7goz3IRVg==",
+        "gitHead": "329f9e0b12cab223b00b3e75e2f73453d9a46ed5",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yuuhann1999.dsh-bloub-mood": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-bloub-mood",
+      "resolved": {
+        "version": "2.4.4",
+        "commit": "c626528b3d6c32669c265d7144e85f60f48570d2",
+        "integrity": "sha512-mShun0DJXAM4rBo+eKuPsfEXlK+oVvuJFag1bGA+HlX5xtoToCdYPJeVM4QWvbX96LxuaaOfy3+81jl9paisig==",
+        "gitHead": "c626528b3d6c32669c265d7144e85f60f48570d2",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yyyyyylor.dsh-asuka-school-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-asuka-school-theme",
+      "resolved": {
+        "version": "3.3.0",
+        "commit": "d421c052afea6683bff9c5dacf93d3580d1eafe6",
+        "integrity": "sha512-AMOYTVFxpChziWDm5XFDkJ0vkL+rVK69kNNW+ZrFJ5KZzTfNPkhIrAz8Ok/5ku94kpmLAnCWCtse1DPSGT5G8A==",
+        "gitHead": "d421c052afea6683bff9c5dacf93d3580d1eafe6",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "yzke.dsh-icon-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-icon-theme",
+      "resolved": {
+        "version": "0.3.0",
+        "commit": "6c2506350dc4be261e310ffdbd4911253e6e4559",
+        "integrity": "sha512-qrJoNjyLGzuiwJ6XxT9p+ijMrnH3qLzJ5kh5rZFZ9F6PkPHVC8ShCO6KQGGwaLKeJ3mzWCTidoASnUOle642Eg==",
+        "gitHead": "6c2506350dc4be261e310ffdbd4911253e6e4559",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zekaishi.orivii": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-orivii",
+      "resolved": {
+        "version": "1.1.0",
+        "commit": "98bae54a6547bed3d6175d5317ac8ae3da775665",
+        "integrity": "sha512-/iCGSiGfHA/O4SIgAMqxFql9pYF6VPirDI1ETLV9k0zEed4BZm12UtG4a9WV69xZvQIJQvU93mYZMa7Os9cPqQ==",
+        "gitHead": "98bae54a6547bed3d6175d5317ac8ae3da775665",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zemul.dsh-video-preview": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-video-preview",
+      "resolved": {
+        "version": "0.1.4",
+        "commit": "9ed0b22075b6d83831ff23738f5334d2b9dc677f",
+        "integrity": "sha512-AdmqL2cca8ygAOsM56PHvycPHvzyY4Gv7DTSH/5prkPs4R3mKIIEiwQAAtpeDS9cy0s4+VQfLb7a1uA6UHQ31Q==",
+        "gitHead": "9ed0b22075b6d83831ff23738f5334d2b9dc677f",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zhang66633.dsh-pixel-ui": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-pixel-ui",
+      "resolved": {
+        "version": "1.13.2",
+        "commit": "ebbbec1ae661a69a9b85b00a2a53234219ad62a6",
+        "integrity": "sha512-PJ0GrtfuZvcgkewPFlQoxKkj5nuNXUlxWaM/a3NHOlq54M4688ysTaoS0C4DFIT07vNFjYYUF9RaH86XSt+DJA==",
+        "gitHead": "ebbbec1ae661a69a9b85b00a2a53234219ad62a6",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zhigengniao258.dsh-theme-tarkov": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-tarkov",
+      "resolved": {
+        "version": "0.4.1",
+        "commit": "0919b705a5661c05310afe6dee8d920b1d2000e6",
+        "integrity": "sha512-dj4PUl9ifcSi2ndiyePp1rDbD+xjGkaF7Vv8wl5f7cgNaJAt87wulBucp1tLRAxgYMrJ/x2fC/vq19d2Z0XERw==",
+        "gitHead": "0919b705a5661c05310afe6dee8d920b1d2000e6",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zhijun-dai.catppuccin": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-catppuccin",
+      "resolved": {
+        "version": "0.2.6",
+        "commit": "9d18edc84a13fb6009391677046ddedec267ecdc",
+        "integrity": "sha512-QqgfHDyYfbObJ25Xu1OZ7pBGHwXTHMkr8Wbz8ZehzYB4pjStujvdMOfA4uZdr14mW+yh4+A+wvCih+H5kc1H7A==",
+        "gitHead": "9d18edc84a13fb6009391677046ddedec267ecdc",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zhoucourier.dsh-theme-whalegirl": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-whalegirl",
+      "resolved": {
+        "version": "0.4.0",
+        "commit": "aecc434d7b26e432516b6203e7a4e46917342b82",
+        "integrity": "sha512-CDj++gZU+bzRBSTvr1Ixcn9ylGEjpe9Cg4ChS1rTiNU8aNSwXcxQ5jsnrx7b/HzafGWJX4QcwDf0lp8GI46mmQ==",
+        "gitHead": "aecc434d7b26e432516b6203e7a4e46917342b82",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zhu1090093659.dsh-pet": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@linxin666/dsh-pet",
+      "resolved": {
+        "version": "0.4.18",
+        "commit": "e56528ff321fed127ed2e123efc34b9c9a1b4b26",
+        "integrity": "sha512-+1GSDGXx42YZcUh1VS98iMvXxVjpaTYjQA/RNaHdRjdUboZAGHYjSofV3byduZy2ve/+bbLA8i8FQVPrNx8T1g==",
+        "gitHead": "e56528ff321fed127ed2e123efc34b9c9a1b4b26",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zhxqc.dsh-oh-my-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-oh-my-theme",
+      "resolved": {
+        "version": "0.6.0",
+        "commit": "5052f83f4ccc21da11f37b27824f2c95052fb25b",
+        "integrity": "sha512-1TDG5zGZ//MhG71l4T2EfYueVSDS/TiRFD2Mb/QWW5AI1n7Y4kfiIoi2u+e/K4wTZutrcx/GH6WEtIo9eSw7xA==",
+        "gitHead": "5052f83f4ccc21da11f37b27824f2c95052fb25b",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zkforge.dsh-claude-desktop-theme": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-claude-desktop-theme",
+      "resolved": {
+        "version": "0.10.5",
+        "commit": "3351167efaaec44e21342af0436ba602d52fa17e",
+        "integrity": "sha512-fxs6lE7SbvHcHx3ExxfMDlsVWFI983oNA8WvOJ/ypJZfOP4qKiDkmZbS4YrKdmR08jwjd4iak0I+yGyGDiKMsw==",
+        "gitHead": "3351167efaaec44e21342af0436ba602d52fa17e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zmm863-commits.dsh-client-ui-paopaocat": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-client-ui-paopaocat",
+      "resolved": {
+        "version": "0.3.4",
+        "commit": "1970fa791fe514c52fa52a5d4db6a40b9c50c2d0",
+        "integrity": "sha512-/dAe/yNx0cwP7gbM35v8s5vURS9dl87kindqeLEdtEE3KJYY9rlUU39FNsmPIdakbBtujJivKaOWrr7uIiNbOA==",
+        "gitHead": "1970fa791fe514c52fa52a5d4db6a40b9c50c2d0",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zsyayo112.dsh-rick-and-morty": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "@zsy1126/dsh-rick-and-morty",
+      "resolved": {
+        "version": "0.1.0",
+        "commit": "83dfc64c0f53da29b7b7e70c83ea8be11416a6b3",
+        "integrity": "sha512-6jK2ldhiQX/J62ACP3RUSeXHnGdlZO63EC7blYARdjemHDrBLa7QxL2aIoH8Jv8DpswKk9IHTH7kUKCu88dy0w==",
+        "gitHead": "83dfc64c0f53da29b7b7e70c83ea8be11416a6b3",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    },
+    "zuoyunlai.dsh-theme-palette": {
+      "schema": "install-policy-v1",
+      "mode": "npm",
+      "package": "dsh-theme-palette",
+      "resolved": {
+        "version": "1.13.6",
+        "commit": "1b1a20be51534407368254bc2f249cb3eeed288e",
+        "integrity": "sha512-mlOeox061w2eHdoFfed0diy/7NeMa3aqVVtod41ZayuZ4SmtCNBtvp0wCh6uPLTyFoXwkf6FlY1Cq5/wlIYnig==",
+        "gitHead": "1b1a20be51534407368254bc2f249cb3eeed288e",
+        "observedAt": "2026-11-14T13:40:24.422Z"
+      }
+    }
+  }
+}

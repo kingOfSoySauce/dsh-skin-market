@@ -7,6 +7,7 @@ import {
   profilePatchFile,
   readDependencies,
   readMarketState,
+  reconcileCatalogLoaderIds,
   restoreFile,
   snapshotFile,
   installedSkinSourceMatches,
@@ -23,15 +24,16 @@ export function resetManagedSkins(profileDir: string, catalog: SkinEntry[] = loa
   const manifestSnapshot = snapshotFile(manifestFile(profileDir))
   const patchSnapshot = snapshotFile(profilePatchFile(profileDir))
   const stateSnapshot = snapshotFile(marketStateFile(profileDir))
+  const reconciled = reconcileCatalogLoaderIds(profileDir, catalog)
   const dependencies = readDependencies(profileDir)
-  const installed = catalog.filter(skin => dependencies[skin.package] !== undefined
+  const installed = reconciled.filter(skin => dependencies[skin.package] !== undefined
     && installedSkinSourceMatches(profileDir, skin))
 
   try {
     const state = readMarketState(profileDir)
     for (const skin of installed) ensureSkinRegistration(profileDir, skin, true)
     const seenCompanions = new Set<string>()
-    for (const skin of catalog) {
+    for (const skin of reconciled) {
       for (const companion of skin.install.companions ?? []) {
         if (dependencies[skin.package] !== undefined && installedSkinSourceMatches(profileDir, skin)
           && dependencies[companion.package] !== undefined) {

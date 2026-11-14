@@ -178,3 +178,66 @@ describe('catalog wire reader', () => {
     expect(store.snapshot().error).toContain('cached catalog rejected: invalid npm integrity')
   })
 })
+
+describe('catalog wire release observations', () => {
+  const observedAt = '2026-11-14T00:00:00.000Z'
+  function policy(skin, npm) {
+    return {
+      schema: 'install-policy-v1',
+      mode: 'npm',
+      package: skin.package,
+      resolved: {
+        version: '9.9.9',
+        commit: 'b'.repeat(40),
+        integrity: 'sha512-ZGVm',
+        gitHead: 'b'.repeat(40),
+        observedAt,
+      },
+      ...(npm ?? {}),
+    }
+  }
+
+  it('ignores a legacy catalog with no observations and preserves the v1 skin bytes', () => {
+    const { catalog } = fixture()
+    const decoded = decodeCatalogWire(catalog)
+    expect(decoded).toEqual(catalog)
+    expect(decoded).not.toHaveProperty('installPolicies')
+  })
+
+  it('reads observations from the envelope without touching skin install fields', () => {
+    const { wire, skin, npm } = fixture()
+    const runtime = validateCatalog(wire)
+    const built = buildCatalogWire(runtime.skins, { installPolicies: { [skin.id]: policy(skin) }, generatedAt: runtime.generatedAt })
+    expect(built.skins).toEqual(wire.skins)
+    expect(built.installPolicies).toEqual({ [skin.id]: policy(skin) })
+    const decoded = validateCatalog(built)
+    expect(decoded.skins[0]!.install).toEqual(runtime.skins[0]!.install)
+    expect(decoded.skins[0]!.install.npm).toEqual(npm)
+    expect(decoded.installPolicies).toEqual({ [skin.id]: policy(skin) })
+    expect(encodeCatalogWire(decoded)).toEqual(built)
+  })
+
+  it('ignores one malformed observation and keeps the reviewed install fallback', () => {
+    const { wire, skin } = fixture()
+    const runtime = validateCatalog(wire)
+    const built = buildCatalogWire(runtime.skins, { installPolicies: { [skin.id]: policy(skin) }, generatedAt: runtime.generatedAt })
+    const bad = { ...built, installPolicies: { [skin.id]: { ...policy(skin), package: 'different-package' } } }
+    const decoded = decodeCatalogWire(bad)
+    expect(decoded).not.toHaveProperty('installPolicies')
+    expect(decoded.skins).toEqual(validateCatalog(built).skins)
+  })
+
+  it('rejects a malformed observation container', () => {
+    const { catalog } = fixture()
+    for (const value of [[], 'policies', 1, false]) {
+      expect(() => decodeCatalogWire({ ...catalog, installPolicies: value })).toThrow('installPolicies must be an object')
+    }
+  })
+
+  it('drops observations that reference an unknown skin', () => {
+    const { wire, skin } = fixture()
+    const runtime = validateCatalog(wire)
+    const built = buildCatalogWire(runtime.skins, { installPolicies: { [skin.id]: policy(skin) }, generatedAt: runtime.generatedAt })
+    expect(decodeCatalogWire({ ...built, installPolicies: { 'missing.skin': policy(skin) } })).not.toHaveProperty('installPolicies')
+  })
+})

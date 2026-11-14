@@ -40,6 +40,8 @@ import {
   assertNoLoaderConflicts,
   assertNoKnownLoaderConflicts,
   installedLoaderIdentities,
+  installedPrimaryLoaderRowId,
+  reconcileCatalogLoaderIds,
   InstallConflictError,
   LoaderMetadataError,
   compatibilityPatchFile,
@@ -211,6 +213,8 @@ interface PrefetchedPackage {
   loaderRows: LoaderIdentity[]
   packageRows: LoaderIdentity[]
   hasBundle: boolean
+  /** Actual primary loader id in the downloaded artifact; catalog rowId is only a hint. */
+  loaderRowId: string | null
 }
 
 interface ReleaseAgeApproval {
@@ -288,8 +292,8 @@ export class SkinLifecycle {
   private readonly desktopManagedAttempts = new Set<string>()
   private readonly desktopRecoveryBaselines = new Map<string, { snapshot: ProfileInstallSnapshot; mutationsBefore: number }>()
   private readonly executions = new Map<string, Promise<void>>()
-  private catalogEntries: SkinEntry[]
-  private skinById: Map<string, SkinEntry>
+  private catalogEntries!: SkinEntry[]
+  private skinById!: Map<string, SkinEntry>
   private disposeEvent?: () => void
   private disposed = false
   private readonly pendingLifecycle = new Set<Promise<unknown>>()
@@ -311,8 +315,29 @@ export class SkinLifecycle {
   }
 
   constructor(private readonly host: LifecycleHost, private readonly options: LifecycleOptions, catalog = loadCatalog().skins) {
-    this.catalogEntries = catalog
-    this.skinById = new Map(catalog.map(skin => [skin.id, skin]))
+    this.setCatalog(catalog)
+  }
+
+  /** Installed loader ids are authoritative; the catalog value remains a hint. */
+  private setCatalog(catalog: readonly SkinEntry[]): void {
+    this.catalogEntries = reconcileCatalogLoaderIds(this.options.profileDir, catalog)
+    this.skinById = new Map(this.catalogEntries.map(skin => [skin.id, skin]))
+  }
+
+  /** Adopt an actual loader id into the in-memory catalog and keep every later step consistent. */
+  private adoptLoaderRowId(skin: SkinEntry, rowId: string, operation?: Operation): SkinEntry {
+    if (rowId === skin.rowId) return skin
+    const updated = { ...skin, rowId }
+    this.catalogEntries = this.catalogEntries.map(item => item.id === skin.id ? updated : item)
+    this.skinById.set(skin.id, updated)
+    logEvent('info', 'loader-row-reconciled', `目录 rowId=${skin.rowId} 以实际主 loader id=${rowId} 为准`, operation?.id)
+    return updated
+  }
+
+  /** Re-read the installed package after materialization and adopt its primary loader id. */
+  private adoptInstalledLoaderRowId(skin: SkinEntry, operation?: Operation): SkinEntry {
+    const installed = installedPrimaryLoaderRowId(this.options.profileDir, skin)
+    return installed === null ? skin : this.adoptLoaderRowId(skin, installed, operation)
   }
 
   get catalog(): SkinEntry[] { return this.catalogEntries }
@@ -592,7 +617,7 @@ export class SkinLifecycle {
 
   private releaseAgeContext(operation: Pick<Operation, 'kind' | 'skinId'>): string {
     const skin = this.skin(operation.skinId)
-    return JSON.stringify({ kind: operation.kind, package: skin.package, rowId: skin.rowId, install: skin.install, runtime: this.runtime.version })
+    return JSON.stringify({ kind: operation.kind, package: skin.package, install: skin.install, runtime: this.runtime.version })
   }
 
   private repairReleaseAgePolicy(operation?: Operation): string[] {
@@ -1070,8 +1095,7 @@ export class SkinLifecycle {
   }
 
   async replaceCatalog(catalog: SkinEntry[]): Promise<void> {
-    this.catalogEntries = catalog
-    this.skinById = new Map(catalog.map(skin => [skin.id, skin]))
+    this.setCatalog(catalog)
     await this.replay()
   }
 
@@ -2185,7 +2209,9 @@ export class SkinLifecycle {
   }
 
   private replacementReview(skin: SkinEntry): string {
-    return JSON.stringify([skin.id, skin.package, skin.repo, skin.rowId, skin.subpath, skin.install, skin.review, skin.compatibility])
+    // rowId is a reconciled hint, not part of the source approval. Keeping it
+    // out means adopting the installed id never invalidates a queued consent.
+    return JSON.stringify([skin.id, skin.package, skin.repo, skin.subpath, skin.install, skin.review, skin.compatibility])
   }
 
   private replacementTarget(skin: SkinEntry, operation: Operation): string | undefined {
@@ -2497,6 +2523,7 @@ export class SkinLifecycle {
       }
       const packageDirectory = join(directory, 'node_modules', ...skin.package.split('/'))
       const packageRows = packageLoaderOwnershipAt(packageDirectory, skin.package)
+      let loaderRowId: string | null = null
       if (packageRows.hasBundle) {
         const primaryRows = packageRows.rows.filter(row => row.name === skin.package)
         if (primaryRows.length === 0) {
@@ -2505,15 +2532,19 @@ export class SkinLifecycle {
         if (primaryRows.length > 1) {
           throw new LoaderMetadataError(`${skin.package} 的 bundle patch 声明了多个主 loader：${primaryRows.map(row => row.id ?? '(缺少 id)').join('、')}`)
         }
-        if (primaryRows[0].id !== skin.rowId) {
-          throw new LoaderMetadataError(`${skin.package} 的目录 rowId=${skin.rowId}，实际主 loader id=${primaryRows[0].id ?? '(缺少 id)'}`)
+        if (primaryRows[0].id === undefined) {
+          throw new LoaderMetadataError(`${skin.package} 的主 loader 缺少 id；目录 rowId=${skin.rowId}`)
         }
+        // The downloaded artifact is authoritative. A stale catalog hint is
+        // adopted after the live install instead of blocking the user.
+        loaderRowId = primaryRows[0].id
       }
       return {
         target,
         packageRows: packageRows.rows,
         hasBundle: packageRows.hasBundle,
         loaderRows: installedLoaderIdentities(directory),
+        loaderRowId,
       }
     } finally {
       removePrefetchDirectory(directory)
@@ -2521,7 +2552,7 @@ export class SkinLifecycle {
   }
 
   private async install(operation: Operation): Promise<void> {
-    const skin = this.skin(operation.skinId)
+    let skin = this.skin(operation.skinId)
     this.applyPendingBuildApprovals(operation)
     let prefetched: PrefetchedPackage | undefined
     if (this.hostKind !== 'desktop' && readDependencies(this.options.profileDir)[skin.package] === undefined) {
@@ -2530,6 +2561,7 @@ export class SkinLifecycle {
         this.update(operation, 'downloading')
         return await this.prefetch(skin, operation)
       })
+      if (prefetched.loaderRowId !== null) skin = this.adoptLoaderRowId(skin, prefetched.loaderRowId, operation)
     }
     await this.withProfileLock(operation, () => this.installIntoProfile(operation, skin, prefetched))
   }
@@ -2550,6 +2582,7 @@ export class SkinLifecycle {
       if (!sourceMatches) {
         throw new Error(`installed package ${skin.package} does not match the reviewed source/version; use Update to replace it with ${skin.install.target}`)
       }
+      skin = this.adoptInstalledLoaderRowId(skin, operation)
       let validation = validateInstalledSkin(this.options.profileDir, skin, { allowArtifactRisk: true, hostKind: this.hostKind })
       if (!validation.ok && validation.repairable === true) {
         await this.prepareProfile(skin, operation, async () => {
@@ -2599,6 +2632,7 @@ export class SkinLifecycle {
       if (prefetched === undefined) this.update(operation, 'downloading')
       const state = readMarketState(this.options.profileDir)
       await this.installPackage(skin, operation, state, undefined, prefetched)
+      skin = this.adoptInstalledLoaderRowId(skin, operation)
       await this.applyCompatibility(skin, operation)
       this.update(operation, 'validating')
       const validation = validateInstalledSkin(this.options.profileDir, skin, { allowArtifactRisk: true, hostKind: this.hostKind })
@@ -2933,7 +2967,7 @@ export class SkinLifecycle {
   }
 
   private async updateSkin(operation: Operation): Promise<void> {
-    const skin = this.skin(operation.skinId)
+    let skin = this.skin(operation.skinId)
     const sourceContext = this.sourceMigrationContexts.get(operation.id)?.context
     const originalSpec = readDependencies(this.options.profileDir)[skin.package]
     const target = this.hostKind === 'desktop' ? this.desktopUpdateTarget(skin) : operation.kind === 'migrate'
@@ -2986,6 +3020,7 @@ export class SkinLifecycle {
         if (prefetched === undefined) this.update(operation, 'downloading')
         installationStarted = true
         await this.installPackage(skin, operation, previousState, target, prefetched)
+        skin = this.adoptInstalledLoaderRowId(skin, operation)
         await this.applyCompatibility(skin, operation)
         this.update(operation, 'validating')
         const validation = validateInstalledSkin(this.options.profileDir, skin, { allowArtifactRisk: true, hostKind: this.hostKind })

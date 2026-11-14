@@ -192,8 +192,9 @@ describe('catalog', () => {
   })
 
   it('accepts an npm source tied to the complete reviewed GitHub commit', () => {
-    // Momentum is orthogonal here; keep the fixture focused on npm metadata.
-    const { heat: _heat, ...catalog } = loadCatalog()
+    // Momentum and release observations are orthogonal here; keep the fixture
+    // focused on npm metadata and its v1 install fields.
+    const { heat: _heat, installPolicies: _installPolicies, ...catalog } = loadCatalog()
     const skin = catalog.skins[0]!
     const npm = { name: skin.package, version: skin.install.version, integrity: 'sha512-abc', repository: skin.repo, gitHead: skin.install.commit }
     const reviewed = { ...catalog, skins: [{ ...skin, install: { ...skin.install, npm } }] }

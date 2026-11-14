@@ -1783,7 +1783,7 @@ describe('skin lifecycle', () => {
     expect(readDependencies(dir)[skin.package]).toBe(skin.install.target)
   })
 
-  it('rejects a catalog row id mismatch from the prefetched immutable bundle', async () => {
+  it('adopts a catalog row id mismatch from the prefetched immutable bundle', async () => {
     const dir = fixture()
     const probe = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner: async () => success() })
     const base = firstInstallable(probe)
@@ -1796,17 +1796,22 @@ describe('skin lifecycle', () => {
         writeBundlePackage(temporary, { package: skin.package, rowId: 'actual-primary', install: { version: skin.install.version } })
         return success()
       }
-      if (args[0] === 'add') liveAdd += 1
+      if (args[0] === 'add') {
+        liveAdd += 1
+        atomicWriteJson(join(dir, 'package.json'), { dependencies: { [skin.package]: skin.install.target } })
+        writeBundlePackage(dir, { package: skin.package, rowId: 'actual-primary', install: { version: skin.install.version } })
+      }
       return success()
     }
     const lifecycle = new SkinLifecycle({ loader: { entries: () => [] } }, { profile: 'test', profileDir: dir, runner }, [skin])
 
     const operation = await finished(lifecycle.begin('install', skin.id))
 
-    expect(operation.phase).toBe('failed')
-    expect(operation.message).toContain('市场目录元数据与包实际声明不一致')
-    expect(operation.message).toContain('实际主 loader id=actual-primary')
-    expect(liveAdd).toBe(0)
+    expect(operation.phase).toBe('done')
+    expect(liveAdd).toBe(1)
+    // The in-memory catalog now carries the actual loader id; a disabled bundle
+    // install removes the profile registration rather than inserting a hint id.
+    expect(lifecycle.catalog.find(entry => entry.id === skin.id)?.rowId).toBe('actual-primary')
   })
 
   it('restores the original dependency graph once after a post-install loader conflict', async () => {

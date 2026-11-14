@@ -8,6 +8,7 @@ import { mediaForSources } from './media.mjs'
 import { isThinSubmission, hydrateSkinSubmission, thinSubmissionHint } from './hydrate-submission.mjs'
 import { resolveScreenshotList, resolveScreenshotRef } from './screenshot-refs.mjs'
 import { buildCatalogWire } from './catalog-wire.mjs'
+import { loadInstallPolicies } from './install-policies.mjs'
 import { loadContract, schemaErrorHint } from './submission-contract.mjs'
 import { isVersionRange } from './version-range.mjs'
 import { assertCatalogCopy } from './catalog-copy.mjs'
@@ -177,6 +178,10 @@ const heat = previous?.heat && typeof previous.heat === 'object'
   ? Object.fromEntries(Object.entries(previous.heat).filter(([id]) => known.has(id)))
   : undefined
 
-const catalog = buildCatalogWire(skins, { previous, heat, displayCopy })
-if (!checkOnly) await writeFile(catalogPath, `${JSON.stringify(catalog, null, 2)}\n`)
+const installPolicies = await loadInstallPolicies(root, skins)
+const catalog = buildCatalogWire(skins, { previous, heat, displayCopy, installPolicies })
+// Compact output: data/catalog.json is fetched by every installed client from
+// raw.githubusercontent.com and committed on every registry sync, so avoid
+// pretty-print whitespace (~20% smaller). Old clients only JSON.parse it.
+if (!checkOnly) await writeFile(catalogPath, `${JSON.stringify(catalog)}\n`)
 console.log(`validated ${skins.length} skins${checkOnly ? ' (catalog not written)' : ''}`)

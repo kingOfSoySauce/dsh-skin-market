@@ -1,4 +1,5 @@
-import type { CatalogDisplayCopy, CatalogFile, LocalizedSkinCopy, NpmInstallSource, SkinEntry } from './types.ts'
+import { isVersionRange, parseVersion, satisfiesVersionRange } from './semver.ts'
+import type { CatalogDisplayCopy, CatalogFile, InstallPolicy, InstallPolicyResolved, LocalizedSkinCopy, NpmInstallSource, SkinEntry } from './types.ts'
 
 type WireSkinEntry = Omit<SkinEntry, 'install'> & { install: Omit<SkinEntry['install'], 'npm'> }
 
@@ -6,9 +7,12 @@ type WireSkinEntry = Omit<SkinEntry, 'install'> & { install: Omit<SkinEntry['ins
 export interface CatalogWireFile extends Omit<CatalogFile, 'skins'> {
   skins: WireSkinEntry[]
   npmSources?: Record<string, NpmInstallSource>
+  installPolicies?: Record<string, InstallPolicy>
 }
 
 const npmFields = ['name', 'version', 'integrity', 'repository', 'gitHead'] as const
+const policyFields = ['schema', 'mode', 'package', 'range', 'resolved'] as const
+const resolvedFields = ['version', 'commit', 'integrity', 'gitHead', 'observedAt'] as const
 const heatFields = ['ageDays', 'starsPerDay', 'starGrowthPerDay', 'commitsPerDay', 'pullsPerDay', 'issuesPerDay', 'score', 'asOf'] as const
 const heatRates = ['starsPerDay', 'starGrowthPerDay', 'commitsPerDay', 'pullsPerDay', 'issuesPerDay', 'score'] as const
 
@@ -110,6 +114,68 @@ function npmSource(value: unknown, skin: SkinEntry): NpmInstallSource {
   return { name: source.name, version: source.version, integrity: source.integrity, repository: source.repository, gitHead: source.gitHead }
 }
 
+function installPolicySource(value: unknown, skin: SkinEntry): InstallPolicy {
+  if (!isRecord(value)) throw new Error(`invalid install policy for ${skin.id}: must be an object`)
+  if (Object.keys(value).some(key => !policyFields.includes(key as typeof policyFields[number]))) {
+    throw new Error(`invalid install policy for ${skin.id}: unexpected field`)
+  }
+  if (value.schema !== 'install-policy-v1') throw new Error(`invalid install policy schema for ${skin.id}`)
+  if (value.mode !== 'npm' && value.mode !== 'github') throw new Error(`invalid install policy mode for ${skin.id}`)
+  if (typeof value.package !== 'string' || value.package !== skin.package) {
+    throw new Error(`invalid install policy package for ${skin.id}`)
+  }
+  if (value.range !== undefined) {
+    if (typeof value.range !== 'string' || value.range.trim() === 'unverified' || !isVersionRange(value.range)) {
+      throw new Error(`invalid install policy range for ${skin.id}`)
+    }
+  }
+  const resolved = value.resolved
+  if (!isRecord(resolved)) throw new Error(`invalid install policy resolved artifact for ${skin.id}`)
+  if (Object.keys(resolved).some(key => !resolvedFields.includes(key as typeof resolvedFields[number]))) {
+    throw new Error(`invalid install policy resolved artifact for ${skin.id}: unexpected field`)
+  }
+  if (typeof resolved.version !== 'string' || parseVersion(resolved.version) === null) {
+    throw new Error(`invalid install policy version for ${skin.id}`)
+  }
+  if (typeof resolved.commit !== 'string' || !/^[0-9a-f]{40}$/.test(resolved.commit)) {
+    throw new Error(`invalid install policy commit for ${skin.id}`)
+  }
+  if (typeof resolved.observedAt !== 'string' || !Number.isFinite(Date.parse(resolved.observedAt))) {
+    throw new Error(`invalid install policy observedAt for ${skin.id}`)
+  }
+  if (resolved.gitHead !== undefined
+    && (typeof resolved.gitHead !== 'string' || resolved.gitHead.toLowerCase() !== resolved.commit)) {
+    throw new Error(`invalid install policy gitHead for ${skin.id}`)
+  }
+  if (resolved.integrity !== undefined
+    && (typeof resolved.integrity !== 'string' || !/^sha(1|256|384|512)-[A-Za-z0-9+/]+={0,2}$/.test(resolved.integrity))) {
+    throw new Error(`invalid install policy integrity for ${skin.id}`)
+  }
+  if (value.mode === 'npm' && resolved.integrity === undefined) {
+    throw new Error(`missing install policy integrity for ${skin.id}`)
+  }
+  if (value.range !== undefined && !satisfiesVersionRange(resolved.version, value.range)) {
+    throw new Error(`install policy version does not satisfy its range for ${skin.id}`)
+  }
+  return {
+    schema: 'install-policy-v1',
+    mode: value.mode,
+    package: value.package,
+    ...(value.range === undefined ? {} : { range: value.range }),
+    resolved: {
+      version: resolved.version,
+      commit: resolved.commit,
+      ...(resolved.integrity === undefined ? {} : { integrity: resolved.integrity }),
+      ...(resolved.gitHead === undefined ? {} : { gitHead: resolved.gitHead }),
+      observedAt: resolved.observedAt,
+    } as InstallPolicyResolved,
+  }
+}
+
+function sortedRecord<T>(value: Record<string, T>): Record<string, T> {
+  return Object.fromEntries(Object.entries(value).sort(([left], [right]) => left < right ? -1 : left > right ? 1 : 0))
+}
+
 /**
  * Expand the backwards-compatible wire format without mutating its input.
  * This validates the envelope and all npm metadata; callers still validate the
@@ -122,8 +188,9 @@ export function decodeCatalogWire(value: unknown): CatalogFile {
   if (typeof value.generatedAt !== 'string' || !Number.isFinite(Date.parse(value.generatedAt))) throw new Error('catalog generatedAt is invalid')
   if (!Array.isArray(value.skins) || value.skins.length > 5000) throw new Error('catalog skins must be an array of at most 5000 entries')
 
-  const { npmSources, heat, displayCopy, ...catalog } = value
+  const { npmSources, heat, displayCopy, installPolicies, ...catalog } = value
   if (Object.hasOwn(value, 'npmSources') && !isRecord(npmSources)) throw new Error('catalog npmSources must be an object')
+  if (Object.hasOwn(value, 'installPolicies') && !isRecord(installPolicies)) throw new Error('catalog installPolicies must be an object')
   const sources = npmSources as Record<string, unknown> | undefined
   const ids = new Set(value.skins.map(skin => isRecord(skin) ? skin.id : undefined))
   const localizedCopy = Object.hasOwn(value, 'displayCopy') ? displayCopySource(displayCopy, ids) : undefined
@@ -148,11 +215,26 @@ export function decodeCatalogWire(value: unknown): CatalogFile {
     const npm = mapped ?? inline
     return { ...skin, install: { ...skin.install, ...(npm === undefined ? {} : { npm }) } }
   })
+  const policies: Record<string, InstallPolicy> = {}
+  const byId = new Map(skins.map(skin => [skin.id, skin]))
+  for (const [id, policy] of Object.entries((installPolicies ?? {}) as Record<string, unknown>)) {
+    const skin = byId.get(id)
+    // A sliced/partial catalog may carry strays; dropping them mirrors heat
+    // handling and keeps one stray observation from freezing the update.
+    if (skin === undefined) continue
+    try {
+      policies[id] = installPolicySource(policy, skin)
+    } catch {
+      // A single malformed observation must not freeze catalog updates for
+      // every user on a new client; that entry falls back to its v1 install.
+    }
+  }
   return {
     ...catalog,
     skins,
     ...(localizedCopy === undefined ? {} : { displayCopy: localizedCopy }),
     ...(heatEntries.length === 0 ? {} : { heat: Object.fromEntries(heatEntries) }),
+    ...(Object.keys(policies).length === 0 ? {} : { installPolicies: sortedRecord(policies) }),
   } as CatalogFile
 }
 

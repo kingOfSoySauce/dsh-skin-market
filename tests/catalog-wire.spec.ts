@@ -162,3 +162,64 @@ test('keeps localized display names and explicit description omission in the env
   assert.equal(Object.hasOwn(catalog.skins[0], 'name'), false)
   assert.equal(Object.hasOwn(catalog.skins[0], 'description'), false)
 })
+
+function policy(overrides = {}) {
+  return {
+    schema: 'install-policy-v1',
+    mode: 'npm',
+    package: source.name,
+    resolved: {
+      version: '1.2.4',
+      commit: 'b'.repeat(40),
+      integrity: 'sha512-ZGVm',
+      gitHead: 'b'.repeat(40),
+      observedAt: firstTime,
+    },
+    ...overrides,
+  }
+}
+
+test('keeps release observations in the envelope without changing skin entries', () => {
+  const entries = [skin()]
+  const installPolicies = { 'owner.theme': policy() }
+  const withPolicy = buildCatalogWire(entries, { installPolicies, generatedAt: firstTime })
+  const withoutPolicy = buildCatalogWire(entries, { generatedAt: firstTime })
+  assert.deepEqual(withPolicy.skins, withoutPolicy.skins)
+  assert.equal(JSON.stringify(withPolicy.skins).includes('1.2.4'), false)
+  assert.deepEqual(withPolicy.installPolicies, installPolicies)
+  assert.equal(Object.hasOwn(withoutPolicy, 'installPolicies'), false)
+})
+
+test('filters release observations to catalogued ids and sorts them', () => {
+  const entries = [skin('z.theme'), skin('a.theme', null)]
+  const catalog = buildCatalogWire(entries, {
+    generatedAt: firstTime,
+    installPolicies: {
+      'z.theme': policy({ package: source.name }),
+      'gone.theme': policy({ package: source.name }),
+      'a.theme': policy({ package: source.name }),
+    },
+  })
+  assert.deepEqual(Object.keys(catalog.installPolicies), ['a.theme', 'z.theme'])
+})
+
+test('invalidates generatedAt when a release observation changes and stays stable afterwards', () => {
+  const entries = [skin()]
+  const previous = buildCatalogWire(entries, { installPolicies: { 'owner.theme': policy() }, generatedAt: firstTime })
+  const changed = buildCatalogWire(entries, {
+    previous,
+    generatedAt: nextTime,
+    installPolicies: { 'owner.theme': policy({ resolved: { ...policy().resolved, version: '1.2.5' } }) },
+  })
+  assert.equal(changed.generatedAt, nextTime)
+  const stable = buildCatalogWire(entries, { previous: changed, generatedAt: '2026-09-08T02:00:00.000Z', installPolicies: { 'owner.theme': policy({ resolved: { ...policy().resolved, version: '1.2.5' } }) } })
+  assert.equal(stable.generatedAt, nextTime)
+  assert.deepEqual(stable, changed)
+})
+
+test('removes an empty release observation map instead of churning bytes', () => {
+  const entries = [skin()]
+  const previous = { ...buildCatalogWire(entries, { generatedAt: firstTime }), installPolicies: {} }
+  const next = buildCatalogWire(entries, { previous, generatedAt: nextTime })
+  assert.equal(Object.hasOwn(next, 'installPolicies'), false)
+})

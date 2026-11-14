@@ -535,7 +535,7 @@ export function inspectSkinArtifactRisk(profileDir: string, skin: SkinEntry, hos
   const context = createHash('sha256').update(JSON.stringify(stableArtifactValue({
     contract: 'skin-artifact-risk-v1',
     hostKind,
-    reviewed: { id: skin.id, package: skin.package, rowId: skin.rowId, repo: skin.repo, subpath: skin.subpath,
+    reviewed: { id: skin.id, package: skin.package, repo: skin.repo, subpath: skin.subpath,
       install: hostKind === 'desktop' ? { ...webInstall, desktop: desktopTarget } : webInstall,
       compatibility: skin.compatibility },
     artifact, manifest, warnings,
@@ -743,7 +743,7 @@ function localNpmSourceMigration(profileDir: string, skin: SkinEntry, currentSou
     const context = createHash('sha256').update(JSON.stringify(stableArtifactValue({
       contract: 'local-skin-source-migration-v1',
       artifact, manifest, lockfileHash,
-      reviewed: { id: skin.id, package: skin.package, repo: skin.repo, rowId: skin.rowId, subpath: skin.subpath, install: skin.install, review: skin.review, compatibility: skin.compatibility },
+      reviewed: { id: skin.id, package: skin.package, repo: skin.repo, subpath: skin.subpath, install: skin.install, review: skin.review, compatibility: skin.compatibility },
     }))).digest('hex')
     return {
       target: npmInstallTarget(skin)!, currentSource, kind: 'local', currentVersion: artifact.version,
@@ -955,6 +955,50 @@ export function packageLoaderOwnershipAt(packageDirectory: string, packageName: 
 
 export function packageLoaderIdentities(profileDir: string, packageName: string): LoaderIdentity[] {
   return packageLoaderOwnershipAt(packageDir(profileDir, packageName), packageName).rows
+}
+
+/** The sole primary loader id a package declares, or null when ambiguous. */
+export function packagePrimaryLoaderRowId(packageDirectory: string, packageName: string): string | null {
+  const ownership = packageLoaderOwnershipAt(packageDirectory, packageName)
+  if (!ownership.hasBundle) return null
+  const candidates = primaryLoaderCandidates(ownership.rows, packageName)
+  if (candidates.length !== 1) return null
+  return candidates[0]?.id ?? null
+}
+
+/** The authoritative loader id of the artifact currently on disk, if any. */
+export function installedPrimaryLoaderRowId(profileDir: string, skin: SkinEntry): string | null {
+  try {
+    return packagePrimaryLoaderRowId(packageDir(profileDir, skin.package), skin.package)
+  } catch {
+    return null
+  }
+}
+
+/**
+ * Replace a catalog rowId hint with the loader id the installed package declares.
+ *
+ * Catalog rowId stays required on the wire for clients published before this
+ * behavior existed, but the installed artifact is authoritative. Only packages
+ * whose installed source already matches the reviewed entry are considered, so
+ * a stale or foreign dependency never renames a catalog entry.
+ */
+export function reconcileCatalogLoaderIds(profileDir: string, skins: readonly SkinEntry[]): SkinEntry[] {
+  const dependencies = readDependencies(profileDir)
+  let changed = false
+  const reconciled = skins.map(skin => {
+    if (dependencies[skin.package] === undefined) return skin
+    try {
+      if (!installedSkinSourceMatches(profileDir, skin)) return skin
+      const installed = installedPrimaryLoaderRowId(profileDir, skin)
+      if (installed === null || installed === skin.rowId) return skin
+      changed = true
+      return { ...skin, rowId: installed }
+    } catch {
+      return skin
+    }
+  })
+  return changed ? reconciled : skins as SkinEntry[]
 }
 
 function collectInstalledPackageLoaderIdentities(profileDir: string, packageName: string, seen: Set<string>, rows: LoaderIdentity[], parentDirectory?: string): void {

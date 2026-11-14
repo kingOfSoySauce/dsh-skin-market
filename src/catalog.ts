@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import Ajv from 'ajv/dist/2020.js'
 import { decodeCatalogWire, encodeCatalogWire } from './catalog-wire.ts'
+import { applyInstallPolicies, installPolicyEnabled } from './install-policy.ts'
 import { githubInstallTarget, parseGithubTarget } from './install-resolution.ts'
 import { localizedSkinNameRecord } from './localized-copy.ts'
 import { atomicWriteJson } from './profile.ts'
@@ -97,6 +98,8 @@ export interface CatalogStoreOptions {
   refreshIntervalMs?: number
   fetcher?: (url: string, init: RequestInit) => Promise<FetchResponse>
   now?: () => number
+  /** Apply release observations from the catalog envelope. Defaults to DSH_SKIN_MARKET_INSTALL_POLICY=1. */
+  installPolicy?: boolean
 }
 
 function cacheFile(profileDir: string): string { return join(profileDir, '.dsh-skin-market', 'catalog.json') }
@@ -113,9 +116,16 @@ export class CatalogStore {
   private readonly refreshIntervalMs: number
   private readonly fetcher: (url: string, init: RequestInit) => Promise<FetchResponse>
   private readonly now: () => number
+  private readonly installPolicy: boolean
+
+  /** Fold release observations onto entries; disabled keeps the exact v1 catalog. */
+  private accepted(catalog: CatalogFile): CatalogFile {
+    return applyInstallPolicies(catalog, { enabled: this.installPolicy })
+  }
 
   constructor(private readonly profileDir: string, options: CatalogStoreOptions = {}) {
-    const bundled = loadCatalog()
+    this.installPolicy = options.installPolicy ?? installPolicyEnabled()
+    const bundled = this.accepted(loadCatalog())
     this.current = bundled
     this.remoteUrl = options.remoteUrl ?? REMOTE_CATALOG_URL
     this.preferBundled = options.preferBundled ?? process.env[LOCAL_CATALOG_ENV] === '1'
@@ -126,7 +136,7 @@ export class CatalogStore {
     const file = cacheFile(profileDir)
     if (!this.preferBundled && existsSync(file)) {
       try {
-        const cached = validateCatalog(JSON.parse(readFileSync(file, 'utf8')))
+        const cached = this.accepted(validateCatalog(JSON.parse(readFileSync(file, 'utf8'))))
         if (Date.parse(cached.generatedAt) >= Date.parse(bundled.generatedAt)) {
           this.current = cached
           this.source = 'cache'
@@ -163,15 +173,18 @@ export class CatalogStore {
       })
       if (!response.ok) throw new Error(`remote catalog returned HTTP ${response.status}`)
       const remote = validateCatalog(await response.json())
-      const remoteTime = Date.parse(remote.generatedAt)
+      const accepted = this.accepted(remote)
+      const remoteTime = Date.parse(accepted.generatedAt)
       const currentTime = Date.parse(this.current.generatedAt)
       if (remoteTime < currentTime) throw new Error('remote catalog is older than the accepted catalog')
-      if (remoteTime === currentTime && JSON.stringify(remote.skins) !== JSON.stringify(this.current.skins)) {
+      if (remoteTime === currentTime && JSON.stringify(accepted.skins) !== JSON.stringify(this.current.skins)) {
         throw new Error('remote catalog changed without a new generatedAt timestamp')
       }
-      this.current = remote
+      this.current = accepted
       this.source = 'remote'
       this.error = undefined
+      // Cache the wire form, not the resolved one: a later plugin downgrade must
+      // still be able to read the same v1 entries the server published.
       atomicWriteJson(cacheFile(this.profileDir), encodeCatalogWire(remote))
     } catch (error) {
       this.error = errorMessage(error)

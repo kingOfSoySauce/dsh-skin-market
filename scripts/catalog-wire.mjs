@@ -26,11 +26,18 @@ function displayCopyEntry(value) {
  * Old clients strictly validate install fields, but allow catalog extensions.
  * Keep npm metadata outside each skin until a new client decodes the catalog.
  */
-export function buildCatalogWire(skins, { previous, heat, displayCopy, generatedAt = new Date().toISOString() } = {}) {
+export function buildCatalogWire(skins, { previous, heat, displayCopy, installPolicies, generatedAt = new Date().toISOString() } = {}) {
   const sortedSkins = [...skins].sort((left, right) => left.featuredRank - right.featuredRank || byId(left, right))
   const npmSources = Object.fromEntries([...skins].sort(byId)
     .filter(skin => skin.install.npm !== undefined)
     .map(skin => [skin.id, { ...skin.install.npm }]))
+  // Release observations ride in the envelope. Entries themselves stay in the
+  // frozen v1 shape so clients published before this field keep decoding them.
+  const knownSkinIds = new Set(skins.map(skin => skin.id))
+  const policySources = installPolicies === undefined ? undefined : Object.fromEntries(Object.entries(installPolicies)
+    .filter(([id]) => knownSkinIds.has(id))
+    .sort(([left], [right]) => left < right ? -1 : left > right ? 1 : 0)
+    .map(([id, policy]) => [id, { ...policy, resolved: { ...policy.resolved } }]))
   // Momentum lives beside skins[], never inside an entry: published clients
   // validate each skin with a closed schema, while unknown envelope fields are
   // ignored by older versions. Same compatibility rule as npmSources.
@@ -51,15 +58,18 @@ export function buildCatalogWire(skins, { previous, heat, displayCopy, generated
       return { ...skin, install }
     }),
     ...(Object.keys(npmSources).length > 0 ? { npmSources } : {}),
+    ...(policySources !== undefined && Object.keys(policySources).length > 0 ? { installPolicies: policySources } : {}),
     ...(heatSources !== undefined && Object.keys(heatSources).length > 0 ? { heat: heatSources } : {}),
     ...(displayCopySources !== undefined && Object.keys(displayCopySources.skins).length > 0 ? { displayCopy: displayCopySources } : {}),
   }
   // Compare the actual prior wire format. Migrating an inline npm catalog must
-  // invalidate caches, and adding/removing/changing npm metadata must do so too.
+  // invalidate caches, and adding/removing/changing npm or release metadata must
+  // do so too, or old clients would keep using a stale observation.
   const previousPayload = previous && {
     schemaVersion: previous.schemaVersion,
     skins: previous.skins,
     ...(previous.npmSources !== undefined ? { npmSources: previous.npmSources } : {}),
+    ...(previous.installPolicies !== undefined ? { installPolicies: previous.installPolicies } : {}),
     ...(previous.heat !== undefined ? { heat: previous.heat } : {}),
     ...(previous.displayCopy !== undefined ? { displayCopy: previous.displayCopy } : {}),
   }
@@ -71,6 +81,7 @@ export function buildCatalogWire(skins, { previous, heat, displayCopy, generated
     generatedAt,
     skins: payload.skins,
     ...(payload.npmSources ? { npmSources: payload.npmSources } : {}),
+    ...(payload.installPolicies ? { installPolicies: payload.installPolicies } : {}),
     ...(payload.heat ? { heat: payload.heat } : {}),
     ...(payload.displayCopy ? { displayCopy: payload.displayCopy } : {}),
   }

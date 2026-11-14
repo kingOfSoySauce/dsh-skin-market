@@ -127,6 +127,30 @@ export interface SkinHealth {
   scan?: HealthScanSnapshot
 }
 
+/** Exact artifact a release observation resolved to; never a review decision. */
+export interface InstallPolicyResolved {
+  version: string
+  commit: string
+  /** Required for npm policies; the tarball SRI the installer must match. */
+  integrity?: string
+  gitHead?: string
+  observedAt: string
+}
+
+/**
+ * Machine-updated install policy for one catalog entry.
+ *
+ * This lives in the catalog envelope, never inside a skin entry: published
+ * clients validate entries with a closed schema that predates this field.
+ */
+export interface InstallPolicy {
+  schema: 'install-policy-v1'
+  mode: 'npm' | 'github'
+  package: string
+  range?: string
+  resolved: InstallPolicyResolved
+}
+
 export interface CatalogFile {
   schemaVersion: number
   generatedAt: string
@@ -134,6 +158,8 @@ export interface CatalogFile {
   displayCopy?: CatalogDisplayCopy
   /** Continuous per-skin-age heat data; kept outside entries for old-client compatibility. */
   heat?: Record<string, SkinHeat>
+  /** Release observations; kept outside entries so old clients keep using the v1 install fields. */
+  installPolicies?: Record<string, InstallPolicy>
 }
 
 /**

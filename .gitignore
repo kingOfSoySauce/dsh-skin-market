@@ -6,6 +6,7 @@ node_modules/
 coverage/
 .preview/
 dist-site/
+/client/
 downloads/
 design-qa-*.png
 design-qa.md
