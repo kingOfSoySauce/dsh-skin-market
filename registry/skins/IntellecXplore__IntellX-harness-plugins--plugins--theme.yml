@@ -1,0 +1,57 @@
+id: intellecxplore.theme
+name:
+  zh: 智域探金主题
+  en: IntellecXplore Theme
+author: IntellecXplore
+description: "智域探金品牌主题：深蓝 #000057 与电光蓝 #005cff 重绘 14 个语义色 token（明暗成对），配 Sora / Noto Sans SC / PingFang SC 字体栈；侧栏换成 IntellecXplore 字标与 HARNESS 徽标，运行文案改为「智域探金中」，鲸鱼尾巴、favicon 与 PWA 图标一并换成品牌 X 标。"
+repo: https://github.com/IntellecXplore/IntellX-harness-plugins
+subpath: plugins/theme
+package: "@intellecxplore/plugin-theme"
+rowId: intellecxplore-plugin-theme
+category: skin
+tags:
+  - brand
+  - wordmark
+  - palette
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:IntellecXplore/IntellX-harness-plugins#072faaf8e2a004a81b9b78fd7fa49c188806e5c1&path:/plugins/theme
+  version: 1.1.3
+  commit: 072faaf8e2a004a81b9b78fd7fa49c188806e5c1
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1189
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/home.png
+  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/conversation.png
+  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/settings.png

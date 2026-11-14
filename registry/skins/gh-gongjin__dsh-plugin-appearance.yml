@@ -1,0 +1,52 @@
+id: gh.gongjin.dsh.plugin.appearance
+name:
+  zh: 桌面外观
+  en: Desktop Appearance
+author: gh-gongjin
+description: 在设置里加一个「桌面外观」面板：8 套配色（每套 28 个颜色令牌，明暗两档）加一个「不覆盖」，不点就什么都不改。侧栏图标、会话首屏图标和名称行可分别替换：内置六枚标志或上传图片（自动裁方压到 200KB 内），名称行还能用原字标、自定义文字或图片，另有一键全部还原。
+repo: https://github.com/gh-gongjin/dsh-plugin-appearance
+package: dsh-plugin-appearance
+rowId: appearance
+category: skin
+tags:
+  - palette
+  - brand-mark
+  - custom-image
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:gh-gongjin/dsh-plugin-appearance#8cd7d15110dbb674b797d3fd1ccfa5a25c0e3a38
+  version: 0.0.2
+  commit: 8cd7d15110dbb674b797d3fd1ccfa5a25c0e3a38
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/gh-gongjin/dsh-plugin-appearance/8cd7d15110dbb674b797d3fd1ccfa5a25c0e3a38/docs/screenshots/desktop-default-light.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1182
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:10.128Z
+metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+starsUpdatedAt: 2026-11-14T06:29:10.128Z
+updatedAt: 2026-11-14T06:29:10.128Z
+listScreenshot: https://raw.githubusercontent.com/gh-gongjin/dsh-plugin-appearance/8cd7d15110dbb674b797d3fd1ccfa5a25c0e3a38/docs/screenshots/desktop-default-light.png

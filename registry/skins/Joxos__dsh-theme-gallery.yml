@@ -1,0 +1,56 @@
+id: joxos.dsh.theme.gallery
+name:
+  zh: 视觉风格库
+  en: Style Gallery
+author: Joxos
+description: 在左侧栏加一个「视觉风格」入口，打开画廊页即可给整个应用换肤：像素街机（零圆角、等宽字体、高对比街机色）与极光絮语（近透明玻璃、不透明输入区、缓慢漂移的极光）。两种风格各有明暗两套色板并跟随系统明暗，选「恢复原生」即可整层移除。
+repo: https://github.com/Joxos/dsh-theme-gallery
+package: "@joxos/dsh-theme-gallery"
+rowId: dsh-theme-gallery
+category: skin
+tags:
+  - gallery
+  - pixel
+  - aurora
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Joxos/dsh-theme-gallery#54e3b635f72a22507f092850cae41c50d9b47b60
+  version: 1.0.1
+  commit: 54e3b635f72a22507f092850cae41c50d9b47b60
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1193
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/home.png
+  - skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/conversation.png
+  - skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/settings.png

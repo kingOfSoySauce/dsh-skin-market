@@ -1,0 +1,54 @@
+id: azumaki.art.dsh.skin.qwen
+name:
+  zh: 千问花语
+  en: QWEN Blossom
+author: azumaki-art
+description: 浅色是宣纸淡蓝配花枝与汉服人物，深色换成月夜亭台与靛蓝金灯；切换明暗时两幅画作自动交叉淡化，面板覆一层半透明宣纸或夜帷，输入卡与弹窗四角带回纹角花和靛金双线边框。
+repo: https://github.com/azumaki-art/dsh-skin-QWEN
+package: "@dsh-external/dsh-client-ui-skin-qwen-blossom"
+rowId: ui-skin-qwen-blossom
+category: skin
+tags:
+  - chinese-style
+  - illustrated
+  - dual-theme
+  - xuan-paper
+modes:
+  - light
+  - dark
+install:
+  target: github:azumaki-art/dsh-skin-QWEN#c83688b8fdb69261d93f490667a78c685f410d0d
+  version: 0.1.0
+  commit: c83688b8fdb69261d93f490667a78c685f410d0d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/azumaki-art/dsh-skin-QWEN/c83688b8fdb69261d93f490667a78c685f410d0d/preview/preview-light.png
+  - https://raw.githubusercontent.com/azumaki-art/dsh-skin-QWEN/c83688b8fdb69261d93f490667a78c685f410d0d/preview/preview-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1178
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:10.128Z
+metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+starsUpdatedAt: 2026-11-14T06:29:10.128Z
+updatedAt: 2026-11-14T06:29:10.128Z
+listScreenshot: https://raw.githubusercontent.com/azumaki-art/dsh-skin-QWEN/c83688b8fdb69261d93f490667a78c685f410d0d/preview/preview-light.png

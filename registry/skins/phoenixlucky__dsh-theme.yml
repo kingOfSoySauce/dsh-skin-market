@@ -1,0 +1,56 @@
+id: phoenixlucky.dsh.theme
+name:
+  zh: WJ Dreamlight 主题
+  en: WJ Dreamlight Themes
+author: phoenixlucky
+description: 设置里新增「主题与壁纸」，列出 8 套壁纸主题：VIP 金辉、端午、清明、七夕、元宵、中秋、万圣夜和圣诞，点卡片先预览再应用。侧栏与对话区各有 0–100% 背景透明度滑块，VIP 主题另带金色点缀、玻璃表面和内置展示字体，也能自填名称、图片地址、强调色与明暗底添加自定义主题。
+repo: https://github.com/phoenixlucky/dsh-theme
+package: "@tinyforge/dsh-theme"
+rowId: dsh-theme
+category: skin
+tags:
+  - wallpaper
+  - festival
+  - vip
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:phoenixlucky/dsh-theme#e36ce4e4f48c05a08adf396c29818d56cde152d2
+  version: 1.1.0
+  commit: e36ce4e4f48c05a08adf396c29818d56cde152d2
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dsh-theme-preview.webp
+  - https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dsh-theme-gallery-preview.webp
+  - https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/vip-dream.wallpaper.webp
+  - https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dragon-boat-festival.wallpaper.webp
+  - https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/qingming-festival.wallpaper.webp
+  - https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/qixi-festival.wallpaper.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1183
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:10.128Z
+metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+starsUpdatedAt: 2026-11-14T06:29:10.128Z
+updatedAt: 2026-11-14T06:29:10.128Z
+listScreenshot: https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dsh-theme-preview.webp

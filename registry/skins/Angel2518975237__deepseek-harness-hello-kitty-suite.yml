@@ -1,0 +1,53 @@
+id: angel2518975237.deepseek.harness.hello.kitty.suite
+name:
+  zh: Hello Kitty 甜心工作台
+  en: Hello Kitty Sweetheart Workspace
+author: Angel2518975237
+description: 把工作台换成粉色 Hello Kitty 主题：浅色版用奶油白、贝壳粉和玫瑰粉，深色版用深莓果色；会话头换字标，输入框加蝴蝶结和兔子杯，侧栏放坐姿 Kitty，对话区铺菱格、爱心和星星纹样。附带提醒插件：一轮对话结束或模型以提问收尾时弹卡片提醒，页面切走则发系统通知。
+repo: https://github.com/Angel2518975237/deepseek-harness-hello-kitty-suite
+package: deepseek-harness-hello-kitty-suite
+rowId: hello-kitty-notifier
+category: skin
+tags:
+  - hello-kitty
+  - pink
+  - cute
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Angel2518975237/deepseek-harness-hello-kitty-suite#1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818
+  version: 1.0.1
+  commit: 1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Angel2518975237/deepseek-harness-hello-kitty-suite/1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818/docs/screenshots/preview.png
+  - https://raw.githubusercontent.com/Angel2518975237/deepseek-harness-hello-kitty-suite/1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818/docs/screenshots/preview-toast.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1177
+starsSnapshot: 21
+releaseUpdatedAt: 2026-11-14T06:29:10.128Z
+metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+starsUpdatedAt: 2026-11-14T06:29:10.128Z
+updatedAt: 2026-11-14T06:29:10.128Z
+listScreenshot: https://raw.githubusercontent.com/Angel2518975237/deepseek-harness-hello-kitty-suite/1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818/docs/screenshots/preview.png

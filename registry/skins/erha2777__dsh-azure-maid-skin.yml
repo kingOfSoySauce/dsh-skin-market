@@ -1,0 +1,55 @@
+id: erha2777.dsh.azure.maid.skin
+name:
+  zh: 蓝瓷女仆
+  en: Azure Maid
+author: erha2777
+description: 深蓝发色做品牌与按钮，冷白蕾丝做正文与画布，青宝石色给链接和强调；90 个语义色各分亮暗两档，设置页可切亮色、暗色或跟随系统，跟随系统时随系统深浅实时换档。
+repo: https://github.com/erha2777/dsh-azure-maid-skin
+package: dsh-azure-maid-skin
+rowId: dsh-azure-maid-skin
+category: skin
+tags:
+  - blue
+  - dual-theme
+  - follow-system
+  - minimal
+modes:
+  - light
+  - dark
+install:
+  target: github:erha2777/dsh-azure-maid-skin#f45e9e0768e46e627c23217fb92ae1a0bf1b4914
+  version: 1.0.0
+  commit: f45e9e0768e46e627c23217fb92ae1a0bf1b4914
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/erha2777/dsh-azure-maid-skin/f45e9e0768e46e627c23217fb92ae1a0bf1b4914/preview/light1.png
+  - https://raw.githubusercontent.com/erha2777/dsh-azure-maid-skin/f45e9e0768e46e627c23217fb92ae1a0bf1b4914/preview/dark1.png
+  - https://raw.githubusercontent.com/erha2777/dsh-azure-maid-skin/f45e9e0768e46e627c23217fb92ae1a0bf1b4914/preview/light2.png
+  - https://raw.githubusercontent.com/erha2777/dsh-azure-maid-skin/f45e9e0768e46e627c23217fb92ae1a0bf1b4914/preview/dark2.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1180
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:10.128Z
+metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+starsUpdatedAt: 2026-11-14T06:29:10.128Z
+updatedAt: 2026-11-14T06:29:10.128Z
+listScreenshot: https://raw.githubusercontent.com/erha2777/dsh-azure-maid-skin/f45e9e0768e46e627c23217fb92ae1a0bf1b4914/preview/light1.png

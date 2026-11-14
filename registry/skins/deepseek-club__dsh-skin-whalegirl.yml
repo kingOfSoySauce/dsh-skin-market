@@ -1,0 +1,56 @@
+id: deepseek.club.dsh.skin.whalegirl
+name:
+  zh: 小深·鲸鱼娘
+  en: Xiaoshen Whale-girl
+author: deepseek-club
+description: "换上一张 3D 鲸鱼跃过科技环的对话背景，右侧鲸鱼、左侧留白给文字，亮暗两套自动切换。界面用科技蓝 #3d8bfd、深海蓝与陶瓷白的覆盖层重上色，对话区左下角挂一张社区角色形象（深色模式下自动隐藏），侧栏加四角刻度，图标换成蓝色 ∞ 标志，素材全部内嵌、不依赖网络。"
+repo: https://github.com/deepseek-club/dsh-skin-whalegirl
+package: "@dsh-external/dsh-client-ui-skin-xiaoshen-whale-girl"
+rowId: ui-skin-xiaoshen-whale-girl
+category: skin
+tags:
+  - whale
+  - tech
+  - character
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:deepseek-club/dsh-skin-whalegirl#0ff0afb9f960c77e1368c2ab03f425c1b9b6952d
+  version: 0.1.0
+  commit: 0ff0afb9f960c77e1368c2ab03f425c1b9b6952d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1191
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/home.png
+  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/conversation.png
+  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/settings.png

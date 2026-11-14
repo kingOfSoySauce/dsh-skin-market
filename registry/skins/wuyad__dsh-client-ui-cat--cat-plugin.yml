@@ -1,0 +1,56 @@
+id: wuyad.cat.plugin
+name:
+  zh: 漫游小猫
+  en: Wandering Tabby Cat
+author: wuyad
+description: 一只虎斑小猫在界面上游荡：沿段落、标题、卡片和按钮的上沿行走，跳上平台、闻一闻、打盹，偶尔瞬移或从边沿摔下去后自己恢复。点一下可以撸猫，右键切换橘猫、白猫、奶牛猫、黑猫、灰猫、暹罗猫六种皮肤并记住选择；它偶尔会留下便便，点掉即可清除。
+repo: https://github.com/wuyad/dsh-client-ui-cat
+subpath: cat-plugin
+package: dsh-client-ui-cat
+rowId: ui-cat
+category: pet
+tags:
+  - cat
+  - pet
+  - animated
+modes:
+  - light
+  - dark
+install:
+  target: github:wuyad/dsh-client-ui-cat#82afc31696ad6cbade29f8cdda313d7cfb32a144&path:/cat-plugin
+  version: 0.1.21
+  commit: 82afc31696ad6cbade29f8cdda313d7cfb32a144
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1198
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/home.png
+  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/conversation.png
+  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/settings.png

@@ -1,0 +1,56 @@
+id: raheemmiyasin.dsh.theme.palette
+name:
+  zh: 主题配色
+  en: Theme Palette
+author: raheemmiyasin
+description: 在「设置 → 通用」加一行主题配色，共 9 个选项：默认、海洋蓝、森林绿、暖橙、紫罗兰、玫红、暖沙、Obsidian 近黑，以及赛博朋克——后者会在面板后铺一层霓虹 HUD 网格背景并换上专属渐变标志。配色只改颜色，明暗仍由「外观」那一行决定，选择会被记住。
+repo: https://github.com/raheemmiyasin/dsh-theme-palette
+package: "@local/dsh-theme-palette"
+rowId: theme-palette
+category: skin
+tags:
+  - palette
+  - cyberpunk
+  - neon
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:raheemmiyasin/dsh-theme-palette#b0486fdea6f97fbe559414e044af42b50b5b9e47
+  version: 1.0.0
+  commit: b0486fdea6f97fbe559414e044af42b50b5b9e47
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1196
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/home.png
+  - skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/conversation.png
+  - skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/settings.png

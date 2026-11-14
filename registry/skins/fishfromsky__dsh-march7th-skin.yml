@@ -1,0 +1,53 @@
+id: fishfromsky.dsh.march7th.skin
+name:
+  zh: 三月七主题
+  en: March 7th Theme
+author: fishfromsky
+description: 把界面换成《崩坏：星穹铁道》三月七的蓝粉配色，明暗两套主题一起覆盖。对话背景、侧栏、设置页头、输入卡片与两侧角色立绘都换成随包素材，并重设对话滚动容器，输入框不再遮住正在阅读的消息；停用后挂载的样式与属性全部还原。
+repo: https://github.com/fishfromsky/dsh-march7th-skin
+package: dsh-march7th-skin
+rowId: march7th-skin
+category: skin
+tags:
+  - honkai
+  - march7th
+  - blue-pink
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:fishfromsky/dsh-march7th-skin#534b05b6388b745113f955c3efe017b7aad84682
+  version: 0.3.0
+  commit: 534b05b6388b745113f955c3efe017b7aad84682
+compatibility:
+  dsh: ^0.0.1-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/main.png
+  - https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/dialog.png
+  - https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1181
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:10.128Z
+metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+starsUpdatedAt: 2026-11-14T06:29:10.128Z
+updatedAt: 2026-11-14T06:29:10.128Z
+listScreenshot: https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/main.png

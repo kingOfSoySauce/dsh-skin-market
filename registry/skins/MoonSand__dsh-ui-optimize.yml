@@ -1,0 +1,57 @@
+id: moonsand.dsh.ui.optimize
+name:
+  zh: 界面优化
+  en: UI Optimize
+author: MoonSand
+description: 一组各自独立的开关：8 套极简主题（青瓷、亚麻、奶油、石墨、靛蓝、雾蓝、苔绿、玫瑰，每套带明暗两版配色）给整套界面上色，侧栏面板行收成一个可搜索、可用键盘操作的双列启动器，桌面端侧栏底部还有刷新界面与重启两个按钮。插件页另带更新标签页，只安装发布满 24 小时的版本，并跳过与当前版本不兼容的发布。
+repo: https://github.com/MoonSand/dsh-ui-optimize
+package: "@moonsand/dsh-ui-optimize"
+rowId: dsh-ui-optimize
+category: skin
+tags:
+  - themes
+  - minimalist
+  - sidebar
+  - presets
+modes:
+  - light
+  - dark
+install:
+  target: github:MoonSand/dsh-ui-optimize#3292f89a0b7a427955fa32657a423a262663648e
+  version: 0.11.10
+  commit: 3292f89a0b7a427955fa32657a423a262663648e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1194
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/home.png
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/conversation.png
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/settings.png

@@ -1,0 +1,55 @@
+id: au1314.dsh.style.hub
+name:
+  zh: 风格工坊
+  en: Style Hub
+author: Au1314
+description: 「插件 → Style Hub」卡片里挑配色：Nord、Dracula、Mocha、Tokyo Night 等 8 套预设，或选 Stock 保持不变；可调强调色与面板不透明度，能上传自己的壁纸（最大 15MB），分别设置铺法、不透明度、模糊和暗化，关闭总开关恢复原样。
+repo: https://github.com/Au1314/dsh-style-hub
+package: dsh-style-hub
+rowId: dsh-style-hub
+category: skin
+tags:
+  - presets
+  - wallpaper
+  - accent
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Au1314/dsh-style-hub#1136d18cb2b06552af8be74d72affe51282b3e86
+  version: 0.1.0
+  commit: 1136d18cb2b06552af8be74d72affe51282b3e86
+compatibility:
+  dsh: ">=0.1.5-rc.2 <0.2.0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-card.png
+  - https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-settings.png
+  - https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-wallpaper.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1176
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:10.128Z
+metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+starsUpdatedAt: 2026-11-14T06:29:10.128Z
+updatedAt: 2026-11-14T06:29:10.128Z
+listScreenshot: https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-card.png

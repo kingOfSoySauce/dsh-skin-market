@@ -1,0 +1,52 @@
+id: xq.zheng.dsh.zhangxuefeng.skin
+name:
+  zh: 张雪峰壁纸皮肤
+  en: Zhang Xuefeng Wallpaper
+author: XQ-zheng
+description: 一张 1920×1080 固定壁纸铺满界面，人物从半透明磨砂层里透出，面板走深色暖调、强调色取 AC 米兰红；在外观皮肤里一键选用，也能切回浅色、深色或跟随系统。
+repo: https://github.com/XQ-zheng/dsh-zhangxuefeng-skin
+subpath: plugins/dsh-zhangxuefeng-skin
+package: dsh-client-zhangxuefeng-skin
+rowId: zhangxuefeng-skin
+category: skin
+tags:
+  - wallpaper
+  - character
+  - dark
+  - warm
+modes:
+  - dark
+install:
+  target: github:XQ-zheng/dsh-zhangxuefeng-skin#1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431&path:/plugins/dsh-zhangxuefeng-skin
+  version: 0.1.3
+  commit: 1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/XQ-zheng/dsh-zhangxuefeng-skin/1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431/plugins/dsh-zhangxuefeng-skin/docs/preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 1186
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:10.128Z
+metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+starsUpdatedAt: 2026-11-14T06:29:10.128Z
+updatedAt: 2026-11-14T06:29:10.128Z
+listScreenshot: https://raw.githubusercontent.com/XQ-zheng/dsh-zhangxuefeng-skin/1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431/plugins/dsh-zhangxuefeng-skin/docs/preview.png

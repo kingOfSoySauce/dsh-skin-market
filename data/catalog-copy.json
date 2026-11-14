@@ -12083,6 +12083,420 @@
       },
       "override": true,
       "nameSource": "pinned README + maintainer copy review"
+    },
+    "angel2518975237.deepseek.harness.hello.kitty.suite": {
+      "name": {
+        "zh": "Hello Kitty 甜心工作台",
+        "en": "Hello Kitty Sweetheart Workspace"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把工作台换成粉色 Hello Kitty 主题：浅色版用奶油白、贝壳粉和玫瑰粉，深色版用深莓果色；会话头换字标，输入框加蝴蝶结和兔子杯，侧栏放坐姿 Kitty，对话区铺菱格、爱心和星星纹样。附带提醒插件：一轮对话结束或模型以提问收尾时弹卡片提醒，页面切走则发系统通知。",
+        "en": "Recolors the workspace in Hello Kitty pinks — cream, shell pink and rose for light mode, deep berry for dark — with a session wordmark, a bow and bunny cup on the composer, a sitting Kitty in the sidebar and diamond-heart-star patterns in the conversation, while keeping semantic state colors. A bundled notifier pops a pink card and chime at the end of a turn (or when the model ends on a question), and sends a system notification when the page is in the background."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "836591c1827f0d986c1a49422d7bfe793f0ccd2a7b31b14467fdc296dfb6ae4d",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "au1314.dsh.style.hub": {
+      "name": {
+        "zh": "风格工坊",
+        "en": "Style Hub"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "「插件 → Style Hub」卡片里挑配色：Nord、Dracula、Mocha、Tokyo Night 等 8 套预设，或选 Stock 保持不变；可调强调色与面板不透明度，能上传自己的壁纸（最大 15MB），分别设置铺法、不透明度、模糊和暗化，关闭总开关恢复原样。",
+        "en": "Adds a Style Hub card under Plugins with eight preset palettes (Nord, Dracula, Mocha, Tokyo Night, Gruvbox, Solarized, GitHub Light, Latte) plus Stock, which leaves Appearance untouched. It also adds a brand accent, a panel-opacity slider and a wallpaper library for your own PNG/JPEG/WebP images with fit, opacity, blur and dim controls."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "7a21edaf3e4bfbc8785af40c570866f245d8d5aa69314224bddde0fcd6bcb5d6",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "azumaki.art.dsh.skin.qwen": {
+      "name": {
+        "zh": "千问花语",
+        "en": "QWEN Blossom"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "浅色是宣纸淡蓝配花枝与汉服人物，深色换成月夜亭台与靛蓝金灯；切换明暗时两幅画作自动交叉淡化，面板覆一层半透明宣纸或夜帷，输入卡与弹窗四角带回纹角花和靛金双线边框。",
+        "en": "A two-mode classical skin: pale xuan-paper blue with blossom branches and a hanfu figure in light, a moonlit pavilion over indigo night with gold lamps in dark. Panels take a translucent paper or night-veil layer, and the composer, cards and dialogs carry fret-pattern corner ornaments with indigo-and-gold double borders."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "c0bac4629322d5dcfc2900981f8ff8cae4355b9d673b0ac90cf4e217e2676bf3",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "bauerelizabeth07139.mdsm": {
+      "name": {
+        "zh": "MDSM 吉祥物",
+        "en": "MDSM Mascot Layer"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把随包附带的 16:9 角色画铺成不可点击的整页背景，在 MDSM 设置页里调界面不透明度（25–100%）、壁纸模糊（0–24px）、遮罩浓度（0–90%，深色主题用黑、浅色用白）和壁纸位置。侧栏与会话首屏的标志可换成同一张方形头像，浏览器标签页图标也跟着换，保存后即时生效。",
+        "en": "Wears the bundled 16:9 mascot artwork as a fixed, click-through background with live controls for surface opacity (25–100%), wallpaper blur (0–24 px), a scheme-matched scrim (0–90%) and position. The same square avatar can replace the sidebar and conversation marks and the tab icon."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "cf78e70e3b1d2f5e199f6d03a6ab66619e889adec493b32560843595ca7fb1a0",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "erha2777.dsh.azure.maid.skin": {
+      "name": {
+        "zh": "蓝瓷女仆",
+        "en": "Azure Maid"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "深蓝发色做品牌与按钮，冷白蕾丝做正文与画布，青宝石色给链接和强调；90 个语义色各分亮暗两档，设置页可切亮色、暗色或跟随系统，跟随系统时随系统深浅实时换档。",
+        "en": "Deep-blue hair tones drive brand and buttons, cool lace white carries text and canvas, and a teal gemstone accent marks links. All 90 semantic tokens ship a light and a dark value, switchable from the settings page — including a follow-system mode that repaints live."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "cfbcb7b6c61101f246d5c6f6abb9a2fe48f4826eb7a3a279dbdd7a77cb05c180",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "fishfromsky.dsh.march7th.skin": {
+      "name": {
+        "zh": "三月七主题",
+        "en": "March 7th Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把界面换成《崩坏：星穹铁道》三月七的蓝粉配色，明暗两套主题一起覆盖。对话背景、侧栏、设置页头、输入卡片与两侧角色立绘都换成随包素材，并重设对话滚动容器，输入框不再遮住正在阅读的消息；停用后挂载的样式与属性全部还原。",
+        "en": "Repaints the interface in March 7th's blue-and-pink palette across both light and dark schemes, swapping in bundled art for the chat background, sidebar, settings header, composer and both side characters. It also reworks the chat scroll container so the composer stops covering the message you are reading, and removes every style and attribute when disabled."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "f9aefdcaa6b951e18445c75fb86f5c76c5bf2e23173345f2246455e7757b112c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "gh.gongjin.dsh.plugin.appearance": {
+      "name": {
+        "zh": "桌面外观",
+        "en": "Desktop Appearance"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在设置里加一个「桌面外观」面板：8 套配色（每套 28 个颜色令牌，明暗两档）加一个「不覆盖」，不点就什么都不改。侧栏图标、会话首屏图标和名称行可分别替换：内置六枚标志或上传图片（自动裁方压到 200KB 内），名称行还能用原字标、自定义文字或图片，另有一键全部还原。",
+        "en": "Adds a Desktop Appearance panel in Settings with eight palettes (28 color tokens each, including four sidebar-specific ones, in light and dark) plus No override, and nothing changes until you pick one. The sidebar mark, conversation-hero mark and name row can each be swapped for one of six built-in marks or your own image, cropped square and capped at 200 KB, while the name row also takes the original wordmark, custom text or a picture; one button restores everything."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "484159d602a20d7915429e728f9b0af2cd0fc0bf75fd9229e8b3832dd1c86165",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "phoenixlucky.dsh.theme": {
+      "name": {
+        "zh": "WJ Dreamlight 主题",
+        "en": "WJ Dreamlight Themes"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "设置里新增「主题与壁纸」，列出 8 套壁纸主题：VIP 金辉、端午、清明、七夕、元宵、中秋、万圣夜和圣诞，点卡片先预览再应用。侧栏与对话区各有 0–100% 背景透明度滑块，VIP 主题另带金色点缀、玻璃表面和内置展示字体，也能自填名称、图片地址、强调色与明暗底添加自定义主题。",
+        "en": "Adds a Themes & wallpaper settings page listing eight wallpaper themes — VIP Golden Radiance, Dragon Boat Festival, Qingming, Qixi, Lantern Festival, Mid-Autumn, Halloween Night and Christmas Snowglow — with a preview before applying. Sidebar and conversation transparency get separate 0–100% sliders, VIP styling adds gold accents, glass surfaces and a bundled display font, and a custom-theme editor takes a name, image URL, accent color and light/dark base."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "3a1bb8425269f099cef5c589f5ba1faee4d6961e2e789289954568f95c717ff2",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ury479.dsh.wukong.zenfire": {
+      "name": {
+        "zh": "悟空 · 炼心之境",
+        "en": "Wukong Zenfire"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "赤焰、鎏金与灵台青光三色构成：左侧导航与右侧文件、终端、浏览器面板统一为深墨褐高对比表面，选中项用暖金底色与火焰侧线，细边框走赤金到青的过渡。",
+        "en": "A Wukong-themed dark look in crimson flame, gilded gold and a cool cyan spirit-light: navigation and the file, terminal and browser panels share high-contrast ink-brown surfaces, with warm-gold selection, flame side-lines and hairline crimson-to-cyan borders."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "259755a186cf38726415edc651c05a099d8cae9fd7cf609e532b7b6c5a36b39c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "wenyixiaoqingnian.ds.mobile.skin": {
+      "name": {
+        "zh": "移动端 App 外观",
+        "en": "Mobile App Look"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在手机视口（≤768px）把界面改成扁平、App 化的外观：品牌蓝 #4D6BFE、可拖动并自动贴边的 ☰ 悬浮菜单球（记住位置）、输入栏附件上传按钮、切换会话时自动收起键盘，菜单和弹层贴在触发按钮上方。所有改动只在窄屏生效，桌面端保持原样。",
+        "en": "Turns the layout into a flat, app-like mobile look at ≤768 px: brand blue #4D6BFE, a draggable ☰ menu ball that snaps to the edge and remembers its position, an attachment button in the composer, automatic keyboard dismissal when switching sessions, and popovers anchored above their trigger. Everything is scoped to narrow viewports, so desktop stays untouched."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "e740ddda2595b92e72fc813f2c4d72b9706ab4da67cd0913ab68efe6695255e6",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "xq.zheng.dsh.zhangxuefeng.skin": {
+      "name": {
+        "zh": "张雪峰壁纸皮肤",
+        "en": "Zhang Xuefeng Wallpaper"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一张 1920×1080 固定壁纸铺满界面，人物从半透明磨砂层里透出，面板走深色暖调、强调色取 AC 米兰红；在外观皮肤里一键选用，也能切回浅色、深色或跟随系统。",
+        "en": "A fixed 1920×1080 wallpaper fills the interface, its figure showing through a translucent frosted layer, with warm dark panels and AC Milan red accents. Pick it from the appearance-skin list, or step back to the stock light, dark or follow-system look."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "740059c3f10b406ef6e9f7cc01c19bc2bbc0b2f1a633ca07307fec62221ed7a8",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "age10.moyu.dsh.adiv.theme": {
+      "name": {
+        "zh": "A\\ 主题",
+        "en": "A\\ Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "羊皮纸暖调主题：米白纸面、焦橙强调色、环形描边阴影，内容标题用衬线体、界面框架保持无衬线，明暗两套配色都不带冷蓝灰。安装即生效，没有设置项或开关，停用插件行即可关闭。",
+        "en": "A warm parchment theme: paper-toned canvas, burnt-orange accent, ring-based shadows, serif content headings over sans UI chrome, and light and dark palettes with no cool blue-greys. There is no settings row or toggle — installing the bundle is the switch, and disabling the patch row turns it off."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "c955d17868c61fbb67bd656c3d945261d5977a77f10008de7d66defc58b6d1d5",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "columbla.dsh.columbina.theme.sn": {
+      "name": {
+        "zh": "哥伦比娅主题 · 补丁版",
+        "en": "Columbina Theme — Patch Edition"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "月隐银蓝的毛玻璃皮肤：背景图可上传并调模糊（0–40px）与清晰度，主视觉头像、欢迎页标题与正文都能在面板里改；另带可编辑的哥伦比娅人格、表情包与「主题主权」开关，开启后会停用同源的另一套哥伦比娅主题。",
+        "en": "A moonlit silver-blue glassmorphism skin with an editable Columbina persona: upload background images and tune blur (0–40px) and clarity, and edit the hero avatar, title and welcome copy from the panel. A theme-takeover switch disables the rival Columbina theme while it is on."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "1d4642fc7437e0d1f1a6b509de031e214d28d5fbefcb2a336b93793dc8fc583a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "intellecxplore.theme": {
+      "name": {
+        "zh": "智域探金主题",
+        "en": "IntellecXplore Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "智域探金品牌主题：深蓝 #000057 与电光蓝 #005cff 重绘 14 个语义色 token（明暗成对），配 Sora / Noto Sans SC / PingFang SC 字体栈；侧栏换成 IntellecXplore 字标与 HARNESS 徽标，运行文案改为「智域探金中」，鲸鱼尾巴、favicon 与 PWA 图标一并换成品牌 X 标。",
+        "en": "The IntellecXplore brand theme: deep blue #000057 and electric blue #005cff across 14 semantic tokens in light and dark, with a Sora / Noto Sans SC / PingFang SC type stack. It swaps the sidebar to the IntellecXplore wordmark and HARNESS badge, changes the running label to 智域探金中, and replaces the whale tail, favicon and PWA icons with the brand X mark."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "22ffa2e816b45507537602dbc8e88526c4c3cd3ca067285ee1448389b774de8a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "tal.shin.glass.theme": {
+      "name": {
+        "zh": "玻璃主题",
+        "en": "Glass Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "整套外观打包：配色、玻璃材质、圆角与字体、动效四组可分别关掉；玻璃有清透 / 标准 / 沉稳三档，开启折射透镜后输入框、顶栏控件与菜单变成液态玻璃，聚焦时边缘亮起一道细光，按下有回弹。设置页会自检界面结构，指出与当前版本对不上的部分。",
+        "en": "The shell's whole look in one bundle: colour, glass material, corners and type, and motion, each switchable on its own. Glass comes in Clear, Standard and Calm presets, and with refraction on the composer, header controls and menus turn into liquid glass that lights up along the rim on focus and springs back on press; the settings page checks the shell parts it relies on and names any mismatch."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b1fc9f8833f0a087ffb0b0194ad59395b5ae7c9a1c53bc197c3f523368620232",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "deepseek.club.dsh.skin.whalegirl": {
+      "name": {
+        "zh": "小深·鲸鱼娘",
+        "en": "Xiaoshen Whale-girl"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "换上一张 3D 鲸鱼跃过科技环的对话背景，右侧鲸鱼、左侧留白给文字，亮暗两套自动切换。界面用科技蓝 #3d8bfd、深海蓝与陶瓷白的覆盖层重上色，对话区左下角挂一张社区角色形象（深色模式下自动隐藏），侧栏加四角刻度，图标换成蓝色 ∞ 标志，素材全部内嵌、不依赖网络。",
+        "en": "Puts a 3D whale leaping through a tech ring behind the conversation — whale on the right, open space for text on the left — with automatic light and dark variants. A tech-blue (#3d8bfd), deep-blue and ceramic-white overlay recolors the interface, a community character sits at the bottom-left of the chat and hides in dark mode, the sidebar gets corner ticks, and the favicon becomes a blue ∞ mark; all artwork is embedded."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "25a81ad7961cd687ec879d28d2d11664d3d3f18433feccf9d359c29805a57040",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "huangyuanhu3.dev.dsh.chat.skin": {
+      "name": {
+        "zh": "聊天外观工坊",
+        "en": "Chat Skin Studio"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "给聊天区换背景：8 套内置氛围，或自定义渐变、纯色、图片与本地壁纸；遮罩深浅、模糊、铺法可调，也能把壁纸铺到整个界面，让侧栏与设置页共用同一套毛玻璃。另有 CSS 动画、字体、emoji 头像与运行图标，设置页和右上角 🎨 快捷面板都能改，调整实时生效并保存在本机。",
+        "en": "Re-skins the chat area with eight built-in atmospheres or your own gradient, solid colour, image or local wallpaper, with adjustable scrim depth, blur and tiling; a whole-interface mode shares one frosted material across sidebar and settings. CSS animations, fonts, emoji avatars and the running icon are editable from the settings page or the 🎨 quick panel, and changes apply live and persist locally."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "48997a14add2fcbe61c1568865a1dff135bd88a379cefc911a1fa4a4339699c0",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "joxos.dsh.theme.gallery": {
+      "name": {
+        "zh": "视觉风格库",
+        "en": "Style Gallery"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在左侧栏加一个「视觉风格」入口，打开画廊页即可给整个应用换肤：像素街机（零圆角、等宽字体、高对比街机色）与极光絮语（近透明玻璃、不透明输入区、缓慢漂移的极光）。两种风格各有明暗两套色板并跟随系统明暗，选「恢复原生」即可整层移除。",
+        "en": "Adds a Visual style entry to the sidebar that opens a gallery page for re-skinning the whole app: Pixel Arcade (zero corner radius, monospace type, high-contrast arcade palette) and Aurora Whispers (near-transparent glass, opaque composer, drifting aurora blobs). Each style carries light and dark palettes that follow the system scheme, and Use native removes the active layer."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "7d43b86d00734ce91a362d02388dbb9c73e149989125b3beee4d707b94c3de33",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "moonsand.dsh.ui.optimize": {
+      "name": {
+        "zh": "界面优化",
+        "en": "UI Optimize"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一组各自独立的开关：8 套极简主题（青瓷、亚麻、奶油、石墨、靛蓝、雾蓝、苔绿、玫瑰，每套带明暗两版配色）给整套界面上色，侧栏面板行收成一个可搜索、可用键盘操作的双列启动器，桌面端侧栏底部还有刷新界面与重启两个按钮。插件页另带更新标签页，只安装发布满 24 小时的版本，并跳过与当前版本不兼容的发布。",
+        "en": "A set of independent switches: eight minimalist themes (Celadon, Linen, Cream, Graphite, Indigo, Slate, Sage, Rose) that recolour the whole interface in light and dark, sidebar panel rows that fold into a searchable, keyboard-driven two-column launcher, and desktop-only reload/restart buttons at the sidebar foot. An Updates tab installs only releases published at least 24 hours ago and skips ones the running version marks incompatible."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "aac4c6f71d0be7538f003f80b54008f970a6b24e57e5b86f06068ba5d125886b",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "muwange.dsh.ui.skin.lab": {
+      "name": {
+        "zh": "外观实验室",
+        "en": "Skin Lab"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "两套预设（极简与像素）配主色、圆角、动效三个旋钮；「外观」设置页里可选预设、调旋钮、保存多套方案，也能导出/导入配置，点回默认即还原。只改样式不动行为，值走官方主题 token 通道并自动跟随明暗，卸载即恢复原样。",
+        "en": "Two presets (minimal and pixel) with knobs for brand colour, corner radius and motion; the appearance settings page switches presets, tunes the knobs, saves named schemes, exports and imports the config, and restores defaults in one click. It only changes styles — values go through the official theme-token channel, follow light and dark automatically, and revert on uninstall."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "642976d1f5c5b9d878b321107126183dfab7270c25f4571bf62d65959bdb917e",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "raheemmiyasin.dsh.theme.palette": {
+      "name": {
+        "zh": "主题配色",
+        "en": "Theme Palette"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在「设置 → 通用」加一行主题配色，共 9 个选项：默认、海洋蓝、森林绿、暖橙、紫罗兰、玫红、暖沙、Obsidian 近黑，以及赛博朋克——后者会在面板后铺一层霓虹 HUD 网格背景并换上专属渐变标志。配色只改颜色，明暗仍由「外观」那一行决定，选择会被记住。",
+        "en": "Adds a Theme palette row under Settings → General with nine options, from Ocean, Forest and Ember to Obsidian and a Cyberpunk palette that paints a neon HUD grid backdrop and swaps in a custom gradient brand mark. Palettes only recolour the interface — the Appearance row still decides light or dark — and the choice is remembered."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "430658dc96c8cb7eadc4788589bfc0bd300178ba6784dc41a337e8bda127650f",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "rruixi.dist": {
+      "name": {
+        "zh": "爱祥主题",
+        "en": "Anon × Sakiko Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "爱音粉 #ff9ec7 与祥子蓝 #6fa8ff 的撞色渐变主题，配音符、星星、吉他拨片与钢琴键 SVG 装饰和自定义标题栏、状态栏，侧栏、对话区、细节面板一起换，明暗两套。内置 3 张背景图，在「爱祥背景」设置里调位置、大小与五个面板透明度，还能上传多张图（自动压缩）管理图库。",
+        "en": "An Anon-pink (#ff9ec7) and Sakiko-blue (#6fa8ff) gradient theme with SVG notes, stars, guitar picks and piano keys plus a custom title bar and status bar, restyling the sidebar, conversation and details panel in light and dark. Three background images ship with it, and a dedicated background section sets position, size and five panel opacities, with a gallery where uploaded images can be reordered and renamed."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "fcce14d7dda7400a2a809f0a63714127e1a4f4572c2855b6d92c645663dd6518",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "wuyad.cat.plugin": {
+      "name": {
+        "zh": "漫游小猫",
+        "en": "Wandering Tabby Cat"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一只虎斑小猫在界面上游荡：沿段落、标题、卡片和按钮的上沿行走，跳上平台、闻一闻、打盹，偶尔瞬移或从边沿摔下去后自己恢复。点一下可以撸猫，右键切换橘猫、白猫、奶牛猫、黑猫、灰猫、暹罗猫六种皮肤并记住选择；它偶尔会留下便便，点掉即可清除。",
+        "en": "A little tabby cat wanders the interface — walking along the top edges of paragraphs, headings, cards and buttons, hopping onto ledges, sniffing, napping, teleporting, and sometimes tumbling off a ledge and recovering. Click to pet it, right-click to cycle six coats (orange, white, tuxedo, black, gray, siamese) that persist across reloads, and click its droppings to clean them up."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "7f2d944b71c97c56cc0e026f3c74ed59d20f642a52bb03293c496c7878f2eb15",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
     }
   }
 }
