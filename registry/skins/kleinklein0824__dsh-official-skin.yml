@@ -3,7 +3,7 @@ name:
   zh: DSH 官网风格皮肤
   en: DSH Official-Site Style Skin
 author: kleinklein0824
-description: DeepSeek 官网风格皮肤：深蓝宇宙感背景（流体极光 + 粒子鲸鱼 + 星座网格）与浅色玻璃主题，右上角一键切换
+description: 'DeepSeek 官网风格皮肤：深色极光、粒子鲸鱼与星座背景，浅色玻璃主题，单一按钮同步宿主外观设置及标题栏配色；1.1.8 版已完成 DSH 0.2.2-rc.3 的源码、宿主兼容检查及隔离 React/DOM 验证。'
 repo: https://github.com/kleinklein0824/dsh-official-skin
 package: dsh-official-skin
 rowId: official-skin
