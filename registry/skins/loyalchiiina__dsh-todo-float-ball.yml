@@ -13,18 +13,18 @@ tags:
 modes:
   - light
 install:
-  target: github:loyalchiiina/dsh-todo-float-ball#176ae1eb46f7bbe73d9038dd0c44034da63e6ccf
-  version: 0.14.10
-  commit: 176ae1eb46f7bbe73d9038dd0c44034da63e6ccf
+  target: github:loyalchiiina/dsh-todo-float-ball#4864fd3d624c493f6c2f8a10be8a24675a76e159
+  version: 0.14.11
+  commit: 4864fd3d624c493f6c2f8a10be8a24675a76e159
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
   npm:
     name: dsh-todo-float-ball
-    version: 0.14.10
-    integrity: sha512-8YWf9glfiRJS8pvqRkzry+IwjVDZntoZPYoa5sWL/QEu9WMO97KnYT/LqqTotjUsaZzF1tHRstQuTvG0mQz7SA==
+    version: 0.14.11
+    integrity: sha512-Ll9T6LGBHCYIiUWcs1wnKXfXxL0duZqAMsmDAa2ARKo179XDQURRbxmLhdEVUKTy9Ulg43KUQckJ/VZdyvyEsw==
     repository: https://github.com/loyalchiiina/dsh-todo-float-ball
-    gitHead: 176ae1eb46f7bbe73d9038dd0c44034da63e6ccf
+    gitHead: 4864fd3d624c493f6c2f8a10be8a24675a76e159
 compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
@@ -50,12 +50,12 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 176ae1eb46f7bbe73d9038dd0c44034da63e6ccf
-    packageVersion: 0.14.10
+    commit: 4864fd3d624c493f6c2f8a10be8a24675a76e159
+    packageVersion: 0.14.11
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-13T00:12:50.257Z
+    checkedAt: 2026-11-14T00:23:54.929Z
     findings: []
 license:
   code: MIT
@@ -65,7 +65,7 @@ marketScreenshots:
   - skin-screenshots/loyalchiiina__dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/home.png
   - skin-screenshots/loyalchiiina__dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/conversation.png
 featuredRank: 999
-releaseUpdatedAt: 2026-11-13T00:28:13.548Z
-metadataUpdatedAt: 2026-11-13T00:28:13.548Z
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-06T00:08:18.130Z
-updatedAt: 2026-11-13T00:28:13.548Z
+updatedAt: 2026-11-14T00:39:24.978Z

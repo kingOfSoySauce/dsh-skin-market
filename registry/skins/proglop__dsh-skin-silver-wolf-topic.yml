@@ -25,26 +25,35 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/proglop/dsh-skin-silver-wolf-topic/290a8962102157a71e32150dcd57164fe9eeaf17/preview/dark.png
+listScreenshot: https://raw.githubusercontent.com/proglop/dsh-skin-silver-wolf-topic/290a8962102157a71e32150dcd57164fe9eeaf17/preview/dark.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 290a8962102157a71e32150dcd57164fe9eeaf17
+    packageVersion: 1.1.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:14:24.097Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1140
 starsSnapshot: 1
+featuredRank: 1140
 releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/proglop/dsh-skin-silver-wolf-topic/290a8962102157a71e32150dcd57164fe9eeaf17/preview/dark.png
+updatedAt: 2026-11-14T00:39:24.978Z

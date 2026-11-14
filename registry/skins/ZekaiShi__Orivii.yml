@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ZekaiShi/Orivii#b24a34df66c54f09b1f654be2108c97f772a6375
-  version: 1.0.2
-  commit: b24a34df66c54f09b1f654be2108c97f772a6375
+  target: github:ZekaiShi/Orivii#98bae54a6547bed3d6175d5317ac8ae3da775665
+  version: 1.1.0
+  commit: 98bae54a6547bed3d6175d5317ac8ae3da775665
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-orivii
+    packageVersion: 1.1.0
+    integrity: sha512-/iCGSiGfHA/O4SIgAMqxFql9pYF6VPirDI1ETLV9k0zEed4BZm12UtG4a9WV69xZvQIJQvU93mYZMa7Os9cPqQ==
+  npm:
+    name: dsh-orivii
+    version: 1.1.0
+    integrity: sha512-/iCGSiGfHA/O4SIgAMqxFql9pYF6VPirDI1ETLV9k0zEed4BZm12UtG4a9WV69xZvQIJQvU93mYZMa7Os9cPqQ==
+    repository: https://github.com/ZekaiShi/Orivii
+    gitHead: 98bae54a6547bed3d6175d5317ac8ae3da775665
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -33,26 +45,36 @@ screenshots:
   - https://raw.githubusercontent.com/ZekaiShi/Orivii/main/media/preview.gif
   - https://raw.githubusercontent.com/ZekaiShi/Orivii/main/media/market-chat.png
   - https://raw.githubusercontent.com/ZekaiShi/Orivii/main/media/market-memory.png
+listScreenshot: https://raw.githubusercontent.com/ZekaiShi/Orivii/b24a34df66c54f09b1f654be2108c97f772a6375/media/preview.gif
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
     compatibility: pass
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 98bae54a6547bed3d6175d5317ac8ae3da775665
+    packageVersion: 1.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:24:07.207Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1155
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+featuredRank: 1155
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/ZekaiShi/Orivii/b24a34df66c54f09b1f654be2108c97f772a6375/media/preview.gif
+updatedAt: 2026-11-14T00:39:24.978Z

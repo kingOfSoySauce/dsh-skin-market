@@ -28,25 +28,36 @@ screenshots:
   - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-dark-panel.png
   - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/hover-card-light.png
   - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/hover-card-dark.png
+listScreenshot: https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-light.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 5e4623b41961b33f49a1b1f30030b3acf7b8c683
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:23:24.860Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 2
 featuredRank: 1000
-starsSnapshot: 0
 releaseUpdatedAt: 2026-11-13T05:01:26.557Z
-metadataUpdatedAt: 2026-11-13T05:01:26.557Z
-starsUpdatedAt: 2026-11-13T05:01:26.557Z
-updatedAt: 2026-11-13T05:01:26.557Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
+starsUpdatedAt: 2026-11-14T00:39:24.978Z
+updatedAt: 2026-11-14T00:39:24.978Z

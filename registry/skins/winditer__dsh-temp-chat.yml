@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:winditer/dsh-temp-chat#84d326a73db420083110cc19e74773a09af74cd0
-  version: 2.2.1
-  commit: 84d326a73db420083110cc19e74773a09af74cd0
+  target: github:winditer/dsh-temp-chat#9558d2e621afb6df959a2274c495072f7883d9d2
+  version: 2.3.1
+  commit: 9558d2e621afb6df959a2274c495072f7883d9d2
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -43,19 +43,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 84d326a73db420083110cc19e74773a09af74cd0
-    packageVersion: 2.2.1
+    commit: 9558d2e621afb6df959a2274c495072f7883d9d2
+    packageVersion: 2.3.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:34:04.034Z
+    checkedAt: 2026-11-14T00:24:54.486Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 starsSnapshot: 0
 featuredRank: 1000
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-11-09T07:18:38.186Z
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T07:18:38.186Z
+updatedAt: 2026-11-14T00:39:24.978Z

@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:SoliSpark/deepseek-harness-shorekeeper-theme#62fff8c257649bd11554eb48c3c04e380a817024
+  target: github:SoliSpark/deepseek-harness-shorekeeper-theme#364187c0561311864ab4d832fae89028afd9a274
   version: 1.2.1
-  commit: 62fff8c257649bd11554eb48c3c04e380a817024
+  commit: 364187c0561311864ab4d832fae89028afd9a274
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -33,6 +33,7 @@ screenshots:
   - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/home.png
   - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/conversation.png
   - skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/settings.png
+listScreenshot: skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/launch.gif
 review:
   compatibility: unverified
   preview: verified
@@ -40,29 +41,27 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 62fff8c257649bd11554eb48c3c04e380a817024
+    commit: 364187c0561311864ab4d832fae89028afd9a274
     packageVersion: 1.2.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-11T00:07:44.230Z
+    checkedAt: 2026-11-14T00:22:52.703Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 31
-listScreenshot: skin-screenshots/SoliSpark__deepseek-harness-shorekeeper-theme/62fff8c257649bd11554eb48c3c04e380a817024/launch.gif
+starsSnapshot: 33
 featuredRank: 1131
-releaseUpdatedAt: 2026-11-11T06:41:11.005Z
-metadataUpdatedAt: 2026-11-11T13:17:15.192Z
-starsUpdatedAt: 2026-11-11T06:41:11.005Z
-updatedAt: 2026-11-11T13:17:15.192Z
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
+starsUpdatedAt: 2026-11-14T00:39:24.978Z
+updatedAt: 2026-11-14T00:39:24.978Z

@@ -19,6 +19,12 @@ install:
   target: github:KeithTMaxwell/dsh-skin-deepsea-tui#c434faea492e478a2e9d481487ea293405fc1543
   version: 0.2.60
   commit: c434faea492e478a2e9d481487ea293405fc1543
+  npm:
+    name: dsh-skin-deepsea-tui
+    version: 0.2.60
+    integrity: sha512-L8vjG5srQYsyQuwl+2RZQ0x2kKQ47pO/A75ZzC2g23yFhmFGcI0JxwuPdIY8jU91xsj0TLwnqzmvrpogXQ7jXw==
+    repository: https://github.com/KeithTMaxwell/dsh-skin-deepsea-tui
+    gitHead: c434faea492e478a2e9d481487ea293405fc1543
 compatibility:
   dsh: 0.2.0-rc.2 || 0.2.1-rc.3
   platform:
@@ -30,27 +36,36 @@ screenshots:
   - https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/install-03-skin-annotated.png
   - https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/install-04-settings-menu-annotated.png
   - https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/install-05-skin-switch-annotated.png
+listScreenshot: https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/deepsea-desktop.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: c434faea492e478a2e9d481487ea293405fc1543
+    packageVersion: 0.2.60
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:11:53.027Z
+    findings: []
 license:
   code: PolyForm-Noncommercial-1.0.0
   commercialUse: false
-featuredRank: 1172
 starsSnapshot: 4
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+featuredRank: 1172
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/KeithTMaxwell/dsh-skin-deepsea-tui/c434faea492e478a2e9d481487ea293405fc1543/docs/screenshots/deepsea-desktop.png
+updatedAt: 2026-11-14T00:39:24.978Z

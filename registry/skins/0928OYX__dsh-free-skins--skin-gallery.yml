@@ -27,6 +27,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/0928OYX/dsh-free-skins/60bed2182f79e7a62d89d770d5461e3da981547b/preview/session-shorekeeper-poster.jpg
+listScreenshot: https://raw.githubusercontent.com/0928OYX/dsh-free-skins/60bed2182f79e7a62d89d770d5461e3da981547b/preview/session-shorekeeper-poster.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -40,15 +41,22 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 60bed2182f79e7a62d89d770d5461e3da981547b
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:23:35.660Z
+    findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
-featuredRank: 1134
 starsSnapshot: 1
+featuredRank: 1134
 releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/0928OYX/dsh-free-skins/60bed2182f79e7a62d89d770d5461e3da981547b/preview/session-shorekeeper-poster.jpg
+updatedAt: 2026-11-14T00:39:24.978Z

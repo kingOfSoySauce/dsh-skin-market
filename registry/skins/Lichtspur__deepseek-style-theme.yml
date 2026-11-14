@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Lichtspur/deepseek-style-theme#2dfc0406eab2775c48bef4872a9c6582492c3a0a
+  target: github:Lichtspur/deepseek-style-theme#35ff914800e166743f35c358d4f72eb7dc78dfc9
   version: 2.1.93
-  commit: 2dfc0406eab2775c48bef4872a9c6582492c3a0a
+  commit: 35ff914800e166743f35c358d4f72eb7dc78dfc9
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-deepseek-style-theme
+    packageVersion: 2.1.93
+    integrity: sha512-UgmmnAUnltUyqhhgs9dSZZqe1/SR7xqyHYg8i7ygMwPC2M26YkOLGKNRfNnE2Xb1mPtn39OSxXnopSz5AGHEtA==
+  npm:
+    name: dsh-deepseek-style-theme
+    version: 2.1.93
+    integrity: sha512-UgmmnAUnltUyqhhgs9dSZZqe1/SR7xqyHYg8i7ygMwPC2M26YkOLGKNRfNnE2Xb1mPtn39OSxXnopSz5AGHEtA==
+    repository: https://github.com/Lichtspur/deepseek-style-theme
+    gitHead: 35ff914800e166743f35c358d4f72eb7dc78dfc9
 compatibility:
   dsh: unverified
   platform:
@@ -35,21 +47,29 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
-    installCommand: improve
+    installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 35ff914800e166743f35c358d4f72eb7dc78dfc9
+    packageVersion: 2.1.93
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:12:14.968Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1138
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
-starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
 listScreenshot: https://raw.githubusercontent.com/Lichtspur/deepseek-style-theme/2dfc0406eab2775c48bef4872a9c6582492c3a0a/assets/readme/preview-valley-blue-light.png
+featuredRank: 1138
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
+starsUpdatedAt: 2026-11-13T04:37:09.826Z
+updatedAt: 2026-11-14T00:39:24.978Z

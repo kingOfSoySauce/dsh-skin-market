@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Nagi-ovo/dsh-ads#3ddee7c2793b9e7800658cd525aa3c18fa27a327
-  version: 0.1.4
-  commit: 3ddee7c2793b9e7800658cd525aa3c18fa27a327
+  target: github:Nagi-ovo/dsh-ads#a58182019dba40fcfcf83c1fc22f63151cc0412b
+  version: 0.1.5
+  commit: a58182019dba40fcfcf83c1fc22f63151cc0412b
   desktop:
     mode: managed
     registry: npm
     packageName: "@nagi-ovo/dsh-ads"
-    packageVersion: 0.1.4
-    integrity: sha512-tLpJ1V3bQ6+tUaF9OHR8E5cyRHy45vHwkb4pUxsUqWjN/Jk+5s51EpdOWvVlIVBd0dvCjB7yjWv5BjDryDiCkg==
+    packageVersion: 0.1.5
+    integrity: sha512-chhPeOT2U/bCEghlKHHPTZhcpnF9MjYdoZdUBzK+4TkooGXVndBRPMhp/n4eZeKK4CyQWAFVphLCGlZWT0LH0w==
   npm:
     name: "@nagi-ovo/dsh-ads"
-    version: 0.1.4
-    integrity: sha512-tLpJ1V3bQ6+tUaF9OHR8E5cyRHy45vHwkb4pUxsUqWjN/Jk+5s51EpdOWvVlIVBd0dvCjB7yjWv5BjDryDiCkg==
+    version: 0.1.5
+    integrity: sha512-chhPeOT2U/bCEghlKHHPTZhcpnF9MjYdoZdUBzK+4TkooGXVndBRPMhp/n4eZeKK4CyQWAFVphLCGlZWT0LH0w==
     repository: https://github.com/Nagi-ovo/dsh-ads
-    gitHead: 3ddee7c2793b9e7800658cd525aa3c18fa27a327
+    gitHead: a58182019dba40fcfcf83c1fc22f63151cc0412b
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -59,20 +59,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 3ddee7c2793b9e7800658cd525aa3c18fa27a327
-    packageVersion: 0.1.4
+    commit: a58182019dba40fcfcf83c1fc22f63151cc0412b
+    packageVersion: 0.1.5
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0
+    dshVersion: ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0 || ^0.2.2-0
     mode: static
     result: pass
-    checkedAt: 2026-11-09T00:12:31.851Z
+    checkedAt: 2026-11-14T00:22:43.315Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
-starsSnapshot: 719
+starsSnapshot: 722
 featuredRank: 142
-releaseUpdatedAt: 2026-11-09T00:12:35.228Z
-metadataUpdatedAt: 2026-11-09T00:12:35.228Z
-starsUpdatedAt: 2026-11-12T00:09:47.866Z
-updatedAt: 2026-11-12T00:09:47.866Z
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
+starsUpdatedAt: 2026-11-14T00:39:24.978Z
+updatedAt: 2026-11-14T00:39:24.978Z

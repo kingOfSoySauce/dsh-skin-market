@@ -17,21 +17,21 @@ tags:
 modes:
   - dark
 install:
-  target: github:ymh0000123/dsh-theme-endfield#8315d584b69dfcabd4aa6a1b1d84d1ce14fa660a
-  version: 1.2.5
-  commit: 8315d584b69dfcabd4aa6a1b1d84d1ce14fa660a
+  target: github:ymh0000123/dsh-theme-endfield#7f3a174e9162d78037695b98d92a08711ac202c1
+  version: 1.2.7
+  commit: 7f3a174e9162d78037695b98d92a08711ac202c1
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-theme-endfield
-    packageVersion: 1.2.5
-    integrity: sha512-joppva0om4hMOcx/fjLnvboO4k6nzK/q1GueX15Zsyuj3PRUYXeiqjxXDyx/kZYIVvlVxF5DiNN+cFxzF6Zhkg==
+    packageVersion: 1.2.7
+    integrity: sha512-h9g3LcaBoHmmg+O/I0OPbkFkwMJtreF88EARlgIi0LbN5rcdeZ7VcoTHZdbnMuKgfm9BxOu/6AvyWSwtP4ukRg==
   npm:
     name: dsh-theme-endfield
-    version: 1.2.5
-    integrity: sha512-joppva0om4hMOcx/fjLnvboO4k6nzK/q1GueX15Zsyuj3PRUYXeiqjxXDyx/kZYIVvlVxF5DiNN+cFxzF6Zhkg==
+    version: 1.2.7
+    integrity: sha512-h9g3LcaBoHmmg+O/I0OPbkFkwMJtreF88EARlgIi0LbN5rcdeZ7VcoTHZdbnMuKgfm9BxOu/6AvyWSwtP4ukRg==
     repository: https://github.com/ymh0000123/dsh-theme-endfield
-    gitHead: 8315d584b69dfcabd4aa6a1b1d84d1ce14fa660a
+    gitHead: 7f3a174e9162d78037695b98d92a08711ac202c1
 compatibility:
   dsh: unverified
   platform:
@@ -56,22 +56,22 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 8315d584b69dfcabd4aa6a1b1d84d1ce14fa660a
-    packageVersion: 1.2.5
+    commit: 7f3a174e9162d78037695b98d92a08711ac202c1
+    packageVersion: 1.2.7
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-09T00:12:37.291Z
+    checkedAt: 2026-11-14T00:22:46.494Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 169
+starsSnapshot: 170
 marketScreenshots:
   - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.png
   - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/conversation.png
 featuredRank: 154
-releaseUpdatedAt: 2026-11-09T00:12:38.120Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
-starsUpdatedAt: 2026-11-13T00:28:13.548Z
-updatedAt: 2026-11-13T00:28:13.548Z
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
+starsUpdatedAt: 2026-11-14T00:39:24.978Z
+updatedAt: 2026-11-14T00:39:24.978Z

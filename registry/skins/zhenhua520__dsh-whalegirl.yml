@@ -26,26 +26,35 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/zhenhua520/dsh-whalegirl/d46bfd0fb6627290189483e4112a16dfb7de8fb2/assets/previews/preview.png
+listScreenshot: https://raw.githubusercontent.com/zhenhua520/dsh-whalegirl/d46bfd0fb6627290189483e4112a16dfb7de8fb2/assets/previews/preview.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d46bfd0fb6627290189483e4112a16dfb7de8fb2
+    packageVersion: 1.0.19
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:14:51.504Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1156
 starsSnapshot: 1
+featuredRank: 1156
 releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/zhenhua520/dsh-whalegirl/d46bfd0fb6627290189483e4112a16dfb7de8fb2/assets/previews/preview.png
+updatedAt: 2026-11-14T00:39:24.978Z

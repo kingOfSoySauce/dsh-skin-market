@@ -27,6 +27,7 @@ screenshots:
   - https://raw.githubusercontent.com/EN-linkes/dsh-sao-theme/30058030b5e30220aeee41372a0bf254d63f0da3/docs/final-aincrad.png
   - https://raw.githubusercontent.com/EN-linkes/dsh-sao-theme/30058030b5e30220aeee41372a0bf254d63f0da3/docs/dsbot-mode.png
   - https://raw.githubusercontent.com/EN-linkes/dsh-sao-theme/30058030b5e30220aeee41372a0bf254d63f0da3/docs/workflow-mode.png
+listScreenshot: https://raw.githubusercontent.com/EN-linkes/dsh-sao-theme/30058030b5e30220aeee41372a0bf254d63f0da3/docs/final-aincrad.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,15 +41,22 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 30058030b5e30220aeee41372a0bf254d63f0da3
+    packageVersion: 1.0.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-11T00:09:33.198Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1135
 starsSnapshot: 0
+featuredRank: 1135
 releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/EN-linkes/dsh-sao-theme/30058030b5e30220aeee41372a0bf254d63f0da3/docs/final-aincrad.png
+updatedAt: 2026-11-14T00:39:24.978Z

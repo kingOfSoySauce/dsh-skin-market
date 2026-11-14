@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-13**：[奶蛙工作室](https://github.com/alaricchanchs-crypto/dsh-naiwa-studio)（alaricchanchs-crypto）——赛博风开机动画（视频 + 机械语音 + 现场合成的音效），配灵感池卡片、奶蛙表情库与玻璃质感配色。详见[收录日志](./docs/recently-added.md#recent-2026-11-13-alaricchanchs-crypto-dsh-naiwa-studio)。
+- **2026-11-14**：[Claude 星芒品牌](https://github.com/aklnaaw/dsh-claude-theme)（aklnaaw）——把侧栏的鲸鱼标记与字标换成 Claude 风格的放射星芒和文字字标，并改写浏览器标签标题、换成星芒标签页图标。侧栏底部弹层里可以就地改显示名字、副标题和头像，头像只保存在本机浏览器。详见[收录日志](./docs/recently-added.md#recent-2026-11-14-aklnaaw-brand-plugin)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

@@ -28,6 +28,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/frank6892103/dsh-WutheringWaves/a994c8d39e18f8314fdd61654f2b42f0ec933a39/themes/aemeath/preview/dark.webp
   - https://raw.githubusercontent.com/frank6892103/dsh-WutheringWaves/a994c8d39e18f8314fdd61654f2b42f0ec933a39/themes/aemeath/preview/light.webp
+listScreenshot: https://raw.githubusercontent.com/frank6892103/dsh-WutheringWaves/a994c8d39e18f8314fdd61654f2b42f0ec933a39/themes/aemeath/preview/dark.webp
 review:
   compatibility: unverified
   preview: verified
@@ -41,14 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: a994c8d39e18f8314fdd61654f2b42f0ec933a39
+    packageVersion: 0.3.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:23:46.460Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1174
 starsSnapshot: 1
+featuredRank: 1174
 releaseUpdatedAt: 2026-11-13T09:19:15.720Z
-metadataUpdatedAt: 2026-11-13T09:19:15.720Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T09:19:15.720Z
-updatedAt: 2026-11-13T09:19:15.720Z
-listScreenshot: https://raw.githubusercontent.com/frank6892103/dsh-WutheringWaves/a994c8d39e18f8314fdd61654f2b42f0ec933a39/themes/aemeath/preview/dark.webp
+updatedAt: 2026-11-14T00:39:24.978Z

@@ -33,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/screenshot-sunset.jpg
   - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/screenshot-wallpaper-dark.jpg
   - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/screenshot-moon.jpg
+listScreenshot: https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/workflow-today.png
 review:
   compatibility: unverified
   preview: verified
@@ -46,14 +47,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 014ba35d976e9c673b356c8bd10d74e70cb519de
+    packageVersion: 4.3.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:24:09.855Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1171
 starsSnapshot: 1
+featuredRank: 1171
 releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/workflow-today.png
+updatedAt: 2026-11-14T00:39:24.978Z

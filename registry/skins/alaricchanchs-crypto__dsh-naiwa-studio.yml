@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:alaricchanchs-crypto/dsh-naiwa-studio#c4ef30176306e60f57b22b7322ee28ba383c9ef9
+  target: github:alaricchanchs-crypto/dsh-naiwa-studio#8e90116143a9aed927e322fba1628eba6119d1a0
   version: 0.1.0
-  commit: c4ef30176306e60f57b22b7322ee28ba383c9ef9
+  commit: 8e90116143a9aed927e322fba1628eba6119d1a0
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -47,19 +47,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: c4ef30176306e60f57b22b7322ee28ba383c9ef9
+    commit: 8e90116143a9aed927e322fba1628eba6119d1a0
     packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-13T00:28:47.094Z
+    checkedAt: 2026-11-14T00:23:23.029Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-13T00:28:47.836Z
-metadataUpdatedAt: 2026-11-13T00:28:47.836Z
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T00:09:32.783Z
-updatedAt: 2026-11-13T00:28:47.836Z
+updatedAt: 2026-11-14T00:39:24.978Z

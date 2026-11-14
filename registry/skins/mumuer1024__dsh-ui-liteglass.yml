@@ -17,21 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:mumuer1024/dsh-ui-liteglass#4e5d2f0d378a139bb2a8b47f5636592c885ecf37
-  version: 0.2.4
-  commit: 4e5d2f0d378a139bb2a8b47f5636592c885ecf37
+  target: github:mumuer1024/dsh-ui-liteglass#f08c6a169b7bf965927bb0ec3f666a668db1d53e
+  version: 0.2.5
+  commit: f08c6a169b7bf965927bb0ec3f666a668db1d53e
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-ui-liteglass
-    packageVersion: 0.2.4
-    integrity: sha512-XQPxXEmoJkGsa94CufjueADAEYBkRp5QlslG6EuzvJb99v9FH4BaVsFgo99T/wuWPFppdTXC4Hu+zEo9Mo5NFw==
+    packageVersion: 0.2.5
+    integrity: sha512-9M9QFJaGe8XvfIrzGTPV1GnwDp9sGJfoxF/Xq7unckt4SHwMv4NImkUJMlH8t12chi10SMQ6W/4oqTH0Y6fKDw==
   npm:
     name: dsh-ui-liteglass
-    version: 0.2.4
-    integrity: sha512-XQPxXEmoJkGsa94CufjueADAEYBkRp5QlslG6EuzvJb99v9FH4BaVsFgo99T/wuWPFppdTXC4Hu+zEo9Mo5NFw==
+    version: 0.2.5
+    integrity: sha512-9M9QFJaGe8XvfIrzGTPV1GnwDp9sGJfoxF/Xq7unckt4SHwMv4NImkUJMlH8t12chi10SMQ6W/4oqTH0Y6fKDw==
     repository: https://github.com/mumuer1024/dsh-ui-liteglass
-    gitHead: 4e5d2f0d378a139bb2a8b47f5636592c885ecf37
+    gitHead: f08c6a169b7bf965927bb0ec3f666a668db1d53e
 compatibility:
   dsh: 0.1.0-rc.7
   platform:
@@ -57,20 +57,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 4e5d2f0d378a139bb2a8b47f5636592c885ecf37
-    packageVersion: 0.2.4
+    commit: f08c6a169b7bf965927bb0ec3f666a668db1d53e
+    packageVersion: 0.2.5
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.7
     mode: static
     result: pass
-    checkedAt: 2026-11-04T00:04:30.647Z
+    checkedAt: 2026-11-14T00:23:57.841Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 starsSnapshot: 1
 featuredRank: 0
-releaseUpdatedAt: 2026-11-04T00:04:32.060Z
-metadataUpdatedAt: 2026-11-04T00:04:32.060Z
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-08-29T03:15:03.801Z
-updatedAt: 2026-11-04T00:04:32.060Z
+updatedAt: 2026-11-14T00:39:24.978Z

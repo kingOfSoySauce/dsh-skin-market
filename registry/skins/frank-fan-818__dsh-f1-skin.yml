@@ -19,6 +19,12 @@ install:
   target: github:frank-fan-818/dsh-f1-skin#d739db5f58c302c326b954287ca8424b7f1f10e1
   version: 0.4.0
   commit: d739db5f58c302c326b954287ca8424b7f1f10e1
+  npm:
+    name: dsh-f1-skin
+    version: 0.4.0
+    integrity: sha512-0bUI5t5M6bGd9FJLrM4PiaPd+vRYzh6XIczJMiLQt+0Pp0Gik1lil5v9SW0TidLFthMIJlvK+9kuDAKA9aRodw==
+    repository: https://github.com/frank-fan-818/dsh-f1-skin
+    gitHead: d739db5f58c302c326b954287ca8424b7f1f10e1
 compatibility:
   dsh: 0.1.1--rc.2-00a6a6.svg || 0.1.1-rc.2
   platform:
@@ -32,26 +38,35 @@ screenshots:
   - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/master/docs/screenshots/ferrari-desktop.png
   - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/master/docs/screenshots/mclaren-desktop.png
   - https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/master/docs/screenshots/mercedes-desktop.png
+listScreenshot: https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/d739db5f58c302c326b954287ca8424b7f1f10e1/docs/screenshots/redbull-desktop.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d739db5f58c302c326b954287ca8424b7f1f10e1
+    packageVersion: 0.4.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:12:41.894Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1161
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+featuredRank: 1161
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/d739db5f58c302c326b954287ca8424b7f1f10e1/docs/screenshots/redbull-desktop.png
+updatedAt: 2026-11-14T00:39:24.978Z

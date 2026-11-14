@@ -16,21 +16,12 @@ tags:
 modes:
   - dark
 install:
-  target: github:kingOfSoySauce/dsh-liang-skin#d182b242937053656b58a5d2f6dc6a83447824e5
-  version: 0.1.16
-  commit: d182b242937053656b58a5d2f6dc6a83447824e5
+  target: github:kingOfSoySauce/dsh-liang-skin#cc1e57f83d9c22bb89b7076e7cdc74d5f1fe7ba0
+  version: 0.1.21
+  commit: cc1e57f83d9c22bb89b7076e7cdc74d5f1fe7ba0
   desktop:
-    mode: managed
-    registry: npm
-    packageName: "@leon___/dsh-client-liang-intensity-skin"
-    packageVersion: 0.1.16
-    integrity: sha512-MUO7tK998tzn60Qchu55C8HeNiigzmJL8+hpNOBw/l98hR0zZNxulWvNEdw7Zljjh4qrcrb21I9AHscbQnDtTQ==
-  npm:
-    name: "@leon___/dsh-client-liang-intensity-skin"
-    version: 0.1.16
-    integrity: sha512-MUO7tK998tzn60Qchu55C8HeNiigzmJL8+hpNOBw/l98hR0zZNxulWvNEdw7Zljjh4qrcrb21I9AHscbQnDtTQ==
-    repository: https://github.com/kingOfSoySauce/dsh-liang-skin
-    gitHead: d182b242937053656b58a5d2f6dc6a83447824e5
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6 || 0.2.0-rc.2
   platform:
@@ -53,12 +44,12 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: d182b242937053656b58a5d2f6dc6a83447824e5
-    packageVersion: 0.1.16
+    commit: cc1e57f83d9c22bb89b7076e7cdc74d5f1fe7ba0
+    packageVersion: 0.1.21
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-13T00:11:30.656Z
+    checkedAt: 2026-11-14T00:22:43.691Z
     findings: []
 license:
   code: NOASSERTION
@@ -66,7 +57,7 @@ license:
   notice: 仓库当前未声明许可证；安装和再分发前请向作者确认授权。
 starsSnapshot: 387
 featuredRank: 1
-releaseUpdatedAt: 2026-11-13T00:28:13.548Z
-metadataUpdatedAt: 2026-11-13T00:28:13.548Z
+releaseUpdatedAt: 2026-11-14T00:39:24.978Z
+metadataUpdatedAt: 2026-11-14T00:39:24.978Z
 starsUpdatedAt: 2026-11-13T00:28:13.548Z
-updatedAt: 2026-11-13T00:28:13.548Z
+updatedAt: 2026-11-14T00:39:24.978Z

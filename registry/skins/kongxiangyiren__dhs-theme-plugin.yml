@@ -35,6 +35,10 @@ compatibility:
   dsh: ^0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/kongxiangyiren__dhs-theme-plugin/9e451e3a9eda86f62c8624d606a911e68a943b16/home.png
+  - skin-screenshots/kongxiangyiren__dhs-theme-plugin/9e451e3a9eda86f62c8624d606a911e68a943b16/conversation.png
+  - skin-screenshots/kongxiangyiren__dhs-theme-plugin/9e451e3a9eda86f62c8624d606a911e68a943b16/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -62,13 +66,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/kongxiangyiren__dhs-theme-plugin/9e451e3a9eda86f62c8624d606a911e68a943b16/home.png
-  - skin-screenshots/kongxiangyiren__dhs-theme-plugin/9e451e3a9eda86f62c8624d606a911e68a943b16/conversation.png
-  - skin-screenshots/kongxiangyiren__dhs-theme-plugin/9e451e3a9eda86f62c8624d606a911e68a943b16/settings.png
 featuredRank: 82
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-09T00:16:20.370Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T00:40:43.201Z
 starsUpdatedAt: 2026-09-09T21:40:24.465Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-14T00:40:43.201Z
