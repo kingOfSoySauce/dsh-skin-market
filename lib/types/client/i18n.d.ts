@@ -64,6 +64,7 @@ export declare const messageCatalog: {
         readonly 'common.migrationKeepState': '保留当前启用和常驻状态；';
         readonly 'common.manualPromptDesktop': '复制提示词，让 Agent 检查冲突；宿主提供插件管理工具时可由 Agent 确认目标后安装（默认不启用），否则在插件页操作。';
         readonly 'common.copyTroubleshootingPrompt': '复制排查提示词';
+        readonly 'common.stillCannotFinish': '仍无法完成';
         readonly 'common.copyPackageName': '复制包名';
         readonly 'common.copyLog': '复制日志';
         readonly 'common.copyPrompt': '复制提示词';
@@ -732,6 +733,7 @@ export declare const messageCatalog: {
         readonly 'common.migrationKeepState': 'The current enabled and resident state is kept; ';
         readonly 'common.manualPromptDesktop': 'Copy the prompt so an Agent checks for conflicts; when the host exposes a plugin manager, the Agent may install after confirming the target (not enabled by default), otherwise operate in the plugin page.';
         readonly 'common.copyTroubleshootingPrompt': 'Copy troubleshooting prompt';
+        readonly 'common.stillCannotFinish': 'Still cannot finish';
         readonly 'common.copyPackageName': 'Copy package name';
         readonly 'common.copyLog': 'Copy log';
         readonly 'common.copyPrompt': 'Copy prompt';

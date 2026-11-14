@@ -7,7 +7,7 @@ vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../f
 
 import { interceptNotice, isInterceptFailure, SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
 import { compatibilityContext } from '../../src/compatibility.ts'
-import type { Operation } from '../../src/client/types.ts'
+import type { CatalogSkin, Operation } from '../../src/client/types.ts'
 import { methodSent, requestCount, requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
 import { artifactRiskOperation, dshRuntime, incompatibleDesktopSkin, managedDesktopSkin, officialManagement, openSkinCard, registerMarketTestDom, skin, visibleWarningDialogs, zh } from '../fixtures/client-market.tsx'
 
@@ -51,6 +51,23 @@ describe('client market recovery', () => {
     expect(text.endsWith(diagnosticLog)).toBe(true)
     expect(fetchMock.mock.calls.filter(([, init]) => init?.method === 'POST')).toHaveLength(1)
     expect(fetchMock.mock.calls.filter(([url]) => url.includes('/logs?'))).toHaveLength(1)
+  })
+  it('gives a plain uninstall failure the official-page result instead of the diagnostic dialog', async () => {
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '1.0.0', updateAvailable: false }], runtime: dshRuntime }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
+      if (url.endsWith('/uninstall') && init?.method === 'POST') return { operationId: 'plain-uninstall' }
+      if (url.endsWith('/operations/plain-uninstall')) return { id: 'plain-uninstall', kind: 'uninstall', skinId: skin.id, phase: 'failed', startedAt: new Date().toISOString(), message: 'remove refused' }
+      throw new Error(`Unexpected request: ${url}`)
+    })
+    render(<SkinMarketSection t={key => key} />)
+    await openSkinCard(/测试皮肤 已安装卡片/)
+    fireEvent.click(screen.getByRole('button', { name: zh['common.uninstall'] }))
+    fireEvent.click(within(await screen.findByRole('dialog', { name: zh['common.uninstallSkin'] })).getByRole('button', { name: zh['common.confirmUninstall'] }))
+    const dialog = await screen.findByRole('dialog', { name: zh['common.uninstall'] })
+    expect(dialog.textContent).toContain(zh['failure.recoveryUninstall'].replace('{name}', skin.name.zh))
+    expect(screen.queryByRole('dialog', { name: '卸载未完成' })).toBeNull()
   })
   it.each(['clipboard', 'logs'] as const)('retains selectable repair text with a visible warning when %s export fails', async failure => {
     const writeText = vi.fn(async () => { throw new Error('clipboard blocked') })
@@ -219,14 +236,18 @@ describe('client market recovery', () => {
     render(<SkinMarketSection t={key => key} />)
     const install = await screen.findByRole('button', { name: zh['common.installAndUse'] })
     fireEvent.click(install)
-    const title = type === 'build' ? zh['common.approveBuild'] : '安装未完成'
-    fireEvent.click(within(await screen.findByRole('dialog', { name: title })).getByRole('button', { name: type === 'build' ? '取消' : '知道了' }))
+    // A plain Host failure opens the manual install panel; only a result that
+    // carries a reason keeps its decision dialog.
+    const title = type === 'build' ? zh['common.approveBuild'] : '安装 测试皮肤'
+    const dismiss = type === 'build' ? '取消' : '关闭'
+    const firstDialog = await screen.findByRole('dialog', { name: title })
+    fireEvent.click(within(firstDialog).getAllByRole('button', { name: dismiss })[0]!)
     expect(screen.queryByRole('dialog', { name: title })).toBeNull()
     expect(screen.queryByRole('status')).toBeNull()
     fireEvent.click(screen.getByRole('button', { name: zh['common.installAndUse'] }))
     const next = await screen.findByRole('dialog', { name: title })
     expect(generation).toBe(2)
-    fireEvent.click(within(next).getByRole('button', { name: '关闭' }))
+    fireEvent.click(within(next).getAllByRole('button', { name: dismiss })[0]!)
     expect(screen.queryByRole('status')).toBeNull()
     expect(requestSent(fetchMock, '/retry')).toBe(false)
   })
@@ -392,11 +413,12 @@ describe('client market recovery', () => {
     fireEvent.click(within(firstDialog).getAllByRole('button', { name: '关闭' })[0]!)
     const otherCard = screen.getByRole('button', { name: '另一皮肤 界面预览' }).closest('article')!
     fireEvent.click(within(otherCard).getByRole('button', { name: /^安装(?:并使用)?$/ }))
-    await waitFor(() => expect(screen.getByRole('dialog', { name: '安装未完成' }).textContent).toContain('另一皮肤'))
-    const secondDialog = screen.getByRole('dialog', { name: '安装未完成' })
-    expect(within(secondDialog).getByRole('button', { name: '知道了' }).hasAttribute('disabled')).toBe(false)
-    fireEvent.click(within(secondDialog).getByRole('button', { name: '知道了' }))
-    expect(screen.queryByRole('dialog', { name: '安装未完成' })).toBeNull()
+    await waitFor(() => expect(screen.getByRole('dialog', { name: '安装 另一皮肤' }).textContent).toContain('另一皮肤'))
+    const secondDialog = screen.getByRole('dialog', { name: '安装 另一皮肤' })
+    const closeSecond = within(secondDialog).getAllByRole('button', { name: '关闭' })[0]!
+    expect(closeSecond.hasAttribute('disabled')).toBe(false)
+    fireEvent.click(closeSecond)
+    expect(screen.queryByRole('dialog', { name: '安装 另一皮肤' })).toBeNull()
     await act(async () => {
       completed = true
       finishPoll({ ok: true, json: async () => ({ ...first, id: 'first-retry-running', phase: 'done', failure: undefined }) })
@@ -554,5 +576,68 @@ describe('client market recovery', () => {
     fireEvent.click(within(updated).getByRole('button', { name: '确认替换' }))
     await waitFor(() => expect(requestSent(fetchMock, '/migrate', 'POST')).toBe(true))
     expect(JSON.parse(String(fetchMock.mock.calls.find(([url, init]) => url.endsWith('/migrate') && init?.method === 'POST')?.[1]?.body))).toEqual({ skinId: skin.id, sourceContext: sourceMigration.context })
+  })
+  const reviewedSkin = {
+    ...skin,
+    install: { ...skin.install, target: `github:a/b#${'a'.repeat(40)}` },
+    review: { compatibility: 'verified', preview: 'verified', installation: 'verified' },
+  } satisfies CatalogSkin
+  it.each(['install', 'update'] as const)('prefills the official install panel when a Desktop %s fails without a Host reason', async kind => {
+    const operation = {
+      id: `plain-${kind}-desktop`, kind, skinId: skin.id, phase: 'failed' as const, startedAt: new Date().toISOString(),
+      message: '当前皮肤使用本地、自定义或无法继续核验的安装来源，无法自动换源；请按原安装方式更新',
+    }
+    const open = vi.fn(async (_spec: string) => ({ ok: true as const, kind: 'prefilled' as const }))
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [reviewedSkin] }
+      if (url.endsWith('/state')) return {
+        hostKind: 'desktop', runtime: dshRuntime, management: officialManagement,
+        skins: kind === 'update'
+          ? [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }]
+          : [],
+      }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
+      if (url.endsWith(`/${kind}`) && init?.method === 'POST') return { operationId: operation.id }
+      if (url.endsWith(`/operations/${operation.id}`)) return operation
+      throw new Error(`Unexpected request: ${url}`)
+    })
+    render(<SkinMarketSection t={key => key} desktopPluginPanel={{ available: () => true, open }} />)
+    await openSkinCard()
+    fireEvent.click(screen.getByRole('button', { name: kind === 'install' ? '安装' : '更新' }))
+    await waitFor(() => expect(open).toHaveBeenCalled())
+    expect(open).toHaveBeenCalledWith(`github:a/b#${'a'.repeat(40)}`, expect.objectContaining({ skinId: skin.id, packageName: skin.package, operationId: operation.id }), { navigateOnResume: false })
+    expect(screen.queryByRole('dialog', { name: kind === 'install' ? '安装未完成' : '更新未完成' })).toBeNull()
+    expect(document.body.textContent).not.toContain('未能完成本次操作')
+  })
+  it('opens the manual update panel when a Web update fails without a Host reason', async () => {
+    const operation = {
+      id: 'plain-update-web', kind: 'update' as const, skinId: skin.id, phase: 'failed' as const, startedAt: new Date().toISOString(),
+      message: 'installed package did not change to the reviewed source/version',
+    }
+    stubMarketFetch(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/catalog')) return { skins: [skin] }
+      if (url.endsWith('/state')) return { skins: [{ skinId: skin.id, installation: 'installed', activation: 'inactive', installedVersion: '0.9.0', updateAvailable: true }], runtime: dshRuntime }
+      if (url.endsWith('/market-update')) return { updateAvailable: false }
+      if (url.endsWith('/update') && init?.method === 'POST') return { operationId: operation.id }
+      if (url.endsWith(`/operations/${operation.id}`)) return operation
+      throw new Error(`Unexpected request: ${url}`)
+    })
+    render(<SkinMarketSection t={key => key} />)
+    await openSkinCard()
+    fireEvent.click(screen.getByRole('button', { name: '更新' }))
+    const dialog = await screen.findByRole('dialog', { name: '更新 测试皮肤' })
+    expect(dialog.textContent).toContain(zh['failure.manualInstallFallback'])
+    expect(dialog.textContent).not.toContain(operation.message)
+    expect(screen.queryByRole('dialog', { name: '更新未完成' })).toBeNull()
+    expect(document.body.textContent).not.toContain('未能完成本次操作')
+    // The diagnostic dialog is the last step: it only opens when the user says
+    // the manual panel still cannot finish the operation.
+    fireEvent.click(within(dialog).getByRole('button', { name: zh['common.stillCannotFinish'] }))
+    const diagnostic = await screen.findByRole('dialog', { name: '更新未完成' })
+    expect(diagnostic.textContent).toContain('未能完成本次操作')
+    expect(within(diagnostic).getByRole('button', { name: '复制日志' })).toBeTruthy()
+    expect(screen.queryByRole('dialog', { name: '更新 测试皮肤' })).toBeNull()
+    fireEvent.click(within(diagnostic).getByRole('button', { name: '知道了' }))
+    expect(screen.queryByRole('dialog', { name: '更新未完成' })).toBeNull()
   })
 })

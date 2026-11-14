@@ -13,6 +13,19 @@ describe('install recovery route', () => {
     expect(recoveryRoute({ phase: 'failed', kind: 'uninstall', failure: { kind: 'command', code: 'stop-profile' } })).toBe('decision')
   })
 
+  it('sends an ordinary Host failure to the install flow before the diagnostic dialog', () => {
+    for (const kind of ['install', 'update', 'migrate'] as const) {
+      expect(recoveryRoute({ phase: 'failed', kind, hasPinnedTarget: true })).toBe('install')
+      // Without a verified target the market cannot prefill the panel.
+      expect(recoveryRoute({ phase: 'failed', kind })).toBe('decision')
+      expect(recoveryRoute({ phase: 'failed', kind, hasPinnedTarget: true, diagnosticOnly: true })).toBe('decision')
+      expect(recoveryRoute({ phase: 'failed', kind, hasPinnedTarget: true, clientFailure: true })).toBe('decision')
+    }
+    expect(recoveryRoute({ phase: 'failed', kind: 'uninstall', hasPinnedTarget: true })).toBe('uninstall')
+    expect(recoveryRoute({ phase: 'failed', kind: 'uninstall', diagnosticOnly: true })).toBe('decision')
+    expect(recoveryRoute({ phase: 'failed', kind: 'activate', hasPinnedTarget: true })).toBe('decision')
+  })
+
   it('splits a known manual follow-up from an ordinary uninstall', () => {
     expect(recoveryRoute({ phase: 'failed', kind: 'update', failure: { manualFollowUp: 'uninstall-then-add' } })).toBe('replace')
     expect(recoveryRoute({ phase: 'failed', kind: 'update', failure: { manualFollowUp: 'install' } })).toBe('install')

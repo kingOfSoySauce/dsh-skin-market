@@ -6,7 +6,6 @@ import { describe, expect, it, vi } from 'vitest'
 vi.mock('@deepseek-ai/dsh-client-ui-primitives', async () => (await import('../fixtures/client-market.tsx')).createPrimitivesMock())
 
 import { SkinMarketSection } from '../../src/client/SkinMarketSection.tsx'
-import { MARKET_INSTALL_TROUBLESHOOT_URL } from '../../src/client/failure-help.ts'
 
 
 import { requestSent, stubMarketFetch } from '../fixtures/market-host.ts'
@@ -36,13 +35,15 @@ describe('client market operations', () => {
 
     await waitFor(() => expect(screen.getByRole('status').textContent).toContain('正在下载“测试皮肤”'))
     expect(within(screen.getByRole('status')).getByTitle(/^耗时 /).textContent).toMatch(/^\d+ 秒$/)
-    const dialog = await screen.findByRole('dialog', { name: '安装未完成' }, { timeout: 2_000 })
-    expect(dialog.textContent).toContain('未能完成本次操作。请复制日志反馈给市场维护者。')
+    // A plain Host failure now opens the manual install panel first; the
+    // diagnostic dialog is reserved for failures that already carry a reason.
+    const dialog = await screen.findByRole('dialog', { name: '安装 测试皮肤' }, { timeout: 2_000 })
+    expect(dialog.textContent).toContain(zh['failure.manualInstallFallback'])
     expect(dialog.textContent).not.toContain('GitHub 插件下载超时')
     expect(screen.queryByRole('status')).toBeNull()
     expect(screen.queryByRole('alert')).toBeNull()
     window.dispatchEvent(new Event('focus'))
-    expect(screen.getByRole('dialog', { name: '安装未完成' }).textContent).toContain('未能完成本次操作。请复制日志反馈给市场维护者。')
+    expect(screen.getByRole('dialog', { name: '安装 测试皮肤' }).textContent).toContain(zh['failure.manualInstallFallback'])
   })
   it('discloses command diagnostics, expires stale speed on its tick, and lets a running install copy its log', async () => {
     const now = Date.now()
@@ -245,27 +246,24 @@ describe('client market operations', () => {
     await openSkinCard()
     fireEvent.click(await screen.findByRole('button', { name: '仅安装' }))
 
-    const dialog = await screen.findByRole('dialog', { name: '安装未完成' })
-    expect(dialog.textContent).toContain('未能完成本次操作。请复制日志反馈给市场维护者。')
+    // The manual install panel carries the diagnostic handoff as a secondary
+    // action instead of opening the log-first dialog.
+    const dialog = await screen.findByRole('dialog', { name: '安装 测试皮肤' })
+    expect(dialog.textContent).toContain(zh['failure.manualInstallFallback'])
     expect(dialog.textContent).not.toContain(longMessage)
-    expect(dialog.querySelector('details, code, ul, ol')).toBeNull()
-    expect(dialog.className).toContain('warningModal')
     expect(dialog.textContent).not.toContain('diagnostic log')
     expect(dialog.textContent).not.toContain('为什么会这样')
-    expect([...dialog.querySelectorAll('p')].some(paragraph => paragraph.textContent?.trim() === '')).toBe(false)
     expect(screen.queryByRole('status')).toBeNull()
     expect(within(dialog).queryByRole('button', { name: '重试' })).toBeNull()
     expect(within(dialog).queryByRole('link', { name: '打开皮肤仓库' })).toBeNull()
-    expect(within(dialog).getByRole('link', { name: '查看安装排查' }).getAttribute('href')).toBe(MARKET_INSTALL_TROUBLESHOOT_URL)
-    const copyLog = within(dialog).getByRole('button', { name: '复制日志' })
-    expect(copyLog.querySelector('[data-icon="copy"]')).toBeTruthy()
-    fireEvent.click(copyLog)
-    await waitFor(() => expect(clipboard).toHaveBeenCalledWith(expect.stringContaining('diagnostic log')))
-    await waitFor(() => expect(copyLog.querySelector('[data-icon="check"]')).toBeTruthy())
-    expect(copyLog.textContent).toBe('复制日志')
-    expect(within(dialog).getByRole('button', { name: '复制日志' })).toBe(copyLog)
-    fireEvent.click(within(dialog).getByRole('button', { name: '知道了' }))
-    expect(screen.queryByRole('dialog', { name: '安装未完成' })).toBeNull()
+    expect(within(dialog).queryByRole('link', { name: '查看安装排查' })).toBeNull()
+    const copyPrompt = within(dialog).getByRole('button', { name: zh['common.copyTroubleshootingPrompt'] })
+    fireEvent.click(copyPrompt)
+    await waitFor(() => expect(clipboard).toHaveBeenCalledTimes(1))
+    expect(clipboard).toHaveBeenCalledWith(expect.stringContaining('# dsh-skin-market diagnostic log'))
+    expect(copyPrompt.textContent).toBe(zh['common.copyTroubleshootingPrompt'])
+    fireEvent.click(within(dialog).getAllByRole('button', { name: '关闭' })[0]!)
+    expect(screen.queryByRole('dialog', { name: '安装 测试皮肤' })).toBeNull()
     expect(screen.queryByRole('status')).toBeNull()
   })
   it('explains a missing bundle patch as a skin packaging intercept', async () => {

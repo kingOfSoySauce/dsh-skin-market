@@ -18,7 +18,7 @@ import { compareCatalogOrder, getCatalogListScreenshot, getCatalogScreenshotUrls
 import { generatedMediaFor, generatedMediaManifestUrl, generatedMediaUrl, parseGeneratedMediaManifest, previewSourceCandidates, setGeneratedMediaSources } from '../media-preview.ts'
 import { useLazyMedia } from '../media-visibility.ts'
 import { browserCatalogCache, type CatalogCache } from './catalog-cache.ts'
-import { conflictInstallCopy, createFailureRepairPrompt, existingSourceGuide, interceptNotice, isInterceptFailure, marketUpdateNotice } from './failure-help.ts'
+import { blocksInstallRecovery, conflictInstallCopy, createFailureRepairPrompt, existingSourceGuide, interceptNotice, isInterceptFailure, marketUpdateNotice } from './failure-help.ts'
 import { createSkinInstallCommandGroups, createSkinInstallCommands, createSkinInstallInputs, createSkinInstallPrompt, createSubmissionPrompt, REGISTRY_REPOSITORY } from './submission.ts'
 import { probeClientSkinSelection, switchClientSkin, type ClientSkinExpectation, type ClientSkinRuntime, type ClientSkinSelectionStatus } from './index.ts'
 import { displayTitle, githubRepoLabel } from '../display-title.ts'
@@ -1069,6 +1069,9 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const [browserOrigin, setBrowserOrigin] = useState<'discover' | 'installed'>('discover')
   const [showInstallOptions, setShowInstallOptions] = useState(false)
   const [installCopied, setInstallCopied] = useState<string | null>(null)
+  // The diagnostic dialog is the last step: it appears when the user says the
+  // manual install panel still cannot finish this operation.
+  const [diagnosticFailureId, setDiagnosticFailureId] = useState<string | null>(null)
   const [openingPluginPanel, setOpeningPluginPanel] = useState(false)
   const [marketUpdate, setMarketUpdate] = useState<MarketUpdateStatus | null>(null)
   const [marketOperation, setMarketOperation] = useState<MarketUpdateOperation | null>(null)
@@ -1706,6 +1709,20 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     return preferredInstallTarget(skin)
   }, [hostKind, officialDesktop])
 
+  const recoveryTargetSpec = useCallback((operation: { skinId?: string; failure?: Operation['failure'] }) => {
+    const skin = operation.skinId === undefined ? undefined : skinsRef.current.find(item => item.id === operation.skinId)
+    return operation.failure?.manualSpec || operation.failure?.fallbackSpec || (skin === undefined ? '' : pinnedRecoverySpec(skin))
+  }, [pinnedRecoverySpec])
+
+  const routeForOperation = useCallback((operation: { id: string; phase: string; kind?: Operation['kind']; skinId?: string; failure?: Operation['failure']; clientFailure?: boolean; message?: string }) => recoveryRoute({
+    phase: operation.phase,
+    kind: operation.kind ?? 'update',
+    failure: operation.failure,
+    clientFailure: operation.clientFailure === true,
+    hasPinnedTarget: recoveryTargetSpec(operation).trim() !== '',
+    diagnosticOnly: blocksInstallRecovery(operation.failure?.message ?? operation.message ?? ''),
+  }), [recoveryTargetSpec])
+
   const showInstallRecovery = useCallback((view: InstallRecoveryView) => {
     desktopPluginPanel?.noteRecovery?.(view.operationId, 'manual')
     if (view.skinId) {
@@ -1716,8 +1733,8 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     setInstallRecovery(view)
   }, [desktopPluginPanel])
 
-  const startInstallRecovery = useCallback(async (operation: { id: string; kind?: Operation['kind']; skinId?: string; failure?: Operation['failure'] }) => {
-    const route = recoveryRoute({ phase: 'failed', kind: operation.kind ?? 'update', failure: operation.failure })
+  const startInstallRecovery = useCallback(async (operation: { id: string; kind?: Operation['kind']; skinId?: string; failure?: Operation['failure']; clientFailure?: boolean; message?: string }) => {
+    const route = routeForOperation({ phase: 'failed', ...operation })
     if (route === 'ignore' || route === 'decision') return
     const skin = operation.skinId === undefined ? undefined : skinsRef.current.find(item => item.id === operation.skinId)
     const name = skin === undefined ? t('nav.market') : localizedSkinName(skin.name, t)
@@ -1746,7 +1763,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       return
     }
     showInstallRecovery({ operationId: operation.id, lead: 'open-failed', spec, skinId: skin?.id, packageName: handoff.packageName, companions })
-  }, [desktopPluginPanel, pinnedRecoverySpec, showInstallRecovery, t])
+  }, [desktopPluginPanel, routeForOperation, showInstallRecovery, t])
 
   useEffect(() => {
     if (installRecovery !== null) return undefined
@@ -1776,11 +1793,12 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       ...(marketOperation?.phase === 'failed' ? [{ id: marketOperation.id, kind: 'update' as const, skinId: undefined, failure: marketOperation.failure }] : []),
     ]
     const next = failed.find(operation => {
+      if (diagnosticFailureId !== null && operation.id === diagnosticFailureId) return false
       const status = desktopPluginPanel?.recoveryStatus?.(operation.id) ?? null
       if (status === 'opened' || status === 'started' || status === 'manual') return false
       if (status === 'blocked') return allowBlocked
       if (dismissedNoticeIds.includes(`failed:${operation.id}`)) return false
-      const route = recoveryRoute({ phase: 'failed', kind: operation.kind ?? 'update', failure: operation.failure })
+      const route = routeForOperation({ phase: 'failed', ...operation })
       return route !== 'decision' && route !== 'ignore'
     })
     if (next !== undefined) {
@@ -1788,7 +1806,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       void startInstallRecovery(next)
     }
     return undefined
-  }, [desktopPluginPanel, dismissedNoticeIds, installRecovery, marketOperation, operations, recoveryFocus, startInstallRecovery, t])
+  }, [desktopPluginPanel, diagnosticFailureId, dismissedNoticeIds, installRecovery, marketOperation, operations, recoveryFocus, routeForOperation, startInstallRecovery, t])
 
   useEffect(() => {
     recoveryViewMounted.current = true
@@ -2156,7 +2174,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       await refresh().catch(() => undefined)
       const message = reason instanceof Error ? reason.message : String(reason)
       setOperations(list => list.map(operation => operation.id === operationId
-        ? { ...operation, phase: 'failed', cancelable: false, message }
+        ? { ...operation, phase: 'failed', cancelable: false, message, clientFailure: true }
         : operation))
       setError(null)
     }
@@ -2584,7 +2602,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         await refresh(false, undefined, false).catch(() => undefined)
         const message = reason instanceof Error ? reason.message : String(reason)
         setOperations(list => upsertOperation(list, {
-          id: clientFailureId(`skin-operation-failed-${target.id}`), kind, skinId: target.id, phase: 'failed', startedAt: new Date().toISOString(), message,
+          id: clientFailureId(`skin-operation-failed-${target.id}`), kind, skinId: target.id, phase: 'failed', startedAt: new Date().toISOString(), message, clientFailure: true,
         }))
         setError(null)
         await restoreInstallRestartNotice(target.id, false, kind === 'activate')
@@ -2980,10 +2998,11 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     </article>
   }
 
-  const needsFailurePrompt = (operation: { id: string; phase?: string; kind?: Operation['kind']; skinId?: string; failure?: Operation['failure'] }) => {
+  const needsFailurePrompt = (operation: { id: string; phase?: string; kind?: Operation['kind']; skinId?: string; failure?: Operation['failure']; clientFailure?: boolean; message?: string }) => {
+    if (diagnosticFailureId !== null && operation.id === diagnosticFailureId) return true
     if (operation.failure?.kind === 'conflict' && operation.skinId !== undefined && !conflictCloseTried.current.has(operation.skinId) && enabledSkinsForInstallConflict(operation, skins, states).length > 0) return false
     if (compatibilityConfirmation?.installConflict?.operationId === operation.id) return false
-    const route = recoveryRoute({ phase: operation.phase ?? '', kind: operation.kind ?? 'update', failure: operation.failure })
+    const route = routeForOperation({ phase: operation.phase ?? '', ...operation })
     return route === 'decision'
       && (isInterceptFailure(operation) || operation.phase === 'failed' && operation.failure?.action === 'retry')
       && !dismissedNoticeIds.includes(`failed:${operation.id}`)
@@ -3070,6 +3089,15 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
       retryBlockedRecovery.current = true
     }
     setInstallRecovery(null)
+  }
+  const openManualDiagnostic = () => {
+    if (manualRecovery === null || recoveryOperation === undefined) return
+    recoveryClaim.current = null
+    desktopPluginPanel?.forgetRecovery?.(manualRecovery.operationId)
+    setPromptFallback(null)
+    setShowInstallOptions(false)
+    setInstallRecovery(null)
+    setDiagnosticFailureId(recoveryOperation.id)
   }
   const sourceGuide = existingSourceGuide({
     failure: interceptFailure,
@@ -3171,6 +3199,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
     setCopyLogError(null)
     setPromptFallback(null)
     setInterceptApprovalError(null)
+    setDiagnosticFailureId(null)
     if (interceptOperation !== null) {
       operationCompatibilityContexts.current.delete(interceptOperation.id)
       if (interceptOperation.kind === 'install') pendingInstallActivation.current.delete(interceptOperation.skinId)
@@ -3746,6 +3775,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
         description={manualPanelDescription}
         footer={<>
           {manualRecovery !== null && recoveryPrompt !== null && <Button variant="outline" size="sm" onClick={() => void copyRecoveryPrompt()}>{t('common.copyTroubleshootingPrompt')}</Button>}
+          {manualRecovery !== null && recoveryOperation !== undefined && <Button variant="ghost" size="sm" onClick={openManualDiagnostic}>{t('common.stillCannotFinish')}</Button>}
           <Button variant="outline" size="sm" onClick={closeManualPanel}>{t('common.close')}</Button>
         </>}
       >

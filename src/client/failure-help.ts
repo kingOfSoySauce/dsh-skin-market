@@ -69,6 +69,24 @@ function hasRecoveryFailure(message: string): boolean {
   return /恢复.{0,12}(?:未完成|失败)|原有版本不一致|未能确认.{0,12}恢复|恢复后.{0,24}未还原/.test(message)
 }
 
+const MISSING_BUNDLE_PATCH = /bundle patch is missing:\s*(\S+)/
+const CONFLICT_DIAGNOSTIC = '发现插件安装冲突'
+const METADATA_MISMATCH = '目录元数据与包实际声明不一致'
+
+/**
+ * Plain messages that must stay in the diagnostic dialog. Retrying the install
+ * cannot finish these operations, so the install panel and the manual panel
+ * cannot help.
+ */
+export function blocksInstallRecovery(message: string): boolean {
+  const raw = message.trim()
+  return raw !== ''
+    && (hasRecoveryFailure(raw)
+      || MISSING_BUNDLE_PATCH.test(raw)
+      || raw.includes(CONFLICT_DIAGNOSTIC)
+      || raw.includes(METADATA_MISMATCH))
+}
+
 function hasMissingArtifact(message: string): boolean {
   return /未物化|declared executable artifact missing|(?:package manifest|client export) missing|no executable artifact/i.test(message)
 }
@@ -474,7 +492,7 @@ export function interceptNotice(operation: Operation, skinName: string, skin?: (
       links: skin == null ? [{ href: MARKET_CONFIG_OVERRIDE_URL, label: t('failure.links.handling') }] : [],
     }
   }
-  const missingPatch = /bundle patch is missing:\s*(\S+)/.exec(raw)
+  const missingPatch = MISSING_BUNDLE_PATCH.exec(raw)
   if (missingPatch !== null) {
     return {
       title: t('failure.installBlocked'),
@@ -483,7 +501,7 @@ export function interceptNotice(operation: Operation, skinName: string, skin?: (
       links,
     }
   }
-  if (operation.failure?.kind === 'conflict' || raw.includes('发现插件安装冲突')) {
+  if (operation.failure?.kind === 'conflict' || raw.includes(CONFLICT_DIAGNOSTIC)) {
     const described = conflictInstallCopy(operation.failure?.conflicts, t)
     return {
       title: t('failure.installBlocked'),
@@ -502,7 +520,7 @@ export function interceptNotice(operation: Operation, skinName: string, skin?: (
       links,
     }
   }
-  if (raw.includes('目录元数据与包实际声明不一致')) {
+  if (raw.includes(METADATA_MISMATCH)) {
     return {
       title: t('failure.installBlocked'),
       what: t('failure.metadataMismatch', { name: skinName }),

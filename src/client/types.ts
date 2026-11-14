@@ -153,6 +153,8 @@ export interface Operation {
   preservedSkinIds?: string[]
   preservedSkinApprovals?: Record<string, { compatibilityContext: string; artifactContext?: string }>
   selectionContext?: string
+  /** Raised by the market's own request loop; the Host never returned this result. */
+  clientFailure?: boolean
   phase: 'queued' | 'resolving' | 'downloading' | 'installing' | 'validating' | 'activating' | 'waiting' | 'cancelling' | 'cancelled' | 'done' | 'failed'
   message?: string
   messageKey?: OperationMessageFields['messageKey']
