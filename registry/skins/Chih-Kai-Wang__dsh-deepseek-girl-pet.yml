@@ -1,0 +1,53 @@
+id: chih.kai.wang.dsh.deepseek.girl.pet
+name:
+  zh: deepseek娘桌宠
+  en: DeepSeek Girl Pet
+author: Chih-Kai-Wang
+description: 右下角常驻一位 DeepSeek 娘桌宠：待机时抱着写「区」的板子，任务运行时换成工作动画，等待互动时换成等待动画；光标移动时她分 16 个方向（每 22.5° 一格）盯着鼠标，停下 1.1 秒后回到待机，点一下可在常规与放大尺寸间切换。
+repo: https://github.com/Chih-Kai-Wang/dsh-deepseek-girl-pet
+package: dsh-deepseek-girl-pet
+rowId: deepseek-girl-pet
+category: pet
+tags:
+  - pet
+  - anime
+  - overlay
+  - spritesheet
+modes:
+  - light
+  - dark
+install:
+  target: github:Chih-Kai-Wang/dsh-deepseek-girl-pet#ef8cad273804714b699fcc43674a820e02ec1813
+  version: 0.2.0
+  commit: ef8cad273804714b699fcc43674a820e02ec1813
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Chih-Kai-Wang/dsh-deepseek-girl-pet/ef8cad273804714b699fcc43674a820e02ec1813/assets/deepseek-girl-harness-demo.gif
+  - https://raw.githubusercontent.com/Chih-Kai-Wang/dsh-deepseek-girl-pet/ef8cad273804714b699fcc43674a820e02ec1813/assets/spritesheet.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1518
+starsSnapshot: 5
+releaseUpdatedAt: 2026-11-14T19:39:31.051Z
+metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+starsUpdatedAt: 2026-11-14T19:39:31.051Z
+updatedAt: 2026-11-14T19:39:31.051Z
+listScreenshot: https://raw.githubusercontent.com/Chih-Kai-Wang/dsh-deepseek-girl-pet/ef8cad273804714b699fcc43674a820e02ec1813/assets/deepseek-girl-harness-demo.gif

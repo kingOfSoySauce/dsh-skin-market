@@ -1,0 +1,57 @@
+id: clown139880.dsh.live2d.avatar
+name:
+  zh: Live2D 形象舞台
+  en: Live2D Avatar Stage
+author: clown139880
+description: 对话、轨迹、形象三个视图，其中形象视图是一块 Live2D 舞台：内置 Haru 示例模型开箱即用，也能导入自己的 Cubism 2/3+ 模型并设置模型目录、缩放和位置；普通 Web 里是页面内可拖动的桌宠，Desktop 可开透明、无边框、置顶的独立窗口。表情控制 prompt 与 ASR/TTS 默认关闭，按对话授权或自行配置服务。
+repo: https://github.com/clown139880/dsh-live2d-avatar
+package: dsh-live2d-avatar
+rowId: live2d-avatar
+category: pet
+tags:
+  - live2d
+  - avatar
+  - desktop-pet
+  - cubism
+  - voice
+modes:
+  - light
+  - dark
+install:
+  target: github:clown139880/dsh-live2d-avatar#505d51b78bff92bf72e2e2250f31bc2fc508287c
+  version: 0.3.0
+  commit: 505d51b78bff92bf72e2e2250f31bc2fc508287c
+compatibility:
+  dsh: ^0.1.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/clown139880/dsh-live2d-avatar/505d51b78bff92bf72e2e2250f31bc2fc508287c/docs/images/stage-haru.png
+  - https://raw.githubusercontent.com/clown139880/dsh-live2d-avatar/505d51b78bff92bf72e2e2250f31bc2fc508287c/docs/images/desktop-pet.png
+  - https://raw.githubusercontent.com/clown139880/dsh-live2d-avatar/505d51b78bff92bf72e2e2250f31bc2fc508287c/docs/images/custom-model-settings.png
+  - https://raw.githubusercontent.com/clown139880/dsh-live2d-avatar/505d51b78bff92bf72e2e2250f31bc2fc508287c/docs/images/prompt-consent.png
+  - https://raw.githubusercontent.com/clown139880/dsh-live2d-avatar/505d51b78bff92bf72e2e2250f31bc2fc508287c/docs/images/haru-runtime-preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1515
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T19:39:31.051Z
+metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+starsUpdatedAt: 2026-11-14T19:39:31.051Z
+updatedAt: 2026-11-14T19:39:31.051Z
+listScreenshot: https://raw.githubusercontent.com/clown139880/dsh-live2d-avatar/505d51b78bff92bf72e2e2250f31bc2fc508287c/docs/images/stage-haru.png

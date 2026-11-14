@@ -1,0 +1,54 @@
+id: wcnmamrs.dsh.theme.neumorph
+name:
+  zh: 新拟态主题
+  en: Neumorphic Theme
+author: wcnmamrs
+description: "冷灰表面配钢蓝强调色，用成对的高光与暗部软阴影做出新拟态浮雕：卡片柔和投影、输入区内凹、菜单与对话框双向浮雕、侧栏带沟槽；浅色模式是 #e0e5ec 冷灰底，深色模式切到 #262b31 与 #7ea6c9 强调。只覆盖 72 个宿主颜色与圆角 token，不碰第三方插件，插件停用即完全还原。"
+repo: https://github.com/wcnmamrs/dsh-theme-neumorph
+package: dsh-theme-neumorph
+rowId: dsh-theme-neumorph
+category: skin
+tags:
+  - neumorphism
+  - soft-ui
+  - light-dark
+  - grey
+modes:
+  - light
+  - dark
+install:
+  target: github:wcnmamrs/dsh-theme-neumorph#1561f7622851b3a3835c4dd3f58c44f2ec6fbc0b
+  version: 1.0.1
+  commit: 1561f7622851b3a3835c4dd3f58c44f2ec6fbc0b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/wcnmamrs/dsh-theme-neumorph/1561f7622851b3a3835c4dd3f58c44f2ec6fbc0b/assets/screenshot-1.jpg
+  - https://raw.githubusercontent.com/wcnmamrs/dsh-theme-neumorph/1561f7622851b3a3835c4dd3f58c44f2ec6fbc0b/assets/screenshot-2.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1516
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T19:39:31.051Z
+metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+starsUpdatedAt: 2026-11-14T19:39:31.051Z
+updatedAt: 2026-11-14T19:39:31.051Z
+listScreenshot: https://raw.githubusercontent.com/wcnmamrs/dsh-theme-neumorph/1561f7622851b3a3835c4dd3f58c44f2ec6fbc0b/assets/screenshot-1.jpg

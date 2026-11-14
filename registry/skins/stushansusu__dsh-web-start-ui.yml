@@ -1,0 +1,51 @@
+id: stushansusu.dsh.web.start.ui
+name:
+  zh: 青花瓷与鲸鱼娘启动动画
+  en: Blue-and-White & Whale Girl Splash
+author: stushansusu
+description: 打开页面先全屏播放一段约 12 秒启动视频，放完再揭开界面，点击或按 Esc 可随时跳过；随包内置「青花瓷 · 水墨」（2024×1080 HEVC，12.28 秒）与「鲸鱼娘 · 千恋万花」（2560×1440 H.264，12.25 秒）两套片头，设置页还能上传、预览和删除自定义 mp4/webm/mov。
+repo: https://github.com/stushansusu/dsh-web-start-ui
+package: "@linxin666/dsh-web-start-ui"
+rowId: ui-web-start-ui
+category: splash
+tags:
+  - splash
+  - video
+  - custom
+  - skippable
+modes:
+  - light
+  - dark
+install:
+  target: github:stushansusu/dsh-web-start-ui#00eaa6f75788cd2c4eecda79e1344d3dd73d8eee
+  version: 0.4.7
+  commit: 00eaa6f75788cd2c4eecda79e1344d3dd73d8eee
+compatibility:
+  dsh: 0.2.0--rc.2-4c6ef5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/stushansusu/dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/assets/launch/qinghua/poster.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 1520
+starsSnapshot: 8
+releaseUpdatedAt: 2026-11-14T19:39:31.051Z
+metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+starsUpdatedAt: 2026-11-14T19:39:31.051Z
+updatedAt: 2026-11-14T19:39:31.051Z
+listScreenshot: https://raw.githubusercontent.com/stushansusu/dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/assets/launch/qinghua/poster.jpg

@@ -1,0 +1,55 @@
+id: biotechdrli.byte.dsh.desktop.transparency
+name:
+  zh: 分区透明壁纸
+  en: Per-Region Transparent Wallpaper
+author: biotechdrli-byte
+description: 让桌面端窗口看起来真的透到桌面：按屏幕坐标把系统壁纸钉在窗口底下、窗口移动时反向补偿，再按区域调透明度；壁纸模糊 0–60px、背景压暗 0–1 均可调，Ctrl+Alt+方向键可微调对齐。
+repo: https://github.com/biotechdrli-byte/dsh-desktop-transparency
+package: dsh-desktop-transparency
+rowId: dsh-desktop-transparency
+category: skin
+tags:
+  - desktop-only
+  - transparency
+  - wallpaper
+  - per-region
+modes:
+  - light
+  - dark
+install:
+  target: github:biotechdrli-byte/dsh-desktop-transparency#d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04
+  version: 0.7.0
+  commit: d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/demo.gif
+  - https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/edge.jpg
+  - https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/overview.jpg
+  - https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/regions.jpg
+  - https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/panel.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1514
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T19:39:31.051Z
+metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+starsUpdatedAt: 2026-11-14T19:39:31.051Z
+updatedAt: 2026-11-14T19:39:31.051Z
+listScreenshot: https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/demo.gif
