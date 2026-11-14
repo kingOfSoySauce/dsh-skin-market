@@ -120,6 +120,9 @@ First follow the specific reason shown in the market dialog or banner. Do not re
 
 ### The market disappeared after an update
 
+<details>
+<summary>Expand the cause and repair steps</summary>
+
 On official Desktop, older builds removed `dsh-skin-market` when you clicked “Update”, then tried to reinstall it. Removing the bundle unloads the running market, so the reinstall never ran and the profile was left without it.
 
 1. Do not click “Update” in the market again; that repeats the same step.
@@ -127,6 +130,8 @@ On official Desktop, older builds removed `dsh-skin-market` when you clicked “
 3. If the in-app install is refused, quit DSH completely (closing the window is not enough), run `pnpm add dsh-skin-market@latest` in the profile directory (usually `~/.dsh/profiles/desktop`; on Windows `%USERPROFILE%\.dsh\profiles\desktop`), confirm both `dependencies` and `dsh.profile.bundles` contain `dsh-skin-market`, then reopen.
 
 Fixed builds overlay the new package in place with the pnpm DSH publishes, without removing the market. A restart is still required to load the new code.
+
+</details>
 
 <a id="release-wait"></a>
 ### Installation blocked by new-package protection
@@ -148,6 +153,9 @@ If you are running inside this DSH, do not modify its active combination configu
 
 <a id="profile-dependency-repair"></a>
 ### Installation blocked by an unreachable installed dependency
+
+<details>
+<summary>Expand the cause, diagnostic commands, and repair steps</summary>
 
 The error looks like `ERR_PNPM_FETCH_404` with a URL under `codeload.github.com/...`, and that repository belongs to a plugin you installed **earlier**, not to the skin you are installing now. pnpm resolves every Git dependency in the profile on each install; once one upstream repository or commit is deleted, every install, update, uninstall, and market self-update fails.
 
@@ -181,6 +189,8 @@ This DSH skin install/update failed during pnpm dependency resolution: the error
 
 </details>
 
+</details>
+
 ### Reset skins when the Web page is broken
 
 If a skin conflict makes the DSH Web page unusable, stop the current DSH Web process first, then run:
@@ -191,44 +201,9 @@ If a skin conflict makes the DSH Web page unusable, stop the current DSH Web pro
 
 This command disables skins managed by Skin Market and restores the default appearance, while keeping the installed skin packages and Skin Market. Then restart DSH Web. Do not run this Web profile command for official Desktop. Disable the conflicting skin in the app’s plugin manager or in the market instead.
 
-## For developers
+## For skin authors
 
 If you maintain a DSH skin, give one of the prompts below to an Agent to prepare a catalog entry or update your own entry. The market does not log in to GitHub for you or silently create a PR.
-
-A new entry is a thin YAML file; fields and priority are in the table below. `url` is required; the name, author, description, category, tags, modes, preview images, and subpath are optional — fill in what you can confirm and CI derives the rest. CI reads the package, loader id, commit, license, and compatibility range from the skin repository. Do not write them into the YAML. A community PR adds exactly one `registry/skins/<owner>__<repo>.yml`; do not edit `data/catalog.json`, and do not edit `data/catalog-copy.json` in the PR that adds an entry.
-
-<!-- submission-contract:START -->
-| Group | Fields / items | Rule |
-| --- | --- | --- |
-| Author (thin entry) | `url`, `subpath`, `name`, `author`, `description`, `category`, `tags`, `modes`, `screenshots` | Write only these. If you write `name`, include both `zh` and `en`. Every field except `url` may be omitted; CI derives the default: `name`=repository name (subdirectory name for a subpackage), `author`=GitHub owner, `description`=`package.json` description, `category`=`skin`, `tags`=`appearance`, `modes`=`light` and `dark`, `screenshots`=repository `screenshots.json` or README images. |
-| Filled by CI | `package`, `rowId`, `install`, `license`, `compatibility` | Do not write these; the schema rejects them. |
-| Soft-required (non-blocking, enters the completion queue) | a usable preview image (upstream or captured), bilingual display name / description, motion GIF, splash launchGif | An entry may merge without them; it is recorded in the daily completeness report and enters the completion queue once enabled. |
-| Recommended (advisory only) | captured `marketScreenshots`, cover `listScreenshot`, WebP `media`, README install command / version range (Web and official Desktop) / `dsh-plugin` topic, Desktop install support (npm package or manual install notes) | Never blocks a merge. |
-| Existing entry update (author-editable) | `name`, `author`, `description`, `category`, `tags`, `modes`, `screenshots`, `listScreenshot`, `marketScreenshots`, `compatibility.dsh`, `data/catalog-copy.json` | Merging a community PR is the review: change only your own entry's display fields, compatibility range, and Chinese/English display copy; attach pinned-commit evidence when changing the compatibility range, never touch another entry, and never fabricate a commit or rowId. |
-
-Field notes:
-- `name`: Both `zh` and `en` must be non-empty.
-- `author`: Author credit.
-- `description`: Describe what the user sees or the behavior.
-- `category`: One of `skin`, `pet`, `player`, or `splash`.
-- `tags`: Non-empty array of strings.
-- `modes`: Non-empty subset of `light` and `dark`.
-- `screenshots`: Array order is the display order.
-- `listScreenshot`: Cover; must reference an existing URL in this entry's `screenshots` or `marketScreenshots`.
-- `marketScreenshots`: Reorder existing screenshots only; the set must not change.
-- `compatibility.dsh`: A valid semver range; never revert to `unverified`. Attach evidence in the PR body: README, `package.json` `engines.dsh`, or a compatibility doc link at a pinned commit.
-- `data/catalog-copy.json`: Only your own entry's `name`, `description`, and `descriptionPolicy` (`show` or `omit`); keep any existing `source`/`override`/`nameSource` unchanged; new display copy may add only these three keys.
-<!-- submission-contract:END -->
-
-CI must be able to read the skin repository: a public GitHub repository or monorepo subdirectory; `package.json` with name, version, license, and `dsh.client`; and a matching loader row in `cordis.patch.yml`. Preview images must be png, jpg, webp, or gif files in the repository. It also helps to declare the DSH Web and official Desktop version ranges and a `dsh plugin add` command in the README, and to add the `dsh-plugin` topic.
-
-Merging a community PR is the review for an existing entry: an author can update their own entry's display fields, compatibility range, and Chinese/English display copy in the same PR. The editable fields are the 'Existing entry update' row in the table above and the field notes below it. Constraints: `screenshots` order is the display order; `listScreenshot` must reference an image already in that entry's `screenshots` or `marketScreenshots`; `marketScreenshots` may only be reordered and the set must not change; `compatibility.dsh` must be a valid semver range and must not go back to `unverified`, and the PR body must attach evidence from a pinned commit: README, `package.json` `engines.dsh`, or a compatibility doc link.
-
-To update display copy, the same PR may edit the author's own entry in `data/catalog-copy.json`: only `name`, `description`, and `descriptionPolicy` (`show` or `omit`). `show` requires both Chinese and English descriptions; `omit` must not keep a description. Existing `source`, `override`, and `nameSource` must stay unchanged; an entry without display copy may add only these three keys.
-
-Do not change id, repo, subpath, package, rowId, install, license, review, health, featuredRank, star counts, or any timestamp. Do not edit `data/catalog.json`, do not touch another author's entry, and do not invent a commit, rowId, or compatibility evidence. CI checks the PR's own diff: exactly one `registry/skins/*.yml`, optionally one own `data/catalog-copy.json`. This PR does not refresh the pinned version. Acceptance is not a security certification.
-
-Local acceptance steps are in [TESTING.md](./TESTING.md).
 
 <details>
 <summary><strong>Click to expand the skin submission prompt</strong></summary>
@@ -314,6 +289,41 @@ Note: merging the PR is the review. CI checks that the PR's own diff contains ex
 ```
 
 </details>
+
+A new entry is a thin YAML file; fields and priority are in the table below. `url` is required; the name, author, description, category, tags, modes, preview images, and subpath are optional — fill in what you can confirm and CI derives the rest. CI reads the package, loader id, commit, license, and compatibility range from the skin repository. Do not write them into the YAML. A community PR adds exactly one `registry/skins/<owner>__<repo>.yml`; do not edit `data/catalog.json`, and do not edit `data/catalog-copy.json` in the PR that adds an entry.
+
+<!-- submission-contract:START -->
+| Group | Fields / items | Rule |
+| --- | --- | --- |
+| Author (thin entry) | `url`, `subpath`, `name`, `author`, `description`, `category`, `tags`, `modes`, `screenshots` | Write only these. If you write `name`, include both `zh` and `en`. Every field except `url` may be omitted; CI derives the default: `name`=repository name (subdirectory name for a subpackage), `author`=GitHub owner, `description`=`package.json` description, `category`=`skin`, `tags`=`appearance`, `modes`=`light` and `dark`, `screenshots`=repository `screenshots.json` or README images. |
+| Filled by CI | `package`, `rowId`, `install`, `license`, `compatibility` | Do not write these; the schema rejects them. |
+| Soft-required (non-blocking, enters the completion queue) | a usable preview image (upstream or captured), bilingual display name / description, motion GIF, splash launchGif | An entry may merge without them; it is recorded in the daily completeness report and enters the completion queue once enabled. |
+| Recommended (advisory only) | captured `marketScreenshots`, cover `listScreenshot`, WebP `media`, README install command / version range (Web and official Desktop) / `dsh-plugin` topic, Desktop install support (npm package or manual install notes) | Never blocks a merge. |
+| Existing entry update (author-editable) | `name`, `author`, `description`, `category`, `tags`, `modes`, `screenshots`, `listScreenshot`, `marketScreenshots`, `compatibility.dsh`, `data/catalog-copy.json` | Merging a community PR is the review: change only your own entry's display fields, compatibility range, and Chinese/English display copy; attach pinned-commit evidence when changing the compatibility range, never touch another entry, and never fabricate a commit or rowId. |
+
+Field notes:
+- `name`: Both `zh` and `en` must be non-empty.
+- `author`: Author credit.
+- `description`: Describe what the user sees or the behavior.
+- `category`: One of `skin`, `pet`, `player`, or `splash`.
+- `tags`: Non-empty array of strings.
+- `modes`: Non-empty subset of `light` and `dark`.
+- `screenshots`: Array order is the display order.
+- `listScreenshot`: Cover; must reference an existing URL in this entry's `screenshots` or `marketScreenshots`.
+- `marketScreenshots`: Reorder existing screenshots only; the set must not change.
+- `compatibility.dsh`: A valid semver range; never revert to `unverified`. Attach evidence in the PR body: README, `package.json` `engines.dsh`, or a compatibility doc link at a pinned commit.
+- `data/catalog-copy.json`: Only your own entry's `name`, `description`, and `descriptionPolicy` (`show` or `omit`); keep any existing `source`/`override`/`nameSource` unchanged; new display copy may add only these three keys.
+<!-- submission-contract:END -->
+
+CI must be able to read the skin repository: a public GitHub repository or monorepo subdirectory; `package.json` with name, version, license, and `dsh.client`; and a matching loader row in `cordis.patch.yml`. Preview images must be png, jpg, webp, or gif files in the repository. It also helps to declare the DSH Web and official Desktop version ranges and a `dsh plugin add` command in the README, and to add the `dsh-plugin` topic.
+
+Merging a community PR is the review for an existing entry: an author can update their own entry's display fields, compatibility range, and Chinese/English display copy in the same PR. The editable fields are the 'Existing entry update' row in the table above and the field notes below it. Constraints: `screenshots` order is the display order; `listScreenshot` must reference an image already in that entry's `screenshots` or `marketScreenshots`; `marketScreenshots` may only be reordered and the set must not change; `compatibility.dsh` must be a valid semver range and must not go back to `unverified`, and the PR body must attach evidence from a pinned commit: README, `package.json` `engines.dsh`, or a compatibility doc link.
+
+To update display copy, the same PR may edit the author's own entry in `data/catalog-copy.json`: only `name`, `description`, and `descriptionPolicy` (`show` or `omit`). `show` requires both Chinese and English descriptions; `omit` must not keep a description. Existing `source`, `override`, and `nameSource` must stay unchanged; an entry without display copy may add only these three keys.
+
+Do not change id, repo, subpath, package, rowId, install, license, review, health, featuredRank, star counts, or any timestamp. Do not edit `data/catalog.json`, do not touch another author's entry, and do not invent a commit, rowId, or compatibility evidence. CI checks the PR's own diff: exactly one `registry/skins/*.yml`, optionally one own `data/catalog-copy.json`. This PR does not refresh the pinned version. Acceptance is not a security certification.
+
+Local acceptance steps are in [TESTING.md](./TESTING.md).
 
 ## License
 
