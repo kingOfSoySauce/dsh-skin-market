@@ -20,9 +20,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#6421ca5f01535b26791d4ce945b4be7f265cc6b5&path:/maid-atelier
-  version: 0.1.10
-  commit: 6421ca5f01535b26791d4ce945b4be7f265cc6b5
+  target: github:Small-tailqwq/dsh-deep-whale#811fa53b712a16ce5f5278529bb76d5a033a1d13&path:/maid-atelier
+  version: 0.1.11
+  commit: 811fa53b712a16ce5f5278529bb76d5a033a1d13
   desktop:
     mode: manual-only
     reason: companion-not-desktop-installable
@@ -34,10 +34,10 @@ install:
       rowId: ui-skin-deep-whale-manager
   npm:
     name: "@smalltailqwq/dsh-client-ui-skin-maid-atelier"
-    version: 0.1.10
-    integrity: sha512-eQFyZqzmTJmHveYwIESa8brF2w9rN4Cge+tw88T0SIEMkdN1FSCoQ+HZioK+Y4vr5qyNUaUBmjpmoBfSSufBgA==
+    version: 0.1.11
+    integrity: sha512-PT/RrI02XgQAIzRoAghvb4FQMM+AS9ySYJG0bH4NImEtnMXkSSRvWbFSGfUXhfKcpiZVHX/ZDN9nvldxcTTbKg==
     repository: https://github.com/Small-tailqwq/dsh-deep-whale
-    gitHead: 6421ca5f01535b26791d4ce945b4be7f265cc6b5
+    gitHead: 811fa53b712a16ce5f5278529bb76d5a033a1d13
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -61,21 +61,21 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 6421ca5f01535b26791d4ce945b4be7f265cc6b5
-    packageVersion: 0.1.10
+    commit: 811fa53b712a16ce5f5278529bb76d5a033a1d13
+    packageVersion: 0.1.11
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-11-13T00:11:28.739Z
+    checkedAt: 2026-11-14T00:22:40.688Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
-starsSnapshot: 3096
 featuredRank: 2
-releaseUpdatedAt: 2026-11-13T00:28:13.548Z
-metadataUpdatedAt: 2026-11-13T00:28:13.548Z
-starsUpdatedAt: 2026-11-13T00:28:13.548Z
-updatedAt: 2026-11-13T00:28:13.548Z
+starsSnapshot: 3103
+releaseUpdatedAt: 2026-11-14T00:22:42.181Z
+metadataUpdatedAt: 2026-11-14T00:22:42.181Z
+starsUpdatedAt: 2026-11-14T00:22:42.181Z
+updatedAt: 2026-11-14T00:22:42.181Z

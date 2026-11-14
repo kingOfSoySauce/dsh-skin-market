@@ -20,6 +20,9 @@ install:
   target: github:xuyixi992/dsh-fish-theme#4d0708fe0f5bbf5dedbd12c75d08ab655f9066ed
   version: 1.0.0
   commit: 4d0708fe0f5bbf5dedbd12c75d08ab655f9066ed
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -27,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/xuyixi992/dsh-fish-theme/4d0708fe0f5bbf5dedbd12c75d08ab655f9066ed/preview/main-page-light.png
   - https://raw.githubusercontent.com/xuyixi992/dsh-fish-theme/4d0708fe0f5bbf5dedbd12c75d08ab655f9066ed/preview/settings-light.png
+listScreenshot: https://raw.githubusercontent.com/xuyixi992/dsh-fish-theme/4d0708fe0f5bbf5dedbd12c75d08ab655f9066ed/preview/main-page-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,16 +44,23 @@ health:
     installCommand: improve
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 4d0708fe0f5bbf5dedbd12c75d08ab655f9066ed
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:24:04.888Z
+    findings: []
 license:
-  code: CC-BY-NC-SA-4.0
+  code: (MIT AND CC-BY-NC-SA-4.0)
   commercialUse: false
 featuredRank: 1154
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+releaseUpdatedAt: 2026-11-14T00:24:05.144Z
+metadataUpdatedAt: 2026-11-14T00:24:05.144Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/xuyixi992/dsh-fish-theme/4d0708fe0f5bbf5dedbd12c75d08ab655f9066ed/preview/main-page-light.png
+updatedAt: 2026-11-14T00:24:05.144Z

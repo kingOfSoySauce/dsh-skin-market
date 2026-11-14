@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ifer47/dsh-theme-shelter#67cd82ddc0cf5827408dfd4b92eb6286a6510183
-  version: 0.3.1
-  commit: 67cd82ddc0cf5827408dfd4b92eb6286a6510183
+  target: github:ifer47/dsh-theme-shelter#20948a047e95aae8df77574b924c697c6dea14f6
+  version: 0.7.3
+  commit: 20948a047e95aae8df77574b924c697c6dea14f6
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-shelter
+    packageVersion: 0.7.3
+    integrity: sha512-oKa86uqjLE9LHDhT0ptXj7BKzVXjzF5uk3dsc67+jfvUCxXEzuAKpIUP4unh+BTqDIlpNPzBrNG47Crl3WpoHg==
+  npm:
+    name: dsh-theme-shelter
+    version: 0.7.3
+    integrity: sha512-oKa86uqjLE9LHDhT0ptXj7BKzVXjzF5uk3dsc67+jfvUCxXEzuAKpIUP4unh+BTqDIlpNPzBrNG47Crl3WpoHg==
+    repository: https://github.com/ifer47/dsh-theme-shelter
+    gitHead: 20948a047e95aae8df77574b924c697c6dea14f6
 compatibility:
   dsh: unverified
   platform:
@@ -29,6 +41,7 @@ screenshots:
   - https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/67cd82ddc0cf5827408dfd4b92eb6286a6510183/docs/night-snow.jpg
   - https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/67cd82ddc0cf5827408dfd4b92eb6286a6510183/docs/night-fire.jpg
   - https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/67cd82ddc0cf5827408dfd4b92eb6286a6510183/docs/preview-panel.jpg
+listScreenshot: https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/67cd82ddc0cf5827408dfd4b92eb6286a6510183/docs/night-rain.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -42,15 +55,22 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 20948a047e95aae8df77574b924c697c6dea14f6
+    packageVersion: 0.7.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-13T00:12:21.416Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1148
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+featuredRank: 1148
+releaseUpdatedAt: 2026-11-14T00:22:37.200Z
+metadataUpdatedAt: 2026-11-14T00:22:37.200Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/67cd82ddc0cf5827408dfd4b92eb6286a6510183/docs/night-rain.jpg
+updatedAt: 2026-11-14T00:22:37.200Z

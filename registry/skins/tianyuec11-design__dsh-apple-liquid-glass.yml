@@ -31,26 +31,35 @@ screenshots:
   - https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-island-collapsed.png
   - https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-island-open.png
   - https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-particles.png
+listScreenshot: https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-light.png
 review:
   compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0
+    packageVersion: 0.7.4
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-11T00:08:21.545Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1168
 starsSnapshot: 3
+featuredRank: 1168
 releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+metadataUpdatedAt: 2026-11-14T00:22:37.200Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/tianyuec11-design/dsh-apple-liquid-glass/9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0/docs/preview-light.png
+updatedAt: 2026-11-14T00:22:37.200Z

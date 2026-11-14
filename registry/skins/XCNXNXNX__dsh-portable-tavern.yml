@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:XCNXNXNX/dsh-portable-tavern#b1b319b60680f8d16acd3499775b57ded8096304
+  target: github:XCNXNXNX/dsh-portable-tavern#153bfc7e505fa300340e1ce1aac13a04b7a36416
   version: 0.4.1
-  commit: b1b319b60680f8d16acd3499775b57ded8096304
+  commit: 153bfc7e505fa300340e1ce1aac13a04b7a36416
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-portable-tavern
+    packageVersion: 0.4.1
+    integrity: sha512-Ya4ZRnbrHiLjbD0OwEdCHaLJXxOux12Ul+D5W4zFehmbQzgVSgR8kKFFxwmBX62ch+5cWFxG4JTi7+w3kGTRQA==
+  npm:
+    name: dsh-portable-tavern
+    version: 0.4.1
+    integrity: sha512-Ya4ZRnbrHiLjbD0OwEdCHaLJXxOux12Ul+D5W4zFehmbQzgVSgR8kKFFxwmBX62ch+5cWFxG4JTi7+w3kGTRQA==
+    repository: https://github.com/XCNXNXNX/dsh-portable-tavern
+    gitHead: 153bfc7e505fa300340e1ce1aac13a04b7a36416
 compatibility:
   dsh: 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2
   platform:
@@ -30,6 +42,7 @@ screenshots:
   - https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/adventure.png
   - https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/character.png
   - https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/themes.png
+listScreenshot: https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/chat.png
 review:
   compatibility: verified
   preview: verified
@@ -43,13 +56,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 153bfc7e505fa300340e1ce1aac13a04b7a36416
+    packageVersion: 0.4.1
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:22:55.218Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1142
 starsSnapshot: 25
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+releaseUpdatedAt: 2026-11-14T00:22:57.166Z
+metadataUpdatedAt: 2026-11-14T00:22:57.166Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/chat.png
+updatedAt: 2026-11-14T00:22:57.166Z

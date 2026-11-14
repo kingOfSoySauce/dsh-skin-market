@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-13**: [Naiwa Studio](https://github.com/alaricchanchs-crypto/dsh-naiwa-studio) (alaricchanchs-crypto). See the [recent additions log](./docs/recently-added.md#recent-2026-11-13-alaricchanchs-crypto-dsh-naiwa-studio).
+- **2026-11-14**: [Claude Starburst Brand](https://github.com/aklnaaw/dsh-claude-theme) (aklnaaw). See the [recent additions log](./docs/recently-added.md#recent-2026-11-14-aklnaaw-brand-plugin).
 
 See the [recent additions log](./docs/recently-added.md).
 

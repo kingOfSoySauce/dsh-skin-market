@@ -15,9 +15,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:gosomea/dsh-bigfish#47138f8c986dd8f8614c30395d91d562ea0a2d1d
+  target: github:gosomea/dsh-bigfish#a5d4451b8553c2915853970e82e6d962198511f9
   version: 0.7.0-next.1
-  commit: 47138f8c986dd8f8614c30395d91d562ea0a2d1d
+  commit: a5d4451b8553c2915853970e82e6d962198511f9
   desktop:
     mode: manual-only
     reason: npm-version-not-stable
@@ -52,12 +52,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 47138f8c986dd8f8614c30395d91d562ea0a2d1d
+    commit: a5d4451b8553c2915853970e82e6d962198511f9
     packageVersion: 0.7.0-next.1
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-11-10T12:26:53.158Z
+    checkedAt: 2026-11-14T00:22:53.866Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -65,8 +65,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1119
-starsSnapshot: 27
-releaseUpdatedAt: 2026-11-10T18:11:15.809Z
-metadataUpdatedAt: 2026-11-10T18:11:15.809Z
-starsUpdatedAt: 2026-11-12T00:10:05.582Z
-updatedAt: 2026-11-12T00:10:05.582Z
+starsSnapshot: 28
+releaseUpdatedAt: 2026-11-14T00:22:57.022Z
+metadataUpdatedAt: 2026-11-14T00:22:57.022Z
+starsUpdatedAt: 2026-11-14T00:22:57.022Z
+updatedAt: 2026-11-14T00:22:57.022Z

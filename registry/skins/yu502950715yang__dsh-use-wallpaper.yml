@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:yu502950715yang/dsh-use-wallpaper#d466e173c50d3390434684d5b7aa60136d9805f8
-  version: 1.0.0
-  commit: d466e173c50d3390434684d5b7aa60136d9805f8
+  target: github:yu502950715yang/dsh-use-wallpaper#5b22957c8657b1ce3292362dcbad963cc0965c26
+  version: 1.0.1
+  commit: 5b22957c8657b1ce3292362dcbad963cc0965c26
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@dsh-use/wallpaper-engine"
+    packageVersion: 1.0.1
+    integrity: sha512-uixUcmNE05tHpzneInttk28yVYOUOYhKpuH7IDV8/dOfxOAvddyCYc44dH9VlthTm6YrAscftRvGmdPSmE/31w==
+  npm:
+    name: "@dsh-use/wallpaper-engine"
+    version: 1.0.1
+    integrity: sha512-uixUcmNE05tHpzneInttk28yVYOUOYhKpuH7IDV8/dOfxOAvddyCYc44dH9VlthTm6YrAscftRvGmdPSmE/31w==
+    repository: https://github.com/yu502950715yang/dsh-use-wallpaper
+    gitHead: 5b22957c8657b1ce3292362dcbad963cc0965c26
 compatibility:
   dsh: ">=0.2.0-rc.1 <0.3.0 || 0.2.0-rc.1"
   platform:
@@ -29,26 +41,36 @@ screenshots:
   - https://raw.githubusercontent.com/yu502950715yang/dsh-use-wallpaper/d466e173c50d3390434684d5b7aa60136d9805f8/assets/screenshots/02-settings-panel.png
   - https://raw.githubusercontent.com/yu502950715yang/dsh-use-wallpaper/d466e173c50d3390434684d5b7aa60136d9805f8/docs/videos/yuki-koizuka-dsh.gif
   - https://raw.githubusercontent.com/yu502950715yang/dsh-use-wallpaper/d466e173c50d3390434684d5b7aa60136d9805f8/docs/videos/knight-red-cloak-dsh.gif
+listScreenshot: https://raw.githubusercontent.com/yu502950715yang/dsh-use-wallpaper/d466e173c50d3390434684d5b7aa60136d9805f8/assets/screenshots/01-wallpaper-behind-chat.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 5b22957c8657b1ce3292362dcbad963cc0965c26
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1 <0.3.0 || 0.2.0-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T00:23:01.465Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1170
 starsSnapshot: 11
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+releaseUpdatedAt: 2026-11-14T00:23:03.083Z
+metadataUpdatedAt: 2026-11-14T00:23:03.083Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/yu502950715yang/dsh-use-wallpaper/d466e173c50d3390434684d5b7aa60136d9805f8/assets/screenshots/01-wallpaper-behind-chat.png
+updatedAt: 2026-11-14T00:23:03.083Z

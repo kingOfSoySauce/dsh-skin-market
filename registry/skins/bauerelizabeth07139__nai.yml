@@ -28,6 +28,7 @@ screenshots:
   - https://raw.githubusercontent.com/bauerelizabeth07139/nai/331d575b50bb9202fef5b4444434596cbc154043/assets/nai-wallpaper.jpg
   - https://raw.githubusercontent.com/bauerelizabeth07139/nai/331d575b50bb9202fef5b4444434596cbc154043/assets/nai.jpg
   - https://raw.githubusercontent.com/bauerelizabeth07139/nai/331d575b50bb9202fef5b4444434596cbc154043/assets/nai-mark.jpg
+listScreenshot: https://raw.githubusercontent.com/bauerelizabeth07139/nai/331d575b50bb9202fef5b4444434596cbc154043/assets/nai-wallpaper.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -41,14 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 331d575b50bb9202fef5b4444434596cbc154043
+    packageVersion: 0.2.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-10T00:13:29.569Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
+starsSnapshot: 2
 featuredRank: 1132
-starsSnapshot: 1
 releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
-starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/bauerelizabeth07139/nai/331d575b50bb9202fef5b4444434596cbc154043/assets/nai-wallpaper.jpg
+metadataUpdatedAt: 2026-11-14T00:22:37.200Z
+starsUpdatedAt: 2026-11-14T00:22:37.200Z
+updatedAt: 2026-11-14T00:22:37.200Z

@@ -18,9 +18,12 @@ modes:
   - light
   - dark
 install:
-  target: github:AbiTssE6/dsh-theme-zzz#f4ea58c22685264fc7081ecd386dbdffa313b922&path:/packages/dsh-theme-zzz
-  version: 0.3.6
-  commit: f4ea58c22685264fc7081ecd386dbdffa313b922
+  target: github:AbiTssE6/dsh-theme-zzz#7f3e26475e75b967d2b222a32c9fb4087f335edc&path:/packages/dsh-theme-zzz
+  version: 0.3.7
+  commit: 7f3e26475e75b967d2b222a32c9fb4087f335edc
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -29,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/f4ea58c22685264fc7081ecd386dbdffa313b922/docs/preview.png
   - https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/f4ea58c22685264fc7081ecd386dbdffa313b922/docs/hollow-shot.png
   - https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/f4ea58c22685264fc7081ecd386dbdffa313b922/docs/hollow.gif
+listScreenshot: https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/master/docs/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -42,14 +46,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 7f3e26475e75b967d2b222a32c9fb4087f335edc
+    packageVersion: 0.3.7
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-13T00:13:06.377Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1173
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-13T09:19:15.720Z
-metadataUpdatedAt: 2026-11-13T09:19:15.720Z
+featuredRank: 1173
+releaseUpdatedAt: 2026-11-14T00:22:37.200Z
+metadataUpdatedAt: 2026-11-14T00:22:37.200Z
 starsUpdatedAt: 2026-11-13T09:19:15.720Z
-updatedAt: 2026-11-13T09:19:15.720Z
-listScreenshot: https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/master/docs/preview.png
+updatedAt: 2026-11-14T00:22:37.200Z

@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:d-dev0101/open-sea-skin#a8e79435d21eac28fbbf2574c60708c912c49ce1
-  version: 1.2.8
-  commit: a8e79435d21eac28fbbf2574c60708c912c49ce1
+  target: github:d-dev0101/open-sea-skin#d111bce1a7bec63ae4696cc1e81476924c96304c
+  version: 1.2.9
+  commit: d111bce1a7bec63ae4696cc1e81476924c96304c
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,6 +28,10 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/home.png
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/conversation.png
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/settings.png
 screenshots:
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-dark-overview-40.gif
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-light-overview-40.gif
@@ -53,25 +57,21 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: a8e79435d21eac28fbbf2574c60708c912c49ce1
-    packageVersion: 1.2.8
+    commit: d111bce1a7bec63ae4696cc1e81476924c96304c
+    packageVersion: 1.2.9
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-11-09T00:12:31.656Z
+    checkedAt: 2026-11-14T00:22:43.461Z
     findings: []
 license:
   code: MIT
   commercialUse: true
   notice: Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1.
-starsSnapshot: 391
-marketScreenshots:
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/home.png
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/conversation.png
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/settings.png
 featuredRank: 0
-releaseUpdatedAt: 2026-11-09T00:12:35.702Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
-starsUpdatedAt: 2026-11-12T00:09:47.866Z
-updatedAt: 2026-11-12T00:09:47.866Z
+starsSnapshot: 393
+releaseUpdatedAt: 2026-11-14T00:22:47.971Z
+metadataUpdatedAt: 2026-11-14T00:22:47.971Z
+starsUpdatedAt: 2026-11-14T00:22:47.971Z
+updatedAt: 2026-11-14T00:22:47.971Z
