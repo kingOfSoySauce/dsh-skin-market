@@ -8,6 +8,25 @@ export interface PreviewableCatalogEntry {
 
 export const MAX_CATALOG_SCREENSHOTS = 8
 
+const GIF_SCREENSHOT_PATTERN = /\.gif(?:$|[?#])/i
+
+export function isGifScreenshot(url: string | undefined): boolean {
+  return typeof url === 'string' && GIF_SCREENSHOT_PATTERN.test(url)
+}
+
+/**
+ * Stable GIF-first partition: every GIF keeps its relative order ahead of the
+ * static images, and the static images keep their own relative order after
+ * them. Kept identical to scripts/registry-screenshots.mjs so the catalog media
+ * descriptors and the rendered order cannot drift apart.
+ */
+export function gifFirstScreenshots(sources: string[] = []): string[] {
+  const gifs: string[] = []
+  const statics: string[] = []
+  for (const source of sources) (isGifScreenshot(source) ? gifs : statics).push(source)
+  return [...gifs, ...statics]
+}
+
 function isRepositoryPreviewUrl(url: string): boolean {
   return url.includes('opengraph.githubassets.com/')
     || url.includes('repository-images.githubusercontent.com/')
@@ -42,17 +61,41 @@ function hasCrossPackageScreenshots(upstreamScreenshots: string[], subpath: stri
   return scoped.length > 0 && scoped.length < unique.length
 }
 
-function preferScreenshot(screenshots: string[], preferred: string | undefined): string[] {
-  const unique = [...new Set(screenshots)]
-  if (preferred === undefined) return unique
-  return [preferred, ...unique.filter(source => source !== preferred)]
-}
-
 function explicitScreenshot(entry: PreviewableCatalogEntry, market: string[], upstream: string[]): string | undefined {
   const preferred = entry.listScreenshot
   if (preferred === undefined || isRepositoryPreviewUrl(preferred)) return undefined
   if (market.includes(preferred)) return preferred
   return entry.review?.preview === 'repository-card' || !upstream.includes(preferred) ? undefined : preferred
+}
+
+/**
+ * A listScreenshot that merely repeats the first author screenshot is the
+ * mechanical cover the publish pipeline records (listScreenshot = screenshots[0]),
+ * not an editorial choice. GIF-first may override it. Any other listScreenshot
+ * is an editorial cover and stays first; a cover that is the first market
+ * capture is always editorial because that capture was reviewed as the market
+ * proof.
+ */
+function isMechanicalCover(preferred: string | undefined, market: string[], upstream: string[]): boolean {
+  return preferred !== undefined
+    && preferred === upstream[0]
+    && preferred !== market[0]
+}
+
+/**
+ * Deterministic display order: deduplicate, keep an editorial cover first,
+ * promote every remaining GIF ahead of the static screenshots, then apply the
+ * eight-image display limit.
+ */
+function orderDisplayScreenshots(display: string[], preferred: string | undefined, mechanical: boolean): string[] {
+  const unique = [...new Set(display)]
+  const rest = preferred === undefined ? unique : unique.filter(source => source !== preferred)
+  const ordered = preferred === undefined
+    ? gifFirstScreenshots(unique)
+    : mechanical
+      ? gifFirstScreenshots([preferred, ...rest])
+      : [preferred, ...gifFirstScreenshots(rest)]
+  return ordered.slice(0, MAX_CATALOG_SCREENSHOTS)
 }
 
 export function usesMarketScreenshots(entry: PreviewableCatalogEntry): boolean {
@@ -67,7 +110,9 @@ export function usesMarketScreenshots(entry: PreviewableCatalogEntry): boolean {
 /**
  * Returns the URLs that should actually be rendered. An explicit listScreenshot
  * is an editorial cover choice and may intentionally promote a market capture
- * or dynamic GIF ahead of the source-of-truth repository screenshots.
+ * or dynamic GIF ahead of the source-of-truth repository screenshots. Other
+ * GIFs are promoted ahead of static screenshots so an animated skin shows its
+ * animation as the cover even when the README listed a PNG first.
  */
 export function getCatalogScreenshotUrls(entry: PreviewableCatalogEntry): string[] {
   const market = entry.marketScreenshots ?? []
@@ -78,14 +123,15 @@ export function getCatalogScreenshotUrls(entry: PreviewableCatalogEntry): string
     ? []
     : scopedUpstream.filter(url => !isRepositoryPreviewUrl(url))
   const preferred = explicitScreenshot(entry, market, scopedUpstream)
+  const mechanical = isMechanicalCover(preferred, market, upstream)
   if (contaminated) {
     const scopedDisplay = [...new Set([...market, ...usableUpstream])]
     if (preferred !== undefined && !scopedDisplay.includes(preferred)) scopedDisplay.unshift(preferred)
-    if (scopedDisplay.length > 0) return preferScreenshot(scopedDisplay, preferred).slice(0, MAX_CATALOG_SCREENSHOTS)
+    if (scopedDisplay.length > 0) return orderDisplayScreenshots(scopedDisplay, preferred, mechanical)
   }
-  if (usableUpstream.length > 0) return preferScreenshot(usableUpstream, preferred).slice(0, MAX_CATALOG_SCREENSHOTS)
-  if (market.length > 0) return preferScreenshot(market, preferred).slice(0, MAX_CATALOG_SCREENSHOTS)
-  return preferScreenshot([...new Set([...market, ...scopedUpstream])], preferred).slice(0, MAX_CATALOG_SCREENSHOTS)
+  if (usableUpstream.length > 0) return orderDisplayScreenshots(usableUpstream, preferred, mechanical)
+  if (market.length > 0) return orderDisplayScreenshots(market, preferred, mechanical)
+  return orderDisplayScreenshots([...new Set([...market, ...scopedUpstream])], preferred, mechanical)
 }
 
 export function getCatalogListScreenshot(entry: PreviewableCatalogEntry): string | undefined {

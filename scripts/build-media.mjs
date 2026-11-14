@@ -44,9 +44,9 @@ async function sourceUrls() {
     const screenshots = [...new Set((skin.screenshots ?? []).map(canonicalScreenshotUrl))]
     const configuredListScreenshot = skin.listScreenshot === undefined ? undefined : canonicalScreenshotUrl(skin.listScreenshot)
     const display = displayScreenshots(marketScreenshots, screenshots, skin.subpath, configuredListScreenshot, skin.review?.preview)
-    const listScreenshot = configuredListScreenshot !== undefined && display.includes(configuredListScreenshot)
-      ? configuredListScreenshot
-      : display[0]
+    // media.list must describe the rendered cover (display[0]); a GIF cover has
+    // no raster descriptor, so it stays on the original-download fallback.
+    const listScreenshot = display[0]
     for (const source of [listScreenshot, ...display]) if (isRasterImageUrl(source)) urls.add(source)
   }
   const selected = requestedSource === undefined ? [...urls] : [...urls].filter(source => source === requestedSource)
