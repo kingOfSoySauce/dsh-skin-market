@@ -18,15 +18,28 @@ modes:
   - light
   - dark
 install:
-  target: github:pyyxzi/dsh-deepmoyu#527d5c47ea6a6fc0440f54ee84ff473a919003ab
-  version: 2.7.1
-  commit: 527d5c47ea6a6fc0440f54ee84ff473a919003ab
+  target: github:pyyxzi/dsh-deepmoyu#acd0a842f43bf8bac8844dd969ed04f98e19422c
+  version: 2.8.2
+  commit: acd0a842f43bf8bac8844dd969ed04f98e19422c
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-deepmoyu
+    packageVersion: 2.8.2
+    integrity: sha512-sWUoq5JUEYHok7c1LmGOPMb25mnE7Qn7H1OI2mfajn0crlnFs/IIGcQZw0jexbWWyCrIG5xfotxroiFPbYX5Iw==
+  npm:
+    name: dsh-deepmoyu
+    version: 2.8.2
+    integrity: sha512-sWUoq5JUEYHok7c1LmGOPMb25mnE7Qn7H1OI2mfajn0crlnFs/IIGcQZw0jexbWWyCrIG5xfotxroiFPbYX5Iw==
+    repository: https://github.com/pyyxzi/dsh-deepmoyu
+    gitHead: acd0a842f43bf8bac8844dd969ed04f98e19422c
 compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/pyyxzi/dsh-deepmoyu/527d5c47ea6a6fc0440f54ee84ff473a919003ab/assets/screenshots/workspace.png
+listScreenshot: https://raw.githubusercontent.com/pyyxzi/dsh-deepmoyu/527d5c47ea6a6fc0440f54ee84ff473a919003ab/assets/screenshots/workspace.png
 review:
   compatibility: verified
   preview: verified
@@ -40,13 +53,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: acd0a842f43bf8bac8844dd969ed04f98e19422c
+    packageVersion: 2.8.2
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.7-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:26.807Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1254
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:56:31.671Z
-metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+releaseUpdatedAt: 2026-11-14T23:48:27.431Z
+metadataUpdatedAt: 2026-11-14T23:48:27.431Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-14T07:56:31.671Z
-listScreenshot: https://raw.githubusercontent.com/pyyxzi/dsh-deepmoyu/527d5c47ea6a6fc0440f54ee84ff473a919003ab/assets/screenshots/workspace.png
+updatedAt: 2026-11-14T23:48:27.431Z

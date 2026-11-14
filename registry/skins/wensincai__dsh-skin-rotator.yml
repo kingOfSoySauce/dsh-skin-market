@@ -37,12 +37,13 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
     commit: 1f91b08cb59c3b1f5e47db7f071bcde36f89d9ea
@@ -56,9 +57,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 1000
+starsSnapshot: 2
 releaseUpdatedAt: 2026-11-09T07:16:23.964Z
-metadataUpdatedAt: 2026-11-09T07:16:23.964Z
+metadataUpdatedAt: 2026-11-14T23:46:19.627Z
 starsUpdatedAt: 2026-11-09T07:16:23.964Z
-updatedAt: 2026-11-09T07:16:23.964Z
+updatedAt: 2026-11-14T23:46:19.627Z

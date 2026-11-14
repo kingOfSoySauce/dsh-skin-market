@@ -35,26 +35,25 @@ install:
     repository: https://github.com/ZHOUcourier/dsh-theme-whalegirl
     gitHead: aecc434d7b26e432516b6203e7a4e46917342b82
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.6"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/ZHOUcourier/dsh-theme-whalegirl/f61a31425a71221e971685fbf3d706a7b5e838ab/assets/previews/preview.png
 listScreenshot: https://raw.githubusercontent.com/ZHOUcourier/dsh-theme-whalegirl/1340b13eaa0194e259ed1edc2c1a7f9ab003c39a/assets/previews/preview.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
     commit: aecc434d7b26e432516b6203e7a4e46917342b82
     packageVersion: 0.4.0
@@ -69,6 +68,6 @@ license:
 starsSnapshot: 1
 featuredRank: 1032
 releaseUpdatedAt: 2026-11-04T00:04:35.876Z
-metadataUpdatedAt: 2026-11-04T00:04:35.876Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-09-18T21:39:02.179Z
-updatedAt: 2026-11-04T00:04:35.876Z
+updatedAt: 2026-11-14T23:28:29.986Z

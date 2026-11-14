@@ -25,7 +25,7 @@ install:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1-rc.1 <0.3.0-0"
   platform:
     - web
 screenshots:
@@ -34,20 +34,19 @@ screenshots:
   - https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-market.png
 listScreenshot: https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/0f9b5140a9fb19360e7493c21e5f9636b87cb54d/packages/dsh/assets/screenshots/dsh-xuanmo.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: e4f6950f3dd8fe36ae14d78bf3054dc1a1d74c1d
     packageVersion: 0.1.0
@@ -62,6 +61,6 @@ license:
 featuredRank: 1143
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T00:25:02.006Z
-metadataUpdatedAt: 2026-11-14T00:25:02.006Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T00:25:02.006Z
+updatedAt: 2026-11-14T23:28:29.986Z

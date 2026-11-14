@@ -48,34 +48,35 @@ screenshots:
   - https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/pangxie-zoulu.gif
 listScreenshot: https://raw.githubusercontent.com/ysppwn721/better-dsh-pet/3f4b161313304740f1bc764c4114ddac97204374/assets/preview/daiji-huxi-xiuxian.gif
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.1.0-rc.6 <0.3.0 完全覆盖（固定版本 3f4b161313304740f1bc764c4114ddac97204374）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 3f4b161313304740f1bc764c4114ddac97204374
     packageVersion: 0.3.6
     scannerVersion: static-v2
-    dshVersion: ">=0.1.0-rc.6"
+    dshVersion: ">=0.1.0-rc.6 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-11-10T00:10:59.953Z
+    checkedAt: 2026-11-14T23:43:05.648Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 12
 featuredRank: 1123
+starsSnapshot: 12
 releaseUpdatedAt: 2026-11-10T18:11:15.809Z
-metadataUpdatedAt: 2026-11-11T00:07:28.933Z
+metadataUpdatedAt: 2026-11-14T23:43:12.014Z
 starsUpdatedAt: 2026-11-13T00:28:13.548Z
-updatedAt: 2026-11-13T00:28:13.548Z
+updatedAt: 2026-11-14T23:43:12.014Z

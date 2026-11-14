@@ -17,14 +17,23 @@ tags:
 modes:
   - dark
 install:
-  target: github:lyingice/dsh-client-ui-mc-skin#1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc
-  version: 1.3.1
-  commit: 1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc
+  target: github:lyingice/dsh-client-ui-mc-skin#c2f7ab5b0c87519bfd03f3613c47e27c105d20a6
+  version: 1.5.1
+  commit: c2f7ab5b0c87519bfd03f3613c47e27c105d20a6
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/home.png
+  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/conversation.png
+  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/settings.png
+screenshots:
+  - https://github.com/user-attachments/assets/657d25e5-d27d-4f1a-8a27-fb73d751cd39
+listScreenshot: https://github.com/user-attachments/assets/657d25e5-d27d-4f1a-8a27-fb73d751cd39
 review:
   compatibility: unverified
   preview: verified
@@ -32,24 +41,27 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: c2f7ab5b0c87519bfd03f3613c47e27c105d20a6
+    packageVersion: 1.5.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:04.772Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1393
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:48:05.345Z
+metadataUpdatedAt: 2026-11-14T23:48:05.345Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-marketScreenshots:
-  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/home.png
-  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/conversation.png
-  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/settings.png
+updatedAt: 2026-11-14T23:48:05.345Z

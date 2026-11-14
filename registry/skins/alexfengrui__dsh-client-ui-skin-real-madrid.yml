@@ -30,6 +30,10 @@ compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/home.png
+  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/conversation.png
+  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -45,27 +49,22 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 0.1.0-rc.6 完全覆盖（固定版本 97f28bda0c7a0302e0b37d7f45abebcf84fccc8f）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 97f28bda0c7a0302e0b37d7f45abebcf84fccc8f
     packageVersion: 1.1.0
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-11-09T07:15:21.706Z
+    checkedAt: 2026-11-14T23:46:44.972Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 代码MIT；内嵌队徽CC BY-NC-SA 4.0，须署名、非商业及相同方式共享；球场照片另适用Unsplash License。
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/home.png
-  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/conversation.png
-  - skin-screenshots/alexfengrui__dsh-client-ui-skin-real-madrid/548157967c13fce1dd045ec27ee792b2be457626/settings.png
 featuredRank: 999
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-09T07:15:21.725Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T23:46:45.004Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-14T23:46:45.004Z

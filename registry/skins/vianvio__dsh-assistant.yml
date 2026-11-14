@@ -21,6 +21,18 @@ install:
   target: github:vianvio/dsh-assistant#f1272566a01ab4674d101ccd8f2700e5ef0c75b1
   version: 0.2.3
   commit: f1272566a01ab4674d101ccd8f2700e5ef0c75b1
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-assistant
+    packageVersion: 0.2.3
+    integrity: sha512-8NWjkPhSvvLTFr53oAphUPETuBuGBQVYXuQ9dpyH9ZBuTwsU+e8Yw7+7OgaNJ0xmkeH9OVpwgyBLc6A5TIE+FA==
+  npm:
+    name: dsh-assistant
+    version: 0.2.3
+    integrity: sha512-8NWjkPhSvvLTFr53oAphUPETuBuGBQVYXuQ9dpyH9ZBuTwsU+e8Yw7+7OgaNJ0xmkeH9OVpwgyBLc6A5TIE+FA==
+    repository: https://github.com/vianvio/dsh-assistant
+    gitHead: f1272566a01ab4674d101ccd8f2700e5ef0c75b1
 compatibility:
   dsh: unverified
   platform:
@@ -32,6 +44,7 @@ screenshots:
   - https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-waiting.png
   - https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-success.png
   - https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-error.png
+listScreenshot: https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-idle.png
 review:
   compatibility: unverified
   preview: verified
@@ -45,14 +58,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: f1272566a01ab4674d101ccd8f2700e5ef0c75b1
+    packageVersion: 0.2.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:48.731Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1272
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+releaseUpdatedAt: 2026-11-14T23:48:51.040Z
+metadataUpdatedAt: 2026-11-14T23:48:51.040Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
-listScreenshot: https://raw.githubusercontent.com/vianvio/dsh-assistant/f1272566a01ab4674d101ccd8f2700e5ef0c75b1/assets/readme/status-idle.png
+updatedAt: 2026-11-14T23:48:51.040Z

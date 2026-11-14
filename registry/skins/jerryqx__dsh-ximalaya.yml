@@ -20,6 +20,18 @@ install:
   target: github:jerryqx/dsh-ximalaya#2fbd8296e3032fe626f41e8ea2f56605ecf48d15
   version: 0.5.2
   commit: 2fbd8296e3032fe626f41e8ea2f56605ecf48d15
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-ximalaya
+    packageVersion: 0.5.2
+    integrity: sha512-TQJPQBi89A4wc+TmEzsl/9SGZ8Uv5/phXOOGzcq2DcAyqffF0ArubR3f3+xRM0wewnTayz6omjRQqCEjCP6Qrg==
+  npm:
+    name: dsh-ximalaya
+    version: 0.5.2
+    integrity: sha512-TQJPQBi89A4wc+TmEzsl/9SGZ8Uv5/phXOOGzcq2DcAyqffF0ArubR3f3+xRM0wewnTayz6omjRQqCEjCP6Qrg==
+    repository: https://github.com/jerryqx/dsh-ximalaya
+    gitHead: 2fbd8296e3032fe626f41e8ea2f56605ecf48d15
 compatibility:
   dsh: unverified
   platform:
@@ -29,6 +41,7 @@ screenshots:
   - https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/2fbd8296e3032fe626f41e8ea2f56605ecf48d15/assets/panel-album.png
   - https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/2fbd8296e3032fe626f41e8ea2f56605ecf48d15/assets/panel-mine-subs.png
   - https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/2fbd8296e3032fe626f41e8ea2f56605ecf48d15/assets/panel-mine-anchors.png
+listScreenshot: https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/2fbd8296e3032fe626f41e8ea2f56605ecf48d15/assets/panel-search.png
 review:
   compatibility: unverified
   preview: verified
@@ -42,14 +55,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 2fbd8296e3032fe626f41e8ea2f56605ecf48d15
+    packageVersion: 0.5.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:44:27.017Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1366
 starsSnapshot: 4
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-14T23:44:27.883Z
+metadataUpdatedAt: 2026-11-14T23:44:27.883Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/jerryqx/dsh-ximalaya/2fbd8296e3032fe626f41e8ea2f56605ecf48d15/assets/panel-search.png
+updatedAt: 2026-11-14T23:44:27.883Z

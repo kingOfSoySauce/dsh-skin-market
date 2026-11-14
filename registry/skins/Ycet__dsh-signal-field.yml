@@ -18,9 +18,15 @@ modes:
   - light
   - dark
 install:
-  target: github:Ycet/dsh-signal-field#36089411e98aac2134fca2eaaf2e9c325a23bbd4
-  version: 0.5.1
-  commit: 36089411e98aac2134fca2eaaf2e9c325a23bbd4
+  target: github:Ycet/dsh-signal-field#32fff7a6f5cbf16672af0ebc78fa6209684e02c4
+  version: 0.5.2
+  commit: 32fff7a6f5cbf16672af0ebc78fa6209684e02c4
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-signal-field
+    packageVersion: 0.5.2
+    integrity: sha512-rgGgstxN1DfYMupbid6scOFKPfxOlXVMorUyDPyV1yjOr4rPl7DFy39BU9rYDVhhRlfvgDPXlnqrxwM9+uq0ag==
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +34,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Ycet/dsh-signal-field/36089411e98aac2134fca2eaaf2e9c325a23bbd4/docs/light_mode_preview.gif
   - https://raw.githubusercontent.com/Ycet/dsh-signal-field/36089411e98aac2134fca2eaaf2e9c325a23bbd4/docs/dark_mode_preview.gif
+listScreenshot: https://raw.githubusercontent.com/Ycet/dsh-signal-field/36089411e98aac2134fca2eaaf2e9c325a23bbd4/docs/light_mode_preview.gif
 review:
   compatibility: unverified
   preview: verified
@@ -41,14 +48,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 32fff7a6f5cbf16672af0ebc78fa6209684e02c4
+    packageVersion: 0.5.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:59.532Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1281
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+releaseUpdatedAt: 2026-11-14T23:49:01.347Z
+metadataUpdatedAt: 2026-11-14T23:49:01.347Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
-listScreenshot: https://raw.githubusercontent.com/Ycet/dsh-signal-field/36089411e98aac2134fca2eaaf2e9c325a23bbd4/docs/light_mode_preview.gif
+updatedAt: 2026-11-14T23:49:01.347Z

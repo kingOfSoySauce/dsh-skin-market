@@ -20,11 +20,21 @@ install:
   target: github:KasouHoshino/DSH-Custom-Background-and-Liquid-Glass-Theme#a4e354b405bdc3eee63ac2d8b9a06f37958f157a
   version: 1.1.0
   commit: a4e354b405bdc3eee63ac2d8b9a06f37958f157a
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/home.png
+  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/conversation.png
+  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/settings.png
+screenshots:
+  - https://github.com/user-attachments/assets/f8cfd90d-974f-429f-82b4-cf408cbe0454
+  - https://github.com/user-attachments/assets/4e0fb8c6-70ac-45e3-ad0b-27b4d753b2a6
+listScreenshot: https://github.com/user-attachments/assets/f8cfd90d-974f-429f-82b4-cf408cbe0454
 review:
   compatibility: unverified
   preview: verified
@@ -32,26 +42,29 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: improve
     topic: improve
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: a4e354b405bdc3eee63ac2d8b9a06f37958f157a
+    packageVersion: 1.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:47:48.007Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1375
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-14T23:47:49.062Z
+metadataUpdatedAt: 2026-11-14T23:47:49.062Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-marketScreenshots:
-  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/home.png
-  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/conversation.png
-  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/settings.png
+updatedAt: 2026-11-14T23:47:49.062Z

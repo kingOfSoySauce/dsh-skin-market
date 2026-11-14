@@ -20,6 +20,9 @@ install:
   target: github:3b2ht90/dsh-client-ui-skin-dnd#85aaa7c3abd77de457b928d0844e597e5bc3db11
   version: 0.1.2
   commit: 85aaa7c3abd77de457b928d0844e597e5bc3db11
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/3b2ht90/dsh-client-ui-skin-dnd/85aaa7c3abd77de457b928d0844e597e5bc3db11/preview/light.png
   - https://raw.githubusercontent.com/3b2ht90/dsh-client-ui-skin-dnd/85aaa7c3abd77de457b928d0844e597e5bc3db11/preview/dark.png
   - https://raw.githubusercontent.com/3b2ht90/dsh-client-ui-skin-dnd/85aaa7c3abd77de457b928d0844e597e5bc3db11/art/die-roll.webp
+listScreenshot: https://raw.githubusercontent.com/3b2ht90/dsh-client-ui-skin-dnd/85aaa7c3abd77de457b928d0844e597e5bc3db11/preview/light.png
 review:
   compatibility: unverified
   preview: verified
@@ -41,15 +45,22 @@ health:
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 85aaa7c3abd77de457b928d0844e597e5bc3db11
+    packageVersion: 0.1.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:19.337Z
+    findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 1289
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:45:19.812Z
+metadataUpdatedAt: 2026-11-14T23:45:19.812Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/3b2ht90/dsh-client-ui-skin-dnd/85aaa7c3abd77de457b928d0844e597e5bc3db11/preview/light.png
+updatedAt: 2026-11-14T23:45:19.812Z

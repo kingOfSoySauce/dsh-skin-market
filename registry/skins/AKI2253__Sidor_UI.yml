@@ -15,9 +15,9 @@ modes:
   - light
   - dark
 install:
-  target: github:AKI2253/Sidor_UI#96d315f19681960f8d9febf1a826e80014ff0948
-  version: 1.2.0
-  commit: 96d315f19681960f8d9febf1a826e80014ff0948
+  target: github:AKI2253/Sidor_UI#8a887d0e204f93f31c0c923f50f9f6958189bd0a
+  version: 1.2.1
+  commit: 8a887d0e204f93f31c0c923f50f9f6958189bd0a
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -50,19 +50,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 96d315f19681960f8d9febf1a826e80014ff0948
-    packageVersion: 1.2.0
+    commit: 8a887d0e204f93f31c0c923f50f9f6958189bd0a
+    packageVersion: 1.2.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-15T22:08:42.596Z
+    checkedAt: 2026-11-14T23:44:46.023Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 1016
-releaseUpdatedAt: 2026-10-15T22:08:44.747Z
-metadataUpdatedAt: 2026-10-15T22:08:44.747Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T23:44:47.946Z
+metadataUpdatedAt: 2026-11-14T23:44:47.946Z
 starsUpdatedAt: 2026-11-09T00:14:06.641Z
-updatedAt: 2026-11-09T00:14:06.641Z
+updatedAt: 2026-11-14T23:44:47.946Z

@@ -38,7 +38,7 @@ install:
     repository: https://github.com/Small-tailqwq/dsh-deep-whale
     gitHead: 811fa53b712a16ce5f5278529bb76d5a033a1d13
 compatibility:
-  dsh: unverified
+  dsh: ^0.1.11
   platform:
     - web
 marketScreenshots:
@@ -56,34 +56,34 @@ screenshots:
   - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/0a3d03251d1e88a08de79e27fb884ed9200913ad/orca-link/preview/dark.png
 listScreenshot: skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/preset-orca-link-dark.gif
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
     commit: 811fa53b712a16ce5f5278529bb76d5a033a1d13
     packageVersion: 0.1.11
     scannerVersion: static-v2
+    dshVersion: ^0.1.11
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:22:40.797Z
+    checkedAt: 2026-11-14T23:41:47.157Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
 featuredRank: 3
-starsSnapshot: 3103
+starsSnapshot: 3110
 releaseUpdatedAt: 2026-11-14T00:22:43.364Z
-metadataUpdatedAt: 2026-11-14T00:22:43.364Z
-starsUpdatedAt: 2026-11-14T00:22:43.364Z
-updatedAt: 2026-11-14T00:22:43.364Z
+metadataUpdatedAt: 2026-11-14T23:41:49.959Z
+starsUpdatedAt: 2026-11-14T23:41:49.959Z
+updatedAt: 2026-11-14T23:41:49.959Z

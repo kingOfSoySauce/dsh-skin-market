@@ -20,35 +20,59 @@ install:
   target: github:lispking/dsh-qq-skin#ce7f443447a12437068f105c43044760719d0489
   version: 0.2.0
   commit: ce7f443447a12437068f105c43044760719d0489
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-qq-skin
+    packageVersion: 0.2.0
+    integrity: sha512-9DMHJr5BoBIbPz8Ooo5BqMbxCTu8aTieKLY00wYznGm5KuMN/LOwcBSz2EEnuxr5WROt2Wouk82lA6NMQOVCFQ==
+  allowBuild: dsh-qq-skin@https://codeload.github.com/lispking/dsh-qq-skin/tar.gz/ce7f443447a12437068f105c43044760719d0489
+  npm:
+    name: dsh-qq-skin
+    version: 0.2.0
+    integrity: sha512-9DMHJr5BoBIbPz8Ooo5BqMbxCTu8aTieKLY00wYznGm5KuMN/LOwcBSz2EEnuxr5WROt2Wouk82lA6NMQOVCFQ==
+    repository: https://github.com/lispking/dsh-qq-skin
+    gitHead: ce7f443447a12437068f105c43044760719d0489
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/lispking/dsh-qq-skin/ce7f443447a12437068f105c43044760719d0489/assets/chat.png
   - https://raw.githubusercontent.com/lispking/dsh-qq-skin/ce7f443447a12437068f105c43044760719d0489/assets/settings.png
+listScreenshot: https://raw.githubusercontent.com/lispking/dsh-qq-skin/ce7f443447a12437068f105c43044760719d0489/assets/chat.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: ce7f443447a12437068f105c43044760719d0489
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:47:59.330Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1237
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:47:59.692Z
+metadataUpdatedAt: 2026-11-14T23:47:59.692Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/lispking/dsh-qq-skin/ce7f443447a12437068f105c43044760719d0489/assets/chat.png
+updatedAt: 2026-11-14T23:47:59.692Z

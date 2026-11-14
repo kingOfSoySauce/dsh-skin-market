@@ -22,26 +22,25 @@ install:
   version: 0.2.7
   commit: 9d2b22a83107416f3ac68fa0055fa7d45c5a6f8c
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Nortr0m/dsh-dota2-pet/9d2b22a83107416f3ac68fa0055fa7d45c5a6f8c/docs/heroes_preview.png
   - https://raw.githubusercontent.com/Nortr0m/dsh-dota2-pet/9d2b22a83107416f3ac68fa0055fa7d45c5a6f8c/docs/cosmetics_dress_test.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
@@ -49,7 +48,7 @@ license:
 featuredRank: 1415
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/Nortr0m/dsh-dota2-pet/9d2b22a83107416f3ac68fa0055fa7d45c5a6f8c/docs/heroes_preview.png

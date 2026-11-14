@@ -21,12 +21,25 @@ install:
   target: github:hellosz/dsh-pets#bae5bab8ca717f07967d60801b65e16fb47e30da
   version: 0.3.1
   commit: bae5bab8ca717f07967d60801b65e16fb47e30da
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@hellosz/dsh-pets"
+    packageVersion: 0.3.1
+    integrity: sha512-+05XxH2u7Xq3iuR9H4xTkEdZ8MkhnzkzK4BUB5C5/IOrtcn5UHPvSlgwPpAGCaljBhQVzvtnbFfR/SMKYLtm9g==
+  npm:
+    name: "@hellosz/dsh-pets"
+    version: 0.3.1
+    integrity: sha512-+05XxH2u7Xq3iuR9H4xTkEdZ8MkhnzkzK4BUB5C5/IOrtcn5UHPvSlgwPpAGCaljBhQVzvtnbFfR/SMKYLtm9g==
+    repository: https://github.com/hellosz/dsh-pets
+    gitHead: bae5bab8ca717f07967d60801b65e16fb47e30da
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/hellosz/dsh-pets/bae5bab8ca717f07967d60801b65e16fb47e30da/docs/pikachu-preview.png
+listScreenshot: https://raw.githubusercontent.com/hellosz/dsh-pets/bae5bab8ca717f07967d60801b65e16fb47e30da/docs/pikachu-preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,14 +53,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: bae5bab8ca717f07967d60801b65e16fb47e30da
+    packageVersion: 0.3.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:43:48.416Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1352
 starsSnapshot: 6
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-14T23:43:48.798Z
+metadataUpdatedAt: 2026-11-14T23:43:48.798Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/hellosz/dsh-pets/bae5bab8ca717f07967d60801b65e16fb47e30da/docs/pikachu-preview.png
+updatedAt: 2026-11-14T23:43:48.798Z

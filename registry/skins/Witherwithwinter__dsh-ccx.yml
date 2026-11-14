@@ -28,7 +28,7 @@ install:
     repository: https://github.com/Witherwithwinter/dsh-ccx
     gitHead: 1c8c268d2b1a9bcf9b8f750a91021097dc656256
 compatibility:
-  dsh: unverified
+  dsh: ^0.8.9
   platform:
     - web
 screenshots:
@@ -36,34 +36,34 @@ screenshots:
   - https://raw.githubusercontent.com/Witherwithwinter/dsh-ccx/8fcf6b4edc4b146378b48cd56ccafd3ea141604a/assets/preview-mountain.png
 listScreenshot: https://raw.githubusercontent.com/Witherwithwinter/dsh-ccx/8fcf6b4edc4b146378b48cd56ccafd3ea141604a/assets/preview-home.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: 1c8c268d2b1a9bcf9b8f750a91021097dc656256
     packageVersion: 0.8.9
     scannerVersion: static-v2
+    dshVersion: ^0.8.9
     mode: static
     result: pass
-    checkedAt: 2026-11-09T00:14:43.047Z
+    checkedAt: 2026-11-14T23:45:13.615Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 999
+starsSnapshot: 3
 releaseUpdatedAt: 2026-11-09T00:14:48.500Z
-metadataUpdatedAt: 2026-11-09T00:14:48.500Z
+metadataUpdatedAt: 2026-11-14T23:45:18.546Z
 starsUpdatedAt: 2026-11-03T01:37:22.117Z
-updatedAt: 2026-11-09T00:14:48.500Z
+updatedAt: 2026-11-14T23:45:18.546Z

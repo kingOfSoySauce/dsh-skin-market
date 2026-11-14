@@ -19,6 +19,9 @@ install:
   target: github:EDMOK/dsh-minecraft-theme#fd50da26e8cb96aa0f9b80ae5a30769675893b86
   version: 0.1.0-rc.5
   commit: fd50da26e8cb96aa0f9b80ae5a30769675893b86
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
 compatibility:
   dsh: unverified
   platform:
@@ -52,9 +55,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 1159
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T23:44:51.702Z
 metadataUpdatedAt: 2026-11-14T00:22:37.200Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T00:22:37.200Z
+updatedAt: 2026-11-14T23:44:51.702Z

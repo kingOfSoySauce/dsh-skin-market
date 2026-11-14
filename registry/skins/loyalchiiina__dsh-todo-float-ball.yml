@@ -38,27 +38,27 @@ screenshots:
   - https://raw.githubusercontent.com/loyalchiiina/dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/docs/images/preview-skins.png
 listScreenshot: https://raw.githubusercontent.com/loyalchiiina/dsh-todo-float-ball/693e16b8d3386a3d7b4a6ab12efe1a0b498823ba/docs/images/preview-pinned-sessions.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: 4864fd3d624c493f6c2f8a10be8a24675a76e159
     packageVersion: 0.14.11
     scannerVersion: static-v2
+    dshVersion: ">=0.1.7-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:23:54.929Z
+    checkedAt: 2026-11-14T23:48:01.885Z
     findings: []
 license:
   code: MIT
@@ -66,6 +66,6 @@ license:
 featuredRank: 999
 starsSnapshot: 1
 releaseUpdatedAt: 2026-11-14T00:23:55.795Z
-metadataUpdatedAt: 2026-11-14T00:23:55.795Z
+metadataUpdatedAt: 2026-11-14T23:48:02.662Z
 starsUpdatedAt: 2026-11-06T00:08:18.130Z
-updatedAt: 2026-11-14T00:23:55.795Z
+updatedAt: 2026-11-14T23:48:02.662Z

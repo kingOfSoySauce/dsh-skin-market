@@ -17,11 +17,14 @@ modes:
   - light
   - dark
 install:
-  target: github:omdsh-dev/dsh-ui-whale#4fbb196304201b8919bc8e3085f07ea825c1c457
-  version: 0.3.36
-  commit: 4fbb196304201b8919bc8e3085f07ea825c1c457
+  target: github:omdsh-dev/dsh-ui-whale#dffe4208927e44fe839ac6d738c043040700a629
+  version: 0.3.38
+  commit: dffe4208927e44fe839ac6d738c043040700a629
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: 0.1.2-alpha.1 ~0.2.1-alpha.1
   platform:
     - web
 screenshots:
@@ -33,8 +36,9 @@ screenshots:
   - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E6%91%86%E8%85%B9%E9%B3%8D.gif
   - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E5%96%B7%E6%B0%B4%E8%8A%B1.gif
   - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E5%86%92%E7%88%B1%E5%BF%83.gif
+listScreenshot: https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/dsh-ui-whale-demo.gif
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -46,13 +50,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: dffe4208927e44fe839ac6d738c043040700a629
+    packageVersion: 0.3.38
+    scannerVersion: static-v2
+    dshVersion: 0.1.2-alpha.1 ~0.2.1-alpha.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:21.654Z
+    findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 1249
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:56:31.671Z
-metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+releaseUpdatedAt: 2026-11-14T23:48:23.166Z
+metadataUpdatedAt: 2026-11-14T23:48:23.166Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-14T07:56:31.671Z
-listScreenshot: https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/dsh-ui-whale-demo.gif
+updatedAt: 2026-11-14T23:48:23.166Z

@@ -41,13 +41,14 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - README 图片未通过文件、尺寸或图片 hash 检查，请补充可核验的运行截图。
   scan:
     commit: 364187c0561311864ab4d832fae89028afd9a274
     packageVersion: 1.2.1
@@ -62,6 +63,6 @@ license:
 featuredRank: 1131
 starsSnapshot: 33
 releaseUpdatedAt: 2026-11-14T00:22:52.907Z
-metadataUpdatedAt: 2026-11-14T00:22:52.907Z
+metadataUpdatedAt: 2026-11-14T23:42:40.481Z
 starsUpdatedAt: 2026-11-14T00:22:52.907Z
-updatedAt: 2026-11-14T00:22:52.907Z
+updatedAt: 2026-11-14T23:42:40.481Z

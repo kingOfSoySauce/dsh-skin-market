@@ -21,6 +21,9 @@ install:
   target: github:bbbbbmy/dsh-moe-bear-skin#ac38d16d47dcc5549db1315429743c3b80e5910e
   version: 0.1.1
   commit: ac38d16d47dcc5549db1315429743c3b80e5910e
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -30,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview-gallery.webp
   - https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview-bear.webp
   - https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/assets/leaf-fall-poster.webp
+listScreenshot: https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -43,15 +47,22 @@ health:
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: ac38d16d47dcc5549db1315429743c3b80e5910e
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:55.224Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1301
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:46:55.649Z
+metadataUpdatedAt: 2026-11-14T23:46:55.649Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview.png
+updatedAt: 2026-11-14T23:46:55.649Z

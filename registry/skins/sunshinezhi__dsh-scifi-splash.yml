@@ -21,14 +21,14 @@ install:
   version: 1.2.0
   commit: f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/sunshinezhi/dsh-scifi-splash/f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c/screenshot-1.png
   - https://raw.githubusercontent.com/sunshinezhi/dsh-scifi-splash/f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c/screenshot-2.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -46,7 +46,7 @@ license:
 featuredRank: 1447
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/sunshinezhi/dsh-scifi-splash/f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c/screenshot-1.png

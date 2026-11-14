@@ -21,8 +21,20 @@ install:
   target: github:Flamencoff/dsh-xiaozhushou#51750b4e2e2843c9e6479c056f7d47702cc9dc23
   version: 0.47.9
   commit: 51750b4e2e2843c9e6479c056f7d47702cc9dc23
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-xiaozhushou
+    packageVersion: 0.47.9
+    integrity: sha512-LhTk+yRO2ZXf0/TZYEg9kbDmfHyIC3NXf3mYfqHha192lyrBXSWuU/AIUquRqRUoe+rrGrLPIXxGdpBH/MrgCQ==
+  npm:
+    name: dsh-xiaozhushou
+    version: 0.47.9
+    integrity: sha512-LhTk+yRO2ZXf0/TZYEg9kbDmfHyIC3NXf3mYfqHha192lyrBXSWuU/AIUquRqRUoe+rrGrLPIXxGdpBH/MrgCQ==
+    repository: https://github.com/Flamencoff/dsh-xiaozhushou
+    gitHead: 51750b4e2e2843c9e6479c056f7d47702cc9dc23
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1-rc.3 <0.3.0"
   platform:
     - web
 screenshots:
@@ -30,8 +42,9 @@ screenshots:
   - https://raw.githubusercontent.com/Flamencoff/dsh-xiaozhushou/51750b4e2e2843c9e6479c056f7d47702cc9dc23/docs/screenshots/whale-expressions.png
   - https://raw.githubusercontent.com/Flamencoff/dsh-xiaozhushou/51750b4e2e2843c9e6479c056f7d47702cc9dc23/docs/screenshots/mascot.png
   - https://raw.githubusercontent.com/Flamencoff/dsh-xiaozhushou/51750b4e2e2843c9e6479c056f7d47702cc9dc23/docs/screenshots/overlay.png
+listScreenshot: https://raw.githubusercontent.com/Flamencoff/dsh-xiaozhushou/51750b4e2e2843c9e6479c056f7d47702cc9dc23/docs/screenshots/board-full.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -43,13 +56,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 51750b4e2e2843c9e6479c056f7d47702cc9dc23
+    packageVersion: 0.47.9
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.3 <0.3.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:35.001Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1337
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-14T23:45:35.666Z
+metadataUpdatedAt: 2026-11-14T23:45:35.666Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/Flamencoff/dsh-xiaozhushou/51750b4e2e2843c9e6479c056f7d47702cc9dc23/docs/screenshots/board-full.png
+updatedAt: 2026-11-14T23:45:35.666Z

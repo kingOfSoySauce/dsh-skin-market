@@ -24,7 +24,7 @@ install:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1-rc.3 <0.3.0-0"
   platform:
     - web
 screenshots:
@@ -38,19 +38,18 @@ screenshots:
   - https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/screenshot-moon.jpg
 listScreenshot: https://raw.githubusercontent.com/zzzzym7018/dsh-fudan-status-wallpaper/014ba35d976e9c673b356c8bd10d74e70cb519de/assets/workflow-today.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
     commit: 014ba35d976e9c673b356c8bd10d74e70cb519de
     packageVersion: 4.3.0
@@ -65,6 +64,6 @@ license:
 featuredRank: 1171
 starsSnapshot: 1
 releaseUpdatedAt: 2026-11-14T00:24:11.135Z
-metadataUpdatedAt: 2026-11-14T00:24:11.135Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T00:24:11.135Z
+updatedAt: 2026-11-14T23:28:29.986Z

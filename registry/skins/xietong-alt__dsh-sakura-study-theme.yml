@@ -19,12 +19,16 @@ install:
   target: github:xietong-alt/dsh-sakura-study-theme#f06eef727234f7d4cbf8302ef90359616913fcff
   version: 1.2.0
   commit: f06eef727234f7d4cbf8302ef90359616913fcff
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.3
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/xietong-alt/dsh-sakura-study-theme/f06eef727234f7d4cbf8302ef90359616913fcff/assets/preview-redacted.png
+listScreenshot: https://raw.githubusercontent.com/xietong-alt/dsh-sakura-study-theme/f06eef727234f7d4cbf8302ef90359616913fcff/assets/preview-redacted.png
 review:
   compatibility: verified
   preview: verified
@@ -33,19 +37,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: f06eef727234f7d4cbf8302ef90359616913fcff
+    packageVersion: 1.2.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.3
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:56.507Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1279
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+releaseUpdatedAt: 2026-11-14T23:48:56.713Z
+metadataUpdatedAt: 2026-11-14T23:48:56.713Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
-listScreenshot: https://raw.githubusercontent.com/xietong-alt/dsh-sakura-study-theme/f06eef727234f7d4cbf8302ef90359616913fcff/assets/preview-redacted.png
+updatedAt: 2026-11-14T23:48:56.713Z

@@ -20,6 +20,9 @@ install:
   target: github:theskywilldawn/dsh-stamina-pet#63a461f03722bfdadd63ee663c36ec0302a1493c
   version: 2.81.92
   commit: 63a461f03722bfdadd63ee663c36ec0302a1493c
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: ^0.1.7-rc.1 || ^0.2.0-rc.1
   platform:
@@ -32,6 +35,7 @@ screenshots:
   - https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/05-baseline.jpg
   - https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/06-her.jpg
   - https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/07-probe.jpg
+listScreenshot: https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/01-bars.jpg
 review:
   compatibility: verified
   preview: verified
@@ -46,13 +50,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 63a461f03722bfdadd63ee663c36ec0302a1493c
+    packageVersion: 2.81.92
+    scannerVersion: static-v2
+    dshVersion: ^0.1.7-rc.1 || ^0.2.0-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:44:11.716Z
+    findings: []
 license:
-  code: AGPL-3.0
+  code: AGPL-3.0-or-later
   commercialUse: true
 featuredRank: 1519
 starsSnapshot: 5
-releaseUpdatedAt: 2026-11-14T19:39:31.051Z
-metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+releaseUpdatedAt: 2026-11-14T23:44:15.801Z
+metadataUpdatedAt: 2026-11-14T23:44:15.801Z
 starsUpdatedAt: 2026-11-14T19:39:31.051Z
-updatedAt: 2026-11-14T19:39:31.051Z
-listScreenshot: https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/01-bars.jpg
+updatedAt: 2026-11-14T23:44:15.801Z

@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ToBeWin/DSH-Skin-Studio#ace2e57915a28edb3b352002b14d86253ee49fd1
+  target: github:ToBeWin/DSH-Skin-Studio#e20dec0d81fced97de62a0ad184b7ee0032fd477
   version: 0.1.0
-  commit: ace2e57915a28edb3b352002b14d86253ee49fd1
+  commit: e20dec0d81fced97de62a0ad184b7ee0032fd477
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@tobewin/dsh-skin-studio"
+    packageVersion: 0.1.0
+    integrity: sha512-cTQvbe1SnRubtp6s/nniGcOSC+Q4baUkfxy1sEh5cQrv230sLsFWpdybKRRj1PXnIu07tYsly/m1ZPcyd3+SbA==
+  npm:
+    name: "@tobewin/dsh-skin-studio"
+    version: 0.1.0
+    integrity: sha512-cTQvbe1SnRubtp6s/nniGcOSC+Q4baUkfxy1sEh5cQrv230sLsFWpdybKRRj1PXnIu07tYsly/m1ZPcyd3+SbA==
+    repository: https://github.com/ToBeWin/DSH-Skin-Studio
+    gitHead: e20dec0d81fced97de62a0ad184b7ee0032fd477
 compatibility:
   dsh: unverified
   platform:
@@ -27,6 +39,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/ToBeWin/DSH-Skin-Studio/ace2e57915a28edb3b352002b14d86253ee49fd1/docs/images/skin-studio-applied.png
   - https://raw.githubusercontent.com/ToBeWin/DSH-Skin-Studio/ace2e57915a28edb3b352002b14d86253ee49fd1/docs/images/skin-studio.png
+listScreenshot: https://raw.githubusercontent.com/ToBeWin/DSH-Skin-Studio/ace2e57915a28edb3b352002b14d86253ee49fd1/docs/images/skin-studio-applied.png
 review:
   compatibility: unverified
   preview: verified
@@ -34,21 +47,33 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: improve
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: e20dec0d81fced97de62a0ad184b7ee0032fd477
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:48:46.115Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1141
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+releaseUpdatedAt: 2026-11-14T23:48:46.969Z
+metadataUpdatedAt: 2026-11-14T23:48:46.969Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/ToBeWin/DSH-Skin-Studio/ace2e57915a28edb3b352002b14d86253ee49fd1/docs/images/skin-studio-applied.png
+updatedAt: 2026-11-14T23:48:46.969Z

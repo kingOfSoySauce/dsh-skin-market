@@ -20,35 +20,55 @@ install:
   target: github:AAAjzx111/dsh-theme-jing-chiyang#d857c35ae506e269c0c3e0b656b54cb322aab424
   version: 1.3.0
   commit: d857c35ae506e269c0c3e0b656b54cb322aab424
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-jing-chiyang
+    packageVersion: 1.3.0
+    integrity: sha512-9hHdD2mF74FGPSR7Gs0aUfaMo229phQqGwYZoVLF6lYVY/ooiYX9MKABJ6y+O3Ea3im50ElyUSods2AnmkqE+g==
+  npm:
+    name: dsh-theme-jing-chiyang
+    version: 1.3.0
+    integrity: sha512-9hHdD2mF74FGPSR7Gs0aUfaMo229phQqGwYZoVLF6lYVY/ooiYX9MKABJ6y+O3Ea3im50ElyUSods2AnmkqE+g==
+    repository: https://github.com/AAAjzx111/dsh-theme-jing-chiyang
+    gitHead: d857c35ae506e269c0c3e0b656b54cb322aab424
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.7"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/preview.jpg
   - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/assets/key-art.webp
   - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/assets/intro.jpg
+listScreenshot: https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/preview.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
+  scan:
+    commit: d857c35ae506e269c0c3e0b656b54cb322aab424
+    packageVersion: 1.3.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.7"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:38.898Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1207
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:53:29.580Z
-metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+releaseUpdatedAt: 2026-11-14T23:46:39.269Z
+metadataUpdatedAt: 2026-11-14T23:46:39.269Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-14T07:53:29.580Z
-listScreenshot: https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/preview.jpg
+updatedAt: 2026-11-14T23:46:39.269Z

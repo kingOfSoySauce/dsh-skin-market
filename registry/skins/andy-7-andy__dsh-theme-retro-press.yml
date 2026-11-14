@@ -18,11 +18,23 @@ modes:
   - light
   - dark
 install:
-  target: github:andy-7-andy/dsh-theme-retro-press#4e9d2e271dc003135ca43a4219846d0b43075683
+  target: github:andy-7-andy/dsh-theme-retro-press#3e8f78bc3f305b1eec9c501b4a6509c64b342112
   version: 3.13.3
-  commit: 4e9d2e271dc003135ca43a4219846d0b43075683
+  commit: 3e8f78bc3f305b1eec9c501b4a6509c64b342112
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-retro-press
+    packageVersion: 3.13.3
+    integrity: sha512-XQiqZ40aN3mLO48kuW/MQUs2hR6eZrEPOzFCjhWAiZ4X+KFuE/bvpGjseZxbBta2ekkPd5CpG+8mdYFIyNVbTw==
+  npm:
+    name: dsh-theme-retro-press
+    version: 3.13.3
+    integrity: sha512-XQiqZ40aN3mLO48kuW/MQUs2hR6eZrEPOzFCjhWAiZ4X+KFuE/bvpGjseZxbBta2ekkPd5CpG+8mdYFIyNVbTw==
+    repository: https://github.com/andy-7-andy/dsh-theme-retro-press
+    gitHead: 3e8f78bc3f305b1eec9c501b4a6509c64b342112
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-0"
   platform:
     - web
 screenshots:
@@ -30,8 +42,9 @@ screenshots:
   - https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/4e9d2e271dc003135ca43a4219846d0b43075683/assets/scenes.jpg
   - https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/4e9d2e271dc003135ca43a4219846d0b43075683/assets/press.png
   - https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/4e9d2e271dc003135ca43a4219846d0b43075683/assets/phosphor.png
+listScreenshot: https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/4e9d2e271dc003135ca43a4219846d0b43075683/assets/palettes.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -43,13 +56,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 3e8f78bc3f305b1eec9c501b4a6509c64b342112
+    packageVersion: 3.13.3
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:48.062Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1212
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:53:29.580Z
-metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+releaseUpdatedAt: 2026-11-14T23:46:49.919Z
+metadataUpdatedAt: 2026-11-14T23:46:49.919Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-14T07:53:29.580Z
-listScreenshot: https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/4e9d2e271dc003135ca43a4219846d0b43075683/assets/palettes.png
+updatedAt: 2026-11-14T23:46:49.919Z

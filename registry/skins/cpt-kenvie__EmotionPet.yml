@@ -31,41 +31,41 @@ install:
     repository: https://github.com/cpt-kenvie/EmotionPet
     gitHead: c8406a069040ada3d347b44e5db0a263de58ee27
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1-rc.3 <0.3.0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/cpt-kenvie/EmotionPet/2cd085879f2820a00adcf03cf5b7769aae34c928/assets/emotion-pet-demo.gif
 listScreenshot: https://raw.githubusercontent.com/cpt-kenvie/EmotionPet/2cd085879f2820a00adcf03cf5b7769aae34c928/assets/emotion-pet-demo.gif
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
     commit: c8406a069040ada3d347b44e5db0a263de58ee27
     packageVersion: 0.1.6
     scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.3 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-11-02T05:58:05.902Z
+    checkedAt: 2026-11-14T23:44:49.133Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 免费非商业运行、修改及分享须注明出处并保留版权和许可；商业集成、推广或授权须另获许可。
-starsSnapshot: 3
 featuredRank: 997
+starsSnapshot: 3
 releaseUpdatedAt: 2026-11-03T01:36:56.745Z
-metadataUpdatedAt: 2026-11-03T01:36:56.745Z
+metadataUpdatedAt: 2026-11-14T23:44:49.896Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-03T01:36:56.745Z
+updatedAt: 2026-11-14T23:44:49.896Z

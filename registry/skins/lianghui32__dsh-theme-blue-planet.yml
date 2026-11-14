@@ -22,13 +22,13 @@ install:
   version: 0.2.12
   commit: 2c5136e8f10d13c4d40db76434c20bb6dbcca30e
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.7"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/lianghui32/dsh-theme-blue-planet/2c5136e8f10d13c4d40db76434c20bb6dbcca30e/preview.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -46,7 +46,7 @@ license:
 featuredRank: 1392
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/lianghui32/dsh-theme-blue-planet/2c5136e8f10d13c4d40db76434c20bb6dbcca30e/preview.png

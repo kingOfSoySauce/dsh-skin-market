@@ -18,6 +18,9 @@ install:
   target: github:RizenHNT/dsh-skin-digital-arcade#c14020575d68486edd726176aaffa9a07eac343f
   version: 0.3.2
   commit: c14020575d68486edd726176aaffa9a07eac343f
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/workbench-mode-menu.jpg
   - https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/workbench-mobile.jpg
   - https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/appearance-mobile.jpg
+listScreenshot: https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/workbench-home.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -41,14 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: c14020575d68486edd726176aaffa9a07eac343f
+    packageVersion: 0.3.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:31.720Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1428
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-14T23:48:32.291Z
+metadataUpdatedAt: 2026-11-14T23:48:32.291Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/RizenHNT/dsh-skin-digital-arcade/c14020575d68486edd726176aaffa9a07eac343f/preview/workbench-home.jpg
+updatedAt: 2026-11-14T23:48:32.291Z

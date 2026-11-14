@@ -27,6 +27,10 @@ compatibility:
   dsh: 0.1.0-rc.5
   platform:
     - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Magic-Mercury__dsh-chat-customizer/ee8da1661e4077d771945fb5e9e0b7b8c5fa7eb7/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Magic-Mercury__dsh-chat-customizer/ee8da1661e4077d771945fb5e9e0b7b8c5fa7eb7/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Magic-Mercury__dsh-chat-customizer/ee8da1661e4077d771945fb5e9e0b7b8c5fa7eb7/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -47,21 +51,17 @@ health:
     commit: ee8da1661e4077d771945fb5e9e0b7b8c5fa7eb7
     packageVersion: 1.0.0
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.5
+    dshVersion: ^0.1.0-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-08-23T10:18:28.545Z
+    checkedAt: 2026-11-14T23:45:54.790Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Magic-Mercury__dsh-chat-customizer/ee8da1661e4077d771945fb5e9e0b7b8c5fa7eb7/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Magic-Mercury__dsh-chat-customizer/ee8da1661e4077d771945fb5e9e0b7b8c5fa7eb7/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Magic-Mercury__dsh-chat-customizer/ee8da1661e4077d771945fb5e9e0b7b8c5fa7eb7/settings.png
 featuredRank: 998
+starsSnapshot: 2
 releaseUpdatedAt: 2026-08-23T10:18:29.045Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T23:45:54.791Z
 starsUpdatedAt: 2026-08-23T10:18:29.045Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-14T23:45:54.791Z

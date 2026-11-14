@@ -25,7 +25,7 @@ install:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.6-alpha.2"
   platform:
     - web
 screenshots:
@@ -39,34 +39,34 @@ screenshots:
   - https://raw.githubusercontent.com/nlqh7/dsh-beautify/7d82c8338a04a37f543d401386efb63293e19c54/docs/screenshots/05-we-wallpaper.png
 listScreenshot: https://raw.githubusercontent.com/nlqh7/dsh-beautify/c7a215c98977454d92414a789b958d6b8077c667/docs/screenshots/01-three-babies.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: 7899cc77dd3d05b22d9b66fc20ce1d7e3f903508
     packageVersion: 0.5.4
     scannerVersion: static-v2
+    dshVersion: ">=0.1.6-alpha.2"
     mode: static
     result: pass
-    checkedAt: 2026-10-18T09:46:39.575Z
+    checkedAt: 2026-11-14T23:46:00.439Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 184
+starsSnapshot: 2
 releaseUpdatedAt: 2026-10-18T09:46:43.816Z
-metadataUpdatedAt: 2026-10-18T09:46:43.816Z
+metadataUpdatedAt: 2026-11-14T23:46:12.417Z
 starsUpdatedAt: 2026-09-21T22:35:47.902Z
-updatedAt: 2026-10-18T09:46:43.816Z
+updatedAt: 2026-11-14T23:46:12.417Z

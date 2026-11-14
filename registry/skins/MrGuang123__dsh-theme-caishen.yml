@@ -17,39 +17,57 @@ modes:
   - light
   - dark
 install:
-  target: github:MrGuang123/dsh-theme-caishen#6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23
-  version: 0.2.3
-  commit: 6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23
+  target: github:MrGuang123/dsh-theme-caishen#562b4625b8040e755324f037c0087cdd746e4d8f
+  version: 0.2.5
+  commit: 562b4625b8040e755324f037c0087cdd746e4d8f
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.2 || >=0.2.1-rc.5 <0.3.0-0 || 0.2.1-rc.5
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/home.png
+  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/conversation.png
+  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/settings.png
+screenshots:
+  - https://raw.githubusercontent.com/MrGuang123/dsh-theme-caishen/562b4625b8040e755324f037c0087cdd746e4d8f/assets/previews/documentation/visual-repair-host-home-dark.png
+  - https://raw.githubusercontent.com/MrGuang123/dsh-theme-caishen/562b4625b8040e755324f037c0087cdd746e4d8f/assets/previews/documentation/visual-repair-host-home-light.png
+  - https://raw.githubusercontent.com/MrGuang123/dsh-theme-caishen/562b4625b8040e755324f037c0087cdd746e4d8f/assets/previews/documentation/prompt-editor.png
+  - https://raw.githubusercontent.com/MrGuang123/dsh-theme-caishen/562b4625b8040e755324f037c0087cdd746e4d8f/assets/previews/documentation/prompt-sort.png
+  - https://raw.githubusercontent.com/MrGuang123/dsh-theme-caishen/562b4625b8040e755324f037c0087cdd746e4d8f/assets/application/dock/dsh-caishen-black-gold-v1.png
+listScreenshot: https://raw.githubusercontent.com/MrGuang123/dsh-theme-caishen/562b4625b8040e755324f037c0087cdd746e4d8f/assets/previews/documentation/visual-repair-host-home-dark.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
-    compatibility: pass
+    readmeScreenshots: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.1-rc.2 || >=0.2.1-rc.5 <0.3.0-0 || 0.2.1-rc.5 未被本次检测范围 >=0.2.1-rc.5 <0.3.0-0 完全覆盖（固定版本 562b4625b8040e755324f037c0087cdd746e4d8f）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 562b4625b8040e755324f037c0087cdd746e4d8f
+    packageVersion: 0.2.5
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.5 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:01.459Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1406
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:45:02.744Z
+metadataUpdatedAt: 2026-11-14T23:45:02.744Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-marketScreenshots:
-  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/home.png
-  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/conversation.png
-  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/settings.png
+updatedAt: 2026-11-14T23:45:02.744Z

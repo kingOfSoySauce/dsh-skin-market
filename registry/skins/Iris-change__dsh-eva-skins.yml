@@ -16,38 +16,58 @@ tags:
 modes:
   - dark
 install:
-  target: github:Iris-change/dsh-eva-skins#2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4
+  target: github:Iris-change/dsh-eva-skins#33dde33557635ad28c7d41f14ab78de8d58b7170
   version: 2.1.6
-  commit: 2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4
+  commit: 33dde33557635ad28c7d41f14ab78de8d58b7170
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-eva-skins
+    packageVersion: 2.1.6
+    integrity: sha512-Cya7tG5FsvMpPxWNF1tkgtbhzx/HnUuHxxwVq+L+VgOS5C9IOuhwged1xUUcLPB8as8AqH6bu9BvHhHXcWcHzQ==
+  npm:
+    name: dsh-eva-skins
+    version: 2.1.6
+    integrity: sha512-Cya7tG5FsvMpPxWNF1tkgtbhzx/HnUuHxxwVq+L+VgOS5C9IOuhwged1xUUcLPB8as8AqH6bu9BvHhHXcWcHzQ==
+    repository: https://github.com/Iris-change/dsh-eva-skins
+    gitHead: 33dde33557635ad28c7d41f14ab78de8d58b7170
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-rc.1 <0.3.0-0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Iris-change/dsh-eva-skins/2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4/docs/boot.jpg
   - https://raw.githubusercontent.com/Iris-change/dsh-eva-skins/2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4/docs/skins.jpg
   - https://raw.githubusercontent.com/Iris-change/dsh-eva-skins/2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4/docs/switcher.jpg
+listScreenshot: https://raw.githubusercontent.com/Iris-change/dsh-eva-skins/2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4/docs/boot.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
+  scan:
+    commit: 33dde33557635ad28c7d41f14ab78de8d58b7170
+    packageVersion: 2.1.6
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:44:03.434Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1228
-starsSnapshot: 6
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
-starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/Iris-change/dsh-eva-skins/2c577415bdd8ea5ca589a5f0004e0ed2ae2a10c4/docs/boot.jpg
+starsSnapshot: 8
+releaseUpdatedAt: 2026-11-14T23:44:04.483Z
+metadataUpdatedAt: 2026-11-14T23:44:04.483Z
+starsUpdatedAt: 2026-11-14T23:44:04.483Z
+updatedAt: 2026-11-14T23:44:04.483Z

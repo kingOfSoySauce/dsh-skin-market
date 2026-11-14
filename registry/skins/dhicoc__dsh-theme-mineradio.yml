@@ -16,22 +16,26 @@ modes:
   - light
   - dark
 install:
-  target: github:dhicoc/dsh-theme-mineradio#60ac976b9fb761ba6ded8f0ddf3a51459b82ffea
-  version: 3.0.5
-  commit: 60ac976b9fb761ba6ded8f0ddf3a51459b82ffea
+  target: github:dhicoc/dsh-theme-mineradio#4e91b6664dea2a640f22cf0fe89639001207e97b
+  version: 3.0.6
+  commit: 4e91b6664dea2a640f22cf0fe89639001207e97b
   desktop:
     mode: manual-only
     reason: 当前仅完成 DSH Web 隔离运行验收；Desktop 安装路径尚未单独核验。
   npm:
     name: dsh-theme-mineradio
-    version: 3.0.5
-    integrity: sha512-PU8shoC2C+zIkLvnD0Ol1Xp9Tr4BzL3udabxhYPPR7f51RX9JF8NQHu0Q3G34M/54RR68wqo3stkovLpYUCa5A==
+    version: 3.0.6
+    integrity: sha512-x8rg0OGoMF0Zb/xSj32d43X5qT0HVuFlqSjd8teAfq0F1gkGKYFmEkF671Ht9vXyqsn4OhT672ekKRkVTpwoeQ==
     repository: https://github.com/dhicoc/dsh-theme-mineradio
-    gitHead: 60ac976b9fb761ba6ded8f0ddf3a51459b82ffea
+    gitHead: 4e91b6664dea2a640f22cf0fe89639001207e97b
 compatibility:
   dsh: 0.1.7-rc.2
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.png
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/conversation.png
+  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/settings.png
 screenshots:
   - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.gif
   - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/preset-compat-deepsea-balanced.gif
@@ -55,26 +59,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.1.7-rc.2 未被本次检测范围 ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.2.0-rc.2 完全覆盖（固定版本 60ac976b9fb761ba6ded8f0ddf3a51459b82ffea）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.7-rc.2 未被本次检测范围 ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.2.0-rc.2 完全覆盖（固定版本 4e91b6664dea2a640f22cf0fe89639001207e97b）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 60ac976b9fb761ba6ded8f0ddf3a51459b82ffea
-    packageVersion: 3.0.5
+    commit: 4e91b6664dea2a640f22cf0fe89639001207e97b
+    packageVersion: 3.0.6
     scannerVersion: static-v2
     dshVersion: ^0.1.1-rc.2 || ^0.1.2-alpha.1 || ^0.2.0-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-11-09T07:13:07.379Z
+    checkedAt: 2026-11-14T23:42:48.026Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 20
-marketScreenshots:
-  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.png
-  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/conversation.png
-  - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/settings.png
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-09T07:13:07.840Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+starsSnapshot: 20
+releaseUpdatedAt: 2026-11-14T23:42:48.921Z
+metadataUpdatedAt: 2026-11-14T23:42:48.921Z
 starsUpdatedAt: 2026-11-03T19:20:00+08:00
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-14T23:42:48.921Z

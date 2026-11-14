@@ -20,8 +20,11 @@ install:
   target: github:Nefelibater/dsh-theme-prts-originium#a6e40fd5ae32ec45dbb86080f86c954011e6a1b5
   version: 1.4.2
   commit: a6e40fd5ae32ec45dbb86080f86c954011e6a1b5
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.7-rc.1 <0.3.0-0"
   platform:
     - web
 screenshots:
@@ -32,28 +35,36 @@ screenshots:
   - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-boot-dark.jpg
   - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-memory.jpg
   - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-composer.jpg
+listScreenshot: https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/docs/images/theme-light.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: a6e40fd5ae32ec45dbb86080f86c954011e6a1b5
+    packageVersion: 1.4.2
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.7-rc.1 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:59.739Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1414
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:46:00.814Z
+metadataUpdatedAt: 2026-11-14T23:46:00.814Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/docs/images/theme-light.png
+updatedAt: 2026-11-14T23:46:00.814Z

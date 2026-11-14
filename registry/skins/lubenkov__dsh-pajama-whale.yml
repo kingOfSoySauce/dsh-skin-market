@@ -20,6 +20,18 @@ install:
   target: github:lubenkov/dsh-pajama-whale#dd246fff468d6ed53464aadefd804ac6ff864d66
   version: 0.3.6
   commit: dd246fff468d6ed53464aadefd804ac6ff864d66
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-pajama-whale
+    packageVersion: 0.3.6
+    integrity: sha512-451xx2nWl1YrMPKoazLyMwbh6kPLtJR9H0W2uOzYwe+eD6f3RrOIKNVlfKQAIbfRIFvvRnkqHmntm+2ckn0uLg==
+  npm:
+    name: dsh-pajama-whale
+    version: 0.3.6
+    integrity: sha512-451xx2nWl1YrMPKoazLyMwbh6kPLtJR9H0W2uOzYwe+eD6f3RrOIKNVlfKQAIbfRIFvvRnkqHmntm+2ckn0uLg==
+    repository: https://github.com/lubenkov/dsh-pajama-whale
+    gitHead: dd246fff468d6ed53464aadefd804ac6ff864d66
 compatibility:
   dsh: 0.2.1--rc.2 || 0.2.1-rc.2 || >=0.2.1-rc.2 <0.3.0-0
   platform:
@@ -29,26 +41,36 @@ screenshots:
   - https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/dd246fff468d6ed53464aadefd804ac6ff864d66/docs/squash.png
   - https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/dd246fff468d6ed53464aadefd804ac6ff864d66/docs/working.png
   - https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/dd246fff468d6ed53464aadefd804ac6ff864d66/docs/cloud.png
+listScreenshot: https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/dd246fff468d6ed53464aadefd804ac6ff864d66/docs/idle.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.2.1--rc.2 || 0.2.1-rc.2 || >=0.2.1-rc.2 <0.3.0-0 未被本次检测范围 >=0.2.1-rc.2 <0.3.0-0 完全覆盖（固定版本 dd246fff468d6ed53464aadefd804ac6ff864d66）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: dd246fff468d6ed53464aadefd804ac6ff864d66
+    packageVersion: 0.3.6
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:02.945Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1240
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:48:03.966Z
+metadataUpdatedAt: 2026-11-14T23:48:03.966Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/dd246fff468d6ed53464aadefd804ac6ff864d66/docs/idle.png
+updatedAt: 2026-11-14T23:48:03.966Z

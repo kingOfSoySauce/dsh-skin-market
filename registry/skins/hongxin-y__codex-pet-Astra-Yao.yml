@@ -21,6 +21,10 @@ install:
   target: github:hongxin-y/codex-pet-Astra-Yao#bea41f95dc287c25ffd7dbde24d89fc712721f87
   version: 0.1.7
   commit: bea41f95dc287c25ffd7dbde24d89fc712721f87
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepare
+  allowBuild: dsh-pet-astra-yao@https://codeload.github.com/hongxin-y/codex-pet-Astra-Yao/tar.gz/bea41f95dc287c25ffd7dbde24d89fc712721f87
 compatibility:
   dsh: 0.2.1-rc.3
   platform:
@@ -29,26 +33,36 @@ screenshots:
   - https://raw.githubusercontent.com/hongxin-y/codex-pet-Astra-Yao/bea41f95dc287c25ffd7dbde24d89fc712721f87/docs/shot-dsh.png
   - https://raw.githubusercontent.com/hongxin-y/codex-pet-Astra-Yao/bea41f95dc287c25ffd7dbde24d89fc712721f87/docs/states.webp
   - https://raw.githubusercontent.com/hongxin-y/codex-pet-Astra-Yao/bea41f95dc287c25ffd7dbde24d89fc712721f87/docs/atlas-overview.webp
+listScreenshot: https://raw.githubusercontent.com/hongxin-y/codex-pet-Astra-Yao/bea41f95dc287c25ffd7dbde24d89fc712721f87/docs/shot-dsh.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: bea41f95dc287c25ffd7dbde24d89fc712721f87
+    packageVersion: 0.1.7
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.3
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:40.802Z
+    findings: []
 license:
-  code: NOASSERTION
+  code: UNLICENSED
   commercialUse: false
 featuredRank: 1353
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-14T23:45:41.489Z
+metadataUpdatedAt: 2026-11-14T23:45:41.489Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/hongxin-y/codex-pet-Astra-Yao/bea41f95dc287c25ffd7dbde24d89fc712721f87/docs/shot-dsh.png
+updatedAt: 2026-11-14T23:45:41.489Z

@@ -18,9 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Shirolin/dsh-theme-animal-island-ui#fb6a056834f78e8547efafe3c4f4c9cea87409a3
+  target: github:Shirolin/dsh-theme-animal-island-ui#513b8934bfc4ea92e38aa19e2e3407b30df6f98c
   version: 0.3.38
-  commit: fb6a056834f78e8547efafe3c4f4c9cea87409a3
+  commit: 513b8934bfc4ea92e38aa19e2e3407b30df6f98c
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-animal-island-ui
+    packageVersion: 0.3.38
+    integrity: sha512-tRinhod6sOsKEC0ZnbueCksA24DKA+eY5goFYYXvZ/FQIlXuGEcr8N9KG9PV/afnanqzCtp3g/Lk/6KW3k51ew==
+  npm:
+    name: dsh-theme-animal-island-ui
+    version: 0.3.38
+    integrity: sha512-tRinhod6sOsKEC0ZnbueCksA24DKA+eY5goFYYXvZ/FQIlXuGEcr8N9KG9PV/afnanqzCtp3g/Lk/6KW3k51ew==
+    repository: https://github.com/Shirolin/dsh-theme-animal-island-ui
+    gitHead: 513b8934bfc4ea92e38aa19e2e3407b30df6f98c
 compatibility:
   dsh: 0.1.5-rc.3
   platform:
@@ -31,6 +43,7 @@ screenshots:
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/workspace-dark.webp
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/sidebar-light.webp
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/sidebar-dark.webp
+listScreenshot: https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/theme-poster.webp
 review:
   compatibility: verified
   preview: verified
@@ -45,13 +58,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 513b8934bfc4ea92e38aa19e2e3407b30df6f98c
+    packageVersion: 0.3.38
+    scannerVersion: static-v2
+    dshVersion: 0.1.5-rc.3
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:09.350Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1437
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-14T23:46:11.373Z
+metadataUpdatedAt: 2026-11-14T23:46:11.373Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/Shirolin/dsh-theme-animal-island-ui/fb6a056834f78e8547efafe3c4f4c9cea87409a3/docs/screenshots/theme-poster.webp
+updatedAt: 2026-11-14T23:46:11.373Z

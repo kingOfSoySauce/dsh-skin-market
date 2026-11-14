@@ -19,6 +19,9 @@ install:
   target: github:lucky01222/dsh-workbench-theme#9c269156586f8b72044904aa961028be2602030c
   version: 1.3.4
   commit: 9c269156586f8b72044904aa961028be2602030c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.7-rc.2
   platform:
@@ -29,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/lucky01222/dsh-workbench-theme/9c269156586f8b72044904aa961028be2602030c/media/appearance-settings.jpg
   - https://raw.githubusercontent.com/lucky01222/dsh-workbench-theme/9c269156586f8b72044904aa961028be2602030c/media/no-decoration.jpg
   - https://raw.githubusercontent.com/lucky01222/dsh-workbench-theme/9c269156586f8b72044904aa961028be2602030c/media/page-header.jpg
+listScreenshot: https://raw.githubusercontent.com/lucky01222/dsh-workbench-theme/9c269156586f8b72044904aa961028be2602030c/media/home-light.jpg
 review:
   compatibility: verified
   preview: verified
@@ -42,14 +46,25 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 9c269156586f8b72044904aa961028be2602030c
+    packageVersion: 1.3.4
+    scannerVersion: static-v2
+    dshVersion: 0.1.7-rc.2 || 0.2.0-rc.2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:48:03.255Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1164
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-13T04:37:09.826Z
+releaseUpdatedAt: 2026-11-14T23:48:03.865Z
+metadataUpdatedAt: 2026-11-14T23:48:03.865Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-13T04:37:09.826Z
-listScreenshot: https://raw.githubusercontent.com/lucky01222/dsh-workbench-theme/9c269156586f8b72044904aa961028be2602030c/media/home-light.jpg
+updatedAt: 2026-11-14T23:48:03.865Z

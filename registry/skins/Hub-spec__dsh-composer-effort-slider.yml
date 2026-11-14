@@ -22,6 +22,9 @@ install:
   target: github:Hub-spec/dsh-composer-effort-slider#d8ee219e8c5c947d64237f218568e47c74a311b0
   version: 1.0.1
   commit: d8ee219e8c5c947d64237f218568e47c74a311b0
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1--rc.2-4d6bfe || 0.2.1-rc.2
   platform:
@@ -33,27 +36,37 @@ screenshots:
   - https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/effect-original.png
   - https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/effect-audio.png
   - https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/effect-aurora.png
+listScreenshot: https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/dark.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.1--rc.2-4d6bfe || 0.2.1-rc.2 未被本次检测范围 >=0.2.1-rc.2 完全覆盖（固定版本 d8ee219e8c5c947d64237f218568e47c74a311b0）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: d8ee219e8c5c947d64237f218568e47c74a311b0
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:47:32.649Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1230
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:47:33.960Z
+metadataUpdatedAt: 2026-11-14T23:47:33.960Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/Hub-spec/dsh-composer-effort-slider/d8ee219e8c5c947d64237f218568e47c74a311b0/docs/dark.png
+updatedAt: 2026-11-14T23:47:33.960Z

@@ -20,6 +20,9 @@ install:
   target: github:lintwosix-beep/dsh-pet-chat#267c63ec0fbcd5d0398901bf6f0737c14160fd4c
   version: 0.3.9
   commit: 267c63ec0fbcd5d0398901bf6f0737c14160fd4c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.2.0-rc.1
   platform:
@@ -30,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/screenshot-dock.png
   - https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/screenshot-branch.png
   - https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/screenshot-menu.png
+listScreenshot: https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/promo/01-hero.png
 review:
   compatibility: verified
   preview: verified
@@ -43,13 +47,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 267c63ec0fbcd5d0398901bf6f0737c14160fd4c
+    packageVersion: 0.3.9
+    scannerVersion: static-v2
+    dshVersion: ^0.2.0-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:50.494Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1386
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:45:51.748Z
+metadataUpdatedAt: 2026-11-14T23:45:51.748Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/267c63ec0fbcd5d0398901bf6f0737c14160fd4c/docs/promo/01-hero.png
+updatedAt: 2026-11-14T23:45:51.748Z

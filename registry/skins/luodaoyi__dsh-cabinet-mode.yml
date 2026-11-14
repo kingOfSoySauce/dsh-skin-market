@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:luodaoyi/dsh-cabinet-mode#868fb1b32bb32ee500070139d4c9dfb3766c8f23
-  version: 0.8.0
-  commit: 868fb1b32bb32ee500070139d4c9dfb3766c8f23
+  target: github:luodaoyi/dsh-cabinet-mode#2b477600d2d670f7d95c8144cc4281392befb4a0
+  version: 0.9.1
+  commit: 2b477600d2d670f7d95c8144cc4281392befb4a0
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-cabinet-mode
+    packageVersion: 0.9.1
+    integrity: sha512-kYiDwTbWb2Y+4gDBCo2yXifNVrhfbBIedDUNE7chtZNaJ4Av5GFqcYCqz/XSkLY4T1UkwElhi+dVRHPSqyPXVQ==
+  npm:
+    name: dsh-cabinet-mode
+    version: 0.9.1
+    integrity: sha512-kYiDwTbWb2Y+4gDBCo2yXifNVrhfbBIedDUNE7chtZNaJ4Av5GFqcYCqz/XSkLY4T1UkwElhi+dVRHPSqyPXVQ==
+    repository: https://github.com/luodaoyi/dsh-cabinet-mode
+    gitHead: 2b477600d2d670f7d95c8144cc4281392befb4a0
 compatibility:
   dsh: 0.2.2-rc.1 || 0.2.1-rc.3 || 0.2.1-rc.5
   platform:
@@ -27,26 +39,36 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/luodaoyi/dsh-cabinet-mode/868fb1b32bb32ee500070139d4c9dfb3766c8f23/docs/images/cabinet-runtime-light.png
   - https://raw.githubusercontent.com/luodaoyi/dsh-cabinet-mode/868fb1b32bb32ee500070139d4c9dfb3766c8f23/docs/images/cabinet-runtime-dark.png
+listScreenshot: https://raw.githubusercontent.com/luodaoyi/dsh-cabinet-mode/868fb1b32bb32ee500070139d4c9dfb3766c8f23/docs/images/cabinet-runtime-light.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.2.2-rc.1 || 0.2.1-rc.3 || 0.2.1-rc.5 未被本次检测范围 0.2.1-rc.5 完全覆盖（固定版本 2b477600d2d670f7d95c8144cc4281392befb4a0）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 2b477600d2d670f7d95c8144cc4281392befb4a0
+    packageVersion: 0.9.1
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:42:24.753Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1239
 starsSnapshot: 35
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:42:26.577Z
+metadataUpdatedAt: 2026-11-14T23:42:26.577Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/luodaoyi/dsh-cabinet-mode/868fb1b32bb32ee500070139d4c9dfb3766c8f23/docs/images/cabinet-runtime-light.png
+updatedAt: 2026-11-14T23:42:26.577Z

@@ -24,7 +24,7 @@ install:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.5-rc.1"
   platform:
     - web
 screenshots:
@@ -35,34 +35,34 @@ screenshots:
   - https://raw.githubusercontent.com/AvalonskyAfar/MahoutsukaiNoYoru-DSH-Skin/372ce12620f05f30a6e5a5669cba94d8baf7e02c/screenshots/02-session-menu.jpg
 listScreenshot: https://raw.githubusercontent.com/AvalonskyAfar/MahoutsukaiNoYoru-DSH-Skin/372ce12620f05f30a6e5a5669cba94d8baf7e02c/screenshots/01-main-aoko-night.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: 372ce12620f05f30a6e5a5669cba94d8baf7e02c
     packageVersion: 0.1.1
     scannerVersion: static-v2
+    dshVersion: ">=0.1.5-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-10-21T22:17:28.330Z
+    checkedAt: 2026-11-14T23:43:33.972Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 7
 featuredRank: 1121
+starsSnapshot: 7
 releaseUpdatedAt: 2026-10-22T06:40:00.000Z
-metadataUpdatedAt: 2026-10-22T06:40:00.000Z
+metadataUpdatedAt: 2026-11-14T23:43:36.159Z
 starsUpdatedAt: 2026-11-07T05:33:50.960Z
-updatedAt: 2026-11-07T05:33:50.960Z
+updatedAt: 2026-11-14T23:43:36.159Z

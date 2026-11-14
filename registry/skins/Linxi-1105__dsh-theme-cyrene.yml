@@ -20,6 +20,9 @@ install:
   target: github:Linxi-1105/dsh-theme-cyrene#7efdb148853d6f9d7f00e4d6abdc21f97bb86981
   version: 0.37.0
   commit: 7efdb148853d6f9d7f00e4d6abdc21f97bb86981
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.1-rc.5"
   platform:
@@ -27,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Linxi-1105/dsh-theme-cyrene/7efdb148853d6f9d7f00e4d6abdc21f97bb86981/docs/screenshots/banner.jpg
   - https://raw.githubusercontent.com/Linxi-1105/dsh-theme-cyrene/7efdb148853d6f9d7f00e4d6abdc21f97bb86981/docs/screenshots/interface.png
+listScreenshot: https://raw.githubusercontent.com/Linxi-1105/dsh-theme-cyrene/7efdb148853d6f9d7f00e4d6abdc21f97bb86981/docs/screenshots/banner.jpg
 review:
   compatibility: verified
   preview: verified
@@ -40,13 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 7efdb148853d6f9d7f00e4d6abdc21f97bb86981
+    packageVersion: 0.37.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.5"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:51.362Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1238
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:45:51.700Z
+metadataUpdatedAt: 2026-11-14T23:45:51.700Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/Linxi-1105/dsh-theme-cyrene/7efdb148853d6f9d7f00e4d6abdc21f97bb86981/docs/screenshots/banner.jpg
+updatedAt: 2026-11-14T23:45:51.700Z

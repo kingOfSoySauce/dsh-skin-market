@@ -17,11 +17,23 @@ modes:
   - light
   - dark
 install:
-  target: github:Jimxinfang/dsh-theme-neo-brutalist#2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc
+  target: github:Jimxinfang/dsh-theme-neo-brutalist#86182f99cdb369766d1bec3e4f5a62abe703ff5b
   version: 0.1.0
-  commit: 2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc
+  commit: 86182f99cdb369766d1bec3e4f5a62abe703ff5b
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-neo-brutalist
+    packageVersion: 0.1.0
+    integrity: sha512-jySXIqHcYy8/LPKZq1/fmUp4FzU7qVOarei7voEeCGEW/fPHPZ/kSYXUQuI2TegzlCyALEFiMHde2U+0RE7Vhg==
+  npm:
+    name: dsh-theme-neo-brutalist
+    version: 0.1.0
+    integrity: sha512-jySXIqHcYy8/LPKZq1/fmUp4FzU7qVOarei7voEeCGEW/fPHPZ/kSYXUQuI2TegzlCyALEFiMHde2U+0RE7Vhg==
+    repository: https://github.com/Jimxinfang/dsh-theme-neo-brutalist
+    gitHead: 86182f99cdb369766d1bec3e4f5a62abe703ff5b
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1-rc.1 <0.3.0-0"
   platform:
     - web
 screenshots:
@@ -29,27 +41,35 @@ screenshots:
   - https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc/docs/screenshots/02-light-shell.png
   - https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc/docs/screenshots/03-dark-shell.png
   - https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc/docs/screenshots/04-light-settings.png
+listScreenshot: https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc/docs/screenshots/01-first-load.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
+  scan:
+    commit: 86182f99cdb369766d1bec3e4f5a62abe703ff5b
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.1 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:47:43.319Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1231
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:47:44.681Z
+metadataUpdatedAt: 2026-11-14T23:47:44.681Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc/docs/screenshots/01-first-load.png
+updatedAt: 2026-11-14T23:47:44.681Z

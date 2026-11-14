@@ -25,40 +25,41 @@ compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
+marketScreenshots:
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/home.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/conversation.png
+  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/settings.png
 screenshots: []
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.0-rc.6 未被本次检测范围 >=0.1.0-rc.6 <0.2.0 完全覆盖（固定版本 fb23f48219b259cf01f07e0a70c7a66b969b5b92）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: fb23f48219b259cf01f07e0a70c7a66b969b5b92
     packageVersion: 0.1.0
     scannerVersion: static-v2
-    dshVersion: ">=0.1.0-rc.6"
+    dshVersion: ">=0.1.0-rc.6 <0.2.0"
     mode: static
     result: pass
-    checkedAt: 2026-08-23T10:16:48.192Z
+    checkedAt: 2026-11-14T23:45:15.628Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
-marketScreenshots:
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/home.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/conversation.png
-  - https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yunfei07__dsh-song-ui/fb23f48219b259cf01f07e0a70c7a66b969b5b92/settings.png
 featuredRank: 997
+starsSnapshot: 3
 releaseUpdatedAt: 2026-08-23T10:16:48.742Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T23:45:15.628Z
 starsUpdatedAt: 2026-09-09T21:39:41.590Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-14T23:45:15.628Z

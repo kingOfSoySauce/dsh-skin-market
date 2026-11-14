@@ -20,6 +20,12 @@ install:
   target: github:TonyKingWJX/dsh-thinking-bar#4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb
   version: 1.0.7
   commit: 4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-thinking-bar
+    packageVersion: 1.0.7
+    integrity: sha512-CWl/HrkTbFMoFDXTQuUWUASmUEpHnM537StGK8PU2K5tNrhUUD4NdAfGcFB1jgCf0juzgJo0sx7+4R34Fwv7bw==
 compatibility:
   dsh: 0.2.1-rc.2 || >=0.2.1-rc.2
   platform:
@@ -31,6 +37,7 @@ screenshots:
   - https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-quantum-dark.png
   - https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-whale-dark.png
   - https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-liang-dark.png
+listScreenshot: https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-codex-dark.png
 review:
   compatibility: verified
   preview: verified
@@ -44,13 +51,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb
+    packageVersion: 1.0.7
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:10.050Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1269
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+releaseUpdatedAt: 2026-11-14T23:45:11.334Z
+metadataUpdatedAt: 2026-11-14T23:45:11.334Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
-listScreenshot: https://raw.githubusercontent.com/TonyKingWJX/dsh-thinking-bar/4cdcfa72bbf97c3e171a1f259ef1d683d6d3f0cb/docs/screenshots/popup-codex-dark.png
+updatedAt: 2026-11-14T23:45:11.334Z

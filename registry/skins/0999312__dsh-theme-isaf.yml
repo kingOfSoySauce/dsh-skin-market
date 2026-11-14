@@ -20,12 +20,16 @@ install:
   target: github:0999312/dsh-theme-isaf#161c909029ea640c8d1f8d8cabb5290fdd16aef1
   version: 0.1.8
   commit: 161c909029ea640c8d1f8d8cabb5290fdd16aef1
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/0999312/dsh-theme-isaf/161c909029ea640c8d1f8d8cabb5290fdd16aef1/assets/startup-poster.png
+listScreenshot: https://raw.githubusercontent.com/0999312/dsh-theme-isaf/161c909029ea640c8d1f8d8cabb5290fdd16aef1/assets/startup-poster.png
 review:
   compatibility: verified
   preview: verified
@@ -40,13 +44,21 @@ health:
     topic: improve
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 161c909029ea640c8d1f8d8cabb5290fdd16aef1
+    packageVersion: 0.1.8
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:17.303Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1206
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T07:53:29.580Z
-metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+releaseUpdatedAt: 2026-11-14T23:45:17.492Z
+metadataUpdatedAt: 2026-11-14T23:45:17.492Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-14T07:53:29.580Z
-listScreenshot: https://raw.githubusercontent.com/0999312/dsh-theme-isaf/161c909029ea640c8d1f8d8cabb5290fdd16aef1/assets/startup-poster.png
+updatedAt: 2026-11-14T23:45:17.492Z

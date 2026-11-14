@@ -20,12 +20,16 @@ install:
   target: github:ayanamirei0/dsh-ayanami-theme#6ac46a6595df9fa4605711f34264f618ef9dd66d
   version: 0.0.5
   commit: 6ac46a6595df9fa4605711f34264f618ef9dd66d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/ayanamirei0/dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/preview.png
+listScreenshot: https://raw.githubusercontent.com/ayanamirei0/dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -39,16 +43,23 @@ health:
     installCommand: improve
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 6ac46a6595df9fa4605711f34264f618ef9dd66d
+    packageVersion: 0.0.5
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:24.148Z
+    findings: []
 license:
-  code: NOASSERTION
+  code: UNLICENSED
   commercialUse: false
 featuredRank: 1213
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T07:53:29.580Z
-metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+releaseUpdatedAt: 2026-11-14T23:45:24.171Z
+metadataUpdatedAt: 2026-11-14T23:45:24.171Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-14T07:53:29.580Z
-listScreenshot: https://raw.githubusercontent.com/ayanamirei0/dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/preview.png
+updatedAt: 2026-11-14T23:45:24.171Z

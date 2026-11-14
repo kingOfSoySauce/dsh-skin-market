@@ -17,9 +17,22 @@ modes:
   - light
   - dark
 install:
-  target: github:iasiv5/dsh-skins#af54c1dfd74e3631dfbc6a95b2faa545bd645095
-  version: 1.5.30
-  commit: af54c1dfd74e3631dfbc6a95b2faa545bd645095
+  target: github:iasiv5/dsh-skins#4436a21145b6e947a27846c9fb473bc9bd0eae87
+  version: 1.5.33
+  commit: 4436a21145b6e947a27846c9fb473bc9bd0eae87
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@iasiv5/dsh-skins"
+    packageVersion: 1.5.33
+    integrity: sha512-ibzU/f21i0urdbpYGPUXIMhKsVs80uAanMYK5JKuD3PXvVQHoUwxL02qW+72pX+CChqdJc0VFWEa4YHEwu7i4Q==
+  allowBuild: "@iasiv5/dsh-skins@https://codeload.github.com/iasiv5/dsh-skins/tar.gz/4436a21145b6e947a27846c9fb473bc9bd0eae87"
+  npm:
+    name: "@iasiv5/dsh-skins"
+    version: 1.5.33
+    integrity: sha512-ibzU/f21i0urdbpYGPUXIMhKsVs80uAanMYK5JKuD3PXvVQHoUwxL02qW+72pX+CChqdJc0VFWEa4YHEwu7i4Q==
+    repository: https://github.com/iasiv5/dsh-skins
+    gitHead: 4436a21145b6e947a27846c9fb473bc9bd0eae87
 compatibility:
   dsh: 0.2.2--rc.1 || 0.2.1-rc.2 || 0.2.0-rc.2 || 0.2.0-rc.1
   platform:
@@ -31,26 +44,36 @@ screenshots:
   - https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-4.webp
   - https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-5.webp
   - https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-6.webp
+listScreenshot: https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-1.webp
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.2.2--rc.1 || 0.2.1-rc.2 || 0.2.0-rc.2 || 0.2.0-rc.1 未被本次检测范围 >=0.2.0-rc.1 || >=0.2.1-rc.1 完全覆盖（固定版本 4436a21145b6e947a27846c9fb473bc9bd0eae87）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 4436a21145b6e947a27846c9fb473bc9bd0eae87
+    packageVersion: 1.5.33
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1 || >=0.2.1-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:43:48.608Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1226
 starsSnapshot: 6
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:43:53.458Z
+metadataUpdatedAt: 2026-11-14T23:43:53.458Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-1.webp
+updatedAt: 2026-11-14T23:43:53.458Z

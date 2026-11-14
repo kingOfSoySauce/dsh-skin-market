@@ -19,6 +19,18 @@ install:
   target: github:nerv-base/dsh-theme-eva#63ab370cd573c220e710537ced4feb4dd26af439
   version: 0.3.0
   commit: 63ab370cd573c220e710537ced4feb4dd26af439
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-eva
+    packageVersion: 0.3.0
+    integrity: sha512-XfQsa655X0oPlymHaU5pPcspYuU7/3Vy2mfvasPf1cwanEBYUzRPc/mtZASuJklrgXPnTY9mnauIEKo4wyXDQg==
+  npm:
+    name: dsh-theme-eva
+    version: 0.3.0
+    integrity: sha512-XfQsa655X0oPlymHaU5pPcspYuU7/3Vy2mfvasPf1cwanEBYUzRPc/mtZASuJklrgXPnTY9mnauIEKo4wyXDQg==
+    repository: https://github.com/nerv-base/dsh-theme-eva
+    gitHead: 63ab370cd573c220e710537ced4feb4dd26af439
 compatibility:
   dsh: unverified
   platform:
@@ -27,6 +39,7 @@ screenshots:
   - https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/entry-plug.png
   - https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/nerve-link.png
   - https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/synchronization.png
+listScreenshot: https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/entry-plug.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,15 +53,22 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 63ab370cd573c220e710537ced4feb4dd26af439
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:03.021Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1246
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T07:56:31.671Z
-metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+releaseUpdatedAt: 2026-11-14T23:45:03.932Z
+metadataUpdatedAt: 2026-11-14T23:45:03.932Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-14T07:56:31.671Z
-listScreenshot: https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/entry-plug.png
+updatedAt: 2026-11-14T23:45:03.932Z

@@ -21,6 +21,9 @@ install:
   target: github:Canye-zdm/dsh-skin-aurora#793fbbbbe530cfa4341d8e2da44be94088f712bd
   version: 0.1.0
   commit: 793fbbbbe530cfa4341d8e2da44be94088f712bd
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Canye-zdm/dsh-skin-aurora/793fbbbbe530cfa4341d8e2da44be94088f712bd/preview-dark.png
   - https://raw.githubusercontent.com/Canye-zdm/dsh-skin-aurora/793fbbbbe530cfa4341d8e2da44be94088f712bd/preview-light.png
+listScreenshot: https://raw.githubusercontent.com/Canye-zdm/dsh-skin-aurora/793fbbbbe530cfa4341d8e2da44be94088f712bd/preview-dark.png
 review:
   compatibility: unverified
   preview: verified
@@ -41,14 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 793fbbbbe530cfa4341d8e2da44be94088f712bd
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:59.062Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1306
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:46:59.458Z
+metadataUpdatedAt: 2026-11-14T23:46:59.458Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/Canye-zdm/dsh-skin-aurora/793fbbbbe530cfa4341d8e2da44be94088f712bd/preview-dark.png
+updatedAt: 2026-11-14T23:46:59.458Z

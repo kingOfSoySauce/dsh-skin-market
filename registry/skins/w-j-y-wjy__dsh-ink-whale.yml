@@ -20,6 +20,18 @@ install:
   target: github:w-j-y-wjy/dsh-ink-whale#acb18f775321f8258fb948557bf76b24c18fcc01
   version: 0.2.1
   commit: acb18f775321f8258fb948557bf76b24c18fcc01
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-ink-whale
+    packageVersion: 0.2.1
+    integrity: sha512-NGPsEaoruD2PiyJ8wRTQqJbFSBW0ewoq29unU36aNNWLv9nC1a8slvSYuzv8iwds0DvuJg6NmeMlVvE4ad0hJg==
+  npm:
+    name: dsh-ink-whale
+    version: 0.2.1
+    integrity: sha512-NGPsEaoruD2PiyJ8wRTQqJbFSBW0ewoq29unU36aNNWLv9nC1a8slvSYuzv8iwds0DvuJg6NmeMlVvE4ad0hJg==
+    repository: https://github.com/w-j-y-wjy/dsh-ink-whale
+    gitHead: acb18f775321f8258fb948557bf76b24c18fcc01
 compatibility:
   dsh: unverified
   platform:
@@ -30,6 +42,7 @@ screenshots:
   - https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/preview-dark-final.png
   - https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/preview-dark-writing.png
   - https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/plugin-settings.png
+listScreenshot: https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/preview-light-final.png
 review:
   compatibility: unverified
   preview: verified
@@ -43,14 +56,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: acb18f775321f8258fb948557bf76b24c18fcc01
+    packageVersion: 0.2.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:43:40.291Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1273
 starsSnapshot: 7
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+releaseUpdatedAt: 2026-11-14T23:43:41.296Z
+metadataUpdatedAt: 2026-11-14T23:43:41.296Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
-listScreenshot: https://raw.githubusercontent.com/w-j-y-wjy/dsh-ink-whale/acb18f775321f8258fb948557bf76b24c18fcc01/assets/preview-light-final.png
+updatedAt: 2026-11-14T23:43:41.296Z

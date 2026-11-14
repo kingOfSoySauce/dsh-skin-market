@@ -19,6 +19,18 @@ install:
   target: github:kinglhy2006/dsh-crt-theme#21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e
   version: 1.0.0
   commit: 21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-crt-theme
+    packageVersion: 1.0.0
+    integrity: sha512-VbAtTDuY9u2Ozhb8qv5/86aduytY+S0I4EXu8VEkcFimVEVm0Cnr/93UW1/R6LGucFZgbtPh0qc8cq9nHKIzWg==
+  npm:
+    name: dsh-crt-theme
+    version: 1.0.0
+    integrity: sha512-VbAtTDuY9u2Ozhb8qv5/86aduytY+S0I4EXu8VEkcFimVEVm0Cnr/93UW1/R6LGucFZgbtPh0qc8cq9nHKIzWg==
+    repository: https://github.com/kinglhy2006/dsh-crt-theme
+    gitHead: 21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e
 compatibility:
   dsh: unverified
   platform:
@@ -26,6 +38,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/kinglhy2006/dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/docs/preview.png
   - https://raw.githubusercontent.com/kinglhy2006/dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/docs/dashboard.png
+listScreenshot: https://raw.githubusercontent.com/kinglhy2006/dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/docs/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -39,14 +52,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:47:52.849Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1235
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:47:53.022Z
+metadataUpdatedAt: 2026-11-14T23:47:53.022Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/kinglhy2006/dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/docs/preview.png
+updatedAt: 2026-11-14T23:47:53.022Z

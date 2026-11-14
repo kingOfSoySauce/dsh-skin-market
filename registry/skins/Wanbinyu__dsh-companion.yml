@@ -20,14 +20,14 @@ install:
   version: 0.1.13
   commit: 7e381ae09d0173c448d1b20344c318a86bf3102f
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.0-rc.6"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Wanbinyu/dsh-companion/7e381ae09d0173c448d1b20344c318a86bf3102f/docs/images/companion-overview.png
   - https://raw.githubusercontent.com/Wanbinyu/dsh-companion/7e381ae09d0173c448d1b20344c318a86bf3102f/docs/images/companion-dialogue-settings.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -45,7 +45,7 @@ license:
 featuredRank: 1468
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/Wanbinyu/dsh-companion/7e381ae09d0173c448d1b20344c318a86bf3102f/docs/images/companion-overview.png

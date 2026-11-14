@@ -21,6 +21,9 @@ install:
   target: github:InkDemon911/dsh-theme-miyabi#f189b810ee62db6bca66d9acaa6cdadeabac3710
   version: 4.1.3
   commit: f189b810ee62db6bca66d9acaa6cdadeabac3710
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -29,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/InkDemon911/dsh-theme-miyabi/f189b810ee62db6bca66d9acaa6cdadeabac3710/docs/cover.jpg
   - https://raw.githubusercontent.com/InkDemon911/dsh-theme-miyabi/f189b810ee62db6bca66d9acaa6cdadeabac3710/docs/figures/fig-palette.png
   - https://raw.githubusercontent.com/InkDemon911/dsh-theme-miyabi/f189b810ee62db6bca66d9acaa6cdadeabac3710/assets/miyabi-wallpaper.jpg
+listScreenshot: https://raw.githubusercontent.com/InkDemon911/dsh-theme-miyabi/f189b810ee62db6bca66d9acaa6cdadeabac3710/docs/cover.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -42,14 +46,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: f189b810ee62db6bca66d9acaa6cdadeabac3710
+    packageVersion: 4.1.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:44:27.185Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1360
 starsSnapshot: 4
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-14T23:44:27.745Z
+metadataUpdatedAt: 2026-11-14T23:44:27.745Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/InkDemon911/dsh-theme-miyabi/f189b810ee62db6bca66d9acaa6cdadeabac3710/docs/cover.jpg
+updatedAt: 2026-11-14T23:44:27.745Z

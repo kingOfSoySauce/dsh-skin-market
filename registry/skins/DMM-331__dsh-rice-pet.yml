@@ -21,34 +21,49 @@ install:
   target: github:DMM-331/dsh-rice-pet#f6149c4134f6e92e1f974fcc688b3c98bd88d17e
   version: 0.2.8
   commit: f6149c4134f6e92e1f974fcc688b3c98bd88d17e
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+  allowBuild: dsh-rice-pet@https://codeload.github.com/DMM-331/dsh-rice-pet/tar.gz/f6149c4134f6e92e1f974fcc688b3c98bd88d17e
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-rc.2 <0.3.0-0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/DMM-331/dsh-rice-pet/f6149c4134f6e92e1f974fcc688b3c98bd88d17e/art/previews/eat.gif
+listScreenshot: https://raw.githubusercontent.com/DMM-331/dsh-rice-pet/f6149c4134f6e92e1f974fcc688b3c98bd88d17e/art/previews/eat.gif
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: f6149c4134f6e92e1f974fcc688b3c98bd88d17e
+    packageVersion: 0.2.8
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.2 <0.3.0-0"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:47:13.916Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
-  code: CC-BY-NC-SA-4.0
+  code: MIT AND CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 1322
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:47:14.175Z
+metadataUpdatedAt: 2026-11-14T23:47:14.175Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/DMM-331/dsh-rice-pet/f6149c4134f6e92e1f974fcc688b3c98bd88d17e/art/previews/eat.gif
+updatedAt: 2026-11-14T23:47:14.175Z

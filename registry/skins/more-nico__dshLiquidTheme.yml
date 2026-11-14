@@ -19,6 +19,9 @@ install:
   target: github:more-nico/dshLiquidTheme#612e24a5fb574a97f60f4d3a4f8735b5e3388479
   version: 0.4.2
   commit: 612e24a5fb574a97f60f4d3a4f8735b5e3388479
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -30,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/wallpaper-seaside.jpg
   - https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/wallpaper-sky.jpg
   - https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/wallpaper-cat.jpg
+listScreenshot: https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/home.png
 review:
   compatibility: unverified
   preview: verified
@@ -43,15 +47,22 @@ health:
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 612e24a5fb574a97f60f4d3a4f8735b5e3388479
+    packageVersion: 0.4.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:14.532Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1403
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:48:15.971Z
+metadataUpdatedAt: 2026-11-14T23:48:15.971Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/more-nico/dshLiquidTheme/612e24a5fb574a97f60f4d3a4f8735b5e3388479/assets/home.png
+updatedAt: 2026-11-14T23:48:15.971Z

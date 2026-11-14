@@ -20,8 +20,11 @@ install:
   target: github:bauerelizabeth07139/tangsan#aea08b49cfe89c411ab8d34acb31cda2371ce926
   version: 0.2.0
   commit: aea08b49cfe89c411ab8d34acb31cda2371ce926
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.0 <0.3.0-0"
   platform:
     - web
 screenshots:
@@ -30,33 +33,33 @@ screenshots:
   - https://raw.githubusercontent.com/bauerelizabeth07139/tangsan/aea08b49cfe89c411ab8d34acb31cda2371ce926/assets/tangsan-mark.jpg
 listScreenshot: https://raw.githubusercontent.com/bauerelizabeth07139/tangsan/aea08b49cfe89c411ab8d34acb31cda2371ce926/assets/tangsan-wallpaper.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
     commit: aea08b49cfe89c411ab8d34acb31cda2371ce926
     packageVersion: 0.2.0
     scannerVersion: static-v2
+    dshVersion: ">=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.0 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-10T00:13:29.707Z
+    checkedAt: 2026-11-14T23:46:54.653Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 1144
-releaseUpdatedAt: 2026-11-13T04:37:09.826Z
-metadataUpdatedAt: 2026-11-14T00:22:37.200Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T23:46:54.999Z
+metadataUpdatedAt: 2026-11-14T23:46:54.999Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T00:22:37.200Z
+updatedAt: 2026-11-14T23:46:54.999Z

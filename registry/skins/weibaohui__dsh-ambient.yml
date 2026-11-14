@@ -30,26 +30,25 @@ install:
     repository: https://github.com/weibaohui/dsh-ambient
     gitHead: f56ef27e26c67826966a94cee4e65e547b563ccc
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.7-rc.2"
   platform:
     - web
 screenshots:
   - https://foruda.gitee.com/images/1774880015525784725/4fd67005_77493.png
 listScreenshot: https://foruda.gitee.com/images/1774880015525784725/4fd67005_77493.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
@@ -68,6 +67,6 @@ license:
 featuredRank: 0
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-09T07:18:35.273Z
-metadataUpdatedAt: 2026-10-30T03:54:25.198Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-11-09T07:18:35.273Z
+updatedAt: 2026-11-14T23:28:29.986Z

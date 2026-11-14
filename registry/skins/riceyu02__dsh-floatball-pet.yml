@@ -21,36 +21,54 @@ install:
   target: github:riceyu02/dsh-floatball-pet#a06c659b41e207b1ecc4b8fb95150add1afdedff
   version: 0.3.3
   commit: a06c659b41e207b1ecc4b8fb95150add1afdedff
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepare,postinstall
+  allowBuild: dsh-floatball-pet@https://codeload.github.com/riceyu02/dsh-floatball-pet/tar.gz/a06c659b41e207b1ecc4b8fb95150add1afdedff
+  npm:
+    name: dsh-floatball-pet
+    version: 0.3.3
+    integrity: sha512-v81tln52bkYB0k2TxLhHxpm1FK9Qktv/ATsN6qE0HwSKNXg+YxuqJbyIS9SuX0eZf5ixAmb2d05/z6hXRRE8rQ==
+    repository: https://github.com/riceyu02/dsh-floatball-pet
+    gitHead: a06c659b41e207b1ecc4b8fb95150add1afdedff
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.7-rc.2 <0.3.0-0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/riceyu02/dsh-floatball-pet/a06c659b41e207b1ecc4b8fb95150add1afdedff/docs/01-idle.png
   - https://raw.githubusercontent.com/riceyu02/dsh-floatball-pet/a06c659b41e207b1ecc4b8fb95150add1afdedff/docs/02-hover.png
   - https://raw.githubusercontent.com/riceyu02/dsh-floatball-pet/a06c659b41e207b1ecc4b8fb95150add1afdedff/docs/03-panel.png
+listScreenshot: https://raw.githubusercontent.com/riceyu02/dsh-floatball-pet/a06c659b41e207b1ecc4b8fb95150add1afdedff/docs/01-idle.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: a06c659b41e207b1ecc4b8fb95150add1afdedff
+    packageVersion: 0.3.3
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.7-rc.2 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:04.353Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1426
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-14T23:46:05.368Z
+metadataUpdatedAt: 2026-11-14T23:46:05.368Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/riceyu02/dsh-floatball-pet/a06c659b41e207b1ecc4b8fb95150add1afdedff/docs/01-idle.png
+updatedAt: 2026-11-14T23:46:05.368Z

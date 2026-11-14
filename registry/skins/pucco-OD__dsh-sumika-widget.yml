@@ -21,6 +21,9 @@ install:
   target: github:pucco-OD/dsh-sumika-widget#4d16ced2088b47b7715cfb6480801d934dd72f1f
   version: 1.0.0
   commit: 4d16ced2088b47b7715cfb6480801d934dd72f1f
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.3
   platform:
@@ -29,26 +32,36 @@ screenshots:
   - https://raw.githubusercontent.com/pucco-OD/dsh-sumika-widget/4d16ced2088b47b7715cfb6480801d934dd72f1f/docs/preview.png
   - https://raw.githubusercontent.com/pucco-OD/dsh-sumika-widget/4d16ced2088b47b7715cfb6480801d934dd72f1f/docs/states.png
   - https://raw.githubusercontent.com/pucco-OD/dsh-sumika-widget/4d16ced2088b47b7715cfb6480801d934dd72f1f/docs/question-card.png
+listScreenshot: https://raw.githubusercontent.com/pucco-OD/dsh-sumika-widget/4d16ced2088b47b7715cfb6480801d934dd72f1f/docs/preview.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 4d16ced2088b47b7715cfb6480801d934dd72f1f
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.3
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:26.438Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1252
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:56:31.671Z
-metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+releaseUpdatedAt: 2026-11-14T23:48:26.759Z
+metadataUpdatedAt: 2026-11-14T23:48:26.759Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-14T07:56:31.671Z
-listScreenshot: https://raw.githubusercontent.com/pucco-OD/dsh-sumika-widget/4d16ced2088b47b7715cfb6480801d934dd72f1f/docs/preview.png
+updatedAt: 2026-11-14T23:48:26.759Z

@@ -44,26 +44,27 @@ screenshots:
   - https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/themes.png
 listScreenshot: https://raw.githubusercontent.com/XCNXNXNX/dsh-portable-tavern/b1b319b60680f8d16acd3499775b57ded8096304/screenshots/chat.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2 未被本次检测范围 ^22.18.0 || >=24.2.0 完全覆盖（固定版本 153bfc7e505fa300340e1ce1aac13a04b7a36416）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 153bfc7e505fa300340e1ce1aac13a04b7a36416
     packageVersion: 0.4.1
     scannerVersion: static-v2
-    dshVersion: 0.1.7-rc.2 || 0.2.0-rc.1 || 0.2.0-rc.2
+    dshVersion: ^22.18.0 || >=24.2.0
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:22:55.218Z
+    checkedAt: 2026-11-14T23:42:42.573Z
     findings: []
 license:
   code: MIT
@@ -71,6 +72,6 @@ license:
 featuredRank: 1142
 starsSnapshot: 25
 releaseUpdatedAt: 2026-11-14T00:22:57.166Z
-metadataUpdatedAt: 2026-11-14T00:22:57.166Z
+metadataUpdatedAt: 2026-11-14T23:42:45.005Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T00:22:57.166Z
+updatedAt: 2026-11-14T23:42:45.005Z

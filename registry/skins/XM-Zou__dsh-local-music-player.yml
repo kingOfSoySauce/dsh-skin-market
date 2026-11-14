@@ -21,7 +21,7 @@ install:
   version: 0.7.3
   commit: da8ae04175bde41568238a5b783baeb04b71e7fb
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1"
   platform:
     - web
 screenshots:
@@ -31,7 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/playlist-menu.png
   - https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/backup.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -49,7 +49,7 @@ license:
 featuredRank: 1486
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/banner.png

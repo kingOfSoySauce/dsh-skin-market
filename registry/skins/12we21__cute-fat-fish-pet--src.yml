@@ -26,6 +26,10 @@ compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/home.png
+  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/conversation.png
+  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/settings.png
 screenshots:
   - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/demo.gif
   - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/console.png
@@ -35,38 +39,33 @@ screenshots:
   - https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/hero.png
 listScreenshot: https://raw.githubusercontent.com/12we21/cute-fat-fish-pet/e53f63e67227671aca092e3334c8611e29b880b6/docs/images/demo.gif
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.2.0-rc.1 未被本次检测范围 ^0.2.0-rc.1 完全覆盖（固定版本 652c4abb3075e574b6fa5d68b79c8aadbaf7b6e7）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  suggestions: []
   scan:
     commit: 652c4abb3075e574b6fa5d68b79c8aadbaf7b6e7
     packageVersion: 1.2.4
     scannerVersion: static-v2
-    dshVersion: ^0.2.0-rc.1
+    dshVersion: ">=0.2.0-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-10-27T23:00:46.690Z
+    checkedAt: 2026-11-14T23:42:21.995Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 36
-marketScreenshots:
-  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/home.png
-  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/conversation.png
-  - skin-screenshots/12we21__cute-fat-fish-pet--src/e53f63e67227671aca092e3334c8611e29b880b6/settings.png
 featuredRank: 981
+starsSnapshot: 36
 releaseUpdatedAt: 2026-10-27T23:00:48.166Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T23:42:24.447Z
 starsUpdatedAt: 2026-11-11T13:17:15.192Z
-updatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-14T23:42:24.447Z

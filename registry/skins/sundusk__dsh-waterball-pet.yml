@@ -20,6 +20,9 @@ install:
   target: github:sundusk/dsh-waterball-pet#5fb3ce282e10fcb109b41bf5ea27c13f04dffe29
   version: 0.2.0
   commit: 5fb3ce282e10fcb109b41bf5ea27c13f04dffe29
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.2-alpha.1
   platform:
@@ -33,26 +36,36 @@ screenshots:
   - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-idle-blue-no-eyes.png
   - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-waiting-green-white-eyes.png
   - https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-waiting-green-no-eyes.png
+listScreenshot: https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-idle-blue-black-eyes.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.1.2-alpha.1 未被本次检测范围 >=0.1.1-rc.2 完全覆盖（固定版本 5fb3ce282e10fcb109b41bf5ea27c13f04dffe29）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 5fb3ce282e10fcb109b41bf5ea27c13f04dffe29
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.1-rc.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:10.741Z
+    findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 featuredRank: 1445
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-14T23:46:13.787Z
+metadataUpdatedAt: 2026-11-14T23:46:13.787Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/sundusk/dsh-waterball-pet/5fb3ce282e10fcb109b41bf5ea27c13f04dffe29/docs/assets/waterball-idle-blue-black-eyes.png
+updatedAt: 2026-11-14T23:46:13.787Z

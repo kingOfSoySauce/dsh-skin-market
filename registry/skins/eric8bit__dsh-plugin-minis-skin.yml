@@ -21,6 +21,9 @@ install:
   target: github:eric8bit/dsh-plugin-minis-skin#801ee4bf73fc7f244f52296ff9ace1e46d812288
   version: 0.0.1
   commit: 801ee4bf73fc7f244f52296ff9ace1e46d812288
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.0.1-rc.1 <0.2.0"
   platform:
@@ -28,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/eric8bit/dsh-plugin-minis-skin/801ee4bf73fc7f244f52296ff9ace1e46d812288/cards/%E4%BA%AE%E8%89%B2.png
   - https://raw.githubusercontent.com/eric8bit/dsh-plugin-minis-skin/801ee4bf73fc7f244f52296ff9ace1e46d812288/cards/%E6%B7%B1%E8%89%B2.png
+listScreenshot: https://raw.githubusercontent.com/eric8bit/dsh-plugin-minis-skin/801ee4bf73fc7f244f52296ff9ace1e46d812288/cards/%E4%BA%AE%E8%89%B2.png
 review:
   compatibility: verified
   preview: verified
@@ -42,13 +46,21 @@ health:
     topic: improve
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 801ee4bf73fc7f244f52296ff9ace1e46d812288
+    packageVersion: 0.0.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.0.1-rc.1 <0.2.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:47:18.657Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1328
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:47:19.382Z
+metadataUpdatedAt: 2026-11-14T23:47:19.382Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/eric8bit/dsh-plugin-minis-skin/801ee4bf73fc7f244f52296ff9ace1e46d812288/cards/%E4%BA%AE%E8%89%B2.png
+updatedAt: 2026-11-14T23:47:19.382Z

@@ -18,9 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:TongY1n/ui-muyu#cb21032dcb832d194deac4993508bca426c41547
+  target: github:TongY1n/ui-muyu#f81c75aa18185670215e851c0079862d8119336a
   version: 0.1.6
-  commit: cb21032dcb832d194deac4993508bca426c41547
+  commit: f81c75aa18185670215e851c0079862d8119336a
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-ui-muyu
+    packageVersion: 0.1.6
+    integrity: sha512-JrOev80Qe8OHwIYKuCs1gXBAOMeGYVoJ4VLa2WFs6vz8YF5W9Cv6uUcLI66BdNcupzRh4dc2+dYdF3iInWcZXw==
+  npm:
+    name: dsh-ui-muyu
+    version: 0.1.6
+    integrity: sha512-JrOev80Qe8OHwIYKuCs1gXBAOMeGYVoJ4VLa2WFs6vz8YF5W9Cv6uUcLI66BdNcupzRh4dc2+dYdF3iInWcZXw==
+    repository: https://github.com/TongY1n/ui-muyu
+    gitHead: f81c75aa18185670215e851c0079862d8119336a
 compatibility:
   dsh: ^0.2.0-rc.2 || ^0.2.1-alpha.2 || ^0.2.2-alpha.2
   platform:
@@ -28,26 +40,36 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/TongY1n/ui-muyu/cb21032dcb832d194deac4993508bca426c41547/docs/images/preview.png
   - https://cdn.jsdelivr.net/gh/TongY1n/ui-muyu@main/docs/images/preview.png
+listScreenshot: https://raw.githubusercontent.com/TongY1n/ui-muyu/cb21032dcb832d194deac4993508bca426c41547/docs/images/preview.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 ^0.2.0-rc.2 || ^0.2.1-alpha.2 || ^0.2.2-alpha.2 未被本次检测范围 >=0.2.1-alpha.2 <0.3.0 完全覆盖（固定版本 f81c75aa18185670215e851c0079862d8119336a）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: f81c75aa18185670215e851c0079862d8119336a
+    packageVersion: 0.1.6
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-alpha.2 <0.3.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:15.799Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1458
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-14T23:46:16.520Z
+metadataUpdatedAt: 2026-11-14T23:46:16.520Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/TongY1n/ui-muyu/cb21032dcb832d194deac4993508bca426c41547/docs/images/preview.png
+updatedAt: 2026-11-14T23:46:16.520Z

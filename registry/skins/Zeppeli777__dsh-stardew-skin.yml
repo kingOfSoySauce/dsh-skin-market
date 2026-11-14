@@ -22,7 +22,7 @@ install:
   version: 0.2.3
   commit: 396ddd28e250da998ab0c0e20f0492d2d9ca247c
 compatibility:
-  dsh: unverified
+  dsh: 0.1.2-rc.1 ~0.2.2-rc.1 || 0.1.2-rc.1 ~0.2.1-rc.3
   platform:
     - web
 screenshots:
@@ -35,7 +35,7 @@ screenshots:
   - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/permission-approval-021.png
   - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/chat-page-fixed.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -53,7 +53,7 @@ license:
 featuredRank: 1503
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/theme-preview.png

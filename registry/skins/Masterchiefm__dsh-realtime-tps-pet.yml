@@ -21,6 +21,9 @@ install:
   target: github:Masterchiefm/dsh-realtime-tps-pet#9487d93ad71bf5b5742cbf167b737afb7c4b8fb3
   version: 0.2.2
   commit: 9487d93ad71bf5b5742cbf167b737afb7c4b8fb3
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
@@ -32,6 +35,7 @@ screenshots:
   - https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/pet_in_app.png
   - https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/capsule_in_app.png
   - https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/gauge_in_app.png
+listScreenshot: https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/pet_closeup.png
 review:
   compatibility: verified
   preview: verified
@@ -40,20 +44,29 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 9487d93ad71bf5b5742cbf167b737afb7c4b8fb3
+    packageVersion: 0.2.2
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:09.233Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1399
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:48:10.028Z
+metadataUpdatedAt: 2026-11-14T23:48:10.028Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/Masterchiefm/dsh-realtime-tps-pet/9487d93ad71bf5b5742cbf167b737afb7c4b8fb3/assets/screenshots/pet_closeup.png
+updatedAt: 2026-11-14T23:48:10.028Z

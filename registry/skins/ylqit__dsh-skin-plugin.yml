@@ -20,6 +20,18 @@ install:
   target: github:ylqit/dsh-skin-plugin#6a39d573e13ee14d28d7d72481b527a55a435905
   version: 0.4.0
   commit: 6a39d573e13ee14d28d7d72481b527a55a435905
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@ylq77147/dsh-skin-plugin"
+    packageVersion: 0.4.0
+    integrity: sha512-muT8nHy4DeD8uyrHyM7nCaPGd/DS9/tm4ZXeQQvBJFWgJbAZzOwcGVFQlRUzhTqiY1LbHQF0hN/mD8ZBIZbIQg==
+  npm:
+    name: "@ylq77147/dsh-skin-plugin"
+    version: 0.4.0
+    integrity: sha512-muT8nHy4DeD8uyrHyM7nCaPGd/DS9/tm4ZXeQQvBJFWgJbAZzOwcGVFQlRUzhTqiY1LbHQF0hN/mD8ZBIZbIQg==
+    repository: https://github.com/ylqit/dsh-skin-plugin
+    gitHead: 6a39d573e13ee14d28d7d72481b527a55a435905
 compatibility:
   dsh: 0.1.0-rc.5
   platform:
@@ -30,6 +42,7 @@ screenshots:
   - https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/theme-squirtle-light.webp
   - https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/theme-bulbasaur-light.webp
   - https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/studio-theme-library.webp
+listScreenshot: https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/theme-pikachu-light.webp
 review:
   compatibility: verified
   preview: verified
@@ -43,16 +56,27 @@ health:
     installCommand: improve
     topic: improve
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 6a39d573e13ee14d28d7d72481b527a55a435905
+    packageVersion: 0.4.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.5 <0.1.0-rc.7"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:46:24.596Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1491
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-14T23:46:26.058Z
+metadataUpdatedAt: 2026-11-14T23:46:26.058Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/6a39d573e13ee14d28d7d72481b527a55a435905/preview/theme-pikachu-light.webp
+updatedAt: 2026-11-14T23:46:26.058Z

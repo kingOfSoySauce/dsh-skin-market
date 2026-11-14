@@ -21,6 +21,13 @@ install:
   target: github:Beellix-dev/beellix-dsh-ui#5ba54cb1cfa9bfd255038e01686aba1a003237d3
   version: 0.1.1
   commit: 5ba54cb1cfa9bfd255038e01686aba1a003237d3
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@beellix-ai/dsh-web-gui"
+    packageVersion: 0.1.1
+    integrity: sha512-aCG0Aq7F1wGXmUZJkhTSx56k7Ye+Py1+viMf0m+SQYMN2auNtFyLenSPJzadJ85czNjSWZuoTPjPdm7QNdedTw==
+  allowBuild: "@beellix-ai/dsh-web-gui@https://codeload.github.com/Beellix-dev/beellix-dsh-ui/tar.gz/5ba54cb1cfa9bfd255038e01686aba1a003237d3"
 compatibility:
   dsh: 0.2.1-rc.4
   platform:
@@ -32,6 +39,7 @@ screenshots:
   - https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/settings-effects.png
   - https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/settings-models.png
   - https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/archives.png
+listScreenshot: https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/sidebar.png
 review:
   compatibility: verified
   preview: verified
@@ -45,15 +53,26 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 5ba54cb1cfa9bfd255038e01686aba1a003237d3
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.4 <0.3.0"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:46:55.420Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1299
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:46:57.338Z
+metadataUpdatedAt: 2026-11-14T23:46:57.338Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/Beellix-dev/beellix-dsh-ui/5ba54cb1cfa9bfd255038e01686aba1a003237d3/docs/images/sidebar.png
+updatedAt: 2026-11-14T23:46:57.338Z

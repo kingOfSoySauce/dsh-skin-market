@@ -20,8 +20,11 @@ install:
   target: github:stitchmaps/dsh-ikunchick-pet#834138dc96d9508b67733bf0331239a22b3f4915
   version: 0.5.0
   commit: 834138dc96d9508b67733bf0331239a22b3f4915
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-rc.2 || >=0.2.1-rc.2"
   platform:
     - web
 screenshots:
@@ -30,27 +33,35 @@ screenshots:
   - https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/reminder.png
   - https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/consume.png
   - https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/ledger.png
+listScreenshot: https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/panel.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
+  scan:
+    commit: 834138dc96d9508b67733bf0331239a22b3f4915
+    packageVersion: 0.5.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.2 || >=0.2.1-rc.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:07.351Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1265
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+releaseUpdatedAt: 2026-11-14T23:45:08.118Z
+metadataUpdatedAt: 2026-11-14T23:45:08.118Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
-listScreenshot: https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/834138dc96d9508b67733bf0331239a22b3f4915/docs/panel.png
+updatedAt: 2026-11-14T23:45:08.118Z

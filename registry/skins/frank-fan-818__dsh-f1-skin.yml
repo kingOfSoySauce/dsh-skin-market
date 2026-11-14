@@ -19,6 +19,12 @@ install:
   target: github:frank-fan-818/dsh-f1-skin#d739db5f58c302c326b954287ca8424b7f1f10e1
   version: 0.4.0
   commit: d739db5f58c302c326b954287ca8424b7f1f10e1
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-f1-skin
+    packageVersion: 0.4.0
+    integrity: sha512-0bUI5t5M6bGd9FJLrM4PiaPd+vRYzh6XIczJMiLQt+0Pp0Gik1lil5v9SW0TidLFthMIJlvK+9kuDAKA9aRodw==
   npm:
     name: dsh-f1-skin
     version: 0.4.0
@@ -64,9 +70,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 1161
-releaseUpdatedAt: 2026-11-14T00:22:37.200Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T23:45:37.760Z
 metadataUpdatedAt: 2026-11-14T00:22:37.200Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T00:22:37.200Z
+updatedAt: 2026-11-14T23:45:37.760Z

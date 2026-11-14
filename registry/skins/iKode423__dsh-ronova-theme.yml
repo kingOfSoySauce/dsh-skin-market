@@ -20,6 +20,9 @@ install:
   target: github:iKode423/dsh-ronova-theme#17331e3e13d41d90c1292eba6bbec31fa9b0476b
   version: 0.1.1
   commit: 17331e3e13d41d90c1292eba6bbec31fa9b0476b
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -29,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-dark-chat.webp
   - https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-light-new-chat.webp
   - https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-light-chat.webp
+listScreenshot: https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-dark-new-chat.webp
 review:
   compatibility: unverified
   preview: verified
@@ -42,15 +46,22 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 17331e3e13d41d90c1292eba6bbec31fa9b0476b
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:47:35.101Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1227
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:47:36.306Z
+metadataUpdatedAt: 2026-11-14T23:47:36.306Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-dark-new-chat.webp
+updatedAt: 2026-11-14T23:47:36.306Z

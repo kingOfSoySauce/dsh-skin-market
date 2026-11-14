@@ -21,6 +21,9 @@ install:
   target: github:AidenWanggitgit/paper-skin#8c77d5199d8544a67eae8435fbf42c82b8656171
   version: 1.0.0
   commit: 8c77d5199d8544a67eae8435fbf42c82b8656171
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -28,26 +31,36 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/AidenWanggitgit/paper-skin/8c77d5199d8544a67eae8435fbf42c82b8656171/docs/preview-nature.webp
   - https://raw.githubusercontent.com/AidenWanggitgit/paper-skin/8c77d5199d8544a67eae8435fbf42c82b8656171/docs/preview-panel.webp
+listScreenshot: https://raw.githubusercontent.com/AidenWanggitgit/paper-skin/8c77d5199d8544a67eae8435fbf42c82b8656171/docs/preview-nature.webp
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 8c77d5199d8544a67eae8435fbf42c82b8656171
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:42.680Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1292
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:46:42.919Z
+metadataUpdatedAt: 2026-11-14T23:46:42.919Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/AidenWanggitgit/paper-skin/8c77d5199d8544a67eae8435fbf42c82b8656171/docs/preview-nature.webp
+updatedAt: 2026-11-14T23:46:42.919Z

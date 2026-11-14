@@ -24,7 +24,12 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/home.png
+  - skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/conversation.png
+  - skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/settings.png
 screenshots: []
+listScreenshot: skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/home.png
 review:
   compatibility: unverified
   preview: verified
@@ -51,14 +56,9 @@ health:
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
-starsSnapshot: 12
-listScreenshot: skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/home.png
-marketScreenshots:
-  - skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/home.png
-  - skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/conversation.png
-  - skin-screenshots/U1s1-king__dsh-live2d-mygo/ff1072895d1ea52ed39271a1ed982d305a9188a6/settings.png
 featuredRank: 1129
+starsSnapshot: 12
 releaseUpdatedAt: 2026-11-10T18:11:15.809Z
-metadataUpdatedAt: 2026-11-11T00:07:28.933Z
+metadataUpdatedAt: 2026-11-14T23:43:05.192Z
 starsUpdatedAt: 2026-11-10T18:11:15.809Z
-updatedAt: 2026-11-11T00:07:28.933Z
+updatedAt: 2026-11-14T23:43:05.192Z

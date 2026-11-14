@@ -30,6 +30,10 @@ compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/home.png
+  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/conversation.png
+  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/settings.png
 screenshots:
   - https://raw.githubusercontent.com/4444Hao/dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/docs/images/boot-waterfall-v2.gif
 listScreenshot: https://raw.githubusercontent.com/4444Hao/dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/docs/images/boot-waterfall-v2.gif
@@ -46,25 +50,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.2.0-rc.1 未被本次检测范围 >=0.2.0-rc.2 完全覆盖（固定版本 25145d52a4892ca8585d24efb53f3028e74c245b）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 25145d52a4892ca8585d24efb53f3028e74c245b
     packageVersion: 0.2.0
     scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.2"
     mode: static
     result: pass
-    checkedAt: 2026-11-09T00:15:33.932Z
+    checkedAt: 2026-11-14T23:46:35.936Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/home.png
-  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/conversation.png
-  - skin-screenshots/4444Hao__dsh-codefall/68159fcced1d65c7ea356821859ea80d365c523a/settings.png
 featuredRank: 999
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-09T00:15:35.058Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T23:46:36.564Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-14T23:46:36.564Z
