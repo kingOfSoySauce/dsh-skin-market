@@ -1,0 +1,52 @@
+id: 0999312.dsh.theme.isaf
+name:
+  zh: ISAF T.C. 系统
+  en: ISAF T.C. System
+author: "0999312"
+description: 把界面设定成一台 ISAF 简报终端：深蓝玻璃面板、CRT 扫描线与 72px 战术网格，启动时先播一段预简报影像；明暗两套配色，三角徽章壁纸对应 16 国联合军。
+repo: https://github.com/0999312/dsh-theme-isaf
+package: dsh-theme-isaf
+rowId: theme-isaf
+category: skin
+tags:
+  - ace-combat
+  - isaf
+  - crt
+  - briefing
+modes:
+  - light
+  - dark
+install:
+  target: github:0999312/dsh-theme-isaf#161c909029ea640c8d1f8d8cabb5290fdd16aef1
+  version: 0.1.8
+  commit: 161c909029ea640c8d1f8d8cabb5290fdd16aef1
+compatibility:
+  dsh: ">=0.2.1-rc.2 <0.3.0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/0999312/dsh-theme-isaf/161c909029ea640c8d1f8d8cabb5290fdd16aef1/assets/startup-poster.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1206
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/0999312/dsh-theme-isaf/161c909029ea640c8d1f8d8cabb5290fdd16aef1/assets/startup-poster.png

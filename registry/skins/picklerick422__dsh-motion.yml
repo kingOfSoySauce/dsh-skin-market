@@ -1,0 +1,55 @@
+id: picklerick422.dsh.motion
+name:
+  zh: 弹窗动效
+  en: Popup Motion
+author: picklerick422
+description: 给近距浮层、远距对话框和悬浮提示补上有物理感的入场：菜单类从触发按钮实测尺寸 clip 形变并用弹簧长出（438ms、过冲可调 0–25%），设置与确认框用 280ms 从下方 60px 浮出，提示走 204ms 无过冲；另有气泡连贯切换、图片 FLIP 放大和可三段实时预览的设置页，流式输出或掉帧时自动降级为纯透明度。
+repo: https://github.com/picklerick422/dsh-motion
+package: dsh-motion
+rowId: dsh-motion
+category: skin
+tags:
+  - motion
+  - popup
+  - glass
+  - accessibility
+  - live-preview
+modes:
+  - light
+  - dark
+install:
+  target: github:picklerick422/dsh-motion#abf2d744888cbd6e4b9864cfd0134efb6dcf5270
+  version: 1.0.0
+  commit: abf2d744888cbd6e4b9864cfd0134efb6dcf5270
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/picklerick422/dsh-motion/abf2d744888cbd6e4b9864cfd0134efb6dcf5270/assets/settings-overview.jpg
+  - https://raw.githubusercontent.com/picklerick422/dsh-motion/abf2d744888cbd6e4b9864cfd0134efb6dcf5270/assets/settings-geometry.jpg
+  - https://raw.githubusercontent.com/picklerick422/dsh-motion/abf2d744888cbd6e4b9864cfd0134efb6dcf5270/assets/settings-tooltip.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1251
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/picklerick422/dsh-motion/abf2d744888cbd6e4b9864cfd0134efb6dcf5270/assets/settings-overview.jpg

@@ -1,0 +1,58 @@
+id: ghooome.dsh.task.pet
+name:
+  zh: 桌面进度宠物
+  en: Task Progress Pet
+author: GHOOOME
+description: 浮在所有窗口最上方的像素桌宠，实时显示会话在思考、跑工具、写回答还是出错，结束时跳跃撒花、气泡默认停留 6 秒；内置 11 个 CC0 角色，也可自定义角色与每个状态的动效，目前仅 macOS Apple Silicon。
+repo: https://github.com/GHOOOME/dsh-task-pet
+package: dsh-task-pet
+rowId: task-pet
+category: pet
+tags:
+  - desktop-pet
+  - pixel
+  - task-progress
+  - macos
+modes:
+  - light
+  - dark
+install:
+  target: github:GHOOOME/dsh-task-pet#3f2a7e51bb0f6fc39169aa0052581e93adf244ea
+  version: 0.3.0
+  commit: 3f2a7e51bb0f6fc39169aa0052581e93adf244ea
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/GHOOOME/dsh-task-pet/3f2a7e51bb0f6fc39169aa0052581e93adf244ea/docs/hero-greninja.png
+  - https://raw.githubusercontent.com/GHOOOME/dsh-task-pet/3f2a7e51bb0f6fc39169aa0052581e93adf244ea/docs/greninja-states.png
+  - https://raw.githubusercontent.com/GHOOOME/dsh-task-pet/3f2a7e51bb0f6fc39169aa0052581e93adf244ea/docs/settings-effects.png
+  - https://raw.githubusercontent.com/GHOOOME/dsh-task-pet/3f2a7e51bb0f6fc39169aa0052581e93adf244ea/docs/pet-effects.png
+  - https://raw.githubusercontent.com/GHOOOME/dsh-task-pet/3f2a7e51bb0f6fc39169aa0052581e93adf244ea/docs/greninja-working.png
+  - https://raw.githubusercontent.com/GHOOOME/dsh-task-pet/3f2a7e51bb0f6fc39169aa0052581e93adf244ea/docs/greninja-success.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1222
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/GHOOOME/dsh-task-pet/3f2a7e51bb0f6fc39169aa0052581e93adf244ea/docs/hero-greninja.png

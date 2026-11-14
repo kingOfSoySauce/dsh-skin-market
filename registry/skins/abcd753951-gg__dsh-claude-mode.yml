@@ -1,0 +1,58 @@
+id: abcd753951.gg.dsh.claude.mode
+name:
+  zh: Claude 模式
+  en: Claude Mode
+author: abcd753951-gg
+description: Claude Code 风格的交互层：中性灰 + 陶土橙双主题（约 200 个令牌，跟随系统切换），输入区上方运行状态星与耗时，Ctrl/⌘+K 命令面板兼搜聊天记录，回合页脚按轮次在「烘焙 / 酿造 / 搅拌……」中轮换完成词，另有朗读助手回复、完成提示音、Alt+N 新建会话与快捷键一览。空输入框先给一条含目标、上下文、约束与验收方式的完整本地草稿，开启 AI 完善后再由当前模型改写一次并缓存。
+repo: https://github.com/abcd753951-gg/dsh-claude-mode
+package: dsh-claude-mode
+rowId: dsh-claude-mode
+category: skin
+tags:
+  - claude-code
+  - command-palette
+  - prompt-pilot
+  - status-star
+  - keyboard
+modes:
+  - light
+  - dark
+install:
+  target: github:abcd753951-gg/dsh-claude-mode#0379d86088cce3190f3d71c5278a4077a8a1e99e
+  version: 1.1.2
+  commit: 0379d86088cce3190f3d71c5278a4077a8a1e99e
+compatibility:
+  dsh: 0.2.2-rc.1 || 0.1.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/dark-session.png
+  - https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/dark-palette.png
+  - https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/palette-chat-search.png
+  - https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/assistant-readaloud.png
+  - https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/settings-sound.png
+  - https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/shortcuts-new.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1208
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/dark-session.png

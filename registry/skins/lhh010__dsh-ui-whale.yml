@@ -1,0 +1,59 @@
+id: lhh010.dsh.ui.whale
+name:
+  zh: 像素鲸鱼
+  en: Pixel Whale
+author: lhh010
+description: 手绘像素小鲸鱼常驻会话标题栏：空闲时约 5 秒眨一次眼、约 11 秒摆一次尾巴，连续空闲 10 秒睡着并冒「Z」，思考/运行中尾巴与胸鳍持续动，回合完成头顶喷水庆祝，点击冒一颗粉色爱心；22 帧像素画、7 色调色板，零核心改动也不进入模型请求。
+repo: https://github.com/lhh010/dsh-ui-whale
+package: "@dsh-external/dsh-ui-whale"
+rowId: dsh-ui-whale
+category: pet
+tags:
+  - pixel-art
+  - title-bar
+  - animated
+  - whale
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:lhh010/dsh-ui-whale#4fbb196304201b8919bc8e3085f07ea825c1c457
+  version: 0.3.36
+  commit: 4fbb196304201b8919bc8e3085f07ea825c1c457
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lhh010/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/dsh-ui-whale-demo.gif
+  - https://raw.githubusercontent.com/lhh010/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/眨眼.gif
+  - https://raw.githubusercontent.com/lhh010/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/摆尾巴.gif
+  - https://raw.githubusercontent.com/lhh010/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E7%9C%A8%E7%9C%BC.gif
+  - https://raw.githubusercontent.com/lhh010/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E6%91%86%E5%B0%BE%E5%B7%B4.gif
+  - https://raw.githubusercontent.com/lhh010/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E6%91%86%E8%85%B9%E9%B3%8D.gif
+  - https://raw.githubusercontent.com/lhh010/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E5%96%B7%E6%B0%B4%E8%8A%B1.gif
+  - https://raw.githubusercontent.com/lhh010/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E5%86%92%E7%88%B1%E5%BF%83.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1234
+starsSnapshot: 48
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/lhh010/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/dsh-ui-whale-demo.gif

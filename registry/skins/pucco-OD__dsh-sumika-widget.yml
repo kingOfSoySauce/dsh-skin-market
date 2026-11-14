@@ -1,0 +1,54 @@
+id: pucco.od.dsh.sumika.widget
+name:
+  zh: 澄华桌宠
+  en: Sumika Pet
+author: pucco-OD
+description: 《CIRCLEMATE サークルメイト》澄华的 Windows 桌面挂件：常驻最上层，按闲置、工作、等待、完成切换四段带头尾过渡的像素动画；真实的提问与审批会同步到一枚像素小卡片，可直接作答或一键跳回窗口，并带可替换的等待 / 完成提示音。支持 Windows 10 1903+ / 11 x64，需系统自带的 .NET Framework 4.8。
+repo: https://github.com/pucco-OD/dsh-sumika-widget
+package: dsh-sumika-widget
+rowId: sumika-widget
+category: pet
+tags:
+  - windows
+  - desktop-widget
+  - pixel-art
+  - question-card
+  - sound
+modes:
+  - light
+  - dark
+install:
+  target: github:pucco-OD/dsh-sumika-widget#4d16ced2088b47b7715cfb6480801d934dd72f1f
+  version: 1.0.0
+  commit: 4d16ced2088b47b7715cfb6480801d934dd72f1f
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/pucco-OD/dsh-sumika-widget/4d16ced2088b47b7715cfb6480801d934dd72f1f/docs/preview.png
+  - https://raw.githubusercontent.com/pucco-OD/dsh-sumika-widget/4d16ced2088b47b7715cfb6480801d934dd72f1f/docs/states.png
+  - https://raw.githubusercontent.com/pucco-OD/dsh-sumika-widget/4d16ced2088b47b7715cfb6480801d934dd72f1f/docs/question-card.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1252
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/pucco-OD/dsh-sumika-widget/4d16ced2088b47b7715cfb6480801d934dd72f1f/docs/preview.png

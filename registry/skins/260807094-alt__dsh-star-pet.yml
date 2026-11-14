@@ -1,0 +1,55 @@
+id: 260807094.alt.dsh.star.pet
+name:
+  zh: 困困星人
+  en: Sleepy Star
+author: 260807094-alt
+description: 上班计时桌宠「困困星人」：桌面透明置顶窗口实时显示今天已经赚了多少钱、还有多久下班、之后还能赚多少，可按 0/1/1.5/2 倍率设置加班时段工资。收回成桌宠后可拖拽、贴边吸附，按剩余秒数冒「+¥」，右键设置外观与薪资配置，另有几种点击动画与提示音。
+repo: https://github.com/260807094-alt/dsh-star-pet
+package: dsh-star-pet
+rowId: dsh-star-pet
+category: pet
+tags:
+  - desktop-pet
+  - salary
+  - clock
+  - overlay
+modes:
+  - light
+  - dark
+install:
+  target: github:260807094-alt/dsh-star-pet#121cc96c102c85084aaefa56291ef86e1bd7fea2
+  version: 1.3.1
+  commit: 121cc96c102c85084aaefa56291ef86e1bd7fea2
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/260807094-alt/dsh-star-pet/121cc96c102c85084aaefa56291ef86e1bd7fea2/docs/screenshots/board.png
+  - https://raw.githubusercontent.com/260807094-alt/dsh-star-pet/121cc96c102c85084aaefa56291ef86e1bd7fea2/docs/screenshots/pet.png
+  - https://raw.githubusercontent.com/260807094-alt/dsh-star-pet/121cc96c102c85084aaefa56291ef86e1bd7fea2/docs/screenshots/settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1205
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/260807094-alt/dsh-star-pet/121cc96c102c85084aaefa56291ef86e1bd7fea2/docs/screenshots/board.png

@@ -1,0 +1,56 @@
+id: iasiv5.dsh.skins
+name:
+  zh: 多皮肤热切换
+  en: Hot-Swap Skin Pack
+author: iasiv5
+description: 一个插件内置三套品牌皮肤——绯红鎏金的美人志、OpenBMC Studio 与 UEFI Studio——在侧栏皮肤切换器里热切换，随时一键回官方外观；壁纸、标语与通透度可调，也能上传自己的图片（单张 ≤20MB）。
+repo: https://github.com/iasiv5/dsh-skins
+package: "@iasiv5/dsh-skins"
+rowId: skins
+category: skin
+tags:
+  - skin-pack
+  - hot-swap
+  - wallpaper
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:iasiv5/dsh-skins#af54c1dfd74e3631dfbc6a95b2faa545bd645095
+  version: 1.5.30
+  commit: af54c1dfd74e3631dfbc6a95b2faa545bd645095
+compatibility:
+  dsh: 0.2.2--rc.1 || 0.2.1-rc.2 || 0.2.0-rc.2 || 0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-1.webp
+  - https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-2.webp
+  - https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-3.webp
+  - https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-4.webp
+  - https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-5.webp
+  - https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-6.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1226
+starsSnapshot: 6
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/iasiv5/dsh-skins/af54c1dfd74e3631dfbc6a95b2faa545bd645095/docs/assets/preview-meirenzhi-1.webp

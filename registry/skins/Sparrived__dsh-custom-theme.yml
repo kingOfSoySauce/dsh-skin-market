@@ -1,0 +1,59 @@
+id: sparrived.dsh.custom.theme
+name:
+  zh: DSH 自定义主题
+  en: DSH Custom Theme
+author: Sparrived
+description: 把 .css 扔进 ~/.dsh/themes 就能列入「设置 → 主题与背景」（内置 Atom One Dark、Monokai Pro、Gov、Claude 预设，实时扫描热加载），还可给整体、标题栏、侧栏、会话区、对话框、工具面板 6 个分区分别铺壁纸并调透明度与 0–20px 模糊；另有星空 / 深海推理档位滑条、正文行距、流式渐显、思考文案轮播与 26 周用量热力图。
+repo: https://github.com/Sparrived/dsh-custom-theme
+package: dsh-custom-theme
+rowId: custom-theme
+category: skin
+tags:
+  - css-themes
+  - wallpaper
+  - heatmap
+  - customization
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Sparrived/dsh-custom-theme#f705e6de5a30f86dc2fae560d5d728936d7fd65f
+  version: 0.8.0
+  commit: f705e6de5a30f86dc2fae560d5d728936d7fd65f
+compatibility:
+  dsh: 0.2.1+-blue
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Sparrived/dsh-custom-theme/f705e6de5a30f86dc2fae560d5d728936d7fd65f/docs/images/card-themes.png
+  - https://raw.githubusercontent.com/Sparrived/dsh-custom-theme/f705e6de5a30f86dc2fae560d5d728936d7fd65f/docs/images/chat-one-dark.png
+  - https://raw.githubusercontent.com/Sparrived/dsh-custom-theme/f705e6de5a30f86dc2fae560d5d728936d7fd65f/docs/images/chat-monokai-pro.png
+  - https://raw.githubusercontent.com/Sparrived/dsh-custom-theme/f705e6de5a30f86dc2fae560d5d728936d7fd65f/docs/images/chat-gov.png
+  - https://raw.githubusercontent.com/Sparrived/dsh-custom-theme/f705e6de5a30f86dc2fae560d5d728936d7fd65f/docs/images/chat-claude-light.png
+  - https://raw.githubusercontent.com/Sparrived/dsh-custom-theme/f705e6de5a30f86dc2fae560d5d728936d7fd65f/docs/images/chat-claude-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1262
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/Sparrived/dsh-custom-theme/f705e6de5a30f86dc2fae560d5d728936d7fd65f/docs/images/card-themes.png

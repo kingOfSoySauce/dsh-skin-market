@@ -1,0 +1,55 @@
+id: jimxinfang.dsh.theme.neo.brutalist
+name:
+  zh: 新粗野主义主题
+  en: Neo-Brutalist Theme
+author: Jimxinfang
+description: 新粗野主义外观：4px 硬边、8px 无模糊偏移阴影、零圆角与 45° 警示斜纹，白纸与黑板两套配色随明暗自动选择；正文对比度 ≥7:1，发送键按下会「物理压碎」。
+repo: https://github.com/Jimxinfang/dsh-theme-neo-brutalist
+package: dsh-theme-neo-brutalist
+rowId: dsh-theme-neo-brutalist
+category: skin
+tags:
+  - neo-brutalism
+  - hard-shadow
+  - light-dark
+  - accessibility
+modes:
+  - light
+  - dark
+install:
+  target: github:Jimxinfang/dsh-theme-neo-brutalist#2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc
+  version: 0.1.0
+  commit: 2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc/docs/screenshots/01-first-load.png
+  - https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc/docs/screenshots/02-light-shell.png
+  - https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc/docs/screenshots/03-dark-shell.png
+  - https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc/docs/screenshots/04-light-settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1231
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/2e58ab9bebbc989775e8da3a87f9dcc1bf7e0bdc/docs/screenshots/01-first-load.png

@@ -1,0 +1,53 @@
+id: cshengyi023.collab.dsh.deepsea.echo
+name:
+  zh: 深海回响
+  en: Deepsea Echo
+author: cshengyi023-collab
+description: 约 4.6 秒的明日方舟风格启动动画：PRTS 终端自检、声呐扫描、全息锁定到干员档案依次播放，定格在「深海回响」；可切 3.6/4.6/5.0 秒时长，从 4 套原创配乐中选一套或静音。
+repo: https://github.com/cshengyi023-collab/dsh-deepsea-echo
+package: dsh-deepsea-echo
+rowId: deepsea-echo
+category: splash
+tags:
+  - arknights
+  - hud
+  - soundtrack
+  - skippable
+modes:
+  - light
+  - dark
+install:
+  target: github:cshengyi023-collab/dsh-deepsea-echo#c5599f80cf5a517e220a91524dbdda791406c09d
+  version: 0.3.3
+  commit: c5599f80cf5a517e220a91524dbdda791406c09d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/storyboard.png
+  - https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/startup-animation.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1219
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/storyboard.png

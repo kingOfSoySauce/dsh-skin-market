@@ -1,0 +1,56 @@
+id: aeonsscope.dsh.fellowmoon.theme
+name:
+  zh: 超管局主题
+  en: FellowMoon Bureau Theme
+author: aeonsscope
+description: 以《新月同行》超现象管理局为灵感的主题：橙 = 一线特工、黑 = 精锐、白 = 中层、深蓝 = 高层的配色语言，组成「白昼巡查」与「夜间收容」两套外观并可跟随系统；全窗口铺暗色网格与徽标底纹，侧栏压一张淡化人像，聊天框底部垫橙徽水印，聊天消息可选液态折射或磨砂遮蔽。设置页可切「部门配色」，启动时还会走一遍六幕 CPO 授权开机动画。
+repo: https://github.com/aeonsscope/dsh-fellowmoon-theme
+package: dsh-fellowmoon-theme
+rowId: fellowmoon-theme
+category: splash
+tags:
+  - fellowmoon
+  - orange-black-white
+  - boot-animation
+  - portrait
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:aeonsscope/dsh-fellowmoon-theme#313880563bcb89e4fdca779a1f302465297dc74f
+  version: 0.4.0
+  commit: 313880563bcb89e4fdca779a1f302465297dc74f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/aeonsscope/dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/docs/screenshots/preview-window.png
+  - https://raw.githubusercontent.com/aeonsscope/dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/docs/screenshots/preview-startup.png
+  - https://raw.githubusercontent.com/aeonsscope/dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/docs/screenshots/preview-finale.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1211
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/aeonsscope/dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/docs/screenshots/preview-window.png

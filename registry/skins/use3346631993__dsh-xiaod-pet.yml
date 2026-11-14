@@ -1,0 +1,54 @@
+id: use3346631993.dsh.xiaod.pet
+name:
+  zh: 小D桌宠
+  en: XiaoD Pet
+author: use3346631993
+description: 鲸鱼正太女仆装桌宠：4 种表情随对话切换（流式输出转思考、成功转开心、报错转失望），可拖到任意位置并记住位置。右下角立牌每轮结束弹出本轮 token 消耗与思考时间，点一下回弹并读出余额气泡；另带用自己插画做的聊天背景、液态玻璃输入框和深海蓝配色，整套外观有独立开关可一键还原。
+repo: https://github.com/use3346631993/dsh-xiaod-pet
+package: dsh-xiaod-pet
+rowId: dsh-xiaod-pet
+category: pet
+tags:
+  - whale-boy
+  - maid
+  - desktop-pet
+  - token-usage
+  - glassmorphism
+modes:
+  - light
+  - dark
+install:
+  target: github:use3346631993/dsh-xiaod-pet#dcec7943d12a07067528688d834446fe21000f37
+  version: 2.4.7
+  commit: dcec7943d12a07067528688d834446fe21000f37
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/use3346631993/dsh-xiaod-pet/dcec7943d12a07067528688d834446fe21000f37/docs/preview.jpg
+  - https://raw.githubusercontent.com/use3346631993/dsh-xiaod-pet/dcec7943d12a07067528688d834446fe21000f37/docs/settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1271
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/use3346631993/dsh-xiaod-pet/dcec7943d12a07067528688d834446fe21000f37/docs/preview.jpg

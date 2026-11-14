@@ -1,0 +1,54 @@
+id: ch3sh.lc.dsh.theme.nahida
+name:
+  zh: 纳西妲 · 摩耶之殿
+  en: Nahida · Shrine of Maya
+author: CH3SH-LC
+description: 以「摩耶之殿」名札、蕴种印、草元素神之眼与纳西妲侧栏立绘组成的主题，7 个素材全部内嵌、不请求图床；浅色与深色跟随外观设置切换。
+repo: https://github.com/CH3SH-LC/dsh-theme-nahida
+package: "@local/dsh-theme-nahida"
+rowId: theme-nahida
+category: skin
+tags:
+  - nahida
+  - genshin
+  - dendro
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:CH3SH-LC/dsh-theme-nahida#7e53a098099768379d5427ef9654667abc6b1932
+  version: 1.0.0
+  commit: 7e53a098099768379d5427ef9654667abc6b1932
+compatibility:
+  dsh: 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/CH3SH-LC/dsh-theme-nahida/7e53a098099768379d5427ef9654667abc6b1932/docs/screenshots/light.png
+  - https://raw.githubusercontent.com/CH3SH-LC/dsh-theme-nahida/7e53a098099768379d5427ef9654667abc6b1932/docs/screenshots/dark.png
+  - https://raw.githubusercontent.com/CH3SH-LC/dsh-theme-nahida/7e53a098099768379d5427ef9654667abc6b1932/docs/screenshots/narrow.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1217
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/CH3SH-LC/dsh-theme-nahida/7e53a098099768379d5427ef9654667abc6b1932/docs/screenshots/light.png

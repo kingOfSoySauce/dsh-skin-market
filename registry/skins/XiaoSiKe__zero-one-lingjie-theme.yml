@@ -1,0 +1,53 @@
+id: xiaosike.zero.one.lingjie.theme
+name:
+  zh: 零一·凌界
+  en: Zero-One · Lingjie
+author: XiaoSiKe
+description: 零一 AI 日新社的黑白机械终端主题：36 列二进制与社团汉字组成近 / 中 / 远三档数据雨、8 条快速数据光线，两侧机械边轨滑块往复、锁扣开合，叠细网格、CRT 扫描线与低亮度社团 Logo 水印；开场结束后约 1.6 秒完成边框展开与数据接入再回常驻，进入对话后背景淡化暂停，特效避开输入区。
+repo: https://github.com/XiaoSiKe/zero-one-lingjie-theme
+package: dsh-plugin-01-wallpaper
+rowId: zero-one-wallpaper
+category: skin
+tags:
+  - mechanical
+  - terminal
+  - data-rain
+  - club
+  - animation
+modes:
+  - dark
+install:
+  target: github:XiaoSiKe/zero-one-lingjie-theme#b8a375dd32af5be0ace7eecc1693324e4852caf3
+  version: 0.9.1
+  commit: b8a375dd32af5be0ace7eecc1693324e4852caf3
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/XiaoSiKe/zero-one-lingjie-theme/b8a375dd32af5be0ace7eecc1693324e4852caf3/docs/screenshots/desktop-preview.jpg
+  - https://raw.githubusercontent.com/XiaoSiKe/zero-one-lingjie-theme/b8a375dd32af5be0ace7eecc1693324e4852caf3/docs/screenshots/wallpaper-preview.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1278
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/XiaoSiKe/zero-one-lingjie-theme/b8a375dd32af5be0ace7eecc1693324e4852caf3/docs/screenshots/desktop-preview.jpg

@@ -1,0 +1,52 @@
+id: morningluu.dsh.theme.scaramouche
+name:
+  zh: 散兵 · 浮世雷音
+  en: Scaramouche · Ukiyo Raion
+author: morningluu
+description: 墨黑潮底、深海蓝与雾紫蓝、暗金细线的散兵主题：壁纸面板可切静态或视频壁纸，带启动视频、环境音乐与粒子，玻璃控制条可拖动；覆盖 91 个设计 token，暗色单模式。
+repo: https://github.com/morningluu/dsh-theme-scaramouche
+package: dsh-theme-scaramouche
+rowId: ui-theme-scaramouche
+category: skin
+tags:
+  - scaramouche
+  - genshin
+  - dark-mode
+  - wallpaper
+modes:
+  - dark
+install:
+  target: github:morningluu/dsh-theme-scaramouche#5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee
+  version: 0.2.0
+  commit: 5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/morningluu/dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/assets/screenshot-1.png
+  - https://raw.githubusercontent.com/morningluu/dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/assets/screenshot-2.png
+  - https://raw.githubusercontent.com/morningluu/dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/assets/screenshot-3.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1245
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/morningluu/dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/assets/screenshot-1.png

@@ -1,0 +1,54 @@
+id: qcytsn.dsh.dafeiyu
+name:
+  zh: 跨平台大肥鱼
+  en: Cross-platform Bigfish
+author: QCYTSN
+description: 桌面大肥鱼：透明、无边框、始终置顶的原生窗口，随任务切换思考/查找/修改/执行/验证/等待确认/完成与错误，状态气泡和设置页还能显示 API 与赠送余额（每分钟刷新）。支持拖动、摸头、戳身体、碰尾巴与安静/标准/活泼三档待机节奏；Windows、Linux、macOS 各有随包 Helper，WebUI 还可选在页面右下角显示轻量角色（默认关闭）。
+repo: https://github.com/QCYTSN/dsh-dafeiyu
+package: dsh-dafeiyu
+rowId: dsh-dafeiyu
+category: pet
+tags:
+  - desktop-pet
+  - native-window
+  - cross-platform
+  - api-balance
+  - character
+modes:
+  - light
+  - dark
+install:
+  target: github:QCYTSN/dsh-dafeiyu#084323845ab82b68d5388d5c638bec09d8544a8a
+  version: 0.1.23
+  commit: 084323845ab82b68d5388d5c638bec09d8544a8a
+compatibility:
+  dsh: 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/QCYTSN/dsh-dafeiyu/084323845ab82b68d5388d5c638bec09d8544a8a/docs/images/balance-preview.png
+  - https://raw.githubusercontent.com/QCYTSN/dsh-dafeiyu/084323845ab82b68d5388d5c638bec09d8544a8a/docs/images/dsh-bigfish-running.png
+  - https://raw.githubusercontent.com/QCYTSN/dsh-dafeiyu/084323845ab82b68d5388d5c638bec09d8544a8a/docs/images/dsh-bigfish-settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1255
+starsSnapshot: 619
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/QCYTSN/dsh-dafeiyu/084323845ab82b68d5388d5c638bec09d8544a8a/docs/images/balance-preview.png

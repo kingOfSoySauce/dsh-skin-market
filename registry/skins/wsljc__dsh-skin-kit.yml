@@ -1,0 +1,58 @@
+id: wsljc.dsh.skin.kit
+name:
+  zh: 皮肤引擎
+  en: Skin Engine
+author: wsljc
+description: 可插拔的皮肤框架：用 overrideTokens 把一层 token 覆盖叠在当前主题之上，不抢主题偏好，因此能和内置明 / 暗以及第三方主题共存；内置 P5R 漫画（红黑黄纸白 + 日式车站动态背景）、纸白纸墨（明暗自适应）和终端绿（黑底荧光绿 + 扫描线）三套，在「设置 → 通用设置 → 皮肤」一键切换。加自己的皮肤只需写一个数据文件（token 表 + 装饰 CSS/DOM）。
+repo: https://github.com/wsljc/dsh-skin-kit
+package: dsh-skin-kit
+rowId: skin-kit
+category: skin
+tags:
+  - skin-engine
+  - presets
+  - token-override
+  - p5r
+  - terminal
+modes:
+  - light
+  - dark
+install:
+  target: github:wsljc/dsh-skin-kit#d04db52d239b72ea0e30b9a1a4bc084fc4219bd4
+  version: 1.0.0
+  commit: d04db52d239b72ea0e30b9a1a4bc084fc4219bd4
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/wsljc/dsh-skin-kit/d04db52d239b72ea0e30b9a1a4bc084fc4219bd4/docs/shot-p5r.png
+  - https://raw.githubusercontent.com/wsljc/dsh-skin-kit/d04db52d239b72ea0e30b9a1a4bc084fc4219bd4/docs/shot-paper-ink.png
+  - https://raw.githubusercontent.com/wsljc/dsh-skin-kit/d04db52d239b72ea0e30b9a1a4bc084fc4219bd4/docs/shot-terminal-green.png
+  - https://raw.githubusercontent.com/wsljc/dsh-skin-kit/d04db52d239b72ea0e30b9a1a4bc084fc4219bd4/docs/shot-settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1277
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/wsljc/dsh-skin-kit/d04db52d239b72ea0e30b9a1a4bc084fc4219bd4/docs/shot-p5r.png

@@ -1,0 +1,53 @@
+id: hairyf.dsh.pet.lite
+name:
+  zh: 轻量桌宠
+  en: Pet Lite
+author: hairyf
+description: 独立的置顶桌宠窗口：跟着会话活动换表情，把需要你注意的事项放进气泡；内置 Claude、ChatGPT、女仆大肥鱼等 4 个预设，也能导入 Codex 图集或让 agent 按你的喜好孵一只。
+repo: https://github.com/hairyf/dsh-pet-lite
+package: dsh-pet-lite
+rowId: dsh-pet-lite
+category: pet
+tags:
+  - desktop-pet
+  - standalone-window
+  - presets
+  - codex
+modes:
+  - light
+  - dark
+install:
+  target: github:hairyf/dsh-pet-lite#7114c6c748a952b017fee5c6fd1d7be85c2d0b76
+  version: 0.2.5
+  commit: 7114c6c748a952b017fee5c6fd1d7be85c2d0b76
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/hairyf/dsh-pet-lite/7114c6c748a952b017fee5c6fd1d7be85c2d0b76/docs/screenshots/pet-settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1223
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/hairyf/dsh-pet-lite/7114c6c748a952b017fee5c6fd1d7be85c2d0b76/docs/screenshots/pet-settings.png

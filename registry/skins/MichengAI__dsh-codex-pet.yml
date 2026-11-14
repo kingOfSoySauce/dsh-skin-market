@@ -1,0 +1,54 @@
+id: michengai.dsh.codex.pet
+name:
+  zh: Codex 桌宠
+  en: Codex Pet
+author: MichengAI
+description: 把一只像素宠物放在界面角落陪你处理任务：多会话运行中、完成、出错与待处理请求会实时出现在宠物旁，可展开、停止或关闭单条提醒；内置 9 只宠物可换大小，也能用 Skill 创建自定义伙伴。
+repo: https://github.com/MichengAI/dsh-codex-pet
+package: "@michengai/dsh-codex-pet"
+rowId: michengai-codex-pet
+category: pet
+tags:
+  - desktop-pet
+  - sprites
+  - multi-pet
+  - reminders
+modes:
+  - light
+  - dark
+install:
+  target: github:MichengAI/dsh-codex-pet#4077d08e681f90ee643fc7248b27f0e88adc0cc6
+  version: 1.0.14
+  commit: 4077d08e681f90ee643fc7248b27f0e88adc0cc6
+compatibility:
+  dsh: 0.2.0-rc.1 || 0.1.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/MichengAI/dsh-codex-pet/4077d08e681f90ee643fc7248b27f0e88adc0cc6/assets/screenshots/pet-settings.png
+  - https://raw.githubusercontent.com/MichengAI/dsh-codex-pet/4077d08e681f90ee643fc7248b27f0e88adc0cc6/assets/screenshots/pet-conversation.png
+  - https://raw.githubusercontent.com/MichengAI/dsh-codex-pet/4077d08e681f90ee643fc7248b27f0e88adc0cc6/assets/branding/dsh-codex-pet-banner.png
+  - https://raw.githubusercontent.com/MichengAI/dsh-codex-pet/4077d08e681f90ee643fc7248b27f0e88adc0cc6/assets/screenshots/pet-notifications.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 1241
+starsSnapshot: 8
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/MichengAI/dsh-codex-pet/4077d08e681f90ee643fc7248b27f0e88adc0cc6/assets/screenshots/pet-settings.png

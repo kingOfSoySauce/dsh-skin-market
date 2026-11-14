@@ -1,0 +1,54 @@
+id: exile412.dsh.startup.screen.exile
+name:
+  zh: EXILE 启动界面
+  en: EXILE Boot Screen
+author: exile412
+description: 启动动画分五幕：黑幕 EXILE 标识、过曝洗白、暖白档案底板、五步交互授权到色散揭幕，最底层是 1920×1080 的绿色二进制数字雨（8 秒循环，带 CRT 扫描线、噪点与拖影）。顶角与品牌文案写在 ~/.dsh/dsh-startup.json，改完刷新即生效；包名与原版 dsh-startup-screen 不同，两者可共存。
+repo: https://github.com/exile412/dsh-startup-screen-exile
+package: dsh-startup-exile
+rowId: dsh-startup-exile
+category: splash
+tags:
+  - splash
+  - boot
+  - startup
+  - animation
+  - derivative
+modes:
+  - light
+  - dark
+install:
+  target: github:exile412/dsh-startup-screen-exile#dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a
+  version: 1.3.0-exile
+  commit: dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/exile412/dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/docs/screenshots/theme-light.jpg
+  - https://raw.githubusercontent.com/exile412/dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/docs/screenshots/theme-dark.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1221
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/exile412/dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/docs/screenshots/theme-light.jpg

@@ -1,0 +1,59 @@
+id: zdt3476.dsh.tide.theme
+name:
+  zh: 潮汐主题
+  en: Tide Theme
+author: zdt3476
+description: 深海潮汐蓝的 6-3-1 配色主题：60% 深蓝画布、30% 哑光卡片表面、10% 单一潮汐蓝强调，0.5px 发丝描边代替辉光；另附工作流增强——底栏常驻 HUD 显示会话规模、上下文容量、计入首字延迟的真实 TPS、缓存命中率与模型耗时，点开是用量看板，子代理派发画成带 token 与预估金额的 Agent Graph，侧栏分出置顶小节。
+repo: https://github.com/zdt3476/dsh-tide-theme
+package: dsh-tide-theme
+rowId: dsh-tide-theme
+category: skin
+tags:
+  - deep-blue
+  - performance-hud
+  - subagent-graph
+  - sidebar
+  - workflow
+modes:
+  - light
+  - dark
+install:
+  target: github:zdt3476/dsh-tide-theme#05421f75e42a00a31e9d2f42bbeb208e7916384e
+  version: 0.7.0
+  commit: 05421f75e42a00a31e9d2f42bbeb208e7916384e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/banner-light.png
+  - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/current-dock-light.png
+  - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/current-dock-light-native.png
+  - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/banner-dark.png
+  - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/current-dock-dark.png
+  - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/current-dock-dark-native.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1283
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/banner-light.png

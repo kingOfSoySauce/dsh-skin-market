@@ -1,0 +1,56 @@
+id: ssamurias.dsh.fish
+name:
+  zh: 养成大肥鱼
+  en: Bigfish Raising
+author: ssamurias
+description: 养一条会自己长大的鱼：没有人格设置菜单，默认从空白养起，靠事件流积累记忆、判断与拒绝，走完信任→自主→主动→整合四个阶段后才开始形成立场（清单最多 12 条，写进身份的 8 条）。她会自己刷 B 站、看评论、写日记，登录 cookie 只存本机 ~/.dsh-fish/owner.json（权限 0600），状态库不能删除记录。
+repo: https://github.com/ssamurias/dsh-fish
+package: "@ssamurias/dsh-fish"
+rowId: dsh-fish
+category: pet
+tags:
+  - raising
+  - persona
+  - bilibili
+  - diary
+  - memory
+modes:
+  - light
+  - dark
+install:
+  target: github:ssamurias/dsh-fish#ec168edd2955f24ba79e88d0abd533df0ba05d87
+  version: 0.9.8
+  commit: ec168edd2955f24ba79e88d0abd533df0ba05d87
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ssamurias/dsh-fish/ec168edd2955f24ba79e88d0abd533df0ba05d87/media/fish.jpg
+  - https://raw.githubusercontent.com/ssamurias/dsh-fish/ec168edd2955f24ba79e88d0abd533df0ba05d87/media/settings-status.png
+  - https://raw.githubusercontent.com/ssamurias/dsh-fish/ec168edd2955f24ba79e88d0abd533df0ba05d87/media/settings-growth.png
+  - https://raw.githubusercontent.com/ssamurias/dsh-fish/ec168edd2955f24ba79e88d0abd533df0ba05d87/media/settings-browse.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1264
+starsSnapshot: 150
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/ssamurias/dsh-fish/ec168edd2955f24ba79e88d0abd533df0ba05d87/media/fish.jpg

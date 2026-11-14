@@ -1,0 +1,52 @@
+id: srelka.dsh.ascii.scenes
+name:
+  zh: ASCII 场景主题
+  en: ASCII Scenes
+author: Srelka
+description: 八套会动的字符场景铺满侧栏与主工作区：Claude 暖夜、蓝天浮云、海龟潟湖、池塘锦鲤、深海水母、水面纸船、夏夜萤火与夜空月色，每套都有点击回应（吹风、水波、散开的光点等）；背景点击避开按钮、输入框、文字与选择，跟随系统减少动态效果，页面隐藏时暂停。
+repo: https://github.com/Srelka/dsh-ascii-scenes
+package: dsh-ascii-scenes
+rowId: ascii-scenes
+category: skin
+tags:
+  - ascii
+  - ambient
+  - interactive
+  - scenes
+modes:
+  - light
+  - dark
+install:
+  target: github:Srelka/dsh-ascii-scenes#fd7c496c59c0cc57c6a6a2aab8b9f9e4b037e077
+  version: 0.5.0
+  commit: fd7c496c59c0cc57c6a6a2aab8b9f9e4b037e077
+compatibility:
+  dsh: ">=0.2.1-rc.3 <0.3.0-0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Srelka/dsh-ascii-scenes/fd7c496c59c0cc57c6a6a2aab8b9f9e4b037e077/docs/media/scenes.png
+  - https://raw.githubusercontent.com/Srelka/dsh-ascii-scenes/fd7c496c59c0cc57c6a6a2aab8b9f9e4b037e077/docs/media/demo.gif
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1263
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/Srelka/dsh-ascii-scenes/fd7c496c59c0cc57c6a6a2aab8b9f9e4b037e077/docs/media/scenes.png

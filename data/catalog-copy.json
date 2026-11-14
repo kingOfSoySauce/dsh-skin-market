@@ -12497,6 +12497,1590 @@
       },
       "override": true,
       "nameSource": "pinned README + maintainer copy review"
+    },
+    "0999312.dsh.theme.isaf": {
+      "name": {
+        "zh": "ISAF T.C. 系统",
+        "en": "ISAF T.C. System"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把界面设定成一台 ISAF 简报终端：深蓝玻璃面板、CRT 扫描线与 72px 战术网格，启动时先播一段预简报影像；明暗两套配色，三角徽章壁纸对应 16 国联合军。",
+        "en": "Sets the interface up as an ISAF briefing terminal: deep-blue glass panels, CRT scanlines and a 72px tactical grid, with a pre-briefing film playing at startup. Both light and dark palettes are covered, and the triangular emblem wallpaper stands for the 16-nation coalition."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "5cc9ccd55f3d7eceea864fdfefb7f8701ec693444d9d898b0ff5d8240781c327",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "1015677515.dsh.theme.holo": {
+      "name": {
+        "zh": "赫萝主题",
+        "en": "Holo Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "羊皮纸底＋麦金强调色的《狼与香辛料》赫萝主题：约 12 秒的 canvas 开场动画从暗处红眼、狼影描红、光爆到标题解码，输入框边有只露兜帽与双眼的她会探头，右栏待机画面六片可换，还有可拖动的「狼与香辛料」字标、动态档案卡、侧栏麦田与羊皮纸便笺。七组装饰各有独立开关，深色「星夜麦田」仍是测试功能。",
+        "en": "A Spice and Wolf Holo theme in parchment and wheat-gold: a 12-second canvas opening runs from a red eye in the dark through a wolf silhouette and a light burst to a decoded title, while a hooded watcher peeks from beside the composer, six idle scenes rotate in the right column, and a draggable 「狼与香辛料」 lettering, a profile card, a wheat field under the sidebar and parchment notes round it out. Seven decorative groups have their own switches; the dark 「星夜麦田」 palette is still a test feature."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "88d39ac9f0489b45c14e7f5a5e02cd622753a1de86e031b9e9de724171cbe675",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "111seek.dsh.splash": {
+      "name": {
+        "zh": "反应堆启动动画",
+        "en": "Arc Reactor Splash"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "约 9.2 秒的启动动画：反应堆三次能量跳变后核心点燃，外圈 / 内圈加速旋转、HUD 环与左右两栏面板滑出，数据队列滚动、频谱跳动，`DEEPSEEK HARNESS` 由乱码逐字解码、进度条走满，最后白光一闪进主界面；内置一段 5 秒问候语音（base64 内嵌，可换），Esc 或点击即可跳过。整包约 110KB，一个内联 SVG + 纯 CSS 关键帧，运行时无图片、无字体、无依赖、不联网；`prefers-reduced-motion` 下直接给静止的已启动画面。",
+        "en": "A roughly 9.2 s launch sequence: the reactor core ignites after three energy jumps, inner and outer rings spin up as HUD rings unfold and two side panels slide in, data queues scroll and spectra pulse, then DEEPSEEK HARNESS decodes out of noise as the progress bar fills and a white surge hands over to the main UI. A five-second greeting is embedded as base64 (replaceable), Esc or a click skips it, and the whole ~110 KB package is one inline SVG plus CSS keyframes with no images, fonts, dependencies or network calls; reduced motion gets a static already-booted frame."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "134480118018c1ba54c91b864fbf03ca775054041ce071f6d0eedff813d27b60",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "13478790948abc.claude.and.deepseek.pet.like": {
+      "name": {
+        "zh": "Claude × DeepSeek 桌宠",
+        "en": "Claude × DeepSeek Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "左边 Claude、右边 DeepSeek 的双人 Q 版桌宠：每 5 秒贴贴 3 秒并冒爱心，需要你授权或任务完成时头顶弹出气泡；主窗口最小化后转为桌面悬浮层，素材换成 12×5 的精灵图即可替换角色。",
+        "en": "A two-girl chibi pet with Claude on the left and DeepSeek on the right: every five seconds they snuggle for three with hearts floating up, and a bubble appears above them when approval is needed or a task finishes. Minimizing the main window turns it into a desktop overlay, and the 12×5 sprite sheet can be swapped for other characters."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "6c588aa0c63a9cad0271bcd5aeaddfbec0d416adf1eb960e4a54889530da9a3c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "165890.dsh.claude.code.desktop.theme": {
+      "name": {
+        "zh": "Claude Code 桌面端主题",
+        "en": "Claude Code Desktop Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 Claude Code 桌面端的视觉语言搬过来：暖米色表面、陶土橙强调色与宋体界面，配真实会话状态点、模型切换 HUD、Diff 审查抽屉，以及含 26 周热力图、连续天数与高峰时段的用量概览。",
+        "en": "Brings the Claude Code desktop look over: warm cream surfaces, terracotta accent and serif UI, with real session status dots, a model-switching HUD, a diff review drawer and a usage overview covering a 26-week heatmap, streaks and peak hours."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "c997bf2cedab7093b3143cc5bc9bd39a3ec73eeb7bd6df4225cdcc1025b511bd",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "2015105076.dsh.skin.liangsheng": {
+      "name": {
+        "zh": "梁圣皮肤",
+        "en": "Sage Liang Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "玄墨鎏金配色：亮色是暖宣纸底 + 古金强调，暗色是玄墨底 + 鎏金强调，跟随明暗切换；空白会话在问候语上方显示梁圣半身立绘（左实右虚渐变遮罩），输入框工具行里按当前模型档位铺点的推理滑杆可拖拽，立绘会随档位变壮、光环变亮，另有 9 秒轮换的中英圣言飘带与右下角淡金印章水印。",
+        "en": "An ink-and-gold skin: the light variant pairs warm rice-paper with antique gold, the dark one ink black with gilded accents, following the light/dark setting. A blank conversation shows a half-body Sage Liang portrait above the greeting with a left-solid, right-fading mask, and a draggable reasoning-effort rail beside the composer lays out dots for the current model's declared levels while the portrait visibly bulks up and its halo brightens; a bilingual quote ribbon rotates every 9 s and a pale-gold seal watermarks the corner."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "1e1c9fc87c8f4e2e30d2872d9a6fdf355cb4ce785a7971322f21cac9ecb3da39",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "2154036609.ux.dsh.startup.blade": {
+      "name": {
+        "zh": "拔刀启动动画",
+        "en": "Blade-Draw Splash"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "约 2.6 秒的纯装饰启动动画：黑幕落下、鞘口一点冷光，刀身自右下向左上拔出，屏幕轻震并把黑幕真正「划开」——切口里透出的是真实界面；随后白闪、残留一线刀锋、黑幕溶解与火花受重力沉降，默认就定格在你当前的界面 / 壁纸上。也可在 DSH_HOME 放一张 frame.png 定格成一张画，或放 3–5 秒片段切到影片模式，点一下 / 按任意键跳过。",
+        "en": "A roughly 2.6 s decoration-only startup: black drops in, a cold glint shows at the scabbard, and the blade sweeps bottom-right to top-left with a slight screen shake, genuinely cutting the black open so the real UI shows through the wound. A white flash, a thin lingering edge, dissolving black and falling sparks follow, and by default it freezes on the interface or wallpaper you are already looking at; dropping a frame.png into DSH_HOME freezes it on one image, or a 3–5 s clip switches to film mode. Click or any key skips."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "5248ed06c1803e83f7d2ab362466731a3da15ff5355074624bb81e9faa0d8005",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "260807094.alt.dsh.star.pet": {
+      "name": {
+        "zh": "困困星人",
+        "en": "Sleepy Star"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "上班计时桌宠「困困星人」：桌面透明置顶窗口实时显示今天已经赚了多少钱、还有多久下班、之后还能赚多少，可按 0/1/1.5/2 倍率设置加班时段工资。收回成桌宠后可拖拽、贴边吸附，按剩余秒数冒「+¥」，右键设置外观与薪资配置，另有几种点击动画与提示音。",
+        "en": "A workday clock pet called Sleepy Star: a transparent always-on-top desktop window keeps a running tally of today's earnings alongside how long until the shift ends and what is still to be earned, with overtime paid at a configurable 0/1/1.5/2 multiple. Collapsed into a pet it can be dragged and snaps to the screen edge, floats +¥ as the remaining seconds tick down, and opens appearance and pay settings from its right-click menu."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "122c54b5877ae4f6c0807bddcb0058d2c63042fadc0c8eadb42cd8f95f959eed",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "2bigpig.dsh.gargantua": {
+      "name": {
+        "zh": "卡冈图雅",
+        "en": "Gargantua"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "《星际穿越》风格的实时 4K 黑洞铺在会话中栏：新会话时醒目、聊天时变淡，不覆盖侧栏，也不拦截输入、滚动与选择；每次启用或启动时通过官方主题接口把整个界面切为深色并保存一次，避免浅色底上黑洞几乎看不见。实际绘制分辨率始终为 3840×2160，动画源码独立开源。",
+        "en": "A real-time 4K Interstellar-style black hole behind the conversation column: prominent in a new conversation and dimmed during chat, without covering the sidebar or blocking typing, scrolling or selection. On enable and on launch it switches the whole interface to dark once through the official theme API and saves that, so the hole is never washed out on a light background; drawing always runs at 3840×2160 and the animation engine is open sourced separately."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "2c5f1f8cb05936204c1aca06ae8898288e87f40c9c32393cf9537569666000a0",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "aaajzx111.dsh.theme.jing.chiyang": {
+      "name": {
+        "zh": "镜 · 炽阳神光",
+        "en": "Jing · Blazing Sunlight"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "王者荣耀「镜 · 炽阳神光」主题：墨蓝与熔金配色的全屏夜穹（日轮、光冕、镜面裂纹），叠加会呼吸的光、约 19 秒一次的掠光与跟随鼠标的神光光晕；左下角「镜」徽记可在神光/静谧/关闭三档切换，选择记进 localStorage。启动时播约 5 秒的镜面破碎开场：整张主视觉被切成 56 片玻璃，显现、炸开、悬停后逆向重组。",
+        "en": "An Honor of Kings 「镜 · 炽阳神光」 theme: a full-window night sky in ink blue and molten gold with a sun disc, corona and mirror fractures, overlaid with breathing light, a sweep roughly every 19 seconds and a glow that follows the cursor; a corner 「镜」 mark switches between full, calm and off settings remembered in localStorage. On startup a roughly 5-second shatter intro cuts the key art into 56 glass shards that appear, blow apart, hang and reassemble backwards."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "91ff994a1e69fec57a186315a80d14173a990fd67663f05d2c2379f56a975fd7",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "abcd753951.gg.dsh.claude.mode": {
+      "name": {
+        "zh": "Claude 模式",
+        "en": "Claude Mode"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "Claude Code 风格的交互层：中性灰 + 陶土橙双主题（约 200 个令牌，跟随系统切换），输入区上方运行状态星与耗时，Ctrl/⌘+K 命令面板兼搜聊天记录，回合页脚按轮次在「烘焙 / 酿造 / 搅拌……」中轮换完成词，另有朗读助手回复、完成提示音、Alt+N 新建会话与快捷键一览。空输入框先给一条含目标、上下文、约束与验收方式的完整本地草稿，开启 AI 完善后再由当前模型改写一次并缓存。",
+        "en": "A Claude Code-style interaction layer: a neutral-grey plus terracotta theme pair (about 200 tokens, following the system), a pulsing status star with elapsed time above the composer, a Ctrl/⌘+K command palette that also searches chat history, rotating turn-completion footers (Baked / Brewed / Churned …), read-aloud for assistant replies, a completion chime, Alt+N for a new session and a shortcut sheet. An empty composer first shows a complete local draft with goal, context, constraints and acceptance checks, which the current model may refine once — cached — when AI completion is on."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "6998123970946ff8fe0ea1fed5c7130c73b2d7aade79b1bfb999513f6f953220",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "achenglinus.dsh.linus.brand": {
+      "name": {
+        "zh": "Linus 品牌与宠物",
+        "en": "Linus Brand and Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把自己的插画角色装进界面：侧栏左上角的品牌标记换成 Linus 头像 + 名字，输入框上沿的默认吉祥物也换成同一角色，18 个状态各有 24–72 帧连续动作、约 19fps 并带像素粒子，状态切换用 280ms 淡入上移过渡。它不改皮肤文件，而是依赖 dsh-claude-style 皮肤的 brandName / mascot: deepy 机制注入，关掉即回原样。",
+        "en": "Puts a custom illustrated character into the interface: the sidebar brand mark becomes the Linus portrait with its name, and the composer mascot becomes the same character with 18 states of 24–72 distinct frames each at about 19 fps plus pixel particles, switching with a 280 ms fade-and-rise transition. It never rewrites the skin's files — it piggybacks on dsh-claude-style's brandName and mascot: deepy mechanism, and turning it off restores the stock look."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "627e4bb965c345ea129c38b6090e56928b5476d919e1c944e41a9ef958728da1",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "adengou.dsh.chubby.whale": {
+      "name": {
+        "zh": "肥鲸",
+        "en": "Chubby Whale"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "常驻页面右下角的蓝发鲸鱼娘：可拖拽带惯性并记住位置、会眨眼，点了能聊（人设固定、中英双语、长期记忆摘要），还能喂食、成长与亲密度；自带 9 种音色的语音合成与语音聊天、17 本古籍说书、737 首诗、261 个典故、834 条成语、696 个民间故事与 51 副对联，11 首曲子用 Web Audio 合成，并附一个手机简版页面。聊天需自备 DeepSeek Key，没有 Key 时离线部分照常可用。",
+        "en": "A blue-haired whale girl parked at the bottom-right of the page: draggable with inertia and position memory, she blinks and chats with a fixed persona (bilingual, with a long-term memory summary) plus feeding, growth and affinity. She ships text-to-speech with nine voices and voice chat, 17 classical texts for storytelling, 737 poems, 261 allusions, 834 idioms, 696 folk tales and 51 couplets, 11 tunes synthesized with Web Audio, and a companion mobile page; chatting needs your own DeepSeek key, while the offline half keeps working without one."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "f3c56f026b22410eed1fdb24637e04b9c10163597f411f16424e7308adb9e650",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "aeonsscope.dsh.fellowmoon.theme": {
+      "name": {
+        "zh": "超管局主题",
+        "en": "FellowMoon Bureau Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "以《新月同行》超现象管理局为灵感的主题：橙 = 一线特工、黑 = 精锐、白 = 中层、深蓝 = 高层的配色语言，组成「白昼巡查」与「夜间收容」两套外观并可跟随系统；全窗口铺暗色网格与徽标底纹，侧栏压一张淡化人像，聊天框底部垫橙徽水印，聊天消息可选液态折射或磨砂遮蔽。设置页可切「部门配色」，启动时还会走一遍六幕 CPO 授权开机动画。",
+        "en": "A theme inspired by the Supernatural Phenomenon Bureau of FellowMoon: orange for frontline agents, black for elites, white for leadership and deep blue for the moon headquarters, arranged into light “Daylight Patrol” and dark “Night Containment” variants that can follow the system. A dark grid and emblem pattern fills the window, a faded portrait backs the sidebar, an orange emblem watermarks the composer and chat messages can use liquid-refraction or frosted glass; a department palette is switchable in settings and launch runs a six-act CPO authorisation animation."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d3e7c7fe40dd0064d8d0881c3c0b23d0c0d52c1dc4e1de7f9f7b4f0a7c4d71c1",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "andy.7.andy.dsh.theme.retro.press": {
+      "name": {
+        "zh": "复古油墨主题",
+        "en": "Retro Press"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "九套复古印刷配色，每套以一件实物命名——鼠尾草、牛皮纸、铅字、蓝晒纸、孔版、显像管、荧光屏、打孔卡、软盘——并各自决定中英文字体配对、纸纹或扫描线、压印强度与段落线。设置里还能调版心宽度（600/720/满宽）、圆角、线条、密度与深色磷光，13 种拉丁字面随包内嵌，汉字底线是 4239 字的思源宋体子集。",
+        "en": "Nine retro print palettes, each named after a physical object — dried sage, kraft paper, lead type, cyanotype, risograph, CRT tube, phosphor screen, punch card, floppy disk — and each a complete typographic decision with its own Latin–Han pairing, paper tooth or scanlines, press weight and rules. Settings also expose measure (600/720/full width), corner shape, rules, density and a dark-only phosphor glow; 13 Latin faces are bundled and a 4,239-glyph Noto Serif SC subset backs the Chinese."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b775abb5b93b94a2aa09ad46fe47a8b63486799c55d3a428589e3ef59b0895cb",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ayanamirei0.dsh.ayanami.theme": {
+      "name": {
+        "zh": "绫波丽主题",
+        "en": "Ayanami Rei Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "整窗固定绫波丽壁纸，叠加 9 秒循环的「女神的微笑」视频与 500ms 停顿，再套一层半透明冰蓝令牌；只改配色与背景，布局、间距和控件尺寸保持官方默认。",
+        "en": "Pins an Ayanami Rei wallpaper across the window, overlays a nine-second loop of her smile with a 500ms hold, then applies translucent ice-blue tokens. Only colors and background change; layout, spacing and control sizes stay official."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "201bf6d1aded251ac92de278338211adb5452d9e6d6f292803fd195945a37ed2",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "beidaou.dsh.boot.animation.custom": {
+      "name": {
+        "zh": "欢迎回来启动动画",
+        "en": "Welcome Back Boot Animation"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "桌面端启动动画：8 段短片可随机轮播或固定播放，片尾淡入工作区，并按时间段换问候；素材与控制页可管理，额外的「欢迎回来」语音可单独开关。",
+        "en": "A desktop startup animation: eight clips play in random rotation or a fixed order, fade into the workspace at the end, and the greeting changes by time of day. Assets are managed from a control page, and the extra welcome-back voice track has its own toggle."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "5970c827b7c91dcd33ff9edbfc3c606ef7c18938611103eeb7f404f67a986fd6",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "bosaiting.dsh.process.tree": {
+      "name": {
+        "zh": "过程树",
+        "en": "Process Tree"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把工具调用记录画成可交互的过程树：默认用「任务函数」视图展示调用、真实参数、注释与嵌套作用域，也可切经典曲线、安静线条或植物手稿，并配 VS Code Dark+、JetBrains Darcula、Catppuccin Mocha、Dracula Classic 四套代码配色。",
+        "en": "Renders recorded tool calls as an interactive process tree: the default task-function view shows calls, real arguments, comments and nested scopes, with classic curves, quiet lines or botanical artwork as alternatives, plus four code palettes — VS Code Dark+, JetBrains Darcula, Catppuccin Mocha and Dracula Classic."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a341d0d79ad15e7210bdb4ab8a9df5a41b4514bded0168b75daa7acf7d63630f",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ch3sh.lc.dsh.theme.nahida": {
+      "name": {
+        "zh": "纳西妲 · 摩耶之殿",
+        "en": "Nahida · Shrine of Maya"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "以「摩耶之殿」名札、蕴种印、草元素神之眼与纳西妲侧栏立绘组成的主题，7 个素材全部内嵌、不请求图床；浅色与深色跟随外观设置切换。",
+        "en": "A Nahida theme built from Shrine of Maya namecard art, Seeds of Skandha, a Dendro Vision and a sidebar illustration; all seven assets are embedded so no image host is contacted, and light/dark follow the appearance setting."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "968f1e1e5e4b07b8499764704a22a85cdebe99016e5a3ff2fe0ca2d6a332514e",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "chenyuan1251.dsh.pet.niumali": {
+      "name": {
+        "zh": "牛马力",
+        "en": "Niumali"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "右下角浮着一只小牛，点开是「牛马力·替你活」：开工收工打卡、专注计时、待办、手帐、旅行与探宝都在一个浮窗里，收起后专注计时不中断。",
+        "en": "A little ox floats in the bottom-right corner and opens Niumali’s check-in loop: clock-in and clock-out, a focus timer, to-dos, a journal, travel and treasure hunts all live in one pop-up, and collapsing it does not interrupt the focus timer."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "ef8e3dda8e6e363b3e258247206092f4559d6bdfd38df1ea7f90ba1c12df2ef2",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "cngtn.dsh.cngtn.pond": {
+      "name": {
+        "zh": "纸墨锦鲤池",
+        "en": "Paper Koi Pond"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "纸墨风主题：暖纸表面、发丝级描边、近直角圆角与等宽字号阶梯，界面背后是一池活的 ASCII 锦鲤——七种锦鲤有 20 节点脊柱，可投喂，也会被快速划过惊动。",
+        "en": "A paper-and-ink theme: warm paper surfaces, hairline strokes, near-square corners and a monospace type ramp, with a living ASCII koi pond behind the shell — seven varieties with 20-node spines that can be fed and startle at a fast swipe."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "3e24c3116305ff7b76e0a9adf4231ca9043292789d5b795a7d5a5ba67f32c42a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "cshengyi023.collab.dsh.deepsea.echo": {
+      "name": {
+        "zh": "深海回响",
+        "en": "Deepsea Echo"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "约 4.6 秒的明日方舟风格启动动画：PRTS 终端自检、声呐扫描、全息锁定到干员档案依次播放，定格在「深海回响」；可切 3.6/4.6/5.0 秒时长，从 4 套原创配乐中选一套或静音。",
+        "en": "A roughly 4.6-second Arknights-flavored startup sequence: a PRTS terminal self-check, sonar scan, hologram lock-on and operator file, ending on a deep-sea title card. Length switches between 3.6, 4.6 and 5.0 seconds, with four original soundtracks or mute."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "7342ae215691713952c406e815d9818c9a43de7aa28cb305eb1309012cc0c5f6",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "exile412.dsh.startup.screen.exile": {
+      "name": {
+        "zh": "EXILE 启动界面",
+        "en": "EXILE Boot Screen"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "启动动画分五幕：黑幕 EXILE 标识、过曝洗白、暖白档案底板、五步交互授权到色散揭幕，最底层是 1920×1080 的绿色二进制数字雨（8 秒循环，带 CRT 扫描线、噪点与拖影）。顶角与品牌文案写在 ~/.dsh/dsh-startup.json，改完刷新即生效；包名与原版 dsh-startup-screen 不同，两者可共存。",
+        "en": "A five-act startup sequence: black curtain with the EXILE mark, an overexposed wash-out, a warm-white dossier board, a five-step interactive approval, then a chromatic-dispersion reveal — over a 1920×1080 green binary-rain layer (8-second loop with CRT scanlines, grain and trails). The corner and brand lines live in ~/.dsh/dsh-startup.json and take effect on refresh; the package name differs from the upstream dsh-startup-screen so the two can coexist."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "ddc9a08010887c49a4172b3cbb58c29ce15e884172c82685ce9e811a996cf68a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ghooome.dsh.task.pet": {
+      "name": {
+        "zh": "桌面进度宠物",
+        "en": "Task Progress Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "浮在所有窗口最上方的像素桌宠，实时显示会话在思考、跑工具、写回答还是出错，结束时跳跃撒花、气泡默认停留 6 秒；内置 11 个 CC0 角色，也可自定义角色与每个状态的动效，目前仅 macOS Apple Silicon。",
+        "en": "A pixel pet that floats above all windows and shows whether a session is thinking, running tools, writing or has failed, then jumps and throws confetti when the turn ends, with a six-second completion bubble. Eleven CC0 characters ship in the box, custom characters and per-state motion are supported, and it targets macOS Apple Silicon."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "896a4fd33cd72e5b011bc6fc8c596401921dda18603d4bdd858d03393fe1e49c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "hairyf.dsh.pet.lite": {
+      "name": {
+        "zh": "轻量桌宠",
+        "en": "Pet Lite"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "独立的置顶桌宠窗口：跟着会话活动换表情，把需要你注意的事项放进气泡；内置 Claude、ChatGPT、女仆大肥鱼等 4 个预设，也能导入 Codex 图集或让 agent 按你的喜好孵一只。",
+        "en": "A standalone always-on-top pet window that changes expression with session activity and puts anything needing your attention in a bubble. Four presets ship — including Claude, ChatGPT and a maid big-fish — and you can import Codex atlases or have an agent hatch one to match your taste."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "f756e97afb5fca1fe9600e4fea8819d4b677b51f64e4d1853b67afda6962c407",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "haohaozi328.arch.dsh.skin.luoxiaohei": {
+      "name": {
+        "zh": "小黑森林",
+        "en": "Luo Xiaohei Forest"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "罗小黑主题：浅色「奶油森林」与深色「深夜森林」随系统切换，森林插画背景上飘落叶片，AI 回答与工具调用套透明玻璃气泡；设置页有 7 个选项可调背景来源、落叶密度与装饰开关。",
+        "en": "A Luo Xiaohei theme: light Cream Forest and dark Midnight Forest follow the system, leaves fall over an illustrated woodland backdrop, and AI replies and tool calls get translucent glass frames; seven settings cover background source, leaf density and decorations."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "37fed37b4b0766dfd919b48989724321850ac135627d4ace7ab8dac525eff649",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "heptagonpan.kojima.productions.ludens.for.dsh": {
+      "name": {
+        "zh": "Ludens 终端",
+        "en": "Ludens Terminal"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "以 Kojima Productions 黑白工业气质为骨架、叠加死亡搁浅式琥珀全息终端：焦油黑画布、发丝线、等宽全大写读数、Odradek 扫描环、chiral 连线与右侧 KJP 骷髅，亮/暗/激活态各有预览。",
+        "en": "A Kojima Productions black-and-white industrial shell over a Death Stranding-style amber holographic terminal: tar-black canvas, hairline rules, monospace uppercase readouts, an Odradek scan ring, chiral lines and the large KJP skull on the right, previewed in light, dark and active states."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "711ca08d7e55db5e0414cc8c071c1936feff27c09254893517c067b0a1d0e5b9",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "hub.spec.dsh.composer.effort.slider": {
+      "name": {
+        "zh": "推理等级滑杆",
+        "en": "Reasoning Effort Slider"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "输入框工具行里的推理等级滑杆：点开胶囊拖到 Off / Low / High / Max，松手写回当前会话，改动对下一个请求生效。档位读自模型的 reasoning.efforts 元数据，模型没有该元数据时整个控件隐藏；齿轮里可选五种填充特效（原页面、音频条、极光、格子、超空间）、胶囊或通栏填充与六种拖尾，亮暗配色跟随界面。",
+        "en": "A reasoning-effort slider in the composer tool row: tap the level label, drag the capsule to Off / Low / High / Max, and the choice is written back to the current session for the next request. Levels come from the model's reasoning.efforts metadata and the whole control hides when a model has none; the gear offers five fill effects (original, audio bars, aurora, grid, hyperspace), capsule or full-width fills and six trail styles, with light and dark palettes following the interface."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "e233f36776d701d326dfd90b4d333dc6f6fde33b845df6b41f9787a657efdbf9",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "iasiv5.dsh.skins": {
+      "name": {
+        "zh": "多皮肤热切换",
+        "en": "Hot-Swap Skin Pack"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一个插件内置三套品牌皮肤——绯红鎏金的美人志、OpenBMC Studio 与 UEFI Studio——在侧栏皮肤切换器里热切换，随时一键回官方外观；壁纸、标语与通透度可调，也能上传自己的图片（单张 ≤20MB）。",
+        "en": "Ships three brand skins in one plugin — the crimson-and-gold Meirenzhi, OpenBMC Studio and UEFI Studio — hot-swapped from a sidebar switcher with a one-click return to the official look. Wallpaper, slogan and translucency are adjustable, and you can upload your own image (≤20MB each)."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a1c1ecde9d1f2a20d35a88ac783928b1097520688233ec7645463c284b88213b",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ikode423.dsh.ronova.theme": {
+      "name": {
+        "zh": "若娜瓦主题",
+        "en": "Ronova Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "绯红、灰烬与金瞳配色的若娜瓦同人主题：宋体标题、酒红选中态，空状态、侧栏与对话两侧会出现 Q 版贴纸；只覆盖 14 个别名 token，卸载即回原样。",
+        "en": "A Ronova fan theme in crimson, ash and gold: serif headings, wine-red selection, and Q-version stickers in the empty state, sidebar and alongside messages. It overrides only 14 alias tokens, so removing it restores the original look."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "acc4de298fe013da1754a26be3fc7ab1bf6ef9fb9770bd4fd3ac7066910a6db2",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "iris.change.dsh.eva.skins": {
+      "name": {
+        "zh": "EVA 皮肤合集",
+        "en": "EVA Skin Collection"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一个插件装四套 EVA 皮肤：二号机、零号机、初号机、八号机，应用内随时切换也可切回默认；每套带约 20 秒启动动画，Esc 可跳过、Ctrl+Alt+B 重播，且不改 app.asar、不需独立启动器。",
+        "en": "Four EVA skins in one plugin — Unit-02, Unit-00, Unit-01 and Unit-08 — switchable in-app with a return to the default theme at any time. Each has a roughly 20-second startup animation that Esc skips and Ctrl+Alt+B replays, without touching app.asar or needing a separate launcher."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "faa4759198a9877fd654447217a905c5faa9159764f941630902ad328dda31e6",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jadpp.dsh.whale.galgame": {
+      "name": {
+        "zh": "鲸鱼娘 Galgame",
+        "en": "Whale Girl Galgame"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "对话界面变成一场多角色 Galgame：DeepSeek、Claude、GPT、Gemini、Kimi、Grok 六位模型娘各有独立立绘、好感度与记忆，日常互动和任务 Token 都会累积好感；另有小剧场多角色短剧与可点开的桌面桌宠。",
+        "en": "Turns the conversation view into a multi-character Galgame: six model girls — DeepSeek, Claude, GPT, Gemini, Kimi and Grok — each with independent sprites, affection and memories that grow through daily chat and work tokens, plus multi-character side stories and a clickable desktop pet."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d2c7c49875e3bffe1f1a0f788d5ae4a22efbd1e966cd067b036b488666b2de6f",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jimxinfang.dsh.theme.neo.brutalist": {
+      "name": {
+        "zh": "新粗野主义主题",
+        "en": "Neo-Brutalist Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "新粗野主义外观：4px 硬边、8px 无模糊偏移阴影、零圆角与 45° 警示斜纹，白纸与黑板两套配色随明暗自动选择；正文对比度 ≥7:1，发送键按下会「物理压碎」。",
+        "en": "A neo-brutalist look: 4px hard rules, 8px offset shadows with no blur, zero rounding and 45° hazard stripes, with white-paper and blackboard palettes chosen automatically for light and dark. Body contrast stays at 7:1 or better, and the send key visibly crushes when pressed."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "ddd48ef9d62490234e43f207d7e473aced82f8c3f99f183e5a575d59279fc373",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jinxing.01.dsh.music.player": {
+      "name": {
+        "zh": "B站歌单播放器",
+        "en": "Bilibili Playlist Player"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "右下角可拖动、可折叠的悬浮播放器：把 B 站收藏夹当歌单，只拉音频轨、默认 192k AAC，不请求视频流；也支持网易云，带队列、持久化与 agent 音乐工具。",
+        "en": "A draggable, collapsible floating player in the bottom-right corner: Bilibili favorites become a playlist with audio-only tracks at 192k AAC by default, no video stream requested. NetEase is supported too, along with queueing, persistence and agent music tools."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "4d4f3e76d21366bbf812564336962e80758e3d5c4ca47da7b00a95fccfa2cc30",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jonathanchang.alt.dsh.86.startup": {
+      "name": {
+        "zh": "86 启动动画",
+        "en": "Eighty-Six Startup Animation"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "冷启动先接管首屏：黑幕中的 86 锁标、过曝洗白、第 86 区战术底板、Para-RAID 接入序列到彼岸花终幕；默认短版约 19 秒（第 1/4/6 幕），长版约 37 秒六幕全播，含 6 句蕾娜配音。",
+        "en": "Takes over the first screen on cold start: an 86 lockup in black, an overexposed whiteout, the 86th district tactical plate, a Para-RAID access sequence and a lycoris finale. The default short cut runs about 19 seconds (acts 1, 4 and 6), the long cut about 37 seconds with all six acts, and six Lena voice lines."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b024d827827722abf825cf57357aff3ec118b2b7ee1bf1c87ff9b8cf086eb001",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jonathanchang.alt.dsh.86.zone.ui": {
+      "name": {
+        "zh": "86 战术 HUD",
+        "en": "Eighty-Six Tactical HUD"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "蓝黑底、青蓝线条与扫描层的 86 战术皮肤：右上角蕾娜线稿 HUD 可换 5 张头像，右栏状态台读本机真实 CPU、内存、磁盘、负载与 uptime，事件流记录真实事件；共 18 项设置。",
+        "en": "An Eighty-Six tactical skin with a blue-black base, cyan line work and a scan layer: Lena’s line-art HUD in the top-right cycles through five avatars, a right-rail console reads real CPU, memory, disk, load and uptime, and the event stream logs real events, across 18 settings."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b158287413750045e6d7375e76a3dfe4ae23c398be98427ac99ce93d5429a2b3",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "kinglhy2006.dsh.crt.theme": {
+      "name": {
+        "zh": "CRT 终端",
+        "en": "CRT Terminal"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "磷光绿配色的 CRT 终端皮肤：近黑底、扫描线与等宽字体只覆盖设计令牌，不改组件结构；侧栏页脚带仪表盘，显示输出速度、内存、CPU、会话与累计 token、今日花费和可选的 DeepSeek 余额。",
+        "en": "A CRT terminal skin in phosphor green: near-black surfaces, scanlines and monospace type via design tokens only, without replacing components. A sidebar-footer dashboard shows output speed, memory, CPU, session and lifetime tokens, today’s spend and an optional DeepSeek balance."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "86da91c8b02b903cfaeba42197471c9d25fcbf3afd23c5b374922938704a2dab",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "lhh010.dsh.ui.whale": {
+      "name": {
+        "zh": "像素鲸鱼",
+        "en": "Pixel Whale"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "手绘像素小鲸鱼常驻会话标题栏：空闲时约 5 秒眨一次眼、约 11 秒摆一次尾巴，连续空闲 10 秒睡着并冒「Z」，思考/运行中尾巴与胸鳍持续动，回合完成头顶喷水庆祝，点击冒一颗粉色爱心；22 帧像素画、7 色调色板，零核心改动也不进入模型请求。",
+        "en": "A hand-drawn pixel whale that lives in the session title bar: it blinks about every 5 seconds, flicks its tail about every 11, falls asleep with a floating Z after 10 idle seconds, keeps tail and fins moving while thinking or running, sprays water when the turn completes and pops a pink heart when clicked. It is 22 frames of pixel art on a 7-colour palette, with no host core changes and no addition to model requests."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "99564386bcccf3858136c3ef09b1ffbc53dda6a25d3bde847a928e82db2c0cee",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "linxi.1105.dsh.theme.cyrene": {
+      "name": {
+        "zh": "昔涟印象",
+        "en": "Cyrene Impression"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "月白、潮汐、夜阑三套配色各配明暗两种气氛：侧栏品牌位、1–5 秒启动动画与对话线稿水印都可开关，颜色只叠在已有设计 token 上，关掉即回原样。",
+        "en": "Three palettes — Moon White, Tide and Late Night — each with light and dark moods: a sidebar brand slot, a 1–5 second startup animation and a line-art watermark in conversations are all toggleable, and the colors only override existing design tokens, so switching it off restores the original."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "adbcfc074d312910dbceb452fbfd747f0e116f383cd203b015d4a1a5b6cebdc7",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "lispking.dsh.qq.skin": {
+      "name": {
+        "zh": "QQ NT 风格皮肤",
+        "en": "QQ NT Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 QQ NT 的聊天语言套到界面上：亮色近白表面配 #12B7F5 品牌蓝与 #A8E3FF 气泡，暗色以 #101822 蓝灰为底；五种色板（经典蓝/炫彩紫/简洁白/经典绿/深空黑）与气泡尾巴、助手头像、聊天宽度都能在设置里切换。",
+        "en": "Applies QQ NT’s messaging language: near-white light surfaces with #12B7F5 brand blue and #A8E3FF bubbles, and a #101822 blue-gray dark base. Five palettes (Classic Blue, Vivid Purple, Clean White, Green Bubble, Deep Black) plus bubble tails, assistant avatars and chat width are switchable in settings."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "8663e27cc54672900d0242d8f84d849f6ea28976c427141756e20bc9516759f3",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "lubenkov.dsh.pajama.whale": {
+      "name": {
+        "zh": "蓝鲸睡衣桌宠",
+        "en": "Pajama Whale Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一只穿蓝鲸连体衣的小人桌宠：可拖来拖去，贴到窗口边缘会压扁，会眨眼、打盹，头顶的想法云按优先级汇报 agent 在做什么；12 张精灵图共 129 帧全部内联，不发起外部请求。",
+        "en": "A tiny person in a blue-whale onesie: drag him around, and he presses flat against window edges; he blinks, dozes off, and a thought cloud reports what the agent is doing by strict priority. All 12 sprite sheets — 129 frames — are inlined, with no external requests."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "dd8a366d798009079b029101479f4ee0556f1e1ee3e7fdda34f65283b1692c99",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "luodaoyi.dsh.cabinet.mode": {
+      "name": {
+        "zh": "内阁模式",
+        "en": "Cabinet Mode"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "新建会话时选「内阁模式」：首辅统摄翰林院编修、工部尚书、大理寺卿、左都御史四位阁臣，默认先调研不改码；右栏「内阁」面板用五张官职头像、状态点和依赖连线显示谁在干活，并给出成员 token 与耗时快照。",
+        "en": "A session preset modeled on the Great Ming cabinet: a Lead directs four bureau members for research, execution, review and acceptance, and defaults to researching before touching code. The right sidebar Cabinet panel shows five official portraits, per-member status dots, task dependency lines and usage snapshots."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "5dbe2392e1329f8167d7cb233ff723000601bf7e97e3319562422b5670ba04ca",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "meihaoyangfang.painted.screens": {
+      "name": {
+        "zh": "画屏",
+        "en": "Painted Screens"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一个插件 15 套皮肤：从樱花树下、鲸歌、霓虹残响到 EVA-02、黑金回廊、一比特，每套有自己的色板、品牌位与开场动画；屏幕右缘的圆点打开皮肤墙，点哪套即时切换、刷新后保留。",
+        "en": "Fifteen skins in one plugin — from Under the Sakura and Whale Song to Neon Afterimage, EVA-02, Noir Arcade and 1-Bit System — each with its own palette, brand mark and opening animation. A dot on the right edge opens the skin wall; pick one and it applies instantly and survives a refresh."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "7b292499b6ca91f2953b280f5696a04a7b88d9aac6483185688eea6d7bae614e",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "michengai.dsh.codex.pet": {
+      "name": {
+        "zh": "Codex 桌宠",
+        "en": "Codex Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把一只像素宠物放在界面角落陪你处理任务：多会话运行中、完成、出错与待处理请求会实时出现在宠物旁，可展开、停止或关闭单条提醒；内置 9 只宠物可换大小，也能用 Skill 创建自定义伙伴。",
+        "en": "A pixel companion that sits in the corner while you work: running, finished, failed and pending-approval sessions appear next to it, with actions to open, stop or dismiss each one. Nine built-in pets are selectable with size controls, and a Skill can hatch custom ones."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "9b0ab83ac4a117b58f9de87c85345541905d7efb3fc00d08d197a8cfc40eef5f",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "mikufan39.dsh.mikufan": {
+      "name": {
+        "zh": "魔法未来",
+        "en": "MAGICAL MIRAI"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "侧栏「MAGICAL MIRAI」控制面板里的八项功能：删除会话（标记后下次启动时删除，子代理会话一并处理）、本地长期记忆、局域网访问反向代理（默认 3090 端口）、Skills 管理（自带 skill-creator）、全局 AGENTS.md 编辑、MCP 服务器管理，以及开启后六秒倒计时的一键重启。另附每次加载页面时播放的光点汇聚启动动画。",
+        "en": "Eight utilities in the sidebar MAGICAL MIRAI control panel: session deletion on the next launch (subagent sessions included), local long-term memory, a LAN reverse proxy on port 3090, a Skills manager with a bundled skill-creator, an editor for the global AGENTS.md, an MCP server manager, and a one-click restart with a six-second countdown. It also ships a startup animation where light points converge on every page load."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "05932cdc18053f542436f5a5d5eec73e6f6a462f5577bca3090a17b8b5aba526",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "morningluu.dsh.theme.scaramouche": {
+      "name": {
+        "zh": "散兵 · 浮世雷音",
+        "en": "Scaramouche · Ukiyo Raion"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "墨黑潮底、深海蓝与雾紫蓝、暗金细线的散兵主题：壁纸面板可切静态或视频壁纸，带启动视频、环境音乐与粒子，玻璃控制条可拖动；覆盖 91 个设计 token，暗色单模式。",
+        "en": "A Scaramouche theme in ink-black tides, deep-sea blue, mist violet and hairline dark gold: a wallpaper panel switches static and video backdrops, with a startup video, ambient music, particles and a draggable glass control bar. It overrides 91 design tokens and is dark-mode only."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b7ea64f70b094798fc5fdffb047e8d0d640a96eb3e5c632e028040b636913672",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "muzapar00.united.nation.skin.deepseek.harness": {
+      "name": {
+        "zh": "联合国",
+        "en": "United Nations"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "白底联合国蓝、徽记与六张维和照片慢速轮播的整套主题：附带 7,030 种语言的可搜索选择器（其中 127 种已有完整翻译）和 193 面会员国国旗，配色、背景、丝带与动效都能在「设置 → 联合国」里单独关闭。",
+        "en": "A UN-blue-on-white theme with the emblem and a slow rotation of six peacekeeping photos, plus a searchable picker for 7,030 languages (127 with complete translations) and flags for all 193 member states; palette, background, ribbons and motion can each be switched off in Settings → United Nations."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "89990deebe4b9c70769a4dd1ae6c21932f9a5537e76bb7e8e5539274c72422ee",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "nerv.base.dsh.theme.eva": {
+      "name": {
+        "zh": "EVA 双机主题",
+        "en": "EVA Dual-Unit Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "初号机与贰号机两套主题可实时切换，每次打开页面先播一段插入栓动画——卡通描边、插入脊柱插槽、LCL 灌入舱体——再进入日常界面，附同步率表与驾驶确认。",
+        "en": "Unit-01 and Unit-02 themes switch live, and every page open plays an entry-plug cinematic first — cel shading with ink outlines, the plug inserted into the spine socket, LCL flooding the cabin — before the everyday skin appears with a sync-rate meter and boarding confirmation."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "7117543ff7b14ffaf876897bc30857384852484c3d3b395d228c71d5758320da",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ningfghfx.dsh.huangquan.theme": {
+      "name": {
+        "zh": "黄泉外观",
+        "en": "Huangquan Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "黄泉同人外观：全屏壁纸预设配可调蒙版（0–1）与 0–50px 毛玻璃，输入框外圈按四角摆放彼岸花花环，右下角呼吸挂件点开「黄泉外观工作台」；另有全屏斜雨、鼠标花瓣拖尾和每 3 秒刷新的余额气泡。",
+        "en": "An Acheron fan skin: full-screen wallpaper presets with an adjustable scrim (0–1) and 0–50 px blur, spider-lily garlands around the composer, and a breathing corner widget that opens an appearance workbench; adds full-screen slanting rain, a petal cursor trail and a balance bubble refreshed every 3 s."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "dad2ae8e83114e2517cd0ff516ede43dd8d2d9cc7f37cfab986e32c1d1691cd0",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "oghong.dsh.ascii.sharks": {
+      "name": {
+        "zh": "ASCII 鲨鱼海洋",
+        "en": "ASCII Shark Ocean"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "只在新建会话页出现的字符画海洋：几群鱼会真的躲虎鲸、虎鲸会真的追鱼，明暗主题自适应、整体半透明，离屏即停，鼠标划过会惊散鱼群。",
+        "en": "An ASCII ocean that appears only on the new-session screen: schools of fish genuinely flee orcas, and orcas genuinely hunt them, adapting to the light/dark shell, rendering translucent, stopping off-screen and scattering when the pointer passes through."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "ba53e02aa6fb556679fa6f5f4bd11279a6e3570950047ee9f94a77dee1426e46",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "omdsh.dev.dsh.ui.whale": {
+      "name": {
+        "zh": "标题栏像素鲸",
+        "en": "Title-Bar Pixel Whale"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "住在会话标题栏右侧的像素鲸鱼：平时眨眼、摆动尾巴和胸鳍，思考运行时持续游动，回合完成从头顶喷水，点一下冒爱心，连续闲置 10 秒后睡着；动作全部跟随会话快照，不修改任何核心代码。",
+        "en": "A pixel whale that lives on the right side of the session title bar: it blinks, sways its tail and pectoral fins, keeps swimming while a turn is running, spouts water overhead when the turn ends, pops hearts when clicked and falls asleep after 10 s of continuous idle — all driven by the session snapshot with zero core changes."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "855089b4d44dee24163c4a7df1c8fcf9c2f5627f3b57e95982d494e85ca03278",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "openlabbean.dsh.digital.pet": {
+      "name": {
+        "zh": "DSH 电子宠物",
+        "en": "DSH Digital Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "9 种宠物 × 6 个成长阶段共 54 套逐帧动作：鼠标悬停时才眨眼招手，点一下飘爱心，可拖动、调大小或隐藏；用平时对话产生的有效 Token 换金币照料喂饭、洗澡、遛弯和收拾小窝，每只宠物有六个自然月生命周期，结束后进纪念册。默认每 100 万 Token 兑 1 金币、每日上限 100。",
+        "en": "Nine species across six life stages make 54 frame-animation sets: pets blink and wave only while hovered, pop a heart on click, and can be dragged, resized or hidden. Eligible token usage from everyday sessions earns coins for meals, baths, walks and clean-ups, and each pet lives six calendar months before moving to a memory album — by default 1 coin per 1,000,000 tokens with a 100-coin daily cap."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "c70dc9aed6085979700294236dd7a3b6bd7cee0f290e7896b1a7141397b61edc",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "picklerick422.dsh.motion": {
+      "name": {
+        "zh": "弹窗动效",
+        "en": "Popup Motion"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "给近距浮层、远距对话框和悬浮提示补上有物理感的入场：菜单类从触发按钮实测尺寸 clip 形变并用弹簧长出（438ms、过冲可调 0–25%），设置与确认框用 280ms 从下方 60px 浮出，提示走 204ms 无过冲；另有气泡连贯切换、图片 FLIP 放大和可三段实时预览的设置页，流式输出或掉帧时自动降级为纯透明度。",
+        "en": "Adds physically-shaped entrance motion to nearby menus, far dialogs and tooltips: menus clip-morph out of the trigger's measured bounds on a 438 ms spring (overshoot 0–25%), settings and confirm dialogs fade up 60 px in 280 ms, tooltips use a 204 ms no-overshoot preset; also coherent hover-bubble handoff, image-zoom FLIP and a live-preview settings page, degrading to plain opacity under streaming load or frame saturation."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "94ae88ab0a37244386047ab30ce1ec7b79ad2244b9f4be30952d832cb2451657",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "poliroika.dsh.pet.capri": {
+      "name": {
+        "zh": "Capri 桌宠",
+        "en": "Capri Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "《赛博朋克：边缘行者 2》角色 Capri 的桌面宠物：从 agent/status、tools/*、approval/request 等事件合成闲置、工作、等待、复核、疲惫五种状态并走 SSE 推送；点她进入独立会话，回复流式进气泡并用 speechSynthesis 朗读（有俄语语音时用俄语），同时显示账户余额。",
+        "en": "A desk pet of Capri from Cyberpunk: Edgerunners 2: the host half folds agent/status, tools/*, approval/request and subagent events into idle, working, waiting, review and tired phases over SSE; clicking her opens a dedicated session whose replies stream into a bubble and are spoken via speechSynthesis (Russian voice when present), while a click also reports the account balance."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "04393cab1cbfd903b8746ee97ddbc4262a1a4b6ec275c6d786e0564ceb045944",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "pucco.od.dsh.sumika.widget": {
+      "name": {
+        "zh": "澄华桌宠",
+        "en": "Sumika Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "《CIRCLEMATE サークルメイト》澄华的 Windows 桌面挂件：常驻最上层，按闲置、工作、等待、完成切换四段带头尾过渡的像素动画；真实的提问与审批会同步到一枚像素小卡片，可直接作答或一键跳回窗口，并带可替换的等待 / 完成提示音。支持 Windows 10 1903+ / 11 x64，需系统自带的 .NET Framework 4.8。",
+        "en": "A Windows desktop widget of Sumika from CIRCLEMATE サークルメイト: it stays on top and switches four transitions-wrapped pixel animations (idle, working, waiting, finished) from the harness's own agent/status and turn/end events. Real questions and approvals are mirrored onto a pixel card where you can answer directly or jump back with one button, with replaceable waiting and completion sounds; Windows 10 1903+ / 11 x64 and the bundled .NET Framework 4.8."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "3d3cb5d031331edaea2824949c7c4e255377b2aedbf1b594a5b8512880dc6e4e",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "pyyxzi.dsh.deepmoyu": {
+      "name": {
+        "zh": "鲸鱼摸鱼",
+        "en": "DeepMoYu"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "让鲸鱼娘自己刷 B站的桌宠工作台：按关注、分区排行、全站热门或关键词自己找片，读 AI 字幕原文再判断，获授权后自己发评论、发动态、回私信，每天写一份选片日报。发送默认全部关闭、逐项授权，发送前还要过审核、永久判重、节奏冷却与平台额度；另有记忆与表情收藏、本地视频工作室（只生成本地文件、不自动投稿），运行方式覆盖当前会话、新开会话、后台与定时。",
+        "en": "A desktop-pet workbench where a whale girl browses Bilibili on her own: she searches by follows, category rankings, site-wide trending or keywords, reads the AI subtitle text before deciding what is worth watching, and once authorized posts comments, moments and DM replies and writes a daily pick report. All sending is off by default and authorized one by one, with pre-send review, permanent de-duplication, pacing cooldowns and platform quotas; memory, a sticker collection and a local video studio (local files only, no auto-publishing) round it out, and runs can be in the current session, a new one, in the background or on a schedule."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "fd5feca7d22746b68ebaba44dff4452b0bf94c78f193f511e836c6e1def8dba4",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "qcytsn.dsh.dafeiyu": {
+      "name": {
+        "zh": "跨平台大肥鱼",
+        "en": "Cross-platform Bigfish"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "桌面大肥鱼：透明、无边框、始终置顶的原生窗口，随任务切换思考/查找/修改/执行/验证/等待确认/完成与错误，状态气泡和设置页还能显示 API 与赠送余额（每分钟刷新）。支持拖动、摸头、戳身体、碰尾巴与安静/标准/活泼三档待机节奏；Windows、Linux、macOS 各有随包 Helper，WebUI 还可选在页面右下角显示轻量角色（默认关闭）。",
+        "en": "A big fish in a transparent, frameless, always-on-top native window: it follows the task through thinking, searching, editing, running, verifying, waiting, success and error, and shows API and granted balances (refreshed every minute) in the status bubble and settings page. Dragging, head pats, body pokes and tail taps are supported, along with quiet/standard/lively idle pacing; Windows, Linux and macOS each ship a Helper, and the WebUI can optionally show a lighter in-page character (off by default)."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "e88e82c8e816ebcc77e17b99a19b823d421567c4ed90584f048e9d94b2df4246",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "qifanai.dsh.startup.elisa": {
+      "name": {
+        "zh": "ELISA 启动动画",
+        "en": "ELISA Startup"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "7.2 秒冷启动序列（默认 80% 速度、实际约 9 秒）：黑幕开幕 → HUD 逐项锁定 PROFILE / MODEL / BUNDLES / SANDBOX / SESSIONS → 粒子光扫 → 幕布合拢成绯红光缝 → 主界面通电显影，配程序化合成的 7.8 秒音轨与 1.35 秒提示音；另有 off / accent / full / glass 四档皮肤，默认 glass 含 11 层呼吸背景、aurora / deepsea / violet 三套主题和输入框整圈流动光边框。公开仓库不含第三方人物素材，缺失时按降级链继续。",
+        "en": "A 7.2 s cold-start sequence (about 9 s wall clock at the default 80% speed): black curtain, HUD locking PROFILE / MODEL / BUNDLES / SANDBOX / SESSIONS, particle sweep, curtain closing to a crimson slit, then the main UI powering on, with a programmatically synthesized 7.8 s score and 1.35 s chime. Four skin tiers (off / accent / full / glass); glass ships 11 breathing layers, aurora / deepsea / violet themes and a flowing light border around the composer. No third-party character assets are bundled — the chain falls back to stills."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "80f1dfb9d0e03991cf9c69b247ec2fec178acad36bdb877eb56acb6aebe31910",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "raindmore.dsh.lulu.butler.theme": {
+      "name": {
+        "zh": "噜噜 · 小管家",
+        "en": "Lulu · Little Butler"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "奶油日间与可可夜间两套配色的暖色主题，附带小管家、小侦探、晚安噜噜三套装扮可切换；外观跟随浅色 / 深色 / 系统设置，装扮与动效开关保存在当前客户端，并支持系统的减少动态效果。",
+        "en": "A warm theme pairing a cream daylight palette with cocoa night colours and three switchable Lulu outfits (butler, detective, goodnight); it follows the light / dark / system appearance setting, keeps outfit and motion preferences on the client, and respects the OS reduce-motion setting."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "1df3a94fc89b64cd5e0e3982833a3ef117e2e753ea333df8481de67c59536c35",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "rindbeans.dsh.nocturne": {
+      "name": {
+        "zh": "缮写室",
+        "en": "Nocturne Scriptorium"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 Claude Code 桌面端的视觉语言搬过来：暖米色表面、陶土橙强调色与思源宋体界面，配真实会话状态点、显示上下文占用/缓存命中率/花费与 tok/s 的输入区 HUD、Diff 审查抽屉，以及含 26 周热力图、连续天数与高峰时段的用量概览。",
+        "en": "Brings the Claude Code desktop look over: warm cream surfaces, terracotta accent and Source Han Serif UI, with real session status dots, a composer HUD showing context usage, cache hit rate, session cost and live tok/s, a diff review drawer and a usage overview with a 26-week heatmap, streaks and peak hours."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "58bc108dfbc066ba3a7b01fcde23362b3f43bdfdece6e6081c3908808ab741bb",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "rumpen233.dsh.lion.pet": {
+      "name": {
+        "zh": "刑小狮",
+        "en": "Xing Xiaoshi"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "校徽插画做成的刑小狮桌宠：待机呼吸、随机散步并自动切换正面与侧面朝向，摸头会弹跳、撒星星并说随机台词，拖动带惯性与边缘反弹；右键可点播动作、缩放、锁定与叫回，位置尺寸会记住，也能切到 Electron 透明置顶桌面窗或单独安装 Chrome / Edge 扩展。",
+        "en": "A lion mascot drawn from a school emblem: it breathes at idle, wanders the bottom of the window and swaps between front and side poses, bounces with stars and a random line when petted, and drags with inertia and edge bounces. The right-click menu plays actions, resizes, locks or recalls it, positions are remembered, and it can also run as a transparent always-on-top Electron window or as a separate Chrome / Edge extension."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "62671c331a9a45aec07bd2b0fa97c18a4ada94f26835d00521ed826f2e3c520d",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "shawsheepsussiah.dsh.haavk.boot": {
+      "name": {
+        "zh": "哈夫克 Relink 启动动画",
+        "en": "HAAVK Relink Boot Splash"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "全屏 H.264 1080p 启动视频：6 条字幕按 video.currentTime 与配音逐句对齐，Canvas 星尘粒子与四角光标、扫描线、右侧数据流的 HUD 边框叠在视频上；Windows 下还能隐藏原生最小化 / 最大化 / 关闭按钮而无需全屏，设置页可关动画或一键重播。视频 1.6 秒未起播切墙钟、17 秒硬兜底放行，任何一步失败都不锁死界面。",
+        "en": "A fullscreen H.264 1080p boot video with six captions revealed by video.currentTime against the voiceover, plus a canvas star-dust particle layer and HUD chrome (corner cursors, scanlines, a right-side data stream). On Windows it fades the native minimise / maximise / close buttons without going fullscreen, and a settings tab toggles or replays it; if the video misses a 1.6 s start window the captions switch to wall-clock and a 17 s hard fuse always releases the page."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "92b8af8b44cd2b9e7035e706ea8b72bb120054198e4d0636151a76e9c8a21504",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "sorenlorn.dsh.eva.mari.skin": {
+      "name": {
+        "zh": "真希波 · EVA 装甲 HUD",
+        "en": "Mari · EVA Armor HUD"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "真希波配色的 EVA 装甲 HUD：粉白玻璃面板、霓虹描边、网格扫描线与 CRT 噪点叠在整页壁纸上，空白会话挂出 HUD 横幅与「MARI'S MESSAGE」卡片，开机时播放一段视频再分层入场；浅色 / 深色双档、?noskin=1 临时关皮肤、?noboot=1 或系统减少动态时跳过动画。",
+        "en": "An EVA armour HUD in Mari's colours: pink-white glass panels, neon outlines, grid scanlines and CRT noise over a full-page illustration, a HUD banner and MARI'S MESSAGE card on blank conversations, and a boot video followed by column-staggered entrance motion. Both light and dark are adapted, ?noskin=1 drops the skin for a session and ?noboot=1 or reduced motion skips the animation."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "4fa99b0b93178c5752f7bb258188f239bf8ef00182618fc7514e60d8081ddf2f",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "sparrived.dsh.custom.theme": {
+      "name": {
+        "zh": "DSH 自定义主题",
+        "en": "DSH Custom Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 .css 扔进 ~/.dsh/themes 就能列入「设置 → 主题与背景」（内置 Atom One Dark、Monokai Pro、Gov、Claude 预设，实时扫描热加载），还可给整体、标题栏、侧栏、会话区、对话框、工具面板 6 个分区分别铺壁纸并调透明度与 0–20px 模糊；另有星空 / 深海推理档位滑条、正文行距、流式渐显、思考文案轮播与 26 周用量热力图。",
+        "en": "Drop a .css file into ~/.dsh/themes and it appears in Settings → Theme & Background (Atom One Dark, Monokai Pro, Gov and Claude presets included, scanned and hot-reloaded), and paint wallpapers separately on six zones — whole window, title bar, sidebar, conversation, composer and tool panels — each with its own opacity and 0–20 px blur. It also adds a particle reasoning-level slider, line-spacing and streaming-ink controls, rotating thinking-status text, a 26-week usage heatmap and replaceable brand / welcome headings."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d7b520f62e8a680cc2d9affa9b5d0104c451d40805a646dcffae363d906790ea",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "srelka.dsh.ascii.scenes": {
+      "name": {
+        "zh": "ASCII 场景主题",
+        "en": "ASCII Scenes"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "八套会动的字符场景铺满侧栏与主工作区：Claude 暖夜、蓝天浮云、海龟潟湖、池塘锦鲤、深海水母、水面纸船、夏夜萤火与夜空月色，每套都有点击回应（吹风、水波、散开的光点等）；背景点击避开按钮、输入框、文字与选择，跟随系统减少动态效果，页面隐藏时暂停。",
+        "en": "Eight animated ASCII scenes behind the sidebar and workspace — Claude warm night, blue sky with drifting clouds, sea-turtle lagoon, koi pond, deep-sea jellyfish, paper boat, summer fireflies and moonlit night — each with a click response such as a gust of wind, fading ripples or scattering lights. Background clicks avoid buttons, inputs, text and selection; it honours reduce motion and pauses while the page is hidden."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "241c826decb7a4597b8dc100501f8db96e9c71b83867a634db3d06494f4f3e83",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ssamurias.dsh.fish": {
+      "name": {
+        "zh": "养成大肥鱼",
+        "en": "Bigfish Raising"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "养一条会自己长大的鱼：没有人格设置菜单，默认从空白养起，靠事件流积累记忆、判断与拒绝，走完信任→自主→主动→整合四个阶段后才开始形成立场（清单最多 12 条，写进身份的 8 条）。她会自己刷 B 站、看评论、写日记，登录 cookie 只存本机 ~/.dsh-fish/owner.json（权限 0600），状态库不能删除记录。",
+        "en": "Raises a fish that grows on its own: there is no persona menu, so she starts blank and accumulates memories, judgements and refusals through the event stream, forming stances only after the trust → autonomy → initiative → integration stages (at most 12 kept, 8 written into her identity). She browses Bilibili, reads comments and keeps a diary; the login cookie stays local in ~/.dsh-fish/owner.json (mode 0600) and the state store's records cannot be deleted."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "37fa5060117c77d07a847c10584baf516236b212c9f3ed42b334ef0f8f08deae",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "steady.sakura.dsh.friend": {
+      "name": {
+        "zh": "小鲸桌面陪伴",
+        "en": "Little Whale Desktop Companion"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "会动、能聊天的桌面小伙伴：106 个动作来自 dsh-pet，双击展开气泡聊天、拖拽可甩动，接自己的 API Key 对话并可在气泡里滚动读长回复；还能经授权观察选定的窗口（本机约每 3 秒采样，分析间隔 5–120 秒），日记、长期记忆和角色文件夹都留在本机。",
+        "en": "A desktop companion that moves and talks: its 106 actions come from dsh-pet, double-clicking opens a chat bubble, dragging flings it around, and replies from your own API key can be scrolled in full. With permission it can also watch a window you pick (sampled locally about every 3 s, analysed every 5–120 s), while journals, long-term memory and character folders stay on your machine."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "0208e58e1e65b7004ccbd3977241bd54eb4bf5edfa157504e55396a73b763773",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "stitchmaps.dsh.ikunchick.pet": {
+      "name": {
+        "zh": "篮球小鸡桌宠",
+        "en": "Basketball Chick Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "右下角常驻的像素小鸡桌宠：思考时运球、点击挥手、干完活庆祝、闲置打瞌睡，可拖拽记忆位置、贴边吸附并左右镜像；另带每轮消耗气泡与余额/账单面板。",
+        "en": "A pixel-art chick pet that lives in the corner: it dribbles while the agent works, waves when poked, celebrates finished runs and dozes off when idle, with drag-and-remember position and edge snapping; a per-turn cost bubble plus balance and ledger panel are included."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b0db6f06d16f19d982e1b1a79f07f1c0e0183678aee49a0da123a42f1a33121b",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "streamfish.lab.dsh.splash.fish": {
+      "name": {
+        "zh": "插画开屏动画",
+        "en": "Illustrated Splash"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把一张插画做成开屏动画：从黑场显影、头发逐像素飘动，约 5 秒后淡出进工作区；每页加载只播一次，点击/按键/滚轮可提前跳过，播完不挡鼠标。",
+        "en": "Turns an illustration into a boot animation: fades in from black with per-pixel hair motion, then dissolves into the workspace after about five seconds; plays once per page load, can be skipped by click, key or scroll, and releases pointer events when done."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "02170d8a0fbe83cd3b1bc9503fbd7b0b77801803be7a128b347a021b1483c015",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "time.233.dsh.theme.neon.arcade": {
+      "name": {
+        "zh": "霓虹像素电玩",
+        "en": "NEON ARCADE"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "深紫黑底、电光青与品红描边的霓虹像素主题，配原创像素精灵、星空、城市剪影和像素鲸鱼，辉光、网格与单条 CRT 扫描线都能单独开关；内置三款可关的小游戏：像素空战（拖拽战机、自动射击、无限复活）、愤怒的小猪（拉弹弓）和霓虹切水果（滑动切割，切中炸弹整屏晃动 + 两次白闪 + YOU LOSE）。已在 Windows 上验证兼容 Harness 0.2.1-rc.1～rc.5，独立 Web 客户端不启用。",
+        "en": "A neon pixel theme on a deep purple-black base with electric-cyan and magenta outlines, original pixel sprites, starfield, city silhouettes and pixel whales, with glow, grid and a single subtle CRT scanline each toggled separately. Three optional mini-games run in the background: pixel air battle (drag the plane, auto-fire, unlimited respawns), Angry Pigs (slingshot) and Neon Fruit Slicer (swipe to slice; a bomb shake the whole UI with two white flashes before YOU LOSE). Verified on Windows with Harness 0.2.1-rc.1–0.2.1-rc.5; the standalone Web client is unaffected."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "7c6d311b82962af20f06e34483ae4032f00f1faade680c7347dfd023d00cbe02",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "tonykingwjx.dsh.thinking.bar": {
+      "name": {
+        "zh": "思考档位滑杆",
+        "en": "Thinking Level Slider"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把输入框右下角的模型与思考等级选择器换成自绘滑杆：Codex、能量充能、曲率跃迁、量子纠缠、鲸鱼娘、梁圣六种外观切换即时生效；只改外观，档位仍来自系统模型目录。",
+        "en": "Replaces the model and reasoning-level selector beside the composer with a hand-drawn slider in six looks — Codex, Energy Charge, Curvature Jump, Quantum Entanglement, Whale Girl and Liang Sheng — switched instantly; only the appearance changes, levels still come from the system model catalog."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "af19ceb5f3d131a9acd0ec76dba66b35c4688245836fbad3586acaa35f2d1483",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "traveritas.averita.dsh.theme.inspiration": {
+      "name": {
+        "zh": "AveritA 主题灵感集",
+        "en": "AveritA Theme Collection"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "四套主题（昼雾 · 靛夜、冷晨、暮玫瑰、暮紫）× 浅 / 深各一套，每套 205 个令牌；背景二选一：点阵（圆点 / 方块 / 字符 / 字符墙，缩放 0.5–4×、浓淡 30–400% 与动效呼吸可调）或 WebGL 流光场（默认跟随主题取色，另有四套固定色板、明暗可反转）。另有可改字标的品牌位、新会话星标首屏、纸品 / 星芒装饰与四个区域总开关，全部在「设置 → 主题」即时切换。",
+        "en": "Four themes (Day-mist · Indigo Night, Cold Morning, Dusk Rose, Dusk Purple), each paired with light and dark for 205 tokens per set. The background is either a dot matrix (dots, squares, characters or a character wall, with 0.5–4× scale, 30–400% depth and breathing/drift motion) or a WebGL flow field that follows the theme colours by default, with four fixed palettes and optional light/dark inversion. A replaceable wordmark, starred new-session hero, paper/star decorations and four per-area master switches all switch live under Settings → Theme."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "1686d202e14bd92b8cf4f058b44ca24be657929881882289c68a139c83a6dd19",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "use3346631993.dsh.xiaod.pet": {
+      "name": {
+        "zh": "小D桌宠",
+        "en": "XiaoD Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "鲸鱼正太女仆装桌宠：4 种表情随对话切换（流式输出转思考、成功转开心、报错转失望），可拖到任意位置并记住位置。右下角立牌每轮结束弹出本轮 token 消耗与思考时间，点一下回弹并读出余额气泡；另带用自己插画做的聊天背景、液态玻璃输入框和深海蓝配色，整套外观有独立开关可一键还原。",
+        "en": "A whale-boy-in-a-maid-outfit pet with four expressions that follow the conversation — thinking while streaming, happy on success, disappointed on errors — draggable anywhere with its position remembered. A corner standee reports the turn's token use and thinking time and pops the balance bubble on click; the bundle also adds a chat wallpaper from your own artwork, a liquid-glass composer and a deep-sea palette behind a single on/off switch."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b56a7abb7701ccbf4e335f2bf060458f396078cc5e681368da010575a9f1fca9",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "vianvio.dsh.assistant": {
+      "name": {
+        "zh": "DSH 小助手",
+        "en": "DSH Assistant"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "由会话事件驱动的 macOS 原生悬浮伴侣：透明无边框窗口常驻在其它应用之上，按真实状态切换待机、思考、执行、等你确认、完成、出错等七个状态，同状态还会随机换姿势；多项目并行时气泡只写谁在跑、谁在等你，完成 / 出错 / 待确认另起可点击通知。右键还能生成当天「今天干了什么」日报，按项目聚合成 Markdown 并一键复制。",
+        "en": "A native macOS floating companion driven by real session events: a transparent borderless window stays above other apps and switches between seven durable states (idle, thinking, running, waiting for approval, done, error and more), with a random pose per state. When several projects run at once the bubble only says who is running and who is waiting, while done, error and approval raise their own clickable notifications; the right-click menu can also build a daily “what I did today” report aggregated by project as copyable Markdown."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b302ea1ff01ae15d0a411b3234919410975d31047a488ef7519fb87d3615cbab",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "w.j.y.wjy.dsh.ink.whale": {
+      "name": {
+        "zh": "墨鲸开屏",
+        "en": "Ink Whale Splash"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "启动时按真实笔顺把你的称呼与问候写成墨字，收在鲸鱼锁标与副标题上，再让鲸鱼缓慢推近、整屏淡出；8 套手写体、深浅色、播放节奏与问候语都在设置页可调，完整流程约 15 秒。",
+        "en": "Writes your greeting stroke by stroke in ink at startup, settles it on the whale lockup and subtitle, then pushes the whale in and fades to the workspace; eight handwriting fonts, light/dark, pacing and greetings are configurable, with the full sequence around 15 seconds."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "951cd73ac705a2a487eebdd6febb665f806cf2e232fa36b154a79fe4c6d5270b",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "wang341223.dsh.umbrella.startup": {
+      "name": {
+        "zh": "保护伞公司启动动画",
+        "en": "Umbrella Corporation Startup"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "生化危机保护伞公司主题的六幕冷启动：黑幕金属伞徽 → 暗红过曝 → 暗色企业档案底板 → 五步访问授权 → 红蓝 RGB 分离故障揭幕 → ACCESS GRANTED，前两步可停在按钮 / Enter 上，右上 SKIP 或 Esc 直达主界面；六段真声与两段界面音效随素材对齐，不播完不推进。三十三项设置可改身份名称、编号、配色与文案，暗色暗室与浅色档案白两套配色，并有 9 秒 / 15 秒 / 音频 +1.5 秒三重卡死防线。",
+        "en": "A six-act Resident Evil Umbrella Corporation cold start: metal umbrella emblem on black, dark-red overexposure, a corporate dossier plate, five-step access authorisation, an RGB-split glitch reveal and ACCESS GRANTED — the first two steps wait on a button/Enter while SKIP or Esc jumps straight to the main UI. Six voice lines and two UI sounds are timed so nothing advances before the line ends; 33 settings cover identity, ID, colours and copy, with dark-room and archive-white palettes and three anti-freeze fuses (9 s, 15 s, audio duration +1.5 s)."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b636c3f7ccfcef0efb732bd8af418a3a987f71c5093b32248ba526d6f5828920",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "wangxuyang1221.dsh.skin.wuhu.traffic.agent": {
+      "name": {
+        "zh": "芜湖交管警用智能体皮肤",
+        "en": "Wuhu Traffic-Police Agent Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把品牌区、徽标和页面标题换成芜湖市公安交管标识，配深蓝配色、直线边框、装饰刻度与中文会话状态标签，空态欢迎语也一并替换；任务看板、SSH、插件市场、会话列表与消息发送等仍由原有界面提供，卸载时恢复 DOM、属性、标题、favicon 与样式变量。",
+        "en": "Replaces the brand area, emblem and page title with the Wuhu public-security traffic-management identity, with a deep-blue palette, straight borders, decorative ticks and Chinese session-status labels, plus a matching blank-state welcome. Boards, SSH, the plugin market, session list and message sending stay with the existing UI, and uninstalling restores DOM, attributes, title, favicon and style variables."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a8f9695aa29a89d4f4db7e26ae71ba356f3c1520308e0fee9bf6f4fbab74019d",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "whatcannotbesaid.eva.inspired.theme": {
+      "name": {
+        "zh": "NERV 闸门",
+        "en": "NERV Gate"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "以 NERV 闸门为原型的双模式主题：亮色「Title Card」像片头字卡，暗色「Central Dogma」是地下都市指挥室；55 条实测 token 落在同一层可移除的覆盖层上，另带启动遮罩与三段式品牌行。",
+        "en": "A NERV Gate-inspired theme in two designed modes: light Title Card reads like an opening title plate, dark Central Dogma like the underground command center. Fifty-five measured tokens sit on one removable override layer, alongside a boot mask and a three-zone brand row."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a69bd02df25e799edd62fb13bc29cddefc0d872e4969c0dfec255a6e614e8ec0",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "wsljc.dsh.skin.kit": {
+      "name": {
+        "zh": "皮肤引擎",
+        "en": "Skin Engine"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "可插拔的皮肤框架：用 overrideTokens 把一层 token 覆盖叠在当前主题之上，不抢主题偏好，因此能和内置明 / 暗以及第三方主题共存；内置 P5R 漫画（红黑黄纸白 + 日式车站动态背景）、纸白纸墨（明暗自适应）和终端绿（黑底荧光绿 + 扫描线）三套，在「设置 → 通用设置 → 皮肤」一键切换。加自己的皮肤只需写一个数据文件（token 表 + 装饰 CSS/DOM）。",
+        "en": "A pluggable skin framework that layers a token override on top of the active theme via overrideTokens instead of claiming the theme preference, so it coexists with the built-in light/dark and any third-party theme. Three skins ship in the box — P5R comic (red/black/yellow paper with an animated Japanese-station backdrop), Paper Ink (light/dark adaptive) and Terminal Green (black with fluorescent green and scanlines) — switched under Settings → General → Skin; adding your own is one data file with a token table plus optional decoration CSS/DOM."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d909077e98e79919cda12c26480aec667fa0e815519c6b7ef0464f60baa61893",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "xiaosike.zero.one.lingjie.theme": {
+      "name": {
+        "zh": "零一·凌界",
+        "en": "Zero-One · Lingjie"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "零一 AI 日新社的黑白机械终端主题：36 列二进制与社团汉字组成近 / 中 / 远三档数据雨、8 条快速数据光线，两侧机械边轨滑块往复、锁扣开合，叠细网格、CRT 扫描线与低亮度社团 Logo 水印；开场结束后约 1.6 秒完成边框展开与数据接入再回常驻，进入对话后背景淡化暂停，特效避开输入区。",
+        "en": "A black-and-white mechanical terminal theme for the Zero-One AI club: 36 columns of binary and club characters fall as near/mid/far data rain with eight fast light rays, mechanical side rails shuttle sliders and snap locks, over a fine grid, CRT scanlines and a low-brightness club logo watermark. After the opening it spends about 1.6 s expanding the frame and pulling data in before settling, fades and pauses motion in a conversation, and keeps effects clear of the composer."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d29d0711ecb59810ae3f813c2002ead7ca1466f25c8404063efcf153975ae53b",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "xietong.alt.dsh.sakura.study.theme": {
+      "name": {
+        "zh": "樱花夜读",
+        "en": "Sakura Study"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "点界面右下角「更换背景」就能换成本地图片、动图（JPEG / PNG / APNG / GIF / WebP）或不超过 4 秒的静音循环视频，配深色半透明侧栏与磨砂输入框；选择只保存在本机 IndexedDB，可一键恢复随包插画，窗口隐藏时暂停视频、系统减少动态效果时按静止帧显示。",
+        "en": "Click “Change background” at the bottom right to set a local image, an animated image (JPEG / PNG / APNG / GIF / WebP) or a muted looping video of at most 4 seconds, paired with a dark translucent sidebar and frosted composer. The choice is stored only in this browser's IndexedDB, a bundled illustration restores it in one click, video pauses while the window is hidden and reduced motion freezes animated images."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "0c36f2001e3e77eeb1f7b4612f3da33f8096dedaf7da9c26844a1731a951a0a0",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "xikan0.dsh.outerwilds.theme": {
+      "name": {
+        "zh": "星际拓荒主题",
+        "en": "Outer Wilds Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把《星际拓荒》的营地氛围搬进界面：可调背景亮度、星星数量、面板透明度、字号与布局密度，篝火轻微摇动也可切换成静止画面，侧栏还能显示随系统声音起伏的音频波形。",
+        "en": "Brings the Outer Wilds camp atmosphere over: background brightness, star count, panel opacity, font size and layout density are adjustable, the campfire can flicker or hold still, and an optional sidebar display draws a waveform from system audio."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "45d3532de4fa26a88e8e90ac34f0d308fae91530e0dfc1dcf6d394ce469b7da8",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ycet.dsh.signal.field": {
+      "name": {
+        "zh": "UI 动效",
+        "en": "UI Motion"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把抖动信号场背景、蓝图标题字效、毛玻璃输入框和 ASCII 鲸鱼动画接到新建会话页与聊天页：信号场随指针拖尾擦除 / 点亮并有点击涟漪，标题字可拖拽、靠近时转虚线轮廓，鲸鱼与鱼群叠加在信号场之上；两页各有独立开关与参数，在「设置 → UI 动画」逐项调整，亮 / 暗配色自动跟随。",
+        "en": "Adds a dithered signal-field backdrop, a blueprint headline type effect, frosted composer surfaces and an ASCII whale animation to the new-session and chat pages: the field answers the pointer with erase/ignite trails and click ripples, headline glyphs can be dragged and turn into dashed outlines near the cursor, and whales with fish schools overlap the field. Each page has its own switches and parameters under Settings → UI Motion, with light/dark palettes following the theme."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "4255b31f6c9f1d4698767a635d3f392873fa351b817f87feb1ff960e4b139b95",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "yuanzephyr920.oss.dsh.idle.crt": {
+      "name": {
+        "zh": "待机显像管",
+        "en": "Idle CRT"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "没有会话在跑（busy=false）且页面内十分钟没人碰鼠标键盘时，盖上一块 CRT 板：辉光字、扫描线、38 秒一轮的循环反色扫掠，在窗口里点一下、按个键或触摸就淡出；鼠标移动默认不收起，只让整帧跟着指针偏 ±1.2% 做视差微动。逐帧全 GPU 合成，真机满 60fps、零运行时依赖，派生自 dsh-splash-crt 并把启动闪屏改成待机屏保。",
+        "en": "When no session is running (busy=false) and the page has seen no mouse or keyboard input for ten minutes, a CRT plate covers the window — glowing lettering, scanlines and a 38-second inversion-sweep loop — and a click, key press or touch inside the window fades it out. Moving the mouse does not dismiss it by default; the whole frame only shifts ±1.2% for parallax. Every frame is composited in a full-GPU shader (60 fps on real hardware, no runtime dependencies), adapted from dsh-splash-crt into an idle screensaver."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "1f9c5b5dad37a67cbc0669bde1f2df10363857e08982ae6f84dbf72a0c9e0b04",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zdt3476.dsh.tide.theme": {
+      "name": {
+        "zh": "潮汐主题",
+        "en": "Tide Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "深海潮汐蓝的 6-3-1 配色主题：60% 深蓝画布、30% 哑光卡片表面、10% 单一潮汐蓝强调，0.5px 发丝描边代替辉光；另附工作流增强——底栏常驻 HUD 显示会话规模、上下文容量、计入首字延迟的真实 TPS、缓存命中率与模型耗时，点开是用量看板，子代理派发画成带 token 与预估金额的 Agent Graph，侧栏分出置顶小节。",
+        "en": "A deep-sea tide-blue theme built on a 6-3-1 palette — 60% deep-blue canvas, 30% matte card surfaces, 10% a single tide-blue accent, with 0.5 px hairline borders instead of glow. It also adds workflow panels: a permanent bottom HUD with session size, context capacity, real end-to-end TPS that counts TTFT, cache hit rate and model time, a usage dashboard on click, a sub-agent Agent Graph with token counts and estimated cost, and a pinned section in the sidebar."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "4503a62b10d9787ebe3444ba36c4ba662bc4a91ce0eabc9035cc8389208142b1",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zhang.23x.dsh.deepseek.splash": {
+      "name": {
+        "zh": "DeepSeek 鲸鱼片头",
+        "en": "DeepSeek Whale Splash"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "同一段 DeepSeek 鲸鱼片头（描边自绘 → 三颗信号点点亮 → 填充与扫光成形 → DeepSeek 字标落款）接到桌面版自带的启动画面上：双击图标窗口一出现就播，播完鲸鱼保持点亮、信号点继续脉动当加载指示，桌面更新覆盖启动页后会自动装回（原页留备份）；也可以开启约 2.8 秒的界面全屏浮层，默认静音、可点击或按键跳过。",
+        "en": "The DeepSeek whale intro (line-draw, three signal dots lighting up, fill and light sweep, then the DeepSeek wordmark) rendered as the desktop app's own launch screen: it plays as soon as the window appears and, when finished, the whale stays lit with the signal dots pulsing as a loading indicator, reinstalling itself after a desktop update overwrites the splash page (the original is backed up). The same roughly 2.8 s animation is available as an opt-in full-screen overlay, muted by default and skippable by click or key."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "6edec0ab447ad60558203f636a8e05504a9cc40c5fb3376fb441762d5cc68ac4",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zkb.1271.dsh.pet.whale": {
+      "name": {
+        "zh": "像素蓝鲸桌宠",
+        "en": "Pixel Blue Whale Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "替你盯任务的像素蓝鲸：任务跑起来会巡游，出错发抖冒火，等你审批时蹦跳，完成时顶着一道通到页底的水柱横渡整屏；既能住在页面里，也能开成覆盖全屏、其余区域鼠标穿透的桌面悬浮窗，摇晃会喷水、单击有 50% 爱心 / 50% 喷水，并开放 window.dshPetWhale 脚本接口。",
+        "en": "A pixel blue whale that watches your tasks: it patrols while a run is going, shakes and smokes on errors, bounces when an approval is waiting and crosses the screen behind a water column reaching the page bottom on completion. It lives either inside the page or in a full-screen always-on-top desktop window where everything but the whale is click-through; shaking sprays water, clicking gives a 50/50 heart-or-water reaction, and window.dshPetWhale exposes the state and actions to scripts."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d60d070f47611a3cccc99b94b4eb8d93287d5a9bf9418d97c14481054fa70b1c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zouwj16.dsh.bg.theme": {
+      "name": {
+        "zh": "界面底色（暖色）",
+        "en": "Interface Palette (Warm)"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "以 Claude 桌面端深色主题的实测值重绘一套暖色表面：画布、抬升层、侧栏及其三态、卡片与选择器、输入框、用户气泡、代码块、滚动条与文字阶梯都换成暖灰 / 暖白，浅色与深色各一套并跟随「浅色 / 深色 / 跟随系统」自动切换；只改颜色 token，不动布局、字号与字体族。另附可选的 Windows 原生窗口底色补丁（等长改写 app.asar，带 --verify / --revert），消除呼出时的白闪。",
+        "en": "Repaints the interface with warm surfaces measured off Claude's desktop dark theme: canvas, raised layers, the side column and its three states, cards and selectors, composer, user bubbles, code blocks, scrollbars and the text ramp all shift to warm greys and off-whites, with a light and a dark variant that follow the Light / Dark / System setting. It only changes colour tokens — no layout, font size or family — and ships an optional Windows native-window backdrop patch (equal-length app.asar rewrite with --verify / --revert) that removes the white flash on summon."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a1855ea78b6349f9e4c8d4f1d384d0e619c7326f2e02bc474dfae64548b0e184",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
     }
   }
 }

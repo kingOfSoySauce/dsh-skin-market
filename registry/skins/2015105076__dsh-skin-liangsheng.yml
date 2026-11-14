@@ -1,0 +1,56 @@
+id: 2015105076.dsh.skin.liangsheng
+name:
+  zh: 梁圣皮肤
+  en: Sage Liang Skin
+author: "2015105076"
+description: 玄墨鎏金配色：亮色是暖宣纸底 + 古金强调，暗色是玄墨底 + 鎏金强调，跟随明暗切换；空白会话在问候语上方显示梁圣半身立绘（左实右虚渐变遮罩），输入框工具行里按当前模型档位铺点的推理滑杆可拖拽，立绘会随档位变壮、光环变亮，另有 9 秒轮换的中英圣言飘带与右下角淡金印章水印。
+repo: https://github.com/2015105076/dsh-skin-liangsheng
+package: dsh-skin-liangsheng
+rowId: liangsheng-skin
+category: skin
+tags:
+  - ink-gold
+  - portrait
+  - reasoning-rail
+  - fan-art
+modes:
+  - light
+  - dark
+install:
+  target: github:2015105076/dsh-skin-liangsheng#0bde75a0f37c9196c8fdc5763251d07e3bed05b5
+  version: 1.2.0
+  commit: 0bde75a0f37c9196c8fdc5763251d07e3bed05b5
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/2015105076/dsh-skin-liangsheng/0bde75a0f37c9196c8fdc5763251d07e3bed05b5/docs/screenshots/01-composer-max.png
+  - https://raw.githubusercontent.com/2015105076/dsh-skin-liangsheng/0bde75a0f37c9196c8fdc5763251d07e3bed05b5/docs/screenshots/02-sage-line-a.png
+  - https://raw.githubusercontent.com/2015105076/dsh-skin-liangsheng/0bde75a0f37c9196c8fdc5763251d07e3bed05b5/docs/screenshots/03-sage-line-b.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1203
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/2015105076/dsh-skin-liangsheng/0bde75a0f37c9196c8fdc5763251d07e3bed05b5/docs/screenshots/01-composer-max.png

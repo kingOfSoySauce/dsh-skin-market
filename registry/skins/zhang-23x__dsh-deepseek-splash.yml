@@ -1,0 +1,55 @@
+id: zhang.23x.dsh.deepseek.splash
+name:
+  zh: DeepSeek 鲸鱼片头
+  en: DeepSeek Whale Splash
+author: zhang-23x
+description: 同一段 DeepSeek 鲸鱼片头（描边自绘 → 三颗信号点点亮 → 填充与扫光成形 → DeepSeek 字标落款）接到桌面版自带的启动画面上：双击图标窗口一出现就播，播完鲸鱼保持点亮、信号点继续脉动当加载指示，桌面更新覆盖启动页后会自动装回（原页留备份）；也可以开启约 2.8 秒的界面全屏浮层，默认静音、可点击或按键跳过。
+repo: https://github.com/zhang-23x/dsh-deepseek-splash
+package: dsh-deepseek-splash
+rowId: deepseek-splash
+category: splash
+tags:
+  - whale
+  - line-draw
+  - launch-screen
+  - wordmark
+modes:
+  - light
+  - dark
+install:
+  target: github:zhang-23x/dsh-deepseek-splash#8c9343eff1b4faf018d194c8d8c4bf6276820c11
+  version: 1.1.0
+  commit: 8c9343eff1b4faf018d194c8d8c4bf6276820c11
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/draw.png
+  - https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/overlay-dark.png
+  - https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/launch-light.png
+  - https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/launch-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1284
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/draw.png

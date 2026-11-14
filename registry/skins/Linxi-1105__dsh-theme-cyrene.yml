@@ -1,0 +1,52 @@
+id: linxi.1105.dsh.theme.cyrene
+name:
+  zh: 昔涟印象
+  en: Cyrene Impression
+author: Linxi-1105
+description: 月白、潮汐、夜阑三套配色各配明暗两种气氛：侧栏品牌位、1–5 秒启动动画与对话线稿水印都可开关，颜色只叠在已有设计 token 上，关掉即回原样。
+repo: https://github.com/Linxi-1105/dsh-theme-cyrene
+package: dsh-theme-cyrene
+rowId: theme-cyrene
+category: skin
+tags:
+  - cyrene
+  - palettes
+  - brand-slot
+  - boot-animation
+modes:
+  - light
+  - dark
+install:
+  target: github:Linxi-1105/dsh-theme-cyrene#7efdb148853d6f9d7f00e4d6abdc21f97bb86981
+  version: 0.37.0
+  commit: 7efdb148853d6f9d7f00e4d6abdc21f97bb86981
+compatibility:
+  dsh: ">=0.2.1-rc.5"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Linxi-1105/dsh-theme-cyrene/7efdb148853d6f9d7f00e4d6abdc21f97bb86981/docs/screenshots/banner.jpg
+  - https://raw.githubusercontent.com/Linxi-1105/dsh-theme-cyrene/7efdb148853d6f9d7f00e4d6abdc21f97bb86981/docs/screenshots/interface.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1238
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/Linxi-1105/dsh-theme-cyrene/7efdb148853d6f9d7f00e4d6abdc21f97bb86981/docs/screenshots/banner.jpg

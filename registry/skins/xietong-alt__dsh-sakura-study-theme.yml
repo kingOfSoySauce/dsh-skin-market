@@ -1,0 +1,51 @@
+id: xietong.alt.dsh.sakura.study.theme
+name:
+  zh: 樱花夜读
+  en: Sakura Study
+author: xietong-alt
+description: 点界面右下角「更换背景」就能换成本地图片、动图（JPEG / PNG / APNG / GIF / WebP）或不超过 4 秒的静音循环视频，配深色半透明侧栏与磨砂输入框；选择只保存在本机 IndexedDB，可一键恢复随包插画，窗口隐藏时暂停视频、系统减少动态效果时按静止帧显示。
+repo: https://github.com/xietong-alt/dsh-sakura-study-theme
+package: dsh-sakura-study-theme
+rowId: sakura-study-theme
+category: skin
+tags:
+  - wallpaper
+  - animated-background
+  - video-background
+  - glass
+modes:
+  - dark
+install:
+  target: github:xietong-alt/dsh-sakura-study-theme#f06eef727234f7d4cbf8302ef90359616913fcff
+  version: 1.2.0
+  commit: f06eef727234f7d4cbf8302ef90359616913fcff
+compatibility:
+  dsh: 0.2.1-rc.3
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xietong-alt/dsh-sakura-study-theme/f06eef727234f7d4cbf8302ef90359616913fcff/assets/preview-redacted.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1279
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+starsUpdatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T07:57:16.245Z
+listScreenshot: https://raw.githubusercontent.com/xietong-alt/dsh-sakura-study-theme/f06eef727234f7d4cbf8302ef90359616913fcff/assets/preview-redacted.png

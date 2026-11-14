@@ -1,0 +1,52 @@
+id: luodaoyi.dsh.cabinet.mode
+name:
+  zh: 内阁模式
+  en: Cabinet Mode
+author: luodaoyi
+description: 新建会话时选「内阁模式」：首辅统摄翰林院编修、工部尚书、大理寺卿、左都御史四位阁臣，默认先调研不改码；右栏「内阁」面板用五张官职头像、状态点和依赖连线显示谁在干活，并给出成员 token 与耗时快照。
+repo: https://github.com/luodaoyi/dsh-cabinet-mode
+package: dsh-cabinet-mode
+rowId: cabinet-ui
+category: skin
+tags:
+  - agent-preset
+  - team
+  - sidebar
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:luodaoyi/dsh-cabinet-mode#868fb1b32bb32ee500070139d4c9dfb3766c8f23
+  version: 0.8.0
+  commit: 868fb1b32bb32ee500070139d4c9dfb3766c8f23
+compatibility:
+  dsh: 0.2.2-rc.1 || 0.2.1-rc.3 || 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/luodaoyi/dsh-cabinet-mode/868fb1b32bb32ee500070139d4c9dfb3766c8f23/docs/images/cabinet-runtime-light.png
+  - https://raw.githubusercontent.com/luodaoyi/dsh-cabinet-mode/868fb1b32bb32ee500070139d4c9dfb3766c8f23/docs/images/cabinet-runtime-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1239
+starsSnapshot: 35
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/luodaoyi/dsh-cabinet-mode/868fb1b32bb32ee500070139d4c9dfb3766c8f23/docs/images/cabinet-runtime-light.png

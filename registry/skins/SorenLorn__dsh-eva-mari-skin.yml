@@ -1,0 +1,54 @@
+id: sorenlorn.dsh.eva.mari.skin
+name:
+  zh: 真希波 · EVA 装甲 HUD
+  en: Mari · EVA Armor HUD
+author: SorenLorn
+description: 真希波配色的 EVA 装甲 HUD：粉白玻璃面板、霓虹描边、网格扫描线与 CRT 噪点叠在整页壁纸上，空白会话挂出 HUD 横幅与「MARI'S MESSAGE」卡片，开机时播放一段视频再分层入场；浅色 / 深色双档、?noskin=1 临时关皮肤、?noboot=1 或系统减少动态时跳过动画。
+repo: https://github.com/SorenLorn/dsh-eva-mari-skin
+package: dsh-mari-skin
+rowId: mari-skin
+category: skin
+tags:
+  - evangelion
+  - hud
+  - glass
+  - scanlines
+  - boot-animation
+modes:
+  - light
+  - dark
+install:
+  target: github:SorenLorn/dsh-eva-mari-skin#e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d
+  version: 1.2.2
+  commit: e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/SorenLorn/dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/assets/bg.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1261
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/SorenLorn/dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/assets/bg.jpg

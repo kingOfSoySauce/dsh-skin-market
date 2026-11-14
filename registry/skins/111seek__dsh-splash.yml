@@ -1,0 +1,55 @@
+id: 111seek.dsh.splash
+name:
+  zh: 反应堆启动动画
+  en: Arc Reactor Splash
+author: 111seek
+description: 约 9.2 秒的启动动画：反应堆三次能量跳变后核心点燃，外圈 / 内圈加速旋转、HUD 环与左右两栏面板滑出，数据队列滚动、频谱跳动，`DEEPSEEK HARNESS` 由乱码逐字解码、进度条走满，最后白光一闪进主界面；内置一段 5 秒问候语音（base64 内嵌，可换），Esc 或点击即可跳过。整包约 110KB，一个内联 SVG + 纯 CSS 关键帧，运行时无图片、无字体、无依赖、不联网；`prefers-reduced-motion` 下直接给静止的已启动画面。
+repo: https://github.com/111seek/dsh-splash
+package: dsh-splash
+rowId: splash
+category: splash
+tags:
+  - reactor
+  - hud
+  - voice
+  - css-only
+  - boot
+modes:
+  - light
+  - dark
+install:
+  target: github:111seek/dsh-splash#5a87c8163cb4f906211e8c4d1088a83721b48209
+  version: 1.0.0
+  commit: 5a87c8163cb4f906211e8c4d1088a83721b48209
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/111seek/dsh-splash/5a87c8163cb4f906211e8c4d1088a83721b48209/docs/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1202
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/111seek/dsh-splash/5a87c8163cb4f906211e8c4d1088a83721b48209/docs/preview.png

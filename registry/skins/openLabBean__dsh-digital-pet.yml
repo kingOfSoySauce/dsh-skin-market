@@ -1,0 +1,57 @@
+id: openlabbean.dsh.digital.pet
+name:
+  zh: DSH 电子宠物
+  en: DSH Digital Pet
+author: openLabBean
+description: 9 种宠物 × 6 个成长阶段共 54 套逐帧动作：鼠标悬停时才眨眼招手，点一下飘爱心，可拖动、调大小或隐藏；用平时对话产生的有效 Token 换金币照料喂饭、洗澡、遛弯和收拾小窝，每只宠物有六个自然月生命周期，结束后进纪念册。默认每 100 万 Token 兑 1 金币、每日上限 100。
+repo: https://github.com/openLabBean/dsh-digital-pet
+package: "@local/dsh-digital-pet"
+rowId: digital-pet
+category: pet
+tags:
+  - pixel-art
+  - life-sim
+  - token-economy
+  - growth
+  - bilingual
+modes:
+  - light
+  - dark
+install:
+  target: github:openLabBean/dsh-digital-pet#fc0a7db04011dcfe60552b8996be97fbe20f4462
+  version: 0.1.0
+  commit: fc0a7db04011dcfe60552b8996be97fbe20f4462
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/hello-pets.gif
+  - https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/meet-the-pets.png
+  - https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/little-rituals.png
+  - https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/growing-together.png
+  - https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/hero.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1250
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/hello-pets.gif

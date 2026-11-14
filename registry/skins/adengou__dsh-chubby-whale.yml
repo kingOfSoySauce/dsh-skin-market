@@ -1,0 +1,54 @@
+id: adengou.dsh.chubby.whale
+name:
+  zh: 肥鲸
+  en: Chubby Whale
+author: adengou
+description: 常驻页面右下角的蓝发鲸鱼娘：可拖拽带惯性并记住位置、会眨眼，点了能聊（人设固定、中英双语、长期记忆摘要），还能喂食、成长与亲密度；自带 9 种音色的语音合成与语音聊天、17 本古籍说书、737 首诗、261 个典故、834 条成语、696 个民间故事与 51 副对联，11 首曲子用 Web Audio 合成，并附一个手机简版页面。聊天需自备 DeepSeek Key，没有 Key 时离线部分照常可用。
+repo: https://github.com/adengou/dsh-chubby-whale
+package: dsh-chubby-whale
+rowId: chubby-whale
+category: pet
+tags:
+  - whale-girl
+  - chat
+  - tts
+  - culture
+  - mobile
+modes:
+  - light
+  - dark
+install:
+  target: github:adengou/dsh-chubby-whale#0a1cde4368be5ee447e9aa4d6bc0d1a1dfb26ecc
+  version: 1.3.8
+  commit: 0a1cde4368be5ee447e9aa4d6bc0d1a1dfb26ecc
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/adengou/dsh-chubby-whale/0a1cde4368be5ee447e9aa4d6bc0d1a1dfb26ecc/docs/screenshots/mobile-chat.png
+  - https://raw.githubusercontent.com/adengou/dsh-chubby-whale/0a1cde4368be5ee447e9aa4d6bc0d1a1dfb26ecc/docs/screenshots/mobile-culture.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1210
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/adengou/dsh-chubby-whale/0a1cde4368be5ee447e9aa4d6bc0d1a1dfb26ecc/docs/screenshots/mobile-chat.png

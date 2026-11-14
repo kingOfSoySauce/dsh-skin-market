@@ -1,0 +1,58 @@
+id: omdsh.dev.dsh.ui.whale
+name:
+  zh: 标题栏像素鲸
+  en: Title-Bar Pixel Whale
+author: omdsh-dev
+description: 住在会话标题栏右侧的像素鲸鱼：平时眨眼、摆动尾巴和胸鳍，思考运行时持续游动，回合完成从头顶喷水，点一下冒爱心，连续闲置 10 秒后睡着；动作全部跟随会话快照，不修改任何核心代码。
+repo: https://github.com/omdsh-dev/dsh-ui-whale
+package: "@dsh-external/dsh-ui-whale"
+rowId: dsh-ui-whale
+category: pet
+tags:
+  - pixel-art
+  - title-bar
+  - idle-animation
+  - status
+modes:
+  - light
+  - dark
+install:
+  target: github:omdsh-dev/dsh-ui-whale#4fbb196304201b8919bc8e3085f07ea825c1c457
+  version: 0.3.36
+  commit: 4fbb196304201b8919bc8e3085f07ea825c1c457
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/dsh-ui-whale-demo.gif
+  - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/眨眼.gif
+  - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/摆尾巴.gif
+  - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E7%9C%A8%E7%9C%BC.gif
+  - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E6%91%86%E5%B0%BE%E5%B7%B4.gif
+  - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E6%91%86%E8%85%B9%E9%B3%8D.gif
+  - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E5%96%B7%E6%B0%B4%E8%8A%B1.gif
+  - https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/%E5%86%92%E7%88%B1%E5%BF%83.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1249
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/4fbb196304201b8919bc8e3085f07ea825c1c457/docs/dsh-ui-whale-demo.gif

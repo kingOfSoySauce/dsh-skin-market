@@ -1,0 +1,52 @@
+id: qifanai.dsh.startup.elisa
+name:
+  zh: ELISA 启动动画
+  en: ELISA Startup
+author: QIFANAI
+description: 7.2 秒冷启动序列（默认 80% 速度、实际约 9 秒）：黑幕开幕 → HUD 逐项锁定 PROFILE / MODEL / BUNDLES / SANDBOX / SESSIONS → 粒子光扫 → 幕布合拢成绯红光缝 → 主界面通电显影，配程序化合成的 7.8 秒音轨与 1.35 秒提示音；另有 off / accent / full / glass 四档皮肤，默认 glass 含 11 层呼吸背景、aurora / deepsea / violet 三套主题和输入框整圈流动光边框。公开仓库不含第三方人物素材，缺失时按降级链继续。
+repo: https://github.com/QIFANAI/dsh-startup-elisa
+package: dsh-startup-elisa
+rowId: dsh-startup-elisa
+category: splash
+tags:
+  - cold-start
+  - hud
+  - procedural-audio
+  - glass
+  - skin-tiers
+modes:
+  - dark
+install:
+  target: github:QIFANAI/dsh-startup-elisa#cc3c7e4f51dc62f70f1b0c5c51731719197cb51f
+  version: 0.6.0
+  commit: cc3c7e4f51dc62f70f1b0c5c51731719197cb51f
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/QIFANAI/dsh-startup-elisa/cc3c7e4f51dc62f70f1b0c5c51731719197cb51f/docs/screenshots/glass-empty-g100.png
+  - https://raw.githubusercontent.com/QIFANAI/dsh-startup-elisa/cc3c7e4f51dc62f70f1b0c5c51731719197cb51f/docs/screenshots/composer-flow.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1256
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/QIFANAI/dsh-startup-elisa/cc3c7e4f51dc62f70f1b0c5c51731719197cb51f/docs/screenshots/glass-empty-g100.png

@@ -1,0 +1,55 @@
+id: raindmore.dsh.lulu.butler.theme
+name:
+  zh: 噜噜 · 小管家
+  en: Lulu · Little Butler
+author: Raindmore
+description: 奶油日间与可可夜间两套配色的暖色主题，附带小管家、小侦探、晚安噜噜三套装扮可切换；外观跟随浅色 / 深色 / 系统设置，装扮与动效开关保存在当前客户端，并支持系统的减少动态效果。
+repo: https://github.com/Raindmore/dsh-lulu-butler-theme
+package: dsh-lulu-butler-theme
+rowId: lulu-butler-theme
+category: skin
+tags:
+  - warm
+  - outfits
+  - light-dark
+  - character
+modes:
+  - light
+  - dark
+install:
+  target: github:Raindmore/dsh-lulu-butler-theme#f1cb06c12d544179524f6dd2902825e3aa7d0e8d
+  version: 1.0.0
+  commit: f1cb06c12d544179524f6dd2902825e3aa7d0e8d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Raindmore/dsh-lulu-butler-theme/f1cb06c12d544179524f6dd2902825e3aa7d0e8d/docs/preview-light.png
+  - https://raw.githubusercontent.com/Raindmore/dsh-lulu-butler-theme/f1cb06c12d544179524f6dd2902825e3aa7d0e8d/docs/preview-dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1257
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/Raindmore/dsh-lulu-butler-theme/f1cb06c12d544179524f6dd2902825e3aa7d0e8d/docs/preview-light.png

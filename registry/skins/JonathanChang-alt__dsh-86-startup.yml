@@ -1,0 +1,58 @@
+id: jonathanchang.alt.dsh.86.startup
+name:
+  zh: 86 启动动画
+  en: Eighty-Six Startup Animation
+author: JonathanChang-alt
+description: 冷启动先接管首屏：黑幕中的 86 锁标、过曝洗白、第 86 区战术底板、Para-RAID 接入序列到彼岸花终幕；默认短版约 19 秒（第 1/4/6 幕），长版约 37 秒六幕全播，含 6 句蕾娜配音。
+repo: https://github.com/JonathanChang-alt/dsh-86-startup
+package: dsh-86-startup
+rowId: dsh-86-startup
+category: splash
+tags:
+  - eighty-six
+  - cinematic
+  - voice
+  - skippable
+modes:
+  - light
+  - dark
+install:
+  target: github:JonathanChang-alt/dsh-86-startup#7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8
+  version: 1.0.0
+  commit: 7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/hero.jpg
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/short-access.jpg
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/01-lockup.jpg
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/02-access.jpg
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/03-identity.jpg
+  - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/04-link.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1236
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:55:24.352Z
+metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+starsUpdatedAt: 2026-11-14T07:55:24.352Z
+updatedAt: 2026-11-14T07:55:24.352Z
+listScreenshot: https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/hero.jpg

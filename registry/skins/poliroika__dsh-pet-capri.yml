@@ -1,0 +1,53 @@
+id: poliroika.dsh.pet.capri
+name:
+  zh: Capri 桌宠
+  en: Capri Pet
+author: poliroika
+description: 《赛博朋克：边缘行者 2》角色 Capri 的桌面宠物：从 agent/status、tools/*、approval/request 等事件合成闲置、工作、等待、复核、疲惫五种状态并走 SSE 推送；点她进入独立会话，回复流式进气泡并用 speechSynthesis 朗读（有俄语语音时用俄语），同时显示账户余额。
+repo: https://github.com/poliroika/dsh-pet-capri
+package: dsh-pet-capri
+rowId: pet-capri
+category: pet
+tags:
+  - cyberpunk
+  - voice
+  - agent-status
+  - chat
+modes:
+  - light
+  - dark
+install:
+  target: github:poliroika/dsh-pet-capri#bee6d0807588aa527b2fa88f797da21655db80ec
+  version: 0.7.2
+  commit: bee6d0807588aa527b2fa88f797da21655db80ec
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/poliroika/dsh-pet-capri/bee6d0807588aa527b2fa88f797da21655db80ec/docs/chat.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1253
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/poliroika/dsh-pet-capri/bee6d0807588aa527b2fa88f797da21655db80ec/docs/chat.png

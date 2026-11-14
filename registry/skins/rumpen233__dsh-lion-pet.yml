@@ -1,0 +1,53 @@
+id: rumpen233.dsh.lion.pet
+name:
+  zh: 刑小狮
+  en: Xing Xiaoshi
+author: rumpen233
+description: 校徽插画做成的刑小狮桌宠：待机呼吸、随机散步并自动切换正面与侧面朝向，摸头会弹跳、撒星星并说随机台词，拖动带惯性与边缘反弹；右键可点播动作、缩放、锁定与叫回，位置尺寸会记住，也能切到 Electron 透明置顶桌面窗或单独安装 Chrome / Edge 扩展。
+repo: https://github.com/rumpen233/dsh-lion-pet
+package: dsh-lion-pet
+rowId: lion-pet
+category: pet
+tags:
+  - mascot
+  - desktop-window
+  - browser-extension
+  - idle-animation
+modes:
+  - light
+  - dark
+install:
+  target: github:rumpen233/dsh-lion-pet#4dd7e2233e8b273609f1583f65711afc3787abcd
+  version: 1.2.0
+  commit: 4dd7e2233e8b273609f1583f65711afc3787abcd
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/rumpen233/dsh-lion-pet/4dd7e2233e8b273609f1583f65711afc3787abcd/docs/cover.webp
+  - https://raw.githubusercontent.com/rumpen233/dsh-lion-pet/4dd7e2233e8b273609f1583f65711afc3787abcd/docs/extension.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1259
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T07:56:31.671Z
+metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+starsUpdatedAt: 2026-11-14T07:56:31.671Z
+updatedAt: 2026-11-14T07:56:31.671Z
+listScreenshot: https://raw.githubusercontent.com/rumpen233/dsh-lion-pet/4dd7e2233e8b273609f1583f65711afc3787abcd/docs/cover.webp

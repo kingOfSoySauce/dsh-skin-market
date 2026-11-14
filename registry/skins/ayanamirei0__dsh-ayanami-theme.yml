@@ -1,0 +1,54 @@
+id: ayanamirei0.dsh.ayanami.theme
+name:
+  zh: 绫波丽主题
+  en: Ayanami Rei Theme
+author: ayanamirei0
+description: 整窗固定绫波丽壁纸，叠加 9 秒循环的「女神的微笑」视频与 500ms 停顿，再套一层半透明冰蓝令牌；只改配色与背景，布局、间距和控件尺寸保持官方默认。
+repo: https://github.com/ayanamirei0/dsh-ayanami-theme
+package: dsh-ayanami-theme
+rowId: dsh-ayanami-theme
+category: skin
+tags:
+  - ayanami-rei
+  - wallpaper
+  - video
+  - ice-blue
+modes:
+  - light
+  - dark
+install:
+  target: github:ayanamirei0/dsh-ayanami-theme#6ac46a6595df9fa4605711f34264f618ef9dd66d
+  version: 0.0.5
+  commit: 6ac46a6595df9fa4605711f34264f618ef9dd66d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ayanamirei0/dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1213
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-14T07:53:29.580Z
+metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+starsUpdatedAt: 2026-11-14T07:53:29.580Z
+updatedAt: 2026-11-14T07:53:29.580Z
+listScreenshot: https://raw.githubusercontent.com/ayanamirei0/dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/preview.png
