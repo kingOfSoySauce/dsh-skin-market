@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T00:27:34.104Z",
+  "generatedAt": "2026-11-14T06:29:46.204Z",
   "skins": [
     {
       "id": "1608kiy.dsh.external.dsh.music",
@@ -66649,6 +66649,2037 @@
           }
         ]
       }
+    },
+    {
+      "id": "au1314.dsh.style.hub",
+      "name": {
+        "zh": "风格工坊",
+        "en": "Style Hub"
+      },
+      "author": "Au1314",
+      "description": "「插件 → Style Hub」卡片里挑配色：Nord、Dracula、Mocha、Tokyo Night 等 8 套预设，或选 Stock 保持不变；可调强调色与面板不透明度，能上传自己的壁纸（最大 15MB），分别设置铺法、不透明度、模糊和暗化，关闭总开关恢复原样。",
+      "repo": "https://github.com/Au1314/dsh-style-hub",
+      "package": "dsh-style-hub",
+      "rowId": "dsh-style-hub",
+      "category": "skin",
+      "tags": [
+        "presets",
+        "wallpaper",
+        "accent",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Au1314/dsh-style-hub#1136d18cb2b06552af8be74d72affe51282b3e86",
+        "version": "0.1.0",
+        "commit": "1136d18cb2b06552af8be74d72affe51282b3e86"
+      },
+      "compatibility": {
+        "dsh": ">=0.1.5-rc.2 <0.2.0",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-card.png",
+        "https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-settings.png",
+        "https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-wallpaper.png"
+      ],
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "manual-only"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "pass",
+          "installation": "improve",
+          "installCommand": "improve",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。",
+          "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1176,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-card.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/699ad456fe078273e1ee03f20a27dcf5.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/699ad456fe078273e1ee03f20a27dcf5.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/699ad456fe078273e1ee03f20a27dcf5.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/699ad456fe078273e1ee03f20a27dcf5.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ef66421bda446dbc1acdac2d668b6798.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ef66421bda446dbc1acdac2d668b6798.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/40aeaf1d06983a09d5a7a6f5471eaa56.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/40aeaf1d06983a09d5a7a6f5471eaa56.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "angel2518975237.deepseek.harness.hello.kitty.suite",
+      "name": {
+        "zh": "Hello Kitty 甜心工作台",
+        "en": "Hello Kitty Sweetheart Workspace"
+      },
+      "author": "Angel2518975237",
+      "description": "把工作台换成粉色 Hello Kitty 主题：浅色版用奶油白、贝壳粉和玫瑰粉，深色版用深莓果色；会话头换字标，输入框加蝴蝶结和兔子杯，侧栏放坐姿 Kitty，对话区铺菱格、爱心和星星纹样。附带提醒插件：一轮对话结束或模型以提问收尾时弹卡片提醒，页面切走则发系统通知。",
+      "repo": "https://github.com/Angel2518975237/deepseek-harness-hello-kitty-suite",
+      "package": "deepseek-harness-hello-kitty-suite",
+      "rowId": "hello-kitty-notifier",
+      "category": "skin",
+      "tags": [
+        "hello-kitty",
+        "pink",
+        "cute",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Angel2518975237/deepseek-harness-hello-kitty-suite#1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818",
+        "version": "1.0.1",
+        "commit": "1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Angel2518975237/deepseek-harness-hello-kitty-suite/1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818/docs/screenshots/preview.png",
+        "https://raw.githubusercontent.com/Angel2518975237/deepseek-harness-hello-kitty-suite/1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818/docs/screenshots/preview-toast.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1177,
+      "starsSnapshot": 21,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/Angel2518975237/deepseek-harness-hello-kitty-suite/1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818/docs/screenshots/preview.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d8959eefa04272a4f74a6cda1dd8c853.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d8959eefa04272a4f74a6cda1dd8c853.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d8959eefa04272a4f74a6cda1dd8c853.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d8959eefa04272a4f74a6cda1dd8c853.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/42e2b0f52e81321e1ce2e0739df35519.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/42e2b0f52e81321e1ce2e0739df35519.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "azumaki.art.dsh.skin.qwen",
+      "name": {
+        "zh": "千问花语",
+        "en": "QWEN Blossom"
+      },
+      "author": "azumaki-art",
+      "description": "浅色是宣纸淡蓝配花枝与汉服人物，深色换成月夜亭台与靛蓝金灯；切换明暗时两幅画作自动交叉淡化，面板覆一层半透明宣纸或夜帷，输入卡与弹窗四角带回纹角花和靛金双线边框。",
+      "repo": "https://github.com/azumaki-art/dsh-skin-QWEN",
+      "package": "@dsh-external/dsh-client-ui-skin-qwen-blossom",
+      "rowId": "ui-skin-qwen-blossom",
+      "category": "skin",
+      "tags": [
+        "chinese-style",
+        "illustrated",
+        "dual-theme",
+        "xuan-paper"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:azumaki-art/dsh-skin-QWEN#c83688b8fdb69261d93f490667a78c685f410d0d",
+        "version": "0.1.0",
+        "commit": "c83688b8fdb69261d93f490667a78c685f410d0d"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/azumaki-art/dsh-skin-QWEN/c83688b8fdb69261d93f490667a78c685f410d0d/preview/preview-light.png",
+        "https://raw.githubusercontent.com/azumaki-art/dsh-skin-QWEN/c83688b8fdb69261d93f490667a78c685f410d0d/preview/preview-dark.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1178,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/azumaki-art/dsh-skin-QWEN/c83688b8fdb69261d93f490667a78c685f410d0d/preview/preview-light.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2d52300e3e2ee69a3c76f65bbde58c23.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2d52300e3e2ee69a3c76f65bbde58c23.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2d52300e3e2ee69a3c76f65bbde58c23.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2d52300e3e2ee69a3c76f65bbde58c23.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1e942ef025d60e4e4874381241f5f7bf.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1e942ef025d60e4e4874381241f5f7bf.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bauerelizabeth07139.mdsm",
+      "name": {
+        "zh": "MDSM 吉祥物",
+        "en": "MDSM Mascot Layer"
+      },
+      "author": "bauerelizabeth07139",
+      "description": "把随包附带的 16:9 角色画铺成不可点击的整页背景，在 MDSM 设置页里调界面不透明度（25–100%）、壁纸模糊（0–24px）、遮罩浓度（0–90%，深色主题用黑、浅色用白）和壁纸位置。侧栏与会话首屏的标志可换成同一张方形头像，浏览器标签页图标也跟着换，保存后即时生效。",
+      "repo": "https://github.com/bauerelizabeth07139/MDSM",
+      "package": "MDSM",
+      "rowId": "MDSM",
+      "category": "skin",
+      "tags": [
+        "mascot",
+        "wallpaper",
+        "brand",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:bauerelizabeth07139/MDSM#6393d2540d8c4937b5870ce7bdf1711526053c0f",
+        "version": "0.2.0",
+        "commit": "6393d2540d8c4937b5870ce7bdf1711526053c0f"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM-wallpaper.jpg",
+        "https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM.jpg",
+        "https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM-mark.jpg"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1179,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM-wallpaper.jpg",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/aa64553f45fbac51ae92e0ee5598336c.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/aa64553f45fbac51ae92e0ee5598336c.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/aa64553f45fbac51ae92e0ee5598336c.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/aa64553f45fbac51ae92e0ee5598336c.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/90343e1ddef53cfb59667267e9dbb564.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/90343e1ddef53cfb59667267e9dbb564.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/49bb9e80fe2ac055cd26b4731b41c0b7.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/49bb9e80fe2ac055cd26b4731b41c0b7.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "erha2777.dsh.azure.maid.skin",
+      "name": {
+        "zh": "蓝瓷女仆",
+        "en": "Azure Maid"
+      },
+      "author": "erha2777",
+      "description": "深蓝发色做品牌与按钮，冷白蕾丝做正文与画布，青宝石色给链接和强调；90 个语义色各分亮暗两档，设置页可切亮色、暗色或跟随系统，跟随系统时随系统深浅实时换档。",
+      "repo": "https://github.com/erha2777/dsh-azure-maid-skin",
+      "package": "dsh-azure-maid-skin",
+      "rowId": "dsh-azure-maid-skin",
+      "category": "skin",
+      "tags": [
+        "blue",
+        "dual-theme",
+        "follow-system",
+        "minimal"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:erha2777/dsh-azure-maid-skin#f45e9e0768e46e627c23217fb92ae1a0bf1b4914",
+        "version": "1.0.0",
+        "commit": "f45e9e0768e46e627c23217fb92ae1a0bf1b4914"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/erha2777/dsh-azure-maid-skin/f45e9e0768e46e627c23217fb92ae1a0bf1b4914/preview/light1.png",
+        "https://raw.githubusercontent.com/erha2777/dsh-azure-maid-skin/f45e9e0768e46e627c23217fb92ae1a0bf1b4914/preview/dark1.png",
+        "https://raw.githubusercontent.com/erha2777/dsh-azure-maid-skin/f45e9e0768e46e627c23217fb92ae1a0bf1b4914/preview/light2.png",
+        "https://raw.githubusercontent.com/erha2777/dsh-azure-maid-skin/f45e9e0768e46e627c23217fb92ae1a0bf1b4914/preview/dark2.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1180,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/erha2777/dsh-azure-maid-skin/f45e9e0768e46e627c23217fb92ae1a0bf1b4914/preview/light1.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f2239f6c50cd97be8f6ecc98d3f712be.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f2239f6c50cd97be8f6ecc98d3f712be.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f2239f6c50cd97be8f6ecc98d3f712be.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f2239f6c50cd97be8f6ecc98d3f712be.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/92aefcd187cee793361d1c5bcbc560cb.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/92aefcd187cee793361d1c5bcbc560cb.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/cdb76b23ca8d5e6889f1d61ca982f76e.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/cdb76b23ca8d5e6889f1d61ca982f76e.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/752c3a17e60df806a608b87c3ff0fddc.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/752c3a17e60df806a608b87c3ff0fddc.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fishfromsky.dsh.march7th.skin",
+      "name": {
+        "zh": "三月七主题",
+        "en": "March 7th Theme"
+      },
+      "author": "fishfromsky",
+      "description": "把界面换成《崩坏：星穹铁道》三月七的蓝粉配色，明暗两套主题一起覆盖。对话背景、侧栏、设置页头、输入卡片与两侧角色立绘都换成随包素材，并重设对话滚动容器，输入框不再遮住正在阅读的消息；停用后挂载的样式与属性全部还原。",
+      "repo": "https://github.com/fishfromsky/dsh-march7th-skin",
+      "package": "dsh-march7th-skin",
+      "rowId": "march7th-skin",
+      "category": "skin",
+      "tags": [
+        "honkai",
+        "march7th",
+        "blue-pink",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:fishfromsky/dsh-march7th-skin#534b05b6388b745113f955c3efe017b7aad84682",
+        "version": "0.3.0",
+        "commit": "534b05b6388b745113f955c3efe017b7aad84682"
+      },
+      "compatibility": {
+        "dsh": "^0.0.1-rc.1",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/main.png",
+        "https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/dialog.png",
+        "https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/settings.png"
+      ],
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "healthy",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "pass",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": []
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1181,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/main.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/fa15ed540143a1bd70689e48053f7190.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/fa15ed540143a1bd70689e48053f7190.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/fa15ed540143a1bd70689e48053f7190.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/fa15ed540143a1bd70689e48053f7190.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2be55cb15a3c979ac20115a7c1957bcb.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/2be55cb15a3c979ac20115a7c1957bcb.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/37ce2615d1372ea49f0f600bc4d184b0.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/37ce2615d1372ea49f0f600bc4d184b0.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gh.gongjin.dsh.plugin.appearance",
+      "name": {
+        "zh": "桌面外观",
+        "en": "Desktop Appearance"
+      },
+      "author": "gh-gongjin",
+      "description": "在设置里加一个「桌面外观」面板：8 套配色（每套 28 个颜色令牌，明暗两档）加一个「不覆盖」，不点就什么都不改。侧栏图标、会话首屏图标和名称行可分别替换：内置六枚标志或上传图片（自动裁方压到 200KB 内），名称行还能用原字标、自定义文字或图片，另有一键全部还原。",
+      "repo": "https://github.com/gh-gongjin/dsh-plugin-appearance",
+      "package": "dsh-plugin-appearance",
+      "rowId": "appearance",
+      "category": "skin",
+      "tags": [
+        "palette",
+        "brand-mark",
+        "custom-image",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:gh-gongjin/dsh-plugin-appearance#8cd7d15110dbb674b797d3fd1ccfa5a25c0e3a38",
+        "version": "0.0.2",
+        "commit": "8cd7d15110dbb674b797d3fd1ccfa5a25c0e3a38"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/gh-gongjin/dsh-plugin-appearance/8cd7d15110dbb674b797d3fd1ccfa5a25c0e3a38/docs/screenshots/desktop-default-light.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1182,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/gh-gongjin/dsh-plugin-appearance/8cd7d15110dbb674b797d3fd1ccfa5a25c0e3a38/docs/screenshots/desktop-default-light.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/29e221a126989537dfe961ef6ff6d4c4.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/29e221a126989537dfe961ef6ff6d4c4.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/29e221a126989537dfe961ef6ff6d4c4.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/29e221a126989537dfe961ef6ff6d4c4.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phoenixlucky.dsh.theme",
+      "name": {
+        "zh": "WJ Dreamlight 主题",
+        "en": "WJ Dreamlight Themes"
+      },
+      "author": "phoenixlucky",
+      "description": "设置里新增「主题与壁纸」，列出 8 套壁纸主题：VIP 金辉、端午、清明、七夕、元宵、中秋、万圣夜和圣诞，点卡片先预览再应用。侧栏与对话区各有 0–100% 背景透明度滑块，VIP 主题另带金色点缀、玻璃表面和内置展示字体，也能自填名称、图片地址、强调色与明暗底添加自定义主题。",
+      "repo": "https://github.com/phoenixlucky/dsh-theme",
+      "package": "@tinyforge/dsh-theme",
+      "rowId": "dsh-theme",
+      "category": "skin",
+      "tags": [
+        "wallpaper",
+        "festival",
+        "vip",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:phoenixlucky/dsh-theme#e36ce4e4f48c05a08adf396c29818d56cde152d2",
+        "version": "1.1.0",
+        "commit": "e36ce4e4f48c05a08adf396c29818d56cde152d2"
+      },
+      "compatibility": {
+        "dsh": "0.2.1-rc.3",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dsh-theme-preview.webp",
+        "https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dsh-theme-gallery-preview.webp",
+        "https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/vip-dream.wallpaper.webp",
+        "https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dragon-boat-festival.wallpaper.webp",
+        "https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/qingming-festival.wallpaper.webp",
+        "https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/qixi-festival.wallpaper.webp"
+      ],
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "healthy",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "pass",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": []
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1183,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dsh-theme-preview.webp",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/78b914559fca89e1f87700910259842e.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/78b914559fca89e1f87700910259842e.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/78b914559fca89e1f87700910259842e.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/78b914559fca89e1f87700910259842e.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a20fae5cfe3c635b8d7857de84b375fa.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a20fae5cfe3c635b8d7857de84b375fa.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1d11dc0d8300ec9917f364b811bb34b8.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/1d11dc0d8300ec9917f364b811bb34b8.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6bde223b8a0b8da31a9e3b9de611b5e4.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6bde223b8a0b8da31a9e3b9de611b5e4.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/950555c57d9318e9057bfbea9e6ad91d.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/950555c57d9318e9057bfbea9e6ad91d.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/afbce1e745c0ade9182f03b0b1d48a5e.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/afbce1e745c0ade9182f03b0b1d48a5e.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ury479.dsh.wukong.zenfire",
+      "name": {
+        "zh": "悟空 · 炼心之境",
+        "en": "Wukong Zenfire"
+      },
+      "author": "Ury479",
+      "description": "赤焰、鎏金与灵台青光三色构成：左侧导航与右侧文件、终端、浏览器面板统一为深墨褐高对比表面，选中项用暖金底色与火焰侧线，细边框走赤金到青的过渡。",
+      "repo": "https://github.com/Ury479/dsh-wukong-zenfire",
+      "package": "@dsh-external/dsh-client-ui-skin-wukong-zenfire",
+      "rowId": "ui-skin-wukong-zenfire",
+      "category": "skin",
+      "tags": [
+        "anime",
+        "dark",
+        "gold",
+        "mythology"
+      ],
+      "modes": [
+        "dark"
+      ],
+      "install": {
+        "target": "github:Ury479/dsh-wukong-zenfire#f82e0c567ff3dfa15491369a209758334c772084",
+        "version": "0.1.1",
+        "commit": "f82e0c567ff3dfa15491369a209758334c772084"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Ury479/dsh-wukong-zenfire/f82e0c567ff3dfa15491369a209758334c772084/preview/dark.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "CC-BY-NC-SA-4.0",
+        "commercialUse": false
+      },
+      "featuredRank": 1184,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/Ury479/dsh-wukong-zenfire/f82e0c567ff3dfa15491369a209758334c772084/preview/dark.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a651384779622b3906ac2de34ed77955.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a651384779622b3906ac2de34ed77955.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a651384779622b3906ac2de34ed77955.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a651384779622b3906ac2de34ed77955.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wenyixiaoqingnian.ds.mobile.skin",
+      "name": {
+        "zh": "移动端 App 外观",
+        "en": "Mobile App Look"
+      },
+      "author": "wenyixiaoqingnian",
+      "description": "在手机视口（≤768px）把界面改成扁平、App 化的外观：品牌蓝 #4D6BFE、可拖动并自动贴边的 ☰ 悬浮菜单球（记住位置）、输入栏附件上传按钮、切换会话时自动收起键盘，菜单和弹层贴在触发按钮上方。所有改动只在窄屏生效，桌面端保持原样。",
+      "repo": "https://github.com/wenyixiaoqingnian/ds-mobile-skin",
+      "subpath": "plugin",
+      "package": "ds-mobile-skin",
+      "rowId": "deepseek-mobile",
+      "category": "skin",
+      "tags": [
+        "mobile",
+        "app",
+        "flat"
+      ],
+      "modes": [
+        "light"
+      ],
+      "install": {
+        "target": "github:wenyixiaoqingnian/ds-mobile-skin#ba2aa0a6d7f8f7a43747b63a1d4aa1ffa0d17f4c&path:/plugin",
+        "version": "1.0.0",
+        "commit": "ba2aa0a6d7f8f7a43747b63a1d4aa1ffa0d17f4c"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/wenyixiaoqingnian/ds-mobile-skin/ba2aa0a6d7f8f7a43747b63a1d4aa1ffa0d17f4c/docs/screenshot-mobile-home.png"
+      ],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1185,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/wenyixiaoqingnian/ds-mobile-skin/ba2aa0a6d7f8f7a43747b63a1d4aa1ffa0d17f4c/docs/screenshot-mobile-home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3b334c44738ff8819331e55031b92bf0.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3b334c44738ff8819331e55031b92bf0.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3b334c44738ff8819331e55031b92bf0.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3b334c44738ff8819331e55031b92bf0.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "xq.zheng.dsh.zhangxuefeng.skin",
+      "name": {
+        "zh": "张雪峰壁纸皮肤",
+        "en": "Zhang Xuefeng Wallpaper"
+      },
+      "author": "XQ-zheng",
+      "description": "一张 1920×1080 固定壁纸铺满界面，人物从半透明磨砂层里透出，面板走深色暖调、强调色取 AC 米兰红；在外观皮肤里一键选用，也能切回浅色、深色或跟随系统。",
+      "repo": "https://github.com/XQ-zheng/dsh-zhangxuefeng-skin",
+      "subpath": "plugins/dsh-zhangxuefeng-skin",
+      "package": "dsh-client-zhangxuefeng-skin",
+      "rowId": "zhangxuefeng-skin",
+      "category": "skin",
+      "tags": [
+        "wallpaper",
+        "character",
+        "dark",
+        "warm"
+      ],
+      "modes": [
+        "dark"
+      ],
+      "install": {
+        "target": "github:XQ-zheng/dsh-zhangxuefeng-skin#1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431&path:/plugins/dsh-zhangxuefeng-skin",
+        "version": "0.1.3",
+        "commit": "1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431"
+      },
+      "compatibility": {
+        "dsh": "0.1.0-rc.6",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/XQ-zheng/dsh-zhangxuefeng-skin/1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431/plugins/dsh-zhangxuefeng-skin/docs/preview.png"
+      ],
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "pass",
+          "compatibility": "pass",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "Apache-2.0",
+        "commercialUse": true
+      },
+      "featuredRank": 1186,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "starsUpdatedAt": "2026-11-14T06:29:10.128Z",
+      "updatedAt": "2026-11-14T06:29:10.128Z",
+      "listScreenshot": "https://raw.githubusercontent.com/XQ-zheng/dsh-zhangxuefeng-skin/1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431/plugins/dsh-zhangxuefeng-skin/docs/preview.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e556c07e2a4f2fa30fc5faafb10d82ff.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e556c07e2a4f2fa30fc5faafb10d82ff.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e556c07e2a4f2fa30fc5faafb10d82ff.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e556c07e2a4f2fa30fc5faafb10d82ff.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "age10.moyu.dsh.adiv.theme",
+      "name": {
+        "zh": "A\\ 主题",
+        "en": "A\\ Theme"
+      },
+      "author": "Age10-Moyu",
+      "description": "羊皮纸暖调主题：米白纸面、焦橙强调色、环形描边阴影，内容标题用衬线体、界面框架保持无衬线，明暗两套配色都不带冷蓝灰。安装即生效，没有设置项或开关，停用插件行即可关闭。",
+      "repo": "https://github.com/Age10-Moyu/dsh-adiv-theme",
+      "package": "dsh-adiv-theme",
+      "rowId": "dsh-adiv-theme",
+      "category": "skin",
+      "tags": [
+        "parchment",
+        "warm",
+        "serif",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Age10-Moyu/dsh-adiv-theme#d2035b79a5e43b3fbb0b2cd6814630a3e2f68221",
+        "version": "1.0.0",
+        "commit": "d2035b79a5e43b3fbb0b2cd6814630a3e2f68221"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1187,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ae94299743e093a2e5ff0874a84e450c.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ae94299743e093a2e5ff0874a84e450c.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ae94299743e093a2e5ff0874a84e450c.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ae94299743e093a2e5ff0874a84e450c.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d2f974f720dd7b67761d5c8f8c619a49.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/d2f974f720dd7b67761d5c8f8c619a49.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e49003fd2ca23f329370c79757c3ad8b.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e49003fd2ca23f329370c79757c3ad8b.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "columbla.dsh.columbina.theme.sn",
+      "name": {
+        "zh": "哥伦比娅主题 · 补丁版",
+        "en": "Columbina Theme — Patch Edition"
+      },
+      "author": "Columbla",
+      "description": "月隐银蓝的毛玻璃皮肤：背景图可上传并调模糊（0–40px）与清晰度，主视觉头像、欢迎页标题与正文都能在面板里改；另带可编辑的哥伦比娅人格、表情包与「主题主权」开关，开启后会停用同源的另一套哥伦比娅主题。",
+      "repo": "https://github.com/Columbla/dsh-columbina-theme-sn",
+      "package": "dsh-columbina-theme-sn",
+      "rowId": "ui-columbina-theme",
+      "category": "skin",
+      "tags": [
+        "columbina",
+        "glassmorphism",
+        "wallpaper",
+        "persona"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Columbla/dsh-columbina-theme-sn#7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea",
+        "version": "0.3.1",
+        "commit": "7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea"
+      },
+      "compatibility": {
+        "dsh": "0.2.1-rc.2",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "verified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "pass",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1188,
+      "starsSnapshot": 1,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8f4f4b2055a2a7b4517e2becded2497a.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8f4f4b2055a2a7b4517e2becded2497a.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8f4f4b2055a2a7b4517e2becded2497a.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/8f4f4b2055a2a7b4517e2becded2497a.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/fe2b602a1257effc12fa1ce93cc04611.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/fe2b602a1257effc12fa1ce93cc04611.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3a3d654f1bf82b41d8bc205d969eb76b.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3a3d654f1bf82b41d8bc205d969eb76b.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "intellecxplore.theme",
+      "name": {
+        "zh": "智域探金主题",
+        "en": "IntellecXplore Theme"
+      },
+      "author": "IntellecXplore",
+      "description": "智域探金品牌主题：深蓝 #000057 与电光蓝 #005cff 重绘 14 个语义色 token（明暗成对），配 Sora / Noto Sans SC / PingFang SC 字体栈；侧栏换成 IntellecXplore 字标与 HARNESS 徽标，运行文案改为「智域探金中」，鲸鱼尾巴、favicon 与 PWA 图标一并换成品牌 X 标。",
+      "repo": "https://github.com/IntellecXplore/IntellX-harness-plugins",
+      "subpath": "plugins/theme",
+      "package": "@intellecxplore/plugin-theme",
+      "rowId": "intellecxplore-plugin-theme",
+      "category": "skin",
+      "tags": [
+        "brand",
+        "wordmark",
+        "palette",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:IntellecXplore/IntellX-harness-plugins#072faaf8e2a004a81b9b78fd7fa49c188806e5c1&path:/plugins/theme",
+        "version": "1.1.3",
+        "commit": "072faaf8e2a004a81b9b78fd7fa49c188806e5c1"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1189,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/340bd31807b8362182fe37c6a6f8f249.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/340bd31807b8362182fe37c6a6f8f249.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/340bd31807b8362182fe37c6a6f8f249.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/340bd31807b8362182fe37c6a6f8f249.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/62bb697f98e771e365fa474d669ed9a8.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/62bb697f98e771e365fa474d669ed9a8.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ce98fed51a0ab7dcc6fcd8f5a27e9b12.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/ce98fed51a0ab7dcc6fcd8f5a27e9b12.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "huangyuanhu3.dev.dsh.chat.skin",
+      "name": {
+        "zh": "聊天外观工坊",
+        "en": "Chat Skin Studio"
+      },
+      "author": "huangyuanhu3-dev",
+      "description": "给聊天区换背景：8 套内置氛围，或自定义渐变、纯色、图片与本地壁纸；遮罩深浅、模糊、铺法可调，也能把壁纸铺到整个界面，让侧栏与设置页共用同一套毛玻璃。另有 CSS 动画、字体、emoji 头像与运行图标，设置页和右上角 🎨 快捷面板都能改，调整实时生效并保存在本机。",
+      "repo": "https://github.com/huangyuanhu3-dev/dsh-chat-skin",
+      "package": "dsh-chat-skin",
+      "rowId": "chat-skin",
+      "category": "skin",
+      "tags": [
+        "chat-background",
+        "glass",
+        "gradient",
+        "custom-css"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:huangyuanhu3-dev/dsh-chat-skin#d6bd2411af830513068f3b60e3f34bd8de37ee13",
+        "version": "1.0.0",
+        "commit": "d6bd2411af830513068f3b60e3f34bd8de37ee13"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "improve",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1190,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/huangyuanhu3-dev__dsh-chat-skin/d6bd2411af830513068f3b60e3f34bd8de37ee13/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/huangyuanhu3-dev__dsh-chat-skin/d6bd2411af830513068f3b60e3f34bd8de37ee13/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/huangyuanhu3-dev__dsh-chat-skin/d6bd2411af830513068f3b60e3f34bd8de37ee13/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/huangyuanhu3-dev__dsh-chat-skin/d6bd2411af830513068f3b60e3f34bd8de37ee13/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3f2027f8ae8c55809033a42cc979ed49.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3f2027f8ae8c55809033a42cc979ed49.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3f2027f8ae8c55809033a42cc979ed49.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/3f2027f8ae8c55809033a42cc979ed49.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5a8247bc225a6a856766403045f81561.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5a8247bc225a6a856766403045f81561.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c056591c8fec9f9efe0c93a313374fe0.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c056591c8fec9f9efe0c93a313374fe0.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "deepseek.club.dsh.skin.whalegirl",
+      "name": {
+        "zh": "小深·鲸鱼娘",
+        "en": "Xiaoshen Whale-girl"
+      },
+      "author": "deepseek-club",
+      "description": "换上一张 3D 鲸鱼跃过科技环的对话背景，右侧鲸鱼、左侧留白给文字，亮暗两套自动切换。界面用科技蓝 #3d8bfd、深海蓝与陶瓷白的覆盖层重上色，对话区左下角挂一张社区角色形象（深色模式下自动隐藏），侧栏加四角刻度，图标换成蓝色 ∞ 标志，素材全部内嵌、不依赖网络。",
+      "repo": "https://github.com/deepseek-club/dsh-skin-whalegirl",
+      "package": "@dsh-external/dsh-client-ui-skin-xiaoshen-whale-girl",
+      "rowId": "ui-skin-xiaoshen-whale-girl",
+      "category": "skin",
+      "tags": [
+        "whale",
+        "tech",
+        "character",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:deepseek-club/dsh-skin-whalegirl#0ff0afb9f960c77e1368c2ab03f425c1b9b6952d",
+        "version": "0.1.0",
+        "commit": "0ff0afb9f960c77e1368c2ab03f425c1b9b6952d"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "CC-BY-NC-SA-4.0",
+        "commercialUse": false
+      },
+      "featuredRank": 1191,
+      "starsSnapshot": 2,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0817618d21f4357390177e0eaec1d00d.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0817618d21f4357390177e0eaec1d00d.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0817618d21f4357390177e0eaec1d00d.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/0817618d21f4357390177e0eaec1d00d.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f4b65d25407c1c66a4fd4c8d68d6261e.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f4b65d25407c1c66a4fd4c8d68d6261e.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5c853180257fa9696d814467ac5347b0.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/5c853180257fa9696d814467ac5347b0.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tal.shin.glass.theme",
+      "name": {
+        "zh": "玻璃主题",
+        "en": "Glass Theme"
+      },
+      "author": "Tal-Shin",
+      "description": "整套外观打包：配色、玻璃材质、圆角与字体、动效四组可分别关掉；玻璃有清透 / 标准 / 沉稳三档，开启折射透镜后输入框、顶栏控件与菜单变成液态玻璃，聚焦时边缘亮起一道细光，按下有回弹。设置页会自检界面结构，指出与当前版本对不上的部分。",
+      "repo": "https://github.com/Tal-Shin/dsh-glass",
+      "subpath": "glass-theme",
+      "package": "@tal-shin/dsh-glass-theme",
+      "rowId": "glass-theme",
+      "category": "skin",
+      "tags": [
+        "glass",
+        "liquid-glass",
+        "minimal",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Tal-Shin/dsh-glass#d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d&path:/glass-theme",
+        "version": "1.1.0",
+        "commit": "d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "improve",
+          "topic": "pass"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1192,
+      "starsSnapshot": 5,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/dfec0090ca052f14ea1cca9646ffa018.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/dfec0090ca052f14ea1cca9646ffa018.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/dfec0090ca052f14ea1cca9646ffa018.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/dfec0090ca052f14ea1cca9646ffa018.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bf99b2f2315e04845af948cbd6981fd7.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/bf99b2f2315e04845af948cbd6981fd7.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4e0a53577fe59c660eb074751e5e9dcb.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4e0a53577fe59c660eb074751e5e9dcb.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "joxos.dsh.theme.gallery",
+      "name": {
+        "zh": "视觉风格库",
+        "en": "Style Gallery"
+      },
+      "author": "Joxos",
+      "description": "在左侧栏加一个「视觉风格」入口，打开画廊页即可给整个应用换肤：像素街机（零圆角、等宽字体、高对比街机色）与极光絮语（近透明玻璃、不透明输入区、缓慢漂移的极光）。两种风格各有明暗两套色板并跟随系统明暗，选「恢复原生」即可整层移除。",
+      "repo": "https://github.com/Joxos/dsh-theme-gallery",
+      "package": "@joxos/dsh-theme-gallery",
+      "rowId": "dsh-theme-gallery",
+      "category": "skin",
+      "tags": [
+        "gallery",
+        "pixel",
+        "aurora",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:Joxos/dsh-theme-gallery#54e3b635f72a22507f092850cae41c50d9b47b60",
+        "version": "1.0.1",
+        "commit": "54e3b635f72a22507f092850cae41c50d9b47b60"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1193,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4db10c525a4e731b705366519262b16c.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4db10c525a4e731b705366519262b16c.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4db10c525a4e731b705366519262b16c.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/4db10c525a4e731b705366519262b16c.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6f1581300c7af7f280cec17fc9233e9a.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/6f1581300c7af7f280cec17fc9233e9a.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/cb9da2daa9c26be781715a07cc959d84.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/cb9da2daa9c26be781715a07cc959d84.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "moonsand.dsh.ui.optimize",
+      "name": {
+        "zh": "界面优化",
+        "en": "UI Optimize"
+      },
+      "author": "MoonSand",
+      "description": "一组各自独立的开关：8 套极简主题（青瓷、亚麻、奶油、石墨、靛蓝、雾蓝、苔绿、玫瑰，每套带明暗两版配色）给整套界面上色，侧栏面板行收成一个可搜索、可用键盘操作的双列启动器，桌面端侧栏底部还有刷新界面与重启两个按钮。插件页另带更新标签页，只安装发布满 24 小时的版本，并跳过与当前版本不兼容的发布。",
+      "repo": "https://github.com/MoonSand/dsh-ui-optimize",
+      "package": "@moonsand/dsh-ui-optimize",
+      "rowId": "dsh-ui-optimize",
+      "category": "skin",
+      "tags": [
+        "themes",
+        "minimalist",
+        "sidebar",
+        "presets"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:MoonSand/dsh-ui-optimize#3292f89a0b7a427955fa32657a423a262663648e",
+        "version": "0.11.10",
+        "commit": "3292f89a0b7a427955fa32657a423a262663648e"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "improve",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1194,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/44d67f34211cbd50bf49c63245c0cdcd.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/44d67f34211cbd50bf49c63245c0cdcd.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/44d67f34211cbd50bf49c63245c0cdcd.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/44d67f34211cbd50bf49c63245c0cdcd.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/58b91c5231709f7b7b20e6045f31e839.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/58b91c5231709f7b7b20e6045f31e839.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f0035fa4496af2e30d2ae78d24aaeae4.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f0035fa4496af2e30d2ae78d24aaeae4.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "muwange.dsh.ui.skin.lab",
+      "name": {
+        "zh": "外观实验室",
+        "en": "Skin Lab"
+      },
+      "author": "MuWangE",
+      "description": "两套预设（极简与像素）配主色、圆角、动效三个旋钮；「外观」设置页里可选预设、调旋钮、保存多套方案，也能导出/导入配置，点回默认即还原。只改样式不动行为，值走官方主题 token 通道并自动跟随明暗，卸载即恢复原样。",
+      "repo": "https://github.com/MuWangE/dsh-ui-skin",
+      "subpath": "packages/dsh-ui-skin-lab",
+      "package": "dsh-ui-skin-lab",
+      "rowId": "ui-skin-lab",
+      "category": "skin",
+      "tags": [
+        "minimal",
+        "pixel",
+        "presets",
+        "theming"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:MuWangE/dsh-ui-skin#d26e758a20a775c5471ead101366348a575c0155&path:/packages/dsh-ui-skin-lab",
+        "version": "0.1.0",
+        "commit": "d26e758a20a775c5471ead101366348a575c0155"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "improve",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1195,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/446a053a375f5f7938342c51f6c56bf6.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/446a053a375f5f7938342c51f6c56bf6.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/446a053a375f5f7938342c51f6c56bf6.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/446a053a375f5f7938342c51f6c56bf6.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/12c2a36ed34486ff75b0b49d2c951d64.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/12c2a36ed34486ff75b0b49d2c951d64.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f5b7a48fa0297c10d42791e78fb0c807.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/f5b7a48fa0297c10d42791e78fb0c807.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "raheemmiyasin.dsh.theme.palette",
+      "name": {
+        "zh": "主题配色",
+        "en": "Theme Palette"
+      },
+      "author": "raheemmiyasin",
+      "description": "在「设置 → 通用」加一行主题配色，共 9 个选项：默认、海洋蓝、森林绿、暖橙、紫罗兰、玫红、暖沙、Obsidian 近黑，以及赛博朋克——后者会在面板后铺一层霓虹 HUD 网格背景并换上专属渐变标志。配色只改颜色，明暗仍由「外观」那一行决定，选择会被记住。",
+      "repo": "https://github.com/raheemmiyasin/dsh-theme-palette",
+      "package": "@local/dsh-theme-palette",
+      "rowId": "theme-palette",
+      "category": "skin",
+      "tags": [
+        "palette",
+        "cyberpunk",
+        "neon",
+        "light-dark"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:raheemmiyasin/dsh-theme-palette#b0486fdea6f97fbe559414e044af42b50b5b9e47",
+        "version": "1.0.0",
+        "commit": "b0486fdea6f97fbe559414e044af42b50b5b9e47"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1196,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b7f344a9fab432355df60eb46b728850.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b7f344a9fab432355df60eb46b728850.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b7f344a9fab432355df60eb46b728850.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/b7f344a9fab432355df60eb46b728850.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/add8aa8276b65d6ac58679ae0816c941.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/add8aa8276b65d6ac58679ae0816c941.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e07dff26c28bbada805d70c609375f84.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/e07dff26c28bbada805d70c609375f84.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rruixi.dist",
+      "name": {
+        "zh": "爱祥主题",
+        "en": "Anon × Sakiko Theme"
+      },
+      "author": "rruixi",
+      "description": "爱音粉 #ff9ec7 与祥子蓝 #6fa8ff 的撞色渐变主题，配音符、星星、吉他拨片与钢琴键 SVG 装饰和自定义标题栏、状态栏，侧栏、对话区、细节面板一起换，明暗两套。内置 3 张背景图，在「爱祥背景」设置里调位置、大小与五个面板透明度，还能上传多张图（自动压缩）管理图库。",
+      "repo": "https://github.com/rruixi/dsh-ansk-theme",
+      "subpath": "dist",
+      "package": "@linxin666/dsh-client-ui-skin-ansk",
+      "rowId": "ui-skin-ansk",
+      "category": "skin",
+      "tags": [
+        "mygo",
+        "anime",
+        "pink-blue",
+        "gallery"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:rruixi/dsh-ansk-theme#c1d8ae17b9f59ab4f3b4418dba42b61a9de72070&path:/dist",
+        "version": "0.1.0",
+        "commit": "c1d8ae17b9f59ab4f3b4418dba42b61a9de72070"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "improve",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1197,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/dd145f2eb909898838b6b08227ba2935.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/dd145f2eb909898838b6b08227ba2935.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/dd145f2eb909898838b6b08227ba2935.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/dd145f2eb909898838b6b08227ba2935.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a6293b2a8b2977b2a4cf5ac37d524c29.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/a6293b2a8b2977b2a4cf5ac37d524c29.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/878c9bc9db26919f7fe68d178102496c.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/878c9bc9db26919f7fe68d178102496c.full.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wuyad.cat.plugin",
+      "name": {
+        "zh": "漫游小猫",
+        "en": "Wandering Tabby Cat"
+      },
+      "author": "wuyad",
+      "description": "一只虎斑小猫在界面上游荡：沿段落、标题、卡片和按钮的上沿行走，跳上平台、闻一闻、打盹，偶尔瞬移或从边沿摔下去后自己恢复。点一下可以撸猫，右键切换橘猫、白猫、奶牛猫、黑猫、灰猫、暹罗猫六种皮肤并记住选择；它偶尔会留下便便，点掉即可清除。",
+      "repo": "https://github.com/wuyad/dsh-client-ui-cat",
+      "subpath": "cat-plugin",
+      "package": "dsh-client-ui-cat",
+      "rowId": "ui-cat",
+      "category": "pet",
+      "tags": [
+        "cat",
+        "pet",
+        "animated"
+      ],
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "install": {
+        "target": "github:wuyad/dsh-client-ui-cat#82afc31696ad6cbade29f8cdda313d7cfb32a144&path:/cat-plugin",
+        "version": "0.1.21",
+        "commit": "82afc31696ad6cbade29f8cdda313d7cfb32a144"
+      },
+      "compatibility": {
+        "dsh": "unverified",
+        "platform": [
+          "web"
+        ]
+      },
+      "screenshots": [],
+      "review": {
+        "compatibility": "unverified",
+        "preview": "verified",
+        "installation": "verified"
+      },
+      "health": {
+        "status": "improvements",
+        "checks": {
+          "readmeScreenshots": "improve",
+          "compatibility": "improve",
+          "installation": "pass",
+          "installCommand": "pass",
+          "topic": "improve"
+        },
+        "suggestions": [
+          "建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。",
+          "建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。",
+          "建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。"
+        ]
+      },
+      "license": {
+        "code": "MIT",
+        "commercialUse": true
+      },
+      "featuredRank": 1198,
+      "starsSnapshot": 0,
+      "releaseUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "metadataUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "starsUpdatedAt": "2026-11-14T06:29:27.360Z",
+      "updatedAt": "2026-11-14T06:29:27.360Z",
+      "marketScreenshots": [
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/home.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/conversation.png",
+        "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/settings.png"
+      ],
+      "listScreenshot": "https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/home.png",
+      "media": {
+        "list": {
+          "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/65a7269e038f4d3ea65b0c9dc873f970.preview.webp",
+          "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/65a7269e038f4d3ea65b0c9dc873f970.full.webp"
+        },
+        "screenshots": [
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/65a7269e038f4d3ea65b0c9dc873f970.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/65a7269e038f4d3ea65b0c9dc873f970.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c771fdaaa53d239900da63e635519bc2.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/c771fdaaa53d239900da63e635519bc2.full.webp"
+          },
+          {
+            "preview": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/850688d3af20a77b79854f1591340d15.preview.webp",
+            "full": "https://kingofsoysauce.github.io/dsh-skin-market/skin-media/v1/850688d3af20a77b79854f1591340d15.full.webp"
+          }
+        ]
+      }
     }
   ],
   "npmSources": {
@@ -75002,6 +77033,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "age10.moyu.dsh.adiv.theme": {
+        "name": {
+          "zh": "A\\ 主题",
+          "en": "A\\ Theme"
+        },
+        "description": {
+          "zh": "羊皮纸暖调主题：米白纸面、焦橙强调色、环形描边阴影，内容标题用衬线体、界面框架保持无衬线，明暗两套配色都不带冷蓝灰。安装即生效，没有设置项或开关，停用插件行即可关闭。",
+          "en": "A warm parchment theme: paper-toned canvas, burnt-orange accent, ring-based shadows, serif content headings over sans UI chrome, and light and dark palettes with no cool blue-greys. There is no settings row or toggle — installing the bundle is the switch, and disabling the patch row turns it off."
+        },
+        "descriptionPolicy": "show"
+      },
       "ahian-lee.dsh-bliss-glass": {
         "name": {
           "zh": "Bliss Glass 怀旧玻璃主题",
@@ -75222,6 +77264,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "angel2518975237.deepseek.harness.hello.kitty.suite": {
+        "name": {
+          "zh": "Hello Kitty 甜心工作台",
+          "en": "Hello Kitty Sweetheart Workspace"
+        },
+        "description": {
+          "zh": "把工作台换成粉色 Hello Kitty 主题：浅色版用奶油白、贝壳粉和玫瑰粉，深色版用深莓果色；会话头换字标，输入框加蝴蝶结和兔子杯，侧栏放坐姿 Kitty，对话区铺菱格、爱心和星星纹样。附带提醒插件：一轮对话结束或模型以提问收尾时弹卡片提醒，页面切走则发系统通知。",
+          "en": "Recolors the workspace in Hello Kitty pinks — cream, shell pink and rose for light mode, deep berry for dark — with a session wordmark, a bow and bunny cup on the composer, a sitting Kitty in the sidebar and diamond-heart-star patterns in the conversation, while keeping semantic state colors. A bundled notifier pops a pink card and chime at the end of a turn (or when the model ends on a question), and sends a system notification when the page is in the background."
+        },
+        "descriptionPolicy": "show"
+      },
       "anionex.dsh-eye-care": {
         "name": {
           "zh": "DSH 护眼",
@@ -75310,6 +77363,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "au1314.dsh.style.hub": {
+        "name": {
+          "zh": "风格工坊",
+          "en": "Style Hub"
+        },
+        "description": {
+          "zh": "「插件 → Style Hub」卡片里挑配色：Nord、Dracula、Mocha、Tokyo Night 等 8 套预设，或选 Stock 保持不变；可调强调色与面板不透明度，能上传自己的壁纸（最大 15MB），分别设置铺法、不透明度、模糊和暗化，关闭总开关恢复原样。",
+          "en": "Adds a Style Hub card under Plugins with eight preset palettes (Nord, Dracula, Mocha, Tokyo Night, Gruvbox, Solarized, GitHub Light, Latte) plus Stock, which leaves Appearance untouched. It also adds a brand accent, a panel-opacity slider and a wallpaper library for your own PNG/JPEG/WebP images with fit, opacity, blur and dim controls."
+        },
+        "descriptionPolicy": "show"
+      },
       "aumisatori.dsh-ui-beautify": {
         "name": {
           "zh": "DSH UI 美化",
@@ -75351,6 +77415,17 @@
         "description": {
           "zh": "将 DSH 会话区滚动条改为 14px 常显、扁平半透明的 VS Code 风格，并在右侧加入可拖动视口滑块的整段会话缩略图；菜单、代码块、侧栏和输入框滚动条保持原样。",
           "en": "Restyles the DSH conversation scrollbar as a 14px always-visible, flat translucent VS Code bar and adds a full-conversation minimap with a draggable viewport slider; menus, code blocks, sidebars and the composer keep their stock scrollbars."
+        },
+        "descriptionPolicy": "show"
+      },
+      "azumaki.art.dsh.skin.qwen": {
+        "name": {
+          "zh": "千问花语",
+          "en": "QWEN Blossom"
+        },
+        "description": {
+          "zh": "浅色是宣纸淡蓝配花枝与汉服人物，深色换成月夜亭台与靛蓝金灯；切换明暗时两幅画作自动交叉淡化，面板覆一层半透明宣纸或夜帷，输入卡与弹窗四角带回纹角花和靛金双线边框。",
+          "en": "A two-mode classical skin: pale xuan-paper blue with blossom branches and a hanfu figure in light, a moonlit pavilion over indigo night with gold lamps in dark. Panels take a translucent paper or night-veil layer, and the composer, cards and dialogs carry fret-pattern corner ornaments with indigo-and-gold double borders."
         },
         "descriptionPolicy": "show"
       },
@@ -75406,6 +77481,17 @@
         "description": {
           "zh": "以 DeepSeek 创始人为原型的沉稳父亲形象桌宠，会走动、眨眼、拖动、睡眠，并对点击与指针作出反应；支持中文语音、字幕、音效和背景音乐，均可独立开关。资源全部随包提供、无需联网；与「大肥鱼」同时安装时可演出六段父女小剧场。",
           "en": "A calm father character based on DeepSeek's founder that walks, blinks, sleeps, can be dragged, and reacts to clicks and the pointer. Chinese voice lines, subtitles, sound effects, and background music each have their own switch. All assets ship locally with the package, with no network required; installing Dafeiyu enables six father-and-daughter playlets."
+        },
+        "descriptionPolicy": "show"
+      },
+      "bauerelizabeth07139.mdsm": {
+        "name": {
+          "zh": "MDSM 吉祥物",
+          "en": "MDSM Mascot Layer"
+        },
+        "description": {
+          "zh": "把随包附带的 16:9 角色画铺成不可点击的整页背景，在 MDSM 设置页里调界面不透明度（25–100%）、壁纸模糊（0–24px）、遮罩浓度（0–90%，深色主题用黑、浅色用白）和壁纸位置。侧栏与会话首屏的标志可换成同一张方形头像，浏览器标签页图标也跟着换，保存后即时生效。",
+          "en": "Wears the bundled 16:9 mascot artwork as a fixed, click-through background with live controls for surface opacity (25–100%), wallpaper blur (0–24 px), a scheme-matched scrim (0–90%) and position. The same square avatar can replace the sidebar and conversation marks and the tab icon."
         },
         "descriptionPolicy": "show"
       },
@@ -75849,6 +77935,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "columbla.dsh.columbina.theme.sn": {
+        "name": {
+          "zh": "哥伦比娅主题 · 补丁版",
+          "en": "Columbina Theme — Patch Edition"
+        },
+        "description": {
+          "zh": "月隐银蓝的毛玻璃皮肤：背景图可上传并调模糊（0–40px）与清晰度，主视觉头像、欢迎页标题与正文都能在面板里改；另带可编辑的哥伦比娅人格、表情包与「主题主权」开关，开启后会停用同源的另一套哥伦比娅主题。",
+          "en": "A moonlit silver-blue glassmorphism skin with an editable Columbina persona: upload background images and tune blur (0–40px) and clarity, and edit the hero avatar, title and welcome copy from the panel. A theme-takeover switch disables the rival Columbina theme while it is on."
+        },
+        "descriptionPolicy": "show"
+      },
       "conafun.dsh.music.plus": {
         "name": {
           "zh": "音乐 Plus",
@@ -76095,6 +78192,17 @@
         "description": {
           "zh": "图片与视频壁纸皮肤可将本地 JPG/PNG/WebP 或静音循环 MP4/WebM 作为应用背景，并把面板变为半透明；右下角面板支持预览、启用/关闭和实时切换，路径可在 Settings → Plugins 中修改，配置改动无需重启。壁纸素材不随仓库提供，需要用户使用本地文件。",
           "en": "Image & Video Wallpaper Skin uses a local JPG, PNG, or WebP image—or a muted looping MP4/WebM—as the application background and makes panels translucent. A bottom-right panel previews, enables, disables, and switches wallpapers live; the path is editable in Settings → Plugins without a restart. Wallpaper media is not bundled, so users provide their own local files."
+        },
+        "descriptionPolicy": "show"
+      },
+      "deepseek.club.dsh.skin.whalegirl": {
+        "name": {
+          "zh": "小深·鲸鱼娘",
+          "en": "Xiaoshen Whale-girl"
+        },
+        "description": {
+          "zh": "换上一张 3D 鲸鱼跃过科技环的对话背景，右侧鲸鱼、左侧留白给文字，亮暗两套自动切换。界面用科技蓝 #3d8bfd、深海蓝与陶瓷白的覆盖层重上色，对话区左下角挂一张社区角色形象（深色模式下自动隐藏），侧栏加四角刻度，图标换成蓝色 ∞ 标志，素材全部内嵌、不依赖网络。",
+          "en": "Puts a 3D whale leaping through a tech ring behind the conversation — whale on the right, open space for text on the left — with automatic light and dark variants. A tech-blue (#3d8bfd), deep-blue and ceramic-white overlay recolors the interface, a community character sits at the bottom-left of the chat and hides in dark mode, the sidebar gets corner ticks, and the favicon becomes a blue ∞ mark; all artwork is embedded."
         },
         "descriptionPolicy": "show"
       },
@@ -76450,6 +78558,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "erha2777.dsh.azure.maid.skin": {
+        "name": {
+          "zh": "蓝瓷女仆",
+          "en": "Azure Maid"
+        },
+        "description": {
+          "zh": "深蓝发色做品牌与按钮，冷白蕾丝做正文与画布，青宝石色给链接和强调；90 个语义色各分亮暗两档，设置页可切亮色、暗色或跟随系统，跟随系统时随系统深浅实时换档。",
+          "en": "Deep-blue hair tones drive brand and buttons, cool lace white carries text and canvas, and a teal gemstone accent marks links. All 90 semantic tokens ship a light and a dark value, switchable from the settings page — including a follow-system mode that repaints live."
+        },
+        "descriptionPolicy": "show"
+      },
       "eric-song-dev.dsh-ikun-pet": {
         "name": {
           "zh": "ikun 桌宠",
@@ -76601,6 +78720,17 @@
         "description": {
           "zh": "经典麦金塔 Macintosh 主题，采用 System 7 像素复古风格，包含像素字体、桌面噪点画布、Finder 式会话侧栏、黑白方角控件和 HappyMac 空态。零构建纯 loader 格式，附 Kit 组件检视页。",
           "en": "A Classic Macintosh theme in a System 7 pixel-retro style, with pixel fonts, a noisy desktop canvas, Finder-style session sidebar, black-and-white square controls, and a HappyMac empty state. Zero-build loader format with a Kit component inspection page."
+        },
+        "descriptionPolicy": "show"
+      },
+      "fishfromsky.dsh.march7th.skin": {
+        "name": {
+          "zh": "三月七主题",
+          "en": "March 7th Theme"
+        },
+        "description": {
+          "zh": "把界面换成《崩坏：星穹铁道》三月七的蓝粉配色，明暗两套主题一起覆盖。对话背景、侧栏、设置页头、输入卡片与两侧角色立绘都换成随包素材，并重设对话滚动容器，输入框不再遮住正在阅读的消息；停用后挂载的样式与属性全部还原。",
+          "en": "Repaints the interface in March 7th's blue-and-pink palette across both light and dark schemes, swapping in bundled art for the chat background, sidebar, settings header, composer and both side characters. It also reworks the chat scroll container so the composer stops covering the message you are reading, and removes every style and attribute when disabled."
         },
         "descriptionPolicy": "show"
       },
@@ -76766,6 +78896,17 @@
         "description": {
           "zh": "昼夜角色界面主题：白昼水晶工坊与黑夜月潮观测室同步切换场景、色板、角色、侧栏伙伴与控件；仅修改展示层，不读取会话、模型请求、凭据或工作区数据。",
           "en": "A day/night character interface that switches the crystal workshop and moon-tide observatory scenes together with palettes, characters, sidebar companion, and controls; it only changes the presentation layer and does not read sessions, model requests, credentials, or workspace data."
+        },
+        "descriptionPolicy": "show"
+      },
+      "gh.gongjin.dsh.plugin.appearance": {
+        "name": {
+          "zh": "桌面外观",
+          "en": "Desktop Appearance"
+        },
+        "description": {
+          "zh": "在设置里加一个「桌面外观」面板：8 套配色（每套 28 个颜色令牌，明暗两档）加一个「不覆盖」，不点就什么都不改。侧栏图标、会话首屏图标和名称行可分别替换：内置六枚标志或上传图片（自动裁方压到 200KB 内），名称行还能用原字标、自定义文字或图片，另有一键全部还原。",
+          "en": "Adds a Desktop Appearance panel in Settings with eight palettes (28 color tokens each, including four sidebar-specific ones, in light and dark) plus No override, and nothing changes until you pick one. The sidebar mark, conversation-hero mark and name row can each be swapped for one of six built-in marks or your own image, cropped square and capped at 200 KB, while the name row also takes the original wordmark, custom text or a picture; one button restores everything."
         },
         "descriptionPolicy": "show"
       },
@@ -77154,6 +79295,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "huangyuanhu3.dev.dsh.chat.skin": {
+        "name": {
+          "zh": "聊天外观工坊",
+          "en": "Chat Skin Studio"
+        },
+        "description": {
+          "zh": "给聊天区换背景：8 套内置氛围，或自定义渐变、纯色、图片与本地壁纸；遮罩深浅、模糊、铺法可调，也能把壁纸铺到整个界面，让侧栏与设置页共用同一套毛玻璃。另有 CSS 动画、字体、emoji 头像与运行图标，设置页和右上角 🎨 快捷面板都能改，调整实时生效并保存在本机。",
+          "en": "Re-skins the chat area with eight built-in atmospheres or your own gradient, solid colour, image or local wallpaper, with adjustable scrim depth, blur and tiling; a whole-interface mode shares one frosted material across sidebar and settings. CSS animations, fonts, emoji avatars and the running icon are editable from the settings page or the 🎨 quick panel, and changes apply live and persist locally."
+        },
+        "descriptionPolicy": "show"
+      },
       "huanlinoto.dsh-plugin-better-sidebar-plugin-audio": {
         "name": {
           "zh": "波形与频谱预览",
@@ -77272,6 +79424,17 @@
         "description": {
           "zh": "面向 Web GUI 与桌面端的外观套件，提供 32 款莫兰迪、马卡龙和中国传统色主题，支持视频/静态壁纸、7 种东方纸纹、分区透明度与文字深浅调节，并附带可拖动、缩放的键盘桌宠。支持跟随系统/浅色/深色；分区样式与桌宠依赖宿主 shell 结构，升级后可能需要适配。",
           "en": "An appearance kit for Web and Desktop with 32 Morandi, Macaron, and Chinese-traditional presets, video and still wallpapers, seven adjustable East-Asian paper textures, per-zone opacity and text depth, and a draggable, resizable keyboard pet. It supports system/light/dark modes; per-zone styling and the pet depend on the host shell structure and may need adjustment after upgrades."
+        },
+        "descriptionPolicy": "show"
+      },
+      "intellecxplore.theme": {
+        "name": {
+          "zh": "智域探金主题",
+          "en": "IntellecXplore Theme"
+        },
+        "description": {
+          "zh": "智域探金品牌主题：深蓝 #000057 与电光蓝 #005cff 重绘 14 个语义色 token（明暗成对），配 Sora / Noto Sans SC / PingFang SC 字体栈；侧栏换成 IntellecXplore 字标与 HARNESS 徽标，运行文案改为「智域探金中」，鲸鱼尾巴、favicon 与 PWA 图标一并换成品牌 X 标。",
+          "en": "The IntellecXplore brand theme: deep blue #000057 and electric blue #005cff across 14 semantic tokens in light and dark, with a Sora / Noto Sans SC / PingFang SC type stack. It swaps the sidebar to the IntellecXplore wordmark and HARNESS badge, changes the running label to 智域探金中, and replaces the whale tail, favicon and PWA icons with the brand X mark."
         },
         "descriptionPolicy": "show"
       },
@@ -77514,6 +79677,17 @@
         "description": {
           "zh": "以 DeepSeek 首页为灵感的 DSH Web 主题：深蓝渐变、半透明玻璃、程序化流体背景、鼠标弹性网格和两条会避让指针的小鱼；效果可开关，并适配减少动态效果。",
           "en": "A DSH Web theme inspired by the DeepSeek homepage, with a deep-blue gradient, translucent glass, a procedural fluid background, a mouse-reactive elastic grid, and two fish that avoid the pointer. Effects are toggleable and respect reduced-motion preferences."
+        },
+        "descriptionPolicy": "show"
+      },
+      "joxos.dsh.theme.gallery": {
+        "name": {
+          "zh": "视觉风格库",
+          "en": "Style Gallery"
+        },
+        "description": {
+          "zh": "在左侧栏加一个「视觉风格」入口，打开画廊页即可给整个应用换肤：像素街机（零圆角、等宽字体、高对比街机色）与极光絮语（近透明玻璃、不透明输入区、缓慢漂移的极光）。两种风格各有明暗两套色板并跟随系统明暗，选「恢复原生」即可整层移除。",
+          "en": "Adds a Visual style entry to the sidebar that opens a gallery page for re-skinning the whole app: Pixel Arcade (zero corner radius, monospace type, high-contrast arcade palette) and Aurora Whispers (near-transparent glass, opaque composer, drifting aurora blobs). Each style carries light and dark palettes that follow the system scheme, and Use native removes the active layer."
         },
         "descriptionPolicy": "show"
       },
@@ -78789,6 +80963,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "moonsand.dsh.ui.optimize": {
+        "name": {
+          "zh": "界面优化",
+          "en": "UI Optimize"
+        },
+        "description": {
+          "zh": "一组各自独立的开关：8 套极简主题（青瓷、亚麻、奶油、石墨、靛蓝、雾蓝、苔绿、玫瑰，每套带明暗两版配色）给整套界面上色，侧栏面板行收成一个可搜索、可用键盘操作的双列启动器，桌面端侧栏底部还有刷新界面与重启两个按钮。插件页另带更新标签页，只安装发布满 24 小时的版本，并跳过与当前版本不兼容的发布。",
+          "en": "A set of independent switches: eight minimalist themes (Celadon, Linen, Cream, Graphite, Indigo, Slate, Sage, Rose) that recolour the whole interface in light and dark, sidebar panel rows that fold into a searchable, keyboard-driven two-column launcher, and desktop-only reload/restart buttons at the sidebar foot. An Updates tab installs only releases published at least 24 hours ago and skips ones the running version marks incompatible."
+        },
+        "descriptionPolicy": "show"
+      },
       "moonshadow1976.chiral-pulse": {
         "name": {
           "zh": "CHIRAL PULSE · 手性脉冲",
@@ -78896,6 +81081,17 @@
         "description": {
           "zh": "轻量级 Web UI 外观皮肤：支持壁纸、玻璃质感透明效果和重点色；设置由服务端保存并在多设备间同步，不接管原生明暗模式。",
           "en": "A lightweight Web UI appearance skin with wallpaper, glass-like transparency, and accent colour. Settings are server-side and work across devices without taking over the native light/dark mode."
+        },
+        "descriptionPolicy": "show"
+      },
+      "muwange.dsh.ui.skin.lab": {
+        "name": {
+          "zh": "外观实验室",
+          "en": "Skin Lab"
+        },
+        "description": {
+          "zh": "两套预设（极简与像素）配主色、圆角、动效三个旋钮；「外观」设置页里可选预设、调旋钮、保存多套方案，也能导出/导入配置，点回默认即还原。只改样式不动行为，值走官方主题 token 通道并自动跟随明暗，卸载即恢复原样。",
+          "en": "Two presets (minimal and pixel) with knobs for brand colour, corner radius and motion; the appearance settings page switches presets, tunes the knobs, saves named schemes, exports and imports the config, and restores defaults in one click. It only changes styles — values go through the official theme-token channel, follow light and dark automatically, and revert on uninstall."
         },
         "descriptionPolicy": "show"
       },
@@ -79152,6 +81348,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "phoenixlucky.dsh.theme": {
+        "name": {
+          "zh": "WJ Dreamlight 主题",
+          "en": "WJ Dreamlight Themes"
+        },
+        "description": {
+          "zh": "设置里新增「主题与壁纸」，列出 8 套壁纸主题：VIP 金辉、端午、清明、七夕、元宵、中秋、万圣夜和圣诞，点卡片先预览再应用。侧栏与对话区各有 0–100% 背景透明度滑块，VIP 主题另带金色点缀、玻璃表面和内置展示字体，也能自填名称、图片地址、强调色与明暗底添加自定义主题。",
+          "en": "Adds a Themes & wallpaper settings page listing eight wallpaper themes — VIP Golden Radiance, Dragon Boat Festival, Qingming, Qixi, Lantern Festival, Mid-Autumn, Halloween Night and Christmas Snowglow — with a preview before applying. Sidebar and conversation transparency get separate 0–100% sliders, VIP styling adds gold accents, glass surfaces and a bundled display font, and a custom-theme editor takes a name, image URL, accent color and light/dark base."
+        },
+        "descriptionPolicy": "show"
+      },
       "pineapple880066.dsh-webui-pets": {
         "name": {
           "zh": "DSH WebUI 桌宠",
@@ -79292,6 +81499,17 @@
         "description": {
           "zh": "在 DSH Web 面板后循环播放静音的 `assets/wallpaper.mp4`，用 scrim 保护文字可读性；开启 `prefers-reduced-motion` 时停用视频并显示 `assets/poster.jpg`，面板本身的样式保持不变。固定证据只验证 DSH Web `>=0.1.0-rc.6` 中的 `0.1.0-rc.6`，视频、海报和截图的角色/商标权利也不包含在代码的 MIT 许可中，项目与 DeepSeek 官方无隶属关系。",
           "en": "Loops the muted `assets/wallpaper.mp4` behind the DSH Web panels with a scrim for text contrast, while `prefers-reduced-motion` disables the video and shows `assets/poster.jpg`; the panels themselves keep their styling. Fixed evidence verifies only DSH Web `0.1.0-rc.6` within the declared `>=0.1.0-rc.6` range. Rights to the characters/trademarks in the video, poster, and screenshots are separate from the code’s MIT license, and the project is not affiliated with DeepSeek."
+        },
+        "descriptionPolicy": "show"
+      },
+      "raheemmiyasin.dsh.theme.palette": {
+        "name": {
+          "zh": "主题配色",
+          "en": "Theme Palette"
+        },
+        "description": {
+          "zh": "在「设置 → 通用」加一行主题配色，共 9 个选项：默认、海洋蓝、森林绿、暖橙、紫罗兰、玫红、暖沙、Obsidian 近黑，以及赛博朋克——后者会在面板后铺一层霓虹 HUD 网格背景并换上专属渐变标志。配色只改颜色，明暗仍由「外观」那一行决定，选择会被记住。",
+          "en": "Adds a Theme palette row under Settings → General with nine options, from Ocean, Forest and Ember to Obsidian and a Cyberpunk palette that paints a neon HUD grid backdrop and swaps in a custom gradient brand mark. Palettes only recolour the interface — the Appearance row still decides light or dark — and the choice is remembered."
         },
         "descriptionPolicy": "show"
       },
@@ -79501,6 +81719,17 @@
         "description": {
           "zh": "为 DSH Web GUI 提供近黑纸面、薄荷绿强调色、顶部渐变字标状态带，以及 2px 直角和 0.5px 内高光；支持深色、浅色和跟随产品的外壳。",
           "en": "Reskins the DSH Web GUI with near-black paper, a mint accent, a gradient wordmark status band, 2px corners, and 0.5px inner highlights. Choose dark, light, or follow the product's appearance."
+        },
+        "descriptionPolicy": "show"
+      },
+      "rruixi.dist": {
+        "name": {
+          "zh": "爱祥主题",
+          "en": "Anon × Sakiko Theme"
+        },
+        "description": {
+          "zh": "爱音粉 #ff9ec7 与祥子蓝 #6fa8ff 的撞色渐变主题，配音符、星星、吉他拨片与钢琴键 SVG 装饰和自定义标题栏、状态栏，侧栏、对话区、细节面板一起换，明暗两套。内置 3 张背景图，在「爱祥背景」设置里调位置、大小与五个面板透明度，还能上传多张图（自动压缩）管理图库。",
+          "en": "An Anon-pink (#ff9ec7) and Sakiko-blue (#6fa8ff) gradient theme with SVG notes, stars, guitar picks and piano keys plus a custom title bar and status bar, restyling the sidebar, conversation and details panel in light and dark. Three background images ship with it, and a dedicated background section sets position, size and five panel opacities, with a gallery where uploaded images can be reordered and renamed."
         },
         "descriptionPolicy": "show"
       },
@@ -80131,6 +82360,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "tal.shin.glass.theme": {
+        "name": {
+          "zh": "玻璃主题",
+          "en": "Glass Theme"
+        },
+        "description": {
+          "zh": "整套外观打包：配色、玻璃材质、圆角与字体、动效四组可分别关掉；玻璃有清透 / 标准 / 沉稳三档，开启折射透镜后输入框、顶栏控件与菜单变成液态玻璃，聚焦时边缘亮起一道细光，按下有回弹。设置页会自检界面结构，指出与当前版本对不上的部分。",
+          "en": "The shell's whole look in one bundle: colour, glass material, corners and type, and motion, each switchable on its own. Glass comes in Clear, Standard and Calm presets, and with refraction on the composer, header controls and menus turn into liquid glass that lights up along the rim on focus and springs back on press; the settings page checks the shell parts it relies on and names any mismatch."
+        },
+        "descriptionPolicy": "show"
+      },
       "tanpass.furina.dsh.theme": {
         "name": {
           "zh": "芙宁娜主题",
@@ -80406,6 +82646,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "ury479.dsh.wukong.zenfire": {
+        "name": {
+          "zh": "悟空 · 炼心之境",
+          "en": "Wukong Zenfire"
+        },
+        "description": {
+          "zh": "赤焰、鎏金与灵台青光三色构成：左侧导航与右侧文件、终端、浏览器面板统一为深墨褐高对比表面，选中项用暖金底色与火焰侧线，细边框走赤金到青的过渡。",
+          "en": "A Wukong-themed dark look in crimson flame, gilded gold and a cool cyan spirit-light: navigation and the file, terminal and browser panels share high-contrast ink-brown surfaces, with warm-gold selection, flame side-lines and hairline crimson-to-cyan borders."
+        },
+        "descriptionPolicy": "show"
+      },
       "v587d.dsh-custom-skin": {
         "name": {
           "zh": "自定义皮肤与字体",
@@ -80648,6 +82899,17 @@
         },
         "descriptionPolicy": "show"
       },
+      "wenyixiaoqingnian.ds.mobile.skin": {
+        "name": {
+          "zh": "移动端 App 外观",
+          "en": "Mobile App Look"
+        },
+        "description": {
+          "zh": "在手机视口（≤768px）把界面改成扁平、App 化的外观：品牌蓝 #4D6BFE、可拖动并自动贴边的 ☰ 悬浮菜单球（记住位置）、输入栏附件上传按钮、切换会话时自动收起键盘，菜单和弹层贴在触发按钮上方。所有改动只在窄屏生效，桌面端保持原样。",
+          "en": "Turns the layout into a flat, app-like mobile look at ≤768 px: brand blue #4D6BFE, a draggable ☰ menu ball that snaps to the edge and remembers its position, an attachment button in the composer, automatic keyboard dismissal when switching sessions, and popovers anchored above their trigger. Everything is scoped to narrow viewports, so desktop stays untouched."
+        },
+        "descriptionPolicy": "show"
+      },
       "whitefirer.dsh-niulai-pet": {
         "name": {
           "zh": "牛来桌宠",
@@ -80755,6 +83017,17 @@
         "description": {
           "zh": "纸质主题以 Claude Code 为灵感，使用奶油纸背景、暖墨色文字、陶土色强调、衬线 CJK 字体和暖色代码块，并把“纸质”加入浅色/深色/跟随系统同一组外观选择。选择会写入 `localStorage`，卸载后内置外观行恢复；README 以 DSH `0.1.0-rc.6` 验证为依据。",
           "en": "Paper Theme is inspired by Claude Code, with a cream-paper background, warm-ink text, terracotta accents, serif CJK typography, and warm code blocks. It adds Paper alongside Light, Dark, and System in the Appearance choices. The selection is stored in `localStorage`, the native Appearance row returns after uninstall, and the README documents validation against DSH `0.1.0-rc.6`."
+        },
+        "descriptionPolicy": "show"
+      },
+      "wuyad.cat.plugin": {
+        "name": {
+          "zh": "漫游小猫",
+          "en": "Wandering Tabby Cat"
+        },
+        "description": {
+          "zh": "一只虎斑小猫在界面上游荡：沿段落、标题、卡片和按钮的上沿行走，跳上平台、闻一闻、打盹，偶尔瞬移或从边沿摔下去后自己恢复。点一下可以撸猫，右键切换橘猫、白猫、奶牛猫、黑猫、灰猫、暹罗猫六种皮肤并记住选择；它偶尔会留下便便，点掉即可清除。",
+          "en": "A little tabby cat wanders the interface — walking along the top edges of paragraphs, headings, cards and buttons, hopping onto ledges, sniffing, napping, teleporting, and sometimes tumbling off a ledge and recovering. Click to pet it, right-click to cycle six coats (orange, white, tuxedo, black, gray, siamese) that persist across reloads, and click its droppings to clean them up."
         },
         "descriptionPolicy": "show"
       },
@@ -81008,6 +83281,17 @@
         "description": {
           "zh": "一套非官方的太空歌剧风 DSH Web 暗色主题：深空背景、霓虹 HUD、黑洞吸积盘、行星轨道、扫描器、彗星轨迹、能量束和遥测面板，并为发送消息加入超空间风格效果。使用通用科幻元素，不包含或复刻特定作品的标志、角色或舰船设计；支持 `prefers-reduced-motion`。",
           "en": "An unofficial space-opera dark skin for DSH Web with deep-space layers, neon HUD chrome, a black-hole accretion disk, planetary orbits, scanner UI, comet trails, energy beams, and a telemetry panel, plus a hyperspace-style send effect. It uses generic sci-fi language rather than logos, characters, ships, or other protected designs from a specific franchise, and respects `prefers-reduced-motion`."
+        },
+        "descriptionPolicy": "show"
+      },
+      "xq.zheng.dsh.zhangxuefeng.skin": {
+        "name": {
+          "zh": "张雪峰壁纸皮肤",
+          "en": "Zhang Xuefeng Wallpaper"
+        },
+        "description": {
+          "zh": "一张 1920×1080 固定壁纸铺满界面，人物从半透明磨砂层里透出，面板走深色暖调、强调色取 AC 米兰红；在外观皮肤里一键选用，也能切回浅色、深色或跟随系统。",
+          "en": "A fixed 1920×1080 wallpaper fills the interface, its figure showing through a translucent frosted layer, with warm dark panels and AC Milan red accents. Pick it from the appearance-skin list, or step back to the stock light, dark or follow-system look."
         },
         "descriptionPolicy": "show"
       },

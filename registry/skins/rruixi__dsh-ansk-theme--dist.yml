@@ -1,0 +1,58 @@
+id: rruixi.dist
+name:
+  zh: 爱祥主题
+  en: Anon × Sakiko Theme
+author: rruixi
+description: "爱音粉 #ff9ec7 与祥子蓝 #6fa8ff 的撞色渐变主题，配音符、星星、吉他拨片与钢琴键 SVG 装饰和自定义标题栏、状态栏，侧栏、对话区、细节面板一起换，明暗两套。内置 3 张背景图，在「爱祥背景」设置里调位置、大小与五个面板透明度，还能上传多张图（自动压缩）管理图库。"
+repo: https://github.com/rruixi/dsh-ansk-theme
+subpath: dist
+package: "@linxin666/dsh-client-ui-skin-ansk"
+rowId: ui-skin-ansk
+category: skin
+tags:
+  - mygo
+  - anime
+  - pink-blue
+  - gallery
+modes:
+  - light
+  - dark
+install:
+  target: github:rruixi/dsh-ansk-theme#c1d8ae17b9f59ab4f3b4418dba42b61a9de72070&path:/dist
+  version: 0.1.0
+  commit: c1d8ae17b9f59ab4f3b4418dba42b61a9de72070
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1197
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/home.png
+  - skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/conversation.png
+  - skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/settings.png

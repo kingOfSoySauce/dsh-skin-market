@@ -1,0 +1,58 @@
+id: muwange.dsh.ui.skin.lab
+name:
+  zh: 外观实验室
+  en: Skin Lab
+author: MuWangE
+description: 两套预设（极简与像素）配主色、圆角、动效三个旋钮；「外观」设置页里可选预设、调旋钮、保存多套方案，也能导出/导入配置，点回默认即还原。只改样式不动行为，值走官方主题 token 通道并自动跟随明暗，卸载即恢复原样。
+repo: https://github.com/MuWangE/dsh-ui-skin
+subpath: packages/dsh-ui-skin-lab
+package: dsh-ui-skin-lab
+rowId: ui-skin-lab
+category: skin
+tags:
+  - minimal
+  - pixel
+  - presets
+  - theming
+modes:
+  - light
+  - dark
+install:
+  target: github:MuWangE/dsh-ui-skin#d26e758a20a775c5471ead101366348a575c0155&path:/packages/dsh-ui-skin-lab
+  version: 0.1.0
+  commit: d26e758a20a775c5471ead101366348a575c0155
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1195
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/home.png
+  - skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/conversation.png
+  - skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/settings.png

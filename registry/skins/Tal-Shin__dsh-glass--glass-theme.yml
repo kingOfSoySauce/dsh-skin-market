@@ -1,0 +1,57 @@
+id: tal.shin.glass.theme
+name:
+  zh: 玻璃主题
+  en: Glass Theme
+author: Tal-Shin
+description: 整套外观打包：配色、玻璃材质、圆角与字体、动效四组可分别关掉；玻璃有清透 / 标准 / 沉稳三档，开启折射透镜后输入框、顶栏控件与菜单变成液态玻璃，聚焦时边缘亮起一道细光，按下有回弹。设置页会自检界面结构，指出与当前版本对不上的部分。
+repo: https://github.com/Tal-Shin/dsh-glass
+subpath: glass-theme
+package: "@tal-shin/dsh-glass-theme"
+rowId: glass-theme
+category: skin
+tags:
+  - glass
+  - liquid-glass
+  - minimal
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Tal-Shin/dsh-glass#d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d&path:/glass-theme
+  version: 1.1.0
+  commit: d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1192
+starsSnapshot: 5
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/home.png
+  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/conversation.png
+  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/settings.png

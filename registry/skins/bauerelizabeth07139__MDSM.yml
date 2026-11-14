@@ -1,0 +1,54 @@
+id: bauerelizabeth07139.mdsm
+name:
+  zh: MDSM 吉祥物
+  en: MDSM Mascot Layer
+author: bauerelizabeth07139
+description: 把随包附带的 16:9 角色画铺成不可点击的整页背景，在 MDSM 设置页里调界面不透明度（25–100%）、壁纸模糊（0–24px）、遮罩浓度（0–90%，深色主题用黑、浅色用白）和壁纸位置。侧栏与会话首屏的标志可换成同一张方形头像，浏览器标签页图标也跟着换，保存后即时生效。
+repo: https://github.com/bauerelizabeth07139/MDSM
+package: MDSM
+rowId: MDSM
+category: skin
+tags:
+  - mascot
+  - wallpaper
+  - brand
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:bauerelizabeth07139/MDSM#6393d2540d8c4937b5870ce7bdf1711526053c0f
+  version: 0.2.0
+  commit: 6393d2540d8c4937b5870ce7bdf1711526053c0f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM-wallpaper.jpg
+  - https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM.jpg
+  - https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM-mark.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1179
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:10.128Z
+metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+starsUpdatedAt: 2026-11-14T06:29:10.128Z
+updatedAt: 2026-11-14T06:29:10.128Z
+listScreenshot: https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM-wallpaper.jpg

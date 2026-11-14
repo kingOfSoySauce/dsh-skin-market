@@ -1,0 +1,54 @@
+id: columbla.dsh.columbina.theme.sn
+name:
+  zh: 哥伦比娅主题 · 补丁版
+  en: Columbina Theme — Patch Edition
+author: Columbla
+description: 月隐银蓝的毛玻璃皮肤：背景图可上传并调模糊（0–40px）与清晰度，主视觉头像、欢迎页标题与正文都能在面板里改；另带可编辑的哥伦比娅人格、表情包与「主题主权」开关，开启后会停用同源的另一套哥伦比娅主题。
+repo: https://github.com/Columbla/dsh-columbina-theme-sn
+package: dsh-columbina-theme-sn
+rowId: ui-columbina-theme
+category: skin
+tags:
+  - columbina
+  - glassmorphism
+  - wallpaper
+  - persona
+modes:
+  - light
+  - dark
+install:
+  target: github:Columbla/dsh-columbina-theme-sn#7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea
+  version: 0.3.1
+  commit: 7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1188
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/home.png
+  - skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/conversation.png
+  - skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/settings.png

@@ -1,0 +1,51 @@
+id: ury479.dsh.wukong.zenfire
+name:
+  zh: 悟空 · 炼心之境
+  en: Wukong Zenfire
+author: Ury479
+description: 赤焰、鎏金与灵台青光三色构成：左侧导航与右侧文件、终端、浏览器面板统一为深墨褐高对比表面，选中项用暖金底色与火焰侧线，细边框走赤金到青的过渡。
+repo: https://github.com/Ury479/dsh-wukong-zenfire
+package: "@dsh-external/dsh-client-ui-skin-wukong-zenfire"
+rowId: ui-skin-wukong-zenfire
+category: skin
+tags:
+  - anime
+  - dark
+  - gold
+  - mythology
+modes:
+  - dark
+install:
+  target: github:Ury479/dsh-wukong-zenfire#f82e0c567ff3dfa15491369a209758334c772084
+  version: 0.1.1
+  commit: f82e0c567ff3dfa15491369a209758334c772084
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Ury479/dsh-wukong-zenfire/f82e0c567ff3dfa15491369a209758334c772084/preview/dark.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1184
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:10.128Z
+metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+starsUpdatedAt: 2026-11-14T06:29:10.128Z
+updatedAt: 2026-11-14T06:29:10.128Z
+listScreenshot: https://raw.githubusercontent.com/Ury479/dsh-wukong-zenfire/f82e0c567ff3dfa15491369a209758334c772084/preview/dark.png

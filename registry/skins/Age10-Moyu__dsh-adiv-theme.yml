@@ -1,0 +1,55 @@
+id: age10.moyu.dsh.adiv.theme
+name:
+  zh: A\ 主题
+  en: A\ Theme
+author: Age10-Moyu
+description: 羊皮纸暖调主题：米白纸面、焦橙强调色、环形描边阴影，内容标题用衬线体、界面框架保持无衬线，明暗两套配色都不带冷蓝灰。安装即生效，没有设置项或开关，停用插件行即可关闭。
+repo: https://github.com/Age10-Moyu/dsh-adiv-theme
+package: dsh-adiv-theme
+rowId: dsh-adiv-theme
+category: skin
+tags:
+  - parchment
+  - warm
+  - serif
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Age10-Moyu/dsh-adiv-theme#d2035b79a5e43b3fbb0b2cd6814630a3e2f68221
+  version: 1.0.0
+  commit: d2035b79a5e43b3fbb0b2cd6814630a3e2f68221
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1187
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/home.png
+  - skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/conversation.png
+  - skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/settings.png

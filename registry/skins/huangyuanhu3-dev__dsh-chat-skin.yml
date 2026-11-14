@@ -1,0 +1,57 @@
+id: huangyuanhu3.dev.dsh.chat.skin
+name:
+  zh: 聊天外观工坊
+  en: Chat Skin Studio
+author: huangyuanhu3-dev
+description: 给聊天区换背景：8 套内置氛围，或自定义渐变、纯色、图片与本地壁纸；遮罩深浅、模糊、铺法可调，也能把壁纸铺到整个界面，让侧栏与设置页共用同一套毛玻璃。另有 CSS 动画、字体、emoji 头像与运行图标，设置页和右上角 🎨 快捷面板都能改，调整实时生效并保存在本机。
+repo: https://github.com/huangyuanhu3-dev/dsh-chat-skin
+package: dsh-chat-skin
+rowId: chat-skin
+category: skin
+tags:
+  - chat-background
+  - glass
+  - gradient
+  - custom-css
+modes:
+  - light
+  - dark
+install:
+  target: github:huangyuanhu3-dev/dsh-chat-skin#d6bd2411af830513068f3b60e3f34bd8de37ee13
+  version: 1.0.0
+  commit: d6bd2411af830513068f3b60e3f34bd8de37ee13
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1190
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T06:29:27.360Z
+metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+starsUpdatedAt: 2026-11-14T06:29:27.360Z
+updatedAt: 2026-11-14T06:29:27.360Z
+marketScreenshots:
+  - skin-screenshots/huangyuanhu3-dev__dsh-chat-skin/d6bd2411af830513068f3b60e3f34bd8de37ee13/home.png
+  - skin-screenshots/huangyuanhu3-dev__dsh-chat-skin/d6bd2411af830513068f3b60e3f34bd8de37ee13/conversation.png
+  - skin-screenshots/huangyuanhu3-dev__dsh-chat-skin/d6bd2411af830513068f3b60e3f34bd8de37ee13/settings.png
