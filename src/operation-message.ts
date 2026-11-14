@@ -117,6 +117,8 @@ export type OperationMessageKey =
   | 'failure.invalidSpecProblem'
   | 'failure.ambiguousInstallProblem'
   | 'failure.notBundleProblem'
+  | 'failure.hostUpdateVersionProblem'
+  | 'failure.hostUpdateArtifactProblem'
   | 'failure.notRemovableProblem'
   | 'failure.stopProfileProblem'
   | 'failure.bundleInUseProblem'

@@ -10,6 +10,7 @@ import {
   marketUpdateNotice,
   skinRepositoryBrowseUrl,
 } from '../../src/client/failure-help.ts'
+import { createStaticTranslator } from '../../src/client/i18n.ts'
 import type { CatalogSkin, Operation } from '../../src/client/types.ts'
 
 const skin = {
@@ -437,6 +438,18 @@ describe('failure help', () => {
 
     expect(notice.what).toContain('暂时无法连接安装源')
     expect(notice.why).not.toContain('替换为市场版本')
+  })
+
+  it('uses the localized headline carried by a known failure message key', () => {
+    const raw = '官方宿主更新的版本与已核验目标不一致'
+    const keyed: Operation = { ...failed('command', raw), failure: { kind: 'command', message: raw, messageKey: 'failure.hostUpdateVersionProblem' } }
+    const zh = interceptNotice(keyed, '测试皮肤', skin)
+    expect(zh.what).toContain('官方宿主安装的版本与市场核验目标不一致')
+    expect(zh.what).not.toContain('未能完成本次操作')
+    const en = interceptNotice(keyed, 'Test Skin', skin, createStaticTranslator('en'))
+    expect(en.what).toContain('installed a different version')
+    const plain: Operation = { ...failed('command', raw), failure: undefined, messageKey: 'failure.hostUpdateVersionProblem' }
+    expect(interceptNotice(plain, '测试皮肤', skin).what).toContain('官方宿主安装的版本')
   })
 
   it.each([

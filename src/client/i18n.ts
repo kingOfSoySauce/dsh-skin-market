@@ -568,6 +568,8 @@ export const messageCatalog = {
     'failure.ambiguousInstallProblem': 'DSH 无法唯一确定安装目标。',
     'failure.ambiguousInstallNext': '请复制日志，在「反馈市场问题」中提交。',
     'failure.notBundleProblem': '安装包未提供当前 DSH 需要的组合包声明。',
+    'failure.hostUpdateVersionProblem': '官方宿主安装的版本与市场核验目标不一致。',
+    'failure.hostUpdateArtifactProblem': '官方宿主更新后的安装包未通过核验。',
     'failure.notBundleNext': '请核对 DSH 安装方式与皮肤声明。',
     'failure.recoveryProblem': '操作后的插件状态尚未确认。',
     'failure.recoveryNext': '请先在官方插件页核对实际状态。',
@@ -1236,6 +1238,8 @@ export const messageCatalog = {
     'failure.ambiguousInstallProblem': 'DSH cannot identify the install target uniquely.',
     'failure.ambiguousInstallNext': 'Copy the log and submit it through “Report a Market issue”.',
     'failure.notBundleProblem': 'The install package does not provide the bundle declaration required by DSH.',
+    'failure.hostUpdateVersionProblem': 'The official Host installed a different version than the Market verified target.',
+    'failure.hostUpdateArtifactProblem': 'The package installed by the official Host did not pass verification.',
     'failure.notBundleNext': 'Check the DSH install method and the skin declaration.',
     'failure.recoveryProblem': 'The plugin state after the operation is not confirmed.',
     'failure.recoveryNext': 'Check the actual state in the official plugin page first.',
@@ -1506,12 +1510,23 @@ const legacyOperationMessageRules: readonly LegacyOperationMessageRule[] = [
   { key: 'common.operationUninstalled', match: exactOperationMessage('skin uninstalled') },
 ]
 
-function translateKnownOperationMessage(t: Translator, key: string | undefined, params?: OperationMessageParams): string | undefined {
+/**
+ * Translate one known first-party key, possibly written by another host version.
+ * @param key - the message key, or undefined for a raw diagnostic.
+ * @param params - values substituted into the template.
+ * @param t - translator, defaulting to the Chinese catalog.
+ * @returns the localized text, or undefined when this catalog does not know the key.
+ */
+export function messageKeyText(key: string | undefined, params: OperationMessageParams | undefined, t: Translator = defaultTranslator): string | undefined {
   if (key === undefined || !Object.prototype.hasOwnProperty.call(messageCatalog.zh, key)) return undefined
   const translated = t(key as MessageKey, params as never)
   // Identity translators are useful in old test/host shims. Do not replace
   // their raw message with a catalog key when they do not translate it.
   return translated === key ? undefined : translated
+}
+
+function translateKnownOperationMessage(t: Translator, key: string | undefined, params?: OperationMessageParams): string | undefined {
+  return messageKeyText(key, params, t)
 }
 
 /** Translate first-party operation text while leaving unknown diagnostics byte-for-byte unchanged. */

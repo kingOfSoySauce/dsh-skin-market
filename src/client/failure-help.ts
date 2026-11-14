@@ -1,5 +1,6 @@
 import { normalizeGitHubRepository, REGISTRY_REPOSITORY } from './submission.ts'
-import { defaultTranslator, type MessageKey, type Translator } from './i18n.ts'
+import { defaultTranslator, messageKeyText, type MessageKey, type Translator } from './i18n.ts'
+import type { OperationMessageFields } from '../operation-message.ts'
 import type { CatalogSkin, MarketHostKind, Operation } from './types.ts'
 
 export const MARKET_MANUAL_UPDATE_URL = `${REGISTRY_REPOSITORY}#manual-update`
@@ -145,7 +146,7 @@ function sourceMigrationExplanation(message: string): FailureExplanation | undef
   return undefined
 }
 
-function failureExplanation(kind: FailureHelpSubject['failureKind'], message: string, code: string | undefined, t: Translator): { problem: string; next: string } {
+function failureExplanation(kind: FailureHelpSubject['failureKind'], message: string, code: string | undefined, t: Translator, messageKey?: OperationMessageFields['messageKey'], messageParams?: OperationMessageFields['messageParams']): { problem: string; next: string } {
   const render = (copy: FailureExplanation): { problem: string; next: string } => ({ problem: t(copy.problem), next: t(copy.next) })
   const context = contextExplanation(code, message, t)
   if (context !== undefined) return render(context)
@@ -173,6 +174,9 @@ function failureExplanation(kind: FailureHelpSubject['failureKind'], message: st
   if (kind === 'integrity' || /完整性|integrity mismatch|ERR_PNPM_TARBALL_INTEGRITY/i.test(diagnostic)) return render({ problem: 'failure.integrityProblem', next: 'failure.integrityNext' })
   if (hasMissingArtifact(diagnostic)) return render({ problem: 'failure.missingArtifactProblem', next: 'failure.missingArtifactNext' })
   if (hasMissingModule(diagnostic)) return render({ problem: 'failure.missingModuleProblem', next: 'failure.missingModuleNext' })
+  // A host-version key keeps a specific headline for diagnostics this client has no kind for.
+  const keyed = messageKeyText(messageKey, messageParams, t)
+  if (keyed !== undefined) return { problem: keyed, next: t('failure.genericNext') }
   return render({ problem: 'failure.genericProblem', next: 'failure.genericNext' })
 }
 
@@ -443,6 +447,8 @@ export function interceptNotice(operation: Operation, skinName: string, skin?: (
   const manual = manualInstallNotice(t('failure.operation', { action: kind }), operation.failure?.manualSpec, t)
   if (manual !== undefined) return manual
   const raw = (operation.failure?.message ?? operation.message ?? '').trim()
+  const failureKey = operation.failure?.messageKey ?? operation.messageKey
+  const failureParams = operation.failure?.messageParams ?? operation.messageParams
   const links = failureHelpLinks({
     source: 'skin',
     failureKind: operation.failure?.kind,
@@ -470,7 +476,7 @@ export function interceptNotice(operation: Operation, skinName: string, skin?: (
     }
   }
   if (hasRecoveryFailure(raw)) {
-    const explanation = failureExplanation(operation.failure?.kind, raw, operation.failure?.code, t)
+    const explanation = failureExplanation(operation.failure?.kind, raw, operation.failure?.code, t, failureKey, failureParams)
     return {
       title: t('failure.operation', { action: kind }),
       what: t('failure.failureWhat', { name: skinName, problem: explanation.problem }),
@@ -528,7 +534,7 @@ export function interceptNotice(operation: Operation, skinName: string, skin?: (
       links,
     }
   }
-  const explanation = failureExplanation(operation.failure?.kind, raw, operation.failure?.code, t)
+  const explanation = failureExplanation(operation.failure?.kind, raw, operation.failure?.code, t, failureKey, failureParams)
   return {
     title: t('failure.operation', { action: kind }),
     what: t('failure.failureWhat', { name: skinName, problem: explanation.problem }),
@@ -537,15 +543,17 @@ export function interceptNotice(operation: Operation, skinName: string, skin?: (
   }
 }
 
-export function marketUpdateNotice(operation: { failure?: Operation['failure']; message?: string }, t: Translator = defaultTranslator): InterceptNotice {
+export function marketUpdateNotice(operation: { failure?: Operation['failure']; message?: string; messageKey?: OperationMessageFields['messageKey']; messageParams?: OperationMessageFields['messageParams'] }, t: Translator = defaultTranslator): InterceptNotice {
   const blocked = existingSourceNotice(t('failure.marketUpdateAction'), t('market.title'), operation.failure, t)
   if (blocked !== undefined) return blocked
   const manual = manualInstallNotice(t('failure.marketUpdateFailed'), operation.failure?.manualSpec, t)
   if (manual !== undefined) return manual
   const raw = (operation.failure?.message ?? operation.message ?? '').trim()
+  const failureKey = operation.failure?.messageKey ?? operation.messageKey
+  const failureParams = operation.failure?.messageParams ?? operation.messageParams
   const fallbackSpec = operation.failure?.fallbackSpec?.trim()
   if (fallbackSpec !== undefined && fallbackSpec !== '') {
-    const explanation = failureExplanation(operation.failure?.kind, raw, operation.failure?.code, t)
+    const explanation = failureExplanation(operation.failure?.kind, raw, operation.failure?.code, t, failureKey, failureParams)
     return {
       title: t('failure.marketUpdateFailed'),
       what: explanation.problem,
@@ -567,7 +575,7 @@ export function marketUpdateNotice(operation: { failure?: Operation['failure']; 
       links: [],
     }
   }
-  const explanation = failureExplanation(operation.failure?.kind, raw, operation.failure?.code, t)
+  const explanation = failureExplanation(operation.failure?.kind, raw, operation.failure?.code, t, failureKey, failureParams)
   return {
     title: t('failure.marketUpdateFailed'),
     what: explanation.problem,

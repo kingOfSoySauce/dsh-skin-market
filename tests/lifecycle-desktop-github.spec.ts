@@ -238,6 +238,17 @@ describe('official Desktop managed update', () => {
     expect(readDependencies(f.directory)[f.item.package]).toBe(f.item.install.target)
   })
 
+  it('reports a Host-installed version that differs from the verified target with a localized key', async () => {
+    const f = updatingFixture()
+    f.manager.updateBundle.mockResolvedValueOnce({
+      from: '0.9.0', to: '1.0.0', step: 'install',
+      result: { application: 'applied', changed: true, stage: 'install', target: f.item.package, version: '9.9.9' },
+    })
+    const operation = await finished(f.lifecycle.begin('update', f.item.id))
+    expect(operation).toMatchObject({ phase: 'failed', messageKey: 'failure.hostUpdateVersionProblem' })
+    expect(f.manager.installBundle).not.toHaveBeenCalled()
+  })
+
   it('fails without repeating the update when the Host restored the previous version', async () => {
     const f = updatingFixture()
     f.manager.updateBundle.mockResolvedValueOnce({

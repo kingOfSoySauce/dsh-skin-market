@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { assertCatalogParity, catalogKeys, createStaticTranslator, createTranslator, operationMessage, type MessageKey } from '../../src/client/i18n.ts'
+import { assertCatalogParity, catalogKeys, createStaticTranslator, createTranslator, messageKeyText, operationMessage, type MessageKey } from '../../src/client/i18n.ts'
 
 describe('first-party message catalog', () => {
   it('keeps the zh and en key sets in parity', () => {
@@ -27,6 +27,8 @@ describe('first-party message catalog', () => {
     expect(operationMessage({ messageKey: 'common.operationHostUpdateRemoving' }, t)).toBe('Removing the installed version')
     expect(operationMessage({ messageKey: 'common.operationHostUpdateFallback' }, t)).toContain('official update check')
     expect(operationMessage({ messageKey: 'common.operationHostUpdateRestoring' }, createStaticTranslator('zh'))).toBe('更新失败，正在恢复已安装的版本')
+    expect(messageKeyText('failure.hostUpdateVersionProblem', undefined, t)).toBe('The official Host installed a different version than the Market verified target.')
+    expect(messageKeyText('failure.unknownKey', undefined, t)).toBeUndefined()
     const diagnostic = 'RAW_DIAGNOSTIC_MARKER /private/profile\nline 2'
     expect(operationMessage({ message: diagnostic }, t)).toBe(diagnostic)
   })

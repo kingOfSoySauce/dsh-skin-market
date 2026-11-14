@@ -75,7 +75,7 @@ import {
   type LoaderIdentity,
   type InstalledArtifactSnapshot,
 } from './profile.ts'
-import { messageFields, writeOperationMessage, writeOperationStep, type OperationMessageKey, type OperationMessageParams } from './operation-message.ts'
+import { MarketMessageError, messageFields, writeOperationMessage, writeOperationStep, type OperationMessageKey, type OperationMessageParams } from './operation-message.ts'
 import type { DesktopInstallCapability, DshRuntime, InstallConflict, LoaderEntry, ManualFollowUp, MarketHostKind, Operation, OperationFailure, OperationKind, OperationRetryAction, PersistedMarketState, SelectionOperationKind, SkinArtifactRisk, SkinEntry, SkinRuntimeState } from './types.ts'
 
 export interface LifecycleHost {
@@ -2299,10 +2299,10 @@ export class SkinLifecycle {
     }
     this.acceptManagement(result, operation, skin)
     if (result.management?.version !== undefined && result.management.version !== target.version) {
-      throw new Error('官方宿主更新的版本与已核验目标不一致')
+      throw new MarketMessageError('官方宿主更新的版本与已核验目标不一致', 'failure.hostUpdateVersionProblem')
     }
     const artifact = validateDesktopArtifact(this.options.profileDir, skin, { allowArtifactRisk: true })
-    if (!artifact.ok) throw new Error(artifact.reason ?? '官方宿主更新构件未通过核验')
+    if (!artifact.ok) throw new MarketMessageError(`官方宿主更新后的安装包未通过核验：${artifact.reason ?? '原因未报告'}`, 'failure.hostUpdateArtifactProblem')
     this.assertLegacyOfficialPeers(packageManifest(this.options.profileDir, skin.package))
     if (management.installRequiresRestart) operation.restartRequired = true
     return true
