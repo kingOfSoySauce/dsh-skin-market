@@ -5,12 +5,18 @@ on:
     paths:
       - 'registry/skins/**'
       - 'registry/skin.schema.json'
+      - 'registry/submission-contract.json'
       - 'data/catalog.json'
+      - 'data/catalog-copy.json'
       - 'scripts/build-registry.mjs'
+      - 'scripts/catalog-copy.mjs'
+      - 'scripts/entry-update-guard.mjs'
       - 'scripts/hydrate-submission.mjs'
       - 'scripts/screenshot-refs.mjs'
       - 'scripts/media.mjs'
       - 'scripts/build-media.mjs'
+      - 'scripts/submission-contract.mjs'
+      - 'scripts/version-range.mjs'
       - 'src/client/submission.ts'
       - 'tests/submission.spec.ts'
       - 'package.json'
@@ -60,33 +66,13 @@ jobs:
       - name: Run submission prompt smoke tests
         run: npm run smoke:submission
 
-      - name: Reject generated catalog changes in community PRs
+      # One guard for both community paths: a new thin entry, or an update to an
+      # entry the author already owns (optionally with its own display copy).
+      # It diffs from the PR merge-base so a branch that is behind main only
+      # reports its own changes; data/catalog.json is always rejected.
+      - name: Guard community entry updates
         if: github.event.pull_request.head.repo.full_name != github.repository
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-        run: |
-          if git diff --name-only "$BASE_SHA" "$HEAD_SHA" | grep -Fxq 'data/catalog.json'; then
-            echo 'Community registry PRs must not modify generated data/catalog.json.'
-            echo 'Add or update only registry/skins/<entry>.yml; main will regenerate the catalog after merge.'
-            exit 1
-          fi
-
-      - name: Enforce one-file community registry submissions
-        if: github.event.pull_request.head.repo.full_name != github.repository
-        env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-        run: |
-          changed_files="$(git diff --name-only "$BASE_SHA" "$HEAD_SHA")"
-          if ! printf '%s\n' "$changed_files" | grep -q '^registry/skins/'; then
-            exit 0
-          fi
-
-          registry_file_count="$(printf '%s\n' "$changed_files" | awk '/^registry\/skins\/[^/]+\.yml$/ { count++ } END { print count + 0 }')"
-          invalid_files="$(printf '%s\n' "$changed_files" | grep -vE '^registry/skins/[^/]+\.yml$' || true)"
-          if [ "$registry_file_count" -ne 1 ] || [ -n "$invalid_files" ]; then
-            echo 'Community registry submissions must change exactly one registry/skins/<entry>.yml file.'
-            printf 'Changed files:\n%s\n' "$changed_files"
-            exit 1
-          fi
+        run: node scripts/entry-update-guard.mjs --base "$BASE_SHA" --head "$HEAD_SHA"

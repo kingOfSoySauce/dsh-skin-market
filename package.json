@@ -23,6 +23,7 @@
     "stars:curves": "node scripts/build-star-curves.mjs",
     "registry:check": "node scripts/build-registry.mjs --check",
     "registry:identity": "node scripts/check-loader-identity.mjs --all",
+    "entry:guard": "node scripts/entry-update-guard.mjs",
     "stars:record": "node scripts/record-stars.mjs",
     "hydrate": "node scripts/hydrate-submission.mjs",
     "media:build": "node scripts/build-media.mjs",

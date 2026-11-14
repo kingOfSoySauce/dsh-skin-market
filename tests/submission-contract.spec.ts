@@ -49,4 +49,23 @@ describe('submission contract', () => {
     expect(hint).toContain('`url`')
     expect(hint).toContain('`screenshots`')
   })
+
+  it('documents editable and machine-owned fields for existing entries', async () => {
+    const contract = await loadContract()
+    for (const field of ['name', 'description', 'screenshots', 'marketScreenshots', 'compatibility.dsh', 'data/catalog-copy.json']) {
+      expect(contract.existingEntryUpdate.updateFields).toContain(field)
+    }
+    for (const field of ['id', 'repo', 'subpath', 'install', 'license', 'review', 'featuredRank', 'updatedAt']) {
+      expect(contract.existingEntryUpdate.updateForbiddenFields).toContain(field)
+    }
+    expect(contract.existingEntryUpdate.updateForbiddenPaths).toContain('data/catalog.json')
+    const zh = renderBlock(contract, 'zh')
+    expect(zh).toContain('已收录条目更新（作者可改）')
+    expect(zh).toContain('字段说明：')
+    expect(zh).toContain('- `compatibility.dsh`：')
+    const en = renderBlock(contract, 'en')
+    expect(en).toContain('Existing entry update (author-editable)')
+    expect(en).toContain('Field notes:')
+    expect(en).toContain('- `compatibility.dsh`:')
+  })
 })

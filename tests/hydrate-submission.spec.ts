@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { hydrateSkinSubmission, isThinSubmission, parseGitHubTarget, readmeImageValues, statedDshCompatibility, submissionFilename, thinSubmissionHint } from '../scripts/hydrate-submission.mjs'
+import { compatibility, hydrateSkinSubmission, isThinSubmission, parseGitHubTarget, readmeImageValues, statedDshCompatibility, submissionFilename, thinSubmissionHint } from '../scripts/hydrate-submission.mjs'
 
 describe('thin registry submissions', () => {
   it('accepts url-only drafts and GitHub tree paths', () => {
@@ -140,10 +140,41 @@ describe('thin registry submissions', () => {
 
   it('reads Web and official Desktop version declarations from the README', () => {
     expect(statedDshCompatibility('兼容 DSH Web >=0.1.0-rc.6，官方 Desktop >=0.2.0-rc.1')).toBe('>=0.1.0-rc.6 || >=0.2.0-rc.1')
-    expect(statedDshCompatibility('插件页入口已对照 Web `0.1.7-rc.2` 与官方 Desktop `0.2.1-rc.2` 的契约')).toBe('0.1.7-rc.2 || 0.2.1-rc.2')
     expect(statedDshCompatibility('支持 DSH 0.1.0-rc.6 及以上')).toBe('>=0.1.0-rc.6')
     expect(statedDshCompatibility('支持 DSH >=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.1')).toBe('>=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.1')
     expect(statedDshCompatibility('下载 leon___-dsh-client-liang-intensity-skin-0.1.11.tgz')).toBeNull()
+  })
+
+  it('ignores bare versions (including pre-releases) in README prose', () => {
+    // A bare version is a verification note or a package pin, not a host range.
+    expect(statedDshCompatibility('插件页入口已对照 Web `0.1.7-rc.2` 与官方 Desktop `0.2.1-rc.2` 的契约')).toBeNull()
+    const readme = [
+      '**兼容范围：** 支持 DSH Web 与 DSH Desktop `^0.2.1-rc.5 || ^0.2.2-rc.1`。DSH Desktop 通过应用内嵌的 Web 界面加载本皮肤。`0.2.1-rc.5` 已有实机验证；`0.2.2-rc.1` 的验证范围见[兼容性](#兼容性)。',
+      '运行 DSH `0.2.2-rc.1` CLI 时遵守宿主的运行时要求。',
+      '## 兼容性',
+      '- 声明范围：DSH Web / Desktop `^0.2.1-rc.5 || ^0.2.2-rc.1`。`0.2.1-rc.5` 已有实机验证。',
+    ].join('\n')
+    expect(statedDshCompatibility(readme)).toBe('^0.2.1-rc.5 || ^0.2.2-rc.1')
+  })
+
+  it('deduplicates clauses and drops clauses contained in a longer one', () => {
+    expect(statedDshCompatibility('兼容 DSH >=0.1.0-rc.6 <0.2.0；另见 DSH >=0.1.0-rc.6')).toBe('>=0.1.0-rc.6 <0.2.0')
+    expect(statedDshCompatibility('DSH >=0.2.0-rc.1；DSH >=0.2.0-rc.1')).toBe('>=0.2.0-rc.1')
+  })
+
+  it('keeps at most four compatibility clauses', () => {
+    expect(statedDshCompatibility('DSH >=0.1.0 DSH >=0.1.1 DSH >=0.1.2 DSH >=0.1.3 DSH >=0.1.4')).toBe('>=0.1.0 || >=0.1.1 || >=0.1.2 || >=0.1.3')
+  })
+
+  it('prefers package engines.dsh, then README, then dsh-* dependencies', () => {
+    expect(compatibility({ engines: { dsh: '>=0.2.0-rc.1' } }, '兼容 DSH >=0.9.9')).toBe('>=0.2.0-rc.1')
+    expect(compatibility({ engines: { dsh: 'workspace:*' } }, '兼容 DSH >=0.2.0-rc.1')).toBe('>=0.2.0-rc.1')
+    expect(compatibility({ engines: { dsh: 'unverified' } }, '')).toBeNull()
+    expect(compatibility({}, '兼容 DSH >=0.2.0-rc.1')).toBe('>=0.2.0-rc.1')
+    expect(compatibility({
+      dependencies: { '@deepseek-ai/dsh-client-runtime': 'workspace:*', '@deepseek-ai/dsh-client-ui': '^0.1.0-rc.6' },
+    }, '')).toBe('^0.1.0-rc.6')
+    expect(compatibility({}, '')).toBeNull()
   })
 
   it('reads inline, reference and HTML README images', () => {
@@ -186,5 +217,35 @@ describe('thin registry submissions', () => {
     expect(skin.compatibility).toMatchObject({ dsh: '>=0.1.0-rc.6 || >=0.2.0-rc.1', platform: ['web'] })
     expect(skin.screenshots).toEqual(['https://raw.githubusercontent.com/owner/desktop-skin/deadbeefdeadbeefdeadbeefdeadbeefdeadbeef/docs/home.png'])
     expect(skin.health.checks).toMatchObject({ readmeScreenshots: 'pass', compatibility: 'pass' })
+  })
+
+  it('hydrates compatibility from package engines.dsh before the README statement', async () => {
+    const sha = 'deadbeefdeadbeefdeadbeefdeadbeefdeadbeef'
+    const files: Record<string, string> = {
+      'package.json': JSON.stringify({
+        name: 'engines-skin',
+        version: '1.0.0',
+        description: 'Engines skin',
+        license: 'MIT',
+        engines: { dsh: '>=0.2.0-rc.1' },
+        dsh: { client: { platform: 'web' } },
+        exports: { './client': './dist/client.js' },
+      }),
+      'cordis.patch.yml': '- insert:\n    - id: engines-skin\n      name: engines-skin\n',
+      'README.md': '兼容 DSH Web >=0.1.0-rc.6，官方 Desktop >=0.2.0-rc.1。\n',
+      'LICENSE': 'MIT License',
+      'dist/client.js': 'export {}',
+    }
+    const fetchText = async (url: string) => {
+      if (url.includes('api.github.com/repos/owner/engines-skin')) return { default_branch: 'main', stargazers_count: 1, topics: [] }
+      const file = Object.keys(files).find(path => url.endsWith(`/${sha}/${path}`))
+      return file ? files[file] : null
+    }
+    const skin = await hydrateSkinSubmission(
+      { url: 'https://github.com/owner/engines-skin' },
+      { fetchText, sha, now: '2026-11-14T00:00:00.000Z' },
+    )
+    expect(skin.compatibility).toMatchObject({ dsh: '>=0.2.0-rc.1', platform: ['web'] })
+    expect(skin.review.compatibility).toBe('verified')
   })
 })
