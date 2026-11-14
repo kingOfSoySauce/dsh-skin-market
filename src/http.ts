@@ -81,7 +81,11 @@ export function refuseUnadmitted(request: IncomingMessage, response: ServerRespo
   let status: number | undefined
   try { status = connection.requestRejection(request) } catch { status = 403 }
   if (status === undefined) return false
-  sendJson(response, status === 401 ? 401 : 403, { error: status === 401 ? '请先登录当前 DSH 宿主' : '请求未通过宿主验证' })
+  const loginRequired = status === 401
+  sendJson(response, status === 401 ? 401 : 403, {
+    error: loginRequired ? '请先登录当前 DSH 宿主' : '请求未通过宿主验证',
+    errorKey: loginRequired ? 'server.loginRequired' : 'server.requestNotAdmitted',
+  })
   return true
 }
 

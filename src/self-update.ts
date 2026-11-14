@@ -14,7 +14,7 @@ import { compareVersions, parseVersion } from './semver.ts'
 import { marketFetch, marketNetworkMode } from './market-fetch.ts'
 import { normalizeRegistryBase } from './registry-plan.ts'
 import type { OperationFailure } from './types.ts'
-import { writeOperationMessage, type OperationMessageFields, type OperationMessageKey, type OperationMessageParams } from './operation-message.ts'
+import { MarketMessageError, writeOperationMessage, type OperationMessageFields, type OperationMessageKey, type OperationMessageParams } from './operation-message.ts'
 import type { OfficialApplication } from './official-desktop.ts'
 
 export const MARKET_NPM_PACKAGE = 'dsh-skin-market'
@@ -831,7 +831,7 @@ export function createMarketUpdater(
   }
 
   const startUpdate = (approval?: MarketReleaseApproval): MarketUpdateOperation => {
-    if (disposed) throw new Error('皮肤市场更新器已停止')
+    if (disposed) throw new MarketMessageError('皮肤市场更新器已停止', 'server.marketUpdateStopped')
     if (activeOperation !== null) return operations.get(activeOperation)!
     reconcileInstalledVersion()
     const operation: MarketUpdateOperation = { id: randomUUID(), phase: 'queued', cancelable: cancellationAvailable(), startedAt: new Date().toISOString() }
@@ -859,12 +859,12 @@ export function createMarketUpdater(
     get restartRequired() { reconcileInstalledVersion(); return restartRequired },
     get restartNoticeId() { reconcileInstalledVersion(); return restartRequired ? `market-${loadedVersion}-${installedVersion}` : undefined },
     async update() {
-      if (updating) throw new Error('皮肤市场正在更新')
+      if (updating) throw new MarketMessageError('皮肤市场正在更新', 'server.marketUpdateBusy')
       const operation = startUpdate()
       while (operation.phase !== 'done' && operation.phase !== 'failed' && operation.phase !== 'cancelled' && operation.phase !== 'waiting') {
         await new Promise(resolve => setTimeout(resolve, 10))
       }
-      if (operation.phase !== 'done' || operation.status === undefined) throw new Error(operation.message ?? '皮肤市场更新失败')
+      if (operation.phase !== 'done' || operation.status === undefined) throw new MarketMessageError(operation.message ?? '皮肤市场更新失败', 'failure.marketUpdateFailed')
       return operation.status
     },
     startUpdate: () => startUpdate(),
@@ -872,7 +872,7 @@ export function createMarketUpdater(
     currentOperation() { return activeOperation === null ? null : operations.get(activeOperation) ?? null },
     cancel(id) {
       const operation = operations.get(id)
-      if (operation === undefined) throw new Error('更新任务不存在')
+      if (operation === undefined) throw new MarketMessageError('更新任务不存在', 'server.marketUpdateOperationNotFound')
       if (operation.cancelable !== true) return operation
       if (!cancellationAvailable()) { operation.cancelable = false; return operation }
       setOperation(operation, { phase: 'cancelling', message: '正在取消皮肤市场更新', messageKey: 'common.marketOperationCancelling' })
@@ -881,11 +881,11 @@ export function createMarketUpdater(
     },
     retry(id, action = 'retry') {
       const failed = operations.get(id)
-      if (failed === undefined || failed.phase !== 'failed' || failed.failure?.action !== action) throw new Error('更新任务不可重试')
+      if (failed === undefined || failed.phase !== 'failed' || failed.failure?.action !== action) throw new MarketMessageError('更新任务不可重试', 'server.marketUpdateNotRetryable')
       if (action === 'approve-release-age') {
         const approval = releaseAgeApprovals.get(id)
-        if (approval === undefined || failed.failure !== approval.failure) throw new Error('更新任务不可重试')
-        if (activeOperation !== null) throw new Error('皮肤市场正在更新')
+        if (approval === undefined || failed.failure !== approval.failure) throw new MarketMessageError('更新任务不可重试', 'server.marketUpdateNotRetryable')
+        if (activeOperation !== null) throw new MarketMessageError('皮肤市场正在更新', 'server.marketUpdateBusy')
         return startUpdate(approval)
       }
       return startUpdate()

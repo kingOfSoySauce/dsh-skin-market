@@ -731,7 +731,7 @@ export class SkinLifecycle {
     const managed = result.management
     if (managed?.indeterminate === true) {
       this.unresolvedManager = true
-      if (operation !== undefined) this.update(operation, 'waiting', this.waitingReason)
+      if (operation !== undefined) this.update(operation, 'waiting', this.waitingReason, this.unresolvedManager ? 'common.operationResultUnknown' : 'common.operationResultPending')
       throw new Error(this.waitingReason)
     }
     if (managed?.application !== undefined && operation !== undefined) {
@@ -751,7 +751,7 @@ export class SkinLifecycle {
     const timer = setTimeout(() => {
       delayed = true
       this.pendingLifecycle.add(promise)
-      if (operation !== undefined) this.update(operation, 'waiting', this.waitingReason)
+      if (operation !== undefined) this.update(operation, 'waiting', this.waitingReason, this.unresolvedManager ? 'common.operationResultUnknown' : 'common.operationResultPending')
     }, this.options.lifecycleWaitMs ?? 10_000)
     timer.unref?.()
     try {
@@ -1051,13 +1051,13 @@ export class SkinLifecycle {
     if (plan === null || plan.adapterIds.length === 0) return
     if (this.management !== undefined) throw new Error('当前官方 Desktop 的插件事务不能由市场改写兼容补丁，请使用适合当前宿主的插件版本')
     persistCompatibilityPatch(this.options.profileDir, plan)
-    await this.syncPnpmMetadata(operation, `正在应用兼容适配：${plan.adapterIds.join('、')}`)
+    await this.syncPnpmMetadata(operation, `正在应用兼容适配：${plan.adapterIds.join('、')}`, 'common.operationApplyingCompatibility', { adapters: plan.adapterIds.join('、') })
   }
 
-  private async syncPnpmMetadata(operation: Operation, message = '正在同步 pnpm 锁文件'): Promise<void> {
+  private async syncPnpmMetadata(operation: Operation, message = '正在同步 pnpm 锁文件', messageKey: OperationMessageKey | undefined = message === '正在同步 pnpm 锁文件' ? 'common.operationSyncingLockfile' : undefined, messageParams?: OperationMessageParams): Promise<void> {
     if (this.management !== undefined) return
     if (!patchedDependenciesNeedSync(this.options.profileDir)) return
-    this.update(operation, 'installing', message)
+    this.update(operation, 'installing', message, messageKey, messageParams)
     await this.run(['install', '--no-frozen-lockfile'], operation)
     if (patchedDependenciesNeedSync(this.options.profileDir)) {
       throw new Error('pnpm patchedDependencies 未能与锁文件同步，已停止本次操作以保护 profile')
@@ -1609,7 +1609,7 @@ export class SkinLifecycle {
   }
 
   begin(kind: OperationKind, skinId: string, approvedBuildKeys?: readonly string[] | string, acknowledgeCompatibility = false, acknowledgedContext?: string, releaseAgeApproval?: ReleaseAgeApproval, artifactContext?: string, configurationRepair?: ConfigurationRepairApproval, selectionConfigurationContext?: string, sourceContext?: string, preservedSkinIds?: readonly string[], preservedSkinApprovals?: Record<string, { compatibilityContext: string; artifactContext?: string }>, selectionContext?: string): Operation {
-    if (this.disposed) throw new Error('皮肤市场宿主已停止，不能开始新的操作')
+    if (this.disposed) throw new MarketMessageError('皮肤市场宿主已停止，不能开始新的操作', 'failure.hostStoppedProblem')
     if (this.waitingReason !== undefined) throw new Error(this.waitingReason)
     if (selectionConfigurationContext !== undefined && (!isSelectionOperation(kind) || !/^[a-f0-9]{64}$/.test(selectionConfigurationContext) || configurationRepair !== undefined)) throw new Error('invalid configuration context')
     if (sourceContext !== undefined && (kind !== 'migrate' || sourceContext.length !== 64 || !/^[a-f0-9]{64}$/.test(sourceContext))) throw new Error('invalid source context')
@@ -1622,18 +1622,18 @@ export class SkinLifecycle {
     if (selectionContext !== undefined && (kind !== 'activate' || !/^[a-f0-9]{64}$/.test(selectionContext))) throw new Error('invalid selection context')
     const action = kind === 'install' ? 'install' : kind === 'update' || kind === 'migrate' ? 'update' : kind === 'activate' || kind === 'pin' ? 'enable' : kind === 'uninstall' ? 'remove' : 'disable'
     const capability = this.management?.capabilities()[action]
-    if (capability?.available === false) throw new Error(capability.reason ?? '当前宿主不支持此操作，请使用官方插件页')
+    if (capability?.available === false) throw new MarketMessageError(capability.reason ?? '当前宿主不支持此操作，请使用官方插件页', 'failure.hostUnsupportedProblem')
     const skin = this.skin(skinId)
     if (kind === 'activate' || kind === 'pin') {
-      if (acknowledgeCompatibility === true && acknowledgedContext !== compatibilityContext(skin, this.runtime)) throw new Error('皮肤版本、兼容范围或 DSH 版本已变化，请重新确认兼容性提示')
+      if (acknowledgeCompatibility === true && acknowledgedContext !== compatibilityContext(skin, this.runtime)) throw new MarketMessageError('皮肤版本、兼容范围或 DSH 版本已变化，请重新确认兼容性提示', 'failure.compatibilityChangedProblem')
       const assessment = assessCompatibility(skin, this.runtime)
-      if (this.management !== undefined && assessment.decision === 'incompatible' && acknowledgeCompatibility !== true) throw new Error(`${assessment.reason}；请在兼容性提示中确认后继续`)
+      if (this.management !== undefined && assessment.decision === 'incompatible' && acknowledgeCompatibility !== true) throw new MarketMessageError(`${assessment.reason}；请在兼容性提示中确认后继续`, 'failure.compatibilityConfirmProblem', { reason: assessment.reason })
     }
-    if (artifactContext !== undefined && kind !== 'activate' && kind !== 'pin') throw new Error('安装构件确认仅适用于使用或常驻操作')
+    if (artifactContext !== undefined && kind !== 'activate' && kind !== 'pin') throw new MarketMessageError('安装构件确认仅适用于使用或常驻操作', 'failure.artifactConsentScopeProblem')
     if (kind === 'install' || kind === 'update' || kind === 'migrate') {
       if (this.hostKind === 'desktop') {
         const plan = desktopInstallPlan(skin, this.management !== undefined, true)
-        if (plan.kind === 'manual') throw new Error(`Desktop 当前不支持该皮肤的一键安装（${plan.reason}），请使用官方添加插件面板`)
+        if (plan.kind === 'manual') throw new MarketMessageError(`Desktop 当前不支持该皮肤的一键安装（${plan.reason}），请使用官方添加插件面板`, 'failure.desktopManualProblem', { reason: plan.reason })
       }
       // The market hosts do not treat the catalog review as an install
       // capability. An unreadable client source is a verification gap, not
@@ -1690,14 +1690,14 @@ export class SkinLifecycle {
   retry(id: string, action: OperationRetryAction, acknowledgeCompatibility = false, acknowledgedContext?: string, acknowledgedArtifactContext?: string, configurationContext?: string): Operation {
     const failed = this.operations.get(id)
     if (failed === undefined || failed.phase !== 'failed') throw new Error('operation is not retryable')
-    if (failed.failure?.action !== action) throw new Error('该操作不支持此恢复动作')
+    if (failed.failure?.action !== action) throw new MarketMessageError('该操作不支持此恢复动作', 'failure.retryUnsupportedProblem')
     let releaseAgeApproval: ReleaseAgeApproval | undefined
     let configurationRepair: ConfigurationRepairApproval | undefined
     if (action === 'repair-configuration') {
       const plan = failed.failure.configurationOverride
       const binding = this.failedConfigurationBindings.get(id)
       if (plan?.status !== 'repairable' || typeof configurationContext !== 'string' || configurationContext !== plan.context
-        || this.configurationTarget(failed) === undefined || binding !== this.configurationBinding(failed)) throw new Error('配置修复目标已变化，请重新检查后确认')
+        || this.configurationTarget(failed) === undefined || binding !== this.configurationBinding(failed)) throw new MarketMessageError('配置修复目标已变化，请重新检查后确认', 'failure.repairTargetChangedProblem')
       configurationRepair = { failedId: id, context: configurationContext, binding }
     }
     let artifactContext = acknowledgedArtifactContext
@@ -1706,18 +1706,18 @@ export class SkinLifecycle {
       const target = failed.failure.releaseAgeTarget
       if (approved === undefined || target === undefined
         || target.packageName !== approved.target.packageName || target.version !== approved.target.version
-        || approved.context !== this.releaseAgeContext(failed)) throw new Error('需要放行的版本或安装目标已变化，请重新操作后确认')
+        || approved.context !== this.releaseAgeContext(failed)) throw new MarketMessageError('需要放行的版本或安装目标已变化，请重新操作后确认', 'failure.releaseAgeTargetChangedProblem')
       releaseAgeApproval = { target: { ...approved.target }, context: approved.context, failedId: id }
     }
     if (action === 'approve-artifact') {
       const approved = this.failedArtifactContexts.get(id)
       if (approved === undefined || approved.context !== failed.failure.artifactRisk?.context
         || approved.kind !== failed.kind || approved.skinId !== failed.skinId
-        || acknowledgedArtifactContext !== undefined && acknowledgedArtifactContext !== approved.context) throw new Error('需要确认的安装构件已变化，请重新操作后确认')
+        || acknowledgedArtifactContext !== undefined && acknowledgedArtifactContext !== approved.context) throw new MarketMessageError('需要确认的安装构件已变化，请重新操作后确认', 'failure.artifactTargetChangedProblem')
       artifactContext = approved.context
     }
     const approvedBuildKeys = action === 'approve-build' ? this.pendingBuildKeys.get(id) : undefined
-    if (action === 'approve-build' && (approvedBuildKeys === undefined || approvedBuildKeys.length === 0)) throw new Error('未找到需要批准的精确构建项')
+    if (action === 'approve-build' && (approvedBuildKeys === undefined || approvedBuildKeys.length === 0)) throw new MarketMessageError('未找到需要批准的精确构建项', 'failure.buildApprovalMissingProblem')
     return this.begin(failed.kind, failed.skinId, approvedBuildKeys, acknowledgeCompatibility, acknowledgedContext, releaseAgeApproval, artifactContext, configurationRepair, undefined, this.sourceMigrationContexts.get(id)?.context, failed.preservedSkinIds, failed.preservedSkinApprovals, failed.selectionContext)
   }
 
@@ -1734,7 +1734,7 @@ export class SkinLifecycle {
     const operation = this.operations.get(id)
     if (operation === undefined) throw new Error('operation not found')
     if (operation.phase === 'done' || operation.phase === 'failed' || operation.phase === 'cancelled') return operation
-    if (operation.cancelable !== true) throw new Error('当前阶段无法安全取消，请等待操作完成')
+    if (operation.cancelable !== true) throw new MarketMessageError('当前阶段无法安全取消，请等待操作完成', 'failure.cancelUnavailableProblem')
     this.update(operation, 'cancelling', '正在取消并清理临时文件', 'common.operationCancelCleanup')
     this.abortControllers.get(id)?.abort()
     return operation
@@ -1899,7 +1899,7 @@ export class SkinLifecycle {
         return
       }
       if (this.unresolvedManager) {
-        this.update(operation, 'waiting', this.waitingReason)
+        this.update(operation, 'waiting', this.waitingReason, this.unresolvedManager ? 'common.operationResultUnknown' : 'common.operationResultPending')
         return
       }
       if (error instanceof ManagedOperationError) {
@@ -2154,7 +2154,7 @@ export class SkinLifecycle {
       logEvent('warn', 'recovery-pre-existing-drift', detail, operation.id)
       return
     }
-    this.update(operation, 'installing', '安装未完成，正在恢复原有依赖')
+    this.update(operation, 'installing', '安装未完成，正在恢复原有依赖', 'common.operationRestoringDependencies')
     writeOperationStep(operation, '恢复原有 profile 依赖', 'common.stepRestoreProfile')
     operation.attempt = 1
     operation.stepStartedAt = new Date().toISOString()

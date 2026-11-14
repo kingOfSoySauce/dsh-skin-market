@@ -64,7 +64,7 @@ describe('official Desktop entrypoint', () => {
       expect(operationResponse.end).toHaveBeenCalled()
 
       expect(operationResponse.writeHead.mock.calls.at(-1)?.[0]).toBe(409)
-      expect(JSON.parse(operationResponse.end.mock.calls.at(-1)?.[0] as string)).toEqual({ error: expect.stringContaining('pluginManager') })
+      expect(JSON.parse(operationResponse.end.mock.calls.at(-1)?.[0] as string)).toEqual({ error: expect.stringContaining('pluginManager'), errorKey: 'failure.hostUnsupportedProblem' })
       const afterResponse = { writeHead: vi.fn(), end: vi.fn() }
       await handlers.get('/dsh-skin-market/state')?.({ method: 'GET', headers: {} }, afterResponse)
       expect(JSON.parse(afterResponse.end.mock.calls.at(-1)?.[0] as string).operations).toEqual([])
@@ -116,11 +116,11 @@ describe('official Desktop entrypoint', () => {
 
       const requestRejection = vi.fn((): number | undefined => 401)
       values.connection = { requestRejection } satisfies HostConnectionLike
-      expect(await state()).toEqual({ status: 401, value: { error: '请先登录当前 DSH 宿主' } })
+      expect(await state()).toEqual({ status: 401, value: { error: '请先登录当前 DSH 宿主', errorKey: 'server.loginRequired' } })
       requestRejection.mockImplementation(() => undefined)
       expect((await state()).status).toBe(200)
       requestRejection.mockImplementation(() => { throw new Error('admission unavailable') })
-      expect(await state()).toEqual({ status: 403, value: { error: '请求未通过宿主验证' } })
+      expect(await state()).toEqual({ status: 403, value: { error: '请求未通过宿主验证', errorKey: 'server.requestNotAdmitted' } })
       expect(requestRejection).toHaveBeenCalledTimes(3)
       expect(installBundle).not.toHaveBeenCalled()
       expect(removeBundle).not.toHaveBeenCalled()
