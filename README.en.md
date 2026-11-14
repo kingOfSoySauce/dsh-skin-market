@@ -193,9 +193,9 @@ This command disables skins managed by Skin Market and restores the default appe
 
 ## For developers
 
-If you maintain a DSH skin, give one of the prompts below to an Agent to prepare a catalog entry or update its display fields. The market does not log in to GitHub for you or silently create a PR.
+If you maintain a DSH skin, give one of the prompts below to an Agent to prepare a catalog entry or update your own entry. The market does not log in to GitHub for you or silently create a PR.
 
-A new entry is a thin YAML file; fields and priority are in the table below. `url` is required; the name, author, description, category, tags, modes, preview images, and subpath are optional — fill in what you can confirm and CI derives the rest. CI reads the package, loader id, commit, license, and compatibility range from the skin repository. Do not write them into the YAML. A community PR changes exactly one `registry/skins/<owner>__<repo>.yml` and does not edit `data/catalog.json` or `data/catalog-copy.json`.
+A new entry is a thin YAML file; fields and priority are in the table below. `url` is required; the name, author, description, category, tags, modes, preview images, and subpath are optional — fill in what you can confirm and CI derives the rest. CI reads the package, loader id, commit, license, and compatibility range from the skin repository. Do not write them into the YAML. A community PR adds exactly one `registry/skins/<owner>__<repo>.yml`; do not edit `data/catalog.json`, and do not edit `data/catalog-copy.json` in the PR that adds an entry.
 
 <!-- submission-contract:START -->
 | Group | Fields / items | Rule |
@@ -204,11 +204,29 @@ A new entry is a thin YAML file; fields and priority are in the table below. `ur
 | Filled by CI | `package`, `rowId`, `install`, `license`, `compatibility` | Do not write these; the schema rejects them. |
 | Soft-required (non-blocking, enters the completion queue) | a usable preview image (upstream or captured), bilingual display name / description, motion GIF, splash launchGif | An entry may merge without them; it is recorded in the daily completeness report and enters the completion queue once enabled. |
 | Recommended (advisory only) | captured `marketScreenshots`, cover `listScreenshot`, WebP `media`, README install command / version range (Web and official Desktop) / `dsh-plugin` topic, Desktop install support (npm package or manual install notes) | Never blocks a merge. |
+| Existing entry update (author-editable) | `name`, `author`, `description`, `category`, `tags`, `modes`, `screenshots`, `listScreenshot`, `marketScreenshots`, `compatibility.dsh`, `data/catalog-copy.json` | Merging a community PR is the review: change only your own entry's display fields, compatibility range, and Chinese/English display copy; attach pinned-commit evidence when changing the compatibility range, never touch another entry, and never fabricate a commit or rowId. |
+
+Field notes:
+- `name`: Both `zh` and `en` must be non-empty.
+- `author`: Author credit.
+- `description`: Describe what the user sees or the behavior.
+- `category`: One of `skin`, `pet`, `player`, or `splash`.
+- `tags`: Non-empty array of strings.
+- `modes`: Non-empty subset of `light` and `dark`.
+- `screenshots`: Array order is the display order.
+- `listScreenshot`: Cover; must reference an existing URL in this entry's `screenshots` or `marketScreenshots`.
+- `marketScreenshots`: Reorder existing screenshots only; the set must not change.
+- `compatibility.dsh`: A valid semver range; never revert to `unverified`. Attach evidence in the PR body: README, `package.json` `engines.dsh`, or a compatibility doc link at a pinned commit.
+- `data/catalog-copy.json`: Only your own entry's `name`, `description`, and `descriptionPolicy` (`show` or `omit`); keep any existing `source`/`override`/`nameSource` unchanged; new display copy may add only these three keys.
 <!-- submission-contract:END -->
 
 CI must be able to read the skin repository: a public GitHub repository or monorepo subdirectory; `package.json` with name, version, license, and `dsh.client`; and a matching loader row in `cordis.patch.yml`. Preview images must be png, jpg, webp, or gif files in the repository. It also helps to declare the DSH Web and official Desktop version ranges and a `dsh plugin add` command in the README, and to add the `dsh-plugin` topic.
 
-An existing entry can change only `name.zh`, `name.en`, `author`, `description`, `category`, `tags`, `modes`, and `screenshots`. Do not change the id, install target, commit, package, or rowId. This PR does not refresh the pinned version. Acceptance is not a security certification.
+Merging a community PR is the review for an existing entry: an author can update their own entry's display fields, compatibility range, and Chinese/English display copy in the same PR. The editable fields are the 'Existing entry update' row in the table above and the field notes below it. Constraints: `screenshots` order is the display order; `listScreenshot` must reference an image already in that entry's `screenshots` or `marketScreenshots`; `marketScreenshots` may only be reordered and the set must not change; `compatibility.dsh` must be a valid semver range and must not go back to `unverified`, and the PR body must attach evidence from a pinned commit: README, `package.json` `engines.dsh`, or a compatibility doc link.
+
+To update display copy, the same PR may edit the author's own entry in `data/catalog-copy.json`: only `name`, `description`, and `descriptionPolicy` (`show` or `omit`). `show` requires both Chinese and English descriptions; `omit` must not keep a description. Existing `source`, `override`, and `nameSource` must stay unchanged; an entry without display copy may add only these three keys.
+
+Do not change id, repo, subpath, package, rowId, install, license, review, health, featuredRank, star counts, or any timestamp. Do not edit `data/catalog.json`, do not touch another author's entry, and do not invent a commit, rowId, or compatibility evidence. CI checks the PR's own diff: exactly one `registry/skins/*.yml`, optionally one own `data/catalog-copy.json`. This PR does not refresh the pinned version. Acceptance is not a security certification.
 
 Local acceptance steps are in [TESTING.md](./TESTING.md).
 
@@ -267,28 +285,32 @@ A catalog entry is not a safety certification. Do not claim that DSH, a security
 <details>
 <summary><strong>Click to expand the display-field update prompt</strong></summary>
 
-Use this when changing only the display fields. Fill in the fields and new text before copying.
+Use this when updating an existing entry. Fill in the fields and new text before copying.
 
 ```text
-Please update the display fields of a skin already listed in DSH Skin Market.
+Please update the display fields, compatibility range, or display copy of an entry already listed in DSH Skin Market.
 
 Skin repository: <your skin repository URL>
 Target catalog repository: https://github.com/kingOfSoySauce/dsh-skin-market
 Catalog path: registry/skins
-Fields to change: <which of name.zh, name.en, author, description, category, tags, modes, and screenshots, plus the new content>
+Changes: <which of name.zh, name.en, author, description, category, tags, modes, screenshots, listScreenshot, marketScreenshots, compatibility.dsh, and data/catalog-copy.json, plus the new content>
 
 Follow these steps:
 1. Use read-only checks to confirm that this repository already has an entry under registry/skins and that its remote matches the entry repo. If you cannot find it, stop and ask me. Do not create a new entry. Do not read .env, credentials, or chat history.
-2. Edit only that existing YAML file. A community PR may change exactly one registry/skins/<entry>.yml. Do not change other entries, data/catalog.json, or data/catalog-copy.json.
-3. Change only these display fields: name.zh, name.en, author, description, category, tags, modes, and screenshots. name must keep both zh and en. description should say what the user sees. category must be one of skin, pet, player, or splash; tags must be a non-empty array of strings; modes may contain only light and dark and must not be empty. screenshots may use only png, jpg, webp, or gif files from the repository at the currently pinned commit. Do not switch them to a newer commit, SVG, a data URI, or a third-party image host.
-4. Do not change id, repo, subpath, package, rowId, install, compatibility, review, health, license, featuredRank, star counts, or any timestamp. This PR does not refresh the pinned version. If a version refresh is needed, say so in the PR body and do not invent install.target.
-5. Run npm run registry:check in the catalog repository root. Do not install anything into my real DSH profile.
-6. git diff --name-only must contain only that one YAML file. Commit and create a PR titled feat(registry): update <skin-name> display fields.
-7. Return the PR link. If you do not have GitHub permission, only prepare the branch and copyable PR content.
+2. Edit only that existing YAML file; if display copy must change too, edit its own data/catalog-copy.json in the same PR. A community PR may change only your own entry: do not edit other entries, data/catalog.json, or any other file.
+3. The YAML may change only these fields: name.zh, name.en, author, description, category, tags, modes, screenshots, listScreenshot, marketScreenshots, and compatibility.dsh.
+   - name must keep both zh and en; category must be one of skin, pet, player, or splash; tags must be a non-empty array of strings; modes may contain only light and dark and must not be empty.
+   - The screenshots array order is the display order. Use only png, jpg, webp, or gif files from the repository at the currently pinned commit; do not switch to a newer commit, SVG, a data URI, or a third-party image host.
+   - listScreenshot is the cover and must reference an image already present in that entry's screenshots or marketScreenshots.
+   - marketScreenshots may only reorder existing screenshots; the set must not change.
+   - compatibility.dsh must be a valid semver range and must not go back to unverified. If you change it, attach evidence in the PR body: the README, package.json engines.dsh, or a compatibility doc link at the entry's pinned commit. Do not invent a compatibility range.
+4. To update the Chinese/English display copy, edit your own entry's name, description, and descriptionPolicy in data/catalog-copy.json in the same PR: descriptionPolicy is show or omit; show must provide both zh and en descriptions, omit must not keep a description. Existing source, override, and nameSource metadata must stay exactly as they are; an entry without display copy may add only these three keys. Do not edit other entries and do not add source, override, or nameSource.
+5. Do not change id, repo, subpath, package, rowId, install, license, review, health, featuredRank, star counts, or any timestamp. This PR does not refresh the pinned version; if a version refresh is needed, say so in the PR body and do not invent install.target or rowId.
+6. Run npm run registry:check in the catalog repository root. Do not install anything into my real DSH profile.
+7. git diff --name-only must contain only that one YAML file, plus data/catalog-copy.json when display copy changed. Commit and create a PR titled feat(registry): update <skin-name>.
+8. Return the PR link. If you do not have GitHub permission, only prepare the branch and copyable PR content.
 
-Note: `description` and `screenshots` are display fields the author can change directly; when the PR changes only your own single YAML entry, CI will not reject it merely because the description or screenshots changed. CI does not verify entry ownership — the one-YAML rule and human review limit the scope. If this entry already has maintainer-approved display copy in `data/catalog-copy.json`, the YAML change will not automatically change the copy shown in the plugin or site. Include the Chinese and English text you want synced in the PR body; a maintainer will update the display layer after merge. Do not edit `data/catalog-copy.json` in this PR.
-
-Do not claim that the fields are already live in the online catalog. After merge, catalog sync writes them into the catalog. Acceptance is not a security certification.
+Note: merging the PR is the review. CI checks that the PR's own diff contains exactly one entry YAML (optionally the author's own data/catalog-copy.json), that machine fields are unchanged, that the compatibility range is valid, that the cover references an existing screenshot, that marketScreenshots only changed order, and that catalog-copy changed only the author's own entry without touching source/override/nameSource. CI cannot prove that the GitHub account is the entry author; the one-entry boundary and human review limit the scope. Do not claim that the fields are already live in the online catalog. After merge, catalog sync writes them into the catalog. Acceptance is not a security certification, and do not claim that DSH, a security team, or the market endorsed this skin.
 ```
 
 </details>

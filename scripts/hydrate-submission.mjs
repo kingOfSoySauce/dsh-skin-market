@@ -5,6 +5,7 @@ import { parse, stringify } from 'yaml'
 import { primaryLoaderIdFromPatch } from './loader-rows.mjs'
 import { permitsCommercialUse } from './license.mjs'
 import { clientEntryPath, inspectSkinHealth } from './skin-health.mjs'
+import { isVersionRange } from './version-range.mjs'
 
 export const THIN_SUBMISSION_KEYS = ['url', 'subpath', 'name', 'author', 'description', 'category', 'tags', 'modes', 'screenshots']
 export const SUBMISSION_CATEGORIES = ['skin', 'pet', 'player', 'splash']
@@ -183,6 +184,11 @@ const NEWER_THAN_STATED = /^\s*(?:及以上|以上|或更高|及更新|或更新
  * Read the Web / official Desktop DSH version declaration from a README.
  * A repo may state both tracks, so every nearby declaration is kept as a
  * separate `||` clause instead of silently dropping the Desktop one.
+ *
+ * Noise handling: a bare version (`0.2.1-rc.5`) is usually an incidental pin,
+ * package version or verification note, not a host range — it only counts as a
+ * claim when the text says "and newer". Kept clauses are deduplicated, shorter
+ * clauses contained in a longer one are dropped, and at most four survive.
  */
 export function statedDshCompatibility(readme) {
   if (typeof readme !== 'string' || readme.trim() === '') return null
@@ -195,19 +201,34 @@ export function statedDshCompatibility(readme) {
     const match = DSH_RANGE.exec(window)
     if (match === null) continue
     const raw = match[0].replace(/\s+/g, ' ').trim()
-    // A bare stable package version is usually not a host compatibility claim.
-    if (!/[<>=^~]/.test(raw) && !/-[0-9A-Za-z]/.test(raw)) continue
+    if (raw === '') continue
     const tail = window.slice((match.index ?? 0) + match[0].length)
-    ranges.push(/[<>=^~]/.test(raw) || !NEWER_THAN_STATED.test(tail) ? raw : `>=${raw}`)
+    if (/[<>=^~]/.test(raw)) {
+      ranges.push(raw)
+    } else if (NEWER_THAN_STATED.test(tail)) {
+      // "0.2.1-rc.5 及以上" states a lower bound; a bare version alone does not.
+      ranges.push(`>=${raw}`)
+    }
   }
   const unique = [...new Set(ranges)]
-  return unique.length === 0 ? null : unique.slice(0, 4).join(' || ')
+  const pruned = unique.filter(clause => !unique.some(other => other !== clause && other.includes(clause)))
+  return pruned.length === 0 ? null : pruned.slice(0, 4).join(' || ')
 }
 
-function compatibility(pkg, readme) {
+/**
+ * Pick the host range for a hydrated entry: a declared package range first,
+ * then the README statement, then a direct @deepseek-ai/dsh-* dependency.
+ * Returns null when the repository does not state one (the entry stays
+ * `unverified`).
+ */
+export function compatibility(pkg, readme) {
+  const engines = pkg?.engines?.dsh
+  if (typeof engines === 'string' && engines.trim() !== '' && engines.trim() !== 'unverified' && isVersionRange(engines.trim())) {
+    return engines.trim()
+  }
   const stated = statedDshCompatibility(readme)
   if (stated) return stated
-  const groups = [pkg.peerDependencies ?? {}, pkg.dependencies ?? {}, pkg.devDependencies ?? {}]
+  const groups = [pkg?.peerDependencies ?? {}, pkg?.dependencies ?? {}, pkg?.devDependencies ?? {}]
   const candidates = groups.flatMap(group => Object.entries(group).filter(([name]) => name.startsWith('@deepseek-ai/dsh-')))
   const dependency = candidates.map(([, version]) => String(version)).find(version => /\d/.test(version) && !version.startsWith('workspace:'))
   return dependency ?? null

@@ -124,5 +124,94 @@
       "zh": "Desktop 安装支持（npm 包或手动安装说明）",
       "en": "Desktop install support (npm package or manual install notes)"
     }
-  ]
+  ],
+  "existingEntryUpdate": {
+    "title": {
+      "zh": "已收录条目更新（作者可改）",
+      "en": "Existing entry update (author-editable)"
+    },
+    "updateRule": {
+      "zh": "合并社区 PR 即审核：只能改自己条目的展示字段、兼容范围和前台中英双语展示文案；改兼容范围要在 PR 正文附固定 commit 的证据，不要动别人的条目，也不要编造 commit 或 rowId。",
+      "en": "Merging a community PR is the review: change only your own entry's display fields, compatibility range, and Chinese/English display copy; attach pinned-commit evidence when changing the compatibility range, never touch another entry, and never fabricate a commit or rowId."
+    },
+    "updateFields": [
+      "name",
+      "author",
+      "description",
+      "category",
+      "tags",
+      "modes",
+      "screenshots",
+      "listScreenshot",
+      "marketScreenshots",
+      "compatibility.dsh",
+      "data/catalog-copy.json"
+    ],
+    "updateNotes": {
+      "name": {
+        "zh": "`zh` 和 `en` 必须同时非空。",
+        "en": "Both `zh` and `en` must be non-empty."
+      },
+      "author": {
+        "zh": "作者署名。",
+        "en": "Author credit."
+      },
+      "description": {
+        "zh": "写用户能看到的外观或行为。",
+        "en": "Describe what the user sees or the behavior."
+      },
+      "category": {
+        "zh": "只能是 `skin`、`pet`、`player` 或 `splash`。",
+        "en": "One of `skin`, `pet`, `player`, or `splash`."
+      },
+      "tags": {
+        "zh": "非空字符串数组。",
+        "en": "Non-empty array of strings."
+      },
+      "modes": {
+        "zh": "`light`、`dark` 的非空子集。",
+        "en": "Non-empty subset of `light` and `dark`."
+      },
+      "screenshots": {
+        "zh": "数组顺序即前台展示顺序。",
+        "en": "Array order is the display order."
+      },
+      "listScreenshot": {
+        "zh": "封面，必须引用该条目 `screenshots` 或 `marketScreenshots` 里已有的地址。",
+        "en": "Cover; must reference an existing URL in this entry's `screenshots` or `marketScreenshots`."
+      },
+      "marketScreenshots": {
+        "zh": "只允许重排已有展示图，集合不能变。",
+        "en": "Reorder existing screenshots only; the set must not change."
+      },
+      "compatibility.dsh": {
+        "zh": "合法 semver 区间，不能改回 `unverified`；PR 正文附固定 commit 的 README、`package.json` `engines.dsh` 或兼容性文档链接作为证据。",
+        "en": "A valid semver range; never revert to `unverified`. Attach evidence in the PR body: README, `package.json` `engines.dsh`, or a compatibility doc link at a pinned commit."
+      },
+      "data/catalog-copy.json": {
+        "zh": "只改自己条目的 `name`、`description`、`descriptionPolicy`（`show` 或 `omit`）；已有 `source`/`override`/`nameSource` 保持原样；没有展示文案的条目可新增，只写这三类键。",
+        "en": "Only your own entry's `name`, `description`, and `descriptionPolicy` (`show` or `omit`); keep any existing `source`/`override`/`nameSource` unchanged; new display copy may add only these three keys."
+      }
+    },
+    "updateForbiddenFields": [
+      "id",
+      "repo",
+      "subpath",
+      "package",
+      "rowId",
+      "install",
+      "license",
+      "review",
+      "health",
+      "featuredRank",
+      "starsSnapshot",
+      "releaseUpdatedAt",
+      "metadataUpdatedAt",
+      "starsUpdatedAt",
+      "updatedAt"
+    ],
+    "updateForbiddenPaths": [
+      "data/catalog.json"
+    ]
+  }
 }

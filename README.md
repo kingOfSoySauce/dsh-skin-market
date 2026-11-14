@@ -193,9 +193,9 @@ npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web --rollback
 
 ## 给开发者
 
-维护 DSH 皮肤时，把下面的提示词交给 Agent，准备收录或更新展示字段。市场不会代替你登录 GitHub，也不会静默创建 PR。
+维护 DSH 皮肤时，把下面的提示词交给 Agent，准备收录或更新自己的条目。市场不会代替你登录 GitHub，也不会静默创建 PR。
 
-新收录只写薄条目，字段和优先级见下表。`url` 必填；名称、作者、描述、类别、标签、适用模式、预览图和子目录都是可选字段，能确认就尽量填写，缺省由 CI 推导。package、loader id、commit、许可证和兼容范围由 CI 从皮肤仓库读取，不要写进 YAML。社区 PR 只改一个 `registry/skins/<owner>__<repo>.yml`，不要改 `data/catalog.json` 或 `data/catalog-copy.json`。
+新收录只写薄条目，字段和优先级见下表。`url` 必填；名称、作者、描述、类别、标签、适用模式、预览图和子目录都是可选字段，能确认就尽量填写，缺省由 CI 推导。package、loader id、commit、许可证和兼容范围由 CI 从皮肤仓库读取，不要写进 YAML。新条目只新增一个 `registry/skins/<owner>__<repo>.yml`，不要改 `data/catalog.json`，也不要在新条目的 PR 里改 `data/catalog-copy.json`。
 
 <!-- submission-contract:START -->
 | 类别 | 字段 / 项 | 规则 |
@@ -204,11 +204,29 @@ npx -y -p dsh-skin-market@latest dsh-skin-market-repair --profile web --rollback
 | CI 自动补 | `package`、`rowId`、`install`、`license`、`compatibility` | 不要手写；写了会被 schema 拒绝。 |
 | 软必填（不阻断，进补全队列） | 可用预览图（上游或实机）、双语展示名 / 描述、动效 GIF（motion）、启动 launchGif（splash） | 缺了仍可合并，但会记录在每日完整性报告；补全队列接入后自动进队。 |
 | 推荐（只提示） | 实机截图 `marketScreenshots`、封面 `listScreenshot`、WebP `media`、README 安装命令 / 版本范围（Web 与官方 Desktop）/ `dsh-plugin` topic、Desktop 安装支持（npm 包或手动安装说明） | 不阻断合并。 |
+| 已收录条目更新（作者可改） | `name`、`author`、`description`、`category`、`tags`、`modes`、`screenshots`、`listScreenshot`、`marketScreenshots`、`compatibility.dsh`、`data/catalog-copy.json` | 合并社区 PR 即审核：只能改自己条目的展示字段、兼容范围和前台中英双语展示文案；改兼容范围要在 PR 正文附固定 commit 的证据，不要动别人的条目，也不要编造 commit 或 rowId。 |
+
+字段说明：
+- `name`：`zh` 和 `en` 必须同时非空。
+- `author`：作者署名。
+- `description`：写用户能看到的外观或行为。
+- `category`：只能是 `skin`、`pet`、`player` 或 `splash`。
+- `tags`：非空字符串数组。
+- `modes`：`light`、`dark` 的非空子集。
+- `screenshots`：数组顺序即前台展示顺序。
+- `listScreenshot`：封面，必须引用该条目 `screenshots` 或 `marketScreenshots` 里已有的地址。
+- `marketScreenshots`：只允许重排已有展示图，集合不能变。
+- `compatibility.dsh`：合法 semver 区间，不能改回 `unverified`；PR 正文附固定 commit 的 README、`package.json` `engines.dsh` 或兼容性文档链接作为证据。
+- `data/catalog-copy.json`：只改自己条目的 `name`、`description`、`descriptionPolicy`（`show` 或 `omit`）；已有 `source`/`override`/`nameSource` 保持原样；没有展示文案的条目可新增，只写这三类键。
 <!-- submission-contract:END -->
 
 皮肤仓库需要能被 CI 读到：公开 GitHub 仓库或 monorepo 子目录；`package.json` 有 name、version、license 和 `dsh.client`；`cordis.patch.yml` 有对应 loader。预览图用仓库内的 png、jpg、webp 或 gif。建议 README 声明 DSH Web 与官方 Desktop 的版本范围和一条 `dsh plugin add` 安装命令，并为仓库加上 `dsh-plugin` Topic。
 
-已收录皮肤只能改展示字段：`name.zh`、`name.en`、`author`、`description`、`category`、`tags`、`modes`、`screenshots`。不要改 id、安装目标、commit、package 或 rowId。固定版本刷新不由这次 PR 改写。收录不等于安全认证。
+已收录条目合并社区 PR 即审核：作者可以在同一个 PR 里更新自己条目的展示字段、兼容范围和前台中英双语展示文案，可改字段见上表「已收录条目更新」一行和下面的字段说明。具体限制：`screenshots` 数组顺序就是前台展示顺序；`listScreenshot` 封面必须引用该条目 `screenshots` 或 `marketScreenshots` 里已有的图片地址；`marketScreenshots` 只允许重排、集合不能变；`compatibility.dsh` 必须是合法 semver 区间、不能改回 `unverified`，PR 正文要附固定 commit 的 README、`package.json` 的 `engines.dsh` 或兼容性文档链接作为证据。
+
+如果要改前台展示文案，同一个 PR 里可以改自己条目的 `data/catalog-copy.json`：只写 `name`、`description`、`descriptionPolicy`（`show` 或 `omit`）三类键；`show` 必须同时有中英文描述，`omit` 不能保留描述；已有 `source`、`override`、`nameSource` 必须保持原样；没有展示文案的条目可以新增这三类键。
+
+不要改 id、repo、subpath、package、rowId、install、license、review、health、featuredRank、star 数量和任何时间戳，不要改 `data/catalog.json`，不要改别人的条目，也不要编造 commit、rowId 或兼容性证据。CI 按 PR 自己的 diff 校验：只能有一个 `registry/skins/*.yml`，可选一个自己条目的 `data/catalog-copy.json`。固定版本刷新不由这次 PR 改写。收录不等于安全认证。
 
 本地验收步骤见 [TESTING.md](./TESTING.md)。
 
@@ -267,28 +285,32 @@ url: https://github.com/<owner>/<repo>
 <details>
 <summary><strong>点击展开更新展示字段提示词</strong></summary>
 
-只改展示字段时，复制这段。把要改的字段和内容填进提示词。
+要更新已收录条目时，复制这段。把要改的字段和内容填进提示词。
 
 ```text
-请帮我更新 DSH 皮肤市场里已收录皮肤的展示字段。
+请帮我更新 DSH 皮肤市场里已收录条目的展示字段、兼容范围或前台展示文案。
 
 皮肤仓库：<你的皮肤仓库地址>
 目标目录仓库：https://github.com/kingOfSoySauce/dsh-skin-market
 目录路径：registry/skins
-要改的字段：<name.zh / name.en / author / description / category / tags / modes / screenshots 中的哪几项，以及新内容>
+要改的内容：<name.zh / name.en / author / description / category / tags / modes / screenshots / listScreenshot / marketScreenshots / compatibility.dsh / data/catalog-copy.json 中的哪几项，以及新内容>
 
 请按以下步骤完成：
 1. 只用只读方式确认这个仓库已经在 registry/skins 里有条目，并且仓库 remote 与条目的 repo 一致。找不到就停下来问我，不要新建条目。不要读取 .env、凭据或聊天记录。
-2. 只修改这一条已有 YAML。社区 PR 只能改一个 registry/skins/<条目>.yml，不要改其他条目、data/catalog.json 或 data/catalog-copy.json。
-3. 只允许改这些展示字段：name.zh、name.en、author、description、category、tags、modes、screenshots。name 必须同时保留 zh 和 en。description 写用户能看到的外观或行为。category 只能是 skin、pet、player 或 splash；tags 是非空字符串数组；modes 只能包含 light、dark 且不能为空。screenshots 只能使用当前已固定 commit 下的仓库内 png、jpg、webp 或 gif，不要换成更新的 commit、SVG、data URI 或第三方图床。
-4. 不要改 id、repo、subpath、package、rowId、install、compatibility、review、health、license、featuredRank、star 计数或任何时间字段。固定版本刷新不由这次 PR 改写；如果需要更新固定版本，只在 PR 正文说明，不要编造 install.target。
-5. 在目标目录仓库根目录运行 npm run registry:check。不得安装到我的真实 DSH profile。
-6. git diff --name-only 应只有这一条 YAML。提交并创建 PR，标题 feat(registry): update <皮肤名> display fields。
-7. 返回 PR 链接；没有 GitHub 权限时只准备好分支和可复制的 PR 内容。
+2. 只修改这一条已有 YAML；如果还要更新前台展示文案，在同一个 PR 里修改它自己的 data/catalog-copy.json。社区 PR 只能改自己的条目，不要改别人的条目、data/catalog.json 或其他文件。
+3. YAML 只允许改这些字段：name.zh、name.en、author、description、category、tags、modes、screenshots、listScreenshot、marketScreenshots、compatibility.dsh。
+   - name 必须同时保留 zh 和 en；category 只能是 skin、pet、player 或 splash；tags 是非空字符串数组；modes 只能包含 light、dark 且不能为空。
+   - screenshots 数组顺序就是前台展示顺序，只能使用当前已固定 commit 下的仓库内 png、jpg、webp 或 gif，不要换成更新的 commit、SVG、data URI 或第三方图床。
+   - listScreenshot 是封面，必须引用该条目 screenshots 或 marketScreenshots 里已经有的图片地址。
+   - marketScreenshots 只能重排已有展示图，集合不能变。
+   - compatibility.dsh 必须是合法 semver 区间，不能改回 unverified；要改它时，在 PR 正文附上该条目固定 commit 的 README、package.json 的 engines.dsh 或兼容性文档链接作为证据，不要编造兼容范围。
+4. 如果要改前台中英双语展示文案，在同一个 PR 里修改 data/catalog-copy.json 中自己条目的 name、description、descriptionPolicy：descriptionPolicy 只能是 show 或 omit；show 必须提供 zh 和 en 两段 description，omit 不能保留 description。已有 source、override、nameSource 元数据必须原样保留；没有展示文案的条目可以新增这三类键。不要改别的条目，也不要新增 source、override、nameSource。
+5. 不要改 id、repo、subpath、package、rowId、install、license、review、health、featuredRank、star 计数或任何时间字段；固定版本刷新不由这次 PR 改写，需要更新固定版本时只在 PR 正文说明，不要编造 install.target 或 rowId。
+6. 在目标目录仓库根目录运行 npm run registry:check。不得安装到我的真实 DSH profile。
+7. git diff --name-only 应只有这一条 YAML；如果改了展示文案，再包含 data/catalog-copy.json。提交并创建 PR，标题 feat(registry): update <皮肤名>。
+8. 返回 PR 链接；没有 GitHub 权限时只准备好分支和可复制的 PR 内容。
 
-说明：`description` 和 `screenshots` 是作者可以直接改的展示字段；PR 只改自己这一条 YAML 时，CI 不会因为“改了描述或截图”而报红。CI 不会判断条目归属，靠“只改一个 YAML”和人工审核控制范围。如果这个条目已经有维护者审核过的 `data/catalog-copy.json` 展示文案，YAML 改动不会自动改变插件和站点前台显示；请在 PR 正文附上要同步的中英双语描述，维护者合并后更新展示层。不要在本 PR 修改 `data/catalog-copy.json`。
-
-不要声称字段已经在线上目录生效。合并后由仓库的目录同步写入 catalog。收录不等于安全认证。
+说明：合并 PR 即审核。CI 会校验 PR 自己的 diff 只有一个条目 YAML（可加自己的 data/catalog-copy.json）、机器字段未变、兼容范围合法、封面引用已有截图、marketScreenshots 只是重排、catalog-copy 只改自己的条目且 source/override/nameSource 不变。CI 不能证明 GitHub 账号就是条目作者，靠单人单条目边界和人工审核控制范围。不要声称字段已经在线上目录生效；合并后由仓库的目录同步写入 catalog。收录不等于安全认证，也不要声称该皮肤已被 DSH 官方、安全团队或市场背书。
 ```
 
 </details>

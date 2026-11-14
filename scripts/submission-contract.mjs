@@ -45,6 +45,47 @@ export function assertContractCoversSchema(contract, schema) {
   }
   const duplicated = contract.authorFields.filter(field => contract.autoFields.includes(field))
   if (duplicated.length) throw new Error(`fields cannot be both author-filled and auto-filled: ${duplicated.join(', ')}`)
+
+  // Structured rules for community updates of an already-listed entry. These
+  // drive both the README block and scripts/entry-update-guard.mjs, so the
+  // documented contract and the CI guard cannot disagree about what is editable.
+  const update = contract.existingEntryUpdate
+  if (update === undefined || update === null || typeof update !== 'object' || Array.isArray(update)) {
+    throw new Error('submission contract is missing existingEntryUpdate rules')
+  }
+  for (const locale of ['zh', 'en']) {
+    if (typeof update.title?.[locale] !== 'string' || update.title[locale].trim() === '') throw new Error(`existingEntryUpdate.title must provide ${locale} text`)
+    if (typeof update.updateRule?.[locale] !== 'string' || update.updateRule[locale].trim() === '') throw new Error(`existingEntryUpdate.updateRule must provide ${locale} text`)
+  }
+  if (!Array.isArray(update.updateFields) || update.updateFields.length === 0) throw new Error('existingEntryUpdate.updateFields must be a non-empty array')
+  if (new Set(update.updateFields).size !== update.updateFields.length) throw new Error('existingEntryUpdate.updateFields contains duplicates')
+  if (!Array.isArray(update.updateForbiddenFields) || update.updateForbiddenFields.length === 0) throw new Error('existingEntryUpdate.updateForbiddenFields must list machine-owned fields')
+  for (const field of update.updateForbiddenFields) {
+    if (!properties.includes(field)) throw new Error(`forbidden update field is not in the schema: ${field}`)
+    // Some forbidden fields (for example `subpath`) are author-fillable in a
+    // thin entry but still immutable once the entry is hydrated.
+    if (update.updateFields.includes(field)) throw new Error(`field cannot be both editable and forbidden: ${field}`)
+  }
+  for (const field of update.updateFields) {
+    if (field === 'data/catalog-copy.json') continue
+    const [base, ...nested] = field.split('.')
+    if (!properties.includes(base)) throw new Error(`update field is not in the schema: ${field}`)
+    if (nested.length > 0 && field !== 'compatibility.dsh') throw new Error(`the only nested update field is compatibility.dsh: ${field}`)
+  }
+  if (update.updateNotes === undefined || update.updateNotes === null || typeof update.updateNotes !== 'object' || Array.isArray(update.updateNotes)) {
+    throw new Error('existingEntryUpdate.updateNotes must be an object keyed by field')
+  }
+  const unknownNotes = Object.keys(update.updateNotes).filter(field => !update.updateFields.includes(field))
+  if (unknownNotes.length) throw new Error(`existingEntryUpdate.updateNotes describes unknown fields: ${unknownNotes.join(', ')}`)
+  for (const field of update.updateFields) {
+    const note = update.updateNotes[field]
+    if (typeof note?.zh !== 'string' || note.zh.trim() === '' || typeof note?.en !== 'string' || note.en.trim() === '') {
+      throw new Error(`existingEntryUpdate.updateNotes must describe ${field} in zh and en`)
+    }
+  }
+  if (!Array.isArray(update.updateForbiddenPaths) || !update.updateForbiddenPaths.includes('data/catalog.json')) {
+    throw new Error('existingEntryUpdate.updateForbiddenPaths must include data/catalog.json')
+  }
   return { properties: properties.length, classified: classified.length }
 }
 
@@ -69,6 +110,20 @@ export function renderBlock(contract, locale) {
         ? `除 \`url\` 外都可省略，缺省时由 CI 推导：${defaults}。`
         : `Every field except \`url\` may be omitted; CI derives the default: ${defaults}.`,
   ].filter(Boolean).join(zh ? '' : ' ')
+  const update = contract.existingEntryUpdate
+  const updateFields = (update?.updateFields ?? []).map(tick).join(zh ? '、' : ', ')
+  // The table stays scannable: one summary rule in the row, then one bullet per
+  // editable field below the table so the per-field rules remain readable.
+  const updateRow = update === undefined || update === null
+    ? []
+    : [`| ${update.title[locale]} | ${updateFields} | ${update.updateRule[locale]} |`]
+  const updateFieldNotes = update === undefined || update === null
+    ? []
+    : [
+        '',
+        zh ? '字段说明：' : 'Field notes:',
+        ...update.updateFields.map(field => `- ${tick(field)}${zh ? '：' : ': '}${update.updateNotes?.[field]?.[locale] ?? ''}`),
+      ]
   const lines = zh
     ? [
         '| 类别 | 字段 / 项 | 规则 |',
@@ -77,6 +132,8 @@ export function renderBlock(contract, locale) {
         `| CI 自动补 | ${auto} | 不要手写；写了会被 schema 拒绝。 |`,
         `| 软必填（不阻断，进补全队列） | ${soft} | 缺了仍可合并，但会记录在每日完整性报告；补全队列接入后自动进队。 |`,
         `| 推荐（只提示） | ${recommended} | 不阻断合并。 |`,
+        ...updateRow,
+        ...updateFieldNotes,
       ]
     : [
         '| Group | Fields / items | Rule |',
@@ -85,6 +142,8 @@ export function renderBlock(contract, locale) {
         `| Filled by CI | ${auto} | Do not write these; the schema rejects them. |`,
         `| Soft-required (non-blocking, enters the completion queue) | ${soft} | An entry may merge without them; it is recorded in the daily completeness report and enters the completion queue once enabled. |`,
         `| Recommended (advisory only) | ${recommended} | Never blocks a merge. |`,
+        ...updateRow,
+        ...updateFieldNotes,
       ]
   return lines.join('\n')
 }

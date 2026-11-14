@@ -9,6 +9,8 @@ import { isThinSubmission, hydrateSkinSubmission, thinSubmissionHint } from './h
 import { resolveScreenshotList, resolveScreenshotRef } from './screenshot-refs.mjs'
 import { buildCatalogWire } from './catalog-wire.mjs'
 import { loadContract, schemaErrorHint } from './submission-contract.mjs'
+import { isVersionRange } from './version-range.mjs'
+import { assertCatalogCopy } from './catalog-copy.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const checkOnly = process.argv.includes('--check')
@@ -19,12 +21,6 @@ const submissionContract = await loadContract()
 const sourceDir = join(root, 'registry/skins')
 const files = (await readdir(sourceDir)).filter(file => file.endsWith('.yml')).sort()
 const skins = []
-
-const versionTerm = /^(>=|<=|>|<|=|\^|~)?\s*\d+(?:\.\d+){0,2}(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$/
-function isVersionRange(value) {
-  if (value === 'unverified') return true
-  return value.split('||').every(alternative => alternative.trim().split(/\s+/).filter(Boolean).every(term => versionTerm.test(term)))
-}
 
 function isCanonicalIntegrity(value) {
   const match = /^(sha(?:1|256|384|512))-([A-Za-z0-9+/]+={0,2})$/.exec(value)
@@ -154,10 +150,24 @@ async function optionalJson(relativePath) {
 }
 
 const displayCopy = await optionalJson('data/catalog-copy.json')
+const known = new Set(skins.map(skin => skin.id))
+if (displayCopy !== undefined) {
+  // `data/catalog-copy.json` can still carry approved copy for an id whose
+  // registry entry was later removed. The wire catalog already drops those ids,
+  // so keep the legacy state non-blocking (warn, but keep structurally
+  // validating those entries) while the guard rejects newly introduced orphans.
+  const copySkins = displayCopy?.skins
+  const orphaned = copySkins !== null && typeof copySkins === 'object' && !Array.isArray(copySkins)
+    ? Object.keys(copySkins).filter(id => !known.has(id))
+    : []
+  if (orphaned.length > 0) {
+    console.warn(`data/catalog-copy.json: ignoring display copy for ${orphaned.length} id(s) without a registry entry: ${orphaned.slice(0, 5).join(', ')}${orphaned.length > 5 ? ', …' : ''}`)
+  }
+  assertCatalogCopy(displayCopy, known, { allowUnknownIds: true })
+}
 // Heat is computed in the private ops repo. This build only keeps scores that
 // already passed the old client wire shape, so a public registry run cannot
 // put the old lifetime average back on top.
-const known = new Set(skins.map(skin => skin.id))
 const heat = previous?.heat && typeof previous.heat === 'object'
   ? Object.fromEntries(Object.entries(previous.heat).filter(([id]) => known.has(id)))
   : undefined
