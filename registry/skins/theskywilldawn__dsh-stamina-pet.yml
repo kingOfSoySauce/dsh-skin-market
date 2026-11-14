@@ -1,0 +1,58 @@
+id: theskywilldawn.dsh.stamina.pet
+name:
+  zh: 大肥鱼体力条
+  en: Bigfish Stamina Bar
+author: theskywilldawn
+description: 给每个会话配一只住进会话头部的大肥鱼：一条体力条看上下文余量，另一条看她是否清醒，点一下就落到桌面、再点收回。她会随上下文变满而蔫、坐着睡或趴睡，戳会弹、连戳五下会生气、按住揉头会累计次数；纯 canvas 手写 Live2D 驱动动作与表情，右键可换大小、衣服、配色与动作。
+repo: https://github.com/theskywilldawn/dsh-stamina-pet
+package: dsh-stamina-pet
+rowId: stamina-pet
+category: pet
+tags:
+  - pet
+  - live2d
+  - stamina
+  - desktop
+modes:
+  - light
+  - dark
+install:
+  target: github:theskywilldawn/dsh-stamina-pet#63a461f03722bfdadd63ee663c36ec0302a1493c
+  version: 2.81.92
+  commit: 63a461f03722bfdadd63ee663c36ec0302a1493c
+compatibility:
+  dsh: ^0.1.7-rc.1 || ^0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/01-bars.jpg
+  - https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/02-on-desktop.jpg
+  - https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/03-menu.jpg
+  - https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/04-size.jpg
+  - https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/05-baseline.jpg
+  - https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/06-her.jpg
+  - https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/07-probe.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: AGPL-3.0
+  commercialUse: true
+featuredRank: 1519
+starsSnapshot: 5
+releaseUpdatedAt: 2026-11-14T19:39:31.051Z
+metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+starsUpdatedAt: 2026-11-14T19:39:31.051Z
+updatedAt: 2026-11-14T19:39:31.051Z
+listScreenshot: https://raw.githubusercontent.com/theskywilldawn/dsh-stamina-pet/63a461f03722bfdadd63ee663c36ec0302a1493c/docs/images/01-bars.jpg

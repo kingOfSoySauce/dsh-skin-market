@@ -1,0 +1,55 @@
+id: lty.hongsejinwei.dsh.luotianyi.skin
+name:
+  zh: 洛天依主题
+  en: Luo Tianyi Theme
+author: lty-hongsejinwei
+description: "把主界面铺成洛天依的星海肖像壁纸，侧栏贴一张透明立绘与洛天依字标，新会话、发送、滚动条与选中态统一成 #66CCFF 天依蓝；输入卡、@ 菜单和弹窗加 16px 磨砂玻璃，亮色壁纸上的浅色文字会自动压成深墨色。"
+repo: https://github.com/lty-hongsejinwei/dsh-luotianyi-skin
+package: dsh-luotianyi-skin
+rowId: ui-skin-luotianyi
+category: skin
+tags:
+  - vocaloid
+  - luotianyi
+  - blue
+  - glass
+modes:
+  - light
+install:
+  target: github:lty-hongsejinwei/dsh-luotianyi-skin#6a53e9d63d1951e01506dc19e8ac7dc40be01570
+  version: 0.1.2
+  commit: 6a53e9d63d1951e01506dc19e8ac7dc40be01570
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lty-hongsejinwei/dsh-luotianyi-skin/6a53e9d63d1951e01506dc19e8ac7dc40be01570/docs/preview.png
+  - https://raw.githubusercontent.com/lty-hongsejinwei/dsh-luotianyi-skin/6a53e9d63d1951e01506dc19e8ac7dc40be01570/docs/hero-mark.png
+  - https://raw.githubusercontent.com/lty-hongsejinwei/dsh-luotianyi-skin/6a53e9d63d1951e01506dc19e8ac7dc40be01570/assets/runtime/wallpaper.webp
+  - https://raw.githubusercontent.com/lty-hongsejinwei/dsh-luotianyi-skin/6a53e9d63d1951e01506dc19e8ac7dc40be01570/assets/runtime/character2.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1517
+starsSnapshot: 10
+releaseUpdatedAt: 2026-11-14T19:39:31.051Z
+metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+starsUpdatedAt: 2026-11-14T19:39:31.051Z
+updatedAt: 2026-11-14T19:39:31.051Z
+listScreenshot: https://raw.githubusercontent.com/lty-hongsejinwei/dsh-luotianyi-skin/6a53e9d63d1951e01506dc19e8ac7dc40be01570/docs/preview.png

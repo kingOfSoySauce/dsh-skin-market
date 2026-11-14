@@ -1,0 +1,53 @@
+id: khwlgh.dsh.lightweight.wallpaper
+name:
+  zh: 轻量壁纸
+  en: Lightweight Wallpaper
+author: KHWLGH
+description: 轻量壁纸与字体插件：必应每日（最近 16 天、4 个地区）、维基共享（8 个艺术预设）、克利夫兰 CC0、10wallpaper 与本地上传五种来源，壁纸铺满整窗而卡片、弹窗保持实心；界面、代码与终端字体可从系统字体中选择。
+repo: https://github.com/KHWLGH/dsh-lightweight-wallpaper
+package: dsh-lightweight-wallpaper
+rowId: lightweight-wallpaper
+category: skin
+tags:
+  - wallpaper
+  - fonts
+  - bing
+  - presets
+modes:
+  - light
+  - dark
+install:
+  target: github:KHWLGH/dsh-lightweight-wallpaper#28f8541986e7a4f8c69fccd451117fc7ae665855
+  version: 0.1.2
+  commit: 28f8541986e7a4f8c69fccd451117fc7ae665855
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/KHWLGH/dsh-lightweight-wallpaper/28f8541986e7a4f8c69fccd451117fc7ae665855/screenshots/lightmode.png
+  - https://raw.githubusercontent.com/KHWLGH/dsh-lightweight-wallpaper/28f8541986e7a4f8c69fccd451117fc7ae665855/screenshots/darkmode.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1513
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T19:39:31.051Z
+metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+starsUpdatedAt: 2026-11-14T19:39:31.051Z
+updatedAt: 2026-11-14T19:39:31.051Z
+listScreenshot: https://raw.githubusercontent.com/KHWLGH/dsh-lightweight-wallpaper/28f8541986e7a4f8c69fccd451117fc7ae665855/screenshots/lightmode.png
