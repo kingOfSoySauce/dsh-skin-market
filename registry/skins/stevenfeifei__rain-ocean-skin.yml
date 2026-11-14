@@ -1,6 +1,50 @@
-url: https://github.com/stevenfeifei/rain-ocean-skin
+id: stevenfeifei.rain.ocean.skin
 name:
   zh: 雨海
   en: Rain ocean
 author: stevenfeifei
 description: 16 秒无缝循环的夜雨海面视频皮肤：右侧浮标灯塔、湿海面反光与毫米级细雨。
+repo: https://github.com/stevenfeifei/rain-ocean-skin
+package: "@local/dsh-rain-ocean-skin"
+rowId: rain-ocean-skin
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:stevenfeifei/rain-ocean-skin#2d6ea273d54e656c862096f0edc2e8742bccf65b
+  version: 1.0.0
+  commit: 2d6ea273d54e656c862096f0edc2e8742bccf65b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: repository-card
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-14T21:10:03.131Z
+metadataUpdatedAt: 2026-11-14T21:10:03.131Z
+starsUpdatedAt: 2026-11-14T21:10:03.131Z
+updatedAt: 2026-11-14T21:10:03.131Z
