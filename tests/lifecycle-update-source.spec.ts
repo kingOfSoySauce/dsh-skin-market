@@ -69,6 +69,7 @@ describe('Web update source concurrency', () => {
 
     expect((await finished(operation)).phase).toBe('failed')
     expect(operation.message).toContain('更新来源在下载或排队期间发生变化')
+    expect(operation.messageKey).toBe('failure.updateSourceDownloadQueuedProblem')
     expect(calls).toHaveLength(1)
     expect(calls[0]).toContain('--dir')
     expect(readDependencies(directory)[skin.package]).toBe(changedSpec)

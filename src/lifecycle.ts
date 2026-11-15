@@ -2192,20 +2192,20 @@ export class SkinLifecycle {
     try {
       await prepare()
     } catch (error) {
-      if (expectedSpec !== undefined && readDependencies(this.options.profileDir)[skin.package] !== expectedSpec) throw new Error('更新来源在安装准备期间发生变化，请刷新后重试')
+      if (expectedSpec !== undefined && readDependencies(this.options.profileDir)[skin.package] !== expectedSpec) throw new MarketMessageError('更新来源在安装准备期间发生变化，请刷新后重试', 'failure.updateSourceChangedProblem')
       await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
       throw error
     }
   }
 
   private assertNpmMigration(skin: SkinEntry, sourceContext?: string): NonNullable<ReturnType<typeof npmSourceMigration>> {
-    if (this.hostKind === 'desktop') throw new Error('Desktop 暂不支持换用 npm')
+    if (this.hostKind === 'desktop') throw new MarketMessageError('Desktop 暂不支持换用 npm', 'failure.npmMigrationDesktopProblem')
     const migration = npmSourceMigration(this.options.profileDir, this.skin(skin.id))
     if (sourceContext !== undefined && (migration?.kind !== 'local' || migration.context !== sourceContext)) {
-      throw new Error('本地安装来源或市场版本已变化，请重新确认替换')
+      throw new MarketMessageError('本地安装来源或市场版本已变化，请重新确认替换', 'failure.migrationReviewChangedProblem')
     }
-    if (migration === undefined) throw new Error('当前安装与已核验的 npm 来源不对应，无法换用 npm；请刷新目录并先更新 GitHub 版本')
-    if (migration.kind === 'local' && sourceContext === undefined) throw new Error('本地安装需先确认替换为市场版本')
+    if (migration === undefined) throw new MarketMessageError('当前安装与已核验的 npm 来源不对应，无法换用 npm；请刷新目录并先更新 GitHub 版本', 'failure.npmMigrationUnavailableProblem')
+    if (migration.kind === 'local' && sourceContext === undefined) throw new MarketMessageError('本地安装需先确认替换为市场版本', 'failure.localMigrationConsentProblem')
     return migration
   }
 
@@ -2220,36 +2220,36 @@ export class SkinLifecycle {
     if (consent === undefined) return undefined
     const current = this.skin(skin.id)
     if (consent.reviewed !== this.replacementReview(current) || consent.reviewed !== this.replacementReview(skin)
-      || reviewedNpmSourceError(current) !== null) throw new Error('本地安装来源或市场版本已变化，请重新确认替换')
+      || reviewedNpmSourceError(current) !== null) throw new MarketMessageError('本地安装来源或市场版本已变化，请重新确认替换', 'failure.migrationReviewChangedProblem')
     return npmInstallTarget(current)!
   }
 
   private assertReplacementArtifact(directory: string, skin: SkinEntry, operation: Operation): void {
     if (this.replacementTarget(skin, operation) === undefined) return
     const source = skin.install.npm
-    if (reviewedNpmSourceError(skin) !== null || source === undefined) throw new Error('市场 npm 安装目标已变化，请重新确认替换')
+    if (reviewedNpmSourceError(skin) !== null || source === undefined) throw new MarketMessageError('市场 npm 安装目标已变化，请重新确认替换', 'failure.npmTargetChangedProblem')
     const validation = validateNpmArtifact(directory, source)
-    if (!validation.ok) throw new Error(validation.reason ?? '市场 npm 安装包未通过核验')
+    if (!validation.ok) throw new MarketMessageError(validation.reason ?? '市场 npm 安装包未通过核验', 'failure.npmArtifactVerifyProblem')
     const risk = inspectSkinArtifactRisk(directory, skin, 'dsh')
-    if (risk !== undefined) throw new Error(risk.warnings[0] ?? '市场 npm 安装包未通过核验')
+    if (risk !== undefined) throw new MarketMessageError(risk.warnings[0] ?? '市场 npm 安装包未通过核验', 'failure.npmArtifactVerifyProblem')
   }
 
   /** An ordinary Desktop update must retain the installed source family. */
   private desktopUpdateTarget(skin: SkinEntry): string {
     const current = readDependencies(this.options.profileDir)[skin.package]
-    if (current === undefined) throw new Error('请先安装皮肤，再执行更新')
+    if (current === undefined) throw new MarketMessageError('请先安装皮肤，再执行更新', 'failure.skinNotInstalledProblem')
     if (/^github:/i.test(current) || /^(?:git\+)?(?:https?|git):\/\/github\.com\//i.test(current)
       || /^https:\/\/codeload\.github\.com\//i.test(current) || /^(?:ssh:\/\/)?git@github\.com[:/]/i.test(current)) {
-      if (!githubArtifactSourceMatches(skin, current)) throw new Error('当前 GitHub 仓库或子目录与市场来源不同，无法自动换源；请按原安装方式更新')
+      if (!githubArtifactSourceMatches(skin, current)) throw new MarketMessageError('当前 GitHub 仓库或子目录与市场来源不同，无法自动换源；请按原安装方式更新', 'failure.githubSourceMismatchProblem')
       const plan = desktopGithubInstallPlan(skin, true)
-      if (this.management === undefined || plan.kind !== 'github') throw new Error(`当前 GitHub 来源无法自动更新；${plan.kind === 'manual' ? plan.reason : '此宿主不支持 GitHub 安装'}，请按原安装方式更新`)
+      if (this.management === undefined || plan.kind !== 'github') throw new MarketMessageError(`当前 GitHub 来源无法自动更新；${plan.kind === 'manual' ? plan.reason : '此宿主不支持 GitHub 安装'}，请按原安装方式更新`, 'failure.githubHostUnsupportedProblem')
       return plan.target
     }
     const plan = desktopInstallPlan(skin, this.management !== undefined, true)
     const npm = current.startsWith(`npm:${skin.package}@`) ? current.slice(`npm:${skin.package}@`.length)
       : current.startsWith(`${skin.package}@`) ? current.slice(`${skin.package}@`.length) : current
     if (plan.kind === 'npm' && (isVersionRange(npm) && npm !== 'unverified' || /^[A-Za-z][A-Za-z0-9._-]*$/.test(npm))) return plan.target
-    throw new Error('当前皮肤使用本地、自定义或无法继续核验的安装来源，无法自动换源；请按原安装方式更新')
+    throw new MarketMessageError('当前皮肤使用本地、自定义或无法继续核验的安装来源，无法自动换源；请按原安装方式更新', 'failure.customSourceUpdateProblem')
   }
 
   /** The official in-place update target for an installed skin, when this Host can replace it. */
@@ -2317,8 +2317,8 @@ export class SkinLifecycle {
       const selectedTarget = target ?? (current === undefined ? undefined : this.desktopUpdateTarget(skin))
       const githubTarget = selectedTarget === skin.install.target
       const plan = githubTarget && this.management !== undefined ? desktopGithubInstallPlan(skin, true) : desktopInstallPlan(skin, this.management !== undefined, true)
-      if (plan.kind === 'manual') throw new Error(`Desktop 当前不支持该皮肤的一键安装（${plan.reason}），请使用官方添加插件面板`)
-      if (selectedTarget !== undefined && plan.target !== selectedTarget) throw new Error('Desktop 安装目标与已核验来源不一致')
+      if (plan.kind === 'manual') throw new MarketMessageError(`Desktop 当前不支持该皮肤的一键安装（${plan.reason}），请使用官方添加插件面板`, 'failure.desktopManualProblem')
+      if (selectedTarget !== undefined && plan.target !== selectedTarget) throw new MarketMessageError('Desktop 安装目标与已核验来源不一致', 'failure.desktopTargetMismatchProblem')
       // The native transaction materializes packages before we can inspect
       // their full bundle. Reject an already-known main loader collision
       // first; keep the actual artifact's metadata and full-row checks below.
@@ -2327,7 +2327,7 @@ export class SkinLifecycle {
       const legacyBundles = await this.inspectLegacyBundles(skin)
       this.assertRuntimeLoaderConflicts(skin, knownRows, legacyBundles.map(bundle => bundle.name))
       const installPlugin = this.options.runner.installPlugin
-      if (installPlugin === undefined) throw new Error('当前 Desktop 未提供受支持的插件安装服务')
+      if (installPlugin === undefined) throw new MarketMessageError('当前 Desktop 未提供受支持的插件安装服务', 'failure.desktopInstallServiceMissing')
       this.update(operation, 'installing')
       const controller = this.abortControllers.get(operation.id)
       const tracker = new PnpmProgressTracker()
@@ -2361,9 +2361,9 @@ export class SkinLifecycle {
           })))
           : result
         this.acceptManagement(replaced, operation)
-        if (replaced.management?.version !== undefined && replaced.management.version !== skin.install.version) throw new Error('官方宿主安装的版本与已核验目标不一致')
+        if (replaced.management?.version !== undefined && replaced.management.version !== skin.install.version) throw new MarketMessageError('官方宿主安装的版本与已核验目标不一致', 'failure.hostUpdateVersionProblem')
         const artifact = validateDesktopArtifact(this.options.profileDir, skin, { allowArtifactRisk: true })
-        if (!artifact.ok) throw new Error(artifact.reason ?? '官方宿主安装构件未通过核验')
+        if (!artifact.ok) throw new MarketMessageError(artifact.reason ?? '官方宿主安装构件未通过核验', 'failure.hostUpdateArtifactProblem')
         this.assertLegacyOfficialPeers(packageManifest(this.options.profileDir, skin.package))
         if (this.management.installRequiresRestart) operation.restartRequired = true
         return
@@ -2403,7 +2403,7 @@ export class SkinLifecycle {
       ? this.replacementTarget(skin, operation)
       : operation.kind === 'migrate' ? this.assertNpmMigration(skin).target : undefined
     if (operation.kind === 'migrate' && migrationTarget !== resolved.target) {
-      throw new Error('npm 换源目标在下载期间发生变化，请刷新后重试')
+      throw new MarketMessageError('npm 换源目标在下载期间发生变化，请刷新后重试', 'failure.npmMigrationTargetChangedProblem')
     }
     this.assertSkinLoaderConflicts(skin, resolved.loaderRows)
     this.assertRuntimeLoaderConflicts(skin, resolved.loaderRows)
@@ -2574,9 +2574,9 @@ export class SkinLifecycle {
       this.assertReplacementArtifact(directory, skin, operation)
       if (isNpmInstallTarget(skin, target)) {
         if (readDependencies(directory)[skin.package] !== skin.install.npm?.version) {
-          throw new Error('下载的 npm 依赖未记录目录固定版本，已停止安装')
+          throw new MarketMessageError('下载的 npm 依赖未记录目录固定版本，已停止安装', 'failure.prefetchNpmVersionMissingProblem')
         }
-        if (validation.version !== skin.install.version) throw new Error('下载的 npm 包版本与目录固定版本不一致')
+        if (validation.version !== skin.install.version) throw new MarketMessageError('下载的 npm 包版本与目录固定版本不一致', 'failure.prefetchNpmVersionMismatchProblem')
       }
       const packageDirectory = join(directory, 'node_modules', ...skin.package.split('/'))
       const packageRows = packageLoaderOwnershipAt(packageDirectory, skin.package)
@@ -3039,17 +3039,17 @@ export class SkinLifecycle {
         return await this.prefetch(skin, operation, target)
       })
       if (operation.kind === 'migrate' && this.assertNpmMigration(skin, sourceContext).target !== prefetched.target) {
-        throw new Error('npm 换源目标在下载期间发生变化，请刷新后重试')
+        throw new MarketMessageError('npm 换源目标在下载期间发生变化，请刷新后重试', 'failure.npmMigrationTargetChangedProblem')
       }
     }
     await this.withProfileLock(operation, async () => {
       this.assertCompatibilityContext(operation, skin)
-      if (this.hostKind === 'desktop' && this.desktopUpdateTarget(skin) !== target) throw new Error('Desktop 更新来源在排队期间发生变化，请刷新后重试')
+      if (this.hostKind === 'desktop' && this.desktopUpdateTarget(skin) !== target) throw new MarketMessageError('Desktop 更新来源在排队期间发生变化，请刷新后重试', 'failure.updateSourceQueuedProblem')
       if (this.hostKind !== 'desktop') {
-        if (operation.kind === 'migrate' && this.assertNpmMigration(skin, sourceContext).target !== target) throw new Error('npm 换源目标在排队期间发生变化，请刷新后重试')
-        if (readDependencies(this.options.profileDir)[skin.package] !== originalSpec) throw new Error('更新来源在下载或排队期间发生变化，请刷新后重试')
+        if (operation.kind === 'migrate' && this.assertNpmMigration(skin, sourceContext).target !== target) throw new MarketMessageError('npm 换源目标在排队期间发生变化，请刷新后重试', 'failure.npmMigrationQueuedProblem')
+        if (readDependencies(this.options.profileDir)[skin.package] !== originalSpec) throw new MarketMessageError('更新来源在下载或排队期间发生变化，请刷新后重试', 'failure.updateSourceDownloadQueuedProblem')
         await this.prepareProfile(skin, operation, () => this.syncPnpmMetadata(operation, '正在修复 profile 的 pnpm 锁文件'), originalSpec)
-        if (readDependencies(this.options.profileDir)[skin.package] !== originalSpec) throw new Error('更新来源在安装准备期间发生变化，请刷新后重试')
+        if (readDependencies(this.options.profileDir)[skin.package] !== originalSpec) throw new MarketMessageError('更新来源在安装准备期间发生变化，请刷新后重试', 'failure.updateSourceChangedProblem')
       }
       const previousState = readMarketState(this.options.profileDir)
       let wasActive = this.enabledSkinIds(previousState).has(skin.id)
@@ -3073,7 +3073,7 @@ export class SkinLifecycle {
       let installationStarted = false
       try {
         if (this.hostKind !== 'desktop') await this.syncPnpmMetadata(operation, '正在清理旧的兼容适配')
-        if (this.hostKind !== 'desktop' && readDependencies(this.options.profileDir)[skin.package] !== originalSpec) throw new Error('更新来源在安装准备期间发生变化，请刷新后重试')
+        if (this.hostKind !== 'desktop' && readDependencies(this.options.profileDir)[skin.package] !== originalSpec) throw new MarketMessageError('更新来源在安装准备期间发生变化，请刷新后重试', 'failure.updateSourceChangedProblem')
         if (prefetched === undefined) this.update(operation, 'downloading')
         installationStarted = true
         const managed = operation.kind === 'update' ? this.managedUpdateTargetFor(skin) : undefined
@@ -3124,7 +3124,7 @@ export class SkinLifecycle {
         // Before our add starts, a new source belongs to another writer. Do
         // not restore the old manifest over that newer choice.
         if (!installationStarted && this.hostKind !== 'desktop' && readDependencies(this.options.profileDir)[skin.package] !== originalSpec) {
-          throw new Error('更新来源在安装准备期间发生变化，请刷新后重试')
+          throw new MarketMessageError('更新来源在安装准备期间发生变化，请刷新后重试', 'failure.updateSourceChangedProblem')
         }
         await this.recoverProfile(skin, operation, snapshot, mutationsBefore)
         throw error

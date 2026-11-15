@@ -147,7 +147,7 @@ describe('official Desktop pinned GitHub installation', () => {
     const f = fixture()
     f.materialize(spec)
     const operation = await finished(f.lifecycle.begin('update', f.item.id))
-    expect(operation).toMatchObject({ phase: 'failed', message: expect.stringContaining('无法自动换源') })
+    expect(operation).toMatchObject({ phase: 'failed', message: expect.stringContaining('无法自动换源'), messageKey: 'failure.customSourceUpdateProblem' })
     expect(f.manager.installBundle).not.toHaveBeenCalled()
     expect(readDependencies(f.directory)[f.item.package]).toBe(spec)
   })
