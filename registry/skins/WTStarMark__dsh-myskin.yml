@@ -20,8 +20,20 @@ install:
   target: github:WTStarMark/dsh-myskin#014b1aa9054dabb413fb18283832dd83e71e5726
   version: 0.4.1
   commit: 014b1aa9054dabb413fb18283832dd83e71e5726
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-myskin
+    packageVersion: 0.4.1
+    integrity: sha512-syinYztAU88+eml3OX8b65WSR/lEscz2qvj35+mV/WYkuMLxj0LdyEpqtHuBp/m2DT/HW+pPK+AJCpOKY1VUFA==
+  npm:
+    name: dsh-myskin
+    version: 0.4.1
+    integrity: sha512-syinYztAU88+eml3OX8b65WSR/lEscz2qvj35+mV/WYkuMLxj0LdyEpqtHuBp/m2DT/HW+pPK+AJCpOKY1VUFA==
+    repository: https://github.com/WTStarMark/dsh-myskin
+    gitHead: 014b1aa9054dabb413fb18283832dd83e71e5726
 compatibility:
-  dsh: unverified
+  dsh: <0.1.7
   platform:
     - web
 screenshots:
@@ -30,8 +42,9 @@ screenshots:
   - https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/settings-skin-manager.jpg
   - https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/draw-mode.png
   - https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/settings-account.jpg
+listScreenshot: https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/skin-applied.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -44,13 +57,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 014b1aa9054dabb413fb18283832dd83e71e5726
+    packageVersion: 0.4.1
+    scannerVersion: static-v2
+    dshVersion: <0.1.7
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:13.133Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1476
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-14T23:45:14.435Z
+metadataUpdatedAt: 2026-11-14T23:45:14.435Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/WTStarMark/dsh-myskin/014b1aa9054dabb413fb18283832dd83e71e5726/docs/screenshots/skin-applied.png
+updatedAt: 2026-11-14T23:45:14.435Z

@@ -16,14 +16,14 @@ modes:
   - light
   - dark
 install:
-  target: github:dsh-plugins/dsh-thought-buddy#c0037d2f563f439692e3f4eaa2105053c35804f1
+  target: github:dsh-plugins/dsh-thought-buddy#01cf9108e2c9a40fcb783f6fa51739153b4cddad
   version: 2.0.0
-  commit: c0037d2f563f439692e3f4eaa2105053c35804f1
+  commit: 01cf9108e2c9a40fcb783f6fa51739153b4cddad
   desktop:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ^2.0.0-dev.42783642741
   platform:
     - web
 screenshots:
@@ -32,28 +32,28 @@ screenshots:
   - https://raw.githubusercontent.com/dsh-plugins/dsh-thought-buddy/bb8f1aa5972aab844b0c9793f0793b34f4a486b8/docs/img.png
 listScreenshot: https://raw.githubusercontent.com/dsh-plugins/dsh-thought-buddy/dd8fc9056d22530085b2bfda44443a1788d979ab/docs/img.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: c0037d2f563f439692e3f4eaa2105053c35804f1
+    commit: 01cf9108e2c9a40fcb783f6fa51739153b4cddad
     packageVersion: 2.0.0
     scannerVersion: static-v2
+    dshVersion: ^2.0.0-dev.42783642741
     mode: static
     result: unknown
-    checkedAt: 2026-11-14T00:23:03.628Z
+    checkedAt: 2026-11-14T23:43:27.054Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -62,7 +62,7 @@ license:
   commercialUse: true
 featuredRank: 29
 starsSnapshot: 8
-releaseUpdatedAt: 2026-11-14T00:23:04.666Z
-metadataUpdatedAt: 2026-11-14T00:23:04.666Z
+releaseUpdatedAt: 2026-11-14T23:43:33.594Z
+metadataUpdatedAt: 2026-11-14T23:43:33.594Z
 starsUpdatedAt: 2026-11-09T07:13:28.512Z
-updatedAt: 2026-11-14T00:23:04.666Z
+updatedAt: 2026-11-14T23:43:33.594Z

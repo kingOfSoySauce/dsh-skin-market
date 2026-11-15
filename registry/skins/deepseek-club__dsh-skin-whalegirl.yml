@@ -20,10 +20,17 @@ install:
   target: github:deepseek-club/dsh-skin-whalegirl#0ff0afb9f960c77e1368c2ab03f425c1b9b6952d
   version: 0.1.0
   commit: 0ff0afb9f960c77e1368c2ab03f425c1b9b6952d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/home.png
+  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/conversation.png
+  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -39,18 +46,22 @@ health:
     topic: improve
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 0ff0afb9f960c77e1368c2ab03f425c1b9b6952d
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:30.196Z
+    findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 1191
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T06:29:27.360Z
-metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+releaseUpdatedAt: 2026-11-14T23:45:30.196Z
+metadataUpdatedAt: 2026-11-14T23:45:30.196Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-14T06:29:27.360Z
-marketScreenshots:
-  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/home.png
-  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/conversation.png
-  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/settings.png
+updatedAt: 2026-11-14T23:45:30.196Z

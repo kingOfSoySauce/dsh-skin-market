@@ -20,34 +20,48 @@ install:
   target: github:Anime2Real/Chobits-Chii-DSH#e32dfef487903a8f377293ca49d2b347eb704ebd
   version: 1.0.2
   commit: e32dfef487903a8f377293ca49d2b347eb704ebd
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: chobits-chii-dsh
+    packageVersion: 1.0.2
+    integrity: sha512-rthBlq1vybWKqhI+HMyK8+miiDOSAc8lU8S3GarJp05zj0u0NsJvKg7WMm9CyXxyStOGV4InkZ/iJF2XdzVWTg==
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1-rc.5 <0.3.0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Anime2Real/Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/docs/preview-light.png
   - https://raw.githubusercontent.com/Anime2Real/Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/docs/preview-dark.png
+listScreenshot: https://raw.githubusercontent.com/Anime2Real/Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/docs/preview-light.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
+  scan:
+    commit: e32dfef487903a8f377293ca49d2b347eb704ebd
+    packageVersion: 1.0.2
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.5 <0.3.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:48.716Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1294
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:46:49.021Z
+metadataUpdatedAt: 2026-11-14T23:46:49.021Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/Anime2Real/Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/docs/preview-light.png
+updatedAt: 2026-11-14T23:46:49.021Z

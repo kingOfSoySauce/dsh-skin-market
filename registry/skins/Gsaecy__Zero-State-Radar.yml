@@ -21,14 +21,14 @@ install:
   version: 0.1.3
   commit: 58e0b377fe3b9051e4286e6b0428be75dcba8078
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-rc.1"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/home.png
   - https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/session.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -46,7 +46,7 @@ license:
 featuredRank: 1346
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/home.png

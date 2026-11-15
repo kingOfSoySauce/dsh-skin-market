@@ -30,7 +30,7 @@ screenshots:
   - skin-screenshots/lxj5820__dsh-boot-animation/b7786cd749ef18608340a8f5e2071a3656ebf009/home.gif
 listScreenshot: https://raw.githubusercontent.com/lxj5820/dsh-boot-animation/3eaa46e24776cd8f10d613c84947e884d8e7f10b/assets/preview.gif
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
@@ -42,22 +42,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.7-rc.2 未被本次检测范围 >=3.18.4 完全覆盖（固定版本 6c2ef4b1d5ca4b791323d247fea5b7f6e272cc71）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 6c2ef4b1d5ca4b791323d247fea5b7f6e272cc71
     packageVersion: 0.3.0
     scannerVersion: static-v2
-    dshVersion: 0.1.7-rc.2
+    dshVersion: ">=3.18.4"
     mode: static
     result: pass
-    checkedAt: 2026-11-11T13:17:18.418Z
+    checkedAt: 2026-11-14T23:41:52.991Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 344
 featuredRank: 1000
+starsSnapshot: 347
 releaseUpdatedAt: 2026-11-11T13:17:18.777Z
-metadataUpdatedAt: 2026-11-11T13:17:18.777Z
-starsUpdatedAt: 2026-11-14T00:22:37.200Z
-updatedAt: 2026-11-14T00:22:37.200Z
+metadataUpdatedAt: 2026-11-14T23:41:53.539Z
+starsUpdatedAt: 2026-11-14T23:41:53.539Z
+updatedAt: 2026-11-14T23:41:53.539Z

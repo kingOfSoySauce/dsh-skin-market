@@ -20,6 +20,9 @@ install:
   target: github:haohaozi328-arch/dsh-skin-luoxiaohei#910723bb10bfd790dd8680b2a9be63d5b00f0a2d
   version: 0.2.1
   commit: 910723bb10bfd790dd8680b2a9be63d5b00f0a2d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.2-rc.1 || 0.1.7-rc.2
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/haohaozi328-arch/dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/img/1.jpg
   - https://raw.githubusercontent.com/haohaozi328-arch/dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/img/2.jpg
   - https://raw.githubusercontent.com/haohaozi328-arch/dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/img/3.jpg
+listScreenshot: https://raw.githubusercontent.com/haohaozi328-arch/dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/img/1.jpg
 review:
   compatibility: verified
   preview: verified
@@ -36,19 +40,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 910723bb10bfd790dd8680b2a9be63d5b00f0a2d
+    packageVersion: 0.2.1
+    scannerVersion: static-v2
+    dshVersion: 0.2.2-rc.1 || 0.1.7-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:44:53.368Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1225
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:44:53.857Z
+metadataUpdatedAt: 2026-11-14T23:44:53.857Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/haohaozi328-arch/dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/img/1.jpg
+updatedAt: 2026-11-14T23:44:53.857Z

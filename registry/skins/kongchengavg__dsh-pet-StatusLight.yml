@@ -20,6 +20,18 @@ install:
   target: github:kongchengavg/dsh-pet-StatusLight#62cc338cee3ccf18a87280063f3f1d9031404489
   version: 1.1.0
   commit: 62cc338cee3ccf18a87280063f3f1d9031404489
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-pet-statuslight
+    packageVersion: 1.1.0
+    integrity: sha512-1pb2A1M8X4XqLeSvsSKRZJxempvsXSgAI4KumyRQqMnrtAw2/Wlzjvy5WVNndULzDry7EF0WSg1NN01Y6TLc4Q==
+  npm:
+    name: dsh-pet-statuslight
+    version: 1.1.0
+    integrity: sha512-1pb2A1M8X4XqLeSvsSKRZJxempvsXSgAI4KumyRQqMnrtAw2/Wlzjvy5WVNndULzDry7EF0WSg1NN01Y6TLc4Q==
+    repository: https://github.com/kongchengavg/dsh-pet-StatusLight
+    gitHead: 62cc338cee3ccf18a87280063f3f1d9031404489
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +40,7 @@ screenshots:
   - https://raw.githubusercontent.com/kongchengavg/dsh-pet-StatusLight/62cc338cee3ccf18a87280063f3f1d9031404489/assets/screenshots/characters.png
   - https://raw.githubusercontent.com/kongchengavg/dsh-pet-StatusLight/62cc338cee3ccf18a87280063f3f1d9031404489/assets/screenshots/states.png
   - https://raw.githubusercontent.com/kongchengavg/dsh-pet-StatusLight/62cc338cee3ccf18a87280063f3f1d9031404489/assets/screenshots/chatbox.png
+listScreenshot: https://raw.githubusercontent.com/kongchengavg/dsh-pet-StatusLight/62cc338cee3ccf18a87280063f3f1d9031404489/assets/screenshots/characters.png
 review:
   compatibility: unverified
   preview: verified
@@ -41,14 +54,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 62cc338cee3ccf18a87280063f3f1d9031404489
+    packageVersion: 1.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:44:56.466Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1377
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:44:57.846Z
+metadataUpdatedAt: 2026-11-14T23:44:57.846Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/kongchengavg/dsh-pet-StatusLight/62cc338cee3ccf18a87280063f3f1d9031404489/assets/screenshots/characters.png
+updatedAt: 2026-11-14T23:44:57.846Z

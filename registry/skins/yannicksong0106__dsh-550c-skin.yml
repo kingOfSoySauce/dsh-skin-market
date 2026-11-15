@@ -21,6 +21,12 @@ install:
   desktop:
     mode: manual-only
     reason: published-npm-gitHead-differs-from-pin
+  npm:
+    name: dsh-550c-skin
+    version: 0.1.0-beta.6
+    integrity: sha512-1PpT0I6ZwzlbUCvftiwSQYBA0AKJupF01rEEN2qVMnjjTWvQ89w+PevtjF1/BYl9YHT/lIB5tcoOnOR+Ck6JFg==
+    repository: https://github.com/yannicksong0106/dsh-550c-skin
+    gitHead: aed9e1abfffd3f6a3fad51a66ffe583f7b998025
 compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
@@ -56,9 +62,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 11
 featuredRank: 1107
-releaseUpdatedAt: 2026-11-11T13:17:32.773Z
+starsSnapshot: 11
+releaseUpdatedAt: 2026-11-14T23:43:12.020Z
 metadataUpdatedAt: 2026-11-11T13:17:32.773Z
 starsUpdatedAt: 2026-11-09T00:13:21.295Z
-updatedAt: 2026-11-11T13:17:32.773Z
+updatedAt: 2026-11-14T23:43:12.020Z

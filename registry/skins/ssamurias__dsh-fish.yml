@@ -18,11 +18,23 @@ modes:
   - light
   - dark
 install:
-  target: github:ssamurias/dsh-fish#ec168edd2955f24ba79e88d0abd533df0ba05d87
-  version: 0.9.8
-  commit: ec168edd2955f24ba79e88d0abd533df0ba05d87
+  target: github:ssamurias/dsh-fish#9cc268d769a449e297ce6c3a76fe3ec8832c0ab5
+  version: 1.0.1
+  commit: 9cc268d769a449e297ce6c3a76fe3ec8832c0ab5
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@ssamurias/dsh-fish"
+    packageVersion: 1.0.1
+    integrity: sha512-akLp35yxcK0wrvejQ83AYGY4tELocDXLEiVRWx0saO0dIG+sv5sIthKQctuFmOK90DqFATPoTGr2Yb4ii048Qw==
+  npm:
+    name: "@ssamurias/dsh-fish"
+    version: 1.0.1
+    integrity: sha512-akLp35yxcK0wrvejQ83AYGY4tELocDXLEiVRWx0saO0dIG+sv5sIthKQctuFmOK90DqFATPoTGr2Yb4ii048Qw==
+    repository: https://github.com/ssamurias/dsh-fish
+    gitHead: 9cc268d769a449e297ce6c3a76fe3ec8832c0ab5
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-rc.1 <0.3.0-0"
   platform:
     - web
 screenshots:
@@ -30,27 +42,35 @@ screenshots:
   - https://raw.githubusercontent.com/ssamurias/dsh-fish/ec168edd2955f24ba79e88d0abd533df0ba05d87/media/settings-status.png
   - https://raw.githubusercontent.com/ssamurias/dsh-fish/ec168edd2955f24ba79e88d0abd533df0ba05d87/media/settings-growth.png
   - https://raw.githubusercontent.com/ssamurias/dsh-fish/ec168edd2955f24ba79e88d0abd533df0ba05d87/media/settings-browse.png
+listScreenshot: https://raw.githubusercontent.com/ssamurias/dsh-fish/ec168edd2955f24ba79e88d0abd533df0ba05d87/media/fish.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
+  scan:
+    commit: 9cc268d769a449e297ce6c3a76fe3ec8832c0ab5
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:41:59.950Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1264
-starsSnapshot: 150
-releaseUpdatedAt: 2026-11-14T07:56:31.671Z
-metadataUpdatedAt: 2026-11-14T07:56:31.671Z
-starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-14T07:56:31.671Z
-listScreenshot: https://raw.githubusercontent.com/ssamurias/dsh-fish/ec168edd2955f24ba79e88d0abd533df0ba05d87/media/fish.jpg
+starsSnapshot: 152
+releaseUpdatedAt: 2026-11-14T23:42:01.469Z
+metadataUpdatedAt: 2026-11-14T23:42:01.469Z
+starsUpdatedAt: 2026-11-14T23:42:01.469Z
+updatedAt: 2026-11-14T23:42:01.469Z

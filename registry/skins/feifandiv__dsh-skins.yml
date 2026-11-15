@@ -21,26 +21,25 @@ install:
   version: 1.0.0
   commit: 353b5781e0499a1cbb72f5256848a59a8c3f9892
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1-rc.1"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/feifandiv/dsh-skins/353b5781e0499a1cbb72f5256848a59a8c3f9892/docs/paper-light.png
   - https://raw.githubusercontent.com/feifandiv/dsh-skins/353b5781e0499a1cbb72f5256848a59a8c3f9892/docs/ink-dark.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
 license:
   code: MIT
@@ -48,7 +47,7 @@ license:
 featuredRank: 1334
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/feifandiv/dsh-skins/353b5781e0499a1cbb72f5256848a59a8c3f9892/docs/paper-light.png

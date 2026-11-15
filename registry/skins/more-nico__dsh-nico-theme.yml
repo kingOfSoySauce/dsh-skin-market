@@ -39,34 +39,33 @@ screenshots:
   - https://raw.githubusercontent.com/more-nico/dsh-nico-theme/99ce2ccf6c4f7464c7b22de97f54d57ca84e41d7/assets/rail-dark.png
 listScreenshot: https://raw.githubusercontent.com/more-nico/dsh-nico-theme/99ce2ccf6c4f7464c7b22de97f54d57ca84e41d7/assets/chat-dark.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.7-rc.2 未被本次检测范围 ^0.1.7-rc.2 || ^0.2.0-rc.2 || ^0.2.1-rc.2 完全覆盖（固定版本 99ce2ccf6c4f7464c7b22de97f54d57ca84e41d7）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  suggestions: []
   scan:
     commit: 99ce2ccf6c4f7464c7b22de97f54d57ca84e41d7
     packageVersion: 0.3.9
     scannerVersion: static-v2
-    dshVersion: ^0.1.7-rc.2 || ^0.2.0-rc.2 || ^0.2.1-rc.2
+    dshVersion: ">=0.1.7-rc.2"
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:31:51.549Z
+    checkedAt: 2026-11-14T23:44:08.045Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 5
 featuredRank: 997
+starsSnapshot: 5
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-11-09T00:14:16.511Z
+metadataUpdatedAt: 2026-11-14T23:44:10.075Z
 starsUpdatedAt: 2026-11-11T13:17:15.192Z
-updatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-14T23:44:10.075Z

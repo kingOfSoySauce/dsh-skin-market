@@ -21,6 +21,9 @@ install:
   target: github:Time-233/dsh-theme-neon-arcade#5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe
   version: 1.5.1
   commit: 5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.1
   platform:
@@ -32,6 +35,7 @@ screenshots:
   - https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/pig-sling-day.png
   - https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/fruit-slice.png
   - https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/fruit-slice-loss.png
+listScreenshot: https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/theme.png
 review:
   compatibility: verified
   preview: verified
@@ -40,19 +44,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe
+    packageVersion: 1.5.1
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:45.199Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1268
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+releaseUpdatedAt: 2026-11-14T23:48:46.142Z
+metadataUpdatedAt: 2026-11-14T23:48:46.142Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
-listScreenshot: https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/5437ac80ce0fcdab3b6dcbde49ab2b94bfc615fe/docs/screenshots/theme.png
+updatedAt: 2026-11-14T23:48:46.142Z

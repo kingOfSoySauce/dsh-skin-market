@@ -31,7 +31,7 @@ install:
     repository: https://github.com/lengduan/dsh-815-skin
     gitHead: 60f680aa97862c8f42a4b767f96c4890f81537b8
 compatibility:
-  dsh: unverified
+  dsh: ^4.0.1
   platform:
     - web
 screenshots:
@@ -43,19 +43,18 @@ screenshots:
   - https://raw.githubusercontent.com/lengduan/dsh-815-skin/5b0c843b8fb0e3e4a0a223209fb8768d3cd3275d/docs/preview.png
 listScreenshot: https://raw.githubusercontent.com/lengduan/dsh-815-skin/761e3942738a0d1e3cdd4e974aef39b70570ffeb/assets/nanjing-surrender-chen-jian.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
@@ -74,6 +73,6 @@ license:
 featuredRank: 111
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-11T13:19:02.834Z
-metadataUpdatedAt: 2026-11-11T13:19:02.834Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-09-18T21:39:28.012Z
-updatedAt: 2026-11-11T13:19:02.834Z
+updatedAt: 2026-11-14T23:28:29.986Z

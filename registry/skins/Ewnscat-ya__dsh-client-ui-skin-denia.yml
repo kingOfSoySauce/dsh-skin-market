@@ -28,6 +28,10 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/home.png
+  - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/conversation.png
+  - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/settings.png
 screenshots:
   - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/home.gif
   - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/preset-light.gif
@@ -41,14 +45,15 @@ review:
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 217a5cbb6034917c0176f5bc0c6843855e9a7309
     packageVersion: 1.0.0
@@ -62,13 +67,9 @@ license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
   notice: 角色、美术和商标权利归原权利人所有；仓库声明为非官方同人作品并禁止商业使用。
-starsSnapshot: 55
-marketScreenshots:
-  - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/home.png
-  - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/conversation.png
-  - skin-screenshots/Ewnscat-ya__dsh-client-ui-skin-denia/217a5cbb6034917c0176f5bc0c6843855e9a7309/settings.png
 featuredRank: 133
+starsSnapshot: 56
 releaseUpdatedAt: 2026-10-08T23:45:00.226Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
-starsUpdatedAt: 2026-10-30T03:53:23.892Z
-updatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T23:42:13.944Z
+starsUpdatedAt: 2026-11-14T23:42:13.944Z
+updatedAt: 2026-11-14T23:42:13.944Z

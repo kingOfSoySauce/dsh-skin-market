@@ -21,6 +21,9 @@ install:
   target: github:muzapar00/united_nation_skin_deepseek_harness#284075c612c6faee7aa4c19655efe3038107c40f
   version: 0.3.0
   commit: 284075c612c6faee7aa4c19655efe3038107c40f
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.5-009EDB
   platform:
@@ -32,26 +35,36 @@ screenshots:
   - https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/settings-un-zh.png
   - https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/flag-wall-zh.png
   - https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/settings-flags-zh.png
+listScreenshot: https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/home-light-zh.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 284075c612c6faee7aa4c19655efe3038107c40f
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.5-009EDB
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:17.044Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1244
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:56:31.671Z
-metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+releaseUpdatedAt: 2026-11-14T23:48:18.727Z
+metadataUpdatedAt: 2026-11-14T23:48:18.727Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-14T07:56:31.671Z
-listScreenshot: https://raw.githubusercontent.com/muzapar00/united_nation_skin_deepseek_harness/284075c612c6faee7aa4c19655efe3038107c40f/docs/screenshots/home-light-zh.png
+updatedAt: 2026-11-14T23:48:18.727Z

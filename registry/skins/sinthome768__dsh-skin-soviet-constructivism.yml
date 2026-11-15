@@ -20,12 +20,16 @@ install:
   target: github:sinthome768/dsh-skin-soviet-constructivism#e9877a5f8750bc7c63d5e4e5036499b712c231d1
   version: 0.1.2
   commit: e9877a5f8750bc7c63d5e4e5036499b712c231d1
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/sinthome768/dsh-skin-soviet-constructivism/e9877a5f8750bc7c63d5e4e5036499b712c231d1/preview.png
+listScreenshot: https://raw.githubusercontent.com/sinthome768/dsh-skin-soviet-constructivism/e9877a5f8750bc7c63d5e4e5036499b712c231d1/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -39,15 +43,22 @@ health:
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: e9877a5f8750bc7c63d5e4e5036499b712c231d1
+    packageVersion: 0.1.2
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:38.536Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1439
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-14T23:48:38.564Z
+metadataUpdatedAt: 2026-11-14T23:48:38.564Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/sinthome768/dsh-skin-soviet-constructivism/e9877a5f8750bc7c63d5e4e5036499b712c231d1/preview.png
+updatedAt: 2026-11-14T23:48:38.564Z

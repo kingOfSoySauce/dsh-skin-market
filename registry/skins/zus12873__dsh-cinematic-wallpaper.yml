@@ -21,14 +21,14 @@ install:
   version: 0.2.0
   commit: 06e5a9bc353bb2e418c3fd7ff0b661367a1b86b8
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.5-rc.1"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/zus12873/dsh-cinematic-wallpaper/06e5a9bc353bb2e418c3fd7ff0b661367a1b86b8/docs/images/wallpaper.jpg
   - https://raw.githubusercontent.com/zus12873/dsh-cinematic-wallpaper/06e5a9bc353bb2e418c3fd7ff0b661367a1b86b8/docs/images/intro.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: manual-only
 health:
@@ -47,7 +47,7 @@ license:
 featuredRank: 1510
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/zus12873/dsh-cinematic-wallpaper/06e5a9bc353bb2e418c3fd7ff0b661367a1b86b8/docs/images/wallpaper.jpg

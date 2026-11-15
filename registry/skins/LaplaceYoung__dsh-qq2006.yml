@@ -44,22 +44,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 ^0.0.1-rc.1 未被本次检测范围 0.1.0-rc.7 完全覆盖（固定版本 ddde58e2cb8d1ff62543cc195f58a507605b7845）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.0.1-rc.1 未被本次检测范围 >=0.0.1 完全覆盖（固定版本 ddde58e2cb8d1ff62543cc195f58a507605b7845）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: ddde58e2cb8d1ff62543cc195f58a507605b7845
     packageVersion: 0.1.2
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.7
+    dshVersion: ">=0.0.1"
     mode: static
     result: pass
-    checkedAt: 2026-08-28T04:08:34.395Z
+    checkedAt: 2026-11-14T23:42:27.251Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 32
 featuredRank: 40
+starsSnapshot: 32
 releaseUpdatedAt: 2026-08-28T04:08:34.459Z
-metadataUpdatedAt: 2026-11-09T00:12:56.413Z
+metadataUpdatedAt: 2026-11-14T23:42:27.890Z
 starsUpdatedAt: 2026-10-20T22:15:14.615Z
-updatedAt: 2026-11-09T00:12:56.413Z
+updatedAt: 2026-11-14T23:42:27.890Z

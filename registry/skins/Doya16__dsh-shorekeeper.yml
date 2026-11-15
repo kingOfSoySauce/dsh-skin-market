@@ -18,9 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Doya16/dsh-shorekeeper#3f429ffe25806656a3d549aa6515cbb6b5c515f0
-  version: 1.2.7
-  commit: 3f429ffe25806656a3d549aa6515cbb6b5c515f0
+  target: github:Doya16/dsh-shorekeeper#1ce7c2fe4830e6076d67ad1708ea94966df6f84f
+  version: 1.2.8
+  commit: 1ce7c2fe4830e6076d67ad1708ea94966df6f84f
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-shorekeeper
+    packageVersion: 1.2.8
+    integrity: sha512-vQIAUs3vTMWSWfwOV1w30SwxGlrlXLy5jy7GzFd23T/WsVe03E9tVG5HPGuzlikIblfUF4sZthVqroRdwXOYNg==
+  npm:
+    name: dsh-shorekeeper
+    version: 1.2.8
+    integrity: sha512-vQIAUs3vTMWSWfwOV1w30SwxGlrlXLy5jy7GzFd23T/WsVe03E9tVG5HPGuzlikIblfUF4sZthVqroRdwXOYNg==
+    repository: https://github.com/Doya16/dsh-shorekeeper
+    gitHead: 1ce7c2fe4830e6076d67ad1708ea94966df6f84f
 compatibility:
   dsh: 0.2.1-rc.5
   platform:
@@ -32,6 +44,7 @@ screenshots:
   - https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/images/full-settings.png
   - https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/social/lock-click-through.jpg
   - https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/social/size-preview.jpg
+listScreenshot: https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/social/showcase.gif
 review:
   compatibility: verified
   preview: verified
@@ -45,13 +58,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 1ce7c2fe4830e6076d67ad1708ea94966df6f84f
+    packageVersion: 1.2.8
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.5 <0.3.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:47:14.907Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1324
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:47:20.227Z
+metadataUpdatedAt: 2026-11-14T23:47:20.227Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/Doya16/dsh-shorekeeper/3f429ffe25806656a3d549aa6515cbb6b5c515f0/docs/social/showcase.gif
+updatedAt: 2026-11-14T23:47:20.227Z

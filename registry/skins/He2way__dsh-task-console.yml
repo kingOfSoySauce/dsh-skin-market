@@ -23,26 +23,25 @@ install:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.5-rc.1 <0.3.0-0"
   platform:
     - web
 screenshots:
   - skin-screenshots/He2way__dsh-task-console/eacfe1cbdf5b9e06fa1d4d2e99a4083114a562fe/home.gif
 listScreenshot: https://raw.githubusercontent.com/He2way/dsh-task-console/e745a9e85c24099ee16faffd30cf7f5df84271a2/docs/architecture.visual-check.1440x900.light.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
     commit: eacfe1cbdf5b9e06fa1d4d2e99a4083114a562fe
     packageVersion: 0.27.0
@@ -61,6 +60,6 @@ marketScreenshots:
   - skin-screenshots/He2way__dsh-task-console/eacfe1cbdf5b9e06fa1d4d2e99a4083114a562fe/settings.png
 featuredRank: 107
 releaseUpdatedAt: 2026-10-23T22:04:12.887Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-08-16 13:55:53.334000+00:00
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-14T23:28:29.986Z

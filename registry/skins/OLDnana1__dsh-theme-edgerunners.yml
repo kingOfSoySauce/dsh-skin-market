@@ -18,14 +18,18 @@ install:
   target: github:OLDnana1/dsh-theme-edgerunners#6224537ec1ebe50aa5136a91368eaa43d593dad4
   version: 0.1.0
   commit: 6224537ec1ebe50aa5136a91368eaa43d593dad4
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: 0.1.0 ~0.1.1-rc.2
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/OLDnana1/dsh-theme-edgerunners/6224537ec1ebe50aa5136a91368eaa43d593dad4/preview.png
+listScreenshot: https://raw.githubusercontent.com/OLDnana1/dsh-theme-edgerunners/6224537ec1ebe50aa5136a91368eaa43d593dad4/preview.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -39,13 +43,21 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 6224537ec1ebe50aa5136a91368eaa43d593dad4
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.0 ~0.1.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:04.158Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1419
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:45:04.183Z
+metadataUpdatedAt: 2026-11-14T23:45:04.183Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/OLDnana1/dsh-theme-edgerunners/6224537ec1ebe50aa5136a91368eaa43d593dad4/preview.png
+updatedAt: 2026-11-14T23:45:04.183Z

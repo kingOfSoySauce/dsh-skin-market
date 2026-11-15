@@ -16,23 +16,14 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#3e482de0417a689addb18b7afef1ded41b4b0fa4
-  version: 0.27.0
-  commit: 3e482de0417a689addb18b7afef1ded41b4b0fa4
+  target: github:webkubor/dsh-bloom-theme#c7d06f597b34bfa30af8b99554bd1bba998942fd
+  version: 0.28.0
+  commit: c7d06f597b34bfa30af8b99554bd1bba998942fd
   desktop:
-    mode: managed
-    registry: npm
-    packageName: dsh-bloom-theme
-    packageVersion: 0.27.0
-    integrity: sha512-3OltYZpXKEqewFZVAe7DlM6CWQP3phU/nPptZJbRYd3FkNWcP179Lc8Yd6zvxXK8njcTsDPZCjIeEgsXxN1iHg==
-  npm:
-    name: dsh-bloom-theme
-    version: 0.27.0
-    integrity: sha512-3OltYZpXKEqewFZVAe7DlM6CWQP3phU/nPptZJbRYd3FkNWcP179Lc8Yd6zvxXK8njcTsDPZCjIeEgsXxN1iHg==
-    repository: https://github.com/webkubor/dsh-bloom-theme
-    gitHead: 3e482de0417a689addb18b7afef1ded41b4b0fa4
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.2-rc.1"
   platform:
     - web
 screenshots:
@@ -46,34 +37,34 @@ screenshots:
   - https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/ui-cinnabar-dark.png
 listScreenshot: https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/bloom-banner.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 3e482de0417a689addb18b7afef1ded41b4b0fa4
-    packageVersion: 0.27.0
+    commit: c7d06f597b34bfa30af8b99554bd1bba998942fd
+    packageVersion: 0.28.0
     scannerVersion: static-v2
+    dshVersion: ">=0.2.2-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-08T00:17:40.875Z
+    checkedAt: 2026-11-14T23:41:54.325Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 267
 featuredRank: 193
-releaseUpdatedAt: 2026-11-08T00:17:46.188Z
-metadataUpdatedAt: 2026-11-08T00:17:46.188Z
-starsUpdatedAt: 2026-11-14T00:22:37.200Z
-updatedAt: 2026-11-14T00:22:37.200Z
+starsSnapshot: 279
+releaseUpdatedAt: 2026-11-14T23:42:00.776Z
+metadataUpdatedAt: 2026-11-14T23:42:00.776Z
+starsUpdatedAt: 2026-11-14T23:42:00.776Z
+updatedAt: 2026-11-14T23:42:00.776Z

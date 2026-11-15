@@ -48,17 +48,17 @@ health:
     commit: a13f7a3383543f14e1a50a58ee25865ea1185ed6
     packageVersion: 1.0.0
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.6
+    dshVersion: ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:32:31.962Z
+    checkedAt: 2026-11-14T23:46:20.882Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 125
+starsSnapshot: 2
 releaseUpdatedAt: 2026-08-23T05:32:32.038Z
-metadataUpdatedAt: 2026-11-09T00:15:25.919Z
+metadataUpdatedAt: 2026-11-14T23:46:21.403Z
 starsUpdatedAt: 2026-09-18T21:38:03.578Z
-updatedAt: 2026-11-09T00:15:25.919Z
+updatedAt: 2026-11-14T23:46:21.403Z

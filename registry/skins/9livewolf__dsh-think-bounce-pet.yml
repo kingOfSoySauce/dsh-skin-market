@@ -29,6 +29,7 @@ screenshots:
   - skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/home.png
   - skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/conversation.png
   - skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/settings.png
+listScreenshot: skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -56,10 +57,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 18
-listScreenshot: skin-screenshots/9livewolf__dsh-think-bounce-pet/3bfe9cb32afea176937379351af39dfd46f955f4/home.gif
 featuredRank: 1130
+starsSnapshot: 18
 releaseUpdatedAt: 2026-11-11T06:41:11.005Z
-metadataUpdatedAt: 2026-11-11T13:17:15.192Z
+metadataUpdatedAt: 2026-11-14T23:42:50.621Z
 starsUpdatedAt: 2026-11-11T06:41:11.005Z
-updatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-14T23:42:50.621Z

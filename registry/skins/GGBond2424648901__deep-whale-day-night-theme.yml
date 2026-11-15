@@ -30,6 +30,10 @@ compatibility:
   dsh: 0.1.0-rc.7
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/home.png
+  - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/conversation.png
+  - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/settings.png
 screenshots:
   - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/preset-day.gif
   - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/preset-night.gif
@@ -54,21 +58,17 @@ health:
     commit: 3f6c4f14716d1e500f585be0c0d3c139c7a8a90b
     packageVersion: 0.1.12
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.7
+    dshVersion: ">=0.1.0-rc.5 <0.2.0"
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:27:03.686Z
+    checkedAt: 2026-11-14T23:42:02.422Z
     findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
-starsSnapshot: 130
-marketScreenshots:
-  - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/home.png
-  - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/conversation.png
-  - skin-screenshots/GGBond2424648901__deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/settings.png
 featuredRank: 202
+starsSnapshot: 130
 releaseUpdatedAt: 2026-08-23T05:27:03.735Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T23:42:03.022Z
 starsUpdatedAt: 2026-11-03T01:37:02.315Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-14T23:42:03.022Z

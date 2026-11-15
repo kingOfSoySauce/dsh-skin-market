@@ -19,25 +19,29 @@ modes:
   - light
   - dark
 install:
-  target: github:taoser258/dsh-client-ui-skin-qingxiao#851afeaf44171a2bea841e25c05c666232c35f3f
-  version: 0.7.1
-  commit: 851afeaf44171a2bea841e25c05c666232c35f3f
+  target: github:taoser258/dsh-client-ui-skin-qingxiao#e5430cb3a99628b1dffb9d4ced9dd1618b79a72f
+  version: 0.8.2
+  commit: e5430cb3a99628b1dffb9d4ced9dd1618b79a72f
   desktop:
     mode: managed
     registry: npm
     packageName: "@taosee258/dsh-client-ui-skin-qingxiao"
-    packageVersion: 0.7.1
-    integrity: sha512-0OLJj7lUaDoCv3AkV2oyLaikLN2azu6XfgJOJ40MsaYFyqPzcjhRVFKqzyWKPC1oOlHX5C9uDEkExUSiDm02Cw==
+    packageVersion: 0.8.2
+    integrity: sha512-teXmEemcyFO58RHNvz6VZo0Ki8tWUb2D8bImsGugTxqOUc4z4tdDFnMO0lzMxM/Ii4fD0bb7jOmQ3ZUJBn00PA==
   npm:
     name: "@taosee258/dsh-client-ui-skin-qingxiao"
-    version: 0.7.1
-    integrity: sha512-0OLJj7lUaDoCv3AkV2oyLaikLN2azu6XfgJOJ40MsaYFyqPzcjhRVFKqzyWKPC1oOlHX5C9uDEkExUSiDm02Cw==
+    version: 0.8.2
+    integrity: sha512-teXmEemcyFO58RHNvz6VZo0Ki8tWUb2D8bImsGugTxqOUc4z4tdDFnMO0lzMxM/Ii4fD0bb7jOmQ3ZUJBn00PA==
     repository: https://github.com/taoser258/dsh-client-ui-skin-qingxiao
-    gitHead: 851afeaf44171a2bea841e25c05c666232c35f3f
+    gitHead: e5430cb3a99628b1dffb9d4ced9dd1618b79a72f
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/home.png
+  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/conversation.png
+  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/settings.png
 screenshots:
   - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/preset-dark.gif
   - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/preset-light.gif
@@ -58,24 +62,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 851afeaf44171a2bea841e25c05c666232c35f3f
-    packageVersion: 0.7.1
+    commit: e5430cb3a99628b1dffb9d4ced9dd1618b79a72f
+    packageVersion: 0.8.2
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.6
+    dshVersion: ">=0.1.0-rc.6 <0.1.1-0 || >=0.1.1-rc.1 <0.2.0-0 || >=0.2.0-rc.0 <0.2.3-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-12T00:10:11.214Z
+    checkedAt: 2026-11-14T23:43:09.191Z
     findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
-starsSnapshot: 11
-marketScreenshots:
-  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/home.png
-  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/conversation.png
-  - skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/settings.png
 featuredRank: 1041
-releaseUpdatedAt: 2026-11-12T00:10:12.467Z
-metadataUpdatedAt: 2026-11-12T01:34:30.192Z
+starsSnapshot: 11
+releaseUpdatedAt: 2026-11-14T23:43:10.555Z
+metadataUpdatedAt: 2026-11-14T23:43:10.555Z
 starsUpdatedAt: 2026-10-24T21:31:18.197Z
-updatedAt: 2026-11-12T01:34:30.192Z
+updatedAt: 2026-11-14T23:43:10.555Z

@@ -20,6 +20,10 @@ install:
   target: github:fuguang12123/dsh-theme-inkstone#c4d9a90032d10b984ff0c2f4be043b49d227b4cf
   version: 0.1.4
   commit: c4d9a90032d10b984ff0c2f4be043b49d227b4cf
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+  allowBuild: dsh-theme-inkstone@https://codeload.github.com/fuguang12123/dsh-theme-inkstone/tar.gz/c4d9a90032d10b984ff0c2f4be043b49d227b4cf
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -27,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/fuguang12123/dsh-theme-inkstone/c4d9a90032d10b984ff0c2f4be043b49d227b4cf/docs/images/light.png
   - https://raw.githubusercontent.com/fuguang12123/dsh-theme-inkstone/c4d9a90032d10b984ff0c2f4be043b49d227b4cf/docs/images/dark.png
+listScreenshot: https://raw.githubusercontent.com/fuguang12123/dsh-theme-inkstone/c4d9a90032d10b984ff0c2f4be043b49d227b4cf/docs/images/light.png
 review:
   compatibility: verified
   preview: verified
@@ -40,13 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: c4d9a90032d10b984ff0c2f4be043b49d227b4cf
+    packageVersion: 0.1.4
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:47:24.353Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1340
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-14T23:47:24.602Z
+metadataUpdatedAt: 2026-11-14T23:47:24.602Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/fuguang12123/dsh-theme-inkstone/c4d9a90032d10b984ff0c2f4be043b49d227b4cf/docs/images/light.png
+updatedAt: 2026-11-14T23:47:24.602Z

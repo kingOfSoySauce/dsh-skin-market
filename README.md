@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-14**：[Claude 星芒品牌](https://github.com/aklnaaw/dsh-claude-theme)（aklnaaw）——把侧栏的鲸鱼标记与字标换成 Claude 风格的放射星芒和文字字标，并改写浏览器标签标题、换成星芒标签页图标。侧栏底部弹层里可以就地改显示名字、副标题和头像，头像只保存在本机浏览器。详见[收录日志](./docs/recently-added.md#recent-2026-11-14-aklnaaw-brand-plugin)。
+- **2026-11-15**：[跨平台大肥鱼](https://github.com/QCYTSN/dsh-dafeiyu)（QCYTSN）——桌面大肥鱼：透明、无边框、始终置顶的原生窗口，随任务切换思考/查找/修改/执行/验证/等待确认/完成与错误，状态气泡和设置页还能显示 API 与赠送余额（每分钟刷新）。支持拖动、摸头、戳身体、碰尾巴与安静/标准/活泼三档待机节奏；Windows、Linux、macOS 各有随包 Helper，WebUI 还可选在页面右下角显示轻量角色（默认关闭）。详见[收录日志](./docs/recently-added.md#recent-2026-11-15-qcytsn-dsh-dafeiyu)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

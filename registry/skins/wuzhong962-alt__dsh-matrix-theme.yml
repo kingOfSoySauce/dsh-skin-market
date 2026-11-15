@@ -26,6 +26,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/wuzhong962-alt__dsh-matrix-theme/6f451fb54d5f77359712e7fb4055fc8b025b6b68/home.png
+  - skin-screenshots/wuzhong962-alt__dsh-matrix-theme/6f451fb54d5f77359712e7fb4055fc8b025b6b68/conversation.png
+  - skin-screenshots/wuzhong962-alt__dsh-matrix-theme/6f451fb54d5f77359712e7fb4055fc8b025b6b68/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -54,13 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/wuzhong962-alt__dsh-matrix-theme/6f451fb54d5f77359712e7fb4055fc8b025b6b68/home.png
-  - skin-screenshots/wuzhong962-alt__dsh-matrix-theme/6f451fb54d5f77359712e7fb4055fc8b025b6b68/conversation.png
-  - skin-screenshots/wuzhong962-alt__dsh-matrix-theme/6f451fb54d5f77359712e7fb4055fc8b025b6b68/settings.png
 featuredRank: 95
+starsSnapshot: 1
 releaseUpdatedAt: 2026-08-23T05:32:33.445Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T23:48:54.576Z
 starsUpdatedAt: 2026-09-09T21:40:38.008Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-14T23:48:54.576Z

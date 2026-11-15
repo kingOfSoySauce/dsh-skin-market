@@ -20,6 +20,19 @@ install:
   target: github:wang-junjian/spritely#a4f700204daf2c2416cdac67adb69c9f753c50c2
   version: 0.3.0
   commit: a4f700204daf2c2416cdac67adb69c9f753c50c2
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@wangjunjian/dsh-spritely"
+    packageVersion: 0.3.0
+    integrity: sha512-sS+lxqomNzgExtQd/v87G9OowWmX6O2z2HgrJXtomjah2R22+B9CiX5/839iBoie9hm7gPozGojbjoc+Uo4jeg==
+  allowBuild: "@wangjunjian/dsh-spritely@https://codeload.github.com/wang-junjian/spritely/tar.gz/a4f700204daf2c2416cdac67adb69c9f753c50c2"
+  npm:
+    name: "@wangjunjian/dsh-spritely"
+    version: 0.3.0
+    integrity: sha512-sS+lxqomNzgExtQd/v87G9OowWmX6O2z2HgrJXtomjah2R22+B9CiX5/839iBoie9hm7gPozGojbjoc+Uo4jeg==
+    repository: https://github.com/wang-junjian/spritely
+    gitHead: a4f700204daf2c2416cdac67adb69c9f753c50c2
 compatibility:
   dsh: ^0.1.0-rc.5
   platform:
@@ -28,6 +41,7 @@ screenshots:
   - https://raw.githubusercontent.com/wang-junjian/spritely/a4f700204daf2c2416cdac67adb69c9f753c50c2/images/dsh-plugin-spritely.webp
   - https://raw.githubusercontent.com/wang-junjian/spritely/a4f700204daf2c2416cdac67adb69c9f753c50c2/images/demo1.webp
   - https://raw.githubusercontent.com/wang-junjian/spritely/a4f700204daf2c2416cdac67adb69c9f753c50c2/images/demo2.webp
+listScreenshot: https://raw.githubusercontent.com/wang-junjian/spritely/a4f700204daf2c2416cdac67adb69c9f753c50c2/images/dsh-plugin-spritely.webp
 review:
   compatibility: verified
   preview: verified
@@ -41,14 +55,25 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: a4f700204daf2c2416cdac67adb69c9f753c50c2
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.5
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:45:11.540Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1470
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-14T23:45:12.515Z
+metadataUpdatedAt: 2026-11-14T23:45:12.515Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/wang-junjian/spritely/a4f700204daf2c2416cdac67adb69c9f753c50c2/images/dsh-plugin-spritely.webp
+updatedAt: 2026-11-14T23:45:12.515Z

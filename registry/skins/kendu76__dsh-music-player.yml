@@ -30,7 +30,7 @@ install:
     repository: https://github.com/kendu76/dsh-music-player
     gitHead: 1dd467c4a449965272fac306d7fa655188a667f2
 compatibility:
-  dsh: unverified
+  dsh: <0.7
   platform:
     - web
 screenshots:
@@ -42,33 +42,33 @@ screenshots:
   - https://raw.githubusercontent.com/kendu76/dsh-music-player/172355b147f91ae994631aa4cbd61adfe8a5fb66/assets/screenshot-panel-kg.png
 listScreenshot: https://raw.githubusercontent.com/kendu76/dsh-music-player/172355b147f91ae994631aa4cbd61adfe8a5fb66/assets/screenshot-bar.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
     commit: 1dd467c4a449965272fac306d7fa655188a667f2
     packageVersion: 1.0.7
     scannerVersion: static-v2
+    dshVersion: <0.7
     mode: static
     result: pass
-    checkedAt: 2026-11-13T00:11:44.951Z
+    checkedAt: 2026-11-14T23:42:45.718Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 22
 featuredRank: 0
+starsSnapshot: 22
 releaseUpdatedAt: 2026-11-13T00:28:13.548Z
-metadataUpdatedAt: 2026-11-13T00:28:13.548Z
+metadataUpdatedAt: 2026-11-14T23:42:47.986Z
 starsUpdatedAt: 2026-11-10T09:19:16.352Z
-updatedAt: 2026-11-13T00:28:13.548Z
+updatedAt: 2026-11-14T23:42:47.986Z

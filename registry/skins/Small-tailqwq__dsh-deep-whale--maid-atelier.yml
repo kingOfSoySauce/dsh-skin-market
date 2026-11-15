@@ -47,7 +47,7 @@ screenshots:
   - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/873f5c6d7f52aa4e4283a5ffd5598229595184da/maid-atelier/preview/dark.webp
 listScreenshot: https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b/maid-atelier/preview/light.webp
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
@@ -59,23 +59,23 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.6 未被本次检测范围 ^0.1.11 完全覆盖（固定版本 811fa53b712a16ce5f5278529bb76d5a033a1d13）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 811fa53b712a16ce5f5278529bb76d5a033a1d13
     packageVersion: 0.1.11
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.6
+    dshVersion: ^0.1.11
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:22:40.688Z
+    checkedAt: 2026-11-14T23:41:46.246Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
 featuredRank: 2
-starsSnapshot: 3103
+starsSnapshot: 3110
 releaseUpdatedAt: 2026-11-14T00:22:42.181Z
-metadataUpdatedAt: 2026-11-14T00:22:42.181Z
-starsUpdatedAt: 2026-11-14T00:22:42.181Z
-updatedAt: 2026-11-14T00:22:42.181Z
+metadataUpdatedAt: 2026-11-14T23:41:47.862Z
+starsUpdatedAt: 2026-11-14T23:41:47.862Z
+updatedAt: 2026-11-14T23:41:47.862Z

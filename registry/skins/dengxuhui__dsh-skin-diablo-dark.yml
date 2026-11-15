@@ -20,12 +20,17 @@ install:
   target: github:dengxuhui/dsh-skin-diablo-dark#ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95
   version: 0.2.0
   commit: ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+  allowBuild: "@dengxuhui/dsh-client-ui-skin-diablo-dark@https://codeload.github.com/dengxuhui/dsh-skin-diablo-dark/tar.gz/ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95"
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/dengxuhui/dsh-skin-diablo-dark/ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95/preview/dark.png
+listScreenshot: https://raw.githubusercontent.com/dengxuhui/dsh-skin-diablo-dark/ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95/preview/dark.png
 review:
   compatibility: unverified
   preview: verified
@@ -39,16 +44,26 @@ health:
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:47:12.379Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1318
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:47:12.604Z
+metadataUpdatedAt: 2026-11-14T23:47:12.604Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/dengxuhui/dsh-skin-diablo-dark/ffe7f3fd7d54a83eef69b1e28b834cfa8169aa95/preview/dark.png
+updatedAt: 2026-11-14T23:47:12.604Z

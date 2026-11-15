@@ -21,12 +21,16 @@ install:
   target: github:youxin484/dsh-dafeiyu-enhanced#e4006c754b40570ddaa8bb5d2d1ed16cdd2e8af2&path:/addons/dsh-pet-open
   version: 1.0.0
   commit: e4006c754b40570ddaa8bb5d2d1ed16cdd2e8af2
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/youxin484/dsh-dafeiyu-enhanced/e4006c754b40570ddaa8bb5d2d1ed16cdd2e8af2/docs/images/hardware-plate.png
+listScreenshot: https://raw.githubusercontent.com/youxin484/dsh-dafeiyu-enhanced/e4006c754b40570ddaa8bb5d2d1ed16cdd2e8af2/docs/images/hardware-plate.png
 review:
   compatibility: unverified
   preview: verified
@@ -34,20 +38,28 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - README 图片未通过文件、尺寸或图片 hash 检查，请补充可核验的运行截图。
+  scan:
+    commit: e4006c754b40570ddaa8bb5d2d1ed16cdd2e8af2
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:15.116Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1493
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-14T23:45:15.117Z
+metadataUpdatedAt: 2026-11-14T23:45:15.117Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/youxin484/dsh-dafeiyu-enhanced/e4006c754b40570ddaa8bb5d2d1ed16cdd2e8af2/docs/images/hardware-plate.png
+updatedAt: 2026-11-14T23:45:15.117Z

@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Anarcadia/chuanban-dsh-theme#a47054b5214a25acd5dc4d43f70b83893be44134
+  target: github:Anarcadia/chuanban-dsh-theme#ab1322859979e40875a9ecb76894c85178418496
   version: 0.1.2
-  commit: a47054b5214a25acd5dc4d43f70b83893be44134
+  commit: ab1322859979e40875a9ecb76894c85178418496
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -42,19 +42,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: a47054b5214a25acd5dc4d43f70b83893be44134
+    commit: ab1322859979e40875a9ecb76894c85178418496
     packageVersion: 0.1.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:24:13.369Z
+    checkedAt: 2026-11-14T23:46:47.144Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T00:24:13.856Z
-metadataUpdatedAt: 2026-11-14T00:24:13.856Z
-starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-14T00:24:13.856Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-14T23:46:47.533Z
+metadataUpdatedAt: 2026-11-14T23:46:47.533Z
+starsUpdatedAt: 2026-11-14T23:46:47.533Z
+updatedAt: 2026-11-14T23:46:47.533Z

@@ -17,9 +17,22 @@ modes:
   - light
   - dark
 install:
-  target: github:JAdpp/dsh-whale-galgame#aa6ee3df79f8707131eefcdf17acef37cfd5bc4f
-  version: 0.7.0
-  commit: aa6ee3df79f8707131eefcdf17acef37cfd5bc4f
+  target: github:JAdpp/dsh-whale-galgame#bdfe1e481815b6292f48b3badb6c037ae7df4bca
+  version: 0.10.0
+  commit: bdfe1e481815b6292f48b3badb6c037ae7df4bca
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-whale-galgame
+    packageVersion: 0.10.0
+    integrity: sha512-rtV0FM8eQlY954SrwaUYqqEbV0M90sy/WnLmt3siuner6jzZNIYPv2qYBqRYAQXgFfQ1+dkf1e+1AbfX0UDEPg==
+  allowBuild: dsh-whale-galgame@https://codeload.github.com/JAdpp/dsh-whale-galgame/tar.gz/bdfe1e481815b6292f48b3badb6c037ae7df4bca
+  npm:
+    name: dsh-whale-galgame
+    version: 0.10.0
+    integrity: sha512-rtV0FM8eQlY954SrwaUYqqEbV0M90sy/WnLmt3siuner6jzZNIYPv2qYBqRYAQXgFfQ1+dkf1e+1AbfX0UDEPg==
+    repository: https://github.com/JAdpp/dsh-whale-galgame
+    gitHead: bdfe1e481815b6292f48b3badb6c037ae7df4bca
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +41,7 @@ screenshots:
   - https://raw.githubusercontent.com/JAdpp/dsh-whale-galgame/aa6ee3df79f8707131eefcdf17acef37cfd5bc4f/docs/screenshots/galgame-overview.jpg
   - https://raw.githubusercontent.com/JAdpp/dsh-whale-galgame/aa6ee3df79f8707131eefcdf17acef37cfd5bc4f/docs/screenshots/plugin-settings.png
   - https://raw.githubusercontent.com/JAdpp/dsh-whale-galgame/aa6ee3df79f8707131eefcdf17acef37cfd5bc4f/docs/screenshots/side-story-multi-character.png
+listScreenshot: https://raw.githubusercontent.com/JAdpp/dsh-whale-galgame/aa6ee3df79f8707131eefcdf17acef37cfd5bc4f/docs/screenshots/galgame-overview.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -41,15 +55,25 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: bdfe1e481815b6292f48b3badb6c037ae7df4bca
+    packageVersion: 0.10.0
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:42:17.996Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
-  code: NOASSERTION
+  code: SEE LICENSE IN LICENSE.md
   commercialUse: false
 featuredRank: 1229
-starsSnapshot: 44
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
-starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/JAdpp/dsh-whale-galgame/aa6ee3df79f8707131eefcdf17acef37cfd5bc4f/docs/screenshots/galgame-overview.jpg
+starsSnapshot: 45
+releaseUpdatedAt: 2026-11-14T23:42:36.917Z
+metadataUpdatedAt: 2026-11-14T23:42:36.917Z
+starsUpdatedAt: 2026-11-14T23:42:36.917Z
+updatedAt: 2026-11-14T23:42:36.917Z

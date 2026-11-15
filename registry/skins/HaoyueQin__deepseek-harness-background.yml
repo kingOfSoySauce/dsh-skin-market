@@ -62,15 +62,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.2 未被本次检测范围 >=0.1.2-rc.1 || >=0.1.3-alpha.1 || >=0.1.5-alpha.1 || >=0.1.5-rc.1 || >=0.1.5-rc.2 || >=0.1.6-alpha.1 || >=0.1.6-alpha.2 || >=0.1.7-alpha.1 || >=0.2.0-rc.1 完全覆盖（固定版本 55e252f10c3070388f55deb1477a15557859f66b）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.1-rc.2 未被本次检测范围 >=0.1.2 || >=0.1.2-rc.1 完全覆盖（固定版本 55e252f10c3070388f55deb1477a15557859f66b）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 55e252f10c3070388f55deb1477a15557859f66b
     packageVersion: 0.6.1
     scannerVersion: static-v2
-    dshVersion: ">=0.1.2-rc.1 || >=0.1.3-alpha.1 || >=0.1.5-alpha.1 || >=0.1.5-rc.1 || >=0.1.5-rc.2 || >=0.1.6-alpha.1 || >=0.1.6-alpha.2 || >=0.1.7-alpha.1 || >=0.2.0-rc.1"
+    dshVersion: ">=0.1.2 || >=0.1.2-rc.1"
     mode: static
     result: unknown
-    checkedAt: 2026-11-09T07:13:17.306Z
+    checkedAt: 2026-11-14T23:43:07.425Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -80,6 +80,6 @@ license:
 featuredRank: 1013
 starsSnapshot: 11
 releaseUpdatedAt: 2026-11-09T07:13:18.891Z
-metadataUpdatedAt: 2026-11-09T07:13:18.891Z
+metadataUpdatedAt: 2026-11-14T23:43:09.241Z
 starsUpdatedAt: 2026-11-09T07:13:18.891Z
-updatedAt: 2026-11-09T07:13:18.891Z
+updatedAt: 2026-11-14T23:43:09.241Z

@@ -21,8 +21,11 @@ install:
   target: github:CosmerHomura/dsh-yoimiya-theme#f21ac657a5666667026397b2e1b73792294ec086
   version: 1.0.0
   commit: f21ac657a5666667026397b2e1b73792294ec086
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.8.1"
   platform:
     - web
 screenshots:
@@ -30,27 +33,35 @@ screenshots:
   - https://raw.githubusercontent.com/CosmerHomura/dsh-yoimiya-theme/f21ac657a5666667026397b2e1b73792294ec086/docs/screenshots/dark-chat.webp
   - https://raw.githubusercontent.com/CosmerHomura/dsh-yoimiya-theme/f21ac657a5666667026397b2e1b73792294ec086/docs/screenshots/light-home.webp
   - https://raw.githubusercontent.com/CosmerHomura/dsh-yoimiya-theme/f21ac657a5666667026397b2e1b73792294ec086/docs/screenshots/light-chat.webp
+listScreenshot: https://raw.githubusercontent.com/CosmerHomura/dsh-yoimiya-theme/f21ac657a5666667026397b2e1b73792294ec086/docs/screenshots/dark-home.webp
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
+  scan:
+    commit: f21ac657a5666667026397b2e1b73792294ec086
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.8.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:43:43.659Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1314
 starsSnapshot: 6
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:43:44.188Z
+metadataUpdatedAt: 2026-11-14T23:43:44.188Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/CosmerHomura/dsh-yoimiya-theme/f21ac657a5666667026397b2e1b73792294ec086/docs/screenshots/dark-home.webp
+updatedAt: 2026-11-14T23:43:44.188Z

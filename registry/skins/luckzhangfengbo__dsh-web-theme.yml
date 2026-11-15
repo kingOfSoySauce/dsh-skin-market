@@ -36,33 +36,34 @@ screenshots:
   - https://raw.githubusercontent.com/luckzhangfengbo/dsh-web-theme/a49b7d68f31cc442ec83fdcfc4803eaa4304d0cd/docs/screenshots/jiangnan-hero.png
 listScreenshot: https://raw.githubusercontent.com/luckzhangfengbo/dsh-web-theme/a49b7d68f31cc442ec83fdcfc4803eaa4304d0cd/docs/screenshots/pine-hero.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.6 未被本次检测范围 ^0.1.1-rc.2 完全覆盖（固定版本 a49b7d68f31cc442ec83fdcfc4803eaa4304d0cd）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: a49b7d68f31cc442ec83fdcfc4803eaa4304d0cd
     packageVersion: 0.1.1
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.6
+    dshVersion: ^0.1.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-09-07T21:58:34.713Z
+    checkedAt: 2026-11-14T23:45:53.987Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 1062
+starsSnapshot: 2
 releaseUpdatedAt: 2026-09-07T21:58:34.833Z
-metadataUpdatedAt: 2026-11-09T00:15:11.357Z
+metadataUpdatedAt: 2026-11-14T23:45:55.364Z
 starsUpdatedAt: 2026-09-07T21:58:34.833Z
-updatedAt: 2026-11-09T00:15:11.357Z
+updatedAt: 2026-11-14T23:45:55.364Z

@@ -17,36 +17,49 @@ modes:
   - light
   - dark
 install:
-  target: github:MrGuang123/dsh-pet-caishen#21ce3603fb3bf086814fa0d9001e25481ce9b90f
-  version: 0.2.0-rc.3
-  commit: 21ce3603fb3bf086814fa0d9001e25481ce9b90f
+  target: github:MrGuang123/dsh-pet-caishen#8cb0dbcc10ab4af8b927fc0f501d7d875dfd6f7b
+  version: 0.2.0-rc.6
+  commit: 8cb0dbcc10ab4af8b927fc0f501d7d875dfd6f7b
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/MrGuang123/dsh-pet-caishen/21ce3603fb3bf086814fa0d9001e25481ce9b90f/docs/screenshots/acai-preview.png
+listScreenshot: https://raw.githubusercontent.com/MrGuang123/dsh-pet-caishen/21ce3603fb3bf086814fa0d9001e25481ce9b90f/docs/screenshots/acai-preview.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.2-rc.1 未被本次检测范围 >=0.2.1-rc.5 <0.3.0-0 完全覆盖（固定版本 8cb0dbcc10ab4af8b927fc0f501d7d875dfd6f7b）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 8cb0dbcc10ab4af8b927fc0f501d7d875dfd6f7b
+    packageVersion: 0.2.0-rc.6
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.5 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:57.337Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1404
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:45:57.744Z
+metadataUpdatedAt: 2026-11-14T23:45:57.744Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/MrGuang123/dsh-pet-caishen/21ce3603fb3bf086814fa0d9001e25481ce9b90f/docs/screenshots/acai-preview.png
+updatedAt: 2026-11-14T23:45:57.744Z

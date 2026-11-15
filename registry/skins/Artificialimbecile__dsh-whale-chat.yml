@@ -21,7 +21,7 @@ install:
   version: 0.1.4
   commit: 43f63bcdf8570877f68671e406070d54b28c403b
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.1"
   platform:
     - web
 screenshots:
@@ -30,26 +30,25 @@ screenshots:
   - https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/settings-persona.png
   - https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/pet.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1296
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/chat-panel.png

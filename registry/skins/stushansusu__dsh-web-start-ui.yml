@@ -20,32 +20,46 @@ install:
   target: github:stushansusu/dsh-web-start-ui#00eaa6f75788cd2c4eecda79e1344d3dd73d8eee
   version: 0.4.7
   commit: 00eaa6f75788cd2c4eecda79e1344d3dd73d8eee
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.0--rc.2-4c6ef5
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/stushansusu/dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/assets/launch/qinghua/poster.jpg
+listScreenshot: https://raw.githubusercontent.com/stushansusu/dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/assets/launch/qinghua/poster.jpg
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
-    readmeScreenshots: pass
-    compatibility: pass
+    readmeScreenshots: improve
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.0--rc.2-4c6ef5 未被本次检测范围 ^0.2.0-rc.2 完全覆盖（固定版本 00eaa6f75788cd2c4eecda79e1344d3dd73d8eee）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 00eaa6f75788cd2c4eecda79e1344d3dd73d8eee
+    packageVersion: 0.4.7
+    scannerVersion: static-v2
+    dshVersion: ^0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:43:30.314Z
+    findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 1520
 starsSnapshot: 8
-releaseUpdatedAt: 2026-11-14T19:39:31.051Z
-metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+releaseUpdatedAt: 2026-11-14T23:43:30.489Z
+metadataUpdatedAt: 2026-11-14T23:43:30.489Z
 starsUpdatedAt: 2026-11-14T19:39:31.051Z
-updatedAt: 2026-11-14T19:39:31.051Z
-listScreenshot: https://raw.githubusercontent.com/stushansusu/dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/assets/launch/qinghua/poster.jpg
+updatedAt: 2026-11-14T23:43:30.489Z

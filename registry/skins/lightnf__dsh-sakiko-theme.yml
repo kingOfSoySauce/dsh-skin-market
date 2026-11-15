@@ -21,6 +21,9 @@ install:
   target: github:lightnf/dsh-sakiko-theme#3c7469e372cb6acdf657154faebc8750747a6817
   version: 0.3.0
   commit: 3c7469e372cb6acdf657154faebc8750747a6817
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.5-rc.1
   platform:
@@ -29,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/lightnf/dsh-sakiko-theme/3c7469e372cb6acdf657154faebc8750747a6817/docs/sidebar.webp
   - https://raw.githubusercontent.com/lightnf/dsh-sakiko-theme/3c7469e372cb6acdf657154faebc8750747a6817/docs/corners.webp
   - https://raw.githubusercontent.com/lightnf/dsh-sakiko-theme/3c7469e372cb6acdf657154faebc8750747a6817/docs/settings.webp
+listScreenshot: https://raw.githubusercontent.com/lightnf/dsh-sakiko-theme/3c7469e372cb6acdf657154faebc8750747a6817/docs/sidebar.webp
 review:
   compatibility: verified
   preview: verified
@@ -37,19 +41,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 3c7469e372cb6acdf657154faebc8750747a6817
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.5-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:49.711Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1384
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:45:50.337Z
+metadataUpdatedAt: 2026-11-14T23:45:50.337Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/lightnf/dsh-sakiko-theme/3c7469e372cb6acdf657154faebc8750747a6817/docs/sidebar.webp
+updatedAt: 2026-11-14T23:45:50.337Z

@@ -22,7 +22,7 @@ install:
   version: 0.3.1
   commit: c44983971e5e35111d5390f90989217906803dce
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-rc.1"
   platform:
     - web
 screenshots:
@@ -31,7 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-granted.jpg
   - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/landscape.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -49,7 +49,7 @@ license:
 featuredRank: 1309
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-demo.webp

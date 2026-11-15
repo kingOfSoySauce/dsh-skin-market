@@ -43,21 +43,20 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
     commit: e42c6568b689939d122813b765469dc4604cae01
     packageVersion: 0.1.0
     scannerVersion: static-v2
-    dshVersion: 0.2.1-rc.5
+    dshVersion: ">=0.2.1-rc.5 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:23:56.682Z
+    checkedAt: 2026-11-14T23:48:08.920Z
     findings: []
 license:
   code: MIT
@@ -65,6 +64,6 @@ license:
 featuredRank: 1139
 starsSnapshot: 1
 releaseUpdatedAt: 2026-11-14T00:23:58.197Z
-metadataUpdatedAt: 2026-11-14T00:23:58.197Z
+metadataUpdatedAt: 2026-11-14T23:48:12.849Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T00:23:58.197Z
+updatedAt: 2026-11-14T23:48:12.849Z

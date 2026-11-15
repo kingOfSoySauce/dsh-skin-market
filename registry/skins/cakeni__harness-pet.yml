@@ -21,12 +21,17 @@ install:
   target: github:cakeni/harness-pet#29bb8f0fbba5514b83300a103e2a1088a02b433a
   version: 0.1.0
   commit: 29bb8f0fbba5514b83300a103e2a1088a02b433a
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+  allowBuild: harness-pet@https://codeload.github.com/cakeni/harness-pet/tar.gz/29bb8f0fbba5514b83300a103e2a1088a02b433a
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/cakeni/harness-pet/29bb8f0fbba5514b83300a103e2a1088a02b433a/assets/whale/whale-animation-v6-contact-sheet.png
+listScreenshot: https://raw.githubusercontent.com/cakeni/harness-pet/29bb8f0fbba5514b83300a103e2a1088a02b433a/assets/whale/whale-animation-v6-contact-sheet.png
 review:
   compatibility: verified
   preview: verified
@@ -40,14 +45,25 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 29bb8f0fbba5514b83300a103e2a1088a02b433a
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:43:43.311Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1303
 starsSnapshot: 6
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:43:47.576Z
+metadataUpdatedAt: 2026-11-14T23:43:47.576Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/cakeni/harness-pet/29bb8f0fbba5514b83300a103e2a1088a02b433a/assets/whale/whale-animation-v6-contact-sheet.png
+updatedAt: 2026-11-14T23:43:47.576Z

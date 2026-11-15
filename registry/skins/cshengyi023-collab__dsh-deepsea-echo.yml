@@ -20,34 +20,45 @@ install:
   target: github:cshengyi023-collab/dsh-deepsea-echo#c5599f80cf5a517e220a91524dbdda791406c09d
   version: 0.3.3
   commit: c5599f80cf5a517e220a91524dbdda791406c09d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-rc.2 <0.3.0-0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/storyboard.png
   - https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/startup-animation.webp
+listScreenshot: https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/storyboard.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
+  scan:
+    commit: c5599f80cf5a517e220a91524dbdda791406c09d
+    packageVersion: 0.3.3
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.2 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:44:49.775Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1219
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T07:53:29.580Z
-metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+releaseUpdatedAt: 2026-11-14T23:44:51.895Z
+metadataUpdatedAt: 2026-11-14T23:44:51.895Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-14T07:53:29.580Z
-listScreenshot: https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/storyboard.png
+updatedAt: 2026-11-14T23:44:51.895Z

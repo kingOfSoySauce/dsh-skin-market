@@ -21,6 +21,18 @@ install:
   target: github:use3346631993/dsh-xiaod-pet#dcec7943d12a07067528688d834446fe21000f37
   version: 2.4.7
   commit: dcec7943d12a07067528688d834446fe21000f37
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-xiaod-pet
+    packageVersion: 2.4.7
+    integrity: sha512-n6V0NVWl4lawCCMtOyZihP0EHJIraCo+rVsVKMTq81bYt+L5chiyZ54xYJstDonjdgCRf/KL4cEfnZE/M4NdeQ==
+  npm:
+    name: dsh-xiaod-pet
+    version: 2.4.7
+    integrity: sha512-n6V0NVWl4lawCCMtOyZihP0EHJIraCo+rVsVKMTq81bYt+L5chiyZ54xYJstDonjdgCRf/KL4cEfnZE/M4NdeQ==
+    repository: https://github.com/use3346631993/dsh-xiaod-pet
+    gitHead: dcec7943d12a07067528688d834446fe21000f37
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +40,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/use3346631993/dsh-xiaod-pet/dcec7943d12a07067528688d834446fe21000f37/docs/preview.jpg
   - https://raw.githubusercontent.com/use3346631993/dsh-xiaod-pet/dcec7943d12a07067528688d834446fe21000f37/docs/settings.png
+listScreenshot: https://raw.githubusercontent.com/use3346631993/dsh-xiaod-pet/dcec7943d12a07067528688d834446fe21000f37/docs/preview.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -41,14 +54,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: dcec7943d12a07067528688d834446fe21000f37
+    packageVersion: 2.4.7
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:17.474Z
+    findings: []
 license:
-  code: NOASSERTION
+  code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 1271
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+releaseUpdatedAt: 2026-11-14T23:46:18.112Z
+metadataUpdatedAt: 2026-11-14T23:46:18.112Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
-listScreenshot: https://raw.githubusercontent.com/use3346631993/dsh-xiaod-pet/dcec7943d12a07067528688d834446fe21000f37/docs/preview.jpg
+updatedAt: 2026-11-14T23:46:18.112Z

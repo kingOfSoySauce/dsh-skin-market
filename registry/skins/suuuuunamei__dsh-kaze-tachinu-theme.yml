@@ -16,9 +16,21 @@ tags:
 modes:
   - dark
 install:
-  target: github:suuuuunamei/dsh-kaze-tachinu-theme#c6cd5f969838c9bd992df35bc3d13b7c4615a89b
+  target: github:suuuuunamei/dsh-kaze-tachinu-theme#a53deb973447821d6da060d7464d0a8a59419637
   version: 1.0.0
-  commit: c6cd5f969838c9bd992df35bc3d13b7c4615a89b
+  commit: a53deb973447821d6da060d7464d0a8a59419637
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-kaze-tachinu-theme
+    packageVersion: 1.0.0
+    integrity: sha512-dj8XLAzq5WW8DQi+y7uPWoLhCB91wuUC+8RtUYQvE5CDxhRHfOij7M37Zx7bLqh2EbxUlnc/dv98uTV+AdSt9w==
+  npm:
+    name: dsh-kaze-tachinu-theme
+    version: 1.0.0
+    integrity: sha512-dj8XLAzq5WW8DQi+y7uPWoLhCB91wuUC+8RtUYQvE5CDxhRHfOij7M37Zx7bLqh2EbxUlnc/dv98uTV+AdSt9w==
+    repository: https://github.com/suuuuunamei/dsh-kaze-tachinu-theme
+    gitHead: a53deb973447821d6da060d7464d0a8a59419637
 compatibility:
   dsh: unverified
   platform:
@@ -27,6 +39,7 @@ screenshots:
   - https://raw.githubusercontent.com/suuuuunamei/dsh-kaze-tachinu-theme/c6cd5f969838c9bd992df35bc3d13b7c4615a89b/docs/screenshots/home-hero.png
   - https://raw.githubusercontent.com/suuuuunamei/dsh-kaze-tachinu-theme/c6cd5f969838c9bd992df35bc3d13b7c4615a89b/docs/screenshots/chat-main.png
   - https://raw.githubusercontent.com/suuuuunamei/dsh-kaze-tachinu-theme/c6cd5f969838c9bd992df35bc3d13b7c4615a89b/assets/current.jpg
+listScreenshot: https://raw.githubusercontent.com/suuuuunamei/dsh-kaze-tachinu-theme/c6cd5f969838c9bd992df35bc3d13b7c4615a89b/docs/screenshots/home-hero.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,14 +53,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: a53deb973447821d6da060d7464d0a8a59419637
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:12.665Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1449
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-14T23:46:13.987Z
+metadataUpdatedAt: 2026-11-14T23:46:13.987Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/suuuuunamei/dsh-kaze-tachinu-theme/c6cd5f969838c9bd992df35bc3d13b7c4615a89b/docs/screenshots/home-hero.png
+updatedAt: 2026-11-14T23:46:13.987Z

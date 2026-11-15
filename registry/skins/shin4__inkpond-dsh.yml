@@ -18,9 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:shin4/inkpond-dsh#f10eebd8edfbaab52f9b39290a19fe8d4d030235
+  target: github:shin4/inkpond-dsh#0a34be6a48ceb6ca913cbdd3ea0206d3a4618aa1
   version: 0.3.5
-  commit: f10eebd8edfbaab52f9b39290a19fe8d4d030235
+  commit: 0a34be6a48ceb6ca913cbdd3ea0206d3a4618aa1
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-inkpond
+    packageVersion: 0.3.5
+    integrity: sha512-OGsx6ETWVyouOmGP2G1j72Ltd1MdRBpc64Z+xLgqMja17+cKunNYYJMffhu5ZaAyh+mwi4zOso2wod9UihrFuA==
+  npm:
+    name: dsh-inkpond
+    version: 0.3.5
+    integrity: sha512-OGsx6ETWVyouOmGP2G1j72Ltd1MdRBpc64Z+xLgqMja17+cKunNYYJMffhu5ZaAyh+mwi4zOso2wod9UihrFuA==
+    repository: https://github.com/shin4/inkpond-dsh
+    gitHead: 0a34be6a48ceb6ca913cbdd3ea0206d3a4618aa1
 compatibility:
   dsh: 0.2.2-rc.1 || >=0.2.1-rc.3
   platform:
@@ -29,27 +41,40 @@ screenshots:
   - https://raw.githubusercontent.com/shin4/inkpond-dsh/f10eebd8edfbaab52f9b39290a19fe8d4d030235/docs/images/whale-preview.gif
   - https://raw.githubusercontent.com/shin4/inkpond-dsh/f10eebd8edfbaab52f9b39290a19fe8d4d030235/docs/images/install-guide-zh.png
   - https://raw.githubusercontent.com/shin4/inkpond-dsh/f10eebd8edfbaab52f9b39290a19fe8d4d030235/docs/images/whale-preview.png
+listScreenshot: https://raw.githubusercontent.com/shin4/inkpond-dsh/f10eebd8edfbaab52f9b39290a19fe8d4d030235/docs/images/whale-preview.gif
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.2-rc.1 || >=0.2.1-rc.3 未被本次检测范围 >=0.2.1-rc.3 完全覆盖（固定版本 0a34be6a48ceb6ca913cbdd3ea0206d3a4618aa1）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 0a34be6a48ceb6ca913cbdd3ea0206d3a4618aa1
+    packageVersion: 0.3.5
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.3"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:48:37.451Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1435
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-14T23:48:38.645Z
+metadataUpdatedAt: 2026-11-14T23:48:38.645Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/shin4/inkpond-dsh/f10eebd8edfbaab52f9b39290a19fe8d4d030235/docs/images/whale-preview.gif
+updatedAt: 2026-11-14T23:48:38.645Z

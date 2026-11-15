@@ -20,6 +20,9 @@ install:
   target: github:OGHong/dsh-ascii-sharks#7df298f2f22a56f440f7203063cffe19421ac790
   version: 0.1.0
   commit: 7df298f2f22a56f440f7203063cffe19421ac790
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1--rc.2-lightgrey
   platform:
@@ -27,27 +30,37 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/OGHong/dsh-ascii-sharks/7df298f2f22a56f440f7203063cffe19421ac790/docs/hero-dark.png
   - https://raw.githubusercontent.com/OGHong/dsh-ascii-sharks/7df298f2f22a56f440f7203063cffe19421ac790/docs/settings.png
+listScreenshot: https://raw.githubusercontent.com/OGHong/dsh-ascii-sharks/7df298f2f22a56f440f7203063cffe19421ac790/docs/hero-dark.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.1--rc.2-lightgrey 未被本次检测范围 >=0.2.0-rc.2 完全覆盖（固定版本 7df298f2f22a56f440f7203063cffe19421ac790）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 7df298f2f22a56f440f7203063cffe19421ac790
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:03.490Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1248
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T07:56:31.671Z
-metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+releaseUpdatedAt: 2026-11-14T23:45:03.807Z
+metadataUpdatedAt: 2026-11-14T23:45:03.807Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-14T07:56:31.671Z
-listScreenshot: https://raw.githubusercontent.com/OGHong/dsh-ascii-sharks/7df298f2f22a56f440f7203063cffe19421ac790/docs/hero-dark.png
+updatedAt: 2026-11-14T23:45:03.807Z

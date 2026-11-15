@@ -19,6 +19,9 @@ install:
   target: github:sunjay-lee/dsh-k-on-pet#d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2
   version: 0.6.2
   commit: d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.0-rc.1
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2/docs/preview.png
   - https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2/docs/table.png
   - https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2/docs/settings.png
+listScreenshot: https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2/docs/in-dsh.png
 review:
   compatibility: verified
   preview: verified
@@ -41,13 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2
+    packageVersion: 0.6.2
+    scannerVersion: static-v2
+    dshVersion: ^0.2.0-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:10.965Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1446
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-14T23:46:11.445Z
+metadataUpdatedAt: 2026-11-14T23:46:11.445Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/d22eedd6ecb1d2549bf7e87e30798eb2ff1a58b2/docs/in-dsh.png
+updatedAt: 2026-11-14T23:46:11.445Z

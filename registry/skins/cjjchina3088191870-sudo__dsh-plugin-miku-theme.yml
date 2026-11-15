@@ -21,8 +21,17 @@ install:
   version: 0.4.3
   commit: ca35dfcc83a86032f3537de807c679b514106cf7
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-plugin-miku-theme
+    packageVersion: 0.4.3
+    integrity: sha512-UTG+uKkYnOzBczIle+FeFfv6XdZ40wJ6e/K7ffbWe60BcMOJsn7FjuVTDz7qlNYuYXkkOLLj1dfwvOrcPoKD8w==
+  npm:
+    name: dsh-plugin-miku-theme
+    version: 0.4.3
+    integrity: sha512-UTG+uKkYnOzBczIle+FeFfv6XdZ40wJ6e/K7ffbWe60BcMOJsn7FjuVTDz7qlNYuYXkkOLLj1dfwvOrcPoKD8w==
+    repository: https://github.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme
+    gitHead: ca35dfcc83a86032f3537de807c679b514106cf7
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
@@ -64,7 +73,7 @@ license:
   commercialUse: false
 featuredRank: 1133
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T00:23:42.349Z
+releaseUpdatedAt: 2026-11-14T23:47:05.956Z
 metadataUpdatedAt: 2026-11-14T00:23:42.349Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T00:23:42.349Z
+updatedAt: 2026-11-14T23:47:05.956Z

@@ -20,33 +20,46 @@ install:
   target: github:chenyuan1251/dsh-pet-niumali#02cfce59ee5a3f9cc718293751566e0123fed726
   version: 8.0.2
   commit: 02cfce59ee5a3f9cc718293751566e0123fed726
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6 || ^0.2.0-rc.2
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/chenyuan1251/dsh-pet-niumali/02cfce59ee5a3f9cc718293751566e0123fed726/assets/screenshots/01-pet-page.png
+listScreenshot: https://raw.githubusercontent.com/chenyuan1251/dsh-pet-niumali/02cfce59ee5a3f9cc718293751566e0123fed726/assets/screenshots/01-pet-page.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 || ^0.2.0-rc.2 未被本次检测范围 >=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0 完全覆盖（固定版本 02cfce59ee5a3f9cc718293751566e0123fed726）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 02cfce59ee5a3f9cc718293751566e0123fed726
+    packageVersion: 8.0.2
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:27.861Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1216
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T07:53:29.580Z
-metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+releaseUpdatedAt: 2026-11-14T23:45:28.335Z
+metadataUpdatedAt: 2026-11-14T23:45:28.335Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-14T07:53:29.580Z
-listScreenshot: https://raw.githubusercontent.com/chenyuan1251/dsh-pet-niumali/02cfce59ee5a3f9cc718293751566e0123fed726/assets/screenshots/01-pet-page.png
+updatedAt: 2026-11-14T23:45:28.335Z

@@ -21,6 +21,12 @@ install:
   target: github:Yuanawaqwq/dsh-columbina-pet#32db68b48f7f4bdf5d90435af744a9e790159a7c
   version: 1.2.2
   commit: 32db68b48f7f4bdf5d90435af744a9e790159a7c
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-columbina-pet
+    packageVersion: 1.2.2
+    integrity: sha512-GgPgnZumwGROX216Lqu5ZudtoJoV+C+KwTd/rWSb5SPEkPzqPOhLaxEGou8MbTJp9o8H6oOS2RX/VzXGA+ly1Q==
 compatibility:
   dsh: 0.2.2-rc.1 || 0.2.1-rc.2
   platform:
@@ -30,27 +36,37 @@ screenshots:
   - https://raw.githubusercontent.com/Yuanawaqwq/dsh-columbina-pet/32db68b48f7f4bdf5d90435af744a9e790159a7c/docs/screenshots/02-menu.png
   - https://raw.githubusercontent.com/Yuanawaqwq/dsh-columbina-pet/32db68b48f7f4bdf5d90435af744a9e790159a7c/docs/screenshots/03-skins.png
   - https://raw.githubusercontent.com/Yuanawaqwq/dsh-columbina-pet/32db68b48f7f4bdf5d90435af744a9e790159a7c/docs/screenshots/04-settings.png
+listScreenshot: https://raw.githubusercontent.com/Yuanawaqwq/dsh-columbina-pet/32db68b48f7f4bdf5d90435af744a9e790159a7c/docs/screenshots/01-desktop.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.2-rc.1 || 0.2.1-rc.2 未被本次检测范围 ^1.2.2 完全覆盖（固定版本 32db68b48f7f4bdf5d90435af744a9e790159a7c）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 32db68b48f7f4bdf5d90435af744a9e790159a7c
+    packageVersion: 1.2.2
+    scannerVersion: static-v2
+    dshVersion: ^1.2.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:25.254Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1495
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-14T23:46:26.314Z
+metadataUpdatedAt: 2026-11-14T23:46:26.314Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/Yuanawaqwq/dsh-columbina-pet/32db68b48f7f4bdf5d90435af744a9e790159a7c/docs/screenshots/01-desktop.png
+updatedAt: 2026-11-14T23:46:26.314Z

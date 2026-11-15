@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:MichengAI/dsh-codex-pet#4077d08e681f90ee643fc7248b27f0e88adc0cc6
-  version: 1.0.14
-  commit: 4077d08e681f90ee643fc7248b27f0e88adc0cc6
+  target: github:MichengAI/dsh-codex-pet#8175311307cc35dd69666ee9fffd9a0ff31e1900
+  version: 1.0.19
+  commit: 8175311307cc35dd69666ee9fffd9a0ff31e1900
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@michengai/dsh-codex-pet"
+    packageVersion: 1.0.19
+    integrity: sha512-2meckrwBLY3X3dMe660LAB4WvOOYh2ZHfxZMtKdRpRcoqDIM0ADMlgNykNheE6V3j8bTW4DKqxGvTjfWhU0LSw==
+  npm:
+    name: "@michengai/dsh-codex-pet"
+    version: 1.0.19
+    integrity: sha512-2meckrwBLY3X3dMe660LAB4WvOOYh2ZHfxZMtKdRpRcoqDIM0ADMlgNykNheE6V3j8bTW4DKqxGvTjfWhU0LSw==
+    repository: https://github.com/MichengAI/dsh-codex-pet
+    gitHead: 8175311307cc35dd69666ee9fffd9a0ff31e1900
 compatibility:
   dsh: 0.2.0-rc.1 || 0.1.2-rc.1
   platform:
@@ -29,26 +41,36 @@ screenshots:
   - https://raw.githubusercontent.com/MichengAI/dsh-codex-pet/4077d08e681f90ee643fc7248b27f0e88adc0cc6/assets/screenshots/pet-conversation.png
   - https://raw.githubusercontent.com/MichengAI/dsh-codex-pet/4077d08e681f90ee643fc7248b27f0e88adc0cc6/assets/branding/dsh-codex-pet-banner.png
   - https://raw.githubusercontent.com/MichengAI/dsh-codex-pet/4077d08e681f90ee643fc7248b27f0e88adc0cc6/assets/screenshots/pet-notifications.png
+listScreenshot: https://raw.githubusercontent.com/MichengAI/dsh-codex-pet/4077d08e681f90ee643fc7248b27f0e88adc0cc6/assets/screenshots/pet-settings.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.1 || 0.1.2-rc.1 未被本次检测范围 >=0.2.0-rc.1 <0.3.0-0 完全覆盖（固定版本 8175311307cc35dd69666ee9fffd9a0ff31e1900）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 8175311307cc35dd69666ee9fffd9a0ff31e1900
+    packageVersion: 1.0.19
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:43:28.596Z
+    findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 1241
 starsSnapshot: 8
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-14T23:43:32.457Z
+metadataUpdatedAt: 2026-11-14T23:43:32.457Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/MichengAI/dsh-codex-pet/4077d08e681f90ee643fc7248b27f0e88adc0cc6/assets/screenshots/pet-settings.png
+updatedAt: 2026-11-14T23:43:32.457Z

@@ -20,12 +20,25 @@ install:
   target: github:xikan0/dsh-outerwilds-theme#5a9b1feaeee4f2269646b7498eec26cdcb846e7d
   version: 0.1.6
   commit: 5a9b1feaeee4f2269646b7498eec26cdcb846e7d
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-outerwilds-theme
+    packageVersion: 0.1.6
+    integrity: sha512-cQiG9aHGA8sBVfsZNBOVSzBKnjstc61iHMmHxK9ptMfM2d7js/cYsVdPSzRpQKGTMnDMyjQCYHkYRulIJUk/0Q==
+  npm:
+    name: dsh-outerwilds-theme
+    version: 0.1.6
+    integrity: sha512-cQiG9aHGA8sBVfsZNBOVSzBKnjstc61iHMmHxK9ptMfM2d7js/cYsVdPSzRpQKGTMnDMyjQCYHkYRulIJUk/0Q==
+    repository: https://github.com/xikan0/dsh-outerwilds-theme
+    gitHead: 5a9b1feaeee4f2269646b7498eec26cdcb846e7d
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/xikan0/dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/docs/screenshots/preview.png
+listScreenshot: https://raw.githubusercontent.com/xikan0/dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/docs/screenshots/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -39,15 +52,25 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 5a9b1feaeee4f2269646b7498eec26cdcb846e7d
+    packageVersion: 0.1.6
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-14T23:45:13.827Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
-  code: MIT
-  commercialUse: true
+  code: SEE LICENSE IN LICENSE
+  commercialUse: false
 featuredRank: 1280
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+releaseUpdatedAt: 2026-11-14T23:45:14.308Z
+metadataUpdatedAt: 2026-11-14T23:45:14.308Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
-listScreenshot: https://raw.githubusercontent.com/xikan0/dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/docs/screenshots/preview.png
+updatedAt: 2026-11-14T23:45:14.308Z

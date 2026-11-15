@@ -21,6 +21,12 @@ install:
   target: github:QCYTSN/dsh-dafeiyu#084323845ab82b68d5388d5c638bec09d8544a8a
   version: 0.1.23
   commit: 084323845ab82b68d5388d5c638bec09d8544a8a
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-dafeiyu
+    packageVersion: 0.1.23
+    integrity: sha512-TIgOgON+n0BCQu2BIm7ndqNHa1Xa5tBq8eNivZuF+hG8yzbnixaoNfUfGtT9sVLgSJ+1Q81Rjq0P9/vouG2t2g==
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
@@ -29,26 +35,36 @@ screenshots:
   - https://raw.githubusercontent.com/QCYTSN/dsh-dafeiyu/084323845ab82b68d5388d5c638bec09d8544a8a/docs/images/balance-preview.png
   - https://raw.githubusercontent.com/QCYTSN/dsh-dafeiyu/084323845ab82b68d5388d5c638bec09d8544a8a/docs/images/dsh-bigfish-running.png
   - https://raw.githubusercontent.com/QCYTSN/dsh-dafeiyu/084323845ab82b68d5388d5c638bec09d8544a8a/docs/images/dsh-bigfish-settings.png
+listScreenshot: https://raw.githubusercontent.com/QCYTSN/dsh-dafeiyu/084323845ab82b68d5388d5c638bec09d8544a8a/docs/images/balance-preview.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 084323845ab82b68d5388d5c638bec09d8544a8a
+    packageVersion: 0.1.23
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:41:49.417Z
+    findings: []
 license:
-  code: MIT
-  commercialUse: true
+  code: SEE LICENSE IN ASSET_LICENSE.md
+  commercialUse: false
 featuredRank: 1255
-starsSnapshot: 619
-releaseUpdatedAt: 2026-11-14T07:56:31.671Z
-metadataUpdatedAt: 2026-11-14T07:56:31.671Z
-starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-14T07:56:31.671Z
-listScreenshot: https://raw.githubusercontent.com/QCYTSN/dsh-dafeiyu/084323845ab82b68d5388d5c638bec09d8544a8a/docs/images/balance-preview.png
+starsSnapshot: 620
+releaseUpdatedAt: 2026-11-14T23:41:50.250Z
+metadataUpdatedAt: 2026-11-14T23:41:50.250Z
+starsUpdatedAt: 2026-11-14T23:41:50.250Z
+updatedAt: 2026-11-14T23:41:50.250Z

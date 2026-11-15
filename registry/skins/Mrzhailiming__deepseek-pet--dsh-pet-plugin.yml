@@ -25,6 +25,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/home.png
+  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/conversation.png
+  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/settings.png
 screenshots:
   - https://raw.githubusercontent.com/Mrzhailiming/deepseek-pet/539096149f644a923a295e0dd6f127c26e0b8847/docs/whale.png
 listScreenshot: https://raw.githubusercontent.com/Mrzhailiming/deepseek-pet/539096149f644a923a295e0dd6f127c26e0b8847/docs/whale.png
@@ -54,13 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
-marketScreenshots:
-  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/home.png
-  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/conversation.png
-  - skin-screenshots/Mrzhailiming__deepseek-pet--dsh-pet-plugin/539096149f644a923a295e0dd6f127c26e0b8847/settings.png
 featuredRank: 997
+starsSnapshot: 3
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-14T23:45:02.379Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-14T23:45:02.379Z

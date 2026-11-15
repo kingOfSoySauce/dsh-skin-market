@@ -21,33 +21,53 @@ install:
   target: github:lrplrplrp/dsh-live2d#1ba6522a18408716a5c71a81575503ddad9b96be
   version: 0.1.4
   commit: 1ba6522a18408716a5c71a81575503ddad9b96be
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@lrplrplrp/dsh-live2d"
+    packageVersion: 0.1.4
+    integrity: sha512-UaHkYwnNt/9PVv9bv4WijhsFk4yYPh0607Vv/ayMKJrsTP792x9g2E5THoLFZdUvHymqVfrO8QoggPW6qqR1Cw==
+  npm:
+    name: "@lrplrplrp/dsh-live2d"
+    version: 0.1.4
+    integrity: sha512-UaHkYwnNt/9PVv9bv4WijhsFk4yYPh0607Vv/ayMKJrsTP792x9g2E5THoLFZdUvHymqVfrO8QoggPW6qqR1Cw==
+    repository: https://github.com/lrplrplrp/dsh-live2d
+    gitHead: 1ba6522a18408716a5c71a81575503ddad9b96be
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.0-rc.6"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/lrplrplrp/dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/lrplrplrp/dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/docs/preview.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
+  scan:
+    commit: 1ba6522a18408716a5c71a81575503ddad9b96be
+    packageVersion: 0.1.4
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:43:51.021Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1391
 starsSnapshot: 6
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-14T23:43:51.301Z
+metadataUpdatedAt: 2026-11-14T23:43:51.301Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/lrplrplrp/dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/docs/preview.png
+updatedAt: 2026-11-14T23:43:51.301Z

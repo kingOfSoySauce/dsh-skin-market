@@ -28,34 +28,33 @@ screenshots:
   - https://raw.githubusercontent.com/coldfish486/dsh-anime25d-pets/425d95757004e120ae0d9ea3272d90ac77797ff9/assets/demo.gif
 listScreenshot: https://raw.githubusercontent.com/coldfish486/dsh-anime25d-pets/425d95757004e120ae0d9ea3272d90ac77797ff9/assets/demo.gif
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.2 未被本次检测范围 0.1.0-rc.6 完全覆盖（固定版本 425d95757004e120ae0d9ea3272d90ac77797ff9）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  suggestions: []
   scan:
     commit: 425d95757004e120ae0d9ea3272d90ac77797ff9
     packageVersion: 0.4.0
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.6
+    dshVersion: ^0.2.0-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:32:25.341Z
+    checkedAt: 2026-11-14T23:47:07.857Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 999
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-09T00:15:50.909Z
-metadataUpdatedAt: 2026-11-09T00:15:50.909Z
+metadataUpdatedAt: 2026-11-14T23:47:07.995Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T00:15:50.909Z
+updatedAt: 2026-11-14T23:47:07.995Z

@@ -20,13 +20,13 @@ install:
   version: 0.2.0
   commit: 563f7271f8e86e0b5c2f8a223e7ba6aad2f42132
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-rc.1"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-skin/563f7271f8e86e0b5c2f8a223e7ba6aad2f42132/docs/skin-hero.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
@@ -44,7 +44,7 @@ license:
 featuredRank: 1311
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-skin/563f7271f8e86e0b5c2f8a223e7ba6aad2f42132/docs/skin-hero.jpg

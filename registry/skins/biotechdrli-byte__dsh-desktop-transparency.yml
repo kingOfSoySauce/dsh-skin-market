@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:biotechdrli-byte/dsh-desktop-transparency#d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04
+  target: github:biotechdrli-byte/dsh-desktop-transparency#8d18b58f94bbac660fb2e22aab8e07ee1109aaa8
   version: 0.7.0
-  commit: d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04
+  commit: 8d18b58f94bbac660fb2e22aab8e07ee1109aaa8
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-desktop-transparency
+    packageVersion: 0.7.0
+    integrity: sha512-mMQwgc9mCFNsoaFMUSz8VmVqJyJereK8MCkNhk80TslzUz81m98574lUZlWrUkQ4Rkzc4D7f2uy/t6O83r3yNg==
+  npm:
+    name: dsh-desktop-transparency
+    version: 0.7.0
+    integrity: sha512-mMQwgc9mCFNsoaFMUSz8VmVqJyJereK8MCkNhk80TslzUz81m98574lUZlWrUkQ4Rkzc4D7f2uy/t6O83r3yNg==
+    repository: https://github.com/biotechdrli-byte/dsh-desktop-transparency
+    gitHead: 8d18b58f94bbac660fb2e22aab8e07ee1109aaa8
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -30,26 +42,36 @@ screenshots:
   - https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/overview.jpg
   - https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/regions.jpg
   - https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/panel.png
+listScreenshot: https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/demo.gif
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 8d18b58f94bbac660fb2e22aab8e07ee1109aaa8
+    packageVersion: 0.7.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:27.011Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1514
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T19:39:31.051Z
-metadataUpdatedAt: 2026-11-14T19:39:31.051Z
+releaseUpdatedAt: 2026-11-14T23:45:29.270Z
+metadataUpdatedAt: 2026-11-14T23:45:29.270Z
 starsUpdatedAt: 2026-11-14T19:39:31.051Z
-updatedAt: 2026-11-14T19:39:31.051Z
-listScreenshot: https://raw.githubusercontent.com/biotechdrli-byte/dsh-desktop-transparency/d4c3a1ec2ea1b8799dbecf4f5aafa5a952bcbf04/docs/images/demo.gif
+updatedAt: 2026-11-14T23:45:29.270Z

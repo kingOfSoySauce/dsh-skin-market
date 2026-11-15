@@ -22,33 +22,32 @@ install:
   version: 0.1.0
   commit: 5c0fe13ef9a3275d107557c73c342113252f4504
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-rc.1"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/5c0fe13ef9a3275d107557c73c342113252f4504/assets/screenshot-chat.png
   - https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/5c0fe13ef9a3275d107557c73c342113252f4504/assets/screenshot-bubbles.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1315
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/5c0fe13ef9a3275d107557c73c342113252f4504/assets/screenshot-chat.png

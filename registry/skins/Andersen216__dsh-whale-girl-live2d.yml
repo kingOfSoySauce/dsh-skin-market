@@ -33,7 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/Andersen216/dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/docs/screenshots/01-%E5%BE%85%E6%9C%BA.jpg
 listScreenshot: https://raw.githubusercontent.com/Andersen216/dsh-whale-girl-live2d/f977bef508690e75ba6535cd8f4ce18e7f6ba9b0/docs/screenshots/01-%E5%BE%85%E6%9C%BA.jpg
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: manual-only
 health:
@@ -45,17 +45,17 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.7-rc.2 未被本次检测范围 >=0.2.0-rc.x 完全覆盖（固定版本 f977bef508690e75ba6535cd8f4ce18e7f6ba9b0）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: f977bef508690e75ba6535cd8f4ce18e7f6ba9b0
     packageVersion: 0.4.6
     scannerVersion: static-v2
-    dshVersion: 0.1.7-rc.2
+    dshVersion: ">=0.2.0-rc.x"
     mode: static
     result: unknown
-    checkedAt: 2026-11-09T08:05:55.684Z
+    checkedAt: 2026-11-14T23:42:05.868Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -65,6 +65,6 @@ license:
 featuredRank: 1000
 starsSnapshot: 95
 releaseUpdatedAt: 2026-11-03T19:20:00+08:00
-metadataUpdatedAt: 2026-11-09T08:05:56.313Z
+metadataUpdatedAt: 2026-11-14T23:42:06.945Z
 starsUpdatedAt: 2026-11-14T00:22:48.003Z
-updatedAt: 2026-11-14T00:22:48.003Z
+updatedAt: 2026-11-14T23:42:06.945Z

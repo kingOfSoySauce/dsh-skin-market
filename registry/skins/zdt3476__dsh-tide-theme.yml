@@ -22,7 +22,7 @@ install:
   version: 0.7.0
   commit: 05421f75e42a00a31e9d2f42bbeb208e7916384e
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0"
   platform:
     - web
 screenshots:
@@ -33,19 +33,18 @@ screenshots:
   - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/current-dock-dark.png
   - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/current-dock-dark-native.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
     - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
 license:
   code: MIT
@@ -53,7 +52,7 @@ license:
 featuredRank: 1283
 starsSnapshot: 1
 releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+metadataUpdatedAt: 2026-11-14T23:28:29.986Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
+updatedAt: 2026-11-14T23:28:29.986Z
 listScreenshot: https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/banner-light.png

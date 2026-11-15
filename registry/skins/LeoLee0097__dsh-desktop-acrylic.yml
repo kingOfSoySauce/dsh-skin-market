@@ -29,34 +29,33 @@ screenshots:
   - https://raw.githubusercontent.com/LeoLee0097/dsh-desktop-acrylic/b4c075446c2d6588f1e4fc6d4ddd9926cb904002/snaplight.png
 listScreenshot: https://raw.githubusercontent.com/LeoLee0097/dsh-desktop-acrylic/b4c075446c2d6588f1e4fc6d4ddd9926cb904002/snapdark.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.2.1-rc.2 未被本次检测范围 ^0.1.0-rc.6 完全覆盖（固定版本 b4c075446c2d6588f1e4fc6d4ddd9926cb904002）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  suggestions: []
   scan:
     commit: b4c075446c2d6588f1e4fc6d4ddd9926cb904002
     packageVersion: 0.9.23
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.6
+    dshVersion: ^0.2.0-rc.1 || ^0.1.0-rc.6 || ^0.2.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:32:39.488Z
+    checkedAt: 2026-11-14T23:47:57.254Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 999
+starsSnapshot: 1
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-11-09T00:16:22.883Z
+metadataUpdatedAt: 2026-11-14T23:47:57.602Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T00:16:22.883Z
+updatedAt: 2026-11-14T23:47:57.602Z

@@ -18,13 +18,29 @@ modes:
   - light
   - dark
 install:
-  target: github:Tal-Shin/dsh-glass#d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d&path:/glass-theme
-  version: 1.1.0
-  commit: d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d
+  target: github:Tal-Shin/dsh-glass#7c9e151635e6255d2dca750b6c7fabc9051dffc8&path:/glass-theme
+  version: 1.2.0
+  commit: 7c9e151635e6255d2dca750b6c7fabc9051dffc8
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@tal-shin/dsh-glass-theme"
+    packageVersion: 1.2.0
+    integrity: sha512-7blBVC47dW0iIm9hDzImUNxD05K2tZhQUOf5AtfVBV9VE55a5YwTJly6y0q9l0PppWIg2NhtuOrKtlue2JVH2A==
+  npm:
+    name: "@tal-shin/dsh-glass-theme"
+    version: 1.2.0
+    integrity: sha512-7blBVC47dW0iIm9hDzImUNxD05K2tZhQUOf5AtfVBV9VE55a5YwTJly6y0q9l0PppWIg2NhtuOrKtlue2JVH2A==
+    repository: https://github.com/Tal-Shin/dsh-glass
+    gitHead: 7c9e151635e6255d2dca750b6c7fabc9051dffc8
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/home.png
+  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/conversation.png
+  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -40,18 +56,22 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 7c9e151635e6255d2dca750b6c7fabc9051dffc8
+    packageVersion: 1.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:44:11.991Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1192
 starsSnapshot: 5
-releaseUpdatedAt: 2026-11-14T06:29:27.360Z
-metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+releaseUpdatedAt: 2026-11-14T23:44:12.192Z
+metadataUpdatedAt: 2026-11-14T23:44:12.192Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-14T06:29:27.360Z
-marketScreenshots:
-  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/home.png
-  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/conversation.png
-  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/settings.png
+updatedAt: 2026-11-14T23:44:12.192Z

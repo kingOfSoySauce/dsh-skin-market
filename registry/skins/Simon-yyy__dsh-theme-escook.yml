@@ -18,12 +18,25 @@ install:
   target: github:Simon-yyy/dsh-theme-escook#9541c51153309b620b6deffe042aeb2b5823cb37
   version: 1.0.4
   commit: 9541c51153309b620b6deffe042aeb2b5823cb37
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-escook
+    packageVersion: 1.0.4
+    integrity: sha512-e0MIks7iAXcdGGutrDNaAV04qh2BjhTcj9x70/qx/q6ErjGT8qvMu7A1o4Wow/eHwlGD48Y3j5oZR2pbiWYXGw==
+  npm:
+    name: dsh-theme-escook
+    version: 1.0.4
+    integrity: sha512-e0MIks7iAXcdGGutrDNaAV04qh2BjhTcj9x70/qx/q6ErjGT8qvMu7A1o4Wow/eHwlGD48Y3j5oZR2pbiWYXGw==
+    repository: https://github.com/Simon-yyy/dsh-theme-escook
+    gitHead: 9541c51153309b620b6deffe042aeb2b5823cb37
 compatibility:
   dsh: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.2 <0.3.0-0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Simon-yyy/dsh-theme-escook/9541c51153309b620b6deffe042aeb2b5823cb37/assets/preview.png
+listScreenshot: https://raw.githubusercontent.com/Simon-yyy/dsh-theme-escook/9541c51153309b620b6deffe042aeb2b5823cb37/assets/preview.png
 review:
   compatibility: verified
   preview: verified
@@ -37,13 +50,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 9541c51153309b620b6deffe042aeb2b5823cb37
+    packageVersion: 1.0.4
+    scannerVersion: static-v2
+    dshVersion: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.2 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:07.370Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1438
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-14T23:46:07.584Z
+metadataUpdatedAt: 2026-11-14T23:46:07.584Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/Simon-yyy/dsh-theme-escook/9541c51153309b620b6deffe042aeb2b5823cb37/assets/preview.png
+updatedAt: 2026-11-14T23:46:07.584Z

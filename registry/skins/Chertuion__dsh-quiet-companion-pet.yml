@@ -20,6 +20,9 @@ install:
   target: github:Chertuion/dsh-quiet-companion-pet#c89d39955f5ecde042d476d5d314714bb6934b16
   version: 0.5.1-beta.9
   commit: c89d39955f5ecde042d476d5d314714bb6934b16
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
 compatibility:
   dsh: 0.2.1-rc.5
   platform:
@@ -33,6 +36,7 @@ screenshots:
   - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/voice-and-appearance.jpg
   - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/screen-test-input.jpg
   - https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/proactive-interaction.jpg
+listScreenshot: https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/desktop-companion.jpg
 review:
   compatibility: verified
   preview: verified
@@ -48,13 +52,21 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: c89d39955f5ecde042d476d5d314714bb6934b16
+    packageVersion: 0.5.1-beta.9
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:47:02.547Z
+    findings: []
 license:
-  code: NOASSERTION
+  code: UNLICENSED
   commercialUse: false
 featuredRank: 1312
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-14T23:47:04.237Z
+metadataUpdatedAt: 2026-11-14T23:47:04.237Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/Chertuion/dsh-quiet-companion-pet/c89d39955f5ecde042d476d5d314714bb6934b16/docs/assets/screenshots/desktop-companion.jpg
+updatedAt: 2026-11-14T23:47:04.237Z

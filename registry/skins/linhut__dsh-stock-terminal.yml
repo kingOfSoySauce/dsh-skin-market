@@ -45,17 +45,17 @@ health:
     commit: a11b6b5d78edb2d1ad59da7cb598d25c94acae6a
     packageVersion: 1.7.2
     scannerVersion: static-v2
-    dshVersion: 0.1.0-rc.6
+    dshVersion: ">=0.1.0-rc.6"
     mode: static
     result: pass
-    checkedAt: 2026-11-09T07:13:20.623Z
+    checkedAt: 2026-11-14T23:43:14.913Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
-starsSnapshot: 10
 featuredRank: 205
+starsSnapshot: 10
 releaseUpdatedAt: 2026-11-09T07:13:20.875Z
-metadataUpdatedAt: 2026-11-09T07:13:20.875Z
+metadataUpdatedAt: 2026-11-14T23:43:15.371Z
 starsUpdatedAt: 2026-11-09T07:13:20.875Z
-updatedAt: 2026-11-09T07:13:20.875Z
+updatedAt: 2026-11-14T23:43:15.371Z

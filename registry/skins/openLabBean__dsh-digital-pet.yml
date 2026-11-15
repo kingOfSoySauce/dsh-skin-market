@@ -21,6 +21,9 @@ install:
   target: github:openLabBean/dsh-digital-pet#fc0a7db04011dcfe60552b8996be97fbe20f4462
   version: 0.1.0
   commit: fc0a7db04011dcfe60552b8996be97fbe20f4462
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -31,6 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/little-rituals.png
   - https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/growing-together.png
   - https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/hero.png
+listScreenshot: https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/hello-pets.gif
 review:
   compatibility: unverified
   preview: verified
@@ -44,14 +48,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: fc0a7db04011dcfe60552b8996be97fbe20f4462
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:48:22.414Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1250
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:56:31.671Z
-metadataUpdatedAt: 2026-11-14T07:56:31.671Z
+releaseUpdatedAt: 2026-11-14T23:48:23.554Z
+metadataUpdatedAt: 2026-11-14T23:48:23.554Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-14T07:56:31.671Z
-listScreenshot: https://raw.githubusercontent.com/openLabBean/dsh-digital-pet/fc0a7db04011dcfe60552b8996be97fbe20f4462/docs/promo/hello-pets.gif
+updatedAt: 2026-11-14T23:48:23.554Z
