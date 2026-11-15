@@ -20,6 +20,9 @@ install:
   target: github:fishfromsky/dsh-march7th-skin#534b05b6388b745113f955c3efe017b7aad84682
   version: 0.3.0
   commit: 534b05b6388b745113f955c3efe017b7aad84682
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.0.1-rc.1
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/main.png
   - https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/dialog.png
   - https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/settings.png
+listScreenshot: https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/main.png
 review:
   compatibility: verified
   preview: verified
@@ -41,13 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 534b05b6388b745113f955c3efe017b7aad84682
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: ^0.0.1-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:20.928Z
+    findings: []
 license:
-  code: MIT
-  commercialUse: true
+  code: SEE LICENSE IN LICENSE
+  commercialUse: false
 featuredRank: 1181
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T06:29:10.128Z
-metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+releaseUpdatedAt: 2026-11-15T20:44:36.641Z
+metadataUpdatedAt: 2026-11-15T20:44:36.641Z
 starsUpdatedAt: 2026-11-14T06:29:10.128Z
-updatedAt: 2026-11-14T06:29:10.128Z
-listScreenshot: https://raw.githubusercontent.com/fishfromsky/dsh-march7th-skin/534b05b6388b745113f955c3efe017b7aad84682/docs/preview/main.png
+updatedAt: 2026-11-15T20:44:36.641Z

@@ -27,10 +27,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/home.png
-  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/conversation.png
-  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/settings.png
 screenshots:
   - https://github.com/user-attachments/assets/657d25e5-d27d-4f1a-8a27-fb73d751cd39
 listScreenshot: https://github.com/user-attachments/assets/657d25e5-d27d-4f1a-8a27-fb73d751cd39
@@ -59,9 +55,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1393
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/home.png
+  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/conversation.png
+  - skin-screenshots/lyingice__dsh-client-ui-mc-skin/1f5d67b7319b5c0f59cc4ae71f2d9f229ec1b6dc/settings.png
+featuredRank: 1393
 releaseUpdatedAt: 2026-11-14T23:48:05.345Z
-metadataUpdatedAt: 2026-11-14T23:48:05.345Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T23:48:05.345Z
+updatedAt: 2026-11-15T20:40:53.617Z

@@ -20,10 +20,26 @@ install:
   target: github:wuyad/dsh-client-ui-cat#82afc31696ad6cbade29f8cdda313d7cfb32a144&path:/cat-plugin
   version: 0.1.21
   commit: 82afc31696ad6cbade29f8cdda313d7cfb32a144
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-client-ui-cat
+    packageVersion: 0.1.21
+    integrity: sha512-qq9JrWSqX8m2AWKhjHrHx68aFg9yYO7arrZ/0fcGomB28aa6xFFh4n5Jkehund2ZoRAPpmcr/ma9F+ZZzPrU0A==
+  npm:
+    name: dsh-client-ui-cat
+    version: 0.1.21
+    integrity: sha512-qq9JrWSqX8m2AWKhjHrHx68aFg9yYO7arrZ/0fcGomB28aa6xFFh4n5Jkehund2ZoRAPpmcr/ma9F+ZZzPrU0A==
+    repository: https://github.com/wuyad/dsh-client-ui-cat
+    gitHead: 82afc31696ad6cbade29f8cdda313d7cfb32a144
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/home.png
+  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/conversation.png
+  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -36,21 +52,24 @@ health:
     compatibility: improve
     installation: pass
     installCommand: pass
-    topic: improve
+    topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 82afc31696ad6cbade29f8cdda313d7cfb32a144
+    packageVersion: 0.1.21
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:17.584Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1198
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T06:29:27.360Z
-metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+releaseUpdatedAt: 2026-11-15T20:46:17.620Z
+metadataUpdatedAt: 2026-11-15T20:46:17.620Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-14T06:29:27.360Z
-marketScreenshots:
-  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/home.png
-  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/conversation.png
-  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/settings.png
+updatedAt: 2026-11-15T20:46:17.620Z

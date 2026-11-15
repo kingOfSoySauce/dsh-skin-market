@@ -17,35 +17,48 @@ modes:
   - light
   - dark
 install:
-  target: github:jx70/dsh-cloudmusic-player#dc5b0751dacaadffb8ca33122904bfd3f88c0e26
-  version: 0.2.0
-  commit: dc5b0751dacaadffb8ca33122904bfd3f88c0e26
+  target: github:jx70/dsh-cloudmusic-player#c95a77bec9a6557fd1c95923e248644be4126bee
+  version: 0.5.0
+  commit: c95a77bec9a6557fd1c95923e248644be4126bee
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0--rc.6-4b6bfb.svg || 0.1.0-rc.6
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/jx70/dsh-cloudmusic-player/dc5b0751dacaadffb8ca33122904bfd3f88c0e26/docs/subtitle-clean.png
+listScreenshot: https://raw.githubusercontent.com/jx70/dsh-cloudmusic-player/dc5b0751dacaadffb8ca33122904bfd3f88c0e26/docs/subtitle-clean.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0--rc.6-4b6bfb.svg || 0.1.0-rc.6 未被本次检测范围 >=0.1.0-rc.6 完全覆盖（固定版本 c95a77bec9a6557fd1c95923e248644be4126bee）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: c95a77bec9a6557fd1c95923e248644be4126bee
+    packageVersion: 0.5.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:42:54.786Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1526
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-15T16:38:24.792Z
-metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+releaseUpdatedAt: 2026-11-15T20:42:55.100Z
+metadataUpdatedAt: 2026-11-15T20:42:55.100Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T16:38:24.792Z
-listScreenshot: https://raw.githubusercontent.com/jx70/dsh-cloudmusic-player/dc5b0751dacaadffb8ca33122904bfd3f88c0e26/docs/subtitle-clean.png
+updatedAt: 2026-11-15T20:42:55.100Z

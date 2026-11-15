@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:XM-Zou/dsh-local-music-player#da8ae04175bde41568238a5b783baeb04b71e7fb
+  target: github:XM-Zou/dsh-local-music-player#0893448a80fe68931513fc1fe770bbb8cbe7dfb1
   version: 0.7.3
-  commit: da8ae04175bde41568238a5b783baeb04b71e7fb
+  commit: 0893448a80fe68931513fc1fe770bbb8cbe7dfb1
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-local-music-player
+    packageVersion: 0.7.3
+    integrity: sha512-1zYE8IQVVAZG3HSMDgTooiIjpGJaeb2vAN1HaJzRhMMBhvwQ0k5Xg/m0RpwrQcX86I+/csBvUkYiS2jeSbJREw==
+  npm:
+    name: dsh-local-music-player
+    version: 0.7.3
+    integrity: sha512-1zYE8IQVVAZG3HSMDgTooiIjpGJaeb2vAN1HaJzRhMMBhvwQ0k5Xg/m0RpwrQcX86I+/csBvUkYiS2jeSbJREw==
+    repository: https://github.com/XM-Zou/dsh-local-music-player
+    gitHead: 0893448a80fe68931513fc1fe770bbb8cbe7dfb1
 compatibility:
   dsh: ">=0.2.1"
   platform:
@@ -30,6 +42,7 @@ screenshots:
   - https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/player.png
   - https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/playlist-menu.png
   - https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/backup.png
+listScreenshot: https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/banner.png
 review:
   compatibility: verified
   preview: verified
@@ -43,13 +56,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 0893448a80fe68931513fc1fe770bbb8cbe7dfb1
+    packageVersion: 0.7.3
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:22.729Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1486
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:46:24.405Z
+metadataUpdatedAt: 2026-11-15T20:46:24.405Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/banner.png
+updatedAt: 2026-11-15T20:46:24.405Z

@@ -19,6 +19,9 @@ install:
   target: github:Wanbinyu/dsh-companion#7e381ae09d0173c448d1b20344c318a86bf3102f
   version: 0.1.13
   commit: 7e381ae09d0173c448d1b20344c318a86bf3102f
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
@@ -26,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Wanbinyu/dsh-companion/7e381ae09d0173c448d1b20344c318a86bf3102f/docs/images/companion-overview.png
   - https://raw.githubusercontent.com/Wanbinyu/dsh-companion/7e381ae09d0173c448d1b20344c318a86bf3102f/docs/images/companion-dialogue-settings.png
+listScreenshot: https://raw.githubusercontent.com/Wanbinyu/dsh-companion/7e381ae09d0173c448d1b20344c318a86bf3102f/docs/images/companion-overview.png
 review:
   compatibility: verified
   preview: verified
@@ -39,13 +43,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 7e381ae09d0173c448d1b20344c318a86bf3102f
+    packageVersion: 0.1.13
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:07.294Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1468
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:46:07.506Z
+metadataUpdatedAt: 2026-11-15T20:46:07.506Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/Wanbinyu/dsh-companion/7e381ae09d0173c448d1b20344c318a86bf3102f/docs/images/companion-overview.png
+updatedAt: 2026-11-15T20:46:07.506Z

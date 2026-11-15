@@ -20,12 +20,16 @@ install:
   target: github:XQ-zheng/dsh-zhangxuefeng-skin#1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431&path:/plugins/dsh-zhangxuefeng-skin
   version: 0.1.3
   commit: 1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/XQ-zheng/dsh-zhangxuefeng-skin/1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431/plugins/dsh-zhangxuefeng-skin/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/XQ-zheng/dsh-zhangxuefeng-skin/1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431/plugins/dsh-zhangxuefeng-skin/docs/preview.png
 review:
   compatibility: verified
   preview: verified
@@ -34,19 +38,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431
+    packageVersion: 0.1.3
+    scannerVersion: static-v2
+    dshVersion: 0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:23.150Z
+    findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 1186
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T06:29:10.128Z
-metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+releaseUpdatedAt: 2026-11-15T20:46:23.193Z
+metadataUpdatedAt: 2026-11-15T20:46:23.193Z
 starsUpdatedAt: 2026-11-14T06:29:10.128Z
-updatedAt: 2026-11-14T06:29:10.128Z
-listScreenshot: https://raw.githubusercontent.com/XQ-zheng/dsh-zhangxuefeng-skin/1ed074fbbb543d439e94ebb0ddf5cfeb0a8f9431/plugins/dsh-zhangxuefeng-skin/docs/preview.png
+updatedAt: 2026-11-15T20:46:23.193Z

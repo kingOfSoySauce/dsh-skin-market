@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:haoyu-qi/dsh-hermes-taiji-skin#f300bba37e9b3f0e7a72f26f5160416ff0f9a2dd
-  version: 3.2.0
-  commit: f300bba37e9b3f0e7a72f26f5160416ff0f9a2dd
+  target: github:haoyu-qi/dsh-hermes-taiji-skin#09fbd059a626e5233d64b4e667863a871567f3b2
+  version: 3.2.1
+  commit: 09fbd059a626e5233d64b4e667863a871567f3b2
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -48,19 +48,19 @@ health:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: f300bba37e9b3f0e7a72f26f5160416ff0f9a2dd
-    packageVersion: 3.2.0
+    commit: 09fbd059a626e5233d64b4e667863a871567f3b2
+    packageVersion: 3.2.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:23:48.651Z
+    checkedAt: 2026-11-15T20:42:48.602Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1149
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T00:23:48.848Z
-metadataUpdatedAt: 2026-11-14T00:23:48.848Z
+releaseUpdatedAt: 2026-11-15T20:42:48.988Z
+metadataUpdatedAt: 2026-11-15T20:42:48.988Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T00:23:48.848Z
+updatedAt: 2026-11-15T20:42:48.988Z

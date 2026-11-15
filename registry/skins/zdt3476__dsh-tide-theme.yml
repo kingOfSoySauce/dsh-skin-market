@@ -21,6 +21,18 @@ install:
   target: github:zdt3476/dsh-tide-theme#05421f75e42a00a31e9d2f42bbeb208e7916384e
   version: 0.7.0
   commit: 05421f75e42a00a31e9d2f42bbeb208e7916384e
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-tide-theme
+    packageVersion: 0.7.0
+    integrity: sha512-rZmZSI9j0X03PzxqWyvmDfu04kcT/eikTCY8Qw90J7z9uSbtI/+PZDjb15W5bDr4d5O/EeK3G3Zjwop7AeCWuw==
+  npm:
+    name: dsh-tide-theme
+    version: 0.7.0
+    integrity: sha512-rZmZSI9j0X03PzxqWyvmDfu04kcT/eikTCY8Qw90J7z9uSbtI/+PZDjb15W5bDr4d5O/EeK3G3Zjwop7AeCWuw==
+    repository: https://github.com/zdt3476/dsh-tide-theme
+    gitHead: 05421f75e42a00a31e9d2f42bbeb208e7916384e
 compatibility:
   dsh: ">=0.2.0"
   platform:
@@ -32,6 +44,7 @@ screenshots:
   - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/banner-dark.png
   - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/current-dock-dark.png
   - https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/current-dock-dark-native.png
+listScreenshot: https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/banner-light.png
 review:
   compatibility: verified
   preview: verified
@@ -45,14 +58,25 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 05421f75e42a00a31e9d2f42bbeb208e7916384e
+    packageVersion: 0.7.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-15T20:43:25.925Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1283
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:43:31.040Z
+metadataUpdatedAt: 2026-11-15T20:43:31.040Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/05421f75e42a00a31e9d2f42bbeb208e7916384e/docs/images/banner-light.png
+updatedAt: 2026-11-15T20:43:31.040Z

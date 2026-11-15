@@ -20,6 +20,9 @@ install:
   target: github:I-QX-I/dsh-plugin-skins#949cb275510269240f38755867d5666f76fd4924
   version: 2.6.3
   commit: 949cb275510269240f38755867d5666f76fd4924
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -29,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/glass-input.webp
   - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/themes-settings.png
   - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/material-settings.png
+listScreenshot: https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/aero-motion.webp
 review:
   compatibility: unverified
   preview: verified
@@ -42,16 +46,23 @@ health:
     installCommand: improve
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 949cb275510269240f38755867d5666f76fd4924
+    packageVersion: 2.6.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:39.531Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1355
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-15T20:44:40.783Z
+metadataUpdatedAt: 2026-11-15T20:44:40.783Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/aero-motion.webp
+updatedAt: 2026-11-15T20:44:40.783Z

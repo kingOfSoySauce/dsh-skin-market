@@ -20,6 +20,18 @@ install:
   target: github:magiceric/dsh-skin-magiclab#6006c02819cc6eed44f8c4a573df9ecb2dc79ab7
   version: 1.0.0
   commit: 6006c02819cc6eed44f8c4a573df9ecb2dc79ab7
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-skin-magiclab
+    packageVersion: 1.0.0
+    integrity: sha512-lPPu5KNiENfF87K359fFo3elclQ9Im/AOcuW5TslTKstxNRFD5OIxd0/VP9ENSkxE1asHM3Ll2K2sHbTFAH5wA==
+  npm:
+    name: dsh-skin-magiclab
+    version: 1.0.0
+    integrity: sha512-lPPu5KNiENfF87K359fFo3elclQ9Im/AOcuW5TslTKstxNRFD5OIxd0/VP9ENSkxE1asHM3Ll2K2sHbTFAH5wA==
+    repository: https://github.com/magiceric/dsh-skin-magiclab
+    gitHead: 6006c02819cc6eed44f8c4a573df9ecb2dc79ab7
 compatibility:
   dsh: unverified
   platform:
@@ -27,6 +39,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/assets/screenshot-boot.jpg
   - https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/assets/screenshot-app.jpg
+listScreenshot: https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/assets/screenshot-boot.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -40,14 +53,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 6006c02819cc6eed44f8c4a573df9ecb2dc79ab7
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:09.055Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1396
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:09.458Z
+metadataUpdatedAt: 2026-11-15T20:45:09.458Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/assets/screenshot-boot.jpg
+updatedAt: 2026-11-15T20:45:09.458Z

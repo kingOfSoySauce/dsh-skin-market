@@ -20,6 +20,9 @@ install:
   target: github:RichardDou0607/dsh-theme-admech#6297a8b0dda8b09254a3c9358e7108c86221b39a
   version: 0.9.3
   commit: 6297a8b0dda8b09254a3c9358e7108c86221b39a
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -32,26 +35,36 @@ screenshots:
   - https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/v092-composer-clean.png
   - https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/windows/hero-1440x900.png
   - https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/cards-reliquary-preview.png
+listScreenshot: https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/hero-desktop.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 6297a8b0dda8b09254a3c9358e7108c86221b39a
+    packageVersion: 0.9.3
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:34.590Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1427
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-15T20:45:39.843Z
+metadataUpdatedAt: 2026-11-15T20:45:39.843Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/RichardDou0607/dsh-theme-admech/6297a8b0dda8b09254a3c9358e7108c86221b39a/shots/hero-desktop.png
+updatedAt: 2026-11-15T20:45:39.843Z

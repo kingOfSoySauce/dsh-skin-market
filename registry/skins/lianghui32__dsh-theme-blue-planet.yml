@@ -21,12 +21,16 @@ install:
   target: github:lianghui32/dsh-theme-blue-planet#2c5136e8f10d13c4d40db76434c20bb6dbcca30e
   version: 0.2.12
   commit: 2c5136e8f10d13c4d40db76434c20bb6dbcca30e
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.1.7"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/lianghui32/dsh-theme-blue-planet/2c5136e8f10d13c4d40db76434c20bb6dbcca30e/preview.png
+listScreenshot: https://raw.githubusercontent.com/lianghui32/dsh-theme-blue-planet/2c5136e8f10d13c4d40db76434c20bb6dbcca30e/preview.png
 review:
   compatibility: verified
   preview: verified
@@ -40,13 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 2c5136e8f10d13c4d40db76434c20bb6dbcca30e
+    packageVersion: 0.2.12
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.7"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:58.766Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1392
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:58.788Z
+metadataUpdatedAt: 2026-11-15T20:44:58.788Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/lianghui32/dsh-theme-blue-planet/2c5136e8f10d13c4d40db76434c20bb6dbcca30e/preview.png
+updatedAt: 2026-11-15T20:44:58.788Z

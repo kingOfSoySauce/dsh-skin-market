@@ -18,15 +18,28 @@ modes:
   - light
   - dark
 install:
-  target: github:iypavlov/dsh-cat-pet#d5ff1a24d342e6ff26657ec9afb1f106d20de1d8
+  target: github:iypavlov/dsh-cat-pet#4a2f316547df19cee992b26a1801346c4763d856
   version: 0.1.0
-  commit: d5ff1a24d342e6ff26657ec9afb1f106d20de1d8
+  commit: 4a2f316547df19cee992b26a1801346c4763d856
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-cat-pet
+    packageVersion: 0.1.0
+    integrity: sha512-Zpo3x8B4pb0FiLqY5wzrYgrA2fldhnIKusOn/OPrF8nJuHwzxA1Nl5KCRsjs+laq+OM1NCrBwqk18pg8cuMjvA==
+  npm:
+    name: dsh-cat-pet
+    version: 0.1.0
+    integrity: sha512-Zpo3x8B4pb0FiLqY5wzrYgrA2fldhnIKusOn/OPrF8nJuHwzxA1Nl5KCRsjs+laq+OM1NCrBwqk18pg8cuMjvA==
+    repository: https://github.com/iypavlov/dsh-cat-pet
+    gitHead: 4a2f316547df19cee992b26a1801346c4763d856
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/iypavlov/dsh-cat-pet/d5ff1a24d342e6ff26657ec9afb1f106d20de1d8/assets/preview.png
+listScreenshot: https://raw.githubusercontent.com/iypavlov/dsh-cat-pet/d5ff1a24d342e6ff26657ec9afb1f106d20de1d8/assets/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,15 +53,25 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 4a2f316547df19cee992b26a1801346c4763d856
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-15T20:44:42.828Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1359
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-15T20:44:43.097Z
+metadataUpdatedAt: 2026-11-15T20:44:43.097Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/iypavlov/dsh-cat-pet/d5ff1a24d342e6ff26657ec9afb1f106d20de1d8/assets/preview.png
+updatedAt: 2026-11-15T20:44:43.097Z

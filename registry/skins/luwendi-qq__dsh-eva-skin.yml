@@ -18,9 +18,12 @@ modes:
   - light
   - dark
 install:
-  target: github:luwendi-qq/dsh-eva-skin#091b4bd84493cebb9d15aede263258a29ccc5c18
-  version: 1.0.72
-  commit: 091b4bd84493cebb9d15aede263258a29ccc5c18
+  target: github:luwendi-qq/dsh-eva-skin#6248abfc4c7da0119dde91e8874ab39356bcaf99
+  version: 1.0.88
+  commit: 6248abfc4c7da0119dde91e8874ab39356bcaf99
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
@@ -28,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/luwendi-qq/dsh-eva-skin/091b4bd84493cebb9d15aede263258a29ccc5c18/docs/screenshots/hero.webp
   - https://raw.githubusercontent.com/luwendi-qq/dsh-eva-skin/091b4bd84493cebb9d15aede263258a29ccc5c18/docs/screenshots/details.webp
+listScreenshot: https://raw.githubusercontent.com/luwendi-qq/dsh-eva-skin/091b4bd84493cebb9d15aede263258a29ccc5c18/docs/screenshots/hero.webp
 review:
   compatibility: verified
   preview: verified
@@ -42,13 +46,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 6248abfc4c7da0119dde91e8874ab39356bcaf99
+    packageVersion: 1.0.88
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:07.501Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1394
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:08.006Z
+metadataUpdatedAt: 2026-11-15T20:45:08.006Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/luwendi-qq/dsh-eva-skin/091b4bd84493cebb9d15aede263258a29ccc5c18/docs/screenshots/hero.webp
+updatedAt: 2026-11-15T20:45:08.006Z

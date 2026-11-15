@@ -23,9 +23,6 @@ compatibility:
   dsh: ">=0.2.0 <0.3.0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/ChenWeiqi12345__dsh-deepy-pet/4722d6b847eb04626898bac534ba2d6d2329b7af/home.png
-  - skin-screenshots/ChenWeiqi12345__dsh-deepy-pet/4722d6b847eb04626898bac534ba2d6d2329b7af/conversation.png
 screenshots: []
 review:
   compatibility: verified
@@ -53,9 +50,12 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/ChenWeiqi12345__dsh-deepy-pet/4722d6b847eb04626898bac534ba2d6d2329b7af/home.png
+  - skin-screenshots/ChenWeiqi12345__dsh-deepy-pet/4722d6b847eb04626898bac534ba2d6d2329b7af/conversation.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-11-14T23:47:01.950Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
 starsUpdatedAt: 2026-11-10T00:42:47.982Z
-updatedAt: 2026-11-14T23:47:01.950Z
+updatedAt: 2026-11-15T20:40:53.617Z

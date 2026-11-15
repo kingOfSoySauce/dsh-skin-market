@@ -18,15 +18,28 @@ modes:
   - light
   - dark
 install:
-  target: github:nizihan29/dsh-theme-strinova#346e136f21a0ae1f4f977e49b3f8c360a6370016
+  target: github:nizihan29/dsh-theme-strinova#d10b5673248a728ed95af3e714dc2a0c1d8a7578
   version: 0.1.0
-  commit: 346e136f21a0ae1f4f977e49b3f8c360a6370016
+  commit: d10b5673248a728ed95af3e714dc2a0c1d8a7578
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-strinova
+    packageVersion: 0.1.0
+    integrity: sha512-Ltdi0IF5m1nGTsY/LPwnvRXswdQ8eJUB/XBqvFmAZyRCcY6fDB6MtTFD0Di5bLix202WBXThci8H7t7x+M09fg==
+  npm:
+    name: dsh-theme-strinova
+    version: 0.1.0
+    integrity: sha512-Ltdi0IF5m1nGTsY/LPwnvRXswdQ8eJUB/XBqvFmAZyRCcY6fDB6MtTFD0Di5bLix202WBXThci8H7t7x+M09fg==
+    repository: https://github.com/nizihan29/dsh-theme-strinova
+    gitHead: d10b5673248a728ed95af3e714dc2a0c1d8a7578
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/nizihan29/dsh-theme-strinova/346e136f21a0ae1f4f977e49b3f8c360a6370016/assets/screenshot.png
+listScreenshot: https://raw.githubusercontent.com/nizihan29/dsh-theme-strinova/346e136f21a0ae1f4f977e49b3f8c360a6370016/assets/screenshot.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,15 +53,22 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: d10b5673248a728ed95af3e714dc2a0c1d8a7578
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:20.786Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1416
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:21.212Z
+metadataUpdatedAt: 2026-11-15T20:45:21.212Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/nizihan29/dsh-theme-strinova/346e136f21a0ae1f4f977e49b3f8c360a6370016/assets/screenshot.png
+updatedAt: 2026-11-15T20:45:21.212Z

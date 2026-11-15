@@ -21,6 +21,9 @@ install:
   target: github:zhongyichang1998/dsh-open-meadow#52090c659c6bbe0dbd71493e25c96c1652399fdc
   version: 1.0.0-preview.3
   commit: 52090c659c6bbe0dbd71493e25c96c1652399fdc
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
@@ -28,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/zhongyichang1998/dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/docs/screenshots/settings.jpg
   - https://raw.githubusercontent.com/zhongyichang1998/dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/assets/production/coast.webp
+listScreenshot: https://raw.githubusercontent.com/zhongyichang1998/dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/docs/screenshots/settings.jpg
 review:
   compatibility: verified
   preview: verified
@@ -41,13 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 52090c659c6bbe0dbd71493e25c96c1652399fdc
+    packageVersion: 1.0.0-preview.3
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:38.828Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1507
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:46:39.227Z
+metadataUpdatedAt: 2026-11-15T20:46:39.227Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/zhongyichang1998/dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/docs/screenshots/settings.jpg
+updatedAt: 2026-11-15T20:46:39.227Z

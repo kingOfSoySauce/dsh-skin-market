@@ -17,41 +17,52 @@ modes:
   - light
   - dark
 install:
-  target: github:Bay-Zeddie/dsh-theme-studio#772e4ca3d52cbed19fe667e1a97e16ebf08b4e97
+  target: github:Bay-Zeddie/dsh-theme-studio#7bba062f5519c827220e2a52be5256240c871365
   version: 0.3.2
-  commit: 772e4ca3d52cbed19fe667e1a97e16ebf08b4e97
+  commit: 7bba062f5519c827220e2a52be5256240c871365
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.5"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-aurora.png
+  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-cyber.png
+  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-deepsea.png
 screenshots: []
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: improve
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 7bba062f5519c827220e2a52be5256240c871365
+    packageVersion: 0.3.2
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.5"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:42:34.309Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1524
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-15T16:38:24.792Z
-metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+releaseUpdatedAt: 2026-11-15T20:42:34.310Z
+metadataUpdatedAt: 2026-11-15T20:42:34.310Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T16:38:24.792Z
-marketScreenshots:
-  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-aurora.png
-  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-cyber.png
-  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-deepsea.png
+updatedAt: 2026-11-15T20:42:34.310Z

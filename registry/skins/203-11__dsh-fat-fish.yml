@@ -21,10 +21,17 @@ install:
   target: github:203-11/dsh-fat-fish#21a63e42f0f5d6ea3b597498b33bfc6abe74b993
   version: 1.0.0
   commit: 21a63e42f0f5d6ea3b597498b33bfc6abe74b993
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.3
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/203-11__dsh-fat-fish/21a63e42f0f5d6ea3b597498b33bfc6abe74b993/home.gif
+  - skin-screenshots/203-11__dsh-fat-fish/21a63e42f0f5d6ea3b597498b33bfc6abe74b993/home.png
+  - skin-screenshots/203-11__dsh-fat-fish/21a63e42f0f5d6ea3b597498b33bfc6abe74b993/conversation.png
 screenshots: []
 review:
   compatibility: verified
@@ -33,23 +40,30 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
-    compatibility: pass
+    readmeScreenshots: improve
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 21a63e42f0f5d6ea3b597498b33bfc6abe74b993
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.3
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:38.350Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1288
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-15T20:43:38.350Z
+metadataUpdatedAt: 2026-11-15T20:43:38.350Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-marketScreenshots:
-  - skin-screenshots/203-11__dsh-fat-fish/21a63e42f0f5d6ea3b597498b33bfc6abe74b993/home.gif
-  - skin-screenshots/203-11__dsh-fat-fish/21a63e42f0f5d6ea3b597498b33bfc6abe74b993/home.png
-  - skin-screenshots/203-11__dsh-fat-fish/21a63e42f0f5d6ea3b597498b33bfc6abe74b993/conversation.png
+updatedAt: 2026-11-15T20:43:38.350Z

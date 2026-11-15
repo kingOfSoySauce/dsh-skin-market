@@ -19,6 +19,9 @@ install:
   target: github:drinkMornTea/dsh-rabbit-skin#d440c249c8afdfe42074a62401290423612c76f0
   version: 0.1.0
   commit: d440c249c8afdfe42074a62401290423612c76f0
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.1-rc.2"
   platform:
@@ -27,6 +30,7 @@ screenshots:
   - https://raw.githubusercontent.com/drinkMornTea/dsh-rabbit-skin/d440c249c8afdfe42074a62401290423612c76f0/docs/preview-light.webp
   - https://raw.githubusercontent.com/drinkMornTea/dsh-rabbit-skin/d440c249c8afdfe42074a62401290423612c76f0/docs/preview-dark.webp
   - https://raw.githubusercontent.com/drinkMornTea/dsh-rabbit-skin/d440c249c8afdfe42074a62401290423612c76f0/docs/settings-row.webp
+listScreenshot: https://raw.githubusercontent.com/drinkMornTea/dsh-rabbit-skin/d440c249c8afdfe42074a62401290423612c76f0/docs/preview-light.webp
 review:
   compatibility: verified
   preview: verified
@@ -40,13 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: d440c249c8afdfe42074a62401290423612c76f0
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:13.474Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1325
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:13.939Z
+metadataUpdatedAt: 2026-11-15T20:44:13.939Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/drinkMornTea/dsh-rabbit-skin/d440c249c8afdfe42074a62401290423612c76f0/docs/preview-light.webp
+updatedAt: 2026-11-15T20:44:13.939Z

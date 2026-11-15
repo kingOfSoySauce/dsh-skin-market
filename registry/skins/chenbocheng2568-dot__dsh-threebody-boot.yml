@@ -21,6 +21,9 @@ install:
   target: github:chenbocheng2568-dot/dsh-threebody-boot#c44983971e5e35111d5390f90989217906803dce
   version: 0.3.1
   commit: c44983971e5e35111d5390f90989217906803dce
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
@@ -30,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-login.jpg
   - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-granted.jpg
   - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/landscape.jpg
+listScreenshot: https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-demo.webp
 review:
   compatibility: verified
   preview: verified
@@ -43,13 +47,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: c44983971e5e35111d5390f90989217906803dce
+    packageVersion: 0.3.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:00.899Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1309
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:01.544Z
+metadataUpdatedAt: 2026-11-15T20:44:01.544Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-demo.webp
+updatedAt: 2026-11-15T20:44:01.544Z

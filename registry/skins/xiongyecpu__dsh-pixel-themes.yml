@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:xiongyecpu/dsh-pixel-themes#843d8a11c1c8484875907ff170491bb6f70c6061
+  target: github:xiongyecpu/dsh-pixel-themes#90f1a7eb7959ab287ef211b28f0918b57c75c939
   version: 1.2.1
-  commit: 843d8a11c1c8484875907ff170491bb6f70c6061
+  commit: 90f1a7eb7959ab287ef211b28f0918b57c75c939
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-pixel-themes
+    packageVersion: 1.2.1
+    integrity: sha512-0dDnlphFa46T6sALkss+F2kKRgzYs2rzkGqH2Iyt0652CG9i3myoi7CN51eKkaJq2ppld6YhZtp299KoYqp1pg==
+  npm:
+    name: dsh-pixel-themes
+    version: 1.2.1
+    integrity: sha512-0dDnlphFa46T6sALkss+F2kKRgzYs2rzkGqH2Iyt0652CG9i3myoi7CN51eKkaJq2ppld6YhZtp299KoYqp1pg==
+    repository: https://github.com/xiongyecpu/dsh-pixel-themes
+    gitHead: 90f1a7eb7959ab287ef211b28f0918b57c75c939
 compatibility:
   dsh: unverified
   platform:
@@ -30,6 +42,7 @@ screenshots:
   - https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/preview-dark.png
   - https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/picker-fruits.png
   - https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/preview-strawberry.png
+listScreenshot: https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/gallery-settings.png
 review:
   compatibility: unverified
   preview: verified
@@ -43,14 +56,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 90f1a7eb7959ab287ef211b28f0918b57c75c939
+    packageVersion: 1.2.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:22.355Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1484
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:46:23.802Z
+metadataUpdatedAt: 2026-11-15T20:46:23.802Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/xiongyecpu/dsh-pixel-themes/843d8a11c1c8484875907ff170491bb6f70c6061/docs/gallery-settings.png
+updatedAt: 2026-11-15T20:46:23.802Z

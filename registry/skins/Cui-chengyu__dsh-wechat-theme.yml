@@ -21,6 +21,9 @@ install:
   target: github:Cui-chengyu/dsh-wechat-theme#5c0fe13ef9a3275d107557c73c342113252f4504
   version: 0.1.0
   commit: 5c0fe13ef9a3275d107557c73c342113252f4504
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
@@ -28,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/5c0fe13ef9a3275d107557c73c342113252f4504/assets/screenshot-chat.png
   - https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/5c0fe13ef9a3275d107557c73c342113252f4504/assets/screenshot-bubbles.png
+listScreenshot: https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/5c0fe13ef9a3275d107557c73c342113252f4504/assets/screenshot-chat.png
 review:
   compatibility: verified
   preview: verified
@@ -41,13 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 5c0fe13ef9a3275d107557c73c342113252f4504
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:05.955Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1315
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:06.166Z
+metadataUpdatedAt: 2026-11-15T20:44:06.166Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/5c0fe13ef9a3275d107557c73c342113252f4504/assets/screenshot-chat.png
+updatedAt: 2026-11-15T20:44:06.166Z

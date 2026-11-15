@@ -21,12 +21,16 @@ install:
   target: github:96274zxc/vscode-pet#8955827284e86dfedcdc5cc601dea392aeca41ce
   version: 1.2.27
   commit: 8955827284e86dfedcdc5cc601dea392aeca41ce
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.1-rc.1"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/96274zxc/vscode-pet/8955827284e86dfedcdc5cc601dea392aeca41ce/docs/states.png
+listScreenshot: https://raw.githubusercontent.com/96274zxc/vscode-pet/8955827284e86dfedcdc5cc601dea392aeca41ce/docs/states.png
 review:
   compatibility: verified
   preview: verified
@@ -40,13 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 8955827284e86dfedcdc5cc601dea392aeca41ce
+    packageVersion: 1.2.27
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:41.753Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1287
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-15T20:43:41.860Z
+metadataUpdatedAt: 2026-11-15T20:43:41.860Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/96274zxc/vscode-pet/8955827284e86dfedcdc5cc601dea392aeca41ce/docs/states.png
+updatedAt: 2026-11-15T20:43:41.860Z

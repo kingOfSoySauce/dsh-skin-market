@@ -21,6 +21,12 @@ install:
   target: github:KOGGUA-EDIT/dsh-pet-sayaka#6e38d3222c75089fb68b16ae45d9d7bf81240adf
   version: 1.1.1
   commit: 6e38d3222c75089fb68b16ae45d9d7bf81240adf
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-pet-sayaka
+    packageVersion: 1.1.1
+    integrity: sha512-lQpyxf6MatArTJHOqDWESgsxtT8w5CVl1Rauu0mBAmu9GsWui7yn75RIBtcEzKZ69JGja+ocgeRirMVkj8dIXg==
 compatibility:
   dsh: unverified
   platform:
@@ -33,6 +39,7 @@ screenshots:
   - https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/sad.png
   - https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/drag.png
   - https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/calm.png
+listScreenshot: https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/sleep.png
 review:
   compatibility: unverified
   preview: verified
@@ -46,14 +53,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 6e38d3222c75089fb68b16ae45d9d7bf81240adf
+    packageVersion: 1.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:52.346Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1378
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:44:54.376Z
+metadataUpdatedAt: 2026-11-15T20:44:54.376Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/6e38d3222c75089fb68b16ae45d9d7bf81240adf/assets/pet/sleep.png
+updatedAt: 2026-11-15T20:44:54.376Z

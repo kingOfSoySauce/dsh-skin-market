@@ -20,6 +20,18 @@ install:
   target: github:zzzhengqi/dsh-firefly-skin#392262e2e39eaf0b4e25fae7f1379ebb6a2458eb
   version: 1.0.1
   commit: 392262e2e39eaf0b4e25fae7f1379ebb6a2458eb
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-firefly-skin
+    packageVersion: 1.0.1
+    integrity: sha512-R4KXzj0B8EVMGspaGM/nMcHpVF+37MSV7feghEtK+M4QxjwVQLixkLGJeY8sM+Ibly7iaR0UedJuQg6HARqLxg==
+  npm:
+    name: dsh-firefly-skin
+    version: 1.0.1
+    integrity: sha512-R4KXzj0B8EVMGspaGM/nMcHpVF+37MSV7feghEtK+M4QxjwVQLixkLGJeY8sM+Ibly7iaR0UedJuQg6HARqLxg==
+    repository: https://github.com/zzzhengqi/dsh-firefly-skin
+    gitHead: 392262e2e39eaf0b4e25fae7f1379ebb6a2458eb
 compatibility:
   dsh: unverified
   platform:
@@ -27,6 +39,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/boot.jpg
   - https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/theme.jpg
+listScreenshot: https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/boot.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -40,16 +53,23 @@ health:
     installCommand: improve
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 392262e2e39eaf0b4e25fae7f1379ebb6a2458eb
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:44.276Z
+    findings: []
 license:
-  code: CC-BY-NC-4.0
+  code: (MIT AND CC-BY-NC-4.0)
   commercialUse: false
 featuredRank: 1511
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:46:44.648Z
+metadataUpdatedAt: 2026-11-15T20:46:44.648Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/boot.jpg
+updatedAt: 2026-11-15T20:46:44.648Z

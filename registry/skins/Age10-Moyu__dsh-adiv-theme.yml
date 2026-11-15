@@ -20,10 +20,17 @@ install:
   target: github:Age10-Moyu/dsh-adiv-theme#d2035b79a5e43b3fbb0b2cd6814630a3e2f68221
   version: 1.0.0
   commit: d2035b79a5e43b3fbb0b2cd6814630a3e2f68221
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/home.png
+  - skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/conversation.png
+  - skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -39,17 +46,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d2035b79a5e43b3fbb0b2cd6814630a3e2f68221
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:44.666Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1187
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T06:29:27.360Z
-metadataUpdatedAt: 2026-11-14T06:29:27.360Z
+releaseUpdatedAt: 2026-11-15T20:43:44.667Z
+metadataUpdatedAt: 2026-11-15T20:43:44.667Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-14T06:29:27.360Z
-marketScreenshots:
-  - skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/home.png
-  - skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/conversation.png
-  - skin-screenshots/Age10-Moyu__dsh-adiv-theme/d2035b79a5e43b3fbb0b2cd6814630a3e2f68221/settings.png
+updatedAt: 2026-11-15T20:43:44.667Z

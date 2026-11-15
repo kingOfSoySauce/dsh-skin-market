@@ -18,9 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:loyalchiiina/dsh-sidebar-media-player#71f8bb43182b78bc73c606eb190ee48ad17c7185
-  version: 0.2.0
-  commit: 71f8bb43182b78bc73c606eb190ee48ad17c7185
+  target: github:loyalchiiina/dsh-sidebar-media-player#672789a3d6602116f7807c91c69304770058d45e
+  version: 0.2.5
+  commit: 672789a3d6602116f7807c91c69304770058d45e
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-sidebar-media-player
+    packageVersion: 0.2.5
+    integrity: sha512-YVGUQUWvUJrv7ekixBKNl0ihvlXSLlX8A4zDqgl33joWZGyCc4YHVoq9dwd6vk0Y3TSc6w3AX8vJRsJ7H/V5Ag==
+  npm:
+    name: dsh-sidebar-media-player
+    version: 0.2.5
+    integrity: sha512-YVGUQUWvUJrv7ekixBKNl0ihvlXSLlX8A4zDqgl33joWZGyCc4YHVoq9dwd6vk0Y3TSc6w3AX8vJRsJ7H/V5Ag==
+    repository: https://github.com/loyalchiiina/dsh-sidebar-media-player
+    gitHead: 672789a3d6602116f7807c91c69304770058d45e
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
@@ -28,6 +40,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/loyalchiiina/dsh-sidebar-media-player/71f8bb43182b78bc73c606eb190ee48ad17c7185/docs/screenshots/01-video-subtitle.png
   - https://raw.githubusercontent.com/loyalchiiina/dsh-sidebar-media-player/71f8bb43182b78bc73c606eb190ee48ad17c7185/docs/screenshots/02-audio-lyric.png
+listScreenshot: https://raw.githubusercontent.com/loyalchiiina/dsh-sidebar-media-player/71f8bb43182b78bc73c606eb190ee48ad17c7185/docs/screenshots/01-video-subtitle.png
 review:
   compatibility: verified
   preview: verified
@@ -41,13 +54,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 672789a3d6602116f7807c91c69304770058d45e
+    packageVersion: 0.2.5
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.2-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:05.560Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1390
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:06.221Z
+metadataUpdatedAt: 2026-11-15T20:45:06.221Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/loyalchiiina/dsh-sidebar-media-player/71f8bb43182b78bc73c606eb190ee48ad17c7185/docs/screenshots/01-video-subtitle.png
+updatedAt: 2026-11-15T20:45:06.221Z

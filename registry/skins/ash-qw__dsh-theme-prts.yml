@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ash-qw/dsh-theme-prts#9b3e53e83cda3b6fa56e8f7b890d22a99f3e971e
-  version: 4.1.0
-  commit: 9b3e53e83cda3b6fa56e8f7b890d22a99f3e971e
+  target: github:ash-qw/dsh-theme-prts#b9363b129368933c0b3810e77b5f7d9011e0059a
+  version: 4.1.1
+  commit: b9363b129368933c0b3810e77b5f7d9011e0059a
   desktop:
     mode: managed
     registry: npm
     packageName: "@ash-qw/dsh-theme-prts"
-    packageVersion: 4.1.0
-    integrity: sha512-SK/6bh+MP1z36PyUmXno/+DrGJRfmg4ZE7c84jk+aM5dq8OEx0pi9rRQBQZ1mer2kKCgOGk5ExjQuJRPecFnrg==
+    packageVersion: 4.1.1
+    integrity: sha512-hi7YSpU+yEYKzz4SLe96gWz4StmEPJi5qiwdae5MoimptyJ5ZBJIEUEOAsDETY/gNNLnHWnw7jLW+fpJ+o/w9Q==
   npm:
     name: "@ash-qw/dsh-theme-prts"
-    version: 4.1.0
-    integrity: sha512-SK/6bh+MP1z36PyUmXno/+DrGJRfmg4ZE7c84jk+aM5dq8OEx0pi9rRQBQZ1mer2kKCgOGk5ExjQuJRPecFnrg==
+    version: 4.1.1
+    integrity: sha512-hi7YSpU+yEYKzz4SLe96gWz4StmEPJi5qiwdae5MoimptyJ5ZBJIEUEOAsDETY/gNNLnHWnw7jLW+fpJ+o/w9Q==
     repository: https://github.com/ash-qw/dsh-theme-prts
-    gitHead: 9b3e53e83cda3b6fa56e8f7b890d22a99f3e971e
+    gitHead: b9363b129368933c0b3810e77b5f7d9011e0059a
 compatibility:
   dsh: 0.2.2-rc.2 || 0.2.2-rc.3
   platform:
@@ -54,20 +54,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
-    commit: 9b3e53e83cda3b6fa56e8f7b890d22a99f3e971e
-    packageVersion: 4.1.0
+    commit: b9363b129368933c0b3810e77b5f7d9011e0059a
+    packageVersion: 4.1.1
     scannerVersion: static-v2
     dshVersion: 0.2.2-rc.2 || 0.2.2-rc.3
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:42:56.161Z
+    checkedAt: 2026-11-15T20:41:18.080Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 1090
 starsSnapshot: 16
-releaseUpdatedAt: 2026-11-14T00:22:59.285Z
-metadataUpdatedAt: 2026-11-14T23:42:58.220Z
+releaseUpdatedAt: 2026-11-15T20:41:22.997Z
+metadataUpdatedAt: 2026-11-15T20:41:22.997Z
 starsUpdatedAt: 2026-11-08T00:17:43.373Z
-updatedAt: 2026-11-14T23:42:58.220Z
+updatedAt: 2026-11-15T20:41:22.997Z

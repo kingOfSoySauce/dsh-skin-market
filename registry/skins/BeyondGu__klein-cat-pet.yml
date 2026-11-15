@@ -21,6 +21,9 @@ install:
   target: github:BeyondGu/klein-cat-pet#78d65840919b9e848437357ed9b8d6b384e16676
   version: 0.1.2
   commit: 78d65840919b9e848437357ed9b8d6b384e16676
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
@@ -28,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/BeyondGu/klein-cat-pet/78d65840919b9e848437357ed9b8d6b384e16676/docs/preview.gif
   - https://raw.githubusercontent.com/BeyondGu/klein-cat-pet/78d65840919b9e848437357ed9b8d6b384e16676/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/BeyondGu/klein-cat-pet/78d65840919b9e848437357ed9b8d6b384e16676/docs/preview.gif
 review:
   compatibility: verified
   preview: verified
@@ -36,19 +40,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 78d65840919b9e848437357ed9b8d6b384e16676
+    packageVersion: 0.1.2
+    scannerVersion: static-v2
+    dshVersion: 0.2.2-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:54.631Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1300
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-15T20:43:54.950Z
+metadataUpdatedAt: 2026-11-15T20:43:54.950Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/BeyondGu/klein-cat-pet/78d65840919b9e848437357ed9b8d6b384e16676/docs/preview.gif
+updatedAt: 2026-11-15T20:43:54.950Z

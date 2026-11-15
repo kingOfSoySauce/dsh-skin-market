@@ -21,12 +21,16 @@ install:
   target: github:JerryZ01/dsh-wukong-skin#514ac46910167ac72565c7b668a566a9726e1317
   version: 0.1.0
   commit: 514ac46910167ac72565c7b668a566a9726e1317
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/JerryZ01/dsh-wukong-skin/514ac46910167ac72565c7b668a566a9726e1317/assets/ladder-preview.jpg
+listScreenshot: https://raw.githubusercontent.com/JerryZ01/dsh-wukong-skin/514ac46910167ac72565c7b668a566a9726e1317/assets/ladder-preview.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -40,15 +44,22 @@ health:
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 514ac46910167ac72565c7b668a566a9726e1317
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:44.797Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1365
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-15T20:44:44.977Z
+metadataUpdatedAt: 2026-11-15T20:44:44.977Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/JerryZ01/dsh-wukong-skin/514ac46910167ac72565c7b668a566a9726e1317/assets/ladder-preview.jpg
+updatedAt: 2026-11-15T20:44:44.977Z

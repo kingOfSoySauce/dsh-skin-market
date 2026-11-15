@@ -19,6 +19,9 @@ install:
   target: github:chenglixue66-dotcom/dsh-rococo-theme#a697960359a48649c4c89f63b5689ab199569f8f
   version: 0.8.9
   commit: a697960359a48649c4c89f63b5689ab199569f8f
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.1-rc.3"
   platform:
@@ -27,6 +30,7 @@ screenshots:
   - https://raw.githubusercontent.com/chenglixue66-dotcom/dsh-rococo-theme/a697960359a48649c4c89f63b5689ab199569f8f/assets/screenshot-home.png
   - https://raw.githubusercontent.com/chenglixue66-dotcom/dsh-rococo-theme/a697960359a48649c4c89f63b5689ab199569f8f/assets/screenshot-chat.png
   - https://raw.githubusercontent.com/chenglixue66-dotcom/dsh-rococo-theme/a697960359a48649c4c89f63b5689ab199569f8f/assets/screenshot-panel.png
+listScreenshot: https://raw.githubusercontent.com/chenglixue66-dotcom/dsh-rococo-theme/a697960359a48649c4c89f63b5689ab199569f8f/assets/screenshot-home.png
 review:
   compatibility: verified
   preview: verified
@@ -40,13 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: a697960359a48649c4c89f63b5689ab199569f8f
+    packageVersion: 0.8.9
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.3"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:01.049Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1310
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:01.674Z
+metadataUpdatedAt: 2026-11-15T20:44:01.674Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/chenglixue66-dotcom/dsh-rococo-theme/a697960359a48649c4c89f63b5689ab199569f8f/assets/screenshot-home.png
+updatedAt: 2026-11-15T20:44:01.674Z

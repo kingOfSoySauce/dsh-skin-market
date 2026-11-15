@@ -20,32 +20,45 @@ install:
   target: github:moshe-233/dsh-web-splash-loader#a53f3b1e3804d4878d009ffef0b014b7d5e0b449
   version: 0.1.0
   commit: a53f3b1e3804d4878d009ffef0b014b7d5e0b449
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/moshe-233/dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/preview.png
+listScreenshot: https://raw.githubusercontent.com/moshe-233/dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/preview.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: a53f3b1e3804d4878d009ffef0b014b7d5e0b449
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0-rc.6"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:16.684Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1405
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:16.774Z
+metadataUpdatedAt: 2026-11-15T20:45:16.774Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/moshe-233/dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/preview.png
+updatedAt: 2026-11-15T20:45:16.774Z

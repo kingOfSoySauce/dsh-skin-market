@@ -21,12 +21,16 @@ install:
   target: github:zouwj16/dsh-bg-theme#2b2811e99a56287cb66c899af47b438218bde0a1
   version: 1.2.0
   commit: 2b2811e99a56287cb66c899af47b438218bde0a1
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.1.7-rc.2"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/zouwj16/dsh-bg-theme/2b2811e99a56287cb66c899af47b438218bde0a1/palette.png
+listScreenshot: https://raw.githubusercontent.com/zouwj16/dsh-bg-theme/2b2811e99a56287cb66c899af47b438218bde0a1/palette.png
 review:
   compatibility: verified
   preview: verified
@@ -42,13 +46,21 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 2b2811e99a56287cb66c899af47b438218bde0a1
+    packageVersion: 1.2.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.7-rc.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:33.255Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1286
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:43:33.394Z
+metadataUpdatedAt: 2026-11-15T20:43:33.394Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/zouwj16/dsh-bg-theme/2b2811e99a56287cb66c899af47b438218bde0a1/palette.png
+updatedAt: 2026-11-15T20:43:33.394Z

@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Artificialimbecile/dsh-whale-chat#43f63bcdf8570877f68671e406070d54b28c403b
+  target: github:Artificialimbecile/dsh-whale-chat#992b1c18294f2fc2529974848e9ae010757180a2
   version: 0.1.4
-  commit: 43f63bcdf8570877f68671e406070d54b28c403b
+  commit: 992b1c18294f2fc2529974848e9ae010757180a2
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-whale-chat
+    packageVersion: 0.1.4
+    integrity: sha512-fmIZ2y9D8dJYnD9q8dqFG8U1LfFZILvFY3vnqfNmaAG1owuIwYK+eSCoRoocx4shZZoaU2fM9+ULKObwxcCInw==
+  npm:
+    name: dsh-whale-chat
+    version: 0.1.4
+    integrity: sha512-fmIZ2y9D8dJYnD9q8dqFG8U1LfFZILvFY3vnqfNmaAG1owuIwYK+eSCoRoocx4shZZoaU2fM9+ULKObwxcCInw==
+    repository: https://github.com/Artificialimbecile/dsh-whale-chat
+    gitHead: 992b1c18294f2fc2529974848e9ae010757180a2
 compatibility:
   dsh: ">=0.2.1"
   platform:
@@ -29,6 +41,7 @@ screenshots:
   - https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/chat-panel-roam.png
   - https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/settings-persona.png
   - https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/pet.png
+listScreenshot: https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/chat-panel.png
 review:
   compatibility: verified
   preview: verified
@@ -42,13 +55,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 992b1c18294f2fc2529974848e9ae010757180a2
+    packageVersion: 0.1.4
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:48.653Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1296
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:43:51.149Z
+metadataUpdatedAt: 2026-11-15T20:43:51.149Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/43f63bcdf8570877f68671e406070d54b28c403b/screenshots/chat-panel.png
+updatedAt: 2026-11-15T20:43:51.149Z

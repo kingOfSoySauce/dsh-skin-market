@@ -20,6 +20,9 @@ install:
   target: github:troodon/dsh-big-fat-fish-girl#cd82c2e956746985365637dc2b3f2c987cc22663
   version: 0.8.0
   commit: cd82c2e956746985365637dc2b3f2c987cc22663
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.0-rc.2 || 0.2.0-rc.2.md
   platform:
@@ -33,6 +36,7 @@ screenshots:
   - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/tools.gif
   - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/wallet.gif
   - https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/poses.png
+listScreenshot: https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/session.gif
 review:
   compatibility: verified
   preview: verified
@@ -41,19 +45,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: cd82c2e956746985365637dc2b3f2c987cc22663
+    packageVersion: 0.8.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.2 || 0.2.0-rc.2.md
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:56.858Z
+    findings: []
 license:
   code: Unlicense
   commercialUse: true
 featuredRank: 1460
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-15T20:46:03.857Z
+metadataUpdatedAt: 2026-11-15T20:46:03.857Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/gifs/session.gif
+updatedAt: 2026-11-15T20:46:03.857Z

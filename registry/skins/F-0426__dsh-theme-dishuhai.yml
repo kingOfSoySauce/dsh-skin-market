@@ -21,6 +21,9 @@ install:
   target: github:F-0426/dsh-theme-dishuhai#7b6c2ea19553a96808177b32907c7875089b3d12
   version: 1.0.0
   commit: 7b6c2ea19553a96808177b32907c7875089b3d12
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -31,6 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-splash-light.png
   - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-dark.png
   - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-light.png
+listScreenshot: https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-compare.png
 review:
   compatibility: unverified
   preview: verified
@@ -44,15 +48,22 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 7b6c2ea19553a96808177b32907c7875089b3d12
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:16.249Z
+    findings: []
 license:
-  code: CC-BY-NC-4.0
+  code: SEE LICENSE IN LICENSE (MIT for code, CC BY-NC 4.0 for content)
   commercialUse: false
 featuredRank: 1331
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-15T20:44:20.036Z
+metadataUpdatedAt: 2026-11-15T20:44:20.036Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-compare.png
+updatedAt: 2026-11-15T20:44:20.036Z

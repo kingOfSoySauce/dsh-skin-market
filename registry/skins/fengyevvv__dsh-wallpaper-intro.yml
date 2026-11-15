@@ -20,6 +20,9 @@ install:
   target: github:fengyevvv/dsh-wallpaper-intro#9f2531590cefe3ecad5c34bd4d4a23bee58624c5
   version: 0.1.0
   commit: 9f2531590cefe3ecad5c34bd4d4a23bee58624c5
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
@@ -30,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/settings.png
   - https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/quick-panel.png
   - https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/rotation.png
+listScreenshot: https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/boot.png
 review:
   compatibility: verified
   preview: verified
@@ -43,13 +47,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 9f2531590cefe3ecad5c34bd4d4a23bee58624c5
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:18.135Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1332
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:18.961Z
+metadataUpdatedAt: 2026-11-15T20:44:18.961Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/fengyevvv/dsh-wallpaper-intro/9f2531590cefe3ecad5c34bd4d4a23bee58624c5/docs/boot.png
+updatedAt: 2026-11-15T20:44:18.961Z

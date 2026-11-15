@@ -19,12 +19,16 @@ install:
   target: github:chenbocheng2568-dot/dsh-threebody-skin#563f7271f8e86e0b5c2f8a223e7ba6aad2f42132
   version: 0.2.0
   commit: 563f7271f8e86e0b5c2f8a223e7ba6aad2f42132
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-skin/563f7271f8e86e0b5c2f8a223e7ba6aad2f42132/docs/skin-hero.jpg
+listScreenshot: https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-skin/563f7271f8e86e0b5c2f8a223e7ba6aad2f42132/docs/skin-hero.jpg
 review:
   compatibility: verified
   preview: verified
@@ -38,13 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 563f7271f8e86e0b5c2f8a223e7ba6aad2f42132
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:00.715Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1311
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:00.961Z
+metadataUpdatedAt: 2026-11-15T20:44:00.961Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-skin/563f7271f8e86e0b5c2f8a223e7ba6aad2f42132/docs/skin-hero.jpg
+updatedAt: 2026-11-15T20:44:00.961Z

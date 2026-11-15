@@ -21,6 +21,18 @@ install:
   target: github:Zeppeli777/dsh-stardew-skin#396ddd28e250da998ab0c0e20f0492d2d9ca247c
   version: 0.2.3
   commit: 396ddd28e250da998ab0c0e20f0492d2d9ca247c
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-stardew-valley
+    packageVersion: 0.2.3
+    integrity: sha512-CSjebF1pYOztbZ7zye6MJIBVAnAhu4Lj2wbHYxqvhsY8Bu4TgKpv4FtEvq168TbaF4n4Q6az2rf5xKlgRcqn3Q==
+  npm:
+    name: dsh-theme-stardew-valley
+    version: 0.2.3
+    integrity: sha512-CSjebF1pYOztbZ7zye6MJIBVAnAhu4Lj2wbHYxqvhsY8Bu4TgKpv4FtEvq168TbaF4n4Q6az2rf5xKlgRcqn3Q==
+    repository: https://github.com/Zeppeli777/dsh-stardew-skin
+    gitHead: 396ddd28e250da998ab0c0e20f0492d2d9ca247c
 compatibility:
   dsh: 0.1.2-rc.1 ~0.2.2-rc.1 || 0.1.2-rc.1 ~0.2.1-rc.3
   platform:
@@ -34,6 +46,7 @@ screenshots:
   - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/tool-trace-021.png
   - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/permission-approval-021.png
   - https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/chat-page-fixed.png
+listScreenshot: https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/theme-preview.png
 review:
   compatibility: verified
   preview: verified
@@ -47,13 +60,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 396ddd28e250da998ab0c0e20f0492d2d9ca247c
+    packageVersion: 0.2.3
+    scannerVersion: static-v2
+    dshVersion: 0.1.2-rc.1 ~0.2.2-rc.1 || 0.1.2-rc.1 ~0.2.1-rc.3
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:35.594Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1503
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:46:36.796Z
+metadataUpdatedAt: 2026-11-15T20:46:36.796Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/396ddd28e250da998ab0c0e20f0492d2d9ca247c/screenshots/theme-preview.png
+updatedAt: 2026-11-15T20:46:36.796Z

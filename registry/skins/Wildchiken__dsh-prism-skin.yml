@@ -21,6 +21,9 @@ install:
   target: github:Wildchiken/dsh-prism-skin#f3eefeec46fa041b187af7bee8c1744e0e3f538d
   version: 0.7.0
   commit: f3eefeec46fa041b187af7bee8c1744e0e3f538d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.5 || 0.2.1--rc.5 || >=0.2.1-rc.5
   platform:
@@ -33,27 +36,40 @@ screenshots:
   - https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/screenshots/panel-dark.png
   - https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/screenshots/wall-image-dark.png
   - https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/screenshots/wall-gradient-light.png
+listScreenshot: https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/assets/cyberpunk-hud.gif
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.1-rc.5 || 0.2.1--rc.5 || >=0.2.1-rc.5 未被本次检测范围 >=0.2.1-rc.5 <0.2.2-0 || >=0.2.2-rc.1 <0.3.0-0 完全覆盖（固定版本 f3eefeec46fa041b187af7bee8c1744e0e3f538d）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: f3eefeec46fa041b187af7bee8c1744e0e3f538d
+    packageVersion: 0.7.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.5 <0.2.2-0 || >=0.2.2-rc.1 <0.3.0-0"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-15T20:46:12.884Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1474
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:46:14.165Z
+metadataUpdatedAt: 2026-11-15T20:46:14.165Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/Wildchiken/dsh-prism-skin/f3eefeec46fa041b187af7bee8c1744e0e3f538d/docs/assets/cyberpunk-hud.gif
+updatedAt: 2026-11-15T20:46:14.165Z

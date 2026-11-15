@@ -19,12 +19,16 @@ install:
   target: github:Ury479/dsh-wukong-zenfire#f82e0c567ff3dfa15491369a209758334c772084
   version: 0.1.1
   commit: f82e0c567ff3dfa15491369a209758334c772084
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Ury479/dsh-wukong-zenfire/f82e0c567ff3dfa15491369a209758334c772084/preview/dark.png
+listScreenshot: https://raw.githubusercontent.com/Ury479/dsh-wukong-zenfire/f82e0c567ff3dfa15491369a209758334c772084/preview/dark.png
 review:
   compatibility: unverified
   preview: verified
@@ -38,14 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: f82e0c567ff3dfa15491369a209758334c772084
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:04.032Z
+    findings: []
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
 featuredRank: 1184
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T06:29:10.128Z
-metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+releaseUpdatedAt: 2026-11-15T20:46:04.760Z
+metadataUpdatedAt: 2026-11-15T20:46:04.760Z
 starsUpdatedAt: 2026-11-14T06:29:10.128Z
-updatedAt: 2026-11-14T06:29:10.128Z
-listScreenshot: https://raw.githubusercontent.com/Ury479/dsh-wukong-zenfire/f82e0c567ff3dfa15491369a209758334c772084/preview/dark.png
+updatedAt: 2026-11-15T20:46:04.760Z

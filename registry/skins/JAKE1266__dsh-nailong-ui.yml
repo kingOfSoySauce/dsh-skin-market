@@ -19,6 +19,9 @@ install:
   target: github:JAKE1266/dsh-nailong-ui#37da828212b39654dd8e1b356e9776f1171e6c28
   version: 1.0.0
   commit: 37da828212b39654dd8e1b356e9776f1171e6c28
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.0-rc.2 <0.3.0-0"
   platform:
@@ -26,6 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/JAKE1266/dsh-nailong-ui/37da828212b39654dd8e1b356e9776f1171e6c28/assets/preview-light.png
   - https://raw.githubusercontent.com/JAKE1266/dsh-nailong-ui/37da828212b39654dd8e1b356e9776f1171e6c28/assets/preview-dark.png
+listScreenshot: https://raw.githubusercontent.com/JAKE1266/dsh-nailong-ui/37da828212b39654dd8e1b356e9776f1171e6c28/assets/preview-light.png
 review:
   compatibility: verified
   preview: verified
@@ -39,13 +43,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 37da828212b39654dd8e1b356e9776f1171e6c28
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.2 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:43.279Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1363
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:43.576Z
+metadataUpdatedAt: 2026-11-15T20:44:43.576Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/JAKE1266/dsh-nailong-ui/37da828212b39654dd8e1b356e9776f1171e6c28/assets/preview-light.png
+updatedAt: 2026-11-15T20:44:43.576Z

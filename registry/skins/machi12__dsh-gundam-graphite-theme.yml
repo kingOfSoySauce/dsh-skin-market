@@ -19,6 +19,9 @@ install:
   target: github:machi12/dsh-gundam-graphite-theme#36788deb35e9780bae96908d40b1aaa227948734
   version: 1.0.1
   commit: 36788deb35e9780bae96908d40b1aaa227948734
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
@@ -29,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/03-settings.png
   - https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/04-theme-controls.png
   - https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/05-compact.png
+listScreenshot: https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/01-home.png
 review:
   compatibility: verified
   preview: verified
@@ -42,13 +46,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 36788deb35e9780bae96908d40b1aaa227948734
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:09.022Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1397
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:09.965Z
+metadataUpdatedAt: 2026-11-15T20:45:09.965Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/36788deb35e9780bae96908d40b1aaa227948734/screenshots/01-home.png
+updatedAt: 2026-11-15T20:45:09.965Z

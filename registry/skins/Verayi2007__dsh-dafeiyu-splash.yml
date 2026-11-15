@@ -21,6 +21,9 @@ install:
   target: github:Verayi2007/dsh-dafeiyu-splash#bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3
   version: 1.1.0
   commit: bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Verayi2007/dsh-dafeiyu-splash/bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3/docs/preview.png
   - https://raw.githubusercontent.com/Verayi2007/dsh-dafeiyu-splash/bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3/docs/preview-end.png
+listScreenshot: https://raw.githubusercontent.com/Verayi2007/dsh-dafeiyu-splash/bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3/docs/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -41,15 +45,22 @@ health:
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3
+    packageVersion: 1.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:04.988Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1469
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:46:05.194Z
+metadataUpdatedAt: 2026-11-15T20:46:05.194Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/Verayi2007/dsh-dafeiyu-splash/bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3/docs/preview.png
+updatedAt: 2026-11-15T20:46:05.194Z

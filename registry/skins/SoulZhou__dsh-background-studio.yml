@@ -21,6 +21,9 @@ install:
   target: github:SoulZhou/dsh-background-studio#7f3b659ce3628b09969b4baaad3e38e98f1f1050
   version: 0.4.0
   commit: 7f3b659ce3628b09969b4baaad3e38e98f1f1050
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.2.1-rc.1
   platform:
@@ -30,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/color-background.jpg
   - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/color-settings.jpg
   - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/canvas-custom.jpg
+listScreenshot: https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/settings-custom.png
 review:
   compatibility: verified
   preview: verified
@@ -43,13 +47,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 7f3b659ce3628b09969b4baaad3e38e98f1f1050
+    packageVersion: 0.4.0
+    scannerVersion: static-v2
+    dshVersion: ^0.2.1-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:44.789Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1443
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-15T20:45:45.240Z
+metadataUpdatedAt: 2026-11-15T20:45:45.240Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/settings-custom.png
+updatedAt: 2026-11-15T20:45:45.240Z

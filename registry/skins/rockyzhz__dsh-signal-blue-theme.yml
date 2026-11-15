@@ -20,6 +20,9 @@ install:
   target: github:rockyzhz/dsh-signal-blue-theme#0898a097e376abd5790ecd20ae6694af70a2332c
   version: 1.1.0
   commit: 0898a097e376abd5790ecd20ae6694af70a2332c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.2.1-rc.1
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/rockyzhz/dsh-signal-blue-theme/0898a097e376abd5790ecd20ae6694af70a2332c/assets/zh/preview-light.png
   - https://raw.githubusercontent.com/rockyzhz/dsh-signal-blue-theme/0898a097e376abd5790ecd20ae6694af70a2332c/assets/zh/preview-dark.png
   - https://raw.githubusercontent.com/rockyzhz/dsh-signal-blue-theme/0898a097e376abd5790ecd20ae6694af70a2332c/assets/zh/preview-sidebar.png
+listScreenshot: https://raw.githubusercontent.com/rockyzhz/dsh-signal-blue-theme/0898a097e376abd5790ecd20ae6694af70a2332c/assets/zh/preview-light.png
 review:
   compatibility: verified
   preview: verified
@@ -41,13 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 0898a097e376abd5790ecd20ae6694af70a2332c
+    packageVersion: 1.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:35.918Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1433
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-15T20:45:36.377Z
+metadataUpdatedAt: 2026-11-15T20:45:36.377Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/rockyzhz/dsh-signal-blue-theme/0898a097e376abd5790ecd20ae6694af70a2332c/assets/zh/preview-light.png
+updatedAt: 2026-11-15T20:45:36.377Z

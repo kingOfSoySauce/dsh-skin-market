@@ -21,6 +21,9 @@ install:
   target: github:Veagau/dsh-amadeus-skin#cd4c6559efec798cbe4a6e9a20fa6a780e705424
   version: 1.6.4
   commit: cd4c6559efec798cbe4a6e9a20fa6a780e705424
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -29,6 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/Veagau/dsh-amadeus-skin/cd4c6559efec798cbe4a6e9a20fa6a780e705424/docs/skin-cover.png
   - https://raw.githubusercontent.com/Veagau/dsh-amadeus-skin/cd4c6559efec798cbe4a6e9a20fa6a780e705424/docs/theme-dark.png
   - https://raw.githubusercontent.com/Veagau/dsh-amadeus-skin/cd4c6559efec798cbe4a6e9a20fa6a780e705424/docs/theme-activity.png
+listScreenshot: https://raw.githubusercontent.com/Veagau/dsh-amadeus-skin/cd4c6559efec798cbe4a6e9a20fa6a780e705424/docs/skin-cover.png
 review:
   compatibility: unverified
   preview: verified
@@ -42,15 +46,22 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: cd4c6559efec798cbe4a6e9a20fa6a780e705424
+    packageVersion: 1.6.4
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:04.355Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1465
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-15T20:46:04.902Z
+metadataUpdatedAt: 2026-11-15T20:46:04.902Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/Veagau/dsh-amadeus-skin/cd4c6559efec798cbe4a6e9a20fa6a780e705424/docs/skin-cover.png
+updatedAt: 2026-11-15T20:46:04.902Z

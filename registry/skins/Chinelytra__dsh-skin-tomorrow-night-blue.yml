@@ -19,32 +19,45 @@ install:
   target: github:Chinelytra/dsh-skin-tomorrow-night-blue#ff409efe879dda595670368394b9ff04b1b1678a
   version: 1.0.0
   commit: ff409efe879dda595670368394b9ff04b1b1678a
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Chinelytra/dsh-skin-tomorrow-night-blue/ff409efe879dda595670368394b9ff04b1b1678a/docs/preview.png
+listScreenshot: https://raw.githubusercontent.com/Chinelytra/dsh-skin-tomorrow-night-blue/ff409efe879dda595670368394b9ff04b1b1678a/docs/preview.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.2.2-rc.1 未被本次检测范围 >=0.2.0-rc.1 完全覆盖（固定版本 ff409efe879dda595670368394b9ff04b1b1678a）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: ff409efe879dda595670368394b9ff04b1b1678a
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:01.684Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1313
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-15T20:44:01.705Z
+metadataUpdatedAt: 2026-11-15T20:44:01.705Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/Chinelytra/dsh-skin-tomorrow-night-blue/ff409efe879dda595670368394b9ff04b1b1678a/docs/preview.png
+updatedAt: 2026-11-15T20:44:01.705Z

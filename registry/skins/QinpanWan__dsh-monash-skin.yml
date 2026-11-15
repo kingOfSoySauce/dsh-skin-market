@@ -27,10 +27,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/QinpanWan__dsh-monash-skin/5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e/home.gif
-  - skin-screenshots/QinpanWan__dsh-monash-skin/5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e/home.png
-  - skin-screenshots/QinpanWan__dsh-monash-skin/5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e/conversation.png
 screenshots: []
 review:
   compatibility: unverified
@@ -59,9 +55,13 @@ health:
 license:
   code: CC-BY-SA-4.0
   commercialUse: true
-featuredRank: 1423
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/QinpanWan__dsh-monash-skin/5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e/home.gif
+  - skin-screenshots/QinpanWan__dsh-monash-skin/5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e/home.png
+  - skin-screenshots/QinpanWan__dsh-monash-skin/5d7d0d4fdd3414e6c2a94e057e39ee2c9619d80e/conversation.png
+featuredRank: 1423
 releaseUpdatedAt: 2026-11-14T23:48:28.040Z
-metadataUpdatedAt: 2026-11-14T23:48:28.040Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T23:48:28.040Z
+updatedAt: 2026-11-15T20:40:53.617Z

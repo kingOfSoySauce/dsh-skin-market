@@ -21,6 +21,10 @@ install:
   target: github:zhengmin486/dsh-desktop-pet#ca7a1824cd5fdf483c7249bde26802b5e66c6aef
   version: 0.2.19
   commit: ca7a1824cd5fdf483c7249bde26802b5e66c6aef
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
+  allowBuild: dsh-desktop-pet@https://codeload.github.com/zhengmin486/dsh-desktop-pet/tar.gz/ca7a1824cd5fdf483c7249bde26802b5e66c6aef
 compatibility:
   dsh: ">=0.1.7-rc.2 <0.3.0-0"
   platform:
@@ -29,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/zhengmin486/dsh-desktop-pet/ca7a1824cd5fdf483c7249bde26802b5e66c6aef/docs/01-idle.png
   - https://raw.githubusercontent.com/zhengmin486/dsh-desktop-pet/ca7a1824cd5fdf483c7249bde26802b5e66c6aef/docs/02-hover.png
   - https://raw.githubusercontent.com/zhengmin486/dsh-desktop-pet/ca7a1824cd5fdf483c7249bde26802b5e66c6aef/docs/03-panel.png
+listScreenshot: https://raw.githubusercontent.com/zhengmin486/dsh-desktop-pet/ca7a1824cd5fdf483c7249bde26802b5e66c6aef/docs/01-idle.png
 review:
   compatibility: verified
   preview: verified
@@ -43,13 +48,21 @@ health:
     topic: improve
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: ca7a1824cd5fdf483c7249bde26802b5e66c6aef
+    packageVersion: 0.2.19
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.7-rc.2 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:30.453Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1505
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:43:31.049Z
+metadataUpdatedAt: 2026-11-15T20:43:31.049Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/zhengmin486/dsh-desktop-pet/ca7a1824cd5fdf483c7249bde26802b5e66c6aef/docs/01-idle.png
+updatedAt: 2026-11-15T20:43:31.049Z

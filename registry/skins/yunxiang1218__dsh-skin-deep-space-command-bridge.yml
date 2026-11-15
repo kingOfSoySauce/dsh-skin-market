@@ -20,6 +20,9 @@ install:
   target: github:yunxiang1218/dsh-skin-deep-space-command-bridge#9d8379ee7b26939b5051c80d8afe1124345831eb
   version: 0.4.0
   commit: 9d8379ee7b26939b5051c80d8afe1124345831eb
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.2-rc.1
   platform:
@@ -30,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/cabin-far.png
   - https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/warp.png
   - https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/floating.png
+listScreenshot: https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/bridge.png
 review:
   compatibility: verified
   preview: verified
@@ -38,19 +42,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 9d8379ee7b26939b5051c80d8afe1124345831eb
+    packageVersion: 0.4.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.2-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:28.107Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1504
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:43:29.560Z
+metadataUpdatedAt: 2026-11-15T20:43:29.560Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/yunxiang1218/dsh-skin-deep-space-command-bridge/9d8379ee7b26939b5051c80d8afe1124345831eb/preview/bridge.png
+updatedAt: 2026-11-15T20:43:29.560Z

@@ -20,6 +20,9 @@ install:
   target: github:lizhuangCoding/dsh-chicken-pet#320f094343aa46f63f384305ed6a94af0a301df1
   version: 0.15.0
   commit: 320f094343aa46f63f384305ed6a94af0a301df1
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/lizhuangCoding/dsh-chicken-pet/320f094343aa46f63f384305ed6a94af0a301df1/docs/rows-ball.png
   - https://raw.githubusercontent.com/lizhuangCoding/dsh-chicken-pet/320f094343aa46f63f384305ed6a94af0a301df1/docs/rows-work.png
   - https://raw.githubusercontent.com/lizhuangCoding/dsh-chicken-pet/320f094343aa46f63f384305ed6a94af0a301df1/docs/settings-card.png
+listScreenshot: https://raw.githubusercontent.com/lizhuangCoding/dsh-chicken-pet/320f094343aa46f63f384305ed6a94af0a301df1/docs/rows-ball.png
 review:
   compatibility: unverified
   preview: verified
@@ -41,14 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 320f094343aa46f63f384305ed6a94af0a301df1
+    packageVersion: 0.15.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:03.265Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1388
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:03.823Z
+metadataUpdatedAt: 2026-11-15T20:45:03.823Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/lizhuangCoding/dsh-chicken-pet/320f094343aa46f63f384305ed6a94af0a301df1/docs/rows-ball.png
+updatedAt: 2026-11-15T20:45:03.823Z

@@ -21,10 +21,26 @@ install:
   target: github:IntellecXplore/IntellX-harness-plugins#072faaf8e2a004a81b9b78fd7fa49c188806e5c1&path:/plugins/theme
   version: 1.1.3
   commit: 072faaf8e2a004a81b9b78fd7fa49c188806e5c1
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@intellecxplore/plugin-theme"
+    packageVersion: 1.1.3
+    integrity: sha512-v0pyLhPtGX8GqGOKTreHoOXffDjq/acexrmw+2/1j0ap4/gkaYn2CVTiy/dCKxq+p//YuM4HmFFcjlpOw5JYAw==
+  npm:
+    name: "@intellecxplore/plugin-theme"
+    version: 1.1.3
+    integrity: sha512-v0pyLhPtGX8GqGOKTreHoOXffDjq/acexrmw+2/1j0ap4/gkaYn2CVTiy/dCKxq+p//YuM4HmFFcjlpOw5JYAw==
+    repository: https://github.com/IntellecXplore/IntellX-harness-plugins
+    gitHead: 072faaf8e2a004a81b9b78fd7fa49c188806e5c1
 compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/home.png
+  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/conversation.png
+  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -41,16 +57,21 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 072faaf8e2a004a81b9b78fd7fa49c188806e5c1
+    packageVersion: 1.1.3
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2 <0.3.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:42.065Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1189
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T06:29:27.360Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:42.457Z
+metadataUpdatedAt: 2026-11-15T20:44:42.457Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-14T23:28:29.986Z
-marketScreenshots:
-  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/home.png
-  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/conversation.png
-  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/settings.png
+updatedAt: 2026-11-15T20:44:42.457Z

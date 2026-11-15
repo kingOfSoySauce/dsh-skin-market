@@ -21,6 +21,9 @@ install:
   target: github:zkb-1271/dsh-pet-whale#6c6f3d3ac517b278708d7c0a2a663a25a6e02f12
   version: 1.2.1
   commit: 6c6f3d3ac517b278708d7c0a2a663a25a6e02f12
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.6-alpha.2
   platform:
@@ -28,28 +31,38 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/zkb-1271/dsh-pet-whale/6c6f3d3ac517b278708d7c0a2a663a25a6e02f12/docs/images/social-preview.png
   - https://raw.githubusercontent.com/zkb-1271/dsh-pet-whale/6c6f3d3ac517b278708d7c0a2a663a25a6e02f12/docs/images/showcase-overlay.png
+listScreenshot: https://raw.githubusercontent.com/zkb-1271/dsh-pet-whale/6c6f3d3ac517b278708d7c0a2a663a25a6e02f12/docs/images/social-preview.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: improve
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.6-alpha.2 未被本次检测范围 >=0.1.0 <1.0.0-0 完全覆盖（固定版本 6c6f3d3ac517b278708d7c0a2a663a25a6e02f12）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 6c6f3d3ac517b278708d7c0a2a663a25a6e02f12
+    packageVersion: 1.2.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.0 <1.0.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:32.857Z
+    findings: []
 license:
   code: Apache-2.0
   commercialUse: true
 featuredRank: 1285
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T07:57:16.245Z
-metadataUpdatedAt: 2026-11-14T07:57:16.245Z
+releaseUpdatedAt: 2026-11-15T20:43:33.147Z
+metadataUpdatedAt: 2026-11-15T20:43:33.147Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T07:57:16.245Z
-listScreenshot: https://raw.githubusercontent.com/zkb-1271/dsh-pet-whale/6c6f3d3ac517b278708d7c0a2a663a25a6e02f12/docs/images/social-preview.png
+updatedAt: 2026-11-15T20:43:33.147Z

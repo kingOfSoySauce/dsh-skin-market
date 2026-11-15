@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:drliuhuan/dsh-plugin-agy-bg#409a924eee77d11f7f6090bd730dc0ae86e9c4cd
-  version: 0.1.5
-  commit: 409a924eee77d11f7f6090bd730dc0ae86e9c4cd
+  target: github:drliuhuan/dsh-plugin-agy-bg#ca6b1bc447eea51198221e718e2388864ef96966
+  version: 0.1.8
+  commit: ca6b1bc447eea51198221e718e2388864ef96966
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-plugin-agy-bg
+    packageVersion: 0.1.8
+    integrity: sha512-quYlaLsOU3e4MTyGSwOxWSUqLaXo8S2M21ai+Kr5NqloKu0mpKPwfgTV3YUAR0MmTT+ZCignebIbK2pJqijrcQ==
+  npm:
+    name: dsh-plugin-agy-bg
+    version: 0.1.8
+    integrity: sha512-quYlaLsOU3e4MTyGSwOxWSUqLaXo8S2M21ai+Kr5NqloKu0mpKPwfgTV3YUAR0MmTT+ZCignebIbK2pJqijrcQ==
+    repository: https://github.com/drliuhuan/dsh-plugin-agy-bg
+    gitHead: ca6b1bc447eea51198221e718e2388864ef96966
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -28,6 +40,7 @@ screenshots:
   - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-agy-bg/409a924eee77d11f7f6090bd730dc0ae86e9c4cd/docs/preview-light.png
   - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-agy-bg/409a924eee77d11f7f6090bd730dc0ae86e9c4cd/docs/preview-dark.png
   - https://raw.githubusercontent.com/drliuhuan/dsh-plugin-agy-bg/409a924eee77d11f7f6090bd730dc0ae86e9c4cd/docs/settings.png
+listScreenshot: https://raw.githubusercontent.com/drliuhuan/dsh-plugin-agy-bg/409a924eee77d11f7f6090bd730dc0ae86e9c4cd/docs/preview-light.png
 review:
   compatibility: verified
   preview: verified
@@ -41,13 +54,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: ca6b1bc447eea51198221e718e2388864ef96966
+    packageVersion: 0.1.8
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:13.321Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1326
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-15T20:44:14.030Z
+metadataUpdatedAt: 2026-11-15T20:44:14.030Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/drliuhuan/dsh-plugin-agy-bg/409a924eee77d11f7f6090bd730dc0ae86e9c4cd/docs/preview-light.png
+updatedAt: 2026-11-15T20:44:14.030Z

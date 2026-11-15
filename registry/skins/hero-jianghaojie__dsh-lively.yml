@@ -21,12 +21,16 @@ install:
   target: github:hero-jianghaojie/dsh-lively#d8803b6302c873efc84d5f6de6df0c929f937405
   version: 0.2.1
   commit: d8803b6302c873efc84d5f6de6df0c929f937405
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/hero-jianghaojie/dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/docs/preview-light.png
+listScreenshot: https://raw.githubusercontent.com/hero-jianghaojie/dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/docs/preview-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,14 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d8803b6302c873efc84d5f6de6df0c929f937405
+    packageVersion: 0.2.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:34.213Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1351
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-15T20:44:34.412Z
+metadataUpdatedAt: 2026-11-15T20:44:34.412Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/hero-jianghaojie/dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/docs/preview-light.png
+updatedAt: 2026-11-15T20:44:34.412Z
