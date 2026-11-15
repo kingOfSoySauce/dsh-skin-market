@@ -1,0 +1,55 @@
+id: chiyang001.dsh.codsh.theme
+name:
+  zh: Codsh
+  en: Codsh
+author: Chiyang001
+description: 照 Codex 风格重做整套界面：52px 图标侧栏、紧凑的项目与会话列表、统一的圆角/滚动条/菜单/弹窗，外观页给 8 种背景预设、52 种字体与浅深文字色，模型选择与推理强度合并成一个滑杆入口；安装时会一并启用 Wallpaper Engine 插件 1.3.3。
+repo: https://github.com/Chiyang001/dsh-codsh-theme
+package: dsh-codsh-theme
+rowId: codsh-theme
+category: skin
+tags:
+  - codex
+  - sidebar
+  - fonts
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:Chiyang001/dsh-codsh-theme#5682891468196f1b0727c2fcb7bda0ed2b08af55
+  version: 0.3.59
+  commit: 5682891468196f1b0727c2fcb7bda0ed2b08af55
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1532
+starsSnapshot: 10
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+marketScreenshots:
+  - skin-screenshots/Chiyang001__dsh-codsh-theme/5682891468196f1b0727c2fcb7bda0ed2b08af55/home.png
+  - skin-screenshots/Chiyang001__dsh-codsh-theme/5682891468196f1b0727c2fcb7bda0ed2b08af55/conversation.png
+  - skin-screenshots/Chiyang001__dsh-codsh-theme/5682891468196f1b0727c2fcb7bda0ed2b08af55/settings.png

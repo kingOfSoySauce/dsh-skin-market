@@ -1,0 +1,55 @@
+id: nanki.nn.dsh.answer.pet
+name:
+  zh: 回答状态宠物
+  en: Answer Status Pet
+author: Nanki-nn
+description: 随回答阶段在蓝鲸、橘猫、银渐层三套宠物动画间切换（开始、思考、输出、工具、完成），多个会话同时运行时各挂一张进度卡，卡里显示输出 token、token/s、耗时与最近一次工具轨迹；宠物位置可拖动并记住。
+repo: https://github.com/Nanki-nn/dsh-answer-pet
+package: dsh-answer-pet
+rowId: dsh-answer-pet
+category: pet
+tags:
+  - pet
+  - themes
+  - progress
+  - multi-session
+modes:
+  - light
+  - dark
+install:
+  target: github:Nanki-nn/dsh-answer-pet#a0827d41c3f8f9177622c460a99f1aeeb8034b8d
+  version: 0.6.0
+  commit: a0827d41c3f8f9177622c460a99f1aeeb8034b8d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Nanki-nn/dsh-answer-pet/a0827d41c3f8f9177622c460a99f1aeeb8034b8d/assets/dsh-answer-pet-demo.gif
+  - https://raw.githubusercontent.com/Nanki-nn/dsh-answer-pet/a0827d41c3f8f9177622c460a99f1aeeb8034b8d/assets/screenshots/blue-whale.png
+  - https://raw.githubusercontent.com/Nanki-nn/dsh-answer-pet/a0827d41c3f8f9177622c460a99f1aeeb8034b8d/assets/screenshots/orange-cat.png
+  - https://raw.githubusercontent.com/Nanki-nn/dsh-answer-pet/a0827d41c3f8f9177622c460a99f1aeeb8034b8d/assets/screenshots/silver-shaded-cat.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1531
+starsSnapshot: 10
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+listScreenshot: https://raw.githubusercontent.com/Nanki-nn/dsh-answer-pet/a0827d41c3f8f9177622c460a99f1aeeb8034b8d/assets/dsh-answer-pet-demo.gif

@@ -1,0 +1,56 @@
+id: songcheng.ya.dsh.theme.studio
+name:
+  zh: 毛玻璃主题工作室
+  en: Frosted Glass Theme Studio
+author: songcheng-ya
+description: 壁纸可来自本地文件夹、远程链接或上传图片，候选墙能点选、重新扫描或随机换一张；侧栏与顶栏、输入框、审批卡、消息气泡、弹层各有独立毛玻璃开关与不透明度，主题色提供 DeepSeek 蓝、远洋青、星云紫等 8 套预设或 RGB 自定，另带分区命中自检。
+repo: https://github.com/songcheng-ya/dsh-theme-studio
+package: dsh-theme-studio
+rowId: dsh-theme-studio
+category: skin
+tags:
+  - wallpaper
+  - frosted-glass
+  - presets
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:songcheng-ya/dsh-theme-studio#6098c0ab6a369a53e9b9ef104568ef3a0b8f631b
+  version: 1.0.0
+  commit: 6098c0ab6a369a53e9b9ef104568ef3a0b8f631b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1535
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+marketScreenshots:
+  - skin-screenshots/songcheng-ya__dsh-theme-studio/6098c0ab6a369a53e9b9ef104568ef3a0b8f631b/home-amber.png
+  - skin-screenshots/songcheng-ya__dsh-theme-studio/6098c0ab6a369a53e9b9ef104568ef3a0b8f631b/home-crimson.png
+  - skin-screenshots/songcheng-ya__dsh-theme-studio/6098c0ab6a369a53e9b9ef104568ef3a0b8f631b/home-deepseek.png

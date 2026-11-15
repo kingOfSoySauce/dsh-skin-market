@@ -1,0 +1,54 @@
+id: mymde.deepseek.mate
+name:
+  zh: 希可儿桌宠
+  en: Xikeer 3D Pet
+author: mymde
+description: 3D 桌宠希可儿：坐在聊天输入框上，会呼吸、转头看鼠标、思考时托腮，回复时跟着流式文本动嘴；能拖起来甩、落到卡片顶边，切到桌面模式后还能坐在任意窗口顶边或任务栏，内置 VRM 模型与动作。
+repo: https://github.com/mymde/deepseek-mate
+package: dsh-plugin-whale-mate
+rowId: whale-mate
+category: pet
+tags:
+  - vrm
+  - 3d
+  - pet
+  - desktop-mode
+  - electron
+modes:
+  - light
+  - dark
+install:
+  target: github:mymde/deepseek-mate#442e1a2614c26a2dcefc2e1de34ed20083b3e372
+  version: 0.6.3
+  commit: 442e1a2614c26a2dcefc2e1de34ed20083b3e372
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1530
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+marketScreenshots:
+  - skin-screenshots/mymde__deepseek-mate/442e1a2614c26a2dcefc2e1de34ed20083b3e372/home.gif
+  - skin-screenshots/mymde__deepseek-mate/442e1a2614c26a2dcefc2e1de34ed20083b3e372/home.png
+  - skin-screenshots/mymde__deepseek-mate/442e1a2614c26a2dcefc2e1de34ed20083b3e372/conversation.png

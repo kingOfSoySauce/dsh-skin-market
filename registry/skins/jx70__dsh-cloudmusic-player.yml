@@ -1,0 +1,51 @@
+id: jx70.dsh.cloudmusic.player
+name:
+  zh: 网易云播放器
+  en: NetEase Cloud Music Player
+author: jx70
+description: 右下角的迷你播放器，控制你本机已开着的网易云客户端：切歌、播放暂停、拖音量、跟着滚动的歌词（外语歌带中文译文），Web 与桌面版都可装，需本机装有网易云客户端。
+repo: https://github.com/jx70/dsh-cloudmusic-player
+package: dsh-cloudmusic-player
+rowId: cloudmusic-player
+category: player
+tags:
+  - netease
+  - lyrics
+  - floating
+  - desktop
+modes:
+  - light
+  - dark
+install:
+  target: github:jx70/dsh-cloudmusic-player#dc5b0751dacaadffb8ca33122904bfd3f88c0e26
+  version: 0.2.0
+  commit: dc5b0751dacaadffb8ca33122904bfd3f88c0e26
+compatibility:
+  dsh: 0.1.0--rc.6-4b6bfb.svg || 0.1.0-rc.6
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/jx70/dsh-cloudmusic-player/dc5b0751dacaadffb8ca33122904bfd3f88c0e26/docs/subtitle-clean.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1526
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+listScreenshot: https://raw.githubusercontent.com/jx70/dsh-cloudmusic-player/dc5b0751dacaadffb8ca33122904bfd3f88c0e26/docs/subtitle-clean.png

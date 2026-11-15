@@ -1,0 +1,54 @@
+id: ayase34.wallpaper.plugin
+name:
+  zh: 预设墙与壁纸工作室
+  en: Preset Wall & Wallpaper Studio
+author: Ayase34
+description: 预设墙加壁纸库的换肤工作室：出厂「默认」预设自带三张壁纸与封面（36 令牌），预设卡片可一键切换、收藏或换一个试试；27 个语义旋钮和 369 个令牌能逐项微调，改过的令牌会单独标出、不静默覆盖，也能把预设注册成原生主题。壁纸按聊天背景（16:9）、设置卡（1:1）、侧栏海报（1:5）三部件分别铺，支持本地上传按比例裁剪或明暗分开、图片链接、8 款内置渐变，以及 2–20 条链接每 5 分钟–7 天的定时轮换和图层合成（多 GIF 按时间轴合成真动图），分享码/链接与 ZIP 三件套可整包交给别人。
+repo: https://github.com/Ayase34/wallpaper-plugin
+package: wallpaper-plugin
+rowId: wallpaper-plugin
+category: skin
+tags:
+  - preset
+  - wallpaper
+  - tokens
+  - sharing
+modes:
+  - light
+  - dark
+install:
+  target: github:Ayase34/wallpaper-plugin#ed1cf6e1cd010e5a99f18d80a8a86fcbba050f9f
+  version: 1.1.0
+  commit: ed1cf6e1cd010e5a99f18d80a8a86fcbba050f9f
+compatibility:
+  dsh: 0.1.0-rc.5
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1522
+starsSnapshot: 14
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+marketScreenshots:
+  - skin-screenshots/Ayase34__wallpaper-plugin/ed1cf6e1cd010e5a99f18d80a8a86fcbba050f9f/home.png
+  - skin-screenshots/Ayase34__wallpaper-plugin/ed1cf6e1cd010e5a99f18d80a8a86fcbba050f9f/conversation.png
+  - skin-screenshots/Ayase34__wallpaper-plugin/ed1cf6e1cd010e5a99f18d80a8a86fcbba050f9f/settings.png

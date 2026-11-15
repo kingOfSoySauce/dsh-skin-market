@@ -1,0 +1,53 @@
+id: leavestring.awesome.dsh.background.plugin
+name:
+  zh: 自定义背景
+  en: Custom Background
+author: leavestring
+description: 上传一张图（JPG/PNG/WEBP/GIF，浏览器本地压到 1600px WEBP）或切到极光、余烬、宣纸三种氛围预设，再调暗色遮罩、柔焦、填充方式与焦点位置；图片存进本机设置，重启后自动恢复，桌面端和 Web 端通用。
+repo: https://github.com/leavestring/awesome-dsh-background-plugin
+package: awesome-dsh-background-plugin
+rowId: ui-background
+category: skin
+tags:
+  - background
+  - wallpaper
+  - presets
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:leavestring/awesome-dsh-background-plugin#108a35065b1dd15474f06e0c552d666f2156b4da
+  version: 0.2.3
+  commit: 108a35065b1dd15474f06e0c552d666f2156b4da
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/leavestring/awesome-dsh-background-plugin/108a35065b1dd15474f06e0c552d666f2156b4da/screenshots/banner.png
+  - https://raw.githubusercontent.com/leavestring/awesome-dsh-background-plugin/108a35065b1dd15474f06e0c552d666f2156b4da/screenshots/dark-mode-image.png
+  - https://raw.githubusercontent.com/leavestring/awesome-dsh-background-plugin/108a35065b1dd15474f06e0c552d666f2156b4da/screenshots/light-mode-image.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1527
+starsSnapshot: 5
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+listScreenshot: https://raw.githubusercontent.com/leavestring/awesome-dsh-background-plugin/108a35065b1dd15474f06e0c552d666f2156b4da/screenshots/banner.png

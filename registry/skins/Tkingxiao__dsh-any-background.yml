@@ -1,0 +1,57 @@
+id: tkingxiao.dsh.any.background
+name:
+  zh: 主题色与壁纸
+  en: Theme Colour & Wallpaper
+author: Tkingxiao
+description: 用 PS 式色轮或取色器定主题色，实时生成 30+ 个设计令牌；背景可放图片、视频（磁盘持久化 + HTTP Range）或网格渐变/Shader/几何生成图，六套预设之外还能逐面调不透明度与模糊，壁纸池按刷新/时/日/周轮换并支持昼夜切换。
+repo: https://github.com/Tkingxiao/dsh-any-background
+package: dsh-any-background
+rowId: dsh-any-background
+category: skin
+tags:
+  - wallpaper
+  - theme-color
+  - video
+  - opacity
+modes:
+  - light
+  - dark
+install:
+  target: github:Tkingxiao/dsh-any-background#8a50d6576ab4727ea4654a6fb65821465e5ec60a
+  version: 0.4.5
+  commit: 8a50d6576ab4727ea4654a6fb65821465e5ec60a
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-2.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-3.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-4.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-6.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-9.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-10.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1538
+starsSnapshot: 59
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+listScreenshot: https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image.png

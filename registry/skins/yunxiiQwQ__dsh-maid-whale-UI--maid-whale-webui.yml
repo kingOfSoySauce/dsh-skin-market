@@ -1,0 +1,54 @@
+id: yunxiiqwq.maid.whale.webui
+name:
+  zh: 鲸鱼女仆
+  en: Whale Maid
+author: yunxiiQwQ
+description: 鲸鱼女仆纸面主题：亮暗两套海洋插画壁纸、手绘边框与装饰件，另带一只随应用启停的 Windows 原生鲸鱼桌宠；主题在桌面端与网页端都能用，桌宠仅限 Windows 10/11 x64。
+repo: https://github.com/yunxiiQwQ/dsh-maid-whale-UI
+subpath: maid-whale-webui
+package: "@yunxii/dsh-client-ui-skin-maid-whale-webui"
+rowId: ui-skin-maid-whale-webui
+category: skin
+tags:
+  - whale-maid
+  - wallpaper
+  - light-dark
+  - pet
+modes:
+  - light
+  - dark
+install:
+  target: github:yunxiiQwQ/dsh-maid-whale-UI#1d48d7147de7307ab53e4f7a1027e722753e2321&path:/maid-whale-webui
+  version: 0.1.1
+  commit: 1d48d7147de7307ab53e4f7a1027e722753e2321
+compatibility:
+  dsh: 0.1.7-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-UI/1d48d7147de7307ab53e4f7a1027e722753e2321/maid-whale-webui/preview/desktop-light.png
+  - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-UI/1d48d7147de7307ab53e4f7a1027e722753e2321/maid-whale-webui/preview/desktop-dark.png
+  - https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-UI/1d48d7147de7307ab53e4f7a1027e722753e2321/maid-whale-webui/preview/pet-thinking.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1540
+starsSnapshot: 48
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+listScreenshot: https://raw.githubusercontent.com/yunxiiQwQ/dsh-maid-whale-UI/1d48d7147de7307ab53e4f7a1027e722753e2321/maid-whale-webui/preview/desktop-light.png

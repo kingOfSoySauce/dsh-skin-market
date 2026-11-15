@@ -1,0 +1,54 @@
+id: lixiaoyao.1024.dsh.customtheme
+name:
+  zh: 质感壁纸
+  en: Textured Wallpaper
+author: lixiaoyao-1024
+description: 壁纸与面板质感的主题：自带一张 2560×1440 壁纸，也能上传图片、GIF 或视频，或切到内置的 1024×576、5 秒循环动态极光；二次元、毛玻璃、透明、纯色四套面板预设可继续用滑块微调，壁纸按亮度自动压暗，皮肤可存成 JSON 导入导出，改动先试穿、点应用才落盘。
+repo: https://github.com/lixiaoyao-1024/dsh-customTheme
+package: "@local/dsh-my-theme"
+rowId: my-theme
+category: skin
+tags:
+  - wallpaper
+  - glass
+  - json
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:lixiaoyao-1024/dsh-customTheme#8c61c69fa5e2155e6b865e0e463248f6450cff7e
+  version: 1.0.1
+  commit: 8c61c69fa5e2155e6b865e0e463248f6450cff7e
+compatibility:
+  dsh: 0.2.1-rc.5
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1528
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+marketScreenshots:
+  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/home.gif
+  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/home.png
+  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/conversation.png

@@ -1,0 +1,57 @@
+id: shentongzy.dsh.zzz.skin
+name:
+  zh: 绝区零 H.D.D.
+  en: Zenless Zone Zero H.D.D.
+author: shentongzy
+description: 深海蓝底、正交网格、左下雾状辉光与缓慢下扫的示波器光带；三层螺旋眼眸徽记随侧栏宽度缩放，品牌区换成徽记 + Fairy 与同步窗口标题。启动时 13 秒片头、蓝光收束、大眼睛居中，再按时间段说一句问候语音；空会话显示 HOLLOW DEEP DIVE SYSTEM 主视觉，可用 /hdd on|off 开关。
+repo: https://github.com/shentongzy/dsh-zzz-skin
+package: dsh-zzz-skin
+rowId: dsh-zzz-skin
+category: skin
+tags:
+  - zenless-zone-zero
+  - dark
+  - splash
+  - voice
+  - hud
+modes:
+  - dark
+install:
+  target: github:shentongzy/dsh-zzz-skin#f3c33bd9a4f161e79b268b71e20aaeb864992a80
+  version: 0.2.1
+  commit: f3c33bd9a4f161e79b268b71e20aaeb864992a80
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1534
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+marketScreenshots:
+  - skin-screenshots/shentongzy__dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/home.gif
+  - skin-screenshots/shentongzy__dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/home.png
+  - skin-screenshots/shentongzy__dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/conversation.png
