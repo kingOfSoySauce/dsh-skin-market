@@ -558,7 +558,7 @@ export function marketUpdateNotice(operation: { failure?: Operation['failure']; 
       title: t('failure.marketUpdateFailed'),
       what: explanation.problem,
       why: raw.includes('已打开官方插件页')
-        ? raw
+        ? t('failure.marketFallbackOpened')
         : t('failure.marketFallback', { spec: fallbackSpec }),
       links: [],
       copySpec: fallbackSpec,

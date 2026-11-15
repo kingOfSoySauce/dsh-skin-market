@@ -469,7 +469,7 @@ function desktopManualReasonLabel(reason: string | undefined, t: Translator): st
     'npm-repository-mismatch': t('common.desktopRepositoryMismatch'),
     'npm-source-unverified': t('common.npmSourceUnverified'),
     'npm-version-mismatch': t('common.npmVersionMismatch'),
-  }[reason] ?? reason
+  }[reason] ?? t('common.desktopManualReasonUnknown')
 }
 
 const mutationLabelKeys: Record<MutationKind, MessageKey> = {
