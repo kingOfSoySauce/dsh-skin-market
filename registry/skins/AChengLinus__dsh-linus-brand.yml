@@ -21,6 +21,9 @@ install:
   target: github:AChengLinus/dsh-linus-brand#9709ac4e1ea03a258a676ec392f70a95eaa9d0e7
   version: 1.0.0
   commit: 9709ac4e1ea03a258a676ec392f70a95eaa9d0e7
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
@@ -29,26 +32,36 @@ screenshots:
   - https://raw.githubusercontent.com/AChengLinus/dsh-linus-brand/9709ac4e1ea03a258a676ec392f70a95eaa9d0e7/docs/pet-animation.png
   - https://raw.githubusercontent.com/AChengLinus/dsh-linus-brand/9709ac4e1ea03a258a676ec392f70a95eaa9d0e7/docs/pet-typing.gif
   - https://raw.githubusercontent.com/AChengLinus/dsh-linus-brand/9709ac4e1ea03a258a676ec392f70a95eaa9d0e7/docs/pet-states.png
+listScreenshot: https://raw.githubusercontent.com/AChengLinus/dsh-linus-brand/9709ac4e1ea03a258a676ec392f70a95eaa9d0e7/docs/pet-animation.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 9709ac4e1ea03a258a676ec392f70a95eaa9d0e7
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.2-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:43.825Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1209
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T07:53:29.580Z
-metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+releaseUpdatedAt: 2026-11-15T20:43:44.352Z
+metadataUpdatedAt: 2026-11-15T20:43:44.352Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-14T07:53:29.580Z
-listScreenshot: https://raw.githubusercontent.com/AChengLinus/dsh-linus-brand/9709ac4e1ea03a258a676ec392f70a95eaa9d0e7/docs/pet-animation.png
+updatedAt: 2026-11-15T20:43:44.352Z

@@ -20,6 +20,9 @@ install:
   target: github:victorcastro55/dsh-matrix-terminal#80da61a90c763fb9d3a89ca6578447c671c7907c
   version: 1.5.5
   commit: 80da61a90c763fb9d3a89ca6578447c671c7907c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
@@ -27,26 +30,36 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/victorcastro55/dsh-matrix-terminal/80da61a90c763fb9d3a89ca6578447c671c7907c/docs/overview.png
   - https://raw.githubusercontent.com/victorcastro55/dsh-matrix-terminal/80da61a90c763fb9d3a89ca6578447c671c7907c/docs/prompt-line.png
+listScreenshot: https://raw.githubusercontent.com/victorcastro55/dsh-matrix-terminal/80da61a90c763fb9d3a89ca6578447c671c7907c/docs/overview.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 80da61a90c763fb9d3a89ca6578447c671c7907c
+    packageVersion: 1.5.5
+    scannerVersion: static-v2
+    dshVersion: 0.2.2-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:05.833Z
+    findings: []
 license:
-  code: AGPL-3.0
+  code: AGPL-3.0-or-later
   commercialUse: true
 featuredRank: 1467
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:46:06.142Z
+metadataUpdatedAt: 2026-11-15T20:46:06.142Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/victorcastro55/dsh-matrix-terminal/80da61a90c763fb9d3a89ca6578447c671c7907c/docs/overview.png
+updatedAt: 2026-11-15T20:46:06.142Z

@@ -21,6 +21,18 @@ install:
   target: github:yuna78/dsh-maoxuan-pet#96992650af1f5e78025b991ef6cf303830ef6bea
   version: 0.3.2
   commit: 96992650af1f5e78025b991ef6cf303830ef6bea
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-plugin-maoxuan-pet
+    packageVersion: 0.3.2
+    integrity: sha512-//YDw5pnRD4ngjI1+OAAaEfnK1a+yfWj1/ScqNUx0lzfUB/bfY6YrdMrjL/ZPuM22oe7LtdvveksyG4mtOBBsA==
+  npm:
+    name: dsh-plugin-maoxuan-pet
+    version: 0.3.2
+    integrity: sha512-//YDw5pnRD4ngjI1+OAAaEfnK1a+yfWj1/ScqNUx0lzfUB/bfY6YrdMrjL/ZPuM22oe7LtdvveksyG4mtOBBsA==
+    repository: https://github.com/yuna78/dsh-maoxuan-pet
+    gitHead: 96992650af1f5e78025b991ef6cf303830ef6bea
 compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0"
   platform:
@@ -31,6 +43,7 @@ screenshots:
   - https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/assets/pet-talk.png
   - https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/assets/pet-blink.png
   - https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/assets/pet-read.png
+listScreenshot: https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/docs/screenshot-hero.png
 review:
   compatibility: verified
   preview: verified
@@ -44,13 +57,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 96992650af1f5e78025b991ef6cf303830ef6bea
+    packageVersion: 0.3.2
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2 <0.3.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:30.908Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1497
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:46:32.255Z
+metadataUpdatedAt: 2026-11-15T20:46:32.255Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/96992650af1f5e78025b991ef6cf303830ef6bea/docs/screenshot-hero.png
+updatedAt: 2026-11-15T20:46:32.255Z

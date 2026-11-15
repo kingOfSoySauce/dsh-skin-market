@@ -21,6 +21,9 @@ install:
   target: github:levitate403/dsh-firefly-bg#2a07e0ae528a3b61f3f77d870b5437f5d9b70107
   version: 1.0.0
   commit: 2a07e0ae528a3b61f3f77d870b5437f5d9b70107
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
   platform:
@@ -29,26 +32,36 @@ screenshots:
   - https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/01-chat-rooftop.jpg
   - https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/02-settings-panel.jpg
   - https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/03-dark-fireworks.jpg
+listScreenshot: https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/01-chat-rooftop.jpg
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0 未被本次检测范围 >=0.2.0 完全覆盖（固定版本 2a07e0ae528a3b61f3f77d870b5437f5d9b70107）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 2a07e0ae528a3b61f3f77d870b5437f5d9b70107
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:57.092Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1383
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:44:57.649Z
+metadataUpdatedAt: 2026-11-15T20:44:57.649Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/01-chat-rooftop.jpg
+updatedAt: 2026-11-15T20:44:57.649Z

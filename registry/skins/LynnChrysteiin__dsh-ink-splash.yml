@@ -19,6 +19,9 @@ install:
   target: github:LynnChrysteiin/dsh-ink-splash#09df1939ec5299f7c5bbc8c0d53391e745a2b728
   version: 0.2.0
   commit: 09df1939ec5299f7c5bbc8c0d53391e745a2b728
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -30,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/presets/maid.png
   - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/presets/ds-bg.png
   - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/presets/chibi.png
+listScreenshot: https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/splash-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -43,16 +47,23 @@ health:
     installCommand: improve
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 09df1939ec5299f7c5bbc8c0d53391e745a2b728
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:07.967Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1395
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:09.280Z
+metadataUpdatedAt: 2026-11-15T20:45:09.280Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/splash-light.png
+updatedAt: 2026-11-15T20:45:09.280Z

@@ -21,32 +21,52 @@ install:
   target: github:DoveLi-Gu/dsh-dyou-wine#8f148a62a666d855060d3571b993a3d8b6c7e5a4
   version: 0.1.0-alpha.14
   commit: 8f148a62a666d855060d3571b993a3d8b6c7e5a4
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
+  allowBuild: dsh-dyou-wine@https://codeload.github.com/DoveLi-Gu/dsh-dyou-wine/tar.gz/8f148a62a666d855060d3571b993a3d8b6c7e5a4
+  npm:
+    name: dsh-dyou-wine
+    version: 0.1.0-alpha.14
+    integrity: sha512-ggg0xqneWTyNIDHAQTmnOfef9KjfCcgFbOWrWNoVpkJh1yFQ8+3JFn5lp28jO7LyXnuo6D4ZMILde7AiHOi5yw==
+    repository: https://github.com/DoveLi-Gu/dsh-dyou-wine
+    gitHead: 8f148a62a666d855060d3571b993a3d8b6c7e5a4
 compatibility:
   dsh: 0.2.0-rc.2 || 0.1.0-alpha.14.tgz
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/DoveLi-Gu/dsh-dyou-wine/8f148a62a666d855060d3571b993a3d8b6c7e5a4/docs/assets/demo.gif
+listScreenshot: https://raw.githubusercontent.com/DoveLi-Gu/dsh-dyou-wine/8f148a62a666d855060d3571b993a3d8b6c7e5a4/docs/assets/demo.gif
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.2 || 0.1.0-alpha.14.tgz 未被本次检测范围 0.2.0-rc.2 完全覆盖（固定版本 8f148a62a666d855060d3571b993a3d8b6c7e5a4）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 8f148a62a666d855060d3571b993a3d8b6c7e5a4
+    packageVersion: 0.1.0-alpha.14
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:13.027Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1323
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-15T20:44:13.711Z
+metadataUpdatedAt: 2026-11-15T20:44:13.711Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/DoveLi-Gu/dsh-dyou-wine/8f148a62a666d855060d3571b993a3d8b6c7e5a4/docs/assets/demo.gif
+updatedAt: 2026-11-15T20:44:13.711Z

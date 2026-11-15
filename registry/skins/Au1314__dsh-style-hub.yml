@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Au1314/dsh-style-hub#1136d18cb2b06552af8be74d72affe51282b3e86
+  target: github:Au1314/dsh-style-hub#9ebfbd3960f5bdecacfe19d317bdc5cf41430c52
   version: 0.1.0
-  commit: 1136d18cb2b06552af8be74d72affe51282b3e86
+  commit: 9ebfbd3960f5bdecacfe19d317bdc5cf41430c52
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-style-hub
+    packageVersion: 0.1.0
+    integrity: sha512-GPvGGqwMj0DlaMwdWQmPjiJVFvFIlxYTxgLRtFgJ3qyWzWdwNPaTtw/dsV2vUqUa3llEtEc7fYauoFe0ydRf3g==
+  npm:
+    name: dsh-style-hub
+    version: 0.1.0
+    integrity: sha512-GPvGGqwMj0DlaMwdWQmPjiJVFvFIlxYTxgLRtFgJ3qyWzWdwNPaTtw/dsV2vUqUa3llEtEc7fYauoFe0ydRf3g==
+    repository: https://github.com/Au1314/dsh-style-hub
+    gitHead: 9ebfbd3960f5bdecacfe19d317bdc5cf41430c52
 compatibility:
   dsh: ">=0.1.5-rc.2 <0.2.0"
   platform:
@@ -28,6 +40,7 @@ screenshots:
   - https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-card.png
   - https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-settings.png
   - https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-wallpaper.png
+listScreenshot: https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-card.png
 review:
   compatibility: verified
   preview: verified
@@ -41,15 +54,26 @@ health:
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 9ebfbd3960f5bdecacfe19d317bdc5cf41430c52
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.5-rc.2 <0.2.0"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-15T20:43:49.822Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1176
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T06:29:10.128Z
-metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+releaseUpdatedAt: 2026-11-15T20:43:51.204Z
+metadataUpdatedAt: 2026-11-15T20:43:51.204Z
 starsUpdatedAt: 2026-11-14T06:29:10.128Z
-updatedAt: 2026-11-14T06:29:10.128Z
-listScreenshot: https://raw.githubusercontent.com/Au1314/dsh-style-hub/1136d18cb2b06552af8be74d72affe51282b3e86/docs/images/style-hub-card.png
+updatedAt: 2026-11-15T20:43:51.204Z

@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:penguinbing/dsh-alk-pet#e2271edd3ca48b86789f98b9d790ddffd9ecc854
-  version: 0.5.0
-  commit: e2271edd3ca48b86789f98b9d790ddffd9ecc854
+  target: github:penguinbing/dsh-alk-pet#83fc50b39765e19f9f26330e7d336a8643929b83
+  version: 0.5.1
+  commit: 83fc50b39765e19f9f26330e7d336a8643929b83
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-alk-pet
+    packageVersion: 0.5.1
+    integrity: sha512-T9zITvpHOSPgpEPOQ5UK6hIKJ9z4Lwvh/19RfZbPsQ0y2kXNfZC0uUwoOPYovEZhjmQ5sSC4G8Maqo36lvncfA==
+  npm:
+    name: dsh-alk-pet
+    version: 0.5.1
+    integrity: sha512-T9zITvpHOSPgpEPOQ5UK6hIKJ9z4Lwvh/19RfZbPsQ0y2kXNfZC0uUwoOPYovEZhjmQ5sSC4G8Maqo36lvncfA==
+    repository: https://github.com/penguinbing/dsh-alk-pet
+    gitHead: 83fc50b39765e19f9f26330e7d336a8643929b83
 compatibility:
   dsh: unverified
   platform:
@@ -27,6 +39,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/penguinbing/dsh-alk-pet/e2271edd3ca48b86789f98b9d790ddffd9ecc854/docs/screenshots/multi-task.png
   - https://raw.githubusercontent.com/penguinbing/dsh-alk-pet/e2271edd3ca48b86789f98b9d790ddffd9ecc854/docs/screenshots/multi-row.png
+listScreenshot: https://raw.githubusercontent.com/penguinbing/dsh-alk-pet/e2271edd3ca48b86789f98b9d790ddffd9ecc854/docs/screenshots/multi-task.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,14 +53,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 83fc50b39765e19f9f26330e7d336a8643929b83
+    packageVersion: 0.5.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:24.652Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1421
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:25.415Z
+metadataUpdatedAt: 2026-11-15T20:45:25.415Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/penguinbing/dsh-alk-pet/e2271edd3ca48b86789f98b9d790ddffd9ecc854/docs/screenshots/multi-task.png
+updatedAt: 2026-11-15T20:45:25.415Z

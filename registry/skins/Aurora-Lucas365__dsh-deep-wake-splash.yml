@@ -20,6 +20,9 @@ install:
   target: github:Aurora-Lucas365/dsh-deep-wake-splash#c42060eb691b4d9c079d8b7cd012ff0e46732f60
   version: 0.1.0
   commit: c42060eb691b4d9c079d8b7cd012ff0e46732f60
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.5
   platform:
@@ -27,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Aurora-Lucas365/dsh-deep-wake-splash/c42060eb691b4d9c079d8b7cd012ff0e46732f60/splash.gif
   - https://raw.githubusercontent.com/Aurora-Lucas365/dsh-deep-wake-splash/c42060eb691b4d9c079d8b7cd012ff0e46732f60/splash.png
+listScreenshot: https://raw.githubusercontent.com/Aurora-Lucas365/dsh-deep-wake-splash/c42060eb691b4d9c079d8b7cd012ff0e46732f60/splash.gif
 review:
   compatibility: verified
   preview: verified
@@ -35,20 +39,29 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: c42060eb691b4d9c079d8b7cd012ff0e46732f60
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:49.606Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1297
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-15T20:43:49.951Z
+metadataUpdatedAt: 2026-11-15T20:43:49.951Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/Aurora-Lucas365/dsh-deep-wake-splash/c42060eb691b4d9c079d8b7cd012ff0e46732f60/splash.gif
+updatedAt: 2026-11-15T20:43:49.951Z

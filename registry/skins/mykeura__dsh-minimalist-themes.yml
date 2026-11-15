@@ -20,6 +20,9 @@ install:
   target: github:mykeura/dsh-minimalist-themes#cef41ce4e22b0dcb5537b21b7beae11f3e858a2b
   version: 1.1.1
   commit: cef41ce4e22b0dcb5537b21b7beae11f3e858a2b
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.2-alpha.3
   platform:
@@ -33,6 +36,7 @@ screenshots:
   - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/minimalist-blackberry-juice.jpg
   - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/minimalist-cornmeal-porridge.jpg
   - https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/minimalist-diana-yin.jpg
+listScreenshot: https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/dsh-minimalist-themes.gif
 review:
   compatibility: verified
   preview: verified
@@ -46,13 +50,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: cef41ce4e22b0dcb5537b21b7beae11f3e858a2b
+    packageVersion: 1.1.1
+    scannerVersion: static-v2
+    dshVersion: ^0.2.2-alpha.3
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:17.932Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1407
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:21.248Z
+metadataUpdatedAt: 2026-11-15T20:45:21.248Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/mykeura/dsh-minimalist-themes/cef41ce4e22b0dcb5537b21b7beae11f3e858a2b/images/dsh-minimalist-themes.gif
+updatedAt: 2026-11-15T20:45:21.248Z

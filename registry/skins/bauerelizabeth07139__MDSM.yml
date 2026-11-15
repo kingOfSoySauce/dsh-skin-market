@@ -20,6 +20,9 @@ install:
   target: github:bauerelizabeth07139/MDSM#6393d2540d8c4937b5870ce7bdf1711526053c0f
   version: 0.2.0
   commit: 6393d2540d8c4937b5870ce7bdf1711526053c0f
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.0 <0.3.0-0"
   platform:
@@ -28,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM-wallpaper.jpg
   - https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM.jpg
   - https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM-mark.jpg
+listScreenshot: https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM-wallpaper.jpg
 review:
   compatibility: verified
   preview: verified
@@ -41,13 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 6393d2540d8c4937b5870ce7bdf1711526053c0f
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.0 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:53.326Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1179
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T06:29:10.128Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:43:53.640Z
+metadataUpdatedAt: 2026-11-15T20:43:53.640Z
 starsUpdatedAt: 2026-11-14T06:29:10.128Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/bauerelizabeth07139/MDSM/6393d2540d8c4937b5870ce7bdf1711526053c0f/assets/MDSM-wallpaper.jpg
+updatedAt: 2026-11-15T20:43:53.640Z

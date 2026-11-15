@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:phoenixlucky/dsh-theme#e36ce4e4f48c05a08adf396c29818d56cde152d2
-  version: 1.1.0
-  commit: e36ce4e4f48c05a08adf396c29818d56cde152d2
+  target: github:phoenixlucky/dsh-theme#4759b613065c713120e37ed0ef12a57bff2d4ef9
+  version: 1.1.1
+  commit: 4759b613065c713120e37ed0ef12a57bff2d4ef9
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@tinyforge/dsh-theme"
+    packageVersion: 1.1.1
+    integrity: sha512-qywVWDWieKpoZVFnHMg3Z+/xVK123oT7PCuOknspt3mUbinjVMbACWi4xEsevoRRX33trmH2fzna8IaHThOvbA==
+  npm:
+    name: "@tinyforge/dsh-theme"
+    version: 1.1.1
+    integrity: sha512-qywVWDWieKpoZVFnHMg3Z+/xVK123oT7PCuOknspt3mUbinjVMbACWi4xEsevoRRX33trmH2fzna8IaHThOvbA==
+    repository: https://github.com/phoenixlucky/dsh-theme
+    gitHead: 4759b613065c713120e37ed0ef12a57bff2d4ef9
 compatibility:
   dsh: 0.2.1-rc.3
   platform:
@@ -31,6 +43,7 @@ screenshots:
   - https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dragon-boat-festival.wallpaper.webp
   - https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/qingming-festival.wallpaper.webp
   - https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/qixi-festival.wallpaper.webp
+listScreenshot: https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dsh-theme-preview.webp
 review:
   compatibility: verified
   preview: verified
@@ -44,13 +57,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 4759b613065c713120e37ed0ef12a57bff2d4ef9
+    packageVersion: 1.1.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.3 <0.3.0 || =0.2.2-alpha.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:27.327Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1183
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T06:29:10.128Z
-metadataUpdatedAt: 2026-11-14T06:29:10.128Z
+releaseUpdatedAt: 2026-11-15T20:45:30.761Z
+metadataUpdatedAt: 2026-11-15T20:45:30.761Z
 starsUpdatedAt: 2026-11-14T06:29:10.128Z
-updatedAt: 2026-11-14T06:29:10.128Z
-listScreenshot: https://raw.githubusercontent.com/phoenixlucky/dsh-theme/e36ce4e4f48c05a08adf396c29818d56cde152d2/assets/dsh-theme-preview.webp
+updatedAt: 2026-11-15T20:45:30.761Z

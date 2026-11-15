@@ -21,12 +21,25 @@ install:
   target: github:rUrU516/dsh-quicktime-player#2c99d56e816745babad798f240ab62ce78dc6bbb
   version: 0.4.0
   commit: 2c99d56e816745babad798f240ab62ce78dc6bbb
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-quicktime-player
+    packageVersion: 0.4.0
+    integrity: sha512-Qu2P4XGXl970PGtOOijzl/3Gq3huATyTFjdISpnudNEquO7hfa31e1qW9VyKZLozpN7FAXksV/j+6JadXyRD6g==
+  npm:
+    name: dsh-quicktime-player
+    version: 0.4.0
+    integrity: sha512-Qu2P4XGXl970PGtOOijzl/3Gq3huATyTFjdISpnudNEquO7hfa31e1qW9VyKZLozpN7FAXksV/j+6JadXyRD6g==
+    repository: https://github.com/rUrU516/dsh-quicktime-player
+    gitHead: 2c99d56e816745babad798f240ab62ce78dc6bbb
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/rUrU516/dsh-quicktime-player/2c99d56e816745babad798f240ab62ce78dc6bbb/docs/screenshot.jpg
+listScreenshot: https://raw.githubusercontent.com/rUrU516/dsh-quicktime-player/2c99d56e816745babad798f240ab62ce78dc6bbb/docs/screenshot.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -40,14 +53,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 2c99d56e816745babad798f240ab62ce78dc6bbb
+    packageVersion: 0.4.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:37.151Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1432
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-15T20:45:37.298Z
+metadataUpdatedAt: 2026-11-15T20:45:37.298Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/rUrU516/dsh-quicktime-player/2c99d56e816745babad798f240ab62ce78dc6bbb/docs/screenshot.jpg
+updatedAt: 2026-11-15T20:45:37.298Z

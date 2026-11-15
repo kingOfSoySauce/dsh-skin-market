@@ -18,9 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:gitByteFree/dsh-pomodoro-pet#98b8f529e5d451162ab57e61c6a0f4d8145842c3
+  target: github:gitByteFree/dsh-pomodoro-pet#939cb5f27666fcccfd74dbbc478ba4faa64e660b
   version: 0.10.0
-  commit: 98b8f529e5d451162ab57e61c6a0f4d8145842c3
+  commit: 939cb5f27666fcccfd74dbbc478ba4faa64e660b
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-pomodoro-pet
+    packageVersion: 0.10.0
+    integrity: sha512-Cbwt6FU6SxLCiXUMRVMzQkmSZ9llY8SAMZHce8BBJmIB5OnKnnR1dEqtzfbKvo50WGzUgz0Jqf219VAfJrZvag==
+  npm:
+    name: dsh-pomodoro-pet
+    version: 0.10.0
+    integrity: sha512-Cbwt6FU6SxLCiXUMRVMzQkmSZ9llY8SAMZHce8BBJmIB5OnKnnR1dEqtzfbKvo50WGzUgz0Jqf219VAfJrZvag==
+    repository: https://github.com/gitByteFree/dsh-pomodoro-pet
+    gitHead: 939cb5f27666fcccfd74dbbc478ba4faa64e660b
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -32,6 +44,7 @@ screenshots:
   - https://cdn.jsdelivr.net/gh/gitByteFree/dsh-pomodoro-pet@main/png/focus-panel.png
   - https://cdn.jsdelivr.net/gh/gitByteFree/dsh-pomodoro-pet@main/png/pet-capsule.png
   - https://cdn.jsdelivr.net/gh/gitByteFree/dsh-pomodoro-pet@main/png/settings.png
+listScreenshot: https://raw.githubusercontent.com/gitByteFree/dsh-pomodoro-pet/98b8f529e5d451162ab57e61c6a0f4d8145842c3/png/focus-panel.png
 review:
   compatibility: verified
   preview: verified
@@ -45,13 +58,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 939cb5f27666fcccfd74dbbc478ba4faa64e660b
+    packageVersion: 0.10.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:26.803Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1345
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-15T20:44:30.215Z
+metadataUpdatedAt: 2026-11-15T20:44:30.215Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/gitByteFree/dsh-pomodoro-pet/98b8f529e5d451162ab57e61c6a0f4d8145842c3/png/focus-panel.png
+updatedAt: 2026-11-15T20:44:30.215Z

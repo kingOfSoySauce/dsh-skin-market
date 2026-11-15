@@ -20,6 +20,9 @@ install:
   target: github:Evan1987/dsh-yestermorrow#7765cdfeee60be1811ea6dd039546b8dfbfdc3e5
   version: 0.2.0
   commit: 7765cdfeee60be1811ea6dd039546b8dfbfdc3e5
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -29,26 +32,36 @@ screenshots:
   - https://raw.githubusercontent.com/Evan1987/dsh-yestermorrow/7765cdfeee60be1811ea6dd039546b8dfbfdc3e5/preview/live-light.png
   - https://raw.githubusercontent.com/Evan1987/dsh-yestermorrow/7765cdfeee60be1811ea6dd039546b8dfbfdc3e5/preview/neon-hero.png
   - https://raw.githubusercontent.com/Evan1987/dsh-yestermorrow/7765cdfeee60be1811ea6dd039546b8dfbfdc3e5/preview/sunset-hero.png
+listScreenshot: https://raw.githubusercontent.com/Evan1987/dsh-yestermorrow/7765cdfeee60be1811ea6dd039546b8dfbfdc3e5/preview/live-dark.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 7765cdfeee60be1811ea6dd039546b8dfbfdc3e5
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:16.342Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1329
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:55:59.482Z
-metadataUpdatedAt: 2026-11-14T11:55:59.482Z
+releaseUpdatedAt: 2026-11-15T20:44:17.084Z
+metadataUpdatedAt: 2026-11-15T20:44:17.084Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T11:55:59.482Z
-listScreenshot: https://raw.githubusercontent.com/Evan1987/dsh-yestermorrow/7765cdfeee60be1811ea6dd039546b8dfbfdc3e5/preview/live-dark.png
+updatedAt: 2026-11-15T20:44:17.084Z

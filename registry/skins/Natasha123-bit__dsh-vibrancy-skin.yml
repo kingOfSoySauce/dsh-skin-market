@@ -16,38 +16,58 @@ modes:
   - light
   - dark
 install:
-  target: github:Natasha123-bit/dsh-vibrancy-skin#d25e4382646213301b028859ee827c26a5c4bc60
+  target: github:Natasha123-bit/dsh-vibrancy-skin#9a0091936b1bf975764b4c22d21f05a9b589b704
   version: 1.6.1
-  commit: d25e4382646213301b028859ee827c26a5c4bc60
+  commit: 9a0091936b1bf975764b4c22d21f05a9b589b704
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-vibrancy-skin
+    packageVersion: 1.6.1
+    integrity: sha512-oHQPtM4s0MPjWztH5QaAglA24zVKXGxGq61+GrjDJzdxjZ5M3k5xK6ttTNkVgjGmxUNHs/SfSLLRBW7GvBzSGg==
+  npm:
+    name: dsh-vibrancy-skin
+    version: 1.6.1
+    integrity: sha512-oHQPtM4s0MPjWztH5QaAglA24zVKXGxGq61+GrjDJzdxjZ5M3k5xK6ttTNkVgjGmxUNHs/SfSLLRBW7GvBzSGg==
+    repository: https://github.com/Natasha123-bit/dsh-vibrancy-skin
+    gitHead: 9a0091936b1bf975764b4c22d21f05a9b589b704
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.7-rc.1 || ^0.2.0-rc.1"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Natasha123-bit/dsh-vibrancy-skin/d25e4382646213301b028859ee827c26a5c4bc60/assets/screenshots/conversation.png
   - https://raw.githubusercontent.com/Natasha123-bit/dsh-vibrancy-skin/d25e4382646213301b028859ee827c26a5c4bc60/assets/screenshots/settings.png
+listScreenshot: https://raw.githubusercontent.com/Natasha123-bit/dsh-vibrancy-skin/d25e4382646213301b028859ee827c26a5c4bc60/assets/screenshots/conversation.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
-    compatibility: improve
+    readmeScreenshots: improve
+    compatibility: pass
     installation: pass
-    installCommand: improve
+    installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: 9a0091936b1bf975764b4c22d21f05a9b589b704
+    packageVersion: 1.6.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.7-rc.1 || ^0.2.0-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:19.089Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1412
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:20.561Z
+metadataUpdatedAt: 2026-11-15T20:45:20.561Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/Natasha123-bit/dsh-vibrancy-skin/d25e4382646213301b028859ee827c26a5c4bc60/assets/screenshots/conversation.png
+updatedAt: 2026-11-15T20:45:20.561Z

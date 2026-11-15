@@ -21,6 +21,9 @@ install:
   target: github:xingheyewang-1/dsh-whale-rod-cursor#31a493da7e3063375cf52fc6423c846fe785c431
   version: 0.1.11
   commit: 31a493da7e3063375cf52fc6423c846fe785c431
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -31,6 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/%E9%B2%B8%E9%B1%BC%E5%A8%98%E7%89%B9%E5%86%99.png
   - https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/%E5%B0%8F%E5%89%A7%E5%9C%BA.png
   - https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/schematic.png
+listScreenshot: https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/%E5%85%A8%E6%99%AF.png
 review:
   compatibility: verified
   preview: verified
@@ -44,13 +48,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 31a493da7e3063375cf52fc6423c846fe785c431
+    packageVersion: 0.1.11
+    scannerVersion: static-v2
+    dshVersion: ^4.0.1 || ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:21.575Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1483
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:46:22.282Z
+metadataUpdatedAt: 2026-11-15T20:46:22.282Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/xingheyewang-1/dsh-whale-rod-cursor/31a493da7e3063375cf52fc6423c846fe785c431/assets/preview/%E5%85%A8%E6%99%AF.png
+updatedAt: 2026-11-15T20:46:22.282Z

@@ -17,21 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:KHWLGH/dsh-lightweight-wallpaper#28f8541986e7a4f8c69fccd451117fc7ae665855
-  version: 0.1.2
-  commit: 28f8541986e7a4f8c69fccd451117fc7ae665855
+  target: github:KHWLGH/dsh-lightweight-wallpaper#76001c01eb04bbcb92db9863cd8a774dfbed24da
+  version: 0.1.3
+  commit: 76001c01eb04bbcb92db9863cd8a774dfbed24da
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-lightweight-wallpaper
-    packageVersion: 0.1.2
-    integrity: sha512-MGQbjWozITID4xCzz8c4dRMrD+/zxw8lxXQ38EIPUNhWqkos3L1GR5PBWketQRDZhEKxcJER53rF3cBez13jNg==
+    packageVersion: 0.1.3
+    integrity: sha512-7ldAV9I8AvNSjplhSGGXOAqI1yveZfVmUPDXL+Bh87Uk2PNk5jnc5uNPTrocurNp5dBSpiF/X9Fq8YURhoiJQw==
   npm:
     name: dsh-lightweight-wallpaper
-    version: 0.1.2
-    integrity: sha512-MGQbjWozITID4xCzz8c4dRMrD+/zxw8lxXQ38EIPUNhWqkos3L1GR5PBWketQRDZhEKxcJER53rF3cBez13jNg==
+    version: 0.1.3
+    integrity: sha512-7ldAV9I8AvNSjplhSGGXOAqI1yveZfVmUPDXL+Bh87Uk2PNk5jnc5uNPTrocurNp5dBSpiF/X9Fq8YURhoiJQw==
     repository: https://github.com/KHWLGH/dsh-lightweight-wallpaper
-    gitHead: 28f8541986e7a4f8c69fccd451117fc7ae665855
+    gitHead: 76001c01eb04bbcb92db9863cd8a774dfbed24da
 compatibility:
   dsh: unverified
   platform:
@@ -55,19 +55,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 28f8541986e7a4f8c69fccd451117fc7ae665855
-    packageVersion: 0.1.2
+    commit: 76001c01eb04bbcb92db9863cd8a774dfbed24da
+    packageVersion: 0.1.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:47:48.645Z
+    checkedAt: 2026-11-15T20:42:55.306Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1513
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T23:47:49.368Z
-metadataUpdatedAt: 2026-11-14T23:47:49.368Z
+releaseUpdatedAt: 2026-11-15T20:42:56.900Z
+metadataUpdatedAt: 2026-11-15T20:42:56.900Z
 starsUpdatedAt: 2026-11-14T19:39:31.051Z
-updatedAt: 2026-11-14T23:47:49.368Z
+updatedAt: 2026-11-15T20:42:56.900Z

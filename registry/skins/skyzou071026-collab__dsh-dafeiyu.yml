@@ -21,32 +21,45 @@ install:
   target: github:skyzou071026-collab/dsh-dafeiyu#440b843a9634b76bcb756b68f50457064b16e74f
   version: 0.1.23
   commit: 440b843a9634b76bcb756b68f50457064b16e74f
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/skyzou071026-collab/dsh-dafeiyu/440b843a9634b76bcb756b68f50457064b16e74f/docs/images/balance-preview.png
+listScreenshot: https://raw.githubusercontent.com/skyzou071026-collab/dsh-dafeiyu/440b843a9634b76bcb756b68f50457064b16e74f/docs/images/balance-preview.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 440b843a9634b76bcb756b68f50457064b16e74f
+    packageVersion: 0.1.23
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:43.360Z
+    findings: []
 license:
-  code: MIT
-  commercialUse: true
+  code: SEE LICENSE IN ASSET_LICENSE.md
+  commercialUse: false
 featuredRank: 1441
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-15T20:45:43.503Z
+metadataUpdatedAt: 2026-11-15T20:45:43.503Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/skyzou071026-collab/dsh-dafeiyu/440b843a9634b76bcb756b68f50457064b16e74f/docs/images/balance-preview.png
+updatedAt: 2026-11-15T20:45:43.503Z

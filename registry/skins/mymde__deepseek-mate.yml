@@ -21,34 +21,50 @@ install:
   target: github:mymde/deepseek-mate#442e1a2614c26a2dcefc2e1de34ed20083b3e372
   version: 0.6.3
   commit: 442e1a2614c26a2dcefc2e1de34ed20083b3e372
+  npm:
+    name: dsh-plugin-whale-mate
+    version: 0.6.3
+    integrity: sha512-3RTQIdgoYPCF6fFpa68LU/jF8F6o3EUwxkAwARvNe2RYGA420FbFTWsMn5d/67TG4nkQWFKV+nVa5A+OU8w+Cw==
+    repository: https://github.com/mymde/deepseek-mate
+    gitHead: 442e1a2614c26a2dcefc2e1de34ed20083b3e372
 compatibility:
   dsh: 0.2.1-rc.5
   platform:
     - web
 screenshots: []
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
-    readmeScreenshots: pass
-    compatibility: pass
+    readmeScreenshots: improve
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 442e1a2614c26a2dcefc2e1de34ed20083b3e372
+    packageVersion: 0.6.3
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:45:58.172Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1530
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-15T16:38:24.792Z
-metadataUpdatedAt: 2026-11-15T16:38:24.792Z
-starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T16:38:24.792Z
 marketScreenshots:
   - skin-screenshots/mymde__deepseek-mate/442e1a2614c26a2dcefc2e1de34ed20083b3e372/home.gif
   - skin-screenshots/mymde__deepseek-mate/442e1a2614c26a2dcefc2e1de34ed20083b3e372/home.png
   - skin-screenshots/mymde__deepseek-mate/442e1a2614c26a2dcefc2e1de34ed20083b3e372/conversation.png
+featuredRank: 1530
+releaseUpdatedAt: 2026-11-15T20:40:53.617Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T20:40:53.617Z

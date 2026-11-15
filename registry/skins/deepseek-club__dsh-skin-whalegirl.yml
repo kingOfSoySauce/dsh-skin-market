@@ -27,10 +27,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/home.png
-  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/conversation.png
-  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -59,9 +55,13 @@ health:
 license:
   code: CC-BY-NC-SA-4.0
   commercialUse: false
-featuredRank: 1191
 starsSnapshot: 2
+marketScreenshots:
+  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/home.png
+  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/conversation.png
+  - skin-screenshots/deepseek-club__dsh-skin-whalegirl/0ff0afb9f960c77e1368c2ab03f425c1b9b6952d/settings.png
+featuredRank: 1191
 releaseUpdatedAt: 2026-11-14T23:45:30.196Z
-metadataUpdatedAt: 2026-11-14T23:45:30.196Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-14T23:45:30.196Z
+updatedAt: 2026-11-15T20:40:53.617Z

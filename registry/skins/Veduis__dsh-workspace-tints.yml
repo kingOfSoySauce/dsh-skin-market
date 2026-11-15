@@ -18,9 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Veduis/dsh-workspace-tints#7363e26e949522fe0726e544e8c2a8ea3c312d62
+  target: github:Veduis/dsh-workspace-tints#18b8338e53e610f3a2d4a354e4feee3d63e22cc3
   version: 1.0.0
-  commit: 7363e26e949522fe0726e544e8c2a8ea3c312d62
+  commit: 18b8338e53e610f3a2d4a354e4feee3d63e22cc3
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-workspace-tints
+    packageVersion: 1.0.0
+    integrity: sha512-9WVUP0LUi1Q8w8tka38Abny/qvoKq7TWZNT6gsXPdHUN4ix1WnRF0q5hR912d5KL4V7q0IZ/bEcpH4jZgan8Cw==
+  npm:
+    name: dsh-workspace-tints
+    version: 1.0.0
+    integrity: sha512-9WVUP0LUi1Q8w8tka38Abny/qvoKq7TWZNT6gsXPdHUN4ix1WnRF0q5hR912d5KL4V7q0IZ/bEcpH4jZgan8Cw==
+    repository: https://github.com/Veduis/dsh-workspace-tints
+    gitHead: 18b8338e53e610f3a2d4a354e4feee3d63e22cc3
 compatibility:
   dsh: ^0.2.1-rc.5
   platform:
@@ -30,6 +42,7 @@ screenshots:
   - https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/7363e26e949522fe0726e544e8c2a8ea3c312d62/screenshots/sidebar-dark.png
   - https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/7363e26e949522fe0726e544e8c2a8ea3c312d62/screenshots/sidebar-light.png
   - https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/7363e26e949522fe0726e544e8c2a8ea3c312d62/screenshots/settings.png
+listScreenshot: https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/7363e26e949522fe0726e544e8c2a8ea3c312d62/screenshots/cover.png
 review:
   compatibility: verified
   preview: verified
@@ -43,13 +56,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 18b8338e53e610f3a2d4a354e4feee3d63e22cc3
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ^0.2.1-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:05.122Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1466
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-15T20:46:06.369Z
+metadataUpdatedAt: 2026-11-15T20:46:06.369Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/7363e26e949522fe0726e544e8c2a8ea3c312d62/screenshots/cover.png
+updatedAt: 2026-11-15T20:46:06.369Z

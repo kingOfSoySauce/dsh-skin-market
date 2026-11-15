@@ -21,6 +21,18 @@ install:
   target: github:fewoot/dsh-whale-particles#e8ac7eef66255be053b330b6dd1e4bb65d5ccb91
   version: 0.6.0
   commit: e8ac7eef66255be053b330b6dd1e4bb65d5ccb91
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-whale-particles
+    packageVersion: 0.6.0
+    integrity: sha512-QSc+T9pdPfrw2nfEG2eonboLLR9+KNI6Xl4oLz07e/9BX+TBgO6eabFz3gOUGFKlMDSfhgUFPqCEHkM9mC3M1Q==
+  npm:
+    name: dsh-whale-particles
+    version: 0.6.0
+    integrity: sha512-QSc+T9pdPfrw2nfEG2eonboLLR9+KNI6Xl4oLz07e/9BX+TBgO6eabFz3gOUGFKlMDSfhgUFPqCEHkM9mC3M1Q==
+    repository: https://github.com/fewoot/dsh-whale-particles
+    gitHead: e8ac7eef66255be053b330b6dd1e4bb65d5ccb91
 compatibility:
   dsh: 0.2.0-rc.2 || 0.1.2-rc.1
   platform:
@@ -29,26 +41,36 @@ screenshots:
   - https://raw.githubusercontent.com/fewoot/dsh-whale-particles/e8ac7eef66255be053b330b6dd1e4bb65d5ccb91/media/shot-whale.png
   - https://raw.githubusercontent.com/fewoot/dsh-whale-particles/e8ac7eef66255be053b330b6dd1e4bb65d5ccb91/media/shot-photo.png
   - https://raw.githubusercontent.com/fewoot/dsh-whale-particles/e8ac7eef66255be053b330b6dd1e4bb65d5ccb91/assets/whale-preview.png
+listScreenshot: https://raw.githubusercontent.com/fewoot/dsh-whale-particles/e8ac7eef66255be053b330b6dd1e4bb65d5ccb91/media/shot-whale.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: e8ac7eef66255be053b330b6dd1e4bb65d5ccb91
+    packageVersion: 0.6.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.2 || 0.1.2-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:19.539Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1335
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-15T20:44:19.939Z
+metadataUpdatedAt: 2026-11-15T20:44:19.939Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/fewoot/dsh-whale-particles/e8ac7eef66255be053b330b6dd1e4bb65d5ccb91/media/shot-whale.png
+updatedAt: 2026-11-15T20:44:19.939Z

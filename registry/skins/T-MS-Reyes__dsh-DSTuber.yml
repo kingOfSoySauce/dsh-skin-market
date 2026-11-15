@@ -18,15 +18,28 @@ modes:
   - light
   - dark
 install:
-  target: github:T-MS-Reyes/dsh-DSTuber#ebdb2aa1112276c50bd970b3b63c86825bccd754
+  target: github:T-MS-Reyes/dsh-DSTuber#d5f3a8fe9f3ee6098470722704f3446ff86a1b8a
   version: 0.1.0
-  commit: ebdb2aa1112276c50bd970b3b63c86825bccd754
+  commit: d5f3a8fe9f3ee6098470722704f3446ff86a1b8a
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-dstuber
+    packageVersion: 0.1.0
+    integrity: sha512-3GXOpoifyrOHIT67ffAjJQz0YjmNYF22GAW0JiiSUl/b/PVldw9njUomk0M4gfLeV4v5HrvemdSJrThw1jXu3g==
+  npm:
+    name: dsh-dstuber
+    version: 0.1.0
+    integrity: sha512-3GXOpoifyrOHIT67ffAjJQz0YjmNYF22GAW0JiiSUl/b/PVldw9njUomk0M4gfLeV4v5HrvemdSJrThw1jXu3g==
+    repository: https://github.com/T-MS-Reyes/dsh-DSTuber
+    gitHead: d5f3a8fe9f3ee6098470722704f3446ff86a1b8a
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/T-MS-Reyes/dsh-DSTuber/ebdb2aa1112276c50bd970b3b63c86825bccd754/assets/big-fish.png
+listScreenshot: https://raw.githubusercontent.com/T-MS-Reyes/dsh-DSTuber/ebdb2aa1112276c50bd970b3b63c86825bccd754/assets/big-fish.png
 review:
   compatibility: unverified
   preview: verified
@@ -37,17 +50,25 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: d5f3a8fe9f3ee6098470722704f3446ff86a1b8a
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:51.046Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1451
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-15T20:45:52.002Z
+metadataUpdatedAt: 2026-11-15T20:45:52.002Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/T-MS-Reyes/dsh-DSTuber/ebdb2aa1112276c50bd970b3b63c86825bccd754/assets/big-fish.png
+updatedAt: 2026-11-15T20:45:52.002Z

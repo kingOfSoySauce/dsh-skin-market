@@ -21,6 +21,9 @@ install:
   target: github:exile412/dsh-startup-screen-exile#dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a
   version: 1.3.0-exile
   commit: dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a
+  desktop:
+    mode: manual-only
+    reason: npm-version-not-stable
 compatibility:
   dsh: unverified
   platform:
@@ -28,6 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/exile412/dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/docs/screenshots/theme-light.jpg
   - https://raw.githubusercontent.com/exile412/dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/docs/screenshots/theme-dark.jpg
+listScreenshot: https://raw.githubusercontent.com/exile412/dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/docs/screenshots/theme-light.jpg
 review:
   compatibility: unverified
   preview: verified
@@ -41,14 +45,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a
+    packageVersion: 1.3.0-exile
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:15.958Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1221
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T07:55:24.352Z
-metadataUpdatedAt: 2026-11-14T07:55:24.352Z
+releaseUpdatedAt: 2026-11-15T20:44:16.217Z
+metadataUpdatedAt: 2026-11-15T20:44:16.217Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T07:55:24.352Z
-listScreenshot: https://raw.githubusercontent.com/exile412/dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/docs/screenshots/theme-light.jpg
+updatedAt: 2026-11-15T20:44:16.217Z

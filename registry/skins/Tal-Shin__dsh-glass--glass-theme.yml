@@ -37,10 +37,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/home.png
-  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/conversation.png
-  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -69,9 +65,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1192
 starsSnapshot: 5
+marketScreenshots:
+  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/home.png
+  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/conversation.png
+  - skin-screenshots/Tal-Shin__dsh-glass--glass-theme/d50c4cb6fb3adf8eebb2a08ce810b96623bbf16d/settings.png
+featuredRank: 1192
 releaseUpdatedAt: 2026-11-14T23:44:12.192Z
-metadataUpdatedAt: 2026-11-14T23:44:12.192Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-14T23:44:12.192Z
+updatedAt: 2026-11-15T20:40:53.617Z

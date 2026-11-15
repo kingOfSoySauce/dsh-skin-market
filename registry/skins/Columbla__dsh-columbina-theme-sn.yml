@@ -27,10 +27,6 @@ compatibility:
   dsh: 0.2.1-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/home.png
-  - skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/conversation.png
-  - skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -59,9 +55,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1188
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/home.png
+  - skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/conversation.png
+  - skin-screenshots/Columbla__dsh-columbina-theme-sn/7bb98839a4a3c0ae78d69824c2282ffbc3fa3cea/settings.png
+featuredRank: 1188
 releaseUpdatedAt: 2026-11-14T23:47:08.074Z
-metadataUpdatedAt: 2026-11-14T23:47:08.074Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-14T23:47:08.074Z
+updatedAt: 2026-11-15T20:40:53.617Z

@@ -17,13 +17,29 @@ modes:
   - light
   - dark
 install:
-  target: github:MoonSand/dsh-ui-optimize#3292f89a0b7a427955fa32657a423a262663648e
-  version: 0.11.10
-  commit: 3292f89a0b7a427955fa32657a423a262663648e
+  target: github:MoonSand/dsh-ui-optimize#117a0132713c01574a4341113f32930de1ab33bf
+  version: 0.12.1
+  commit: 117a0132713c01574a4341113f32930de1ab33bf
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@moonsand/dsh-ui-optimize"
+    packageVersion: 0.12.1
+    integrity: sha512-p/Bl1iOu/oQjwvkNIWfZ3GUPX0nNw7nc6kID8kpaixEeYlc/7lvnfCqUGAGEo++Sv5jqc/qIRpP4zb0THJD2qQ==
+  npm:
+    name: "@moonsand/dsh-ui-optimize"
+    version: 0.12.1
+    integrity: sha512-p/Bl1iOu/oQjwvkNIWfZ3GUPX0nNw7nc6kID8kpaixEeYlc/7lvnfCqUGAGEo++Sv5jqc/qIRpP4zb0THJD2qQ==
+    repository: https://github.com/MoonSand/dsh-ui-optimize
+    gitHead: 117a0132713c01574a4341113f32930de1ab33bf
 compatibility:
   dsh: ">=0.2.1-rc.3"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/home.png
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/conversation.png
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -36,21 +52,25 @@ health:
     compatibility: pass
     installation: pass
     installCommand: improve
-    topic: improve
+    topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
-    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 117a0132713c01574a4341113f32930de1ab33bf
+    packageVersion: 0.12.1
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.3"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:15.319Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1194
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T06:29:27.360Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:45:15.591Z
+metadataUpdatedAt: 2026-11-15T20:45:15.591Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-14T23:28:29.986Z
-marketScreenshots:
-  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/home.png
-  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/conversation.png
-  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/settings.png
+updatedAt: 2026-11-15T20:45:15.591Z

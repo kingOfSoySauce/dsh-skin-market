@@ -14,18 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:FormalistBlue/dsh-everforest#292b386f87b9c08a2ead73009e152ccb3b2c1a5f
-  version: 1.6.0
-  commit: 292b386f87b9c08a2ead73009e152ccb3b2c1a5f
+  target: github:FormalistBlue/dsh-everforest#408804de6b1743f97fa0309d2ca9b079dbf157f9
+  version: 1.6.2
+  commit: 408804de6b1743f97fa0309d2ca9b079dbf157f9
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
   npm:
     name: dsh-everforest
-    version: 1.6.0
-    integrity: sha512-9lIefW9kXoI8B61i6QbYcEcQZ96sbIPmCta4dtOKYrIXcJv+O3OpsqZfCootoC/oBGxLql2OFHxCjBnJmASesA==
+    version: 1.6.2
+    integrity: sha512-IbHzYZ4ZUw/CrTboqXdHT374Cdnxaj2cPMp32UgPt6hafZEvkLVQNDi67/7gRSwg9Ur0W3MegrxIAe8wIynfOQ==
     repository: https://github.com/FormalistBlue/dsh-everforest
-    gitHead: 292b386f87b9c08a2ead73009e152ccb3b2c1a5f
+    gitHead: 408804de6b1743f97fa0309d2ca9b079dbf157f9
 compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0-0"
   platform:
@@ -49,20 +49,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 292b386f87b9c08a2ead73009e152ccb3b2c1a5f
-    packageVersion: 1.6.0
+    commit: 408804de6b1743f97fa0309d2ca9b079dbf157f9
+    packageVersion: 1.6.2
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.2 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:44:25.566Z
+    checkedAt: 2026-11-15T20:41:42.313Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 998
 starsSnapshot: 4
-releaseUpdatedAt: 2026-11-14T00:23:14.504Z
-metadataUpdatedAt: 2026-11-14T23:44:26.391Z
+releaseUpdatedAt: 2026-11-15T20:41:43.347Z
+metadataUpdatedAt: 2026-11-15T20:41:43.347Z
 starsUpdatedAt: 2026-11-13T00:28:13.548Z
-updatedAt: 2026-11-14T23:44:26.391Z
+updatedAt: 2026-11-15T20:41:43.347Z

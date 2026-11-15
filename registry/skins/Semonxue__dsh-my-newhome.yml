@@ -21,12 +21,16 @@ install:
   target: github:Semonxue/dsh-my-newhome#756a38c2bb6209a095a208f5c3e6df9b43f6f0c9
   version: 0.5.0
   commit: 756a38c2bb6209a095a208f5c3e6df9b43f6f0c9
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.1-rc.1 <0.3.0-0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Semonxue/dsh-my-newhome/756a38c2bb6209a095a208f5c3e6df9b43f6f0c9/docs/home.png
+listScreenshot: https://raw.githubusercontent.com/Semonxue/dsh-my-newhome/756a38c2bb6209a095a208f5c3e6df9b43f6f0c9/docs/home.png
 review:
   compatibility: verified
   preview: verified
@@ -40,13 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 756a38c2bb6209a095a208f5c3e6df9b43f6f0c9
+    packageVersion: 0.5.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.1 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:39.935Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1434
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:45:40.071Z
+metadataUpdatedAt: 2026-11-15T20:45:40.071Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/Semonxue/dsh-my-newhome/756a38c2bb6209a095a208f5c3e6df9b43f6f0c9/docs/home.png
+updatedAt: 2026-11-15T20:45:40.071Z

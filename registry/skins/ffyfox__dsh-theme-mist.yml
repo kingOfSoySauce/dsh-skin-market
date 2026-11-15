@@ -18,9 +18,12 @@ modes:
   - light
   - dark
 install:
-  target: github:ffyfox/dsh-theme-mist#078c7dfc4e2523935f11be0754080076b5c02a0b
-  version: 0.1.0
-  commit: 078c7dfc4e2523935f11be0754080076b5c02a0b
+  target: github:ffyfox/dsh-theme-mist#5907768d998161dd15a14c481fe71ebf4335a90e
+  version: 0.1.2
+  commit: 5907768d998161dd15a14c481fe71ebf4335a90e
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: ">=0.2.1-alpha.1 <0.3.0"
   platform:
@@ -34,6 +37,7 @@ screenshots:
   - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/sidebar-flat.webp
   - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/accents/daiqing.webp
   - https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/accents/turquoise.webp
+listScreenshot: https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/hero-light.webp
 review:
   compatibility: verified
   preview: verified
@@ -47,14 +51,25 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 5907768d998161dd15a14c481fe71ebf4335a90e
+    packageVersion: 0.1.2
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-alpha.1 <0.3.0"
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-15T20:44:19.678Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1336
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:22.572Z
+metadataUpdatedAt: 2026-11-15T20:44:22.572Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/ffyfox/dsh-theme-mist/078c7dfc4e2523935f11be0754080076b5c02a0b/docs/images/hero-light.webp
+updatedAt: 2026-11-15T20:44:22.572Z

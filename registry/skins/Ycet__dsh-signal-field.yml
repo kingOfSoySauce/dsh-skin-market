@@ -18,15 +18,15 @@ modes:
   - light
   - dark
 install:
-  target: github:Ycet/dsh-signal-field#32fff7a6f5cbf16672af0ebc78fa6209684e02c4
-  version: 0.5.2
-  commit: 32fff7a6f5cbf16672af0ebc78fa6209684e02c4
+  target: github:Ycet/dsh-signal-field#47e1c08ca7bcbbadac11e763987058ef2315d202
+  version: 0.5.3
+  commit: 47e1c08ca7bcbbadac11e763987058ef2315d202
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-signal-field
-    packageVersion: 0.5.2
-    integrity: sha512-rgGgstxN1DfYMupbid6scOFKPfxOlXVMorUyDPyV1yjOr4rPl7DFy39BU9rYDVhhRlfvgDPXlnqrxwM9+uq0ag==
+    packageVersion: 0.5.3
+    integrity: sha512-SDNvJAoG/Ay88Msk/IleZ6q/jG+rFeD5b91jKQaG2psdQq2u0MV/bHs+oK2fplg1RrDCk8ZTZMc1l7Yo+Vt7Mg==
 compatibility:
   dsh: unverified
   platform:
@@ -50,19 +50,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 32fff7a6f5cbf16672af0ebc78fa6209684e02c4
-    packageVersion: 0.5.2
+    commit: 47e1c08ca7bcbbadac11e763987058ef2315d202
+    packageVersion: 0.5.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:48:59.532Z
+    checkedAt: 2026-11-15T20:43:20.296Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1281
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T23:49:01.347Z
-metadataUpdatedAt: 2026-11-14T23:49:01.347Z
+releaseUpdatedAt: 2026-11-15T20:43:22.339Z
+metadataUpdatedAt: 2026-11-15T20:43:22.339Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T23:49:01.347Z
+updatedAt: 2026-11-15T20:43:22.339Z

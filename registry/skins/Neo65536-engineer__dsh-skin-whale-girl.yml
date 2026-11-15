@@ -20,6 +20,9 @@ install:
   target: github:Neo65536-engineer/dsh-skin-whale-girl#8e51a099bfab8475ae76381cfe345ba3e10ce52d
   version: 0.2.0
   commit: 8e51a099bfab8475ae76381cfe345ba3e10ce52d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -27,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Neo65536-engineer/dsh-skin-whale-girl/8e51a099bfab8475ae76381cfe345ba3e10ce52d/docs/preview-light.png
   - https://raw.githubusercontent.com/Neo65536-engineer/dsh-skin-whale-girl/8e51a099bfab8475ae76381cfe345ba3e10ce52d/docs/preview-dark.png
+listScreenshot: https://raw.githubusercontent.com/Neo65536-engineer/dsh-skin-whale-girl/8e51a099bfab8475ae76381cfe345ba3e10ce52d/docs/preview-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,15 +44,22 @@ health:
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 8e51a099bfab8475ae76381cfe345ba3e10ce52d
+    packageVersion: 0.2.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:18.764Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1413
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:57:59.992Z
-metadataUpdatedAt: 2026-11-14T11:57:59.992Z
+releaseUpdatedAt: 2026-11-15T20:45:19.380Z
+metadataUpdatedAt: 2026-11-15T20:45:19.380Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T11:57:59.992Z
-listScreenshot: https://raw.githubusercontent.com/Neo65536-engineer/dsh-skin-whale-girl/8e51a099bfab8475ae76381cfe345ba3e10ce52d/docs/preview-light.png
+updatedAt: 2026-11-15T20:45:19.380Z

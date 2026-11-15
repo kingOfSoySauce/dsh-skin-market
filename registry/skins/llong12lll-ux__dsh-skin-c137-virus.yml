@@ -22,34 +22,45 @@ install:
   target: github:llong12lll-ux/dsh-skin-c137-virus#ca574f414d9b9898218b3c4b30385931f041635e
   version: 1.0.0
   commit: ca574f414d9b9898218b3c4b30385931f041635e
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.1.7-rc.1 <0.3.0-0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/llong12lll-ux/dsh-skin-c137-virus/ca574f414d9b9898218b3c4b30385931f041635e/preview/light.webp
   - https://raw.githubusercontent.com/llong12lll-ux/dsh-skin-c137-virus/ca574f414d9b9898218b3c4b30385931f041635e/preview/dark.webp
+listScreenshot: https://raw.githubusercontent.com/llong12lll-ux/dsh-skin-c137-virus/ca574f414d9b9898218b3c4b30385931f041635e/preview/light.webp
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
+  scan:
+    commit: ca574f414d9b9898218b3c4b30385931f041635e
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.7-rc.1 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:04.354Z
+    findings: []
 license:
-  code: NOASSERTION
-  commercialUse: false
+  code: MIT
+  commercialUse: true
 featuredRank: 1529
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-15T16:38:24.792Z
-metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+releaseUpdatedAt: 2026-11-15T20:45:04.729Z
+metadataUpdatedAt: 2026-11-15T20:45:04.729Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T16:38:24.792Z
-listScreenshot: https://raw.githubusercontent.com/llong12lll-ux/dsh-skin-c137-virus/ca574f414d9b9898218b3c4b30385931f041635e/preview/light.webp
+updatedAt: 2026-11-15T20:45:04.729Z

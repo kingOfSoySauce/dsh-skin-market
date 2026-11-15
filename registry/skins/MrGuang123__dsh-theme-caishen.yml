@@ -27,10 +27,6 @@ compatibility:
   dsh: 0.2.1-rc.2 || >=0.2.1-rc.5 <0.3.0-0 || 0.2.1-rc.5
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/home.png
-  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/conversation.png
-  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/settings.png
 screenshots:
   - https://raw.githubusercontent.com/MrGuang123/dsh-theme-caishen/562b4625b8040e755324f037c0087cdd746e4d8f/assets/previews/documentation/visual-repair-host-home-dark.png
   - https://raw.githubusercontent.com/MrGuang123/dsh-theme-caishen/562b4625b8040e755324f037c0087cdd746e4d8f/assets/previews/documentation/visual-repair-host-home-light.png
@@ -65,9 +61,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1406
 starsSnapshot: 3
+marketScreenshots:
+  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/home.png
+  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/conversation.png
+  - skin-screenshots/MrGuang123__dsh-theme-caishen/6d14cdace6e80a0b3e2ab550f19f6c23c3a3ab23/settings.png
+featuredRank: 1406
 releaseUpdatedAt: 2026-11-14T23:45:02.744Z
-metadataUpdatedAt: 2026-11-14T23:45:02.744Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-14T23:45:02.744Z
+updatedAt: 2026-11-15T20:40:53.617Z

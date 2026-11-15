@@ -18,9 +18,12 @@ modes:
   - light
   - dark
 install:
-  target: github:abcd753951-gg/dsh-claude-mode#0379d86088cce3190f3d71c5278a4077a8a1e99e
-  version: 1.1.2
-  commit: 0379d86088cce3190f3d71c5278a4077a8a1e99e
+  target: github:abcd753951-gg/dsh-claude-mode#a8baa4ed1d762ba653a03c40549d2caa56146968
+  version: 1.1.4
+  commit: a8baa4ed1d762ba653a03c40549d2caa56146968
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.2-rc.1 || 0.1.2-rc.1
   platform:
@@ -32,6 +35,7 @@ screenshots:
   - https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/assistant-readaloud.png
   - https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/settings-sound.png
   - https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/shortcuts-new.png
+listScreenshot: https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/dark-session.png
 review:
   compatibility: verified
   preview: verified
@@ -40,19 +44,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: a8baa4ed1d762ba653a03c40549d2caa56146968
+    packageVersion: 1.1.4
+    scannerVersion: static-v2
+    dshVersion: 0.2.2-rc.1 || 0.1.2-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:45.211Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1208
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T07:53:29.580Z
-metadataUpdatedAt: 2026-11-14T07:53:29.580Z
+releaseUpdatedAt: 2026-11-15T20:43:48.257Z
+metadataUpdatedAt: 2026-11-15T20:43:48.257Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-14T07:53:29.580Z
-listScreenshot: https://raw.githubusercontent.com/abcd753951-gg/dsh-claude-mode/0379d86088cce3190f3d71c5278a4077a8a1e99e/docs/preview/dark-session.png
+updatedAt: 2026-11-15T20:43:48.257Z

@@ -32,24 +32,33 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 5682891468196f1b0727c2fcb7bda0ed2b08af55
+    packageVersion: 0.3.59
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:43:14.471Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1532
 starsSnapshot: 10
-releaseUpdatedAt: 2026-11-15T16:38:24.792Z
-metadataUpdatedAt: 2026-11-15T16:38:24.792Z
-starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T16:38:24.792Z
 marketScreenshots:
   - skin-screenshots/Chiyang001__dsh-codsh-theme/5682891468196f1b0727c2fcb7bda0ed2b08af55/home.png
   - skin-screenshots/Chiyang001__dsh-codsh-theme/5682891468196f1b0727c2fcb7bda0ed2b08af55/conversation.png
   - skin-screenshots/Chiyang001__dsh-codsh-theme/5682891468196f1b0727c2fcb7bda0ed2b08af55/settings.png
+featuredRank: 1532
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T20:40:53.617Z

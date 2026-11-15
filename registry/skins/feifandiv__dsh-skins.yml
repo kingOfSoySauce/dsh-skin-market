@@ -17,9 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:feifandiv/dsh-skins#353b5781e0499a1cbb72f5256848a59a8c3f9892
-  version: 1.0.0
-  commit: 353b5781e0499a1cbb72f5256848a59a8c3f9892
+  target: github:feifandiv/dsh-skins#ef106032b13063d62143ff68d34aff505bb5379a
+  version: 1.1.0
+  commit: ef106032b13063d62143ff68d34aff505bb5379a
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: "@fanfan4589/dsh-skins"
+    packageVersion: 1.1.0
+    integrity: sha512-ApYAI/sGcAGxE7tWwAwL+zRZN6zP2q/HW0djH9KXPfH6IRE0bJUsbHjLhdR7tcJLvZV/i3Jm9dB+Zhb1Qdwmow==
+  npm:
+    name: "@fanfan4589/dsh-skins"
+    version: 1.1.0
+    integrity: sha512-ApYAI/sGcAGxE7tWwAwL+zRZN6zP2q/HW0djH9KXPfH6IRE0bJUsbHjLhdR7tcJLvZV/i3Jm9dB+Zhb1Qdwmow==
+    repository: https://github.com/feifandiv/dsh-skins
+    gitHead: ef106032b13063d62143ff68d34aff505bb5379a
 compatibility:
   dsh: ">=0.2.1-rc.1"
   platform:
@@ -27,6 +39,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/feifandiv/dsh-skins/353b5781e0499a1cbb72f5256848a59a8c3f9892/docs/paper-light.png
   - https://raw.githubusercontent.com/feifandiv/dsh-skins/353b5781e0499a1cbb72f5256848a59a8c3f9892/docs/ink-dark.png
+listScreenshot: https://raw.githubusercontent.com/feifandiv/dsh-skins/353b5781e0499a1cbb72f5256848a59a8c3f9892/docs/paper-light.png
 review:
   compatibility: verified
   preview: verified
@@ -41,13 +54,21 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: ef106032b13063d62143ff68d34aff505bb5379a
+    packageVersion: 1.1.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:17.809Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1334
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:18.859Z
+metadataUpdatedAt: 2026-11-15T20:44:18.859Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/feifandiv/dsh-skins/353b5781e0499a1cbb72f5256848a59a8c3f9892/docs/paper-light.png
+updatedAt: 2026-11-15T20:44:18.859Z

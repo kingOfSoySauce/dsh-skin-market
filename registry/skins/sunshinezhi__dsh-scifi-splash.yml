@@ -20,6 +20,9 @@ install:
   target: github:sunshinezhi/dsh-scifi-splash#f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c
   version: 1.2.0
   commit: f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.1"
   platform:
@@ -27,26 +30,36 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/sunshinezhi/dsh-scifi-splash/f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c/screenshot-1.png
   - https://raw.githubusercontent.com/sunshinezhi/dsh-scifi-splash/f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c/screenshot-2.png
+listScreenshot: https://raw.githubusercontent.com/sunshinezhi/dsh-scifi-splash/f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c/screenshot-1.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  scan:
+    commit: f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c
+    packageVersion: 1.2.0
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:49.048Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1447
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:45:49.341Z
+metadataUpdatedAt: 2026-11-15T20:45:49.341Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/sunshinezhi/dsh-scifi-splash/f471eb9bf7f7f5ae871fa3f3ce52f76a5e30f10c/screenshot-1.png
+updatedAt: 2026-11-15T20:45:49.341Z

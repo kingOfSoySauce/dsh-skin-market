@@ -24,7 +24,9 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+screenshots:
+  - https://raw.githubusercontent.com/shentongzy/dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/test/preview.png
+listScreenshot: https://raw.githubusercontent.com/shentongzy/dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/test/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -32,26 +34,33 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: improve
     topic: improve
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: f3c33bd9a4f161e79b268b71e20aaeb864992a80
+    packageVersion: 0.2.1
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:46:06.258Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1534
 starsSnapshot: 2
-releaseUpdatedAt: 2026-11-15T16:38:24.792Z
-metadataUpdatedAt: 2026-11-15T16:38:24.792Z
-starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T16:38:24.792Z
 marketScreenshots:
   - skin-screenshots/shentongzy__dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/home.gif
   - skin-screenshots/shentongzy__dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/home.png
   - skin-screenshots/shentongzy__dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/conversation.png
+featuredRank: 1534
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T20:40:53.617Z

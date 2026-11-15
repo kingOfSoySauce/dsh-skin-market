@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-15**: [Cross-platform Bigfish](https://github.com/QCYTSN/dsh-dafeiyu) (QCYTSN). See the [recent additions log](./docs/recently-added.md#recent-2026-11-15-qcytsn-dsh-dafeiyu).
+- **2026-11-16**: [Whale Maid](https://github.com/yunxiiQwQ/dsh-maid-whale-UI) (yunxiiQwQ). See the [recent additions log](./docs/recently-added.md#recent-2026-11-16-yunxiiqwq-maid-whale-webui).
 
 See the [recent additions log](./docs/recently-added.md).
 

@@ -20,11 +20,21 @@ install:
   target: github:lixiaoyao-1024/dsh-customTheme#8c61c69fa5e2155e6b865e0e463248f6450cff7e
   version: 1.0.1
   commit: 8c61c69fa5e2155e6b865e0e463248f6450cff7e
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.5
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/home.gif
+  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/home.png
+  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/conversation.png
+screenshots:
+  - https://raw.githubusercontent.com/lixiaoyao-1024/dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/docs/preview-default.jpg
+  - https://raw.githubusercontent.com/lixiaoyao-1024/dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/docs/preview-aurora.jpg
+listScreenshot: https://raw.githubusercontent.com/lixiaoyao-1024/dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/docs/preview-default.jpg
 review:
   compatibility: verified
   preview: verified
@@ -33,22 +43,28 @@ health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: improve
   suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: 8c61c69fa5e2155e6b865e0e463248f6450cff7e
+    packageVersion: 1.0.1
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.5
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:02.809Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1528
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-15T16:38:24.792Z
-metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+releaseUpdatedAt: 2026-11-15T20:45:03.102Z
+metadataUpdatedAt: 2026-11-15T20:45:03.102Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T16:38:24.792Z
-marketScreenshots:
-  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/home.gif
-  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/home.png
-  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/conversation.png
+updatedAt: 2026-11-15T20:45:03.102Z

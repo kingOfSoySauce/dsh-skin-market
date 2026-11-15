@@ -26,10 +26,6 @@ compatibility:
   dsh: 0.1.7-rc.2
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.png
-  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/conversation.png
-  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/settings.png
 screenshots:
   - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/preset-eco.gif
   - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/preset-fancy.gif
@@ -61,9 +57,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 9
+marketScreenshots:
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.png
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/conversation.png
+  - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-10T00:42:47.982Z
-metadataUpdatedAt: 2026-11-14T23:43:24.166Z
+metadataUpdatedAt: 2026-11-15T20:40:53.617Z
 starsUpdatedAt: 2026-11-13T00:28:13.548Z
-updatedAt: 2026-11-14T23:43:24.166Z
+updatedAt: 2026-11-15T20:40:53.617Z

@@ -20,6 +20,9 @@ install:
   target: github:IanGely/dsh-client-ui-skin-saber#d8b950e8565f217c26a7bf7ed31664c03643295e
   version: 0.3.0
   commit: d8b950e8565f217c26a7bf7ed31664c03643295e
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.1-rc.3 || 0.2.0-rc.2
   platform:
@@ -33,26 +36,36 @@ screenshots:
   - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/assets/light.png
   - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/assets/dark.png
   - https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/preview-editor-plugin.png
+listScreenshot: https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/preview.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d8b950e8565f217c26a7bf7ed31664c03643295e
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.3 || 0.2.0-rc.2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:39.483Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1357
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-15T20:44:41.189Z
+metadataUpdatedAt: 2026-11-15T20:44:41.189Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/IanGely/dsh-client-ui-skin-saber/d8b950e8565f217c26a7bf7ed31664c03643295e/preview.png
+updatedAt: 2026-11-15T20:44:41.189Z

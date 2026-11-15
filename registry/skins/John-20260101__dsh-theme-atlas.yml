@@ -21,6 +21,9 @@ install:
   target: github:John-20260101/dsh-theme-atlas#12f6bf50f88d3155e255e3514b62e0f83180ded7
   version: 0.3.0
   commit: 12f6bf50f88d3155e255e3514b62e0f83180ded7
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.0-rc.1
   platform:
@@ -33,26 +36,36 @@ screenshots:
   - https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/06-paper-light-1600x1000.jpg
   - https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/07-aurora-dark-1600x1000.jpg
   - https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/08-paper-dark-1600x1000.jpg
+listScreenshot: https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/00-hero-2400x1350.jpg
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 12f6bf50f88d3155e255e3514b62e0f83180ded7
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:48.091Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1369
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-15T20:44:49.430Z
+metadataUpdatedAt: 2026-11-15T20:44:49.430Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/12f6bf50f88d3155e255e3514b62e0f83180ded7/assets/screenshots/00-hero-2400x1350.jpg
+updatedAt: 2026-11-15T20:44:49.430Z

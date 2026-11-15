@@ -20,6 +20,9 @@ install:
   target: github:Gsaecy/Zero-State-Radar#58e0b377fe3b9051e4286e6b0428be75dcba8078
   version: 0.1.3
   commit: 58e0b377fe3b9051e4286e6b0428be75dcba8078
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.0-rc.1"
   platform:
@@ -27,6 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/home.png
   - https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/session.png
+listScreenshot: https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/home.png
 review:
   compatibility: verified
   preview: verified
@@ -40,13 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 58e0b377fe3b9051e4286e6b0428be75dcba8078
+    packageVersion: 0.1.3
+    scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:27.703Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1346
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+releaseUpdatedAt: 2026-11-15T20:44:28.044Z
+metadataUpdatedAt: 2026-11-15T20:44:28.044Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T23:28:29.986Z
-listScreenshot: https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/home.png
+updatedAt: 2026-11-15T20:44:28.044Z

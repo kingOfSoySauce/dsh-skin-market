@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-15**：[跨平台大肥鱼](https://github.com/QCYTSN/dsh-dafeiyu)（QCYTSN）——桌面大肥鱼：透明、无边框、始终置顶的原生窗口，随任务切换思考/查找/修改/执行/验证/等待确认/完成与错误，状态气泡和设置页还能显示 API 与赠送余额（每分钟刷新）。支持拖动、摸头、戳身体、碰尾巴与安静/标准/活泼三档待机节奏；Windows、Linux、macOS 各有随包 Helper，WebUI 还可选在页面右下角显示轻量角色（默认关闭）。详见[收录日志](./docs/recently-added.md#recent-2026-11-15-qcytsn-dsh-dafeiyu)。
+- **2026-11-16**：[鲸鱼女仆](https://github.com/yunxiiQwQ/dsh-maid-whale-UI)（yunxiiQwQ）——鲸鱼女仆纸面主题：亮暗两套海洋插画壁纸、手绘边框与装饰件，另带一只随应用启停的 Windows 原生鲸鱼桌宠；主题在桌面端与网页端都能用，桌宠仅限 Windows 10/11 x64。详见[收录日志](./docs/recently-added.md#recent-2026-11-16-yunxiiqwq-maid-whale-webui)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

@@ -21,6 +21,18 @@ install:
   target: github:st21a1/dsh-bili-wallpaper#5e4e767e93ae7124865a6bc8147fab738c95dc85
   version: 0.3.0
   commit: 5e4e767e93ae7124865a6bc8147fab738c95dc85
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-bili-wallpaper
+    packageVersion: 0.3.0
+    integrity: sha512-meIuj36NhHQWkVwuuRMR6rYvmtp55Og54fAaJP2g4WNaZRY1V2xcrXwz/cY72P58151gNy5tKuWbG7eade/rjw==
+  npm:
+    name: dsh-bili-wallpaper
+    version: 0.3.0
+    integrity: sha512-meIuj36NhHQWkVwuuRMR6rYvmtp55Og54fAaJP2g4WNaZRY1V2xcrXwz/cY72P58151gNy5tKuWbG7eade/rjw==
+    repository: https://github.com/st21a1/dsh-bili-wallpaper
+    gitHead: 5e4e767e93ae7124865a6bc8147fab738c95dc85
 compatibility:
   dsh: ^0.2.0-rc.1
   platform:
@@ -28,6 +40,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/st21a1/dsh-bili-wallpaper/5e4e767e93ae7124865a6bc8147fab738c95dc85/assets/screenshot-settings.png
   - https://raw.githubusercontent.com/st21a1/dsh-bili-wallpaper/5e4e767e93ae7124865a6bc8147fab738c95dc85/assets/screenshot-background.png
+listScreenshot: https://raw.githubusercontent.com/st21a1/dsh-bili-wallpaper/5e4e767e93ae7124865a6bc8147fab738c95dc85/assets/screenshot-settings.png
 review:
   compatibility: verified
   preview: verified
@@ -41,13 +54,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: 5e4e767e93ae7124865a6bc8147fab738c95dc85
+    packageVersion: 0.3.0
+    scannerVersion: static-v2
+    dshVersion: ^0.2.0-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:45:45.746Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1444
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:59:04.760Z
-metadataUpdatedAt: 2026-11-14T11:59:04.760Z
+releaseUpdatedAt: 2026-11-15T20:45:46.091Z
+metadataUpdatedAt: 2026-11-15T20:45:46.091Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-14T11:59:04.760Z
-listScreenshot: https://raw.githubusercontent.com/st21a1/dsh-bili-wallpaper/5e4e767e93ae7124865a6bc8147fab738c95dc85/assets/screenshot-settings.png
+updatedAt: 2026-11-15T20:45:46.091Z

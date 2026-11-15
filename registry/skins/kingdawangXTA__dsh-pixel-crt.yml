@@ -19,12 +19,16 @@ install:
   target: github:kingdawangXTA/dsh-pixel-crt#8bd992e37561eae674b1501603ad5652fb870d91
   version: 0.1.0
   commit: 8bd992e37561eae674b1501603ad5652fb870d91
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/kingdawangXTA/dsh-pixel-crt/8bd992e37561eae674b1501603ad5652fb870d91/assets/preview.png
+listScreenshot: https://raw.githubusercontent.com/kingdawangXTA/dsh-pixel-crt/8bd992e37561eae674b1501603ad5652fb870d91/assets/preview.png
 review:
   compatibility: unverified
   preview: verified
@@ -38,14 +42,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: 8bd992e37561eae674b1501603ad5652fb870d91
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:44:51.343Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1376
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T11:56:57.679Z
-metadataUpdatedAt: 2026-11-14T11:56:57.679Z
+releaseUpdatedAt: 2026-11-15T20:44:51.357Z
+metadataUpdatedAt: 2026-11-15T20:44:51.357Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-14T11:56:57.679Z
-listScreenshot: https://raw.githubusercontent.com/kingdawangXTA/dsh-pixel-crt/8bd992e37561eae674b1501603ad5652fb870d91/assets/preview.png
+updatedAt: 2026-11-15T20:44:51.357Z

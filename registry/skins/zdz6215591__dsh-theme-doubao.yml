@@ -19,6 +19,9 @@ install:
   target: github:zdz6215591/dsh-theme-doubao#d7543b2bcc8c56953dc8dbbacad40065aa2b07ac
   version: 1.0.0
   commit: d7543b2bcc8c56953dc8dbbacad40065aa2b07ac
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -27,6 +30,7 @@ screenshots:
   - https://raw.githubusercontent.com/zdz6215591/dsh-theme-doubao/d7543b2bcc8c56953dc8dbbacad40065aa2b07ac/docs/hero-light.png
   - https://raw.githubusercontent.com/zdz6215591/dsh-theme-doubao/d7543b2bcc8c56953dc8dbbacad40065aa2b07ac/docs/hero-dark.png
   - https://raw.githubusercontent.com/zdz6215591/dsh-theme-doubao/d7543b2bcc8c56953dc8dbbacad40065aa2b07ac/docs/hero-pointer.png
+listScreenshot: https://raw.githubusercontent.com/zdz6215591/dsh-theme-doubao/d7543b2bcc8c56953dc8dbbacad40065aa2b07ac/docs/hero-light.png
 review:
   compatibility: unverified
   preview: verified
@@ -40,14 +44,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: d7543b2bcc8c56953dc8dbbacad40065aa2b07ac
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:43:26.263Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1499
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:43:26.703Z
+metadataUpdatedAt: 2026-11-15T20:43:26.703Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/zdz6215591/dsh-theme-doubao/d7543b2bcc8c56953dc8dbbacad40065aa2b07ac/docs/hero-light.png
+updatedAt: 2026-11-15T20:43:26.703Z

@@ -20,6 +20,9 @@ install:
   target: github:Wedomizing/Dsh_genshin_nicole_skin#ff5dc2304ca1ee50755a11dd70346e71548c8619
   version: 0.3.8
   commit: ff5dc2304ca1ee50755a11dd70346e71548c8619
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
@@ -30,6 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-light.png
   - https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-frame-13.png
   - https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-settings-light.png
+listScreenshot: https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-frame-07.png
 review:
   compatibility: verified
   preview: verified
@@ -43,13 +47,21 @@ health:
     installCommand: pass
     topic: pass
   suggestions: []
+  scan:
+    commit: ff5dc2304ca1ee50755a11dd70346e71548c8619
+    packageVersion: 0.3.8
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.2-rc.1 <0.2.0-0 || >=0.1.3-rc.1 <0.2.0-0 || >=0.1.4-rc.1 <0.2.0-0 || >=0.1.5-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-15T20:46:10.849Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1472
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-14T12:00:04.493Z
-metadataUpdatedAt: 2026-11-14T12:00:04.493Z
+releaseUpdatedAt: 2026-11-15T20:46:16.626Z
+metadataUpdatedAt: 2026-11-15T20:46:16.626Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-14T12:00:04.493Z
-listScreenshot: https://raw.githubusercontent.com/Wedomizing/Dsh_genshin_nicole_skin/ff5dc2304ca1ee50755a11dd70346e71548c8619/docs/screenshots/dsh-pv-0.3.0-frame-07.png
+updatedAt: 2026-11-15T20:46:16.626Z
