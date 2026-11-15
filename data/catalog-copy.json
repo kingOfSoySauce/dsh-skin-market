@@ -18293,6 +18293,402 @@
       },
       "override": true,
       "nameSource": "pinned README + maintainer copy review"
+    },
+    "auki.zy.dsh.cursor.theme": {
+      "name": {
+        "zh": "光标主题",
+        "en": "Cursor Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "给 14 种鼠标状态（默认、指针、文本、等待、禁止等）各配一张 PNG/CUR，内置 18 套预设主题、25 个手绘 SVG 形状与 16/24/32/48 尺寸、热点编辑，主题可导出/导入为 ZIP 图片包；Windows 上还能一键写进系统光标方案。",
+        "en": "Gives each of the 14 mouse states (default, pointer, text, wait, not-allowed and more) its own PNG/CUR, with 18 preset themes, 25 hand-drawn SVG shapes, 16/24/32/48 sizes and a hotspot editor, exportable and importable as ZIP image packs; on Windows a theme can be written into the system cursor scheme with one click."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "75e5d964b21b4e145cb4332b818aafa05e434cc6c302c16ce629837851bdccab",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ayase34.wallpaper.plugin": {
+      "name": {
+        "zh": "预设墙与壁纸工作室",
+        "en": "Preset Wall & Wallpaper Studio"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "预设墙加壁纸库的换肤工作室：出厂「默认」预设自带三张壁纸与封面（36 令牌），预设卡片可一键切换、收藏或换一个试试；27 个语义旋钮和 369 个令牌能逐项微调，改过的令牌会单独标出、不静默覆盖，也能把预设注册成原生主题。壁纸按聊天背景（16:9）、设置卡（1:1）、侧栏海报（1:5）三部件分别铺，支持本地上传按比例裁剪或明暗分开、图片链接、8 款内置渐变，以及 2–20 条链接每 5 分钟–7 天的定时轮换和图层合成（多 GIF 按时间轴合成真动图），分享码/链接与 ZIP 三件套可整包交给别人。",
+        "en": "A skinning studio built around a preset wall and a wallpaper library: the factory \"Default\" preset ships three wallpapers, a cover and 36 tokens, and preset cards switch, favourite or shuffle with one click; 27 semantic knobs and 369 tokens can be tuned item by item, hand-edited tokens are flagged instead of silently overwritten, and a preset can be registered as a native theme. Wallpapers are assigned per widget (16:9 chat background, 1:1 settings card, 1:5 sidebar poster) from uploads cropped to ratio with separate light/dark values, image links or eight built-in gradients, plus timed rotation of 2–20 links from 5 minutes to 7 days and layer compositing (multiple GIFs merged into one timed animation); share codes/links and a zip bundle move a whole set to another machine."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "5cdf0a170fc1c30085d20f729ce5c1f9df8284acfbf3155f1749e64dc5d3c78d",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "baizz.520.dsh.theme.studio": {
+      "name": {
+        "zh": "配色工坊",
+        "en": "Palette Studio"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把会话区底色与透明度、主/次文字色、输入框和边栏底色拆成独立可调项，边栏还能单独放一张背景图；壁纸支持填充方式、3×3 位置与暗化（或按图片亮度自动暗化），改动即时生效并把配色存进浏览器 localStorage，可导出/导入 JSON。",
+        "en": "Splits the interface into independently adjustable colours — conversation background and opacity, primary/secondary text, composer and sidebar — and lets the sidebar carry its own image; wallpapers get fit modes, a 3×3 anchor and dimming (or automatic dimming based on image brightness), changes apply instantly, and the palette is saved to browser localStorage and can be exported/imported as JSON."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "0f175a1d114358874239fb8de89f171264b07522b712ecd7a0f73aafd67e8cba",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "bay.zeddie.dsh.theme.studio": {
+      "name": {
+        "zh": "主题工坊",
+        "en": "Theme Studio"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "换图片/视频壁纸（原文件直供，视频走 HTTP Range 可拖进度），按 7 组 49 个宿主令牌逐令牌配色并上传自定义字体，另有玻璃质感、圆角与动效时长、整窗全屏、从壁纸取色和 12 套明暗预设，配置可存成命名档互切；目前只支持桌面端。",
+        "en": "Image and video wallpapers are served byte-for-byte, with video streamed over HTTP Range so the scrubber works; colours are re-themed per token across 7 groups / 49 host tokens with uploaded fonts, plus glass surfaces, corner curvature and motion duration, window-wide fullscreen, colour picking from the wallpaper and 12 light/dark presets that can be saved as named profiles. Desktop only for now."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "bcd5edb4c85a32ef9239bd30b83073f4f34a100bd8783f964abc5a4260841b63",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "chiyang001.dsh.codsh.theme": {
+      "name": {
+        "zh": "Codsh",
+        "en": "Codsh"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "照 Codex 风格重做整套界面：52px 图标侧栏、紧凑的项目与会话列表、统一的圆角/滚动条/菜单/弹窗，外观页给 8 种背景预设、52 种字体与浅深文字色，模型选择与推理强度合并成一个滑杆入口；安装时会一并启用 Wallpaper Engine 插件 1.3.3。",
+        "en": "Re-skins the whole interface in a Codex style: a 52px icon sidebar, compact project and session lists, unified corners, scrollbars, menus and dialogs, plus an appearance page with eight background presets, 52 fonts, separate light/dark text colours and a merged model + reasoning slider; installing it also enables the bundled Wallpaper Engine 1.3.3 plugin."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "70dc937a99a542153702bbc653529eb4fa7a16853d37367f37e0b79c5cc537e3",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "hinayoung23.dsh.live.wallpaper": {
+      "name": {
+        "zh": "动态壁纸与主题中心",
+        "en": "Live Wallpaper & Theme Center"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "动态壁纸与页面主题中心：内置极光、星云、落日流光、霓虹网格四款离线程序化动画，也能贴 ShaderToy 作品 ID 或链接（不配 Key 直接走官方播放器，配 Key 后在本地 WebGL2 渲染），或用 HTTP(S) 视频、图片、网页和本地视频/GIF/图片当壁纸，可调暗度、模糊、界面遮罩透明度与视频速度。另有 5 套页面主题预设、5 种按钮形态与 4 种字体风格（90%–115% 字号），壁纸与主题独立开关；页面隐藏或系统要求「减少动态效果」时自动暂停，关闭主题或卸载即恢复原生外观。",
+        "en": "A live-wallpaper and page-theme center: four built-in offline procedural animations (Aurora, Nebula, Sunset Flow, Neon Grid), ShaderToy works by ID or URL (the official player without a key, local WebGL2 rendering with one), or HTTP(S) video, image and web-page sources plus local videos, GIFs and images as wallpapers, with dimming, blur, overlay opacity and video-speed controls. Five page-theme presets, five button shapes and four font styles (90–115% scaling) are included, wallpaper and theme toggle independently, supported animations pause while the page is hidden or the system requests reduced motion, and disabling the theme or removing the plugin restores the native look."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "ae9aa2924aa6c239aa3be019178c0e6dcbd1e312a1c89a59df5057766413fdf2",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jx70.dsh.cloudmusic.player": {
+      "name": {
+        "zh": "网易云播放器",
+        "en": "NetEase Cloud Music Player"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "右下角的迷你播放器，控制你本机已开着的网易云客户端：切歌、播放暂停、拖音量、跟着滚动的歌词（外语歌带中文译文），Web 与桌面版都可装，需本机装有网易云客户端。",
+        "en": "A mini player in the bottom-right corner that controls the NetEase Cloud Music client you already have running: track skipping, play/pause, volume and scrolling lyrics with Chinese translations. It installs on both Web and desktop builds and requires the local client."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "c20ab878f974d36d519c810f781295792977845fb63ca2b63d6249778294792c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "leavestring.awesome.dsh.background.plugin": {
+      "name": {
+        "zh": "自定义背景",
+        "en": "Custom Background"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "上传一张图（JPG/PNG/WEBP/GIF，浏览器本地压到 1600px WEBP）或切到极光、余烬、宣纸三种氛围预设，再调暗色遮罩、柔焦、填充方式与焦点位置；图片存进本机设置，重启后自动恢复，桌面端和 Web 端通用。",
+        "en": "Upload an image (JPG/PNG/WEBP/GIF, compressed in the browser to a 1600px WebP) or switch to one of three atmosphere presets — Aurora, Ember, Rice Paper — then tune the dark mask, soft focus, fit mode and focus position; images are stored in local settings and restored after a restart on both desktop and web."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "4c420b64853567a391b3929d8212d3255c1a3d3ded47859cc33e21988c570107",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "lixiaoyao.1024.dsh.customtheme": {
+      "name": {
+        "zh": "质感壁纸",
+        "en": "Textured Wallpaper"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "壁纸与面板质感的主题：自带一张 2560×1440 壁纸，也能上传图片、GIF 或视频，或切到内置的 1024×576、5 秒循环动态极光；二次元、毛玻璃、透明、纯色四套面板预设可继续用滑块微调，壁纸按亮度自动压暗，皮肤可存成 JSON 导入导出，改动先试穿、点应用才落盘。",
+        "en": "A wallpaper-and-surface theme: ships a 2560×1440 wallpaper and also takes your own image, GIF or video, or a built-in 1024×576 five-second looping aurora; four surface presets (anime, frosted, transparent, solid) stay adjustable with sliders, wallpaper dimming follows its brightness, and skins import/export as JSON with changes kept in a try-on state until applied."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "0fc675421122b44a38278fa68d0734d681837ba1b53846dec762b35939b2128b",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "llong12lll.ux.dsh.skin.c137.virus": {
+      "name": {
+        "zh": "C-137 病毒",
+        "en": "C-137 Virus"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "荧光绿的深空皮肤：星空背景分亮暗两套随主题切换，左右两张角色立绘（高度比 1.63:1）各自锚定输入框左右边缘，窗口缩放也不跑位。输入框外壳用九宫格 border-image 拼成卡通对话框、四角不拉伸，荧光绿光标 #bafa78，代码块深底、行内代码浅底深字，纯前端实现，刷新即生效、卸载即还原。",
+        "en": "A neon-green deep-space skin: light and dark starfield backgrounds follow the theme, and two character illustrations (1.63:1 height ratio) anchor to either edge of the composer and stay put as the window resizes. Its composer shell is a cartoon speech bubble built from a 9-slice border-image with unstretched corners, the accent cursor is #bafa78, code blocks go dark while inline code stays light, and it is front-end only: a refresh applies it and uninstalling restores the original look."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "3c8589a002cc19013783ac137cc781d40c1405c7ebbe7034960db977ed761ae5",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "mymde.deepseek.mate": {
+      "name": {
+        "zh": "希可儿桌宠",
+        "en": "Xikeer 3D Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "3D 桌宠希可儿：坐在聊天输入框上，会呼吸、转头看鼠标、思考时托腮，回复时跟着流式文本动嘴；能拖起来甩、落到卡片顶边，切到桌面模式后还能坐在任意窗口顶边或任务栏，内置 VRM 模型与动作。",
+        "en": "A 3D companion named Xikeer sits on the chat input box: she breathes, follows the cursor, rests her chin while thinking and mouths streamed replies. Drag and throw her onto a card's top edge, or switch to desktop mode to perch on any window edge or the taskbar; a bundled VRM avatar and motions drive it all."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "71ca58c8fbe21ec29f301a0f33f1fdd37a30b496751d3900124fb9b014e00aa2",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "nanki.nn.dsh.answer.pet": {
+      "name": {
+        "zh": "回答状态宠物",
+        "en": "Answer Status Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "随回答阶段在蓝鲸、橘猫、银渐层三套宠物动画间切换（开始、思考、输出、工具、完成），多个会话同时运行时各挂一张进度卡，卡里显示输出 token、token/s、耗时与最近一次工具轨迹；宠物位置可拖动并记住。",
+        "en": "Switches between three pets — blue whale, orange cat and silver-shaded cat — as a turn moves through start, thinking, streaming, tool calls and completion; concurrent sessions each get their own progress card with output tokens, tokens/s, elapsed time and the latest tool trace, and the pet's position is draggable and remembered."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a899181c1e0644df7fa5ac59c9ecd0e03c5774081046aed428a82039dbc539d4",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "nzl153.dsh.pet.whale": {
+      "name": {
+        "zh": "桌宠小鲸鱼",
+        "en": "Pet Whale"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "右下角一只官方轮廓版小鲸鱼，随 agent 状态在 idle、深潜思考、敲代码、庆祝、报错发抖等 7 种动画间切换，另有摸头、连戳闹脾气、甩晕、翻肚皮、贴边压扁等互动和 7 套预设色板；纯 DOM 实现，六种音效由 WebAudio 合成。",
+        "en": "A small whale in the official outline style sits in the bottom-right corner and switches between seven animations as the agent works (idle, deep-thinking, typing, celebrating, error shiver and more), with petting, poke-triggered sulking, dizzy shaking, belly-up and edge-squash interactions plus seven preset palettes; pure DOM, with six sound effects synthesized through WebAudio."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a9442681a895cd916f8468b2ad0610aab5aa62ba5561af2fdcf0f92e588b732d",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "shentongzy.dsh.zzz.skin": {
+      "name": {
+        "zh": "绝区零 H.D.D.",
+        "en": "Zenless Zone Zero H.D.D."
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "深海蓝底、正交网格、左下雾状辉光与缓慢下扫的示波器光带；三层螺旋眼眸徽记随侧栏宽度缩放，品牌区换成徽记 + Fairy 与同步窗口标题。启动时 13 秒片头、蓝光收束、大眼睛居中，再按时间段说一句问候语音；空会话显示 HOLLOW DEEP DIVE SYSTEM 主视觉，可用 /hdd on|off 开关。",
+        "en": "A deep-sea navy theme with an orthogonal grid, foggy glow in the lower-left and a slowly sweeping oscilloscope band. A three-layer spiral-eye emblem scales with the sidebar and replaces the brand area with the emblem plus Fairy and a matching window title. Launch runs a 13-second intro — blue light converging, the big eye centred, then a time-of-day greeting voice line — and an empty session shows the HOLLOW DEEP DIVE SYSTEM hero. Toggle with /hdd on|off."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "f4995bb56eed02ee98eba4eaf78cdd0458def087711eb26f00a52713e781cf4a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "songcheng.ya.dsh.theme.studio": {
+      "name": {
+        "zh": "毛玻璃主题工作室",
+        "en": "Frosted Glass Theme Studio"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "壁纸可来自本地文件夹、远程链接或上传图片，候选墙能点选、重新扫描或随机换一张；侧栏与顶栏、输入框、审批卡、消息气泡、弹层各有独立毛玻璃开关与不透明度，主题色提供 DeepSeek 蓝、远洋青、星云紫等 8 套预设或 RGB 自定，另带分区命中自检。",
+        "en": "Wallpapers can come from local folders, remote links or uploads, with a candidate wall you can pick from, rescan or shuffle; the sidebar and top bar, composer, approval cards, message bubbles and popovers each have their own frosted-glass toggle and opacity, theme colour offers eight presets (DeepSeek Blue, Ocean Teal, Nebula Violet and more) or RGB input, and a per-section hit self-check shows which style selectors still match."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "3f83b04f0eacf05313ca081185898e412cb2260236df01720c5e6d9564fa457d",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "soslowsnail.dsh.scenery.background": {
+      "name": {
+        "zh": "山海背景",
+        "en": "Mountain & Sea Scenery"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "按本地日期每天换一张山海背景，也能每 30 秒交叉淡入轮播并带 Ken Burns 运镜；5 张内置 SVG 场景离线可用，联网再补 12 张 Unsplash 摄影图，右下角悬浮按钮可切模式、换一张、调清晰/柔和或隐藏（Alt+B 召回）。",
+        "en": "Rotates a mountain-and-sea backdrop once a day by local date, or cross-fades through them every 30 seconds with a Ken Burns move; five built-in SVG scenes work offline, twelve Unsplash photos join when the network is available, and a floating button switches mode, shuffles, adjusts sharpness/softness or hides the button (Alt+B brings it back)."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "76748039ff255635906cc6504b1bbf8e2cb3784583b126a0f3bc1e15c01d2dec",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "taotao7.dsh.pretty.cool": {
+      "name": {
+        "zh": "Pretty Cool 紧凑界面",
+        "en": "Pretty Cool"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把消息、队列和任务状态收紧的紧凑界面：普通消息去掉卡片边框，推理内容用细线展开，过程摘要收成一行。模型搜索、思考级别循环切换、工作目录、上下文占用和原生统计集中在输入框周围，Goal、To-dos、子 agent、后台任务排在输入区上方，外观提供 Light / Dark / System、字号和 0–16 的全局圆角（默认 6）。",
+        "en": "A compact interface that tightens messages, the queue and task status: ordinary messages lose their card border, reasoning opens on a thin rule and process summaries collapse to one line. Model search, cycling thinking levels, the working directory, context usage and native statistics sit around the composer, Goal, to-dos, sub-agents and background tasks above it, and Appearance offers Light / Dark / System, font size and a global 0–16 corner radius (default 6)."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "ac7a3fbcd10cbd6023736a5c2df90dd97a3ee7ee5e9af957529d55958f0d79ca",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "tkingxiao.dsh.any.background": {
+      "name": {
+        "zh": "主题色与壁纸",
+        "en": "Theme Colour & Wallpaper"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "用 PS 式色轮或取色器定主题色，实时生成 30+ 个设计令牌；背景可放图片、视频（磁盘持久化 + HTTP Range）或网格渐变/Shader/几何生成图，六套预设之外还能逐面调不透明度与模糊，壁纸池按刷新/时/日/周轮换并支持昼夜切换。",
+        "en": "Picks a theme colour with a PS-style wheel or eyedropper and derives 30+ design tokens live; the wallpaper can be an image, a video (persisted on disk and streamed with HTTP Range) or a generated mesh-gradient, shader or geometric background, with six presets, per-surface opacity and blur, a rotation pool (per refresh, hour, day or week) and day/night switching."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a561821b5e2c877273f0d6f3ddabe520ab54bdaa2c22dc7e53f84c958ac6d226",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ye.zinan.dsh.skin.im2005": {
+      "name": {
+        "zh": "IM2005",
+        "en": "IM2005"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把桌面端换成 2005 年即时通讯软件的样子：直角窗口、1px 硬边框、宋体、蓝色渐变标题条、好友分组式侧栏，还有一条「形象秀」右列。输入区工具条塞进余额、跨会话备注框、美式八球、20×20 扫雷、会无限生长的 Token 农场、六人桌德州扑克、后台任务和 1–180 分钟专注静音；皮肤分关/标准/浓烈三档实时切换。美术全部是原创 SVG，不含第三方图片、图标、商标或字体。",
+        "en": "Turns the desktop client into a 2005-era messenger: square windows, 1 px hard borders, SimSun type, a blue gradient title bar, a buddy-group sidebar and an avatar-show column. The composer toolbar adds a balance viewer, a cross-session scratchpad, billiards, 20×20 minesweeper, an endless token farm, a six-seat Texas hold'em table and a 1–180 minute focus silence, while the skin switches between off, standard and heavy in real time. All artwork is original SVG with no third-party assets."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "022a3b48ee99e25554ed82e789b51284a0485b17246221589de32b86dec03f53",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "yunxiiqwq.maid.whale.webui": {
+      "name": {
+        "zh": "鲸鱼女仆",
+        "en": "Whale Maid"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "鲸鱼女仆纸面主题：亮暗两套海洋插画壁纸、手绘边框与装饰件，另带一只随应用启停的 Windows 原生鲸鱼桌宠；主题在桌面端与网页端都能用，桌宠仅限 Windows 10/11 x64。",
+        "en": "A whale-maid paper theme with light and dark ocean-illustration wallpapers, hand-drawn frames and ornaments plus a native Windows whale pet that starts and stops with the app; the theme works on both desktop and web, while the pet is Windows 10/11 x64 only."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "90f6b63db9de15e7eba807643086f5e5f3bece219ac1705e3769240b00ff2f7c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "z21for99.silk.background": {
+      "name": {
+        "zh": "丝绸背景",
+        "en": "Silk Background"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "全屏 WebGL 丝绸纹理随鼠标指针流动扭曲，三档 off/dim/vivid 控制亮度，页面不可见时停渲染省电；同时用明暗两套别名令牌把界面做成半透明玻璃，零运行时依赖，卸载即还原。",
+        "en": "A full-screen WebGL silk texture that flows and warps with the pointer, with three modes (off / dim / vivid) to control intensity and rendering paused while the page is hidden; light and dark alias-token layers turn the interface into translucent glass, with no runtime dependencies and a clean restore on removal."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "04d41416c571096c0a55e7c824891891ef93a2715d3d6dfc22acc6d4220f108a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zhangqiding.yamada.night.shift": {
+      "name": {
+        "zh": "山田的夜班",
+        "en": "Yamada Night Shift"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "夜间限定的山田凉动漫皮肤：欢迎页整屏全身立绘，对话页把角色压在右侧安全构图区，只做一套深色夜景配色；可另装同仓相册插件，把本地 PNG/JPG 照片设成背景。皮肤按 CC BY-NC-SA 4.0 非商用，相册插件为 MIT。",
+        "en": "A night-only anime skin around Yamada Ryō: a full-body illustration fills the welcome page and the character sits in a safe zone on the right of the conversation page, all in a single dark night palette; an optional photo album in the same repo can set local PNG/JPG photos as the background. The skin is CC BY-NC-SA 4.0 (non-commercial) and the album is MIT."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d3302498152ed26c0388cfc9424d5f469903167e5989efe220baaa626fa97244",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
     }
   }
 }

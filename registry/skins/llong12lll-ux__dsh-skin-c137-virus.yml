@@ -1,0 +1,55 @@
+id: llong12lll.ux.dsh.skin.c137.virus
+name:
+  zh: C-137 病毒
+  en: C-137 Virus
+author: llong12lll-ux
+description: "荧光绿的深空皮肤：星空背景分亮暗两套随主题切换，左右两张角色立绘（高度比 1.63:1）各自锚定输入框左右边缘，窗口缩放也不跑位。输入框外壳用九宫格 border-image 拼成卡通对话框、四角不拉伸，荧光绿光标 #bafa78，代码块深底、行内代码浅底深字，纯前端实现，刷新即生效、卸载即还原。"
+repo: https://github.com/llong12lll-ux/dsh-skin-c137-virus
+package: dsh-skin-c137-virus
+rowId: ui-skin-c137-virus
+category: skin
+tags:
+  - virus
+  - neon
+  - green
+  - space
+  - characters
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:llong12lll-ux/dsh-skin-c137-virus#ca574f414d9b9898218b3c4b30385931f041635e
+  version: 1.0.0
+  commit: ca574f414d9b9898218b3c4b30385931f041635e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/llong12lll-ux/dsh-skin-c137-virus/ca574f414d9b9898218b3c4b30385931f041635e/preview/light.webp
+  - https://raw.githubusercontent.com/llong12lll-ux/dsh-skin-c137-virus/ca574f414d9b9898218b3c4b30385931f041635e/preview/dark.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1529
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+listScreenshot: https://raw.githubusercontent.com/llong12lll-ux/dsh-skin-c137-virus/ca574f414d9b9898218b3c4b30385931f041635e/preview/light.webp

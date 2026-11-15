@@ -1,0 +1,54 @@
+id: taotao7.dsh.pretty.cool
+name:
+  zh: Pretty Cool 紧凑界面
+  en: Pretty Cool
+author: taotao7
+description: 把消息、队列和任务状态收紧的紧凑界面：普通消息去掉卡片边框，推理内容用细线展开，过程摘要收成一行。模型搜索、思考级别循环切换、工作目录、上下文占用和原生统计集中在输入框周围，Goal、To-dos、子 agent、后台任务排在输入区上方，外观提供 Light / Dark / System、字号和 0–16 的全局圆角（默认 6）。
+repo: https://github.com/taotao7/dsh-pretty-cool
+package: dsh-pretty-cool
+rowId: linear-ui
+category: skin
+tags:
+  - compact-ui
+  - composer
+  - task-bar
+  - corner-radius
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:taotao7/dsh-pretty-cool#82bf89f25a9825fbbd19b3a39e3bdea47171c878
+  version: 1.4.15
+  commit: 82bf89f25a9825fbbd19b3a39e3bdea47171c878
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/taotao7/dsh-pretty-cool/82bf89f25a9825fbbd19b3a39e3bdea47171c878/docs/screenshots/dark.png
+  - https://raw.githubusercontent.com/taotao7/dsh-pretty-cool/82bf89f25a9825fbbd19b3a39e3bdea47171c878/docs/screenshots/light.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: NOASSERTION
+  commercialUse: false
+featuredRank: 1537
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+listScreenshot: https://raw.githubusercontent.com/taotao7/dsh-pretty-cool/82bf89f25a9825fbbd19b3a39e3bdea47171c878/docs/screenshots/dark.png

@@ -1,0 +1,55 @@
+id: nzl153.dsh.pet.whale
+name:
+  zh: 桌宠小鲸鱼
+  en: Pet Whale
+author: nzl153
+description: 右下角一只官方轮廓版小鲸鱼，随 agent 状态在 idle、深潜思考、敲代码、庆祝、报错发抖等 7 种动画间切换，另有摸头、连戳闹脾气、甩晕、翻肚皮、贴边压扁等互动和 7 套预设色板；纯 DOM 实现，六种音效由 WebAudio 合成。
+repo: https://github.com/nzl153/dsh-pet-whale
+package: pet-whale
+rowId: pet-whale
+category: pet
+tags:
+  - pet
+  - whale
+  - animations
+  - palettes
+modes:
+  - light
+  - dark
+install:
+  target: github:nzl153/dsh-pet-whale#231a1936c427e0fae1d34ebb3942aa342192ffb6
+  version: 1.2.7
+  commit: 231a1936c427e0fae1d34ebb3942aa342192ffb6
+compatibility:
+  dsh: ">=0.1.5-alpha.2 <0.3.0 || >=0.1.5-alpha.2"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/demo.gif
+  - https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/screenshots/01-idle.png
+  - https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/screenshots/02-think.png
+  - https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/screenshots/03-working.png
+  - https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/screenshots/04-celebrate.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1533
+starsSnapshot: 14
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+listScreenshot: https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/demo.gif

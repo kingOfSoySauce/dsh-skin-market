@@ -1,0 +1,55 @@
+id: baizz.520.dsh.theme.studio
+name:
+  zh: 配色工坊
+  en: Palette Studio
+author: baizz-520
+description: 把会话区底色与透明度、主/次文字色、输入框和边栏底色拆成独立可调项，边栏还能单独放一张背景图；壁纸支持填充方式、3×3 位置与暗化（或按图片亮度自动暗化），改动即时生效并把配色存进浏览器 localStorage，可导出/导入 JSON。
+repo: https://github.com/baizz-520/dsh-theme-studio
+package: dsh-theme-studio
+rowId: dsh-theme-studio
+category: skin
+tags:
+  - palette
+  - background
+  - sidebar-image
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:baizz-520/dsh-theme-studio#1ba240f55419d05f56731e103a6cb733870eae6f
+  version: 1.0.0
+  commit: 1ba240f55419d05f56731e103a6cb733870eae6f
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1521
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+marketScreenshots:
+  - skin-screenshots/baizz-520__dsh-theme-studio/1ba240f55419d05f56731e103a6cb733870eae6f/home-graphite.png
+  - skin-screenshots/baizz-520__dsh-theme-studio/1ba240f55419d05f56731e103a6cb733870eae6f/home-matcha.png
+  - skin-screenshots/baizz-520__dsh-theme-studio/1ba240f55419d05f56731e103a6cb733870eae6f/home-midnight.png

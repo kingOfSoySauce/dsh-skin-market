@@ -1,0 +1,57 @@
+id: ye.zinan.dsh.skin.im2005
+name:
+  zh: IM2005
+  en: IM2005
+author: YE-ZINAN
+description: 把桌面端换成 2005 年即时通讯软件的样子：直角窗口、1px 硬边框、宋体、蓝色渐变标题条、好友分组式侧栏，还有一条「形象秀」右列。输入区工具条塞进余额、跨会话备注框、美式八球、20×20 扫雷、会无限生长的 Token 农场、六人桌德州扑克、后台任务和 1–180 分钟专注静音；皮肤分关/标准/浓烈三档实时切换。美术全部是原创 SVG，不含第三方图片、图标、商标或字体。
+repo: https://github.com/YE-ZINAN/dsh-skin-im2005
+package: dsh-skin-im2005
+rowId: dsh-skin-im2005
+category: skin
+tags:
+  - retro
+  - instant-messenger
+  - "2005"
+  - mini-games
+  - focus
+modes:
+  - light
+  - dark
+install:
+  target: github:YE-ZINAN/dsh-skin-im2005#616adb5d3e3c63e442cfc49b051d10bd3ffddfa5
+  version: 1.16.3
+  commit: 616adb5d3e3c63e442cfc49b051d10bd3ffddfa5
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1539
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+marketScreenshots:
+  - skin-screenshots/YE-ZINAN__dsh-skin-im2005/616adb5d3e3c63e442cfc49b051d10bd3ffddfa5/home.png
+  - skin-screenshots/YE-ZINAN__dsh-skin-im2005/616adb5d3e3c63e442cfc49b051d10bd3ffddfa5/conversation.png
+  - skin-screenshots/YE-ZINAN__dsh-skin-im2005/616adb5d3e3c63e442cfc49b051d10bd3ffddfa5/settings.png

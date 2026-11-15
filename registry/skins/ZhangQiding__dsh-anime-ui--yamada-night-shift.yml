@@ -1,0 +1,55 @@
+id: zhangqiding.yamada.night.shift
+name:
+  zh: 山田的夜班
+  en: Yamada Night Shift
+author: ZhangQiding
+description: 夜间限定的山田凉动漫皮肤：欢迎页整屏全身立绘，对话页把角色压在右侧安全构图区，只做一套深色夜景配色；可另装同仓相册插件，把本地 PNG/JPG 照片设成背景。皮肤按 CC BY-NC-SA 4.0 非商用，相册插件为 MIT。
+repo: https://github.com/ZhangQiding/dsh-anime-ui
+subpath: yamada-night-shift
+package: "@dsh-external/dsh-client-ui-skin-yamada-night-shift"
+rowId: ui-skin-yamada-night-shift
+category: skin
+tags:
+  - anime
+  - night
+  - illustration
+  - photo-album
+modes:
+  - dark
+install:
+  target: github:ZhangQiding/dsh-anime-ui#de271e2f17b8dda55234b4dd2622059cb2ddfab8&path:/yamada-night-shift
+  version: 0.0.1
+  commit: de271e2f17b8dda55234b4dd2622059cb2ddfab8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ZhangQiding/dsh-anime-ui/de271e2f17b8dda55234b4dd2622059cb2ddfab8/yamada-night-shift/preview/dark.webp
+  - https://raw.githubusercontent.com/ZhangQiding/dsh-anime-ui/de271e2f17b8dda55234b4dd2622059cb2ddfab8/yamada-night-shift/preview/chat.webp
+  - https://raw.githubusercontent.com/ZhangQiding/dsh-anime-ui/de271e2f17b8dda55234b4dd2622059cb2ddfab8/docs/verification/album-background-user-screenshot.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: CC-BY-NC-SA-4.0
+  commercialUse: false
+featuredRank: 1542
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-15T16:38:24.792Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-15T16:38:24.792Z
+listScreenshot: https://raw.githubusercontent.com/ZhangQiding/dsh-anime-ui/de271e2f17b8dda55234b4dd2622059cb2ddfab8/yamada-night-shift/preview/dark.webp
