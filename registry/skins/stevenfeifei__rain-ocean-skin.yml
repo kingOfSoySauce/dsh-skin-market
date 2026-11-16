@@ -24,7 +24,8 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+screenshots:
+  - https://raw.githubusercontent.com/stevenfeifei/rain-ocean-skin/2d6ea273d54e656c862096f0edc2e8742bccf65b/native-dist/poster.jpg
 review:
   compatibility: unverified
   preview: repository-card
@@ -59,3 +60,4 @@ releaseUpdatedAt: 2026-11-15T20:45:46.490Z
 metadataUpdatedAt: 2026-11-15T20:45:46.490Z
 starsUpdatedAt: 2026-11-14T21:10:03.131Z
 updatedAt: 2026-11-15T20:45:46.490Z
+listScreenshot: https://raw.githubusercontent.com/stevenfeifei/rain-ocean-skin/2d6ea273d54e656c862096f0edc2e8742bccf65b/native-dist/poster.jpg
