@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:unknownue/dsh-skin-endfield#c7ca061e86ccf03277f1e1522605ec6628474402
+  target: github:unknownue/dsh-skin-endfield#714cb89b731f1883820a9cfa4973ad5e4e6b022d
   version: 0.1.5
-  commit: c7ca061e86ccf03277f1e1522605ec6628474402
+  commit: 714cb89b731f1883820a9cfa4973ad5e4e6b022d
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -46,19 +46,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: c7ca061e86ccf03277f1e1522605ec6628474402
+    commit: 714cb89b731f1883820a9cfa4973ad5e4e6b022d
     packageVersion: 0.1.5
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:46:03.565Z
+    checkedAt: 2026-11-16T09:18:41.880Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1462
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-15T20:46:03.702Z
-metadataUpdatedAt: 2026-11-15T20:46:03.702Z
+featuredRank: 1462
+releaseUpdatedAt: 2026-11-16T09:48:54.442Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-15T20:46:03.702Z
+updatedAt: 2026-11-16T09:48:54.442Z

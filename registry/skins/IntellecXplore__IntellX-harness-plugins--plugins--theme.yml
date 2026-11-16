@@ -37,10 +37,6 @@ compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/home.png
-  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/conversation.png
-  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -69,9 +65,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1189
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/home.png
+  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/conversation.png
+  - skin-screenshots/IntellecXplore__IntellX-harness-plugins--plugins--theme/072faaf8e2a004a81b9b78fd7fa49c188806e5c1/settings.png
+featuredRank: 1189
 releaseUpdatedAt: 2026-11-15T20:44:42.457Z
-metadataUpdatedAt: 2026-11-15T20:44:42.457Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-15T20:44:42.457Z
+updatedAt: 2026-11-16T09:48:54.442Z

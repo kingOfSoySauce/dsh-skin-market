@@ -1,0 +1,71 @@
+id: nzl153.dsh.pet.whale
+name:
+  zh: 桌宠小鲸鱼
+  en: Pet Whale
+author: nzl153
+description: 右下角一只官方轮廓版小鲸鱼，随 agent 状态在 idle、深潜思考、敲代码、庆祝、报错发抖等 7 种动画间切换，另有摸头、连戳闹脾气、甩晕、翻肚皮、贴边压扁等互动和 7 套预设色板；纯 DOM 实现，六种音效由 WebAudio 合成。
+repo: https://github.com/nzl153/dsh-pet-whale
+package: pet-whale
+rowId: pet-whale
+category: pet
+tags:
+  - pet
+  - whale
+  - animations
+  - palettes
+modes:
+  - light
+  - dark
+install:
+  target: github:nzl153/dsh-pet-whale#231a1936c427e0fae1d34ebb3942aa342192ffb6
+  version: 1.2.7
+  commit: 231a1936c427e0fae1d34ebb3942aa342192ffb6
+  npm:
+    name: pet-whale
+    version: 1.2.7
+    integrity: sha512-TO41yVejoRyal0wVgigJrL6rTxMK5Ri4Nf3eIyxRdPe9uQO5552qc2qHwYmmfx8SDmeQqsdObKawVEemxIT8Yg==
+    repository: https://github.com/nzl153/dsh-pet-whale
+    gitHead: 231a1936c427e0fae1d34ebb3942aa342192ffb6
+compatibility:
+  dsh: ">=0.1.5-alpha.2 <0.3.0 || >=0.1.5-alpha.2"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/demo.gif
+  - https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/screenshots/01-idle.png
+  - https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/screenshots/02-think.png
+  - https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/screenshots/03-working.png
+  - https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/screenshots/04-celebrate.png
+listScreenshot: https://raw.githubusercontent.com/nzl153/dsh-pet-whale/231a1936c427e0fae1d34ebb3942aa342192ffb6/docs/demo.gif
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.5-alpha.2 <0.3.0 || >=0.1.5-alpha.2 未被本次检测范围 >=0.1.5-alpha.2 <0.3.0 完全覆盖（固定版本 231a1936c427e0fae1d34ebb3942aa342192ffb6）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+  scan:
+    commit: 231a1936c427e0fae1d34ebb3942aa342192ffb6
+    packageVersion: 1.2.7
+    scannerVersion: static-v2
+    dshVersion: ">=0.1.5-alpha.2 <0.3.0"
+    mode: static
+    result: pass
+    checkedAt: 2026-11-16T09:15:24.383Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 14
+featuredRank: 1533
+releaseUpdatedAt: 2026-11-16T09:48:54.442Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-16T09:48:54.442Z

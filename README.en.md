@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-16**: [Whale Maid](https://github.com/yunxiiQwQ/dsh-maid-whale-UI) (yunxiiQwQ). See the [recent additions log](./docs/recently-added.md#recent-2026-11-16-yunxiiqwq-maid-whale-webui).
+- **2026-11-16**: [dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-theme) (CoolTea001). See the [recent additions log](./docs/recently-added.md#recent-2026-11-16-cooltea001-dsh-cool-theme).
 
 See the [recent additions log](./docs/recently-added.md).
 

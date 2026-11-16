@@ -28,10 +28,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/lovetpy__dsh-skin-leg/cbbae2ea0af924350103f31a70d6b2c3ee60290a/home.png
-  - skin-screenshots/lovetpy__dsh-skin-leg/cbbae2ea0af924350103f31a70d6b2c3ee60290a/conversation.png
-  - skin-screenshots/lovetpy__dsh-skin-leg/cbbae2ea0af924350103f31a70d6b2c3ee60290a/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -60,9 +56,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1389
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/lovetpy__dsh-skin-leg/cbbae2ea0af924350103f31a70d6b2c3ee60290a/home.png
+  - skin-screenshots/lovetpy__dsh-skin-leg/cbbae2ea0af924350103f31a70d6b2c3ee60290a/conversation.png
+  - skin-screenshots/lovetpy__dsh-skin-leg/cbbae2ea0af924350103f31a70d6b2c3ee60290a/settings.png
+featuredRank: 1389
 releaseUpdatedAt: 2026-11-15T20:45:05.193Z
-metadataUpdatedAt: 2026-11-15T20:45:05.193Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-15T20:45:05.193Z
+updatedAt: 2026-11-16T09:48:54.442Z

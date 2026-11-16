@@ -36,10 +36,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/home.png
-  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/conversation.png
-  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -67,9 +63,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1198
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/home.png
+  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/conversation.png
+  - skin-screenshots/wuyad__dsh-client-ui-cat--cat-plugin/82afc31696ad6cbade29f8cdda313d7cfb32a144/settings.png
+featuredRank: 1198
 releaseUpdatedAt: 2026-11-15T20:46:17.620Z
-metadataUpdatedAt: 2026-11-15T20:46:17.620Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-15T20:46:17.620Z
+updatedAt: 2026-11-16T09:48:54.442Z

@@ -1,0 +1,72 @@
+id: tkingxiao.dsh.any.background
+name:
+  zh: 主题色与壁纸
+  en: Theme Colour & Wallpaper
+author: Tkingxiao
+description: 用 PS 式色轮或取色器定主题色，实时生成 30+ 个设计令牌；背景可放图片、视频（磁盘持久化 + HTTP Range）或网格渐变/Shader/几何生成图，六套预设之外还能逐面调不透明度与模糊，壁纸池按刷新/时/日/周轮换并支持昼夜切换。
+repo: https://github.com/Tkingxiao/dsh-any-background
+package: dsh-any-background
+rowId: dsh-any-background
+category: skin
+tags:
+  - wallpaper
+  - theme-color
+  - video
+  - opacity
+modes:
+  - light
+  - dark
+install:
+  target: github:Tkingxiao/dsh-any-background#8a50d6576ab4727ea4654a6fb65821465e5ec60a
+  version: 0.4.5
+  commit: 8a50d6576ab4727ea4654a6fb65821465e5ec60a
+  npm:
+    name: dsh-any-background
+    version: 0.4.5
+    integrity: sha512-plngRaoeeWsSiypW5HYUkrlVL0oWi0hOfPa64GxUrNXDc+9+yfpi8H4OL9p4u667yLAegT2tanhCjCLaOHSz+A==
+    repository: https://github.com/Tkingxiao/dsh-any-background
+    gitHead: 8a50d6576ab4727ea4654a6fb65821465e5ec60a
+compatibility:
+  dsh: 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-2.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-3.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-4.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-6.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-9.png
+  - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-10.png
+listScreenshot: https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+  scan:
+    commit: 8a50d6576ab4727ea4654a6fb65821465e5ec60a
+    packageVersion: 0.4.5
+    scannerVersion: static-v2
+    dshVersion: 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.0-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-16T09:15:11.005Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 59
+featuredRank: 1538
+releaseUpdatedAt: 2026-11-16T09:48:54.442Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-16T09:48:54.442Z

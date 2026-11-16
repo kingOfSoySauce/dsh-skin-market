@@ -27,10 +27,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/songcheng-ya__dsh-theme-studio/6098c0ab6a369a53e9b9ef104568ef3a0b8f631b/home-amber.png
-  - skin-screenshots/songcheng-ya__dsh-theme-studio/6098c0ab6a369a53e9b9ef104568ef3a0b8f631b/home-crimson.png
-  - skin-screenshots/songcheng-ya__dsh-theme-studio/6098c0ab6a369a53e9b9ef104568ef3a0b8f631b/home-deepseek.png
 screenshots: []
 review:
   compatibility: unverified
@@ -59,9 +55,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1535
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/songcheng-ya__dsh-theme-studio/6098c0ab6a369a53e9b9ef104568ef3a0b8f631b/home-amber.png
+  - skin-screenshots/songcheng-ya__dsh-theme-studio/6098c0ab6a369a53e9b9ef104568ef3a0b8f631b/home-crimson.png
+  - skin-screenshots/songcheng-ya__dsh-theme-studio/6098c0ab6a369a53e9b9ef104568ef3a0b8f631b/home-deepseek.png
+featuredRank: 1535
 releaseUpdatedAt: 2026-11-15T20:43:11.803Z
-metadataUpdatedAt: 2026-11-15T20:43:11.803Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T20:43:11.803Z
+updatedAt: 2026-11-16T09:48:54.442Z

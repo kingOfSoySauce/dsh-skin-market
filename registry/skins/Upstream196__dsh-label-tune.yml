@@ -43,9 +43,10 @@ health:
     commit: 7f154fb2231c1d6a909501bd1ed256256bcd81cb
     packageVersion: 0.1.0
     scannerVersion: static-v2
+    dshVersion: ">=4.0.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:53:16.635Z
+    checkedAt: 2026-11-16T09:18:41.902Z
     findings: []
 license:
   code: MIT
@@ -57,6 +58,6 @@ marketScreenshots:
   - skin-screenshots/Upstream196__dsh-label-tune/7f154fb2231c1d6a909501bd1ed256256bcd81cb/settings.png
 featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-14T23:28:29.986Z
+updatedAt: 2026-11-16T09:48:54.442Z

@@ -1,0 +1,65 @@
+id: z21for99.silk.background
+name:
+  zh: 丝绸背景
+  en: Silk Background
+author: z21for99
+description: 全屏 WebGL 丝绸纹理随鼠标指针流动扭曲，三档 off/dim/vivid 控制亮度，页面不可见时停渲染省电；同时用明暗两套别名令牌把界面做成半透明玻璃，零运行时依赖，卸载即还原。
+repo: https://github.com/z21for99/silk-background
+package: silk-background
+rowId: silk-background
+category: skin
+tags:
+  - webgl
+  - shader
+  - glass
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:z21for99/silk-background#ea244cda7a70ec7e8a42bae51ae02e74ace1d287
+  version: 0.4.0
+  commit: ea244cda7a70ec7e8a42bae51ae02e74ace1d287
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/z21for99/silk-background/ea244cda7a70ec7e8a42bae51ae02e74ace1d287/screenshots/screenshot-1.png
+  - https://raw.githubusercontent.com/z21for99/silk-background/ea244cda7a70ec7e8a42bae51ae02e74ace1d287/screenshots/screenshot-2.png
+listScreenshot: https://raw.githubusercontent.com/z21for99/silk-background/ea244cda7a70ec7e8a42bae51ae02e74ace1d287/screenshots/screenshot-1.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: ea244cda7a70ec7e8a42bae51ae02e74ace1d287
+    packageVersion: 0.4.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-16T09:15:49.135Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 4
+marketScreenshots:
+  - skin-screenshots/z21for99__silk-background/ea244cda7a70ec7e8a42bae51ae02e74ace1d287/home.gif
+  - skin-screenshots/z21for99__silk-background/ea244cda7a70ec7e8a42bae51ae02e74ace1d287/home.png
+  - skin-screenshots/z21for99__silk-background/ea244cda7a70ec7e8a42bae51ae02e74ace1d287/conversation.png
+featuredRank: 1541
+releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-16T09:48:54.442Z

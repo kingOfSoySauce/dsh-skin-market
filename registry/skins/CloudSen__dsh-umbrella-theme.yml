@@ -30,10 +30,6 @@ compatibility:
   dsh: ">=0.2.1-rc.1 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/home.png
-  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/conversation.png
-  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -61,9 +57,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/home.png
+  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/conversation.png
+  - skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/settings.png
+featuredRank: 1000
 releaseUpdatedAt: 2026-11-09T00:17:31.746Z
-metadataUpdatedAt: 2026-11-15T20:44:03.641Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-15T20:44:03.641Z
-updatedAt: 2026-11-15T20:44:03.641Z
+updatedAt: 2026-11-16T09:48:54.442Z

@@ -38,12 +38,13 @@ health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: e769eb31089880d156dc0cf9e98f1fa14bb7c5b9
     packageVersion: 0.2.1
@@ -59,6 +60,6 @@ license:
 starsSnapshot: 0
 featuredRank: 100
 releaseUpdatedAt: 2026-08-23T05:33:10.870Z
-metadataUpdatedAt: 2026-08-23T05:33:10.870Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-09-09T21:40:50.369Z
-updatedAt: 2026-09-09T21:40:50.369Z
+updatedAt: 2026-11-16T09:48:54.442Z

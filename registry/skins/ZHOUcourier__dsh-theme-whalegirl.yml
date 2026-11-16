@@ -58,9 +58,10 @@ health:
     commit: aecc434d7b26e432516b6203e7a4e46917342b82
     packageVersion: 0.4.0
     scannerVersion: static-v2
+    dshVersion: ">=0.1.6"
     mode: static
     result: pass
-    checkedAt: 2026-11-04T00:04:34.517Z
+    checkedAt: 2026-11-16T09:17:19.703Z
     findings: []
 license:
   code: MIT AND CC-BY-NC-SA-4.0
@@ -68,6 +69,6 @@ license:
 starsSnapshot: 1
 featuredRank: 1032
 releaseUpdatedAt: 2026-11-04T00:04:35.876Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-09-18T21:39:02.179Z
-updatedAt: 2026-11-14T23:28:29.986Z
+updatedAt: 2026-11-16T09:48:54.442Z

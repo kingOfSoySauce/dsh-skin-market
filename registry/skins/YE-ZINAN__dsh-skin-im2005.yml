@@ -28,10 +28,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/YE-ZINAN__dsh-skin-im2005/616adb5d3e3c63e442cfc49b051d10bd3ffddfa5/home.png
-  - skin-screenshots/YE-ZINAN__dsh-skin-im2005/616adb5d3e3c63e442cfc49b051d10bd3ffddfa5/conversation.png
-  - skin-screenshots/YE-ZINAN__dsh-skin-im2005/616adb5d3e3c63e442cfc49b051d10bd3ffddfa5/settings.png
 screenshots:
   - https://github.com/user-attachments/assets/a62e00c3-c385-4ea0-b9c5-918ad1c113dd
   - https://github.com/user-attachments/assets/10bf8290-8a0c-4e98-aef6-1ca08627eaae
@@ -62,9 +58,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1539
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/YE-ZINAN__dsh-skin-im2005/616adb5d3e3c63e442cfc49b051d10bd3ffddfa5/home.png
+  - skin-screenshots/YE-ZINAN__dsh-skin-im2005/616adb5d3e3c63e442cfc49b051d10bd3ffddfa5/conversation.png
+  - skin-screenshots/YE-ZINAN__dsh-skin-im2005/616adb5d3e3c63e442cfc49b051d10bd3ffddfa5/settings.png
+featuredRank: 1539
 releaseUpdatedAt: 2026-11-15T20:46:27.809Z
-metadataUpdatedAt: 2026-11-15T20:46:27.809Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T20:46:27.809Z
+updatedAt: 2026-11-16T09:48:54.442Z

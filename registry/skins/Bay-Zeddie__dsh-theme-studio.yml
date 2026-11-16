@@ -27,10 +27,6 @@ compatibility:
   dsh: ">=0.1.5"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-aurora.png
-  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-cyber.png
-  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-deepsea.png
 screenshots: []
 review:
   compatibility: verified
@@ -60,9 +56,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1524
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-aurora.png
+  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-cyber.png
+  - skin-screenshots/Bay-Zeddie__dsh-theme-studio/772e4ca3d52cbed19fe667e1a97e16ebf08b4e97/home-deepsea.png
+featuredRank: 1524
 releaseUpdatedAt: 2026-11-15T20:42:34.310Z
-metadataUpdatedAt: 2026-11-15T20:42:34.310Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T20:42:34.310Z
+updatedAt: 2026-11-16T09:48:54.442Z

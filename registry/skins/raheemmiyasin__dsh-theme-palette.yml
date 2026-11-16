@@ -27,10 +27,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/home.png
-  - skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/conversation.png
-  - skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -58,9 +54,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1196
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/home.png
+  - skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/conversation.png
+  - skin-screenshots/raheemmiyasin__dsh-theme-palette/b0486fdea6f97fbe559414e044af42b50b5b9e47/settings.png
+featuredRank: 1196
 releaseUpdatedAt: 2026-11-15T20:45:31.663Z
-metadataUpdatedAt: 2026-11-15T20:45:31.663Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-15T20:45:31.663Z
+updatedAt: 2026-11-16T09:48:54.442Z

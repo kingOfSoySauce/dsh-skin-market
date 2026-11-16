@@ -31,27 +31,28 @@ compatibility:
 screenshots:
   - https://opengraph.githubassets.com/5c54a4d90e3202d38dfd0035d3b644c5677dbebc/Leyan0365/dsh-retro-mac
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: repository-card
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 ^0.1.0 完全覆盖（固定版本 5c54a4d90e3202d38dfd0035d3b644c5677dbebc）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: 5c54a4d90e3202d38dfd0035d3b644c5677dbebc
     packageVersion: 0.1.0
     scannerVersion: static-v2
-    dshVersion: ^0.1.0-rc.6
+    dshVersion: ^0.1.0
     mode: static
     result: pass
-    checkedAt: 2026-08-23T05:34:05.814Z
+    checkedAt: 2026-11-16T09:18:06.556Z
     findings: []
 license:
   code: MIT
@@ -59,6 +60,6 @@ license:
 starsSnapshot: 0
 featuredRank: 210
 releaseUpdatedAt: 2026-08-23T05:34:05.909Z
-metadataUpdatedAt: 2026-09-08T09:44:04.508Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-09-09T21:41:00.727Z
-updatedAt: 2026-09-09T21:41:00.727Z
+updatedAt: 2026-11-16T09:48:54.442Z

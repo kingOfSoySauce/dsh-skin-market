@@ -37,26 +37,26 @@ screenshots:
   - https://cdn.jsdelivr.net/gh/weibaohui/dsh-matrix@main/docs/rain-dark.png
 listScreenshot: https://cdn.jsdelivr.net/gh/weibaohui/dsh-matrix@main/docs/rain-dark.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
     commit: a8bba88fb0a0e2a62e71ec34957200983c6de610
     packageVersion: 0.7.1
     scannerVersion: static-v2
+    dshVersion: ">=0.1.7-rc.2"
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:54:25.064Z
+    checkedAt: 2026-11-16T09:18:45.540Z
     findings: []
 license:
   code: MIT
@@ -64,6 +64,6 @@ license:
 starsSnapshot: 0
 featuredRank: 1000
 releaseUpdatedAt: 2026-10-30T03:54:26.721Z
-metadataUpdatedAt: 2026-10-30T03:54:26.721Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-10-30T03:54:26.721Z
+updatedAt: 2026-11-16T09:48:54.442Z

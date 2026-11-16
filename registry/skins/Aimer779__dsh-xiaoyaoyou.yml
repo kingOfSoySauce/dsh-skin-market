@@ -27,26 +27,26 @@ screenshots:
   - https://raw.githubusercontent.com/Aimer779/dsh-xiaoyaoyou/bd32051905b371f4e4a124bb79ba67284b9376f8/docs/images/preview.gif
 listScreenshot: https://raw.githubusercontent.com/Aimer779/dsh-xiaoyaoyou/bd32051905b371f4e4a124bb79ba67284b9376f8/docs/images/preview.gif
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
     commit: bd32051905b371f4e4a124bb79ba67284b9376f8
     packageVersion: 0.1.0
     scannerVersion: static-v2
+    dshVersion: 0.2.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:33:09.262Z
+    checkedAt: 2026-11-16T09:17:27.865Z
     findings: []
 license:
   code: MIT
@@ -54,6 +54,6 @@ license:
 starsSnapshot: 0
 featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-11-09T00:17:15.191Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T00:17:15.191Z
+updatedAt: 2026-11-16T09:48:54.442Z

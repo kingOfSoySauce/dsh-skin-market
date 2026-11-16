@@ -44,9 +44,10 @@ health:
     commit: 943606f09fcfd1273b12f90caeaf2ba80443f2df
     packageVersion: 1.0.0
     scannerVersion: static-v2
+    dshVersion: ">=0.2.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:10:33.883Z
+    checkedAt: 2026-11-16T09:18:53.300Z
     findings: []
 license:
   code: MIT
@@ -58,6 +59,6 @@ marketScreenshots:
   - skin-screenshots/xiao000xue__dsh-music-local/943606f09fcfd1273b12f90caeaf2ba80443f2df/settings.png
 featuredRank: 0
 releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-11-14T23:28:29.986Z
+updatedAt: 2026-11-16T09:48:54.442Z
