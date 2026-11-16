@@ -29,7 +29,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/stushansusu/dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/assets/launch/qinghua/poster.jpg
-listScreenshot: https://raw.githubusercontent.com/stushansusu/dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/assets/launch/qinghua/poster.jpg
+listScreenshot: skin-screenshots/stushansusu__dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/launch-qinghua.gif
 review:
   compatibility: unverified
   preview: verified
@@ -63,3 +63,5 @@ releaseUpdatedAt: 2026-11-14T23:43:30.489Z
 metadataUpdatedAt: 2026-11-14T23:43:30.489Z
 starsUpdatedAt: 2026-11-14T19:39:31.051Z
 updatedAt: 2026-11-14T23:43:30.489Z
+marketScreenshots:
+  - skin-screenshots/stushansusu__dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/launch-qinghua.gif

@@ -33,7 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview-gallery.webp
   - https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview-bear.webp
   - https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/assets/leaf-fall-poster.webp
-listScreenshot: https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview.png
+listScreenshot: skin-screenshots/bbbbbmy__dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -66,3 +66,5 @@ releaseUpdatedAt: 2026-11-14T23:46:55.649Z
 metadataUpdatedAt: 2026-11-14T23:46:55.649Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
 updatedAt: 2026-11-14T23:46:55.649Z
+marketScreenshots:
+  - skin-screenshots/bbbbbmy__dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/home.gif

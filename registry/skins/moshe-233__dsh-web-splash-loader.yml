@@ -29,7 +29,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/moshe-233/dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/preview.png
-listScreenshot: https://raw.githubusercontent.com/moshe-233/dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/preview.png
+listScreenshot: skin-screenshots/moshe-233__dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -62,3 +62,5 @@ releaseUpdatedAt: 2026-11-15T20:45:16.774Z
 metadataUpdatedAt: 2026-11-15T20:45:16.774Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
 updatedAt: 2026-11-15T20:45:16.774Z
+marketScreenshots:
+  - skin-screenshots/moshe-233__dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/home.gif

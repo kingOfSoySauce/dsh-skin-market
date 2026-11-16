@@ -39,7 +39,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/boot.jpg
   - https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/theme.jpg
-listScreenshot: https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/boot.jpg
+listScreenshot: skin-screenshots/zzzhengqi__dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -73,3 +73,5 @@ releaseUpdatedAt: 2026-11-15T20:46:44.648Z
 metadataUpdatedAt: 2026-11-15T20:46:44.648Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
 updatedAt: 2026-11-15T20:46:44.648Z
+marketScreenshots:
+  - skin-screenshots/zzzhengqi__dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/home.gif

@@ -40,7 +40,7 @@ screenshots:
   - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/preview.jpg
   - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/assets/key-art.webp
   - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/assets/intro.jpg
-listScreenshot: https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/preview.jpg
+listScreenshot: skin-screenshots/AAAjzx111__dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -72,3 +72,5 @@ releaseUpdatedAt: 2026-11-14T23:46:39.269Z
 metadataUpdatedAt: 2026-11-14T23:46:39.269Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
 updatedAt: 2026-11-14T23:46:39.269Z
+marketScreenshots:
+  - skin-screenshots/AAAjzx111__dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/home.gif

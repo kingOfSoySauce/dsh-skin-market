@@ -30,7 +30,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/zfwoo/dsh-splash/13515fc004ce15c40eb2b62f4447b1872a056fe5/docs/screenshot.png
-listScreenshot: https://raw.githubusercontent.com/zfwoo/dsh-splash/13515fc004ce15c40eb2b62f4447b1872a056fe5/docs/screenshot.png
+listScreenshot: skin-screenshots/zfwoo__dsh-splash/13515fc004ce15c40eb2b62f4447b1872a056fe5/launch.gif
 review:
   compatibility: verified
   preview: verified
@@ -63,3 +63,5 @@ releaseUpdatedAt: 2026-11-15T20:46:35.456Z
 metadataUpdatedAt: 2026-11-15T20:46:35.456Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
 updatedAt: 2026-11-15T20:46:35.456Z
+marketScreenshots:
+  - skin-screenshots/zfwoo__dsh-splash/13515fc004ce15c40eb2b62f4447b1872a056fe5/launch.gif

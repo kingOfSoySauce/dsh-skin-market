@@ -30,7 +30,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/preview.jpg
   - https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/window-controls.png
-listScreenshot: https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/preview.jpg
+listScreenshot: skin-screenshots/kk0421__lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -65,3 +65,5 @@ releaseUpdatedAt: 2026-11-14T00:24:30.668Z
 metadataUpdatedAt: 2026-11-14T00:24:30.668Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
 updatedAt: 2026-11-14T00:24:30.668Z
+marketScreenshots:
+  - skin-screenshots/kk0421__lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/home.gif

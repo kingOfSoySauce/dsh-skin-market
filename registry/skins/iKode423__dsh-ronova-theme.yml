@@ -32,7 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-dark-chat.webp
   - https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-light-new-chat.webp
   - https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-light-chat.webp
-listScreenshot: https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-dark-new-chat.webp
+listScreenshot: skin-screenshots/iKode423__dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -65,3 +65,5 @@ releaseUpdatedAt: 2026-11-14T23:47:36.306Z
 metadataUpdatedAt: 2026-11-14T23:47:36.306Z
 starsUpdatedAt: 2026-11-15T20:40:53.617Z
 updatedAt: 2026-11-15T20:40:53.617Z
+marketScreenshots:
+  - skin-screenshots/iKode423__dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/home.gif

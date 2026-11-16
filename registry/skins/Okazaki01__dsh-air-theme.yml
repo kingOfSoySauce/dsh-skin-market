@@ -33,7 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/preview/light-conversation.png
   - https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/preview/dark-new-session.png
   - https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/preview/dark-conversation.png
-listScreenshot: https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/preview/light-new-session.png
+listScreenshot: skin-screenshots/Okazaki01__dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -66,3 +66,5 @@ releaseUpdatedAt: 2026-11-14T23:48:22.674Z
 metadataUpdatedAt: 2026-11-14T23:48:22.674Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
 updatedAt: 2026-11-14T23:48:22.674Z
+marketScreenshots:
+  - skin-screenshots/Okazaki01__dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/home.gif

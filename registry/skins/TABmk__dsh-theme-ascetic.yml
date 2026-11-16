@@ -31,7 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/palettes.png
   - https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/session.png
   - https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/terminal.png
-listScreenshot: https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/palettes.png
+listScreenshot: skin-screenshots/TABmk__dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -63,3 +63,5 @@ releaseUpdatedAt: 2026-11-11T06:41:11.005Z
 metadataUpdatedAt: 2026-11-11T13:17:15.192Z
 starsUpdatedAt: 2026-11-14T23:43:18.623Z
 updatedAt: 2026-11-14T23:43:18.623Z
+marketScreenshots:
+  - skin-screenshots/TABmk__dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/home.gif

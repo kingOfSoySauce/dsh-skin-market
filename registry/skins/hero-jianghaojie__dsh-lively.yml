@@ -30,7 +30,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/hero-jianghaojie/dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/docs/preview-light.png
-listScreenshot: https://raw.githubusercontent.com/hero-jianghaojie/dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/docs/preview-light.png
+listScreenshot: skin-screenshots/hero-jianghaojie__dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -62,3 +62,5 @@ releaseUpdatedAt: 2026-11-15T20:44:34.412Z
 metadataUpdatedAt: 2026-11-15T20:44:34.412Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
 updatedAt: 2026-11-15T20:44:34.412Z
+marketScreenshots:
+  - skin-screenshots/hero-jianghaojie__dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/home.gif

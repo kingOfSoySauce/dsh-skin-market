@@ -33,7 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/color-background.jpg
   - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/color-settings.jpg
   - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/canvas-custom.jpg
-listScreenshot: https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/settings-custom.png
+listScreenshot: skin-screenshots/SoulZhou__dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -65,3 +65,5 @@ releaseUpdatedAt: 2026-11-15T20:45:45.240Z
 metadataUpdatedAt: 2026-11-15T20:45:45.240Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
 updatedAt: 2026-11-15T20:45:45.240Z
+marketScreenshots:
+  - skin-screenshots/SoulZhou__dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/home.gif

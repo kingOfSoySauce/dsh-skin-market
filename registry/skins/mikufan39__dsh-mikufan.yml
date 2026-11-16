@@ -31,7 +31,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/mikufan39/dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/control-panel.png
-listScreenshot: https://raw.githubusercontent.com/mikufan39/dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/control-panel.png
+listScreenshot: skin-screenshots/mikufan39__dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -64,3 +64,5 @@ releaseUpdatedAt: 2026-11-14T23:48:13.672Z
 metadataUpdatedAt: 2026-11-14T23:48:13.672Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
 updatedAt: 2026-11-14T23:48:13.672Z
+marketScreenshots:
+  - skin-screenshots/mikufan39__dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/home.gif

@@ -32,7 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/cngtn/dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/docs/preview-dark-2.png
   - https://raw.githubusercontent.com/cngtn/dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/docs/preview-light-1.png
   - https://raw.githubusercontent.com/cngtn/dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/docs/preview-light-2.png
-listScreenshot: https://raw.githubusercontent.com/cngtn/dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/docs/preview-dark-1.png
+listScreenshot: skin-screenshots/cngtn__dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -65,3 +65,5 @@ releaseUpdatedAt: 2026-11-14T23:44:49.476Z
 metadataUpdatedAt: 2026-11-14T23:44:49.476Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
 updatedAt: 2026-11-14T23:44:49.476Z
+marketScreenshots:
+  - skin-screenshots/cngtn__dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/home.gif

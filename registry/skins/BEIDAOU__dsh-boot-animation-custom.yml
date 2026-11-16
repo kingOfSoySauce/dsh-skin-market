@@ -31,7 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/BEIDAOU/dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/docs/images/preview-01.jpg
   - https://raw.githubusercontent.com/BEIDAOU/dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/docs/images/preview-02.jpg
   - https://raw.githubusercontent.com/BEIDAOU/dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/docs/images/preview-03.jpg
-listScreenshot: https://raw.githubusercontent.com/BEIDAOU/dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/docs/images/preview-01.jpg
+listScreenshot: skin-screenshots/BEIDAOU__dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/launch.gif
 review:
   compatibility: verified
   preview: verified
@@ -64,3 +64,5 @@ releaseUpdatedAt: 2026-11-14T23:45:26.662Z
 metadataUpdatedAt: 2026-11-14T23:45:26.662Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
 updatedAt: 2026-11-14T23:45:26.662Z
+marketScreenshots:
+  - skin-screenshots/BEIDAOU__dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/launch.gif
