@@ -1368,24 +1368,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "senrylee.dsh-frosted-window": {
-      "name": {
-        "zh": "全窗磨砂",
-        "en": "Full-window Frost"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "上传图片作为 DeepSeek Harness Web 的整窗磨砂玻璃主题。",
-        "en": "Upload an image as a full-window frosted-glass theme for DeepSeek Harness Web."
-      },
-      "source": {
-        "kind": "github-about",
-        "hash": "bba55dffe94b8072d3aefb57d59dbb9471712de7db2311e707d12cee5ead2ae6",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "aks1st.ikun-theme-skin": {
       "name": {
         "zh": "IKUN 主题",
@@ -1399,24 +1381,6 @@
       "source": {
         "kind": "github-about",
         "hash": "8fc7d7029eb7a5b5d8f9b923bb59a42c4a6b582689f8abe06b300e93214da9e8",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "sim-xia.dsh-vscode-theme": {
-      "name": {
-        "zh": "VS Code 主题",
-        "en": "VS Code Theme"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "在 DSH Web UI 中使用为 Visual Studio Code 设计的 .vsix 主题文件。",
-        "en": "Use .vsix theme files designed for Visual Studio Code in the DSH Web UI."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "33618d42aec89d3dff495f76796b0db926afd2a3c5642516049a8c44e1615680",
         "approvedAt": "2026-11-06"
       },
       "override": true,
@@ -1998,24 +1962,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "aik358.dsh-anchored-monitor": {
-      "name": {
-        "zh": "锚定思维监控",
-        "en": "Anchored Reasoning Monitor"
-      },
-      "descriptionPolicy": "curate",
-      "source": {
-        "kind": "curated",
-        "hash": "14958bad62113ad3562713d3a55a47490f339e0db7b185d85d33c349da161b89",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence",
-      "description": {
-        "zh": "实时读取会话 reasoning 块中的 we / let's / let me 指纹，显示思考强度、三波段状态和心电图式曲线；可选在轨迹偏离时进行分级干预，其他模型建议保持只监控。",
-        "en": "Reads the we / let's / let me fingerprints in session reasoning blocks and shows thinking intensity, three-band state, and an ECG-style curve. Optional tiered interventions can respond to trajectory drift; the README recommends monitor-only mode for other models."
-      }
-    },
     "chouxiaohuai.uiskin-theme": {
       "name": {
         "zh": "海洋幻想蓝玻璃主题",
@@ -2083,24 +2029,6 @@
       "source": {
         "kind": "curated",
         "hash": "dc26d51c359788e76cbadbbc61ddf878d4475b8c4a0ee30b2e6ff54d618cc6d5",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "starryhui.dsh-custom-background": {
-      "name": {
-        "zh": "背景图库",
-        "en": "Background Gallery"
-      },
-      "description": {
-        "zh": "背景设置插件：扫描本地图库并提供缩略图选择、随机背景、缩放/裁切/定位、透明度与高斯模糊调节，以及 cover/contain/fill 显示模式和多图交叉淡化轮播。",
-        "en": "A background-settings plugin that scans a local image folder and provides thumbnail selection, random backgrounds, scale/crop/position controls, opacity and Gaussian blur, cover/contain/fill modes, and cross-fade rotation."
-      },
-      "descriptionPolicy": "show",
-      "source": {
-        "kind": "curated",
-        "hash": "33dd137bb9a39834ecaa31c4e97d9302864127935ec4c2d2b6635d6a30d1778b",
         "approvedAt": "2026-11-06"
       },
       "override": true,
@@ -2763,24 +2691,6 @@
       "source": {
         "kind": "curated",
         "hash": "961869705ef54f31e61c675247ac55780682aa2c072433db88249bb3c2bb40e6",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "fox4096.dsh-custom-css": {
-      "name": {
-        "zh": "自定义 CSS 编辑器",
-        "en": "Custom CSS Editor"
-      },
-      "description": {
-        "zh": "在 DSH Web 设置中编辑并即时应用保存于宿主磁盘的 CSS 文件，提供语法高亮、补全、规则面板、元素拾取、查找替换、撤销重做和多文件管理；另提供无需编写 CSS 的壁纸面板。",
-        "en": "Edit CSS files stored on the host disk from DSH Web settings and apply changes immediately, with syntax highlighting, completion, rule panels, element picking, search/replace, undo/redo, and multi-file management; a wallpaper panel works without writing CSS."
-      },
-      "descriptionPolicy": "show",
-      "source": {
-        "kind": "curated",
-        "hash": "ad452c41ccdaf3e638247cd551db5fef8b11146ff74366069c5d5db9d0770e5e",
         "approvedAt": "2026-11-06"
       },
       "override": true,
@@ -3704,42 +3614,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "sakuraaa667.dsh-wallpaper-engine": {
-      "name": {
-        "zh": "Wallpaper Engine 本地壁纸",
-        "en": "Local Wallpaper Engine Backgrounds"
-      },
-      "description": {
-        "zh": "扫描本机 Wallpaper Engine 已下载的工坊与项目壁纸，在设置页搜索并设为背景。支持图片、静音循环视频和暗化调节；场景与网页壁纸只显示预览图，不进行实时渲染。",
-        "en": "Browse and search locally downloaded Wallpaper Engine workshop and project wallpapers, then use them as backgrounds. Supports images, silent looping videos, and dimming controls; scene and web wallpapers use preview images rather than live rendering."
-      },
-      "descriptionPolicy": "show",
-      "source": {
-        "kind": "curated",
-        "hash": "24c675604b44e78cf8e504dbde13d4e79321e9b5f96337bcf55361b2c99a8cbc",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "goatbroai.web-background": {
-      "name": {
-        "zh": "纯色与图片背景",
-        "en": "Solid Color & Image Backgrounds"
-      },
-      "description": {
-        "zh": "在设置中选择无背景、纯色或本地图片，并调整背景不透明度。图片会自动压缩，配置保存在浏览器中，刷新后恢复并在多个标签页间同步。",
-        "en": "Choose no background, a solid color, or a local image, and adjust background opacity. Images are compressed automatically; preferences are stored in the browser, restored after refresh, and synchronized across tabs."
-      },
-      "descriptionPolicy": "show",
-      "source": {
-        "kind": "curated",
-        "hash": "daf61871128c8ff954be447dbbc7f090f4cacaa7e6b4ab8ca39db04322b3aafa",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "lengzhanbao.dsh-taffy-theme": {
       "name": {
         "zh": "塔菲星夜工房",
@@ -3771,24 +3645,6 @@
       "source": {
         "kind": "curated",
         "hash": "cde6a74c08639cea13840984650536f4249869cae1c5424c111442340c2ab51a",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "lxxz1918.dsh-theme-customizer": {
-      "name": {
-        "zh": "七区域主题自定义",
-        "en": "Seven-Region Theme Customizer"
-      },
-      "description": {
-        "zh": "可视化调整七个界面区域的背景、透明度、文字与框线，另有可拖动的快捷设置浮窗。配置自动保存在浏览器中，预设可连同图片导出为 .tczp 文件并在其他电脑导入。",
-        "en": "Visually customize backgrounds, transparency, text, and borders across seven interface regions, with a draggable quick-settings panel. Preferences save automatically in the browser, and presets can include images in .tczp files for import on another computer."
-      },
-      "descriptionPolicy": "show",
-      "source": {
-        "kind": "curated",
-        "hash": "7ad5c07ae4d66c195b277678d3df2941ba9cbeafb0d4b38ca09682ad0bdc41c7",
         "approvedAt": "2026-11-06"
       },
       "override": true,
@@ -4424,24 +4280,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "jack-sun-learner.dsh-image-skin": {
-      "name": {
-        "zh": "图片皮肤",
-        "en": "Image Skin"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "从设置中导入 PNG/JPG/WebP 图片，使用 k-means 提取主色、辅色和强调色，自动生成明暗主题令牌，并将图片作为可调浓度/模糊的背景；另提供独立的桌面宠物窗口，含 5 种形象、拖拽定位和 Agent 忙闲联动。宠物窗口通过 Windows WPF/PowerShell 启动，位置使用 Win32 坐标；插件设置保存在浏览器 `localStorage`。",
-        "en": "Import PNG/JPG/WebP images from Settings and use k-means to derive primary, secondary, and accent colors for light and dark theme tokens, with adjustable background intensity and blur. It also provides a separate desktop pet window with five character options, drag positioning, and agent-busy linkage. The pet uses Windows WPF/PowerShell and Win32 coordinates; plugin settings are stored in browser `localStorage`."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "62c4712eb17e89120653c1e162d50d86733cb203e8dc1e80f1c426ad6e6e6009",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "kongxiangyiren.dhs-theme-plugin": {
       "name": {
         "zh": "主题管理器",
@@ -4820,24 +4658,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "he2way.dsh-task-console": {
-      "name": {
-        "zh": "任务控制台",
-        "en": "Task Console"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "翻到页面背面的悬浮毛玻璃任务控制台，实时展示当前会话的后台任务、子代理、工作区、插件状态和会话概览。内置卡片与用户卡片均可拖拽、缩放、折叠、全屏并持久化；对话中的 `[taskcard]` 块可生成卡片，卡片还能发布到无限画布并通过内置 WebSocket relay 协作。兼容范围为 DSH `>=0.1.5-rc.1 <0.3.0-0`。",
-        "en": "Flip the page to a floating frosted-glass task console showing the current session’s background jobs, subagents, workspace, plugin state, and session overview. Built-in and user cards can be dragged, resized, collapsed, fullscreened, and persisted; conversation `[taskcard]` blocks can author cards, which can also be published to an infinite canvas and shared through the bundled WebSocket relay. The declared DSH range is `>=0.1.5-rc.1 <0.3.0-0`."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "9a654dc39e140e3a9ea40a258eba2654c07a0d549f95f8cfae87ba0b6681d1d1",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "jayliu2025-vip.dsh-fate-twin-contract": {
       "name": {
         "zh": "Fate / Twin Contract · 赤钢契约",
@@ -5072,24 +4892,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "tiantyu.dsh-skin-toggle": {
-      "name": {
-        "zh": "DSH 皮肤管理器",
-        "en": "DSH Skin Manager"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "DSH 皮肤管理器提供可拖动的鲸鱼按钮：左键恢复官方外观，右键列出检测到的已安装皮肤并互斥切换，按钮位置和当前选择保存在 `localStorage`。它是纯客户端展示工具，不修改插件安装状态或模型请求；只识别符合 `dsh-client-ui-skin-<id>` 命名约定的皮肤，列表显示名使用包名 id。",
-        "en": "DSH Skin Manager provides a draggable whale button: left-click restores the official look, while right-click lists detected installed skins and switches them exclusively. The button position and current choice are stored in `localStorage`. It is a client-side presentation utility that does not change plugin installation state or model requests; it recognizes the `dsh-client-ui-skin-<id>` naming convention and displays package IDs as names."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "dd1edc506dbd4b233ca8fb61abae37569de9a72b0a0602ca8170f92af056069b",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "vlantech.dsh-glassic-mist-theme": {
       "name": {
         "zh": "Glassic Mist 雾蓝主题",
@@ -5247,42 +5049,6 @@
       "source": {
         "kind": "curated",
         "hash": "2c1ad973c9a83fd89fb8361f8d97442417ee70daebecb567265a47c2756f72c1",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "juryorca.dsh-custom-theme-import": {
-      "name": {
-        "zh": "我的主题管理器",
-        "en": "My Themes Manager"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "我的主题管理器可从本地路径或 GitHub 导入主流 DSH 皮肤包，扫描 Web profile 的 `node_modules`，预览、使用、刷新和管理皮肤，并在 Host 端持久化库；本地导入可选择原地引用或托管复制，界面跟随 DSH 中英文。被导入的包需包含 `dsh.bundle`、`skin.json` 和导出 `apply(ctx)` 的 `lib/client.js`。",
-        "en": "My Themes Manager imports mainstream DSH skin packages from local paths or GitHub, scans the Web profile’s `node_modules`, and lets users preview, use, refresh, and manage them from a host-persisted library. Local imports can stay in place or be copied into managed storage, and the UI follows DSH Chinese/English. Imported packages must declare `dsh.bundle`, include `skin.json`, and provide a `lib/client.js` ModuleLoader bundle exporting `apply(ctx)`."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "2ea0c6f1b7af41ce13252a7abc22ea5c5db406d220413e110ca7dc09703bbf8e",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "yhprime.dsh-theme-picker": {
-      "name": {
-        "zh": "主题选择器",
-        "en": "Theme Picker"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "主题选择器在设置页统一管理应用主题与已安装主题插件，同一时间只保留一个主题生效，并通过 dsh-market API 自动禁用其他主题、持久化选择和每 6 秒同步状态。它依赖 `dshmarket` 的安装清单与 HTTP API；对无法被市场分类的 `git+https://` 皮肤会按仓库地址补充分类，并在 `use-skin` 被拒绝时回退到手动互斥切换。",
-        "en": "Theme Picker adds a Settings page for app themes and installed theme plugins, keeping only one active at a time. It uses the dsh-market API to disable other themes, persist the choice, and refresh state every six seconds. It requires `dshmarket`’s installed list and HTTP API; skins installed from unclassified `git+https://` specs are supplemented by repository URL, with manual exclusive switching as a fallback when `use-skin` is rejected."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "97ecede965c9fb29f8148aeb558421436b83b8c4c3352e6a70521572264ce50d",
         "approvedAt": "2026-11-06"
       },
       "override": true,
@@ -5464,24 +5230,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "h-table.dsh-bg-tool": {
-      "name": {
-        "zh": "DSH BG Tool",
-        "en": "DSH BG Tool"
-      },
-      "descriptionPolicy": "curate",
-      "description": {
-        "zh": "DSH BG Tool 是本地 `rembg`/BiRefNet 去背景工具：Agent 调用 `remove_background` 后，可用 `general`、`portrait` 或 `fast` 模式生成透明 PNG，结果写入工作区输出目录。图片不上传、不需要 API Key；运行依赖 Windows + NVIDIA GPU，以及预先准备的 `.bg-tools/` 本地环境。",
-        "en": "DSH BG Tool is a local `rembg`/BiRefNet background-removal tool. The Agent can call `remove_background` in `general`, `portrait`, or `fast` mode to write transparent PNGs to the workspace output directory. Images stay on the machine and no API key is needed; it requires Windows with an NVIDIA GPU and a prepared local `.bg-tools/` environment."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "9a433f20e4623031d9f89c5a88d541e5f0a4b4ce6627ac2e50025229dd5012a8",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "hanyi7867069-create.dsh-moonrise": {
       "name": {
         "zh": "月升 Moonrise",
@@ -5585,24 +5333,6 @@
       "source": {
         "kind": "curated",
         "hash": "bf92d3d50d965952e88b62fbbc7c490adf8d287aa0242221ff1e3209d0d99656",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "snowinkk.dsh-web-skin": {
-      "name": {
-        "zh": "本地壁纸玻璃皮肤",
-        "en": "Local Wallpaper Glass Skin"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "本地壁纸玻璃皮肤允许在设置 → 背景图输入本地图片路径（≤8MB），将壁纸放在 DSH Web 窗口下方并把侧栏、对话框变为半透明玻璃；浅/深主题自适应，路径保存于 `localStorage`，重启自动恢复，图片只在本机传输且不联网。",
-        "en": "A local-wallpaper glass skin for DSH Web: enter a local image path (up to 8 MB) in Settings → Background Image, place it behind the window, and make the sidebar and dialogs translucent. It adapts to light/dark themes, stores the path in `localStorage`, restores it after restart, and keeps the image local without network upload."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "948ff175a56df5a362cf3869a610a3155c358191c83c8d300ea7a84759e61712",
         "approvedAt": "2026-11-06"
       },
       "override": true,
@@ -5819,24 +5549,6 @@
       "source": {
         "kind": "curated",
         "hash": "0a219d9707d3614855d705d46e06168ce75e3e220310a99761ae9b35a0b405f0",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "homoland.dshp-balance-hp": {
-      "name": {
-        "zh": "余额血量条",
-        "en": "Balance HP Bar"
-      },
-      "descriptionPolicy": "curate",
-      "description": {
-        "zh": "余额血量条把 DeepSeek 余额显示成游戏式 HP：HP 为当前余额，上限为余额加今日消耗（可估算，也可在界面同步平台值），每 5 分钟刷新并记录今日消耗。设置中提供默认进度条、Minecraft 红心、暗黑破坏神血球、守望先锋分格条和三国杀勾玉五种样式；数据写入工作区 `.dsh-balance-history.json`，余额查询之外不外发网络请求。充值会使当前上限口径同步抬高，README 将其列为待优化项。",
-        "en": "Balance HP turns DeepSeek balance into a game-style health display: HP is the current balance, while the cap is balance plus today's estimated spend, with an option to sync the platform value. It refreshes every five minutes and records daily usage. Choose among a default bar, Minecraft hearts, Diablo blood orb, Overwatch segmented bar, or Sanguosha taiji jades; state is stored in `.dsh-balance-history.json`, with no outbound requests beyond the balance query. The README notes that top-ups currently raise the cap under this accounting model."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "b80d69e2da3240c797016b5515caa5823369ac2a80014ec76360429d93245c68",
         "approvedAt": "2026-11-06"
       },
       "override": true,
@@ -6287,24 +5999,6 @@
       "source": {
         "kind": "curated",
         "hash": "3bb82e12fd039a2d4bd14b44ba194ee0bb0e83b9faee7d9b4f448df408ecd910",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "loyalchiiina.dsh-todo-float-ball": {
-      "name": {
-        "zh": "Todo 进度球",
-        "en": "Todo Progress Ball"
-      },
-      "descriptionPolicy": "curate",
-      "description": {
-        "zh": "把 DSH 当前会话的 todo 任务清单搬到常驻悬浮球：显示已完成/总数、进行中任务名和进度环，点击展开完整清单，右键切换胶囊模式，并支持拖拽、历史归档、固定多个会话和上下/左右布局。提供 130 款共享皮肤、字色切换和浅深色跟随；只读同步，不修改官方面板或对话，支持 Desktop 与 Web，零遥测。",
-        "en": "Moves the current DSH todo list into a persistent floating ball that shows completed/total counts, the active task name, and a progress ring. Click to expand the full list, right-click for capsule mode, and use dragging, history archiving, pinned multiple sessions, and stacked or side-by-side layouts. It includes 130 shared skins, text-color controls, light/dark following, Desktop and Web support, read-only synchronization, and no telemetry."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "4f660f2d67ad1c2ae787afb6d65eed55fd16e0c4d36d03801760897d3010cb60",
         "approvedAt": "2026-11-06"
       },
       "override": true,
@@ -6989,24 +6683,6 @@
       "source": {
         "kind": "curated",
         "hash": "5f6930073a23c48929271e532602b1b38894dad5e3eecf0d8a73e9ada2b6d691",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "wwxiaoqi.ui-theme-quota-show": {
-      "name": {
-        "zh": "DeepSeek API 余额卡",
-        "en": "DeepSeek API Balance Card"
-      },
-      "descriptionPolicy": "curate",
-      "description": {
-        "zh": "在侧边栏“设置”触发器上方加入 DeepSeek API 余额卡片，读取官方 `GET /user/balance`，展示 `total_balance`、`topped_up_balance` 与 `granted_balance`，以及更新时间和基于卡片加载以来余额差的近似期间用量。默认每 60 秒自动刷新，也可手动刷新；刷新失败会保留上次成功值，`total_balance` 不高于 `lowBalanceThreshold`（默认 `5`）时显示低余额警告。Host 端读取已配置的凭据并只返回归一化数字，密钥不会发送到浏览器。该接口是预付费余额模型，不提供真正的“总配额/已用”字段。MIT 许可。",
-        "en": "Adds a balance card above the sidebar Settings trigger. It reads DeepSeek’s official `GET /user/balance` endpoint and shows `total_balance`, the `topped_up_balance`/`granted_balance` breakdown, last-update time, and an approximate usage delta from when the card loaded. It refreshes every 60 seconds or manually, warns when `total_balance` is at or below `lowBalanceThreshold` (default `5`), and keeps the last good snapshot after a failed refresh. The host reads the configured credential and returns only normalized numbers; the credential never reaches the browser. The API is prepaid credit, not a true total/used quota. MIT licensed."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "dcbfbe2560469e701a90f8585bedd1ec670c81cf42ee61bd2cb1d7372192120f",
         "approvedAt": "2026-11-06"
       },
       "override": true,
@@ -8650,42 +8326,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "wensincai.dsh-skin-rotator": {
-      "name": {
-        "zh": "动态背景轮播皮肤",
-        "en": "Dynamic Background Rotator"
-      },
-      "descriptionPolicy": "curate",
-      "description": {
-        "zh": "从本地 `images/` 目录读取 JPG/JPEG/PNG/WebP/GIF/AVIF，默认每 5 分钟轮播一张全屏背景，并叠加默认 35% 黑色蒙版；复制新图后下一轮即可出现。可用 `DSH_SKIN_IMAGES_DIR`、`DSH_SKIN_ROTATE_MS` 和 `DSH_SKIN_OVERLAY_OPACITY` 配置目录、间隔和蒙版；仓库不内置背景图，且需要 Web profile 的 host 半提供本地文件路由。",
-        "en": "Rotates local JPG/JPEG/PNG/WebP/GIF/AVIF files from `images/` into a full-screen background, every five minutes by default, with a 35% black overlay for readability; new files appear on the next cycle. Configure the folder, interval, and overlay with `DSH_SKIN_IMAGES_DIR`, `DSH_SKIN_ROTATE_MS`, and `DSH_SKIN_OVERLAY_OPACITY`. No wallpapers are bundled, and the Web-profile host half must expose the local-file route."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "88aefdab631690db19e06022ec533ea14ea2b051e3e9f14039c03a13a67e5ce9",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "winditer.dsh-temp-chat": {
-      "name": {
-        "zh": "临时聊天鲸",
-        "en": "Temporary Chat Whale"
-      },
-      "descriptionPolicy": "curate",
-      "description": {
-        "zh": "页面角落漂着一只蓝紫绿渐变的半透明鲸鱼，点击打开可拖动、最小化的临时聊天窗；默认跟随 Harness 会话模型，也可配置任意 OpenAI 兼容端点，支持逐 token 流式输出、复制和清空。聊天不会写入 DSH 会话历史，插件内可清空；自定义模式的 API Key 只保存在浏览器 `localStorage`，只发送到你配置的端点。",
-        "en": "A translucent blue–purple–green whale drifts at the edge of the page; click it to open a draggable, minimizable temporary chat window. It follows the Harness session model by default, or can use an OpenAI-compatible endpoint with streamed output, copy, and clear controls. Chats never enter DSH session history and can be cleared in the plugin; in custom mode the API key stays in browser `localStorage` and is sent only to the endpoint you configure."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "1b7e3fa3eb11041cd6feee8c982a700ad4876c9d14fae0a3aaa6a594a3832e9a",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "wupup.dsh-custom-style": {
       "name": {
         "zh": "自定义样式工作台",
@@ -9064,42 +8704,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "cjz-wr.background-plugin": {
-      "name": {
-        "zh": "DSH 背景",
-        "en": "DSH Background"
-      },
-      "descriptionPolicy": "curate",
-      "description": {
-        "zh": "简洁的 DSH 背景插件，支持在设置中选择本地或网络图片/视频并调节透明度。它以独立 bundle 提供背景设置行，安装后在下一次进程启动时生效；与已包含 `ui-background` 行的宿主构建同时安装会因重复 loader id 冲突。",
-        "en": "A focused DSH background plugin for choosing a local or online image/video and adjusting its opacity from settings. It installs as a standalone bundle with a background settings row and takes effect on the next process boot; installing it on a host build that already contains a `ui-background` row causes a duplicate-loader-id conflict."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "bac374e3530b0bc87a11f72ebe20d854085a9414881fff973abbfaeb3b26ac18",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "frankxxxxue.dsh-photo-skins": {
-      "name": {
-        "zh": "照片皮肤",
-        "en": "Photo Skins"
-      },
-      "descriptionPolicy": "curate",
-      "description": {
-        "zh": "把自有照片变成 DSH Web GUI 皮肤：支持文件选择、拖放或粘贴导入 PNG/JPG/WebP/GIF（单张 ≤25MB），自动提取主色作为强调色，并提供 `cover/contain`、0–100px 模糊、0–100% 压暗和分区渲染控制。照片保存在 `<DSH_HOME>/photo-skins/`，不上传或分享；同一插件还内置 Web-Reach 工具 `web_search`、`web_fetch` 与 `rss_fetch`，启用后查询和网址会发往选定的第三方服务。",
-        "en": "Turn your own photos into DSH Web GUI skins by importing PNG/JPG/WebP/GIF files through a picker, drag-and-drop, or paste, with a 25 MB limit per image. The plugin extracts a dominant accent color and provides `cover/contain`, 0–100px blur, 0–100% dimming, and split rendering controls. Photos stay under `<DSH_HOME>/photo-skins/` and are not uploaded or shared; the same plugin also bundles Web-Reach tools—`web_search`, `web_fetch`, and `rss_fetch`—which send queries or URLs to selected third-party services when enabled."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "7676f43f74cf78c5f63aeb0ed523619580aecc61b7cff1728bd40525b15ee218",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "superls-x.dsh-minecraft-theme": {
       "name": {
         "zh": "Minecraft 像素主题",
@@ -9190,42 +8794,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "ylifeonlyonce.dsh-calendar": {
-      "name": {
-        "zh": "DSH 使用日程表",
-        "en": "DSH Usage Calendar"
-      },
-      "descriptionPolicy": "curate",
-      "description": {
-        "zh": "把 DeepSeek 使用历史整理成日、7 天、月、年四种视图：年度热力图、工作区/会话时间线、按任务合并的日视图 Gantt 轴，以及可拖拽的主界面统计卡片。支持点击时间段直达实际会话，并展示活跃时长、会话数、轮次、工具调用和 token；provider 上报时 token 精确，否则为启发式估算。",
-        "en": "Organizes DeepSeek usage history into Day, 7-day, Month, and Year views: a yearly heatmap, workspace/session timelines, a task-merged daily Gantt axis, and draggable main-interface statistic cards. Click a time segment to open the actual conversation, and inspect active time, sessions, turns, tool calls, and tokens; token accounting is exact when the provider reports usage and heuristic otherwise."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "8b74b45d51d2811984ed47ad67440238a814767547aa3147caaa81569f4b6c63",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "huabai-flowerwhite.dsh-ui-skin": {
-      "name": {
-        "zh": "DSH 毛玻璃 UI 皮肤",
-        "en": "DSH UI Skin"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "在 DSH UI 下方放置图片或视频背景，并让包含侧栏在内的界面表面透出可调毛玻璃；支持拖动裁剪、缩放、历史皮肤记录和可拖动悬浮快捷面板。自定义素材可来自网络 URL 或本地文件，图片压缩后存 `localStorage`、视频存 IndexedDB；插件本身不发外部网络请求，视频在 `prefers-reduced-motion` 下暂停。聊天框还可调用 `skin_list` 查看皮肤清单。",
-        "en": "Places an image or video behind the DSH UI and makes surfaces—including the sidebar—translucent so the adjustable frosted-glass treatment shows through. It supports drag-to-crop and zoom, skin history, and a draggable floating shortcut panel; custom media can come from a URL or local file, with compressed images in `localStorage` and videos in IndexedDB. The plugin itself makes no external network requests, pauses video under `prefers-reduced-motion`, and exposes a read-only `skin_list` tool for the catalog."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "85877c703b8b6899d05eb5ffa7f737d927a74b514ef2aa2780000c204f26dd70",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
     "aki2253.sidor-ui": {
       "name": {
         "zh": "SIDOR 星野控制台皮肤",
@@ -9293,24 +8861,6 @@
       "source": {
         "kind": "curated",
         "hash": "d56034acefb1b92d6b5794ea7b618d4bf6336b2458b4fdc17aa106a27ccb0d1e",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
-    },
-    "jerryphoenixcky.dsh-plugin-wallpaper": {
-      "name": {
-        "zh": "DSH 壁纸",
-        "en": "DSH Wallpaper"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "在设置 → Wallpaper 中上传本地图片、裁切并设为 DSH Web 工作台背景；支持拖动/八向手柄裁切、可选导出模糊、`cover/contain/center/stretch` 填充，以及面板不透明度和遮罩调节，修改即时生效并跨刷新恢复。浏览器端裁切压缩为 WebP（最长边 ≤2560px），写入仅信任 localhost/loopback，配置存 `$DSH_HOME/settings.yaml`。",
-        "en": "Upload a local image from Settings → Wallpaper, crop it, and apply it as the DSH Web workspace background. It supports drag and eight-handle cropping, optional export blur, `cover/contain/center/stretch` fit modes, panel opacity, and overlay dimming, with immediate application and refresh persistence. The browser crops and compresses to WebP with a longest edge of ≤2560px; writes trust only localhost/loopback, and configuration lives in `$DSH_HOME/settings.yaml`."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "3edcbedbfc2383b3c03cb06a1dcd22f116d8314999ac05d0c5863c4785b1a44b",
         "approvedAt": "2026-11-06"
       },
       "override": true,
@@ -10000,20 +9550,6 @@
       "override": true,
       "nameSource": "repository-evidence"
     },
-    "krystal-cao.deepseek-harness-swift": {
-      "name": {
-        "zh": "DSH Desktop 主机桥接",
-        "en": "DSH Desktop Host Bridge"
-      },
-      "descriptionPolicy": "omit",
-      "source": {
-        "kind": "curated",
-        "hash": "0ace1f7faa7f7f08f20d416143943ada4dba33f76ff28fae46f906ade3649f73",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-subpath-evidence"
-    },
     "lengzhanbao.dsh-raiden-theme": {
       "name": {
         "zh": "稻妻雷电工房",
@@ -10499,24 +10035,6 @@
       },
       "override": true,
       "nameSource": "repository-subpath-evidence"
-    },
-    "xwh5.dsh-change-review": {
-      "name": {
-        "zh": "会话修改审查",
-        "en": "Session Change Review"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "追踪 DSH 会话中的 `write`/`edit` 工具调用，在“审查”标签页展示带语法高亮的 side-by-side diff；支持按会话或最新轮次查看、子代理变更聚合、SSE 实时更新，以及撤回单个修改或整份文件。只读审查配一键撤回，不需要外部编辑器，原生产物预览不受影响。",
-        "en": "Tracks `write`/`edit` tool calls in DSH sessions and shows syntax-highlighted side-by-side diffs in a Review tab. View a session or the latest turn, aggregate subagent changes into the parent session, receive SSE updates, and revert one change or an entire file. It is read-only review plus one-click revert, needs no external editor, and leaves native produced-file previews untouched."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "cd0e674ee478c0c2996e871b8d4c83340d21b9bcf855302b646bebb3c23bff68",
-        "approvedAt": "2026-11-06"
-      },
-      "override": true,
-      "nameSource": "repository-evidence"
     },
     "yyyyyylor.dsh-asuka-school-theme": {
       "name": {
@@ -11971,24 +11489,6 @@
       "source": {
         "kind": "curated",
         "hash": "145efc79d7dd85fd9694dd9ab2415acecde8086d5d211fcb41641be980d70c2d",
-        "approvedAt": "2026-11-13"
-      },
-      "override": true,
-      "nameSource": "pinned README + maintainer copy review"
-    },
-    "yu502950715yang.dsh.use.wallpaper": {
-      "name": {
-        "zh": "壁纸引擎场景壁纸",
-        "en": "Wallpaper Engine Scene Wallpapers"
-      },
-      "descriptionPolicy": "show",
-      "description": {
-        "zh": "在浏览器里实时渲染 Wallpaper Engine 的 scene 壁纸（three.js + Rust/WASM 粒子），也播放视频、web 与图片壁纸，无需后台运行 Wallpaper Engine。面板可调遮罩、模糊、画面适配与音量，支持收藏、隐藏、自动轮播和开机动画。",
-        "en": "Renders Wallpaper Engine scene wallpapers in the browser in real time (three.js + Rust/WASM particles) and also plays video, web and image wallpapers, with no Wallpaper Engine runtime needed. Controls cover overlay opacity, blur, fit mode, sound, a 0.5× render scale, favourites, hiding, auto-rotation, per-wallpaper properties and an optional boot animation."
-      },
-      "source": {
-        "kind": "curated",
-        "hash": "e4cf95aa4230985b14a4e58059e5664b10a42ad66606e1b2bac9815d8c9bb171",
         "approvedAt": "2026-11-13"
       },
       "override": true,
