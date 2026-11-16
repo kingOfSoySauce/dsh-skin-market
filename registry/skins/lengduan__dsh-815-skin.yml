@@ -15,21 +15,21 @@ tags:
 modes:
   - light
 install:
-  target: github:lengduan/dsh-815-skin#45bbdd8ba95046e87aaa847e6c099bae9db348c0
-  version: 0.1.49
-  commit: 45bbdd8ba95046e87aaa847e6c099bae9db348c0
+  target: github:lengduan/dsh-815-skin#81c39789262751eda3eb2d06fbde2b92c483b53e
+  version: 0.1.50
+  commit: 81c39789262751eda3eb2d06fbde2b92c483b53e
   desktop:
     mode: managed
     registry: npm
     packageName: "@lengduan/dsh-client-ui-skin-815"
-    packageVersion: 0.1.49
-    integrity: sha512-hllUDWfQgC5GOG/DiaDYBKG2X4vLUiJmCyeRWuPzM6Fj600/Wu0V3Xqu6t3qyuoHx1Rhe3Ydk8SgBGxazJxteg==
+    packageVersion: 0.1.50
+    integrity: sha512-SlmOiGt8DG/DkKgt2rZIwaPiuQZistPlOZVndf9LqDjMYfep6SvMgBv2vg7KZWPLuJZpb7g4naolE1+S4FV1mA==
   npm:
     name: "@lengduan/dsh-client-ui-skin-815"
-    version: 0.1.49
-    integrity: sha512-hllUDWfQgC5GOG/DiaDYBKG2X4vLUiJmCyeRWuPzM6Fj600/Wu0V3Xqu6t3qyuoHx1Rhe3Ydk8SgBGxazJxteg==
+    version: 0.1.50
+    integrity: sha512-SlmOiGt8DG/DkKgt2rZIwaPiuQZistPlOZVndf9LqDjMYfep6SvMgBv2vg7KZWPLuJZpb7g4naolE1+S4FV1mA==
     repository: https://github.com/lengduan/dsh-815-skin
-    gitHead: 45bbdd8ba95046e87aaa847e6c099bae9db348c0
+    gitHead: 81c39789262751eda3eb2d06fbde2b92c483b53e
 compatibility:
   dsh: ^4.0.1
   platform:
@@ -58,13 +58,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 45bbdd8ba95046e87aaa847e6c099bae9db348c0
-    packageVersion: 0.1.49
+    commit: 81c39789262751eda3eb2d06fbde2b92c483b53e
+    packageVersion: 0.1.50
     scannerVersion: static-v2
     dshVersion: ^4.0.1
     mode: static
     result: unknown
-    checkedAt: 2026-11-15T20:44:57.044Z
+    checkedAt: 2026-11-16T22:00:46.554Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -73,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 111
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-15T20:45:00.710Z
-metadataUpdatedAt: 2026-11-15T20:45:00.710Z
+releaseUpdatedAt: 2026-11-16T22:00:48.861Z
+metadataUpdatedAt: 2026-11-16T22:00:48.861Z
 starsUpdatedAt: 2026-09-18T21:39:28.012Z
-updatedAt: 2026-11-15T20:45:00.710Z
+updatedAt: 2026-11-16T22:00:48.861Z

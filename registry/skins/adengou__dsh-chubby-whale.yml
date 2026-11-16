@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:adengou/dsh-chubby-whale#db44a093347e4793adaef01c6cefe44533bc6541
-  version: 1.10.2
-  commit: db44a093347e4793adaef01c6cefe44533bc6541
+  target: github:adengou/dsh-chubby-whale#371e64d6fdab2fd3f088d68ab6b9b284186032e5
+  version: 1.10.3
+  commit: 371e64d6fdab2fd3f088d68ab6b9b284186032e5
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -46,20 +46,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: db44a093347e4793adaef01c6cefe44533bc6541
-    packageVersion: 1.10.2
+    commit: 371e64d6fdab2fd3f088d68ab6b9b284186032e5
+    packageVersion: 1.10.3
     scannerVersion: static-v2
     dshVersion: ">=0.1.0"
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:43:44.664Z
+    checkedAt: 2026-11-16T22:00:08.974Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1210
-releaseUpdatedAt: 2026-11-15T20:43:45.203Z
-metadataUpdatedAt: 2026-11-15T20:43:45.203Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-16T22:00:09.678Z
+metadataUpdatedAt: 2026-11-16T22:00:09.678Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-15T20:43:45.203Z
+updatedAt: 2026-11-16T22:00:09.678Z

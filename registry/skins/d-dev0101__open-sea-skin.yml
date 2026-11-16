@@ -65,7 +65,7 @@ license:
   code: MIT
   commercialUse: true
   notice: Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1.
-starsSnapshot: 396
+starsSnapshot: 397
 marketScreenshots:
   - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/home.png
   - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/conversation.png
@@ -73,5 +73,5 @@ marketScreenshots:
 featuredRank: 0
 releaseUpdatedAt: 2026-11-14T00:22:47.971Z
 metadataUpdatedAt: 2026-11-15T20:40:53.617Z
-starsUpdatedAt: 2026-11-16T09:48:54.442Z
-updatedAt: 2026-11-16T09:48:54.442Z
+starsUpdatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-16T21:57:57.826Z

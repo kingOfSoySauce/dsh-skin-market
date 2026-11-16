@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:xingheyewang-1/dsh-whale-rod-cursor#31a493da7e3063375cf52fc6423c846fe785c431
-  version: 0.1.11
-  commit: 31a493da7e3063375cf52fc6423c846fe785c431
+  target: github:xingheyewang-1/dsh-whale-rod-cursor#0f35933453da5220677df9f5c366f7fbcc51bf49
+  version: 0.1.12
+  commit: 0f35933453da5220677df9f5c366f7fbcc51bf49
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -49,20 +49,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 31a493da7e3063375cf52fc6423c846fe785c431
-    packageVersion: 0.1.11
+    commit: 0f35933453da5220677df9f5c366f7fbcc51bf49
+    packageVersion: 0.1.12
     scannerVersion: static-v2
     dshVersion: ^4.0.1 || ^0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:46:21.575Z
+    checkedAt: 2026-11-16T22:01:33.607Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1483
-releaseUpdatedAt: 2026-11-15T20:46:22.282Z
-metadataUpdatedAt: 2026-11-15T20:46:22.282Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-16T22:01:35.087Z
+metadataUpdatedAt: 2026-11-16T22:01:35.087Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-15T20:46:22.282Z
+updatedAt: 2026-11-16T22:01:35.087Z

@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:dsh-plugins/dsh-thought-buddy#220edcfbb3577b2d539588b4f969dc6112e838a7
+  target: github:dsh-plugins/dsh-thought-buddy#3ea93d3ef02a66d8ded607577fcc724e8d452ef4
   version: 2.0.0
-  commit: 220edcfbb3577b2d539588b4f969dc6112e838a7
+  commit: 3ea93d3ef02a66d8ded607577fcc724e8d452ef4
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -47,13 +47,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 220edcfbb3577b2d539588b4f969dc6112e838a7
+    commit: 3ea93d3ef02a66d8ded607577fcc724e8d452ef4
     packageVersion: 2.0.0
     scannerVersion: static-v2
     dshVersion: ^2.0.0-dev.42783642741
     mode: static
     result: unknown
-    checkedAt: 2026-11-15T20:41:26.087Z
+    checkedAt: 2026-11-16T21:58:25.637Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -62,7 +62,7 @@ license:
   commercialUse: true
 featuredRank: 29
 starsSnapshot: 8
-releaseUpdatedAt: 2026-11-15T20:41:27.997Z
-metadataUpdatedAt: 2026-11-15T20:41:27.997Z
+releaseUpdatedAt: 2026-11-16T21:58:26.954Z
+metadataUpdatedAt: 2026-11-16T21:58:26.954Z
 starsUpdatedAt: 2026-11-09T07:13:28.512Z
-updatedAt: 2026-11-15T20:41:27.997Z
+updatedAt: 2026-11-16T21:58:26.954Z
