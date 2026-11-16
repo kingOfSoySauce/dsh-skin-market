@@ -30,7 +30,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/eraerkni/dsh-mornye-theme/55b61c75655848038e8b86b04dd3a43f5e8783cf/docs/preview.jpg
-listScreenshot: https://raw.githubusercontent.com/eraerkni/dsh-mornye-theme/55b61c75655848038e8b86b04dd3a43f5e8783cf/docs/preview.jpg
+listScreenshot: skin-screenshots/eraerkni__dsh-mornye-theme/55b61c75655848038e8b86b04dd3a43f5e8783cf/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -64,3 +64,5 @@ releaseUpdatedAt: 2026-11-14T23:45:33.130Z
 metadataUpdatedAt: 2026-11-14T23:45:33.130Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
 updatedAt: 2026-11-14T23:45:33.130Z
+marketScreenshots:
+  - skin-screenshots/eraerkni__dsh-mornye-theme/55b61c75655848038e8b86b04dd3a43f5e8783cf/home.gif

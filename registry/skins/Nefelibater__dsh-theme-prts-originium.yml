@@ -35,7 +35,7 @@ screenshots:
   - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-boot-dark.jpg
   - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-memory.jpg
   - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/preview-composer.jpg
-listScreenshot: https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/docs/images/theme-light.png
+listScreenshot: skin-screenshots/Nefelibater__dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -68,3 +68,5 @@ releaseUpdatedAt: 2026-11-14T23:46:00.814Z
 metadataUpdatedAt: 2026-11-14T23:46:00.814Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
 updatedAt: 2026-11-14T23:46:00.814Z
+marketScreenshots:
+  - skin-screenshots/Nefelibater__dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/home.gif

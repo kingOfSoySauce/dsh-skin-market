@@ -32,7 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/aeonsscope/dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/docs/screenshots/preview-window.png
   - https://raw.githubusercontent.com/aeonsscope/dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/docs/screenshots/preview-startup.png
   - https://raw.githubusercontent.com/aeonsscope/dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/docs/screenshots/preview-finale.png
-listScreenshot: https://raw.githubusercontent.com/aeonsscope/dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/docs/screenshots/preview-window.png
+listScreenshot: skin-screenshots/aeonsscope__dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -65,3 +65,5 @@ releaseUpdatedAt: 2026-11-15T20:43:45.516Z
 metadataUpdatedAt: 2026-11-15T20:43:45.516Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
 updatedAt: 2026-11-15T20:43:45.516Z
+marketScreenshots:
+  - skin-screenshots/aeonsscope__dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/home.gif

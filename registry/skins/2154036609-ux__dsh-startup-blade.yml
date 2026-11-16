@@ -29,7 +29,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/2154036609-ux/dsh-startup-blade/36fdf4809aa849622685f88347a048ac9c69c1bb/docs/preview.png
-listScreenshot: https://raw.githubusercontent.com/2154036609-ux/dsh-startup-blade/36fdf4809aa849622685f88347a048ac9c69c1bb/docs/preview.png
+listScreenshot: skin-screenshots/2154036609-ux__dsh-startup-blade/36fdf4809aa849622685f88347a048ac9c69c1bb/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -61,3 +61,5 @@ releaseUpdatedAt: 2026-11-15T20:43:38.955Z
 metadataUpdatedAt: 2026-11-15T20:43:38.955Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
 updatedAt: 2026-11-15T20:43:38.955Z
+marketScreenshots:
+  - skin-screenshots/2154036609-ux__dsh-startup-blade/36fdf4809aa849622685f88347a048ac9c69c1bb/home.gif

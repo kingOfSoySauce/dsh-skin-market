@@ -30,7 +30,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/SorenLorn/dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/assets/bg.jpg
-listScreenshot: https://raw.githubusercontent.com/SorenLorn/dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/assets/bg.jpg
+listScreenshot: skin-screenshots/SorenLorn__dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -63,3 +63,5 @@ releaseUpdatedAt: 2026-11-14T23:48:41.382Z
 metadataUpdatedAt: 2026-11-14T23:48:41.382Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
 updatedAt: 2026-11-14T23:48:41.382Z
+marketScreenshots:
+  - skin-screenshots/SorenLorn__dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/home.gif

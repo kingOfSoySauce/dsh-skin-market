@@ -39,7 +39,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/lrplrplrp/dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/docs/preview.png
-listScreenshot: https://raw.githubusercontent.com/lrplrplrp/dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/docs/preview.png
+listScreenshot: skin-screenshots/lrplrplrp__dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -71,3 +71,5 @@ releaseUpdatedAt: 2026-11-14T23:43:51.301Z
 metadataUpdatedAt: 2026-11-14T23:43:51.301Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
 updatedAt: 2026-11-14T23:43:51.301Z
+marketScreenshots:
+  - skin-screenshots/lrplrplrp__dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/home.gif

@@ -28,7 +28,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/Ian-Yunqi/dsh-plugin-boot-whale-maid/44d215cd3ef034d1a138ed9c3d5bbf9b610864d4/screenshots/deepseek-stage.png
-listScreenshot: https://raw.githubusercontent.com/Ian-Yunqi/dsh-plugin-boot-whale-maid/44d215cd3ef034d1a138ed9c3d5bbf9b610864d4/screenshots/deepseek-stage.png
+listScreenshot: skin-screenshots/Ian-Yunqi__dsh-plugin-boot-whale-maid/44d215cd3ef034d1a138ed9c3d5bbf9b610864d4/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -60,3 +60,5 @@ releaseUpdatedAt: 2026-11-14T23:44:54.269Z
 metadataUpdatedAt: 2026-11-14T23:44:54.269Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
 updatedAt: 2026-11-14T23:44:54.269Z
+marketScreenshots:
+  - skin-screenshots/Ian-Yunqi__dsh-plugin-boot-whale-maid/44d215cd3ef034d1a138ed9c3d5bbf9b610864d4/home.gif

@@ -29,7 +29,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/ayanamirei0/dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/preview.png
-listScreenshot: https://raw.githubusercontent.com/ayanamirei0/dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/preview.png
+listScreenshot: skin-screenshots/ayanamirei0__dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -63,3 +63,5 @@ releaseUpdatedAt: 2026-11-14T23:45:24.171Z
 metadataUpdatedAt: 2026-11-14T23:45:24.171Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
 updatedAt: 2026-11-14T23:45:24.171Z
+marketScreenshots:
+  - skin-screenshots/ayanamirei0__dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/home.gif

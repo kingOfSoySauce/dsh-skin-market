@@ -35,7 +35,7 @@ screenshots:
   - https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/shots-new/b-l.png
   - https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/shots-new/b-d.png
   - https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/shots-new/c-l.png
-listScreenshot: https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/palette-themes.png
+listScreenshot: skin-screenshots/Traveritas__averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/averita.gif
 review:
   compatibility: verified
   preview: verified
@@ -68,3 +68,5 @@ releaseUpdatedAt: 2026-11-14T23:48:49.021Z
 metadataUpdatedAt: 2026-11-14T23:48:49.021Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
 updatedAt: 2026-11-14T23:48:49.021Z
+marketScreenshots:
+  - skin-screenshots/Traveritas__averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/averita.gif

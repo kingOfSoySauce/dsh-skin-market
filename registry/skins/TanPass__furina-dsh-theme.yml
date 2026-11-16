@@ -33,7 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/settings-theme.png
   - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/splash-boot.png
   - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/file-card.png
-listScreenshot: https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/current-shot-fontaine-nocturne.png
+listScreenshot: skin-screenshots/TanPass__furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/launch.gif
 review:
   compatibility: unverified
   preview: verified
@@ -70,3 +70,5 @@ releaseUpdatedAt: 2026-11-15T20:45:52.737Z
 metadataUpdatedAt: 2026-11-15T20:45:52.737Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
 updatedAt: 2026-11-15T20:45:52.737Z
+marketScreenshots:
+  - skin-screenshots/TanPass__furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/launch.gif

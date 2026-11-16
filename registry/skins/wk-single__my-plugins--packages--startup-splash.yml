@@ -30,7 +30,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/wk-single/my-plugins/c761b53e9e57519744036362ec2abf52db5860de/docs/splash.webp
-listScreenshot: https://raw.githubusercontent.com/wk-single/my-plugins/c761b53e9e57519744036362ec2abf52db5860de/docs/splash.webp
+listScreenshot: skin-screenshots/wk-single__my-plugins--packages--startup-splash/c761b53e9e57519744036362ec2abf52db5860de/launch.gif
 review:
   compatibility: unverified
   preview: verified
@@ -63,3 +63,5 @@ releaseUpdatedAt: 2026-11-14T00:24:54.981Z
 metadataUpdatedAt: 2026-11-14T00:24:54.981Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
 updatedAt: 2026-11-14T00:24:54.981Z
+marketScreenshots:
+  - skin-screenshots/wk-single__my-plugins--packages--startup-splash/c761b53e9e57519744036362ec2abf52db5860de/launch.gif

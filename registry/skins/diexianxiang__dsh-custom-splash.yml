@@ -29,7 +29,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/diexianxiang/dsh-custom-splash/a43e6b88568b8d10684612227e484452171bae6d/docs/screenshots/video-splash.png
   - https://raw.githubusercontent.com/diexianxiang/dsh-custom-splash/a43e6b88568b8d10684612227e484452171bae6d/docs/screenshots/video-splash-2.png
-listScreenshot: https://raw.githubusercontent.com/diexianxiang/dsh-custom-splash/a43e6b88568b8d10684612227e484452171bae6d/docs/screenshots/video-splash.png
+listScreenshot: skin-screenshots/diexianxiang__dsh-custom-splash/a43e6b88568b8d10684612227e484452171bae6d/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -61,3 +61,5 @@ releaseUpdatedAt: 2026-11-14T23:47:13.209Z
 metadataUpdatedAt: 2026-11-14T23:47:13.209Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
 updatedAt: 2026-11-14T23:47:13.209Z
+marketScreenshots:
+  - skin-screenshots/diexianxiang__dsh-custom-splash/a43e6b88568b8d10684612227e484452171bae6d/home.gif

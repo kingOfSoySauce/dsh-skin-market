@@ -32,7 +32,7 @@ screenshots:
   - https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/overlay-dark.png
   - https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/launch-light.png
   - https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/launch-dark.png
-listScreenshot: https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/draw.png
+listScreenshot: https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/preview.gif
 review:
   compatibility: unverified
   preview: verified
@@ -64,3 +64,5 @@ releaseUpdatedAt: 2026-11-15T20:43:29.131Z
 metadataUpdatedAt: 2026-11-15T20:43:29.131Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
 updatedAt: 2026-11-15T20:43:29.131Z
+marketScreenshots:
+  - https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/preview.gif

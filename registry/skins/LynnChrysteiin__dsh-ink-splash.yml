@@ -33,7 +33,7 @@ screenshots:
   - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/presets/maid.png
   - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/presets/ds-bg.png
   - https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/presets/chibi.png
-listScreenshot: https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/splash-light.png
+listScreenshot: skin-screenshots/LynnChrysteiin__dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/moss.gif
 review:
   compatibility: unverified
   preview: verified
@@ -67,3 +67,5 @@ releaseUpdatedAt: 2026-11-15T20:45:09.280Z
 metadataUpdatedAt: 2026-11-15T20:45:09.280Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
 updatedAt: 2026-11-15T20:45:09.280Z
+marketScreenshots:
+  - skin-screenshots/LynnChrysteiin__dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/moss.gif

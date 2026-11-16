@@ -30,7 +30,7 @@ screenshots:
   - https://raw.githubusercontent.com/morningluu/dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/assets/screenshot-1.png
   - https://raw.githubusercontent.com/morningluu/dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/assets/screenshot-2.png
   - https://raw.githubusercontent.com/morningluu/dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/assets/screenshot-3.png
-listScreenshot: https://raw.githubusercontent.com/morningluu/dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/assets/screenshot-1.png
+listScreenshot: skin-screenshots/morningluu__dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -62,3 +62,5 @@ releaseUpdatedAt: 2026-11-14T23:48:16.118Z
 metadataUpdatedAt: 2026-11-14T23:48:16.118Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
 updatedAt: 2026-11-14T23:48:16.118Z
+marketScreenshots:
+  - skin-screenshots/morningluu__dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/home.gif

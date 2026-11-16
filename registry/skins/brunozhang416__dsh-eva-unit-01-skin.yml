@@ -34,7 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/pilot-selected.jpg
   - https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/launch-lcl.jpg
   - https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/pilot-caption.jpg
-listScreenshot: https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/angel.jpg
+listScreenshot: skin-screenshots/brunozhang416__dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -67,3 +67,5 @@ releaseUpdatedAt: 2026-11-15T20:43:59.322Z
 metadataUpdatedAt: 2026-11-15T20:43:59.322Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
 updatedAt: 2026-11-15T20:43:59.322Z
+marketScreenshots:
+  - skin-screenshots/brunozhang416__dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/home.gif

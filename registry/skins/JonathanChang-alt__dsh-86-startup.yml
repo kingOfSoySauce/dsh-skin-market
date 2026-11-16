@@ -34,7 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/02-access.jpg
   - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/03-identity.jpg
   - https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/04-link.jpg
-listScreenshot: https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/hero.jpg
+listScreenshot: skin-screenshots/JonathanChang-alt__dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -67,3 +67,5 @@ releaseUpdatedAt: 2026-11-14T23:47:47.445Z
 metadataUpdatedAt: 2026-11-14T23:47:47.445Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
 updatedAt: 2026-11-14T23:47:47.445Z
+marketScreenshots:
+  - skin-screenshots/JonathanChang-alt__dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/home.gif
