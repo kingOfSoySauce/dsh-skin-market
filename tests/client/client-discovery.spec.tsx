@@ -179,6 +179,81 @@ describe('client market discovery', () => {
     fireEvent.scroll(feed)
     await waitFor(() => expect(screen.getAllByRole('button', { name: /测试皮肤 \d+ 界面预览/ })).toHaveLength(skins.length))
   })
+  it('brings the discovery list back to its first row after sort and search changes', async () => {
+    const skins = Array.from({ length: HOME_CATALOG_BATCH_SIZE + 6 }, (_, index) => ({
+      ...skin, id: `test.skin-${index}`, package: `skin-${index}`,
+      name: { zh: `测试皮肤 ${index}`, en: `Test Skin ${index}` }, githubStars: 50 - index,
+    }))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins } : { skins: [] }))
+    render(<SkinMarketSection t={key => key} />)
+    await screen.findByRole('button', { name: /测试皮肤 0 界面预览/ })
+    const feed = document.querySelector<HTMLElement>('[class*="homeContent"]')!
+    const grid = document.querySelector<HTMLElement>('[class*="discoveryGrid"]')!
+    const contentTop = 120
+    vi.spyOn(feed, 'getBoundingClientRect').mockReturnValue({ top: contentTop } as DOMRect)
+    const listRect = vi.spyOn(grid, 'getBoundingClientRect')
+
+    listRect.mockReturnValue({ top: contentTop - 400 } as DOMRect)
+    feed.scrollTop = 900
+    fireEvent.click(within(screen.getByRole('group', { name: zh['common.sortBy'] })).getByRole('button', { name: 'Stars' }))
+    expect(feed.scrollTop).toBe(500)
+
+    listRect.mockReturnValue({ top: contentTop - 120 } as DOMRect)
+    fireEvent.change(screen.getByRole('textbox'), { target: { value: '测试' } })
+    expect(feed.scrollTop).toBe(380)
+
+    // A control used while the list is already at its top does not push it down.
+    listRect.mockReturnValue({ top: contentTop + 200 } as DOMRect)
+    feed.scrollTop = 0
+    fireEvent.click(screen.getByRole('button', { name: '最新' }))
+    expect(feed.scrollTop).toBe(0)
+  })
+  it('brings the embedded discovery list back to its first row in the host scroll root', async () => {
+    const skins = Array.from({ length: 3 }, (_, index) => ({
+      ...skin, id: `test.skin-${index}`, package: `skin-${index}`,
+      name: { zh: `测试皮肤 ${index}`, en: `Test Skin ${index}` }, githubStars: 30 - index,
+    }))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins } : { skins: [] }))
+    const view = render(<div style={{ overflowY: 'auto' }}><SkinMarketSection t={key => key} layout="embedded" /></div>)
+    await screen.findByRole('button', { name: /测试皮肤 0 界面预览/ })
+    const host = view.container.firstElementChild as HTMLElement
+    const header = host.querySelector('header')!
+    const grid = host.querySelector<HTMLElement>('[class*="discoveryGrid"]')!
+    vi.spyOn(host, 'getBoundingClientRect').mockReturnValue({ top: 80 } as DOMRect)
+    vi.spyOn(header, 'getBoundingClientRect').mockReturnValue({ bottom: 180 } as DOMRect)
+    vi.spyOn(grid, 'getBoundingClientRect').mockReturnValue({ top: 60 } as DOMRect)
+    host.scrollTop = 600
+    fireEvent.click(within(screen.getByRole('group', { name: zh['common.sortBy'] })).getByRole('button', { name: 'Stars' }))
+    expect(host.scrollTop).toBe(480)
+  })
+  it('leaves the embedded host page alone when the catalog browser changes its sort', async () => {
+    const skins = Array.from({ length: 3 }, (_, index) => ({
+      ...skin, id: `test.skin-${index}`, package: `skin-${index}`,
+      name: { zh: `测试皮肤 ${index}`, en: `Test Skin ${index}` }, githubStars: 30 - index,
+    }))
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins } : { skins: [] }))
+    const view = render(<div style={{ overflowY: 'auto' }}><SkinMarketSection t={key => key} layout="embedded" /></div>)
+    await screen.findByRole('button', { name: /测试皮肤 0 界面预览/ })
+    const host = view.container.firstElementChild as HTMLElement
+    const home = host.querySelector('main')!
+    const header = host.querySelector('header')!
+    const grid = host.querySelector<HTMLElement>('[class*="discoveryGrid"]')!
+    vi.spyOn(host, 'getBoundingClientRect').mockReturnValue({ top: 80 } as DOMRect)
+    vi.spyOn(header, 'getBoundingClientRect').mockReturnValue({ bottom: 180 } as DOMRect)
+    vi.spyOn(grid, 'getBoundingClientRect').mockReturnValue({ top: 40 } as DOMRect)
+
+    // A home sort change reveals the first row in the host page...
+    host.scrollTop = 500
+    fireEvent.click(within(screen.getByRole('group', { name: zh['common.sortBy'] })).getByRole('button', { name: '最新' }))
+    expect(host.scrollTop).toBe(360)
+
+    // ...while the catalog browser's own sort leaves the page behind it alone.
+    host.scrollTop = 500
+    fireEvent.click(within(home).getByRole('button', { name: /测试皮肤 0 界面预览/ }))
+    const dialog = await screen.findByRole('dialog', { name: zh['common.skinDetails'] })
+    fireEvent.click(within(within(dialog).getByRole('group', { name: zh['common.sortBy'] })).getByRole('button', { name: 'Stars' }))
+    expect(host.scrollTop).toBe(500)
+  })
   it.each(['element', 'window'] as const)('preloads embedded catalog batches against the %s scroll root and ignores stale observations', async hostKind => {
     const skins = Array.from({ length: HOME_CATALOG_BATCH_SIZE * 2 + 5 }, (_, index) => ({
       ...skin, id: `test.skin-${index}`, package: `skin-${index}`,
@@ -333,6 +408,24 @@ describe('client market discovery', () => {
     fireEvent.click(clear)
     expect((screen.getByRole('textbox') as HTMLInputElement).value).toBe('')
     expect(screen.getByRole('button', { name: /测试皮肤 界面预览/ })).toBeTruthy()
+  })
+  it('brings the catalog list back to its top after search, range and sort changes', async () => {
+    stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))
+    render(<SkinMarketSection t={key => key} />)
+    await openSkinCard()
+    const list = document.querySelector<HTMLElement>('[class*="skinList"]')!
+
+    list.scrollTop = 240
+    fireEvent.change(screen.getByRole('textbox'), { target: { value: '测试' } })
+    expect(list.scrollTop).toBe(0)
+
+    list.scrollTop = 180
+    fireEvent.click(within(screen.getByRole('group', { name: zh['common.listRange'] })).getByRole('button', { name: zh['common.installed'] }))
+    expect(list.scrollTop).toBe(0)
+
+    list.scrollTop = 120
+    fireEvent.click(within(screen.getByRole('group', { name: zh['common.sortBy'] })).getByRole('button', { name: '最新' }))
+    expect(list.scrollTop).toBe(0)
   })
   it('shows heat, Stars and latest sorting modes and highlights the active one', async () => {
     stubMarketFetch(async (url: string) => (url.endsWith('/catalog') ? { skins: [skin] } : { skins: [] }))

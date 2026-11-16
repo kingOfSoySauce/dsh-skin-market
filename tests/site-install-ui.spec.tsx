@@ -25,7 +25,12 @@ beforeEach(() => {
   Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText } })
   vi.stubGlobal('matchMedia', () => ({ matches: false, addListener() {}, removeListener() {} }))
 })
-afterEach(() => { cleanup(); vi.unstubAllGlobals() })
+afterEach(() => {
+  cleanup()
+  vi.restoreAllMocks()
+  // vi.stubGlobal restores jsdom's own scrollY data property with unstubAllGlobals.
+  vi.unstubAllGlobals()
+})
 
 describe('public catalog filters', () => {
   it('omits the redundant public page headings while keeping search and filters', () => {
@@ -47,6 +52,64 @@ describe('public catalog filters', () => {
 
     expect((search as HTMLInputElement).value).toBe('')
     expect(screen.getByRole('button', { name: /测试皮肤 界面预览/ })).toBeTruthy()
+  })
+
+  it('brings the result list back to its first row after sort, category and search changes', () => {
+    const skins = Array.from({ length: 30 }, (_, index) => ({
+      ...skin, id: `test.skin-${index}`, name: { zh: `测试皮肤 ${index}`, en: `Test Skin ${index}` },
+    }))
+    render(<App skins={skins} />)
+    const topbar = document.querySelector<HTMLElement>('.topbar')!
+    const grid = document.querySelector<HTMLElement>('.skin-grid')!
+    vi.spyOn(topbar, 'getBoundingClientRect').mockReturnValue({ bottom: 160 } as DOMRect)
+    const gridRect = vi.spyOn(grid, 'getBoundingClientRect')
+    vi.stubGlobal('scrollY', 900)
+    const scrollTo = vi.spyOn(window, 'scrollTo').mockImplementation(() => undefined)
+
+    gridRect.mockReturnValue({ top: -200 } as DOMRect)
+    fireEvent.click(within(screen.getByRole('group', { name: '排序方式' })).getByRole('button', { name: 'Stars' }))
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 540, behavior: 'instant' })
+
+    // A real browser now sits at the position the first reveal asked for.
+    vi.stubGlobal('scrollY', 540)
+    gridRect.mockReturnValue({ top: -60 } as DOMRect)
+    fireEvent.change(screen.getByRole('textbox', { name: '搜索皮肤、作者或标签' }), { target: { value: '测试' } })
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 320, behavior: 'instant' })
+
+    // A control used while the list is already at its top does not push it down.
+    gridRect.mockReturnValue({ top: 400 } as DOMRect)
+    const calls = scrollTo.mock.calls.length
+    fireEvent.click(within(screen.getByRole('group', { name: '排序方式' })).getByRole('button', { name: '最新' }))
+    expect(scrollTo).toHaveBeenCalledTimes(calls)
+  })
+
+  it('keeps the restored scroll position on first paint and still reveals empty results', () => {
+    const skins = Array.from({ length: 30 }, (_, index) => ({
+      ...skin, id: `test.skin-${index}`, name: { zh: `测试皮肤 ${index}`, en: `Test Skin ${index}` },
+    }))
+    vi.spyOn(Element.prototype, 'getBoundingClientRect').mockImplementation(function (this: Element) {
+      const element = this as HTMLElement
+      const values = element.classList.contains('skin-grid') ? { top: -300 }
+        : element.classList.contains('no-results') ? { top: 0 }
+          : element.classList.contains('topbar') ? { bottom: 100 }
+            : {}
+      return { top: 0, bottom: 0, left: 0, right: 0, width: 0, height: 0, x: 0, y: 0, toJSON: () => ({}), ...values } as DOMRect
+    })
+    vi.stubGlobal('scrollY', 500)
+    const scrollTo = vi.spyOn(window, 'scrollTo').mockImplementation(() => undefined)
+    render(<App skins={skins} />)
+
+    // First paint is not a control change: the browser-restored position stays.
+    expect(scrollTo).not.toHaveBeenCalled()
+
+    fireEvent.click(within(screen.getByRole('group', { name: '排序方式' })).getByRole('button', { name: '最新' }))
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 100, behavior: 'instant' })
+
+    // An empty result set swaps the grid for its message, which still anchors the reveal.
+    vi.stubGlobal('scrollY', 300)
+    fireEvent.click(within(screen.getByRole('group', { name: '分类' })).getByRole('button', { name: '皮肤' }))
+    expect(document.querySelector('.no-results')).toBeTruthy()
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 200, behavior: 'instant' })
   })
 
   it('shows skins and splash by default and toggles the other categories', () => {

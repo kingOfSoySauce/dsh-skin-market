@@ -618,6 +618,37 @@ function findScrollRoot(element: HTMLElement): HTMLElement | null {
   return null
 }
 
+/**
+ * A changed query, filter set or sort order describes a new discovery list.
+ * Put its first row back under the sticky header (or the fill layout's content
+ * edge) so the viewport does not keep the old list's depth. Only scrolls when
+ * the list start was scrolled past, so a change made at the top stays put.
+ */
+function revealDiscoveryResults(results: HTMLElement | null, content: HTMLElement | null, header: HTMLElement | null, layout: 'fill' | 'embedded'): void {
+  if (results === null) return
+  const listTop = results.getBoundingClientRect().top
+  if (layout === 'fill') {
+    if (content === null) return
+    const style = getComputedStyle(content)
+    const boundary = content.getBoundingClientRect().top
+      + (Number.parseFloat(style.borderTopWidth) || 0)
+      + (Number.parseFloat(style.paddingTop) || 0)
+    const delta = listTop - boundary
+    if (delta >= -1) return
+    content.scrollTop += delta
+    return
+  }
+  // The embedded market scrolls with the host page; its own content does not.
+  const scrollRoot = findScrollRoot(results)
+  const viewportTop = scrollRoot === null ? 0 : scrollRoot.getBoundingClientRect().top + scrollRoot.clientTop
+  const sticky = header !== null && header.dataset.sticky !== 'false'
+  const boundary = sticky && header !== null ? Math.max(viewportTop, header.getBoundingClientRect().bottom) : viewportTop
+  const delta = listTop - boundary
+  if (delta >= -1) return
+  if (scrollRoot !== null) scrollRoot.scrollTop += delta
+  else window.scrollTo({ top: window.scrollY + delta, behavior: 'instant' })
+}
+
 export const RESTART_POLL_MS = 500
 export const RESTART_WAIT_MS = 90_000
 
@@ -1121,6 +1152,9 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const homeRef = useRef<HTMLDivElement | null>(null)
   const homeHeaderRef = useRef<HTMLElement | null>(null)
   const discoverTitleRef = useRef<HTMLDivElement | null>(null)
+  const discoveryResultsRef = useRef<HTMLElement | null>(null)
+  const discoveryRevealReady = useRef(false)
+  const bindDiscoveryResults = useCallback((element: HTMLElement | null) => { discoveryResultsRef.current = element }, [])
   const syncDiscoverDockRef = useRef<() => void>(() => {})
   const homeLoadMoreRef = useRef<HTMLDivElement | null>(null)
   const thumbnailStripRef = useRef<HTMLDivElement | null>(null)
@@ -2145,6 +2179,20 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
 
   useEffect(() => { setVisibleCount(CATALOG_BATCH_SIZE) }, [filter, query, sortBy])
   useEffect(() => { setHomeVisibleCount(HOME_CATALOG_BATCH_SIZE) }, [enabledCategories, homeQuery, sortBy])
+  useLayoutEffect(() => {
+    // The catalog list answers a different query, filter or order now.
+    if (skinListRef.current !== null) skinListRef.current.scrollTop = 0
+  }, [filter, query, sortBy])
+  useLayoutEffect(() => {
+    // The catalog browser shares the sort state and keeps the embedded home
+    // laid out behind it; only the discovery list itself moves the page. The
+    // first run only records the initial state, so a restored page stays put.
+    if (!discoveryRevealReady.current) {
+      discoveryRevealReady.current = true
+      return
+    }
+    if (!browserOpen) revealDiscoveryResults(discoveryResultsRef.current, homeRef.current, homeHeaderRef.current, layout)
+  }, [enabledCategories, homeQuery, layout, sortBy])
 
   const copyOperationLog = useCallback(async (operationId: string) => {
     setCopyingLogId(operationId)
@@ -3464,9 +3512,9 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
               else next.add(category)
               return next
             })} sortBy={sortBy} onSortBy={setSortBy} />
-            {catalogLoading && skins.length === 0 ? <div className={css.homeLoading}><IconLoadingOutline /> {t('common.loadingSkins')}</div> : visibleDiscoverySkins.length > 0 ? <div className={css.discoveryGrid}>
+            {catalogLoading && skins.length === 0 ? <div className={css.homeLoading}><IconLoadingOutline /> {t('common.loadingSkins')}</div> : visibleDiscoverySkins.length > 0 ? <div className={css.discoveryGrid} ref={bindDiscoveryResults}>
               {visibleDiscoverySkins.map(skin => renderHomeCard(skin, 'discover'))}
-            </div> : <p className={css.empty}>{t('common.noMatchingSkins')}</p>}
+            </div> : <p className={css.empty} ref={bindDiscoveryResults}>{t('common.noMatchingSkins')}</p>}
             {error !== null && !browserOpen && <div className={css.homeError} role="alert">{error}</div>}
             {!catalogLoading && homeVisibleCount < discoverySkins.length && <div className={css.homeLoadMore} ref={homeLoadMoreRef} aria-hidden="true"><span /><span /></div>}
           </section>

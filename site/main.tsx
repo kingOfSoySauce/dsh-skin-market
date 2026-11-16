@@ -271,6 +271,18 @@ function SearchBox({ query, onQueryChange, style }: { query: string; onQueryChan
   return <div className="search site-search" style={style}><MagnifyingGlass size={18} /><input ref={inputRef} value={query} onChange={event => onQueryChange(event.currentTarget.value)} placeholder={t('search.label')} aria-label={t('search.label')} />{query.length > 0 && <button type="button" className="search-clear" aria-label={t('search.clear')} title={t('search.clear')} onMouseDown={event => event.preventDefault()} onClick={clear}><X size={16} aria-hidden="true" /></button>}</div>
 }
 
+/**
+ * Put a result list's first row back under the sticky topbar after its query,
+ * filters or sort change. Only scrolls when the old list had been scrolled
+ * past its start, so changing a control at the top of the page stays put.
+ */
+function revealFeedResults(results: HTMLElement | null, topbar: HTMLElement | null): void {
+  if (results === null || topbar === null) return
+  const delta = results.getBoundingClientRect().top - topbar.getBoundingClientRect().bottom
+  if (delta >= -1) return
+  window.scrollTo({ top: window.scrollY + delta, behavior: 'instant' })
+}
+
 export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; curves?: Record<string, { from: number; stars: number[] }>; liveStarLoader?: LiveStarLoader }) {
   const { language, t } = useSitePreferences()
   const [selectedId, setSelectedId] = useState(skins[0]?.id ?? '')
@@ -291,6 +303,9 @@ export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; cur
   const [copied, setCopied] = useState<string | null>(null)
   const [installDialog, setInstallDialog] = useState<'market' | 'skin' | null>(null)
   const detailRef = useRef<HTMLElement | null>(null)
+  const feedResultsRef = useRef<HTMLElement | null>(null)
+  const feedRevealReady = useRef(false)
+  const bindFeedResults = useCallback((element: HTMLElement | null) => { feedResultsRef.current = element }, [])
   const feedSearchSlotRef = useRef<HTMLDivElement | null>(null)
   const pageShellRef = useRef<HTMLDivElement | null>(null)
   const topbarRef = useRef<HTMLElement | null>(null)
@@ -347,6 +362,16 @@ export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; cur
   }
 
   useEffect(() => { setVisibleCount(24) }, [enabledCategories, query, sort])
+  // A new query, filter set or sort order describes a new result list: its
+  // first row belongs under the sticky topbar, not the old list's depth. The
+  // first run only records the initial state, so reloaded scroll stays put.
+  useLayoutEffect(() => {
+    if (!feedRevealReady.current) {
+      feedRevealReady.current = true
+      return
+    }
+    revealFeedResults(feedResultsRef.current, topbarRef.current)
+  }, [enabledCategories, query, sort])
   useLayoutEffect(() => { syncDiscoverDockRef.current() })
   useEffect(() => {
     const update = () => syncDiscoverDockRef.current()
@@ -515,9 +540,9 @@ export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; cur
       <FeedHeader searchSlotRef={feedSearchSlotRef} />
       <section className="feed-content" aria-label={t('catalog.section')}>
         <DiscoverToolbar docked={discoverDocked} placeholderRef={discoverTitleRef} enabledCategories={enabledCategories} onToggleCategory={toggleCategory} sort={sort} onSort={setSort} />
-        {visibleSkins.length > 0 ? <div className="skin-grid">
+        {visibleSkins.length > 0 ? <div className="skin-grid" ref={bindFeedResults}>
           {visibleSkins.map(skin => <CatalogCard key={skin.id} skin={skin} live={liveStarsBySkin[skin.id]} onOpen={() => select(skin.id)} onInstall={() => { setSelectedId(skin.id); setShot(0); setCopied(null); setInstallDialog('skin') }} />)}
-        </div> : <p className="no-results feed-empty">{t('catalog.noResults')}</p>}
+        </div> : <p className="no-results feed-empty" ref={bindFeedResults}>{t('catalog.noResults')}</p>}
         {visibleCount < filtered.length && <div className="feed-loading" aria-hidden="true"><span /><span /></div>}
       </section>
     </main>
