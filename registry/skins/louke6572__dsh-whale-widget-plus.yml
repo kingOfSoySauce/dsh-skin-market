@@ -13,9 +13,9 @@ tags:
 modes:
   - light
 install:
-  target: github:louke6572/dsh-whale-widget-plus#d84f5dca6115347851f267b19f99ac9c0d4df573
-  version: 0.7.7
-  commit: d84f5dca6115347851f267b19f99ac9c0d4df573
+  target: github:louke6572/dsh-whale-widget-plus#809f0ead3614573fd7047a26602b683e23e91849
+  version: 0.7.8
+  commit: 809f0ead3614573fd7047a26602b683e23e91849
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -23,6 +23,10 @@ compatibility:
   dsh: 0.1.1-rc.2
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/home.png
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/conversation.png
+  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/settings.png
 screenshots:
   - https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png
 listScreenshot: https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png
@@ -39,26 +43,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.1.1-rc.2 未被本次检测范围 >=0.2.1-rc.2 完全覆盖（固定版本 d84f5dca6115347851f267b19f99ac9c0d4df573）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.1-rc.2 未被本次检测范围 >=0.2.1-rc.2 完全覆盖（固定版本 809f0ead3614573fd7047a26602b683e23e91849）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: d84f5dca6115347851f267b19f99ac9c0d4df573
-    packageVersion: 0.7.7
+    commit: 809f0ead3614573fd7047a26602b683e23e91849
+    packageVersion: 0.7.8
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.2"
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:41:05.117Z
+    checkedAt: 2026-11-16T21:58:06.655Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 100
-marketScreenshots:
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/home.png
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/conversation.png
-  - skin-screenshots/louke6572__dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/settings.png
 featuredRank: 944
-releaseUpdatedAt: 2026-11-15T20:41:05.708Z
-metadataUpdatedAt: 2026-11-16T09:48:54.442Z
+starsSnapshot: 100
+releaseUpdatedAt: 2026-11-16T21:58:07.084Z
+metadataUpdatedAt: 2026-11-16T21:58:07.084Z
 starsUpdatedAt: 2026-11-15T20:41:05.708Z
-updatedAt: 2026-11-16T09:48:54.442Z
+updatedAt: 2026-11-16T21:58:07.084Z

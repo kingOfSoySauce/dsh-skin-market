@@ -401,7 +401,7 @@ GitHub：[MichengAI/dsh-codex-pet](https://github.com/MichengAI/dsh-codex-pet)
 
 GitHub：[stushansusu/dsh-web-start-ui](https://github.com/stushansusu/dsh-web-start-ui)
 
-<img src="https://raw.githubusercontent.com/stushansusu/dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/assets/launch/qinghua/poster.jpg" width="60%" alt="青花瓷与鲸鱼娘启动动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/stushansusu__dsh-web-start-ui/00eaa6f75788cd2c4eecda79e1344d3dd73d8eee/launch-qinghua.gif" width="60%" alt="青花瓷与鲸鱼娘启动动画">
 
 <!-- /dsh-admission:stushansusu.dsh.web.start.ui -->
 
@@ -446,7 +446,7 @@ GitHub：[cakeni/harness-pet](https://github.com/cakeni/harness-pet)
 
 GitHub：[CosmerHomura/dsh-yoimiya-theme](https://github.com/CosmerHomura/dsh-yoimiya-theme)
 
-<img src="https://raw.githubusercontent.com/CosmerHomura/dsh-yoimiya-theme/f21ac657a5666667026397b2e1b73792294ec086/docs/screenshots/dark-home.webp" width="60%" alt="宵宫主题">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/CosmerHomura__dsh-yoimiya-theme/f21ac657a5666667026397b2e1b73792294ec086/home.gif" width="60%" alt="宵宫主题">
 
 <!-- /dsh-admission:cosmerhomura.dsh.yoimiya.theme -->
 
@@ -491,7 +491,7 @@ GitHub：[iasiv5/dsh-skins](https://github.com/iasiv5/dsh-skins)
 
 GitHub：[lrplrplrp/dsh-live2d](https://github.com/lrplrplrp/dsh-live2d)
 
-<img src="https://raw.githubusercontent.com/lrplrplrp/dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/docs/preview.png" width="60%" alt="Live2D 看板娘工坊">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/lrplrplrp__dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/home.gif" width="60%" alt="Live2D 看板娘工坊">
 
 <!-- /dsh-admission:lrplrplrp.dsh.live2d -->
 
@@ -641,7 +641,7 @@ GitHub：[165890/dsh-claude-code-desktop-theme](https://github.com/165890/dsh-cl
 
 GitHub：[cngtn/dsh-cngtn-pond](https://github.com/cngtn/dsh-cngtn-pond)
 
-<img src="https://raw.githubusercontent.com/cngtn/dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/docs/preview-dark-1.png" width="60%" alt="纸墨锦鲤池">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/cngtn__dsh-cngtn-pond/a6d97cfb0700005feb098c4aa11741b402b561e5/home.gif" width="60%" alt="纸墨锦鲤池">
 
 <!-- /dsh-admission:cngtn.dsh.cngtn.pond -->
 
@@ -656,7 +656,7 @@ GitHub：[cngtn/dsh-cngtn-pond](https://github.com/cngtn/dsh-cngtn-pond)
 
 GitHub：[cshengyi023-collab/dsh-deepsea-echo](https://github.com/cshengyi023-collab/dsh-deepsea-echo)
 
-<img src="https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/storyboard.png" width="60%" alt="深海回响">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/cshengyi023-collab__dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/launch.gif" width="60%" alt="深海回响">
 
 <!-- /dsh-admission:cshengyi023.collab.dsh.deepsea.echo -->
 
@@ -671,7 +671,7 @@ GitHub：[cshengyi023-collab/dsh-deepsea-echo](https://github.com/cshengyi023-co
 
 GitHub：[haohaozi328-arch/dsh-skin-luoxiaohei](https://github.com/haohaozi328-arch/dsh-skin-luoxiaohei)
 
-<img src="https://raw.githubusercontent.com/haohaozi328-arch/dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/img/1.jpg" width="60%" alt="小黑森林">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/haohaozi328-arch__dsh-skin-luoxiaohei/910723bb10bfd790dd8680b2a9be63d5b00f0a2d/home.gif" width="60%" alt="小黑森林">
 
 <!-- /dsh-admission:haohaozi328.arch.dsh.skin.luoxiaohei -->
 
@@ -686,7 +686,7 @@ GitHub：[haohaozi328-arch/dsh-skin-luoxiaohei](https://github.com/haohaozi328-a
 
 GitHub：[Ian-Yunqi/dsh-plugin-boot-whale-maid](https://github.com/Ian-Yunqi/dsh-plugin-boot-whale-maid)
 
-<img src="https://raw.githubusercontent.com/Ian-Yunqi/dsh-plugin-boot-whale-maid/44d215cd3ef034d1a138ed9c3d5bbf9b610864d4/screenshots/deepseek-stage.png" width="60%" alt="鲸鱼女仆开场">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Ian-Yunqi__dsh-plugin-boot-whale-maid/44d215cd3ef034d1a138ed9c3d5bbf9b610864d4/home.gif" width="60%" alt="鲸鱼女仆开场">
 
 <!-- /dsh-admission:ian.yunqi.dsh.plugin.boot.whale.maid -->
 
@@ -776,7 +776,7 @@ GitHub：[nerv-base/dsh-theme-eva](https://github.com/nerv-base/dsh-theme-eva)
 
 GitHub：[OGHong/dsh-ascii-sharks](https://github.com/OGHong/dsh-ascii-sharks)
 
-<img src="https://raw.githubusercontent.com/OGHong/dsh-ascii-sharks/7df298f2f22a56f440f7203063cffe19421ac790/docs/hero-dark.png" width="60%" alt="ASCII 鲨鱼海洋">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/OGHong__dsh-ascii-sharks/7df298f2f22a56f440f7203063cffe19421ac790/home.gif" width="60%" alt="ASCII 鲨鱼海洋">
 
 <!-- /dsh-admission:oghong.dsh.ascii.sharks -->
 
@@ -821,7 +821,7 @@ GitHub：[stitchmaps/dsh-ikunchick-pet](https://github.com/stitchmaps/dsh-ikunch
 
 GitHub：[Streamfish-lab/dsh-splash-fish](https://github.com/Streamfish-lab/dsh-splash-fish)
 
-<img src="https://raw.githubusercontent.com/Streamfish-lab/dsh-splash-fish/e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596/preview/poster.jpg" width="60%" alt="插画开屏动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Streamfish-lab__dsh-splash-fish/e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596/home.gif" width="60%" alt="插画开屏动画">
 
 <!-- /dsh-admission:streamfish.lab.dsh.splash.fish -->
 
@@ -941,7 +941,7 @@ GitHub：[youxin484/dsh-dafeiyu-enhanced](https://github.com/youxin484/dsh-dafei
 
 GitHub：[0999312/dsh-theme-isaf](https://github.com/0999312/dsh-theme-isaf)
 
-<img src="https://raw.githubusercontent.com/0999312/dsh-theme-isaf/161c909029ea640c8d1f8d8cabb5290fdd16aef1/assets/startup-poster.png" width="60%" alt="ISAF T.C. 系统">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/0999312__dsh-theme-isaf/161c909029ea640c8d1f8d8cabb5290fdd16aef1/home.gif" width="60%" alt="ISAF T.C. 系统">
 
 <!-- /dsh-admission:0999312.dsh.theme.isaf -->
 
@@ -986,7 +986,7 @@ GitHub：[3b2ht90/dsh-client-ui-skin-dnd](https://github.com/3b2ht90/dsh-client-
 
 GitHub：[ayanamirei0/dsh-ayanami-theme](https://github.com/ayanamirei0/dsh-ayanami-theme)
 
-<img src="https://raw.githubusercontent.com/ayanamirei0/dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/preview.png" width="60%" alt="绫波丽主题">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ayanamirei0__dsh-ayanami-theme/6ac46a6595df9fa4605711f34264f618ef9dd66d/home.gif" width="60%" alt="绫波丽主题">
 
 <!-- /dsh-admission:ayanamirei0.dsh.ayanami.theme -->
 
@@ -1001,7 +1001,7 @@ GitHub：[ayanamirei0/dsh-ayanami-theme](https://github.com/ayanamirei0/dsh-ayan
 
 GitHub：[BEIDAOU/dsh-boot-animation-custom](https://github.com/BEIDAOU/dsh-boot-animation-custom)
 
-<img src="https://raw.githubusercontent.com/BEIDAOU/dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/docs/images/preview-01.jpg" width="60%" alt="欢迎回来启动动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/BEIDAOU__dsh-boot-animation-custom/81ac4076747133e14982e4dbd1d75bd5562d8de7/launch.gif" width="60%" alt="欢迎回来启动动画">
 
 <!-- /dsh-admission:beidaou.dsh.boot.animation.custom -->
 
@@ -1091,7 +1091,7 @@ GitHub：[deepseek-club/dsh-skin-whalegirl](https://github.com/deepseek-club/dsh
 
 GitHub：[eraerkni/dsh-mornye-theme](https://github.com/eraerkni/dsh-mornye-theme)
 
-<img src="https://raw.githubusercontent.com/eraerkni/dsh-mornye-theme/55b61c75655848038e8b86b04dd3a43f5e8783cf/docs/preview.jpg" width="60%" alt="莫宁主题">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/eraerkni__dsh-mornye-theme/55b61c75655848038e8b86b04dd3a43f5e8783cf/home.gif" width="60%" alt="莫宁主题">
 
 <!-- /dsh-admission:eraerkni.dsh.mornye.theme -->
 
@@ -1151,7 +1151,7 @@ GitHub：[hongxin-y/codex-pet-Astra-Yao](https://github.com/hongxin-y/codex-pet-
 
 GitHub：[KurohaneKaoruko/DSH-START](https://github.com/KurohaneKaoruko/DSH-START)
 
-<img src="https://raw.githubusercontent.com/KurohaneKaoruko/DSH-START/b85f3e30aefd81846ab8a98f707a2270a21b8c0e/docs/boot.png" width="60%" alt="终端自检启动">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/KurohaneKaoruko__DSH-START/b85f3e30aefd81846ab8a98f707a2270a21b8c0e/home.gif" width="60%" alt="终端自检启动">
 
 <!-- /dsh-admission:kurohanekaoruko.dsh.start -->
 
@@ -1271,7 +1271,7 @@ GitHub：[mysn777/dsh-skin-kit](https://github.com/mysn777/dsh-skin-kit)
 
 GitHub：[Nefelibater/dsh-theme-prts-originium](https://github.com/Nefelibater/dsh-theme-prts-originium)
 
-<img src="https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/docs/images/theme-light.png" width="60%" alt="PRTS · 源石协议">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Nefelibater__dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/home.gif" width="60%" alt="PRTS · 源石协议">
 
 <!-- /dsh-admission:nefelibater.dsh.theme.prts.originium -->
 
@@ -1496,7 +1496,7 @@ GitHub：[A7m0spHere/dsh-feiyuFM](https://github.com/A7m0spHere/dsh-feiyuFM)
 
 GitHub：[AAAjzx111/dsh-theme-jing-chiyang](https://github.com/AAAjzx111/dsh-theme-jing-chiyang)
 
-<img src="https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/preview.jpg" width="60%" alt="镜 · 炽阳神光">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AAAjzx111__dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/home.gif" width="60%" alt="镜 · 炽阳神光">
 
 <!-- /dsh-admission:aaajzx111.dsh.theme.jing.chiyang -->
 
@@ -1556,7 +1556,7 @@ GitHub：[andy-7-andy/dsh-theme-retro-press](https://github.com/andy-7-andy/dsh-
 
 GitHub：[Anime2Real/Chobits-Chii-DSH](https://github.com/Anime2Real/Chobits-Chii-DSH)
 
-<img src="https://raw.githubusercontent.com/Anime2Real/Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/docs/preview-light.png" width="60%" alt="小叽绘本皮肤">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Anime2Real__Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/home.gif" width="60%" alt="小叽绘本皮肤">
 
 <!-- /dsh-admission:anime2real.chobits.chii.dsh -->
 
@@ -1586,7 +1586,7 @@ GitHub：[Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version](https://g
 
 GitHub：[bbbbbmy/dsh-moe-bear-skin](https://github.com/bbbbbmy/dsh-moe-bear-skin)
 
-<img src="https://raw.githubusercontent.com/bbbbbmy/dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/docs/preview.png" width="60%" alt="自嘲熊动态壁纸">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/bbbbbmy__dsh-moe-bear-skin/ac38d16d47dcc5549db1315429743c3b80e5910e/home.gif" width="60%" alt="自嘲熊动态壁纸">
 
 <!-- /dsh-admission:bbbbbmy.dsh.moe.bear.skin -->
 
@@ -1721,7 +1721,7 @@ GitHub：[dengxuhui/dsh-skin-diablo-dark](https://github.com/dengxuhui/dsh-skin-
 
 GitHub：[diexianxiang/dsh-custom-splash](https://github.com/diexianxiang/dsh-custom-splash)
 
-<img src="https://raw.githubusercontent.com/diexianxiang/dsh-custom-splash/a43e6b88568b8d10684612227e484452171bae6d/docs/screenshots/video-splash.png" width="60%" alt="自选视频片头">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/diexianxiang__dsh-custom-splash/a43e6b88568b8d10684612227e484452171bae6d/home.gif" width="60%" alt="自选视频片头">
 
 <!-- /dsh-admission:diexianxiang.dsh.custom.splash -->
 
@@ -1946,7 +1946,7 @@ GitHub：[ibrhr/dsh-hotd-theme](https://github.com/ibrhr/dsh-hotd-theme)
 
 GitHub：[iKode423/dsh-ronova-theme](https://github.com/iKode423/dsh-ronova-theme)
 
-<img src="https://raw.githubusercontent.com/iKode423/dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/docs/preview/preview-dark-new-chat.webp" width="60%" alt="若娜瓦主题">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/iKode423__dsh-ronova-theme/17331e3e13d41d90c1292eba6bbec31fa9b0476b/home.gif" width="60%" alt="若娜瓦主题">
 
 <!-- /dsh-admission:ikode423.dsh.ronova.theme -->
 
@@ -2006,7 +2006,7 @@ GitHub：[JinXing-01/dsh-music-player](https://github.com/JinXing-01/dsh-music-p
 
 GitHub：[JonathanChang-alt/dsh-86-startup](https://github.com/JonathanChang-alt/dsh-86-startup)
 
-<img src="https://raw.githubusercontent.com/JonathanChang-alt/dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/docs/hero.jpg" width="60%" alt="86 启动动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/JonathanChang-alt__dsh-86-startup/7c5a6f1f70d5959d6b29bc5d3163df195a4f63b8/home.gif" width="60%" alt="86 启动动画">
 
 <!-- /dsh-admission:jonathanchang.alt.dsh.86.startup -->
 
@@ -2081,7 +2081,7 @@ GitHub：[KHWLGH/dsh-lightweight-wallpaper](https://github.com/KHWLGH/dsh-lightw
 
 GitHub：[kinglhy2006/dsh-crt-theme](https://github.com/kinglhy2006/dsh-crt-theme)
 
-<img src="https://raw.githubusercontent.com/kinglhy2006/dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/docs/preview.png" width="60%" alt="CRT 终端">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/kinglhy2006__dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/home.gif" width="60%" alt="CRT 终端">
 
 <!-- /dsh-admission:kinglhy2006.dsh.crt.theme -->
 
@@ -2186,7 +2186,7 @@ GitHub：[meihaoyangfang/painted-screens](https://github.com/meihaoyangfang/pain
 
 GitHub：[mikufan39/dsh-mikufan](https://github.com/mikufan39/dsh-mikufan)
 
-<img src="https://raw.githubusercontent.com/mikufan39/dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/control-panel.png" width="60%" alt="魔法未来">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/mikufan39__dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/home.gif" width="60%" alt="魔法未来">
 
 <!-- /dsh-admission:mikufan39.dsh.mikufan -->
 
@@ -2216,7 +2216,7 @@ GitHub：[more-nico/dshLiquidTheme](https://github.com/more-nico/dshLiquidTheme)
 
 GitHub：[morningluu/dsh-theme-scaramouche](https://github.com/morningluu/dsh-theme-scaramouche)
 
-<img src="https://raw.githubusercontent.com/morningluu/dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/assets/screenshot-1.png" width="60%" alt="散兵 · 浮世雷音">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/morningluu__dsh-theme-scaramouche/5791215d5dac1bbf2c84ee32ee4c5719bd22d4ee/home.gif" width="60%" alt="散兵 · 浮世雷音">
 
 <!-- /dsh-admission:morningluu.dsh.theme.scaramouche -->
 
@@ -2261,7 +2261,7 @@ GitHub：[NingfghfX/dsh-huangquan-theme](https://github.com/NingfghfX/dsh-huangq
 
 GitHub：[Okazaki01/dsh-air-theme](https://github.com/Okazaki01/dsh-air-theme)
 
-<img src="https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/preview/light-new-session.png" width="60%" alt="AIR 夏日青空">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Okazaki01__dsh-air-theme/bb0465efb5faa79582117fd857b4209486aa4fa5/home.gif" width="60%" alt="AIR 夏日青空">
 
 <!-- /dsh-admission:okazaki01.dsh.air.theme -->
 
@@ -2381,7 +2381,7 @@ GitHub：[Qiao-NEYC/silverhand-dsh-pet](https://github.com/Qiao-NEYC/silverhand-
 
 GitHub：[QIFANAI/dsh-startup-elisa](https://github.com/QIFANAI/dsh-startup-elisa)
 
-<img src="https://raw.githubusercontent.com/QIFANAI/dsh-startup-elisa/cc3c7e4f51dc62f70f1b0c5c51731719197cb51f/docs/screenshots/glass-empty-g100.png" width="60%" alt="ELISA 启动动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/QIFANAI__dsh-startup-elisa/cc3c7e4f51dc62f70f1b0c5c51731719197cb51f/home.gif" width="60%" alt="ELISA 启动动画">
 
 <!-- /dsh-admission:qifanai.dsh.startup.elisa -->
 
@@ -2486,7 +2486,7 @@ GitHub：[rumpen233/dsh-lion-pet](https://github.com/rumpen233/dsh-lion-pet)
 
 GitHub：[ShawSheepSussiah/dsh-haavk-boot](https://github.com/ShawSheepSussiah/dsh-haavk-boot)
 
-<img src="https://raw.githubusercontent.com/ShawSheepSussiah/dsh-haavk-boot/b7290bd384ff6146a0239c6c3a89d3b7fb2368d2/docs/screenshots/splash-full.png" width="60%" alt="哈夫克 Relink 启动动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/ShawSheepSussiah__dsh-haavk-boot/b7290bd384ff6146a0239c6c3a89d3b7fb2368d2/home.gif" width="60%" alt="哈夫克 Relink 启动动画">
 
 <!-- /dsh-admission:shawsheepsussiah.dsh.haavk.boot -->
 
@@ -2561,7 +2561,7 @@ GitHub：[sinthome768/dsh-skin-xp-vaporwave](https://github.com/sinthome768/dsh-
 
 GitHub：[SorenLorn/dsh-eva-mari-skin](https://github.com/SorenLorn/dsh-eva-mari-skin)
 
-<img src="https://raw.githubusercontent.com/SorenLorn/dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/assets/bg.jpg" width="60%" alt="真希波 · EVA 装甲 HUD">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/SorenLorn__dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/home.gif" width="60%" alt="真希波 · EVA 装甲 HUD">
 
 <!-- /dsh-admission:sorenlorn.dsh.eva.mari.skin -->
 
@@ -2666,7 +2666,7 @@ GitHub：[Time-233/dsh-theme-neon-arcade](https://github.com/Time-233/dsh-theme-
 
 GitHub：[Traveritas/averita-dsh-theme-inspiration](https://github.com/Traveritas/averita-dsh-theme-inspiration)
 
-<img src="https://raw.githubusercontent.com/Traveritas/averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/preview/palette-themes.png" width="60%" alt="AveritA 主题灵感集">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Traveritas__averita-dsh-theme-inspiration/4d8ad076ed1d538af73c965d9cc064eb29ad6628/averita.gif" width="60%" alt="AveritA 主题灵感集">
 
 <!-- /dsh-admission:traveritas.averita.dsh.theme.inspiration -->
 
@@ -2696,7 +2696,7 @@ GitHub：[vianvio/dsh-assistant](https://github.com/vianvio/dsh-assistant)
 
 GitHub：[Wang341223/dsh-umbrella-startup](https://github.com/Wang341223/dsh-umbrella-startup)
 
-<img src="https://raw.githubusercontent.com/Wang341223/dsh-umbrella-startup/1e57b4c74cba94929d85c6c1ad4621f783fc588f/docs/screenshots/theme-dark.png" width="60%" alt="保护伞公司启动动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Wang341223__dsh-umbrella-startup/1e57b4c74cba94929d85c6c1ad4621f783fc588f/home.gif" width="60%" alt="保护伞公司启动动画">
 
 <!-- /dsh-admission:wang341223.dsh.umbrella.startup -->
 
@@ -2741,7 +2741,7 @@ GitHub：[wsljc/dsh-skin-kit](https://github.com/wsljc/dsh-skin-kit)
 
 GitHub：[XiaoSiKe/zero-one-lingjie-theme](https://github.com/XiaoSiKe/zero-one-lingjie-theme)
 
-<img src="https://raw.githubusercontent.com/XiaoSiKe/zero-one-lingjie-theme/b8a375dd32af5be0ace7eecc1693324e4852caf3/docs/screenshots/desktop-preview.jpg" width="60%" alt="零一·凌界">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/XiaoSiKe__zero-one-lingjie-theme/b8a375dd32af5be0ace7eecc1693324e4852caf3/home.gif" width="60%" alt="零一·凌界">
 
 <!-- /dsh-admission:xiaosike.zero.one.lingjie.theme -->
 
@@ -2861,7 +2861,7 @@ GitHub：[zdz6215591/dsh-theme-doubao](https://github.com/zdz6215591/dsh-theme-d
 
 GitHub：[zhang-23x/dsh-deepseek-splash](https://github.com/zhang-23x/dsh-deepseek-splash)
 
-<img src="https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/draw.png" width="60%" alt="DeepSeek 鲸鱼片头">
+<img src="https://raw.githubusercontent.com/zhang-23x/dsh-deepseek-splash/8c9343eff1b4faf018d194c8d8c4bf6276820c11/docs/preview.gif" width="60%" alt="DeepSeek 鲸鱼片头">
 
 <!-- /dsh-admission:zhang.23x.dsh.deepseek.splash -->
 
@@ -2936,7 +2936,7 @@ GitHub：[zouwj16/dsh-bg-theme](https://github.com/zouwj16/dsh-bg-theme)
 
 GitHub：[111seek/dsh-splash](https://github.com/111seek/dsh-splash)
 
-<img src="https://raw.githubusercontent.com/111seek/dsh-splash/5a87c8163cb4f906211e8c4d1088a83721b48209/docs/preview.png" width="60%" alt="反应堆启动动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/111seek__dsh-splash/5a87c8163cb4f906211e8c4d1088a83721b48209/home.gif" width="60%" alt="反应堆启动动画">
 
 <!-- /dsh-admission:111seek.dsh.splash -->
 
@@ -2981,7 +2981,7 @@ GitHub：[203-11/dsh-fat-fish](https://github.com/203-11/dsh-fat-fish)
 
 GitHub：[2154036609-ux/dsh-startup-blade](https://github.com/2154036609-ux/dsh-startup-blade)
 
-<img src="https://raw.githubusercontent.com/2154036609-ux/dsh-startup-blade/36fdf4809aa849622685f88347a048ac9c69c1bb/docs/preview.png" width="60%" alt="拔刀启动动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/2154036609-ux__dsh-startup-blade/36fdf4809aa849622685f88347a048ac9c69c1bb/home.gif" width="60%" alt="拔刀启动动画">
 
 <!-- /dsh-admission:2154036609.ux.dsh.startup.blade -->
 
@@ -3101,7 +3101,7 @@ GitHub：[adengou/dsh-chubby-whale](https://github.com/adengou/dsh-chubby-whale)
 
 GitHub：[aeonsscope/dsh-fellowmoon-theme](https://github.com/aeonsscope/dsh-fellowmoon-theme)
 
-<img src="https://raw.githubusercontent.com/aeonsscope/dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/docs/screenshots/preview-window.png" width="60%" alt="超管局主题">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/aeonsscope__dsh-fellowmoon-theme/313880563bcb89e4fdca779a1f302465297dc74f/home.gif" width="60%" alt="超管局主题">
 
 <!-- /dsh-admission:aeonsscope.dsh.fellowmoon.theme -->
 
@@ -3176,7 +3176,7 @@ GitHub：[Aurora-Lucas365/dsh-deep-wake-splash](https://github.com/Aurora-Lucas3
 
 GitHub：[Awahara/dsh-plugin-boot-splash](https://github.com/Awahara/dsh-plugin-boot-splash)
 
-<img src="https://raw.githubusercontent.com/Awahara/dsh-plugin-boot-splash/bba4c684c048396cc5cfec26f0ca6d520f5c04dc/docs/screenshots/draw.png" width="60%" alt="HUD 启动序列">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Awahara__dsh-plugin-boot-splash/bba4c684c048396cc5cfec26f0ca6d520f5c04dc/home.gif" width="60%" alt="HUD 启动序列">
 
 <!-- /dsh-admission:awahara.dsh.plugin.boot.splash -->
 
@@ -3236,7 +3236,7 @@ GitHub：[BeyondGu/klein-cat-pet](https://github.com/BeyondGu/klein-cat-pet)
 
 GitHub：[brunozhang416/dsh-eva-unit-01-skin](https://github.com/brunozhang416/dsh-eva-unit-01-skin)
 
-<img src="https://raw.githubusercontent.com/brunozhang416/dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/docs/v1.10.1/angel.jpg" width="60%" alt="初号机启动控制台">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/brunozhang416__dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/home.gif" width="60%" alt="初号机启动控制台">
 
 <!-- /dsh-admission:brunozhang416.dsh.eva.unit.01.skin -->
 
@@ -3656,7 +3656,7 @@ GitHub：[gitByteFree/dsh-pomodoro-pet](https://github.com/gitByteFree/dsh-pomod
 
 GitHub：[Gsaecy/Zero-State-Radar](https://github.com/Gsaecy/Zero-State-Radar)
 
-<img src="https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/docs/images/home.png" width="60%" alt="零态雷达">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Gsaecy__Zero-State-Radar/58e0b377fe3b9051e4286e6b0428be75dcba8078/home.gif" width="60%" alt="零态雷达">
 
 <!-- /dsh-admission:gsaecy.zero.state.radar -->
 
@@ -3716,7 +3716,7 @@ GitHub：[heinrich0505/dsh-theme-material](https://github.com/heinrich0505/dsh-t
 
 GitHub：[hero-jianghaojie/dsh-lively](https://github.com/hero-jianghaojie/dsh-lively)
 
-<img src="https://raw.githubusercontent.com/hero-jianghaojie/dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/docs/preview-light.png" width="60%" alt="动态壁纸片单">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/hero-jianghaojie__dsh-lively/d8803b6302c873efc84d5f6de6df0c929f937405/home.gif" width="60%" alt="动态壁纸片单">
 
 <!-- /dsh-admission:hero.jianghaojie.dsh.lively -->
 
@@ -3746,7 +3746,7 @@ GitHub：[Hrauroras/dsh-plugin-ostan-nanami-san](https://github.com/Hrauroras/ds
 
 GitHub：[huangyuanhu3-dev/dsh-chat-skin](https://github.com/huangyuanhu3-dev/dsh-chat-skin)
 
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/huangyuanhu3-dev__dsh-chat-skin/d6bd2411af830513068f3b60e3f34bd8de37ee13/home.png" width="60%" alt="聊天外观工坊">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/huangyuanhu3-dev__dsh-chat-skin/d6bd2411af830513068f3b60e3f34bd8de37ee13/home.gif" width="60%" alt="聊天外观工坊">
 
 <!-- /dsh-admission:huangyuanhu3.dev.dsh.chat.skin -->
 
@@ -4046,7 +4046,7 @@ GitHub：[KOGGUA-EDIT/dsh-pet-sayaka](https://github.com/KOGGUA-EDIT/dsh-pet-say
 
 GitHub：[levitate403/dsh-firefly-bg](https://github.com/levitate403/dsh-firefly-bg)
 
-<img src="https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/01-chat-rooftop.jpg" width="60%" alt="流萤背景">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/levitate403__dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/home.gif" width="60%" alt="流萤背景">
 
 <!-- /dsh-admission:levitate403.dsh.firefly.bg -->
 
@@ -4151,7 +4151,7 @@ GitHub：[luwendi-qq/dsh-eva-skin](https://github.com/luwendi-qq/dsh-eva-skin)
 
 GitHub：[LynnChrysteiin/dsh-ink-splash](https://github.com/LynnChrysteiin/dsh-ink-splash)
 
-<img src="https://raw.githubusercontent.com/LynnChrysteiin/dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/docs/splash-light.png" width="60%" alt="线稿开场">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/LynnChrysteiin__dsh-ink-splash/09df1939ec5299f7c5bbc8c0d53391e745a2b728/moss.gif" width="60%" alt="线稿开场">
 
 <!-- /dsh-admission:lynnchrysteiin.dsh.ink.splash -->
 
@@ -4181,7 +4181,7 @@ GitHub：[machi12/dsh-gundam-graphite-theme](https://github.com/machi12/dsh-gund
 
 GitHub：[magiceric/dsh-skin-magiclab](https://github.com/magiceric/dsh-skin-magiclab)
 
-<img src="https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/assets/screenshot-boot.jpg" width="60%" alt="外观实验室">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/magiceric__dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/home.gif" width="60%" alt="外观实验室">
 
 <!-- /dsh-admission:magiceric.dsh.skin.magiclab -->
 
@@ -4211,7 +4211,7 @@ GitHub：[milkly909-code/dsh-plugin-starlight-protocol](https://github.com/milkl
 
 GitHub：[MJH520/dsh-welcome-boot](https://github.com/MJH520/dsh-welcome-boot)
 
-<img src="https://raw.githubusercontent.com/MJH520/dsh-welcome-boot/a35a088c8daa038e6842d39d4932832c11edbdb2/assets/screenshots/splash.png" width="60%" alt="自定义启动视频">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/MJH520__dsh-welcome-boot/a35a088c8daa038e6842d39d4932832c11edbdb2/launch.gif" width="60%" alt="自定义启动视频">
 
 <!-- /dsh-admission:mjh520.dsh.welcome.boot -->
 
@@ -4256,7 +4256,7 @@ GitHub：[MoonSand/dsh-ui-optimize](https://github.com/MoonSand/dsh-ui-optimize)
 
 GitHub：[moshe-233/dsh-web-splash-loader](https://github.com/moshe-233/dsh-web-splash-loader)
 
-<img src="https://raw.githubusercontent.com/moshe-233/dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/preview.png" width="60%" alt="液态玻璃加载屏">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/moshe-233__dsh-web-splash-loader/a53f3b1e3804d4878d009ffef0b014b7d5e0b449/home.gif" width="60%" alt="液态玻璃加载屏">
 
 <!-- /dsh-admission:moshe.233.dsh.web.splash.loader -->
 
@@ -4601,7 +4601,7 @@ GitHub：[Sorphone/dsh-eyecare-bg](https://github.com/Sorphone/dsh-eyecare-bg)
 
 GitHub：[SoulZhou/dsh-background-studio](https://github.com/SoulZhou/dsh-background-studio)
 
-<img src="https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/settings-custom.png" width="60%" alt="背景工作室">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/SoulZhou__dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/home.gif" width="60%" alt="背景工作室">
 
 <!-- /dsh-admission:soulzhou.dsh.background.studio -->
 
@@ -4631,6 +4631,7 @@ GitHub：[st21a1/dsh-bili-wallpaper](https://github.com/st21a1/dsh-bili-wallpape
 
 GitHub：[stevenfeifei/rain-ocean-skin](https://github.com/stevenfeifei/rain-ocean-skin)
 
+<img src="https://raw.githubusercontent.com/stevenfeifei/rain-ocean-skin/2d6ea273d54e656c862096f0edc2e8742bccf65b/native-dist/poster.jpg" width="60%" alt="雨海">
 <!-- /dsh-admission:stevenfeifei.rain.ocean.skin -->
 
 <!-- dsh-admission:sunshinezhi.dsh.scifi.splash -->
@@ -4869,7 +4870,7 @@ GitHub：[Veduis/dsh-workspace-tints](https://github.com/Veduis/dsh-workspace-ti
 
 GitHub：[Verayi2007/dsh-dafeiyu-splash](https://github.com/Verayi2007/dsh-dafeiyu-splash)
 
-<img src="https://raw.githubusercontent.com/Verayi2007/dsh-dafeiyu-splash/bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3/docs/preview.png" width="60%" alt="大肥鱼启动动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Verayi2007__dsh-dafeiyu-splash/bafc7d45a87e7c38e7f178e0e612f177ea7b6bb3/launch.gif" width="60%" alt="大肥鱼启动动画">
 
 <!-- /dsh-admission:verayi2007.dsh.dafeiyu.splash -->
 
@@ -5199,7 +5200,7 @@ GitHub：[XQ-zheng/dsh-zhangxuefeng-skin](https://github.com/XQ-zheng/dsh-zhangx
 
 GitHub：[yangsong608/dsh-startup-moss](https://github.com/yangsong608/dsh-startup-moss)
 
-<img src="https://raw.githubusercontent.com/yangsong608/dsh-startup-moss/0dc2d0722efee8f8294745b93bcf59daf83975b2/docs/screenshots/boot.png" width="60%" alt="550W 核心终端">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/yangsong608__dsh-startup-moss/0dc2d0722efee8f8294745b93bcf59daf83975b2/launch.gif" width="60%" alt="550W 核心终端">
 
 <!-- /dsh-admission:yangsong608.dsh.startup.moss -->
 
@@ -5334,7 +5335,7 @@ GitHub：[Zeppeli777/dsh-stardew-skin](https://github.com/Zeppeli777/dsh-stardew
 
 GitHub：[zfwoo/dsh-splash](https://github.com/zfwoo/dsh-splash)
 
-<img src="https://raw.githubusercontent.com/zfwoo/dsh-splash/13515fc004ce15c40eb2b62f4447b1872a056fe5/docs/screenshot.png" width="60%" alt="霓虹鲸启动">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/zfwoo__dsh-splash/13515fc004ce15c40eb2b62f4447b1872a056fe5/launch.gif" width="60%" alt="霓虹鲸启动">
 
 <!-- /dsh-admission:zfwoo.dsh.splash -->
 
@@ -5409,7 +5410,7 @@ GitHub：[zus12873/dsh-cinematic-wallpaper](https://github.com/zus12873/dsh-cine
 
 GitHub：[zzzhengqi/dsh-firefly-skin](https://github.com/zzzhengqi/dsh-firefly-skin)
 
-<img src="https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/boot.jpg" width="60%" alt="流萤">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/zzzhengqi__dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/home.gif" width="60%" alt="流萤">
 
 <!-- /dsh-admission:zzzhengqi.dsh.firefly.skin -->
 
@@ -5589,7 +5590,7 @@ GitHub：[frank-fan-818/dsh-f1-skin](https://github.com/frank-fan-818/dsh-f1-ski
 
 GitHub：[hetonghao/dsh-zed-space](https://github.com/hetonghao/dsh-zed-space)
 
-<img src="https://raw.githubusercontent.com/hetonghao/dsh-zed-space/c879d8e6ca6afabcbd227a69cebd0cd4398a300d/docs/screenshots/harness-event-horizon.png" width="60%" alt="Zed Space 动态皮肤">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/hetonghao__dsh-zed-space/c879d8e6ca6afabcbd227a69cebd0cd4398a300d/home-ocean.gif" width="60%" alt="Zed Space 动态皮肤">
 
 <!-- /dsh-admission:hetonghao.dsh.zed.space -->
 
@@ -5709,7 +5710,7 @@ GitHub：[cjjchina3088191870-sudo/dsh-plugin-miku-theme](https://github.com/cjjc
 
 GitHub：[duty25/dsh-aemeath-theme](https://github.com/duty25/dsh-aemeath-theme)
 
-<img src="https://raw.githubusercontent.com/duty25/dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/docs/desktop-chat.webp" width="60%" alt="爱弥斯像素主题">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/duty25__dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/home.gif" width="60%" alt="爱弥斯像素主题">
 
 <!-- /dsh-admission:duty25.dsh.aemeath.theme -->
 
@@ -5754,7 +5755,7 @@ GitHub：[haoyu-qi/dsh-hermes-taiji-skin](https://github.com/haoyu-qi/dsh-hermes
 
 GitHub：[huantest2024/dsh-anime-theme](https://github.com/huantest2024/dsh-anime-theme)
 
-<img src="https://raw.githubusercontent.com/huantest2024/dsh-anime-theme/aeb82de93f6135e8e7ffeb79d9a09886559ab7ec/docs/preview.jpg" width="60%" alt="二次元壁纸主题">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/huantest2024__dsh-anime-theme/aeb82de93f6135e8e7ffeb79d9a09886559ab7ec/home.gif" width="60%" alt="二次元壁纸主题">
 
 <!-- /dsh-admission:huantest2024.dsh.anime.theme -->
 
@@ -5979,7 +5980,7 @@ GitHub：[haitunlang/dsh-aero-glass](https://github.com/haitunlang/dsh-aero-glas
 
 GitHub：[kk0421/lawson-fuji-skin](https://github.com/kk0421/lawson-fuji-skin)
 
-<img src="https://raw.githubusercontent.com/kk0421/lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/docs/preview.jpg" width="60%" alt="富士山下 · 黄昏便利店">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/kk0421__lawson-fuji-skin/4f50d5d4814b6bd2ed3bfad2204816760cdf9381/home.gif" width="60%" alt="富士山下 · 黄昏便利店">
 
 <!-- /dsh-admission:kk0421.lawson.fuji.skin -->
 
@@ -6024,7 +6025,7 @@ GitHub：[TanPass/furina-dsh-theme](https://github.com/TanPass/furina-dsh-theme)
 
 GitHub：[wk-single/my-plugins](https://github.com/wk-single/my-plugins)
 
-<img src="https://raw.githubusercontent.com/wk-single/my-plugins/c761b53e9e57519744036362ec2abf52db5860de/docs/splash.webp" width="60%" alt="超新星启动动画">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/wk-single__my-plugins--packages--startup-splash/c761b53e9e57519744036362ec2abf52db5860de/launch.gif" width="60%" alt="超新星启动动画">
 
 <!-- /dsh-admission:wk.single.startup.splash -->
 
@@ -6174,7 +6175,7 @@ ASCetic — compact ASCII / terminal theme for DeepSeek Harness: 19 palettes, 3 
 
 GitHub：[TABmk/dsh-theme-ascetic](https://github.com/TABmk/dsh-theme-ascetic)
 
-<img src="https://raw.githubusercontent.com/TABmk/dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/docs/screenshots/palettes.png" width="60%" alt="dsh-theme-ascetic">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/TABmk__dsh-theme-ascetic/d71fafd145fb0807057f020c152c27ad08f8d8ce/home.gif" width="60%" alt="dsh-theme-ascetic">
 
 <!-- /dsh-admission:tabmk.dsh-theme-ascetic -->
 
@@ -7907,6 +7908,138 @@ GitHub：[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:lengduan.dsh-815-skin -->
+### 2026-11-17 · dsh-815-skin
+
+作者：lengduan
+
+1945-08-15 世界名画 dsh皮肤
+
+GitHub：[lengduan/dsh-815-skin](https://github.com/lengduan/dsh-815-skin)
+
+<img src="https://raw.githubusercontent.com/lengduan/dsh-815-skin/761e3942738a0d1e3cdd4e974aef39b70570ffeb/assets/nanjing-surrender-chen-jian.jpg" width="60%" alt="dsh-815-skin">
+
+<!-- dsh-auto-entry:auki.zy.dsh.cursor.theme -->
+### 2026-11-17 · 光标主题
+
+作者：auki-zy
+
+给 14 种鼠标状态（默认、指针、文本、等待、禁止等）各配一张 PNG/CUR，内置 18 套预设主题、25 个手绘 SVG 形状与 16/24/32/48 尺寸、热点编辑，主题可导出/导入为 ZIP 图片包；Windows 上还能一键写进系统光标方案。
+
+GitHub：[auki-zy/dsh-cursor-theme](https://github.com/auki-zy/dsh-cursor-theme)
+
+<img src="https://raw.githubusercontent.com/auki-zy/dsh-cursor-theme/39fab23fefdc168986e08d647200e7fbc5bdc5ab/data/theme-packs/promo-banner.png" width="60%" alt="光标主题">
+
+<!-- dsh-auto-entry:lbunc.dsh-composer-glass -->
+### 2026-11-17 · dsh-composer-glass
+
+作者：Lbunc
+
+DSH plugin: one uniform frosted-glass material for the UI surfaces, plus an optional image/video dynamic wallpaper behind them.
+
+GitHub：[Lbunc/dsh-composer-glass](https://github.com/Lbunc/dsh-composer-glass)
+
+<img src="https://raw.githubusercontent.com/Lbunc/dsh-composer-glass/6da00fe16671e5f148ca87eb38e051c6406f6720/images/01-start.webp" width="60%" alt="dsh-composer-glass">
+
+<!-- dsh-auto-entry:dsh-plugins.dsh-thought-buddy -->
+### 2026-11-17 · dsh-thought-buddy
+
+作者：dsh-plugins
+
+在「Deep diving...」状态提示前，放一只动态小伙伴——GrokBot 风格动画头像，状态文字还会同步打字机变换。
+
+GitHub：[dsh-plugins/dsh-thought-buddy](https://github.com/dsh-plugins/dsh-thought-buddy)
+
+<img src="https://raw.githubusercontent.com/dsh-plugins/dsh-thought-buddy/bb8f1aa5972aab844b0c9793f0793b34f4a486b8/docs/effect.gif" width="60%" alt="dsh-thought-buddy">
+
+<!-- dsh-auto-entry:tpmoonchefryan.dsh-joi-channel-theme -->
+### 2026-11-17 · dsh-joi-channel-theme
+
+作者：tpmoonchefryan
+
+轴伊 Joi 双衣装主题：Flowers 与 Library 是各自成套的明暗令牌体系，新会话页有立绘与趴在标题上的鲸鱼娘，输入框上方两只 Q 版角色随本回合状态换表情，侧栏字标换成二人合影，上下文占用由一颗渐熟的橘子表示；第三张卡可在保持插件安装的前提下切回 DeepSeek 原生外观。
+
+GitHub：[tpmoonchefryan/dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme)
+
+<img src="https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/2df174ba43fced995bc0fb7a24535db470e7dbc2/docs/new-chat-flowers.png" width="60%" alt="dsh-joi-channel-theme">
+
+<!-- dsh-auto-entry:zhu1090093659.dsh-pet -->
+### 2026-11-17 · dsh-pet
+
+作者：zhu1090093659
+
+Multi-pet companion plugin for the DSH Web GUI：registry 驱动的浮层桌宠，支持状态反应、命名、投喂、互动和亲密度。
+
+GitHub：[zhu1090093659/dsh-pet](https://github.com/zhu1090093659/dsh-pet)
+
+<img src="https://raw.githubusercontent.com/zhu1090093659/dsh-pet/d19284a539618e5eadb6c263d842008a2b600bb0/assets/whale-refined/previews/idle.gif" width="60%" alt="dsh-pet">
+
+<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
+### 2026-11-17 · dsh-catppuccin
+
+作者：NoNameLeGo
+
+DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
+
+GitHub：[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)
+
+<img src="https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/976d9065f517c2d111d24e67a48c2a5049445c05/assets/previews/combined.png" width="60%" alt="dsh-catppuccin">
+
+<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
+### 2026-11-17 · dsh-bloom-theme
+
+作者：webkubor
+
+DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
+
+GitHub：[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)
+
+<img src="https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/bloom-banner.png" width="60%" alt="dsh-bloom-theme">
+
+<!-- dsh-auto-entry:louke6572.dsh-whale-widget-plus -->
+### 2026-11-17 · dsh-whale-widget-plus
+
+作者：louke6572
+
+DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计
+
+GitHub：[louke6572/dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus)
+
+<img src="https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png" width="60%" alt="dsh-whale-widget-plus">
+
+<!-- dsh-auto-entry:nwflower.dsh-claude-style -->
+### 2026-11-17 · dsh-claude-style
+
+作者：Nwflower
+
+Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
+
+GitHub：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)
+
+<img src="https://raw.githubusercontent.com/Nwflower/dsh-claude-style/d3a511b51e2eebdfc41952135a02d8f2752032a6/docs/screenshots/claude-home-light.png" width="60%" alt="dsh-claude-style">
+
+<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
+### 2026-11-17 · dsh-wallpaper-engine
+
+作者：elysia395
+
+一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
+
+GitHub：[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)
+
+<img src="https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ae734a2c80ca04099b793f8ce8a182bcb5ad8f79/docs/images/main-interface.gif" width="60%" alt="dsh-wallpaper-engine">
+
+<!-- dsh-auto-entry:charlesaq.dsh-fgo-chaldea -->
+### 2026-11-17 · dsh-fgo-chaldea
+
+作者：CharlesAQ
+
+FGO 迦勒底风格的 DeepSeek Harness Web UI 皮肤插件。配色层走官方 ctx.theme token API，背景是程序生成的原创星图 / 魔术回路 SVG，外加金色刻线边框，不包含任何 FGO 官方美术素材。
+
+GitHub：[CharlesAQ/dsh-fgo-chaldea](https://github.com/CharlesAQ/dsh-fgo-chaldea)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/CharlesAQ__dsh-fgo-chaldea/e769eb31089880d156dc0cf9e98f1fa14bb7c5b9/fgo-chaldea-dark.png" width="60%" alt="dsh-fgo-chaldea">
+
 <!-- dsh-auto-entry:alexpeng07.dsh-custom-plugin -->
 ### 2026-11-16 · dsh-custom-plugin
 
@@ -7928,17 +8061,6 @@ GitHub：[AlexPeng07/dsh-custom-plugin](https://github.com/AlexPeng07/dsh-custom
 GitHub：[nishuoyang/dsh-wallpaper-bg](https://github.com/nishuoyang/dsh-wallpaper-bg)
 
 <img src="https://raw.githubusercontent.com/nishuoyang/dsh-wallpaper-bg/ea350232fbbe01be97bb7fdfe23705bb317eb4e1/docs/screenshots/preview-hero.jpg" width="60%" alt="dsh-wallpaper-bg">
-
-<!-- dsh-auto-entry:nwflower.dsh-claude-style -->
-### 2026-11-16 · dsh-claude-style
-
-作者：Nwflower
-
-Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
-
-GitHub：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)
-
-<img src="https://raw.githubusercontent.com/Nwflower/dsh-claude-style/d3a511b51e2eebdfc41952135a02d8f2752032a6/docs/screenshots/claude-home-light.png" width="60%" alt="dsh-claude-style">
 
 <!-- dsh-auto-entry:clicgger-types.dsh-piggy -->
 ### 2026-11-16 · dsh-piggy
@@ -8071,15 +8193,6 @@ dsh主题维什戴尔风格
 GitHub：[cdxDNRF/wishadel-theme](https://github.com/cdxDNRF/wishadel-theme)
 
 <img src="https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/8fef0e953e77b93421f36f7e4ceb7522d2fae6c2/docs/screenshots/conversation.png" width="60%" alt="wishadel-theme">
-
-<!-- dsh-auto-entry:charlesaq.dsh-fgo-chaldea -->
-### 2026-11-16 · dsh-fgo-chaldea
-
-作者：CharlesAQ
-
-FGO 迦勒底风格的 DeepSeek Harness Web UI 皮肤插件。配色层走官方 ctx.theme token API，背景是程序生成的原创星图 / 魔术回路 SVG，外加金色刻线边框，不包含任何 FGO 官方美术素材。
-
-GitHub：[CharlesAQ/dsh-fgo-chaldea](https://github.com/CharlesAQ/dsh-fgo-chaldea)
 
 <!-- dsh-auto-entry:cloudsen.dsh-umbrella-theme -->
 ### 2026-11-16 · dsh-umbrella-theme
@@ -8243,17 +8356,6 @@ GitHub：[la-sandrone/dsh-taller-y-relojeria-de-sandrone](https://github.com/la-
 复古麦金塔 · DeepSeek Harness 皮肤
 
 GitHub：[Leyan0365/dsh-retro-mac](https://github.com/Leyan0365/dsh-retro-mac)
-
-<!-- dsh-auto-entry:louke6572.dsh-whale-widget-plus -->
-### 2026-11-16 · dsh-whale-widget-plus
-
-作者：louke6572
-
-DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计
-
-GitHub：[louke6572/dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus)
-
-<img src="https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png" width="60%" alt="dsh-whale-widget-plus">
 
 <!-- dsh-auto-entry:lyx0717.dsh-washer -->
 ### 2026-11-16 · dsh-washer
@@ -8420,17 +8522,6 @@ GitHub：[vb2250158/dsh-theme-blue](https://github.com/vb2250158/dsh-theme-blue)
 
 <img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/home.png" width="60%" alt="dsh-theme-blue">
 
-<!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
-### 2026-11-16 · dsh-bloom-theme
-
-作者：webkubor
-
-DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调色，明暗双主题，顶栏一键切换，全部达 WCAG AA
-
-GitHub：[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)
-
-<img src="https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/bloom-banner.png" width="60%" alt="dsh-bloom-theme">
-
 <!-- dsh-auto-entry:weibaohui.dsh-matrix -->
 ### 2026-11-16 · dsh-matrix
 
@@ -8574,17 +8665,6 @@ GitHub：[raven3005672/dsh-plugin-shell-skin](https://github.com/raven3005672/ds
 
 <img src="https://raw.githubusercontent.com/raven3005672/dsh-plugin-shell-skin/12202022425baf954b84ddcbcacc797c898e3d64/assets/preview/home-light.jpg" width="60%" alt="dsh-plugin-shell-skin">
 
-<!-- dsh-auto-entry:lengduan.dsh-815-skin -->
-### 2026-11-16 · dsh-815-skin
-
-作者：lengduan
-
-1945-08-15 世界名画 dsh皮肤
-
-GitHub：[lengduan/dsh-815-skin](https://github.com/lengduan/dsh-815-skin)
-
-<img src="https://raw.githubusercontent.com/lengduan/dsh-815-skin/761e3942738a0d1e3cdd4e974aef39b70570ffeb/assets/nanjing-surrender-chen-jian.jpg" width="60%" alt="dsh-815-skin">
-
 <!-- dsh-auto-entry:kleinklein0824.dsh.official.skin -->
 ### 2026-11-16 · DSH 官网风格皮肤
 
@@ -8640,17 +8720,6 @@ GitHub：[WWFZS/dsh-plugin-startup-animation](https://github.com/WWFZS/dsh-plugi
 
 <img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/WWFZS__dsh-plugin-startup-animation/3173ace4a769b20e5c0fa48486ee9df790db7e46/home.gif" width="60%" alt="dsh-plugin-startup-animation">
 
-<!-- dsh-auto-entry:dsh-plugins.dsh-thought-buddy -->
-### 2026-11-16 · dsh-thought-buddy
-
-作者：dsh-plugins
-
-在「Deep diving...」状态提示前，放一只动态小伙伴——GrokBot 风格动画头像，状态文字还会同步打字机变换。
-
-GitHub：[dsh-plugins/dsh-thought-buddy](https://github.com/dsh-plugins/dsh-thought-buddy)
-
-<img src="https://raw.githubusercontent.com/dsh-plugins/dsh-thought-buddy/bb8f1aa5972aab844b0c9793f0793b34f4a486b8/docs/effect.gif" width="60%" alt="dsh-thought-buddy">
-
 <!-- dsh-auto-entry:ash-qw.dsh-theme-prts -->
 ### 2026-11-16 · dsh-theme-prts
 
@@ -8694,17 +8763,6 @@ GitHub：[HarmlessFunny/dsh-background-by-model](https://github.com/HarmlessFunn
 GitHub：[zkforge/dsh-claude-desktop-theme](https://github.com/zkforge/dsh-claude-desktop-theme)
 
 <img src="https://raw.githubusercontent.com/zkforge/dsh-claude-desktop-theme/e6131a700142a3d003e1539219a2b6193220b476/assets/screenshots/fullscreen-light.webp" width="60%" alt="dsh-claude-desktop-theme">
-
-<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
-### 2026-11-16 · dsh-wallpaper-engine
-
-作者：elysia395
-
-一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
-
-GitHub：[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)
-
-<img src="https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ae734a2c80ca04099b793f8ce8a182bcb5ad8f79/docs/images/main-interface.gif" width="60%" alt="dsh-wallpaper-engine">
 
 <!-- dsh-auto-entry:12we21.src -->
 ### 2026-11-16 · src
@@ -10585,17 +10643,6 @@ GitHub：[yoli-mi/dsh-client-ui-custom](https://github.com/yoli-mi/dsh-client-ui
 
 <img src="https://cdn.jsdelivr.net/gh/yoli-mi/dsh-client-ui-custom@main/assets/preview-mini.png" width="60%" alt="dsh-client-ui-custom">
 
-<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
-### 2026-11-15 · dsh-catppuccin
-
-作者：NoNameLeGo
-
-DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
-
-GitHub：[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)
-
-<img src="https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/976d9065f517c2d111d24e67a48c2a5049445c05/assets/previews/combined.png" width="60%" alt="dsh-catppuccin">
-
 <!-- dsh-auto-entry:andersen216.dsh-whale-girl-live2d -->
 ### 2026-11-15 · dsh-whale-girl-live2d
 
@@ -10672,17 +10719,6 @@ GitHub：[eh-tools/dsh-plugin](https://github.com/eh-tools/dsh-plugin)
 GitHub：[GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO)
 
 <img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/GXinnnnnn__dsh-SAO/6bb413c9c7a9c8dd416fe3b7b039ab4cf3920ddd/home.gif" width="60%" alt="dsh-SAO">
-
-<!-- dsh-auto-entry:zhu1090093659.dsh-pet -->
-### 2026-11-14 · dsh-pet
-
-作者：zhu1090093659
-
-Multi-pet companion plugin for the DSH Web GUI：registry 驱动的浮层桌宠，支持状态反应、命名、投喂、互动和亲密度。
-
-GitHub：[zhu1090093659/dsh-pet](https://github.com/zhu1090093659/dsh-pet)
-
-<img src="https://raw.githubusercontent.com/zhu1090093659/dsh-pet/d19284a539618e5eadb6c263d842008a2b600bb0/assets/whale-refined/previews/idle.gif" width="60%" alt="dsh-pet">
 
 <!-- dsh-auto-entry:king-of-soy-sauce.liang-intensity -->
 ### 2026-11-14 · 滑动变祖
@@ -11145,17 +11181,6 @@ DSH Web 轻拟物主题：提供浅色与深色配色、环境光影、材质阴
 GitHub：[Lhy723/dsh-neu-theme](https://github.com/Lhy723/dsh-neu-theme)
 
 <img src="https://raw.githubusercontent.com/Lhy723/dsh-neu-theme/218f4f7896637dc33ed691d15c5c8ccc568fca6a/.github/asset/dsh-neu-theme-hero.png" width="60%" alt="dsh-neu-theme">
-
-<!-- dsh-auto-entry:tpmoonchefryan.dsh-joi-channel-theme -->
-### 2026-11-11 · dsh-joi-channel-theme
-
-作者：tpmoonchefryan
-
-轴伊 Joi 双衣装主题：Flowers 与 Library 是各自成套的明暗令牌体系，新会话页有立绘与趴在标题上的鲸鱼娘，输入框上方两只 Q 版角色随本回合状态换表情，侧栏字标换成二人合影，上下文占用由一颗渐熟的橘子表示；第三张卡可在保持插件安装的前提下切回 DeepSeek 原生外观。
-
-GitHub：[tpmoonchefryan/dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme)
-
-<img src="https://raw.githubusercontent.com/tpmoonchefryan/dsh-joi-channel-theme/2df174ba43fced995bc0fb7a24535db470e7dbc2/docs/new-chat-flowers.png" width="60%" alt="dsh-joi-channel-theme">
 
 <!-- dsh-auto-entry:heshuren371.local.dsh.music.player.tui -->
 ### 2026-11-10 · dsh-music-player-tui
@@ -13367,17 +13392,6 @@ GitHub：[Ayase34/gal-view](https://github.com/Ayase34/gal-view)
 GitHub：[WYH66666666/DSH-Transparent-UI-Plugin](https://github.com/WYH66666666/DSH-Transparent-UI-Plugin)
 
 <img src="https://raw.githubusercontent.com/WYH66666666/DSH-Transparent-UI-Plugin/d94431a95bd147c11ef3fe95fa1915d1e96b028b/assets/1.png" width="60%" alt="DSH-Transparent-UI-Plugin">
-
-<!-- dsh-auto-entry:lbunc.dsh-composer-glass -->
-### 2026-11-08 · dsh-composer-glass
-
-作者：Lbunc
-
-DSH plugin: one uniform frosted-glass material for the UI surfaces, plus an optional image/video dynamic wallpaper behind them.
-
-GitHub：[Lbunc/dsh-composer-glass](https://github.com/Lbunc/dsh-composer-glass)
-
-<img src="https://raw.githubusercontent.com/Lbunc/dsh-composer-glass/6da00fe16671e5f148ca87eb38e051c6406f6720/images/01-start.webp" width="60%" alt="dsh-composer-glass">
 
 <!-- dsh-auto-entry:lengzhanbao.dsh-taffy-theme -->
 ### 2026-11-08 · dsh-taffy-theme
