@@ -26,28 +26,28 @@ compatibility:
     - web
 screenshots: []
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: bf14c0e47267a9f7c1ef6c23e842c03d912669dd
     packageVersion: 0.1.0
     scannerVersion: static-v2
+    dshVersion: ">=0.1.1-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-13T00:13:32.289Z
+    checkedAt: 2026-11-16T09:18:04.788Z
     findings: []
 license:
   code: MIT
@@ -60,6 +60,6 @@ marketScreenshots:
   - skin-screenshots/la-sandrone__dsh-taller-y-relojeria-de-sandrone--packages--dsh-sandrone-ui-patches/5cd447a084902e62e639d62497a1a075f4dec2fd/settings.png
 featuredRank: 1000
 releaseUpdatedAt: 2026-11-13T00:28:13.548Z
-metadataUpdatedAt: 2026-11-13T00:28:13.548Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-13T00:28:13.548Z
+updatedAt: 2026-11-16T09:48:54.442Z

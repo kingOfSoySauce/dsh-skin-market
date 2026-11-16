@@ -1,0 +1,75 @@
+id: soslowsnail.dsh.scenery.background
+name:
+  zh: 山海背景
+  en: Mountain & Sea Scenery
+author: soslowsnail
+description: 按本地日期每天换一张山海背景，也能每 30 秒交叉淡入轮播并带 Ken Burns 运镜；5 张内置 SVG 场景离线可用，联网再补 12 张 Unsplash 摄影图，右下角悬浮按钮可切模式、换一张、调清晰/柔和或隐藏（Alt+B 召回）。
+repo: https://github.com/soslowsnail/dsh-scenery-background
+package: dsh-scenery-background
+rowId: dsh-scenery-background
+category: skin
+tags:
+  - background
+  - scenery
+  - rotation
+  - offline
+modes:
+  - light
+  - dark
+install:
+  target: github:soslowsnail/dsh-scenery-background#ce87f371478341a449c903da110a4ca9e248d6b0
+  version: 1.0.0
+  commit: ce87f371478341a449c903da110a4ca9e248d6b0
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-scenery-background
+    packageVersion: 1.0.0
+    integrity: sha512-3wb/kR3VHjiG1SXPGRb2zd9c+ExGgiu1ldJCSvxKqVEC3wmhY0/a8aDTkmnH+uWoGhp0ghepeg9BrqH1yf7AMQ==
+  npm:
+    name: dsh-scenery-background
+    version: 1.0.0
+    integrity: sha512-3wb/kR3VHjiG1SXPGRb2zd9c+ExGgiu1ldJCSvxKqVEC3wmhY0/a8aDTkmnH+uWoGhp0ghepeg9BrqH1yf7AMQ==
+    repository: https://github.com/soslowsnail/dsh-scenery-background
+    gitHead: ce87f371478341a449c903da110a4ca9e248d6b0
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  scan:
+    commit: ce87f371478341a449c903da110a4ca9e248d6b0
+    packageVersion: 1.0.0
+    scannerVersion: static-v2
+    mode: static
+    result: pass
+    checkedAt: 2026-11-16T09:18:33.937Z
+    findings: []
+license:
+  code: MIT
+  commercialUse: true
+starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/soslowsnail__dsh-scenery-background/05620f7d7167735a8057cc1195d6fa283fc14ae5/home.png
+  - skin-screenshots/soslowsnail__dsh-scenery-background/05620f7d7167735a8057cc1195d6fa283fc14ae5/conversation.png
+  - skin-screenshots/soslowsnail__dsh-scenery-background/05620f7d7167735a8057cc1195d6fa283fc14ae5/settings.png
+featuredRank: 1536
+releaseUpdatedAt: 2026-11-16T09:48:54.442Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
+starsUpdatedAt: 2026-11-15T16:38:24.792Z
+updatedAt: 2026-11-16T09:48:54.442Z

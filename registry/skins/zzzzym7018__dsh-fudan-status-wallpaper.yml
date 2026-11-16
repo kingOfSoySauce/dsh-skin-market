@@ -54,16 +54,17 @@ health:
     commit: 014ba35d976e9c673b356c8bd10d74e70cb519de
     packageVersion: 4.3.0
     scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.3 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:24:09.855Z
+    checkedAt: 2026-11-16T09:17:22.445Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1171
 starsSnapshot: 1
+featuredRank: 1171
 releaseUpdatedAt: 2026-11-14T00:24:11.135Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T23:28:29.986Z
+updatedAt: 2026-11-16T09:48:54.442Z

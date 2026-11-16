@@ -28,10 +28,6 @@ compatibility:
   dsh: ">=0.2.0-rc.2 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/home.png
-  - skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/conversation.png
-  - skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -61,9 +57,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1195
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/home.png
+  - skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/conversation.png
+  - skin-screenshots/MuWangE__dsh-ui-skin--packages--dsh-ui-skin-lab/d26e758a20a775c5471ead101366348a575c0155/settings.png
+featuredRank: 1195
 releaseUpdatedAt: 2026-11-15T20:45:17.764Z
-metadataUpdatedAt: 2026-11-15T20:45:17.764Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-15T20:45:17.764Z
+updatedAt: 2026-11-16T09:48:54.442Z

@@ -43,40 +43,34 @@ screenshots:
   - https://raw.githubusercontent.com/yuanzephyr920-oss/dsh-idle-crt/dff7b50ab649f2d4eb480e515496e1b95f1c4136/docs/comment-demo.png
 listScreenshot: https://raw.githubusercontent.com/yuanzephyr920-oss/dsh-idle-crt/dff7b50ab649f2d4eb480e515496e1b95f1c4136/docs/screenshot-plate.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
-  installation: manual-only
+  installation: verified
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
-    installation: improve
-    installCommand: improve
+    installation: pass
+    installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
-    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
-    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.2-rc.1 未被本次检测范围 >=0.2 完全覆盖（固定版本 fdf4d16625bd5c3cc8a839e93a68c62c901e28b4）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
     commit: fdf4d16625bd5c3cc8a839e93a68c62c901e28b4
     packageVersion: 0.3.1
     scannerVersion: static-v2
-    dshVersion: 0.2.2-rc.1
+    dshVersion: ">=0.2"
     mode: static
-    result: unknown
-    checkedAt: 2026-11-14T23:49:03.314Z
-    findings:
-      - code: client-source-unavailable
-        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
+    result: pass
+    checkedAt: 2026-11-16T09:17:16.356Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1282
 starsSnapshot: 1
+featuredRank: 1282
 releaseUpdatedAt: 2026-11-14T23:49:03.807Z
-metadataUpdatedAt: 2026-11-14T23:49:03.807Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T23:49:03.807Z
+updatedAt: 2026-11-16T09:48:54.442Z

@@ -26,27 +26,27 @@ compatibility:
     - web
 screenshots: []
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 72e6eef8c8340dda82c4ef5ab727905b38f24816
     packageVersion: 0.1.0
     scannerVersion: static-v2
+    dshVersion: ">=0.2.1-rc.2 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-10-27T23:01:25.390Z
+    checkedAt: 2026-11-16T09:17:42.732Z
     findings: []
 license:
   code: MIT
@@ -58,6 +58,6 @@ marketScreenshots:
   - skin-screenshots/dingchenhui0618-arch__dsh-signal-pet/6f8b1e45e2f7b910be5f8cff72b2ca53cdaa0cff/settings.png
 featuredRank: 1000
 releaseUpdatedAt: 2026-10-27T23:01:25.538Z
-metadataUpdatedAt: 2026-11-10T00:42:47.982Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-10T00:42:47.982Z
+updatedAt: 2026-11-16T09:48:54.442Z

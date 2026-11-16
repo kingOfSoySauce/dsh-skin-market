@@ -29,27 +29,27 @@ screenshots:
   - https://raw.githubusercontent.com/yaanlaan/deepseek-colorful/e8f0172d212a1d705d8a5090bbbc08b134f34513/assets/screenshots/preview-lonely-cat.png
 listScreenshot: https://raw.githubusercontent.com/yaanlaan/deepseek-colorful/e8f0172d212a1d705d8a5090bbbc08b134f34513/assets/screenshots/preview-lonely-cat.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
     commit: 2312ad0b635b44167d93dfb59fc116aaa98131ef
     packageVersion: 1.0.0
     scannerVersion: static-v2
+    dshVersion: ^0.2.0
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:53:23.283Z
+    checkedAt: 2026-11-16T09:18:56.311Z
     findings: []
 license:
   code: MIT
@@ -57,6 +57,6 @@ license:
 starsSnapshot: 0
 featuredRank: 1000
 releaseUpdatedAt: 2026-10-26T01:53:23.725Z
-metadataUpdatedAt: 2026-11-09T06:46:29.367Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T06:46:29.367Z
+updatedAt: 2026-11-16T09:48:54.442Z

@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Nagi-ovo/dsh-ads#a58182019dba40fcfcf83c1fc22f63151cc0412b
-  version: 0.1.5
-  commit: a58182019dba40fcfcf83c1fc22f63151cc0412b
+  target: github:Nagi-ovo/dsh-ads#b201f76e3b4e6648f853079f97371ef77a52f9dd
+  version: 0.1.6
+  commit: b201f76e3b4e6648f853079f97371ef77a52f9dd
   desktop:
     mode: managed
     registry: npm
     packageName: "@nagi-ovo/dsh-ads"
-    packageVersion: 0.1.5
-    integrity: sha512-chhPeOT2U/bCEghlKHHPTZhcpnF9MjYdoZdUBzK+4TkooGXVndBRPMhp/n4eZeKK4CyQWAFVphLCGlZWT0LH0w==
+    packageVersion: 0.1.6
+    integrity: sha512-1eB+zLfL/0xbS8H2hgM28q0sf35D9vMnPa/aQyOODjL57B51OHpH5HZk9faa8N0ampuNbLE02wlQfTRWv5+8Mw==
   npm:
     name: "@nagi-ovo/dsh-ads"
-    version: 0.1.5
-    integrity: sha512-chhPeOT2U/bCEghlKHHPTZhcpnF9MjYdoZdUBzK+4TkooGXVndBRPMhp/n4eZeKK4CyQWAFVphLCGlZWT0LH0w==
+    version: 0.1.6
+    integrity: sha512-1eB+zLfL/0xbS8H2hgM28q0sf35D9vMnPa/aQyOODjL57B51OHpH5HZk9faa8N0ampuNbLE02wlQfTRWv5+8Mw==
     repository: https://github.com/Nagi-ovo/dsh-ads
-    gitHead: a58182019dba40fcfcf83c1fc22f63151cc0412b
+    gitHead: b201f76e3b4e6648f853079f97371ef77a52f9dd
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -59,20 +59,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: a58182019dba40fcfcf83c1fc22f63151cc0412b
-    packageVersion: 0.1.5
+    commit: b201f76e3b4e6648f853079f97371ef77a52f9dd
+    packageVersion: 0.1.6
     scannerVersion: static-v2
     dshVersion: ^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-0 || ^0.2.2-0
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:22:43.315Z
+    checkedAt: 2026-11-16T09:15:04.536Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
 starsSnapshot: 728
 featuredRank: 142
-releaseUpdatedAt: 2026-11-14T00:22:46.170Z
-metadataUpdatedAt: 2026-11-14T00:22:46.170Z
+releaseUpdatedAt: 2026-11-16T09:48:54.442Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-15T20:40:53.617Z
-updatedAt: 2026-11-15T20:40:53.617Z
+updatedAt: 2026-11-16T09:48:54.442Z

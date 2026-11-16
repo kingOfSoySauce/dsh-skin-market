@@ -31,27 +31,27 @@ compatibility:
     - web
 screenshots: []
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
     commit: 7a1a770e14438e9c5a5f43894e747a351a00bc39
     packageVersion: 0.4.7
     scannerVersion: static-v2
+    dshVersion: ">=0.1.2-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:53:24.536Z
+    checkedAt: 2026-11-16T09:18:58.116Z
     findings: []
 license:
   code: MIT
@@ -63,6 +63,6 @@ marketScreenshots:
   - skin-screenshots/YrracOwl__dsh-theme-acid-noir/7a1a770e14438e9c5a5f43894e747a351a00bc39/settings.png
 featuredRank: 1000
 releaseUpdatedAt: 2026-10-26T01:53:24.703Z
-metadataUpdatedAt: 2026-11-11T13:17:15.192Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-16T09:48:54.442Z

@@ -27,10 +27,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/baizz-520__dsh-theme-studio/1ba240f55419d05f56731e103a6cb733870eae6f/home-graphite.png
-  - skin-screenshots/baizz-520__dsh-theme-studio/1ba240f55419d05f56731e103a6cb733870eae6f/home-matcha.png
-  - skin-screenshots/baizz-520__dsh-theme-studio/1ba240f55419d05f56731e103a6cb733870eae6f/home-midnight.png
 screenshots: []
 review:
   compatibility: unverified
@@ -58,9 +54,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1521
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/baizz-520__dsh-theme-studio/1ba240f55419d05f56731e103a6cb733870eae6f/home-graphite.png
+  - skin-screenshots/baizz-520__dsh-theme-studio/1ba240f55419d05f56731e103a6cb733870eae6f/home-matcha.png
+  - skin-screenshots/baizz-520__dsh-theme-studio/1ba240f55419d05f56731e103a6cb733870eae6f/home-midnight.png
+featuredRank: 1521
 releaseUpdatedAt: 2026-11-15T20:42:33.839Z
-metadataUpdatedAt: 2026-11-15T20:42:33.839Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T20:42:33.839Z
+updatedAt: 2026-11-16T09:48:54.442Z

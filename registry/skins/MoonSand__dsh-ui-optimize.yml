@@ -36,10 +36,6 @@ compatibility:
   dsh: ">=0.2.1-rc.3"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/home.png
-  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/conversation.png
-  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -68,9 +64,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1194
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/home.png
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/conversation.png
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/settings.png
+featuredRank: 1194
 releaseUpdatedAt: 2026-11-15T20:45:15.591Z
-metadataUpdatedAt: 2026-11-15T20:45:15.591Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-15T20:45:15.591Z
+updatedAt: 2026-11-16T09:48:54.442Z

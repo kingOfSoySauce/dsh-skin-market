@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-16**：[鲸鱼女仆](https://github.com/yunxiiQwQ/dsh-maid-whale-UI)（yunxiiQwQ）——鲸鱼女仆纸面主题：亮暗两套海洋插画壁纸、手绘边框与装饰件，另带一只随应用启停的 Windows 原生鲸鱼桌宠；主题在桌面端与网页端都能用，桌宠仅限 Windows 10/11 x64。详见[收录日志](./docs/recently-added.md#recent-2026-11-16-yunxiiqwq-maid-whale-webui)。
+- **2026-11-16**：[dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-theme)（CoolTea001）——DeepSeek Harness 主题插件 — 支持 浅色 / 深色 / 跟随系统 外观切换，并提供 34 款预设主题。详见[收录日志](./docs/recently-added.md#recent-2026-11-16-cooltea001-dsh-cool-theme)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

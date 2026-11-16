@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:AumiSatori/dsh-ui-beautify#d7bc1f3bc6804bf1d3804505a5f47810b40072a6
+  target: github:AumiSatori/dsh-ui-beautify#4a62ebeb084413bc2807a3256ab92c330c977155
   version: 0.6.6
-  commit: d7bc1f3bc6804bf1d3804505a5f47810b40072a6
+  commit: 4a62ebeb084413bc2807a3256ab92c330c977155
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证 npm 安装包，请使用项目说明中的安装方式。
@@ -28,10 +28,6 @@ compatibility:
   dsh: ">=0.2.1-rc.2 <0.3.0-0"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png
-  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/conversation.png
-  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/settings.png
 screenshots:
   - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png
   - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/conversation.png
@@ -51,20 +47,24 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: d7bc1f3bc6804bf1d3804505a5f47810b40072a6
+    commit: 4a62ebeb084413bc2807a3256ab92c330c977155
     packageVersion: 0.6.6
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.2 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:41:19.116Z
+    checkedAt: 2026-11-16T09:15:24.442Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1000
 starsSnapshot: 15
-releaseUpdatedAt: 2026-11-15T20:41:19.831Z
-metadataUpdatedAt: 2026-11-15T20:41:19.831Z
+marketScreenshots:
+  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png
+  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/conversation.png
+  - skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/settings.png
+featuredRank: 1000
+releaseUpdatedAt: 2026-11-16T09:48:54.442Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-15T20:41:19.831Z
-updatedAt: 2026-11-15T20:41:19.831Z
+updatedAt: 2026-11-16T09:48:54.442Z

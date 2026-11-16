@@ -46,9 +46,10 @@ health:
     commit: eacfe1cbdf5b9e06fa1d4d2e99a4083114a562fe
     packageVersion: 0.27.0
     scannerVersion: static-v2
+    dshVersion: ">=0.1.5-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-10-23T22:04:12.236Z
+    checkedAt: 2026-11-16T09:17:54.155Z
     findings: []
 license:
   code: MIT
@@ -60,6 +61,6 @@ marketScreenshots:
   - skin-screenshots/He2way__dsh-task-console/eacfe1cbdf5b9e06fa1d4d2e99a4083114a562fe/settings.png
 featuredRank: 107
 releaseUpdatedAt: 2026-10-23T22:04:12.887Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-08-16 13:55:53.334000+00:00
-updatedAt: 2026-11-14T23:28:29.986Z
+updatedAt: 2026-11-16T09:48:54.442Z

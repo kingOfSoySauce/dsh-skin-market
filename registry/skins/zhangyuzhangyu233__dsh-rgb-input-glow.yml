@@ -44,9 +44,10 @@ health:
     commit: 0c182b06f3f7e6b03d860dd8fb45e5544188e704
     packageVersion: 1.0.0
     scannerVersion: static-v2
+    dshVersion: ^1.0.0
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:53:27.764Z
+    checkedAt: 2026-11-16T09:19:03.050Z
     findings: []
 license:
   code: MIT
@@ -57,6 +58,6 @@ marketScreenshots:
   - skin-screenshots/zhangyuzhangyu233__dsh-rgb-input-glow/0c182b06f3f7e6b03d860dd8fb45e5544188e704/conversation.png
 featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-11-14T23:28:29.986Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-14T23:28:29.986Z
+updatedAt: 2026-11-16T09:48:54.442Z

@@ -27,26 +27,26 @@ screenshots:
   - https://raw.githubusercontent.com/tenebris173/dsh-skin-strata/cbf4fb271f8994428fe90b27603b32ef7bb084f6/preview/strata-matrix.png
 listScreenshot: https://raw.githubusercontent.com/tenebris173/dsh-skin-strata/cbf4fb271f8994428fe90b27603b32ef7bb084f6/preview/strata-matrix.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
     commit: cbf4fb271f8994428fe90b27603b32ef7bb084f6
     packageVersion: 1.0.0
     scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.2 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:53:11.631Z
+    checkedAt: 2026-11-16T09:18:36.482Z
     findings: []
 license:
   code: MIT
@@ -58,6 +58,6 @@ marketScreenshots:
   - skin-screenshots/tenebris173__dsh-skin-strata/cbf4fb271f8994428fe90b27603b32ef7bb084f6/settings.png
 featuredRank: 1000
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-11-11T13:17:15.192Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-16T09:48:54.442Z

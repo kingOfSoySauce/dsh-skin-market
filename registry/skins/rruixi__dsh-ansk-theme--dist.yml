@@ -28,10 +28,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/home.png
-  - skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/conversation.png
-  - skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -61,9 +57,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1197
 starsSnapshot: 4
+marketScreenshots:
+  - skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/home.png
+  - skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/conversation.png
+  - skin-screenshots/rruixi__dsh-ansk-theme--dist/c1d8ae17b9f59ab4f3b4418dba42b61a9de72070/settings.png
+featuredRank: 1197
 releaseUpdatedAt: 2026-11-15T20:45:37.238Z
-metadataUpdatedAt: 2026-11-15T20:45:37.238Z
+metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-15T20:45:37.238Z
-updatedAt: 2026-11-15T20:45:37.238Z
+updatedAt: 2026-11-16T09:48:54.442Z
