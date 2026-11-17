@@ -26,7 +26,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/shentongzy/dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/test/preview.png
-listScreenshot: https://raw.githubusercontent.com/shentongzy/dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/test/preview.png
+listScreenshot: skin-screenshots/shentongzy__dsh-zzz-skin/f3c33bd9a4f161e79b268b71e20aaeb864992a80/home.gif
 review:
   compatibility: unverified
   preview: verified

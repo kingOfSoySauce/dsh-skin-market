@@ -43,7 +43,7 @@ screenshots:
   - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/docs/gui-overview.png
   - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/docs/scene-grid.png
   - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/docs/readme-banner.png
-listScreenshot: https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/assets/cover.webp
+listScreenshot: skin-screenshots/1015677515__dsh-theme-holo/578325dcc8d8d5e23844a526eeab4ceb2d027cc6/launch.gif
 review:
   compatibility: unverified
   preview: verified
@@ -72,6 +72,8 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 13
+marketScreenshots:
+  - skin-screenshots/1015677515__dsh-theme-holo/578325dcc8d8d5e23844a526eeab4ceb2d027cc6/launch.gif
 featuredRank: 1199
 releaseUpdatedAt: 2026-11-14T23:43:04.852Z
 metadataUpdatedAt: 2026-11-14T23:43:04.852Z

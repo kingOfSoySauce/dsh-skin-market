@@ -39,7 +39,7 @@ screenshots:
   - https://raw.githubusercontent.com/Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version/ea5d1c83b8a05b39167c13b03f2f4af7770e88ed/docs/screenshots/1.0.2/boot.jpg
   - https://raw.githubusercontent.com/Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version/ea5d1c83b8a05b39167c13b03f2f4af7770e88ed/docs/screenshots/1.0.2/wallpaper.jpg
   - https://raw.githubusercontent.com/Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version/ea5d1c83b8a05b39167c13b03f2f4af7770e88ed/docs/screenshots/1.0.2/settings.jpg
-listScreenshot: https://raw.githubusercontent.com/Apple-TWININGS/DEEPSEEK-HARNESS-Boot-Animation-Male-Version/ea5d1c83b8a05b39167c13b03f2f4af7770e88ed/docs/screenshots/1.0.2/boot.jpg
+listScreenshot: skin-screenshots/Apple-TWININGS__DEEPSEEK-HARNESS-Boot-Animation-Male-Version/a614ee45a649b9130acaacc39bca7355c4e0f253/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -67,6 +67,8 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/Apple-TWININGS__DEEPSEEK-HARNESS-Boot-Animation-Male-Version/a614ee45a649b9130acaacc39bca7355c4e0f253/home.gif
 featuredRank: 1295
 releaseUpdatedAt: 2026-11-14T23:46:52.866Z
 metadataUpdatedAt: 2026-11-14T23:46:52.866Z
