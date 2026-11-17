@@ -18189,6 +18189,24 @@
       },
       "override": true,
       "nameSource": "pinned README + maintainer copy review"
+    },
+    "95384.dsh.themes.people.ai": {
+      "name": {
+        "zh": "人民的AI",
+        "en": "People's AI"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把应用背景换成随包携带的一张固定壁纸，刷新后仍是同一张；侧栏、输入框与设置面板改成半透明毛玻璃，让壁纸透出来。加载时强制深色外观并禁用切换，新会话标题同时换成「人民的AI」。",
+        "en": "Replaces the app background with a bundled fixed wallpaper that stays the same across reloads, and turns the sidebar, composer and settings panel into translucent frosted surfaces so it shows through. Loading forces dark appearance with the appearance switcher locked, and renames the new-session heading to “人民的AI”."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "fd558366d752ba318a139443c909a9adf1ca9582d40b33ed80bdf4539ab95e2a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
     }
   }
 }
