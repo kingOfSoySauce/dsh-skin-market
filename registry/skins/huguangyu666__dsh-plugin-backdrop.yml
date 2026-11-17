@@ -1,0 +1,56 @@
+id: huguangyu666.dsh.plugin.backdrop
+name:
+  zh: 流体鲸背景
+  en: Fluid Whale Backdrop
+author: huguangyu666
+description: 把官方站点 hero 的深海氛围铺成整页动态背景：WebGL2 流体（flowmap 双缓冲 + 域扭曲）铺 5 层深蓝到暖金渐变，自发光与虚拟光源跟随鼠标、叠颗粒噪点与暗角，210 帧字符鲸鱼水平巡游并在循环接缝打一个赛博朋克故障转场，55 条发光鱼群绕圈游动，再加 90px 点线网格，鼠标波纹能把点阵推开。界面容器透明化并强制暗色，四层 30fps 节流、视口外停帧。
+repo: https://github.com/huguangyu666/dsh-plugin-backdrop
+package: dsh-plugin-backdrop
+rowId: backdrop
+category: skin
+tags:
+  - animated-background
+  - webgl
+  - whale
+  - dark
+  - canvas
+modes:
+  - dark
+install:
+  target: github:huguangyu666/dsh-plugin-backdrop#964db33419ad48c760feaf7ad674f101b0e0f85c
+  version: 0.1.2
+  commit: 964db33419ad48c760feaf7ad674f101b0e0f85c
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1545
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-17T16:45:13.373Z
+metadataUpdatedAt: 2026-11-17T16:45:13.373Z
+starsUpdatedAt: 2026-11-17T16:45:13.373Z
+updatedAt: 2026-11-17T16:45:13.373Z
+marketScreenshots:
+  - skin-screenshots/huguangyu666__dsh-plugin-backdrop/964db33419ad48c760feaf7ad674f101b0e0f85c/home.gif
+  - skin-screenshots/huguangyu666__dsh-plugin-backdrop/964db33419ad48c760feaf7ad674f101b0e0f85c/home.png
+  - skin-screenshots/huguangyu666__dsh-plugin-backdrop/964db33419ad48c760feaf7ad674f101b0e0f85c/conversation.png

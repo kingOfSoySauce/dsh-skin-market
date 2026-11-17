@@ -18225,6 +18225,24 @@
       },
       "override": true,
       "nameSource": "pinned README + maintainer copy review"
+    },
+    "huguangyu666.dsh.plugin.backdrop": {
+      "name": {
+        "zh": "流体鲸背景",
+        "en": "Fluid Whale Backdrop"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把官方站点 hero 的深海氛围铺成整页动态背景：WebGL2 流体（flowmap 双缓冲 + 域扭曲）铺 5 层深蓝到暖金渐变，自发光与虚拟光源跟随鼠标、叠颗粒噪点与暗角，210 帧字符鲸鱼水平巡游并在循环接缝打一个赛博朋克故障转场，55 条发光鱼群绕圈游动，再加 90px 点线网格，鼠标波纹能把点阵推开。界面容器透明化并强制暗色，四层 30fps 节流、视口外停帧。",
+        "en": "Paints the official site's deep-sea hero atmosphere across the whole page: WebGL2 fluid with domain warping, a mouse-following virtual light and film grain; a 210-frame character-drawn whale cruising horizontally with a cyberpunk glitch burst that hides the loop seam; 55 glowing fish circling; and a 90px dot grid that ripples away from the cursor. Panels go transparent and the UI is forced dark; all four layers throttle to 30fps and stop off-screen."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "9f893260f42bbc376d544110909f032faf1e8c6e890d9bfa44134a2c7aef781a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
     }
   }
 }
