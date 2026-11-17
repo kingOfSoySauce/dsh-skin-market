@@ -26,6 +26,8 @@ compatibility:
   dsh: 0.2.2-rc.1
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/TanPass__furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/launch.gif
 screenshots:
   - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/current-shot-fontaine-nocturne.png
   - https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/current-shot-hydro-iris.png
@@ -67,8 +69,6 @@ license:
 featuredRank: 1152
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-15T20:45:52.737Z
-metadataUpdatedAt: 2026-11-15T20:45:52.737Z
+metadataUpdatedAt: 2026-11-17T20:55:30.476Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-15T20:45:52.737Z
-marketScreenshots:
-  - skin-screenshots/TanPass__furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/launch.gif
+updatedAt: 2026-11-17T20:55:30.476Z

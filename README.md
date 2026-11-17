@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-16**：[dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-theme)（CoolTea001）——DeepSeek Harness 主题插件 — 支持 浅色 / 深色 / 跟随系统 外观切换，并提供 34 款预设主题。详见[收录日志](./docs/recently-added.md#recent-2026-11-16-cooltea001-dsh-cool-theme)。
+- **2026-11-18**：[深深桌宠手机版](https://github.com/Jcnet-9527/dsh-Jpet-phone)（Jcnet-9527）——把 PC2005-cloud/dsh-pet v0.3.7 的大肥鱼桌宠搬到安卓手机版：插件版常驻页面、可拖动、被戳会回应，随会话状态换动作，还能聊天和查余额；同仓库另带独立安卓悬浮 App，不装插件也能在系统最上层常驻，语音识别与朗读都在手机本地跑。详见[收录日志](./docs/recently-added.md#recent-2026-11-18-jcnet-9527-dsh-jpet-phone)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

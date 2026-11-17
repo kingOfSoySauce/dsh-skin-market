@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-16**: [dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-theme) (CoolTea001). See the [recent additions log](./docs/recently-added.md#recent-2026-11-16-cooltea001-dsh-cool-theme).
+- **2026-11-18**: [ShenShen Pet Mobile](https://github.com/Jcnet-9527/dsh-Jpet-phone) (Jcnet-9527). See the [recent additions log](./docs/recently-added.md#recent-2026-11-18-jcnet-9527-dsh-jpet-phone).
 
 See the [recent additions log](./docs/recently-added.md).
 

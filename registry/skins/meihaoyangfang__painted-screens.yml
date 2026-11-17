@@ -27,6 +27,8 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/meihaoyangfang__painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/home.gif
 screenshots:
   - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/sakura.jpg
   - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/whale-song.jpg
@@ -64,11 +66,9 @@ health:
 license:
   code: (MIT AND LicenseRef-Proprietary-Artwork)
   commercialUse: false
-marketScreenshots:
-  - skin-screenshots/meihaoyangfang__painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/home.gif
 featuredRank: 1242
 starsSnapshot: 1
 releaseUpdatedAt: 2026-11-14T23:48:11.874Z
-metadataUpdatedAt: 2026-11-14T23:48:11.874Z
+metadataUpdatedAt: 2026-11-17T20:52:47.840Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T23:48:11.874Z
+updatedAt: 2026-11-17T20:52:47.840Z

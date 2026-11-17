@@ -37,6 +37,8 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/WhatCannotBeSaid__eva-inspired-theme/13ab3a50898e14e72639b21441bc3e22c7fcb423/home.gif
 screenshots:
   - https://raw.githubusercontent.com/WhatCannotBeSaid/eva-inspired-theme/13ab3a50898e14e72639b21441bc3e22c7fcb423/docs/preview-light.jpg
   - https://raw.githubusercontent.com/WhatCannotBeSaid/eva-inspired-theme/13ab3a50898e14e72639b21441bc3e22c7fcb423/docs/preview-dark.jpg
@@ -70,11 +72,9 @@ health:
 license:
   code: (MIT AND CC-BY-NC-SA-4.0 AND OFL-1.1)
   commercialUse: false
-marketScreenshots:
-  - skin-screenshots/WhatCannotBeSaid__eva-inspired-theme/13ab3a50898e14e72639b21441bc3e22c7fcb423/home.gif
 featuredRank: 1276
 starsSnapshot: 3
 releaseUpdatedAt: 2026-11-14T23:45:13.363Z
-metadataUpdatedAt: 2026-11-14T23:45:13.363Z
+metadataUpdatedAt: 2026-11-17T20:51:07.530Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-14T23:45:13.363Z
+updatedAt: 2026-11-17T20:51:07.530Z

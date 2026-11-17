@@ -27,6 +27,10 @@ compatibility:
   dsh: 0.2.1-rc.5
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/home.gif
+  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/home.png
+  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/lixiaoyao-1024/dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/docs/preview-default.jpg
   - https://raw.githubusercontent.com/lixiaoyao-1024/dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/docs/preview-aurora.jpg
@@ -58,13 +62,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/home.gif
-  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/home.png
-  - skin-screenshots/lixiaoyao-1024__dsh-customTheme/8c61c69fa5e2155e6b865e0e463248f6450cff7e/conversation.png
 featuredRank: 1528
+starsSnapshot: 0
 releaseUpdatedAt: 2026-11-15T20:45:03.102Z
-metadataUpdatedAt: 2026-11-16T12:20:21.184Z
+metadataUpdatedAt: 2026-11-17T20:54:41.107Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-16T12:20:21.184Z
+updatedAt: 2026-11-17T20:54:41.107Z

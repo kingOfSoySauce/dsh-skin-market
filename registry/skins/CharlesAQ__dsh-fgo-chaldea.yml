@@ -32,7 +32,7 @@ screenshots:
   - https://opengraph.githubassets.com/placeholder/charlesaq.dsh-fgo-chaldea
 review:
   compatibility: verified
-  preview: verified
+  preview: repository-card
   installation: verified
 health:
   status: improvements
@@ -60,6 +60,6 @@ license:
 starsSnapshot: 0
 featuredRank: 100
 releaseUpdatedAt: 2026-08-23T05:33:10.870Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+metadataUpdatedAt: 2026-11-17T20:53:43.827Z
 starsUpdatedAt: 2026-09-09T21:40:50.369Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-17T20:53:43.827Z

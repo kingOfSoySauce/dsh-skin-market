@@ -20,11 +20,21 @@ install:
   target: github:huguangyu666/dsh-plugin-backdrop#964db33419ad48c760feaf7ad674f101b0e0f85c
   version: 0.1.2
   commit: 964db33419ad48c760feaf7ad674f101b0e0f85c
+  desktop:
+    mode: manual-only
+    reason: npm-lifecycle-scripts:prepack
 compatibility:
   dsh: unverified
   platform:
     - web
-screenshots: []
+marketScreenshots:
+  - skin-screenshots/huguangyu666__dsh-plugin-backdrop/964db33419ad48c760feaf7ad674f101b0e0f85c/home.gif
+  - skin-screenshots/huguangyu666__dsh-plugin-backdrop/964db33419ad48c760feaf7ad674f101b0e0f85c/home.png
+  - skin-screenshots/huguangyu666__dsh-plugin-backdrop/964db33419ad48c760feaf7ad674f101b0e0f85c/conversation.png
+screenshots:
+  - https://github.com/user-attachments/assets/6ffb84c4-462c-4aeb-a2dc-12af14e08f21
+  - https://github.com/user-attachments/assets/5e01be73-0747-4dab-8495-86e1eff62800
+listScreenshot: https://github.com/user-attachments/assets/6ffb84c4-462c-4aeb-a2dc-12af14e08f21
 review:
   compatibility: unverified
   preview: verified
@@ -32,25 +42,31 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: improve
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 964db33419ad48c760feaf7ad674f101b0e0f85c
+    packageVersion: 0.1.2
+    scannerVersion: static-v2
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-17T20:50:50.702Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1545
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-17T16:45:13.373Z
-metadataUpdatedAt: 2026-11-17T16:45:13.373Z
+releaseUpdatedAt: 2026-11-17T20:50:51.986Z
+metadataUpdatedAt: 2026-11-17T20:50:51.986Z
 starsUpdatedAt: 2026-11-17T16:45:13.373Z
-updatedAt: 2026-11-17T16:45:13.373Z
-marketScreenshots:
-  - skin-screenshots/huguangyu666__dsh-plugin-backdrop/964db33419ad48c760feaf7ad674f101b0e0f85c/home.gif
-  - skin-screenshots/huguangyu666__dsh-plugin-backdrop/964db33419ad48c760feaf7ad674f101b0e0f85c/home.png
-  - skin-screenshots/huguangyu666__dsh-plugin-backdrop/964db33419ad48c760feaf7ad674f101b0e0f85c/conversation.png
+updatedAt: 2026-11-17T20:50:51.986Z

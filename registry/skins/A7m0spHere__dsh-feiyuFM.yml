@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:A7m0spHere/dsh-feiyuFM#60393365df4b9524f7a1e6266212ae92b013168f
+  target: github:A7m0spHere/dsh-feiyuFM#9b5908ae0dd5b726e85f787f2e788c10799007c9
   version: 0.1.2
-  commit: 60393365df4b9524f7a1e6266212ae92b013168f
+  commit: 9b5908ae0dd5b726e85f787f2e788c10799007c9
   desktop:
     mode: managed
     registry: npm
@@ -32,7 +32,7 @@ install:
     version: 0.1.2
     integrity: sha512-bZiqicWTNE1exzafsUqggciQPci5p/Jxx2Mg6CIo1x20Kzrxt6JG4A+bBTfFvfD2GVO8ruLu7mwm+j8PRXETXg==
     repository: https://github.com/A7m0spHere/dsh-feiyuFM
-    gitHead: 60393365df4b9524f7a1e6266212ae92b013168f
+    gitHead: 9b5908ae0dd5b726e85f787f2e788c10799007c9
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
@@ -56,20 +56,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 60393365df4b9524f7a1e6266212ae92b013168f
+    commit: 9b5908ae0dd5b726e85f787f2e788c10799007c9
     packageVersion: 0.1.2
     scannerVersion: static-v2
     dshVersion: 0.2.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:46:38.909Z
+    checkedAt: 2026-11-17T20:51:49.230Z
     findings: []
 license:
   code: SEE LICENSE IN THIRD_PARTY_NOTICES.md
   commercialUse: false
-starsSnapshot: 1
 featuredRank: 1290
-releaseUpdatedAt: 2026-11-14T23:46:40.594Z
-metadataUpdatedAt: 2026-11-14T23:46:40.594Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-17T20:51:51.439Z
+metadataUpdatedAt: 2026-11-17T20:51:51.439Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T23:46:40.594Z
+updatedAt: 2026-11-17T20:51:51.439Z

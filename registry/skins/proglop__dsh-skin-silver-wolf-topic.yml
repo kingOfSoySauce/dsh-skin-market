@@ -16,12 +16,21 @@ tags:
 modes:
   - dark
 install:
-  target: github:proglop/dsh-skin-silver-wolf-topic#290a8962102157a71e32150dcd57164fe9eeaf17
-  version: 1.1.2
-  commit: 290a8962102157a71e32150dcd57164fe9eeaf17
+  target: github:proglop/dsh-skin-silver-wolf-topic#aed7536ad42f905353296090aedc0204666ddfaa
+  version: 1.1.3
+  commit: aed7536ad42f905353296090aedc0204666ddfaa
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-skin-silver-wolf-topic
+    packageVersion: 1.1.3
+    integrity: sha512-ao5wAV90oPoHKrW+S2yTx/uQO1x5xoqHRj8o6kH3S7RZb9LIb2AdAT4EkuZuQ50mB64ZHkYoueEhVrkbyiBu+Q==
+  npm:
+    name: dsh-skin-silver-wolf-topic
+    version: 1.1.3
+    integrity: sha512-ao5wAV90oPoHKrW+S2yTx/uQO1x5xoqHRj8o6kH3S7RZb9LIb2AdAT4EkuZuQ50mB64ZHkYoueEhVrkbyiBu+Q==
+    repository: https://github.com/proglop/dsh-skin-silver-wolf-topic
+    gitHead: aed7536ad42f905353296090aedc0204666ddfaa
 compatibility:
   dsh: 0.2.2-rc.1 || 0.2.1-rc.2
   platform:
@@ -44,19 +53,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 290a8962102157a71e32150dcd57164fe9eeaf17
-    packageVersion: 1.1.2
+    commit: aed7536ad42f905353296090aedc0204666ddfaa
+    packageVersion: 1.1.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-10T00:14:24.097Z
+    checkedAt: 2026-11-17T20:51:35.562Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 1140
-releaseUpdatedAt: 2026-11-14T23:48:26.037Z
-metadataUpdatedAt: 2026-11-14T00:22:37.200Z
-starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T23:48:26.037Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-17T20:51:36.194Z
+metadataUpdatedAt: 2026-11-17T20:51:36.194Z
+starsUpdatedAt: 2026-11-17T20:51:36.194Z
+updatedAt: 2026-11-17T20:51:36.194Z

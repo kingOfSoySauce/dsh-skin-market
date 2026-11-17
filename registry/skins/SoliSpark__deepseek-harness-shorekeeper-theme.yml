@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:SoliSpark/deepseek-harness-shorekeeper-theme#364187c0561311864ab4d832fae89028afd9a274
+  target: github:SoliSpark/deepseek-harness-shorekeeper-theme#3101a20b68b0880e50566a14dde05e51372aeacc
   version: 1.2.1
-  commit: 364187c0561311864ab4d832fae89028afd9a274
+  commit: 3101a20b68b0880e50566a14dde05e51372aeacc
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -41,28 +41,27 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-    - README 图片未通过文件、尺寸或图片 hash 检查，请补充可核验的运行截图。
   scan:
-    commit: 364187c0561311864ab4d832fae89028afd9a274
+    commit: 3101a20b68b0880e50566a14dde05e51372aeacc
     packageVersion: 1.2.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:22:52.703Z
+    checkedAt: 2026-11-17T20:49:49.237Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 33
 featuredRank: 1131
-releaseUpdatedAt: 2026-11-14T00:22:52.907Z
-metadataUpdatedAt: 2026-11-14T23:42:40.481Z
+starsSnapshot: 33
+releaseUpdatedAt: 2026-11-17T20:49:49.535Z
+metadataUpdatedAt: 2026-11-17T20:49:49.535Z
 starsUpdatedAt: 2026-11-14T00:22:52.907Z
-updatedAt: 2026-11-14T23:42:40.481Z
+updatedAt: 2026-11-17T20:49:49.535Z

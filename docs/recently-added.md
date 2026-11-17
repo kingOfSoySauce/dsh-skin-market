@@ -1,5 +1,50 @@
 # 近期收录
 
+<!-- dsh-admission:jcnet.9527.dsh.jpet.phone -->
+<a id="recent-2026-11-18-jcnet-9527-dsh-jpet-phone"></a>
+
+## 2026-11-18 · 深深桌宠手机版
+
+作者：Jcnet-9527
+
+把 PC2005-cloud/dsh-pet v0.3.7 的大肥鱼桌宠搬到安卓手机版：插件版常驻页面、可拖动、被戳会回应，随会话状态换动作，还能聊天和查余额；同仓库另带独立安卓悬浮 App，不装插件也能在系统最上层常驻，语音识别与朗读都在手机本地跑。
+
+GitHub：[Jcnet-9527/dsh-Jpet-phone](https://github.com/Jcnet-9527/dsh-Jpet-phone)
+
+<img src="https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/dsh-pet/assets/preview/daiji-huxi-xiuxian.gif" width="60%" alt="深深桌宠手机版">
+
+<!-- /dsh-admission:jcnet.9527.dsh.jpet.phone -->
+
+<!-- dsh-admission:huguangyu666.dsh.plugin.backdrop -->
+<a id="recent-2026-11-18-huguangyu666-dsh-plugin-backdrop"></a>
+
+## 2026-11-18 · 流体鲸背景
+
+作者：huguangyu666
+
+把官方站点 hero 的深海氛围铺成整页动态背景：WebGL2 流体（flowmap 双缓冲 + 域扭曲）铺 5 层深蓝到暖金渐变，自发光与虚拟光源跟随鼠标、叠颗粒噪点与暗角，210 帧字符鲸鱼水平巡游并在循环接缝打一个赛博朋克故障转场，55 条发光鱼群绕圈游动，再加 90px 点线网格，鼠标波纹能把点阵推开。界面容器透明化并强制暗色，四层 30fps 节流、视口外停帧。
+
+GitHub：[huguangyu666/dsh-plugin-backdrop](https://github.com/huguangyu666/dsh-plugin-backdrop)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/huguangyu666__dsh-plugin-backdrop/964db33419ad48c760feaf7ad674f101b0e0f85c/home.gif" width="60%" alt="流体鲸背景">
+
+<!-- /dsh-admission:huguangyu666.dsh.plugin.backdrop -->
+
+<!-- dsh-admission:95384.dsh.themes.people.ai -->
+<a id="recent-2026-11-18-95384-dsh-themes-people-ai"></a>
+
+## 2026-11-18 · 人民的AI
+
+作者：95384
+
+把应用背景换成随包携带的一张固定壁纸，刷新后仍是同一张；侧栏、输入框与设置面板改成半透明毛玻璃，让壁纸透出来。加载时强制深色外观并禁用切换，新会话标题同时换成「人民的AI」。
+
+GitHub：[95384/DSH-themes-people-ai](https://github.com/95384/DSH-themes-people-ai)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/home.png" width="60%" alt="人民的AI">
+
+<!-- /dsh-admission:95384.dsh.themes.people.ai -->
+
 <!-- dsh-admission:cooltea001.dsh-cool-theme -->
 <a id="recent-2026-11-16-cooltea001-dsh-cool-theme"></a>
 
@@ -341,7 +386,7 @@ GitHub：[Bosaiting/dsh-process-tree](https://github.com/Bosaiting/dsh-process-t
 
 GitHub：[1015677515/dsh-theme-holo](https://github.com/1015677515/dsh-theme-holo)
 
-<img src="https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/assets/cover.webp" width="60%" alt="赫萝主题">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/1015677515__dsh-theme-holo/578325dcc8d8d5e23844a526eeab4ceb2d027cc6/launch.gif" width="60%" alt="赫萝主题">
 
 <!-- /dsh-admission:1015677515.dsh.theme.holo -->
 
@@ -881,7 +926,7 @@ GitHub：[wang-junjian/spritely](https://github.com/wang-junjian/spritely)
 
 GitHub：[WhatCannotBeSaid/EVA-Inspired-Theme](https://github.com/WhatCannotBeSaid/EVA-Inspired-Theme)
 
-<img src="https://raw.githubusercontent.com/WhatCannotBeSaid/eva-inspired-theme/13ab3a50898e14e72639b21441bc3e22c7fcb423/docs/preview-light.jpg" width="60%" alt="NERV 闸门">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/WhatCannotBeSaid__eva-inspired-theme/13ab3a50898e14e72639b21441bc3e22c7fcb423/home.gif" width="60%" alt="NERV 闸门">
 
 <!-- /dsh-admission:whatcannotbesaid.eva.inspired.theme -->
 
@@ -911,7 +956,7 @@ GitHub：[WTStarMark/dsh-myskin](https://github.com/WTStarMark/dsh-myskin)
 
 GitHub：[xikan0/dsh-outerwilds-theme](https://github.com/xikan0/dsh-outerwilds-theme)
 
-<img src="https://raw.githubusercontent.com/xikan0/dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/docs/screenshots/preview.png" width="60%" alt="星际拓荒主题">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/xikan0__dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/home.gif" width="60%" alt="星际拓荒主题">
 
 <!-- /dsh-admission:xikan0.dsh.outerwilds.theme -->
 
@@ -2171,7 +2216,7 @@ GitHub：[Masterchiefm/dsh-realtime-tps-pet](https://github.com/Masterchiefm/dsh
 
 GitHub：[meihaoyangfang/painted-screens](https://github.com/meihaoyangfang/painted-screens)
 
-<img src="https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/sakura.jpg" width="60%" alt="画屏">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/meihaoyangfang__painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/home.gif" width="60%" alt="画屏">
 
 <!-- /dsh-admission:meihaoyangfang.painted.screens -->
 
@@ -3461,7 +3506,7 @@ GitHub：[Evan1987/dsh-yestermorrow](https://github.com/Evan1987/dsh-yestermorro
 
 GitHub：[exile412/dsh-startup-screen-exile](https://github.com/exile412/dsh-startup-screen-exile)
 
-<img src="https://raw.githubusercontent.com/exile412/dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/docs/screenshots/theme-light.jpg" width="60%" alt="EXILE 启动界面">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/exile412__dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/home.gif" width="60%" alt="EXILE 启动界面">
 
 <!-- /dsh-admission:exile412.dsh.startup.screen.exile -->
 
@@ -3956,7 +4001,7 @@ GitHub：[johnsonspirit/ocean-wave-theme](https://github.com/johnsonspirit/ocean
 
 GitHub：[Joxos/dsh-theme-gallery](https://github.com/Joxos/dsh-theme-gallery)
 
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/home.png" width="60%" alt="视觉风格库">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Joxos__dsh-theme-gallery/4e13f8ee9df8d5e4f8421147fcaa9be27e8261a1/home.gif" width="60%" alt="视觉风格库">
 
 <!-- /dsh-admission:joxos.dsh.theme.gallery -->
 
@@ -4631,7 +4676,7 @@ GitHub：[st21a1/dsh-bili-wallpaper](https://github.com/st21a1/dsh-bili-wallpape
 
 GitHub：[stevenfeifei/rain-ocean-skin](https://github.com/stevenfeifei/rain-ocean-skin)
 
-<img src="https://raw.githubusercontent.com/stevenfeifei/rain-ocean-skin/2d6ea273d54e656c862096f0edc2e8742bccf65b/native-dist/poster.jpg" width="60%" alt="雨海">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/stevenfeifei__rain-ocean-skin/2d6ea273d54e656c862096f0edc2e8742bccf65b/home.gif" width="60%" alt="雨海">
 <!-- /dsh-admission:stevenfeifei.rain.ocean.skin -->
 
 <!-- dsh-admission:sunshinezhi.dsh.scifi.splash -->
@@ -6010,7 +6055,7 @@ GitHub：[liuyaguang8023/dsh-jcc-theme](https://github.com/liuyaguang8023/dsh-jc
 
 GitHub：[TanPass/furina-dsh-theme](https://github.com/TanPass/furina-dsh-theme)
 
-<img src="https://raw.githubusercontent.com/TanPass/furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/docs/screenshots/current-shot-fontaine-nocturne.png" width="60%" alt="芙宁娜主题">
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/TanPass__furina-dsh-theme/e60be75e2f7660ee5b4706b9a3da77f789446760/launch.gif" width="60%" alt="芙宁娜主题">
 
 <!-- /dsh-admission:tanpass.furina.dsh.theme -->
 
@@ -7908,6 +7953,202 @@ GitHub：[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:weibaohui.dsh-ambient -->
+### 2026-11-18 · dsh-ambient
+
+作者：weibaohui
+
+白噪音播放器：场景完全由音频根目录下的文件夹决定——有什么文件夹就有什么场景，有什么音频就播什么。点「执行下载」让 AI 在后台从 Wikimedia Commons 按 CC0/PD/CC BY 许可分门别类下载到对应文件夹（读 INDEX.md 防重复、完成自动刷新库）。顺序/随机/单曲循环/间歇四种播放模式，定时关支持 N 小时或指定时刻。宿主侧流式读取（Range 支持），不上传、不分发音频。
+
+GitHub：[weibaohui/dsh-ambient](https://github.com/weibaohui/dsh-ambient)
+
+<img src="https://foruda.gitee.com/images/1774880015525784725/4fd67005_77493.png" width="60%" alt="dsh-ambient">
+
+<!-- dsh-auto-entry:verdana.dsh-nord -->
+### 2026-11-18 · dsh-nord
+
+作者：verdana
+
+Nord theme, a settings row, and a DeepSeek balance readout with a detail panel for the dsh Web GUI. Selectable font stacks on dsh before 0.2.1; newer hosts own their font settings and this plugin steps aside.
+
+GitHub：[verdana/dsh-nord](https://github.com/verdana/dsh-nord)
+
+<img src="https://raw.githubusercontent.com/verdana/dsh-nord/93d86e3c3b85a96bb48f72dd42809af3db11d251/assets/01-theme.png" width="60%" alt="dsh-nord">
+
+<!-- dsh-auto-entry:bruce-hmz.dsh-skin-center -->
+### 2026-11-18 · dsh-skin-center
+
+作者：bruce-hmz
+
+dsh-skin-center | DeepSeek Harness 皮肤中心(官方插件)
+
+GitHub：[bruce-hmz/dsh-skin-center](https://github.com/bruce-hmz/dsh-skin-center)
+
+<img src="https://raw.githubusercontent.com/bruce-hmz/dsh-skin-center/5139e68a0c88d3fbf41075df545b92939966299f/docs/images/qq2008.webp" width="60%" alt="dsh-skin-center">
+
+<!-- dsh-auto-entry:charlesaq.dsh-fgo-chaldea -->
+### 2026-11-18 · dsh-fgo-chaldea
+
+作者：CharlesAQ
+
+FGO 迦勒底风格的 DeepSeek Harness Web UI 皮肤插件。配色层走官方 ctx.theme token API，背景是程序生成的原创星图 / 魔术回路 SVG，外加金色刻线边框，不包含任何 FGO 官方美术素材。
+
+GitHub：[CharlesAQ/dsh-fgo-chaldea](https://github.com/CharlesAQ/dsh-fgo-chaldea)
+
+<!-- dsh-auto-entry:joeseesun.qiaomu-radio-dsh -->
+### 2026-11-18 · qiaomu-radio-dsh
+
+作者：joeseesun
+
+把 乔木电台 的五种播放器环境搬进 DeepSeek Harness：发现并收听全球直播电台， 让音乐陪着你工作与阅读。
+
+GitHub：[joeseesun/qiaomu-radio-dsh](https://github.com/joeseesun/qiaomu-radio-dsh)
+
+<img src="https://raw.githubusercontent.com/joeseesun/qiaomu-radio-dsh/490db5f81643407ab578a8f88639e7c1f31e62b9/docs/screenshots/braun-menu.png" width="60%" alt="qiaomu-radio-dsh">
+
+<!-- dsh-auto-entry:cloudsen.dsh-umbrella-theme -->
+### 2026-11-18 · dsh-umbrella-theme
+
+作者：CloudSen
+
+Umbrella Corporation theme for DeepSeek Harness: a black-and-red dark scheme with terminal-green prose, a grey-and-white light scheme, a red-and-white umbrella watermark that slowly spins about its own vertical axis, and a HUD frame. No characters.
+
+GitHub：[CloudSen/dsh-umbrella-theme](https://github.com/CloudSen/dsh-umbrella-theme)
+
+<img src="https://raw.githubusercontent.com/CloudSen/dsh-umbrella-theme/400da4bc942cf654b0dc6f1b1e6ddffeda474e25/assets/scheme-dark.png" width="60%" alt="dsh-umbrella-theme">
+
+<!-- dsh-auto-entry:dataizu.dsh-whale-aqua-theme -->
+### 2026-11-18 · dsh-whale-aqua-theme
+
+作者：dataizu
+
+🐋 鲸蓝戏水 · DSH Whale Aqua Theme
+
+GitHub：[dataizu/dsh-whale-aqua-theme](https://github.com/dataizu/dsh-whale-aqua-theme)
+
+<img src="https://raw.githubusercontent.com/dataizu/dsh-whale-aqua-theme/8f4abbbde43710b26755e192e4b935cfba4fc37a/screenshots/whale-animation.gif" width="60%" alt="dsh-whale-aqua-theme">
+
+<!-- dsh-auto-entry:mantonlove.dsh-prism-plugin -->
+### 2026-11-18 · DSH Background
+
+作者：mantonlove
+
+DSH Background — 上传自定义图片或 GIF 背景，调整毛玻璃、透明度、字体与颜色；支持 DSH 0.2.2-rc.1
+
+GitHub：[mantonlove/dsh-prism-plugin](https://github.com/mantonlove/dsh-prism-plugin)
+
+<img src="https://raw.githubusercontent.com/mantonlove/dsh-prism-plugin/64c4895dc036c98ced38d47e34acb15f6545c4ac/assets/shot-1.jpg" width="60%" alt="DSH Background">
+
+<!-- dsh-auto-entry:yefengliu1.dsh-theme-songgrid -->
+### 2026-11-18 · dsh-theme-songgrid
+
+作者：yefengliu1
+
+宋律 Songgrid —— 宋代美学 × 瑞士国际主义设计语言的 DeepSeek Harness Web 主题：宣纸/夜墨双变体、汝窑天青功能色、青绿山水背景。Not affiliated with DeepSeek.
+
+GitHub：[yefengliu1/dsh-theme-songgrid](https://github.com/yefengliu1/dsh-theme-songgrid)
+
+<img src="https://raw.githubusercontent.com/yefengliu1/dsh-theme-songgrid/bdb2cda5c4d186eaf1539dc18deb676a102ed3e3/docs/xuanzhi.png" width="60%" alt="dsh-theme-songgrid">
+
+<!-- dsh-auto-entry:alexpeng07.dsh-custom-plugin -->
+### 2026-11-18 · dsh-custom-plugin
+
+作者：AlexPeng07
+
+[](https://www.npmjs.com/package/@alexpeng/dsh-custom-plugin) [](LICENSE) [](#安装) [](https://www.typescriptlang.org) [](https://github.com/AlexPeng07/dsh-custom-plugin/actions/workflows/ci.yml) [](https://awesome-dsh-plugin.com)
+
+GitHub：[AlexPeng07/dsh-custom-plugin](https://github.com/AlexPeng07/dsh-custom-plugin)
+
+<img src="https://raw.githubusercontent.com/AlexPeng07/dsh-custom-plugin/1d470dfd6c7d48f1269f80650c473d0e70c769d7/docs/overview.png" width="60%" alt="dsh-custom-plugin">
+
+<!-- dsh-auto-entry:taoser258.dsh-client-ui-skin-qingxiao -->
+### 2026-11-18 · dsh-client-ui-skin-qingxiao
+
+作者：taoser258
+
+清宵 · 弦凝清霄 — DSH 美化包
+
+GitHub：[taoser258/dsh-client-ui-skin-qingxiao](https://github.com/taoser258/dsh-client-ui-skin-qingxiao)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/preset-dark.gif" width="60%" alt="dsh-client-ui-skin-qingxiao">
+
+<!-- dsh-auto-entry:aumisatori.dsh-ui-beautify -->
+### 2026-11-18 · dsh-UI美化
+
+作者：AumiSatori
+
+dsh-UI美化
+
+GitHub：[AumiSatori/dsh-ui-beautify](https://github.com/AumiSatori/dsh-ui-beautify)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png" width="60%" alt="dsh-UI美化">
+
+<!-- dsh-auto-entry:johnnyting.dsh-official-homepage-theme -->
+### 2026-11-18 · dsh-official-homepage-theme
+
+作者：JohnnyTing
+
+dsh-official-homepage-theme 是一个面向DSH Web的DeepSeek Harness官方首页主题插件，在不改变DSH页面结构与交互的前提下，提供流体背景、鼠标弹性网格和双小鱼动态效果。
+
+GitHub：[JohnnyTing/dsh-official-homepage-theme](https://github.com/JohnnyTing/dsh-official-homepage-theme)
+
+<img src="https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif" width="60%" alt="dsh-official-homepage-theme">
+
+<!-- dsh-auto-entry:clicgger-types.dsh-piggy -->
+### 2026-11-18 · dsh-piggy
+
+作者：CLICGGER-TYPES
+
+🐖 一只住在 DeepSeek Harness 里的猪：吃你的真实工作长大，会学习、打工、旅行、生病、需要照顾
+
+GitHub：[CLICGGER-TYPES/dsh-piggy](https://github.com/CLICGGER-TYPES/dsh-piggy)
+
+<img src="https://raw.githubusercontent.com/CLICGGER-TYPES/dsh-piggy/dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c/assets/pigs/base/piglet/idle.png" width="60%" alt="dsh-piggy">
+
+<!-- dsh-auto-entry:berhbro.dsh-cyrene-theme -->
+### 2026-11-18 · dsh-cyrene-theme
+
+作者：berhbro
+
+dsh-cyrene-theme · 昔涟主题
+
+GitHub：[berhbro/dsh-cyrene-theme](https://github.com/berhbro/dsh-cyrene-theme)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/home.gif" width="60%" alt="dsh-cyrene-theme">
+
+<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
+### 2026-11-18 · dsh-catppuccin
+
+作者：NoNameLeGo
+
+DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
+
+GitHub：[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)
+
+<img src="https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/976d9065f517c2d111d24e67a48c2a5049445c05/assets/previews/combined.png" width="60%" alt="dsh-catppuccin">
+
+<!-- dsh-auto-entry:louke6572.dsh-whale-widget-plus -->
+### 2026-11-18 · dsh-whale-widget-plus
+
+作者：louke6572
+
+DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计
+
+GitHub：[louke6572/dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus)
+
+<img src="https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png" width="60%" alt="dsh-whale-widget-plus">
+
+<!-- dsh-auto-entry:nwflower.dsh-claude-style -->
+### 2026-11-18 · dsh-claude-style
+
+作者：Nwflower
+
+Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
+
+GitHub：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)
+
+<img src="https://raw.githubusercontent.com/Nwflower/dsh-claude-style/d3a511b51e2eebdfc41952135a02d8f2752032a6/docs/screenshots/claude-home-light.png" width="60%" alt="dsh-claude-style">
+
 <!-- dsh-auto-entry:lengduan.dsh-815-skin -->
 ### 2026-11-17 · dsh-815-skin
 
@@ -7974,17 +8215,6 @@ GitHub：[zhu1090093659/dsh-pet](https://github.com/zhu1090093659/dsh-pet)
 
 <img src="https://raw.githubusercontent.com/zhu1090093659/dsh-pet/d19284a539618e5eadb6c263d842008a2b600bb0/assets/whale-refined/previews/idle.gif" width="60%" alt="dsh-pet">
 
-<!-- dsh-auto-entry:nonamelego.dsh-catppuccin -->
-### 2026-11-17 · dsh-catppuccin
-
-作者：NoNameLeGo
-
-DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI（dsh web）、DSH Desktop 与 dsh-TUI 终端：Web / 桌面端做全界面换色与玻璃质感， TUI 端自动同步四套官方主题色板。
-
-GitHub：[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)
-
-<img src="https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/976d9065f517c2d111d24e67a48c2a5049445c05/assets/previews/combined.png" width="60%" alt="dsh-catppuccin">
-
 <!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
 ### 2026-11-17 · dsh-bloom-theme
 
@@ -7995,28 +8225,6 @@ DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调
 GitHub：[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)
 
 <img src="https://cdn.jsdelivr.net/gh/webkubor/picx-images-hosting@master/projects/dsh-bloom-theme/bloom-banner.png" width="60%" alt="dsh-bloom-theme">
-
-<!-- dsh-auto-entry:louke6572.dsh-whale-widget-plus -->
-### 2026-11-17 · dsh-whale-widget-plus
-
-作者：louke6572
-
-DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计
-
-GitHub：[louke6572/dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus)
-
-<img src="https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png" width="60%" alt="dsh-whale-widget-plus">
-
-<!-- dsh-auto-entry:nwflower.dsh-claude-style -->
-### 2026-11-17 · dsh-claude-style
-
-作者：Nwflower
-
-Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
-
-GitHub：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)
-
-<img src="https://raw.githubusercontent.com/Nwflower/dsh-claude-style/d3a511b51e2eebdfc41952135a02d8f2752032a6/docs/screenshots/claude-home-light.png" width="60%" alt="dsh-claude-style">
 
 <!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
 ### 2026-11-17 · dsh-wallpaper-engine
@@ -8029,28 +8237,6 @@ GitHub：[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallp
 
 <img src="https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ae734a2c80ca04099b793f8ce8a182bcb5ad8f79/docs/images/main-interface.gif" width="60%" alt="dsh-wallpaper-engine">
 
-<!-- dsh-auto-entry:charlesaq.dsh-fgo-chaldea -->
-### 2026-11-17 · dsh-fgo-chaldea
-
-作者：CharlesAQ
-
-FGO 迦勒底风格的 DeepSeek Harness Web UI 皮肤插件。配色层走官方 ctx.theme token API，背景是程序生成的原创星图 / 魔术回路 SVG，外加金色刻线边框，不包含任何 FGO 官方美术素材。
-
-GitHub：[CharlesAQ/dsh-fgo-chaldea](https://github.com/CharlesAQ/dsh-fgo-chaldea)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/CharlesAQ__dsh-fgo-chaldea/e769eb31089880d156dc0cf9e98f1fa14bb7c5b9/fgo-chaldea-dark.png" width="60%" alt="dsh-fgo-chaldea">
-
-<!-- dsh-auto-entry:alexpeng07.dsh-custom-plugin -->
-### 2026-11-16 · dsh-custom-plugin
-
-作者：AlexPeng07
-
-[](https://www.npmjs.com/package/@alexpeng/dsh-custom-plugin) [](LICENSE) [](#安装) [](https://www.typescriptlang.org) [](https://github.com/AlexPeng07/dsh-custom-plugin/actions/workflows/ci.yml) [](https://awesome-dsh-plugin.com)
-
-GitHub：[AlexPeng07/dsh-custom-plugin](https://github.com/AlexPeng07/dsh-custom-plugin)
-
-<img src="https://raw.githubusercontent.com/AlexPeng07/dsh-custom-plugin/1d470dfd6c7d48f1269f80650c473d0e70c769d7/docs/overview.png" width="60%" alt="dsh-custom-plugin">
-
 <!-- dsh-auto-entry:nishuoyang.dsh-wallpaper-bg -->
 ### 2026-11-16 · dsh-wallpaper-bg
 
@@ -8061,17 +8247,6 @@ GitHub：[AlexPeng07/dsh-custom-plugin](https://github.com/AlexPeng07/dsh-custom
 GitHub：[nishuoyang/dsh-wallpaper-bg](https://github.com/nishuoyang/dsh-wallpaper-bg)
 
 <img src="https://raw.githubusercontent.com/nishuoyang/dsh-wallpaper-bg/ea350232fbbe01be97bb7fdfe23705bb317eb4e1/docs/screenshots/preview-hero.jpg" width="60%" alt="dsh-wallpaper-bg">
-
-<!-- dsh-auto-entry:clicgger-types.dsh-piggy -->
-### 2026-11-16 · dsh-piggy
-
-作者：CLICGGER-TYPES
-
-🐖 一只住在 DeepSeek Harness 里的猪：吃你的真实工作长大，会学习、打工、旅行、生病、需要照顾
-
-GitHub：[CLICGGER-TYPES/dsh-piggy](https://github.com/CLICGGER-TYPES/dsh-piggy)
-
-<img src="https://raw.githubusercontent.com/CLICGGER-TYPES/dsh-piggy/dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c/assets/pigs/base/piglet/idle.png" width="60%" alt="dsh-piggy">
 
 <!-- dsh-auto-entry:ahian-lee.dsh-bliss-glass -->
 ### 2026-11-16 · dsh-bliss-glass
@@ -8116,17 +8291,6 @@ DSH Video Player / DSH 刷视频
 GitHub：[anitman/dsh-plugin-video-player](https://github.com/anitman/dsh-plugin-video-player)
 
 <img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/anitman__dsh-plugin-video-player/d7436a80cdfcdc8eb28f864a63e14348e99ce816/home.gif" width="60%" alt="dsh-plugin-video-player">
-
-<!-- dsh-auto-entry:aumisatori.dsh-ui-beautify -->
-### 2026-11-16 · dsh-UI美化
-
-作者：AumiSatori
-
-dsh-UI美化
-
-GitHub：[AumiSatori/dsh-ui-beautify](https://github.com/AumiSatori/dsh-ui-beautify)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/AumiSatori__dsh-ui-beautify/35be68aff6e178a69ba4fb6459bcd1331b2efeb5/home.png" width="60%" alt="dsh-UI美化">
 
 <!-- dsh-auto-entry:ayase34.wallpaper.plugin -->
 ### 2026-11-16 · 预设墙与壁纸工作室
@@ -8193,17 +8357,6 @@ dsh主题维什戴尔风格
 GitHub：[cdxDNRF/wishadel-theme](https://github.com/cdxDNRF/wishadel-theme)
 
 <img src="https://raw.githubusercontent.com/cdxDNRF/wishadel-theme/8fef0e953e77b93421f36f7e4ceb7522d2fae6c2/docs/screenshots/conversation.png" width="60%" alt="wishadel-theme">
-
-<!-- dsh-auto-entry:cloudsen.dsh-umbrella-theme -->
-### 2026-11-16 · dsh-umbrella-theme
-
-作者：CloudSen
-
-Umbrella Corporation theme for DeepSeek Harness: a black-and-red dark scheme with terminal-green prose, a grey-and-white light scheme, a red-and-white umbrella watermark that slowly spins about its own vertical axis, and a HUD frame. No characters.
-
-GitHub：[CloudSen/dsh-umbrella-theme](https://github.com/CloudSen/dsh-umbrella-theme)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/CloudSen__dsh-umbrella-theme/a745f1138c161a2f967d3aa9a21d49eaba17b5ac/home.png" width="60%" alt="dsh-umbrella-theme">
 
 <!-- dsh-auto-entry:conafun.dsh.music.plus -->
 ### 2026-11-16 · dsh-music-plus
@@ -8962,17 +9115,6 @@ GitHub：[BeiZi6/dsh-theme-plugin](https://github.com/BeiZi6/dsh-theme-plugin)
 
 <img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/BeiZi6__dsh-theme-plugin/b3e7e143532c4b6df71da753d2336bb018949d2a/home.png" width="60%" alt="dsh-theme-plugin">
 
-<!-- dsh-auto-entry:berhbro.dsh-cyrene-theme -->
-### 2026-11-16 · dsh-cyrene-theme
-
-作者：berhbro
-
-dsh-cyrene-theme · 昔涟主题
-
-GitHub：[berhbro/dsh-cyrene-theme](https://github.com/berhbro/dsh-cyrene-theme)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/home.gif" width="60%" alt="dsh-cyrene-theme">
-
 <!-- dsh-auto-entry:c-ling.dsh-plugin-pet -->
 ### 2026-11-16 · dsh-plugin-pet
 
@@ -9280,17 +9422,6 @@ GitHub：[hgp005/dsh-winterskin](https://github.com/hgp005/dsh-winterskin)
 GitHub：[jizenghui81/dsh-huashu-pixel](https://github.com/jizenghui81/dsh-huashu-pixel)
 
 <img src="https://raw.githubusercontent.com/jizenghui81/dsh-huashu-pixel/85608f11bfb3c95e3d975245a91b81ef741bc18a/screenshots/standard.png" width="60%" alt="dsh-huashu-pixel">
-
-<!-- dsh-auto-entry:johnnyting.dsh-official-homepage-theme -->
-### 2026-11-16 · dsh-official-homepage-theme
-
-作者：JohnnyTing
-
-dsh-official-homepage-theme 是一个面向DSH Web的DeepSeek Harness官方首页主题插件，在不改变DSH页面结构与交互的前提下，提供流体背景、鼠标弹性网格和双小鱼动态效果。
-
-GitHub：[JohnnyTing/dsh-official-homepage-theme](https://github.com/JohnnyTing/dsh-official-homepage-theme)
-
-<img src="https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif" width="60%" alt="dsh-official-homepage-theme">
 
 <!-- dsh-auto-entry:juliye2025.dsh-butler-atelier -->
 ### 2026-11-16 · dsh-butler-atelier
@@ -9732,17 +9863,6 @@ GitHub：[Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/d
 
 <img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Sutera-Diffusus__dsh-whale-musume/120b6e244fab2a7c841b768b98d3aebae22ec8de/home.gif" width="60%" alt="dsh-whale-musume">
 
-<!-- dsh-auto-entry:taoser258.dsh-client-ui-skin-qingxiao -->
-### 2026-11-16 · dsh-client-ui-skin-qingxiao
-
-作者：taoser258
-
-清宵 · 弦凝清霄 — DSH 美化包
-
-GitHub：[taoser258/dsh-client-ui-skin-qingxiao](https://github.com/taoser258/dsh-client-ui-skin-qingxiao)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/taoser258__dsh-client-ui-skin-qingxiao/cf14084e438a56dd619ab334a83d3498be5e32c7/preset-dark.gif" width="60%" alt="dsh-client-ui-skin-qingxiao">
-
 <!-- dsh-auto-entry:tenebris173.dsh-skin-prts -->
 ### 2026-11-16 · dsh-skin-prts
 
@@ -10128,17 +10248,6 @@ GitHub：[kingOfSoySauce/dsh-elon-skin](https://github.com/kingOfSoySauce/dsh-el
 
 <img src="https://raw.githubusercontent.com/kingOfSoySauce/dsh-elon-skin/bccc746872cf8caa4005c9b144bcd1497717537a/docs/musk-skin-demo.gif" width="60%" alt="马斯克强度">
 
-<!-- dsh-auto-entry:joeseesun.qiaomu-radio-dsh -->
-### 2026-11-15 · qiaomu-radio-dsh
-
-作者：joeseesun
-
-把 乔木电台 的五种播放器环境搬进 DeepSeek Harness：发现并收听全球直播电台， 让音乐陪着你工作与阅读。
-
-GitHub：[joeseesun/qiaomu-radio-dsh](https://github.com/joeseesun/qiaomu-radio-dsh)
-
-<img src="https://raw.githubusercontent.com/joeseesun/qiaomu-radio-dsh/490db5f81643407ab578a8f88639e7c1f31e62b9/docs/screenshots/braun-menu.png" width="60%" alt="qiaomu-radio-dsh">
-
 <!-- dsh-auto-entry:jiangwangyang.dsh-theme-blackhole -->
 ### 2026-11-15 · dsh-theme-blackhole
 
@@ -10303,17 +10412,6 @@ DSH 桌面版背景主题插件：给 DeepSeek Harness 换上动态背景——1
 GitHub：[Witherwithwinter/dsh-ccx](https://github.com/Witherwithwinter/dsh-ccx)
 
 <img src="https://raw.githubusercontent.com/Witherwithwinter/dsh-ccx/8fcf6b4edc4b146378b48cd56ccafd3ea141604a/assets/preview-home.png" width="60%" alt="dsh-ccx">
-
-<!-- dsh-auto-entry:mantonlove.dsh-prism-plugin -->
-### 2026-11-15 · DSH Background
-
-作者：mantonlove
-
-DSH Background — 上传自定义图片或 GIF 背景，调整毛玻璃、透明度、字体与颜色；支持 DSH 0.2.2-rc.1
-
-GitHub：[mantonlove/dsh-prism-plugin](https://github.com/mantonlove/dsh-prism-plugin)
-
-<img src="https://raw.githubusercontent.com/mantonlove/dsh-prism-plugin/64c4895dc036c98ced38d47e34acb15f6545c4ac/assets/shot-1.jpg" width="60%" alt="DSH Background">
 
 <!-- dsh-auto-entry:lyh9712.dsh-bg-image -->
 ### 2026-11-15 · dsh-bg-image
@@ -10675,17 +10773,6 @@ DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。
 GitHub：[Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)
 
 <img src="https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b/maid-atelier/preview/light.webp" width="60%" alt="深海女仆工坊">
-
-<!-- dsh-auto-entry:verdana.dsh-nord -->
-### 2026-11-14 · dsh-nord
-
-作者：verdana
-
-Nord theme, a settings row, and a DeepSeek balance readout with a detail panel for the dsh Web GUI. Selectable font stacks on dsh before 0.2.1; newer hosts own their font settings and this plugin steps aside.
-
-GitHub：[verdana/dsh-nord](https://github.com/verdana/dsh-nord)
-
-<img src="https://raw.githubusercontent.com/verdana/dsh-nord/93d86e3c3b85a96bb48f72dd42809af3db11d251/assets/01-theme.png" width="60%" alt="dsh-nord">
 
 <!-- dsh-auto-entry:mumuer1024.dsh-ui-liteglass -->
 ### 2026-11-14 · LiteGlass
@@ -11643,17 +11730,6 @@ GitHub：[wxj783428795/dsh-plugins](https://github.com/wxj783428795/dsh-plugins)
 GitHub：[wilsonchengassistant/dsh-media-web-preview](https://github.com/wilsonchengassistant/dsh-media-web-preview)
 
 <img src="https://raw.githubusercontent.com/wilsonchengassistant/dsh-media-web-preview/8f7d0dcce0a34d22407d1a306ee8254b3cf63c67/docs/preview-video.png" width="60%" alt="dsh-media-web-preview">
-
-<!-- dsh-auto-entry:weibaohui.dsh-ambient -->
-### 2026-11-09 · dsh-ambient
-
-作者：weibaohui
-
-白噪音播放器：场景完全由音频根目录下的文件夹决定——有什么文件夹就有什么场景，有什么音频就播什么。点「执行下载」让 AI 在后台从 Wikimedia Commons 按 CC0/PD/CC BY 许可分门别类下载到对应文件夹（读 INDEX.md 防重复、完成自动刷新库）。顺序/随机/单曲循环/间歇四种播放模式，定时关支持 N 小时或指定时刻。宿主侧流式读取（Range 支持），不上传、不分发音频。
-
-GitHub：[weibaohui/dsh-ambient](https://github.com/weibaohui/dsh-ambient)
-
-<img src="https://foruda.gitee.com/images/1774880015525784725/4fd67005_77493.png" width="60%" alt="dsh-ambient">
 
 <!-- dsh-auto-entry:vollegrewar.dsh-tool-highlight -->
 ### 2026-11-09 · dsh-tool-highlight
@@ -12964,17 +13040,6 @@ GitHub：[ai7603/dsh-cyberpunk-theme](https://github.com/ai7603/dsh-cyberpunk-th
 
 <img src="https://raw.githubusercontent.com/ai7603/dsh-cyberpunk-theme/445693a248a03ebae53f155e8af0401410463d70/docs/screenshots/session-dark.png" width="60%" alt="dsh-cyberpunk-theme">
 
-<!-- dsh-auto-entry:yefengliu1.dsh-theme-songgrid -->
-### 2026-11-09 · dsh-theme-songgrid
-
-作者：yefengliu1
-
-宋律 Songgrid —— 宋代美学 × 瑞士国际主义设计语言的 DeepSeek Harness Web 主题：宣纸/夜墨双变体、汝窑天青功能色、青绿山水背景。Not affiliated with DeepSeek.
-
-GitHub：[yefengliu1/dsh-theme-songgrid](https://github.com/yefengliu1/dsh-theme-songgrid)
-
-<img src="https://raw.githubusercontent.com/yefengliu1/dsh-theme-songgrid/bdb2cda5c4d186eaf1539dc18deb676a102ed3e3/docs/xuanzhi.png" width="60%" alt="dsh-theme-songgrid">
-
 <!-- dsh-auto-entry:zealot00.dsh-pet -->
 ### 2026-11-09 · dsh-pet
 
@@ -13602,17 +13667,6 @@ GitHub：[kviiinh/dsh-whale-particles-bg](https://github.com/kviiinh/dsh-whale-p
 
 <img src="https://raw.githubusercontent.com/kviiinh/dsh-whale-particles-bg/3322ee6323c6cd262c34c3b8b514c7c15c2badd2/assets/screenshot-1.png" width="60%" alt="dsh-whale-particles-bg">
 
-<!-- dsh-auto-entry:dataizu.dsh-whale-aqua-theme -->
-### 2026-10-30 · dsh-whale-aqua-theme
-
-作者：dataizu
-
-🐋 鲸蓝戏水 · DSH Whale Aqua Theme
-
-GitHub：[dataizu/dsh-whale-aqua-theme](https://github.com/dataizu/dsh-whale-aqua-theme)
-
-<img src="https://raw.githubusercontent.com/dataizu/dsh-whale-aqua-theme/8f4abbbde43710b26755e192e4b935cfba4fc37a/screenshots/whale-animation.gif" width="60%" alt="dsh-whale-aqua-theme">
-
 <!-- dsh-auto-entry:dirtywork22.dsh-client-ui-skin-bayern -->
 ### 2026-10-30 · dsh-client-ui-skin-bayern
 
@@ -14092,17 +14146,6 @@ Blue Glass Theme (ocean fantasy) for DeepSeek Harness Web — static profile bun
 GitHub：[chouxiaohuai/uiskin-theme](https://github.com/chouxiaohuai/uiskin-theme)
 
 <img src="https://raw.githubusercontent.com/chouxiaohuai/uiskin-theme/ca84c53f2447a6d9b67454967763e55e39a7e373/assets/preview_light.jpg" width="60%" alt="uiskin-theme">
-
-<!-- dsh-auto-entry:bruce-hmz.dsh-skin-center -->
-### 2026-09-15 · dsh-skin-center
-
-作者：bruce-hmz
-
-dsh-skin-center | DeepSeek Harness 皮肤中心(官方插件)
-
-GitHub：[bruce-hmz/dsh-skin-center](https://github.com/bruce-hmz/dsh-skin-center)
-
-<img src="https://raw.githubusercontent.com/bruce-hmz/dsh-skin-center/42d78ea057b2d10530cceb4e44ea997263f057b9/docs/images/miku.webp" width="60%" alt="dsh-skin-center">
 
 <!-- dsh-auto-entry:alexyin-tongji.dsh-ui-enhancer -->
 ### 2026-09-15 · dsh-ui-enhancer

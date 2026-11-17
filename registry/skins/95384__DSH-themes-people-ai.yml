@@ -19,10 +19,17 @@ install:
   target: github:95384/DSH-themes-people-ai#dab5b78bcc51b42319b2daa582565abee1746a1c
   version: 0.1.1
   commit: dab5b78bcc51b42319b2daa582565abee1746a1c
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/home.png
+  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/conversation.png
+  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -39,16 +46,21 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+  scan:
+    commit: dab5b78bcc51b42319b2daa582565abee1746a1c
+    packageVersion: 0.1.1
+    scannerVersion: static-v2
+    dshVersion: ^0.1.0-rc.6
+    mode: static
+    result: pass
+    checkedAt: 2026-11-17T20:51:48.448Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1543
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-17T07:57:56.216Z
-metadataUpdatedAt: 2026-11-17T07:57:56.216Z
+releaseUpdatedAt: 2026-11-17T20:51:48.449Z
+metadataUpdatedAt: 2026-11-17T20:51:48.449Z
 starsUpdatedAt: 2026-11-17T07:57:56.216Z
-updatedAt: 2026-11-17T07:57:56.216Z
-marketScreenshots:
-  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/home.png
-  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/conversation.png
-  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/settings.png
+updatedAt: 2026-11-17T20:51:48.449Z

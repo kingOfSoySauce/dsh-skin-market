@@ -17,12 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:heinrich0505/dsh-theme-material#a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc
+  target: github:heinrich0505/dsh-theme-material#5e0534b486c11ed58a93185ff98937eb6793971e
   version: 0.4.2
-  commit: a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc
+  commit: 5e0534b486c11ed58a93185ff98937eb6793971e
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-material
+    packageVersion: 0.4.2
+    integrity: sha512-c04D6akHOdRQqVZxjC5wvgiXl9glO0YrTei+BTF97L2COgcYSb4nys4TaF7WK29NHgZUJyNVGRfbXSdQkbAQJg==
+  npm:
+    name: dsh-theme-material
+    version: 0.4.2
+    integrity: sha512-c04D6akHOdRQqVZxjC5wvgiXl9glO0YrTei+BTF97L2COgcYSb4nys4TaF7WK29NHgZUJyNVGRfbXSdQkbAQJg==
+    repository: https://github.com/heinrich0505/dsh-theme-material
+    gitHead: 5e0534b486c11ed58a93185ff98937eb6793971e
 compatibility:
   dsh: unverified
   platform:
@@ -52,19 +61,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc
+    commit: 5e0534b486c11ed58a93185ff98937eb6793971e
     packageVersion: 0.4.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:44:33.425Z
+    checkedAt: 2026-11-17T20:54:11.438Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1350
-releaseUpdatedAt: 2026-11-15T20:44:34.614Z
-metadataUpdatedAt: 2026-11-15T20:44:34.614Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-17T20:54:15.891Z
+metadataUpdatedAt: 2026-11-17T20:54:15.891Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-15T20:44:34.614Z
+updatedAt: 2026-11-17T20:54:15.891Z

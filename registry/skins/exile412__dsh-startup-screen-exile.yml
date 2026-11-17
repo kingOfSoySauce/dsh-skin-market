@@ -28,6 +28,8 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/exile412__dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/home.gif
 screenshots:
   - https://raw.githubusercontent.com/exile412/dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/docs/screenshots/theme-light.jpg
   - https://raw.githubusercontent.com/exile412/dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/docs/screenshots/theme-dark.jpg
@@ -60,8 +62,6 @@ license:
 featuredRank: 1221
 starsSnapshot: 0
 releaseUpdatedAt: 2026-11-15T20:44:16.217Z
-metadataUpdatedAt: 2026-11-15T20:44:16.217Z
+metadataUpdatedAt: 2026-11-17T20:53:58.823Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-15T20:44:16.217Z
-marketScreenshots:
-  - skin-screenshots/exile412__dsh-startup-screen-exile/dfa6f97566df39c3b82f5541ea9b2e5f3fc32b0a/home.gif
+updatedAt: 2026-11-17T20:53:58.823Z

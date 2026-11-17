@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-16T22:01:50.907Z",
+  "generatedAt": "2026-11-17T20:56:25.172Z",
   "policies": {
     "01virex.dsh-deepshub": {
       "schema": "install-policy-v1",
@@ -69,11 +69,11 @@
       "mode": "npm",
       "package": "dsh-theme-holo",
       "resolved": {
-        "version": "1.0.8",
-        "commit": "578325dcc8d8d5e23844a526eeab4ceb2d027cc6",
-        "integrity": "sha512-I3hVb0gSsYFSopEKNKB831IZwpGD4tcsrmzC7Z1uzzM48+b9MWiuiSbb+HiJ+XC/DJ9f9QJ3BQGbXHisyPjp2Q==",
-        "gitHead": "578325dcc8d8d5e23844a526eeab4ceb2d027cc6",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "1.0.10",
+        "commit": "e29c9d84a099bea628960538aeb5500f6f494b99",
+        "integrity": "sha512-7LdWJllCzOTlLxj5Bv2P5+Rw7o7MDR/ZALtzdo/B9c4h5PVseLhZjjV3MJizzYxnQ2HuOWkV6DfzJSpIwNkY+w==",
+        "gitHead": "e29c9d84a099bea628960538aeb5500f6f494b99",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "111seek.dsh.splash": {
@@ -348,6 +348,16 @@
         "observedAt": "2026-11-14T23:50:15.754Z"
       }
     },
+    "95384.dsh.themes.people.ai": {
+      "schema": "install-policy-v1",
+      "mode": "github",
+      "package": "people-ai",
+      "resolved": {
+        "version": "0.1.1",
+        "commit": "dab5b78bcc51b42319b2daa582565abee1746a1c",
+        "observedAt": "2026-11-17T20:56:25.172Z"
+      }
+    },
     "96274zxc.vscode.pet": {
       "schema": "install-policy-v1",
       "mode": "github",
@@ -424,10 +434,10 @@
       "package": "dsh-feiyufm",
       "resolved": {
         "version": "0.1.2",
-        "commit": "60393365df4b9524f7a1e6266212ae92b013168f",
+        "commit": "9b5908ae0dd5b726e85f787f2e788c10799007c9",
         "integrity": "sha512-bZiqicWTNE1exzafsUqggciQPci5p/Jxx2Mg6CIo1x20Kzrxt6JG4A+bBTfFvfD2GVO8ruLu7mwm+j8PRXETXg==",
-        "gitHead": "60393365df4b9524f7a1e6266212ae92b013168f",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "gitHead": "9b5908ae0dd5b726e85f787f2e788c10799007c9",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "aaajzx111.dsh.theme.jing.chiyang": {
@@ -489,9 +499,9 @@
       "mode": "github",
       "package": "dsh-theme-zzz",
       "resolved": {
-        "version": "0.3.7",
-        "commit": "7f3e26475e75b967d2b222a32c9fb4087f335edc",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "0.3.8",
+        "commit": "fd8d960b28886a28ae806ba5f23e4931c79104c2",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "abyss2021.dsh-glass-skin": {
@@ -550,8 +560,8 @@
       "package": "dsh-chubby-whale",
       "resolved": {
         "version": "1.10.3",
-        "commit": "371e64d6fdab2fd3f088d68ab6b9b284186032e5",
-        "observedAt": "2026-11-16T22:01:50.907Z"
+        "commit": "74db8311e9ae9f2bb8c6983b1ab835529d358b43",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "aeonsscope.dsh.fellowmoon.theme": {
@@ -730,12 +740,14 @@
     },
     "alexpeng07.dsh-custom-plugin": {
       "schema": "install-policy-v1",
-      "mode": "github",
+      "mode": "npm",
       "package": "@alexpeng/dsh-custom-plugin",
       "resolved": {
         "version": "0.10.0",
         "commit": "7b4072de8d66bd70378b741ac2a5436a0e4fbbbd",
-        "observedAt": "2026-11-16T12:22:47.516Z"
+        "integrity": "sha512-rKwKPFMkFK3t9gjC55Inh50HJaXoj4St34Qhu8pIcbVHd1OSOK56eADuCV3X5J7Xw4tu3iyw/cUEvHhSrV4jyQ==",
+        "gitHead": "7b4072de8d66bd70378b741ac2a5436a0e4fbbbd",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "alexyin-tongji.dsh-ui-enhancer": {
@@ -984,8 +996,8 @@
       "package": "dsh-ui-beautify",
       "resolved": {
         "version": "0.6.6",
-        "commit": "4a62ebeb084413bc2807a3256ab92c330c977155",
-        "observedAt": "2026-11-16T09:51:48.703Z"
+        "commit": "21d709d868fbc70fa54de92b771b1bc6dbd58386",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "aurora.lucas365.dsh.deep.wake.splash": {
@@ -1222,14 +1234,12 @@
     },
     "berhbro.dsh-cyrene-theme": {
       "schema": "install-policy-v1",
-      "mode": "npm",
+      "mode": "github",
       "package": "dsh-cyrene-theme",
       "resolved": {
-        "version": "0.4.2",
-        "commit": "c3d62adbd4030efa65cff9bd29630bb51fc3dc8a",
-        "integrity": "sha512-v/xyFfeKKLs/ja/2r8SnIy2szCzcNZ19/EAtoL90jnoYqehxRROmBV8pk9fccWctcyHUYlU5j8Flc/I218l6ng==",
-        "gitHead": "c3d62adbd4030efa65cff9bd29630bb51fc3dc8a",
-        "observedAt": "2026-11-14T13:40:24.422Z"
+        "version": "0.4.3",
+        "commit": "23c9a38e9bea5b03359070078a2587329402f62b",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "beyondgu.klein.cat.pet": {
@@ -1723,9 +1733,9 @@
       "mode": "github",
       "package": "dsh-piggy",
       "resolved": {
-        "version": "0.37.3-rc.2",
-        "commit": "1acad6c21f8d6c6d2ca78bcd62f5f87138aeea9f",
-        "observedAt": "2026-11-16T09:51:48.703Z"
+        "version": "0.37.3-rc.3",
+        "commit": "480142ffd646dae81ed8e244ea7f365c29bd08e4",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "cloudsen.dsh-umbrella-theme": {
@@ -1733,11 +1743,11 @@
       "mode": "npm",
       "package": "dsh-umbrella-theme",
       "resolved": {
-        "version": "1.0.1",
-        "commit": "a745f1138c161a2f967d3aa9a21d49eaba17b5ac",
-        "integrity": "sha512-lmhSUEtWP3CQryJ6w1868kOsExlqFdmzkoRPjOVH+mkwTftJruIcxr3A6RaAhAWN5raVoyJ2B51WxSafSshmRg==",
-        "gitHead": "a745f1138c161a2f967d3aa9a21d49eaba17b5ac",
-        "observedAt": "2026-11-14T13:40:24.422Z"
+        "version": "1.0.2",
+        "commit": "400da4bc942cf654b0dc6f1b1e6ddffeda474e25",
+        "integrity": "sha512-6VghVZ/+On3rI+3Otrhu1zzlGE8CnrWJWLk8N6YbwHuief5QE4BuZ6DmWckho6UxEWxiG7rjxaryztKh1s5Iog==",
+        "gitHead": "400da4bc942cf654b0dc6f1b1e6ddffeda474e25",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "clown139880.dsh.live2d.avatar": {
@@ -2057,9 +2067,9 @@
       "mode": "github",
       "package": "dsh-whale-aqua-theme",
       "resolved": {
-        "version": "2.3.0",
-        "commit": "bc9144781e891a985fc73f22842619fa4ade9977",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "2.4.0",
+        "commit": "a47da85e0ea6cf80b7f4b80b4eb472231b3ce593",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "daxyao.dsh.plugin.fluffy.yard": {
@@ -2463,9 +2473,9 @@
       "mode": "github",
       "package": "dsh-nitai-theme",
       "resolved": {
-        "version": "0.3.0",
-        "commit": "5e4623b41961b33f49a1b1f30030b3acf7b8c683",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "0.5.0",
+        "commit": "d568ac74a0e567d736668d925422d4e5fb2ee97d",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "edmok.dsh.minecraft.theme": {
@@ -3362,12 +3372,14 @@
     },
     "heinrich0505.dsh.theme.material": {
       "schema": "install-policy-v1",
-      "mode": "github",
+      "mode": "npm",
       "package": "dsh-theme-material",
       "resolved": {
         "version": "0.4.2",
-        "commit": "a4399a1a74c3757b1d3b3a286b7c82b9a38d96fc",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "commit": "5e0534b486c11ed58a93185ff98937eb6793971e",
+        "integrity": "sha512-c04D6akHOdRQqVZxjC5wvgiXl9glO0YrTei+BTF97L2COgcYSb4nys4TaF7WK29NHgZUJyNVGRfbXSdQkbAQJg==",
+        "gitHead": "5e0534b486c11ed58a93185ff98937eb6793971e",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "hello-heyongping.dsh-helloai-theme": {
@@ -3586,6 +3598,16 @@
         "version": "1.0.1",
         "commit": "d8ee219e8c5c947d64237f218568e47c74a311b0",
         "observedAt": "2026-11-14T23:50:15.754Z"
+      }
+    },
+    "huguangyu666.dsh.plugin.backdrop": {
+      "schema": "install-policy-v1",
+      "mode": "github",
+      "package": "dsh-plugin-backdrop",
+      "resolved": {
+        "version": "0.1.2",
+        "commit": "964db33419ad48c760feaf7ad674f101b0e0f85c",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "huzhengcai471-crypto.dsh-startup-secret": {
@@ -3872,8 +3894,8 @@
       "package": "dsh-nailong-ui",
       "resolved": {
         "version": "1.0.0",
-        "commit": "37da828212b39654dd8e1b356e9776f1171e6c28",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "commit": "99954c602d5411dd7c96f2da701caec04fd7a3fb",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "jarvislee90s-dot.dsh-foxbell-pet": {
@@ -3914,6 +3936,16 @@
         "version": "2.0.0",
         "commit": "0ab3d4227105ebb20f9e8a5ffd951c38969089df",
         "observedAt": "2026-11-14T23:50:15.754Z"
+      }
+    },
+    "jcnet.9527.dsh.jpet.phone": {
+      "schema": "install-policy-v1",
+      "mode": "github",
+      "package": "dsh-pet-mobile",
+      "resolved": {
+        "version": "0.3.7-mobile.2",
+        "commit": "5dca11bec783cc482812134f80bb59b71ed48c34",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "jefferyshaw.dsh-stardew-theme": {
@@ -4101,9 +4133,9 @@
       "mode": "github",
       "package": "@qiaomu/dsh-radio",
       "resolved": {
-        "version": "0.1.6",
-        "commit": "f0d213dfd784a4ea32c7057edbefd291d1195102",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "0.1.7",
+        "commit": "e6d3ce6714c50ae284b3df8e6ef8b69a57e97214",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "john-walks-slow.dsh-os": {
@@ -4141,11 +4173,11 @@
       "mode": "npm",
       "package": "dsh-official-homepage-theme",
       "resolved": {
-        "version": "1.0.12",
-        "commit": "a80b70e809a091c815f8678d69cf1c88ffa11e91",
-        "integrity": "sha512-w8FTBljB9Ml/MG/xTQQmlq6GmDOlF5iMH4MnliczLdDDL0EFc+9Wqk/c92baez3iOLCu987+/tYUUMhcTqGfRA==",
-        "gitHead": "a80b70e809a091c815f8678d69cf1c88ffa11e91",
-        "observedAt": "2026-11-14T13:40:24.422Z"
+        "version": "1.0.13",
+        "commit": "5c35e0c93511a2e6006772997e2caad190ff51e7",
+        "integrity": "sha512-TV4x9fi1C0y3kL2jMfQPZiPndkNnOMbaQTSYpR0o5ZVzOplSZgCfLdKsLlNTvpQ1ztv4P1pDMt6Z7zlEvTAerQ==",
+        "gitHead": "5c35e0c93511a2e6006772997e2caad190ff51e7",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "johnsonspirit.ocean.wave.theme": {
@@ -4183,11 +4215,11 @@
       "mode": "npm",
       "package": "@joxos/dsh-theme-gallery",
       "resolved": {
-        "version": "1.1.0",
-        "commit": "4e13f8ee9df8d5e4f8421147fcaa9be27e8261a1",
-        "integrity": "sha512-6lKF3B97zGpZf0Js950V7KFN4tbJbLbgEgEREOKCystPCiXor76XH9VLze/U4mYQJvn+huAQWTZGkx5KyBIsYQ==",
-        "gitHead": "4e13f8ee9df8d5e4f8421147fcaa9be27e8261a1",
-        "observedAt": "2026-11-15T20:46:54.100Z"
+        "version": "1.1.1",
+        "commit": "40025f5a292f1b290f57ed457374706285cfcbf6",
+        "integrity": "sha512-H4ugNPC+NLnwGnJVeMOYKXyr4apYIFZOGqbYXSXY0ECpb3FK4hXOzFtWIkfYYeggRFX/D0AXle8Zc1KVvDjNKA==",
+        "gitHead": "40025f5a292f1b290f57ed457374706285cfcbf6",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "juexiongchen.boop.dsh.pixterm.theme": {
@@ -4447,9 +4479,9 @@
       "mode": "github",
       "package": "dsh-pixel-whale-pet",
       "resolved": {
-        "version": "1.1.0",
-        "commit": "70756ac1ae745e919767feeb5e0d3a2222acd40b",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "1.2.0",
+        "commit": "a6ac4285b1b9f537cf1920bfe1cb596c26b53fbf",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "kinmat-a.dsh-theme-switch": {
@@ -5010,8 +5042,8 @@
       "package": "dsh-theme-cyrene",
       "resolved": {
         "version": "0.37.0",
-        "commit": "7efdb148853d6f9d7f00e4d6abdc21f97bb86981",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "commit": "8bfff750cd320e843bed1846439017eb075d3a4b",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "linzhuolisoc.dsh-skin-study": {
@@ -5227,9 +5259,9 @@
       "mode": "github",
       "package": "dsh-dfy",
       "resolved": {
-        "version": "0.7.8",
-        "commit": "809f0ead3614573fd7047a26602b683e23e91849",
-        "observedAt": "2026-11-16T22:01:50.907Z"
+        "version": "0.7.9",
+        "commit": "fb61722debc725a73eb1a474ab915fea3f9a72c3",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "loveirishcoffee.dsh-effort-ultra-skin": {
@@ -5392,14 +5424,12 @@
     },
     "luodaoyi.dsh.cabinet.mode": {
       "schema": "install-policy-v1",
-      "mode": "npm",
+      "mode": "github",
       "package": "dsh-cabinet-mode",
       "resolved": {
-        "version": "0.9.2",
-        "commit": "f677f77cda5197f65204680d917ac5c9f4e954f7",
-        "integrity": "sha512-+T1mkrI2i8v0nnw7Ajxmi3+28UiUxeVhRhc+4Co+Y6TuQqaoeX+pdIcYofVRiSd9kHITQzHj1iCWEJ4SQtAbPA==",
-        "gitHead": "f677f77cda5197f65204680d917ac5c9f4e954f7",
-        "observedAt": "2026-11-16T22:01:50.907Z"
+        "version": "0.9.3",
+        "commit": "7e783b7d9767a8ad13a918fb89c1d0690dba18b5",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "luongthimydieu.dsh-client-ui-skin-kitty": {
@@ -5605,9 +5635,9 @@
       "mode": "github",
       "package": "@deepseek-ai/dsh-client-ui-prism",
       "resolved": {
-        "version": "2.0.3",
-        "commit": "f2863de94702ac7c2b8f086d3beeb0741f608af0",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "2.0.10",
+        "commit": "86783f2c7f4315e2a94fcfd2c1f253520befc71d",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "masterchiefm.dsh.realtime.tps.pet": {
@@ -6291,9 +6321,9 @@
       "mode": "github",
       "package": "@nonamelego/dsh-catppuccin",
       "resolved": {
-        "version": "0.7.4",
-        "commit": "3b449a8f296c72a56daa2c4382862855c41c8ffa",
-        "observedAt": "2026-11-16T22:01:50.907Z"
+        "version": "0.7.5",
+        "commit": "b9b6c5e29c6c98add817618d68df68efa00b796d",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "nortr0m.dsh.dota2.pet": {
@@ -6333,11 +6363,11 @@
       "mode": "npm",
       "package": "dsh-claude-style",
       "resolved": {
-        "version": "0.21.4",
-        "commit": "614a92668e0c92b207517b0fcbb09c5fb9ad1279",
-        "integrity": "sha512-VQmnlH2Z6gbTgsUVvrJlnOoAmvgmjq0sV6NO92gKyhvmTT3gxk7JKpj1DD0jmscdrek6uT2Gq/faC78t3ZGu0w==",
-        "gitHead": "614a92668e0c92b207517b0fcbb09c5fb9ad1279",
-        "observedAt": "2026-11-16T22:01:50.907Z"
+        "version": "0.21.5",
+        "commit": "138b1925c1602756d74f83d875c7e19e4322fee0",
+        "integrity": "sha512-wgXtSywLyJ/qOeV8yNdU+fmId/4R8DxCO5Rm6tiySq0jYCRDEtNyQfI9b8ABbeqZM38u7s+WfhdiVb2nci6FEg==",
+        "gitHead": "138b1925c1602756d74f83d875c7e19e4322fee0",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "nxz1026.singleplayer": {
@@ -6580,12 +6610,14 @@
     },
     "proglop.dsh.skin.silver.wolf.topic": {
       "schema": "install-policy-v1",
-      "mode": "github",
+      "mode": "npm",
       "package": "dsh-skin-silver-wolf-topic",
       "resolved": {
-        "version": "1.1.2",
-        "commit": "290a8962102157a71e32150dcd57164fe9eeaf17",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "1.1.3",
+        "commit": "aed7536ad42f905353296090aedc0204666ddfaa",
+        "integrity": "sha512-ao5wAV90oPoHKrW+S2yTx/uQO1x5xoqHRj8o6kH3S7RZb9LIb2AdAT4EkuZuQ50mB64ZHkYoueEhVrkbyiBu+Q==",
+        "gitHead": "aed7536ad42f905353296090aedc0204666ddfaa",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "ptb-xiaou.dsh-api3d-pet": {
@@ -7552,8 +7584,8 @@
       "package": "@local/dsh-shorekeeper-startup",
       "resolved": {
         "version": "1.2.1",
-        "commit": "364187c0561311864ab4d832fae89028afd9a274",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "commit": "3101a20b68b0880e50566a14dde05e51372aeacc",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "something11235.dsh-video-skin": {
@@ -7686,12 +7718,14 @@
     },
     "ssamurias.dsh.fish": {
       "schema": "install-policy-v1",
-      "mode": "github",
+      "mode": "npm",
       "package": "@ssamurias/dsh-fish",
       "resolved": {
-        "version": "1.0.3",
-        "commit": "ec44e16b76f704abb36934fdbbf9de8029a8c622",
-        "observedAt": "2026-11-16T12:22:47.516Z"
+        "version": "1.0.4",
+        "commit": "b520fca17d0d4ea621fcb47f411e5b4ef27aa259",
+        "integrity": "sha512-U2rTPsAlMIkOQiRYKYQ5+7X/Mr5aZKM5Ts3bH0lysjkMCgpSMFOCCGgQTAMqGeER715oxH8pT0vVmxBsR8FwGg==",
+        "gitHead": "b520fca17d0d4ea621fcb47f411e5b4ef27aa259",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "st21a1.dsh.bili.wallpaper": {
@@ -8003,11 +8037,11 @@
       "mode": "npm",
       "package": "@taosee258/dsh-client-ui-skin-qingxiao",
       "resolved": {
-        "version": "0.8.2",
-        "commit": "e5430cb3a99628b1dffb9d4ced9dd1618b79a72f",
-        "integrity": "sha512-teXmEemcyFO58RHNvz6VZo0Ki8tWUb2D8bImsGugTxqOUc4z4tdDFnMO0lzMxM/Ii4fD0bb7jOmQ3ZUJBn00PA==",
-        "gitHead": "e5430cb3a99628b1dffb9d4ced9dd1618b79a72f",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "0.8.3",
+        "commit": "85ab68ccde52cec2bd9241b83b701ff00cd6e90f",
+        "integrity": "sha512-Qae9mw4GYSYki9uctLi6tkZgsVIEoMzfkMIHfHkHm0d3VurL9j7y2eZJzNDBT82Xx/5BhlbKqWn7dRh9bCLKFA==",
+        "gitHead": "85ab68ccde52cec2bd9241b83b701ff00cd6e90f",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "taotao7.dsh.pretty.cool": {
@@ -8099,9 +8133,9 @@
       "mode": "github",
       "package": "dsh-apple-liquid-glass",
       "resolved": {
-        "version": "0.7.4",
-        "commit": "9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "0.8.1",
+        "commit": "8bfee5840ef06433efe4228679fda89753b9a7fe",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "tim5613.dsh.homepage.glass": {
@@ -9508,12 +9542,14 @@
     },
     "yefengliu1.dsh-theme-songgrid": {
       "schema": "install-policy-v1",
-      "mode": "github",
+      "mode": "npm",
       "package": "dsh-theme-songgrid",
       "resolved": {
-        "version": "0.1.7",
-        "commit": "bdb2cda5c4d186eaf1539dc18deb676a102ed3e3",
-        "observedAt": "2026-11-14T23:50:15.754Z"
+        "version": "0.1.9",
+        "commit": "2eef89adebd5f9a181cb79bf112f38d33b4ff886",
+        "integrity": "sha512-obyqDmqsltcvM2WDDHPvpKoqnDKBNMyYfxA4fjW2f83PLKpVEiOUcBXvTgI7VaSeyjp5pB3dc9FDIN/IldTBEA==",
+        "gitHead": "2eef89adebd5f9a181cb79bf112f38d33b4ff886",
+        "observedAt": "2026-11-17T20:56:25.172Z"
       }
     },
     "yesang0924-beep.dsh-glass-skin": {
