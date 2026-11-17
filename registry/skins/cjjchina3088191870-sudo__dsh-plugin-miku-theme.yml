@@ -44,7 +44,7 @@ screenshots:
   - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/dark.webp
   - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/mobile-corner.png
   - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/startup-settings.png
-listScreenshot: https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/rose-light.webp
+listScreenshot: skin-screenshots/cjjchina3088191870-sudo__dsh-plugin-miku-theme/ca35dfcc83a86032f3537de807c679b514106cf7/launch-miku.gif
 review:
   compatibility: verified
   preview: verified
@@ -72,6 +72,8 @@ license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/cjjchina3088191870-sudo__dsh-plugin-miku-theme/ca35dfcc83a86032f3537de807c679b514106cf7/launch-miku.gif
 featuredRank: 1133
 releaseUpdatedAt: 2026-11-14T23:47:05.956Z
 metadataUpdatedAt: 2026-11-14T00:23:42.349Z
