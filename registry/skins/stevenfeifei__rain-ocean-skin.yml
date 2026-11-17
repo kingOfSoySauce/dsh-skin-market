@@ -24,8 +24,7 @@ compatibility:
   dsh: unverified
   platform:
     - web
-screenshots:
-  - https://raw.githubusercontent.com/stevenfeifei/rain-ocean-skin/2d6ea273d54e656c862096f0edc2e8742bccf65b/native-dist/poster.jpg
+screenshots: []
 review:
   compatibility: unverified
   preview: verified
@@ -55,7 +54,6 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 0
-listScreenshot: https://raw.githubusercontent.com/stevenfeifei/rain-ocean-skin/2d6ea273d54e656c862096f0edc2e8742bccf65b/native-dist/poster.jpg
 featuredRank: 1000
 releaseUpdatedAt: 2026-11-15T20:45:46.490Z
 metadataUpdatedAt: 2026-11-16T21:57:57.826Z
