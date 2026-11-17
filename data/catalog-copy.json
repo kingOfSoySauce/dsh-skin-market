@@ -18207,6 +18207,24 @@
       },
       "override": true,
       "nameSource": "pinned README + maintainer copy review"
+    },
+    "jcnet.9527.dsh.jpet.phone": {
+      "name": {
+        "zh": "深深桌宠手机版",
+        "en": "ShenShen Pet Mobile"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 PC2005-cloud/dsh-pet v0.3.7 的大肥鱼桌宠搬到安卓手机版：插件版常驻页面、可拖动、被戳会回应，随会话状态换动作，还能聊天和查余额；同仓库另带独立安卓悬浮 App，不装插件也能在系统最上层常驻，语音识别与朗读都在手机本地跑。",
+        "en": "Brings the big-fish pet from PC2005-cloud/dsh-pet v0.3.7 to the Android build of dsh: the plugin version stays on the page, can be dragged, reacts to pokes and changes animation with the session while adding chat and balance checks; the same repo also ships a standalone Android overlay app that floats above any screen and runs speech recognition and TTS on-device."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "5b4e1ac5526bec2d940395c254eee679e99ffdd93b7cc218de915738ca88deb0",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
     }
   }
 }

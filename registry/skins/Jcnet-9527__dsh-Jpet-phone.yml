@@ -1,0 +1,54 @@
+id: jcnet.9527.dsh.jpet.phone
+name:
+  zh: 深深桌宠手机版
+  en: ShenShen Pet Mobile
+author: Jcnet-9527
+description: 把 PC2005-cloud/dsh-pet v0.3.7 的大肥鱼桌宠搬到安卓手机版：插件版常驻页面、可拖动、被戳会回应，随会话状态换动作，还能聊天和查余额；同仓库另带独立安卓悬浮 App，不装插件也能在系统最上层常驻，语音识别与朗读都在手机本地跑。
+repo: https://github.com/Jcnet-9527/dsh-Jpet-phone
+package: dsh-pet-mobile
+rowId: dsh-pet-mobile
+category: pet
+tags:
+  - pet
+  - mobile
+  - android
+  - fork
+modes:
+  - light
+  - dark
+install:
+  target: github:Jcnet-9527/dsh-Jpet-phone#5dca11bec783cc482812134f80bb59b71ed48c34
+  version: 0.3.7-mobile.2
+  commit: 5dca11bec783cc482812134f80bb59b71ed48c34
+compatibility:
+  dsh: ^0.2.0-rc.1 || ^0.2.1-rc.1
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1544
+starsSnapshot: 9
+releaseUpdatedAt: 2026-11-17T16:25:22.747Z
+metadataUpdatedAt: 2026-11-17T16:25:22.747Z
+starsUpdatedAt: 2026-11-17T16:25:22.747Z
+updatedAt: 2026-11-17T16:25:22.747Z
+marketScreenshots:
+  - skin-screenshots/Jcnet-9527__dsh-Jpet-phone/5dca11bec783cc482812134f80bb59b71ed48c34/home.gif
+  - skin-screenshots/Jcnet-9527__dsh-Jpet-phone/5dca11bec783cc482812134f80bb59b71ed48c34/home.png
+  - skin-screenshots/Jcnet-9527__dsh-Jpet-phone/5dca11bec783cc482812134f80bb59b71ed48c34/conversation.png
