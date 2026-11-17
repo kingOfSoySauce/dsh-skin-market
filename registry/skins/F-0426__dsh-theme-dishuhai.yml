@@ -34,7 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-splash-light.png
   - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-dark.png
   - https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-light.png
-listScreenshot: https://raw.githubusercontent.com/F-0426/dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/assets/screenshot-compare.png
+listScreenshot: skin-screenshots/F-0426__dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -62,6 +62,8 @@ license:
   code: SEE LICENSE IN LICENSE (MIT for code, CC BY-NC 4.0 for content)
   commercialUse: false
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/F-0426__dsh-theme-dishuhai/7b6c2ea19553a96808177b32907c7875089b3d12/home.gif
 featuredRank: 1331
 releaseUpdatedAt: 2026-11-15T20:44:20.036Z
 metadataUpdatedAt: 2026-11-15T20:44:20.036Z
