@@ -9123,11 +9123,11 @@
     "xerxescom.dsh.theme.inkstone": {
       "schema": "install-policy-v1",
       "mode": "github",
-      "package": "dsh-theme-cinnabar",
+      "package": "dsh-theme-inkstone",
       "resolved": {
-        "version": "0.7.5",
-        "commit": "29ddb8636bdaf2f40105bfa6bab9d9c410f4d162",
-        "observedAt": "2026-11-17T20:56:25.172Z"
+        "version": "0.2.0",
+        "commit": "6d354719010986ca0fbeebca3f5f0379b4319e46",
+        "observedAt": "2026-11-14T23:50:15.754Z"
       }
     },
     "xi-kari.dsh-amphoreus": {
