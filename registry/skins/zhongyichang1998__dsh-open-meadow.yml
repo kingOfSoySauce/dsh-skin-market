@@ -31,7 +31,7 @@ compatibility:
 screenshots:
   - https://raw.githubusercontent.com/zhongyichang1998/dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/docs/screenshots/settings.jpg
   - https://raw.githubusercontent.com/zhongyichang1998/dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/assets/production/coast.webp
-listScreenshot: https://raw.githubusercontent.com/zhongyichang1998/dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/docs/screenshots/settings.jpg
+listScreenshot: skin-screenshots/zhongyichang1998__dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/home.gif
 review:
   compatibility: verified
   preview: verified
@@ -58,6 +58,8 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/zhongyichang1998__dsh-open-meadow/52090c659c6bbe0dbd71493e25c96c1652399fdc/home.gif
 featuredRank: 1507
 releaseUpdatedAt: 2026-11-15T20:46:39.227Z
 metadataUpdatedAt: 2026-11-15T20:46:39.227Z

@@ -39,7 +39,7 @@ screenshots:
   - https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/entry-plug.png
   - https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/nerve-link.png
   - https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/synchronization.png
-listScreenshot: https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/entry-plug.png
+listScreenshot: skin-screenshots/nerv-base__dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -67,6 +67,8 @@ license:
   code: MIT
   commercialUse: true
 starsSnapshot: 4
+marketScreenshots:
+  - skin-screenshots/nerv-base__dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/home.gif
 featuredRank: 1246
 releaseUpdatedAt: 2026-11-14T23:45:03.932Z
 metadataUpdatedAt: 2026-11-14T23:45:03.932Z
