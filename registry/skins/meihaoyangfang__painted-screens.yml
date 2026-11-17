@@ -34,7 +34,7 @@ screenshots:
   - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/eva02-asuka.jpg
   - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/ink-bamboo.jpg
   - https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/rose-cream.jpg
-listScreenshot: https://raw.githubusercontent.com/meihaoyangfang/painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/docs/shots/sakura.jpg
+listScreenshot: skin-screenshots/meihaoyangfang__painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -64,6 +64,8 @@ health:
 license:
   code: (MIT AND LicenseRef-Proprietary-Artwork)
   commercialUse: false
+marketScreenshots:
+  - skin-screenshots/meihaoyangfang__painted-screens/485d4000c0f99c8c51d911817842d0d64d663793/home.gif
 featuredRank: 1242
 starsSnapshot: 1
 releaseUpdatedAt: 2026-11-14T23:48:11.874Z
