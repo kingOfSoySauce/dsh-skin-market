@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Linxi-1105/dsh-theme-cyrene#7efdb148853d6f9d7f00e4d6abdc21f97bb86981
+  target: github:Linxi-1105/dsh-theme-cyrene#8bfff750cd320e843bed1846439017eb075d3a4b
   version: 0.37.0
-  commit: 7efdb148853d6f9d7f00e4d6abdc21f97bb86981
+  commit: 8bfff750cd320e843bed1846439017eb075d3a4b
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -45,20 +45,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 7efdb148853d6f9d7f00e4d6abdc21f97bb86981
+    commit: 8bfff750cd320e843bed1846439017eb075d3a4b
     packageVersion: 0.37.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.5"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:45:51.362Z
+    checkedAt: 2026-11-17T20:51:29.521Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 1238
-releaseUpdatedAt: 2026-11-14T23:45:51.700Z
-metadataUpdatedAt: 2026-11-14T23:45:51.700Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-17T20:51:30.097Z
+metadataUpdatedAt: 2026-11-17T20:51:30.097Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T23:45:51.700Z
+updatedAt: 2026-11-17T20:51:30.097Z

@@ -18,12 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ssamurias/dsh-fish#ec44e16b76f704abb36934fdbbf9de8029a8c622
-  version: 1.0.3
-  commit: ec44e16b76f704abb36934fdbbf9de8029a8c622
+  target: github:ssamurias/dsh-fish#b520fca17d0d4ea621fcb47f411e5b4ef27aa259
+  version: 1.0.4
+  commit: b520fca17d0d4ea621fcb47f411e5b4ef27aa259
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: "@ssamurias/dsh-fish"
+    packageVersion: 1.0.4
+    integrity: sha512-U2rTPsAlMIkOQiRYKYQ5+7X/Mr5aZKM5Ts3bH0lysjkMCgpSMFOCCGgQTAMqGeER715oxH8pT0vVmxBsR8FwGg==
+  npm:
+    name: "@ssamurias/dsh-fish"
+    version: 1.0.4
+    integrity: sha512-U2rTPsAlMIkOQiRYKYQ5+7X/Mr5aZKM5Ts3bH0lysjkMCgpSMFOCCGgQTAMqGeER715oxH8pT0vVmxBsR8FwGg==
+    repository: https://github.com/ssamurias/dsh-fish
+    gitHead: b520fca17d0d4ea621fcb47f411e5b4ef27aa259
 compatibility:
   dsh: ">=0.2.0-rc.1 <0.3.0-0"
   platform:
@@ -48,20 +57,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: ec44e16b76f704abb36934fdbbf9de8029a8c622
-    packageVersion: 1.0.3
+    commit: b520fca17d0d4ea621fcb47f411e5b4ef27aa259
+    packageVersion: 1.0.4
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-16T11:18:06.731Z
+    checkedAt: 2026-11-17T20:49:34.228Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 156
 featuredRank: 1264
-releaseUpdatedAt: 2026-11-16T12:20:21.184Z
-metadataUpdatedAt: 2026-11-16T12:20:21.184Z
-starsUpdatedAt: 2026-11-16T21:57:57.826Z
-updatedAt: 2026-11-16T21:57:57.826Z
+starsSnapshot: 158
+releaseUpdatedAt: 2026-11-17T20:49:35.736Z
+metadataUpdatedAt: 2026-11-17T20:49:35.736Z
+starsUpdatedAt: 2026-11-17T20:49:35.736Z
+updatedAt: 2026-11-17T20:49:35.736Z

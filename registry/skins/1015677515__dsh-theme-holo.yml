@@ -18,25 +18,27 @@ modes:
   - light
   - dark
 install:
-  target: github:1015677515/dsh-theme-holo#578325dcc8d8d5e23844a526eeab4ceb2d027cc6
-  version: 1.0.8
-  commit: 578325dcc8d8d5e23844a526eeab4ceb2d027cc6
+  target: github:1015677515/dsh-theme-holo#e29c9d84a099bea628960538aeb5500f6f494b99
+  version: 1.0.10
+  commit: e29c9d84a099bea628960538aeb5500f6f494b99
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-theme-holo
-    packageVersion: 1.0.8
-    integrity: sha512-I3hVb0gSsYFSopEKNKB831IZwpGD4tcsrmzC7Z1uzzM48+b9MWiuiSbb+HiJ+XC/DJ9f9QJ3BQGbXHisyPjp2Q==
+    packageVersion: 1.0.10
+    integrity: sha512-7LdWJllCzOTlLxj5Bv2P5+Rw7o7MDR/ZALtzdo/B9c4h5PVseLhZjjV3MJizzYxnQ2HuOWkV6DfzJSpIwNkY+w==
   npm:
     name: dsh-theme-holo
-    version: 1.0.8
-    integrity: sha512-I3hVb0gSsYFSopEKNKB831IZwpGD4tcsrmzC7Z1uzzM48+b9MWiuiSbb+HiJ+XC/DJ9f9QJ3BQGbXHisyPjp2Q==
+    version: 1.0.10
+    integrity: sha512-7LdWJllCzOTlLxj5Bv2P5+Rw7o7MDR/ZALtzdo/B9c4h5PVseLhZjjV3MJizzYxnQ2HuOWkV6DfzJSpIwNkY+w==
     repository: https://github.com/1015677515/dsh-theme-holo
-    gitHead: 578325dcc8d8d5e23844a526eeab4ceb2d027cc6
+    gitHead: e29c9d84a099bea628960538aeb5500f6f494b99
 compatibility:
   dsh: 0.2.0--rc.1 || >=0.2.0-rc.1 <0.3.0-0 || 0.2.1-rc.2
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/1015677515__dsh-theme-holo/578325dcc8d8d5e23844a526eeab4ceb2d027cc6/launch.gif
 screenshots:
   - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/assets/cover.webp
   - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/docs/intro-final.webp
@@ -58,24 +60,22 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
-    - DSH 兼容范围待核对：保留的市场范围 0.2.0--rc.1 || >=0.2.0-rc.1 <0.3.0-0 || 0.2.1-rc.2 未被本次检测范围 >=0.2.0-rc.1 <0.3.0-0 完全覆盖（固定版本 578325dcc8d8d5e23844a526eeab4ceb2d027cc6）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.0--rc.1 || >=0.2.0-rc.1 <0.3.0-0 || 0.2.1-rc.2 未被本次检测范围 >=0.2.0-rc.1 <0.3.0-0 完全覆盖（固定版本 e29c9d84a099bea628960538aeb5500f6f494b99）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 578325dcc8d8d5e23844a526eeab4ceb2d027cc6
-    packageVersion: 1.0.8
+    commit: e29c9d84a099bea628960538aeb5500f6f494b99
+    packageVersion: 1.0.10
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:43:02.959Z
+    checkedAt: 2026-11-17T20:50:03.459Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 13
-marketScreenshots:
-  - skin-screenshots/1015677515__dsh-theme-holo/578325dcc8d8d5e23844a526eeab4ceb2d027cc6/launch.gif
 featuredRank: 1199
-releaseUpdatedAt: 2026-11-14T23:43:04.852Z
-metadataUpdatedAt: 2026-11-14T23:43:04.852Z
+starsSnapshot: 13
+releaseUpdatedAt: 2026-11-17T20:50:06.550Z
+metadataUpdatedAt: 2026-11-17T20:50:06.550Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-14T23:43:04.852Z
+updatedAt: 2026-11-17T20:50:06.550Z

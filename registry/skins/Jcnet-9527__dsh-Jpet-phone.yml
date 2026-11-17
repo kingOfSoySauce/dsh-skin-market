@@ -24,31 +24,48 @@ compatibility:
   dsh: ^0.2.0-rc.1 || ^0.2.1-rc.1
   platform:
     - web
-screenshots: []
+screenshots:
+  - https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/assets/screenshots/dsh-pet-running-1.png
+  - https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/assets/screenshots/dsh-pet-running-2.png
+  - https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/assets/screenshots/dsh-pet-running-7.png
+  - https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/assets/screenshots/dsh-pet-running-8.png
+  - https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/dsh-pet/assets/preview/daiji-huxi-xiuxian.gif
+  - https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/dsh-pet/assets/preview/dongzhangxiwang.gif
+  - https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/dsh-pet/assets/preview/yuandi-piaofu-tabu.gif
+  - https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/dsh-pet/assets/preview/yuandi-xiaoqi-chenmian.gif
+listScreenshot: https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/main/assets/screenshots/dsh-pet-running-1.png
 review:
   compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
-    readmeScreenshots: improve
+    readmeScreenshots: pass
     compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+  suggestions: []
+  scan:
+    commit: 5dca11bec783cc482812134f80bb59b71ed48c34
+    packageVersion: 0.3.7-mobile.2
+    scannerVersion: static-v2
+    dshVersion: ^0.2.0-rc.1 || ^0.2.1-rc.1
+    mode: static
+    result: pass
+    checkedAt: 2026-11-14T23:43:22.913Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1544
 starsSnapshot: 9
-releaseUpdatedAt: 2026-11-17T16:25:22.747Z
-metadataUpdatedAt: 2026-11-17T16:25:22.747Z
-starsUpdatedAt: 2026-11-17T16:25:22.747Z
-updatedAt: 2026-11-17T16:25:22.747Z
 marketScreenshots:
   - skin-screenshots/Jcnet-9527__dsh-Jpet-phone/5dca11bec783cc482812134f80bb59b71ed48c34/home.gif
   - skin-screenshots/Jcnet-9527__dsh-Jpet-phone/5dca11bec783cc482812134f80bb59b71ed48c34/home.png
   - skin-screenshots/Jcnet-9527__dsh-Jpet-phone/5dca11bec783cc482812134f80bb59b71ed48c34/conversation.png
+featuredRank: 1544
+releaseUpdatedAt: 2026-11-17T16:25:22.747Z
+metadataUpdatedAt: 2026-11-17T20:49:25.378Z
+starsUpdatedAt: 2026-11-17T16:25:22.747Z
+updatedAt: 2026-11-17T20:49:25.378Z

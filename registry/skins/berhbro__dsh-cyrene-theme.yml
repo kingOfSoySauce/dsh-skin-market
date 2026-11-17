@@ -19,25 +19,20 @@ modes:
   - light
   - dark
 install:
-  target: github:berhbro/dsh-cyrene-theme#c3d62adbd4030efa65cff9bd29630bb51fc3dc8a
-  version: 0.4.2
-  commit: c3d62adbd4030efa65cff9bd29630bb51fc3dc8a
+  target: github:berhbro/dsh-cyrene-theme#23c9a38e9bea5b03359070078a2587329402f62b
+  version: 0.4.3
+  commit: 23c9a38e9bea5b03359070078a2587329402f62b
   desktop:
-    mode: managed
-    registry: npm
-    packageName: dsh-cyrene-theme
-    packageVersion: 0.4.2
-    integrity: sha512-v/xyFfeKKLs/ja/2r8SnIy2szCzcNZ19/EAtoL90jnoYqehxRROmBV8pk9fccWctcyHUYlU5j8Flc/I218l6ng==
-  npm:
-    name: dsh-cyrene-theme
-    version: 0.4.2
-    integrity: sha512-v/xyFfeKKLs/ja/2r8SnIy2szCzcNZ19/EAtoL90jnoYqehxRROmBV8pk9fccWctcyHUYlU5j8Flc/I218l6ng==
-    repository: https://github.com/berhbro/dsh-cyrene-theme
-    gitHead: c3d62adbd4030efa65cff9bd29630bb51fc3dc8a
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/home.png
+  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/conversation.png
+  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/settings.png
 screenshots:
   - https://raw.githubusercontent.com/berhbro/dsh-cyrene-theme/6f2e3ad4b4a28379b1d1932feb330f79213273cd/docs/screenshots/DarkTheme.png
   - https://raw.githubusercontent.com/berhbro/dsh-cyrene-theme/6f2e3ad4b4a28379b1d1932feb330f79213273cd/docs/screenshots/LightTheme.png
@@ -60,23 +55,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: c3d62adbd4030efa65cff9bd29630bb51fc3dc8a
-    packageVersion: 0.4.2
+    commit: 23c9a38e9bea5b03359070078a2587329402f62b
+    packageVersion: 0.4.3
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-11T13:17:22.497Z
+    checkedAt: 2026-11-17T20:49:40.348Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 61
-marketScreenshots:
-  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/home.png
-  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/conversation.png
-  - skin-screenshots/berhbro__dsh-cyrene-theme/7dfe9637cb0bfa65712d1ec435292a365b499753/settings.png
 featuredRank: 1109
-releaseUpdatedAt: 2026-11-11T13:17:23.362Z
-metadataUpdatedAt: 2026-11-15T20:40:53.617Z
+starsSnapshot: 61
+releaseUpdatedAt: 2026-11-17T20:49:41.837Z
+metadataUpdatedAt: 2026-11-17T20:49:41.837Z
 starsUpdatedAt: 2026-11-14T00:22:37.200Z
-updatedAt: 2026-11-15T20:40:53.617Z
+updatedAt: 2026-11-17T20:49:41.837Z

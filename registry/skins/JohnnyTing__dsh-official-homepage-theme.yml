@@ -17,25 +17,29 @@ modes:
   - light
   - dark
 install:
-  target: github:JohnnyTing/dsh-official-homepage-theme#a80b70e809a091c815f8678d69cf1c88ffa11e91
-  version: 1.0.12
-  commit: a80b70e809a091c815f8678d69cf1c88ffa11e91
+  target: github:JohnnyTing/dsh-official-homepage-theme#5c35e0c93511a2e6006772997e2caad190ff51e7
+  version: 1.0.13
+  commit: 5c35e0c93511a2e6006772997e2caad190ff51e7
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-official-homepage-theme
-    packageVersion: 1.0.12
-    integrity: sha512-w8FTBljB9Ml/MG/xTQQmlq6GmDOlF5iMH4MnliczLdDDL0EFc+9Wqk/c92baez3iOLCu987+/tYUUMhcTqGfRA==
+    packageVersion: 1.0.13
+    integrity: sha512-TV4x9fi1C0y3kL2jMfQPZiPndkNnOMbaQTSYpR0o5ZVzOplSZgCfLdKsLlNTvpQ1ztv4P1pDMt6Z7zlEvTAerQ==
   npm:
     name: dsh-official-homepage-theme
-    version: 1.0.12
-    integrity: sha512-w8FTBljB9Ml/MG/xTQQmlq6GmDOlF5iMH4MnliczLdDDL0EFc+9Wqk/c92baez3iOLCu987+/tYUUMhcTqGfRA==
+    version: 1.0.13
+    integrity: sha512-TV4x9fi1C0y3kL2jMfQPZiPndkNnOMbaQTSYpR0o5ZVzOplSZgCfLdKsLlNTvpQ1ztv4P1pDMt6Z7zlEvTAerQ==
     repository: https://github.com/JohnnyTing/dsh-official-homepage-theme
-    gitHead: a80b70e809a091c815f8678d69cf1c88ffa11e91
+    gitHead: 5c35e0c93511a2e6006772997e2caad190ff51e7
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/home.png
+  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/conversation.png
+  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/settings.png
 screenshots:
   - https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.gif
   - https://raw.githubusercontent.com/JohnnyTing/dsh-official-homepage-theme/3dc1ee72510db857257ff292d7f3aca1d3f46bb8/static/preview.png
@@ -56,23 +60,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: a80b70e809a091c815f8678d69cf1c88ffa11e91
-    packageVersion: 1.0.12
+    commit: 5c35e0c93511a2e6006772997e2caad190ff51e7
+    packageVersion: 1.0.13
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T03:53:27.254Z
+    checkedAt: 2026-11-17T20:49:53.987Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 23
-marketScreenshots:
-  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/home.png
-  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/conversation.png
-  - skin-screenshots/JohnnyTing__dsh-official-homepage-theme/29384e9f968abdfc10ab60d681930c00250bd438/settings.png
 featuredRank: 1035
-releaseUpdatedAt: 2026-10-30T03:53:28.527Z
-metadataUpdatedAt: 2026-11-15T20:40:53.617Z
+starsSnapshot: 23
+releaseUpdatedAt: 2026-11-17T20:49:57.740Z
+metadataUpdatedAt: 2026-11-17T20:49:57.740Z
 starsUpdatedAt: 2026-11-06T00:08:18.130Z
-updatedAt: 2026-11-15T20:40:53.617Z
+updatedAt: 2026-11-17T20:49:57.740Z

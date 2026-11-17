@@ -17,21 +17,12 @@ modes:
   - light
   - dark
 install:
-  target: github:luodaoyi/dsh-cabinet-mode#f677f77cda5197f65204680d917ac5c9f4e954f7
-  version: 0.9.2
-  commit: f677f77cda5197f65204680d917ac5c9f4e954f7
+  target: github:luodaoyi/dsh-cabinet-mode#7e783b7d9767a8ad13a918fb89c1d0690dba18b5
+  version: 0.9.3
+  commit: 7e783b7d9767a8ad13a918fb89c1d0690dba18b5
   desktop:
-    mode: managed
-    registry: npm
-    packageName: dsh-cabinet-mode
-    packageVersion: 0.9.2
-    integrity: sha512-+T1mkrI2i8v0nnw7Ajxmi3+28UiUxeVhRhc+4Co+Y6TuQqaoeX+pdIcYofVRiSd9kHITQzHj1iCWEJ4SQtAbPA==
-  npm:
-    name: dsh-cabinet-mode
-    version: 0.9.2
-    integrity: sha512-+T1mkrI2i8v0nnw7Ajxmi3+28UiUxeVhRhc+4Co+Y6TuQqaoeX+pdIcYofVRiSd9kHITQzHj1iCWEJ4SQtAbPA==
-    repository: https://github.com/luodaoyi/dsh-cabinet-mode
-    gitHead: f677f77cda5197f65204680d917ac5c9f4e954f7
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: 0.2.2-rc.1 || 0.2.1-rc.3 || 0.2.1-rc.5
   platform:
@@ -53,22 +44,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.2.2-rc.1 || 0.2.1-rc.3 || 0.2.1-rc.5 未被本次检测范围 0.2.1-rc.5 完全覆盖（固定版本 f677f77cda5197f65204680d917ac5c9f4e954f7）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.2-rc.1 || 0.2.1-rc.3 || 0.2.1-rc.5 未被本次检测范围 0.2.1-rc.5 完全覆盖（固定版本 7e783b7d9767a8ad13a918fb89c1d0690dba18b5）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: f677f77cda5197f65204680d917ac5c9f4e954f7
-    packageVersion: 0.9.2
+    commit: 7e783b7d9767a8ad13a918fb89c1d0690dba18b5
+    packageVersion: 0.9.3
     scannerVersion: static-v2
     dshVersion: 0.2.1-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-11-16T21:58:12.477Z
+    checkedAt: 2026-11-17T20:49:46.611Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1239
 starsSnapshot: 36
-releaseUpdatedAt: 2026-11-16T21:58:13.974Z
-metadataUpdatedAt: 2026-11-16T21:58:13.974Z
+releaseUpdatedAt: 2026-11-17T20:49:48.252Z
+metadataUpdatedAt: 2026-11-17T20:49:48.252Z
 starsUpdatedAt: 2026-11-16T09:48:54.442Z
-updatedAt: 2026-11-16T21:58:13.974Z
+updatedAt: 2026-11-17T20:49:48.252Z

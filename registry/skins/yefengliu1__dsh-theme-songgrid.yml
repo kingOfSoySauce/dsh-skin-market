@@ -14,12 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:yefengliu1/dsh-theme-songgrid#bdb2cda5c4d186eaf1539dc18deb676a102ed3e3
-  version: 0.1.7
-  commit: bdb2cda5c4d186eaf1539dc18deb676a102ed3e3
+  target: github:yefengliu1/dsh-theme-songgrid#2eef89adebd5f9a181cb79bf112f38d33b4ff886
+  version: 0.1.9
+  commit: 2eef89adebd5f9a181cb79bf112f38d33b4ff886
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-theme-songgrid
+    version: 0.1.9
+    integrity: sha512-obyqDmqsltcvM2WDDHPvpKoqnDKBNMyYfxA4fjW2f83PLKpVEiOUcBXvTgI7VaSeyjp5pB3dc9FDIN/IldTBEA==
+    repository: https://github.com/yefengliu1/dsh-theme-songgrid
+    gitHead: 2eef89adebd5f9a181cb79bf112f38d33b4ff886
 compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
@@ -41,22 +47,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 >=0.2.0-rc.2 未被本次检测范围 ^0.2.0-rc.2 完全覆盖（固定版本 bdb2cda5c4d186eaf1539dc18deb676a102ed3e3）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.2.0-rc.2 未被本次检测范围 ^0.2.0-rc.2 完全覆盖（固定版本 2eef89adebd5f9a181cb79bf112f38d33b4ff886）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: bdb2cda5c4d186eaf1539dc18deb676a102ed3e3
-    packageVersion: 0.1.7
+    commit: 2eef89adebd5f9a181cb79bf112f38d33b4ff886
+    packageVersion: 0.1.9
     scannerVersion: static-v2
     dshVersion: ^0.2.0-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:31:56.066Z
+    checkedAt: 2026-11-17T20:50:30.826Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 6
 featuredRank: 997
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-11-09T00:14:22.375Z
+starsSnapshot: 6
+releaseUpdatedAt: 2026-11-17T20:50:31.551Z
+metadataUpdatedAt: 2026-11-17T20:50:31.551Z
 starsUpdatedAt: 2026-11-13T00:28:13.548Z
-updatedAt: 2026-11-13T00:28:13.548Z
+updatedAt: 2026-11-17T20:50:31.551Z

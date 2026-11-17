@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:tianyuec11-design/dsh-apple-liquid-glass#9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0
-  version: 0.7.4
-  commit: 9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0
+  target: github:tianyuec11-design/dsh-apple-liquid-glass#8bfee5840ef06433efe4228679fda89753b9a7fe
+  version: 0.8.1
+  commit: 8bfee5840ef06433efe4228679fda89753b9a7fe
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -49,20 +49,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 9e0db904cd4e7562e66b8cd0fa36b6ead1b7d5c0
-    packageVersion: 0.7.4
+    commit: 8bfee5840ef06433efe4228679fda89753b9a7fe
+    packageVersion: 0.8.1
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:45:09.144Z
+    checkedAt: 2026-11-17T20:51:03.419Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 1168
-releaseUpdatedAt: 2026-11-14T23:45:10.005Z
-metadataUpdatedAt: 2026-11-14T23:45:10.005Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-17T20:51:10.966Z
+metadataUpdatedAt: 2026-11-17T20:51:10.966Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T23:45:10.005Z
+updatedAt: 2026-11-17T20:51:10.966Z

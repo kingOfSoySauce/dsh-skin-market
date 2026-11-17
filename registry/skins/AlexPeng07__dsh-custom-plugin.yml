@@ -21,9 +21,18 @@ install:
   version: 0.10.0
   commit: 7b4072de8d66bd70378b741ac2a5436a0e4fbbbd
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: "@alexpeng/dsh-custom-plugin"
+    packageVersion: 0.10.0
+    integrity: sha512-rKwKPFMkFK3t9gjC55Inh50HJaXoj4St34Qhu8pIcbVHd1OSOK56eADuCV3X5J7Xw4tu3iyw/cUEvHhSrV4jyQ==
   allowBuild: "@alexpeng/dsh-custom-plugin@https://codeload.github.com/AlexPeng07/dsh-custom-plugin/tar.gz/7b4072de8d66bd70378b741ac2a5436a0e4fbbbd"
+  npm:
+    name: "@alexpeng/dsh-custom-plugin"
+    version: 0.10.0
+    integrity: sha512-rKwKPFMkFK3t9gjC55Inh50HJaXoj4St34Qhu8pIcbVHd1OSOK56eADuCV3X5J7Xw4tu3iyw/cUEvHhSrV4jyQ==
+    repository: https://github.com/AlexPeng07/dsh-custom-plugin
+    gitHead: 7b4072de8d66bd70378b741ac2a5436a0e4fbbbd
 compatibility:
   dsh: ^0.1.1-rc.1
   platform:
@@ -64,7 +73,7 @@ license:
   commercialUse: true
 featuredRank: 1038
 starsSnapshot: 9
-releaseUpdatedAt: 2026-11-16T12:20:38.228Z
+releaseUpdatedAt: 2026-11-17T20:50:19.713Z
 metadataUpdatedAt: 2026-11-16T12:20:38.228Z
 starsUpdatedAt: 2026-10-30T03:53:30.746Z
-updatedAt: 2026-11-16T12:20:38.228Z
+updatedAt: 2026-11-17T20:50:19.713Z

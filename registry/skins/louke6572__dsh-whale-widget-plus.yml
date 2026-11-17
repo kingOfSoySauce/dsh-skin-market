@@ -13,9 +13,9 @@ tags:
 modes:
   - light
 install:
-  target: github:louke6572/dsh-whale-widget-plus#809f0ead3614573fd7047a26602b683e23e91849
-  version: 0.7.8
-  commit: 809f0ead3614573fd7047a26602b683e23e91849
+  target: github:louke6572/dsh-whale-widget-plus#fb61722debc725a73eb1a474ab915fea3f9a72c3
+  version: 0.7.9
+  commit: fb61722debc725a73eb1a474ab915fea3f9a72c3
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -43,22 +43,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.1.1-rc.2 未被本次检测范围 >=0.2.1-rc.2 完全覆盖（固定版本 809f0ead3614573fd7047a26602b683e23e91849）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.1-rc.2 未被本次检测范围 >=0.2.1-rc.2 完全覆盖（固定版本 fb61722debc725a73eb1a474ab915fea3f9a72c3）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 809f0ead3614573fd7047a26602b683e23e91849
-    packageVersion: 0.7.8
+    commit: fb61722debc725a73eb1a474ab915fea3f9a72c3
+    packageVersion: 0.7.9
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.2"
     mode: static
     result: pass
-    checkedAt: 2026-11-16T21:58:06.655Z
+    checkedAt: 2026-11-17T20:49:36.857Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 944
-starsSnapshot: 100
-releaseUpdatedAt: 2026-11-16T21:58:07.084Z
-metadataUpdatedAt: 2026-11-16T21:58:07.084Z
-starsUpdatedAt: 2026-11-15T20:41:05.708Z
-updatedAt: 2026-11-16T21:58:07.084Z
+starsSnapshot: 101
+releaseUpdatedAt: 2026-11-17T20:49:37.313Z
+metadataUpdatedAt: 2026-11-17T20:49:37.313Z
+starsUpdatedAt: 2026-11-17T20:49:37.313Z
+updatedAt: 2026-11-17T20:49:37.313Z

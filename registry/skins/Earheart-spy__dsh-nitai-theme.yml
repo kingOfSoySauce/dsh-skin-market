@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Earheart-spy/dsh-nitai-theme#5e4623b41961b33f49a1b1f30030b3acf7b8c683
-  version: 0.3.0
-  commit: 5e4623b41961b33f49a1b1f30030b3acf7b8c683
+  target: github:Earheart-spy/dsh-nitai-theme#d568ac74a0e567d736668d925422d4e5fb2ee97d
+  version: 0.5.0
+  commit: d568ac74a0e567d736668d925422d4e5fb2ee97d
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -46,20 +46,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 5e4623b41961b33f49a1b1f30030b3acf7b8c683
-    packageVersion: 0.3.0
+    commit: d568ac74a0e567d736668d925422d4e5fb2ee97d
+    packageVersion: 0.5.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:23:24.860Z
+    checkedAt: 2026-11-17T20:51:19.321Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-14T00:23:26.179Z
-metadataUpdatedAt: 2026-11-14T23:45:33.674Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-17T20:51:24.686Z
+metadataUpdatedAt: 2026-11-17T20:51:24.686Z
 starsUpdatedAt: 2026-11-14T00:23:26.179Z
-updatedAt: 2026-11-14T23:45:33.674Z
+updatedAt: 2026-11-17T20:51:24.686Z

@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:dataizu/dsh-whale-aqua-theme#bc9144781e891a985fc73f22842619fa4ade9977
-  version: 2.3.0
-  commit: bc9144781e891a985fc73f22842619fa4ade9977
+  target: github:dataizu/dsh-whale-aqua-theme#a47da85e0ea6cf80b7f4b80b4eb472231b3ce593
+  version: 2.4.0
+  commit: a47da85e0ea6cf80b7f4b80b4eb472231b3ce593
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -47,19 +47,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: bc9144781e891a985fc73f22842619fa4ade9977
-    packageVersion: 2.3.0
+    commit: a47da85e0ea6cf80b7f4b80b4eb472231b3ce593
+    packageVersion: 2.4.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-30T04:54:33.372Z
+    checkedAt: 2026-11-17T20:51:17.974Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 1042
-releaseUpdatedAt: 2026-10-30T04:54:34.808Z
-metadataUpdatedAt: 2026-10-30T04:54:34.808Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-17T20:51:19.972Z
+metadataUpdatedAt: 2026-11-17T20:51:19.972Z
 starsUpdatedAt: 2026-09-09T21:39:33.222Z
-updatedAt: 2026-10-30T04:54:34.808Z
+updatedAt: 2026-11-17T20:51:19.972Z
