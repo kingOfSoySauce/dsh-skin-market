@@ -1,0 +1,54 @@
+id: 95384.dsh.themes.people.ai
+name:
+  zh: 人民的AI
+  en: People's AI
+author: "95384"
+description: 把应用背景换成随包携带的一张固定壁纸，刷新后仍是同一张；侧栏、输入框与设置面板改成半透明毛玻璃，让壁纸透出来。加载时强制深色外观并禁用切换，新会话标题同时换成「人民的AI」。
+repo: https://github.com/95384/DSH-themes-people-ai
+package: people-ai
+rowId: people-ai
+category: skin
+tags:
+  - wallpaper
+  - dark
+  - glass
+  - full-ui
+modes:
+  - dark
+install:
+  target: github:95384/DSH-themes-people-ai#dab5b78bcc51b42319b2daa582565abee1746a1c
+  version: 0.1.1
+  commit: dab5b78bcc51b42319b2daa582565abee1746a1c
+compatibility:
+  dsh: 0.1.0-rc.6
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1543
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-17T07:57:56.216Z
+metadataUpdatedAt: 2026-11-17T07:57:56.216Z
+starsUpdatedAt: 2026-11-17T07:57:56.216Z
+updatedAt: 2026-11-17T07:57:56.216Z
+marketScreenshots:
+  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/home.png
+  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/conversation.png
+  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/settings.png
