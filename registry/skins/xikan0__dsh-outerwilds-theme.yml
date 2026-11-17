@@ -38,7 +38,7 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/xikan0/dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/docs/screenshots/preview.png
-listScreenshot: https://raw.githubusercontent.com/xikan0/dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/docs/screenshots/preview.png
+listScreenshot: skin-screenshots/xikan0__dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/home.gif
 review:
   compatibility: unverified
   preview: verified
@@ -68,6 +68,8 @@ health:
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
+marketScreenshots:
+  - skin-screenshots/xikan0__dsh-outerwilds-theme/5a9b1feaeee4f2269646b7498eec26cdcb846e7d/home.gif
 featuredRank: 1280
 starsSnapshot: 3
 releaseUpdatedAt: 2026-11-14T23:45:14.308Z
