@@ -195,3 +195,23 @@ dsh plugin --profile web remove dsh-skin-market
 官方 Desktop 在应用插件页移除。市场不会替用户删除其他插件或迁移第三方桌面壳的配置。
 
 - 通知已读回归：皮肤安装/更新/启停失败、市场更新失败、新包授权、构件确认及构建授权点击知道了、取消或关闭后，同一通知不再显示横幅；刷新、轮询和重新进入市场仍保持已读。等待结果提示确认后隐藏横幅，但后台写锁与操作状态仍保留；同一操作后来转为失败时必须再次提示。重启提示是例外：关闭弹窗后保留待重启横幅，关闭横幅后才隐藏，同一待重启目标不再自动弹窗。新操作失败和其他待重启目标均须正常提示。
+
+## 6. 旧客户端 catalog 兼容验证
+
+目录 wire 必须持续满足 v1 兼容契约（见 `docs/architecture-v2.md` §3）。改 `data/catalog.json` 生成逻辑、截图 URL 形态或 per-entry 字段前，用真实旧版发布包校验一遍：
+
+```bash
+REPO=$(pwd)
+WORK=/tmp/dsh-catalog-compat && rm -rf "$WORK" && mkdir -p "$WORK"
+for v in 0.1.70; do
+  mkdir -p "$WORK/$v"
+  curl -sL "https://registry.npmjs.org/dsh-skin-market/-/dsh-skin-market-$v.tgz" | tar xz -C "$WORK/$v" --strip-components=1
+  ln -sfn "$REPO/node_modules" "$WORK/$v/node_modules"
+  node -e "const { validateCatalog } = require('$WORK/$v/lib/catalog.js'); const fs = require('fs'); validateCatalog(JSON.parse(fs.readFileSync('$REPO/data/catalog.json', 'utf8'))); console.log('$v ok')"
+done
+```
+
+- 0.1.70 是当前兼容基线，必须通过。0.1.69 未发布到 npm registry（版本从 0.1.68 直接跳到 0.1.70），如手上有 0.1.69 的 tgz 用同一方式跑；它的 `lib/catalog.js` 与 schema 和 0.1.70 逐字节一致。
+- 0.1.49/0.1.40/0.1.17 在本次去 pin 变更前就已失败（catalog 已有跨包共享 `rowId`，0.1.49 只按 rowId 去重），不作为回归目标；不要把已知失败当成新回归。
+- 截图去 pin 的兼容点：旧 schema 的 `screenshotRef` 只要求 `^(https://|skin-screenshots/)` 且非空，不校验 URL 里的 commit。可复制 catalog 并把某条 `screenshots[0]` 改成 `https://raw.githubusercontent.com/example/repo/HEAD/docs/home.png` 后复跑上面的命令，确认仍通过。
+- CI 侧由 `tests/catalog-compat.spec.ts` 用冻结的 v1 per-entry schema 固化同样的不变量；新增 per-entry 字段仍必须先升 `schemaVersion` 并按采用率发布。
