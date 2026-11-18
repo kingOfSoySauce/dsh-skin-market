@@ -275,7 +275,7 @@ Follow these steps:
 2. Edit only that existing YAML file; if display copy must change too, edit its own data/catalog-copy.json in the same PR. A community PR may change only your own entry: do not edit other entries, data/catalog.json, or any other file.
 3. The YAML may change only these fields: name.zh, name.en, author, description, category, tags, modes, screenshots, listScreenshot, marketScreenshots, and compatibility.dsh.
    - name must keep both zh and en; category must be one of skin, pet, player, or splash; tags must be a non-empty array of strings; modes may contain only light and dark and must not be empty.
-   - The screenshots array order is the display order. Use only png, jpg, webp, or gif files from the repository at the currently pinned commit; do not switch to a newer commit, SVG, a data URI, or a third-party image host.
+   - The screenshots array order is the display order. Use directly fetchable png, jpg, webp, or gif images (repository files or https URLs); do not use SVG, data URIs, or a temporary image host. Refreshing a preview just needs an updated URL; it does not have to match the installed commit.
    - listScreenshot is the cover and must reference an image already present in that entry's screenshots or marketScreenshots.
    - marketScreenshots may only reorder existing screenshots; the set must not change.
    - compatibility.dsh must be a valid semver range and must not go back to unverified. If you change it, attach evidence in the PR body: the README, package.json engines.dsh, or a compatibility doc link at the entry's pinned commit. Do not invent a compatibility range.

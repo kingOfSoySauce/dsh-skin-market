@@ -275,7 +275,7 @@ url: https://github.com/<owner>/<repo>
 2. 只修改这一条已有 YAML；如果还要更新前台展示文案，在同一个 PR 里修改它自己的 data/catalog-copy.json。社区 PR 只能改自己的条目，不要改别人的条目、data/catalog.json 或其他文件。
 3. YAML 只允许改这些字段：name.zh、name.en、author、description、category、tags、modes、screenshots、listScreenshot、marketScreenshots、compatibility.dsh。
    - name 必须同时保留 zh 和 en；category 只能是 skin、pet、player 或 splash；tags 是非空字符串数组；modes 只能包含 light、dark 且不能为空。
-   - screenshots 数组顺序就是前台展示顺序，只能使用当前已固定 commit 下的仓库内 png、jpg、webp 或 gif，不要换成更新的 commit、SVG、data URI 或第三方图床。
+   - screenshots 数组顺序就是前台展示顺序。用可直接访问的 png、jpg、webp 或 gif 图片（仓库内图片或 https 地址），不要用 SVG、data URI 或临时图床；换新预览图直接更新地址即可，不需要和安装版本的 commit 对齐。
    - listScreenshot 是封面，必须引用该条目 screenshots 或 marketScreenshots 里已经有的图片地址。
    - marketScreenshots 只能重排已有展示图，集合不能变。
    - compatibility.dsh 必须是合法 semver 区间，不能改回 unverified；要改它时，在 PR 正文附上该条目固定 commit 的 README、package.json 的 engines.dsh 或兼容性文档链接作为证据，不要编造兼容范围。
