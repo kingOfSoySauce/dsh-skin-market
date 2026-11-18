@@ -350,15 +350,29 @@ export function inspectEntryUpdate({
   return { mode, registryFile, copyChanged: classification.copyChanged, errors }
 }
 
+// data/catalog-copy.json is already larger than Node's 1 MiB execFileSync
+// default, so reading it with the default buffer throws ENOBUFS. That error
+// used to be swallowed here and reported as a deleted file, which rejected
+// valid author copy updates while the file was present in both commits.
+const GIT_MAX_BUFFER = 64 * 1024 * 1024
+
 function git(root, args) {
-  return execFileSync('git', ['-C', root, ...args], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] })
+  return execFileSync('git', ['-C', root, ...args], { encoding: 'utf8', maxBuffer: GIT_MAX_BUFFER, stdio: ['ignore', 'pipe', 'pipe'] })
 }
 
 function gitTry(root, args) {
   try {
     return git(root, args)
-  } catch {
-    return null
+  } catch (error) {
+    const stderr = error !== null && typeof error === 'object' && 'stderr' in error ? String(error.stderr ?? '') : ''
+    // A missing path at that commit is the one expected miss (a new entry has
+    // no base file, a deleted display-copy file has no head file). Every other
+    // failure must surface instead of being reported as "file deleted".
+    if (/does not exist in|exists on disk, but not in/i.test(stderr)) return null
+    if (error !== null && typeof error === 'object' && error.code === 'ENOBUFS') {
+      throw new Error(`git ${args.join(' ')} 的输出超过 ${GIT_MAX_BUFFER} 字节缓冲区；请检查 data/catalog-copy.json 是否异常，或调大 GIT_MAX_BUFFER`)
+    }
+    throw error
   }
 }
 

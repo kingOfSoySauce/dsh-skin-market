@@ -333,6 +333,40 @@ describe('entry update guard command line', () => {
     }
   })
 
+  it('reads a display-copy file larger than the old 1 MiB execFileSync buffer', () => {
+    const repo = initRepo()
+    try {
+      // data/catalog-copy.json is already over 1 MiB in production. With the
+      // default execFileSync buffer `git show` throws ENOBUFS, and a guard that
+      // maps every git failure to null reports the file as deleted.
+      const padded = copyFile()
+      ;(padded.skins['other.skin'] as Record<string, unknown>).description = {
+        zh: '中'.repeat(400_000),
+        en: 'a'.repeat(800_000),
+      }
+      writeFileSync(join(repo.dir, 'data', 'catalog-copy.json'), JSON.stringify(padded, null, 2))
+      git(repo.dir, ['add', '-A'])
+      git(repo.dir, ['commit', '-qm', 'large display copy'])
+      const base = git(repo.dir, ['rev-parse', 'HEAD'])
+
+      git(repo.dir, ['checkout', '-q', '-b', 'copy-update'])
+      const copy = JSON.parse(JSON.stringify(padded)) as ReturnType<typeof copyFile>
+      ;(copy.skins['example.skin'] as Record<string, unknown>).description = { zh: '新的中文描述', en: 'New English description' }
+      writeFileSync(join(repo.dir, 'data', 'catalog-copy.json'), JSON.stringify(copy, null, 2))
+      const skin = baseSkin()
+      skin.description = 'Updated description'
+      writeFileSync(join(repo.dir, registryFile), stringify(skin))
+      git(repo.dir, ['add', '-A'])
+      git(repo.dir, ['commit', '-qm', 'update copy'])
+      const head = git(repo.dir, ['rev-parse', 'HEAD'])
+      const result = runGuard(repo.dir, base, head)
+      expect(result.status).toBe(0)
+      expect(result.stdout).toContain('校验通过')
+    } finally {
+      rmSync(repo.dir, { recursive: true, force: true })
+    }
+  })
+
   it('accepts a new thin entry through the command line', () => {
     const repo = initRepo()
     try {

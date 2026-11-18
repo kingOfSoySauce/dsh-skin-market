@@ -1,9 +1,11 @@
 /**
  * Structural validation for `data/catalog-copy.json`.
  *
- * The file is maintainer-authored display-copy input, not a community registry
- * file: `registry/skins/*.yml` stays the compatibility source and the copy
- * file only holds the approved Chinese/English display text. Validation here is
+ * The file holds curated display copy: `registry/skins/*.yml` stays the
+ * compatibility source and the copy file only holds the approved Chinese/
+ * English display text. A community PR may update only its own entry's `name`,
+ * `description` and `descriptionPolicy` (see registry/submission-contract.json);
+ * everything else is maintained by maintainers. Validation here is
  * deliberately structural — it checks shape, known keys, policy consistency and
  * that every id still exists in the registry. Copy quality is reviewed in the
  * private ops pipeline and is not judged by the public build.
