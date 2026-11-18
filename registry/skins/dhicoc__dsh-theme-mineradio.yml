@@ -68,7 +68,7 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 20
+starsSnapshot: 22
 marketScreenshots:
   - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/home.png
   - skin-screenshots/dhicoc__dsh-theme-mineradio/60ac976b9fb761ba6ded8f0ddf3a51459b82ffea/conversation.png
@@ -76,5 +76,5 @@ marketScreenshots:
 featuredRank: 1000
 releaseUpdatedAt: 2026-11-14T23:42:48.921Z
 metadataUpdatedAt: 2026-11-15T20:40:53.617Z
-starsUpdatedAt: 2026-11-03T19:20:00+08:00
-updatedAt: 2026-11-15T20:40:53.617Z
+starsUpdatedAt: 2026-11-18T20:22:04.502Z
+updatedAt: 2026-11-18T20:22:04.502Z

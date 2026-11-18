@@ -26,10 +26,6 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/home.png
-  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/conversation.png
-  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -58,9 +54,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1543
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/home.png
+  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/conversation.png
+  - skin-screenshots/95384__DSH-themes-people-ai/dab5b78bcc51b42319b2daa582565abee1746a1c/settings.png
+featuredRank: 1543
 releaseUpdatedAt: 2026-11-17T20:51:48.449Z
-metadataUpdatedAt: 2026-11-17T20:51:48.449Z
+metadataUpdatedAt: 2026-11-18T20:22:04.502Z
 starsUpdatedAt: 2026-11-17T07:57:56.216Z
-updatedAt: 2026-11-17T20:51:48.449Z
+updatedAt: 2026-11-18T20:22:04.502Z

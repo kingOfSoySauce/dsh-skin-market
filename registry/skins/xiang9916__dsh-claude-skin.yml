@@ -18,18 +18,18 @@ modes:
   - light
   - dark
 install:
-  target: github:xiang9916/dsh-claude-skin#bf03c1c796280623cff566c1001ee530e8c13bbf
-  version: 0.2.2-rc.1
-  commit: bf03c1c796280623cff566c1001ee530e8c13bbf
+  target: github:xiang9916/dsh-claude-skin#36583015020535efef22f4cc015c00d7ac60fa98
+  version: 0.2.2-rc.4
+  commit: 36583015020535efef22f4cc015c00d7ac60fa98
   desktop:
     mode: manual-only
     reason: npm-version-not-stable
   npm:
     name: dsh-claude-skin
-    version: 0.2.2-rc.1
-    integrity: sha512-fepXjNM/M2GkJG2XENRpUvRmypzV5jB8k5kdk7Ukh8Tjxpqt695hw4NyQ+FtxYOR21IiUygezh3WQPeAKS9DHA==
+    version: 0.2.2-rc.4
+    integrity: sha512-pxDpMH7xLhOlI/12aw++QRZWgv9I9gTtwG0fKrGr+nPfYp2ZZ172/oPz+sy5Jyd869mareicTpRSc0i+lRJL/Q==
     repository: https://github.com/xiang9916/dsh-claude-skin
-    gitHead: bf03c1c796280623cff566c1001ee530e8c13bbf
+    gitHead: 36583015020535efef22f4cc015c00d7ac60fa98
 compatibility:
   dsh: 0.2.1-rc.2
   platform:
@@ -52,20 +52,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: bf03c1c796280623cff566c1001ee530e8c13bbf
-    packageVersion: 0.2.2-rc.1
+    commit: 36583015020535efef22f4cc015c00d7ac60fa98
+    packageVersion: 0.2.2-rc.4
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.2 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:46:19.918Z
+    checkedAt: 2026-11-18T20:26:08.598Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1481
-releaseUpdatedAt: 2026-11-15T20:46:20.455Z
-metadataUpdatedAt: 2026-11-15T20:46:20.455Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-18T20:26:09.459Z
+metadataUpdatedAt: 2026-11-18T20:26:09.459Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-15T20:46:20.455Z
+updatedAt: 2026-11-18T20:26:09.459Z

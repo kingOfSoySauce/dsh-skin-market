@@ -3,7 +3,7 @@ name:
   zh: dsh-SAO
   en: dsh-SAO
 author: GXinnnnnn
-description: "刀剑神域主题：原生 Link Start、桐人／亚丝娜语音与 NerveGear 音效，支持宽屏、竖屏和窗口缩放，可选全部功能或仅启动动画；明暗主题色独立记忆、系统默认字体与本机字体选择；液态／磨砂玻璃，会话液态表面默认透明度 50%，输入框两种材质及透明度独立设置并分别记忆，默认均 20%；圆角提问选项、自定义回答、设置与右栏文件／变更／任务等 GUI 适配；九张壁纸、本地图片或循环视频及静态省电；模型思考强度滑条与单项重置。"
+description: 刀剑神域主题：原生 Link Start、桐人／亚丝娜语音与 NerveGear 音效，支持宽屏、竖屏和窗口缩放，可选全部功能或仅启动动画；明暗主题色独立记忆、系统默认字体与本机字体选择；液态／磨砂玻璃，会话液态表面默认透明度 50%，输入框两种材质及透明度独立设置并分别记忆，默认均 20%；圆角提问选项、自定义回答、设置与右栏文件／变更／任务等 GUI 适配；九张壁纸、本地图片或循环视频及静态省电；模型思考强度滑条与单项重置。
 repo: https://github.com/GXinnnnnn/dsh-SAO
 package: "@local/dsh-sao-link-start"
 rowId: sao-link-start
@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:GXinnnnnn/dsh-SAO#b7787e191d20e5725d8eeea441820c66cf89d0e1
+  target: github:GXinnnnnn/dsh-SAO#035eab44e8a19ce35f061ae4e7699b8aac4c624f
   version: 1.0.6
-  commit: b7787e191d20e5725d8eeea441820c66cf89d0e1
+  commit: 035eab44e8a19ce35f061ae4e7699b8aac4c624f
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -46,19 +46,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: b7787e191d20e5725d8eeea441820c66cf89d0e1
+    commit: 035eab44e8a19ce35f061ae4e7699b8aac4c624f
     packageVersion: 1.0.6
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:23:10.343Z
+    checkedAt: 2026-11-18T20:22:52.383Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
-starsSnapshot: 5
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-14T00:23:12.802Z
-metadataUpdatedAt: 2026-11-14T00:23:12.802Z
+starsSnapshot: 5
+releaseUpdatedAt: 2026-11-18T20:22:56.995Z
+metadataUpdatedAt: 2026-11-18T20:22:56.995Z
 starsUpdatedAt: 2026-11-13T00:28:13.548Z
-updatedAt: 2026-11-14T00:23:12.802Z
+updatedAt: 2026-11-18T20:22:56.995Z

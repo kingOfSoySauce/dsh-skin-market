@@ -18,13 +18,13 @@ modes:
   - light
   - dark
 install:
-  target: github:NoNameLeGo/dsh-catppuccin#b9b6c5e29c6c98add817618d68df68efa00b796d
-  version: 0.7.5
-  commit: b9b6c5e29c6c98add817618d68df68efa00b796d
+  target: github:NoNameLeGo/dsh-catppuccin#902710d1bcb11009e8e204dcc918c7721a4b9e2a
+  version: 0.7.6-beta.0
+  commit: 902710d1bcb11009e8e204dcc918c7721a4b9e2a
   desktop:
     mode: manual-only
-    reason: npm-repository-mismatch
-  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/b9b6c5e29c6c98add817618d68df68efa00b796d"
+    reason: npm-version-not-stable
+  allowBuild: "@nonamelego/dsh-catppuccin@https://codeload.github.com/NoNameLeGo/dsh-catppuccin/tar.gz/902710d1bcb11009e8e204dcc918c7721a4b9e2a"
 compatibility:
   dsh: ^0.1.0-rc.6
   platform:
@@ -52,15 +52,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 >=0.1.7-rc.1 完全覆盖（固定版本 b9b6c5e29c6c98add817618d68df68efa00b796d）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.0-rc.6 未被本次检测范围 >=0.1.7-rc.1 完全覆盖（固定版本 902710d1bcb11009e8e204dcc918c7721a4b9e2a）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: b9b6c5e29c6c98add817618d68df68efa00b796d
-    packageVersion: 0.7.5
+    commit: 902710d1bcb11009e8e204dcc918c7721a4b9e2a
+    packageVersion: 0.7.6-beta.0
     scannerVersion: static-v2
     dshVersion: ">=0.1.7-rc.1"
     mode: static
     result: unknown
-    checkedAt: 2026-11-17T20:49:37.883Z
+    checkedAt: 2026-11-18T20:22:16.324Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -69,7 +69,7 @@ license:
   commercialUse: true
 featuredRank: 5
 starsSnapshot: 88
-releaseUpdatedAt: 2026-11-17T20:49:40.873Z
-metadataUpdatedAt: 2026-11-17T20:49:40.873Z
+releaseUpdatedAt: 2026-11-18T20:22:19.220Z
+metadataUpdatedAt: 2026-11-18T20:22:19.220Z
 starsUpdatedAt: 2026-11-15T20:41:05.255Z
-updatedAt: 2026-11-17T20:49:40.873Z
+updatedAt: 2026-11-18T20:22:19.220Z

@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:mantonlove/dsh-prism-plugin#86783f2c7f4315e2a94fcfd2c1f253520befc71d
+  target: github:mantonlove/dsh-prism-plugin#2a09706fa1ca772ddca415fc3ac2ced9b8dee4b0
   version: 2.0.10
-  commit: 86783f2c7f4315e2a94fcfd2c1f253520befc71d
+  commit: 2a09706fa1ca772ddca415fc3ac2ced9b8dee4b0
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -45,20 +45,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 86783f2c7f4315e2a94fcfd2c1f253520befc71d
+    commit: 2a09706fa1ca772ddca415fc3ac2ced9b8dee4b0
     packageVersion: 2.0.10
     scannerVersion: static-v2
     dshVersion: ^0.2.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-11-17T20:50:56.161Z
+    checkedAt: 2026-11-18T20:23:09.651Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1048
 starsSnapshot: 3
-releaseUpdatedAt: 2026-11-17T20:50:58.882Z
-metadataUpdatedAt: 2026-11-17T20:50:58.882Z
+releaseUpdatedAt: 2026-11-18T20:23:11.244Z
+metadataUpdatedAt: 2026-11-18T20:23:11.244Z
 starsUpdatedAt: 2026-10-30T03:53:41.067Z
-updatedAt: 2026-11-17T20:50:58.882Z
+updatedAt: 2026-11-18T20:23:11.244Z

@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:aklnaaw/dsh-claude-theme#d348e22ca01946d649792b70b11f328972123801&path:/brand-plugin
+  target: github:aklnaaw/dsh-claude-theme#2444965ba3fb63263082ab3931724d8d10ae78d2&path:/brand-plugin
   version: 1.0.0
-  commit: d348e22ca01946d649792b70b11f328972123801
+  commit: 2444965ba3fb63263082ab3931724d8d10ae78d2
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -47,19 +47,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: d348e22ca01946d649792b70b11f328972123801
+    commit: 2444965ba3fb63263082ab3931724d8d10ae78d2
     packageVersion: 1.0.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:22:52.418Z
+    checkedAt: 2026-11-18T20:22:25.726Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 33
 featuredRank: 1157
-releaseUpdatedAt: 2026-11-14T00:22:53.097Z
-metadataUpdatedAt: 2026-11-14T00:22:53.097Z
+starsSnapshot: 33
+releaseUpdatedAt: 2026-11-18T20:22:27.053Z
+metadataUpdatedAt: 2026-11-18T20:22:27.053Z
 starsUpdatedAt: 2026-11-17T20:49:25.378Z
-updatedAt: 2026-11-17T20:49:25.378Z
+updatedAt: 2026-11-18T20:22:27.053Z

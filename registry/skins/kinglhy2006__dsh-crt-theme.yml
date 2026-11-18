@@ -5,7 +5,7 @@ name:
 author: kinglhy2006
 description: 磷光绿配色的 CRT 终端皮肤：近黑底、扫描线与等宽字体只覆盖设计令牌，不改组件结构；侧栏页脚带仪表盘，显示输出速度、内存、CPU、会话与累计 token、今日花费和可选的 DeepSeek 余额。
 repo: https://github.com/kinglhy2006/dsh-crt-theme
-package: dsh-crt-theme
+package: "@local/dsh-crt-theme"
 rowId: crt-theme
 category: skin
 tags:
@@ -16,25 +16,18 @@ tags:
 modes:
   - dark
 install:
-  target: github:kinglhy2006/dsh-crt-theme#21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e
-  version: 1.0.0
-  commit: 21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e
+  target: github:kinglhy2006/dsh-crt-theme#7be0b279fcb5fdd019579825a576ed389e9c62dc
+  version: 0.1.0
+  commit: 7be0b279fcb5fdd019579825a576ed389e9c62dc
   desktop:
-    mode: managed
-    registry: npm
-    packageName: dsh-crt-theme
-    packageVersion: 1.0.0
-    integrity: sha512-VbAtTDuY9u2Ozhb8qv5/86aduytY+S0I4EXu8VEkcFimVEVm0Cnr/93UW1/R6LGucFZgbtPh0qc8cq9nHKIzWg==
-  npm:
-    name: dsh-crt-theme
-    version: 1.0.0
-    integrity: sha512-VbAtTDuY9u2Ozhb8qv5/86aduytY+S0I4EXu8VEkcFimVEVm0Cnr/93UW1/R6LGucFZgbtPh0qc8cq9nHKIzWg==
-    repository: https://github.com/kinglhy2006/dsh-crt-theme
-    gitHead: 21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/kinglhy2006__dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/home.gif
 screenshots:
   - https://raw.githubusercontent.com/kinglhy2006/dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/docs/preview.png
   - https://raw.githubusercontent.com/kinglhy2006/dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/docs/dashboard.png
@@ -46,29 +39,29 @@ review:
 health:
   status: improvements
   checks:
-    readmeScreenshots: pass
+    readmeScreenshots: improve
     compatibility: improve
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e
-    packageVersion: 1.0.0
+    commit: 7be0b279fcb5fdd019579825a576ed389e9c62dc
+    packageVersion: 0.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:47:52.849Z
+    checkedAt: 2026-11-18T20:24:08.088Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/kinglhy2006__dsh-crt-theme/21e8b5e999e59f640741dcc7d4d9c2bf3ca45e3e/home.gif
 featuredRank: 1235
-releaseUpdatedAt: 2026-11-14T23:47:53.022Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-18T20:24:08.401Z
+metadataUpdatedAt: 2026-11-18T20:24:08.401Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-18T20:24:08.401Z

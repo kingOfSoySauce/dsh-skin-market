@@ -18,12 +18,15 @@ modes:
   - light
   - dark
 install:
-  target: github:Yuanawaqwq/dsh-columbina-pet#97d2f47697f5e9021c04be1017137d0580747a84
-  version: 1.2.4
-  commit: 97d2f47697f5e9021c04be1017137d0580747a84
+  target: github:Yuanawaqwq/dsh-columbina-pet#be4ab379405becff4a6735e86f94d7ec878f39dd
+  version: 1.2.6
+  commit: be4ab379405becff4a6735e86f94d7ec878f39dd
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-columbina-pet
+    packageVersion: 1.2.6
+    integrity: sha512-l8+kHaD0/sGVQETCvcb9pJh3qrgO1xOTajOXj9Lzrflk5Y016vYLglKWGAK8TT0SKULa6mYrZA388TO/4tQeOQ==
 compatibility:
   dsh: 0.2.2-rc.1 || 0.2.1-rc.2
   platform:
@@ -48,22 +51,22 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
-    - DSH 兼容范围待核对：保留的市场范围 0.2.2-rc.1 || 0.2.1-rc.2 未被本次检测范围 ^1.2.2 完全覆盖（固定版本 97d2f47697f5e9021c04be1017137d0580747a84）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.2-rc.1 || 0.2.1-rc.2 未被本次检测范围 ^1.2.2 完全覆盖（固定版本 be4ab379405becff4a6735e86f94d7ec878f39dd）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 97d2f47697f5e9021c04be1017137d0580747a84
-    packageVersion: 1.2.4
+    commit: be4ab379405becff4a6735e86f94d7ec878f39dd
+    packageVersion: 1.2.6
     scannerVersion: static-v2
     dshVersion: ^1.2.2
     mode: static
     result: pass
-    checkedAt: 2026-11-16T12:21:07.049Z
+    checkedAt: 2026-11-18T20:23:15.753Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 1495
-releaseUpdatedAt: 2026-11-16T12:21:07.892Z
-metadataUpdatedAt: 2026-11-16T12:21:07.892Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-18T20:23:17.612Z
+metadataUpdatedAt: 2026-11-18T20:23:17.612Z
 starsUpdatedAt: 2026-11-17T20:49:25.378Z
-updatedAt: 2026-11-17T20:49:25.378Z
+updatedAt: 2026-11-18T20:23:17.612Z

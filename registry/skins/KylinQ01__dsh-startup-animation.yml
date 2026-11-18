@@ -57,7 +57,7 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 9
+starsSnapshot: 10
 marketScreenshots:
   - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/home.png
   - skin-screenshots/KylinQ01__dsh-startup-animation/8edc4c7957549d8a210e27575413750238d715ab/conversation.png
@@ -65,5 +65,5 @@ marketScreenshots:
 featuredRank: 1000
 releaseUpdatedAt: 2026-11-10T00:42:47.982Z
 metadataUpdatedAt: 2026-11-15T20:40:53.617Z
-starsUpdatedAt: 2026-11-13T00:28:13.548Z
-updatedAt: 2026-11-15T20:40:53.617Z
+starsUpdatedAt: 2026-11-18T20:22:04.502Z
+updatedAt: 2026-11-18T20:22:04.502Z

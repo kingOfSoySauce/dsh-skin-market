@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ash-qw/dsh-theme-prts#b9363b129368933c0b3810e77b5f7d9011e0059a
-  version: 4.1.1
-  commit: b9363b129368933c0b3810e77b5f7d9011e0059a
+  target: github:ash-qw/dsh-theme-prts#8ca2a7f5bc6727dc62357d3af9aac453f0cfdaa9
+  version: 4.2.0
+  commit: 8ca2a7f5bc6727dc62357d3af9aac453f0cfdaa9
   desktop:
     mode: managed
     registry: npm
     packageName: "@ash-qw/dsh-theme-prts"
-    packageVersion: 4.1.1
-    integrity: sha512-hi7YSpU+yEYKzz4SLe96gWz4StmEPJi5qiwdae5MoimptyJ5ZBJIEUEOAsDETY/gNNLnHWnw7jLW+fpJ+o/w9Q==
+    packageVersion: 4.2.0
+    integrity: sha512-T5kRHaKXlBTYbxC/54/Yda/eZVkGqy9xyAXe98Bll8GzX+Ymec8N0SHc8SbFT7HHdK+4bGTtQsIH0kGPOI2xXw==
   npm:
     name: "@ash-qw/dsh-theme-prts"
-    version: 4.1.1
-    integrity: sha512-hi7YSpU+yEYKzz4SLe96gWz4StmEPJi5qiwdae5MoimptyJ5ZBJIEUEOAsDETY/gNNLnHWnw7jLW+fpJ+o/w9Q==
+    version: 4.2.0
+    integrity: sha512-T5kRHaKXlBTYbxC/54/Yda/eZVkGqy9xyAXe98Bll8GzX+Ymec8N0SHc8SbFT7HHdK+4bGTtQsIH0kGPOI2xXw==
     repository: https://github.com/ash-qw/dsh-theme-prts
-    gitHead: b9363b129368933c0b3810e77b5f7d9011e0059a
+    gitHead: 8ca2a7f5bc6727dc62357d3af9aac453f0cfdaa9
 compatibility:
   dsh: 0.2.2-rc.2 || 0.2.2-rc.3
   platform:
@@ -54,20 +54,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
-    commit: b9363b129368933c0b3810e77b5f7d9011e0059a
-    packageVersion: 4.1.1
+    commit: 8ca2a7f5bc6727dc62357d3af9aac453f0cfdaa9
+    packageVersion: 4.2.0
     scannerVersion: static-v2
     dshVersion: 0.2.2-rc.2 || 0.2.2-rc.3
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:41:18.080Z
+    checkedAt: 2026-11-18T20:22:32.161Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
-starsSnapshot: 16
 featuredRank: 1090
-releaseUpdatedAt: 2026-11-15T20:41:22.997Z
-metadataUpdatedAt: 2026-11-15T20:41:22.997Z
+starsSnapshot: 16
+releaseUpdatedAt: 2026-11-18T20:22:34.113Z
+metadataUpdatedAt: 2026-11-18T20:22:34.113Z
 starsUpdatedAt: 2026-11-08T00:17:43.373Z
-updatedAt: 2026-11-15T20:41:22.997Z
+updatedAt: 2026-11-18T20:22:34.113Z

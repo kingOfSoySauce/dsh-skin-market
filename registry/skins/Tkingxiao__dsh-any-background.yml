@@ -17,15 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Tkingxiao/dsh-any-background#8a50d6576ab4727ea4654a6fb65821465e5ec60a
-  version: 0.4.5
-  commit: 8a50d6576ab4727ea4654a6fb65821465e5ec60a
+  target: github:Tkingxiao/dsh-any-background#52ec5dc8b2b7cbe46239e89aadc444a955a2e6e9
+  version: 0.5.0
+  commit: 52ec5dc8b2b7cbe46239e89aadc444a955a2e6e9
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-any-background
+    packageVersion: 0.5.0
+    integrity: sha512-XW66hILsSVVW1m1S6xILzZMQu3aQJvew6QVerXU3vy5knjf60uGWCnnE8DOa05IX6i8NuFxi5/JBtA/g/xdWIg==
   npm:
     name: dsh-any-background
-    version: 0.4.5
-    integrity: sha512-plngRaoeeWsSiypW5HYUkrlVL0oWi0hOfPa64GxUrNXDc+9+yfpi8H4OL9p4u667yLAegT2tanhCjCLaOHSz+A==
+    version: 0.5.0
+    integrity: sha512-XW66hILsSVVW1m1S6xILzZMQu3aQJvew6QVerXU3vy5knjf60uGWCnnE8DOa05IX6i8NuFxi5/JBtA/g/xdWIg==
     repository: https://github.com/Tkingxiao/dsh-any-background
-    gitHead: 8a50d6576ab4727ea4654a6fb65821465e5ec60a
+    gitHead: 52ec5dc8b2b7cbe46239e89aadc444a955a2e6e9
 compatibility:
   dsh: 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.0-rc.1
   platform:
@@ -40,33 +46,34 @@ screenshots:
   - https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image-10.png
 listScreenshot: https://raw.githubusercontent.com/Tkingxiao/dsh-any-background/8a50d6576ab4727ea4654a6fb65821465e5ec60a/example_img/image.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.0-rc.1 未被本次检测范围 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.1-alpha.1 完全覆盖（固定版本 52ec5dc8b2b7cbe46239e89aadc444a955a2e6e9）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 8a50d6576ab4727ea4654a6fb65821465e5ec60a
-    packageVersion: 0.4.5
+    commit: 52ec5dc8b2b7cbe46239e89aadc444a955a2e6e9
+    packageVersion: 0.5.0
     scannerVersion: static-v2
-    dshVersion: 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.0-rc.1
+    dshVersion: 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.1-alpha.1
     mode: static
     result: pass
-    checkedAt: 2026-11-16T09:15:11.005Z
+    checkedAt: 2026-11-18T20:22:19.311Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 59
 featuredRank: 1538
-releaseUpdatedAt: 2026-11-16T09:48:54.442Z
-metadataUpdatedAt: 2026-11-16T09:48:54.442Z
+starsSnapshot: 59
+releaseUpdatedAt: 2026-11-18T20:22:22.935Z
+metadataUpdatedAt: 2026-11-18T20:22:22.935Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-16T09:48:54.442Z
+updatedAt: 2026-11-18T20:22:22.935Z
