@@ -308,7 +308,7 @@ Field notes:
 - `category`: One of `skin`, `pet`, `player`, or `splash`.
 - `tags`: Non-empty array of strings.
 - `modes`: Non-empty subset of `light` and `dark`.
-- `screenshots`: Array order is the display order.
+- `screenshots`: Array order is the display order; previews do not need to match the pinned install commit and may be refreshed independently (a commit pin is only an evidence snapshot).
 - `listScreenshot`: Cover; must reference an existing URL in this entry's `screenshots` or `marketScreenshots`.
 - `marketScreenshots`: Reorder existing screenshots only; the set must not change.
 - `compatibility.dsh`: A valid semver range; never revert to `unverified`. Attach evidence in the PR body: README, `package.json` `engines.dsh`, or a compatibility doc link at a pinned commit.
@@ -323,7 +323,7 @@ To update display copy, the same PR may edit the author's own entry in `data/cat
 
 Do not change id, repo, subpath, package, rowId, install, license, review, health, featuredRank, star counts, or any timestamp. Do not edit `data/catalog.json`, do not touch another author's entry, and do not invent a commit, rowId, or compatibility evidence. CI checks the PR's own diff: exactly one `registry/skins/*.yml`, optionally one own `data/catalog-copy.json`. This PR does not refresh the pinned version; when a refresh is needed, name the upstream commit in the PR body and maintainers handle it in the release follow-up process. Acceptance is not a security certification.
 
-Local acceptance steps are in [TESTING.md](./TESTING.md).
+Local acceptance steps are in [TESTING.md](./docs/TESTING.md).
 
 ## License
 

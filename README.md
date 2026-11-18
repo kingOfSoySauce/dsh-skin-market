@@ -308,7 +308,7 @@ url: https://github.com/<owner>/<repo>
 - `category`：只能是 `skin`、`pet`、`player` 或 `splash`。
 - `tags`：非空字符串数组。
 - `modes`：`light`、`dark` 的非空子集。
-- `screenshots`：数组顺序即前台展示顺序。
+- `screenshots`：数组顺序即前台展示顺序；截图不需要和安装的固定 commit 对齐，可以随时刷新（pin 只作证据快照）。
 - `listScreenshot`：封面，必须引用该条目 `screenshots` 或 `marketScreenshots` 里已有的地址。
 - `marketScreenshots`：只允许重排已有展示图，集合不能变。
 - `compatibility.dsh`：合法 semver 区间，不能改回 `unverified`；PR 正文附固定 commit 的 README、`package.json` `engines.dsh` 或兼容性文档链接作为证据。
@@ -323,7 +323,7 @@ url: https://github.com/<owner>/<repo>
 
 不要改 id、repo、subpath、package、rowId、install、license、review、health、featuredRank、star 数量和任何时间戳，不要改 `data/catalog.json`，不要改别人的条目，也不要编造 commit、rowId 或兼容性证据。CI 按 PR 自己的 diff 校验：只能有一个 `registry/skins/*.yml`，可选一个自己条目的 `data/catalog-copy.json`。固定版本刷新不由这次 PR 改写；需要时在 PR 正文写明上游 commit，维护者会在发行跟进流程中处理。收录不等于安全认证。
 
-本地验收步骤见 [TESTING.md](./TESTING.md)。
+本地验收步骤见 [TESTING.md](./docs/TESTING.md)。
 
 ## License
 

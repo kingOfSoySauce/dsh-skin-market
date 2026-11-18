@@ -173,8 +173,8 @@
         "en": "Non-empty subset of `light` and `dark`."
       },
       "screenshots": {
-        "zh": "数组顺序即前台展示顺序。",
-        "en": "Array order is the display order."
+        "zh": "数组顺序即前台展示顺序；截图不需要和安装的固定 commit 对齐，可以随时刷新（pin 只作证据快照）。",
+        "en": "Array order is the display order; previews do not need to match the pinned install commit and may be refreshed independently (a commit pin is only an evidence snapshot)."
       },
       "listScreenshot": {
         "zh": "封面，必须引用该条目 `screenshots` 或 `marketScreenshots` 里已有的地址。",

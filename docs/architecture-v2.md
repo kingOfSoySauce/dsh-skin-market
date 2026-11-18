@@ -112,6 +112,7 @@
 - **P1**：ops 开始写 `data/install-policies.json`；客户端灰度打开 flag；更新校验从“等于目录版本”切到“等于解析版本”。
 - **P2**：来源审核/发行账本拆分；决策 hash 换 sourceHash；已收录条目的更新执行器。
 - **P3**：rowId 运行时解析；停写 pin；资产按内容寻址；schemaVersion 2。
+  - **P3 第一批（2026-11-18）**：截图去 pin。thin submission hydration 的 README 派生截图改用默认分支 `HEAD` URL（install 事实仍从固定 pin 读取）；media 构建对非不可变来源（`HEAD`/branch/tag/未知 host）做 ETag + 内容哈希复检，URL-key 的 WebP 按内容变化重建，pin URL 与本地市场资产保留零网络快路径；contract/README 明确截图不需要与 install commit 对齐。仍保留到下一批：本地截图资产的 40hex 目录、ops capture 的 pin 证据快照、install pin、schemaVersion 2。
 
 ## 7. 风险
 
