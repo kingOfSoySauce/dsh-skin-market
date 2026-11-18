@@ -279,7 +279,7 @@ url: https://github.com/<owner>/<repo>
    - listScreenshot 是封面，必须引用该条目 screenshots 或 marketScreenshots 里已经有的图片地址。
    - marketScreenshots 只能重排已有展示图，集合不能变。
    - compatibility.dsh 必须是合法 semver 区间，不能改回 unverified；要改它时，在 PR 正文附上该条目固定 commit 的 README、package.json 的 engines.dsh 或兼容性文档链接作为证据，不要编造兼容范围。
-4. 如果要改前台中英双语展示文案，在同一个 PR 里修改 data/catalog-copy.json 中自己条目的 name、description、descriptionPolicy：descriptionPolicy 只能是 show 或 omit；show 必须提供 zh 和 en 两段 description，omit 不能保留 description。已有 source、override、nameSource 元数据必须原样保留；没有展示文案的条目可以新增这三类键。不要改别的条目，也不要新增 source、override、nameSource。
+4. 如果要改前台中英双语展示文案，在同一个 PR 里修改 data/catalog-copy.json 中自己条目的 name、description、descriptionPolicy：descriptionPolicy 只能是 show 或 omit；show 必须提供 zh 和 en 两段 description，omit 不能保留 description。已有 source、override、nameSource 元数据必须原样保留；没有展示文案的条目可以新增这三类键。如果条目已经有展示文案，只改 YAML 的 description 不会改变市场卡片，必须同时更新这里的 description。不要改别的条目，也不要新增 source、override、nameSource。
 5. 不要改 id、repo、subpath、package、rowId、install、license、review、health、featuredRank、star 计数或任何时间字段；固定版本刷新不由这次 PR 改写，需要更新固定版本时只在 PR 正文说明，不要编造 install.target 或 rowId。
 6. 在目标目录仓库根目录运行 npm run registry:check。不得安装到我的真实 DSH profile。
 7. git diff --name-only 应只有这一条 YAML；如果改了展示文案，再包含 data/catalog-copy.json。提交并创建 PR，标题 feat(registry): update <皮肤名>。
@@ -319,9 +319,9 @@ url: https://github.com/<owner>/<repo>
 
 已收录条目合并社区 PR 即审核：作者可以在同一个 PR 里更新自己条目的展示字段、兼容范围和前台中英双语展示文案，可改字段见上表「已收录条目更新」一行和下面的字段说明。具体限制：`screenshots` 数组顺序就是前台展示顺序；`listScreenshot` 封面必须引用该条目 `screenshots` 或 `marketScreenshots` 里已有的图片地址；`marketScreenshots` 只允许重排、集合不能变；`compatibility.dsh` 必须是合法 semver 区间、不能改回 `unverified`，PR 正文要附固定 commit 的 README、`package.json` 的 `engines.dsh` 或兼容性文档链接作为证据。
 
-如果要改前台展示文案，同一个 PR 里可以改自己条目的 `data/catalog-copy.json`：只写 `name`、`description`、`descriptionPolicy`（`show` 或 `omit`）三类键；`show` 必须同时有中英文描述，`omit` 不能保留描述；已有 `source`、`override`、`nameSource` 必须保持原样；没有展示文案的条目可以新增这三类键。
+如果要改前台展示文案，同一个 PR 里可以改自己条目的 `data/catalog-copy.json`：只写 `name`、`description`、`descriptionPolicy`（`show` 或 `omit`）三类键；`show` 必须同时有中英文描述，`omit` 不能保留描述；已有 `source`、`override`、`nameSource` 必须保持原样；没有展示文案的条目可以新增这三类键。如果条目已经有展示文案，市场卡片显示的是 `data/catalog-copy.json` 里的那一份；只改 YAML 的 `description` 只会在没有展示文案时作为兜底，前台不会变化。
 
-不要改 id、repo、subpath、package、rowId、install、license、review、health、featuredRank、star 数量和任何时间戳，不要改 `data/catalog.json`，不要改别人的条目，也不要编造 commit、rowId 或兼容性证据。CI 按 PR 自己的 diff 校验：只能有一个 `registry/skins/*.yml`，可选一个自己条目的 `data/catalog-copy.json`。固定版本刷新不由这次 PR 改写。收录不等于安全认证。
+不要改 id、repo、subpath、package、rowId、install、license、review、health、featuredRank、star 数量和任何时间戳，不要改 `data/catalog.json`，不要改别人的条目，也不要编造 commit、rowId 或兼容性证据。CI 按 PR 自己的 diff 校验：只能有一个 `registry/skins/*.yml`，可选一个自己条目的 `data/catalog-copy.json`。固定版本刷新不由这次 PR 改写；需要时在 PR 正文写明上游 commit，维护者会在发行跟进流程中处理。收录不等于安全认证。
 
 本地验收步骤见 [TESTING.md](./TESTING.md)。
 
