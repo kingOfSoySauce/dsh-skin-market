@@ -6,10 +6,10 @@
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
     "noEmit": true,
+    "types": ["vitest/globals"],
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["site"]
+  "include": ["../src/client", "../tests/client"]
 }

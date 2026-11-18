@@ -15,7 +15,7 @@ npm run check
 
 CI 在 `.github/workflows/test.yml` 对 PR 与 `main` 运行 `npm run typecheck` 和 `npm test`；发布前的完整检查仍以本机 `npm run check` 为准。
 
-目录格式变更另跑 `npm run compat:check`：它固定 v1 皮肤 schema、模拟旧客户端的读取方式，并验证 `installPolicies` 只出现在目录顶层。发布前再按 `docs/architecture-v2.md` 用 0.1.69 / 0.1.70 的旧包对 `data/catalog.json` 实跑 `validateCatalog`；更早的 0.1.49 及以前在本变更前就已无法接收当前目录，不作为回归基线。
+目录格式变更另跑 `npm run compat:check`：它固定 v1 皮肤 schema、模拟旧客户端的读取方式，并验证 `installPolicies` 只出现在目录顶层。发布前再按 `architecture-v2.md` 用 0.1.69 / 0.1.70 的旧包对 `data/catalog.json` 实跑 `validateCatalog`；更早的 0.1.49 及以前在本变更前就已无法接收当前目录，不作为回归基线。
 
 这些检查不会安装到真实 DSH profile。生命周期超时、丢失管理结果、目录替换中取消、恢复命令返回成功但入口仍缺失、SRI 不匹配等故障，用临时目录和模拟宿主测试；不要在正常使用的 profile 中删除锁文件、包文件或制造故障。
 

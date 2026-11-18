@@ -51,7 +51,7 @@ await writeFile(catalogPath, `${JSON.stringify(catalog)}\n`)
 ## 变更二：client 构建产物不再入库
 
 - `client/` 下只有构建产物：`client.js`（591,486 B）和 `client.js.map`（786,813 B）；源码在 `src/client/`，
-  由 `npm run build:client`（tsdown，`tsdown.config.ts` 的 `outDir: 'client'`）生成。
+  由 `npm run build:client`（tsdown，`config/tsdown.config.ts` 的 `outDir: 'client'`）生成。
 - 操作：`git rm -r --cached client`（保留工作区文件），`.gitignore` 增加 `/client/`。
 - 效果：`git status` 中 `client/client.js`、`client/client.js.map` 为 staged deleted；工作区文件仍在且被忽略；
   `npm run build:client` 可随时重建（本次验证重建成功）。

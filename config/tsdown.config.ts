@@ -1,16 +1,19 @@
 import { readFile } from 'node:fs/promises'
 import { basename, dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { transform } from 'lightningcss'
 import { defineConfig } from 'tsdown'
 
 const id = 'dsh-skin-market'
+// tsdown resolves entry/outDir relative to this config file, so pin them to the repo root.
+const root = fileURLToPath(new URL('..', import.meta.url))
 const externals = ['react', 'react/jsx-runtime', 'react-dom', '@deepseek-ai/dsh-client-ui-primitives']
 const cssPrefix = '\0dsh-skin-market-css:'
 const cssSuffix = '.mjs'
 
 export default defineConfig({
-  entry: { client: 'src/client/index.ts' },
-  outDir: 'client',
+  entry: { client: resolve(root, 'src/client/index.ts') },
+  outDir: resolve(root, 'client'),
   format: 'cjs',
   platform: 'browser',
   target: 'es2022',
