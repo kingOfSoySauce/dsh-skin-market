@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url'
 import { parse } from 'yaml'
 import { displayScreenshots } from './registry-screenshots.mjs'
 import { mediaDescriptor, mediaKey, MEDIA_VERSION, isRasterImageUrl, retainMediaManifestEntries, canonicalScreenshotUrl } from './media.mjs'
-import { resolveMediaSource } from './media-source.mjs'
+import { ANIMATED_WEBP_SKIP_REASON, resolveMediaSource } from './media-source.mjs'
 import { localScreenshotPath } from './screenshot-refs.mjs'
 
 const execFile = promisify(execFileCallback)
@@ -72,6 +72,13 @@ async function convert(source, manifest) {
     manifest[sourceUrl] = resolved.manifestValue
     return { status: 'cached' }
   }
+  if (resolved.status === 'skipped') {
+    // An animated WebP cannot be decoded by cwebp. Drop the manifest entry so
+    // the client falls back to the original image and the next build
+    // re-evaluates the source instead of trusting a stale cache entry.
+    delete manifest[sourceUrl]
+    return { status: 'skipped', reason: resolved.reason }
+  }
 
   const tempDir = await mkdtemp(join(tmpdir(), 'dsh-skin-media-'))
   const inputPath = join(tempDir, basename(new URL(sourceUrl).pathname) || `${key}.source`)
@@ -102,7 +109,9 @@ manifest = retainMediaManifestEntries(manifest, urls)
 let cursor = 0
 let converted = 0
 let cached = 0
+let skipped = 0
 let failed = 0
+const skippedSources = []
 const failedSources = []
 await Promise.all(Array.from({ length: Math.min(concurrency, urls.length) }, async () => {
   while (cursor < urls.length) {
@@ -111,6 +120,10 @@ await Promise.all(Array.from({ length: Math.min(concurrency, urls.length) }, asy
       const result = await convert(source, manifest)
       if (result.status === 'converted') converted += 1
       if (result.status === 'cached') cached += 1
+      if (result.status === 'skipped' && result.reason === ANIMATED_WEBP_SKIP_REASON) {
+        skipped += 1
+        skippedSources.push(source)
+      }
     } catch (error) {
       failed += 1
       delete manifest[source]
@@ -120,7 +133,11 @@ await Promise.all(Array.from({ length: Math.min(concurrency, urls.length) }, asy
   }
 }))
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`)
-console.log(`media: ${converted} converted, ${cached} cached, ${failed} failed, ${urls.length} raster sources`)
+console.log(`media: ${converted} converted, ${cached} cached, ${skipped} skipped (animated WebP), ${failed} failed, ${urls.length} raster sources`)
+if (skippedSources.length > 0) {
+  console.log(`media: ${skippedSources.length} animated WebP source(s) skipped; frontends use the original image`)
+  for (const source of skippedSources.sort()) console.log(`media: skipped animated WebP ${source}`)
+}
 if (failedSources.length > 0) {
   console.warn(`media: ${failedSources.length} source(s) unavailable; frontends will use original-image fallback`)
   for (const source of failedSources.sort()) console.warn(`media: unavailable ${source}`)
