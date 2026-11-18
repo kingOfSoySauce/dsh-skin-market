@@ -26,9 +26,8 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/Lbunc/dsh-composer-glass/6da00fe16671e5f148ca87eb38e051c6406f6720/images/01-start.webp
-  - https://raw.githubusercontent.com/Lbunc/dsh-composer-glass/6da00fe16671e5f148ca87eb38e051c6406f6720/images/02-in-conversation.webp
-listScreenshot: https://raw.githubusercontent.com/Lbunc/dsh-composer-glass/6da00fe16671e5f148ca87eb38e051c6406f6720/images/01-start.webp
+  - https://raw.githubusercontent.com/Lbunc/dsh-composer-glass/fe2f1a87bc3afd6f670391925355d98153cb87b4/images/wallpaper-default.png
+listScreenshot: https://raw.githubusercontent.com/Lbunc/dsh-composer-glass/fe2f1a87bc3afd6f670391925355d98153cb87b4/images/wallpaper-default.png
 review:
   compatibility: verified
   preview: verified

@@ -29,11 +29,10 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-demo.webp
   - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-login.jpg
   - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-granted.jpg
   - https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/landscape.jpg
-listScreenshot: https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-demo.webp
+listScreenshot: https://raw.githubusercontent.com/chenbocheng2568-dot/dsh-threebody-boot/c44983971e5e35111d5390f90989217906803dce/docs/splash-login.jpg
 review:
   compatibility: verified
   preview: verified

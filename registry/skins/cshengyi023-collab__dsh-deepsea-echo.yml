@@ -29,7 +29,8 @@ compatibility:
     - web
 screenshots:
   - https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/storyboard.png
-  - https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/startup-animation.webp
+  - https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/assets/screenshots/01-terminal.png
+  - https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/assets/screenshots/02-hologram.png
 listScreenshot: skin-screenshots/cshengyi023-collab__dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/launch.gif
 review:
   compatibility: verified

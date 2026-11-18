@@ -25,10 +25,9 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/EternalNight996/dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/assets/screen/sophon-demo.webp
   - https://raw.githubusercontent.com/EternalNight996/dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/assets/screen/sophon-core.webp
   - https://raw.githubusercontent.com/EternalNight996/dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/assets/screen/sophon-target-talk.webp
-listScreenshot: https://raw.githubusercontent.com/EternalNight996/dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/assets/screen/sophon-demo.webp
+listScreenshot: skin-screenshots/EternalNight996__dsh-ui-three-body/d0dd0e2ebc5d2ce08a9bd94093bbea938270abc4/home.png
 review:
   compatibility: verified
   preview: verified

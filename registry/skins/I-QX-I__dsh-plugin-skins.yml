@@ -28,11 +28,9 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/aero-motion.webp
-  - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/glass-input.webp
   - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/themes-settings.png
   - https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/material-settings.png
-listScreenshot: https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/aero-motion.webp
+listScreenshot: https://raw.githubusercontent.com/I-QX-I/dsh-plugin-skins/949cb275510269240f38755867d5666f76fd4924/docs/assets/themes-settings.png
 review:
   compatibility: unverified
   preview: verified

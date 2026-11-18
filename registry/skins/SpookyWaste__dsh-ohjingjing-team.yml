@@ -25,10 +25,9 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/panel-live.webp
   - https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/header-runway_1.png
   - https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/catalog_1.png
-listScreenshot: https://raw.githubusercontent.com/SpookyWaste/dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/ref/panel-live.webp
+listScreenshot: skin-screenshots/SpookyWaste__dsh-ohjingjing-team/fbb7b9e49efd371c754436b830479d01a1e6b6cd/conversation.png
 review:
   compatibility: verified
   preview: verified
