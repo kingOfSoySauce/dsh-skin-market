@@ -1,6 +1,15 @@
 import { afterEach, describe, expect, it } from 'vitest'
 import { inspectMedia } from '../scripts/check-media.mjs'
-import { mediaDescriptor, mediaForSources, mediaKey, removeMediaManifestEntry, retainMediaManifestEntries } from '../scripts/media.mjs'
+import {
+  isContentImmutableScreenshotUrl,
+  mediaDescriptor,
+  mediaForSources,
+  mediaKey,
+  parseMediaManifestValue,
+  removeMediaManifestEntry,
+  retainMediaManifestEntries,
+  serializeMediaManifestValue,
+} from '../scripts/media.mjs'
 import { generatedMediaFor, parseGeneratedMediaManifest, previewSourceCandidates, setGeneratedMediaSources } from '../src/media-preview.ts'
 
 describe('generated skin media', () => {
@@ -67,5 +76,85 @@ describe('generated skin media', () => {
     expect(report.missingManifestSources).toEqual([source])
     expect(report.missingFiles).toHaveLength(2)
     expect(report.ok).toBe(false)
+  })
+})
+
+const COMMIT = '251119cedac66dbd31ca8ce6cb112369b60b359b'
+const CONVERSION_PROFILE = 'preview-640-q78-full-q82'
+const CONTENT_HASH = 'a'.repeat(64)
+
+describe('content-immutable screenshot URLs', () => {
+  it('treats commit-pinned raw blobs and local market assets as immutable', () => {
+    expect(isContentImmutableScreenshotUrl(`https://raw.githubusercontent.com/example/skin/${COMMIT}/docs/preview.png`)).toBe(true)
+    expect(isContentImmutableScreenshotUrl(`https://raw.githubusercontent.com/example/skin/${COMMIT.toUpperCase()}/docs/preview.png`)).toBe(true)
+    expect(isContentImmutableScreenshotUrl(`skin-screenshots/example/${COMMIT}/preview.png`)).toBe(true)
+    expect(isContentImmutableScreenshotUrl(`https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/example/${COMMIT}/preview.png`)).toBe(true)
+  })
+
+  it('treats branches, tags, HEAD and unknown hosts as mutable', () => {
+    const mutable = [
+      'https://raw.githubusercontent.com/example/skin/main/docs/preview.png',
+      'https://raw.githubusercontent.com/example/skin/master/docs/preview.png',
+      'https://raw.githubusercontent.com/example/skin/HEAD/docs/preview.png',
+      'https://raw.githubusercontent.com/example/skin/v1.2.3/docs/preview.png',
+      'https://raw.githubusercontent.com/example/skin/refs/heads/main/docs/preview.png',
+      'https://cdn.jsdelivr.net/gh/example/skin@main/docs/preview.png',
+      'https://example.com/preview.png',
+      'skin-screenshots/example/main/preview.png',
+      '',
+      undefined,
+      null,
+    ]
+    for (const value of mutable) expect(isContentImmutableScreenshotUrl(value)).toBe(false)
+  })
+})
+
+describe('media manifest values', () => {
+  it('parses legacy two-part values without an entity tag', () => {
+    expect(parseMediaManifestValue(`${CONTENT_HASH}:${CONVERSION_PROFILE}`)).toEqual({
+      contentHash: CONTENT_HASH,
+      profile: CONVERSION_PROFILE,
+    })
+  })
+
+  it('parses the three-part value produced by conditional requests', () => {
+    expect(parseMediaManifestValue(`${CONTENT_HASH}:${CONVERSION_PROFILE}:"6d1f-abc"`)).toEqual({
+      contentHash: CONTENT_HASH,
+      profile: CONVERSION_PROFILE,
+      etag: '"6d1f-abc"',
+    })
+    expect(parseMediaManifestValue(`${CONTENT_HASH.toUpperCase()}:${CONVERSION_PROFILE}:W/"weak:etag"`)).toEqual({
+      contentHash: CONTENT_HASH,
+      profile: CONVERSION_PROFILE,
+      etag: 'W/"weak:etag"',
+    })
+  })
+
+  it('rejects values that are not media manifest entries', () => {
+    for (const value of [
+      'digest',
+      CONTENT_HASH,
+      `${CONTENT_HASH}:`,
+      `${CONTENT_HASH}:${CONVERSION_PROFILE}:`,
+      `x:${CONVERSION_PROFILE}`,
+      undefined,
+      null,
+    ]) {
+      expect(parseMediaManifestValue(value)).toBeNull()
+    }
+  })
+
+  it('serializes legacy and ETag forms and round-trips through parse', () => {
+    expect(serializeMediaManifestValue({ contentHash: CONTENT_HASH, profile: CONVERSION_PROFILE }))
+      .toBe(`${CONTENT_HASH}:${CONVERSION_PROFILE}`)
+    expect(serializeMediaManifestValue({ contentHash: CONTENT_HASH.toUpperCase(), profile: CONVERSION_PROFILE }))
+      .toBe(`${CONTENT_HASH}:${CONVERSION_PROFILE}`)
+    expect(serializeMediaManifestValue({ contentHash: CONTENT_HASH, profile: CONVERSION_PROFILE, etag: '"abc"' }))
+      .toBe(`${CONTENT_HASH}:${CONVERSION_PROFILE}:"abc"`)
+    for (const value of [`${CONTENT_HASH}:${CONVERSION_PROFILE}`, `${CONTENT_HASH}:${CONVERSION_PROFILE}:"abc"`]) {
+      expect(serializeMediaManifestValue(parseMediaManifestValue(value))).toBe(value)
+    }
+    expect(() => serializeMediaManifestValue({ contentHash: 'nope', profile: CONVERSION_PROFILE })).toThrow(TypeError)
+    expect(() => serializeMediaManifestValue({ contentHash: CONTENT_HASH, profile: 'bad:profile' })).toThrow(TypeError)
   })
 })

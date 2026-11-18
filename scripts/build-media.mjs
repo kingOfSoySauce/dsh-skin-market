@@ -1,4 +1,3 @@
-import { createHash } from 'node:crypto'
 import { execFile as execFileCallback } from 'node:child_process'
 import { mkdir, readFile, writeFile, mkdtemp, readdir, rm, stat } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
@@ -8,6 +7,7 @@ import { fileURLToPath } from 'node:url'
 import { parse } from 'yaml'
 import { displayScreenshots } from './registry-screenshots.mjs'
 import { mediaDescriptor, mediaKey, MEDIA_VERSION, isRasterImageUrl, retainMediaManifestEntries, canonicalScreenshotUrl } from './media.mjs'
+import { resolveMediaSource } from './media-source.mjs'
 import { localScreenshotPath } from './screenshot-refs.mjs'
 
 const execFile = promisify(execFileCallback)
@@ -16,15 +16,10 @@ const outputRoot = resolve(process.env.SKIN_MEDIA_OUTPUT_DIR ?? join(root, 'site
 const outputDir = join(outputRoot, MEDIA_VERSION)
 const sourceDir = join(root, 'registry/skins')
 const screenshotPublicRoot = join(root, 'site/public')
-const maxBytes = 30 * 1024 * 1024
 const concurrency = 4
 const conversionProfile = 'preview-640-q78-full-q82'
 const requestedLimit = Number.parseInt(process.argv.find(arg => arg.startsWith('--limit='))?.slice('--limit='.length) ?? '', 10)
 const requestedSource = process.argv.find(arg => arg.startsWith('--source='))?.slice('--source='.length)
-
-function sha256(value) {
-  return createHash('sha256').update(value).digest('hex')
-}
 
 async function exists(path) {
   try {
@@ -60,38 +55,30 @@ async function convert(source, manifest) {
   const key = mediaKey(sourceUrl)
   const previewPath = join(outputDir, `${key}.preview.webp`)
   const fullPath = join(outputDir, `${key}.full.webp`)
-  const cachedManifest = manifest[sourceUrl]
-  if (
-    typeof cachedManifest === 'string'
-    && cachedManifest.endsWith(`:${conversionProfile}`)
-    && await exists(previewPath)
-    && await exists(fullPath)
-  ) {
+  const filesExist = await exists(previewPath) && await exists(fullPath)
+  const localPath = localScreenshotPath(source, screenshotPublicRoot)
+  const localExists = localPath !== null && await exists(localPath)
+
+  // Cache decisions live in media-source.mjs; this shell only supplies IO and
+  // transcodes the bytes it is told to refresh.
+  const resolved = await resolveMediaSource({
+    sourceUrl,
+    manifestValue: manifest[sourceUrl],
+    conversionProfile,
+    filesExist,
+    ...(localExists ? { local: { read: () => readFile(localPath) } } : {}),
+  })
+  if (resolved.status === 'cached') {
+    manifest[sourceUrl] = resolved.manifestValue
     return { status: 'cached' }
   }
-
-  const localPath = localScreenshotPath(source, screenshotPublicRoot)
-  let bytes
-  if (localPath && await exists(localPath)) {
-    bytes = await readFile(localPath)
-  } else {
-    const response = await fetch(sourceUrl, { signal: AbortSignal.timeout(30_000), headers: { accept: 'image/*' } })
-    if (!response.ok) throw new Error(`HTTP ${response.status}`)
-    bytes = Buffer.from(await response.arrayBuffer())
-  }
-  if (bytes.length === 0) throw new Error('empty response')
-  if (bytes.length > maxBytes) throw new Error(`source is larger than ${maxBytes / 1024 / 1024} MB`)
-
-  const contentHash = sha256(bytes)
-  const manifestValue = `${contentHash}:${conversionProfile}`
-  if (cachedManifest === manifestValue && await exists(previewPath) && await exists(fullPath)) return { status: 'cached' }
 
   const tempDir = await mkdtemp(join(tmpdir(), 'dsh-skin-media-'))
   const inputPath = join(tempDir, basename(new URL(sourceUrl).pathname) || `${key}.source`)
   const tempPreviewPath = join(tempDir, `${key}.preview.webp`)
   const tempFullPath = join(tempDir, `${key}.full.webp`)
   try {
-    await writeFile(inputPath, bytes)
+    await writeFile(inputPath, resolved.bytes)
     await execFile('cwebp', ['-quiet', '-mt', '-m', '4', '-q', '78', '-resize', '640', '0', inputPath, '-o', tempPreviewPath])
     await execFile('cwebp', ['-quiet', '-mt', '-m', '4', '-q', '82', inputPath, '-o', tempFullPath])
     await mkdir(outputDir, { recursive: true })
@@ -99,7 +86,7 @@ async function convert(source, manifest) {
     const full = await readFile(tempFullPath)
     await writeFile(previewPath, preview)
     await writeFile(fullPath, full)
-    manifest[sourceUrl] = manifestValue
+    manifest[sourceUrl] = resolved.manifestValue
     return { status: 'converted' }
   } finally {
     await rm(tempDir, { recursive: true, force: true })

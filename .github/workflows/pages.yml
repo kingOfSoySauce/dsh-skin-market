@@ -31,7 +31,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: site/public/skin-media
-          key: skin-media-v1-${{ runner.os }}-${{ hashFiles('registry/skins/**', 'scripts/media.mjs', 'scripts/build-media.mjs') }}
+          key: skin-media-v1-${{ runner.os }}-${{ hashFiles('registry/skins/**', 'scripts/media.mjs', 'scripts/build-media.mjs', 'scripts/media-source.mjs') }}
           restore-keys: |
             skin-media-v1-${{ runner.os }}-
       - run: npm run media:build
