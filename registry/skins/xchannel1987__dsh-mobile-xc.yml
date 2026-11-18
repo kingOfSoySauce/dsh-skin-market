@@ -14,22 +14,25 @@ modes:
   - light
   - dark
 install:
-  target: github:xchannel1987/dsh-mobile-xc#1e1795bcd5459de678cec2c08473cb82c12e0ba9
-  version: 0.6.15
-  commit: 1e1795bcd5459de678cec2c08473cb82c12e0ba9
+  target: github:xchannel1987/dsh-mobile-xc#088d5cf9353a88d0e66b90f6c7e2d4a500a56455
+  version: 0.6.16
+  commit: 088d5cf9353a88d0e66b90f6c7e2d4a500a56455
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
   npm:
     name: dsh-mobile-xc
-    version: 0.6.15
-    integrity: sha512-k7frBcbIqIK7Q6b7zfyHLyDod60cfKwbTH/goV0tVkh5GlVdWt63UFVSm/Cst9lv2T8Z8gi23xD1MpGP3D4dwA==
+    version: 0.6.16
+    integrity: sha512-vb3XPeCDdWK6lAItuooj8FOuGWe82yke3sA4ol+stXVD5HCwtWTdnexrrEIi2YFO+5pRgt5BkFqCACXCIMP+fA==
     repository: https://github.com/xchannel1987/dsh-mobile-xc
-    gitHead: 1e1795bcd5459de678cec2c08473cb82c12e0ba9
+    gitHead: 088d5cf9353a88d0e66b90f6c7e2d4a500a56455
 compatibility:
   dsh: ">=0.1.7-rc.1"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/home.png
+  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/conversation.png
 screenshots: []
 review:
   compatibility: verified
@@ -46,23 +49,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
-    commit: 1e1795bcd5459de678cec2c08473cb82c12e0ba9
-    packageVersion: 0.6.15
+    commit: 088d5cf9353a88d0e66b90f6c7e2d4a500a56455
+    packageVersion: 0.6.16
     scannerVersion: static-v2
     dshVersion: ">=0.1.7-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:45:13.221Z
+    checkedAt: 2026-11-18T20:23:14.862Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
-marketScreenshots:
-  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/home.png
-  - skin-screenshots/xchannel1987__dsh-mobile-xc/48afb6b005c130a231cedf71f18865273eda4599/conversation.png
 featuredRank: 999
-releaseUpdatedAt: 2026-11-11T13:17:51.790Z
-metadataUpdatedAt: 2026-11-15T20:40:53.617Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-18T20:23:14.888Z
+metadataUpdatedAt: 2026-11-18T20:23:14.888Z
 starsUpdatedAt: 2026-10-30T03:54:03.224Z
-updatedAt: 2026-11-15T20:40:53.617Z
+updatedAt: 2026-11-18T20:23:14.888Z

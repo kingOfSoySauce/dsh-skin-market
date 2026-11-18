@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:lhh010/dsh-ui-whale#dffe4208927e44fe839ac6d738c043040700a629
-  version: 0.3.38
-  commit: dffe4208927e44fe839ac6d738c043040700a629
+  target: github:lhh010/dsh-ui-whale#6fa0bd583a52a1049f302be299466c41872136d4
+  version: 0.3.39
+  commit: 6fa0bd583a52a1049f302be299466c41872136d4
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -52,20 +52,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: dffe4208927e44fe839ac6d738c043040700a629
-    packageVersion: 0.3.38
+    commit: 6fa0bd583a52a1049f302be299466c41872136d4
+    packageVersion: 0.3.39
     scannerVersion: static-v2
     dshVersion: 0.1.2-alpha.1 ~0.2.1-alpha.1
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:42:14.658Z
+    checkedAt: 2026-11-18T20:22:21.816Z
     findings: []
 license:
   code: BSD-3-Clause
   commercialUse: true
-starsSnapshot: 48
 featuredRank: 1234
-releaseUpdatedAt: 2026-11-14T23:42:16.715Z
-metadataUpdatedAt: 2026-11-14T23:42:16.715Z
+starsSnapshot: 48
+releaseUpdatedAt: 2026-11-18T20:22:24.038Z
+metadataUpdatedAt: 2026-11-18T20:22:24.038Z
 starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T23:42:16.715Z
+updatedAt: 2026-11-18T20:22:24.038Z

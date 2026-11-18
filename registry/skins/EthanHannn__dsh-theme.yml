@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:EthanHannn/dsh-theme#513d819b785a6eb36187e814c721082bd9f9b05d
+  target: github:EthanHannn/dsh-theme#6c758be52ab49b73910f134c9b5c873fa2394221
   version: 0.2.0
-  commit: 513d819b785a6eb36187e814c721082bd9f9b05d
+  commit: 6c758be52ab49b73910f134c9b5c873fa2394221
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
@@ -44,22 +44,22 @@ health:
     topic: improve
   suggestions:
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
-    - DSH 兼容范围待核对：保留的市场范围 ^0.2.1-rc.3 未被本次检测范围 ^0.2.2-rc.1 完全覆盖（固定版本 513d819b785a6eb36187e814c721082bd9f9b05d）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.2.1-rc.3 未被本次检测范围 ^0.2.2-rc.1 完全覆盖（固定版本 6c758be52ab49b73910f134c9b5c873fa2394221）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 513d819b785a6eb36187e814c721082bd9f9b05d
+    commit: 6c758be52ab49b73910f134c9b5c873fa2394221
     packageVersion: 0.2.0
     scannerVersion: static-v2
     dshVersion: ^0.2.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-11-16T09:16:40.039Z
+    checkedAt: 2026-11-18T20:23:57.938Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-16T09:48:54.442Z
-metadataUpdatedAt: 2026-11-16T09:48:54.442Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-18T20:24:01.713Z
+metadataUpdatedAt: 2026-11-18T20:24:01.713Z
 starsUpdatedAt: 2026-11-04T14:29:50+08:00
-updatedAt: 2026-11-16T09:48:54.442Z
+updatedAt: 2026-11-18T20:24:01.713Z
