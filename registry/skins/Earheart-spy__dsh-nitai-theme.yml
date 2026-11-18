@@ -25,13 +25,13 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-light.png
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-dark.png
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-light-panel.png
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-dark-panel.png
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/hover-card-light.png
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/hover-card-dark.png
-listScreenshot: https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/5e4623b41961b33f49a1b1f30030b3acf7b8c683/docs/desktop-light.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/desktop-light.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/desktop-dark.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/desktop-light-panel.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/desktop-dark-panel.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/hover-card-light.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/hover-card-dark.png
+listScreenshot: https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/desktop-light.png
 review:
   compatibility: verified
   preview: verified
