@@ -82,7 +82,12 @@ describe('hydrated registry star pipeline', () => {
     expect(first.catalog.skins.find(skin => skin.id === hydrated.id)).toMatchObject({
       subpath: 'packages/ocean', starsUpdatedAt: observedAt,
       install: { target: `github:fixture/theme-packs#${commit}&path:/packages/ocean`, commit, version: '1.2.3' },
-      screenshots: [`${raw}/packages/ocean/screenshots/settings.png`, `${raw}/packages/ocean/screenshots/home.png`],
+      // Repository-relative screenshot sources resolve against the default
+      // branch, not the reviewed install commit.
+      screenshots: [
+        'https://raw.githubusercontent.com/fixture/theme-packs/HEAD/packages/ocean/screenshots/settings.png',
+        'https://raw.githubusercontent.com/fixture/theme-packs/HEAD/packages/ocean/screenshots/home.png',
+      ],
     })
 
     const repeated = publish(first.history, '2026-10-24T21:00:00.000Z', first.wire)

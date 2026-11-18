@@ -132,13 +132,20 @@ function prefix(target, path) {
   return target.subpath ? `${target.subpath.replace(/^\/+|\/+$/g, '')}/${path}` : path
 }
 
-function readmeImages(text, target, sha) {
+/**
+ * Resolve README-relative images against the repository's default branch, not
+ * the resolved install commit: a screenshot is presentation, not an install
+ * fact, so its URL should follow the author's latest preview instead of
+ * freezing at the reviewed commit. Monorepo subpaths stay prefixed and
+ * absolute author URLs pass through unchanged.
+ */
+function readmeImages(text, target) {
   if (typeof text !== 'string') return []
   const values = []
   for (const raw of readmeImageValues(text)) {
     if (typeof raw !== 'string' || raw.startsWith('data:') || raw.startsWith('#')) continue
     try {
-      const absolute = new URL(raw, `https://raw.githubusercontent.com/${target.fullName}/${sha}/${prefix(target, '')}`)
+      const absolute = new URL(raw, `https://raw.githubusercontent.com/${target.fullName}/HEAD/${prefix(target, '')}`)
       if (IMAGE_EXTENSION.test(absolute.pathname)) values.push(absolute.href)
     } catch { /* skip */ }
   }
@@ -157,7 +164,7 @@ function gifFirstReadmeImages(values) {
   return [...gifs, ...values.filter(value => !/\.gif(?:$|[?#])/i.test(value))]
 }
 
-/** Extract inline, reference and HTML image sources from a pinned README. */
+/** Extract inline, reference and HTML image sources from README text. */
 export function readmeImageValues(text) {
   if (typeof text !== 'string') return []
   const values = []
@@ -300,13 +307,15 @@ export async function hydrateSkinSubmission(draft, options = {}) {
       const parsed = JSON.parse(screenshotsJson)
       const list = Array.isArray(parsed) ? parsed : parsed?.screenshots
       if (Array.isArray(list)) {
+        // Relative screenshots.json entries follow the default branch like
+        // README images; an absolute author URL passes through unchanged.
         declaredScreenshots = list
           .filter(item => typeof item === 'string')
-          .map(item => new URL(item, `https://raw.githubusercontent.com/${target.fullName}/${sha}/${prefix(target, '')}`).href)
+          .map(item => new URL(item, `https://raw.githubusercontent.com/${target.fullName}/HEAD/${prefix(target, '')}`).href)
       }
     } catch { /* ignore */ }
   }
-  const screenshots = [...new Set([...declaredScreenshots, ...gifFirstReadmeImages(readmeImages(readme, target, sha))])]
+  const screenshots = [...new Set([...declaredScreenshots, ...gifFirstReadmeImages(readmeImages(readme, target))])]
     .filter(url => /^https:\/\//.test(url) && IMAGE_EXTENSION.test(url))
     .slice(0, 8)
 

@@ -75,9 +75,14 @@ describe('thin registry submissions', () => {
     expect(skin.package).toBe('@rison/dsh-endfield-ui')
     expect(skin.license.code).toBe('MIT')
     expect(skin.screenshots).toEqual([
-      'https://raw.githubusercontent.com/example/dsh-endfield/deadbeefdeadbeefdeadbeefdeadbeefdeadbeef/docs/settings.png',
-      'https://raw.githubusercontent.com/example/dsh-endfield/deadbeefdeadbeefdeadbeefdeadbeefdeadbeef/docs/home.png',
+      // screenshots.json entries and README-relative images both follow the
+      // default branch; neither URL is pinned to the install commit.
+      'https://raw.githubusercontent.com/example/dsh-endfield/HEAD/docs/settings.png',
+      'https://raw.githubusercontent.com/example/dsh-endfield/HEAD/docs/home.png',
     ])
+    // Regression guard: repository-relative screenshot sources must not leak
+    // the install commit into the catalog.
+    for (const url of skin.screenshots) expect(url).not.toMatch(/[0-9a-f]{40}/i)
     expect(skin.starsSnapshot).toBe(4)
     expect(skin.name).toEqual({ zh: 'dsh-endfield', en: 'dsh-endfield' })
     expect(skin.author).toBe('example')
@@ -215,7 +220,7 @@ describe('thin registry submissions', () => {
     )
 
     expect(skin.compatibility).toMatchObject({ dsh: '>=0.1.0-rc.6 || >=0.2.0-rc.1', platform: ['web'] })
-    expect(skin.screenshots).toEqual(['https://raw.githubusercontent.com/owner/desktop-skin/deadbeefdeadbeefdeadbeefdeadbeefdeadbeef/docs/home.png'])
+    expect(skin.screenshots).toEqual(['https://raw.githubusercontent.com/owner/desktop-skin/HEAD/docs/home.png'])
     expect(skin.health.checks).toMatchObject({ readmeScreenshots: 'pass', compatibility: 'pass' })
   })
 
@@ -303,4 +308,37 @@ it('keeps author-declared screenshots before the GIF-first README images', async
   )
 
   expect(skin.screenshots.map(url => url.split('/').pop())).toEqual(['declared.png', 'demo.gif', 'home.png'])
+  // An author-declared absolute URL is kept verbatim, whatever ref it points at.
+  expect(skin.screenshots[0]).toBe(declared)
+})
+
+it('resolves README screenshots against the default branch instead of the install commit', async () => {
+  const sha = 'deadbeefdeadbeefdeadbeefdeadbeefdeadbeef'
+  const files: Record<string, string> = {
+    'package.json': JSON.stringify({
+      name: '@fixture/readme-shots',
+      version: '1.0.0',
+      license: 'MIT',
+      dsh: { bundle: { patch: './cordis.patch.yml' }, client: { platform: 'web' } },
+    }),
+    'cordis.patch.yml': '- insert:\n    - id: readme-shots\n      name: "@fixture/readme-shots"\n',
+    'README.md': '![home](docs/home.png)\n',
+    'LICENSE': 'MIT License',
+  }
+  const fetchText = async (url: string) => {
+    if (url.includes('api.github.com/repos/example/readme-monorepo')) return { default_branch: 'main', stargazers_count: 0, topics: [] }
+    const file = Object.keys(files).find(path => url.endsWith(`/${sha}/packages/ocean/${path}`))
+    return file ? files[file] : null
+  }
+
+  const skin = await hydrateSkinSubmission(
+    { url: 'https://github.com/example/readme-monorepo', subpath: 'packages/ocean', description: 'README 截图皮肤' },
+    { fetchText, sha, now: '2026-11-18T00:00:00.000Z' },
+  )
+
+  // HEAD keeps the monorepo subpath prefix but drops the install commit.
+  expect(skin.screenshots).toEqual([
+    'https://raw.githubusercontent.com/example/readme-monorepo/HEAD/packages/ocean/docs/home.png',
+  ])
+  for (const url of skin.screenshots) expect(url).not.toMatch(/[0-9a-f]{40}/i)
 })
