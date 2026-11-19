@@ -850,8 +850,8 @@
       "package": "chobits-chii-dsh",
       "resolved": {
         "version": "1.0.2",
-        "commit": "761def0ffe8f0bcb00dc8f39e81ffec31446f577",
-        "observedAt": "2026-11-19T20:23:44.066Z"
+        "commit": "e32dfef487903a8f377293ca49d2b347eb704ebd",
+        "observedAt": "2026-11-14T23:50:15.754Z"
       }
     },
     "anionex.dsh-eye-care": {
