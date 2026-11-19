@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Anime2Real/Chobits-Chii-DSH#e32dfef487903a8f377293ca49d2b347eb704ebd
+  target: github:Anime2Real/Chobits-Chii-DSH#761def0ffe8f0bcb00dc8f39e81ffec31446f577
   version: 1.0.2
-  commit: e32dfef487903a8f377293ca49d2b347eb704ebd
+  commit: 761def0ffe8f0bcb00dc8f39e81ffec31446f577
   desktop:
     mode: managed
     registry: npm
@@ -30,6 +30,8 @@ compatibility:
   dsh: ">=0.2.1-rc.5 <0.3.0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Anime2Real__Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/home.gif
 screenshots:
   - https://raw.githubusercontent.com/Anime2Real/Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/docs/preview-light.png
   - https://raw.githubusercontent.com/Anime2Real/Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/docs/preview-dark.png
@@ -48,22 +50,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: e32dfef487903a8f377293ca49d2b347eb704ebd
+    commit: 761def0ffe8f0bcb00dc8f39e81ffec31446f577
     packageVersion: 1.0.2
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.5 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:46:48.716Z
+    checkedAt: 2026-11-19T20:21:20.741Z
     findings: []
 license:
-  code: MIT
-  commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/Anime2Real__Chobits-Chii-DSH/e32dfef487903a8f377293ca49d2b347eb704ebd/home.gif
+  code: PolyForm-Noncommercial-1.0.0
+  commercialUse: false
 featuredRank: 1294
-releaseUpdatedAt: 2026-11-14T23:46:49.021Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-19T20:21:21.288Z
+metadataUpdatedAt: 2026-11-19T20:21:21.288Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-19T20:21:21.288Z

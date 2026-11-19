@@ -17,21 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:MichengAI/dsh-codex-pet#8175311307cc35dd69666ee9fffd9a0ff31e1900
-  version: 1.0.19
-  commit: 8175311307cc35dd69666ee9fffd9a0ff31e1900
+  target: github:MichengAI/dsh-codex-pet#bc6c1a26eb768fe3cde65237bb5de3e8ae58731d
+  version: 1.1.1
+  commit: bc6c1a26eb768fe3cde65237bb5de3e8ae58731d
   desktop:
     mode: managed
     registry: npm
     packageName: "@michengai/dsh-codex-pet"
-    packageVersion: 1.0.19
-    integrity: sha512-2meckrwBLY3X3dMe660LAB4WvOOYh2ZHfxZMtKdRpRcoqDIM0ADMlgNykNheE6V3j8bTW4DKqxGvTjfWhU0LSw==
+    packageVersion: 1.1.1
+    integrity: sha512-b840QG1TkHvLAZ7hPU39/8+fiDGlOCckDpYvk1UKGqMvu5Df7CC/ly+86PWxDfpJbTJFA7LSgxPNsK77X9Q4Jg==
   npm:
     name: "@michengai/dsh-codex-pet"
-    version: 1.0.19
-    integrity: sha512-2meckrwBLY3X3dMe660LAB4WvOOYh2ZHfxZMtKdRpRcoqDIM0ADMlgNykNheE6V3j8bTW4DKqxGvTjfWhU0LSw==
+    version: 1.1.1
+    integrity: sha512-b840QG1TkHvLAZ7hPU39/8+fiDGlOCckDpYvk1UKGqMvu5Df7CC/ly+86PWxDfpJbTJFA7LSgxPNsK77X9Q4Jg==
     repository: https://github.com/MichengAI/dsh-codex-pet
-    gitHead: 8175311307cc35dd69666ee9fffd9a0ff31e1900
+    gitHead: bc6c1a26eb768fe3cde65237bb5de3e8ae58731d
 compatibility:
   dsh: 0.2.0-rc.1 || 0.1.2-rc.1
   platform:
@@ -55,22 +55,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.1 || 0.1.2-rc.1 未被本次检测范围 >=0.2.0-rc.1 <0.3.0-0 完全覆盖（固定版本 8175311307cc35dd69666ee9fffd9a0ff31e1900）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.1 || 0.1.2-rc.1 未被本次检测范围 >=0.2.2-rc.1 <0.3.0-0 完全覆盖（固定版本 bc6c1a26eb768fe3cde65237bb5de3e8ae58731d）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 8175311307cc35dd69666ee9fffd9a0ff31e1900
-    packageVersion: 1.0.19
+    commit: bc6c1a26eb768fe3cde65237bb5de3e8ae58731d
+    packageVersion: 1.1.1
     scannerVersion: static-v2
-    dshVersion: ">=0.2.0-rc.1 <0.3.0-0"
+    dshVersion: ">=0.2.2-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:43:28.596Z
+    checkedAt: 2026-11-19T20:20:21.687Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
-starsSnapshot: 8
 featuredRank: 1241
-releaseUpdatedAt: 2026-11-14T23:43:32.457Z
-metadataUpdatedAt: 2026-11-14T23:43:32.457Z
-starsUpdatedAt: 2026-11-14T07:55:24.352Z
-updatedAt: 2026-11-14T23:43:32.457Z
+starsSnapshot: 9
+releaseUpdatedAt: 2026-11-19T20:20:23.027Z
+metadataUpdatedAt: 2026-11-19T20:20:23.027Z
+starsUpdatedAt: 2026-11-19T20:20:23.027Z
+updatedAt: 2026-11-19T20:20:23.027Z

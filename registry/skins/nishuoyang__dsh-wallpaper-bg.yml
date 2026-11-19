@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:nishuoyang/dsh-wallpaper-bg#eb0eb24d2ef7f078de18d8433ac11eb64ce3f6fc
-  version: 0.5.20
-  commit: eb0eb24d2ef7f078de18d8433ac11eb64ce3f6fc
+  target: github:nishuoyang/dsh-wallpaper-bg#5c2b7949459becc23f7a5b79445cb368a4bd44c0
+  version: 0.5.21
+  commit: 5c2b7949459becc23f7a5b79445cb368a4bd44c0
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-wallpaper-bg
-    packageVersion: 0.5.20
-    integrity: sha512-0GTZVmEBhI08hA/zRX0hJNjciwdRjI4pdyaZnZ0Vmm9CC9aAPqWyQw41qW7M8B00nQi4rToklb4R6ev6QXzeRg==
+    packageVersion: 0.5.21
+    integrity: sha512-/JLLQox2/U8hAHloDX/jCVhNYf9G7Jixd2dwgQPmXOng1POPJwIeM2hlXxMaJrwHEK+kyoLTNZrszu6Mn4hDnw==
   npm:
     name: dsh-wallpaper-bg
-    version: 0.5.20
-    integrity: sha512-0GTZVmEBhI08hA/zRX0hJNjciwdRjI4pdyaZnZ0Vmm9CC9aAPqWyQw41qW7M8B00nQi4rToklb4R6ev6QXzeRg==
+    version: 0.5.21
+    integrity: sha512-/JLLQox2/U8hAHloDX/jCVhNYf9G7Jixd2dwgQPmXOng1POPJwIeM2hlXxMaJrwHEK+kyoLTNZrszu6Mn4hDnw==
     repository: https://github.com/nishuoyang/dsh-wallpaper-bg
-    gitHead: eb0eb24d2ef7f078de18d8433ac11eb64ce3f6fc
+    gitHead: 5c2b7949459becc23f7a5b79445cb368a4bd44c0
 compatibility:
   dsh: unverified
   platform:
@@ -60,19 +60,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: eb0eb24d2ef7f078de18d8433ac11eb64ce3f6fc
-    packageVersion: 0.5.20
+    commit: 5c2b7949459becc23f7a5b79445cb368a4bd44c0
+    packageVersion: 0.5.21
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-16T12:20:35.119Z
+    checkedAt: 2026-11-19T20:20:17.094Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 11
 featuredRank: 1117
-releaseUpdatedAt: 2026-11-16T12:20:36.390Z
-metadataUpdatedAt: 2026-11-16T12:20:36.390Z
+starsSnapshot: 11
+releaseUpdatedAt: 2026-11-19T20:20:20.006Z
+metadataUpdatedAt: 2026-11-19T20:20:20.006Z
 starsUpdatedAt: 2026-11-01T22:47:11.915Z
-updatedAt: 2026-11-16T12:20:36.390Z
+updatedAt: 2026-11-19T20:20:20.006Z

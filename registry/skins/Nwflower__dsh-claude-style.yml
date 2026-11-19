@@ -16,18 +16,18 @@ modes:
   - light
   - dark
 install:
-  target: github:Nwflower/dsh-claude-style#b5f474b263a2cefa50fcec09331aff54837bbcb6
-  version: 0.21.5
-  commit: b5f474b263a2cefa50fcec09331aff54837bbcb6
+  target: github:Nwflower/dsh-claude-style#934d59cfd0ff500dc839995af92f52f238cc64cb
+  version: 0.21.6
+  commit: 934d59cfd0ff500dc839995af92f52f238cc64cb
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
   npm:
     name: dsh-claude-style
-    version: 0.21.5
-    integrity: sha512-wgXtSywLyJ/qOeV8yNdU+fmId/4R8DxCO5Rm6tiySq0jYCRDEtNyQfI9b8ABbeqZM38u7s+WfhdiVb2nci6FEg==
+    version: 0.21.6
+    integrity: sha512-9nl/rFz9QvTMCaZtwgNUEvclRgwHKGoIJDZR5Fvn6UXQhgW8Baw23vUJhTbCTP6DJ6h2zeKabz+mc4EbcHl6Jw==
     repository: https://github.com/Nwflower/dsh-claude-style
-    gitHead: b5f474b263a2cefa50fcec09331aff54837bbcb6
+    gitHead: 934d59cfd0ff500dc839995af92f52f238cc64cb
 compatibility:
   dsh: ">=0.1.7"
   platform:
@@ -51,15 +51,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.7 未被本次检测范围 >=0.2.2-rc.1 完全覆盖（固定版本 b5f474b263a2cefa50fcec09331aff54837bbcb6）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.7 未被本次检测范围 >=0.2.2-rc.1 完全覆盖（固定版本 934d59cfd0ff500dc839995af92f52f238cc64cb）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: b5f474b263a2cefa50fcec09331aff54837bbcb6
-    packageVersion: 0.21.5
+    commit: 934d59cfd0ff500dc839995af92f52f238cc64cb
+    packageVersion: 0.21.6
     scannerVersion: static-v2
     dshVersion: ">=0.2.2-rc.1"
     mode: static
     result: unknown
-    checkedAt: 2026-11-18T20:22:09.156Z
+    checkedAt: 2026-11-19T20:19:52.244Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -67,8 +67,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 647
-releaseUpdatedAt: 2026-11-18T20:22:11.789Z
-metadataUpdatedAt: 2026-11-18T20:22:11.789Z
-starsUpdatedAt: 2026-11-18T20:22:11.789Z
-updatedAt: 2026-11-18T20:22:11.789Z
+starsSnapshot: 657
+releaseUpdatedAt: 2026-11-19T20:19:54.354Z
+metadataUpdatedAt: 2026-11-19T20:19:54.354Z
+starsUpdatedAt: 2026-11-19T20:19:54.354Z
+updatedAt: 2026-11-19T20:19:54.354Z

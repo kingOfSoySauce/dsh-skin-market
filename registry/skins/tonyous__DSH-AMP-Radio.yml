@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:tonyous/DSH-AMP-Radio#8221c14acee2382a90d1627833a43c7253a03f00
-  version: 1.2.0
-  commit: 8221c14acee2382a90d1627833a43c7253a03f00
+  target: github:tonyous/DSH-AMP-Radio#f1eb191e6c9a5dcb2cc5a8677842eff9405271ec
+  version: 2.0.2
+  commit: f1eb191e6c9a5dcb2cc5a8677842eff9405271ec
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -44,19 +44,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 8221c14acee2382a90d1627833a43c7253a03f00
-    packageVersion: 1.2.0
+    commit: f1eb191e6c9a5dcb2cc5a8677842eff9405271ec
+    packageVersion: 2.0.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-26T09:10:22.904Z
+    checkedAt: 2026-11-19T20:23:12.509Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 0
-releaseUpdatedAt: 2026-10-27T05:10:00.000Z
-metadataUpdatedAt: 2026-10-27T23:00:28.784Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-19T20:23:17.846Z
+metadataUpdatedAt: 2026-11-19T20:23:17.846Z
 starsUpdatedAt: 2026-10-27T05:10:00.000Z
-updatedAt: 2026-10-27T23:00:28.784Z
+updatedAt: 2026-11-19T20:23:17.846Z
