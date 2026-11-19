@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:abcd753951-gg/dsh-claude-mode#a8baa4ed1d762ba653a03c40549d2caa56146968
-  version: 1.1.4
-  commit: a8baa4ed1d762ba653a03c40549d2caa56146968
+  target: github:abcd753951-gg/dsh-claude-mode#23413f327e930c478c4c04e9c1777242f55a36ab
+  version: 1.2.0
+  commit: 23413f327e930c478c4c04e9c1777242f55a36ab
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -52,20 +52,20 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: a8baa4ed1d762ba653a03c40549d2caa56146968
-    packageVersion: 1.1.4
+    commit: 23413f327e930c478c4c04e9c1777242f55a36ab
+    packageVersion: 1.2.0
     scannerVersion: static-v2
     dshVersion: 0.2.2-rc.1 || 0.1.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:43:45.211Z
+    checkedAt: 2026-11-19T20:22:13.515Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1208
-releaseUpdatedAt: 2026-11-15T20:43:48.257Z
-metadataUpdatedAt: 2026-11-15T20:43:48.257Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-19T20:22:16.651Z
+metadataUpdatedAt: 2026-11-19T20:22:16.651Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-15T20:43:48.257Z
+updatedAt: 2026-11-19T20:22:16.651Z

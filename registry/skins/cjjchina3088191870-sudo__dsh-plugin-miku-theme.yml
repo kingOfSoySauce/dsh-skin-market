@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:cjjchina3088191870-sudo/dsh-plugin-miku-theme#ca35dfcc83a86032f3537de807c679b514106cf7
+  target: github:cjjchina3088191870-sudo/dsh-plugin-miku-theme#a5f495a4da4a26aa8d05bf4ae4a3e5b01bd4b0ed
   version: 0.4.3
-  commit: ca35dfcc83a86032f3537de807c679b514106cf7
+  commit: a5f495a4da4a26aa8d05bf4ae4a3e5b01bd4b0ed
   desktop:
     mode: managed
     registry: npm
@@ -31,11 +31,13 @@ install:
     version: 0.4.3
     integrity: sha512-UTG+uKkYnOzBczIle+FeFfv6XdZ40wJ6e/K7ffbWe60BcMOJsn7FjuVTDz7qlNYuYXkkOLLj1dfwvOrcPoKD8w==
     repository: https://github.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme
-    gitHead: ca35dfcc83a86032f3537de807c679b514106cf7
+    gitHead: a5f495a4da4a26aa8d05bf4ae4a3e5b01bd4b0ed
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/cjjchina3088191870-sudo__dsh-plugin-miku-theme/ca35dfcc83a86032f3537de807c679b514106cf7/launch-miku.gif
 screenshots:
   - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/rose-light.webp
   - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/rose-dark.webp
@@ -60,22 +62,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: ca35dfcc83a86032f3537de807c679b514106cf7
+    commit: a5f495a4da4a26aa8d05bf4ae4a3e5b01bd4b0ed
     packageVersion: 0.4.3
     scannerVersion: static-v2
     dshVersion: 0.2.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:23:40.349Z
+    checkedAt: 2026-11-19T20:21:25.006Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/cjjchina3088191870-sudo__dsh-plugin-miku-theme/ca35dfcc83a86032f3537de807c679b514106cf7/launch-miku.gif
 featuredRank: 1133
-releaseUpdatedAt: 2026-11-14T23:47:05.956Z
-metadataUpdatedAt: 2026-11-14T00:23:42.349Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-19T20:21:27.500Z
+metadataUpdatedAt: 2026-11-19T20:21:27.500Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-14T23:47:05.956Z
+updatedAt: 2026-11-19T20:21:27.500Z

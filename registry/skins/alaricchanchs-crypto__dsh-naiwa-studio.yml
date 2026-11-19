@@ -14,14 +14,14 @@ modes:
   - light
   - dark
 install:
-  target: github:alaricchanchs-crypto/dsh-naiwa-studio#8e90116143a9aed927e322fba1628eba6119d1a0
+  target: github:alaricchanchs-crypto/dsh-naiwa-studio#c3711124fbf19b662806c0bc3053a2435e7a63c0
   version: 0.1.0
-  commit: 8e90116143a9aed927e322fba1628eba6119d1a0
+  commit: c3711124fbf19b662806c0bc3053a2435e7a63c0
   desktop:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.0-rc.1"
   platform:
     - web
 screenshots:
@@ -33,33 +33,33 @@ screenshots:
   - https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/2-main.png
 listScreenshot: https://raw.githubusercontent.com/alaricchanchs-crypto/dsh-naiwa-studio/c4ef30176306e60f57b22b7322ee28ba383c9ef9/screenshots/1-splash.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
-    commit: 8e90116143a9aed927e322fba1628eba6119d1a0
+    commit: c3711124fbf19b662806c0bc3053a2435e7a63c0
     packageVersion: 0.1.0
     scannerVersion: static-v2
+    dshVersion: ">=0.2.0-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:23:23.029Z
+    checkedAt: 2026-11-19T20:20:43.407Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-14T00:23:24.715Z
-metadataUpdatedAt: 2026-11-14T00:23:24.715Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-19T20:20:45.557Z
+metadataUpdatedAt: 2026-11-19T20:20:45.557Z
 starsUpdatedAt: 2026-11-18T20:22:04.502Z
-updatedAt: 2026-11-18T20:22:04.502Z
+updatedAt: 2026-11-19T20:20:45.557Z

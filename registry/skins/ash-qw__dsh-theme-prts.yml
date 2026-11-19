@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ash-qw/dsh-theme-prts#8ca2a7f5bc6727dc62357d3af9aac453f0cfdaa9
-  version: 4.2.0
-  commit: 8ca2a7f5bc6727dc62357d3af9aac453f0cfdaa9
+  target: github:ash-qw/dsh-theme-prts#ca086cfe14abc615fea929ffb3de300de3460509
+  version: 4.2.1
+  commit: ca086cfe14abc615fea929ffb3de300de3460509
   desktop:
     mode: managed
     registry: npm
     packageName: "@ash-qw/dsh-theme-prts"
-    packageVersion: 4.2.0
-    integrity: sha512-T5kRHaKXlBTYbxC/54/Yda/eZVkGqy9xyAXe98Bll8GzX+Ymec8N0SHc8SbFT7HHdK+4bGTtQsIH0kGPOI2xXw==
+    packageVersion: 4.2.1
+    integrity: sha512-Uvb/sORWoyX4VFB4ZJfA+SB+bJFrds6R+C8O0fcVeS+fVIOs9Kbkf6JF+KGWBzSHyVywtE4++sMQi7grbXsQeA==
   npm:
     name: "@ash-qw/dsh-theme-prts"
-    version: 4.2.0
-    integrity: sha512-T5kRHaKXlBTYbxC/54/Yda/eZVkGqy9xyAXe98Bll8GzX+Ymec8N0SHc8SbFT7HHdK+4bGTtQsIH0kGPOI2xXw==
+    version: 4.2.1
+    integrity: sha512-Uvb/sORWoyX4VFB4ZJfA+SB+bJFrds6R+C8O0fcVeS+fVIOs9Kbkf6JF+KGWBzSHyVywtE4++sMQi7grbXsQeA==
     repository: https://github.com/ash-qw/dsh-theme-prts
-    gitHead: 8ca2a7f5bc6727dc62357d3af9aac453f0cfdaa9
+    gitHead: ca086cfe14abc615fea929ffb3de300de3460509
 compatibility:
   dsh: 0.2.2-rc.2 || 0.2.2-rc.3
   platform:
@@ -54,20 +54,20 @@ health:
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
   scan:
-    commit: 8ca2a7f5bc6727dc62357d3af9aac453f0cfdaa9
-    packageVersion: 4.2.0
+    commit: ca086cfe14abc615fea929ffb3de300de3460509
+    packageVersion: 4.2.1
     scannerVersion: static-v2
-    dshVersion: 0.2.2-rc.2 || 0.2.2-rc.3
+    dshVersion: 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-11-18T20:22:32.161Z
+    checkedAt: 2026-11-19T20:20:12.490Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
 featuredRank: 1090
-starsSnapshot: 16
-releaseUpdatedAt: 2026-11-18T20:22:34.113Z
-metadataUpdatedAt: 2026-11-18T20:22:34.113Z
-starsUpdatedAt: 2026-11-08T00:17:43.373Z
-updatedAt: 2026-11-18T20:22:34.113Z
+starsSnapshot: 18
+releaseUpdatedAt: 2026-11-19T20:20:14.480Z
+metadataUpdatedAt: 2026-11-19T20:20:14.480Z
+starsUpdatedAt: 2026-11-19T20:20:14.480Z
+updatedAt: 2026-11-19T20:20:14.480Z
