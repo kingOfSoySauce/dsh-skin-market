@@ -18,12 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ffyfox/dsh-theme-mist#5450049db5b0ba0d199004b2ab16fe9ee610ff06
-  version: 0.2.0
-  commit: 5450049db5b0ba0d199004b2ab16fe9ee610ff06
+  target: github:ffyfox/dsh-theme-mist#14e38f8b2602747dab02e4fc5f100727e66ad868
+  version: 0.2.2
+  commit: 14e38f8b2602747dab02e4fc5f100727e66ad868
   desktop:
-    mode: manual-only
-    reason: npm-repository-mismatch
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-mist
+    packageVersion: 0.2.2
+    integrity: sha512-kYsi80YhSaJJohigzSQC6ZYy9lwPy3AIoX7LJtfMb6bmv8JqVz8v58wpy4zWwJ9J8P3lSpXHbr0iCqv3qBX3ZA==
+  npm:
+    name: dsh-theme-mist
+    version: 0.2.2
+    integrity: sha512-kYsi80YhSaJJohigzSQC6ZYy9lwPy3AIoX7LJtfMb6bmv8JqVz8v58wpy4zWwJ9J8P3lSpXHbr0iCqv3qBX3ZA==
+    repository: https://github.com/ffyfox/dsh-theme-mist
+    gitHead: 14e38f8b2602747dab02e4fc5f100727e66ad868
 compatibility:
   dsh: ">=0.2.1-alpha.1 <0.3.0"
   platform:
@@ -54,13 +63,13 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 5450049db5b0ba0d199004b2ab16fe9ee610ff06
-    packageVersion: 0.2.0
+    commit: 14e38f8b2602747dab02e4fc5f100727e66ad868
+    packageVersion: 0.2.2
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-alpha.1 <0.3.0"
     mode: static
     result: unknown
-    checkedAt: 2026-11-19T20:22:30.924Z
+    checkedAt: 2026-11-20T19:58:38.848Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -69,7 +78,7 @@ license:
   commercialUse: true
 featuredRank: 1336
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-19T20:22:33.602Z
-metadataUpdatedAt: 2026-11-19T20:22:33.602Z
+releaseUpdatedAt: 2026-11-20T19:58:40.886Z
+metadataUpdatedAt: 2026-11-20T19:58:40.886Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-19T20:22:33.602Z
+updatedAt: 2026-11-20T19:58:40.886Z

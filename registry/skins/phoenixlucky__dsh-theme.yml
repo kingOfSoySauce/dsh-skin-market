@@ -17,21 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:phoenixlucky/dsh-theme#10a3ce1d04064b475e705b253d511803b5c2bc74
-  version: 1.1.2
-  commit: 10a3ce1d04064b475e705b253d511803b5c2bc74
+  target: github:phoenixlucky/dsh-theme#09a4eea77e7c7fcf0753d159cf1cf4f13f285d14
+  version: 1.2.4
+  commit: 09a4eea77e7c7fcf0753d159cf1cf4f13f285d14
   desktop:
     mode: managed
     registry: npm
     packageName: "@tinyforge/dsh-theme"
-    packageVersion: 1.1.2
-    integrity: sha512-AU/erTzIWQ0BHme5nGpHXP+jVxGGg1XqfQwaucclQ1w+5tg2ra1YoWoJK0c+4Yyj2TUQ9OtrMt41u9fPufPpyA==
+    packageVersion: 1.2.4
+    integrity: sha512-32w/3K1uAtyTRu9QgNl96xbBizaTWWiVG6KZPcNwDVtfQbp81KNLVJNRsCZNmsb5LKCACv6R9ptPjBnbESC29g==
   npm:
     name: "@tinyforge/dsh-theme"
-    version: 1.1.2
-    integrity: sha512-AU/erTzIWQ0BHme5nGpHXP+jVxGGg1XqfQwaucclQ1w+5tg2ra1YoWoJK0c+4Yyj2TUQ9OtrMt41u9fPufPpyA==
+    version: 1.2.4
+    integrity: sha512-32w/3K1uAtyTRu9QgNl96xbBizaTWWiVG6KZPcNwDVtfQbp81KNLVJNRsCZNmsb5LKCACv6R9ptPjBnbESC29g==
     repository: https://github.com/phoenixlucky/dsh-theme
-    gitHead: 10a3ce1d04064b475e705b253d511803b5c2bc74
+    gitHead: 09a4eea77e7c7fcf0753d159cf1cf4f13f285d14
 compatibility:
   dsh: 0.2.1-rc.3
   platform:
@@ -58,20 +58,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 10a3ce1d04064b475e705b253d511803b5c2bc74
-    packageVersion: 1.1.2
+    commit: 09a4eea77e7c7fcf0753d159cf1cf4f13f285d14
+    packageVersion: 1.2.4
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.3 <0.3.0 || =0.2.2-alpha.2"
     mode: static
     result: pass
-    checkedAt: 2026-11-18T20:25:40.491Z
+    checkedAt: 2026-11-20T19:59:06.167Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1183
-releaseUpdatedAt: 2026-11-18T20:25:44.161Z
-metadataUpdatedAt: 2026-11-18T20:25:44.161Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-20T19:59:08.541Z
+metadataUpdatedAt: 2026-11-20T19:59:08.541Z
 starsUpdatedAt: 2026-11-14T06:29:10.128Z
-updatedAt: 2026-11-18T20:25:44.161Z
+updatedAt: 2026-11-20T19:59:08.541Z

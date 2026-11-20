@@ -27,6 +27,10 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/home.png
+  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/conversation.png
+  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/settings.png
 screenshots:
   - https://github.com/user-attachments/assets/f8cfd90d-974f-429f-82b4-cf408cbe0454
   - https://github.com/user-attachments/assets/4e0fb8c6-70ac-45e3-ad0b-27b4d753b2a6
@@ -58,13 +62,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/home.png
-  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/conversation.png
-  - skin-screenshots/KasouHoshino__DSH-Custom-Background-and-Liquid-Glass-Theme/a4e354b405bdc3eee63ac2d8b9a06f37958f157a/settings.png
 featuredRank: 1375
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-14T23:47:49.062Z
-metadataUpdatedAt: 2026-11-15T20:40:53.617Z
+metadataUpdatedAt: 2026-11-20T19:57:59.754Z
 starsUpdatedAt: 2026-11-14T11:56:57.679Z
-updatedAt: 2026-11-15T20:40:53.617Z
+updatedAt: 2026-11-20T19:57:59.754Z

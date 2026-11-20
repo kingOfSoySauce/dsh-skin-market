@@ -19,9 +19,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#2d5f7cc3c4d00c3142c6479f6b0a21622c9b1d80&path:/orca-link
+  target: github:Small-tailqwq/dsh-deep-whale#c4f32b13aecfb39589764201d0d043e904c73157&path:/orca-link
   version: 0.1.11
-  commit: 2d5f7cc3c4d00c3142c6479f6b0a21622c9b1d80
+  commit: c4f32b13aecfb39589764201d0d043e904c73157
   desktop:
     mode: manual-only
     reason: companion-not-desktop-installable
@@ -36,7 +36,7 @@ install:
     version: 0.1.11
     integrity: sha512-OlrVBv3P696K/gMU/IVOWEdS7nKL7mV5KqB7ITZ4ETb1aC7WPyK/BBSGG0U2MFxCCztV1lJkqLopq/g0IAnoyA==
     repository: https://github.com/Small-tailqwq/dsh-deep-whale
-    gitHead: 2d5f7cc3c4d00c3142c6479f6b0a21622c9b1d80
+    gitHead: c4f32b13aecfb39589764201d0d043e904c73157
 compatibility:
   dsh: ^0.1.11
   platform:
@@ -69,21 +69,21 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 2d5f7cc3c4d00c3142c6479f6b0a21622c9b1d80
+    commit: c4f32b13aecfb39589764201d0d043e904c73157
     packageVersion: 0.1.11
     scannerVersion: static-v2
     dshVersion: ^0.1.11
     mode: static
     result: pass
-    checkedAt: 2026-11-19T20:19:51.676Z
+    checkedAt: 2026-11-20T19:56:37.156Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
 featuredRank: 3
-starsSnapshot: 3127
-releaseUpdatedAt: 2026-11-19T20:19:53.674Z
-metadataUpdatedAt: 2026-11-19T20:19:53.674Z
-starsUpdatedAt: 2026-11-19T20:19:53.674Z
-updatedAt: 2026-11-19T20:19:53.674Z
+starsSnapshot: 3129
+releaseUpdatedAt: 2026-11-20T19:56:38.855Z
+metadataUpdatedAt: 2026-11-20T19:56:38.855Z
+starsUpdatedAt: 2026-11-20T19:56:38.855Z
+updatedAt: 2026-11-20T19:56:38.855Z

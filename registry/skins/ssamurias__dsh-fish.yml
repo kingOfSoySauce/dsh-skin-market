@@ -18,21 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ssamurias/dsh-fish#457c886a4858c6b533813f9177302a4fca6545f8
-  version: 1.0.5
-  commit: 457c886a4858c6b533813f9177302a4fca6545f8
+  target: github:ssamurias/dsh-fish#0e8e9b4c20622ba98b86f67ca03720d1ebd9a8d3
+  version: 1.0.6
+  commit: 0e8e9b4c20622ba98b86f67ca03720d1ebd9a8d3
   desktop:
     mode: managed
     registry: npm
     packageName: "@ssamurias/dsh-fish"
-    packageVersion: 1.0.5
-    integrity: sha512-AukoqkvBR84h5G/Dcx/d1NEDwh3qh857mqFV5kwJPm0IuHvLqCVUtufhJ4+XERjVZjarAflA45nI/GXB9dKSEw==
+    packageVersion: 1.0.6
+    integrity: sha512-pC9b9QnB04taVFYpfalI4y0A8xGO1R82kvtOOTBQsPHgo4MVTJbzITyRbA/NhNSA1xnBciO0fcD9UYRU8VU5pg==
   npm:
     name: "@ssamurias/dsh-fish"
-    version: 1.0.5
-    integrity: sha512-AukoqkvBR84h5G/Dcx/d1NEDwh3qh857mqFV5kwJPm0IuHvLqCVUtufhJ4+XERjVZjarAflA45nI/GXB9dKSEw==
+    version: 1.0.6
+    integrity: sha512-pC9b9QnB04taVFYpfalI4y0A8xGO1R82kvtOOTBQsPHgo4MVTJbzITyRbA/NhNSA1xnBciO0fcD9UYRU8VU5pg==
     repository: https://github.com/ssamurias/dsh-fish
-    gitHead: 457c886a4858c6b533813f9177302a4fca6545f8
+    gitHead: 0e8e9b4c20622ba98b86f67ca03720d1ebd9a8d3
 compatibility:
   dsh: ">=0.2.0-rc.1 <0.3.0-0"
   platform:
@@ -57,20 +57,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 457c886a4858c6b533813f9177302a4fca6545f8
-    packageVersion: 1.0.5
+    commit: 0e8e9b4c20622ba98b86f67ca03720d1ebd9a8d3
+    packageVersion: 1.0.6
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-18T20:22:12.902Z
+    checkedAt: 2026-11-20T19:56:40.563Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 165
 featuredRank: 1264
-releaseUpdatedAt: 2026-11-18T20:22:14.397Z
-metadataUpdatedAt: 2026-11-18T20:22:14.397Z
-starsUpdatedAt: 2026-11-19T20:19:47.913Z
-updatedAt: 2026-11-19T20:19:47.913Z
+starsSnapshot: 173
+releaseUpdatedAt: 2026-11-20T19:56:41.712Z
+metadataUpdatedAt: 2026-11-20T19:56:41.712Z
+starsUpdatedAt: 2026-11-20T19:56:41.712Z
+updatedAt: 2026-11-20T19:56:41.712Z

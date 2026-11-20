@@ -5,8 +5,8 @@ name:
 author: sayzwx
 description: "Nebula Core: a deep-space observatory theme for the DeepSeek Harness Web GUI — same-direction cross-dissolve wallpaper loops (never a reversing ping-pong) behind a fully clear, un-veiled conversation pane, white-ink-on-photograph typography with soft blurred shadows (never a glyph outline), Montserrat + Noto Sans SC on a real variable-weight axis, and a 74-token light/dark palette. v1.13 adds a built-in model probe service: see which configured models actually answer, plus their real context window."
 repo: https://github.com/sayzwx/dsh-xingkong-theme
-package: dsh-xingkong-theme
-rowId: xingkong-theme
+package: dsh-custom-model
+rowId: custom-model
 category: skin
 tags:
   - appearance
@@ -14,14 +14,14 @@ modes:
   - light
   - dark
 install:
-  target: github:sayzwx/dsh-xingkong-theme#3e3cbf28014926aa38a55c6cc9a1b7d4b15b075e
-  version: 1.13.0
-  commit: 3e3cbf28014926aa38a55c6cc9a1b7d4b15b075e
+  target: github:sayzwx/dsh-xingkong-theme#35af715e610f4073cea3ba8c22f8c1db4de008eb
+  version: 1.0.0
+  commit: 35af715e610f4073cea3ba8c22f8c1db4de008eb
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
 compatibility:
-  dsh: unverified
+  dsh: ^0.2.2-rc.5
   platform:
     - web
 screenshots:
@@ -29,34 +29,33 @@ screenshots:
   - https://raw.githubusercontent.com/sayzwx/dsh-xingkong-theme/3e3cbf28014926aa38a55c6cc9a1b7d4b15b075e/docs/screenshots/dark.jpg
 listScreenshot: https://raw.githubusercontent.com/sayzwx/dsh-xingkong-theme/3e3cbf28014926aa38a55c6cc9a1b7d4b15b075e/docs/screenshots/light.jpg
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
-    installCommand: improve
+    installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  suggestions: []
   scan:
-    commit: 3e3cbf28014926aa38a55c6cc9a1b7d4b15b075e
-    packageVersion: 1.13.0
+    commit: 35af715e610f4073cea3ba8c22f8c1db4de008eb
+    packageVersion: 1.0.0
     scannerVersion: static-v2
+    dshVersion: ^0.2.2-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:32:54.062Z
+    checkedAt: 2026-11-20T19:58:09.968Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 999
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-11-09T00:16:45.934Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-20T19:58:10.516Z
+metadataUpdatedAt: 2026-11-20T19:58:10.516Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-09T00:16:45.934Z
+updatedAt: 2026-11-20T19:58:10.516Z
