@@ -1,0 +1,22 @@
+url: https://github.com/DawnCHL/dsh-islands-ui
+name:
+  zh: 浮岛界面
+  en: Islands UI
+author: DawnCHL
+description: 浮岛式界面皮肤：把 DeepSeek Harness 的三栏界面拆成悬浮在纯色画布上的圆角岛屿，工作台分区参考 VSCode、Codex 这类开发工具；岛屿之间用 5px 间隙与 1px 发丝线分层；常驻左侧边栏以图标栏呈现，支持拖动排序、右键显隐与悬停名称；置顶会话聚合可折叠，强调色可预设或自定义，亮色与深色两套配色完整，另有平滑输入光标与设置页一键开关，关闭即还原原生外观。只重绘界面，不改动会话与插件数据。
+category: skin
+tags:
+  - appearance
+  - floating-island
+  - rounded-panels
+  - dark-mode
+  - sidebar
+  - vscode
+  - codex
+modes:
+  - light
+  - dark
+screenshots:
+  - https://raw.githubusercontent.com/DawnCHL/dsh-islands-ui/HEAD/assets/new_session.png
+  - https://raw.githubusercontent.com/DawnCHL/dsh-islands-ui/HEAD/assets/pin-session.png
+  - https://raw.githubusercontent.com/DawnCHL/dsh-islands-ui/HEAD/assets/settings.png
