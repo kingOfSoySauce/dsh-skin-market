@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Angel2518975237/deepseek-harness-hello-kitty-suite#1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818
-  version: 1.0.1
-  commit: 1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818
+  target: github:Angel2518975237/deepseek-harness-hello-kitty-suite#06761366d38b7e4287d6d19ed26da173d280deef
+  version: 1.0.2
+  commit: 06761366d38b7e4287d6d19ed26da173d280deef
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -46,19 +46,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 1b8cd7e74ae9bb5cc53b82d6ce55dc134d2cc818
-    packageVersion: 1.0.1
+    commit: 06761366d38b7e4287d6d19ed26da173d280deef
+    packageVersion: 1.0.2
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:42:46.376Z
+    checkedAt: 2026-11-20T19:56:49.472Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 21
 featuredRank: 1177
-releaseUpdatedAt: 2026-11-14T23:42:46.754Z
-metadataUpdatedAt: 2026-11-14T23:42:46.754Z
+starsSnapshot: 21
+releaseUpdatedAt: 2026-11-20T19:56:49.885Z
+metadataUpdatedAt: 2026-11-20T19:56:49.885Z
 starsUpdatedAt: 2026-11-14T06:29:10.128Z
-updatedAt: 2026-11-14T23:42:46.754Z
+updatedAt: 2026-11-20T19:56:49.885Z

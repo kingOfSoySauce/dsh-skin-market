@@ -36,10 +36,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Joxos__dsh-theme-gallery/4e13f8ee9df8d5e4f8421147fcaa9be27e8261a1/home.gif
-  - skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/home.png
-  - skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/conversation.png
 screenshots: []
 listScreenshot: skin-screenshots/Joxos__dsh-theme-gallery/4e13f8ee9df8d5e4f8421147fcaa9be27e8261a1/home.gif
 review:
@@ -69,9 +65,13 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1193
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/Joxos__dsh-theme-gallery/4e13f8ee9df8d5e4f8421147fcaa9be27e8261a1/home.gif
+  - skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/home.png
+  - skin-screenshots/Joxos__dsh-theme-gallery/54e3b635f72a22507f092850cae41c50d9b47b60/conversation.png
+featuredRank: 1193
 releaseUpdatedAt: 2026-11-19T20:22:43.276Z
-metadataUpdatedAt: 2026-11-19T20:22:43.276Z
+metadataUpdatedAt: 2026-11-20T19:56:33.985Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-19T20:22:43.276Z
+updatedAt: 2026-11-20T19:56:33.985Z

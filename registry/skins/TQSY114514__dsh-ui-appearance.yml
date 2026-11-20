@@ -16,22 +16,22 @@ modes:
   - light
   - dark
 install:
-  target: github:TQSY114514/dsh-ui-appearance#a7260bec8bece3c195899d8245f9604ace5f50cb
-  version: 0.1.28
-  commit: a7260bec8bece3c195899d8245f9604ace5f50cb
+  target: github:TQSY114514/dsh-ui-appearance#dcc7dc1a4e99bf705e25bfb16146ae98342d7630
+  version: 0.1.29
+  commit: dcc7dc1a4e99bf705e25bfb16146ae98342d7630
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-ui-appearance
-    packageVersion: 0.1.28
-    integrity: sha512-unIS7kXggOJE/sNjuwoYE6fwx04oHxpR5QqFlj879st8jmhkV4GfTQUHNemhihHuhphxu0neZj7z/i5iz2Nrpg==
-  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/a7260bec8bece3c195899d8245f9604ace5f50cb
+    packageVersion: 0.1.29
+    integrity: sha512-TsaQH/j4g3PoSXQXR+dqJmR34EYrPAVXtP35ite6B/v6TgJNeI5MLvt6JpcE1ArRbtf0gBd9crgjo2UoMlgkyw==
+  allowBuild: dsh-ui-appearance@https://codeload.github.com/TQSY114514/dsh-ui-appearance/tar.gz/dcc7dc1a4e99bf705e25bfb16146ae98342d7630
   npm:
     name: dsh-ui-appearance
-    version: 0.1.28
-    integrity: sha512-unIS7kXggOJE/sNjuwoYE6fwx04oHxpR5QqFlj879st8jmhkV4GfTQUHNemhihHuhphxu0neZj7z/i5iz2Nrpg==
+    version: 0.1.29
+    integrity: sha512-TsaQH/j4g3PoSXQXR+dqJmR34EYrPAVXtP35ite6B/v6TgJNeI5MLvt6JpcE1ArRbtf0gBd9crgjo2UoMlgkyw==
     repository: https://github.com/TQSY114514/dsh-ui-appearance
-    gitHead: a7260bec8bece3c195899d8245f9604ace5f50cb
+    gitHead: dcc7dc1a4e99bf705e25bfb16146ae98342d7630
 compatibility:
   dsh: unverified
   platform:
@@ -63,12 +63,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: a7260bec8bece3c195899d8245f9604ace5f50cb
-    packageVersion: 0.1.28
+    commit: dcc7dc1a4e99bf705e25bfb16146ae98342d7630
+    packageVersion: 0.1.29
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-11-09T07:12:58.998Z
+    checkedAt: 2026-11-20T19:56:47.047Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -77,7 +77,7 @@ license:
   commercialUse: true
 featuredRank: 36
 starsSnapshot: 32
-releaseUpdatedAt: 2026-11-09T07:13:01.004Z
-metadataUpdatedAt: 2026-11-09T07:13:01.004Z
+releaseUpdatedAt: 2026-11-20T19:56:48.351Z
+metadataUpdatedAt: 2026-11-20T19:56:48.351Z
 starsUpdatedAt: 2026-11-15T20:41:12.475Z
-updatedAt: 2026-11-15T20:41:12.475Z
+updatedAt: 2026-11-20T19:56:48.351Z

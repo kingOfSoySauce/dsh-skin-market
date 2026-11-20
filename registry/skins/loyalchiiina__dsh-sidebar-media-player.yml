@@ -18,21 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:loyalchiiina/dsh-sidebar-media-player#b21bde2370023aa6bd0c515cc30b61d72e3b36b4
-  version: 0.2.7
-  commit: b21bde2370023aa6bd0c515cc30b61d72e3b36b4
+  target: github:loyalchiiina/dsh-sidebar-media-player#065d01532d7fb0a1b8e0dc45c40e148c6a7c86a9
+  version: 0.2.21
+  commit: 065d01532d7fb0a1b8e0dc45c40e148c6a7c86a9
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-sidebar-media-player
-    packageVersion: 0.2.7
-    integrity: sha512-8rupys+mnrQ3Cn9kmJL5F36OHaWKRqBgcXRv8rVjDPCTOUl0cT/4lybsT23DxfiZDMagcG+386gt5hQ7lhLd+Q==
+    packageVersion: 0.2.21
+    integrity: sha512-bDCAahZByaVxgeY+f+w3CAuwTiiT8ptoh92jSQ6mVzZLEYjy19lJp43ptuYxKEYz11DbKFNtSkZwXqyOqcWpvA==
   npm:
     name: dsh-sidebar-media-player
-    version: 0.2.7
-    integrity: sha512-8rupys+mnrQ3Cn9kmJL5F36OHaWKRqBgcXRv8rVjDPCTOUl0cT/4lybsT23DxfiZDMagcG+386gt5hQ7lhLd+Q==
+    version: 0.2.21
+    integrity: sha512-bDCAahZByaVxgeY+f+w3CAuwTiiT8ptoh92jSQ6mVzZLEYjy19lJp43ptuYxKEYz11DbKFNtSkZwXqyOqcWpvA==
     repository: https://github.com/loyalchiiina/dsh-sidebar-media-player
-    gitHead: b21bde2370023aa6bd0c515cc30b61d72e3b36b4
+    gitHead: 065d01532d7fb0a1b8e0dc45c40e148c6a7c86a9
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
@@ -55,20 +55,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: b21bde2370023aa6bd0c515cc30b61d72e3b36b4
-    packageVersion: 0.2.7
+    commit: 065d01532d7fb0a1b8e0dc45c40e148c6a7c86a9
+    packageVersion: 0.2.21
     scannerVersion: static-v2
     dshVersion: ">=0.2.2-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-18T20:25:28.480Z
+    checkedAt: 2026-11-20T19:58:56.569Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1390
-starsSnapshot: 0
-releaseUpdatedAt: 2026-11-18T20:25:29.258Z
-metadataUpdatedAt: 2026-11-18T20:25:29.258Z
-starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-18T20:25:29.258Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-20T19:58:57.065Z
+metadataUpdatedAt: 2026-11-20T19:58:57.065Z
+starsUpdatedAt: 2026-11-20T19:58:57.065Z
+updatedAt: 2026-11-20T19:58:57.065Z
