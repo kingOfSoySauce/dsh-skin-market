@@ -5,7 +5,7 @@ name:
 author: mantonlove
 description: DSH Background — 上传自定义图片或 GIF 背景，调整毛玻璃、透明度、字体与颜色；支持 DSH 0.2.2-rc.1
 repo: https://github.com/mantonlove/dsh-prism-plugin
-package: "@deepseek-ai/dsh-client-ui-prism"
+package: dsh-prism-plugin
 rowId: ui-prism
 category: skin
 tags:
@@ -17,12 +17,15 @@ modes:
   - light
   - dark
 install:
-  target: github:mantonlove/dsh-prism-plugin#2a09706fa1ca772ddca415fc3ac2ced9b8dee4b0
-  version: 2.0.10
-  commit: 2a09706fa1ca772ddca415fc3ac2ced9b8dee4b0
+  target: github:mantonlove/dsh-prism-plugin#f46dd34e19853dfdd510d209bffd6f9e52c08d46
+  version: 3.0.0
+  commit: f46dd34e19853dfdd510d209bffd6f9e52c08d46
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-prism-plugin
+    packageVersion: 3.0.0
+    integrity: sha512-MvazbQGhsTIBxEa2WC4bjGDga7Eml4RF9XNdWuzTxaMqvZFIdj+TisuvuwFn2laN4+AltgotCQF3JuFljuKffA==
 compatibility:
   dsh: ^0.2.2-rc.1
   platform:
@@ -45,20 +48,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 2a09706fa1ca772ddca415fc3ac2ced9b8dee4b0
-    packageVersion: 2.0.10
+    commit: f46dd34e19853dfdd510d209bffd6f9e52c08d46
+    packageVersion: 3.0.0
     scannerVersion: static-v2
     dshVersion: ^0.2.2-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-11-18T20:23:09.651Z
+    checkedAt: 2026-11-21T19:03:22.381Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 1048
-releaseUpdatedAt: 2026-11-18T20:23:11.244Z
-metadataUpdatedAt: 2026-11-18T20:23:11.244Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-21T19:03:24.013Z
+metadataUpdatedAt: 2026-11-21T19:03:24.013Z
 starsUpdatedAt: 2026-10-30T03:53:41.067Z
-updatedAt: 2026-11-18T20:23:11.244Z
+updatedAt: 2026-11-21T19:03:24.013Z

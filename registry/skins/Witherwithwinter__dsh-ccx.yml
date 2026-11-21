@@ -15,18 +15,18 @@ modes:
   - light
   - dark
 install:
-  target: github:Witherwithwinter/dsh-ccx#1c8c268d2b1a9bcf9b8f750a91021097dc656256
-  version: 0.8.9
-  commit: 1c8c268d2b1a9bcf9b8f750a91021097dc656256
+  target: github:Witherwithwinter/dsh-ccx#665605cda66cc4107eeeb1fcd9bb21fe9994a243
+  version: 0.9.0
+  commit: 665605cda66cc4107eeeb1fcd9bb21fe9994a243
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
   npm:
     name: dsh-ccx
-    version: 0.8.9
-    integrity: sha512-bMgohBlLJugCcpkp+fzSbWcqNzBqacd33k9zjeoRrnI9rP7kxBxBUfmSKsrWXHiHq64aiSk8QLpLXoKISnT0+Q==
+    version: 0.9.0
+    integrity: sha512-QwwsLhZxAotpNHBkJnaJAfOQ2C2Tw14ESzshFzeO+i185V54WchCXEh1+6iLpxe508R2WYiA+Ju2HEpn9IjBZQ==
     repository: https://github.com/Witherwithwinter/dsh-ccx
-    gitHead: 1c8c268d2b1a9bcf9b8f750a91021097dc656256
+    gitHead: 665605cda66cc4107eeeb1fcd9bb21fe9994a243
 compatibility:
   dsh: ^0.8.9
   platform:
@@ -36,34 +36,35 @@ screenshots:
   - https://raw.githubusercontent.com/Witherwithwinter/dsh-ccx/8fcf6b4edc4b146378b48cd56ccafd3ea141604a/assets/preview-mountain.png
 listScreenshot: https://raw.githubusercontent.com/Witherwithwinter/dsh-ccx/8fcf6b4edc4b146378b48cd56ccafd3ea141604a/assets/preview-home.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.8.9 未被本次检测范围 ^0.9.0 完全覆盖（固定版本 665605cda66cc4107eeeb1fcd9bb21fe9994a243）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 1c8c268d2b1a9bcf9b8f750a91021097dc656256
-    packageVersion: 0.8.9
+    commit: 665605cda66cc4107eeeb1fcd9bb21fe9994a243
+    packageVersion: 0.9.0
     scannerVersion: static-v2
-    dshVersion: ^0.8.9
+    dshVersion: ^0.9.0
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:45:13.615Z
+    checkedAt: 2026-11-21T19:03:05.005Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 5
 featuredRank: 999
-releaseUpdatedAt: 2026-11-09T00:14:48.500Z
-metadataUpdatedAt: 2026-11-14T23:45:18.546Z
+starsSnapshot: 5
+releaseUpdatedAt: 2026-11-21T19:03:10.404Z
+metadataUpdatedAt: 2026-11-21T19:03:10.404Z
 starsUpdatedAt: 2026-11-18T20:22:04.502Z
-updatedAt: 2026-11-18T20:22:04.502Z
+updatedAt: 2026-11-21T19:03:10.404Z

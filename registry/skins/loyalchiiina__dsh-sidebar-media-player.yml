@@ -18,21 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:loyalchiiina/dsh-sidebar-media-player#065d01532d7fb0a1b8e0dc45c40e148c6a7c86a9
-  version: 0.2.21
-  commit: 065d01532d7fb0a1b8e0dc45c40e148c6a7c86a9
+  target: github:loyalchiiina/dsh-sidebar-media-player#83eb63d100f21bd44e48fa5a9491da0dcd1ed098
+  version: 0.2.42
+  commit: 83eb63d100f21bd44e48fa5a9491da0dcd1ed098
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-sidebar-media-player
-    packageVersion: 0.2.21
-    integrity: sha512-bDCAahZByaVxgeY+f+w3CAuwTiiT8ptoh92jSQ6mVzZLEYjy19lJp43ptuYxKEYz11DbKFNtSkZwXqyOqcWpvA==
+    packageVersion: 0.2.42
+    integrity: sha512-+DTlMFWyLZinumBB/fzLLCugra9OYIM9R8VZCOjZZBB5B5OkTIUgmRkCewv3XnUq0oIgom2Z3F5tJu/qOZk1Dw==
   npm:
     name: dsh-sidebar-media-player
-    version: 0.2.21
-    integrity: sha512-bDCAahZByaVxgeY+f+w3CAuwTiiT8ptoh92jSQ6mVzZLEYjy19lJp43ptuYxKEYz11DbKFNtSkZwXqyOqcWpvA==
+    version: 0.2.42
+    integrity: sha512-+DTlMFWyLZinumBB/fzLLCugra9OYIM9R8VZCOjZZBB5B5OkTIUgmRkCewv3XnUq0oIgom2Z3F5tJu/qOZk1Dw==
     repository: https://github.com/loyalchiiina/dsh-sidebar-media-player
-    gitHead: 065d01532d7fb0a1b8e0dc45c40e148c6a7c86a9
+    gitHead: 83eb63d100f21bd44e48fa5a9491da0dcd1ed098
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
@@ -55,20 +55,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 065d01532d7fb0a1b8e0dc45c40e148c6a7c86a9
-    packageVersion: 0.2.21
+    commit: 83eb63d100f21bd44e48fa5a9491da0dcd1ed098
+    packageVersion: 0.2.42
     scannerVersion: static-v2
     dshVersion: ">=0.2.2-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-20T19:58:56.569Z
+    checkedAt: 2026-11-21T19:04:26.718Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1390
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-20T19:58:57.065Z
-metadataUpdatedAt: 2026-11-20T19:58:57.065Z
+releaseUpdatedAt: 2026-11-21T19:04:27.496Z
+metadataUpdatedAt: 2026-11-21T19:04:27.496Z
 starsUpdatedAt: 2026-11-20T19:58:57.065Z
-updatedAt: 2026-11-20T19:58:57.065Z
+updatedAt: 2026-11-21T19:04:27.496Z

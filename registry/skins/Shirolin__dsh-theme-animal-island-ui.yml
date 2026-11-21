@@ -18,21 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Shirolin/dsh-theme-animal-island-ui#513b8934bfc4ea92e38aa19e2e3407b30df6f98c
-  version: 0.3.38
-  commit: 513b8934bfc4ea92e38aa19e2e3407b30df6f98c
+  target: github:Shirolin/dsh-theme-animal-island-ui#ea40b248aedeff5ff95c6665bb9dd14967279587
+  version: 0.3.39
+  commit: ea40b248aedeff5ff95c6665bb9dd14967279587
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-theme-animal-island-ui
-    packageVersion: 0.3.38
-    integrity: sha512-tRinhod6sOsKEC0ZnbueCksA24DKA+eY5goFYYXvZ/FQIlXuGEcr8N9KG9PV/afnanqzCtp3g/Lk/6KW3k51ew==
+    packageVersion: 0.3.39
+    integrity: sha512-Wh85EOFRXUIaaj/qE847YevLfN44UwnhVtn4uqd2VQfj9lP/jVLGNH03CfXMg8c17+cWMnmAhrRZKAagyaEvJA==
   npm:
     name: dsh-theme-animal-island-ui
-    version: 0.3.38
-    integrity: sha512-tRinhod6sOsKEC0ZnbueCksA24DKA+eY5goFYYXvZ/FQIlXuGEcr8N9KG9PV/afnanqzCtp3g/Lk/6KW3k51ew==
+    version: 0.3.39
+    integrity: sha512-Wh85EOFRXUIaaj/qE847YevLfN44UwnhVtn4uqd2VQfj9lP/jVLGNH03CfXMg8c17+cWMnmAhrRZKAagyaEvJA==
     repository: https://github.com/Shirolin/dsh-theme-animal-island-ui
-    gitHead: 513b8934bfc4ea92e38aa19e2e3407b30df6f98c
+    gitHead: ea40b248aedeff5ff95c6665bb9dd14967279587
 compatibility:
   dsh: 0.1.5-rc.3
   platform:
@@ -59,20 +59,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 513b8934bfc4ea92e38aa19e2e3407b30df6f98c
-    packageVersion: 0.3.38
+    commit: ea40b248aedeff5ff95c6665bb9dd14967279587
+    packageVersion: 0.3.39
     scannerVersion: static-v2
     dshVersion: 0.1.5-rc.3
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:46:09.350Z
+    checkedAt: 2026-11-21T19:03:24.741Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 1437
-releaseUpdatedAt: 2026-11-14T23:46:11.373Z
-metadataUpdatedAt: 2026-11-14T23:46:11.373Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-21T19:03:26.754Z
+metadataUpdatedAt: 2026-11-21T19:03:26.754Z
 starsUpdatedAt: 2026-11-15T20:40:53.617Z
-updatedAt: 2026-11-15T20:40:53.617Z
+updatedAt: 2026-11-21T19:03:26.754Z

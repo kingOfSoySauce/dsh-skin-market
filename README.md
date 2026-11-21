@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-18**：[深深桌宠手机版](https://github.com/Jcnet-9527/dsh-Jpet-phone)（Jcnet-9527）——把 PC2005-cloud/dsh-pet v0.3.7 的大肥鱼桌宠搬到安卓手机版：插件版常驻页面、可拖动、被戳会回应，随会话状态换动作，还能聊天和查余额；同仓库另带独立安卓悬浮 App，不装插件也能在系统最上层常驻，语音识别与朗读都在手机本地跑。详见[收录日志](./docs/recently-added.md#recent-2026-11-18-jcnet-9527-dsh-jpet-phone)。
+- **2026-11-22**：[浮岛界面](https://github.com/DawnCHL/dsh-islands-ui)（DawnCHL）——浮岛式界面皮肤：把 DeepSeek Harness 的三栏界面拆成悬浮在纯色画布上的圆角岛屿，工作台分区参考 VSCode、Codex 这类开发工具；岛屿之间用 5px 间隙与 1px 发丝线分层；常驻左侧边栏以图标栏呈现，支持拖动排序、右键显隐与悬停名称；置顶会话聚合可折叠，强调色可预设或自定义，亮色与深色两套配色完整，另有平滑输入光标与设置页一键开关，关闭即还原原生外观。只重绘界面，不改动会话与插件数据。详见[收录日志](./docs/recently-added.md#recent-2026-11-22-dawnchl-dsh-islands-ui)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

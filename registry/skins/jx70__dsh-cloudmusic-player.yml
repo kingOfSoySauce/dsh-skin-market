@@ -21,8 +21,17 @@ install:
   version: 0.5.0
   commit: c95a77bec9a6557fd1c95923e248644be4126bee
   desktop:
-    mode: manual-only
-    reason: npm-package-not-found
+    mode: managed
+    registry: npm
+    packageName: dsh-cloudmusic-player
+    packageVersion: 0.5.0
+    integrity: sha512-UwGVcyuc7pNuUIm4f8PAFpp8TQIuaHjexyDmDimMns+zksHotgFhVrvy0X03jgOPr1KkLgCWBMz5LVQqKG403w==
+  npm:
+    name: dsh-cloudmusic-player
+    version: 0.5.0
+    integrity: sha512-UwGVcyuc7pNuUIm4f8PAFpp8TQIuaHjexyDmDimMns+zksHotgFhVrvy0X03jgOPr1KkLgCWBMz5LVQqKG403w==
+    repository: https://github.com/jx70/dsh-cloudmusic-player
+    gitHead: c95a77bec9a6557fd1c95923e248644be4126bee
 compatibility:
   dsh: 0.1.0--rc.6-4b6bfb.svg || 0.1.0-rc.6
   platform:
@@ -56,9 +65,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 1526
-releaseUpdatedAt: 2026-11-15T20:42:55.100Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-21T19:04:20.903Z
 metadataUpdatedAt: 2026-11-15T20:42:55.100Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-15T20:42:55.100Z
+updatedAt: 2026-11-21T19:04:20.903Z

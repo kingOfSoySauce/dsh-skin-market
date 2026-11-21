@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:d-dev0101/open-sea-skin#d111bce1a7bec63ae4696cc1e81476924c96304c
+  target: github:d-dev0101/open-sea-skin#b93ac337d16e54f6a626d76ed87ec372d82a0662
   version: 1.2.9
-  commit: d111bce1a7bec63ae4696cc1e81476924c96304c
+  commit: b93ac337d16e54f6a626d76ed87ec372d82a0662
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,6 +28,10 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/home.png
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/conversation.png
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/settings.png
 screenshots:
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-dark-overview-40.gif
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-light-overview-40.gif
@@ -53,25 +57,21 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: d111bce1a7bec63ae4696cc1e81476924c96304c
+    commit: b93ac337d16e54f6a626d76ed87ec372d82a0662
     packageVersion: 1.2.9
     scannerVersion: static-v2
     dshVersion: 0.1.0-rc.6
     mode: static
     result: pass
-    checkedAt: 2026-11-14T00:22:43.461Z
+    checkedAt: 2026-11-21T19:02:08.274Z
     findings: []
 license:
   code: MIT
   commercialUse: true
   notice: Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1.
-starsSnapshot: 399
-marketScreenshots:
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/home.png
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/conversation.png
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/settings.png
 featuredRank: 0
-releaseUpdatedAt: 2026-11-14T00:22:47.971Z
-metadataUpdatedAt: 2026-11-15T20:40:53.617Z
-starsUpdatedAt: 2026-11-20T19:56:33.985Z
-updatedAt: 2026-11-20T19:56:33.985Z
+starsSnapshot: 400
+releaseUpdatedAt: 2026-11-21T19:02:12.947Z
+metadataUpdatedAt: 2026-11-21T19:02:12.947Z
+starsUpdatedAt: 2026-11-21T19:02:12.947Z
+updatedAt: 2026-11-21T19:02:12.947Z

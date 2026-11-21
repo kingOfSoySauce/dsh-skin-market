@@ -17,21 +17,15 @@ modes:
   - light
   - dark
 install:
-  target: github:phoenixlucky/dsh-theme#09a4eea77e7c7fcf0753d159cf1cf4f13f285d14
-  version: 1.2.4
-  commit: 09a4eea77e7c7fcf0753d159cf1cf4f13f285d14
+  target: github:phoenixlucky/dsh-theme#9b7a575b0a1415e7c9c1b8f9c06d57a755ee92d8
+  version: 1.2.7
+  commit: 9b7a575b0a1415e7c9c1b8f9c06d57a755ee92d8
   desktop:
     mode: managed
     registry: npm
     packageName: "@tinyforge/dsh-theme"
-    packageVersion: 1.2.4
-    integrity: sha512-32w/3K1uAtyTRu9QgNl96xbBizaTWWiVG6KZPcNwDVtfQbp81KNLVJNRsCZNmsb5LKCACv6R9ptPjBnbESC29g==
-  npm:
-    name: "@tinyforge/dsh-theme"
-    version: 1.2.4
-    integrity: sha512-32w/3K1uAtyTRu9QgNl96xbBizaTWWiVG6KZPcNwDVtfQbp81KNLVJNRsCZNmsb5LKCACv6R9ptPjBnbESC29g==
-    repository: https://github.com/phoenixlucky/dsh-theme
-    gitHead: 09a4eea77e7c7fcf0753d159cf1cf4f13f285d14
+    packageVersion: 1.2.7
+    integrity: sha512-1b+GPyJtkN28RZymDZ0R3fSbA3IvWQgo046WshNDTCorExEfIA7uWdWlwNHpd20aaxUFZZeQLC0M5YOh4aPxSg==
 compatibility:
   dsh: 0.2.1-rc.3
   platform:
@@ -58,20 +52,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 09a4eea77e7c7fcf0753d159cf1cf4f13f285d14
-    packageVersion: 1.2.4
+    commit: 9b7a575b0a1415e7c9c1b8f9c06d57a755ee92d8
+    packageVersion: 1.2.7
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.3 <0.3.0 || =0.2.2-alpha.2"
     mode: static
     result: pass
-    checkedAt: 2026-11-20T19:59:06.167Z
+    checkedAt: 2026-11-21T19:06:13.119Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1183
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-20T19:59:08.541Z
-metadataUpdatedAt: 2026-11-20T19:59:08.541Z
+releaseUpdatedAt: 2026-11-21T19:06:16.762Z
+metadataUpdatedAt: 2026-11-21T19:06:16.762Z
 starsUpdatedAt: 2026-11-14T06:29:10.128Z
-updatedAt: 2026-11-20T19:59:08.541Z
+updatedAt: 2026-11-21T19:06:16.762Z
