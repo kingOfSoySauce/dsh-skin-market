@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:LeoLee0097/dsh-desktop-acrylic#b4c075446c2d6588f1e4fc6d4ddd9926cb904002
-  version: 0.9.23
-  commit: b4c075446c2d6588f1e4fc6d4ddd9926cb904002
+  target: github:LeoLee0097/dsh-desktop-acrylic#3f6c74ddf6d42048fc67678710489bddc82a5e93
+  version: 0.9.24
+  commit: 3f6c74ddf6d42048fc67678710489bddc82a5e93
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -42,20 +42,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: b4c075446c2d6588f1e4fc6d4ddd9926cb904002
-    packageVersion: 0.9.23
+    commit: 3f6c74ddf6d42048fc67678710489bddc82a5e93
+    packageVersion: 0.9.24
     scannerVersion: static-v2
     dshVersion: ^0.2.0-rc.1 || ^0.1.0-rc.6 || ^0.2.1-rc.2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:47:57.254Z
+    checkedAt: 2026-11-21T19:04:22.987Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 999
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-11-14T23:47:57.602Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-21T19:04:24.182Z
+metadataUpdatedAt: 2026-11-21T19:04:24.182Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-14T23:47:57.602Z
+updatedAt: 2026-11-21T19:04:24.182Z

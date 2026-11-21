@@ -14,21 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Respawn-ID/dsh-rhine-splash#9808714bf87bae1066e74167039b820aa4f7cbd2
-  version: 0.2.9
-  commit: 9808714bf87bae1066e74167039b820aa4f7cbd2
+  target: github:Respawn-ID/dsh-rhine-splash#038369a4e9183dce3c5dce0dd021c915bb237471
+  version: 0.2.10
+  commit: 038369a4e9183dce3c5dce0dd021c915bb237471
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-rhine-splash
-    packageVersion: 0.2.9
-    integrity: sha512-2andVyVL/Nb9mupxEjhYSFAHUc1CXihHSq9BvtMCWDAEoSF1CmstbAE2EgMzOu/lWuSNvq2N6WyX9xrv0h0giw==
+    packageVersion: 0.2.10
+    integrity: sha512-RdWwErUIB5FJtz5ETbrJlqyc7yVPlgx6FxqK6DI4QmN+Ez9JOlGrLspKDz+U+QOdqhuADUW9Uv2lWoWfNXdw7Q==
   npm:
     name: dsh-rhine-splash
-    version: 0.2.9
-    integrity: sha512-2andVyVL/Nb9mupxEjhYSFAHUc1CXihHSq9BvtMCWDAEoSF1CmstbAE2EgMzOu/lWuSNvq2N6WyX9xrv0h0giw==
+    version: 0.2.10
+    integrity: sha512-RdWwErUIB5FJtz5ETbrJlqyc7yVPlgx6FxqK6DI4QmN+Ez9JOlGrLspKDz+U+QOdqhuADUW9Uv2lWoWfNXdw7Q==
     repository: https://github.com/Respawn-ID/dsh-rhine-splash
-    gitHead: 9808714bf87bae1066e74167039b820aa4f7cbd2
+    gitHead: 038369a4e9183dce3c5dce0dd021c915bb237471
 compatibility:
   dsh: 0.2.1-rc.5
   platform:
@@ -54,20 +54,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 9808714bf87bae1066e74167039b820aa4f7cbd2
-    packageVersion: 0.2.9
+    commit: 038369a4e9183dce3c5dce0dd021c915bb237471
+    packageVersion: 0.2.10
     scannerVersion: static-v2
     dshVersion: 0.2.1-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-11-09T07:13:02.277Z
+    checkedAt: 2026-11-21T19:02:26.213Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 26
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-09T07:13:02.774Z
-metadataUpdatedAt: 2026-11-09T07:13:02.774Z
+starsSnapshot: 26
+releaseUpdatedAt: 2026-11-21T19:02:28.862Z
+metadataUpdatedAt: 2026-11-21T19:02:28.862Z
 starsUpdatedAt: 2026-11-10T09:19:16.352Z
-updatedAt: 2026-11-10T09:19:16.352Z
+updatedAt: 2026-11-21T19:02:28.862Z

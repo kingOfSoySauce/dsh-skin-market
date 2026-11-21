@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-18**: [ShenShen Pet Mobile](https://github.com/Jcnet-9527/dsh-Jpet-phone) (Jcnet-9527). See the [recent additions log](./docs/recently-added.md#recent-2026-11-18-jcnet-9527-dsh-jpet-phone).
+- **2026-11-22**: [Islands UI](https://github.com/DawnCHL/dsh-islands-ui) (DawnCHL). See the [recent additions log](./docs/recently-added.md#recent-2026-11-22-dawnchl-dsh-islands-ui).
 
 See the [recent additions log](./docs/recently-added.md).
 
