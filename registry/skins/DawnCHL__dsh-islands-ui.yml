@@ -1,9 +1,12 @@
-url: https://github.com/DawnCHL/dsh-islands-ui
+id: dawnchl.dsh.islands.ui
 name:
   zh: 浮岛界面
   en: Islands UI
 author: DawnCHL
 description: 浮岛式界面皮肤：把 DeepSeek Harness 的三栏界面拆成悬浮在纯色画布上的圆角岛屿，工作台分区参考 VSCode、Codex 这类开发工具；岛屿之间用 5px 间隙与 1px 发丝线分层；常驻左侧边栏以图标栏呈现，支持拖动排序、右键显隐与悬停名称；置顶会话聚合可折叠，强调色可预设或自定义，亮色与深色两套配色完整，另有平滑输入光标与设置页一键开关，关闭即还原原生外观。只重绘界面，不改动会话与插件数据。
+repo: https://github.com/DawnCHL/dsh-islands-ui
+package: dsh-islands-ui
+rowId: islands-ui
 category: skin
 tags:
   - appearance
@@ -16,7 +19,40 @@ tags:
 modes:
   - light
   - dark
+install:
+  target: github:DawnCHL/dsh-islands-ui#aeacfadc71a5e3cd507218cb745f23a93720ade8
+  version: 1.2.5
+  commit: aeacfadc71a5e3cd507218cb745f23a93720ade8
+compatibility:
+  dsh: ">=0.2.2-rc.1 <0.3.0-0"
+  platform:
+    - web
 screenshots:
   - https://raw.githubusercontent.com/DawnCHL/dsh-islands-ui/HEAD/assets/new_session.png
   - https://raw.githubusercontent.com/DawnCHL/dsh-islands-ui/HEAD/assets/pin-session.png
   - https://raw.githubusercontent.com/DawnCHL/dsh-islands-ui/HEAD/assets/settings.png
+  - https://raw.githubusercontent.com/DawnCHL/dsh-islands-ui/HEAD/assets/workspace-closed.png
+  - https://raw.githubusercontent.com/DawnCHL/dsh-islands-ui/HEAD/assets/all-panels.png
+  - https://raw.githubusercontent.com/DawnCHL/dsh-islands-ui/HEAD/assets/promo-cover.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 6
+releaseUpdatedAt: 2026-11-21T06:15:43.172Z
+metadataUpdatedAt: 2026-11-21T06:15:43.172Z
+starsUpdatedAt: 2026-11-21T06:15:43.172Z
+updatedAt: 2026-11-21T06:15:43.172Z
