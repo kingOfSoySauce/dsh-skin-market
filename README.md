@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-22**：[浮岛界面](https://github.com/DawnCHL/dsh-islands-ui)（DawnCHL）——浮岛式界面皮肤：把 DeepSeek Harness 的三栏界面拆成悬浮在纯色画布上的圆角岛屿，工作台分区参考 VSCode、Codex 这类开发工具；岛屿之间用 5px 间隙与 1px 发丝线分层；常驻左侧边栏以图标栏呈现，支持拖动排序、右键显隐与悬停名称；置顶会话聚合可折叠，强调色可预设或自定义，亮色与深色两套配色完整，另有平滑输入光标与设置页一键开关，关闭即还原原生外观。只重绘界面，不改动会话与插件数据。详见[收录日志](./docs/recently-added.md#recent-2026-11-22-dawnchl-dsh-islands-ui)。
+- **2026-11-23**：[墨街主题](https://github.com/Shirolin/dsh-theme-splat-ui)（Shirolin）——斯普拉遁 2 风格墨街主题：日间采用官方绿/奶油/洋红三色涂地画布铺设鱿鱼纹、泼溅与网点，夜间切换至炭黑广场并保留霓虹墨色。包含透明墨鱼品牌侧栏、独立洋红新会话胶囊、带墨尾的荧光绿选中行、24 格大招能量槽启动页、黑描边滴墨输入框与「设置 → 插件 → 墨街外观」（纸白 20%/均衡 50%/涂地 100% 预设、墨度滑杆、三档主墨色、diff 语法与装饰/字体开关），仅通过公开 ThemeRuntime Token 与 Slot 实现，停用即还原原生外观。详见[收录日志](./docs/recently-added.md#recent-2026-11-23-shirolin-dsh-theme-splat-ui)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

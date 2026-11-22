@@ -17,25 +17,29 @@ modes:
   - light
   - dark
 install:
-  target: github:MoonSand/dsh-ui-optimize#117a0132713c01574a4341113f32930de1ab33bf
-  version: 0.12.1
-  commit: 117a0132713c01574a4341113f32930de1ab33bf
+  target: github:MoonSand/dsh-ui-optimize#9cd387d574c1c02254617eb9b65129225c0d5180
+  version: 0.12.5
+  commit: 9cd387d574c1c02254617eb9b65129225c0d5180
   desktop:
     mode: managed
     registry: npm
     packageName: "@moonsand/dsh-ui-optimize"
-    packageVersion: 0.12.1
-    integrity: sha512-p/Bl1iOu/oQjwvkNIWfZ3GUPX0nNw7nc6kID8kpaixEeYlc/7lvnfCqUGAGEo++Sv5jqc/qIRpP4zb0THJD2qQ==
+    packageVersion: 0.12.5
+    integrity: sha512-0UrTM/g4gJVEYubr3bEg0RbTPNe6Skw+fqcj0I28z1nMVbYNIB9A84NDaVt26CFIZakpfkQKYe33XZH3xpfQ/A==
   npm:
     name: "@moonsand/dsh-ui-optimize"
-    version: 0.12.1
-    integrity: sha512-p/Bl1iOu/oQjwvkNIWfZ3GUPX0nNw7nc6kID8kpaixEeYlc/7lvnfCqUGAGEo++Sv5jqc/qIRpP4zb0THJD2qQ==
+    version: 0.12.5
+    integrity: sha512-0UrTM/g4gJVEYubr3bEg0RbTPNe6Skw+fqcj0I28z1nMVbYNIB9A84NDaVt26CFIZakpfkQKYe33XZH3xpfQ/A==
     repository: https://github.com/MoonSand/dsh-ui-optimize
-    gitHead: 117a0132713c01574a4341113f32930de1ab33bf
+    gitHead: 9cd387d574c1c02254617eb9b65129225c0d5180
 compatibility:
   dsh: ">=0.2.1-rc.3"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/home.png
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/conversation.png
+  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/settings.png
 screenshots: []
 review:
   compatibility: verified
@@ -53,24 +57,20 @@ health:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 117a0132713c01574a4341113f32930de1ab33bf
-    packageVersion: 0.12.1
+    commit: 9cd387d574c1c02254617eb9b65129225c0d5180
+    packageVersion: 0.12.5
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.3"
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:45:15.319Z
+    checkedAt: 2026-11-22T23:26:20.985Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/home.png
-  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/conversation.png
-  - skin-screenshots/MoonSand__dsh-ui-optimize/3292f89a0b7a427955fa32657a423a262663648e/settings.png
 featuredRank: 1194
-releaseUpdatedAt: 2026-11-15T20:45:15.591Z
-metadataUpdatedAt: 2026-11-16T09:48:54.442Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-22T23:26:21.170Z
+metadataUpdatedAt: 2026-11-22T23:26:21.170Z
 starsUpdatedAt: 2026-11-14T06:29:27.360Z
-updatedAt: 2026-11-16T09:48:54.442Z
+updatedAt: 2026-11-22T23:26:21.170Z

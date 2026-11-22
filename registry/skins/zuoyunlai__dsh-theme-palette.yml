@@ -14,21 +14,21 @@ modes:
   - light
   - dark
 install:
-  target: github:zuoyunlai/dsh-theme-palette#1b1a20be51534407368254bc2f249cb3eeed288e
-  version: 1.13.6
-  commit: 1b1a20be51534407368254bc2f249cb3eeed288e
+  target: github:zuoyunlai/dsh-theme-palette#7a9548b2d45988370e89ad8442df68bf5b8c2bc9
+  version: 1.13.7
+  commit: 7a9548b2d45988370e89ad8442df68bf5b8c2bc9
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-theme-palette
-    packageVersion: 1.13.6
-    integrity: sha512-mlOeox061w2eHdoFfed0diy/7NeMa3aqVVtod41ZayuZ4SmtCNBtvp0wCh6uPLTyFoXwkf6FlY1Cq5/wlIYnig==
+    packageVersion: 1.13.7
+    integrity: sha512-lNYvSmaB5iUN/PHQ6yCl7WQFdCGMVRizSk+1JtCLwVviAb0J1TiaU+NUq36FMUqGoUz2gJgdpcZOeb9Dwylgvw==
   npm:
     name: dsh-theme-palette
-    version: 1.13.6
-    integrity: sha512-mlOeox061w2eHdoFfed0diy/7NeMa3aqVVtod41ZayuZ4SmtCNBtvp0wCh6uPLTyFoXwkf6FlY1Cq5/wlIYnig==
+    version: 1.13.7
+    integrity: sha512-lNYvSmaB5iUN/PHQ6yCl7WQFdCGMVRizSk+1JtCLwVviAb0J1TiaU+NUq36FMUqGoUz2gJgdpcZOeb9Dwylgvw==
     repository: https://github.com/zuoyunlai/dsh-theme-palette
-    gitHead: 1b1a20be51534407368254bc2f249cb3eeed288e
+    gitHead: 7a9548b2d45988370e89ad8442df68bf5b8c2bc9
 compatibility:
   dsh: ">=0.2.1-rc.1"
   platform:
@@ -54,20 +54,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 1b1a20be51534407368254bc2f249cb3eeed288e
-    packageVersion: 1.13.6
+    commit: 7a9548b2d45988370e89ad8442df68bf5b8c2bc9
+    packageVersion: 1.13.7
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:46:31.329Z
+    checkedAt: 2026-11-22T23:24:34.725Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 999
-releaseUpdatedAt: 2026-11-07T05:34:03.024Z
-metadataUpdatedAt: 2026-11-14T23:46:32.317Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-22T23:24:35.743Z
+metadataUpdatedAt: 2026-11-22T23:24:35.743Z
 starsUpdatedAt: 2026-11-16T21:57:57.826Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-22T23:24:35.743Z

@@ -14,12 +14,18 @@ modes:
   - light
   - dark
 install:
-  target: github:CLICGGER-TYPES/dsh-piggy#480142ffd646dae81ed8e244ea7f365c29bd08e4
-  version: 0.37.3-rc.3
-  commit: 480142ffd646dae81ed8e244ea7f365c29bd08e4
+  target: github:CLICGGER-TYPES/dsh-piggy#395eb1a196ec059fbf886adbdcff716f7e251ac7
+  version: 0.37.3-rc.4
+  commit: 395eb1a196ec059fbf886adbdcff716f7e251ac7
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-piggy
+    version: 0.37.3-rc.4
+    integrity: sha512-roOWZLndo40ho4H5fhSudKY3PATnCAPCyWD7/usG59RCJNbWJOLIFR3j4gQE8BLjuL//fti1kqDxIVWY2ARe+A==
+    repository: https://github.com/CLICGGER-TYPES/dsh-piggy
+    gitHead: 395eb1a196ec059fbf886adbdcff716f7e251ac7
 compatibility:
   dsh: unverified
   platform:
@@ -49,12 +55,12 @@ health:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: 480142ffd646dae81ed8e244ea7f365c29bd08e4
-    packageVersion: 0.37.3-rc.3
+    commit: 395eb1a196ec059fbf886adbdcff716f7e251ac7
+    packageVersion: 0.37.3-rc.4
     scannerVersion: static-v2
     mode: static
     result: unknown
-    checkedAt: 2026-11-17T20:49:47.690Z
+    checkedAt: 2026-11-22T23:23:55.310Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -63,7 +69,7 @@ license:
   commercialUse: true
 featuredRank: 969
 starsSnapshot: 35
-releaseUpdatedAt: 2026-11-17T20:49:48.797Z
-metadataUpdatedAt: 2026-11-17T20:49:48.797Z
+releaseUpdatedAt: 2026-11-22T23:23:56.349Z
+metadataUpdatedAt: 2026-11-22T23:23:56.349Z
 starsUpdatedAt: 2026-11-18T20:22:24.874Z
-updatedAt: 2026-11-18T20:22:24.874Z
+updatedAt: 2026-11-22T23:23:56.349Z

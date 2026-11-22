@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-22**: [Islands UI](https://github.com/DawnCHL/dsh-islands-ui) (DawnCHL). See the [recent additions log](./docs/recently-added.md#recent-2026-11-22-dawnchl-dsh-islands-ui).
+- **2026-11-23**: [SPLAT-STREET](https://github.com/Shirolin/dsh-theme-splat-ui) (Shirolin). See the [recent additions log](./docs/recently-added.md#recent-2026-11-23-shirolin-dsh-theme-splat-ui).
 
 See the [recent additions log](./docs/recently-added.md).
 
