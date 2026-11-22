@@ -1,0 +1,26 @@
+url: https://github.com/Shirolin/dsh-theme-splat-ui
+name:
+  zh: 墨街主题
+  en: SPLAT-STREET
+author: Shirolin
+description: 斯普拉遁 2 风格墨街主题：日间采用官方绿/奶油/洋红三色涂地画布铺设鱿鱼纹、泼溅与网点，夜间切换至炭黑广场并保留霓虹墨色。包含透明墨鱼品牌侧栏、独立洋红新会话胶囊、带墨尾的荧光绿选中行、24 格大招能量槽启动页、黑描边滴墨输入框与「设置 → 插件 → 墨街外观」（纸白 20%/均衡 50%/涂地 100% 预设、墨度滑杆、三档主墨色、diff 语法与装饰/字体开关），仅通过公开 ThemeRuntime Token 与 Slot 实现，停用即还原原生外观。
+category: skin
+tags:
+  - appearance
+  - splatoon
+  - splat
+  - light-dark
+  - sidebar
+  - settings
+modes:
+  - light
+  - dark
+screenshots:
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/theme-poster.webp
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/workspace-light.png
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/workspace-dark.png
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/settings-light.png
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/settings-dark.png
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/appearance-light.png
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/appearance-dark.png
+  - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/runtime-reading-light.png
