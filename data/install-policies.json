@@ -5778,12 +5778,14 @@
     },
     "milkly909.code.dsh.plugin.starlight.protocol": {
       "schema": "install-policy-v1",
-      "mode": "github",
+      "mode": "npm",
       "package": "dsh-plugin-starlight-protocol",
       "resolved": {
-        "version": "2.0.0",
-        "commit": "9ac56dc90bb86b99b2e5f94cd3a2078f5ddac124",
-        "observedAt": "2026-11-22T23:27:05.626Z"
+        "version": "1.0.3",
+        "commit": "bce59320cad7073e818291417dfe05d3cc893c60",
+        "integrity": "sha512-LtAudsE6WMpSmyExtSkEiGTgW/mGY4ljTiY6KikuUARnVDZf4iIl9Hn54RE2VrabnDIARw3XQ3UZHpzSAiItYQ==",
+        "gitHead": "bce59320cad7073e818291417dfe05d3cc893c60",
+        "observedAt": "2026-11-15T20:46:54.100Z"
       }
     },
     "mirrmeur.dsh-workspace-colors": {
