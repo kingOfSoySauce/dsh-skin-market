@@ -110,7 +110,11 @@ describe('catalog', () => {
     }
   })
 
-  it('serves scheduled Stars snapshots without browser-time GitHub requests', async () => {
+  // This pass builds the wire catalog for every scheduled entry (recommend()
+  // runs once per skin), so its cost grows with data/catalog.json. Keep an
+  // explicit budget: the 5s default was already missed at ~1k entries on a
+  // loaded CI runner, and the assertion here is about wire behavior, not speed.
+  it('serves scheduled Stars snapshots without browser-time GitHub requests', { timeout: 30_000 }, async () => {
     const fetchMock = vi.fn()
     vi.stubGlobal('fetch', fetchMock)
     const catalog = loadCatalog()
