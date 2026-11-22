@@ -17,25 +17,18 @@ tags:
 modes:
   - dark
 install:
-  target: github:milkly909-code/dsh-plugin-starlight-protocol#bce59320cad7073e818291417dfe05d3cc893c60
-  version: 1.0.3
-  commit: bce59320cad7073e818291417dfe05d3cc893c60
+  target: github:milkly909-code/dsh-plugin-starlight-protocol#9ac56dc90bb86b99b2e5f94cd3a2078f5ddac124
+  version: 2.0.0
+  commit: 9ac56dc90bb86b99b2e5f94cd3a2078f5ddac124
   desktop:
-    mode: managed
-    registry: npm
-    packageName: dsh-plugin-starlight-protocol
-    packageVersion: 1.0.3
-    integrity: sha512-LtAudsE6WMpSmyExtSkEiGTgW/mGY4ljTiY6KikuUARnVDZf4iIl9Hn54RE2VrabnDIARw3XQ3UZHpzSAiItYQ==
-  npm:
-    name: dsh-plugin-starlight-protocol
-    version: 1.0.3
-    integrity: sha512-LtAudsE6WMpSmyExtSkEiGTgW/mGY4ljTiY6KikuUARnVDZf4iIl9Hn54RE2VrabnDIARw3XQ3UZHpzSAiItYQ==
-    repository: https://github.com/milkly909-code/dsh-plugin-starlight-protocol
-    gitHead: bce59320cad7073e818291417dfe05d3cc893c60
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.1-rc.3 <0.3.0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/milkly909-code__dsh-plugin-starlight-protocol/bce59320cad7073e818291417dfe05d3cc893c60/home.gif
 screenshots:
   - https://raw.githubusercontent.com/milkly909-code/dsh-plugin-starlight-protocol/eb2febdff32261bc3b5c133907eb6b91cf2f2a14/assets/app-expanded.png
   - https://raw.githubusercontent.com/milkly909-code/dsh-plugin-starlight-protocol/eb2febdff32261bc3b5c133907eb6b91cf2f2a14/assets/app-folded.png
@@ -56,22 +49,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: bce59320cad7073e818291417dfe05d3cc893c60
-    packageVersion: 1.0.3
+    commit: 9ac56dc90bb86b99b2e5f94cd3a2078f5ddac124
+    packageVersion: 2.0.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.3 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:45:13.727Z
+    checkedAt: 2026-11-22T23:26:19.874Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/milkly909-code__dsh-plugin-starlight-protocol/bce59320cad7073e818291417dfe05d3cc893c60/home.gif
 featuredRank: 1398
-releaseUpdatedAt: 2026-11-15T20:45:15.627Z
-metadataUpdatedAt: 2026-11-15T20:45:15.627Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-22T23:26:21.313Z
+metadataUpdatedAt: 2026-11-22T23:26:21.313Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-15T20:45:15.627Z
+updatedAt: 2026-11-22T23:26:21.313Z

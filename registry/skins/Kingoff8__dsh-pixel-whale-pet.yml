@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Kingoff8/dsh-pixel-whale-pet#a6ac4285b1b9f537cf1920bfe1cb596c26b53fbf
+  target: github:Kingoff8/dsh-pixel-whale-pet#b065d25c5fdf6fdcec94464dbe73eedd9bedda00
   version: 1.2.0
-  commit: a6ac4285b1b9f537cf1920bfe1cb596c26b53fbf
+  commit: b065d25c5fdf6fdcec94464dbe73eedd9bedda00
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -53,19 +53,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: a6ac4285b1b9f537cf1920bfe1cb596c26b53fbf
+    commit: b065d25c5fdf6fdcec94464dbe73eedd9bedda00
     packageVersion: 1.2.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-17T20:54:26.645Z
+    checkedAt: 2026-11-22T23:26:09.645Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1379
-releaseUpdatedAt: 2026-11-17T20:54:32.534Z
-metadataUpdatedAt: 2026-11-17T20:54:32.534Z
-starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-17T20:54:32.534Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-22T23:26:11.833Z
+metadataUpdatedAt: 2026-11-22T23:26:11.833Z
+starsUpdatedAt: 2026-11-22T23:26:11.833Z
+updatedAt: 2026-11-22T23:26:11.833Z

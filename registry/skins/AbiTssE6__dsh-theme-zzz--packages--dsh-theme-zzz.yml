@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:AbiTssE6/dsh-theme-zzz#7b6655dfc7e6d13ed72b1dd6e69f95e4a9bc73c4&path:/packages/dsh-theme-zzz
-  version: 0.3.9
-  commit: 7b6655dfc7e6d13ed72b1dd6e69f95e4a9bc73c4
+  target: github:AbiTssE6/dsh-theme-zzz#98b8e3257b1169d51da0903b18d19a7cabcb751b&path:/packages/dsh-theme-zzz
+  version: 0.3.10
+  commit: 98b8e3257b1169d51da0903b18d19a7cabcb751b
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -47,20 +47,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 7b6655dfc7e6d13ed72b1dd6e69f95e4a9bc73c4
-    packageVersion: 0.3.9
+    commit: 98b8e3257b1169d51da0903b18d19a7cabcb751b
+    packageVersion: 0.3.10
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.4"
     mode: static
     result: pass
-    checkedAt: 2026-11-21T19:03:05.469Z
+    checkedAt: 2026-11-22T23:24:18.734Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1173
 starsSnapshot: 4
-releaseUpdatedAt: 2026-11-21T19:03:06.628Z
-metadataUpdatedAt: 2026-11-21T19:03:06.628Z
+releaseUpdatedAt: 2026-11-22T23:24:19.302Z
+metadataUpdatedAt: 2026-11-22T23:24:19.302Z
 starsUpdatedAt: 2026-11-17T20:50:47.280Z
-updatedAt: 2026-11-21T19:03:06.628Z
+updatedAt: 2026-11-22T23:24:19.302Z

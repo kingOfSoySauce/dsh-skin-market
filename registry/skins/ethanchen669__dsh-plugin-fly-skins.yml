@@ -15,21 +15,21 @@ modes:
   - light
   - dark
 install:
-  target: github:ethanchen669/dsh-plugin-fly-skins#2887c4844399c7bd389c9eb90920e82cba04b711
-  version: 0.2.7
-  commit: 2887c4844399c7bd389c9eb90920e82cba04b711
+  target: github:ethanchen669/dsh-plugin-fly-skins#ecfd652cb2d41f2fad796d55271b9b724bb1d006
+  version: 0.2.8
+  commit: ecfd652cb2d41f2fad796d55271b9b724bb1d006
   desktop:
     mode: managed
     registry: npm
     packageName: "@dsh-fly/dsh-plugin-fly-skins"
-    packageVersion: 0.2.7
-    integrity: sha512-w1ETPJm/+BCanAjWEzOAZozsXiKuRw7W51jgswj8B8PBlqc56Y5nxUByT++/DfGR2u7NrH9B4aHFe/39t4lV/w==
+    packageVersion: 0.2.8
+    integrity: sha512-YIHrMilEg2YNXTb22ydGVvqSdMUFh+OX/GppBSBuatbx6S4bbdjLADl9E5Bm9EUN6lK77Xb5+dmLvUmDxLM3RQ==
   npm:
     name: "@dsh-fly/dsh-plugin-fly-skins"
-    version: 0.2.7
-    integrity: sha512-w1ETPJm/+BCanAjWEzOAZozsXiKuRw7W51jgswj8B8PBlqc56Y5nxUByT++/DfGR2u7NrH9B4aHFe/39t4lV/w==
+    version: 0.2.8
+    integrity: sha512-YIHrMilEg2YNXTb22ydGVvqSdMUFh+OX/GppBSBuatbx6S4bbdjLADl9E5Bm9EUN6lK77Xb5+dmLvUmDxLM3RQ==
     repository: https://github.com/ethanchen669/dsh-plugin-fly-skins
-    gitHead: 2887c4844399c7bd389c9eb90920e82cba04b711
+    gitHead: ecfd652cb2d41f2fad796d55271b9b724bb1d006
 compatibility:
   dsh: unverified
   platform:
@@ -53,19 +53,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 2887c4844399c7bd389c9eb90920e82cba04b711
-    packageVersion: 0.2.7
+    commit: ecfd652cb2d41f2fad796d55271b9b724bb1d006
+    packageVersion: 0.2.8
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:32:29.265Z
+    checkedAt: 2026-11-22T23:24:38.906Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 999
-releaseUpdatedAt: 2026-10-25T18:20:01.273Z
-metadataUpdatedAt: 2026-11-09T00:14:55.965Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-22T23:24:40.094Z
+metadataUpdatedAt: 2026-11-22T23:24:40.094Z
 starsUpdatedAt: 2026-11-05T00:23:45.863Z
-updatedAt: 2026-11-09T00:14:55.965Z
+updatedAt: 2026-11-22T23:24:40.094Z

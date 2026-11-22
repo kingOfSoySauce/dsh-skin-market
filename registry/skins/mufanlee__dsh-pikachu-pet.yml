@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:mufanlee/dsh-pikachu-pet#b8efd5cfc4294d124d11f777581c1f57c11c46a1
-  version: 1.0.0
-  commit: b8efd5cfc4294d124d11f777581c1f57c11c46a1
+  target: github:mufanlee/dsh-pikachu-pet#0b41091d97de34ee2a4b2e936cc56a9989d2e101
+  version: 1.1.0
+  commit: 0b41091d97de34ee2a4b2e936cc56a9989d2e101
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -51,20 +51,20 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: b8efd5cfc4294d124d11f777581c1f57c11c46a1
-    packageVersion: 1.0.0
+    commit: 0b41091d97de34ee2a4b2e936cc56a9989d2e101
+    packageVersion: 1.1.0
     scannerVersion: static-v2
     dshVersion: 0.2.1-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:45:17.208Z
+    checkedAt: 2026-11-22T23:26:22.089Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1408
-releaseUpdatedAt: 2026-11-15T20:45:18.056Z
-metadataUpdatedAt: 2026-11-15T20:45:18.056Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-22T23:26:23.425Z
+metadataUpdatedAt: 2026-11-22T23:26:23.425Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-15T20:45:18.056Z
+updatedAt: 2026-11-22T23:26:23.425Z

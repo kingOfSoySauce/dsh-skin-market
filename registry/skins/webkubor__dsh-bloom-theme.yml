@@ -16,21 +16,12 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#d36b5ea4142f5efb2ade6cf668cc99190e7da810
-  version: 0.28.0
-  commit: d36b5ea4142f5efb2ade6cf668cc99190e7da810
+  target: github:webkubor/dsh-bloom-theme#bd3e93f9a708d0d951156866a6f2274d0d33c824
+  version: 0.29.0
+  commit: bd3e93f9a708d0d951156866a6f2274d0d33c824
   desktop:
-    mode: managed
-    registry: npm
-    packageName: dsh-bloom-theme
-    packageVersion: 0.28.0
-    integrity: sha512-uTJDgDKUhqjB2PfaPvNTIihlUm/pzq1a4I1JZvst4kse6WRK3NaP2G2coHK3BHCyp+r5KVIQRnK4Vx5ENCUQww==
-  npm:
-    name: dsh-bloom-theme
-    version: 0.28.0
-    integrity: sha512-uTJDgDKUhqjB2PfaPvNTIihlUm/pzq1a4I1JZvst4kse6WRK3NaP2G2coHK3BHCyp+r5KVIQRnK4Vx5ENCUQww==
-    repository: https://github.com/webkubor/dsh-bloom-theme
-    gitHead: d36b5ea4142f5efb2ade6cf668cc99190e7da810
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: ">=0.2.2-rc.1"
   platform:
@@ -57,20 +48,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: d36b5ea4142f5efb2ade6cf668cc99190e7da810
-    packageVersion: 0.28.0
+    commit: bd3e93f9a708d0d951156866a6f2274d0d33c824
+    packageVersion: 0.29.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.2-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-18T20:22:11.152Z
+    checkedAt: 2026-11-22T23:23:45.521Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 308
 featuredRank: 193
-releaseUpdatedAt: 2026-11-18T20:22:14.246Z
-metadataUpdatedAt: 2026-11-18T20:22:14.246Z
-starsUpdatedAt: 2026-11-21T19:02:03.961Z
-updatedAt: 2026-11-21T19:02:03.961Z
+starsSnapshot: 311
+releaseUpdatedAt: 2026-11-22T23:23:47.434Z
+metadataUpdatedAt: 2026-11-22T23:23:47.434Z
+starsUpdatedAt: 2026-11-22T23:23:47.434Z
+updatedAt: 2026-11-22T23:23:47.434Z

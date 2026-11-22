@@ -22,6 +22,18 @@ install:
   target: github:Shirolin/dsh-theme-splat-ui#78e4c4c20fd7775009340669ff6a8dbf0b3788ad
   version: 0.1.0
   commit: 78e4c4c20fd7775009340669ff6a8dbf0b3788ad
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-theme-splat-ui
+    packageVersion: 0.1.0
+    integrity: sha512-pGhhVURi1wgaZrBGUNEFo2d/teXFbxDzGXdYLiyMYzr7VhhTKvkNEOt/6zgJiSlPpjq3qpiSocw7UHz6fL8nXA==
+  npm:
+    name: dsh-theme-splat-ui
+    version: 0.1.0
+    integrity: sha512-pGhhVURi1wgaZrBGUNEFo2d/teXFbxDzGXdYLiyMYzr7VhhTKvkNEOt/6zgJiSlPpjq3qpiSocw7UHz6fL8nXA==
+    repository: https://github.com/Shirolin/dsh-theme-splat-ui
+    gitHead: 78e4c4c20fd7775009340669ff6a8dbf0b3788ad
 compatibility:
   dsh: 0.1.5-rc.3
   platform:
@@ -35,6 +47,7 @@ screenshots:
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/appearance-light.png
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/appearance-dark.png
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/runtime-reading-light.png
+listScreenshot: https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/78e4c4c20fd7775009340669ff6a8dbf0b3788ad/docs/screenshots/theme-poster.webp
 review:
   compatibility: verified
   preview: verified
@@ -48,13 +61,25 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
+  scan:
+    commit: 78e4c4c20fd7775009340669ff6a8dbf0b3788ad
+    packageVersion: 0.1.0
+    scannerVersion: static-v2
+    dshVersion: 0.1.5-rc.3
+    mode: static
+    result: unknown
+    checkedAt: 2026-11-22T23:26:33.596Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-22T08:25:34.164Z
-metadataUpdatedAt: 2026-11-22T08:25:34.164Z
+releaseUpdatedAt: 2026-11-22T23:26:36.306Z
+metadataUpdatedAt: 2026-11-22T23:26:36.306Z
 starsUpdatedAt: 2026-11-22T08:25:34.164Z
-updatedAt: 2026-11-22T08:25:34.164Z
+updatedAt: 2026-11-22T23:26:36.306Z

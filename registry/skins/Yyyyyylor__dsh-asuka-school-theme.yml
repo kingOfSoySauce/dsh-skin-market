@@ -18,21 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Yyyyyylor/dsh-asuka-school-theme#d421c052afea6683bff9c5dacf93d3580d1eafe6
-  version: 3.3.0
-  commit: d421c052afea6683bff9c5dacf93d3580d1eafe6
+  target: github:Yyyyyylor/dsh-asuka-school-theme#9220773688544d58a225aa16a73ca1bcce9abc3d
+  version: 3.3.1
+  commit: 9220773688544d58a225aa16a73ca1bcce9abc3d
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-asuka-school-theme
-    packageVersion: 3.3.0
-    integrity: sha512-AMOYTVFxpChziWDm5XFDkJ0vkL+rVK69kNNW+ZrFJ5KZzTfNPkhIrAz8Ok/5ku94kpmLAnCWCtse1DPSGT5G8A==
+    packageVersion: 3.3.1
+    integrity: sha512-oI8v3a3l0PDlv8z3HfW9kc9Wl1R+PSkx2p/tYp88IBI+xsenFqJV2Swv5Bup0IWH3g1TbgOi8Dx9S9yGkYA27g==
   npm:
     name: dsh-asuka-school-theme
-    version: 3.3.0
-    integrity: sha512-AMOYTVFxpChziWDm5XFDkJ0vkL+rVK69kNNW+ZrFJ5KZzTfNPkhIrAz8Ok/5ku94kpmLAnCWCtse1DPSGT5G8A==
+    version: 3.3.1
+    integrity: sha512-oI8v3a3l0PDlv8z3HfW9kc9Wl1R+PSkx2p/tYp88IBI+xsenFqJV2Swv5Bup0IWH3g1TbgOi8Dx9S9yGkYA27g==
     repository: https://github.com/Yyyyyylor/dsh-asuka-school-theme
-    gitHead: d421c052afea6683bff9c5dacf93d3580d1eafe6
+    gitHead: 9220773688544d58a225aa16a73ca1bcce9abc3d
 compatibility:
   dsh: 0.1.1-rc.2
   platform:
@@ -53,22 +53,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.1.1-rc.2 未被本次检测范围 0.2.1-rc.2 完全覆盖（固定版本 d421c052afea6683bff9c5dacf93d3580d1eafe6）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.1-rc.2 未被本次检测范围 0.2.2-rc.5 完全覆盖（固定版本 9220773688544d58a225aa16a73ca1bcce9abc3d）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: d421c052afea6683bff9c5dacf93d3580d1eafe6
-    packageVersion: 3.3.0
+    commit: 9220773688544d58a225aa16a73ca1bcce9abc3d
+    packageVersion: 3.3.1
     scannerVersion: static-v2
-    dshVersion: 0.2.1-rc.2
+    dshVersion: 0.2.2-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-10-24T21:34:11.690Z
+    checkedAt: 2026-11-22T23:26:52.855Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1105
-releaseUpdatedAt: 2026-11-09T07:18:53.923Z
-metadataUpdatedAt: 2026-10-24T21:34:12.163Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-22T23:26:53.307Z
+metadataUpdatedAt: 2026-11-22T23:26:53.307Z
 starsUpdatedAt: 2026-09-07T21:59:06.230Z
-updatedAt: 2026-11-09T07:18:53.923Z
+updatedAt: 2026-11-22T23:26:53.307Z

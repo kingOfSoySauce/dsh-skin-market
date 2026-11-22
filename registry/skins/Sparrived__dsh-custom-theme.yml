@@ -18,21 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Sparrived/dsh-custom-theme#90772731db03ea17114810ff5a6ffc17cc4e7352
-  version: 0.9.0
-  commit: 90772731db03ea17114810ff5a6ffc17cc4e7352
+  target: github:Sparrived/dsh-custom-theme#c8ebee7d46fb55d2016531f635191b86f8140f28
+  version: 0.10.0
+  commit: c8ebee7d46fb55d2016531f635191b86f8140f28
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-custom-theme
-    packageVersion: 0.9.0
-    integrity: sha512-Wh8cX/R37iWx09O6K2e8mBQ7/14WQeFLgZ5U7Bcq6t/JvrEiQvKXO/uCtdJhEpRenUCmJs7f9m5/nkC+Uj9zeQ==
+    packageVersion: 0.10.0
+    integrity: sha512-wH417Va0Olth/uEKwLjFIkknwoHthCKiedPTf6SWl0f7NrT+OawMKrpEXQaCgTZng/5edqaHZ9H2QWjmrs/C8g==
   npm:
     name: dsh-custom-theme
-    version: 0.9.0
-    integrity: sha512-Wh8cX/R37iWx09O6K2e8mBQ7/14WQeFLgZ5U7Bcq6t/JvrEiQvKXO/uCtdJhEpRenUCmJs7f9m5/nkC+Uj9zeQ==
+    version: 0.10.0
+    integrity: sha512-wH417Va0Olth/uEKwLjFIkknwoHthCKiedPTf6SWl0f7NrT+OawMKrpEXQaCgTZng/5edqaHZ9H2QWjmrs/C8g==
     repository: https://github.com/Sparrived/dsh-custom-theme
-    gitHead: 90772731db03ea17114810ff5a6ffc17cc4e7352
+    gitHead: c8ebee7d46fb55d2016531f635191b86f8140f28
 compatibility:
   dsh: 0.2.1+-blue
   platform:
@@ -62,20 +62,20 @@ health:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: 90772731db03ea17114810ff5a6ffc17cc4e7352
-    packageVersion: 0.9.0
+    commit: c8ebee7d46fb55d2016531f635191b86f8140f28
+    packageVersion: 0.10.0
     scannerVersion: static-v2
     dshVersion: 0.2.1+-blue
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:48:41.141Z
+    checkedAt: 2026-11-22T23:25:27.437Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 1262
-releaseUpdatedAt: 2026-11-14T23:48:43.937Z
-metadataUpdatedAt: 2026-11-14T23:48:43.937Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-22T23:25:29.914Z
+metadataUpdatedAt: 2026-11-22T23:25:29.914Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-14T23:48:43.937Z
+updatedAt: 2026-11-22T23:25:29.914Z
