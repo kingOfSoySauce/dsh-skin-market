@@ -1,9 +1,12 @@
-url: https://github.com/Shirolin/dsh-theme-splat-ui
+id: shirolin.dsh.theme.splat.ui
 name:
   zh: 墨街主题
   en: SPLAT-STREET
 author: Shirolin
 description: 斯普拉遁 2 风格墨街主题：日间采用官方绿/奶油/洋红三色涂地画布铺设鱿鱼纹、泼溅与网点，夜间切换至炭黑广场并保留霓虹墨色。包含透明墨鱼品牌侧栏、独立洋红新会话胶囊、带墨尾的荧光绿选中行、24 格大招能量槽启动页、黑描边滴墨输入框与「设置 → 插件 → 墨街外观」（纸白 20%/均衡 50%/涂地 100% 预设、墨度滑杆、三档主墨色、diff 语法与装饰/字体开关），仅通过公开 ThemeRuntime Token 与 Slot 实现，停用即还原原生外观。
+repo: https://github.com/Shirolin/dsh-theme-splat-ui
+package: dsh-theme-splat-ui
+rowId: dsh-theme-splat-ui
 category: skin
 tags:
   - appearance
@@ -15,6 +18,14 @@ tags:
 modes:
   - light
   - dark
+install:
+  target: github:Shirolin/dsh-theme-splat-ui#78e4c4c20fd7775009340669ff6a8dbf0b3788ad
+  version: 0.1.0
+  commit: 78e4c4c20fd7775009340669ff6a8dbf0b3788ad
+compatibility:
+  dsh: 0.1.5-rc.3
+  platform:
+    - web
 screenshots:
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/theme-poster.webp
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/workspace-light.png
@@ -24,3 +35,26 @@ screenshots:
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/appearance-light.png
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/appearance-dark.png
   - https://raw.githubusercontent.com/Shirolin/dsh-theme-splat-ui/HEAD/docs/screenshots/runtime-reading-light.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1000
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-22T08:25:34.164Z
+metadataUpdatedAt: 2026-11-22T08:25:34.164Z
+starsUpdatedAt: 2026-11-22T08:25:34.164Z
+updatedAt: 2026-11-22T08:25:34.164Z
