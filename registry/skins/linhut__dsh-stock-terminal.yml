@@ -14,13 +14,13 @@ modes:
   - light
   - dark
 install:
-  target: github:linhut/dsh-stock-terminal#a11b6b5d78edb2d1ad59da7cb598d25c94acae6a
-  version: 1.7.2
-  commit: a11b6b5d78edb2d1ad59da7cb598d25c94acae6a
+  target: github:linhut/dsh-stock-terminal#6ad26d5703c1aae4ac281157cdca55bb142cf1df
+  version: 1.8.0
+  commit: 6ad26d5703c1aae4ac281157cdca55bb142cf1df
   desktop:
     mode: manual-only
     reason: npm-package-not-found
-  allowBuild: dsh-stock-terminal@https://codeload.github.com/linhut/dsh-stock-terminal/tar.gz/a11b6b5d78edb2d1ad59da7cb598d25c94acae6a
+  allowBuild: dsh-stock-terminal@https://codeload.github.com/linhut/dsh-stock-terminal/tar.gz/6ad26d5703c1aae4ac281157cdca55bb142cf1df
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -29,33 +29,34 @@ screenshots:
   - https://raw.githubusercontent.com/linhut/dsh-stock-terminal/0f63836135895435d8ed8bce792fb248ab0d45e4/assets/screenshot.png
 listScreenshot: https://raw.githubusercontent.com/linhut/dsh-stock-terminal/a11b6b5d78edb2d1ad59da7cb598d25c94acae6a/assets/screenshot.png
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.6 未被本次检测范围 >=0.1.2-rc.1 <0.3.0-0 完全覆盖（固定版本 6ad26d5703c1aae4ac281157cdca55bb142cf1df）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: a11b6b5d78edb2d1ad59da7cb598d25c94acae6a
-    packageVersion: 1.7.2
+    commit: 6ad26d5703c1aae4ac281157cdca55bb142cf1df
+    packageVersion: 1.8.0
     scannerVersion: static-v2
-    dshVersion: ">=0.1.0-rc.6"
+    dshVersion: ">=0.1.2-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:43:14.913Z
+    checkedAt: 2026-11-23T23:20:33.492Z
     findings: []
 license:
   code: Apache-2.0
   commercialUse: true
-starsSnapshot: 10
 featuredRank: 205
-releaseUpdatedAt: 2026-11-09T07:13:20.875Z
-metadataUpdatedAt: 2026-11-14T23:43:15.371Z
+starsSnapshot: 10
+releaseUpdatedAt: 2026-11-23T23:20:33.862Z
+metadataUpdatedAt: 2026-11-23T23:20:33.862Z
 starsUpdatedAt: 2026-11-09T07:13:20.875Z
-updatedAt: 2026-11-14T23:43:15.371Z
+updatedAt: 2026-11-23T23:20:33.862Z

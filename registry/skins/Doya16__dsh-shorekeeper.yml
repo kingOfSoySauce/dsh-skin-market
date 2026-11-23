@@ -18,21 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Doya16/dsh-shorekeeper#1ce7c2fe4830e6076d67ad1708ea94966df6f84f
-  version: 1.2.8
-  commit: 1ce7c2fe4830e6076d67ad1708ea94966df6f84f
+  target: github:Doya16/dsh-shorekeeper#de2344d90a0f17ec0ff468c52bc360c144709148
+  version: 1.2.9
+  commit: de2344d90a0f17ec0ff468c52bc360c144709148
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-shorekeeper
-    packageVersion: 1.2.8
-    integrity: sha512-vQIAUs3vTMWSWfwOV1w30SwxGlrlXLy5jy7GzFd23T/WsVe03E9tVG5HPGuzlikIblfUF4sZthVqroRdwXOYNg==
+    packageVersion: 1.2.9
+    integrity: sha512-10ZEvTnHiyDYcxSVq0+x+ellmLt3j8gNnTQ9FAjx8whikDyjpAqGg/7MCzbsd3snFVk4FN3SqHMc9OitBWSsmg==
   npm:
     name: dsh-shorekeeper
-    version: 1.2.8
-    integrity: sha512-vQIAUs3vTMWSWfwOV1w30SwxGlrlXLy5jy7GzFd23T/WsVe03E9tVG5HPGuzlikIblfUF4sZthVqroRdwXOYNg==
+    version: 1.2.9
+    integrity: sha512-10ZEvTnHiyDYcxSVq0+x+ellmLt3j8gNnTQ9FAjx8whikDyjpAqGg/7MCzbsd3snFVk4FN3SqHMc9OitBWSsmg==
     repository: https://github.com/Doya16/dsh-shorekeeper
-    gitHead: 1ce7c2fe4830e6076d67ad1708ea94966df6f84f
+    gitHead: de2344d90a0f17ec0ff468c52bc360c144709148
 compatibility:
   dsh: 0.2.1-rc.5
   platform:
@@ -59,20 +59,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 1ce7c2fe4830e6076d67ad1708ea94966df6f84f
-    packageVersion: 1.2.8
+    commit: de2344d90a0f17ec0ff468c52bc360c144709148
+    packageVersion: 1.2.9
     scannerVersion: static-v2
     dshVersion: ">=0.2.1-rc.5 <0.3.0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:47:14.907Z
+    checkedAt: 2026-11-23T23:21:53.211Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 1324
-releaseUpdatedAt: 2026-11-14T23:47:20.227Z
-metadataUpdatedAt: 2026-11-14T23:47:20.227Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-23T23:21:57.455Z
+metadataUpdatedAt: 2026-11-23T23:21:57.455Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-14T23:47:20.227Z
+updatedAt: 2026-11-23T23:21:57.455Z

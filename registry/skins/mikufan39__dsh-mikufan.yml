@@ -19,50 +19,50 @@ modes:
   - light
   - dark
 install:
-  target: github:mikufan39/dsh-mikufan#3b8c310b08f56cb1d9387ca30141bc320e6f9a2a
-  version: 1.1.4
-  commit: 3b8c310b08f56cb1d9387ca30141bc320e6f9a2a
+  target: github:mikufan39/dsh-mikufan#206a0a8b1d73f9b80952131a0686390af4d8ae21
+  version: 1.2.0
+  commit: 206a0a8b1d73f9b80952131a0686390af4d8ae21
   desktop:
     mode: manual-only
     reason: npm-package-not-found
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.2-rc.1"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/mikufan39__dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/home.gif
 screenshots:
   - https://raw.githubusercontent.com/mikufan39/dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/control-panel.png
 listScreenshot: skin-screenshots/mikufan39__dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/home.gif
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 3b8c310b08f56cb1d9387ca30141bc320e6f9a2a
-    packageVersion: 1.1.4
+    commit: 206a0a8b1d73f9b80952131a0686390af4d8ae21
+    packageVersion: 1.2.0
     scannerVersion: static-v2
+    dshVersion: ">=0.2.2-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:48:12.073Z
+    checkedAt: 2026-11-23T23:22:13.751Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/mikufan39__dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/home.gif
 featuredRank: 1243
-releaseUpdatedAt: 2026-11-14T23:48:13.672Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-23T23:22:14.250Z
+metadataUpdatedAt: 2026-11-23T23:22:14.250Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-23T23:22:14.250Z
