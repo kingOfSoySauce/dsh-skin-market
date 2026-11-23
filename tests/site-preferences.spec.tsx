@@ -54,6 +54,8 @@ function Probe() {
 }
 
 beforeEach(() => {
+  // The page mirrors q/sort/cat into the URL; never leak a previous case's view.
+  window.history.replaceState(null, '', '/')
   window.localStorage.clear()
   installMatchMedia()
   Object.defineProperty(navigator, 'languages', { configurable: true, value: ['en-US'] })
@@ -66,6 +68,7 @@ afterEach(() => {
   document.documentElement.removeAttribute('data-theme')
   document.documentElement.removeAttribute('data-theme-preference')
   vi.unstubAllGlobals()
+  window.history.replaceState(null, '', '/')
 })
 
 describe('standalone site preferences', () => {

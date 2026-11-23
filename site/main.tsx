@@ -18,6 +18,7 @@ import { matchesCatalogSearch } from '../src/catalog-search.ts'
 import { SitePreferencesProvider, useSitePreferences, type SiteTheme } from './preferences.tsx'
 import { localizedSkinName, type MessageKey, type SiteLanguage, type SiteTranslator } from './messages.ts'
 import { liveStars, withLiveReading, type LiveStarLoader, type LiveStarReading } from './live-stars.ts'
+import { DEFAULT_SITE_VIEW, readSiteView, writeSiteView, SITE_VIEW_CATEGORIES, type SiteViewCategory, type SiteViewState } from './view-state.ts'
 import './site.css'
 import '../src/client/media-hover.module.css'
 
@@ -39,11 +40,12 @@ function starsTitle(skin: Skin, live: LiveStarReading | undefined, t: SiteTransl
 
 const GALLERY_INTERVAL_MS = 5600
 const FEED_COMPACT_EXIT_OFFSET = 16
+// Typing should not spend a history operation per keystroke: WebKit throttles
+// replaceState and a throttled call must not be able to break rendering.
+const VIEW_URL_QUERY_SYNC_MS = 180
 const CATALOG_SORTS: readonly CatalogSort[] = ['heat', 'stars', 'latest']
 const CATALOG_SORT_MESSAGE_KEYS: Record<CatalogSort, MessageKey> = { heat: 'sort.heat', stars: 'sort.stars', latest: 'sort.latest' }
-const MARKET_CATEGORIES = ['skin', 'pet', 'player', 'splash'] as const
-type MarketCategory = typeof MARKET_CATEGORIES[number]
-const MARKET_CATEGORY_MESSAGE_KEYS: Record<MarketCategory, MessageKey> = { skin: 'category.skin', pet: 'category.pet', player: 'category.player', splash: 'category.splash' }
+const MARKET_CATEGORY_MESSAGE_KEYS: Record<SiteViewCategory, MessageKey> = { skin: 'category.skin', pet: 'category.pet', player: 'category.player', splash: 'category.splash' }
 const LANGUAGE_OPTIONS: readonly { value: SiteLanguage; label: MessageKey }[] = [
   { value: 'zh', label: 'preferences.language.zh' },
   { value: 'en', label: 'preferences.language.en' },
@@ -54,7 +56,7 @@ const THEME_OPTIONS: readonly { value: SiteTheme; label: MessageKey; description
   { value: 'dark', label: 'preferences.theme.dark' },
 ]
 
-function marketCategory(skin: { category?: string }): MarketCategory {
+function marketCategory(skin: { category?: string }): SiteViewCategory {
   return skin.category === 'pet' || skin.category === 'player' || skin.category === 'splash' ? skin.category : 'skin'
 }
 
@@ -213,8 +215,8 @@ function CatalogSortOptions({ value, onChange }: { value: CatalogSort; onChange:
 function DiscoverToolbar({ docked = false, placeholderRef, enabledCategories, onToggleCategory, sort, onSort }: {
   docked?: boolean
   placeholderRef?: Ref<HTMLDivElement>
-  enabledCategories: ReadonlySet<MarketCategory>
-  onToggleCategory: (category: MarketCategory) => void
+  enabledCategories: ReadonlySet<SiteViewCategory>
+  onToggleCategory: (category: SiteViewCategory) => void
   sort: CatalogSort
   onSort: (sort: CatalogSort) => void
 }) {
@@ -222,7 +224,7 @@ function DiscoverToolbar({ docked = false, placeholderRef, enabledCategories, on
   return <div className="feed-section-title" ref={placeholderRef} data-header-discover={placeholderRef === undefined ? '' : undefined} data-docked={docked ? 'true' : undefined} aria-hidden={docked ? true : undefined}>
     <div className="discover-heading">
       <div className="filter-options" role="group" aria-label={t('category.label')}>
-        {MARKET_CATEGORIES.map(category => <button key={category} type="button" className="sort-option" aria-pressed={enabledCategories.has(category)} onClick={() => onToggleCategory(category)}>{t(MARKET_CATEGORY_MESSAGE_KEYS[category])}</button>)}
+        {SITE_VIEW_CATEGORIES.map(category => <button key={category} type="button" className="sort-option" aria-pressed={enabledCategories.has(category)} onClick={() => onToggleCategory(category)}>{t(MARKET_CATEGORY_MESSAGE_KEYS[category])}</button>)}
       </div>
     </div>
     <CatalogSortOptions value={sort} onChange={onSort} />
@@ -286,9 +288,10 @@ function revealFeedResults(results: HTMLElement | null, topbar: HTMLElement | nu
 export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; curves?: Record<string, { from: number; stars: number[] }>; liveStarLoader?: LiveStarLoader }) {
   const { language, t } = useSitePreferences()
   const [selectedId, setSelectedId] = useState(skins[0]?.id ?? '')
-  const [query, setQuery] = useState('')
-  const [sort, setSort] = useState<CatalogSort>('heat')
-  const [enabledCategories, setEnabledCategories] = useState<ReadonlySet<MarketCategory>>(() => new Set<MarketCategory>(['skin', 'splash']))
+  const [initialView] = useState<SiteViewState>(() => typeof window === 'undefined' ? DEFAULT_SITE_VIEW : readSiteView(window.location.search))
+  const [query, setQuery] = useState(initialView.query)
+  const [sort, setSort] = useState<CatalogSort>(initialView.sort)
+  const [enabledCategories, setEnabledCategories] = useState<ReadonlySet<SiteViewCategory>>(() => new Set<SiteViewCategory>(initialView.categories))
   const [discoverDocked, setDiscoverDocked] = useState(false)
   const discoverDockedRef = useRef(false)
   const discoverTitleRef = useRef<HTMLDivElement | null>(null)
@@ -360,6 +363,33 @@ export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; cur
     setShot(0)
     setDetailOpen(true)
   }
+
+  // The shareable view (query/sort/categories) lives in the URL so a refresh or
+  // a copied link restores the same list. replaceState never adds a history
+  // entry, and writeSiteView keeps parameters this page does not own (dsh-media)
+  // as well as the hash intact. A refused update (WebKit throttles replaceState)
+  // only costs the URL snapshot; the rendered view must survive it.
+  const syncViewUrl = useCallback((next: { query: string; sort: CatalogSort; categories: ReadonlySet<SiteViewCategory> }) => {
+    if (typeof window === 'undefined') return
+    const url = new URL(window.location.href)
+    const nextSearch = writeSiteView(url.search, { query: next.query, sort: next.sort, categories: [...next.categories] })
+    if (nextSearch === url.search) return
+    url.search = nextSearch
+    try {
+      window.history.replaceState(window.history.state, '', url)
+    } catch {
+      // The view state still works without a URL snapshot.
+    }
+  }, [])
+  useEffect(() => {
+    syncViewUrl({ query, sort, categories: enabledCategories })
+  }, [sort, enabledCategories, syncViewUrl])
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      syncViewUrl({ query, sort, categories: enabledCategories })
+    }, VIEW_URL_QUERY_SYNC_MS)
+    return () => window.clearTimeout(timer)
+  }, [query, sort, enabledCategories, syncViewUrl])
 
   useEffect(() => { setVisibleCount(24) }, [enabledCategories, query, sort])
   // A new query, filter set or sort order describes a new result list: its
@@ -489,7 +519,7 @@ export function App({ skins, curves = {}, liveStarLoader }: { skins: Skin[]; cur
     window.setTimeout(() => setCopied(current => current === key ? null : current), 1800)
   }
 
-  const toggleCategory = (category: MarketCategory) => setEnabledCategories(current => {
+  const toggleCategory = (category: SiteViewCategory) => setEnabledCategories(current => {
     const next = new Set(current)
     if (next.has(category)) next.delete(category)
     else next.add(category)

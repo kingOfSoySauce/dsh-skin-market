@@ -21,6 +21,8 @@ const skin = {
 const writeText = vi.fn(async (_value: string) => undefined)
 
 beforeEach(() => {
+  // The page mirrors q/sort/cat into the URL; never leak a previous case's view.
+  window.history.replaceState(null, '', '/')
   writeText.mockClear()
   Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText } })
   vi.stubGlobal('matchMedia', () => ({ matches: false, addListener() {}, removeListener() {} }))
@@ -30,6 +32,7 @@ afterEach(() => {
   vi.restoreAllMocks()
   // vi.stubGlobal restores jsdom's own scrollY data property with unstubAllGlobals.
   vi.unstubAllGlobals()
+  window.history.replaceState(null, '', '/')
 })
 
 describe('public catalog filters', () => {

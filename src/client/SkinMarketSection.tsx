@@ -28,6 +28,7 @@ import { matchesCatalogSearch } from '../catalog-search.ts'
 import { desktopInstallPlan, desktopInstallationWarning } from '../desktop-install.ts'
 import { preferredInstallTarget } from '../install-source.ts'
 import { recoveryRoute } from './install-recovery.ts'
+import { readMarketViewPreferences, writeMarketViewPreferences, type MarketViewPreferences } from './view-preferences.ts'
 import type { DesktopActivationIntent, DesktopPluginPanel, ManualRecovery } from './desktop-plugin-panel.ts'
 import type { CatalogSkin, DshRuntime, HostCapabilityState, InstalledClientPlugin, MarketHostKind, Operation, RuntimeSkin } from './types.ts'
 import type { ConfigurationOverrideBatchPlan } from '../configuration-override-types.ts'
@@ -1066,8 +1067,25 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
   const [query, setQuery] = useState('')
   const [homeQuery, setHomeQuery] = useState('')
   const [filter, setFilter] = useState<'all' | 'installed'>('all')
-  const [enabledCategories, setEnabledCategories] = useState<ReadonlySet<MarketCategory>>(() => new Set<MarketCategory>(['skin', 'splash']))
-  const [sortBy, setSortBy] = useState<CatalogSort>('heat')
+  // Explicit user choices are restored on mount. Transient view state (search,
+  // range, pagination, selection) stays per-mount by design.
+  const [viewPreferences, setViewPreferences] = useState<MarketViewPreferences>(() => readMarketViewPreferences())
+  const sortBy = viewPreferences.sortBy
+  const enabledCategories = useMemo<ReadonlySet<MarketCategory>>(() => new Set<MarketCategory>(viewPreferences.categories), [viewPreferences.categories])
+  const updateSortBy = useCallback((next: CatalogSort) => {
+    if (next === viewPreferences.sortBy) return
+    const preferences: MarketViewPreferences = { sortBy: next, categories: viewPreferences.categories }
+    setViewPreferences(preferences)
+    writeMarketViewPreferences(preferences)
+  }, [viewPreferences])
+  const toggleCategory = useCallback((category: MarketCategory) => {
+    const categories = viewPreferences.categories.includes(category)
+      ? viewPreferences.categories.filter(current => current !== category)
+      : [...viewPreferences.categories, category]
+    const preferences: MarketViewPreferences = { sortBy: viewPreferences.sortBy, categories }
+    setViewPreferences(preferences)
+    writeMarketViewPreferences(preferences)
+  }, [viewPreferences])
   const [visibleCount, setVisibleCount] = useState(CATALOG_BATCH_SIZE)
   const [homeVisibleCount, setHomeVisibleCount] = useState(HOME_CATALOG_BATCH_SIZE)
   const [installedSlots, setInstalledSlots] = useState(5)
@@ -3474,12 +3492,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           </div>
           <MarketSearch className={css.homeSearch} value={homeQuery} onChange={setHomeQuery} t={t} />
           <div className={css.homeSearchPlaceholder} aria-hidden="true" />
-          {discoverDocked && <DiscoverToolbar t={t} className={css.headerDiscover} headingId="discover-skins-title" label={homeQuery.trim() === '' ? t('common.discoverMore') : t('common.searchResults')} enabledCategories={enabledCategories} onToggleCategory={category => setEnabledCategories(current => {
-            const next = new Set(current)
-            if (next.has(category)) next.delete(category)
-            else next.add(category)
-            return next
-          })} sortBy={sortBy} onSortBy={setSortBy} />}
+          {discoverDocked && <DiscoverToolbar t={t} className={css.headerDiscover} headingId="discover-skins-title" label={homeQuery.trim() === '' ? t('common.discoverMore') : t('common.searchResults')} enabledCategories={enabledCategories} onToggleCategory={toggleCategory} sortBy={sortBy} onSortBy={updateSortBy} />}
           {renderSkinOperationBanner(css.homeOperation)}
           {renderMarketOperationBanner(css.homeOperation)}
           {renderCompletedUninstallBanner(css.homeOperation)}
@@ -3506,12 +3519,7 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           </section>}
 
           <section className={css.homeSection} aria-labelledby="discover-skins-title">
-            <DiscoverToolbar t={t} className={css.discoverTitle} placeholderRef={discoverTitleRef} docked={discoverDocked} headingId={discoverDocked ? undefined : 'discover-skins-title'} label={homeQuery.trim() === '' ? t('common.discoverMore') : t('common.searchResults')} enabledCategories={enabledCategories} onToggleCategory={category => setEnabledCategories(current => {
-              const next = new Set(current)
-              if (next.has(category)) next.delete(category)
-              else next.add(category)
-              return next
-            })} sortBy={sortBy} onSortBy={setSortBy} />
+            <DiscoverToolbar t={t} className={css.discoverTitle} placeholderRef={discoverTitleRef} docked={discoverDocked} headingId={discoverDocked ? undefined : 'discover-skins-title'} label={homeQuery.trim() === '' ? t('common.discoverMore') : t('common.searchResults')} enabledCategories={enabledCategories} onToggleCategory={toggleCategory} sortBy={sortBy} onSortBy={updateSortBy} />
             {catalogLoading && skins.length === 0 ? <div className={css.homeLoading}><IconLoadingOutline /> {t('common.loadingSkins')}</div> : visibleDiscoverySkins.length > 0 ? <div className={css.discoveryGrid} ref={bindDiscoveryResults}>
               {visibleDiscoverySkins.map(skin => renderHomeCard(skin, 'discover'))}
             </div> : <p className={css.empty} ref={bindDiscoveryResults}>{t('common.noMatchingSkins')}</p>}
@@ -3529,10 +3537,10 @@ export function SkinMarketSection({ t: providedT, layout = 'fill', clientRuntime
           <MarketSearch className={css.catalogSearch} value={query} onChange={setQuery} t={t} />
           <div className={css.filterBar}>
             <div className={`${css.filters} ${css.segmented}`} role="group" aria-label={t('common.listRange')}>
-              <button type="button" aria-pressed={filter === 'all'} onClick={() => { setFilter('all'); setSortBy('heat') }}>{t('common.all')}</button>
+              <button type="button" aria-pressed={filter === 'all'} onClick={() => setFilter('all')}>{t('common.all')}</button>
               <button type="button" aria-pressed={filter === 'installed'} onClick={() => setFilter('installed')}>{t('common.installed')}</button>
             </div>
-            <CatalogSortOptions t={t} value={sortBy} onChange={setSortBy} />
+            <CatalogSortOptions t={t} value={sortBy} onChange={updateSortBy} />
           </div>
         </div>
         <div className={css.skinList} ref={skinListRef} onScroll={event => {
