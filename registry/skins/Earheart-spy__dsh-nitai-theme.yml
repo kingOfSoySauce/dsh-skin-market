@@ -3,7 +3,7 @@ name:
   zh: 新拟态主题
   en: Neumorphic Theme with Notch
 author: Earheart-spy
-description: 新拟态（Neumorphism）风格的 DSH 主题：冷灰画布、双向软阴影、明暗双模式；顶部功能刘海显示时间、峰谷倒计时、今日与本次会话费用、账户余额，并在 OpenCode Go 模型下自动切换成 5 时/本周/本月额度；33 项元素可以逐项调凸起与内凹。
+description: 新拟态（Neumorphism）风格的 DSH 主题：冷灰画布、双向软阴影、明暗双模式；顶部功能刘海显示时间、峰谷倒计时、今日与本次会话费用、账户余额，并在 OpenCode Go 模型下自动切换成 5 时/本周/本月额度；33 项元素可以逐项调凸起与内凹；输入框下方标出当前 Git 分支与 AI 正在使用的 worktree。
 repo: https://github.com/Earheart-spy/dsh-nitai-theme
 package: dsh-nitai-theme
 rowId: nitai-theme
@@ -25,13 +25,13 @@ compatibility:
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/desktop-light.png
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/desktop-dark.png
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/desktop-light-panel.png
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/desktop-dark-panel.png
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/hover-card-light.png
-  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/hover-card-dark.png
-listScreenshot: https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/d568ac74a0e567d736668d925422d4e5fb2ee97d/docs/desktop-light.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/desktop-light.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/desktop-dark.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/desktop-light-panel.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/desktop-dark-panel.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/hover-card-light.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/hover-card-dark.png
+listScreenshot: https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/desktop-light.png
 review:
   compatibility: verified
   preview: verified
