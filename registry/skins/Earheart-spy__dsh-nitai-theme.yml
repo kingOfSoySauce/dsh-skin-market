@@ -14,9 +14,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Earheart-spy/dsh-nitai-theme#d568ac74a0e567d736668d925422d4e5fb2ee97d
-  version: 0.5.0
-  commit: d568ac74a0e567d736668d925422d4e5fb2ee97d
+  target: github:Earheart-spy/dsh-nitai-theme#a7bfc5fd26da6e6c203de75bb161f694f96de64e
+  version: 0.6.0
+  commit: a7bfc5fd26da6e6c203de75bb161f694f96de64e
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -31,6 +31,7 @@ screenshots:
   - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/desktop-dark-panel.png
   - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/hover-card-light.png
   - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/hover-card-dark.png
+  - https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/git-branch-row.png
 listScreenshot: https://raw.githubusercontent.com/Earheart-spy/dsh-nitai-theme/a7bfc5fd26da6e6c203de75bb161f694f96de64e/docs/desktop-light.png
 review:
   compatibility: verified
@@ -46,20 +47,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: d568ac74a0e567d736668d925422d4e5fb2ee97d
-    packageVersion: 0.5.0
+    commit: a7bfc5fd26da6e6c203de75bb161f694f96de64e
+    packageVersion: 0.6.0
     scannerVersion: static-v2
     dshVersion: ">=0.2.0"
     mode: static
     result: pass
-    checkedAt: 2026-11-17T20:51:19.321Z
+    checkedAt: 2026-11-23T04:40:14.590Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 starsSnapshot: 2
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-17T20:51:24.686Z
-metadataUpdatedAt: 2026-11-17T20:51:24.686Z
+releaseUpdatedAt: 2026-11-23T04:44:12.000Z
+metadataUpdatedAt: 2026-11-23T04:44:12.000Z
 starsUpdatedAt: 2026-11-14T00:23:26.179Z
-updatedAt: 2026-11-17T20:51:24.686Z
+updatedAt: 2026-11-23T04:44:12.000Z
