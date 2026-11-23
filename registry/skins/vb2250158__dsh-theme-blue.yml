@@ -13,9 +13,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:vb2250158/dsh-theme-blue#ff95702805037e6e7b74d5d2348bda5a6b5aa21e
-  version: 0.1.0-rc.8.21
-  commit: ff95702805037e6e7b74d5d2348bda5a6b5aa21e
+  target: github:vb2250158/dsh-theme-blue#168ae70e6c3cd40d872564bbd22e663a01bc30b5
+  version: 0.1.0-rc.8.22
+  commit: 168ae70e6c3cd40d872564bbd22e663a01bc30b5
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
@@ -23,6 +23,10 @@ compatibility:
   dsh: 0.2.1-alpha.1
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/home.png
+  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/conversation.png
+  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/settings.png
 screenshots: []
 review:
   compatibility: unverified
@@ -38,26 +42,22 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - DSH 兼容范围待核对：保留的市场范围 0.2.1-alpha.1 未被本次检测范围 0.2.2-rc.1 || 0.2.2-rc.5 完全覆盖（固定版本 ff95702805037e6e7b74d5d2348bda5a6b5aa21e）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.1-alpha.1 未被本次检测范围 0.2.2-rc.1 || 0.2.2-rc.5 || 0.2.3-alpha.2 完全覆盖（固定版本 168ae70e6c3cd40d872564bbd22e663a01bc30b5）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: ff95702805037e6e7b74d5d2348bda5a6b5aa21e
-    packageVersion: 0.1.0-rc.8.21
+    commit: 168ae70e6c3cd40d872564bbd22e663a01bc30b5
+    packageVersion: 0.1.0-rc.8.22
     scannerVersion: static-v2
-    dshVersion: 0.2.2-rc.1 || 0.2.2-rc.5
+    dshVersion: 0.2.2-rc.1 || 0.2.2-rc.5 || 0.2.3-alpha.2
     mode: static
     result: pass
-    checkedAt: 2026-11-19T20:23:16.153Z
+    checkedAt: 2026-11-23T23:23:54.344Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/home.png
-  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/conversation.png
-  - skin-screenshots/vb2250158__dsh-theme-blue/8c99978daf6ba97314652350802dc3445c265efc/settings.png
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-19T20:23:16.154Z
-metadataUpdatedAt: 2026-11-20T19:56:33.985Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-23T23:23:54.345Z
+metadataUpdatedAt: 2026-11-23T23:23:54.345Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-20T19:56:33.985Z
+updatedAt: 2026-11-23T23:23:54.345Z

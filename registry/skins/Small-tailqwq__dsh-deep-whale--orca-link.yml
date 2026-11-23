@@ -19,9 +19,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#c4f32b13aecfb39589764201d0d043e904c73157&path:/orca-link
-  version: 0.1.11
-  commit: c4f32b13aecfb39589764201d0d043e904c73157
+  target: github:Small-tailqwq/dsh-deep-whale#a9e2884388122be47a7c737c18b98ac4896d7c27&path:/orca-link
+  version: 0.1.12
+  commit: a9e2884388122be47a7c737c18b98ac4896d7c27
   desktop:
     mode: manual-only
     reason: companion-not-desktop-installable
@@ -33,14 +33,18 @@ install:
       rowId: ui-skin-deep-whale-manager
   npm:
     name: "@smalltailqwq/dsh-client-ui-skin-orca-link"
-    version: 0.1.11
-    integrity: sha512-OlrVBv3P696K/gMU/IVOWEdS7nKL7mV5KqB7ITZ4ETb1aC7WPyK/BBSGG0U2MFxCCztV1lJkqLopq/g0IAnoyA==
+    version: 0.1.12
+    integrity: sha512-iSrwQ1UXQ1zCoVjKiIFD6CDtMq/AYf4GUPBNOrVPLBtdtuRSekdwhPyk2eeQSPgC9ln4uAYRgAsLo6BzPEPS+Q==
     repository: https://github.com/Small-tailqwq/dsh-deep-whale
-    gitHead: c4f32b13aecfb39589764201d0d043e904c73157
+    gitHead: a9e2884388122be47a7c737c18b98ac4896d7c27
 compatibility:
   dsh: ^0.1.11
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/home.png
+  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/conversation.png
+  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/settings.png
 screenshots:
   - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/preset-orca-link-dark.gif
   - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/preset-orca-link-light.gif
@@ -52,38 +56,35 @@ screenshots:
   - https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/0a3d03251d1e88a08de79e27fb884ed9200913ad/orca-link/preview/dark.png
 listScreenshot: skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/preset-orca-link-dark.gif
 review:
-  compatibility: verified
+  compatibility: unverified
   preview: verified
   installation: verified
 health:
-  status: healthy
+  status: improvements
   checks:
     readmeScreenshots: pass
-    compatibility: pass
+    compatibility: improve
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions: []
+  suggestions:
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.11 未被本次检测范围 ^0.1.12 完全覆盖（固定版本 a9e2884388122be47a7c737c18b98ac4896d7c27）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: c4f32b13aecfb39589764201d0d043e904c73157
-    packageVersion: 0.1.11
+    commit: a9e2884388122be47a7c737c18b98ac4896d7c27
+    packageVersion: 0.1.12
     scannerVersion: static-v2
-    dshVersion: ^0.1.11
+    dshVersion: ^0.1.12
     mode: static
     result: pass
-    checkedAt: 2026-11-20T19:56:37.156Z
+    checkedAt: 2026-11-23T23:19:59.310Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
-starsSnapshot: 3136
-marketScreenshots:
-  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/home.png
-  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/conversation.png
-  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/settings.png
 featuredRank: 3
-releaseUpdatedAt: 2026-11-20T19:56:38.855Z
-metadataUpdatedAt: 2026-11-21T19:02:03.961Z
-starsUpdatedAt: 2026-11-22T23:23:40.441Z
-updatedAt: 2026-11-22T23:23:40.441Z
+starsSnapshot: 3141
+releaseUpdatedAt: 2026-11-23T23:20:01.417Z
+metadataUpdatedAt: 2026-11-23T23:20:01.417Z
+starsUpdatedAt: 2026-11-23T23:20:01.417Z
+updatedAt: 2026-11-23T23:20:01.417Z

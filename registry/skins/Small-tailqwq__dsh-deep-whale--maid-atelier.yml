@@ -20,9 +20,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#c4f32b13aecfb39589764201d0d043e904c73157&path:/maid-atelier
-  version: 0.1.11
-  commit: c4f32b13aecfb39589764201d0d043e904c73157
+  target: github:Small-tailqwq/dsh-deep-whale#a9e2884388122be47a7c737c18b98ac4896d7c27&path:/maid-atelier
+  version: 0.1.12
+  commit: a9e2884388122be47a7c737c18b98ac4896d7c27
   desktop:
     mode: manual-only
     reason: companion-not-desktop-installable
@@ -34,10 +34,10 @@ install:
       rowId: ui-skin-deep-whale-manager
   npm:
     name: "@smalltailqwq/dsh-client-ui-skin-maid-atelier"
-    version: 0.1.11
-    integrity: sha512-PT/RrI02XgQAIzRoAghvb4FQMM+AS9ySYJG0bH4NImEtnMXkSSRvWbFSGfUXhfKcpiZVHX/ZDN9nvldxcTTbKg==
+    version: 0.1.12
+    integrity: sha512-vzNX10aJIIk15Ce90jb5KnQcaKR/R5005erjebQWXrJjzmKG4Y4ref2cex/GX6laXA2xV60RkB/Ec0eMHYdqPg==
     repository: https://github.com/Small-tailqwq/dsh-deep-whale
-    gitHead: c4f32b13aecfb39589764201d0d043e904c73157
+    gitHead: a9e2884388122be47a7c737c18b98ac4896d7c27
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -59,23 +59,23 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.6 未被本次检测范围 ^0.1.11 完全覆盖（固定版本 c4f32b13aecfb39589764201d0d043e904c73157）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.6 未被本次检测范围 ^0.1.12 完全覆盖（固定版本 a9e2884388122be47a7c737c18b98ac4896d7c27）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: c4f32b13aecfb39589764201d0d043e904c73157
-    packageVersion: 0.1.11
+    commit: a9e2884388122be47a7c737c18b98ac4896d7c27
+    packageVersion: 0.1.12
     scannerVersion: static-v2
-    dshVersion: ^0.1.11
+    dshVersion: ^0.1.12
     mode: static
     result: pass
-    checkedAt: 2026-11-20T19:56:35.848Z
+    checkedAt: 2026-11-23T23:19:57.169Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
-starsSnapshot: 3136
 featuredRank: 2
-releaseUpdatedAt: 2026-11-20T19:56:36.973Z
-metadataUpdatedAt: 2026-11-20T19:56:36.973Z
-starsUpdatedAt: 2026-11-22T23:23:40.441Z
-updatedAt: 2026-11-22T23:23:40.441Z
+starsSnapshot: 3141
+releaseUpdatedAt: 2026-11-23T23:19:58.748Z
+metadataUpdatedAt: 2026-11-23T23:19:58.748Z
+starsUpdatedAt: 2026-11-23T23:19:58.748Z
+updatedAt: 2026-11-23T23:19:58.748Z

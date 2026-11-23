@@ -13,21 +13,21 @@ tags:
 modes:
   - light
 install:
-  target: github:lisongxuan/ds-hentai#4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6
-  version: 0.7.2
-  commit: 4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6
+  target: github:lisongxuan/ds-hentai#dd7b4ff2be137d6f994288a03251653ff4600af0
+  version: 0.7.3
+  commit: dd7b4ff2be137d6f994288a03251653ff4600af0
   desktop:
     mode: managed
     registry: npm
     packageName: ds-hentai
-    packageVersion: 0.7.2
-    integrity: sha512-Ex8jIQSs9iu3kYqfYDbzQL6ewMcfqgsdsQUlcZbRR5VZj1CtS+DiBWSA+UzoLtZC/qpcWV8su1pCEOEBHQl1DQ==
+    packageVersion: 0.7.3
+    integrity: sha512-oZxeMIXDdGjDq/ikoCfGd9NiTVR/PK1I3zgPdeQWXTGJrvlMDKNR47OPstn7BUinUEZUdXZ82oQncm+AHUFq0g==
   npm:
     name: ds-hentai
-    version: 0.7.2
-    integrity: sha512-Ex8jIQSs9iu3kYqfYDbzQL6ewMcfqgsdsQUlcZbRR5VZj1CtS+DiBWSA+UzoLtZC/qpcWV8su1pCEOEBHQl1DQ==
+    version: 0.7.3
+    integrity: sha512-oZxeMIXDdGjDq/ikoCfGd9NiTVR/PK1I3zgPdeQWXTGJrvlMDKNR47OPstn7BUinUEZUdXZ82oQncm+AHUFq0g==
     repository: https://github.com/lisongxuan/ds-hentai
-    gitHead: 4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6
+    gitHead: dd7b4ff2be137d6f994288a03251653ff4600af0
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -50,20 +50,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 4f5c7fd9e8f626fd9ca56a4fb3dd44943f2726b6
-    packageVersion: 0.7.2
+    commit: dd7b4ff2be137d6f994288a03251653ff4600af0
+    packageVersion: 0.7.3
     scannerVersion: static-v2
     dshVersion: ">=0.0.1-rc.5 <0.1.0 || >=0.1.0-0 <0.1.1 || >=0.1.1-0 <0.1.2 || >=0.1.2-0 <0.1.3 || >=0.1.3-0 <0.1.4 || >=0.1.4-0 <0.1.5 || >=0.1.5-0 <0.1.6 || >=0.1.6-0 <0.1.7 || >=0.1.7-0 <0.1.8 || >=0.1.8-0 <0.1.9 || >=0.1.9-0 <0.1.10 || >=0.1.10-0 <0.1.11 || >=0.1.11-0 <0.1.12 || >=0.1.12-0 <0.1.13 || >=0.1.13-0 <0.1.14 || >=0.1.14-0 <0.1.15 || >=0.1.15-0 <0.1.16 || >=0.1.16-0 <0.1.17 || >=0.1.17-0 <0.1.18 || >=0.1.18-0 <0.1.19 || >=0.1.19-0 <0.2.0 || >=0.2.0-0 <0.2.1 || >=0.2.1-0 <0.2.2 || >=0.2.2-0 <0.2.3 || >=0.2.3-0 <0.2.4 || >=0.2.4-0 <0.2.5 || >=0.2.5-0 <0.2.6 || >=0.2.6-0 <0.2.7 || >=0.2.7-0 <0.2.8 || >=0.2.8-0 <0.2.9 || >=0.2.9-0 <0.3.0 || >=0.3.0-0 <0.3.1 || >=0.3.1-0 <0.3.2 || >=0.3.2-0 <0.3.3 || >=0.3.3-0 <0.3.4 || >=0.3.4-0 <0.3.5 || >=0.3.5-0 <0.3.6 || >=0.3.6-0 <0.3.7 || >=0.3.7-0 <0.3.8 || >=0.3.8-0 <0.3.9 || >=0.3.9-0 <0.4.0 || >=0.4.0-0 || >=1.0.0-0 || >=2.0.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:44:58.757Z
+    checkedAt: 2026-11-23T23:21:07.510Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 3
 featuredRank: 1095
-releaseUpdatedAt: 2026-11-09T00:14:31.745Z
-metadataUpdatedAt: 2026-11-14T23:44:59.520Z
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-23T23:21:08.393Z
+metadataUpdatedAt: 2026-11-23T23:21:08.393Z
 starsUpdatedAt: 2026-10-30T03:53:41.003Z
-updatedAt: 2026-11-14T23:44:59.520Z
+updatedAt: 2026-11-23T23:21:08.393Z

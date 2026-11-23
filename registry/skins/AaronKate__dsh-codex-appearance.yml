@@ -15,18 +15,18 @@ modes:
   - light
   - dark
 install:
-  target: github:AaronKate/dsh-codex-appearance#0279355ad9a12ad62e2b7a829d9b23a9ee31d61f
-  version: 0.3.23
-  commit: 0279355ad9a12ad62e2b7a829d9b23a9ee31d61f
+  target: github:AaronKate/dsh-codex-appearance#173ca59235ee8c18ecbe66f48d955aeccb93a371
+  version: 0.3.25
+  commit: 173ca59235ee8c18ecbe66f48d955aeccb93a371
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
   npm:
     name: dsh-eye-comfort
-    version: 0.3.23
-    integrity: sha512-O9iKUyJK1qgNEa4YhFS1LYdP1g2VprqeU7ZuimVH7lT2b1Qo0BPxDmiGj6KsmPN0XOz6MxIdImrHIiZK6QgZWw==
+    version: 0.3.25
+    integrity: sha512-+qN9RWNQ3aWvndasXOy2cO7G0sxIxIBV/9xMFLsF+lQfyvaGq1yyQIKwZqUV9ua45Q+ncLvDe3jEtybJmLu3uQ==
     repository: https://github.com/AaronKate/dsh-codex-appearance
-    gitHead: 0279355ad9a12ad62e2b7a829d9b23a9ee31d61f
+    gitHead: 173ca59235ee8c18ecbe66f48d955aeccb93a371
 compatibility:
   dsh: 0.2.0-rc.2
   platform:
@@ -52,19 +52,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 0279355ad9a12ad62e2b7a829d9b23a9ee31d61f
-    packageVersion: 0.3.23
+    commit: 173ca59235ee8c18ecbe66f48d955aeccb93a371
+    packageVersion: 0.3.25
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-07T05:34:03.510Z
+    checkedAt: 2026-11-23T23:21:41.779Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-07T05:34:04.473Z
-metadataUpdatedAt: 2026-11-07T05:34:04.473Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-23T23:21:43.192Z
+metadataUpdatedAt: 2026-11-23T23:21:43.192Z
 starsUpdatedAt: 2026-10-30T03:54:07.219Z
-updatedAt: 2026-11-07T05:34:04.473Z
+updatedAt: 2026-11-23T23:21:43.192Z
