@@ -1160,16 +1160,6 @@
         "observedAt": "2026-11-14T23:50:15.754Z"
       }
     },
-    "bay.zeddie.dsh.theme.studio": {
-      "schema": "install-policy-v1",
-      "mode": "github",
-      "package": "dsh-theme-studio",
-      "resolved": {
-        "version": "0.3.2",
-        "commit": "7bba062f5519c827220e2a52be5256240c871365",
-        "observedAt": "2026-11-15T20:46:54.100Z"
-      }
-    },
     "bbbbbmy.dsh.moe.bear.skin": {
       "schema": "install-policy-v1",
       "mode": "github",
@@ -3792,18 +3782,6 @@
         "version": "4.1.3",
         "commit": "f189b810ee62db6bca66d9acaa6cdadeabac3710",
         "observedAt": "2026-11-14T23:50:15.754Z"
-      }
-    },
-    "intellecxplore.theme": {
-      "schema": "install-policy-v1",
-      "mode": "npm",
-      "package": "@intellecxplore/plugin-theme",
-      "resolved": {
-        "version": "1.1.3",
-        "commit": "072faaf8e2a004a81b9b78fd7fa49c188806e5c1",
-        "integrity": "sha512-v0pyLhPtGX8GqGOKTreHoOXffDjq/acexrmw+2/1j0ap4/gkaYn2CVTiy/dCKxq+p//YuM4HmFFcjlpOw5JYAw==",
-        "gitHead": "072faaf8e2a004a81b9b78fd7fa49c188806e5c1",
-        "observedAt": "2026-11-15T20:46:54.100Z"
       }
     },
     "ip050.dsh-video-player-ip050": {
