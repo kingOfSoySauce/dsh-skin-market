@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-23**：[墨街主题](https://github.com/Shirolin/dsh-theme-splat-ui)（Shirolin）——斯普拉遁 2 风格墨街主题：日间采用官方绿/奶油/洋红三色涂地画布铺设鱿鱼纹、泼溅与网点，夜间切换至炭黑广场并保留霓虹墨色。包含透明墨鱼品牌侧栏、独立洋红新会话胶囊、带墨尾的荧光绿选中行、24 格大招能量槽启动页、黑描边滴墨输入框与「设置 → 插件 → 墨街外观」（纸白 20%/均衡 50%/涂地 100% 预设、墨度滑杆、三档主墨色、diff 语法与装饰/字体开关），仅通过公开 ThemeRuntime Token 与 Slot 实现，停用即还原原生外观。详见[收录日志](./docs/recently-added.md#recent-2026-11-23-shirolin-dsh-theme-splat-ui)。
+- **2026-11-25**：[dsh-diy-skin](https://github.com/Chang-An2002/dsh-diy-skin)（Chang-An2002）——背景与配色「装修」插件：最多加 16 张壁纸和贴纸（支持 GIF，可拖动、缩放、去白底），界面配色 22 个旋钮加 7 套预设，左下角常驻余额，卸载即还原。详见[收录日志](./docs/recently-added.md#recent-2026-11-25-chang-an2002-dsh-diy-skin)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

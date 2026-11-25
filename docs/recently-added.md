@@ -1,5 +1,20 @@
 # 近期收录
 
+<!-- dsh-admission:chang.an2002.dsh.diy.skin -->
+<a id="recent-2026-11-25-chang-an2002-dsh-diy-skin"></a>
+
+## 2026-11-25 · dsh-diy-skin
+
+作者：Chang-An2002
+
+背景与配色「装修」插件：最多加 16 张壁纸和贴纸（支持 GIF，可拖动、滚轮缩放、拖四角拉伸，每张单独调透明度和模糊，还能按容差从四边去掉白底而保留主体内部白色）；界面配色有 22 个旋钮、7 套预设，也能把自己调好的整套存成命名方案，浅色深色分开编辑；左下角常驻余额，单击刷新、双击跳转充值页，面板底部显示图片占用了多少空间。装好后侧栏出现「背景」入口，插件本身可开关，卸载即还原。作者只在 Windows 桌面端验证过，Web 端未验证。
+
+GitHub：[Chang-An2002/dsh-diy-skin](https://github.com/Chang-An2002/dsh-diy-skin)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Chang-An2002__dsh-diy-skin--dsh-diy-skin/004db3bb08b7fd54423ce8564bdd316ae88ca124/home.png" width="60%" alt="dsh-diy-skin">
+
+<!-- /dsh-admission:chang.an2002.dsh.diy.skin -->
+
 <!-- dsh-admission:shirolin.dsh.theme.splat.ui -->
 <a id="recent-2026-11-23-shirolin-dsh-theme-splat-ui"></a>
 

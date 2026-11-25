@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-23**: [SPLAT-STREET](https://github.com/Shirolin/dsh-theme-splat-ui) (Shirolin). See the [recent additions log](./docs/recently-added.md#recent-2026-11-23-shirolin-dsh-theme-splat-ui).
+- **2026-11-25**: [dsh-diy-skin](https://github.com/Chang-An2002/dsh-diy-skin) (Chang-An2002). See the [recent additions log](./docs/recently-added.md#recent-2026-11-25-chang-an2002-dsh-diy-skin).
 
 See the [recent additions log](./docs/recently-added.md).
 
