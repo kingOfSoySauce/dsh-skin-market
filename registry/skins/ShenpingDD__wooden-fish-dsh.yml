@@ -6,7 +6,7 @@ author: ShenpingDD
 description: 🪵 电子木鱼桌宠 — A clickable wooden-fish desktop pet for the DeepSeek Harness web GUI. Click to knock, counts per day, trends in settings.
 repo: https://github.com/ShenpingDD/wooden-fish-dsh
 package: dsh-wooden-fish
-rowId: wooden-fish-dsh
+rowId: dsh-wooden-fish
 category: pet
 tags:
   - pet
