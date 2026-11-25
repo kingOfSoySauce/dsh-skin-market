@@ -32,7 +32,7 @@ describe('submission contract', () => {
 
   it('keeps the English README block in sync', async () => {
     const contract = await loadContract()
-    const source = await readFile(join(process.cwd(), 'README.en.md'), 'utf8')
+    const source = await readFile(join(process.cwd(), 'docs/README.en.md'), 'utf8')
     expect(readBlock(source, contract.markers)).toBe(renderBlock(contract, 'en'))
   })
 

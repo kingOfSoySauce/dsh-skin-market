@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const contractPath = join(root, 'registry', 'submission-contract.json')
 const schemaPath = join(root, 'registry', 'skin.schema.json')
-const readmes = { zh: join(root, 'README.md'), en: join(root, 'README.en.md') }
+const readmes = { zh: join(root, 'README.md'), en: join(root, 'docs', 'README.en.md') }
 
 export async function loadContract() {
   return JSON.parse(await readFile(contractPath, 'utf8'))

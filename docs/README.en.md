@@ -1,13 +1,13 @@
-# DSH Skin Market <sub><a href="./README.md">中文</a></sub>
+# DSH Skin Market <sub><a href="../README.md">中文</a></sub>
 
 A community skin market embedded in DSH settings: browse, search, install, use, disable, pin, update, and uninstall DSH skins.
 
 <p align="center">
-  <img src="./docs/assets/skin-market-liang.png" alt="The skin market discovery page in DSH settings" width="70%">
+  <img src="./assets/skin-market-liang.png" alt="The skin market discovery page in DSH settings" width="70%">
 </p>
 
 <p align="center">
-  <img src="./docs/assets/skin-market-deep-whale.png" alt="The Deep Whale skin details dialog in DSH Skin Market" width="70%">
+  <img src="./assets/skin-market-deep-whale.png" alt="The Deep Whale skin details dialog in DSH Skin Market" width="70%">
 </p>
 
 ## Online preview
@@ -16,9 +16,9 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-26**: [Theme Studio](https://github.com/Bay-Zeddie/dsh-theme-studio) (Bay-Zeddie). See the [recent additions log](./docs/recently-added.md#recent-2026-11-26-bay-zeddie-dsh-theme-studio).
+- **2026-11-26**: [Theme Studio](https://github.com/Bay-Zeddie/dsh-theme-studio) (Bay-Zeddie). See the [recent additions log](./recently-added.md#recent-2026-11-26-bay-zeddie-dsh-theme-studio).
 
-See the [recent additions log](./docs/recently-added.md).
+See the [recent additions log](./recently-added.md).
 
 <a id="manual-update"></a>
 ## Install and update
@@ -323,8 +323,8 @@ To update display copy, the same PR may edit the author's own entry in `data/cat
 
 Do not change id, repo, subpath, package, rowId, install, license, review, health, featuredRank, star counts, or any timestamp. Do not edit `data/catalog.json`, do not touch another author's entry, and do not invent a commit, rowId, or compatibility evidence. CI checks the PR's own diff: exactly one `registry/skins/*.yml`, optionally one own `data/catalog-copy.json`. This PR does not refresh the pinned version; when a refresh is needed, name the upstream commit in the PR body and maintainers handle it in the release follow-up process. Acceptance is not a security certification.
 
-Local acceptance steps are in [TESTING.md](./docs/TESTING.md).
+Local acceptance steps are in [TESTING.md](./TESTING.md).
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](../LICENSE)

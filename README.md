@@ -1,4 +1,4 @@
-# DSH 皮肤市场 <sub><a href="./README.en.md">English</a></sub>
+# DSH 皮肤市场 <sub><a href="./docs/README.en.md">English</a></sub>
 
 浏览、搜索、安装并管理 DSH 皮肤。
 
