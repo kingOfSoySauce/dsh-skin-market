@@ -14,28 +14,15 @@ modes:
   - light
   - dark
 install:
-  target: github:haoranx98/dsh-skin-galaxy#54abbd93c2aa60b1e014604e6b60e858d85f511a
-  version: 0.1.6
-  commit: 54abbd93c2aa60b1e014604e6b60e858d85f511a
-  desktop:
-    mode: managed
-    registry: npm
-    packageName: dsh-skin-galaxy
-    packageVersion: 0.1.6
-    integrity: sha512-Rfmd8KCD+VB0RYTZahoPFWYNoEzMKzDmsi7yJmGVM6BXDoh6yL7UDP50u5OIyLJGoX7UpfJGE6KQogp0GlHTqg==
-  npm:
-    name: dsh-skin-galaxy
-    version: 0.1.6
-    integrity: sha512-Rfmd8KCD+VB0RYTZahoPFWYNoEzMKzDmsi7yJmGVM6BXDoh6yL7UDP50u5OIyLJGoX7UpfJGE6KQogp0GlHTqg==
-    repository: https://github.com/haoranx98/dsh-skin-galaxy
-    gitHead: 54abbd93c2aa60b1e014604e6b60e858d85f511a
+  target: github:haoranx98/dsh-skin-galaxy#1972db233d8a47d80a7e50336c23a8c5f8e93340
+  version: 0.1.9
+  commit: 1972db233d8a47d80a7e50336c23a8c5f8e93340
 compatibility:
   dsh: unverified
   platform:
     - web
 screenshots:
-  - https://raw.githubusercontent.com/haoranx98/dsh-skin-galaxy/7f72079d38ca4fb2ee2c9a0e285018feadbcfc83/screenshots/dsh-galaxy.gif
-listScreenshot: https://raw.githubusercontent.com/haoranx98/dsh-skin-galaxy/7f72079d38ca4fb2ee2c9a0e285018feadbcfc83/screenshots/dsh-galaxy.gif
+  - https://raw.githubusercontent.com/haoranx98/dsh-skin-galaxy/1972db233d8a47d80a7e50336c23a8c5f8e93340/screenshots/dsh-galaxy.gif
 review:
   compatibility: unverified
   preview: verified
@@ -50,20 +37,12 @@ health:
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
-  scan:
-    commit: 54abbd93c2aa60b1e014604e6b60e858d85f511a
-    packageVersion: 0.1.6
-    scannerVersion: static-v2
-    mode: static
-    result: pass
-    checkedAt: 2026-11-12T00:11:05.375Z
-    findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-12T00:11:05.986Z
-metadataUpdatedAt: 2026-11-12T00:11:05.986Z
-starsUpdatedAt: 2026-11-21T19:02:03.961Z
-updatedAt: 2026-11-21T19:02:03.961Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-25T14:34:47.987Z
+metadataUpdatedAt: 2026-11-25T14:34:47.987Z
+starsUpdatedAt: 2026-11-25T14:34:47.987Z
+updatedAt: 2026-11-25T14:34:47.987Z
