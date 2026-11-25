@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:01Virex/dsh-status-rotator#6473223c6faf7ae58331ef317ea67692a50f3676
+  target: github:01Virex/dsh-status-rotator#1559ac4a1e1c3615b8e9454c554419a54e2c28b1
   version: 0.38.0
-  commit: 6473223c6faf7ae58331ef317ea67692a50f3676
+  commit: 1559ac4a1e1c3615b8e9454c554419a54e2c28b1
   desktop:
     mode: managed
     registry: npm
@@ -51,19 +51,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 6473223c6faf7ae58331ef317ea67692a50f3676
+    commit: 1559ac4a1e1c3615b8e9454c554419a54e2c28b1
     packageVersion: 0.38.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-23T23:20:04.343Z
+    checkedAt: 2026-11-25T21:28:47.373Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1106
-starsSnapshot: 236
-releaseUpdatedAt: 2026-11-23T23:20:06.259Z
-metadataUpdatedAt: 2026-11-23T23:20:06.259Z
-starsUpdatedAt: 2026-11-21T19:02:03.961Z
-updatedAt: 2026-11-23T23:20:06.259Z
+starsSnapshot: 238
+releaseUpdatedAt: 2026-11-25T21:28:48.770Z
+metadataUpdatedAt: 2026-11-25T21:28:48.770Z
+starsUpdatedAt: 2026-11-25T21:28:48.770Z
+updatedAt: 2026-11-25T21:28:48.770Z

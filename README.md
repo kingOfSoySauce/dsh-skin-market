@@ -16,7 +16,7 @@
 
 ### 近期收录
 
-- **2026-11-25**：[dsh-diy-skin](https://github.com/Chang-An2002/dsh-diy-skin)（Chang-An2002）——背景与配色「装修」插件：最多加 16 张壁纸和贴纸（支持 GIF，可拖动、缩放、去白底），界面配色 22 个旋钮加 7 套预设，左下角常驻余额，卸载即还原。详见[收录日志](./docs/recently-added.md#recent-2026-11-25-chang-an2002-dsh-diy-skin)。
+- **2026-11-26**：[主题工坊](https://github.com/Bay-Zeddie/dsh-theme-studio)（Bay-Zeddie）——换图片/视频壁纸（原文件直供，视频走 HTTP Range 可拖进度），按 7 组 49 个宿主令牌逐令牌配色并上传自定义字体，另有玻璃质感、圆角与动效时长、整窗全屏、从壁纸取色和 12 套明暗预设，配置可存成命名档互切；目前只支持桌面端。详见[收录日志](./docs/recently-added.md#recent-2026-11-26-bay-zeddie-dsh-theme-studio)。
 
 最新收录见[收录日志](./docs/recently-added.md)。
 

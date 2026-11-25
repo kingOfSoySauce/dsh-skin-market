@@ -18,39 +18,59 @@ modes:
   - light
   - dark
 install:
-  target: github:Chang-An2002/dsh-diy-skin#004db3bb08b7fd54423ce8564bdd316ae88ca124&path:/dsh-diy-skin
+  target: github:Chang-An2002/dsh-diy-skin#6ef41ab0dc471507289548fadab4f2e3881f76ce&path:/dsh-diy-skin
   version: 1.30.3
-  commit: 004db3bb08b7fd54423ce8564bdd316ae88ca124
+  commit: 6ef41ab0dc471507289548fadab4f2e3881f76ce
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-diy-skin
+    packageVersion: 1.30.3
+    integrity: sha512-EtFXC4wo1AEMxXE8IUKSetgvffqyxDNFKxRXXopixKXvBwKSzifMhPOaIHtrZoDBeXhWKajso/dws53ZRt0i5w==
+  npm:
+    name: dsh-diy-skin
+    version: 1.30.3
+    integrity: sha512-EtFXC4wo1AEMxXE8IUKSetgvffqyxDNFKxRXXopixKXvBwKSzifMhPOaIHtrZoDBeXhWKajso/dws53ZRt0i5w==
+    repository: https://github.com/Chang-An2002/dsh-diy-skin
+    gitHead: 6ef41ab0dc471507289548fadab4f2e3881f76ce
 compatibility:
-  dsh: unverified
+  dsh: ^1.30.3
   platform:
     - web
-screenshots: []
 marketScreenshots:
   - skin-screenshots/Chang-An2002__dsh-diy-skin--dsh-diy-skin/004db3bb08b7fd54423ce8564bdd316ae88ca124/home.png
   - skin-screenshots/Chang-An2002__dsh-diy-skin--dsh-diy-skin/004db3bb08b7fd54423ce8564bdd316ae88ca124/settings.png
+screenshots: []
 review:
-  compatibility: unverified
-  preview: repository-card
+  compatibility: verified
+  preview: verified
   installation: verified
 health:
   status: improvements
   checks:
     readmeScreenshots: improve
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
-    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+  scan:
+    commit: 6ef41ab0dc471507289548fadab4f2e3881f76ce
+    packageVersion: 1.30.3
+    scannerVersion: static-v2
+    dshVersion: ^1.30.3
+    mode: static
+    result: pass
+    checkedAt: 2026-11-25T21:30:32.130Z
+    findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-24T19:26:10.469Z
-metadataUpdatedAt: 2026-11-24T19:26:10.469Z
+releaseUpdatedAt: 2026-11-25T21:30:32.153Z
+metadataUpdatedAt: 2026-11-25T21:30:32.153Z
 starsUpdatedAt: 2026-11-24T19:26:10.469Z
-updatedAt: 2026-11-24T19:26:10.469Z
+updatedAt: 2026-11-25T21:30:32.153Z

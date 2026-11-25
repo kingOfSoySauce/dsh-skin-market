@@ -36,8 +36,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/zzzhengqi__dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/home.gif
 screenshots:
   - https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/boot.jpg
   - https://raw.githubusercontent.com/zzzhengqi/dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/screenshots/theme.jpg
@@ -69,9 +67,11 @@ health:
 license:
   code: (MIT AND CC-BY-NC-4.0)
   commercialUse: false
-featuredRank: 1511
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/zzzhengqi__dsh-firefly-skin/392262e2e39eaf0b4e25fae7f1379ebb6a2458eb/home.gif
+featuredRank: 1511
 releaseUpdatedAt: 2026-11-15T20:46:44.648Z
-metadataUpdatedAt: 2026-11-23T23:24:14.191Z
+metadataUpdatedAt: 2026-11-25T21:28:40.788Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-23T23:24:14.191Z
+updatedAt: 2026-11-25T21:28:40.788Z

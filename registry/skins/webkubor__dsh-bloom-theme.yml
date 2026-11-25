@@ -16,21 +16,21 @@ modes:
   - light
   - dark
 install:
-  target: github:webkubor/dsh-bloom-theme#593d5d6c39cd0cd2769d878cceb89763d2a1136a
-  version: 0.30.0
-  commit: 593d5d6c39cd0cd2769d878cceb89763d2a1136a
+  target: github:webkubor/dsh-bloom-theme#ab06f1f05058afccfa3c040255ad89dc4a2157ea
+  version: 0.30.1
+  commit: ab06f1f05058afccfa3c040255ad89dc4a2157ea
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-bloom-theme
-    packageVersion: 0.30.0
-    integrity: sha512-ub/u693E7gdRpwmk6+Uij7fjP1GId+EkN8rRpIGItf1tC/pwQv0aLZpTOOMSNOpgVfyAL/qnEcmC86NxhObq4Q==
+    packageVersion: 0.30.1
+    integrity: sha512-2A5igqkbLsMBD7beYkNSgWwWPb0wYgcGQiPISY9u26/xdv4oSRj037mPqNNc4HzjQv2K1V3rSrcCxrKjcT3rpA==
   npm:
     name: dsh-bloom-theme
-    version: 0.30.0
-    integrity: sha512-ub/u693E7gdRpwmk6+Uij7fjP1GId+EkN8rRpIGItf1tC/pwQv0aLZpTOOMSNOpgVfyAL/qnEcmC86NxhObq4Q==
+    version: 0.30.1
+    integrity: sha512-2A5igqkbLsMBD7beYkNSgWwWPb0wYgcGQiPISY9u26/xdv4oSRj037mPqNNc4HzjQv2K1V3rSrcCxrKjcT3rpA==
     repository: https://github.com/webkubor/dsh-bloom-theme
-    gitHead: 593d5d6c39cd0cd2769d878cceb89763d2a1136a
+    gitHead: ab06f1f05058afccfa3c040255ad89dc4a2157ea
 compatibility:
   dsh: ">=0.2.2-rc.1"
   platform:
@@ -57,20 +57,20 @@ health:
   suggestions:
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 593d5d6c39cd0cd2769d878cceb89763d2a1136a
-    packageVersion: 0.30.0
+    commit: ab06f1f05058afccfa3c040255ad89dc4a2157ea
+    packageVersion: 0.30.1
     scannerVersion: static-v2
     dshVersion: ">=0.2.2-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-23T23:20:01.313Z
+    checkedAt: 2026-11-25T21:28:46.001Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 193
-starsSnapshot: 315
-releaseUpdatedAt: 2026-11-23T23:20:03.609Z
-metadataUpdatedAt: 2026-11-23T23:20:03.609Z
-starsUpdatedAt: 2026-11-23T23:20:03.609Z
-updatedAt: 2026-11-23T23:20:03.609Z
+starsSnapshot: 321
+releaseUpdatedAt: 2026-11-25T21:28:48.216Z
+metadataUpdatedAt: 2026-11-25T21:28:48.216Z
+starsUpdatedAt: 2026-11-25T21:28:48.216Z
+updatedAt: 2026-11-25T21:28:48.216Z

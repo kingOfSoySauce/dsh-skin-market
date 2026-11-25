@@ -41,10 +41,6 @@ compatibility:
   dsh: ^0.1.11
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/home.png
-  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/conversation.png
-  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/settings.png
 screenshots:
   - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/preset-orca-link-dark.gif
   - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/preset-orca-link-light.gif
@@ -82,9 +78,13 @@ license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
+starsSnapshot: 3148
+marketScreenshots:
+  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/home.png
+  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/conversation.png
+  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/settings.png
 featuredRank: 3
-starsSnapshot: 3141
 releaseUpdatedAt: 2026-11-23T23:20:01.417Z
-metadataUpdatedAt: 2026-11-23T23:20:01.417Z
-starsUpdatedAt: 2026-11-23T23:20:01.417Z
-updatedAt: 2026-11-23T23:20:01.417Z
+metadataUpdatedAt: 2026-11-25T21:28:40.788Z
+starsUpdatedAt: 2026-11-25T21:28:40.788Z
+updatedAt: 2026-11-25T21:28:40.788Z

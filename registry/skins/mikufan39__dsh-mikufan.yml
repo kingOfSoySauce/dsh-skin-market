@@ -29,8 +29,6 @@ compatibility:
   dsh: ">=0.2.2-rc.1"
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/mikufan39__dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/home.gif
 screenshots:
   - https://raw.githubusercontent.com/mikufan39/dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/control-panel.png
 listScreenshot: skin-screenshots/mikufan39__dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/home.gif
@@ -60,9 +58,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1243
 starsSnapshot: 1
+marketScreenshots:
+  - skin-screenshots/mikufan39__dsh-mikufan/3b8c310b08f56cb1d9387ca30141bc320e6f9a2a/home.gif
+featuredRank: 1243
 releaseUpdatedAt: 2026-11-23T23:22:14.250Z
-metadataUpdatedAt: 2026-11-23T23:22:14.250Z
+metadataUpdatedAt: 2026-11-25T21:28:40.788Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-23T23:22:14.250Z
+updatedAt: 2026-11-25T21:28:40.788Z
