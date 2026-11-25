@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:brunozhang416/dsh-eva-unit-01-skin#79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead
-  version: 1.10.16
-  commit: 79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead
+  target: github:brunozhang416/dsh-eva-unit-01-skin#3889cfa21c015e8745011dd8c2061f32ffc943cf
+  version: 1.10.17
+  commit: 3889cfa21c015e8745011dd8c2061f32ffc943cf
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -51,12 +51,12 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead
-    packageVersion: 1.10.16
+    commit: 3889cfa21c015e8745011dd8c2061f32ffc943cf
+    packageVersion: 1.10.17
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:43:57.580Z
+    checkedAt: 2026-11-24T22:19:30.625Z
     findings: []
 license:
   code: MIT
@@ -65,7 +65,7 @@ starsSnapshot: 0
 marketScreenshots:
   - skin-screenshots/brunozhang416__dsh-eva-unit-01-skin/79967ddb5d697da7e21cdb0a6f8a6bcc33d84ead/home.gif
 featuredRank: 1305
-releaseUpdatedAt: 2026-11-15T20:43:59.322Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+releaseUpdatedAt: 2026-11-25T21:28:40.788Z
+metadataUpdatedAt: 2026-11-25T21:28:40.788Z
 starsUpdatedAt: 2026-11-14T11:55:59.482Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-25T21:28:40.788Z

@@ -36,8 +36,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/magiceric__dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/home.gif
 screenshots:
   - https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/assets/screenshot-boot.jpg
   - https://raw.githubusercontent.com/magiceric/dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/assets/screenshot-app.jpg
@@ -67,9 +65,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1396
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/magiceric__dsh-skin-magiclab/6006c02819cc6eed44f8c4a573df9ecb2dc79ab7/home.gif
+featuredRank: 1396
 releaseUpdatedAt: 2026-11-15T20:45:09.458Z
-metadataUpdatedAt: 2026-11-23T23:23:26.841Z
+metadataUpdatedAt: 2026-11-25T21:28:40.788Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-23T23:23:26.841Z
+updatedAt: 2026-11-25T21:28:40.788Z

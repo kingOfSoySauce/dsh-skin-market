@@ -5,8 +5,8 @@ name:
 author: ShenpingDD
 description: 🪵 电子木鱼桌宠 — A clickable wooden-fish desktop pet for the DeepSeek Harness web GUI. Click to knock, counts per day, trends in settings.
 repo: https://github.com/ShenpingDD/wooden-fish-dsh
-package: wooden-fish-dsh
-rowId: wooden-fish-dsh
+package: dsh-wooden-fish
+rowId: dsh-wooden-fish
 category: pet
 tags:
   - pet
@@ -14,40 +14,40 @@ modes:
   - light
   - dark
 install:
-  target: github:ShenpingDD/wooden-fish-dsh#9b4514098e91cdff880f439a18abd3c18efafbf4
-  version: 1.1.0
-  commit: 9b4514098e91cdff880f439a18abd3c18efafbf4
+  target: github:ShenpingDD/wooden-fish-dsh#e1d3df236c896d523f302de97196653a622b4d7e
+  version: 2.0.1
+  commit: e1d3df236c896d523f302de97196653a622b4d7e
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.2-rc.1 <0.3.0-0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/ShenpingDD/wooden-fish-dsh/9b4514098e91cdff880f439a18abd3c18efafbf4/docs/screenshots/ui-design-preview.png
 listScreenshot: https://raw.githubusercontent.com/ShenpingDD/wooden-fish-dsh/9b4514098e91cdff880f439a18abd3c18efafbf4/docs/screenshots/ui-design-preview.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
-    commit: 9b4514098e91cdff880f439a18abd3c18efafbf4
-    packageVersion: 1.1.0
+    commit: e1d3df236c896d523f302de97196653a622b4d7e
+    packageVersion: 2.0.1
     scannerVersion: static-v2
+    dshVersion: ">=0.2.2-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-10-26T01:53:07.884Z
+    checkedAt: 2026-11-24T22:20:31.901Z
     findings: []
 license:
   code: MIT
@@ -56,7 +56,7 @@ starsSnapshot: 0
 marketScreenshots:
   - skin-screenshots/ShenpingDD__wooden-fish-dsh/9b4514098e91cdff880f439a18abd3c18efafbf4/home.png
 featuredRank: 1000
-releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-11-11T13:17:15.192Z
+releaseUpdatedAt: 2026-11-25T21:28:40.788Z
+metadataUpdatedAt: 2026-11-25T21:28:40.788Z
 starsUpdatedAt: 2026-10-24T21:34:17.947Z
-updatedAt: 2026-11-11T13:17:15.192Z
+updatedAt: 2026-11-25T21:28:40.788Z

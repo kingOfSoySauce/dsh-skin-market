@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Streamfish-lab/dsh-splash-fish#e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596
+  target: github:Streamfish-lab/dsh-splash-fish#ada6f4052b2014743ee2bc0893d9535561e6af3e
   version: 0.3.0
-  commit: e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596
+  commit: ada6f4052b2014743ee2bc0893d9535561e6af3e
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -26,6 +26,8 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Streamfish-lab__dsh-splash-fish/e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596/home.gif
 screenshots:
   - https://raw.githubusercontent.com/Streamfish-lab/dsh-splash-fish/e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596/preview/poster.jpg
 listScreenshot: skin-screenshots/Streamfish-lab__dsh-splash-fish/e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596/home.gif
@@ -39,26 +41,25 @@ health:
     readmeScreenshots: pass
     compatibility: improve
     installation: pass
-    installCommand: pass
+    installCommand: improve
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596
+    commit: ada6f4052b2014743ee2bc0893d9535561e6af3e
     packageVersion: 0.3.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:45:07.645Z
+    checkedAt: 2026-11-25T21:29:40.507Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 4
-marketScreenshots:
-  - skin-screenshots/Streamfish-lab__dsh-splash-fish/e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596/home.gif
 featuredRank: 1267
-releaseUpdatedAt: 2026-11-14T23:45:07.759Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-25T21:29:41.659Z
+metadataUpdatedAt: 2026-11-25T21:29:41.659Z
 starsUpdatedAt: 2026-11-16T09:48:54.442Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-25T21:29:41.659Z

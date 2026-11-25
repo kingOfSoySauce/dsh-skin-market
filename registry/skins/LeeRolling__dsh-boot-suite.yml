@@ -18,15 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:LeeRolling/dsh-boot-suite#83645b8aa9e5b9d8f964dc6e29b4c66dc40f8ddd
-  version: 2.16.13
-  commit: 83645b8aa9e5b9d8f964dc6e29b4c66dc40f8ddd
+  target: github:LeeRolling/dsh-boot-suite#e083f2ab6883fb700ce80e674f445dabbb27d46d
+  version: 2.16.16
+  commit: e083f2ab6883fb700ce80e674f445dabbb27d46d
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-boot-suite
-    packageVersion: 2.16.13
-    integrity: sha512-mddweD6bbkEArz7n9vuk8xTCOoE5Orrl8E4QELy0HmVraCwPNJPvXCCmLPBwA1o3n4ddigxUtUIKJjf4DVx1Kg==
+    packageVersion: 2.16.16
+    integrity: sha512-lOyTsi2byOrvNrdKqNmJM9g/VrX5gvs3DrgKOj6uSepny48YYl9F+ndxRxBgboZAhdcI0yvENXIc3HXCDU7rSg==
+  npm:
+    name: dsh-boot-suite
+    version: 2.16.16
+    integrity: sha512-lOyTsi2byOrvNrdKqNmJM9g/VrX5gvs3DrgKOj6uSepny48YYl9F+ndxRxBgboZAhdcI0yvENXIc3HXCDU7rSg==
+    repository: https://github.com/LeeRolling/dsh-boot-suite
+    gitHead: e083f2ab6883fb700ce80e674f445dabbb27d46d
 compatibility:
   dsh: unverified
   platform:
@@ -49,19 +55,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 83645b8aa9e5b9d8f964dc6e29b4c66dc40f8ddd
-    packageVersion: 2.16.13
+    commit: e083f2ab6883fb700ce80e674f445dabbb27d46d
+    packageVersion: 2.16.16
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-13T00:11:33.649Z
+    checkedAt: 2026-11-25T21:28:48.933Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 179
 featuredRank: 1109
-releaseUpdatedAt: 2026-11-13T00:28:13.548Z
-metadataUpdatedAt: 2026-11-13T00:28:13.548Z
-starsUpdatedAt: 2026-11-23T23:19:54.997Z
-updatedAt: 2026-11-23T23:19:54.997Z
+starsSnapshot: 187
+releaseUpdatedAt: 2026-11-25T21:28:49.990Z
+metadataUpdatedAt: 2026-11-25T21:28:49.990Z
+starsUpdatedAt: 2026-11-25T21:28:49.990Z
+updatedAt: 2026-11-25T21:28:49.990Z

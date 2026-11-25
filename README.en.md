@@ -16,7 +16,7 @@ A community skin market embedded in DSH settings: browse, search, install, use, 
 
 ### Recently added
 
-- **2026-11-25**: [dsh-diy-skin](https://github.com/Chang-An2002/dsh-diy-skin) (Chang-An2002). See the [recent additions log](./docs/recently-added.md#recent-2026-11-25-chang-an2002-dsh-diy-skin).
+- **2026-11-26**: [Theme Studio](https://github.com/Bay-Zeddie/dsh-theme-studio) (Bay-Zeddie). See the [recent additions log](./docs/recently-added.md#recent-2026-11-26-bay-zeddie-dsh-theme-studio).
 
 See the [recent additions log](./docs/recently-added.md).
 

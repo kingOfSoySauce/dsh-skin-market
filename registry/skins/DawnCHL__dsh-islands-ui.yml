@@ -20,15 +20,21 @@ modes:
   - light
   - dark
 install:
-  target: github:DawnCHL/dsh-islands-ui#aeacfadc71a5e3cd507218cb745f23a93720ade8
-  version: 1.2.5
-  commit: aeacfadc71a5e3cd507218cb745f23a93720ade8
+  target: github:DawnCHL/dsh-islands-ui#4f6af6eae71c6067c4ac175957a28ce2e18fdba7
+  version: 1.2.7
+  commit: 4f6af6eae71c6067c4ac175957a28ce2e18fdba7
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: dsh-islands-ui
+    packageVersion: 1.2.7
+    integrity: sha512-wxlunz48hb5xnpW53WBC7EQGMMZQ9U7m9yCHaL5OjcLGuZ8fC+9HtBzCnYAEDruONp+voSwrKcsvCzQMmXSc4A==
   npm:
     name: dsh-islands-ui
-    version: 1.2.5
-    integrity: sha512-Pd2XtHv8QkTrmHrKoVMA55w1xwGpK7zf+UetMbX2dOkV91b9Z5VFOC9E1bTBl290okGpGbkI9XGwG+vuHm9UGQ==
+    version: 1.2.7
+    integrity: sha512-wxlunz48hb5xnpW53WBC7EQGMMZQ9U7m9yCHaL5OjcLGuZ8fC+9HtBzCnYAEDruONp+voSwrKcsvCzQMmXSc4A==
     repository: https://github.com/DawnCHL/dsh-islands-ui
-    gitHead: aeacfadc71a5e3cd507218cb745f23a93720ade8
+    gitHead: 4f6af6eae71c6067c4ac175957a28ce2e18fdba7
 compatibility:
   dsh: ">=0.2.2-rc.1 <0.3.0-0"
   platform:
@@ -55,20 +61,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: aeacfadc71a5e3cd507218cb745f23a93720ade8
-    packageVersion: 1.2.5
+    commit: 4f6af6eae71c6067c4ac175957a28ce2e18fdba7
+    packageVersion: 1.2.7
     scannerVersion: static-v2
     dshVersion: ">=0.2.2-rc.1 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-20T19:57:01.566Z
+    checkedAt: 2026-11-24T22:17:14.565Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 8
+starsSnapshot: 12
 featuredRank: 1000
-releaseUpdatedAt: 2026-11-21T19:02:03.961Z
-metadataUpdatedAt: 2026-11-21T19:02:03.961Z
-starsUpdatedAt: 2026-11-23T23:19:54.997Z
-updatedAt: 2026-11-23T23:19:54.997Z
+releaseUpdatedAt: 2026-11-25T21:28:40.788Z
+metadataUpdatedAt: 2026-11-25T21:28:40.788Z
+starsUpdatedAt: 2026-11-25T21:28:40.788Z
+updatedAt: 2026-11-25T21:28:40.788Z

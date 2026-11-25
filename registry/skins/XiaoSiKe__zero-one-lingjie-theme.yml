@@ -17,9 +17,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:XiaoSiKe/zero-one-lingjie-theme#b8a375dd32af5be0ace7eecc1693324e4852caf3
+  target: github:XiaoSiKe/zero-one-lingjie-theme#66f519be6bd7b90d602d61030f73941801c10545
   version: 0.9.1
-  commit: b8a375dd32af5be0ace7eecc1693324e4852caf3
+  commit: 66f519be6bd7b90d602d61030f73941801c10545
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -47,13 +47,13 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
   scan:
-    commit: b8a375dd32af5be0ace7eecc1693324e4852caf3
+    commit: 66f519be6bd7b90d602d61030f73941801c10545
     packageVersion: 0.9.1
     scannerVersion: static-v2
     dshVersion: 0.2.1-rc.3
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:48:56.557Z
+    checkedAt: 2026-11-24T22:19:09.793Z
     findings: []
 license:
   code: MIT
@@ -62,7 +62,7 @@ starsSnapshot: 1
 marketScreenshots:
   - skin-screenshots/XiaoSiKe__zero-one-lingjie-theme/b8a375dd32af5be0ace7eecc1693324e4852caf3/home.gif
 featuredRank: 1278
-releaseUpdatedAt: 2026-11-14T23:48:56.799Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+releaseUpdatedAt: 2026-11-25T21:28:40.788Z
+metadataUpdatedAt: 2026-11-25T21:28:40.788Z
 starsUpdatedAt: 2026-11-14T07:57:16.245Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-25T21:28:40.788Z

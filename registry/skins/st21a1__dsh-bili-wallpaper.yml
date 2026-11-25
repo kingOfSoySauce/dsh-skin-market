@@ -18,21 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:st21a1/dsh-bili-wallpaper#5e4e767e93ae7124865a6bc8147fab738c95dc85
-  version: 0.3.0
-  commit: 5e4e767e93ae7124865a6bc8147fab738c95dc85
+  target: github:st21a1/dsh-bili-wallpaper#ce97e2b6739270ccae8d5236a4f1dad97ced1b95
+  version: 0.3.4
+  commit: ce97e2b6739270ccae8d5236a4f1dad97ced1b95
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-bili-wallpaper
-    packageVersion: 0.3.0
-    integrity: sha512-meIuj36NhHQWkVwuuRMR6rYvmtp55Og54fAaJP2g4WNaZRY1V2xcrXwz/cY72P58151gNy5tKuWbG7eade/rjw==
+    packageVersion: 0.3.4
+    integrity: sha512-6ryoebOohW7mBgnaR5BiD1Oyb7lP/eE4UR4UduveINGrwivmaIjtIHunRiVG+Ulxjw+Ik6uWCmz747Vq17rHmQ==
   npm:
     name: dsh-bili-wallpaper
-    version: 0.3.0
-    integrity: sha512-meIuj36NhHQWkVwuuRMR6rYvmtp55Og54fAaJP2g4WNaZRY1V2xcrXwz/cY72P58151gNy5tKuWbG7eade/rjw==
+    version: 0.3.4
+    integrity: sha512-6ryoebOohW7mBgnaR5BiD1Oyb7lP/eE4UR4UduveINGrwivmaIjtIHunRiVG+Ulxjw+Ik6uWCmz747Vq17rHmQ==
     repository: https://github.com/st21a1/dsh-bili-wallpaper
-    gitHead: 5e4e767e93ae7124865a6bc8147fab738c95dc85
+    gitHead: ce97e2b6739270ccae8d5236a4f1dad97ced1b95
 compatibility:
   dsh: ^0.2.0-rc.1
   platform:
@@ -55,20 +55,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 5e4e767e93ae7124865a6bc8147fab738c95dc85
-    packageVersion: 0.3.0
+    commit: ce97e2b6739270ccae8d5236a4f1dad97ced1b95
+    packageVersion: 0.3.4
     scannerVersion: static-v2
     dshVersion: ^0.2.0-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:45:45.746Z
+    checkedAt: 2026-11-25T21:32:28.606Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1444
-releaseUpdatedAt: 2026-11-15T20:45:46.091Z
-metadataUpdatedAt: 2026-11-15T20:45:46.091Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-25T21:32:29.290Z
+metadataUpdatedAt: 2026-11-25T21:32:29.290Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-15T20:45:46.091Z
+updatedAt: 2026-11-25T21:32:29.290Z

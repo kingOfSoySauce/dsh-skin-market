@@ -15,21 +15,21 @@ modes:
   - light
   - dark
 install:
-  target: github:CosmoSail/dsh-bloomglass#e0b8dcdb48c7c7383798a7416367a06cf67ffd7d
-  version: 1.0.7
-  commit: e0b8dcdb48c7c7383798a7416367a06cf67ffd7d
+  target: github:CosmoSail/dsh-bloomglass#6732e164613ab762142afa9767824ac8a5baabda
+  version: 1.0.8
+  commit: 6732e164613ab762142afa9767824ac8a5baabda
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-bloomglass
-    packageVersion: 1.0.7
-    integrity: sha512-qhUPF4EpBRZ6U7QgyZ1Ssvxf+Qd6FRLmuZfHMDYOmkQeFy4JhJnuCiqDRCYU1h5AlGrUdrffWv7lac7L6rfJFg==
+    packageVersion: 1.0.8
+    integrity: sha512-zVyPPqNSoEdGXnonhJmahnwzKJTyk6A0ynogPySUcGcmNBRk3Jb8A42nQRc/4TVYRl/lwPZ6wyxU207l/pyDoA==
   npm:
     name: dsh-bloomglass
-    version: 1.0.7
-    integrity: sha512-qhUPF4EpBRZ6U7QgyZ1Ssvxf+Qd6FRLmuZfHMDYOmkQeFy4JhJnuCiqDRCYU1h5AlGrUdrffWv7lac7L6rfJFg==
+    version: 1.0.8
+    integrity: sha512-zVyPPqNSoEdGXnonhJmahnwzKJTyk6A0ynogPySUcGcmNBRk3Jb8A42nQRc/4TVYRl/lwPZ6wyxU207l/pyDoA==
     repository: https://github.com/CosmoSail/dsh-bloomglass
-    gitHead: e0b8dcdb48c7c7383798a7416367a06cf67ffd7d
+    gitHead: 6732e164613ab762142afa9767824ac8a5baabda
 compatibility:
   dsh: unverified
   platform:
@@ -53,19 +53,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: e0b8dcdb48c7c7383798a7416367a06cf67ffd7d
-    packageVersion: 1.0.7
+    commit: 6732e164613ab762142afa9767824ac8a5baabda
+    packageVersion: 1.0.8
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-13T00:12:18.206Z
+    checkedAt: 2026-11-25T21:29:59.781Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
 featuredRank: 999
-releaseUpdatedAt: 2026-11-13T00:28:13.548Z
-metadataUpdatedAt: 2026-11-13T00:28:13.548Z
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-25T21:30:01.698Z
+metadataUpdatedAt: 2026-11-25T21:30:01.698Z
 starsUpdatedAt: 2026-11-09T07:14:36.576Z
-updatedAt: 2026-11-13T00:28:13.548Z
+updatedAt: 2026-11-25T21:30:01.698Z

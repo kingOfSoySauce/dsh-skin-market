@@ -17,21 +17,21 @@ modes:
   - light
   - dark
 install:
-  target: github:Tkingxiao/dsh-any-background#52ec5dc8b2b7cbe46239e89aadc444a955a2e6e9
-  version: 0.5.0
-  commit: 52ec5dc8b2b7cbe46239e89aadc444a955a2e6e9
+  target: github:Tkingxiao/dsh-any-background#abcf7a4542d29166f21ce303b5d9f3c8e62ba5bd
+  version: 0.5.1
+  commit: abcf7a4542d29166f21ce303b5d9f3c8e62ba5bd
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-any-background
-    packageVersion: 0.5.0
-    integrity: sha512-XW66hILsSVVW1m1S6xILzZMQu3aQJvew6QVerXU3vy5knjf60uGWCnnE8DOa05IX6i8NuFxi5/JBtA/g/xdWIg==
+    packageVersion: 0.5.1
+    integrity: sha512-CA30H/hvJCEUTk/1lD1EJOyLY14YZTc66aDivZj1PInXQZKPRWc+0Nx+BVEEPGyXTTnbC+kXPe/pGTbkayS7EQ==
   npm:
     name: dsh-any-background
-    version: 0.5.0
-    integrity: sha512-XW66hILsSVVW1m1S6xILzZMQu3aQJvew6QVerXU3vy5knjf60uGWCnnE8DOa05IX6i8NuFxi5/JBtA/g/xdWIg==
+    version: 0.5.1
+    integrity: sha512-CA30H/hvJCEUTk/1lD1EJOyLY14YZTc66aDivZj1PInXQZKPRWc+0Nx+BVEEPGyXTTnbC+kXPe/pGTbkayS7EQ==
     repository: https://github.com/Tkingxiao/dsh-any-background
-    gitHead: 52ec5dc8b2b7cbe46239e89aadc444a955a2e6e9
+    gitHead: abcf7a4542d29166f21ce303b5d9f3c8e62ba5bd
 compatibility:
   dsh: 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.0-rc.1
   platform:
@@ -58,22 +58,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.0-rc.1 未被本次检测范围 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.1-alpha.1 完全覆盖（固定版本 52ec5dc8b2b7cbe46239e89aadc444a955a2e6e9）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.0-rc.1 || 0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.0-rc.1 未被本次检测范围 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.4 || 0.2.2-rc.5 || 0.2.3-alpha.1 || 0.2.3-alpha.2 || >=0.2.1-alpha.1 完全覆盖（固定版本 abcf7a4542d29166f21ce303b5d9f3c8e62ba5bd）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 52ec5dc8b2b7cbe46239e89aadc444a955a2e6e9
-    packageVersion: 0.5.0
+    commit: abcf7a4542d29166f21ce303b5d9f3c8e62ba5bd
+    packageVersion: 0.5.1
     scannerVersion: static-v2
-    dshVersion: 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || >=0.2.1-alpha.1
+    dshVersion: 0.2.1-alpha.1 || 0.2.1-alpha.2 || 0.2.1-alpha.3 || 0.2.1-alpha.4 || 0.2.1-alpha.5 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5 || 0.2.2-alpha.2 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3 || 0.2.2-rc.4 || 0.2.2-rc.5 || 0.2.3-alpha.1 || 0.2.3-alpha.2 || >=0.2.1-alpha.1
     mode: static
     result: pass
-    checkedAt: 2026-11-18T20:22:19.311Z
+    checkedAt: 2026-11-25T21:28:55.281Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 59
 featuredRank: 1538
-releaseUpdatedAt: 2026-11-18T20:22:22.935Z
-metadataUpdatedAt: 2026-11-18T20:22:22.935Z
+starsSnapshot: 59
+releaseUpdatedAt: 2026-11-25T21:28:58.483Z
+metadataUpdatedAt: 2026-11-25T21:28:58.483Z
 starsUpdatedAt: 2026-11-22T23:23:40.441Z
-updatedAt: 2026-11-22T23:23:40.441Z
+updatedAt: 2026-11-25T21:28:58.483Z
