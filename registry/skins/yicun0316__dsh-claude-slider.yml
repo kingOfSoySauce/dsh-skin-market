@@ -15,12 +15,18 @@ modes:
   - light
   - dark
 install:
-  target: github:yicun0316/dsh-claude-slider#9098c4b5f8ae9a8d6a8872572aa1c56637433995
-  version: 2.20.1
-  commit: 9098c4b5f8ae9a8d6a8872572aa1c56637433995
+  target: github:yicun0316/dsh-claude-slider#d2fb1b57a0d5d450a9efb87db232ed4a694c9db7
+  version: 2.21.1
+  commit: d2fb1b57a0d5d450a9efb87db232ed4a694c9db7
   desktop:
     mode: manual-only
     reason: 尚无与此固定版本对应的经验证npm安装包，请使用项目说明中的安装方式。
+  npm:
+    name: dsh-claude-slider
+    version: 2.21.1
+    integrity: sha512-vMTu9oOienjlT6QAXewN/MJaT2CZeMtZzby5N7NSlYNwRek6nhzhdBBGBXs0guVQab32hInrLq9xMa5NAVuz0w==
+    repository: https://github.com/yicun0316/dsh-claude-slider
+    gitHead: d2fb1b57a0d5d450a9efb87db232ed4a694c9db7
 compatibility:
   dsh: unverified
   platform:
@@ -44,19 +50,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 9098c4b5f8ae9a8d6a8872572aa1c56637433995
-    packageVersion: 2.20.1
+    commit: d2fb1b57a0d5d450a9efb87db232ed4a694c9db7
+    packageVersion: 2.21.1
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-24T22:17:52.539Z
+    checkedAt: 2026-11-26T23:39:30.360Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 4
 featuredRank: 998
-releaseUpdatedAt: 2026-11-25T21:28:40.788Z
-metadataUpdatedAt: 2026-11-25T21:28:40.788Z
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-26T23:39:31.279Z
+metadataUpdatedAt: 2026-11-26T23:39:31.279Z
 starsUpdatedAt: 2026-11-25T21:28:40.788Z
-updatedAt: 2026-11-25T21:28:40.788Z
+updatedAt: 2026-11-26T23:39:31.279Z

@@ -17,9 +17,9 @@ modes:
   - light
   - dark
 install:
-  target: github:duty25/dsh-aemeath-theme#872408b84287ed44be2ae8ea9a601ea54704fdc7
-  version: 1.0.2
-  commit: 872408b84287ed44be2ae8ea9a601ea54704fdc7
+  target: github:duty25/dsh-aemeath-theme#696389097a8e43f2ee7766a5b0d030ae53e14736
+  version: 1.1.0
+  commit: 696389097a8e43f2ee7766a5b0d030ae53e14736
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -27,6 +27,8 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/duty25__dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/home.gif
 screenshots:
   - https://raw.githubusercontent.com/duty25/dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/docs/desktop-chat.webp
   - https://raw.githubusercontent.com/duty25/dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/docs/desktop-settings-system.webp
@@ -50,21 +52,19 @@ health:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
     - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
   scan:
-    commit: 872408b84287ed44be2ae8ea9a601ea54704fdc7
-    packageVersion: 1.0.2
+    commit: 696389097a8e43f2ee7766a5b0d030ae53e14736
+    packageVersion: 1.1.0
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-10T00:13:41.370Z
+    checkedAt: 2026-11-26T23:40:21.716Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/duty25__dsh-aemeath-theme/872408b84287ed44be2ae8ea9a601ea54704fdc7/home.gif
 featuredRank: 1146
-releaseUpdatedAt: 2026-11-14T23:47:16.373Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-26T23:40:23.258Z
+metadataUpdatedAt: 2026-11-26T23:40:23.258Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-26T23:40:23.258Z

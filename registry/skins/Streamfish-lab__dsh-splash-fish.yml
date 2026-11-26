@@ -26,8 +26,6 @@ compatibility:
   dsh: unverified
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/Streamfish-lab__dsh-splash-fish/e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596/home.gif
 screenshots:
   - https://raw.githubusercontent.com/Streamfish-lab/dsh-splash-fish/e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596/preview/poster.jpg
 listScreenshot: skin-screenshots/Streamfish-lab__dsh-splash-fish/e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596/home.gif
@@ -57,9 +55,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1267
 starsSnapshot: 4
+marketScreenshots:
+  - skin-screenshots/Streamfish-lab__dsh-splash-fish/e3400e6f6d8dfadcfb9cd2cbadf8bab2910eb596/home.gif
+featuredRank: 1267
 releaseUpdatedAt: 2026-11-25T21:29:41.659Z
-metadataUpdatedAt: 2026-11-25T21:29:41.659Z
+metadataUpdatedAt: 2026-11-26T23:38:30.016Z
 starsUpdatedAt: 2026-11-16T09:48:54.442Z
-updatedAt: 2026-11-25T21:29:41.659Z
+updatedAt: 2026-11-26T23:38:30.016Z

@@ -17,22 +17,22 @@ modes:
   - light
   - dark
 install:
-  target: github:iasiv5/dsh-skins#97322a27cb5e16fbff8a011d1aba52ad48a8f88e
-  version: 1.5.34
-  commit: 97322a27cb5e16fbff8a011d1aba52ad48a8f88e
+  target: github:iasiv5/dsh-skins#69aff0f180e9d3bcda147859070d0bb02af37834
+  version: 1.5.35
+  commit: 69aff0f180e9d3bcda147859070d0bb02af37834
   desktop:
     mode: managed
     registry: npm
     packageName: "@iasiv5/dsh-skins"
-    packageVersion: 1.5.34
-    integrity: sha512-ki5BO2wRmt69urdPt+5JRoGbw4nPfhY/OligiDXY7gkk6dn0VBu20sP0rqOa9tpLIZPlw7gC6cF62/uvPUDXKg==
-  allowBuild: "@iasiv5/dsh-skins@https://codeload.github.com/iasiv5/dsh-skins/tar.gz/97322a27cb5e16fbff8a011d1aba52ad48a8f88e"
+    packageVersion: 1.5.35
+    integrity: sha512-UFiakRS7++378pBx1n4oD3f3O0awPADLJEenyfUjLNou/zfvmYP0cW5qtSsw4klGBHGJEpjEelmG69mApeKrOg==
+  allowBuild: "@iasiv5/dsh-skins@https://codeload.github.com/iasiv5/dsh-skins/tar.gz/69aff0f180e9d3bcda147859070d0bb02af37834"
   npm:
     name: "@iasiv5/dsh-skins"
-    version: 1.5.34
-    integrity: sha512-ki5BO2wRmt69urdPt+5JRoGbw4nPfhY/OligiDXY7gkk6dn0VBu20sP0rqOa9tpLIZPlw7gC6cF62/uvPUDXKg==
+    version: 1.5.35
+    integrity: sha512-UFiakRS7++378pBx1n4oD3f3O0awPADLJEenyfUjLNou/zfvmYP0cW5qtSsw4klGBHGJEpjEelmG69mApeKrOg==
     repository: https://github.com/iasiv5/dsh-skins
-    gitHead: 97322a27cb5e16fbff8a011d1aba52ad48a8f88e
+    gitHead: 69aff0f180e9d3bcda147859070d0bb02af37834
 compatibility:
   dsh: 0.2.2--rc.1 || 0.2.1-rc.2 || 0.2.0-rc.2 || 0.2.0-rc.1
   platform:
@@ -58,22 +58,22 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.2.2--rc.1 || 0.2.1-rc.2 || 0.2.0-rc.2 || 0.2.0-rc.1 未被本次检测范围 >=0.2.0-rc.1 || >=0.2.1-rc.1 完全覆盖（固定版本 97322a27cb5e16fbff8a011d1aba52ad48a8f88e）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.2.2--rc.1 || 0.2.1-rc.2 || 0.2.0-rc.2 || 0.2.0-rc.1 未被本次检测范围 >=0.2.0-rc.1 || >=0.2.1-rc.1 完全覆盖（固定版本 69aff0f180e9d3bcda147859070d0bb02af37834）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 97322a27cb5e16fbff8a011d1aba52ad48a8f88e
-    packageVersion: 1.5.34
+    commit: 69aff0f180e9d3bcda147859070d0bb02af37834
+    packageVersion: 1.5.35
     scannerVersion: static-v2
     dshVersion: ">=0.2.0-rc.1 || >=0.2.1-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-19T20:20:23.891Z
+    checkedAt: 2026-11-26T23:39:06.530Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 8
 featuredRank: 1226
-releaseUpdatedAt: 2026-11-19T20:20:26.546Z
-metadataUpdatedAt: 2026-11-19T20:20:26.546Z
+starsSnapshot: 8
+releaseUpdatedAt: 2026-11-26T23:39:09.067Z
+metadataUpdatedAt: 2026-11-26T23:39:09.067Z
 starsUpdatedAt: 2026-11-20T19:56:33.985Z
-updatedAt: 2026-11-20T19:56:33.985Z
+updatedAt: 2026-11-26T23:39:09.067Z

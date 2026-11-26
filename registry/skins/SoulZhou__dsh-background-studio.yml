@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:SoulZhou/dsh-background-studio#7f3b659ce3628b09969b4baaad3e38e98f1f1050
-  version: 0.4.0
-  commit: 7f3b659ce3628b09969b4baaad3e38e98f1f1050
+  target: github:SoulZhou/dsh-background-studio#e151720a1aa445f1f672f57c7260dba99ad031b0
+  version: 0.4.1
+  commit: e151720a1aa445f1f672f57c7260dba99ad031b0
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -28,6 +28,8 @@ compatibility:
   dsh: ^0.2.1-rc.1
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/SoulZhou__dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/home.gif
 screenshots:
   - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/settings-custom.png
   - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/color-background.jpg
@@ -48,22 +50,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 7f3b659ce3628b09969b4baaad3e38e98f1f1050
-    packageVersion: 0.4.0
+    commit: e151720a1aa445f1f672f57c7260dba99ad031b0
+    packageVersion: 0.4.1
     scannerVersion: static-v2
     dshVersion: ^0.2.1-rc.1
     mode: static
     result: pass
-    checkedAt: 2026-11-15T20:45:44.789Z
+    checkedAt: 2026-11-26T23:42:12.860Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/SoulZhou__dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/home.gif
 featuredRank: 1443
-releaseUpdatedAt: 2026-11-15T20:45:45.240Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-26T23:42:14.164Z
+metadataUpdatedAt: 2026-11-26T23:42:14.164Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-26T23:42:14.164Z
