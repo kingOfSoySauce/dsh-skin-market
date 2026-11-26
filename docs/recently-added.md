@@ -7983,8 +7983,118 @@ GitHub：[CAPTAIN1275/dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web)
 <!-- DSH_SKIN_MARKET_AUTO_RECENT:START -->
 ## 自动同步更新
 
+<!-- dsh-auto-entry:ethanhannn.dsh-theme -->
+### 2026-11-27 · dsh-theme
+
+作者：EthanHannn
+
+DeepSeek Harness theme pack：一个插件提供多组主题与 light/dark/system 模式。
+
+GitHub：[EthanHannn/dsh-theme](https://github.com/EthanHannn/dsh-theme)
+
+<img src="https://raw.githubusercontent.com/EthanHannn/dsh-theme/4a0152debaa11f75466f92587993513c69b5857b/docs/screenshots/141-oshi-backstage-starlight-light.webp" width="60%" alt="dsh-theme">
+
+<!-- dsh-auto-entry:aaronkate.dsh-codex-appearance -->
+### 2026-11-27 · dsh-codex-appearance
+
+作者：AaronKate
+
+Eye-comfort appearance controls for DeepSeek Harness: five light themes, paper-grain texture, accent and background colours, fonts, type sizes, content width, contrast and motion.
+
+GitHub：[AaronKate/dsh-codex-appearance](https://github.com/AaronKate/dsh-codex-appearance)
+
+<img src="https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/085992962dc6f01383186c0e66015a2ab9d9fda9/assets/five-themes.png" width="60%" alt="dsh-codex-appearance">
+
+<!-- dsh-auto-entry:yicun0316.dsh-claude-slider -->
+### 2026-11-27 · dsh-claude-slider
+
+作者：yicun0316
+
+Claude 风格推理强度滑块插件：一体化液态玻璃面板、背景透明度与动效亮度双轴调校、无感平滑跟手、纯净工坊预设分享
+
+GitHub：[yicun0316/dsh-claude-slider](https://github.com/yicun0316/dsh-claude-slider)
+
+<img src="https://raw.githubusercontent.com/yicun0316/dsh-claude-slider/0650abb9903e83fe6c46ffa7cb34d6813a5e3c3a/assets/ui_look.png" width="60%" alt="dsh-claude-slider">
+
+<!-- dsh-auto-entry:clicgger-types.dsh-piggy -->
+### 2026-11-27 · dsh-piggy
+
+作者：CLICGGER-TYPES
+
+🐖 一只住在 DeepSeek Harness 里的猪：吃你的真实工作长大，会学习、打工、旅行、生病、需要照顾
+
+GitHub：[CLICGGER-TYPES/dsh-piggy](https://github.com/CLICGGER-TYPES/dsh-piggy)
+
+<img src="https://raw.githubusercontent.com/CLICGGER-TYPES/dsh-piggy/dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c/assets/pigs/base/piglet/idle.png" width="60%" alt="dsh-piggy">
+
+<!-- dsh-auto-entry:louke6572.dsh-whale-widget-plus -->
+### 2026-11-27 · dsh-whale-widget-plus
+
+作者：louke6572
+
+DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计
+
+GitHub：[louke6572/dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus)
+
+<img src="https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png" width="60%" alt="dsh-whale-widget-plus">
+
+<!-- dsh-auto-entry:nwflower.dsh-claude-style -->
+### 2026-11-27 · dsh-claude-style
+
+作者：Nwflower
+
+Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
+
+GitHub：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)
+
+<img src="https://raw.githubusercontent.com/Nwflower/dsh-claude-style/d3a511b51e2eebdfc41952135a02d8f2752032a6/docs/screenshots/claude-home-light.png" width="60%" alt="dsh-claude-style">
+
+<!-- dsh-auto-entry:small-tailqwq.orca-link -->
+### 2026-11-27 · 虎鲸链路
+
+作者：Small-tailqwq
+
+DSH Web 虎鲸链路皮肤：珍珠白机械舱、黑曜虎鲸操作员与电蓝链路信号，包含亮暗双场景、直角 UI、状态角色和动态定价信号。
+
+GitHub：[Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/preset-orca-link-dark.gif" width="60%" alt="虎鲸链路">
+
+<!-- dsh-auto-entry:small-tailqwq.maid-atelier -->
+### 2026-11-27 · 深海女仆工坊
+
+作者：Small-tailqwq
+
+DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。
+
+GitHub：[Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)
+
+<img src="https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b/maid-atelier/preview/light.webp" width="60%" alt="深海女仆工坊">
+
+<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
+### 2026-11-27 · dsh-wallpaper-engine
+
+作者：elysia395
+
+一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
+
+GitHub：[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)
+
+<img src="https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ae734a2c80ca04099b793f8ce8a182bcb5ad8f79/docs/images/main-interface.gif" width="60%" alt="dsh-wallpaper-engine">
+
+<!-- dsh-auto-entry:andy294753951.dsh-plugin-gouden-leeuw-theme -->
+### 2026-11-27 · dsh-plugin-gouden-leeuw-theme
+
+作者：Andy294753951
+
+DeepSeek Harness 金狮月泉主题
+
+GitHub：[Andy294753951/dsh-plugin-gouden-leeuw-theme](https://github.com/Andy294753951/dsh-plugin-gouden-leeuw-theme)
+
+<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Andy294753951__dsh-plugin-gouden-leeuw-theme/6ab4c2bc6fb88d41a02ad92c06aae6e46d05e078/home.png" width="60%" alt="dsh-plugin-gouden-leeuw-theme">
+
 <!-- dsh-auto-entry:sundusk.dsh-yu-pet -->
-### 2026-11-26 · dsh-yu-pet
+### 2026-11-27 · dsh-yu-pet
 
 作者：sundusk
 
@@ -7993,6 +8103,17 @@ Xiaoyu floating web pet plugin for the dsh web GUI: 8x8 sprite-sheet frame anima
 GitHub：[sundusk/dsh-yu-pet](https://github.com/sundusk/dsh-yu-pet)
 
 <img src="https://raw.githubusercontent.com/sundusk/dsh-yu-pet/4bf5b8177d509e49161915f8a87267f594581fd7/docs/poses.png" width="60%" alt="dsh-yu-pet">
+
+<!-- dsh-auto-entry:vlln.whale-girl -->
+### 2026-11-27 · whale-girl
+
+作者：vlln
+
+DSH Web GUI 内的桌面宠物（QQ 宠物形态）
+
+GitHub：[vlln/whale-girl](https://github.com/vlln/whale-girl)
+
+<img src="https://raw.githubusercontent.com/vlln/whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/docs/preview/idle.gif" width="60%" alt="whale-girl">
 
 <!-- dsh-auto-entry:lengduan.dsh-815-skin -->
 ### 2026-11-26 · dsh-815-skin
@@ -8004,39 +8125,6 @@ GitHub：[sundusk/dsh-yu-pet](https://github.com/sundusk/dsh-yu-pet)
 GitHub：[lengduan/dsh-815-skin](https://github.com/lengduan/dsh-815-skin)
 
 <img src="https://raw.githubusercontent.com/lengduan/dsh-815-skin/761e3942738a0d1e3cdd4e974aef39b70570ffeb/assets/nanjing-surrender-chen-jian.jpg" width="60%" alt="dsh-815-skin">
-
-<!-- dsh-auto-entry:ethanhannn.dsh-theme -->
-### 2026-11-26 · dsh-theme
-
-作者：EthanHannn
-
-DeepSeek Harness theme pack：一个插件提供多组主题与 light/dark/system 模式。
-
-GitHub：[EthanHannn/dsh-theme](https://github.com/EthanHannn/dsh-theme)
-
-<img src="https://raw.githubusercontent.com/EthanHannn/dsh-theme/4a0152debaa11f75466f92587993513c69b5857b/docs/screenshots/141-oshi-backstage-starlight-light.webp" width="60%" alt="dsh-theme">
-
-<!-- dsh-auto-entry:andy294753951.dsh-plugin-gouden-leeuw-theme -->
-### 2026-11-26 · dsh-plugin-gouden-leeuw-theme
-
-作者：Andy294753951
-
-DeepSeek Harness 金狮月泉主题
-
-GitHub：[Andy294753951/dsh-plugin-gouden-leeuw-theme](https://github.com/Andy294753951/dsh-plugin-gouden-leeuw-theme)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Andy294753951__dsh-plugin-gouden-leeuw-theme/6ab4c2bc6fb88d41a02ad92c06aae6e46d05e078/home.png" width="60%" alt="dsh-plugin-gouden-leeuw-theme">
-
-<!-- dsh-auto-entry:aaronkate.dsh-codex-appearance -->
-### 2026-11-26 · dsh-codex-appearance
-
-作者：AaronKate
-
-Eye-comfort appearance controls for DeepSeek Harness: five light themes, paper-grain texture, accent and background colours, fonts, type sizes, content width, contrast and motion.
-
-GitHub：[AaronKate/dsh-codex-appearance](https://github.com/AaronKate/dsh-codex-appearance)
-
-<img src="https://raw.githubusercontent.com/AaronKate/dsh-codex-appearance/085992962dc6f01383186c0e66015a2ab9d9fda9/assets/five-themes.png" width="60%" alt="dsh-codex-appearance">
 
 <!-- dsh-auto-entry:cosmosail.dsh-bloomglass -->
 ### 2026-11-26 · dsh-bloomglass
@@ -8093,17 +8181,6 @@ GitHub：[luweiyabo/dsh-whale-pet](https://github.com/luweiyabo/dsh-whale-pet)
 
 <img src="https://raw.githubusercontent.com/luweiyabo/dsh-whale-pet/b61b445e6be05a732fc6738b825240aeffdf6769/docs/images/screenshots/action-browser.png" width="60%" alt="dsh-whale-pet">
 
-<!-- dsh-auto-entry:clicgger-types.dsh-piggy -->
-### 2026-11-26 · dsh-piggy
-
-作者：CLICGGER-TYPES
-
-🐖 一只住在 DeepSeek Harness 里的猪：吃你的真实工作长大，会学习、打工、旅行、生病、需要照顾
-
-GitHub：[CLICGGER-TYPES/dsh-piggy](https://github.com/CLICGGER-TYPES/dsh-piggy)
-
-<img src="https://raw.githubusercontent.com/CLICGGER-TYPES/dsh-piggy/dfc01353c7769ba3bfc1015a7db4ecf330ee4f0c/assets/pigs/base/piglet/idle.png" width="60%" alt="dsh-piggy">
-
 <!-- dsh-auto-entry:tkingxiao.dsh.any.background -->
 ### 2026-11-26 · 主题色与壁纸
 
@@ -8126,28 +8203,6 @@ GitHub：[zhu1090093659/dsh-pet](https://github.com/zhu1090093659/dsh-pet)
 
 <img src="https://raw.githubusercontent.com/zhu1090093659/dsh-pet/d19284a539618e5eadb6c263d842008a2b600bb0/assets/whale-refined/previews/idle.gif" width="60%" alt="dsh-pet">
 
-<!-- dsh-auto-entry:louke6572.dsh-whale-widget-plus -->
-### 2026-11-26 · dsh-whale-widget-plus
-
-作者：louke6572
-
-DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件（基于官方 v0.4.2）：余额/今日已用/峰谷定价（峰谷时段外置常驻徽标）、33 厂商额度模板、自定义泡泡框、多版本表情素材包、台词自定义与表情/台词手动切换、火山 coding plan 额度查询、音效与每轮消耗统计
-
-GitHub：[louke6572/dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus)
-
-<img src="https://raw.githubusercontent.com/louke6572/dsh-whale-widget-plus/cfe274aa7e59590501592d28825ff487035666aa/assets/DSH2.png" width="60%" alt="dsh-whale-widget-plus">
-
-<!-- dsh-auto-entry:vlln.whale-girl -->
-### 2026-11-26 · whale-girl
-
-作者：vlln
-
-DSH Web GUI 内的桌面宠物（QQ 宠物形态）
-
-GitHub：[vlln/whale-girl](https://github.com/vlln/whale-girl)
-
-<img src="https://raw.githubusercontent.com/vlln/whale-girl/4b4350478c82d22d506a93567e52ab0ff90c2585/docs/preview/idle.gif" width="60%" alt="whale-girl">
-
 <!-- dsh-auto-entry:webkubor.dsh-bloom-theme -->
 ### 2026-11-26 · dsh-bloom-theme
 
@@ -8158,28 +8213,6 @@ DeepSeek Harness (DSH) 主题插件：Bloom 莫兰迪配色 4 变体，OKLCH 调
 GitHub：[webkubor/dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme)
 
 <img src="https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/b356a6819bcf810755bc29fc0c2256b11f711f82/assets/screenshots/ui-sage-light.png" width="60%" alt="dsh-bloom-theme">
-
-<!-- dsh-auto-entry:nwflower.dsh-claude-style -->
-### 2026-11-26 · dsh-claude-style
-
-作者：Nwflower
-
-Claude Code Desktop theme for DeepSeek Harness：复刻 Claude Code Desktop 风格与交互体验的主题插件。
-
-GitHub：[Nwflower/dsh-claude-style](https://github.com/Nwflower/dsh-claude-style)
-
-<img src="https://raw.githubusercontent.com/Nwflower/dsh-claude-style/d3a511b51e2eebdfc41952135a02d8f2752032a6/docs/screenshots/claude-home-light.png" width="60%" alt="dsh-claude-style">
-
-<!-- dsh-auto-entry:elysia395.dsh-wallpaper-engine -->
-### 2026-11-26 · dsh-wallpaper-engine
-
-作者：elysia395
-
-一个 DSH bundle，把你电脑上的 Wallpaper Engine 壁纸变成 DSH 网页界面（dsh web）的背景。
-
-GitHub：[elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)
-
-<img src="https://raw.githubusercontent.com/elysia395/dsh-wallpaper-engine/ae734a2c80ca04099b793f8ce8a182bcb5ad8f79/docs/images/main-interface.gif" width="60%" alt="dsh-wallpaper-engine">
 
 <!-- dsh-auto-entry:jarvislee90s-dot.dsh-foxbell-pet -->
 ### 2026-11-26 · dsh-foxbell-pet
@@ -8225,17 +8258,6 @@ GitHub：[ShenpingDD/wooden-fish-dsh](https://github.com/ShenpingDD/wooden-fish-
 
 <img src="https://raw.githubusercontent.com/ShenpingDD/wooden-fish-dsh/9b4514098e91cdff880f439a18abd3c18efafbf4/docs/screenshots/ui-design-preview.png" width="60%" alt="wooden-fish-dsh">
 
-<!-- dsh-auto-entry:small-tailqwq.orca-link -->
-### 2026-11-26 · 虎鲸链路
-
-作者：Small-tailqwq
-
-DSH Web 虎鲸链路皮肤：珍珠白机械舱、黑曜虎鲸操作员与电蓝链路信号，包含亮暗双场景、直角 UI、状态角色和动态定价信号。
-
-GitHub：[Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)
-
-<img src="https://kingofsoysauce.github.io/dsh-skin-market/skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/preset-orca-link-dark.gif" width="60%" alt="虎鲸链路">
-
 <!-- dsh-auto-entry:vb2250158.dsh-theme-blue -->
 ### 2026-11-26 · dsh-theme-blue
 
@@ -8257,17 +8279,6 @@ Marathon 风格的工业风 DSH 皮肤：调色板驱动的动效、随机 Max �
 GitHub：[yasneg616/marathon-like-deepseek-harness-skin](https://github.com/yasneg616/marathon-like-deepseek-harness-skin)
 
 <img src="https://raw.githubusercontent.com/yasneg616/marathon-like-deepseek-harness-skin/d95c5e344d223bd7f7a1cef04b8e42202764a1b2/docs/media/overview.jpg" width="60%" alt="Marathon 工业酸">
-
-<!-- dsh-auto-entry:yicun0316.dsh-claude-slider -->
-### 2026-11-26 · dsh-claude-slider
-
-作者：yicun0316
-
-Claude 风格推理强度滑块插件：一体化液态玻璃面板、背景透明度与动效亮度双轴调校、无感平滑跟手、纯净工坊预设分享
-
-GitHub：[yicun0316/dsh-claude-slider](https://github.com/yicun0316/dsh-claude-slider)
-
-<img src="https://raw.githubusercontent.com/yicun0316/dsh-claude-slider/0650abb9903e83fe6c46ffa7cb34d6813a5e3c3a/assets/ui_look.png" width="60%" alt="dsh-claude-slider">
 
 <!-- dsh-auto-entry:lisongxuan.ds-hentai -->
 ### 2026-11-24 · ds-hentai
@@ -8312,17 +8323,6 @@ DeepSeek Harness 的 Catppuccin 主题插件——一个包同时适配 Web GUI�
 GitHub：[NoNameLeGo/dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin)
 
 <img src="https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/976d9065f517c2d111d24e67a48c2a5049445c05/assets/previews/combined.png" width="60%" alt="dsh-catppuccin">
-
-<!-- dsh-auto-entry:small-tailqwq.maid-atelier -->
-### 2026-11-24 · 深海女仆工坊
-
-作者：Small-tailqwq
-
-DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。
-
-GitHub：[Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)
-
-<img src="https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b/maid-atelier/preview/light.webp" width="60%" alt="深海女仆工坊">
 
 <!-- dsh-auto-entry:yyyyyylor.dsh-asuka-school-theme -->
 ### 2026-11-23 · dsh-asuka-school-theme

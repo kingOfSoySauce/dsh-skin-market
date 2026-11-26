@@ -19,9 +19,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#a9e2884388122be47a7c737c18b98ac4896d7c27&path:/orca-link
+  target: github:Small-tailqwq/dsh-deep-whale#4e151bbb73236a42f47685f84c1f51293f0c52f7&path:/orca-link
   version: 0.1.12
-  commit: a9e2884388122be47a7c737c18b98ac4896d7c27
+  commit: 4e151bbb73236a42f47685f84c1f51293f0c52f7
   desktop:
     mode: manual-only
     reason: companion-not-desktop-installable
@@ -36,11 +36,15 @@ install:
     version: 0.1.12
     integrity: sha512-iSrwQ1UXQ1zCoVjKiIFD6CDtMq/AYf4GUPBNOrVPLBtdtuRSekdwhPyk2eeQSPgC9ln4uAYRgAsLo6BzPEPS+Q==
     repository: https://github.com/Small-tailqwq/dsh-deep-whale
-    gitHead: a9e2884388122be47a7c737c18b98ac4896d7c27
+    gitHead: 4e151bbb73236a42f47685f84c1f51293f0c52f7
 compatibility:
   dsh: ^0.1.11
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/home.png
+  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/conversation.png
+  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/settings.png
 screenshots:
   - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/preset-orca-link-dark.gif
   - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/preset-orca-link-light.gif
@@ -64,27 +68,23 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.11 未被本次检测范围 ^0.1.12 完全覆盖（固定版本 a9e2884388122be47a7c737c18b98ac4896d7c27）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.11 未被本次检测范围 ^0.1.12 完全覆盖（固定版本 4e151bbb73236a42f47685f84c1f51293f0c52f7）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: a9e2884388122be47a7c737c18b98ac4896d7c27
+    commit: 4e151bbb73236a42f47685f84c1f51293f0c52f7
     packageVersion: 0.1.12
     scannerVersion: static-v2
     dshVersion: ^0.1.12
     mode: static
     result: pass
-    checkedAt: 2026-11-23T23:19:59.310Z
+    checkedAt: 2026-11-26T23:38:34.187Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
-starsSnapshot: 3148
-marketScreenshots:
-  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/home.png
-  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/conversation.png
-  - skin-screenshots/Small-tailqwq__dsh-deep-whale--orca-link/b693d2c224a0a6fb5b621e7cc1284f20d9849c1c/settings.png
 featuredRank: 3
-releaseUpdatedAt: 2026-11-23T23:20:01.417Z
-metadataUpdatedAt: 2026-11-25T21:28:40.788Z
-starsUpdatedAt: 2026-11-25T21:28:40.788Z
-updatedAt: 2026-11-25T21:28:40.788Z
+starsSnapshot: 3152
+releaseUpdatedAt: 2026-11-26T23:38:38.333Z
+metadataUpdatedAt: 2026-11-26T23:38:38.333Z
+starsUpdatedAt: 2026-11-26T23:38:38.333Z
+updatedAt: 2026-11-26T23:38:38.333Z

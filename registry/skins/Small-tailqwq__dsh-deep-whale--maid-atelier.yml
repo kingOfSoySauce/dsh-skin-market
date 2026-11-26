@@ -20,9 +20,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#a9e2884388122be47a7c737c18b98ac4896d7c27&path:/maid-atelier
+  target: github:Small-tailqwq/dsh-deep-whale#4e151bbb73236a42f47685f84c1f51293f0c52f7&path:/maid-atelier
   version: 0.1.12
-  commit: a9e2884388122be47a7c737c18b98ac4896d7c27
+  commit: 4e151bbb73236a42f47685f84c1f51293f0c52f7
   desktop:
     mode: manual-only
     reason: companion-not-desktop-installable
@@ -37,7 +37,7 @@ install:
     version: 0.1.12
     integrity: sha512-vzNX10aJIIk15Ce90jb5KnQcaKR/R5005erjebQWXrJjzmKG4Y4ref2cex/GX6laXA2xV60RkB/Ec0eMHYdqPg==
     repository: https://github.com/Small-tailqwq/dsh-deep-whale
-    gitHead: a9e2884388122be47a7c737c18b98ac4896d7c27
+    gitHead: 4e151bbb73236a42f47685f84c1f51293f0c52f7
 compatibility:
   dsh: 0.1.0-rc.6
   platform:
@@ -59,23 +59,23 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.6 未被本次检测范围 ^0.1.12 完全覆盖（固定版本 a9e2884388122be47a7c737c18b98ac4896d7c27）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 0.1.0-rc.6 未被本次检测范围 ^0.1.12 完全覆盖（固定版本 4e151bbb73236a42f47685f84c1f51293f0c52f7）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: a9e2884388122be47a7c737c18b98ac4896d7c27
+    commit: 4e151bbb73236a42f47685f84c1f51293f0c52f7
     packageVersion: 0.1.12
     scannerVersion: static-v2
     dshVersion: ^0.1.12
     mode: static
     result: pass
-    checkedAt: 2026-11-23T23:19:57.169Z
+    checkedAt: 2026-11-26T23:38:33.754Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
-starsSnapshot: 3148
 featuredRank: 2
-releaseUpdatedAt: 2026-11-23T23:19:58.748Z
-metadataUpdatedAt: 2026-11-23T23:19:58.748Z
-starsUpdatedAt: 2026-11-25T21:28:40.788Z
-updatedAt: 2026-11-25T21:28:40.788Z
+starsSnapshot: 3152
+releaseUpdatedAt: 2026-11-26T23:38:36.521Z
+metadataUpdatedAt: 2026-11-26T23:38:36.521Z
+starsUpdatedAt: 2026-11-26T23:38:36.521Z
+updatedAt: 2026-11-26T23:38:36.521Z

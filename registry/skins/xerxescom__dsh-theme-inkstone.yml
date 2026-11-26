@@ -18,47 +18,47 @@ modes:
   - light
   - dark
 install:
-  target: github:xerxescom/dsh-theme-inkstone#a6358c391528c4c3904bdca89a6929c6879ea311
-  version: 0.9.0
-  commit: a6358c391528c4c3904bdca89a6929c6879ea311
+  target: github:xerxescom/dsh-theme-inkstone#bce9762793aa21879dde8e0e076a73dc5313e8e5
+  version: 0.16.3
+  commit: bce9762793aa21879dde8e0e076a73dc5313e8e5
   desktop:
     mode: manual-only
-    reason: npm-package-not-found
+    reason: npm-repository-mismatch
 compatibility:
-  dsh: unverified
+  dsh: ">=0.2.2-rc.5 <0.3.0-0"
   platform:
     - web
 screenshots:
   - https://raw.githubusercontent.com/xerxescom/dsh-theme-inkstone/6d354719010986ca0fbeebca3f5f0379b4319e46/preview.png
 listScreenshot: https://raw.githubusercontent.com/xerxescom/dsh-theme-inkstone/6d354719010986ca0fbeebca3f5f0379b4319e46/preview.png
 review:
-  compatibility: unverified
+  compatibility: verified
   preview: verified
   installation: verified
 health:
-  status: improvements
+  status: healthy
   checks:
     readmeScreenshots: pass
-    compatibility: improve
+    compatibility: pass
     installation: pass
     installCommand: pass
     topic: pass
-  suggestions:
-    - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+  suggestions: []
   scan:
-    commit: a6358c391528c4c3904bdca89a6929c6879ea311
-    packageVersion: 0.9.0
+    commit: bce9762793aa21879dde8e0e076a73dc5313e8e5
+    packageVersion: 0.16.3
     scannerVersion: static-v2
+    dshVersion: ">=0.2.2-rc.5 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-18T20:26:08.543Z
+    checkedAt: 2026-11-26T23:42:27.737Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 1480
-releaseUpdatedAt: 2026-11-18T20:26:08.796Z
-metadataUpdatedAt: 2026-11-18T20:26:08.796Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-26T23:42:27.856Z
+metadataUpdatedAt: 2026-11-26T23:42:27.856Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-18T20:26:08.796Z
+updatedAt: 2026-11-26T23:42:27.856Z
