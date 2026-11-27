@@ -17,25 +17,28 @@ tags:
 modes:
   - dark
 install:
-  target: github:ymh0000123/dsh-theme-endfield#46d4949af09cf42b4fa06a7dcace1eb403fbf84a
-  version: 1.2.8
-  commit: 46d4949af09cf42b4fa06a7dcace1eb403fbf84a
+  target: github:ymh0000123/dsh-theme-endfield#b3358cd6777aa8ba79318e1d5aaadb335ccc2847
+  version: 1.2.9
+  commit: b3358cd6777aa8ba79318e1d5aaadb335ccc2847
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-theme-endfield
-    packageVersion: 1.2.8
-    integrity: sha512-SG0KC7zjop6nk8vLDZzttawpDXkiHKgM4DjRnlLfrPOk3JtryespOas1w0GLYGoPMo0UfUk29nN0yGIgk98cRw==
+    packageVersion: 1.2.9
+    integrity: sha512-Bs3bzuUwDWVDVwegm7n0/dk/zAIFWSTDYeKAvI3RXVeXzClsLZhm2iN7grpVUCry9GFYrZ2n/hWi3PXhiQTkBQ==
   npm:
     name: dsh-theme-endfield
-    version: 1.2.8
-    integrity: sha512-SG0KC7zjop6nk8vLDZzttawpDXkiHKgM4DjRnlLfrPOk3JtryespOas1w0GLYGoPMo0UfUk29nN0yGIgk98cRw==
+    version: 1.2.9
+    integrity: sha512-Bs3bzuUwDWVDVwegm7n0/dk/zAIFWSTDYeKAvI3RXVeXzClsLZhm2iN7grpVUCry9GFYrZ2n/hWi3PXhiQTkBQ==
     repository: https://github.com/ymh0000123/dsh-theme-endfield
-    gitHead: 46d4949af09cf42b4fa06a7dcace1eb403fbf84a
+    gitHead: b3358cd6777aa8ba79318e1d5aaadb335ccc2847
 compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.png
+  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/conversation.png
 screenshots:
   - https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots1.webp
   - https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/8659518c38e629505d9769e5cb3c9493d5a3e1fb/assets/screenshots2.webp
@@ -56,22 +59,19 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: 46d4949af09cf42b4fa06a7dcace1eb403fbf84a
-    packageVersion: 1.2.8
+    commit: b3358cd6777aa8ba79318e1d5aaadb335ccc2847
+    packageVersion: 1.2.9
     scannerVersion: static-v2
     mode: static
     result: pass
-    checkedAt: 2026-11-21T19:02:11.311Z
+    checkedAt: 2026-11-27T21:02:50.441Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 180
-marketScreenshots:
-  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/home.png
-  - skin-screenshots/ymh0000123__dsh-theme-endfield/ada9396a957633a40bdad89ff084b0136b9515b4/conversation.png
 featuredRank: 154
-releaseUpdatedAt: 2026-11-21T19:02:12.229Z
-metadataUpdatedAt: 2026-11-22T23:23:40.441Z
+starsSnapshot: 180
+releaseUpdatedAt: 2026-11-27T21:02:51.103Z
+metadataUpdatedAt: 2026-11-27T21:02:51.103Z
 starsUpdatedAt: 2026-11-25T21:28:40.788Z
-updatedAt: 2026-11-25T21:28:40.788Z
+updatedAt: 2026-11-27T21:02:51.103Z

@@ -28,8 +28,6 @@ compatibility:
   dsh: ^0.2.1-rc.1
   platform:
     - web
-marketScreenshots:
-  - skin-screenshots/SoulZhou__dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/home.gif
 screenshots:
   - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/settings-custom.png
   - https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/screenshots/color-background.jpg
@@ -61,9 +59,11 @@ health:
 license:
   code: MIT
   commercialUse: true
-featuredRank: 1443
 starsSnapshot: 0
+marketScreenshots:
+  - skin-screenshots/SoulZhou__dsh-background-studio/7f3b659ce3628b09969b4baaad3e38e98f1f1050/home.gif
+featuredRank: 1443
 releaseUpdatedAt: 2026-11-26T23:42:14.164Z
-metadataUpdatedAt: 2026-11-26T23:42:14.164Z
+metadataUpdatedAt: 2026-11-27T21:02:40.588Z
 starsUpdatedAt: 2026-11-14T11:59:04.760Z
-updatedAt: 2026-11-26T23:42:14.164Z
+updatedAt: 2026-11-27T21:02:40.588Z

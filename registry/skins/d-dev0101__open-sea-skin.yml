@@ -28,6 +28,10 @@ compatibility:
   dsh: 0.1.0-rc.6
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/home.png
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/conversation.png
+  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/settings.png
 screenshots:
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-dark-overview-40.gif
   - https://raw.githubusercontent.com/d-dev0101/open-sea-skin/2437d80a96de4124c54fbe89872fa7090103f025/docs/screenshots/harness-light-overview-40.gif
@@ -65,13 +69,9 @@ license:
   code: MIT
   commercialUse: true
   notice: Includes vendored three.js under MIT and Geist fonts under SIL OFL 1.1.
-starsSnapshot: 402
-marketScreenshots:
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/home.png
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/conversation.png
-  - skin-screenshots/d-dev0101__open-sea-skin/387740c974f3fd47ef22eebd7c20da4645f2f213/settings.png
 featuredRank: 0
+starsSnapshot: 402
 releaseUpdatedAt: 2026-11-21T19:02:12.947Z
-metadataUpdatedAt: 2026-11-22T23:23:40.441Z
+metadataUpdatedAt: 2026-11-27T21:02:49.709Z
 starsUpdatedAt: 2026-11-26T23:38:36.982Z
-updatedAt: 2026-11-26T23:38:36.982Z
+updatedAt: 2026-11-27T21:02:49.709Z

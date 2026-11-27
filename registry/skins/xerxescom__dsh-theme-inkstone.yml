@@ -18,9 +18,9 @@ modes:
   - light
   - dark
 install:
-  target: github:xerxescom/dsh-theme-inkstone#bce9762793aa21879dde8e0e076a73dc5313e8e5
+  target: github:xerxescom/dsh-theme-inkstone#3c21b938c26b162a19e164185470d79cf2e9f539
   version: 0.16.3
-  commit: bce9762793aa21879dde8e0e076a73dc5313e8e5
+  commit: 3c21b938c26b162a19e164185470d79cf2e9f539
   desktop:
     mode: manual-only
     reason: npm-repository-mismatch
@@ -45,20 +45,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: bce9762793aa21879dde8e0e076a73dc5313e8e5
+    commit: 3c21b938c26b162a19e164185470d79cf2e9f539
     packageVersion: 0.16.3
     scannerVersion: static-v2
     dshVersion: ">=0.2.2-rc.5 <0.3.0-0"
     mode: static
     result: pass
-    checkedAt: 2026-11-26T23:42:27.737Z
+    checkedAt: 2026-11-27T21:06:49.637Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1480
 starsSnapshot: 0
-releaseUpdatedAt: 2026-11-26T23:42:27.856Z
-metadataUpdatedAt: 2026-11-26T23:42:27.856Z
+releaseUpdatedAt: 2026-11-27T21:06:49.794Z
+metadataUpdatedAt: 2026-11-27T21:06:49.794Z
 starsUpdatedAt: 2026-11-14T12:00:04.493Z
-updatedAt: 2026-11-26T23:42:27.856Z
+updatedAt: 2026-11-27T21:06:49.794Z

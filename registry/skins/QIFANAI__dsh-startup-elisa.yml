@@ -17,9 +17,9 @@ tags:
 modes:
   - dark
 install:
-  target: github:QIFANAI/dsh-startup-elisa#cc3c7e4f51dc62f70f1b0c5c51731719197cb51f
-  version: 0.6.0
-  commit: cc3c7e4f51dc62f70f1b0c5c51731719197cb51f
+  target: github:QIFANAI/dsh-startup-elisa#9a3a8bec904bba1978ecc411d137eba66868a4e4
+  version: 0.6.1
+  commit: 9a3a8bec904bba1978ecc411d137eba66868a4e4
   desktop:
     mode: manual-only
     reason: npm-package-not-found
@@ -27,6 +27,8 @@ compatibility:
   dsh: 0.2.1-rc.5
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/QIFANAI__dsh-startup-elisa/cc3c7e4f51dc62f70f1b0c5c51731719197cb51f/home.gif
 screenshots:
   - https://raw.githubusercontent.com/QIFANAI/dsh-startup-elisa/cc3c7e4f51dc62f70f1b0c5c51731719197cb51f/docs/screenshots/glass-empty-g100.png
   - https://raw.githubusercontent.com/QIFANAI/dsh-startup-elisa/cc3c7e4f51dc62f70f1b0c5c51731719197cb51f/docs/screenshots/composer-flow.png
@@ -46,22 +48,20 @@ health:
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
   scan:
-    commit: cc3c7e4f51dc62f70f1b0c5c51731719197cb51f
-    packageVersion: 0.6.0
+    commit: 9a3a8bec904bba1978ecc411d137eba66868a4e4
+    packageVersion: 0.6.1
     scannerVersion: static-v2
     dshVersion: 0.2.1-rc.5
     mode: static
     result: pass
-    checkedAt: 2026-11-14T23:48:27.510Z
+    checkedAt: 2026-11-27T21:05:09.622Z
     findings: []
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/QIFANAI__dsh-startup-elisa/cc3c7e4f51dc62f70f1b0c5c51731719197cb51f/home.gif
 featuredRank: 1256
-releaseUpdatedAt: 2026-11-14T23:48:27.882Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-27T21:05:10.429Z
+metadataUpdatedAt: 2026-11-27T21:05:10.429Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-27T21:05:10.429Z

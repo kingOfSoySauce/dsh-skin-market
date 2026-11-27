@@ -37,6 +37,8 @@ compatibility:
   dsh: ">=0.1.0-rc.6"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/lrplrplrp__dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/home.gif
 screenshots:
   - https://raw.githubusercontent.com/lrplrplrp/dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/docs/preview.png
 listScreenshot: skin-screenshots/lrplrplrp__dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/home.gif
@@ -65,11 +67,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 6
-marketScreenshots:
-  - skin-screenshots/lrplrplrp__dsh-live2d/1ba6522a18408716a5c71a81575503ddad9b96be/home.gif
 featuredRank: 1391
+starsSnapshot: 6
 releaseUpdatedAt: 2026-11-14T23:43:51.301Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+metadataUpdatedAt: 2026-11-27T21:03:32.680Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-27T21:03:32.680Z

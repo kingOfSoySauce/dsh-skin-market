@@ -21,6 +21,9 @@ install:
   target: github:yunxiiQwQ/dsh-maid-whale-UI#1d48d7147de7307ab53e4f7a1027e722753e2321&path:/maid-whale-webui
   version: 0.1.1
   commit: 1d48d7147de7307ab53e4f7a1027e722753e2321
+  desktop:
+    mode: manual-only
+    reason: npm-repository-mismatch
 compatibility:
   dsh: 0.1.7-rc.2
   platform:
@@ -55,9 +58,9 @@ health:
 license:
   code: BSD-3-Clause
   commercialUse: true
-starsSnapshot: 47
 featuredRank: 1540
-releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+starsSnapshot: 47
+releaseUpdatedAt: 2026-11-27T21:02:57.950Z
 metadataUpdatedAt: 2026-11-15T20:40:53.617Z
 starsUpdatedAt: 2026-11-16T12:20:21.184Z
-updatedAt: 2026-11-16T12:20:21.184Z
+updatedAt: 2026-11-27T21:02:57.950Z

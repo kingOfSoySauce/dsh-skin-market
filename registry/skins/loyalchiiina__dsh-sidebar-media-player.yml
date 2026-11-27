@@ -18,21 +18,21 @@ modes:
   - light
   - dark
 install:
-  target: github:loyalchiiina/dsh-sidebar-media-player#45adc71f0757333798338608573c4189794a7446
-  version: 1.0.6
-  commit: 45adc71f0757333798338608573c4189794a7446
+  target: github:loyalchiiina/dsh-sidebar-media-player#15763d0d48897328e5af353f1b76c009ace42e92
+  version: 1.0.7
+  commit: 15763d0d48897328e5af353f1b76c009ace42e92
   desktop:
     mode: managed
     registry: npm
     packageName: dsh-sidebar-media-player
-    packageVersion: 1.0.6
-    integrity: sha512-jKNVVNonFDQBSDocAU0YS2vBLLc8tz/fBC2XPkGrn1nxZrgQvqqKL1oIOUjFOu9p4id109tt5oHU4IXzji/vRA==
+    packageVersion: 1.0.7
+    integrity: sha512-YAvqY38M4HLKgkq1bGcsY7RCh2po+WjJ1V14BddjeX0GOaDgzVNC+F166Ztj/y6lWVYrLdK3aJ4+w65RQr526g==
   npm:
     name: dsh-sidebar-media-player
-    version: 1.0.6
-    integrity: sha512-jKNVVNonFDQBSDocAU0YS2vBLLc8tz/fBC2XPkGrn1nxZrgQvqqKL1oIOUjFOu9p4id109tt5oHU4IXzji/vRA==
+    version: 1.0.7
+    integrity: sha512-YAvqY38M4HLKgkq1bGcsY7RCh2po+WjJ1V14BddjeX0GOaDgzVNC+F166Ztj/y6lWVYrLdK3aJ4+w65RQr526g==
     repository: https://github.com/loyalchiiina/dsh-sidebar-media-player
-    gitHead: 45adc71f0757333798338608573c4189794a7446
+    gitHead: 15763d0d48897328e5af353f1b76c009ace42e92
 compatibility:
   dsh: 0.2.2-rc.1
   platform:
@@ -55,20 +55,20 @@ health:
     topic: pass
   suggestions: []
   scan:
-    commit: 45adc71f0757333798338608573c4189794a7446
-    packageVersion: 1.0.6
+    commit: 15763d0d48897328e5af353f1b76c009ace42e92
+    packageVersion: 1.0.7
     scannerVersion: static-v2
     dshVersion: ">=0.2.2-rc.1"
     mode: static
     result: pass
-    checkedAt: 2026-11-26T23:40:39.103Z
+    checkedAt: 2026-11-27T21:05:01.553Z
     findings: []
 license:
   code: MIT
   commercialUse: true
 featuredRank: 1390
 starsSnapshot: 1
-releaseUpdatedAt: 2026-11-26T23:40:39.832Z
-metadataUpdatedAt: 2026-11-26T23:40:39.832Z
+releaseUpdatedAt: 2026-11-27T21:05:02.115Z
+metadataUpdatedAt: 2026-11-27T21:05:02.115Z
 starsUpdatedAt: 2026-11-20T19:58:57.065Z
-updatedAt: 2026-11-26T23:40:39.832Z
+updatedAt: 2026-11-27T21:05:02.115Z

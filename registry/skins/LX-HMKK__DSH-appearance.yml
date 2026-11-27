@@ -33,6 +33,8 @@ compatibility:
   dsh: ">=0.2.0-rc.2"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/LX-HMKK__DSH-appearance/f81df51c108d855c576c6d721128046de3af0fa3/home.png
 screenshots:
   - https://raw.githubusercontent.com/LX-HMKK/DSH-appearance/f81df51c108d855c576c6d721128046de3af0fa3/assets/theme-preview.png
 listScreenshot: https://raw.githubusercontent.com/LX-HMKK/DSH-appearance/f81df51c108d855c576c6d721128046de3af0fa3/assets/theme-preview.png
@@ -61,11 +63,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 4
-marketScreenshots:
-  - skin-screenshots/LX-HMKK__DSH-appearance/f81df51c108d855c576c6d721128046de3af0fa3/home.png
 featuredRank: 997
+starsSnapshot: 4
 releaseUpdatedAt: 2026-10-25T18:22:32.727Z
-metadataUpdatedAt: 2026-11-15T20:40:53.617Z
+metadataUpdatedAt: 2026-11-27T21:03:49.314Z
 starsUpdatedAt: 2026-11-23T23:19:54.997Z
-updatedAt: 2026-11-23T23:19:54.997Z
+updatedAt: 2026-11-27T21:03:49.314Z

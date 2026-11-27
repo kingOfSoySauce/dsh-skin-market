@@ -36,6 +36,8 @@ compatibility:
   dsh: 0.2.2-rc.1
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/cjjchina3088191870-sudo__dsh-plugin-miku-theme/ca35dfcc83a86032f3537de807c679b514106cf7/launch-miku.gif
 screenshots:
   - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/rose-light.webp
   - https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/8bfbf2ae90b204d881a6d19aa1712bbbb231095f/preview/rose-dark.webp
@@ -71,11 +73,9 @@ health:
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/cjjchina3088191870-sudo__dsh-plugin-miku-theme/ca35dfcc83a86032f3537de807c679b514106cf7/launch-miku.gif
 featuredRank: 1133
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-19T20:21:27.500Z
-metadataUpdatedAt: 2026-11-20T19:56:33.985Z
+metadataUpdatedAt: 2026-11-27T21:04:42.923Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-20T19:56:33.985Z
+updatedAt: 2026-11-27T21:04:42.923Z
