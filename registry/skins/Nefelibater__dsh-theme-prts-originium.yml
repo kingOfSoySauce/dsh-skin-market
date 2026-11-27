@@ -27,6 +27,8 @@ compatibility:
   dsh: ">=0.1.7-rc.1 <0.3.0-0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/Nefelibater__dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/home.gif
 screenshots:
   - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/docs/images/theme-light.png
   - https://raw.githubusercontent.com/Nefelibater/dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/docs/images/theme-dark.png
@@ -62,11 +64,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 2
-marketScreenshots:
-  - skin-screenshots/Nefelibater__dsh-theme-prts-originium/a6e40fd5ae32ec45dbb86080f86c954011e6a1b5/home.gif
 featuredRank: 1414
+starsSnapshot: 2
 releaseUpdatedAt: 2026-11-14T23:46:00.814Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+metadataUpdatedAt: 2026-11-27T21:04:21.698Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-27T21:04:21.698Z

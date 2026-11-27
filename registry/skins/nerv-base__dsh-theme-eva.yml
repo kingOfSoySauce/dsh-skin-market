@@ -35,6 +35,8 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/nerv-base__dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/home.gif
 screenshots:
   - https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/entry-plug.png
   - https://raw.githubusercontent.com/nerv-base/dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/docs/screenshots/nerve-link.png
@@ -66,11 +68,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 8
-marketScreenshots:
-  - skin-screenshots/nerv-base__dsh-theme-eva/63ab370cd573c220e710537ced4feb4dd26af439/home.gif
 featuredRank: 1246
+starsSnapshot: 8
 releaseUpdatedAt: 2026-11-14T23:45:03.932Z
-metadataUpdatedAt: 2026-11-14T23:45:03.932Z
+metadataUpdatedAt: 2026-11-27T21:03:27.924Z
 starsUpdatedAt: 2026-11-26T23:39:10.141Z
-updatedAt: 2026-11-26T23:39:10.141Z
+updatedAt: 2026-11-27T21:03:27.924Z

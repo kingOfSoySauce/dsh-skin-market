@@ -20,6 +20,12 @@ install:
   target: github:nzl153/dsh-pet-whale#231a1936c427e0fae1d34ebb3942aa342192ffb6
   version: 1.2.7
   commit: 231a1936c427e0fae1d34ebb3942aa342192ffb6
+  desktop:
+    mode: managed
+    registry: npm
+    packageName: pet-whale
+    packageVersion: 1.2.7
+    integrity: sha512-TO41yVejoRyal0wVgigJrL6rTxMK5Ri4Nf3eIyxRdPe9uQO5552qc2qHwYmmfx8SDmeQqsdObKawVEemxIT8Yg==
   npm:
     name: pet-whale
     version: 1.2.7
@@ -63,9 +69,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 14
 featuredRank: 1533
-releaseUpdatedAt: 2026-11-16T09:48:54.442Z
+starsSnapshot: 14
+releaseUpdatedAt: 2026-11-27T21:03:16.510Z
 metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-16T09:48:54.442Z
+updatedAt: 2026-11-27T21:03:16.510Z

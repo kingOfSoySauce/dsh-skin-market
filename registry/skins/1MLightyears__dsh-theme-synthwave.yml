@@ -17,13 +17,13 @@ modes:
   - light
   - dark
 install:
-  target: github:1MLightyears/dsh-theme-synthwave#dd5367534de154ab48837dca8a129bf940b09453
-  version: 0.3.0
-  commit: dd5367534de154ab48837dca8a129bf940b09453
+  target: github:1MLightyears/dsh-theme-synthwave#2e00aa870dfb9feed67d91151592a77d7f432be0
+  version: 1.0.0
+  commit: 2e00aa870dfb9feed67d91151592a77d7f432be0
   desktop:
     mode: manual-only
-    reason: npm-repository-mismatch
-  allowBuild: "@1mlightyears/dsh-theme-synthwave@https://codeload.github.com/1MLightyears/dsh-theme-synthwave/tar.gz/dd5367534de154ab48837dca8a129bf940b09453"
+    reason: npm-package-not-found
+  allowBuild: "@1mlightyears/dsh-theme-synthwave@https://codeload.github.com/1MLightyears/dsh-theme-synthwave/tar.gz/2e00aa870dfb9feed67d91151592a77d7f432be0"
 compatibility:
   dsh: unverified
   platform:
@@ -35,31 +35,35 @@ listScreenshot: https://raw.githubusercontent.com/1MLightyears/dsh-theme-synthwa
 review:
   compatibility: unverified
   preview: verified
-  installation: verified
+  installation: manual-only
 health:
   status: improvements
   checks:
     readmeScreenshots: pass
     compatibility: improve
-    installation: pass
+    installation: improve
     installCommand: pass
     topic: pass
   suggestions:
     - 建议在 README 或 package.json 中明确声明支持的 DSH Web 版本范围（例如 0.1.0-rc.6 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
   scan:
-    commit: dd5367534de154ab48837dca8a129bf940b09453
-    packageVersion: 0.3.0
+    commit: 2e00aa870dfb9feed67d91151592a77d7f432be0
+    packageVersion: 1.0.0
     scannerVersion: static-v2
     mode: static
-    result: pass
-    checkedAt: 2026-09-19T21:26:23.269Z
-    findings: []
+    result: unknown
+    checkedAt: 2026-11-27T21:05:29.195Z
+    findings:
+      - code: client-source-unavailable
+        message: 无法读取固定版本的 client 入口，静态扫描结果未知。
 license:
   code: Apache-2.0
   commercialUse: true
-starsSnapshot: 0
 featuredRank: 167
-releaseUpdatedAt: 2026-09-19T21:26:23.840Z
-metadataUpdatedAt: 2026-09-19T21:26:23.840Z
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-27T21:05:29.965Z
+metadataUpdatedAt: 2026-11-27T21:05:29.965Z
 starsUpdatedAt: 2026-09-19T21:26:23.840Z
-updatedAt: 2026-09-19T21:26:23.840Z
+updatedAt: 2026-11-27T21:05:29.965Z

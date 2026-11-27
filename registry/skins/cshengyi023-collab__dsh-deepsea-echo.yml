@@ -27,6 +27,8 @@ compatibility:
   dsh: ">=0.2.0-rc.2 <0.3.0-0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/cshengyi023-collab__dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/launch.gif
 screenshots:
   - https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/preview/storyboard.png
   - https://raw.githubusercontent.com/cshengyi023-collab/dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/assets/screenshots/01-terminal.png
@@ -57,11 +59,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 4
-marketScreenshots:
-  - skin-screenshots/cshengyi023-collab__dsh-deepsea-echo/c5599f80cf5a517e220a91524dbdda791406c09d/launch.gif
 featuredRank: 1219
+starsSnapshot: 4
 releaseUpdatedAt: 2026-11-14T23:44:51.895Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+metadataUpdatedAt: 2026-11-27T21:03:46.320Z
 starsUpdatedAt: 2026-11-25T21:28:40.788Z
-updatedAt: 2026-11-25T21:28:40.788Z
+updatedAt: 2026-11-27T21:03:46.320Z

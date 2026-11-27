@@ -36,6 +36,8 @@ compatibility:
   dsh: ">=0.1.7"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/AAAjzx111__dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/home.gif
 screenshots:
   - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/preview.jpg
   - https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/assets/key-art.webp
@@ -66,11 +68,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/AAAjzx111__dsh-theme-jing-chiyang/d857c35ae506e269c0c3e0b656b54cb322aab424/home.gif
 featuredRank: 1207
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-14T23:46:39.269Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+metadataUpdatedAt: 2026-11-27T21:04:33.600Z
 starsUpdatedAt: 2026-11-14T07:53:29.580Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-27T21:04:33.600Z

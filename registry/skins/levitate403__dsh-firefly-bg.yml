@@ -28,6 +28,8 @@ compatibility:
   dsh: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/levitate403__dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/home.gif
 screenshots:
   - https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/01-chat-rooftop.jpg
   - https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/assets/screenshots/02-settings-panel.jpg
@@ -59,11 +61,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/levitate403__dsh-firefly-bg/2a07e0ae528a3b61f3f77d870b5437f5d9b70107/home.gif
 featuredRank: 1383
+starsSnapshot: 0
 releaseUpdatedAt: 2026-11-15T20:44:57.649Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+metadataUpdatedAt: 2026-11-27T21:06:09.145Z
 starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-27T21:06:09.145Z

@@ -16,9 +16,9 @@ modes:
   - light
   - dark
 install:
-  target: github:Nwflower/dsh-claude-style#fe25ab0a893d6c92a62d13dd904ee3d0ed19e9c6
+  target: github:Nwflower/dsh-claude-style#ae4547daf7ce135554fc8ba0bf3fed852d4719bd
   version: 0.22.4
-  commit: fe25ab0a893d6c92a62d13dd904ee3d0ed19e9c6
+  commit: ae4547daf7ce135554fc8ba0bf3fed852d4719bd
   desktop:
     mode: manual-only
     reason: 当前仅完成固定版本的公开展示/DSH Web 隔离验收；Desktop 安装路径尚未单独核验。
@@ -27,7 +27,7 @@ install:
     version: 0.22.4
     integrity: sha512-ns/kEIqa7vzndsoz0mBlMpzeEc4UZCW8nmykXMo5FL0a8c17PvZQypXkzq3kli15RCotj+sPRKf80KbOu4LzwA==
     repository: https://github.com/Nwflower/dsh-claude-style
-    gitHead: fe25ab0a893d6c92a62d13dd904ee3d0ed19e9c6
+    gitHead: ae4547daf7ce135554fc8ba0bf3fed852d4719bd
 compatibility:
   dsh: ">=0.1.7"
   platform:
@@ -51,15 +51,15 @@ health:
   suggestions:
     - 建议补全稳定的 package 名称、dsh.client Web 声明、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
     - 固定版本静态扫描无法完成，市场暂不提供该版本的一键安装。
-    - DSH 兼容范围待核对：保留的市场范围 >=0.1.7 未被本次检测范围 >=0.2.2-rc.3 完全覆盖（固定版本 fe25ab0a893d6c92a62d13dd904ee3d0ed19e9c6）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 >=0.1.7 未被本次检测范围 >=0.2.2-rc.3 完全覆盖（固定版本 ae4547daf7ce135554fc8ba0bf3fed852d4719bd）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: fe25ab0a893d6c92a62d13dd904ee3d0ed19e9c6
+    commit: ae4547daf7ce135554fc8ba0bf3fed852d4719bd
     packageVersion: 0.22.4
     scannerVersion: static-v2
     dshVersion: ">=0.2.2-rc.3"
     mode: static
     result: unknown
-    checkedAt: 2026-11-26T23:38:36.080Z
+    checkedAt: 2026-11-27T21:02:45.059Z
     findings:
       - code: client-source-unavailable
         message: 无法读取固定版本的 client 入口，静态扫描结果未知。
@@ -67,8 +67,8 @@ license:
   code: MIT
   commercialUse: true
 featuredRank: 1000
-starsSnapshot: 720
-releaseUpdatedAt: 2026-11-26T23:38:39.420Z
-metadataUpdatedAt: 2026-11-26T23:38:39.420Z
-starsUpdatedAt: 2026-11-26T23:38:39.420Z
-updatedAt: 2026-11-26T23:38:39.420Z
+starsSnapshot: 732
+releaseUpdatedAt: 2026-11-27T21:02:47.413Z
+metadataUpdatedAt: 2026-11-27T21:02:47.413Z
+starsUpdatedAt: 2026-11-27T21:02:47.413Z
+updatedAt: 2026-11-27T21:02:47.413Z

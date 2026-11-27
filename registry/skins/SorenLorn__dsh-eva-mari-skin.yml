@@ -28,6 +28,8 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/SorenLorn__dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/home.gif
 screenshots:
   - https://raw.githubusercontent.com/SorenLorn/dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/assets/bg.jpg
 listScreenshot: skin-screenshots/SorenLorn__dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/home.gif
@@ -57,11 +59,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/SorenLorn__dsh-eva-mari-skin/e633a440e6e5e8fe6bf88ef5704439e97ffb4d6d/home.gif
 featuredRank: 1261
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-14T23:48:41.382Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+metadataUpdatedAt: 2026-11-27T21:05:14.596Z
 starsUpdatedAt: 2026-11-14T07:56:31.671Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-27T21:05:14.596Z

@@ -37,6 +37,8 @@ compatibility:
   dsh: 0.2.0--rc.1 || >=0.2.0-rc.1 <0.3.0-0 || 0.2.1-rc.2
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/1015677515__dsh-theme-holo/578325dcc8d8d5e23844a526eeab4ceb2d027cc6/launch.gif
 screenshots:
   - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/assets/cover.webp
   - https://raw.githubusercontent.com/1015677515/dsh-theme-holo/7f6080d88d3149af613d6a6ae0dad0299eaba864/docs/intro-final.webp
@@ -71,11 +73,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 16
-marketScreenshots:
-  - skin-screenshots/1015677515__dsh-theme-holo/578325dcc8d8d5e23844a526eeab4ceb2d027cc6/launch.gif
 featuredRank: 1199
+starsSnapshot: 16
 releaseUpdatedAt: 2026-11-17T20:50:06.550Z
-metadataUpdatedAt: 2026-11-18T20:22:04.502Z
+metadataUpdatedAt: 2026-11-27T21:03:15.280Z
 starsUpdatedAt: 2026-11-25T21:28:40.788Z
-updatedAt: 2026-11-25T21:28:40.788Z
+updatedAt: 2026-11-27T21:03:15.280Z

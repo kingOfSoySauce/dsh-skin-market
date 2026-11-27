@@ -27,6 +27,8 @@ compatibility:
   dsh: ">=0.2.1-rc.3 <0.3.0"
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/milkly909-code__dsh-plugin-starlight-protocol/bce59320cad7073e818291417dfe05d3cc893c60/home.gif
 screenshots:
   - https://raw.githubusercontent.com/milkly909-code/dsh-plugin-starlight-protocol/eb2febdff32261bc3b5c133907eb6b91cf2f2a14/assets/app-expanded.png
   - https://raw.githubusercontent.com/milkly909-code/dsh-plugin-starlight-protocol/eb2febdff32261bc3b5c133907eb6b91cf2f2a14/assets/app-folded.png
@@ -58,11 +60,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 0
-marketScreenshots:
-  - skin-screenshots/milkly909-code__dsh-plugin-starlight-protocol/bce59320cad7073e818291417dfe05d3cc893c60/home.gif
 featuredRank: 1398
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-23T23:23:30.186Z
-metadataUpdatedAt: 2026-11-25T21:28:40.788Z
-starsUpdatedAt: 2026-11-14T11:57:59.992Z
-updatedAt: 2026-11-25T21:28:40.788Z
+metadataUpdatedAt: 2026-11-27T21:06:18.183Z
+starsUpdatedAt: 2026-11-27T21:06:18.183Z
+updatedAt: 2026-11-27T21:06:18.183Z

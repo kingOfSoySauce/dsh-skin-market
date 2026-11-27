@@ -27,6 +27,8 @@ compatibility:
   dsh: unverified
   platform:
     - web
+marketScreenshots:
+  - skin-screenshots/huantest2024__dsh-anime-theme/aeb82de93f6135e8e7ffeb79d9a09886559ab7ec/home.gif
 screenshots:
   - https://raw.githubusercontent.com/huantest2024/dsh-anime-theme/aeb82de93f6135e8e7ffeb79d9a09886559ab7ec/docs/preview.jpg
 listScreenshot: skin-screenshots/huantest2024__dsh-anime-theme/aeb82de93f6135e8e7ffeb79d9a09886559ab7ec/home.gif
@@ -56,11 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 1
-marketScreenshots:
-  - skin-screenshots/huantest2024__dsh-anime-theme/aeb82de93f6135e8e7ffeb79d9a09886559ab7ec/home.gif
 featuredRank: 1158
+starsSnapshot: 1
 releaseUpdatedAt: 2026-11-14T23:47:35.706Z
-metadataUpdatedAt: 2026-11-16T21:57:57.826Z
+metadataUpdatedAt: 2026-11-27T21:04:55.118Z
 starsUpdatedAt: 2026-11-13T04:37:09.826Z
-updatedAt: 2026-11-16T21:57:57.826Z
+updatedAt: 2026-11-27T21:04:55.118Z

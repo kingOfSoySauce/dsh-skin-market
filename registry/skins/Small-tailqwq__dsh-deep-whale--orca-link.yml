@@ -19,12 +19,12 @@ modes:
   - light
   - dark
 install:
-  target: github:Small-tailqwq/dsh-deep-whale#4e151bbb73236a42f47685f84c1f51293f0c52f7&path:/orca-link
-  version: 0.1.12
-  commit: 4e151bbb73236a42f47685f84c1f51293f0c52f7
+  target: github:Small-tailqwq/dsh-deep-whale#c653a4bb2739e801627e051fae87a198107e96bf&path:/orca-link
+  version: 0.2.0-alpha.1
+  commit: c653a4bb2739e801627e051fae87a198107e96bf
   desktop:
     mode: manual-only
-    reason: companion-not-desktop-installable
+    reason: npm-version-not-stable
   companions:
     - package: "@dsh-external/dsh-client-ui-skin-deep-whale-manager"
       target: github:Small-tailqwq/dsh-deep-whale#b693d2c224a0a6fb5b621e7cc1284f20d9849c1c&path:/skin-manager
@@ -33,10 +33,10 @@ install:
       rowId: ui-skin-deep-whale-manager
   npm:
     name: "@smalltailqwq/dsh-client-ui-skin-orca-link"
-    version: 0.1.12
-    integrity: sha512-iSrwQ1UXQ1zCoVjKiIFD6CDtMq/AYf4GUPBNOrVPLBtdtuRSekdwhPyk2eeQSPgC9ln4uAYRgAsLo6BzPEPS+Q==
+    version: 0.2.0-alpha.1
+    integrity: sha512-jR8cUywpXNO0HQbkIT/ikMkHEFDMySG+rjyW4cn4xRnDjjPLqZhyuT+ITNUm3Uq236lECzUkSioIM3fp+3NUYQ==
     repository: https://github.com/Small-tailqwq/dsh-deep-whale
-    gitHead: 4e151bbb73236a42f47685f84c1f51293f0c52f7
+    gitHead: c653a4bb2739e801627e051fae87a198107e96bf
 compatibility:
   dsh: ^0.1.11
   platform:
@@ -68,23 +68,23 @@ health:
     installCommand: pass
     topic: pass
   suggestions:
-    - DSH 兼容范围待核对：保留的市场范围 ^0.1.11 未被本次检测范围 ^0.1.12 完全覆盖（固定版本 4e151bbb73236a42f47685f84c1f51293f0c52f7）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
+    - DSH 兼容范围待核对：保留的市场范围 ^0.1.11 未被本次检测范围 ^0.1.12 完全覆盖（固定版本 c653a4bb2739e801627e051fae87a198107e96bf）。已保留原字段，请人工核对；此项是声明冲突，不代表已验证运行失败。
   scan:
-    commit: 4e151bbb73236a42f47685f84c1f51293f0c52f7
-    packageVersion: 0.1.12
+    commit: c653a4bb2739e801627e051fae87a198107e96bf
+    packageVersion: 0.2.0-alpha.1
     scannerVersion: static-v2
     dshVersion: ^0.1.12
     mode: static
     result: pass
-    checkedAt: 2026-11-26T23:38:34.187Z
+    checkedAt: 2026-11-27T21:02:44.102Z
     findings: []
 license:
   code: SEE LICENSE IN LICENSE
   commercialUse: false
   notice: 仅限非商业使用；详情页必须保留原仓库 NOTICE 署名链。
 featuredRank: 3
-starsSnapshot: 3152
-releaseUpdatedAt: 2026-11-26T23:38:38.333Z
-metadataUpdatedAt: 2026-11-26T23:38:38.333Z
-starsUpdatedAt: 2026-11-26T23:38:38.333Z
-updatedAt: 2026-11-26T23:38:38.333Z
+starsSnapshot: 3156
+releaseUpdatedAt: 2026-11-27T21:02:46.004Z
+metadataUpdatedAt: 2026-11-27T21:02:46.004Z
+starsUpdatedAt: 2026-11-27T21:02:46.004Z
+updatedAt: 2026-11-27T21:02:46.004Z

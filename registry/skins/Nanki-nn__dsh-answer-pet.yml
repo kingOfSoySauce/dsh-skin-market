@@ -20,6 +20,9 @@ install:
   target: github:Nanki-nn/dsh-answer-pet#a0827d41c3f8f9177622c460a99f1aeeb8034b8d
   version: 0.6.0
   commit: a0827d41c3f8f9177622c460a99f1aeeb8034b8d
+  desktop:
+    mode: manual-only
+    reason: npm-package-not-found
 compatibility:
   dsh: unverified
   platform:
@@ -55,9 +58,9 @@ health:
 license:
   code: MIT
   commercialUse: true
-starsSnapshot: 10
 featuredRank: 1531
-releaseUpdatedAt: 2026-11-15T16:38:24.792Z
+starsSnapshot: 10
+releaseUpdatedAt: 2026-11-27T21:03:22.337Z
 metadataUpdatedAt: 2026-11-16T09:48:54.442Z
 starsUpdatedAt: 2026-11-15T16:38:24.792Z
-updatedAt: 2026-11-16T09:48:54.442Z
+updatedAt: 2026-11-27T21:03:22.337Z
