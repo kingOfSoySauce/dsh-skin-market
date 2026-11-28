@@ -1,0 +1,54 @@
+id: xm.zou.dsh.music.player
+name:
+  zh: 音乐播放器
+  en: Music Player
+author: XM-Zou
+description: 本地优先的音乐播放器：导入音频文件或整个文件夹（文件夹名自动成为歌单名），读取 ID3v2 标题与封面，歌曲能加入多个歌单、侧栏歌单可拖动排序。播放支持随机与列表/单曲循环，切换面板后通常继续播放；音乐库、封面与歌单存在浏览器 IndexedDB，可整体导出或合并导入 ZIP。
+repo: https://github.com/XM-Zou/dsh-music-player
+package: dsh-local-music-player
+rowId: dsh-local-music-player
+category: player
+tags:
+  - player
+  - music
+  - playlists
+  - local-first
+  - indexeddb
+modes:
+  - light
+  - dark
+install:
+  target: github:XM-Zou/dsh-music-player#da8ae04175bde41568238a5b783baeb04b71e7fb
+  version: 0.7.3
+  commit: da8ae04175bde41568238a5b783baeb04b71e7fb
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/XM-Zou/dsh-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/player.png
+  - https://raw.githubusercontent.com/XM-Zou/dsh-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/playlist-menu.png
+  - https://raw.githubusercontent.com/XM-Zou/dsh-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/backup.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1593
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:30.957Z
+metadataUpdatedAt: 2026-11-28T08:54:30.957Z
+starsUpdatedAt: 2026-11-28T08:54:30.957Z
+updatedAt: 2026-11-28T08:54:30.957Z
+listScreenshot: https://raw.githubusercontent.com/XM-Zou/dsh-music-player/da8ae04175bde41568238a5b783baeb04b71e7fb/docs/screenshots/player.png

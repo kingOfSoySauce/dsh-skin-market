@@ -1,0 +1,48 @@
+id: cherryxxh.dsh.one.dark.pro.theme
+name:
+  zh: One Dark Pro 主题
+  en: One Dark Pro Theme
+author: Cherryxxh
+description: 按 VS Code 扩展 material-theme 3.20.3 取色的 One Dark Pro 配色，覆盖背景、文字、边框、按钮、状态色、滚动条与 Markdown 代码块；只在深色外观生效，在设置→通用→主题切换「One Dark Pro / 原生」，选择会记住。
+repo: https://github.com/Cherryxxh/DSH-One-Dark-Pro-Theme
+package: dsh-theme-one-dark-pro
+rowId: dsh-theme-one-dark-pro
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:Cherryxxh/DSH-One-Dark-Pro-Theme#2f868a71032b223ee73542de229d50052e55038b
+  version: 1.0.2
+  commit: 2f868a71032b223ee73542de229d50052e55038b
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Cherryxxh/DSH-One-Dark-Pro-Theme/2f868a71032b223ee73542de229d50052e55038b/docs/onedark-palette.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1554
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/Cherryxxh/DSH-One-Dark-Pro-Theme/2f868a71032b223ee73542de229d50052e55038b/docs/onedark-palette.png

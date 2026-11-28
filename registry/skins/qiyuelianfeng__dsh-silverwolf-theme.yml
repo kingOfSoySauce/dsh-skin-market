@@ -1,0 +1,55 @@
+id: qiyuelianfeng.dsh.silverwolf.theme
+name:
+  zh: 银狼LV.999 主题
+  en: Silver Wolf LV.999 Theme
+author: qiyuelianfeng
+description: 银白赛博渐变加毛玻璃的主题，侧边栏能直接改银狼 LV.999 的人格设定，改完立即对之后每一轮对话生效；内置 11 张表情包，整页背景图可开关、选起点、自动轮换或上传自定义。长期记忆与世界书分别存在 $DSH_HOME 下的 JSON 文件，主题样式随插件卸载还原。
+repo: https://github.com/qiyuelianfeng/dsh-silverwolf-theme
+package: dsh-silverwolf-theme
+rowId: ui-silverwolf-theme
+category: skin
+tags:
+  - theme
+  - honkai-star-rail
+  - silver-wolf
+  - persona
+  - stickers
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:qiyuelianfeng/dsh-silverwolf-theme#3b9278ff2fedf5cf4fecf8a561a9ca4db6ebc141
+  version: 0.4.0
+  commit: 3b9278ff2fedf5cf4fecf8a561a9ca4db6ebc141
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/qiyuelianfeng/dsh-silverwolf-theme/3b9278ff2fedf5cf4fecf8a561a9ca4db6ebc141/meme/hero-silverwolf.png
+  - https://raw.githubusercontent.com/qiyuelianfeng/dsh-silverwolf-theme/3b9278ff2fedf5cf4fecf8a561a9ca4db6ebc141/Background/silverwolf-lv999-art.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1581
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/qiyuelianfeng/dsh-silverwolf-theme/3b9278ff2fedf5cf4fecf8a561a9ca4db6ebc141/meme/hero-silverwolf.png

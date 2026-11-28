@@ -1,0 +1,53 @@
+id: xinyang20.dsh.campus.seu
+name:
+  zh: 东南大学校园主题
+  en: SEU Campus Theme
+author: xinyang20
+description: 东南大学校园主题：校园绿与金色点缀、完整校徽、「止于至善」校训和 1902 侧栏铭牌，九龙湖李文正图书馆与四牌楼大礼堂两种风景可切换。叮东形象、欢迎卡、校训与主题本身都能单独开关，关闭主题即恢复原生外观。
+repo: https://github.com/xinyang20/dsh-campus-seu
+package: dsh-campus-seu
+rowId: dsh-campus-seu
+category: skin
+tags:
+  - theme
+  - campus
+  - southeast-university
+  - mascot
+modes:
+  - light
+  - dark
+install:
+  target: github:xinyang20/dsh-campus-seu#2af80e5dea7044c36f21fff5eb1e8a55291a7340
+  version: 0.3.4
+  commit: 2af80e5dea7044c36f21fff5eb1e8a55291a7340
+compatibility:
+  dsh: 0.2.3-alpha.2 || 0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.0-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xinyang20/dsh-campus-seu/2af80e5dea7044c36f21fff5eb1e8a55291a7340/docs/screenshots/v0.3/light-mascot.jpg
+  - https://raw.githubusercontent.com/xinyang20/dsh-campus-seu/2af80e5dea7044c36f21fff5eb1e8a55291a7340/docs/screenshots/v0.3/dark-mascot.jpg
+  - https://raw.githubusercontent.com/xinyang20/dsh-campus-seu/2af80e5dea7044c36f21fff5eb1e8a55291a7340/docs/screenshots/v0.3/settings-mascot.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1589
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/xinyang20/dsh-campus-seu/2af80e5dea7044c36f21fff5eb1e8a55291a7340/docs/screenshots/v0.3/light-mascot.jpg

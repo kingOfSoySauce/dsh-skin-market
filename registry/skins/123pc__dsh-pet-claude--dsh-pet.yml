@@ -1,0 +1,61 @@
+id: 123pc.dsh.pet
+name:
+  zh: Claude 大肥鱼
+  en: Claude Bigfish
+author: 123pc
+description: 穿 Claude 工牌的蓝发大肥鱼桌宠，站立、托腮两种形态，共 122 段透明动画和 18 条日常动作链；点一点有回应、拖一拖换位置，右键可换装或点播动作。
+repo: https://github.com/123pc/dsh-pet-claude
+subpath: dsh-pet
+package: dsh-pet
+rowId: dsh-pet
+category: pet
+tags:
+  - pet
+  - animations
+  - claude
+  - dress-up
+modes:
+  - light
+  - dark
+install:
+  target: github:123pc/dsh-pet-claude#b82a9179d041cefffb715de33216965d60672f79&path:/dsh-pet
+  version: 0.3.8-claude.3
+  commit: b82a9179d041cefffb715de33216965d60672f79
+compatibility:
+  dsh: ^0.2.0-rc.1 || ^0.2.1-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/123pc/dsh-pet-claude/b82a9179d041cefffb715de33216965d60672f79/docs/media/office.gif
+  - https://raw.githubusercontent.com/123pc/dsh-pet-claude/b82a9179d041cefffb715de33216965d60672f79/docs/media/chains/sleepy.gif
+  - https://raw.githubusercontent.com/123pc/dsh-pet-claude/b82a9179d041cefffb715de33216965d60672f79/dsh-pet/assets/screenshots/01-forms.png
+  - https://raw.githubusercontent.com/123pc/dsh-pet-claude/b82a9179d041cefffb715de33216965d60672f79/dsh-pet/assets/screenshots/02-daily.png
+  - https://raw.githubusercontent.com/123pc/dsh-pet-claude/b82a9179d041cefffb715de33216965d60672f79/dsh-pet/assets/screenshots/03-companion.png
+  - https://raw.githubusercontent.com/123pc/dsh-pet-claude/b82a9179d041cefffb715de33216965d60672f79/dsh-pet/assets/screenshots/04-office.png
+  - https://raw.githubusercontent.com/123pc/dsh-pet-claude/b82a9179d041cefffb715de33216965d60672f79/dsh-pet/assets/screenshots/05-new-actions.png
+  - https://raw.githubusercontent.com/123pc/dsh-pet-claude/b82a9179d041cefffb715de33216965d60672f79/docs/media/hero.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1549
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/123pc/dsh-pet-claude/b82a9179d041cefffb715de33216965d60672f79/docs/media/office.gif

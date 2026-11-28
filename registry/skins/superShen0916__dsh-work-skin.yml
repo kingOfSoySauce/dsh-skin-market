@@ -1,0 +1,54 @@
+id: supershen0916.dsh.work.skin
+name:
+  zh: 一键换肤
+  en: One-Click Skins
+author: superShen0916
+description: 内置 13 套高清壁纸，每套都配好整组界面颜色，窗口变宽时露出更多背景、缩窄时重新取景，消息区的半透明底色让长对话和代码保持可读。也能上传自己的照片并选一套配色，设置存在同一桌面用户配置里，重启后沿用上次选择。
+repo: https://github.com/superShen0916/dsh-work-skin
+package: dsh-work-skin
+rowId: dsh-work-skin
+category: skin
+tags:
+  - theme
+  - wallpaper
+  - light
+  - 13-themes
+modes:
+  - light
+install:
+  target: github:superShen0916/dsh-work-skin#75e66e387cb5f98118258a6546056c619501535d
+  version: 1.1.0
+  commit: 75e66e387cb5f98118258a6546056c619501535d
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/superShen0916/dsh-work-skin/75e66e387cb5f98118258a6546056c619501535d/docs/screenshots/seaside-breeze.png
+  - https://raw.githubusercontent.com/superShen0916/dsh-work-skin/75e66e387cb5f98118258a6546056c619501535d/docs/screenshots/sunlit-atelier.png
+  - https://raw.githubusercontent.com/superShen0916/dsh-work-skin/75e66e387cb5f98118258a6546056c619501535d/docs/screenshots/windborne-terrace.png
+  - https://raw.githubusercontent.com/superShen0916/dsh-work-skin/75e66e387cb5f98118258a6546056c619501535d/docs/screenshots/gallery.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1586
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/superShen0916/dsh-work-skin/75e66e387cb5f98118258a6546056c619501535d/docs/screenshots/seaside-breeze.png

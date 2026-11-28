@@ -1,0 +1,56 @@
+id: xmlans.dsh.telegram.style
+name:
+  zh: Telegram 风格
+  en: Telegram Style
+author: xmlans
+description: 把界面换成 Telegram 网页版的样子：墙纸上的浮动聊天列表、带小尾巴的消息气泡、48px 发送键的悬浮输入条，连菜单、Toast 与点击波纹也一并重做。经典、玻璃、粉色三套配色各有亮暗，输入条上沿还站着一只贴纸桌宠，会跟着思考、干活、等批准、出错与完成换动作。
+repo: https://github.com/xmlans/dsh-telegram-style
+package: dsh-telegram-style
+rowId: ui-skin-telegram-style
+category: skin
+tags:
+  - theme
+  - telegram
+  - sticker
+  - palettes
+  - chat-ui
+modes:
+  - light
+  - dark
+install:
+  target: github:xmlans/dsh-telegram-style#a4e58d17f82b6be713eef51d77a0f5a651836cba
+  version: 0.1.0
+  commit: a4e58d17f82b6be713eef51d77a0f5a651836cba
+compatibility:
+  dsh: ">=0.1.5-rc.1"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/xmlans/dsh-telegram-style/a4e58d17f82b6be713eef51d77a0f5a651836cba/docs/screenshots/telegram-home-light.png
+  - https://raw.githubusercontent.com/xmlans/dsh-telegram-style/a4e58d17f82b6be713eef51d77a0f5a651836cba/docs/screenshots/telegram-home-dark.png
+  - https://raw.githubusercontent.com/xmlans/dsh-telegram-style/a4e58d17f82b6be713eef51d77a0f5a651836cba/docs/screenshots/telegram-conversation-light.png
+  - https://raw.githubusercontent.com/xmlans/dsh-telegram-style/a4e58d17f82b6be713eef51d77a0f5a651836cba/docs/screenshots/telegram-conversation-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1592
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-28T08:54:30.957Z
+metadataUpdatedAt: 2026-11-28T08:54:30.957Z
+starsUpdatedAt: 2026-11-28T08:54:30.957Z
+updatedAt: 2026-11-28T08:54:30.957Z
+listScreenshot: https://raw.githubusercontent.com/xmlans/dsh-telegram-style/a4e58d17f82b6be713eef51d77a0f5a651836cba/docs/screenshots/telegram-home-light.png

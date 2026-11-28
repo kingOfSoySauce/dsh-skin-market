@@ -1,0 +1,61 @@
+id: shilaoban666.dsh.imperial.court
+name:
+  zh: 三省六部
+  en: Imperial Senate
+author: shilaoban666
+description: 把本机装着的 Claude Code、Codex、WorkBuddy 与 DSH 本体按唐朝官制排成朝堂：中书省拟方案、门下省换一家工具封驳、六部按依赖并行办差，复核通过后由你批红合并，全程在隔离的 git 分支里进行。丞相府能把一摞事拆单排队派发，卡死或超支由锦衣卫停朝；另有「一人公司」现代职位皮肤可换。
+repo: https://github.com/shilaoban666/dsh-imperial-court
+package: dsh-sansheng-liubu
+rowId: dsh-sansheng-liubu
+category: skin
+tags:
+  - multi-agent
+  - orchestration
+  - claude-code
+  - codex
+  - git-worktree
+  - router-worker
+modes:
+  - light
+  - dark
+install:
+  target: github:shilaoban666/dsh-imperial-court#3191c462480a90a4f677e2a4b2ba316b3bdd9dc8
+  version: 1.2.1
+  commit: 3191c462480a90a4f677e2a4b2ba316b3bdd9dc8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/shilaoban666/dsh-imperial-court/3191c462480a90a4f677e2a4b2ba316b3bdd9dc8/docs/screenshots/15-court-workbench.jpg
+  - https://raw.githubusercontent.com/shilaoban666/dsh-imperial-court/3191c462480a90a4f677e2a4b2ba316b3bdd9dc8/docs/screenshots/05-court.jpg
+  - https://raw.githubusercontent.com/shilaoban666/dsh-imperial-court/3191c462480a90a4f677e2a4b2ba316b3bdd9dc8/docs/screenshots/18-chancellor.png
+  - https://raw.githubusercontent.com/shilaoban666/dsh-imperial-court/3191c462480a90a4f677e2a4b2ba316b3bdd9dc8/docs/screenshots/19-market.png
+  - https://raw.githubusercontent.com/shilaoban666/dsh-imperial-court/3191c462480a90a4f677e2a4b2ba316b3bdd9dc8/docs/screenshots/20-offices.png
+  - https://raw.githubusercontent.com/shilaoban666/dsh-imperial-court/3191c462480a90a4f677e2a4b2ba316b3bdd9dc8/docs/screenshots/11-panorama.jpg
+  - https://raw.githubusercontent.com/shilaoban666/dsh-imperial-court/3191c462480a90a4f677e2a4b2ba316b3bdd9dc8/docs/screenshots/13-impact.jpg
+  - https://raw.githubusercontent.com/shilaoban666/dsh-imperial-court/3191c462480a90a4f677e2a4b2ba316b3bdd9dc8/docs/screenshots/en-11-senate-workbench.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1585
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/shilaoban666/dsh-imperial-court/3191c462480a90a4f677e2a4b2ba316b3bdd9dc8/docs/screenshots/15-court-workbench.jpg

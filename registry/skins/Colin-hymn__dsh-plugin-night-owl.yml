@@ -1,0 +1,51 @@
+id: colin.hymn.dsh.plugin.night.owl
+name:
+  zh: Night Owl 主题
+  en: Night Owl Theme
+author: Colin-hymn
+description: "把 Sarah Drasner 的 Night Owl 深蓝配色叠到界面上：深色模式换成 #011627 底色、#d6deeb 正文、#82aaff 强调色，共覆盖 127 个 token（含整套语法高亮）；浅色模式保持原样，不新增主题入口，卸载即恢复。"
+repo: https://github.com/Colin-hymn/dsh-plugin-night-owl
+package: dsh-plugin-night-owl
+rowId: night-owl
+category: skin
+tags:
+  - theme
+  - dark
+  - syntax-highlight
+  - night-owl
+modes:
+  - dark
+install:
+  target: github:Colin-hymn/dsh-plugin-night-owl#2c8ccc692781b4c2a8ece6f9a005f99f647016d1
+  version: 0.1.1
+  commit: 2c8ccc692781b4c2a8ece6f9a005f99f647016d1
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Colin-hymn/dsh-plugin-night-owl/2c8ccc692781b4c2a8ece6f9a005f99f647016d1/preview.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1555
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/Colin-hymn/dsh-plugin-night-owl/2c8ccc692781b4c2a8ece6f9a005f99f647016d1/preview.png

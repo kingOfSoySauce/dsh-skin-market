@@ -1,0 +1,59 @@
+id: ob.labs.dsh.pet
+name:
+  zh: 记忆桌宠
+  en: Memory Pet
+author: ob-labs
+description: 会聊天、会动、能按人设与语音回应的桌宠，既能当插件跑在界面里，也能在 Windows、macOS、Linux 上独立运行。核心差异是可选的 PowerContext + seekdb 本机长期记忆：把事实与偏好抽出来存进本地记忆库，清空近期聊天后仍能召回，聊天模型与记忆模型分开配置。
+repo: https://github.com/ob-labs/dsh-pet-powercontext
+subpath: dsh-pet
+package: dsh-pet-powercontext
+rowId: dsh-pet-powercontext
+category: pet
+tags:
+  - pet
+  - memory
+  - powercontext
+  - chat
+  - standalone
+modes:
+  - light
+  - dark
+install:
+  target: github:ob-labs/dsh-pet-powercontext#e3b84100725cabaeae797006611c0711feb8603b&path:/dsh-pet
+  version: 0.3.2
+  commit: e3b84100725cabaeae797006611c0711feb8603b
+compatibility:
+  dsh: ^0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ob-labs/dsh-pet-powercontext/e3b84100725cabaeae797006611c0711feb8603b/docs/assets/demos/dsh-chat.gif
+  - https://raw.githubusercontent.com/ob-labs/dsh-pet-powercontext/e3b84100725cabaeae797006611c0711feb8603b/docs/assets/demos/dsh-memory-recall.gif
+  - https://raw.githubusercontent.com/ob-labs/dsh-pet-powercontext/e3b84100725cabaeae797006611c0711feb8603b/docs/assets/screenshots/dsh-live-memory.zh.png
+  - https://raw.githubusercontent.com/ob-labs/dsh-pet-powercontext/e3b84100725cabaeae797006611c0711feb8603b/docs/assets/screenshots/dsh-token-comparison.zh.png
+  - https://raw.githubusercontent.com/ob-labs/dsh-pet-powercontext/e3b84100725cabaeae797006611c0711feb8603b/docs/assets/screenshots/ai-vision-pet-trace.zh.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1578
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/ob-labs/dsh-pet-powercontext/e3b84100725cabaeae797006611c0711feb8603b/docs/assets/demos/dsh-chat.gif

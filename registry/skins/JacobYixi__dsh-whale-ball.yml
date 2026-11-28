@@ -1,0 +1,56 @@
+id: jacobyixi.dsh.whale.ball
+name:
+  zh: 鲸尾悬浮球
+  en: Whale-tail Ball
+author: JacobYixi
+description: 挂在 Windows 桌面上的鲸尾悬浮球：点一下展开嵌在球里的 WebView2 面板，接着当前会话聊天，拖到屏幕边缘会半隐、悬停可看余额。8 套皮肤都有浅色/深色两套配色，布纹用 CSS 经纬线画成、缩放到任何 DPI 都不糊，还支持自定义底色与强调色、跟随系统/浅色/深色三档切换。
+repo: https://github.com/JacobYixi/dsh-whale-ball
+package: dsh-whale-ball
+rowId: whale-ball
+category: skin
+tags:
+  - desktop
+  - windows
+  - floating-ball
+  - skins
+  - weave
+modes:
+  - light
+  - dark
+install:
+  target: github:JacobYixi/dsh-whale-ball#9c224607163469201dd662d7c3aaa5561b5be237
+  version: 1.0.0
+  commit: 9c224607163469201dd662d7c3aaa5561b5be237
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JacobYixi/dsh-whale-ball/9c224607163469201dd662d7c3aaa5561b5be237/screenshots/panel-light.png
+  - https://raw.githubusercontent.com/JacobYixi/dsh-whale-ball/9c224607163469201dd662d7c3aaa5561b5be237/screenshots/ball.png
+  - https://raw.githubusercontent.com/JacobYixi/dsh-whale-ball/9c224607163469201dd662d7c3aaa5561b5be237/screenshots/skins.png
+  - https://raw.githubusercontent.com/JacobYixi/dsh-whale-ball/9c224607163469201dd662d7c3aaa5561b5be237/screenshots/panel-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1565
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/JacobYixi/dsh-whale-ball/9c224607163469201dd662d7c3aaa5561b5be237/screenshots/panel-light.png

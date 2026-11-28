@@ -1,0 +1,54 @@
+id: yryd.dafy.whale.theme
+name:
+  zh: 蓝色大肥鱼主题
+  en: Blue Bigfish Theme
+author: yryd
+description: 海洋蓝亮暗双主题：海面光晕、上升气泡与来回游动的鱼群，输入框上方滚动「每日鱼语」，左上角换成鲸鱼图标加「蓝色大肥鱼」字标。设置页共 7 组 32 项即时生效（鱼群数量与速度、光晕强度、语录列表等）；只改主色时其余 10 个设计 token 按色相平移派生，语义状态色保持不变。
+repo: https://github.com/yryd/dafy-whale-theme
+package: dafy-whale-theme
+rowId: dafy-whale-theme
+category: skin
+tags:
+  - theme
+  - ocean
+  - whale
+  - ambient
+  - settings
+modes:
+  - light
+  - dark
+install:
+  target: github:yryd/dafy-whale-theme#4e231a7bb32e4919b01a8ed338ef4023bb432899
+  version: 2.1.0
+  commit: 4e231a7bb32e4919b01a8ed338ef4023bb432899
+compatibility:
+  dsh: ^0.1.7-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yryd/dafy-whale-theme/4e231a7bb32e4919b01a8ed338ef4023bb432899/preview.png
+  - https://raw.githubusercontent.com/yryd/dafy-whale-theme/4e231a7bb32e4919b01a8ed338ef4023bb432899/settings.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1591
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:30.957Z
+metadataUpdatedAt: 2026-11-28T08:54:30.957Z
+starsUpdatedAt: 2026-11-28T08:54:30.957Z
+updatedAt: 2026-11-28T08:54:30.957Z
+listScreenshot: https://raw.githubusercontent.com/yryd/dafy-whale-theme/4e231a7bb32e4919b01a8ed338ef4023bb432899/preview.png

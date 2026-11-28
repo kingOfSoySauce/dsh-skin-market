@@ -1,0 +1,53 @@
+id: nzlov.dsh.bing.wallpaper
+name:
+  zh: Bing 每日壁纸
+  en: Bing Daily Wallpaper
+author: nzlov
+description: 每天从 Bing 取一张壁纸铺作界面背景，并从图片提取主题色：提供 M3 Content、Rainbow、Vibrant 等十种取色风格，壁纸可见度 10%–100% 线性可调，另有模糊、毛玻璃、蓝色调、黑白与压暗滤镜。可在国内/国际 Bing 来源间切换、选 1080p/2K/4K，还能开 WebGL2 雨雪云雾天气窗景和选装 3D 深度视差。
+repo: https://github.com/nzlov/dsh-bing-wallpaper
+package: "@nzlov/dsh-bing-wallpaper"
+rowId: bing-daily-theme
+category: skin
+tags:
+  - wallpaper
+  - bing
+  - dynamic-color
+  - weather
+  - parallax
+modes:
+  - light
+  - dark
+install:
+  target: github:nzlov/dsh-bing-wallpaper#632495de9dc8630b71e592c48160010ffd08cd99
+  version: 1.10.0
+  commit: 632495de9dc8630b71e592c48160010ffd08cd99
+compatibility:
+  dsh: ">=0.2.2-rc.4 <0.3.0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/nzlov/dsh-bing-wallpaper/632495de9dc8630b71e592c48160010ffd08cd99/assets/settings-preview.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1577
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/nzlov/dsh-bing-wallpaper/632495de9dc8630b71e592c48160010ffd08cd99/assets/settings-preview.png

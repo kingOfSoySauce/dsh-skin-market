@@ -1,0 +1,54 @@
+id: haixiao.ll.dsh.pet.mind
+name:
+  zh: 大肥鱼心智桌宠
+  en: Bigfish Mind Pet
+author: haixiao-ll
+description: 蓝色大肥鱼桌宠加一层心智：右肩外侧环显示上下文用量（数据更新亮 10 秒、悬停常显），到阈值把最近对话抽成 Markdown 存进本地工作 / 陪伴记忆并注入新会话；进入新页面 30 秒后本地 OCR 截一帧转成文字，交给你的文本模型总结成一句专注建议，每天最多 6 条、不录屏不操作，桌面感知与 OCR 仅 Windows。
+repo: https://github.com/haixiao-ll/dsh-pet-mind
+package: dsh-pet-mind
+rowId: dsh-pet
+category: pet
+tags:
+  - pet
+  - memory
+  - ocr
+  - privacy
+modes:
+  - light
+  - dark
+install:
+  target: github:haixiao-ll/dsh-pet-mind#407748b6c8e7a1d7351c5d331c61bc87b783b2b5
+  version: 0.5.0
+  commit: 407748b6c8e7a1d7351c5d331c61bc87b783b2b5
+compatibility:
+  dsh: ^0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/haixiao-ll/dsh-pet-mind/407748b6c8e7a1d7351c5d331c61bc87b783b2b5/docs/2026-11-15%20014659.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1562
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/haixiao-ll/dsh-pet-mind/407748b6c8e7a1d7351c5d331c61bc87b783b2b5/docs/2026-11-15%20014659.jpg

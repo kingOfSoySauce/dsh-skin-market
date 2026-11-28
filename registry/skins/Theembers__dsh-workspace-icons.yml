@@ -1,0 +1,55 @@
+id: theembers.dsh.workspace.icons
+name:
+  zh: 工作区与会话图标
+  en: Workspace & Session Icons
+author: Theembers
+description: 在「重命名工作区」弹窗里直接给工作区选图标，并为本地发起的会话设置默认图标；会话行比工作区多缩进一级、从工作区图标垂下一条引导线，把侧栏画成清晰的两级结构。内置 73 个 Lucide 图标，可上传 SVG（≤64KB），也能关联 Iconify 图标库（官方目录 276 个库）后按库搜索选用。
+repo: https://github.com/Theembers/dsh-workspace-icons
+package: dsh-workspace-icons
+rowId: dsh-workspace-icons
+category: skin
+tags:
+  - icons
+  - sidebar
+  - lucide
+  - iconify
+modes:
+  - light
+  - dark
+install:
+  target: github:Theembers/dsh-workspace-icons#247236c7c3ebaada0a89751c1b26fb0185a7ee06
+  version: 0.1.0
+  commit: 247236c7c3ebaada0a89751c1b26fb0185a7ee06
+compatibility:
+  dsh: ">=0.2.2-rc.1 <0.3.0-0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Theembers/dsh-workspace-icons/247236c7c3ebaada0a89751c1b26fb0185a7ee06/docs/sidebar.png
+  - https://raw.githubusercontent.com/Theembers/dsh-workspace-icons/247236c7c3ebaada0a89751c1b26fb0185a7ee06/docs/hierarchy.png
+  - https://raw.githubusercontent.com/Theembers/dsh-workspace-icons/247236c7c3ebaada0a89751c1b26fb0185a7ee06/docs/rename-dialog.png
+  - https://raw.githubusercontent.com/Theembers/dsh-workspace-icons/247236c7c3ebaada0a89751c1b26fb0185a7ee06/docs/settings.png
+  - https://raw.githubusercontent.com/Theembers/dsh-workspace-icons/247236c7c3ebaada0a89751c1b26fb0185a7ee06/docs/iconify-catalog.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1588
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/Theembers/dsh-workspace-icons/247236c7c3ebaada0a89751c1b26fb0185a7ee06/docs/sidebar.png

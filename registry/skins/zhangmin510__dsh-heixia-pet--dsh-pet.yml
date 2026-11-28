@@ -1,0 +1,58 @@
+id: zhangmin510.dsh.pet
+name:
+  zh: 黑侠桌宠
+  en: Heixia Pet
+author: zhangmin510
+description: 黑白短毛猫「黑侠」桌宠，18 个动作与姿态（17 个来自实拍）：待机、思考、工作、看结果、等你、庆祝、警觉与三段睡眠，六种会话状态各有自己的动作。默认每 300 秒自动聊一句并跟随当前模型，每 1800 秒刷新一次余额、按剩余档位播动画，可拖拽、点击回应、右键点播与睡觉。
+repo: https://github.com/zhangmin510/dsh-heixia-pet
+subpath: dsh-pet
+package: dsh-pet
+rowId: dsh-pet
+category: pet
+tags:
+  - pet
+  - cat
+  - desktop-pet
+  - virtual-pet
+modes:
+  - light
+  - dark
+install:
+  target: github:zhangmin510/dsh-heixia-pet#8664d3c3b6670eccc614c64c514590c3663e7fa2&path:/dsh-pet
+  version: 0.4.5
+  commit: 8664d3c3b6670eccc614c64c514590c3663e7fa2
+compatibility:
+  dsh: ^0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/zhangmin510/dsh-heixia-pet/8664d3c3b6670eccc614c64c514590c3663e7fa2/heixia/pet/action-previews/thinking.gif
+  - https://raw.githubusercontent.com/zhangmin510/dsh-heixia-pet/8664d3c3b6670eccc614c64c514590c3663e7fa2/heixia/pet/action-previews/working.gif
+  - https://raw.githubusercontent.com/zhangmin510/dsh-heixia-pet/8664d3c3b6670eccc614c64c514590c3663e7fa2/heixia/pet/action-previews/waiting.gif
+  - https://raw.githubusercontent.com/zhangmin510/dsh-heixia-pet/8664d3c3b6670eccc614c64c514590c3663e7fa2/heixia/pet/action-previews/idle.png
+  - https://raw.githubusercontent.com/zhangmin510/dsh-heixia-pet/8664d3c3b6670eccc614c64c514590c3663e7fa2/heixia/pet/action-previews/result.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1596
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:30.957Z
+metadataUpdatedAt: 2026-11-28T08:54:30.957Z
+starsUpdatedAt: 2026-11-28T08:54:30.957Z
+updatedAt: 2026-11-28T08:54:30.957Z
+listScreenshot: https://raw.githubusercontent.com/zhangmin510/dsh-heixia-pet/8664d3c3b6670eccc614c64c514590c3663e7fa2/heixia/pet/action-previews/thinking.gif

@@ -1,0 +1,54 @@
+id: paomoxml.dsh.theme.ink
+name:
+  zh: INK
+  en: INK
+author: PaoMoXML
+description: 原生优先的主题：保留全部原生组件与控件，只改主题 token 层——六套调色板（host、Claude 亮色/暗色、巧克力薄荷、Vue、薄荷）、原生/紧凑两档工作区密度、方角/圆角与 ASCII 字形开关，还可隐藏左上角 logo。全部选项集中在「设置 → 通用设置」的一行里。
+repo: https://github.com/PaoMoXML/dsh-theme-ink
+package: dsh-theme-ink
+rowId: ui-theme-ink
+category: skin
+tags:
+  - theme
+  - palette
+  - density
+  - corners
+  - glyphs
+modes:
+  - light
+  - dark
+install:
+  target: github:PaoMoXML/dsh-theme-ink#fc9f97c142cece7d59e6af75dbf479248048612a
+  version: 0.1.0
+  commit: fc9f97c142cece7d59e6af75dbf479248048612a
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/PaoMoXML/dsh-theme-ink/fc9f97c142cece7d59e6af75dbf479248048612a/docs/settings-row.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1580
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/PaoMoXML/dsh-theme-ink/fc9f97c142cece7d59e6af75dbf479248048612a/docs/settings-row.png

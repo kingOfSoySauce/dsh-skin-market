@@ -1,0 +1,54 @@
+id: frostming.dsh.hongguo
+name:
+  zh: 摸鱼短剧
+  en: Drama Break
+author: frostming
+description: 右侧边栏的短剧播放器：推荐与搜索剧集、选集按 50 集分段、0.5–2× 倍速、画中画和滚轮调音量；Agent 运行时在输入框上方列出三部可直接点开的剧，任务结束自动暂停，把播放交给浏览器播放页后切换对话也不会中断。
+repo: https://github.com/frostming/dsh-hongguo
+package: dsh-hongguo
+rowId: hongguo
+category: player
+tags:
+  - player
+  - drama
+  - sidebar
+  - video
+modes:
+  - light
+  - dark
+install:
+  target: github:frostming/dsh-hongguo#cb00f6fe746a1287510f6d7682e0c04b6c62ec7e
+  version: 1.2.1
+  commit: cb00f6fe746a1287510f6d7682e0c04b6c62ec7e
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/frostming/dsh-hongguo/cb00f6fe746a1287510f6d7682e0c04b6c62ec7e/docs/home.png
+  - https://raw.githubusercontent.com/frostming/dsh-hongguo/cb00f6fe746a1287510f6d7682e0c04b6c62ec7e/docs/player.png
+  - https://raw.githubusercontent.com/frostming/dsh-hongguo/cb00f6fe746a1287510f6d7682e0c04b6c62ec7e/docs/prompt.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1558
+starsSnapshot: 206
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/frostming/dsh-hongguo/cb00f6fe746a1287510f6d7682e0c04b6c62ec7e/docs/home.png

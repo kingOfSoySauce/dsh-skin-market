@@ -1,0 +1,61 @@
+id: lehua.art.dsh.folia
+name:
+  zh: DSH 壁纸引擎
+  en: DSH Wallpaper Engine
+author: lehua-art
+description: 把本机 Wallpaper Engine 的 Scene、Web 与视频壁纸带进对话界面，配液态玻璃、字体调节、10 只内置吉祥物与可导入导出的整份配置预设；壁纸支持播放列表轮播和速度、翻转、构图等播放控制。不向 agent 注册工具、不注入提示文本，不增加模型 token 开销。
+repo: https://github.com/lehua-art/dsh-folia
+package: dsh-folia
+rowId: folia
+category: skin
+tags:
+  - wallpaper-engine
+  - wallpaper
+  - glassmorphism
+  - mascot
+  - presets
+modes:
+  - light
+  - dark
+install:
+  target: github:lehua-art/dsh-folia#8159e42ea57ae978b63f7edb396d6f89bf98ecd4
+  version: 4.4.0
+  commit: 8159e42ea57ae978b63f7edb396d6f89bf98ecd4
+compatibility:
+  dsh: 0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://github.com/elysia395/dsh-folia/releases/download/media-v1/main-interface.gif
+  - https://github.com/elysia395/dsh-folia/releases/download/media-v1/settings-ui.gif
+  - https://github.com/elysia395/dsh-folia/releases/download/media-v1/wallpaper-library.gif
+  - https://github.com/elysia395/dsh-folia/releases/download/media-v1/mascot-drawer.png
+  - https://github.com/elysia395/dsh-folia/releases/download/media-v1/better-sidebar-font.png
+  - https://raw.githubusercontent.com/lehua-art/dsh-folia/8159e42ea57ae978b63f7edb396d6f89bf98ecd4/assets/readme/key-lang-zh-dark.png
+  - https://raw.githubusercontent.com/lehua-art/dsh-folia/8159e42ea57ae978b63f7edb396d6f89bf98ecd4/assets/readme/key-lang-zh-light.png
+  - https://raw.githubusercontent.com/lehua-art/dsh-folia/8159e42ea57ae978b63f7edb396d6f89bf98ecd4/assets/readme/key-lang-en-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1570
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://github.com/elysia395/dsh-folia/releases/download/media-v1/main-interface.gif

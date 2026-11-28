@@ -1,0 +1,55 @@
+id: 1583477320.dsh.task.pet
+name:
+  zh: 任务完成桌宠提醒
+  en: Task-Done Pet Reminder
+author: "1583477320"
+description: 一轮任务结束（正常完成、报错或中止）时，大肥鱼在窗口右下角和屏幕右下角各弹一张手写风卡片，带开心、难过、歪头三种表情以及用时和两个操作按钮；待机每 3–7 秒随机眨眼，点她抖一下并冒爱心，13 秒自动收起、悬停时不收，屏幕右下角那张仅 Windows。
+repo: https://github.com/1583477320/dsh-task-pet
+package: dsh-task-pet
+rowId: dsh-task-pet
+category: pet
+tags:
+  - pet
+  - reminder
+  - notification
+  - windows
+modes:
+  - light
+  - dark
+install:
+  target: github:1583477320/dsh-task-pet#f48536e0dea265630e86ff422be789e3fe4d83e8
+  version: 0.1.0
+  commit: f48536e0dea265630e86ff422be789e3fe4d83e8
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/1583477320/dsh-task-pet/f48536e0dea265630e86ff422be789e3fe4d83e8/docs/desktop.png
+  - https://raw.githubusercontent.com/1583477320/dsh-task-pet/f48536e0dea265630e86ff422be789e3fe4d83e8/docs/inapp.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1548
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/1583477320/dsh-task-pet/f48536e0dea265630e86ff422be789e3fe4d83e8/docs/desktop.png
