@@ -1,0 +1,51 @@
+id: beckhamwash.dsh.claude.workbench
+name:
+  zh: Claude 工作台
+  en: Claude Workbench
+author: beckhamwash
+description: Claude 风格工作台：暖米白画布配暖石灰与陶土色，正文标题用衬线体 Crimson Pro、界面用 DM Sans（字体已内联，离线可用），浅色、深色与跟随系统三种模式完整适配，另附双栏与侧聊等版面增强。
+repo: https://github.com/beckhamwash/dsh-claude-workbench
+package: dsh-claude-workbench
+rowId: claude-workbench
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:beckhamwash/dsh-claude-workbench#3ee6fd3a6e0b47a97300ae5d57b8c94a16b62ea2
+  version: 0.2.2
+  commit: 3ee6fd3a6e0b47a97300ae5d57b8c94a16b62ea2
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/beckhamwash/dsh-claude-workbench/3ee6fd3a6e0b47a97300ae5d57b8c94a16b62ea2/preview/light.png
+  - https://raw.githubusercontent.com/beckhamwash/dsh-claude-workbench/3ee6fd3a6e0b47a97300ae5d57b8c94a16b62ea2/preview/panes-2col.png
+  - https://raw.githubusercontent.com/beckhamwash/dsh-claude-workbench/3ee6fd3a6e0b47a97300ae5d57b8c94a16b62ea2/preview/sidechat.png
+  - https://raw.githubusercontent.com/beckhamwash/dsh-claude-workbench/3ee6fd3a6e0b47a97300ae5d57b8c94a16b62ea2/preview/theme-menu.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1553
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/beckhamwash/dsh-claude-workbench/3ee6fd3a6e0b47a97300ae5d57b8c94a16b62ea2/preview/light.png

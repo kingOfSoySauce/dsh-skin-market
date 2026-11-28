@@ -1,0 +1,56 @@
+id: max.null.dsh.node.appearance
+name:
+  zh: 会话节点着色
+  en: Session Node Colouring
+author: Max-Null
+description: 给会话面板里的节点按类别着色：工具调用、联网搜索、文件操作、子智能体、上下文压缩等各有一条可配置的 3px 色条与淡色底，折叠摘要条按类别取色，任意工具名还能单独覆盖颜色。另把「唤醒本轮」通知卡改成带轮次徽标的字段化展示、恢复被官方隐藏的系统提示词卡，并给「加载技能」行剥掉 XML 壳。
+repo: https://github.com/Max-Null/dsh-node-appearance
+package: "@max-null/dsh-node-appearance"
+rowId: node-appearance
+category: skin
+tags:
+  - appearance
+  - session
+  - colour-coding
+  - system-prompt
+  - tool-cards
+modes:
+  - light
+  - dark
+install:
+  target: github:Max-Null/dsh-node-appearance#fa12c360c4128c98fe1de9c84c743cf70769df1d
+  version: 0.11.0
+  commit: fa12c360c4128c98fe1de9c84c743cf70769df1d
+compatibility:
+  dsh: ">=0.1.7-rc.2 <0.3.0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Max-Null/dsh-node-appearance/fa12c360c4128c98fe1de9c84c743cf70769df1d/docs/shots/%E4%BC%9A%E8%AF%9D%E9%9D%A2%E6%9D%BF%E6%88%AA%E5%9B%BE.png
+  - https://raw.githubusercontent.com/Max-Null/dsh-node-appearance/fa12c360c4128c98fe1de9c84c743cf70769df1d/docs/shots/%E8%AE%BE%E7%BD%AE%E5%8D%A1%E7%89%87.png
+  - https://raw.githubusercontent.com/Max-Null/dsh-node-appearance/fa12c360c4128c98fe1de9c84c743cf70769df1d/docs/shots/%E6%8F%90%E9%97%AE%E5%8D%A1%E7%89%87%E6%88%AA%E5%9B%BE.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1573
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/Max-Null/dsh-node-appearance/fa12c360c4128c98fe1de9c84c743cf70769df1d/docs/shots/%E4%BC%9A%E8%AF%9D%E9%9D%A2%E6%9D%BF%E6%88%AA%E5%9B%BE.png

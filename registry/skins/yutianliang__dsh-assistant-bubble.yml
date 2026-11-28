@@ -1,0 +1,54 @@
+id: yutianliang.dsh.assistant.bubble
+name:
+  zh: 助手回复气泡
+  en: Assistant Reply Bubble
+author: yutianliang
+description: 给助手回复补上气泡底：圆角、可调不透明度，可选液态玻璃（白釉高光、模糊与落地阴影），工具条、过程折叠行、思考触发条和会话统计行会跟着用同一份材质。非会话页面（插件、自动化任务、技能中心、上下文洞察）也能单独铺底，系统开启「减少透明度」时自动去掉模糊与白釉。
+repo: https://github.com/yutianliang/dsh-assistant-bubble
+package: dsh-assistant-bubble
+rowId: assistant-bubble
+category: skin
+tags:
+  - bubble
+  - glass
+  - chat-ui
+  - readability
+  - accessibility
+modes:
+  - light
+  - dark
+install:
+  target: github:yutianliang/dsh-assistant-bubble#8f3544bcd2fd5f2cd8f0c381af247f40bbcd2dd5
+  version: 1.3.0
+  commit: 8f3544bcd2fd5f2cd8f0c381af247f40bbcd2dd5
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yutianliang/dsh-assistant-bubble/8f3544bcd2fd5f2cd8f0c381af247f40bbcd2dd5/docs/assets/non-chat-pages.png
+  - https://raw.githubusercontent.com/yutianliang/dsh-assistant-bubble/8f3544bcd2fd5f2cd8f0c381af247f40bbcd2dd5/docs/assets/page-setting.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1594
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:30.957Z
+metadataUpdatedAt: 2026-11-28T08:54:30.957Z
+starsUpdatedAt: 2026-11-28T08:54:30.957Z
+updatedAt: 2026-11-28T08:54:30.957Z
+listScreenshot: https://raw.githubusercontent.com/yutianliang/dsh-assistant-bubble/8f3544bcd2fd5f2cd8f0c381af247f40bbcd2dd5/docs/assets/non-chat-pages.png

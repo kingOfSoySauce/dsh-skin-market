@@ -1,0 +1,54 @@
+id: 595708049.dsh.warm.charcoal.theme
+name:
+  zh: 暖米白 / 深炭灰主题
+  en: Warm Charcoal Theme
+author: "595708049"
+description: "把内置浅色、深色主题的配色分别换成暖米白（画布 #F7F7F2、强调 #397C68）与深炭灰（#1E1E1E、#78B89E），不新增主题入口，设置 → 通用 → 外观里的浅色 / 深色 / 跟随系统照常切换并记住选择；样式走 token 覆盖，卸载即恢复内置外观。"
+repo: https://github.com/595708049/dsh-warm-charcoal-theme
+package: dsh-warm-charcoal-theme
+rowId: warm-charcoal-theme
+category: skin
+tags:
+  - theme
+  - light
+  - dark
+  - palette
+modes:
+  - light
+  - dark
+install:
+  target: github:595708049/dsh-warm-charcoal-theme#f8b9565092eb48a37248254e8f4d47d25c5ffe43
+  version: 1.0.0
+  commit: f8b9565092eb48a37248254e8f4d47d25c5ffe43
+compatibility:
+  dsh: ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/595708049/dsh-warm-charcoal-theme/f8b9565092eb48a37248254e8f4d47d25c5ffe43/assets/screenshots/light.png
+  - https://raw.githubusercontent.com/595708049/dsh-warm-charcoal-theme/f8b9565092eb48a37248254e8f4d47d25c5ffe43/assets/screenshots/dark.png
+  - https://raw.githubusercontent.com/595708049/dsh-warm-charcoal-theme/f8b9565092eb48a37248254e8f4d47d25c5ffe43/assets/screenshots/settings-light.png
+  - https://raw.githubusercontent.com/595708049/dsh-warm-charcoal-theme/f8b9565092eb48a37248254e8f4d47d25c5ffe43/assets/screenshots/settings-dark.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1547
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/595708049/dsh-warm-charcoal-theme/f8b9565092eb48a37248254e8f4d47d25c5ffe43/assets/screenshots/light.png

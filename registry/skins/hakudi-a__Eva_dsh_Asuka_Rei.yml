@@ -1,0 +1,52 @@
+id: hakudi.a.eva.dsh.asuka.rei
+name:
+  zh: EVA 明日香与绫波丽
+  en: "Eva: Asuka & Rei"
+author: hakudi-a
+description: "深色是明日香的石墨 #19191D 配红 #B42943 与绿 #A8CB6B 发送按钮，浅色是绫波丽的瓷白 #F7F9FC 配冷蓝面板；线稿人物立在新会话左侧，对话开始后缩小到右下角，配色随系统的浅色 / 深色 / 跟随设置切换。"
+repo: https://github.com/hakudi-a/Eva_dsh_Asuka_Rei
+package: dsh-theme-asuka
+rowId: dsh-theme-asuka
+category: skin
+tags:
+  - skin
+  - evangelion
+  - asuka
+  - rei
+modes:
+  - light
+  - dark
+install:
+  target: github:hakudi-a/Eva_dsh_Asuka_Rei#8f13154f311a145b895f56a606f36b90193f75d0
+  version: 1.0.0
+  commit: 8f13154f311a145b895f56a606f36b90193f75d0
+compatibility:
+  dsh: ">=0.2.2-rc.1 || 0.2.2-rc.3"
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/hakudi-a/Eva_dsh_Asuka_Rei/8f13154f311a145b895f56a606f36b90193f75d0/assets/screenshot-dark.png
+  - https://raw.githubusercontent.com/hakudi-a/Eva_dsh_Asuka_Rei/8f13154f311a145b895f56a606f36b90193f75d0/assets/screenshot-light.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1560
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/hakudi-a/Eva_dsh_Asuka_Rei/8f13154f311a145b895f56a606f36b90193f75d0/assets/screenshot-dark.png

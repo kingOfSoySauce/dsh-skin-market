@@ -1,0 +1,53 @@
+id: ppy.web.dsh.audio.reactive
+name:
+  zh: 音频响应
+  en: Audio Reactive
+author: ppy-web
+description: 把 audioMotion 频谱铺在对话内容之后、按整个视口居中，随流式朗读、音乐面板、设备声音、听写与麦克风五类声源起伏。设置页内置十余个命名预设与频谱声道、外观色彩调节，支持 JSON 导入导出；沉浸模式按 1–600 秒的触发延时淡入全屏遮罩（默认 15 秒，淡入淡出 360 毫秒），鼠标、按键或停播即淡出。
+repo: https://github.com/ppy-web/dsh-audio-reactive
+package: dsh-audio-reactive
+rowId: audio-reactive
+category: skin
+tags:
+  - audio-reactive
+  - visualizer
+  - audiomotion
+  - background
+modes:
+  - light
+  - dark
+install:
+  target: github:ppy-web/dsh-audio-reactive#6eac226cbad645e0209ae89e52d7766ab3a6beea
+  version: 0.1.5
+  commit: 6eac226cbad645e0209ae89e52d7766ab3a6beea
+compatibility:
+  dsh: 0.2.3-alpha.2 || 0.2.3-alpha.1 || 0.2.2-rc.4
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ppy-web/dsh-audio-reactive/6eac226cbad645e0209ae89e52d7766ab3a6beea/assets/example/example1.webp
+  - https://raw.githubusercontent.com/ppy-web/dsh-audio-reactive/6eac226cbad645e0209ae89e52d7766ab3a6beea/assets/example/example2.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: AGPL-3.0
+  commercialUse: true
+featuredRank: 1579
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/ppy-web/dsh-audio-reactive/6eac226cbad645e0209ae89e52d7766ab3a6beea/assets/example/example1.webp

@@ -1,0 +1,52 @@
+id: ryangallager0323.jpg.dsh.skin.atelier
+name:
+  zh: Atelier 工坊
+  en: Atelier
+author: ryangallager0323-jpg
+description: Atelier 工坊：暖白纸感画布（#faf7f0）配极轻纸纹与暖杏/松绿环境色，正文统一为暖墨色，一二级标题用宋体，焦点环、链接与状态点用深松绿；输入框、对话框与菜单使用接近 iOS Liquid Glass 的毛玻璃（输入框 blur 15px、对话框先柔化整页再铺 46px 玻璃），深色模式改为烟熏玻璃。只做视觉重绘，不改功能；另外锁住整页滚动、让加号菜单打开时不再带动正文。
+repo: https://github.com/ryangallager0323-jpg/dsh-skin-atelier
+package: dsh-skin-atelier
+rowId: skin-atelier
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:ryangallager0323-jpg/dsh-skin-atelier#095149ea1351adb5154e66474b55cfb9288903aa
+  version: 0.2.0
+  commit: 095149ea1351adb5154e66474b55cfb9288903aa
+compatibility:
+  dsh: 0.2.2-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/ryangallager0323-jpg/dsh-skin-atelier/095149ea1351adb5154e66474b55cfb9288903aa/preview/glass-overview.jpg
+  - https://raw.githubusercontent.com/ryangallager0323-jpg/dsh-skin-atelier/095149ea1351adb5154e66474b55cfb9288903aa/preview/glass-input.jpg
+  - https://raw.githubusercontent.com/ryangallager0323-jpg/dsh-skin-atelier/095149ea1351adb5154e66474b55cfb9288903aa/preview/glass-menu.jpg
+  - https://raw.githubusercontent.com/ryangallager0323-jpg/dsh-skin-atelier/095149ea1351adb5154e66474b55cfb9288903aa/preview/glass-dark.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1583
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/ryangallager0323-jpg/dsh-skin-atelier/095149ea1351adb5154e66474b55cfb9288903aa/preview/glass-overview.jpg

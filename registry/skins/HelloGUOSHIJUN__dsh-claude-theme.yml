@@ -1,0 +1,52 @@
+id: helloguoshijun.dsh.claude.theme
+name:
+  zh: Claude 主题
+  en: Claude Theme
+author: HelloGUOSHIJUN
+description: "把界面换成 Claude 的视觉语言：暖白纸感画布 #faf9f5、陶土橙 #c6613f、CDS 圆角 5–18px 与三级投影，全局衬线字体、正文 17px 起；覆盖 268 个设计令牌（亮暗各一套），另做胶囊视图切换、隐藏品牌字标和输入框状态行等组件级改动。"
+repo: https://github.com/HelloGUOSHIJUN/dsh-claude-theme
+package: dsh-theme-claude
+rowId: claude-theme
+category: skin
+tags:
+  - theme
+  - claude
+  - serif
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:HelloGUOSHIJUN/dsh-claude-theme#c2007e1e9b48f0aaa2166f94157d2e1730138d2c
+  version: 1.2.1
+  commit: c2007e1e9b48f0aaa2166f94157d2e1730138d2c
+compatibility:
+  dsh: 0.2.2-rc.5 || >=0.2.2-0
+  platform:
+    - web
+screenshots:
+  - https://github.com/HelloGUOSHIJUN/dsh-claude-theme/raw/main/docs/previews/plugin-page.png
+  - https://github.com/HelloGUOSHIJUN/dsh-claude-theme/raw/main/docs/previews/conversation-page.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1564
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://github.com/HelloGUOSHIJUN/dsh-claude-theme/raw/main/docs/previews/plugin-page.png

@@ -1,0 +1,51 @@
+id: fengshu.ai.dsh.boot
+name:
+  zh: 30 DAYS 启动幕
+  en: 30 DAYS Boot Screen
+author: fengshu-ai
+description: 把《饲养染的 30 DAYS》主菜单搬进启动流程：开机启动幕 → 撕纸侧栏滑入 → 纸化开露出主界面；启动幕走标题字淡入擦除、载入日志与进度条，任意键或点击可跳过。
+repo: https://github.com/fengshu-ai/DSH-boot
+package: "@local/dsh-boot"
+rowId: dsh-boot
+category: splash
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:fengshu-ai/DSH-boot#8c4bce1bc0b7f93c64727fc989363513bcc7f9ad
+  version: 1.1.0
+  commit: 8c4bce1bc0b7f93c64727fc989363513bcc7f9ad
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/fengshu-ai/DSH-boot/8c4bce1bc0b7f93c64727fc989363513bcc7f9ad/docs/preview.jpg
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1557
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/fengshu-ai/DSH-boot/8c4bce1bc0b7f93c64727fc989363513bcc7f9ad/docs/preview.jpg

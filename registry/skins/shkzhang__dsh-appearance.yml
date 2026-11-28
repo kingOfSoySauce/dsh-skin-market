@@ -1,0 +1,55 @@
+id: shkzhang.dsh.appearance
+name:
+  zh: 外观设置
+  en: Appearance Settings
+author: shkzhang
+description: 把主题、字体、字号、会话流密度与液态玻璃收进一个「外观」设置页：浅色 3 套、深色 8 套主题预设，各自从 10 个种子色推导 90 余个界面 token。UI 与代码字体可选本机字体，字号分别为 10–24px、9–24px；液态玻璃只作用于菜单与模态对话框。
+repo: https://github.com/shkzhang/dsh-appearance
+package: "@skzhang/dsh-appearance"
+rowId: appearance
+category: skin
+tags:
+  - appearance
+  - theme-presets
+  - fonts
+  - liquid-glass
+  - settings
+modes:
+  - light
+  - dark
+install:
+  target: github:shkzhang/dsh-appearance#e34d03da2e4b95d65b4cd83cb9a203beafab6192
+  version: 0.1.0
+  commit: e34d03da2e4b95d65b4cd83cb9a203beafab6192
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/shkzhang/dsh-appearance/e34d03da2e4b95d65b4cd83cb9a203beafab6192/assets/settings-themes.png
+  - https://raw.githubusercontent.com/shkzhang/dsh-appearance/e34d03da2e4b95d65b4cd83cb9a203beafab6192/assets/settings-effects.png
+  - https://raw.githubusercontent.com/shkzhang/dsh-appearance/e34d03da2e4b95d65b4cd83cb9a203beafab6192/assets/conversation.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1584
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/shkzhang/dsh-appearance/e34d03da2e4b95d65b4cd83cb9a203beafab6192/assets/settings-themes.png

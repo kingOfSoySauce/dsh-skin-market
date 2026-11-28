@@ -1,0 +1,54 @@
+id: alooshy0827.dsh.skin.claude
+name:
+  zh: Claude 字体皮肤
+  en: Claude Font Skin
+author: Alooshy0827
+description: 米白画布、暖灰侧栏、陶土橙强调色与柔和圆角输入框，正文用 Anthropic Sans、欢迎标题和回答正文用 Anthropic Serif（300–800 字重、含斜体，中文字符回退系统字体）；跟随浅色 / 深色 / 系统外观，共 103 组深浅主题变量，深色是暖炭灰。
+repo: https://github.com/Alooshy0827/dsh-skin-claude
+package: dsh-skin-claude
+rowId: claude-skin
+category: skin
+tags:
+  - theme
+  - claude
+  - fonts
+  - light-dark
+modes:
+  - light
+  - dark
+install:
+  target: github:Alooshy0827/dsh-skin-claude#25e883d6d86b76eaff4b42a0aaeb50e01f73581e
+  version: 0.2.1
+  commit: 25e883d6d86b76eaff4b42a0aaeb50e01f73581e
+compatibility:
+  dsh: 0.2.2-rc.5 || 0.2.1-rc.5
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Alooshy0827/dsh-skin-claude/25e883d6d86b76eaff4b42a0aaeb50e01f73581e/qa/v0.2.0/light-home.jpg
+  - https://raw.githubusercontent.com/Alooshy0827/dsh-skin-claude/25e883d6d86b76eaff4b42a0aaeb50e01f73581e/qa/v0.2.0/dark-home.jpg
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1550
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/Alooshy0827/dsh-skin-claude/25e883d6d86b76eaff4b42a0aaeb50e01f73581e/qa/v0.2.0/light-home.jpg

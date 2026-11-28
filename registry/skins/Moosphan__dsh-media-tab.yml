@@ -1,0 +1,53 @@
+id: moosphan.dsh.media.tab
+name:
+  zh: 本地媒体播放器
+  en: Local Media Player
+author: Moosphan
+description: 在回复下方直接内嵌播放本地视频和音频，也能在右侧栏打开完整播放页，最近播放保留 20 条。点交付卡片或说一句「播一下 /path/a.mp4」即可起播，支持常见 mp4/mkv/webm 与 mp3/flac 等格式，零运行时依赖、不需要 ffmpeg，媒体经本机白名单与签名地址转发，可拖动进度。
+repo: https://github.com/Moosphan/dsh-media-tab
+package: dsh-media-tab
+rowId: dsh-media-tab
+category: player
+tags:
+  - player
+  - video
+  - audio
+  - inline
+  - local-media
+modes:
+  - light
+  - dark
+install:
+  target: github:Moosphan/dsh-media-tab#eccb0e5258e799c8fac82bb8dfd25a803aa13e2b
+  version: 0.1.0
+  commit: eccb0e5258e799c8fac82bb8dfd25a803aa13e2b
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Moosphan/dsh-media-tab/eccb0e5258e799c8fac82bb8dfd25a803aa13e2b/docs/inline-player.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1575
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/Moosphan/dsh-media-tab/eccb0e5258e799c8fac82bb8dfd25a803aa13e2b/docs/inline-player.webp

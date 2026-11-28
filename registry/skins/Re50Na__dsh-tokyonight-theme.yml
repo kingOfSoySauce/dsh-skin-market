@@ -1,0 +1,50 @@
+id: re50na.dsh.tokyonight.theme
+name:
+  zh: Tokyo Night 主题
+  en: Tokyo Night Theme
+author: Re50Na
+description: Tokyo Night 主题，从 Catppuccin for DeepSeek Harness 项目移植：提供 night、storm、mica、glass 等几套配色视图，可与内置明暗外观配合使用。
+repo: https://github.com/Re50Na/dsh-tokyonight-theme
+package: dsh-tokyonight-theme
+rowId: dsh-tokyonight
+category: skin
+tags:
+  - appearance
+modes:
+  - light
+  - dark
+install:
+  target: github:Re50Na/dsh-tokyonight-theme#720fef0132208edd72b4b6f380f11f641744984a
+  version: 0.1.0
+  commit: 720fef0132208edd72b4b6f380f11f641744984a
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Re50Na/dsh-tokyonight-theme/720fef0132208edd72b4b6f380f11f641744984a/view-img/light-view.png
+  - https://raw.githubusercontent.com/Re50Na/dsh-tokyonight-theme/720fef0132208edd72b4b6f380f11f641744984a/view-img/night-view.png
+  - https://raw.githubusercontent.com/Re50Na/dsh-tokyonight-theme/720fef0132208edd72b4b6f380f11f641744984a/view-img/glass-view.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1582
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/Re50Na/dsh-tokyonight-theme/720fef0132208edd72b4b6f380f11f641744984a/view-img/light-view.png

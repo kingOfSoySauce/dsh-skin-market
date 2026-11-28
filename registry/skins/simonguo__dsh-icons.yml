@@ -1,0 +1,51 @@
+id: simonguo.dsh.icons
+name:
+  zh: 文件树图标
+  en: File Tree Icons
+author: simonguo
+description: 把 vscode-icons v13.0.0 的整套本地图标带进原生文件树：1,664 个 SVG，按 1,923 条文件名规则、599 条扩展名规则与 524 条文件夹名规则匹配，文件夹区分展开与收起两种状态。只通过样式覆盖现有文件树行，关闭插件即恢复原生图标，图标全部随包分发、无 CDN 请求。
+repo: https://github.com/simonguo/dsh-icons
+package: dsh-icons
+rowId: dsh-icons
+category: skin
+tags:
+  - icons
+  - file-tree
+  - vscode-icons
+modes:
+  - light
+  - dark
+install:
+  target: github:simonguo/dsh-icons#aca98dbd93353b5644ca690818457c756db9e303
+  version: 1.0.1
+  commit: aca98dbd93353b5644ca690818457c756db9e303
+compatibility:
+  dsh: 0.2.2-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/simonguo/dsh-icons/aca98dbd93353b5644ca690818457c756db9e303/docs/images/native-file-tree.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1587
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/simonguo/dsh-icons/aca98dbd93353b5644ca690818457c756db9e303/docs/images/native-file-tree.webp

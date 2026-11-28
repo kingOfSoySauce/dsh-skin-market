@@ -1,0 +1,51 @@
+id: elegant01.dsh.workbuddy.theme
+name:
+  zh: WorkBuddy 主题
+  en: WorkBuddy Theme
+author: elegant01
+description: "照腾讯 WorkBuddy v5.0.2 安装包逐项量出的浅色主题：薄荷绿品牌色 #00c29a、灰阶侧栏、848 / 1008px 对话栏宽、24px 圆角输入框和无边框助手消息；设置页另带五套 WorkBuddy 皮肤、薄荷绿 / 靛蓝 / 琥珀三档交互色与三档字号密度。"
+repo: https://github.com/elegant01/dsh-workbuddy-theme
+package: dsh-workbuddy-theme
+rowId: dsh-workbuddy-theme
+category: skin
+tags:
+  - theme
+  - light
+  - workbuddy
+  - layout
+modes:
+  - light
+install:
+  target: github:elegant01/dsh-workbuddy-theme#4fb8e50d1d9a9da0443e3f324913e4b866a97172
+  version: 0.9.0
+  commit: 4fb8e50d1d9a9da0443e3f324913e4b866a97172
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/elegant01/dsh-workbuddy-theme/4fb8e50d1d9a9da0443e3f324913e4b866a97172/docs/screenshots/theme.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1556
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/elegant01/dsh-workbuddy-theme/4fb8e50d1d9a9da0443e3f324913e4b866a97172/docs/screenshots/theme.png

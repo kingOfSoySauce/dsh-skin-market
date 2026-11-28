@@ -1,0 +1,57 @@
+id: aurasuisui.dsh.moonset.theme
+name:
+  zh: 月落
+  en: Moonset
+author: aurasuisui
+description: 浅色 / 深色各一套完整主题（各 228 个颜色 token）外加一层薄皮肤：淡紫选中态与文本选区、月晕环境光、按类型分色的工作步骤行、玻璃输入卡与悬浮 header、琥珀色回合导航轨；设置里自带「Moonset 主题」面板，可调地面范围三档、光晕与模糊，选择持久化且首帧不闪。
+repo: https://github.com/aurasuisui/dsh-moonset-theme
+package: "@aurasuisui/dsh-moonset-theme"
+rowId: dsh-moonset
+category: skin
+tags:
+  - theme
+  - light
+  - dark
+  - presets
+modes:
+  - light
+  - dark
+install:
+  target: github:aurasuisui/dsh-moonset-theme#0c064dc327186f0bc17a052059b376f55d118eb5
+  version: 0.1.8
+  commit: 0c064dc327186f0bc17a052059b376f55d118eb5
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/aurasuisui/dsh-moonset-theme/0c064dc327186f0bc17a052059b376f55d118eb5/assets/previews/01-light.png
+  - https://raw.githubusercontent.com/aurasuisui/dsh-moonset-theme/0c064dc327186f0bc17a052059b376f55d118eb5/assets/previews/02-dark.png
+  - https://raw.githubusercontent.com/aurasuisui/dsh-moonset-theme/0c064dc327186f0bc17a052059b376f55d118eb5/assets/previews/03-glass.png
+  - https://raw.githubusercontent.com/aurasuisui/dsh-moonset-theme/0c064dc327186f0bc17a052059b376f55d118eb5/assets/previews/04-steps.png
+  - https://raw.githubusercontent.com/aurasuisui/dsh-moonset-theme/0c064dc327186f0bc17a052059b376f55d118eb5/assets/previews/05-surfaces.png
+  - https://raw.githubusercontent.com/aurasuisui/dsh-moonset-theme/0c064dc327186f0bc17a052059b376f55d118eb5/assets/previews/07-code.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1551
+starsSnapshot: 2
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/aurasuisui/dsh-moonset-theme/0c064dc327186f0bc17a052059b376f55d118eb5/assets/previews/01-light.png

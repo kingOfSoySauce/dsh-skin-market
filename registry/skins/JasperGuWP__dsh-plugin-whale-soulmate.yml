@@ -1,0 +1,60 @@
+id: jasperguwp.dsh.plugin.whale.soulmate
+name:
+  zh: 鲸鱼灵魂伴侣
+  en: Whale Soulmate
+author: JasperGuWP
+description: 模块化 AI 小伙伴：有人设、情绪与关系养成，会按人设自己决定要不要开口、刷 B 站视频并自主评论，长期记忆放进独立可缩放的「星海」星图窗口里。配 7 套透明视频桌宠皮肤，QQ、微信、飞书、钉钉共用同一人设与记忆，私密记忆有五道隐私防线拦住。
+repo: https://github.com/JasperGuWP/dsh-plugin-whale-soulmate
+package: dsh-plugin-whale-soulmate
+rowId: soulmate
+category: pet
+tags:
+  - companion
+  - pet
+  - memory
+  - bilibili
+  - im-bridge
+  - voice
+modes:
+  - light
+  - dark
+install:
+  target: github:JasperGuWP/dsh-plugin-whale-soulmate#3eb63d28a27e3dc3f79fd487e7a9f137d1b8a617
+  version: 0.2.221
+  commit: 3eb63d28a27e3dc3f79fd487e7a9f137d1b8a617
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/JasperGuWP/dsh-plugin-whale-soulmate/3eb63d28a27e3dc3f79fd487e7a9f137d1b8a617/docs/showcase/neuron-sky.gif
+  - https://raw.githubusercontent.com/JasperGuWP/dsh-plugin-whale-soulmate/3eb63d28a27e3dc3f79fd487e7a9f137d1b8a617/docs/showcase/hanfu-dance.gif
+  - https://raw.githubusercontent.com/JasperGuWP/dsh-plugin-whale-soulmate/3eb63d28a27e3dc3f79fd487e7a9f137d1b8a617/docs/showcase/winterboy-ski.gif
+  - https://raw.githubusercontent.com/JasperGuWP/dsh-plugin-whale-soulmate/3eb63d28a27e3dc3f79fd487e7a9f137d1b8a617/docs/readme-banner-v2.png
+  - https://raw.githubusercontent.com/JasperGuWP/dsh-plugin-whale-soulmate/3eb63d28a27e3dc3f79fd487e7a9f137d1b8a617/docs/showcase/dsbot-qq-timeline.png
+  - https://raw.githubusercontent.com/JasperGuWP/dsh-plugin-whale-soulmate/3eb63d28a27e3dc3f79fd487e7a9f137d1b8a617/docs/showcase/intent-experience.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1567
+starsSnapshot: 3
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/JasperGuWP/dsh-plugin-whale-soulmate/3eb63d28a27e3dc3f79fd487e7a9f137d1b8a617/docs/showcase/neuron-sky.gif

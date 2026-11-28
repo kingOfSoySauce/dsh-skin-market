@@ -1,0 +1,53 @@
+id: holoen.gwargura.dsh.bigfish.blur
+name:
+  zh: 大肥鱼窗口模糊
+  en: Big Fish Window Blur
+author: HoloEN-Gwargura
+description: 把整个窗口做成液态玻璃：读取当前桌面壁纸、模糊 46px 后作为画布，侧栏 20%、聊天面板 26% 白玻璃，卡片 40–68%，菜单与弹层 92–97% 加 48px 模糊；容器透、内容实，代码块和文档预览单独加背景模糊，保证正文与菜单可读，开启「减少透明」时自动退回纯色。
+repo: https://github.com/HoloEN-Gwargura/dsh-bigfish-blur
+package: dsh-liquid-glass
+rowId: dsh-liquid-glass
+category: skin
+tags:
+  - skin
+  - liquid-glass
+  - blur
+  - wallpaper
+modes:
+  - light
+  - dark
+install:
+  target: github:HoloEN-Gwargura/dsh-bigfish-blur#609d09951310c7e7b8c7b409bad95674086d2f18
+  version: 1.0.2
+  commit: 609d09951310c7e7b8c7b409bad95674086d2f18
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/HoloEN-Gwargura/dsh-bigfish-blur/609d09951310c7e7b8c7b409bad95674086d2f18/docs/preview-home.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1563
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/HoloEN-Gwargura/dsh-bigfish-blur/609d09951310c7e7b8c7b409bad95674086d2f18/docs/preview-home.png

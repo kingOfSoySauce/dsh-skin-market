@@ -1,0 +1,56 @@
+id: menpengpeng.dsh.music.player
+name:
+  zh: 侧栏迷你播放器
+  en: Sidebar Mini Player
+author: Menpengpeng
+description: 常驻侧边栏底部的迷你播放器：搜歌可切 QQ 音乐、网易云与酷狗，带发现广场、播放队列和与站点网页端双向同步的「我喜欢」，音质分 320k、无损与站点最高三档。音频与登录态都经本机 Host 转发，页面只拿到不透明本地地址，拖动进度条也正常。
+repo: https://github.com/Menpengpeng/dsh-music-player
+package: dsh-music-player
+rowId: music-player
+category: player
+tags:
+  - player
+  - music
+  - sidebar
+  - streaming
+  - favorites
+modes:
+  - light
+  - dark
+install:
+  target: github:Menpengpeng/dsh-music-player#f2a6637c9d5f1617c4cdb9ed93b2f0899fd19be1
+  version: 0.2.1
+  commit: f2a6637c9d5f1617c4cdb9ed93b2f0899fd19be1
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/Menpengpeng/dsh-music-player/f2a6637c9d5f1617c4cdb9ed93b2f0899fd19be1/screenshots/01-search.png
+  - https://raw.githubusercontent.com/Menpengpeng/dsh-music-player/f2a6637c9d5f1617c4cdb9ed93b2f0899fd19be1/screenshots/02-discover.png
+  - https://raw.githubusercontent.com/Menpengpeng/dsh-music-player/f2a6637c9d5f1617c4cdb9ed93b2f0899fd19be1/screenshots/03-playlist.png
+  - https://raw.githubusercontent.com/Menpengpeng/dsh-music-player/f2a6637c9d5f1617c4cdb9ed93b2f0899fd19be1/screenshots/05-favorites.png
+  - https://raw.githubusercontent.com/Menpengpeng/dsh-music-player/f2a6637c9d5f1617c4cdb9ed93b2f0899fd19be1/screenshots/04-login.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: healthy
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions: []
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1574
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/Menpengpeng/dsh-music-player/f2a6637c9d5f1617c4cdb9ed93b2f0899fd19be1/screenshots/01-search.png

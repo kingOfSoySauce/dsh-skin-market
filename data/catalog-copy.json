@@ -18283,6 +18283,906 @@
       },
       "override": true,
       "nameSource": "pinned README + maintainer copy review"
+    },
+    "123pc.dsh.pet": {
+      "name": {
+        "zh": "Claude 大肥鱼",
+        "en": "Claude Bigfish"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "穿 Claude 工牌的蓝发大肥鱼桌宠，站立、托腮两种形态，共 122 段透明动画和 18 条日常动作链；点一点有回应、拖一拖换位置，右键可换装或点播动作。",
+        "en": "A blue-haired big-fish desktop pet wearing a Claude badge, in standing and chin-in-hand forms, with 122 transparent animations and 18 daily action chains; it answers clicks, moves when dragged, and offers outfit changes and action playback from its right-click menu."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "e2f2a2a427b8229762cf658ce15846c1d27b2cf1f6dda1c0e9ad34bf9117d6bd",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "1583477320.dsh.task.pet": {
+      "name": {
+        "zh": "任务完成桌宠提醒",
+        "en": "Task-Done Pet Reminder"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "一轮任务结束（正常完成、报错或中止）时，大肥鱼在窗口右下角和屏幕右下角各弹一张手写风卡片，带开心、难过、歪头三种表情以及用时和两个操作按钮；待机每 3–7 秒随机眨眼，点她抖一下并冒爱心，13 秒自动收起、悬停时不收，屏幕右下角那张仅 Windows。",
+        "en": "When a turn ends — completed, failed or aborted — the big-fish pet pops a handwritten-style card in the window corner and another at the screen corner, with happy, sad and tilted-head faces plus elapsed time and two actions; it blinks every 3–7 seconds, shivers with a heart when tapped, and dismisses itself after 13 seconds unless hovered, with the screen-corner card on Windows only."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "dc409ec1dc62334ee81341db0482bba3f42184bee4ce27dabdb38b149635264c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "595708049.dsh.warm.charcoal.theme": {
+      "name": {
+        "zh": "暖米白 / 深炭灰主题",
+        "en": "Warm Charcoal Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把内置浅色、深色主题的配色分别换成暖米白（画布 #F7F7F2、强调 #397C68）与深炭灰（#1E1E1E、#78B89E），不新增主题入口，设置 → 通用 → 外观里的浅色 / 深色 / 跟随系统照常切换并记住选择；样式走 token 覆盖，卸载即恢复内置外观。",
+        "en": "Repaints the built-in light and dark themes as Warm Beige (canvas #F7F7F2, accent #397C68) and Dark Charcoal (#1E1E1E, accent #78B89E) without adding a new theme entry, so the existing Settings → General → Appearance light/dark/system switch keeps working and remembers the choice; the styling goes through a token override and uninstalling restores the built-in look."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "fa52edd8727e9f48b9a1e68d7bb61565248b3117c147e1255ecbf728a8416cea",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "alooshy0827.dsh.skin.claude": {
+      "name": {
+        "zh": "Claude 字体皮肤",
+        "en": "Claude Font Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "米白画布、暖灰侧栏、陶土橙强调色与柔和圆角输入框，正文用 Anthropic Sans、欢迎标题和回答正文用 Anthropic Serif（300–800 字重、含斜体，中文字符回退系统字体）；跟随浅色 / 深色 / 系统外观，共 103 组深浅主题变量，深色是暖炭灰。",
+        "en": "Paper-white canvas, warm grey sidebar, terracotta accent and a softly rounded composer, with Anthropic Sans for interface text and Anthropic Serif for the welcome title and reply body (weights 300–800 with italics, Chinese characters falling back to system fonts); it follows light, dark or the system appearance across 103 paired light/dark theme variables, with a warm charcoal dark mode."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "9f858658454712b222b3beca359263d597989dcb86992a3457de8d75c80e7880",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "aurasuisui.dsh.moonset.theme": {
+      "name": {
+        "zh": "月落",
+        "en": "Moonset"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "浅色 / 深色各一套完整主题（各 228 个颜色 token）外加一层薄皮肤：淡紫选中态与文本选区、月晕环境光、按类型分色的工作步骤行、玻璃输入卡与悬浮 header、琥珀色回合导航轨；设置里自带「Moonset 主题」面板，可调地面范围三档、光晕与模糊，选择持久化且首帧不闪。",
+        "en": "A full light/dark theme pair — 228 colour tokens each — plus a thin skin layer: lilac selection states, a moon-halo ambient glow, step rows coloured by tool type, a glass composer, a floating header and an amber turn-navigation rail; a Moonset section in Settings exposes ground-scope levels, glow and blur, with the choice persisted and no first-frame flash."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a0b251246fb24e9231ed4f880cfb5a88e9d83a6c5a71ebe38909973ea54836ff",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "beckhamwash.dsh.claude.workbench": {
+      "name": {
+        "zh": "Claude 工作台",
+        "en": "Claude Workbench"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "Claude 风格工作台：暖米白画布配暖石灰与陶土色，正文标题用衬线体 Crimson Pro、界面用 DM Sans（字体已内联，离线可用），浅色、深色与跟随系统三种模式完整适配，另附双栏与侧聊等版面增强。",
+        "en": "A Claude-style workbench: warm off-white canvas with warm stone and clay accents, Crimson Pro for prose and DM Sans for chrome (fonts inlined, so it works offline), with light, dark and system modes plus two-column and side-chat layout extras."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "936f2992128970a9ab73ddd6c53249ae8353bcecd94ea173f04ad25eecf527c2",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "carreyda.dsh.kairosoft.theme": {
+      "name": {
+        "zh": "开罗物语 · 六主题",
+        "en": "Kairosoft Theme Pack"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "六套开罗游戏配色（雪夜温泉、暖屋搬家、王国冒险、夏水乐园、新年百货、雪场缆车）每套 166 条令牌，宣传图作整窗背景、面板半透明浮在画上；右下角灯笼面板可切换主题与浅色 / 深色 / 跟随系统，调不透明度、取景位置和背景开关，也能一键回到内置主题。",
+        "en": "Six Kairosoft palettes — snowy onsen, moving day, kingdom adventure, water park, new-year mall and ski resort — each with 166 tokens, painted behind translucent panels over the original game artwork; a lantern panel in the bottom-right switches themes and light/dark/system, adjusts panel and sidebar opacity, background framing and visibility, or returns to the built-in theme."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a22bfeff2ba6b909f9ff7c6baaaf2d282ed0162ade1a6e0ebc5beb4125ad0ad8",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "cherryxxh.dsh.one.dark.pro.theme": {
+      "name": {
+        "zh": "One Dark Pro 主题",
+        "en": "One Dark Pro Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "按 VS Code 扩展 material-theme 3.20.3 取色的 One Dark Pro 配色，覆盖背景、文字、边框、按钮、状态色、滚动条与 Markdown 代码块；只在深色外观生效，在设置→通用→主题切换「One Dark Pro / 原生」，选择会记住。",
+        "en": "One Dark Pro colors sampled 1:1 from the VS Code material-theme 3.20.3: background, text, borders, buttons, status colors, scrollbars and Markdown code blocks. It applies only to the dark appearance and is toggled in Settings → General → Theme, with the choice remembered across restarts."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "66801aea6da523a688548229b8d0623ae5cfa7af5e81d3a9e7f896a7e0e92e02",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "colin.hymn.dsh.plugin.night.owl": {
+      "name": {
+        "zh": "Night Owl 主题",
+        "en": "Night Owl Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 Sarah Drasner 的 Night Owl 深蓝配色叠到界面上：深色模式换成 #011627 底色、#d6deeb 正文、#82aaff 强调色，共覆盖 127 个 token（含整套语法高亮）；浅色模式保持原样，不新增主题入口，卸载即恢复。",
+        "en": "Lays Sarah Drasner's Night Owl palette over the interface: the dark theme gets a #011627 background, #d6deeb text and #82aaff accent across 127 overridden tokens, including full syntax highlighting, while the light theme stays untouched; uninstalling restores the defaults."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "02f9023b854f0b8a4c7dabece03d5baf838b5c066c9b3f05e4afdc3aff4a5fa2",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "elegant01.dsh.workbuddy.theme": {
+      "name": {
+        "zh": "WorkBuddy 主题",
+        "en": "WorkBuddy Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "照腾讯 WorkBuddy v5.0.2 安装包逐项量出的浅色主题：薄荷绿品牌色 #00c29a、灰阶侧栏、848 / 1008px 对话栏宽、24px 圆角输入框和无边框助手消息；设置页另带五套 WorkBuddy 皮肤、薄荷绿 / 靛蓝 / 琥珀三档交互色与三档字号密度。",
+        "en": "A light-only theme measured item by item from Tencent WorkBuddy v5.0.2: mint brand colour #00c29a, grey-scale sidebar, an 848/1008px conversation column, 24px composer radius and frameless assistant messages; its settings page adds five WorkBuddy skins, three accent choices (mint, indigo, amber) and three text-density steps."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "fb5cf2cdd3897524907b54e79fd7a13fab6498d77a1a36dce48d5190b7bd27d0",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "fengshu.ai.dsh.boot": {
+      "name": {
+        "zh": "30 DAYS 启动幕",
+        "en": "30 DAYS Boot Screen"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把《饲养染的 30 DAYS》主菜单搬进启动流程：开机启动幕 → 撕纸侧栏滑入 → 纸化开露出主界面；启动幕走标题字淡入擦除、载入日志与进度条，任意键或点击可跳过。",
+        "en": "Ports the 30 DAYS main menu into the launch flow: a boot screen, a torn-paper sidebar sliding in, then the paper peeling away to reveal the interface; the boot screen fades and wipes the title, runs a load log and progress bar, and any key or click skips it."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "0aa5cb7fad9f212350d44774ec2e7d49f493bfef98c24d8670cf1c2926fc7fa1",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ferrarilewis.dsopen": {
+      "name": {
+        "zh": "附魔台",
+        "en": "Lewis Enchantment"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把启动做成游戏式开场：9 段内置视频（「启」「数字生命」「朋克」「鲸鱼娘」「DeepSeek」等）和 9 张片尾标题屏，播放中按键或点击先跳标题屏、再进入界面；也能上传自己的视频和封面（视频单文件 ≤200 MB、图片 ≤20 MB），视频与标题屏可分别开关，另有声音、随机播放与启动检查更新。",
+        "en": "Turns startup into a game-style opening: nine built-in videos ('Beginning', 'Digital Life', 'Punk', 'Whale Girl', 'DeepSeek' and more) plus nine end title screens, where a keypress or click skips to the title screen and then into the app; custom videos and covers can be uploaded (200 MB per video, 20 MB per image), video and title screen toggle independently, and sound, random playback and startup update checks are included."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "6e80bb4186d7ca1fe73b014f536ed99ce0f1ee65a2c291e09c0fe0662bdd3bc4",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "frostming.dsh.hongguo": {
+      "name": {
+        "zh": "摸鱼短剧",
+        "en": "Drama Break"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "右侧边栏的短剧播放器：推荐与搜索剧集、选集按 50 集分段、0.5–2× 倍速、画中画和滚轮调音量；Agent 运行时在输入框上方列出三部可直接点开的剧，任务结束自动暂停，把播放交给浏览器播放页后切换对话也不会中断。",
+        "en": "A short-drama player for the right sidebar: browsable and searchable series, 50-episode selectors, 0.5–2× speed, picture-in-picture and wheel volume; while the Agent is working it suggests three one-click dramas above the composer, pauses playback when the turn ends, and can hand playback to a browser page that survives conversation switches."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "e9147c99d9ed52eaefc6abdf19d679bbb701361a11a46ec1db40b06c2b391244",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "gulagala001.oh.my.agents.above.all": {
+      "name": {
+        "zh": "Oh My Agents Above All",
+        "en": "Oh My Agents Above All"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "五个预设把 Codex、Grok Build、Cursor、Pi 与 ZCode 的工作方式搬进会话：连续写代码与暂存 / 撤回、先计划再执行与消息队列、读 .cursor/rules 的 Ask/Plan、逐条插话与分支切换、可保存复用的工作流；模型、工具与密钥沿用已配置好的那套，每个会话的主题可跟随预设或换成别的预设。",
+        "en": "Five presets bring the working styles of Codex, Grok Build, Cursor, Pi and ZCode into a session: continuous coding with staging and reverting, plan-first execution with a message queue, Ask/Plan modes that read .cursor/rules, per-step interjections with branch switching, and reusable saved workflows; the configured models, tools and keys are reused, and each session's theme can follow its preset or a different one."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "180451e8948c93aed711dfaa64d11e1862d40489ef834b7f7b18785ee1b114c7",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "haixiao.ll.dsh.pet.mind": {
+      "name": {
+        "zh": "大肥鱼心智桌宠",
+        "en": "Bigfish Mind Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "蓝色大肥鱼桌宠加一层心智：右肩外侧环显示上下文用量（数据更新亮 10 秒、悬停常显），到阈值把最近对话抽成 Markdown 存进本地工作 / 陪伴记忆并注入新会话；进入新页面 30 秒后本地 OCR 截一帧转成文字，交给你的文本模型总结成一句专注建议，每天最多 6 条、不录屏不操作，桌面感知与 OCR 仅 Windows。",
+        "en": "A blue big-fish desktop pet with a mind layer: a ring at its right shoulder shows context usage (lit for 10 seconds on update, always visible on hover), and past a threshold the recent conversation is extracted into local work/companion Markdown memory that is injected into new sessions; 30 seconds after entering a new page, local OCR turns one screen frame into text for a one-line focus suggestion from your configured text model, at most six a day, with no screen recording and no actions taken, and desktop sensing plus OCR are Windows-only."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "ad3d6af668272311fd8e85bfd62e36f513db43d2def008eb733f1851bcedd91c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "hakudi.a.eva.dsh.asuka.rei": {
+      "name": {
+        "zh": "EVA 明日香与绫波丽",
+        "en": "Eva: Asuka & Rei"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "深色是明日香的石墨 #19191D 配红 #B42943 与绿 #A8CB6B 发送按钮，浅色是绫波丽的瓷白 #F7F9FC 配冷蓝面板；线稿人物立在新会话左侧，对话开始后缩小到右下角，配色随系统的浅色 / 深色 / 跟随设置切换。",
+        "en": "Dark mode paints Asuka's graphite #19191D with a red #B42943 new-session button and a green #A8CB6B send button, light mode is Rei's porcelain #F7F9FC with cold blue panels; the line-art figure stands at the left edge of a new session and shrinks to the bottom-right corner once the conversation starts, switched by the usual light/dark/system appearance setting."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "010ba86eb6768819d835cd20b4b51f71c633ae7be8fe6f6054c140ed8e45dc20",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "helloguoshijun.dsh.claude.theme": {
+      "name": {
+        "zh": "Claude 主题",
+        "en": "Claude Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把界面换成 Claude 的视觉语言：暖白纸感画布 #faf9f5、陶土橙 #c6613f、CDS 圆角 5–18px 与三级投影，全局衬线字体、正文 17px 起；覆盖 268 个设计令牌（亮暗各一套），另做胶囊视图切换、隐藏品牌字标和输入框状态行等组件级改动。",
+        "en": "Repaints the interface in Claude's visual language: warm paper canvas #faf9f5, clay accent #c6613f, CDS radii from 5 to 18px and three elevation steps, with a global serif typeface and 17px body text; 268 design tokens are overridden for light and dark, plus component-level changes such as pill view tabs, a hidden brand row and a hidden composer status line."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "9c220442f49a89dc99a24f4565ae912b10c4c116d6153d01db8ff1e3a2a3c809",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "holoen.gwargura.dsh.bigfish.blur": {
+      "name": {
+        "zh": "大肥鱼窗口模糊",
+        "en": "Big Fish Window Blur"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把整个窗口做成液态玻璃：读取当前桌面壁纸、模糊 46px 后作为画布，侧栏 20%、聊天面板 26% 白玻璃，卡片 40–68%，菜单与弹层 92–97% 加 48px 模糊；容器透、内容实，代码块和文档预览单独加背景模糊，保证正文与菜单可读，开启「减少透明」时自动退回纯色。",
+        "en": "Turns the whole window into liquid glass: the current desktop wallpaper is blurred by 46px into the canvas, the sidebar and chat panel use 20%/26% white glass, cards 40–68%, and menus and popovers 92–97% with 48px blur; containers stay airy while content stays readable, code blocks and document previews get their own backdrop blur, and a solid fallback takes over when reduced transparency is on."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "3f1b2b1d26f0e898e51172c3c12c5628a74f1ca2832007bf3c3bc8db69ff1c7d",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "iroha1145.modern.ui": {
+      "name": {
+        "zh": "DSH 现代界面",
+        "en": "DSH Modern UI"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "重做对话页的界面与交互：思考过程按分析/搜索/编辑分组折叠，右侧问答时间轴可悬停预览并跳转轮次，工具调用与代码改动各有独立卡片，改动能在侧栏左右对照查看。内置 8 种界面语言和浅色/深色/跟随系统主题，回答可渲染成数字卡片、图表、流程图、闪卡与带滑块的计算器等交互组件。",
+        "en": "Rebuilds the conversation surface: reasoning is grouped into steps and folds away, a turn timeline on the right previews each turn on hover and jumps to it on click, and tool calls and code changes get their own rows, with side-by-side diffs opening in the side panel. Eight interface languages, light/dark/system themes, and answers can render as number cards, charts, flow diagrams, flashcards or slider calculators."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "cbf3dd0f12eb6784787701b24ff9eb0c86d05d60e35b372dd6bc8f5956e5ec71",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jacobyixi.dsh.whale.ball": {
+      "name": {
+        "zh": "鲸尾悬浮球",
+        "en": "Whale-tail Ball"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "挂在 Windows 桌面上的鲸尾悬浮球：点一下展开嵌在球里的 WebView2 面板，接着当前会话聊天，拖到屏幕边缘会半隐、悬停可看余额。8 套皮肤都有浅色/深色两套配色，布纹用 CSS 经纬线画成、缩放到任何 DPI 都不糊，还支持自定义底色与强调色、跟随系统/浅色/深色三档切换。",
+        "en": "A whale-tail ball that floats on the Windows desktop: click it to open an embedded WebView2 panel onto the session you are already in, drag it to a screen edge to leave it half hidden, and hover for the balance card. Eight skins each carry light and dark palettes with the weave drawn in CSS rather than a bitmap, so it stays sharp at any DPI; custom base and accent colours plus a follow-system/light/dark lock are included."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "50f886e5fbf55612c0565df4ffa8e1df9241fc1914d75df6c02c1e3166a2fd5f",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jasperguwp.dsh.plugin.whale.soulmate": {
+      "name": {
+        "zh": "鲸鱼灵魂伴侣",
+        "en": "Whale Soulmate"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "模块化 AI 小伙伴：有人设、情绪与关系养成，会按人设自己决定要不要开口、刷 B 站视频并自主评论，长期记忆放进独立可缩放的「星海」星图窗口里。配 7 套透明视频桌宠皮肤，QQ、微信、飞书、钉钉共用同一人设与记忆，私密记忆有五道隐私防线拦住。",
+        "en": "A modular AI companion with persona, mood and relationship growth: she decides on her own whether to speak, surfs Bilibili and may comment there, and keeps long-term memories in a separate zoomable star-sea window. Seven transparent video pet skins ship with her, and one persona and memory follow you across QQ, WeChat, Feishu and DingTalk, with five privacy layers around private memories."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "220e2dbd1747dfa802e06234caaf6186540e52cd34860563016bfcab82ff5d00",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "jianghuifr.dsh.material.icon.theme": {
+      "name": {
+        "zh": "Material 图标主题",
+        "en": "Material Icon Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 Material Icon Theme 的文件与文件夹图标铺到右侧文件树，并可选覆盖左侧工作区标题、输入框工作区 chip 和文档预览 tab；额外工作区图标默认开启，关掉后只留文件树图标。",
+        "en": "Paints Material Icon Theme file and folder icons onto the Files tree, with an optional layer for workspace headers, the composer workspace chip and document preview tabs. The extra workspace icons are on by default; switching them off leaves the file tree as the only place with icons."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a382c508c59b358d39b34230cefe33f3073776bf58c041cb3ac96527aeb2006b",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "kiligzzz.dsh.ui.appearance": {
+      "name": {
+        "zh": "个性化外观",
+        "en": "Appearance Customizer"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "6 个颜色角色（主色、背景、面板、输入框、文字、边框）可逐个取色或填 HEX，壁纸可上传图片/视频或粘贴直链，面板不透明度与毛玻璃强度、输入框和代码块各自的不透明度分开调。内置默认、午夜、海洋、森林、玫瑰、单色六套预设，配色能导出成 JSON 再导入。",
+        "en": "Six colour roles (accent, background, panel, input, text, border) are editable by picker or HEX, wallpapers can be images or videos uploaded or loaded from a pasted URL, and panel opacity plus glass blur have their own sliders with independent opacity knobs for the composer and code blocks. Six presets — Default, Midnight, Ocean, Forest, Rose and Monochrome — apply in one click, and the palette exports to and imports from JSON."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "fccd35b319c6301a57bbd80585627a742196c7eb28edb52c054a6f4cb8d4a5bc",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "lehua.art.dsh.folia": {
+      "name": {
+        "zh": "DSH 壁纸引擎",
+        "en": "DSH Wallpaper Engine"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把本机 Wallpaper Engine 的 Scene、Web 与视频壁纸带进对话界面，配液态玻璃、字体调节、10 只内置吉祥物与可导入导出的整份配置预设；壁纸支持播放列表轮播和速度、翻转、构图等播放控制。不向 agent 注册工具、不注入提示文本，不增加模型 token 开销。",
+        "en": "Brings local Wallpaper Engine Scene, Web and video wallpapers into the chat interface, with liquid glass, typography controls, ten built-in mascot artworks and whole-configuration presets that import and export as JSON; playlists rotate wallpapers with speed, flip and framing controls. It registers no agent tools and injects no prompt text, so it adds no model token overhead."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "1aba1594ca632a200ab2b51d9d8a25b330d51180610932b09b9b61fe92f7081d",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "lidaiyue.dsh.eye.theme": {
+      "name": {
+        "zh": "护眼深色主题",
+        "en": "Eye-Comfort Dark Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "护眼深色主题：把内置深色底的冷蓝偏色（#151517，正文对比度约 17.5:1）换成更柔和的松烟，侧栏与会话同色、去掉侧栏那条更暗的黑带；界面字重可选 400/430（Codex 粗细）/450/500，聊天行高可选默认、紧凑（−4px）、更紧（−6px）。浅色主题与全部状态色（成功/警告/危险）保持原样；样式走宿主 theme.overrideTokens，卸载即恢复内置外观。",
+        "en": "An eye-comfort dark theme that replaces the built-in cool-blue dark background (#151517, body contrast around 17.5:1) with a softer pine-smoke tone, unifies the sidebar with the conversation and removes the darker sidebar band. Interface font weight can be 400, 430 (the Codex weight), 450 or 500, and chat line height default, tight (−4 px) or tighter (−6 px). Light mode and every status colour (success/warning/danger) stay exactly as shipped; styling goes through the host theme.overrideTokens, so uninstalling restores the built-in look."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "5b62d70f9e6bea846533982fc976ea15368584aeb8adebbbf3963216f95a0c27",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "loguai.dsh.pet.ds": {
+      "name": {
+        "zh": "好感度鲸鱼娘",
+        "en": "Affinity Whale Girl"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "逐帧动画桌宠，常驻一个透明置顶小窗：可拖动、5 档缩放，站立、坐下、睡觉、惊醒、吃白饭、三段式玩游戏与四种触摸互动各有动作。她会跟着会话进入深度思考（300 秒上限自动收回）、播报 DeepSeek 余额，另有 36 组 96 条按好感度解锁的语音台词和心情存档。",
+        "en": "A frame-by-frame animated pet in a transparent always-on-top window: drag it around, scale it through five steps, and watch it stand, sit, doze off, wake with a start, eat rice, play a three-part game or react to four touch interactions. It follows the session into deep thinking (pulling back after a 300-second cap), announces the DeepSeek balance, and offers 36 groups of 96 voice lines unlocked by affinity, with mood saved across upgrades."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "b9560a27a106bd3d0cec5e78a9244200ed7a3def4ae180c8c96c34347bf9f390",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "lukeayin.dsh.whalebook": {
+      "name": {
+        "zh": "鲸事本",
+        "en": "Whalebook"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "住在界面里的桌宠「小鲸记」：点一下就在旁边弹出待办清单，能记一条、勾完成、行内改正文与到期时间，到期越近提醒越密（7 天内从每 24 小时逐级加密到每 5 分钟）。另有百余个透明动画、屏幕漫游、点击 Q 弹与甩抛反弹、余额/工作状态联动，还能开成桌面透明小窗、支持多开与自定义宠物种类。",
+        "en": "A desktop pet with a todo list: click it to open the list beside it, add an item, tick it off or edit the text and due date inline, and reminders get denser as the deadline approaches — every 24 hours within seven days, down to every 5 minutes. It also has a hundred-plus transparent animations, screen wandering, squash-and-stretch clicks, throw-and-bounce dragging, balance and work-status reactions, an optional transparent desktop window and multiple pets on screen."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "f1e9c4388256a699c0cc7defbfbe438456d7ea87fb628812006ab7c099aa1c4c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "max.null.dsh.node.appearance": {
+      "name": {
+        "zh": "会话节点着色",
+        "en": "Session Node Colouring"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "给会话面板里的节点按类别着色：工具调用、联网搜索、文件操作、子智能体、上下文压缩等各有一条可配置的 3px 色条与淡色底，折叠摘要条按类别取色，任意工具名还能单独覆盖颜色。另把「唤醒本轮」通知卡改成带轮次徽标的字段化展示、恢复被官方隐藏的系统提示词卡，并给「加载技能」行剥掉 XML 壳。",
+        "en": "Colors conversation nodes by category: tool calls, web search, file operations, subagents and context compaction each get a configurable 3 px rail and tint, folded summary bars take the category colour, and any tool name can override its own colour. It also turns the turn-trigger notice into a fielded card with a round badge, restores the system-prompt card the host stopped rendering, and strips the XML shell from the skill row."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "0748c6c2973473fd8d20545d6e56d86e16889d8c65778203a5e5aca6ee9a0c32",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "menpengpeng.dsh.music.player": {
+      "name": {
+        "zh": "侧栏迷你播放器",
+        "en": "Sidebar Mini Player"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "常驻侧边栏底部的迷你播放器：搜歌可切 QQ 音乐、网易云与酷狗，带发现广场、播放队列和与站点网页端双向同步的「我喜欢」，音质分 320k、无损与站点最高三档。音频与登录态都经本机 Host 转发，页面只拿到不透明本地地址，拖动进度条也正常。",
+        "en": "A mini player docked at the sidebar foot: search across QQ Music, NetEase Cloud Music and Kugou, browse a Discover page of charts and playlists, queue tracks, and heart songs into the site's own favourites, which stay in sync with its web player. Quality switches between 320k, lossless and the site maximum, and login plus audio stay behind a local host route so the page only ever sees an opaque local URL."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "534847c89019f58691791c66643b45d2607bcfdd1b669a9ac9f3d835886b2163",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "moosphan.dsh.media.tab": {
+      "name": {
+        "zh": "本地媒体播放器",
+        "en": "Local Media Player"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在回复下方直接内嵌播放本地视频和音频，也能在右侧栏打开完整播放页，最近播放保留 20 条。点交付卡片或说一句「播一下 /path/a.mp4」即可起播，支持常见 mp4/mkv/webm 与 mp3/flac 等格式，零运行时依赖、不需要 ffmpeg，媒体经本机白名单与签名地址转发，可拖动进度。",
+        "en": "Plays local video and audio inline under the reply, with a full player in the right sidebar and a list of the last 20 played files. Media starts from a delivery card or from saying “play /path/a.mp4”, covers common formats such as mp4, mkv, webm, mp3 and flac, and needs no ffmpeg or runtime dependencies; playback is served from a local whitelist through signed URLs, so seeking works."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "012db9b00b5a1b8bcd4514df7e46c36dc67c61f464410e7233bca3264aa1eb29",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "nzlov.dsh.bing.wallpaper": {
+      "name": {
+        "zh": "Bing 每日壁纸",
+        "en": "Bing Daily Wallpaper"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "每天从 Bing 取一张壁纸铺作界面背景，并从图片提取主题色：提供 M3 Content、Rainbow、Vibrant 等十种取色风格，壁纸可见度 10%–100% 线性可调，另有模糊、毛玻璃、蓝色调、黑白与压暗滤镜。可在国内/国际 Bing 来源间切换、选 1080p/2K/4K，还能开 WebGL2 雨雪云雾天气窗景和选装 3D 深度视差。",
+        "en": "Pulls a daily Bing photo as the interface background and derives theme colours from it, with ten colour styles from M3 Content and Rainbow to Vibrant and Muted, visibility adjustable from 10% to 100%, and blur, frosted-glass, blue, grayscale and dim filters. It switches between China and international Bing sources at 1080p, 2K or 4K, and can add WebGL2 weather scenes — rain, snow, fog, lightning — plus an optional 3D depth parallax."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "fee5ebad5d124d0094430675f8a2b0e72fbfd23903465f8268776ce1e47e74a4",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ob.labs.dsh.pet": {
+      "name": {
+        "zh": "记忆桌宠",
+        "en": "Memory Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "会聊天、会动、能按人设与语音回应的桌宠，既能当插件跑在界面里，也能在 Windows、macOS、Linux 上独立运行。核心差异是可选的 PowerContext + seekdb 本机长期记忆：把事实与偏好抽出来存进本地记忆库，清空近期聊天后仍能召回，聊天模型与记忆模型分开配置。",
+        "en": "A desktop pet that chats, animates and speaks in character, running either as a plugin or standalone on Windows, macOS and Linux. Its difference is optional PowerContext + seekdb long-term memory: facts and preferences are extracted into a local memory store and can still be recalled after recent chat is cleared, with chat and memory models configured separately."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "54b2ce60a253d06bfc94e8774a359cff00e91d67db01444cca6d8ff3ee1c3c21",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "paomoxml.dsh.theme.ink": {
+      "name": {
+        "zh": "INK",
+        "en": "INK"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "原生优先的主题：保留全部原生组件与控件，只改主题 token 层——六套调色板（host、Claude 亮色/暗色、巧克力薄荷、Vue、薄荷）、原生/紧凑两档工作区密度、方角/圆角与 ASCII 字形开关，还可隐藏左上角 logo。全部选项集中在「设置 → 通用设置」的一行里。",
+        "en": "A native-first theme that keeps every native component and control and only changes the theme token layer: six palettes (host, Claude light, Claude dark, chocomint, vue, mint), native or compact workspace density, square or rounded corners, ASCII glyph markers and an optional hidden logo. All five settings live in one row under Settings → General."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "259fe6fcc3e3d31248bc3adc16d514670c5bcd7476d07e33b198393293094f93",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ppy.web.dsh.audio.reactive": {
+      "name": {
+        "zh": "音频响应",
+        "en": "Audio Reactive"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 audioMotion 频谱铺在对话内容之后、按整个视口居中，随流式朗读、音乐面板、设备声音、听写与麦克风五类声源起伏。设置页内置十余个命名预设与频谱声道、外观色彩调节，支持 JSON 导入导出；沉浸模式按 1–600 秒的触发延时淡入全屏遮罩（默认 15 秒，淡入淡出 360 毫秒），鼠标、按键或停播即淡出。",
+        "en": "Lays an audioMotion spectrum behind the conversation, centred across the viewport and driven by read-aloud audio, the music panel, device sound, dictation or the microphone. The settings page ships more than ten named presets plus channel and colour controls with JSON import and export, and an immersive mode fades in a full-screen overlay after a 1–600 s trigger delay (15 s by default, 360 ms fade), fading out on mouse, key or playback activity."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "6ac5d4c4b18f51d66971b1610d5f98e4fc274e15e1ddfcf7be2bc8b9f298ae8e",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "qiyuelianfeng.dsh.silverwolf.theme": {
+      "name": {
+        "zh": "银狼LV.999 主题",
+        "en": "Silver Wolf LV.999 Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "银白赛博渐变加毛玻璃的主题，侧边栏能直接改银狼 LV.999 的人格设定，改完立即对之后每一轮对话生效；内置 11 张表情包，整页背景图可开关、选起点、自动轮换或上传自定义。长期记忆与世界书分别存在 $DSH_HOME 下的 JSON 文件，主题样式随插件卸载还原。",
+        "en": "A silver-white cyber gradient with frosted glass that also lets you rewrite the Silver Wolf LV.999 persona from the sidebar, taking effect from the next turn onward; it bundles 11 stickers and a full-page background manager with enable, start-point, auto-rotate and custom upload. Long-term memory and the worldbook each live in their own JSON file under $DSH_HOME, and the theme styles revert when the plugin is removed."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "1ab5a0bae3abeb1c3569fe726d7ff97f54ae90798cd3bf3483a70308936f9b24",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "re50na.dsh.tokyonight.theme": {
+      "name": {
+        "zh": "Tokyo Night 主题",
+        "en": "Tokyo Night Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "Tokyo Night 主题，从 Catppuccin for DeepSeek Harness 项目移植：提供 night、storm、mica、glass 等几套配色视图，可与内置明暗外观配合使用。",
+        "en": "A Tokyo Night port derived from the Catppuccin project for the same host: it ships several palette views (night, storm, mica, glass) that work alongside the built-in light and dark appearance."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "bcd742da6b953b8a26d93fd259f390f3cc80320111d11fc8f8f700c1fff55f9c",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "ryangallager0323.jpg.dsh.skin.atelier": {
+      "name": {
+        "zh": "Atelier 工坊",
+        "en": "Atelier"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "Atelier 工坊：暖白纸感画布（#faf7f0）配极轻纸纹与暖杏/松绿环境色，正文统一为暖墨色，一二级标题用宋体，焦点环、链接与状态点用深松绿；输入框、对话框与菜单使用接近 iOS Liquid Glass 的毛玻璃（输入框 blur 15px、对话框先柔化整页再铺 46px 玻璃），深色模式改为烟熏玻璃。只做视觉重绘，不改功能；另外锁住整页滚动、让加号菜单打开时不再带动正文。",
+        "en": "Atelier: a warm paper canvas (#faf7f0) with very light paper grain and warm apricot/pine ambient tints, body text in warm ink, Songti headings, and deep pine-green focus rings, links and status dots. The input box, dialogs and menus use liquid-glass surfaces close to iOS (15 px blur on the input; the dialog softens the page then lays 46 px glass over it), with a smoked-glass dark mode. Purely visual — no feature changes — and it also locks page scrolling and stops the plus menu from dragging the conversation behind it."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "6e0408f72822eb6da5eb909c7f46da085d36f4adc7e81b0399e8b63d5884e2d9",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "shilaoban666.dsh.imperial.court": {
+      "name": {
+        "zh": "三省六部",
+        "en": "Imperial Senate"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把本机装着的 Claude Code、Codex、WorkBuddy 与 DSH 本体按唐朝官制排成朝堂：中书省拟方案、门下省换一家工具封驳、六部按依赖并行办差，复核通过后由你批红合并，全程在隔离的 git 分支里进行。丞相府能把一摞事拆单排队派发，卡死或超支由锦衣卫停朝；另有「一人公司」现代职位皮肤可换。",
+        "en": "Turns the locally installed Claude Code, Codex, WorkBuddy and DSH into a Roman Senate: one tool drafts, another reviews and can veto, magistrates work in parallel by dependency, and you seal the merge after the audit — all on an isolated git branch. A chancellery office splits a pile of requests into a queue and dispatches them, a watchdog halts stuck or over-budget work, and a modern one-person-company skin swaps the court titles for roles such as CEO."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "a8aad7c9f827c192f18c69e1124b03d4c0bd5f99098fc31ccc1214f9da3c6d66",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "shkzhang.dsh.appearance": {
+      "name": {
+        "zh": "外观设置",
+        "en": "Appearance Settings"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把主题、字体、字号、会话流密度与液态玻璃收进一个「外观」设置页：浅色 3 套、深色 8 套主题预设，各自从 10 个种子色推导 90 余个界面 token。UI 与代码字体可选本机字体，字号分别为 10–24px、9–24px；液态玻璃只作用于菜单与模态对话框。",
+        "en": "Collects themes, fonts, type sizes, conversation density and liquid glass on one Appearance settings page: 3 light and 8 dark presets, each deriving more than 90 interface tokens from 10 seed colours. UI and code fonts can be any installed family, at 10–24 px and 9–24 px respectively, and the liquid glass is limited to menus and modal dialogs."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "cd4f90b293905a16c353ad867fee4f393ec02c52e7d4cea2af96819027a3ceaf",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "simonguo.dsh.icons": {
+      "name": {
+        "zh": "文件树图标",
+        "en": "File Tree Icons"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把 vscode-icons v13.0.0 的整套本地图标带进原生文件树：1,664 个 SVG，按 1,923 条文件名规则、599 条扩展名规则与 524 条文件夹名规则匹配，文件夹区分展开与收起两种状态。只通过样式覆盖现有文件树行，关闭插件即恢复原生图标，图标全部随包分发、无 CDN 请求。",
+        "en": "Brings the complete local vscode-icons v13.0.0 set into the native file tree: 1,664 SVGs matched by 1,923 filename rules, 599 extension rules and 524 folder-name rules, with separate expanded and collapsed folder states. It only restyles existing tree rows, restores native icons when disabled, and ships every icon with the plugin — no CDN requests."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "881111991d860c277cd9bb27bb2b070e827d2a0aade307ddf49b4d070f515ba7",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "supershen0916.dsh.work.skin": {
+      "name": {
+        "zh": "一键换肤",
+        "en": "One-Click Skins"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "内置 13 套高清壁纸，每套都配好整组界面颜色，窗口变宽时露出更多背景、缩窄时重新取景，消息区的半透明底色让长对话和代码保持可读。也能上传自己的照片并选一套配色，设置存在同一桌面用户配置里，重启后沿用上次选择。",
+        "en": "Ships 13 HD wallpapers, each paired with a full set of interface colours; widening the window reveals more of the background and narrowing reframes it, while a translucent message area keeps long chats and code readable. You can also upload your own photo and pick a palette, and the last choice is restored after a restart."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "97eba1912814cc20c678aafa78fd95496d7342d2290c3d4e29550009c1f76453",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "theembers.dsh.workspace.icons": {
+      "name": {
+        "zh": "工作区与会话图标",
+        "en": "Workspace & Session Icons"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "在「重命名工作区」弹窗里直接给工作区选图标，并为本地发起的会话设置默认图标；会话行比工作区多缩进一级、从工作区图标垂下一条引导线，把侧栏画成清晰的两级结构。内置 73 个 Lucide 图标，可上传 SVG（≤64KB），也能关联 Iconify 图标库（官方目录 276 个库）后按库搜索选用。",
+        "en": "Pick an icon for a workspace inside the existing Rename workspace dialog and give local sessions a default icon; session rows sit one indent level deeper with a vertical guide line under the workspace icon, making the sidebar read as two levels. It includes 73 Lucide icons, accepts custom SVG uploads up to 64 KB, and links Iconify collections (the official catalogue lists 276 libraries) for searchable icon picking."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "e88f5ea4c021488a61cf4d1ebf702360a32b7b3818d8be347c077191a9951bf6",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "weilifox.dsh.rill.industrial.skin": {
+      "name": {
+        "zh": "Rill工业风皮肤",
+        "en": "Rill Industrial Skin"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "工业电子风格的全直角界面：深蓝工作区、恒为白色的字色、左上角鲸鱼剪影加 DEEPSEEK 字标，双外观可跟随系统也可手动锁定浅色/深色。六套低饱和配色（黛蓝、宋青、橙青、深蓝、粉霞、暮紫）只改结构色与强调色，壁纸、毛玻璃对话框与扫描线质感分别可调。",
+        "en": "An industrial-electronics look with right-angled chrome throughout: a deep blue workspace, permanently white type and a whale-silhouette DEEPSEEK wordmark, with light/dark either following the system or locked manually. Six desaturated palettes (Indigo, Celadon, Teal & Orange, Deep Blue, Rose Haze, Dusk Violet) change only structure and accent colours, while wallpaper, frosted-glass composer and scanline texture are adjusted separately."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "d7025d4388420ffeea12d4004bc44f8a23b8e9758e05dc523e604a8130c7f92a",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "xinyang20.dsh.campus.seu": {
+      "name": {
+        "zh": "东南大学校园主题",
+        "en": "SEU Campus Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "东南大学校园主题：校园绿与金色点缀、完整校徽、「止于至善」校训和 1902 侧栏铭牌，九龙湖李文正图书馆与四牌楼大礼堂两种风景可切换。叮东形象、欢迎卡、校训与主题本身都能单独开关，关闭主题即恢复原生外观。",
+        "en": "A Southeast University campus theme with campus green and gold accents, the full crest, the motto 止于至善 and a 1902 sidebar plaque, plus two switchable sceneries: the Li Wenzheng Library on the Jiulonghu campus and the Sipailou auditorium. The Dingdong mascot, welcome card, motto and theme itself each have their own switch, and turning the theme off restores the original look."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "352efab906add3564cbb3a2a08798d13b0690bec68913a91816a89e551657481",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "xm.zou.dsh.music.player": {
+      "name": {
+        "zh": "音乐播放器",
+        "en": "Music Player"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "本地优先的音乐播放器：导入音频文件或整个文件夹（文件夹名自动成为歌单名），读取 ID3v2 标题与封面，歌曲能加入多个歌单、侧栏歌单可拖动排序。播放支持随机与列表/单曲循环，切换面板后通常继续播放；音乐库、封面与歌单存在浏览器 IndexedDB，可整体导出或合并导入 ZIP。",
+        "en": "A local-first music player: import audio files or a whole folder (its name becomes a new playlist), read ID3v2 titles and covers, and let tracks join several drag-sortable playlists. Playback covers shuffle and list/single repeat and usually keeps going when you switch panels; the library, covers and playlists live in browser IndexedDB with ZIP export and merge import."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "93d601a842831ca65851b8623a17e2dde4c9159176d1a67a52724754402f8a4d",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "xmlans.dsh.telegram.style": {
+      "name": {
+        "zh": "Telegram 风格",
+        "en": "Telegram Style"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "把界面换成 Telegram 网页版的样子：墙纸上的浮动聊天列表、带小尾巴的消息气泡、48px 发送键的悬浮输入条，连菜单、Toast 与点击波纹也一并重做。经典、玻璃、粉色三套配色各有亮暗，输入条上沿还站着一只贴纸桌宠，会跟着思考、干活、等批准、出错与完成换动作。",
+        "en": "Turns the interface into Telegram Web: a floating chat list on a wallpaper, message bubbles with a small tail and a floating input bar with 48 px send and stop buttons, down to menus, toasts and click ripples. Classic, Glass and Pink palettes each have light and dark sides, and a sticker mascot perched on the input bar acts out thinking, working, waiting for approval, errors and completion."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "e738b6a15de1521ad3654cc929b3af1693dbacd6ab6bc9e41794b9d22ec2f6fe",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "yryd.dafy.whale.theme": {
+      "name": {
+        "zh": "蓝色大肥鱼主题",
+        "en": "Blue Bigfish Theme"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "海洋蓝亮暗双主题：海面光晕、上升气泡与来回游动的鱼群，输入框上方滚动「每日鱼语」，左上角换成鲸鱼图标加「蓝色大肥鱼」字标。设置页共 7 组 32 项即时生效（鱼群数量与速度、光晕强度、语录列表等）；只改主色时其余 10 个设计 token 按色相平移派生，语义状态色保持不变。",
+        "en": "An ocean-blue light/dark theme with sea glow, rising bubbles and fish drifting back and forth, a scrolling daily fish quote above the input, and a whale icon plus the 蓝色大肥鱼 wordmark in the top-left. Its settings panel has 32 options in 7 groups that apply instantly (fish count and speed, glow strength, quote list and more); changing only the primary colour hue-shifts the other 10 design tokens while semantic status colours stay fixed."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "182ae114f782118ecfe5c95eb9ab6cd37aeff998db76e142244b8b91b51ca289",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "yuna78.plugin": {
+      "name": {
+        "zh": "鱼社 · 大肥鱼养成",
+        "en": "YuShe · Big Fat Fish Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "领养一条有性格的大肥鱼：可视化引导走完开鱼卵（N/R/SR/SSR/UR）、200 点五维分配与起名，15 种鱼、16 种性格，每种鱼各有 16 个姿势。她会按自己的性格去 B站 学习、写日记、寄明信片，在你绑定的工作区里替你回话，花的是自己那份 token 零花钱。",
+        "en": "Adopt a Big Fat Fish with a personality: a guided flow walks through hatching eggs (N/R/SR/SSR/UR), spending 200 points across five stats and naming her, with 15 fish species, 16 personality types and 16 poses per fish. She learns on Bilibili in her own way, keeps a diary, sends postcards and answers for you in the workspace you bind, spending her own token pocket money."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "6804c43d7c8836ec5c79b4360061857ded1f471bfe6383e3a44cd30302a854d7",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "yutianliang.dsh.assistant.bubble": {
+      "name": {
+        "zh": "助手回复气泡",
+        "en": "Assistant Reply Bubble"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "给助手回复补上气泡底：圆角、可调不透明度，可选液态玻璃（白釉高光、模糊与落地阴影），工具条、过程折叠行、思考触发条和会话统计行会跟着用同一份材质。非会话页面（插件、自动化任务、技能中心、上下文洞察）也能单独铺底，系统开启「减少透明度」时自动去掉模糊与白釉。",
+        "en": "Adds a bubble background behind assistant replies — rounded, with adjustable opacity and optional liquid glass (sheen, blur and a drop shadow) — and gives the action bar, process rows, thinking trigger and session stats the same material. Non-chat pages such as Plugins, Automation, Skills and Context Insights can get their own backing, and blur plus sheen switch off automatically when the system reduces transparency."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "475a7a17f9d2a6d209e3f264e33b3dd8422aa6d4c1a85054e18fe6d9192132e5",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
+    },
+    "zhangmin510.dsh.pet": {
+      "name": {
+        "zh": "黑侠桌宠",
+        "en": "Heixia Pet"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "黑白短毛猫「黑侠」桌宠，18 个动作与姿态（17 个来自实拍）：待机、思考、工作、看结果、等你、庆祝、警觉与三段睡眠，六种会话状态各有自己的动作。默认每 300 秒自动聊一句并跟随当前模型，每 1800 秒刷新一次余额、按剩余档位播动画，可拖拽、点击回应、右键点播与睡觉。",
+        "en": "Heixia, a black-and-white shorthair cat pet with 18 actions and poses, 17 derived from real footage: idle, thinking, working, reading results, waiting, celebrating, alert and a three-stage sleep, with a dedicated action for each of six session states. It auto-chats every 300 seconds using the current model, refreshes balance every 1,800 seconds and plays a pose per remaining tier, and can be dragged, clicked, right-clicked for a chosen action or put to sleep."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "50bd447389975d1f5fbed4b725aadca7ec5a7fd09afb269db20bc05ddd0071be",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
     }
   }
 }

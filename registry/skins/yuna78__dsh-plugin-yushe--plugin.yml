@@ -1,0 +1,59 @@
+id: yuna78.plugin
+name:
+  zh: 鱼社 · 大肥鱼养成
+  en: YuShe · Big Fat Fish Pet
+author: yuna78
+description: 领养一条有性格的大肥鱼：可视化引导走完开鱼卵（N/R/SR/SSR/UR）、200 点五维分配与起名，15 种鱼、16 种性格，每种鱼各有 16 个姿势。她会按自己的性格去 B站 学习、写日记、寄明信片，在你绑定的工作区里替你回话，花的是自己那份 token 零花钱。
+repo: https://github.com/yuna78/dsh-plugin-yushe
+subpath: plugin
+package: dsh-plugin-yushe
+rowId: yushe
+category: pet
+tags:
+  - pet
+  - ai-pet
+  - bilibili
+  - virtual-pet
+  - game
+modes:
+  - light
+  - dark
+install:
+  target: github:yuna78/dsh-plugin-yushe#d0e6108ad91334d459f09065c90048433f9d400d&path:/plugin
+  version: 0.55.0
+  commit: d0e6108ad91334d459f09065c90048433f9d400d
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/yuna78/dsh-plugin-yushe/d0e6108ad91334d459f09065c90048433f9d400d/docs/screenshots/poses.gif
+  - https://raw.githubusercontent.com/yuna78/dsh-plugin-yushe/d0e6108ad91334d459f09065c90048433f9d400d/docs/screenshots/room.webp
+  - https://raw.githubusercontent.com/yuna78/dsh-plugin-yushe/d0e6108ad91334d459f09065c90048433f9d400d/docs/screenshots/features.webp
+  - https://raw.githubusercontent.com/yuna78/dsh-plugin-yushe/d0e6108ad91334d459f09065c90048433f9d400d/docs/screenshots/cast.webp
+  - https://raw.githubusercontent.com/yuna78/dsh-plugin-yushe/d0e6108ad91334d459f09065c90048433f9d400d/docs/screenshots/poses.webp
+review:
+  compatibility: unverified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1595
+starsSnapshot: 11
+releaseUpdatedAt: 2026-11-28T08:54:30.957Z
+metadataUpdatedAt: 2026-11-28T08:54:30.957Z
+starsUpdatedAt: 2026-11-28T08:54:30.957Z
+updatedAt: 2026-11-28T08:54:30.957Z
+listScreenshot: https://raw.githubusercontent.com/yuna78/dsh-plugin-yushe/d0e6108ad91334d459f09065c90048433f9d400d/docs/screenshots/poses.gif

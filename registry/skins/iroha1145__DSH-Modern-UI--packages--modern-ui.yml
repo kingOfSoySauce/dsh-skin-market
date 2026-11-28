@@ -1,0 +1,60 @@
+id: iroha1145.modern.ui
+name:
+  zh: DSH 现代界面
+  en: DSH Modern UI
+author: iroha1145
+description: 重做对话页的界面与交互：思考过程按分析/搜索/编辑分组折叠，右侧问答时间轴可悬停预览并跳转轮次，工具调用与代码改动各有独立卡片，改动能在侧栏左右对照查看。内置 8 种界面语言和浅色/深色/跟随系统主题，回答可渲染成数字卡片、图表、流程图、闪卡与带滑块的计算器等交互组件。
+repo: https://github.com/iroha1145/DSH-Modern-UI
+subpath: packages/modern-ui
+package: "@iroha1145/dsh-modern-ui"
+rowId: modern-ui
+category: skin
+tags:
+  - interface
+  - themes
+  - reasoning
+  - interactive-cards
+  - i18n
+  - timeline
+modes:
+  - light
+  - dark
+install:
+  target: github:iroha1145/DSH-Modern-UI#9b4fc50f6a9133aca60b1250a03c17385d96eb76&path:/packages/modern-ui
+  version: 0.1.25
+  commit: 9b4fc50f6a9133aca60b1250a03c17385d96eb76
+compatibility:
+  dsh: 0.2.1-rc.5.md
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/iroha1145/DSH-Modern-UI/9b4fc50f6a9133aca60b1250a03c17385d96eb76/docs/assets/home-light.webp
+  - https://raw.githubusercontent.com/iroha1145/DSH-Modern-UI/9b4fc50f6a9133aca60b1250a03c17385d96eb76/docs/assets/home-dark.webp
+  - https://raw.githubusercontent.com/iroha1145/DSH-Modern-UI/9b4fc50f6a9133aca60b1250a03c17385d96eb76/docs/assets/readme/conversation-light.webp
+  - https://raw.githubusercontent.com/iroha1145/DSH-Modern-UI/9b4fc50f6a9133aca60b1250a03c17385d96eb76/docs/assets/readme/conversation-dark.webp
+  - https://raw.githubusercontent.com/iroha1145/DSH-Modern-UI/9b4fc50f6a9133aca60b1250a03c17385d96eb76/docs/assets/readme/diff-preview-light.webp
+  - https://raw.githubusercontent.com/iroha1145/DSH-Modern-UI/9b4fc50f6a9133aca60b1250a03c17385d96eb76/docs/assets/readme/diff-preview-dark.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1566
+starsSnapshot: 10
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/iroha1145/DSH-Modern-UI/9b4fc50f6a9133aca60b1250a03c17385d96eb76/docs/assets/home-light.webp

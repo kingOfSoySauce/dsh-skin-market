@@ -1,0 +1,56 @@
+id: weilifox.dsh.rill.industrial.skin
+name:
+  zh: Rill工业风皮肤
+  en: Rill Industrial Skin
+author: weilifox
+description: 工业电子风格的全直角界面：深蓝工作区、恒为白色的字色、左上角鲸鱼剪影加 DEEPSEEK 字标，双外观可跟随系统也可手动锁定浅色/深色。六套低饱和配色（黛蓝、宋青、橙青、深蓝、粉霞、暮紫）只改结构色与强调色，壁纸、毛玻璃对话框与扫描线质感分别可调。
+repo: https://github.com/weilifox/dsh-Rill-industrial-skin
+package: dsh-rill-industrial-skin
+rowId: dsh-rill-industrial-skin
+category: skin
+tags:
+  - theme
+  - industrial
+  - wallpaper
+  - frosted-glass
+  - palettes
+modes:
+  - light
+  - dark
+install:
+  target: github:weilifox/dsh-Rill-industrial-skin#b33b52f493113c9a8f9a41525890dac31f560890
+  version: 1.2.4
+  commit: b33b52f493113c9a8f9a41525890dac31f560890
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/weilifox/dsh-Rill-industrial-skin/b33b52f493113c9a8f9a41525890dac31f560890/docs/preview.png
+  - https://raw.githubusercontent.com/weilifox/dsh-Rill-industrial-skin/b33b52f493113c9a8f9a41525890dac31f560890/docs/settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1590
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/weilifox/dsh-Rill-industrial-skin/b33b52f493113c9a8f9a41525890dac31f560890/docs/preview.png

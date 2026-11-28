@@ -1,0 +1,60 @@
+id: lukeayin.dsh.whalebook
+name:
+  zh: 鲸事本
+  en: Whalebook
+author: lukeAyin
+description: 住在界面里的桌宠「小鲸记」：点一下就在旁边弹出待办清单，能记一条、勾完成、行内改正文与到期时间，到期越近提醒越密（7 天内从每 24 小时逐级加密到每 5 分钟）。另有百余个透明动画、屏幕漫游、点击 Q 弹与甩抛反弹、余额/工作状态联动，还能开成桌面透明小窗、支持多开与自定义宠物种类。
+repo: https://github.com/lukeAyin/dsh-whalebook
+subpath: dsh-whalebook
+package: dsh-whalebook
+rowId: dsh-whalebook
+category: pet
+tags:
+  - pet
+  - todo
+  - reminder
+  - desktop
+  - animations
+modes:
+  - light
+  - dark
+install:
+  target: github:lukeAyin/dsh-whalebook#e5d1fc12e71ceffaaa00a7e447ca9b9393cb8768&path:/dsh-whalebook
+  version: 0.1.0
+  commit: e5d1fc12e71ceffaaa00a7e447ca9b9393cb8768
+compatibility:
+  dsh: ^0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/lukeAyin/dsh-whalebook/e5d1fc12e71ceffaaa00a7e447ca9b9393cb8768/assets/screenshots/dsh-whalebook-running-1.png
+  - https://raw.githubusercontent.com/lukeAyin/dsh-whalebook/e5d1fc12e71ceffaaa00a7e447ca9b9393cb8768/assets/screenshots/dsh-whalebook-running-2.png
+  - https://raw.githubusercontent.com/lukeAyin/dsh-whalebook/e5d1fc12e71ceffaaa00a7e447ca9b9393cb8768/assets/screenshots/dsh-whalebook-running-3.png
+  - https://raw.githubusercontent.com/lukeAyin/dsh-whalebook/e5d1fc12e71ceffaaa00a7e447ca9b9393cb8768/assets/screenshots/dsh-whalebook-running-4.png
+  - https://raw.githubusercontent.com/lukeAyin/dsh-whalebook/e5d1fc12e71ceffaaa00a7e447ca9b9393cb8768/assets/screenshots/dsh-whalebook-running-5.png
+  - https://raw.githubusercontent.com/lukeAyin/dsh-whalebook/e5d1fc12e71ceffaaa00a7e447ca9b9393cb8768/assets/screenshots/dsh-whalebook-running-6.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1576
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/lukeAyin/dsh-whalebook/e5d1fc12e71ceffaaa00a7e447ca9b9393cb8768/assets/screenshots/dsh-whalebook-running-1.png

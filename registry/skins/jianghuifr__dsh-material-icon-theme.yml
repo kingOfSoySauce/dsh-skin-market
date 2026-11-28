@@ -1,0 +1,55 @@
+id: jianghuifr.dsh.material.icon.theme
+name:
+  zh: Material 图标主题
+  en: Material Icon Theme
+author: jianghuifr
+description: 把 Material Icon Theme 的文件与文件夹图标铺到右侧文件树，并可选覆盖左侧工作区标题、输入框工作区 chip 和文档预览 tab；额外工作区图标默认开启，关掉后只留文件树图标。
+repo: https://github.com/jianghuifr/dsh-material-icon-theme
+package: "@jianghuifr/dsh-material-icon-theme"
+rowId: dsh-material-icon-theme
+category: skin
+tags:
+  - icons
+  - file-tree
+  - material
+  - workspace
+modes:
+  - light
+  - dark
+install:
+  target: github:jianghuifr/dsh-material-icon-theme#aa5ab7ea404674e20403cecf2b4269257e6251fc
+  version: 0.1.2
+  commit: aa5ab7ea404674e20403cecf2b4269257e6251fc
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/jianghuifr/dsh-material-icon-theme/aa5ab7ea404674e20403cecf2b4269257e6251fc/docs/before-after.png
+  - https://raw.githubusercontent.com/jianghuifr/dsh-material-icon-theme/aa5ab7ea404674e20403cecf2b4269257e6251fc/docs/workspace-folders.png
+  - https://raw.githubusercontent.com/jianghuifr/dsh-material-icon-theme/aa5ab7ea404674e20403cecf2b4269257e6251fc/docs/settings.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1568
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/jianghuifr/dsh-material-icon-theme/aa5ab7ea404674e20403cecf2b4269257e6251fc/docs/before-after.png

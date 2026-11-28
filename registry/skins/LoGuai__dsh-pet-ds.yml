@@ -1,0 +1,57 @@
+id: loguai.dsh.pet.ds
+name:
+  zh: 好感度鲸鱼娘
+  en: Affinity Whale Girl
+author: LoGuai
+description: 逐帧动画桌宠，常驻一个透明置顶小窗：可拖动、5 档缩放，站立、坐下、睡觉、惊醒、吃白饭、三段式玩游戏与四种触摸互动各有动作。她会跟着会话进入深度思考（300 秒上限自动收回）、播报 DeepSeek 余额，另有 36 组 96 条按好感度解锁的语音台词和心情存档。
+repo: https://github.com/LoGuai/dsh-pet-ds
+package: dsh-pet-ds
+rowId: dsh-pet-ds
+category: pet
+tags:
+  - pet
+  - desktop
+  - animations
+  - affinity
+  - voice
+  - balance
+modes:
+  - light
+  - dark
+install:
+  target: github:LoGuai/dsh-pet-ds#c533f2ec7020de7cadb602b177dec1ce28e0b24b
+  version: 0.2.2
+  commit: c533f2ec7020de7cadb602b177dec1ce28e0b24b
+compatibility:
+  dsh: ^0.2.0-rc.1
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/LoGuai/dsh-pet-ds/c533f2ec7020de7cadb602b177dec1ce28e0b24b/docs/images/demo-1-idle.png
+  - https://raw.githubusercontent.com/LoGuai/dsh-pet-ds/c533f2ec7020de7cadb602b177dec1ce28e0b24b/docs/images/demo-2-think.png
+  - https://raw.githubusercontent.com/LoGuai/dsh-pet-ds/c533f2ec7020de7cadb602b177dec1ce28e0b24b/docs/images/demo-3-game.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: pass
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1572
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T08:54:19.354Z
+metadataUpdatedAt: 2026-11-28T08:54:19.354Z
+starsUpdatedAt: 2026-11-28T08:54:19.354Z
+updatedAt: 2026-11-28T08:54:19.354Z
+listScreenshot: https://raw.githubusercontent.com/LoGuai/dsh-pet-ds/c533f2ec7020de7cadb602b177dec1ce28e0b24b/docs/images/demo-1-idle.png

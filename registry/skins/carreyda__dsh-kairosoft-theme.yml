@@ -1,0 +1,57 @@
+id: carreyda.dsh.kairosoft.theme
+name:
+  zh: 开罗物语 · 六主题
+  en: Kairosoft Theme Pack
+author: carreyda
+description: 六套开罗游戏配色（雪夜温泉、暖屋搬家、王国冒险、夏水乐园、新年百货、雪场缆车）每套 166 条令牌，宣传图作整窗背景、面板半透明浮在画上；右下角灯笼面板可切换主题与浅色 / 深色 / 跟随系统，调不透明度、取景位置和背景开关，也能一键回到内置主题。
+repo: https://github.com/carreyda/dsh-kairosoft-theme
+package: dsh-kairosoft-theme
+rowId: dsh-kairosoft-theme
+category: skin
+tags:
+  - theme
+  - kairosoft
+  - presets
+  - background
+modes:
+  - light
+  - dark
+install:
+  target: github:carreyda/dsh-kairosoft-theme#ba8229ef53e093ce75fb3f2494bad23bdea45608
+  version: 0.6.0
+  commit: ba8229ef53e093ce75fb3f2494bad23bdea45608
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/carreyda/dsh-kairosoft-theme/ba8229ef53e093ce75fb3f2494bad23bdea45608/docs/design/preview-light.png
+  - https://raw.githubusercontent.com/carreyda/dsh-kairosoft-theme/ba8229ef53e093ce75fb3f2494bad23bdea45608/docs/design/preview-dark.png
+  - https://raw.githubusercontent.com/carreyda/dsh-kairosoft-theme/ba8229ef53e093ce75fb3f2494bad23bdea45608/docs/design/home-palette.png
+  - https://raw.githubusercontent.com/carreyda/dsh-kairosoft-theme/ba8229ef53e093ce75fb3f2494bad23bdea45608/docs/design/kingdom-palette.png
+  - https://raw.githubusercontent.com/carreyda/dsh-kairosoft-theme/ba8229ef53e093ce75fb3f2494bad23bdea45608/docs/design/park-palette.png
+  - https://raw.githubusercontent.com/carreyda/dsh-kairosoft-theme/ba8229ef53e093ce75fb3f2494bad23bdea45608/docs/design/mall-palette.png
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: improve
+    installation: pass
+    installCommand: pass
+    topic: pass
+  suggestions:
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1552
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/carreyda/dsh-kairosoft-theme/ba8229ef53e093ce75fb3f2494bad23bdea45608/docs/design/preview-light.png

@@ -1,0 +1,54 @@
+id: gulagala001.oh.my.agents.above.all
+name:
+  zh: Oh My Agents Above All
+  en: Oh My Agents Above All
+author: gulagala001
+description: 五个预设把 Codex、Grok Build、Cursor、Pi 与 ZCode 的工作方式搬进会话：连续写代码与暂存 / 撤回、先计划再执行与消息队列、读 .cursor/rules 的 Ask/Plan、逐条插话与分支切换、可保存复用的工作流；模型、工具与密钥沿用已配置好的那套，每个会话的主题可跟随预设或换成别的预设。
+repo: https://github.com/gulagala001/oh-my-agents-above-all
+package: oh-my-agents-above-all
+rowId: omaa
+category: skin
+tags:
+  - presets
+  - workbench
+  - theme
+  - agents
+modes:
+  - light
+  - dark
+install:
+  target: github:gulagala001/oh-my-agents-above-all#894995a972874b88d00297359593be1d33a33550
+  version: 0.2.2-rc.3.omaa.0.17.16
+  commit: 894995a972874b88d00297359593be1d33a33550
+compatibility:
+  dsh: 0.2.2-rc.3 || 0.2.2--rc.3-0969da || 0.2.2-rc.3.omaa
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/gulagala001/oh-my-agents-above-all/894995a972874b88d00297359593be1d33a33550/docs/images/frontend-015/codex-dark.png
+  - https://raw.githubusercontent.com/gulagala001/oh-my-agents-above-all/894995a972874b88d00297359593be1d33a33550/docs/images/frontend-015/codex-light.png
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: Apache-2.0
+  commercialUse: true
+featuredRank: 1561
+starsSnapshot: 4
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/gulagala001/oh-my-agents-above-all/894995a972874b88d00297359593be1d33a33550/docs/images/frontend-015/codex-dark.png

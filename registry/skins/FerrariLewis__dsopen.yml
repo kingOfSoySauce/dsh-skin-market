@@ -1,0 +1,57 @@
+id: ferrarilewis.dsopen
+name:
+  zh: 附魔台
+  en: Lewis Enchantment
+author: FerrariLewis
+description: 把启动做成游戏式开场：9 段内置视频（「启」「数字生命」「朋克」「鲸鱼娘」「DeepSeek」等）和 9 张片尾标题屏，播放中按键或点击先跳标题屏、再进入界面；也能上传自己的视频和封面（视频单文件 ≤200 MB、图片 ≤20 MB），视频与标题屏可分别开关，另有声音、随机播放与启动检查更新。
+repo: https://github.com/FerrariLewis/dsopen
+package: dsh-boot-studio
+rowId: dsh-boot-studio
+category: skin
+tags:
+  - splash
+  - video
+  - startup
+  - custom-media
+modes:
+  - light
+  - dark
+install:
+  target: github:FerrariLewis/dsopen#712798b26683605424982499d1cd0262eec515ad
+  version: 1.4.3
+  commit: 712798b26683605424982499d1cd0262eec515ad
+compatibility:
+  dsh: 0.2.1-rc.2
+  platform:
+    - web
+screenshots:
+  - https://raw.githubusercontent.com/FerrariLewis/dsopen/712798b26683605424982499d1cd0262eec515ad/assets/end-covers/cyberpunk-2077.webp
+  - https://raw.githubusercontent.com/FerrariLewis/dsopen/712798b26683605424982499d1cd0262eec515ad/assets/end-covers/horizon4.webp
+  - https://raw.githubusercontent.com/FerrariLewis/dsopen/712798b26683605424982499d1cd0262eec515ad/assets/end-covers/assassins-creed.webp
+  - https://raw.githubusercontent.com/FerrariLewis/dsopen/712798b26683605424982499d1cd0262eec515ad/assets/end-covers/horizon6.webp
+review:
+  compatibility: verified
+  preview: verified
+  installation: manual-only
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: pass
+    compatibility: pass
+    installation: improve
+    installCommand: improve
+    topic: improve
+  suggestions:
+    - 建议补全稳定的 package 名称、dsh.client Web 声明（Web 与官方 Desktop 共用）、row ID 和已构建客户端入口，以符合 dsh 插件要求并获得更顺畅的一键安装体验。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+    - 建议为仓库添加 dsh-plugin Topic，方便用户和 DSH 皮肤市场发现它。
+license:
+  code: BSD-3-Clause
+  commercialUse: true
+featuredRank: 1559
+starsSnapshot: 0
+releaseUpdatedAt: 2026-11-28T08:54:06.932Z
+metadataUpdatedAt: 2026-11-28T08:54:06.932Z
+starsUpdatedAt: 2026-11-28T08:54:06.932Z
+updatedAt: 2026-11-28T08:54:06.932Z
+listScreenshot: https://raw.githubusercontent.com/FerrariLewis/dsopen/712798b26683605424982499d1cd0262eec515ad/assets/end-covers/cyberpunk-2077.webp
