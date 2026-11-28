@@ -1,0 +1,57 @@
+id: timelk.dsh.ascii.sharks
+name:
+  zh: ASCII 鲨鱼
+  en: ASCII Sharks
+author: Timelk
+description: 整页透明的 ASCII 海洋：boid 鱼群在页面框架后 flocking、鲨鱼巡游追猎，点击任意处炸水花，世界是环面（游出一侧从另一侧回来），浅色主题用深墨、深色主题用浅墨并实时切换；对话主栏覆盖一层四边羽化的毛玻璃，字符尺寸 4–14px、8 种鲨鱼、鱼群密度与模糊都可调。减少动态时自动静帧，页面不可见时暂停。
+repo: https://github.com/Timelk/dsh-ascii-sharks
+package: dsh-ascii-sharks
+rowId: ascii-sharks
+category: skin
+tags:
+  - ascii
+  - ocean
+  - canvas
+  - boids
+  - glass
+modes:
+  - light
+  - dark
+install:
+  target: github:Timelk/dsh-ascii-sharks#b809b5aceafe812d95c2de1222b2ba5d752f1af4
+  version: 1.0.3
+  commit: b809b5aceafe812d95c2de1222b2ba5d752f1af4
+compatibility:
+  dsh: unverified
+  platform:
+    - web
+screenshots: []
+review:
+  compatibility: unverified
+  preview: verified
+  installation: verified
+health:
+  status: improvements
+  checks:
+    readmeScreenshots: improve
+    compatibility: improve
+    installation: pass
+    installCommand: improve
+    topic: pass
+  suggestions:
+    - 建议在 README 中加入至少一张仓库内的真实界面截图，并让图片路径随仓库一起版本化，方便用户预览和市场稳定展示。
+    - 建议在 README 或 package.json 中明确声明支持的 DSH 版本范围（Web 与官方 Desktop，例如 >=0.1.0-rc.6、>=0.2.0-rc.1 或兼容区间），方便用户在安装前确认环境。
+    - 建议在 README 中补充可复制的 DSH 安装命令，方便用户直接使用。
+license:
+  code: MIT
+  commercialUse: true
+featuredRank: 1546
+starsSnapshot: 1
+releaseUpdatedAt: 2026-11-28T07:08:19.980Z
+metadataUpdatedAt: 2026-11-28T07:08:19.980Z
+starsUpdatedAt: 2026-11-28T07:08:19.980Z
+updatedAt: 2026-11-28T07:08:19.980Z
+marketScreenshots:
+  - skin-screenshots/Timelk__dsh-ascii-sharks/b809b5aceafe812d95c2de1222b2ba5d752f1af4/home.gif
+  - skin-screenshots/Timelk__dsh-ascii-sharks/b809b5aceafe812d95c2de1222b2ba5d752f1af4/home.png
+  - skin-screenshots/Timelk__dsh-ascii-sharks/b809b5aceafe812d95c2de1222b2ba5d752f1af4/conversation.png

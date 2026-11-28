@@ -18265,6 +18265,24 @@
         "zh": "斯普拉遁 2 风格墨街主题：日间采用官方绿/奶油/洋红三色涂地画布铺设鱿鱼纹、泼溅与网点，夜间切换至炭黑广场并保留霓虹墨色。包含透明墨鱼品牌侧栏、独立洋红新会话胶囊、带墨尾的荧光绿选中行、24 格大招能量槽启动页、黑描边滴墨输入框与「设置 → 插件 → 墨街外观」（纸白 20%/均衡 50%/涂地 100% 预设、墨度滑杆、三档主墨色、diff 语法与装饰/字体开关），仅通过公开 ThemeRuntime Token 与 Slot 实现，停用即还原原生外观。",
         "en": "SPLAT-STREET, a Splatoon 2 inspired DSH Web skin with lime and magenta ink, halftone paper, and ThemeRuntime tokens"
       }
+    },
+    "timelk.dsh.ascii.sharks": {
+      "name": {
+        "zh": "ASCII 鲨鱼",
+        "en": "ASCII Sharks"
+      },
+      "descriptionPolicy": "show",
+      "description": {
+        "zh": "整页透明的 ASCII 海洋：boid 鱼群在页面框架后 flocking、鲨鱼巡游追猎，点击任意处炸水花，世界是环面（游出一侧从另一侧回来），浅色主题用深墨、深色主题用浅墨并实时切换；对话主栏覆盖一层四边羽化的毛玻璃，字符尺寸 4–14px、8 种鲨鱼、鱼群密度与模糊都可调。减少动态时自动静帧，页面不可见时暂停。",
+        "en": "A whole-page transparent ASCII ocean behind the app frame: boid fish schools flock while sharks cruise and hunt, clicking anywhere splashes, and the world wraps as a torus so anything swimming off one edge returns on the other; ink follows the light/dark scheme live and the conversation column carries a four-side feathered frosted pane. Cell size (4–14 px), eight shark species, population, speed and blur are all live settings; reduced motion freezes it and a hidden page pauses rendering."
+      },
+      "source": {
+        "kind": "curated",
+        "hash": "baf655b619aa28431db409dd9b28ab9be85854285564ac3f6953ab0f384836fd",
+        "approvedAt": "2026-11-13"
+      },
+      "override": true,
+      "nameSource": "pinned README + maintainer copy review"
     }
   }
 }
